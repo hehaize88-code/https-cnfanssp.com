@@ -34,7 +34,7 @@ export default function Home() {
       </section>
 
       <section className="editorial-preview" aria-label="Product research overview">
-        <Image src="/og.png" alt="Clean Superbuy spreadsheet research overview" width={1672} height={941} priority />
+        <Image src="/research-overview.svg" alt="Superbuy spreadsheet research overview" width={1440} height={520} priority />
       </section>
 
       <CategoryExplorer />
