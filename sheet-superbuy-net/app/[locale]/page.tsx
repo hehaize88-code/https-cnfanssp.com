@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const { locale } = await params;
   const page = pages[locale as Locale];
   if (!page) return {};
-  return { title: page.title, description: page.intro, alternates: { canonical: `/${locale}` } };
+  return { title: page.title, description: page.intro, alternates: { canonical: `/${locale}/` } };
 }
 
 export default async function LocalePage({ params }: { params: Promise<{ locale: string }> }) {
