@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { ResourceShell } from "../components/ResourceShell";
 
-export const metadata: Metadata = { title: "How to Use a Superbuy Spreadsheet in 2026", description: "A fact-checked workflow for using a Superbuy spreadsheet, verifying Taobao, Tmall and JD listings, reviewing warehouse QC and planning a parcel.", alternates: { canonical: "/spreadsheet" } };
+export const metadata: Metadata = { title: "How to Use a Superbuy Spreadsheet in 2026", description: "A fact-checked workflow for using a Superbuy spreadsheet, verifying Taobao, Tmall and JD listings, reviewing warehouse QC and planning a parcel.", alternates: { canonical: "/spreadsheet/" } };
 
 export default function SpreadsheetPage() {
   return <ResourceShell eyebrow="Spreadsheet guide" title="Use the sheet to discover. Use current evidence to decide." intro="A Superbuy spreadsheet can shorten product discovery, but the official order flow still depends on the live marketplace listing, the option captured at checkout, the item received by the warehouse and the parcel you finally submit." stats={[{ value: "99%", label: "official capture claim for Taobao, Tmall & JD" }, { value: "90 days", label: "official free storage" }, { value: "2", label: "separate payment stages" }]}>
