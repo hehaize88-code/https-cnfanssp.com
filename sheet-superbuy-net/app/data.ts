@@ -31,8 +31,8 @@ export const products: Product[] = [
 ];
 
 export const navItems = [
-  ["Spreadsheet", "/spreadsheet"], ["Finds", "/finds"], ["QC", "/qc"],
-  ["Shipping", "/shipping"], ["Articles", "/articles"], ["FAQ", "/faq"],
+  ["Spreadsheet", "/spreadsheet/"], ["Finds", "/finds/"], ["QC", "/qc/"],
+  ["Shipping", "/shipping/"], ["Articles", "/articles/"], ["FAQ", "/faq/"],
 ] as const;
 
 export const articles = [
