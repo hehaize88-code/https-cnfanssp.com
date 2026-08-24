@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { CategoryExplorer } from "./components/CategoryExplorer";
 import { SiteFooter } from "./components/SiteFooter";
@@ -34,7 +33,7 @@ export default function Home() {
       </section>
 
       <section className="editorial-preview" aria-label="Product research overview">
-        <Image src="/research-overview.svg" alt="Superbuy spreadsheet research overview" width={1440} height={520} priority />
+        <img src="/research-overview.svg" alt="Superbuy spreadsheet research overview" width="1440" height="520" loading="eager" />
       </section>
 
       <CategoryExplorer />
