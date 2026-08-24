@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { ResourceShell } from "../components/ResourceShell";
 import { CategoryExplorer } from "../components/CategoryExplorer";
 
-export const metadata: Metadata = { title: "Curated Superbuy Finds & Product Verification", description: "Browse curated product finds with USD references, live main-site search, option checks and shipping-aware selection notes.", alternates: { canonical: "/finds" } };
+export const metadata: Metadata = { title: "Curated Superbuy Finds & Product Verification", description: "Browse curated product finds with USD references, live main-site search, option checks and shipping-aware selection notes.", alternates: { canonical: "/finds/" } };
 
 export default function FindsPage() {
   return <ResourceShell eyebrow="Curated finds" title="Find fewer products. Eliminate weak candidates earlier." intro="A useful shortlist is not the largest possible feed. It prioritizes live links, readable option structures, realistic reference prices and products that still have a practical path through warehouse inspection and international shipping.">
