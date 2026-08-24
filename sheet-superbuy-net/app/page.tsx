@@ -24,7 +24,7 @@ export default function Home() {
           <p className="eyebrow">Independent product index · Updated 24 Aug 2026</p>
           <h1>Superbuy<br />Spreadsheet 2026</h1>
           <p className="hero-lead">A cleaner way to browse product links, compare USD reference prices and keep QC checks attached to the decision.</p>
-          <div className="hero-actions"><a className="button button-primary" href="#finds">Browse the sheet</a><Link className="button button-outline" href="/spreadsheet">How to use it</Link></div>
+          <div className="hero-actions"><a className="button button-primary" href="#finds">Browse the sheet</a><Link className="button button-outline" href="/spreadsheet/">How to use it</Link></div>
         </div>
         <div className="hero-summary" aria-label="Spreadsheet summary">
           <div><span>Categories</span><b>12</b></div><div><span>Price view</span><b>USD</b></div><div><span>Method</span><b>Link → QC → Ship</b></div>
@@ -46,12 +46,12 @@ export default function Home() {
       </section>
 
       <section className="articles-section clean-section">
-        <div className="clean-section-head"><div><p className="eyebrow">Buying guides</p><h2>Read only what you need next.</h2></div><Link href="/articles">All articles →</Link></div>
-        <div className="clean-article-list">{articles.map((article, index) => <Link href={`/articles/${article.slug}`} key={article.slug}><span>0{index + 1}</span><div><small>{article.eyebrow} · {article.read}</small><h3>{article.title}</h3></div><b>↗</b></Link>)}</div>
+        <div className="clean-section-head"><div><p className="eyebrow">Buying guides</p><h2>Read only what you need next.</h2></div><Link href="/articles/">All articles →</Link></div>
+        <div className="clean-article-list">{articles.map((article, index) => <Link href={`/articles/${article.slug}/`} key={article.slug}><span>0{index + 1}</span><div><small>{article.eyebrow} · {article.read}</small><h3>{article.title}</h3></div><b>↗</b></Link>)}</div>
       </section>
 
       <section className="faq-section clean-section">
-        <div className="faq-intro"><p className="eyebrow">Quick answers</p><h2>Before you use the sheet.</h2><p>Discovery is not verification. Keep the product row, current listing and warehouse evidence separate.</p><Link href="/faq">Full FAQ →</Link></div>
+        <div className="faq-intro"><p className="eyebrow">Quick answers</p><h2>Before you use the sheet.</h2><p>Discovery is not verification. Keep the product row, current listing and warehouse evidence separate.</p><Link href="/faq/">Full FAQ →</Link></div>
         <div className="faq-list">{faqs.map(([question, answer], index) => <details key={question} open={index === 0}><summary><span>{question}</span><b>+</b></summary><p>{answer}</p></details>)}</div>
       </section>
 
