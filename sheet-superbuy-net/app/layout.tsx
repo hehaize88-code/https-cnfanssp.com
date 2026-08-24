@@ -11,7 +11,6 @@ export const metadata: Metadata = {
     "Browse an independent Superbuy spreadsheet with curated finds, USD price references, QC checklists and practical buying guides.",
   alternates: {
     canonical: "/",
-    languages: { "x-default": "/", "en": "/", "zh-CN": "/zh", "de": "/de", "fr": "/fr", "es": "/es", "it": "/it", "pt": "/pt", "pl": "/pl", "nl": "/nl" },
   },
   openGraph: {
     type: "website",
