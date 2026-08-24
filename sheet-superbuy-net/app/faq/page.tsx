@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { ResourceShell } from "../components/ResourceShell";
 
-export const metadata: Metadata = { title: "Superbuy Spreadsheet FAQ", description: "Answers about Superbuy spreadsheets, product links, QC photos, warehouse storage, consolidation, prices and shipping estimates.", alternates: { canonical: "/faq" } };
+export const metadata: Metadata = { title: "Superbuy Spreadsheet FAQ", description: "Answers about Superbuy spreadsheets, product links, QC photos, warehouse storage, consolidation, prices and shipping estimates.", alternates: { canonical: "/faq/" } };
 
 const faqItems = [
   ["Is this the official Superbuy website?", "No. This is an independent informational resource. It does not sell products, collect order payments, operate a warehouse or represent the official platform."],
