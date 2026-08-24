@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { ResourceShell } from "../components/ResourceShell";
 
-export const metadata: Metadata = { title: "Superbuy Shipping Cost, Weight & Consolidation Guide", description: "A fact-checked Superbuy shipping guide covering the calculator, volumetric weight, deposit versus final charge, restrictions, consolidation and packaging.", alternates: { canonical: "/shipping" } };
+export const metadata: Metadata = { title: "Superbuy Shipping Cost, Weight & Consolidation Guide", description: "A fact-checked Superbuy shipping guide covering the calculator, volumetric weight, deposit versus final charge, restrictions, consolidation and packaging.", alternates: { canonical: "/shipping/" } };
 
 export default function ShippingPage() {
   return <ResourceShell eyebrow="Shipping cost" title="Estimate twice: before buying and after packing." intro="Superbuy’s official process separates the product payment from international delivery. The first estimate screens out impractical items; the second uses the intended parcel, current route eligibility and packaging choices." stats={[{ value: "100+", label: "shipping lines stated on official homepage" }, { value: "90 days", label: "official free storage" }, { value: "÷ 6,000", label: "air-cargo volume-weight example" }]}>
