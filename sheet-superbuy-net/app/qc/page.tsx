@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { ResourceShell } from "../components/ResourceShell";
 
-export const metadata: Metadata = { title: "Superbuy QC Photos: Fact-Checked Inspection Guide", description: "Understand Superbuy's free QC photos, shopping-agent inspection limits, forwarding inspection differences and a category-specific review checklist.", alternates: { canonical: "/qc" } };
+export const metadata: Metadata = { title: "Superbuy QC Photos: Fact-Checked Inspection Guide", description: "Understand Superbuy's free QC photos, shopping-agent inspection limits, forwarding inspection differences and a category-specific review checklist.", alternates: { canonical: "/qc/" } };
 
 export default function QCPage() {
   return <ResourceShell eyebrow="QC photos" title="Know what the warehouse checked—and what it did not." intro="Superbuy’s current homepage says three free QC photos are taken during warehouse inspection. Those images are useful evidence, but a small photo set cannot prove every material, measurement, internal component or hidden surface." stats={[{ value: "3", label: "free QC photos stated on official homepage" }, { value: "90 days", label: "official free storage window" }, { value: "Different", label: "forwarding inspection rules" }]}>
