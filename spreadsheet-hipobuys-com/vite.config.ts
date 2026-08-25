@@ -19,8 +19,12 @@ export default defineConfig(async () => {
 
   // Wrangler snapshots its log path while the Cloudflare plugin is imported.
   const { cloudflare } = await import("@cloudflare/vite-plugin");
+  const pagesCommitSha = process.env.CF_PAGES_COMMIT_SHA || "local";
 
   return {
+    define: {
+      __PAGES_COMMIT_SHA__: JSON.stringify(pagesCommitSha),
+    },
     server: {
       host: "0.0.0.0",
       allowedHosts: ["terminal.local"],

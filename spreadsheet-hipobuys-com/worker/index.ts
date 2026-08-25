@@ -2,6 +2,8 @@
 import { handleImageOptimization, DEFAULT_DEVICE_SIZES, DEFAULT_IMAGE_SIZES } from "vinext/server/image-optimization";
 import handler from "vinext/server/app-router-entry";
 
+declare const __PAGES_COMMIT_SHA__: string;
+
 interface Env {
   ASSETS: Fetcher;
   DB: D1Database;
@@ -98,7 +100,9 @@ const worker = {
     if (!shouldCacheHtml(request, url)) return handler.fetch(request, env, ctx);
 
     const cache = caches.default;
-    const cacheKey = new Request(url.toString(), request);
+    const cacheUrl = new URL(url);
+    cacheUrl.searchParams.set("__hcv", __PAGES_COMMIT_SHA__);
+    const cacheKey = new Request(cacheUrl.toString(), request);
     const cached = await cache.match(cacheKey);
     if (cached) return withHeaders(cached, { "x-hipo-cache": "HIT" });
 
