@@ -16,13 +16,14 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const article = getArticle(slug);
   if (!article) return {};
-  const path = `/articles/${article.slug}/`;
+  const path = `/articles/${article.slug}`;
+  const socialImage = article.image || "/og.png";
   return {
-    title: article.title,
+    title: article.seoTitle || article.title,
     description: article.description,
     alternates: { canonical: path },
-    openGraph: { type: "article", title: article.title, description: article.description, url: path, publishedTime: article.published, modifiedTime: article.updated, images: article.image ? [{ url: article.image, alt: article.imageAlt }] : [] },
-    twitter: { card: article.image ? "summary_large_image" : "summary", title: article.title, description: article.description, images: article.image ? [article.image] : [] }
+    openGraph: { type: "article", title: article.seoTitle || article.title, description: article.description, url: path, publishedTime: article.published, modifiedTime: article.updated, images: [{ url: socialImage, alt: article.imageAlt || article.title }] },
+    twitter: { card: "summary_large_image", title: article.seoTitle || article.title, description: article.description, images: [socialImage] }
   };
 }
 
@@ -33,8 +34,16 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
   const schema = {
     "@context": "https://schema.org", "@type": "Article", headline: article.title, description: article.description,
     datePublished: article.published, dateModified: article.updated, author: { "@type": "Organization", name: "Hipo Index" },
-    publisher: { "@type": "Organization", name: "Hipo Index" }, mainEntityOfPage: `https://spreadsheet-hipobuys.com/articles/${article.slug}/`,
-    image: article.image ? [article.image] : undefined
+    publisher: { "@type": "Organization", name: "Hipo Index", logo: { "@type": "ImageObject", url: "https://spreadsheet-hipobuys.com/hipobuy-logo.png" } },
+    mainEntityOfPage: `https://spreadsheet-hipobuys.com/articles/${article.slug}`,
+    image: [article.image || "https://spreadsheet-hipobuys.com/og.png"]
+  };
+  const breadcrumbSchema = {
+    "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://spreadsheet-hipobuys.com/" },
+      { "@type": "ListItem", position: 2, name: "Articles", item: "https://spreadsheet-hipobuys.com/articles" },
+      { "@type": "ListItem", position: 3, name: article.title, item: `https://spreadsheet-hipobuys.com/articles/${article.slug}` }
+    ]
   };
 
   return <GuideLayout kicker={article.kicker} title={article.title} intro={article.summary}>
@@ -45,11 +54,12 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
         <div className="article-prose">
           {article.image ? <figure><img src={article.image} alt={article.imageAlt || ""} width="1100" height="720" /><figcaption>{article.imageCaption}</figcaption></figure> : <div className="shipping-equation"><span>Delivered cost</span><strong>item + domestic delivery + services + international parcel + import costs</strong></div>}
           {article.sections.map((section) => <section id={anchor(section.heading)} key={section.heading}><h2>{section.heading}</h2>{section.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}{section.bullets ? <ul>{section.bullets.map((item) => <li key={item}>{item}</li>)}</ul> : null}</section>)}
-          <section className="article-sources"><p className="section-kicker">Sources checked · 25 August 2026</p><h2>Research notes</h2><p>Sources support specific platform facts or identify recurring buyer questions. Community reports are not treated as official terms or guaranteed outcomes.</p><ul>{article.sources.map((source) => <li key={source.label}><strong>{source.label}</strong><span>{source.note}</span></li>)}</ul></section>
-          <div className="article-next"><div><p className="section-kicker">Continue checking</p><h2>Use the guide, then verify the live listing.</h2></div><div><Link href="/articles/">All articles</Link><a href="https://cnfanssp.com/AllProducts/">Browse current catalog ↗</a></div></div>
+          <section className="article-sources"><p className="section-kicker">Sources checked · 25 August 2026</p><h2>Research notes</h2><p>Sources support specific platform facts or identify recurring buyer questions. Community reports are not treated as official terms or guaranteed outcomes.</p><ul>{article.sources.map((source) => <li key={source.label}><strong>{source.label}</strong><span><b>Checked:</b> {source.checked}<br/><b>Claim used:</b> {source.claim}<br/>{source.note}</span></li>)}</ul></section>
+          <div className="article-next"><div><p className="section-kicker">Continue checking</p><h2>Use the guide, then verify the live listing.</h2></div><div><Link href="/articles">All articles</Link><a href="https://cnfanssp.com/AllProducts/">Browse current catalog ↗</a></div></div>
         </div>
       </div>
     </article>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
   </GuideLayout>;
 }

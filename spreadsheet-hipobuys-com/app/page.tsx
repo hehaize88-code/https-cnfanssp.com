@@ -21,7 +21,7 @@ export default function Home() {
     });
   }, [category, query]);
 
-  const visible = query || category !== "All" ? filtered : filtered.slice(0, 8);
+  const visible = filtered;
 
   function searchMainSite(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -32,7 +32,7 @@ export default function Home() {
   return <main>
     <header className="site-header">
       <Link className="brand logo-brand" href="/" aria-label="Hipobuy guide home"><img src="/hipobuy-logo.png" alt="Hipobuy" width="220" height="52" /></Link>
-      <nav className="desktop-nav" aria-label="Primary navigation"><Link href="/spreadsheet/">Spreadsheet</Link><Link href="/qc/">QC</Link><Link href="/shipping/">Shipping</Link><Link href="/guides/">Guides</Link><Link href="/articles/">Articles</Link><Link href="/faq/">FAQ</Link></nav>
+      <nav className="desktop-nav" aria-label="Primary navigation"><Link href="/spreadsheet">Spreadsheet</Link><Link href="/qc">QC</Link><Link href="/shipping">Shipping</Link><Link href="/guides">Guides</Link><Link href="/articles">Articles</Link><Link href="/faq">FAQ</Link></nav>
       <div className="header-actions"><LanguageSwitcher/><a className="header-cta" href={`${mainSite}/AllProducts/`}>Browse products <span>↗</span></a></div>
     </header>
 
@@ -64,28 +64,28 @@ export default function Home() {
     <section className="clean-guides">
       <div className="clean-section-title"><div><p className="eyebrow">Useful next steps</p><h2>Find it. Check it. Ship it.</h2></div><p>The product link is only the beginning. Use the short guides below to make the important decisions in order.</p></div>
       <div className="clean-guide-grid">
-        <Link href="/spreadsheet/"><span>01</span><div><p>Product discovery</p><h3>Verify the source listing</h3><small>Check variants, seller photos, current terms and domestic delivery.</small></div><b>↗</b></Link>
-        <Link href="/qc/"><span>02</span><div><p>Warehouse review</p><h3>Read the QC photo set</h3><small>Compare the order, shape, stitching, labels and measurements.</small></div><b>↗</b></Link>
-        <Link href="/shipping/"><span>03</span><div><p>Parcel planning</p><h3>Estimate landed cost</h3><small>Review chargeable weight, line rules, insurance, tax and customs.</small></div><b>↗</b></Link>
+        <Link href="/spreadsheet"><span>01</span><div><p>Product discovery</p><h3>Verify the source listing</h3><small>Check variants, seller photos, current terms and domestic delivery.</small></div><b>↗</b></Link>
+        <Link href="/qc"><span>02</span><div><p>Warehouse review</p><h3>Read the QC photo set</h3><small>Compare the order, shape, stitching, labels and measurements.</small></div><b>↗</b></Link>
+        <Link href="/shipping"><span>03</span><div><p>Parcel planning</p><h3>Estimate landed cost</h3><small>Review chargeable weight, line rules, insurance, tax and customs.</small></div><b>↗</b></Link>
       </div>
     </section>
 
     <section className="clean-note">
       <div><p className="eyebrow">Independent by design</p><h2>No invented promises.</h2></div>
-      <div><p>Hipo Index does not sell products, process orders or claim that every seller has been tested. Official platform features are identified as such; product availability and shipping estimates must be checked again before payment.</p><div className="note-links"><Link href="/guides/">How we fact-check →</Link><Link href="/faq/">Read the FAQ →</Link></div></div>
+      <div><p>Hipo Index does not sell products, process orders or claim that every seller has been tested. Official platform features are identified as such; product availability and shipping estimates must be checked again before payment.</p><div className="note-links"><Link href="/guides">How we fact-check →</Link><Link href="/faq">Read the FAQ →</Link></div></div>
     </section>
 
     <section className="clean-articles">
       <div className="clean-section-title"><div><p className="eyebrow">Research library</p><h2>Read before you ship.</h2></div><p>Long-form guides built from official platform information, warehouse decision checks and clearly labelled public-review evidence.</p></div>
-      <div className="home-article-grid">{articles.map((article, index) => <article key={article.slug}><div><span>{String(index + 1).padStart(2, "0")}</span><small>{article.readTime}</small></div><p>{article.kicker}</p><h3><Link href={`/articles/${article.slug}/`}>{article.title}</Link></h3><Link href={`/articles/${article.slug}/`}>Read full article <b>↗</b></Link></article>)}</div>
-      <Link className="all-articles-link" href="/articles/">View the article library →</Link>
+      <div className="home-article-grid">{articles.map((article, index) => <article key={article.slug}><div><span>{String(index + 1).padStart(2, "0")}</span><small>{article.readTime}</small></div><p>{article.kicker}</p><h3><Link href={`/articles/${article.slug}`}>{article.title}</Link></h3><Link href={`/articles/${article.slug}`}>Read full article <b>↗</b></Link></article>)}</div>
+      <Link className="all-articles-link" href="/articles">View the article library →</Link>
     </section>
 
     <section className="clean-faq">
       <div><p className="eyebrow">Quick answers</p><h2>Before you browse</h2></div>
-      <div className="faq-list"><details open><summary>Is this the official Hipobuy website?</summary><p>No. This is an independent product-discovery and education site. Hipobuy’s official domain is hipobuy.com.</p></details><details><summary>Are prices and availability guaranteed?</summary><p>No. Every card is a snapshot. Open the exact listing and confirm current price, variants and availability before paying.</p></details><details><summary>Can QC photos guarantee quality?</summary><p>No. They can show visible condition and measurements, but cannot prove comfort, material composition or long-term durability.</p></details><Link className="faq-more" href="/faq/">View all questions →</Link></div>
+      <div className="faq-list"><details open><summary>Is this the official Hipobuy website?</summary><p>No. This is an independent product-discovery and education site. Hipobuy’s official domain is hipobuy.com.</p></details><details><summary>Are prices and availability guaranteed?</summary><p>No. Every card is a snapshot. Open the exact listing and confirm current price, variants and availability before paying.</p></details><details><summary>Can QC photos guarantee quality?</summary><p>No. They can show visible condition and measurements, but cannot prove comfort, material composition or long-term durability.</p></details><Link className="faq-more" href="/faq">View all questions →</Link></div>
     </section>
 
-    <footer><div className="footer-brand"><img src="/hipobuy-logo.png" alt="Hipobuy" width="180" height="43"/><p>Independent Hipobuy spreadsheet guide.</p></div><div className="footer-links"><Link href="/spreadsheet/">Spreadsheet</Link><Link href="/qc/">QC</Link><Link href="/shipping/">Shipping</Link><Link href="/guides/">Guides</Link><Link href="/articles/">Articles</Link><Link href="/faq/">FAQ</Link></div><p className="footer-note">Not affiliated with Hipobuy, Taobao, 1688 or any product brand. Purchases are completed on third-party platforms. © 2026 Hipo Index.</p></footer>
+    <footer><div className="footer-brand"><img src="/hipobuy-logo.png" alt="Hipobuy" width="180" height="43"/><p>Independent Hipobuy spreadsheet guide.</p></div><div className="footer-links"><Link href="/spreadsheet">Spreadsheet</Link><Link href="/qc">QC</Link><Link href="/shipping">Shipping</Link><Link href="/guides">Guides</Link><Link href="/articles">Articles</Link><Link href="/faq">FAQ</Link></div><p className="footer-note">Not affiliated with Hipobuy, Taobao, 1688 or any product brand. Purchases are completed on third-party platforms. © 2026 Hipo Index.</p></footer>
   </main>;
 }

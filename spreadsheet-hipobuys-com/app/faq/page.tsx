@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import GuideLayout from "../components/GuideLayout";
 
-export const metadata: Metadata = { title: "Hipobuy Spreadsheet FAQ", description: "Answers about Hipobuy spreadsheets, source links, QC photos, storage, shipping estimates, returns, taxes and independent-site status.", alternates: { canonical: "/faq/" } };
+export const metadata: Metadata = { title: "Hipobuy Spreadsheet FAQ", description: "Answers about Hipobuy spreadsheets, source links, QC photos, storage, shipping estimates, returns, taxes and independent-site status.", alternates: { canonical: "/faq" } };
 
 const faqs = [
   ["Is this the official Hipobuy website?","No. Hipo Index is an independent product-discovery and education resource. The official Hipobuy domain is hipobuy.com."],

@@ -7,6 +7,7 @@ export type ArticleSection = {
 export type Article = {
   slug: string;
   title: string;
+  seoTitle?: string;
   description: string;
   kicker: string;
   published: string;
@@ -18,7 +19,7 @@ export type Article = {
   imageAlt?: string;
   imageCaption?: string;
   sections: ArticleSection[];
-  sources: { label: string; note: string }[];
+  sources: { label: string; checked: string; claim: string; note: string }[];
 };
 
 export const articles: Article[] = [
@@ -121,9 +122,9 @@ export const articles: Article[] = [
       }
     ],
     sources: [
-      { label: "Hipobuy official website", note: "Platform positioning and official shipping estimator access." },
-      { label: "Hipobuy App Store listing", note: "Official description of Taobao/1688 purchasing, international delivery and 90-day free storage." },
-      { label: "Hipobuy app information", note: "Official QC-search positioning and listed payment methods." }
+      { label: "Hipobuy official website", checked: "25 August 2026", claim: "Platform positioning and access to the current shipping-estimation workflow.", note: "Used for platform-specific workflow facts; seller listings and estimates remain changeable." },
+      { label: "Apple App Store — Hipobuy app listing", checked: "25 August 2026", claim: "Taobao/1688 purchasing, international delivery and the 90-day free-storage description.", note: "Used as an attributed platform claim, not as a delivery or availability guarantee." },
+      { label: "Hipobuy app information", checked: "25 August 2026", claim: "Product-search and QC-photo positioning plus listed payment methods.", note: "Used only for the stated app features visible on the checked date." }
     ]
   },
   {
@@ -235,14 +236,15 @@ export const articles: Article[] = [
       }
     ],
     sources: [
-      { label: "Hipobuy app information", note: "Official positioning around product search and QC photos." },
-      { label: "Hipobuy App Store listing", note: "Official description of the shopping-agent and warehouse workflow." },
-      { label: "Public Hipobuy community discussions", note: "Used only to identify recurring buyer questions; community claims are not treated as official policy." }
+      { label: "Hipobuy app information", checked: "25 August 2026", claim: "Official positioning around product search and QC photos.", note: "Used for the existence and purpose of the advertised QC-photo workflow." },
+      { label: "Apple App Store — Hipobuy app listing", checked: "25 August 2026", claim: "The described shopping-agent and warehouse workflow.", note: "Used as an attributed platform description rather than proof of a specific order outcome." },
+      { label: "Public Hipobuy community discussions", checked: "25 August 2026", claim: "Recurring buyer questions about photo coverage, returns and timing.", note: "Community claims are not treated as official policy or guaranteed outcomes." }
     ]
   },
   {
     slug: "hipobuy-shipping-cost-guide",
     title: "Hipobuy Shipping Cost: How to Estimate the Real Delivered Price",
+    seoTitle: "Hipobuy Shipping Cost Guide 2026",
     description: "A 2026 guide to Hipobuy shipping estimates, actual versus volumetric weight, consolidation, packing choices, route comparison and delivered-cost planning.",
     kicker: "Parcel planning · Shipping cost",
     published: "2026-08-25",
@@ -346,9 +348,9 @@ export const articles: Article[] = [
       }
     ],
     sources: [
-      { label: "Hipobuy shipping estimator", note: "Official destination and parcel estimation tool." },
-      { label: "Hipobuy App Store listing", note: "Official claims about global reach, storage and possible delivery speed." },
-      { label: "Public Hipobuy review profile", note: "Public review evidence and the current guideline-breach warning." }
+      { label: "Hipobuy shipping estimator", checked: "25 August 2026", claim: "The current destination-and-parcel estimation workflow.", note: "No quoted result is presented as a permanent shipping rate or final parcel price." },
+      { label: "Apple App Store — Hipobuy app listing", checked: "25 August 2026", claim: "The platform descriptions of global reach, 90-day storage and possible delivery speed.", note: "These are attributed app-listing claims, not promises for every route or order." },
+      { label: "Public Hipobuy review profile", checked: "25 August 2026", claim: "Recurring questions about cost and delay, plus the displayed guideline-breach warning.", note: "Reviews are used as issue signals only, not as verified platform policy or a universal reliability score." }
     ]
   }
 ];

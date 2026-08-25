@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import GuideLayout from "../components/GuideLayout";
 
-export const metadata: Metadata = { title: "Hipobuy Guides: Buying, QC, Storage & Shipping", description: "Practical Hipobuy guides covering source-page checks, warehouse QC photos, parcel consolidation, shipping lines and buyer risk.", alternates: { canonical: "/guides/" } };
+export const metadata: Metadata = { title: "Hipobuy Guides: Buying, QC, Storage & Shipping", description: "Practical Hipobuy guides covering source-page checks, warehouse QC photos, parcel consolidation, shipping lines and buyer risk.", alternates: { canonical: "/guides" } };
 
 export default function GuidesPage() { return <GuideLayout kicker="Buyer library" title="Guides organized around real decisions." intro="No invented delivery promises, guaranteed quality claims or recycled sneaker news. Each guide explains a specific decision and identifies what must be checked again on the live platform.">
   <section className="guide-cards">{[

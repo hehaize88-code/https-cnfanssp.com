@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import GuideLayout from "../components/GuideLayout";
 
-export const metadata: Metadata = { title: "Hipobuy Shipping Guide: Weight, Lines, Tax & Storage", description: "Plan Hipobuy shipping using actual and volumetric weight, line restrictions, insurance, parcel consolidation and destination tax checks.", alternates: { canonical: "/shipping/" } };
+export const metadata: Metadata = { title: "Hipobuy Shipping Guide: Weight, Lines, Tax & Storage", description: "Plan Hipobuy shipping using actual and volumetric weight, line restrictions, insurance, parcel consolidation and destination tax checks.", alternates: { canonical: "/shipping" } };
 
 export default function ShippingPage() { return <GuideLayout kicker="Parcel planning" title="Estimate landed cost—not just the headline shipping quote." intro="International shipping depends on parcel data, route restrictions, destination rules and optional services. Treat every estimate as provisional until the packed parcel and available lines are confirmed." accent="orange">
   <section className="formula-card"><div><p className="section-kicker">Cost model</p><h2>Item cost <b>+</b> domestic delivery <b>+</b> international shipping <b>+</b> tax &amp; fees</h2></div><p>The cheapest product does not always produce the cheapest delivered parcel. Bulky packaging, restricted goods and low-value lines can materially change the final total.</p></section>

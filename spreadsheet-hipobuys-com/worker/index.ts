@@ -38,15 +38,50 @@ function isStaticAsset(pathname: string): boolean {
   return pathname.startsWith("/assets/") || publicAssets.has(pathname);
 }
 
+function withHeaders(response: Response, headersToSet: Record<string, string>): Response {
+  const headers = new Headers(response.headers);
+  for (const [name, value] of Object.entries(headersToSet)) headers.set(name, value);
+  return new Response(response.body, { status: response.status, statusText: response.statusText, headers });
+}
+
+function isRscRequest(request: Request): boolean {
+  return request.headers.has("rsc")
+    || request.headers.has("next-router-state-tree")
+    || request.headers.has("next-router-prefetch")
+    || request.headers.has("next-url")
+    || (request.headers.get("accept") || "").includes("text/x-component");
+}
+
+function shouldCacheHtml(request: Request, url: URL): boolean {
+  return request.method === "GET"
+    && url.search === ""
+    && !isRscRequest(request)
+    && (request.headers.get("accept") || "").includes("text/html");
+}
+
 const worker = {
   async fetch(request: Request, env: Env, ctx: ExecutionContext): Promise<Response> {
     const url = new URL(request.url);
+
+    if (url.hostname === "www.spreadsheet-hipobuys.com") {
+      url.hostname = "spreadsheet-hipobuys.com";
+      return Response.redirect(url.toString(), 301);
+    }
+
+    if (url.pathname.length > 1 && url.pathname.endsWith("/")) {
+      url.pathname = url.pathname.replace(/\/+$/, "");
+      return Response.redirect(url.toString(), 301);
+    }
 
     // Pages advanced mode gives the Worker control of every request. Forward
     // compiled CSS/JS and public images to the Pages asset service so the SSR
     // HTML is hydrated and styled instead of rendering as plain text.
     if (isStaticAsset(url.pathname)) {
-      return env.ASSETS.fetch(request);
+      const assetResponse = await env.ASSETS.fetch(request);
+      const cacheControl = url.pathname.startsWith("/assets/")
+        ? "public, max-age=31536000, immutable"
+        : "public, max-age=86400, stale-while-revalidate=604800";
+      return withHeaders(assetResponse, { "cache-control": cacheControl });
     }
 
     if (url.pathname === "/_vinext/image") {
@@ -60,7 +95,25 @@ const worker = {
       }, allowedWidths);
     }
 
-    return handler.fetch(request, env, ctx);
+    if (!shouldCacheHtml(request, url)) return handler.fetch(request, env, ctx);
+
+    const cache = caches.default;
+    const cacheKey = new Request(url.toString(), request);
+    const cached = await cache.match(cacheKey);
+    if (cached) return withHeaders(cached, { "x-hipo-cache": "HIT" });
+
+    const response = await handler.fetch(request, env, ctx);
+    const contentType = response.headers.get("content-type") || "";
+    if (response.status !== 200 || !contentType.includes("text/html") || response.headers.has("set-cookie")) {
+      return response;
+    }
+
+    const cacheable = withHeaders(response, {
+      "cache-control": "public, max-age=0, s-maxage=3600, stale-while-revalidate=86400",
+      "x-hipo-cache": "MISS",
+    });
+    ctx.waitUntil(cache.put(cacheKey, cacheable.clone()));
+    return cacheable;
   },
 };
 
