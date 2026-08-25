@@ -1,0 +1,17 @@
+import type { Metadata } from "next";
+import GuideLayout from "../components/GuideLayout";
+
+export const metadata: Metadata = { title: "Hipobuy Shipping Guide: Weight, Lines, Tax & Storage", description: "Plan Hipobuy shipping using actual and volumetric weight, line restrictions, insurance, parcel consolidation and destination tax checks.", alternates: { canonical: "/shipping/" } };
+
+export default function ShippingPage() { return <GuideLayout kicker="Parcel planning" title="Estimate landed cost—not just the headline shipping quote." intro="International shipping depends on parcel data, route restrictions, destination rules and optional services. Treat every estimate as provisional until the packed parcel and available lines are confirmed." accent="orange">
+  <section className="formula-card"><div><p className="section-kicker">Cost model</p><h2>Item cost <b>+</b> domestic delivery <b>+</b> international shipping <b>+</b> tax &amp; fees</h2></div><p>The cheapest product does not always produce the cheapest delivered parcel. Bulky packaging, restricted goods and low-value lines can materially change the final total.</p></section>
+  <section className="content-split"><div className="sticky-title"><span>01</span><h2>Understand chargeable weight</h2><p>Carriers may compare actual weight with volumetric weight and charge whichever their line rules specify.</p></div><div className="prose"><h3>Why a light parcel can still cost more</h3><p>Large boxes occupy aircraft or vehicle space even when the contents are light. Ask whether packaging can be removed safely, but consider whether the retail box provides protection or resale value.</p><div className="metric-pair"><div><span>Actual weight</span><strong>Scale measurement</strong><p>The packed parcel’s physical weight.</p></div><div><span>Volumetric weight</span><strong>Size-based value</strong><p>Calculated from parcel dimensions and the line’s divisor.</p></div></div><p className="source-note">Always use the shipping line’s current divisor and billing rules. They can differ by route and change over time.</p></div></section>
+  <section className="shipping-steps">{[
+    ["1","Consolidate intentionally","The official Hipobuy app listing states 90 days of free storage. Use the window to combine orders only when consolidation actually improves cost and risk."],
+    ["2","Compare eligible lines","Check destination coverage, restricted-item rules, estimated timing, tracking, compensation terms and insurance—not only price."],
+    ["3","Review declaration rules","Use accurate information and follow destination laws. This guide does not recommend undervaluing or misdescribing a parcel."],
+    ["4","Plan for tax and customs","Import tax, VAT, duty and clearance procedures depend on the destination and shipment. Verify official local guidance before paying."],
+    ["5","Record the parcel","Save the parcel number, line, declared information, packed weight, tracking number and insurance terms for later reference."]
+  ].map(([n,t,d])=><article key={n}><span>{n}</span><div><h3>{t}</h3><p>{d}</p></div></article>)}</section>
+  <section className="action-banner dark"><div><p className="section-kicker">Start with the item</p><h2>Check the source listing first.</h2><p>Product dimensions, category and packaging affect the shipping decision.</p></div><a href="https://cnfanssp.com/AllProducts/">Browse products ↗</a></section>
+  </GuideLayout>; }
