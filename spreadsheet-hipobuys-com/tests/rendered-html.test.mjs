@@ -8,7 +8,15 @@ test("renders the Pages advanced-mode worker and preserves real 404s", async () 
 
   const env = {
     ASSETS: {
-      fetch: async () => new Response("Not found", { status: 404 }),
+      fetch: async (request) => {
+        const pathname = new URL(request.url).pathname;
+        if (pathname === "/assets/site.css") {
+          return new Response("body{color:#111}", {
+            headers: { "content-type": "text/css" },
+          });
+        }
+        return new Response("Not found", { status: 404 });
+      },
     },
   };
   const context = {
@@ -32,6 +40,15 @@ test("renders the Pages advanced-mode worker and preserves real 404s", async () 
   const html = await response.text();
   assert.match(html, /<title>Hipobuy Spreadsheet 2026/);
   assert.match(html, /rel="canonical" href="https:\/\/spreadsheet-hipobuys\.com\/"/);
+
+  const stylesheet = await worker.fetch(
+    new Request("http://localhost/assets/site.css"),
+    env,
+    context,
+  );
+  assert.equal(stylesheet.status, 200);
+  assert.equal(stylesheet.headers.get("content-type"), "text/css");
+  assert.equal(await stylesheet.text(), "body{color:#111}");
 
   const notFound = await worker.fetch(
     new Request("http://localhost/this-page-does-not-exist"),

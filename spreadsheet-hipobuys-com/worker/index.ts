@@ -25,9 +25,29 @@ interface ExecutionContext {
 // dangerouslyAllowSVG: true in next.config.js and uncomment below:
 // const imageConfig: ImageConfig = { dangerouslyAllowSVG: true };
 
+const publicAssets = new Set([
+  "/favicon.svg",
+  "/file.svg",
+  "/globe.svg",
+  "/hipobuy-logo.png",
+  "/og.png",
+  "/window.svg",
+]);
+
+function isStaticAsset(pathname: string): boolean {
+  return pathname.startsWith("/assets/") || publicAssets.has(pathname);
+}
+
 const worker = {
   async fetch(request: Request, env: Env, ctx: ExecutionContext): Promise<Response> {
     const url = new URL(request.url);
+
+    // Pages advanced mode gives the Worker control of every request. Forward
+    // compiled CSS/JS and public images to the Pages asset service so the SSR
+    // HTML is hydrated and styled instead of rendering as plain text.
+    if (isStaticAsset(url.pathname)) {
+      return env.ASSETS.fetch(request);
+    }
 
     if (url.pathname === "/_vinext/image") {
       const allowedWidths = [...DEFAULT_DEVICE_SIZES, ...DEFAULT_IMAGE_SIZES];
