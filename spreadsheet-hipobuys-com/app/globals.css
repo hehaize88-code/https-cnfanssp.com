@@ -251,7 +251,7 @@ footer { padding:44px max(24px,5vw) 25px; display:grid; grid-template-columns:1f
 .article-sources ul { margin-top:22px; }
 .article-sources li { display:grid; grid-template-columns:200px 1fr; gap:18px; padding-left:10px; }
 .article-sources li::before { display:none; }
-.article-sources a { color:var(--blue); font-weight:700; }
+.article-sources a,.article-sources strong { color:var(--blue); font-weight:700; }
 .article-sources span { color:var(--muted); }
 .article-next { margin-top:42px; padding:30px; display:grid; grid-template-columns:1fr auto; gap:30px; align-items:end; border-radius:18px; background:var(--blue-soft); }
 .article-next h2 { margin:8px 0 0; max-width:520px; font-size:32px; }

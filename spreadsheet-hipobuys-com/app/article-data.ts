@@ -18,7 +18,7 @@ export type Article = {
   imageAlt?: string;
   imageCaption?: string;
   sections: ArticleSection[];
-  sources: { label: string; url: string; note: string }[];
+  sources: { label: string; note: string }[];
 };
 
 export const articles: Article[] = [
@@ -121,9 +121,9 @@ export const articles: Article[] = [
       }
     ],
     sources: [
-      { label: "Hipobuy official website", url: "https://hipobuy.com/", note: "Platform positioning and official shipping estimator access." },
-      { label: "Hipobuy on the App Store", url: "https://apps.apple.com/us/app/hipobuy/id6748938660", note: "Official description of Taobao/1688 purchasing, international delivery and 90-day free storage." },
-      { label: "Hipobuy app landing page", url: "https://app.hipobuy.com/", note: "Official QC-search positioning and listed payment methods." }
+      { label: "Hipobuy official website", note: "Platform positioning and official shipping estimator access." },
+      { label: "Hipobuy App Store listing", note: "Official description of Taobao/1688 purchasing, international delivery and 90-day free storage." },
+      { label: "Hipobuy app information", note: "Official QC-search positioning and listed payment methods." }
     ]
   },
   {
@@ -235,9 +235,9 @@ export const articles: Article[] = [
       }
     ],
     sources: [
-      { label: "Hipobuy app landing page", url: "https://app.hipobuy.com/", note: "Official positioning around product search and QC photos." },
-      { label: "Hipobuy on the App Store", url: "https://apps.apple.com/us/app/hipobuy/id6748938660", note: "Official description of the shopping-agent and warehouse workflow." },
-      { label: "Hipobuy community discussions", url: "https://www.reddit.com/r/Hipobuy_/", note: "Used only to identify recurring buyer questions; community claims are not treated as official policy." }
+      { label: "Hipobuy app information", note: "Official positioning around product search and QC photos." },
+      { label: "Hipobuy App Store listing", note: "Official description of the shopping-agent and warehouse workflow." },
+      { label: "Public Hipobuy community discussions", note: "Used only to identify recurring buyer questions; community claims are not treated as official policy." }
     ]
   },
   {
@@ -346,9 +346,9 @@ export const articles: Article[] = [
       }
     ],
     sources: [
-      { label: "Hipobuy shipping estimator", url: "https://hipobuy.com/estimation", note: "Official destination and parcel estimation tool." },
-      { label: "Hipobuy on the App Store", url: "https://apps.apple.com/us/app/hipobuy/id6748938660", note: "Official claims about global reach, storage and possible delivery speed." },
-      { label: "Hipobuy Trustpilot profile", url: "https://www.trustpilot.com/review/hipobuy.com", note: "Public review evidence and the current guideline-breach warning." }
+      { label: "Hipobuy shipping estimator", note: "Official destination and parcel estimation tool." },
+      { label: "Hipobuy App Store listing", note: "Official claims about global reach, storage and possible delivery speed." },
+      { label: "Public Hipobuy review profile", note: "Public review evidence and the current guideline-breach warning." }
     ]
   }
 ];
