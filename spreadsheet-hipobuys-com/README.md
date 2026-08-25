@@ -15,4 +15,8 @@ Independent Hipobuy spreadsheet, QC and shipping guide.
 - `npm run build`
 - `npm test`
 
+For Cloudflare Pages Git deployments, use `npm run build` with `dist/client`
+as the output directory. The build prepares an advanced-mode `_worker.js`
+inside that directory so the existing server-rendered routes keep working.
+
 The public site keeps all product, category and search actions pointed only at the owner's main catalog. Research sources are shown as non-clickable notes so the guide does not send visitors to third-party websites.

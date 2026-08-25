@@ -1,0 +1,7 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "spreadsheet-hipobuys-com",
+  "pages_build_output_dir": "./dist/client",
+  "compatibility_date": "2026-08-25",
+  "compatibility_flags": ["nodejs_compat"]
+}
