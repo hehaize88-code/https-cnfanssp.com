@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://findqcs.net/sitemap.xml
+Host: https://findqcs.net

@@ -1,0 +1,2 @@
+import Link from "next/link";
+export default function NotFound(){return <main className="not-found"><div className="brand"><img src="/findqc-logo.png" alt=""/><b>FindQCs</b></div><p className="kicker">ERROR / 404</p><h1>This page is not in the inspection set.</h1><p>The address may be incorrect or the page may have moved.</p><Link href="/">Return to search →</Link></main>}
