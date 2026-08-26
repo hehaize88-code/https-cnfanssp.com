@@ -9,15 +9,15 @@ const serverEntry = path.resolve("dist/server/index.js");
 
 const routes = [
   "/",
-  "/articles",
-  "/articles/acbuy-information-verification",
-  "/articles/acbuy-qc-photos-guide",
-  "/articles/acbuy-shipping-cost-guide",
-  "/articles/acbuy-spreadsheet-guide",
-  "/faq",
-  "/guide",
-  "/qc-guide",
-  "/shipping",
+  "/articles/",
+  "/articles/acbuy-information-verification/",
+  "/articles/acbuy-qc-photos-guide/",
+  "/articles/acbuy-shipping-cost-guide/",
+  "/articles/acbuy-spreadsheet-guide/",
+  "/faq/",
+  "/guide/",
+  "/qc-guide/",
+  "/shipping/",
 ];
 
 await rm(outputDir, { recursive: true, force: true });
@@ -44,11 +44,10 @@ for (const route of routes) {
     '<meta name="robots" content="index, follow, max-image-preview:large">',
   );
 
-  if (!/<link[^>]+rel=["']canonical["']/i.test(html)) {
-    html = html.replace("</head>", `<link rel="canonical" href="${origin}${route}"></head>`);
-  }
+  html = html.replace(/<link(?=[^>]*rel=["']canonical["'])[^>]*>/gi, "");
+  html = html.replace("</head>", `<link rel="canonical" href="${origin}${route}"></head>`);
 
-  const targetDir = route === "/" ? outputDir : path.join(outputDir, route.slice(1));
+  const targetDir = route === "/" ? outputDir : path.join(outputDir, route.slice(1, -1));
   await mkdir(targetDir, { recursive: true });
   await writeFile(path.join(targetDir, "index.html"), html);
 }

@@ -209,14 +209,22 @@ const pageExtras: Record<Exclude<Lang,"en">, Pairs> = {
 };
 
 
+const trustFixes: Record<Exclude<Lang,"en">, Pairs> = {
+  de: [["Research & Guides","Recherche & Ratgeber"],["Research & guides","Recherche & Ratgeber"],["Search full catalog","Gesamten Katalog durchsuchen"],["Links checked August 26, 2026","Links geprüft am 26. August 2026"],["Preview listings use public product records and the current first image from each linked product page. Verify the exact item details on the destination page.","Die Vorschau nutzt öffentliche Produkteinträge und das aktuelle erste Bild jeder verlinkten Produktseite. Prüfe die genauen Artikeldetails auf der Zielseite."],["Checked Aug 26, 2026","Geprüft am 26. Aug. 2026"],["Approx. USD","Ca. USD"]],
+  fr: [["Research & Guides","Recherches et guides"],["Research & guides","Recherches et guides"],["Search full catalog","Rechercher dans tout le catalogue"],["Links checked August 26, 2026","Liens vérifiés le 26 août 2026"],["Preview listings use public product records and the current first image from each linked product page. Verify the exact item details on the destination page.","Les aperçus utilisent des fiches publiques et la première image actuelle de chaque page produit liée. Vérifiez les détails exacts sur la page de destination."],["Checked Aug 26, 2026","Vérifié le 26 août 2026"],["Approx. USD","USD env."]],
+  es: [["Research & Guides","Investigación y guías"],["Research & guides","Investigación y guías"],["Search full catalog","Buscar en todo el catálogo"],["Links checked August 26, 2026","Enlaces comprobados el 26 de agosto de 2026"],["Preview listings use public product records and the current first image from each linked product page. Verify the exact item details on the destination page.","Las vistas previas usan fichas públicas y la primera imagen actual de cada página enlazada. Verifica los detalles exactos en la página de destino."],["Checked Aug 26, 2026","Comprobado el 26 ago 2026"],["Approx. USD","USD aprox."]],
+  it: [["Research & Guides","Ricerche e guide"],["Research & guides","Ricerche e guide"],["Search full catalog","Cerca nell’intero catalogo"],["Links checked August 26, 2026","Link verificati il 26 agosto 2026"],["Preview listings use public product records and the current first image from each linked product page. Verify the exact item details on the destination page.","Le anteprime usano schede pubbliche e la prima immagine attuale di ogni pagina prodotto collegata. Verifica i dettagli esatti nella pagina di destinazione."],["Checked Aug 26, 2026","Verificato il 26 ago 2026"],["Approx. USD","USD circa"]],
+  pl: [["Research & Guides","Analizy i poradniki"],["Research & guides","Analizy i poradniki"],["Search full catalog","Przeszukaj pełny katalog"],["Links checked August 26, 2026","Linki sprawdzone 26 sierpnia 2026 r."],["Preview listings use public product records and the current first image from each linked product page. Verify the exact item details on the destination page.","Podgląd korzysta z publicznych kart produktów i aktualnego pierwszego zdjęcia z każdej strony docelowej. Sprawdź dokładne dane na stronie produktu."],["Checked Aug 26, 2026","Sprawdzono 26.08.2026"],["Approx. USD","Około USD"]],
+};
+
 function makeMap(base: Pairs, extra: Pairs = []) {
   return new Map<string,string>([...base, ...extra]);
 }
 
 export const dictionaries: Record<Exclude<Lang,"en">, Map<string,string>> = {
-  de: makeMap(de, [...pageExtras.de, ...longArticleTranslations.de]),
-  fr: makeMap(fr, [...overrides.fr, ...nativeBody.fr, ...pageExtras.fr, ...longArticleTranslations.fr]),
-  es: makeMap(es, [...overrides.es, ...nativeBody.es, ...pageExtras.es, ...longArticleTranslations.es]),
-  it: makeMap(it, [...overrides.it, ...nativeBody.it, ...pageExtras.it, ...longArticleTranslations.it]),
-  pl: makeMap(pl, [...overrides.pl, ...nativeBody.pl, ...pageExtras.pl, ...longArticleTranslations.pl]),
+  de: makeMap(de, [...pageExtras.de, ...longArticleTranslations.de, ...trustFixes.de]),
+  fr: makeMap(fr, [...overrides.fr, ...nativeBody.fr, ...pageExtras.fr, ...longArticleTranslations.fr, ...trustFixes.fr]),
+  es: makeMap(es, [...overrides.es, ...nativeBody.es, ...pageExtras.es, ...longArticleTranslations.es, ...trustFixes.es]),
+  it: makeMap(it, [...overrides.it, ...nativeBody.it, ...pageExtras.it, ...longArticleTranslations.it, ...trustFixes.it]),
+  pl: makeMap(pl, [...overrides.pl, ...nativeBody.pl, ...pageExtras.pl, ...longArticleTranslations.pl, ...trustFixes.pl]),
 };

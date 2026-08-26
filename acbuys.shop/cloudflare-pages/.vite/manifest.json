@@ -11,7 +11,7 @@
     "name": "rolldown-runtime"
   },
   "app/ui/CatalogHome.tsx": {
-    "file": "assets/CatalogHome-DujyKCRY.js",
+    "file": "assets/CatalogHome-1isRlQem.js",
     "name": "CatalogHome",
     "src": "app/ui/CatalogHome.tsx",
     "isDynamicEntry": true,
@@ -22,7 +22,7 @@
     ]
   },
   "app/ui/LanguageProvider.tsx": {
-    "file": "assets/LanguageProvider-DOliz_NJ.js",
+    "file": "assets/LanguageProvider-h4YasERl.js",
     "name": "LanguageProvider",
     "src": "app/ui/LanguageProvider.tsx",
     "isDynamicEntry": true,
@@ -32,7 +32,7 @@
     ]
   },
   "node_modules/vinext/dist/shims/layout-segment-context.js": {
-    "file": "assets/layout-segment-context-8NXUZ7rS.js",
+    "file": "assets/layout-segment-context-BqByRtfM.js",
     "name": "layout-segment-context",
     "src": "node_modules/vinext/dist/shims/layout-segment-context.js",
     "isDynamicEntry": true,
@@ -43,7 +43,7 @@
     ]
   },
   "virtual:vinext-app-browser-entry": {
-    "file": "assets/index-Cnwl0YRu.js",
+    "file": "assets/index-D1N18bOf.js",
     "name": "index",
     "src": "virtual:vinext-app-browser-entry",
     "isEntry": true,
