@@ -26,7 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="antialiased">
+      <body className="antialiased"><script async src="https://www.googletagmanager.com/gtag/js?id=G-Q81YBM09Z1" /><script dangerouslySetInnerHTML={{ __html: "window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-Q81YBM09Z1');" }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "WebSite", name: "AllChinaBuy Spreadsheet 2026", url: "https://allchinabuys.store", description: "An independent product discovery and shopping education resource." }) }} />
         <LanguageProvider>{children}</LanguageProvider>
       </body>
