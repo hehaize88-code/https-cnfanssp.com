@@ -6,10 +6,13 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://allchinabuys.store"),
   title: { default: "AllChinaBuy Spreadsheet 2026 | Verified Product Finds", template: "%s | AllChinaBuy Spreadsheet" },
   description: "Browse organized AllChinaBuy spreadsheet finds, product source records, QC checklists and practical shipping guides.",
-  robots: { index: false, follow: false },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1, "max-video-preview": -1 },
+  },
   openGraph: { type: "website", title: "AllChinaBuy Index 2026", description: "Check the source. Compare the details.", images: [{ url: "/og-v2.png", width: 1732, height: 908, alt: "AllChinaBuy Index — product intelligence workspace" }] },
   twitter: { card: "summary_large_image", title: "AllChinaBuy Index 2026", description: "Check the source. Compare the details.", images: ["/og-v2.png"] },
-  other: { "codex-preview": "development" },
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",

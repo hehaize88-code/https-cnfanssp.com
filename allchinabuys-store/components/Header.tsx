@@ -10,7 +10,7 @@ export function Header() {
   const [open, setOpen] = useState(false);
   return (
     <header className="site-header">
-      <div className="preview-strip"><span>Review build</span><span>Not connected to the live domain</span></div>
+      <div className="preview-strip"><span>Independent product index</span><span>Edition 08 / 2026</span></div>
       <div className="nav-shell">
         <Link href="/" className="brand" aria-label="AllChinaBuy Index home"><img src="/allchinabuy-logo.png" alt="AllChinaBuy" className="brand-logo" /></Link>
         <nav className={open ? "nav-links open" : "nav-links"} aria-label="Primary navigation">{nav.map(([label, href]) => <Link key={href} href={href} onClick={() => setOpen(false)}>{label}</Link>)}</nav>

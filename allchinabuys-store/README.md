@@ -1,4 +1,17 @@
-# vinext-starter
+# AllChinaBuy Spreadsheet 2026
+
+Production source for `https://allchinabuys.store`, built with Vinext and Cloudflare Workers.
+
+## Cloudflare Git deployment
+
+- Repository: `hehaize88-code/https-cnfanssp.com`
+- Production branch: `main`
+- Root directory: `allchinabuys-store`
+- Build command: `npm run build`
+- Deploy command: `npm run deploy`
+- Node.js version: `22.13.0` or newer
+
+Use a Cloudflare **Workers** Git deployment rather than a static Pages export. The build generates the Worker entry point and static assets under `dist/`; the deploy script reads `dist/server/wrangler.json`.
 
 A clean full-stack starter running on
 [vinext](https://github.com/cloudflare/vinext), with optional Cloudflare D1 and
