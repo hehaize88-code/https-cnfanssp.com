@@ -4,13 +4,13 @@ import SiteFooter from "../../components/SiteFooter";
 import SiteHeader from "../../components/SiteHeader";
 
 const MAIN = "https://www.cnfanssp.com";
-type Article = { title:string; dek:string; date:string; read:string; label:string; verified:string[]; sections:{heading:string; paragraphs:string[]}[] };
+type Article = { title:string; dek:string; date:string; updated:string; read:string; label:string; keyword:string; verified:string[]; sections:{heading:string; paragraphs:string[]}[] };
 
 const articles: Record<string, Article> = {
   "how-to-use-allchinabuy-spreadsheet": {
-    title: "How to Use an AllChinaBuy Spreadsheet Without Wasting Time",
-    dek: "A practical, link-first workflow for turning a product directory into a shortlist you can actually inspect and order.",
-    date: "August 26, 2026", read: "11 min read", label: "Beginner guide",
+    title: "AllChinaBuy Listing Verification & Dead-Link Recovery",
+    dek: "A link-first workflow for confirming a destination listing, recording variants and recovering unavailable product links without guessing.",
+    date: "August 26, 2026", updated: "August 26, 2026", read: "11 min read", label: "Listing verification", keyword: "AllChinaBuy listing verification",
     verified: ["Taobao, Tmall and 1688 supported", "Inspection, photography and storage stage", "90-day free storage currently advertised"],
     sections: [
       { heading: "Start with the job the spreadsheet should do", paragraphs: [
@@ -61,9 +61,9 @@ const articles: Record<string, Article> = {
     ]
   },
   "warehouse-qc-photo-checklist": {
-    title: "Warehouse QC Photo Checklist: What to Check Before Shipping",
-    dek: "A category-neutral inspection process for reviewing warehouse photographs without pretending they guarantee product quality.",
-    date: "August 26, 2026", read: "11 min read", label: "QC guide",
+    title: "AllChinaBuy QC Photos for Shoes, Clothing & Accessories",
+    dek: "A category-specific process for reading warehouse photographs without pretending that images guarantee product quality.",
+    date: "August 26, 2026", updated: "August 26, 2026", read: "11 min read", label: "Category inspection", keyword: "AllChinaBuy QC photos by category",
     verified: ["Official quality-inspection stage", "Photography before international delivery", "After-sales tools listed in Help Center"],
     sections: [
       { heading: "First confirm identity, not perfection", paragraphs: [
@@ -114,9 +114,9 @@ const articles: Record<string, Article> = {
     ]
   },
   "plan-allchinabuy-shipping": {
-    title: "Plan AllChinaBuy Shipping Before You Build a Large Parcel",
-    dek: "How destination, weight, dimensions, restrictions and packing choices shape the quote you see at parcel submission.",
-    date: "August 26, 2026", read: "12 min read", label: "Shipping guide",
+    title: "AllChinaBuy Volumetric Weight: Split or Consolidate?",
+    dek: "A parcel-size decision framework for comparing physical and volumetric weight, packaging removal, consolidation and split shipments.",
+    date: "August 26, 2026", updated: "August 26, 2026", read: "12 min read", label: "Parcel-size decision", keyword: "AllChinaBuy volumetric weight",
     verified: ["Official freight calculator", "Mail limitations and parcel tracking tools", "Shipping Expert packing and priority controls"],
     sections: [
       { heading: "Separate product cost from international delivery", paragraphs: [
@@ -174,18 +174,19 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params; const a = articles[slug]; if (!a) return {};
-  return { title: `${a.title} | AllChinaBuy Finds`, description: a.dek, keywords:[a.title.includes("QC") ? "AllChinaBuy QC photos" : a.title.includes("Shipping") ? "AllChinaBuy shipping" : "AllChinaBuy spreadsheet", "AllChinaBuy guide"], alternates:{canonical:`https://allchinabuys.shop/articles/${slug}/`}, openGraph:{title:a.title,description:a.dek,type:"article",url:`https://allchinabuys.shop/articles/${slug}/`,images:[]}, twitter:{card:"summary",title:a.title,description:a.dek,images:[]} };
+  return { title: a.title, description: a.dek, keywords:[a.keyword, "AllChinaBuy product research"], alternates:{canonical:`https://allchinabuys.shop/articles/${slug}/`}, openGraph:{title:a.title,description:a.dek,type:"article",url:`https://allchinabuys.shop/articles/${slug}/`,images:[{url:"/og.png",width:1200,height:630}]}, twitter:{card:"summary_large_image",title:a.title,description:a.dek,images:["/og.png"]} };
 }
 
 export default async function ArticlePage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params; const article = articles[slug]; if (!article) notFound();
   const articleText = article.sections.flatMap(section => [section.heading, ...section.paragraphs]).join(" ");
   const schema = {"@context":"https://schema.org","@type":"Article","headline":article.title,"description":article.dek,"datePublished":"2026-08-26","dateModified":"2026-08-26","wordCount":articleText.trim().split(/\s+/).length,"author":{"@type":"Organization","name":"AllChinaBuy Finds Research Desk"},"publisher":{"@type":"Organization","name":"AllChinaBuy Finds"},"mainEntityOfPage":`https://allchinabuys.shop/articles/${slug}/`};
+  const breadcrumbSchema = {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://allchinabuys.shop/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://allchinabuys.shop/articles/"},{"@type":"ListItem","position":3,"name":article.title,"item":`https://allchinabuys.shop/articles/${slug}/`} ]};
   return <main className="article-page">
     <SiteHeader />
     <article>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(schema)}} />
-      <header className="article-hero"><p className="section-kicker">{article.label}</p><h1>{article.title}</h1><p className="article-dek">{article.dek}</p><div className="article-meta"><span>{article.date}</span><span>{article.read}</span><span>{articleText.trim().split(/\s+/).length.toLocaleString("en-US")} words</span><span>Independent guide</span></div></header>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(schema)}} /><script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(breadcrumbSchema)}} />
+      <header className="article-hero"><p className="section-kicker">{article.label}</p><h1>{article.title}</h1><p className="article-dek">{article.dek}</p><div className="article-meta"><span>By Research Desk</span><span>Published {article.date}</span><span>Updated {article.updated}</span><span>{article.read}</span><span>{articleText.trim().split(/\s+/).length.toLocaleString("en-US")} words</span></div></header>
       <div className="article-fact-strip"><b>Official facts checked</b>{article.verified.map(item=><span key={item}>✓ {item}</span>)}</div>
       <div className="article-layout"><aside><span>IN THIS GUIDE</span>{article.sections.map((s,i)=><a href={`#section-${i}`} key={s.heading}>{String(i+1).padStart(2,"0")} {s.heading}</a>)}</aside><div className="article-content">{article.sections.map((s,i)=><section id={`section-${i}`} key={s.heading}><span className="article-num">{String(i+1).padStart(2,"0")}</span><h2>{s.heading}</h2>{s.paragraphs.map(p=><p key={p}>{p}</p>)}</section>)}<div className="fact-note"><b>Fact-check note</b><p>Platform functions and policies can change. Recheck the destination listing, your account and the current shipping interface before making a purchase or parcel decision.</p></div></div></div>
     </article>

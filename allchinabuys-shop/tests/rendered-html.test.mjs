@@ -17,8 +17,9 @@ test("exports independent pages and SEO discovery files", async () => {
   const robots = await readFile(new URL("../dist/client/robots.txt", import.meta.url), "utf8");
   const sitemap = await readFile(new URL("../dist/client/sitemap.xml", import.meta.url), "utf8");
 
-  assert.match(spreadsheet, /AllChinaBuy Spreadsheet Guide/);
-  assert.match(article, /How to Use an AllChinaBuy Spreadsheet/);
+  assert.match(spreadsheet, /AllChinaBuy Spreadsheet Product Index/);
+  assert.match(article, /AllChinaBuy Listing Verification/);
   assert.match(robots, /Sitemap: https:\/\/allchinabuys\.shop\/sitemap\.xml/);
   assert.match(sitemap, /https:\/\/allchinabuys\.shop\/articles\/plan-allchinabuy-shipping\//);
+  assert.match(sitemap, /https:\/\/allchinabuys\.shop\/editorial-method\//);
 });

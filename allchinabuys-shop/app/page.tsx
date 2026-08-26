@@ -13,12 +13,12 @@ const categories = [
 ];
 
 const products = [
-  { name: "Nike Dunk Low × Off-White", type: "Shoes", note: "Statement sneaker find", href: "/AllProducts/2597.html", image: "/products/nike-dunk.webp" },
-  { name: "Autry Shoes", type: "Shoes", note: "Low-profile everyday pair", href: "/AllProducts/4276.html", image: "/products/autry-shoes.gif" },
-  { name: "6PM Hoodie Set", type: "Hoodies", note: "Coordinated two-piece set", href: "/AllProducts/24.html", image: "/products/6pm-hoodie.jpg" },
-  { name: "Godspeed Hoodie", type: "Hoodies", note: "Graphic pullover selection", href: "/AllProducts/717.html", image: "/products/godspeed-hoodie.webp" },
-  { name: "Celine Hoodie", type: "Hoodies", note: "Minimal wardrobe layer", href: "/AllProducts/2822.html", image: "/products/celine-hoodie.webp" },
-  { name: "Jersey 46", type: "Jerseys", note: "Match-day category pick", href: "/AllProducts/6653.html", image: "/products/jersey-46.jpg" },
+  { name: "Nike Dunk Low × Off-White", type: "Shoes", note: "Statement sneaker find", href: "/AllProducts/2597.html", image: "/products/nike-dunk.webp", width: 750, height: 750 },
+  { name: "Autry Shoes", type: "Shoes", note: "Low-profile everyday pair", href: "/AllProducts/4276.html", image: "/products/autry-shoes.webp", width: 500, height: 338 },
+  { name: "6PM Hoodie Set", type: "Hoodies", note: "Coordinated two-piece set", href: "/AllProducts/24.html", image: "/products/6pm-hoodie.webp", width: 600, height: 600 },
+  { name: "Godspeed Hoodie", type: "Hoodies", note: "Graphic pullover selection", href: "/AllProducts/717.html", image: "/products/godspeed-hoodie.webp", width: 750, height: 750 },
+  { name: "Celine Hoodie", type: "Hoodies", note: "Minimal wardrobe layer", href: "/AllProducts/2822.html", image: "/products/celine-hoodie.webp", width: 750, height: 750 },
+  { name: "Jersey 46", type: "Jerseys", note: "Match-day category pick", href: "/AllProducts/6653.html", image: "/products/jersey-46.webp", width: 1280, height: 720 },
 ];
 
 const guides = [
@@ -30,7 +30,7 @@ const guides = [
 export default function Home() {
   const schema = {
     "@context":"https://schema.org","@type":"WebSite","name":"AllChinaBuy Spreadsheet & Finds","url":"https://allchinabuys.shop/",
-    "description":"Independent product discovery, QC education and shipping guidance.",
+    "description":"Independent product discovery, listing verification and category research.",
     "potentialAction":{"@type":"SearchAction","target":"https://www.cnfanssp.com/search.html?keywords={search_term_string}&channelid=2","query-input":"required name=search_term_string"}
   };
   return (
@@ -41,7 +41,7 @@ export default function Home() {
         <div className="hero-copy">
           <p className="eyebrow"><span>Updated weekly</span> Independent product index</p>
           <h1>Find it faster.<br/><em>Check it smarter.</em></h1>
-          <p className="hero-lede">A cleaner AllChinaBuy spreadsheet experience for discovering products, reviewing QC steps and planning international delivery—without digging through endless rows.</p>
+          <p className="hero-lede">A cleaner AllChinaBuy spreadsheet experience for discovering products, checking live links and comparing listing details—without digging through endless rows.</p>
           <form className="search" action={`${MAIN}/search.html`} method="get" target="_blank">
             <label className="sr-only" htmlFor="product-search">Search products</label><span aria-hidden="true">⌕</span>
             <input id="product-search" name="keywords" data-search-input placeholder="Search shoes, hoodies, jerseys…" />
@@ -53,7 +53,7 @@ export default function Home() {
         <div className="hero-board" aria-label="Product discovery preview">
           <div className="board-head"><span>PRODUCT DETAILS</span><strong>Live destination links</strong></div>
           <div className="board-grid">
-            {[products[0],products[2],products[4]].map((product,index)=><a className="board-card board-product" href={`${MAIN}${product.href}`} target="_blank" rel="noopener noreferrer" key={product.name}><img src={product.image} alt={product.name}/><span className="board-product-overlay"><small>{product.type}</small><b>{product.name}</b><i>View product ↗</i></span><span className="board-index">0{index+1}</span></a>)}
+            {[products[0],products[2],products[4]].map((product,index)=><a className="board-card board-product" href={`${MAIN}${product.href}`} target="_blank" rel="noopener noreferrer" key={product.name}><img src={product.image} alt={product.name} width={product.width} height={product.height} loading={index === 0 ? "eager" : "lazy"} fetchPriority={index === 0 ? "high" : "auto"} decoding="async"/><span className="board-product-overlay"><small>{product.type}</small><b>{product.name}</b><i>View product ↗</i></span><span className="board-index">0{index+1}</span></a>)}
             <div className="board-note"><span>✓</span><p><b>Link-first browsing</b><br/>Open the current destination listing before ordering.</p></div>
           </div>
         </div>
@@ -77,7 +77,7 @@ export default function Home() {
         <div className="product-grid">
           {products.map((p, i) => (
             <a className="product-card" key={p.name} href={`${MAIN}${p.href}`} target="_blank" rel="noopener noreferrer">
-              <div className="product-visual"><img src={p.image} alt={p.name}/><span className="product-number">{String(i + 1).padStart(2, "0")}</span><span className="view-pill">View listing ↗</span></div>
+              <div className="product-visual"><img src={p.image} alt={p.name} width={p.width} height={p.height} loading="lazy" decoding="async"/><span className="product-number">{String(i + 1).padStart(2, "0")}</span><span className="view-pill">View listing ↗</span></div>
               <div className="product-info"><span>{p.type}</span><h3>{p.name}</h3><p>{p.note}</p><small>Check current price & availability</small></div>
             </a>
           ))}
@@ -90,9 +90,9 @@ export default function Home() {
       </section>
 
       <section className="section editorial-section">
-        <div className="editorial-image"><img src="/og.png" alt="AllChinaBuy Spreadsheet editorial collage with parcel boxes, a hoodie, a sneaker, QC photos and a product grid" /></div>
+        <div className="editorial-image"><img src="/og.png" alt="AllChinaBuy Spreadsheet editorial collage with parcel boxes, a hoodie, a sneaker, QC photos and a product grid" width="1200" height="630" loading="lazy" decoding="async" /></div>
         <div className="editorial-copy"><p className="section-kicker">Research desk</p><h2>Useful answers<br/>beyond the links.</h2><p>Product discovery is only the first step. These guides explain what to verify before ordering, what warehouse photos can show and why a shipping quote must be checked for the parcel you actually create.</p>
-          <div className="article-links"><a href="/articles/how-to-use-allchinabuy-spreadsheet/"><span>BEGINNER GUIDE</span><b>How to Use an AllChinaBuy Spreadsheet</b><i>8 min →</i></a><a href="/articles/warehouse-qc-photo-checklist/"><span>QC GUIDE</span><b>Warehouse QC Photo Checklist</b><i>7 min →</i></a><a href="/articles/plan-allchinabuy-shipping/"><span>SHIPPING</span><b>Plan Shipping Before Checkout</b><i>9 min →</i></a></div>
+          <div className="article-links"><a href="/articles/how-to-use-allchinabuy-spreadsheet/"><span>LISTING CHECK</span><b>Verify Listings &amp; Recover Dead Links</b><i>11 min →</i></a><a href="/articles/warehouse-qc-photo-checklist/"><span>CATEGORY QC</span><b>QC Photos for Shoes, Clothing &amp; Accessories</b><i>11 min →</i></a><a href="/articles/plan-allchinabuy-shipping/"><span>PARCEL DECISION</span><b>Volumetric Weight: Split or Consolidate?</b><i>12 min →</i></a></div>
         </div>
       </section>
 
