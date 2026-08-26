@@ -1,0 +1,19 @@
+{
+  "lastUpdated": "2026-08-26",
+  "site": "findqcs.net",
+  "track": "QED",
+  "articles": [
+    {
+      "cycle": "C01",
+      "planTrack": "QED01",
+      "slug": "pre-purchase-qc-evidence-worksheet",
+      "primaryQuery": "pre-purchase QC evidence worksheet",
+      "intent": "Organize already-found listing and QC material into an auditable record before a buyer-selected agent acts",
+      "longTailQueries": ["QC inspection worksheet", "QC photo decision log", "product inspection evidence record"],
+      "focus": ["decision scope", "product identity", "coverage map", "observation confidence", "evidence gaps", "agent handoff"],
+      "outline": ["decision header", "identity row", "coverage map", "observation line", "targeted request", "decision line", "agent handoff"],
+      "faqAngles": ["What belongs in a QC evidence worksheet?", "How should missing QC angles be recorded?", "Who performs the purchase and warehouse action?"],
+      "visuals": ["Six HTML checklist panels; no customer media, third-party screenshots or new image assets"]
+    }
+  ]
+}
