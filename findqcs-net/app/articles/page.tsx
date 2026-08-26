@@ -12,6 +12,7 @@ const articles = [
   ["QC SEARCH GUIDE", "How to Find QC Photos by Product Link or Keyword", "Start with an exact product link, widen to keyword or image search, and verify whether each result really matches the current listing.", "/guides/warehouse-lighting/", "10 min"],
   ["QC PHOTO GUIDE", "How to Read QC Photos Before You Buy", "A repeatable inspection process for matching the listing, checking shape and stitching, reading measurements and spotting visible defects.", "/guides/qc-photo-checklist/", "12 min"],
   ["SIZE RESEARCH", "QC Photo Size Guide: Clothing and Shoe Measurements", "Compare actual garment and footwear measurements with an item you already own instead of relying on translated size labels.", "/guides/size-and-measurements/", "11 min"],
+  ["EVIDENCE WORKSHEET", "Pre-Purchase QC Evidence Worksheet: Build an Auditable Record", "Record product identity, photo coverage, observations, evidence gaps and a clear handoff before your chosen agent acts.", "/articles/pre-purchase-qc-evidence-worksheet/", "11 min"],
 ];
 
 export default function Articles() {

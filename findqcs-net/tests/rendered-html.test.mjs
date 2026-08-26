@@ -32,4 +32,11 @@ test("renders canonical URLs and SEO schemas in static HTML", async () => {
   assert.match(guide, /"@type":"Article"/i);
   assert.match(guide, /"@type":"BreadcrumbList"/i);
   assert.doesNotMatch(guide, /href="\/categories"(?!\/)/i);
+
+  const worksheet = await render("/articles/pre-purchase-qc-evidence-worksheet/");
+  assert.match(worksheet, /<link rel="canonical" href="https:\/\/findqcs\.net\/articles\/pre-purchase-qc-evidence-worksheet\/"\/>/i);
+  assert.match(worksheet, /"@type":"Article"/i);
+  assert.match(worksheet, /"@type":"BreadcrumbList"/i);
+  assert.match(worksheet, /datePublished":"2026-08-26"/i);
+  assert.doesNotMatch(worksheet, /href="https:\/\/(?:findqc\.com|[^"']*(?:agent|spreadsheet))/i);
 });
