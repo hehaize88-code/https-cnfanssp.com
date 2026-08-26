@@ -19,7 +19,7 @@ interface ExecutionContext {
   passThroughOnException(): void;
 }
 
-const CACHE_VERSION = "2026-08-26-seo-hardening-1";
+const CACHE_VERSION = "2026-08-26-seo-hardening-2";
 const CACHE_CONTROL = "public, max-age=300, s-maxage=86400, stale-while-revalidate=604800";
 
 function cachedResponse(response: Response, state: "HIT" | "MISS") {
