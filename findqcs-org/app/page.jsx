@@ -28,16 +28,16 @@ export default function HomePage() {
           <dl className="index-metrics">
             <div><dt>{products.length}</dt><dd>{t("home.catalogShortlist")}</dd></div>
             <div><dt>{categories.length}</dt><dd>{t("home.browseType")}</dd></div>
-            <div><dt>05</dt><dd>Language editions</dd></div>
+            <div><dt>05</dt><dd>{t("home.languageEditions")}</dd></div>
           </dl>
         </div>
 
         <div className="index-contact-sheet" aria-label={t("home.reviewDesk")}>
-          <header><span>REFERENCE PLATE / 001</span><b>FINDQCS</b></header>
+          <header><span>{t("home.referencePlate")}</span><b>FINDQC</b></header>
           <div className="index-photo-grid">
             <a href={products[0].href} target="_blank" rel="noopener noreferrer" className="index-photo-main">
               <img src={products[0].image} alt={products[0].name} />
-              <span>01 / PRIMARY</span>
+              <span>{t("home.primaryLabel")}</span>
             </a>
             <a href={products[1].href} target="_blank" rel="noopener noreferrer">
               <img src={products[1].image} alt={products[1].name} />
@@ -58,7 +58,7 @@ export default function HomePage() {
 
       <section className="index-directory shell">
         <div className="index-section-label">
-          <span>01 / DIRECTORY</span>
+          <span>{t("home.directoryLabel")}</span>
           <div>
             <small>{t("home.browseType")}</small>
             <h2>{t("home.startCategory")}</h2>
@@ -67,21 +67,21 @@ export default function HomePage() {
         </div>
         <div className="index-category-grid">
           {categories.slice(0, 6).map((category, index) => (
-            <Link href={`/categories/${category.slug}`} key={category.slug}>
+            <a href={category.href} target="_blank" rel="noopener noreferrer" key={category.slug}>
               <span>{String(index + 1).padStart(2, "0")}</span>
               <div>
                 <strong>{t(`category.${category.slug}.name`)}</strong>
                 <small>{t(`category.${category.slug}.short`)}</small>
               </div>
               <ArrowIcon />
-            </Link>
+            </a>
           ))}
         </div>
       </section>
 
       <section className="index-products section shell">
         <div className="index-section-label">
-          <span>02 / SHORTLIST</span>
+          <span>{t("home.shortlistLabel")}</span>
           <div>
             <small>{t("home.catalogShortlist")}</small>
             <h2>{t("home.recentFinds")}</h2>
@@ -99,7 +99,7 @@ export default function HomePage() {
 
       <section className="index-method shell">
         <div className="index-method-intro">
-          <span>03 / METHOD</span>
+          <span>{t("home.methodLabel")}</span>
           <h2>{t("home.methodTitle1")}<br />{t("home.methodTitle2")}</h2>
           <p>{t("home.methodIntro")}</p>
           <Link href="/guides/qc-photo-checklist">{t("home.openChecklist")} <ArrowIcon /></Link>
@@ -120,7 +120,7 @@ export default function HomePage() {
 
       <section className="index-reading section shell">
         <div className="index-article">
-          <div className="index-article-number">04 / FIELD NOTE</div>
+          <div className="index-article-number">{t("home.fieldNoteLabel")}</div>
           <div>
             <span>{t("home.articleCategory")} · {t("home.articleReadTime")}</span>
             <h2>{t("home.articleTitle")}</h2>
@@ -135,7 +135,7 @@ export default function HomePage() {
 
         <div className="index-faq">
           <header>
-            <span>05 / FAQ</span>
+            <span>{t("home.faqLabel")}</span>
             <div><small>{t("home.quickAnswers")}</small><h2>{t("home.beforeClick")}</h2></div>
           </header>
           <div className="faq-list">

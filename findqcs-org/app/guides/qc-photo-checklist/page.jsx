@@ -18,20 +18,18 @@ export default function ChecklistPage() {
       <PageHero eyebrow={<T id="checklist.eyebrow" />} title={<><T id="checklist.title1" /><br /><em><T id="checklist.title2" /></em></>} intro={<T id="checklist.intro" />} />
 
       <section className="guide-source-note" aria-label="Evidence boundary">
-        <div><span>Evidence boundary</span><strong>Reference images are not authentication or a quality guarantee.</strong></div>
-        <p>Use public examples to learn what to inspect, then make the shipment decision from the warehouse evidence tied to your own order. Treat missing or unclear areas as unknown.</p>
-        <Link href="/articles/what-qc-photos-can-prove">Read the evidence guide <ArrowIcon size={16} /></Link>
+        <div><span><T id="checklist.evidenceEyebrow" /></span><strong><T id="checklist.evidenceTitle" /></strong></div>
+        <p><T id="checklist.evidenceText" /></p>
+        <Link href="/articles/what-qc-photos-can-prove"><T id="checklist.evidenceLink" /> <ArrowIcon size={16} /></Link>
       </section>
 
       <section className="before-review" aria-labelledby="before-review-title">
         <div className="depth-section-label">
           <span>00</span>
-          <div><small>Prepare the comparison</small><h2 id="before-review-title">Open three things before you inspect a single pixel.</h2></div>
+          <div><small><T id="checklist.prepareEyebrow" /></small><h2 id="before-review-title"><T id="checklist.prepareTitle" /></h2></div>
         </div>
         <div>
-          <article><span>01</span><h3>Your order record</h3><p>Keep the product URL, item ID, selected colour, size, version, quantity and requested extras together. A screenshot helps when a live listing later changes, but the written option name is still important.</p></article>
-          <article><span>02</span><h3>The source listing</h3><p>Check the current option list, seller chart, product details and explicitly included parts. Seller images are references; edited lighting, styling and perspective may differ from warehouse photographs.</p></article>
-          <article><span>03</span><h3>Your decision questions</h3><p>Write down what would make you approve, request evidence or resolve a mismatch. This prevents an endless search for tiny cosmetic differences that would not change the decision.</p></article>
+          {[1, 2, 3].map((number) => <article key={number}><span>0{number}</span><h3><T id={`checklist.prepare${number}Title`} /></h3><p><T id={`checklist.prepare${number}Text`} /></p></article>)}
         </div>
       </section>
 
@@ -39,7 +37,7 @@ export default function ChecklistPage() {
         <aside className="article-aside">
           <div><span><T id="checklist.useWhen" /></span><p><T id="checklist.useWhenText" /></p></div>
           <div><span><T id="checklist.keepInMind" /></span><p><T id="checklist.keepInMindText" /></p></div>
-          <div><span>Useful sequence</span><p>Identity → condition → shape → construction → labels → measurements → packing.</p></div>
+          <div><span><T id="checklist.sequenceTitle" /></span><p><T id="checklist.sequenceText" /></p></div>
           <Link href="/products"><T id="checklist.findProduct" /> <ArrowIcon /></Link>
         </aside>
         <div className="stage-list">
@@ -57,34 +55,30 @@ export default function ChecklistPage() {
       <section className="evidence-requests" aria-labelledby="evidence-request-title">
         <div className="depth-section-label">
           <span>08</span>
-          <div><small>Better follow-up</small><h2 id="evidence-request-title">Turn an uncertain impression into a precise request.</h2></div>
+          <div><small><T id="checklist.requestEyebrow" /></small><h2 id="evidence-request-title"><T id="checklist.requestTitle" /></h2></div>
         </div>
         <div>
-          <article><small>Instead of</small><h3>“The size looks wrong.”</h3><p>Ask for a named measurement with visible endpoints: “Please measure the flat chest width from one underarm seam to the other.”</p></article>
-          <article><small>Instead of</small><h3>“The shoe looks crooked.”</h3><p>Ask for both shoes together in a straight heel or overhead view so camera distance and angle are comparable.</p></article>
-          <article><small>Instead of</small><h3>“Please send more photos.”</h3><p>Name the missing evidence: a close-up of the left heel join, the interior label, the connector marking or every included component.</p></article>
+          {[1, 2, 3].map((number) => <article key={number}><small><T id="checklist.instead" /></small><h3><T id={`checklist.request${number}Quote`} /></h3><p><T id={`checklist.request${number}Text`} /></p></article>)}
         </div>
       </section>
 
       <section className="decision-framework" aria-labelledby="decision-framework-title">
-        <header><span className="eyebrow light">A three-outcome review</span><h2 id="decision-framework-title">End the checklist with a written decision.</h2><p>A short conclusion keeps the process consistent and makes support messages easier to understand.</p></header>
+        <header><span className="eyebrow light"><T id="checklist.decisionEyebrow" /></span><h2 id="decision-framework-title"><T id="checklist.decisionTitle" /></h2><p><T id="checklist.decisionIntro" /></p></header>
         <div>
-          <article><span>01</span><h3>Approve visible details</h3><p>The ordered option, condition, measurements and included parts are consistent enough for you to accept the remaining uncertainty.</p></article>
-          <article><span>02</span><h3>Request one missing fact</h3><p>A decision-relevant area is absent or unclear, and a specific image, measurement or offered test could resolve it.</p></article>
-          <article><span>03</span><h3>Resolve a mismatch</h3><p>The evidence shows a wrong option, missing part, significant damage or measurement difference that should be handled before shipment.</p></article>
+          {[1, 2, 3].map((number) => <article key={number}><span>0{number}</span><h3><T id={`checklist.decision${number}Title`} /></h3><p><T id={`checklist.decision${number}Text`} /></p></article>)}
         </div>
       </section>
 
       <section className="guide-category-links" aria-labelledby="guide-category-title">
-        <div className="section-heading compact-heading"><div><span className="eyebrow">Category detail</span><h2 id="guide-category-title">Apply the checklist to the product type.</h2></div><Link href="/categories" className="text-link">All category guides <ArrowIcon /></Link></div>
+        <div className="section-heading compact-heading"><div><span className="eyebrow"><T id="checklist.categoryEyebrow" /></span><h2 id="guide-category-title"><T id="checklist.categoryTitle" /></h2></div><Link href="/categories" className="text-link"><T id="checklist.allCategories" /> <ArrowIcon /></Link></div>
         <div>
-          {categories.map((category) => <Link href={`/categories/${category.slug}`} key={category.slug}><span>{category.code}</span><strong>{category.name}</strong><ArrowIcon size={15} /></Link>)}
+          {categories.map((category) => <a href={category.href} target="_blank" rel="noopener noreferrer" key={category.slug}><span>{category.code}</span><strong><T id={`category.${category.slug}.name`} /></strong><ArrowIcon size={15} /></a>)}
         </div>
       </section>
 
       <nav className="guide-next-links" aria-label="Continue reading">
-        <Link href="/guides/how-to-buy"><small>Next guide</small><strong>Connect product search to shipment approval</strong><ArrowIcon /></Link>
-        <Link href="/articles/before-you-buy-qc-guide"><small>Longer explanation</small><strong>How to read warehouse photos without overreading them</strong><ArrowIcon /></Link>
+        <Link href="/guides/how-to-buy"><small><T id="checklist.nextGuide" /></small><strong><T id="checklist.nextGuideTitle" /></strong><ArrowIcon /></Link>
+        <Link href="/articles/before-you-buy-qc-guide"><small><T id="checklist.longer" /></small><strong><T id="checklist.longerTitle" /></strong><ArrowIcon /></Link>
       </nav>
     </article>
   );
