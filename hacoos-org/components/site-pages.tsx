@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import {
   ArrowLeft,
   ArrowRight,
@@ -109,7 +110,7 @@ function ProductGrid({ locale, limit }: { locale: Locale; limit?: number }) {
       {list.map((product, index) => (
         <a className="product-card" href={product.href} key={product.href} rel="noopener noreferrer">
           <div className="product-image-wrap">
-            <img src={product.image} alt={product.title} loading={index > 2 ? "lazy" : "eager"} />
+            <Image src={product.image} alt={product.title} fill sizes="(max-width: 680px) 50vw, (max-width: 1000px) 50vw, 33vw" priority={index === 0} quality={78} />
             <span>{String(index + 1).padStart(2, "0")}</span>
           </div>
           <div className="product-meta">
@@ -163,10 +164,25 @@ function FAQList({ locale }: { locale: Locale }) {
 export function HomePage({ locale }: { locale: Locale }) {
   const t = copy[locale];
   const c = localizedContent[locale];
+  const websiteJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "Hacoos.org",
+    url: `https://hacoos.org/${locale}`,
+    inLanguage: locale,
+    description: t.intro,
+    potentialAction: {
+      "@type": "SearchAction",
+      target: "https://www.cnfanssp.com/search.html?keywords={search_term_string}&channelid=2&method=1",
+      "query-input": "required name=search_term_string",
+    },
+    publisher: { "@type": "Organization", name: "Hacoos.org", url: "https://hacoos.org/en", logo: { "@type": "ImageObject", url: "https://hacoos.org/hacoo-logo.png", width: 217, height: 57 } },
+  };
   return (
     <>
       <Header locale={locale} />
       <main>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }} />
         <section className="hero shell">
           <div className="hero-copy">
             <p className="eyebrow"><CircleDot size={14} />{t.eyebrow}</p><h1>{t.title}</h1><p className="hero-intro">{t.intro}</p>
@@ -174,10 +190,10 @@ export function HomePage({ locale }: { locale: Locale }) {
           </div>
           <div className="hero-gallery" aria-label={c.ui.selectedReferences}>
             <a className="hero-photo main-photo" href={c.products[0].href} rel="noopener noreferrer" aria-label={`${t.openReference}: ${c.products[0].title}`}>
-              <img src={c.products[0].image} alt={c.products[0].title} /><span>{c.ui.object} / 01</span>
+              <Image src={c.products[0].image} alt={c.products[0].title} fill sizes="(max-width: 680px) 72vw, 40vw" priority quality={82} /><span>{c.ui.object} / 01</span>
             </a>
             <a className="hero-photo inset-photo" href={c.products[2].href} rel="noopener noreferrer" aria-label={`${t.openReference}: ${c.products[2].title}`}>
-              <img src={c.products[2].image} alt={c.products[2].title} /><span>{c.ui.object} / 02</span>
+              <Image src={c.products[2].image} alt={c.products[2].title} fill sizes="(max-width: 680px) 38vw, 22vw" quality={78} /><span>{c.ui.object} / 02</span>
             </a>
             <div className="paper-note"><Sparkles size={17} /><p>{c.ui.paperNote[0]}<br />{c.ui.paperNote[1]}</p></div>
           </div>
@@ -242,7 +258,7 @@ function ArticleFigure({ locale, articleId, caption }: { locale: Locale; article
   const c = localizedContent[locale];
   if (articleId !== "hacoo-spreadsheet-guide" && articleId !== "hacoo-qc-guide") return null;
   return <figure className="article-figure">
-    <div>{c.products.slice(articleId === "hacoo-qc-guide" ? 0 : 1, articleId === "hacoo-qc-guide" ? 2 : 3).map((product) => <a href={product.href} key={product.href} rel="noopener noreferrer"><img src={product.image} alt={product.title} /><span>{product.title}</span></a>)}</div>
+    <div>{c.products.slice(articleId === "hacoo-qc-guide" ? 0 : 1, articleId === "hacoo-qc-guide" ? 2 : 3).map((product) => <a href={product.href} key={product.href} rel="noopener noreferrer"><Image src={product.image} alt={product.title} width={720} height={540} sizes="(max-width: 680px) 100vw, 50vw" quality={78} /><span>{product.title}</span></a>)}</div>
     <figcaption>{caption}</figcaption>
   </figure>;
 }
@@ -280,7 +296,11 @@ function FAQPage({ locale }: { locale: Locale }) {
 }
 
 export function SectionPage({ locale, section }: { locale: Locale; section: Section }) {
-  return <><Header locale={locale} section={section} /><main><SectionHero locale={locale} section={section} />
+  const breadcrumbJsonLd = { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Hacoos.org", item: `https://hacoos.org/${locale}` },
+    { "@type": "ListItem", position: 2, name: copy[locale].sectionTitles[section], item: `https://hacoos.org/${locale}/${section}` },
+  ] };
+  return <><Header locale={locale} section={section} /><main><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} /><SectionHero locale={locale} section={section} />
     {section === "spreadsheet" && <SpreadsheetPage locale={locale} />}{section === "finds" && <FindsPage locale={locale} />}
     {section === "articles" && <ArticlesPage locale={locale} />}{section === "guides" && <GuidesPage locale={locale} />}
     {section === "qc" && <QCPage locale={locale} />}{section === "shipping" && <ShippingPage locale={locale} />}{section === "faq" && <FAQPage locale={locale} />}
@@ -296,10 +316,17 @@ export function ArticlePage({ locale, slug }: { locale: Locale; slug: string }) 
     "@context": "https://schema.org", "@type": "Article", headline: article.title, description: article.standfirst,
     datePublished: "2026-08-26", dateModified: "2026-08-26", inLanguage: locale, wordCount, keywords: article.targetKeyword,
     mainEntityOfPage: canonical, author: { "@type": "Organization", name: "Hacoos.org", url: "https://hacoos.org" },
-    publisher: { "@type": "Organization", name: "Hacoos.org", url: "https://hacoos.org" }, isAccessibleForFree: true,
+    image: [c.products[0].image],
+    publisher: { "@type": "Organization", name: "Hacoos.org", url: "https://hacoos.org/en", logo: { "@type": "ImageObject", url: "https://hacoos.org/hacoo-logo.png", width: 217, height: 57 } }, isAccessibleForFree: true,
   };
+  const breadcrumbJsonLd = { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Hacoos.org", item: `https://hacoos.org/${locale}` },
+    { "@type": "ListItem", position: 2, name: copy[locale].sectionTitles.articles, item: `https://hacoos.org/${locale}/articles` },
+    { "@type": "ListItem", position: 3, name: article.title, item: canonical },
+  ] };
   return <><Header locale={locale} section="articles" articleSlug={slug} /><main>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
     <section className="article-hero shell"><Link href={`/${locale}/articles`}><ArrowLeft size={15} />{c.ui.backToArticles}</Link><p className="kicker">{article.targetKeyword} · {article.reviewedAt}</p><h1>{article.title}</h1><p>{article.standfirst}</p></section>
     <section className="article-evidence shell"><p>{article.evidenceNote}</p><ArticleFactStrip facts={article.facts} /></section>
     <section className="longform single-article shell"><aside><p>{c.ui.onThisPage}</p>{article.sections.map((item) => <a href={`#${item.id}`} key={item.id}>{item.heading}</a>)}</aside><div className="articles"><article id="article-start">{article.sections.map((item, index) => <section id={item.id} key={item.id}><h2>{item.heading}</h2>{item.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}{index === 1 && <ArticleFigure locale={locale} articleId={article.id} caption={article.evidenceNote} />}</section>)}</article></div></section>

@@ -22,6 +22,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
         ...Object.fromEntries(locales.map((item) => [item, `https://hacoos.org/${item}/articles/${slug}`])),
       },
     },
+    openGraph: { type: "article", siteName: "Hacoos.org", title: `${article.title} — Hacoos.org`, description: article.standfirst, url: `https://hacoos.org/${locale}/articles/${slug}`, images: [{ url: "/hacoo-logo.png", width: 217, height: 57, alt: "Hacoos.org" }] },
+    twitter: { card: "summary_large_image", title: `${article.title} — Hacoos.org`, description: article.standfirst, images: ["/hacoo-logo.png"] },
   };
 }
 

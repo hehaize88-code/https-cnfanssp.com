@@ -3,7 +3,6 @@ import { articleSlugs } from "@/lib/localized-content";
 
 export async function GET() {
   const urls = [
-    "https://hacoos.org/",
     ...locales.map((locale) => `https://hacoos.org/${locale}`),
     ...locales.flatMap((locale) => sections.map((section) => `https://hacoos.org/${locale}/${section}`)),
     ...locales.flatMap((locale) => articleSlugs.map((slug) => `https://hacoos.org/${locale}/articles/${slug}`)),

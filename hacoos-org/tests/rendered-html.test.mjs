@@ -27,7 +27,7 @@ test("renders indexable production metadata and SEO endpoints", async () => {
     /^text\/html\b/i,
   );
   const html = await response.text();
-  assert.match(html, /<link[^>]+rel=["']canonical["'][^>]+href=["']https:\/\/hacoos\.org\/["']/i);
+  assert.match(html, /<link[^>]+rel=["']canonical["'][^>]+href=["']https:\/\/hacoos\.org\/en["']/i);
   assert.match(html, /<link[^>]+rel=["']alternate["'][^>]+hrefLang=["']de["'][^>]+href=["']https:\/\/hacoos\.org\/de["']/i);
   assert.match(html, /<meta[^>]+name=["']robots["'][^>]+content=["']index, follow["']/i);
   assert.doesNotMatch(html, /noindex|nofollow/i);
@@ -49,6 +49,23 @@ test("renders indexable production metadata and SEO endpoints", async () => {
   const sitemapXml = await sitemap.text();
   assert.match(sitemapXml, /<loc>https:\/\/hacoos\.org\/en<\/loc>/);
   assert.match(sitemapXml, /<loc>https:\/\/hacoos\.org\/de\/articles\//);
+  assert.doesNotMatch(sitemapXml, /<loc>https:\/\/hacoos\.org\/<\/loc>/);
+
+  const rootResponse = await worker.fetch(
+    new Request("https://hacoos.org/?source=root"),
+    { ASSETS: { fetch: async () => new Response("Not found", { status: 404 }) } },
+    { waitUntil() {}, passThroughOnException() {} },
+  );
+  assert.equal(rootResponse.status, 308);
+  assert.equal(rootResponse.headers.get("location"), "https://hacoos.org/en?source=root");
+
+  const httpResponse = await worker.fetch(
+    new Request("http://hacoos.org/de?source=http"),
+    { ASSETS: { fetch: async () => new Response("Not found", { status: 404 }) } },
+    { waitUntil() {}, passThroughOnException() {} },
+  );
+  assert.equal(httpResponse.status, 308);
+  assert.equal(httpResponse.headers.get("location"), "https://hacoos.org/de?source=http");
 
   const wwwResponse = await worker.fetch(
     new Request("https://www.hacoos.org/de?source=www"),
