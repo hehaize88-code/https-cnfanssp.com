@@ -153,9 +153,12 @@ renameSync(staging, buildOut);
 rmSync(dist, { recursive: true, force: true });
 mkdirSync(path.join(dist, "client"), { recursive: true });
 mkdirSync(path.join(dist, "server"), { recursive: true });
-mkdirSync(path.join(dist, ".openai"), { recursive: true });
 cpSync(buildOut, path.join(dist, "client"), { recursive: true });
-cpSync(path.join(root, ".openai", "hosting.json"), path.join(dist, ".openai", "hosting.json"));
+const hostingConfig = path.join(root, ".openai", "hosting.json");
+if (existsSync(hostingConfig)) {
+  mkdirSync(path.join(dist, ".openai"), { recursive: true });
+  cpSync(hostingConfig, path.join(dist, ".openai", "hosting.json"));
+}
 writeFileSync(path.join(dist, "server", "index.js"), `function withHeaders(response) {
   const headers = new Headers(response.headers);
   headers.set("X-Content-Type-Options", "nosniff");
