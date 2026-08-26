@@ -1,28 +1,32 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { LanguageProvider } from "@/components/LanguageModule";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://allchinabuys.shop"),
-  title: "AllChinaBuy Spreadsheet & Finds | Curated Product Index",
-  description: "Browse a cleaner AllChinaBuy spreadsheet with curated product finds, QC checklists, shipping guidance and beginner-friendly buying steps.",
-  alternates: { canonical: "https://allchinabuys.shop/" },
-  robots: { index: true, follow: true },
-  openGraph: {
-    title: "AllChinaBuy Spreadsheet & Finds",
-    description: "Curated links, QC guides and shipping help in one cleaner product-discovery experience.",
-    type: "website",
-    url: "https://allchinabuys.shop/",
-    images: [{ url: "/og.png", width: 1200, height: 630, alt: "AllChinaBuy Spreadsheet & Finds" }],
+  metadataBase: new URL("https://allchinabuys.store"),
+  title: { default: "AllChinaBuy Spreadsheet 2026 | Verified Product Finds", template: "%s | AllChinaBuy Spreadsheet" },
+  description: "Browse organized AllChinaBuy spreadsheet finds, product source records, QC checklists and practical shipping guides.",
+  robots: { index: false, follow: false },
+  openGraph: { type: "website", title: "AllChinaBuy Index 2026", description: "Check the source. Compare the details.", images: [{ url: "/og-v2.png", width: 1732, height: 908, alt: "AllChinaBuy Index — product intelligence workspace" }] },
+  twitter: { card: "summary_large_image", title: "AllChinaBuy Index 2026", description: "Check the source. Compare the details.", images: ["/og-v2.png"] },
+  other: { "codex-preview": "development" },
+  icons: {
+    icon: "/favicon.svg",
+    shortcut: "/favicon.svg",
   },
-  twitter: {
-    card: "summary_large_image",
-    title: "AllChinaBuy Spreadsheet & Finds",
-    description: "Curated links, QC guides and shipping help.",
-    images: ["/og.png"],
-  },
-  icons: { icon: "/favicon.svg", shortcut: "/favicon.svg" },
 };
 
-export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="en"><body>{children}</body></html>;
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="en">
+      <body className="antialiased">
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "WebSite", name: "AllChinaBuy Spreadsheet 2026", url: "https://allchinabuys.store", description: "An independent product discovery and shopping education resource." }) }} />
+        <LanguageProvider>{children}</LanguageProvider>
+      </body>
+    </html>
+  );
 }

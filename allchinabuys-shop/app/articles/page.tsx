@@ -1,24 +1,39 @@
 import type { Metadata } from "next";
-import SiteFooter from "../components/SiteFooter";
-import SiteHeader from "../components/SiteHeader";
+import Link from "next/link";
+import { PageShell } from "@/components/PageShell";
+import { guides } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "AllChinaBuy Guides & Field Notes | AllChinaBuy Finds",
-  description: "Independent guides for product discovery, warehouse QC and international parcel planning.",
-  alternates: { canonical: "https://allchinabuys.shop/articles" },
+  title: "AllChinaBuy Articles & Buying Guides",
+  description: "Read independent AllChinaBuy spreadsheet, QC photo and international shipping guides before opening the live product catalog.",
 };
 
-const articles = [
-  { number: "01", label: "Start here · Spreadsheet", title: "How to Use an AllChinaBuy Spreadsheet", summary: "A 1,200+ word, link-first workflow for turning a product directory into a dated shortlist you can inspect and order.", read: "11 min read", href: "/articles/how-to-use-allchinabuy-spreadsheet" },
-  { number: "02", label: "Then inspect · QC", title: "Warehouse QC Photo Checklist", summary: "A 1,200+ word inspection process covering identity, measurements, extra-photo requests and after-sales evidence.", read: "11 min read", href: "/articles/warehouse-qc-photo-checklist" },
-  { number: "03", label: "Then ship · Parcel", title: "Plan AllChinaBuy Shipping Before Checkout", summary: "A 1,200+ word guide to calculators, parcel weight, route restrictions, tax handling and review evidence.", read: "12 min read", href: "/articles/plan-allchinabuy-shipping" },
-];
-
 export default function ArticlesPage() {
-  return <main className="articles-index">
-    <SiteHeader />
-    <section className="articles-index-hero"><p className="section-kicker">Research desk</p><h1>Guides &amp;<br/>Field Notes</h1><p>Practical reading for finding listings, checking warehouse photos and planning an international parcel.</p></section>
-    <section className="articles-index-list"><div className="articles-index-intro"><p className="section-kicker">Recommended reading order</p><h2>Find.<br/>Inspect.<br/>Ship.</h2><p>Start with discovery intent, then protect the order at warehouse QC, and only then compare international parcel choices. This sequence follows the platform's current purchase → inspection/storage → international delivery workflow.</p></div><div className="articles-index-cards">{articles.map(article=><a className="articles-index-card" href={article.href} key={article.href}><span className="article-card-number">{article.number}</span><div><small>{article.label}</small><h3>{article.title}</h3><p>{article.summary}</p><b>{article.read} <i>→</i></b></div></a>)}<div className="research-note"><b>Research standard</b><p>All three guides were checked against AllChinaBuy's public homepage, Help Center, User Guidance, freight calculator, goods notice and Shipping Expert interface on August 26, 2026. Platform information may change.</p></div></div></section>
-    <SiteFooter />
-  </main>;
+  return (
+    <PageShell>
+      <main>
+        <header className="page-hero">
+          <div className="section-shell">
+            <div className="breadcrumbs"><Link href="/">Home</Link> / Articles</div>
+            <p className="eyebrow">Independent research desk</p>
+            <h1>Articles for better buying decisions.</h1>
+            <p className="lede">Practical, source-first articles covering spreadsheet use, warehouse QC photos and international shipping. Each article has its own indexable page and points readers to the relevant catalog only when useful.</p>
+          </div>
+        </header>
+        <section className="section-shell section-block">
+          <div className="article-directory">
+            {guides.map((guide, index) => (
+              <article className="article-directory-card" key={guide.href}>
+                <div><span>ARTICLE 0{index + 1}</span><b>{guide.read}</b></div>
+                <p>{guide.kicker}</p>
+                <h2>{guide.title}</h2>
+                <small>{guide.description}</small>
+                <Link href={guide.href}>Read independent article <span>↗</span></Link>
+              </article>
+            ))}
+          </div>
+        </section>
+      </main>
+    </PageShell>
+  );
 }
