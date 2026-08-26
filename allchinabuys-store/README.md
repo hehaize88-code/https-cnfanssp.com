@@ -1,17 +1,21 @@
 # AllChinaBuy Spreadsheet 2026
 
-Production source for `https://allchinabuys.store`, built with Vinext and Cloudflare Workers.
+Production source for `https://allchinabuys.store`. It supports both a Vinext
+Worker build and a complete static export for Cloudflare Pages.
 
-## Cloudflare Git deployment
+## Cloudflare Pages Git deployment
 
 - Repository: `hehaize88-code/https-cnfanssp.com`
 - Production branch: `main`
 - Root directory: `allchinabuys-store`
-- Build command: `npm run build`
-- Deploy command: `npm run deploy`
+- Framework preset: `None`
+- Build command: `npm run build:pages`
+- Build output directory: `out`
 - Node.js version: `22.13.0` or newer
 
-Use a Cloudflare **Workers** Git deployment rather than a static Pages export. The build generates the Worker entry point and static assets under `dist/`; the deploy script reads `dist/server/wrangler.json`.
+`build:pages` sets the static-export flag only for this build, so every known
+route is emitted as HTML under `out/`. The existing `npm run build` and
+`npm run deploy` commands remain available for a Cloudflare Worker deployment.
 
 A clean full-stack starter running on
 [vinext](https://github.com/cloudflare/vinext), with optional Cloudflare D1 and

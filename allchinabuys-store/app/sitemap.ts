@@ -2,6 +2,8 @@ import type { MetadataRoute } from "next";
 import { categories, products } from "@/lib/data";
 
 const base = "https://allchinabuys.store";
+export const dynamic = "force-static";
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const updated = new Date("2026-08-26T00:00:00Z");
   return [
