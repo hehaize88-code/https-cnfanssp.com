@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://allchinabuys.shop/sitemap.xml

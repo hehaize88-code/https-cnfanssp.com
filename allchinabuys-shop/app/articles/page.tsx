@@ -5,13 +5,13 @@ import SiteHeader from "../components/SiteHeader";
 export const metadata: Metadata = {
   title: "AllChinaBuy Guides & Field Notes | AllChinaBuy Finds",
   description: "Independent guides for product discovery, warehouse QC and international parcel planning.",
-  alternates: { canonical: "https://allchinabuys.shop/articles" },
+  alternates: { canonical: "https://allchinabuys.shop/articles/" },
 };
 
 const articles = [
-  { number: "01", label: "Start here · Spreadsheet", title: "How to Use an AllChinaBuy Spreadsheet", summary: "A 1,200+ word, link-first workflow for turning a product directory into a dated shortlist you can inspect and order.", read: "11 min read", href: "/articles/how-to-use-allchinabuy-spreadsheet" },
-  { number: "02", label: "Then inspect · QC", title: "Warehouse QC Photo Checklist", summary: "A 1,200+ word inspection process covering identity, measurements, extra-photo requests and after-sales evidence.", read: "11 min read", href: "/articles/warehouse-qc-photo-checklist" },
-  { number: "03", label: "Then ship · Parcel", title: "Plan AllChinaBuy Shipping Before Checkout", summary: "A 1,200+ word guide to calculators, parcel weight, route restrictions, tax handling and review evidence.", read: "12 min read", href: "/articles/plan-allchinabuy-shipping" },
+  { number: "01", label: "Start here · Spreadsheet", title: "How to Use an AllChinaBuy Spreadsheet", summary: "A 1,200+ word, link-first workflow for turning a product directory into a dated shortlist you can inspect and order.", read: "11 min read", href: "/articles/how-to-use-allchinabuy-spreadsheet/" },
+  { number: "02", label: "Then inspect · QC", title: "Warehouse QC Photo Checklist", summary: "A 1,200+ word inspection process covering identity, measurements, extra-photo requests and after-sales evidence.", read: "11 min read", href: "/articles/warehouse-qc-photo-checklist/" },
+  { number: "03", label: "Then ship · Parcel", title: "Plan AllChinaBuy Shipping Before Checkout", summary: "A 1,200+ word guide to calculators, parcel weight, route restrictions, tax handling and review evidence.", read: "12 min read", href: "/articles/plan-allchinabuy-shipping/" },
 ];
 
 export default function ArticlesPage() {
