@@ -1,0 +1,72 @@
+"use client";
+
+import Link from "./LocalizedLink";
+import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
+import { ArrowIcon, MenuIcon } from "./Icons";
+import LanguageSwitcher from "./LanguageSwitcher";
+import { useLanguage } from "./LanguageProvider";
+import { stripLanguagePrefix } from "../lib/routing";
+
+const links = [
+  ["/products", "nav.finds"],
+  ["/categories", "nav.categories"],
+  ["/guides", "nav.guides"],
+  ["/shipping", "nav.shipping"],
+  ["/articles", "nav.journal"],
+  ["/faq", "nav.faq"],
+];
+
+export default function SiteHeader() {
+  const pathname = usePathname();
+  const activePath = stripLanguagePrefix(pathname);
+  const [open, setOpen] = useState(false);
+  const { t } = useLanguage();
+
+  useEffect(() => setOpen(false), [pathname]);
+
+  return (
+    <header className="site-header">
+      <div className="nav-shell">
+        <Link href="/" className="brand" aria-label="FindQCS home">
+          <img className="brand-logo-image" src="/findqc-logo.png" alt="" width="88" height="88" />
+          <span className="brand-name">FINDQCS <small>PRODUCT INDEX</small></span>
+        </Link>
+
+        <nav className="desktop-nav" aria-label="Primary navigation">
+          {links.map(([href, key]) => (
+            <Link key={href} href={href} className={activePath.startsWith(href) ? "active" : ""}>
+              {t(key)}
+            </Link>
+          ))}
+          <LanguageSwitcher />
+        </nav>
+
+        <a className="nav-cta" href="https://www.cnfanssp.com/AllProducts/" target="_blank" rel="noopener noreferrer">
+          {t("nav.browse")} <ArrowIcon size={16} />
+        </a>
+
+        <button className="menu-button" onClick={() => setOpen((value) => !value)} aria-expanded={open} aria-label={t("nav.toggle")}>
+          <MenuIcon open={open} />
+        </button>
+      </div>
+
+      {open && (
+        <nav className="mobile-nav" aria-label="Mobile navigation">
+          <div className="mobile-language-row">
+            <span>{t("language.label")}</span>
+            <LanguageSwitcher mobile />
+          </div>
+          {links.map(([href, key]) => (
+            <Link key={href} href={href} className={activePath.startsWith(href) ? "active" : ""}>
+              {t(key)}<span>↗</span>
+            </Link>
+          ))}
+          <a href="https://www.cnfanssp.com/AllProducts/" target="_blank" rel="noopener noreferrer">
+            {t("nav.browseMobile")}<span>↗</span>
+          </a>
+        </nav>
+      )}
+    </header>
+  );
+}
