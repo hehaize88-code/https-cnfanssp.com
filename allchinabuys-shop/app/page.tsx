@@ -85,20 +85,20 @@ export default function Home() {
       </section>
 
       <section className="section guide-section" id="guide">
-        <div className="guide-intro"><p className="section-kicker">03 / How it works</p><h2>From a product link<br/>to your doorstep.</h2><p>The official workflow separates the item purchase from international delivery: order first, review warehouse information, then submit a parcel.</p><a className="button-dark" href="/guide">Read the full beginner guide <span>→</span></a></div>
+        <div className="guide-intro"><p className="section-kicker">03 / How it works</p><h2>From a product link<br/>to your doorstep.</h2><p>The official workflow separates the item purchase from international delivery: order first, review warehouse information, then submit a parcel.</p><a className="button-dark" href="/guide/">Read the full beginner guide <span>→</span></a></div>
         <div className="guide-steps">{guides.map(([n, title, desc]) => <article key={n}><span>{n}</span><div><h3>{title}</h3><p>{desc}</p></div></article>)}</div>
       </section>
 
       <section className="section editorial-section">
         <div className="editorial-image"><img src="/og.png" alt="AllChinaBuy Spreadsheet editorial collage with parcel boxes, a hoodie, a sneaker, QC photos and a product grid" /></div>
         <div className="editorial-copy"><p className="section-kicker">Research desk</p><h2>Useful answers<br/>beyond the links.</h2><p>Product discovery is only the first step. These guides explain what to verify before ordering, what warehouse photos can show and why a shipping quote must be checked for the parcel you actually create.</p>
-          <div className="article-links"><a href="/articles/how-to-use-allchinabuy-spreadsheet"><span>BEGINNER GUIDE</span><b>How to Use an AllChinaBuy Spreadsheet</b><i>8 min →</i></a><a href="/articles/warehouse-qc-photo-checklist"><span>QC GUIDE</span><b>Warehouse QC Photo Checklist</b><i>7 min →</i></a><a href="/articles/plan-allchinabuy-shipping"><span>SHIPPING</span><b>Plan Shipping Before Checkout</b><i>9 min →</i></a></div>
+          <div className="article-links"><a href="/articles/how-to-use-allchinabuy-spreadsheet/"><span>BEGINNER GUIDE</span><b>How to Use an AllChinaBuy Spreadsheet</b><i>8 min →</i></a><a href="/articles/warehouse-qc-photo-checklist/"><span>QC GUIDE</span><b>Warehouse QC Photo Checklist</b><i>7 min →</i></a><a href="/articles/plan-allchinabuy-shipping/"><span>SHIPPING</span><b>Plan Shipping Before Checkout</b><i>9 min →</i></a></div>
         </div>
       </section>
 
       <section className="split-section" id="qc">
-        <article className="qc-panel"><p className="section-kicker">QC desk</p><h2>Inspect before you ship.</h2><p>Use warehouse photos to review the received item. Look at the selected variant, visible condition, measurements and any detail you asked the agent to photograph.</p><div className="check-grid"><span>✓ Correct color</span><span>✓ Size label</span><span>✓ Visible condition</span><span>✓ Requested details</span></div><a href="/qc">Open the QC checklist →</a></article>
-        <article className="shipping-panel" id="shipping"><p className="section-kicker">Shipping planner</p><h2>Estimate before submitting.</h2><p>International options depend on destination, parcel weight, dimensions and restrictions. Compare routes in the official calculator instead of relying on a fixed promise.</p><div className="parcel-line"><span>ITEMS</span><b>3</b><span>DESTINATION</span><b>Your country</b><span>QUOTE</span><b>Live</b></div><a href="/shipping">Plan a parcel →</a></article>
+        <article className="qc-panel"><p className="section-kicker">QC desk</p><h2>Inspect before you ship.</h2><p>Use warehouse photos to review the received item. Look at the selected variant, visible condition, measurements and any detail you asked the agent to photograph.</p><div className="check-grid"><span>✓ Correct color</span><span>✓ Size label</span><span>✓ Visible condition</span><span>✓ Requested details</span></div><a href="/qc/">Open the QC checklist →</a></article>
+        <article className="shipping-panel" id="shipping"><p className="section-kicker">Shipping planner</p><h2>Estimate before submitting.</h2><p>International options depend on destination, parcel weight, dimensions and restrictions. Compare routes in the official calculator instead of relying on a fixed promise.</p><div className="parcel-line"><span>ITEMS</span><b>3</b><span>DESTINATION</span><b>Your country</b><span>QUOTE</span><b>Live</b></div><a href="/shipping/">Plan a parcel →</a></article>
       </section>
 
       <section className="section faq-section" id="faq">

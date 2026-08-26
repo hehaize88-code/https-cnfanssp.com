@@ -168,15 +168,19 @@ const articles: Record<string, Article> = {
   },
 };
 
+export function generateStaticParams() {
+  return Object.keys(articles).map((slug) => ({ slug }));
+}
+
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params; const a = articles[slug]; if (!a) return {};
-  return { title: `${a.title} | AllChinaBuy Finds`, description: a.dek, keywords:[a.title.includes("QC") ? "AllChinaBuy QC photos" : a.title.includes("Shipping") ? "AllChinaBuy shipping" : "AllChinaBuy spreadsheet", "AllChinaBuy guide"], alternates:{canonical:`https://allchinabuys.shop/articles/${slug}`}, openGraph:{title:a.title,description:a.dek,type:"article",url:`https://allchinabuys.shop/articles/${slug}`,images:[]}, twitter:{card:"summary",title:a.title,description:a.dek,images:[]} };
+  return { title: `${a.title} | AllChinaBuy Finds`, description: a.dek, keywords:[a.title.includes("QC") ? "AllChinaBuy QC photos" : a.title.includes("Shipping") ? "AllChinaBuy shipping" : "AllChinaBuy spreadsheet", "AllChinaBuy guide"], alternates:{canonical:`https://allchinabuys.shop/articles/${slug}/`}, openGraph:{title:a.title,description:a.dek,type:"article",url:`https://allchinabuys.shop/articles/${slug}/`,images:[]}, twitter:{card:"summary",title:a.title,description:a.dek,images:[]} };
 }
 
 export default async function ArticlePage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params; const article = articles[slug]; if (!article) notFound();
   const articleText = article.sections.flatMap(section => [section.heading, ...section.paragraphs]).join(" ");
-  const schema = {"@context":"https://schema.org","@type":"Article","headline":article.title,"description":article.dek,"datePublished":"2026-08-26","dateModified":"2026-08-26","wordCount":articleText.trim().split(/\s+/).length,"author":{"@type":"Organization","name":"AllChinaBuy Finds Research Desk"},"publisher":{"@type":"Organization","name":"AllChinaBuy Finds"},"mainEntityOfPage":`https://allchinabuys.shop/articles/${slug}`};
+  const schema = {"@context":"https://schema.org","@type":"Article","headline":article.title,"description":article.dek,"datePublished":"2026-08-26","dateModified":"2026-08-26","wordCount":articleText.trim().split(/\s+/).length,"author":{"@type":"Organization","name":"AllChinaBuy Finds Research Desk"},"publisher":{"@type":"Organization","name":"AllChinaBuy Finds"},"mainEntityOfPage":`https://allchinabuys.shop/articles/${slug}/`};
   return <main className="article-page">
     <SiteHeader />
     <article>

@@ -69,6 +69,10 @@ const pages: Record<string, InfoPage> = {
   ]},
 };
 
+export function generateStaticParams() {
+  return Object.keys(pages).map((slug) => ({ slug }));
+}
+
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params; const page = pages[slug]; if (!page) return {};
   const description = page.intro;
@@ -76,8 +80,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     title: `${page.title} | AllChinaBuy Finds`,
     description,
     keywords: page.keywords,
-    alternates: { canonical: `https://allchinabuys.shop/${slug}` },
-    openGraph: { title: page.title, description, url: `https://allchinabuys.shop/${slug}`, images: [{url:"/og.png",width:1200,height:630}] },
+    alternates: { canonical: `https://allchinabuys.shop/${slug}/` },
+    openGraph: { title: page.title, description, url: `https://allchinabuys.shop/${slug}/`, images: [{url:"/og.png",width:1200,height:630}] },
     twitter: { card:"summary_large_image", title:page.title, description, images:["/og.png"] },
   };
 }
@@ -86,7 +90,7 @@ export default async function InformationPage({ params }: { params: Promise<{ sl
   const { slug } = await params;
   const page = pages[slug];
   if (!page) notFound();
-  const schema = slug === "faq" ? {"@context":"https://schema.org","@type":"FAQPage","mainEntity":page.blocks.map(b=>({"@type":"Question","name":b.title,"acceptedAnswer":{"@type":"Answer","text":b.text}}))} : {"@context":"https://schema.org","@type":"WebPage","name":page.title,"description":page.intro,"url":`https://allchinabuys.shop/${slug}`};
+  const schema = slug === "faq" ? {"@context":"https://schema.org","@type":"FAQPage","mainEntity":page.blocks.map(b=>({"@type":"Question","name":b.title,"acceptedAnswer":{"@type":"Answer","text":b.text}}))} : {"@context":"https://schema.org","@type":"WebPage","name":page.title,"description":page.intro,"url":`https://allchinabuys.shop/${slug}/`};
   return <main className={`info-page info-${page.color}`}><script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(schema)}} />
     <SiteHeader />
     <section className="info-hero"><p className="section-kicker">{page.eyebrow}</p><h1>{page.title}</h1><p>{page.intro}</p></section>

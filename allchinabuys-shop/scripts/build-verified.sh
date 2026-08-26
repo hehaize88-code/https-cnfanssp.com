@@ -24,3 +24,13 @@ timeout \
   --kill-after="${SITES_BUILD_KILL_AFTER:-10s}" \
   "${SITES_BUILD_TIMEOUT:-3m}" \
   "${vinext}" build
+
+output_dir="${SITES_PROJECT_ROOT}/dist/client"
+for required_file in index.html 404.html robots.txt sitemap.xml; do
+  if [[ ! -f "${output_dir}/${required_file}" ]]; then
+    echo "Missing required Pages output: ${output_dir}/${required_file}" >&2
+    exit 69
+  fi
+done
+
+echo "Verified Cloudflare Pages output in ${output_dir}."

@@ -1,33 +1,24 @@
 import assert from "node:assert/strict";
+import { readFile } from "node:fs/promises";
 import test from "node:test";
 
-const developmentPreviewMeta =
-  /<meta(?=[^>]*\bname=["']codex-preview["'])(?=[^>]*\bcontent=["']development["'])[^>]*>/i;
+test("renders the Cloudflare Pages static homepage", async () => {
+  const html = await readFile(new URL("../dist/client/index.html", import.meta.url), "utf8");
 
-test("renders development preview metadata", async () => {
-  const workerUrl = new URL("../dist/server/index.js", import.meta.url);
-  workerUrl.searchParams.set("test", `${process.pid}-${Date.now()}`);
-  const { default: worker } = await import(workerUrl.href);
+  assert.match(html, /<title>AllChinaBuy Spreadsheet/);
+  assert.match(html, /<link rel="canonical" href="https:\/\/allchinabuys\.shop\/"/);
+  assert.match(html, /href="\/spreadsheet\/"/);
+  assert.match(html, /src="\/allchinabuy-logo\.png"/);
+});
 
-  const response = await worker.fetch(
-    new Request("http://localhost/", {
-      headers: { accept: "text/html" },
-    }),
-    {
-      ASSETS: {
-        fetch: async () => new Response("Not found", { status: 404 }),
-      },
-    },
-    {
-      waitUntil() {},
-      passThroughOnException() {},
-    },
-  );
+test("exports independent pages and SEO discovery files", async () => {
+  const spreadsheet = await readFile(new URL("../dist/client/spreadsheet/index.html", import.meta.url), "utf8");
+  const article = await readFile(new URL("../dist/client/articles/how-to-use-allchinabuy-spreadsheet/index.html", import.meta.url), "utf8");
+  const robots = await readFile(new URL("../dist/client/robots.txt", import.meta.url), "utf8");
+  const sitemap = await readFile(new URL("../dist/client/sitemap.xml", import.meta.url), "utf8");
 
-  assert.equal(response.status, 200);
-  assert.match(
-    response.headers.get("content-type") ?? "",
-    /^text\/html\b/i,
-  );
-  assert.match(await response.text(), developmentPreviewMeta);
+  assert.match(spreadsheet, /AllChinaBuy Spreadsheet Guide/);
+  assert.match(article, /How to Use an AllChinaBuy Spreadsheet/);
+  assert.match(robots, /Sitemap: https:\/\/allchinabuys\.shop\/sitemap\.xml/);
+  assert.match(sitemap, /https:\/\/allchinabuys\.shop\/articles\/plan-allchinabuy-shipping\//);
 });
