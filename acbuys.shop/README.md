@@ -8,9 +8,14 @@ complete EN/DE/FR/ES/IT/PL language module.
 
 - Root directory: `acbuys.shop`
 - Production branch: select the branch containing this folder
-- Build command: `npm run build:pages`
+- Build command: leave blank
 - Build output directory: `cloudflare-pages`
-- Node.js version: `22.13.0` or newer
+- Environment variable: `SKIP_DEPENDENCY_INSTALL=1`
+
+The verified static export is committed in `cloudflare-pages/`. Cloudflare can
+therefore upload the site directly without repeating the dependency install and
+application build. Run `npm run build:pages` locally only when the source is
+changed, then commit the refreshed export together with that source change.
 
 The Pages export creates clean static routes, a true `404.html`, `robots.txt`,
 `sitemap.xml`, self-referencing canonical tags, production indexing directives,

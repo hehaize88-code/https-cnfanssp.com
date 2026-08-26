@@ -36,7 +36,8 @@ yarn-error.log*
 # typescript
 next-env.d.ts
 /dist/
-/cloudflare-pages/
+# Keep the verified static Pages export in Git so Cloudflare can deploy it
+# without installing application dependencies during every build.
 /.wrangler/
 /.sites-runtime/
 /outputs/
