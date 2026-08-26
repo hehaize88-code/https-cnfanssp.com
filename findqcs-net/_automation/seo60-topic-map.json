@@ -16,7 +16,7 @@
       "focus": ["decision scope", "product identity", "coverage map", "observation confidence", "evidence gaps", "agent handoff"],
       "outline": ["decision header", "identity row", "coverage map", "observation line", "targeted request", "decision line", "agent handoff"],
       "faqAngles": ["What belongs in a QC evidence worksheet?", "How should missing QC angles be recorded?", "Who performs the purchase and warehouse action?"],
-      "visuals": ["Six HTML checklist panels; no customer media, third-party screenshots or new image assets"]
+      "visuals": ["Seven HTML checklist panels; no customer media, third-party screenshots or new image assets"]
     }
   ]
 }
