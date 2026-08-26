@@ -8,6 +8,7 @@ import { CATALOG_REVIEW, categories, guides, guideContent, DESTINATION, products
 import { getLocalizedDepth } from "@/app/localizedDepth";
 import { absoluteLocalizedUrl, getCopy, localizeGuides, localizePath } from "@/app/i18n";
 import { getLocalizedResearch } from "@/app/localizedResearch";
+import { wardrobeGapArticle } from "@/app/wardrobeGapArticle";
 
 function getLocalizedCatalog(locale) {
   const research = getLocalizedResearch(locale);
@@ -121,19 +122,27 @@ export function LocalizedGuide({ locale, slug }) {
   const page = copy.guideDetail;
   const localized = getLocalizedResearch(locale);
   const sourceResearch = guideContent[slug];
-  const translatedResearch = localized.guideContent[slug];
+  const translatedResearch = slug === "hacoo-finds-wardrobe-gap-shortlist" ? wardrobeGapArticle[locale] : localized.guideContent[slug];
   const research = { ...translatedResearch, image: sourceResearch.image ? { ...translatedResearch.image, src: sourceResearch.image.src } : undefined };
   const checks = depth.guideChecks[slug] || page.steps;
   const fullSections = research.sections.map(([title,paragraphs])=>[title,Array.isArray(paragraphs)?paragraphs:[paragraphs]]);
-  const bodyText=[research.intro,...research.factBox.flat(),...fullSections.flatMap(([,paragraphs])=>paragraphs),...research.steps,research.sourceNote].join(" ");
+  const bodyText=[research.intro,...research.factBox.flat(),...fullSections.flatMap(([,paragraphs])=>paragraphs),...(research.matrix?.rows.flat()||[]),...(research.faqs?.flat()||[]),...research.steps,research.sourceNote].join(" ");
   const wordCount=bodyText.trim().split(/\s+/).length;
-  const schema = { "@context": "https://schema.org", "@type": "Article", headline: guide.title, description: guide.short, mainEntityOfPage: absoluteLocalizedUrl(`/guides/${slug}`,locale), inLanguage: locale, wordCount, author: { "@type": "Organization", name: "Hacoos Editorial" }, datePublished: "2026-08-26", dateModified: "2026-08-26" };
-  return <div className="localized-shell" lang={locale}><StructuredData data={schema}/><article className="article"><header className="article-hero"><div className="wrap article-head"><span className="section-label">{research.kicker}</span><h1>{guide.title}</h1><div className="article-meta"><span>{page.byline}</span><span>{guide.read}</span><span>{wordCount.toLocaleString(locale)} {localized.static.article.words}</span><span>{page.reviewed}</span></div><p>{guide.short}</p><p className="complete-article-intro">{research.intro}</p></div></header>
+  const pageUrl = `${absoluteLocalizedUrl(`/guides/${slug}`,locale)}/`;
+  const schema = research.faqs ? { "@context": "https://schema.org", "@graph": [
+    { "@type": "Article", "@id": `${pageUrl}#article`, headline: guide.title, description: guide.short, mainEntityOfPage: { "@id": `${pageUrl}#webpage` }, inLanguage: locale, wordCount, author: { "@type": "Organization", name: "Hacoos Editorial" }, datePublished: "2026-08-27", dateModified: "2026-08-27" },
+    { "@type": "WebPage", "@id": `${pageUrl}#webpage`, url: pageUrl, name: guide.title, inLanguage: locale, breadcrumb: { "@id": `${pageUrl}#breadcrumb` } },
+    { "@type": "BreadcrumbList", "@id": `${pageUrl}#breadcrumb`, itemListElement: [{ "@type": "ListItem", position: 1, name: "Hacoos", item: `${SITE_URL}/` }, { "@type": "ListItem", position: 2, name: copy.nav.guides, item: `${absoluteLocalizedUrl("/guides",locale)}/` }, { "@type": "ListItem", position: 3, name: guide.title, item: pageUrl }] },
+    { "@type": "FAQPage", inLanguage: locale, mainEntity: research.faqs.map(([question,answer])=>({ "@type": "Question", name: question, acceptedAnswer: { "@type": "Answer", text: answer } })) },
+  ] } : { "@context": "https://schema.org", "@type": "Article", headline: guide.title, description: guide.short, mainEntityOfPage: absoluteLocalizedUrl(`/guides/${slug}`,locale), inLanguage: locale, wordCount, author: { "@type": "Organization", name: "Hacoos Editorial" }, datePublished: "2026-08-26", dateModified: "2026-08-26" };
+  return <div className="localized-shell" lang={locale}><StructuredData data={schema}/><article className="article"><header className="article-hero"><div className="wrap article-head"><span className="section-label">{research.kicker}</span><h1>{guide.title}</h1><div className="article-meta"><span>{page.byline}</span><span>{guide.read}</span><span>{wordCount.toLocaleString(locale)} {localized.static.article.words}</span><span>{research.dateLabel||page.reviewed}</span></div><p>{guide.short}</p><p className="complete-article-intro">{research.intro}</p></div></header>
     <div className="wrap article-fact-box">{research.factBox.map(([label,value])=><div key={label}><span>{label}</span><strong>{value}</strong></div>)}</div>
     <div className="wrap article-body"><aside><span>{copy.nav.guides}</span>{fullSections.map(([title],index)=><a href={`#section-${index}`} key={`${title}-${index}`}>{title}</a>)}<a href="#evidence-check">{depth.guide.label}</a><a href="#quick-process">{page.process}</a><a href="#research-note">{page.reviewed}</a></aside><div className="article-content">
       {research.image&&<figure className="article-figure"><img src={research.image.src} alt={guide.title}/><figcaption>{research.image.caption||guide.short}</figcaption></figure>}
       <div className="complete-source-banner"><strong>{page.label}</strong><span>{localized.static.article.complete} · {wordCount.toLocaleString(locale)} {localized.static.article.words}</span></div>
       {fullSections.map(([title,paragraphs],index)=><section id={`section-${index}`} key={`${title}-${index}`}><h2>{title}</h2>{paragraphs.map((text,pIndex)=><p key={`${index}-${pIndex}`}>{text}</p>)}</section>)}
+      {research.matrix&&<section id="decision-matrix"><h2>{research.matrix.title}</h2><div className="comparison-table-wrap"><table className="comparison-table"><thead><tr>{research.matrix.headers.map((header)=><th key={header}>{header}</th>)}</tr></thead><tbody>{research.matrix.rows.map((row)=><tr key={row[0]}>{row.map((cell,index)=>index===0?<th key={cell}>{cell}</th>:<td key={`${row[0]}-${index}`}>{cell}</td>)}</tr>)}</tbody></table></div></section>}
+      {research.faqs&&<section id="wardrobe-faq"><h2>FAQ</h2><div className="faq-list">{research.faqs.map(([question,answer],index)=><details key={question} open={index===0}><summary>{question}<span>+</span></summary><p>{answer}</p></details>)}</div></section>}
       <section id="evidence-check"><h2>{depth.guide.title}</h2><p>{depth.guide.intro}</p><ul className="mistake-list">{checks.map((text)=><li key={text}><CheckIcon size={18}/><span>{text}</span></li>)}</ul></section>
       <section id="quick-process"><h2>{page.process}</h2><ol>{research.steps.map((step,index)=><li key={step}><span>{index+1}</span>{step}</li>)}</ol></section>
       <section id="research-note" className="article-research-note"><span>{localized.static.article.researchNote}</span><p>{research.sourceNote}</p><p>{copy.footer.disclaimer}</p></section><div className="article-callout"><h2>{page.continue}</h2><p>{guide.short}</p><Link className="button primary" href={localizePath("/categories",locale)}>{page.browse} <Arrow/></Link></div></div></div></article></div>;

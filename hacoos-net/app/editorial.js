@@ -1,3 +1,5 @@
+import { wardrobeGapArticle } from "./wardrobeGapArticle";
+
 const reviewed = "August 26, 2026";
 
 export const guides = [
@@ -50,9 +52,17 @@ export const guides = [
     read: "11 min",
     primaryKeyword: "Hacoo size guide",
   },
+  {
+    slug: "hacoo-finds-wardrobe-gap-shortlist",
+    title: "How to Build a Hacoo Finds Shortlist Around Real Wardrobe Gaps",
+    short: "Turn Hacoo fashion inspiration into a three-item wardrobe shortlist built around real use, existing outfits, fit constraints and a cooling-off review.",
+    read: "11 min",
+    primaryKeyword: "Hacoo finds shortlist",
+  },
 ];
 
 export const guideContent = {
+  "hacoo-finds-wardrobe-gap-shortlist": wardrobeGapArticle.en,
   "what-is-a-hacoo-spreadsheet": {
     kicker: "Hacoo spreadsheet / definition and method",
     intro: "Search for a ‘Hacoo spreadsheet’ and you will usually find a community-made directory rather than an official Hacoo feature. The phrase describes an organized set of discovery links, categories and notes that helps a visitor move from a broad product idea to a current page. That distinction matters. Hacoo’s own website describes the service as an open content-sharing community in which independent users and creators publish lifestyle discoveries. A spreadsheet is an outside research layer built around that activity, not a guarantee from Hacoo and not proof that every linked item is current.",
