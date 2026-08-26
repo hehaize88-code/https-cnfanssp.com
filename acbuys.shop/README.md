@@ -11,6 +11,7 @@ complete EN/DE/FR/ES/IT/PL language module.
 - Build command: leave blank
 - Build output directory: `cloudflare-pages`
 - Environment variable: `SKIP_DEPENDENCY_INSTALL=1`
+- Deployment scripts are committed with executable Git permissions.
 
 The verified static export is committed in `cloudflare-pages/`. Cloudflare can
 therefore upload the site directly without repeating the dependency install and
