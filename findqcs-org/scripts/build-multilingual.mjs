@@ -145,7 +145,7 @@ for (const language of languages) {
 }
 
 writeFileSync(path.join(staging, "sitemap.xml"), buildSitemap(indexableRoutes));
-writeFileSync(path.join(staging, "robots.txt"), "User-Agent: *\nDisallow: /\nSitemap: https://findqcs.org/sitemap.xml\n");
+writeFileSync(path.join(staging, "robots.txt"), "User-Agent: *\nAllow: /\nSitemap: https://findqcs.org/sitemap.xml\n");
 
 rmSync(buildOut, { recursive: true, force: true });
 renameSync(staging, buildOut);

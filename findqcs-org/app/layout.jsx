@@ -14,7 +14,7 @@ export const metadata = localizedMetadata({
   description:
     "Search 100+ mapped product listings, open exact catalog pages, and use practical QC photo and shipping checklists before international delivery.",
   keywords: ["product finder", "QC photos", "quality check guide", "warehouse inspection", "product spreadsheet", "shipping guide"],
-  robots: { index: false, follow: false },
+  robots: { index: true, follow: true },
   openGraph: {
     title: "FindQCS — Find the item. Check the evidence.",
     description: "Exact catalog links, useful finds and practical QC checklists.",

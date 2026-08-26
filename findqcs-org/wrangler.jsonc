@@ -1,7 +1,7 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "findqc-pro-preview",
-  "compatibility_date": "2026-07-20",
+  "name": "findqcs-org",
+  "compatibility_date": "2026-08-26",
   "compatibility_flags": ["nodejs_compat"],
   "main": "dist/server/index.js",
   "assets": {

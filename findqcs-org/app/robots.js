@@ -1,5 +1,5 @@
 export const dynamic = "force-static";
 
 export default function robots() {
-  return { rules: { userAgent: "*", disallow: "/" }, sitemap: "https://findqcs.org/sitemap.xml" };
+  return { rules: { userAgent: "*", allow: "/" }, sitemap: "https://findqcs.org/sitemap.xml" };
 }
