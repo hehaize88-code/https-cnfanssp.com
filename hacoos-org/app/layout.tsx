@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://hacoos.org"),
-  title: "Hacoo Product Links & Independent Finds | Hacoos.org",
+  title: "Hacoos.org — Independent Hacoo Product Library",
   description: "An independent, multilingual Hacoo product research library with live references, QC notes, sizing and shipping guides.",
   alternates: {
     canonical: "https://hacoos.org/en",
@@ -38,13 +38,11 @@ export const metadata: Metadata = {
     title: "Hacoo Product Links & Independent Finds | Hacoos.org",
     description: "An independent, multilingual Hacoo product research library with live references, QC notes, sizing and shipping guides.",
     url: "https://hacoos.org/en",
-    images: [{ url: "/hacoo-logo.png", width: 217, height: 57, alt: "Hacoos.org" }],
   },
   twitter: {
-    card: "summary_large_image",
+    card: "summary",
     title: "Hacoo Product Links & Independent Finds | Hacoos.org",
-    description: "Independent Hacoo product links, finds, QC notes, sizing and shipping research.",
-    images: ["/hacoo-logo.png"],
+    description: "Independent Hacoo product links, finds and practical verification guides.",
   },
 };
 

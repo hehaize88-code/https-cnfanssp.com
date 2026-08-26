@@ -11,9 +11,12 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const { locale, section } = await params;
   if (!locales.includes(locale as Locale) || !sections.includes(section as Section)) return {};
   const t = copy[locale as Locale];
+  const title = `${t.sectionTitles[section as Section]} | Hacoos.org`;
+  const description = t.sectionIntros[section as Section];
+  const canonical = `https://hacoos.org/${locale}/${section}`;
   return {
-    title: `${t.sectionTitles[section as Section]} — Hacoos.org`,
-    description: t.sectionIntros[section as Section],
+    title,
+    description,
     alternates: {
       canonical: `https://hacoos.org/${locale}/${section}`,
       languages: {
@@ -21,8 +24,19 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
         ...Object.fromEntries(locales.map((item) => [item, `https://hacoos.org/${item}/${section}`])),
       },
     },
-    openGraph: { type: "website", siteName: "Hacoos.org", title: `${t.sectionTitles[section as Section]} — Hacoos.org`, description: t.sectionIntros[section as Section], url: `https://hacoos.org/${locale}/${section}`, images: [{ url: "/hacoo-logo.png", width: 217, height: 57, alt: "Hacoos.org" }] },
-    twitter: { card: "summary_large_image", title: `${t.sectionTitles[section as Section]} — Hacoos.org`, description: t.sectionIntros[section as Section], images: ["/hacoo-logo.png"] },
+    openGraph: {
+      type: "website",
+      siteName: "Hacoos.org",
+      title,
+      description,
+      url: canonical,
+      locale,
+    },
+    twitter: {
+      card: "summary",
+      title,
+      description,
+    },
   };
 }
 

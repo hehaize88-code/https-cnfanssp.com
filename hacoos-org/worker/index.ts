@@ -19,6 +19,16 @@ interface ExecutionContext {
   passThroughOnException(): void;
 }
 
+const CACHE_VERSION = "2026-08-26-seo-hardening-1";
+const CACHE_CONTROL = "public, max-age=300, s-maxage=86400, stale-while-revalidate=604800";
+
+function cachedResponse(response: Response, state: "HIT" | "MISS") {
+  const headers = new Headers(response.headers);
+  headers.set("Cache-Control", CACHE_CONTROL);
+  headers.set("X-Hacoos-Cache", state);
+  return new Response(response.body, { status: response.status, statusText: response.statusText, headers });
+}
+
 // Image security config. SVG sources with .svg extension auto-skip the
 // optimization endpoint on the client side (served directly, no proxy).
 // To route SVGs through the optimizer (with security headers), set
@@ -29,15 +39,11 @@ const worker = {
   async fetch(request: Request, env: Env, ctx: ExecutionContext): Promise<Response> {
     const url = new URL(request.url);
 
-    if ((url.hostname === "hacoos.org" || url.hostname === "www.hacoos.org") && (url.protocol === "http:" || url.hostname === "www.hacoos.org")) {
+    if ((url.hostname === "hacoos.org" && url.protocol !== "https:") || url.hostname === "www.hacoos.org") {
       url.protocol = "https:";
       url.hostname = "hacoos.org";
       url.port = "";
-      return Response.redirect(url.toString(), 308);
-    }
-
-    if (url.hostname === "hacoos.org" && url.pathname === "/") {
-      url.pathname = "/en";
+      if (url.pathname === "/") url.pathname = "/en";
       return Response.redirect(url.toString(), 308);
     }
 
@@ -52,25 +58,30 @@ const worker = {
       }, allowedWidths);
     }
 
-    const isCacheablePage = request.method === "GET" && !url.pathname.startsWith("/_vinext/");
-    const cache = typeof caches !== "undefined" ? caches.default : undefined;
-    if (isCacheablePage && cache) {
-      const cached = await cache.match(request);
-      if (cached) return cached;
+    const canUseEdgeCache = request.method === "GET" && url.hostname === "hacoos.org";
+    const edgeCache = typeof caches === "undefined" ? null : (caches as unknown as { default: Cache }).default;
+    const cacheUrl = new URL(url);
+    cacheUrl.search = "";
+    cacheUrl.searchParams.set("__hacoos_cache", CACHE_VERSION);
+    const cacheKey = new Request(cacheUrl.toString(), { method: "GET" });
+
+    if (canUseEdgeCache && edgeCache) {
+      const hit = await edgeCache.match(cacheKey);
+      if (hit) return cachedResponse(hit, "HIT");
     }
 
     const response = await handler.fetch(request, env, ctx);
-    if (!isCacheablePage || !response.ok) return response;
-
     const contentType = response.headers.get("content-type") ?? "";
-    if (!contentType.includes("text/html") && !contentType.includes("application/xml") && !contentType.includes("text/plain")) {
-      return response;
-    }
+    const isCacheable = response.status === 200 && (
+      contentType.includes("text/html") ||
+      contentType.includes("application/xml") ||
+      contentType.includes("text/plain")
+    );
 
-    const cacheable = new Response(response.body, response);
-    cacheable.headers.set("Cache-Control", "public, max-age=300, s-maxage=86400, stale-while-revalidate=604800");
-    cacheable.headers.set("X-Robots-Tag", "index, follow");
-    if (cache) ctx.waitUntil(cache.put(request, cacheable.clone()));
+    if (!canUseEdgeCache || !isCacheable) return response;
+
+    const cacheable = cachedResponse(response, "MISS");
+    if (edgeCache) ctx.waitUntil(edgeCache.put(cacheKey, cacheable.clone()));
     return cacheable;
   },
 };

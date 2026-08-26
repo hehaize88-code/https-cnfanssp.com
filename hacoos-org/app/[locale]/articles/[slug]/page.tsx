@@ -12,8 +12,12 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const { locale, slug } = await params;
   if (!locales.includes(locale as Locale) || !articleSlugs.includes(slug)) return {};
   const article = localizedContent[locale as Locale].longGuides.find((item) => item.id === slug)!;
+  const title = `${article.title} | Hacoos.org`;
+  const canonical = `https://hacoos.org/${locale}/articles/${slug}`;
+  const articleImageNumber = articleSlugs.indexOf(slug) + 1;
+  const image = `https://hacoos.org/products/hacoo-product-${String(articleImageNumber).padStart(2, "0")}.webp`;
   return {
-    title: `${article.title} — Hacoos.org`,
+    title,
     description: article.standfirst,
     alternates: {
       canonical: `https://hacoos.org/${locale}/articles/${slug}`,
@@ -22,8 +26,23 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
         ...Object.fromEntries(locales.map((item) => [item, `https://hacoos.org/${item}/articles/${slug}`])),
       },
     },
-    openGraph: { type: "article", siteName: "Hacoos.org", title: `${article.title} — Hacoos.org`, description: article.standfirst, url: `https://hacoos.org/${locale}/articles/${slug}`, images: [{ url: "/hacoo-logo.png", width: 217, height: 57, alt: "Hacoos.org" }] },
-    twitter: { card: "summary_large_image", title: `${article.title} — Hacoos.org`, description: article.standfirst, images: ["/hacoo-logo.png"] },
+    openGraph: {
+      type: "article",
+      siteName: "Hacoos.org",
+      title,
+      description: article.standfirst,
+      url: canonical,
+      locale,
+      publishedTime: "2026-08-26",
+      modifiedTime: "2026-08-26",
+      images: [{ url: image, alt: article.title }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description: article.standfirst,
+      images: [image],
+    },
   };
 }
 

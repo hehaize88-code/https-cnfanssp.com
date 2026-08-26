@@ -1,5 +1,5 @@
+/* eslint-disable @next/next/no-img-element -- local, dimensioned responsive sources are intentional */
 import Link from "next/link";
-import Image from "next/image";
 import {
   ArrowLeft,
   ArrowRight,
@@ -15,6 +15,7 @@ import {
 } from "lucide-react";
 import { copy, locales, sections, type Locale, type Section } from "@/lib/site-data";
 import { localizedContent } from "@/lib/localized-content";
+import { sectionDetails } from "@/lib/section-details";
 
 const localeNames: Record<Locale, string> = {
   en: "English",
@@ -102,7 +103,7 @@ function SearchForm({ locale }: { locale: Locale }) {
   );
 }
 
-function ProductGrid({ locale, limit }: { locale: Locale; limit?: number }) {
+function ProductGrid({ locale, limit, eagerCount = 2 }: { locale: Locale; limit?: number; eagerCount?: number }) {
   const t = copy[locale];
   const list = typeof limit === "number" ? localizedContent[locale].products.slice(0, limit) : localizedContent[locale].products;
   return (
@@ -110,7 +111,16 @@ function ProductGrid({ locale, limit }: { locale: Locale; limit?: number }) {
       {list.map((product, index) => (
         <a className="product-card" href={product.href} key={product.href} rel="noopener noreferrer">
           <div className="product-image-wrap">
-            <Image src={product.image} alt={product.title} fill sizes="(max-width: 680px) 50vw, (max-width: 1000px) 50vw, 33vw" priority={index === 0} quality={78} />
+            <img
+              src={product.image}
+              srcSet={`${product.imageSmall} 360w, ${product.image} ${product.imageWidth}w`}
+              sizes="(max-width: 680px) 48vw, (max-width: 980px) 50vw, 33vw"
+              width={product.imageWidth}
+              height={product.imageHeight}
+              alt={product.title}
+              loading={index < eagerCount ? "eager" : "lazy"}
+              decoding="async"
+            />
             <span>{String(index + 1).padStart(2, "0")}</span>
           </div>
           <div className="product-meta">
@@ -164,36 +174,39 @@ function FAQList({ locale }: { locale: Locale }) {
 export function HomePage({ locale }: { locale: Locale }) {
   const t = copy[locale];
   const c = localizedContent[locale];
+  const homeUrl = `https://hacoos.org/${locale}`;
+  const organizationJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "Hacoos.org",
+    url: "https://hacoos.org/en",
+    logo: { "@type": "ImageObject", url: "https://hacoos.org/hacoo-logo.png", width: 217, height: 57 },
+  };
   const websiteJsonLd = {
     "@context": "https://schema.org",
     "@type": "WebSite",
     name: "Hacoos.org",
-    url: `https://hacoos.org/${locale}`,
+    url: homeUrl,
     inLanguage: locale,
-    description: t.intro,
-    potentialAction: {
-      "@type": "SearchAction",
-      target: "https://www.cnfanssp.com/search.html?keywords={search_term_string}&channelid=2&method=1",
-      "query-input": "required name=search_term_string",
-    },
-    publisher: { "@type": "Organization", name: "Hacoos.org", url: "https://hacoos.org/en", logo: { "@type": "ImageObject", url: "https://hacoos.org/hacoo-logo.png", width: 217, height: 57 } },
+    publisher: { "@type": "Organization", name: "Hacoos.org", url: "https://hacoos.org/en" },
   };
   return (
     <>
       <Header locale={locale} />
       <main>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }} />
         <section className="hero shell">
           <div className="hero-copy">
-            <p className="eyebrow"><CircleDot size={14} />{t.eyebrow}</p><h1>{t.title}</h1><p className="hero-intro">{t.intro}</p>
+            <p className="eyebrow"><CircleDot size={14} />{t.eyebrow}</p><h1>{t.title}</h1><p className="hero-tagline">{t.tagline}</p><p className="hero-intro">{t.intro}</p>
             <SearchForm locale={locale} /><Link className="text-link" href={localPath(locale, "spreadsheet")}>{t.browse}<ArrowRight size={16} /></Link>
           </div>
           <div className="hero-gallery" aria-label={c.ui.selectedReferences}>
             <a className="hero-photo main-photo" href={c.products[0].href} rel="noopener noreferrer" aria-label={`${t.openReference}: ${c.products[0].title}`}>
-              <Image src={c.products[0].image} alt={c.products[0].title} fill sizes="(max-width: 680px) 72vw, 40vw" priority quality={82} /><span>{c.ui.object} / 01</span>
+              <img src={c.products[0].image} srcSet={`${c.products[0].imageSmall} 360w, ${c.products[0].image} ${c.products[0].imageWidth}w`} sizes="(max-width: 680px) 81vw, 40vw" width={c.products[0].imageWidth} height={c.products[0].imageHeight} alt={c.products[0].title} fetchPriority="high" decoding="async" /><span>{c.ui.object} / 01</span>
             </a>
             <a className="hero-photo inset-photo" href={c.products[2].href} rel="noopener noreferrer" aria-label={`${t.openReference}: ${c.products[2].title}`}>
-              <Image src={c.products[2].image} alt={c.products[2].title} fill sizes="(max-width: 680px) 38vw, 22vw" quality={78} /><span>{c.ui.object} / 02</span>
+              <img src={c.products[2].image} srcSet={`${c.products[2].imageSmall} 360w, ${c.products[2].image} ${c.products[2].imageWidth}w`} sizes="(max-width: 680px) 38vw, 22vw" width={c.products[2].imageWidth} height={c.products[2].imageHeight} alt={c.products[2].title} loading="lazy" decoding="async" /><span>{c.ui.object} / 02</span>
             </a>
             <div className="paper-note"><Sparkles size={17} /><p>{c.ui.paperNote[0]}<br />{c.ui.paperNote[1]}</p></div>
           </div>
@@ -204,7 +217,7 @@ export function HomePage({ locale }: { locale: Locale }) {
         </div></section>
         <section className="section shell">
           <div className="section-head"><div><p className="kicker">{c.ui.kickers[0]}</p><h2>{t.latest}</h2></div><p>{t.latestIntro}</p></div>
-          <ProductGrid locale={locale} /><Link className="outline-link" href={localPath(locale, "finds")}>{t.allFinds}<ArrowRight size={17} /></Link>
+          <ProductGrid locale={locale} eagerCount={0} /><Link className="outline-link" href={localPath(locale, "finds")}>{t.allFinds}<ArrowRight size={17} /></Link>
         </section>
         <section className="section section-tint"><div className="shell">
           <div className="section-head"><div><p className="kicker">{c.ui.kickers[1]}</p><h2>{t.categories}</h2></div><p>{t.categoriesIntro}</p></div><CategoryGrid locale={locale} />
@@ -258,7 +271,7 @@ function ArticleFigure({ locale, articleId, caption }: { locale: Locale; article
   const c = localizedContent[locale];
   if (articleId !== "hacoo-spreadsheet-guide" && articleId !== "hacoo-qc-guide") return null;
   return <figure className="article-figure">
-    <div>{c.products.slice(articleId === "hacoo-qc-guide" ? 0 : 1, articleId === "hacoo-qc-guide" ? 2 : 3).map((product) => <a href={product.href} key={product.href} rel="noopener noreferrer"><Image src={product.image} alt={product.title} width={720} height={540} sizes="(max-width: 680px) 100vw, 50vw" quality={78} /><span>{product.title}</span></a>)}</div>
+    <div>{c.products.slice(articleId === "hacoo-qc-guide" ? 0 : 1, articleId === "hacoo-qc-guide" ? 2 : 3).map((product) => <a href={product.href} key={product.href} rel="noopener noreferrer"><img src={product.image} srcSet={`${product.imageSmall} 360w, ${product.image} ${product.imageWidth}w`} sizes="(max-width: 680px) 48vw, 390px" width={product.imageWidth} height={product.imageHeight} loading="lazy" decoding="async" alt={product.title} /><span>{product.title}</span></a>)}</div>
     <figcaption>{caption}</figcaption>
   </figure>;
 }
@@ -295,15 +308,25 @@ function FAQPage({ locale }: { locale: Locale }) {
   return <section className="section shell faq-page"><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} /><FAQList locale={locale} /><div className="independent-note"><CircleDot /><h2>{c.ui.independent}</h2><p>{t.disclaimer}</p></div></section>;
 }
 
+function SectionDepth({ locale, section }: { locale: Locale; section: Section }) {
+  const detail = sectionDetails[locale][section];
+  return <section className="section section-depth"><div className="shell section-depth-grid">
+    <div><p className="kicker">{detail.label}</p><h2>{detail.heading}</h2></div>
+    <div className="section-depth-copy">{detail.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}<ul>{detail.checks.map((check) => <li key={check}><Check size={15} />{check}</li>)}</ul></div>
+  </div></section>;
+}
+
 export function SectionPage({ locale, section }: { locale: Locale; section: Section }) {
+  const canonical = `https://hacoos.org/${locale}/${section}`;
   const breadcrumbJsonLd = { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [
     { "@type": "ListItem", position: 1, name: "Hacoos.org", item: `https://hacoos.org/${locale}` },
-    { "@type": "ListItem", position: 2, name: copy[locale].sectionTitles[section], item: `https://hacoos.org/${locale}/${section}` },
+    { "@type": "ListItem", position: 2, name: copy[locale].sectionTitles[section], item: canonical },
   ] };
   return <><Header locale={locale} section={section} /><main><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} /><SectionHero locale={locale} section={section} />
     {section === "spreadsheet" && <SpreadsheetPage locale={locale} />}{section === "finds" && <FindsPage locale={locale} />}
     {section === "articles" && <ArticlesPage locale={locale} />}{section === "guides" && <GuidesPage locale={locale} />}
     {section === "qc" && <QCPage locale={locale} />}{section === "shipping" && <ShippingPage locale={locale} />}{section === "faq" && <FAQPage locale={locale} />}
+    <SectionDepth locale={locale} section={section} />
   </main><Footer locale={locale} /></>;
 }
 
@@ -315,8 +338,8 @@ export function ArticlePage({ locale, slug }: { locale: Locale; slug: string }) 
   const articleJsonLd = {
     "@context": "https://schema.org", "@type": "Article", headline: article.title, description: article.standfirst,
     datePublished: "2026-08-26", dateModified: "2026-08-26", inLanguage: locale, wordCount, keywords: article.targetKeyword,
-    mainEntityOfPage: canonical, author: { "@type": "Organization", name: "Hacoos.org", url: "https://hacoos.org" },
-    image: [c.products[0].image],
+    mainEntityOfPage: canonical, image: `https://hacoos.org${c.products[Math.max(0, c.longGuides.findIndex((item) => item.id === article.id))].image}`,
+    author: { "@type": "Organization", name: "Hacoos.org", url: "https://hacoos.org/en" },
     publisher: { "@type": "Organization", name: "Hacoos.org", url: "https://hacoos.org/en", logo: { "@type": "ImageObject", url: "https://hacoos.org/hacoo-logo.png", width: 217, height: 57 } }, isAccessibleForFree: true,
   };
   const breadcrumbJsonLd = { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [
