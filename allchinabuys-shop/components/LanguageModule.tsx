@@ -20,10 +20,14 @@ const originalAttributes = new WeakMap<Element, Map<string, string>>();
 
 function translateNode(root: Node, language: LanguageCode) {
   const dictionary = translations[language] as Record<string, string> | undefined;
+  const textNodes: Text[] = [];
+
+  if (root.nodeType === Node.TEXT_NODE) textNodes.push(root as Text);
   const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
   let node: Text | null;
+  while ((node = walker.nextNode() as Text | null)) textNodes.push(node);
 
-  while ((node = walker.nextNode() as Text | null)) {
+  for (const node of textNodes) {
     const parent = node.parentElement;
     if (!parent || ["SCRIPT", "STYLE", "NOSCRIPT", "CODE", "PRE"].includes(parent.tagName)) continue;
     if (!originalText.has(node)) originalText.set(node, node.nodeValue || "");
@@ -34,7 +38,11 @@ function translateNode(root: Node, language: LanguageCode) {
     node.nodeValue = source.replace(key, replacement);
   }
 
-  const elements = root instanceof Element ? [root, ...Array.from(root.querySelectorAll("*"))] : Array.from(document.body.querySelectorAll("*"));
+  const elements = root instanceof Element
+    ? [root, ...Array.from(root.querySelectorAll("*"))]
+    : root.parentElement
+      ? [root.parentElement]
+      : [];
   for (const element of elements) {
     for (const attribute of ["placeholder", "aria-label", "title"]) {
       const value = element.getAttribute(attribute);
@@ -67,6 +75,7 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     if (!ready) return;
     document.documentElement.lang = language;
+    document.documentElement.dataset.language = language;
     window.localStorage.setItem("acb-language", language);
     translateNode(document.body, language);
     const observer = new MutationObserver((records) => {

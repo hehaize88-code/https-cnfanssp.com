@@ -91,7 +91,7 @@ export default function Home() {
 
         <section className="decision-lab">
           <div className="section-shell">
-            <div className="lab-heading"><span>03 / Decision guides</span><h2>Three checks before<br />a product joins your parcel.</h2></div>
+            <div className="lab-heading"><span>03 / Decision guides</span><h2>Four checks before<br />a product joins your parcel.</h2></div>
             <div className="guide-ledger">
               {guides.map((guide, index) => (
                 <Link href={guide.href} key={guide.href}>
