@@ -1,0 +1,119 @@
+# Cache only known 200 HTML routes at the edge. Unknown paths and the 404 response
+# do not match these rules, so they are not given a positive cache lifetime.
+/
+  Cache-Control: public, max-age=0, must-revalidate
+  Cloudflare-CDN-Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+
+/spreadsheet
+  Cache-Control: public, max-age=0, must-revalidate
+  Cloudflare-CDN-Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+
+/finds
+  Cache-Control: public, max-age=0, must-revalidate
+  Cloudflare-CDN-Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+
+/articles
+  Cache-Control: public, max-age=0, must-revalidate
+  Cloudflare-CDN-Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+
+/guides/how-to-use
+  Cache-Control: public, max-age=0, must-revalidate
+  Cloudflare-CDN-Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+
+/guides/qc-checks
+  Cache-Control: public, max-age=0, must-revalidate
+  Cloudflare-CDN-Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+
+/guides/shipping
+  Cache-Control: public, max-age=0, must-revalidate
+  Cloudflare-CDN-Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+
+/guides/reviews
+  Cache-Control: public, max-age=0, must-revalidate
+  Cloudflare-CDN-Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+
+/faq
+  Cache-Control: public, max-age=0, must-revalidate
+  Cloudflare-CDN-Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+
+/categories/shoes
+  Cache-Control: public, max-age=0, must-revalidate
+  Cloudflare-CDN-Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+
+/categories/hoodies-sweaters
+  Cache-Control: public, max-age=0, must-revalidate
+  Cloudflare-CDN-Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+
+/categories/t-shirts
+  Cache-Control: public, max-age=0, must-revalidate
+  Cloudflare-CDN-Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+
+/categories/jackets
+  Cache-Control: public, max-age=0, must-revalidate
+  Cloudflare-CDN-Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+
+/categories/pants-shorts
+  Cache-Control: public, max-age=0, must-revalidate
+  Cloudflare-CDN-Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+
+/categories/headwear
+  Cache-Control: public, max-age=0, must-revalidate
+  Cloudflare-CDN-Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+
+/categories/accessories
+  Cache-Control: public, max-age=0, must-revalidate
+  Cloudflare-CDN-Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+
+/categories/electronics
+  Cache-Control: public, max-age=0, must-revalidate
+  Cloudflare-CDN-Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+
+/products/autry-shoes
+  Cache-Control: public, max-age=0, must-revalidate
+  Cloudflare-CDN-Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+
+/products/amiri-ma-1-sneakers
+  Cache-Control: public, max-age=0, must-revalidate
+  Cloudflare-CDN-Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+
+/products/yeezy-350-v2-collection
+  Cache-Control: public, max-age=0, must-revalidate
+  Cloudflare-CDN-Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+
+/products/lv-run-away-shoes
+  Cache-Control: public, max-age=0, must-revalidate
+  Cloudflare-CDN-Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+
+/products/prada-hoodie
+  Cache-Control: public, max-age=0, must-revalidate
+  Cloudflare-CDN-Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+
+/products/palm-angel-hoodie
+  Cache-Control: public, max-age=0, must-revalidate
+  Cloudflare-CDN-Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+
+/products/6pm-hoodie-set
+  Cache-Control: public, max-age=0, must-revalidate
+  Cloudflare-CDN-Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+
+/products/embroidered-duckbill-cap
+  Cache-Control: public, max-age=0, must-revalidate
+  Cloudflare-CDN-Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+
+/robots.txt
+  Cache-Control: public, max-age=300
+  Cloudflare-CDN-Cache-Control: public, max-age=3600
+
+/sitemap.xml
+  Cache-Control: public, max-age=300
+  Cloudflare-CDN-Cache-Control: public, max-age=3600
+
+/_next/static/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Keep Cloudflare's generated deployment hostname out of the index.
+https://allchinabuys-store.pages.dev/*
+  X-Robots-Tag: noindex
+
+https://:version.allchinabuys-store.pages.dev/*
+  X-Robots-Tag: noindex
