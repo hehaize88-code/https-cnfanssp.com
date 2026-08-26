@@ -2,7 +2,6 @@
 
 import { ExternalIcon } from "./Icons";
 import { useLanguage } from "./LanguageProvider";
-import Link from "./LocalizedLink";
 
 const NOTE_KEYS = {
   "Footwear listing": "product.note.shoes",
@@ -36,12 +35,12 @@ export default function ProductCard({ product, priority = false }) {
           <span title={`Source item ${product.sourceId}`}>#{product.id}</span>
         </div>
         <h3>{productName}</h3>
-        <Link className="product-qc-link" href={`/finds/${product.id}`}>QC notes &amp; checks →</Link>
+        <a className="product-qc-link" href={product.href} target="_blank" rel="noopener noreferrer">{t("product.details")} →</a>
         <div className="product-bottom">
           <div>
             <small>{t("product.price")}</small>
             <strong>{usdPrice}</strong>
-            <span className="product-source-views">USD estimate</span>
+            <span className="product-source-views">{t("product.usdEstimate")}</span>
           </div>
           <a href={product.href} target="_blank" rel="noopener noreferrer" aria-label={t("product.view", { name: productName })}>
             <ExternalIcon />

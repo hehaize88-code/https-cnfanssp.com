@@ -13,8 +13,8 @@ export const metadata = localizedMetadata({
 }, "/faq");
 
 const faqGroups = [
-  { title: "Using the product finder", items: [1, 3, 5, 6] },
-  { title: "Reading QC evidence", items: [2, 4, 7, 8] },
+  { titleKey: "faq.groupFinder", items: [1, 3, 5, 6] },
+  { titleKey: "faq.groupEvidence", items: [2, 4, 7, 8] },
 ];
 
 const faqOrder = faqGroups.flatMap((group) => group.items);
@@ -43,10 +43,10 @@ export default function FaqPage() {
         {faqGroups.map((group, groupIndex) => {
           const offset = groupIndex === 0 ? 0 : faqGroups[0].items.length;
           return (
-            <div className="faq-group" key={group.title}>
+            <div className="faq-group" key={group.titleKey}>
               <header className="faq-group-heading">
                 <span>0{groupIndex + 1}</span>
-                <h2>{group.title}</h2>
+                <h2><T id={group.titleKey} /></h2>
               </header>
               <div>
                 {group.items.map((number, index) => {
@@ -66,16 +66,16 @@ export default function FaqPage() {
 
       <section className="faq-research-panel" aria-labelledby="faq-research-title">
         <div>
-          <span className="eyebrow light">Next useful step</span>
-          <h2 id="faq-research-title">Turn an answer into a repeatable check.</h2>
-          <p>Use the compact guides before you open a listing, approve warehouse photos or estimate a shipment.</p>
-          <small>FindQCS is an independent discovery and education layer. It does not sell, inspect or authenticate products.</small>
+          <span className="eyebrow light"><T id="faq.nextEyebrow" /></span>
+          <h2 id="faq-research-title"><T id="faq.nextTitle" /></h2>
+          <p><T id="faq.nextText" /></p>
+          <small><T id="faq.nextNote" /></small>
         </div>
         <div className="faq-source-links">
-          <Link href="/guides/qc-photo-checklist"><span>01</span><b>Seven-stage QC photo checklist</b><ArrowIcon /></Link>
-          <Link href="/guides/how-to-buy"><span>02</span><b>Search-to-warehouse buying flow</b><ArrowIcon /></Link>
-          <Link href="/shipping"><span>03</span><b>Shipping cost and parcel checklist</b><ArrowIcon /></Link>
-          <Link href="/articles"><span>04</span><b>Evidence-led field notes</b><ArrowIcon /></Link>
+          <Link href="/guides/qc-photo-checklist"><span>01</span><b><T id="faq.nextChecklist" /></b><ArrowIcon /></Link>
+          <Link href="/guides/how-to-buy"><span>02</span><b><T id="faq.nextFlow" /></b><ArrowIcon /></Link>
+          <Link href="/shipping"><span>03</span><b><T id="faq.nextShipping" /></b><ArrowIcon /></Link>
+          <Link href="/articles"><span>04</span><b><T id="faq.nextArticles" /></b><ArrowIcon /></Link>
         </div>
       </section>
     </div>

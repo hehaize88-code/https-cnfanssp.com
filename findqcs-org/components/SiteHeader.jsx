@@ -28,9 +28,9 @@ export default function SiteHeader() {
   return (
     <header className="site-header">
       <div className="nav-shell">
-        <Link href="/" className="brand" aria-label="FindQCS home">
+        <Link href="/" className="brand" aria-label="FindQC home">
           <img className="brand-logo-image" src="/findqc-logo.png" alt="" width="88" height="88" />
-          <span className="brand-name">FINDQCS <small>PRODUCT INDEX</small></span>
+          <span className="brand-name">FINDQC <small>PRODUCT INDEX</small></span>
         </Link>
 
         <nav className="desktop-nav" aria-label="Primary navigation">

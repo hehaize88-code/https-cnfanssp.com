@@ -17,7 +17,7 @@ export default function AboutPage() {
         <div><span>02</span><h2><T id="about.educationTitle" /></h2><p><T id="about.educationText" /></p></div>
         <div><span>03</span><h2><T id="about.boundariesTitle" /></h2><p><T id="about.boundariesText" /></p></div>
       </section>
-      <section className="plain-content"><h2><T id="about.independentTitle" /></h2><p>FindQCS is an independent discovery and education site. It does not operate a marketplace, process product payments, perform warehouse inspections or represent a shopping service. Product information can change, so always confirm the live destination before making a decision.</p><Link href="/guides"><T id="about.readGuides" /> <ArrowIcon /></Link></section>
+      <section className="plain-content"><h2><T id="about.independentTitle" /></h2><p><T id="about.independentText" /></p><Link href="/guides"><T id="about.readGuides" /> <ArrowIcon /></Link></section>
     </div>
   );
 }

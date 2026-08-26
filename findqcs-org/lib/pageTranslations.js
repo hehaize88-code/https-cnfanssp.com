@@ -117,7 +117,7 @@ const COPY = {
       title1: "Nine paths.",
       title2: "One clearer starting point.",
       intro: "Choose a product type to see relevant finds and the visible details worth checking before shipment.",
-      openGuide: "Browse category",
+      openGuide: "Open main catalog category",
     },
     categoryDetail: {
       title2: "finds & checks.",
@@ -420,6 +420,7 @@ const COPY = {
       noMatchText: "The shortlist is intentionally small. You can search Google for this exact phrase limited to the main catalog, without being dropped on a generic page.",
       startText: "Results will show matching categories and exact product source pages.",
       google: "Search “{query}” within cnfanssp.com",
+      completeCatalog: "Search the complete live catalog",
     },
     notFound: {
       eyebrow: "404 / NOT FOUND",
@@ -546,7 +547,7 @@ const COPY = {
       title1: "Dziewięć ścieżek.",
       title2: "Jeden jaśniejszy początek.",
       intro: "Wybierz typ produktu, aby zobaczyć odpowiednie znaleziska i szczegóły, które warto sprawdzić przed wysyłką.",
-      openGuide: "Przeglądaj kategorię",
+      openGuide: "Otwórz kategorię w głównym katalogu",
     },
     categoryDetail: {
       title2: "znaleziska i kontrole.",
@@ -849,6 +850,7 @@ const COPY = {
       noMatchText: "Lista jest celowo krótka. Możesz wyszukać tę dokładną frazę w Google wyłącznie w głównym katalogu, bez przechodzenia na ogólną stronę.",
       startText: "Wyniki pokażą dopasowane kategorie i dokładne strony źródłowe produktów.",
       google: "Szukaj „{query}” w cnfanssp.com",
+      completeCatalog: "Przeszukaj pełny aktualny katalog",
     },
     notFound: {
       eyebrow: "404 / NIE ZNALEZIONO",
@@ -975,7 +977,7 @@ const COPY = {
       title1: "Nueve caminos.",
       title2: "Un punto de partida más claro.",
       intro: "Elige un tipo de producto para ver hallazgos relevantes y los detalles visibles que conviene revisar antes del envío.",
-      openGuide: "Explorar categoría",
+      openGuide: "Abrir categoría en el catálogo principal",
     },
     categoryDetail: {
       title2: "hallazgos y controles.",
@@ -1278,6 +1280,7 @@ const COPY = {
       noMatchText: "La selección es deliberadamente pequeña. Puedes buscar esta frase exacta en Google limitada al catálogo principal, sin caer en una página genérica.",
       startText: "Los resultados mostrarán categorías coincidentes y páginas fuente exactas de productos.",
       google: "Buscar “{query}” dentro de cnfanssp.com",
+      completeCatalog: "Buscar en el catálogo completo en vivo",
     },
     notFound: {
       eyebrow: "404 / NO ENCONTRADO",
@@ -1404,7 +1407,7 @@ const COPY = {
       title1: "Neun Wege.",
       title2: "Ein klarerer Startpunkt.",
       intro: "Wähle einen Produkttyp, um passende Funde und die vor dem Versand sichtbaren Prüfpunkte zu sehen.",
-      openGuide: "Kategorie durchsuchen",
+      openGuide: "Kategorie im Hauptkatalog öffnen",
     },
     categoryDetail: {
       title2: "Funde & Prüfungen.",
@@ -1707,6 +1710,7 @@ const COPY = {
       noMatchText: "Die Auswahl ist bewusst klein. Du kannst bei Google nach diesem exakten Ausdruck suchen und die Suche auf den Hauptkatalog begrenzen, ohne auf einer allgemeinen Seite zu landen.",
       startText: "Die Ergebnisse zeigen passende Kategorien und exakte Produktquellseiten.",
       google: "„{query}“ innerhalb von cnfanssp.com suchen",
+      completeCatalog: "Vollständigen Live-Katalog durchsuchen",
     },
     notFound: {
       eyebrow: "404 / NICHT GEFUNDEN",
@@ -1833,7 +1837,7 @@ const COPY = {
       title1: "Nouă direcții.",
       title2: "Un punct de plecare mai clar.",
       intro: "Alege un tip de produs pentru a vedea selecțiile relevante și detaliile vizibile care merită verificate înainte de expediere.",
-      openGuide: "Explorează categoria",
+      openGuide: "Deschide categoria în catalogul principal",
     },
     categoryDetail: {
       title2: "produse și verificări.",
@@ -2136,6 +2140,7 @@ const COPY = {
       noMatchText: "Selecția este intenționat restrânsă. Poți căuta pe Google expresia exactă limitată la catalogul principal, fără a ajunge pe o pagină generică.",
       startText: "Rezultatele vor arăta categoriile potrivite și paginile-sursă exacte ale produselor.",
       google: "Caută „{query}” în cnfanssp.com",
+      completeCatalog: "Caută în catalogul complet actualizat",
     },
     notFound: {
       eyebrow: "404 / NEGĂSIT",
