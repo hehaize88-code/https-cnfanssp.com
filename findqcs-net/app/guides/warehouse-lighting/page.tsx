@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { EditorialPage } from "../../components/EditorialPage";
 
-export const metadata: Metadata={title:"How to Find QC Photos by Product Link or Keyword | FindQCs",description:"Learn how to find useful QC photos, verify a product match and avoid confusing similar-item images with evidence for the exact listing.",alternates:{canonical:"/guides/warehouse-lighting"}};
+export const metadata: Metadata={title:"How to Find QC Photos by Product Link or Keyword | FindQCs",description:"Learn how to find useful QC photos, verify a product match and avoid confusing similar-item images with evidence for the exact listing.",alternates:{canonical:"/guides/warehouse-lighting/"}};
 
 export default function FindQcGuide(){
- const schema={"@context":"https://schema.org","@type":"Article",headline:"How to Find QC Photos by Product Link or Keyword",description:"A practical workflow for finding and validating product QC photos.",author:{"@type":"Organization",name:"FindQCs"},mainEntityOfPage:"https://findqcs.net/guides/warehouse-lighting"};
- return <EditorialPage eyebrow="QC SEARCH / 10 MIN READ" title="How to find QC photos that match the product." intro="A result is useful only when you know what it matches. Start with the product link, widen the search carefully, then verify every candidate against the source listing.">
+ const schema={"@context":"https://schema.org","@type":"Article",headline:"How to Find QC Photos by Product Link or Keyword",description:"A practical workflow for finding and validating product QC photos.",image:"https://findqcs.net/og.png",datePublished:"2026-08-26",dateModified:"2026-08-26",author:{"@type":"Organization",name:"FindQCs",url:"https://findqcs.net/"},publisher:{"@type":"Organization",name:"FindQCs",logo:{"@type":"ImageObject",url:"https://findqcs.net/findqc-logo.png"}},mainEntityOfPage:{"@type":"WebPage","@id":"https://findqcs.net/guides/warehouse-lighting/"}};
+ return <EditorialPage eyebrow="QC SEARCH / 10 MIN READ" title="How to find QC photos that match the product." intro="A result is useful only when you know what it matches. Start with the product link, widen the search carefully, then verify every candidate against the source listing." breadcrumbs={[["Guides","/guides/"],["Product Link and Keyword Guide","/guides/warehouse-lighting/"]]}>
  <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(schema)}}/>
  <div className="prose standalone">
  <p className="lead">People often search for “QC finder,” “QC photos” or a product name because seller images do not show the exact item that reached a warehouse. The difficult part is not finding a picture. It is proving that the picture belongs to the same listing, variation or production batch you are considering.</p>

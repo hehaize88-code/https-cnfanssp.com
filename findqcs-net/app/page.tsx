@@ -1,8 +1,7 @@
 "use client";
 
-import { FormEvent, useEffect, useState } from "react";
-
-type Lang = "en" | "de" | "fr" | "es" | "it";
+import { FormEvent, useState } from "react";
+import { changeLanguage, type Lang, useLanguage } from "./components/language";
 
 const copy = {
   en: {
@@ -69,11 +68,11 @@ const categories = [
 ];
 
 const extra = {
-  en:{connected:"Catalogue connected",languages:"Interface languages",account:"Account required",popular:"Popular",reading:"Reading room",readingTitle:"Learn what photos can—and cannot—prove.",fullTitle:"How to read QC photos before you buy",fullDesc:"A complete inspection sequence for shape, stitching, measurements, color and visible defects.",read:"Read the guide",light:"Warehouse lighting without guesswork",size:"Size charts and measurement photos",open:"Open",all:"View all questions",independent:"Independent",railNote:"Product research before purchase.",index:"QC research index",inspect:"Inspect",directory:"Directory",current:"Current index",method:"Field method",reference:"Reference",item:"Item",type:"Type",price:"Price",action:"Action",productType:"Jersey"},
-  de:{connected:"Katalog verbunden",languages:"Sprachen",account:"Konto erforderlich",popular:"Beliebt",reading:"Leseraum",readingTitle:"Was Fotos zeigen können – und was nicht.",fullTitle:"QC-Fotos vor dem Kauf richtig lesen",fullDesc:"Eine vollständige Prüfreihenfolge für Form, Nähte, Maße, Farbe und sichtbare Mängel.",read:"Ratgeber lesen",light:"Lagerbeleuchtung richtig beurteilen",size:"Größentabellen und Messfotos",open:"Öffnen",all:"Alle Fragen anzeigen",independent:"Unabhängig",railNote:"Produktrecherche vor dem Kauf.",index:"QC-Rechercheindex",inspect:"Prüfen",directory:"Verzeichnis",current:"Aktueller Index",method:"Prüfmethode",reference:"Referenz",item:"Artikel",type:"Typ",price:"Preis",action:"Aktion",productType:"Trikot"},
-  fr:{connected:"Catalogue connecté",languages:"Langues",account:"Compte requis",popular:"Populaire",reading:"Bibliothèque",readingTitle:"Ce que les photos peuvent prouver — et leurs limites.",fullTitle:"Bien lire les photos QC avant l’achat",fullDesc:"Une méthode complète pour la forme, les coutures, les mesures, la couleur et les défauts visibles.",read:"Lire le guide",light:"Comprendre l’éclairage d’entrepôt",size:"Tailles et photos de mesure",open:"Ouvrir",all:"Voir toutes les questions",independent:"Indépendant",railNote:"Recherche produit avant achat.",index:"Index de recherche QC",inspect:"Inspecter",directory:"Répertoire",current:"Index actuel",method:"Méthode terrain",reference:"Référence",item:"Article",type:"Type",price:"Prix",action:"Action",productType:"Maillot"},
-  es:{connected:"Catálogo conectado",languages:"Idiomas",account:"Cuenta necesaria",popular:"Popular",reading:"Sala de lectura",readingTitle:"Lo que las fotos pueden demostrar y lo que no.",fullTitle:"Cómo leer fotos QC antes de comprar",fullDesc:"Una secuencia completa para revisar forma, costuras, medidas, color y defectos visibles.",read:"Leer la guía",light:"Entender la iluminación del almacén",size:"Tallas y fotos de medidas",open:"Abrir",all:"Ver todas las preguntas",independent:"Independiente",railNote:"Investigación antes de comprar.",index:"Índice de investigación QC",inspect:"Revisar",directory:"Directorio",current:"Índice actual",method:"Método de campo",reference:"Referencia",item:"Artículo",type:"Tipo",price:"Precio",action:"Acción",productType:"Camiseta"},
-  it:{connected:"Catalogo collegato",languages:"Lingue",account:"Account richiesto",popular:"Popolare",reading:"Sala lettura",readingTitle:"Cosa possono dimostrare le foto — e cosa no.",fullTitle:"Come leggere le foto QC prima dell’acquisto",fullDesc:"Una sequenza completa per forma, cuciture, misure, colore e difetti visibili.",read:"Leggi la guida",light:"Capire la luce del magazzino",size:"Taglie e foto delle misure",open:"Apri",all:"Vedi tutte le domande",independent:"Indipendente",railNote:"Ricerca prodotto prima dell’acquisto.",index:"Indice di ricerca QC",inspect:"Controlla",directory:"Elenco",current:"Indice attuale",method:"Metodo pratico",reference:"Riferimento",item:"Articolo",type:"Tipo",price:"Prezzo",action:"Azione",productType:"Maglia"},
+  en:{connected:"Catalogue connected",languages:"Interface languages",account:"Account required",popular:"Popular",reading:"Reading room",readingTitle:"Learn what photos can—and cannot—prove.",fullTitle:"How to read QC photos before you buy",fullDesc:"A complete inspection sequence for shape, stitching, measurements, color and visible defects.",read:"Read the guide",light:"Match QC photos to a product link",size:"Size charts and measurement photos",open:"Open",all:"View all questions",independent:"Independent",railNote:"Product research before purchase.",index:"QC research index",inspect:"Inspect",directory:"Directory",current:"Current index",method:"Field method",reference:"Reference",item:"Item",type:"Type",price:"Price",action:"Action",productType:"Jersey",menu:"Menu"},
+  de:{connected:"Katalog verbunden",languages:"Sprachen",account:"Konto erforderlich",popular:"Beliebt",reading:"Leseraum",readingTitle:"Was Fotos zeigen können – und was nicht.",fullTitle:"QC-Fotos vor dem Kauf richtig lesen",fullDesc:"Eine vollständige Prüfreihenfolge für Form, Nähte, Maße, Farbe und sichtbare Mängel.",read:"Ratgeber lesen",light:"QC-Fotos einem Produktlink zuordnen",size:"Größentabellen und Messfotos",open:"Öffnen",all:"Alle Fragen anzeigen",independent:"Unabhängig",railNote:"Produktrecherche vor dem Kauf.",index:"QC-Rechercheindex",inspect:"Prüfen",directory:"Verzeichnis",current:"Aktueller Index",method:"Prüfmethode",reference:"Referenz",item:"Artikel",type:"Typ",price:"Preis",action:"Aktion",productType:"Trikot",menu:"Menü"},
+  fr:{connected:"Catalogue connecté",languages:"Langues",account:"Compte requis",popular:"Populaire",reading:"Bibliothèque",readingTitle:"Ce que les photos peuvent prouver — et leurs limites.",fullTitle:"Bien lire les photos QC avant l’achat",fullDesc:"Une méthode complète pour la forme, les coutures, les mesures, la couleur et les défauts visibles.",read:"Lire le guide",light:"Associer les photos QC au lien produit",size:"Tailles et photos de mesure",open:"Ouvrir",all:"Voir toutes les questions",independent:"Indépendant",railNote:"Recherche produit avant achat.",index:"Index de recherche QC",inspect:"Inspecter",directory:"Répertoire",current:"Index actuel",method:"Méthode terrain",reference:"Référence",item:"Article",type:"Type",price:"Prix",action:"Action",productType:"Maillot",menu:"Menu"},
+  es:{connected:"Catálogo conectado",languages:"Idiomas",account:"Cuenta necesaria",popular:"Popular",reading:"Sala de lectura",readingTitle:"Lo que las fotos pueden demostrar y lo que no.",fullTitle:"Cómo leer fotos QC antes de comprar",fullDesc:"Una secuencia completa para revisar forma, costuras, medidas, color y defectos visibles.",read:"Leer la guía",light:"Relacionar fotos QC con el enlace",size:"Tallas y fotos de medidas",open:"Abrir",all:"Ver todas las preguntas",independent:"Independiente",railNote:"Investigación antes de comprar.",index:"Índice de investigación QC",inspect:"Revisar",directory:"Directorio",current:"Índice actual",method:"Método de campo",reference:"Referencia",item:"Artículo",type:"Tipo",price:"Precio",action:"Acción",productType:"Camiseta",menu:"Menú"},
+  it:{connected:"Catalogo collegato",languages:"Lingue",account:"Account richiesto",popular:"Popolare",reading:"Sala lettura",readingTitle:"Cosa possono dimostrare le foto — e cosa no.",fullTitle:"Come leggere le foto QC prima dell’acquisto",fullDesc:"Una sequenza completa per forma, cuciture, misure, colore e difetti visibili.",read:"Leggi la guida",light:"Associare le foto QC al link prodotto",size:"Taglie e foto delle misure",open:"Apri",all:"Vedi tutte le domande",independent:"Indipendente",railNote:"Ricerca prodotto prima dell’acquisto.",index:"Indice di ricerca QC",inspect:"Controlla",directory:"Elenco",current:"Indice attuale",method:"Metodo pratico",reference:"Riferimento",item:"Articolo",type:"Tipo",price:"Prezzo",action:"Azione",productType:"Maglia",menu:"Menu"},
 } as const;
 
 const categoryText: Record<Lang, readonly (readonly [string, string])[]> = {
@@ -98,21 +97,26 @@ const products = [
 ];
 
 export default function Home() {
-  const [lang, setLang] = useState<Lang>("en");
+  const lang = useLanguage();
   const [mode, setMode] = useState<"link" | "keyword">("link");
   const [query, setQuery] = useState("");
   const t = copy[lang];
   const x = extra[lang];
 
-  useEffect(() => { const saved = window.localStorage.getItem("findqcs-lang") as Lang | null; if (saved && copy[saved]) setLang(saved); }, []);
-  function changeLang(next: Lang) { setLang(next); window.localStorage.setItem("findqcs-lang", next); document.documentElement.lang = next; }
+  function changeLang(next: Lang) { changeLanguage(next); }
   function submit(e: FormEvent) { e.preventDefault(); const value = query.trim(); const target = value ? `https://www.cnfanssp.com/search.html?keywords=${encodeURIComponent(value)}&channelid=2` : "https://www.cnfanssp.com/AllProducts/"; window.open(target, "_blank", "noopener,noreferrer"); }
+
+  const websiteSchema = { "@context":"https://schema.org", "@type":"WebSite", "@id":"https://findqcs.net/#website", url:"https://findqcs.net/", name:"FindQCs", description:"Independent QC photo guidance and product research." };
+  const organizationSchema = { "@context":"https://schema.org", "@type":"Organization", "@id":"https://findqcs.net/#organization", url:"https://findqcs.net/", name:"FindQCs", logo:{"@type":"ImageObject",url:"https://findqcs.net/findqc-logo.png",width:128,height:128} };
 
   return (
     <main className="workbench-site">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(websiteSchema)}} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(organizationSchema)}} />
       <header className="workbench-header frame">
-        <a className="workbench-brand brand-icon-only" href="#top" aria-label="FindQCs home"><img src="/findqc-logo.png" alt="FindQCs"/></a>
-        <nav aria-label="Primary navigation"><a href="#finder">{t.nav[0]}</a><a href="/categories">{t.nav[1]}</a><a href="/articles">{articleLabel[lang]}</a><a href="/guides/qc-photo-checklist">{t.nav[2]}</a><a href="/faq">{t.nav[3]}</a></nav>
+        <a className="workbench-brand brand-icon-only" href="#top" aria-label="FindQCs home"><img src="/findqc-logo.png" alt="FindQCs" width="128" height="128"/></a>
+        <nav aria-label="Primary navigation"><a href="#finder">{t.nav[0]}</a><a href="/categories/">{t.nav[1]}</a><a href="/articles/">{articleLabel[lang]}</a><a href="/guides/qc-photo-checklist/">{t.nav[2]}</a><a href="/faq/">{t.nav[3]}</a></nav>
+        <details className="mobile-menu"><summary aria-label="Open navigation">{x.menu}</summary><div><a href="#finder">{t.nav[0]}</a><a href="/categories/">{t.nav[1]}</a><a href="/articles/">{articleLabel[lang]}</a><a href="/guides/qc-photo-checklist/">{t.nav[2]}</a><a href="/faq/">{t.nav[3]}</a></div></details>
         <label className="workbench-language"><span>LANG</span><select value={lang} onChange={(e) => changeLang(e.target.value as Lang)} aria-label="Language"><option value="en">English</option><option value="de">Deutsch</option><option value="fr">Français</option><option value="es">Español</option><option value="it">Italiano</option></select></label>
       </header>
 
@@ -132,23 +136,23 @@ export default function Home() {
           <div className="sidebar-status"><span>● {x.connected}</span><b>{t.updated}</b><small>{t.free}</small></div>
           <div className="sidebar-title"><span>QC / 03</span><h2>{t.method}</h2><p>{t.methodSub}</p></div>
           <div className="sidebar-checks">{t.steps.map(([num,title,body])=><article key={num}><span>{num}</span><div><b>{title}</b><p>{body}</p></div></article>)}</div>
-          <a className="sidebar-cta" href="/guides/qc-photo-checklist">{t.guideCta}<span>↗</span></a>
+          <a className="sidebar-cta" href="/guides/qc-photo-checklist/">{t.guideCta}<span>↗</span></a>
           <div className="sidebar-stats"><div><b>10</b><span>{t.sources}</span></div><div><b>05</b><span>{x.languages}</span></div><div><b>0</b><span>{x.account}</span></div></div>
         </aside>
 
         <div className="catalog-results">
           <div className="results-head"><div><span>06 · {x.current}</span><h2>{t.freshTitle}</h2><p>{t.freshSub}</p></div><strong>6 <small>{x.item}</small></strong></div>
-          <div className="work-product-grid">{products.map((product,index)=><a key={product.id} href={`https://www.cnfanssp.com/AllProducts/${product.id}.html`} target="_blank" rel="noopener noreferrer"><div className="work-photo"><img src={product.image} alt={`${product.name} ${t.listing}`} loading="lazy"/><span>0{index+1}</span><i>{x.inspect}</i></div><div className="work-product-meta"><span><small>ID · {product.id}</small><b>{product.name}</b></span><strong>{product.price}</strong></div><div className="work-product-action"><span>{x.productType}</span><b>{t.open} ↗</b></div></a>)}</div>
+          <div className="work-product-grid">{products.map((product,index)=><a key={product.id} href={`https://www.cnfanssp.com/AllProducts/${product.id}.html`} target="_blank" rel="noopener noreferrer"><div className="work-photo"><img src={product.image} alt={`${product.name} ${t.listing}`} loading="lazy" decoding="async" width="800" height="800"/><span>0{index+1}</span><i>{x.inspect}</i></div><div className="work-product-meta"><span><small>ID · {product.id}</small><b>{product.name}</b></span><strong>{product.price}</strong></div><div className="work-product-action"><span>{x.productType}</span><b>{t.open} ↗</b></div></a>)}</div>
         </div>
       </section>
 
       <section className="knowledge-zone">
-        <div className="frame knowledge-grid"><div className="knowledge-intro"><span>{articleLabel[lang]}</span><h2>{x.readingTitle}</h2><a href="/articles">{x.read} ↗</a></div><a href="/guides/qc-photo-checklist" className="knowledge-feature"><span>12 MIN</span><h3>{x.fullTitle}</h3><p>{x.fullDesc}</p><b>{x.open} ↗</b></a><div className="knowledge-stack"><a href="/guides/warehouse-lighting"><span>06 MIN</span><b>{x.light}</b><i>↗</i></a><a href="/guides/size-and-measurements"><span>07 MIN</span><b>{x.size}</b><i>↗</i></a></div></div>
+        <div className="frame knowledge-grid"><div className="knowledge-intro"><span>{articleLabel[lang]}</span><h2>{x.readingTitle}</h2><a href="/articles/">{x.read} ↗</a></div><a href="/guides/qc-photo-checklist/" className="knowledge-feature"><span>12 MIN</span><h3>{x.fullTitle}</h3><p>{x.fullDesc}</p><b>{x.open} ↗</b></a><div className="knowledge-stack"><a href="/guides/warehouse-lighting/"><span>10 MIN</span><b>{x.light}</b><i>↗</i></a><a href="/guides/size-and-measurements/"><span>11 MIN</span><b>{x.size}</b><i>↗</i></a></div></div>
       </section>
 
-      <section id="faq" className="work-faq frame"><div className="work-faq-intro"><span>FAQ / 04</span><h2>{t.faqTitle}</h2><p>{t.faqSub}</p><a href="/faq">{x.all} ↗</a></div><div className="work-faq-list">{t.faqs.map(([q,a],i)=><details key={q} open={i===0}><summary><span>0{i+1}</span>{q}<b>+</b></summary><p>{a}</p></details>)}</div></section>
+      <section id="faq" className="work-faq frame"><div className="work-faq-intro"><span>FAQ / 04</span><h2>{t.faqTitle}</h2><p>{t.faqSub}</p><a href="/faq/">{x.all} ↗</a></div><div className="work-faq-list">{t.faqs.map(([q,a],i)=><details key={q} open={i===0}><summary><span>0{i+1}</span>{q}<b>+</b></summary><p>{a}</p></details>)}</div></section>
 
-      <footer className="workbench-footer frame"><a className="workbench-brand" href="#top"><img src="/findqc-logo.png" alt=""/><span><b>FindQCs</b><small>{t.footer}</small></span></a><nav><a href="/articles">{articleLabel[lang]}</a><a href="/privacy">{footerLabels[lang][0]}</a><a href="/disclaimer">{footerLabels[lang][1]}</a></nav></footer>
+      <footer className="workbench-footer frame"><a className="workbench-brand" href="#top"><img src="/findqc-logo.png" alt="" width="128" height="128"/><span><b>FindQCs</b><small>{t.footer}</small></span></a><nav><a href="/articles/">{articleLabel[lang]}</a><a href="/privacy/">{footerLabels[lang][0]}</a><a href="/disclaimer/">{footerLabels[lang][1]}</a></nav></footer>
     </main>
   );
 }

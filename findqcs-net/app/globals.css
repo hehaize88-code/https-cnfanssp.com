@@ -51,3 +51,21 @@
  .work-faq{gap:8px;padding-top:14px;padding-bottom:14px}.work-faq-intro h2{font-size:21px;margin:5px 0}.work-faq-intro p{font-size:7px}.work-faq-intro a{margin-top:4px;padding:6px 8px;font-size:6px}.work-faq-list summary{min-height:34px;font-size:8px;grid-template-columns:18px 1fr 12px;gap:5px}.work-faq-list details p{font-size:7px;margin:0 14px 7px 23px}.workbench-footer{min-height:55px}.workbench-footer nav a{font-size:6px}
  .site-header{min-height:52px;grid-template-columns:auto 1fr auto;gap:7px}.site-header nav{display:none}.subpage-language{justify-self:end}.subpage-language span{display:none}.subpage-language select{padding:6px}.back-home{display:none}.editorial-hero{padding:26px 0 17px}.editorial-hero h1{font-size:34px;margin:12px 0}.editorial-content{padding-top:18px;padding-bottom:38px}
 }
+
+/* SEO and accessibility refinements without changing the page structure */
+.directory-copy{margin-top:38px;padding-top:28px;border-top:1px solid #cbc9c0}.directory-copy h2{margin-top:30px}.mobile-menu{display:none;position:relative}.mobile-menu summary{list-style:none}.mobile-menu summary::-webkit-details-marker{display:none}.work-photo img{aspect-ratio:1/1}.brand img,.workbench-brand img{aspect-ratio:1/1}
+a:focus-visible,button:focus-visible,summary:focus-visible,select:focus-visible,input:focus-visible{outline:3px solid var(--bench-orange,#ff7043);outline-offset:3px}
+
+@media(max-width:650px){
+ .workbench-header nav,.site-header nav{display:none}.mobile-menu{display:block;justify-self:end;z-index:50}.mobile-menu summary{cursor:pointer;border:1px solid #17213a;background:#fffdf7;color:#17213a;padding:8px 9px;font-size:10px;font-weight:900;text-transform:uppercase}.mobile-menu[open] summary{background:#17213a;color:#fff}.mobile-menu>div{position:absolute;right:0;top:calc(100% + 7px);min-width:180px;padding:6px;background:#fffdf7;border:1px solid #17213a;box-shadow:5px 5px 0 #ff7043;display:grid}.mobile-menu>div a{padding:10px 9px;border-bottom:1px solid #d4d2c9;text-decoration:none;font-size:12px;font-weight:800}.mobile-menu>div a:last-child{border-bottom:0}
+ .workbench-language select{width:70px;height:34px;padding:5px 6px;font-size:10px}.subpage-language select{font-size:11px;min-width:78px}
+ .command-copy>span,.sidebar-title>span,.knowledge-intro>span,.work-faq-intro>span{font-size:9px}.command-copy p{font-size:12px;line-height:1.45}.command-tabs button{font-size:10px}.command-search input{font-size:13px}.command-search form>button{font-size:9px}.quick-terms>span{font-size:9px}.quick-terms button{font-size:10px;padding:4px 7px}
+ .category-filter>span{font-size:9px}.category-filter a{min-height:42px;padding:6px;font-size:10px}.category-filter b{font-size:11px}
+ .sidebar-status>span,.sidebar-status>b,.sidebar-status>small{font-size:9px}.sidebar-title p{font-size:10px;line-height:1.45}.sidebar-checks article>span{font-size:9px}.sidebar-checks b{font-size:11px}.sidebar-checks p{font-size:10px;line-height:1.4}.sidebar-cta{font-size:9px;padding:9px}.sidebar-stats span{font-size:8px}.sidebar-stats b{font-size:14px}
+ .results-head>div>span{font-size:9px}.results-head p{font-size:11px;line-height:1.45}.results-head>strong small{font-size:9px}.work-product-grid{grid-template-columns:repeat(2,1fr);gap:7px}.work-photo{height:138px}.work-photo>span{font-size:8px;padding:4px}.work-product-meta small{display:block;font-size:9px}.work-product-meta b{font-size:12px}.work-product-meta strong{font-size:11px}.work-product-action span,.work-product-action b{font-size:9px}
+ .knowledge-intro a,.knowledge-feature>span,.knowledge-stack a>span,.knowledge-feature>b{font-size:9px}.knowledge-feature p{font-size:11px;line-height:1.45}.knowledge-stack a>b{font-size:12px;line-height:1.25}
+ .work-faq-intro p{font-size:11px;line-height:1.5}.work-faq-intro a{font-size:9px}.work-faq-list summary{min-height:45px;font-size:12px}.work-faq-list summary>span{font-size:9px}.work-faq-list details p{font-size:11px;line-height:1.5;margin:0 18px 12px 23px}.workbench-footer nav a{font-size:9px}
+ .directory-copy{margin-top:28px;padding-top:20px}.editorial-hero>p:last-child{font-size:14px;line-height:1.55}.editorial-content{padding-bottom:48px}
+}
+
+@media(max-width:380px){.work-photo{height:124px}.workbench-language select{width:62px}.mobile-menu summary{padding-inline:7px}.category-filter a{font-size:9px}}

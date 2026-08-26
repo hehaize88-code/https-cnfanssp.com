@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { EditorialPage } from "../../components/EditorialPage";
 
-export const metadata: Metadata = { title: "How to Read QC Photos: Complete Checklist | FindQCs", description: "A practical QC photo checklist covering product match, measurements, shape, stitching, materials, labels, color and visible defects.", alternates: { canonical: "/guides/qc-photo-checklist" } };
+export const metadata: Metadata = { title: "How to Read QC Photos: Complete Checklist | FindQCs", description: "A practical QC photo checklist covering product match, measurements, shape, stitching, materials, labels, color and visible defects.", alternates: { canonical: "/guides/qc-photo-checklist/" } };
 
 const faq = [
   ["How many QC photos are enough?", "There is no universal number. You need enough angles to see the front, back, sides, key details, size label and any area where a defect is likely."],
@@ -11,9 +11,9 @@ const faq = [
 ];
 
 export default function Checklist(){
-  const schema = { "@context":"https://schema.org", "@type":"Article", headline:"How to Read QC Photos Before You Buy", description:"A practical, repeatable QC photo inspection checklist.", author:{"@type":"Organization",name:"FindQCs"}, mainEntityOfPage:"https://findqcs.net/guides/qc-photo-checklist" };
+  const schema = { "@context":"https://schema.org", "@type":"Article", headline:"How to Read QC Photos Before You Buy", description:"A practical, repeatable QC photo inspection checklist.", image:"https://findqcs.net/og.png", datePublished:"2026-08-26", dateModified:"2026-08-26", author:{"@type":"Organization",name:"FindQCs",url:"https://findqcs.net/"}, publisher:{"@type":"Organization",name:"FindQCs",logo:{"@type":"ImageObject",url:"https://findqcs.net/findqc-logo.png"}}, mainEntityOfPage:{"@type":"WebPage","@id":"https://findqcs.net/guides/qc-photo-checklist/"} };
   const faqSchema = { "@context":"https://schema.org", "@type":"FAQPage", mainEntity:faq.map(([q,a])=>({"@type":"Question",name:q,acceptedAnswer:{"@type":"Answer",text:a}})) };
-  return <EditorialPage eyebrow="QC GUIDE / 12 MIN READ" title="How to read QC photos before you buy." intro="A QC photo is evidence, not a verdict. This checklist helps you separate visible facts from assumptions and inspect the same details in the same order every time.">
+  return <EditorialPage eyebrow="QC GUIDE / 12 MIN READ" title="How to read QC photos before you buy." intro="A QC photo is evidence, not a verdict. This checklist helps you separate visible facts from assumptions and inspect the same details in the same order every time." breadcrumbs={[["Guides","/guides/"],["QC Photo Checklist","/guides/qc-photo-checklist/"]]}>
     <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(schema)}}/><script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(faqSchema)}}/>
     <div className="article-layout"><aside className="toc"><strong>ON THIS PAGE</strong><a href="#match">1. Match the order</a><a href="#overview">2. Start wide</a><a href="#details">3. Inspect details</a><a href="#measure">4. Measure fit</a><a href="#color">5. Judge color</a><a href="#decision">6. Make a decision</a></aside>
     <div className="prose">
@@ -43,7 +43,7 @@ export default function Checklist(){
       <h2>Keep a simple evidence log</h2><p>A short written record makes repeated QC review more accurate. Save the item ID, selected variation, date, the photos reviewed and the specific observation that affected your decision. Use neutral descriptions such as “right sleeve measures approximately 2 cm shorter in the supplied photo” rather than “bad quality.” Neutral language can be checked again when a clearer image appears.</p><p>The log also prevents hindsight from changing the story. If the item later arrives and looks different under normal light, you can compare the outcome with what the warehouse images actually showed. Over several purchases, this teaches you which photo conditions, product categories and measurement differences matter most to you. It is more useful than copying another buyer’s tolerance because QC decisions are partly personal.</p>
       <ol><li>Confirm product, color, size and quantity.</li><li>Compare the overall silhouette from a centered angle.</li><li>Check symmetry and major construction lines.</li><li>Inspect seams, print, embroidery, hardware and edges.</li><li>Look for stains, damage and missing parts.</li><li>Read measurement photos carefully.</li><li>Compare color across more than one image.</li><li>Separate facts from assumptions.</li><li>Request another photo when the decision depends on an unclear angle.</li><li>Open the source listing again before making the final choice.</li></ol>
       <div className="article-faq"><h2>Frequently asked questions</h2>{faq.map(([q,a])=><div key={q}><h3>{q}</h3><p>{a}</p></div>)}</div>
-      <Link className="article-cta" href="/categories">Browse product categories <span>→</span></Link>
+      <Link className="article-cta" href="/categories/">Browse product categories <span>→</span></Link>
     </div></div>
   </EditorialPage>;
 }
