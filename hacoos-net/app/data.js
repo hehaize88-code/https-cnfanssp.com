@@ -1,0 +1,362 @@
+export const SITE_URL = "https://hacoos.net";
+export const DESTINATION = "https://cnfanssp.com";
+export const CATALOG_REVIEW = { iso: "2026-08-26", label: "August 26, 2026" };
+export const SEARCH_INDEXING_ENABLED = true;
+
+export const categories = [
+  {
+    slug: "shoes",
+    name: "Shoes",
+    eyebrow: "Fit first",
+    count: "60+ edits",
+    destination: "/shoes/",
+    image: "/products/shoe-performance.webp",
+    description: "Browse footwear finds with a practical focus on measurements, shape, material notes and current listing details.",
+    checklist: ["Compare insole length, not only the printed size", "Check both sides and the heel from matching angles", "Confirm the live listing before making a decision"],
+  },
+  {
+    slug: "headwear",
+    name: "Headwear",
+    eyebrow: "Top it off",
+    count: "Caps, hats & beanies",
+    destination: "/headwear/",
+    image: "/products/headwear-edit.webp",
+    description: "Explore caps, hats and beanies with practical checks for fit, construction, material and current options.",
+    checklist: ["Compare head circumference and crown depth", "Confirm whether the style is fitted, adjustable or stretch", "Inspect the brim, seams and embroidery on the selected option"],
+  },
+  {
+    slug: "hoodies-sweaters",
+    name: "Hoodies & Sweaters",
+    eyebrow: "Layer ready",
+    count: "Seasonal layers",
+    destination: "/hoodies-sweaters/",
+    image: "/products/knit-everyday.webp",
+    description: "Explore hoodies, knits and pullovers through one focused Hacoo spreadsheet-style category route.",
+    checklist: ["Check chest width and total length", "Look for clear fabric-weight information", "Review cuffs, hems and graphic alignment"],
+  },
+  {
+    slug: "t-shirts",
+    name: "T-Shirts",
+    eyebrow: "Everyday edit",
+    count: "Short sleeves",
+    destination: "/t-shirts/",
+    image: "/products/tee-edit.webp",
+    description: "Find tees and polo styles, then verify the latest color, size and availability on the live catalog.",
+    checklist: ["Use shoulder, chest and length measurements", "Check print placement at full and close range", "Confirm color under neutral lighting when possible"],
+  },
+  {
+    slug: "jackets",
+    name: "Jackets",
+    eyebrow: "Outer layer",
+    count: "Light to insulated",
+    destination: "/jackets/",
+    image: "/products/jacket-edit.webp",
+    description: "Browse outerwear and seasonal layers with guidance for sizing, construction and shipping-volume checks.",
+    checklist: ["Leave room for the layers you plan to wear", "Inspect zipper tracks, pockets and seam joins", "Consider packed volume before checkout"],
+  },
+  {
+    slug: "pants-shorts",
+    name: "Pants & Shorts",
+    eyebrow: "Better proportions",
+    count: "Bottoms edit",
+    destination: "/pants-shorts/",
+    image: "/products/shorts-utility.webp",
+    description: "A measurement-led selection of trousers, shorts and casual bottoms from the current destination catalog.",
+    checklist: ["Compare waist, rise, inseam and leg opening", "Check pocket and panel symmetry", "Read whether the waist is fixed or elasticated"],
+  },
+  {
+    slug: "accessories",
+    name: "Accessories",
+    eyebrow: "Small details",
+    count: "Finishing pieces",
+    destination: "/accessories/",
+    image: "/products/accessory-edit.webp",
+    description: "Explore smaller finds through a faster route, while still checking dimensions, material and listing status.",
+    checklist: ["Check exact dimensions instead of relying on photos", "Inspect closures, edges and moving parts", "Review material descriptions carefully"],
+  },
+  {
+    slug: "electronics",
+    name: "Electronics",
+    eyebrow: "Specs matter",
+    count: "Devices & extras",
+    destination: "/electronics/",
+    image: "/products/electronics-edit.webp",
+    description: "Browse electronics and device accessories with extra attention to versions, compatibility and package contents.",
+    checklist: ["Confirm plug, voltage and region compatibility", "Check the exact model and included accessories", "Review warranty and return terms on the destination"],
+  },
+];
+
+export const categoryResearch = {
+  shoes: {
+    primaryCheck: "Foot and internal length",
+    liveCheck: "Selected size and current stock",
+    intro: "Footwear listings are easiest to compare when the same measurements and views are available for every option. Start with fit evidence, then compare shape and construction before opening the current catalog page.",
+    comparison: [
+      ["Fit reference", "Measure foot length and a comfortable shoe's internal length. Treat regional size conversions as a starting point, not a final answer."],
+      ["Shape and width", "Compare toe shape, heel structure and visible width. Two shoes with the same printed size can still fit differently."],
+      ["Construction", "Check the sole edge, stitching, panels and both shoes from matching angles. Look for consistency rather than one flattering image."],
+    ],
+    reviewRows: [
+      ["Foot and internal length", "Record both values in millimetres using the same start and end points.", "Size chart or a clearly photographed insole measurement."],
+      ["Shape and width", "Note toe-box shape, visible width and heel structure.", "Matching top, side and rear views of the selected pair."],
+      ["Construction", "Check outsole edge, panel joins, stitching and left/right consistency.", "Comparable close views in neutral light rather than one promotional angle."],
+      ["Selected option", "Save the exact colour, size and whether a box is included.", "Current option selector, stock state and package information."],
+    ],
+    mistakes: ["Choosing only from the printed EU, UK or US size", "Comparing different colorways or options as if they were identical", "Forgetting that boxes can affect packed shipping volume"],
+    faqs: [["Does a size conversion guarantee fit?", "No. Use the live measurements and compare them with footwear you already own."], ["Why recheck the destination page?", "Sizes, colors, images and availability can change after a discovery page is published."], ["What should useful shoe QC photos show?", "Look for both shoes together plus matching top, side, rear, outsole and measurement views."], ["What if the verified product detail changes?", "Use the live-search fallback, match the image and option again, and do not assume a replacement result is identical."]],
+  },
+  headwear: {
+    primaryCheck: "Circumference and crown depth",
+    liveCheck: "Closure type and selected style",
+    intro: "Headwear looks simple in a product grid, but fit depends on circumference, crown depth, structure and closure. Use dimensions and construction details before relying on a model photograph.",
+    comparison: [
+      ["Head dimensions", "Compare head circumference with the stated fit range, then check crown depth when that measurement is available."],
+      ["Adjustment system", "Confirm whether the item is fitted, stretch, snapback, strapback or another adjustable construction."],
+      ["Finish details", "Inspect brim shape, panel seams, embroidery alignment and the inside band on the exact option shown."],
+    ],
+    reviewRows: [
+      ["Head circumference", "Record the user's circumference and the listing's fit range in centimetres.", "Size chart or a visible tape measurement around the band."],
+      ["Crown and brim", "Note crown depth, brim length and whether the structure is soft or rigid.", "Front, side and interior views of the selected style."],
+      ["Closure or stretch", "Record fitted size, adjustment range or stretch construction.", "Rear closure and inner-band photographs."],
+      ["Decoration and seams", "Check the exact placement, edge finish and panel symmetry.", "Close photographs of embroidery, print and high-stress seams."],
+    ],
+    mistakes: ["Assuming one-size means the same fit for everyone", "Ignoring crown depth and brim shape", "Checking embroidery on a different color option"],
+    faqs: [["What measurement matters most for hats?", "Head circumference is the first reference, but crown depth and adjustment range also affect fit."], ["Are product photos enough to judge structure?", "Not always. Look for side, rear and interior views when the listing provides them."], ["What should headwear QC photos include?", "Useful sets show front, side, rear, interior band, closure and close decoration views for the same option."], ["What if the verified product detail changes?", "Open the category route or live-search fallback and rematch the selected colour, shape and decoration before using it."]],
+  },
+  "hoodies-sweaters": {
+    primaryCheck: "Chest, length and fabric weight",
+    liveCheck: "Exact color, size and lining",
+    intro: "Hoodies and knitwear need more than a familiar size letter. Compare garment dimensions, intended silhouette, fabric weight and finishing details on the selected option.",
+    comparison: [
+      ["Garment measurements", "Compare chest width, shoulder, sleeve and total length with a layer that already fits the way you prefer."],
+      ["Fabric and warmth", "Look for material composition, knit or fleece construction and useful weight information rather than guessing from a photo."],
+      ["Graphics and finishing", "Check cuffs, hem, pocket joins, drawcords and graphic placement in both full and close views."],
+    ],
+    reviewRows: [
+      ["Flat measurements", "Record chest, shoulder, sleeve and body length in centimetres.", "A labelled flat-garment chart using consistent measurement points."],
+      ["Fabric", "Note composition, stated weight and whether the interior is fleece, loopback or knit.", "Material label, close texture view and interior photograph."],
+      ["Finish", "Check cuffs, hem, pockets, drawcords and graphic alignment.", "Full front/back views plus close photographs of joins and decoration."],
+      ["Selected option", "Save the exact size, colour and intended fit.", "Current option selector and the matching measurement chart."],
+    ],
+    mistakes: ["Using body size instead of garment measurements", "Treating every oversized description as the same cut", "Ignoring fabric weight and interior finish"],
+    faqs: [["How much extra room should a hoodie have?", "That depends on the intended fit and layering. Compare with a hoodie you already wear comfortably."], ["Can colors differ between images?", "Yes. Lighting and screens vary, so confirm the selected color and all available listing views."], ["What should sweatshirt QC photos show?", "Check full front and back views, measurements, inside fabric, cuffs, hem, pockets and any decoration."], ["What if the verified product detail changes?", "Use the search fallback and only continue after the live option, measurements and images match the reference again."]],
+  },
+  "t-shirts": {
+    primaryCheck: "Shoulder, chest and length",
+    liveCheck: "Fabric, print and selected color",
+    intro: "T-shirts and polos are best compared with flat garment measurements. Fit, fabric and graphic placement can vary even when two listings use the same size label.",
+    comparison: [
+      ["Flat measurements", "Record shoulder width, chest width and length from a shirt you own, using the same method shown by the listing."],
+      ["Fabric information", "Check composition and available weight or construction notes. Photography alone cannot establish thickness or feel."],
+      ["Print or embroidery", "Use full views for placement and close views for edges, stitching and surface finish on the chosen color."],
+    ],
+    reviewRows: [
+      ["Shoulder, chest and length", "Measure a well-fitting shirt flat and record the same points in centimetres.", "A chart showing the garment measurement method, not only size letters."],
+      ["Fabric and collar", "Note composition, available fabric weight and collar construction.", "Material label plus close views of fabric, neckline and placket when present."],
+      ["Print or embroidery", "Record placement, scale and finish on the chosen colour.", "Full front/back and close decoration photographs of the same option."],
+      ["Selected option", "Save exact size, colour and cut before leaving the listing.", "Current selector and matching chart or option-specific notes."],
+    ],
+    mistakes: ["Selecting by S, M or L without measurements", "Judging fabric thickness from a dark promotional image", "Checking a print that belongs to another option"],
+    faqs: [["Why measure a T-shirt flat?", "Flat measurements are easier to reproduce and compare with most garment size charts."], ["Should I expect every color to fit the same?", "Do not assume it. Confirm the current chart and option details on the destination page."], ["What should T-shirt QC photos show?", "Use full front and back views, flat measurements, collar, seams and close decoration views for the selected option."], ["What if the verified product detail changes?", "Use the fallback search and confirm the current image, title, option and chart before treating a result as the same shirt."]],
+  },
+  jackets: {
+    primaryCheck: "Layering room and sleeve length",
+    liveCheck: "Lining, hardware and packed size",
+    intro: "Jackets combine fit, hardware, lining and shipping-volume considerations. Compare them with the layers you intend to wear underneath, not only with a lightweight top.",
+    comparison: [
+      ["Layered fit", "Measure a jacket that already works over your usual layers, including chest, shoulder, sleeve and back length."],
+      ["Hardware and seams", "Inspect zipper tracks, snaps, pocket openings, lining joins and high-stress seams in the available detail views."],
+      ["Packed volume", "Bulky or insulated outerwear can occupy more space than its weight suggests, so check current shipping information."],
+    ],
+    reviewRows: [
+      ["Layered measurements", "Record chest, shoulder, sleeve and back length from a jacket worn with usual layers.", "Flat-garment chart with clearly defined measurement points."],
+      ["Hardware", "Note closure type and inspect zippers, snaps, pockets and adjusters.", "Close photographs of hardware and the open/closed positions."],
+      ["Lining and seams", "Record lining material and inspect high-stress joins.", "Interior, cuff, hem and seam close-ups for the same option."],
+      ["Weight and package", "Save stated weight, size and any packed-dimension information.", "Current listing or shipping estimate rather than an old screenshot."],
+    ],
+    mistakes: ["Comparing jacket measurements with a fitted T-shirt", "Ignoring the lining and closure details", "Assuming product weight predicts packed volume"],
+    faqs: [["Should a jacket use the same measurements as a top?", "Use a well-fitting jacket as the reference when you plan to wear layers underneath."], ["Why does packed size matter?", "Outerwear can be bulky, which may affect the shipping methods and estimates shown later."], ["What should jacket QC photos show?", "Look for full exterior and interior views plus measurements, closures, pockets, lining and seam close-ups."], ["What if the verified product detail changes?", "Use the search fallback and rematch the silhouette, panels, hardware and selected size before relying on it."]],
+  },
+  "pants-shorts": {
+    primaryCheck: "Waist, rise, inseam and opening",
+    liveCheck: "Waist construction and selected fit",
+    intro: "Bottoms require a consistent measurement method. Waist alone cannot describe the fit; rise, inseam, thigh and leg opening all change how a pair sits and moves.",
+    comparison: [
+      ["Waist method", "Confirm whether the chart shows a flat width, full circumference or stretch range for an elasticated waistband."],
+      ["Vertical proportions", "Compare front rise, back rise and inseam with a pair that fits, using the same start and end points."],
+      ["Leg shape", "Use thigh and leg-opening measurements to distinguish straight, tapered, wide and relaxed silhouettes."],
+    ],
+    reviewRows: [
+      ["Waist method", "Record whether the value is flat width, circumference or an elastic range.", "Chart note or a visible tape measurement at the waistband."],
+      ["Rise and inseam", "Measure front rise, back rise and inseam from consistent points.", "Flat front/back measurement photographs for the selected size."],
+      ["Thigh and opening", "Record thigh and leg-opening widths to describe the silhouette.", "Labelled measurements plus a full flat garment view."],
+      ["Selected option", "Save the exact cut, size, colour and waistband construction.", "Current selector and a chart that matches that option."],
+    ],
+    mistakes: ["Doubling a waist value without checking the chart method", "Ignoring rise when comparing overall fit", "Using a model photo instead of the listed dimensions"],
+    faqs: [["Is the listed waist always a circumference?", "No. Some charts show the garment laid flat, so read the measurement method first."], ["Why compare rise as well as inseam?", "Rise affects where the waistband sits and changes the usable leg length and overall proportion."], ["What should bottoms QC photos show?", "Useful sets show flat front/back, waistband, rise, inseam, leg opening, pockets and close seam views."], ["What if the verified product detail changes?", "Use the fallback search and confirm cut, waistband, measurements and selected option before making a new match."]],
+  },
+  accessories: {
+    primaryCheck: "Exact dimensions and closures",
+    liveCheck: "Material description and included parts",
+    intro: "Accessories are often photographed without a reliable sense of scale. Exact dimensions, closure design, moving parts and included pieces are more useful than visual size alone.",
+    comparison: [
+      ["Real dimensions", "Translate the listed length, width and depth into a familiar object or measure the space where the item will be used."],
+      ["Closures and hardware", "Inspect clasps, hinges, zippers, pins and edge finishing, especially where repeated movement creates stress."],
+      ["Material and contents", "Read material descriptions carefully and confirm every included part on the selected live option."],
+    ],
+    reviewRows: [
+      ["Dimensions", "Record length, width, depth and any adjustable range in centimetres.", "Tape measurement or a labelled diagram rather than visual scale alone."],
+      ["Material", "Save the exact material wording and avoid inferring composition from appearance.", "Material label, macro surface view and current listing text."],
+      ["Hardware", "Check clasps, hinges, zippers, pins, edges and repeated-movement points.", "Open/closed views and close photographs of moving parts."],
+      ["Included pieces", "List every component, pouch, cable or spare part that is stated as included.", "Current bundle selector and a complete contents photograph."],
+    ],
+    mistakes: ["Estimating scale from a hand or styled photograph", "Assuming every pictured extra is included", "Treating a material name as proof without checking details"],
+    faqs: [["How can I judge accessory size online?", "Use the exact dimensions and compare them with an object or space you can measure yourself."], ["Are all photographed parts included?", "Not necessarily. Confirm the bundle or option description on the current destination page."], ["What should accessory QC photos show?", "Look for scale measurements, front/back/interior views, closures, edges, hardware and all included pieces."], ["What if the verified product detail changes?", "Use the search fallback and rematch dimensions, material wording, hardware and bundle contents."]],
+  },
+  electronics: {
+    primaryCheck: "Model, power and compatibility",
+    liveCheck: "Exact bundle, region and warranty terms",
+    intro: "Electronics require specification matching before visual comparison. Model revisions, connectors, voltage, region and included accessories can change whether an item is suitable.",
+    comparison: [
+      ["Exact model", "Match the complete model or revision, not only the product family name. Similar-looking versions may support different features."],
+      ["Power and connection", "Confirm voltage, plug, charging standard, connector and device or region compatibility before leaving the guide."],
+      ["Bundle and support", "Check what is included and read the current warranty, return and restricted-item information on the destination."],
+    ],
+    reviewRows: [
+      ["Model and revision", "Record the complete model number, revision and regional version.", "Label, settings screen or packaging photograph that shows the identifier."],
+      ["Power and connectors", "Save voltage, plug, charging standard and every required connector.", "Specification text plus clear port and label photographs."],
+      ["Compatibility", "List supported devices, operating systems, bands or regional requirements.", "Current specification source; do not infer compatibility from appearance."],
+      ["Bundle and terms", "Record included accessories, warranty, returns and restricted-item conditions.", "Current bundle selector and destination terms at the time of review."],
+    ],
+    mistakes: ["Choosing by appearance instead of full model number", "Ignoring regional power or wireless requirements", "Assuming a pictured cable or adapter is included"],
+    faqs: [["Why is the full model number important?", "Different revisions can look alike while using different connectors, standards or included accessories."], ["Can Hacoos confirm compatibility?", "No. Use the manufacturer and current destination specifications as the final reference."], ["What should electronics QC photos show?", "Useful evidence includes the model label, ports, power markings, device screens, included parts and package condition."], ["What if the verified product detail changes?", "Use the live-search fallback and rematch model, revision, connectors and bundle before treating another result as equivalent."]],
+  },
+};
+
+export const products = [
+  { slug: "grey-low-top-sneakers", name: "Grey low-top sneakers", catalogLabel: "shoes-60", listingId: "6045", listingPath: "/AllProducts/6045.html", category: "Shoes", categorySlug: "shoes", image: "/products/live-6045.jpg", tag: "Link verified", query: "grey low top sneakers", focus: "Compare internal length, toe shape, heel construction and the selected colour before relying on the thumbnail." },
+  { slug: "letter-embroidered-beanies", name: "Letter-embroidered beanies", catalogLabel: "Miu Miu letter-embroidered", listingId: "5971", listingPath: "/AllProducts/5971.html", category: "Headwear", categorySlug: "headwear", image: "/products/live-5971.webp", tag: "Link verified", query: "letter embroidered beanies", focus: "Check head circumference, knit stretch, crown depth and embroidery placement on the exact option shown." },
+  { slug: "classic-logo-crew-neck", name: "Classic logo crew-neck", catalogLabel: "Patagonia classic loose-fitting crew neck", listingId: "5974", listingPath: "/AllProducts/5974.html", category: "Sweatshirts", categorySlug: "hoodies-sweaters", image: "/products/live-5974.webp", tag: "Link verified", query: "classic logo crew neck sweatshirt", focus: "Compare chest width, shoulder width, body length, fabric weight and logo alignment on the selected colour." },
+  { slug: "pique-cotton-polo", name: "Piqué cotton polo", catalogLabel: "Gucci pique cotton breathable and versatile short", listingId: "5976", listingPath: "/AllProducts/5976.html", category: "T-Shirts", categorySlug: "t-shirts", image: "/products/live-5976.webp", tag: "Link verified", query: "pique cotton polo", focus: "Check flat garment measurements, collar shape, placket construction and fabric description before choosing a size." },
+  { slug: "colour-block-track-jacket", name: "Colour-block track jacket", catalogLabel: "Celine embroidered chocolate-", listingId: "5981", listingPath: "/AllProducts/5981.html", category: "Jackets", categorySlug: "jackets", image: "/products/live-5981.webp", tag: "Link verified", query: "colour block track jacket", focus: "Review chest and sleeve measurements, zipper alignment, pocket construction and room for intended layers." },
+  { slug: "drawstring-denim-shorts", name: "Drawstring denim shorts", catalogLabel: "Balenciaga new drawstring", listingId: "5983", listingPath: "/AllProducts/5983.html", category: "Pants & Shorts", categorySlug: "pants-shorts", image: "/products/live-5983.webp", tag: "Link verified", query: "drawstring denim shorts", focus: "Compare waist range, rise, inseam, leg opening and drawstring construction on the current option." },
+  { slug: "brown-checkered-mini-bag", name: "Brown checkered mini bag", catalogLabel: "Accessories-60", listingId: "6427", listingPath: "/AllProducts/6427.html", category: "Accessories", categorySlug: "accessories", image: "/products/live-6427.jpg", tag: "Link verified", query: "brown checkered mini bag", focus: "Confirm the bag dimensions, strap drop, hardware finish, closure, lining and included pieces on the current option." },
+  { slug: "compact-rgb-speaker", name: "Compact RGB speaker", catalogLabel: "Electronics-60", listingId: "6547", listingPath: "/AllProducts/6547.html", category: "Electronics", categorySlug: "electronics", image: "/products/live-6547.jpg", tag: "Link verified", query: "compact RGB speaker", focus: "Match the exact model, power input, charging method, wireless specification, battery claim and included accessories." },
+];
+
+const legacyGuides = [
+  {
+    slug: "what-is-a-hacoo-spreadsheet",
+    title: "What Is a Hacoo Spreadsheet?",
+    short: "A clear definition of spreadsheet-style product discovery, what it can help with, and what it cannot verify for you.",
+    read: "5 min",
+  },
+  {
+    slug: "how-to-use-hacoo-spreadsheet",
+    title: "How to Use a Hacoo Spreadsheet",
+    short: "A practical workflow for moving from category discovery to a live product page without losing important details.",
+    read: "7 min",
+  },
+  {
+    slug: "qc-photo-checklist",
+    title: "QC Photo Checklist",
+    short: "Learn which views, measurements and construction details are useful when photographs are available.",
+    read: "8 min",
+  },
+  {
+    slug: "size-guide",
+    title: "Hacoo Size Guide",
+    short: "Why garment measurements beat familiar size labels, with a short method for reducing avoidable sizing mistakes.",
+    read: "6 min",
+  },
+  {
+    slug: "shipping-planning",
+    title: "Plan for Shipping",
+    short: "A planning guide for dimensions, weight, destination rules and live shipping information—without invented delivery promises.",
+    read: "6 min",
+  },
+];
+
+const legacyGuideContent = {
+  "what-is-a-hacoo-spreadsheet": {
+    kicker: "Start with the definition",
+    intro: "A Hacoo spreadsheet is a community phrase for a structured collection of product-discovery links. The useful part is the organization: instead of opening unrelated posts, a visitor can begin with a product category, scan a smaller set of options and continue to a live listing for current information.",
+    sections: [
+      ["What a spreadsheet can do", "It can shorten the discovery stage by grouping links into recognizable categories such as shoes, T-shirts, jackets or accessories. A well-maintained guide can also explain what to measure and which listing details should be checked before a decision."],
+      ["What it cannot guarantee", "A link is not a guarantee of availability, quality, suitability, shipping cost or delivery time. Listings change. Images, options and terms should always be checked on the current destination page."],
+      ["How Hacoos is different", "Hacoos is an independent editorial index rather than an official Hacoo service or a seller. It combines category routes with practical reading, then links to the destination catalog when you want to inspect current listing details."],
+      ["How to judge whether an index is maintained", "Look for a visible review date, category-specific guidance and links that reach a current destination without an unnecessary chain of redirects. A useful index also explains which information came from a live listing and which parts are general editorial guidance."],
+      ["Who benefits from a category-first route", "A category-first directory is useful when you know the product type but still need to compare fit, construction or compatibility. If you already have an exact product identifier, go to the live catalog and use this guide only for the relevant measurement or verification checklist."],
+    ],
+    steps: ["Choose the closest category", "Read the category-specific checklist", "Open the current listing", "Verify the details on the destination"],
+  },
+  "how-to-use-hacoo-spreadsheet": {
+    kicker: "A calmer discovery workflow",
+    intro: "Good spreadsheet browsing is less about opening as many links as possible and more about eliminating unsuitable options early. Use a short, repeatable process so price or photography does not distract from fit, specifications and current availability.",
+    sections: [
+      ["Begin with intent", "Decide whether you are exploring a category, solving a sizing question or looking for a specific type of item. Category pages are faster when the product type is already clear; guides are more useful when a question is blocking the next step."],
+      ["Create a short list", "Open only a few promising listings. Compare the same information across each one: measurements, options, material description, included items and the date you last checked the page."],
+      ["Use the live page as the final reference", "Hacoos provides discovery context. The linked live catalog page is where you should confirm current images, options and availability. If the information is incomplete, pause rather than guessing."],
+      ["Record what you actually compared", "Keep the exact option name, important measurements and the date of your check together. This prevents details from one color, size or model being carried over to another option that only looks similar in the product grid."],
+      ["Avoid false matches", "A familiar thumbnail or shortened title is not enough to identify a product. Match the destination URL, selected option, model or measurement chart and current images before treating two references as the same item."],
+    ],
+    steps: ["Pick one category", "Shortlist two or three listings", "Compare like-for-like details", "Recheck the live destination page"],
+  },
+  "qc-photo-checklist": {
+    kicker: "Look for useful evidence",
+    intro: "When product photographs or quality-control images are available, consistency matters more than a single attractive angle. A useful set should make it possible to compare shape, finish and measurements without relying on assumptions.",
+    sections: [
+      ["Start with the full shape", "Look for front, back and side views taken from a similar distance. For paired items, both sides should be visible together so obvious differences are easier to notice."],
+      ["Inspect construction points", "Move closer to seams, hems, zippers, hardware and printed or embroidered areas. Neutral lighting is helpful because deep shadows can hide edges and surface variation."],
+      ["Match the selected option", "Photographs are only useful when they correspond to the chosen size, color or model. Compare visible labels and measurements with the option shown on the live listing."],
+      ["Keep measurements in context", "A ruler or tape should show both the starting point and the relevant edge. Check whether a value is a flat width, circumference or internal length before comparing it with a chart or an item you own."],
+      ["Use a repeatable decision record", "Note the photo date when available, the option reviewed and any missing view. A short record makes it easier to explain why an item was accepted, rejected or left for further clarification."],
+    ],
+    steps: ["Full front and back", "Both sides or both items", "Detail views of stress points", "Visible measurement reference"],
+  },
+  "size-guide": {
+    kicker: "Measurements before labels",
+    intro: "A familiar size label is not a universal measurement. The most reliable starting point is an item you already own and like: measure it flat, then compare those numbers with the current listing rather than choosing by S, M or L alone.",
+    sections: [
+      ["For tops and jackets", "Record shoulder width, chest width, sleeve length and back length. If you plan to layer clothing underneath, compare with a jacket that already fits that way."],
+      ["For pants and shorts", "Compare waist, rise, inseam and leg opening. Confirm whether the listed waist is a flat width, a full circumference or a range for an elasticated waistband."],
+      ["For footwear", "Use foot length and, where available, the internal length of a comfortable shoe. Leave appropriate room for socks and movement, and do not assume a regional conversion is exact."],
+      ["Use the same measurement method", "A comparison is only useful when both items are measured between the same points. Keep garments flat without stretching, record whether widths need to be doubled and note any elastic range separately."],
+      ["Allow for ease and intended fit", "Body measurements and garment measurements are not interchangeable. A fitted T-shirt, relaxed hoodie and layered jacket need different amounts of room, so compare with an item that already has the silhouette you want."],
+    ],
+    steps: ["Measure a well-fitting item", "Use the same measurement method", "Compare every important dimension", "Ask when the size chart is unclear"],
+  },
+  "shipping-planning": {
+    kicker: "Plan, then verify live terms",
+    intro: "Hacoo’s published shipping page uses destination-dependent estimates, not one universal promise. Use the ranges below as research context only, then verify the current terms shown for your destination and selected service.",
+    sections: [
+      ["Published Hacoo timing", "As checked on August 26, 2026, Hacoo’s public page listed 3–5 business days for processing and an overall receiving estimate of 15–28 days, with destination-specific ranges. Those figures can change and do not apply automatically to a different external listing."],
+      ["Destination ranges vary", "The same public page listed 15–25 days for the UK, France, Germany and Italy; 15–30 days for Spain; and 25–65 days for other countries. Treat these as Hacoo-published estimates, not a Hacoos guarantee."],
+      ["Think about packed size", "Bulky outerwear, footwear boxes and large accessories may occupy more space than their product weight suggests. Packed dimensions can materially affect the available shipping options."],
+      ["Check destination requirements", "Import rules, restricted items, taxes and carrier availability vary by country. Use the checkout or shipping provider's current information for your destination."],
+      ["Keep evidence of the live terms", "Before completing an external transaction, save the applicable product, shipping and return information. Hacoos does not process orders and cannot control third-party terms."],
+      ["Separate an estimate from a live quote", "A general weight, volume or delivery estimate is useful for comparing options, but it is not a carrier quote. Packaging, service level and destination can change the final choices shown later."],
+    ],
+    steps: ["Confirm destination", "Estimate packed weight and volume", "Review live carrier options", "Read current returns and restrictions"],
+  },
+};
+
+export { guides, guideContent } from "./editorial.js";
+
+export const faqs = [
+  ["What is Hacoos?", "Hacoos is an independent product-discovery and editorial guide for people searching Hacoo spreadsheet-style categories, links and buying checklists."],
+  ["Is Hacoos the official Hacoo website?", "No. Hacoos is independent and is not affiliated with, endorsed by or operated by Hacoo or any marketplace."],
+  ["How does Hacoo describe its official platform?", "Hacoo's current public website describes it as an open content-sharing community and discovery ecosystem connecting users and independent creators. Hacoos is a separate editorial guide."],
+  ["Is a Hacoo spreadsheet an official Hacoo feature?", "Hacoo does not present the community phrase as an official product. It generally describes independently organized collections of discovery links, categories and notes."],
+  ["Does Hacoos sell products?", "No. We organize discovery pages and link to external live listings. Any transaction takes place on the destination website under its own terms."],
+  ["Where do the product links go?", "Product cards open a matching Hacoos reference page first. From there, visitors can run a current live catalog search or open the relevant live category without being sent to an expired detail URL."],
+  ["Are listings always available?", "No. External listings, options and availability can change. Always check the current destination page."],
+  ["Does a listing guarantee product quality?", "No. A link or photograph cannot guarantee quality. Use available measurements, listing information and policies to make your own assessment."],
+  ["How should I choose a size?", "Compare the listing measurements with a similar item you already own. Do not rely only on familiar size letters or automatic regional conversions."],
+  ["What shipping time does Hacoo publish?", "The official Shipping & Delivery page checked on August 26, 2026 said processing normally takes 3–5 business days and receiving time is usually about 15–28 days. Current order and destination estimates can differ."],
+  ["Does Hacoos promise shipping times?", "No. Hacoos reports dated official information for research. Delivery depends on destination, carrier, package and current order-specific terms."],
+  ["What does Hacoo publish about returns?", "An official help entry says products eligible for return must be returned within 15 days after delivery and directs users to follow in-app customer-service instructions."],
+  ["How do Hacoo refund or exchange requests start?", "Hacoo's official help centre says to open the order page, choose Refund/Exchange and follow the current instructions. It says review of the application may take 24–72 hours."],
+  ["What if tracking says delivered but the parcel is missing?", "Hacoo advises checking the mailbox and drop-off areas and asking household members or neighbours. If it remains missing, use the order page's Refund/Exchange package-not-received route."],
+  ["Can Hacoos verify authenticity?", "No. Hacoos does not authenticate products. Hacoo publishes an intellectual-property reporting process for suspected infringing content; use the official reporting route for those concerns."],
+];
