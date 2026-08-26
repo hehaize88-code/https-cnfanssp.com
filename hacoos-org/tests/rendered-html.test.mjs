@@ -49,4 +49,12 @@ test("renders indexable production metadata and SEO endpoints", async () => {
   const sitemapXml = await sitemap.text();
   assert.match(sitemapXml, /<loc>https:\/\/hacoos\.org\/en<\/loc>/);
   assert.match(sitemapXml, /<loc>https:\/\/hacoos\.org\/de\/articles\//);
+
+  const wwwResponse = await worker.fetch(
+    new Request("https://www.hacoos.org/de?source=www"),
+    { ASSETS: { fetch: async () => new Response("Not found", { status: 404 }) } },
+    { waitUntil() {}, passThroughOnException() {} },
+  );
+  assert.equal(wwwResponse.status, 308);
+  assert.equal(wwwResponse.headers.get("location"), "https://hacoos.org/de?source=www");
 });
