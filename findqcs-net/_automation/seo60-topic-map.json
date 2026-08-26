@@ -7,6 +7,8 @@
     {
       "cycle": "C01",
       "planTrack": "QED01",
+      "liveVerified": false,
+      "deploymentStatus": "pending-live-verification",
       "slug": "pre-purchase-qc-evidence-worksheet",
       "primaryQuery": "pre-purchase QC evidence worksheet",
       "intent": "Organize already-found listing and QC material into an auditable record before a buyer-selected agent acts",
