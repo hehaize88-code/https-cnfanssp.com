@@ -13,7 +13,7 @@ export default function Home() {
           <div className="index-masthead">
             <p><span>Independent product index</span><b>Edition 08 / 2026</b></p>
             <div>
-              <h1>Find the listing.<br /><em>Check the evidence.</em></h1>
+              <h1>Source-Checked AllChinaBuy<br /><em>Product Records.</em></h1>
               <p className="index-deck">A source-first workspace for comparing product records, reviewing QC priorities and opening the right catalog page.</p>
             </div>
           </div>
@@ -40,13 +40,13 @@ export default function Home() {
               <div className="record-head"><span>ID</span><span>Listing</span><span>Group</span><span>Price</span><span>Open</span></div>
               <div className="record-list">
                 {products.slice(0, 6).map((product, index) => (
-                  <a href={product.destination} target="_blank" rel="noopener noreferrer" className="record-row" key={product.slug}>
+                  <article className="record-row" key={product.slug}>
                     <span className="record-id">{String(index + 1).padStart(2, "0")}</span>
-                    <span className="record-product"><img src={product.image} alt="" /><span><b>{product.name}</b><small>Source checked · {product.updated}</small></span></span>
+                    <span className="record-product"><a href={product.destination} target="_blank" rel="noopener noreferrer" aria-label={`Open ${product.name} on the live catalog`}><img src={product.image} alt={product.name} loading="lazy" width="48" height="48" /></a><span><Link href={`/products/${product.slug}`}><b>{product.name}</b></Link><small>Source checked · {product.updated}</small></span></span>
                     <span className="record-category">{product.category}</span>
                     <strong className="record-price">{product.price}</strong>
-                    <i className="record-open">↗</i>
-                  </a>
+                    <a href={product.destination} target="_blank" rel="noopener noreferrer" className="record-open" aria-label={`Open live ${product.name} record`}>↗</a>
+                  </article>
                 ))}
               </div>
               <div className="directory-footer"><span>Showing 6 recent records</span><Link href="/finds">Browse every find →</Link></div>
@@ -54,7 +54,7 @@ export default function Home() {
 
             <aside className="inspector-card">
               <div className="inspector-top"><span>Featured record</span><b>ACB–001</b></div>
-              <a href={featured.destination} target="_blank" rel="noopener noreferrer" className="inspector-image"><img src={featured.image} alt={featured.name} /><span>Source checked</span></a>
+              <a href={featured.destination} target="_blank" rel="noopener noreferrer" className="inspector-image"><img src={featured.image} alt={featured.name} loading="eager" fetchPriority="high" width="720" height="720" /><span>Source checked</span></a>
               <div className="inspector-copy">
                 <p>{featured.category} / {featured.price}</p>
                 <h2>{featured.name}</h2>
@@ -82,9 +82,9 @@ export default function Home() {
           </div>
           <div className="category-ledger">
             {categories.map((category) => (
-              <a href={category.destination} target="_blank" rel="noopener noreferrer" key={category.slug}>
-                <span>{category.mark}</span><h3>{category.name}</h3><p>{category.description}</p><b>Browse group ↗</b>
-              </a>
+              <article className="category-ledger-row" key={category.slug}>
+                <span>{category.mark}</span><h3><Link href={`/categories/${category.slug}`}>{category.name}</Link></h3><p>{category.description}</p><a href={category.destination} target="_blank" rel="noopener noreferrer">Browse group ↗</a>
+              </article>
             ))}
           </div>
         </section>
