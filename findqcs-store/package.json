@@ -1,0 +1,14 @@
+{
+  "name": "findqcs-store",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "wrangler dev",
+    "check": "wrangler deploy --dry-run",
+    "deploy": "wrangler deploy --minify"
+  },
+  "devDependencies": {
+    "@types/node": "^26.4.0",
+    "wrangler": "^4.33.1"
+  }
+}
