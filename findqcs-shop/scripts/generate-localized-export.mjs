@@ -36,7 +36,15 @@ function normalize(value) {
 
 function translated(value, locale) {
   const decoded = decodeHtml(value);
-  return dictionaries[locale][normalize(decoded)] || decoded;
+  const normalized = normalize(decoded);
+  if (dictionaries[locale][normalized]) return dictionaries[locale][normalized];
+
+  const brandedTitle = normalized.match(/^(.*?)\s+\|\s+FindQC$/);
+  if (brandedTitle && dictionaries[locale][brandedTitle[1]]) {
+    return `${dictionaries[locale][brandedTitle[1]]} | FindQC`;
+  }
+
+  return decoded;
 }
 
 function routeFromUrl(url) {
