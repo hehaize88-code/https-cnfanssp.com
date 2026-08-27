@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import Script from "next/script";\nimport type { Metadata } from "next";
 import "./globals.css";
 
 // Keep this file in the Pages build watch set when edge routing changes.
@@ -24,7 +24,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="antialiased">{children}</body>
+      <body className="antialiased">
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-JXEDJMZZFB" strategy="afterInteractive" />
+        <Script id="google-analytics" strategy="afterInteractive">{`window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag("js", new Date());
+gtag("config", "G-JXEDJMZZFB");`}</Script>{children}</body>
     </html>
   );
 }
