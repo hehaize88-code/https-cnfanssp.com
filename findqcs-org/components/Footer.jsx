@@ -20,7 +20,7 @@ export default function Footer() {
         <div className="footer-brand">
           <div className="brand footer-logo">
             <img className="brand-logo-image" src="/findqc-logo.png" alt="" width="88" height="88" />
-            <span className="brand-name">FINDQC <small>PRODUCT INDEX</small></span>
+            <span className="brand-name">FINDQC <small>{t("brand.index")}</small></span>
           </div>
           <p>{t("footer.description")}</p>
         </div>

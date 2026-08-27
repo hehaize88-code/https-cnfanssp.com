@@ -11,6 +11,18 @@ const sitemap = readFileSync(path.join(out, "sitemap.xml"), "utf8");
 const urls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1]);
 const failures = [];
 const articleSlugs = englishArticles.map(({ slug }) => slug);
+const englishUiResidues = [
+  "Category field guide",
+  "Buying advice",
+  "Visible QC checks",
+  "Common questions",
+  "Approximate USD reference",
+  "Open exact catalog page",
+  "Category-specific evidence",
+  "Decision boundary",
+  "Related mapped finds",
+  "PRODUCT INDEX",
+];
 
 function articleText(article) {
   const values = [];
@@ -132,8 +144,27 @@ for (const url of urls) {
     for (const href of pageLinks) {
       if (!href.startsWith(localPrefix)) failures.push(`Cross-language internal link on ${url}: ${href}`);
     }
+
+    const rendered = visibleText(html);
+    for (const phrase of englishUiResidues) {
+      if (rendered.includes(phrase)) failures.push(`English UI residue on ${url}: ${phrase}`);
+    }
+
+    const englishFile = htmlPath(basePath);
+    if (existsSync(englishFile) && !basePath.startsWith("/articles/")) {
+      const englishHtml = readFileSync(englishFile, "utf8");
+      for (const tag of ["section", "article", "details", "li", "h2", "h3"]) {
+        const localizedCount = (html.match(new RegExp(`<${tag}[\\s>]`, "g")) || []).length;
+        const englishCount = (englishHtml.match(new RegExp(`<${tag}[\\s>]`, "g")) || []).length;
+        if (localizedCount !== englishCount) failures.push(`Content structure changed on ${url}: ${tag} ${localizedCount}/${englishCount}`);
+      }
+    }
   }
 }
+
+const providerSource = readFileSync(path.join(root, "components", "LanguageProvider.jsx"), "utf8");
+if (!providerSource.includes("window.location.assign(nextUrl)")) failures.push("Language switcher does not load the complete locale edition");
+if (providerSource.includes("history.replaceState")) failures.push("Language switcher still uses address-only replacement");
 
 const sitemapAlternateCount = (sitemap.match(/<xhtml:link /g) || []).length;
 if (urls.length !== 675) failures.push(`Expected 675 sitemap URLs, found ${urls.length}`);

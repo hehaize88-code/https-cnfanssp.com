@@ -16,10 +16,17 @@ export default function LanguageProvider({ children }) {
 
   const setLanguage = useCallback((nextLanguage) => {
     if (!isSupportedLanguage(nextLanguage)) return;
-    setLanguageState(nextLanguage);
     window.localStorage.setItem(STORAGE_KEY, nextLanguage);
     const destination = languagePath(window.location.pathname, nextLanguage);
-    window.history.replaceState({}, "", `${destination}${window.location.search}${window.location.hash}`);
+    const nextUrl = `${destination}${window.location.search}${window.location.hash}`;
+
+    // Every locale is a complete static edition. A real navigation is required
+    // so server-rendered page copy, metadata and long-form content are replaced
+    // together; replaceState only changed the address bar and left the current
+    // language's server components on screen.
+    if (nextUrl !== `${window.location.pathname}${window.location.search}${window.location.hash}`) {
+      window.location.assign(nextUrl);
+    }
   }, []);
 
   const t = useCallback((key, values) => translate(language, key, values), [language]);
