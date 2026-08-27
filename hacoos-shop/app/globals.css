@@ -25,4 +25,13 @@ footer{padding:48px 4vw;display:grid;grid-template-columns:1fr 2fr auto;gap:34px
  .product-head{margin-bottom:13px}.product-head h2{font-size:29px}.product-head>p{margin-top:5px}.product-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}.product-image{height:112px}.product-image span{left:6px;top:6px;padding:4px 5px;font-size:5px}.product-copy{padding:6px 1px}.product-copy p{font-size:8px}.product-copy strong{font-size:8px}.product-copy small{font-size:5px;line-height:1.2}.product-copy b{margin-top:4px;padding-top:4px;font-size:5px}
  .evidence-copy{grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}.evidence-copy article{min-height:205px;padding:11px 9px;border-radius:48px 48px 12px 12px}.evidence-copy span{font-size:5px}.evidence-copy p{margin-top:auto;font-size:8px;line-height:1.35}.final{min-height:210px;padding:32px 14px}.final h2{font-size:39px;margin-bottom:18px}.final a{padding:10px 14px}footer{padding:19px 12px;gap:10px}footer>p{font-size:9px}footer small{padding-top:10px}
 }
+@media(max-width:620px){
+ .statusbar{font-size:9px}.language summary,.language div a{font-size:10px}.function-bar a{min-height:38px;font-size:10px}.function-bar a span{font-size:9px}
+ .kicker,.search label,.search button,.desk-card>span,.desk-card>a,.marquee,.section-label>span,.content-card b,.product-head span,.product-head>p,.final>p,.final a,footer>div a,footer small{font-size:10px}
+ .intro,.desk-card li p,.content-card>p,.content-card li,.category-grid p,.product-copy p,.product-copy strong,.product-copy small,.product-copy b,.evidence-copy p,footer>p{font-size:12px}
+ .content-grid{grid-template-columns:1fr}.content-card{min-height:250px;padding:18px}
+ .product-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.product-image{height:160px}.product-image span,.evidence-copy span{font-size:9px}
+ .evidence-copy{grid-template-columns:1fr}.evidence-copy article{min-height:auto;padding:16px 18px;border-radius:18px}.evidence-copy p{margin-top:14px}
+ .category-grid p{font-size:10px}.route-notes p{font-size:12px}.route-products span,.route-products p{font-size:10px}
+}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.marquee span{animation:none}.function-bar a,.content-card,.product-image{transition:none}}
