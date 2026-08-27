@@ -4,6 +4,13 @@ const reviewed = "August 26, 2026";
 
 export const guides = [
   {
+    slug: "hacoo-finds-wardrobe-gap-shortlist",
+    title: "How to Build a Hacoo Finds Shortlist Around Real Wardrobe Gaps",
+    short: "Turn Hacoo fashion inspiration into a three-item wardrobe shortlist built around real use, existing outfits, fit constraints and a cooling-off review.",
+    read: "11 min",
+    primaryKeyword: "Hacoo finds shortlist",
+  },
+  {
     slug: "what-is-a-hacoo-spreadsheet",
     title: "What Is a Hacoo Spreadsheet? A Practical 2026 Guide",
     short: "A clear explanation of Hacoo spreadsheet links, how community discovery differs from official Hacoo content, and what to verify before using a listing.",
@@ -51,13 +58,6 @@ export const guides = [
     short: "A practical sizing method for tops, trousers, footwear and accessories, built around measurements rather than unreliable size-letter assumptions.",
     read: "11 min",
     primaryKeyword: "Hacoo size guide",
-  },
-  {
-    slug: "hacoo-finds-wardrobe-gap-shortlist",
-    title: "How to Build a Hacoo Finds Shortlist Around Real Wardrobe Gaps",
-    short: "Turn Hacoo fashion inspiration into a three-item wardrobe shortlist built around real use, existing outfits, fit constraints and a cooling-off review.",
-    read: "11 min",
-    primaryKeyword: "Hacoo finds shortlist",
   },
 ];
 
@@ -395,4 +395,47 @@ export const guideContent = {
     steps: ["Measure a similar item you already own", "Identify the chart method", "Compare every decisive dimension", "Recheck the exact option and return terms"],
     sourceNote: "Independent measurement method. Hacoo listings and creator content can change; use the current option chart as the final source.",
   },
+};
+
+export const guideSources = {
+  "hacoo-finds-wardrobe-gap-shortlist": [
+    ["Hacoo", "Official homepage and public platform description", "August 26, 2026"],
+    ["Hacoo", "Terms of Service — creator and community-content responsibilities", "August 26, 2026"],
+    ["Destination catalog", "Current category routes and product-detail references", "August 27, 2026"],
+  ],
+  "what-is-a-hacoo-spreadsheet": [
+    ["Hacoo", "Official homepage and public platform description", "August 26, 2026"],
+    ["Hacoo", "Terms of Service", "August 26, 2026"],
+    ["Hacoos editorial", "Current category, product-link and fallback-route audit", "August 27, 2026"],
+  ],
+  "how-to-use-hacoo-spreadsheet": [
+    ["Hacoo", "Official homepage and Terms of Service", "August 26, 2026"],
+    ["Destination catalog", "Current category and product-detail routes", "August 27, 2026"],
+    ["Hacoos editorial", "Listing-match and evidence-record workflow", "August 27, 2026"],
+  ],
+  "hacoo-reviews-explained": [
+    ["Hacoo", "Official homepage and Terms of Service", "August 26, 2026"],
+    ["Apple App Store and Google Play", "Public Hacoo app listings and customer-review patterns", "August 26, 2026"],
+    ["Trustpilot and Reddit", "Public customer-experience themes; individual reports treated as anecdotal", "August 26, 2026"],
+  ],
+  "shipping-planning": [
+    ["Hacoo Help Centre", "Shipping & Delivery information", "August 26, 2026"],
+    ["Hacoo Help Centre", "Tracking, delayed parcel and failed-delivery entries", "August 26, 2026"],
+    ["Hacoos editorial", "Package-volume and destination-planning checklist", "August 27, 2026"],
+  ],
+  "hacoo-returns-refunds": [
+    ["Hacoo Help Centre", "Return eligibility and published return window", "August 26, 2026"],
+    ["Hacoo Help Centre", "Refund/Exchange application and review route", "August 26, 2026"],
+    ["Hacoo Help Centre", "Refund result, amount and payment-route guidance", "August 26, 2026"],
+  ],
+  "qc-photo-checklist": [
+    ["Hacoo", "Terms of Service — independent creator-content responsibilities", "August 26, 2026"],
+    ["Destination catalog", "Current product images and category routes", "August 27, 2026"],
+    ["Hacoos editorial", "Category-specific visual-evidence checklist", "August 27, 2026"],
+  ],
+  "size-guide": [
+    ["Destination catalog", "Current product options and measurement information", "August 27, 2026"],
+    ["Hacoos editorial", "Garment, footwear and accessory comparison method", "August 27, 2026"],
+    ["Hacoo Help Centre", "Current return and after-sales context", "August 26, 2026"],
+  ],
 };

@@ -40,4 +40,23 @@ async function rewriteLocalizedHtml(directory) {
 }
 
 await rewriteLocalizedHtml(outputRoot.pathname);
-console.log(`Created sitemap aliases with ${urls.length} URLs and corrected ${localizedHtmlFiles} localized HTML files.`);
+
+let sanitized404Files = 0;
+for (const candidate of ["404.html", path.join("_not-found", "index.html")]) {
+  const target = path.join(outputRoot.pathname, candidate);
+  try {
+    const html = await readFile(target, "utf8");
+    const cleaned = html
+      .replace(/<title>[^<]*<\/title>/g, "")
+      .replace(/<meta name="robots"[^>]*\/>/g, "")
+      .replace(/<link rel="canonical"[^>]*\/>/g, "")
+      .replace(/<link rel="alternate"[^>]*\/>/g, "")
+      .replace("</head>", '<title>Page Not Found | Hacoos</title><meta name="robots" content="noindex, follow"/></head>');
+    await writeFile(target, cleaned);
+    sanitized404Files += 1;
+  } catch (error) {
+    if (error?.code !== "ENOENT") throw error;
+  }
+}
+
+console.log(`Created sitemap aliases with ${urls.length} URLs, corrected ${localizedHtmlFiles} localized HTML files and sanitized ${sanitized404Files} 404 outputs.`);

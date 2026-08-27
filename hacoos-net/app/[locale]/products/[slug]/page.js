@@ -12,7 +12,7 @@ export async function generateMetadata({params}) {
   const {locale,slug}=await params;
   const original=products.find((item)=>item.slug===slug);
   const translated=getLocalizedResearch(locale).products[slug];
-  const product=original&&translated?{...original,...translated}:null;
+  const product=original&&translated?{...original,...translated,name:original.name,catalogLabel:original.catalogLabel}:null;
   if(!LOCALIZED_LOCALES.includes(locale)||!product)return{};
   return localizedPageMetadata(locale,`/products/${slug}`,product.name,product.focus);
 }

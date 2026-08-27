@@ -3,10 +3,15 @@ import { Arrow } from "@/components/Icons";
 import { CategoryCard, ProductCard } from "@/components/Cards";
 import HeroSearch from "@/components/HeroSearch";
 import StructuredData from "@/components/StructuredData";
+import ResponsiveImage from "@/components/ResponsiveImage";
 import { categories, products, guides, faqs } from "./data";
 import { languageAlternates } from "./i18n";
 
-export const metadata = { alternates: languageAlternates("/", "en") };
+export const metadata = {
+  title: "Hacoo Finds 2026 — Product Links, Categories & Listing Checks",
+  description: "Browse Hacoo finds by category, inspect eight title-and-image-matched product references, and verify current listing details before deciding.",
+  alternates: languageAlternates("/", "en"),
+};
 
 export default function Home() {
   const faqSchema = {
@@ -26,11 +31,11 @@ export default function Home() {
       <section className="club-hero">
         <div className="wrap club-hero-grid">
           <div className="club-hero-copy">
-            <div className="club-kicker"><span>Hacoo spreadsheet 2026</span><b>Independent edit</b></div>
+            <div className="club-kicker"><span>Hacoo finds 2026</span><b>Independent product index</b></div>
             <h1>Finds with<br/><em>better context.</em></h1>
             <p>Explore category routes, real product references and practical checks in one bright, independent Hacoo discovery guide.</p>
             <div className="hero-actions">
-              <Link className="button primary" href="/spreadsheet">Open the spreadsheet <Arrow/></Link>
+              <Link className="button primary" href="/categories">Browse Hacoo finds <Arrow/></Link>
               <Link className="button quiet" href="/categories">See all finds</Link>
             </div>
             <div className="club-mini-proof"><span>08 focused categories</span><span>Live routes checked</span><span>6 languages</span></div>
@@ -38,11 +43,11 @@ export default function Home() {
 
           <div className="club-collage" aria-label="Hacoo finds collage">
             <figure className="club-photo club-photo-main">
-              <img src="/products/shoe-performance.webp" alt="Grey footwear find"/>
+              <ResponsiveImage src="/products/shoe-performance.webp" small="/products/shoe-performance-480.webp" width={750} height={750} sizes="(max-width: 720px) 58vw, 520px" alt="Footwear category reference"/>
               <figcaption>Footwear edit / 01</figcaption>
             </figure>
             <figure className="club-photo club-photo-small">
-              <img src="/products/live-6427.jpg" alt="Brown checkered mini bag"/>
+              <ResponsiveImage src="/products/live-6427.webp" small="/products/live-6427-480.webp" width={720} height={960} sizes="(max-width: 720px) 32vw, 240px" alt="Accessories-60 verified catalog reference"/>
               <figcaption>Accessories / 07</figcaption>
             </figure>
             <div className="club-burst"><strong>08</strong><span>curated routes</span></div>
@@ -57,9 +62,9 @@ export default function Home() {
 
         <nav className="wrap club-shortcuts" aria-label="Popular Hacoo guides">
           <Link href="/categories"><span>01</span>Product finds <Arrow size={16}/></Link>
-          <Link href="/guides/qc-photo-checklist"><span>02</span>QC checklist <Arrow size={16}/></Link>
-          <Link href="/guides/size-guide"><span>03</span>Size guide <Arrow size={16}/></Link>
-          <Link href="/guides/shipping-planning"><span>04</span>Shipping facts <Arrow size={16}/></Link>
+          <Link href="/guides/hacoo-finds-wardrobe-gap-shortlist"><span>02</span>Wardrobe shortlist <Arrow size={16}/></Link>
+          <Link href="/guides/how-to-use-hacoo-spreadsheet"><span>03</span>Listing workflow <Arrow size={16}/></Link>
+          <Link href="/guides/size-guide"><span>04</span>Fit checklist <Arrow size={16}/></Link>
         </nav>
       </section>
 
@@ -116,7 +121,7 @@ export default function Home() {
         <div className="wrap">
           <div className="section-heading">
             <div><span className="section-label">The field journal</span><h2>Read before<br/><em>you click out.</em></h2></div>
-            <p>Practical reading about spreadsheets, sizing, QC photos and shipping planning—written to support a real decision.</p>
+            <p>Product-led reading about Hacoo finds, wardrobe planning, category choices and live listing checks—written to support a real decision.</p>
           </div>
           <div className="guide-grid">{guides.slice(0, 4).map((guide, index) => <Link href={"/guides/" + guide.slug} className="guide-card" key={guide.slug}><span className="guide-number">0{index + 1}</span><div><small>{guide.read} read</small><h3>{guide.title}</h3><p>{guide.short}</p><span className="text-link">Read the story <Arrow size={16}/></span></div></Link>)}</div>
         </div>

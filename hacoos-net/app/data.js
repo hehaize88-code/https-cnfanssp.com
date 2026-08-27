@@ -1,6 +1,6 @@
 export const SITE_URL = "https://hacoos.net";
 export const DESTINATION = "https://cnfanssp.com";
-export const CATALOG_REVIEW = { iso: "2026-08-26", label: "August 26, 2026" };
+export const CATALOG_REVIEW = { iso: "2026-08-27", label: "August 27, 2026" };
 export const SEARCH_INDEXING_ENABLED = true;
 
 export const categories = [
@@ -11,6 +11,9 @@ export const categories = [
     count: "60+ edits",
     destination: "/shoes/",
     image: "/products/shoe-performance.webp",
+    imageSmall: "/products/shoe-performance-480.webp",
+    imageWidth: 750,
+    imageHeight: 750,
     description: "Browse footwear finds with a practical focus on measurements, shape, material notes and current listing details.",
     checklist: ["Compare insole length, not only the printed size", "Check both sides and the heel from matching angles", "Confirm the live listing before making a decision"],
   },
@@ -21,6 +24,9 @@ export const categories = [
     count: "Caps, hats & beanies",
     destination: "/headwear/",
     image: "/products/headwear-edit.webp",
+    imageSmall: "/products/headwear-edit-480.webp",
+    imageWidth: 750,
+    imageHeight: 750,
     description: "Explore caps, hats and beanies with practical checks for fit, construction, material and current options.",
     checklist: ["Compare head circumference and crown depth", "Confirm whether the style is fitted, adjustable or stretch", "Inspect the brim, seams and embroidery on the selected option"],
   },
@@ -31,6 +37,9 @@ export const categories = [
     count: "Seasonal layers",
     destination: "/hoodies-sweaters/",
     image: "/products/knit-everyday.webp",
+    imageSmall: "/products/knit-everyday-480.webp",
+    imageWidth: 750,
+    imageHeight: 750,
     description: "Explore hoodies, knits and pullovers through one focused Hacoo spreadsheet-style category route.",
     checklist: ["Check chest width and total length", "Look for clear fabric-weight information", "Review cuffs, hems and graphic alignment"],
   },
@@ -41,6 +50,9 @@ export const categories = [
     count: "Short sleeves",
     destination: "/t-shirts/",
     image: "/products/tee-edit.webp",
+    imageSmall: "/products/tee-edit-480.webp",
+    imageWidth: 750,
+    imageHeight: 750,
     description: "Find tees and polo styles, then verify the latest color, size and availability on the live catalog.",
     checklist: ["Use shoulder, chest and length measurements", "Check print placement at full and close range", "Confirm color under neutral lighting when possible"],
   },
@@ -51,6 +63,9 @@ export const categories = [
     count: "Light to insulated",
     destination: "/jackets/",
     image: "/products/jacket-edit.webp",
+    imageSmall: "/products/jacket-edit-480.webp",
+    imageWidth: 750,
+    imageHeight: 750,
     description: "Browse outerwear and seasonal layers with guidance for sizing, construction and shipping-volume checks.",
     checklist: ["Leave room for the layers you plan to wear", "Inspect zipper tracks, pockets and seam joins", "Consider packed volume before checkout"],
   },
@@ -61,6 +76,9 @@ export const categories = [
     count: "Bottoms edit",
     destination: "/pants-shorts/",
     image: "/products/shorts-utility.webp",
+    imageSmall: "/products/shorts-utility-480.webp",
+    imageWidth: 750,
+    imageHeight: 750,
     description: "A measurement-led selection of trousers, shorts and casual bottoms from the current destination catalog.",
     checklist: ["Compare waist, rise, inseam and leg opening", "Check pocket and panel symmetry", "Read whether the waist is fixed or elasticated"],
   },
@@ -71,6 +89,9 @@ export const categories = [
     count: "Finishing pieces",
     destination: "/accessories/",
     image: "/products/accessory-edit.webp",
+    imageSmall: "/products/accessory-edit-480.webp",
+    imageWidth: 750,
+    imageHeight: 750,
     description: "Explore smaller finds through a faster route, while still checking dimensions, material and listing status.",
     checklist: ["Check exact dimensions instead of relying on photos", "Inspect closures, edges and moving parts", "Review material descriptions carefully"],
   },
@@ -81,6 +102,9 @@ export const categories = [
     count: "Devices & extras",
     destination: "/electronics/",
     image: "/products/electronics-edit.webp",
+    imageSmall: "/products/electronics-edit-480.webp",
+    imageWidth: 750,
+    imageHeight: 750,
     description: "Browse electronics and device accessories with extra attention to versions, compatibility and package contents.",
     checklist: ["Confirm plug, voltage and region compatibility", "Check the exact model and included accessories", "Review warranty and return terms on the destination"],
   },
@@ -234,14 +258,14 @@ export const categoryResearch = {
 };
 
 export const products = [
-  { slug: "grey-low-top-sneakers", name: "Grey low-top sneakers", catalogLabel: "shoes-60", listingId: "6045", listingPath: "/AllProducts/6045.html", category: "Shoes", categorySlug: "shoes", image: "/products/live-6045.jpg", tag: "Link verified", query: "grey low top sneakers", focus: "Compare internal length, toe shape, heel construction and the selected colour before relying on the thumbnail." },
-  { slug: "letter-embroidered-beanies", name: "Letter-embroidered beanies", catalogLabel: "Miu Miu letter-embroidered", listingId: "5971", listingPath: "/AllProducts/5971.html", category: "Headwear", categorySlug: "headwear", image: "/products/live-5971.webp", tag: "Link verified", query: "letter embroidered beanies", focus: "Check head circumference, knit stretch, crown depth and embroidery placement on the exact option shown." },
-  { slug: "classic-logo-crew-neck", name: "Classic logo crew-neck", catalogLabel: "Patagonia classic loose-fitting crew neck", listingId: "5974", listingPath: "/AllProducts/5974.html", category: "Sweatshirts", categorySlug: "hoodies-sweaters", image: "/products/live-5974.webp", tag: "Link verified", query: "classic logo crew neck sweatshirt", focus: "Compare chest width, shoulder width, body length, fabric weight and logo alignment on the selected colour." },
-  { slug: "pique-cotton-polo", name: "Piqué cotton polo", catalogLabel: "Gucci pique cotton breathable and versatile short", listingId: "5976", listingPath: "/AllProducts/5976.html", category: "T-Shirts", categorySlug: "t-shirts", image: "/products/live-5976.webp", tag: "Link verified", query: "pique cotton polo", focus: "Check flat garment measurements, collar shape, placket construction and fabric description before choosing a size." },
-  { slug: "colour-block-track-jacket", name: "Colour-block track jacket", catalogLabel: "Celine embroidered chocolate-", listingId: "5981", listingPath: "/AllProducts/5981.html", category: "Jackets", categorySlug: "jackets", image: "/products/live-5981.webp", tag: "Link verified", query: "colour block track jacket", focus: "Review chest and sleeve measurements, zipper alignment, pocket construction and room for intended layers." },
-  { slug: "drawstring-denim-shorts", name: "Drawstring denim shorts", catalogLabel: "Balenciaga new drawstring", listingId: "5983", listingPath: "/AllProducts/5983.html", category: "Pants & Shorts", categorySlug: "pants-shorts", image: "/products/live-5983.webp", tag: "Link verified", query: "drawstring denim shorts", focus: "Compare waist range, rise, inseam, leg opening and drawstring construction on the current option." },
-  { slug: "brown-checkered-mini-bag", name: "Brown checkered mini bag", catalogLabel: "Accessories-60", listingId: "6427", listingPath: "/AllProducts/6427.html", category: "Accessories", categorySlug: "accessories", image: "/products/live-6427.jpg", tag: "Link verified", query: "brown checkered mini bag", focus: "Confirm the bag dimensions, strap drop, hardware finish, closure, lining and included pieces on the current option." },
-  { slug: "compact-rgb-speaker", name: "Compact RGB speaker", catalogLabel: "Electronics-60", listingId: "6547", listingPath: "/AllProducts/6547.html", category: "Electronics", categorySlug: "electronics", image: "/products/live-6547.jpg", tag: "Link verified", query: "compact RGB speaker", focus: "Match the exact model, power input, charging method, wireless specification, battery claim and included accessories." },
+  { slug: "grey-low-top-sneakers", name: "NB9060 New Balance 9060 shoes sneakers", catalogLabel: "NB9060 New Balance 9060 shoes sneakers", listingId: "5648", replacedListingId: "6045", sourceProductId: "7672819921", listingPath: "/AllProducts/5648.html", category: "Shoes", categorySlug: "shoes", image: "/products/live-5648.webp", imageSmall: "/products/live-5648-480.webp", imageWidth: 960, imageHeight: 786, tag: "Image + link verified", query: "NB9060 New Balance 9060 shoes sneakers", imageObservation: "The verified first image shows a grey-and-white pair together on a green measurement mat, viewed from above.", focus: "The title, first image and detail route were checked together. Compare internal length, toe shape, heel construction and the exact selected style on the live page." },
+  { slug: "letter-embroidered-beanies", name: "Chrome Hearts Cross Beanie [26 styles]", catalogLabel: "Chrome Hearts Cross Beanie [26 styles]", listingId: "5425", replacedListingId: "5971", sourceProductId: "7673983140", listingPath: "/AllProducts/5425.html", category: "Headwear", categorySlug: "headwear", image: "/products/live-5425.webp", imageSmall: "/products/live-5425-480.webp", imageWidth: 750, imageHeight: 750, tag: "Image + link verified", query: "Chrome Hearts Cross Beanie 26 styles", imageObservation: "The verified first image is a multi-style reference showing grey, black and white rib-knit caps with several decoration layouts.", focus: "The title, first image and detail route were checked together. Confirm circumference, crown depth, knit stretch and the exact style selected on the live page." },
+  { slug: "classic-logo-crew-neck", name: "Hoodie-60", catalogLabel: "Hoodie-60", listingId: "6127", replacedListingId: "5974", sourceProductId: "7676979998", listingPath: "/AllProducts/6127.html", category: "Hoodies & Sweaters", categorySlug: "hoodies-sweaters", image: "/products/live-6127.webp", imageSmall: "/products/live-6127-480.webp", imageWidth: 960, imageHeight: 720, tag: "Image + link verified", query: "Hoodie-60", imageObservation: "The verified first image shows a bright red short-sleeve hooded top laid flat on a green inspection surface.", focus: "The main catalog uses the title Hoodie-60. Recheck the exact size, color, measurements, fabric information and construction shown on the current option." },
+  { slug: "pique-cotton-polo", name: "T-Shirts-60", catalogLabel: "T-Shirts-60", listingId: "6187", replacedListingId: "5976", sourceProductId: "7678063505", listingPath: "/AllProducts/6187.html", category: "T-Shirts", categorySlug: "t-shirts", image: "/products/live-6187.webp", imageSmall: "/products/live-6187-480.webp", imageWidth: 960, imageHeight: 960, tag: "Image + link verified", query: "T-Shirts-60", imageObservation: "The verified first image shows a black short-sleeve top on a hanger with a centered front graphic.", focus: "The main catalog uses the title T-Shirts-60. Compare flat garment measurements, collar construction, fabric information and the exact current option." },
+  { slug: "colour-block-track-jacket", name: "Jackets-60", catalogLabel: "Jackets-60", listingId: "6247", replacedListingId: "5981", sourceProductId: "7672835699", listingPath: "/AllProducts/6247.html", category: "Jackets", categorySlug: "jackets", image: "/products/live-6247.webp", imageSmall: "/products/live-6247-480.webp", imageWidth: 960, imageHeight: 960, tag: "Image + link verified", query: "Jackets-60", imageObservation: "The verified first image shows a black hooded jacket laid flat, with the front closure and pocket area visible.", focus: "The main catalog uses the title Jackets-60. Review chest and sleeve measurements, closures, pockets, lining and room for the layers you plan to wear." },
+  { slug: "drawstring-denim-shorts", name: "Pants/Shorts-60", catalogLabel: "Pants/Shorts-60", listingId: "6307", replacedListingId: "5983", sourceProductId: "7671009113", listingPath: "/AllProducts/6307.html", category: "Pants & Shorts", categorySlug: "pants-shorts", image: "/products/live-6307.webp", imageSmall: "/products/live-6307-480.webp", imageWidth: 960, imageHeight: 540, tag: "Image + link verified", query: "Pants Shorts 60", imageObservation: "The verified first image shows dark trousers laid flat with rulers visible along the waist and leg for scale.", focus: "The main catalog uses the title Pants/Shorts-60. Compare the waist method, rise, inseam, leg opening and the exact size and color selected." },
+  { slug: "brown-checkered-mini-bag", name: "Accessories-60", catalogLabel: "Accessories-60", listingId: "6427", replacedListingId: null, sourceProductId: "7628888202", listingPath: "/AllProducts/6427.html", category: "Accessories", categorySlug: "accessories", image: "/products/live-6427.webp", imageSmall: "/products/live-6427-480.webp", imageWidth: 720, imageHeight: 960, tag: "Image + link verified", query: "Accessories-60", imageObservation: "The verified first image is a close view of a brown checkered bag showing the zipper, metal hardware and strap attachment.", focus: "The main catalog uses the title Accessories-60. Confirm dimensions, strap, hardware, closures, lining and included pieces on the exact current option." },
+  { slug: "compact-rgb-speaker", name: "Electronics-60", catalogLabel: "Electronics-60", listingId: "6547", replacedListingId: null, sourceProductId: "7670019556", listingPath: "/AllProducts/6547.html", category: "Electronics", categorySlug: "electronics", image: "/products/live-6547.webp", imageSmall: "/products/live-6547-480.webp", imageWidth: 960, imageHeight: 720, tag: "Image + link verified", query: "Electronics-60", imageObservation: "The verified first image shows a compact light-up device beside its retail box on a green measurement mat.", focus: "The main catalog uses the title Electronics-60. Match the exact model, power input, charging method, compatibility, package contents and current destination terms." },
 ];
 
 const legacyGuides = [
@@ -349,7 +373,7 @@ export const faqs = [
   ["How does Hacoo describe its official platform?", "Hacoo's current public website describes it as an open content-sharing community and discovery ecosystem connecting users and independent creators. Hacoos is a separate editorial guide."],
   ["Is a Hacoo spreadsheet an official Hacoo feature?", "Hacoo does not present the community phrase as an official product. It generally describes independently organized collections of discovery links, categories and notes."],
   ["Does Hacoos sell products?", "No. We organize discovery pages and link to external live listings. Any transaction takes place on the destination website under its own terms."],
-  ["Where do the product links go?", "Product cards open a matching Hacoos reference page first. From there, visitors can run a current live catalog search or open the relevant live category without being sent to an expired detail URL."],
+  ["Where do the product links go?", "Product cards open a matching Hacoos reference page first. Each reference now includes one title-and-image-matched detail link, a current live search and the relevant category fallback."],
   ["Are listings always available?", "No. External listings, options and availability can change. Always check the current destination page."],
   ["Does a listing guarantee product quality?", "No. A link or photograph cannot guarantee quality. Use available measurements, listing information and policies to make your own assessment."],
   ["How should I choose a size?", "Compare the listing measurements with a similar item you already own. Do not rely only on familiar size letters or automatic regional conversions."],
