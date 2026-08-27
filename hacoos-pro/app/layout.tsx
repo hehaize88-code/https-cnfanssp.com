@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
+// Keep this file in the Pages build watch set when edge routing changes.
 export const metadata: Metadata = {
   metadataBase: new URL("https://hacoos.pro"),
   title: {
