@@ -1,4 +1,5 @@
 import { articles as englishArticles } from "./articles.js";
+import { ARTICLE_LOCALES, ARTICLE_SOURCE_LOCALES, ARTICLE_UI_LOCALES } from "./articleLocales/index.js";
 
 const ENGLISH_UI = {
   journalMetadataTitle: "Product Search, QC Photo & Shipping Guides",
@@ -23,11 +24,40 @@ const ENGLISH_UI = {
 };
 
 export function getArticleUi(language = "en") {
-  return ENGLISH_UI;
+  return language === "en"
+    ? ENGLISH_UI
+    : { ...ENGLISH_UI, ...(ARTICLE_UI_LOCALES[language] || {}) };
 }
 
 function localizeArticle(article, language) {
-  return article;
+  if (!article || language === "en") return article;
+
+  // The first public edition used descriptive slugs while the completed
+  // translations used shorter editorial keys. Keep the public URLs stable and
+  // map them to the matching translated article instead of falling back to English.
+  const localeKey = {
+    "product-search-link-id-keyword": "findqc-search-methods",
+    "warehouse-measurement-guide": "findqc-product-signals",
+    "shipping-cost-checklist": "findqc-shopping-agent-workflow",
+  }[article.slug] || article.slug;
+  const localized = ARTICLE_LOCALES[language]?.[localeKey];
+  if (!localized) return article;
+
+  const sourceLocales = ARTICLE_SOURCE_LOCALES[language] || {};
+  const sources = (localized.sources || article.sources || []).map((source) => {
+    const translated = sourceLocales[source.href];
+    return translated ? { ...source, ...translated } : source;
+  });
+
+  return {
+    ...article,
+    ...localized,
+    slug: article.slug,
+    heroImage: localized.heroImage || article.heroImage,
+    sources,
+    related: localized.related || article.related,
+    cta: localized.cta || article.cta,
+  };
 }
 
 export function getLocalizedArticles(language = "en") {

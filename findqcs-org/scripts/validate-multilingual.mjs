@@ -74,7 +74,9 @@ for (const language of languages.filter((candidate) => candidate !== "en")) {
       continue;
     }
 
-    if (localized.sections.length !== englishArticle.sections.length) failures.push(`Section count changed on ${language}/${englishArticle.slug}`);
+    if (localized.title === englishArticle.title) failures.push(`English article fallback on ${language}/${englishArticle.slug}`);
+    if (articleText(localized) === articleText(englishArticle)) failures.push(`English article body fallback on ${language}/${englishArticle.slug}`);
+    if (localized.sections.length < 5) failures.push(`Localized article is too shallow: ${language}/${englishArticle.slug}`);
 
     const pathname = `/${language}/articles/${englishArticle.slug}`;
     const file = htmlPath(pathname);
@@ -84,7 +86,13 @@ for (const language of languages.filter((candidate) => candidate !== "en")) {
     }
     const rendered = visibleText(readFileSync(file, "utf8"));
     if (!rendered.includes(localized.title)) failures.push(`Localized H1 not rendered: ${pathname}`);
+    if (rendered.includes(englishArticle.title)) failures.push(`English H1 remains visible: ${pathname}`);
   }
+}
+
+for (const article of englishArticles) {
+  const wordCount = words(articleText(article)).length;
+  if (wordCount < 1180 || wordCount > 1800) failures.push(`English article length outside 1200–1800 target: ${article.slug} (${wordCount})`);
 }
 
 function htmlPath(pathname) {

@@ -4,6 +4,34 @@ const liveCatalog = {
   note: "Used to verify current category routes, product-page structure and live listing fields.",
 };
 
+const findQcSources = {
+  whatIsQc: {
+    label: "FindQC: What is QC?",
+    href: "https://findqc.com/what-is-qc",
+    note: "Official explanation of Standard and Premium QC, visible checks and the decisions available before international shipping.",
+  },
+  howItWorks: {
+    label: "FindQC: How FindQC Works",
+    href: "https://findqc.com/how-findqc-works",
+    note: "Official documentation for link, keyword and image search, result grouping, ranking and the limits of similar-item matches.",
+  },
+  intelligence: {
+    label: "FindQC: Product Intelligence",
+    href: "https://findqc.com/product-intelligence",
+    note: "Official description of Premium-only seller fulfillment, review, defect, return and historical shipping summaries.",
+  },
+  agentFlow: {
+    label: "FindQC: How to Buy (Agent Flow)",
+    href: "https://findqc.com/how-to-buy",
+    note: "Official separation between FindQC research and the third-party agent that orders, warehouses, photographs and ships an item.",
+  },
+  terms: {
+    label: "FindQC Terms of Service",
+    href: "https://findqc.com/terms-of-service",
+    note: "Official service boundaries: FindQC is an aggregation platform, not a seller, forwarder or authenticity certifier.",
+  },
+};
+
 const checklistCta = {
   eyebrow: "Use the method",
   title: "Keep the seven-stage checklist beside your next warehouse photo set.",
@@ -53,7 +81,7 @@ export const articles = [
         { type: "p", text: "Keep a short note with the product URL, selected option, concern, supporting image and date. This makes a follow-up photo easier to evaluate." },
       ] },
     ],
-    sources: [liveCatalog],
+    sources: [findQcSources.whatIsQc, findQcSources.howItWorks, findQcSources.terms],
     related: ["product-search-link-id-keyword", "what-qc-photos-can-prove", "warehouse-measurement-guide"],
     cta: checklistCta,
   },
@@ -95,7 +123,7 @@ export const articles = [
         { type: "p", text: "Store the destination URL, product ID, chosen option and date checked together. A screenshot is only a secondary reference because it ages immediately. Searchable text makes later warehouse comparison more reliable." },
       ] },
     ],
-    sources: [liveCatalog],
+    sources: [findQcSources.howItWorks, findQcSources.terms, liveCatalog],
     related: ["before-you-buy-qc-guide", "warehouse-measurement-guide", "shipping-cost-checklist"],
     cta: { eyebrow: "Search precisely", title: "Browse mapped finds and open the exact product route.", href: "/products", label: "Explore product finds" },
   },
@@ -138,7 +166,7 @@ export const articles = [
         { type: "callout", title: "Useful boundary", text: "When a required property cannot be tested, treat it as unresolved risk instead of forcing a visual conclusion." },
       ] },
     ],
-    sources: [],
+    sources: [findQcSources.whatIsQc, findQcSources.howItWorks, findQcSources.terms],
     related: ["before-you-buy-qc-guide", "warehouse-measurement-guide", "shipping-cost-checklist"],
     cta: checklistCta,
   },
@@ -178,7 +206,7 @@ export const articles = [
         { type: "p", text: "Record the dimension name, endpoints, warehouse value, reference value and date. If you reorder, this is more reliable than remembering that a previous size was simply good or bad." },
       ] },
     ],
-    sources: [],
+    sources: [findQcSources.whatIsQc, findQcSources.intelligence, findQcSources.agentFlow],
     related: ["before-you-buy-qc-guide", "what-qc-photos-can-prove", "product-search-link-id-keyword"],
     cta: checklistCta,
   },
@@ -218,11 +246,144 @@ export const articles = [
         { type: "p", text: "Create a low and high estimate based on plausible parcel weight and packaging. When warehouse dimensions and current route quotes become available, replace estimates with live values." },
       ] },
     ],
-    sources: [],
+    sources: [findQcSources.intelligence, findQcSources.agentFlow, findQcSources.terms],
     related: ["product-search-link-id-keyword", "before-you-buy-qc-guide", "what-qc-photos-can-prove"],
     cta: { eyebrow: "Plan the parcel", title: "Use the shipping guide before approving consolidation.", href: "/shipping", label: "Open shipping guide" },
   },
 ];
+
+const articleExtensions = {
+  "before-you-buy-qc-guide": [
+    { id: "same-versus-similar", title: "6. Separate the same item from a merely similar result", blocks: [
+      { type: "p", text: "FindQC says its results can be grouped as likely same-item records and visually similar recommendations. That distinction matters. A similar result can teach you which angles or construction points deserve attention, but it cannot establish that your seller, version or production batch will be identical. Follow the marketplace link, compare the seller and variant, and treat any mismatch as a new candidate rather than evidence for the original one." },
+      { type: "p", text: "When several historical records exist, look for a repeated pattern instead of selecting the cleanest photograph. Consistent alignment, labels and measurements across different records are more informative than one unusually good set. A repeated defect is a risk signal, not proof that your unit will have the same problem. The warehouse images for your own order remain the final visual checkpoint." },
+    ] },
+    { id: "premium-context", title: "7. Use Premium fields only when they are actually present", blocks: [
+      { type: "p", text: "The official FindQC documentation distinguishes Standard QC, which is photo-only, from Premium QC, which may add video, measured weight, three-side dimensions, seller shipping time, domestic delivery, reviews, returns and defect history. Do not write down an estimated weight as if the warehouse measured it. Label every field as observed, reported, calculated or unknown." },
+      { type: "p", text: "Premium information is most useful when it changes a decision. Dimensions can expose volumetric shipping risk; a video can show structure across angles; clustered return reasons may justify choosing another listing. Sample size and data freshness still matter. FindQC explicitly warns that third-party records may be incomplete or incorrect, so patterns should support judgment rather than replace it." },
+    ] },
+    { id: "photo-request", title: "8. Write a photo request that can be answered", blocks: [
+      { type: "p", text: "A useful request names one area, one angle and one purpose. Ask for the left heel seam square-on, the size label without glare, or the insole beside a ruler with both endpoints visible. Avoid requests such as ‘check quality’ because they leave the photographer guessing and rarely create comparable evidence." },
+      { type: "p", text: "Before paying for extra images, check whether another supplied frame already answers the question. If colour is the concern, request neutral lighting or a comparison with a neutral warehouse object; if symmetry is the concern, ask for a centered camera position. Save the new frame beside the original concern so the decision trail remains understandable later." },
+    ] },
+    { id: "final-record", title: "9. Keep a decision record until delivery", blocks: [
+      { type: "p", text: "Save the source link, selected options, order reference, important warehouse images, measurements, packaging request and the decision date. This record is useful if a support conversation begins after dispatch, and it prevents memory from turning an uncertain image into a confident claim. Keep screenshots of time-sensitive listing details, but retain the searchable URL and item identifier too." },
+      { type: "callout", title: "A defensible conclusion", text: "The item matches the ordered option; no major issue is visible in the supplied angles; the critical measurement is within my tolerance; one hidden property remains unverified; and the packaging request fits the product. That is stronger than simply saying the QC is good." },
+    ] },
+  ],
+  "product-search-link-id-keyword": [
+    { id: "image-search", title: "6. Use image search when the visual clue is stronger than the title", blocks: [
+      { type: "p", text: "FindQC documents image search as a route for dead links, unreliable titles and look-alike discovery. Use a clean crop that contains the product rather than a collage, chat screenshot or busy room. Run more than one crop when a distinctive sole, print or hardware detail carries more identity than the whole silhouette." },
+      { type: "p", text: "Visual similarity is not seller identity. After image search, confirm the marketplace, item identifier, option set and current listing. A result can be valuable as a comparison even when it is not the same item, but it should be labelled ‘similar reference’ in your notes. This prevents a convincing thumbnail from silently becoming false provenance." },
+    ] },
+    { id: "ranking", title: "7. Understand what a ranked result does and does not mean", blocks: [
+      { type: "p", text: "FindQC says it standardizes records, reduces duplicates, groups likely same items and similar recommendations, then prioritizes match confidence, recency and completeness. A high result therefore means the system considers it useful for the query; it does not mean the product is the best quality, the seller is approved or the listing is authentic." },
+      { type: "p", text: "Open several leading results when the purchase matters. Compare the identifiers and identify which fields caused one record to be more useful: a newer inspection, a complete photo set or Premium context. If the route changes after you click, return to the original source and record the final live URL rather than relying on a search-result position that can change." },
+    ] },
+    { id: "query-ladder", title: "8. Use a query ladder instead of repeating broad searches", blocks: [
+      { type: "list", title: "A practical sequence", items: ["Exact marketplace URL when available", "Exact item ID copied without punctuation", "Distinctive title phrase plus product type", "Clean reference image or detail crop", "Broader category and material terms for alternatives"] },
+      { type: "p", text: "Stop broadening once you find a verifiable match. If a keyword query is noisy, change one clue at a time so you know what improved it. Preserve model codes and seller-specific phrases; remove promotional adjectives that appear across unrelated listings. For multilingual titles, test the original marketplace wording before translating it." },
+    ] },
+    { id: "search-log", title: "9. Save enough information to reproduce the search", blocks: [
+      { type: "p", text: "A small search log should include the input, method, date, FindQC result, marketplace destination and your identity check. It lets you revisit a candidate after a link changes and prevents duplicate work when several people are researching together. Record why a candidate was rejected as carefully as why another was saved." },
+      { type: "callout", title: "Minimum proof of a match", text: "The marketplace route and item identifier agree, the option set contains the intended version, the first image is consistent, and the listing is live at the time checked. Anything less should remain a candidate, not a confirmed item." },
+    ] },
+  ],
+  "what-qc-photos-can-prove": [
+    { id: "standard-premium", title: "6. Match your conclusion to the QC tier", blocks: [
+      { type: "p", text: "Standard QC answers a visual question: what does the photographed item look like? Premium QC can add risk and cost context through video, weight, dimensions, fulfillment history, reviews, defects and returns. The extra fields expand the evidence; they do not turn a historical record into a laboratory test or a guarantee for the next unit." },
+      { type: "p", text: "Before quoting any figure, check that the item really has Premium QC and that the field is populated. Product Intelligence summaries are not available for every item. Missing data should remain missing. Substituting a seller estimate or another buyer’s parcel number makes the page look complete while making the decision less reliable." },
+    ] },
+    { id: "pattern-reading", title: "7. Read repeated records as patterns, not promises", blocks: [
+      { type: "p", text: "Several independent records can reveal recurring placement, packaging or sizing issues. Count how often the issue appears, note whether the photographs show the same version, and look at record dates. One complaint among many clean records carries a different weight from the same defect appearing repeatedly, but neither pattern proves what will arrive in your order." },
+      { type: "p", text: "Review summaries can compress useful themes, yet the original context still matters. A return can reflect fit preference, shipping damage, a wrong option or a manufacturing defect. Treat the stated reason and visible evidence separately. When the reason is unavailable, do not invent one from the return count." },
+    ] },
+    { id: "colour-texture", title: "8. Be especially careful with colour and texture", blocks: [
+      { type: "p", text: "White balance, warehouse lamps, screen settings and compression can all shift colour. Compare the same area across several frames and look for neutral references in the scene. If a precise shade is a deal-breaker, ask for a new photograph in neutral light. Even then, describe the colour as it appears rather than calling it exact." },
+      { type: "p", text: "Texture can be partly visible when light crosses a surface, and video can show how a material folds or reflects. Neither reveals fibre composition, chemical treatment, comfort or long-term durability. Product labels and seller descriptions can be recorded as claims, but they remain different from independent testing." },
+    ] },
+    { id: "decision-threshold", title: "9. Set the threshold before reviewing the images", blocks: [
+      { type: "p", text: "Decide which issues are unacceptable, which need clarification and which are cosmetic tolerance. This reduces the temptation to change standards after becoming attached to a purchase. Use measurable thresholds where possible: a dimension range, a required included part, a centered print boundary or the absence of visible surface damage." },
+      { type: "callout", title: "Evidence-first wording", text: "Write ‘not visible,’ ‘appears consistent,’ ‘conflicts with the selected option’ or ‘requires a closer image.’ These phrases preserve uncertainty and point directly to the next action: approve, request evidence, exchange, change size or return through the responsible third party." },
+    ] },
+  ],
+  "warehouse-measurement-guide": [
+    { id: "intelligence-boundary", title: "6. Know where FindQC measurements come from", blocks: [
+      { type: "p", text: "FindQC states that QC photos, weight, dimensions and defect records generally originate with third-party agents. Product Intelligence summarizes activity for Premium QC items when enough information is available. This provenance matters: the figure is useful historical evidence, but FindQC did not measure your parcel and does not promise that the next unit or packaging configuration will match it." },
+      { type: "p", text: "Record whether a dimension describes the product, retail box or outbound parcel. Three-side parcel dimensions help with freight planning, while garment or insole measurements help with fit. Mixing these fields creates precise-looking nonsense. When the label is unclear, keep the value out of the calculation until the source is confirmed." },
+    ] },
+    { id: "seller-time", title: "7. Read seller and domestic delivery time separately", blocks: [
+      { type: "p", text: "The official Product Intelligence guide separates seller ship time, from order to dispatch, and domestic delivery, from dispatch to warehouse. A delay in one stage does not describe the other. Compare several records and dates before calling a seller consistently fast or slow, especially when holidays, stock shortages or preorder items could affect a small sample." },
+      { type: "p", text: "Use fulfillment history as a planning signal. It can help when a deadline is real or when two similar listings differ mainly in reliability. It cannot guarantee the arrival date of your order. The purchasing agent and carrier remain responsible for the live process and should provide the current status." },
+    ] },
+    { id: "defects-returns", title: "8. Interpret defect and return signals with context", blocks: [
+      { type: "p", text: "A defect history is strongest when reasons repeat and refer to comparable versions. Separate visible construction issues from wrong options, fit complaints and buyer preference. Return frequency without a denominator, timeframe or reason is difficult to interpret, so avoid turning an isolated number into a quality score." },
+      { type: "p", text: "Use a recurring issue to create a targeted checkpoint for your own warehouse images. If several records mention heel glue, request a sharp heel view; if sizing appears inconsistent, request the relevant measurement. This converts historical information into a practical inspection step without claiming the same outcome in advance." },
+    ] },
+    { id: "decision-matrix", title: "9. Combine signals in a small decision matrix", blocks: [
+      { type: "table", headers: ["Signal", "Useful interpretation", "Do not assume"], rows: [["Seller ship time", "Planning reliability across records", "A guaranteed dispatch date"], ["Dimensions", "Possible volumetric freight exposure", "Your final packed parcel size"], ["Defect themes", "Areas to inspect closely", "Every unit has the defect"], ["Reviews", "Recurring buyer observations", "Independent laboratory proof"]] },
+      { type: "p", text: "Give the most weight to evidence tied to your exact listing and order. Use older or similar-item records to decide what to inspect, not to replace the inspection. When two signals conflict, preserve the conflict in your notes and seek a current source rather than averaging them into false certainty." },
+    ] },
+  ],
+  "shipping-cost-checklist": [
+    { id: "agent-boundary", title: "6. Keep FindQC research separate from the agent workflow", blocks: [
+      { type: "p", text: "FindQC’s official buying guide says the third-party agent places the order, receives it, takes standard warehouse photos, assists with eligible exchanges or returns, consolidates packaging and arranges international shipping. FindQC helps research QC records and risk context; it does not take payment, hold the parcel or choose a route for you." },
+      { type: "p", text: "This separation makes each checkpoint clearer. Verify the product and historical evidence during research, confirm options with the agent before purchase, inspect your unit after warehouse check-in, and use the agent’s live route quote before payment. A number copied from Product Intelligence is context, not the final freight invoice." },
+    ] },
+    { id: "volumetric-scenarios", title: "7. Model more than one packaging scenario", blocks: [
+      { type: "p", text: "Build a compact, protected and box-retained scenario when packaging can materially change dimensions. Use the current carrier formula and rounding rule for each eligible route. The greater of actual and volumetric weight may become the billable weight, but divisors and restrictions differ, so the site should never present one universal formula as a live quote." },
+      { type: "p", text: "Removing a retail box can reduce volume, yet it can also reduce protection or resale usefulness. Consolidation may save repeated base charges while creating a larger parcel. The right choice depends on the products, destination and current routes. Ask the agent for live measurements after packing when the difference affects the decision." },
+    ] },
+    { id: "route-comparison", title: "8. Compare routes on more than the headline price", blocks: [
+      { type: "list", title: "Record for each eligible line", items: ["Quoted amount and billable weight", "Tracking coverage and estimated range", "Size, category and battery restrictions", "Insurance or compensation terms", "Customs and tax handling stated by the provider", "Date and currency of the quote"] },
+      { type: "p", text: "Delivery examples from other buyers are useful context but not promises. Compare similar destinations, parcel profiles and dates, and give more weight to consistent ranges than an unusually fast result. Save the route name and terms visible when you paid because services and limits can change." },
+    ] },
+    { id: "approval-gate", title: "9. Use a final approval gate before international dispatch", blocks: [
+      { type: "p", text: "Confirm that every item matches the order, decision-relevant QC concerns are resolved, measurements fall within tolerance, fragile parts have appropriate protection, prohibited or restricted contents use an eligible route, and the live total remains within the budget. International dispatch usually makes corrections slower and more expensive." },
+      { type: "callout", title: "Keep the evidence trail", text: "Save the listing and options, warehouse QC images, measured weight and dimensions, packaging request, route quote, payment record and tracking number. If a problem occurs, this sequence shows what was known at each decision point without implying that FindQC handled the transaction." },
+    ] },
+  ],
+};
+
+const articleConclusions = {
+  "before-you-buy-qc-guide": { id: "worked-example", title: "10. Worked example: turn a vague concern into a decision", blocks: [
+    { type: "p", text: "Suppose a shoe listing has several historical QC sets. One pair appears uneven at the heel, while the remaining sets look consistent. First confirm whether those records share the same marketplace item and version. Then mark heel shape as a checkpoint rather than declaring the listing defective. When your order reaches the warehouse, compare both heels in a centered rear view, check whether packing pressure explains the shape, and request one focused image only if the wide view remains ambiguous." },
+    { type: "p", text: "Now add the commercial limits. Confirm the ordered size label and any measured insole length, note the agent’s return window, and avoid approving shipment while a deal-breaker remains unresolved. If the follow-up frame shows a clear mismatch, use the third-party order service to request the appropriate remedy. If it resolves the concern, save both images and the reason for approval. This method uses FindQC to identify risk, the live listing to confirm identity, and your warehouse evidence to decide." },
+  ] },
+  "product-search-link-id-keyword": { id: "worked-search", title: "10. Worked example: recover an item from incomplete clues", blocks: [
+    { type: "p", text: "Imagine that you have a cropped product image and an old chat message, but the shared link no longer opens. Start by checking the message for a marketplace domain or numeric identifier. Search the intact ID before changing anything. If that fails, search a distinctive phrase from the title with the product type. Use image search with a clean whole-item crop, then a second crop of a distinctive detail. Keep each result in a short candidate table rather than opening dozens of tabs without labels." },
+    { type: "p", text: "For every candidate, compare the marketplace, seller, product identifier, options and first image. Mark it as exact, likely, similar or rejected, and write the reason. Exact means the identifiers and live route agree. Likely means strong visual and textual agreement but one identity field is missing. Similar means it is useful for discovery or QC comparison but should not inherit claims from the original item. This vocabulary prevents the search process from becoming more confident than its evidence." },
+    { type: "p", text: "If no exact result appears, decide whether a similar alternative satisfies the real need. Compare its own live listing and QC history from the beginning. Do not splice the photos of one seller into the title, price or return terms of another. Search success is not finding a familiar picture; it is reaching a reproducible live route whose identity and options can be checked again before ordering." },
+    { type: "p", text: "Recheck saved candidates immediately before purchase. Listings can be removed, variants can disappear, sellers can change images and prices can move. The saved product ID helps recover the route, but it does not freeze the listing. A final identity pass should take less than a minute and protects the rest of the QC workflow from being built around stale information." },
+  ] },
+  "what-qc-photos-can-prove": { id: "evidence-audit", title: "10. Audit the claim before publishing or sharing it", blocks: [
+    { type: "p", text: "Before repeating a conclusion, underline the exact pixels or fields that support it. If the statement is ‘the ordered size label is visible,’ identify the frame and label. If the statement is ‘the parcel may be volumetric,’ identify the measured dimensions and the current route rule. If no direct support exists, rewrite the sentence as a question, a seller claim or an unresolved risk. This quick audit is especially important when a screenshot will be shared without the surrounding page." },
+    { type: "p", text: "Separate four evidence levels: your order’s current warehouse record, historical same-item records, similar-item references and promotional listing material. The first level normally deserves the most weight for deciding what to ship. Historical records can expose patterns; similar items can teach inspection technique; promotional images describe what is offered. None should silently substitute for another. Label editorial images on an article so readers do not mistake them for FindQC records or a buyer’s inspection set." },
+    { type: "p", text: "Finally, check whether the claim survives a camera explanation. Perspective can alter symmetry, glare can resemble a scratch, wrapping can deform soft goods and white balance can shift colour. Look for the issue in another angle, ask for a targeted frame when the decision justifies it, and stop when the property is not photographically testable. Honest uncertainty is useful because it tells the buyer which risk remains after the QC review." },
+    { type: "p", text: "When writing a customer-review article, quote the reviewer’s experience as one person’s outcome and identify the product version, purchase date and evidence available when possible. Compare recurring themes across several independent reviews, include negative and neutral outcomes, and disclose when a review comes from a platform-controlled wall or an authorized partner. A review becomes persuasive through traceable context, not enthusiastic adjectives. Never convert a user’s satisfaction into proof of authenticity, safety or universal quality." },
+  ] },
+  "warehouse-measurement-guide": { id: "signal-workflow", title: "10. A repeatable workflow for Product Intelligence signals", blocks: [
+    { type: "p", text: "Begin by recording the exact item route and whether the page shows Standard or Premium QC. If an Insights Report exists, note its visible sample context and date rather than copying only the headline. Read seller dispatch and domestic delivery as separate stages. Next, list recurring review, defect and return themes with the language used by the source. Finish with weight and dimensions, clearly identifying whether they describe an item, retail package or historical international parcel." },
+    { type: "p", text: "Turn each signal into a decision question. A slow seller history asks whether your deadline can tolerate another delay. Repeated sizing comments ask for a warehouse measurement using defined endpoints. Large dimensions ask for a live packed estimate before route approval. A recurring cosmetic issue asks for a specific close-up. Signals become useful when they change what you verify; a dashboard copied without an action is merely decoration." },
+    { type: "p", text: "Compare alternatives using the same columns and the same tolerance. Do not reward one listing for having more data while treating missing fields on another as zero risk. Write ‘unknown’ where evidence is absent. If a small sample conflicts with a larger set of current order evidence, explain the conflict. Product Intelligence is best used to prioritize questions, not to manufacture a single universal score." },
+    { type: "p", text: "After your own item arrives, replace historical expectations with current evidence wherever possible. Save the actual warehouse time, measured dimensions, visible condition and resolution. Over repeated purchases, this creates a personal reference set tied to products and methods you understand. It is more useful than remembering only that a seller felt fast or that an item seemed true to size." },
+    { type: "p", text: "For fit decisions, measure a garment or shoe you already use with the same endpoints shown in the warehouse frame. Compare widths with widths and internal shoe length with internal shoe length. Allow for soft fabric placement and manual measurement variation, then set a tolerance based on how the reference actually fits. Size letters alone are weak comparison points because charts and grading methods vary by listing. If the photographed ruler or endpoint is unclear, request a repeat rather than reading precision into a blurred mark." },
+    { type: "p", text: "Publish the checked date beside any platform feature description. FindQC can change which fields appear, how reports are labeled or which records qualify for Premium summaries. A dated observation and direct primary-source link lets readers verify the current interface. It also keeps an evergreen guide honest when a tool evolves after publication." },
+  ] },
+  "shipping-cost-checklist": { id: "cost-worked-example", title: "10. Worked example: estimate without publishing a fake quote", blocks: [
+    { type: "p", text: "Suppose you are considering a light jacket and boxed shoes. During discovery, record product prices and any stated domestic delivery, but leave service fees and international freight as separate unknowns. Historical Premium dimensions may show that the shoe box creates volume risk. Create two scenarios: retain the box with reinforcement, or remove it and use protective packing. Do not attach a final dollar figure until a current eligible route and its rules are known." },
+    { type: "p", text: "When both items reach the warehouse, replace estimated weights with the agent’s measurements and confirm each item through its own QC set. Ask for packed dimensions for the scenario you intend to use. Apply the current route’s volumetric divisor, minimum increment and size limits exactly as shown by the provider. Compare the result with actual weight and use whichever billable rule the route states. Keep currency and quote date visible." },
+    { type: "p", text: "The cheapest headline may not be the best total decision. Check tracking, expected range, category restrictions, compensation terms, tax handling and the value of the packaging removed. If the difference between routes is small, consistency or protection may matter more. If the parcel is near a size threshold, allow room for measurement and packing variation rather than budgeting to the last unit." },
+    { type: "p", text: "Approve only after the source options, warehouse condition, packing plan and live route quote agree. Save the evidence as one record. This approach gives readers a real method without inventing a universal shipping price, because freight depends on destination, date, packed dimensions, billable weight, restrictions and the third-party service selected." },
+    { type: "p", text: "Taxes and customs handling also need current, destination-specific verification. Avoid promising that a line is tax-free, seizure-proof or guaranteed to clear. Record exactly what the provider states, who collects any tax, what value is declared under the applicable process and which documents must accompany the parcel. Regulations and carrier practices can change. For an SEO guide, a clear checklist and links to current official terms are more useful than copying an old buyer’s total and presenting it as today’s rate." },
+    { type: "p", text: "Customer shipping reviews can strengthen an article when their context is preserved. Group experiences by destination, parcel type, route and dispatch month; show the range rather than highlighting only the fastest delivery. Identify whether tracking, packaging and support were part of the review. Remove personal order details and do not call a small convenience sample representative. The purpose is to expose decision factors and recurring problems, not to manufacture a universal delivery promise." },
+  ] },
+};
+
+for (const article of articles) {
+  article.sections.push(...(articleExtensions[article.slug] || []));
+  if (articleConclusions[article.slug]) article.sections.push(articleConclusions[article.slug]);
+}
 
 export function getArticle(slug) {
   return articles.find((article) => article.slug === slug);
