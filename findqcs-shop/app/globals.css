@@ -609,8 +609,8 @@ body { color:var(--ink); font-family:Inter,ui-sans-serif,-apple-system,BlinkMacS
   .home-page .search-row { grid-template-columns:auto 1fr auto; gap:4px; }
   .home-page .search-icon { padding-left:6px; font-size:20px; }
   .home-page .search-row input { height:39px; font-size:10px; }
-  .home-page .search-row button { grid-column:auto; height:39px; padding-inline:10px; border-radius:9px; font-size:9px; }
-  .home-page .search-desk>p { margin:5px 8px 2px; font-size:8px; line-height:1.3; }
+  .home-page .search-row button { grid-column:auto; height:39px; padding-inline:10px; border-radius:9px; font-size:10px; }
+  .home-page .search-desk>p { margin:5px 8px 2px; font-size:9px; line-height:1.3; }
   .home-page .hero-trust { gap:4px 9px; margin-top:9px; font-size:7px; }
 
   .home-page .finder-visual { width:min(330px,100%); min-height:225px; }
@@ -645,8 +645,8 @@ body { color:var(--ink); font-family:Inter,ui-sans-serif,-apple-system,BlinkMacS
   .home-page .compact-category-grid .category-tile:last-child { grid-column:auto; }
   .home-page .category-tile { min-height:67px; grid-template-columns:auto 1fr; gap:6px; padding:7px; border-radius:11px; }
   .home-page .category-tile>span { width:27px; height:27px; border-radius:8px; font-size:7px; }
-  .home-page .category-tile b { font-size:9px; overflow-wrap:anywhere; }
-  .home-page .category-tile small { font-size:6px; line-height:1.15; }
+  .home-page .category-tile b { font-size:10px; overflow-wrap:anywhere; }
+  .home-page .category-tile small { font-size:7px; line-height:1.15; }
   .home-page .category-tile i { display:none; }
 
   .home-page .section-block { padding-top:26px; padding-bottom:26px; }
@@ -655,53 +655,53 @@ body { color:var(--ink); font-family:Inter,ui-sans-serif,-apple-system,BlinkMacS
   .home-page .product-image { height:121px; }
   .home-page .checked-pill { left:6px; bottom:6px; padding:4px 6px; font-size:6px; }
   .home-page .product-body { padding:7px; }
-  .home-page .product-meta { font-size:6px; }
-  .home-page .product-body h3 { min-height:27px; margin:5px 0 6px; font-size:11px; line-height:1.15; }
+  .home-page .product-meta { font-size:7px; }
+  .home-page .product-body h3 { min-height:29px; margin:5px 0 6px; font-size:12px; line-height:1.15; }
   .home-page .price-line { display:flex; flex-direction:row; align-items:baseline; gap:4px; }
   .home-page .price-line strong { font-size:14px; }
   .home-page .price-line span { font-size:6px; }
   .home-page .product-foot { display:flex; flex-direction:row; gap:4px; margin-top:6px; padding-top:6px; font-size:7px; }
-  .home-page .price-note { margin-top:8px; font-size:7px; line-height:1.3; }
+  .home-page .price-note { margin-top:8px; font-size:8px; line-height:1.3; }
 
   .home-page .qc-section { padding:27px 0; }
   .home-page .qc-grid { gap:17px; }
   .home-page .qc-intro h2 { margin:7px 0 9px; font-size:27px; letter-spacing:-1.5px; }
-  .home-page .qc-intro p { margin:0; font-size:10px; line-height:1.4; }
-  .home-page .button-light { gap:18px; margin-top:11px; padding:9px 12px; font-size:8px; }
+  .home-page .qc-intro p { margin:0; font-size:11px; line-height:1.4; }
+  .home-page .button-light { gap:18px; margin-top:11px; padding:9px 12px; font-size:9px; }
   .home-page .qc-steps { gap:6px; }
   .home-page .qc-steps li,.home-page .qc-steps li:nth-child(even) { min-height:88px; padding:9px 8px; border-radius:10px; }
   .home-page .qc-steps>li>span { margin-bottom:4px; font-size:7px; }
-  .home-page .qc-steps b { font-size:10px; }
-  .home-page .qc-steps p { margin-top:3px; font-size:8px; line-height:1.25; }
+  .home-page .qc-steps b { font-size:11px; }
+  .home-page .qc-steps p { margin-top:3px; font-size:9px; line-height:1.25; }
 
   .home-page .research-entry-grid { grid-template-columns:1fr 1fr; gap:6px; margin-bottom:10px; }
   .home-page .research-entry-grid>a { min-height:110px; padding:11px; border-radius:12px; }
-  .home-page .research-entry-grid small { font-size:6px; }
-  .home-page .research-entry-grid strong { margin:5px 0; font-size:13px; line-height:1.1; }
-  .home-page .research-entry-grid span { font-size:8px; line-height:1.25; }
+  .home-page .research-entry-grid small { font-size:7px; }
+  .home-page .research-entry-grid strong { margin:5px 0; font-size:14px; line-height:1.1; }
+  .home-page .research-entry-grid span { font-size:9px; line-height:1.25; }
   .home-page .article-grid { grid-template-columns:1fr 1fr; gap:6px; }
   .home-page .article-card,.home-page .article-card:nth-child(2),.home-page .article-card:nth-child(3) { min-height:188px; padding:11px; border-radius:12px; }
   .home-page .article-card::before { width:31px; height:4px; margin-bottom:4px; }
-  .home-page .article-card-top { font-size:6px; }
-  .home-page .article-card h3 { margin:10px 0 6px; font-size:14px; line-height:1.08; letter-spacing:-.4px; }
-  .home-page .article-card p { font-size:9px; line-height:1.3; }
-  .home-page .text-link { padding-top:8px; font-size:8px; }
+  .home-page .article-card-top { font-size:7px; }
+  .home-page .article-card h3 { margin:10px 0 6px; font-size:15px; line-height:1.08; letter-spacing:-.4px; }
+  .home-page .article-card p { font-size:10px; line-height:1.3; }
+  .home-page .text-link { padding-top:8px; font-size:9px; }
   .home-page .article-card:last-child { grid-column:1/-1; min-height:132px; }
 
   .home-page .faq-preview { gap:15px; padding-top:26px; padding-bottom:28px; }
   .home-page .faq-label h2 { margin:7px 0 11px; font-size:27px; letter-spacing:-1.2px; }
-  .home-page .faq-label>a { font-size:8px; }
-  .home-page .faq-list summary { gap:8px; padding:10px 0; font-size:10px; }
-  .home-page .faq-list details p { margin:0 18px 10px 0; font-size:9px; line-height:1.35; }
+  .home-page .faq-label>a { font-size:9px; }
+  .home-page .faq-list summary { gap:8px; padding:10px 0; font-size:11px; }
+  .home-page .faq-list details p { margin:0 18px 10px 0; font-size:10px; line-height:1.35; }
 
   .home-page + .site-footer { padding-top:24px; }
   .home-page + .site-footer .footer-grid { grid-template-columns:.85fr 1.15fr; gap:15px; padding-bottom:19px; }
   .home-page + .site-footer .logo-image { width:31px; height:31px; }
   .home-page + .site-footer .logo { font-size:14px; }
-  .home-page + .site-footer .footer-copy { margin-top:9px; font-size:8px; line-height:1.35; }
+  .home-page + .site-footer .footer-copy { margin-top:9px; font-size:9px; line-height:1.35; }
   .home-page + .site-footer .footer-links { gap:13px; }
   .home-page + .site-footer .footer-links div { gap:5px; }
   .home-page + .site-footer .footer-links strong { font-size:7px; }
-  .home-page + .site-footer .footer-links a { font-size:8px; line-height:1.2; }
+  .home-page + .site-footer .footer-links a { font-size:9px; line-height:1.2; }
   .home-page + .site-footer .legal-line { gap:8px; padding-block:10px; font-size:6px; line-height:1.25; }
 }
