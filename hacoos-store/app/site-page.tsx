@@ -30,6 +30,7 @@ import { articleExpansions } from "./article-expansions";
 import {
   evidenceFacts,
   pageChecklists,
+  pageExplanations,
   researchBasis,
   ui,
   type ArticleKey,
@@ -53,15 +54,20 @@ const articleKeys: PageKey[] = [
 ];
 
 const detailIcons: Partial<Record<PageKey, typeof ShieldCheck>> = {
+  spreadsheet: Search,
+  finds: PackageCheck,
+  categories: Search,
   "qc-guide": ShieldCheck,
   shipping: Truck,
   guide: BookOpen,
+  articles: BookOpen,
+  faq: CircleAlert,
 };
 
 function Logo({ locale }: { locale: Locale }) {
   return (
     <a className="logo" href={routeFor(locale, "home")} aria-label={copy[locale].pageLabels.home.title}>
-      <img src="/hacoo-logo.png" alt="Hacoo" />
+      <img src="/hacoo-logo.png" alt="Hacoo" width={200} height={64} />
     </a>
   );
 }
@@ -160,7 +166,7 @@ function ProductGrid({ locale, limit }: { locale: Locale; limit?: number }) {
         <article className="product-card" key={product.id}>
           <a href={product.href} target="_blank" rel="nofollow sponsored noopener" className="product-image" aria-label={`${t.openListing}: ${u.productNames[product.id]}`}>
             {/* Remote images stay source-matched; no proxy or local substitution. */}
-            <img src={product.image} alt={u.productNames[product.id]} loading="lazy" />
+            <img src={product.image} alt={u.productNames[product.id]} loading="lazy" decoding="async" width={800} height={656} />
             <span><Check />{t.sourceChecked}</span>
           </a>
           <div className="product-body">
@@ -281,11 +287,11 @@ function HomePage({ locale }: { locale: Locale }) {
         <aside className="hero-aside">
           <span>{u.liveIndex}</span>
           <a className="hero-feature hero-feature-main" href={products[0].href} target="_blank" rel="nofollow sponsored noopener">
-            <img src={products[0].image} alt={u.productNames[products[0].id]} />
+            <img src={products[0].image} alt={u.productNames[products[0].id]} loading="lazy" decoding="async" fetchPriority="low" width={720} height={720} />
             <em>01</em>
           </a>
           <a className="hero-feature hero-feature-small" href={products[3].href} target="_blank" rel="nofollow sponsored noopener">
-            <img src={products[3].image} alt={u.productNames[products[3].id]} />
+            <img src={products[3].image} alt={u.productNames[products[3].id]} loading="lazy" decoding="async" fetchPriority="low" width={720} height={720} />
             <em>02</em>
           </a>
           <div className="hero-stat"><b>08</b><small>{u.matchedFinds}</small></div>
@@ -361,7 +367,7 @@ function ArticlePage({ locale, pageKey }: { locale: Locale; pageKey: ArticleKey 
       <EvidenceGrid locale={locale} />
       <figure className="article-figure">
         <a href={figureProduct.href} target="_blank" rel="nofollow sponsored noopener">
-          <img src={figureProduct.image} alt={`${u.exampleImage}: ${u.productNames[figureProduct.id]}`} loading="lazy" />
+          <img src={figureProduct.image} alt={`${u.exampleImage}: ${u.productNames[figureProduct.id]}`} loading="lazy" decoding="async" width={900} height={720} />
         </a>
         <figcaption><b>{u.exampleImage}</b><span>{u.figureCaption}</span></figcaption>
       </figure>
@@ -429,6 +435,7 @@ function InteriorPage({ locale, pageKey }: { locale: Locale; pageKey: PageKey })
           <div className="detail-icon"><DetailIcon aria-hidden="true" /></div>
           <div>
             <span className="kicker">{u.practicalChecklist}</span>
+            {pageExplanations[locale][pageKey] && <p className="checklist-explanation">{pageExplanations[locale][pageKey]}</p>}
             <ol className="checklist">{checklist.map((item, index) => <li key={item}><b>0{index + 1}</b><span>{item}</span></li>)}</ol>
           </div>
         </section>
