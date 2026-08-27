@@ -8,7 +8,7 @@ function canonicalUrl(path, locale = "en") {
 }
 
 export default function sitemap() {
-  const now = new Date("2026-08-26");
+  const now = new Date("2026-08-27");
   const localizedCore = ["/", "/spreadsheet", "/categories", "/guides", "/faq", "/about"].flatMap((path) =>
     LOCALES.map((locale) => ({
       url: canonicalUrl(path, locale),

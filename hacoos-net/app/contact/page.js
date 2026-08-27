@@ -1,4 +1,5 @@
 import { createPageMetadata } from "../seo";
+import { languageAlternates } from "../i18n";
 
-export const metadata=createPageMetadata({title:"Contact Hacoos",description:"Contact the independent Hacoos editorial guide about corrections, broken links, content updates or rights concerns.",path:"/contact",alternates:{canonical:"/contact/"}});
+export const metadata=createPageMetadata({title:"Contact Hacoos",description:"Contact the independent Hacoos editorial guide about corrections, broken links, content updates or rights concerns.",path:"/contact",alternates:languageAlternates("/contact","en")});
 export default function Contact(){return <section className="page-hero simple-hero full-page"><div className="wrap narrow"><span className="section-label">Contact</span><h1>Corrections<br/><em>make guides better.</em></h1><p>The editorial contact address will be activated when the custom domain is connected. For this review build, please send factual corrections, broken-link reports or rights concerns through the same channel that shared the preview with you, and include the exact Hacoos page URL.</p><div className="contact-note"><strong>Important</strong><p>Hacoos does not process orders and cannot provide support for transactions made on an external website.</p></div></div></section>}

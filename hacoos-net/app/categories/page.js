@@ -3,7 +3,7 @@ import { categories, categoryResearch } from "../data";
 import { languageAlternates } from "../i18n";
 import { createPageMetadata } from "../seo";
 
-export const metadata = createPageMetadata({ title: "Hacoo Spreadsheet Categories & Product Links", description: "Browse focused Hacoo category routes for shoes, headwear, hoodies, T-shirts, jackets, pants, accessories and electronics.", path: "/categories", alternates: languageAlternates("/categories", "en") });
+export const metadata = createPageMetadata({ title: "Hacoo Finds Categories & Verified Product Links", description: "Browse focused Hacoo finds routes for shoes, headwear, hoodies, T-shirts, jackets, pants, accessories and electronics, with current title-and-image-matched references.", path: "/categories", alternates: languageAlternates("/categories", "en") });
 
 export default function CategoriesPage() {
   return <><section className="page-hero simple-hero"><div className="wrap"><span className="section-label">Category directory</span><h1>Find the closest<br/><em>product route.</em></h1><p>Eight focused starting points, each with a purpose-built checklist and a direct route into current destination catalog information.</p></div></section><section className="section wrap"><div className="category-grid">{categories.map((c,i)=><CategoryCard category={c} index={i} key={c.slug}/>)}</div></section>
