@@ -29,6 +29,19 @@ const worker = {
   async fetch(request: Request, env: Env, ctx: ExecutionContext): Promise<Response> {
     const url = new URL(request.url);
 
+    // Keep one crawlable origin. The apex host is canonical across metadata,
+    // hreflang and the sitemap, so alternate protocol/host requests must not
+    // return a second copy of the site.
+    if (
+      url.hostname === "www.hacoos.pro" ||
+      (url.hostname === "hacoos.pro" && url.protocol === "http:")
+    ) {
+      url.protocol = "https:";
+      url.hostname = "hacoos.pro";
+      url.port = "";
+      return Response.redirect(url.toString(), 308);
+    }
+
     if (url.pathname === "/_vinext/image") {
       const allowedWidths = [...DEFAULT_DEVICE_SIZES, ...DEFAULT_IMAGE_SIZES];
       return handleImageOptimization(request, {
@@ -40,7 +53,30 @@ const worker = {
       }, allowedWidths);
     }
 
-    return handler.fetch(request, env, ctx);
+    const response = await handler.fetch(request, env, ctx);
+    if (request.method !== "GET" || response.status !== 200) return response;
+
+    const contentType = response.headers.get("content-type") ?? "";
+    const cacheableDocument =
+      contentType.includes("text/html") ||
+      url.pathname === "/sitemap.xml" ||
+      url.pathname === "/robots.txt";
+
+    if (!cacheableDocument) return response;
+
+    const headers = new Headers(response.headers);
+    // Browsers revalidate; Cloudflare may reuse a fresh edge response for one
+    // hour and serve it stale while the next version is fetched.
+    headers.set(
+      "Cache-Control",
+      "public, max-age=0, must-revalidate, s-maxage=3600, stale-while-revalidate=86400",
+    );
+
+    return new Response(response.body, {
+      status: response.status,
+      statusText: response.statusText,
+      headers,
+    });
   },
 };
 

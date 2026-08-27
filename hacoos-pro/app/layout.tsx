@@ -4,11 +4,11 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL("https://hacoos.pro"),
   title: {
-    default: "Hacoos Spreadsheet 2026 — Product Links, QC & Guides",
+    default: "Hacoo Evidence & Buyer Verification | Hacoos.pro",
     template: "%s | Hacoos",
   },
   description:
-    "Independent Hacoo spreadsheet guide with checked product links, category routes, QC guidance, sizing help and shipping research.",
+    "Independent Hacoo evidence desk for checking official policy dates, regional visibility, listing changes and buyer records.",
   robots: { index: true, follow: true },
   icons: {
     icon: "/favicon.svg",

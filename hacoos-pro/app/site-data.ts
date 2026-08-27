@@ -227,6 +227,167 @@ for (const locale of ["de", "fr", "es", "it"] as const) {
   copy[locale].pageLabels = Object.fromEntries(pageKeys.map((key) => [key, { title: titles[locale][key], intro: intros[locale][key] }])) as Copy["pageLabels"];
 }
 
+const evidencePositioning: Record<Locale, {
+  badge: string;
+  heroTitle: string;
+  heroText: string;
+  pages: Partial<Record<PageKey, { title: string; intro: string }>>;
+  shippingAnswer: string;
+}> = {
+  en: {
+    badge: "Independent evidence desk · checked 27 Aug 2026",
+    heroTitle: "Verify Hacoo claims before you rely on them.",
+    heroText: "An independent buyer-evidence desk for checking official policy dates, regional visibility, listing changes and the records worth saving before and after an order.",
+    pages: {
+      home: { title: "Hacoo Evidence & Buyer Verification", intro: "Independent checks for official policy dates, listing changes, regional visibility and buyer evidence." },
+      spreadsheet: { title: "Hacoo Evidence Tracker", intro: "Use a dated verification record to separate current source evidence from copied or expired spreadsheet claims." },
+      finds: { title: "Hacoo Listing Change Records", intro: "Source-matched examples showing which identifiers, variants, dates and destination details should be rechecked." },
+      categories: { title: "Hacoo Category Evidence Checks", intro: "Category-specific verification points for size, materials, variants and missing listing evidence." },
+      "qc-guide": { title: "Hacoo Buyer Evidence Photo Guide", intro: "Document identity, construction, measurements and defects without treating a photo as a guarantee." },
+      shipping: { title: "Hacoo Shipping Evidence Guide", intro: "Current official receiving ranges, processing wording, destination differences and the records to preserve." },
+      guide: { title: "Hacoo Listing Verification Workflow", intro: "Check source, date, region, product ID and selected variant before relying on a shared claim." },
+      faq: { title: "Hacoo Buyer Evidence FAQ", intro: "Verified answers about official statements, changing listings, regional visibility, delivery and buyer records." },
+      articles: { title: "Hacoo Evidence & Verification Research", intro: "Long-form analysis for checking claims, preserving context and making buyer evidence easier to audit." },
+    },
+    shippingAnswer: "Hacoo says receiving time is usually 15–28 days and processing normally takes 3–5 business days. Its current destination estimates are 15–25 days for the UK, France, Germany and Italy; 15–30 days for Spain; and 25–65 days for other countries.",
+  },
+  de: {
+    badge: "Unabhängiger Evidenz-Desk · geprüft am 27.08.2026",
+    heroTitle: "Prüfe Hacoo-Aussagen, bevor du dich darauf verlässt.",
+    heroText: "Ein unabhängiger Evidenz-Desk für offizielle Richtlinienstände, regionale Sichtbarkeit, Listing-Änderungen und Unterlagen vor und nach einer Bestellung.",
+    pages: {
+      home: { title: "Hacoo Evidenz & Käuferprüfung", intro: "Unabhängige Prüfungen zu Richtlinienständen, Listing-Änderungen, regionaler Sichtbarkeit und Käuferbelegen." },
+      spreadsheet: { title: "Hacoo Evidenz-Tracker", intro: "Trenne aktuelle Quellenbelege mit Datum von kopierten oder veralteten Tabellenangaben." },
+      finds: { title: "Hacoo Listing-Änderungsprotokoll", intro: "Abgeglichene Beispiele zeigen, welche IDs, Varianten, Daten und Zielangaben erneut geprüft werden müssen." },
+      categories: { title: "Hacoo Kategorie-Evidenzprüfungen", intro: "Kategoriespezifische Prüfungen für Maße, Materialien, Varianten und fehlende Listing-Belege." },
+      "qc-guide": { title: "Hacoo Foto-Evidenzguide", intro: "Identität, Verarbeitung, Maße und Mängel dokumentieren, ohne Fotos als Garantie zu behandeln." },
+      shipping: { title: "Hacoo Versand-Evidenzguide", intro: "Aktuelle offizielle Empfangszeiten, Bearbeitung, Zielunterschiede und aufzubewahrende Nachweise." },
+      guide: { title: "Hacoo Listing-Prüfablauf", intro: "Quelle, Datum, Region, Produkt-ID und Variante prüfen, bevor eine geteilte Aussage verwendet wird." },
+      faq: { title: "Hacoo Käufer-Evidenz FAQ", intro: "Geprüfte Antworten zu offiziellen Aussagen, Listing-Änderungen, Region, Lieferung und Käuferunterlagen." },
+      articles: { title: "Hacoo Evidenz- & Verifikationsrecherche", intro: "Ausführliche Analysen zum Prüfen von Aussagen, Sichern von Kontext und nachvollziehbaren Belegen." },
+    },
+    shippingAnswer: "Hacoo nennt gewöhnlich 15–28 Tage Empfangszeit und 3–5 Werktage Bearbeitung. Aktuell gelten 15–25 Tage für UK, Frankreich, Deutschland und Italien, 15–30 Tage für Spanien und 25–65 Tage für andere Länder.",
+  },
+  fr: {
+    badge: "Bureau de preuves indépendant · vérifié le 27 août 2026",
+    heroTitle: "Vérifiez les affirmations Hacoo avant de vous y fier.",
+    heroText: "Un bureau indépendant pour vérifier la date des politiques, la visibilité régionale, les changements de fiche et les preuves à conserver avant et après une commande.",
+    pages: {
+      home: { title: "Preuves Hacoo & vérification acheteur", intro: "Contrôles indépendants des politiques, changements de fiche, visibilité régionale et preuves d’achat." },
+      spreadsheet: { title: "Suivi des preuves Hacoo", intro: "Distinguez les sources actuelles et datées des affirmations copiées ou périmées d’un tableur." },
+      finds: { title: "Registre des changements de fiches Hacoo", intro: "Des exemples rapprochés montrent quels identifiants, variantes, dates et destinations revérifier." },
+      categories: { title: "Contrôles de preuves Hacoo par catégorie", intro: "Points propres à chaque catégorie: taille, matière, variante et informations manquantes." },
+      "qc-guide": { title: "Guide photo des preuves acheteur Hacoo", intro: "Documentez identité, fabrication, mesures et défauts sans transformer une photo en garantie." },
+      shipping: { title: "Guide des preuves de livraison Hacoo", intro: "Délais officiels actuels, traitement, différences par destination et pièces à conserver." },
+      guide: { title: "Méthode de vérification des fiches Hacoo", intro: "Vérifiez source, date, région, identifiant et variante avant de reprendre une affirmation partagée." },
+      faq: { title: "FAQ des preuves acheteur Hacoo", intro: "Réponses vérifiées sur déclarations officielles, changements, région, livraison et justificatifs." },
+      articles: { title: "Recherche Hacoo sur les preuves et la vérification", intro: "Analyses approfondies pour contrôler les affirmations et préserver un contexte vérifiable." },
+    },
+    shippingAnswer: "Hacoo indique généralement 15–28 jours de réception et 3–5 jours ouvrés de traitement. Les estimations actuelles sont de 15–25 jours pour le Royaume-Uni, la France, l’Allemagne et l’Italie, 15–30 jours pour l’Espagne et 25–65 jours pour les autres pays.",
+  },
+  es: {
+    badge: "Mesa independiente de pruebas · revisada el 27 ago 2026",
+    heroTitle: "Verifica las afirmaciones de Hacoo antes de confiar en ellas.",
+    heroText: "Una mesa independiente para comprobar fechas de políticas, visibilidad regional, cambios de ficha y las pruebas que conviene conservar antes y después de un pedido.",
+    pages: {
+      home: { title: "Pruebas Hacoo y verificación del comprador", intro: "Comprobaciones independientes de políticas, cambios de ficha, visibilidad regional y pruebas del comprador." },
+      spreadsheet: { title: "Registro de pruebas Hacoo", intro: "Separa fuentes actuales y fechadas de afirmaciones copiadas o caducadas en una hoja." },
+      finds: { title: "Registro de cambios de fichas Hacoo", intro: "Ejemplos cotejados indican qué ID, variantes, fechas y destinos deben revisarse de nuevo." },
+      categories: { title: "Pruebas Hacoo por categoría", intro: "Comprobaciones específicas de talla, material, variante y datos ausentes según la categoría." },
+      "qc-guide": { title: "Guía fotográfica de pruebas Hacoo", intro: "Documenta identidad, construcción, medidas y defectos sin tratar una foto como garantía." },
+      shipping: { title: "Guía de pruebas de envío Hacoo", intro: "Plazos oficiales actuales, procesamiento, diferencias por destino y documentos que conservar." },
+      guide: { title: "Flujo de verificación de fichas Hacoo", intro: "Comprueba fuente, fecha, región, ID y variante antes de usar una afirmación compartida." },
+      faq: { title: "FAQ de pruebas del comprador Hacoo", intro: "Respuestas verificadas sobre declaraciones oficiales, cambios, región, entrega y documentación." },
+      articles: { title: "Investigación Hacoo de pruebas y verificación", intro: "Análisis detallados para comprobar afirmaciones y conservar un contexto auditable." },
+    },
+    shippingAnswer: "Hacoo indica que la recepción suele tardar 15–28 días y el procesamiento normalmente 3–5 días laborables. Sus estimaciones actuales son 15–25 días para Reino Unido, Francia, Alemania e Italia; 15–30 para España; y 25–65 para otros países.",
+  },
+  it: {
+    badge: "Desk indipendente delle prove · verificato il 27 ago 2026",
+    heroTitle: "Verifica le affermazioni Hacoo prima di farvi affidamento.",
+    heroText: "Un desk indipendente per controllare date delle politiche, visibilità regionale, modifiche alle schede e prove da conservare prima e dopo un ordine.",
+    pages: {
+      home: { title: "Prove Hacoo e verifica dell’acquirente", intro: "Controlli indipendenti su politiche, modifiche alle schede, visibilità regionale e prove d’acquisto." },
+      spreadsheet: { title: "Registro delle prove Hacoo", intro: "Separa fonti attuali e datate dalle affermazioni copiate o scadute in un foglio." },
+      finds: { title: "Registro modifiche delle schede Hacoo", intro: "Esempi abbinati mostrano quali ID, varianti, date e destinazioni ricontrollare." },
+      categories: { title: "Controlli delle prove Hacoo per categoria", intro: "Verifiche specifiche per taglia, materiale, variante e informazioni mancanti." },
+      "qc-guide": { title: "Guida fotografica alle prove Hacoo", intro: "Documenta identità, costruzione, misure e difetti senza considerare una foto una garanzia." },
+      shipping: { title: "Guida alle prove di spedizione Hacoo", intro: "Tempi ufficiali attuali, elaborazione, differenze per destinazione e documenti da conservare." },
+      guide: { title: "Flusso di verifica delle schede Hacoo", intro: "Controlla fonte, data, regione, ID e variante prima di usare un’affermazione condivisa." },
+      faq: { title: "FAQ sulle prove dell’acquirente Hacoo", intro: "Risposte verificate su dichiarazioni ufficiali, modifiche, regione, consegna e documenti." },
+      articles: { title: "Ricerca Hacoo su prove e verifica", intro: "Analisi approfondite per verificare le affermazioni e conservare un contesto controllabile." },
+    },
+    shippingAnswer: "Hacoo indica che la ricezione richiede di solito 15–28 giorni e l’elaborazione normalmente 3–5 giorni lavorativi. Le stime attuali sono 15–25 giorni per Regno Unito, Francia, Germania e Italia, 15–30 per la Spagna e 25–65 per gli altri paesi.",
+  },
+};
+
+const evidenceHomeCopy: Record<Locale, Pick<Copy,
+  "categoriesTitle" | "findsTitle" | "findsText" | "sourceChecked" |
+  "workflowTitle" | "workflow" | "viewAll" | "fieldNotes"
+>> = {
+  en: {
+    categoriesTitle: "Verify evidence by product category",
+    findsTitle: "Source-matched records with visible identifiers",
+    findsText: "Each record keeps the current first image, product ID and a dated USD/CNY price snapshot. These fields help detect change; they do not guarantee availability or quality.",
+    sourceChecked: "Source checked",
+    workflowTitle: "A three-step evidence workflow",
+    workflow: ["Record the claim, source date and real destination region.", "Open the exact listing and compare ID, image and selected variant.", "Save the final selection, official terms and any evidence needed later."],
+    viewAll: "View all verification records",
+    fieldNotes: "Verification notes",
+  },
+  de: {
+    categoriesTitle: "Evidenz nach Produktkategorie prüfen",
+    findsTitle: "Quellenabgleich mit sichtbaren Identifikatoren",
+    findsText: "Jeder Datensatz zeigt aktuelles Titelbild, Produkt-ID und einen datierten USD/CNY-Preisschnappschuss. Das erkennt Änderungen, garantiert aber weder Verfügbarkeit noch Qualität.",
+    sourceChecked: "Quelle geprüft",
+    workflowTitle: "Evidenz in drei Schritten prüfen",
+    workflow: ["Aussage, Quelldatum und echte Zielregion festhalten.", "Exaktes Listing öffnen und ID, Bild sowie Variante vergleichen.", "Endauswahl, offizielle Bedingungen und spätere Nachweise sichern."],
+    viewAll: "Alle Prüfdatensätze ansehen",
+    fieldNotes: "Prüfnotizen",
+  },
+  fr: {
+    categoriesTitle: "Vérifier les preuves par catégorie",
+    findsTitle: "Fiches rapprochées avec identifiants visibles",
+    findsText: "Chaque fiche conserve première image, identifiant produit et instantané USD/CNY daté. Ces champs détectent le changement sans garantir disponibilité ni qualité.",
+    sourceChecked: "Source contrôlée",
+    workflowTitle: "Une vérification des preuves en trois étapes",
+    workflow: ["Noter l’affirmation, la date source et la vraie région de destination.", "Ouvrir la fiche exacte et comparer identifiant, image et variante.", "Conserver sélection finale, conditions officielles et preuves utiles."],
+    viewAll: "Voir tous les dossiers vérifiés",
+    fieldNotes: "Notes de vérification",
+  },
+  es: {
+    categoriesTitle: "Verifica pruebas por categoría",
+    findsTitle: "Registros cotejados con identificadores visibles",
+    findsText: "Cada registro conserva primera imagen, ID y una captura fechada del precio USD/CNY. Sirve para detectar cambios, no para garantizar disponibilidad o calidad.",
+    sourceChecked: "Fuente verificada",
+    workflowTitle: "Un flujo de pruebas en tres pasos",
+    workflow: ["Anota la afirmación, fecha de la fuente y región real de destino.", "Abre la ficha exacta y compara ID, imagen y variante elegida.", "Guarda selección final, condiciones oficiales y pruebas necesarias."],
+    viewAll: "Ver todos los registros verificados",
+    fieldNotes: "Notas de verificación",
+  },
+  it: {
+    categoriesTitle: "Verifica le prove per categoria",
+    findsTitle: "Schede abbinate con identificatori visibili",
+    findsText: "Ogni scheda conserva prima immagine, ID prodotto e istantanea datata del prezzo USD/CNY. Aiuta a rilevare modifiche, non garantisce disponibilità o qualità.",
+    sourceChecked: "Fonte verificata",
+    workflowTitle: "Un flusso di prove in tre passaggi",
+    workflow: ["Registra affermazione, data della fonte e regione reale di destinazione.", "Apri la scheda esatta e confronta ID, immagine e variante.", "Conserva selezione finale, condizioni ufficiali e prove utili."],
+    viewAll: "Vedi tutti i record verificati",
+    fieldNotes: "Note di verifica",
+  },
+};
+
+for (const locale of locales) {
+  const positioning = evidencePositioning[locale];
+  copy[locale].badge = positioning.badge;
+  copy[locale].heroTitle = positioning.heroTitle;
+  copy[locale].heroText = positioning.heroText;
+  copy[locale].pageLabels = { ...copy[locale].pageLabels, ...positioning.pages };
+  Object.assign(copy[locale], evidenceHomeCopy[locale]);
+  // The fifth FAQ entry is the delivery-time answer in every locale.
+  copy[locale].faq[4][1] = positioning.shippingAnswer;
+}
+
 export const pageMeta = Object.fromEntries(
   pageKeys.map((page) => [page, Object.fromEntries(locales.map((locale) => [locale, { title: copy[locale].pageLabels[page].title, description: copy[locale].pageLabels[page].intro }]))]),
 ) as Record<PageKey, Record<Locale, { title: string; description: string }>>;
