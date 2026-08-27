@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main>
+      <main className="home-page">
         <section className="hero">
           <div className="shell hero-grid">
             <div className="hero-copy">
