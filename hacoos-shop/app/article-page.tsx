@@ -22,7 +22,8 @@ export function articleMetadata(lang:Lang,slug:ArticleSlug):Metadata{
 export function ArticlePage({lang,slug}:{lang:Lang;slug:ArticleSlug}){
  const article=getArticle(lang,slug);
  const t=ui[lang];
- const schema={"@context":"https://schema.org","@type":"Article",headline:article.title,description:article.description,dateModified:"2026-08-27",inLanguage:lang,mainEntityOfPage:`https://hacoos.shop${articleRoutePath(lang,slug)}`,author:{"@type":"Organization",name:"Hacoos Shop Independent Research Desk"}};
+ const articleUrl=`https://hacoos.shop${articleRoutePath(lang,slug)}`;
+ const schema={"@context":"https://schema.org","@graph":[{"@type":"Article",headline:article.title,description:article.description,datePublished:"2026-08-27T00:00:00+00:00",dateModified:"2026-08-27T00:00:00+00:00",inLanguage:lang,mainEntityOfPage:{"@type":"WebPage","@id":articleUrl},author:{"@type":"Organization",name:"Hacoos Shop Independent Research Desk",url:"https://hacoos.shop/articles/"},publisher:{"@type":"Organization",name:"Hacoos Shop Independent Research Desk",url:"https://hacoos.shop/"}},{"@type":"BreadcrumbList",itemListElement:[{"@type":"ListItem",position:1,name:"Hacoos Shop",item:"https://hacoos.shop/"},{"@type":"ListItem",position:2,name:t.all,item:`https://hacoos.shop${routePath(lang,"articles")}`},{"@type":"ListItem",position:3,name:article.title,item:articleUrl}]}]};
  return <main id="top">
   <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(schema)}}/>
   <div className="statusbar"><span>{t.independent}</span><span>Research checked 27 Aug 2026</span></div>
