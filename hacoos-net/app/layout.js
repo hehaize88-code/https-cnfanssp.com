@@ -4,6 +4,7 @@ import "./mobile.css";
 import "./product.css";
 import "./research-modules.css";
 import "./hacoos-club.css";
+import Script from "next/script";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import StructuredData from "@/components/StructuredData";
@@ -30,5 +31,14 @@ export default function RootLayout({ children }) {
     { "@type": "Organization", "@id": `${SITE_URL}/#organization`, name: "Hacoos", url: SITE_URL, description: "Independent Hacoo spreadsheet discovery and editorial guide." },
     { "@type": "WebSite", "@id": `${SITE_URL}/#website`, url: SITE_URL, name: "Hacoos", publisher: { "@id": `${SITE_URL}/#organization` }, inLanguage: LOCALES }
   ]};
-  return <html lang="en" suppressHydrationWarning><body><StructuredData data={schema}/><Header/><main>{children}</main><Footer/></body></html>;
+  return <html lang="en" suppressHydrationWarning><body>
+    <Script src="https://www.googletagmanager.com/gtag/js?id=G-W7PM5VDRQL" strategy="afterInteractive" />
+    <Script id="google-analytics" strategy="afterInteractive">
+      {`window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag("js", new Date());
+gtag("config", "G-W7PM5VDRQL");`}
+    </Script>
+    <StructuredData data={schema}/><Header/><main>{children}</main><Footer/>
+  </body></html>;
 }
