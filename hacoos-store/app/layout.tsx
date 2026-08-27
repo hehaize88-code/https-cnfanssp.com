@@ -10,7 +10,6 @@ export const metadata: Metadata = {
   },
   description:
     "Independent Hacoo product-link atlas for checking current product IDs, destination routes, first images, variants and category paths.",
-  robots: { index: true, follow: true },
   openGraph: {
     type: "website",
     siteName: "Hacoos Store",
