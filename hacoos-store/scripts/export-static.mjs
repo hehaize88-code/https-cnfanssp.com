@@ -19,6 +19,16 @@ async function fetchPath(pathname) {
   );
 }
 
+function localeFor(pathname) {
+  const match = pathname.match(/^\/(de|fr|es|it)(?:\/|$)/);
+  return match?.[1] ?? "en";
+}
+
+function setDocumentLanguage(html, pathname) {
+  const locale = localeFor(pathname);
+  return html.replace(/<html\s+lang=["'][^"']+["']/, `<html lang="${locale}"`);
+}
+
 await rm(outputDir, { recursive: true, force: true });
 await mkdir(outputDir, { recursive: true });
 await cp(clientDir, outputDir, { recursive: true });
@@ -34,7 +44,7 @@ for (const pageUrl of pageUrls) {
   if (!response.ok) {
     throw new Error(`Static render failed for ${pathname}: ${response.status}`);
   }
-  const html = await response.text();
+  const html = setDocumentLanguage(await response.text(), pathname);
   const relativeFile = pathname === "/" ? "index.html" : `${pathname.slice(1)}.html`;
   const outputFile = join(outputDir, relativeFile);
   await mkdir(dirname(outputFile), { recursive: true });
@@ -47,7 +57,10 @@ await writeFile(join(outputDir, "robots.txt"), await robotsResponse.text());
 await writeFile(join(outputDir, "sitemap.xml"), sitemap);
 
 const notFoundResponse = await fetchPath("/__static-export-not-found__");
-await writeFile(join(outputDir, "404.html"), await notFoundResponse.text());
+const notFoundHtml = setDocumentLanguage(await notFoundResponse.text(), "/")
+  .replace(/<title>.*?<\/title>/, "<title>Page Not Found | Hacoos Store</title>")
+  .replace(/<meta name="robots" content="index, follow"\/>/, '<meta name="robots" content="noindex, follow"/>');
+await writeFile(join(outputDir, "404.html"), notFoundHtml);
 
 const redirects = pageUrls
   .map((pageUrl) => new URL(pageUrl).pathname)
