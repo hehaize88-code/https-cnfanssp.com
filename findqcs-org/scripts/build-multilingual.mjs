@@ -18,11 +18,15 @@ import { fileURLToPath } from "node:url";
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const nextBin = path.join(root, "node_modules", "next", "dist", "bin", "next");
 const buildOut = path.join(root, "out");
-const nextCache = path.join(root, ".next");
 const staging = path.join(root, ".multilingual-out");
 const dist = path.join(root, "dist");
+const buildRun = path.join(root, ".next-build", `run-${Date.now()}`);
 const languages = ["en", "pl", "es", "de", "ro"];
 const localeMap = { en: "en_US", pl: "pl_PL", es: "es_ES", de: "de_DE", ro: "ro_RO" };
+const englishOnlyRoutes = new Set([
+  "/articles/warehouse-measurement-guide",
+  "/articles/shipping-cost-checklist",
+]);
 function retireDirectory(directory, label) {
   if (!existsSync(directory)) return;
   const retiredRoot = mkdtempSync(path.join(tmpdir(), `findqcs-${label}-`));
@@ -63,9 +67,10 @@ function stripMarkup(value) {
 
 function enrichHtml(html, route, language) {
   const canonical = localizedUrl(route, language);
+  const alternatesForRoute = englishOnlyRoutes.has(route) ? ["en"] : languages;
   const links = [
     `<link rel="canonical" href="${canonical}"/>`,
-    ...languages.map((candidate) => `<link rel="alternate" hreflang="${candidate}" href="${localizedUrl(route, candidate)}"/>`),
+    ...alternatesForRoute.map((candidate) => `<link rel="alternate" hreflang="${candidate}" href="${localizedUrl(route, candidate)}"/>`),
     `<link rel="alternate" hreflang="x-default" href="${localizedUrl(route, "en")}"/>`,
   ].join("");
 
@@ -77,39 +82,34 @@ function enrichHtml(html, route, language) {
     .replace(/<meta\s+property="og:url"\s+content="[^"]*"\s*\/?>/i, `<meta property="og:url" content="${canonical}"/>`)
     .replace(/<meta\s+property="og:locale"\s+content="[^"]*"\s*\/?>/i, `<meta property="og:locale" content="${localeMap[language]}"/>`);
 
-  const h1 = output.match(/<h1[^>]*>([\s\S]*?)<\/h1>/i);
-  if (h1) {
-    const pageTitle = stripMarkup(h1[1]);
-    if (pageTitle) output = output.replace(/<title>[\s\S]*?<\/title>/i, `<title>${pageTitle} | FindQCS</title>`);
-  }
-
   return output;
 }
 
-function copyHtmlBuild(language) {
+function copyHtmlBuild(language, sourceRoot) {
   const destination = language === "en" ? staging : path.join(staging, language);
   mkdirSync(destination, { recursive: true });
 
-  for (const source of walk(buildOut, (file) => file.endsWith(".html"))) {
-    const relative = path.relative(buildOut, source);
+  for (const source of walk(sourceRoot, (file) => file.endsWith(".html"))) {
+    const relative = path.relative(sourceRoot, source);
     if (language !== "en" && ["404.html", "_not-found.html"].includes(relative)) continue;
     const target = path.join(destination, relative);
     mkdirSync(path.dirname(target), { recursive: true });
     writeFileSync(target, enrichHtml(readFileSync(source, "utf8"), routeFromHtml(relative), language));
   }
 
-  const nextAssets = path.join(buildOut, "_next");
+  const nextAssets = path.join(sourceRoot, "_next");
   if (existsSync(nextAssets)) cpSync(nextAssets, path.join(destination, "_next"), { recursive: true });
 
-  const manifest = path.join(buildOut, "manifest.webmanifest");
+  const manifest = path.join(sourceRoot, "manifest.webmanifest");
   if (existsSync(manifest)) cpSync(manifest, path.join(destination, "manifest.webmanifest"));
 }
 
 function buildSitemap(routes) {
   const lastmod = new Date().toISOString().slice(0, 10);
-  const entries = routes.flatMap((route) => languages.map((language) => {
+  const entries = routes.flatMap((route) => (englishOnlyRoutes.has(route) ? ["en"] : languages).map((language) => {
+    const alternatesForRoute = englishOnlyRoutes.has(route) ? ["en"] : languages;
     const alternates = [
-      ...languages.map((candidate) => `    <xhtml:link rel="alternate" hreflang="${candidate}" href="${localizedUrl(route, candidate)}" />`),
+      ...alternatesForRoute.map((candidate) => `    <xhtml:link rel="alternate" hreflang="${candidate}" href="${localizedUrl(route, candidate)}" />`),
       `    <xhtml:link rel="alternate" hreflang="x-default" href="${localizedUrl(route, "en")}" />`,
     ].join("\n");
     return `  <url>\n    <loc>${localizedUrl(route, language)}</loc>\n${alternates}\n    <lastmod>${lastmod}</lastmod>\n  </url>`;
@@ -122,35 +122,38 @@ rmSync(staging, { recursive: true, force: true });
 let indexableRoutes = [];
 
 for (const language of languages) {
-  retireDirectory(buildOut, `out-${language}`);
-  retireDirectory(nextCache, `next-${language}`);
+  const languageOut = path.join(buildRun, language);
 
   const result = spawnSync(process.execPath, [nextBin, "build"], {
     cwd: root,
-    env: { ...process.env, NEXT_PUBLIC_SITE_LANGUAGE: language },
+    env: {
+      ...process.env,
+      NEXT_PUBLIC_SITE_LANGUAGE: language,
+      NEXT_BUILD_DIR: path.relative(root, path.join(buildRun, language)),
+    },
     stdio: "inherit",
   });
   if (result.status !== 0) process.exit(result.status ?? 1);
 
   if (language === "en") {
-    const sourceSitemap = readFileSync(path.join(buildOut, "sitemap.xml"), "utf8");
+    const sourceSitemap = readFileSync(path.join(languageOut, "sitemap.xml"), "utf8");
     indexableRoutes = [...sourceSitemap.matchAll(/<loc>https:\/\/findqcs\.org([^<]*)<\/loc>/g)]
       .map((match) => match[1] || "/");
 
-    for (const source of walk(buildOut, (file) => {
-      const relative = path.relative(buildOut, file).split(path.sep).join("/");
+    for (const source of walk(languageOut, (file) => {
+      const relative = path.relative(languageOut, file).split(path.sep).join("/");
       return !relative.startsWith("_next/")
         && !relative.endsWith(".html")
         && !relative.endsWith(".txt")
         && !["sitemap.xml", "robots.txt"].includes(relative);
     })) {
-      const target = path.join(staging, path.relative(buildOut, source));
+      const target = path.join(staging, path.relative(languageOut, source));
       mkdirSync(path.dirname(target), { recursive: true });
       cpSync(source, target);
     }
   }
 
-  copyHtmlBuild(language);
+  copyHtmlBuild(language, languageOut);
 }
 
 writeFileSync(path.join(staging, "sitemap.xml"), buildSitemap(indexableRoutes));
@@ -158,6 +161,7 @@ writeFileSync(path.join(staging, "robots.txt"), "User-Agent: *\nAllow: /\nSitema
 
 rmSync(buildOut, { recursive: true, force: true });
 renameSync(staging, buildOut);
+rmSync(buildRun, { recursive: true, force: true });
 
 rmSync(dist, { recursive: true, force: true });
 mkdirSync(path.join(dist, "client"), { recursive: true });
@@ -172,6 +176,11 @@ writeFileSync(path.join(dist, "server", "index.js"), `function withHeaders(respo
   const headers = new Headers(response.headers);
   headers.set("X-Content-Type-Options", "nosniff");
   headers.set("Referrer-Policy", "strict-origin-when-cross-origin");
+  if ((headers.get("Content-Type") || "").includes("text/html")) {
+    headers.set("Cache-Control", "public, max-age=0, s-maxage=86400, stale-while-revalidate=604800");
+  } else {
+    headers.set("Cache-Control", "public, max-age=31536000, immutable");
+  }
   return new Response(response.body, { status: response.status, statusText: response.statusText, headers });
 }
 

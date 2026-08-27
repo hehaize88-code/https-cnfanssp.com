@@ -8,6 +8,7 @@ import { CATALOG_REVIEWED, categories, products } from "../../../lib/data";
 import { BUILD_LANGUAGE, languageUrl } from "../../../lib/routing";
 import { translate } from "../../../lib/i18n";
 import { localizedMetadata } from "../../../lib/seo";
+import { INDEXABLE_PRODUCT_IDS } from "../../sitemap";
 
 export function generateStaticParams() {
   return products.map(({ id }) => ({ id }));
@@ -27,6 +28,7 @@ export async function generateMetadata({ params }) {
     title: `${productName} — FindQCS`,
     description: categoryDescription,
     openGraph: { title: `${productName} | FindQCS`, description: categoryDescription, images: [{ url: product.image }] },
+    robots: { index: INDEXABLE_PRODUCT_IDS.has(product.id), follow: true },
   }, `/finds/${product.id}`);
 }
 
@@ -52,10 +54,20 @@ export default async function FindDetailPage({ params }) {
       { "@type": "PropertyValue", name: "Catalog route reviewed", value: CATALOG_REVIEWED },
     ],
   };
+  const breadcrumbLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "FindQCS", item: languageUrl("/") },
+      { "@type": "ListItem", position: 2, name: translate(BUILD_LANGUAGE, "finds.crumb"), item: languageUrl("/products") },
+      { "@type": "ListItem", position: 3, name: product.name, item: languageUrl(`/finds/${product.id}`) },
+    ],
+  };
 
   return (
     <article className="shell inner-page find-detail-page">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(productLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
       <Breadcrumbs items={[{ labelKey: "finds.crumb", href: "/products" }, { labelKey: `product.name.${product.id}`, label: product.name }]} />
       <div className="find-detail-hero">
         <figure><img src={product.image} alt={product.name} fetchPriority="high" /><figcaption><T id="finds.caption" values={{ date: CATALOG_REVIEWED }} /></figcaption></figure>
