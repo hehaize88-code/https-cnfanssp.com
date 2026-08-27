@@ -1,4 +1,4 @@
-import "./globals.css";
+import Script from "next/script";\nimport "./globals.css";
 import SiteHeader from "../components/SiteHeader";
 import Footer from "../components/Footer";
 import LanguageProvider from "../components/LanguageProvider";
@@ -49,6 +49,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang={DEFAULT_LANGUAGE}>
       <body>
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-3H09E182KX" strategy="afterInteractive" />
+        <Script id="google-analytics" strategy="afterInteractive">{`window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag("js", new Date());
+gtag("config", "G-3H09E182KX");`}</Script>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
         <LanguageProvider>
           <SiteHeader />
