@@ -1,5 +1,6 @@
 import { PAGE_TRANSLATIONS } from "./pageTranslations";
 import { EXTRA_TRANSLATIONS } from "./extraTranslations";
+import { DEEP_TRANSLATIONS } from "./deepTranslations";
 
 export const LANGUAGE_OPTIONS = [
   { code: "en", label: "English" },
@@ -18,6 +19,7 @@ export const TRANSLATIONS = {
   en: {
     ...PAGE_TRANSLATIONS.en,
     ...EXTRA_TRANSLATIONS.en,
+    ...DEEP_TRANSLATIONS.en,
     "language.label": "Language",
     "nav.finds": "Finds",
     "nav.categories": "Categories",
@@ -144,6 +146,7 @@ export const TRANSLATIONS = {
   pl: {
     ...PAGE_TRANSLATIONS.pl,
     ...EXTRA_TRANSLATIONS.pl,
+    ...DEEP_TRANSLATIONS.pl,
     "language.label": "Język",
     "nav.finds": "Znaleziska",
     "nav.categories": "Kategorie",
@@ -270,6 +273,7 @@ export const TRANSLATIONS = {
   es: {
     ...PAGE_TRANSLATIONS.es,
     ...EXTRA_TRANSLATIONS.es,
+    ...DEEP_TRANSLATIONS.es,
     "language.label": "Idioma",
     "nav.finds": "Hallazgos",
     "nav.categories": "Categorías",
@@ -396,6 +400,7 @@ export const TRANSLATIONS = {
   de: {
     ...PAGE_TRANSLATIONS.de,
     ...EXTRA_TRANSLATIONS.de,
+    ...DEEP_TRANSLATIONS.de,
     "language.label": "Sprache",
     "nav.finds": "Fundstücke",
     "nav.categories": "Kategorien",
@@ -522,6 +527,7 @@ export const TRANSLATIONS = {
   ro: {
     ...PAGE_TRANSLATIONS.ro,
     ...EXTRA_TRANSLATIONS.ro,
+    ...DEEP_TRANSLATIONS.ro,
     "language.label": "Limbă",
     "nav.finds": "Produse găsite",
     "nav.categories": "Categorii",

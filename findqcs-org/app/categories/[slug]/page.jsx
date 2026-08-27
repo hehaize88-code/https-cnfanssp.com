@@ -5,7 +5,6 @@ import PageHero from "../../../components/PageHero";
 import ProductCard from "../../../components/ProductCard";
 import { ArrowIcon, CheckIcon, ExternalIcon } from "../../../components/Icons";
 import T from "../../../components/LocalizedText";
-import { categoryGuides } from "../../../lib/categoryGuides";
 import { categories, products } from "../../../lib/data";
 import { localizedMetadata } from "../../../lib/seo";
 
@@ -27,8 +26,8 @@ export default async function CategoryPage({ params }) {
   const { slug } = await params;
   const category = categories.find((item) => item.slug === slug);
   if (!category) notFound();
-  const guide = categoryGuides[category.slug];
   const matches = products.filter((product) => product.category === category.slug);
+  const categoryKey = `category.${category.slug}.name`;
 
   return (
     <div className="shell inner-page">
@@ -54,26 +53,27 @@ export default async function CategoryPage({ params }) {
 
       <article className="category-depth">
         <header className="depth-heading">
-          <span className="eyebrow">Category field guide</span>
-          <h2>How to review {category.name.toLowerCase()} before international shipping</h2>
-          <p>Use the source listing, your recorded order options and the warehouse images together. The goal is to resolve visible, decision-relevant questions—not to turn photographs into a guarantee.</p>
+          <span className="eyebrow"><T id="categoryDepth.eyebrow" /></span>
+          <h2><T id="categoryDepth.title" values={{ category: { id: categoryKey } }} /></h2>
+          <p><T id="categoryDepth.intro" /></p>
         </header>
 
         <div className="category-overview">
-          {guide.overview.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+          <p><T id={`category.${category.slug}.description`} /></p>
+          <p><T id="categoryDepth.overview2" /></p>
         </div>
 
         <section className="buying-advice" aria-labelledby="buying-advice-title">
           <div className="depth-section-label">
             <span>01</span>
-            <div><small>Buying advice</small><h2 id="buying-advice-title">Three decisions to make before approval</h2></div>
+            <div><small><T id="categoryDepth.adviceLabel" /></small><h2 id="buying-advice-title"><T id="categoryDepth.adviceTitle" /></h2></div>
           </div>
           <div className="advice-grid">
-            {guide.advice.map((item, index) => (
-              <article key={item.title}>
+            {[1, 2, 3].map((number, index) => (
+              <article key={number}>
                 <span>0{index + 1}</span>
-                <h3>{item.title}</h3>
-                <p>{item.text}</p>
+                <h3><T id={`categoryDepth.advice${number}Title`} /></h3>
+                <p><T id={`categoryDepth.advice${number}Text`} /></p>
               </article>
             ))}
           </div>
@@ -81,39 +81,40 @@ export default async function CategoryPage({ params }) {
 
         <section className="category-review-grid" aria-labelledby="category-checklist-title">
           <div className="expanded-checklist">
-            <span className="eyebrow">Visible QC checks</span>
-            <h2 id="category-checklist-title">A six-point {category.name.toLowerCase()} review</h2>
+            <span className="eyebrow"><T id="categoryDepth.checksEyebrow" /></span>
+            <h2 id="category-checklist-title"><T id="categoryDepth.checksTitle" values={{ category: { id: categoryKey } }} /></h2>
             <ul>
-              {guide.checks.map((item) => <li key={item}><CheckIcon size={17} /><span>{item}</span></li>)}
+              {[1, 2, 3].map((number) => <li key={`prompt-${number}`}><CheckIcon size={17} /><span><T id={`category.${category.slug}.prompts.${number}`} /></span></li>)}
+              {[4, 5, 6].map((number) => <li key={`check-${number}`}><CheckIcon size={17} /><span><T id={`categoryDepth.check${number}`} /></span></li>)}
             </ul>
           </div>
           <aside className="decision-note">
-            <span>02 / Decision rule</span>
-            <h2>Ask for evidence that can change the decision.</h2>
-            <p>{guide.decision}</p>
-            <Link href="/guides/qc-photo-checklist">Open the complete seven-stage checklist <ArrowIcon size={16} /></Link>
+            <span><T id="categoryDepth.ruleLabel" /></span>
+            <h2><T id="categoryDepth.ruleTitle" /></h2>
+            <p><T id="categoryDepth.ruleText" /></p>
+            <Link href="/guides/qc-photo-checklist"><T id="categoryDepth.ruleLink" /> <ArrowIcon size={16} /></Link>
           </aside>
         </section>
 
         <section className="category-faq" aria-labelledby="category-faq-title">
           <div className="depth-section-label">
             <span>03</span>
-            <div><small>Common questions</small><h2 id="category-faq-title">What shoppers usually need to clarify</h2></div>
+            <div><small><T id="categoryDepth.faqLabel" /></small><h2 id="category-faq-title"><T id="categoryDepth.faqTitle" /></h2></div>
           </div>
           <div>
-            {guide.faqs.map((item, index) => (
-              <details key={item.question} open={index === 0}>
-                <summary>{item.question}<span>+</span></summary>
-                <p>{item.answer}</p>
+            {[1, 2, 3].map((number, index) => (
+              <details key={number} open={index === 0}>
+                <summary><T id={`categoryDepth.faq${number}Q`} /><span>+</span></summary>
+                <p><T id={`categoryDepth.faq${number}A`} /></p>
               </details>
             ))}
           </div>
         </section>
 
         <nav className="category-resource-links" aria-label="Related QC resources">
-          <Link href="/guides/how-to-buy"><small>Step-by-step workflow</small><strong>How to buy more carefully</strong><ArrowIcon /></Link>
-          <Link href="/articles/before-you-buy-qc-guide"><small>Long-form field note</small><strong>Read photos without false certainty</strong><ArrowIcon /></Link>
-          <Link href="/products"><small>Mapped source pages</small><strong>Browse the current product shortlist</strong><ArrowIcon /></Link>
+          <Link href="/guides/how-to-buy"><small><T id="categoryDepth.resource1Small" /></small><strong><T id="categoryDepth.resource1Strong" /></strong><ArrowIcon /></Link>
+          <Link href="/articles/before-you-buy-qc-guide"><small><T id="categoryDepth.resource2Small" /></small><strong><T id="categoryDepth.resource2Strong" /></strong><ArrowIcon /></Link>
+          <Link href="/products"><small><T id="categoryDepth.resource3Small" /></small><strong><T id="categoryDepth.resource3Strong" /></strong><ArrowIcon /></Link>
         </nav>
       </article>
 

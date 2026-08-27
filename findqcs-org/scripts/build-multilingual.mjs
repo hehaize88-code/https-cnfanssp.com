@@ -2,6 +2,7 @@ import { spawnSync } from "node:child_process";
 import {
   cpSync,
   existsSync,
+  mkdtempSync,
   mkdirSync,
   readFileSync,
   readdirSync,
@@ -11,15 +12,23 @@ import {
   writeFileSync,
 } from "node:fs";
 import path from "node:path";
+import { tmpdir } from "node:os";
 import { fileURLToPath } from "node:url";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const nextBin = path.join(root, "node_modules", "next", "dist", "bin", "next");
 const buildOut = path.join(root, "out");
+const nextCache = path.join(root, ".next");
 const staging = path.join(root, ".multilingual-out");
 const dist = path.join(root, "dist");
 const languages = ["en", "pl", "es", "de", "ro"];
 const localeMap = { en: "en_US", pl: "pl_PL", es: "es_ES", de: "de_DE", ro: "ro_RO" };
+function retireDirectory(directory, label) {
+  if (!existsSync(directory)) return;
+  const retiredRoot = mkdtempSync(path.join(tmpdir(), `findqcs-${label}-`));
+  const retired = path.join(retiredRoot, path.basename(directory));
+  renameSync(directory, retired);
+}
 
 function walk(directory, predicate, results = []) {
   for (const entry of readdirSync(directory)) {
@@ -113,8 +122,8 @@ rmSync(staging, { recursive: true, force: true });
 let indexableRoutes = [];
 
 for (const language of languages) {
-  rmSync(buildOut, { recursive: true, force: true });
-  rmSync(path.join(root, ".next"), { recursive: true, force: true });
+  retireDirectory(buildOut, `out-${language}`);
+  retireDirectory(nextCache, `next-${language}`);
 
   const result = spawnSync(process.execPath, [nextBin, "build"], {
     cwd: root,
