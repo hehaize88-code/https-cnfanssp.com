@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { ArticleCard, Breadcrumbs, Footer, Header, PageIntro } from "../components";
 import { articles, PLANNED_ORIGIN } from "../data";
 
-export const metadata: Metadata = { title: "QC Research Articles", description: "Practical guides for reading QC photos, choosing discovery tools and checking a listing before ordering.", alternates: { canonical: `${PLANNED_ORIGIN}/articles` } };
+export const metadata: Metadata = { title: "FindQC Guides: QC Photos, Reviews, Shipping & Product Intelligence", description: "Independent FindQC research covering QC evidence, Product Intelligence, Real Hauls statistics, public review patterns and decision limits.", alternates: { canonical: `${PLANNED_ORIGIN}/articles` } };
 
 export default function ArticlesPage() {
   return <><Header /><main><Breadcrumbs items={[{ label: "Articles" }]} /><PageIntro eyebrow="Independent field notes" title="Detailed enough to change a decision." description="Human-readable research for the moments between finding a listing, reviewing warehouse evidence and deciding what happens next." /><section className="shell page-content"><div className="article-grid article-hub">{articles.map((article) => <ArticleCard key={article.slug} article={article} />)}</div>

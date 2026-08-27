@@ -10,9 +10,9 @@ export default function Home() {
         <section className="hero">
           <div className="shell hero-grid">
             <div className="hero-copy">
-              <div className="eyebrow"><span />Independent product &amp; QC search</div>
-              <h1>Find better.<br /><em>Check smarter.</em></h1>
-              <p>One clear starting point for exact product destinations, matched listing references and practical QC decisions.</p>
+              <div className="eyebrow"><span />Independent FindQC platform research</div>
+              <h1>Understand FindQC.<br /><em>Check the evidence.</em></h1>
+              <p>Research Product Intelligence, Real Hauls, public reviews and QC evidence limits before making a pre-shipment decision.</p>
               <SearchDesk />
               <div className="hero-trust"><span>✓ Exact destination links</span><span>✓ USD reference prices</span><span>✓ No dead “View QC” buttons</span></div>
             </div>
@@ -74,7 +74,7 @@ export default function Home() {
         </section>
 
         <section className="section-block shell">
-          <div className="section-heading"><span className="section-index">04</span><h2>Research that supports the tool</h2><p>Long-form field guides explain the process without pretending a photo or a successful link is a quality guarantee.</p></div>
+          <div className="section-heading"><span className="section-index">04</span><h2>FindQC platform research and evidence analysis</h2><p>Long-form field guides examine platform features, aggregate data, public reviews and QC evidence without turning any signal into a guarantee.</p></div>
           <div className="research-entry-grid">
             <Link href="/finds"><small>SEARCH METHODS</small><strong>Link, ID, name or image?</strong><span>Choose the input with the strongest product identity →</span></Link>
             <Link href="/shipping"><small>REAL HAULS</small><strong>Countries, routes and cost context</strong><span>Read public logistics aggregates without turning them into a quote →</span></Link>

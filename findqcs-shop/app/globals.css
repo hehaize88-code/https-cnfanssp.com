@@ -475,7 +475,8 @@ body { color:var(--ink); font-family:Inter,ui-sans-serif,-apple-system,BlinkMacS
   .header-inner { height:62px; }
   .logo-image { width:39px; height:39px; }
   .logo { font-size:18px; }
-  .mobile-nav { gap:19px; padding:10px 12px; background:#fff; border-color:#e1e7f3; }
+  .mobile-nav { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:0; padding:8px 12px; background:#fff; border-color:#e1e7f3; overflow:visible; }
+  .mobile-nav a { min-width:0; padding:6px 3px; text-align:center; white-space:nowrap; }
   .hero { padding:42px 0 68px; }
   .hero-grid { gap:26px; }
   .hero-copy h1 { font-size:49px; line-height:.98; letter-spacing:-3.6px; }

@@ -1,0 +1,45 @@
+# Cache static HTML at the edge while allowing controlled revalidation.
+/
+  Cache-Control: public, max-age=0, s-maxage=3600, stale-while-revalidate=86400
+/finds
+  Cache-Control: public, max-age=0, s-maxage=3600, stale-while-revalidate=86400
+/categories
+  Cache-Control: public, max-age=0, s-maxage=3600, stale-while-revalidate=86400
+/qc
+  Cache-Control: public, max-age=0, s-maxage=3600, stale-while-revalidate=86400
+/shipping
+  Cache-Control: public, max-age=0, s-maxage=3600, stale-while-revalidate=86400
+/guide
+  Cache-Control: public, max-age=0, s-maxage=3600, stale-while-revalidate=86400
+/articles
+  Cache-Control: public, max-age=0, s-maxage=3600, stale-while-revalidate=86400
+/articles/*
+  Cache-Control: public, max-age=0, s-maxage=3600, stale-while-revalidate=86400
+/faq
+  Cache-Control: public, max-age=0, s-maxage=3600, stale-while-revalidate=86400
+/nl
+  Cache-Control: public, max-age=0, s-maxage=3600, stale-while-revalidate=86400
+/nl/*
+  Cache-Control: public, max-age=0, s-maxage=3600, stale-while-revalidate=86400
+/de
+  Cache-Control: public, max-age=0, s-maxage=3600, stale-while-revalidate=86400
+/de/*
+  Cache-Control: public, max-age=0, s-maxage=3600, stale-while-revalidate=86400
+/it
+  Cache-Control: public, max-age=0, s-maxage=3600, stale-while-revalidate=86400
+/it/*
+  Cache-Control: public, max-age=0, s-maxage=3600, stale-while-revalidate=86400
+/es
+  Cache-Control: public, max-age=0, s-maxage=3600, stale-while-revalidate=86400
+/es/*
+  Cache-Control: public, max-age=0, s-maxage=3600, stale-while-revalidate=86400
+/sitemap.xml
+  Cache-Control: public, max-age=300, s-maxage=300
+/robots.txt
+  Cache-Control: public, max-age=300, s-maxage=300
+/_next/static/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Prevent the Pages fallback hostname from competing with the custom domain.
+https://findqcs-shop.pages.dev/*
+  X-Robots-Tag: noindex

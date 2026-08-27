@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Breadcrumbs, Footer, Header, PageIntro, SearchDesk } from "../components";
 import { MAIN_SITE, PLANNED_ORIGIN } from "../data";
 
-export const metadata: Metadata = { title: "How FindQC Works", description: "A clear workflow from product discovery and destination verification to exact-unit QC inspection.", alternates: { canonical: `${PLANNED_ORIGIN}/guide` } };
+export const metadata: Metadata = { title: "How to Use FindQC: Link, Image & Premium QC Search", description: "Understand where link, keyword and image search fit, when Premium QC and Product Intelligence add evidence, and which decisions still require the exact unit.", alternates: { canonical: `${PLANNED_ORIGIN}/guide` } };
 
 const stages = [
   { n: "01", title: "Discover", copy: "Search by product name or browse an exact destination category. Keep the shortlist small enough to compare carefully.", action: "Search catalog" },

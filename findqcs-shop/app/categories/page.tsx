@@ -3,8 +3,8 @@ import { Breadcrumbs, Footer, Header, JsonLd, PageIntro, SearchDesk } from "../c
 import { categories, PLANNED_ORIGIN } from "../data";
 
 export const metadata: Metadata = {
-  title: "Product Categories",
-  description: "Browse exact destination categories for shoes, hoodies, T-shirts, jackets, accessories, jerseys, electronics and more.",
+  title: "FindQC Product Categories, Trending Finds & Seller Search",
+  description: "Use FindQC category, trend and seller context to narrow product research, then verify the exact destination before relying on QC evidence.",
   alternates: { canonical: `${PLANNED_ORIGIN}/categories` },
 };
 
