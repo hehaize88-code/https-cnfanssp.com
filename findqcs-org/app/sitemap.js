@@ -1,5 +1,9 @@
 import { articles, categories, products } from "../lib/data";
 
+export const INDEXABLE_PRODUCT_IDS = new Set([
+  "6050", "6127", "6187", "6247", "6307", "6367", "6427", "6667", "6547",
+]);
+
 export const dynamic = "force-static";
 
 export default function sitemap() {
@@ -8,7 +12,7 @@ export default function sitemap() {
   return [
     ...staticRoutes.map((route) => ({ url: `${base}${route}`, changeFrequency: route === "" ? "weekly" : "monthly", priority: route === "" ? 1 : 0.7 })),
     ...categories.map((category) => ({ url: `${base}/categories/${category.slug}`, changeFrequency: "weekly", priority: 0.75 })),
-    ...products.map((product) => ({ url: `${base}/finds/${product.id}`, changeFrequency: "monthly", priority: 0.65 })),
+    ...products.filter((product) => INDEXABLE_PRODUCT_IDS.has(product.id)).map((product) => ({ url: `${base}/finds/${product.id}`, changeFrequency: "monthly", priority: 0.65 })),
     ...articles.map((article) => ({ url: `${base}/articles/${article.slug}`, changeFrequency: "monthly", priority: 0.7 })),
   ];
 }

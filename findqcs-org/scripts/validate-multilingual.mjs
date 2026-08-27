@@ -23,6 +23,7 @@ const englishUiResidues = [
   "Related mapped finds",
   "PRODUCT INDEX",
 ];
+const expectedIndexableProducts = 9;
 
 function articleText(article) {
   const values = [];
@@ -129,7 +130,8 @@ for (const url of urls) {
   if ((html.match(/<h1[\s>]/g) || []).length !== 1) failures.push(`Expected one H1: ${url}`);
 
   const basePath = pathname.replace(/^\/(pl|es|de|ro)(?=\/|$)/, "") || "/";
-  for (const alternate of [...languages, "x-default"]) {
+  const englishOnly = ["/articles/warehouse-measurement-guide", "/articles/shipping-cost-checklist"].includes(basePath);
+  for (const alternate of [...(englishOnly ? ["en"] : languages), "x-default"]) {
     const targetLanguage = alternate === "x-default" ? "en" : alternate;
     const prefix = targetLanguage === "en" ? "" : `/${targetLanguage}`;
     const expected = `https://findqcs.org${prefix}${basePath === "/" ? "/" : basePath}`;
@@ -167,9 +169,11 @@ if (!providerSource.includes("window.location.assign(nextUrl)")) failures.push("
 if (providerSource.includes("history.replaceState")) failures.push("Language switcher still uses address-only replacement");
 
 const sitemapAlternateCount = (sitemap.match(/<xhtml:link /g) || []).length;
-if (urls.length !== 675) failures.push(`Expected 675 sitemap URLs, found ${urls.length}`);
+const expectedUrls = (13 + 9 + englishArticles.length + expectedIndexableProducts) * languages.length - 8;
+if (urls.length !== expectedUrls) failures.push(`Expected ${expectedUrls} sitemap URLs, found ${urls.length}`);
 if (new Set(urls).size !== urls.length) failures.push("Sitemap contains duplicate URLs");
-if (sitemapAlternateCount !== 4050) failures.push(`Expected 4050 sitemap alternates, found ${sitemapAlternateCount}`);
+const expectedAlternateCount = (expectedUrls - 2) * 6 + 2 * 2;
+if (sitemapAlternateCount !== expectedAlternateCount) failures.push(`Expected ${expectedAlternateCount} sitemap alternates, found ${sitemapAlternateCount}`);
 if (!readFileSync(path.join(out, "robots.txt"), "utf8").includes("Sitemap: https://findqcs.org/sitemap.xml")) failures.push("robots.txt sitemap is incorrect");
 
 if (failures.length) {
