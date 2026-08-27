@@ -39,7 +39,10 @@ export async function generateMetadata({ params }) {
       description: article.description,
       images: [article.heroImage],
     },
-    robots: { index: false, follow: false },
+    robots: {
+      index: BUILD_LANGUAGE === "en" || !["warehouse-measurement-guide", "shipping-cost-checklist"].includes(article.slug),
+      follow: true,
+    },
   }, `/articles/${article.slug}`);
 }
 
@@ -183,7 +186,7 @@ export default async function ArticlePage({ params }) {
             <ul>
               {article.sources.map((source) => (
                 <li key={source.href}>
-                  <a href={source.href} target="_blank" rel="noopener noreferrer">{source.label} <ExternalIcon /></a>
+                  <strong>{source.label}</strong>
                   <span>{source.note}</span>
                 </li>
               ))}

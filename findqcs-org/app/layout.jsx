@@ -20,7 +20,7 @@ export const metadata = localizedMetadata({
     description: "Exact catalog links, useful finds and practical QC checklists.",
     url: "https://findqcs.org",
     siteName: "FindQCS",
-    images: [{ url: "/og.svg", width: 1200, height: 630 }],
+    images: [{ url: "/og.png", width: 1200, height: 630 }],
     locale: "en_US",
     type: "website",
   },
@@ -28,7 +28,7 @@ export const metadata = localizedMetadata({
     card: "summary_large_image",
     title: "FindQCS — Find the item. Check the evidence.",
     description: "Exact catalog links, useful finds and practical QC checklists.",
-    images: ["/og.svg"],
+    images: ["/og.png"],
   },
   icons: { icon: "/findqc-logo.png", apple: "/findqc-logo.png" },
 }, "/");
