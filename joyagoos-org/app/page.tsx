@@ -1,5 +1,3 @@
-import { redirect } from "next/navigation";
-
 export default function Home() {
-  redirect("/en/");
+  return <main><p><a href="/en/">Continue to Joyagoos</a></p></main>;
 }
