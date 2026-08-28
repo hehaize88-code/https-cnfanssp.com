@@ -331,7 +331,7 @@ function renderPage(path, lang) {
   }[path];
   const [title, description] = meta;
   const alternates = Object.keys(languages).map((code) => `<link rel="alternate" hreflang="${code}" href="${ORIGIN}${localizedPath(code, path)}" />`).join("") + `<link rel="alternate" hreflang="x-default" href="${ORIGIN}${localizedPath("en", path)}" />`;
-  return `<!doctype html><html lang="${lang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${esc(title)} — FindQC Store</title><meta name="description" content="${esc(description)}"><meta name="robots" content="index,follow,max-image-preview:large"><link rel="canonical" href="${ORIGIN}${localizedPath(lang, path)}">${alternates}<meta name="theme-color" content="#f6efe5">${styles()}</head><body class="${path === "/" ? "home-shell" : ""}">${nav(lang, path, t)}${content}${footer(lang, t)}${scripts()}</body></html>`;
+  return `<!doctype html><html lang="${lang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${esc(title)} — FindQC Store</title><meta name="description" content="${esc(description)}"><meta name="robots" content="index,follow,max-image-preview:large"><link rel="canonical" href="${ORIGIN}${localizedPath(lang, path)}">${alternates}<meta name="theme-color" content="#f6efe5">${styles()}<script async src="https://www.googletagmanager.com/gtag/js?id=G-PHLMLCFBBH"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag("js", new Date());gtag("config", "G-PHLMLCFBBH");</script></head><body class="${path === "/" ? "home-shell" : ""}">${nav(lang, path, t)}${content}${footer(lang, t)}${scripts()}</body></html>`;
 }
 
 function sitemap() {
