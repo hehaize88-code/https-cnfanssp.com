@@ -2,6 +2,7 @@ import { promises as fs } from "node:fs";
 import path from "node:path";
 import generatedTranslations from "../app/translations.generated.json" with { type: "json" };
 import seoTranslations from "../app/translations.seo.json" with { type: "json" };
+import seo60Translations from "../app/translations.seo60.json" with { type: "json" };
 
 const origin = "https://findqcs.shop";
 const outputRoot = path.resolve("out");
@@ -10,6 +11,7 @@ const hrefLocales = ["en", ...locales];
 const dictionaries = Object.fromEntries(locales.map((locale) => [locale, {
   ...generatedTranslations[locale],
   ...seoTranslations[locale],
+  ...seo60Translations[locale],
 }]));
 
 function decodeHtml(value) {

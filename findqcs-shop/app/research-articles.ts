@@ -153,4 +153,78 @@ export const researchedArticles = [
       },
     ],
   },
+  {
+    slug: "can-you-trust-old-qc-photos",
+    title: "Can You Trust Old QC Photos? A Date-and-Batch Risk Method",
+    description: "Use old QC photos as dated evidence without assuming the current listing, option, batch or future warehouse unit will be identical.",
+    readTime: "12 min read",
+    updated: "August 28, 2026",
+    sources: [],
+    sections: [
+      {
+        heading: "Start with the correct claim: old QC photos describe an earlier unit",
+        paragraphs: [
+          "Old QC photos are neither useless nor current proof. They document what one photographed unit looked like at a recorded stage, under the camera, lighting and handling conditions visible in that set. They may help you learn the product's construction, locate inspection points and notice patterns across several records. They cannot guarantee that the seller still offers the same item, that the selected option is unchanged or that your future unit will come from the same production batch.",
+          "FindQC is a research platform that organizes QC evidence and related data. It is not the seller, purchasing agent, warehouse, return operator or international carrier. The buyer's chosen agent must execute the live order and inspect the exact received unit under its current terms. That boundary matters because no historical gallery can approve a warehouse item that does not yet exist.",
+          "The practical question is therefore not 'Can I trust this photo?' It is 'Which limited conclusion does this dated record support, and what must be rechecked later?' A clear method separates useful historical context from confidence that belongs only to the current listing and exact warehouse evidence."
+        ]
+      },
+      {
+        heading: "Record three dates before looking at defects",
+        paragraphs: [
+          "Capture the QC record date, the date you opened the current destination listing and the date of the decision. These are different clocks. The record date tells you when the photographed evidence existed. The listing-check date tells you when title, seller, images, options and stock were last confirmed. The decision date tells another reviewer which information was available when you acted.",
+          "If the QC date is missing, mark it unknown rather than estimating from image quality, file names or comments. If the listing date is old, reopen the final destination. A working URL alone is not enough: redirects and replaced listings can preserve a familiar path while changing the product or seller. Save the final item ID, option set and first identifying image privately.",
+          "Age has no universal expiry limit. A three-month-old record for a stable rigid component may still show useful construction, while a much newer apparel record can be weak if the target colour, size or seller differs. Treat time as one risk factor alongside identity, batch sensitivity, coverage and consequence."
+        ]
+      },
+      {
+        heading: "Match identity before transferring any observation",
+        paragraphs: [
+          "Compare the historical record with the target in a strict order: destination host and item ID, seller or store, model or design, selected colour, size, version, quantity and included parts. Continue with fixed construction anchors such as panel layout, pocket count, sole pattern or hardware placement. Use general appearance and title words last because promotional images and broad names are often reused.",
+          "Assign one of four states. Exact enough means all fields required for this decision agree and no stronger field conflicts. Possible match means a decisive field is missing. Contextual means the record is only related or visually similar. Conflict means at least one required field disagrees. Only the first state can support a product-specific historical observation, and even then the next unit needs its own check.",
+          "Do not let several weak similarities cancel one strong conflict. A matching thumbnail, colour and title do not overcome a different source item ID. Conversely, a translated title difference should not defeat agreement among item ID, seller and explicit variant code. Write the fields used so another person can reproduce the state."
+        ]
+      },
+      {
+        heading: "Estimate batch-drift risk without inventing a batch number",
+        paragraphs: [
+          "Batch drift means that later units can differ because materials, tooling, suppliers, workers, patterns, finishing or packaging change. A public QC gallery rarely proves the factory batch. Do not invent a batch identifier from date proximity or identical backgrounds. Instead, assess how sensitive the decision is to ordinary production variation and how many matched records are available across time.",
+          "Structural dimensions, print placement, embroidery edges, colour, surface finish and accessory inclusion can all vary. Some changes are seller-controlled substitutions; others are normal tolerance; others may be photographic. Record the exact field that could drift. 'Quality may change' is too vague to guide an inspection. 'Recheck chest width and print height because those fields vary across matched records' is actionable.",
+          "Compare multiple records when possible. A repeated observation across well-matched dates is stronger context than one unusually clean or damaged set, but repetition still does not guarantee the future unit. A single old set should be labelled a sample of one. Missing later records increase uncertainty; they do not prove that no later problem occurred."
+        ]
+      },
+      {
+        heading: "Discount the record for coverage, lighting and compression",
+        paragraphs: [
+          "Age is not the only limitation. Make a coverage map for the decision-critical areas: overall front and back, both sides, top or base, labels, included parts, measurements and suspected defects. Mark each view clear, partial or absent. A large gallery can still omit the one angle required for a decision, and old photos cannot be retaken for that historical unit.",
+          "Lighting can shift colour and hide texture. Perspective can create apparent asymmetry. Compression and resizing can erase loose threads, fine scratches or embroidery edges. If the old set is low resolution, narrow the conclusion to features that survive the image quality. Do not compensate by zooming until compression blocks look like product defects.",
+          "Separate observation from interpretation. 'A dark line remains visible beside the seam in two angles' describes evidence. 'The seam is torn' names a cause that may require a close-up. Historical images are most useful when the wording stays tied to what can still be seen rather than what the reviewer expects."
+        ]
+      },
+      {
+        heading: "Use a freshness and consequence matrix",
+        paragraphs: [
+          "Score nothing unless the scale is defined. A simple matrix is more transparent: match strength, record age, number of matched samples, field stability, image coverage and consequence if wrong. Write low, medium or high risk with a reason. These labels describe uncertainty for this decision, not a universal product grade.",
+          "For example, an older exact-item record may be adequate to learn pocket layout when the current listing still shows the same model and a pocket difference would be obvious later. It is weak evidence for exact garment colour when warehouse lighting differs and the current option name has changed. The same photograph can be useful for one question and unfit for another.",
+          "Consequence changes the threshold. A minor removable packaging mark may not justify pausing. A wrong electrical model, missing structural part or fit-critical measurement deserves current evidence. Decide the consequence before reviewing attractive old photos so popularity, price or waiting time does not lower the standard after the fact."
+        ]
+      },
+      {
+        heading: "Choose approve, pause or reject for the evidence—not the future item",
+        paragraphs: [
+          "Use three evidence decisions. Approve as context means the old record is sufficiently matched and clear to inform a later inspection, not to approve shipment. Pause for current evidence means a material field is stale, missing or batch-sensitive and must be checked on the exact unit. Reject the record means identity conflicts or image quality makes it unsafe for this comparison.",
+          "Write a decision sentence containing the target, historical record date, match state, useful observation, strongest limitation and future check. Example: 'Use the March matched record as context for panel layout; colour and chest width remain current-unit checks because the option label changed and the measurement view is absent.' The sentence shows exactly what survives the age discount.",
+          "Do not turn an old clean set into a prediction. Likewise, do not treat one old defect as proof that every future unit will fail. The goal is calibrated preparation: know what to inspect first, which evidence gap is material and which historical detail should not influence the decision."
+        ]
+      },
+      {
+        heading: "Recheck the exact warehouse unit and keep the roles separate",
+        paragraphs: [
+          "When the ordered unit reaches the chosen agent, start again with identity. Compare source item, selected option, size, colour, quantity and included parts. Then inspect the critical areas identified by the historical review. Use current measurements for fit and current photos for condition. If a decisive angle is missing, ask the agent whether a focused photo or video is available under its current service rules.",
+          "FindQC can help retrieve and organize research evidence, but it does not place the order, take the agent's warehouse photos, grant an exchange, pack a parcel or carry it internationally. The user and chosen agent control those actions. Do not state that a return or extra check is guaranteed; verify the responsible party's current terms and timing.",
+          "Keep the historical note beside the current-unit decision, not merged into it. A clean audit trail shows what the old record suggested, what the exact unit showed and why the final action changed or stayed the same. That is the useful form of trust: not confidence that old QC photos predict the future, but confidence that their limited evidence has been dated, matched, discounted and checked again."
+        ]
+      }
+    ]
+  },
 ] as const;
