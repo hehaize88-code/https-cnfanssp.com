@@ -7,8 +7,8 @@
     {
       "cycle": "C01",
       "planTrack": "QED01",
-      "liveVerified": false,
-      "deploymentStatus": "pending-live-verification",
+      "liveVerified": true,
+      "deploymentStatus": "live-verified-2026-08-28",
       "slug": "pre-purchase-qc-evidence-worksheet",
       "primaryQuery": "pre-purchase QC evidence worksheet",
       "intent": "Organize already-found listing and QC material into an auditable record before a buyer-selected agent acts",
@@ -17,6 +17,20 @@
       "outline": ["decision header", "identity row", "coverage map", "observation line", "targeted request", "decision line", "agent handoff"],
       "faqAngles": ["What belongs in a QC evidence worksheet?", "How should missing QC angles be recorded?", "Who performs the purchase and warehouse action?"],
       "visuals": ["Seven HTML checklist panels; no customer media, third-party screenshots or new image assets"]
+    },
+    {
+      "cycle": "C02",
+      "planTrack": "QED02",
+      "liveVerified": false,
+      "deploymentStatus": "pending-live-verification",
+      "slug": "map-listing-identity-to-qc-record",
+      "primaryQuery": "map listing identity to QC record",
+      "intent": "Connect an exact source listing to relevant QC evidence before any product-specific observation is transferred",
+      "longTailQueries": ["QC record identity match", "product inspection identity log", "listing to QC evidence mapping"],
+      "focus": ["target fields", "two-source capture", "identity hierarchy", "match states", "redirect and replacement history", "controlled evidence transfer"],
+      "outline": ["define target", "capture sources", "compare fields", "assign state", "handle changes", "control transfer", "audit conclusion"],
+      "faqAngles": ["What proves that a QC record matches a listing?", "Can similar-item evidence be transferred?", "How should a replaced listing be recorded?"],
+      "visuals": ["Seven HTML evidence panels; no screenshots, customer media or new image assets"]
     }
   ]
 }
