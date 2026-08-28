@@ -42,11 +42,22 @@ const privacy = await get("https://findqcs.store/privacy");
 assert.match(privacy.body, /<meta name="robots" content="noindex,follow">/);
 
 const sitemap = await get("https://findqcs.store/sitemap.xml");
-assert.equal((sitemap.body.match(/<url>/g) || []).length, 80);
+assert.equal((sitemap.body.match(/<url>/g) || []).length, 85);
 assert.doesNotMatch(sitemap.body, /\/privacy|\/terms/);
+assert.match(sitemap.body, /product-requirements-brief-before-search/);
 
 const article = await get("https://findqcs.store/articles/how-to-read-qc-photos");
 assert.match(article.body, /"author":\{"@type":"Organization","name":"FindQC Store Editorial Team"/);
 assert.match(article.body, /"publisher":\{"@type":"Organization","name":"FindQC Store","url":"https:\/\/findqcs.store"/);
+
+for (const lang of ["en", "de", "es", "fr", "it"]) {
+  const prefix = lang === "en" ? "" : `/${lang}`;
+  const brief = await get(`https://findqcs.store${prefix}/articles/product-requirements-brief-before-search`);
+  assert.equal(brief.response.status, 200, lang);
+  assert.equal((brief.body.match(/<section id="step-/g) || []).length, 9, lang);
+  assert.match(brief.body, /"@type":"Article"/);
+  assert.match(brief.body, /"@type":"BreadcrumbList"/);
+  assert.match(brief.body, /hreflang="x-default"/);
+}
 
 console.log("findqcs.store regression checks passed");

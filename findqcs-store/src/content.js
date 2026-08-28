@@ -1,6 +1,7 @@
 import { extendArticles } from "./research.js";
 import { applyParityArticles } from "./parity.js";
 import { applyArticleParityBoost } from "./language-parity.js";
+import { localizedRequirementsBriefArticles } from "./seo60-articles.js";
 
 export const copy = {
   en: {
@@ -120,7 +121,10 @@ const baseArticles = Object.fromEntries(Object.keys(copy).map((lang) => [lang, e
 
 const parityReadyArticles = Object.fromEntries(Object.keys(baseArticles).map((lang) => [lang, applyParityArticles(extendArticles(baseArticles[lang], lang), lang)]));
 
-export const seoArticles = Object.fromEntries(Object.keys(parityReadyArticles).map((lang) => [lang, applyArticleParityBoost(parityReadyArticles[lang], lang, parityReadyArticles.en)]));
+export const seoArticles = Object.fromEntries(Object.keys(parityReadyArticles).map((lang) => [
+  lang,
+  [...applyArticleParityBoost(parityReadyArticles[lang], lang, parityReadyArticles.en), localizedRequirementsBriefArticles[lang]],
+]));
 
 export const categoryCopy = {
   en: {
