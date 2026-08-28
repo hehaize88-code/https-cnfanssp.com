@@ -35,7 +35,13 @@ interface ExecutionContext {
 
 const worker = {
   async fetch(request: Request, env: Env, ctx: ExecutionContext): Promise<Response> {
-    const { pathname } = new URL(request.url);
+    const url = new URL(request.url);
+    if (url.hostname === "www.joyagoos.org") {
+      url.hostname = "joyagoos.org";
+      if (url.pathname === "/") url.pathname = "/en/";
+      return Response.redirect(url.toString(), 308);
+    }
+    const { pathname } = url;
     if (pathname === "/robots.txt") {
       return new Response(robotsText, { headers: { "content-type": "text/plain; charset=utf-8" } });
     }
