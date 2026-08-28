@@ -10,3 +10,5 @@ npm run build
 ```
 
 The static Cloudflare Pages output is generated in `out/`.
+
+Cloudflare Pages project: `hacoovip-com` (production branch: `main`).
