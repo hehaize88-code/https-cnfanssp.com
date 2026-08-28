@@ -29,5 +29,6 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
       <footer className="related-row"><div><span>KEEP READING</span><h2>Related field guides</h2></div>{related.map((item) => <Link key={item.slug} href={`/articles/${item.slug}`}><b>{item.title}</b><span>Read →</span></Link>)}</footer>
     </article>
     <JsonLd data={{ "@context": "https://schema.org", "@type": "Article", headline: article.title, description: article.description, datePublished: publicationDate, dateModified: publicationDate, mainEntityOfPage: `${PLANNED_ORIGIN}/articles/${article.slug}`, author: { "@type": "Organization", name: "FindQC Research Desk" }, publisher: { "@type": "Organization", name: "FindQC Research Desk" } }} />
+    <JsonLd data={{ "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "Home", item: PLANNED_ORIGIN }, { "@type": "ListItem", position: 2, name: "Articles", item: `${PLANNED_ORIGIN}/articles` }, { "@type": "ListItem", position: 3, name: article.title, item: `${PLANNED_ORIGIN}/articles/${article.slug}` }] }} />
   </main><Footer /></>;
 }
