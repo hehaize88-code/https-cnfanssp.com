@@ -1,0 +1,20 @@
+{
+  "site": "findqcs.store",
+  "track": "QBR",
+  "updated": "2026-08-28",
+  "completed": [
+    {
+      "cycle": "C01",
+      "planTrack": "QBR01",
+      "liveVerified": true,
+      "deploymentStatus": "live-verified-2026-08-28",
+      "slug": "product-requirements-brief-before-search",
+      "title": "Build a Product Requirements Brief Before You Search",
+      "primaryQuery": "product requirements brief",
+      "intent": "Define intended use, fit references, measurable requirements, budget boundaries and acceptable trade-offs before product search or QC begins",
+      "englishVisibleWords": 1335,
+      "languages": ["en", "de", "es", "fr", "it"],
+      "productionDeploymentId": "57add40467d249e69af9e9968ff5c471"
+    }
+  ]
+}
