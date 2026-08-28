@@ -7,7 +7,7 @@
   },
   "scripts": {
     "dev": "WRANGLER_LOG_PATH=.wrangler/wrangler.log vite",
-    "build": "next build",
+    "build": "next build && node scripts/fix-static-lang.mjs",
     "start": "wrangler pages dev out",
     "test": "npm run build",
     "deploy": "npm run build && wrangler pages deploy out --project-name joyagoos-pages"

@@ -5,8 +5,8 @@ import "./atlas.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://joyagoos.org"),
-  title: "Joyagoo Spreadsheet 2026, Finds, QC & Shipping Guide | Joyagoos",
-  description: "Independent Joyagoo spreadsheet companion with image-matched finds, QC checks, packing decisions and source-backed shipping guidance.",
+  title: "Joyagoo Reviews, Fees & Buyer Policy Guide | Joyagoos",
+  description: "Independent research on Joyagoo fees, QC evidence, return eligibility, warehouse clocks, billable weight, shipping rules and buyer review signals.",
   robots: { index: true, follow: true },
   icons: { icon: "/favicon.svg", shortcut: "/favicon.svg" },
 };

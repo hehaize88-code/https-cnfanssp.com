@@ -7,11 +7,11 @@ type ArticleTranslation=ArticleMeta&{rows:ArticleRow[]};
 type TranslationMap=Record<string,ArticleTranslation>;
 
 export const articleUi:Record<Lang,{order:string;updated:string;quick:string;all:string;back:string;products:string}>={
-  en:{order:"SEO PUBLISHING ORDER",updated:"UPDATED AUG 2026",quick:"QUICK FACTS",all:"All articles",back:"Back to articles",products:"Open product index"},
-  de:{order:"SEO-VERÖFFENTLICHUNGSREIHENFOLGE",updated:"AKTUALISIERT AUG 2026",quick:"SCHNELLE FAKTEN",all:"Alle Artikel",back:"Zurück zu den Artikeln",products:"Produktindex öffnen"},
-  es:{order:"ORDEN DE PUBLICACIÓN SEO",updated:"ACTUALIZADO AGO 2026",quick:"DATOS RÁPIDOS",all:"Todos los artículos",back:"Volver a los artículos",products:"Abrir índice de productos"},
-  fr:{order:"ORDRE DE PUBLICATION SEO",updated:"MIS À JOUR AOÛT 2026",quick:"FAITS ESSENTIELS",all:"Tous les articles",back:"Retour aux articles",products:"Ouvrir l’index produits"},
-  it:{order:"ORDINE DI PUBBLICAZIONE SEO",updated:"AGGIORNATO AGO 2026",quick:"DATI RAPIDI",all:"Tutti gli articoli",back:"Torna agli articoli",products:"Apri indice prodotti"}
+  en:{order:"RECOMMENDED READING ORDER",updated:"UPDATED AUG 2026",quick:"QUICK FACTS",all:"All articles",back:"Back to articles",products:"Open product index"},
+  de:{order:"EMPFOHLENE LESEFOLGE",updated:"AKTUALISIERT AUG 2026",quick:"SCHNELLE FAKTEN",all:"Alle Artikel",back:"Zurück zu den Artikeln",products:"Produktindex öffnen"},
+  es:{order:"ORDEN DE LECTURA RECOMENDADO",updated:"ACTUALIZADO AGO 2026",quick:"DATOS RÁPIDOS",all:"Todos los artículos",back:"Volver a los artículos",products:"Abrir índice de productos"},
+  fr:{order:"ORDRE DE LECTURE CONSEILLÉ",updated:"MIS À JOUR AOÛT 2026",quick:"FAITS ESSENTIELS",all:"Tous les articles",back:"Retour aux articles",products:"Ouvrir l’index produits"},
+  it:{order:"ORDINE DI LETTURA CONSIGLIATO",updated:"AGGIORNATO AGO 2026",quick:"DATI RAPIDI",all:"Tutti gli articoli",back:"Torna agli articoli",products:"Apri indice prodotti"}
 };
 
 const de:TranslationMap={
