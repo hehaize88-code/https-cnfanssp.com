@@ -36,6 +36,7 @@ export const navItems = [
 ] as const;
 
 export const articles = [
+  { slug: "superbuy-personal-order-tracker-setup", eyebrow: "Personal tracker", title: "Superbuy Personal Order Tracker: Set Up a Status Log That Stays Useful", description: "Build a private order spreadsheet for selected products, purchase events, warehouse milestones and the later parcel without turning it into a public product database.", read: "12 min read" },
   { slug: "how-to-use-superbuy-spreadsheet", eyebrow: "Beginner workflow", title: "How to Use a Superbuy Spreadsheet Without Buying Blind", description: "A practical path from a product row to a verified order, warehouse inspection and shipping decision.", read: "9 min read" },
   { slug: "superbuy-qc-photo-checklist", eyebrow: "Quality control", title: "Superbuy QC Photo Checklist: What to Inspect Before Shipping", description: "Turn warehouse photos into a repeatable approve, question or return decision.", read: "8 min read" },
   { slug: "superbuy-shipping-cost-guide", eyebrow: "Parcel planning", title: "Superbuy Shipping Cost: Estimate, Consolidate and Avoid Surprises", description: "Understand the difference between an estimate, a shipping deposit and the final verified parcel charge.", read: "10 min read" },
