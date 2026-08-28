@@ -10,7 +10,8 @@ async function walk(directory) {
     if (entry.isDirectory()) await walk(path);
     else if (extname(entry.name) === ".html") {
       const parts = relative(root.pathname, path).split(sep);
-      const language = supported.has(parts[0]) ? parts[0] : "en";
+      const routeLocale = parts[0].replace(/\.html$/, "");
+      const language = supported.has(routeLocale) ? routeLocale : "en";
       const source = await readFile(path, "utf8");
       await writeFile(path, source.replace('<html lang="en"', `<html lang="${language}"`));
     }
