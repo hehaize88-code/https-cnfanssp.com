@@ -7,10 +7,10 @@
   },
   "scripts": {
     "dev": "WRANGLER_LOG_PATH=.wrangler/wrangler.log vite",
-    "build": "vinext build",
-    "start": "WRANGLER_LOG_PATH=.wrangler/wrangler.log vinext start",
+    "build": "next build",
+    "start": "wrangler pages dev out",
     "test": "npm run build",
-    "deploy": "npm run build && wrangler pages deploy dist/client --project-name joyagoos-pages"
+    "deploy": "npm run build && wrangler pages deploy out --project-name joyagoos-pages"
   },
   "dependencies": {
     "next": "16.2.6",
