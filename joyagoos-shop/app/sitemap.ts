@@ -1,6 +1,24 @@
 import type { MetadataRoute } from "next";
-import { languages, pageKeys } from "./site-data";
+import { categoryKeys, languages, pageKeys, type CategoryKey, type PageKey } from "./site-data";
 import { seoArticleSlugs } from "./seo-articles";
 const base="https://joyagoos.shop";
 export const dynamic = "force-static";
-export default function sitemap():MetadataRoute.Sitemap{return languages.flatMap(lang=>pageKeys.map(page=>({url:`${base}/${lang}/${page==="home"?"":seoArticleSlugs.includes(page)?`articles/${page}/`:`${page}/`}`,lastModified:new Date("2026-08-28"),changeFrequency:page==="home"?"weekly":"monthly",priority:page==="home"?1:.8})));}
+
+const changedOn:Partial<Record<PageKey,string>>={
+  home:"2026-08-28",spreadsheet:"2026-08-28",finds:"2026-08-28",articles:"2026-08-28",
+  guide:"2026-08-27",qc:"2026-08-27",shipping:"2026-08-27",faq:"2026-08-27",
+  shoes:"2026-08-28",hoodies:"2026-08-28","t-shirts":"2026-08-28",jackets:"2026-08-28",pants:"2026-08-28",accessories:"2026-08-28",
+  about:"2026-08-28","editorial-policy":"2026-08-28","how-we-verify-links":"2026-08-28",
+};
+
+function route(lang:string,page:PageKey){if(page==="home")return `/${lang}/`;if(categoryKeys.includes(page as CategoryKey))return `/${lang}/categories/${page}/`;return `/${lang}/${page}/`;}
+
+export default function sitemap():MetadataRoute.Sitemap{
+  const indexable=pageKeys.filter(page=>!seoArticleSlugs.includes(page));
+  return languages.flatMap(lang=>indexable.map(page=>({
+    url:`${base}${route(lang,page)}`,
+    lastModified:new Date(changedOn[page]??"2026-08-26"),
+    changeFrequency:page==="home"||page==="finds"?"weekly":"monthly",
+    priority: page === "home" ? 1 : (categoryKeys.includes(page as CategoryKey) ? 0.85 : 0.8),
+  })));
+}
