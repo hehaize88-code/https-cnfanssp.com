@@ -21,8 +21,8 @@
     {
       "cycle": "C02",
       "planTrack": "QED02",
-      "liveVerified": false,
-      "deploymentStatus": "pending-live-discovery-cache",
+      "liveVerified": true,
+      "deploymentStatus": "live-verified-2026-08-28",
       "slug": "map-listing-identity-to-qc-record",
       "primaryQuery": "map listing identity to QC record",
       "intent": "Connect an exact source listing to relevant QC evidence before any product-specific observation is transferred",
