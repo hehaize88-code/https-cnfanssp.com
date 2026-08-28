@@ -10,6 +10,7 @@ import { getLocalizedDepth } from "@/app/localizedDepth";
 import { absoluteLocalizedUrl, getCopy, localizeGuides, localizePath } from "@/app/i18n";
 import { getLocalizedResearch } from "@/app/localizedResearch";
 import { wardrobeGapArticle } from "@/app/wardrobeGapArticle";
+import { outfitPlanningArticle } from "@/app/outfitPlanningArticle";
 import { guideSources } from "@/app/editorial";
 
 function getLocalizedCatalog(locale) {
@@ -130,7 +131,7 @@ export function LocalizedGuide({ locale, slug }) {
   const page = copy.guideDetail;
   const localized = getLocalizedResearch(locale);
   const sourceResearch = guideContent[slug];
-  const translatedResearch = slug === "hacoo-finds-wardrobe-gap-shortlist" ? wardrobeGapArticle[locale] : localized.guideContent[slug];
+  const translatedResearch = slug === "hacoo-finds-wardrobe-gap-shortlist" ? wardrobeGapArticle[locale] : slug === "hacoo-outfit-planning-wearable-plan" ? outfitPlanningArticle[locale] : localized.guideContent[slug];
   const research = { ...translatedResearch, image: sourceResearch.image ? { ...translatedResearch.image, src: sourceResearch.image.src } : undefined };
   const checks = depth.guideChecks[slug] || page.steps;
   const fullSections = research.sections.map(([title,paragraphs])=>[title,Array.isArray(paragraphs)?paragraphs:[paragraphs]]);

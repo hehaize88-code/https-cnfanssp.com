@@ -85,6 +85,7 @@ const guideCopy = {
     "shipping-planning": ["Plan for Shipping", "Check dimensions, weight, destination rules and current shipping information."],
     "hacoo-returns-refunds": ["Hacoo Returns and Refunds", "The official in-app route, published timing and evidence to keep for an after-sales request."],
     "hacoo-finds-wardrobe-gap-shortlist": ["How to Build a Hacoo Finds Shortlist Around Real Wardrobe Gaps", "Turn fashion inspiration into a three-item shortlist based on real use, existing outfits and clear constraints."],
+    "hacoo-outfit-planning-wearable-plan": ["Hacoo Outfit Planning: Turn Inspiration Into a Wearable Plan", "Translate one inspiration reference into a real occasion, wardrobe roles and a use, adapt or archive decision."],
   },
   es: {
     "what-is-a-hacoo-spreadsheet": ["¿Qué es una hoja Hacoo?", "Definición clara de este sistema de descubrimiento, sus ventajas y sus límites."],
@@ -95,6 +96,7 @@ const guideCopy = {
     "shipping-planning": ["Planificar el envío", "Revisa dimensiones, peso, normas del destino e información actual de envío."],
     "hacoo-returns-refunds": ["Devoluciones y reembolsos de Hacoo", "La ruta oficial en la aplicación, los plazos publicados y las pruebas que conviene conservar."],
     "hacoo-finds-wardrobe-gap-shortlist": ["Cómo crear una lista Hacoo para huecos reales del armario", "Convierte inspiración de moda en tres candidatos basados en uso real, prendas existentes y restricciones claras."],
+    "hacoo-outfit-planning-wearable-plan": ["Planificación de outfits Hacoo: de la inspiración a un plan ponible", "Convierte una referencia en ocasión real, funciones del armario y una decisión de usar, adaptar o archivar."],
   },
   fr: {
     "what-is-a-hacoo-spreadsheet": ["Qu’est-ce qu’une liste Hacoo ?", "Une définition claire de cette méthode de recherche, de ses atouts et de ses limites."],
@@ -105,6 +107,7 @@ const guideCopy = {
     "shipping-planning": ["Préparer l’expédition", "Vérifiez dimensions, poids, règles du pays et informations d’expédition actuelles."],
     "hacoo-returns-refunds": ["Retours et remboursements Hacoo", "Le parcours officiel dans l’application, les délais publiés et les preuves à conserver."],
     "hacoo-finds-wardrobe-gap-shortlist": ["Créer une sélection Hacoo pour un vrai manque de garde-robe", "Transformez l’inspiration en trois candidats fondés sur l’usage, vos vêtements et des contraintes claires."],
+    "hacoo-outfit-planning-wearable-plan": ["Planification de tenue Hacoo : transformer l’inspiration en plan portable", "Passez d’une référence à une occasion, des rôles de garde-robe et une décision utiliser, adapter ou archiver."],
   },
   de: {
     "what-is-a-hacoo-spreadsheet": ["Was ist eine Hacoo-Liste?", "Eine klare Erklärung der strukturierten Produktsuche, ihrer Vorteile und Grenzen."],
@@ -115,6 +118,7 @@ const guideCopy = {
     "shipping-planning": ["Versand planen", "Prüfe Maße, Gewicht, Ziellandregeln und aktuelle Versandangaben."],
     "hacoo-returns-refunds": ["Hacoo-Rückgabe und Erstattung", "Der offizielle Weg in der App, veröffentlichte Fristen und wichtige Nachweise."],
     "hacoo-finds-wardrobe-gap-shortlist": ["Eine Hacoo-Fundliste für echte Garderobenlücken erstellen", "Mache aus Modeinspiration drei Kandidaten nach Nutzung, vorhandenen Outfits und klaren Grenzen."],
+    "hacoo-outfit-planning-wearable-plan": ["Hacoo-Outfitplanung: Inspiration in einen tragbaren Plan übersetzen", "Mache aus einer Referenz Anlass, Garderobenrollen und eine Nutzen-, Anpassen- oder Archivieren-Entscheidung."],
   },
   it: {
     "what-is-a-hacoo-spreadsheet": ["Cos’è una lista Hacoo?", "Una definizione chiara della ricerca strutturata, dei vantaggi e dei limiti."],
@@ -125,6 +129,7 @@ const guideCopy = {
     "shipping-planning": ["Pianificare la spedizione", "Controlla dimensioni, peso, regole di destinazione e dati di spedizione attuali."],
     "hacoo-returns-refunds": ["Resi e rimborsi Hacoo", "Il percorso ufficiale nell’app, i tempi pubblicati e le prove da conservare."],
     "hacoo-finds-wardrobe-gap-shortlist": ["Creare una lista Hacoo per veri vuoti del guardaroba", "Trasforma l’ispirazione in tre candidati basati su uso, capi esistenti e vincoli chiari."],
+    "hacoo-outfit-planning-wearable-plan": ["Pianificazione outfit Hacoo: dall’ispirazione a un piano indossabile", "Trasforma una referenza in occasione, ruoli del guardaroba e decisione di usare, adattare o archiviare."],
   },
   pt: {
     "what-is-a-hacoo-spreadsheet": ["O que é uma lista Hacoo?", "Uma definição clara da pesquisa estruturada, das vantagens e dos limites."],
@@ -135,6 +140,7 @@ const guideCopy = {
     "shipping-planning": ["Planear o envio", "Confirme dimensões, peso, regras do destino e informações atuais de envio."],
     "hacoo-returns-refunds": ["Devoluções e reembolsos Hacoo", "O percurso oficial na aplicação, os prazos publicados e as provas a conservar."],
     "hacoo-finds-wardrobe-gap-shortlist": ["Criar uma lista Hacoo para lacunas reais do guarda-roupa", "Transforme inspiração em três candidatos baseados no uso, nas peças existentes e em limites claros."],
+    "hacoo-outfit-planning-wearable-plan": ["Planeamento de conjuntos Hacoo: da inspiração a um plano utilizável", "Transforme uma referência em ocasião, funções do guarda-roupa e decisão de usar, adaptar ou arquivar."],
   },
 };
 
