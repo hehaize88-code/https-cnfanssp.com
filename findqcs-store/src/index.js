@@ -1,6 +1,7 @@
 import { categoryCopy, copy, seoArticles } from "./content.js";
 import { pageResearch } from "./research.js";
 import { legalParityBoost, pageParityBoost, pageParityTail } from "./language-parity.js";
+import { categoryDetails } from "./category-details.js";
 
 const ORIGIN = "https://findqcs.store";
 const CATALOG = "https://www.cnfanssp.com";
@@ -8,70 +9,64 @@ const LOGO = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHL
 
 const products = [
   {
-    id: "4276",
+    id: "4276", sourceId: "7645681448",
     name: "Retro low-top sneakers",
     category: "Shoes",
-    price: "$74.38",
-    note: "Approx. USD conversion · verify live",
+    cny: "¥500", usd: "$68.87",
     image: `${CATALOG}/uploads/allimg/20251225/1-251225144612B9.gif`,
   },
   {
-    id: "2504",
+    id: "2504", sourceId: "7616701439",
     name: "Mohair knit sweater",
     category: "Sweaters",
-    price: "$27.42",
-    note: "Approx. USD conversion · verify live",
+    cny: "¥184.32", usd: "$25.39",
     image: `${CATALOG}/uploads/allimg/20251126/1-251126164405a5.webp`,
   },
   {
-    id: "2822",
+    id: "2822", sourceId: "7622957753",
     name: "Minimal pullover hoodie",
     category: "Hoodies",
-    price: "$11.75",
-    note: "Approx. USD conversion · verify live",
+    cny: "¥79", usd: "$10.88",
     image: `${CATALOG}/uploads/allimg/20251202/1-2512021250461D.webp`,
   },
   {
-    id: "399",
+    id: "399", sourceId: "7579888561",
     name: "Classic steel watch",
     category: "Accessories",
-    price: "$70.81",
-    note: "Approx. USD conversion · verify live",
+    cny: "¥476", usd: "$65.56",
     image: `${CATALOG}/uploads/allimg/20251022/1-2510221P552526.webp`,
   },
   {
-    id: "1252",
+    id: "1252", sourceId: "7594261467",
     name: "Collectible art figure",
     category: "Home & objects",
-    price: "$3.72",
-    note: "Approx. USD conversion · verify live",
+    cny: "¥25", usd: "$3.44",
     image: `${CATALOG}/uploads/allimg/20251106/1-251106160615923.webp`,
   },
   {
-    id: "6653",
+    id: "6653", sourceId: "7635401104",
     name: "Match-day jersey",
     category: "Jerseys",
-    price: "$10.27",
-    note: "Approx. USD conversion · verify live",
+    cny: "¥69", usd: "$9.50",
     image: `${CATALOG}/uploads/allimg/20260430/1-260430211159361.jpg`,
   },
 ];
 
 const categories = [
-  { slug: "shoes", source: "/shoes/", image: 0 },
-  { slug: "hoodies-sweaters", source: "/hoodies-sweaters/", image: 2 },
-  { slug: "t-shirts", source: "/t-shirts/", image: 5 },
-  { slug: "jackets", source: "/jackets/", image: 1 },
-  { slug: "accessories", source: "/accessories/", image: 3 },
-  { slug: "jerseys", source: "/Jersey/", image: 5 },
+  { slug: "shoes", source: "/shoes/", image: 0, productIndices: [0] },
+  { slug: "hoodies-sweaters", source: "/hoodies-sweaters/", image: 2, productIndices: [1, 2] },
+  { slug: "t-shirts", source: "/t-shirts/", image: 5, productIndices: [] },
+  { slug: "jackets", source: "/jackets/", image: 1, productIndices: [] },
+  { slug: "accessories", source: "/accessories/", image: 3, productIndices: [3, 4] },
+  { slug: "jerseys", source: "/Jersey/", image: 5, productIndices: [5] },
 ];
 
 const languages = {
-  en: { label: "EN", search: "Search by product, keyword or source link", button: "Search catalog", eyebrow: "Independent product research", heading: "Inspect the item.\nNot the hype.", sub: "A cleaner way to discover listings, compare visible details, and open the exact source page before you buy.", trending: "Current research set", open: "Inspect listing", guide: "QC field guide", finds: "Product finds", shipping: "Shipping notes", articles: "SEO Articles", faq: "FAQ" },
-  de: { label: "DE", search: "Nach Produkt, Stichwort oder Link suchen", button: "Katalog durchsuchen", eyebrow: "Unabhängige Produktrecherche", heading: "Prüfe den Artikel.\nNicht den Hype.", sub: "Produkte entdecken, sichtbare Details vergleichen und vor dem Kauf die genaue Quellseite öffnen.", trending: "Aktuelle Auswahl", open: "Angebot prüfen", guide: "QC-Leitfaden", finds: "Produktfunde", shipping: "Versandhinweise", articles: "SEO-Artikel", faq: "FAQ" },
-  es: { label: "ES", search: "Buscar por producto, palabra o enlace", button: "Buscar catálogo", eyebrow: "Investigación independiente", heading: "Revisa el artículo.\nNo el ruido.", sub: "Descubre productos, compara detalles visibles y abre la ficha exacta antes de comprar.", trending: "Selección actual", open: "Revisar ficha", guide: "Guía de QC", finds: "Productos", shipping: "Envío", articles: "Artículos SEO", faq: "Preguntas" },
-  fr: { label: "FR", search: "Rechercher un produit, un mot ou un lien", button: "Rechercher", eyebrow: "Recherche produit indépendante", heading: "Inspectez l’article.\nPas le battage.", sub: "Découvrez des articles, comparez les détails visibles et ouvrez la fiche source exacte avant l’achat.", trending: "Sélection actuelle", open: "Voir la fiche", guide: "Guide QC", finds: "Trouvailles", shipping: "Livraison", articles: "Articles SEO", faq: "FAQ" },
-  it: { label: "IT", search: "Cerca per prodotto, parola o link", button: "Cerca catalogo", eyebrow: "Ricerca indipendente", heading: "Controlla l’articolo.\nNon l’hype.", sub: "Scopri articoli, confronta i dettagli visibili e apri la pagina sorgente esatta prima dell’acquisto.", trending: "Selezione attuale", open: "Controlla scheda", guide: "Guida QC", finds: "Prodotti", shipping: "Spedizione", articles: "Articoli SEO", faq: "FAQ" },
+  en: { label: "EN", search: "Search by product, keyword or source link", button: "Search catalog", eyebrow: "Inspect the item. Not the hype.", heading: "FindQC Product Finds with Exact Source Links", slogan: "Inspect the item. Not the hype.", sub: "Browse source-matched FindQC product finds, category directories and practical listing checks. Every image opens its corresponding live product page.", trending: "Current research set", open: "Inspect listing", guide: "QC field guide", finds: "Product finds", shipping: "Shipping notes", articles: "SEO Articles", faq: "FAQ" },
+  de: { label: "DE", search: "Nach Produkt, Stichwort oder Link suchen", button: "Katalog durchsuchen", eyebrow: "Prüfe den Artikel. Nicht den Hype.", heading: "FindQC-Produktfunde mit exakten Quelllinks", slogan: "Prüfe den Artikel. Nicht den Hype.", sub: "Durchsuche quellengenaue FindQC-Produktfunde, Kategorien und praktische Angebotsprüfungen. Jedes Bild öffnet die zugehörige Live-Produktseite.", trending: "Aktuelle Auswahl", open: "Angebot prüfen", guide: "QC-Leitfaden", finds: "Produktfunde", shipping: "Versandhinweise", articles: "SEO-Artikel", faq: "FAQ" },
+  es: { label: "ES", search: "Buscar por producto, palabra o enlace", button: "Buscar catálogo", eyebrow: "Revisa el artículo. No el ruido.", heading: "Productos FindQC con enlaces de origen exactos", slogan: "Revisa el artículo. No el ruido.", sub: "Explora productos FindQC con fuente verificada, directorios de categorías y controles prácticos de fichas. Cada imagen abre su página de producto en vivo.", trending: "Selección actual", open: "Revisar ficha", guide: "Guía de QC", finds: "Productos", shipping: "Envío", articles: "Artículos SEO", faq: "Preguntas" },
+  fr: { label: "FR", search: "Rechercher un produit, un mot ou un lien", button: "Rechercher", eyebrow: "Inspectez l’article. Pas le battage.", heading: "Produits FindQC avec liens source exacts", slogan: "Inspectez l’article. Pas le battage.", sub: "Parcourez des produits FindQC reliés à leur source, des catégories et des contrôles pratiques. Chaque image ouvre sa page produit active correspondante.", trending: "Sélection actuelle", open: "Voir la fiche", guide: "Guide QC", finds: "Trouvailles", shipping: "Livraison", articles: "Articles SEO", faq: "FAQ" },
+  it: { label: "IT", search: "Cerca per prodotto, parola o link", button: "Cerca catalogo", eyebrow: "Controlla l’articolo. Non l’hype.", heading: "Prodotti FindQC con link sorgente esatti", slogan: "Controlla l’articolo. Non l’hype.", sub: "Esplora prodotti FindQC abbinati alla fonte, categorie e controlli pratici delle schede. Ogni immagine apre la corrispondente pagina prodotto attiva.", trending: "Selezione attuale", open: "Controlla scheda", guide: "Guida QC", finds: "Prodotti", shipping: "Spedizione", articles: "Articoli SEO", faq: "FAQ" },
 };
 
 const articleParagraphs = [
@@ -130,15 +125,19 @@ function footer(lang, t) {
   </footer>`;
 }
 
-function cards(t, lang, limit = products.length) {
+function cards(t, lang, limit = products.length, selectedIndices = null) {
   const c = copy[lang];
-  return products.slice(0, limit).map((product, index) => `<article class="product-card" data-search="${esc(`${c.productNames[index]} ${c.productCategories[index]}`.toLowerCase())}">
-    <a class="product-image" href="${CATALOG}/AllProducts/${product.id}.html" target="_blank" rel="noopener noreferrer sponsored" aria-label="${esc(t.open)}: ${esc(c.productNames[index])}">
-      <img src="${product.image}" alt="${esc(c.productNames[index])}" width="640" height="640" ${index > 1 ? 'loading="lazy"' : ""} />
-      <span class="index">0${index + 1}</span>
+  const indices = selectedIndices || products.map((_, index) => index).slice(0, limit);
+  return indices.map((productIndex, cardIndex) => {
+    const product = products[productIndex];
+    return `<article class="product-card" data-search="${esc(`${c.productNames[productIndex]} ${c.productCategories[productIndex]}`.toLowerCase())}">
+    <a class="product-image" href="${CATALOG}/AllProducts/${product.id}.html" target="_blank" rel="noopener noreferrer sponsored" aria-label="${esc(t.open)}: ${esc(c.productNames[productIndex])}">
+      <img src="${product.image}" alt="${esc(c.productNames[productIndex])}" width="640" height="640" ${cardIndex > 1 ? 'loading="lazy"' : ""} />
+      <span class="index">${String(cardIndex + 1).padStart(2, "0")}</span>
     </a>
-    <div class="product-copy"><div class="product-meta"><span>${esc(c.productCategories[index])}</span><strong>${product.price}</strong></div><h3>${esc(c.productNames[index])}</h3><p>${esc(c.priceNote)}</p><a class="text-link" href="${CATALOG}/AllProducts/${product.id}.html" target="_blank" rel="noopener noreferrer sponsored">${esc(t.open)} <span>↗</span></a></div>
-  </article>`).join("");
+    <div class="product-copy"><div class="product-meta"><span>${esc(c.productCategories[productIndex])}</span><strong>${product.cny} · ≈ ${product.usd}</strong></div><h3>${esc(c.productNames[productIndex])}</h3><p>ID ${product.sourceId} · ${esc(c.priceNote)} · 28 Aug 2026</p><a class="text-link" href="${CATALOG}/AllProducts/${product.id}.html" target="_blank" rel="noopener noreferrer sponsored">${esc(t.open)} <span>↗</span></a></div>
+  </article>`;
+  }).join("");
 }
 
 function searchBox(t, lang, compact = false) {
@@ -201,13 +200,29 @@ function categoriesPage(lang) {
   return `<main class="inner"><section class="page-intro"><p class="eyebrow"><span></span>${esc(cc.eyebrow)}</p><h1>${esc(cc.title)}</h1><p>${esc(cc.intro)}</p></section><section class="section categories-section categories-directory"><div class="category-grid">${categoryCards(lang)}</div></section>${researchBlock(lang, "categories")}</main>`;
 }
 
+function categoryAudit(lang, index) {
+  const details = categoryDetails.pages[lang][index];
+  const labels = categoryDetails.labels[lang];
+  const category = categories[index];
+  const t = languages[lang];
+  const examples = category.productIndices.length
+    ? `<div class="product-grid category-products">${cards(t, lang, category.productIndices.length, category.productIndices)}</div>`
+    : `<p class="category-empty">${esc(labels.noExample)}</p>`;
+  return `<section class="section category-audit"><div class="section-head"><div><p class="kicker">01 / ${esc(labels.audit)}</p><h2>${esc(labels.audit)}</h2></div><p>${esc(details.focus)}</p></div>
+    <div class="category-detail-grid"><article><h3>${esc(labels.checkpoints)}</h3><ol>${details.checkpoints.map((item) => `<li>${esc(item)}</li>`).join("")}</ol></article><article><h3>${esc(labels.planning)}</h3><ul>${details.planning.map((item) => `<li>${esc(item)}</li>`).join("")}</ul></article></div>
+    <aside class="mismatch-note"><strong>${esc(labels.mismatch)}</strong><p>${esc(details.mismatch)}</p></aside>
+    <div class="category-examples"><div class="section-head"><div><p class="kicker">02 / ${esc(labels.checked)}</p><h2>${esc(labels.example)}</h2></div><p>${esc(labels.checked)}: 28 August 2026</p></div>${examples}</div>
+    <div class="category-faq"><h2>${esc(labels.faq)}</h2>${details.faqs.map(([question, answer]) => `<details><summary>${esc(question)}<i>+</i></summary><p>${esc(answer)}</p></details>`).join("")}</div>
+  </section>`;
+}
+
 function categoryPage(lang, slug) {
   const cc = categoryCopy[lang];
   const index = categories.findIndex((item) => item.slug === slug);
   if (index < 0) return null;
   const category = categories[index];
   const product = products[category.image];
-  return `<main class="inner"><section class="category-hero"><div><p class="eyebrow"><span></span>${esc(cc.eyebrow)}</p><h1>${esc(cc.names[index])}</h1><p>${esc(cc.descriptions[index])}</p><a class="button" href="${CATALOG}${category.source}" target="_blank" rel="noopener noreferrer sponsored">${esc(cc.source)} ↗</a></div><figure><img src="${product.image}" alt="${esc(cc.names[index])}" width="760" height="760"><figcaption>${esc(cc.names[index])} · FindQC</figcaption></figure></section><section class="section category-note"><p class="kicker">${esc(cc.noteTitle)}</p><h2>${esc(cc.noteTitle)}</h2><p>${esc(cc.note)}</p></section>${researchBlock(lang, "categories")}<section class="section"><div class="section-head"><div><p class="kicker">${esc(cc.nav)}</p><h2>${esc(cc.related)}</h2></div></div><div class="category-grid">${categoryCards(lang, slug)}</div></section></main>`;
+  return `<main class="inner"><section class="category-hero"><div><p class="eyebrow"><span></span>${esc(cc.eyebrow)}</p><h1>${esc(cc.names[index])}</h1><p>${esc(cc.descriptions[index])}</p><a class="button" href="${CATALOG}${category.source}" target="_blank" rel="noopener noreferrer sponsored">${esc(cc.source)} ↗</a></div><figure><img src="${product.image}" alt="${esc(cc.names[index])}" width="760" height="760"><figcaption>${esc(cc.names[index])} · FindQC</figcaption></figure></section><section class="section category-note"><p class="kicker">${esc(cc.noteTitle)}</p><h2>${esc(cc.noteTitle)}</h2><p>${esc(cc.note)}</p></section>${categoryAudit(lang, index)}${researchBlock(lang, "categories")}<section class="section"><div class="section-head"><div><p class="kicker">${esc(cc.nav)}</p><h2>${esc(cc.related)}</h2></div></div><div class="category-grid">${categoryCards(lang, slug)}</div></section></main>`;
 }
 
 function findsPage(lang, t) {
@@ -237,7 +252,7 @@ function articlePage(lang, slug) {
   const c = copy[lang].article;
   const article = seoArticles[lang].find((item) => item.slug === slug);
   if (!article) return null;
-  const schema = JSON.stringify({ "@context": "https://schema.org", "@type": "Article", headline: article.title, description: article.description, datePublished: "2026-08-27", dateModified: "2026-08-27", inLanguage: lang, mainEntityOfPage: `${ORIGIN}${localizedPath(lang, `/articles/${slug}`)}`, publisher: { "@type": "Organization", name: "FindQC Store" } }).replace(/</g, "\\u003c");
+  const schema = JSON.stringify({ "@context": "https://schema.org", "@type": "Article", headline: article.title, description: article.description, image: products[{ "how-to-read-qc-photos": 0, "search-product-link-id-keyword": 4, "actual-vs-volumetric-weight": 1 }[slug] ?? 0].image, datePublished: "2026-08-27", dateModified: "2026-08-28", inLanguage: lang, mainEntityOfPage: `${ORIGIN}${localizedPath(lang, `/articles/${slug}`)}`, author: { "@type": "Organization", name: "FindQC Store Editorial Team", url: ORIGIN }, publisher: { "@type": "Organization", name: "FindQC Store", url: ORIGIN } }).replace(/</g, "\\u003c");
   const visualIndex = { "how-to-read-qc-photos": 0, "search-product-link-id-keyword": 4, "actual-vs-volumetric-weight": 1 }[slug] ?? 0;
   const sections = article.sections.map(([title, body], i) => `<section id="step-${i + 1}"><span>${String(i + 1).padStart(2, "0")}</span><h2>${esc(title)}</h2><p>${esc(body)}</p></section>${i === 2 ? `<figure class="article-evidence-photo"><img src="${products[visualIndex].image}" alt="${esc(copy[lang].productNames[visualIndex])}" width="760" height="620" loading="lazy"><figcaption>${esc(copy[lang].productNames[visualIndex])} · ${esc(c.independent)}</figcaption></figure>` : ""}`).join("");
   return `<main class="article-page"><script type="application/ld+json">${schema}</script><header class="article-header"><a class="back-link" href="${localizedPath(lang, "/articles")}">← ${esc(c.back)}</a><p class="eyebrow"><span></span>${esc(c.reviewed)}</p><h1>${esc(article.title)}</h1><p class="standfirst">${esc(article.description)}</p><div class="article-meta"><span>${esc(article.readTime)}</span><span>${esc(c.independent)}</span></div></header><div class="article-layout"><aside><strong>${esc(c.inGuide)}</strong>${article.sections.map(([title], i) => `<a href="#step-${i + 1}">${String(i + 1).padStart(2, "0")} ${esc(title)}</a>`).join("")}</aside><article class="prose"><div class="summary-box"><strong>${esc(c.summary)}</strong><p>${esc(article.summary)}</p></div>${sections}<div class="article-cta"><h2>${esc(c.ready)}</h2><p>${esc(c.readyText)}</p><a class="button" href="${localizedPath(lang, "/finds")}">${esc(c.browse)} →</a></div></article></div></main>`;
@@ -254,6 +269,42 @@ function legalPage(kind, lang) {
   const sections = privacy ? c.privacySections : c.termsSections;
   const boost = legalParityBoost[lang][privacy ? "privacy" : "terms"];
   return `<main class="inner"><section class="page-intro"><p class="eyebrow"><span></span>${esc(c.updated)}</p><h1>${esc(privacy ? c.privacy : c.terms)}</h1><p>${esc(privacy ? c.privacyIntro : c.termsIntro)}</p></section><section class="section legal-copy">${sections.map(([title, text], index) => `<h2>${esc(title)}</h2><p>${esc(`${text} ${index === sections.length - 1 ? boost : ""}`.trim())}</p>`).join("")}</section></main>`;
+}
+
+function breadcrumbSchema(path, lang, title) {
+  if (path === "/") return null;
+  const parts = path.split("/").filter(Boolean);
+  const items = [{ "@type": "ListItem", position: 1, name: "FindQC Store", item: `${ORIGIN}${localizedPath(lang, "/")}` }];
+  let accumulated = "";
+  parts.forEach((part, index) => {
+    accumulated += `/${part}`;
+    items.push({ "@type": "ListItem", position: index + 2, name: index === parts.length - 1 ? title : part.replace(/-/g, " "), item: `${ORIGIN}${localizedPath(lang, accumulated)}` });
+  });
+  return { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: items };
+}
+
+function pageSchemas(path, lang, title, categoryIndex) {
+  const schemas = [];
+  if (path === "/") {
+    schemas.push({ "@context": "https://schema.org", "@type": "WebSite", name: "FindQC Store", url: ORIGIN, inLanguage: lang, description: languages[lang].sub });
+    schemas.push({ "@context": "https://schema.org", "@type": "Organization", name: "FindQC Store", url: ORIGIN });
+  }
+  if (path === "/categories") {
+    schemas.push({ "@context": "https://schema.org", "@type": "CollectionPage", name: title, url: `${ORIGIN}${localizedPath(lang, path)}`, mainEntity: { "@type": "ItemList", itemListElement: categories.map((category, index) => ({ "@type": "ListItem", position: index + 1, url: `${ORIGIN}${localizedPath(lang, `/categories/${category.slug}`)}`, name: categoryCopy[lang].names[index] })) } });
+  }
+  if (categoryIndex >= 0) {
+    const category = categories[categoryIndex];
+    schemas.push({ "@context": "https://schema.org", "@type": "CollectionPage", name: title, url: `${ORIGIN}${localizedPath(lang, path)}`, dateModified: "2026-08-28", mainEntity: { "@type": "ItemList", numberOfItems: category.productIndices.length, itemListElement: category.productIndices.map((productIndex, index) => ({ "@type": "ListItem", position: index + 1, url: `${CATALOG}/AllProducts/${products[productIndex].id}.html`, name: copy[lang].productNames[productIndex] })) } });
+  }
+  if (path === "/finds") {
+    schemas.push({ "@context": "https://schema.org", "@type": "CollectionPage", name: title, url: `${ORIGIN}${localizedPath(lang, path)}`, mainEntity: { "@type": "ItemList", numberOfItems: products.length, itemListElement: products.map((product, index) => ({ "@type": "ListItem", position: index + 1, url: `${CATALOG}/AllProducts/${product.id}.html`, name: copy[lang].productNames[index] })) } });
+  }
+  if (path === "/faq") {
+    schemas.push({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: copy[lang].faqs.map(([question, answer]) => ({ "@type": "Question", name: question, acceptedAnswer: { "@type": "Answer", text: answer } })) });
+  }
+  const breadcrumb = breadcrumbSchema(path, lang, title);
+  if (breadcrumb) schemas.push(breadcrumb);
+  return schemas.map((schema) => `<script type="application/ld+json">${JSON.stringify(schema).replace(/</g, "\\u003c")}</script>`).join("");
 }
 
 function styles() {
@@ -285,6 +336,8 @@ function styles() {
     .home-page .seo-articles-section .section-head{grid-template-columns:1fr 1fr}.home-page .article-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}.home-page .article-grid>*{padding:9px 8px;min-height:0}.home-page .article-grid .featured-article{grid-row:auto}.home-page .article-grid span{font-size:6px;letter-spacing:.03em}.home-page .article-grid h2,.home-page .featured-article h2{font-size:14px;line-height:1.05;margin:8px 0 5px}.home-page .article-grid p,.home-page .seo-card p{font-size:8.5px;line-height:1.28;margin-bottom:5px}.home-page .article-button{padding:6px 7px;font-size:6.5px;letter-spacing:.03em;margin-top:5px}
     body.home-shell footer{padding:18px 4vw;gap:12px}body.home-shell footer p{font-size:8px;line-height:1.3;margin-top:6px}body.home-shell .footer-links{font-size:8px;gap:5px}body.home-shell .footer-brand .brand-logo{width:26px;height:26px}
   }
+  .category-audit{background:#f4eee5}.category-detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line)}.category-detail-grid article{background:#fffaf2;padding:34px}.category-detail-grid h3,.category-faq>h2{font-family:Georgia,"Times New Roman",serif;font-size:32px;font-style:italic;font-weight:400}.category-detail-grid ol,.category-detail-grid ul{padding-left:22px;margin:0}.category-detail-grid li{padding:9px 0;color:var(--muted);line-height:1.6}.mismatch-note{margin:28px 0 70px;padding:24px 28px;background:#174cff;color:white;display:grid;grid-template-columns:.3fr 1fr;gap:28px;align-items:start}.mismatch-note p{margin:0;line-height:1.7}.category-examples{padding-top:10px}.category-products{max-width:820px}.category-empty{padding:24px;border:1px solid var(--line);background:#fffaf2;color:var(--muted);line-height:1.7}.category-faq{margin-top:70px}.category-faq details{border-top:1px solid var(--line)}.category-faq details:last-child{border-bottom:1px solid var(--line)}.category-faq summary{padding:20px 0;display:flex;justify-content:space-between;gap:20px;font-weight:750;cursor:pointer}.category-faq summary i{font-style:normal;color:var(--blue)}.category-faq details p{max-width:760px;color:var(--muted);line-height:1.7;padding-bottom:20px}
+  @media(max-width:720px){.category-detail-grid{grid-template-columns:1fr}.category-detail-grid article{padding:22px 18px}.category-detail-grid h3,.category-faq>h2{font-size:26px}.category-detail-grid li{font-size:13px;line-height:1.5}.mismatch-note{grid-template-columns:1fr;margin:18px 0 38px;padding:20px;gap:8px}.mismatch-note p,.category-empty,.category-faq details p{font-size:13px}.category-faq{margin-top:38px}body.home-shell .menu-button{font-size:10px}.home-page .issue-line,.home-page .eyebrow,.home-page .kicker{font-size:9px}.home-page .hero h1{font-size:32px}.home-page .lede{font-size:12px;line-height:1.32}.home-page .hero-search .search-box label,.home-page .hero-search .search-row input{font-size:11px}.home-page .hero-search .search-row button{font-size:10px;height:28px}.home-page .hero-search .search-status,.home-page .quick-tags span{font-size:9px}.home-page .quick-tags button{font-size:10px;padding:3px 5px}.home-page .proof-row span{font-size:9px}.home-page .hero-collage{min-height:480px}.home-page .editor-note span,.home-page .editor-note i,.home-page .collage-main figcaption span,.home-page .collage-small figcaption{font-size:9px}.home-page .marquee{font-size:9px;padding:7px 3px}.home-page .section{padding:22px 4vw}.home-page .section-head{margin-bottom:10px}.home-page .section-head>p,.home-page .article-band>div>p:not(.kicker){font-size:11px;line-height:1.3}.home-page .category-card p,.home-page .evidence-cards p,.home-page .method-grid p{font-size:11px;line-height:1.25}.home-page .category-card .article-button,.home-page .article-button,.home-page .button{font-size:10px}.home-page .product-copy p{font-size:11px;line-height:1.2}.home-page .product-meta,.home-page .text-link{font-size:9px}.home-page .evidence-cards article>span,.home-page .article-grid span{font-size:9px}.home-page .article-grid p,.home-page .seo-card p{font-size:11px;line-height:1.24}.home-page .field-photo,.home-page .field-photo img{min-height:190px;height:190px}body.home-shell footer p,body.home-shell .footer-links{font-size:10px}}
   </style>`;
 }
 
@@ -330,13 +383,23 @@ function renderPage(path, lang) {
     "/terms": [c.legal.terms, c.legal.termsIntro],
   }[path];
   const [title, description] = meta;
+  const homeTitles = {
+    en: "FindQC Store — Source-Matched Product Finds & Listing Checks",
+    de: "FindQC Store — Quellengenaue Produktfunde & Angebotsprüfung",
+    es: "FindQC Store — Productos con fuente exacta y revisión de fichas",
+    fr: "FindQC Store — Produits reliés à leur source et contrôle des fiches",
+    it: "FindQC Store — Prodotti con fonte esatta e controllo schede",
+  };
+  const documentTitle = path === "/" ? homeTitles[lang] : `${title} — FindQC Store`;
+  const robots = path === "/privacy" || path === "/terms" ? "noindex,follow" : "index,follow,max-image-preview:large";
   const alternates = Object.keys(languages).map((code) => `<link rel="alternate" hreflang="${code}" href="${ORIGIN}${localizedPath(code, path)}" />`).join("") + `<link rel="alternate" hreflang="x-default" href="${ORIGIN}${localizedPath("en", path)}" />`;
-  return `<!doctype html><html lang="${lang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${esc(title)} — FindQC Store</title><meta name="description" content="${esc(description)}"><meta name="robots" content="index,follow,max-image-preview:large"><link rel="canonical" href="${ORIGIN}${localizedPath(lang, path)}">${alternates}<meta name="theme-color" content="#f6efe5">${styles()}<script async src="https://www.googletagmanager.com/gtag/js?id=G-PHLMLCFBBH"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag("js", new Date());gtag("config", "G-PHLMLCFBBH");</script></head><body class="${path === "/" ? "home-shell" : ""}">${nav(lang, path, t)}${content}${footer(lang, t)}${scripts()}</body></html>`;
+  const structuredData = pageSchemas(path, lang, title, categoryIndex);
+  return `<!doctype html><html lang="${lang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${esc(documentTitle)}</title><meta name="description" content="${esc(description)}"><meta name="robots" content="${robots}"><link rel="canonical" href="${ORIGIN}${localizedPath(lang, path)}">${alternates}<meta name="theme-color" content="#f6efe5">${structuredData}${styles()}<script async src="https://www.googletagmanager.com/gtag/js?id=G-PHLMLCFBBH"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag("js", new Date());gtag("config", "G-PHLMLCFBBH");</script></head><body class="${path === "/" ? "home-shell" : ""}">${nav(lang, path, t)}${content}${footer(lang, t)}${scripts()}</body></html>`;
 }
 
 function sitemap() {
-  const paths = ["/", "/categories", ...categories.map((category) => `/categories/${category.slug}`), "/finds", "/qc-guide", "/shipping", "/articles", ...seoArticles.en.map((article) => `/articles/${article.slug}`), "/faq", "/privacy", "/terms"];
-  const urls = Object.keys(languages).flatMap((lang) => paths.map((path) => `<url><loc>${ORIGIN}${localizedPath(lang, path)}</loc><lastmod>2026-08-27</lastmod></url>`)).join("");
+  const paths = ["/", "/categories", ...categories.map((category) => `/categories/${category.slug}`), "/finds", "/qc-guide", "/shipping", "/articles", ...seoArticles.en.map((article) => `/articles/${article.slug}`), "/faq"];
+  const urls = Object.keys(languages).flatMap((lang) => paths.map((path) => `<url><loc>${ORIGIN}${localizedPath(lang, path)}</loc><lastmod>2026-08-28</lastmod></url>`)).join("");
   return `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${urls}</urlset>`;
 }
 
@@ -344,10 +407,11 @@ export default {
   async fetch(request) {
     try {
       const url = new URL(request.url);
-      if (url.hostname === "www.findqcs.store") return Response.redirect(`${ORIGIN}${url.pathname}${url.search}`, 301);
+      const canonicalPath = url.pathname.length > 1 ? url.pathname.replace(/\/+$/, "") : url.pathname;
+      if (url.protocol !== "https:" || url.hostname !== "findqcs.store" || canonicalPath !== url.pathname) return Response.redirect(`${ORIGIN}${canonicalPath}${url.search}`, 301);
       if (url.pathname === "/robots.txt") return new Response(`User-agent: *\nAllow: /\n\nSitemap: ${ORIGIN}/sitemap.xml\n`, { headers: { "content-type": "text/plain; charset=utf-8", "cache-control": "public, max-age=3600" } });
       if (url.pathname === "/sitemap.xml") return new Response(sitemap(), { headers: { "content-type": "application/xml; charset=utf-8", "cache-control": "public, max-age=3600" } });
-      const { lang, path } = parsePath(url.pathname.replace(/\/$/, "") || "/");
+      const { lang, path } = parsePath(url.pathname);
       const html = renderPage(path, lang);
       if (!html) return new Response("Not Found", { status: 404, headers: { "content-type": "text/plain; charset=utf-8", "x-robots-tag": "noindex, nofollow" } });
       return new Response(html, { headers: { "content-type": "text/html; charset=utf-8", "cache-control": "public, max-age=300", "x-content-type-options": "nosniff", "referrer-policy": "strict-origin-when-cross-origin", "x-frame-options": "SAMEORIGIN" } });
