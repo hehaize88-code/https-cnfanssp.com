@@ -7,6 +7,50 @@ const MAIN = "https://www.cnfanssp.com";
 type Article = { title:string; dek:string; date:string; read:string; label:string; verified:string[]; sections:{heading:string; paragraphs:string[]}[] };
 
 const articles: Record<string, Article> = {
+  "allchinabuy-listing-identity-verification": {
+    title: "AllChinaBuy Listing Identity Verification: Confirm the Product Before Ordering",
+    dek: "A source-first method for proving that a saved AllChinaBuy find still leads to the intended seller page, product, option and quantity.",
+    date: "August 28, 2026", read: "12 min read", label: "Listing verification",
+    verified: ["Product-link shopping flow rechecked", "Price-change confirmation remains order-specific", "Warehouse inspection follows seller dispatch"],
+    sections: [
+      { heading: "Define identity before judging whether a find is good", paragraphs: [
+        "Listing identity is the answer to a narrow question: does this saved route still describe the same product a buyer intends to purchase? It is not a promise of quality, authenticity, availability or delivery. A directory card can preserve a useful lead, but the seller page can change after the card is published. The first verification task is therefore to connect the card, final source URL, seller, product family and selected option on the same date.",
+        "Write a one-line identity statement before opening alternatives. Include the item type, the feature that distinguishes it, the intended color or model and the expected unit or set. For example, “zip hoodie, washed black, size M, one piece” is testable; “best black hoodie” is not. This short statement prevents attractive photographs, translated titles or a low option price from silently changing the product under review."
+      ]},
+      { heading: "Follow the source URL to its final destination", paragraphs: [
+        "Open the saved source route in a clean browser session and record the final marketplace URL after any redirect. Compare the marketplace name, listing identifier and seller or shop name with the information preserved by the directory. A URL that loads is not automatically correct: it may redirect to a shop homepage, a search result, a replacement listing or an error page that still returns a normal web response. The destination must show the intended product itself.",
+        "Keep the original and final URLs in separate fields. This makes later maintenance possible without pretending a redirect never occurred. Remove tracking fragments when they do not identify the product, but do not shorten the address so aggressively that the listing ID disappears. On mobile, confirm the same destination again because some marketplace links open an app interstitial or a generic landing screen. If the final identity cannot be observed, mark the find unresolved rather than live."
+      ]},
+      { heading: "Match the title, gallery and option panel as one record", paragraphs: [
+        "Read the current seller title, then inspect the main gallery and option selector together. The title may describe a product family while the gallery mixes colors, bundles or versions. The first image can also be promotional rather than option-specific. Identity is stronger when the title names the expected item, the gallery repeatedly depicts it and the selectable option has an image or wording consistent with the saved find. One matching thumbnail is not sufficient when the rest of the page points elsewhere.",
+        "Translate only what is needed for the decision and preserve the original option wording beside your interpretation. Machine translation can collapse distinct color names, model years or package types into the same English phrase. If two options appear identical after translation, compare their images, seller codes and price. Do not invent a distinction. Mark the ambiguity and request clarification at the purchasing stage if the chosen option cannot be described unambiguously."
+      ]},
+      { heading: "Separate the main item from deposits, add-ons and partial prices", paragraphs: [
+        "A displayed minimum price can belong to the cheapest option rather than the pictured main item. Open every plausible selector and identify whether it represents one product, a deposit, a replacement part, an accessory, an added service or a multi-item set. Compare the selected option wording with the quantity and unit shown by the seller. A directory should never label the lowest visible number as the product price unless that exact option buys the product described on the card.",
+        "Record the price with a date, currency and option label. Treat it as a seller-page snapshot, not delivered cost. Domestic freight, agent-stage adjustments and later international shipping are different decisions and belong to the cost-focused site, not this listing-identity check. AllChinaBuy's current order interface can require confirmation when a seller reports a price difference, which is another reason to save the selected option and checkout evidence instead of relying on an old card."
+      ]},
+      { heading: "Verify the seller and listing scope without overstating trust", paragraphs: [
+        "Record the visible seller or shop name and determine whether the page is a single listing or a collection of loosely related products. A shop identity can help distinguish two similar pages, but it does not prove every item is reliable. Likewise, sales counts, ratings and marketplace badges can change and may not be comparable across platforms. Use them as dated observations only when the source exposes them clearly, never as permanent editorial endorsements.",
+        "Check whether the saved card copied claims that the seller page no longer supports. Material, batch, compatibility and brand language require current source evidence. When a claim appears only in a directory title, remove or qualify it. A careful identity record states what is observable and leaves uncertain attributes unresolved. This is more useful than filling every field with confident language that cannot be traced back to the current listing."
+      ]},
+      { heading: "Create a pass, hold, replace or remove decision", paragraphs: [
+        "Use four outcomes. Pass means the final URL, seller page, product family and intended option align. Hold means the product appears plausible but one decision-critical detail is missing. Replace means the old route is unavailable but a separately verified alternative has been found; the replacement must receive its own evidence record. Remove means the route is dead, misleading or cannot be connected to the advertised item. Do not quietly swap links while keeping an old title, image or price.",
+        "Set the threshold according to the card's promise. A generic category card may need only a live item type and clear option structure. A precise card naming a material, measurement or bundle needs evidence for each named attribute. If an unresolved point could change what the buyer receives, it belongs in Hold. If it is merely cosmetic copy that can be deleted without changing the item, correct the copy and document the edit date."
+      ]},
+      { heading: "Carry the verified identity into the AllChinaBuy order", paragraphs: [
+        "AllChinaBuy's public shopping flow begins with a supported marketplace product link or product information, after which the agent purchases from the third-party seller. Before payment, compare the agent order page with the source record: title, seller, selected option, color, size, quantity, current item price and any domestic delivery shown. Save the source URL and a dated snapshot of the selection. If the agent interface cannot parse the option, provide concise observable instructions rather than promotional claims.",
+        "Seller dispatch and warehouse inspection happen later, so pre-order identity and warehouse QC solve different problems. The pre-order record shows what was requested. Warehouse photos and intake details show what arrived. Keep both, then compare them when the item reaches storage. A clean listing audit cannot guarantee the physical unit, and a good warehouse image cannot prove the original seller page was represented accurately."
+      ]},
+      { heading: "Maintain the public index with dated evidence", paragraphs: [
+        "For each featured find, keep the last-check date, final source URL, seller or shop, identity statement, option checked, price snapshot and editorial outcome. Recheck prominent cards more often than archived records, and recheck every card before a campaign or category refresh. Trigger an immediate review when a link redirects, a title changes substantially, the image gallery is replaced, the option set shrinks or the price range moves in a way that suggests the cheapest entry is a different item.",
+        "Publish a correction and removal policy so readers know what a listed card means. It should mean that an editor could trace the route to a matching seller page on the stated date—not that AllChinaBuy, the marketplace seller or this independent index guarantees the product. This distinction keeps product discovery separate from the cost-and-logistics guidance on allchinabuy.pro and gives the .shop site a clear purpose: helping readers verify listing identity before they commit to an order."
+      ]},
+      { heading: "Run the final five-minute identity audit", paragraphs: [
+        "Reopen the route, confirm the final marketplace page and compare the listing ID, seller, current title, main gallery and intended option. Check size, color, model, bundle quantity and unit wording. Select the exact option and verify that its price corresponds to the product described. Record the date, currency and any domestic freight separately. Then assign Pass, Hold, Replace or Remove and state the missing evidence when the result is not Pass.",
+        "Finally, test the public card on desktop and mobile. Its title, image, category and destination must describe the same item. Avoid labels such as verified quality, guaranteed authentic or best seller when the evidence only proves identity. A useful index is deliberately modest: it tells the reader which link was checked, what it appeared to sell and which details still need confirmation before payment. That creates an auditable starting point without turning a changing third-party listing into a permanent promise."
+      ]}
+    ]
+  },
   "how-to-use-allchinabuy-spreadsheet": {
     title: "How to Use an AllChinaBuy Spreadsheet Without Wasting Time",
     dek: "A practical, link-first workflow for turning a product directory into a shortlist you can actually inspect and order.",
@@ -174,13 +218,14 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params; const a = articles[slug]; if (!a) return {};
-  return { title: `${a.title} | AllChinaBuy Finds`, description: a.dek, keywords:[a.title.includes("QC") ? "AllChinaBuy QC photos" : a.title.includes("Shipping") ? "AllChinaBuy shipping" : "AllChinaBuy spreadsheet", "AllChinaBuy guide"], alternates:{canonical:`https://allchinabuys.shop/articles/${slug}/`}, openGraph:{title:a.title,description:a.dek,type:"article",url:`https://allchinabuys.shop/articles/${slug}/`,images:[]}, twitter:{card:"summary",title:a.title,description:a.dek,images:[]} };
+  return { title: `${a.title} | AllChinaBuy Finds`, description: a.dek, keywords:[a.title.includes("Listing Identity") ? "AllChinaBuy listing identity verification" : a.title.includes("QC") ? "AllChinaBuy QC photos" : a.title.includes("Shipping") ? "AllChinaBuy shipping" : "AllChinaBuy spreadsheet", "AllChinaBuy product finds"], alternates:{canonical:`https://allchinabuys.shop/articles/${slug}/`}, openGraph:{title:a.title,description:a.dek,type:"article",url:`https://allchinabuys.shop/articles/${slug}/`,images:[]}, twitter:{card:"summary",title:a.title,description:a.dek,images:[]} };
 }
 
 export default async function ArticlePage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params; const article = articles[slug]; if (!article) notFound();
   const articleText = article.sections.flatMap(section => [section.heading, ...section.paragraphs]).join(" ");
-  const schema = {"@context":"https://schema.org","@type":"Article","headline":article.title,"description":article.dek,"datePublished":"2026-08-26","dateModified":"2026-08-26","wordCount":articleText.trim().split(/\s+/).length,"author":{"@type":"Organization","name":"AllChinaBuy Finds Research Desk"},"publisher":{"@type":"Organization","name":"AllChinaBuy Finds"},"mainEntityOfPage":`https://allchinabuys.shop/articles/${slug}/`};
+  const publishDate = slug === "allchinabuy-listing-identity-verification" ? "2026-08-28" : "2026-08-26";
+  const schema = {"@context":"https://schema.org","@type":"Article","headline":article.title,"description":article.dek,"datePublished":publishDate,"dateModified":publishDate,"wordCount":articleText.trim().split(/\s+/).length,"author":{"@type":"Organization","name":"AllChinaBuy Finds Research Desk"},"publisher":{"@type":"Organization","name":"AllChinaBuy Finds"},"mainEntityOfPage":`https://allchinabuys.shop/articles/${slug}/`};
   return <main className="article-page">
     <SiteHeader />
     <article>
