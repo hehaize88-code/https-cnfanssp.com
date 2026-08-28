@@ -6,6 +6,7 @@ import { seoArticleSlugs } from "../../seo-articles";
 import { getLocalizedSeoArticle } from "../../seo-article-locales";
 
 const siteBase = "https://joyagoos.org";
+export const dynamicParams = false;
 const basePages=["spreadsheet","finds","guide","qc","shipping","faq","articles"];
 function parsePage(slug?: string[]): PageKey | null { if(!slug?.length)return "home"; if(slug.length===1&&basePages.includes(slug[0]))return slug[0] as PageKey; if(slug.length===2&&slug[0]==="articles"&&seoArticleSlugs.includes(slug[1]))return slug[1] as PageKey; return null; }
 function route(lang:Lang,page:PageKey){if(page==="home")return `/${lang}/`;if(seoArticleSlugs.includes(page))return `/${lang}/articles/${page}/`;return `/${lang}/${page}/`;}
