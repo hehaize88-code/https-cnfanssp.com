@@ -58,6 +58,9 @@ for (const lang of ["en", "de", "es", "fr", "it"]) {
   assert.match(brief.body, /"@type":"Article"/);
   assert.match(brief.body, /"@type":"BreadcrumbList"/);
   assert.match(brief.body, /hreflang="x-default"/);
+  assert.match(brief.body, /<meta property="og:type" content="article">/);
+  assert.match(brief.body, /<meta property="og:url" content="https:\/\/findqcs\.store/);
+  assert.doesNotMatch(brief.body, /<figure class="article-evidence-photo">/);
 }
 
 console.log("findqcs.store regression checks passed");
