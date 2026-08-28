@@ -11,4 +11,4 @@ npm run build
 npm run deploy
 ```
 
-The production build targets Cloudflare Workers through vinext. The root URL redirects to `/en/`; English, German, Spanish, French and Italian routes each have their own canonical and hreflang metadata.
+Production is deployed from the `joyagoos-org` directory to the Cloudflare Pages project `joyagoos-pages`. The root URL redirects to `/en/`; English, German, Spanish, French and Italian routes each have their own canonical and hreflang metadata.

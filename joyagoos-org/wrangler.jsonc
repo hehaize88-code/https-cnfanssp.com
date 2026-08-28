@@ -1,20 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "joyagoos-org",
-  "main": "dist/server/index.js",
+  "name": "joyagoos-pages",
   "compatibility_date": "2026-08-28",
-  "compatibility_flags": ["nodejs_compat"],
-  "assets": {
-    "directory": "dist/client",
-    "binding": "ASSETS"
-  },
-  "routes": [
-    {
-      "pattern": "joyagoos.org",
-      "custom_domain": true
-    }
-  ],
-  "observability": {
-    "enabled": true
-  }
+  "pages_build_output_dir": "dist/client"
 }

@@ -10,7 +10,7 @@
     "build": "vinext build",
     "start": "WRANGLER_LOG_PATH=.wrangler/wrangler.log vinext start",
     "test": "npm run build",
-    "deploy": "npm run build && wrangler deploy --config dist/server/wrangler.json"
+    "deploy": "npm run build && wrangler pages deploy dist/client --project-name joyagoos-pages"
   },
   "dependencies": {
     "next": "16.2.6",
@@ -31,5 +31,5 @@
     "wrangler": "4.92.0"
   },
   "type": "module",
-  "displayName": "Joyagoos \u2014 Spreadsheet Finds & Buyer Guides"
+  "displayName": "Joyagoos — Spreadsheet Finds & Buyer Guides"
 }
