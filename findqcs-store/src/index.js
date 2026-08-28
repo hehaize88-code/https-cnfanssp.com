@@ -94,7 +94,8 @@ function parsePath(pathname) {
 }
 
 function localizedPath(lang, path) {
-  return `${lang === "en" ? "" : `/${lang}`}${path === "/" ? "/" : path}`;
+  if (path === "/") return lang === "en" ? "/" : `/${lang}`;
+  return `${lang === "en" ? "" : `/${lang}`}${path}`;
 }
 
 function languageMenu(lang, path) {

@@ -11,6 +11,7 @@ for (const [input, expected] of [
   ["http://www.findqcs.store/categories/", "https://findqcs.store/categories"],
   ["https://www.findqcs.store/articles/how-to-read-qc-photos/", "https://findqcs.store/articles/how-to-read-qc-photos"],
   ["https://findqcs.store/de/categories/shoes/", "https://findqcs.store/de/categories/shoes"],
+  ["https://findqcs.store/de/", "https://findqcs.store/de"],
 ]) {
   const { response } = await get(input);
   assert.equal(response.status, 301, input);
