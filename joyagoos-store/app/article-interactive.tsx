@@ -7,8 +7,9 @@ import { commonUi } from "./full-translations";
 import { useLanguage } from "./use-language";
 import { articleTranslations } from "./article-translations";
 import { completeTranslations } from "./generated-translations";
+import { buyerFacingText, getArticleCopy } from "./article-content";
+import { localizedPath, SITE_NAME, SITE_URL, SOCIAL_IMAGE } from "./seo";
 
-const slugIndex: Record<ArticleSlug, number> = { "joyagoo-how-to-buy-guide":0, "joyagoo-qc-photo-checklist":1, "joyagoo-actual-vs-volumetric-weight":2, "joyagoo-link-verification-guide":3 };
 const articleUi: Record<SiteLanguage, { kicker:string; updated:string; guide:string; sources:string; end:string; browse:string }> = {
   en:{kicker:"JOYAGOO EDITORIAL / VERIFIED GUIDE",updated:"Updated",guide:"In this guide",sources:"Primary sources",end:"Continue with a matched product route.",browse:"Browse products ↗"},
   zh:{kicker:"JOYAGOO 编辑中心 / 核验指南",updated:"更新于",guide:"本指南内容",sources:"主要官方来源",end:"继续查看对应的商品路径。",browse:"浏览商品 ↗"},
@@ -22,18 +23,44 @@ const articleUi: Record<SiteLanguage, { kicker:string; updated:string; guide:str
   sv:{kicker:"JOYAGOO REDAKTION / VERIFIERAD GUIDE",updated:"Uppdaterad",guide:"I den här guiden",sources:"Viktigaste officiella källor",end:"Fortsätt med en matchande produktsida.",browse:"Visa produkter ↗"},
 };
 
-export function ArticleInteractive({ slug, language = "en" }: { slug: ArticleSlug; language?: SiteLanguage }) {
+export function ArticleInteractive({ slug, language = "en", prefix = "" }: { slug: ArticleSlug; language?: SiteLanguage; prefix?: string }) {
   const { language:activeLanguage, setLanguage } = useLanguage(language);
   const article = articles[slug];
   const active = activeLanguage === "en" ? undefined : activeLanguage as Locale;
-  const local = active ? localizedSections[active].articles : null;
   const translatedArticle = active ? completeTranslations[active].articles[slug] : null;
   const curatedChinese = active === "zh" ? articleTranslations.zh?.[slug] : null;
-  const prefix = "";
   const ui = articleUi[activeLanguage];
-  const title = local?.blocks[slugIndex[slug]] || article.title;
-  const sections = translatedArticle ? translatedArticle.sections.map(([sectionTitle,text],index) => [curatedChinese?.sections[index]?.[0] || sectionTitle,text] as const) : article.sections;
-  const description = translatedArticle?.description || local?.intro || article.description;
+  const activeCopy = getArticleCopy(slug, activeLanguage);
+  const initialCopy = getArticleCopy(slug, language);
+  const title = activeCopy.title;
+  const sections = translatedArticle
+    ? translatedArticle.sections.map(([sectionTitle,text],index) => [buyerFacingText(curatedChinese?.sections[index]?.[0] || sectionTitle, activeLanguage), buyerFacingText(text, activeLanguage)] as const)
+    : article.sections;
+  const description = activeCopy.description;
   const readTime = active ? `${article.read.match(/\d+/)?.[0]} ${commonUi[active].minutes}` : article.read;
-  return <main><Header prefix={prefix} locale={active} language={activeLanguage} onLanguageChange={setLanguage} section="articles"/><article className="article-page"><header><p className="eyebrow">{ui.kicker}</p><h1>{title}</h1><div><span>{ui.updated} {active ? "2026-08-29" : article.updated}</span><span>{readTime}</span></div><p>{description}</p></header><div className="article-body"><aside><strong>{ui.guide}</strong>{sections.map(([sectionTitle],i)=><a href={`#section-${i+1}`} key={sectionTitle}>0{i+1} {sectionTitle}</a>)}</aside><div>{sections.map(([sectionTitle,text],i)=><section id={`section-${i+1}`} key={sectionTitle}><span>0{i+1}</span><h2>{sectionTitle}</h2><p>{text}</p></section>)}</div></div><div className="article-sources"><p className="eyebrow">{ui.sources}</p>{article.sources.map((source,index)=><a href={source.href} target="_blank" rel="noreferrer" key={source.href}>{curatedChinese?.sources[index] || translatedArticle?.sources[index]?.title || source.title} ↗</a>)}</div><div className="article-end"><h2>{ui.end}</h2><a href={MAIN+"/AllProducts/"} target="_blank" rel="noreferrer">{ui.browse}</a></div></article><Footer prefix={prefix} language={activeLanguage} onLanguageChange={setLanguage} section="articles"/></main>;
+  const canonical = `${SITE_URL}${localizedPath(`/articles/${slug}`, language)}`;
+  const schema = {
+    "@context":"https://schema.org",
+    "@type":"Article",
+    headline:initialCopy.title,
+    description:initialCopy.description,
+    inLanguage:language,
+    datePublished:"2026-08-29",
+    dateModified:"2026-08-29",
+    image:`${SITE_URL}${SOCIAL_IMAGE}`,
+    author:{"@type":"Organization",name:SITE_NAME,url:SITE_URL},
+    publisher:{"@type":"Organization",name:SITE_NAME,logo:{"@type":"ImageObject",url:`${SITE_URL}${SOCIAL_IMAGE}`}},
+    mainEntityOfPage:{"@type":"WebPage","@id":canonical},
+    citation:article.sources.map((source)=>source.href),
+  };
+  const breadcrumb = {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    itemListElement:[
+      {"@type":"ListItem",position:1,name:"Home",item:`${SITE_URL}${localizedPath("/",language)}`},
+      {"@type":"ListItem",position:2,name:language === "en" ? "Articles" : localizedSections[language as Locale].articles.title,item:`${SITE_URL}${localizedPath("/articles",language)}`},
+      {"@type":"ListItem",position:3,name:initialCopy.title,item:canonical},
+    ],
+  };
+  return <main><Header prefix={prefix} locale={active} language={activeLanguage} onLanguageChange={setLanguage} section="articles"/><article className="article-page"><header><p className="eyebrow">{ui.kicker}</p><h1>{title}</h1><div><span>{ui.updated} {active ? "2026-08-29" : article.updated}</span><span>{readTime}</span></div><p>{description}</p></header><div className="article-body"><aside><strong>{ui.guide}</strong>{sections.map(([sectionTitle],i)=><a href={`#section-${i+1}`} key={sectionTitle}>0{i+1} {sectionTitle}</a>)}</aside><div>{sections.map(([sectionTitle,text],i)=><section id={`section-${i+1}`} key={sectionTitle}><span>0{i+1}</span><h2>{sectionTitle}</h2><p>{text}</p></section>)}</div></div><div className="article-sources"><p className="eyebrow">{ui.sources}</p>{article.sources.map((source,index)=><div className="source-reference" key={source.href}><strong>{curatedChinese?.sources[index] || translatedArticle?.sources[index]?.title || source.title}</strong><span>{source.href}</span></div>)}</div><div className="article-end"><h2>{ui.end}</h2><a href={MAIN+"/AllProducts/"} target="_blank" rel="noreferrer">{ui.browse}</a></div><script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(schema).replace(/</g,"\\u003c")}}/><script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(breadcrumb).replace(/</g,"\\u003c")}}/></article><Footer prefix={prefix} language={activeLanguage} onLanguageChange={setLanguage} section="articles"/></main>;
 }

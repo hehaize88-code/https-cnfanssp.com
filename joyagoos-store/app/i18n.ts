@@ -27,6 +27,13 @@ export function resolveLanguage(value: unknown, fallback: SiteLanguage = "en"): 
 }
 
 export function withLanguage(path: string, language: SiteLanguage): string {
-  const joiner = path.includes("?") ? "&" : "?";
-  return `${path}${joiner}lang=${language}`;
+  const [rawPath, hash = ""] = path.split("#", 2);
+  const pathname = (rawPath.split("?", 1)[0] || "/").replace(
+    /^\/(?:zh|de|pl|es|it|fr|pt|ro|sv)(?=\/|$)/,
+    "",
+  ) || "/";
+  const localizedPath = language === "en"
+    ? pathname
+    : `/${language}${pathname === "/" ? "" : pathname}`;
+  return hash ? `${localizedPath}#${hash}` : localizedPath;
 }

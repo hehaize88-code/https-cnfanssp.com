@@ -1,18 +1,21 @@
 import type { Metadata } from "next";
 import Script from "next/script";
 import "./globals.css";
+import { buildPageMetadata, SITE_NAME, SITE_URL } from "./seo";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://joyagoos.store"),
-  title: "Joyagoo Spreadsheet 2026 | Verified Finds & Product Routes",
-  description: "Browse Joyagoo spreadsheet finds, matched product pages, category paths, QC preparation and shipping guides in one independent discovery hub.",
-  alternates: { canonical: "/", languages: { en: "/", zh: "/zh", de: "/de", pl: "/pl", es: "/es", it: "/it", fr: "/fr", pt: "/pt", ro: "/ro", sv: "/sv", "x-default": "/" } },
+  metadataBase: new URL(SITE_URL),
+  ...buildPageMetadata({
+    title: "Joyagoo Product Directory 2026 | Live Listing Routes",
+    description: "Use an independent Joyagoo product directory to check listing destinations, image matches, options, reference prices and the next product route.",
+    path: "/",
+  }),
   robots: { index: true, follow: true },
   icons: { icon: "/favicon.svg", shortcut: "/favicon.svg" },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  const schema = { "@context":"https://schema.org", "@graph":[{ "@type":"WebSite", name:"Joyagoos Store", url:"https://joyagoos.store/", description:"Independent Joyagoo spreadsheet, finds, QC and shipping guide." },{ "@type":"Organization", name:"Joyagoos Store", url:"https://joyagoos.store/" }] };
+  const schema = { "@context":"https://schema.org", "@graph":[{ "@type":"WebSite", name:SITE_NAME, url:`${SITE_URL}/`, description:"Independent Joyagoo product directory, listing-route checks and buyer guides." },{ "@type":"Organization", name:SITE_NAME, url:`${SITE_URL}/`, logo:`${SITE_URL}/joyagoo-logo.png` }] };
   return <html lang="en"><body>{children}<script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(schema)}} /><Script src="https://www.googletagmanager.com/gtag/js?id=G-EQVYBRD6DV" strategy="afterInteractive" /><Script id="google-analytics" strategy="afterInteractive">{`window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag("js", new Date());

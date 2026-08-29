@@ -61,7 +61,9 @@ await writeFile(join(outputDir, "sitemap.xml"), sitemap);
 const notFoundResponse = await fetchPath("/__static-export-not-found__");
 const notFoundHtml = setDocumentLanguage(await notFoundResponse.text(), "/")
   .replace(/<title>.*?<\/title>/, "<title>Page Not Found | Joyagoos Store</title>")
-  .replace(/<meta name="robots" content="index, follow"\/>/, '<meta name="robots" content="noindex, follow"/>');
+  .replace(/<meta name="robots" content="index, follow"\/>/, '<meta name="robots" content="noindex, follow"/>')
+  .replace(/<link rel="canonical"[^>]*>/g, "")
+  .replace(/<link rel="alternate"[^>]*>/g, "");
 await writeFile(join(outputDir, "404.html"), notFoundHtml);
 
 const redirects = pageUrls
@@ -69,6 +71,7 @@ const redirects = pageUrls
   .filter((pathname) => pathname !== "/")
   .map((pathname) => `${pathname}/ ${pathname} 301`)
   .join("\n");
-await writeFile(join(outputDir, "_redirects"), `${redirects}\n`);
+await writeFile(join(outputDir, "_redirects"), `https://www.joyagoos.store/* https://joyagoos.store/:splat 301\n${redirects}\n`);
+await writeFile(join(outputDir, "_headers"), `/assets/*\n  Cache-Control: public, max-age=31536000, immutable\n\n/joyagoo-logo.png\n  Cache-Control: public, max-age=604800\n`);
 
 console.log(`Exported ${pageUrls.length} indexable pages to dist/pages.`);

@@ -83,11 +83,11 @@ export const pageContent: Record<Section, {
   articles: {
     kicker: "EDITORIAL DESK / SOURCE-BACKED",
     title: "Guides for decisions after the first product click.",
-    intro: "The editorial lane focuses on operational questions: how to read QC evidence, how parcel weight changes cost, and how to keep spreadsheet links useful.",
+    intro: "The editorial lane focuses on operational questions: how to read QC evidence, how parcel weight changes cost, and how to keep product routes traceable.",
     blocks: [
       { number: "01", title: "QC photo checklist", text: "A practical sequence for checking identity, size, construction, visible defects and the exact option ordered." },
       { number: "02", title: "Actual vs volumetric weight", text: "Why parcel dimensions can change the chargeable weight and how to plan bulky products before submission." },
-      { number: "03", title: "Spreadsheet link verification", text: "A repeatable process for checking listing status, product identity, option clarity and destination accuracy." },
+      { number: "03", title: "Product route verification", text: "A repeatable process for checking listing status, product identity, option clarity and destination accuracy." },
       { number: "04", title: "Editorial standard", text: "Separate platform rules from community experiences, keep dates visible and avoid presenting estimates as guarantees." },
     ],
   },
@@ -108,15 +108,15 @@ export const locales = {
 export type Locale = keyof typeof locales;
 
 const localeNav: Record<Locale, Record<Section, string>> = {
-  zh: { spreadsheet:"商品表格", finds:"精选商品", guide:"购买指南", qc:"QC 检查", shipping:"运输", faq:"常见问题", articles:"SEO 文章" },
+  zh: { spreadsheet:"商品表格", finds:"精选商品", guide:"购买指南", qc:"QC 检查", shipping:"运输", faq:"常见问题", articles:"文章" },
   de: { spreadsheet:"Tabelle", finds:"Funde", guide:"Kaufguide", qc:"QC-Guide", shipping:"Versand", faq:"Fragen", articles:"Artikel" },
-  pl: { spreadsheet:"Arkusz", finds:"Znaleziska", guide:"Poradnik", qc:"Kontrola QC", shipping:"Wysyłka", faq:"Pytania", articles:"Artykuły SEO" },
+  pl: { spreadsheet:"Arkusz", finds:"Znaleziska", guide:"Poradnik", qc:"Kontrola QC", shipping:"Wysyłka", faq:"Pytania", articles:"Artykuły" },
   es: { spreadsheet:"Hoja", finds:"Hallazgos", guide:"Guía", qc:"Control QC", shipping:"Envío", faq:"Preguntas", articles:"Artículos" },
   fr: { spreadsheet:"Tableau", finds:"Sélections", guide:"Guide", qc:"Contrôle QC", shipping:"Expédition", faq:"Questions", articles:"Articles" },
   it: { spreadsheet:"Tabella", finds:"Selezioni", guide:"Guida", qc:"Controllo QC", shipping:"Spedizione", faq:"Domande", articles:"Articoli" },
-  pt: { spreadsheet:"Planilha", finds:"Seleções", guide:"Guia", qc:"Controlo QC", shipping:"Envio", faq:"Perguntas", articles:"Artigos SEO" },
-  ro: { spreadsheet:"Tabel", finds:"Selecții", guide:"Ghid", qc:"Control QC", shipping:"Expediere", faq:"Întrebări", articles:"Articole SEO" },
-  sv: { spreadsheet:"Kalkylblad", finds:"Utvalda fynd", guide:"Köpguide", qc:"QC-kontroll", shipping:"Frakt", faq:"Frågor", articles:"SEO-artiklar" },
+  pt: { spreadsheet:"Planilha", finds:"Seleções", guide:"Guia", qc:"Controlo QC", shipping:"Envio", faq:"Perguntas", articles:"Artigos" },
+  ro: { spreadsheet:"Tabel", finds:"Selecții", guide:"Ghid", qc:"Control QC", shipping:"Expediere", faq:"Întrebări", articles:"Articole" },
+  sv: { spreadsheet:"Kalkylblad", finds:"Utvalda fynd", guide:"Köpguide", qc:"QC-kontroll", shipping:"Frakt", faq:"Frågor", articles:"Artiklar" },
 };
 
 export const localizedSections: Record<Locale, Record<Section, { kicker:string; title:string; intro:string; blocks:[string,string,string,string] }>> = {
@@ -127,7 +127,7 @@ export const localizedSections: Record<Locale, Record<Section, { kicker:string; 
     qc:{ kicker:"QC 检查清单", title:"检查实际收到的商品，而不是表格预览。", intro:"在仍可处理问题的时间内，将仓库照片与当前商品页和所选规格逐项对比。", blocks:["确认商品身份","检查可见做工","比较实际尺寸","及时作出决定"] },
     shipping:{ kicker:"运输 / 重量与体积", title:"估算整个包裹，而不只是商品价格。", intro:"目的地、路线、重量、尺寸和限制都会影响国际运费。轻但体积大的商品可能按体积重量计费。", blocks:["实际重量","体积重量","包装选择","比较合适路线"] },
     faq:{ kicker:"清楚回答", title:"了解本指南能做什么、不能做什么。", intro:"Joyagoos Store 是独立的商品发现与教育网站，不处理账户、付款、仓库 QC 或国际运输。", blocks:["这是官网吗？","商品卡片跳到哪里？","价格有保证吗？","QC 照片保证质量吗？"] },
-    articles:{ kicker:"SEO 编辑中心 / 有据可查", title:"第一次点击商品后的实用指南。", intro:"独立文章重点讲解购买流程、QC 证据、包裹重量和商品链接核验。", blocks:["Joyagoo 完整购买指南","QC 照片检查清单","实际重量与体积重量","核验商品链接"] },
+    articles:{ kicker:"编辑中心 / 有据可查", title:"第一次点击商品后的实用指南。", intro:"独立文章重点讲解购买流程、QC 证据、包裹重量和商品链接核验。", blocks:["Joyagoo 完整购买指南","QC 照片检查清单","实际重量与体积重量","核验商品链接"] },
   },
   de: {
     spreadsheet:{ kicker:"JOYAGOO SPREADSHEET / START", title:"Nutze die Tabelle zum Eingrenzen, nicht als Ersatz für Prüfungen.", intro:"Eine Spreadsheet ist eine Entdeckungshilfe. Erst die aktuelle Produktseite, die gewählte Option und spätere Lagerfotos machen aus einem Fund eine Entscheidung.", blocks:["Kategorie zuerst wählen","Aktuelle Produktseite öffnen","Exakte Option notieren","Belege in der richtigen Reihenfolge prüfen"] },
@@ -145,7 +145,7 @@ export const localizedSections: Record<Locale, Record<Section, { kicker:string; 
     qc:{ kicker:"LISTA KONTROLNA QC", title:"Sprawdź otrzymany produkt, nie tylko podgląd.", intro:"Porównaj zdjęcia magazynowe z ofertą i wybranym wariantem, gdy wciąż możesz zareagować.", blocks:["Potwierdź zgodność produktu","Sprawdź widoczne wykonanie","Porównaj wymiary","Podejmij szybką decyzję"] },
     shipping:{ kicker:"WYSYŁKA / WAGA + OBJĘTOŚĆ", title:"Oszacuj paczkę, nie tylko cenę produktu.", intro:"Kraj, trasa, waga, wymiary i ograniczenia wpływają na koszt. Lekki, duży produkt może być rozliczony wagą objętościową.", blocks:["Waga rzeczywista","Waga objętościowa","Wybór opakowania","Porównanie tras"] },
     faq:{ kicker:"JASNE ODPOWIEDZI", title:"Dowiedz się, co robi ten poradnik, a czego nie.", intro:"Joyagoos Store jest niezależnym przewodnikiem. Nie obsługuje kont, płatności, QC ani wysyłki paczek.", blocks:["Czy to oficjalna strona?","Gdzie prowadzą karty?","Czy ceny są gwarantowane?","Czy QC gwarantuje jakość?"] },
-    articles:{ kicker:"REDAKCJA SEO / ŹRÓDŁA", title:"Poradniki na etap po pierwszym kliknięciu.", intro:"Artykuły dotyczą zakupu, zdjęć QC, wagi paczki i weryfikacji zapisanych linków.", blocks:["Jak kupować na Joyagoo","Lista zdjęć QC","Waga rzeczywista i objętościowa","Weryfikacja linków"] },
+    articles:{ kicker:"REDAKCJA / ŹRÓDŁA", title:"Poradniki na etap po pierwszym kliknięciu.", intro:"Artykuły dotyczą zakupu, zdjęć QC, wagi paczki i weryfikacji zapisanych linków.", blocks:["Jak kupować na Joyagoo","Lista zdjęć QC","Waga rzeczywista i objętościowa","Weryfikacja linków"] },
   },
   es: {
     spreadsheet:{ kicker:"JOYAGOO SPREADSHEET / INICIO", title:"Usa la hoja para reducir opciones, no para saltarte controles.", intro:"Una spreadsheet sirve para descubrir. La página actual, la opción elegida y las fotos posteriores del almacén convierten un enlace en una decisión.", blocks:["Elegir primero la categoría","Abrir la página correspondiente","Registrar la opción exacta","Revisar pruebas en orden"] },
@@ -181,7 +181,7 @@ export const localizedSections: Record<Locale, Record<Section, { kicker:string; 
     qc:{ kicker:"CHECKLIST QC", title:"Verifique o artigo recebido, não apenas a pré-visualização.", intro:"Compare as fotos do armazém com o anúncio e a opção exata enquanto ainda for possível agir.", blocks:["Confirmar identidade","Examinar o acabamento visível","Comparar medidas","Decidir rapidamente"] },
     shipping:{ kicker:"ENVIO / PESO + VOLUME", title:"Calcule a encomenda, não apenas o preço do produto.", intro:"Destino, rota, peso, dimensões e restrições alteram o custo. Um artigo leve e volumoso pode ser cobrado pelo peso volumétrico.", blocks:["Peso real","Peso volumétrico","Opções de embalagem","Comparar a rota adequada"] },
     faq:{ kicker:"RESPOSTAS CLARAS", title:"Saiba o que este guia faz e o que não faz.", intro:"Joyagoos Store é um guia independente. Não gere contas, pagamentos, QC do armazém nem expedições.", blocks:["É o site oficial?","Onde abrem os cartões?","Os preços são garantidos?","O QC garante qualidade?"] },
-    articles:{ kicker:"EDITORIAL SEO / COM FONTES", title:"Guias para depois do primeiro clique.", intro:"Os artigos abordam compra, provas QC, peso da encomenda e verificação de links.", blocks:["Como comprar na Joyagoo","Checklist de fotos QC","Peso real e volumétrico","Verificar links"] },
+    articles:{ kicker:"EDITORIAL / COM FONTES", title:"Guias para depois do primeiro clique.", intro:"Os artigos abordam compra, provas QC, peso da encomenda e verificação de links.", blocks:["Como comprar na Joyagoo","Checklist de fotos QC","Peso real e volumétrico","Verificar links"] },
   },
   ro: {
     spreadsheet:{ kicker:"TABEL JOYAGOO / START", title:"Folosește tabelul pentru a restrânge opțiunile, nu pentru a sări verificările.", intro:"Tabelul ajută la descoperire. Pagina actuală, opțiunea aleasă și fotografiile din depozit transformă legătura într-o decizie.", blocks:["Alege categoria","Deschide pagina corectă","Notează opțiunea exactă","Verifică dovezile în ordine"] },
@@ -190,7 +190,7 @@ export const localizedSections: Record<Locale, Record<Section, { kicker:string; 
     qc:{ kicker:"LISTĂ DE CONTROL QC", title:"Verifică articolul primit, nu doar previzualizarea.", intro:"Compară fotografiile din depozit cu oferta și opțiunea exactă cât timp mai poți interveni.", blocks:["Confirmă identitatea","Verifică execuția vizibilă","Compară măsurile","Decide rapid"] },
     shipping:{ kicker:"EXPEDIERE / GREUTATE + VOLUM", title:"Estimează coletul, nu doar prețul produsului.", intro:"Destinația, ruta, greutatea, dimensiunile și restricțiile schimbă costul. Un articol ușor și voluminos poate fi taxat volumetric.", blocks:["Greutate reală","Greutate volumetrică","Alegerea ambalajului","Compararea rutei"] },
     faq:{ kicker:"RĂSPUNSURI CLARE", title:"Înțelege ce face acest ghid și ce nu face.", intro:"Joyagoos Store este un ghid independent. Nu gestionează conturi, plăți, QC în depozit sau transport.", blocks:["Este site-ul oficial?","Unde duc cardurile?","Prețurile sunt garantate?","QC garantează calitatea?"] },
-    articles:{ kicker:"EDITORIAL SEO / CU SURSE", title:"Ghiduri pentru pasul de după primul clic.", intro:"Articolele tratează cumpărarea, dovezile QC, greutatea coletului și verificarea legăturilor.", blocks:["Cum cumperi pe Joyagoo","Checklist fotografii QC","Greutate reală și volumetrică","Verificarea legăturilor"] },
+    articles:{ kicker:"EDITORIAL / CU SURSE", title:"Ghiduri pentru pasul de după primul clic.", intro:"Articolele tratează cumpărarea, dovezile QC, greutatea coletului și verificarea legăturilor.", blocks:["Cum cumperi pe Joyagoo","Checklist fotografii QC","Greutate reală și volumetrică","Verificarea legăturilor"] },
   },
   sv: {
     spreadsheet:{ kicker:"JOYAGOO KALKYLBLAD / START", title:"Använd kalkylbladet för att begränsa valet, inte för att hoppa över kontroller.", intro:"Kalkylbladet hjälper dig att hitta. Den aktuella sidan, vald variant och lagerbilder gör sedan länken till ett beslut.", blocks:["Välj kategori först","Öppna rätt produktsida","Spara exakt variant","Kontrollera underlagen i ordning"] },
@@ -199,7 +199,7 @@ export const localizedSections: Record<Locale, Record<Section, { kicker:string; 
     qc:{ kicker:"QC-CHECKLISTA", title:"Kontrollera den mottagna varan, inte bara förhandsvisningen.", intro:"Jämför lagerbilderna med annonsen och den exakta varianten medan det fortfarande går att agera.", blocks:["Bekräfta identitet","Granska synligt utförande","Jämför mått","Besluta snabbt"] },
     shipping:{ kicker:"FRAKT / VIKT + VOLYM", title:"Beräkna paketet, inte bara produktpriset.", intro:"Destination, rutt, vikt, mått och begränsningar påverkar kostnaden. En lätt men skrymmande vara kan debiteras efter volymvikt.", blocks:["Faktisk vikt","Volymvikt","Förpackningsval","Jämför rätt rutt"] },
     faq:{ kicker:"TYDLIGA SVAR", title:"Förstå vad guiden gör och inte gör.", intro:"Joyagoos Store är en oberoende guide. Den hanterar inte konton, betalningar, lager-QC eller paketfrakt.", blocks:["Är detta den officiella sidan?","Vart leder produktkorten?","Är priser garanterade?","Garanterar QC kvalitet?"] },
-    articles:{ kicker:"SEO-REDAKTION / KÄLLOR", title:"Guider för steget efter första klicket.", intro:"Artiklarna handlar om köpflöde, QC-underlag, paketvikt och verifiering av länkar.", blocks:["Så köper du på Joyagoo","QC-fotochecklista","Faktisk vikt och volymvikt","Verifiera länkar"] },
+    articles:{ kicker:"REDAKTION / KÄLLOR", title:"Guider för steget efter första klicket.", intro:"Artiklarna handlar om köpflöde, QC-underlag, paketvikt och verifiering av länkar.", blocks:["Så köper du på Joyagoo","QC-fotochecklista","Faktisk vikt och volymvikt","Verifiera länkar"] },
   },
 };
 
@@ -210,7 +210,7 @@ export function Header({ prefix = "", locale, section, language = locale || "en"
       <a className="brand" href={withLanguage(prefix || "/", language)}><img className="brand-logo" src="/joyagoo-logo.png" alt="JoyaGoo" width="768" height="235" /></a>
       <nav aria-label="Primary navigation">{sectionOrder.slice(0, 6).map((item) => <a key={item} href={withLanguage(path(item), language)}>{language !== "en" ? localeNav[language][item] : item[0].toUpperCase() + item.slice(1)}</a>)}</nav>
       <div className="header-actions">
-        <a className="seo-cta" href={withLanguage(path("articles"), language)}>{language !== "en" ? localeNav[language].articles : "SEO Articles"}</a>
+        <a className="seo-cta" href={withLanguage(path("articles"), language)}>{language !== "en" ? localeNav[language].articles : "Articles"}</a>
         <LanguageMenu language={language} onChange={onLanguageChange} />
         <a className="header-cta" href={MAIN + "/AllProducts/"} target="_blank" rel="noreferrer">{language !== "en" ? commonUi[language].catalog : "Open catalog ↗"}</a>
       </div>
