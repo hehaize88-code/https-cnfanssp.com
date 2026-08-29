@@ -1,21 +1,19 @@
-"use client";
-
 import Link from "next/link";
-import { useState } from "react";
-import { hrefFor, liveProduct, products, type Locale, type RouteName } from "@/lib/site-data";
+import { hrefFor, liveProduct, products, trustRouteNames, type Locale, type NavRouteName, type RouteName, type TrustRouteName } from "@/lib/site-data";
 import { localizedCopy, translate } from "@/lib/i18n";
-import { useSiteLocale } from "@/lib/use-site-locale";
 import { ProductCard } from "./home-view";
 import { SiteShell } from "./site-shell";
+import { SpreadsheetFilter } from "./spreadsheet-filter";
+import { TrustView } from "./trust-view";
 
-const pageMeta: Record<RouteName, { kicker: string; title: string; intro: string }> = {
+const pageMeta: Record<NavRouteName, { kicker: string; title: string; intro: string }> = {
   spreadsheet: { kicker: "SEARCH INTENT / SOURCE-CHECKED 28 AUG 2026", title: "Hacoo Spreadsheet: a visual index, not an official Hacoo feature", intro: "Hacoo's official website and app-store descriptions present a content-sharing community and marketplace. They do not describe a native spreadsheet. This independent index answers the separate search need for organised product routes without pretending otherwise." },
   finds: { kicker: "CURATED / IMAGE-MATCHED 28 AUG 2026", title: "Hacoo finds selected for a checkable product trail", intro: "A deliberately small set of products. Each card shows the same lead image as its destination route, a category and an approximate USD guide price—so the next click is clear and easy to recheck." },
   guide: { kicker: "OFFICIAL APP FACTS / PRACTICAL WORKFLOW", title: "How Hacoo works: what the official sources actually say", intro: "Hacoo describes itself as an open content-sharing community where people can share, review products, discover services and connect with others. Here is the practical version of that promise, separated from independent product-link browsing." },
   qc: { kicker: "REVIEWS / PHOTOS / REPORTING", title: "Hacoo product checks: evidence before assumptions", intro: "Official Hacoo materials say users can rate products, brands and services, and provide routes for reporting suspected intellectual-property violations. Neither statement guarantees that any individual listing is accurate, authentic or suitable." },
   shipping: { kicker: "OFFICIAL POLICY / CHECKED 28 AUG 2026", title: "Hacoo shipping times, after-sales support and refund facts", intro: "This page uses Hacoo's published Shipping & Delivery and help-centre information. The figures are official estimates, not promises, and the final order screen remains the place to confirm price and delivery options." },
   faq: { kicker: "FACT CHECK / INDEPENDENT PUBLISHER", title: "Hacoo facts worth checking before you use a product link", intro: "Concise answers based on Hacoo's website, Google Play listing, published policies and clearly labelled third-party review data. No invented guarantees and no copied customer-service script." },
-  articles: { kicker: "EVIDENCE DESK / 1,200–1,800 WORD GUIDES", title: "Independent Hacoo research and shopping guides", intro: "Long-form articles built around one search intent at a time. Every article distinguishes official claims, app-store data, customer-review patterns and our own practical interpretation." },
+  articles: { kicker: "SOURCE-CHECKED BUYER GUIDES", title: "Independent Hacoo research and shopping guides", intro: "Long-form articles built around one reader question at a time. Every guide separates official claims, dated app-store data, public-review patterns and practical interpretation." },
 };
 
 const guideSteps = [
@@ -39,7 +37,7 @@ const qcChecks = [
 const faqItems = [
   ["What does Hacoo officially say it is?", "Hacoo's About page and Google Play listing describe an open content-sharing community for sharing life, discovering content, rating products, brands and services, and connecting with people and businesses."],
   ["Is a Hacoo spreadsheet an official Hacoo feature?", "We found no native spreadsheet described in the official homepage, About page or Google Play description reviewed on 28 August 2026. The term is used by independent websites and social communities for organised product-link collections."],
-  ["How large is the Android app?", "Google Play showed 10M+ downloads, roughly 59K reviews and a rating around 4.1 stars when checked on 28 August 2026. These live figures change, so the store listing is the current source."],
+  ["How large is the Android app?", "The US English Google Play listing showed 10M+ downloads, about 59.1K reviews and a rating around 4.3 stars when checked on 29 August 2026. These live figures change, so the store listing is the current source."],
   ["What shipping times does Hacoo publish?", "Its Shipping & Delivery page says receiving time is usually about 15–28 days, with published destination ranges of 15–25 days for the UK, France, Germany and Italy; 15–30 for Spain; and 25–65 for other countries. It also says dates are guidelines, not guarantees."],
   ["How long is the published after-sales window?", "Hacoo's Shipping & Delivery page states that after-sales support can be requested within 15 days of delivery. A separate help-centre return page also says allowed returns must be initiated within 15 days and handled through app customer service."],
   ["What do customer reviews show?", "They show mixed experiences, not one universal result. On 28 August 2026 Trustpilot displayed a 3.6 rating across about 3,279 reviews and a strongly split distribution: 50% five-star and 34% one-star. Google Play reviews also included both platform-level ratings and recent complaints."],
@@ -58,17 +56,12 @@ const articleCards = [
 
 function Spreadsheet({ locale }: { locale: Locale }) {
   const tx = (value: string) => translate(locale, value);
-  const [filter, setFilter] = useState("All");
-  const visible = filter === "All" ? products : products.filter((product) => product.category === filter);
   return <>
-    <div className="filter-row"><button className={filter === "All" ? "active" : ""} onClick={() => setFilter("All")}>{tx("All")}</button>{[...new Set(products.map((p) => p.category))].map((name) => <button key={name} className={filter === name ? "active" : ""} onClick={() => setFilter(name)}>{tx(name)}</button>)}</div>
-    <div className="sheet-table">
-      <div className="sheet-head"><span>{tx("ITEM")}</span><span>{tx("CATEGORY")}</span><span>{tx("GUIDE PRICE")}</span><span>{tx("LIVE ROUTE")}</span></div>
-      {visible.map((p, index) => <div className="sheet-row" key={p.id}>
-        <span className="sheet-item"><small>{String(index + 1).padStart(2, "0")}</small><img src={p.image} alt="" width="72" height="72" /><strong>{tx(p.name)}</strong></span>
-        <span>{tx(p.category)}</span><span>{p.price}</span><a href={liveProduct(p.id)} target="_blank" rel="noreferrer">{tx("OPEN")} ↗</a>
-      </div>)}
-    </div>
+    <SpreadsheetFilter
+      rows={products.map((product) => ({ id: product.id, name: tx(product.name), category: tx(product.category), price: product.price, image: product.image, url: liveProduct(product.id) }))}
+      categories={[...new Set(products.map((product) => tx(product.category)))]}
+      labels={{ all: tx("All"), item: tx("ITEM"), category: tx("CATEGORY"), price: tx("GUIDE PRICE"), route: tx("LIVE ROUTE"), open: tx("OPEN") }}
+    />
     <p className="data-note">{tx("Guide prices are approximate USD conversions. Product price, availability and delivery eligibility must be confirmed on the live destination page.")}</p><SourceBand locale={locale} />
   </>;
 }
@@ -92,20 +85,22 @@ function SourceBand({ locale }: { locale: Locale }) {
 }
 
 export function ContentView({ page, locale = "en" }: { page: RouteName; locale?: Locale }) {
-  const { locale: activeLocale } = useSiteLocale(locale);
+  if (trustRouteNames.includes(page as TrustRouteName)) return <TrustView page={page as TrustRouteName} locale={locale} />;
+  const activeLocale = locale;
   const c = localizedCopy(activeLocale);
   const tx = (value: string) => translate(activeLocale, value);
-  const meta = pageMeta[page];
+  const navPage = page as NavRouteName;
+  const meta = pageMeta[navPage];
   return <SiteShell locale={locale}><main className="inner-main">
     <header className="inner-hero"><span className="section-kicker">{tx(meta.kicker)}</span><h1>{tx(meta.title)}</h1><p>{tx(meta.intro)}</p></header>
-    {page === "spreadsheet" && <Spreadsheet locale={activeLocale} />}
-    {page === "finds" && <><div className="product-grid finds-grid">{products.map((product) => <ProductCard key={product.id} product={product} c={c} locale={activeLocale} />)}</div><section className="editorial-note"><span>{tx("SELECTION STANDARD")}</span><h2>{tx("Image match first. Useful category second. Hype last.")}</h2><p>{tx("We keep the featured collection intentionally small. A listing must have a stable live destination, a lead image that matches the card and enough detail for a visitor to continue their own review. Inclusion is not an endorsement or a quality guarantee.")}</p></section><SourceBand locale={activeLocale} /></>}
-    {page === "guide" && <div className="step-list">{guideSteps.map(([n,t,b]) => <article key={n}><span>{n}</span><div><h2>{tx(t)}</h2><p>{tx(b)}</p></div></article>)}</div>}
-    {page === "guide" && <SourceBand locale={activeLocale} />}
-    {page === "qc" && <><div className="qc-grid">{qcChecks.map(([t,b], index) => <article key={t}><span>{String(index + 1).padStart(2,"0")}</span><h2>{tx(t)}</h2><p>{tx(b)}</p></article>)}</div><aside className="decision-band"><span>{tx("STOP SIGNAL")}</span><strong>{tx("If the title, selected variant and product images conflict, do not assume which one is correct.")}</strong><p>{tx("For intellectual-property concerns, use Hacoo's published infringement route. For order or account issues, use in-app support or the official service address.")}</p></aside><SourceBand locale={activeLocale} /></>}
-    {page === "shipping" && <ShippingFacts locale={activeLocale} />}
-    {page === "faq" && <><div className="faq-list">{faqItems.map(([q,a], index) => <details key={q} open={index === 0}><summary><span>{String(index + 1).padStart(2,"0")}</span>{tx(q)}<b>+</b></summary><p>{tx(a)}</p></details>)}</div><SourceBand locale={activeLocale} /></>}
-    {page === "articles" && <><div className="research-note"><strong>{tx("Editorial order")}</strong><span>{tx("Start with entity clarity, then answer policy and trust questions, then publish use-case guides. This sequence creates a connected topic cluster instead of isolated keyword pages.")}</span></div><div className="article-cards">{articleCards.map((article, index) => <Link key={article.slug} href={hrefFor(activeLocale, `articles/${article.slug}`)}><span>{tx(article.tag)}</span><small>{String(index + 1).padStart(2,"0")}</small><h2>{tx(article.title)}</h2><p>{tx(article.excerpt)}</p><b>{tx("READ ARTICLE")} ↗</b></Link>)}</div></>}
+    {navPage === "spreadsheet" && <Spreadsheet locale={activeLocale} />}
+    {navPage === "finds" && <><div className="product-grid finds-grid">{products.map((product) => <ProductCard key={product.id} product={product} c={c} locale={activeLocale} />)}</div><section className="editorial-note"><span>{tx("SELECTION STANDARD")}</span><h2>{tx("Image match first. Useful category second. Hype last.")}</h2><p>{tx("We keep the featured collection intentionally small. A listing must have a stable live destination, a lead image that matches the card and enough detail for a visitor to continue their own review. Inclusion is not an endorsement or a quality guarantee.")}</p></section><SourceBand locale={activeLocale} /></>}
+    {navPage === "guide" && <div className="step-list">{guideSteps.map(([n,t,b]) => <article key={n}><span>{n}</span><div><h2>{tx(t)}</h2><p>{tx(b)}</p></div></article>)}</div>}
+    {navPage === "guide" && <SourceBand locale={activeLocale} />}
+    {navPage === "qc" && <><div className="qc-grid">{qcChecks.map(([t,b], index) => <article key={t}><span>{String(index + 1).padStart(2,"0")}</span><h2>{tx(t)}</h2><p>{tx(b)}</p></article>)}</div><aside className="decision-band"><span>{tx("STOP SIGNAL")}</span><strong>{tx("If the title, selected variant and product images conflict, do not assume which one is correct.")}</strong><p>{tx("For intellectual-property concerns, use Hacoo's published infringement route. For order or account issues, use in-app support or the official service address.")}</p></aside><SourceBand locale={activeLocale} /></>}
+    {navPage === "shipping" && <ShippingFacts locale={activeLocale} />}
+    {navPage === "faq" && <><div className="faq-list">{faqItems.map(([q,a], index) => <details key={q} open={index === 0}><summary><span>{String(index + 1).padStart(2,"0")}</span>{tx(q)}<b>+</b></summary><p>{tx(a)}</p></details>)}</div><SourceBand locale={activeLocale} /></>}
+    {navPage === "articles" && <><div className="research-note"><strong>{tx("How to use these guides")}</strong><span>{tx("Start with the question you need to answer, note the source date and separate official platform facts from independent product-route guidance.")}</span></div><div className="article-cards">{articleCards.map((article, index) => <Link key={article.slug} href={hrefFor(activeLocale, `articles/${article.slug}`)}><span>{tx(article.tag)}</span><small>{String(index + 1).padStart(2,"0")}</small><h2>{tx(article.title)}</h2><p>{tx(article.excerpt)}</p><b>{tx("READ ARTICLE")} ↗</b></Link>)}</div></>}
     <section className="route-cta"><div><span className="section-kicker">{tx("LIVE CATALOG")}</span><h2>{tx("Ready to continue with a current product route?")}</h2></div><a className="button primary" href="https://cnfanssp.com/AllProducts/" target="_blank" rel="noreferrer">{tx("Open live catalog")} ↗</a></section>
   </main></SiteShell>;
 }

@@ -3,6 +3,8 @@ export type Article = {
   tag: string;
   title: string;
   deck: string;
+  seoTitle: string;
+  seoDescription: string;
   date: string;
   readTime: string;
   reviewed?: string;
@@ -17,6 +19,9 @@ export const articles: Article[] = [
     tag: "APP EXPLAINER",
     title: "What Is Hacoo? The Official App, Features and Facts Explained",
     deck: "A source-led explanation of Hacoo's current identity, what the Android and iOS listings confirm, and why an independent Hacoo spreadsheet is a different product.",
+    seoTitle: "What Is Hacoo? Official App Facts",
+    seoDescription: "Current Hacoo app identity, store data and official features, clearly separated from independent product indexes and dated to the source check.",
+    image: { src: "/article-covers/hacoo-app-facts.svg", alt: "Hacoo app facts source map", caption: "Original HacooVIP editorial graphic summarising the guide's evidence layers." },
     date: "August 28, 2026",
     readTime: "11 min read",
     reviewed: "Fact-checked against official Hacoo pages and live app-store listings on August 28, 2026",
@@ -36,7 +41,7 @@ export const articles: Article[] = [
         "The language also matters for keyword research. Someone searching ‘what is Hacoo’ needs an answer about community, discovery and shopping—not a page that immediately pretends Hacoo is only a spreadsheet. Someone searching ‘Hacoo reviews’ has a different task: they want evidence from actual users and public rating platforms. Good site architecture respects that difference. It gives the entity explanation its own page, then links to review, shipping, safety and product-discovery pages where those subjects can be examined properly."
       ]},
       { heading: "What Google Play confirms", paragraphs: [
-        "Google Play is useful because it supplies current store data outside Hacoo's own marketing copy. On 28 August 2026, the listing for package com.saramart.android showed 10M+ downloads, about 59,000 reviews, a rating near 4.1 stars, a parental-guidance content rating and a Lifestyle classification. The page showed an update date of 20 August 2026 in the English listing we checked. These numbers are snapshots, not permanent facts. They should always be dated and linked because ratings and review counts can move every day.",
+        "Google Play is useful because it supplies current store data outside Hacoo's own marketing copy. On 29 August 2026, the US English listing for package com.saramart.android showed 10M+ downloads, about 59,100 reviews, a rating near 4.3 stars, a parental-guidance content rating and a Lifestyle classification. The page showed an update date of 20 August 2026. These numbers are snapshots, not permanent facts. They should always be dated and linked because ratings and review counts can move every day.",
         "The listing names the developer as DOOP TECH LIMITED and supplies service@hacoo.app as the support email. It also links back to hacoo.app. Those details help a user distinguish the live app record from lookalike download pages. For Android, the package name is a particularly useful identity check because titles and icons can be copied. Our practical rule is simple: use the official store listing or Hacoo's own Get the App route, and confirm the developer and package before installing."
       ]},
       { heading: "What the iOS listing adds", paragraphs: [
@@ -66,6 +71,9 @@ export const articles: Article[] = [
     tag: "POLICY CHECK",
     title: "Hacoo Shipping, Returns and Refunds: What the Published Policies Say",
     deck: "A plain-English reading of Hacoo's official delivery ranges, processing language, address warning, after-sales window and return instructions.",
+    seoTitle: "Reading Hacoo Delivery & Return Rules",
+    seoDescription: "Read Hacoo's published delivery ranges, processing time, address guidance and after-sales wording as dated policy evidence, not promises.",
+    image: { src: "/article-covers/hacoo-delivery-rules.svg", alt: "Hacoo delivery policy timeline", caption: "Original HacooVIP editorial graphic summarising the guide's evidence layers." },
     date: "August 28, 2026",
     readTime: "12 min read",
     reviewed: "Policy wording checked on August 28, 2026; always verify the terms attached to your own order",
@@ -115,6 +123,9 @@ export const articles: Article[] = [
     tag: "REVIEW ANALYSIS",
     title: "Hacoo Reviews 2026: Ratings, Recurring Themes and How to Read Them",
     deck: "A balanced review of public rating signals across Google Play, Apple and Trustpilot, with a method for separating useful patterns from noise.",
+    seoTitle: "How to Read Hacoo Reviews in 2026",
+    seoDescription: "A dated method for reading Hacoo ratings and public review patterns across app stores and Trustpilot without treating anecdotes as proof.",
+    image: { src: "/article-covers/hacoo-review-method.svg", alt: "Hacoo review evidence matrix", caption: "Original HacooVIP editorial graphic summarising the guide's evidence layers." },
     date: "August 28, 2026",
     readTime: "13 min read",
     reviewed: "Ratings and visible review samples checked on August 28, 2026; all figures are dated snapshots",
@@ -130,7 +141,7 @@ export const articles: Article[] = [
         "The better approach is to keep each signal in its lane. Use app-store ratings to understand broad app sentiment and technical complaints. Use company-review platforms to examine shopping, fulfilment, refunds and support. Use product-level reviews to judge a specific listing, while remembering that a listing can change. This article does not declare Hacoo universally good or bad. It shows what public data displayed on 28 August 2026 and how to interpret the patterns without cherry-picking."
       ]},
       { heading: "The Google Play snapshot", paragraphs: [
-        "The English Google Play listing showed 10M+ downloads, about 59K reviews and an overall rating around 4.1 stars when checked. The page also displayed recent low-rating comments about confusing product visibility, region selection, tracking and support. Those comments matter because they identify concrete failure modes. They do not establish the percentage of all users affected, and the visible review sample is selected by the store rather than randomly drawn by this publication.",
+        "The US English Google Play listing showed 10M+ downloads, about 59.1K reviews and an overall rating around 4.3 stars when checked on 29 August 2026. The page also displayed recent low-rating comments about confusing product visibility, region selection, tracking and support. Those comments matter because they identify concrete failure modes. They do not establish the percentage of all users affected, and the visible review sample is selected by the store rather than randomly drawn by this publication.",
         "Google Play says ratings and reviews are verified, which refers to its store process, not independent proof of every factual claim in a review. The listing also changes across locale and device filters: one view can show a slightly different rounded score or review count from another. That is normal for live platforms. Record the date, locale and approximate count instead of presenting the last decimal place as timeless truth."
       ]},
       { heading: "Apple ratings are storefront-specific", paragraphs: [
@@ -155,7 +166,7 @@ export const articles: Article[] = [
       ]},
       { heading: "A fair conclusion from the 2026 data", paragraphs: [
         "The public record is mixed but substantial. Hacoo has a large Android install base and tens of thousands of app-store ratings. Its Google Play score was positive overall, while recent visible reviews included serious complaints. Trustpilot's average sat in the middle, but its distribution was unusually split between five-star and one-star experiences. That combination supports neither ‘everyone loves it’ nor ‘every order fails’. It supports a more careful conclusion: outcomes vary, and product, region, fulfilment and support should be evaluated separately.",
-        "For a buying decision, use public reviews as one layer. Confirm the live listing and variant, keep checkout and policy evidence, pay attention to the platform's published 15-day after-sales window, and preserve order records. For research, cite the source, date and storefront. For SEO, resist the temptation to manufacture a dramatic verdict. A transparent review page can rank because it answers the question better—not because it pretends uncertainty does not exist."
+        "For a buying decision, use public reviews as one layer. Confirm the live listing and variant, keep checkout and policy evidence, pay attention to the platform's published 15-day after-sales window, and preserve order records. When you compare reviews, note the source, date and storefront, then separate repeated observations from individual outcomes. Uncertainty should remain visible instead of being compressed into a dramatic verdict."
       ]},
     ],
   },
@@ -164,6 +175,9 @@ export const articles: Article[] = [
     tag: "BEGINNER GUIDE",
     title: "How to Use a Hacoo Spreadsheet Without Losing the Product Trail",
     deck: "A disciplined route from broad discovery to the exact live listing, with checks that protect you from stale links, mismatched images and rushed decisions.",
+    seoTitle: "Using a Hacoo Spreadsheet Safely",
+    seoDescription: "Use an independent Hacoo spreadsheet as a route map while rechecking destination images, variants, availability and live listing details.",
+    image: { src: "/article-covers/hacoo-route-map.svg", alt: "Independent Hacoo product-route workflow", caption: "Original HacooVIP editorial graphic summarising the guide's evidence layers." },
     date: "August 28, 2026",
     readTime: "12 min read",
     reviewed: "Editorial workflow reviewed against current destination routes and Hacoo's official product description on August 28, 2026",
@@ -220,6 +234,9 @@ export const articles: Article[] = [
     tag: "QC GUIDE",
     title: "Reading Hacoo Product Photos: A Repeatable Quality Checklist",
     deck: "A visual inspection method for shape, construction, colour, material, sizing and listing consistency—without pretending a photo can prove everything.",
+    seoTitle: "Hacoo Product-Photo Evidence Checklist",
+    seoDescription: "A repeatable way to read product-photo evidence for shape, construction, colour and listing consistency without making unsupported guarantees.",
+    image: { src: "/article-covers/hacoo-photo-checklist.svg", alt: "Hacoo product-photo evidence checklist", caption: "Original HacooVIP editorial graphic summarising the guide's evidence layers." },
     date: "August 28, 2026",
     readTime: "13 min read",
     reviewed: "Photo-checking guidance cross-checked with Hacoo's official review and intellectual-property reporting descriptions on August 28, 2026",
@@ -276,6 +293,9 @@ export const articles: Article[] = [
     tag: "PLANNING",
     title: "Hacoo Size and Shipping Planning Before You Commit",
     deck: "A measurement-first approach to fit, basket planning and delivery variables that helps replace vague expectations with checkable inputs.",
+    seoTitle: "Hacoo Size and Delivery Planning",
+    seoDescription: "A measurement-first planning guide for fit inputs, basket timing and delivery variables without turning estimates into guarantees.",
+    image: { src: "/article-covers/hacoo-size-planning.svg", alt: "Hacoo size and delivery planning worksheet", caption: "Original HacooVIP editorial graphic summarising the guide's evidence layers." },
     date: "August 28, 2026",
     readTime: "12 min read",
     reviewed: "Planning guidance checked against Hacoo's Shipping & Delivery and official return-help wording on August 28, 2026",

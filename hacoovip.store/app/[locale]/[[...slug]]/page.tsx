@@ -3,7 +3,8 @@ import { ContentView } from "@/components/content-view";
 import { HomeView } from "@/components/home-view";
 import { articles, getArticle } from "@/lib/articles";
 import { translate } from "@/lib/i18n";
-import { languageAlternates, locales, routeNames, type Locale, type RouteName } from "@/lib/site-data";
+import { languageAlternates, locales, routeNames, trustRouteNames, type Locale, type RouteName, type TrustRouteName } from "@/lib/site-data";
+import { getTrustPage } from "@/lib/trust-pages";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 
@@ -26,31 +27,32 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const path = slug.join("/");
   const article = slug[0] === "articles" && slug[1] ? getArticle(slug[1]) : undefined;
   const titles: Record<string, string> = {
-    spreadsheet: "Hacoo Spreadsheet: a visual index, not an official Hacoo feature",
-    finds: "Hacoo finds selected for a checkable product trail",
-    guide: "How Hacoo works: what the official sources actually say",
-    qc: "Hacoo product checks: evidence before assumptions",
-    shipping: "Hacoo shipping times, after-sales support and refund facts",
-    faq: "Hacoo facts worth checking before you use a product link",
-    articles: "Independent Hacoo research and shopping guides",
+    spreadsheet: "Hacoo Product-Route Index",
+    finds: "Hacoo Product-Route Selection",
+    guide: "Hacoo App Facts & Research Guide",
+    qc: "Hacoo Photo Evidence Checklist",
+    shipping: "Reading Hacoo Delivery Estimates",
+    faq: "Hacoo App Facts FAQ",
+    articles: "Hacoo Source-Checked Buyer Guides",
   };
   const descriptions: Record<string, string> = {
-    spreadsheet: "Hacoo's official website and app-store descriptions present a content-sharing community and marketplace. They do not describe a native spreadsheet. This independent index answers the separate search need for organised product routes without pretending otherwise.",
-    finds: "A deliberately small set of products. Each card shows the same lead image as its destination route, a category and an approximate USD guide price—so the next click is clear and easy to recheck.",
-    guide: "Hacoo describes itself as an open content-sharing community where people can share, review products, discover services and connect with others. Here is the practical version of that promise, separated from independent product-link browsing.",
-    qc: "Official Hacoo materials say users can rate products, brands and services, and provide routes for reporting suspected intellectual-property violations. Neither statement guarantees that any individual listing is accurate, authentic or suitable.",
-    shipping: "This page uses Hacoo's published Shipping & Delivery and help-centre information. The figures are official estimates, not promises, and the final order screen remains the place to confirm price and delivery options.",
-    faq: "Concise answers based on Hacoo's website, Google Play listing, published policies and clearly labelled third-party review data. No invented guarantees and no copied customer-service script.",
-    articles: "Long-form articles built around one search intent at a time. Every article distinguishes official claims, app-store data, customer-review patterns and our own practical interpretation.",
+    spreadsheet: "Independent visual product routes with image-matched destinations and a clear explanation that this is not an official Hacoo feature.",
+    finds: "A compact selection with matching lead images, transparent categories and approximate USD guide prices to recheck on the live destination.",
+    guide: "Current Hacoo app identity and public facts, clearly separated from this independent product-route guide.",
+    qc: "A practical checklist for reading product-photo evidence without turning images or reviews into guarantees.",
+    shipping: "How to read Hacoo's published delivery ranges, processing time and after-sales wording as dated guidance rather than a promise.",
+    faq: "Concise, dated answers about Hacoo app identity, public policies, independent product routes and evidence limits.",
+    articles: "Source-checked guides that separate current official statements, dated public records and independent buyer guidance.",
   };
-  const rawTitle = article?.title ?? (path ? titles[slug[0]] : "Hacoo spreadsheet, app facts and product routes—clearly separated.");
-  const rawDescription = article?.deck ?? (path ? descriptions[slug[0]] : "Hacoo officially describes a content-sharing community and marketplace—not a native spreadsheet. We pair a visual, independent product index with source-led guides to the app, reviews, shipping and returns.");
+  const trustPage = slug.length === 1 && trustRouteNames.includes(slug[0] as TrustRouteName) ? getTrustPage(locale, slug[0] as TrustRouteName) : undefined;
+  const rawTitle = trustPage?.title ?? article?.seoTitle ?? (path ? titles[slug[0]] : "Hacoo Product Research Briefs & App Facts");
+  const rawDescription = trustPage?.description ?? article?.seoDescription ?? (path ? descriptions[slug[0]] : "Define product requirements before browsing, then use independent product routes and dated Hacoo app facts without confusing either with an official spreadsheet.");
   return {
     title: translate(locale, rawTitle),
     description: rawDescription ? translate(locale, rawDescription) : undefined,
     alternates: { canonical: `/${locale}${path ? `/${path}` : ""}`, languages: languageAlternates(path) },
     robots: { index: true, follow: true },
-    openGraph: { title: translate(locale, rawTitle), description: rawDescription ? translate(locale, rawDescription) : undefined, locale },
+    openGraph: { title: translate(locale, rawTitle), description: rawDescription ? translate(locale, rawDescription) : undefined, locale, images: article?.image ? [{ url: article.image.src, width: 1200, height: 630, alt: translate(locale, article.image.alt) }] : undefined },
   };
 }
 
