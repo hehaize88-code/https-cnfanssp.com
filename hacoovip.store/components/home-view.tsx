@@ -43,7 +43,7 @@ export function HomeView({ locale = "en" }: { locale?: Locale }) {
 
   return (
     <SiteShell locale={locale}>
-      <main>
+      <main className="home-main">
         <section className="hero-shell">
           <div className="hero-copy">
             <span className="section-kicker">{tx("HACOO / SPREADSHEET / 2026")}</span>
