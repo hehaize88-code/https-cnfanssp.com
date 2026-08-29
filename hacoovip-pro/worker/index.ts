@@ -47,6 +47,41 @@ function cachePolicy(pathname: string, contentType: string): {
   return null;
 }
 
+function withCachePolicy(request: Request, url: URL, response: Response): Response {
+  const policy = cachePolicy(
+    url.pathname,
+    response.headers.get("content-type") ?? "",
+  );
+
+  if (!policy || request.method !== "GET" || response.status !== 200) {
+    return response;
+  }
+
+  const headers = new Headers(response.headers);
+  headers.set("cache-control", policy.browser);
+  if (policy.edge) headers.set("cloudflare-cdn-cache-control", policy.edge);
+  headers.set("x-content-type-options", "nosniff");
+
+  return new Response(response.body, {
+    status: response.status,
+    statusText: response.statusText,
+    headers,
+  });
+}
+
+function isStaticAsset(pathname: string): boolean {
+  return (
+    pathname.startsWith("/assets/") ||
+    pathname.startsWith("/_next/static/") ||
+    pathname.startsWith("/products/") ||
+    pathname === "/favicon.svg" ||
+    pathname === "/hacoo-logo.png" ||
+    pathname === "/file.svg" ||
+    pathname === "/globe.svg" ||
+    pathname === "/window.svg"
+  );
+}
+
 const worker = {
   async fetch(request: Request, env: Env, ctx: ExecutionContext): Promise<Response> {
     const url = new URL(request.url);
@@ -66,26 +101,13 @@ const worker = {
       return permanentRedirect(url);
     }
 
-    const response = await handler.fetch(request, env, ctx);
-    const policy = cachePolicy(
-      url.pathname,
-      response.headers.get("content-type") ?? "",
-    );
-
-    if (!policy || request.method !== "GET" || response.status !== 200) {
-      return response;
+    if (request.method === "GET" && isStaticAsset(url.pathname)) {
+      const assetResponse = await env.ASSETS.fetch(request);
+      return withCachePolicy(request, url, assetResponse);
     }
 
-    const headers = new Headers(response.headers);
-    headers.set("cache-control", policy.browser);
-    if (policy.edge) headers.set("cloudflare-cdn-cache-control", policy.edge);
-    headers.set("x-content-type-options", "nosniff");
-
-    return new Response(response.body, {
-      status: response.status,
-      statusText: response.statusText,
-      headers,
-    });
+    const response = await handler.fetch(request, env, ctx);
+    return withCachePolicy(request, url, response);
   },
 };
 

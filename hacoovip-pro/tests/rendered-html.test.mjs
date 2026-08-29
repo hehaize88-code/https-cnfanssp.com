@@ -8,7 +8,10 @@ const workerPromise = (async () => {
   return (await import(workerUrl.href)).default;
 })();
 
-async function fetchWorker(url) {
+async function fetchWorker(
+  url,
+  assetFetch = async () => new Response("Not found", { status: 404 }),
+) {
   const worker = await workerPromise;
   return worker.fetch(
     new Request(url, {
@@ -16,7 +19,7 @@ async function fetchWorker(url) {
     }),
     {
       ASSETS: {
-        fetch: async () => new Response("Not found", { status: 404 }),
+        fetch: assetFetch,
       },
     },
     {
@@ -87,4 +90,24 @@ test("keeps every mobile module visible and readable", async () => {
   assert.doesNotMatch(mobileCss, /\.hero-gallery\s*\{[^}]*display:\s*none/s);
   assert.match(mobileCss, /\.hero-gallery\s*\{[^}]*display:\s*grid/s);
   assert.doesNotMatch(mobileCss, /\.notice-bar span:last-child\s*\{[^}]*display:\s*none/s);
+});
+
+test("serves generated client assets through the Workers Assets binding", async () => {
+  let requestedUrl = "";
+  const response = await fetchWorker(
+    "https://hacoovip.pro/assets/site.css",
+    async (request) => {
+      requestedUrl = request.url;
+      return new Response("body{}", {
+        status: 200,
+        headers: { "content-type": "text/css" },
+      });
+    },
+  );
+
+  assert.equal(requestedUrl, "https://hacoovip.pro/assets/site.css");
+  assert.equal(response.status, 200);
+  assert.equal(await response.text(), "body{}");
+  assert.equal(response.headers.get("cache-control"), "public, max-age=31536000, immutable");
+  assert.equal(response.headers.get("x-content-type-options"), "nosniff");
 });
