@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -12,5 +13,8 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   const schema = { "@context":"https://schema.org", "@graph":[{ "@type":"WebSite", name:"Joyagoos Store", url:"https://joyagoos.store/", description:"Independent Joyagoo spreadsheet, finds, QC and shipping guide." },{ "@type":"Organization", name:"Joyagoos Store", url:"https://joyagoos.store/" }] };
-  return <html lang="en"><body>{children}<script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(schema)}} /></body></html>;
+  return <html lang="en"><body>{children}<script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(schema)}} /><Script src="https://www.googletagmanager.com/gtag/js?id=G-EQVYBRD6DV" strategy="afterInteractive" /><Script id="google-analytics" strategy="afterInteractive">{`window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag("js", new Date());
+gtag("config", "G-EQVYBRD6DV");`}</Script></body></html>;
 }
