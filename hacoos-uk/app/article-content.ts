@@ -1,5 +1,6 @@
 import type { Locale } from "./site-data";
 import type { ArticleKey } from "./localized-content";
+import { readinessArticles, readinessKey } from "./hu-article-content";
 
 export type ArticleSection = { heading: string; paragraphs: string[]; bullets?: string[] };
 export type Article = {
@@ -336,9 +337,9 @@ function translatedArticles(locale: Exclude<Locale, "en">): Record<ArticleKey, A
 }
 
 export const articles: Record<Locale, Record<ArticleKey, Article>> = {
-  en,
-  de: translatedArticles("de"),
-  fr: translatedArticles("fr"),
-  es: translatedArticles("es"),
-  it: translatedArticles("it"),
+  en: { ...en, [readinessKey]: readinessArticles.en },
+  de: { ...translatedArticles("de"), [readinessKey]: readinessArticles.de },
+  fr: { ...translatedArticles("fr"), [readinessKey]: readinessArticles.fr },
+  es: { ...translatedArticles("es"), [readinessKey]: readinessArticles.es },
+  it: { ...translatedArticles("it"), [readinessKey]: readinessArticles.it },
 };

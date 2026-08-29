@@ -52,6 +52,7 @@ const articleKeys: PageKey[] = [
   "articles/find-product-links",
   "articles/read-qc-photos",
   "articles/size-before-you-buy",
+  "articles/hacoo-uk-pre-order-readiness-sheet",
 ];
 
 const detailIcons: Partial<Record<PageKey, typeof ShieldCheck>> = {
@@ -286,7 +287,7 @@ function FaqList({ locale, limit }: { locale: Locale; limit?: number }) {
 
 function ArticleCards({ locale }: { locale: Locale }) {
   const t = copy[locale];
-  const icons = [Search, PackageCheck, Ruler];
+  const icons = [Search, PackageCheck, Ruler, ShieldCheck];
   return (
     <div className="article-grid">
       {articleKeys.map((key, index) => {
@@ -547,8 +548,8 @@ export function SitePage({ locale, pageKey }: { locale: Locale; pageKey: PageKey
     "@type": "Article",
     headline: copy[locale].pageLabels[pageKey].title,
     description: copy[locale].pageLabels[pageKey].intro,
-    datePublished: "2026-08-28",
-    dateModified: "2026-08-28",
+    datePublished: pageKey === "articles/hacoo-uk-pre-order-readiness-sheet" ? "2026-08-29" : "2026-08-28",
+    dateModified: pageKey === "articles/hacoo-uk-pre-order-readiness-sheet" ? "2026-08-29" : "2026-08-28",
     inLanguage: locale,
     image: "https://hacoos.uk/hacoo-logo.png",
     author: { "@type": "Organization", name: "Hacoos UK Research Desk", url: "https://hacoos.uk/methodology" },
