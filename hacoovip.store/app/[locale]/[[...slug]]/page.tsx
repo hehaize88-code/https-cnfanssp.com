@@ -1,11 +1,23 @@
 import { ArticleView } from "@/components/article-view";
 import { ContentView } from "@/components/content-view";
 import { HomeView } from "@/components/home-view";
-import { getArticle } from "@/lib/articles";
+import { articles, getArticle } from "@/lib/articles";
 import { translate } from "@/lib/i18n";
 import { languageAlternates, locales, routeNames, type Locale, type RouteName } from "@/lib/site-data";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
+
+export const dynamicParams = false;
+
+export function generateStaticParams() {
+  return locales
+    .filter((locale) => locale !== "en")
+    .flatMap((locale) => [
+      { locale, slug: [] as string[] },
+      ...routeNames.map((route) => ({ locale, slug: [route] })),
+      ...articles.map((article) => ({ locale, slug: ["articles", article.slug] })),
+    ]);
+}
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string; slug?: string[] }> }): Promise<Metadata> {
   const { locale: rawLocale, slug = [] } = await params;
