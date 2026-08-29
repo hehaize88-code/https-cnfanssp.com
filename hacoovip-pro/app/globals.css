@@ -33,7 +33,7 @@ img { display: block; max-width: 100%; }
 .desktop-nav a { padding: 9px 12px; border-radius: 999px; font-size: 11px; font-weight: 750; color: #4f5560; transition: .18s ease; }
 .desktop-nav a:hover, .desktop-nav a.active { background: var(--white); color: var(--ink); box-shadow: 0 3px 12px rgba(31, 35, 48, .08); }
 .language-links { display: flex; gap: 2px; }
-.language-links a { padding: 7px 5px; border-radius: 6px; color: #8a8e98; font-size: 9px; font-weight: 800; }
+.language-links a { min-width: 32px; min-height: 36px; padding: 7px 5px; display: grid; place-items: center; border-radius: 6px; color: #8a8e98; font-size: 11px; font-weight: 800; }
 .language-links a:hover, .language-links a.active { background: var(--ink); color: #fff; }
 .mobile-nav { display: none; }
 
@@ -233,25 +233,32 @@ footer { background: #fff; border-top: 1px solid var(--line); }
 
 @media (max-width: 700px) {
   .section-shell, .header-inner { width: min(100% - 24px, 1180px); }
-  .notice-bar { height: 27px; padding: 0 12px; font-size: 8px; }
-  .notice-bar span:last-child { display: none; }
+  .notice-bar { height: auto; min-height: 42px; padding: 8px 12px; gap: 12px; justify-content: center; font-size: 11px; line-height: 1.3; text-align: center; }
   .header-inner { min-height: 62px; gap: 12px; }
   .brand { width: 112px; flex-basis: 112px; }
   .brand img { width: 112px; }
-  .language-links a { padding: 6px 4px; font-size: 8px; }
-  .mobile-nav summary { padding: 10px 12px; }
+  .language-links a { min-width: 36px; min-height: 40px; padding: 6px 4px; font-size: 11px; }
+  .mobile-nav summary { min-height: 44px; padding: 10px 12px; align-items: center; font-size: 12px; }
   .mobile-nav > div { padding: 7px 12px 12px; grid-template-columns: repeat(4, 1fr); gap: 5px; }
-  .mobile-nav a { padding: 9px 3px; font-size: 9px; }
+  .mobile-nav a { min-height: 40px; padding: 9px 3px; display: grid; place-items: center; font-size: 11px; }
   .hero { min-height: 0; padding: 35px 0 36px; grid-template-columns: 1fr; gap: 24px; }
-  .eyebrow { margin-bottom: 11px; font-size: 9px; }
+  .eyebrow { margin-bottom: 11px; font-size: 11px; }
   .eyebrow span { margin-right: 5px; padding: 5px 7px; }
   .hero h1 { font-size: 43px; line-height: 1.01; }
-  .hero-intro { margin: 15px 0; font-size: 13px; line-height: 1.55; }
+  .hero-intro { margin: 15px 0; font-size: 14px; line-height: 1.6; }
   .search-box { padding: 5px; border-radius: 14px; box-shadow: 0 12px 35px rgba(34,39,56,.09); }
-  .search-box input { padding: 11px 9px; font-size: 12px; }
-  .search-box button { padding: 0 12px; border-radius: 10px; font-size: 10px; }
-  .trust-row { margin-top: 13px; gap: 7px; font-size: 8px; }
-  .hero-gallery { display: none; }
+  .search-box input { padding: 11px 9px; font-size: 14px; }
+  .search-box button { min-height: 42px; padding: 0 12px; border-radius: 10px; font-size: 11px; }
+  .trust-row { margin-top: 13px; gap: 9px; font-size: 11px; }
+  .hero-gallery { min-height: 190px; display: grid; grid-template-columns: 1.35fr .82fr; grid-template-rows: repeat(2, 92px); gap: 6px; }
+  .gallery-main, .gallery-small { position: relative; inset: auto; width: auto; height: auto; border: 0; border-radius: 14px; transform: none; }
+  .gallery-main { grid-column: 1; grid-row: 1 / 3; }
+  .gallery-one { grid-column: 2; grid-row: 1; }
+  .gallery-two { grid-column: 2; grid-row: 2; }
+  .gallery-main span { left: 7px; bottom: 7px; padding: 6px 8px; font-size: 11px; }
+  .gallery-note { left: 7px; bottom: 42px; width: 126px; min-height: 0; padding: 7px 9px; border-radius: 11px; transform: none; }
+  .gallery-note strong { display: inline; margin-right: 5px; font-size: 17px; }
+  .gallery-note span { display: inline; margin-top: 0; font-size: 11px; line-height: 1.25; }
   .category-section { padding: 32px 0; }
   .category-shell { gap: 18px; }
   .category-title h2, .section-heading h2, .method-intro h2 { font-size: 34px; }
@@ -265,75 +272,80 @@ footer { background: #fff; border-top: 1px solid var(--line); }
   .product-grid { grid-template-columns: repeat(2, 1fr); gap: 8px; }
   .product-card { border-radius: 15px; }
   .product-info { padding: 10px 10px 12px; }
-  .product-number { top: 7px; left: 7px; min-width: 27px; height: 27px; font-size: 8px; }
-  .product-meta { font-size: 7px; }
-  .product-meta strong { font-size: 9px; }
+  .product-number { top: 7px; left: 7px; min-width: 29px; height: 29px; font-size: 11px; }
+  .product-meta { font-size: 11px; letter-spacing: .03em; }
+  .product-meta strong { font-size: 12px; }
   .product-card h3 { min-height: 30px; margin: 6px 0 10px; font-size: 13px; }
-  .product-link { padding-top: 8px; font-size: 8px; }
-  .outline-button { margin-top: 20px; padding: 11px 16px; font-size: 9px; }
+  .product-link { min-height: 40px; padding-top: 8px; align-items: center; font-size: 11px; }
+  .outline-button { margin-top: 20px; padding: 12px 16px; font-size: 11px; }
   .method-section { padding: 38px 0; }
   .method-inner { grid-template-columns: 1fr; gap: 20px; }
   .method-intro > p:last-child { margin-top: 9px; font-size: 11px; }
   .method-grid { gap: 7px; }
   .method-grid article { min-height: 74px; padding: 11px 12px; grid-template-columns: 38px 1fr; gap: 10px; border-radius: 14px; }
-  .method-grid article > span { width: 34px; height: 34px; border-radius: 10px; font-size: 9px; }
+  .method-grid article > span { width: 34px; height: 34px; border-radius: 10px; font-size: 11px; }
   .method-grid h3 { font-size: 13px; }
-  .method-grid p { font-size: 10px; }
+  .method-grid p { font-size: 12px; }
   .home-reading-section { padding: 40px 0; }
   .home-section-heading { margin-bottom: 18px; align-items: start; }
   .home-section-heading h2 { font-size: 32px; }
-  .home-section-heading > div > p:last-child { margin-top: 9px; font-size: 10px; }
-  .home-section-heading > a { padding: 9px 11px; font-size: 8px; }
+  .home-section-heading > div > p:last-child { margin-top: 9px; font-size: 12px; }
+  .home-section-heading > a { min-height: 40px; padding: 9px 11px; display: grid; place-items: center; font-size: 11px; }
   .home-article-grid { grid-template-columns: 1fr; gap: 8px; }
   .home-article-card { display: grid; grid-template-columns: 96px 1fr; border-radius: 16px; }
   .home-article-thumb { min-height: 0; padding: 11px; display: flex; flex-direction: column; gap: 7px; }
-  .home-article-thumb span { width: 27px; height: 27px; border-radius: 9px; font-size: 8px; }
-  .home-article-thumb small { font-size: 7px; line-height: 1.25; }
+  .home-article-thumb span { width: 29px; height: 29px; border-radius: 9px; font-size: 11px; }
+  .home-article-thumb small { font-size: 11px; line-height: 1.25; }
   .home-article-thumb strong { margin-top: auto; font-size: 15px; line-height: 1; }
   .home-article-card > div:last-child { min-height: 142px; padding: 13px; }
   .home-article-card h3 { margin-bottom: 7px; font-size: 15px; }
-  .home-article-card p { margin-bottom: 8px; font-size: 9px; line-height: 1.5; -webkit-line-clamp: 3; }
-  .home-article-card b { font-size: 8px; }
+  .home-article-card p { margin-bottom: 8px; font-size: 12px; line-height: 1.5; -webkit-line-clamp: 4; }
+  .home-article-card b { font-size: 11px; }
   .home-faq-section { padding: 38px 0 42px; }
   .home-faq-grid { grid-template-columns: repeat(2, 1fr); gap: 7px; }
   .home-faq-grid a { min-height: 142px; padding: 13px; border-radius: 14px; }
   .home-faq-grid h3 { margin: 17px 0 7px; font-size: 14px; }
-  .home-faq-grid p { font-size: 9px; line-height: 1.5; -webkit-line-clamp: 3; }
+  .home-faq-grid span { font-size: 11px; }
+  .home-faq-grid p { font-size: 12px; line-height: 1.5; -webkit-line-clamp: 4; }
   .home-faq-grid b { right: 12px; bottom: 9px; font-size: 16px; }
   .interior-hero { padding: 44px 0 38px; grid-template-columns: 1fr; gap: 17px; }
   .interior-hero h1 { font-size: 42px; }
-  .interior-hero > p { font-size: 12px; }
+  .interior-hero > p { font-size: 14px; }
   .fact-strip-inner { padding: 22px 0; grid-template-columns: 1fr; gap: 14px; }
   .fact-strip-inner ul { grid-template-columns: 1fr; gap: 8px; }
-  .fact-strip-inner li { font-size: 10px; }
+  .fact-strip-inner small { font-size: 11px; }
+  .fact-strip-inner li { font-size: 12px; }
   .article-grid { padding: 34px 0 48px; grid-template-columns: 1fr; gap: 9px; }
   .article-grid article { min-height: 0; padding: 18px; grid-template-columns: 30px 1fr; border-radius: 17px; }
-  .article-grid article > span { width: 27px; height: 27px; border-radius: 9px; font-size: 8px; }
+  .article-grid article > span { width: 29px; height: 29px; border-radius: 9px; font-size: 11px; }
   .article-grid h2 { margin-top: 1px; font-size: 21px; }
-  .article-grid p { font-size: 11px; line-height: 1.65; }
+  .article-grid p { font-size: 14px; line-height: 1.65; }
   .article-index { padding: 34px 0 48px; grid-template-columns: 1fr; gap: 9px; }
   .article-card { min-height: 0; padding: 18px; grid-template-columns: 30px 1fr; border-radius: 17px; }
-  .article-card > span { width: 27px; height: 27px; border-radius: 9px; font-size: 8px; }
+  .article-card > span { width: 29px; height: 29px; border-radius: 9px; font-size: 11px; }
   .article-card h2 { margin: 8px 0; font-size: 21px; }
-  .article-card p { margin-bottom: 15px; font-size: 11px; }
+  .article-card small, .article-card b { font-size: 11px; }
+  .article-card p { margin-bottom: 15px; font-size: 14px; }
   .article-detail-hero { padding: 38px 0 35px; }
   .breadcrumbs { margin-bottom: 26px; }
+  .breadcrumbs, .article-kicker, .article-source-line, .research-basis small { font-size: 11px; }
   .article-detail-hero h1 { font-size: 42px; }
   .article-detail-hero .section-shell > p:last-child { margin-top: 15px; font-size: 12px; }
   .article-prose { padding-top: 22px; padding-bottom: 42px; }
   .research-basis { margin-bottom: 8px; padding: 16px; border-radius: 14px; }
   .article-product-strip { margin: 12px 0 18px; grid-template-columns: repeat(3, 1fr); gap: 5px; }
   .article-product-strip a { border-radius: 11px; }
-  .article-product-strip a > span { padding: 7px; display: block; font-size: 8px; }
+  .article-product-strip a > span { padding: 7px; display: block; font-size: 11px; }
   .article-product-strip a b { display: block; margin-top: 3px; }
   .rating-snapshot { margin: 12px 0 18px; padding: 15px; grid-template-columns: 1fr; gap: 11px; border-radius: 15px; }
   .rating-snapshot b { margin: 5px 0 9px; font-size: 23px; }
+  .rating-snapshot span, .rating-snapshot figcaption { font-size: 11px; }
   .shipping-snapshot { margin: 12px 0 18px; gap: 5px; }
   .shipping-snapshot > div { min-height: 96px; padding: 11px; border-radius: 12px; }
-  .shipping-snapshot span { font-size: 7px; }
+  .shipping-snapshot span, .shipping-snapshot small { font-size: 11px; }
   .shipping-snapshot b { font-size: 27px; }
   .article-prose > section { padding: 24px 0; grid-template-columns: 30px 1fr; gap: 8px; }
-  .article-prose > section > span { width: 27px; height: 27px; border-radius: 9px; font-size: 8px; }
+  .article-prose > section > span { width: 29px; height: 29px; border-radius: 9px; font-size: 11px; }
   .article-prose h2 { margin-top: 1px; font-size: 24px; }
   .article-prose p { margin-bottom: 12px; font-size: 14px; line-height: 1.7; }
   .article-prose aside { margin-top: 25px; padding: 18px; border-radius: 16px; }
@@ -344,7 +356,7 @@ footer { background: #fff; border-top: 1px solid var(--line); }
   .inline-search { padding: 36px 0 52px; grid-template-columns: 1fr; gap: 16px; }
   .footer-grid { min-height: 0; padding: 32px 0 82px; grid-template-columns: 1fr; gap: 17px; }
   .footer-brand img { width: 105px; }
-  .footer-grid > p { font-size: 10px; }
+  .footer-brand small, .footer-grid > p, .footer-links { font-size: 11px; }
   .footer-links { align-items: flex-start; flex-direction: row; flex-wrap: wrap; }
   .whatsapp { right: 13px; bottom: 13px; width: 48px; height: 48px; border-radius: 15px; }
 }

@@ -33,7 +33,7 @@ export const translatedArticleExpansions: Record<LocalizedLang, Record<ArticleSl
       {
         title: "Bewertungsplattformen nicht zu einer erfundenen Note vermischen",
         body: [
-          "Am 28. August 2026 zeigte der britische Apple App Store 4,7 Punkte bei ungefähr 77.000 Bewertungen, Google Play 4,0 bei rund 57.700 Rezensionen und Trustpilot 3,6 bei 3.279 Bewertungen. Auf Trustpilot war die Verteilung deutlich polarisiert: 50 Prozent entfielen auf fünf Sterne und 34 Prozent auf einen Stern. Diese Werte sind datierte Momentaufnahmen. Sie verändern sich mit neuen Bewertungen und dürfen nicht ohne Datum als dauerhafte Eigenschaft von Hacoo dargestellt werden.",
+          "Am 29. August 2026 zeigte der britische Apple App Store 4,7 Punkte bei ungefähr 77.000 Bewertungen. Die auf Englisch und die Region USA festgelegte Google-Play-Seite zeigte rund 3,6 bei 59.057 Bewertungen; andere Länderansichten können abweichen. Trustpilot zeigte 3,6 bei 3.279 Bewertungen. Auf Trustpilot war die Verteilung polarisiert: 50 Prozent entfielen auf fünf Sterne und 34 Prozent auf einen Stern. Diese Werte sind datierte Momentaufnahmen und dürfen nicht ohne Region und Datum als dauerhafte Eigenschaft von Hacoo dargestellt werden.",
           "Eine Mittelwertbildung über alle drei Quellen wäre methodisch falsch. App-Store-Nutzer können Bedienung, Suche oder Länderwahl bewerten, während Trustpilot-Berichte häufiger Bestellung, Lieferung, Rückzahlung und Support behandeln. Auch Moderation und Publikum unterscheiden sich. Eine belastbare Analyse stellt die Werte nebeneinander, nennt jeweils Bewertungszahl und Datum und erklärt, worauf sich wiederkehrende Kritik bezieht. So wird aus drei unterschiedlichen Signalen keine künstliche Gesamtnote."
         ]
       },
@@ -111,7 +111,7 @@ export const translatedArticleExpansions: Record<LocalizedLang, Record<ArticleSl
       {
         title: "Non trasformare tre piattaforme in un punteggio inventato",
         body: [
-          "Il 28 agosto 2026 l’App Store britannico mostrava 4,7 con circa 77.000 valutazioni, Google Play 4,0 con quasi 57.700 recensioni e Trustpilot 3,6 su 3.279 opinioni. Su Trustpilot la distribuzione era polarizzata: 50% a cinque stelle e 34% a una stella. Sono istantanee datate che cambieranno con nuove valutazioni e devono essere pubblicate insieme alla data e al volume osservato.",
+          "Il 29 agosto 2026 l’App Store britannico mostrava 4,7 con circa 77.000 valutazioni. La pagina Google Play fissata in inglese e nella regione USA mostrava circa 3,6 con 59.057 valutazioni; altre regioni possono mostrare dati diversi. Trustpilot mostrava 3,6 su 3.279 opinioni, con il 50% a cinque stelle e il 34% a una stella. Sono istantanee datate che devono essere pubblicate con regione, data e volume osservato.",
           "Calcolare una media comune produrrebbe un falso “punteggio Hacoo”. Pubblico, moderazione e argomenti non sono uguali. Gli app store possono riflettere navigazione, ricerca o selezione del Paese; Trustpilot include più spesso ordine, consegna, rimborso e assistenza. Un’analisi utile mantiene i dati separati, spiega cosa misura ogni fonte e usa il numero di recensioni come contesto, non come prova automatica di qualità."
         ]
       },
@@ -189,7 +189,7 @@ export const translatedArticleExpansions: Record<LocalizedLang, Record<ArticleSl
       {
         title: "No conviertas tres plataformas en una puntuación inventada",
         body: [
-          "El 28 de agosto de 2026, App Store UK mostraba 4,7 puntos y cerca de 77.000 valoraciones; Google Play, 4,0 con aproximadamente 57.700 reseñas; y Trustpilot, 3,6 con 3.279 opiniones. En Trustpilot la distribución estaba polarizada: 50 % de cinco estrellas y 34 % de una estrella. Son capturas fechadas que cambiarán con nuevas opiniones, por lo que siempre deben publicarse junto a la fecha y el volumen observado.",
+          "El 29 de agosto de 2026, App Store UK mostraba 4,7 puntos y cerca de 77.000 valoraciones. La página de Google Play fijada en inglés y región de Estados Unidos mostraba cerca de 3,6 con 59.057 valoraciones; otras regiones pueden mostrar cifras distintas. Trustpilot mostraba 3,6 con 3.279 opiniones, con un 50 % de cinco estrellas y un 34 % de una estrella. Son capturas que deben publicarse con región, fecha y volumen observado.",
           "Promediarlas produciría una falsa nota Hacoo. Cada sitio reúne públicos, reglas y temas distintos. En las tiendas de aplicaciones se puede valorar la interfaz, búsqueda o selección de país; Trustpilot concentra también comentarios sobre pedidos, entrega, devoluciones y soporte. Un análisis útil mantiene las cifras separadas y explica qué mide cada señal. El número de reseñas no demuestra que un servicio sea bueno, pero ayuda a interpretar cuánto puede moverse una media."
         ]
       },
@@ -267,7 +267,7 @@ export const translatedArticleExpansions: Record<LocalizedLang, Record<ArticleSl
       {
         title: "Ne pas fabriquer une note unique à partir de trois plateformes",
         body: [
-          "Le 28 août 2026, l’App Store britannique affichait 4,7 avec environ 77 000 évaluations, Google Play 4,0 avec près de 57 700 avis et Trustpilot 3,6 sur 3 279 avis. La répartition Trustpilot était polarisée : 50 % de cinq étoiles et 34 % d’une étoile. Ces nombres sont des instantanés datés qui évolueront ; ils doivent toujours être accompagnés de leur date et du volume observé.",
+          "Le 29 août 2026, l’App Store britannique affichait 4,7 avec environ 77 000 évaluations. La page Google Play fixée en anglais et sur la région États-Unis affichait environ 3,6 pour 59 057 évaluations ; d’autres régions peuvent montrer un chiffre différent. Trustpilot affichait 3,6 sur 3 279 avis, dont 50 % de cinq étoiles et 34 % d’une étoile. Ces instantanés doivent toujours préciser région, date et volume observé.",
           "Calculer une moyenne commune créerait une fausse « note Hacoo ». Les publics, la modération et les sujets diffèrent. Les boutiques d’applications peuvent refléter navigation, recherche ou choix du pays, alors que Trustpilot inclut davantage commande, livraison, remboursement et support. Une analyse solide garde les résultats côte à côte, explique ce que mesure chaque source et utilise le nombre d’avis pour donner du contexte, non pour prétendre prouver la qualité."
         ]
       },

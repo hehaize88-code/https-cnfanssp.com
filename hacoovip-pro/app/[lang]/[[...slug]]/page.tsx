@@ -5,10 +5,24 @@ import { SearchBox } from "@/components/search-box";
 import { categories, copy, languages, products, routes, type Lang } from "@/lib/site-data";
 import { articles, articleSlugs, type ArticleSlug } from "@/lib/articles";
 import { officialFacts } from "@/lib/official-facts";
+import { articleSeo, pageSeo, type SeoRoute } from "@/lib/seo";
 
 type Props = { params: Promise<{ lang: string; slug?: string[] }> };
 const site = "https://hacoovip.pro";
+const siteName = "HacooVIP Pro";
 const validLang = (value: string): value is Lang => languages.includes(value as Lang);
+const localeByLanguage: Record<Lang, string> = {
+  en: "en_US",
+  de: "de_DE",
+  es: "es_ES",
+  fr: "fr_FR",
+  it: "it_IT",
+};
+const articleDetails: Record<ArticleSlug, { published: string; modified: string; image: string }> = {
+  "hacoo-spreadsheet-live-source": { published: "2026-08-29", modified: "2026-08-29", image: "/products/amiri-ma1.webp" },
+  "hacoo-reviews-2026": { published: "2026-08-29", modified: "2026-08-29", image: "/hacoo-logo.png" },
+  "hacoo-shipping-time-cost": { published: "2026-08-29", modified: "2026-08-29", image: "/hacoo-logo.png" },
+};
 const articleSourceUrls: Record<ArticleSlug, string[]> = {
   "hacoo-spreadsheet-live-source": [
     "https://www.hacoo.app/en-US/pages/terms-of-service",
@@ -19,7 +33,7 @@ const articleSourceUrls: Record<ArticleSlug, string[]> = {
   "hacoo-reviews-2026": [
     "https://www.hacoo.app/trust-center",
     "https://apps.apple.com/gb/app/hacoo-discovering-inspiring/id1399907836",
-    "https://play.google.com/store/apps/details?id=com.saramart.android",
+    "https://play.google.com/store/apps/details?id=com.saramart.android&hl=en_US&gl=US",
     "https://www.trustpilot.com/review/www.hacoo.app",
   ],
   "hacoo-shipping-time-cost": [
@@ -37,18 +51,24 @@ export function generateStaticParams() {
   ]);
 }
 
+export const dynamic = "force-static";
+export const dynamicParams = false;
+export const revalidate = 86400;
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { lang: rawLang, slug = [] } = await params;
   if (!validLang(rawLang)) return {};
   const route = slug[0] || "";
-  const c = copy[rawLang];
   const articleSlug = route === "articles" && articleSlugs.includes(slug[1] as ArticleSlug) ? slug[1] as ArticleSlug : null;
-  const page = route ? c.pages[route] : null;
   const article = articleSlug ? articles[rawLang][articleSlug] : null;
-  const title = article ? `${article.title} | Hacoo` : page ? `${page.title} | Hacoo` : "Hacoo Spreadsheet, Finds & Product Links | Hacoo";
-  const description = article?.description || page?.intro || c.intro;
+  const routeSeo = articleSlug
+    ? articleSeo[rawLang][articleSlug]
+    : pageSeo[rawLang][(route || "home") as SeoRoute];
+  const title = routeSeo.title;
+  const description = routeSeo.description;
   const routePath = slug.join("/");
   const path = routePath ? `/${rawLang}/${routePath}` : `/${rawLang}`;
+  const image = articleSlug ? articleDetails[articleSlug].image : "/hacoo-logo.png";
   return {
     title, description, robots: { index: true, follow: true },
     alternates: {
@@ -58,6 +78,40 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         ["x-default", `${site}/en${routePath ? `/${routePath}` : ""}`],
       ]),
     },
+    openGraph: {
+      type: article ? "article" : "website",
+      siteName,
+      locale: localeByLanguage[rawLang],
+      alternateLocale: languages.filter((lang) => lang !== rawLang).map((lang) => localeByLanguage[lang]),
+      title,
+      description,
+      url: `${site}${path}`,
+      images: [{ url: `${site}${image}`, alt: title }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: [`${site}${image}`],
+    },
+  };
+}
+
+function JsonLd({ data }: { data: Record<string, unknown> | Record<string, unknown>[] }) {
+  return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }} />;
+}
+
+function breadcrumbData(lang: Lang, items: { name: string; path: string }[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: items.map((item, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: item.name,
+      item: `${site}${item.path}`,
+    })),
+    inLanguage: lang,
   };
 }
 
@@ -102,6 +156,16 @@ function ProductGrid({ lang }: { lang: Lang }) {
 function Home({ lang }: { lang: Lang }) {
   const c = copy[lang];
   return <>
+    <JsonLd data={{
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "@id": `${site}/#website`,
+      name: siteName,
+      url: site,
+      description: pageSeo[lang].home.description,
+      inLanguage: lang,
+      publisher: { "@type": "Organization", name: siteName, url: site },
+    }} />
     <section className="hero section-shell">
       <div className="hero-copy">
         <p className="eyebrow"><span>{c.nav.finds}</span> {c.badge}</p>
@@ -155,7 +219,21 @@ function Interior({ lang, route }: { lang: Lang; route: string }) {
   const facts = officialFacts[lang][route];
   if (!page) notFound();
   return <>
-    <section className="interior-hero-wrap"><div className="interior-hero section-shell"><div><p className="eyebrow"><span>{c.nav[route]}</span> {page.eyebrow}</p><h1>{page.title}</h1></div><p>{page.intro}</p></div></section>
+    <JsonLd data={breadcrumbData(lang, [
+      { name: c.nav.home, path: `/${lang}` },
+      { name: c.nav[route], path: `/${lang}/${route}` },
+    ])} />
+    {route === "faq" && <JsonLd data={{
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      inLanguage: lang,
+      mainEntity: page.sections.map((section) => ({
+        "@type": "Question",
+        name: section.title,
+        acceptedAnswer: { "@type": "Answer", text: section.body },
+      })),
+    }} />}
+    <section className="interior-hero-wrap"><div className="interior-hero section-shell"><div><div className="breadcrumbs interior-breadcrumbs"><Link href={`/${lang}`}>{c.nav.home}</Link><span>›</span><span>{c.nav[route]}</span></div><p className="eyebrow"><span>{c.nav[route]}</span> {page.eyebrow}</p><h1>{page.title}</h1></div><p>{page.intro}</p></div></section>
     {facts && <section className="fact-strip"><div className="section-shell fact-strip-inner"><div><small>{facts.checked}</small><strong>{facts.label}</strong></div><ul>{facts.items.map((item) => <li key={item}>{item}</li>)}</ul></div></section>}
     {route === "finds" && <section className="section-shell interior-products"><ProductGrid lang={lang} /></section>}
     {route === "articles" ? <ArticleIndex lang={lang} /> : <section className="section-shell article-grid">{page.sections.map((section, index) => <article key={section.title}><span>{String(index + 1).padStart(2,"0")}</span><div><h2>{section.title}</h2><p>{section.body}</p></div></article>)}</section>}
@@ -187,18 +265,35 @@ function ArticleDetail({ lang, slug }: { lang: Lang; slug: ArticleSlug }) {
   const currentIndex = articleSlugs.indexOf(slug);
   const nextSlug = articleSlugs[(currentIndex + 1) % articleSlugs.length];
   const nextArticle = articles[lang][nextSlug];
+  const detail = articleDetails[slug];
+  const articleUrl = `${site}/${lang}/articles/${slug}`;
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "Article",
+    "@id": `${articleUrl}#article`,
     headline: article.title,
     description: article.description,
     inLanguage: lang,
-    dateModified: "2026-08-28",
-    mainEntityOfPage: `${site}/${lang}/articles/${slug}`,
+    datePublished: detail.published,
+    dateModified: detail.modified,
+    image: [`${site}${detail.image}`],
+    author: { "@type": "Organization", name: `${siteName} Editorial`, url: site },
+    publisher: {
+      "@type": "Organization",
+      name: siteName,
+      url: site,
+      logo: { "@type": "ImageObject", url: `${site}/hacoo-logo.png` },
+    },
+    mainEntityOfPage: { "@type": "WebPage", "@id": articleUrl },
     isBasedOn: articleSourceUrls[slug],
   };
   return <>
-    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
+    <JsonLd data={structuredData} />
+    <JsonLd data={breadcrumbData(lang, [
+      { name: c.nav.home, path: `/${lang}` },
+      { name: c.nav.articles, path: `/${lang}/articles` },
+      { name: article.title, path: `/${lang}/articles/${slug}` },
+    ])} />
     <section className="article-detail-hero"><div className="section-shell">
       <div className="breadcrumbs"><Link href={`/${lang}`}>{c.nav.home}</Link><span>›</span><Link href={`/${lang}/articles`}>{c.nav.articles}</Link></div>
       <p className="article-kicker">{c.nav.articles} · {article.readTime}</p>
@@ -220,20 +315,20 @@ function ArticleDetail({ lang, slug }: { lang: Lang; slug: ArticleSlug }) {
 function ArticleVisual({ lang, slug }: { lang: Lang; slug: ArticleSlug }) {
   const c = copy[lang];
   const labels = {
-    en: { rating: "Public rating snapshot · 28 Aug 2026 · Platforms use different audiences and scoring methods.", other: "Other countries", days: "days", shipping: "Hacoo’s published destination guidance · checked 28 Aug 2026 · not a delivery guarantee." },
-    de: { rating: "Öffentlicher Bewertungsstand · 28. Aug. 2026 · Plattformen haben unterschiedliche Zielgruppen und Methoden.", other: "Andere Länder", days: "Tage", shipping: "Veröffentlichte Zielangaben von Hacoo · geprüft am 28. Aug. 2026 · keine Liefergarantie." },
-    es: { rating: "Resumen público de valoraciones · 28 ago. 2026 · Cada plataforma usa audiencias y métodos distintos.", other: "Otros países", days: "días", shipping: "Plazos por destino publicados por Hacoo · revisados el 28 ago. 2026 · no son una garantía." },
-    fr: { rating: "Aperçu public des notes · 28 août 2026 · Chaque plateforme utilise un public et une méthode différents.", other: "Autres pays", days: "jours", shipping: "Délais par destination publiés par Hacoo · vérifiés le 28 août 2026 · sans garantie." },
-    it: { rating: "Riepilogo pubblico delle valutazioni · 28 ago. 2026 · Le piattaforme usano pubblici e metodi diversi.", other: "Altri paesi", days: "giorni", shipping: "Tempi per destinazione pubblicati da Hacoo · verificati il 28 ago. 2026 · non sono una garanzia." },
+    en: { rating: "Public rating snapshot · 29 Aug 2026 · Google Play is fixed to en-US / US; other regions may display different figures.", other: "Other countries", days: "days", shipping: "Hacoo’s published destination guidance · checked 28 Aug 2026 · not a delivery guarantee." },
+    de: { rating: "Öffentlicher Bewertungsstand · 29. Aug. 2026 · Google Play ist auf en-US / USA festgelegt; andere Regionen können abweichen.", other: "Andere Länder", days: "Tage", shipping: "Veröffentlichte Zielangaben von Hacoo · geprüft am 28. Aug. 2026 · keine Liefergarantie." },
+    es: { rating: "Valoraciones públicas · 29 ago. 2026 · Google Play está fijado en en-US / EE. UU.; otras regiones pueden mostrar cifras distintas.", other: "Otros países", days: "días", shipping: "Plazos por destino publicados por Hacoo · revisados el 28 ago. 2026 · no son una garantía." },
+    fr: { rating: "Notes publiques · 29 août 2026 · Google Play est fixé sur en-US / États-Unis ; les chiffres peuvent varier selon la région.", other: "Autres pays", days: "jours", shipping: "Délais par destination publiés par Hacoo · vérifiés le 28 août 2026 · sans garantie." },
+    it: { rating: "Valutazioni pubbliche · 29 ago. 2026 · Google Play è fissato su en-US / USA; altre regioni possono mostrare dati diversi.", other: "Altri paesi", days: "giorni", shipping: "Tempi per destinazione pubblicati da Hacoo · verificati il 28 ago. 2026 · non sono una garanzia." },
   }[lang];
   if (slug === "hacoo-spreadsheet-live-source") return <figure className="article-product-strip">
     {products.slice(0, 3).map((product) => <a key={product.href} href={product.href} target="_blank" rel="noopener noreferrer"><img src={product.image} alt={product.name} width="750" height="750" loading="lazy" /><span>{product.name}<b>{product.price} ↗</b></span></a>)}
     <figcaption>{c.productSub}</figcaption>
   </figure>;
   if (slug === "hacoo-reviews-2026") return <figure className="rating-snapshot">
-    <div><span>Apple App Store UK</span><b>4.7 / 5</b><i style={{ width: "94%" }} /></div>
-    <div><span>Google Play</span><b>4.0 / 5</b><i style={{ width: "80%" }} /></div>
-    <div><span>Trustpilot</span><b>3.6 / 5</b><i style={{ width: "72%" }} /></div>
+    <div><span>Apple App Store UK · 77K</span><b>4.7 / 5</b><i style={{ width: "94%" }} /></div>
+    <div><span>Google Play US · 59,057</span><b>3.6 / 5</b><i style={{ width: "72%" }} /></div>
+    <div><span>Trustpilot · 3,279</span><b>3.6 / 5</b><i style={{ width: "72%" }} /></div>
     <figcaption>{labels.rating}</figcaption>
   </figure>;
   return <figure className="shipping-snapshot">
