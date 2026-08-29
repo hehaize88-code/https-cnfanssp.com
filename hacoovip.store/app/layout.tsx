@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -37,6 +38,11 @@ export default function RootLayout({
             { "@type": "Organization", "@id": "https://hacoovip.store/#publisher", name: "HacooVIP", url: "https://hacoovip.store/", description: "Independent product-discovery publisher; not affiliated with Hacoo." }
           ]
         }) }} />
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-HRNBL4V44H" strategy="afterInteractive" />
+        <Script id="google-analytics" strategy="afterInteractive">{`window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag("js", new Date());
+gtag("config", "G-HRNBL4V44H");`}</Script>
       </body>
     </html>
   );
