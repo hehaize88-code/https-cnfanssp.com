@@ -1,5 +1,6 @@
 import type { Locale } from "./site-data";
 import type { ArticleKey } from "./localized-content";
+import { haArticle } from "./ha-article-content";
 
 export type ArticleSection = { heading: string; paragraphs: string[]; bullets?: string[] };
 export type Article = {
@@ -8,7 +9,7 @@ export type Article = {
   takeaways: string[];
 };
 
-const en: Record<ArticleKey, Article> = {
+const en: Omit<Record<ArticleKey, Article>, "articles/spreadsheet-finds-categories-start"> = {
   "articles/find-product-links": {
     minutes: 9,
     sections: [
@@ -199,7 +200,7 @@ const en: Record<ArticleKey, Article> = {
   },
 };
 
-function translatedArticles(locale: Exclude<Locale, "en">): Record<ArticleKey, Article> {
+function translatedArticles(locale: Exclude<Locale, "en">): Omit<Record<ArticleKey, Article>, "articles/spreadsheet-finds-categories-start"> {
   const data: Record<Exclude<Locale, "en">, Record<ArticleKey, Article>> = {
     de: {
       "articles/find-product-links": { minutes: 9, sections: [
@@ -334,9 +335,9 @@ function translatedArticles(locale: Exclude<Locale, "en">): Record<ArticleKey, A
 }
 
 export const articles: Record<Locale, Record<ArticleKey, Article>> = {
-  en,
-  de: translatedArticles("de"),
-  fr: translatedArticles("fr"),
-  es: translatedArticles("es"),
-  it: translatedArticles("it"),
+  en: {...en,"articles/spreadsheet-finds-categories-start":haArticle.en},
+  de: {...translatedArticles("de"),"articles/spreadsheet-finds-categories-start":haArticle.de},
+  fr: {...translatedArticles("fr"),"articles/spreadsheet-finds-categories-start":haArticle.fr},
+  es: {...translatedArticles("es"),"articles/spreadsheet-finds-categories-start":haArticle.es},
+  it: {...translatedArticles("it"),"articles/spreadsheet-finds-categories-start":haArticle.it},
 };

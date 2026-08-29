@@ -51,6 +51,7 @@ const articleKeys: PageKey[] = [
   "articles/find-product-links",
   "articles/read-qc-photos",
   "articles/size-before-you-buy",
+  "articles/spreadsheet-finds-categories-start",
 ];
 
 const detailIcons: Partial<Record<PageKey, typeof ShieldCheck>> = {
@@ -478,8 +479,8 @@ export function SitePage({ locale, pageKey }: { locale: Locale; pageKey: PageKey
     "@type": "Article",
     headline: copy[locale].pageLabels[pageKey].title,
     description: copy[locale].pageLabels[pageKey].intro,
-    datePublished: "2026-08-27",
-    dateModified: "2026-08-27",
+    datePublished: pageKey === "articles/spreadsheet-finds-categories-start" ? "2026-08-29" : "2026-08-27",
+    dateModified: pageKey === "articles/spreadsheet-finds-categories-start" ? "2026-08-29" : "2026-08-27",
     inLanguage: locale,
     author: { "@type": "Organization", name: "Hacoos Research Desk" },
     publisher: { "@type": "Organization", name: "Hacoos" },
