@@ -82,6 +82,56 @@ function isStaticAsset(pathname: string): boolean {
   );
 }
 
+function isPageCacheRequest(request: Request, url: URL): boolean {
+  const accept = request.headers.get("accept") ?? "";
+  return (
+    request.method === "GET" &&
+    url.protocol === "https:" &&
+    url.hostname === canonicalHost &&
+    !isStaticAsset(url.pathname) &&
+    !request.headers.has("rsc") &&
+    !request.headers.has("next-router-prefetch") &&
+    (accept.includes("text/html") ||
+      url.pathname === "/sitemap.xml" ||
+      url.pathname === "/robots.txt")
+  );
+}
+
+function pageCacheKey(url: URL): Request {
+  const key = new URL(url);
+  key.protocol = "https:";
+  key.hostname = canonicalHost;
+  key.port = "";
+  key.search = "";
+  return new Request(key.toString(), { method: "GET" });
+}
+
+function withWorkerCacheStatus(response: Response, status: "HIT" | "MISS"): Response {
+  const headers = new Headers(response.headers);
+  headers.set("x-worker-cache", status);
+  return new Response(response.body, {
+    status: response.status,
+    statusText: response.statusText,
+    headers,
+  });
+}
+
+function forEdgeCache(url: URL, response: Response): Response {
+  const policy = cachePolicy(
+    url.pathname,
+    response.headers.get("content-type") ?? "",
+  );
+  const headers = new Headers(response.headers);
+  headers.set("cache-control", policy?.edge ?? policy?.browser ?? edgeCacheControl);
+  headers.delete("cloudflare-cdn-cache-control");
+  headers.delete("x-worker-cache");
+  return new Response(response.body, {
+    status: response.status,
+    statusText: response.statusText,
+    headers,
+  });
+}
+
 const worker = {
   async fetch(request: Request, env: Env, ctx: ExecutionContext): Promise<Response> {
     const url = new URL(request.url);
@@ -106,8 +156,25 @@ const worker = {
       return withCachePolicy(request, url, assetResponse);
     }
 
+    const usePageCache = isPageCacheRequest(request, url) && typeof caches !== "undefined";
+    const edgeCache = usePageCache
+      ? (caches as unknown as { default: Cache }).default
+      : null;
+    const key = usePageCache ? pageCacheKey(url) : null;
+    if (key && edgeCache) {
+      const cached = await edgeCache.match(key);
+      if (cached) {
+        return withWorkerCacheStatus(withCachePolicy(request, url, cached), "HIT");
+      }
+    }
+
     const response = await handler.fetch(request, env, ctx);
-    return withCachePolicy(request, url, response);
+    const prepared = withCachePolicy(request, url, response);
+    if (key && edgeCache && prepared.status === 200) {
+      ctx.waitUntil(edgeCache.put(key, forEdgeCache(url, prepared.clone())));
+      return withWorkerCacheStatus(prepared, "MISS");
+    }
+    return prepared;
   },
 };
 

@@ -13,7 +13,8 @@ async function fetchWorker(
   assetFetch = async () => new Response("Not found", { status: 404 }),
 ) {
   const worker = await workerPromise;
-  return worker.fetch(
+  const pending = [];
+  const response = await worker.fetch(
     new Request(url, {
       headers: { accept: "text/html" },
     }),
@@ -23,10 +24,12 @@ async function fetchWorker(
       },
     },
     {
-      waitUntil() {},
+      waitUntil(promise) { pending.push(promise); },
       passThroughOnException() {},
     },
   );
+  await Promise.all(pending);
+  return response;
 }
 
 test("renders indexable production metadata", async () => {
@@ -110,4 +113,42 @@ test("serves generated client assets through the Workers Assets binding", async 
   assert.equal(await response.text(), "body{}");
   assert.equal(response.headers.get("cache-control"), "public, max-age=31536000, immutable");
   assert.equal(response.headers.get("x-content-type-options"), "nosniff");
+});
+
+test("caches canonical pages only after redirect checks", async () => {
+  const previousCaches = globalThis.caches;
+  const stored = new Map();
+  let matches = 0;
+  globalThis.caches = {
+    default: {
+      async match(request) {
+        matches += 1;
+        return stored.get(request.url)?.clone();
+      },
+      async put(request, response) {
+        stored.set(request.url, response.clone());
+      },
+    },
+  };
+
+  try {
+    const first = await fetchWorker("https://hacoovip.pro/fr");
+    assert.equal(first.status, 200);
+    assert.equal(first.headers.get("x-worker-cache"), "MISS");
+    const firstHtml = await first.text();
+
+    const second = await fetchWorker("https://hacoovip.pro/fr");
+    assert.equal(second.status, 200);
+    assert.equal(second.headers.get("x-worker-cache"), "HIT");
+    assert.equal(await second.text(), firstHtml);
+
+    const matchesBeforeRedirect = matches;
+    const redirect = await fetchWorker("http://hacoovip.pro/fr");
+    assert.equal(redirect.status, 308);
+    assert.equal(redirect.headers.get("location"), "https://hacoovip.pro/fr");
+    assert.equal(matches, matchesBeforeRedirect);
+  } finally {
+    if (previousCaches === undefined) delete globalThis.caches;
+    else globalThis.caches = previousCaches;
+  }
 });

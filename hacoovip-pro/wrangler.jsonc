@@ -6,7 +6,9 @@
   "compatibility_flags": ["nodejs_compat"],
   "no_bundle": true,
   "cache": {
-    "enabled": true
+    // Canonical HTML is cached through Cache API only after host/protocol
+    // redirects run, preventing cache reuse across HTTP, www and non-www.
+    "enabled": false
   },
   "assets": {
     "directory": "./dist/client",
