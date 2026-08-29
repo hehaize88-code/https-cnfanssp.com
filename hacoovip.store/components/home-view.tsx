@@ -1,11 +1,7 @@
-"use client";
-
 import Link from "next/link";
-import { useState, type FormEvent } from "react";
 import { articles } from "@/lib/articles";
-import { categories, hrefFor, liveCategory, liveProduct, liveSearch, products, type Locale } from "@/lib/site-data";
+import { categories, hrefFor, liveCategory, liveProduct, products, type Locale } from "@/lib/site-data";
 import { localizedCopy, translate } from "@/lib/i18n";
-import { useSiteLocale } from "@/lib/use-site-locale";
 import { SiteShell } from "./site-shell";
 
 const homeFaqs = [
@@ -31,26 +27,21 @@ export function ProductCard({ product, c, locale = "en" }: { product: (typeof pr
 }
 
 export function HomeView({ locale = "en" }: { locale?: Locale }) {
-  const { locale: activeLocale } = useSiteLocale(locale);
+  const activeLocale = locale;
   const c = localizedCopy(activeLocale);
   const tx = (value: string) => translate(activeLocale, value);
-  const [query, setQuery] = useState("");
-
-  function search(event: FormEvent) {
-    event.preventDefault();
-    window.open(liveSearch(query), "_blank", "noopener,noreferrer");
-  }
 
   return (
     <SiteShell locale={locale}>
       <main className="home-main">
         <section className="hero-shell">
           <div className="hero-copy">
-            <span className="section-kicker">{tx("HACOO / SPREADSHEET / 2026")}</span>
+            <span className="section-kicker">{tx("HACOO / RESEARCH BRIEF / 2026")}</span>
             <h1>{c.heroTitle}</h1><p>{c.heroBody}</p>
-            <form className="hero-search" onSubmit={search}>
+            <form className="hero-search" action="https://cnfanssp.com/search.html" method="get" target="_blank">
               <label className="sr-only" htmlFor="hero-search">{c.search}</label>
-              <input id="hero-search" value={query} onChange={(e) => setQuery(e.target.value)} placeholder={c.searchPlaceholder} />
+              <input type="hidden" name="channelid" value="2" />
+              <input id="hero-search" name="keywords" placeholder={c.searchPlaceholder} />
               <button type="submit">{c.search} <span>↗</span></button>
             </form>
             <div className="hero-actions">
@@ -79,9 +70,9 @@ export function HomeView({ locale = "en" }: { locale?: Locale }) {
           ))}
         </section>
 
-        <section className="fact-strip" aria-label={tx("Hacoo facts checked August 28 2026")}>
+        <section className="fact-strip" aria-label={tx("Hacoo facts checked August 29 2026")}>
           <Link href={hrefFor(activeLocale, "guide")}><small>{tx("OFFICIAL POSITIONING")}</small><strong>{tx("Community + discovery")}</strong><span>{tx("Hacoo says users can share, review and connect. Read the source check →")}</span></Link>
-          <Link href={hrefFor(activeLocale, "articles/what-is-hacoo-app")}><small>{tx("GOOGLE PLAY")}</small><strong>{tx("10M+ downloads")}</strong><span>{tx("About 59K reviews and ~4.1 stars when checked. Read the app guide →")}</span></Link>
+          <Link href={hrefFor(activeLocale, "articles/what-is-hacoo-app")}><small>{tx("GOOGLE PLAY")}</small><strong>{tx("10M+ downloads")}</strong><span>{tx("Ratings vary by storefront and date. Read the dated app facts →")}</span></Link>
           <Link href={hrefFor(activeLocale, "shipping")}><small>{tx("PUBLISHED RECEIVING TIME")}</small><strong>{tx("Usually 15–28 days")}</strong><span>{tx("Official guidance—not a guaranteed delivery date. See shipping facts →")}</span></Link>
         </section>
 
@@ -96,7 +87,7 @@ export function HomeView({ locale = "en" }: { locale?: Locale }) {
         <section className="home-editorial-preview">
           <div className="home-articles-preview">
             <div className="preview-heading">
-              <div><span className="section-kicker">{tx("EVIDENCE DESK / 1,200–1,800 WORD GUIDES")}</span><h2>{tx("Independent Hacoo research and shopping guides")}</h2></div>
+              <div><span className="section-kicker">{tx("SOURCE-CHECKED BUYER GUIDES")}</span><h2>{tx("Independent Hacoo research and shopping guides")}</h2></div>
               <Link href={hrefFor(activeLocale, "articles")}>{c.articles} →</Link>
             </div>
             <div className="home-article-thumbs">

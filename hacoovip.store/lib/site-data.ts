@@ -10,7 +10,7 @@ export const languageNames: Record<Locale, string> = {
   it: "Italiano",
 };
 
-export const routeNames = [
+export const navRouteNames = [
   "spreadsheet",
   "finds",
   "guide",
@@ -20,6 +20,20 @@ export const routeNames = [
   "articles",
 ] as const;
 
+export const trustRouteNames = [
+  "about",
+  "editorial-policy",
+  "sources",
+  "corrections",
+  "contact",
+  "privacy",
+  "terms",
+] as const;
+
+export const routeNames = [...navRouteNames, ...trustRouteNames] as const;
+
+export type NavRouteName = (typeof navRouteNames)[number];
+export type TrustRouteName = (typeof trustRouteNames)[number];
 export type RouteName = (typeof routeNames)[number];
 
 export const copy: Record<Locale, Record<string, string>> = {
@@ -33,10 +47,10 @@ export const copy: Record<Locale, Record<string, string>> = {
     articles: "Articles",
     searchPlaceholder: "Search shoes, hoodies, jerseys…",
     search: "Search live catalog",
-    eyebrow: "Independent Hacoo research · facts checked 28 Aug 2026",
-    heroTitle: "Hacoo spreadsheet, app facts and product routes—clearly separated.",
+    eyebrow: "Independent Hacoo research · facts checked 29 Aug 2026",
+    heroTitle: "Plan what to check before you browse Hacoo product routes.",
     heroBody:
-      "Hacoo officially describes a content-sharing community and marketplace—not a native spreadsheet. We pair a visual, independent product index with source-led guides to the app, reviews, shipping and returns.",
+      "Define your use case, must-haves, variant needs and evidence threshold first. Then use our independent index and source-checked app facts without confusing either one with an official Hacoo spreadsheet.",
     browse: "Browse the spreadsheet",
     learn: "Read the buying guide",
     verified: "Route checked",
@@ -66,8 +80,8 @@ export const copy: Record<Locale, Record<string, string>> = {
     searchPlaceholder: "Schuhe, Hoodies, Trikots suchen…",
     search: "Live-Katalog durchsuchen",
     eyebrow: "Unabhängiger Hacoo-Entdeckungsleitfaden · 2026",
-    heroTitle: "Die Hacoo-Tabelle – neu gedacht zum echten Stöbern.",
-    heroBody: "Durchsuche einen visuellen Produktindex, öffne Kategorien und nutze praktische Hinweise zu Qualität, Größe und Versand.",
+    heroTitle: "Lege zuerst fest, was du bei Hacoo-Produktrouten prüfen willst.",
+    heroBody: "Definiere Einsatzzweck, Muss-Kriterien, Varianten und die nötige Beleglage. Nutze danach unseren unabhängigen Index und quellengeprüfte App-Fakten, ohne beides mit einer offiziellen Hacoo-Tabelle zu verwechseln.",
     browse: "Tabelle öffnen",
     learn: "Einkaufsleitfaden lesen",
     verified: "Route geprüft",
@@ -96,8 +110,8 @@ export const copy: Record<Locale, Record<string, string>> = {
     searchPlaceholder: "Buscar zapatillas, sudaderas, camisetas…",
     search: "Buscar en el catálogo",
     eyebrow: "Guía independiente de descubrimiento Hacoo · 2026",
-    heroTitle: "La hoja de cálculo Hacoo, reconstruida para explorar de verdad.",
-    heroBody: "Explora un índice visual, abre categorías y consulta consejos prácticos de calidad, talla y envío antes de visitar el anuncio.",
+    heroTitle: "Define qué comprobar antes de explorar rutas de productos Hacoo.",
+    heroBody: "Aclara el uso, los requisitos imprescindibles, las variantes y el nivel de evidencia que necesitas. Después usa nuestro índice independiente y los datos verificados de la app sin confundirlos con una hoja oficial de Hacoo.",
     browse: "Explorar la hoja",
     learn: "Leer la guía de compra",
     verified: "Ruta revisada",
@@ -126,8 +140,8 @@ export const copy: Record<Locale, Record<string, string>> = {
     searchPlaceholder: "Rechercher chaussures, sweats, maillots…",
     search: "Rechercher dans le catalogue",
     eyebrow: "Guide indépendant de découverte Hacoo · 2026",
-    heroTitle: "Le tableur Hacoo, repensé pour une vraie exploration.",
-    heroBody: "Parcourez un index visuel, ouvrez les catégories et consultez nos conseils de qualité, taille et livraison avant la fiche active.",
+    heroTitle: "Définissez vos contrôles avant d’explorer les liens produits Hacoo.",
+    heroBody: "Précisez l’usage, les critères indispensables, les variantes et le niveau de preuve attendu. Utilisez ensuite notre index indépendant et les faits vérifiés sur l’app sans les confondre avec un tableur officiel Hacoo.",
     browse: "Parcourir le tableur",
     learn: "Lire le guide d’achat",
     verified: "Lien vérifié",
@@ -156,8 +170,8 @@ export const copy: Record<Locale, Record<string, string>> = {
     searchPlaceholder: "Cerca scarpe, felpe, maglie…",
     search: "Cerca nel catalogo",
     eyebrow: "Guida indipendente alla scoperta Hacoo · 2026",
-    heroTitle: "Il foglio Hacoo, ricostruito per esplorare davvero.",
-    heroBody: "Sfoglia un indice visivo, apri le categorie e usa consigli pratici su qualità, taglie e spedizione prima dell’inserzione live.",
+    heroTitle: "Definisci cosa controllare prima di esplorare i percorsi prodotto Hacoo.",
+    heroBody: "Chiarisci uso, requisiti essenziali, varianti e livello di prova necessario. Poi usa il nostro indice indipendente e i dati verificati sull’app senza confonderli con un foglio ufficiale Hacoo.",
     browse: "Sfoglia il foglio",
     learn: "Leggi la guida acquisti",
     verified: "Percorso verificato",
