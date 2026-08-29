@@ -1,7 +1,7 @@
 import type { ArticleText } from "../localized-articles";
 import type { ArticleSlug } from "../site-data";
 
-export const frArticleText: Record<ArticleSlug, ArticleText> = {
+export const frArticleText: Partial<Record<ArticleSlug, ArticleText>> = {
   "how-to-use-hacoo-spreadsheet": {
     title: "Utiliser un tableur Hacoo sans acheter à l’aveugle",
     excerpt: "Une méthode concrète pour vérifier sélections, images, variantes, prix et risques avant d’ouvrir ou payer une fiche produit.",

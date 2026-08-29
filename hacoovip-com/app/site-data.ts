@@ -15,7 +15,7 @@ export type CoreRouteKey = (typeof coreRouteKeys)[number];
 export type TrustRouteKey = (typeof trustRouteKeys)[number];
 export type RouteKey = (typeof routeKeys)[number];
 
-export const articleSlugs = ["how-to-use-hacoo-spreadsheet", "how-to-check-hacoo-links", "hacoo-shipping-and-returns-guide", "hacoo-reviews-what-users-report"] as const;
+export const articleSlugs = ["how-to-use-hacoo-spreadsheet", "how-to-check-hacoo-links", "hacoo-shipping-and-returns-guide", "hacoo-reviews-what-users-report", "hacoo-product-decision-matrix"] as const;
 export type ArticleSlug = (typeof articleSlugs)[number];
 
 export function localizedPath(lang: Lang, path = "") {

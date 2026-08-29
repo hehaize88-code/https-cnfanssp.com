@@ -10,6 +10,7 @@ const articleModified: Record<string, string> = {
   "articles/how-to-check-hacoo-links": "2026-08-28",
   "articles/hacoo-shipping-and-returns-guide": "2026-08-28",
   "articles/hacoo-reviews-what-users-report": "2026-08-28",
+  "articles/hacoo-product-decision-matrix": "2026-08-29",
 };
 
 function lastModified(path: string) {
