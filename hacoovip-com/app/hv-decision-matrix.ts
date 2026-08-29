@@ -3,20 +3,15 @@ import type { Lang } from "./site-data";
 
 export const hvSlug = "hacoo-product-decision-matrix" as const;
 
-const sources = [
-  { name: "Hacoo — Trust Center", url: "https://www.hacoo.app/en-US/trust-center", supports: { en: "Official platform, community, creator and trust context", de: "Offizieller Plattform-, Community-, Creator- und Vertrauenskontext", es: "Contexto oficial de plataforma, comunidad, creadores y confianza", fr: "Contexte officiel de plateforme, communauté, créateurs et confiance", it: "Contesto ufficiale su piattaforma, community, creator e fiducia" } },
-  { name: "Hacoo — Terms of Service", url: "https://www.hacoo.app/en-US/pages/terms-of-service", supports: { en: "Limits of independent creator and user-generated information", de: "Grenzen unabhängiger Creator- und Nutzerinformationen", es: "Límites de la información de creadores y usuarios", fr: "Limites des informations de créateurs et d’utilisateurs", it: "Limiti delle informazioni di creator e utenti" } },
-] as const;
-
 const en = {
   title: "Hacoo Product Decision Matrix: Compare a Shortlist Without Guessing",
   excerpt: "A weighted, evidence-aware way to compare Hacoo candidates after discovery—and to keep no-buy as a valid result.",
   keyword: "Hacoo product decision matrix",
-  sourceNote: "Platform-role and evidence boundaries checked against Hacoo Trust Center and Terms of Service on 29 August 2026.",
+  sourceNote: "Platform-role and evidence boundaries were rechecked against current official public materials on 29 August 2026.",
   image: "/products/cnfanssp-travis-hoodie.webp",
   imageAlt: "Clothing candidate illustrating a post-shortlist Hacoo product decision matrix",
   imageCaption: "A shortlist starts the decision. The matrix tests each candidate against the same need, evidence standard and failure gates.",
-  sources,
+  sources: [] as const,
   sections: [
     ["Use the matrix only after you have a real shortlist", `A Hacoo product decision matrix is not another discovery feed. Use it after you have narrowed the field to two or three candidates that could plausibly solve the same wardrobe need. Write the need at the top: perhaps a lightweight everyday layer that fits over a T-shirt, a compact bag for a specific carry list, or shoes for a walking-heavy trip. Add the non-negotiable constraints—measurement, colour family, closure, capacity, deadline or maximum payable amount—that made each candidate eligible. If two products serve different jobs, do not force them into one score. Either choose the job first or build separate matrices. This protects the comparison from a common bias: letting the most dramatic image win even though it solves a different problem. Hacoo publicly describes a lifestyle discovery and shopping community with user and creator content. Inspiration is useful at the shortlist stage, but a final decision requires your own consistent criteria.`],
     ["Set pass-fail gates before assigning points", `Some requirements should never be averaged. Put them in a gate row and mark each candidate pass, unknown or fail. A required garment measurement below your minimum is a fail. A missing measurement is unknown, not an optimistic pass. A bag without evidence that it fits the necessary laptop size is unknown. A hard event date outside a sensible delivery buffer is a fail for that use case, even if every style score is high. Confirm the exact option and real destination before evaluating a gate, because colour, bundle, size, price and availability can change together. Stop a candidate when it fails a true non-negotiable. Do not let ten points for appearance cancel one failure that makes the item unusable. This is the first difference between a decision matrix and an unsupported “best Hacoo finds” ranking: the matrix can eliminate an attractive candidate and can leave every candidate rejected.`],
