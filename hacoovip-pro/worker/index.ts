@@ -12,7 +12,10 @@ function permanentRedirect(url: URL): Response {
     status: 308,
     headers: {
       location: url.toString(),
-      "cache-control": "public, max-age=86400",
+      // Workers Cache can normalize HTTP and HTTPS onto the same edge cache
+      // key. Keep permanent redirect semantics for crawlers, but never cache
+      // this response or an HTTP redirect can be replayed to the HTTPS URL.
+      "cache-control": "no-store",
     },
   });
 }

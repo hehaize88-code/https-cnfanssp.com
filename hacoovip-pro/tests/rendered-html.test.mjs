@@ -54,6 +54,7 @@ test("canonicalizes every public origin with permanent redirects", async () => {
     const response = await fetchWorker(source);
     assert.equal(response.status, 308, source);
     assert.equal(response.headers.get("location"), target, source);
+    assert.equal(response.headers.get("cache-control"), "no-store", source);
   }
 });
 
