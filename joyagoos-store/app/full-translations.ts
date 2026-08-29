@@ -350,12 +350,12 @@ export const pageDetails: Record<Locale, Record<GuideSection, FourLines>> = {
 
 export const commonUi: Record<Locale, { catalog:string; faq:string; guideLabel:string; minutes:string; englishArticle:string }> = {
   zh:{catalog:"打开商品目录 ↗",faq:"常见问题",guideLabel:"指南",minutes:"分钟阅读",englishArticle:"完整文章"},
-  de:{catalog:"Produktkatalog öffnen ↗",faq:"Fragen",guideLabel:"GUIDE",minutes:"Min. Lesezeit",englishArticle:"Englischer SEO-Artikel"},
-  pl:{catalog:"Otwórz katalog ↗",faq:"Pytania",guideLabel:"PORADNIK",minutes:"min czytania",englishArticle:"Angielski artykuł SEO"},
-  es:{catalog:"Abrir catálogo ↗",faq:"Preguntas",guideLabel:"GUÍA",minutes:"min de lectura",englishArticle:"Artículo SEO en inglés"},
-  it:{catalog:"Apri il catalogo ↗",faq:"Domande",guideLabel:"GUIDA",minutes:"min di lettura",englishArticle:"Articolo SEO in inglese"},
-  fr:{catalog:"Ouvrir le catalogue ↗",faq:"Questions",guideLabel:"GUIDE",minutes:"min de lecture",englishArticle:"Article SEO en anglais"},
-  pt:{catalog:"Abrir catálogo ↗",faq:"Perguntas",guideLabel:"GUIA",minutes:"min de leitura",englishArticle:"Artigo SEO em inglês"},
-  ro:{catalog:"Deschide catalogul ↗",faq:"Întrebări",guideLabel:"GHID",minutes:"min de citit",englishArticle:"Articol SEO în engleză"},
-  sv:{catalog:"Öppna katalogen ↗",faq:"Frågor",guideLabel:"GUIDE",minutes:"min läsning",englishArticle:"Engelsk SEO-artikel"},
+  de:{catalog:"Produktkatalog öffnen ↗",faq:"Fragen",guideLabel:"GUIDE",minutes:"Min. Lesezeit",englishArticle:"Englischer Artikel"},
+  pl:{catalog:"Otwórz katalog ↗",faq:"Pytania",guideLabel:"PORADNIK",minutes:"min czytania",englishArticle:"Angielski artykuł"},
+  es:{catalog:"Abrir catálogo ↗",faq:"Preguntas",guideLabel:"GUÍA",minutes:"min de lectura",englishArticle:"Artículo en inglés"},
+  it:{catalog:"Apri il catalogo ↗",faq:"Domande",guideLabel:"GUIDA",minutes:"min di lettura",englishArticle:"Articolo in inglese"},
+  fr:{catalog:"Ouvrir le catalogue ↗",faq:"Questions",guideLabel:"GUIDE",minutes:"min de lecture",englishArticle:"Article en anglais"},
+  pt:{catalog:"Abrir catálogo ↗",faq:"Perguntas",guideLabel:"GUIA",minutes:"min de leitura",englishArticle:"Artigo em inglês"},
+  ro:{catalog:"Deschide catalogul ↗",faq:"Întrebări",guideLabel:"GHID",minutes:"min de citit",englishArticle:"Articol în engleză"},
+  sv:{catalog:"Öppna katalogen ↗",faq:"Frågor",guideLabel:"GUIDE",minutes:"min läsning",englishArticle:"Engelsk artikel"},
 };

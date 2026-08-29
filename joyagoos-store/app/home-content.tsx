@@ -6,6 +6,7 @@ import { Footer, Header, locales, localizedSections, pageContent, type Locale } 
 import { pageDetails } from "./full-translations";
 import { withLanguage, type SiteLanguage } from "./i18n";
 import { useLanguage } from "./use-language";
+import { getArticleCopy } from "./article-content";
 
 type HomeLocale = SiteLanguage;
 
@@ -25,11 +26,11 @@ const categories = [
 ] as const;
 
 const english = {
-  heroKicker:"JOYAGOO SPREADSHEET / 2026 EDITION", title:"Find the product.", accent:"Check the path.", lead:"A cleaner Joyagoo browsing companion for product finds, category routes, QC preparation and shipping decisions—before you move into the next step.",
-  searchPlaceholder:"Search shoes, hoodies, watches...", searchButton:"Search products ↗", trust:["Matched product pages","USD reference prices","Independent guide"],
-  ticker:["PRODUCT FINDS","QC CHECKS","SHIPPING WEIGHT","CATEGORY ROUTES"], findsKicker:"CURATED ENTRY POINTS", findsTitle:"Five finds worth opening", findsIntro:"Every card keeps its product name, preview and destination together so the next click is clear.", cardCta:"View matched page ↗", cardNotes:["Multiple detail images","Five product views","Accessory pick","Three style options","Nine style options"],
+  heroKicker:"JOYAGOO PRODUCT DIRECTORY / 2026", title:"Find the product.", accent:"Check the path.", lead:"A maintained directory for checking product destinations, image matches, available options and reference prices before the next click.",
+  searchPlaceholder:"Search shoes, hoodies, watches...", searchButton:"Search products ↗", trust:["Matched listing routes","Image + option checks","Checked destinations"],
+  ticker:["PRODUCT DIRECTORY","LISTING STATUS","OPTION MATCH","CATEGORY ROUTES"], findsKicker:"MAINTAINED ENTRY POINTS", findsTitle:"Five product routes worth checking", findsIntro:"Every card keeps its product name, preview and destination together, with a visible review date for route maintenance.", cardCta:"View matched page ↗", cardNotes:["Route checked 2026-08-29","Route checked 2026-08-29","Route checked 2026-08-29","Route checked 2026-08-29","Route checked 2026-08-29"],
   categoryKicker:"START BROAD, THEN NARROW", categoryTitle:"Browse by product direction.", categoryIntro:"Use a category when you know the type of item but not the exact product yet.", categoryNotes:["Sneakers, loafers and everyday pairs","Sweatshirts, knits and layered pieces","Watches, bags, caps and details","Devices, wearables and small tech"],
-  decisionKicker:"A BETTER DECISION LAYER", decisionTitle:"The spreadsheet is the start—not the proof.", decisionBlocks:["Find","Verify","Review QC","Plan shipping"], decisionText:["Choose a live product page with images, options and enough context to compare.","Confirm the selected style, size and current listing before moving into an order flow.","Use the warehouse photos for the exact item you ordered—not another buyer's preview.","Consider actual weight, parcel volume, route restrictions and final packed dimensions."],
+  decisionKicker:"A MAINTAINED DIRECTORY", decisionTitle:"The directory is the start—not the proof.", decisionBlocks:["Open","Match","Check options","Record status"], decisionText:["Open the current destination and confirm that it still returns the expected product.","Compare the name, first image and category so a working link never hides a mismatched item.","Confirm the selected style, size, version, quantity and option-specific price on the live page.","Save the check date and remove a route when its destination, image or options no longer match."],
   categoryNames:["Shoes","Sweatshirts / Hoodies","Accessories","Electronics"], productCategories:["Shoes","Sweatshirts","Accessories","Clothing","Shoes"],
 };
 
@@ -43,6 +44,18 @@ const homeTerms: Record<Locale, { categoryNames:string[]; productCategories:stri
   pt:{categoryNames:["Calçado","Sweatshirts / Hoodies","Acessórios","Eletrónica"],productCategories:["Calçado","Sweatshirts","Acessórios","Roupa","Calçado"]},
   ro:{categoryNames:["Încălțăminte","Hanorace","Accesorii","Electronice"],productCategories:["Încălțăminte","Hanorace","Accesorii","Îmbrăcăminte","Încălțăminte"]},
   sv:{categoryNames:["Skor","Tröjor / Hoodies","Accessoarer","Elektronik"],productCategories:["Skor","Tröjor","Accessoarer","Kläder","Skor"]},
+};
+
+const directoryTerms: Record<Locale, { kicker:string; title:string; accent:string; lead:string; route:string; categoryTitle:string; decisionTitle:string; checked:string }> = {
+  zh:{kicker:"JOYAGOO 商品目录 / 2026",title:"找到商品。",accent:"核对路径。",lead:"一个持续维护的目录，用于在点击前核对商品目标页、图片、选项和参考价格。",route:"商品路径",categoryTitle:"先按商品方向浏览。",decisionTitle:"目录是起点，不是最终证据。",checked:"路径检查于 2026-08-29"},
+  de:{kicker:"JOYAGOO PRODUKTVERZEICHNIS / 2026",title:"Produkt finden.",accent:"Route prüfen.",lead:"Ein gepflegtes Verzeichnis zum Prüfen von Zielseite, Bild, Optionen und Referenzpreis vor dem nächsten Klick.",route:"PRODUKTROUTEN",categoryTitle:"Nach Produktrichtung browsen.",decisionTitle:"Das Verzeichnis ist der Start – nicht der Beweis.",checked:"Route geprüft am 29.08.2026"},
+  pl:{kicker:"KATALOG PRODUKTÓW JOYAGOO / 2026",title:"Znajdź produkt.",accent:"Sprawdź trasę.",lead:"Aktualizowany katalog do kontroli strony docelowej, zdjęcia, opcji i ceny referencyjnej przed kliknięciem.",route:"TRASY PRODUKTÓW",categoryTitle:"Przeglądaj według kierunku produktu.",decisionTitle:"Katalog jest początkiem, a nie dowodem.",checked:"Trasa sprawdzona 29.08.2026"},
+  es:{kicker:"DIRECTORIO DE PRODUCTOS JOYAGOO / 2026",title:"Encuentra el producto.",accent:"Comprueba la ruta.",lead:"Un directorio mantenido para verificar destino, imagen, opciones y precio de referencia antes del siguiente clic.",route:"RUTAS DE PRODUCTO",categoryTitle:"Explora por tipo de producto.",decisionTitle:"El directorio es el inicio, no la prueba.",checked:"Ruta revisada el 29-08-2026"},
+  it:{kicker:"DIRECTORY PRODOTTI JOYAGOO / 2026",title:"Trova il prodotto.",accent:"Controlla la rotta.",lead:"Un directory mantenuto per verificare destinazione, immagine, opzioni e prezzo di riferimento prima del clic.",route:"ROTTE PRODOTTO",categoryTitle:"Sfoglia per direzione di prodotto.",decisionTitle:"Il directory è il punto di partenza, non la prova.",checked:"Rotta verificata il 29/08/2026"},
+  fr:{kicker:"RÉPERTOIRE PRODUITS JOYAGOO / 2026",title:"Trouvez le produit.",accent:"Vérifiez la route.",lead:"Un répertoire maintenu pour vérifier destination, image, options et prix indicatif avant le prochain clic.",route:"ROUTES PRODUIT",categoryTitle:"Parcourir par type de produit.",decisionTitle:"Le répertoire est le départ, pas la preuve.",checked:"Route vérifiée le 29/08/2026"},
+  pt:{kicker:"DIRETÓRIO DE PRODUTOS JOYAGOO / 2026",title:"Encontre o produto.",accent:"Verifique a rota.",lead:"Um diretório mantido para confirmar destino, imagem, opções e preço de referência antes do clique seguinte.",route:"ROTAS DE PRODUTO",categoryTitle:"Explore por tipo de produto.",decisionTitle:"O diretório é o início, não a prova.",checked:"Rota verificada em 29/08/2026"},
+  ro:{kicker:"DIRECTOR PRODUSE JOYAGOO / 2026",title:"Găsește produsul.",accent:"Verifică ruta.",lead:"Un director întreținut pentru verificarea destinației, imaginii, opțiunilor și prețului de referință înainte de clic.",route:"RUTE DE PRODUS",categoryTitle:"Răsfoiește după tipul produsului.",decisionTitle:"Directorul este începutul, nu dovada.",checked:"Rută verificată la 29.08.2026"},
+  sv:{kicker:"JOYAGOO PRODUKTKATALOG / 2026",title:"Hitta produkten.",accent:"Kontrollera rutten.",lead:"En underhållen katalog för att kontrollera destination, bild, alternativ och referenspris före nästa klick.",route:"PRODUKT RUTTER",categoryTitle:"Bläddra efter produktriktning.",decisionTitle:"Katalogen är starten – inte beviset.",checked:"Rutt kontrollerad 2026-08-29"},
 };
 
 const articleEntries = Object.entries(articles) as [ArticleSlug, (typeof articles)[ArticleSlug]][];
@@ -64,14 +77,14 @@ function getCopy(locale: HomeLocale) {
   if (locale === "en") return english;
   const info = locales[locale];
   const finds = localizedSections[locale].finds;
-  const sheet = localizedSections[locale].spreadsheet;
+  const directory = directoryTerms[locale];
   const guide = localizedSections[locale].guide;
   return {
-    heroKicker:sheet.kicker, title:info.title, accent:info.read, lead:info.intro,
+    heroKicker:directory.kicker, title:directory.title, accent:directory.accent, lead:directory.lead,
     searchPlaceholder:info.find, searchButton:`${info.find} ↗`, trust:[finds.blocks[0], localizedSections[locale].qc.blocks[0], localizedSections[locale].shipping.blocks[0]],
-    ticker:[finds.kicker, localizedSections[locale].qc.kicker, localizedSections[locale].shipping.kicker, sheet.kicker], findsKicker:finds.kicker, findsTitle:finds.title, findsIntro:finds.intro, cardCta:`${info.find} ↗`, cardNotes:[...pageDetails[locale].finds, pageDetails[locale].finds[0]],
-    categoryKicker:sheet.kicker, categoryTitle:sheet.title, categoryIntro:sheet.intro, categoryNotes:pageDetails[locale].spreadsheet,
-    decisionKicker:guide.kicker, decisionTitle:guide.title, decisionBlocks:guide.blocks, decisionText:pageDetails[locale].guide,
+    ticker:[finds.kicker, localizedSections[locale].qc.kicker, localizedSections[locale].shipping.kicker, directory.route], findsKicker:finds.kicker, findsTitle:finds.title, findsIntro:finds.intro, cardCta:`${info.find} ↗`, cardNotes:Array(5).fill(directory.checked),
+    categoryKicker:directory.route, categoryTitle:directory.categoryTitle, categoryIntro:finds.intro, categoryNotes:pageDetails[locale].spreadsheet,
+    decisionKicker:directory.kicker, decisionTitle:directory.decisionTitle, decisionBlocks:guide.blocks, decisionText:pageDetails[locale].guide,
     categoryNames:homeTerms[locale].categoryNames, productCategories:homeTerms[locale].productCategories,
   };
 }
@@ -105,9 +118,9 @@ export function HomeContent({ locale, prefix = "" }: { locale: HomeLocale; prefi
         </div>
       </section>
       <section className="ticker" aria-label="Browse topics">{copy.ticker.map((item,index)=><span key={item}>{index>0 && <i>✦</i>}{item}</span>)}</section>
-      <section className="section" id="finds">
+      <section className="section" id="finds" data-last-checked="2026-08-29">
         <div className="section-head"><div><p className="eyebrow">{copy.findsKicker}</p><h2>{copy.findsTitle}</h2></div><p>{copy.findsIntro}</p></div>
-        <div className="product-grid">{products.map((product,index)=><a className="product-card" href={product.href} target="_blank" rel="noreferrer" key={product.name}><div className="product-image"><span className="product-index">0{index+1}</span><img src={product.image} alt={`${product.name} product preview`} width="520" height="520" loading="lazy" /></div><div className="product-meta"><span>{copy.productCategories[index]}</span><span>{product.price}</span></div><h3>{product.name}</h3><p>{copy.cardNotes[index]}<b>{copy.cardCta}</b></p></a>)}</div>
+        <div className="product-grid">{products.map((product,index)=><a className="product-card" href={product.href} target="_blank" rel="noreferrer" key={product.name}><div className="product-image"><span className="product-index">0{index+1}</span><img src={product.image} alt={`${product.name} product preview`} width={index === 0 ? 500 : 520} height={index === 0 ? 338 : 520} loading="lazy" /></div><div className="product-meta"><span>{copy.productCategories[index]}</span><span>{product.price}</span></div><h3>{product.name}</h3><p>{copy.cardNotes[index]}<b>{copy.cardCta}</b></p></a>)}</div>
       </section>
       <section className="category-section" id="categories">
         <div className="category-intro"><p className="eyebrow">{copy.categoryKicker}</p><h2>{copy.categoryTitle}</h2><p>{copy.categoryIntro}</p></div>
@@ -118,7 +131,7 @@ export function HomeContent({ locale, prefix = "" }: { locale: HomeLocale; prefi
         <div className="section-head"><div><p className="eyebrow">{articleSection.kicker}</p><h2>{articleSection.title}</h2></div><p>{articleSection.intro}</p></div>
         <div className="home-article-grid">
           {articleEntries.map(([slug,article],index)=>{
-            const translated = language === "en" ? article : completeTranslations[language].articles[slug];
+            const translated = getArticleCopy(slug,language);
             return <a href={withLanguage(`/articles/${slug}`,language)} key={slug} className="home-article-card"><span>ARTICLE / 0{index+1}</span><h3>{translated.title}</h3><p>{translated.description}</p><b>{homepageUi[language].readArticle} ↗</b></a>;
           })}
         </div>
