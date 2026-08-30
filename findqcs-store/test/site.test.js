@@ -42,9 +42,10 @@ const privacy = await get("https://findqcs.store/privacy");
 assert.match(privacy.body, /<meta name="robots" content="noindex,follow">/);
 
 const sitemap = await get("https://findqcs.store/sitemap.xml");
-assert.equal((sitemap.body.match(/<url>/g) || []).length, 85);
+assert.equal((sitemap.body.match(/<url>/g) || []).length, 90);
 assert.doesNotMatch(sitemap.body, /\/privacy|\/terms/);
 assert.match(sitemap.body, /product-requirements-brief-before-search/);
+assert.match(sitemap.body, /define-product-use-case-before-search/);
 
 const article = await get("https://findqcs.store/articles/how-to-read-qc-photos");
 assert.match(article.body, /"author":\{"@type":"Organization","name":"FindQC Store Editorial Team"/);
@@ -61,6 +62,17 @@ for (const lang of ["en", "de", "es", "fr", "it"]) {
   assert.match(brief.body, /<meta property="og:type" content="article">/);
   assert.match(brief.body, /<meta property="og:url" content="https:\/\/findqcs\.store/);
   assert.doesNotMatch(brief.body, /<figure class="article-evidence-photo">/);
+}
+
+for (const lang of ["en", "de", "es", "fr", "it"]) {
+  const prefix = lang === "en" ? "" : `/${lang}`;
+  const useCase = await get(`https://findqcs.store${prefix}/articles/define-product-use-case-before-search`);
+  assert.equal(useCase.response.status, 200, lang);
+  assert.equal((useCase.body.match(/<section id="step-/g) || []).length, 9, lang);
+  assert.match(useCase.body, /"@type":"Article"/);
+  assert.match(useCase.body, /hreflang="x-default"/);
+  assert.match(useCase.body, /<meta property="og:type" content="article">/);
+  assert.doesNotMatch(useCase.body, /<figure class="article-evidence-photo">/);
 }
 
 console.log("findqcs.store regression checks passed");

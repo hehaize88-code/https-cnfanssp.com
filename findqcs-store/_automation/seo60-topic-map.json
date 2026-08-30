@@ -1,7 +1,7 @@
 {
   "site": "findqcs.store",
   "track": "QBR",
-  "updated": "2026-08-28",
+  "updated": "2026-08-30",
   "completed": [
     {
       "cycle": "C01",
@@ -15,6 +15,17 @@
       "englishVisibleWords": 1335,
       "languages": ["en", "de", "es", "fr", "it"],
       "productionDeploymentId": "57add40467d249e69af9e9968ff5c471"
+    },
+    {
+      "cycle": "C02",
+      "planTrack": "QBR02",
+      "liveVerified": false,
+      "deploymentStatus": "pending-live-verification",
+      "slug": "define-product-use-case-before-search",
+      "title": "Define the Real Product Use Case Before Search",
+      "primaryQuery": "product use case requirements",
+      "intent": "Define user, environment, frequency, task and failure conditions before product search or QC evidence changes the standard",
+      "languages": ["en", "de", "es", "fr", "it"]
     }
   ]
 }
