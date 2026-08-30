@@ -19,13 +19,15 @@
     {
       "cycle": "C02",
       "planTrack": "QBR02",
-      "liveVerified": false,
-      "deploymentStatus": "pending-live-verification",
+      "liveVerified": true,
+      "deploymentStatus": "live-verified-2026-08-30",
       "slug": "define-product-use-case-before-search",
       "title": "Define the Real Product Use Case Before Search",
       "primaryQuery": "product use case requirements",
       "intent": "Define user, environment, frequency, task and failure conditions before product search or QC evidence changes the standard",
-      "languages": ["en", "de", "es", "fr", "it"]
+      "languages": ["en", "de", "es", "fr", "it"],
+      "englishVisibleWords": 1242,
+      "productionDeploymentId": "75fdca1807dc41f5ba8cb3adc3d88ef8"
     }
   ]
 }
