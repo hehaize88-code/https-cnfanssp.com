@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-26",
+  "lastUpdated": "2026-08-30",
   "latestPublishedCommit": "c77bb57447ee1f29c1a06c5a97f784fb68e38126",
   "site": "findqcs.net",
   "track": "QED",
@@ -31,6 +31,20 @@
       "outline": ["define target", "capture sources", "compare fields", "assign state", "handle changes", "control transfer", "audit conclusion"],
       "faqAngles": ["What proves that a QC record matches a listing?", "Can similar-item evidence be transferred?", "How should a replaced listing be recorded?"],
       "visuals": ["Seven HTML evidence panels; no screenshots, customer media or new image assets"]
+    },
+    {
+      "cycle": "C03",
+      "planTrack": "QED03",
+      "liveVerified": false,
+      "deploymentStatus": "pending-live-verification",
+      "slug": "record-variant-color-size-quantity-before-comparison",
+      "primaryQuery": "QC variant record",
+      "intent": "Record color, size, quantity, bundle and option identity before comparing already-found QC evidence",
+      "longTailQueries": ["product inspection variant log", "record color size quantity QC", "QC option comparison"],
+      "focus": ["option identity", "original and normalized text", "quantity and bundle math", "evidence relationship states", "conflict handling", "controlled comparison"],
+      "outline": ["identity problem", "record schema", "normalization", "quantity", "evidence attachment", "conflicts", "comparison", "audit"],
+      "faqAngles": ["Which variant fields belong in a QC record?", "How should bundle quantity be recorded?", "Can evidence from another size be compared?"],
+      "visuals": ["Eight HTML evidence panels; no screenshots, customer media or new image assets"]
     }
   ]
 }
