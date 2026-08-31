@@ -33,7 +33,8 @@ export async function generateMetadata({params}:{params:Promise<{lang:string;slu
   const intro=basePages.includes(page)&&page!=="home"?pageIntro[lang][page as keyof typeof pageIntro.en]:null;
   const label=page==="home"?uiText[lang].homeTitle:category?.title??trust?.title??article?.title??pageTitles[lang][page]??intro?.[1]??"Joyagoos";
   const description=page==="home"?copy[lang].lede as string:category?.description??trust?.description??article?.description??intro?.[2]??copy[lang].disclaimer as string;
-  const archive=Boolean(article);
+  const activeShopArticle=page==="joyagoo-spreadsheet-independent-product-index-guide"||page==="joyagoo-destination-listing-verification-guide";
+  const archive=Boolean(article&&!activeShopArticle);
   const canonicalBase=archive?"https://joyagoos.org":siteBase;
   const map=Object.fromEntries(languages.map(code=>[code,`${canonicalBase}${route(code,page)}`]));
   const title=page==="home"||label.includes("Joyagoos")?label:`${label} | Joyagoos`;

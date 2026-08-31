@@ -1,5 +1,6 @@
 import type {Lang} from "./site-data";
 import {getSeoArticle,type SeoArticle} from "./seo-articles";
+import {destinationListingArticle,destinationListingTranslations} from "./seo-article-destination";
 
 type ArticleMeta={title:string;description:string;meta:string;sourceNote:string;quickFacts:string[]};
 type ArticleRow=[string,string];
@@ -431,10 +432,11 @@ it:[
 
 export function getLocalizedSeoArticle(slug:string,lang:Lang):SeoArticle|undefined{
   const base=getSeoArticle(slug);if(!base||lang==="en")return base;
+  if(slug===destinationListingArticle.slug)return destinationListingTranslations[lang]??base;
   const translated=translations[lang]?.[slug];if(!translated)return base;
   const notes=depthNotes[lang];
   const bridges=depthBridges[lang];
   return {...base,title:translated.title,description:translated.description,meta:translated.meta,sourceNote:translated.sourceNote,quickFacts:translated.quickFacts,sections:translated.rows.map(([heading,text],index)=>({heading,paragraphs:[...text.split("¶"),notes[index%notes.length].replace("{topic}",heading),...(index<bridges.length?[bridges[index]]:[])]}))};
 }
-const publishingOrder=["joyagoo-spreadsheet-independent-product-index-guide","joyagoo-buying-fees-guide","joyagoo-qc-return-window-guide","volumetric-weight-guide","joyagoo-warehouse-rehearsal-shipping-guide","joyagoo-reviews-buyer-signals"];
+const publishingOrder=["joyagoo-destination-listing-verification-guide","joyagoo-spreadsheet-independent-product-index-guide","joyagoo-buying-fees-guide","joyagoo-qc-return-window-guide","volumetric-weight-guide","joyagoo-warehouse-rehearsal-shipping-guide","joyagoo-reviews-buyer-signals"];
 export function getLocalizedSeoArticles(lang:Lang){return publishingOrder.map(slug=>getLocalizedSeoArticle(slug,lang)).filter((article):article is SeoArticle=>Boolean(article));}
