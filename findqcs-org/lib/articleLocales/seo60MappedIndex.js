@@ -75,14 +75,59 @@ const tableRows = {
   ro: [["Titlu", "Familia produsului", "Opțiunea exactă"], ["Miniatură", "Identitate vizuală", "Imagini actuale"], ["Referință USD", "Poziționare aproximativă de preț", "Prețul actual al opțiunii"], ["Link mapat", "Ruta destinației", "Redirecționare și disponibilitate"]],
 };
 
+const extraBlocks = {
+  pl: {
+    boundary: { title:"Granica indeksu", text:"Mapowany oznacza uporządkowany i osiągalny. Nie oznacza rekomendowany, przetestowany, dostępny, autentyczny ani gwarantowany." },
+    destination: { title:"Brama tożsamości strony docelowej", items:["Zapisano końcowy URL i identyfikator produktu.","Kontekst sprzedawcy lub sklepu nie jest sprzeczny.","Tytuł i główne zdjęcie opisują tę samą rodzinę produktu.","Wymagana opcja istnieje, a jej etykieta została zapisana.","Bieżący stan ceny oddzielono od referencji indeksu.","Niedostępne lub zastąpione trasy nie trafiają na listę jako aktywne."] },
+    research: { title:"Granica badań", text:"FindQC dostarcza dostępne dowody badawcze. Wybrany agent obsługuje faktyczne zamówienie i egzemplarz magazynowy; mapowany indeks nie wykonuje żadnej z tych czynności." },
+    shortlistHeaders:["Kandydat","Zweryfikowana mocna strona","Nieznana informacja","Następny krok"],
+    shortlistRows:[["A","Dokładna opcja i aktywna trasa","Brak jednego ważnego wymiaru","Uzyskaj aktualny wymiar"],["B","Jasno podane wymiary","Mapowany link przekierowuje","Ponownie sprawdź tożsamość"],["C","Aktualna oferta i kontekst QC","Cena referencyjna się różni","Użyj bieżącej ceny opcji"]],
+    recheck: { title:"Wyzwalacze ponownej kontroli", items:["Bezpośrednio przed zakupem","Po przekierowaniu zapisanego linku","Gdy znika wymagana opcja","Gdy tytuł lub miniatura istotnie się zmienia","Gdy cena referencyjna i bieżąca cena opcji się rozchodzą","Przed użyciem historycznego QC dla aktualnej listy"] },
+    audit: { title:"Końcowy audyt trasy", items:["Cel kategorii jest jawny.","Kolejność kart nie jest traktowana jako ranking jakości.","Dokładna strona docelowa i opcja zostały zweryfikowane.","Warstwy indeksu, oferty i QC pozostają oddzielne.","Niewiadome są zachowane.","Referencja USD nie jest nazywana aktualną ofertą.","Obowiązki FindQC i agenta są prawidłowo rozdzielone.","Zapisana trasa ma datę weryfikacji."] },
+  },
+  es: {
+    boundary: { title:"Límite del índice", text:"Mapeado significa organizado y accesible. No significa recomendado, probado, disponible, auténtico ni garantizado." },
+    destination: { title:"Control de identidad del destino", items:["Se registran la URL final y el ID del producto.","El contexto del vendedor o la tienda no entra en conflicto.","El título y la imagen principal describen la misma familia.","La opción necesaria existe y se guarda su etiqueta.","El precio actual se separa de la referencia del índice.","Las rutas no disponibles o sustituidas no se guardan como activas."] },
+    research: { title:"Límite de la investigación", text:"FindQC aporta la evidencia de investigación disponible. El agente elegido gestiona el pedido real y la unidad de almacén; el índice mapeado no realiza ninguna de esas tareas." },
+    shortlistHeaders:["Candidato","Fortaleza verificada","Dato desconocido","Siguiente acción"],
+    shortlistRows:[["A","Opción exacta y ruta activa","Falta una medida clave","Solicitar una medida actual"],["B","Dimensiones claras","El enlace mapeado redirige","Revisar la identidad"],["C","Anuncio actual y contexto QC","La referencia de precio difiere","Usar el precio actual de la opción"]],
+    recheck: { title:"Motivos para volver a comprobar", items:["Justo antes de comprar","Después de que un enlace guardado redirija","Cuando desaparezca una opción necesaria","Cuando cambien de forma relevante el título o la miniatura","Cuando difieran la referencia y el precio actual","Antes de usar QC histórico para una lista actual"] },
+    audit: { title:"Auditoría final de la ruta", items:["El propósito de la categoría es explícito.","El orden de las tarjetas no se interpreta como ranking de calidad.","Se verificaron el destino exacto y la opción.","Las capas de índice, anuncio y QC siguen separadas.","Se conservan las incógnitas.","La referencia USD no se presenta como cotización actual.","Las funciones de FindQC y del agente están bien separadas.","La ruta guardada tiene fecha de verificación."] },
+  },
+  de: {
+    boundary: { title:"Indexgrenze", text:"Kartiert bedeutet organisiert und erreichbar. Es bedeutet nicht empfohlen, getestet, verfügbar, authentisch oder garantiert." },
+    destination: { title:"Identitätsprüfung des Ziels", items:["Endgültige URL und Produkt-ID sind notiert.","Verkäufer- oder Shop-Kontext widersprechen sich nicht.","Titel und Hauptbild beschreiben dieselbe Produktfamilie.","Die benötigte Option existiert und ihre Bezeichnung ist erfasst.","Der aktuelle Preisstatus bleibt von der Indexreferenz getrennt.","Nicht verfügbare oder ersetzte Routen werden nicht als aktiv gespeichert."] },
+    research: { title:"Recherchegrenze", text:"FindQC liefert verfügbare Recherchebelege. Der gewählte Agent bearbeitet die tatsächliche Bestellung und Lagereinheit; der kartierte Index übernimmt keine dieser Aufgaben." },
+    shortlistHeaders:["Kandidat","Verifizierte Stärke","Unbekannte Angabe","Nächster Schritt"],
+    shortlistRows:[["A","Genaue Option und aktive Route","Ein wichtiges Maß fehlt","Aktuelles Maß einholen"],["B","Klare Abmessungen","Kartierter Link leitet um","Identität erneut prüfen"],["C","Aktuelles Angebot und QC-Kontext","Referenzpreis weicht ab","Aktuellen Optionspreis verwenden"]],
+    recheck: { title:"Auslöser für eine erneute Prüfung", items:["Unmittelbar vor dem Kauf","Nach der Umleitung eines gespeicherten Links","Wenn eine benötigte Option verschwindet","Wenn Titel oder Miniatur sich wesentlich ändern","Wenn Referenz- und Optionspreis auseinandergehen","Vor Nutzung historischer QC für eine aktuelle Shortlist"] },
+    audit: { title:"Abschließendes Routenaudit", items:["Der Kategoriezweck ist ausdrücklich festgelegt.","Kartenreihenfolge gilt nicht als Qualitätsrangliste.","Exaktes Ziel und Option wurden geprüft.","Index-, Angebots- und QC-Ebene bleiben getrennt.","Unbekanntes bleibt erhalten.","Die USD-Referenz wird nicht als aktuelles Angebot bezeichnet.","Aufgaben von FindQC und Agent sind richtig getrennt.","Die gespeicherte Route trägt ein Prüfdatum."] },
+  },
+  ro: {
+    boundary: { title:"Limita indexului", text:"Mapat înseamnă organizat și accesibil. Nu înseamnă recomandat, testat, disponibil, autentic sau garantat." },
+    destination: { title:"Controlul identității destinației", items:["URL-ul final și ID-ul produsului sunt înregistrate.","Contextul vânzătorului sau magazinului nu intră în conflict.","Titlul și imaginea principală descriu aceeași familie.","Opțiunea necesară există, iar eticheta ei este salvată.","Prețul actual este separat de referința indexului.","Rutele indisponibile sau înlocuite nu sunt păstrate ca active."] },
+    research: { title:"Limita cercetării", text:"FindQC oferă dovezile de cercetare disponibile. Agentul ales gestionează comanda reală și unitatea din depozit; indexul mapat nu execută niciuna dintre aceste sarcini." },
+    shortlistHeaders:["Candidat","Punct forte verificat","Informație necunoscută","Acțiunea următoare"],
+    shortlistRows:[["A","Opțiune exactă și rută activă","Lipsește o măsurătoare importantă","Obține măsurătoarea actuală"],["B","Dimensiuni clare","Linkul mapat redirecționează","Reverifică identitatea"],["C","Listare actuală și context QC","Referința de preț diferă","Folosește prețul actual al opțiunii"]],
+    recheck: { title:"Momente pentru reverificare", items:["Imediat înainte de cumpărare","După redirecționarea unui link salvat","Când dispare o opțiune necesară","Când titlul sau miniatura se schimbă semnificativ","Când referința și prețul actual diferă","Înainte de a folosi QC istoric pentru lista curentă"] },
+    audit: { title:"Auditul final al rutei", items:["Scopul categoriei este explicit.","Ordinea cardurilor nu este tratată ca clasament de calitate.","Destinația exactă și opțiunea au fost verificate.","Nivelurile indexului, listării și QC rămân separate.","Necunoscutele sunt păstrate.","Referința USD nu este numită ofertă actuală.","Responsabilitățile FindQC și ale agentului sunt corect separate.","Ruta salvată are o dată de verificare."] },
+  },
+};
+
 function article(lang, d) {
+  const extra = extraBlocks[lang];
   const sections = d.sectionTitles.map((title, i) => ({ id: ["purpose","route","card","destination","evidence","shortlist","refresh","audit"][i], title, blocks: [
     { type:"p", text:d.p[i][0] }, { type:"p", text:d.p[i][1] },
+    ...(i === 0 ? [{ type:"callout", ...extra.boundary }] : []),
     ...(i === 1 ? [{ type:"list", title: lang === "de" ? "Erster Durchgang" : lang === "es" ? "Primera pasada" : lang === "pl" ? "Pierwszy przebieg" : "Prima trecere", items:listText[lang] }] : []),
     ...(i === 2 ? [{ type:"table", headers: lang === "de" ? ["Kartenfeld","Nützlicher Hinweis","Noch zu prüfen"] : lang === "es" ? ["Campo","Pista útil","Por verificar"] : lang === "pl" ? ["Pole karty","Przydatna wskazówka","Do sprawdzenia"] : ["Câmp","Indiciu util","De verificat"], rows:tableRows[lang] }] : []),
-    ...(i === 7 ? [{ type:"list", title: lang === "de" ? "Abschlussaudit" : lang === "es" ? "Auditoría final" : lang === "pl" ? "Audyt końcowy" : "Audit final", items:[d.sectionTitles[0], d.sectionTitles[3], d.sectionTitles[4], d.sectionTitles[5], d.sectionTitles[7]] }] : []),
+    ...(i === 3 ? [{ type:"list", ...extra.destination }] : []),
+    ...(i === 4 ? [{ type:"callout", ...extra.research }] : []),
+    ...(i === 5 ? [{ type:"table", headers:extra.shortlistHeaders, rows:extra.shortlistRows }] : []),
+    ...(i === 6 ? [{ type:"list", ...extra.recheck }] : []),
+    ...(i === 7 ? [{ type:"list", ...extra.audit }] : []),
   ] }));
-  return { ...d, heroImage:"/products/tshirt.webp", intro:d.intro, sections, cta:{ eyebrow:d.category, title:d.excerpt, label:d.shortTitle } };
+  return { ...d, heroImage:"/products/tshirt.webp", intro:d.intro, sections, cta:{ eyebrow:d.category, title:d.excerpt, href:"/products", label:d.shortTitle } };
 }
 
 export const mappedIndexLocales = Object.fromEntries(Object.entries(base).map(([lang, d]) => [lang, article(lang, d)]));
