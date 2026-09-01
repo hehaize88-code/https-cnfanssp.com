@@ -68,11 +68,18 @@ const listText = {
   ro: ["Categoria corespunde utilizării.","Nepotrivirile evidente sunt eliminate.","Rămân doi sau trei candidați diferiți.","Motivul fiecăruia este notat.","Prețul și disponibilitatea se verifică la destinație."],
 };
 
+const tableRows = {
+  pl: [["Tytuł", "Rodzina produktu", "Dokładna opcja"], ["Miniatura", "Tożsamość wizualna", "Aktualne zdjęcia"], ["Referencja USD", "Przybliżone pozycjonowanie cenowe", "Aktualna cena opcji"], ["Mapowany link", "Trasa docelowa", "Przekierowanie i dostępność"]],
+  es: [["Título", "Familia de producto", "Opción exacta"], ["Miniatura", "Identidad visual", "Imágenes actuales"], ["Referencia en USD", "Posición de precio aproximada", "Precio actual de la opción"], ["Enlace mapeado", "Ruta de destino", "Redirección y disponibilidad"]],
+  de: [["Titel", "Produktfamilie", "Genaue Option"], ["Miniaturbild", "Visuelle Identität", "Aktuelle Bilder"], ["USD-Referenz", "Ungefähre Preisposition", "Aktueller Optionspreis"], ["Kartierter Link", "Zielroute", "Umleitung und Verfügbarkeit"]],
+  ro: [["Titlu", "Familia produsului", "Opțiunea exactă"], ["Miniatură", "Identitate vizuală", "Imagini actuale"], ["Referință USD", "Poziționare aproximativă de preț", "Prețul actual al opțiunii"], ["Link mapat", "Ruta destinației", "Redirecționare și disponibilitate"]],
+};
+
 function article(lang, d) {
   const sections = d.sectionTitles.map((title, i) => ({ id: ["purpose","route","card","destination","evidence","shortlist","refresh","audit"][i], title, blocks: [
     { type:"p", text:d.p[i][0] }, { type:"p", text:d.p[i][1] },
     ...(i === 1 ? [{ type:"list", title: lang === "de" ? "Erster Durchgang" : lang === "es" ? "Primera pasada" : lang === "pl" ? "Pierwszy przebieg" : "Prima trecere", items:listText[lang] }] : []),
-    ...(i === 2 ? [{ type:"table", headers: lang === "de" ? ["Kartenfeld","Nützlicher Hinweis","Noch zu prüfen"] : lang === "es" ? ["Campo","Pista útil","Por verificar"] : lang === "pl" ? ["Pole karty","Przydatna wskazówka","Do sprawdzenia"] : ["Câmp","Indiciu util","De verificat"], rows:[["Title / tytuł","Product family / familie","Exact option / genaue Option"],["Thumbnail / miniatură","Visual identity / identitate","Current images / aktuelle Bilder"],["USD reference","Rough position","Live option price"],["Mapped link","Destination route","Redirect and availability"]] }] : []),
+    ...(i === 2 ? [{ type:"table", headers: lang === "de" ? ["Kartenfeld","Nützlicher Hinweis","Noch zu prüfen"] : lang === "es" ? ["Campo","Pista útil","Por verificar"] : lang === "pl" ? ["Pole karty","Przydatna wskazówka","Do sprawdzenia"] : ["Câmp","Indiciu util","De verificat"], rows:tableRows[lang] }] : []),
     ...(i === 7 ? [{ type:"list", title: lang === "de" ? "Abschlussaudit" : lang === "es" ? "Auditoría final" : lang === "pl" ? "Audyt końcowy" : "Audit final", items:[d.sectionTitles[0], d.sectionTitles[3], d.sectionTitles[4], d.sectionTitles[5], d.sectionTitles[7]] }] : []),
   ] }));
   return { ...d, heroImage:"/products/tshirt.webp", intro:d.intro, sections, cta:{ eyebrow:d.category, title:d.excerpt, label:d.shortTitle } };

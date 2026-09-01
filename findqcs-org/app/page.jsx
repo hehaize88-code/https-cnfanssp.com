@@ -126,7 +126,7 @@ export default function HomePage() {
             <h2>{t("home.articleTitle")}</h2>
             <p>{t("home.articleExcerpt")}</p>
             <Link href="/articles/before-you-buy-qc-guide">{t("home.readNote")} <ArrowIcon /></Link>
-            <Link href="/articles/mapped-findqc-product-index-without-recommendation">Mapped product-index guide <ArrowIcon /></Link>
+            <Link href="/articles/mapped-findqc-product-index-without-recommendation">{t("home.mappedIndexGuide")} <ArrowIcon /></Link>
           </div>
           <figure>
             <img src="/products/shoes-60.jpg" alt="QC reference example" />
