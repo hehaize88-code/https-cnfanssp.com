@@ -15,6 +15,7 @@ const articles = [
   ["EVIDENCE WORKSHEET", "Pre-Purchase QC Evidence Worksheet: Build an Auditable Record", "Record product identity, photo coverage, observations, evidence gaps and a clear handoff before your chosen agent acts.", "/articles/pre-purchase-qc-evidence-worksheet/", "11 min"],
   ["IDENTITY MAPPING", "Map Listing Identity to the QC Record Before Comparing Evidence", "Compare source ID, seller, variant, option and date before transferring any inspection observation to the target.", "/articles/map-listing-identity-to-qc-record/", "12 min"],
   ["VARIANT RECORD", "Record Variant, Color, Size and Quantity Before QC Comparison", "Freeze original option text, normalized values, bundle counts and evidence states before comparing inspection records.", "/articles/record-variant-color-size-quantity-before-comparison/", "11 min"],
+  ["EVIDENCE FRESHNESS", "Record Source Date, QC Record Date and Evidence Freshness", "Separate listing capture, inspection, access and review dates without inventing a universal expiry rule.", "/articles/qc-evidence-freshness-source-record-review-dates/", "11 min"],
 ];
 
 export default function Articles() {

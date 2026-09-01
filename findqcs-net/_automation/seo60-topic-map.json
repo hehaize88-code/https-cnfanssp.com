@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-30",
+  "lastUpdated": "2026-09-01",
   "latestPublishedCommit": "5e9fd5216e988f471fd024365174e0d7e544304d",
   "site": "findqcs.net",
   "track": "QED",
@@ -47,6 +47,20 @@
       "visuals": ["Eight HTML evidence panels; no screenshots, customer media or new image assets"],
       "englishVisibleWords": 1724,
       "productionDeploymentId": "aec9e90b-eeb0-4061-a7fd-c287e5fe82b5"
+    },
+    {
+      "cycle": "C04",
+      "planTrack": "QED04",
+      "liveVerified": false,
+      "deploymentStatus": "pending-production-verification",
+      "slug": "qc-evidence-freshness-source-record-review-dates",
+      "primaryQuery": "QC evidence freshness record",
+      "intent": "Preserve listing, QC record, access and review dates so already-found evidence remains auditable as sources change",
+      "longTailQueries": ["QC source date log", "QC record review date", "inspection evidence age"],
+      "focus": ["four date types", "dated source header", "append-only timeline", "field-level relevance", "listing change history", "review triggers"],
+      "outline": ["date separation", "header", "event timeline", "relevance risk", "listing changes", "review protocol", "handoff note", "audit"],
+      "faqAngles": ["Which dates belong in a QC evidence record?", "Does old QC evidence expire after a fixed number of days?", "How should listing changes be preserved?"],
+      "visuals": ["Seven HTML evidence panels; no screenshots, customer media or new image assets"]
     }
   ]
 }
