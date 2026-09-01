@@ -1,7 +1,7 @@
 {
   "site": "findqcs.store",
   "track": "QBR",
-  "updated": "2026-08-30",
+  "updated": "2026-09-01",
   "completed": [
     {
       "cycle": "C01",
@@ -28,6 +28,18 @@
       "languages": ["en", "de", "es", "fr", "it"],
       "englishVisibleWords": 1242,
       "productionDeploymentId": "75fdca1807dc41f5ba8cb3adc3d88ef8"
+    },
+    {
+      "cycle": "C03",
+      "planTrack": "QBR03",
+      "liveVerified": false,
+      "deploymentStatus": "pending-production-verification",
+      "slug": "must-haves-vs-preferences-buyer-acceptance-criteria",
+      "title": "Must-Haves vs Preferences: Set Buyer Acceptance Criteria Before Search",
+      "primaryQuery": "buyer acceptance criteria",
+      "intent": "Separate non-negotiable requirements, preferences, bonuses and unknowns before product discovery changes the standard",
+      "englishVisibleWords": 1274,
+      "languages": ["en", "de", "es", "fr", "it"]
     }
   ]
 }

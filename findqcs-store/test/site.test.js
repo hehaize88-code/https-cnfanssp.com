@@ -42,10 +42,11 @@ const privacy = await get("https://findqcs.store/privacy");
 assert.match(privacy.body, /<meta name="robots" content="noindex,follow">/);
 
 const sitemap = await get("https://findqcs.store/sitemap.xml");
-assert.equal((sitemap.body.match(/<url>/g) || []).length, 90);
+assert.equal((sitemap.body.match(/<url>/g) || []).length, 95);
 assert.doesNotMatch(sitemap.body, /\/privacy|\/terms/);
 assert.match(sitemap.body, /product-requirements-brief-before-search/);
 assert.match(sitemap.body, /define-product-use-case-before-search/);
+assert.match(sitemap.body, /must-haves-vs-preferences-buyer-acceptance-criteria/);
 
 const article = await get("https://findqcs.store/articles/how-to-read-qc-photos");
 assert.match(article.body, /"author":\{"@type":"Organization","name":"FindQC Store Editorial Team"/);
