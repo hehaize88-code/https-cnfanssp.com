@@ -1,4 +1,5 @@
-import Script from "next/script";\nimport "./globals.css";
+import Script from "next/script";
+import "./globals.css";
 import SiteHeader from "../components/SiteHeader";
 import Footer from "../components/Footer";
 import LanguageProvider from "../components/LanguageProvider";

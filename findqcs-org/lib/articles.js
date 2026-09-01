@@ -1,3 +1,5 @@
+import { mappedIndexArticle } from "./seo60MappedIndex.js";
+
 const liveCatalog = {
   label: "Live catalog: all products",
   href: "https://www.cnfanssp.com/AllProducts/",
@@ -250,6 +252,7 @@ export const articles = [
     related: ["product-search-link-id-keyword", "before-you-buy-qc-guide", "what-qc-photos-can-prove"],
     cta: { eyebrow: "Plan the parcel", title: "Use the shipping guide before approving consolidation.", href: "/shipping", label: "Open shipping guide" },
   },
+  mappedIndexArticle,
 ];
 
 const articleExtensions = {

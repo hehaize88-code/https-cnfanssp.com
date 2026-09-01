@@ -2,7 +2,7 @@ export const roArticleUi = {
   journalMetadataTitle: "Ghiduri FindQC: căutare, fotografii QC și agenți de cumpărături",
   journalMetadataDescription: "Ghiduri verificate despre căutarea FindQC, semnalele produselor, evaluarea fotografiilor QC și procesul cu un agent de cumpărături.",
   journalSchemaName: "Jurnalul de cercetare FindQCS",
-  journalCount: "05 ghiduri detaliate",
+  journalCount: "06 ghiduri detaliate",
   journalNote: "Fiecare articol este redactat integral în limba română, verificat pe pagini actuale deținute de FindQC și legat de sursele oficiale. Imaginile editoriale sunt marcate clar și nu sunt prezentate drept dovezi QC din depozit.",
   editorialDesk: "Redacția FindQCS",
   factChecked: "Informații verificate",

@@ -2,7 +2,7 @@ export const plArticleUi = {
   journalMetadataTitle: "Poradniki FindQC: wyszukiwanie, zdjęcia QC i agenci zakupowi",
   journalMetadataDescription: "Sprawdzone poradniki o wyszukiwaniu w FindQC, sygnałach popularności, ocenie zdjęć QC i współpracy z agentem zakupowym.",
   journalSchemaName: "Magazyn poradnikowy FindQCS",
-  journalCount: "05 szczegółowych poradników",
+  journalCount: "06 szczegółowych poradników",
   journalNote: "Każdy artykuł został napisany po polsku, sprawdzony na aktualnych stronach należących do FindQC i połączony z oficjalnymi źródłami. Ilustracje redakcyjne są wyraźnie opisane i nie udają zdjęć QC z magazynu.",
   editorialDesk: "Redakcja FindQCS",
   factChecked: "Zweryfikowane fakty",

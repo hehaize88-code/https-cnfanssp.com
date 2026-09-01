@@ -2,7 +2,7 @@ export const esArticleUi = {
   journalMetadataTitle: "Guías de FindQC: búsquedas, fotos QC y agentes de compra",
   journalMetadataDescription: "Guías verificadas sobre las búsquedas de FindQC, las señales de producto, la revisión de fotos QC y el proceso con un agente de compra.",
   journalSchemaName: "Revista de investigación de FindQCS",
-  journalCount: "05 guías detalladas",
+  journalCount: "06 guías detalladas",
   journalNote: "Cada artículo está redactado en español, se contrasta con páginas actuales propiedad de FindQC y enlaza sus fuentes oficiales. Las imágenes editoriales se identifican claramente y no se presentan como pruebas QC de almacén.",
   editorialDesk: "Redacción de FindQCS",
   factChecked: "Datos verificados",

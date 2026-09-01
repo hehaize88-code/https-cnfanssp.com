@@ -2,7 +2,7 @@ export const deArticleUi = {
   journalMetadataTitle: "FindQC-Ratgeber: Suche, QC-Fotos und Shopping Agents",
   journalMetadataDescription: "Geprüfte Ratgeber zur FindQC-Suche, zu Produktsignalen, zur Bewertung von QC-Fotos und zum Ablauf mit einem Shopping Agent.",
   journalSchemaName: "FindQCS Wissensmagazin",
-  journalCount: "05 ausführliche Ratgeber",
+  journalCount: "06 ausführliche Ratgeber",
   journalNote: "Jeder Artikel ist vollständig auf Deutsch verfasst, anhand aktueller FindQC-eigener Seiten geprüft und mit offiziellen Quellen verknüpft. Redaktionelle Bilder sind klar gekennzeichnet und werden nicht als QC-Nachweis aus einem Lager dargestellt.",
   editorialDesk: "Redaktion von FindQCS",
   factChecked: "Fakten geprüft",

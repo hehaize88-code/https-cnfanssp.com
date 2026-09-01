@@ -1,0 +1,20 @@
+{
+  "lastUpdated": "2026-09-01",
+  "site": "findqcs.org",
+  "track": "QIX",
+  "articles": [
+    {
+      "cycle": "C01",
+      "planTrack": "QIX01",
+      "liveVerified": false,
+      "deploymentStatus": "pending-production-verification",
+      "slug": "mapped-findqc-product-index-without-recommendation",
+      "primaryQuery": "FindQC product index",
+      "intent": "Use a mapped product index to narrow category candidates without treating inclusion or card order as a recommendation",
+      "longTailQueries": ["mapped QC finds", "independent product index", "product category route"],
+      "englishVisibleWords": 1299,
+      "languages": ["en", "pl", "es", "de", "ro"],
+      "visuals": ["Existing local editorial product image only; no customer media or new assets"]
+    }
+  ]
+}
