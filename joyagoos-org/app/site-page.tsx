@@ -27,6 +27,7 @@ const visualLabels={
 function ArticleVisual({lang,slug,article}:{lang:Lang;slug:string;article:SeoArticle}){const l=locale[lang];let items:{value:string;label:string}[];
   if(slug==="joyagoo-fee-policy-free-agent-service-transaction-costs")return null;
   if(slug==="joyagoo-buying-fees-guide")items=l.route.map((label,index)=>({value:`0${index+1}`,label}));
+  else if(slug==="joyagoo-five-day-return-clock-qc-timestamp-deadline")items=[{value:"QC",label:article.quickFacts[0]},{value:"120H",label:article.quickFacts[1]},{value:"1 / ORDER",label:article.quickFacts[2]}];
   else if(slug==="joyagoo-qc-return-window-guide")items=[{value:"120H",label:article.quickFacts[1]},{value:"QC",label:l.steps.qc[0]},{value:"72H",label:l.faq[3][0]}];
   else if(slug==="joyagoo-warehouse-rehearsal-shipping-guide")items=[{value:"90",label:l.facts[0]},{value:"20 CNY / 3 USD",label:visualLabels.price[lang]},{value:"30",label:visualLabels.parcel[lang]}];
   else if(slug==="volumetric-weight-guide")items=[{value:"L × W × H",label:article.quickFacts[1]},{value:"÷ 6000",label:article.quickFacts[0]},{value:"10 KG",label:"50 × 40 × 30 CM"}];
