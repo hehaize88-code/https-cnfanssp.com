@@ -1,7 +1,9 @@
 import {returnMatrixArticle} from "./seo-article-return-matrix";
+import {returnClockArticle} from "./seo-article-return-clock";
 
 export type SeoArticle={slug:string;title:string;description:string;meta:string;sourceNote:string;quickFacts:string[];sections:{heading:string;paragraphs:string[]}[]};
 export const seoArticles:SeoArticle[]=[
+returnClockArticle,
 returnMatrixArticle,
 {
 slug:"joyagoo-fee-policy-free-agent-service-transaction-costs",title:"Joyagoo Fee Policy Explained: Free Agent Service vs Payable Transaction Costs",description:"Read Joyagoo’s free-agent-service wording accurately by separating the purchasing service from seller, payment, return, optional-service and parcel costs.",meta:"FEE POLICY EVIDENCE · 15 MIN",sourceNote:"Policy scope checked August 29, 2026 against current public Joyagoo fee, purchasing and shopping guidance. Live checkout fields and current policy text control each transaction.",quickFacts:["Free describes the core buying service","Goods and seller freight remain payable","Optional services can add charges","Returns can create deductions","International freight is a separate stage"],sections:[
