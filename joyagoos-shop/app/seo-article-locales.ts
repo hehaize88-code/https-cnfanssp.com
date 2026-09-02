@@ -1,6 +1,7 @@
 import type {Lang} from "./site-data";
 import {getSeoArticle,type SeoArticle} from "./seo-articles";
 import {destinationListingArticle,destinationListingTranslations} from "./seo-article-destination";
+import {identifierGuideArticle,identifierGuideTranslations} from "./seo-article-identifiers";
 
 type ArticleMeta={title:string;description:string;meta:string;sourceNote:string;quickFacts:string[]};
 type ArticleRow=[string,string];
@@ -432,6 +433,7 @@ it:[
 
 export function getLocalizedSeoArticle(slug:string,lang:Lang):SeoArticle|undefined{
   const base=getSeoArticle(slug);if(!base||lang==="en")return base;
+  if(slug===identifierGuideArticle.slug)return identifierGuideTranslations[lang]??base;
   if(slug===destinationListingArticle.slug)return destinationListingTranslations[lang]??base;
   const translated=translations[lang]?.[slug];if(!translated)return base;
   const notes=depthNotes[lang];

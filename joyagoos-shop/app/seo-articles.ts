@@ -1,7 +1,9 @@
 import {destinationListingArticle} from "./seo-article-destination";
+import {identifierGuideArticle} from "./seo-article-identifiers";
 
 export type SeoArticle={slug:string;title:string;description:string;meta:string;sourceNote:string;quickFacts:string[];sections:{heading:string;paragraphs:string[]}[]};
 export const seoArticles:SeoArticle[]=[
+identifierGuideArticle,
 destinationListingArticle,
 {
 slug:"joyagoo-spreadsheet-independent-product-index-guide",title:"Joyagoo Spreadsheet Guide: What an Independent Product Index Can and Cannot Prove",description:"Use a Joyagoo spreadsheet as a discovery index, then verify identity, options and live listing facts before building a buyer-ready shortlist.",meta:"PRODUCT INDEX METHOD · 14 MIN",sourceNote:"Scope checked August 29, 2026: this independent index organizes discovery routes. Current destination listings and the buyer’s live account remain the evidence for availability, options and ordering decisions.",quickFacts:["An index narrows discovery","A destination page controls live facts","Images and prices are snapshots","Inclusion is not a quality ranking","Open questions belong in a shortlist record"],sections:[
