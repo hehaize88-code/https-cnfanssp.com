@@ -435,6 +435,7 @@ it:[
 
 export function getLocalizedSeoArticle(slug:string,lang:Lang):SeoArticle|undefined{
   const base=getSeoArticle(slug);if(!base||lang==="en")return base;
+  if(slug===variantCheckArticle.slug)return variantCheckTranslations[lang]??base;
   if(slug===identifierGuideArticle.slug)return identifierGuideTranslations[lang]??base;
   if(slug===listingConsistencyArticle.slug)return listingConsistencyTranslations[lang]??base;
   if(slug===destinationListingArticle.slug)return destinationListingTranslations[lang]??base;
