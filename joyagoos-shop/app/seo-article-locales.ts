@@ -3,6 +3,7 @@ import {getSeoArticle,type SeoArticle} from "./seo-articles";
 import {destinationListingArticle,destinationListingTranslations} from "./seo-article-destination";
 import {identifierGuideArticle,identifierGuideTranslations} from "./seo-article-identifiers";
 import {listingConsistencyArticle,listingConsistencyTranslations} from "./seo-article-consistency";
+import {variantCheckArticle,variantCheckTranslations} from "./seo-article-variants";
 
 type ArticleMeta={title:string;description:string;meta:string;sourceNote:string;quickFacts:string[]};
 type ArticleRow=[string,string];
@@ -442,5 +443,5 @@ export function getLocalizedSeoArticle(slug:string,lang:Lang):SeoArticle|undefin
   const bridges=depthBridges[lang];
   return {...base,title:translated.title,description:translated.description,meta:translated.meta,sourceNote:translated.sourceNote,quickFacts:translated.quickFacts,sections:translated.rows.map(([heading,text],index)=>({heading,paragraphs:[...text.split("¶"),notes[index%notes.length].replace("{topic}",heading),...(index<bridges.length?[bridges[index]]:[])]}))};
 }
-const publishingOrder=["joyagoo-title-thumbnail-destination-consistency-check","joyagoo-product-id-source-link-destination-url-guide","joyagoo-destination-listing-verification-guide","joyagoo-spreadsheet-independent-product-index-guide","joyagoo-buying-fees-guide","joyagoo-qc-return-window-guide","volumetric-weight-guide","joyagoo-warehouse-rehearsal-shipping-guide","joyagoo-reviews-buyer-signals"];
+const publishingOrder=["joyagoo-color-size-quantity-variant-check","joyagoo-title-thumbnail-destination-consistency-check","joyagoo-product-id-source-link-destination-url-guide","joyagoo-destination-listing-verification-guide","joyagoo-spreadsheet-independent-product-index-guide","joyagoo-buying-fees-guide","joyagoo-qc-return-window-guide","volumetric-weight-guide","joyagoo-warehouse-rehearsal-shipping-guide","joyagoo-reviews-buyer-signals"];
 export function getLocalizedSeoArticles(lang:Lang){return publishingOrder.map(slug=>getLocalizedSeoArticle(slug,lang)).filter((article):article is SeoArticle=>Boolean(article));}
