@@ -1,6 +1,7 @@
 import { articles, type ArticleSlug } from "./article-data";
 import { completeTranslations } from "./generated-translations";
 import type { SiteLanguage } from "./i18n";
+import { germanyDestinationArticleByLanguage, germanyDestinationArticleSlug } from "./seo-article-germany";
 
 const routeVerificationCopy: Record<SiteLanguage, { title: string; description: string }> = {
   en: { title: "Joyagoo Product Route Verification: Keep Every Click Traceable", description: "Verify Joyagoo product routes by checking live status, product identity, options, preview consistency and destination before ordering." },
@@ -33,7 +34,11 @@ export function buyerFacingText(text: string, language: SiteLanguage): string {
 }
 
 export function getArticleCopy(slug: ArticleSlug, language: SiteLanguage) {
-  const source = language === "en" ? articles[slug] : completeTranslations[language].articles[slug];
+  const source = slug === germanyDestinationArticleSlug
+    ? germanyDestinationArticleByLanguage[language]
+    : language === "en"
+      ? articles[slug]
+      : completeTranslations[language].articles[slug as keyof typeof completeTranslations[typeof language]["articles"]];
   const override = slug === "joyagoo-link-verification-guide" ? routeVerificationCopy[language] : null;
   return {
     ...source,

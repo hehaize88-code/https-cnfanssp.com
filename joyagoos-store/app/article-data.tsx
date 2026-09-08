@@ -1,8 +1,10 @@
 import { Footer, Header, MAIN } from "./site-data";
+import { germanyDestinationArticleByLanguage, germanyDestinationArticleSlug } from "./seo-article-germany";
 
 type Source = { title:string; href:string };
 
 export const articles = {
+  [germanyDestinationArticleSlug]: germanyDestinationArticleByLanguage.en,
   "joyagoo-how-to-buy-guide": {
     title:"How to Buy on Joyagoo in 2026: Product Link, QC, Warehouse and Shipping",
     description:"A source-backed Joyagoo buying guide covering product links, order status, warehouse QC, the return window, storage, parcel submission and international shipping.",
@@ -94,6 +96,14 @@ export const articles = {
 } as const;
 
 export type ArticleSlug = keyof typeof articles;
+
+export const articlePublishedDates: Record<ArticleSlug, string> = {
+  [germanyDestinationArticleSlug]: "2026-09-08",
+  "joyagoo-how-to-buy-guide": "2026-08-29",
+  "joyagoo-qc-photo-checklist": "2026-08-29",
+  "joyagoo-actual-vs-volumetric-weight": "2026-08-29",
+  "joyagoo-link-verification-guide": "2026-08-29",
+};
 
 export function ArticlePage({ slug }:{slug:ArticleSlug}){
   const article=articles[slug];
