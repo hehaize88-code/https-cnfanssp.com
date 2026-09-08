@@ -8,6 +8,7 @@ import { commonUi } from "./full-translations";
 import { useLanguage } from "./use-language";
 import { articleTranslations } from "./article-translations";
 import { buyerFacingText, getArticleCopy } from "./article-content";
+import { germanyDestinationArticleSlug } from "./seo-article-germany";
 import { localizedPath, SITE_NAME, SITE_URL, SOCIAL_IMAGE } from "./seo";
 
 const articleUi: Record<SiteLanguage, { kicker:string; updated:string; guide:string; sources:string; end:string; browse:string }> = {
@@ -24,7 +25,15 @@ const articleUi: Record<SiteLanguage, { kicker:string; updated:string; guide:str
 };
 
 export function ArticleInteractive({ slug, language = "en", prefix = "" }: { slug: ArticleSlug; language?: SiteLanguage; prefix?: string }) {
-  const { language:activeLanguage, setLanguage } = useLanguage(language);
+  const isGermanyDestinationArticle = slug === germanyDestinationArticleSlug;
+  const { language:activeLanguage, setLanguage } = useLanguage(language, !isGermanyDestinationArticle);
+  const changeLanguage = (next: SiteLanguage) => {
+    if (isGermanyDestinationArticle) {
+      window.location.assign(localizedPath(`/articles/${slug}`, next));
+      return;
+    }
+    setLanguage(next);
+  };
   const article = articles[slug];
   const active = activeLanguage === "en" ? undefined : activeLanguage as Locale;
   const curatedChinese = active === "zh" ? articleTranslations.zh?.[slug] : null;
@@ -64,5 +73,5 @@ export function ArticleInteractive({ slug, language = "en", prefix = "" }: { slu
       {"@type":"ListItem",position:3,name:initialCopy.title,item:canonical},
     ],
   };
-  return <main><Header prefix={prefix} locale={active} language={activeLanguage} onLanguageChange={setLanguage} section="articles"/><article className="article-page"><header><p className="eyebrow">{ui.kicker}</p><h1>{title}</h1><div><span>{ui.updated} {active ? activeCopy.updated : article.updated}</span><span>{readTime}</span></div><p>{description}</p></header><div className="article-body"><aside><strong>{ui.guide}</strong>{sections.map(([sectionTitle],i)=><a href={`#section-${i+1}`} key={sectionTitle}>0{i+1} {sectionTitle}</a>)}</aside><div>{sections.map(([sectionTitle,text],i)=><section id={`section-${i+1}`} key={sectionTitle}><span>0{i+1}</span><h2>{sectionTitle}</h2><p>{text}</p></section>)}</div></div>{article.sources.length > 0 && <div className="article-sources"><p className="eyebrow">{ui.sources}</p>{article.sources.map((source,index)=><div className="source-reference" key={source.href}><strong>{curatedChinese?.sources[index] || activeCopy.sources[index]?.title || source.title}</strong><span>{source.href}</span></div>)}</div>}<div className="article-end"><h2>{ui.end}</h2><a href={MAIN+"/AllProducts/"} target="_blank" rel="noreferrer">{ui.browse}</a></div><script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(schema).replace(/</g,"\\u003c")}}/><script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(breadcrumb).replace(/</g,"\\u003c")}}/></article><Footer prefix={prefix} language={activeLanguage} onLanguageChange={setLanguage} section="articles"/></main>;
+  return <main><Header prefix={prefix} locale={active} language={activeLanguage} onLanguageChange={changeLanguage} section="articles"/><article className="article-page"><header><p className="eyebrow">{ui.kicker}</p><h1>{title}</h1><div><span>{ui.updated} {active ? activeCopy.updated : article.updated}</span><span>{readTime}</span></div><p>{description}</p></header><div className="article-body"><aside><strong>{ui.guide}</strong>{sections.map(([sectionTitle],i)=><a href={`#section-${i+1}`} key={sectionTitle}>0{i+1} {sectionTitle}</a>)}</aside><div>{sections.map(([sectionTitle,text],i)=><section id={`section-${i+1}`} key={sectionTitle}><span>0{i+1}</span><h2>{sectionTitle}</h2><p>{text}</p></section>)}</div></div>{article.sources.length > 0 && <div className="article-sources"><p className="eyebrow">{ui.sources}</p>{article.sources.map((source,index)=><div className="source-reference" key={source.href}><strong>{curatedChinese?.sources[index] || activeCopy.sources[index]?.title || source.title}</strong><span>{source.href}</span></div>)}</div>}<div className="article-end"><h2>{ui.end}</h2><a href={MAIN+"/AllProducts/"} target="_blank" rel="noreferrer">{ui.browse}</a></div><script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(schema).replace(/</g,"\\u003c")}}/><script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(breadcrumb).replace(/</g,"\\u003c")}}/></article><Footer prefix={prefix} language={activeLanguage} onLanguageChange={changeLanguage} section="articles"/></main>;
 }
