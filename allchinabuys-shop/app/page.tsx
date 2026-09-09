@@ -1,5 +1,21 @@
+import type { Metadata } from "next";
 import SiteFooter from "./components/SiteFooter";
 import SiteHeader from "./components/SiteHeader";
+
+export const metadata: Metadata = {
+  title: "AllChinaBuy Spreadsheet 2026 | ACBuy Finds & QC Photos",
+  description: "Browse an updated AllChinaBuy spreadsheet and 10 practical guides for ACBuy finds, QC photos, order status, shipping costs and parcel tracking.",
+  alternates: { canonical: "https://allchinabuys.shop/" },
+  robots: { index: true, follow: true },
+  openGraph: {
+    title: "AllChinaBuy Spreadsheet 2026 | ACBuy Finds",
+    description: "Curated ACBuy finds plus practical QC, shipping and tracking guides.",
+    type: "website",
+    url: "https://allchinabuys.shop/",
+    images: [{ url: "/og.png", width: 1200, height: 630, alt: "AllChinaBuy Spreadsheet & Finds" }],
+  },
+  twitter: { card: "summary_large_image", title: "AllChinaBuy Spreadsheet 2026", description: "Curated ACBuy finds plus practical QC, shipping and tracking guides.", images: ["/og.png"] },
+};
 
 const MAIN = "https://www.cnfanssp.com";
 
@@ -39,9 +55,9 @@ export default function Home() {
 
       <section className="hero" id="top">
         <div className="hero-copy">
-          <p className="eyebrow"><span>Updated weekly</span> Independent product index</p>
-          <h1>Find it faster.<br/><em>Check it smarter.</em></h1>
-          <p className="hero-lede">A cleaner AllChinaBuy spreadsheet experience for discovering products, reviewing QC steps and planning international delivery—without digging through endless rows.</p>
+          <p className="eyebrow"><span>Reviewed Sep 2026</span> Independent ACBuy product index</p>
+          <h1>AllChinaBuy Spreadsheet<br/><em>Updated for 2026.</em></h1>
+          <p className="hero-lede">Browse cleaner AllChinaBuy and ACBuy finds, then use practical guides for listing checks, QC photos, order status, shipping costs and parcel tracking.</p>
           <form className="search" action={`${MAIN}/search.html`} method="get" target="_blank">
             <label className="sr-only" htmlFor="product-search">Search products</label><span aria-hidden="true">⌕</span>
             <input id="product-search" name="keywords" data-search-input placeholder="Search shoes, hoodies, jerseys…" />
@@ -92,7 +108,7 @@ export default function Home() {
       <section className="section editorial-section">
         <div className="editorial-image"><img src="/og.png" alt="AllChinaBuy Spreadsheet editorial collage with parcel boxes, a hoodie, a sneaker, QC photos and a product grid" /></div>
         <div className="editorial-copy"><p className="section-kicker">Research desk</p><h2>Useful answers<br/>beyond the links.</h2><p>Product discovery is only the first step. These guides explain what to verify before ordering, what warehouse photos can show and why a shipping quote must be checked for the parcel you actually create.</p>
-          <div className="article-links"><a href="/articles/how-to-use-allchinabuy-spreadsheet/"><span>BEGINNER GUIDE</span><b>How to Use an AllChinaBuy Spreadsheet</b><i>8 min →</i></a><a href="/articles/warehouse-qc-photo-checklist/"><span>QC GUIDE</span><b>Warehouse QC Photo Checklist</b><i>7 min →</i></a><a href="/articles/plan-allchinabuy-shipping/"><span>SHIPPING</span><b>Plan Shipping Before Checkout</b><i>9 min →</i></a></div>
+          <div className="article-links"><a href="/articles/allchinabuy-tracking-order-parcel-status/"><span>TRACKING</span><b>AllChinaBuy Tracking: Order & Parcel Status</b><i>10 min →</i></a><a href="/articles/warehouse-qc-photo-checklist/"><span>QC PHOTOS</span><b>AllChinaBuy Warehouse QC Checklist</b><i>11 min →</i></a><a href="/articles/plan-allchinabuy-shipping/"><span>SHIPPING COST</span><b>Shipping Calculator and Parcel Cost Guide</b><i>12 min →</i></a></div>
         </div>
       </section>
 

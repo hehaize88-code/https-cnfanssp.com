@@ -21,4 +21,20 @@ test("exports independent pages and SEO discovery files", async () => {
   assert.match(article, /How to Use an AllChinaBuy Spreadsheet/);
   assert.match(robots, /Sitemap: https:\/\/allchinabuys\.shop\/sitemap\.xml/);
   assert.match(sitemap, /https:\/\/allchinabuys\.shop\/articles\/plan-allchinabuy-shipping\//);
+  assert.match(sitemap, /https:\/\/allchinabuys\.shop\/articles\/allchinabuy-tracking-order-parcel-status\//);
+});
+
+test("exports ten distinct article pages and a noindex 404", async () => {
+  const index = await readFile(new URL("../dist/client/articles/index.html", import.meta.url), "utf8");
+  const tracking = await readFile(new URL("../dist/client/articles/allchinabuy-tracking-order-parcel-status/index.html", import.meta.url), "utf8");
+  const fees = await readFile(new URL("../dist/client/articles/allchinabuy-fees-payment-methods/index.html", import.meta.url), "utf8");
+  const notFound = await readFile(new URL("../dist/client/404.html", import.meta.url), "utf8");
+
+  assert.equal((index.match(/class="articles-index-card"/g) || []).length, 10);
+  assert.match(tracking, /AllChinaBuy Tracking: How to Read Order and Parcel Status/);
+  assert.match(tracking, /BreadcrumbList/);
+  assert.match(fees, /AllChinaBuy Fees and Payment Methods/);
+  assert.match(notFound, /content="noindex" name="robots"/);
+  assert.doesNotMatch(notFound, /content="index, follow"/);
+  assert.doesNotMatch(notFound, /rel="canonical" href="https:\/\/allchinabuys\.shop\/"/);
 });
