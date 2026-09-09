@@ -2,10 +2,11 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { PageShell } from "@/components/PageShell";
 import { guides } from "@/lib/data";
+import { seoArticles } from "@/lib/seo-articles";
 
 export const metadata: Metadata = {
-  title: "AllChinaBuy Articles & Buying Guides",
-  description: "Read independent AllChinaBuy spreadsheet, QC photo and international shipping guides before opening the live product catalog.",
+  title: { absolute: "ACBuy Spreadsheet Articles and Product Research Guides" },
+  description: "Read practical ACBuy spreadsheet articles covering shoe and clothing finds, QC photos, product IDs, listing comparison and safer catalog research.",
   alternates: { canonical: "/articles" },
 };
 
@@ -16,25 +17,38 @@ export default function ArticlesPage() {
         <header className="page-hero">
           <div className="section-shell">
             <div className="breadcrumbs"><Link href="/">Home</Link> / Articles</div>
-            <p className="eyebrow">Independent research desk</p>
-            <h1>Articles for better buying decisions.</h1>
-            <p className="lede">Practical, source-first articles covering spreadsheet use, warehouse QC photos and international shipping. Each article has its own indexable page and points readers to the relevant catalog only when useful.</p>
+            <p className="eyebrow">Independent ACBuy research desk</p>
+            <h1>ACBuy Spreadsheet Articles and Product Research Guides</h1>
+            <p className="lede">Use these source-first guides to compare AllChinaBuy finds, preserve exact product IDs, interpret warehouse QC photos and reach the live catalog with a clearer decision.</p>
           </div>
         </header>
         <section className="section-shell section-block">
-          <div className="section-heading"><div><p className="eyebrow">Recommended publication order</p><h2>Follow the buyer’s real decisions.</h2></div><p>Start broad, then move down the funnel: spreadsheet and ordering workflow, QC evidence, shipping cost, customer-review analysis. Later articles can cover returns, packaging, payment and country-specific delivery without making several pages compete for the same query.</p></div>
+          <div className="section-heading"><div><p className="eyebrow">New keyword-led library</p><h2>Ten focused guides for real search tasks.</h2></div><p>These pages target the strongest missing cluster: ACBuy spreadsheet, category finds, QC evidence, W2C links, product IDs, comparison and search. Each page has one primary intent so the articles support rather than compete with the spreadsheet and product index.</p></div>
           <div className="article-directory">
-            {guides.map((guide, index) => (
-              <article className="article-directory-card" key={guide.href}>
-                <div><span>ARTICLE 0{index + 1}</span><b>{guide.read}</b></div>
-                <p>{guide.kicker}</p>
-                <h2>{guide.title}</h2>
-                <small>{guide.description}</small>
-                <Link href={guide.href}>Read independent article <span>↗</span></Link>
+            {seoArticles.map((article, index) => (
+              <article className="article-directory-card" key={article.slug}>
+                <div><span>ARTICLE {String(index + 1).padStart(2, "0")}</span><b>{article.read}</b></div>
+                <p>{article.kicker}</p>
+                <h2>{article.title}</h2>
+                <small>{article.description}</small>
+                <Link href={`/articles/${article.slug}`}>Read focused guide <span>↗</span></Link>
               </article>
             ))}
           </div>
-          <div className="keyword-roadmap"><div><b>C01</b><span>AllChinaBuy spreadsheet</span><small>Supporting: how to use AllChinaBuy, product links, warehouse</small></div><div><b>C02</b><span>AllChinaBuy QC photos</span><small>Supporting: warehouse photos, extra photo, measurements</small></div><div><b>C03</b><span>AllChinaBuy shipping cost</span><small>Supporting: calculator, volumetric weight, Shipping Expert</small></div><div><b>C04</b><span>AllChinaBuy reviews</span><small>Supporting: legit, customer service, shipping reviews</small></div></div>
+        </section>
+        <section className="section-shell section-block">
+          <div className="section-heading"><div><p className="eyebrow">Foundation guides</p><h2>Platform workflow and decision checks.</h2></div><p>The original guides cover spreadsheet use, QC, shipping and review research. They remain separate from the new category and product-discovery pages.</p></div>
+          <div className="article-directory">
+            {guides.map((guide, index) => (
+              <article className="article-directory-card" key={guide.href}>
+                <div><span>GUIDE {String(index + 1).padStart(2, "0")}</span><b>{guide.read}</b></div>
+                <p>{guide.kicker}</p>
+                <h2>{guide.title}</h2>
+                <small>{guide.description}</small>
+                <Link href={guide.href}>Read foundation guide <span>↗</span></Link>
+              </article>
+            ))}
+          </div>
         </section>
       </main>
     </PageShell>

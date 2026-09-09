@@ -1,18 +1,21 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import "./globals.css";
+import { AnalyticsEvents } from "@/components/AnalyticsEvents";
 import { LanguageProvider } from "@/components/LanguageModule";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://allchinabuys.store"),
-  title: { default: "AllChinaBuy Spreadsheet 2026 | Verified Product Finds", template: "%s | AllChinaBuy Spreadsheet" },
-  description: "Browse organized AllChinaBuy spreadsheet finds, product source records, QC checklists and practical shipping guides.",
+  title: { default: "ACBuy Finds 2026 | AllChinaBuy Product Index", template: "%s | ACBuy Finds" },
+  description: "Browse ACBuy finds, AllChinaBuy product records, QC checklists and current catalog links in an independent, source-checked product index.",
+  alternates: { canonical: "/" },
   robots: {
     index: true,
     follow: true,
     googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1, "max-video-preview": -1 },
   },
-  openGraph: { type: "website", title: "AllChinaBuy Index 2026", description: "Check the source. Compare the details.", images: [{ url: "/og-v2.png", width: 1732, height: 908, alt: "AllChinaBuy Index — product intelligence workspace" }] },
-  twitter: { card: "summary_large_image", title: "AllChinaBuy Index 2026", description: "Check the source. Compare the details.", images: ["/og-v2.png"] },
+  openGraph: { type: "website", title: "ACBuy Finds 2026 | AllChinaBuy Product Index", description: "Browse ACBuy finds, product records, QC checklists and current catalog links.", url: "/", images: [{ url: "/og-v2.png", width: 1732, height: 908, alt: "ACBuy finds and AllChinaBuy product index" }] },
+  twitter: { card: "summary_large_image", title: "ACBuy Finds 2026 | AllChinaBuy Product Index", description: "Browse ACBuy finds, product records, QC checklists and current catalog links.", images: ["/og-v2.png"] },
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",
@@ -26,9 +29,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="antialiased"><script async src="https://www.googletagmanager.com/gtag/js?id=G-Q81YBM09Z1" /><script dangerouslySetInnerHTML={{ __html: "window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-Q81YBM09Z1');" }} />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "WebSite", name: "AllChinaBuy Spreadsheet 2026", url: "https://allchinabuys.store", description: "An independent product discovery and shopping education resource." }) }} />
-        <LanguageProvider>{children}</LanguageProvider>
+      <body className="antialiased">
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-Q81YBM09Z1" strategy="afterInteractive" />
+        <Script id="google-analytics" strategy="afterInteractive">{"window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-Q81YBM09Z1');"}</Script>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "WebSite", name: "ACBuy Finds and AllChinaBuy Product Index", alternateName: "AllChinaBuy Spreadsheet", url: "https://allchinabuys.store", description: "An independent product-record and shopping research resource." }) }} />
+        <LanguageProvider><AnalyticsEvents />{children}</LanguageProvider>
       </body>
     </html>
   );
