@@ -6,6 +6,19 @@ import { getSeoArticle, seoArticles } from "@/lib/seo-articles";
 
 const siteUrl = "https://allchinabuys.store";
 
+const relatedSlugs: Record<string, string[]> = {
+  "allchinabuy-shipping-to-usa-customs-delivery-planning": ["acbuy-shipping-time-order-warehouse-delivery", "cheapest-acbuy-shipping-consolidation-packaging", "allchinabuy-parcel-tracking-status-delays"],
+  "allchinabuy-shipping-to-uk-vat-parcel-planning": ["allchinabuy-fees-payment-currency-shipping-charges", "allchinabuy-parcel-tracking-status-delays", "cheapest-acbuy-shipping-consolidation-packaging"],
+  "allchinabuy-shipping-to-canada-duties-delivery": ["allchinabuy-parcel-tracking-status-delays", "allchinabuy-fees-payment-currency-shipping-charges", "cheapest-acbuy-shipping-consolidation-packaging"],
+  "acbuy-shipping-time-order-warehouse-delivery": ["allchinabuy-parcel-tracking-status-delays", "allchinabuy-warehouse-storage-consolidation-qc", "cheapest-acbuy-shipping-consolidation-packaging"],
+  "cheapest-acbuy-shipping-consolidation-packaging": ["allchinabuy-fees-payment-currency-shipping-charges", "allchinabuy-warehouse-storage-consolidation-qc", "acbuy-shipping-time-order-warehouse-delivery"],
+  "allchinabuy-parcel-tracking-status-delays": ["acbuy-shipping-time-order-warehouse-delivery", "allchinabuy-shipping-to-usa-customs-delivery-planning", "allchinabuy-shipping-to-uk-vat-parcel-planning"],
+  "allchinabuy-fees-payment-currency-shipping-charges": ["cheapest-acbuy-shipping-consolidation-packaging", "allchinabuy-warehouse-storage-consolidation-qc", "allchinabuy-returns-refunds-before-shipping"],
+  "allchinabuy-warehouse-storage-consolidation-qc": ["allchinabuy-returns-refunds-before-shipping", "cheapest-acbuy-shipping-consolidation-packaging", "what-is-acbuy-allchinabuy-shopping-workflow"],
+  "allchinabuy-returns-refunds-before-shipping": ["allchinabuy-warehouse-storage-consolidation-qc", "allchinabuy-fees-payment-currency-shipping-charges", "what-is-acbuy-allchinabuy-shopping-workflow"],
+  "what-is-acbuy-allchinabuy-shopping-workflow": ["allchinabuy-warehouse-storage-consolidation-qc", "allchinabuy-fees-payment-currency-shipping-charges", "allchinabuy-parcel-tracking-status-delays"],
+};
+
 export function generateStaticParams() {
   return seoArticles.map(({ slug }) => ({ slug }));
 }
@@ -33,6 +46,11 @@ export default async function SeoArticlePage({ params }: { params: Promise<{ slu
   const { slug } = await params;
   const article = getSeoArticle(slug);
   if (!article) notFound();
+  const relatedArticles = (relatedSlugs[slug] ?? [
+    "what-is-acbuy-allchinabuy-shopping-workflow",
+    "allchinabuy-warehouse-storage-consolidation-qc",
+    "acbuy-shipping-time-order-warehouse-delivery",
+  ]).map(getSeoArticle).filter((item) => item !== undefined);
 
   const articleUrl = `${siteUrl}/articles/${article.slug}`;
   const structuredData = [
@@ -94,6 +112,13 @@ export default async function SeoArticlePage({ params }: { params: Promise<{ slu
               <Link className="button button-outline" href="/guides/qc-checks">Use the QC checklist</Link>
               <a className="button button-outline" href="https://www.cnfanssp.com/AllProducts/" target="_blank" rel="noopener noreferrer">Open live catalog</a>
             </div>
+            <nav className="side-card" aria-label="Related articles">
+              <p className="eyebrow">Related reading</p>
+              <h3>Continue this workflow.</h3>
+              {relatedArticles.map((related) => (
+                <Link className="button button-outline" href={`/articles/${related.slug}`} key={related.slug}>{related.title}</Link>
+              ))}
+            </nav>
           </aside>
         </div>
       </main>

@@ -1,3 +1,5 @@
+import { operationsSeoArticles } from "./seo-articles-operations";
+
 export type ArticleSection = {
   heading: string;
   paragraphs: string[];
@@ -19,7 +21,7 @@ export type SeoArticle = {
   conclusion: string;
 };
 
-export const seoArticles: SeoArticle[] = [
+const spreadsheetSeoArticles: SeoArticle[] = [
   {
     slug: "acbuy-shoes-spreadsheet-sizing-qc-photos",
     title: "ACBuy Shoes Spreadsheet: Sizing, Finds and QC Photos",
@@ -828,6 +830,8 @@ export const seoArticles: SeoArticle[] = [
     conclusion: "Searching an ACBuy spreadsheet works best as a staged verification process. Names describe, images suggest and product IDs identify, but the exact source and selected option complete the match. Preserve dead-link history, separate replacement candidates and measure which searches lead to useful records. The result is a product index that can be maintained rather than a one-time list of links.",
   },
 ];
+
+export const seoArticles: SeoArticle[] = [...spreadsheetSeoArticles, ...operationsSeoArticles];
 
 export function getSeoArticle(slug: string) {
   return seoArticles.find((article) => article.slug === slug);

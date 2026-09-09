@@ -5,25 +5,43 @@ import { guides } from "@/lib/data";
 import { seoArticles } from "@/lib/seo-articles";
 
 export const metadata: Metadata = {
-  title: { absolute: "ACBuy Spreadsheet Articles and Product Research Guides" },
-  description: "Read practical ACBuy spreadsheet articles covering shoe and clothing finds, QC photos, product IDs, listing comparison and safer catalog research.",
+  title: { absolute: "AllChinaBuy Guides: Shipping, QC, Fees & Warehouse" },
+  description: "Independent AllChinaBuy and ACBuy guides for shipping, warehouse checks, fees, tracking, returns, country delivery planning and spreadsheet research.",
   alternates: { canonical: "/articles" },
 };
 
 export default function ArticlesPage() {
+  const collectionSchema = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: "AllChinaBuy Guides: Shipping, QC, Fees & Warehouse",
+    url: "https://allchinabuys.store/articles",
+    mainEntity: {
+      "@type": "ItemList",
+      numberOfItems: seoArticles.length,
+      itemListElement: seoArticles.map((article, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        name: article.title,
+        url: `https://allchinabuys.store/articles/${article.slug}`,
+      })),
+    },
+  };
+
   return (
     <PageShell>
       <main>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionSchema) }} />
         <header className="page-hero">
           <div className="section-shell">
             <div className="breadcrumbs"><Link href="/">Home</Link> / Articles</div>
-            <p className="eyebrow">Independent ACBuy research desk</p>
-            <h1>ACBuy Spreadsheet Articles and Product Research Guides</h1>
-            <p className="lede">Use these source-first guides to compare AllChinaBuy finds, preserve exact product IDs, interpret warehouse QC photos and reach the live catalog with a clearer decision.</p>
+            <p className="eyebrow">Independent AllChinaBuy research desk</p>
+            <h1>AllChinaBuy Shipping, Warehouse and Product Research Guides</h1>
+            <p className="lede">Plan an ACBuy order from product research through warehouse checks, parcel submission, tracking and country-specific delivery—with live prices and policies always verified before payment.</p>
           </div>
         </header>
         <section className="section-shell section-block">
-          <div className="section-heading"><div><p className="eyebrow">New keyword-led library</p><h2>Ten focused guides for real search tasks.</h2></div><p>These pages target the strongest missing cluster: ACBuy spreadsheet, category finds, QC evidence, W2C links, product IDs, comparison and search. Each page has one primary intent so the articles support rather than compete with the spreadsheet and product index.</p></div>
+          <div className="section-heading"><div><p className="eyebrow">Keyword-led library</p><h2>{seoArticles.length} focused guides for real search tasks.</h2></div><p>The library now covers two distinct needs: spreadsheet and product research, plus the missing high-intent topics around shipping time, costs, tracking, fees, warehouse handling, returns and delivery to the USA, UK and Canada.</p></div>
           <div className="article-directory">
             {seoArticles.map((article, index) => (
               <article className="article-directory-card" key={article.slug}>
