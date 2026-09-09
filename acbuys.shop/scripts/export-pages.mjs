@@ -14,6 +14,15 @@ const routes = [
   "/articles/acbuy-qc-photos-guide/",
   "/articles/acbuy-shipping-cost-guide/",
   "/articles/acbuy-spreadsheet-guide/",
+  "/articles/is-acbuy-legit-review/",
+  "/articles/acbuy-fees-explained/",
+  "/articles/acbuy-warehouse-storage-consolidation/",
+  "/articles/acbuy-coupons-shipping-discounts/",
+  "/articles/acbuy-shipping-to-usa/",
+  "/articles/acbuy-shipping-to-uk/",
+  "/articles/acbuy-returns-refunds-after-sales/",
+  "/articles/acbuy-shoe-qc-photos/",
+  "/articles/acbuy-actual-vs-volumetric-weight/",
   "/faq/",
   "/guide/",
   "/qc-guide/",
@@ -54,7 +63,7 @@ for (const route of routes) {
 
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${routes.map((route) => `  <url><loc>${origin}${route}</loc><lastmod>2026-08-26</lastmod></url>`).join("\n")}
+${routes.map((route) => `  <url><loc>${origin}${route}</loc><lastmod>${route.startsWith("/articles/") || route === "/" ? "2026-09-09" : "2026-08-26"}</lastmod></url>`).join("\n")}
 </urlset>
 `;
 

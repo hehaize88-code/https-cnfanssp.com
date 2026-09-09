@@ -43,6 +43,7 @@ export default function CatalogHome() {
   function searchMain(event: FormEvent) {
     event.preventDefault();
     const term = query.trim();
+    window.gtag?.("event", "catalog_search", { search_term: term || "all products" });
     const base = term ? `https://www.cnfanssp.com/index.php?m=home&c=Search&a=lists&keywords=${encodeURIComponent(term)}` : "https://www.cnfanssp.com/AllProducts/";
     window.open(base, "_blank", "noopener");
   }
@@ -58,9 +59,9 @@ export default function CatalogHome() {
 
       <section className="hero" id="top">
         <div>
-          <span className="eyebrow">The cleaner way to browse ACBuy finds</span>
-          <h1>Find it. <em>Check it.</em><br />Shop smarter.</h1>
-          <p>A focused product index with clear USD prices, QC counts, categories, and direct detail links—without spreadsheet clutter.</p>
+          <span className="eyebrow">Updated product research for 2026</span>
+          <h1>ACBuy <em>Spreadsheet</em><br />Finds for 2026.</h1>
+          <p>Browse organized ACBuy finds with clear USD prices and direct product records, then use practical QC, fee, warehouse and shipping guides before ordering.</p>
           <form className="search" onSubmit={searchMain}>
             <span>⌕</span><input value={query} onChange={(e) => setQuery(e.target.value)} aria-label="Search products" placeholder="Search sneakers, hoodies, bags…" /><button type="submit">Search full catalog</button>
           </form>
@@ -68,15 +69,25 @@ export default function CatalogHome() {
         </div>
         <div className="hero-image">
           <img src="/catalog-visual.png" alt="Unbranded sneakers, hoodie, tote and jersey arranged for a product catalog" width="1199" height="750" />
-          <span className="checked"><i /> Links checked August 26, 2026</span>
+          <span className="checked"><i /> Editorial update September 9, 2026</span>
           <span className="qc-count"><b>6</b> QC views</span>
+        </div>
+      </section>
+
+      <section className="guide home-research" id="research">
+        <div className="section-title"><div><span className="eyebrow">Most useful next reads</span><h2>Research the cost before the checkout.</h2></div><p>Use focused guides for the questions that can change the real parcel decision: fees, legitimacy, storage, shipping weight and after-sales.</p></div>
+        <div className="steps research-links">
+          <article><span>01</span><h3>ACBuy Spreadsheet 2026</h3><p>Build a verified product trail from find to warehouse.</p><a href="/articles/acbuy-spreadsheet-guide/">Read the guide ↗</a></article>
+          <article><span>02</span><h3>Is ACBuy legit?</h3><p>Evaluate the agent model with evidence and realistic limits.</p><a href="/articles/is-acbuy-legit-review/">Read the review ↗</a></article>
+          <article><span>03</span><h3>ACBuy fees</h3><p>Separate product, payment, service and shipping costs.</p><a href="/articles/acbuy-fees-explained/">See every cost ↗</a></article>
+          <article><span>04</span><h3>Volumetric weight</h3><p>Understand why parcel size can matter more than scale weight.</p><a href="/articles/acbuy-actual-vs-volumetric-weight/">Plan the parcel ↗</a></article>
         </div>
       </section>
 
       <section className="catalog" id="finds">
         <div className="section-title"><div><span className="eyebrow">Freshly checked</span><h2>Popular finds, minus the guesswork.</h2></div><p>Preview listings use public product records and the current first image from each linked product page. Verify the exact item details on the destination page.</p></div>
         <div className="toolbar">
-          <div className="filters">{categories.map((c) => <button key={c} className={category === c ? "active" : ""} onClick={() => setCategory(c)}>{c}</button>)}</div>
+          <div className="filters">{categories.map((c) => <button key={c} className={category === c ? "active" : ""} onClick={() => { setCategory(c); window.gtag?.("event", "category_filter", { category: c }); }}>{c}</button>)}</div>
           <label>Sort <select value={sort} onChange={(e) => setSort(e.target.value)}><option value="featured">Featured</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option></select></label>
         </div>
         {visible.length ? <div className="product-grid">{visible.map((p, index) => (

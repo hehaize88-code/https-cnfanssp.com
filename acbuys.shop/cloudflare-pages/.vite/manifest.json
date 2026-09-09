@@ -10,8 +10,18 @@
     "file": "assets/rolldown-runtime-S-ySWqyJ.js",
     "name": "rolldown-runtime"
   },
+  "app/ui/AnalyticsEvents.tsx": {
+    "file": "assets/AnalyticsEvents-BG96d9BX.js",
+    "name": "AnalyticsEvents",
+    "src": "app/ui/AnalyticsEvents.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-S-ySWqyJ.js",
+      "_framework-DjPHiq1u.js"
+    ]
+  },
   "app/ui/CatalogHome.tsx": {
-    "file": "assets/CatalogHome-1isRlQem.js",
+    "file": "assets/CatalogHome-DG8S_CVr.js",
     "name": "CatalogHome",
     "src": "app/ui/CatalogHome.tsx",
     "isDynamicEntry": true,
@@ -22,7 +32,7 @@
     ]
   },
   "app/ui/LanguageProvider.tsx": {
-    "file": "assets/LanguageProvider-h4YasERl.js",
+    "file": "assets/LanguageProvider-VrNlqHEN.js",
     "name": "LanguageProvider",
     "src": "app/ui/LanguageProvider.tsx",
     "isDynamicEntry": true,
@@ -32,7 +42,7 @@
     ]
   },
   "node_modules/vinext/dist/shims/layout-segment-context.js": {
-    "file": "assets/layout-segment-context-BqByRtfM.js",
+    "file": "assets/layout-segment-context-D8ZzhRFu.js",
     "name": "layout-segment-context",
     "src": "node_modules/vinext/dist/shims/layout-segment-context.js",
     "isDynamicEntry": true,
@@ -43,7 +53,7 @@
     ]
   },
   "virtual:vinext-app-browser-entry": {
-    "file": "assets/index-D1N18bOf.js",
+    "file": "assets/index-DrmZmQTx.js",
     "name": "index",
     "src": "virtual:vinext-app-browser-entry",
     "isEntry": true,
@@ -55,6 +65,7 @@
       "node_modules/vinext/dist/shims/layout-segment-context.js",
       "virtual:vinext-app-browser-entry",
       "app/ui/LanguageProvider.tsx",
+      "app/ui/AnalyticsEvents.tsx",
       "app/ui/CatalogHome.tsx"
     ]
   }

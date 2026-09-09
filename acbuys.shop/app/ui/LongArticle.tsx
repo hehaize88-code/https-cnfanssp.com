@@ -60,10 +60,6 @@ export default function LongArticle({ article, related }: { article: ArticleReco
                 {section.callout && <div className="article-callout"><b>{section.callout.title}</b><p>{section.callout.text}</p></div>}
               </section>
             ))}
-            <section className="article-faq">
-              <span className="section-number">FAQ</span><h2>Questions readers usually ask</h2>
-              {article.faq.map((item) => <details key={item.question}><summary>{item.question}</summary><p>{item.answer}</p></details>)}
-            </section>
             <div className="source-box"><b>Sources and verification</b><p>Platform-specific statements were checked on ACBuy’s official homepage, shopping flow and product-order interface on {article.updatedLabel}. Policies, routes, prices and availability can change, so live account information takes priority.</p></div>
           </div>
         </div>

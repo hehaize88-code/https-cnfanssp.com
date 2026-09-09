@@ -25,20 +25,20 @@ export type ArticleRecord = {
   faq: { question: string; answer: string }[];
 };
 
-export const articles: ArticleRecord[] = [
+const coreArticles: ArticleRecord[] = [
   {
     slug: "acbuy-spreadsheet-guide",
-    shortTitle: "How to Use an ACBuy Spreadsheet",
-    title: "How to Use an ACBuy Spreadsheet Without Losing the Product Trail",
-    seoTitle: "How to Use an ACBuy Spreadsheet: Practical 2026 Guide",
-    description: "A practical ACBuy spreadsheet guide for checking source records, variants, domestic delivery, warehouse QC, storage and parcel planning before ordering.",
+    shortTitle: "ACBuy Spreadsheet 2026",
+    title: "ACBuy Spreadsheet 2026: Updated Finds, QC Photos and Prices",
+    seoTitle: "ACBuy Spreadsheet 2026: Updated Finds, QC & Prices",
+    description: "Use the updated ACBuy spreadsheet for 2026 to check finds, product links, prices, variants, warehouse QC photos and parcel costs before ordering.",
     category: "Product discovery",
     primaryKeyword: "ACBuy spreadsheet",
-    secondaryKeywords: ["how to use ACBuy", "ACBuy finds", "ACBuy product links", "ACBuy shopping guide"],
-    dek: "A spreadsheet is useful only when it connects a search idea to a current product record, a correctly submitted order and evidence from the warehouse. This guide explains that complete trail.",
+    secondaryKeywords: ["ACBuy spreadsheet 2026", "AC Buy spreadsheet", "ACBuy spreadsheets", "best ACBuy spreadsheet", "ACBuy finds", "ACBuy product links"],
+    dek: "An updated ACBuy spreadsheet is useful only when it connects a 2026 product search to a current record, correct variant, USD price context and warehouse QC evidence. This guide explains the complete trail.",
     published: "2026-08-26",
-    updated: "2026-08-26",
-    updatedLabel: "August 26, 2026",
+    updated: "2026-09-09",
+    updatedLabel: "September 9, 2026",
     readingTime: 9,
     researchNote: "This guide was checked against ACBuy’s current official homepage, shopping flow and product-order interface. The official flow describes link submission, domestic delivery to a designated warehouse, warehouse inspection, storage, parcel submission and international shipping. Variable prices, stock, seller terms and routes are deliberately not presented as fixed facts.",
     visual: { kind: "flow", items: ["Find a current record", "Verify the exact variant", "Submit the source link", "Review warehouse evidence", "Plan one parcel"], caption: "The spreadsheet is the starting index, not the final source of truth." },
@@ -387,8 +387,11 @@ export const articles: ArticleRecord[] = [
   }
 ];
 
+export const articles: ArticleRecord[] = [coreArticles[0], ...growthArticles, ...coreArticles.slice(1)];
+
 export function getArticle(slug: string) {
   const article = articles.find((item) => item.slug === slug);
   if (!article) throw new Error(`Unknown article: ${slug}`);
   return article;
 }
+import { growthArticles } from "./growth-articles";
