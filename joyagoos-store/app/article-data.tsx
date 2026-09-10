@@ -1,9 +1,11 @@
 import { Footer, Header, MAIN } from "./site-data";
 import { germanyDestinationArticleByLanguage, germanyDestinationArticleSlug } from "./seo-article-germany";
+import { polandDestinationArticleByLanguage, polandDestinationArticleSlug } from "./seo-article-poland";
 
 type Source = { title:string; href:string };
 
 export const articles = {
+  [polandDestinationArticleSlug]: polandDestinationArticleByLanguage.en,
   [germanyDestinationArticleSlug]: germanyDestinationArticleByLanguage.en,
   "joyagoo-how-to-buy-guide": {
     title:"How to Buy on Joyagoo in 2026: Product Link, QC, Warehouse and Shipping",
@@ -98,6 +100,7 @@ export const articles = {
 export type ArticleSlug = keyof typeof articles;
 
 export const articlePublishedDates: Record<ArticleSlug, string> = {
+  [polandDestinationArticleSlug]: "2026-09-10",
   [germanyDestinationArticleSlug]: "2026-09-08",
   "joyagoo-how-to-buy-guide": "2026-08-29",
   "joyagoo-qc-photo-checklist": "2026-08-29",

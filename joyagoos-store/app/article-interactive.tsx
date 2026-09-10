@@ -9,6 +9,7 @@ import { useLanguage } from "./use-language";
 import { articleTranslations } from "./article-translations";
 import { buyerFacingText, getArticleCopy } from "./article-content";
 import { germanyDestinationArticleSlug } from "./seo-article-germany";
+import { polandDestinationArticleSlug } from "./seo-article-poland";
 import { localizedPath, SITE_NAME, SITE_URL, SOCIAL_IMAGE } from "./seo";
 
 const articleUi: Record<SiteLanguage, { kicker:string; updated:string; guide:string; sources:string; end:string; browse:string }> = {
@@ -25,10 +26,10 @@ const articleUi: Record<SiteLanguage, { kicker:string; updated:string; guide:str
 };
 
 export function ArticleInteractive({ slug, language = "en", prefix = "" }: { slug: ArticleSlug; language?: SiteLanguage; prefix?: string }) {
-  const isGermanyDestinationArticle = slug === germanyDestinationArticleSlug;
-  const { language:activeLanguage, setLanguage } = useLanguage(language, !isGermanyDestinationArticle);
+  const isLocalizedDestinationArticle = slug === germanyDestinationArticleSlug || slug === polandDestinationArticleSlug;
+  const { language:activeLanguage, setLanguage } = useLanguage(language, !isLocalizedDestinationArticle);
   const changeLanguage = (next: SiteLanguage) => {
-    if (isGermanyDestinationArticle) {
+    if (isLocalizedDestinationArticle) {
       window.location.assign(localizedPath(`/articles/${slug}`, next));
       return;
     }
