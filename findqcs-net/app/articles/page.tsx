@@ -1,14 +1,15 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { EditorialPage } from "../components/EditorialPage";
+import { priorityArticles } from "./priorityArticles";
 
 export const metadata: Metadata = {
-  title: "QC SEO Articles & Product Research | FindQCs",
-  description: "Browse practical QC photo, warehouse lighting and product measurement articles with independent product research guidance.",
+  title: "QC Photo Guides & Product Inspection Articles | FindQCs",
+  description: "Browse practical QC photo guides for angles, lighting, measurements, stitching, alignment, symmetry, print, embroidery and material evidence.",
   alternates: { canonical: "/articles/" },
 };
 
-const articles = [
+const existingArticles = [
   ["QC SEARCH GUIDE", "How to Find QC Photos by Product Link or Keyword", "Start with an exact product link, widen to keyword or image search, and verify whether each result really matches the current listing.", "/guides/warehouse-lighting/", "10 min"],
   ["QC PHOTO GUIDE", "How to Read QC Photos Before You Buy", "A repeatable inspection process for matching the listing, checking shape and stitching, reading measurements and spotting visible defects.", "/guides/qc-photo-checklist/", "12 min"],
   ["SIZE RESEARCH", "QC Photo Size Guide: Clothing and Shoe Measurements", "Compare actual garment and footwear measurements with an item you already own instead of relying on translated size labels.", "/guides/size-and-measurements/", "11 min"],
@@ -18,9 +19,14 @@ const articles = [
   ["EVIDENCE FRESHNESS", "Record Source Date, QC Record Date and Evidence Freshness", "Separate listing capture, inspection, access and review dates without inventing a universal expiry rule.", "/articles/qc-evidence-freshness-source-record-review-dates/", "11 min"],
 ];
 
+const articles = [
+  ...priorityArticles.map((article) => [article.label, article.title, article.description, `/articles/${article.slug}/`, article.readTime]),
+  ...existingArticles,
+];
+
 export default function Articles() {
-  const schema = { "@context":"https://schema.org", "@type":"ItemList", name:"FindQCs SEO Articles", itemListElement:articles.map(([,title,,href],index)=>({"@type":"ListItem",position:index+1,name:title,url:`https://findqcs.net${href}`})) };
-  return <EditorialPage eyebrow="SEO ARTICLES / RESEARCH" title="Practical articles for better QC decisions." intro="Independent, focused explanations for reading product photos, understanding measurements and avoiding conclusions that the evidence cannot support." breadcrumbs={[["Articles","/articles/"]]}>
+  const schema = { "@context":"https://schema.org", "@type":"ItemList", name:"FindQCs QC Photo Guides", itemListElement:articles.map(([,title,,href],index)=>({"@type":"ListItem",position:index+1,name:title,url:`https://findqcs.net${href}`})) };
+  return <EditorialPage eyebrow="QC ARTICLES / RESEARCH" title="Practical QC photo guides for better decisions." intro="Use focused methods for checking photo angles, lighting, measurements, stitching, alignment, print details and material evidence without claiming more than the images can prove." breadcrumbs={[["Articles","/articles/"]]}>
     <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(schema)}} />
     <div className="guide-index">{articles.map(([tag,title,desc,href,time],i)=><Link href={href} className="guide-index-card" key={href}><span>{String(i+1).padStart(2,"0")}</span><div><p>{tag}</p><h2>{title}</h2><div>{desc}</div></div><aside>{time}<b>↗</b></aside></Link>)}</div>
     <div className="notice"><strong>Research standard</strong><p>Each article separates visible evidence from assumptions. Product photos can support comparison and defect checks, but they cannot certify authenticity, internal construction or long-term durability.</p></div>

@@ -25,15 +25,8 @@ export default function MapListingIdentityToQcRecord() {
     mainEntityOfPage: { "@type": "WebPage", "@id": "https://findqcs.net/articles/map-listing-identity-to-qc-record/" },
     keywords: "map listing identity to QC record, QC record identity match, product inspection identity log, listing to QC evidence mapping",
   };
-  const breadcrumbSchema = { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "https://findqcs.net/" },
-    { "@type": "ListItem", position: 2, name: "Articles", item: "https://findqcs.net/articles/" },
-    { "@type": "ListItem", position: 3, name: "Map Listing Identity to QC Record", item: "https://findqcs.net/articles/map-listing-identity-to-qc-record/" },
-  ] };
-
   return <EditorialPage eyebrow="QC EVIDENCE IDENTITY / 12 MIN READ" title="Map listing identity to the QC record before comparing evidence." intro="A useful QC comparison begins with a boring question: do the listing and the inspection record describe the same target? This method preserves the fields needed to answer it and stops visual similarity from becoming false proof." breadcrumbs={[["Articles", "/articles/"], ["Listing Identity Mapping", canonical]]}>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
-    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
     <div className="article-layout"><aside className="toc"><strong>ON THIS PAGE</strong><a href="#target">1. Define the target</a><a href="#sources">2. Capture both sources</a><a href="#fields">3. Compare identity fields</a><a href="#states">4. Assign a match state</a><a href="#changes">5. Handle changes</a><a href="#transfer">6. Control evidence transfer</a><a href="#audit">7. Final audit</a></aside>
       <div className="prose">
         <p className="lead">A convincing inspection image can still be evidence for the wrong item, option, seller or period. Identity mapping is the step that connects a current listing target with a historical or warehouse QC record before any measurement, defect or finish observation is transferred.</p>

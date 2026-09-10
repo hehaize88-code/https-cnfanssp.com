@@ -3,11 +3,12 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://findqcs.net"),
-  title: "FindQCs – Independent QC Photo Guide & Product Research",
-  description: "Search product listings, browse categories and use independent QC photo guides to inspect visible details before you decide.",
+  title: "QC Finder & QC Photo Guide for Product Research | FindQCs",
+  description: "Use an independent QC finder workflow to find product listings, review QC photos, compare measurements and inspect visible product details before you decide.",
+  keywords: ["QC finder", "find QC photos", "QC photo guide", "product QC photos", "QC photo checklist"],
   alternates: { canonical: "/" },
-  openGraph: { title: "FindQCs – Independent QC Photo Guide", description: "Independent product research and practical QC photo guidance.", type: "website", url: "/", images: ["/og.png"] },
-  twitter: { card: "summary_large_image", title: "FindQCs – Independent QC Photo Guide", description: "Independent product research and practical QC photo guidance.", images: ["/og.png"] },
+  openGraph: { title: "QC Finder & QC Photo Guide | FindQCs", description: "Find product listings and use practical QC photo guides to inspect visible details.", type: "website", url: "/", images: ["/og.png"] },
+  twitter: { card: "summary_large_image", title: "QC Finder & QC Photo Guide | FindQCs", description: "Find product listings and use practical QC photo guides to inspect visible details.", images: ["/og.png"] },
   icons: { icon: "/findqc-logo.png", shortcut: "/findqc-logo.png" },
 };
 

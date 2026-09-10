@@ -25,19 +25,12 @@ export default function RecordVariantColorSizeQuantity() {
     mainEntityOfPage: { "@type": "WebPage", "@id": "https://findqcs.net/articles/record-variant-color-size-quantity-before-comparison/" },
     keywords: "QC variant record, product inspection variant log, record color size quantity QC, QC option comparison",
   };
-  const breadcrumbSchema = { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "https://findqcs.net/" },
-    { "@type": "ListItem", position: 2, name: "Articles", item: "https://findqcs.net/articles/" },
-    { "@type": "ListItem", position: 3, name: "QC Variant Record", item: "https://findqcs.net/articles/record-variant-color-size-quantity-before-comparison/" },
-  ] };
-
   return <EditorialPage eyebrow="QC VARIANT RECORD / 11 MIN READ" title="Record variant, color, size and quantity before QC comparison." intro="A QC record becomes auditable only when another reviewer can tell exactly which option the evidence describes. Freeze the variant fields first; compare photographs, measurements and defects second." breadcrumbs={[["Articles", "/articles/"], ["QC Variant Record", canonical]]}>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
-    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
     <div className="article-layout"><aside className="toc"><strong>ON THIS PAGE</strong><a href="#why">1. Why option identity fails</a><a href="#schema">2. Build the record</a><a href="#normalize">3. Preserve and normalize</a><a href="#quantity">4. Quantity and bundles</a><a href="#evidence">5. Link evidence</a><a href="#conflicts">6. Resolve conflicts</a><a href="#comparison">7. Compare safely</a><a href="#audit">8. Final audit</a></aside>
       <div className="prose">
         <p className="lead">Two QC sets can show the same product name and still describe different evidence targets. One may be black in size M; another may be charcoal in size L. A third may be a two-piece bundle whose thumbnail shows only the main item. If those option fields are not recorded before comparison, precise-looking observations can be attached to the wrong target.</p>
-        <p>This QC variant record is designed for already-found listings and inspection material. FindQC can help surface product and QC research, but it does not place the order, operate the warehouse, select a variant or execute a return. The buyer-selected agent handles those transaction steps. The record here makes the buyer's intended option and the evidence option explicit before any handoff.</p>
+        <p>This QC variant record is designed for already-found listings and inspection material. FindQC can help surface product and QC research, but it does not place the order, operate the warehouse, select a variant or execute a return. The buyer-selected agent handles those transaction steps. The record here makes the buyer&apos;s intended option and the evidence option explicit before any handoff.</p>
 
         <h2 id="why">1. Treat option identity as a separate evidence problem</h2>
         <p>A listing identity answers “which commercial page?” Variant identity answers “which exact selection on that page?” A matching item ID does not settle color, labelled size, quantity, version, bundle or custom text. Conversely, translated option names can differ while still referring to the same source choice. The method therefore stores both the original value and the reviewer’s normalized interpretation.</p>

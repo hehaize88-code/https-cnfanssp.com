@@ -1,12 +1,13 @@
 "use client";
 
 import { FormEvent, useState } from "react";
+import Link from "next/link";
 import { changeLanguage, type Lang, useLanguage } from "./components/language";
 
 const copy = {
   en: {
     nav: ["Search", "Categories", "QC Guide", "FAQ"], eyebrow: "Independent product research workspace",
-    titleA: "Find the listing.", titleB: "Inspect the details.", intro: "Search products, open the source listing, and use a repeatable QC checklist before you decide.",
+    titleA: "Find the listing.", titleB: "Inspect QC photos.", intro: "Use a focused QC finder workflow: search products, confirm the source listing, and review visible details with a repeatable photo checklist.",
     link: "Product link", keyword: "Keyword", placeholder: "Paste a product link or search shoes, jersey, hoodie…", search: "Search now", helper: "Search opens the matching product results in a new tab.",
     updated: "Research-first", free: "Free to browse", sources: "10 categories", catTitle: "Browse by category", catSub: "Go straight to the matching product collection.",
     freshTitle: "Fresh listings to inspect", freshSub: "Current product pages from the connected catalogue. Listing images are references—not QC approval.", open: "Open listing", listing: "Listing preview",
@@ -83,7 +84,7 @@ const categoryText: Record<Lang, readonly (readonly [string, string])[]> = {
   it: [["Scarpe","Forma e cuciture"],["Felpe","Stampa, tessuto e taglia"],["T-shirt","Posizione stampa e cuciture"],["Giacche","Pannelli, finiture e imbottitura"],["Pantaloni","Taglio, lunghezza e costruzione"],["Copricapi","Forma, patch e ricamo"],["Accessori","Finitura e dettagli"],["Maglie","Stemmi, stampa e allineamento"]],
 };
 
-const articleLabel: Record<Lang, string> = { en:"SEO Articles", de:"SEO-Artikel", fr:"Articles SEO", es:"Artículos SEO", it:"Articoli SEO" };
+const articleLabel: Record<Lang, string> = { en:"QC Articles", de:"QC-Artikel", fr:"Articles QC", es:"Artículos QC", it:"Articoli QC" };
 const footerLabels: Record<Lang, readonly [string,string]> = {en:["Privacy","Disclaimer"],de:["Datenschutz","Hinweise"],fr:["Confidentialité","Avertissement"],es:["Privacidad","Aviso"],it:["Privacy","Avvertenze"]};
 const popularTerms: Record<Lang, readonly string[]> = {en:["sneakers","jersey","hoodie","jacket"],de:["Sneaker","Trikot","Hoodie","Jacke"],fr:["baskets","maillot","hoodie","veste"],es:["zapatillas","camiseta","sudadera","chaqueta"],it:["sneaker","maglia","felpa","giacca"]};
 
@@ -104,9 +105,9 @@ export default function Home() {
   const x = extra[lang];
 
   function changeLang(next: Lang) { changeLanguage(next); }
-  function submit(e: FormEvent) { e.preventDefault(); const value = query.trim(); const target = value ? `https://www.cnfanssp.com/search.html?keywords=${encodeURIComponent(value)}&channelid=2` : "https://www.cnfanssp.com/AllProducts/"; window.open(target, "_blank", "noopener,noreferrer"); }
+  function submit(e: FormEvent) { e.preventDefault(); const value = query.trim(); const target = value ? `https://cnfanssp.com/search.html?keywords=${encodeURIComponent(value)}&channelid=2` : "https://cnfanssp.com/AllProducts/"; window.open(target, "_blank", "noopener,noreferrer"); }
 
-  const websiteSchema = { "@context":"https://schema.org", "@type":"WebSite", "@id":"https://findqcs.net/#website", url:"https://findqcs.net/", name:"FindQCs", description:"Independent QC photo guidance and product research." };
+  const websiteSchema = { "@context":"https://schema.org", "@type":"WebSite", "@id":"https://findqcs.net/#website", url:"https://findqcs.net/", name:"FindQCs", description:"An independent QC finder and QC photo guide for product research, measurements and visible-detail inspection." };
   const organizationSchema = { "@context":"https://schema.org", "@type":"Organization", "@id":"https://findqcs.net/#organization", url:"https://findqcs.net/", name:"FindQCs", logo:{"@type":"ImageObject",url:"https://findqcs.net/findqc-logo.png",width:128,height:128} };
 
   return (
@@ -115,8 +116,8 @@ export default function Home() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(organizationSchema)}} />
       <header className="workbench-header frame">
         <a className="workbench-brand brand-icon-only" href="#top" aria-label="FindQCs home"><img src="/findqc-logo.png" alt="FindQCs" width="128" height="128"/></a>
-        <nav aria-label="Primary navigation"><a href="#finder">{t.nav[0]}</a><a href="/categories/">{t.nav[1]}</a><a href="/articles/">{articleLabel[lang]}</a><a href="/guides/qc-photo-checklist/">{t.nav[2]}</a><a href="/faq/">{t.nav[3]}</a></nav>
-        <details className="mobile-menu"><summary aria-label="Open navigation">{x.menu}</summary><div><a href="#finder">{t.nav[0]}</a><a href="/categories/">{t.nav[1]}</a><a href="/articles/">{articleLabel[lang]}</a><a href="/guides/qc-photo-checklist/">{t.nav[2]}</a><a href="/faq/">{t.nav[3]}</a></div></details>
+        <nav aria-label="Primary navigation"><a href="#finder">{t.nav[0]}</a><Link href="/categories/">{t.nav[1]}</Link><Link href="/articles/">{articleLabel[lang]}</Link><Link href="/guides/qc-photo-checklist/">{t.nav[2]}</Link><Link href="/faq/">{t.nav[3]}</Link></nav>
+        <details className="mobile-menu"><summary aria-label="Open navigation">{x.menu}</summary><div><a href="#finder">{t.nav[0]}</a><Link href="/categories/">{t.nav[1]}</Link><Link href="/articles/">{articleLabel[lang]}</Link><Link href="/guides/qc-photo-checklist/">{t.nav[2]}</Link><Link href="/faq/">{t.nav[3]}</Link></div></details>
         <label className="workbench-language"><span>LANG</span><select value={lang} onChange={(e) => changeLang(e.target.value as Lang)} aria-label="Language"><option value="en">English</option><option value="de">Deutsch</option><option value="fr">Français</option><option value="es">Español</option><option value="it">Italiano</option></select></label>
       </header>
 
@@ -129,30 +130,30 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="categories" className="category-filter frame"><span>{x.directory}</span><div>{categories.map(([, ,slug],index)=><a key={slug} href={`https://www.cnfanssp.com/${slug}/`} target="_blank" rel="noopener noreferrer"><i>0{index+1}</i>{categoryText[lang][index][0]}<b>↗</b></a>)}</div></section>
+      <section id="categories" className="category-filter frame"><span>{x.directory}</span><div>{categories.map(([, ,slug],index)=><a key={slug} href={`https://cnfanssp.com/${slug}/`} target="_blank" rel="noopener noreferrer"><i>0{index+1}</i>{categoryText[lang][index][0]}<b>↗</b></a>)}</div></section>
 
       <section className="catalog-frame frame">
         <aside className="qc-sidebar">
           <div className="sidebar-status"><span>● {x.connected}</span><b>{t.updated}</b><small>{t.free}</small></div>
           <div className="sidebar-title"><span>QC / 03</span><h2>{t.method}</h2><p>{t.methodSub}</p></div>
           <div className="sidebar-checks">{t.steps.map(([num,title,body])=><article key={num}><span>{num}</span><div><b>{title}</b><p>{body}</p></div></article>)}</div>
-          <a className="sidebar-cta" href="/guides/qc-photo-checklist/">{t.guideCta}<span>↗</span></a>
+          <Link className="sidebar-cta" href="/guides/qc-photo-checklist/">{t.guideCta}<span>↗</span></Link>
           <div className="sidebar-stats"><div><b>10</b><span>{t.sources}</span></div><div><b>05</b><span>{x.languages}</span></div><div><b>0</b><span>{x.account}</span></div></div>
         </aside>
 
         <div className="catalog-results">
           <div className="results-head"><div><span>06 · {x.current}</span><h2>{t.freshTitle}</h2><p>{t.freshSub}</p></div><strong>6 <small>{x.item}</small></strong></div>
-          <div className="work-product-grid">{products.map((product,index)=><a key={product.id} href={`https://www.cnfanssp.com/AllProducts/${product.id}.html`} target="_blank" rel="noopener noreferrer"><div className="work-photo"><img src={product.image} alt={`${product.name} ${t.listing}`} loading="lazy" decoding="async" width="800" height="800"/><span>0{index+1}</span><i>{x.inspect}</i></div><div className="work-product-meta"><span><small>ID · {product.id}</small><b>{product.name}</b></span><strong>{product.price}</strong></div><div className="work-product-action"><span>{x.productType}</span><b>{t.open} ↗</b></div></a>)}</div>
+          <div className="work-product-grid">{products.map((product,index)=><a key={product.id} href={`https://cnfanssp.com/AllProducts/${product.id}.html`} target="_blank" rel="noopener noreferrer"><div className="work-photo"><img src={product.image} alt={`${product.name} ${t.listing}`} loading="lazy" decoding="async" width="800" height="800"/><span>0{index+1}</span><i>{x.inspect}</i></div><div className="work-product-meta"><span><small>ID · {product.id}</small><b>{product.name}</b></span><strong>{product.price}</strong></div><div className="work-product-action"><span>{x.productType}</span><b>{t.open} ↗</b></div></a>)}</div>
         </div>
       </section>
 
       <section className="knowledge-zone">
-          <div className="frame knowledge-grid"><div className="knowledge-intro"><span>{articleLabel[lang]}</span><h2>{x.readingTitle}</h2><a href="/articles/">{x.read} ↗</a></div><a href="/guides/qc-photo-checklist/" className="knowledge-feature"><span>12 MIN</span><h3>{x.fullTitle}</h3><p>{x.fullDesc}</p><b>{x.open} ↗</b></a><div className="knowledge-stack"><a href="/guides/warehouse-lighting/"><span>10 MIN</span><b>{x.light}</b><i>↗</i></a><a href="/guides/size-and-measurements/"><span>11 MIN</span><b>{x.size}</b><i>↗</i></a><a href="/articles/record-variant-color-size-quantity-before-comparison/"><span>11 MIN</span><b>Record variant, color, size and quantity</b><i>↗</i></a><a href="/articles/qc-evidence-freshness-source-record-review-dates/"><span>11 MIN</span><b>Record source and review dates</b><i>↗</i></a></div></div>
+          <div className="frame knowledge-grid"><div className="knowledge-intro"><span>{articleLabel[lang]}</span><h2>{x.readingTitle}</h2><Link href="/articles/">{x.read} ↗</Link></div><Link href="/guides/qc-photo-checklist/" className="knowledge-feature"><span>12 MIN</span><h3>{x.fullTitle}</h3><p>{x.fullDesc}</p><b>{x.open} ↗</b></Link><div className="knowledge-stack"><Link href="/articles/qc-photo-angle-coverage-map/"><span>12 MIN</span><b>QC photo angle coverage map</b><i>↗</i></Link><Link href="/articles/qc-photo-lighting-color-difference/"><span>13 MIN</span><b>Lighting or product color difference?</b><i>↗</i></Link><Link href="/articles/qc-measurement-comparison-table/"><span>13 MIN</span><b>Build a QC measurement table</b><i>↗</i></Link><Link href="/articles/stitching-seam-qc-checklist/"><span>13 MIN</span><b>Stitching and seam QC checklist</b><i>↗</i></Link></div></div>
       </section>
 
-      <section id="faq" className="work-faq frame"><div className="work-faq-intro"><span>FAQ / 04</span><h2>{t.faqTitle}</h2><p>{t.faqSub}</p><a href="/faq/">{x.all} ↗</a></div><div className="work-faq-list">{t.faqs.map(([q,a],i)=><details key={q} open={i===0}><summary><span>0{i+1}</span>{q}<b>+</b></summary><p>{a}</p></details>)}</div></section>
+      <section id="faq" className="work-faq frame"><div className="work-faq-intro"><span>FAQ / 04</span><h2>{t.faqTitle}</h2><p>{t.faqSub}</p><Link href="/faq/">{x.all} ↗</Link></div><div className="work-faq-list">{t.faqs.map(([q,a],i)=><details key={q} open={i===0}><summary><span>0{i+1}</span>{q}<b>+</b></summary><p>{a}</p></details>)}</div></section>
 
-      <footer className="workbench-footer frame"><a className="workbench-brand" href="#top"><img src="/findqc-logo.png" alt="" width="128" height="128"/><span><b>FindQCs</b><small>{t.footer}</small></span></a><nav><a href="/articles/">{articleLabel[lang]}</a><a href="/privacy/">{footerLabels[lang][0]}</a><a href="/disclaimer/">{footerLabels[lang][1]}</a></nav></footer>
+      <footer className="workbench-footer frame"><a className="workbench-brand" href="#top"><img src="/findqc-logo.png" alt="FindQCs" width="128" height="128"/><span><b>FindQCs</b><small>{t.footer}</small></span></a><nav><Link href="/articles/">{articleLabel[lang]}</Link><Link href="/privacy/">{footerLabels[lang][0]}</Link><Link href="/disclaimer/">{footerLabels[lang][1]}</Link></nav></footer>
     </main>
   );
 }

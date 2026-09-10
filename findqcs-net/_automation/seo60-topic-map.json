@@ -1,8 +1,13 @@
 {
-  "lastUpdated": "2026-09-01",
+  "lastUpdated": "2026-09-10",
   "latestPublishedCommit": "5e9fd5216e988f471fd024365174e0d7e544304d",
   "site": "findqcs.net",
   "track": "QED",
+  "automaticPublishing": {
+    "enabled": false,
+    "pausedAt": "2026-09-10",
+    "scope": "findqcs.net only"
+  },
   "articles": [
     {
       "cycle": "C01",
