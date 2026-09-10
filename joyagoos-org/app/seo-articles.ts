@@ -2,9 +2,11 @@ import {returnMatrixArticle} from "./seo-article-return-matrix";
 import {returnClockArticle} from "./seo-article-return-clock";
 import {storagePolicyArticle} from "./seo-article-storage-policy";
 import {rehearsalPolicyArticle} from "./seo-article-rehearsal-policy";
+import {freightAdjustmentArticle} from "./seo-article-freight-adjustment";
 
 export type SeoArticle={slug:string;title:string;description:string;meta:string;sourceNote:string;quickFacts:string[];sections:{heading:string;paragraphs:string[]}[]};
 export const seoArticles:SeoArticle[]=[
+freightAdjustmentArticle,
 rehearsalPolicyArticle,
 storagePolicyArticle,
 returnClockArticle,
