@@ -88,3 +88,9 @@ test("renders canonical URLs and SEO schemas in static HTML", async () => {
     assert.ok(words.length >= 1200 && words.length <= 1800, `${slug} has ${words.length} visible article words`);
   }
 });
+
+test("does not keep HTML behind a long-lived Cloudflare edge cache", async () => {
+  const headers = await readFile(new URL("../public/_headers", import.meta.url), "utf8");
+  assert.match(headers, /\/\*[\s\S]*Cache-Control: no-cache, max-age=0, must-revalidate/i);
+  assert.doesNotMatch(headers, /Cloudflare-CDN-Cache-Control:/i);
+});
