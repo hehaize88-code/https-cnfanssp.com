@@ -5,6 +5,7 @@ const base="https://joyagoos.shop";
 export const dynamic = "force-static";
 
 const changedOn:Partial<Record<PageKey,string>>={
+  "joyagoo-listing-availability-price-domestic-freight-recheck":"2026-09-10",
   "joyagoo-color-size-quantity-variant-check":"2026-09-06",
   "joyagoo-title-thumbnail-destination-consistency-check":"2026-09-04",
   "joyagoo-product-id-source-link-destination-url-guide":"2026-09-02",
@@ -19,7 +20,7 @@ const changedOn:Partial<Record<PageKey,string>>={
 function route(lang:string,page:PageKey){if(page==="home")return `/${lang}/`;if(seoArticleSlugs.includes(page))return `/${lang}/articles/${page}/`;if(categoryKeys.includes(page as CategoryKey))return `/${lang}/categories/${page}/`;return `/${lang}/${page}/`;}
 
 export default function sitemap():MetadataRoute.Sitemap{
-  const indexablePages=pageKeys.filter(page=>!seoArticleSlugs.includes(page)||page==="joyagoo-color-size-quantity-variant-check"||page==="joyagoo-title-thumbnail-destination-consistency-check"||page==="joyagoo-spreadsheet-independent-product-index-guide"||page==="joyagoo-destination-listing-verification-guide"||page==="joyagoo-product-id-source-link-destination-url-guide");
+  const indexablePages=pageKeys.filter(page=>!seoArticleSlugs.includes(page)||page==="joyagoo-listing-availability-price-domestic-freight-recheck"||page==="joyagoo-color-size-quantity-variant-check"||page==="joyagoo-title-thumbnail-destination-consistency-check"||page==="joyagoo-spreadsheet-independent-product-index-guide"||page==="joyagoo-destination-listing-verification-guide"||page==="joyagoo-product-id-source-link-destination-url-guide");
   return languages.flatMap(lang=>indexablePages.map(page=>({
     url:`${base}${route(lang,page)}`,
     lastModified:new Date(changedOn[page]??"2026-08-26"),

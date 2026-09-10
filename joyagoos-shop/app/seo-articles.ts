@@ -2,9 +2,11 @@ import {destinationListingArticle} from "./seo-article-destination";
 import {identifierGuideArticle} from "./seo-article-identifiers";
 import {listingConsistencyArticle} from "./seo-article-consistency";
 import {variantCheckArticle} from "./seo-article-variants";
+import {liveFieldsArticle} from "./seo-article-live-fields";
 
 export type SeoArticle={slug:string;title:string;description:string;meta:string;sourceNote:string;quickFacts:string[];sections:{heading:string;paragraphs:string[]}[]};
 export const seoArticles:SeoArticle[]=[
+liveFieldsArticle,
 variantCheckArticle,
 listingConsistencyArticle,
 identifierGuideArticle,
