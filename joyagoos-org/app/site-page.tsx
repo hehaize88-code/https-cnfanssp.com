@@ -31,6 +31,7 @@ function ArticleVisual({lang,slug,article}:{lang:Lang;slug:string;article:SeoArt
   else if(slug==="joyagoo-qc-return-window-guide")items=[{value:"120H",label:article.quickFacts[1]},{value:"QC",label:l.steps.qc[0]},{value:"72H",label:l.faq[3][0]}];
   else if(slug==="joyagoo-warehouse-rehearsal-shipping-guide")items=[{value:"90",label:l.facts[0]},{value:"20 CNY / 3 USD",label:visualLabels.price[lang]},{value:"30",label:visualLabels.parcel[lang]}];
   else if(slug==="volumetric-weight-guide")items=[{value:"L × W × H",label:article.quickFacts[1]},{value:"÷ 6000",label:article.quickFacts[0]},{value:"10 KG",label:"50 × 40 × 30 CM"}];
+  else if(slug==="joyagoo-estimated-final-freight-adjustment-rules")items=[{value:"01",label:article.quickFacts[0]},{value:"02",label:article.quickFacts[1]},{value:"03",label:article.quickFacts[2]}];
   else items=[{value:"≈2.9K",label:visualLabels.reviews[lang]},{value:"4.6",label:article.quickFacts[0]},{value:"2026",label:article.quickFacts[4]}];
   return <figure className={`article-visual article-visual--${slug}`}><figcaption>{visualCaption[lang]}</figcaption><div>{items.map(item=><article key={`${item.value}-${item.label}`}><strong>{item.value}</strong><span>{item.label}</span></article>)}</div></figure>;
 }
