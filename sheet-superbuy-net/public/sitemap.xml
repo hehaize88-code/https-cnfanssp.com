@@ -1,15 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://sheet-superbuy.net/</loc><lastmod>2026-08-24</lastmod></url>
-  <url><loc>https://sheet-superbuy.net/spreadsheet/</loc><lastmod>2026-08-24</lastmod></url>
-  <url><loc>https://sheet-superbuy.net/finds/</loc><lastmod>2026-08-24</lastmod></url>
-  <url><loc>https://sheet-superbuy.net/qc/</loc><lastmod>2026-08-24</lastmod></url>
-  <url><loc>https://sheet-superbuy.net/shipping/</loc><lastmod>2026-08-24</lastmod></url>
-  <url><loc>https://sheet-superbuy.net/articles/</loc><lastmod>2026-08-24</lastmod></url>
-  <url><loc>https://sheet-superbuy.net/faq/</loc><lastmod>2026-08-24</lastmod></url>
-  <url><loc>https://sheet-superbuy.net/articles/superbuy-personal-order-tracker-setup/</loc><lastmod>2026-08-28</lastmod></url>
-  <url><loc>https://sheet-superbuy.net/articles/how-to-use-superbuy-spreadsheet/</loc><lastmod>2026-08-24</lastmod></url>
-  <url><loc>https://sheet-superbuy.net/articles/superbuy-qc-photo-checklist/</loc><lastmod>2026-08-24</lastmod></url>
-  <url><loc>https://sheet-superbuy.net/articles/superbuy-shipping-cost-guide/</loc><lastmod>2026-08-24</lastmod></url>
-  <url><loc>https://sheet-superbuy.net/articles/superbuy-review-2026/</loc><lastmod>2026-08-24</lastmod></url>
+  <url><loc>https://sheet-superbuy.net/</loc><lastmod>2026-09-12</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://sheet-superbuy.net/spreadsheet/</loc><lastmod>2026-09-12</lastmod><priority>0.8</priority></url>
+  <url><loc>https://sheet-superbuy.net/finds/</loc><lastmod>2026-09-12</lastmod><priority>0.8</priority></url>
+  <url><loc>https://sheet-superbuy.net/qc/</loc><lastmod>2026-09-12</lastmod><priority>0.8</priority></url>
+  <url><loc>https://sheet-superbuy.net/shipping/</loc><lastmod>2026-09-12</lastmod><priority>0.8</priority></url>
+  <url><loc>https://sheet-superbuy.net/articles/</loc><lastmod>2026-09-12</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://sheet-superbuy.net/faq/</loc><lastmod>2026-09-12</lastmod><priority>0.8</priority></url>
+  <url><loc>https://sheet-superbuy.net/articles/superbuy-detailed-photos-guide/</loc><lastmod>2026-09-12</lastmod><priority>0.75</priority></url>
+  <url><loc>https://sheet-superbuy.net/articles/superbuy-qc-photos-shoes-checklist/</loc><lastmod>2026-09-12</lastmod><priority>0.75</priority></url>
+  <url><loc>https://sheet-superbuy.net/articles/superbuy-clothing-qc-measurements-guide/</loc><lastmod>2026-09-12</lastmod><priority>0.75</priority></url>
+  <url><loc>https://sheet-superbuy.net/articles/superbuy-link-checker-marketplace-listings/</loc><lastmod>2026-09-12</lastmod><priority>0.75</priority></url>
+  <url><loc>https://sheet-superbuy.net/articles/superbuy-1688-vs-taobao-qc-aftersales/</loc><lastmod>2026-09-12</lastmod><priority>0.75</priority></url>
+  <url><loc>https://sheet-superbuy.net/articles/superbuy-volumetric-weight-calculator-examples/</loc><lastmod>2026-09-12</lastmod><priority>0.75</priority></url>
+  <url><loc>https://sheet-superbuy.net/articles/superbuy-rehearsal-packaging-vs-shipping-expert/</loc><lastmod>2026-09-12</lastmod><priority>0.75</priority></url>
+  <url><loc>https://sheet-superbuy.net/articles/superbuy-restricted-items-shipping-lines/</loc><lastmod>2026-09-12</lastmod><priority>0.75</priority></url>
+  <url><loc>https://sheet-superbuy.net/articles/superbuy-warehouse-order-status-guide/</loc><lastmod>2026-09-12</lastmod><priority>0.75</priority></url>
+  <url><loc>https://sheet-superbuy.net/articles/superbuy-spreadsheet-broken-links-options/</loc><lastmod>2026-09-12</lastmod><priority>0.75</priority></url>
+  <url><loc>https://sheet-superbuy.net/articles/superbuy-personal-order-tracker-setup/</loc><lastmod>2026-08-28</lastmod><priority>0.7</priority></url>
+  <url><loc>https://sheet-superbuy.net/articles/how-to-use-superbuy-spreadsheet/</loc><lastmod>2026-08-24</lastmod><priority>0.7</priority></url>
+  <url><loc>https://sheet-superbuy.net/articles/superbuy-qc-photo-checklist/</loc><lastmod>2026-08-24</lastmod><priority>0.7</priority></url>
+  <url><loc>https://sheet-superbuy.net/articles/superbuy-shipping-cost-guide/</loc><lastmod>2026-08-24</lastmod><priority>0.7</priority></url>
+  <url><loc>https://sheet-superbuy.net/articles/superbuy-review-2026/</loc><lastmod>2026-08-24</lastmod><priority>0.7</priority></url>
 </urlset>

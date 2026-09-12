@@ -1,4 +1,5 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import { CategoryExplorer } from "./components/CategoryExplorer";
 import { SiteFooter } from "./components/SiteFooter";
 import { SiteHeader } from "./components/SiteHeader";
@@ -9,6 +10,12 @@ const faqs = [
   ["Are the displayed prices final?", "No. USD amounts are references. Marketplace prices, domestic delivery, currency conversion and international shipping can change."],
   ["What should I verify before ordering?", "Open the current listing, confirm the exact color, size and quantity, then review the warehouse photos before submitting a parcel."],
 ];
+
+export const metadata: Metadata = {
+  title: "Superbuy Spreadsheet 2026: Curated Finds, USD Prices & QC Checks",
+  description: "Browse a curated Superbuy spreadsheet with current product links, USD reference prices, QC checks and practical 2026 guides for smarter warehouse and shipping decisions.",
+  alternates: { canonical: "/" },
+};
 
 export default function Home() {
   const jsonLd = { "@context": "https://schema.org", "@graph": [
@@ -21,7 +28,7 @@ export default function Home() {
     <main>
       <section className="hero clean-hero">
         <div className="hero-copy">
-          <p className="eyebrow">Independent product index · Updated 24 Aug 2026</p>
+          <p className="eyebrow">Independent product index · Updated 12 Sep 2026</p>
           <h1>Superbuy<br />Spreadsheet 2026</h1>
           <p className="hero-lead">A cleaner way to browse product links, compare USD reference prices and keep QC checks attached to the decision.</p>
           <div className="hero-actions"><a className="button button-primary" href="#finds">Browse the sheet</a><Link className="button button-outline" href="/spreadsheet/">How to use it</Link></div>
@@ -47,7 +54,7 @@ export default function Home() {
 
       <section className="articles-section clean-section">
         <div className="clean-section-head"><div><p className="eyebrow">Buying guides</p><h2>Read only what you need next.</h2></div><Link href="/articles/">All articles →</Link></div>
-        <div className="clean-article-list">{articles.map((article, index) => <Link href={`/articles/${article.slug}/`} key={article.slug}><span>0{index + 1}</span><div><small>{article.eyebrow} · {article.read}</small><h3>{article.title}</h3></div><b>↗</b></Link>)}</div>
+        <div className="clean-article-list">{articles.slice(0, 6).map((article, index) => <Link href={`/articles/${article.slug}/`} key={article.slug}><span>{String(index + 1).padStart(2, "0")}</span><div><small>{article.eyebrow} · {article.read}</small><h3>{article.title}</h3></div><b>↗</b></Link>)}</div>
       </section>
 
       <section className="faq-section clean-section">

@@ -114,7 +114,7 @@ export function LanguageMenu({ locale = "en" }: { locale?: string }) {
     const stored = window.localStorage.getItem(STORAGE_KEY);
     const selected = languages.find((item) => item.code === stored);
     if (selected && selected.code !== "en") {
-      setActiveCode(selected.code);
+      window.setTimeout(() => setActiveCode(selected.code), 0);
       document.documentElement.lang = selected.translateCode;
       setTranslateCookie(selected.translateCode);
       loadTranslator(() => applyTranslation(selected.translateCode));
