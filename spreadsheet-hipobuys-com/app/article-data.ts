@@ -22,7 +22,7 @@ export type Article = {
   sources: { label: string; checked: string; claim: string; note: string }[];
 };
 
-export const articles: Article[] = [
+const originalArticles: Article[] = [
   {
     slug: "how-to-use-hipobuy-spreadsheet",
     title: "How to Use a Hipobuy Spreadsheet Without Buying Blind",
@@ -355,6 +355,9 @@ export const articles: Article[] = [
   }
 ];
 
+export const articles: Article[] = [...listingArticles, ...originalArticles];
+
 export function getArticle(slug: string) {
   return articles.find((article) => article.slug === slug);
 }
+import { listingArticles } from "./listing-articles";

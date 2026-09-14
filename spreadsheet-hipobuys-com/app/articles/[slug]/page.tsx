@@ -8,6 +8,10 @@ function anchor(text: string) {
   return text.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
 }
 
+function longDate(date: string) {
+  return new Intl.DateTimeFormat("en", { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" }).format(new Date(`${date}T00:00:00Z`));
+}
+
 export function generateStaticParams() {
   return articles.map((article) => ({ slug: article.slug }));
 }
@@ -52,9 +56,9 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
       <div className="article-layout">
         <aside className="article-toc"><p>On this page</p><ol>{article.sections.map((section, index) => <li key={section.heading}><a href={`#${anchor(section.heading)}`}><span>{String(index + 1).padStart(2, "0")}</span>{section.heading}</a></li>)}</ol></aside>
         <div className="article-prose">
-          {article.image ? <figure><img src={article.image} alt={article.imageAlt || ""} width="1100" height="720" /><figcaption>{article.imageCaption}</figcaption></figure> : <div className="shipping-equation"><span>Delivered cost</span><strong>item + domestic delivery + services + international parcel + import costs</strong></div>}
+          {article.image ? <figure><img src={article.image} alt={article.imageAlt || ""} width="1100" height="720" /><figcaption>{article.imageCaption}</figcaption></figure> : article.slug === "hipobuy-shipping-cost-guide" ? <div className="shipping-equation"><span>Delivered cost</span><strong>item + domestic delivery + services + international parcel + import costs</strong></div> : null}
           {article.sections.map((section) => <section id={anchor(section.heading)} key={section.heading}><h2>{section.heading}</h2>{section.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}{section.bullets ? <ul>{section.bullets.map((item) => <li key={item}>{item}</li>)}</ul> : null}</section>)}
-          <section className="article-sources"><p className="section-kicker">Sources checked · 25 August 2026</p><h2>Research notes</h2><p>Sources support specific platform facts or identify recurring buyer questions. Community reports are not treated as official terms or guaranteed outcomes.</p><ul>{article.sources.map((source) => <li key={source.label}><strong>{source.label}</strong><span><b>Checked:</b> {source.checked}<br/><b>Claim used:</b> {source.claim}<br/>{source.note}</span></li>)}</ul></section>
+          <section className="article-sources"><p className="section-kicker">Sources checked · {longDate(article.updated)}</p><h2>Research notes</h2><p>Sources support specific platform facts or identify recurring buyer questions. Community reports are not treated as official terms or guaranteed outcomes.</p><ul>{article.sources.map((source) => <li key={source.label}><strong>{source.label}</strong><span><b>Checked:</b> {source.checked}<br/><b>Claim used:</b> {source.claim}<br/>{source.note}</span></li>)}</ul></section>
           <div className="article-next"><div><p className="section-kicker">Continue checking</p><h2>Use the guide, then verify the live listing.</h2></div><div><Link href="/articles">All articles</Link><a href="https://cnfanssp.com/AllProducts/">Browse current catalog ↗</a></div></div>
         </div>
       </div>

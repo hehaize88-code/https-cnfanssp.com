@@ -38,9 +38,9 @@ export default function Home() {
 
     <section className="clean-hero">
       <div className="clean-hero-copy">
-        <p className="eyebrow"><span className="status-dot" /> Updated August 2026</p>
-        <h1>Hipobuy finds,<br/><em>made easier.</em></h1>
-        <p>Search a clean product index, open the exact source page, and use practical QC and shipping checks before you decide.</p>
+        <p className="eyebrow"><span className="status-dot" /> Updated September 2026</p>
+        <h1>Hipobuy spreadsheet,<br/><em>made easier.</em></h1>
+        <p>Search current product links, open the exact source page, and check listing freshness before you decide.</p>
       </div>
       <div className="clean-search-card">
         <p className="search-label">Search the spreadsheet</p>
@@ -77,7 +77,7 @@ export default function Home() {
 
     <section className="clean-articles">
       <div className="clean-section-title"><div><p className="eyebrow">Research library</p><h2>Read before you ship.</h2></div><p>Long-form guides built from official platform information, warehouse decision checks and clearly labelled public-review evidence.</p></div>
-      <div className="home-article-grid">{articles.map((article, index) => <article key={article.slug}><div><span>{String(index + 1).padStart(2, "0")}</span><small>{article.readTime}</small></div><p>{article.kicker}</p><h3><Link href={`/articles/${article.slug}`}>{article.title}</Link></h3><Link href={`/articles/${article.slug}`}>Read full article <b>↗</b></Link></article>)}</div>
+      <div className="home-article-grid">{articles.slice(0, 3).map((article, index) => <article key={article.slug}><div><span>{String(index + 1).padStart(2, "0")}</span><small>{article.readTime}</small></div><p>{article.kicker}</p><h3><Link href={`/articles/${article.slug}`}>{article.title}</Link></h3><Link href={`/articles/${article.slug}`}>Read full article <b>↗</b></Link></article>)}</div>
       <Link className="all-articles-link" href="/articles">View the article library →</Link>
     </section>
 

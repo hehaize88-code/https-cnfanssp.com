@@ -51,10 +51,33 @@ test("renders the Pages advanced-mode worker and preserves real 404s", async () 
     /^text\/html\b/i,
   );
   const html = await response.text();
-  assert.match(html, /<title>Hipobuy Product Index 2026/);
+  assert.match(html, /<title>Hipobuy Spreadsheet 2026/);
   assert.match(html, /rel="canonical" href="https:\/\/spreadsheet-hipobuys\.com\/"/);
   assert.equal((html.match(/class="clean-product-card"/g) || []).length, 12);
+  assert.equal((html.match(/<article><div><span>0[1-3]<\/span>/g) || []).length, 3);
   assert.equal(response.headers.get("x-hipo-cache"), "MISS");
+
+  const articleHubResponse = await worker.fetch(
+    new Request("https://spreadsheet-hipobuys.com/articles", { headers: { accept: "text/html" } }),
+    env,
+    context,
+  );
+  assert.equal(articleHubResponse.status, 200);
+  const articleHub = await articleHubResponse.text();
+  assert.equal((articleHub.match(/class="article-card"/g) || []).length, 10);
+  assert.match(articleHub, /How to Check Whether a Hipobuy Spreadsheet Link Still Works/);
+
+  const newArticleResponse = await worker.fetch(
+    new Request("https://spreadsheet-hipobuys.com/articles/check-hipobuy-spreadsheet-links", { headers: { accept: "text/html" } }),
+    env,
+    context,
+  );
+  assert.equal(newArticleResponse.status, 200);
+  const newArticle = await newArticleResponse.text();
+  assert.match(newArticle, /Sources checked/);
+  assert.match(newArticle, /14 September 2026/);
+  assert.match(newArticle, /rel="canonical" href="https:\/\/spreadsheet-hipobuys\.com\/articles\/check-hipobuy-spreadsheet-links"/);
+  assert.match(newArticle, /"@type":"Article"/);
 
   await Promise.all(backgroundTasks);
   const cachedHome = await worker.fetch(

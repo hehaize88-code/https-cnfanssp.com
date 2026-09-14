@@ -8,8 +8,8 @@ type Dictionary = Record<string, string>;
 
 const de: Dictionary = {
   "Spreadsheet":"Tabelle","QC":"Qualitätsprüfung","Shipping":"Versand","Guides":"Ratgeber","Articles":"Artikel","Browse products":"Produkte ansehen","Home":"Startseite",
-  "Updated August 2026":"Aktualisiert im August 2026","Hipobuy finds,":"Hipobuy-Fundstücke,","made easier.":"einfacher gefunden.",
-  "Search a clean product index, open the exact source page, and use practical QC and shipping checks before you decide.":"Durchsuche einen übersichtlichen Produktindex, öffne die genaue Quellseite und nutze praktische Qualitäts- und Versandprüfungen, bevor du dich entscheidest.",
+  "Updated September 2026":"Aktualisiert im September 2026","Hipobuy spreadsheet,":"Hipobuy-Tabelle,","made easier.":"einfacher genutzt.",
+  "Search current product links, open the exact source page, and check listing freshness before you decide.":"Durchsuche aktuelle Produktlinks, öffne die genaue Quellseite und prüfe vor deiner Entscheidung die Aktualität des Angebots.",
   "Search the spreadsheet":"Tabelle durchsuchen","Try shoes, hoodies or jerseys":"Zum Beispiel Schuhe, Hoodies oder Trikots","categories":"Kategorien","preview rows":"Vorschauzeilen","storage stated by app":"laut App Lagerung",
   "Product index":"Produktindex","Browse current finds":"Aktuelle Fundstücke ansehen","These cards are source-page snapshots. Confirm the live listing, price and available options before ordering.":"Diese Karten sind Momentaufnahmen der Quellseiten. Prüfe vor der Bestellung das aktuelle Angebot, den Preis und die verfügbaren Optionen.",
   "All":"Alle","Shoes":"Schuhe","Hoodies":"Hoodies","T-Shirts":"T-Shirts","Jackets":"Jacken","Pants":"Hosen","Headwear":"Kopfbedeckungen","Accessories":"Accessoires","Jerseys":"Trikots","Electronics":"Elektronik",
@@ -32,8 +32,8 @@ const de: Dictionary = {
 
 const es: Dictionary = {
   "Spreadsheet":"Hoja de cálculo","QC":"Control de calidad","Shipping":"Envío","Guides":"Guías","Articles":"Artículos","Browse products":"Ver productos","Home":"Inicio",
-  "Updated August 2026":"Actualizado en agosto de 2026","Hipobuy finds,":"Productos de Hipobuy,","made easier.":"más fáciles de encontrar.",
-  "Search a clean product index, open the exact source page, and use practical QC and shipping checks before you decide.":"Busca en un índice de productos claro, abre la página de origen exacta y utiliza controles prácticos de calidad y envío antes de decidir.",
+  "Updated September 2026":"Actualizado en septiembre de 2026","Hipobuy spreadsheet,":"Hoja de cálculo Hipobuy,","made easier.":"más fácil de usar.",
+  "Search current product links, open the exact source page, and check listing freshness before you decide.":"Busca enlaces de productos actuales, abre la página de origen exacta y comprueba la vigencia del anuncio antes de decidir.",
   "Search the spreadsheet":"Buscar en la hoja","Try shoes, hoodies or jerseys":"Prueba con zapatos, sudaderas o camisetas","categories":"categorías","preview rows":"filas de muestra","storage stated by app":"almacenamiento indicado por la app",
   "Product index":"Índice de productos","Browse current finds":"Explorar productos actuales","These cards are source-page snapshots. Confirm the live listing, price and available options before ordering.":"Estas tarjetas son capturas de las páginas de origen. Confirma el anuncio actual, el precio y las opciones antes de comprar.",
   "All":"Todo","Shoes":"Zapatos","Hoodies":"Sudaderas","T-Shirts":"Camisetas","Jackets":"Chaquetas","Pants":"Pantalones","Headwear":"Gorras","Accessories":"Accesorios","Jerseys":"Camisetas deportivas","Electronics":"Electrónica",
@@ -56,8 +56,8 @@ const es: Dictionary = {
 
 const fr: Dictionary = {
   "Spreadsheet":"Tableur","QC":"Contrôle qualité","Shipping":"Livraison","Guides":"Guides","Articles":"Articles","Browse products":"Voir les produits","Home":"Accueil",
-  "Updated August 2026":"Mis à jour en août 2026","Hipobuy finds,":"Les trouvailles Hipobuy,","made easier.":"plus faciles à trouver.",
-  "Search a clean product index, open the exact source page, and use practical QC and shipping checks before you decide.":"Parcourez un index clair, ouvrez la page source exacte et utilisez des contrôles pratiques de qualité et de livraison avant de décider.",
+  "Updated September 2026":"Mis à jour en septembre 2026","Hipobuy spreadsheet,":"Tableur Hipobuy,","made easier.":"plus simple à utiliser.",
+  "Search current product links, open the exact source page, and check listing freshness before you decide.":"Recherchez des liens produits actuels, ouvrez la page source exacte et vérifiez la fraîcheur de l’annonce avant de décider.",
   "Search the spreadsheet":"Rechercher dans le tableur","Try shoes, hoodies or jerseys":"Essayez chaussures, sweats ou maillots","categories":"catégories","preview rows":"lignes d’aperçu","storage stated by app":"stockage indiqué par l’app",
   "Product index":"Index des produits","Browse current finds":"Voir les trouvailles actuelles","These cards are source-page snapshots. Confirm the live listing, price and available options before ordering.":"Ces cartes sont des instantanés des pages sources. Vérifiez l’annonce actuelle, le prix et les options avant de commander.",
   "All":"Tout","Shoes":"Chaussures","Hoodies":"Sweats","T-Shirts":"T-shirts","Jackets":"Vestes","Pants":"Pantalons","Headwear":"Couvre-chefs","Accessories":"Accessoires","Jerseys":"Maillots","Electronics":"Électronique",
@@ -80,8 +80,8 @@ const fr: Dictionary = {
 
 const it: Dictionary = {
   "Spreadsheet":"Foglio di calcolo","QC":"Controllo qualità","Shipping":"Spedizione","Guides":"Guide","Articles":"Articoli","Browse products":"Sfoglia prodotti","Home":"Home",
-  "Updated August 2026":"Aggiornato ad agosto 2026","Hipobuy finds,":"Prodotti Hipobuy,","made easier.":"più facili da trovare.",
-  "Search a clean product index, open the exact source page, and use practical QC and shipping checks before you decide.":"Cerca in un indice ordinato, apri la pagina fonte esatta e usa controlli pratici di qualità e spedizione prima di decidere.",
+  "Updated September 2026":"Aggiornato a settembre 2026","Hipobuy spreadsheet,":"Foglio Hipobuy,","made easier.":"più facile da usare.",
+  "Search current product links, open the exact source page, and check listing freshness before you decide.":"Cerca link di prodotti aggiornati, apri la pagina fonte esatta e verifica la freschezza dell’inserzione prima di decidere.",
   "Search the spreadsheet":"Cerca nel foglio","Try shoes, hoodies or jerseys":"Prova scarpe, felpe o maglie","categories":"categorie","preview rows":"righe di anteprima","storage stated by app":"deposito indicato dall’app",
   "Product index":"Indice prodotti","Browse current finds":"Sfoglia i prodotti attuali","These cards are source-page snapshots. Confirm the live listing, price and available options before ordering.":"Queste schede sono istantanee delle pagine fonte. Verifica inserzione, prezzo e opzioni attuali prima di ordinare.",
   "All":"Tutto","Shoes":"Scarpe","Hoodies":"Felpe","T-Shirts":"T-shirt","Jackets":"Giacche","Pants":"Pantaloni","Headwear":"Copricapi","Accessories":"Accessori","Jerseys":"Maglie","Electronics":"Elettronica",
@@ -217,6 +217,8 @@ export function LanguageProvider({children}:{children:React.ReactNode}) {
   useEffect(()=>{
     const saved=localStorage.getItem("hipo-language") as Lang|null;
     const browserLanguage=navigator.language.split("-")[0] as Lang;
+    // This one-time client hydration intentionally restores the user's saved choice.
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     if(saved&&dictionaries[saved]) setLangState(saved);
     else if(dictionaries[browserLanguage]) setLangState(browserLanguage);
     setReady(true);

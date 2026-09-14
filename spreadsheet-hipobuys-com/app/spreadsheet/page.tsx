@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import GuideLayout from "../components/GuideLayout";
 
-export const metadata: Metadata = { title: "Hipobuy Listing Verification & Product Index Checks", description: "Verify whether Hipobuy source listings are live, compare current variants and use category discovery without relying on stale spreadsheet rows.", alternates: { canonical: "/spreadsheet" } };
+export const metadata: Metadata = { title: "Hipobuy Spreadsheet Links — Live Listing Verification", description: "Check Hipobuy spreadsheet product links, compare current variants and use freshness evidence without relying on stale rows.", alternates: { canonical: "/spreadsheet" } };
 
 const categoryLinks = [
   ["Shoes", "https://cnfanssp.com/shoes/"], ["Hoodies", "https://cnfanssp.com/hoodies-sweaters/"], ["T-Shirts", "https://cnfanssp.com/t-shirts/"], ["Jackets", "https://cnfanssp.com/jackets/"], ["Pants & Shorts", "https://cnfanssp.com/pants-shorts/"], ["Headwear", "https://cnfanssp.com/headwear/"], ["Accessories", "https://cnfanssp.com/accessories/"], ["Jerseys", "https://cnfanssp.com/Jersey/"], ["Electronics", "https://cnfanssp.com/electronics/"]
