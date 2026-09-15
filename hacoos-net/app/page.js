@@ -2,38 +2,25 @@ import Link from "next/link";
 import { Arrow } from "@/components/Icons";
 import { CategoryCard, ProductCard } from "@/components/Cards";
 import HeroSearch from "@/components/HeroSearch";
-import StructuredData from "@/components/StructuredData";
 import ResponsiveImage from "@/components/ResponsiveImage";
 import { categories, products, guides, faqs } from "./data";
 import { languageAlternates } from "./i18n";
 
 export const metadata = {
   title: "Hacoo Finds 2026 — Product Links, Categories & Listing Checks",
-  description: "Browse Hacoo finds by category, inspect eight title-and-image-matched product references, and verify current listing details before deciding.",
+  description: "Explore Hacoo finds by category, compare wardrobe fit and listing evidence, and use current product links with practical 2026 checks.",
   alternates: languageAlternates("/", "en"),
 };
 
 export default function Home() {
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: faqs.slice(0, 4).map(([q, a]) => ({
-      "@type": "Question",
-      name: q,
-      acceptedAnswer: { "@type": "Answer", text: a },
-    })),
-  };
-
   return (
     <div className="home-page club-home">
-      <StructuredData data={faqSchema}/>
-
       <section className="club-hero">
         <div className="wrap club-hero-grid">
           <div className="club-hero-copy">
             <div className="club-kicker"><span>Hacoo finds 2026</span><b>Independent product index</b></div>
-            <h1>Finds with<br/><em>better context.</em></h1>
-            <p>Explore category routes, real product references and practical checks in one bright, independent Hacoo discovery guide.</p>
+            <h1>Hacoo finds with<br/><em>better context.</em></h1>
+            <p>Explore Hacoo finds by category, compare wardrobe fit and listing evidence, then open the current product route with a clear plan.</p>
             <div className="hero-actions">
               <Link className="button primary" href="/categories">Browse Hacoo finds <Arrow/></Link>
               <Link className="button quiet" href="/categories">See all finds</Link>
@@ -123,7 +110,7 @@ export default function Home() {
             <div><span className="section-label">The field journal</span><h2>Read before<br/><em>you click out.</em></h2></div>
             <p>Product-led reading about Hacoo finds, wardrobe planning, category choices and live listing checks—written to support a real decision.</p>
           </div>
-          <div className="guide-grid">{guides.slice(0, 4).map((guide, index) => <Link href={"/guides/" + guide.slug} className="guide-card" key={guide.slug}><span className="guide-number">0{index + 1}</span><div><small>{guide.read} read</small><h3>{guide.title}</h3><p>{guide.short}</p><span className="text-link">Read the story <Arrow size={16}/></span></div></Link>)}</div>
+          <div className="guide-grid">{[...guides.slice(0,2),...guides.filter((guide)=>guide.homeFeatured).slice(0,2)].map((guide, index) => <Link href={"/guides/" + guide.slug} className="guide-card" key={guide.slug}><span className="guide-number">0{index + 1}</span><div><small>{guide.read} read</small><h3>{guide.title}</h3><p>{guide.short}</p><span className="text-link">Read the story <Arrow size={16}/></span></div></Link>)}</div>
         </div>
       </section>
 

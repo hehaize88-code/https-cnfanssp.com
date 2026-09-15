@@ -265,7 +265,7 @@ export function localizeCategories(categories, locale = "en") {
 export function localizeGuides(guides, locale = "en") {
   const translations = guideCopy[locale] || guideCopy.en;
   return guides.map((guide) => {
-    const translated = translations[guide.slug] || guideCopy.en[guide.slug];
+    const translated = translations[guide.slug] || guideCopy.en[guide.slug] || [guide.title, guide.short];
     return { ...guide, title: translated[0], short: translated[1] };
   });
 }

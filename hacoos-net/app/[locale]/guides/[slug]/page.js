@@ -4,7 +4,7 @@ import { guides } from "../../../data";
 import { LOCALIZED_LOCALES, localizeGuides } from "../../../i18n";
 
 export function generateStaticParams() {
-  return LOCALIZED_LOCALES.flatMap((locale) => guides.map(({ slug }) => ({ locale, slug })));
+  return LOCALIZED_LOCALES.flatMap((locale) => guides.filter((guide)=>guide.translated!==false).map(({ slug }) => ({ locale, slug })));
 }
 
 export async function generateMetadata({ params }) {
@@ -16,6 +16,6 @@ export async function generateMetadata({ params }) {
 
 export default async function Guide({ params }) {
   const { locale, slug } = await params;
-  if (!LOCALIZED_LOCALES.includes(locale) || !guides.some((item)=>item.slug===slug)) notFound();
+  if (!LOCALIZED_LOCALES.includes(locale) || !guides.some((item)=>item.slug===slug&&item.translated!==false)) notFound();
   return <LocalizedGuide locale={locale} slug={slug}/>;
 }

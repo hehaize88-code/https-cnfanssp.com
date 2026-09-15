@@ -31,7 +31,7 @@ export function LocalizedHome({ locale }) {
   const copy = getCopy(locale);
   const depth = getLocalizedDepth(locale);
   const { localizedCategories, localizedProducts } = getLocalizedCatalog(locale);
-  const localizedGuides = localizeGuides(guides, locale);
+  const localizedGuides = localizeGuides(guides.filter((guide)=>guide.translated!==false), locale);
   const schema = { "@context": "https://schema.org", "@type": "WebPage", name: `Hacoos — ${copy.home.title.join(" ")}`, url: absoluteLocalizedUrl("/", locale), inLanguage: locale };
   return <div className="localized-shell home-page club-home" lang={locale}><StructuredData data={schema}/>
     <section className="club-hero"><div className="wrap club-hero-grid"><div className="club-hero-copy"><div className="club-kicker"><span>{copy.home.eyebrow}</span><b>{copy.home.trust[0]}</b></div><h1>{copy.home.title[0]}<br/><em>{copy.home.title[1]} {copy.home.title[2]}</em></h1><p>{copy.home.lead}</p><div className="hero-actions"><Link className="button primary" href={localizePath("/spreadsheet",locale)}>{copy.nav.spreadsheet} <Arrow/></Link><Link className="button quiet" href={localizePath("/categories",locale)}>{copy.home.browse}</Link></div><div className="club-mini-proof">{copy.home.trust.map((item)=><span key={item}>{item}</span>)}</div></div>
@@ -119,14 +119,14 @@ export function LocalizedGuides({ locale }) {
   const copy = getCopy(locale);
   const depth = getLocalizedDepth(locale);
   const page = copy.guidesPage;
-  const localizedGuides = localizeGuides(guides,locale);
+  const localizedGuides = localizeGuides(guides.filter((guide)=>guide.translated!==false),locale);
   return <div className="localized-shell" lang={locale}><section className="page-hero simple-hero"><div className="wrap"><span className="section-label">{page.eyebrow}</span><h1>{page.title[0]}<br/><em>{page.title[1]}</em></h1><p>{page.lead}</p></div></section><section className="section wrap"><div className="article-index">{localizedGuides.map((guide,index)=><Link href={localizePath(`/guides/${guide.slug}`,locale)} key={guide.slug}><span className="article-no">0{index+1}</span><div><small>{guide.read}</small><h2>{guide.title}</h2><p>{guide.short}</p></div><span className="article-arrow"><Arrow/></span></Link>)}</div></section><section className="soft-section"><div className="wrap split-copy"><div><span className="section-label">{copy.nav.guides}</span><h2>{depth.indexes.guidesTitle}</h2></div><div><p className="large-copy">{depth.indexes.guidesText}</p><p>{copy.guideDetail.sections[2][1]}</p></div></div></section></div>;
 }
 
 export function LocalizedGuide({ locale, slug }) {
   const copy = getCopy(locale);
   const depth = getLocalizedDepth(locale);
-  const guide = localizeGuides(guides,locale).find((item)=>item.slug===slug);
+  const guide = localizeGuides(guides.filter((item)=>item.translated!==false),locale).find((item)=>item.slug===slug);
   if (!guide) return null;
   const page = copy.guideDetail;
   const localized = getLocalizedResearch(locale);

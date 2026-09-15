@@ -12,6 +12,7 @@ import { SEARCH_INDEXING_ENABLED, SITE_URL } from "./data";
 import { languageAlternates, LOCALES } from "./i18n";
 import { SOCIAL_IMAGE } from "./seo";
 import DocumentLanguage from "@/components/DocumentLanguage";
+import AnalyticsEvents from "@/components/AnalyticsEvents";
 
 export const metadata = {
   metadataBase: new URL(SITE_URL),
@@ -41,6 +42,7 @@ function gtag(){dataLayer.push(arguments);}
 gtag("js", new Date());
 gtag("config", "G-W7PM5VDRQL");`}
     </Script>
+    <AnalyticsEvents/>
     <StructuredData data={schema}/><Header/><main>{children}</main><Footer/>
   </body></html>;
 }

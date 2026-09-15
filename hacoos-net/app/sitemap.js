@@ -26,9 +26,9 @@ export default function sitemap() {
     })),
   );
   const localizedGuides = guides.flatMap((guide) =>
-    LOCALES.map((locale) => ({
+    (guide.translated===false?["en"]:LOCALES).map((locale) => ({
       url: canonicalUrl(`/guides/${guide.slug}`, locale),
-      lastModified: now,
+      lastModified: guide.translated===false?new Date("2026-09-15"):now,
       changeFrequency: "monthly",
       priority: 0.75,
     })),

@@ -2,6 +2,13 @@
 
 This file preserves the complete directive of automation `6a6b6580d92c8191a409e975c8f85aec`. The automation runner must read the latest `main:hacoovip-com/SEO60_AUTOMATION_MASTER.md` in full before every run and execute it as the authoritative prompt. Do not shorten, paraphrase, or selectively apply it.
 
+## hacoos.net permanent single-site exclusion (highest priority)
+
+- Effective 2026-09-15, `hacoos.net` (`hehaize88-code/https-cnfanssp.com`, branch `main`, path `hacoos-net/`) is permanently excluded from this automation.
+- Every automated run must skip `hacoos.net` and `hacoos-net/` completely. Do not research, select topics, create or edit articles, read or write that directory, commit, push, deploy, verify production, advance or recalculate its independent HW cursor, backfill, retry, reset, reorder, or otherwise change its completion history. Preserve all existing content, state, cursor data, and history. User-requested manual maintenance and this one-time custom release remain allowed.
+- This exclusion applies only to `hacoos.net`, overrides every conflicting rule below, and must not pause, enable, delay, skip, reset, reorder, backfill, or otherwise change any other Hacoo site's existing status, sequence, cursor, schedule, content, failure handling, deployment, or verification workflow.
+- Remove this exclusion only after a future explicit user request to resume automatic updates for `hacoos.net`.
+
 执行“60天SEO内容计划 V2”，为下面每个内容站各研究、撰写、发布并上线核验一篇全新的英文 SEO 文章。按站点顺序处理；单站失败要记录原因并继续其余站，绝不能跨目录或把一个站的文件写入另一个站。
 【站点与唯一操作范围】
 - hacoovip.shop｜repo hehaize88-code/hacoovip.shop｜path hacoovip-shop/｜platform Hacoo｜official https://www.hacoo.app/
@@ -259,4 +266,3 @@ HQ C01–C30：
 原位加入本任务，不新建自动化，不改变、重置、延迟、回退、跳过或重排其他Hacoo站及既有33站的期次、完成记录、内容顺序和发布时间。repo hehaize88-code/https-cnfanssp.com；branch main；唯一path hacoovip-com/；live https://hacoovip.com/；official https://www.hacoo.app/；既有main/CTA https://cnfanssp.com。独立HV游标从C01开始，随本任务原有Asia/Shanghai隔日06:30排期。
 HV完整C01–C30赛道、关键词排他、不可重写基线、五语要求、调研标准、唯一可写范围、发布核验与游标推进规则，以main分支hacoovip-com/SEO60_TRACK.md为权威规范；每次处理前必须读取最新main中的该文件并完整遵守。HV只做“候选已找到后”的Hacoo产品比较、需求权重、淘汰条件、短名单取舍与不购买判断，避开现有九站的App发现、信任测评、支持政策、索引/链接库、穿搭、证据审计、Spreadsheet搜索流程、QC及英国本地化意图。
 每期英文正文严格1,200–1,800词，DE/ES/FR/IT完整翻译且不减少内容；写前重查hacoo.app当前官方资料。只允许新增当期文章及其必要入口、内链、路由、sitemap和结构化数据，不得改变原站内容、模块、布局、语言架构、商品、分类、搜索、图片、CTA或链接目标。只有正式域五语新文及SEO/旧内容/CTA/200/404/重定向/移动端完整验收成功才推进；GitHub、构建、预览或pages.dev不能代替正式站验证。
-

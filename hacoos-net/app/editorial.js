@@ -1,5 +1,6 @@
 import { wardrobeGapArticle } from "./wardrobeGapArticle";
 import { outfitPlanningArticle } from "./outfitPlanningArticle";
+import { priorityGuideContent, priorityGuideDefinitions, priorityGuideSources } from "./priorityArticles";
 
 const reviewed = "August 26, 2026";
 
@@ -21,6 +22,8 @@ export const guides = [
   {
     slug: "what-is-a-hacoo-spreadsheet",
     title: "What Is a Hacoo Spreadsheet? A Practical 2026 Guide",
+    seoTitle: "Hacoo Spreadsheet 2026: Product Links, Categories & Checks",
+    seoDescription: "Use a Hacoo spreadsheet to find product links by category, compare current listing details and avoid stale or mismatched options in 2026.",
     short: "A clear explanation of Hacoo spreadsheet links, how community discovery differs from official Hacoo content, and what to verify before using a listing.",
     read: "10 min",
     primaryKeyword: "Hacoo spreadsheet",
@@ -35,6 +38,8 @@ export const guides = [
   {
     slug: "hacoo-reviews-explained",
     title: "Hacoo Reviews: What Real Customer Feedback Can—and Cannot—Tell You",
+    seoTitle: "Hacoo Reviews 2026: What UK & Europe Shoppers Should Check",
+    seoDescription: "Read Hacoo reviews with context: separate app, product, delivery and refund reports, then verify dates, countries, options and current policies.",
     short: "A balanced reading of recurring Hacoo review themes, official platform statements and the checks that matter more than an isolated star rating.",
     read: "12 min",
     primaryKeyword: "Hacoo reviews",
@@ -42,6 +47,8 @@ export const guides = [
   {
     slug: "shipping-planning",
     title: "Hacoo Shipping Time: Official Estimates and Better Planning",
+    seoTitle: "Hacoo Shipping Time 2026: Spain, Portugal, UK & Europe",
+    seoDescription: "Check Hacoo shipping-time estimates for Spain, Portugal, the UK and Europe, including processing, receiving ranges and delay evidence.",
     short: "What Hacoo currently publishes about processing and receiving times, why delivery varies, and how to document a delayed or missing parcel.",
     read: "11 min",
     primaryKeyword: "Hacoo shipping time",
@@ -49,6 +56,8 @@ export const guides = [
   {
     slug: "hacoo-returns-refunds",
     title: "Hacoo Returns and Refunds: A Step-by-Step Evidence Guide",
+    seoTitle: "Hacoo Return Policy & Refund Method 2026: Evidence Checklist",
+    seoDescription: "Understand the Hacoo return policy and refund method: eligibility, the in-app Refund/Exchange route, timing and evidence to preserve.",
     short: "A fact-checked guide to the in-app Refund/Exchange route, the published return window, review timing and the evidence worth keeping.",
     read: "10 min",
     primaryKeyword: "Hacoo return policy",
@@ -63,15 +72,19 @@ export const guides = [
   {
     slug: "size-guide",
     title: "Hacoo Size Guide: Measure First, Then Choose",
+    seoTitle: "Hacoo Size Guide 2026: Shoes, Hoodies, Tops & Trousers",
+    seoDescription: "Use this Hacoo size guide to compare shoes, hoodies, tops and trousers with real measurements instead of unreliable size-letter guesses.",
     short: "A practical sizing method for tops, trousers, footwear and accessories, built around measurements rather than unreliable size-letter assumptions.",
     read: "11 min",
     primaryKeyword: "Hacoo size guide",
   },
+  ...priorityGuideDefinitions,
 ];
 
 export const guideContent = {
   "hacoo-finds-wardrobe-gap-shortlist": wardrobeGapArticle.en,
   "hacoo-outfit-planning-wearable-plan": outfitPlanningArticle.en,
+  ...priorityGuideContent,
   "what-is-a-hacoo-spreadsheet": {
     kicker: "Hacoo spreadsheet / definition and method",
     intro: "Search for a ‘Hacoo spreadsheet’ and you will usually find a community-made directory rather than an official Hacoo feature. The phrase describes an organized set of discovery links, categories and notes that helps a visitor move from a broad product idea to a current page. That distinction matters. Hacoo’s own website describes the service as an open content-sharing community in which independent users and creators publish lifestyle discoveries. A spreadsheet is an outside research layer built around that activity, not a guarantee from Hacoo and not proof that every linked item is current.",
@@ -407,6 +420,7 @@ export const guideContent = {
 };
 
 export const guideSources = {
+  ...priorityGuideSources,
   "hacoo-finds-wardrobe-gap-shortlist": [
     ["Hacoo", "Official homepage and public platform description", "August 26, 2026"],
     ["Hacoo", "Terms of Service — creator and community-content responsibilities", "August 26, 2026"],
