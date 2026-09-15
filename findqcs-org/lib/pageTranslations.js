@@ -131,8 +131,8 @@ const COPY = {
     },
     guides: {
       eyebrow: "Official-source QC research",
-      title1: "Search the right way.",
-      title2: "Read the evidence carefully.",
+      title1: "FindQC search, explained.",
+      title2: "Links, IDs, images and QC photos.",
       intro: "FindQC describes itself as a QC discovery and aggregation platform. Its official pages document link and image search, while its Academy also explains keyword search. Here is what each route is good for—and what the results cannot prove.",
       visual: {
         stamp: "SOURCE\nCHECKED",
@@ -256,9 +256,9 @@ const COPY = {
     },
     articles: {
       eyebrow: "Notes from the review desk",
-      title1: "Useful context.",
-      title2: "No false certainty.",
-      intro: "Longer reads about interpreting product listings, reviewing images and making more deliberate decisions.",
+      title1: "FindQC guides.",
+      title2: "QC finder workflows without false certainty.",
+      intro: "Independent, evidence-led guides to exact listing checks, QC finder searches, warehouse photos, measurements and mapped product decisions.",
       read: "Read article",
     },
     article: {

@@ -117,7 +117,6 @@ export function localizedMetadata(metadata, pathname) {
 
   return {
     ...metadata,
-    alternates,
     ...(openGraph ? { openGraph } : {}),
   };
 }
