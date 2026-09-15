@@ -254,7 +254,7 @@ function articlePage(lang, slug) {
   const article = seoArticles[lang].find((item) => item.slug === slug);
   if (!article) return null;
   const isSeo60Article = ["product-requirements-brief-before-search", "define-product-use-case-before-search", "must-haves-vs-preferences-buyer-acceptance-criteria"].includes(slug);
-  const articleDate = slug === "must-haves-vs-preferences-buyer-acceptance-criteria" ? "2026-09-01" : slug === "define-product-use-case-before-search" ? "2026-08-30" : slug === "product-requirements-brief-before-search" ? "2026-08-28" : "2026-08-27";
+  const articleDate = slug === "must-haves-vs-preferences-buyer-acceptance-criteria" ? "2026-09-15" : slug === "define-product-use-case-before-search" ? "2026-08-30" : slug === "product-requirements-brief-before-search" ? "2026-08-28" : "2026-08-27";
   const schema = JSON.stringify({ "@context": "https://schema.org", "@type": "Article", headline: article.title, description: article.description, ...(!isSeo60Article ? { image: products[{ "how-to-read-qc-photos": 0, "search-product-link-id-keyword": 4, "actual-vs-volumetric-weight": 1 }[slug] ?? 0].image } : {}), datePublished: articleDate, dateModified: articleDate, inLanguage: lang, mainEntityOfPage: `${ORIGIN}${localizedPath(lang, `/articles/${slug}`)}`, author: { "@type": "Organization", name: "FindQC Store Editorial Team", url: ORIGIN }, publisher: { "@type": "Organization", name: "FindQC Store", url: ORIGIN } }).replace(/</g, "\\u003c");
   const visualIndex = { "how-to-read-qc-photos": 0, "search-product-link-id-keyword": 4, "actual-vs-volumetric-weight": 1, "product-requirements-brief-before-search": 2 }[slug] ?? 0;
   const sections = article.sections.map(([title, body], i) => `<section id="step-${i + 1}"><span>${String(i + 1).padStart(2, "0")}</span><h2>${esc(title)}</h2><p>${esc(body)}</p></section>${i === 2 && !isSeo60Article ? `<figure class="article-evidence-photo"><img src="${products[visualIndex].image}" alt="${esc(copy[lang].productNames[visualIndex])}" width="760" height="620" loading="lazy"><figcaption>${esc(copy[lang].productNames[visualIndex])} · ${esc(c.independent)}</figcaption></figure>` : ""}`).join("");
@@ -403,7 +403,10 @@ function renderPage(path, lang) {
 
 function sitemap() {
   const paths = ["/", "/categories", ...categories.map((category) => `/categories/${category.slug}`), "/finds", "/qc-guide", "/shipping", "/articles", ...seoArticles.en.map((article) => `/articles/${article.slug}`), "/faq"];
-  const urls = Object.keys(languages).flatMap((lang) => paths.map((path) => `<url><loc>${ORIGIN}${localizedPath(lang, path)}</loc><lastmod>2026-08-30</lastmod></url>`)).join("");
+  const urls = Object.keys(languages).flatMap((lang) => paths.map((path) => {
+    const lastmod = path === "/articles/must-haves-vs-preferences-buyer-acceptance-criteria" ? "2026-09-15" : "2026-08-30";
+    return `<url><loc>${ORIGIN}${localizedPath(lang, path)}</loc><lastmod>${lastmod}</lastmod></url>`;
+  })).join("");
   return `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${urls}</urlset>`;
 }
 
