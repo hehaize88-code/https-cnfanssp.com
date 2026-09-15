@@ -1,5 +1,6 @@
 import { BUILD_LANGUAGE, SITE_LANGUAGES, languageUrl } from "./routing";
 import { translate } from "./i18n";
+import { ENGLISH_ONLY_ARTICLE_ROUTES } from "./englishOnlyArticles.js";
 
 const OPEN_GRAPH_LOCALES = {
   en: "en_US",
@@ -26,11 +27,36 @@ const PAGE_SEO_KEYS = {
 };
 
 const ENGLISH_SEARCH_TITLES = {
-  "/": "FindQC Product Index & QC Photo Guide 2026 | FindQCS",
+  "/": "FindQC QC Finder 2026: Product Search & QC Photos | FindQCS",
   "/products": "FindQC Finds & Product Index: 108 Source Listings | FindQCS",
   "/categories": "FindQC Product Categories: Shoes, Hoodies & More | FindQCS",
   "/shipping": "FindQC Shipping Cost Checklist: Weight, Volume & Fees",
   "/faq": "FindQC FAQ: Product Search, QC Photos & Shipping",
+  "/guides": "FindQC Search Guide: Links, IDs, Image Search & QC Photos",
+  "/articles": "FindQC Guides & QC Finder Articles 2026 | FindQCS",
+};
+
+const LOCALIZED_SEARCH_TITLES = {
+  pl: {
+    "/": "FindQC QC Finder 2026: wyszukiwanie produktów i zdjęcia QC | FindQCS",
+    "/guides": "Poradnik FindQC: linki, ID, wyszukiwanie obrazem i zdjęcia QC",
+    "/articles": "Poradniki FindQC i artykuły QC Finder 2026 | FindQCS",
+  },
+  es: {
+    "/": "FindQC QC Finder 2026: búsqueda de productos y fotos QC | FindQCS",
+    "/guides": "Guía FindQC: enlaces, ID, búsqueda por imagen y fotos QC",
+    "/articles": "Guías FindQC y artículos de QC Finder 2026 | FindQCS",
+  },
+  de: {
+    "/": "FindQC QC Finder 2026: Produktsuche und QC-Fotos | FindQCS",
+    "/guides": "FindQC-Anleitung: Links, IDs, Bildsuche und QC-Fotos",
+    "/articles": "FindQC-Ratgeber und QC-Finder-Artikel 2026 | FindQCS",
+  },
+  ro: {
+    "/": "FindQC QC Finder 2026: căutare produse și fotografii QC | FindQCS",
+    "/guides": "Ghid FindQC: linkuri, ID-uri, căutare prin imagini și poze QC",
+    "/articles": "Ghiduri FindQC și articole QC Finder 2026 | FindQCS",
+  },
 };
 
 function translatedSeo(metadata, pathname) {
@@ -46,10 +72,11 @@ function translatedSeo(metadata, pathname) {
 
   if (!keys) return metadata;
 
-  const translatedTitle = BUILD_LANGUAGE === "en" && ENGLISH_SEARCH_TITLES[pathname]
+  const searchTitle = BUILD_LANGUAGE === "en"
     ? ENGLISH_SEARCH_TITLES[pathname]
-    : keys.title.map((key) => translate(BUILD_LANGUAGE, key)).join(" ");
-  const title = BUILD_LANGUAGE === "en" && ENGLISH_SEARCH_TITLES[pathname]
+    : LOCALIZED_SEARCH_TITLES[BUILD_LANGUAGE]?.[pathname];
+  const translatedTitle = searchTitle || keys.title.map((key) => translate(BUILD_LANGUAGE, key)).join(" ");
+  const title = searchTitle
     ? { absolute: translatedTitle }
     : typeof metadata.title === "object" && metadata.title !== null
     ? { ...metadata.title, default: translatedTitle }
@@ -63,10 +90,7 @@ function translatedSeo(metadata, pathname) {
 }
 
 export function localizedAlternates(pathname) {
-  const englishOnly = [
-    "/articles/warehouse-measurement-guide",
-    "/articles/shipping-cost-checklist",
-  ].includes(pathname);
+  const englishOnly = ENGLISH_ONLY_ARTICLE_ROUTES.includes(pathname);
   const alternateLanguages = englishOnly ? ["en"] : SITE_LANGUAGES;
   return {
     canonical: languageUrl(pathname, BUILD_LANGUAGE),

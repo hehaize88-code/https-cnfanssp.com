@@ -60,7 +60,6 @@ export const mappedIndexArticle = {
     ] },
   ],
   sources: [],
-  related: ["product-search-link-id-keyword", "what-qc-photos-can-prove", "before-you-buy-qc-guide"],
+  related: ["taobao-qc-finder-item-id-link-checks", "weidian-qc-finder-item-id-original-listing", "product-search-link-id-keyword"],
   cta,
 };
-

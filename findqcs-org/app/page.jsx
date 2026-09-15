@@ -35,15 +35,15 @@ export default function HomePage() {
         <div className="index-contact-sheet" aria-label={t("home.reviewDesk")}>
           <header><span>{t("home.referencePlate")}</span><b>FINDQC</b></header>
           <div className="index-photo-grid">
-            <a href={products[0].href} target="_blank" rel="noopener noreferrer" className="index-photo-main">
+            <a href={products[0].href} target="_blank" rel="noopener noreferrer" className="index-photo-main" data-analytics-event="product_click" data-analytics-id={products[0].id} data-analytics-category={products[0].category}>
               <img src={products[0].image} alt={products[0].name} />
               <span>{t("home.primaryLabel")}</span>
             </a>
-            <a href={products[1].href} target="_blank" rel="noopener noreferrer">
+            <a href={products[1].href} target="_blank" rel="noopener noreferrer" data-analytics-event="product_click" data-analytics-id={products[1].id} data-analytics-category={products[1].category}>
               <img src={products[1].image} alt={products[1].name} />
               <span>02</span>
             </a>
-            <a href={products[2].href} target="_blank" rel="noopener noreferrer">
+            <a href={products[2].href} target="_blank" rel="noopener noreferrer" data-analytics-event="product_click" data-analytics-id={products[2].id} data-analytics-category={products[2].category}>
               <img src={products[2].image} alt={products[2].name} />
               <span>03</span>
             </a>
@@ -67,7 +67,7 @@ export default function HomePage() {
         </div>
         <div className="index-category-grid">
           {categories.slice(0, 6).map((category, index) => (
-            <a href={category.href} target="_blank" rel="noopener noreferrer" key={category.slug}>
+            <a href={category.href} target="_blank" rel="noopener noreferrer" key={category.slug} data-analytics-event="category_click" data-analytics-category={category.slug}>
               <span>{String(index + 1).padStart(2, "0")}</span>
               <div>
                 <strong>{t(`category.${category.slug}.name`)}</strong>

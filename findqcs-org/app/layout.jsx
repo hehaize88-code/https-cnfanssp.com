@@ -5,6 +5,7 @@ import Footer from "../components/Footer";
 import LanguageProvider from "../components/LanguageProvider";
 import { DEFAULT_LANGUAGE } from "../lib/i18n";
 import { localizedMetadata } from "../lib/seo";
+import Analytics from "../components/Analytics";
 
 export const metadata = localizedMetadata({
   metadataBase: new URL("https://findqcs.org"),
@@ -40,11 +41,6 @@ export default function RootLayout({ children }) {
     "@type": "WebSite",
     name: "FindQCS",
     url: "https://findqcs.org/",
-    potentialAction: {
-      "@type": "SearchAction",
-      target: "https://findqcs.org/search?q={search_term_string}",
-      "query-input": "required name=search_term_string",
-    },
   };
 
   return (
@@ -56,6 +52,7 @@ function gtag(){dataLayer.push(arguments);}
 gtag("js", new Date());
 gtag("config", "G-3H09E182KX");`}</Script>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
+        <Analytics />
         <LanguageProvider>
           <SiteHeader />
           <main>{children}</main>

@@ -6,12 +6,15 @@ import { articles } from "../../../lib/articles";
 import { getArticleUi, getLocalizedArticle } from "../../../lib/localizedArticles";
 import { BUILD_LANGUAGE, languageUrl } from "../../../lib/routing";
 import { localizedMetadata } from "../../../lib/seo";
+import { ENGLISH_ONLY_ARTICLE_SLUGS, NEW_ENGLISH_ONLY_ARTICLE_SLUGS } from "../../../lib/englishOnlyArticles";
 
 const siteUrl = "https://findqcs.org";
 const articleUi = getArticleUi(BUILD_LANGUAGE);
 
 export function generateStaticParams() {
-  return articles.map(({ slug }) => ({ slug }));
+  return articles
+    .filter(({ slug }) => BUILD_LANGUAGE === "en" || !NEW_ENGLISH_ONLY_ARTICLE_SLUGS.includes(slug))
+    .map(({ slug }) => ({ slug }));
 }
 
 export async function generateMetadata({ params }) {
@@ -29,7 +32,7 @@ export async function generateMetadata({ params }) {
       description: article.description,
       url: languageUrl(`/articles/${article.slug}`),
       publishedTime: article.dateISO,
-      modifiedTime: article.dateISO,
+      modifiedTime: article.dateModified || "2026-09-15",
       authors: [articleUi.editorialDesk],
       images: [{ url: article.heroImage }],
     },
@@ -40,7 +43,7 @@ export async function generateMetadata({ params }) {
       images: [article.heroImage],
     },
     robots: {
-      index: BUILD_LANGUAGE === "en" || !["warehouse-measurement-guide", "shipping-cost-checklist"].includes(article.slug),
+      index: BUILD_LANGUAGE === "en" || !ENGLISH_ONLY_ARTICLE_SLUGS.includes(article.slug),
       follow: true,
     },
   }, `/articles/${article.slug}`);
@@ -97,7 +100,7 @@ function ArticleCta({ cta }) {
       <span>{cta.eyebrow}</span>
       <h2>{cta.title}</h2>
       {cta.external ? (
-        <a href={cta.href} target="_blank" rel="noopener noreferrer">{content}</a>
+        <a href={cta.href} target="_blank" rel="noopener noreferrer" data-analytics-event="article_product_click">{content}</a>
       ) : (
         <Link href={cta.href}>{content}</Link>
       )}
@@ -119,7 +122,7 @@ export default async function ArticlePage({ params }) {
     description: article.description,
     image: [`${siteUrl}${article.heroImage}`],
     datePublished: article.dateISO,
-    dateModified: article.dateISO,
+    dateModified: article.dateModified || "2026-09-15",
     inLanguage: BUILD_LANGUAGE,
     mainEntityOfPage: { "@type": "WebPage", "@id": articleUrl },
     author: { "@type": "Organization", name: articleUi.editorialDesk, url: languageUrl("/about") },
@@ -186,7 +189,7 @@ export default async function ArticlePage({ params }) {
             <ul>
               {article.sources.map((source) => (
                 <li key={source.href}>
-                  <strong>{source.label}</strong>
+                  <a href={source.href} target="_blank" rel="noopener noreferrer"><strong>{source.label}</strong> <ExternalIcon /></a>
                   <span>{source.note}</span>
                 </li>
               ))}

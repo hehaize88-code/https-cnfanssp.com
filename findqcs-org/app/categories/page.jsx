@@ -17,7 +17,7 @@ export default function CategoriesPage() {
       <PageHero eyebrow={<T id="categories.eyebrow" />} title={<><T id="categories.title1" /><br /><em><T id="categories.title2" /></em></>} intro={<T id="categories.intro" />} />
       <section className="category-grid">
         {categories.map((category) => (
-          <a className="category-card" href={category.href} target="_blank" rel="noopener noreferrer" key={category.slug}>
+          <a className="category-card" href={category.href} target="_blank" rel="noopener noreferrer" key={category.slug} data-analytics-event="category_click" data-analytics-category={category.slug}>
             <div className="category-card-top"><span>{category.code}</span><small><T id={`category.${category.slug}.short`} /></small></div>
             <h2><T id={`category.${category.slug}.name`} /></h2>
             <p><T id={`category.${category.slug}.description`} /></p>

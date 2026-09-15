@@ -14,6 +14,7 @@ import {
 import path from "node:path";
 import { tmpdir } from "node:os";
 import { fileURLToPath } from "node:url";
+import { ENGLISH_ONLY_ARTICLE_ROUTES } from "../lib/englishOnlyArticles.js";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const nextBin = path.join(root, "node_modules", "next", "dist", "bin", "next");
@@ -23,10 +24,7 @@ const dist = path.join(root, "dist");
 const buildRun = path.join(root, ".next-build", `run-${Date.now()}`);
 const languages = ["en", "pl", "es", "de", "ro"];
 const localeMap = { en: "en_US", pl: "pl_PL", es: "es_ES", de: "de_DE", ro: "ro_RO" };
-const englishOnlyRoutes = new Set([
-  "/articles/warehouse-measurement-guide",
-  "/articles/shipping-cost-checklist",
-]);
+const englishOnlyRoutes = new Set(ENGLISH_ONLY_ARTICLE_ROUTES);
 function retireDirectory(directory, label) {
   if (!existsSync(directory)) return;
   const retiredRoot = mkdtempSync(path.join(tmpdir(), `findqcs-${label}-`));
@@ -76,8 +74,8 @@ function enrichHtml(html, route, language) {
 
   let output = html
     .replace(/<html\s+lang="[^"]*"/, `<html lang="${language}"`)
-    .replace(/<link\s+rel="canonical"[^>]*>/gi, "")
-    .replace(/<link\s+rel="alternate"\s+hreflang="[^"]+"[^>]*>/gi, "")
+    .replace(/<link\b(?=[^>]*\brel="canonical")[^>]*>/gi, "")
+    .replace(/<link\b(?=[^>]*\brel="alternate")(?=[^>]*\bhreflang="[^"]+")[^>]*>/gi, "")
     .replace("<head>", `<head>${links}`)
     .replace(/<meta\s+property="og:url"\s+content="[^"]*"\s*\/?>/i, `<meta property="og:url" content="${canonical}"/>`)
     .replace(/<meta\s+property="og:locale"\s+content="[^"]*"\s*\/?>/i, `<meta property="og:locale" content="${localeMap[language]}"/>`);
@@ -198,4 +196,8 @@ export default {
   },
 };
 `);
-console.log(`Multilingual export complete: ${indexableRoutes.length * languages.length} indexable URLs across ${languages.length} languages.`);
+const indexableUrlCount = indexableRoutes.reduce(
+  (count, route) => count + (englishOnlyRoutes.has(route) ? 1 : languages.length),
+  0,
+);
+console.log(`Multilingual export complete: ${indexableUrlCount} indexable URLs across ${languages.length} languages.`);

@@ -42,7 +42,7 @@ export default function SiteHeader() {
           <LanguageSwitcher />
         </nav>
 
-        <a className="nav-cta" href="https://www.cnfanssp.com/AllProducts/" target="_blank" rel="noopener noreferrer">
+        <a className="nav-cta" href="https://www.cnfanssp.com/AllProducts/" target="_blank" rel="noopener noreferrer" data-analytics-event="category_click" data-analytics-category="all-products">
           {t("nav.browse")} <ArrowIcon size={16} />
         </a>
 
@@ -62,7 +62,7 @@ export default function SiteHeader() {
               {t(key)}<span>↗</span>
             </Link>
           ))}
-          <a href="https://www.cnfanssp.com/AllProducts/" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.cnfanssp.com/AllProducts/" target="_blank" rel="noopener noreferrer" data-analytics-event="category_click" data-analytics-category="all-products">
             {t("nav.browseMobile")}<span>↗</span>
           </a>
         </nav>

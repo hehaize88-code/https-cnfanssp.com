@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { ArrowIcon, SearchIcon } from "./Icons";
 import { useLanguage } from "./LanguageProvider";
+import { sendAnalyticsEvent } from "./Analytics";
 
 const MAIN_SEARCH_URL = "https://www.cnfanssp.com/search.html";
 
@@ -31,12 +32,15 @@ export default function SearchBox({ compact = false }) {
     const input = searchInput(query);
     if (!input) return;
     if (input.directUrl) {
+      sendAnalyticsEvent("catalog_search", { search_term: query.trim(), search_type: "direct_product_url" });
       window.location.assign(input.directUrl);
       return;
     }
 
     const destination = new URL(MAIN_SEARCH_URL);
     destination.searchParams.set("keywords", input.query);
+    destination.searchParams.set("channelid", "2");
+    sendAnalyticsEvent("catalog_search", { search_term: input.query, search_type: /^\d{8,}$/.test(input.query) ? "item_id" : "keyword" });
     window.location.assign(destination.toString());
   }
 

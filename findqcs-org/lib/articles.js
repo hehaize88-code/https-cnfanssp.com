@@ -1,4 +1,5 @@
 import { mappedIndexArticle } from "./seo60MappedIndex.js";
+import { priorityArticles } from "./priorityArticles.js";
 
 const liveCatalog = {
   label: "Live catalog: all products",
@@ -44,7 +45,7 @@ const checklistCta = {
 export const articles = [
   {
     slug: "before-you-buy-qc-guide",
-    title: "The Practical QC Photo Checklist to Use Before You Ship",
+    title: "FindQC QC Photo Checklist: What to Check Before Shipping",
     shortTitle: "Practical QC Photo Checklist",
     description: "A repeatable way to check product identity, condition, symmetry, construction, labels, measurements and packaging in warehouse photos.",
     excerpt: "Review warehouse photos in a fixed order, describe concerns precisely and avoid treating a limited image set as a quality guarantee.",
@@ -84,12 +85,12 @@ export const articles = [
       ] },
     ],
     sources: [findQcSources.whatIsQc, findQcSources.howItWorks, findQcSources.terms],
-    related: ["product-search-link-id-keyword", "what-qc-photos-can-prove", "warehouse-measurement-guide"],
+    related: ["sneaker-qc-photo-checklist-shape-tags-soles-box", "clothing-qc-photos-measurements-print-stitching", "what-qc-photos-can-prove"],
     cta: checklistCta,
   },
   {
     slug: "product-search-link-id-keyword",
-    title: "Product Search by Link, ID or Keyword: Which Method Works Best?",
+    title: "FindQC Search by Link, Item ID or Keyword: Which Works Best?",
     shortTitle: "Link, ID or Keyword Search",
     description: "Choose the right product-search method, preserve exact identifiers and confirm that a result points to the intended live listing.",
     excerpt: "Start with the strongest identifier you have, then verify the route and option set before treating a result as a match.",
@@ -126,12 +127,12 @@ export const articles = [
       ] },
     ],
     sources: [findQcSources.howItWorks, findQcSources.terms, liveCatalog],
-    related: ["before-you-buy-qc-guide", "warehouse-measurement-guide", "shipping-cost-checklist"],
+    related: ["qc-finder-no-photos-dead-link-recovery", "findqc-image-search-reference-photo-checks", "taobao-qc-finder-item-id-link-checks"],
     cta: { eyebrow: "Search precisely", title: "Browse mapped finds and open the exact product route.", href: "/products", label: "Explore product finds" },
   },
   {
     slug: "what-qc-photos-can-prove",
-    title: "What QC Photos Can Prove — and What They Cannot",
+    title: "QC Photos Explained: What FindQC Evidence Can and Cannot Prove",
     shortTitle: "The Limits of QC Photos",
     description: "Separate visible observations from unsupported assumptions when evaluating warehouse product photos.",
     excerpt: "Use photo evidence fully without turning appearance into claims about materials, authenticity, safety or long-term performance.",
@@ -169,12 +170,12 @@ export const articles = [
       ] },
     ],
     sources: [findQcSources.whatIsQc, findQcSources.howItWorks, findQcSources.terms],
-    related: ["before-you-buy-qc-guide", "warehouse-measurement-guide", "shipping-cost-checklist"],
+    related: ["qc-photos-vs-qc-videos-evidence-guide", "before-you-buy-qc-guide", "warehouse-measurement-guide"],
     cta: checklistCta,
   },
   {
     slug: "warehouse-measurement-guide",
-    title: "How to Read Warehouse Measurements Without Fooling Yourself",
+    title: "Warehouse Measurement Guide: Read QC Photos Without False Precision",
     shortTitle: "Warehouse Measurement Guide",
     description: "Check ruler endpoints, item position and measurement method before using warehouse photos to judge fit or dimensions.",
     excerpt: "A visible number is useful only when the ruler, endpoints and item position match the measurement you intend to compare.",
@@ -209,12 +210,12 @@ export const articles = [
       ] },
     ],
     sources: [findQcSources.whatIsQc, findQcSources.intelligence, findQcSources.agentFlow],
-    related: ["before-you-buy-qc-guide", "what-qc-photos-can-prove", "product-search-link-id-keyword"],
+    related: ["clothing-qc-photos-measurements-print-stitching", "sneaker-qc-photo-checklist-shape-tags-soles-box", "shipping-cost-checklist"],
     cta: checklistCta,
   },
   {
     slug: "shipping-cost-checklist",
-    title: "International Shipping Cost Checklist: What to Estimate Before Checkout",
+    title: "Shipping Cost Checklist: Weight, Volume and Fees Before Checkout",
     shortTitle: "Shipping Cost Checklist",
     description: "Estimate parcel weight, volumetric weight, packaging, service fees and route constraints before approving international shipment.",
     excerpt: "Product price is only one part of delivered cost. Build a simple parcel estimate and keep uncertain fees visible before you commit.",
@@ -253,6 +254,7 @@ export const articles = [
     cta: { eyebrow: "Plan the parcel", title: "Use the shipping guide before approving consolidation.", href: "/shipping", label: "Open shipping guide" },
   },
   mappedIndexArticle,
+  ...priorityArticles,
 ];
 
 const articleExtensions = {

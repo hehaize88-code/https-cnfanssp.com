@@ -3,6 +3,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { articles as englishArticles } from "../lib/articles.js";
 import { getLocalizedArticles } from "../lib/localizedArticles.js";
+import { ENGLISH_ONLY_ARTICLE_ROUTES, NEW_ENGLISH_ONLY_ARTICLE_SLUGS } from "../lib/englishOnlyArticles.js";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const out = path.join(root, "out");
@@ -80,7 +81,7 @@ function expectedLanguage(pathname) {
 
 for (const language of languages.filter((candidate) => candidate !== "en")) {
   const localizedArticles = getLocalizedArticles(language);
-  for (const englishArticle of englishArticles) {
+  for (const englishArticle of englishArticles.filter(({ slug }) => !NEW_ENGLISH_ONLY_ARTICLE_SLUGS.includes(slug))) {
     const localized = localizedArticles.find(({ slug }) => slug === englishArticle.slug);
     if (!localized) {
       failures.push(`Missing localized article data: ${language}/${englishArticle.slug}`);
@@ -130,7 +131,7 @@ for (const url of urls) {
   if ((html.match(/<h1[\s>]/g) || []).length !== 1) failures.push(`Expected one H1: ${url}`);
 
   const basePath = pathname.replace(/^\/(pl|es|de|ro)(?=\/|$)/, "") || "/";
-  const englishOnly = ["/articles/warehouse-measurement-guide", "/articles/shipping-cost-checklist"].includes(basePath);
+  const englishOnly = ENGLISH_ONLY_ARTICLE_ROUTES.includes(basePath);
   for (const alternate of [...(englishOnly ? ["en"] : languages), "x-default"]) {
     const targetLanguage = alternate === "x-default" ? "en" : alternate;
     const prefix = targetLanguage === "en" ? "" : `/${targetLanguage}`;
@@ -153,7 +154,7 @@ for (const url of urls) {
     }
 
     const englishFile = htmlPath(basePath);
-    if (existsSync(englishFile) && !basePath.startsWith("/articles/")) {
+    if (existsSync(englishFile) && !basePath.startsWith("/articles")) {
       const englishHtml = readFileSync(englishFile, "utf8");
       for (const tag of ["section", "article", "details", "li", "h2", "h3"]) {
         const localizedCount = (html.match(new RegExp(`<${tag}[\\s>]`, "g")) || []).length;
@@ -169,10 +170,12 @@ if (!providerSource.includes("window.location.assign(nextUrl)")) failures.push("
 if (providerSource.includes("history.replaceState")) failures.push("Language switcher still uses address-only replacement");
 
 const sitemapAlternateCount = (sitemap.match(/<xhtml:link /g) || []).length;
-const expectedUrls = (13 + 9 + englishArticles.length + expectedIndexableProducts) * languages.length - 8;
+const expectedUrls = (13 + 9 + englishArticles.length + expectedIndexableProducts) * languages.length
+  - ENGLISH_ONLY_ARTICLE_ROUTES.length * (languages.length - 1);
 if (urls.length !== expectedUrls) failures.push(`Expected ${expectedUrls} sitemap URLs, found ${urls.length}`);
 if (new Set(urls).size !== urls.length) failures.push("Sitemap contains duplicate URLs");
-const expectedAlternateCount = (expectedUrls - 2) * 6 + 2 * 2;
+const fullyLocalizedUrls = expectedUrls - ENGLISH_ONLY_ARTICLE_ROUTES.length;
+const expectedAlternateCount = fullyLocalizedUrls * 6 + ENGLISH_ONLY_ARTICLE_ROUTES.length * 2;
 if (sitemapAlternateCount !== expectedAlternateCount) failures.push(`Expected ${expectedAlternateCount} sitemap alternates, found ${sitemapAlternateCount}`);
 if (!readFileSync(path.join(out, "robots.txt"), "utf8").includes("Sitemap: https://findqcs.org/sitemap.xml")) failures.push("robots.txt sitemap is incorrect");
 

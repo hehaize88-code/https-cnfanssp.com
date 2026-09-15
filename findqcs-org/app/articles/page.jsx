@@ -41,7 +41,7 @@ export default function ArticlesPage() {
       <section className="journal-grid">
         {articles.map((article, index) => (
           <Link href={`/articles/${article.slug}`} className="journal-card" key={article.slug}>
-            <span>0{index + 1}</span>
+            <span>{String(index + 1).padStart(2, "0")}</span>
             <div className="journal-card-image"><img src={article.heroImage} alt="" loading={index === 0 ? "eager" : "lazy"} /></div>
             <div className="journal-card-copy">
               <small>{article.category} · {article.readTime}</small>

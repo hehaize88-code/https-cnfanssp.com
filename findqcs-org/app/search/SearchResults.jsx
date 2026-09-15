@@ -19,7 +19,7 @@ export default function SearchResults() {
   const query = (params.get("q") || "").trim().slice(0, 120);
   const productMatches = query ? products.filter((product) => includesQuery([product.id, product.sourceId, product.name, product.category, product.note], query)) : [];
   const categoryMatches = query ? categories.filter((category) => includesQuery([category.name, category.slug, category.short, category.description], query)) : [];
-  const catalogHref = `https://www.cnfanssp.com/search.html?keywords=${encodeURIComponent(query)}`;
+  const catalogHref = `https://www.cnfanssp.com/search.html?keywords=${encodeURIComponent(query)}&channelid=2`;
 
   return (
     <div className="shell inner-page search-page">
@@ -32,7 +32,7 @@ export default function SearchResults() {
 
       {query && (productMatches.length > 0 || categoryMatches.length > 0) ? (
         <>
-          {categoryMatches.length > 0 && <section className="search-result-section"><div className="result-label"><span><T id="searchPage.categories" /></span><b>{categoryMatches.length}</b></div><div className="search-category-list">{categoryMatches.map((category) => <a href={category.href} target="_blank" rel="noopener noreferrer" key={category.slug}><span>{category.code}</span><div><strong><T id={`category.${category.slug}.name`} /></strong><small><T id={`category.${category.slug}.short`} /></small></div><ArrowIcon /></a>)}</div></section>}
+          {categoryMatches.length > 0 && <section className="search-result-section"><div className="result-label"><span><T id="searchPage.categories" /></span><b>{categoryMatches.length}</b></div><div className="search-category-list">{categoryMatches.map((category) => <a href={category.href} target="_blank" rel="noopener noreferrer" key={category.slug} data-analytics-event="category_click" data-analytics-category={category.slug}><span>{category.code}</span><div><strong><T id={`category.${category.slug}.name`} /></strong><small><T id={`category.${category.slug}.short`} /></small></div><ArrowIcon /></a>)}</div></section>}
           {productMatches.length > 0 && <section className="search-result-section"><div className="result-label"><span><T id="searchPage.products" /></span><b>{productMatches.length}</b></div><div className="product-grid all-products">{productMatches.map((product) => <ProductCard product={product} priority key={product.id} />)}</div></section>}
         </>
       ) : (
@@ -40,7 +40,7 @@ export default function SearchResults() {
           <span><T id={query ? "searchPage.noMatches" : "searchPage.start"} /></span>
           <h2><T id={query ? "searchPage.notShortlisted" : "searchPage.try"} /></h2>
           <p><T id={query ? "searchPage.noMatchText" : "searchPage.startText"} /></p>
-          {query && <a href={catalogHref} target="_blank" rel="noopener noreferrer"><T id="searchPage.completeCatalog" /> <ExternalIcon /></a>}
+          {query && <a href={catalogHref} target="_blank" rel="noopener noreferrer" data-analytics-event="catalog_search" data-analytics-category="no-local-result"><T id="searchPage.completeCatalog" /> <ExternalIcon /></a>}
         </section>
       )}
     </div>

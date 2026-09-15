@@ -25,7 +25,7 @@ export default function ProductCard({ product, priority = false }) {
 
   return (
     <article className="product-card">
-      <a href={product.href} target="_blank" rel="noopener noreferrer" className="product-image-link" aria-label={t("product.open", { name: productName })}>
+      <a href={product.href} target="_blank" rel="noopener noreferrer" className="product-image-link" aria-label={t("product.open", { name: productName })} data-analytics-event="product_click" data-analytics-id={product.id} data-analytics-category={product.category}>
         <img src={product.image} alt={productName} width="750" height="750" loading={priority ? "eager" : "lazy"} decoding="async" />
         <span className="source-pill">{t("product.live")}</span>
       </a>
@@ -35,14 +35,14 @@ export default function ProductCard({ product, priority = false }) {
           <span title={`Source item ${product.sourceId}`}>#{product.id}</span>
         </div>
         <h3>{productName}</h3>
-        <a className="product-qc-link" href={product.href} target="_blank" rel="noopener noreferrer">{t("product.details")} →</a>
+        <a className="product-qc-link" href={product.href} target="_blank" rel="noopener noreferrer" data-analytics-event="product_click" data-analytics-id={product.id} data-analytics-category={product.category}>{t("product.details")} →</a>
         <div className="product-bottom">
           <div>
             <small>{t("product.price")}</small>
             <strong>{usdPrice}</strong>
             <span className="product-source-views">{t("product.usdEstimate")}</span>
           </div>
-          <a href={product.href} target="_blank" rel="noopener noreferrer" aria-label={t("product.view", { name: productName })}>
+          <a href={product.href} target="_blank" rel="noopener noreferrer" aria-label={t("product.view", { name: productName })} data-analytics-event="product_click" data-analytics-id={product.id} data-analytics-category={product.category}>
             <ExternalIcon />
           </a>
         </div>

@@ -53,7 +53,7 @@ export default function ProductsPage() {
           <section className="product-catalog-section" id={`products-${category.slug}`} aria-labelledby={`products-${category.slug}-title`} key={category.slug}>
             <header className="product-group-heading">
               <div><span>{category.code} / <T id="products.sourceLinkedCount" values={{ count: items.length }} /></span><h2 id={`products-${category.slug}-title`}><T id={`category.${category.slug}.name`} /></h2></div>
-              <a href={category.href} target="_blank" rel="noopener noreferrer"><T id="products.openCategoryGuide" /> <ArrowIcon size={16} /></a>
+              <a href={category.href} target="_blank" rel="noopener noreferrer" data-analytics-event="category_click" data-analytics-category={category.slug}><T id="products.openCategoryGuide" /> <ArrowIcon size={16} /></a>
             </header>
             <div className="product-grid all-products">
               {items.map((product, index) => <ProductCard product={product} priority={groupIndex === 0 && index < 4} key={product.id} />)}
@@ -105,7 +105,7 @@ export default function ProductsPage() {
         </div>
         <div>
           {categories.map((category) => (
-            <a href={category.href} target="_blank" rel="noopener noreferrer" key={category.slug}>
+            <a href={category.href} target="_blank" rel="noopener noreferrer" key={category.slug} data-analytics-event="category_click" data-analytics-category={category.slug}>
               <span>{category.code}</span><strong><T id={`category.${category.slug}.name`} /></strong><small><T id={`category.${category.slug}.short`} /></small><ArrowIcon size={15} />
             </a>
           ))}
