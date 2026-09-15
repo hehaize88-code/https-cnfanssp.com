@@ -29,6 +29,12 @@ const worker = {
   async fetch(request: Request, env: Env, ctx: ExecutionContext): Promise<Response> {
     const url = new URL(request.url);
 
+    if (url.hostname === "www.findqcs.shop") {
+      url.protocol = "https:";
+      url.hostname = "findqcs.shop";
+      return Response.redirect(url.toString(), 301);
+    }
+
     if (url.pathname === "/_vinext/image") {
       const allowedWidths = [...DEFAULT_DEVICE_SIZES, ...DEFAULT_IMAGE_SIZES];
       return handleImageOptimization(request, {
@@ -40,7 +46,14 @@ const worker = {
       }, allowedWidths);
     }
 
-    return handler.fetch(request, env, ctx);
+    const response = await handler.fetch(request, env, ctx);
+    if (url.hostname === "localhost" && response.headers.get("content-type")?.startsWith("text/html")) {
+      const headers = new Headers(response.headers);
+      headers.delete("content-length");
+      const html = (await response.text()).replace("</head>", '<meta name="codex-preview" content="development"></head>');
+      return new Response(html, { status: response.status, statusText: response.statusText, headers });
+    }
+    return response;
   },
 };
 

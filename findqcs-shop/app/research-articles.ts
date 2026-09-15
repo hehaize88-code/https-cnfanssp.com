@@ -1,10 +1,10 @@
 export const researchedArticles = [
   {
     slug: "how-findqc-works-2026",
-    title: "How FindQC Works in 2026: Search, QC and Product Intelligence",
-    description: "A fact-checked guide to FindQC link and image search, Standard and Premium QC, product intelligence, community data and the limits buyers still need to understand.",
+    title: "FindQC Guide 2026: Link Search, Image Search and QC Finder Workflow",
+    description: "A fact-checked FindQC guide to link and image search, Standard and Premium QC, Product Intelligence, community data and evidence limits.",
     readTime: "15 min read",
-    updated: "August 27, 2026",
+    updated: "September 15, 2026",
     sources: [
       { label: "FindQC — How it works", href: "https://findqc.com/how-findqc-works" },
       { label: "FindQC — Product Intelligence", href: "https://findqc.com/product-intelligence" },
@@ -76,10 +76,10 @@ export const researchedArticles = [
   },
   {
     slug: "findqc-real-buyer-reviews-analysis",
-    title: "What Real FindQC Reviews Can—and Cannot—Tell You",
-    description: "A human review of multilingual buyer notes on FindQC, with a method for separating useful observations from ratings, repetition and unsupported confidence.",
+    title: "FindQC Reviews Analysis: What Buyer Notes Can and Cannot Prove",
+    description: "An evidence-based review of multilingual FindQC buyer notes, separating useful observations from ratings, repetition and unsupported confidence.",
     readTime: "14 min read",
-    updated: "August 27, 2026",
+    updated: "September 15, 2026",
     sources: [
       { label: "FindQC — Review Wall", href: "https://findqc.com/review-wall" },
       { label: "FindQC — Product Intelligence", href: "https://findqc.com/product-intelligence" },
@@ -155,10 +155,10 @@ export const researchedArticles = [
   },
   {
     slug: "can-you-trust-old-qc-photos",
-    title: "Can You Trust Old QC Photos? A Date-and-Batch Risk Method",
-    description: "Use old QC photos as dated evidence without assuming the current listing, option, batch or future warehouse unit will be identical.",
+    title: "Old QC Photos vs Current Batch: Date, Seller and Variation Risks",
+    description: "Use old QC photos as dated evidence while checking current batch, seller, variation and exact-unit risks before shipment.",
     readTime: "12 min read",
-    updated: "August 28, 2026",
+    updated: "September 15, 2026",
     sources: [],
     sections: [
       {

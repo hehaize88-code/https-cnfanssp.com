@@ -11,8 +11,8 @@ export default function Home() {
           <div className="shell hero-grid">
             <div className="hero-copy">
               <div className="eyebrow"><span />Independent FindQC platform research</div>
-              <h1>Understand FindQC.<br /><em>Check the evidence.</em></h1>
-              <p>Research Product Intelligence, Real Hauls, public reviews and QC evidence limits before making a pre-shipment decision.</p>
+              <h1>FindQC and QC Finder.<br /><em>Check the evidence.</em></h1>
+              <p>Search product finds, learn how to read QC photos and use measurements, batch context and exact-unit evidence before shipment.</p>
               <SearchDesk />
               <div className="hero-trust"><span>✓ Exact destination links</span><span>✓ USD reference prices</span><span>✓ No dead “View QC” buttons</span></div>
             </div>
@@ -38,7 +38,7 @@ export default function Home() {
           </div>
           <div className="shell category-grid compact-category-grid">
             {categories.slice(0, 5).map((category) => (
-              <a key={category.name} href={category.href} target="_blank" rel="noopener noreferrer" className="category-tile">
+              <a key={category.name} href={category.href} target="_blank" rel="noopener noreferrer" className="category-tile" data-track="category_click">
                 <span>{category.mark}</span><div><b>{category.name}</b><small>{category.note}</small></div><i>↗</i>
               </a>
             ))}
@@ -91,7 +91,7 @@ export default function Home() {
       <JsonLd data={{
         "@context": "https://schema.org",
         "@graph": [
-          { "@type": "WebSite", "@id": `${PLANNED_ORIGIN}/#website`, name: "FindQC", url: PLANNED_ORIGIN, potentialAction: { "@type": "SearchAction", target: `${MAIN_SITE}/search.html?keywords={search_term_string}`, "query-input": "required name=search_term_string" } },
+          { "@type": "WebSite", "@id": `${PLANNED_ORIGIN}/#website`, name: "FindQC", url: PLANNED_ORIGIN, potentialAction: { "@type": "SearchAction", target: `${MAIN_SITE}/search.html?keywords={search_term_string}&channelid=2`, "query-input": "required name=search_term_string" } },
           { "@type": "Organization", "@id": `${PLANNED_ORIGIN}/#organization`, name: "FindQC Research Desk", url: PLANNED_ORIGIN, description: "Independent product-discovery and QC research resource." },
         ],
       }} />

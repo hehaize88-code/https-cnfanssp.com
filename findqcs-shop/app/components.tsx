@@ -18,6 +18,7 @@ export function Header() {
         <Logo />
         <nav className="desktop-nav" aria-label="Main navigation">
           <Link href="/finds">Finds</Link>
+          <Link href="/spreadsheet">Spreadsheet</Link>
           <Link href="/categories">Categories</Link>
           <Link href="/qc">QC Guide</Link>
           <Link href="/shipping">Shipping</Link>
@@ -32,6 +33,7 @@ export function Header() {
       </div>
       <nav className="mobile-nav" aria-label="Mobile navigation">
         <Link href="/finds">Finds</Link>
+        <Link href="/spreadsheet">Sheet</Link>
         <Link href="/categories">Categories</Link>
         <Link href="/qc">QC</Link>
         <Link href="/shipping">Shipping</Link>
@@ -55,6 +57,7 @@ export function Footer() {
           <div>
             <strong>Explore</strong>
             <Link href="/finds">Finds and search</Link>
+            <Link href="/spreadsheet">Product spreadsheet</Link>
             <Link href="/categories">Categories</Link>
             <Link href="/qc">QC checklist</Link>
             <Link href="/shipping">Real Hauls data</Link>
@@ -83,6 +86,7 @@ export function SearchDesk({ compact = false }: { compact?: boolean }) {
       <div className="search-row">
         <span className="search-icon" aria-hidden="true">⌕</span>
         <input id={compact ? "product-search-compact" : "product-search"} name="keywords" type="search" placeholder="Product name, style or keyword…" autoComplete="off" required />
+        <input type="hidden" name="channelid" value="2" />
         <button type="submit">Search finds <span aria-hidden="true">→</span></button>
       </div>
       {!compact && <p>Search opens the current destination catalog so names, images and availability can be checked at the source.</p>}
@@ -93,7 +97,7 @@ export function SearchDesk({ compact = false }: { compact?: boolean }) {
 export function ProductCard({ product }: { product: (typeof products)[number] }) {
   return (
     <article className="product-card">
-      <a className="product-image" href={product.href} target="_blank" rel="noopener noreferrer" aria-label={`Open ${product.name} listing`}>
+      <a className="product-image" href={product.href} target="_blank" rel="noopener noreferrer" aria-label={`Open ${product.name} listing`} data-track="product_click">
         <img src={product.image} alt={product.alt} loading="lazy" />
         <span className="checked-pill">Listing matched</span>
       </a>
@@ -101,7 +105,7 @@ export function ProductCard({ product }: { product: (typeof products)[number] })
         <div className="product-meta"><span>{product.category}</span><span>ID {product.id}</span></div>
         <h3>{product.name}</h3>
         <div className="price-line"><strong>{product.price}</strong><span>approx. · {product.sourcePrice}</span></div>
-        <div className="product-foot"><span>{product.weight} listed</span><a href={product.href} target="_blank" rel="noopener noreferrer">Open listing ↗</a></div>
+        <div className="product-foot"><span>{product.weight} listed</span><a href={product.href} target="_blank" rel="noopener noreferrer" data-track="product_click">Open listing ↗</a></div>
       </div>
     </article>
   );
@@ -111,9 +115,9 @@ export function ArticleCard({ article }: { article: (typeof articles)[number] })
   return (
     <article className="article-card">
       <div className="article-card-top"><span>Field guide</span><span>{article.readTime}</span></div>
-      <h3><Link href={`/articles/${article.slug}`}>{article.title}</Link></h3>
+      <h3><Link href={`/articles/${article.slug}`} data-track="article_click">{article.title}</Link></h3>
       <p>{article.description}</p>
-      <Link className="text-link" href={`/articles/${article.slug}`}>Read the guide <span aria-hidden="true">→</span></Link>
+      <Link className="text-link" href={`/articles/${article.slug}`} data-track="article_click">Read the guide <span aria-hidden="true">→</span></Link>
     </article>
   );
 }

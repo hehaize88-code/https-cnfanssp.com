@@ -4,10 +4,14 @@ import { articles, PLANNED_ORIGIN } from "./data";
 export const dynamic = "force-static";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const now = new Date("2026-08-28T00:00:00Z");
-  const routes = ["", "/finds", "/categories", "/qc", "/shipping", "/guide", "/articles", "/faq"];
+  const now = new Date("2026-09-15T00:00:00Z");
+  const routes = ["", "/finds", "/spreadsheet", "/categories", "/qc", "/shipping", "/guide", "/articles", "/faq"];
   const english = [...routes, ...articles.map((article) => `/articles/${article.slug}`)];
-  const localized = ["nl", "de", "it", "es"].flatMap((locale) => english.map((route) => `/${locale}${route}`));
+  const localizable = [
+    ...routes.filter((route) => route !== "/spreadsheet"),
+    ...articles.filter((article) => article.localize !== false).map((article) => `/articles/${article.slug}`),
+  ];
+  const localized = ["nl", "de", "it", "es"].flatMap((locale) => localizable.map((route) => `/${locale}${route}`));
   return [...english, ...localized].map((route) => ({
     url: `${PLANNED_ORIGIN}${route || "/"}`,
     lastModified: now,

@@ -29,6 +29,8 @@ export function LanguageSwitcher() {
   const [locale, setLocale] = useState<Locale>(readLocale);
 
   const change = (next: Locale) => {
+    const analyticsWindow = window as typeof window & { gtag?: (...args: unknown[]) => void };
+    analyticsWindow.gtag?.("event", "language_change", { from_language: locale, to_language: next, page_path: window.location.pathname });
     setLocale(next);
     window.location.assign(pathForLocale(next));
   };

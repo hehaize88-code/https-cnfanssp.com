@@ -1,4 +1,5 @@
 import { researchedArticles } from "./research-articles";
+import { qdrArticles } from "./qdr-articles";
 
 export const MAIN_SITE = "https://www.cnfanssp.com";
 export const PLANNED_ORIGIN = "https://findqcs.shop";
@@ -69,6 +70,8 @@ export type Article = {
   description: string;
   readTime: string;
   updated: string;
+  published?: string;
+  localize?: boolean;
   sources?: { label: string; href: string }[];
   sections: { heading: string; paragraphs: string[]; bullets?: string[] }[];
 };
@@ -82,12 +85,21 @@ export const articles: Article[] = [
       paragraphs: [...section.paragraphs],
     })),
   })),
+  ...qdrArticles.map((article) => ({
+    ...article,
+    localize: false,
+    sections: article.sections.map((section) => ({
+      ...section,
+      paragraphs: [...section.paragraphs],
+      bullets: "bullets" in section && section.bullets ? [...section.bullets] : undefined,
+    })),
+  })),
   {
     slug: "how-to-read-qc-photos",
-    title: "How to Read QC Photos Before You Ship",
-    description: "A practical, photo-by-photo method for checking shape, measurements, stitching, color and visible defects before international shipping.",
+    title: "QC Photos Checklist: How to Inspect a Warehouse Unit Before Shipping",
+    description: "A practical QC checker method for reviewing identity, shape, measurements, stitching, color, included pieces and visible defects before shipment.",
     readTime: "13 min read",
-    updated: "August 27, 2026",
+    updated: "September 15, 2026",
     sections: [
       {
         heading: "Start with the job QC photos can actually do",
@@ -152,10 +164,10 @@ export const articles: Article[] = [
   },
   {
     slug: "qc-finder-vs-spreadsheet",
-    title: "QC Finder vs Spreadsheet: Use the Right Tool",
-    description: "Understand what each discovery method is good at, where it fails, and how to combine search, listing data and warehouse photos.",
+    title: "QC Finder vs Spreadsheet: Product Search and Evidence Checks",
+    description: "Compare QC finder search with a product spreadsheet, then combine listing identity, historical references and exact warehouse photos safely.",
     readTime: "12 min read",
-    updated: "August 27, 2026",
+    updated: "September 15, 2026",
     sections: [
       {
         heading: "Two tools, two different questions",
@@ -225,10 +237,10 @@ export const articles: Article[] = [
   },
   {
     slug: "check-a-listing-before-order",
-    title: "The 10-Minute Listing Check Before You Order",
-    description: "A fast pre-order routine for confirming the product identity, variation, price, weight notes, destination and evidence you will need later.",
+    title: "10-Minute Product Listing Check Before You Order",
+    description: "A fast pre-order checklist for confirming product identity, variation, price, size chart, weight notes and the QC evidence needed later.",
     readTime: "11 min read",
-    updated: "August 27, 2026",
+    updated: "September 15, 2026",
     sections: [
       {
         heading: "Why the pre-order check saves more than a later QC review",
