@@ -63,7 +63,7 @@ test("renders indexable production metadata and SEO endpoints", async () => {
   assert.match(sitemapXml, /<loc>https:\/\/hacoos\.org\/en<\/loc>/);
   assert.match(sitemapXml, /<loc>https:\/\/hacoos\.org\/de\/articles\//);
   assert.doesNotMatch(sitemapXml, /<loc>https:\/\/hacoos\.org\/<\/loc>/);
-  assert.equal((sitemapXml.match(/<url>/g) ?? []).length, 72);
+  assert.equal((sitemapXml.match(/<url>/g) ?? []).length, 120);
 
   const httpResponse = await worker.fetch(
     new Request("http://hacoos.org/de?source=http"),

@@ -6,7 +6,20 @@ import {
 } from "@/lib/site-data";
 import { seoArticles } from "@/lib/seo-articles";
 
-const articleOrder = ["hacoo-spreadsheet-guide", "hacoo-reviews", "hacoo-qc-guide", "hacoo-shipping-guide"] as const;
+const articleOrder = [
+  "hacoo-spreadsheet-guide",
+  "hacoo-link-verification",
+  "hacoo-dead-link-recovery",
+  "hacoo-product-shortlist",
+  "hacoo-size-evidence",
+  "hacoo-listing-change-log",
+  "hacoo-image-evidence",
+  "hacoo-price-variant-record",
+  "hacoo-spreadsheet-maintenance",
+  "hacoo-reviews",
+  "hacoo-qc-guide",
+  "hacoo-shipping-guide",
+] as const;
 const orderedArticles = (locale: Locale) => articleOrder.map((id) => seoArticles[locale].find((article) => article.id === id)!);
 
 type UiCopy = {
@@ -67,7 +80,7 @@ const enUi: UiCopy = {
     ["Shortlist three", "Compare evidence and delivered cost. Stop searching when three options satisfy the same brief."],
   ],
   sourceNote: ["Every card opens a live source page", "Re-check the title, images, variant and availability before relying on a saved reference."],
-  articleLibrary: ["SEO ARTICLE LIBRARY", "Four independent articles", "Each article has its own indexable URL, full language version and a focused search intent."],
+  articleLibrary: ["SEO ARTICLE LIBRARY", "Twelve independent articles", "Each article has its own indexable URL, full language version and a focused search intent."],
   guideHub: ["DECISION PATH", "Use the guides in the right order", "Move from discovery to evidence, sizing and parcel planning without skipping the decision points that matter."],
   guideSteps: [
     ["Define the brief", "Write down use, fit, material and the detail you will not compromise on."],
@@ -117,7 +130,7 @@ const de: LocaleText = {
       ["Drei auswählen", "Belege und gelieferte Gesamtkosten vergleichen. Die Suche beenden, sobald drei Optionen denselben Kriterien entsprechen."],
     ],
     sourceNote: ["Jede Karte öffnet eine aktive Quellseite", "Titel, Bilder, Variante und Verfügbarkeit erneut prüfen, bevor eine gespeicherte Referenz verwendet wird."],
-    articleLibrary: ["SEO-ARTIKELBIBLIOTHEK", "Vier unabhängige Artikel", "Jeder Artikel besitzt eine eigene indexierbare URL, eine vollständige Sprachversion und eine klar abgegrenzte Suchintention."],
+    articleLibrary: ["SEO-ARTIKELBIBLIOTHEK", "Zwölf unabhängige Artikel", "Jeder Artikel besitzt eine eigene indexierbare URL, eine vollständige Sprachversion und eine klar abgegrenzte Suchintention."],
     guideHub: ["ENTSCHEIDUNGSWEG", "Die Ratgeber in der richtigen Reihenfolge nutzen", "Von der Entdeckung über Belege und Größen bis zur Paketplanung gehen, ohne wichtige Entscheidungspunkte zu überspringen."],
     guideSteps: [
       ["Anforderungen definieren", "Nutzung, Passform, Material und das nicht verhandelbare Detail notieren."],
@@ -239,7 +252,7 @@ const fr: LocaleText = {
       ["Retenir trois options", "Comparez les preuves et le coût livré. Arrêtez la recherche lorsque trois options répondent au même cahier des charges."],
     ],
     sourceNote: ["Chaque carte ouvre une fiche source active", "Vérifiez de nouveau le titre, les images, la variante et la disponibilité avant d’utiliser une référence enregistrée."],
-    articleLibrary: ["BIBLIOTHÈQUE D’ARTICLES SEO", "Quatre articles indépendants", "Chaque article possède sa propre URL indexable, une version linguistique complète et une intention de recherche précise."],
+    articleLibrary: ["BIBLIOTHÈQUE D’ARTICLES SEO", "Douze articles indépendants", "Chaque article possède sa propre URL indexable, une version linguistique complète et une intention de recherche précise."],
     guideHub: ["PARCOURS DE DÉCISION", "Utiliser les guides dans le bon ordre", "Passez de la découverte aux preuves, aux tailles et à la préparation du colis sans ignorer les décisions importantes."],
     guideSteps: [
       ["Définir le besoin", "Notez l’usage, la coupe, la matière et le détail sur lequel vous ne transigerez pas."],
@@ -358,7 +371,7 @@ const es: LocaleText = {
       ["Elige tres", "Compara pruebas y coste entregado. Deja de buscar cuando tres opciones cumplan el mismo objetivo."],
     ],
     sourceNote: ["Cada tarjeta abre una página fuente activa", "Vuelve a comprobar título, imágenes, variante y disponibilidad antes de confiar en una referencia guardada."],
-    articleLibrary: ["BIBLIOTECA DE ARTÍCULOS SEO", "Cuatro artículos independientes", "Cada artículo tiene una URL indexable propia, una versión completa en cada idioma y una intención de búsqueda definida."],
+    articleLibrary: ["BIBLIOTECA DE ARTÍCULOS SEO", "Doce artículos independientes", "Cada artículo tiene una URL indexable propia, una versión completa en cada idioma y una intención de búsqueda definida."],
     guideHub: ["RUTA DE DECISIÓN", "Usa las guías en el orden adecuado", "Pasa del descubrimiento a las pruebas, las tallas y la planificación del paquete sin saltarte decisiones importantes."],
     guideSteps: [
       ["Define el objetivo", "Anota el uso, el ajuste, el material y el detalle que no estás dispuesto a ceder."],
@@ -477,7 +490,7 @@ const it: LocaleText = {
       ["Selezionane tre", "Confronta prove e costo consegnato. Smetti di cercare quando tre opzioni soddisfano lo stesso brief."],
     ],
     sourceNote: ["Ogni scheda apre una pagina sorgente attiva", "Ricontrolla titolo, immagini, variante e disponibilità prima di fare affidamento su un riferimento salvato."],
-    articleLibrary: ["BIBLIOTECA DI ARTICOLI SEO", "Quattro articoli indipendenti", "Ogni articolo ha un proprio URL indicizzabile, una versione linguistica completa e un intento di ricerca specifico."],
+    articleLibrary: ["BIBLIOTECA DI ARTICOLI SEO", "Dodici articoli indipendenti", "Ogni articolo ha un proprio URL indicizzabile, una versione linguistica completa e un intento di ricerca specifico."],
     guideHub: ["PERCORSO DECISIONALE", "Usa le guide nell’ordine corretto", "Passa dalla scoperta alle prove, alle taglie e alla pianificazione del pacco senza saltare i passaggi decisivi."],
     guideSteps: [
       ["Definisci il brief", "Annota uso, vestibilità, materiale e il dettaglio su cui non accetti compromessi."],
@@ -596,7 +609,7 @@ const pt: LocaleText = {
       ["Escolha três", "Compare provas e custo entregue. Pare de procurar quando três opções cumprirem o mesmo objetivo."],
     ],
     sourceNote: ["Cada cartão abre uma página de origem ativa", "Volte a confirmar título, imagens, variante e disponibilidade antes de confiar numa referência guardada."],
-    articleLibrary: ["BIBLIOTECA DE ARTIGOS SEO", "Quatro artigos independentes", "Cada artigo tem um URL indexável próprio, uma versão linguística completa e uma intenção de pesquisa definida."],
+    articleLibrary: ["BIBLIOTECA DE ARTIGOS SEO", "Doze artigos independentes", "Cada artigo tem um URL indexável próprio, uma versão linguística completa e uma intenção de pesquisa definida."],
     guideHub: ["PERCURSO DE DECISÃO", "Use os guias pela ordem correta", "Passe da descoberta às provas, aos tamanhos e ao planeamento do pacote sem ignorar decisões importantes."],
     guideSteps: [
       ["Defina o objetivo", "Anote utilização, corte, material e o detalhe em que não aceita compromisso."],
@@ -710,7 +723,7 @@ function buildLocale(text: LocaleText, locale: Locale) {
 }
 
 export const localizedContent = {
-  en: { ui: enUi, categories, products, faqs, guideCards: orderedArticles("en").map(({ id, tag, title, summary }) => ({ id, tag, title, summary })), longGuides: orderedArticles("en") },
+  en: { ui: enUi, categories, products, faqs: faqs as TextPair[], guideCards: orderedArticles("en").map(({ id, tag, title, summary }) => ({ id, tag, title, summary })), longGuides: orderedArticles("en") },
   de: buildLocale(de, "de"),
   fr: buildLocale(fr, "fr"),
   es: buildLocale(es, "es"),

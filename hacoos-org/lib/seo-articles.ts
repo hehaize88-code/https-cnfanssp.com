@@ -1,4 +1,5 @@
 import type { Locale } from "@/lib/site-data";
+import { expandedSeoArticles } from "@/lib/seo-articles-expansion";
 
 export type SeoSection = {
   id: string;
@@ -14,6 +15,8 @@ export type SeoArticle = {
   summary: string;
   targetKeyword: string;
   reviewedAt: string;
+  publishedAt?: string;
+  modifiedAt?: string;
   evidenceNote: string;
   facts: Array<[string, string]>;
   sections: SeoSection[];
@@ -27,7 +30,7 @@ const en: SeoArticle[] = [
     standfirst: "A useful Hacoo spreadsheet is not a giant list of unexplained links. It is a repeatable way to move from discovery to a small, current and checkable shortlist.",
     summary: "A fact-checked workflow for finding Hacoo-related product references without trusting stale links, inflated catalogue claims or orphaned screenshots.",
     targetKeyword: "hacoo spreadsheet",
-    reviewedAt: "Evidence checked 26 August 2026",
+    reviewedAt: "Evidence checked 16 September 2026",
     evidenceNote: "Based on Hacoo's current official positioning, public app-store information and live source-page checks. Third-party catalogue totals are not treated as official facts.",
     facts: [
       ["PRIMARY INTENT", "Hacoo spreadsheet"],
@@ -100,7 +103,7 @@ const en: SeoArticle[] = [
     standfirst: "QC photos reduce uncertainty only when you confirm the exact item, inspect it in a fixed order and ask for evidence that can change your decision.",
     summary: "A practical Hacoo QC checklist for identity, shape, measurements, material, construction and decision thresholds.",
     targetKeyword: "hacoo qc",
-    reviewedAt: "Method reviewed 26 August 2026",
+    reviewedAt: "Method reviewed 16 September 2026",
     evidenceNote: "This is an independent photo-review method. It does not claim that every Hacoo post or linked product includes warehouse QC photos.",
     facts: [
       ["FIRST CHECK", "Exact item and variant"],
@@ -174,19 +177,19 @@ const en: SeoArticle[] = [
     standfirst: "Hacoo review scores vary sharply by platform and region. A useful assessment looks beyond one headline number and separates company claims, store data and individual experiences.",
     summary: "A balanced, dated review of Hacoo's official positioning, app-store scores, recurring customer themes and practical checks.",
     targetKeyword: "hacoo reviews",
-    reviewedAt: "Public review snapshot: 26 August 2026",
+    reviewedAt: "Public review snapshot: 16 September 2026",
     evidenceNote: "Sources reviewed: Hacoo official pages, Apple App Store, Google Play and Trustpilot. Ratings and review counts change over time and by locale.",
     facts: [
       ["APPLE PORTUGAL", "4.7 from 6.8K ratings"],
-      ["GOOGLE PLAY", "3.6 from 57.6K reviews"],
-      ["TRUSTPILOT", "3.6 average from 3,257 reviews"],
+      ["GOOGLE PLAY", "3.6 from 59.4K reviews"],
+      ["TRUSTPILOT", "3.7 average from 3,338 reviews"],
     ],
     sections: [
       {
         id: "method",
         heading: "How this Hacoo review was researched",
         paragraphs: [
-          "This review uses a dated snapshot rather than pretending that app ratings are permanent. On 26 August 2026, we checked Hacoo's official website, Trust Center, terms and intellectual-property page; the public Apple App Store listing in Portugal; the US-English Google Play listing; and the Hacoo profile on Trustpilot. We separated statements made by Hacoo from platform statistics and from individual customer reviews. Those evidence types answer different questions and should not be blended into one verdict.",
+          "This review uses a dated snapshot rather than pretending that app ratings are permanent. On 16 September 2026, we checked Hacoo's official website, Trust Center, terms and intellectual-property page; the public Apple App Store listing in Portugal; the US-English Google Play listing; and the Hacoo profile on Trustpilot. We separated statements made by Hacoo from platform statistics and from individual customer reviews. Those evidence types answer different questions and should not be blended into one verdict.",
           "Storefront ratings are especially dependent on locale, device, review history and timing. A review platform may merge profiles or use its own scoring method. Individual reviews can be genuine yet unrepresentative. We therefore report exact platforms and dates, summarise repeated themes without treating them as universal outcomes, and avoid using one dramatic review as proof. Readers should reopen current sources before making a decision because all counts and scores below can change after publication.",
         ],
       },
@@ -202,7 +205,7 @@ const en: SeoArticle[] = [
         id: "ratings",
         heading: "Why Hacoo ratings tell different stories",
         paragraphs: [
-          "The Apple App Store listing we checked in the Portugal locale displayed 4.7 out of 5 from 6.8 thousand ratings and identified Hacoo Tech as the developer. The Google Play listing displayed 3.6 from 57.6 thousand reviews. Trustpilot showed a 3.6 average, a 3.5 TrustScore and 3,257 reviews. These are not interchangeable samples. They cover different users, countries, periods, moderation systems and scoring formulas, so averaging the three numbers would create a statistic that none of the platforms actually publishes.",
+          "The Apple App Store listing we checked in the Portugal locale displayed 4.7 out of 5 from 6.8 thousand ratings and identified Hacoo Tech as the developer. The Google Play listing displayed 3.6 from 59.4 thousand reviews. Trustpilot showed a 3.7 average, a 3.5 TrustScore and 3,338 reviews. These are not interchangeable samples. They cover different users, countries, periods, moderation systems and scoring formulas, so averaging the three numbers would create a statistic that none of the platforms actually publishes.",
           "The gap itself is useful. It shows why a claim such as 'Hacoo has a 4.7 rating' is incomplete without naming the store and locale. It also warns against declaring the service good or bad from one score. Read the distribution and recent comments on the platform relevant to your device and region. Look for themes that relate to your intended use, then check whether the app, region settings, item availability and support information you see today match the experience described by older reviewers.",
         ],
       },
@@ -248,19 +251,19 @@ const en: SeoArticle[] = [
     standfirst: "There is no single Hacoo delivery time or shipping price that applies to every user. Region, item, route, parcel data and current service terms all matter.",
     summary: "A careful Hacoo shipping guide covering current-price checks, tracking evidence, parcel maths, region differences and support records.",
     targetKeyword: "hacoo shipping",
-    reviewedAt: "Public information checked 26 August 2026",
-    evidenceNote: "Hacoo's public pages do not provide one universal rate card or delivery timetable. Confirm the current quote and terms inside the responsible service before payment.",
+    reviewedAt: "Public information checked 16 September 2026",
+    evidenceNote: "Hacoo's shipping page currently publishes general processing and destination ranges, but not a universal guarantee or rate card. Confirm the current quote, route and terms before payment.",
     facts: [
+      ["USUAL GUIDANCE", "15–28 days to receive"],
+      ["PROCESSING", "3–5 business days"],
       ["VERIFY", "Current destination quote"],
-      ["COMPARE", "Total delivered cost"],
-      ["KEEP", "Order, tracking and support records"],
     ],
     sections: [
       {
         id: "known",
         heading: "What can be stated about Hacoo shipping",
         paragraphs: [
-          "Search results often promise a simple delivery time or cheap flat rate, but Hacoo's current public website does not publish one universal shipping table that covers every destination and product. The app experience and available services can also vary by region. Any article giving a single permanent price or number of days without naming destination, item, date and service is leaving out the variables that make the estimate meaningful.",
+          "Hacoo's public shipping page currently says the usual time to receive an order is 15–28 days and that processing normally takes 3–5 business days. It also gives destination guidance of 15–25 days for the United Kingdom, France, Germany and Italy; 15–30 days for Spain; and 25–65 days for other countries. An express option is described as about 5–7 working days. These are Hacoo's published general ranges, not a guarantee for every item, account, destination or disruption, and they do not create a universal shipping price.",
           "Public user reviews show both sides of that uncertainty. Some Trustpilot reviewers praise fast delivery, while some Google Play reviewers complain about parcel visibility or delivery service. These are individual reports, not controlled comparisons. Use them to identify questions: when does handling begin, what event creates tracking, which carrier completes delivery, what counts as a delay and what support evidence is required? The current checkout or responsible service must supply the transaction-specific answer.",
         ],
       },
@@ -268,7 +271,7 @@ const en: SeoArticle[] = [
         id: "before-order",
         heading: "Checks to make before placing an order",
         paragraphs: [
-          "Confirm your account region and delivery country first. Recent public reviews mention region-setting difficulties and different product visibility, so do not assume that a link shared by someone in another country exposes the same item, price or route. Open the item inside your own current session, select the exact variant and proceed far enough to see the applicable delivery information without completing payment. Capture the date, item total, shipping quote, estimated window and any displayed restrictions.",
+          "Confirm your account region and delivery country first. Recent public reviews mention region-setting difficulties and different product visibility, so do not assume that a link shared by someone in another country exposes the same item, price or route. Compare the current checkout information with Hacoo's general published range, but use the transaction-specific estimate when the two differ. Open the item inside your own session, select the exact variant and proceed far enough to see the applicable delivery information without completing payment. Capture the date, item total, shipping quote, estimated window and any displayed restrictions.",
           "Read the cancellation, return, refund and undeliverable-parcel terms that apply at that moment. Identify whether the product, platform, seller, warehouse, carrier or payment provider handles each stage. The word 'shipping' can hide several separate events: seller processing, domestic movement, consolidation, international transport, customs handling and last-mile delivery. A headline estimate may begin after processing rather than when you pay. Knowing the start and end points prevents you from comparing unlike timelines.",
         ],
       },
@@ -323,7 +326,7 @@ const de: SeoArticle[] = [
     title: "Hacoo Spreadsheet 2026: Produktlinks finden, speichern und prüfen",
     standfirst: "Ein nützliches Hacoo Spreadsheet ist keine riesige Liste unerklärter Links. Es ist ein wiederholbarer Weg von der Entdeckung zu einer kleinen, aktuellen und prüfbaren Auswahl.",
     summary: "Ein faktenbasierter Ablauf für Hacoo-bezogene Produktreferenzen, ohne veralteten Links, aufgeblähten Katalogzahlen oder verwaisten Screenshots zu vertrauen.",
-    reviewedAt: "Belege geprüft am 26. August 2026",
+    reviewedAt: "Belege geprüft am 16. September 2026",
     evidenceNote: "Grundlage sind Hacoos aktuelle offizielle Positionierung, öffentliche App-Store-Informationen und Prüfungen aktiver Quellseiten. Zahlen Dritter zur Kataloggröße gelten nicht als offizielle Fakten.",
     facts: [["HAUPTINTENTION", "Hacoo Spreadsheet"], ["ZWEITINTENTION", "Hacoo Finds und Produktlinks"], ["BESTE NUTZUNG", "Entdecken und danach prüfen"]],
     sections: [
@@ -362,7 +365,7 @@ const de: SeoArticle[] = [
     title: "Hacoo QC: Produktfotos vor der Entscheidung richtig prüfen",
     standfirst: "QC-Fotos verringern Unsicherheit nur, wenn der genaue Artikel bestätigt, in fester Reihenfolge geprüft und gezielt fehlender Beleg angefordert wird.",
     summary: "Eine praktische Hacoo-QC-Checkliste für Identität, Form, Maße, Material, Verarbeitung und klare Entscheidungsschwellen.",
-    reviewedAt: "Methode geprüft am 26. August 2026",
+    reviewedAt: "Methode geprüft am 16. September 2026",
     evidenceNote: "Dies ist eine unabhängige Methode zur Fotoprüfung. Sie behauptet nicht, dass jeder Hacoo-Post oder jedes verlinkte Produkt Lager-QC-Fotos enthält.",
     facts: [["ERSTER CHECK", "Artikel und Variante"], ["STÄRKSTER BELEG", "Klare Vergleichsansichten"], ["ERGEBNIS", "Akzeptieren, fragen oder ablehnen"]],
     sections: [
@@ -402,12 +405,12 @@ const de: SeoArticle[] = [
     title: "Hacoo Erfahrungen 2026: Was Nutzer berichten und was du prüfen solltest",
     standfirst: "Hacoo-Bewertungen unterscheiden sich stark nach Plattform und Region. Eine nützliche Einordnung blickt hinter eine einzelne Zahl und trennt Unternehmensangaben, Store-Daten und persönliche Erfahrungen.",
     summary: "Eine ausgewogene, datierte Auswertung von Hacoos Positionierung, App-Store-Werten, wiederkehrenden Kundenthemen und praktischen Prüfungen.",
-    reviewedAt: "Öffentlicher Bewertungsstand: 26. August 2026",
+    reviewedAt: "Öffentlicher Bewertungsstand: 16. September 2026",
     evidenceNote: "Geprüft wurden offizielle Hacoo-Seiten, Apple App Store, Google Play und Trustpilot. Bewertungen und Anzahlen ändern sich mit Zeit und Region.",
-    facts: [["APPLE PORTUGAL", "4,7 bei 6.800 Bewertungen"], ["GOOGLE PLAY", "3,6 bei 57.600 Rezensionen"], ["TRUSTPILOT", "3,6 bei 3.257 Rezensionen"]],
+    facts: [["APPLE PORTUGAL", "4,7 bei 6.800 Bewertungen"], ["GOOGLE PLAY", "3,6 bei 59.400 Rezensionen"], ["TRUSTPILOT", "3,7 bei 3.338 Rezensionen"]],
     sections: [
       { id: "method", heading: "Wie diese Hacoo-Erfahrungsanalyse recherchiert wurde", paragraphs: [
-        "Diese Analyse nutzt einen datierten Stand statt dauerhafte App-Wertungen vorzutäuschen. Am 26. August 2026 prüften wir Hacoos Website, Trust Center, Bedingungen und IP-Seite, den portugiesischen Apple-App-Store-Eintrag, den englischen US-Google-Play-Eintrag und das Trustpilot-Profil. Aussagen von Hacoo, Plattformstatistiken und Einzelbewertungen wurden getrennt, weil sie verschiedene Fragen beantworten.",
+        "Diese Analyse nutzt einen datierten Stand statt dauerhafte App-Wertungen vorzutäuschen. Am 16. September 2026 prüften wir Hacoos Website, Trust Center, Bedingungen und IP-Seite, den portugiesischen Apple-App-Store-Eintrag, den englischen US-Google-Play-Eintrag und das Trustpilot-Profil. Aussagen von Hacoo, Plattformstatistiken und Einzelbewertungen wurden getrennt, weil sie verschiedene Fragen beantworten.",
         "Store-Werte hängen von Region, Gerät, Zeitraum und Bewertungsverlauf ab. Trustpilot kann Profile zusammenführen und verwendet eine eigene Score-Methode. Einzelne Rezensionen können echt und trotzdem nicht repräsentativ sein. Deshalb nennen wir Plattform und Datum, fassen wiederkehrende Themen ohne Verallgemeinerung zusammen und nutzen keine dramatische Einzelmeinung als Beweis."
       ]},
       { id: "official-role", heading: "Wie Hacoo sich offiziell beschreibt", paragraphs: [
@@ -415,7 +418,7 @@ const de: SeoArticle[] = [
         "Drittseiten stellen die Rolle teilweise anders dar und nennen Hacoo Einkaufsagent oder veröffentlichen riesige Produktzahlen. Diese Angaben ließen sich auf den aktuellen offiziellen Seiten nicht bestätigen und werden hier nicht als Fakten übernommen. Die belastbare Aussage ist enger: Hacoo ist eine reale, aktuell gelistete App und Content-Plattform; eine konkrete Empfehlung, Verfügbarkeit oder Transaktion braucht dennoch eine aktuelle Prüfung."
       ]},
       { id: "ratings", heading: "Warum Hacoo-Wertungen unterschiedliche Geschichten erzählen", paragraphs: [
-        "Der geprüfte Apple-Eintrag in Portugal zeigte 4,7 von 5 bei 6.800 Bewertungen und Hacoo Tech als Entwickler. Google Play zeigte 3,6 bei 57.600 Rezensionen. Trustpilot zeigte einen Durchschnitt von 3,6, einen TrustScore von 3,5 und 3.257 Rezensionen. Diese Stichproben decken andere Nutzer, Länder, Zeiten, Moderations- und Rechenmethoden ab. Ein gemeinsamer Durchschnitt wäre eine erfundene Zahl.",
+        "Der geprüfte Apple-Eintrag in Portugal zeigte 4,7 von 5 bei 6.800 Bewertungen und Hacoo Tech als Entwickler. Google Play zeigte 3,6 bei 59.400 Rezensionen. Trustpilot zeigte einen Durchschnitt von 3,7, einen TrustScore von 3,5 und 3.338 Rezensionen. Diese Stichproben decken andere Nutzer, Länder, Zeiten, Moderations- und Rechenmethoden ab. Ein gemeinsamer Durchschnitt wäre eine erfundene Zahl.",
         "Die Differenz ist selbst nützlich. „Hacoo hat 4,7“ ist ohne Store und Region unvollständig. Sie zeigt auch, warum ein einzelner Score kein Gesamturteil liefert. Lies Verteilung und aktuelle Kommentare auf der für Gerät und Region relevanten Plattform. Prüfe dann, ob App, Regionseinstellung, Sichtbarkeit und Support heute mit älteren Berichten übereinstimmen."
       ]},
       { id: "positive", heading: "Was positive Hacoo-Bewertungen häufig loben", paragraphs: [
@@ -442,12 +445,12 @@ const de: SeoArticle[] = [
     title: "Hacoo Versand und Lieferung: Kosten, Tracking und Prüfungen vor der Bestellung",
     standfirst: "Es gibt keine einzelne Hacoo-Lieferzeit oder Versandgebühr für alle Nutzer. Region, Artikel, Route, Paketdaten und aktuelle Bedingungen entscheiden.",
     summary: "Ein sorgfältiger Hacoo-Versandratgeber zu aktuellen Preisen, Tracking, Paketberechnung, Regionen und Supportnachweisen.",
-    reviewedAt: "Öffentliche Angaben geprüft am 26. August 2026",
-    evidenceNote: "Hacoos öffentliche Seiten bieten keine universelle Preistabelle oder Lieferfrist. Bestätige Angebot und Bedingungen beim verantwortlichen Dienst vor der Zahlung.",
-    facts: [["PRÜFEN", "Aktuelles Zielangebot"], ["VERGLEICHEN", "Gelieferte Gesamtkosten"], ["AUFBEWAHREN", "Bestellung, Tracking und Support"]],
+    reviewedAt: "Öffentliche Angaben geprüft am 16. September 2026",
+    evidenceNote: "Hacoos Versandseite nennt allgemeine Bearbeitungs- und Zielspannen, aber keine Garantie oder universelle Preistabelle. Prüfe Angebot, Route und Bedingungen vor der Zahlung.",
+    facts: [["ÜBLICHE ANGABE", "15–28 Tage"], ["BEARBEITUNG", "3–5 Werktage"], ["PRÜFEN", "Aktuelles Zielangebot"]],
     sections: [
       { id: "known", heading: "Was sich über Hacoo-Versand belastbar sagen lässt", paragraphs: [
-        "Suchergebnisse versprechen oft eine einfache Frist oder billige Pauschale. Hacoos aktuelle öffentliche Website veröffentlicht jedoch keine universelle Tabelle für jedes Ziel und Produkt. Auch die App kann regional variieren. Jede dauerhaft genannte Zahl ohne Ziel, Artikel, Datum und Dienst lässt entscheidende Variablen aus.",
+        "Hacoos öffentliche Versandseite nennt derzeit üblicherweise 15–28 Tage bis zum Erhalt und 3–5 Werktage Bearbeitung. Für Großbritannien, Frankreich, Deutschland und Italien nennt sie 15–25 Tage, für Spanien 15–30 Tage, für andere Länder 25–65 Tage sowie etwa 5–7 Werktage für Express. Das sind allgemeine Hinweise, keine Garantie für jeden Artikel, jedes Ziel oder jede Störung und keine universelle Preistabelle.",
         "Öffentliche Erfahrungen zeigen beide Seiten: Manche Trustpilot-Nutzer loben schnelle Lieferung, einige Google-Play-Nutzer kritisieren Paketübersicht oder Service. Das sind persönliche Berichte, keine kontrollierten Vergleiche. Nutze sie für Fragen zu Bearbeitungsbeginn, Trackingereignis, Zusteller, Verzögerungsdefinition und benötigten Supportbelegen."
       ]},
       { id: "before-order", heading: "Prüfungen vor der Bestellung", paragraphs: [
@@ -485,7 +488,7 @@ const fr: SeoArticle[] = [
     title: "Tableur Hacoo 2026 : trouver, enregistrer et vérifier les liens produit",
     standfirst: "Un bon tableur Hacoo n'est pas une immense liste de liens sans contexte. C'est une méthode reproductible pour passer de la découverte à une sélection courte, actuelle et vérifiable.",
     summary: "Une méthode factuelle pour trouver des références liées à Hacoo sans croire des liens périmés, des chiffres de catalogue invérifiables ou des captures isolées.",
-    reviewedAt: "Sources vérifiées le 26 août 2026",
+    reviewedAt: "Sources vérifiées le 16 septembre 2026",
     evidenceNote: "Fondé sur le positionnement officiel actuel de Hacoo, les informations publiques des boutiques d'applications et la vérification de pages source actives. Les volumes annoncés par des tiers ne sont pas traités comme des faits officiels.",
     facts: [["INTENTION PRINCIPALE", "Tableur Hacoo"], ["INTENTION SECONDAIRE", "Hacoo finds et liens produit"], ["MEILLEUR USAGE", "Découvrir puis vérifier"]],
     sections: [
@@ -524,7 +527,7 @@ const fr: SeoArticle[] = [
     title: "QC Hacoo : lire les photos produit avant de décider",
     standfirst: "Les photos QC ne réduisent l'incertitude que si l'article exact est confirmé, examiné dans un ordre fixe et complété par une demande ciblée.",
     summary: "Une checklist QC Hacoo pratique pour identité, forme, mesures, matière, fabrication et seuils de décision.",
-    reviewedAt: "Méthode revue le 26 août 2026",
+    reviewedAt: "Méthode revue le 16 septembre 2026",
     evidenceNote: "Méthode indépendante de lecture des images. Elle ne prétend pas que chaque publication Hacoo ou produit lié offre des photos QC d'entrepôt.",
     facts: [["PREMIER CONTRÔLE", "Article et variante exacts"], ["PREUVE FORTE", "Vues claires et comparables"], ["SORTIE", "Accepter, questionner ou refuser"]],
     sections: [
@@ -564,12 +567,12 @@ const fr: SeoArticle[] = [
     title: "Avis Hacoo 2026 : ce que rapportent les utilisateurs et quoi vérifier",
     standfirst: "Les notes Hacoo varient fortement selon la plateforme et la région. Une analyse utile dépasse un score unique et sépare déclarations de l'entreprise, données des stores et expériences personnelles.",
     summary: "Une analyse équilibrée et datée du positionnement Hacoo, des scores publics, des thèmes clients et des vérifications utiles.",
-    reviewedAt: "Instantané public du 26 août 2026",
+    reviewedAt: "Instantané public du 16 septembre 2026",
     evidenceNote: "Sources : pages officielles Hacoo, Apple App Store, Google Play et Trustpilot. Notes et volumes changent selon le temps et la région.",
-    facts: [["APPLE PORTUGAL", "4,7 pour 6,8 k notes"], ["GOOGLE PLAY", "3,6 pour 57,6 k avis"], ["TRUSTPILOT", "3,6 pour 3 257 avis"]],
+    facts: [["APPLE PORTUGAL", "4,7 pour 6,8 k notes"], ["GOOGLE PLAY", "3,6 pour 59,4 k avis"], ["TRUSTPILOT", "3,7 pour 3 338 avis"]],
     sections: [
       { id: "method", heading: "Comment cet avis Hacoo a été recherché", paragraphs: [
-        "Cette analyse utilise un instantané daté. Le 26 août 2026, nous avons consulté le site, le Trust Center, les conditions et la page propriété intellectuelle de Hacoo, la fiche Apple au Portugal, Google Play en anglais américain et Trustpilot. Nous séparons les affirmations de Hacoo, les statistiques de plateformes et les avis individuels, car ils répondent à des questions différentes.",
+        "Cette analyse utilise un instantané daté. Le 16 septembre 2026, nous avons consulté le site, le Trust Center, les conditions et la page propriété intellectuelle de Hacoo, la fiche Apple au Portugal, Google Play en anglais américain et Trustpilot. Nous séparons les affirmations de Hacoo, les statistiques de plateformes et les avis individuels, car ils répondent à des questions différentes.",
         "Les notes dépendent du pays, de l'appareil, de la période et de l'historique. Trustpilot peut fusionner des profils et applique sa propre méthode. Un avis peut être authentique sans être représentatif. Nous nommons donc plateforme et date, synthétisons les thèmes sans généraliser et évitons de transformer un témoignage spectaculaire en preuve."
       ]},
       { id: "official-role", heading: "Ce que Hacoo dit officiellement être", paragraphs: [
@@ -577,7 +580,7 @@ const fr: SeoArticle[] = [
         "Certaines pages tierces décrivent Hacoo comme agent d'achat ou affichent d'énormes totaux de produits. Nous n'avons pas trouvé leur confirmation sur les pages officielles actuelles et ne les reprenons pas comme faits. Conclusion limitée : Hacoo est une application réelle et listée, mais chaque recommandation, disponibilité et contexte transactionnel doit être revérifié."
       ]},
       { id: "ratings", heading: "Pourquoi les notes Hacoo racontent des histoires différentes", paragraphs: [
-        "La fiche Apple Portugal consultée affichait 4,7 sur 5 pour 6,8 mille notes et Hacoo Tech comme développeur. Google Play affichait 3,6 pour 57,6 mille avis. Trustpilot affichait 3,6 de moyenne, un TrustScore de 3,5 et 3 257 avis. Ces échantillons couvrent des publics, pays, périodes et méthodes différents ; les moyenner créerait une statistique inexistante.",
+        "La fiche Apple Portugal consultée affichait 4,7 sur 5 pour 6,8 mille notes et Hacoo Tech comme développeur. Google Play affichait 3,6 pour 59,4 mille avis. Trustpilot affichait 3,7 de moyenne, un TrustScore de 3,5 et 3 338 avis. Ces échantillons couvrent des publics, pays, périodes et méthodes différents ; les moyenner créerait une statistique inexistante.",
         "L'écart montre qu'écrire « Hacoo a 4,7 » sans store ni région est incomplet. Un seul score ne suffit donc pas au verdict. Lisez distribution et commentaires récents sur la plateforme adaptée à votre appareil et pays, puis vérifiez si application, région, visibilité et support actuels correspondent aux anciens témoignages."
       ]},
       { id: "positive", heading: "Ce que les avis positifs Hacoo apprécient", paragraphs: [
@@ -604,12 +607,12 @@ const fr: SeoArticle[] = [
     title: "Livraison Hacoo : coûts, suivi et contrôles avant commande",
     standfirst: "Aucun délai ni prix Hacoo unique ne s'applique à tous. Région, article, route, données du colis et conditions actuelles comptent.",
     summary: "Un guide prudent sur prix actuels, suivi, calcul du colis, différences régionales et preuves à conserver.",
-    reviewedAt: "Informations publiques vérifiées le 26 août 2026",
-    evidenceNote: "Les pages publiques de Hacoo ne publient pas de tarif ou délai universel. Confirmez devis et conditions auprès du service responsable avant paiement.",
-    facts: [["VÉRIFIER", "Devis actuel pour la destination"], ["COMPARER", "Coût total livré"], ["CONSERVER", "Commande, suivi et support"]],
+    reviewedAt: "Informations publiques vérifiées le 16 septembre 2026",
+    evidenceNote: "La page livraison de Hacoo publie des plages générales de traitement et de destination, mais ni garantie ni grille tarifaire universelle. Confirmez devis, route et conditions.",
+    facts: [["INDICATION", "15–28 jours"], ["TRAITEMENT", "3–5 jours ouvrés"], ["VÉRIFIER", "Devis de destination"]],
     sections: [
       { id: "known", heading: "Ce qu'on peut affirmer sur la livraison Hacoo", paragraphs: [
-        "Les résultats de recherche promettent souvent un délai simple ou un tarif plat. Le site public actuel de Hacoo ne fournit pourtant pas une grille universelle couvrant tout pays et produit. L'expérience peut varier par région. Tout chiffre permanent sans destination, article, date et service retire les variables qui donnent du sens à l'estimation.",
+        "La page publique de livraison de Hacoo indique actuellement 15–28 jours habituellement jusqu’à réception et 3–5 jours ouvrés de traitement. Elle donne 15–25 jours pour Royaume-Uni, France, Allemagne et Italie, 15–30 pour l’Espagne, 25–65 pour les autres pays et environ 5–7 jours ouvrés en express. Ce sont des plages générales, pas une garantie ni un tarif universel.",
         "Les avis publics vont dans les deux sens : certains utilisateurs Trustpilot saluent une livraison rapide, certains avis Google Play critiquent visibilité du colis ou service. Ce sont des récits individuels. Utilisez-les pour demander quand débute le traitement, quel événement crée le suivi, quel transporteur livre, ce qui constitue un retard et quelles preuves sont nécessaires."
       ]},
       { id: "before-order", heading: "Contrôles avant de commander", paragraphs: [
@@ -647,7 +650,7 @@ const es: SeoArticle[] = [
     title: "Hacoo Spreadsheet 2026: cómo encontrar, guardar y verificar enlaces",
     standfirst: "Una hoja Hacoo útil no es una lista gigante de enlaces sin explicar. Es un método repetible para pasar del descubrimiento a una selección corta, actual y verificable.",
     summary: "Un flujo basado en hechos para encontrar referencias de Hacoo sin confiar en enlaces caducados, cifras infladas o capturas huérfanas.",
-    reviewedAt: "Pruebas revisadas el 26 de agosto de 2026",
+    reviewedAt: "Pruebas revisadas el 16 de septiembre de 2026",
     evidenceNote: "Basado en el posicionamiento oficial actual de Hacoo, datos públicos de las tiendas de aplicaciones y comprobaciones de páginas fuente activas. Las cifras de catálogos de terceros no se tratan como hechos oficiales.",
     facts: [["INTENCIÓN PRINCIPAL", "Hacoo spreadsheet"], ["INTENCIÓN SECUNDARIA", "Hacoo finds y enlaces"], ["MEJOR USO", "Descubrir y después verificar"]],
     sections: [
@@ -686,7 +689,7 @@ const es: SeoArticle[] = [
     title: "QC Hacoo: cómo leer fotos de producto antes de decidir",
     standfirst: "Las fotos QC reducen incertidumbre solo si confirmas el artículo exacto, revisas en orden fijo y pides la evidencia que puede cambiar la decisión.",
     summary: "Checklist QC Hacoo para identidad, forma, medidas, material, construcción y umbrales de decisión.",
-    reviewedAt: "Método revisado el 26 de agosto de 2026",
+    reviewedAt: "Método revisado el 16 de septiembre de 2026",
     evidenceNote: "Método independiente de revisión fotográfica. No afirma que toda publicación Hacoo o producto enlazado incluya fotos QC de almacén.",
     facts: [["PRIMER CONTROL", "Artículo y variante exactos"], ["MEJOR EVIDENCIA", "Vistas claras y comparables"], ["RESULTADO", "Aceptar, preguntar o rechazar"]],
     sections: [
@@ -726,12 +729,12 @@ const es: SeoArticle[] = [
     title: "Opiniones Hacoo 2026: qué cuentan los usuarios y qué verificar",
     standfirst: "Las puntuaciones de Hacoo cambian mucho entre plataformas y regiones. Una evaluación útil separa afirmaciones de la empresa, datos de tiendas y experiencias individuales.",
     summary: "Revisión equilibrada y fechada del posicionamiento oficial, las puntuaciones, los temas de clientes y los controles prácticos.",
-    reviewedAt: "Instantánea pública: 26 de agosto de 2026",
+    reviewedAt: "Instantánea pública: 16 de septiembre de 2026",
     evidenceNote: "Fuentes: páginas oficiales de Hacoo, Apple App Store, Google Play y Trustpilot. Las puntuaciones y cantidades cambian con el tiempo y la región.",
-    facts: [["APPLE PORTUGAL", "4,7 con 6,8 mil valoraciones"], ["GOOGLE PLAY", "3,6 con 57,6 mil reseñas"], ["TRUSTPILOT", "3,6 con 3.257 reseñas"]],
+    facts: [["APPLE PORTUGAL", "4,7 con 6,8 mil valoraciones"], ["GOOGLE PLAY", "3,6 con 59,4 mil reseñas"], ["TRUSTPILOT", "3,7 con 3.338 reseñas"]],
     sections: [
       { id: "method", heading: "Cómo se investigó esta reseña de Hacoo", paragraphs: [
-        "Usamos una instantánea fechada. El 26 de agosto de 2026 revisamos la web, Trust Center, condiciones y propiedad intelectual de Hacoo, Apple Portugal, Google Play en inglés estadounidense y Trustpilot. Separamos declaraciones de Hacoo, estadísticas de plataformas y opiniones individuales porque responden preguntas distintas.",
+        "Usamos una instantánea fechada. El 16 de septiembre de 2026 revisamos la web, Trust Center, condiciones y propiedad intelectual de Hacoo, Apple Portugal, Google Play en inglés estadounidense y Trustpilot. Separamos declaraciones de Hacoo, estadísticas de plataformas y opiniones individuales porque responden preguntas distintas.",
         "Las notas dependen de país, dispositivo, periodo e historial. Trustpilot puede fusionar perfiles y calcula su propia puntuación. Una opinión puede ser auténtica y no representativa. Por eso citamos plataforma y fecha, sintetizamos temas sin universalizarlos y no usamos una reseña extrema como prueba."
       ]},
       { id: "official-role", heading: "Qué dice Hacoo que es", paragraphs: [
@@ -739,7 +742,7 @@ const es: SeoArticle[] = [
         "Algunas páginas de terceros la llaman agente de compras o publican enormes cifras de productos. No encontramos confirmación de esos totales en las páginas oficiales actuales y no los repetimos como hechos. La conclusión segura es más estrecha: Hacoo es una app real y listada, pero cada recomendación, disponibilidad y transacción necesita comprobación actual."
       ]},
       { id: "ratings", heading: "Por qué las puntuaciones cuentan historias distintas", paragraphs: [
-        "Apple Portugal mostraba 4,7 de 5 con 6,8 mil valoraciones y Hacoo Tech como desarrollador. Google Play mostraba 3,6 con 57,6 mil reseñas. Trustpilot mostraba 3,6 de media, TrustScore 3,5 y 3.257 reseñas. Son muestras de usuarios, países, periodos y métodos diferentes; promediarlas inventaría una cifra.",
+        "Apple Portugal mostraba 4,7 de 5 con 6,8 mil valoraciones y Hacoo Tech como desarrollador. Google Play mostraba 3,6 con 59,4 mil reseñas. Trustpilot mostraba 3,7 de media, TrustScore 3,5 y 3.338 reseñas. Son muestras de usuarios, países, periodos y métodos diferentes; promediarlas inventaría una cifra.",
         "La diferencia demuestra que «Hacoo tiene 4,7» está incompleto sin tienda y región. Lee distribución y comentarios recientes en la plataforma pertinente y verifica si app, región, visibilidad y soporte actuales coinciden con experiencias antiguas."
       ]},
       { id: "positive", heading: "Qué suelen valorar las opiniones positivas", paragraphs: [
@@ -766,12 +769,12 @@ const es: SeoArticle[] = [
     title: "Envío y entrega de Hacoo: costes, seguimiento y controles",
     standfirst: "No existe un único plazo o precio Hacoo para todos. Región, artículo, ruta, paquete y condiciones actuales importan.",
     summary: "Guía cuidadosa sobre presupuesto actual, tracking, cálculo del paquete, diferencias regionales y registros de soporte.",
-    reviewedAt: "Información pública revisada el 26 de agosto de 2026",
-    evidenceNote: "Las páginas públicas de Hacoo no ofrecen una tarifa o calendario universal. Confirma el presupuesto y las condiciones con el servicio responsable antes de pagar.",
-    facts: [["VERIFICA", "Presupuesto del destino"], ["COMPARA", "Coste total entregado"], ["CONSERVA", "Pedido, tracking y soporte"]],
+    reviewedAt: "Información pública revisada el 16 de septiembre de 2026",
+    evidenceNote: "La página de envío de Hacoo publica plazos generales de procesamiento y destino, pero no una garantía ni una tarifa universal. Confirma presupuesto, ruta y condiciones.",
+    facts: [["ORIENTACIÓN", "15–28 días"], ["PROCESAMIENTO", "3–5 días laborables"], ["VERIFICA", "Presupuesto del destino"]],
     sections: [
       { id: "known", heading: "Qué puede afirmarse sobre el envío Hacoo", paragraphs: [
-        "Los resultados suelen prometer un plazo simple o tarifa plana. La web pública actual de Hacoo no publica una tabla universal para todo destino y producto. La experiencia también puede variar por región. Cualquier cifra permanente sin destino, artículo, fecha y servicio omite las variables que dan sentido a la estimación.",
+        "La página pública de envío de Hacoo indica actualmente una recepción habitual de 15–28 días y 3–5 días laborables de procesamiento. Señala 15–25 días para Reino Unido, Francia, Alemania e Italia; 15–30 para España; 25–65 para otros países; y unos 5–7 días laborables en exprés. Son rangos generales, no una garantía ni una tarifa universal.",
         "Las opiniones muestran ambos lados: algunas elogian entrega rápida y otras critican visibilidad o servicio. Son relatos individuales. Úsalos para preguntar cuándo empieza el procesamiento, qué evento crea tracking, qué transportista entrega, qué es retraso y qué pruebas requiere soporte."
       ]},
       { id: "before-order", heading: "Comprobaciones antes de pedir", paragraphs: [
@@ -809,7 +812,7 @@ const it: SeoArticle[] = [
     title: "Hacoo Spreadsheet 2026: trovare, salvare e verificare i link prodotto",
     standfirst: "Un foglio Hacoo utile non è un enorme elenco di link senza spiegazioni. È un metodo ripetibile per arrivare a una selezione breve, attuale e verificabile.",
     summary: "Un flusso basato sui fatti per trovare riferimenti Hacoo senza fidarsi di link vecchi, numeri gonfiati o screenshot senza fonte.",
-    reviewedAt: "Fonti verificate il 26 agosto 2026",
+    reviewedAt: "Fonti verificate il 16 settembre 2026",
     evidenceNote: "Basato sul posizionamento ufficiale attuale di Hacoo, sulle informazioni pubbliche degli app store e sul controllo di pagine sorgente attive. I totali di catalogo di terzi non sono trattati come fatti ufficiali.",
     facts: [["INTENTO PRIMARIO", "Hacoo spreadsheet"], ["INTENTO SECONDARIO", "Hacoo finds e link prodotto"], ["USO MIGLIORE", "Scoprire, poi verificare"]],
     sections: [
@@ -848,7 +851,7 @@ const it: SeoArticle[] = [
     title: "Hacoo QC: come leggere le foto prodotto prima di decidere",
     standfirst: "Le foto QC riducono l'incertezza solo se confermi l'articolo esatto, segui un ordine fisso e chiedi la prova che può cambiare la decisione.",
     summary: "Checklist Hacoo QC per identità, forma, misure, materiale, costruzione e soglie decisionali.",
-    reviewedAt: "Metodo rivisto il 26 agosto 2026",
+    reviewedAt: "Metodo rivisto il 16 settembre 2026",
     evidenceNote: "Metodo indipendente di revisione fotografica. Non afferma che ogni post Hacoo o prodotto collegato includa foto QC di magazzino.",
     facts: [["PRIMO CONTROLLO", "Articolo e variante"], ["PROVA MIGLIORE", "Viste chiare e comparabili"], ["USCITA", "Accetta, chiedi o rifiuta"]],
     sections: [
@@ -888,12 +891,12 @@ const it: SeoArticle[] = [
     title: "Recensioni Hacoo 2026: cosa riferiscono gli utenti e cosa verificare",
     standfirst: "I punteggi Hacoo variano molto per piattaforma e regione. Un'analisi utile separa dichiarazioni aziendali, dati degli store ed esperienze individuali.",
     summary: "Analisi equilibrata e datata di posizionamento, valutazioni pubbliche, temi ricorrenti e controlli pratici.",
-    reviewedAt: "Istantanea pubblica: 26 agosto 2026",
+    reviewedAt: "Istantanea pubblica: 16 settembre 2026",
     evidenceNote: "Fonti: pagine ufficiali Hacoo, Apple App Store, Google Play e Trustpilot. Punteggi e numeri cambiano con tempo e località.",
-    facts: [["APPLE PORTOGALLO", "4,7 da 6,8 mila valutazioni"], ["GOOGLE PLAY", "3,6 da 57,6 mila recensioni"], ["TRUSTPILOT", "3,6 da 3.257 recensioni"]],
+    facts: [["APPLE PORTOGALLO", "4,7 da 6,8 mila valutazioni"], ["GOOGLE PLAY", "3,6 da 59,4 mila recensioni"], ["TRUSTPILOT", "3,7 da 3.338 recensioni"]],
     sections: [
       { id: "method", heading: "Come è stata ricercata questa recensione Hacoo", paragraphs: [
-        "Usiamo un'istantanea datata. Il 26 agosto 2026 abbiamo controllato sito, Trust Center, termini e proprietà intellettuale Hacoo, Apple Portogallo, Google Play in inglese USA e Trustpilot. Separiamo affermazioni di Hacoo, statistiche delle piattaforme e recensioni individuali perché rispondono a domande diverse.",
+        "Usiamo un'istantanea datata. Il 16 settembre 2026 abbiamo controllato sito, Trust Center, termini e proprietà intellettuale Hacoo, Apple Portogallo, Google Play in inglese USA e Trustpilot. Separiamo affermazioni di Hacoo, statistiche delle piattaforme e recensioni individuali perché rispondono a domande diverse.",
         "I punteggi dipendono da paese, dispositivo, periodo e storia. Trustpilot può unire profili e usa un metodo proprio. Una recensione può essere vera ma non rappresentativa. Perciò citiamo piattaforma e data, sintetizziamo temi senza universalizzarli e non trasformiamo un caso estremo in prova."
       ]},
       { id: "official-role", heading: "Come Hacoo si descrive ufficialmente", paragraphs: [
@@ -901,7 +904,7 @@ const it: SeoArticle[] = [
         "Alcune pagine terze la chiamano agente di acquisto o pubblicano enormi totali. Non li abbiamo trovati confermati nelle pagine ufficiali e non li ripetiamo come fatti. Conclusione limitata: Hacoo è un'app reale e attualmente elencata, ma raccomandazione, disponibilità e transazione richiedono verifica corrente."
       ]},
       { id: "ratings", heading: "Perché i punteggi raccontano storie diverse", paragraphs: [
-        "Apple Portogallo mostrava 4,7 su 5 da 6,8 mila valutazioni e Hacoo Tech come sviluppatore. Google Play mostrava 3,6 da 57,6 mila recensioni. Trustpilot mostrava media 3,6, TrustScore 3,5 e 3.257 recensioni. Sono campioni con utenti, paesi, periodi e metodi diversi; farne la media creerebbe una statistica inesistente.",
+        "Apple Portogallo mostrava 4,7 su 5 da 6,8 mila valutazioni e Hacoo Tech come sviluppatore. Google Play mostrava 3,6 da 59,4 mila recensioni. Trustpilot mostrava media 3,7, TrustScore 3,5 e 3.338 recensioni. Sono campioni con utenti, paesi, periodi e metodi diversi; farne la media creerebbe una statistica inesistente.",
         "La differenza dimostra che “Hacoo ha 4,7” è incompleto senza store e regione. Leggi distribuzione e commenti recenti sulla piattaforma pertinente e verifica se app, regione, visibilità e supporto di oggi corrispondono alle esperienze precedenti."
       ]},
       { id: "positive", heading: "Cosa apprezzano le recensioni positive", paragraphs: [
@@ -928,12 +931,12 @@ const it: SeoArticle[] = [
     title: "Spedizione Hacoo: costi, tracking e controlli prima dell'ordine",
     standfirst: "Non esiste un unico tempo o prezzo Hacoo valido per tutti. Regione, articolo, rotta, pacco e condizioni correnti contano.",
     summary: "Guida prudente a preventivo attuale, tracciamento, calcolo pacco, differenze regionali e prove da conservare.",
-    reviewedAt: "Informazioni pubbliche controllate il 26 agosto 2026",
-    evidenceNote: "Le pagine pubbliche Hacoo non pubblicano una tariffa o tempistica universale. Conferma preventivo e condizioni con il servizio responsabile prima del pagamento.",
-    facts: [["VERIFICA", "Preventivo per la destinazione"], ["CONFRONTA", "Costo totale consegnato"], ["CONSERVA", "Ordine, tracking e supporto"]],
+    reviewedAt: "Informazioni pubbliche controllate il 16 settembre 2026",
+    evidenceNote: "La pagina di spedizione Hacoo pubblica intervalli generali di elaborazione e destinazione, ma non una garanzia o tariffa universale. Conferma preventivo, rotta e condizioni.",
+    facts: [["INDICAZIONE", "15–28 giorni"], ["ELABORAZIONE", "3–5 giorni lavorativi"], ["VERIFICA", "Preventivo destinazione"]],
     sections: [
       { id: "known", heading: "Cosa si può affermare sulla spedizione Hacoo", paragraphs: [
-        "I risultati di ricerca promettono spesso un tempo semplice o tariffa piatta. Il sito pubblico attuale non pubblica una tabella universale per ogni destinazione e prodotto. L'esperienza può variare per regione. Ogni numero permanente senza destinazione, articolo, data e servizio omette le variabili che rendono utile la stima.",
+        "La pagina pubblica di spedizione Hacoo indica attualmente 15–28 giorni abituali fino alla ricezione e 3–5 giorni lavorativi di elaborazione. Riporta 15–25 giorni per Regno Unito, Francia, Germania e Italia; 15–30 per la Spagna; 25–65 per altri paesi; e circa 5–7 lavorativi per l’express. Sono intervalli generali, non una garanzia o tariffa universale.",
         "Le recensioni mostrano entrambi i lati: alcuni lodano consegne veloci, altri criticano visibilità o servizio. Sono racconti individuali. Usali per chiedere quando inizia l'elaborazione, quale evento crea tracking, quale carrier consegna, cosa è ritardo e quali prove servono."
       ]},
       { id: "before-order", heading: "Controlli prima dell'ordine", paragraphs: [
@@ -971,7 +974,7 @@ const pt: SeoArticle[] = [
     title: "Hacoo Spreadsheet 2026: encontrar, guardar e verificar ligações",
     standfirst: "Uma folha Hacoo útil não é uma lista enorme de ligações sem contexto. É um método repetível para chegar a uma seleção curta, atual e verificável.",
     summary: "Um processo baseado em factos para encontrar referências Hacoo sem confiar em ligações antigas, números inflacionados ou capturas sem fonte.",
-    reviewedAt: "Provas verificadas em 26 de agosto de 2026",
+    reviewedAt: "Provas verificadas em 16 de setembro de 2026",
     evidenceNote: "Baseado no posicionamento oficial atual da Hacoo, em informação pública das lojas de aplicações e na verificação de páginas de origem ativas. Totais de catálogos de terceiros não são tratados como factos oficiais.",
     facts: [["INTENÇÃO PRINCIPAL", "Hacoo spreadsheet"], ["INTENÇÃO SECUNDÁRIA", "Hacoo finds e ligações"], ["MELHOR USO", "Descobrir e depois verificar"]],
     sections: [
@@ -1010,7 +1013,7 @@ const pt: SeoArticle[] = [
     title: "Hacoo QC: como ler fotografias antes de decidir",
     standfirst: "As fotografias QC reduzem incerteza apenas quando confirma o artigo exato, segue uma ordem fixa e pede a prova que pode mudar a decisão.",
     summary: "Checklist Hacoo QC para identidade, forma, medidas, material, construção e limites de decisão.",
-    reviewedAt: "Método revisto em 26 de agosto de 2026",
+    reviewedAt: "Método revisto em 16 de setembro de 2026",
     evidenceNote: "Método independente de revisão fotográfica. Não afirma que cada publicação Hacoo ou produto ligado inclui fotografias QC de armazém.",
     facts: [["PRIMEIRO CONTROLO", "Artigo e variante"], ["MELHOR PROVA", "Vistas claras e comparáveis"], ["RESULTADO", "Aceitar, perguntar ou rejeitar"]],
     sections: [
@@ -1050,12 +1053,12 @@ const pt: SeoArticle[] = [
     title: "Avaliações Hacoo 2026: o que relatam os utilizadores e o que verificar",
     standfirst: "As pontuações Hacoo variam muito entre plataformas e regiões. Uma análise útil separa afirmações da empresa, dados das lojas e experiências individuais.",
     summary: "Análise equilibrada e datada do posicionamento, classificações públicas, temas de clientes e verificações práticas.",
-    reviewedAt: "Instantâneo público: 26 de agosto de 2026",
+    reviewedAt: "Instantâneo público: 16 de setembro de 2026",
     evidenceNote: "Fontes: páginas oficiais Hacoo, Apple App Store, Google Play e Trustpilot. Pontuações e números mudam com tempo e região.",
-    facts: [["APPLE PORTUGAL", "4,7 em 6,8 mil avaliações"], ["GOOGLE PLAY", "3,6 em 57,6 mil avaliações"], ["TRUSTPILOT", "3,6 em 3.257 avaliações"]],
+    facts: [["APPLE PORTUGAL", "4,7 em 6,8 mil avaliações"], ["GOOGLE PLAY", "3,6 em 59,4 mil avaliações"], ["TRUSTPILOT", "3,7 em 3.338 avaliações"]],
     sections: [
       { id: "method", heading: "Como esta análise Hacoo foi pesquisada", paragraphs: [
-        "Usamos um instantâneo datado. Em 26 de agosto de 2026 consultámos site, Trust Center, termos e propriedade intelectual da Hacoo, Apple Portugal, Google Play em inglês dos EUA e Trustpilot. Separamos declarações da Hacoo, estatísticas das plataformas e opiniões individuais porque respondem a perguntas diferentes.",
+        "Usamos um instantâneo datado. Em 16 de setembro de 2026 consultámos site, Trust Center, termos e propriedade intelectual da Hacoo, Apple Portugal, Google Play em inglês dos EUA e Trustpilot. Separamos declarações da Hacoo, estatísticas das plataformas e opiniões individuais porque respondem a perguntas diferentes.",
         "As pontuações dependem de país, dispositivo, período e histórico. A Trustpilot pode fundir perfis e usa método próprio. Uma opinião pode ser verdadeira sem representar todos. Por isso citamos plataforma e data, resumimos temas sem universalizar e não transformamos um caso extremo em prova."
       ]},
       { id: "official-role", heading: "O que a Hacoo diz oficialmente ser", paragraphs: [
@@ -1063,7 +1066,7 @@ const pt: SeoArticle[] = [
         "Algumas páginas terceiras chamam-lhe agente de compras ou publicam totais enormes. Não encontrámos confirmação nas páginas oficiais atuais e não repetimos como factos. Conclusão limitada: Hacoo é uma aplicação real e listada, mas recomendação, disponibilidade e transação específicas exigem verificação atual."
       ]},
       { id: "ratings", heading: "Porque as pontuações contam histórias diferentes", paragraphs: [
-        "A Apple Portugal mostrava 4,7 em 5 com 6,8 mil avaliações e Hacoo Tech como programador. Google Play mostrava 3,6 com 57,6 mil avaliações. Trustpilot mostrava média 3,6, TrustScore 3,5 e 3.257 avaliações. São amostras de utilizadores, países, períodos e métodos diferentes; fazer uma média criaria uma estatística inexistente.",
+        "A Apple Portugal mostrava 4,7 em 5 com 6,8 mil avaliações e Hacoo Tech como programador. Google Play mostrava 3,6 com 59,4 mil avaliações. Trustpilot mostrava média 3,7, TrustScore 3,5 e 3.338 avaliações. São amostras de utilizadores, países, períodos e métodos diferentes; fazer uma média criaria uma estatística inexistente.",
         "A diferença prova que «Hacoo tem 4,7» está incompleto sem loja e região. Leia distribuição e comentários recentes na plataforma relevante e confirme se aplicação, região, visibilidade e suporte atuais correspondem a experiências antigas."
       ]},
       { id: "positive", heading: "O que as avaliações positivas elogiam", paragraphs: [
@@ -1090,12 +1093,12 @@ const pt: SeoArticle[] = [
     title: "Envio e entrega Hacoo: custos, tracking e verificações",
     standfirst: "Não existe um prazo ou preço Hacoo único para todos. Região, artigo, rota, pacote e condições atuais contam.",
     summary: "Guia cuidadoso para orçamento atual, acompanhamento, cálculo do pacote, diferenças regionais e registos de suporte.",
-    reviewedAt: "Informação pública verificada em 26 de agosto de 2026",
-    evidenceNote: "As páginas públicas Hacoo não publicam tarifa ou calendário universal. Confirme orçamento e condições com o serviço responsável antes de pagar.",
-    facts: [["VERIFIQUE", "Orçamento para o destino"], ["COMPARE", "Custo total entregue"], ["GUARDE", "Encomenda, tracking e suporte"]],
+    reviewedAt: "Informação pública verificada em 16 de setembro de 2026",
+    evidenceNote: "A página de envio Hacoo publica intervalos gerais de processamento e destino, mas não uma garantia ou tarifa universal. Confirme orçamento, rota e condições.",
+    facts: [["ORIENTAÇÃO", "15–28 dias"], ["PROCESSAMENTO", "3–5 dias úteis"], ["VERIFIQUE", "Orçamento do destino"]],
     sections: [
       { id: "known", heading: "O que pode afirmar-se sobre envio Hacoo", paragraphs: [
-        "Resultados de pesquisa prometem muitas vezes prazo simples ou tarifa fixa. O site público atual não publica uma tabela universal para todo destino e produto. A experiência varia por região. Qualquer número permanente sem destino, artigo, data e serviço omite variáveis essenciais.",
+        "A página pública de envio Hacoo indica atualmente 15–28 dias habituais até à receção e 3–5 dias úteis de processamento. Indica 15–25 dias para Reino Unido, França, Alemanha e Itália; 15–30 para Espanha; 25–65 para outros países; e cerca de 5–7 dias úteis no expresso. São intervalos gerais, não uma garantia ou tarifa universal.",
         "As avaliações mostram ambos os lados: algumas elogiam entrega rápida, outras criticam visibilidade ou serviço. São relatos individuais. Use-os para perguntar quando começa processamento, qual evento cria tracking, quem entrega, o que é atraso e que provas o suporte exige."
       ]},
       { id: "before-order", heading: "Verificações antes de encomendar", paragraphs: [
@@ -1127,4 +1130,11 @@ const pt: SeoArticle[] = [
   }
 ];
 
-export const seoArticles: Record<Locale, SeoArticle[]> = { en, de, fr, es, it, pt };
+export const seoArticles: Record<Locale, SeoArticle[]> = {
+  en: [...en, ...expandedSeoArticles.en],
+  de: [...de, ...expandedSeoArticles.de],
+  fr: [...fr, ...expandedSeoArticles.fr],
+  es: [...es, ...expandedSeoArticles.es],
+  it: [...it, ...expandedSeoArticles.it],
+  pt: [...pt, ...expandedSeoArticles.pt],
+};

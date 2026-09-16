@@ -334,11 +334,15 @@ export function ArticlePage({ locale, slug }: { locale: Locale; slug: string }) 
   const c = localizedContent[locale]; const article = c.longGuides.find((item) => item.id === slug);
   if (!article) return null;
   const canonical = `https://hacoos.org/${locale}/articles/${article.id}`;
+  const articleIndex = Math.max(0, c.longGuides.findIndex((item) => item.id === article.id));
+  const productImage = c.products[articleIndex % c.products.length].image;
+  const publishedAt = article.publishedAt ?? "2026-08-26";
+  const modifiedAt = article.modifiedAt ?? "2026-09-16";
   const wordCount = [article.title, article.standfirst, ...article.sections.flatMap((section) => [section.heading, ...section.paragraphs])].join(" ").trim().split(/\s+/).length;
   const articleJsonLd = {
     "@context": "https://schema.org", "@type": "Article", headline: article.title, description: article.standfirst,
-    datePublished: "2026-08-26", dateModified: "2026-08-26", inLanguage: locale, wordCount, keywords: article.targetKeyword,
-    mainEntityOfPage: canonical, image: `https://hacoos.org${c.products[Math.max(0, c.longGuides.findIndex((item) => item.id === article.id))].image}`,
+    datePublished: publishedAt, dateModified: modifiedAt, inLanguage: locale, wordCount, keywords: article.targetKeyword,
+    mainEntityOfPage: canonical, image: `https://hacoos.org${productImage}`,
     author: { "@type": "Organization", name: "Hacoos.org", url: "https://hacoos.org/en" },
     publisher: { "@type": "Organization", name: "Hacoos.org", url: "https://hacoos.org/en", logo: { "@type": "ImageObject", url: "https://hacoos.org/hacoo-logo.png", width: 217, height: 57 } }, isAccessibleForFree: true,
   };

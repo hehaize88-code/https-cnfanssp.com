@@ -10,12 +10,14 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string; slug: string }> }): Promise<Metadata> {
   const { locale, slug } = await params;
-  if (!locales.includes(locale as Locale) || !articleSlugs.includes(slug)) return {};
+  if (!locales.includes(locale as Locale) || !articleSlugs.includes(slug as (typeof articleSlugs)[number])) return {};
   const article = localizedContent[locale as Locale].longGuides.find((item) => item.id === slug)!;
   const title = `${article.title} | Hacoos.org`;
   const canonical = `https://hacoos.org/${locale}/articles/${slug}`;
-  const articleImageNumber = articleSlugs.indexOf(slug) + 1;
+  const articleImageNumber = (articleSlugs.indexOf(slug as (typeof articleSlugs)[number]) % 6) + 1;
   const image = `https://hacoos.org/products/hacoo-product-${String(articleImageNumber).padStart(2, "0")}.webp`;
+  const publishedTime = article.publishedAt ?? "2026-08-26";
+  const modifiedTime = article.modifiedAt ?? "2026-09-16";
   return {
     title,
     description: article.standfirst,
@@ -33,8 +35,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       description: article.standfirst,
       url: canonical,
       locale,
-      publishedTime: "2026-08-26",
-      modifiedTime: "2026-08-26",
+      publishedTime,
+      modifiedTime,
       images: [{ url: image, alt: article.title }],
     },
     twitter: {
@@ -48,6 +50,6 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 
 export default async function LocalisedArticle({ params }: { params: Promise<{ locale: string; slug: string }> }) {
   const { locale, slug } = await params;
-  if (!locales.includes(locale as Locale) || !articleSlugs.includes(slug)) notFound();
+  if (!locales.includes(locale as Locale) || !articleSlugs.includes(slug as (typeof articleSlugs)[number])) notFound();
   return <ArticlePage locale={locale as Locale} slug={slug} />;
 }
