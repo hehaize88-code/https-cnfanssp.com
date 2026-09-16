@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { articleSlugs, type ArticleSlug } from "./article-data";
-import { getArticle } from "./article-locales";
+import { getArticle, hasLocalizedArticle } from "./article-locales";
 import { articleRoutePath, languages, routePath, type Lang } from "./site";
 
 export function isArticleSlug(value:string):value is ArticleSlug{return articleSlugs.includes(value as ArticleSlug)}
@@ -15,26 +15,29 @@ const ui:Record<Lang,{all:string;guide:string;updated:string;sections:string;con
 
 export function articleMetadata(lang:Lang,slug:ArticleSlug):Metadata{
  const article=getArticle(lang,slug);
- const languageAlternates=Object.fromEntries(languages.map(code=>[code,articleRoutePath(code,slug)]));
- return {title:article.title,description:article.description,alternates:{canonical:articleRoutePath(lang,slug),languages:{...languageAlternates,"x-default":articleRoutePath("en",slug)}},robots:{index:true,follow:true},openGraph:{type:"article",title:article.title,description:article.description}};
+ const availableLanguages=hasLocalizedArticle(slug)?languages:["en"] as const;
+ const languageAlternates=Object.fromEntries(availableLanguages.map(code=>[code,articleRoutePath(code,slug)]));
+ return {title:article.title,description:article.description,keywords:article.keywords,alternates:{canonical:articleRoutePath(lang,slug),languages:{...languageAlternates,"x-default":articleRoutePath("en",slug)}},robots:{index:true,follow:true},openGraph:{type:"article",title:article.title,description:article.description,url:articleRoutePath(lang,slug)}};
 }
 
 export function ArticlePage({lang,slug}:{lang:Lang;slug:ArticleSlug}){
  const article=getArticle(lang,slug);
  const t=ui[lang];
  const articleUrl=`https://hacoos.shop${articleRoutePath(lang,slug)}`;
- const articleDate=slug==="hacoo-product-specification-checklist"?"2026-08-29T00:00:00+08:00":"2026-08-27T00:00:00+00:00";
- const schema={"@context":"https://schema.org","@graph":[{"@type":"Article",headline:article.title,description:article.description,datePublished:articleDate,dateModified:articleDate,inLanguage:lang,mainEntityOfPage:{"@type":"WebPage","@id":articleUrl},author:{"@type":"Organization",name:"Hacoos Shop Independent Research Desk",url:"https://hacoos.shop/articles/"},publisher:{"@type":"Organization",name:"Hacoos Shop Independent Research Desk",url:"https://hacoos.shop/"}},{"@type":"BreadcrumbList",itemListElement:[{"@type":"ListItem",position:1,name:"Hacoos Shop",item:"https://hacoos.shop/"},{"@type":"ListItem",position:2,name:t.all,item:`https://hacoos.shop${routePath(lang,"articles")}`},{"@type":"ListItem",position:3,name:article.title,item:articleUrl}]}]};
+ const articleDate=article.publishedISO ?? (slug==="hacoo-product-specification-checklist"?"2026-08-29T00:00:00+08:00":"2026-08-27T00:00:00+00:00");
+ const modifiedDate=article.updatedISO ?? articleDate;
+ const related=articleSlugs.filter(item=>item!==slug).slice(0,3).map(item=>getArticle(lang,item));
+ const schema={"@context":"https://schema.org","@graph":[{"@type":"Article",headline:article.title,description:article.description,datePublished:articleDate,dateModified:modifiedDate,keywords:article.keywords?.join(", "),inLanguage:lang,mainEntityOfPage:{"@type":"WebPage","@id":articleUrl},author:{"@type":"Organization",name:"Hacoos Shop Independent Research Desk",url:"https://hacoos.shop/articles/"},publisher:{"@type":"Organization",name:"Hacoos Shop Independent Research Desk",url:"https://hacoos.shop/"}},{"@type":"BreadcrumbList",itemListElement:[{"@type":"ListItem",position:1,name:"Hacoos Shop",item:"https://hacoos.shop/"},{"@type":"ListItem",position:2,name:t.all,item:`https://hacoos.shop${routePath(lang,"articles")}`},{"@type":"ListItem",position:3,name:article.title,item:articleUrl}]}]};
  return <main id="top">
   <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(schema)}}/>
-  <div className="statusbar"><span>{t.independent}</span><span>Research checked 27 Aug 2026</span></div>
-  <header><a href={routePath(lang,"home")} aria-label="Hacoos Shop home"><span className="brand"><b>HACOO</b><i>independent edits</i></span></a><div className="article-head-actions"><a className="back-index" href={routePath(lang,"articles")}>{t.all} →</a><details className="language"><summary>{lang.toUpperCase()} <span>⌄</span></summary><div>{languages.map(code=><a className={code===lang?"active":""} href={articleRoutePath(code,slug)} hrefLang={code} key={code}>{code.toUpperCase()}</a>)}</div></details></div></header>
+  <div className="statusbar"><span>{t.independent}</span><span>Research checked {article.updated}</span></div>
+  <header><a href={routePath(lang,"home")} aria-label="Hacoos Shop home"><span className="brand"><b>HACOO</b><i>independent edits</i></span></a><div className="article-head-actions"><a className="back-index" href={routePath(lang,"articles")}>{t.all} →</a>{hasLocalizedArticle(slug)?<details className="language"><summary>{lang.toUpperCase()} <span>⌄</span></summary><div>{languages.map(code=><a className={code===lang?"active":""} href={articleRoutePath(code,slug)} hrefLang={code} key={code}>{code.toUpperCase()}</a>)}</div></details>:null}</div></header>
   <nav className="function-bar" aria-label="Primary pages">{(["spreadsheet","categories","faq","shipping","qc","guide","articles"] as const).map((key,i)=><a className={key==="articles"?"active":""} href={routePath(lang,key)} key={key}><span>0{i+1}</span>{key.charAt(0).toUpperCase()+key.slice(1)}</a>)}</nav>
   <article className="long-article">
    <header className="article-hero"><p>{t.guide} · {article.readTime}</p><h1>{article.title}</h1><div><span>{t.updated} {article.updated}</span><span>{article.sections.length} {t.sections}</span></div></header>
-   <div className="article-layout"><aside><p>{t.contents}</p><ol>{article.sections.map((section,i)=><li key={section.heading}><a href={`#section-${i+1}`}>{String(i+1).padStart(2,"0")} {section.heading}</a></li>)}</ol></aside><div className="article-body">{article.sections.map((section,i)=><section id={`section-${i+1}`} key={section.heading}><span>{String(i+1).padStart(2,"0")}</span><h2>{section.heading}</h2>{section.paragraphs.map(paragraph=><p key={paragraph}>{paragraph}</p>)}</section>)}<div className="source-note"><b>{t.source}</b><p>{t.note}</p></div></div></div>
+   <div className="article-layout"><aside><p>{t.contents}</p><ol>{article.sections.map((section,i)=><li key={section.heading}><a href={`#section-${i+1}`}>{String(i+1).padStart(2,"0")} {section.heading}</a></li>)}</ol></aside><div className="article-body">{article.sections.map((section,i)=><section id={`section-${i+1}`} key={section.heading}><span>{String(i+1).padStart(2,"0")}</span><h2>{section.heading}</h2>{section.paragraphs.map(paragraph=><p key={paragraph}>{paragraph}</p>)}</section>)}<div className="source-note"><b>{t.source}</b><p>{article.sourceNote ?? t.note}</p>{article.sources?.length?<ul>{article.sources.map(source=><li key={source.url}><a href={source.url} rel="nofollow noopener" target="_blank">{source.label} ↗</a></li>)}</ul>:null}</div></div></div>
   </article>
-  <section className="article-next"><p>{t.continue}</p><h2>{t.browse}</h2><a href={routePath(lang,"articles")}>{t.all} →</a></section>
-  <footer><span className="brand"><b>HACOO</b><i>independent edits</i></span><p>{t.independent}</p><div>{languages.map(code=><a href={articleRoutePath(code,slug)} key={code}>{code.toUpperCase()}</a>)}</div><small>© 2026 HACOOS.SHOP / INDEPENDENT FIELD GUIDE</small></footer>
+  <section className="article-next"><p>{t.continue}</p><h2>{t.browse}</h2><div className="related-articles">{related.map(item=><a href={articleRoutePath(lang,item.slug)} key={item.slug}>{item.title} →</a>)}</div><a className="all-articles-link" href={routePath(lang,"articles")}>{t.all} →</a></section>
+  <footer><span className="brand"><b>HACOO</b><i>independent edits</i></span><p>{t.independent}</p><div>{hasLocalizedArticle(slug)?languages.map(code=><a href={articleRoutePath(code,slug)} key={code}>{code.toUpperCase()}</a>):<a href={articleRoutePath("en",slug)}>EN</a>}</div><small>© 2026 HACOOS.SHOP / INDEPENDENT FIELD GUIDE</small></footer>
  </main>;
 }

@@ -3,14 +3,15 @@ import { notFound } from "next/navigation";
 import { SitePage, buildMetadata, parseRoute, validRouteParams } from "../site";
 import { ArticlePage, articleMetadata, isArticleSlug } from "../article-page";
 import { articleSlugs } from "../article-data";
+import { localizedArticleSlugs } from "../article-locales";
 import { languages, type Lang } from "../site";
 
 type Props = { params: Promise<{ slug: string[] }> };
-export function generateStaticParams() { return [...validRouteParams(),...languages.flatMap(lang=>articleSlugs.map(slug=>({slug:lang==="en"?["articles",slug]:[lang,"articles",slug]})))]; }
+export function generateStaticParams() { return [...validRouteParams(),...articleSlugs.map(slug=>({slug:["articles",slug]})),...languages.filter(lang=>lang!=="en").flatMap(lang=>localizedArticleSlugs.map(slug=>({slug:[lang,"articles",slug]})))]; }
 function parseArticle(values:string[]):{lang:Lang;slug:(typeof articleSlugs)[number]}|null{
  if(values.length===2&&values[0]==="articles"&&isArticleSlug(values[1]))return{lang:"en",slug:values[1]};
  const lang=values[0] as Lang;
- if(values.length===3&&languages.includes(lang)&&lang!=="en"&&values[1]==="articles"&&isArticleSlug(values[2]))return{lang,slug:values[2]};
+ if(values.length===3&&languages.includes(lang)&&lang!=="en"&&values[1]==="articles"&&isArticleSlug(values[2])&&localizedArticleSlugs.includes(values[2]))return{lang,slug:values[2]};
  return null;
 }
 export async function generateMetadata({ params }: Props): Promise<Metadata> {

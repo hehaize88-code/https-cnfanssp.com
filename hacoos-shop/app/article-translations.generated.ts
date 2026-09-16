@@ -1,7 +1,7 @@
 // Generated from the reviewed English articles.
 import type { ArticleRecord, ArticleSlug } from "./article-data";
 export type TranslatedArticleLanguage = "es" | "fr" | "de" | "it";
-export const fullArticleTranslations: Record<TranslatedArticleLanguage, Record<Exclude<ArticleSlug, "hacoo-product-specification-checklist">, ArticleRecord>> = {
+export const fullArticleTranslations: Record<TranslatedArticleLanguage, Partial<Record<ArticleSlug, ArticleRecord>>> = {
   "es": {
     "hacoo-spreadsheet-guide": {
       "slug": "hacoo-spreadsheet-guide",

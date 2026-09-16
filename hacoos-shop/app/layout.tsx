@@ -16,5 +16,6 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <Script id="google-analytics" strategy="afterInteractive">{`window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag("js", new Date());
-gtag("config", "G-P2G3GQ21HX");`}</Script>{children}</body></html>;
+gtag("config", "G-P2G3GQ21HX");`}</Script>
+        <Script id="analytics-events" strategy="afterInteractive">{`document.addEventListener("submit",function(e){var f=e.target;if(f&&f.matches&&f.matches("form.search")){var q=f.querySelector('input[name="keywords"]');gtag("event","search_submit",{search_term:q&&q.value?q.value.trim():""});}});document.addEventListener("click",function(e){var a=e.target.closest&&e.target.closest("a");if(!a)return;if(a.matches('[href*="cnfanssp.com/AllProducts/"]'))gtag("event","product_click",{link_url:a.href});else if(a.matches('[href*="cnfanssp.com/"]'))gtag("event","catalogue_click",{link_url:a.href});if(a.hasAttribute("hreflang"))gtag("event","language_change",{language:a.getAttribute("hreflang")});if(a.closest(".article-index,.related-articles"))gtag("event","article_click",{link_url:a.href});});`}</Script>{children}</body></html>;
 }

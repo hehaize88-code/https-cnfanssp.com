@@ -107,9 +107,21 @@ export function parseRoute(slug:string[]):{lang:Lang;page:PageKey}|null{
  const page=first as PageKey;return slug.length===1&&page!=="home"&&publicPages.includes(page as (typeof publicPages)[number])?{lang:"en",page}:null;
 }
 export function validRouteParams(){return[...publicPages.filter(p=>p!=="home").map(p=>({slug:[p]})),...languages.filter(l=>l!=="en").flatMap(l=>publicPages.map(p=>({slug:p==="home"?[l]:[l,p]})))];}
+const englishSeo:Record<PageKey,{title:string;description:string;keywords:string[]}>= {
+ home:{title:"Hacoo Spreadsheet, Finds & Product Search Guide 2026",description:"Search Hacoo product routes and use independent 2026 guides for spreadsheets, shipping, sizing, tracking, returns and QC photo checks.",keywords:["Hacoo","Hacoo spreadsheet","Hacoo finds","Hacoo product search"]},
+ spreadsheet:{title:"Hacoo Spreadsheet 2026: Product Links, IDs & Finds",description:"Browse an independent Hacoo spreadsheet and learn how to verify product links, destination images, listing IDs, measurements and stale routes.",keywords:["Hacoo spreadsheet","Hacoo spreadsheets","Hacoo product links","Hacoo finds"]},
+ finds:{title:"Hacoo Finds 2026: Search and Verify Product Routes",description:"Browse Hacoo finds with direct destination routes, approximate prices and a repeatable method for checking images, IDs and availability.",keywords:["Hacoo finds","Hacoo product links","Hacoo products","Hacoo search"]},
+ categories:{title:"Hacoo Categories: Shoes, Hoodies, Clothing & Accessories",description:"Browse Hacoo product categories with direct live routes and practical size, measurement and QC checks for each product type.",keywords:["Hacoo categories","Hacoo shoes","Hacoo hoodies","Hacoo clothing"]},
+ faq:{title:"Hacoo FAQ 2026: Website, Shipping, Returns & Prices",description:"Get careful answers about the Hacoo website, spreadsheet, shipping estimates, returns, live prices and independent product links.",keywords:["Hacoo FAQ","Hacoo website","Hacoo shipping","Hacoo returns"]},
+ shipping:{title:"Hacoo Shipping Time 2026: Spain, UK, Tracking & Returns",description:"Understand published Hacoo shipping times for Spain, the UK, France, Germany and Italy, plus tracking, split parcels and return evidence.",keywords:["Hacoo shipping time","Hacoo delivery time Spain","Hacoo tracking","Hacoo returns"]},
+ qc:{title:"Hacoo QC Guide 2026: Photos, Shoes & Clothing Checks",description:"Use a repeatable Hacoo QC method for product photos, shoe shape, clothing measurements, seams, prints and visible defects.",keywords:["Hacoo QC","Hacoo QC photos","Hacoo shoe QC","Hacoo clothing QC"]},
+ guide:{title:"Hacoo Guide 2026: Search, Size, Shipping & Order Checks",description:"A practical independent Hacoo guide covering product search, listing verification, sizing, shipping estimates, tracking and after-sale evidence.",keywords:["Hacoo guide","Hacoo size guide","Hacoo order guide","Hacoo product search"]},
+ articles:{title:"Hacoo Guides 2026: Shipping, Sizing, Tracking & QC",description:"Read detailed Hacoo guides about spreadsheets, finding products, shipping by country, tracking, returns, sizing and QC photos.",keywords:["Hacoo guides","Hacoo shipping guide","Hacoo size guide","Hacoo tracking guide"]},
+};
 export function buildMetadata(lang:Lang,page:PageKey):Metadata{
  const c=copy[lang],p=c.pages[page],path=routePath(lang,page),alts=Object.fromEntries(languages.map(code=>[code,routePath(code,page)]));
- return{title:page==="home"?"Hacoo Finds, Spreadsheet & QC Field Guide":`${c.nav[page as Exclude<PageKey,"home">]} — Hacoo Field Guide`,description:p.intro,alternates:{canonical:path,languages:{...alts,"x-default":routePath("en",page)}},robots:{index:true,follow:true}};
+ const seo=lang==="en"?englishSeo[page]:{title:page==="home"?p.title:`${c.nav[page as Exclude<PageKey,"home">]} — Hacoo Field Guide`,description:p.intro,keywords:[]};
+ return{title:seo.title,description:seo.description,keywords:seo.keywords,alternates:{canonical:path,languages:{...alts,"x-default":routePath("en",page)}},robots:{index:true,follow:true},openGraph:{title:seo.title,description:seo.description,url:path,type:"website"}};
 }
 
 function Brand(){return <span className="brand"><b>HACOO</b><i>independent edits</i></span>}
@@ -152,6 +164,7 @@ const officialResearch:Partial<Record<PageKey,{title:string;body:string[]}[]>>={
 export function SitePage({lang,page}:{lang:Lang;page:PageKey}){
  const c=copy[lang],p=c.pages[page];
  const articleList=getArticleList(lang);
+ const featuredArticles=["hacoo-shipping-time-by-country","hacoo-spreadsheet-guide","find-products-on-hacoo"].map(slug=>articleList.find(article=>article.slug===slug)).filter((article):article is NonNullable<typeof article>=>Boolean(article));
  const readLabels:Record<Lang,string>={en:"Read full article",es:"Leer artículo completo",fr:"Lire l’article complet",de:"Vollständigen Artikel lesen",it:"Leggi l’articolo completo"};
  const research=page==="articles"?[]:(officialResearch[page]||[]).map((section,i)=>lang==="en"?section:{title:p.facts[i%p.facts.length],body:[p.intro,p.facts[(i+1)%p.facts.length]]});
  const schema=page==="faq"
@@ -189,7 +202,7 @@ export function SitePage({lang,page}:{lang:Lang;page:PageKey}){
   <div className="marquee"><span>SEARCH / VERIFY / COMPARE / ESTIMATE / DECIDE</span><span>SEARCH / VERIFY / COMPARE / ESTIMATE / DECIDE</span></div>
   <section className="editorial-cards"><div className="section-label"><span>01</span><h2>{c.nav.faq} / {c.nav.articles}</h2><p>READ / DECIDE</p></div><div className="content-grid">
    <a className="content-card faq-card" href={routePath(lang,"faq")}><span>FAQ</span><h3>{c.pages.faq.title}</h3><p>{c.pages.faq.intro}</p><ul>{c.pages.faq.facts.map(fact=><li key={fact}>{fact}</li>)}</ul><b>{c.open} →</b></a>
-   <a className="content-card article-card" href={routePath(lang,"articles")}><span>{c.nav.articles}</span><h3>{c.pages.articles.title}</h3><p>{c.pages.articles.intro}</p><ol>{c.pages.articles.facts.map((fact,i)=><li key={fact}><em>0{i+1}</em>{fact}</li>)}</ol><b>{c.open} →</b></a>
+   <div className="content-card article-card"><span>{c.nav.articles}</span><h3>{c.pages.articles.title}</h3><p>{c.pages.articles.intro}</p><ol>{featuredArticles.map((article,i)=><li key={article.slug}><em>0{i+1}</em><a href={articleRoutePath(lang,article.slug)}>{article.title}</a></li>)}</ol><a className="article-hub-link" href={routePath(lang,"articles")}>{c.open} →</a></div>
   </div></section>
   <section className="category-section"><div className="section-label"><span>02</span><h2>{c.section[1]}</h2><p>DIRECT ROUTES</p></div><div className="category-grid">{c.categories.map(([name,note],i)=><a href={`${DEST}${categoryLinks[i]}`} target="_blank" rel="noreferrer" key={categoryLinks[i]}><span>0{i+1}</span><h3>{name}</h3><p>{note}</p><b>↗</b></a>)}</div></section>
   <section className="products"><div className="product-head"><div><span>03 / {c.section[2]}</span><h2>{p.cta}</h2></div><p>{c.approx}</p></div><div className="product-grid">{products.map(([id,price,href,img,tag])=><a href={`${DEST}${href}`} target="_blank" rel="noreferrer" key={href}><div className="product-image"><img src={`${DEST}${img}`} alt={`${c.listing} ${id}`} width="640" height="640" loading="lazy" decoding="async"/><span>{tag}</span></div><div className="product-copy"><p>{c.listing} #{id}</p><strong>{price}</strong><small>{c.approx}</small><b>{c.open} ↗</b></div></a>)}</div></section>
