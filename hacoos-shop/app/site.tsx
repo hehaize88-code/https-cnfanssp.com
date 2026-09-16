@@ -170,7 +170,7 @@ export function SitePage({lang,page}:{lang:Lang;page:PageKey}){
    {research.length>0&&<div className="research-sections">{research.map((section,i)=><section key={`${section.title}-${i}`}><span>RESEARCH {String(i+1).padStart(2,"0")}</span><h2>{section.title}</h2>{section.body.map((paragraph,j)=><p key={`${paragraph}-${j}`}>{paragraph}</p>)}</section>)}</div>}
    {page==="spreadsheet"&&<div className="route-products">{products.slice(0,3).map(([id,price,href,img,tag])=><a href={`${DEST}${href}`} target="_blank" rel="noreferrer" key={href}><img src={`${DEST}${img}`} alt={`${c.listing} ${id}`} width="300" height="330" loading="lazy" decoding="async"/><div><span>{tag}</span><h3>{c.listing} #{id}</h3><p>{price} · {c.approx}</p></div></a>)}</div>}
    {page==="categories"&&<div className="category-grid route-category-grid">{c.categories.map(([name,note],i)=><a href={`${DEST}${categoryLinks[i]}`} target="_blank" rel="noreferrer" key={categoryLinks[i]}><span>0{i+1}</span><h3>{name}</h3><p>{note}</p><b>↗</b></a>)}</div>}
-   <form className="search route-search" action={`${DEST}/search.html`} method="get" target="_blank"><label htmlFor="route-q">{c.search}</label><div><input id="route-q" name="keywords" placeholder={c.hint}/><button>{c.search} ↗</button></div></form>
+   <form className="search route-search" action={`${DEST}/search.html`} method="get" target="_blank"><label htmlFor="route-q">{c.search}</label><input type="hidden" name="channelid" value="2"/><div><input id="route-q" name="keywords" placeholder={c.hint}/><button>{c.search} ↗</button></div></form>
   </article>
   <footer><Brand/><p>{c.independent}<br/>{c.disclaimer}</p><div>{languages.map(code=><a href={routePath(code,page)} key={code}>{code.toUpperCase()}</a>)}</div><small>© 2026 HACOOS.SHOP / INDEPENDENT FIELD GUIDE</small></footer>
  </main>;
@@ -182,7 +182,7 @@ export function SitePage({lang,page}:{lang:Lang;page:PageKey}){
   </header>
   <nav className="function-bar" aria-label="Primary pages">{publicPages.filter(x=>x!=="home").map((key,i)=><a href={routePath(lang,key)} key={key}><span>0{i+1}</span>{c.nav[key as Exclude<PageKey,"home">]}</a>)}</nav>
   <section className="hero"><div className="hero-main"><p className="kicker">{p.kicker}</p><h1>{p.title}</h1><p className="intro">{p.intro}</p>
-   <form className="search" action={`${DEST}/search.html`} method="get" target="_blank"><label htmlFor="q">{c.search}</label><div><input id="q" name="keywords" placeholder={c.hint}/><button>{c.search} ↗</button></div></form></div>
+   <form className="search" action={`${DEST}/search.html`} method="get" target="_blank"><label htmlFor="q">{c.search}</label><input type="hidden" name="channelid" value="2"/><div><input id="q" name="keywords" placeholder={c.hint}/><button>{c.search} ↗</button></div></form></div>
    <div className="hero-gallery" aria-label="Current product edit">{products.slice(0,3).map(([id,,href,img],i)=><a className={`hero-shot shot-${i+1}`} href={`${DEST}${href}`} target="_blank" rel="noreferrer" key={href}><img src={`${DEST}${img}`} alt={`${c.listing} ${id}`} width="640" height="640" loading={i===0?"eager":"lazy"} fetchPriority={i===0?"high":"auto"} decoding="async"/><span>0{i+1}</span></a>)}<p>CURATED<br/>ROUTES<br/><i>2026</i></p></div>
    <aside className="desk-card"><span>EDITOR&apos;S NOTE / {String(pages.indexOf(page)).padStart(2,"0")}</span><ol>{p.facts.map((fact,i)=><li key={fact}><b>0{i+1}</b><p>{fact}</p></li>)}</ol><a href={`${DEST}/AllProducts/`} target="_blank" rel="noreferrer">{p.cta} <span>↗</span></a></aside>
   </section>
