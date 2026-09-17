@@ -114,6 +114,13 @@ const en: Record<PriorityArticleKey, Article> = {
         ],
       },
       {
+        heading: "Document the result so the next person can reproduce it",
+        paragraphs: [
+          "A recovered link is only useful when another reader can repeat the check. Save the original URL, final destination, product ID, matched fields, region, device and review date together. Add one sentence explaining why the old route failed and why the replacement was accepted or rejected. Avoid notes such as fixed or works now; they hide the evidence and become meaningless after the next catalog change. A compact, factual change record makes later audits faster and prevents the same weak candidate from being rediscovered.",
+          "When sharing the result, separate observation from inference. It is fair to say that a page displayed a particular ID, title and option on the recorded date. It is not fair to turn that observation into a promise about stock, seller identity, quality or future availability. Preserve screenshots only when they do not expose account or order information, and never publish private tokens from a copied URL. Reproducible notes let people verify the route without inheriting hidden assumptions or sensitive data.",
+        ],
+      },
+      {
         heading: "Use a seven-step recovery checklist",
         paragraphs: [
           "Preserve the old URL; record the failure type; extract the product ID and visual evidence; test the intended browser, app and real region; search the exact ID; compare candidate identity fields; and save any replacement as a new row. Finish by opening the new URL in a clean session and checking its final destination. Add the checked date only after that test. If no candidate passes, keep the old row with an unavailable status.",
@@ -168,6 +175,13 @@ const en: Record<PriorityArticleKey, Article> = {
         paragraphs: [
           "Use clear link labels that describe the action, such as open matched listing, rather than vague text such as click here. Keep the product title, ID and status visible near the link. When the spreadsheet feeds a website, track outbound clicks as a separate analytics event with the destination, product ID and page path. Do not include personal information or account values. This reveals which rows deserve more frequent checks and which landing pages attract searches but fail to generate useful outbound activity.",
           "Click-through rate alone is not the goal. A high number of clicks to mismatched destinations is a poor outcome. Review click data alongside engagement, return visits and link-change reports. On a low-traffic site, individual sessions can distort percentages, so look for repeated patterns rather than reacting to a single day. Better titles can earn the search click; visible IDs, checked dates and precise actions help the visitor decide whether to continue.",
+        ],
+      },
+      {
+        heading: "Protect the sheet from silent edits and copied errors",
+        paragraphs: [
+          "Give editing access only to people who need it and keep a read-only public version. Use revision history or dated exports so an accidental paste, formula change or mass replacement can be traced. Validation rules can restrict status values and flag malformed IDs, but they should not pretend to verify a listing. Lock formula and header cells while leaving evidence fields editable. If a community copies the sheet, publish a visible source version and review date so readers can distinguish the maintained file from an unaudited mirror.",
+          "Treat bulk imports as unverified until each row passes the normal identity checks. Duplicate detection should compare product IDs first and then review destination URLs, titles and images; similar titles alone are not enough. When an error is discovered, correct the maintained row, record the date and describe the scope of the change. Do not quietly replace every copy. Transparent corrections preserve trust and help downstream editors find which versions need another audit.",
         ],
       },
       {
