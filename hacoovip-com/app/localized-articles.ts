@@ -5,6 +5,7 @@ import { esArticleText } from "./translations/articles-es";
 import { frArticleText } from "./translations/articles-fr";
 import { itArticleText } from "./translations/articles-it";
 import { hvArticleTexts, hvSlug } from "./hv-decision-matrix";
+import { hvUseCaseSlug, hvUseCaseTexts } from "./hv-use-case-criteria";
 
 export type ArticleText = {
   title: string;
@@ -17,7 +18,7 @@ export type ArticleText = {
 };
 
 function merge(text: Partial<Record<ArticleSlug, ArticleText>>, lang: Lang) {
-  return Object.fromEntries(Object.entries(articles).map(([slug, value]) => [slug, { ...value, ...(text[slug as ArticleSlug] || {}), ...(slug === hvSlug ? hvArticleTexts[lang] : {}) }])) as Record<ArticleSlug, (typeof articles)[ArticleSlug] & ArticleText>;
+  return Object.fromEntries(Object.entries(articles).map(([slug, value]) => [slug, { ...value, ...(text[slug as ArticleSlug] || {}), ...(slug === hvSlug ? hvArticleTexts[lang] : {}), ...(slug === hvUseCaseSlug ? hvUseCaseTexts[lang] : {}) }])) as Record<ArticleSlug, (typeof articles)[ArticleSlug] & ArticleText>;
 }
 
 export const localizedArticles: Record<Lang, Record<ArticleSlug, (typeof articles)[ArticleSlug] & ArticleText>> = {
