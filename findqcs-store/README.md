@@ -8,11 +8,11 @@ The current concept uses a warm editorial / buyer's-catalog visual system with
 an image-led hero, exact-source product cards, research guides and five
 language-prefixed routes.
 
-The navigation and homepage expose ten independent research guides plus a
-dedicated QC comparison-spreadsheet workflow. Four intent-led guides cover QC
-finder product-link search, exact QC-photo matching, finder/checker/spreadsheet
-selection and Weidian link verification. EN, DE, ES, FR and IT keep the same
-article routes, evidence rules, decision criteria and CTAs.
+The navigation and homepage expose fourteen independent research guides plus a
+dedicated QC comparison-spreadsheet workflow. Eight priority guides cover QC
+finder link search, exact photo matching, finder/checker/spreadsheet selection,
+Weidian, Taobao, 1688, shoe QC and clothing QC. EN, DE, ES, FR and IT keep the
+same article routes, evidence rules, decision criteria and CTAs.
 The supplied FindQC logo is embedded directly in the Worker bundle.
 
 Language parity is validated at the route, section, evidence-rule and CTA
