@@ -48,10 +48,21 @@ const navKeys: PageKey[] = [
 ];
 
 const articleKeys: PageKey[] = [
+  "articles/hacoo-codes-product-id-guide",
+  "articles/hacoo-links-not-working",
+  "articles/hacoo-spreadsheet-verify-links",
   "articles/find-product-links",
   "articles/read-qc-photos",
   "articles/size-before-you-buy",
+  "articles/spreadsheet-finds-categories-start",
 ];
+
+const articleReleaseDates: Partial<Record<PageKey, string>> = {
+  "articles/spreadsheet-finds-categories-start": "2026-08-29",
+  "articles/hacoo-codes-product-id-guide": "2026-09-17",
+  "articles/hacoo-links-not-working": "2026-09-17",
+  "articles/hacoo-spreadsheet-verify-links": "2026-09-17",
+};
 
 const detailIcons: Partial<Record<PageKey, typeof ShieldCheck>> = {
   spreadsheet: Search,
@@ -229,7 +240,7 @@ function ArticleCards({ locale }: { locale: Locale }) {
   return (
     <div className="article-grid">
       {articleKeys.map((key, index) => {
-        const Icon = icons[index];
+        const Icon = icons[index % icons.length];
         return (
           <a href={routeFor(locale, key)} key={key}>
             <Icon aria-hidden="true" />
@@ -351,8 +362,10 @@ function ArticlePage({ locale, pageKey }: { locale: Locale; pageKey: ArticleKey 
   const t = copy[locale];
   const u = ui[locale];
   const article = articles[locale][pageKey];
-  const expansions = locale === "en" ? [] : articleExpansions[locale][pageKey];
+  const expansions = locale === "en" ? [] : articleExpansions[locale][pageKey] ?? [];
   const figureProduct = products[pageKey === "articles/find-product-links" ? 0 : pageKey === "articles/read-qc-photos" ? 1 : 3];
+  const reviewed = articleReleaseDates[pageKey] ?? "2026-08-27";
+  const reviewedDisplay = reviewed.split("-").reverse().join(" / ");
   return (
     <>
       <section className="interior-hero article-hero">
@@ -361,7 +374,7 @@ function ArticlePage({ locale, pageKey }: { locale: Locale; pageKey: ArticleKey 
         <p>{t.pageLabels[pageKey].intro}</p>
         <div className="article-byline">
           <span>{u.readingTime}: {article.minutes} {u.minutes}</span>
-          <span>{u.lastReviewed}: 27 / 08 / 2026</span>
+          <span>{u.lastReviewed}: {reviewedDisplay}</span>
         </div>
       </section>
       <EvidenceGrid locale={locale} />
@@ -464,6 +477,38 @@ export function SitePage({ locale, pageKey }: { locale: Locale; pageKey: PageKey
     document.documentElement.lang = locale;
     document.documentElement.dataset.locale = locale;
   }, [locale]);
+  useEffect(() => {
+    const sendEvent = (name: string, parameters: Record<string, string>) => {
+      const analyticsWindow = window as Window & { gtag?: (command: string, eventName: string, values: Record<string, string>) => void };
+      analyticsWindow.gtag?.("event", name, parameters);
+    };
+    const trackOutbound = (event: MouseEvent) => {
+      if (!(event.target instanceof Element)) return;
+      const anchor = event.target.closest<HTMLAnchorElement>("a[href]");
+      if (!anchor) return;
+      const destination = new URL(anchor.href, window.location.href);
+      if (destination.hostname !== "www.cnfanssp.com") return;
+      sendEvent("outbound_product_click", {
+        link_url: destination.href,
+        link_text: anchor.textContent?.trim().slice(0, 100) ?? "",
+        page_path: window.location.pathname,
+      });
+    };
+    const trackSearch = (event: SubmitEvent) => {
+      if (!(event.target instanceof HTMLFormElement) || !event.target.matches(".search-desk")) return;
+      const formData = new FormData(event.target);
+      sendEvent("product_search", {
+        search_term: String(formData.get("keywords") ?? "").slice(0, 100),
+        page_path: window.location.pathname,
+      });
+    };
+    document.addEventListener("click", trackOutbound);
+    document.addEventListener("submit", trackSearch);
+    return () => {
+      document.removeEventListener("click", trackOutbound);
+      document.removeEventListener("submit", trackSearch);
+    };
+  }, []);
   const faqJson = pageKey === "faq" || pageKey === "home" ? {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -478,8 +523,8 @@ export function SitePage({ locale, pageKey }: { locale: Locale; pageKey: PageKey
     "@type": "Article",
     headline: copy[locale].pageLabels[pageKey].title,
     description: copy[locale].pageLabels[pageKey].intro,
-    datePublished: "2026-08-27",
-    dateModified: "2026-08-27",
+    datePublished: articleReleaseDates[pageKey] ?? "2026-08-27",
+    dateModified: articleReleaseDates[pageKey] ?? "2026-08-27",
     inLanguage: locale,
     author: { "@type": "Organization", name: "Hacoos Research Desk" },
     publisher: { "@type": "Organization", name: "Hacoos" },

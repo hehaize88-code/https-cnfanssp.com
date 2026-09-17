@@ -8,11 +8,15 @@ export const metadata: Metadata = {
 
 export default function NotFound() {
   return (
-    <main className="not-found">
-      <span>404</span>
-      <h1>This link has moved.</h1>
-      <p>Return to the current Hacoos index and search from there.</p>
-      <Link href="/">Open the index</Link>
-    </main>
+    <>
+      <title>Page Not Found | Hacoos Store</title>
+      <meta name="robots" content="noindex, follow" />
+      <main className="not-found">
+        <span>404</span>
+        <h1>This link has moved.</h1>
+        <p>Return to the current Hacoos index and search from there.</p>
+        <Link href="/">Open the index</Link>
+      </main>
+    </>
   );
 }
