@@ -82,8 +82,8 @@ optional or required ChatGPT sign-in:
 - Mark protected pages with `export const dynamic = "force-dynamic"` because
   they depend on per-request identity headers.
 
-Dispatch owns `/signin-with-chatgpt`, `/signout-with-chatgpt`, `/callback`, the
-OAuth cookies, and identity header injection. Do not implement app routes for
+Dispatch owns `/signin-with-chatgpt`, `/signout-with-chatgpt`, `/callback`,
+the OAuth cookies, and identity header injection. Do not implement app routes for
 those reserved paths. Routes that do not import and call the helper remain
 anonymous-compatible.
 
@@ -96,7 +96,7 @@ actions tied to the current ChatGPT user. Leave public content anonymous.
 
 ## Diagnostic Commands
 
-- `npm run install:ci`: perform the one bounded lockfile install
+- `npm run install:ci`: perform one bounded lockfile install
 - `npm run dev`: start the Vite/Vinext development server
 - `npm run build`: build the deployable Sites artifact
 - `npm run start`: start the built Vinext application
@@ -111,3 +111,5 @@ The timeout defaults can be overridden for a controlled canary with `SITES_INSTA
 
 - [vinext Documentation](https://github.com/cloudflare/vinext)
 - [Drizzle D1 Guide](https://orm.drizzle.team/docs/get-started/d1-new)
+
+<!-- hacoos.store deployment checkpoint: 2026-09-17 priority guides -->
