@@ -30,6 +30,7 @@ import { articleExpansions } from "./article-expansions";
 import {
   evidenceFacts,
   pageChecklists,
+  pageExplanations,
   researchBasis,
   ui,
   type ArticleKey,
@@ -47,21 +48,37 @@ const navKeys: PageKey[] = [
 ];
 
 const articleKeys: PageKey[] = [
+  "articles/hacoo-codes-product-id-guide",
+  "articles/hacoo-links-not-working",
+  "articles/hacoo-spreadsheet-verify-links",
   "articles/find-product-links",
   "articles/read-qc-photos",
   "articles/size-before-you-buy",
+  "articles/spreadsheet-finds-categories-start",
 ];
 
+const articleReleaseDates: Partial<Record<PageKey, string>> = {
+  "articles/spreadsheet-finds-categories-start": "2026-08-29",
+  "articles/hacoo-codes-product-id-guide": "2026-09-17",
+  "articles/hacoo-links-not-working": "2026-09-17",
+  "articles/hacoo-spreadsheet-verify-links": "2026-09-17",
+};
+
 const detailIcons: Partial<Record<PageKey, typeof ShieldCheck>> = {
+  spreadsheet: Search,
+  finds: PackageCheck,
+  categories: Search,
   "qc-guide": ShieldCheck,
   shipping: Truck,
   guide: BookOpen,
+  articles: BookOpen,
+  faq: CircleAlert,
 };
 
 function Logo({ locale }: { locale: Locale }) {
   return (
     <a className="logo" href={routeFor(locale, "home")} aria-label={copy[locale].pageLabels.home.title}>
-      <img src="/hacoo-logo.png" alt="Hacoo" />
+      <img src="/hacoo-logo.png" alt="Hacoo" width={200} height={64} />
     </a>
   );
 }
@@ -160,7 +177,7 @@ function ProductGrid({ locale, limit }: { locale: Locale; limit?: number }) {
         <article className="product-card" key={product.id}>
           <a href={product.href} target="_blank" rel="nofollow sponsored noopener" className="product-image" aria-label={`${t.openListing}: ${u.productNames[product.id]}`}>
             {/* Remote images stay source-matched; no proxy or local substitution. */}
-            <img src={product.image} alt={u.productNames[product.id]} loading="lazy" />
+            <img src={product.image} alt={u.productNames[product.id]} loading="lazy" decoding="async" width={800} height={656} />
             <span><Check />{t.sourceChecked}</span>
           </a>
           <div className="product-body">
@@ -223,7 +240,7 @@ function ArticleCards({ locale }: { locale: Locale }) {
   return (
     <div className="article-grid">
       {articleKeys.map((key, index) => {
-        const Icon = icons[index];
+        const Icon = icons[index % icons.length];
         return (
           <a href={routeFor(locale, key)} key={key}>
             <Icon aria-hidden="true" />
@@ -281,11 +298,11 @@ function HomePage({ locale }: { locale: Locale }) {
         <aside className="hero-aside">
           <span>{u.liveIndex}</span>
           <a className="hero-feature hero-feature-main" href={products[0].href} target="_blank" rel="nofollow sponsored noopener">
-            <img src={products[0].image} alt={u.productNames[products[0].id]} />
+            <img src={products[0].image} alt={u.productNames[products[0].id]} loading="lazy" decoding="async" fetchPriority="low" width={720} height={720} />
             <em>01</em>
           </a>
           <a className="hero-feature hero-feature-small" href={products[3].href} target="_blank" rel="nofollow sponsored noopener">
-            <img src={products[3].image} alt={u.productNames[products[3].id]} />
+            <img src={products[3].image} alt={u.productNames[products[3].id]} loading="lazy" decoding="async" fetchPriority="low" width={720} height={720} />
             <em>02</em>
           </a>
           <div className="hero-stat"><b>08</b><small>{u.matchedFinds}</small></div>
@@ -345,8 +362,10 @@ function ArticlePage({ locale, pageKey }: { locale: Locale; pageKey: ArticleKey 
   const t = copy[locale];
   const u = ui[locale];
   const article = articles[locale][pageKey];
-  const expansions = locale === "en" ? [] : articleExpansions[locale][pageKey];
+  const expansions = locale === "en" ? [] : articleExpansions[locale][pageKey] ?? [];
   const figureProduct = products[pageKey === "articles/find-product-links" ? 0 : pageKey === "articles/read-qc-photos" ? 1 : 3];
+  const reviewed = articleReleaseDates[pageKey] ?? "2026-08-27";
+  const reviewedDisplay = reviewed.split("-").reverse().join(" / ");
   return (
     <>
       <section className="interior-hero article-hero">
@@ -355,13 +374,13 @@ function ArticlePage({ locale, pageKey }: { locale: Locale; pageKey: ArticleKey 
         <p>{t.pageLabels[pageKey].intro}</p>
         <div className="article-byline">
           <span>{u.readingTime}: {article.minutes} {u.minutes}</span>
-          <span>{u.lastReviewed}: 27 / 08 / 2026</span>
+          <span>{u.lastReviewed}: {reviewedDisplay}</span>
         </div>
       </section>
       <EvidenceGrid locale={locale} />
       <figure className="article-figure">
         <a href={figureProduct.href} target="_blank" rel="nofollow sponsored noopener">
-          <img src={figureProduct.image} alt={`${u.exampleImage}: ${u.productNames[figureProduct.id]}`} loading="lazy" />
+          <img src={figureProduct.image} alt={`${u.exampleImage}: ${u.productNames[figureProduct.id]}`} loading="lazy" decoding="async" width={900} height={720} />
         </a>
         <figcaption><b>{u.exampleImage}</b><span>{u.figureCaption}</span></figcaption>
       </figure>
@@ -429,6 +448,7 @@ function InteriorPage({ locale, pageKey }: { locale: Locale; pageKey: PageKey })
           <div className="detail-icon"><DetailIcon aria-hidden="true" /></div>
           <div>
             <span className="kicker">{u.practicalChecklist}</span>
+            {pageExplanations[locale][pageKey] && <p className="checklist-explanation">{pageExplanations[locale][pageKey]}</p>}
             <ol className="checklist">{checklist.map((item, index) => <li key={item}><b>0{index + 1}</b><span>{item}</span></li>)}</ol>
           </div>
         </section>
@@ -457,6 +477,38 @@ export function SitePage({ locale, pageKey }: { locale: Locale; pageKey: PageKey
     document.documentElement.lang = locale;
     document.documentElement.dataset.locale = locale;
   }, [locale]);
+  useEffect(() => {
+    const sendEvent = (name: string, parameters: Record<string, string>) => {
+      const analyticsWindow = window as Window & { gtag?: (command: string, eventName: string, values: Record<string, string>) => void };
+      analyticsWindow.gtag?.("event", name, parameters);
+    };
+    const trackOutbound = (event: MouseEvent) => {
+      if (!(event.target instanceof Element)) return;
+      const anchor = event.target.closest<HTMLAnchorElement>("a[href]");
+      if (!anchor) return;
+      const destination = new URL(anchor.href, window.location.href);
+      if (destination.hostname !== "www.cnfanssp.com") return;
+      sendEvent("outbound_product_click", {
+        link_url: destination.href,
+        link_text: anchor.textContent?.trim().slice(0, 100) ?? "",
+        page_path: window.location.pathname,
+      });
+    };
+    const trackSearch = (event: SubmitEvent) => {
+      if (!(event.target instanceof HTMLFormElement) || !event.target.matches(".search-desk")) return;
+      const formData = new FormData(event.target);
+      sendEvent("product_search", {
+        search_term: String(formData.get("keywords") ?? "").slice(0, 100),
+        page_path: window.location.pathname,
+      });
+    };
+    document.addEventListener("click", trackOutbound);
+    document.addEventListener("submit", trackSearch);
+    return () => {
+      document.removeEventListener("click", trackOutbound);
+      document.removeEventListener("submit", trackSearch);
+    };
+  }, []);
   const faqJson = pageKey === "faq" || pageKey === "home" ? {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -471,8 +523,8 @@ export function SitePage({ locale, pageKey }: { locale: Locale; pageKey: PageKey
     "@type": "Article",
     headline: copy[locale].pageLabels[pageKey].title,
     description: copy[locale].pageLabels[pageKey].intro,
-    datePublished: "2026-08-27",
-    dateModified: "2026-08-27",
+    datePublished: articleReleaseDates[pageKey] ?? "2026-08-27",
+    dateModified: articleReleaseDates[pageKey] ?? "2026-08-27",
     inLanguage: locale,
     author: { "@type": "Organization", name: "Hacoos Research Desk" },
     publisher: { "@type": "Organization", name: "Hacoos" },

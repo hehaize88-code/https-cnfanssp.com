@@ -1,7 +1,7 @@
 import type { Locale } from "./site-data";
 import type { ArticleKey } from "./localized-content";
 
-type TranslationExpansions = Record<Exclude<Locale, "en">, Record<ArticleKey, string[]>>;
+type TranslationExpansions = Record<Exclude<Locale, "en">, Partial<Record<ArticleKey, string[]>>>;
 
 export const articleExpansions: TranslationExpansions = {
   de: {

@@ -1,5 +1,7 @@
 import type { Locale } from "./site-data";
 import type { ArticleKey } from "./localized-content";
+import { haArticle } from "./ha-article-content";
+import { priorityArticles, type PriorityArticleKey } from "./priority-article-content";
 
 export type ArticleSection = { heading: string; paragraphs: string[]; bullets?: string[] };
 export type Article = {
@@ -8,7 +10,9 @@ export type Article = {
   takeaways: string[];
 };
 
-const en: Record<ArticleKey, Article> = {
+type LegacyArticleKey = Exclude<ArticleKey, PriorityArticleKey | "articles/spreadsheet-finds-categories-start">;
+
+const en: Record<LegacyArticleKey, Article> = {
   "articles/find-product-links": {
     minutes: 9,
     sections: [
@@ -199,8 +203,8 @@ const en: Record<ArticleKey, Article> = {
   },
 };
 
-function translatedArticles(locale: Exclude<Locale, "en">): Record<ArticleKey, Article> {
-  const data: Record<Exclude<Locale, "en">, Record<ArticleKey, Article>> = {
+function translatedArticles(locale: Exclude<Locale, "en">): Record<LegacyArticleKey, Article> {
+  const data: Record<Exclude<Locale, "en">, Record<LegacyArticleKey, Article>> = {
     de: {
       "articles/find-product-links": { minutes: 9, sections: [
         { heading: "Warum Hacoo-Produktlinks schwer zu finden sein können", paragraphs: ["Hacoos aktuelle Website und die Beschreibungen in den App-Stores stellen den Dienst als Community zum Teilen und Entdecken von Inhalten dar. Produkte werden deshalb häufig über Beiträge, Empfehlungen oder gespeicherte Links entdeckt. Eine normale Markensuche muss nicht dieselben Ergebnisse zeigen wie der Link eines anderen Nutzers.", "Bei der Prüfung am 27. August 2026 zeigte Google Play mehr als zehn Millionen Downloads. Links wandern damit durch Länder, Geräte und App-Versionen. Entscheidend ist nicht nur, ob eine URL öffnet, sondern ob Titel, Bild, Variante, Produkt-ID und Preis noch zum ursprünglichen Fund passen."] },
@@ -334,9 +338,9 @@ function translatedArticles(locale: Exclude<Locale, "en">): Record<ArticleKey, A
 }
 
 export const articles: Record<Locale, Record<ArticleKey, Article>> = {
-  en,
-  de: translatedArticles("de"),
-  fr: translatedArticles("fr"),
-  es: translatedArticles("es"),
-  it: translatedArticles("it"),
+  en: {...en, "articles/spreadsheet-finds-categories-start": haArticle.en, ...priorityArticles.en},
+  de: {...translatedArticles("de"), "articles/spreadsheet-finds-categories-start": haArticle.de, ...priorityArticles.de},
+  fr: {...translatedArticles("fr"), "articles/spreadsheet-finds-categories-start": haArticle.fr, ...priorityArticles.fr},
+  es: {...translatedArticles("es"), "articles/spreadsheet-finds-categories-start": haArticle.es, ...priorityArticles.es},
+  it: {...translatedArticles("it"), "articles/spreadsheet-finds-categories-start": haArticle.it, ...priorityArticles.it},
 };

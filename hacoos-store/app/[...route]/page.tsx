@@ -33,12 +33,28 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     locales.map((lang) => [lang, `https://hacoos.store${routeFor(lang, pageKey)}`]),
   );
   languages["x-default"] = `https://hacoos.store${routeFor("en", pageKey)}`;
+  const canonical = `https://hacoos.store${routeFor(locale, pageKey)}`;
   return {
     title: meta.title,
     description: meta.description,
     alternates: {
-      canonical: `https://hacoos.store${routeFor(locale, pageKey)}`,
+      canonical,
       languages,
+    },
+    openGraph: {
+      type: pageKey.startsWith("articles/") ? "article" : "website",
+      siteName: "Hacoos Store",
+      title: meta.title,
+      description: meta.description,
+      url: canonical,
+      locale,
+      images: ["/hacoo-logo.png"],
+    },
+    twitter: {
+      card: "summary",
+      title: meta.title,
+      description: meta.description,
+      images: ["/hacoo-logo.png"],
     },
     other: { "content-language": localeNames[locale] },
   };
