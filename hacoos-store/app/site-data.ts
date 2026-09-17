@@ -22,6 +22,9 @@ export const pageKeys = [
   "articles/read-qc-photos",
   "articles/size-before-you-buy",
   "articles/spreadsheet-finds-categories-start",
+  "articles/hacoo-codes-product-id-guide",
+  "articles/hacoo-links-not-working",
+  "articles/hacoo-spreadsheet-verify-links",
 ] as const;
 export type PageKey = (typeof pageKeys)[number];
 
@@ -147,9 +150,9 @@ type Copy = {
 export const copy: Record<Locale, Copy> = {
   en: {
     nav: { spreadsheet: "Spreadsheet", finds: "Finds", categories: "Categories", "qc-guide": "QC", shipping: "Shipping", guide: "Guide", articles: "SEO Articles", faq: "FAQ" },
-    badge: "Independent link desk · checked 27 Aug 2026",
-    heroTitle: "Find the Hacoo link you actually meant to open.",
-    heroText: "A fast, independent product index with source-matched images, direct category routes and practical QC notes — built for people who do not want to hunt through reposted spreadsheets.",
+    badge: "Independent link desk · checked 17 Sep 2026",
+    heroTitle: "Hacoo Product Links and Spreadsheet — Verified by Product ID",
+    heroText: "Browse current Hacoo product links by category, verify product IDs, compare source images and open the matching listing. Independent guide, updated for 2026.",
     searchPlaceholder: "Search shoes, hoodies, bags…",
     searchButton: "Search live index",
     categoriesTitle: "Start with a category",
@@ -162,13 +165,13 @@ export const copy: Record<Locale, Copy> = {
     workflow: ["Choose a category or search term.", "Open the exact listing and compare its current options.", "Check QC, sizing and shipping before deciding."],
     readGuides: "Read the buyer guides",
     independent: "Independent guide. Not affiliated with Hacoo or any marketplace. No orders, payments or seller guarantees are handled here.",
-    updated: "Link check: 27 August 2026",
+    updated: "Link check: 17 September 2026",
     menu: "Menu",
     close: "Close",
     viewAll: "View all checked finds",
     fieldNotes: "Field notes",
     pageLabels: {
-      home: { title: "Hacoo Product Link Atlas: IDs, Routes & Verification", intro: "Check current product IDs, destination routes, matching first images and category paths in one independent index." },
+      home: { title: "Hacoo Product Links & Spreadsheet 2026", intro: "Browse current Hacoo product links, verify product IDs and compare source images before opening a matching listing." },
       spreadsheet: { title: "Hacoo Product Link Spreadsheet: IDs & Route Checks", intro: "Use a searchable product-ID index to verify the current destination, first image, option and source price." },
       finds: { title: "Current Hacoo Product Link Checks", intro: "Source-matched routes with a current first image, product ID, source price and exact destination." },
       categories: { title: "Hacoo Category Routes & Product ID Checks", intro: "Choose a category route, then verify the product ID and listing fields before opening the destination." },
@@ -181,6 +184,9 @@ export const copy: Record<Locale, Copy> = {
       "articles/read-qc-photos": { title: "Hacoo Reviews & QC Photos: An Evidence Guide", intro: "How to balance current reviews, inspect construction and keep the photos Hacoo's support process may require." },
       "articles/size-before-you-buy": { title: "Hacoo Size Guide: Measure Before You Buy", intro: "A repeatable garment and shoe measurement method built around the exact selected variant." },
       "articles/spreadsheet-finds-categories-start": { title: "Hacoo Spreadsheet vs Finds vs Categories: Where to Start", intro: "Choose the right Hacoo link-atlas entry point for a known item, a category need or an open-ended discovery task." },
+      "articles/hacoo-codes-product-id-guide": { title: "Hacoo Codes Explained: Match Product IDs to Current Links", intro: "Use a Hacoo product code as a durable reference, then confirm the current title, image, variant and destination before opening a listing." },
+      "articles/hacoo-links-not-working": { title: "Hacoo Links Not Working? Find the Updated Product URL", intro: "Diagnose an expired, redirected or region-dependent Hacoo link without trusting an unverified mirror or replacement." },
+      "articles/hacoo-spreadsheet-verify-links": { title: "Hacoo Spreadsheet 2026: Verify Every Product Link", intro: "Turn a copied list into a useful Hacoo spreadsheet by checking IDs, final URLs, images, variants, prices and review dates." },
     },
     sectionLabels: ["What to verify", "What can go wrong", "Best next step"],
     sectionText: ["Confirm that the title, first image, selected option, source price and product ID still agree. A working URL alone does not prove that the item is the one shown on the card.", "Listings change, variants disappear and reposted sheets can keep an old image after the destination changes. Treat every outbound page as current third-party information.", "Save the product ID, compare measurements, inspect recent feedback and keep screenshots of the selected option before paying on any external service."],
@@ -188,10 +194,10 @@ export const copy: Record<Locale, Copy> = {
   },
   de: {
     nav: { spreadsheet: "Tabelle", finds: "Funde", categories: "Kategorien", "qc-guide": "QC", shipping: "Versand", guide: "Anleitung", articles: "SEO-Artikel", faq: "FAQ" },
-    badge: "Unabhängiger Link-Desk · geprüft am 27.08.2026",
+    badge: "Unabhängiger Link-Desk · geprüft am 17.09.2026",
     heroTitle: "Finde genau den Hacoo-Link, den du öffnen wolltest.",
     heroText: "Ein schneller, unabhängiger Produktindex mit passenden Titelbildern, direkten Kategorien und praktischen QC-Hinweisen — ohne endlos durch kopierte Tabellen zu scrollen.",
-    searchPlaceholder: "Schuhe, Hoodies, Taschen suchen…", searchButton: "Live-Index durchsuchen", categoriesTitle: "Mit einer Kategorie starten", findsTitle: "Geprüfte Funde statt falscher Weiterleitungen", findsText: "Jede Karte verwendet das aktuelle Titelbild und öffnet den passenden Eintrag. Preise stehen in USD und zusätzlich im ursprünglichen CNY-Betrag.", openListing: "Passenden Eintrag öffnen", sourceChecked: "Quelle abgeglichen", sourceNote: "Preis und Verfügbarkeit können sich auf der Quellseite ändern.", workflowTitle: "Der klare Weg in drei Schritten", workflow: ["Kategorie oder Suchbegriff wählen.", "Exakten Eintrag öffnen und aktuelle Optionen vergleichen.", "QC, Größe und Versand vor der Entscheidung prüfen."], readGuides: "Kaufratgeber lesen", independent: "Unabhängiger Ratgeber. Keine Verbindung zu Hacoo oder einem Marktplatz. Keine Bestellungen, Zahlungen oder Verkäufergarantien.", updated: "Linkprüfung: 27. August 2026", menu: "Menü", close: "Schließen", viewAll: "Alle geprüften Funde", fieldNotes: "Praxisnotizen",
+    searchPlaceholder: "Schuhe, Hoodies, Taschen suchen…", searchButton: "Live-Index durchsuchen", categoriesTitle: "Mit einer Kategorie starten", findsTitle: "Geprüfte Funde statt falscher Weiterleitungen", findsText: "Jede Karte verwendet das aktuelle Titelbild und öffnet den passenden Eintrag. Preise stehen in USD und zusätzlich im ursprünglichen CNY-Betrag.", openListing: "Passenden Eintrag öffnen", sourceChecked: "Quelle abgeglichen", sourceNote: "Preis und Verfügbarkeit können sich auf der Quellseite ändern.", workflowTitle: "Der klare Weg in drei Schritten", workflow: ["Kategorie oder Suchbegriff wählen.", "Exakten Eintrag öffnen und aktuelle Optionen vergleichen.", "QC, Größe und Versand vor der Entscheidung prüfen."], readGuides: "Kaufratgeber lesen", independent: "Unabhängiger Ratgeber. Keine Verbindung zu Hacoo oder einem Marktplatz. Keine Bestellungen, Zahlungen oder Verkäufergarantien.", updated: "Linkprüfung: 17. September 2026", menu: "Menü", close: "Schließen", viewAll: "Alle geprüften Funde", fieldNotes: "Praxisnotizen",
     pageLabels: {} as Copy["pageLabels"], sectionLabels: ["Was prüfen?", "Was kann schiefgehen?", "Bester nächster Schritt"], sectionText: ["Prüfe Titel, erstes Bild, gewählte Variante, Quellpreis und Produkt-ID. Eine funktionierende URL beweist nicht, dass das gezeigte Produkt noch dasselbe ist.", "Angebote ändern sich, Varianten verschwinden und kopierte Tabellen behalten oft alte Bilder. Jede Zielseite ist aktuelle Information eines Dritten.", "Produkt-ID speichern, Maße vergleichen, neue Bewertungen prüfen und die gewählte Variante vor der Zahlung dokumentieren."], faq: [["Ist dies die offizielle Hacoo-Seite?", "Nein. Hacoos ist ein unabhängiger Link- und Recherche-Ratgeber und vertritt Hacoo nicht."], ["Was ist Hacoo heute?", "Die aktuelle offizielle Website und die App-Store-Texte beschreiben Hacoo als Community zum Teilen und Entdecken von Inhalten mit Bewertungen und Verbindungen zwischen Nutzern."], ["Werden hier Produkte verkauft?", "Nein. Karten öffnen externe Einträge; Bestellungen und Zahlungen werden hier nicht verarbeitet."], ["Warum sieht ein Link in einem anderen Land anders aus?", "Katalogsichtbarkeit und Lieferabdeckung können variieren. Prüfe echte Region, Zieladresse und App-Version."], ["Wie lange dauert die Lieferung?", "Das offizielle Help Center nennt insgesamt 15–28 Tage: 3–7 Vorbereitung, 7–15 Versand und 5–10 Zustellung. Verzögerungen sind möglich."], ["Wie lang ist die Rückgabefrist?", "Die ausführliche offizielle Hilfe nennt allgemein 15 Tage nach Erhalt, Ausnahmen und derzeit keinen Umtausch. Entscheidend sind die Hinweise im konkreten Auftrag."], ["Warum USD und CNY?", "USD erleichtert den Vergleich, CNY hilft bei der Kontrolle des Quellpreises."], ["Garantiert ein geprüfter Link Qualität?", "Nein. Er bestätigt Route und Titelbild zum Prüfdatum, nicht Qualität oder Lieferung."], ["Was zuerst prüfen?", "Zuerst Produkt und Variante, dann Form, Nähte, Etiketten und Maße."], ["Sind öffentliche Bewertungen einheitlich positiv?", "Nein. Google Play und Trustpilot zeigten unterschiedliche Mittelwerte und gemischte aktuelle Themen. Nutze Artikelbilder und wiederkehrende konkrete Beobachtungen."]],
   },
   fr: {
@@ -212,21 +218,55 @@ export const copy: Record<Locale, Copy> = {
 };
 
 const englishLabels = copy.en.pageLabels;
+type PriorityArticleKey = Extract<PageKey,
+  | "articles/hacoo-codes-product-id-guide"
+  | "articles/hacoo-links-not-working"
+  | "articles/hacoo-spreadsheet-verify-links"
+>;
+
+const priorityPageLabels: Record<Exclude<Locale, "en">, Record<PriorityArticleKey, { title: string; intro: string }>> = {
+  de: {
+    "articles/hacoo-codes-product-id-guide": { title: "Hacoo Codes erklärt: Produkt-IDs mit aktuellen Links abgleichen", intro: "Nutze einen Hacoo-Produktcode als stabile Referenz und prüfe dann Titel, Bild, Variante und Zielseite." },
+    "articles/hacoo-links-not-working": { title: "Hacoo-Link funktioniert nicht? Die aktuelle URL finden", intro: "Analysiere abgelaufene, umgeleitete oder regionsabhängige Links, ohne ungeprüften Ersatz zu übernehmen." },
+    "articles/hacoo-spreadsheet-verify-links": { title: "Hacoo Spreadsheet 2026: Jeden Produktlink prüfen", intro: "Mache aus einer kopierten Liste eine brauchbare Tabelle mit IDs, Ziel-URLs, Bildern, Varianten, Preisen und Prüfdaten." },
+  },
+  fr: {
+    "articles/hacoo-codes-product-id-guide": { title: "Codes Hacoo : relier les identifiants aux liens actuels", intro: "Utilisez le code produit comme repère stable, puis contrôlez titre, image, variante et destination." },
+    "articles/hacoo-links-not-working": { title: "Lien Hacoo inactif : retrouver l’URL actuelle", intro: "Diagnostiquez un lien expiré, redirigé ou régional sans adopter un remplacement non vérifié." },
+    "articles/hacoo-spreadsheet-verify-links": { title: "Tableur Hacoo 2026 : vérifier chaque lien produit", intro: "Transformez une liste copiée en tableur utile en contrôlant identifiants, URL, images, variantes, prix et dates." },
+  },
+  es: {
+    "articles/hacoo-codes-product-id-guide": { title: "Códigos Hacoo: relaciona ID con enlaces actuales", intro: "Usa el código de producto como referencia estable y comprueba título, imagen, variante y destino." },
+    "articles/hacoo-links-not-working": { title: "¿No funciona un enlace de Hacoo? Encuentra la URL actual", intro: "Diagnostica enlaces caducados, redirigidos o regionales sin confiar en sustitutos sin verificar." },
+    "articles/hacoo-spreadsheet-verify-links": { title: "Hoja Hacoo 2026: verifica cada enlace de producto", intro: "Convierte una lista copiada en una hoja útil verificando ID, URL final, imágenes, variantes, precios y fechas." },
+  },
+  it: {
+    "articles/hacoo-codes-product-id-guide": { title: "Codici Hacoo: abbina gli ID ai link aggiornati", intro: "Usa il codice prodotto come riferimento stabile, poi verifica titolo, immagine, variante e destinazione." },
+    "articles/hacoo-links-not-working": { title: "Link Hacoo non funzionante? Trova l’URL aggiornata", intro: "Analizza link scaduti, reindirizzati o regionali senza affidarti a sostituti non verificati." },
+    "articles/hacoo-spreadsheet-verify-links": { title: "Foglio Hacoo 2026: verifica ogni link prodotto", intro: "Trasforma una lista copiata in un foglio utile controllando ID, URL finali, immagini, varianti, prezzi e date." },
+  },
+};
 for (const locale of ["de", "fr", "es", "it"] as const) {
-  const titles: Record<Locale, Record<PageKey, string>> = {
+  const titles: Record<Locale, Partial<Record<PageKey, string>>> = {
     en: Object.fromEntries(pageKeys.map((k) => [k, englishLabels[k].title])) as Record<PageKey, string>,
     de: { home: "Hacoo Produktlink-Atlas: IDs und Routenprüfung", spreadsheet: "Hacoo Produktlink-Tabelle: ID- und Routenprüfung", finds: "Aktuelle Hacoo-Produktlink-Prüfungen", categories: "Hacoo-Kategorierouten und Produkt-IDs", "qc-guide": "Hacoo QC-Fotoguide", shipping: "Hacoo Versandguide", guide: "Hacoo-Produktlinks verwenden", faq: "FAQ zur Hacoo-Linkprüfung", articles: "Hacoo Produktlink-Recherchen", "articles/find-product-links": "Aktuelle Hacoo-Produktlinks finden", "articles/read-qc-photos": "Hacoo-Bewertungen & QC-Fotos prüfen", "articles/size-before-you-buy": "Hacoo-Größenguide: vor dem Kauf messen", "articles/spreadsheet-finds-categories-start":"Hacoo-Tabelle, Funde oder Kategorien: richtig starten" },
     fr: { home: "Atlas des liens Hacoo: identifiants et routes", spreadsheet: "Tableur des liens Hacoo: contrôle des identifiants", finds: "Contrôles actuels des liens Hacoo", categories: "Routes de catégories et identifiants Hacoo", "qc-guide": "Guide photo QC Hacoo", shipping: "Guide livraison Hacoo", guide: "Utiliser les liens produit Hacoo", faq: "FAQ de vérification des liens Hacoo", articles: "Notes de recherche sur les liens Hacoo", "articles/find-product-links": "Trouver des liens Hacoo actuels", "articles/read-qc-photos": "Avis Hacoo et photos QC: guide de vérification", "articles/size-before-you-buy": "Guide des tailles Hacoo: mesurer avant d’acheter", "articles/spreadsheet-finds-categories-start":"Tableur, trouvailles ou catégories Hacoo : bien commencer" },
     es: { home: "Atlas de enlaces Hacoo: ID y rutas verificadas", spreadsheet: "Hoja de enlaces Hacoo: control de ID y rutas", finds: "Comprobaciones actuales de enlaces Hacoo", categories: "Rutas de categorías e ID de Hacoo", "qc-guide": "Guía de fotos QC Hacoo", shipping: "Guía de envío Hacoo", guide: "Cómo usar enlaces Hacoo", faq: "FAQ de verificación de enlaces Hacoo", articles: "Notas de investigación de enlaces Hacoo", "articles/find-product-links": "Cómo encontrar enlaces Hacoo actuales", "articles/read-qc-photos": "Reseñas Hacoo y fotos QC: guía de pruebas", "articles/size-before-you-buy": "Guía de tallas Hacoo: mide antes de comprar", "articles/spreadsheet-finds-categories-start":"Hoja, hallazgos o categorías Hacoo: dónde empezar" },
     it: { home: "Atlante dei link Hacoo: ID e percorsi verificati", spreadsheet: "Foglio link Hacoo: controllo ID e percorsi", finds: "Controlli aggiornati dei link Hacoo", categories: "Percorsi categorie e ID prodotto Hacoo", "qc-guide": "Guida foto QC Hacoo", shipping: "Guida spedizione Hacoo", guide: "Come usare i link Hacoo", faq: "FAQ sulla verifica dei link Hacoo", articles: "Note di ricerca sui link Hacoo", "articles/find-product-links": "Trovare link Hacoo aggiornati", "articles/read-qc-photos": "Recensioni Hacoo e foto QC: guida alle prove", "articles/size-before-you-buy": "Guida taglie Hacoo: misura prima di acquistare", "articles/spreadsheet-finds-categories-start":"Foglio, finds o categorie Hacoo: da dove iniziare" },
   };
-  const intros: Record<Exclude<Locale, "en">, Record<PageKey, string>> = {
+  const intros: Record<Exclude<Locale, "en">, Partial<Record<PageKey, string>>> = {
     de: { home: "Geprüfte Produktwege, QC-Hilfe und Hacoo-Recherche in einem unabhängigen Index.", spreadsheet: "Durchsuche aktuelle Einträge statt kopierte oder abgelaufene Tabellenzeilen.", finds: "Abgeglichene Einträge mit aktuellem Bild, ID und Quellpreis.", categories: "Öffne zuerst die passende Kategorie und grenze danach den Artikel ein.", "qc-guide": "Ein belegbarer Ablauf für Identität, Form, Verarbeitung, Maße und Reklamationsfotos.", shipping: "Offizielle Zeitspannen, Tracking, Rückgabefrist und Nachweise verständlich eingeordnet.", guide: "Vom Fund bis zur Variantenprüfung, ohne einen alten Link als Beweis zu behandeln.", faq: "Fakten zu Links, Region, Lieferung, Rückgabe, Bewertungen, Preis und Größe.", articles: "Ausführliche, quellengestützte Artikel zu Links, QC, Bewertungen und Größenwahl.", "articles/find-product-links": "Warum Zielprüfung wichtiger ist als das Datum einer kopierten Tabelle.", "articles/read-qc-photos": "Bewertungen ausbalancieren, Konstruktion prüfen und brauchbare Nachweise sichern.", "articles/size-before-you-buy": "Kleidungs- und Schuhmaße mit einer passenden eigenen Referenz vergleichen.", "articles/spreadsheet-finds-categories-start":"Wähle den Einstieg passend zu bekannter ID, Kategoriebedarf oder offener Suche." },
     fr: { home: "Liens vérifiés, aide QC et recherche Hacoo dans un index indépendant.", spreadsheet: "Rechercher des fiches actuelles au lieu de parcourir des lignes copiées ou périmées.", finds: "Fiches rapprochées avec image, identifiant et prix source actuels.", categories: "Ouvrir d’abord la catégorie pertinente, puis préciser l’article.", "qc-guide": "Une méthode fondée sur des preuves pour identité, forme, fabrication, mesures et photos de réclamation.", shipping: "Délais officiels, suivi, retour et preuves expliqués clairement.", guide: "Du premier lien à la vérification de variante sans prendre une ancienne publication pour preuve.", faq: "Réponses documentées sur liens, région, livraison, retour, avis, prix et tailles.", articles: "Articles approfondis et sourcés sur liens, QC, avis et tailles.", "articles/find-product-links": "Pourquoi vérifier la destination compte davantage que la date d’un tableur recopié.", "articles/read-qc-photos": "Équilibrer les avis, inspecter la fabrication et garder des preuves utiles.", "articles/size-before-you-buy": "Comparer les mesures du vêtement ou de la chaussure à une référence qui vous va.", "articles/spreadsheet-finds-categories-start":"Choisissez l'entrée selon un identifiant connu, une catégorie ou une recherche ouverte." },
     es: { home: "Rutas verificadas, ayuda QC e investigación de Hacoo en un índice independiente.", spreadsheet: "Busca fichas actuales en vez de recorrer filas copiadas o caducadas.", finds: "Fichas comprobadas con imagen, ID y precio original actuales.", categories: "Abre primero la categoría adecuada y después concreta el artículo.", "qc-guide": "Un proceso con pruebas para identidad, forma, construcción, medidas y fotos de reclamación.", shipping: "Plazos oficiales, seguimiento, devolución y pruebas explicados con claridad.", guide: "Desde el enlace inicial hasta la variante exacta sin tratar una publicación antigua como prueba.", faq: "Respuestas documentadas sobre enlaces, región, entrega, devolución, opiniones, precio y talla.", articles: "Artículos extensos y basados en fuentes sobre enlaces, QC, reseñas y tallas.", "articles/find-product-links": "Por qué verificar el destino importa más que la fecha de una hoja copiada.", "articles/read-qc-photos": "Equilibra reseñas, inspecciona construcción y conserva pruebas útiles.", "articles/size-before-you-buy": "Compara medidas de prenda o calzado con una referencia que ya te queda bien.", "articles/spreadsheet-finds-categories-start":"Elige la entrada según ID conocido, necesidad de categoría o búsqueda abierta." },
     it: { home: "Percorsi verificati, aiuto QC e ricerca Hacoo in un indice indipendente.", spreadsheet: "Cerca schede attuali invece di scorrere righe copiate o scadute.", finds: "Schede verificate con immagine, ID e prezzo originale aggiornati.", categories: "Apri prima la categoria corretta e poi restringi la ricerca.", "qc-guide": "Un metodo basato su prove per identità, forma, costruzione, misure e foto di reclamo.", shipping: "Tempi ufficiali, tracking, resi e prove spiegati con chiarezza.", guide: "Dal primo link alla verifica della variante senza usare un vecchio post come prova.", faq: "Risposte documentate su link, regione, consegna, reso, recensioni, prezzo e taglia.", articles: "Articoli approfonditi e basati su fonti su link, QC, recensioni e taglie.", "articles/find-product-links": "Perché verificare la destinazione conta più della data di un foglio copiato.", "articles/read-qc-photos": "Bilanciare recensioni, controllare la costruzione e conservare prove utili.", "articles/size-before-you-buy": "Confrontare misure di capi o scarpe con un riferimento che veste bene.", "articles/spreadsheet-finds-categories-start":"Scegli l'ingresso in base a ID noto, categoria o ricerca aperta." },
   };
-  copy[locale].pageLabels = Object.fromEntries(pageKeys.map((key) => [key, { title: titles[locale][key], intro: intros[locale][key] }])) as Copy["pageLabels"];
+  copy[locale].pageLabels = Object.fromEntries(pageKeys.map((key) => {
+    const priorityLabel = priorityPageLabels[locale][key as PriorityArticleKey];
+    return [key, {
+      title: titles[locale][key] ?? priorityLabel?.title ?? englishLabels[key].title,
+      intro: intros[locale][key] ?? priorityLabel?.intro ?? englishLabels[key].intro,
+    }];
+  })) as Copy["pageLabels"];
 }
 
 export const pageMeta = Object.fromEntries(

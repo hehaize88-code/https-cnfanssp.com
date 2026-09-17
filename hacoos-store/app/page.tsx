@@ -2,8 +2,8 @@ import { SitePage } from "./site-page";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Hacoo Product Link Atlas: IDs, Routes & Verification",
-  description: "Check current Hacoo product IDs, matching first images, destination routes, variants and category paths before opening a listing.",
+  title: { absolute: "Hacoo Product Links & Spreadsheet 2026 | Verified IDs" },
+  description: "Browse current Hacoo product links by category, verify product IDs, compare source images and open the matching listing. Independent guide, updated for 2026.",
   alternates: {
     canonical: "https://hacoos.store/",
     languages: {
@@ -18,15 +18,15 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     siteName: "Hacoos Store",
-    title: "Hacoo Product Link Atlas: IDs, Routes & Verification",
-    description: "Check current Hacoo product IDs, matching first images, destination routes, variants and category paths.",
+    title: "Hacoo Product Links & Spreadsheet 2026 | Verified IDs",
+    description: "Browse current Hacoo product links, verify product IDs and compare source images before opening a matching listing.",
     url: "https://hacoos.store/",
     images: ["/hacoo-logo.png"],
   },
   twitter: {
     card: "summary",
-    title: "Hacoo Product Link Atlas: IDs, Routes & Verification",
-    description: "Check current Hacoo product IDs, matching first images, destination routes, variants and category paths.",
+    title: "Hacoo Product Links & Spreadsheet 2026 | Verified IDs",
+    description: "Browse current Hacoo product links, verify product IDs and compare source images before opening a matching listing.",
     images: ["/hacoo-logo.png"],
   },
 };
