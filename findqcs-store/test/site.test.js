@@ -20,9 +20,9 @@ for (const [input, expected] of [
 
 const home = await get("https://findqcs.store/");
 assert.equal(home.response.status, 200);
-assert.match(home.body, /<title>FindQC Store — Source-Matched Product Finds &amp; Listing Checks<\/title>/);
-assert.match(home.body, /<h1>FindQC Product Finds with Exact Source Links<\/h1>/);
-assert.match(home.body, /Browse source-matched FindQC product finds, category directories and practical listing checks/);
+assert.match(home.body, /<title>FindQC Store: QC Finder Guides, QC Photos &amp; Product Links<\/title>/);
+assert.match(home.body, /<h1>QC Finder Guides, QC Photos and Exact Product Links<\/h1>/);
+assert.match(home.body, /practical QC finder workflows/);
 assert.equal((home.body.match(/application\/ld\+json/g) || []).length, 2);
 
 for (const lang of ["en", "de", "es", "fr", "it"]) {
@@ -42,11 +42,16 @@ const privacy = await get("https://findqcs.store/privacy");
 assert.match(privacy.body, /<meta name="robots" content="noindex,follow">/);
 
 const sitemap = await get("https://findqcs.store/sitemap.xml");
-assert.equal((sitemap.body.match(/<url>/g) || []).length, 95);
+assert.equal((sitemap.body.match(/<url>/g) || []).length, 120);
 assert.doesNotMatch(sitemap.body, /\/privacy|\/terms/);
 assert.match(sitemap.body, /product-requirements-brief-before-search/);
 assert.match(sitemap.body, /define-product-use-case-before-search/);
 assert.match(sitemap.body, /must-haves-vs-preferences-buyer-acceptance-criteria/);
+assert.match(sitemap.body, /use-qc-finder-taobao-weidian-1688-links/);
+assert.match(sitemap.body, /qc-photo-matching-exact-item-color-size-batch/);
+assert.match(sitemap.body, /qc-finder-vs-qc-checker-vs-spreadsheet/);
+assert.match(sitemap.body, /weidian-qc-photos-link-verification-workflow/);
+assert.match(sitemap.body, /<loc>https:\/\/findqcs\.store\/spreadsheet<\/loc>/);
 
 const article = await get("https://findqcs.store/articles/how-to-read-qc-photos");
 assert.match(article.body, /"author":\{"@type":"Organization","name":"FindQC Store Editorial Team"/);
@@ -63,6 +68,27 @@ for (const lang of ["en", "de", "es", "fr", "it"]) {
   assert.match(brief.body, /<meta property="og:type" content="article">/);
   assert.match(brief.body, /<meta property="og:url" content="https:\/\/findqcs\.store/);
   assert.doesNotMatch(brief.body, /<figure class="article-evidence-photo">/);
+}
+
+for (const lang of ["en", "de", "es", "fr", "it"]) {
+  const prefix = lang === "en" ? "" : `/${lang}`;
+  const sheet = await get(`https://findqcs.store${prefix}/spreadsheet`);
+  assert.equal(sheet.response.status, 200, lang);
+  assert.equal((sheet.body.match(/class="spreadsheet-row"/g) || []).length, 5, lang);
+  assert.match(sheet.body, /qc-finder-vs-qc-checker-vs-spreadsheet/);
+  for (const slug of [
+    "use-qc-finder-taobao-weidian-1688-links",
+    "qc-photo-matching-exact-item-color-size-batch",
+    "qc-finder-vs-qc-checker-vs-spreadsheet",
+    "weidian-qc-photos-link-verification-workflow",
+  ]) {
+    const guide = await get(`https://findqcs.store${prefix}/articles/${slug}`);
+    assert.equal(guide.response.status, 200, `${lang}:${slug}`);
+    assert.equal((guide.body.match(/<section id="step-/g) || []).length, 7, `${lang}:${slug}`);
+    assert.match(guide.body, /"datePublished":"2026-09-17"/);
+    assert.match(guide.body, /class="related-guides"/);
+    assert.doesNotMatch(guide.body, /SEO Articles|SEO-Artikel|Artículos SEO|Articles SEO|Articoli SEO/);
+  }
 }
 
 for (const lang of ["en", "de", "es", "fr", "it"]) {
