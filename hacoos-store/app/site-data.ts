@@ -25,6 +25,11 @@ export const pageKeys = [
   "articles/hacoo-codes-product-id-guide",
   "articles/hacoo-links-not-working",
   "articles/hacoo-spreadsheet-verify-links",
+  "articles/hacoo-find-product-old-link-screenshot",
+  "articles/hacoo-shoes-links",
+  "articles/hacoo-hoodie-tracksuit-links",
+  "articles/hacoo-bag-links",
+  "articles/hacoo-wrong-product-link",
 ] as const;
 export type PageKey = (typeof pageKeys)[number];
 
@@ -187,6 +192,11 @@ export const copy: Record<Locale, Copy> = {
       "articles/hacoo-codes-product-id-guide": { title: "Hacoo Codes Explained: Match Product IDs to Current Links", intro: "Use a Hacoo product code as a durable reference, then confirm the current title, image, variant and destination before opening a listing." },
       "articles/hacoo-links-not-working": { title: "Hacoo Links Not Working? Find the Updated Product URL", intro: "Diagnose an expired, redirected or region-dependent Hacoo link without trusting an unverified mirror or replacement." },
       "articles/hacoo-spreadsheet-verify-links": { title: "Hacoo Spreadsheet 2026: Verify Every Product Link", intro: "Turn a copied list into a useful Hacoo spreadsheet by checking IDs, final URLs, images, variants, prices and review dates." },
+      "articles/hacoo-find-product-old-link-screenshot": { title: "How to Find a Hacoo Product From an Old Link or Screenshot", intro: "Recover the strongest identifiers from an old URL or image, compare current candidates and document only reproducible matches." },
+      "articles/hacoo-shoes-links": { title: "Hacoo Shoes Links: Check Product IDs, Photos and Sizes", intro: "Verify the exact shoe option, inspect shape and construction, and compare insole measurements before using a shared link." },
+      "articles/hacoo-hoodie-tracksuit-links": { title: "Hacoo Hoodie and Tracksuit Links: Match the Correct Variant", intro: "Match the garment, set composition, colour, graphic, price and size chart instead of trusting a parent listing's default option." },
+      "articles/hacoo-bag-links": { title: "Hacoo Bag Links: Verify Colour, Size and Listing ID", intro: "Check the exact bag option, proportions, dimensions, included straps and selected price under the current product ID." },
+      "articles/hacoo-wrong-product-link": { title: "Hacoo Product Link Opens the Wrong Item: Verification Checklist", intro: "Classify the mismatch, recover the intended record and publish a correction without silently overwriting the old evidence." },
     },
     sectionLabels: ["What to verify", "What can go wrong", "Best next step"],
     sectionText: ["Confirm that the title, first image, selected option, source price and product ID still agree. A working URL alone does not prove that the item is the one shown on the card.", "Listings change, variants disappear and reposted sheets can keep an old image after the destination changes. Treat every outbound page as current third-party information.", "Save the product ID, compare measurements, inspect recent feedback and keep screenshots of the selected option before paying on any external service."],
@@ -222,6 +232,11 @@ type PriorityArticleKey = Extract<PageKey,
   | "articles/hacoo-codes-product-id-guide"
   | "articles/hacoo-links-not-working"
   | "articles/hacoo-spreadsheet-verify-links"
+  | "articles/hacoo-find-product-old-link-screenshot"
+  | "articles/hacoo-shoes-links"
+  | "articles/hacoo-hoodie-tracksuit-links"
+  | "articles/hacoo-bag-links"
+  | "articles/hacoo-wrong-product-link"
 >;
 
 const priorityPageLabels: Record<Exclude<Locale, "en">, Record<PriorityArticleKey, { title: string; intro: string }>> = {
@@ -229,21 +244,41 @@ const priorityPageLabels: Record<Exclude<Locale, "en">, Record<PriorityArticleKe
     "articles/hacoo-codes-product-id-guide": { title: "Hacoo Codes erklärt: Produkt-IDs mit aktuellen Links abgleichen", intro: "Nutze einen Hacoo-Produktcode als stabile Referenz und prüfe dann Titel, Bild, Variante und Zielseite." },
     "articles/hacoo-links-not-working": { title: "Hacoo-Link funktioniert nicht? Die aktuelle URL finden", intro: "Analysiere abgelaufene, umgeleitete oder regionsabhängige Links, ohne ungeprüften Ersatz zu übernehmen." },
     "articles/hacoo-spreadsheet-verify-links": { title: "Hacoo Spreadsheet 2026: Jeden Produktlink prüfen", intro: "Mache aus einer kopierten Liste eine brauchbare Tabelle mit IDs, Ziel-URLs, Bildern, Varianten, Preisen und Prüfdaten." },
+    "articles/hacoo-find-product-old-link-screenshot": { title: "Hacoo-Produkt über alten Link oder Screenshot finden", intro: "Sichere Identifikatoren, vergleiche aktuelle Kandidaten und dokumentiere nur reproduzierbare Treffer." },
+    "articles/hacoo-shoes-links": { title: "Hacoo-Schuhlinks: Produkt-ID, Fotos und Größen prüfen", intro: "Prüfe die exakte Schuhvariante, Form, Verarbeitung und Innensohlenmaße." },
+    "articles/hacoo-hoodie-tracksuit-links": { title: "Hacoo-Hoodie- und Trainingsanzug-Links richtig zuordnen", intro: "Gleiche Kleidungsstück, Set, Farbe, Grafik, Preis und Größentabelle der gewählten Variante ab." },
+    "articles/hacoo-bag-links": { title: "Hacoo-Taschenlinks: Farbe, Größe und Listing-ID prüfen", intro: "Kontrolliere Option, Proportionen, Maße, Zubehör und Preis unter der aktuellen Produkt-ID." },
+    "articles/hacoo-wrong-product-link": { title: "Hacoo-Link öffnet falsches Produkt: Prüfcheckliste", intro: "Ordne die Abweichung ein, finde den beabsichtigten Datensatz und korrigiere den Link nachvollziehbar." },
   },
   fr: {
     "articles/hacoo-codes-product-id-guide": { title: "Codes Hacoo : relier les identifiants aux liens actuels", intro: "Utilisez le code produit comme repère stable, puis contrôlez titre, image, variante et destination." },
     "articles/hacoo-links-not-working": { title: "Lien Hacoo inactif : retrouver l’URL actuelle", intro: "Diagnostiquez un lien expiré, redirigé ou régional sans adopter un remplacement non vérifié." },
     "articles/hacoo-spreadsheet-verify-links": { title: "Tableur Hacoo 2026 : vérifier chaque lien produit", intro: "Transformez une liste copiée en tableur utile en contrôlant identifiants, URL, images, variantes, prix et dates." },
+    "articles/hacoo-find-product-old-link-screenshot": { title: "Retrouver un produit Hacoo depuis un ancien lien ou une capture", intro: "Conservez les identifiants, comparez les candidats actuels et ne publiez que des correspondances reproductibles." },
+    "articles/hacoo-shoes-links": { title: "Liens chaussures Hacoo : vérifier ID, photos et tailles", intro: "Contrôlez la variante exacte, la forme, la fabrication et les mesures de semelle intérieure." },
+    "articles/hacoo-hoodie-tracksuit-links": { title: "Liens sweats et survêtements Hacoo : choisir la bonne variante", intro: "Rapprochez vêtement, composition du set, couleur, motif, prix et tableau de tailles." },
+    "articles/hacoo-bag-links": { title: "Liens sacs Hacoo : vérifier couleur, taille et identifiant", intro: "Contrôlez l’option, les proportions, dimensions, accessoires et prix sous l’identifiant actuel." },
+    "articles/hacoo-wrong-product-link": { title: "Le lien Hacoo ouvre le mauvais article : checklist", intro: "Classez l’écart, retrouvez la fiche prévue et publiez une correction traçable." },
   },
   es: {
     "articles/hacoo-codes-product-id-guide": { title: "Códigos Hacoo: relaciona ID con enlaces actuales", intro: "Usa el código de producto como referencia estable y comprueba título, imagen, variante y destino." },
     "articles/hacoo-links-not-working": { title: "¿No funciona un enlace de Hacoo? Encuentra la URL actual", intro: "Diagnostica enlaces caducados, redirigidos o regionales sin confiar en sustitutos sin verificar." },
     "articles/hacoo-spreadsheet-verify-links": { title: "Hoja Hacoo 2026: verifica cada enlace de producto", intro: "Convierte una lista copiada en una hoja útil verificando ID, URL final, imágenes, variantes, precios y fechas." },
+    "articles/hacoo-find-product-old-link-screenshot": { title: "Cómo encontrar un producto Hacoo desde un enlace antiguo o captura", intro: "Conserva identificadores, compara candidatos actuales y publica solo coincidencias reproducibles." },
+    "articles/hacoo-shoes-links": { title: "Enlaces de zapatos Hacoo: comprueba ID, fotos y tallas", intro: "Verifica la variante exacta, la forma, la construcción y las medidas de plantilla." },
+    "articles/hacoo-hoodie-tracksuit-links": { title: "Enlaces Hacoo de sudaderas y chándales: variante correcta", intro: "Compara prenda, piezas del conjunto, color, gráfico, precio y tabla de tallas." },
+    "articles/hacoo-bag-links": { title: "Enlaces de bolsos Hacoo: color, tamaño e ID", intro: "Comprueba opción, proporciones, medidas, accesorios y precio bajo el ID actual." },
+    "articles/hacoo-wrong-product-link": { title: "El enlace Hacoo abre otro producto: lista de verificación", intro: "Clasifica el error, recupera la ficha prevista y publica una corrección trazable." },
   },
   it: {
     "articles/hacoo-codes-product-id-guide": { title: "Codici Hacoo: abbina gli ID ai link aggiornati", intro: "Usa il codice prodotto come riferimento stabile, poi verifica titolo, immagine, variante e destinazione." },
     "articles/hacoo-links-not-working": { title: "Link Hacoo non funzionante? Trova l’URL aggiornata", intro: "Analizza link scaduti, reindirizzati o regionali senza affidarti a sostituti non verificati." },
     "articles/hacoo-spreadsheet-verify-links": { title: "Foglio Hacoo 2026: verifica ogni link prodotto", intro: "Trasforma una lista copiata in un foglio utile controllando ID, URL finali, immagini, varianti, prezzi e date." },
+    "articles/hacoo-find-product-old-link-screenshot": { title: "Trovare un prodotto Hacoo da un vecchio link o screenshot", intro: "Conserva gli identificatori, confronta i candidati e pubblica solo corrispondenze ripetibili." },
+    "articles/hacoo-shoes-links": { title: "Link scarpe Hacoo: controlla ID, foto e taglie", intro: "Verifica variante esatta, forma, costruzione e misure della soletta." },
+    "articles/hacoo-hoodie-tracksuit-links": { title: "Link felpe e tute Hacoo: abbina la variante corretta", intro: "Confronta capo, componenti del set, colore, grafica, prezzo e tabella taglie." },
+    "articles/hacoo-bag-links": { title: "Link borse Hacoo: verifica colore, misura e ID", intro: "Controlla opzione, proporzioni, dimensioni, accessori e prezzo sotto l’ID attuale." },
+    "articles/hacoo-wrong-product-link": { title: "Il link Hacoo apre l’articolo sbagliato: checklist", intro: "Classifica l’errore, recupera la scheda prevista e pubblica una correzione tracciabile." },
   },
 };
 for (const locale of ["de", "fr", "es", "it"] as const) {

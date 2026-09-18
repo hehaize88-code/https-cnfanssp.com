@@ -51,6 +51,11 @@ const articleKeys: PageKey[] = [
   "articles/hacoo-codes-product-id-guide",
   "articles/hacoo-links-not-working",
   "articles/hacoo-spreadsheet-verify-links",
+  "articles/hacoo-find-product-old-link-screenshot",
+  "articles/hacoo-shoes-links",
+  "articles/hacoo-hoodie-tracksuit-links",
+  "articles/hacoo-bag-links",
+  "articles/hacoo-wrong-product-link",
   "articles/find-product-links",
   "articles/read-qc-photos",
   "articles/size-before-you-buy",
@@ -62,6 +67,11 @@ const articleReleaseDates: Partial<Record<PageKey, string>> = {
   "articles/hacoo-codes-product-id-guide": "2026-09-17",
   "articles/hacoo-links-not-working": "2026-09-17",
   "articles/hacoo-spreadsheet-verify-links": "2026-09-17",
+  "articles/hacoo-find-product-old-link-screenshot": "2026-09-18",
+  "articles/hacoo-shoes-links": "2026-09-18",
+  "articles/hacoo-hoodie-tracksuit-links": "2026-09-18",
+  "articles/hacoo-bag-links": "2026-09-18",
+  "articles/hacoo-wrong-product-link": "2026-09-18",
 };
 
 const detailIcons: Partial<Record<PageKey, typeof ShieldCheck>> = {
@@ -244,7 +254,7 @@ function ArticleCards({ locale }: { locale: Locale }) {
         return (
           <a href={routeFor(locale, key)} key={key}>
             <Icon aria-hidden="true" />
-            <span>0{index + 1} / {ui[locale].buyerGuides.toUpperCase()}</span>
+            <span>{String(index + 1).padStart(2, "0")} / {ui[locale].buyerGuides.toUpperCase()}</span>
             <h2>{t.pageLabels[key].title}</h2>
             <p>{t.pageLabels[key].intro}</p>
             <b>{t.readGuides}<ArrowRight /></b>

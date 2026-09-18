@@ -1,10 +1,10 @@
 import type { Article } from "./article-content";
-import type { PriorityArticleKey } from "./priority-article-content";
+import type { CorePriorityArticleKey } from "./priority-article-content";
 import type { Locale } from "./site-data";
 
 type TranslatedLocale = Exclude<Locale, "en">;
 
-export const priorityArticleTranslations: Record<TranslatedLocale, Record<PriorityArticleKey, Article>> = {
+export const priorityArticleTranslations: Record<TranslatedLocale, Record<CorePriorityArticleKey, Article>> = {
   de: {
     "articles/hacoo-codes-product-id-guide": {
       minutes: 10,
