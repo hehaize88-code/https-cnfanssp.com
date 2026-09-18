@@ -1,3 +1,5 @@
+import { priorityArticleKeys, priorityArticleLabels } from "./priority-articles";
+
 export const locales = ["en", "de", "fr", "es", "it"] as const;
 export type Locale = (typeof locales)[number];
 export const localeNames: Record<Locale, string> = {
@@ -23,8 +25,11 @@ export const pageKeys = [
   "articles/read-qc-photos",
   "articles/size-before-you-buy",
   "articles/hacoo-uk-pre-order-readiness-sheet",
+  ...priorityArticleKeys,
 ] as const;
 export type PageKey = (typeof pageKeys)[number];
+
+export const englishOnlyArticleKeys = new Set<PageKey>(priorityArticleKeys);
 
 export function routeFor(locale: Locale, page: PageKey) {
   const prefix = locale === "en" ? "" : `/${locale}`;
@@ -156,7 +161,7 @@ type Copy = {
 export const copy: Record<Locale, Copy> = {
   en: {
     nav: { spreadsheet: "UK Link Index", finds: "External Routes", categories: "Categories", "qc-guide": "UK Photo Checks", shipping: "UK Delivery", guide: "UK Guide", articles: "Articles", faq: "UK FAQ", methodology: "Methodology" },
-    badge: "Independent UK link desk · checked 28 Aug 2026",
+    badge: "Independent UK buyer guide · reviewed 18 Sep 2026",
     heroTitle: "A Hacoo UK guide built around evidence, not assumptions.",
     heroText: "Check independently matched external product routes, first-image identity, UK delivery evidence, UK/EU sizing and return records before you decide.",
     searchPlaceholder: "Search shoes, hoodies, bags…",
@@ -171,13 +176,13 @@ export const copy: Record<Locale, Copy> = {
     workflow: ["Choose a UK buying question, category or search term.", "Open the external listing and match its image, source listing ID and current options.", "Check UK/EU sizing, delivery evidence and return conditions before deciding."],
     readGuides: "Read the buyer guides",
     independent: "Hacoos.uk is an independent UK research guide. It is not affiliated with Hacoo and does not handle orders, payments or seller guarantees.",
-    updated: "Link check: 28 August 2026",
+    updated: "Editorial review: 18 September 2026",
     menu: "Menu",
     close: "Close",
     viewAll: "View all checked finds",
     fieldNotes: "Field notes",
     pageLabels: {
-      home: { title: "Hacoo UK Guide: Delivery, Sizing & External Routes", intro: "An independent UK guide to delivery evidence, UK/EU sizing, review-photo checks and externally matched catalogue routes." },
+      home: { title: "Hacoo UK: Delivery, Sizing, Reviews & App Guide", intro: "An independent UK guide to delivery times, tracking, returns, UK/EU sizing, the Hacoo app and verified product research." },
       spreadsheet: { title: "Hacoo UK Link Verification Index", intro: "Use a dated source-listing index to compare destination, first image, option and source price; these are external catalogue routes, not official Hacoo product URLs." },
       finds: { title: "Hacoo UK External Product Routes", intro: "Independently matched external catalogue routes with a current first image, source listing ID, source price and exact destination." },
       categories: { title: "Hacoo UK Category Routes & Source ID Checks", intro: "Choose an external catalogue category, then verify the source listing ID and identity fields before opening the destination." },
@@ -185,12 +190,13 @@ export const copy: Record<Locale, Copy> = {
       shipping: { title: "Hacoo UK Shipping & Returns Guide", intro: "Understand the official UK estimate, delivery stages, tracking evidence and the general after-sales window." },
       guide: { title: "How to Use Hacoo in the UK", intro: "A UK-specific route from region and address checks to external listing verification, UK/EU sizing, review evidence and delivery records." },
       faq: { title: "Hacoo UK Delivery, Region & Returns FAQ", intro: "Straight answers for UK users about region settings, external routes, delivery evidence, returns and the limits of independent checks." },
-      articles: { title: "Hacoo UK Buyer Research Notes", intro: "Long-form UK research on external route identity, review-photo evidence, UK/EU sizing and delivery decisions." },
+      articles: { title: "Hacoo UK Guides: Delivery, App, Sizing, Reviews & Returns", intro: "Long-form UK guides answering delivery, tracking, app, product-link, sizing, review, return and customs questions with current primary sources." },
       methodology: { title: "Hacoos UK Research Methodology & Corrections", intro: "See the named sources, check date, first-image matching rule, destination-status rule and correction policy behind this independent UK guide." },
-      "articles/find-product-links": { title: "How UK Users Can Verify Hacoo-Related Product Routes", intro: "Why checking an external destination and source listing ID matters more than a date printed on a copied spreadsheet." },
-      "articles/read-qc-photos": { title: "Hacoo Reviews UK: A Photo-Evidence Checklist", intro: "How UK users can balance current reviews, inspect construction and keep the photos a support process may require." },
-      "articles/size-before-you-buy": { title: "Hacoo UK Size Guide: UK/EU Conversion & Measurements", intro: "A repeatable UK/EU garment and shoe measurement method built around the exact selected variant." },
+      "articles/find-product-links": { title: "Hacoo Links UK: How to Find and Verify Product Links", intro: "Check a Hacoo-related destination, source listing ID, image and exact option so a working link does not send you to the wrong item." },
+      "articles/read-qc-photos": { title: "Hacoo Reviews UK: Quality, Photos, Returns & Risks", intro: "Use variant-level reviews and photo evidence to assess construction, measurements and after-sales records without treating ratings as guarantees." },
+      "articles/size-before-you-buy": { title: "Hacoo Size Guide UK: Clothing, Shoes & UK/EU Fit", intro: "Compare garment and foot measurements with the exact selected chart instead of guessing from UK, EU or letter-size labels." },
       "articles/hacoo-uk-pre-order-readiness-sheet": { title: "Hacoo UK Pre-Order Readiness Sheet: Five Checks Before You Act", intro: "A private UK checklist for the real region, complete address, exact option, measurements, timing buffer and evidence before an order decision." },
+      ...priorityArticleLabels,
     },
     sectionLabels: ["What to verify", "What can go wrong", "Best next step"],
     sectionText: ["Confirm that the title, first image, selected option, source price and source listing ID still agree. A working URL alone does not prove that the item is the one shown on the card.", "Listings change, variants disappear and reposted sheets can keep an old image after the destination changes. Treat every outbound page as current third-party information, not an official Hacoo product page.", "Save the source listing ID, compare UK/EU measurements, inspect recent feedback and keep screenshots of the selected option before paying on any external service."],
@@ -232,20 +238,23 @@ copy.it.updated = "Link verificati: 28 agosto 2026";
 
 const englishLabels = copy.en.pageLabels;
 for (const locale of ["de", "fr", "es", "it"] as const) {
-  const titles: Record<Locale, Record<PageKey, string>> = {
+  const titles: Record<Locale, Partial<Record<PageKey, string>>> = {
     en: Object.fromEntries(pageKeys.map((k) => [k, englishLabels[k].title])) as Record<PageKey, string>,
     de: { home: "Hacoo UK: Lieferung, Größen und externe Routen", spreadsheet: "Hacoo UK Link-Prüfindex", finds: "Externe Hacoo-Routen für UK-Nutzer", categories: "Hacoo UK Kategorien und Quellen-IDs", "qc-guide": "Hacoo UK Checkliste für Bewertungsfotos", shipping: "Hacoo Versand nach Großbritannien", guide: "Hacoo in Großbritannien verwenden", faq: "Hacoo UK FAQ zu Region, Lieferung und Rückgabe", articles: "Hacoo UK Käufer-Recherchen", methodology: "Hacoos UK Methodik und Korrekturen", "articles/find-product-links": "Hacoo-bezogene externe Routen in UK prüfen", "articles/read-qc-photos": "Hacoo Bewertungen UK: Foto-Checkliste", "articles/size-before-you-buy": "Hacoo UK Größenguide: UK/EU-Maße", "articles/hacoo-uk-pre-order-readiness-sheet": "Hacoo UK Vorbestell-Check: fünf Prüfungen" },
     fr: { home: "Hacoo UK : livraison, tailles et routes externes", spreadsheet: "Index de vérification des liens Hacoo UK", finds: "Routes externes Hacoo pour le Royaume-Uni", categories: "Catégories Hacoo UK et identifiants source", "qc-guide": "Liste photo des avis Hacoo UK", shipping: "Livraison Hacoo au Royaume-Uni", guide: "Utiliser Hacoo au Royaume-Uni", faq: "FAQ Hacoo UK : région, livraison et retours", articles: "Recherches Hacoo UK pour acheteurs", methodology: "Méthode et corrections Hacoos UK", "articles/find-product-links": "Vérifier des routes externes liées à Hacoo au Royaume-Uni", "articles/read-qc-photos": "Avis Hacoo UK : liste de preuves photo", "articles/size-before-you-buy": "Guide des tailles Hacoo UK : conversion UK/UE", "articles/hacoo-uk-pre-order-readiness-sheet": "Fiche Hacoo UK avant commande : cinq contrôles" },
     es: { home: "Hacoo UK: entrega, tallas y rutas externas", spreadsheet: "Índice de verificación de enlaces Hacoo UK", finds: "Rutas externas Hacoo para usuarios de UK", categories: "Categorías Hacoo UK e ID de fuente", "qc-guide": "Lista de fotos de reseñas Hacoo UK", shipping: "Envío de Hacoo al Reino Unido", guide: "Cómo usar Hacoo en el Reino Unido", faq: "FAQ Hacoo UK: región, entrega y devoluciones", articles: "Investigación Hacoo UK para compradores", methodology: "Método y correcciones de Hacoos UK", "articles/find-product-links": "Verificar rutas externas relacionadas con Hacoo en UK", "articles/read-qc-photos": "Reseñas Hacoo UK: lista de pruebas fotográficas", "articles/size-before-you-buy": "Guía de tallas Hacoo UK: conversión UK/UE", "articles/hacoo-uk-pre-order-readiness-sheet": "Hoja Hacoo UK antes del pedido: cinco controles" },
     it: { home: "Hacoo UK: consegna, taglie e percorsi esterni", spreadsheet: "Indice di verifica link Hacoo UK", finds: "Percorsi esterni Hacoo per utenti UK", categories: "Categorie Hacoo UK e ID fonte", "qc-guide": "Lista foto recensioni Hacoo UK", shipping: "Spedizione Hacoo nel Regno Unito", guide: "Come usare Hacoo nel Regno Unito", faq: "FAQ Hacoo UK: regione, consegna e resi", articles: "Ricerca Hacoo UK per acquirenti", methodology: "Metodo e correzioni Hacoos UK", "articles/find-product-links": "Verificare percorsi esterni legati a Hacoo in UK", "articles/read-qc-photos": "Recensioni Hacoo UK: lista prove fotografiche", "articles/size-before-you-buy": "Guida taglie Hacoo UK: conversione UK/UE", "articles/hacoo-uk-pre-order-readiness-sheet": "Scheda Hacoo UK prima dell'ordine: cinque controlli" },
   };
-  const intros: Record<Exclude<Locale, "en">, Record<PageKey, string>> = {
+  const intros: Record<Exclude<Locale, "en">, Partial<Record<PageKey, string>>> = {
     de: { home: "Unabhängiger UK-Ratgeber zu Lieferung, UK/EU-Größen, Bewertungsfotos und externen Katalogrouten.", spreadsheet: "Prüfe datierte externe Katalogrouten statt kopierte oder abgelaufene Tabellenzeilen.", finds: "Unabhängig abgeglichene externe Einträge mit aktuellem Bild, Quellen-ID und Preis.", categories: "Öffne zuerst eine externe Kategorie und grenze danach den Artikel ein.", "qc-guide": "Ein UK-orientierter Ablauf für Identität, Form, Verarbeitung, Maße und Reklamationsfotos.", shipping: "Offizielle UK-Zeitspanne, Tracking, Rückgabefrist und Nachweise verständlich eingeordnet.", guide: "Von Region und UK-Adresse bis Größen-, Routen- und Lieferprüfung.", faq: "Fakten für UK-Nutzer zu Region, Lieferung, Rückgabe, externen Routen und Größe.", articles: "Ausführliche UK-Käuferartikel zu externen Routen, Fotos, Bewertungen und Größenwahl.", methodology: "Benannte Quellen, Prüfdatum, Bildabgleich, Statuscodes und Korrekturregeln dieses unabhängigen UK-Ratgebers.", "articles/find-product-links": "Warum die Prüfung externer Ziele wichtiger ist als das Datum einer kopierten Tabelle.", "articles/read-qc-photos": "UK-Bewertungen ausbalancieren, Konstruktion prüfen und brauchbare Nachweise sichern.", "articles/size-before-you-buy": "UK/EU-Kleidungs- und Schuhmaße mit einer passenden Referenz vergleichen.", "articles/hacoo-uk-pre-order-readiness-sheet": "Privater UK-Check für Region, Adresse, genaue Option, Maße, Zeitpuffer und Belege vor der Entscheidung." },
     fr: { home: "Guide UK indépendant sur livraison, tailles UK/UE, photos d’avis et routes de catalogue externes.", spreadsheet: "Vérifier des routes externes datées plutôt que des lignes copiées ou périmées.", finds: "Fiches externes rapprochées avec image, identifiant source et prix actuels.", categories: "Ouvrir d’abord une catégorie externe pertinente, puis préciser l’article.", "qc-guide": "Une méthode UK fondée sur des preuves pour identité, fabrication, mesures et photos.", shipping: "Délai officiel UK, suivi, retour et preuves expliqués clairement.", guide: "De la région et l’adresse UK aux contrôles de taille, route et livraison.", faq: "Réponses UK sur région, livraison, retour, routes externes, avis et tailles.", articles: "Articles UK approfondis sur routes externes, photos, avis et tailles.", methodology: "Sources nommées, date, rapprochement d’image, statut et politique de correction du guide.", "articles/find-product-links": "Pourquoi vérifier une destination externe compte davantage que la date d’un tableur.", "articles/read-qc-photos": "Équilibrer les avis UK, inspecter la fabrication et garder des preuves utiles.", "articles/size-before-you-buy": "Comparer tailles UK/UE et mesures à une référence qui vous va.", "articles/hacoo-uk-pre-order-readiness-sheet": "Contrôle privé de la région, adresse, option, mesures, marge et preuves avant de décider." },
     es: { home: "Guía UK independiente sobre entrega, tallas UK/UE, fotos de reseñas y rutas externas.", spreadsheet: "Comprueba rutas externas fechadas en vez de filas copiadas o caducadas.", finds: "Fichas externas comprobadas con imagen, ID de fuente y precio actuales.", categories: "Abre primero una categoría externa y después concreta el artículo.", "qc-guide": "Un proceso UK con pruebas para identidad, construcción, medidas y fotos.", shipping: "Plazo oficial UK, seguimiento, devolución y pruebas explicados con claridad.", guide: "Desde región y dirección UK hasta controles de talla, ruta y entrega.", faq: "Respuestas UK sobre región, entrega, devolución, rutas externas y talla.", articles: "Artículos UK basados en fuentes sobre rutas externas, fotos, reseñas y tallas.", methodology: "Fuentes, fecha, cotejo de imagen, estado de destino y política de corrección del sitio.", "articles/find-product-links": "Por qué verificar un destino externo importa más que la fecha de una hoja.", "articles/read-qc-photos": "Equilibra reseñas UK, inspecciona construcción y conserva pruebas útiles.", "articles/size-before-you-buy": "Compara tallas UK/UE y medidas con una referencia que te queda bien.", "articles/hacoo-uk-pre-order-readiness-sheet": "Control privado de región, dirección, opción, medidas, margen y pruebas antes de decidir." },
     it: { home: "Guida UK indipendente su consegna, taglie UK/UE, foto recensioni e percorsi esterni.", spreadsheet: "Controlla percorsi esterni datati invece di righe copiate o scadute.", finds: "Schede esterne verificate con immagine, ID fonte e prezzo aggiornati.", categories: "Apri prima una categoria esterna e poi restringi la ricerca.", "qc-guide": "Un metodo UK basato su prove per identità, costruzione, misure e foto.", shipping: "Tempi ufficiali UK, tracking, resi e prove spiegati con chiarezza.", guide: "Da regione e indirizzo UK ai controlli di taglia, percorso e consegna.", faq: "Risposte UK su regione, consegna, reso, percorsi esterni e taglia.", articles: "Articoli UK basati su fonti su percorsi esterni, foto, recensioni e taglie.", methodology: "Fonti, data, confronto immagini, stato destinazione e politica di correzione del sito.", "articles/find-product-links": "Perché verificare una destinazione esterna conta più della data di un foglio.", "articles/read-qc-photos": "Bilanciare recensioni UK, controllare la costruzione e conservare prove utili.", "articles/size-before-you-buy": "Confrontare taglie UK/UE e misure con un riferimento che veste bene.", "articles/hacoo-uk-pre-order-readiness-sheet": "Controllo privato di regione, indirizzo, opzione, misure, margine e prove prima di decidere." },
   };
-  copy[locale].pageLabels = Object.fromEntries(pageKeys.map((key) => [key, { title: titles[locale][key], intro: intros[locale][key] }])) as Copy["pageLabels"];
+  copy[locale].pageLabels = Object.fromEntries(pageKeys.map((key) => [key, {
+    title: titles[locale][key] ?? englishLabels[key].title,
+    intro: intros[locale][key] ?? englishLabels[key].intro,
+  }])) as Copy["pageLabels"];
 }
 
 export const pageMeta = Object.fromEntries(

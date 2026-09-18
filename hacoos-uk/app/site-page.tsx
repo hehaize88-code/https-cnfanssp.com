@@ -9,7 +9,6 @@ import {
   CircleAlert,
   Languages,
   Menu,
-  MessageCircle,
   PackageCheck,
   Ruler,
   Search,
@@ -21,6 +20,7 @@ import { NativeSelect, NativeSelectOption } from "@/components/ui/native-select"
 import {
   categories,
   copy,
+  englishOnlyArticleKeys,
   products,
   routeFor,
   type Locale,
@@ -28,6 +28,7 @@ import {
 } from "./site-data";
 import { articles } from "./article-content";
 import { articleExpansions } from "./article-expansions";
+import { priorityArticleKeys } from "./priority-articles";
 import {
   evidenceFacts,
   pageChecklists,
@@ -53,6 +54,7 @@ const articleKeys: PageKey[] = [
   "articles/read-qc-photos",
   "articles/size-before-you-buy",
   "articles/hacoo-uk-pre-order-readiness-sheet",
+  ...priorityArticleKeys,
 ];
 
 const detailIcons: Partial<Record<PageKey, typeof ShieldCheck>> = {
@@ -147,6 +149,7 @@ function SearchDesk({ locale, compact = false }: { locale: Locale; compact?: boo
         {t.searchPlaceholder}
       </label>
       <input id={`keywords-${compact ? "compact" : "hero"}`} name="keywords" placeholder={t.searchPlaceholder} required />
+      <input type="hidden" name="channelid" value="2" />
       <button type="submit">{t.searchButton}<ArrowUpRight aria-hidden="true" /></button>
     </form>
   );
@@ -287,11 +290,14 @@ function FaqList({ locale, limit }: { locale: Locale; limit?: number }) {
 
 function ArticleCards({ locale }: { locale: Locale }) {
   const t = copy[locale];
-  const icons = [Search, PackageCheck, Ruler, ShieldCheck];
+  const icons = [Search, PackageCheck, Ruler, ShieldCheck, Truck, BookOpen, CircleAlert];
+  const visibleKeys = locale === "en"
+    ? articleKeys
+    : articleKeys.filter((key) => !englishOnlyArticleKeys.has(key));
   return (
     <div className="article-grid">
-      {articleKeys.map((key, index) => {
-        const Icon = icons[index];
+      {visibleKeys.map((key, index) => {
+        const Icon = icons[index % icons.length];
         return (
           <a href={routeFor(locale, key)} key={key}>
             <Icon aria-hidden="true" />
@@ -418,8 +424,10 @@ function EvidenceGrid({ locale, pageKey }: { locale: Locale; pageKey: PageKey })
 function ArticlePage({ locale, pageKey }: { locale: Locale; pageKey: ArticleKey }) {
   const t = copy[locale];
   const u = ui[locale];
-  const article = articles[locale][pageKey];
-  const expansions = locale === "en" ? [] : articleExpansions[locale][pageKey];
+  const article = articles[locale][pageKey] ?? articles.en[pageKey];
+  if (!article) return null;
+  const expansions = locale === "en" ? [] : (articleExpansions[locale][pageKey] ?? []);
+  const isPriorityArticle = englishOnlyArticleKeys.has(pageKey);
   const figureProduct = products[pageKey === "articles/find-product-links" ? 0 : pageKey === "articles/read-qc-photos" ? 1 : 3];
   return (
     <>
@@ -429,17 +437,17 @@ function ArticlePage({ locale, pageKey }: { locale: Locale; pageKey: ArticleKey 
         <p>{t.pageLabels[pageKey].intro}</p>
         <div className="article-byline">
           <span>{u.readingTime}: {article.minutes} {u.minutes}</span>
-          <span>{u.lastReviewed}: 28 / 08 / 2026</span>
+          <span>{u.lastReviewed}: {(article.reviewed ?? "2026-08-28").split("-").reverse().join(" / ")}</span>
         </div>
       </section>
       <EvidenceGrid locale={locale} pageKey={pageKey} />
-      <section className="section route-disclosure"><p>{u.externalRouteDisclosure}</p></section>
-      <figure className="article-figure">
-        <a href={figureProduct.href} target="_blank" rel="nofollow sponsored noopener">
-          <img src={figureProduct.image} alt={`${u.exampleImage}: ${u.productNames[figureProduct.id]}`} loading="lazy" decoding="async" width={900} height={720} />
-        </a>
-        <figcaption><b>{u.exampleImage}</b><span>{u.figureCaption}</span></figcaption>
-      </figure>
+      {!isPriorityArticle && <section className="section route-disclosure"><p>{u.externalRouteDisclosure}</p></section>}
+      {!isPriorityArticle && <figure className="article-figure">
+          <a href={figureProduct.href} target="_blank" rel="nofollow sponsored noopener">
+            <img src={figureProduct.image} alt={`${u.exampleImage}: ${u.productNames[figureProduct.id]}`} loading="lazy" decoding="async" width={900} height={720} />
+          </a>
+          <figcaption><b>{u.exampleImage}</b><span>{u.figureCaption}</span></figcaption>
+        </figure>}
       <article className="long-article">
         {article.sections.map((section, index) => (
           <section key={section.heading}>
@@ -459,7 +467,9 @@ function ArticlePage({ locale, pageKey }: { locale: Locale; pageKey: ArticleKey 
       </section>
       <section className="section research-basis">
         <div><span className="kicker">{u.articleSources}</span><h2>{u.evidenceChecked}</h2></div>
-        <ul>{researchBasis[locale].map((source) => <li key={source}>{source}</li>)}</ul>
+        <ul>{article.sources
+          ? article.sources.map((source) => <li key={source.href}><a href={source.href} target="_blank" rel="nofollow noopener">{source.label}</a></li>)
+          : researchBasis[locale].map((source) => <li key={source}>{source}</li>)}</ul>
       </section>
       <section className="section related-reading">
         <div className="section-heading"><span>{u.relatedReading}</span><h2>{t.pageLabels.articles.title}</h2></div>
@@ -543,34 +553,35 @@ export function SitePage({ locale, pageKey }: { locale: Locale; pageKey: PageKey
       acceptedAnswer: { "@type": "Answer", text: answer },
     })),
   } : null;
-  const articleJson = pageKey.startsWith("articles/") ? {
+  const article = pageKey.startsWith("articles/") ? (articles[locale][pageKey as ArticleKey] ?? articles.en[pageKey as ArticleKey]) : null;
+  const articleJson = article ? {
     "@context": "https://schema.org",
-    "@type": "Article",
-    headline: copy[locale].pageLabels[pageKey].title,
-    description: copy[locale].pageLabels[pageKey].intro,
-    datePublished: pageKey === "articles/hacoo-uk-pre-order-readiness-sheet" ? "2026-08-29" : "2026-08-28",
-    dateModified: pageKey === "articles/hacoo-uk-pre-order-readiness-sheet" ? "2026-08-29" : "2026-08-28",
-    inLanguage: locale,
-    image: "https://hacoos.uk/hacoo-logo.png",
-    author: { "@type": "Organization", name: "Hacoos UK Research Desk", url: "https://hacoos.uk/methodology" },
-    publisher: { "@type": "Organization", name: "Hacoos UK Research Desk", url: "https://hacoos.uk/", logo: { "@type": "ImageObject", url: "https://hacoos.uk/hacoo-logo.png" } },
-    mainEntityOfPage: `https://hacoos.uk${routeFor(locale, pageKey)}`,
+    "@graph": [{
+      "@type": "Article",
+      headline: copy[locale].pageLabels[pageKey].title,
+      description: copy[locale].pageLabels[pageKey].intro,
+      datePublished: article.published ?? (pageKey === "articles/hacoo-uk-pre-order-readiness-sheet" ? "2026-08-29" : "2026-08-28"),
+      dateModified: article.reviewed ?? (pageKey === "articles/hacoo-uk-pre-order-readiness-sheet" ? "2026-08-29" : "2026-08-28"),
+      inLanguage: locale,
+      image: "https://hacoos.uk/hacoo-logo.png",
+      author: { "@type": "Organization", name: "Hacoos UK Research Desk", url: "https://hacoos.uk/methodology" },
+      publisher: { "@type": "Organization", name: "Hacoos UK Research Desk", url: "https://hacoos.uk/", logo: { "@type": "ImageObject", url: "https://hacoos.uk/hacoo-logo.png" } },
+      mainEntityOfPage: `https://hacoos.uk${routeFor(locale, pageKey)}`,
+      citation: article.sources?.map((source) => source.href),
+    }, {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Hacoos UK", item: "https://hacoos.uk/" },
+        { "@type": "ListItem", position: 2, name: copy[locale].pageLabels.articles.title, item: `https://hacoos.uk${routeFor(locale, "articles")}` },
+        { "@type": "ListItem", position: 3, name: copy[locale].pageLabels[pageKey].title, item: `https://hacoos.uk${routeFor(locale, pageKey)}` },
+      ],
+    }],
   } : null;
   return (
     <div className="site-shell">
       <Header locale={locale} pageKey={pageKey} />
       <main className={pageKey === "home" ? "home-main" : undefined}>{pageKey === "home" ? <HomePage locale={locale} /> : <InteriorPage locale={locale} pageKey={pageKey} />}</main>
       <Footer locale={locale} />
-      <a
-        className="whatsapp-float"
-        href="https://wa.me/message/3V2YFNRFGBI2O1"
-        target="_blank"
-        rel="noopener nofollow"
-        aria-label="Chat on WhatsApp"
-      >
-        <MessageCircle aria-hidden="true" />
-        <span>WhatsApp</span>
-      </a>
       {faqJson && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJson) }} />}
       {articleJson && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJson) }} />}
     </div>

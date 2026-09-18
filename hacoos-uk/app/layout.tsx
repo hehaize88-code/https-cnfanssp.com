@@ -5,23 +5,23 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL("https://hacoos.uk"),
   title: {
-    default: "Hacoo UK Delivery, Sizing & External Route Guide",
-    template: "%s | Hacoo UK Guide",
+    default: "Hacoo UK: Delivery, Sizing, Reviews & App Guide",
+    template: "%s",
   },
   description:
     "Independent UK guide to delivery, UK/EU sizing, review-photo evidence, returns and externally matched catalogue routes.",
   openGraph: {
     type: "website",
     siteName: "Hacoo UK Guide",
-    title: "Hacoo UK Delivery, Sizing & External Route Guide",
-    description: "Check UK delivery evidence, UK/EU sizing, review photos, returns and externally matched catalogue routes.",
+    title: "Hacoo UK: Delivery, Sizing, Reviews & App Guide",
+    description: "Check UK delivery times, tracking, returns, UK/EU sizing, the app and verified product-link research.",
     url: "https://hacoos.uk/",
     images: ["/hacoo-logo.png"],
   },
   twitter: {
     card: "summary",
-    title: "Hacoo UK Delivery, Sizing & External Route Guide",
-    description: "Check UK delivery evidence, UK/EU sizing, review photos, returns and externally matched catalogue routes.",
+    title: "Hacoo UK: Delivery, Sizing, Reviews & App Guide",
+    description: "Check UK delivery times, tracking, returns, UK/EU sizing, the app and verified product-link research.",
     images: ["/hacoo-logo.png"],
   },
   icons: {

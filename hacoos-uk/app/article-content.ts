@@ -1,17 +1,27 @@
 import type { Locale } from "./site-data";
 import type { ArticleKey } from "./localized-content";
 import { readinessArticles, readinessKey } from "./hu-article-content";
+import { priorityArticles, type ArticleSource } from "./priority-articles";
 
 export type ArticleSection = { heading: string; paragraphs: string[]; bullets?: string[] };
 export type Article = {
   minutes: number;
   sections: ArticleSection[];
   takeaways: string[];
+  published?: string;
+  reviewed?: string;
+  sources?: ArticleSource[];
 };
 
-const en: Record<ArticleKey, Article> = {
+const en: Partial<Record<ArticleKey, Article>> = {
   "articles/find-product-links": {
     minutes: 9,
+    published: "2026-08-28",
+    reviewed: "2026-09-18",
+    sources: [
+      { label: "Hacoo official website — current community and discovery description", href: "https://www.hacoo.app/" },
+      { label: "Hacoo Shipping & Delivery — destination and after-sales context", href: "https://www.hacoo.app/en-US/pages/shipping-info" },
+    ],
     sections: [
       {
         heading: "Why finding a Hacoo product can feel harder than opening a normal shop",
@@ -75,6 +85,12 @@ const en: Record<ArticleKey, Article> = {
   },
   "articles/read-qc-photos": {
     minutes: 10,
+    published: "2026-08-28",
+    reviewed: "2026-09-18",
+    sources: [
+      { label: "Hacoo official website — review and trust positioning", href: "https://www.hacoo.app/" },
+      { label: "Hacoo Shipping & Delivery — current after-sales statement", href: "https://www.hacoo.app/en-US/pages/shipping-info" },
+    ],
     sections: [
       {
         heading: "What Hacoo reviews can—and cannot—tell you",
@@ -138,6 +154,12 @@ const en: Record<ArticleKey, Article> = {
   },
   "articles/size-before-you-buy": {
     minutes: 9,
+    published: "2026-08-28",
+    reviewed: "2026-09-18",
+    sources: [
+      { label: "Hacoo official website — current platform description", href: "https://www.hacoo.app/" },
+      { label: "Hacoo Shipping & Delivery — current after-sales statement", href: "https://www.hacoo.app/en-US/pages/shipping-info" },
+    ],
     sections: [
       {
         heading: "Why the label is the least reliable part of a size decision",
@@ -202,8 +224,8 @@ const en: Record<ArticleKey, Article> = {
   },
 };
 
-function translatedArticles(locale: Exclude<Locale, "en">): Record<ArticleKey, Article> {
-  const data: Record<Exclude<Locale, "en">, Record<ArticleKey, Article>> = {
+function translatedArticles(locale: Exclude<Locale, "en">): Partial<Record<ArticleKey, Article>> {
+  const data: Record<Exclude<Locale, "en">, Partial<Record<ArticleKey, Article>>> = {
     de: {
       "articles/find-product-links": { minutes: 9, sections: [
         { heading: "Warum Hacoo-Produktlinks schwer zu finden sein können", paragraphs: ["Hacoos aktuelle Website und die Beschreibungen in den App-Stores stellen den Dienst als Community zum Teilen und Entdecken von Inhalten dar. Produkte werden deshalb häufig über Beiträge, Empfehlungen oder gespeicherte Links entdeckt. Eine normale Markensuche muss nicht dieselben Ergebnisse zeigen wie der Link eines anderen Nutzers.", "Bei der Prüfung am 28. August 2026 zeigte Google Play mehr als zehn Millionen Downloads. Links wandern damit durch Länder, Geräte und App-Versionen. Entscheidend ist nicht nur, ob eine URL öffnet, sondern ob Titel, Bild, Variante, Produkt-ID und Preis noch zum ursprünglichen Fund passen."] },
@@ -336,8 +358,8 @@ function translatedArticles(locale: Exclude<Locale, "en">): Record<ArticleKey, A
   return data[locale];
 }
 
-export const articles: Record<Locale, Record<ArticleKey, Article>> = {
-  en: { ...en, [readinessKey]: readinessArticles.en },
+export const articles: Record<Locale, Partial<Record<ArticleKey, Article>>> = {
+  en: { ...en, [readinessKey]: readinessArticles.en, ...priorityArticles },
   de: { ...translatedArticles("de"), [readinessKey]: readinessArticles.de },
   fr: { ...translatedArticles("fr"), [readinessKey]: readinessArticles.fr },
   es: { ...translatedArticles("es"), [readinessKey]: readinessArticles.es },

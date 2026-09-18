@@ -1,6 +1,10 @@
 # hacoos.uk — 33 Sites 60-Day SEO V2 Track
 
-This file is an execution specification for the existing automation `Hacoo九站60天`. It is not website content and must never be rendered, linked, copied, or quoted on the public site.
+This file is an execution specification for the existing automation `Hacoo十二站60天`. It is not website content and must never be rendered, linked, copied, or quoted on the public site.
+
+## Permanent site-level pause — effective 18 September 2026
+
+`hacoos.uk` and only `hacoos-uk/` are permanently excluded from automatic article updates. Automated runs must not research, create, edit, commit, push, deploy, backfill, reset or advance this site's cursor. Preserve all existing history and state. This restriction does not change the schedule, cursor, enablement or update behaviour of any other website, and it does not block an explicit user-requested manual maintenance or publication.
 
 ## Fixed site scope
 
