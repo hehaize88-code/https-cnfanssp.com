@@ -112,4 +112,4 @@ The timeout defaults can be overridden for a controlled canary with `SITES_INSTA
 - [vinext Documentation](https://github.com/cloudflare/vinext)
 - [Drizzle D1 Guide](https://orm.drizzle.team/docs/get-started/d1-new)
 
-<!-- hacoos.store deployment checkpoint: 2026-09-17 priority guides -->
+<!-- hacoos.store deployment checkpoint: 2026-09-18 eight priority guides -->
