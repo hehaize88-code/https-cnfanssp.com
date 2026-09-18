@@ -1,0 +1,47 @@
+name: Deploy findqcs.store
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "findqcs-store/**"
+      - ".github/workflows/deploy-findqcs.yml"
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-findqcs-production
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    name: Test and deploy Worker
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: findqcs-store
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: findqcs-store/package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run tests
+        run: npm test
+
+      - name: Deploy to Cloudflare
+        run: npm run deploy
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
