@@ -3,6 +3,7 @@
 Production Cloudflare Worker for `https://findqcs.store`.
 
 Production content release: 2026-09-17.
+Deployment refresh: 2026-09-18 (eight priority guides).
 
 The current concept uses a warm editorial / buyer's-catalog visual system with
 an image-led hero, exact-source product cards, research guides and five
