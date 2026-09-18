@@ -2,14 +2,16 @@ import type { Article } from "./article-content";
 import type { ArticleKey } from "./localized-content";
 import type { Locale } from "./site-data";
 import { priorityArticleTranslations } from "./priority-article-translations";
+import { remainingPriorityArticles, type RemainingPriorityArticleKey } from "./remaining-priority-article-content";
 
-export type PriorityArticleKey = Extract<ArticleKey,
+export type CorePriorityArticleKey = Extract<ArticleKey,
   | "articles/hacoo-codes-product-id-guide"
   | "articles/hacoo-links-not-working"
   | "articles/hacoo-spreadsheet-verify-links"
 >;
+export type PriorityArticleKey = CorePriorityArticleKey | RemainingPriorityArticleKey;
 
-const en: Record<PriorityArticleKey, Article> = {
+const en: Record<CorePriorityArticleKey, Article> = {
   "articles/hacoo-codes-product-id-guide": {
     minutes: 10,
     sections: [
@@ -198,6 +200,9 @@ const en: Record<PriorityArticleKey, Article> = {
 };
 
 export const priorityArticles: Record<Locale, Record<PriorityArticleKey, Article>> = {
-  en,
-  ...priorityArticleTranslations,
+  en: { ...en, ...remainingPriorityArticles.en },
+  de: { ...priorityArticleTranslations.de, ...remainingPriorityArticles.de },
+  fr: { ...priorityArticleTranslations.fr, ...remainingPriorityArticles.fr },
+  es: { ...priorityArticleTranslations.es, ...remainingPriorityArticles.es },
+  it: { ...priorityArticleTranslations.it, ...remainingPriorityArticles.it },
 };
