@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { articleSlugs, languages, localizedPath, routeKeys } from "./site-data";
+import { prioritySlugs } from "./hv-priority-articles";
 
 export const dynamic = "force-static";
 
@@ -13,6 +14,8 @@ const articleModified: Record<string, string> = {
   "articles/hacoo-product-decision-matrix": "2026-08-29",
   "articles/hacoo-use-case-must-have-criteria": "2026-09-18",
 };
+
+for (const slug of prioritySlugs) articleModified[`articles/${slug}`] = "2026-09-18";
 
 function lastModified(path: string) {
   return new Date(articleModified[path] || firstPublished);

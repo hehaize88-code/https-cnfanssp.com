@@ -1,5 +1,9 @@
 # hacoovip.com — SEO60 HV Track
 
+## Permanent automation stop
+
+Effective 2026-09-18, this site is permanently excluded from automation `6a6b6580d92c8191a409e975c8f85aec`. Automated runs must skip `hacoovip.com` and `hacoovip-com/` without reading or changing the site, its HV cursor, history, content, Git state, deployment, or verification state. This stop applies only to hacoovip.com and must not alter any other site's schedule, cursor, or update status. Explicit user-requested manual maintenance and this one-time custom release remain allowed. Resume only after a future explicit user request.
+
 This file is the authoritative per-site instruction for adding `hacoovip.com` to the existing “33站60天SEO V2” Hacoo automation. Every run must read and obey it before editing this site.
 
 ## Identity and scope

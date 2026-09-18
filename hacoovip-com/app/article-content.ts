@@ -1,12 +1,14 @@
 import type { Lang } from "./site-data";
 import { hvArticle, hvSlug } from "./hv-decision-matrix";
 import { hvUseCaseArticle, hvUseCaseSlug } from "./hv-use-case-criteria";
+import { priorityArticles } from "./hv-priority-articles";
 
 export type ArticleSource = { name: string; url: string; supports: Record<Lang, string> };
 
 export const articles = {
   [hvSlug]: hvArticle,
   [hvUseCaseSlug]: hvUseCaseArticle,
+  ...priorityArticles,
   "how-to-use-hacoo-spreadsheet": {
     title: "How to Use a Hacoo Spreadsheet Without Buying Blind",
     excerpt: "A practical, evidence-led workflow for discovering Hacoo links, checking a live listing and deciding what still needs verification.",

@@ -2,6 +2,13 @@
 
 This file preserves the complete directive of automation `6a6b6580d92c8191a409e975c8f85aec`. The automation runner must read the latest `main:hacoovip-com/SEO60_AUTOMATION_MASTER.md` in full before every run and execute it as the authoritative prompt. Do not shorten, paraphrase, or selectively apply it.
 
+## hacoovip.com permanent single-site exclusion (highest priority)
+
+- Effective 2026-09-18, `hacoovip.com` (`hehaize88-code/https-cnfanssp.com`, branch `main`, path `hacoovip-com/`) is permanently excluded from this automation.
+- Every automated run must skip `hacoovip.com` and `hacoovip-com/` completely. Do not research, select topics, create or edit articles, read or write that directory, commit, push, deploy, verify production, advance or recalculate its independent HV cursor, backfill, retry, reset, reorder, or otherwise change its completion history. Preserve all existing content, state, cursor data, and history. User-requested manual maintenance and this one-time custom release remain allowed.
+- This exclusion applies only to `hacoovip.com`, overrides every conflicting rule below, and must not pause, enable, delay, skip, reset, reorder, backfill, or otherwise change any other Hacoo site's existing status, sequence, cursor, schedule, content, failure handling, deployment, or verification workflow. Do not change the automation's existing enabled/paused state or schedule as part of this exclusion.
+- Remove this exclusion only after a future explicit user request to resume automatic updates for `hacoovip.com`.
+
 ## hacoos.net permanent single-site exclusion (highest priority)
 
 - Effective 2026-09-15, `hacoos.net` (`hehaize88-code/https-cnfanssp.com`, branch `main`, path `hacoos-net/`) is permanently excluded from this automation.

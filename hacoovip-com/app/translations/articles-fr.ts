@@ -44,9 +44,9 @@ export const frArticleText: Partial<Record<ArticleSlug, ArticleText>> = {
     ],
   },
   "hacoo-shipping-and-returns-guide": {
-    title: "Livraison et retours Hacoo : les faits à vérifier en 2026",
-    excerpt: "Pays, délais et règles de retour selon les sources officielles, y compris les fourchettes différentes et les justificatifs demandés.",
-    keyword: "livraison et retours Hacoo",
+    title: "Livraison Hacoo 2026 : prix, délais, suivi et Mondial Relay",
+    excerpt: "Prix de livraison, délais, suivi, disponibilité France ou Belgique et points à vérifier avant de choisir Mondial Relay ou un autre transporteur.",
+    keyword: "livraison Hacoo",
     sourceNote: "Pages officielles Hacoo sur livraison, zones et retours vérifiées le 28 août 2026 ; les indications peuvent changer.",
     imageAlt: "Photo de chaussures utilisée pour planifier livraison et retour",
     imageCaption: "Planifiez depuis l’adresse jusqu’au retour éventuel : le prix produit ne résume ni délai, ni coût, ni risque.",
