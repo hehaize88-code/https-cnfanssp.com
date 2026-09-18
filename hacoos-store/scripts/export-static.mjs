@@ -69,4 +69,10 @@ const redirects = pageUrls
   .join("\n");
 await writeFile(join(outputDir, "_redirects"), `${redirects}\n`);
 
-console.log(`Exported ${pageUrls.length} indexable pages to dist/pages.`);
+// Cloudflare's legacy Pages project can still read the Vinext client directory
+// even when the dashboard output directory is set to dist/pages. Keep both
+// publish targets identical so the Git integration cannot serve stale markup.
+await rm(clientDir, { recursive: true, force: true });
+await cp(outputDir, clientDir, { recursive: true });
+
+console.log(`Exported ${pageUrls.length} indexable pages to dist/pages and dist/client.`);
