@@ -11,6 +11,8 @@ export function useSiteLocale(initialLocale: Locale) {
 
   useEffect(() => {
     const saved = window.localStorage.getItem(STORAGE_KEY) as Locale | null;
+    // Restore the persisted preference after hydration; this hook is retained for legacy client surfaces.
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     if (saved && locales.includes(saved)) setLocale(saved);
 
     const handleLanguage = (event: Event) => {

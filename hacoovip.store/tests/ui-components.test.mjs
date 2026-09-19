@@ -83,3 +83,20 @@ test("renders sidebar skeletons deterministically", async () => {
   assert.equal(first, second);
   assert.match(first, /--skeleton-width:70%/);
 });
+
+test("ships eight priority guides with substantive non-FAQ copy", async () => {
+  const priorityGuides = JSON.parse(
+    await readFile(path.join(root, "lib/priority-articles.json"), "utf8"),
+  );
+
+  assert.equal(priorityGuides.length, 8);
+  for (const guide of priorityGuides) {
+    const body = guide.sections.flatMap((section) => section.paragraphs).join(" ");
+    const words = body.match(/\b[\w’'-]+\b/g)?.length ?? 0;
+    assert.ok(words >= 1200 && words <= 1800, `${guide.slug} has ${words} words`);
+    assert.doesNotMatch(
+      guide.sections.map((section) => section.heading).join(" "),
+      /\bfaq\b|frequently asked|questions and answers/i,
+    );
+  }
+});

@@ -1,21 +1,22 @@
 import type { Metadata } from "next";
 import Script from "next/script";
+import { AnalyticsEvents } from "@/components/analytics-events";
 import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://hacoovip.store"),
   title: {
-    default: "Hacoo Product Research Briefs & App Facts | HacooVIP",
+    default: "Hacoo Spreadsheet 2026: Links, Shipping & App Facts",
     template: "%s | HacooVIP",
   },
-  description: "Plan product requirements before browsing, then use an independent route index and dated Hacoo app facts without confusing either with an official spreadsheet.",
+  description: "Browse an independent Hacoo spreadsheet, verify live links, check product photos, shipping, returns and current app facts before opening a product route.",
   alternates: {
     canonical: "/",
     languages: { "en": "/", "de": "/de", "es": "/es", "fr": "/fr", "it": "/it", "x-default": "/" },
   },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1 } },
-  openGraph: { type: "website", siteName: "HacooVIP", title: "Hacoo Product Research Briefs & App Facts", description: "Define product requirements first, then use an independent route index and dated Hacoo app research.", url: "https://hacoovip.store/", images: [{ url: "/article-covers/hacoo-app-facts.svg", width: 1200, height: 630, alt: "HacooVIP independent product research guide" }] },
-  twitter: { card: "summary_large_image", title: "Hacoo Product Research Briefs | HacooVIP", description: "Product-research planning, independent routes and dated Hacoo app facts.", images: ["/article-covers/hacoo-app-facts.svg"] },
+  openGraph: { type: "website", siteName: "HacooVIP", title: "Hacoo Spreadsheet 2026: Links, Shipping & App Facts", description: "Independent Hacoo product routes with current guides to links, tracking, shipping, returns and app facts.", url: "https://hacoovip.store/", images: [{ url: "/article-covers/hacoo-app-facts.svg", width: 1200, height: 630, alt: "HacooVIP independent product research guide" }] },
+  twitter: { card: "summary_large_image", title: "Hacoo Spreadsheet 2026 | HacooVIP", description: "Independent Hacoo product routes plus current shipping, tracking, returns and app guidance.", images: ["/article-covers/hacoo-app-facts.svg"] },
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",
@@ -32,6 +33,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="antialiased">
         {children}
+        <AnalyticsEvents />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
           "@context": "https://schema.org",
           "@graph": [

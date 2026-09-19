@@ -1,3 +1,5 @@
+import priorityArticlesData from "./priority-articles.json";
+
 export type Article = {
   slug: string;
   tag: string;
@@ -6,6 +8,8 @@ export type Article = {
   seoTitle: string;
   seoDescription: string;
   date: string;
+  dateISO?: string;
+  modifiedISO?: string;
   readTime: string;
   reviewed?: string;
   image?: { src: string; alt: string; caption: string };
@@ -14,6 +18,7 @@ export type Article = {
 };
 
 export const articles: Article[] = [
+  ...(priorityArticlesData as Article[]),
   {
     slug: "what-is-hacoo-app",
     tag: "APP EXPLAINER",

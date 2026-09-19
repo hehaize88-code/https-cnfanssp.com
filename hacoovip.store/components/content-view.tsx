@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { articles } from "@/lib/articles";
 import { hrefFor, liveProduct, products, trustRouteNames, type Locale, type NavRouteName, type RouteName, type TrustRouteName } from "@/lib/site-data";
 import { localizedCopy, translate } from "@/lib/i18n";
 import { ProductCard } from "./home-view";
@@ -43,15 +44,6 @@ const faqItems = [
   ["What do customer reviews show?", "They show mixed experiences, not one universal result. On 28 August 2026 Trustpilot displayed a 3.6 rating across about 3,279 reviews and a strongly split distribution: 50% five-star and 34% one-star. Google Play reviews also included both platform-level ratings and recent complaints."],
   ["What data does the Android listing disclose?", "Google Play says the developer may collect location, personal information and five other data types, may share personal information, photos/videos and three others, encrypts data in transit, and lets users request deletion. Open the store's Data safety section for the current declaration."],
   ["Is this an official Hacoo site?", "No. HacooVIP is an independent research and product-discovery publisher. It does not represent Hacoo, process Hacoo orders or provide Hacoo customer service."],
-];
-
-const articleCards = [
-  { slug: "what-is-hacoo-app", tag: "APP EXPLAINER", title: "What Is Hacoo? The Official App, Features and Facts Explained", excerpt: "What Hacoo says it is, what the app-store data confirms, and where independent spreadsheets fit." },
-  { slug: "hacoo-shipping-returns-refunds", tag: "POLICY CHECK", title: "Hacoo Shipping, Returns and Refunds: What the Published Policies Say", excerpt: "Official time ranges, the 15-day after-sales window, address changes and lost-package wording." },
-  { slug: "hacoo-reviews-2026", tag: "REVIEW ANALYSIS", title: "Hacoo Reviews 2026: Ratings, Recurring Themes and How to Read Them", excerpt: "A balanced reading of Google Play, App Store and Trustpilot signals without cherry-picking." },
-  { slug: "how-to-use-hacoo-spreadsheet", tag: "BEGINNER GUIDE", title: "How to Use a Hacoo Spreadsheet Without Losing the Product Trail", excerpt: "A complete workflow from the first search to the final live-listing check." },
-  { slug: "hacoo-qc-photo-checklist", tag: "QC GUIDE", title: "Reading Hacoo Product Photos: A Repeatable Quality Checklist", excerpt: "How to compare shape, materials, construction, sizing and listing consistency." },
-  { slug: "hacoo-size-shipping-planning", tag: "PLANNING", title: "Hacoo Size and Shipping Planning Before You Commit", excerpt: "A practical way to reduce sizing mistakes and understand delivery variables." },
 ];
 
 function Spreadsheet({ locale }: { locale: Locale }) {
@@ -100,7 +92,7 @@ export function ContentView({ page, locale = "en" }: { page: RouteName; locale?:
     {navPage === "qc" && <><div className="qc-grid">{qcChecks.map(([t,b], index) => <article key={t}><span>{String(index + 1).padStart(2,"0")}</span><h2>{tx(t)}</h2><p>{tx(b)}</p></article>)}</div><aside className="decision-band"><span>{tx("STOP SIGNAL")}</span><strong>{tx("If the title, selected variant and product images conflict, do not assume which one is correct.")}</strong><p>{tx("For intellectual-property concerns, use Hacoo's published infringement route. For order or account issues, use in-app support or the official service address.")}</p></aside><SourceBand locale={activeLocale} /></>}
     {navPage === "shipping" && <ShippingFacts locale={activeLocale} />}
     {navPage === "faq" && <><div className="faq-list">{faqItems.map(([q,a], index) => <details key={q} open={index === 0}><summary><span>{String(index + 1).padStart(2,"0")}</span>{tx(q)}<b>+</b></summary><p>{tx(a)}</p></details>)}</div><SourceBand locale={activeLocale} /></>}
-    {navPage === "articles" && <><div className="research-note"><strong>{tx("How to use these guides")}</strong><span>{tx("Start with the question you need to answer, note the source date and separate official platform facts from independent product-route guidance.")}</span></div><div className="article-cards">{articleCards.map((article, index) => <Link key={article.slug} href={hrefFor(activeLocale, `articles/${article.slug}`)}><span>{tx(article.tag)}</span><small>{String(index + 1).padStart(2,"0")}</small><h2>{tx(article.title)}</h2><p>{tx(article.excerpt)}</p><b>{tx("READ ARTICLE")} ↗</b></Link>)}</div></>}
+    {navPage === "articles" && <><div className="research-note"><strong>{tx("How to use these guides")}</strong><span>{tx("Start with the question you need to answer, note the source date and separate official platform facts from independent product-route guidance.")}</span></div><div className="article-cards">{articles.map((article, index) => <Link key={article.slug} href={hrefFor(activeLocale, `articles/${article.slug}`)}><span>{tx(article.tag)}</span><small>{String(index + 1).padStart(2,"0")}</small><h2>{tx(article.title)}</h2><p>{tx(article.deck)}</p><b>{tx("READ ARTICLE")} ↗</b></Link>)}</div></>}
     <section className="route-cta"><div><span className="section-kicker">{tx("LIVE CATALOG")}</span><h2>{tx("Ready to continue with a current product route?")}</h2></div><a className="button primary" href="https://cnfanssp.com/AllProducts/" target="_blank" rel="noreferrer">{tx("Open live catalog")} ↗</a></section>
   </main></SiteShell>;
 }

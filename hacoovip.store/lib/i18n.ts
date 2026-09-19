@@ -1,9 +1,11 @@
 import translations from "./translations.generated.json";
+import priorityTranslations from "./priority-translations.generated.json";
 import { copy, type Locale } from "./site-data";
 
 type TranslationTable = Record<Locale, Record<string, string>>;
 
 const table = translations as TranslationTable;
+const priorityTable = priorityTranslations as TranslationTable;
 
 const overrides: Partial<Record<Locale, Record<string, string>>> = {
   de: {
@@ -223,7 +225,7 @@ const editorialOverrides: Partial<Record<Locale, Record<string, string>>> = {
 };
 
 export function translate(locale: Locale, value: string) {
-  return editorialOverrides[locale]?.[value] ?? overrides[locale]?.[value] ?? table[locale]?.[value] ?? value;
+  return editorialOverrides[locale]?.[value] ?? overrides[locale]?.[value] ?? priorityTable[locale]?.[value] ?? table[locale]?.[value] ?? value;
 }
 
 export function localizedCopy(locale: Locale): Record<string, string> {

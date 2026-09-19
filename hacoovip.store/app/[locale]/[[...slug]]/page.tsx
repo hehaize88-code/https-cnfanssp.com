@@ -3,7 +3,7 @@ import { ContentView } from "@/components/content-view";
 import { HomeView } from "@/components/home-view";
 import { articles, getArticle } from "@/lib/articles";
 import { translate } from "@/lib/i18n";
-import { languageAlternates, locales, routeNames, trustRouteNames, type Locale, type RouteName, type TrustRouteName } from "@/lib/site-data";
+import { copy, languageAlternates, locales, routeNames, trustRouteNames, type Locale, type RouteName, type TrustRouteName } from "@/lib/site-data";
 import { getTrustPage } from "@/lib/trust-pages";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
@@ -45,8 +45,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     articles: "Source-checked guides that separate current official statements, dated public records and independent buyer guidance.",
   };
   const trustPage = slug.length === 1 && trustRouteNames.includes(slug[0] as TrustRouteName) ? getTrustPage(locale, slug[0] as TrustRouteName) : undefined;
-  const rawTitle = trustPage?.title ?? article?.seoTitle ?? (path ? titles[slug[0]] : "Hacoo Product Research Briefs & App Facts");
-  const rawDescription = trustPage?.description ?? article?.seoDescription ?? (path ? descriptions[slug[0]] : "Define product requirements before browsing, then use independent product routes and dated Hacoo app facts without confusing either with an official spreadsheet.");
+  const rawTitle = trustPage?.title ?? article?.seoTitle ?? (path ? titles[slug[0]] : copy[locale].heroTitle);
+  const rawDescription = trustPage?.description ?? article?.seoDescription ?? (path ? descriptions[slug[0]] : copy[locale].heroBody);
   return {
     title: translate(locale, rawTitle),
     description: rawDescription ? translate(locale, rawDescription) : undefined,
