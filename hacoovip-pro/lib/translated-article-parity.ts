@@ -1,10 +1,10 @@
-import type { ArticleSlug } from "@/lib/articles";
+import type { LegacyArticleSlug } from "@/lib/articles";
 import type { Lang } from "@/lib/site-data";
 
 type LocalizedLang = Exclude<Lang, "en">;
 type Section = { title: string; body: string[] };
 
-export const translatedArticleParity: Record<LocalizedLang, Record<ArticleSlug, Section>> = {
+export const translatedArticleParity: Record<LocalizedLang, Record<LegacyArticleSlug, Section>> = {
   de: {
     "hacoo-spreadsheet-live-source": {
       title: "Vollständiges Prüfprotokoll für veröffentlichte Produktwege",

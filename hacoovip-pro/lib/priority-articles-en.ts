@@ -1,6 +1,19 @@
-import type { Article, ArticleSlug } from "@/lib/articles";
+import type { Article } from "@/lib/articles";
 
-export const priorityEnglishArticles: Partial<Record<ArticleSlug, Article>> = {
+export const priorityArticleSlugs = [
+  "how-does-hacoo-work",
+  "hacoo-qc-guide",
+  "hacoo-returns-refunds",
+  "hacoo-website-vs-app",
+  "hacoo-order-tracking",
+  "hacoo-sizing-guide",
+  "hacoo-product-links-codes",
+  "hacoo-app-region-access",
+] as const;
+
+export type PriorityArticleSlug = (typeof priorityArticleSlugs)[number];
+
+export const priorityEnglishArticles: Record<PriorityArticleSlug, Article> = {
   "how-does-hacoo-work": {
     title: "How Does Hacoo Work? App, Product Links, Ordering and Delivery",
     description: "A practical, independent explanation of Hacoo discovery, product links, the in-app order flow, shipping estimates and the checks to make at each stage.",
@@ -342,3 +355,84 @@ export const priorityEnglishArticles: Partial<Record<ArticleSlug, Article>> = {
     ],
   },
 };
+
+const priorityArticleSupplements: Record<PriorityArticleSlug, Article["sections"][number]> = {
+  "how-does-hacoo-work": {
+    title: "A complete pre-order and post-delivery record",
+    body: [
+      "Turn the workflow into one dated record instead of a folder of unrelated screenshots. Before checkout, write down the discovery route, final live destination, exact color and size, quantity, visible price, currency, shipping estimate and the policy pages you checked. After payment, add the order status and keep each parcel on a separate line. At delivery, photograph the unopened exterior without exposing the full label, then record contents, measurements and any issue. This sequence preserves what was known at each stage and prevents a later listing change from rewriting the history of the order.",
+      "The record should also state what remains unknown. A product page cannot establish hidden materials or long-term durability, and an estimated delivery window cannot guarantee an arrival date. A submitted support request is not the same as an approved remedy. By separating confirmed facts, dated estimates and open questions, you can decide whether to continue, pause for clarification or use the official order channel. That is the practical way Hacoo works from a careful user perspective: discovery starts the process, the app manages the transaction, and evidence supports every later decision.",
+    ],
+  },
+  "hacoo-qc-guide": {
+    title: "Run the same QC sequence for every item",
+    body: [
+      "Use a fixed inspection order so an attractive close-up does not distract from a larger mismatch. Begin with the full silhouette, proportions and color blocking. Move to paired or repeated elements, including left and right shoes, sleeves, pockets, stripes, eyelets and repeated graphics. Then inspect seams, edges, closures, hardware and print alignment. Finish with the visible option label and measurements. For every stage, record matched, mismatched or unclear. The unclear label matters because low resolution, folds, perspective and lighting can hide details; missing evidence should never be converted into automatic approval.",
+      "Measurements need their own method. Place the item flat without stretching, identify fixed endpoints and record the unit. Compare like with like: pit-to-pit with pit-to-pit, insole with insole, and garment length from the same seam. Repeat an unexpected result before drawing a conclusion. A size letter may help identify the selected option but it does not create a universal fit. Keep the measurement record beside the saved listing table and an owned reference item so a later fit note explains both the physical difference and the wearer context.",
+      "Close the inspection with a short evidence note. State the exact item and option, which images or measurements were available, the main observable match, the main concern and the next authorized action. Preserve original files for the official order channel and redact names, addresses, barcodes, full tracking numbers and payment details from anything shared publicly. QC can reduce visible uncertainty and document a wrong or damaged item. It cannot prove authenticity, hidden construction, future durability, seller intent or the outcome of a return request. Keeping those limits visible makes the checklist more useful, not less.",
+      "Repeat the checklist after delivery under neutral light and before washing or removing tags. This final pass connects pre-order expectations with the physical item and provides a dated baseline if an after-sales request becomes necessary.",
+    ],
+  },
+  "hacoo-returns-refunds": {
+    title: "Keep request, return and refund as separate milestones",
+    body: [
+      "A clean case log prevents one stage from being mistaken for the final result. Record when the request was submitted, which reason and item were selected, what evidence was attached, whether further information was requested, and the exact decision shown in the order. If a return is authorized, add the provided destination and deadline, the condition requirements, the handover receipt and the private tracking record. Only after the returned parcel is received and the payment update is visible should the case be marked complete. A review window, return authorization and completed refund are different events with different evidence.",
+      "Keep the item, labels, accessories and packaging unchanged while the case is open unless the current instruction explicitly says otherwise. Do not wash, repair, alter or send the item to an address copied from a community post. Photograph what is packed before sealing it and retain the carrier receipt. If the order interface lacks the expected action, contact the official support route attached to that order with a concise timeline. State the remedy requested without presenting it as guaranteed, and follow the same case rather than opening several conflicting requests.",
+    ],
+  },
+  "hacoo-website-vs-app": {
+    title: "Use a source ladder when information conflicts",
+    body: [
+      "Start with the source closest to the fact being checked. Use Hacoo’s public website for general platform statements, published policies and help information. Use the official store listing to verify the developer, supported device context and current app version. Use the signed-in app for the exact option, cart, checkout total, order status and after-sales actions available to the account. Use the identified carrier for parcel movement. A spreadsheet, search result, saved screenshot or social post can help locate a topic, but it sits below those current sources and should not override them.",
+      "When two official surfaces differ, record both with country, language, app version, URL or screen name, and the time checked. Do not combine the most favorable sentence from each into a rule that neither source states. A public policy may describe a general process while the order page reflects eligibility for one case. Likewise, a product visible on the web may be unavailable to a particular account or region. The conflict is evidence to preserve and clarify through the official channel, not proof that one surface is always wrong.",
+      "A practical session can move between surfaces without losing context. Research the general rule on the website, save the dated source, open the current destination, and confirm the exact product facts in the app. Complete private account actions only there. After payment, return to the specific order for status and support. This division protects privacy and improves accuracy: public claims remain reproducible, while personal order data stays attached to the account and is not published as a universal platform rule.",
+      "Before relying on an instruction, verify that it belongs to the current country, language and order stage. Store screenshots as dated evidence rather than permanent documentation, and revisit the official source whenever the next action could affect payment, cancellation, delivery or a return.",
+    ],
+  },
+  "hacoo-order-tracking": {
+    title: "Build a parcel exception file before escalating",
+    body: [
+      "For each parcel, keep the order reference private and record only the expected contents, dispatch date, carrier name, last scan text, scan location, event time and next review date. Distinguish internal processing, label creation, first physical acceptance, export movement, customs, handover to a local carrier, delivery attempt and final delivery. These stages are not interchangeable. A label without a carrier scan does not prove transit, and a delivered status does not by itself prove that every item in a multi-parcel order arrived.",
+      "If movement stops, compare the last event with the order-specific estimate and Hacoo’s dated destination guidance. Check whether the carrier shows an exception, address query, customs step, pickup instruction or handover number. For an attempted delivery, inspect the official notice and contact the recognized local carrier promptly. For delivered-not-received, check the named safe place, household, building desk and carrier proof before opening an order case. Record each check without publishing the full tracking number or address.",
+      "Escalate with a short evidence packet rather than a broad complaint. Identify the affected parcel and missing contents, quote the latest official event, state the time since that event, list the carrier checks already completed and request one specific next action. Preserve screenshots with timestamps and keep replies in the same case. If the parcel later moves, update the timeline rather than deleting the earlier delay. A complete history shows whether the unresolved point belongs to processing, international transit, local delivery or the received contents.",
+      "When the parcel arrives, close the loop against the expected-content list. Photograph exterior condition before opening, then check quantity, exact variants and included parts for that parcel only. Keep packaging until the inspection is complete. If something is damaged or missing, connect the delivery evidence to the order’s current after-sales route instead of changing the carrier timeline into a product conclusion. Record the resolution date separately so a later review can distinguish delay, delivery and item condition.",
+      "For split shipments, repeat the closeout independently. Do not mark the order complete because one parcel arrived, and do not report an item missing until its assigned package and contents are known. A separate status, evidence set and resolution for every parcel keeps the final order record accurate.",
+      "Keep the final carrier event and inspection date together for later reference.",
+    ],
+  },
+  "hacoo-sizing-guide": {
+    title: "Create a repeatable measurement and fit worksheet",
+    body: [
+      "Choose one well-fitting item of the same type and measure it on a flat surface. For tops, record chest width, shoulder, sleeve and back length from fixed seams. For trousers, record waist laid flat, rise, inseam and hem. For shoes, compare the insole or internal length only when the listing explains the method. Write the unit beside every value and photograph the tape position. Body measurements, flat garment widths and circumference values are different data types; mixing them can create a large error while still looking numerically plausible.",
+      "Copy the live size table for the exact variant and note any tolerance or material information. Compare each field with the owned reference, then decide which dimensions are essential for the intended fit. Stretch, lining, cut and layering can change comfort even when one measurement matches, so avoid converting the comparison into a guaranteed size recommendation. If the table is incomplete or uses unclear endpoints, keep that field unknown and seek clarification rather than borrowing a chart from a visually similar listing.",
+      "After delivery and before washing, repeat the same measurements on the received item. Save the selected option, visible label, actual values and fit outcome together. A useful review explains the wearer context, intended fit, comparison item and any meaningful difference without publishing private photos. If the label or measurements materially differ from the order, preserve tags and packaging, document the discrepancy and check the current after-sales route. This creates evidence for one item while avoiding the false claim that the same label will fit every person.",
+      "Maintain one worksheet per listing rather than a universal brand chart. Include the date, product route, selected option, table values, reference-garment values, received measurements and a brief fit result. If the live listing changes, preserve the earlier table as historical evidence and mark the new version separately. This prevents measurements from similar-looking items, cuts or materials being combined. The worksheet can support a choice or document a discrepancy, but it should remain specific to the measured product and method.",
+      "If two adjacent sizes remain plausible, compare the dimensions tied to comfort and movement first, then document the tradeoff. Do not average different charts or assume that sizing advice from another item resolves missing data.",
+    ],
+  },
+  "hacoo-product-links-codes": {
+    title: "Maintain links as dated routes, not permanent promises",
+    body: [
+      "Give every saved route a small record: the original link or code, final destination after redirects, first image, visible title, category, exact option checked, currency, price reference, country or account context and verification date. Mark whether the route opens a product, category, search page, app deep link or unavailable destination. This prevents a successful page load from being treated as proof that it still represents the expected item. It also makes duplicate or recycled routes easier to detect when titles and images change.",
+      "Use an image-title-option check at the live destination. The main image should depict the same product type, the title should not indicate a different item, and the required color, size or bundle should be selectable now. Inspect the current detail images and measurements instead of relying on a spreadsheet thumbnail. If any signal conflicts, remove the route from the verified shortlist or label it unresolved. Never invent a replacement code simply because a similar result appears in search.",
+      "Region and account state can change what opens. Test the official app version, confirm the intended country and language, and compare signed-out public behavior with the signed-in destination only when that is safe and relevant. Do not use unknown installers, shared credentials or requests to change security settings to force access. If a route remains unavailable, keep its last verified date and observable status. An unavailable product is a valid result, not an invitation to bypass platform controls.",
+      "Review saved links before publishing or acting on them. Reopen each final destination, update changed facts and remove entries that no longer match. Keep historical price or availability notes explicitly dated, because they do not describe the present listing. A useful link collection becomes smaller and more reliable through maintenance. It helps people reach current sources and compare observable facts; it cannot guarantee stock, authenticity, seller behavior, material quality, shipping time or future availability.",
+      "Use simple status labels such as verified today, changed, redirected, region-limited and unavailable. Add a next-review date for important routes and keep only one current destination per record. When sharing a collection, explain the verification method and date so readers know they must repeat the live check. Do not expose account tokens, referral identifiers with private data or screenshots containing personal details. The collection should improve navigation while leaving checkout, policy decisions and account actions inside official Hacoo surfaces.",
+      "Archive superseded routes separately so they cannot be mistaken for current links.",
+    ],
+  },
+  "hacoo-app-region-access": {
+    title: "Diagnose access problems without weakening account security",
+    body: [
+      "Record the exact symptom before changing anything: the app is missing from the official store, installation fails, login fails, a link opens the wrong screen, a product is not visible, checkout is blocked or an order page does not load. Add device type, operating system, app version, country, language, time and the non-secret error wording. These details separate availability, installation, account, listing and transaction problems that may otherwise look identical.",
+      "Work from broad checks to specific ones. Confirm that the official store listing is available for the current device and region, then update the app and operating system, check the network and restart the normal session. Next confirm the intended account and country settings. Open the platform home before retrying one saved route, because an old deep link may fail even when the app works. Change one factor at a time and preserve the original result so the successful step is identifiable.",
+      "Treat missing products as a listing question, not automatically as an app failure. Compare the final destination, image, title and option with the last verified record. Availability can change by time, country, account or listing state. Search using observable product facts and the current category, but do not substitute an unverified lookalike or claim that a hidden product must still exist. Record unavailable, changed or redirected when that is what the evidence shows.",
+      "Escalate through the official app or published support surface with device, version, country, time, exact error and steps already completed. Share only the minimum order context required in the private channel. Never provide passwords, one-time codes, full payment details or remote access, and avoid unofficial APK files or configuration profiles. If access cannot be confirmed safely, stop. Preserving the account and device is more important than forcing one link or transaction to open.",
+      "After access returns, verify the original task rather than assuming the issue is fully solved. Reopen the exact route, confirm the intended item or order, and check whether selections, totals or status text changed during troubleshooting. Record the successful step and current app version for future reference. If the problem returns, the comparison will show whether it follows the device, network, account, country or one listing. This evidence helps support investigate without repeated risky changes or vague reports.",
+    ],
+  },
+};
+
+for (const slug of priorityArticleSlugs) {
+  priorityEnglishArticles[slug].sections.push(priorityArticleSupplements[slug]);
+}

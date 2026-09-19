@@ -86,7 +86,7 @@ test("sets edge-cacheable HTML headers and complete structured data", async () =
   assert.match(articleHtml, /Google Play US · 59,057/);
 });
 
-test("publishes eight focused English guides without thin translated copies", async () => {
+test("publishes eight focused guides with same-page language switching", async () => {
   const slugs = [
     "how-does-hacoo-work",
     "hacoo-qc-guide",
@@ -104,12 +104,12 @@ test("publishes eight focused English guides without thin translated copies", as
     const html = await response.text();
     assert.match(html, /"datePublished":"2026-09-19"/, slug);
     assert.match(html, new RegExp(`rel="canonical" href="https://hacoovip\\.pro/en/articles/${slug}`), slug);
-    assert.doesNotMatch(html, new RegExp(`hreflang="de"[^>]+${slug}`), slug);
+    assert.match(html, new RegExp(`hrefLang="de"[^>]+${slug}`), slug);
     assert.doesNotMatch(html, /wa\.me\/message/, slug);
   }
 
-  const untranslated = await fetchWorker("https://hacoovip.pro/de/articles/how-does-hacoo-work");
-  assert.equal(untranslated.status, 404);
+  const translated = await fetchWorker("https://hacoovip.pro/de/articles/how-does-hacoo-work");
+  assert.equal(translated.status, 200);
 });
 
 test("keeps every mobile module visible and readable", async () => {
@@ -177,4 +177,45 @@ test("caches canonical pages only after redirect checks", async () => {
     if (previousCaches === undefined) delete globalThis.caches;
     else globalThis.caches = previousCaches;
   }
+});
+
+test("publishes eight priority guides with multilingual routes and complete SEO metadata", async () => {
+  const slugs = [
+    "how-does-hacoo-work",
+    "hacoo-qc-guide",
+    "hacoo-returns-refunds",
+    "hacoo-website-vs-app",
+    "hacoo-order-tracking",
+    "hacoo-sizing-guide",
+    "hacoo-product-links-codes",
+    "hacoo-app-region-access",
+  ];
+
+  for (const slug of slugs) {
+    const response = await fetchWorker(`https://hacoovip.pro/en/articles/${slug}`);
+    assert.equal(response.status, 200, slug);
+    const html = await response.text();
+    const prose = html.match(/<article class="section-shell article-prose">([\s\S]*?)<\/article>/)?.[1] ?? "";
+    const visible = prose.replace(/<[^>]+>/g, " ").replace(/&[^;]+;/g, " ").replace(/\s+/g, " ");
+    const count = visible.match(/[A-Za-z0-9'’–-]+/g)?.length ?? 0;
+    assert.ok(count >= 1200 && count <= 1800, `${slug}: ${count} words`);
+    assert.match(html, new RegExp(`<link rel="canonical" href="https://hacoovip\\.pro/en/articles/${slug}"`));
+    assert.match(html, /hrefLang="x-default"/);
+    assert.match(html, /"datePublished":"2026-09-19"/);
+    assert.doesNotMatch(html, /class="whatsapp"/);
+
+    for (const lang of ["de", "es", "fr", "it"]) {
+      const localized = await fetchWorker(`https://hacoovip.pro/${lang}/articles/${slug}`);
+      assert.equal(localized.status, 200, `${lang}/${slug}`);
+      assert.match(await localized.text(), new RegExp(`<html lang="${lang}"`));
+    }
+  }
+
+  const hub = await fetchWorker("https://hacoovip.pro/en/articles");
+  const hubHtml = await hub.text();
+  for (const slug of slugs) assert.match(hubHtml, new RegExp(`/en/articles/${slug}`));
+
+  const sitemap = await fetchWorker("https://hacoovip.pro/sitemap.xml");
+  const sitemapXml = await sitemap.text();
+  for (const slug of slugs) assert.match(sitemapXml, new RegExp(`/en/articles/${slug}`));
 });

@@ -1,10 +1,10 @@
-import type { ArticleSlug } from "@/lib/articles";
+import type { LegacyArticleSlug } from "@/lib/articles";
 import type { Lang } from "@/lib/site-data";
 
 type LocalizedLang = Exclude<Lang, "en">;
 type Expansion = { title: string; body: string[] };
 
-export const translatedArticleExpansions: Record<LocalizedLang, Record<ArticleSlug, Expansion[]>> = {
+export const translatedArticleExpansions: Record<LocalizedLang, Record<LegacyArticleSlug, Expansion[]>> = {
   de: {
     "hacoo-spreadsheet-live-source": [
       {

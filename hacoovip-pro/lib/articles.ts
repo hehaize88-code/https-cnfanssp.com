@@ -4,27 +4,25 @@ import { translatedArticleExpansions } from "@/lib/translated-article-expansions
 import { translatedArticleParity } from "@/lib/translated-article-parity";
 import { localizedPages } from "@/lib/page-translations";
 import { pageParitySupplements } from "@/lib/page-parity-supplements";
-import { priorityEnglishArticles } from "@/lib/priority-articles-en";
+import { priorityArticleSlugs, priorityEnglishArticles, type PriorityArticleSlug } from "@/lib/priority-articles-en";
+import {
+  priorityLocalizedSourceArticlesDe,
+  priorityLocalizedSourceArticlesEs,
+  priorityLocalizedSourceArticlesFr,
+  priorityLocalizedSourceArticlesIt,
+  type LocalizedPrioritySourceSlug,
+} from "@/lib/priority-articles-localized";
 
-export const localizedArticleSlugs = [
+export const legacyArticleSlugs = [
   "hacoo-spreadsheet-live-source",
   "hacoo-reviews-2026",
   "hacoo-shipping-time-cost",
 ] as const;
 
-export const englishOnlyArticleSlugs = [
-  "how-does-hacoo-work",
-  "hacoo-qc-guide",
-  "hacoo-returns-refunds",
-  "hacoo-website-vs-app",
-  "hacoo-order-tracking",
-  "hacoo-sizing-guide",
-  "hacoo-product-links-codes",
-  "hacoo-app-region-access",
-] as const;
+export const articleSlugs = [...legacyArticleSlugs, ...priorityArticleSlugs] as const;
+export const localizedArticleSlugs = articleSlugs;
 
-export const articleSlugs = [...localizedArticleSlugs, ...englishOnlyArticleSlugs] as const;
-
+export type LegacyArticleSlug = (typeof legacyArticleSlugs)[number];
 export type ArticleSlug = (typeof articleSlugs)[number];
 export type Article = {
   title: string;
@@ -35,7 +33,7 @@ export type Article = {
   sections: { title: string; body: string[] }[];
 };
 
-const en = {
+const en: Record<LegacyArticleSlug, Article> & Partial<Record<PriorityArticleSlug, Article>> = {
   "hacoo-spreadsheet-live-source": {
     title: "How to use a Hacoo spreadsheet without losing the live source",
     description: "A practical system for moving from a curated visual index to the current product page while keeping image, title, option and price checks aligned.",
@@ -78,7 +76,7 @@ const en = {
       { title: "Run a final quote check", body: ["Immediately before acting, reopen the live destination and shipping information. Confirm route availability, current price, parcel inputs, destination support and policy terms. Record the final quote with its date and currency.", "An honest shipping guide does not promise a delivery time or universal rate. It provides a repeatable method for collecting current inputs, comparing them fairly and showing where uncertainty remains."] },
     ],
   },
-} as Record<ArticleSlug, Article>;
+};
 
 Object.assign(en, researchedEnglishArticles);
 Object.assign(en, priorityEnglishArticles);
@@ -333,7 +331,7 @@ function rebuildLocalizedArticles(lang: "de" | "es" | "fr" | "it") {
   const localized = { de, es, fr, it }[lang];
   const routePages = localizedPages[lang];
 
-  for (const slug of localizedArticleSlugs) {
+  for (const slug of legacyArticleSlugs) {
     const baseSections = localized[slug].sections;
     const extra = translatedArticleExpansions[lang][slug];
     const parity = translatedArticleParity[lang][slug];
@@ -392,4 +390,53 @@ function rebuildLocalizedArticles(lang: "de" | "es" | "fr" | "it") {
 
 for (const lang of ["de", "es", "fr", "it"] as const) rebuildLocalizedArticles(lang);
 
-export const articles: Record<Lang, Record<ArticleSlug, Article>> = { en, de, es, fr, it };
+const sourceSlugByPriority: Record<Exclude<PriorityArticleSlug, "hacoo-qc-guide" | "hacoo-product-links-codes">, LocalizedPrioritySourceSlug> = {
+  "how-does-hacoo-work": "how-does-hacoo-work",
+  "hacoo-returns-refunds": "hacoo-returns-refunds-guide",
+  "hacoo-website-vs-app": "hacoo-website-vs-app",
+  "hacoo-order-tracking": "hacoo-order-tracking-guide",
+  "hacoo-sizing-guide": "hacoo-size-guide-fit-check",
+  "hacoo-app-region-access": "hacoo-items-not-showing",
+};
+
+const localizedPriorityTitles: Record<"de" | "es" | "fr" | "it", Record<"qc" | "links", { title: string; description: string; readTime: string }>> = {
+  de: {
+    qc: { title: "Hacoo QC-Guide: Fotos, Maße und Produktdetails prüfen", description: "Eine wiederholbare Qualitätskontrolle für Silhouette, Verarbeitung, Labels, Maße und dokumentierte Unsicherheiten.", readTime: "9 Min. Lesezeit" },
+    links: { title: "Hacoo Produktlinks und Codes: Live-Quellen prüfen", description: "Hacoo Links, Codes und Tabellenwege anhand von Bild, Titel, Variante, Region und aktuellem Ziel verifizieren.", readTime: "9 Min. Lesezeit" },
+  },
+  es: {
+    qc: { title: "Guía QC de Hacoo: fotos, medidas y detalles", description: "Un control de calidad repetible para silueta, acabado, etiquetas, medidas e incertidumbres documentadas.", readTime: "9 min de lectura" },
+    links: { title: "Enlaces y códigos de Hacoo: verificar la fuente actual", description: "Comprueba enlaces, códigos y rutas de hojas Hacoo por imagen, título, variante, región y destino vigente.", readTime: "9 min de lectura" },
+  },
+  fr: {
+    qc: { title: "Guide QC Hacoo : photos, mesures et détails produit", description: "Un contrôle qualité reproductible de la silhouette, des finitions, étiquettes, mesures et incertitudes.", readTime: "9 min de lecture" },
+    links: { title: "Liens et codes Hacoo : vérifier la source active", description: "Contrôlez liens, codes et tableaux Hacoo par l’image, le titre, la variante, la région et la destination actuelle.", readTime: "9 min de lecture" },
+  },
+  it: {
+    qc: { title: "Guida QC Hacoo: foto, misure e dettagli prodotto", description: "Un controllo qualità ripetibile per forma, finiture, etichette, misure e incertezze documentate.", readTime: "9 min di lettura" },
+    links: { title: "Link e codici Hacoo: verificare la fonte live", description: "Controlla link, codici e percorsi Hacoo tramite immagine, titolo, variante, regione e destinazione corrente.", readTime: "9 min di lettura" },
+  },
+};
+
+function localizePriorityArticles(
+  lang: "de" | "es" | "fr" | "it",
+  legacy: Record<LegacyArticleSlug, Article>,
+  source: Record<LocalizedPrioritySourceSlug, Article>,
+): Record<PriorityArticleSlug, Article> {
+  const mapped = Object.fromEntries(Object.entries(sourceSlugByPriority).map(([slug, sourceSlug]) => [slug, source[sourceSlug]]));
+  const qc = localizedPriorityTitles[lang].qc;
+  const links = localizedPriorityTitles[lang].links;
+  return {
+    ...mapped,
+    "hacoo-qc-guide": { ...legacy["hacoo-reviews-2026"], ...qc },
+    "hacoo-product-links-codes": { ...legacy["hacoo-spreadsheet-live-source"], ...links },
+  } as Record<PriorityArticleSlug, Article>;
+}
+
+export const articles: Record<Lang, Record<ArticleSlug, Article>> = {
+  en: en as Record<ArticleSlug, Article>,
+  de: { ...de, ...localizePriorityArticles("de", de, priorityLocalizedSourceArticlesDe) },
+  es: { ...es, ...localizePriorityArticles("es", es, priorityLocalizedSourceArticlesEs) },
+  fr: { ...fr, ...localizePriorityArticles("fr", fr, priorityLocalizedSourceArticlesFr) },
+  it: { ...it, ...localizePriorityArticles("it", it, priorityLocalizedSourceArticlesIt) },
+};

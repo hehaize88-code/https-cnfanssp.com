@@ -3,7 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { SearchBox } from "@/components/search-box";
 import { categories, copy, languages, products, routes, type Lang } from "@/lib/site-data";
-import { articles, articleSlugs, englishOnlyArticleSlugs, localizedArticleSlugs, type ArticleSlug } from "@/lib/articles";
+import { articles, articleSlugs, type ArticleSlug } from "@/lib/articles";
 import { officialFacts } from "@/lib/official-facts";
 import { articleSeo, pageSeo, type SeoRoute } from "@/lib/seo";
 
@@ -11,8 +11,6 @@ type Props = { params: Promise<{ lang: string; slug?: string[] }> };
 const site = "https://hacoovip.pro";
 const siteName = "HacooVIP Pro";
 const validLang = (value: string): value is Lang => languages.includes(value as Lang);
-const availableArticleSlugs = (lang: Lang): readonly ArticleSlug[] => lang === "en" ? articleSlugs : localizedArticleSlugs;
-const isEnglishOnlyArticle = (slug: ArticleSlug) => englishOnlyArticleSlugs.includes(slug as (typeof englishOnlyArticleSlugs)[number]);
 const localeByLanguage: Record<Lang, string> = {
   en: "en_US",
   de: "de_DE",
@@ -100,7 +98,7 @@ const articleSourceUrls: Record<ArticleSlug, string[]> = {
 export function generateStaticParams() {
   return languages.flatMap((lang) => [
     ...routes.map((route) => ({ lang, slug: route ? [route] : [] })),
-    ...availableArticleSlugs(lang).map((article) => ({ lang, slug: ["articles", article] })),
+    ...articleSlugs.map((article) => ({ lang, slug: ["articles", article] })),
   ]);
 }
 
@@ -116,7 +114,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const article = articleSlug ? articles[rawLang][articleSlug] : null;
   if (articleSlug && !article) return {};
   const routeSeo = articleSlug
-    ? articleSeo[rawLang][articleSlug]!
+    ? articleSeo[rawLang][articleSlug] ?? { title: article!.title, description: article!.description }
     : pageSeo[rawLang][(route || "home") as SeoRoute];
   const title = routeSeo.title;
   const description = routeSeo.description;
@@ -128,7 +126,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     alternates: {
       canonical: `${site}${path}`,
       languages: Object.fromEntries([
-        ...(articleSlug && isEnglishOnlyArticle(articleSlug) ? ["en" as const] : languages).map((lang) => [lang, `${site}/${lang}${routePath ? `/${routePath}` : ""}`]),
+        ...languages.map((lang) => [lang, `${site}/${lang}${routePath ? `/${routePath}` : ""}`]),
         ["x-default", `${site}/en${routePath ? `/${routePath}` : ""}`],
       ]),
     },
@@ -136,7 +134,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       type: article ? "article" : "website",
       siteName,
       locale: localeByLanguage[rawLang],
-      alternateLocale: articleSlug && isEnglishOnlyArticle(articleSlug) ? [] : languages.filter((lang) => lang !== rawLang).map((lang) => localeByLanguage[lang]),
+      alternateLocale: languages.filter((lang) => lang !== rawLang).map((lang) => localeByLanguage[lang]),
       title,
       description,
       url: `${site}${path}`,
@@ -172,10 +170,7 @@ function breadcrumbData(lang: Lang, items: { name: string; path: string }[]) {
 function Header({ lang, route }: { lang: Lang; route: string }) {
   const c = copy[lang];
   const activeRoute = route.split("/")[0];
-  const routeArticleSlug = route.startsWith("articles/") ? route.split("/")[1] as ArticleSlug : null;
-  const languageHref = (targetLang: Lang) => routeArticleSlug && isEnglishOnlyArticle(routeArticleSlug) && targetLang !== "en"
-    ? `/${targetLang}/articles`
-    : `/${targetLang}${route ? `/${route}` : ""}`;
+  const languageHref = (targetLang: Lang) => `/${targetLang}${route ? `/${route}` : ""}`;
   return (
     <>
       <div className="notice-bar"><span>{c.independent}</span><span>{c.updated}</span></div>
@@ -256,7 +251,7 @@ function Home({ lang }: { lang: Lang }) {
     </div></section>
     <section className="home-reading-section"><div className="section-shell">
       <div className="home-section-heading"><div><p className="index">04 · {c.nav.articles}</p><h2>{c.pages.articles.title}</h2></div><Link href={`/${lang}/articles`}>{c.nav.articles} →</Link></div>
-      <div className="home-article-grid">{availableArticleSlugs(lang).slice(0, 6).map((slug, index) => {
+      <div className="home-article-grid">{articleSlugs.slice(0, 6).map((slug, index) => {
         const article = articles[lang][slug];
         return <Link className="home-article-card" data-track="article_click" key={slug} href={`/${lang}/articles/${slug}`}>
           <div className="home-article-thumb"><span>0{index + 1}</span><small>{article.readTime}</small><strong>{index === 0 ? c.nav.spreadsheet : index === 1 ? c.nav.qc : c.nav.shipping}</strong></div>
@@ -301,7 +296,7 @@ function Interior({ lang, route }: { lang: Lang; route: string }) {
 
 function ArticleIndex({ lang }: { lang: Lang }) {
   const c = copy[lang];
-  return <section className="section-shell article-index">{availableArticleSlugs(lang).map((slug, index) => {
+  return <section className="section-shell article-index">{articleSlugs.map((slug, index) => {
     const article = articles[lang][slug];
     return <Link className="article-card" data-track="article_click" key={slug} href={`/${lang}/articles/${slug}`}>
       <span>{String(index + 1).padStart(2, "0")}</span>
@@ -320,7 +315,7 @@ function ArticleDetail({ lang, slug }: { lang: Lang; slug: ArticleSlug }) {
     fr: { basis: "Base de recherche", note: "Les déclarations de l’entreprise sont identifiées comme telles ; les notes publiques sont des instantanés datés susceptibles de changer." },
     it: { basis: "Base della ricerca", note: "Le dichiarazioni aziendali sono indicate come dati di Hacoo; le valutazioni pubbliche sono istantanee datate e possono cambiare." },
   }[lang];
-  const availableSlugs = availableArticleSlugs(lang);
+  const availableSlugs = articleSlugs;
   const currentIndex = availableSlugs.indexOf(slug);
   const nextSlug = availableSlugs[(currentIndex + 1) % availableSlugs.length];
   const nextArticle = articles[lang][nextSlug];
@@ -410,7 +405,7 @@ export default async function SitePage({ params }: Props) {
   const route = slug[0] || "";
   if (!routes.includes(route as (typeof routes)[number])) notFound();
   const articleSlug = slug[1] as ArticleSlug | undefined;
-  if (slug.length === 2 && (route !== "articles" || !articleSlugs.includes(articleSlug as ArticleSlug) || !availableArticleSlugs(rawLang).includes(articleSlug as ArticleSlug))) notFound();
+  if (slug.length === 2 && (route !== "articles" || !articleSlugs.includes(articleSlug as ArticleSlug))) notFound();
   const routePath = slug.join("/");
   return <div className="site-wrap" lang={rawLang}><Header lang={rawLang} route={routePath} /><main>{articleSlug ? <ArticleDetail lang={rawLang} slug={articleSlug} /> : route ? <Interior lang={rawLang} route={route} /> : <Home lang={rawLang} />}</main><Footer lang={rawLang} /></div>;
 }

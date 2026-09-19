@@ -6,6 +6,7 @@ const htmlCacheControl = "public, max-age=300, stale-while-revalidate=86400";
 const edgeCacheControl = "public, max-age=86400, stale-while-revalidate=604800";
 const immutableCacheControl = "public, max-age=31536000, immutable";
 const imageCacheControl = "public, max-age=2592000, stale-while-revalidate=604800";
+const pageCacheVersion = "20260919-priority-guides-v1";
 
 function permanentRedirect(url: URL): Response {
   return new Response(null, {
@@ -103,6 +104,7 @@ function pageCacheKey(url: URL): Request {
   key.hostname = canonicalHost;
   key.port = "";
   key.search = "";
+  key.searchParams.set("__site_version", pageCacheVersion);
   return new Request(key.toString(), { method: "GET" });
 }
 
