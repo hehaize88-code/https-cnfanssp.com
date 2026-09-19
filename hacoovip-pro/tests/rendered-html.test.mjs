@@ -86,6 +86,32 @@ test("sets edge-cacheable HTML headers and complete structured data", async () =
   assert.match(articleHtml, /Google Play US · 59,057/);
 });
 
+test("publishes eight focused English guides without thin translated copies", async () => {
+  const slugs = [
+    "how-does-hacoo-work",
+    "hacoo-qc-guide",
+    "hacoo-returns-refunds",
+    "hacoo-website-vs-app",
+    "hacoo-order-tracking",
+    "hacoo-sizing-guide",
+    "hacoo-product-links-codes",
+    "hacoo-app-region-access",
+  ];
+
+  for (const slug of slugs) {
+    const response = await fetchWorker(`https://hacoovip.pro/en/articles/${slug}`);
+    assert.equal(response.status, 200, slug);
+    const html = await response.text();
+    assert.match(html, /"datePublished":"2026-09-19"/, slug);
+    assert.match(html, new RegExp(`rel="canonical" href="https://hacoovip\\.pro/en/articles/${slug}`), slug);
+    assert.doesNotMatch(html, new RegExp(`hreflang="de"[^>]+${slug}`), slug);
+    assert.doesNotMatch(html, /wa\.me\/message/, slug);
+  }
+
+  const untranslated = await fetchWorker("https://hacoovip.pro/de/articles/how-does-hacoo-work");
+  assert.equal(untranslated.status, 404);
+});
+
 test("keeps every mobile module visible and readable", async () => {
   const css = await readFile(new URL("../app/globals.css", import.meta.url), "utf8");
   const mobileCss = css.slice(css.indexOf("@media (max-width: 700px)"));

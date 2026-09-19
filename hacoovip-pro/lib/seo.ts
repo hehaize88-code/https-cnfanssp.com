@@ -7,8 +7,8 @@ export type SeoRoute = "home" | "spreadsheet" | "finds" | "guide" | "qc" | "ship
 export const pageSeo: Record<Lang, Record<SeoRoute, SeoEntry>> = {
   en: {
     home: {
-      title: "Hacoo Item Checks, Fit Notes & Reviews | HacooVIP Pro",
-      description: "Check received Hacoo items by color, size, quantity, measurements, fit and care details, then keep a clear record for an evidence-based review.",
+      title: "Hacoo Spreadsheet & Finds 2026 | Links, QC & Shipping",
+      description: "Browse an independent Hacoo spreadsheet with product links, finds, QC checks, size guidance, shipping information and current app resources for 2026.",
     },
     spreadsheet: {
       title: "Hacoo Item Record Sheet: Size, Fit & Care Notes",
@@ -177,11 +177,19 @@ export const pageSeo: Record<Lang, Record<SeoRoute, SeoEntry>> = {
   },
 };
 
-export const articleSeo: Record<Lang, Record<ArticleSlug, SeoEntry>> = {
+export const articleSeo: Record<Lang, Partial<Record<ArticleSlug, SeoEntry>>> = {
   en: {
-    "hacoo-spreadsheet-live-source": { title: "Hacoo Item Records: Keep the Live Product Source", description: "Use a dated Hacoo item record without losing the live source, selected variant, measurements and evidence needed for later fit or review notes." },
-    "hacoo-reviews-2026": { title: "Hacoo Reviews & QC: Read Photos and Size Notes", description: "Separate product evidence from app, delivery and support opinions with dated rating sources, careful photo checks and measurement-based size notes." },
-    "hacoo-shipping-time-cost": { title: "Hacoo Shipping Times, Costs & Delivery Records", description: "Read Hacoo’s published country ranges, separate estimates from guarantees and keep a clear parcel timeline before checking the received item." },
+    "hacoo-spreadsheet-live-source": { title: "Hacoo Spreadsheet 2026: Links, Codes & Product Finds", description: "Use a Hacoo spreadsheet without losing the live product source. Verify links, images, options and prices before saving a product find." },
+    "hacoo-reviews-2026": { title: "Hacoo Reviews 2026: Ratings, QC Photos & Size Notes", description: "Read Hacoo reviews with context: dated app ratings, QC photo checks, measurement-based sizing and clear limits on what reviews can prove." },
+    "hacoo-shipping-time-cost": { title: "Hacoo Shipping Time & Cost by Country (2026)", description: "Compare Hacoo shipping time guidance by country, understand cost inputs and track a parcel without treating estimates as delivery guarantees." },
+    "how-does-hacoo-work": { title: "How Does Hacoo Work? App, Ordering & Delivery Guide", description: "Learn how Hacoo works from app access and product discovery to checkout, order status, delivery checks and after-sales evidence." },
+    "hacoo-qc-guide": { title: "Hacoo QC Guide: Photos, Sizing & Product Checks", description: "Use a practical Hacoo QC checklist for photos, measurements, labels, construction and product details before making a decision." },
+    "hacoo-returns-refunds": { title: "Hacoo Returns & Refunds: Evidence and Next Steps", description: "Prepare a Hacoo return or refund request with order details, photos, measurements, dates and a clear record of the problem." },
+    "hacoo-website-vs-app": { title: "Hacoo Website vs App: Official Access Guide (2026)", description: "Compare the Hacoo website and app, find official download sources and understand why product access can vary by device or region." },
+    "hacoo-order-tracking": { title: "Hacoo Order Tracking: Delays and Missing Parcels", description: "Track a Hacoo order, document delivery milestones and know what evidence to collect for delayed, missing or delivered-not-received parcels." },
+    "hacoo-sizing-guide": { title: "Hacoo Sizing Guide: Measurements, Fit & Size Reviews", description: "Choose a Hacoo size using garment measurements, consistent measuring methods, fit notes and product-specific review context." },
+    "hacoo-product-links-codes": { title: "Hacoo Product Links & Codes: Find and Verify Sources", description: "Find, test and save Hacoo product links or codes while checking images, options, region visibility and the current live source." },
+    "hacoo-app-region-access": { title: "Hacoo App Not Working? Region, Login & Link Fixes", description: "Troubleshoot Hacoo app access, login problems, missing products, regional availability and links that open the wrong destination." },
   },
   de: {
     "hacoo-spreadsheet-live-source": { title: "Hacoo Artikeldaten mit aktueller Produktquelle", description: "Führe einen datierten Hacoo-Artikeldatensatz mit Live-Quelle, Variante, Maßen und Belegen für spätere Passform- oder Bewertungsnotizen." },

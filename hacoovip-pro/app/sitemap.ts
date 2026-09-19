@@ -1,11 +1,11 @@
 import type { MetadataRoute } from "next";
-import { articleSlugs } from "@/lib/articles";
+import { articleSlugs, localizedArticleSlugs } from "@/lib/articles";
 import { languages, routes } from "@/lib/site-data";
 
 const origin = "https://hacoovip.pro";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const updated = new Date("2026-08-29T00:00:00.000Z");
+  const updated = new Date("2026-09-19T00:00:00.000Z");
   const pages = languages.flatMap((lang) =>
     routes.map((route) => ({
       url: `${origin}/${lang}${route ? `/${route}` : ""}`,
@@ -15,7 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
   );
   const articlePages = languages.flatMap((lang) =>
-    articleSlugs.map((slug) => ({
+    (lang === "en" ? articleSlugs : localizedArticleSlugs).map((slug) => ({
       url: `${origin}/${lang}/articles/${slug}`,
       lastModified: updated,
       changeFrequency: "monthly" as const,

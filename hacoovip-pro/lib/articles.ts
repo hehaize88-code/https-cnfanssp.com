@@ -4,12 +4,26 @@ import { translatedArticleExpansions } from "@/lib/translated-article-expansions
 import { translatedArticleParity } from "@/lib/translated-article-parity";
 import { localizedPages } from "@/lib/page-translations";
 import { pageParitySupplements } from "@/lib/page-parity-supplements";
+import { priorityEnglishArticles } from "@/lib/priority-articles-en";
 
-export const articleSlugs = [
+export const localizedArticleSlugs = [
   "hacoo-spreadsheet-live-source",
   "hacoo-reviews-2026",
   "hacoo-shipping-time-cost",
 ] as const;
+
+export const englishOnlyArticleSlugs = [
+  "how-does-hacoo-work",
+  "hacoo-qc-guide",
+  "hacoo-returns-refunds",
+  "hacoo-website-vs-app",
+  "hacoo-order-tracking",
+  "hacoo-sizing-guide",
+  "hacoo-product-links-codes",
+  "hacoo-app-region-access",
+] as const;
+
+export const articleSlugs = [...localizedArticleSlugs, ...englishOnlyArticleSlugs] as const;
 
 export type ArticleSlug = (typeof articleSlugs)[number];
 export type Article = {
@@ -21,7 +35,7 @@ export type Article = {
   sections: { title: string; body: string[] }[];
 };
 
-const en: Record<ArticleSlug, Article> = {
+const en = {
   "hacoo-spreadsheet-live-source": {
     title: "How to use a Hacoo spreadsheet without losing the live source",
     description: "A practical system for moving from a curated visual index to the current product page while keeping image, title, option and price checks aligned.",
@@ -64,11 +78,12 @@ const en: Record<ArticleSlug, Article> = {
       { title: "Run a final quote check", body: ["Immediately before acting, reopen the live destination and shipping information. Confirm route availability, current price, parcel inputs, destination support and policy terms. Record the final quote with its date and currency.", "An honest shipping guide does not promise a delivery time or universal rate. It provides a repeatable method for collecting current inputs, comparing them fairly and showing where uncertainty remains."] },
     ],
   },
-};
+} as Record<ArticleSlug, Article>;
 
 Object.assign(en, researchedEnglishArticles);
+Object.assign(en, priorityEnglishArticles);
 
-const de: Record<ArticleSlug, Article> = {
+const de = {
   "hacoo-spreadsheet-live-source": {
     title: "So nutzt du eine Hacoo-Tabelle, ohne die Live-Quelle zu verlieren",
     description: "Ein praktisches System vom kuratierten Index zur aktuellen Produktseite – mit abgestimmter Bild-, Titel-, Varianten- und Preisprüfung.",
@@ -111,9 +126,9 @@ const de: Record<ArticleSlug, Article> = {
       { title: "Finales Angebot prüfen", body: ["Öffne unmittelbar vor der Entscheidung die aktuellen Versandinformationen. Bestätige Route, Preis, Paketdaten, Zielunterstützung und Regeln. Speichere das finale Angebot mit Datum und Währung.", "Ein ehrlicher Guide verspricht weder Lieferzeit noch Einheitspreis; er macht aktuelle Eingaben und Unsicherheit sichtbar."] },
     ],
   },
-};
+} as Record<ArticleSlug, Article>;
 
-const es: Record<ArticleSlug, Article> = {
+const es = {
   "hacoo-spreadsheet-live-source": {
     title: "Cómo usar una hoja de Hacoo sin perder la fuente actual",
     description: "Un sistema práctico para pasar del índice visual a la página actual manteniendo alineadas imagen, título, variante y precio.",
@@ -156,9 +171,9 @@ const es: Record<ArticleSlug, Article> = {
       { title: "Haz una comprobación final", body: ["Antes de actuar, confirma ruta, precio, datos del paquete, soporte del destino y normas. Guarda la cotización final con fecha y moneda.", "Una guía honesta no promete tiempo ni tarifa universal; organiza entradas actuales y muestra la incertidumbre restante."] },
     ],
   },
-};
+} as Record<ArticleSlug, Article>;
 
-const fr: Record<ArticleSlug, Article> = {
+const fr = {
   "hacoo-spreadsheet-live-source": {
     title: "Utiliser un tableau Hacoo sans perdre la source en direct",
     description: "Une méthode pratique pour passer d’un index visuel à la page actuelle tout en vérifiant image, titre, variante et prix.",
@@ -201,9 +216,9 @@ const fr: Record<ArticleSlug, Article> = {
       { title: "Faire un dernier contrôle", body: ["Avant d’agir, confirmez route, prix, données du colis, prise en charge de la destination et règles. Enregistrez le devis final avec date et devise.", "Un guide honnête ne promet ni délai ni tarif universel ; il organise les données actuelles et montre l’incertitude restante."] },
     ],
   },
-};
+} as Record<ArticleSlug, Article>;
 
-const it: Record<ArticleSlug, Article> = {
+const it = {
   "hacoo-spreadsheet-live-source": {
     title: "Usare un foglio Hacoo senza perdere la fonte live",
     description: "Un sistema pratico per passare dall’indice visivo alla pagina attuale mantenendo allineati immagine, titolo, variante e prezzo.",
@@ -246,7 +261,7 @@ const it: Record<ArticleSlug, Article> = {
       { title: "Fare il controllo finale", body: ["Prima di agire conferma rotta, prezzo, dati del pacco, supporto della destinazione e regole. Salva il preventivo finale con data e valuta.", "Una guida onesta non promette tempi o tariffe universali; organizza dati attuali e mostra l’incertezza residua."] },
     ],
   },
-};
+} as Record<ArticleSlug, Article>;
 
 Object.assign(de["hacoo-spreadsheet-live-source"], { title: "Hacoo Spreadsheet Guide: Produktlinks mit der Live-Quelle abgleichen", factChecked: "Fakten geprüft am 28. August 2026", sources: ["Hacoo Nutzungsbedingungen", "Hacoo Richtlinie für geistiges Eigentum", "Hacoo App-Store-Eintrag", "Hacoo Help Center"] });
 Object.assign(es["hacoo-spreadsheet-live-source"], { title: "Guía Hacoo Spreadsheet: vincula cada producto con su fuente actual", factChecked: "Datos revisados el 28 de agosto de 2026", sources: ["Términos de Hacoo", "Política de propiedad intelectual", "Ficha de Hacoo en App Store", "Centro de ayuda Hacoo"] });
@@ -318,7 +333,7 @@ function rebuildLocalizedArticles(lang: "de" | "es" | "fr" | "it") {
   const localized = { de, es, fr, it }[lang];
   const routePages = localizedPages[lang];
 
-  for (const slug of articleSlugs) {
+  for (const slug of localizedArticleSlugs) {
     const baseSections = localized[slug].sections;
     const extra = translatedArticleExpansions[lang][slug];
     const parity = translatedArticleParity[lang][slug];

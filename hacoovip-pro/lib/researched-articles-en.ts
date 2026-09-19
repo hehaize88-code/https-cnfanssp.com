@@ -1,6 +1,6 @@
 import type { Article, ArticleSlug } from "@/lib/articles";
 
-export const researchedEnglishArticles: Record<ArticleSlug, Article> = {
+export const researchedEnglishArticles: Partial<Record<ArticleSlug, Article>> = {
   "hacoo-spreadsheet-live-source": {
     title: "Hacoo Spreadsheet Guide: How to Keep Every Product Link Tied to a Live Source",
     description: "A fact-checked workflow for using Hacoo product lists, category routes and shared links without confusing a saved card with a current listing.",

@@ -99,10 +99,10 @@ const pagesEn: Record<string, PageCopy> = {
 
 const base: Omit<Copy, "pages"> = {
   nav: { home: "Home", spreadsheet: "Spreadsheet", finds: "Finds", guide: "Guide", qc: "QC", shipping: "Shipping", articles: "Articles", faq: "FAQ" },
-  badge: "Independent Hacoo received-item guide", hero: "Your Hacoo item arrived,", heroAccent: "now check what you received.",
-  intro: "Confirm color, size, quantity, included parts, measurements and fit. Keep a privacy-safe record that separates the product, delivery and service experience before you write a review.",
-  search: "Find the matching item or category…", searchButton: "Open reference", updated: "Item-check method reviewed · Aug 2026", independent: "Independent · Not affiliated with Hacoo",
-  categoryTitle: "Match the received item to a category", categorySub: "Six direct reference routes. Every original category remains available.", productTitle: "Examples for receiving checks", productSub: "Each card opens the same matching live reference page for comparison.",
+  badge: "Independent Hacoo spreadsheet & guide", hero: "Hacoo spreadsheet, links and finds", heroAccent: "for 2026.",
+  intro: "Browse organized product links, then verify the live source with practical QC, sizing, shipping, tracking and app-access guides before you decide.",
+  search: "Search Hacoo product links or categories…", searchButton: "Search links", updated: "Research checked · Sep 2026", independent: "Independent · Not affiliated with Hacoo",
+  categoryTitle: "Browse Hacoo product links by category", categorySub: "Six direct category routes with a live-source check before you rely on a listing.", productTitle: "Popular Hacoo product finds", productSub: "Each card opens the matching current reference page for verification.",
   open: "Open reference", viewAll: "View all references", guideTitle: "A useful product review starts with a record", guideSub: "Three checks turn an arrival into evidence with context.",
   disclaimer: "Independent guide. We do not sell products, process payments, handle shipping, verify sellers or represent Hacoo. Recheck live product, price and policy information before acting.", whatsapp: "WhatsApp",
   cats: { shoes: "Shoes", hoodies: "Hoodies", tshirts: "T-Shirts", jerseys: "Jerseys", accessories: "Accessories", all: "All products" },

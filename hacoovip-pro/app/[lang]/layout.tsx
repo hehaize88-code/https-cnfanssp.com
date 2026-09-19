@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import "../globals.css";
 import { languages, type Lang } from "@/lib/site-data";
+import { AnalyticsEvents } from "@/components/analytics-events";
 
 type Props = {
   children: React.ReactNode;
@@ -26,7 +27,7 @@ export default async function LanguageLayout({ children, params }: Props) {
 
   return (
     <html lang={lang}>
-      <body>{children}</body>
+      <body>{children}<AnalyticsEvents /></body>
     </html>
   );
 }

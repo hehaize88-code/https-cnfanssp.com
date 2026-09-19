@@ -3,7 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { SearchBox } from "@/components/search-box";
 import { categories, copy, languages, products, routes, type Lang } from "@/lib/site-data";
-import { articles, articleSlugs, type ArticleSlug } from "@/lib/articles";
+import { articles, articleSlugs, englishOnlyArticleSlugs, localizedArticleSlugs, type ArticleSlug } from "@/lib/articles";
 import { officialFacts } from "@/lib/official-facts";
 import { articleSeo, pageSeo, type SeoRoute } from "@/lib/seo";
 
@@ -11,6 +11,8 @@ type Props = { params: Promise<{ lang: string; slug?: string[] }> };
 const site = "https://hacoovip.pro";
 const siteName = "HacooVIP Pro";
 const validLang = (value: string): value is Lang => languages.includes(value as Lang);
+const availableArticleSlugs = (lang: Lang): readonly ArticleSlug[] => lang === "en" ? articleSlugs : localizedArticleSlugs;
+const isEnglishOnlyArticle = (slug: ArticleSlug) => englishOnlyArticleSlugs.includes(slug as (typeof englishOnlyArticleSlugs)[number]);
 const localeByLanguage: Record<Lang, string> = {
   en: "en_US",
   de: "de_DE",
@@ -22,6 +24,14 @@ const articleDetails: Record<ArticleSlug, { published: string; modified: string;
   "hacoo-spreadsheet-live-source": { published: "2026-08-29", modified: "2026-08-29", image: "/products/amiri-ma1.webp" },
   "hacoo-reviews-2026": { published: "2026-08-29", modified: "2026-08-29", image: "/hacoo-logo.png" },
   "hacoo-shipping-time-cost": { published: "2026-08-29", modified: "2026-08-29", image: "/hacoo-logo.png" },
+  "how-does-hacoo-work": { published: "2026-09-19", modified: "2026-09-19", image: "/hacoo-logo.png" },
+  "hacoo-qc-guide": { published: "2026-09-19", modified: "2026-09-19", image: "/hacoo-logo.png" },
+  "hacoo-returns-refunds": { published: "2026-09-19", modified: "2026-09-19", image: "/hacoo-logo.png" },
+  "hacoo-website-vs-app": { published: "2026-09-19", modified: "2026-09-19", image: "/hacoo-logo.png" },
+  "hacoo-order-tracking": { published: "2026-09-19", modified: "2026-09-19", image: "/hacoo-logo.png" },
+  "hacoo-sizing-guide": { published: "2026-09-19", modified: "2026-09-19", image: "/hacoo-logo.png" },
+  "hacoo-product-links-codes": { published: "2026-09-19", modified: "2026-09-19", image: "/hacoo-logo.png" },
+  "hacoo-app-region-access": { published: "2026-09-19", modified: "2026-09-19", image: "/hacoo-logo.png" },
 };
 const articleSourceUrls: Record<ArticleSlug, string[]> = {
   "hacoo-spreadsheet-live-source": [
@@ -42,12 +52,55 @@ const articleSourceUrls: Record<ArticleSlug, string[]> = {
     "https://act.hacoo.app/act/sara/helpcenter/return11",
     "https://www.hacoo.app/en-US/pages/terms-of-service",
   ],
+  "how-does-hacoo-work": [
+    "https://www.hacoo.app/en-US/pages/terms-of-service",
+    "https://act.hacoo.app/act/sara/helpcenter/order1",
+    "https://www.hacoo.app/en-US/pages/shipping-info",
+    "https://apps.apple.com/gb/app/hacoo-discovering-inspiring/id1399907836",
+  ],
+  "hacoo-qc-guide": [
+    "https://www.hacoo.app/trust-center",
+    "https://www.hacoo.app/en-US/pages/terms-of-service",
+    "https://www.hacoo.app/en-US/pages/intellectual-property",
+  ],
+  "hacoo-returns-refunds": [
+    "https://act.hacoo.app/act/sara/helpcenter/return11",
+    "https://www.hacoo.app/en-US/pages/shipping-info",
+    "https://www.hacoo.app/en-US/pages/terms-of-service",
+  ],
+  "hacoo-website-vs-app": [
+    "https://www.hacoo.app/",
+    "https://apps.apple.com/gb/app/hacoo-discovering-inspiring/id1399907836",
+    "https://play.google.com/store/apps/details?id=com.saramart.android&hl=en_US&gl=US",
+    "https://www.hacoo.app/en-US/pages/terms-of-service",
+  ],
+  "hacoo-order-tracking": [
+    "https://www.hacoo.app/en-US/pages/shipping-info",
+    "https://act.hacoo.app/faqshippingfee",
+    "https://act.hacoo.app/act/sara/helpcenter/return11",
+  ],
+  "hacoo-sizing-guide": [
+    "https://www.hacoo.app/trust-center",
+    "https://act.hacoo.app/act/sara/helpcenter/return11",
+    "https://www.hacoo.app/en-US/pages/terms-of-service",
+  ],
+  "hacoo-product-links-codes": [
+    "https://www.hacoo.app/en-US/pages/terms-of-service",
+    "https://www.hacoo.app/en-US/pages/intellectual-property",
+    "https://apps.apple.com/gb/app/hacoo-discovering-inspiring/id1399907836",
+  ],
+  "hacoo-app-region-access": [
+    "https://www.hacoo.app/",
+    "https://apps.apple.com/gb/app/hacoo-discovering-inspiring/id1399907836",
+    "https://play.google.com/store/apps/details?id=com.saramart.android&hl=en_US&gl=US",
+    "https://www.hacoo.app/en-US/pages/terms-of-service",
+  ],
 };
 
 export function generateStaticParams() {
   return languages.flatMap((lang) => [
     ...routes.map((route) => ({ lang, slug: route ? [route] : [] })),
-    ...articleSlugs.map((article) => ({ lang, slug: ["articles", article] })),
+    ...availableArticleSlugs(lang).map((article) => ({ lang, slug: ["articles", article] })),
   ]);
 }
 
@@ -61,8 +114,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const route = slug[0] || "";
   const articleSlug = route === "articles" && articleSlugs.includes(slug[1] as ArticleSlug) ? slug[1] as ArticleSlug : null;
   const article = articleSlug ? articles[rawLang][articleSlug] : null;
+  if (articleSlug && !article) return {};
   const routeSeo = articleSlug
-    ? articleSeo[rawLang][articleSlug]
+    ? articleSeo[rawLang][articleSlug]!
     : pageSeo[rawLang][(route || "home") as SeoRoute];
   const title = routeSeo.title;
   const description = routeSeo.description;
@@ -74,7 +128,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     alternates: {
       canonical: `${site}${path}`,
       languages: Object.fromEntries([
-        ...languages.map((lang) => [lang, `${site}/${lang}${routePath ? `/${routePath}` : ""}`]),
+        ...(articleSlug && isEnglishOnlyArticle(articleSlug) ? ["en" as const] : languages).map((lang) => [lang, `${site}/${lang}${routePath ? `/${routePath}` : ""}`]),
         ["x-default", `${site}/en${routePath ? `/${routePath}` : ""}`],
       ]),
     },
@@ -82,7 +136,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       type: article ? "article" : "website",
       siteName,
       locale: localeByLanguage[rawLang],
-      alternateLocale: languages.filter((lang) => lang !== rawLang).map((lang) => localeByLanguage[lang]),
+      alternateLocale: articleSlug && isEnglishOnlyArticle(articleSlug) ? [] : languages.filter((lang) => lang !== rawLang).map((lang) => localeByLanguage[lang]),
       title,
       description,
       url: `${site}${path}`,
@@ -118,6 +172,10 @@ function breadcrumbData(lang: Lang, items: { name: string; path: string }[]) {
 function Header({ lang, route }: { lang: Lang; route: string }) {
   const c = copy[lang];
   const activeRoute = route.split("/")[0];
+  const routeArticleSlug = route.startsWith("articles/") ? route.split("/")[1] as ArticleSlug : null;
+  const languageHref = (targetLang: Lang) => routeArticleSlug && isEnglishOnlyArticle(routeArticleSlug) && targetLang !== "en"
+    ? `/${targetLang}/articles`
+    : `/${targetLang}${route ? `/${route}` : ""}`;
   return (
     <>
       <div className="notice-bar"><span>{c.independent}</span><span>{c.updated}</span></div>
@@ -130,7 +188,7 @@ function Header({ lang, route }: { lang: Lang; route: string }) {
           {routes.slice(1).map((item) => <Link key={item} className={activeRoute === item ? "active" : ""} href={`/${lang}/${item}`}>{c.nav[item]}</Link>)}
         </nav>
         <div className="language-links" aria-label="Language">
-          {languages.map((item) => <Link key={item} className={item === lang ? "active" : ""} href={`/${item}${route ? `/${route}` : ""}`}>{item.toUpperCase()}</Link>)}
+          {languages.map((item) => <Link key={item} data-track="language_switch" className={item === lang ? "active" : ""} href={languageHref(item)}>{item.toUpperCase()}</Link>)}
         </div>
         </div>
         <details className="mobile-nav">
@@ -145,7 +203,7 @@ function Header({ lang, route }: { lang: Lang; route: string }) {
 function ProductGrid({ lang }: { lang: Lang }) {
   const c = copy[lang];
   return <div className="product-grid">{products.map((product, index) => (
-    <a className="product-card" href={product.href} target="_blank" rel="noopener noreferrer" key={product.href}>
+    <a className="product-card" data-track="outbound_main_site_click" href={product.href} target="_blank" rel="noopener noreferrer" key={product.href}>
       <div className="product-image"><span className="product-number">0{index + 1}</span><img src={product.image} alt={product.name} width="750" height="750" loading="lazy" /></div>
       <div className="product-info"><div className="product-meta"><span>{c.cats[product.category]}</span><strong>{product.price}</strong></div>
       <h3>{product.name}</h3><span className="product-link">{c.open}<b>↗</b></span></div>
@@ -175,22 +233,22 @@ function Home({ lang }: { lang: Lang }) {
         <div className="trust-row"><span><b>✓</b> {c.updated}</span><span><b>✓</b> {c.independent}</span></div>
       </div>
       <div className="hero-gallery" aria-label={c.productTitle}>
-        <a className="gallery-main" href={products[0].href} target="_blank" rel="noopener noreferrer" aria-label={`${c.open}: ${products[0].name}`}><img src="/products/amiri-ma1.webp" alt="Black and white sneaker product reference" width="750" height="750" /><span>{c.cats.shoes} · $53.44 ↗</span></a>
-        <a className="gallery-small gallery-one" href={products[1].href} target="_blank" rel="noopener noreferrer" aria-label={`${c.open}: ${products[1].name}`}><img src="/products/represent-hoodie.webp" alt="Hoodie product reference" width="750" height="750" /></a>
-        <a className="gallery-small gallery-two" href={products[5].href} target="_blank" rel="noopener noreferrer" aria-label={`${c.open}: ${products[5].name}`}><img src="/products/trapstar-bag.webp" alt="Shoulder bag product reference" width="750" height="750" /></a>
-        <a className="gallery-note" href="https://cnfanssp.com/AllProducts/" target="_blank" rel="noopener noreferrer" aria-label={c.viewAll}><strong>06</strong><span>{c.nav.finds} ↗</span></a>
+        <a className="gallery-main" data-track="outbound_main_site_click" href={products[0].href} target="_blank" rel="noopener noreferrer" aria-label={`${c.open}: ${products[0].name}`}><img src="/products/amiri-ma1.webp" alt="Black and white sneaker product reference" width="750" height="750" /><span>{c.cats.shoes} · $53.44 ↗</span></a>
+        <a className="gallery-small gallery-one" data-track="outbound_main_site_click" href={products[1].href} target="_blank" rel="noopener noreferrer" aria-label={`${c.open}: ${products[1].name}`}><img src="/products/represent-hoodie.webp" alt="Hoodie product reference" width="750" height="750" /></a>
+        <a className="gallery-small gallery-two" data-track="outbound_main_site_click" href={products[5].href} target="_blank" rel="noopener noreferrer" aria-label={`${c.open}: ${products[5].name}`}><img src="/products/trapstar-bag.webp" alt="Shoulder bag product reference" width="750" height="750" /></a>
+        <a className="gallery-note" data-track="outbound_main_site_click" href="https://cnfanssp.com/AllProducts/" target="_blank" rel="noopener noreferrer" aria-label={c.viewAll}><strong>06</strong><span>{c.nav.finds} ↗</span></a>
       </div>
     </section>
     <section className="category-section">
       <div className="section-shell category-shell">
         <div className="category-title"><p className="index">01 · {c.nav.finds}</p><h2>{c.categoryTitle}</h2><p>{c.categorySub}</p></div>
-        <div className="category-grid">{categories.map((category) => <a key={category.key} href={category.href} target="_blank" rel="noopener noreferrer"><span>{category.icon}</span><strong>{c.cats[category.key]}</strong><b>↗</b></a>)}</div>
+        <div className="category-grid">{categories.map((category) => <a key={category.key} data-track="category_click" href={category.href} target="_blank" rel="noopener noreferrer"><span>{category.icon}</span><strong>{c.cats[category.key]}</strong><b>↗</b></a>)}</div>
       </div>
     </section>
     <section className="section-shell block-section products-section">
       <div className="section-heading"><div><p className="index">02 · {c.nav.finds} · 06</p><h2>{c.productTitle}</h2></div><p>{c.productSub}</p></div>
       <ProductGrid lang={lang} />
-      <a className="outline-button" href="https://cnfanssp.com/AllProducts/" target="_blank" rel="noopener noreferrer">{c.viewAll} ↗</a>
+      <a className="outline-button" data-track="outbound_main_site_click" href="https://cnfanssp.com/AllProducts/" target="_blank" rel="noopener noreferrer">{c.viewAll} ↗</a>
     </section>
     <section className="method-section"><div className="section-shell method-inner">
       <div className="method-intro"><p className="index">03 · {c.nav.guide}</p><h2>{c.guideTitle}</h2><p>{c.guideSub}</p></div>
@@ -198,9 +256,9 @@ function Home({ lang }: { lang: Lang }) {
     </div></section>
     <section className="home-reading-section"><div className="section-shell">
       <div className="home-section-heading"><div><p className="index">04 · {c.nav.articles}</p><h2>{c.pages.articles.title}</h2></div><Link href={`/${lang}/articles`}>{c.nav.articles} →</Link></div>
-      <div className="home-article-grid">{articleSlugs.map((slug, index) => {
+      <div className="home-article-grid">{availableArticleSlugs(lang).slice(0, 6).map((slug, index) => {
         const article = articles[lang][slug];
-        return <Link className="home-article-card" key={slug} href={`/${lang}/articles/${slug}`}>
+        return <Link className="home-article-card" data-track="article_click" key={slug} href={`/${lang}/articles/${slug}`}>
           <div className="home-article-thumb"><span>0{index + 1}</span><small>{article.readTime}</small><strong>{index === 0 ? c.nav.spreadsheet : index === 1 ? c.nav.qc : c.nav.shipping}</strong></div>
           <div><h3>{article.title}</h3><p>{article.description}</p><b>{c.open} →</b></div>
         </Link>;
@@ -243,9 +301,9 @@ function Interior({ lang, route }: { lang: Lang; route: string }) {
 
 function ArticleIndex({ lang }: { lang: Lang }) {
   const c = copy[lang];
-  return <section className="section-shell article-index">{articleSlugs.map((slug, index) => {
+  return <section className="section-shell article-index">{availableArticleSlugs(lang).map((slug, index) => {
     const article = articles[lang][slug];
-    return <Link className="article-card" key={slug} href={`/${lang}/articles/${slug}`}>
+    return <Link className="article-card" data-track="article_click" key={slug} href={`/${lang}/articles/${slug}`}>
       <span>{String(index + 1).padStart(2, "0")}</span>
       <div><small>{article.readTime}</small><h2>{article.title}</h2><p>{article.description}</p><b>{c.open} →</b></div>
     </Link>;
@@ -262,8 +320,9 @@ function ArticleDetail({ lang, slug }: { lang: Lang; slug: ArticleSlug }) {
     fr: { basis: "Base de recherche", note: "Les déclarations de l’entreprise sont identifiées comme telles ; les notes publiques sont des instantanés datés susceptibles de changer." },
     it: { basis: "Base della ricerca", note: "Le dichiarazioni aziendali sono indicate come dati di Hacoo; le valutazioni pubbliche sono istantanee datate e possono cambiare." },
   }[lang];
-  const currentIndex = articleSlugs.indexOf(slug);
-  const nextSlug = articleSlugs[(currentIndex + 1) % articleSlugs.length];
+  const availableSlugs = availableArticleSlugs(lang);
+  const currentIndex = availableSlugs.indexOf(slug);
+  const nextSlug = availableSlugs[(currentIndex + 1) % availableSlugs.length];
   const nextArticle = articles[lang][nextSlug];
   const detail = articleDetails[slug];
   const articleUrl = `${site}/${lang}/articles/${slug}`;
@@ -301,14 +360,14 @@ function ArticleDetail({ lang, slug }: { lang: Lang; slug: ArticleSlug }) {
       {article.factChecked && <small className="article-source-line">{article.factChecked}</small>}
     </div></section>
     <article className="section-shell article-prose">
-      {article.sources && <div className="research-basis"><strong>{sourceLabels.basis}</strong><p>{article.sources.map((source, index) => <span key={source}><a href={articleSourceUrls[slug][index]} target="_blank" rel="noopener noreferrer">{source}</a>{index < article.sources!.length - 1 ? " · " : ""}</span>)}</p><small>{sourceLabels.note}</small></div>}
+      {article.sources && <div className="research-basis"><strong>{sourceLabels.basis}</strong><p>{article.sources.map((source, index) => <span key={source}><a data-track="source_click" href={articleSourceUrls[slug][index]} target="_blank" rel="noopener noreferrer">{source}</a>{index < article.sources!.length - 1 ? " · " : ""}</span>)}</p><small>{sourceLabels.note}</small></div>}
       <ArticleVisual lang={lang} slug={slug} />
       {article.sections.map((section, index) => <section key={section.title} id={`section-${index + 1}`}>
         <span>{String(index + 1).padStart(2, "0")}</span><div><h2>{section.title}</h2>{section.body.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}</div>
       </section>)}
       <aside><strong>{c.independent}</strong><p>{c.disclaimer}</p></aside>
     </article>
-    <section className="section-shell next-article"><div><small>{c.nav.articles}</small><h2>{nextArticle.title}</h2></div><Link href={`/${lang}/articles/${nextSlug}`}>{c.open} →</Link></section>
+    <section className="section-shell next-article"><div><small>{c.nav.articles}</small><h2>{nextArticle.title}</h2></div><Link data-track="article_click" href={`/${lang}/articles/${nextSlug}`}>{c.open} →</Link></section>
   </>;
 }
 
@@ -322,7 +381,7 @@ function ArticleVisual({ lang, slug }: { lang: Lang; slug: ArticleSlug }) {
     it: { rating: "Valutazioni pubbliche · 29 ago. 2026 · Google Play è fissato su en-US / USA; altre regioni possono mostrare dati diversi.", other: "Altri paesi", days: "giorni", shipping: "Tempi per destinazione pubblicati da Hacoo · verificati il 28 ago. 2026 · non sono una garanzia." },
   }[lang];
   if (slug === "hacoo-spreadsheet-live-source") return <figure className="article-product-strip">
-    {products.slice(0, 3).map((product) => <a key={product.href} href={product.href} target="_blank" rel="noopener noreferrer"><img src={product.image} alt={product.name} width="750" height="750" loading="lazy" /><span>{product.name}<b>{product.price} ↗</b></span></a>)}
+    {products.slice(0, 3).map((product) => <a key={product.href} data-track="outbound_main_site_click" href={product.href} target="_blank" rel="noopener noreferrer"><img src={product.image} alt={product.name} width="750" height="750" loading="lazy" /><span>{product.name}<b>{product.price} ↗</b></span></a>)}
     <figcaption>{c.productSub}</figcaption>
   </figure>;
   if (slug === "hacoo-reviews-2026") return <figure className="rating-snapshot">
@@ -331,6 +390,7 @@ function ArticleVisual({ lang, slug }: { lang: Lang; slug: ArticleSlug }) {
     <div><span>Trustpilot · 3,279</span><b>3.6 / 5</b><i style={{ width: "72%" }} /></div>
     <figcaption>{labels.rating}</figcaption>
   </figure>;
+  if (slug !== "hacoo-shipping-time-cost") return null;
   return <figure className="shipping-snapshot">
     <div><span>UK · FR · DE · IT</span><b>15–25</b><small>{labels.days}</small></div>
     <div><span>ES</span><b>15–30</b><small>{labels.days}</small></div>
@@ -341,7 +401,7 @@ function ArticleVisual({ lang, slug }: { lang: Lang; slug: ArticleSlug }) {
 
 function Footer({ lang }: { lang: Lang }) {
   const c = copy[lang];
-  return <footer><div className="section-shell footer-grid"><div className="brand footer-brand"><img src="/hacoo-logo.png" alt="Hacoo" width="235" height="58" /><small>{c.independent}</small></div><p>{c.disclaimer}</p><div className="footer-links"><Link href={`/${lang}/faq`}>{c.nav.faq}</Link><Link href={`/${lang}/articles`}>{c.nav.articles}</Link><a href="https://cnfanssp.com/AllProducts/" target="_blank" rel="noopener noreferrer">{c.viewAll} ↗</a></div></div></footer>;
+  return <footer><div className="section-shell footer-grid"><div className="brand footer-brand"><img src="/hacoo-logo.png" alt="Hacoo" width="235" height="58" /><small>{c.independent}</small></div><p>{c.disclaimer}</p><div className="footer-links"><Link href={`/${lang}/faq`}>{c.nav.faq}</Link><Link href={`/${lang}/articles`}>{c.nav.articles}</Link><a data-track="outbound_main_site_click" href="https://cnfanssp.com/AllProducts/" target="_blank" rel="noopener noreferrer">{c.viewAll} ↗</a></div></div></footer>;
 }
 
 export default async function SitePage({ params }: Props) {
@@ -350,7 +410,7 @@ export default async function SitePage({ params }: Props) {
   const route = slug[0] || "";
   if (!routes.includes(route as (typeof routes)[number])) notFound();
   const articleSlug = slug[1] as ArticleSlug | undefined;
-  if (slug.length === 2 && (route !== "articles" || !articleSlugs.includes(articleSlug as ArticleSlug))) notFound();
+  if (slug.length === 2 && (route !== "articles" || !articleSlugs.includes(articleSlug as ArticleSlug) || !availableArticleSlugs(rawLang).includes(articleSlug as ArticleSlug))) notFound();
   const routePath = slug.join("/");
-  return <div className="site-wrap" lang={rawLang}><Header lang={rawLang} route={routePath} /><main>{articleSlug ? <ArticleDetail lang={rawLang} slug={articleSlug} /> : route ? <Interior lang={rawLang} route={route} /> : <Home lang={rawLang} />}</main><Footer lang={rawLang} /><a className="whatsapp" href="https://wa.me/message/3V2YFNRFGBI2O1" target="_blank" rel="noopener noreferrer" aria-label={copy[rawLang].whatsapp}>WA</a></div>;
+  return <div className="site-wrap" lang={rawLang}><Header lang={rawLang} route={routePath} /><main>{articleSlug ? <ArticleDetail lang={rawLang} slug={articleSlug} /> : route ? <Interior lang={rawLang} route={route} /> : <Home lang={rawLang} />}</main><Footer lang={rawLang} /></div>;
 }
