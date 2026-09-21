@@ -38,8 +38,8 @@ export function withLanguage(path: string, language: SiteLanguage): string {
   return hash ? `${localizedPath}#${hash}` : localizedPath;
 }
 
-// Keep the canonical URL clean while forcing browsers to request the current
-// article hub after a content release instead of reusing an older cached HTML file.
+// Serve the article hub from a release-specific static path so visitors do not
+// reuse the older /articles HTML. The copied document keeps /articles canonical.
 export function articleHubHref(language: SiteLanguage): string {
-  return `${withLanguage("/articles", language)}?release=20260921-14`;
+  return withLanguage("/articles-2026", language);
 }
