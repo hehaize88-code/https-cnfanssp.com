@@ -72,6 +72,6 @@ const redirects = pageUrls
   .map((pathname) => `${pathname}/ ${pathname} 301`)
   .join("\n");
 await writeFile(join(outputDir, "_redirects"), `https://www.joyagoos.store/* https://joyagoos.store/:splat 301\n${redirects}\n`);
-await writeFile(join(outputDir, "_headers"), `/assets/*\n  Cache-Control: public, max-age=31536000, immutable\n\n/joyagoo-logo.png\n  Cache-Control: public, max-age=604800\n`);
+await writeFile(join(outputDir, "_headers"), `/articles\n  Cache-Control: no-cache, max-age=0, must-revalidate\n\n/articles/*\n  Cache-Control: no-cache, max-age=0, must-revalidate\n\n/assets/*\n  Cache-Control: public, max-age=31536000, immutable\n\n/joyagoo-logo.png\n  Cache-Control: public, max-age=604800\n`);
 
 console.log(`Exported ${pageUrls.length} indexable pages to dist/pages.`);
