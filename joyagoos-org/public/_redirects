@@ -1,1 +1,3 @@
 / /en/ 308
+/articles/:slug /en/articles/:slug/ 301
+/articles/:slug/ /en/articles/:slug/ 301
