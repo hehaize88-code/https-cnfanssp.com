@@ -1,6 +1,8 @@
 import { Footer, Header, MAIN } from "./site-data";
 import { germanyDestinationArticleByLanguage, germanyDestinationArticleSlug } from "./seo-article-germany";
 import { polandDestinationArticleByLanguage, polandDestinationArticleSlug } from "./seo-article-poland";
+import { priorityArticles, priorityArticleSlugs } from "./seo-articles-priority";
+import type { SiteLanguage } from "./i18n";
 
 type Source = { title:string; href:string };
 
@@ -95,6 +97,7 @@ export const articles = {
       {title:"Joyagoo Official Homepage",href:"https://joyagoo.com/"},
     ] satisfies Source[],
   },
+  ...priorityArticles,
 } as const;
 
 export type ArticleSlug = keyof typeof articles;
@@ -106,7 +109,72 @@ export const articlePublishedDates: Record<ArticleSlug, string> = {
   "joyagoo-qc-photo-checklist": "2026-08-29",
   "joyagoo-actual-vs-volumetric-weight": "2026-08-29",
   "joyagoo-link-verification-guide": "2026-08-29",
+  "joyagoo-shoes-spreadsheet-size-qc-guide": "2026-09-21",
+  "joyagoo-clothing-spreadsheet-size-guide": "2026-09-21",
+  "joyagoo-warehouse-storage-guide": "2026-09-21",
+  "joyagoo-returns-refunds-guide": "2026-09-21",
+  "joyagoo-fees-explained": "2026-09-21",
+  "joyagoo-shipping-to-usa-guide": "2026-09-21",
+  "joyagoo-shipping-to-uk-guide": "2026-09-21",
+  "joyagoo-app-guide": "2026-09-21",
 };
+
+const englishOnlyArticles = new Set<ArticleSlug>(priorityArticleSlugs);
+
+export function isArticleAvailableInLanguage(slug: ArticleSlug, language: SiteLanguage) {
+  return language === "en" || !englishOnlyArticles.has(slug);
+}
+
+const relatedByArticle: Partial<Record<ArticleSlug, { href: string; label: string }[]>> = {
+  "joyagoo-shoes-spreadsheet-size-qc-guide": [
+    { href: "/spreadsheet", label: "Use the Joyagoo spreadsheet" },
+    { href: "/qc", label: "Review the QC workflow" },
+    { href: "/articles/joyagoo-actual-vs-volumetric-weight", label: "Compare parcel weight methods" },
+  ],
+  "joyagoo-clothing-spreadsheet-size-guide": [
+    { href: "/spreadsheet", label: "Use the Joyagoo spreadsheet" },
+    { href: "/articles/joyagoo-qc-photo-checklist", label: "Open the QC photo checklist" },
+    { href: "/shipping", label: "Plan clothing in a parcel" },
+  ],
+  "joyagoo-warehouse-storage-guide": [
+    { href: "/guide", label: "Follow the buying workflow" },
+    { href: "/articles/joyagoo-how-to-buy-guide", label: "Read the complete buying guide" },
+    { href: "/shipping", label: "Prepare the shipping decision" },
+  ],
+  "joyagoo-returns-refunds-guide": [
+    { href: "/qc", label: "Review QC evidence" },
+    { href: "/articles/joyagoo-qc-photo-checklist", label: "Use the detailed QC checklist" },
+    { href: "/guide", label: "Return to the buying workflow" },
+  ],
+  "joyagoo-fees-explained": [
+    { href: "/articles/joyagoo-actual-vs-volumetric-weight", label: "Understand chargeable weight" },
+    { href: "/shipping", label: "Compare shipping inputs" },
+    { href: "/guide", label: "Map costs to each buying stage" },
+  ],
+  "joyagoo-shipping-to-usa-guide": [
+    { href: "/shipping", label: "Review the parcel basics" },
+    { href: "/articles/joyagoo-actual-vs-volumetric-weight", label: "Calculate chargeable weight" },
+    { href: "/qc", label: "Finish QC before packing" },
+  ],
+  "joyagoo-shipping-to-uk-guide": [
+    { href: "/shipping", label: "Review the parcel basics" },
+    { href: "/articles/joyagoo-actual-vs-volumetric-weight", label: "Calculate chargeable weight" },
+    { href: "/qc", label: "Finish QC before packing" },
+  ],
+  "joyagoo-app-guide": [
+    { href: "/spreadsheet", label: "Start with current product routes" },
+    { href: "/articles/joyagoo-how-to-buy-guide", label: "See the full buying sequence" },
+    { href: "/articles", label: "Browse every buyer guide" },
+  ],
+};
+
+export function getRelatedLinks(slug: ArticleSlug) {
+  return relatedByArticle[slug] || [
+    { href: "/spreadsheet", label: "Use the Joyagoo spreadsheet" },
+    { href: "/qc", label: "Review QC evidence" },
+    { href: "/shipping", label: "Prepare the parcel" },
+  ];
+}
 
 export function ArticlePage({ slug }:{slug:ArticleSlug}){
   const article=articles[slug];

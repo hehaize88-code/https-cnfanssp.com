@@ -1,8 +1,10 @@
 import type { MetadataRoute } from "next";
 import { sectionOrder } from "./site-data";
+import { articlePublishedDates, articles, isArticleAvailableInLanguage, type ArticleSlug } from "./article-data";
 export default function sitemap(): MetadataRoute.Sitemap {
   const base="https://joyagoos.store"; const locales=["zh","de","pl","es","it","fr","pt","ro","sv"];
-  const articlePaths=["articles/joyagoo-poland-language-address-product-option-preparation","articles/joyagoo-germany-destination-ready-order-record","articles/joyagoo-how-to-buy-guide","articles/joyagoo-qc-photo-checklist","articles/joyagoo-actual-vs-volumetric-weight","articles/joyagoo-link-verification-guide"];
-  const paths=["",...sectionOrder,...articlePaths,...locales,...locales.flatMap(locale=>sectionOrder.map(section=>`${locale}/${section}`)),...locales.flatMap(locale=>articlePaths.map(path=>`${locale}/${path}`))];
-  return paths.map((path,index)=>({url:`${base}/${path}`,lastModified:new Date(path.includes("joyagoo-poland-language-address-product-option-preparation") ? "2026-09-10" : path.includes("joyagoo-germany-destination-ready-order-record") ? "2026-09-08" : "2026-08-29"),changeFrequency:index<5?"weekly":"monthly",priority:path===""?1:path.split("/").length===1?.8:.65}));
+  const articlePaths=Object.keys(articles).map(slug=>`articles/${slug}`);
+  const localizedArticlePaths=locales.flatMap(locale=>articlePaths.filter(path=>isArticleAvailableInLanguage(path.split("/")[1] as ArticleSlug,locale as Parameters<typeof isArticleAvailableInLanguage>[1])).map(path=>`${locale}/${path}`));
+  const paths=["",...sectionOrder,...articlePaths,...locales,...locales.flatMap(locale=>sectionOrder.map(section=>`${locale}/${section}`)),...localizedArticlePaths];
+  return paths.map((path,index)=>{const slug=path.split("/").at(-1) as ArticleSlug;const articleDate=slug in articlePublishedDates?articlePublishedDates[slug]:"2026-09-21";return {url:`${base}/${path}`,lastModified:new Date(articleDate),changeFrequency:index<5?"weekly":"monthly",priority:path===""?1:path.split("/").length===1?.8:.65};});
 }

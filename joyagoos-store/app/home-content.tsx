@@ -1,6 +1,6 @@
 "use client";
 
-import { articles, type ArticleSlug } from "./article-data";
+import { articles, isArticleAvailableInLanguage, type ArticleSlug } from "./article-data";
 import { completeTranslations } from "./generated-translations";
 import { Footer, Header, locales, localizedSections, pageContent, type Locale } from "./site-data";
 import { pageDetails } from "./full-translations";
@@ -26,7 +26,7 @@ const categories = [
 ] as const;
 
 const english = {
-  heroKicker:"JOYAGOO PRODUCT DIRECTORY / 2026", title:"Find the product.", accent:"Check the path.", lead:"A maintained directory for checking product destinations, image matches, available options and reference prices before the next click.",
+  heroKicker:"JOYAGOO SPREADSHEET / 2026", title:"Joyagoo Spreadsheet 2026:", accent:"Verified finds and product links.", lead:"Browse Joyagoo spreadsheet finds by category, verify live product links, compare images and options, and use practical QC and shipping guides before the next click.",
   searchPlaceholder:"Search shoes, hoodies, watches...", searchButton:"Search products ↗", trust:["Matched listing routes","Image + option checks","Checked destinations"],
   ticker:["PRODUCT DIRECTORY","LISTING STATUS","OPTION MATCH","CATEGORY ROUTES"], findsKicker:"MAINTAINED ENTRY POINTS", findsTitle:"Five product routes worth checking", findsIntro:"Every card keeps its product name, preview and destination together, with a visible review date for route maintenance.", cardCta:"View matched page ↗", cardNotes:["Route checked 2026-08-29","Route checked 2026-08-29","Route checked 2026-08-29","Route checked 2026-08-29","Route checked 2026-08-29"],
   categoryKicker:"START BROAD, THEN NARROW", categoryTitle:"Browse by product direction.", categoryIntro:"Use a category when you know the type of item but not the exact product yet.", categoryNotes:["Sneakers, loafers and everyday pairs","Sweatshirts, knits and layered pieces","Watches, bags, caps and details","Devices, wearables and small tech"],
@@ -130,7 +130,7 @@ export function HomeContent({ locale, prefix = "" }: { locale: HomeLocale; prefi
       <section className="section home-editorial" id="articles">
         <div className="section-head"><div><p className="eyebrow">{articleSection.kicker}</p><h2>{articleSection.title}</h2></div><p>{articleSection.intro}</p></div>
         <div className="home-article-grid">
-          {articleEntries.map(([slug,article],index)=>{
+          {articleEntries.filter(([slug])=>isArticleAvailableInLanguage(slug,language)).slice(language === "en" ? -8 : 0).map(([slug,article],index)=>{
             const translated = getArticleCopy(slug,language);
             return <a href={withLanguage(`/articles/${slug}`,language)} key={slug} className="home-article-card"><span>ARTICLE / 0{index+1}</span><h3>{translated.title}</h3><p>{translated.description}</p><b>{homepageUi[language].readArticle} ↗</b></a>;
           })}

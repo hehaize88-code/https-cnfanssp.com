@@ -1,4 +1,4 @@
-import { articles, type ArticleSlug } from "./article-data";
+import { articles, isArticleAvailableInLanguage, type ArticleSlug } from "./article-data";
 import { completeTranslations } from "./generated-translations";
 import type { SiteLanguage } from "./i18n";
 import { germanyDestinationArticleByLanguage, germanyDestinationArticleSlug } from "./seo-article-germany";
@@ -35,6 +35,7 @@ export function buyerFacingText(text: string, language: SiteLanguage): string {
 }
 
 export function getArticleCopy(slug: ArticleSlug, language: SiteLanguage) {
+  if (!isArticleAvailableInLanguage(slug, language)) return articles[slug];
   const source = slug === polandDestinationArticleSlug
     ? polandDestinationArticleByLanguage[language]
     : slug === germanyDestinationArticleSlug

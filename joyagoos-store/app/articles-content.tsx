@@ -1,6 +1,6 @@
 "use client";
 
-import { articles } from "./article-data";
+import { articles, isArticleAvailableInLanguage, type ArticleSlug } from "./article-data";
 import { Footer, Header, locales, localizedSections, type Locale } from "./site-data";
 import { withLanguage, type SiteLanguage } from "./i18n";
 import { commonUi } from "./full-translations";
@@ -14,7 +14,7 @@ export function ArticlesContent({ initialLocale = "en", prefix = "" }: { initial
   const { language, setLanguage } = useLanguage(initialLocale);
   const active = language === "en" ? undefined : language as Locale;
   const local = active ? localizedSections[active].articles : null;
-  const articleEntries = Object.entries(articles);
+  const articleEntries = Object.entries(articles).filter(([slug]) => isArticleAvailableInLanguage(slug as ArticleSlug, language));
   const breadcrumb = {"@context":"https://schema.org","@type":"BreadcrumbList",itemListElement:[
     {"@type":"ListItem",position:1,name:"Home",item:`${SITE_URL}${localizedPath("/",initialLocale)}`},
     {"@type":"ListItem",position:2,name:initialLocale === "en" ? "Articles" : localizedSections[initialLocale as Locale].articles.title,item:`${SITE_URL}${localizedPath("/articles",initialLocale)}`},

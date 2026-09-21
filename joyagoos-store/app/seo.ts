@@ -23,9 +23,9 @@ export function localizedPath(path: string, language: SiteLanguage): string {
   const cleanPath = path === "/" ? "" : `/${path.replace(/^\/+|\/+$/g, "")}`;
   return language === "en" ? cleanPath || "/" : `/${language}${cleanPath}`;
 }
-export function languageAlternates(path: string) {
+export function languageAlternates(path: string, availableLanguages: SiteLanguage[] = allLanguages) {
   return Object.fromEntries([
-    ...allLanguages.map((language) => [language, localizedPath(path, language)]),
+    ...availableLanguages.map((language) => [language, localizedPath(path, language)]),
     ["x-default", localizedPath(path, "en")],
   ]);
 }
@@ -36,18 +36,20 @@ export function buildPageMetadata({
   path,
   language = "en",
   article = false,
+  availableLanguages = allLanguages,
 }: {
   title: string;
   description: string;
   path: string;
   language?: SiteLanguage;
   article?: boolean;
+  availableLanguages?: SiteLanguage[];
 }): Metadata {
   const canonical = localizedPath(path, language);
   return {
     title,
     description,
-    alternates: { canonical, languages: languageAlternates(path) },
+    alternates: { canonical, languages: languageAlternates(path, availableLanguages) },
     openGraph: {
       type: article ? "article" : "website",
       siteName: SITE_NAME,
@@ -55,7 +57,7 @@ export function buildPageMetadata({
       description,
       url: canonical,
       locale: openGraphLocales[language],
-      alternateLocale: allLanguages.filter((item) => item !== language).map((item) => openGraphLocales[item]),
+      alternateLocale: availableLanguages.filter((item) => item !== language).map((item) => openGraphLocales[item]),
       images: [{ url: SOCIAL_IMAGE, width: 768, height: 235, alt: "JoyaGoo" }],
     },
     twitter: {

@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
-import { articlePublishedDates, articles, type ArticleSlug } from "./article-data";
+import { articlePublishedDates, articles, getRelatedLinks, isArticleAvailableInLanguage, type ArticleSlug } from "./article-data";
 import { Footer, Header, MAIN, localizedSections, type Locale } from "./site-data";
 import type { SiteLanguage } from "./i18n";
 import { commonUi } from "./full-translations";
@@ -12,23 +12,28 @@ import { germanyDestinationArticleSlug } from "./seo-article-germany";
 import { polandDestinationArticleSlug } from "./seo-article-poland";
 import { localizedPath, SITE_NAME, SITE_URL, SOCIAL_IMAGE } from "./seo";
 
-const articleUi: Record<SiteLanguage, { kicker:string; updated:string; guide:string; sources:string; end:string; browse:string }> = {
-  en:{kicker:"JOYAGOO EDITORIAL / VERIFIED GUIDE",updated:"Updated",guide:"In this guide",sources:"Primary sources",end:"Continue with a matched product route.",browse:"Browse products ↗"},
-  zh:{kicker:"JOYAGOO 编辑中心 / 核验指南",updated:"更新于",guide:"本指南内容",sources:"主要官方来源",end:"继续查看对应的商品路径。",browse:"浏览商品 ↗"},
-  de:{kicker:"JOYAGOO REDAKTION / GEPRÜFTER GUIDE",updated:"Aktualisiert",guide:"In diesem Guide",sources:"Offizielle Hauptquellen",end:"Mit einer passenden Produktroute fortfahren.",browse:"Produkte ansehen ↗"},
-  pl:{kicker:"JOYAGOO REDAKCJA / SPRAWDZONY PORADNIK",updated:"Aktualizacja",guide:"W tym poradniku",sources:"Główne źródła oficjalne",end:"Przejdź do pasującej strony produktu.",browse:"Przeglądaj produkty ↗"},
-  es:{kicker:"JOYAGOO EDITORIAL / GUÍA VERIFICADA",updated:"Actualizado",guide:"En esta guía",sources:"Fuentes oficiales principales",end:"Continúa con una ruta de producto coincidente.",browse:"Ver productos ↗"},
-  it:{kicker:"JOYAGOO EDITORIALE / GUIDA VERIFICATA",updated:"Aggiornato",guide:"In questa guida",sources:"Fonti ufficiali principali",end:"Continua con un prodotto corrispondente.",browse:"Vedi prodotti ↗"},
-  fr:{kicker:"JOYAGOO ÉDITORIAL / GUIDE VÉRIFIÉ",updated:"Mis à jour",guide:"Dans ce guide",sources:"Sources officielles principales",end:"Continuez avec une page produit correspondante.",browse:"Voir les produits ↗"},
-  pt:{kicker:"JOYAGOO EDITORIAL / GUIA VERIFICADO",updated:"Atualizado",guide:"Neste guia",sources:"Principais fontes oficiais",end:"Continue com uma rota de produto correspondente.",browse:"Ver produtos ↗"},
-  ro:{kicker:"JOYAGOO EDITORIAL / GHID VERIFICAT",updated:"Actualizat",guide:"În acest ghid",sources:"Surse oficiale principale",end:"Continuă cu o pagină de produs corespunzătoare.",browse:"Vezi produsele ↗"},
-  sv:{kicker:"JOYAGOO REDAKTION / VERIFIERAD GUIDE",updated:"Uppdaterad",guide:"I den här guiden",sources:"Viktigaste officiella källor",end:"Fortsätt med en matchande produktsida.",browse:"Visa produkter ↗"},
+const articleUi: Record<SiteLanguage, { kicker:string; updated:string; guide:string; sources:string; related:string; end:string; browse:string }> = {
+  en:{kicker:"JOYAGOO EDITORIAL / VERIFIED GUIDE",updated:"Updated",guide:"In this guide",sources:"Primary sources",related:"Related buyer guides",end:"Continue with a matched product route.",browse:"Browse products ↗"},
+  zh:{kicker:"JOYAGOO 编辑中心 / 核验指南",updated:"更新于",guide:"本指南内容",sources:"主要官方来源",related:"相关买家指南",end:"继续查看对应的商品路径。",browse:"浏览商品 ↗"},
+  de:{kicker:"JOYAGOO REDAKTION / GEPRÜFTER GUIDE",updated:"Aktualisiert",guide:"In diesem Guide",sources:"Offizielle Hauptquellen",related:"Verwandte Käufer-Guides",end:"Mit einer passenden Produktroute fortfahren.",browse:"Produkte ansehen ↗"},
+  pl:{kicker:"JOYAGOO REDAKCJA / SPRAWDZONY PORADNIK",updated:"Aktualizacja",guide:"W tym poradniku",sources:"Główne źródła oficjalne",related:"Powiązane poradniki",end:"Przejdź do pasującej strony produktu.",browse:"Przeglądaj produkty ↗"},
+  es:{kicker:"JOYAGOO EDITORIAL / GUÍA VERIFICADA",updated:"Actualizado",guide:"En esta guía",sources:"Fuentes oficiales principales",related:"Guías relacionadas",end:"Continúa con una ruta de producto coincidente.",browse:"Ver productos ↗"},
+  it:{kicker:"JOYAGOO EDITORIALE / GUIDA VERIFICATA",updated:"Aggiornato",guide:"In questa guida",sources:"Fonti ufficiali principali",related:"Guide correlate",end:"Continua con un prodotto corrispondente.",browse:"Vedi prodotti ↗"},
+  fr:{kicker:"JOYAGOO ÉDITORIAL / GUIDE VÉRIFIÉ",updated:"Mis à jour",guide:"Dans ce guide",sources:"Sources officielles principales",related:"Guides associés",end:"Continuez avec une page produit correspondante.",browse:"Voir les produits ↗"},
+  pt:{kicker:"JOYAGOO EDITORIAL / GUIA VERIFICADO",updated:"Atualizado",guide:"Neste guia",sources:"Principais fontes oficiais",related:"Guias relacionados",end:"Continue com uma rota de produto correspondente.",browse:"Ver produtos ↗"},
+  ro:{kicker:"JOYAGOO EDITORIAL / GHID VERIFICAT",updated:"Actualizat",guide:"În acest ghid",sources:"Surse oficiale principale",related:"Ghiduri conexe",end:"Continuă cu o pagină de produs corespunzătoare.",browse:"Vezi produsele ↗"},
+  sv:{kicker:"JOYAGOO REDAKTION / VERIFIERAD GUIDE",updated:"Uppdaterad",guide:"I den här guiden",sources:"Viktigaste officiella källor",related:"Relaterade köpguider",end:"Fortsätt med en matchande produktsida.",browse:"Visa produkter ↗"},
 };
 
 export function ArticleInteractive({ slug, language = "en", prefix = "" }: { slug: ArticleSlug; language?: SiteLanguage; prefix?: string }) {
   const isLocalizedDestinationArticle = slug === germanyDestinationArticleSlug || slug === polandDestinationArticleSlug;
+  const isEnglishOnly = !isArticleAvailableInLanguage(slug, "zh");
   const { language:activeLanguage, setLanguage } = useLanguage(language, !isLocalizedDestinationArticle);
   const changeLanguage = (next: SiteLanguage) => {
+    if (isEnglishOnly && next !== "en") {
+      window.location.assign(localizedPath("/articles", next));
+      return;
+    }
     if (isLocalizedDestinationArticle) {
       window.location.assign(localizedPath(`/articles/${slug}`, next));
       return;
@@ -51,6 +56,7 @@ export function ArticleInteractive({ slug, language = "en", prefix = "" }: { slu
   const description = activeCopy.description;
   const readTime = active ? `${article.read.match(/\d+/)?.[0]} ${commonUi[active].minutes}` : article.read;
   const canonical = `${SITE_URL}${localizedPath(`/articles/${slug}`, language)}`;
+  const relatedLinks = getRelatedLinks(slug);
   const schema = {
     "@context":"https://schema.org",
     "@type":"Article",
@@ -74,5 +80,5 @@ export function ArticleInteractive({ slug, language = "en", prefix = "" }: { slu
       {"@type":"ListItem",position:3,name:initialCopy.title,item:canonical},
     ],
   };
-  return <main><Header prefix={prefix} locale={active} language={activeLanguage} onLanguageChange={changeLanguage} section="articles"/><article className="article-page"><header><p className="eyebrow">{ui.kicker}</p><h1>{title}</h1><div><span>{ui.updated} {active ? activeCopy.updated : article.updated}</span><span>{readTime}</span></div><p>{description}</p></header><div className="article-body"><aside><strong>{ui.guide}</strong>{sections.map(([sectionTitle],i)=><a href={`#section-${i+1}`} key={sectionTitle}>0{i+1} {sectionTitle}</a>)}</aside><div>{sections.map(([sectionTitle,text],i)=><section id={`section-${i+1}`} key={sectionTitle}><span>0{i+1}</span><h2>{sectionTitle}</h2><p>{text}</p></section>)}</div></div>{article.sources.length > 0 && <div className="article-sources"><p className="eyebrow">{ui.sources}</p>{article.sources.map((source,index)=><div className="source-reference" key={source.href}><strong>{curatedChinese?.sources[index] || activeCopy.sources[index]?.title || source.title}</strong><span>{source.href}</span></div>)}</div>}<div className="article-end"><h2>{ui.end}</h2><a href={MAIN+"/AllProducts/"} target="_blank" rel="noreferrer">{ui.browse}</a></div><script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(schema).replace(/</g,"\\u003c")}}/><script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(breadcrumb).replace(/</g,"\\u003c")}}/></article><Footer prefix={prefix} language={activeLanguage} onLanguageChange={changeLanguage} section="articles"/></main>;
+  return <main><Header prefix={prefix} locale={active} language={activeLanguage} onLanguageChange={changeLanguage} section="articles"/><article className="article-page"><header><p className="eyebrow">{ui.kicker}</p><h1>{title}</h1><div><span>{ui.updated} {active ? activeCopy.updated : article.updated}</span><span>{readTime}</span></div><p>{description}</p></header><div className="article-body"><aside><strong>{ui.guide}</strong>{sections.map(([sectionTitle],i)=><a href={`#section-${i+1}`} key={sectionTitle}>0{i+1} {sectionTitle}</a>)}</aside><div>{sections.map(([sectionTitle,text],i)=><section id={`section-${i+1}`} key={sectionTitle}><span>0{i+1}</span><h2>{sectionTitle}</h2><p>{text}</p></section>)}</div></div><nav className="article-related" aria-label={ui.related}><p className="eyebrow">{ui.related}</p>{relatedLinks.map(link=><a href={localizedPath(link.href,activeLanguage)} key={link.href}>{link.label} ↗</a>)}</nav>{article.sources.length > 0 && <div className="article-sources"><p className="eyebrow">{ui.sources}</p>{article.sources.map((source,index)=><div className="source-reference" key={source.href}><strong>{curatedChinese?.sources[index] || activeCopy.sources[index]?.title || source.title}</strong><span>{source.href}</span></div>)}</div>}<div className="article-end"><h2>{ui.end}</h2><a href={MAIN+"/AllProducts/"} target="_blank" rel="noreferrer">{ui.browse}</a></div><script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(schema).replace(/</g,"\\u003c")}}/><script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(breadcrumb).replace(/</g,"\\u003c")}}/></article><Footer prefix={prefix} language={activeLanguage} onLanguageChange={changeLanguage} section="articles"/></main>;
 }

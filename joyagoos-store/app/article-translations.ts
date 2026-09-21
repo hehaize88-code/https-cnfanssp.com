@@ -7,7 +7,7 @@ type LocalArticle = {
   sources: readonly string[];
 };
 
-export const articleTranslations: Partial<Record<Locale, Record<ArticleSlug, LocalArticle>>> = {
+export const articleTranslations: Partial<Record<Locale, Partial<Record<ArticleSlug, LocalArticle>>>> = {
   zh: {
     "joyagoo-how-to-buy-guide": {
       description:"基于 Joyagoo 官方帮助中心整理的完整购买指南，覆盖商品链接、订单状态、仓库 QC、退货期限、仓储、打包和国际运输。",
@@ -73,7 +73,7 @@ export const articleTranslations: Partial<Record<Locale, Record<ArticleSlug, Loc
 
 export type ArticleTopic = "spreadsheet" | "guide" | "qc" | "shipping";
 
-export const articleTopics: Record<ArticleSlug, ArticleTopic> = {
+export const articleTopics: Partial<Record<ArticleSlug, ArticleTopic>> = {
   "joyagoo-how-to-buy-guide":"guide",
   "joyagoo-qc-photo-checklist":"qc",
   "joyagoo-actual-vs-volumetric-weight":"shipping",
