@@ -29,4 +29,7 @@ assets from `dist/client`.
 npm run deploy
 ```
 
+Workers Builds tracks the GitHub `main` branch with `/hacoovip-pro` as the
+root directory.
+
 The production hostname and canonical URL are `https://hacoovip.pro`.
