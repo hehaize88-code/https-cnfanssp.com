@@ -1,0 +1,11 @@
+.article-discovery {
+  width: min(1260px, calc(100% - 44px));
+  margin: 0 auto 96px;
+}
+
+.article-discovery .category-grid { margin-bottom: 24px; }
+.article-discovery .product-grid { box-shadow: 5px 5px 0 var(--line); }
+
+@media (max-width: 790px) {
+  .article-discovery { width: calc(100% - 24px); }
+}

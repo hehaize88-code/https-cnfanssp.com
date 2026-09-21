@@ -1,10 +1,18 @@
 import type { MetadataRoute } from "next";
 import { categoryKeys, languages, pageKeys, type CategoryKey, type PageKey } from "./site-data";
-import { seoArticleSlugs } from "./seo-articles";
+import { indexableSeoArticleSlugs, seoArticleSlugs } from "./seo-articles";
 const base="https://joyagoos.shop";
 export const dynamic = "force-static";
 
 const changedOn:Partial<Record<PageKey,string>>={
+  "joyagoo-spreadsheet-link-freshness-check":"2026-09-21",
+  "joyagoo-taobao-product-links-guide":"2026-09-21",
+  "joyagoo-weidian-product-links-guide":"2026-09-21",
+  "joyagoo-1688-product-links-guide":"2026-09-21",
+  "joyagoo-shoes-finds-spreadsheet-guide":"2026-09-21",
+  "joyagoo-hoodies-jackets-finds-guide":"2026-09-21",
+  "joyagoo-t-shirts-jerseys-finds-guide":"2026-09-21",
+  "joyagoo-accessories-bags-finds-guide":"2026-09-21",
   "joyagoo-listing-availability-price-domestic-freight-recheck":"2026-09-10",
   "joyagoo-color-size-quantity-variant-check":"2026-09-06",
   "joyagoo-title-thumbnail-destination-consistency-check":"2026-09-04",
@@ -20,7 +28,7 @@ const changedOn:Partial<Record<PageKey,string>>={
 function route(lang:string,page:PageKey){if(page==="home")return `/${lang}/`;if(seoArticleSlugs.includes(page))return `/${lang}/articles/${page}/`;if(categoryKeys.includes(page as CategoryKey))return `/${lang}/categories/${page}/`;return `/${lang}/${page}/`;}
 
 export default function sitemap():MetadataRoute.Sitemap{
-  const indexablePages=pageKeys.filter(page=>!seoArticleSlugs.includes(page)||page==="joyagoo-listing-availability-price-domestic-freight-recheck"||page==="joyagoo-color-size-quantity-variant-check"||page==="joyagoo-title-thumbnail-destination-consistency-check"||page==="joyagoo-spreadsheet-independent-product-index-guide"||page==="joyagoo-destination-listing-verification-guide"||page==="joyagoo-product-id-source-link-destination-url-guide");
+  const indexablePages=pageKeys.filter(page=>!seoArticleSlugs.includes(page)||indexableSeoArticleSlugs.includes(page));
   return languages.flatMap(lang=>indexablePages.map(page=>({
     url:`${base}${route(lang,page)}`,
     lastModified:new Date(changedOn[page]??"2026-08-26"),

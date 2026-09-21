@@ -58,8 +58,8 @@ for (const file of await collectHtmlFiles(outputDir)) {
 }
 
 if (archiveRoutes.length !== 25) failures.push(`expected 25 localized archive routes, found ${archiveRoutes.length}`);
-if (sitemapUrls.size !== 115) failures.push(`expected 115 sitemap URLs, found ${sitemapUrls.size}`);
-if (indexableRoutes.length !== 115) failures.push(`expected 115 indexable localized routes, found ${indexableRoutes.length}`);
+if (sitemapUrls.size !== 155) failures.push(`expected 155 sitemap URLs, found ${sitemapUrls.size}`);
+if (indexableRoutes.length !== 155) failures.push(`expected 155 indexable localized routes, found ${indexableRoutes.length}`);
 
 if (failures.length) {
   console.error(failures.join("\n"));

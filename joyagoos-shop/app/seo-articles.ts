@@ -3,9 +3,11 @@ import {identifierGuideArticle} from "./seo-article-identifiers";
 import {listingConsistencyArticle} from "./seo-article-consistency";
 import {variantCheckArticle} from "./seo-article-variants";
 import {liveFieldsArticle} from "./seo-article-live-fields";
+import {prioritySeoArticles} from "./seo-article-priorities";
 
 export type SeoArticle={slug:string;title:string;description:string;meta:string;sourceNote:string;quickFacts:string[];sections:{heading:string;paragraphs:string[]}[]};
 export const seoArticles:SeoArticle[]=[
+...prioritySeoArticles,
 liveFieldsArticle,
 variantCheckArticle,
 listingConsistencyArticle,
@@ -99,4 +101,6 @@ slug:"joyagoo-reviews-buyer-signals",title:"Joyagoo Reviews: What Buyers Praise,
 ]}
 ];
 export const seoArticleSlugs=seoArticles.map(article=>article.slug);
+export const archivedSeoArticleSlugs=["joyagoo-buying-fees-guide","joyagoo-qc-return-window-guide","volumetric-weight-guide","joyagoo-warehouse-rehearsal-shipping-guide","joyagoo-reviews-buyer-signals"];
+export const indexableSeoArticleSlugs=seoArticleSlugs.filter(slug=>!archivedSeoArticleSlugs.includes(slug));
 export function getSeoArticle(slug:string){return seoArticles.find(article=>article.slug===slug);}

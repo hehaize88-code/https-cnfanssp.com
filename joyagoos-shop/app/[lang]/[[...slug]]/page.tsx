@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { SitePage } from "../../site-page";
 import { categoryKeys, copy, languages, pageIntro, pageKeys, uiText, type CategoryKey, type Lang, type PageKey, type TrustPageKey } from "../../site-data";
-import { seoArticleSlugs } from "../../seo-articles";
+import { archivedSeoArticleSlugs, seoArticleSlugs } from "../../seo-articles";
 import { getLocalizedSeoArticle } from "../../seo-article-locales";
 import { getCategoryPage, getTrustPage } from "../../support-pages";
 
@@ -33,8 +33,7 @@ export async function generateMetadata({params}:{params:Promise<{lang:string;slu
   const intro=basePages.includes(page)&&page!=="home"?pageIntro[lang][page as keyof typeof pageIntro.en]:null;
   const label=page==="home"?uiText[lang].homeTitle:category?.title??trust?.title??article?.title??pageTitles[lang][page]??intro?.[1]??"Joyagoos";
   const description=page==="home"?copy[lang].lede as string:category?.description??trust?.description??article?.description??intro?.[2]??copy[lang].disclaimer as string;
-  const activeShopArticle=page==="joyagoo-listing-availability-price-domestic-freight-recheck"||page==="joyagoo-color-size-quantity-variant-check"||page==="joyagoo-title-thumbnail-destination-consistency-check"||page==="joyagoo-spreadsheet-independent-product-index-guide"||page==="joyagoo-destination-listing-verification-guide"||page==="joyagoo-product-id-source-link-destination-url-guide";
-  const archive=Boolean(article&&!activeShopArticle);
+  const archive=Boolean(article&&archivedSeoArticleSlugs.includes(page));
   const canonicalBase=archive?"https://joyagoos.org":siteBase;
   const map=Object.fromEntries(languages.map(code=>[code,`${canonicalBase}${route(code,page)}`]));
   const title=page==="home"||label.includes("Joyagoos")?label:`${label} | Joyagoos`;

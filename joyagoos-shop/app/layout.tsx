@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import "./atlas.css";
+import "./article-enhancements.css";
+import {AnalyticsEvents} from "./analytics";
+
+const GA_MEASUREMENT_ID="G-BWGRZFMW66";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://joyagoos.shop"),
@@ -17,5 +21,5 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="en"><body>{children}</body></html>;
+  return <html lang="en"><head><script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}/><script dangerouslySetInnerHTML={{__html:`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}window.gtag=gtag;gtag('js',new Date());gtag('config','${GA_MEASUREMENT_ID}',{send_page_view:true});`}}/></head><body>{children}<AnalyticsEvents/></body></html>;
 }

@@ -10,7 +10,8 @@
     "build": "next build && node scripts/fix-html-lang.mjs",
     "start": "wrangler pages dev out",
     "test": "npm run build && node scripts/check-indexing-policy.mjs",
-    "deploy": "npm run build && wrangler pages deploy out --project-name joyagoos-shop"
+    "deploy": "npm run build && wrangler pages deploy out --project-name joyagoos-shop",
+    "indexnow": "node scripts/submit-indexnow.mjs"
   },
   "dependencies": {
     "next": "16.2.6",
