@@ -1,7 +1,7 @@
 import type { ReactNode } from "react";
 import { FooterLanguages, LanguageMenu } from "./language-menu";
 import { commonUi } from "./full-translations";
-import { withLanguage, type SiteLanguage } from "./i18n";
+import { articleHubHref, withLanguage, type SiteLanguage } from "./i18n";
 
 export const MAIN = "https://www.cnfanssp.com";
 
@@ -210,7 +210,7 @@ export function Header({ prefix = "", locale, section, language = locale || "en"
       <a className="brand" href={withLanguage(prefix || "/", language)}><img className="brand-logo" src="/joyagoo-logo.png" alt="JoyaGoo" width="768" height="235" /></a>
       <nav aria-label="Primary navigation">{sectionOrder.slice(0, 6).map((item) => <a key={item} href={withLanguage(path(item), language)}>{language !== "en" ? localeNav[language][item] : item[0].toUpperCase() + item.slice(1)}</a>)}</nav>
       <div className="header-actions">
-        <a className="seo-cta" href={withLanguage(path("articles"), language)}>{language !== "en" ? localeNav[language].articles : "Articles"}</a>
+        <a className="seo-cta" href={articleHubHref(language)}>{language !== "en" ? localeNav[language].articles : "Articles"}</a>
         <LanguageMenu language={language} onChange={onLanguageChange} />
         <a className="header-cta" href={MAIN + "/AllProducts/"} target="_blank" rel="noreferrer">{language !== "en" ? commonUi[language].catalog : "Open catalog ↗"}</a>
       </div>
@@ -236,7 +236,7 @@ export function GuidePage({ section, prefix = "" }: { section: Section; prefix?:
     <main>
       <Header prefix={prefix} section={section} />
       <section className="inner-hero"><p className="eyebrow">{content.kicker}</p><h1>{content.title}</h1><p>{content.intro}</p>
-        <div className="inner-actions"><a href={MAIN + "/AllProducts/"} target="_blank" rel="noreferrer">Browse matched products ↗</a><a href={(prefix || "") + "/articles"}>Read latest guides</a></div>
+        <div className="inner-actions"><a href={MAIN + "/AllProducts/"} target="_blank" rel="noreferrer">Browse matched products ↗</a><a href={articleHubHref("en")}>Read latest guides</a></div>
       </section>
       <section className="inner-grid">
         {content.blocks.map((block) => <article key={block.number}><span>{block.number}</span><h2>{block.title}</h2><p>{block.text}</p>{block.bullets && <ul>{block.bullets.map((item) => <li key={item}>{item}</li>)}</ul>}</article>)}
@@ -254,7 +254,7 @@ export function LocaleHome({ locale }: { locale: Locale }) {
 
 export function LocaleGuidePage({ locale, section }: { locale: Locale; section: Section }) {
   const content = localizedSections[locale][section]; const prefix = `/${locale}`;
-  return <main><Header prefix={prefix} locale={locale} section={section} /><section className="inner-hero"><p className="eyebrow">{content.kicker}</p><h1>{content.title}</h1><p>{content.intro}</p><div className="inner-actions"><a href={MAIN + "/AllProducts/"} target="_blank" rel="noreferrer">{locales[locale].find} ↗</a><a href={prefix + "/articles"}>{localeNav[locale].articles}</a></div></section><section className="inner-grid">{content.blocks.map((title,index) => <article key={title}><span>0{index+1}</span><h2>{title}</h2><p>{content.intro}</p></article>)}</section><Footer prefix={prefix} section={section} /></main>;
+  return <main><Header prefix={prefix} locale={locale} section={section} /><section className="inner-hero"><p className="eyebrow">{content.kicker}</p><h1>{content.title}</h1><p>{content.intro}</p><div className="inner-actions"><a href={MAIN + "/AllProducts/"} target="_blank" rel="noreferrer">{locales[locale].find} ↗</a><a href={articleHubHref(locale)}>{localeNav[locale].articles}</a></div></section><section className="inner-grid">{content.blocks.map((title,index) => <article key={title}><span>0{index+1}</span><h2>{title}</h2><p>{content.intro}</p></article>)}</section><Footer prefix={prefix} section={section} /></main>;
 }
 
 export function StructuredData({ children }: { children: ReactNode }) { return <>{children}</>; }
