@@ -1,4 +1,4 @@
-import { cp, mkdir, rm, writeFile } from "node:fs/promises";
+import { copyFile, cp, mkdir, rm, writeFile } from "node:fs/promises";
 import { dirname, join } from "node:path";
 
 const root = process.cwd();
@@ -53,6 +53,18 @@ for (const pageUrl of pageUrls) {
   await writeFile(outputFile, html);
 }
 
+const articleHubPaths = pageUrls
+  .map((pageUrl) => new URL(pageUrl).pathname)
+  .filter((pathname) => pathname === "/articles" || pathname.endsWith("/articles"));
+
+for (const pathname of articleHubPaths) {
+  const sourceFile = join(outputDir, `${pathname.slice(1)}.html`);
+  const aliasPath = pathname.replace(/\/articles$/, "/articles-2026");
+  const aliasFile = join(outputDir, `${aliasPath.slice(1)}.html`);
+  await mkdir(dirname(aliasFile), { recursive: true });
+  await copyFile(sourceFile, aliasFile);
+}
+
 const robotsResponse = await fetchPath("/robots.txt");
 if (!robotsResponse.ok) throw new Error("Could not render robots.txt");
 await writeFile(join(outputDir, "robots.txt"), await robotsResponse.text());
@@ -71,7 +83,11 @@ const redirects = pageUrls
   .filter((pathname) => pathname !== "/")
   .map((pathname) => `${pathname}/ ${pathname} 301`)
   .join("\n");
-await writeFile(join(outputDir, "_redirects"), `https://www.joyagoos.store/* https://joyagoos.store/:splat 301\n${redirects}\n`);
-await writeFile(join(outputDir, "_headers"), `/articles\n  Cache-Control: no-cache, max-age=0, must-revalidate\n\n/articles/*\n  Cache-Control: no-cache, max-age=0, must-revalidate\n\n/assets/*\n  Cache-Control: public, max-age=31536000, immutable\n\n/joyagoo-logo.png\n  Cache-Control: public, max-age=604800\n`);
+const articleAliasRedirects = articleHubPaths
+  .map((pathname) => pathname.replace(/\/articles$/, "/articles-2026"))
+  .map((pathname) => `${pathname}/ ${pathname} 301`)
+  .join("\n");
+await writeFile(join(outputDir, "_redirects"), `https://www.joyagoos.store/* https://joyagoos.store/:splat 301\n${redirects}\n${articleAliasRedirects}\n`);
+await writeFile(join(outputDir, "_headers"), `/articles\n  Cache-Control: no-cache, max-age=0, must-revalidate\n\n/articles/*\n  Cache-Control: no-cache, max-age=0, must-revalidate\n\n/articles-2026\n  Cache-Control: no-cache, max-age=0, must-revalidate\n\n/*/articles-2026\n  Cache-Control: no-cache, max-age=0, must-revalidate\n\n/assets/*\n  Cache-Control: public, max-age=31536000, immutable\n\n/joyagoo-logo.png\n  Cache-Control: public, max-age=604800\n`);
 
 console.log(`Exported ${pageUrls.length} indexable pages to dist/pages.`);
