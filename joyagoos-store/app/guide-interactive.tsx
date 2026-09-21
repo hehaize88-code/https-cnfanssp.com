@@ -1,7 +1,7 @@
 "use client";
 
 import { Footer, Header, MAIN, locales, localizedSections, pageContent, type Locale, type Section } from "./site-data";
-import { withLanguage, type SiteLanguage } from "./i18n";
+import { articleHubHref, type SiteLanguage } from "./i18n";
 import { useLanguage } from "./use-language";
 import { completeTranslations } from "./generated-translations";
 import { localizedPath, SITE_URL } from "./seo";
@@ -85,7 +85,7 @@ export function GuideInteractive({ section, initialLocale = "en", prefix = "" }:
   return <main>
     <Header prefix={prefix} locale={activeLocale} language={language} onLanguageChange={setLanguage} section={section} />
     <section className="inner-hero"><p className="eyebrow">{translated?.kicker || source.kicker}</p><h1>{translated?.title || source.title}</h1><p>{translated?.intro || source.intro}</p>
-      <div className="inner-actions"><a href={MAIN + "/AllProducts/"} target="_blank" rel="noreferrer">{activeLocale ? locales[activeLocale].find : "Browse matched products"} ↗</a><a href={withLanguage((prefix || "") + "/articles", language)}>{ui.latest}</a></div>
+      <div className="inner-actions"><a href={MAIN + "/AllProducts/"} target="_blank" rel="noreferrer">{activeLocale ? locales[activeLocale].find : "Browse matched products"} ↗</a><a href={articleHubHref(language)}>{ui.latest}</a></div>
     </section>
     <section className="inner-grid">{blocks.map((block) => <article key={block.number}><span>{block.number}</span><h2>{block.title}</h2><p>{block.text}</p>{block.bullets && <ul>{block.bullets.map((item) => <li key={item}>{item}</li>)}</ul>}</article>)}</section>
     <section className="verification-panel" data-last-reviewed="2026-08-29"><div className="verification-heading"><p className="eyebrow">{verification.kicker}</p><h2>{verification.title}</h2></div><div className="verification-grid"><article><strong>{verification.reviewed}</strong><p>2026-08-29</p></article><article><strong>{verification.coverage}</strong><p>{blocks.length} {verification.count}</p></article><article><strong>{verification.fields}</strong><p>{blocks.map((block)=>block.title).join(" · ")}</p></article><article><strong>{verification.rule}</strong><p>{verification.maintenance}</p></article></div></section>
