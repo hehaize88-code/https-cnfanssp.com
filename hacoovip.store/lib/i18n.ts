@@ -1,11 +1,22 @@
 import translations from "./translations.generated.json";
-import priorityTranslations from "./priority-translations.generated.json";
+import priorityDe from "./priority-translations.de.generated.json";
+import priorityEs from "./priority-translations.es.generated.json";
+import priorityFr from "./priority-translations.fr.generated.json";
+import priorityIt from "./priority-translations.it.generated.json";
 import { copy, type Locale } from "./site-data";
 
 type TranslationTable = Record<Locale, Record<string, string>>;
 
 const table = translations as TranslationTable;
-const priorityTable = priorityTranslations as TranslationTable;
+// Keep the large priority translation table split by locale. This avoids a
+// corrupted monolithic JSON blob while preserving the localized article copy.
+const priorityTable: TranslationTable = {
+  en: {},
+  de: priorityDe,
+  es: priorityEs,
+  fr: priorityFr,
+  it: priorityIt,
+};
 
 const overrides: Partial<Record<Locale, Record<string, string>>> = {
   de: {
