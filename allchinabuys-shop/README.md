@@ -111,3 +111,41 @@ The timeout defaults can be overridden for a controlled canary with `SITES_INSTA
 
 - [vinext Documentation](https://github.com/cloudflare/vinext)
 - [Drizzle D1 Guide](https://orm.drizzle.team/docs/get-started/d1-new)
+
+## Multilingual static publication — October 2026
+
+The production target remains Cloudflare Pages, rooted at `allchinabuys-shop`,
+with build command `npm run build` and output `dist/client`. Python 3 is required
+in addition to the existing Node toolchain; the exporter uses only the standard library.
+
+English retains its existing root URLs. German, French, Spanish, Polish and
+Japanese have complete static copies under `/de/`, `/fr/`, `/es/`, `/pl/` and `/ja/`.
+There are 22 routes per language: the homepage, six topic pages, the article
+index and 14 articles. All 132 URLs receive self canonicals, reciprocal hreflang
+and sitemap entries. Language links keep the current page.
+
+`content/october-articles.json` holds the four new English articles. Existing
+articles retain their source content and gain dated context and practical tables.
+`content/locales/*.json` contains offline translation dictionaries and editorial
+overrides. No translation API runs during builds or page visits.
+
+After Vinext prerenders English, `scripts/localize-site.py` produces each locale,
+translates metadata and structured data, and fails if a string is missing.
+If source copy changes, use `python3 scripts/localize-site.py --extract` after
+prerendering, then supply every new key in all five dictionaries or overrides.
+Do not publish an English fallback inside a locale.
+
+The static export removes React hydration so the English route cannot replace
+translated content. `public/site.js` supplies the actual interactive behavior:
+normal locale links, outbound click tracking and product search tracking.
+Native HTML details elements handle the FAQ. Search and commercial links retain
+the existing `www.cnfanssp.com` destination. GA4 ID remains `G-1DRVB6BDCK`.
+
+Verification: `npm run build` checks all localized page bodies, metadata,
+language links, internal routes, article count, sitemap and commercial targets.
+Run `node --test tests/rendered-html.test.mjs` for the existing export checks.
+Browser QA should also cover mobile overflow, same-article language switching,
+search submission and GA4 event payloads.
+
+This release uses public site and competitor research. No GSC, Bing or GA4
+performance-report values or keyword volumes were available for the analysis.

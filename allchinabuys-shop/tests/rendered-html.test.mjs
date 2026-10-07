@@ -24,13 +24,13 @@ test("exports independent pages and SEO discovery files", async () => {
   assert.match(sitemap, /https:\/\/allchinabuys\.shop\/articles\/allchinabuy-tracking-order-parcel-status\//);
 });
 
-test("exports ten distinct article pages and a noindex 404", async () => {
+test("exports fourteen distinct article pages and a noindex 404", async () => {
   const index = await readFile(new URL("../dist/client/articles/index.html", import.meta.url), "utf8");
   const tracking = await readFile(new URL("../dist/client/articles/allchinabuy-tracking-order-parcel-status/index.html", import.meta.url), "utf8");
   const fees = await readFile(new URL("../dist/client/articles/allchinabuy-fees-payment-methods/index.html", import.meta.url), "utf8");
   const notFound = await readFile(new URL("../dist/client/404.html", import.meta.url), "utf8");
 
-  assert.equal((index.match(/class="articles-index-card"/g) || []).length, 10);
+  assert.equal((index.match(/class="articles-index-card"/g) || []).length, 14);
   assert.match(tracking, /AllChinaBuy Tracking: How to Read Order and Parcel Status/);
   assert.match(tracking, /BreadcrumbList/);
   assert.match(fees, /AllChinaBuy Fees and Payment Methods/);

@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 import SiteFooter from "./components/SiteFooter";
 import SiteHeader from "./components/SiteHeader";
+import {categories, products} from "./catalog";
+import octoberArticles from "../content/october-articles.json";
 
 export const metadata: Metadata = {
-  title: "AllChinaBuy Spreadsheet 2026 | ACBuy Finds & QC Photos",
-  description: "Browse an updated AllChinaBuy spreadsheet and 10 practical guides for ACBuy finds, QC photos, order status, shipping costs and parcel tracking.",
+  title: "AllChinaBuy Spreadsheet 2026 | Shoes, Hoodies & Jerseys",
+  description: "Browse an updated AllChinaBuy spreadsheet and 14 practical guides for ACBuy finds, QC photos, order status, shipping costs and parcel tracking.",
   alternates: { canonical: "https://allchinabuys.shop/" },
   robots: { index: true, follow: true },
   openGraph: {
@@ -19,26 +21,10 @@ export const metadata: Metadata = {
 
 const MAIN = "https://www.cnfanssp.com";
 
-const categories = [
-  ["SH", "Shoes", "Sneakers, runners and everyday pairs", "/shoes/"],
-  ["HD", "Hoodies", "Pullovers, zip-ups and matching sets", "/hoodies-sweaters/"],
-  ["TS", "T-Shirts", "Graphic, basic and seasonal tees", "/t-shirts/"],
-  ["JK", "Jackets", "Outerwear, puffers and windbreakers", "/jackets/"],
-  ["JR", "Jerseys", "Football and basketball selections", "/jersey/"],
-  ["AC", "Accessories", "Bags, hats, belts and small finds", "/accessories/"],
-];
 
-const products = [
-  { name: "Nike Dunk Low × Off-White", type: "Shoes", note: "Statement sneaker find", href: "/AllProducts/2597.html", image: "/products/nike-dunk.webp" },
-  { name: "Autry Shoes", type: "Shoes", note: "Low-profile everyday pair", href: "/AllProducts/4276.html", image: "/products/autry-shoes.gif" },
-  { name: "6PM Hoodie Set", type: "Hoodies", note: "Coordinated two-piece set", href: "/AllProducts/24.html", image: "/products/6pm-hoodie.jpg" },
-  { name: "Godspeed Hoodie", type: "Hoodies", note: "Graphic pullover selection", href: "/AllProducts/717.html", image: "/products/godspeed-hoodie.webp" },
-  { name: "Celine Hoodie", type: "Hoodies", note: "Minimal wardrobe layer", href: "/AllProducts/2822.html", image: "/products/celine-hoodie.webp" },
-  { name: "Jersey 46", type: "Jerseys", note: "Match-day category pick", href: "/AllProducts/6653.html", image: "/products/jersey-46.jpg" },
-];
 
 const guides = [
-  ["01", "Paste a product link", "AllChinaBuy supports product links or keywords from Taobao, Tmall, 1688 and JD."],
+  ["01", "Paste a product link", "Previously documented AllChinaBuy purchasing used marketplace links. Check the current service status before ordering."],
   ["02", "Review warehouse QC", "Check the inspection photos after the seller's parcel reaches the warehouse."],
   ["03", "Estimate delivery", "Use the shipping calculator before submitting a parcel and compare available routes."],
 ];
@@ -55,7 +41,7 @@ export default function Home() {
 
       <section className="hero" id="top">
         <div className="hero-copy">
-          <p className="eyebrow"><span>Reviewed Sep 2026</span> Independent ACBuy product index</p>
+          <p className="eyebrow"><span>Reviewed 7 Oct 2026</span> Independent product index</p>
           <h1>AllChinaBuy Spreadsheet<br/><em>Updated for 2026.</em></h1>
           <p className="hero-lede">Browse cleaner AllChinaBuy and ACBuy finds, then use practical guides for listing checks, QC photos, order status, shipping costs and parcel tracking.</p>
           <form className="search" action={`${MAIN}/search.html`} method="get" target="_blank">
@@ -101,14 +87,14 @@ export default function Home() {
       </section>
 
       <section className="section guide-section" id="guide">
-        <div className="guide-intro"><p className="section-kicker">03 / How it works</p><h2>From a product link<br/>to your doorstep.</h2><p>The official workflow separates the item purchase from international delivery: order first, review warehouse information, then submit a parcel.</p><a className="button-dark" href="/guide/">Read the full beginner guide <span>→</span></a></div>
+        <div className="guide-intro"><p className="section-kicker">03 / How it works</p><h2>From a product link<br/>to your doorstep.</h2><p>The previously documented workflow separates item purchase from international delivery. Review the current maintenance notice before using older account instructions.</p><a className="button-dark" href="/guide/">Read the full beginner guide <span>→</span></a></div>
         <div className="guide-steps">{guides.map(([n, title, desc]) => <article key={n}><span>{n}</span><div><h3>{title}</h3><p>{desc}</p></div></article>)}</div>
       </section>
 
       <section className="section editorial-section">
         <div className="editorial-image"><img src="/og.png" alt="AllChinaBuy Spreadsheet editorial collage with parcel boxes, a hoodie, a sneaker, QC photos and a product grid" /></div>
         <div className="editorial-copy"><p className="section-kicker">Research desk</p><h2>Useful answers<br/>beyond the links.</h2><p>Product discovery is only the first step. These guides explain what to verify before ordering, what warehouse photos can show and why a shipping quote must be checked for the parcel you actually create.</p>
-          <div className="article-links"><a href="/articles/allchinabuy-tracking-order-parcel-status/"><span>TRACKING</span><b>AllChinaBuy Tracking: Order & Parcel Status</b><i>10 min →</i></a><a href="/articles/warehouse-qc-photo-checklist/"><span>QC PHOTOS</span><b>AllChinaBuy Warehouse QC Checklist</b><i>11 min →</i></a><a href="/articles/plan-allchinabuy-shipping/"><span>SHIPPING COST</span><b>Shipping Calculator and Parcel Cost Guide</b><i>12 min →</i></a></div>
+          <div className="article-links">{Object.entries(octoberArticles).map(([slug, a])=><a href={`/articles/${slug}/`} key={slug}><span>{a.label}</span><b>{a.title}</b><i>Read guide</i></a>)}<a href="/articles/"><span>ALL GUIDES</span><b>Browse all 14 articles</b><i>Open article index</i></a></div>
         </div>
       </section>
 
@@ -118,12 +104,12 @@ export default function Home() {
       </section>
 
       <section className="section faq-section" id="faq">
-        <div><p className="section-kicker">04 / Quick answers</p><h2>Before you start.</h2><p>Clear answers based on the current shopping-agent workflow, without guaranteed delivery times or invented QC claims.</p></div>
+        <div><p className="section-kicker">04 / Quick answers</p><h2>Before you start.</h2><p>Clear answers based on previously published AllChinaBuy guidance, with changing prices, policies and third-party seller risks kept in view.</p></div>
         <div className="faq-list">
           <details open><summary>Is this the official AllChinaBuy website?<span>+</span></summary><p>No. This is an independent product-discovery and educational resource. Purchases and account services happen on the destination platform.</p></details>
           <details><summary>Does a spreadsheet product come QC-approved?<span>+</span></summary><p>No. A link is only a starting point. Review the current listing and inspect the warehouse photos for your own item before international shipment.</p></details>
           <details><summary>Are prices and shipping costs fixed?<span>+</span></summary><p>No. Product availability, domestic delivery and international routes can change. Check the current listing and shipping calculator.</p></details>
-          <details><summary>How long can items stay in the warehouse?<span>+</span></summary><p>The official site currently advertises 90-day free storage. Confirm the current policy in your account before relying on it.</p></details>
+          <details><summary>How long can items stay in the warehouse?<span>+</span></summary><p>Older official guidance advertised 90-day free storage. During maintenance, confirm order-specific dates and conditions with the platform; an extension is not established.</p></details>
         </div>
       </section>
 
