@@ -30,7 +30,7 @@ export default function LongArticle({ article, related }: { article: ArticleReco
     <main className="long-article">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <div className="notice"><span>Independent product discovery guide</span><i /><span>Facts checked against current official pages</span></div>
+      <div className="notice"><span>Independent product discovery guide</span><i /><span>Based on published ACBuy guidance</span></div>
       <header>
         <a className="brand" href="/"><span className="brand-logo"><img src="/acbuy-logo.png" alt="ACBuy" width="785" height="262" /></span></a>
         <nav><a href="/#finds">Finds</a><a href="/guide/">Guide</a><a href="/qc-guide/">QC</a><a href="/shipping/">Shipping</a><a href="/faq/">FAQ</a><a href="/articles/">Research &amp; Guides</a></nav>
@@ -60,7 +60,7 @@ export default function LongArticle({ article, related }: { article: ArticleReco
                 {section.callout && <div className="article-callout"><b>{section.callout.title}</b><p>{section.callout.text}</p></div>}
               </section>
             ))}
-            <div className="source-box"><b>Sources and verification</b><p>Platform-specific statements were checked on ACBuy’s official homepage, shopping flow and product-order interface on {article.updatedLabel}. Policies, routes, prices and availability can change, so live account information takes priority.</p></div>
+            <div className="source-box"><b>Sources and verification</b><p>Source context: <a href="https://www.acbuy.com/shopping-guide" target="_blank" rel="noopener">ACBuy official Shopping Guide</a>, homepage and shipping estimator. See the research note for the scope of this article. Editorial update: {article.updatedLabel}. Confirm changing service terms in the live account.</p></div>
           </div>
         </div>
       </article>

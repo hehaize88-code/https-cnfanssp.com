@@ -69,18 +69,18 @@ export default function CatalogHome() {
         </div>
         <div className="hero-image">
           <img src="/catalog-visual.png" alt="Unbranded sneakers, hoodie, tote and jersey arranged for a product catalog" width="1199" height="750" />
-          <span className="checked"><i /> Editorial update September 9, 2026</span>
-          <span className="qc-count"><b>6</b> QC views</span>
+          <span className="checked"><i /> Editorial update October 7, 2026</span>
+          <span className="qc-count">Product research</span>
         </div>
       </section>
 
       <section className="guide home-research" id="research">
-        <div className="section-title"><div><span className="eyebrow">Most useful next reads</span><h2>Research the cost before the checkout.</h2></div><p>Use focused guides for the questions that can change the real parcel decision: fees, legitimacy, storage, shipping weight and after-sales.</p></div>
+        <div className="section-title"><div><span className="eyebrow">Most useful next reads</span><h2>Plan your next order with practical guides.</h2></div><p>Follow the next step: understand an order status, prepare packing, compare shipping or investigate a tracking update.</p></div>
         <div className="steps research-links">
-          <article><span>01</span><h3>ACBuy Spreadsheet 2026</h3><p>Build a verified product trail from find to warehouse.</p><a href="/articles/acbuy-spreadsheet-guide/">Read the guide ↗</a></article>
-          <article><span>02</span><h3>Is ACBuy legit?</h3><p>Evaluate the agent model with evidence and realistic limits.</p><a href="/articles/is-acbuy-legit-review/">Read the review ↗</a></article>
-          <article><span>03</span><h3>ACBuy fees</h3><p>Separate product, payment, service and shipping costs.</p><a href="/articles/acbuy-fees-explained/">See every cost ↗</a></article>
-          <article><span>04</span><h3>Volumetric weight</h3><p>Understand why parcel size can matter more than scale weight.</p><a href="/articles/acbuy-actual-vs-volumetric-weight/">Plan the parcel ↗</a></article>
+          <article><span>01</span><h3>ACBuy rehearsal packing</h3><p>Prepare packing instructions and compare dimensions with shipping quotes.</p><a href="/articles/acbuy-rehearsal-packing-guide/">Read the guide ↗</a></article>
+          <article><span>02</span><h3>ACBuy order status</h3><p>Understand Purchased, Seller Sent and Stored before taking the next step.</p><a href="/articles/acbuy-order-status-guide/">Read the guide ↗</a></article>
+          <article><span>03</span><h3>ACBuy parcel tracking</h3><p>Check the right reference, carrier handoffs and missing updates.</p><a href="/articles/acbuy-parcel-tracking-guide/">Read the guide ↗</a></article>
+          <article><span>04</span><h3>ACBuy shipping cost</h3><p>Separate item costs, chargeable weight and parcel charges.</p><a href="/articles/acbuy-shipping-cost-guide/">Plan the parcel ↗</a></article>
         </div>
       </section>
 

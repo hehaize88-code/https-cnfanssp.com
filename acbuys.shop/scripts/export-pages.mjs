@@ -10,6 +10,9 @@ const serverEntry = path.resolve("dist/server/index.js");
 const routes = [
   "/",
   "/articles/",
+  "/articles/acbuy-rehearsal-packing-guide/",
+  "/articles/acbuy-order-status-guide/",
+  "/articles/acbuy-parcel-tracking-guide/",
   "/articles/acbuy-information-verification/",
   "/articles/acbuy-qc-photos-guide/",
   "/articles/acbuy-shipping-cost-guide/",
