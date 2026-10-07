@@ -33,4 +33,6 @@ for required_file in index.html 404.html robots.txt sitemap.xml; do
   fi
 done
 
-echo "Verified Cloudflare Pages output in ${output_dir}."
+python3 "${SITES_PROJECT_ROOT}/scripts/localize-site.py"
+node --test "${SITES_PROJECT_ROOT}/tests/localized-static.test.mjs"
+echo "Verified complete multilingual Cloudflare Pages output in ${output_dir}."

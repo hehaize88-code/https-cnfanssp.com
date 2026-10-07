@@ -1,0 +1,342 @@
+{
+  "allchinabuy-website-maintenance-order-checks": {
+    "title": "AllChinaBuy Website Maintenance: Status and Order Checks",
+    "seoTitle": "AllChinaBuy Website Maintenance: Status and Order Checks",
+    "dek": "What the official maintenance notice confirms, what remains unknown, and how to organize existing order, warehouse and parcel records.",
+    "date": "October 7, 2026",
+    "dateISO": "2026-10-07",
+    "read": "6 min read",
+    "label": "Platform status",
+    "keywords": [
+      "allchinabuy not working",
+      "allchinabuy maintenance",
+      "allchinabuy website status"
+    ],
+    "verified": [
+      "Independent editorial guide",
+      "Sources and limitations dated October 7, 2026",
+      "Confirm the current product and account information"
+    ],
+    "sections": [
+      {
+        "heading": "The official notice observed on 7 October 2026",
+        "paragraphs": [
+          "On 7 October 2026, the AllChinaBuy public homepage displayed a website maintenance notice. The notice attributed the interruption to an ongoing hacker attack and an upgrade and maintenance process intended to protect data. It directed users with order questions to its customer service team. These are statements made by the platform; this independent directory has not audited its systems or independently established the cause of the interruption.",
+          "The announcement did not provide a confirmed restoration date in the text reviewed. It also did not establish the outcome of any individual order, warehouse item, account balance or parcel. A maintenance page is evidence about the public website at the time of observation. It is not proof that every shipment has stopped, that a parcel is lost, or that a refund will be approved. Keep those conclusions separate."
+        ]
+      },
+      {
+        "heading": "Distinguish website access from order progress",
+        "paragraphs": [
+          "If a page does not load, record the address, date, time and exact message. A public homepage, account page and carrier tracking page can have different availability. One unavailable page cannot tell you the state of an item purchased earlier. Avoid repeatedly submitting the same order or payment simply because the first confirmation screen failed to appear. Preserve the transaction reference and check the existing record when access is available.",
+          "A useful first note has four fields: the page you tried, the visible response, the last confirmed order event and the identifier belonging to that event. For example, a carrier acceptance scan and an unavailable account screen describe different systems. They may both be accurate. That distinction makes the next support request much clearer than a general statement that the entire process is broken."
+        ]
+      },
+      {
+        "heading": "Sort existing purchases by their last confirmed stage",
+        "paragraphs": [
+          "Separate purchases that were paid but not dispatched, seller parcels travelling to the warehouse, items already recorded in storage, and international parcels already handed to a carrier. Each group needs different evidence. An order awaiting seller dispatch requires the order number and payment details. A warehouse item requires the item reference, intake date and any QC photographs. A shipped parcel requires its parcel and carrier tracking numbers.",
+          "Do not move an item into a later stage merely because a standard tutorial says that stage normally follows. Work from the last confirmed event available to you. When records are incomplete, mark the status as unconfirmed and identify the missing information. This prevents an old screenshot, a seller message or a copied tracking number from becoming stronger evidence than it really is."
+        ]
+      },
+      {
+        "heading": "Preserve a compact order evidence file",
+        "paragraphs": [
+          "Save the product selection, order number, chosen size and colour, quantity, payment receipt, support correspondence and any warehouse images already available. Give screenshots descriptive filenames containing the date and order reference. Keep the original image or document alongside a written summary so that important wording is not lost through copying. Store personal and payment information privately; a public product directory is not the right place for it.",
+          "For several orders, create one row per order and a separate row per international parcel. Record which items were assigned to each parcel. Consolidation means that multiple purchases may share one shipment, while a single purchase might contain multiple pieces. This small mapping helps you explain exactly what is missing without sending an unrelated collection of screenshots or exposing another customer's information."
+        ]
+      },
+      {
+        "heading": "Check dispatched parcels with the correct identifier",
+        "paragraphs": [
+          "If an international parcel has already received a carrier number, consult the carrier information associated with that parcel when available. Read the event timestamp and location as well as its translated label. A label-created event is not the same as carrier acceptance, and a destination-arrival event is not necessarily a delivery attempt. Preserve the original event wording when contacting support.",
+          "A temporary lack of new scans does not, on its own, establish loss or seizure. Equally, an explicit address problem, return event or delivery exception deserves attention. Compare the latest information with the route estimate and terms saved when the parcel was submitted. If those terms are unavailable, explain that limitation instead of borrowing a deadline from a stranger's shipment on a different route."
+        ]
+      },
+      {
+        "heading": "Prepare a specific support request",
+        "paragraphs": [
+          "The official maintenance notice directs order-related questions to customer service. Prepare a short message describing one problem, its order or parcel identifier, the last confirmed event and the clarification you need. Ask for the current stage and any action required from you. Attach only the evidence relevant to that request. You do not need to disclose a password, full card details or unrelated account information to explain an order issue.",
+          "Keep the request date and any case reference with the same evidence file. A reply that acknowledges the message is different from a reply that confirms a refund, dispatch or warehouse action. Record the substance of the response rather than interpreting every reply as resolution. If a response asks for information you already supplied, refer to the original evidence clearly and avoid sending contradictory versions."
+        ]
+      },
+      {
+        "heading": "Treat refund and storage claims as unconfirmed until checked",
+        "paragraphs": [
+          "Older guides describe warehouse storage, returns and refund workflows. Their existence does not confirm which functions are currently available during maintenance. A historical free-storage period cannot establish whether a particular item receives an extension. A general returns guide cannot establish eligibility for an item purchased from a particular seller. Those points require the current order record or an order-specific response from the responsible service.",
+          "When requesting clarification, separate cancellation, a seller return, a refund to an account balance and a payment withdrawal. They are different actions with different records. Ask which action has actually been completed and preserve its reference. Avoid assuming that a status such as processing means money has reached the original payment method. This guide cannot promise a deadline or a recovery outcome for any individual transaction."
+        ]
+      },
+      {
+        "heading": "Use older tutorials with their dates visible",
+        "paragraphs": [
+          "A search engine can continue to show an older shopping page or shipping calculator after the public homepage changes. The title and snippet may describe features from an earlier crawl. Check the live page and the date of the information before treating a search result as evidence that the feature currently works. A recent date in an article title is not a substitute for a documented check.",
+          "On this site, operational guides should be read as explanations of the previously documented purchasing process unless a current observation is explicitly stated. Product discovery and measurements can still help you organize research, but neither proves that the official account service is operating normally. Our product links lead to a separate product destination and do not create, retrieve or resolve an AllChinaBuy order."
+        ]
+      },
+      {
+        "heading": "Review the situation without inventing a recovery date",
+        "paragraphs": [
+          "Keep a dated record of meaningful changes: a new official notice, restored account access, an order-specific reply or a fresh carrier event. Repeatedly refreshing an unchanged page adds little evidence. When access returns, verify the actual order, warehouse and parcel records before taking further action. Check whether an earlier request is still pending so that you do not create duplicate instructions or payments.",
+          "This article records the notice observed on 7 October 2026. It is not a live uptime monitor and does not claim permanent closure or confirmed recovery. Source: the official AllChinaBuy public homepage observed on that date. The recordkeeping and inspection steps are independent editorial guidance. If the notice changes, the observation date and relevant explanations should change together rather than leaving an old status presented as current.",
+          "Before publishing a status update, compare the new notice with the previous dated observation. Quote only the point that changed and retain the distinction between a platform announcement and an independently verified result. A new page design alone does not confirm that stored items, balances or refund requests have been reconciled."
+        ]
+      }
+    ]
+  },
+  "allchinabuy-shoes-spreadsheet-sizing-qc": {
+    "title": "AllChinaBuy Shoes Spreadsheet: Finds, Sizing and QC",
+    "seoTitle": "AllChinaBuy Shoes Spreadsheet: Finds, Sizing and QC",
+    "dek": "Compare shoe listings with a size record, matching product photos and a practical inspection checklist before choosing a pair.",
+    "date": "October 7, 2026",
+    "dateISO": "2026-10-07",
+    "read": "6 min read",
+    "label": "Shoe finds",
+    "keywords": [
+      "allchinabuy shoes spreadsheet",
+      "allchinabuy sneakers",
+      "allchinabuy shoe finds"
+    ],
+    "verified": [
+      "Independent editorial guide",
+      "Sources and limitations dated October 7, 2026",
+      "Confirm the current product and account information"
+    ],
+    "sections": [
+      {
+        "heading": "Start a shoe shortlist with measurable requirements",
+        "paragraphs": [
+          "An AllChinaBuy shoes spreadsheet is most useful when it reduces a broad product search to a few pairs you can compare. Start with intended use, the size system you understand, the colours you would wear and your total budget. A familiar product name is only a starting point. The actual seller page must show which model, colour and size are included in the selected option.",
+          "This guide uses product discovery and inspection principles, not personal wear tests. The shoe cards on this site are links to destination listings, and their images are product illustrations rather than QC evidence for your order. AllChinaBuy's official homepage showed a maintenance notice on 7 October 2026. Do not interpret a working product card or this sizing guide as confirmation that an official account or purchasing function is currently available."
+        ]
+      },
+      {
+        "heading": "Keep one record for each exact listing",
+        "paragraphs": [
+          "Record the product name, destination link, selected colour, listed size system, price shown for that option and the date you checked it. If two listings use the same photograph, keep them as separate records until their seller and option information match. A shared image does not establish identical construction, materials, sizing or after-sales terms. Compare what the page actually states rather than what the title suggests.",
+          "The current selection includes Nike Dunk Low × Off-White and Autry-labelled shoe listings. These names identify the existing destination cards; this directory does not certify authenticity or claim that it has tested those pairs. Open each destination page and confirm the product, images and available options before using it in a shortlist. If a page changes to another item, the previous card is no longer sufficient evidence."
+        ]
+      },
+      {
+        "heading": "Compare the seller's size system with your own reference",
+        "paragraphs": [
+          "Use the size chart attached to the exact listing. EU, UK, US and centimetre labels do not automatically have the same relationship across every seller or product. Check whether a centimetre figure refers to foot length, insole length or another measurement. Those measurements are not interchangeable, and choosing a size from an unexplained number can produce an avoidable mismatch.",
+          "Measure both feet using a consistent method and note the larger result, but follow the seller's stated sizing method when comparing it with the chart. A pair that already fits provides another useful reference if you know its labelled size and fit characteristics. Do not publish one universal conversion table as a guarantee for unrelated shoes. When the seller's chart is missing or contradictory, record the uncertainty before ordering."
+        ]
+      },
+      {
+        "heading": "Treat width, shape and intended use separately",
+        "paragraphs": [
+          "Length is only one part of fit. Toe shape, width, instep space and the way the heel sits can change how two shoes in the same labelled size feel. A photograph may reveal a broad shape, but it cannot show pressure, comfort or how the shoe moves on your foot. Keep observations and assumptions in separate columns so that a visual impression does not become a claim about wearability.",
+          "For everyday use, decide which features matter to you and whether the listing provides evidence for them. Avoid treating a running-style appearance as proof of suitability for a particular sport or training load. Material descriptions and cushioning claims should remain attributed to the seller unless independently tested. If a feature is essential and cannot be established from the available information, a different listing may be a better research choice."
+        ]
+      },
+      {
+        "heading": "Compare the complete option price",
+        "paragraphs": [
+          "A product grid can display the lowest price among several options. That amount may refer to a different size, colour, accessory or variant from the photograph that attracted you. Select the exact option before recording the price. Keep the currency, date and included quantity beside the amount. An estimated USD conversion should be labelled as an estimate and distinguished from the amount charged at checkout.",
+          "Keep domestic delivery, any payment or service charges, packaging and international freight separate from the shoe price. The cost of the pair alone is not a delivered total. This guide does not provide a fixed freight price or promise a particular saving. When current purchasing and shipping functions are available, use the applicable quote and the parcel's measured information rather than a price copied from an old haul."
+        ]
+      },
+      {
+        "heading": "Plan a shoe-specific QC photo sequence",
+        "paragraphs": [
+          "For an order that reaches a warehouse, begin with a photograph showing both shoes together. Compare the colour, general shape, size labels and number of pieces with your saved selection. Then examine the fronts, heels, sides and soles. Request another angle when a relevant area is hidden. A single attractive photograph cannot replace a consistent set of views of the actual pair received.",
+          "Look for visible damage, obvious asymmetry, missing components or a mismatch with the requested option. Lighting and perspective can alter colour and shape, so identify the exact concern before drawing a conclusion. A close-up is useful when it answers a specific question, such as whether a mark appears on the material or only in the lighting. Photos do not establish authenticity, comfort or long-term durability."
+        ]
+      },
+      {
+        "heading": "Make measurement requests easy to understand",
+        "paragraphs": [
+          "If the platform offers additional photographs or measurements, explain the measurement you need and how its endpoints should be shown. Request a clear view of the size label and ask the service to identify whether a reported length is an insole measurement or a different measurement. Do not assume that the warehouse can disassemble a shoe or perform a specialised fit assessment.",
+          "For example, a useful request identifies the order reference, the measurement and the need for the tape endpoints to be visible. A vague request to check whether the shoes are good does not tell the person taking the picture what evidence would resolve your concern. Compare the returned image with the seller's method and your saved reference, and retain the image with the order record."
+        ]
+      },
+      {
+        "heading": "Decide whether the original box matters",
+        "paragraphs": [
+          "Keeping or removing a shoe box is a tradeoff involving protection, presentation and parcel dimensions. If the original packaging matters to you, state that preference before packing. If it does not, compare the protective alternatives actually offered by the service. Removing a box may reduce bulk, but it does not guarantee a lower final freight charge because the route's billing rules and complete parcel dimensions still matter.",
+          "Record the decision separately for each pair. Several boxes may affect a consolidated parcel differently from a single pair sent alone. Use the final external dimensions rather than adding together optimistic item estimates. Do not recommend removing all protection just to reach a lower weight. The useful decision balances the kind of shoe, the packing options, the planned route and the condition in which you want it to arrive."
+        ]
+      },
+      {
+        "heading": "Turn the comparison into a clear decision",
+        "paragraphs": [
+          "Use a final comparison with columns for exact option, sizing evidence, visible product details, unresolved questions and cost components. Two or three well-documented candidates are usually easier to judge than dozens of nearly identical cards. Keep a listing on hold if the size chart, variant identity or included quantity remains unclear. A lower displayed price does not resolve those missing facts.",
+          "When an order is possible, save the final selection and keep the same record through warehouse inspection and parcel planning. Product discovery, QC and delivery are separate decisions that should refer to the same item. Source basis: existing site product cards and general measurement and inspection practice; platform status checked on 7 October 2026. No new personal review, authenticity assessment or guaranteed fit result is claimed.",
+          "If you replace a shortlisted pair with another listing, repeat the option and size checks from the beginning. Similar names and photographs do not transfer the previous evidence to a new seller. Keep the old record marked as replaced so that later warehouse images are compared with the product actually ordered."
+        ]
+      }
+    ]
+  },
+  "allchinabuy-football-jerseys-sizing-details": {
+    "title": "AllChinaBuy Football Jerseys: Finds, Sizes and Details",
+    "seoTitle": "AllChinaBuy Football Jerseys: Finds, Sizes and Details",
+    "dek": "Build a jersey shortlist using exact kit options, flat measurements and checks for names, numbers, badges and included pieces.",
+    "date": "October 7, 2026",
+    "dateISO": "2026-10-07",
+    "read": "6 min read",
+    "label": "Jersey finds",
+    "keywords": [
+      "allchinabuy jerseys",
+      "allchinabuy football jerseys",
+      "allchinabuy jersey spreadsheet"
+    ],
+    "verified": [
+      "Independent editorial guide",
+      "Sources and limitations dated October 7, 2026",
+      "Confirm the current product and account information"
+    ],
+    "sections": [
+      {
+        "heading": "Define the exact jersey before comparing prices",
+        "paragraphs": [
+          "An AllChinaBuy football jersey search can mix different seasons, colours, cuts and customisation options in one result list. Write down the team or design, season if specified, home or away version, sleeve length and intended fit before comparing listings. A photograph of a complete kit does not establish that the selected option includes shorts or socks. The option description must identify what is actually being sold.",
+          "This article explains a comparison process, not a personal review of every jersey in the directory. The existing Jersey 46 card is a destination link, and its photograph should not be described as the QC image for a customer's future order. The official AllChinaBuy homepage showed maintenance on 7 October 2026. Check current access before relying on older ordering instructions; this independent site cannot confirm the operation of an official account."
+        ]
+      },
+      {
+        "heading": "Keep season, version and included pieces together",
+        "paragraphs": [
+          "Create one row for each exact product option. Record the design or team name stated by the seller, any season label, the selected colour and every included piece. If the title mentions a full kit but the option selector says top only, resolve that difference before recording a price. Do not fill a missing season or version field from memory because similar designs may have small changes across releases.",
+          "Terms such as fan version and player version should be treated as seller labels unless the page explains their construction and measurements. They do not establish a universal sizing difference, official licensing or authenticity. Compare the actual cut, fabric description and size chart attached to the option. If two sellers use the same label differently, retain the underlying measurements and details rather than pretending the labels make the items equivalent."
+        ]
+      },
+      {
+        "heading": "Measure a jersey that already fits",
+        "paragraphs": [
+          "Lay a suitable reference jersey flat without stretching it. Record the measurement points used for chest width, body length and sleeve length, and use the same points when reading the listing's chart. Chest width measured across a flat garment is not a full body circumference. Keep the unit and method with every number so that a translated chart does not silently change what you are comparing.",
+          "A familiar letter size does not guarantee the same cut between sellers. A close-fitting sports cut and a relaxed everyday cut may have different room even when their labels match. Compare the chart with the reference garment and your intended use. Avoid predicting a universal fit from height and weight alone. If the seller's measurements are missing or ambiguous, ask for clarification or choose a listing with clearer evidence."
+        ]
+      },
+      {
+        "heading": "Verify names, numbers and customisation instructions",
+        "paragraphs": [
+          "If personalisation is offered, record the exact name, number, letter case and placement requested. Check whether customisation is included in the selected price or requires a separate option. A note at checkout cannot create a service that the seller does not offer. Keep a screenshot of the supported selection and your final instruction so that you can compare it with the received item later.",
+          "Check whether a badge, sponsor graphic or sleeve patch is part of the selected version. Do not infer that every detail shown in a promotional image appears on every option. When a spelling or number matters, review the saved instruction once more before paying. Product-specific return conditions may differ for customised items, so establish the applicable terms from the current listing rather than assuming a general returns tutorial covers the order."
+        ]
+      },
+      {
+        "heading": "Read photographs as evidence with limits",
+        "paragraphs": [
+          "Seller photographs can help identify a collar shape, sleeve style, colour arrangement or design detail. They do not prove the construction or quality of the particular unit you will receive. A close-up may show whether a graphic appears printed or stitched, but a low-resolution image may not be sufficient to establish even that distinction. Describe only what is visible and attribute unverified material statements to the seller.",
+          "Screen settings and lighting can change apparent colour. Do not rank listings solely because one promotional photograph looks brighter. Look for consistent images of the same version, clear option labels and a chart that belongs to that version. If images describe different designs, flag the mismatch in the shortlist. A useful product comparison makes uncertainty visible instead of hiding it behind a confident recommendation."
+        ]
+      },
+      {
+        "heading": "Separate item price from the complete budget",
+        "paragraphs": [
+          "Record the amount for the selected size and customisation, the currency, any domestic delivery shown and the date checked. A low starting price may belong to an unprinted version or a different included quantity. Compare equivalent options before calling one listing cheaper. If a USD estimate is displayed, retain the basis and distinguish it from the payment amount and any conversion or payment charges.",
+          "International delivery is another component. One lightweight jersey and a mixed parcel containing several garments do not necessarily have the same cost per item. Packaging, billing steps and route conditions can change the calculation. Do not copy a fixed delivered price from a previous customer or describe a particular freight route as available without a current quote. The budget should show which amounts are confirmed and which remain to be checked."
+        ]
+      },
+      {
+        "heading": "Review warehouse images in a fixed order",
+        "paragraphs": [
+          "For an order that reaches a warehouse, first confirm the number of pieces, selected design, colour and size label. Then review the front and back together before inspecting the name, number, badge and sleeve details. Compare each requested customisation with the saved instruction. Look for visible stains, tears, missing elements or obvious mismatches rather than starting with tiny aesthetic differences.",
+          "Ask for a focused close-up when the standard images do not show a decision-critical detail. For sizing, request the relevant flat measurement with the tape endpoints visible if the service offers it. A photograph can reveal a misspelled name or wrong number, but it cannot establish comfort, breathability, wash resistance or authenticity. Keep that limit explicit when recording whether a visual check has passed."
+        ]
+      },
+      {
+        "heading": "Protect prints and keep care information",
+        "paragraphs": [
+          "Before choosing packing, consider whether the jersey has rigid patches, large printed areas or other details that could be affected by tight folds or pressure. Ask which packing options are actually available and describe what needs protection. Do not assume that vacuum packing is suitable for every garment or that compression always reduces the charged freight. The final decision depends on the product and the complete parcel.",
+          "Retain the care label and seller instructions when available. This guide does not prescribe one temperature or washing method for all jersey materials and decoration processes. A visible print inspection before shipping cannot predict its condition after repeated washing. If care requirements are missing and the decoration is a key reason for purchase, record that uncertainty as part of the comparison instead of making a durability claim."
+        ]
+      },
+      {
+        "heading": "Finish with a repeatable jersey record",
+        "paragraphs": [
+          "A practical final row includes the exact listing, option, included pieces, flat measurements, customisation text, dated price and QC status. Add the order and parcel identifiers only when those stages actually exist. This keeps a product idea separate from a paid order and a shipped item. If the destination changes, reopen the option and update the record rather than assuming the saved card remains accurate.",
+          "Browse the jersey category for possibilities, then use the measurement and detail checklist to narrow the selection. For broader guidance, continue to the QC and shipping articles without treating them as guarantees. Source basis: existing site category and product references, independent editorial inspection guidance, and the official maintenance notice checked on 7 October 2026. No item is presented as personally tested, authenticated or currently guaranteed in stock.",
+          "When a listing is replaced, repeat the measurement comparison for the new version. Do not transfer a previous fit assumption simply because the product title looks similar. Preserve the old record as a reference, but clearly identify which chart and selected option belong to the current candidate before continuing."
+        ]
+      }
+    ]
+  },
+  "allchinabuy-hoodies-measurements-fit-qc": {
+    "title": "AllChinaBuy Hoodie Finds: Measurements, Fit and QC",
+    "seoTitle": "AllChinaBuy Hoodie Finds: Measurements, Fit and QC",
+    "dek": "Compare hoodie lengths, chest widths, sleeves and set options using a garment you own, then inspect the correct details before shipping.",
+    "date": "October 7, 2026",
+    "dateISO": "2026-10-07",
+    "read": "6 min read",
+    "label": "Hoodie finds",
+    "keywords": [
+      "allchinabuy hoodies",
+      "allchinabuy hoodie spreadsheet",
+      "allchinabuy hoodie sizing"
+    ],
+    "verified": [
+      "Independent editorial guide",
+      "Sources and limitations dated October 7, 2026",
+      "Confirm the current product and account information"
+    ],
+    "sections": [
+      {
+        "heading": "Choose the kind of hoodie you are looking for",
+        "paragraphs": [
+          "An AllChinaBuy hoodie spreadsheet can contain pullovers, zip-up styles, cropped cuts and coordinated sets under a single category. Begin by choosing the garment type and intended fit. Decide whether you want a separate hoodie or a set, and whether a particular print, closure or pocket arrangement matters. A broad product title is not enough to establish which pieces the selected option includes.",
+          "The existing selection includes 6PM Hoodie Set, Godspeed Hoodie and Celine Hoodie cards. These are links to destination products, not personal reviews or authenticity assessments. Their photographs illustrate the listed items and are not warehouse QC photographs for your own order. AllChinaBuy's public homepage displayed a maintenance notice on 7 October 2026; a product discovery page does not establish that official purchasing or warehouse functions are currently available."
+        ]
+      },
+      {
+        "heading": "Use a garment you already own as a reference",
+        "paragraphs": [
+          "Lay a hoodie that fits as intended on a flat surface. Record chest width, body length, shoulder width and sleeve length, together with the points between which you measured. Avoid stretching the fabric to reach a preferred number. The purpose is to create a consistent comparison, not a laboratory specification. Photographing the tape placement can help you repeat the same method later.",
+          "Compare those numbers with the chart belonging to the exact seller and version. Letter sizes alone are weak evidence because cuts differ. A size labelled large may be wider but shorter than another large, and a dropped shoulder can change the meaning of sleeve measurements. Do not combine a sleeve number measured from the shoulder seam with one measured from the centre back without identifying the difference."
+        ]
+      },
+      {
+        "heading": "Separate width, length and shoulder shape",
+        "paragraphs": [
+          "An oversized fit is not simply a larger number on every dimension. Some garments are wide and short, while others are long with relatively narrow sleeves. Decide which proportions matter to you, then compare those measurements independently. A promotional image on a model can suggest a silhouette, but pose, styling and unknown body measurements make it an uncertain guide to your own fit.",
+          "For a zipped hoodie, consider how you intend to wear it and inspect the available views of the closure and hem. For a pullover, look at the hood opening and neck construction as well as the body. These observations help define the comparison; they cannot confirm comfort or freedom of movement from a photograph. Keep the listing's stated measurements separate from your expectations about how the garment will feel."
+        ]
+      },
+      {
+        "heading": "Verify what a coordinated set includes",
+        "paragraphs": [
+          "A photograph of a hoodie and trousers may advertise several purchase options. One option could be the top, another the trousers and another the complete set. Read the selected variant and quantity before comparing price. Record the size of each piece when separate sizing is offered. Do not assume that selecting a large top automatically chooses the same size or any size at all for a second piece.",
+          "For the existing 6PM-labelled set card, the destination option remains the authority for included pieces, colour and sizing. This directory does not establish that every option contains a two-piece bundle. A useful record preserves the option text and image alongside the price so that an apparent bargain is not caused by comparing one garment with a complete set. Resolve unclear bundle wording before payment rather than at warehouse intake."
+        ]
+      },
+      {
+        "heading": "Evaluate fabric descriptions without inventing quality claims",
+        "paragraphs": [
+          "A listing may state a fibre blend, lining type or fabric weight. Treat these as seller-provided details unless you have independent evidence. Product mass and fabric weight per square metre are different measurements: a heavy parcel can include packaging, and a large garment can weigh more without using a denser fabric. Keep the units and the source with the number.",
+          "Photographs can show visible texture, stitching and construction, but they cannot establish softness, warmth, shrinkage or long-term pilling. Avoid ranking products as the best quality based only on a card image or price. If a specific material property is essential, look for reliable information tied to the exact version. An honest shortlist can say that a property is unverified instead of replacing missing evidence with promotional language."
+        ]
+      },
+      {
+        "heading": "Record the full option price and later costs",
+        "paragraphs": [
+          "Choose the correct colour, size and included quantity before saving the displayed price. Record the currency and check date. If the listing provides a USD estimate, distinguish it from the amount charged by the payment service and any conversion fees. A lower starting price may refer to a different garment or option, so comparisons should use equivalent selections rather than the first number visible in the grid.",
+          "Domestic delivery, service options, packing and international freight may be separate costs. Hoodies can be bulky even when their scale weight seems manageable. Budgeting from product price alone can therefore be misleading. Keep uncertain amounts marked as estimates until a current quote is available. This guide does not promise a fixed cost per kilogram or a saving from consolidation, and it does not establish which routes currently operate."
+        ]
+      },
+      {
+        "heading": "Inspect the garment received at the warehouse",
+        "paragraphs": [
+          "Start a hoodie QC review by confirming the number of pieces, selected colour, size label and overall garment type. Then inspect the front, back, cuffs, hem, pockets and closure where applicable. Compare print or embroidery placement with the option you ordered, while remembering that lighting and perspective affect appearance. Look for visible stains, holes, missing components and clear construction problems.",
+          "If a measurement could change your decision, request a flat photograph with the tape endpoints visible when that service is available. Specify chest width or body length rather than asking for a general size check. A close-up should answer one material question. Warehouse photos can help establish visible identity and condition, but they do not certify authenticity, comfort, composition or durability. Save the inspection outcome with the evidence used to reach it."
+        ]
+      },
+      {
+        "heading": "Consider compression and protection together",
+        "paragraphs": [
+          "Compression can reduce the external volume of some clothing parcels, but it is not a universal answer for every hoodie. Thick embellishments, delicate prints, hardware or structured details may need a different packing approach. Check the service's available options and describe the feature you want protected. Do not request aggressive compression simply because another customer's plain sweatshirt was packed that way.",
+          "Compare the complete parcel before and after a proposed packing change when measurements are available. A smaller volume may matter on a route that bills volumetrically, while another billing step may leave the charge unchanged. Keep the product's protection needs alongside the cost comparison. Removing every piece of packaging without understanding its purpose can trade a small theoretical saving for a greater risk of avoidable damage."
+        ]
+      },
+      {
+        "heading": "Make a selection that can be checked again",
+        "paragraphs": [
+          "Finish with a record containing the exact option, included pieces, reference measurements, seller chart, dated price, unresolved questions and eventual QC result. Compare two or three suitable candidates using the same fields. A candidate with missing measurements should remain on hold rather than receiving a confident fit recommendation. The aim is to make the decision explainable and repeatable, not to fill the largest possible spreadsheet.",
+          "Use the hoodie category and existing product cards to begin discovery, then return to the current destination page before acting. Keep the account, order and parcel stages separate from research. Source basis: existing site product references, independent garment measurement and visible inspection guidance, and the official platform maintenance notice observed on 7 October 2026. There is no claim of personal wear testing, verified stock, guaranteed delivery or a universal sizing rule.",
+          "When a listing is replaced, repeat the measurement comparison for the new version. Do not transfer a previous fit assumption simply because the product title looks similar. Preserve the old record as a reference, but clearly identify which chart and selected option belong to the current candidate before continuing."
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+import {MAIN, products, categories} from "../catalog";
+export default function ProductCatalog({category}: {category?: string}) {
+ const selected = category ? products.filter(p=>p.type===category) : products;
+ return <section className="section catalog-section"><div className="section-heading compact"><div><p className="section-kicker">Product discovery</p><h2>{category ? `${category}: compare the current options` : "Browse products by category"}</h2></div><p>Destination links checked 7 October 2026. Images illustrate listings, not warehouse QC or personal testing. Confirm the current variant, included pieces, price and availability.</p></div>
+ {!category && <div className="category-grid">{categories.map(([code,title,desc,path])=><a className="category-card" data-click-type="category" key={code} href={`${MAIN}${path}`} target="_blank" rel="noopener noreferrer"><span className="category-code">{code}</span><div><h3>{title}</h3><p>{desc}</p></div></a>)}</div>}
+ <div className="product-grid">{selected.map(p=><a key={p.name} className="product-card" data-click-type="product" href={`${MAIN}${p.href}`} target="_blank" rel="noopener noreferrer"><div className="product-visual"><img loading="lazy" src={p.image} alt={p.name}/></div><div className="product-info"><span>{p.type}</span><h3>{p.name}</h3><p>Check the selected option and included pieces</p><small>Open current product details</small></div></a>)}</div>
+ <div className="category-reading"><a href="/articles/allchinabuy-shoes-spreadsheet-sizing-qc/">Shoe sizing and QC guide</a><a href="/articles/allchinabuy-football-jerseys-sizing-details/">Jersey sizes and details</a><a href="/articles/allchinabuy-hoodies-measurements-fit-qc/">Hoodie measurements and fit</a></div></section>;
+}
