@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { ArrowIcon, SearchIcon } from "./Icons";
 import { useLanguage } from "./LanguageProvider";
-import { sendAnalyticsEvent } from "./Analytics";
+import { sendAnalyticsEvent, navigateToCatalog } from "./Analytics";
 
 const MAIN_SEARCH_URL = "https://www.cnfanssp.com/search.html";
 
@@ -13,7 +13,7 @@ function searchInput(value) {
 
   try {
     const url = new URL(trimmed);
-    if (url.hostname === "cnfanssp.com" || url.hostname.endsWith(".cnfanssp.com")) {
+    if (["http:", "https:"].includes(url.protocol) && (url.hostname === "cnfanssp.com" || url.hostname.endsWith(".cnfanssp.com"))) {
       return { directUrl: url.toString(), query: "" };
     }
     const itemId = url.searchParams.get("itemID") || url.searchParams.get("id") || trimmed.match(/\d{8,}/)?.[0];
@@ -33,7 +33,7 @@ export default function SearchBox({ compact = false }) {
     if (!input) return;
     if (input.directUrl) {
       sendAnalyticsEvent("catalog_search", { search_term: query.trim(), search_type: "direct_product_url" });
-      window.location.assign(input.directUrl);
+      navigateToCatalog(input.directUrl);
       return;
     }
 
@@ -41,7 +41,7 @@ export default function SearchBox({ compact = false }) {
     destination.searchParams.set("keywords", input.query);
     destination.searchParams.set("channelid", "2");
     sendAnalyticsEvent("catalog_search", { search_term: input.query, search_type: /^\d{8,}$/.test(input.query) ? "item_id" : "keyword" });
-    window.location.assign(destination.toString());
+    navigateToCatalog(destination.toString());
   }
 
   return (

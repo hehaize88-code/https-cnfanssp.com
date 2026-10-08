@@ -1,5 +1,7 @@
 import { mappedIndexArticle } from "./seo60MappedIndex.js";
 import { priorityArticles } from "./priorityArticles.js";
+import { measurementSections } from "./editorial/englishMeasurementSections.js";
+import { newEnglishArticles } from "./editorial/en.js";
 
 const liveCatalog = {
   label: "Live catalog: all products",
@@ -255,6 +257,7 @@ export const articles = [
   },
   mappedIndexArticle,
   ...priorityArticles,
+  ...newEnglishArticles,
 ];
 
 const articleExtensions = {
@@ -380,14 +383,18 @@ const articleConclusions = {
     { type: "p", text: "When both items reach the warehouse, replace estimated weights with the agent’s measurements and confirm each item through its own QC set. Ask for packed dimensions for the scenario you intend to use. Apply the current route’s volumetric divisor, minimum increment and size limits exactly as shown by the provider. Compare the result with actual weight and use whichever billable rule the route states. Keep currency and quote date visible." },
     { type: "p", text: "The cheapest headline may not be the best total decision. Check tracking, expected range, category restrictions, compensation terms, tax handling and the value of the packaging removed. If the difference between routes is small, consistency or protection may matter more. If the parcel is near a size threshold, allow room for measurement and packing variation rather than budgeting to the last unit." },
     { type: "p", text: "Approve only after the source options, warehouse condition, packing plan and live route quote agree. Save the evidence as one record. This approach gives readers a real method without inventing a universal shipping price, because freight depends on destination, date, packed dimensions, billable weight, restrictions and the third-party service selected." },
-    { type: "p", text: "Taxes and customs handling also need current, destination-specific verification. Avoid promising that a line is tax-free, seizure-proof or guaranteed to clear. Record exactly what the provider states, who collects any tax, what value is declared under the applicable process and which documents must accompany the parcel. Regulations and carrier practices can change. For an SEO guide, a clear checklist and links to current official terms are more useful than copying an old buyer’s total and presenting it as today’s rate." },
-    { type: "p", text: "Customer shipping reviews can strengthen an article when their context is preserved. Group experiences by destination, parcel type, route and dispatch month; show the range rather than highlighting only the fastest delivery. Identify whether tracking, packaging and support were part of the review. Remove personal order details and do not call a small convenience sample representative. The purpose is to expose decision factors and recurring problems, not to manufacture a universal delivery promise." },
+    { type: "p", text: "Taxes and customs handling also need current, destination-specific verification. Avoid promising that a line is tax-free, seizure-proof or guaranteed to clear. Record exactly what the provider states, who collects any tax, what value is declared under the applicable process and which documents must accompany the parcel. Regulations and carrier practices can change. Keep the current terms beside the quote rather than treating another buyer’s old total as today’s rate." },
+    { type: "p", text: "Shipping reviews are useful only when their context is preserved. Group experiences by destination, parcel type, route and dispatch month; show the range rather than highlighting only the fastest delivery. Identify whether tracking, packaging and support were part of the review. Remove personal order details and do not call a small convenience sample representative. The purpose is to expose decision factors and recurring problems, not to manufacture a universal delivery promise." },
   ] },
 };
 
 for (const article of articles) {
-  article.sections.push(...(articleExtensions[article.slug] || []));
-  if (articleConclusions[article.slug]) article.sections.push(articleConclusions[article.slug]);
+  if (article.slug === "warehouse-measurement-guide") {
+    article.sections.push(...measurementSections);
+  } else {
+    article.sections.push(...(articleExtensions[article.slug] || []));
+    if (articleConclusions[article.slug]) article.sections.push(articleConclusions[article.slug]);
+  }
 }
 
 export function getArticle(slug) {

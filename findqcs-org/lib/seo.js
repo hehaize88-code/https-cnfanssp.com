@@ -27,36 +27,44 @@ const PAGE_SEO_KEYS = {
 };
 
 const ENGLISH_SEARCH_TITLES = {
-  "/": "FindQC QC Finder 2026: Product Search & QC Photos | FindQCS",
+  "/": "QC Finder Guides & Product Links | FindQCS",
   "/products": "FindQC Finds & Product Index: 108 Source Listings | FindQCS",
   "/categories": "FindQC Product Categories: Shoes, Hoodies & More | FindQCS",
   "/shipping": "FindQC Shipping Cost Checklist: Weight, Volume & Fees",
   "/faq": "FindQC FAQ: Product Search, QC Photos & Shipping",
   "/guides": "FindQC Search Guide: Links, IDs, Image Search & QC Photos",
-  "/articles": "FindQC Guides & QC Finder Articles 2026 | FindQCS",
+  "/articles": "QC Finder Guides: Search, Photo Checks & Shipping | FindQCS",
 };
 
 const LOCALIZED_SEARCH_TITLES = {
   pl: {
-    "/": "FindQC QC Finder 2026: wyszukiwanie produktów i zdjęcia QC | FindQCS",
+    "/": "Poradniki QC Finder i linki do produktów | FindQCS",
     "/guides": "Poradnik FindQC: linki, ID, wyszukiwanie obrazem i zdjęcia QC",
-    "/articles": "Poradniki FindQC i artykuły QC Finder 2026 | FindQCS",
+    "/articles": "Poradniki QC Finder: zdjęcia, pomiary i zakup | FindQCS",
   },
   es: {
-    "/": "FindQC QC Finder 2026: búsqueda de productos y fotos QC | FindQCS",
+    "/": "Guías QC Finder y enlaces de productos | FindQCS",
     "/guides": "Guía FindQC: enlaces, ID, búsqueda por imagen y fotos QC",
-    "/articles": "Guías FindQC y artículos de QC Finder 2026 | FindQCS",
+    "/articles": "Guías QC Finder: fotos, medidas y compras | FindQCS",
   },
   de: {
-    "/": "FindQC QC Finder 2026: Produktsuche und QC-Fotos | FindQCS",
+    "/": "QC-Finder-Ratgeber und Produktlinks | FindQCS",
     "/guides": "FindQC-Anleitung: Links, IDs, Bildsuche und QC-Fotos",
-    "/articles": "FindQC-Ratgeber und QC-Finder-Artikel 2026 | FindQCS",
+    "/articles": "QC-Finder-Ratgeber: Fotos, Maße und Kauf | FindQCS",
   },
   ro: {
-    "/": "FindQC QC Finder 2026: căutare produse și fotografii QC | FindQCS",
+    "/": "Ghiduri QC Finder și linkuri de produse | FindQCS",
     "/guides": "Ghid FindQC: linkuri, ID-uri, căutare prin imagini și poze QC",
-    "/articles": "Ghiduri FindQC și articole QC Finder 2026 | FindQCS",
+    "/articles": "Ghiduri QC Finder: fotografii, măsurători și cumpărături | FindQCS",
   },
+};
+
+const SEARCH_DESCRIPTIONS = {
+  en: "Find product links and practical QC guides for Taobao, Weidian and 1688. Check photo matches, measurements and your own warehouse evidence before shipping.",
+  de: "Produktlinks und QC-Ratgeber für Taobao, Weidian und 1688: Fototreffer, Maße und die eigenen Lagerbilder vor dem Versand prüfen.",
+  es: "Enlaces de productos y guías QC para Taobao, Weidian y 1688. Comprueba coincidencias, medidas y fotos de tu pedido antes del envío.",
+  pl: "Linki do produktów i poradniki QC dla Taobao, Weidian oraz 1688. Sprawdź dopasowanie zdjęć, wymiary i własny egzemplarz przed wysyłką.",
+  ro: "Linkuri de produse și ghiduri QC pentru Taobao, Weidian și 1688. Verifică potrivirile, măsurătorile și pozele comenzii înainte de expediere.",
 };
 
 function translatedSeo(metadata, pathname) {
@@ -85,7 +93,7 @@ function translatedSeo(metadata, pathname) {
   return {
     ...metadata,
     title,
-    description: translate(BUILD_LANGUAGE, keys.description),
+    description: ["/", "/articles"].includes(pathname) ? SEARCH_DESCRIPTIONS[BUILD_LANGUAGE] : translate(BUILD_LANGUAGE, keys.description),
   };
 }
 
@@ -117,6 +125,7 @@ export function localizedMetadata(metadata, pathname) {
 
   return {
     ...metadata,
+    alternates,
     ...(openGraph ? { openGraph } : {}),
   };
 }

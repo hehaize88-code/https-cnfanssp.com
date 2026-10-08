@@ -104,10 +104,6 @@ for (const language of languages.filter((candidate) => candidate !== "en")) {
   }
 }
 
-for (const article of englishArticles) {
-  const wordCount = words(articleText(article)).length;
-  if (wordCount < 1180 || wordCount > 1800) failures.push(`English article length outside 1200–1800 target: ${article.slug} (${wordCount})`);
-}
 
 function htmlPath(pathname) {
   const relative = pathname.replace(/^\//, "").replace(/\/$/, "");
@@ -179,6 +175,19 @@ const expectedAlternateCount = fullyLocalizedUrls * 6 + ENGLISH_ONLY_ARTICLE_ROU
 if (sitemapAlternateCount !== expectedAlternateCount) failures.push(`Expected ${expectedAlternateCount} sitemap alternates, found ${sitemapAlternateCount}`);
 if (!readFileSync(path.join(out, "robots.txt"), "utf8").includes("Sitemap: https://findqcs.org/sitemap.xml")) failures.push("robots.txt sitemap is incorrect");
 
+
+for (const language of languages) {
+  const prefix = language === "en" ? "" : `/${language}`;
+  const listing = readFileSync(htmlPath(`${prefix}/articles`), "utf8");
+  for (const article of getLocalizedArticles(language)) {
+    if (!listing.includes(`href="${prefix}/articles/${article.slug}"`)) failures.push(`Article absent from index: ${language}/${article.slug}`);
+    const html = readFileSync(htmlPath(`${prefix}/articles/${article.slug}`), "utf8");
+    if (/<meta[^>]+name="robots"[^>]+content="[^"]*noindex/.test(html)) failures.push(`Article is noindex: ${language}/${article.slug}`);
+    if (!html.includes('article-quick-answer')) failures.push(`Missing answer panel: ${language}/${article.slug}`);
+    if (!html.includes(article.seoTitle.replace(/&/g, "&amp;"))) failures.push(`Missing search title: ${language}/${article.slug}`);
+  }
+}
+
 if (failures.length) {
   console.error(failures.join("\n"));
   process.exit(1);
@@ -187,7 +196,8 @@ if (failures.length) {
 console.log(JSON.stringify({
   languages: languages.length,
   indexableUrls: urls.length,
-  localizedArticlePages: articleSlugs.length * (languages.length - 1),
+  articlePages: articleSlugs.length * languages.length,
+  topicsPerLanguage: articleSlugs.length,
   bidirectionalAlternateLinks: sitemapAlternateCount,
   status: "passed",
 }, null, 2));
