@@ -11,7 +11,7 @@ Translation model attribution: the German, French, Spanish and Italian drafts us
 1. Install the existing Node dependencies and Python dependencies from `scripts/requirements-pages.txt`.
 2. Build and export English with public indexing enabled.
 3. Use `python3 scripts/localize-pages.py --collect` after English text changes, then provide complete translations for new dictionary keys in every language.
-4. `npm run build:pages` builds, exports, localizes and validates the complete production directory. Missing translations fail the command.
+4. `npm run rebuild:pages` builds, exports, localizes and validates the complete production directory, then records source/output hashes. Missing translations fail the command. Local `npm run build:pages` uses the same process; on Pages it only verifies the already committed complete export.
 5. Preview `cloudflare-pages` locally. Check interactions after changing `public/site.js`.
 6. Commit source, translations and the generated `cloudflare-pages` directory to the existing deployment branch. Cloudflare Pages serves this directory without a build step.
 

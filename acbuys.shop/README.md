@@ -19,6 +19,15 @@ therefore upload the site directly without repeating the dependency install and
 application build. Run `npm run build:pages` locally only when the source is
 changed, then commit the refreshed export together with that source change.
 
+If an existing Pages build command is still set to `npm run build:pages` or
+`npm run build`, it now verifies the committed export using Node alone when
+`CF_PAGES=1`. The check fails if any source or exported file differs from the
+recorded SHA-256 manifest, or if the 132-page language/sitemap structure is
+incomplete. No dashboard change is required for either existing build command.
+Before a local rebuild, install `scripts/requirements-pages.txt` into the Python
+environment as well as the locked Node dependencies. `npm run rebuild:pages`
+regenerates and validates every language, then refreshes the manifest.
+
 The Pages export creates clean static routes, a true `404.html`, `robots.txt`,
 `sitemap.xml`, self-referencing canonical tags, production indexing directives,
 and immutable caching headers for hashed assets.

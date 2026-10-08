@@ -3,6 +3,10 @@ set -euo pipefail
 
 script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
+if [[ "${CF_PAGES:-}" == "1" || "${CF_PAGES:-}" == "true" ]]; then
+  exec node "${script_dir}/verify-static-export.mjs"
+fi
+
 if [[ "${SITES_ENV_READY:-}" != "1" ]]; then
   exec "${script_dir}/sites-env.sh" -- "$0" "$@"
 fi
