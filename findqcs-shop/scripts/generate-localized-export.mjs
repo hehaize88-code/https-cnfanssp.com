@@ -4,31 +4,22 @@ import generatedTranslations from "../app/translations.generated.json" with { ty
 import seoTranslations from "../app/translations.seo.json" with { type: "json" };
 import seo60Translations from "../app/translations.seo60.json" with { type: "json" };
 import currentTranslations from "../app/translations.current.json" with { type: "json" };
+import completeTranslations from "../app/translations.complete.json" with { type: "json" };
 
 const origin = "https://findqcs.shop";
 const outputRoot = path.resolve("out");
 const locales = ["nl", "de", "it", "es"];
 const hrefLocales = ["en", ...locales];
-const englishOnlyRoutes = new Set([
-  "/spreadsheet",
-  "/articles/qc-variant-mismatch",
-  "/articles/qc-batch-drift",
-  "/articles/qc-photo-sample-bias",
-  "/articles/blurry-qc-photos",
-  "/articles/qc-lighting-vs-defect",
-  "/articles/qc-image-distortion",
-  "/articles/missing-qc-photo-angles",
-  "/articles/qc-measurement-photo-geometry",
-]);
 const dictionaries = Object.fromEntries(locales.map((locale) => [locale, {
   ...generatedTranslations[locale],
   ...seoTranslations[locale],
   ...seo60Translations[locale],
   ...currentTranslations[locale],
+  ...completeTranslations[locale],
 }]));
 const analyticsMarkup = `<script async src="https://www.googletagmanager.com/gtag/js?id=G-9XTZZLDSQZ"></script><script>
 window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date());gtag("config","G-9XTZZLDSQZ");
-(function(){function send(name,element){if(typeof window.gtag!=="function")return;window.gtag("event",name,{link_text:(element.textContent||"").trim().slice(0,100),link_url:element.href||element.action||"",page_path:window.location.pathname})}document.addEventListener("click",function(event){var anchor=event.target.closest&&event.target.closest("a");if(!anchor)return;var explicit=anchor.getAttribute("data-track");if(explicit)return send(explicit,anchor);try{var url=new URL(anchor.href,window.location.href);if(url.hostname==="www.cnfanssp.com"||url.hostname==="cnfanssp.com")return send("main_site_click",anchor);if(url.origin===window.location.origin&&url.pathname.indexOf("/articles/")===0)return send("article_click",anchor)}catch(_){}});document.addEventListener("submit",function(event){var form=event.target;if(!form||!form.matches||!form.matches("form.search-desk"))return;if(typeof window.gtag!=="function")return;var data=new FormData(form);window.gtag("event","search_submit",{search_term:data.get("keywords")||"",page_path:window.location.pathname})})})();
+(function(){function send(name,element){if(typeof window.gtag!=="function")return;window.gtag("event",name,{link_text:(element.textContent||"").trim().slice(0,100),link_url:element.href||element.action||"",page_path:window.location.pathname})}document.addEventListener("click",function(event){var anchor=event.target.closest&&event.target.closest("a");if(!anchor)return;var explicit=anchor.getAttribute("data-track");if(explicit)return send(explicit,anchor);try{var url=new URL(anchor.href,window.location.href);if(url.hostname==="www.cnfanssp.com"||url.hostname==="cnfanssp.com")return send("main_site_click",anchor);if(url.origin===window.location.origin&&/^\\/(?:nl\\/|de\\/|it\\/|es\\/)?articles\\//.test(url.pathname))return send("article_click",anchor)}catch(_){}});document.addEventListener("submit",function(event){var form=event.target;if(!form||!form.matches||!form.matches("form.search-desk"))return;if(typeof window.gtag!=="function")return;var data=new FormData(form);window.gtag("event","search_submit",{search_term:data.get("keywords")||"",page_path:window.location.pathname})})})();
 </script>`;
 
 function decodeHtml(value) {
@@ -116,7 +107,7 @@ function rewriteInternalUrl(value, locale) {
 
 function translateJson(value, locale) {
   if (Array.isArray(value)) return value.map((item) => translateJson(item, locale));
-  if (value && typeof value === "object") return Object.fromEntries(Object.entries(value).map(([key, item]) => [key, translateJson(item, locale)]));
+  if (value && typeof value === "object") return Object.fromEntries(Object.entries(value).map(([key, item]) => [key, key === "inLanguage" ? locale : translateJson(item, locale)]));
   if (typeof value !== "string") return value;
   if (value.startsWith(origin)) {
     const parsed = new URL(value);
@@ -127,15 +118,21 @@ function translateJson(value, locale) {
 
 function translateTextNodes(html, locale) {
   const protectedFragments = [];
-  let protectedHtml = html.replace(/<(a|label)\b[^>]*\b(?:class=["'][^"']*\bnotranslate\b[^"']*["']|translate=["']no["'])[^>]*>[\s\S]*?<\/\1>/gi, (fragment) => {
+  const protect = (fragment) => {
     const marker = `\u0000FQPROTECTED${protectedFragments.length}\u0000`;
     protectedFragments.push(fragment);
     return marker;
-  });
+  };
+  let protectedHtml = html.replace(/<(script|style)\b[^>]*>[\s\S]*?<\/\1>/gi, protect);
+  protectedHtml = protectedHtml.replace(/<(a|label)\b[^>]*\b(?:class=["'][^"']*\bnotranslate\b[^"']*["']|translate=["']no["'])[^>]*>[\s\S]*?<\/\1>/gi, protect);
 
   protectedHtml = protectedHtml.split(/(<[^>]+>)/g).map((fragment) => {
     if (!fragment || fragment.startsWith("<") || fragment.includes("\u0000FQPROTECTED")) return fragment;
     if (!fragment.trim()) return fragment;
+    const key = normalize(decodeHtml(fragment));
+    if (key.length > 1 && /[A-Za-z]/.test(key) && !Object.hasOwn(dictionaries[locale], key)) {
+      throw new Error(`Missing ${locale} reader translation: ${key.slice(0, 120)}`);
+    }
     const leading = fragment.match(/^\s*/)?.[0] || "";
     const trailing = fragment.match(/\s*$/)?.[0] || "";
     return `${leading}${encodeText(translated(fragment, locale))}${trailing}`;
@@ -181,15 +178,15 @@ function translateHtml(sourceHtml, locale, route, englishOnly = false) {
     return `<a${before}href=${quote}${encodeAttribute(rewriteInternalUrl(href, locale))}${quote}${after}>`;
   });
 
-  html = html.replace(/<select\b([^>]*\baria-label=(['"])Language\2[^>]*)>/i, (full, attributes) => {
+  html = html.replace(/<select\b([^>]*)>/i, (full, attributes) => {
     const withoutHandler = attributes.replace(/\s+onchange=(['"])[\s\S]*?\1/i, "");
-    const handler = "var p=location.pathname.replace(/^\\/(nl|de|it|es)(?=\\/|$)/,'')||'/';location.href=this.value==='en'?p:'/'+this.value+(p==='/'?'':p)";
+    const handler = "var p=location.pathname.replace(/^\\/(nl|de|it|es)(?=\\/|$)/,'')||'/';if(window.gtag)window.gtag('event','language_change',{from_language:document.documentElement.lang,to_language:this.value,page_path:location.pathname});location.href=(this.value==='en'?p:'/'+this.value+(p==='/'?'':p))+location.search+location.hash";
     return `<select${withoutHandler} onchange="${handler.replace(/"/g, "&quot;")}">`;
   });
   html = html.replace(/<option\b([^>]*?)\sselected(?:=(['"])[^"']*\2)?([^>]*)>/gi, "<option$1$3>");
   html = html.replace(new RegExp(`<option\\b([^>]*\\bvalue=['"]${locale}['"][^>]*)>`, "i"), "<option$1 selected>");
 
-  const currentUrl = englishOnly ? `${origin}${route || "/"}` : localizedUrl(locale, route);
+  const currentUrl = localizedUrl(locale, route);
   html = setAlternates(html, route, currentUrl, !englishOnly);
   html = html.replace(/<meta\b([^>]*\bproperty=(['"])og:url\2[^>]*\bcontent=)(['"])(.*?)\3([^>]*)>/i, `<meta$1"${currentUrl}"$5>`);
   if (englishOnly) {
@@ -204,7 +201,7 @@ const allUrls = [...sitemapXml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => 
 const englishRoutes = allUrls.map(routeFromUrl).filter((route) => !new RegExp(`^/(${locales.join("|")})(/|$)`).test(route));
 
 for (const route of englishRoutes) {
-  const englishOnly = englishOnlyRoutes.has(route);
+  const englishOnly = false;
   const sourceFile = fileForRoute(route);
   const sourceHtml = await fs.readFile(sourceFile, "utf8");
   await fs.writeFile(sourceFile, setAlternates(sourceHtml, route, `${origin}${route || "/"}`, !englishOnly));

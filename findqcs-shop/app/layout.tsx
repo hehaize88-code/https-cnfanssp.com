@@ -5,10 +5,10 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL("https://findqcs.shop"),
   title: {
-    default: "FindQC & QC Finder Guide: Photos, Finds and Evidence Checks",
+    default: "FindQC Guide: Find QC Photos and Check Product Details",
     template: "%s | FindQC",
   },
-  description: "Independent FindQC and QC finder guides for product search, QC photos, measurements, batch risk and evidence checks before shipment.",
+  description: "Learn how to find QC photos from Weidian, Taobao and 1688 links, match product images and check size, shape and stitching before shipping.",
   keywords: ["FindQC", "QC finder", "find QC", "QC finds", "QC checker", "QC photos", "FindQC reviews", "QC photo analysis"],
   alternates: { canonical: "https://findqcs.shop" },
   robots: { index: true, follow: true },
@@ -56,7 +56,7 @@ gtag("config", "G-9XTZZLDSQZ");`}</Script>
     try {
       var url = new URL(anchor.href, window.location.href);
       if (url.hostname === "www.cnfanssp.com" || url.hostname === "cnfanssp.com") return send("main_site_click", anchor);
-      if (url.origin === window.location.origin && url.pathname.indexOf("/articles/") === 0) return send("article_click", anchor);
+      if (url.origin === window.location.origin && /^\\/(?:nl\\/|de\\/|it\\/|es\\/)?articles\\//.test(url.pathname)) return send("article_click", anchor);
     } catch (_) {}
   });
   document.addEventListener("submit", function(event) {

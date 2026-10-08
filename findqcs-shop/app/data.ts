@@ -1,5 +1,7 @@
 import { researchedArticles } from "./research-articles";
 import { qdrArticles } from "./qdr-articles";
+import { discoveryArticles } from "./discovery-articles";
+import { articleImprovements, relatedArticles } from "./article-improvements";
 
 export const MAIN_SITE = "https://www.cnfanssp.com";
 export const PLANNED_ORIGIN = "https://findqcs.shop";
@@ -71,12 +73,15 @@ export type Article = {
   readTime: string;
   updated: string;
   published?: string;
+  modified?: string;
+  related?: string[];
   localize?: boolean;
   sources?: { label: string; href: string }[];
   sections: { heading: string; paragraphs: string[]; bullets?: string[] }[];
 };
 
 export const articles: Article[] = [
+  ...discoveryArticles,
   ...researchedArticles.map((article) => ({
     ...article,
     sources: article.sources ? article.sources.map((source) => ({ ...source })) : undefined,
@@ -87,7 +92,7 @@ export const articles: Article[] = [
   })),
   ...qdrArticles.map((article) => ({
     ...article,
-    localize: false,
+    localize: true,
     sections: article.sections.map((section) => ({
       ...section,
       paragraphs: [...section.paragraphs],
@@ -309,7 +314,15 @@ export const articles: Article[] = [
       },
     ],
   },
-];
+].map((article) => ({
+  ...article,
+  related: relatedArticles[article.slug],
+  modified: "2026-10-08",
+  updated: "October 8, 2026",
+  sections: articleImprovements[article.slug]
+    ? [articleImprovements[article.slug], ...article.sections]
+    : article.sections,
+}));
 
 export const faqs = [
   { q: "What is a QC finder?", a: "A QC finder helps locate warehouse inspection photos or related visual references using a product link, marketplace identifier, name or image. The photos are evidence for research, not a guarantee for another unit." },

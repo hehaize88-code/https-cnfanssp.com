@@ -29,9 +29,9 @@ export const researchedArticles = [
         ],
       },
       {
-        heading: "Separate Standard, Premium and Ultra QC",
+        heading: "Separate Standard photos from Premium inspection data",
         paragraphs: [
-          "FindQC currently presents more than one evidence layer. Standard QC is the familiar photo record. Premium QC can include richer authorized assets and is the level connected with Product Intelligence summaries. Ultra QC is presented as video material from product inspections. These formats answer different questions. Photos are efficient for labels, geometry, measurements and visible defects. A richer set can reveal more angles or specifications. Video can help with movement, reflections and transitions between surfaces, but it still depends on framing and does not certify material composition or authenticity.",
+          "The current FindQC workflow describes Standard QC as photos and Premium QC as a richer record that can include video, weight, dimensions and fulfillment or return context. Check what is actually available on the particular result rather than assuming that every record contains every field. Use still images for readable labels and measurements, and use video when movement or a changing reflection helps resolve a specific observation. Neither format certifies authenticity or predicts the condition of a future unit.",
           "More media is not automatically better evidence. Ten similar front views may be less useful than four deliberate views covering identity, overall shape, measurement and one stress point. Video can create confidence without showing the size tag or a critical close-up. Rank every asset by the question it answers. If the missing information could change the approve, exchange or return decision, request one focused image of the exact received unit.",
         ],
       },

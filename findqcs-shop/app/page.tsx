@@ -14,7 +14,7 @@ export default function Home() {
               <h1>FindQC and QC Finder.<br /><em>Check the evidence.</em></h1>
               <p>Search product finds, learn how to read QC photos and use measurements, batch context and exact-unit evidence before shipment.</p>
               <SearchDesk />
-              <div className="hero-trust"><span>✓ Exact destination links</span><span>✓ USD reference prices</span><span>✓ No dead “View QC” buttons</span></div>
+              <div className="hero-trust"><span>✓ Exact destination links</span><span>✓ USD reference prices</span><span>✓ Practical photo checklists</span></div>
             </div>
             <aside className="finder-visual" aria-label="Matched finds and QC workflow">
               <div className="visual-orbit"><span>QC</span><small>search · match · inspect</small></div>
@@ -58,7 +58,7 @@ export default function Home() {
           <div className="shell qc-grid">
             <div className="qc-intro">
               <span className="section-index light">03</span>
-              <h2>A QC routine built for decisions—not decoration.</h2>
+              <h2>Check identity, size and visible details.</h2>
               <p>Older reference photos can help you learn what to inspect. Your approve, exchange or return decision should use the exact unit received at the warehouse.</p>
               <Link href="/qc" className="button-light">Use the full QC guide <span>→</span></Link>
             </div>
@@ -79,7 +79,8 @@ export default function Home() {
             <Link href="/finds"><small>SEARCH METHODS</small><strong>Link, ID, name or image?</strong><span>Choose the input with the strongest product identity →</span></Link>
             <Link href="/shipping"><small>REAL HAULS</small><strong>Countries, routes and cost context</strong><span>Read public logistics aggregates without turning them into a quote →</span></Link>
           </div>
-          <div className="article-grid">{articles.map((article) => <ArticleCard key={article.slug} article={article} />)}</div>
+          <div className="article-grid">{articles.slice(0, 6).map((article) => <ArticleCard key={article.slug} article={article} />)}</div>
+          <Link className="button-primary article-library-link" href="/articles">Browse all 18 QC guides <span>→</span></Link>
         </section>
 
         <section className="faq-preview shell">
