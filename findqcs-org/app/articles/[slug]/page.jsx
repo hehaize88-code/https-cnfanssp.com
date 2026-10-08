@@ -23,7 +23,7 @@ export async function generateMetadata({ params }) {
   if (!article) return {};
 
   return localizedMetadata({
-    title: article.title,
+    title: { absolute: `${article.seoTitle} | FindQCS` },
     description: article.description,
     keywords: article.keywords,
     openGraph: {
@@ -158,7 +158,7 @@ export default async function ArticlePage({ params }) {
         <div>
           <span>{articleUi.editorialDesk}</span>
           <time dateTime={article.dateISO}>{article.date}</time>
-          <span>{articleUi.factChecked}</span>
+          <span>{articleUi.updated}: <time dateTime={article.dateModified}>{article.updatedDate}</time></span>
         </div>
       </header>
 
@@ -173,6 +173,7 @@ export default async function ArticlePage({ params }) {
           {article.sections.map((section) => <a href={`#${section.id}`} key={section.id}>{section.title.replace(/^\d+\.\s*/, "")}</a>)}
         </aside>
         <div className="prose">
+          <div className="article-quick-answer"><strong>{articleUi.quickAnswer}</strong><p>{article.quickAnswer}</p></div>
           {article.intro.map((paragraph, index) => <p className={index === 0 ? "lede" : undefined} key={paragraph}>{paragraph}</p>)}
 
           {article.sections.map((section) => (
@@ -198,6 +199,7 @@ export default async function ArticlePage({ params }) {
           </section>}
 
           <ArticleCta cta={article.cta} />
+          <p className="article-catalog-link"><a href="https://www.cnfanssp.com/AllProducts/" target="_blank" rel="noopener noreferrer" data-analytics-event="article_product_click">{articleUi.openCatalog} <ExternalIcon /></a></p>
         </div>
       </div>
 

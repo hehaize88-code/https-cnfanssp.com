@@ -8,10 +8,11 @@
   },
   "scripts": {
     "dev": "vinext dev",
-    "build": "node scripts/build-multilingual.mjs",
+    "build": "npm run check:content && node scripts/build-multilingual.mjs && npm run validate",
     "build:single": "next build",
     "validate": "node scripts/validate-multilingual.mjs",
-    "preview": "vinext start"
+    "preview": "vinext start",
+    "check:content": "node scripts/check-content.mjs"
   },
   "dependencies": {
     "next": "16.2.10",
