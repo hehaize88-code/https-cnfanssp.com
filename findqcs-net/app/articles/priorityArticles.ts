@@ -1,3 +1,4 @@
+import { searchArticles } from "./searchArticles";
 export type PriorityArticle = {
   slug: string;
   label: string;
@@ -8,6 +9,8 @@ export type PriorityArticle = {
   primaryKeyword: string;
   keywords: string[];
   readTime: string;
+  datePublished?: string;
+  dateModified?: string;
   intro: string;
   sections: Array<{
     id: string;
@@ -21,7 +24,7 @@ export type PriorityArticle = {
 const published = "2026-09-10";
 export { published };
 
-export const priorityArticles: PriorityArticle[] = [
+const existingPriorityArticles: PriorityArticle[] = [
   {
     slug: "qc-photo-angle-coverage-map",
     label: "QC PHOTO ANGLES",
@@ -108,16 +111,26 @@ export const priorityArticles: PriorityArticle[] = [
   },
   {
     slug: "qc-photo-lighting-color-difference",
+    dateModified: "2026-10-08",
     label: "LIGHTING & COLOR",
-    title: "QC Photo Lighting and Color Differences: A Controlled Comparison",
+    title: "QC Photo Color Differences: Warehouse Lighting or Wrong Color?",
     shortTitle: "QC Photo Lighting and Color Difference",
-    metaTitle: "QC Photo Lighting vs Color Difference: Comparison Guide | FindQCs",
+    metaTitle: "QC Photo Color Difference: Lighting or Wrong Color? | FindQCs",
     description: "Separate warehouse lighting, camera white balance and screen effects from a possible product color mismatch in QC photos.",
     primaryKeyword: "QC photo lighting color difference",
     keywords: ["QC photo lighting color difference", "warehouse lighting QC photos", "QC color mismatch", "photo white balance"],
     readTime: "13 min",
     intro: "Color is one of the easiest QC fields to misread. The photographed item, warehouse lamps, camera processing, compression and your own display all affect what reaches the screen. A controlled comparison records those variables before treating a visible difference as a product mismatch.",
     sections: [
+      {
+        id: "quick-decision",
+        heading: "Start here: check the label, the scene and a repeat view",
+        paragraphs: [
+          "If the selected color label does not match the order, resolve that identity issue first. If the item and background both look warmer in one image, lighting or camera white balance is a plausible explanation. If a fixed patch looks different across several comparable views while nearby reference objects remain stable, request a targeted current-unit image. These checks guide the next step; they do not establish exact color accuracy from an uncalibrated screen.",
+          "In a fictional example, a beige hoodie looks yellow beside a yellow-looking ruler and floor in one frame, then cooler beside the same objects in another. That pattern points to a scene-wide shift rather than proving the hoodie changed color. Ask for an evenly lit overview with the selected label and a neutral reference visible. Preserve both originals and compare the same area without applying color filters."
+        ],
+        panel: { title: "COLOR TRIAGE", items: ["Wrong selected label: resolve the variant", "Whole scene shifts: investigate lighting and white balance", "Difference only at an angle: inspect reflections and texture", "Stable local difference: request a controlled close-up", "No usable reference: keep exact shade unverified"] }
+      },
       {
         id: "chain",
         heading: "1. Treat color as an evidence chain",
@@ -854,3 +867,5 @@ export const priorityArticles: PriorityArticle[] = [
     next: { href: "/articles/qc-photo-angle-coverage-map/", label: "Return to the QC photo angle coverage map" },
   },
 ];
+
+export const priorityArticles: PriorityArticle[] = [...searchArticles, ...existingPriorityArticles];

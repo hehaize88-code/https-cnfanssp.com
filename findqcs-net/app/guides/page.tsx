@@ -1,8 +1,9 @@
+import { languageAlternates } from "../i18n/paths";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { EditorialPage } from "../components/EditorialPage";
 
-export const metadata: Metadata = { title: "QC Guides – FindQCs", description: "Practical guides for reading QC photos, checking measurements, and evaluating product listings.", alternates: { canonical: "/guides/" } };
+export const metadata: Metadata = { title: "QC Guides – FindQCs", description: "Practical guides for reading QC photos, checking measurements, and evaluating product listings.", openGraph: {"type": "website", "title": "QC Guides \u2013 FindQCs", "description": "Practical guides for reading QC photos, checking measurements, and evaluating product listings.", "url": "/guides/", "images": ["/og.png"]}, alternates: { canonical: "/guides/", languages: languageAlternates("/guides/") } };
 
 const guides = [
   ["QC PHOTO CHECKLIST", "How to Read QC Photos Before You Buy", "A complete step-by-step method for checking shape, stitching, color, labels, measurements and visible defects.", "/guides/qc-photo-checklist/", "12 min"],

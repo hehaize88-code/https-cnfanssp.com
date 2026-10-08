@@ -1,3 +1,4 @@
+import { languageAlternates } from "../../i18n/paths";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { EditorialPage } from "../../components/EditorialPage";
@@ -8,7 +9,7 @@ export const metadata: Metadata = {
   title: "Pre-Purchase QC Evidence Worksheet: Auditable Checklist | FindQCs",
   description: "Build a pre-purchase QC evidence worksheet that records product identity, photo coverage, observations, gaps and an agent handoff decision.",
   keywords: ["pre-purchase QC evidence worksheet", "QC inspection worksheet", "QC photo decision log", "product inspection evidence record"],
-  alternates: { canonical },
+  alternates: { canonical, languages: languageAlternates(canonical) },
   robots: { index: true, follow: true },
   openGraph: {
     type: "article",

@@ -1,3 +1,4 @@
+import { languageAlternates } from "../../i18n/paths";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { EditorialPage } from "../../components/EditorialPage";
@@ -8,7 +9,7 @@ export const metadata: Metadata = {
   title: "QC Evidence Freshness Record: Source and Review Dates | FindQCs",
   description: "Build a QC evidence freshness record that separates listing capture, inspection, access and review dates without inventing a universal expiry rule.",
   keywords: ["QC evidence freshness record", "QC source date log", "QC record review date", "inspection evidence age"],
-  alternates: { canonical },
+  alternates: { canonical, languages: languageAlternates(canonical) },
   robots: { index: true, follow: true },
   openGraph: { type: "article", title: "Record Source Date, QC Record Date and Evidence Freshness", description: "A dated method for preserving what was available, when it was captured and when it was last reviewed.", url: canonical, images: ["/og.png"], publishedTime: "2026-09-01", modifiedTime: "2026-09-01" },
   twitter: { card: "summary_large_image", title: "Build a QC Evidence Freshness Record", description: "Separate listing, inspection, access and review dates before comparing evidence.", images: ["/og.png"] },

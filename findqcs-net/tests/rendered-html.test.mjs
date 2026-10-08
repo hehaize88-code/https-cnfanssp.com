@@ -24,7 +24,7 @@ test("renders canonical URLs and SEO schemas in static HTML", async () => {
 
   const home = await render("/");
   assert.match(home, /<link rel="canonical" href="https:\/\/findqcs\.net\/"\/>/i);
-  assert.match(home, /QC Finder &amp; QC Photo Guide/i);
+  assert.match(home, /FindQCs: QC Photo Search and Inspection Guides/i);
   assert.match(home, /"@type":"WebSite"/i);
   assert.match(home, /href="\/articles\/"/i);
 
@@ -49,6 +49,9 @@ test("renders canonical URLs and SEO schemas in static HTML", async () => {
   assert.doesNotMatch(freshness, /href="https:\/\/(?:findqc\.com|[^"']*(?:agent|spreadsheet))/i);
 
   const prioritySlugs = [
+    "no-qc-photos-found",
+    "sneaker-qc-photo-checklist",
+    "seller-photos-vs-warehouse-qc",
     "qc-photo-angle-coverage-map",
     "qc-photo-lighting-color-difference",
     "qc-photo-scale-reference-guide",

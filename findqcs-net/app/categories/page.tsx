@@ -1,7 +1,8 @@
+import { languageAlternates } from "../i18n/paths";
 import type { Metadata } from "next";
 import { EditorialPage } from "../components/EditorialPage";
 
-export const metadata: Metadata = { title: "Product Categories for QC Research – FindQCs", description: "Browse shoes, hoodies, T-shirts, jackets, pants, headwear, accessories, jerseys and electronics.", alternates: { canonical: "/categories/" } };
+export const metadata: Metadata = { title: "Product Categories for QC Research – FindQCs", description: "Browse shoes, hoodies, T-shirts, jackets, pants, headwear, accessories, jerseys and electronics.", openGraph: {"type": "website", "title": "Product Categories for QC Research \u2013 FindQCs", "description": "Browse shoes, hoodies, T-shirts, jackets, pants, headwear, accessories, jerseys and electronics.", "url": "/categories/", "images": ["/og.png"]}, alternates: { canonical: "/categories/", languages: languageAlternates("/categories/") } };
 const categories = [
   ["Shoes", "Check overall silhouette, toe shape, heel alignment, panel symmetry, sole finish and size label.", "shoes"], ["Hoodies & Sweaters", "Review fabric texture, print position, ribbing, hood shape, seams and garment measurements.", "hoodies-sweaters"],
   ["T-Shirts", "Check print scale, collar shape, shoulder alignment, hems, fabric appearance and measurements.", "t-shirts"], ["Jackets", "Review panel alignment, hardware, pockets, lining, fill distribution and closure operation.", "jackets"],

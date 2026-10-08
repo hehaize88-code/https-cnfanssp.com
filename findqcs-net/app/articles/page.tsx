@@ -1,3 +1,4 @@
+import { languageAlternates } from "../i18n/paths";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { EditorialPage } from "../components/EditorialPage";
@@ -6,11 +7,11 @@ import { priorityArticles } from "./priorityArticles";
 export const metadata: Metadata = {
   title: "QC Photo Guides & Product Inspection Articles | FindQCs",
   description: "Browse practical QC photo guides for angles, lighting, measurements, stitching, alignment, symmetry, print, embroidery and material evidence.",
-  alternates: { canonical: "/articles/" },
+  openGraph: {"type": "website", "title": "QC Photo Guides & Product Inspection Articles | FindQCs", "description": "Browse practical QC photo guides for angles, lighting, measurements, stitching, alignment, symmetry, print, embroidery and material evidence.", "url": "/articles/", "images": ["/og.png"]}, alternates: { canonical: "/articles/", languages: languageAlternates("/articles/") },
 };
 
 const existingArticles = [
-  ["QC SEARCH GUIDE", "How to Find QC Photos by Product Link or Keyword", "Start with an exact product link, widen to keyword or image search, and verify whether each result really matches the current listing.", "/guides/warehouse-lighting/", "10 min"],
+  ["QC SEARCH GUIDE", "Find QC Photos from Weidian, Taobao and 1688 Links", "Start with an exact product link, widen to keyword or image search, and verify whether each result really matches the current listing.", "/guides/warehouse-lighting/", "10 min"],
   ["QC PHOTO GUIDE", "How to Read QC Photos Before You Buy", "A repeatable inspection process for matching the listing, checking shape and stitching, reading measurements and spotting visible defects.", "/guides/qc-photo-checklist/", "12 min"],
   ["SIZE RESEARCH", "QC Photo Size Guide: Clothing and Shoe Measurements", "Compare actual garment and footwear measurements with an item you already own instead of relying on translated size labels.", "/guides/size-and-measurements/", "11 min"],
   ["EVIDENCE WORKSHEET", "Pre-Purchase QC Evidence Worksheet: Build an Auditable Record", "Record product identity, photo coverage, observations, evidence gaps and a clear handoff before your chosen agent acts.", "/articles/pre-purchase-qc-evidence-worksheet/", "11 min"],

@@ -69,3 +69,15 @@ a:focus-visible,button:focus-visible,summary:focus-visible,select:focus-visible,
 }
 
 @media(max-width:380px){.work-photo{height:124px}.workbench-language select{width:62px}.mobile-menu summary{padding-inline:7px}.category-filter a{font-size:9px}}
+
+/* Structured research examples remain readable on small screens. */
+.comparison-table{overflow-x:auto;margin:24px 0;border:1px solid #d8dce0;border-radius:8px}
+.comparison-table table{width:100%;border-collapse:collapse;min-width:520px;font-size:15px}
+.comparison-table caption{text-align:left;padding:14px;font-weight:600}
+.comparison-table th,.comparison-table td{padding:12px 14px;text-align:left;border-top:1px solid #d8dce0}
+.comparison-table th{background:#f2f4f5}
+.article-date{font-size:13px;color:#646b70}
+.related-reading{border-top:1px solid #d8dce0;margin-top:32px;padding-top:16px}
+.related-reading li{margin:8px 0}
+
+.language-links{display:flex;gap:16px;flex-wrap:wrap;font-size:12px;letter-spacing:.05em;margin-top:16px}.language-links a[aria-current="page"]{font-weight:700;text-decoration:underline}

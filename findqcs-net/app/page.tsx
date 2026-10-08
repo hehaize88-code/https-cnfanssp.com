@@ -2,13 +2,16 @@
 
 import { FormEvent, useState } from "react";
 import Link from "next/link";
+import LanguageLinks from "./components/LanguageLinks";
+import { LocalizedContent } from "./components/LocalizedContent";
+import { trackEvent } from "./components/AnalyticsEvents";
 import { changeLanguage, type Lang, useLanguage } from "./components/language";
 
 const copy = {
   en: {
     nav: ["Search", "Categories", "QC Guide", "FAQ"], eyebrow: "Independent product research workspace",
-    titleA: "Find the listing.", titleB: "Inspect QC photos.", intro: "Use a focused QC finder workflow: search products, confirm the source listing, and review visible details with a repeatable photo checklist.",
-    link: "Product link", keyword: "Keyword", placeholder: "Paste a product link or search shoes, jersey, hoodie…", search: "Search now", helper: "Search opens the matching product results in a new tab.",
+    titleA: "Find the listing.", titleB: "Inspect QC photos.", intro: "Find product listings, match Weidian, Taobao and 1688 source links, and learn how to read QC photos, measurements and visible defects before buying.",
+    link: "Product link", keyword: "Keyword", placeholder: "Paste a product link or search shoes, jersey, hoodie…", search: "Search now", helper: "Search opens the product catalogue in a new tab. Photo availability depends on the listing.",
     updated: "Research-first", free: "Free to browse", sources: "10 categories", catTitle: "Browse by category", catSub: "Go straight to the matching product collection.",
     freshTitle: "Fresh listings to inspect", freshSub: "Current product pages from the connected catalogue. Listing images are references—not QC approval.", open: "Open listing", listing: "Listing preview",
     method: "A better QC routine", methodSub: "The same three checks, every time. Fast enough for daily use; strict enough to catch obvious problems.",
@@ -19,8 +22,8 @@ const copy = {
   },
   de: {
     nav: ["Suche", "Kategorien", "QC-Ratgeber", "FAQ"], eyebrow: "Unabhängiger Arbeitsbereich zur Produktrecherche",
-    titleA: "Produkt finden.", titleB: "Details prüfen.", intro: "Produkte suchen, die ursprüngliche Artikelseite öffnen und vor der Entscheidung eine klare QC-Checkliste nutzen.",
-    link: "Produktlink", keyword: "Suchbegriff", placeholder: "Produktlink einfügen oder Schuhe, Trikot, Hoodie suchen…", search: "Jetzt suchen", helper: "Die Suche öffnet passende Produktergebnisse in einem neuen Tab.",
+    titleA: "Produkt finden.", titleB: "QC-Fotos prüfen.", intro: "Produktangebote finden, Weidian-, Taobao- und 1688-Links zuordnen und QC-Fotos, Maße und sichtbare Mängel vor dem Kauf prüfen.",
+    link: "Produktlink", keyword: "Suchbegriff", placeholder: "Produktlink einfügen oder Schuhe, Trikot, Hoodie suchen…", search: "Jetzt suchen", helper: "Die Suche öffnet den Produktkatalog in einem neuen Tab. Ob QC-Fotos vorliegen, hängt vom Angebot ab.",
     updated: "Recherche zuerst", free: "Kostenlos", sources: "10 Kategorien", catTitle: "Nach Kategorie suchen", catSub: "Direkt zur passenden Produktkollektion.",
     freshTitle: "Aktuelle Artikel zum Prüfen", freshSub: "Aktuelle Produktseiten aus dem verbundenen Katalog. Artikelbilder sind Referenzen – keine QC-Freigabe.", open: "Artikel öffnen", listing: "Artikelvorschau",
     method: "Eine bessere QC-Routine", methodSub: "Immer dieselben drei Prüfungen: schnell im Alltag und streng genug für offensichtliche Probleme.",
@@ -30,8 +33,8 @@ const copy = {
   },
   fr: {
     nav: ["Recherche", "Catégories", "Guide QC", "FAQ"], eyebrow: "Espace indépendant de recherche produit",
-    titleA: "Trouvez l’article.", titleB: "Inspectez les détails.", intro: "Recherchez un produit, ouvrez sa fiche source et appliquez une méthode QC régulière avant de décider.",
-    link: "Lien produit", keyword: "Mot-clé", placeholder: "Collez un lien ou recherchez chaussures, maillot, hoodie…", search: "Rechercher", helper: "La recherche ouvre les résultats correspondants dans un nouvel onglet.",
+    titleA: "Trouvez l’article.", titleB: "Examinez les photos QC.", intro: "Trouvez des produits, identifiez les liens Weidian, Taobao et 1688, puis apprenez à lire les photos QC, les mesures et les défauts visibles avant l’achat.",
+    link: "Lien produit", keyword: "Mot-clé", placeholder: "Collez un lien ou recherchez chaussures, maillot, hoodie…", search: "Rechercher", helper: "La recherche ouvre le catalogue dans un nouvel onglet. Les photos disponibles dépendent de la fiche produit.",
     updated: "Recherche d’abord", free: "Accès gratuit", sources: "10 catégories", catTitle: "Explorer par catégorie", catSub: "Accédez directement à la collection correspondante.",
     freshTitle: "Fiches récentes à inspecter", freshSub: "Pages actuelles du catalogue connecté. Les images sont des références, pas une validation QC.", open: "Ouvrir la fiche", listing: "Aperçu de fiche",
     method: "Une meilleure routine QC", methodSub: "Toujours les trois mêmes contrôles : assez rapides au quotidien et assez stricts pour repérer les problèmes visibles.",
@@ -41,8 +44,8 @@ const copy = {
   },
   es: {
     nav: ["Buscar", "Categorías", "Guía QC", "FAQ"], eyebrow: "Espacio independiente de investigación de productos",
-    titleA: "Encuentra el producto.", titleB: "Revisa los detalles.", intro: "Busca productos, abre la ficha original y utiliza una lista QC consistente antes de decidir.",
-    link: "Enlace del producto", keyword: "Palabra clave", placeholder: "Pega un enlace o busca zapatillas, camiseta, sudadera…", search: "Buscar ahora", helper: "La búsqueda abre los resultados correspondientes en una pestaña nueva.",
+    titleA: "Encuentra el producto.", titleB: "Revisa las fotos QC.", intro: "Encuentra productos, identifica enlaces de Weidian, Taobao y 1688 y aprende a revisar fotos QC, medidas y defectos visibles antes de comprar.",
+    link: "Enlace del producto", keyword: "Palabra clave", placeholder: "Pega un enlace o busca zapatillas, camiseta, sudadera…", search: "Buscar ahora", helper: "La búsqueda abre el catálogo en otra pestaña. La disponibilidad de fotos depende del anuncio.",
     updated: "Primero investigar", free: "Acceso gratuito", sources: "10 categorías", catTitle: "Explorar por categoría", catSub: "Accede directamente a la colección correspondiente.",
     freshTitle: "Productos recientes para revisar", freshSub: "Páginas actuales del catálogo conectado. Las imágenes son referencias, no una aprobación QC.", open: "Abrir producto", listing: "Vista previa",
     method: "Una rutina QC mejor", methodSub: "Las mismas tres comprobaciones cada vez: rápidas para el uso diario y estrictas con los problemas visibles.",
@@ -52,8 +55,8 @@ const copy = {
   },
   it: {
     nav: ["Cerca", "Categorie", "Guida QC", "FAQ"], eyebrow: "Spazio indipendente per la ricerca dei prodotti",
-    titleA: "Trova l’articolo.", titleB: "Controlla i dettagli.", intro: "Cerca i prodotti, apri la scheda originale e usa una procedura QC coerente prima di decidere.",
-    link: "Link prodotto", keyword: "Parola chiave", placeholder: "Incolla un link o cerca scarpe, maglia, felpa…", search: "Cerca ora", helper: "La ricerca apre i risultati corrispondenti in una nuova scheda.",
+    titleA: "Trova l’articolo.", titleB: "Esamina le foto QC.", intro: "Trova prodotti, identifica i link Weidian, Taobao e 1688 e impara a leggere foto QC, misure e difetti visibili prima dell’acquisto.",
+    link: "Link prodotto", keyword: "Parola chiave", placeholder: "Incolla un link o cerca scarpe, maglia, felpa…", search: "Cerca ora", helper: "La ricerca apre il catalogo in una nuova scheda. Le foto disponibili dipendono dall’inserzione.",
     updated: "Prima la ricerca", free: "Accesso gratuito", sources: "10 categorie", catTitle: "Esplora per categoria", catSub: "Vai direttamente alla collezione corrispondente.",
     freshTitle: "Articoli recenti da controllare", freshSub: "Pagine attuali del catalogo collegato. Le immagini sono riferimenti, non un’approvazione QC.", open: "Apri articolo", listing: "Anteprima articolo",
     method: "Una routine QC migliore", methodSub: "Sempre gli stessi tre controlli: rapidi ogni giorno e rigorosi sui problemi visibili.",
@@ -105,13 +108,13 @@ export default function Home() {
   const x = extra[lang];
 
   function changeLang(next: Lang) { changeLanguage(next); }
-  function submit(e: FormEvent) { e.preventDefault(); const value = query.trim(); const target = value ? `https://cnfanssp.com/search.html?keywords=${encodeURIComponent(value)}&channelid=2` : "https://cnfanssp.com/AllProducts/"; window.open(target, "_blank", "noopener,noreferrer"); }
+  function submit(e: FormEvent) { e.preventDefault(); const value = query.trim(); const target = value ? `https://cnfanssp.com/search.html?keywords=${encodeURIComponent(value)}&channelid=2` : "https://cnfanssp.com/AllProducts/"; trackEvent("catalogue_search", { search_mode: mode, query_present: value ? 1 : 0, page_language: lang }); window.open(target, "_blank", "noopener,noreferrer"); }
 
   const websiteSchema = { "@context":"https://schema.org", "@type":"WebSite", "@id":"https://findqcs.net/#website", url:"https://findqcs.net/", name:"FindQCs", description:"An independent QC finder and QC photo guide for product research, measurements and visible-detail inspection." };
   const organizationSchema = { "@context":"https://schema.org", "@type":"Organization", "@id":"https://findqcs.net/#organization", url:"https://findqcs.net/", name:"FindQCs", logo:{"@type":"ImageObject",url:"https://findqcs.net/findqc-logo.png",width:128,height:128} };
 
   return (
-    <main className="workbench-site">
+    <LocalizedContent><main className="workbench-site">
       <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(websiteSchema)}} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(organizationSchema)}} />
       <header className="workbench-header frame">
@@ -148,12 +151,12 @@ export default function Home() {
       </section>
 
       <section className="knowledge-zone">
-          <div className="frame knowledge-grid"><div className="knowledge-intro"><span>{articleLabel[lang]}</span><h2>{x.readingTitle}</h2><Link href="/articles/">{x.read} ↗</Link></div><Link href="/guides/qc-photo-checklist/" className="knowledge-feature"><span>12 MIN</span><h3>{x.fullTitle}</h3><p>{x.fullDesc}</p><b>{x.open} ↗</b></Link><div className="knowledge-stack"><Link href="/articles/qc-photo-angle-coverage-map/"><span>12 MIN</span><b>QC photo angle coverage map</b><i>↗</i></Link><Link href="/articles/qc-photo-lighting-color-difference/"><span>13 MIN</span><b>Lighting or product color difference?</b><i>↗</i></Link><Link href="/articles/qc-measurement-comparison-table/"><span>13 MIN</span><b>Build a QC measurement table</b><i>↗</i></Link><Link href="/articles/stitching-seam-qc-checklist/"><span>13 MIN</span><b>Stitching and seam QC checklist</b><i>↗</i></Link></div></div>
+          <div className="frame knowledge-grid"><div className="knowledge-intro"><span>{articleLabel[lang]}</span><h2>{x.readingTitle}</h2><Link href="/articles/">{x.read} ↗</Link></div><Link href="/guides/qc-photo-checklist/" className="knowledge-feature"><span>12 MIN</span><h3>{x.fullTitle}</h3><p>{x.fullDesc}</p><b>{x.open} ↗</b></Link><div className="knowledge-stack"><Link href="/articles/no-qc-photos-found/"><span>12 MIN</span><b>No QC photos found? Check the link</b><i>↗</i></Link><Link href="/articles/qc-photo-lighting-color-difference/"><span>13 MIN</span><b>Lighting or product color difference?</b><i>↗</i></Link><Link href="/articles/sneaker-qc-photo-checklist/"><span>13 MIN</span><b>Sneaker QC photo checklist</b><i>↗</i></Link><Link href="/articles/seller-photos-vs-warehouse-qc/"><span>13 MIN</span><b>Seller photos vs warehouse QC photos</b><i>↗</i></Link></div></div>
       </section>
 
       <section id="faq" className="work-faq frame"><div className="work-faq-intro"><span>FAQ / 04</span><h2>{t.faqTitle}</h2><p>{t.faqSub}</p><Link href="/faq/">{x.all} ↗</Link></div><div className="work-faq-list">{t.faqs.map(([q,a],i)=><details key={q} open={i===0}><summary><span>0{i+1}</span>{q}<b>+</b></summary><p>{a}</p></details>)}</div></section>
 
-      <footer className="workbench-footer frame"><a className="workbench-brand" href="#top"><img src="/findqc-logo.png" alt="FindQCs" width="128" height="128"/><span><b>FindQCs</b><small>{t.footer}</small></span></a><nav><Link href="/articles/">{articleLabel[lang]}</Link><Link href="/privacy/">{footerLabels[lang][0]}</Link><Link href="/disclaimer/">{footerLabels[lang][1]}</Link></nav></footer>
-    </main>
+      <footer className="workbench-footer frame"><a className="workbench-brand" href="#top"><img src="/findqc-logo.png" alt="FindQCs" width="128" height="128"/><span><b>FindQCs</b><small>{t.footer}</small></span></a><nav><Link href="/articles/">{articleLabel[lang]}</Link><Link href="/privacy/">{footerLabels[lang][0]}</Link><Link href="/disclaimer/">{footerLabels[lang][1]}</Link></nav><LanguageLinks/></footer>
+    </main></LocalizedContent>
   );
 }

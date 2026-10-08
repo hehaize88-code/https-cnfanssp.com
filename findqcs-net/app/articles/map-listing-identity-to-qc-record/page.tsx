@@ -1,3 +1,4 @@
+import { languageAlternates } from "../../i18n/paths";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { EditorialPage } from "../../components/EditorialPage";
@@ -8,7 +9,7 @@ export const metadata: Metadata = {
   title: "Map Listing Identity to a QC Record: Evidence Method | FindQCs",
   description: "Map source listing identity to a QC record using item IDs, seller, variant, date and conflict states before comparing inspection evidence.",
   keywords: ["map listing identity to QC record", "QC record identity match", "product inspection identity log", "listing to QC evidence mapping"],
-  alternates: { canonical },
+  alternates: { canonical, languages: languageAlternates(canonical) },
   robots: { index: true, follow: true },
   openGraph: { type: "article", title: "Map Listing Identity to the QC Record Before Comparing Evidence", description: "A field-by-field method for deciding whether listing and QC evidence describe the same target.", url: canonical, images: ["/og.png"], publishedTime: "2026-08-28", modifiedTime: "2026-08-28" },
   twitter: { card: "summary_large_image", title: "Map Listing Identity to the QC Record", description: "Preserve item, seller, option and date before transferring QC observations.", images: ["/og.png"] },

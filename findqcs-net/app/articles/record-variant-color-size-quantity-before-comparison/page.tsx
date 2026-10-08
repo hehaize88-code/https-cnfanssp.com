@@ -1,3 +1,4 @@
+import { languageAlternates } from "../../i18n/paths";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { EditorialPage } from "../../components/EditorialPage";
@@ -8,7 +9,7 @@ export const metadata: Metadata = {
   title: "QC Variant Record: Color, Size and Quantity Log | FindQCs",
   description: "Build a QC variant record for color, size, quantity, bundle and option text before comparing product inspection photos or measurements.",
   keywords: ["QC variant record", "product inspection variant log", "record color size quantity QC", "QC option comparison"],
-  alternates: { canonical },
+  alternates: { canonical, languages: languageAlternates(canonical) },
   robots: { index: true, follow: true },
   openGraph: { type: "article", title: "Record Variant, Color, Size and Quantity Before QC Comparison", description: "A field-level QC variant log that prevents evidence from one option being assigned to another.", url: canonical, images: ["/og.png"], publishedTime: "2026-08-30", modifiedTime: "2026-08-30" },
   twitter: { card: "summary_large_image", title: "Build a QC Variant Record Before Comparison", description: "Freeze option identity before comparing photos, measurements or included parts.", images: ["/og.png"] },

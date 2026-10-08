@@ -105,3 +105,35 @@ The timeout defaults can be overridden for a controlled canary with `SITES_INSTA
 
 - [vinext Documentation](https://github.com/cloudflare/vinext)
 - [Drizzle D1 Guide](https://orm.drizzle.team/docs/get-started/d1-new)
+
+
+## FindQCs production maintenance
+
+Production source is this `findqcs-net/` directory. The existing GitHub `main`
+connection builds with `npm run build` and publishes `dist/client`. Keep changes
+inside this directory and retain catalogue destinations on `cnfanssp.com`.
+
+English URLs remain unchanged. German, French, Spanish and Italian use `/de/`,
+`/fr/`, `/es/` and `/it/` prefixes. All 135 URLs are prerendered; language changes
+navigate to the equivalent URL. No browser translation API is needed.
+
+Translations live in `app/i18n/messages/`. They were prepared offline, with
+reviewed titles, key terminology and article passages. The localized route sends
+only the current page's dictionary to the browser, using `page-keys.json`.
+When editing prose, update all four dictionaries, build, run
+`python scripts/collect-localization-keys.py`, then rebuild and run `npm test`.
+A new page also needs an entry in the localized registry or article collection
+and the sitemap. `node scripts/generate-sitemap.mjs` maintains this release's
+135 URL sitemap; update the content modification date when publishing changes.
+
+Release 2026-10-08 adds three search-intent articles and improves the existing
+link-search, measurement and color-comparison guides. The release preserves
+existing article URLs, products and catalogue destinations. `catalogue_search`
+records search mode and query presence without the raw query; `catalogue_click`
+records the destination path and product/category type. Verify event collection
+in GA4 after real visits; zero key events does not establish zero purchases.
+
+Validation: `npm test` checks rendered metadata, schemas, English article length,
+all sitemap routes, reciprocal language alternates, internal links and complete
+translated new-article paragraphs. Build from a clean `dist/` directory when
+checking prerendered output so stale local HTML cannot mask a source change.

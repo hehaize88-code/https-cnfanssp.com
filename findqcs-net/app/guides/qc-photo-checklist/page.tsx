@@ -1,8 +1,9 @@
+import { languageAlternates } from "../../i18n/paths";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { EditorialPage } from "../../components/EditorialPage";
 
-export const metadata: Metadata = { title: "How to Read QC Photos: Complete Checklist | FindQCs", description: "A practical QC photo checklist covering product match, measurements, shape, stitching, materials, labels, color and visible defects.", alternates: { canonical: "/guides/qc-photo-checklist/" } };
+export const metadata: Metadata = { title: "How to Read QC Photos: Complete Checklist | FindQCs", description: "A practical QC photo checklist covering product match, measurements, shape, stitching, materials, labels, color and visible defects.", openGraph: {"type": "article", "title": "How to Read QC Photos: Complete Checklist | FindQCs", "description": "A practical QC photo checklist covering product match, measurements, shape, stitching, materials, labels, color and visible defects.", "url": "/guides/qc-photo-checklist/", "images": ["/og.png"]}, alternates: { canonical: "/guides/qc-photo-checklist/", languages: languageAlternates("/guides/qc-photo-checklist/") } };
 
 const faq = [
   ["How many QC photos are enough?", "There is no universal number. You need enough angles to see the front, back, sides, key details, size label and any area where a defect is likely."],

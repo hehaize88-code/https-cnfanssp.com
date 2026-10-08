@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { EditorialPage } from "../../components/EditorialPage";
+import { languageAlternates } from "../../i18n/paths";
 import { priorityArticles, published } from "../priorityArticles";
 
 type Params = Promise<{ slug: string }>;
@@ -23,7 +24,7 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
     title: article.metaTitle,
     description: article.description,
     keywords: article.keywords,
-    alternates: { canonical },
+    alternates: { canonical, languages: languageAlternates(canonical) },
     robots: { index: true, follow: true },
     openGraph: {
       type: "article",
@@ -31,8 +32,8 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
       description: article.description,
       url: canonical,
       images: ["/og.png"],
-      publishedTime: published,
-      modifiedTime: published,
+      publishedTime: article.datePublished || published,
+      modifiedTime: article.dateModified || article.datePublished || published,
     },
     twitter: {
       card: "summary_large_image",
@@ -55,8 +56,8 @@ export default async function PriorityArticlePage({ params }: { params: Params }
     headline: article.title,
     description: article.description,
     image: "https://findqcs.net/og.png",
-    datePublished: published,
-    dateModified: published,
+    datePublished: article.datePublished || published,
+    dateModified: article.dateModified || article.datePublished || published,
     inLanguage: "en",
     author: { "@type": "Organization", name: "FindQCs", url: "https://findqcs.net/" },
     publisher: { "@type": "Organization", name: "FindQCs", logo: { "@type": "ImageObject", url: "https://findqcs.net/findqc-logo.png" } },
@@ -79,7 +80,7 @@ export default async function PriorityArticlePage({ params }: { params: Params }
           {article.sections.map((section) => <a href={`#${section.id}`} key={section.id}>{section.heading}</a>)}
         </aside>
         <div className="prose">
-          <p className="lead">{article.intro}</p>
+          <p className="article-date">Updated: {article.dateModified || article.datePublished || published}</p><p className="lead">{article.intro}</p>
           {article.sections.map((section) => (
             <section key={section.id} aria-labelledby={section.id}>
               <h2 id={section.id}>{section.heading}</h2>
@@ -88,6 +89,7 @@ export default async function PriorityArticlePage({ params }: { params: Params }
             </section>
           ))}
           <p className="article-disclosure"><strong>Independent scope:</strong> FindQCs organizes product research and visible QC evidence. It does not sell the items, operate a warehouse, take current-unit photos, authenticate products or execute purchases, returns or international shipping.</p>
+          <div className="related-reading"><h2>Continue your QC research</h2><ul><li><Link href="/guides/warehouse-lighting/">Find QC photos from a product link</Link></li><li><Link href="/guides/size-and-measurements/">Compare clothing and shoe measurements</Link></li><li><Link href="/articles/">Browse all QC photo guides</Link></li></ul></div>
           <Link className="article-cta" href={article.next.href}>{article.next.label} <span>→</span></Link>
         </div>
       </div>
