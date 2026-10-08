@@ -37,11 +37,11 @@ export default function ArticlesPage() {
             <div className="breadcrumbs"><Link href="/">Home</Link> / Articles</div>
             <p className="eyebrow">Independent AllChinaBuy research desk</p>
             <h1>AllChinaBuy Shipping, Warehouse and Product Research Guides</h1>
-            <p className="lede">Plan an ACBuy order from product research through warehouse checks, parcel submission, tracking and country-specific delivery—with live prices and policies always verified before payment.</p>
+            <p className="lede">Plan an AllChinaBuy order from product research through warehouse checks, parcel submission, tracking and country-specific delivery—with live prices and policies always verified before payment.</p>
           </div>
         </header>
         <section className="section-shell section-block">
-          <div className="section-heading"><div><p className="eyebrow">Keyword-led library</p><h2>{seoArticles.length} focused guides for real search tasks.</h2></div><p>The library now covers two distinct needs: spreadsheet and product research, plus the missing high-intent topics around shipping time, costs, tracking, fees, warehouse handling, returns and delivery to the USA, UK and Canada.</p></div>
+          <div className="section-heading"><div><p className="eyebrow">Practical buyer guides</p><h2>{seoArticles.length} guides for product and parcel decisions.</h2></div><p>Choose a guide for the decision in front of you: product sizing, extra QC photos, packing instructions, shipping quotes or parcel tracking.</p></div>
           <div className="article-directory">
             {seoArticles.map((article, index) => (
               <article className="article-directory-card" key={article.slug}>

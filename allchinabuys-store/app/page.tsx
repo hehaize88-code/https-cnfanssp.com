@@ -3,6 +3,8 @@ import { PageShell } from "@/components/PageShell";
 import { SearchBox } from "@/components/SearchBox";
 import { categories, guides, products } from "@/lib/data";
 
+import { seoArticles } from "@/lib/seo-articles";
+
 const featured = products[0];
 
 export default function Home() {
@@ -11,10 +13,10 @@ export default function Home() {
       <main className="index-home">
         <section className="index-intro section-shell">
           <div className="index-masthead">
-            <p><span>Independent product index</span><b>Edition 09 / 2026</b></p>
+            <p><span>Independent product index</span><b>Edition 10 / 2026</b></p>
             <div>
-              <h1>ACBuy Finds 2026<br /><em>AllChinaBuy Product Index.</em></h1>
-              <p className="index-deck">A source-first workspace for comparing ACBuy product records, reviewing QC priorities and opening the right catalog page.</p>
+              <h1>AllChinaBuy Finds<br /><em>Product and QC Guides.</em></h1>
+              <p className="index-deck">Compare product records, check sizing and warehouse photos, then open the matching catalog page.</p>
             </div>
           </div>
 
@@ -33,7 +35,7 @@ export default function Home() {
 
             <div className="directory-panel">
               <div className="directory-tools">
-                <div><span className="panel-kicker">Product directory</span><strong>8 records / 8 categories</strong></div>
+                <div><span className="panel-kicker">Product directory</span><strong>{products.length} records / {categories.length} categories</strong></div>
                 <Link href="/spreadsheet">Open full index <span>↗</span></Link>
               </div>
               <SearchBox />
@@ -102,8 +104,10 @@ export default function Home() {
           </div>
         </section>
 
+        <section className="home-articles section-shell"><div className="index-section-title"><div><span>04 / Latest guides</span><h2>Make the next decision clearer.</h2></div><Link href="/articles">Browse all {seoArticles.length} articles →</Link></div><div className="home-article-grid">{seoArticles.slice(0, 6).map((article) => <article key={article.slug}><p>{article.kicker}</p><h3><Link href={`/articles/${article.slug}`}>{article.title}</Link></h3><span>{article.read}</span></article>)}</div></section>
+
         <section className="answer-desk section-shell">
-          <div className="answer-label"><span>04 / Quick answers</span><h2>No vague promises.</h2><Link href="/faq">See complete FAQ ↗</Link></div>
+          <div className="answer-label"><span>05 / Quick answers</span><h2>No vague promises.</h2><Link href="/faq">See complete FAQ ↗</Link></div>
           <div className="answer-list">
             <details open><summary>Is this an official AllChinaBuy website?<span>+</span></summary><p>No. It is an independent product discovery resource. Purchasing and account services happen on the linked destination.</p></details>
             <details><summary>Does “source checked” mean QC approved?<span>+</span></summary><p>No. It means the destination record was checked. Inspect the warehouse photos for your own item before shipping.</p></details>
