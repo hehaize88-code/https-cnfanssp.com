@@ -125,10 +125,7 @@ const baseArticles = Object.fromEntries(Object.keys(copy).map((lang) => [lang, e
 
 const parityReadyArticles = Object.fromEntries(Object.keys(baseArticles).map((lang) => [lang, applyParityArticles(extendArticles(baseArticles[lang], lang), lang)]));
 
-export const seoArticles = Object.fromEntries(Object.keys(parityReadyArticles).map((lang) => [
-  lang,
-  [...localizedPriorityArticles[lang], ...localizedPriorityArticlesSecondSet[lang], ...applyArticleParityBoost(parityReadyArticles[lang], lang, parityReadyArticles.en), localizedRequirementsBriefArticles[lang], localizedUseCaseArticles[lang], localizedPrioritiesArticles[lang]],
-]));
+export { seoArticles } from "./release-articles.js";
 
 export const categoryCopy = {
   en: {

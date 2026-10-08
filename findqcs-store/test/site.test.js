@@ -44,7 +44,7 @@ const privacy = await get("https://findqcs.store/privacy");
 assert.match(privacy.body, /<meta name="robots" content="noindex,follow">/);
 
 const sitemap = await get("https://findqcs.store/sitemap.xml");
-assert.equal((sitemap.body.match(/<url>/g) || []).length, 140);
+assert.equal((sitemap.body.match(/<url>/g) || []).length, 160);
 assert.doesNotMatch(sitemap.body, /\/privacy|\/terms/);
 assert.match(sitemap.body, /product-requirements-brief-before-search/);
 assert.match(sitemap.body, /define-product-use-case-before-search/);

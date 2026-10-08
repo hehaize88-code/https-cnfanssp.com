@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "wrangler dev",
     "check": "wrangler deploy --dry-run",
-    "test": "node test/site.test.js",
+    "test": "node test/site.test.js && node test/release.test.js",
     "deploy": "wrangler deploy --minify"
   },
   "devDependencies": {
