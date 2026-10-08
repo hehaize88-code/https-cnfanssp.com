@@ -117,6 +117,9 @@ The timeout defaults can be overridden for a controlled canary with `SITES_INSTA
 The production target remains Cloudflare Pages, rooted at `allchinabuys-shop`,
 with build command `npm run build` and output `dist/client`. Python 3 is required
 in addition to the existing Node toolchain; the exporter uses only the standard library.
+The project pins Node 22.16.0 and Python 3.13.3 using the standard Pages version
+files. The publication build preserves the host environment so runtime managers
+can locate their installed interpreters.
 
 English retains its existing root URLs. German, French, Spanish, Polish and
 Japanese have complete static copies under `/de/`, `/fr/`, `/es/`, `/pl/` and `/ja/`.

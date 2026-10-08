@@ -2,10 +2,17 @@
 set -euo pipefail
 
 script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+export SITES_PROJECT_ROOT="$(cd "${script_dir}/.." && pwd)"
+cd "${SITES_PROJECT_ROOT}"
 
-if [[ "${SITES_ENV_READY:-}" != "1" ]]; then
-  exec "${script_dir}/sites-env.sh" -- "$0" "$@"
-fi
+# Use the builder's configured Node and Python installations. Replacing HOME
+# here can hide version-manager configuration in hosted build environments.
+export WRANGLER_WRITE_LOGS=false
+export WRANGLER_LOG_PATH="${SITES_PROJECT_ROOT}/.wrangler/logs"
+export MINIFLARE_REGISTRY_PATH="${SITES_PROJECT_ROOT}/.wrangler/registry"
+
+node --version
+python3 --version
 
 command -v timeout || {
   echo "build-verified.sh requires GNU timeout." >&2
