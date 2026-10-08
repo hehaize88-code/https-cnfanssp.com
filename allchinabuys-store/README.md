@@ -14,7 +14,28 @@ Worker build and a complete static export for Cloudflare Pages.
 - Node.js version: `22.13.0` or newer
 
 `build:pages` sets the static-export flag only for this build, so every known
-route is emitted as HTML under `out/`. The existing `npm run build` and
+route is emitted as HTML under `out/`. It then runs `scripts/localize-export.mjs`
+and `scripts/verify-export.mjs`. The production output has English at the original
+URLs and complete German, French, Spanish, Italian and Polish pages under
+`/de/`, `/fr/`, `/es/`, `/it/` and `/pl/`. Each page has a self canonical, reciprocal
+hreflang links, localized metadata and same-language internal navigation.
+
+The final export uses `public/site-ui.js` for the language selector, mobile menu
+and existing GA4 events. It deliberately omits Next hydration scripts so the
+English render cannot replace localized HTML. Update this small script whenever
+adding client-side interactions. Native forms and details elements remain usable
+without JavaScript; language links are also available in the footer.
+
+When adding content, build the raw English export, run
+`node scripts/localize-export.mjs --collect`, and supply every missing string in
+`lib/translations.json`. Review translated terminology, titles, numerical examples
+and complete paragraphs. Missing translations fail the production build rather
+than silently displaying English. Always run `npm run build:pages` from a fresh
+Next export; do not localize an already localized sitemap. The verification gate
+checks all six versions, internal links, forms, metadata and article counts.
+`out/release.json` identifies the deployed release for post-publish checks.
+
+The existing `npm run build` and
 `npm run deploy` commands remain available for a Cloudflare Worker deployment.
 
 A clean full-stack starter running on

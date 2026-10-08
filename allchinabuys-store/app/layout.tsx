@@ -6,16 +6,16 @@ import { LanguageProvider } from "@/components/LanguageModule";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://allchinabuys.store"),
-  title: { default: "ACBuy Finds 2026 | AllChinaBuy Product Index", template: "%s | ACBuy Finds" },
-  description: "Browse ACBuy finds, AllChinaBuy product records, QC checklists and current catalog links in an independent, source-checked product index.",
+  title: { default: "AllChinaBuy Finds | Products, Sizing and QC Guides", template: "%s | AllChinaBuy Finds" },
+  description: "Browse AllChinaBuy product finds, compare sizing and QC evidence, and read practical guides to measurements, packaging and shipping.",
   alternates: { canonical: "/" },
   robots: {
     index: true,
     follow: true,
     googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1, "max-video-preview": -1 },
   },
-  openGraph: { type: "website", title: "ACBuy Finds 2026 | AllChinaBuy Product Index", description: "Browse ACBuy finds, product records, QC checklists and current catalog links.", url: "/", images: [{ url: "/og-v2.png", width: 1732, height: 908, alt: "ACBuy finds and AllChinaBuy product index" }] },
-  twitter: { card: "summary_large_image", title: "ACBuy Finds 2026 | AllChinaBuy Product Index", description: "Browse ACBuy finds, product records, QC checklists and current catalog links.", images: ["/og-v2.png"] },
+  openGraph: { type: "website", title: "AllChinaBuy Finds | Products, Sizing and QC Guides", description: "Explore AllChinaBuy finds, measurement guides and practical QC checklists.", url: "/", images: [{ url: "/og-v2.png", width: 1732, height: 908, alt: "ACBuy finds and AllChinaBuy product index" }] },
+  twitter: { card: "summary_large_image", title: "AllChinaBuy Finds | Products, Sizing and QC Guides", description: "Browse ACBuy finds, product records, QC checklists and current catalog links.", images: ["/og-v2.png"] },
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",

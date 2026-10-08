@@ -7,6 +7,11 @@ import { getSeoArticle, seoArticles } from "@/lib/seo-articles";
 const siteUrl = "https://allchinabuys.store";
 
 const relatedSlugs: Record<string, string[]> = {
+  "acbuy-shoes-spreadsheet-sizing-qc-photos": ["allchinabuy-qc-photo-requests-measurements", "allchinabuy-shoe-box-removal-volumetric-weight-example", "allchinabuy-shipping-expert-request-quote-checklist"],
+  "acbuy-hoodie-spreadsheet-measurements-qc": ["allchinabuy-qc-photo-requests-measurements", "allchinabuy-shipping-expert-request-quote-checklist", "cheapest-acbuy-shipping-consolidation-packaging"],
+  "allchinabuy-shipping-expert-request-quote-checklist": ["allchinabuy-shoe-box-removal-volumetric-weight-example", "allchinabuy-warehouse-storage-consolidation-qc", "allchinabuy-fees-payment-currency-shipping-charges"],
+  "allchinabuy-qc-photo-requests-measurements": ["acbuy-shoes-spreadsheet-sizing-qc-photos", "acbuy-hoodie-spreadsheet-measurements-qc", "allchinabuy-returns-refunds-before-shipping"],
+  "allchinabuy-shoe-box-removal-volumetric-weight-example": ["allchinabuy-shipping-expert-request-quote-checklist", "cheapest-acbuy-shipping-consolidation-packaging", "acbuy-shoes-spreadsheet-sizing-qc-photos"],
   "allchinabuy-shipping-to-usa-customs-delivery-planning": ["acbuy-shipping-time-order-warehouse-delivery", "cheapest-acbuy-shipping-consolidation-packaging", "allchinabuy-parcel-tracking-status-delays"],
   "allchinabuy-shipping-to-uk-vat-parcel-planning": ["allchinabuy-fees-payment-currency-shipping-charges", "allchinabuy-parcel-tracking-status-delays", "cheapest-acbuy-shipping-consolidation-packaging"],
   "allchinabuy-shipping-to-canada-duties-delivery": ["allchinabuy-parcel-tracking-status-delays", "allchinabuy-fees-payment-currency-shipping-charges", "cheapest-acbuy-shipping-consolidation-packaging"],
@@ -36,8 +41,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       title: article.metaTitle,
       description: article.description,
       url: `/articles/${article.slug}`,
-      publishedTime: "2026-09-09T00:00:00Z",
-      modifiedTime: "2026-09-09T00:00:00Z",
+      publishedTime: `${article.published ?? "2026-09-09"}T00:00:00Z`,
+      modifiedTime: `${article.updated ?? "2026-09-09"}T00:00:00Z`,
     },
   };
 }
@@ -59,8 +64,8 @@ export default async function SeoArticlePage({ params }: { params: Promise<{ slu
       "@type": "Article",
       headline: article.title,
       description: article.description,
-      datePublished: "2026-09-09",
-      dateModified: "2026-09-09",
+      datePublished: article.published ?? "2026-09-09",
+      dateModified: article.updated ?? "2026-09-09",
       mainEntityOfPage: articleUrl,
       keywords: [article.primaryKeyword, ...article.supportingKeywords].join(", "),
       author: { "@type": "Organization", name: "AllChinaBuy Product Index Editorial Desk" },
@@ -84,7 +89,7 @@ export default async function SeoArticlePage({ params }: { params: Promise<{ slu
         <header className="page-hero">
           <div className="section-shell">
             <div className="breadcrumbs"><Link href="/">Home</Link> / <Link href="/articles">Articles</Link> / {article.primaryKeyword}</div>
-            <p className="eyebrow">{article.kicker} · Published September 9, 2026 · {article.read}</p>
+            <p className="eyebrow">{article.kicker} · <time dateTime={article.published ?? "2026-09-09"}>{article.published ?? "2026-09-09"}</time> · {article.read}</p>
             <h1>{article.title}</h1>
             <p className="lede">{article.description}</p>
           </div>
@@ -92,11 +97,13 @@ export default async function SeoArticlePage({ params }: { params: Promise<{ slu
         <div className="section-shell content-grid">
           <article className="article-body" data-article-body>
             <div className="research-note"><b>Editorial standard</b><span>This independent guide separates observable listing and warehouse evidence from seller claims. Prices, variants and route options must be checked on the live record.</span></div>
+            <div className="research-note"><b>Platform status checked October 8, 2026</b><span>The official AllChinaBuy homepage displayed maintenance. Earlier platform descriptions are historical context; confirm current availability, fees and route terms before ordering.</span></div>
             {article.introduction.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
             {article.sections.map((section) => (
               <section key={section.heading}>
                 <h2>{section.heading}</h2>
                 {section.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+                {section.table ? <table className="comparison-table"><thead><tr>{section.table.headers.map((cell) => <th key={cell}>{cell}</th>)}</tr></thead><tbody>{section.table.rows.map((row, index) => <tr key={index}>{row.map((cell, i) => <td key={i}>{cell}</td>)}</tr>)}</tbody></table> : null}
                 {section.checklist ? <div className="article-callout"><strong>Working checklist</strong><ul>{section.checklist.map((item) => <li key={item}>{item}</li>)}</ul></div> : null}
               </section>
             ))}
@@ -108,7 +115,7 @@ export default async function SeoArticlePage({ params }: { params: Promise<{ slu
               <p className="eyebrow">Next useful step</p>
               <h3>Compare the guide with a current record.</h3>
               <p>Use the local index to understand the options, then open the live catalog only when you are ready to verify price and availability.</p>
-              {article.categorySlug ? <Link className="button button-dark" href={`/categories/${article.categorySlug}`}>Browse related records</Link> : <Link className="button button-dark" href="/spreadsheet">Open ACBuy spreadsheet</Link>}
+              {article.categorySlug ? <Link className="button button-dark" href={`/categories/${article.categorySlug}`}>Browse related records</Link> : <Link className="button button-dark" href="/spreadsheet">Open AllChinaBuy spreadsheet</Link>}
               <Link className="button button-outline" href="/guides/qc-checks">Use the QC checklist</Link>
               <a className="button button-outline" href="https://www.cnfanssp.com/AllProducts/" target="_blank" rel="noopener noreferrer">Open live catalog</a>
             </div>
