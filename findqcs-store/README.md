@@ -69,3 +69,5 @@ or traffic gains. Bing and GA4 traffic reports were unavailable in that review.
 
 Run `npm test` for regression and release checks, then `npm run check` for a
 Worker bundle dry run. Deployment uses the existing GitHub integration.
+
+Deployment trigger: 2026-10-08; content commit abe2aaf39fd4a2f726c4e4d911a55382bd7e4f10.
