@@ -1,3 +1,4 @@
+import { HOME_GUIDE_SLUGS } from "./seoUpdates";
 import Link from "next/link";
 import { Arrow } from "@/components/Icons";
 import { CategoryCard, ProductCard } from "@/components/Cards";
@@ -74,7 +75,7 @@ export default function Home() {
             <div><span className="section-label">Find your lane</span><h2>Shop the edit,<br/><em>category by category.</em></h2></div>
             <p>Start with the closest product type to keep the right measurements, materials and construction checks in view.</p>
           </div>
-          <div className="category-grid">{categories.slice(0, 6).map((category, index) => <CategoryCard category={category} index={index} key={category.slug}/>)}</div>
+          <div className="category-grid">{categories.map((category, index) => <CategoryCard category={category} index={index} key={category.slug}/>)}</div>
           <div className="center-action"><Link className="button outline" href="/categories">Browse all categories <Arrow/></Link></div>
         </div>
       </section>
@@ -110,7 +111,7 @@ export default function Home() {
             <div><span className="section-label">The field journal</span><h2>Read before<br/><em>you click out.</em></h2></div>
             <p>Product-led reading about Hacoo finds, wardrobe planning, category choices and live listing checks—written to support a real decision.</p>
           </div>
-          <div className="guide-grid">{[...guides.slice(0,2),...guides.filter((guide)=>guide.homeFeatured).slice(0,2)].map((guide, index) => <Link href={"/guides/" + guide.slug} className="guide-card" key={guide.slug}><span className="guide-number">0{index + 1}</span><div><small>{guide.read} read</small><h3>{guide.title}</h3><p>{guide.short}</p><span className="text-link">Read the story <Arrow size={16}/></span></div></Link>)}</div>
+          <div className="guide-grid">{HOME_GUIDE_SLUGS.map((slug)=>guides.find((guide)=>guide.slug===slug)).map((guide, index) => <Link href={"/guides/" + guide.slug} className="guide-card" key={guide.slug}><span className="guide-number">0{index + 1}</span><div><small>{guide.read} read</small><h3>{guide.title}</h3><p>{guide.short}</p><span className="text-link">Read the story <Arrow size={16}/></span></div></Link>)}</div>
         </div>
       </section>
 

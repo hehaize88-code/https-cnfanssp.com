@@ -346,3 +346,10 @@ h1,h2,h3{letter-spacing:-.065em}
   .club-home .club-method-grid{grid-template-columns:1fr}
   .localized-shell:not(.home-page) .research-grid,.localized-shell:not(.home-page) .check-grid,.localized-shell:not(.home-page) .values-grid{grid-template-columns:1fr}
 }
+.article .article-head h1,
+.page-hero h1,
+.research-card h3 { overflow-wrap: anywhere; hyphens: auto; }
+.article-sources p { overflow-wrap: anywhere; }
+@media (max-width: 720px) {
+  .article .article-head h1 { font-size: clamp(32px, 8.5vw, 44px); line-height: 1.12; letter-spacing: -.035em; }
+}

@@ -1,0 +1,260 @@
+{
+  "hacoo-order-tracking": {
+    "title": "Hacoo Pakete verfolgen: verspätet, zugestellt oder zurückgesandt",
+    "seoTitle": "Hacoo Sendungsverfolgung: Verspätung, Verlust und Rücksendung",
+    "short": "Ordne Hacoo Sendungsereignisse richtig ein, trenne Vorbereitung und Transport und dokumentiere verspätete, fehlende oder zurückgesandte Pakete.",
+    "kicker": "Sendungsverfolgung / praktische Orientierung",
+    "intro": "Beginne mit der Bestellung, der Sendungsnummer und dem letzten datierten Ereignis des Zustellers. Die Bestellung beschreibt deinen Kauf, die Sendungsnummer ein Paket und der Scan einen gemeldeten Vorgang. Ein einzelner Status bestätigt weder einen Liefertermin noch einen Erstattungsanspruch. Dieser Leitfaden hilft dir, vorhandene Informationen zu ordnen, den nächsten sinnvollen Schritt zu erkennen und den zuständigen Bestellservice anzusprechen. Hacoos ist unabhängig und kann weder dein Konto einsehen noch ein Paket für dich orten.",
+    "factBox": [
+      [
+        "Ausgangspunkt",
+        "Bestellung, Zusteller und letztes datiertes Ereignis"
+      ],
+      [
+        "Getrennte Phasen",
+        "Vorbereitung, Transport und Zustellung"
+      ],
+      [
+        "Privat aufbewahren",
+        "Bestellnummer, Sendungsnummer, Adresse und Fallnummer"
+      ]
+    ],
+    "sections": [
+      [
+        "Finde die Sendungsnummer der richtigen Bestellung",
+        [
+          "Öffne die Bestellung bei dem Dienst, bei dem du bezahlt hast. Vergleiche Datum, Artikel und Lieferland, bevor du eine Nummer kopierst. Eine Bestellnummer ist nicht automatisch eine Sendungsnummer. Bei mehreren Paketen notierst du jede Nummer mit den zugeordneten Artikeln. Ein zugestelltes Paket beweist nicht, dass alle Artikel einer aufgeteilten Bestellung angekommen sind.",
+          "Nutze einen in der Bestellung angegebenen Zustellerlink, sofern vorhanden. Suchst du selbst nach dem Zusteller, prüfe dessen Domain und gib die Nummer direkt ein. Eine fremde Trackingseite benötigt weder dein Kontopasswort noch Zahlungsdaten. Fehlt die Nummer, frage nach dem Vorbereitungs- oder Versandstand. Die Bestellnummer wiederholt in unterschiedlichen Trackern auszuprobieren klärt diesen Unterschied nicht."
+        ]
+      ],
+      [
+        "Lies Ereignis, Datum und Ort gemeinsam",
+        [
+          "Sieh dir den vollständigen Verlauf an, nicht nur den auffälligen Status. Speichere Wortlaut, Datum, Uhrzeit und Ort. Eine erstellte Versandmarke dokumentiert meist übermittelte Sendungsdaten, aber nicht zwingend die körperliche Übergabe. Ein Annahme- oder Abholscan liefert dafür stärkere Hinweise. Begriffe unterscheiden sich zwischen Zustellern; orientiere dich an deren eigener Erklärung statt an einer vermeintlich universellen Übersetzung.",
+          "Eine neue Oberfläche kann ein altes Ereignis oben anzeigen. Prüfe, ob sich die tatsächliche Scanzeit geändert hat. Zeitzonen und übersetzte Ortsnamen können den Ablauf ungewöhnlich erscheinen lassen. Notiere nur das Sichtbare und erfinde keine Bewegungen zwischen zwei Scans. Eine Aktualisierungslücke allein beweist weder Verlust noch Beschlagnahmung oder einen gescheiterten Zustellversuch."
+        ]
+      ],
+      [
+        "Trenne Vorbereitung von Transportdauer",
+        [
+          "Erstelle eine Zeitleiste mit Zahlung, Versandbestätigung, erster Annahme und letzter Meldung. Ohne sichtbare Annahme fragst du den Bestellservice nach der Übergabe. Wurde das Paket angenommen und bleibt danach unverändert, übermittle den letzten Scan und frage nach der zuständigen Untersuchung. So diskutierst du keine Transportverspätung, während eigentlich die Vorbereitung ungeklärt ist.",
+          "Bewahre die bei der Bestellung angezeigte Schätzung auf und notiere, ob sie Versand oder Ankunft meint. Ein allgemeiner Ratgeber liefert Hintergrund; die datierte Angabe für deinen Auftrag und dein Lieferland ermöglicht den Vergleich. Addiere keine Zeitspannen unterschiedlicher Hilfeseiten. Wird der zeitliche Puffer vor einer Reise oder Veranstaltung zu klein, plane eine Alternative. Tracking macht aus einer Schätzung keinen garantierten Termin."
+        ]
+      ],
+      [
+        "Gehe fehlenden neuen Scans gezielt nach",
+        [
+          "Vergleiche die Bestellansicht mit dem Verlauf beim genannten Zusteller. Suche nach einer zweiten Nummer oder einem ausdrücklich angegebenen lokalen Partner. Internationale Übergaben können verschiedene Ansichten derselben Sendung erzeugen; unterstelle eine Übergabe aber nicht ohne Hinweis. Bei widersprüchlichen Angaben speicherst du beide Ansichten samt Prüfzeit.",
+          "Schicke eine gezielte Anfrage mit Versanddatum, letztem Scan, gespeicherter Ankunftsschätzung und deiner konkreten Frage. Kläre, ob eine Nachforschung, Adresskorrektur oder andere Handlung nötig ist und wann du nachfragen sollst. Es gibt keine universelle Zahl stiller Tage, die ein Hacoo Paket in jedem Land als verloren ausweist. Nutze die für Bestellung und Zusteller genannte Untersuchungsfrist und behalte die Fallnummer."
+        ]
+      ],
+      [
+        "Prüfe zugestellt, aber nicht auffindbar",
+        [
+          "Vergleiche die Bestelladresse mit dem Zustellerverlauf und suche nach Foto, Unterschrift, Ablagehinweis oder Abholinformation. Kontrolliere übliche Ablageorte und frage mögliche Empfänger im Haushalt. Ein Türfoto kann eine Fehlzustellung erkennen lassen; der Status zugestellt allein sagt nicht, wer das Paket erhielt. Veröffentliche keine Versandetiketten oder fremden Adressen bei der Suche nach Hilfe.",
+          "Bleibt das Paket verschwunden, melde den Widerspruch zeitnah über den offiziellen Bestellservice. Nenne Zustellstatus, Uhrzeit und bereits durchgeführte Prüfungen. Bitte um Zustellnachweis und den nächsten Untersuchungsschritt. Unterscheide kontrollierte von unzugänglichen Orten und bekannte von unbekannten Unterschriften. Hacoos kann das Ergebnis dieser Untersuchung nicht bestimmen."
+        ]
+      ],
+      [
+        "Beachte Abholfristen und Rücksendungen",
+        [
+          "Eine Abholmeldung verlangt eine andere Reaktion als ein Paket im Transport. Prüfe Ort, Öffnungszeiten, erforderliche Dokumente und letzten Abholtag anhand der Zustelleranweisungen. Kannst du nicht abholen, frage nach erlaubten Alternativen. Eine unbeantwortete Nachricht verlängert die Lagerfrist nicht automatisch. Halte jede vereinbarte Lösung vor Fristablauf fest.",
+          "Hacoos Hilfe zum Rücktransport nennt einen möglichen Neuversand oder die Prüfung einer Erstattung. Kontaktiere den Bestellservice bei diesem Status. Frage, ob das Paket noch erreichbar ist, ob eine andere Adresse benötigt wird und welche Lösung geprüft wird. Ein Transport-Rücklauf ist keine vom Kunden genehmigte Warenretoure. Versende nichts zusätzlich und bezahle nicht erneut allein aufgrund einer automatischen Meldung."
+        ]
+      ],
+      [
+        "Übermittle einen nachvollziehbaren Supportfall",
+        [
+          "Nenne fünf Punkte: betroffene Bestellung, konkretes Paket, letztes datiertes Ereignis, ausstehender Schritt und gewünschte Klärung. Füge gespeicherte Schätzung und lesbaren Tracking-Screenshot bei, soweit relevant. Private Nummern gehören in den offiziellen Fall statt in öffentliche Kommentare. Bei mehreren Paketen muss klar sein, welches betroffen ist und welche Artikel fehlen.",
+          "Bleibe möglichst im selben Fall. Notiere Fallnummer, Antwortdatum, zugesagte Rückmeldung und eigene Aufgaben. Eine bewilligte Erstattung dokumentierst du getrennt vom Transport: Ein Scan bestätigt keinen Geldeingang bei der Bank. Der Rückgabe- und Erstattungsleitfaden erklärt diese Unterscheidung. Klare Unterlagen ermöglichen gezieltes Nachfassen beim offenen Schritt, ohne die gesamte Geschichte neu aufzubauen."
+        ]
+      ],
+      [
+        "Schließe die Zeitleiste nach der Lösung ab",
+        [
+          "Vergleiche bei Ankunft den Inhalt mit den zugeordneten Artikeln und prüfe die Verpackung, bevor du Etiketten oder Schutzmaterial entsorgst. Dokumentiere sichtbare Schäden, fehlende Teile oder falsche Varianten zeitnah mit Gesamtansicht und Detailfoto. Die Zustellung beendet den Transport, beseitigt aber nicht automatisch eine Produktabweichung.",
+          "Bewahre eine private Zusammenfassung auf, bis alle Rücksendungen und Zahlungen abgeschlossen sind. Für eine öffentliche Bewertung reichen Lieferland und grober Zeitablauf; entferne Nummern, Adressen, Namen und Zahlungsdetails. Beschreibe dein Ergebnis als Einzelerfahrung. So hilft der Bericht beim Vergleich einer ähnlichen Strecke, ohne deinen Fall zur allgemeinen Hacoo Lieferzeit zu erklären."
+        ]
+      ]
+    ],
+    "steps": [
+      "Bestellung und Paketnummer zuordnen",
+      "Letztes datiertes Ereignis sichern",
+      "Offene Phase und Fristen bestimmen",
+      "Im offiziellen Fall nachfassen"
+    ],
+    "sourceNote": "Unabhängige Methode, geprüft am 9. Oktober 2026. Offizieller Kontext: Hacoo Hilfecenter, EU-Versand, Eintrag 6 zu zurückgesandten Paketen. Statusbedeutung und Fallanweisungen beim Zusteller und Bestellservice bestätigen."
+  },
+  "hacoo-product-links-not-working": {
+    "title": "Hacoo Links funktionieren nicht: geänderte Angebote prüfen",
+    "seoTitle": "Hacoo Link funktioniert nicht? Angebot richtig prüfen",
+    "short": "Unterscheide Seitenfehler, nötige Anmeldung, fehlende Varianten und geänderte Angebote, bevor du einen Hacoo Produktlink ersetzt.",
+    "kicker": "Produktlinks / die richtige Referenz wiederfinden",
+    "intro": "Bewahre zuerst die alte Referenz auf, wenn ein Hacoo Link nicht mehr funktioniert. Eine Fehlerseite, eine Anmeldung, eine fehlende Option und ein anderes Produkt sind unterschiedliche Probleme. Dieser Leitfaden vergleicht alte Hinweise mit dem aktuellen Ziel. Er verspricht weder geheime Produktcodes noch die Wiederherstellung gelöschter Angebote. Hacoos ist ein unabhängiger Ratgeber; externe Kataloglinks führen zu einem anderen Dienst mit eigenen Angeboten und Bedingungen.",
+    "factBox": [
+      [
+        "Aufbewahren",
+        "URL, Titel, Screenshot und Datum"
+      ],
+      [
+        "Einordnen",
+        "Seitenfehler, Zugang oder geändertes Produkt"
+      ],
+      [
+        "Ersetzen",
+        "Erst nach Vergleich von Artikel und Variante"
+      ]
+    ],
+    "sections": [
+      [
+        "Dokumentiere das tatsächliche Linkverhalten",
+        [
+          "Öffne die gespeicherte Adresse einmal und notiere Zielseite, sichtbare Meldung und Prüfzeit. Nicht gefunden deutet auf eine unerreichbare Adresse hin. Ein leerer Bildschirm kann ein Ladeproblem sein. Eine Anmeldung betrifft den Zugang. Eine Produktseite mit anderem Titel kann auf veränderten Inhalt hinweisen. Diese Beobachtungen helfen mehr als der bloße Vermerk kaputter Link.",
+          "Speichere ursprüngliche Adresse und Weiterleitungsziel getrennt. Behalte den alten Screenshot mit Titel und Option, falls vorhanden. Überschreibe die Tabellenzeile nicht mit der ersten funktionierenden Seite. Sonst verlierst du die Grundlage, um Umzug, Änderung und Löschung zu unterscheiden. Eine ladende Seite beweist nicht, dass sie weiterhin dasselbe Produkt beschreibt."
+        ]
+      ],
+      [
+        "Schließe Kopier- und Ladefehler aus",
+        [
+          "Prüfe, ob die URL vollständig ist und keine Satzzeichen aus einer Nachricht enthält. Vergleiche sie mit der gespeicherten Quelle. Wurde eine Adresse auf mehrere Zeilen verteilt, kopiere den eigentlichen Link erneut aus dem Original. Rate keine Produktnummer und entferne keine unbekannten Bestandteile nur, damit irgendeine Seite lädt.",
+          "Lade eine leere oder unvollständige Seite normal neu und lies sichtbare Fehler. Bietet der Dienst einen offiziellen Web- oder App-Weg, folge dessen Anweisungen. Ein unabhängiger Ratgeber kann gleiche Erreichbarkeit in allen Regionen, Konten und Versionen nicht zusichern. Vermeide Umwege über unbekannte Linkdienste und gib Zugangsdaten nicht auf einer lediglich ähnlich benannten Domain ein."
+        ]
+      ],
+      [
+        "Unterscheide fehlendes Produkt und fehlende Variante",
+        [
+          "Die Seite kann existieren, obwohl Größe, Farbe oder Set aus dem Screenshot nicht mehr auswählbar sind. Prüfe Auswahlfelder und Verfügbarkeit, bevor du das ganze Produkt als verschwunden einstufst. Das Hauptbild kann mehrere Varianten zeigen, während die aktive Auswahl nur eine meint. Notiere die fehlende Variante und die tatsächlich angebotenen Optionen.",
+          "Ersetze eine fehlende Größe nicht durch denselben Buchstaben aus einem anderen Angebot. Maße und Schnitt können abweichen. Eine andere Elektronikrevision oder ein anderes Zubehörset ist trotz gleicher Aufnahme ein neuer Kandidat. Markiere das Original als nicht verfügbar und prüfe Ersatz von Anfang an. Eine Linkreparatur darf nicht unbemerkt das erwartete Produkt austauschen."
+        ]
+      ],
+      [
+        "Prüfe bei einem Domainwechsel erneut",
+        [
+          "Ein Produktpfad gehört zur Domain, auf der er veröffentlicht wurde. Dieselbe Nummer in einem anderen Katalog kann einen völlig anderen Artikel bezeichnen. Vergleiche Titel, erstes Bild, Quellreferenz und Optionsdetails, wenn sich die Domain ändert. Gleiche URL-Endungen allein belegen keine Übereinstimmung.",
+          "Suche im aktuellen Katalog nach charakteristischen Wörtern oder einem unterstützten Modellbezeichner. Öffne Kandidaten und vergleiche den tatsächlichen Inhalt. Ein Suchergebnis ist ein Rechercheweg, kein bestätigter Ersatz. Bleiben entscheidende Hinweise unbestätigt, lasse die Zeile offen und nutze eine Kategorie für ausdrücklich als Alternativen bezeichnete Produkte."
+        ]
+      ],
+      [
+        "Bestätige Ersatz vor der Aktualisierung",
+        [
+          "Prüfe zuerst Identität: Kategorie, Modell oder Referenz, erkennbare Konstruktion und ausgewählte Variante. Vergleiche dann Maßtabelle, Materialangaben und Lieferumfang, zuletzt Verfügbarkeit und Bedingungen. Ein allgemeiner Name wie Hoodie reicht nicht. Mehrere Angebote können dasselbe Werbefoto nutzen, ohne Verkäufer, Varianten oder Spezifikationen zu teilen.",
+          "Verwende drei Ergebnisse: passende Referenz, mögliche Alternative oder ungeklärt. Eine passende Referenz braucht konsistente Hinweise in den wichtigen Feldern. Eine Alternative benötigt eine eigene Bewertung und behält ihre Kennzeichnung. Ungeklärt heißt, dass die Belege keinen Schluss tragen. Eine offene Zeile ist besser als ein selbstsicher präsentierter falscher Ersatz."
+        ]
+      ],
+      [
+        "Nutze Screenshot-Kontext ohne erfundene Details",
+        [
+          "Trenne sichtbare Beschriftung von Vermutung. Ein lesbares Modell, eine bestimmte Naht oder ein Verschluss kann die Suche eingrenzen. Bildunterschrift, eingeblendeter Rabatt oder Hintergrund identifizieren das Produkt nicht unbedingt. Markiere unsichere Zeichen, statt eine exakte Suche auf eine geratene Nummer aufzubauen.",
+          "Hast du nur das Bild, nutze den Leitfaden zur Produktsuche mit altem Link oder Screenshot. Er erklärt visuelle Hinweise und den Vergleich einer kleinen Kandidatenliste. Diese Seite behandelt dagegen eine bekannte Adresse. Beide Methoden haben dieselbe Schlussprüfung: aktuelle Detailseite und konkrete Option vergleichen, bevor du das Produkt als wiedergefunden bezeichnest."
+        ]
+      ],
+      [
+        "Melde einen falschen Verweis nachvollziehbar",
+        [
+          "Nutze bei einem falschen Hacoos Verweis die Kontaktseite. Nenne lokale URL, externes Ziel, erwarteten Artikel und sichtbares Problem. Ergänze Prüfdatum und einen Screenshot ohne persönliche Daten. Für eine redaktionelle Linkkorrektur brauchst du weder Passwort noch Zahlungsbeleg oder vollständige Adresse zu übermitteln.",
+          "Betrifft das Problem eine vorhandene Bestellung, kontaktiere zusätzlich den zuständigen Bestellservice. Ein Ratgeber kann einen Verweis korrigieren, aber keine Bestellung ändern, Zahlung stornieren oder Variante wiederherstellen. Getrennte Anfragen erreichen die richtige Stelle. Beschreibe den beobachtbaren Unterschied und bitte um Klärung, statt allein aus einer fehlenden Seite öffentliche Vorwürfe abzuleiten."
+        ]
+      ],
+      [
+        "Führe eine dauerhaft nachvollziehbare Auswahl",
+        [
+          "Speichere pro Artikel vollständige URL, exakten Titel, Option, sichtbaren Identifikator, Prüfdatum und ein hilfreiches Maß. Behalte den ursprünglichen Link bei einem Ersatz und notiere den Grund für die Zuordnung. Ein kleines Änderungsprotokoll erklärt mehr als ein pauschales Aktualisiert-Schild, weil es die konkrete Prüfung dokumentiert.",
+          "Kontrolliere den letzten Kandidaten vor einer Entscheidung erneut. Bestand und Bedingungen können sich auch nach einer aktuellen redaktionellen Prüfung ändern. Trenne Referenzbilder von privaten Bestellbelegen und beurteile Eignung mit Kategorie- und Größenratgebern. Einen Hacoo Link zu reparieren soll einen verlässlichen Rechercheweg herstellen, nicht bloß einen Fehler durch irgendeine klickbare Produktseite ersetzen."
+        ]
+      ]
+    ],
+    "steps": [
+      "Originaladresse und Belege sichern",
+      "Sichtbaren Fehler einordnen",
+      "Wenige aktuelle Kandidaten vergleichen",
+      "Treffer, Alternative oder Unklarheit dokumentieren"
+    ],
+    "sourceNote": "Eigene Hacoos Redaktionsmethode, geprüft am 9. Oktober 2026. Sie beschreibt allgemeine Link- und Angebotsprüfungen ohne Zugriff auf Hacoos internen Katalog und ohne Wiederherstellungsgarantie."
+  },
+  "find-hacoo-product-old-link-screenshot": {
+    "title": "Hacoo Produkt mit altem Link oder Screenshot finden",
+    "seoTitle": "Hacoo Produkt finden: alter Link oder Screenshot",
+    "short": "Nutze sichtbaren Text, charakteristische Details und einen geordneten Vergleich, um aus einem alten Hacoo Screenshot eine gezielte Suche zu machen.",
+    "kicker": "Produktsuche / vom Bild zu überprüfbaren Hinweisen",
+    "intro": "Ein alter Hacoo Screenshot ist ein Hinweis, kein vollständiger Produktdatensatz. Vielleicht zeigt er Titel, Modell oder nur einen Ausschnitt eines Beitrags. Trenne sichtbare Merkmale zunächst von Annahmen über Verkäufer, Material und Verfügbarkeit. Suche anschließend wenige Kandidaten und vergleiche aktuelle Detailseiten. Die Methode grenzt die Suche ein und macht Unsicherheit sichtbar; sie garantiert weder Wiederfinden noch Echtheit oder Identität ähnlich aussehender Artikel.",
+    "factBox": [
+      [
+        "Erfassen",
+        "Sichtbarer Text, Kennungen und besondere Merkmale"
+      ],
+      [
+        "Vergleichen",
+        "Aktuelle Angebote und konkrete Variante"
+      ],
+      [
+        "Dokumentieren",
+        "Übereinstimmungen und fehlende Informationen"
+      ]
+    ],
+    "sections": [
+      [
+        "Bewahre Originalbild und Kontext auf",
+        [
+          "Speichere das Original, bevor du eine Arbeitskopie zuschneidest oder beschriftest. Notiere Quelle, Speicherdatum und Bildtyp: Beitrag, Katalog oder Bestellung. Diese Quellen liefern unterschiedliche Hinweise. Ein Outfitfoto kann mehrere unabhängige Teile zeigen; eine Produktseite beschreibt meist ein Angebot mit mehreren Optionen.",
+          "Notiere eine alte URL exakt und behalte den vollständigen Titel, falls vorhanden. Eine erinnerte allgemeine Beschreibung kennzeichnest du als Erinnerung, nicht als sichtbaren Text. Entferne Namen, Adressen und Bestelldaten, bevor du ein Bild öffentlich suchst oder teilst. Bewahre das private Original zum eigenen Vergleich auf."
+        ]
+      ],
+      [
+        "Erstelle vor der Suche eine Hinweisliste",
+        [
+          "Ordne Hinweise in Kennungen, beschreibende Merkmale und Kontext. Lesbare Modellcodes oder Quellreferenzen sind Kennungen. Taschenposition, Verschluss, Sohlenform, Aufteilung und Farbkombination sind Merkmale. Urheber, Datum, Hintergrund und Styling sind Kontext. Beginne mit dem spezifischsten verlässlichen Hinweis, nicht zwingend dem auffälligsten.",
+          "Übertrage Text sorgfältig. Null und O oder eins und I sind in kleinen Bildern leicht zu verwechseln. Halte mögliche Lesarten fest, statt still eine auszuwählen. Automatische Texterkennung liefert einen Entwurf, den du am Bild prüfst. Ein falsches Zeichen kann das passende Modell ausschließen oder auf eine andere Produktfamilie führen."
+        ]
+      ],
+      [
+        "Suche von präzisen Kennungen zu allgemeinen Merkmalen",
+        [
+          "Beginne mit lesbarem Modell oder charakteristischem Titelausschnitt. Bringt das nichts, kombiniere Kategorie und zwei sichtbare Merkmale, etwa Verschluss und Panelaufteilung. Ändere jeweils nur einen Teil der Suchanfrage, um hilfreiche Anpassungen zu erkennen. Viele geratene Wörter können den guten Hinweis zwischen falschen Annahmen verstecken.",
+          "Verwende die Katalogsuche für Seiten dieses Katalogs und eine Websuche bei unbekannter Quelle. Eine Nummer kann nur auf einer Plattform Bedeutung haben und anderswo nicht durchsuchbar sein. Keine Ergebnisse heißt lediglich, dass diese Suche keinen Kandidaten fand. Es beweist weder, dass der Artikel nie existierte, noch dass sämtliche Angebote verschwunden sind."
+        ]
+      ],
+      [
+        "Nutze Bildsuche zur Kandidatensuche",
+        [
+          "Wählst du eine Bildsuchmaschine, schneide eine Kopie um den Artikel zu und erhalte charakteristische Konstruktion. Bei Jacken können Frontverschluss und Taschen helfen, bei Schuhen Sohlenprofil und Panelübergänge. Entfernst du den entscheidenden Unterschied, erscheinen viele allgemeine Produkte gleich plausibel.",
+          "Ähnliche Bilder sind Recherchehinweise. Suchsysteme können nach Farbe, Aufbau oder mehrfach genutztem Werbefoto gruppieren, obwohl die Angebote abweichen. Öffne jeden sinnvollen Kandidaten und lies aktuelle Angaben. Bildähnlichkeit bestätigt weder Echtheit noch Verkäufer oder Material. Bleibt die Unterscheidung unmöglich, dokumentiere das, statt das erste Bild als Treffer zu wählen."
+        ]
+      ],
+      [
+        "Vergleiche wenige Kandidaten anhand gleicher Felder",
+        [
+          "Halte zwei oder drei plausible Kandidaten fest. Notiere URL, Titel, sichtbare Kennung, gewählte Option und passendes Bildmerkmal. Ergänze Widersprüche: anderer Verschluss, andere Panelzahl, neue Modellrevision oder fehlende Setteile. Ein Widerspruch zählt auch bei einem sehr ähnlichen Hauptbild.",
+          "Trenne fehlende von widersprüchlichen Belegen. Ohne Rückseitenfoto ist die Rückseite ungeprüft. Ein Foto mit anderen Nähten belegt eine Abweichung. Frage wichtige fehlende Details über den legitimen Kontakt des Angebots an. Ohne Klärung bleibt das Feld offen, statt Angaben einer anderen Seite zu übernehmen."
+        ]
+      ],
+      [
+        "Prüfe Variante, Maße und Lieferumfang",
+        [
+          "Auch eine passende Seite kann zur falschen Variante führen. Vergleiche Farbe, Größe, Revision und enthaltene Teile. Lies die zur Option gehörige Tabelle statt automatisch die erste der Produktfamilie. Miss Kleidung an einem vorhandenen Vergleichsstück und Schuhe nach der Methode des Angebots. Ein vertrauter Größenbuchstabe ersetzt keine Spezifikation.",
+          "Bei Zubehör zählen Abmessungen, Verschlüsse und alle enthaltenen Komponenten. Bei Elektronik prüfst du vollständiges Modell, Anschlüsse, Stromversorgung und regionale Version; Optik beweist keine Kompatibilität. Fehlen diese Angaben im alten Screenshot, ist die Eignung des Kandidaten neu zu prüfen. Derselbe Stil beantwortet nicht, ob Größe, Spezifikation und Paketinhalt heute zu dir passen."
+        ]
+      ],
+      [
+        "Unterscheide Wiederfund und Alternative",
+        [
+          "Kennzeichne einen Treffer nur, wenn Identitätshinweise und wichtige Optionen übereinstimmen. Mögliche Alternative bedeutet ähnliche Funktion oder Optik ohne ausreichenden Identitätsnachweis. Ungeklärt heißt, dass du keine der beiden Aussagen treffen kannst. Das sind Rechercheergebnisse, keine Qualitätsnoten; sie erlauben einen Abschluss ohne übertriebene Gewissheit.",
+          "Setze einen sinnvollen Endpunkt, bevor du Dutzende Seiten öffnest. Bei unlesbarer Kennung und mehrfach verwendeter Aufnahme bringen weitere allgemeine Suchen möglicherweise wenig. Frage nach Möglichkeit die ursprüngliche Quelle nach einer klareren Referenz. Andernfalls beginne eine neue Auswahl nach tatsächlichen Anforderungen und trenne sie vom Versuch, den alten Artikel wiederzufinden."
+        ]
+      ],
+      [
+        "Speichere eine künftig besser auffindbare Referenz",
+        [
+          "Nach Annahme eines Kandidaten speicherst du vollständige Adresse, Titel, Option, Kennung, Maße und Prüfdatum. Ein Screenshot sollte identifizierende Angaben enthalten, nicht nur ein attraktives Bild. Notiere den Grund der Zuordnung und offene Fragen. Ändert sich der Link, bieten diese Angaben mehr Suchansätze als eine nackte URL.",
+          "Öffne das Angebot vor einer Entscheidung erneut und prüfe Bestand sowie Bedingungen. Eine gespeicherte Auswahl ist keine Reservierung. Melde falsche Hacoos Verweise mit lokaler Seite, Ziel und sachlicher Beschreibung. Bei bestehenden Käufen ist der Bestellservice für Nachfragen zuständig. Entdeckung, Produktprüfung und Bestellhilfe bleiben getrennte Aufgaben, auch wenn sie mit demselben Screenshot anfangen."
+        ]
+      ]
+    ],
+    "steps": [
+      "Verlässliche Hinweise aus dem Original erfassen",
+      "Kennungen vor allgemeinen Merkmalen suchen",
+      "Kandidaten und Widersprüche vergleichen",
+      "Exakte Variante prüfen und Ergebnis sichern"
+    ],
+    "sourceNote": "Eigene Hacoos Redaktionsmethode, geprüft am 9. Oktober 2026. Sie verwendet sichtbare Angaben und gewöhnliche Suche; sie behauptet keine Hacoo Bildsuchfunktion oder garantierten Zugriff auf gelöschte Angebote."
+  }
+}

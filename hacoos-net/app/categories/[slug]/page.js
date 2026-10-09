@@ -1,3 +1,4 @@
+import GuideLinks from "@/components/GuideLinks";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { Arrow, CheckIcon } from "@/components/Icons";
@@ -34,6 +35,7 @@ export default async function CategoryPage({params}) {
 
     <section className="section wrap"><div className="story-grid"><div><span className="section-label">Avoid false matches</span><h2>Common comparison mistakes.</h2></div><div><p className="large-copy">A focused {c.name.toLowerCase()} page is useful only when the selected option, measurements and live details all refer to the same item.</p><ul className="mistake-list">{research.mistakes.map((mistake)=><li key={mistake}><CheckIcon size={18}/><span>{mistake}</span></li>)}</ul><div className="inline-links"><Link href="/guides/how-to-use-hacoo-spreadsheet">Use the spreadsheet workflow <Arrow size={16}/></Link><Link href="/guides/qc-photo-checklist">Read the photo checklist <Arrow size={16}/></Link></div></div></div></section>
 
+    <GuideLinks slug={slug}/>
     <section className="update-section"><div className="wrap update-layout"><div><span className="section-label">Update log</span><h2>What changed on this page.</h2></div><ol className="update-log"><li><time dateTime={CATALOG_REVIEW.iso}>{CATALOG_REVIEW.label}</time><div><h3>Product and research refresh</h3><p>Verified listing #{featuredProduct.listingId} and the category route, added a direct-link fallback, published the size/QC worksheet, and expanded the category FAQ.</p></div></li></ol></div></section>
 
     <section className="soft-section"><div className="wrap category-faq"><div><span className="section-label">Quick answers</span><h2>{c.name} research FAQ.</h2></div><div className="faq-list">{research.faqs.map(([question,answer])=><details key={question}><summary>{question}<span>+</span></summary><p>{answer}</p></details>)}</div></div></section>
