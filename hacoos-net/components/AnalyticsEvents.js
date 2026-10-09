@@ -22,11 +22,22 @@ export default function AnalyticsEvents() {
       if (!anchor) return;
       let destination;
       try { destination = new URL(anchor.href, window.location.href); } catch { return; }
+      const firstSegment = window.location.pathname.split("/").filter(Boolean)[0];
+      const contentLanguage = ["es", "fr", "de", "it", "pt"].includes(firstSegment) ? firstSegment : "en";
+      if (destination.origin === window.location.origin && /\/guides\/[^/]+\/?$/.test(destination.pathname) && destination.pathname !== window.location.pathname) {
+        sendEvent("select_content", {
+          content_type: "guide",
+          item_id: destination.pathname.split("/").filter(Boolean).at(-1),
+          source_path: window.location.pathname,
+          content_language: contentLanguage,
+        });
+      }
       if (destination.hostname !== DESTINATION_HOST) return;
       sendEvent("outbound_catalog_click", {
         link_kind: linkKind(destination.pathname),
         link_path: destination.pathname,
         source_path: window.location.pathname,
+        content_language: contentLanguage,
         link_text: anchor.textContent.trim().slice(0, 80),
       });
     }
@@ -40,6 +51,7 @@ export default function AnalyticsEvents() {
       const query = new FormData(form).get("keywords");
       sendEvent("catalog_search_submit", {
         source_path: window.location.pathname,
+        content_language: ["es", "fr", "de", "it", "pt"].includes(window.location.pathname.split("/")[1]) ? window.location.pathname.split("/")[1] : "en",
         search_term_length: typeof query === "string" ? query.trim().length : 0,
       });
     }

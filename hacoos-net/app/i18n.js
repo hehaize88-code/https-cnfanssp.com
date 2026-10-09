@@ -1,3 +1,4 @@
+import { guideSeo } from "./seoUpdates";
 import { SITE_URL } from "./data";
 
 export const LOCALES = ["en", "es", "fr", "de", "it", "pt"];
@@ -241,9 +242,10 @@ export function localizePath(pathname = "/", locale = "en") {
 }
 
 export function languageAlternates(pathname = "/", locale = "en") {
-  const languages = Object.fromEntries(LOCALES.map((code) => [code, localizePath(pathname, code)]));
-  languages["x-default"] = localizePath(pathname, "en");
-  return { canonical: localizePath(pathname, locale), languages };
+  const canonical = (code) => { const path = localizePath(pathname, code); return `${SITE_URL}${path === "/" ? "/" : `${path}/`}`; };
+  const languages = Object.fromEntries(LOCALES.map((code) => [code, canonical(code)]));
+  languages["x-default"] = canonical("en");
+  return { canonical: canonical(locale), languages };
 }
 
 export function absoluteLocalizedUrl(pathname = "/", locale = "en") {
@@ -266,6 +268,6 @@ export function localizeGuides(guides, locale = "en") {
   const translations = guideCopy[locale] || guideCopy.en;
   return guides.map((guide) => {
     const translated = translations[guide.slug] || guideCopy.en[guide.slug] || [guide.title, guide.short];
-    return { ...guide, title: translated[0], short: translated[1] };
+    return { ...guide, title: translated[0], short: translated[1], ...guideSeo(guide.slug, locale) };
   });
 }

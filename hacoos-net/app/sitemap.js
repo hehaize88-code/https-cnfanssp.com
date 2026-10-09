@@ -1,3 +1,4 @@
+import { SEO_REVIEW_DATE } from "./seoUpdates";
 import { categories, guides, products, SITE_URL } from "./data";
 import { LOCALES, localizePath } from "./i18n";
 export const dynamic = "force-static";
@@ -12,7 +13,7 @@ export default function sitemap() {
   const localizedCore = ["/", "/spreadsheet", "/categories", "/guides", "/faq", "/about"].flatMap((path) =>
     LOCALES.map((locale) => ({
       url: canonicalUrl(path, locale),
-      lastModified: now,
+      lastModified: ["/", "/spreadsheet", "/guides"].includes(path) ? new Date(SEO_REVIEW_DATE) : now,
       changeFrequency: path === "/" ? "weekly" : "monthly",
       priority: path === "/" ? 1 : 0.7,
     })),
@@ -28,7 +29,7 @@ export default function sitemap() {
   const localizedGuides = guides.flatMap((guide) =>
     (guide.translated===false?["en"]:LOCALES).map((locale) => ({
       url: canonicalUrl(`/guides/${guide.slug}`, locale),
-      lastModified: guide.translated===false?new Date("2026-09-15"):now,
+      lastModified: guide.dateModified ? new Date(guide.dateModified) : guide.translated===false?new Date("2026-09-15"):now,
       changeFrequency: "monthly",
       priority: 0.75,
     })),

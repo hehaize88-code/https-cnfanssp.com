@@ -1,3 +1,4 @@
+import { newGuideDefinitions, guideSeo, updatedGuideContent, UPDATED_GUIDE_SLUGS } from "./seoUpdates";
 import { wardrobeGapArticle } from "./wardrobeGapArticle";
 import { outfitPlanningArticle } from "./outfitPlanningArticle";
 import { priorityGuideContent, priorityGuideDefinitions, priorityGuideSources } from "./priorityArticles";
@@ -462,3 +463,11 @@ export const guideSources = {
     ["Hacoo Help Centre", "Current return and after-sales context", "August 26, 2026"],
   ],
 };
+
+// Publish complete language sets together; preserve existing article URLs.
+guides.unshift(...newGuideDefinitions);
+for (const slug of UPDATED_GUIDE_SLUGS) {
+  const guide = guides.find((item) => item.slug === slug);
+  Object.assign(guide, guideSeo(slug, "en"));
+  guideContent[slug] = updatedGuideContent(slug, "en", guideContent[slug]);
+}
