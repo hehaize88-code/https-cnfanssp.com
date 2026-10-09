@@ -1,7 +1,10 @@
+import { pageMeta } from "./site-data";
 import { SitePage } from "./site-page";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
+  title: pageMeta.home.en.title,
+  description: pageMeta.home.en.description,
   alternates: {
     canonical: "https://hacoos.pro/",
     languages: {

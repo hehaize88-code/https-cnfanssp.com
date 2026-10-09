@@ -147,3 +147,17 @@ export const researchBasis: Record<Locale, string[]> = {
   es: ["Web oficial de Hacoo, Trust Center y centro de ayuda", "Ficha de Google Play com.saramart.android", "Ficha de Hacoo en Apple App Store", "Perfil de Trustpilot y temas de reseñas recientes"],
   it: ["Sito ufficiale Hacoo, Trust Center e centro assistenza", "Scheda Google Play com.saramart.android", "Scheda Hacoo su Apple App Store", "Profilo Trustpilot e temi delle recensioni recenti"],
 };
+
+// Catalogue identifiers and labels refreshed together from matching destination pages.
+ui.en.productNames = {"7590730248": "AMIRI MA-1 sneakers", "7665936646": "World hoodie set", "7631744461": "Celine hoodie", "7655666412": "Louis Vuitton Neverfull bag", "7598998360": "Omerta 47 T-shirt", "7643039370": "6PM hoodie", "7705315883": "Trapstar It’s A Secret messenger bag — 4 styles", "7706382934": "Autry shoes"};
+ui.de.productNames = {"7590730248": "AMIRI MA-1 Sneaker", "7665936646": "World Hoodie-Set", "7631744461": "Celine Hoodie", "7655666412": "Louis Vuitton Neverfull Tasche", "7598998360": "Omerta 47 T-Shirt", "7643039370": "6PM Hoodie", "7705315883": "Trapstar It’s A Secret Umhängetasche — 4 Varianten", "7706382934": "Autry Schuhe"};
+ui.fr.productNames = {"7590730248": "Baskets AMIRI MA-1", "7665936646": "Ensemble sweat World", "7631744461": "Sweat Celine", "7655666412": "Sac Louis Vuitton Neverfull", "7598998360": "T-shirt Omerta 47", "7643039370": "Sweat 6PM", "7705315883": "Sac bandoulière Trapstar It’s A Secret — 4 modèles", "7706382934": "Chaussures Autry"};
+ui.es.productNames = {"7590730248": "Zapatillas AMIRI MA-1", "7665936646": "Conjunto de sudadera World", "7631744461": "Sudadera Celine", "7655666412": "Bolso Louis Vuitton Neverfull", "7598998360": "Camiseta Omerta 47", "7643039370": "Sudadera 6PM", "7705315883": "Bolso bandolera Trapstar It’s A Secret — 4 modelos", "7706382934": "Zapatillas Autry"};
+ui.it.productNames = {"7590730248": "Sneaker AMIRI MA-1", "7665936646": "Completo felpa World", "7631744461": "Felpa Celine", "7655666412": "Borsa Louis Vuitton Neverfull", "7598998360": "T-shirt Omerta 47", "7643039370": "Felpa 6PM", "7705315883": "Borsa a tracolla Trapstar It’s A Secret — 4 modelli", "7706382934": "Scarpe Autry"};
+
+
+Object.assign(ui.en, {seoLibrary:"BUYING GUIDES",liveIndex:"CATALOGUE",matchedFinds:"product references",evidenceChecked:"Sources checked 9 October 2026"});
+Object.assign(ui.de, {seoLibrary:"KAUFRATGEBER",liveIndex:"KATALOG",matchedFinds:"Produktreferenzen",evidenceChecked:"Quellen geprüft am 9. Oktober 2026"});
+Object.assign(ui.fr, {seoLibrary:"GUIDES D’ACHAT",liveIndex:"CATALOGUE",matchedFinds:"références produit",evidenceChecked:"Sources vérifiées le 9 octobre 2026"});
+Object.assign(ui.es, {seoLibrary:"GUÍAS DE COMPRA",liveIndex:"CATÁLOGO",matchedFinds:"referencias de productos",evidenceChecked:"Fuentes revisadas el 9 de octubre de 2026"});
+Object.assign(ui.it, {seoLibrary:"GUIDE ALL’ACQUISTO",liveIndex:"CATALOGO",matchedFinds:"riferimenti prodotto",evidenceChecked:"Fonti verificate il 9 ottobre 2026"});

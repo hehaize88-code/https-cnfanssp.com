@@ -3,8 +3,7 @@ import { handleImageOptimization, DEFAULT_DEVICE_SIZES, DEFAULT_IMAGE_SIZES } fr
 import handler from "vinext/server/app-router-entry";
 
 interface Env {
-  ASSETS: Fetcher;
-  DB: D1Database;
+  ASSETS: { fetch(request: Request): Promise<Response> };
   IMAGES: {
     input(stream: ReadableStream): {
       transform(options: Record<string, unknown>): {
@@ -72,7 +71,11 @@ const worker = {
       "public, max-age=0, must-revalidate, s-maxage=3600, stale-while-revalidate=86400",
     );
 
-    return new Response(response.body, {
+    const language = /^\/(de|fr|es|it)(?:\/|$)/.exec(url.pathname)?.[1] ?? "en";
+    const body = contentType.includes("text/html")
+      ? (await response.text()).replace('<html lang="en"', `<html lang="${language}"`)
+      : response.body;
+    return new Response(body, {
       status: response.status,
       statusText: response.statusText,
       headers,

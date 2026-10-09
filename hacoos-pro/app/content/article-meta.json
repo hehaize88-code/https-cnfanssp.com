@@ -1,0 +1,92 @@
+{
+  "en": {
+    "articles/shoes-spreadsheet": {
+      "title": "Hacoo Shoes Spreadsheet: Links, Sizes & Photo Checks",
+      "intro": "Compare Hacoo shoe links by exact style, measurements and useful photos. Build a shortlist and recognise when a listing no longer matches."
+    },
+    "articles/clothing-spreadsheet": {
+      "title": "Hacoo Clothing Spreadsheet: Hoodies, T-Shirts & Sets",
+      "intro": "Build a clothing shortlist with exact variants, garment measurements and material checks. Compare hoodies, T-shirts and matching sets without guessing sizes."
+    },
+    "articles/links-not-working": {
+      "title": "Hacoo Links Not Working? App, Region & Listing Checks",
+      "intro": "Troubleshoot Hacoo links that open the wrong page or show an unavailable item. Check the original link, app version, destination and exact variant in order."
+    },
+    "articles/tracking-not-updating": {
+      "title": "Hacoo Tracking Not Updating: Stages & Next Steps",
+      "intro": "Understand label creation, carrier handover and delivery exceptions. Check Hacoo tracking against the actual order estimate and know what to send support."
+    }
+  },
+  "de": {
+    "articles/shoes-spreadsheet": {
+      "title": "Hacoo Schuhe: Tabelle, Links, Größen & Fotocheck",
+      "intro": "Vergleiche Hacoo-Schuhlinks anhand der genauen Variante, passender Maße und aussagekräftiger Fotos. Erkenne veraltete Einträge vor dem Kauf."
+    },
+    "articles/clothing-spreadsheet": {
+      "title": "Hacoo Kleidung: Hoodies, T-Shirts & Sets vergleichen",
+      "intro": "Erstelle eine Hacoo-Kleiderliste mit genauen Varianten, Kleidungsmaßen und Materialangaben. Prüfe Hoodies, T-Shirts und Sets ohne Größenraten."
+    },
+    "articles/links-not-working": {
+      "title": "Hacoo-Link funktioniert nicht? App & Angebot prüfen",
+      "intro": "Prüfe fehlerhafte Hacoo-Links systematisch: Originaladresse, App-Version, echtes Zielland und genaue Variante statt wahlloser Ersatzlinks."
+    },
+    "articles/tracking-not-updating": {
+      "title": "Hacoo-Tracking ohne Update: Status & nächste Schritte",
+      "intro": "Ordne Versandlabel, Übergabe und Zustellprobleme ein. Vergleiche Hacoo-Tracking mit deinem Auftrag und bereite eine klare Supportanfrage vor."
+    }
+  },
+  "fr": {
+    "articles/shoes-spreadsheet": {
+      "title": "Tableur chaussures Hacoo : liens, tailles et photos",
+      "intro": "Comparez les liens de chaussures Hacoo par modèle exact, mesures et photos utiles. Repérez les fiches qui ne correspondent plus à votre sélection."
+    },
+    "articles/clothing-spreadsheet": {
+      "title": "Tableur vêtements Hacoo : sweats, T-shirts et ensembles",
+      "intro": "Comparez les vêtements Hacoo avec variantes précises, mesures et composition. Vérifiez les sweats, T-shirts et ensembles sans deviner la taille."
+    },
+    "articles/links-not-working": {
+      "title": "Lien Hacoo invalide ? Vérifier l’application et la fiche",
+      "intro": "Un lien Hacoo ouvre la mauvaise page ou un article indisponible ? Vérifiez URL d’origine, version de l’app, pays réel et variante, dans cet ordre."
+    },
+    "articles/tracking-not-updating": {
+      "title": "Suivi Hacoo bloqué : étapes et démarches utiles",
+      "intro": "Distinguez création d’étiquette, remise au transporteur et incident de livraison. Comparez le suivi à votre commande et préparez les preuves pour l’assistance."
+    }
+  },
+  "es": {
+    "articles/shoes-spreadsheet": {
+      "title": "Hoja de zapatillas Hacoo: enlaces, tallas y fotos",
+      "intro": "Compara enlaces de zapatillas Hacoo por variante exacta, medidas y fotos útiles. Detecta fichas que ya no coinciden antes de comprar."
+    },
+    "articles/clothing-spreadsheet": {
+      "title": "Hoja de ropa Hacoo: sudaderas, camisetas y conjuntos",
+      "intro": "Compara ropa Hacoo mediante variantes, medidas y composición. Revisa sudaderas, camisetas y conjuntos sin adivinar tallas ni contenido."
+    },
+    "articles/links-not-working": {
+      "title": "Enlaces Hacoo que no funcionan: app, país y ficha",
+      "intro": "¿Un enlace Hacoo abre otra página o indica que el artículo no existe? Revisa dirección original, versión de la app, destino real y variante."
+    },
+    "articles/tracking-not-updating": {
+      "title": "Seguimiento Hacoo sin actualizar: estados y soluciones",
+      "intro": "Distingue etiqueta creada, entrega al transportista e incidencias. Compara el seguimiento con tu pedido y prepara la información que necesita soporte."
+    }
+  },
+  "it": {
+    "articles/shoes-spreadsheet": {
+      "title": "Foglio scarpe Hacoo: link, taglie e controllo foto",
+      "intro": "Confronta i link delle scarpe Hacoo per variante esatta, misure e foto utili. Riconosci le schede che non corrispondono più alla selezione."
+    },
+    "articles/clothing-spreadsheet": {
+      "title": "Foglio abbigliamento Hacoo: felpe, T-shirt e completi",
+      "intro": "Confronta abbigliamento Hacoo con varianti precise, misure e composizione. Controlla felpe, T-shirt e completi senza indovinare taglia o contenuto."
+    },
+    "articles/links-not-working": {
+      "title": "Link Hacoo non funzionanti: app, paese e scheda",
+      "intro": "Un link Hacoo apre la pagina sbagliata o un articolo inesistente? Controlla URL originale, versione dell’app, destinazione reale e variante."
+    },
+    "articles/tracking-not-updating": {
+      "title": "Tracking Hacoo fermo: stati e prossimi passi",
+      "intro": "Distingui etichetta creata, consegna al corriere e problemi di recapito. Confronta il tracking con l’ordine e prepara le informazioni per l’assistenza."
+    }
+  }
+}

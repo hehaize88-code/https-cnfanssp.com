@@ -1,3 +1,5 @@
+import { refreshCopy } from "./seo-refresh";
+import { newArticleMeta as newArticles, newArticleKeys } from "./article-meta";
 export const locales = ["en", "de", "fr", "es", "it"] as const;
 export type Locale = (typeof locales)[number];
 export const localeNames: Record<Locale, string> = {
@@ -8,7 +10,7 @@ export const localeNames: Record<Locale, string> = {
   it: "Italiano",
 };
 
-export const pageKeys = [
+export const legacyPageKeys = [
   "home",
   "spreadsheet",
   "finds",
@@ -22,6 +24,8 @@ export const pageKeys = [
   "articles/read-qc-photos",
   "articles/size-before-you-buy",
 ] as const;
+export const pageKeys = [...legacyPageKeys, ...newArticleKeys] as const;
+export type LegacyPageKey = (typeof legacyPageKeys)[number];
 export type PageKey = (typeof pageKeys)[number];
 
 export function routeFor(locale: Locale, page: PageKey) {
@@ -31,88 +35,80 @@ export function routeFor(locale: Locale, page: PageKey) {
 
 export const products = [
   {
-    name: "AMIRI MA-1 Sneakers — 9 styles",
-    category: "shoes",
-    price: "$53.44",
-    sourcePrice: "¥388",
-    id: "7638942248",
-    href: "https://www.cnfanssp.com/AllProducts/3842.html",
-    image: "https://www.cnfanssp.com/uploads/allimg/20251219/1-2512191533513J.webp",
+    "name": "AMIRI MA-1",
+    "category": "shoes",
+    "price": "$50.69",
+    "id": "7590730248",
+    "href": "https://www.cnfanshp.com/AllProducts/199.html",
+    "image": "https://www.cnfanshp.com/uploads/allimg/20251101/1-251101105932935.webp"
   },
   {
-    name: "World T-shirt & Hoodie Set — 40+ styles",
-    category: "sets",
-    price: "$21.07",
-    sourcePrice: "¥153",
-    id: "7656214053",
-    href: "https://www.cnfanssp.com/AllProducts/4643.html",
-    image: "https://www.cnfanssp.com/uploads/allimg/20260109/1-2601091G60V91.webp",
+    "name": "World Hoodie Set",
+    "category": "sets",
+    "price": "$53.58",
+    "id": "7665936646",
+    "href": "https://www.cnfanshp.com/AllProducts/3856.html",
+    "image": "https://www.cnfanshp.com/uploads/allimg/20260116/1-260116112914Z4.webp"
   },
   {
-    name: "Celine Hoodie",
-    category: "hoodies",
-    price: "$10.88",
-    sourcePrice: "¥79",
-    id: "7622957753",
-    href: "https://www.cnfanssp.com/AllProducts/2822.html",
-    image: "https://www.cnfanssp.com/uploads/allimg/20251202/1-2512021250461D.webp",
+    "name": "Celine Hoodie",
+    "category": "hoodies",
+    "price": "$13.64",
+    "id": "7631744461",
+    "href": "https://www.cnfanshp.com/AllProducts/2389.html",
+    "image": "https://www.cnfanshp.com/uploads/allimg/20251214/1-25121410553V09.webp"
   },
   {
-    name: "Neverfull Tote Bag — 39 styles",
-    category: "bags",
-    price: "$39.26",
-    sourcePrice: "¥285",
-    id: "7666359522",
-    href: "https://www.cnfanssp.com/AllProducts/5030.html",
-    image: "https://www.cnfanssp.com/uploads/allimg/20260116/1-26011615050CE.webp",
+    "name": "Louis Vuitton Neverfull",
+    "category": "bags",
+    "price": "$13.09",
+    "id": "7655666412",
+    "href": "https://www.cnfanshp.com/AllProducts/3371.html",
+    "image": "https://www.cnfanshp.com/uploads/allimg/20260106/1-260106125S1326.jpg"
   },
   {
-    name: "Omerta 47 T-shirt",
-    category: "t-shirts",
-    price: "$9.50",
-    sourcePrice: "¥69",
-    id: "7588924374",
-    href: "https://www.cnfanssp.com/AllProducts/882.html",
-    image: "https://www.cnfanssp.com/uploads/allimg/20251030/1-251030160U1b0.webp",
+    "name": "Omerta 47 T-shirts",
+    "category": "t-shirts",
+    "price": "$5.23",
+    "id": "7598998360",
+    "href": "https://www.cnfanshp.com/AllProducts/740.html",
+    "image": "https://www.cnfanshp.com/uploads/allimg/20251108/1-25110Q23615c0.webp"
   },
   {
-    name: "6PM Hoodie Set",
-    category: "hoodies",
-    price: "$27.41",
-    sourcePrice: "¥199",
-    id: "7572947321",
-    href: "https://www.cnfanssp.com/AllProducts/24.html",
-    image: "https://www.cnfanssp.com/uploads/allimg/20251016/1-251016161633357.jpg",
+    "name": "6pm Hoodie",
+    "category": "hoodies",
+    "price": "$13.50",
+    "id": "7643039370",
+    "href": "https://www.cnfanshp.com/AllProducts/2897.html",
+    "image": "https://www.cnfanshp.com/uploads/allimg/20251224/1-25122414111U19.webp"
   },
   {
-    name: "Trapstar Bag",
-    category: "bags",
-    price: "$13.64",
-    sourcePrice: "¥99",
-    id: "7582900895",
-    href: "https://www.cnfanssp.com/AllProducts/525.html",
-    image: "https://www.cnfanssp.com/uploads/allimg/20251025/1-251025115303421.webp",
+    "name": "Trapstar It's A Secret Messenger Bag [4 styles]",
+    "category": "bags",
+    "price": "$15.01",
+    "id": "7705315883",
+    "href": "https://www.cnfanshp.com/AllProducts/5214.html",
+    "image": "https://www.cnfanshp.com/uploads/allimg/20260311/1-260311124322548.webp"
   },
   {
-    name: "Autry Shoes",
-    category: "shoes",
-    price: "$68.87",
-    sourcePrice: "¥500",
-    id: "7645681448",
-    href: "https://www.cnfanssp.com/AllProducts/4276.html",
-    image: "https://www.cnfanssp.com/uploads/allimg/20251225/1-251225144612B9.gif",
-  },
-] as const;
+    "name": "Autry shoes",
+    "category": "shoes",
+    "price": "$28.65",
+    "id": "7706382934",
+    "href": "https://www.cnfanshp.com/AllProducts/5069.html",
+    "image": "https://www.cnfanshp.com/uploads/allimg/20260309/1-26030910540WJ.webp"
+  }
+];
 
 export const categories = [
-  { key: "shoes", href: "https://www.cnfanssp.com/shoes/", count: "Shoes" },
-  { key: "hoodies", href: "https://www.cnfanssp.com/hoodies-sweaters/", count: "Sweatshirts" },
-  { key: "t-shirts", href: "https://www.cnfanssp.com/t-shirts/", count: "T-Shirts" },
-  { key: "jackets", href: "https://www.cnfanssp.com/jackets/", count: "Jackets" },
-  { key: "pants", href: "https://www.cnfanssp.com/pants-shorts/", count: "Pants / Shorts" },
-  { key: "headwear", href: "https://www.cnfanssp.com/headwear/", count: "Headwear" },
-  { key: "accessories", href: "https://www.cnfanssp.com/accessories/", count: "Accessories" },
-  { key: "jersey", href: "https://www.cnfanssp.com/jersey/", count: "Jersey" },
+  { key: "shoes", href: "https://www.cnfanshp.com/shoes/", count: "Shoes" },
+  { key: "hoodies", href: "https://www.cnfanshp.com/hoodies-sweaters/", count: "Sweatshirts" },
+  { key: "t-shirts", href: "https://www.cnfanshp.com/t-shirts/", count: "T-Shirts" },
+  { key: "jackets", href: "https://www.cnfanshp.com/jackets/", count: "Jackets" },
+  { key: "pants", href: "https://www.cnfanshp.com/pants-shorts/", count: "Pants / Shorts" },
+  { key: "headwear", href: "https://www.cnfanshp.com/headwear/", count: "Headwear" },
+  { key: "accessories", href: "https://www.cnfanshp.com/accessories/", count: "Accessories" },
+  { key: "jersey", href: "https://www.cnfanshp.com/Jersey/", count: "Jersey" },
 ] as const;
 
 type Copy = {
@@ -137,7 +133,7 @@ type Copy = {
   close: string;
   viewAll: string;
   fieldNotes: string;
-  pageLabels: Record<PageKey, { title: string; intro: string }>;
+  pageLabels: Record<LegacyPageKey, { title: string; intro: string }> & Partial<Record<PageKey, { title: string; intro: string }>>;
   sectionLabels: [string, string, string];
   sectionText: [string, string, string];
   faq: Array<[string, string]>;
@@ -167,6 +163,7 @@ export const copy: Record<Locale, Copy> = {
     viewAll: "View all checked finds",
     fieldNotes: "Field notes",
     pageLabels: {
+      ...Object.fromEntries(newArticleKeys.map(key => [key, {title:newArticles.en[key].title, intro:newArticles.en[key].intro}])),
       home: { title: "Hacoos Spreadsheet 2026", intro: "Checked product routes, QC help and buying context in one independent index." },
       spreadsheet: { title: "Hacoo Spreadsheet", intro: "Use a searchable product index instead of scrolling through duplicated or expired rows." },
       finds: { title: "Latest Hacoo Finds", intro: "A compact set of source-matched listings across shoes, hoodies, tees, bags and sets." },
@@ -211,20 +208,20 @@ export const copy: Record<Locale, Copy> = {
 
 const englishLabels = copy.en.pageLabels;
 for (const locale of ["de", "fr", "es", "it"] as const) {
-  const titles: Record<Locale, Record<PageKey, string>> = {
-    en: Object.fromEntries(pageKeys.map((k) => [k, englishLabels[k].title])) as Record<PageKey, string>,
+  const titles: Record<Locale, Record<LegacyPageKey, string>> = {
+    en: Object.fromEntries(legacyPageKeys.map((k) => [k, englishLabels[k].title])) as Record<LegacyPageKey, string>,
     de: { home: "Hacoos Tabelle 2026", spreadsheet: "Hacoo Tabelle", finds: "Aktuelle Hacoo-Funde", categories: "Hacoo Kategorien", "qc-guide": "Hacoo QC-Fotoguide", shipping: "Hacoo Versandguide", guide: "Hacoo-Produktlinks verwenden", faq: "Hacoo Tabellen-FAQ", articles: "Hacoo SEO-Artikel & Recherchen", "articles/find-product-links": "Aktuelle Hacoo-Produktlinks finden", "articles/read-qc-photos": "Hacoo-Bewertungen & QC-Fotos prüfen", "articles/size-before-you-buy": "Hacoo-Größenguide: vor dem Kauf messen" },
     fr: { home: "Tableur Hacoos 2026", spreadsheet: "Tableur Hacoo", finds: "Sélection Hacoo actuelle", categories: "Catégories Hacoo", "qc-guide": "Guide photo QC Hacoo", shipping: "Guide livraison Hacoo", guide: "Utiliser les liens produit Hacoo", faq: "FAQ Tableur Hacoo", articles: "Articles SEO et recherches Hacoo", "articles/find-product-links": "Trouver des liens Hacoo actuels", "articles/read-qc-photos": "Avis Hacoo et photos QC: guide de vérification", "articles/size-before-you-buy": "Guide des tailles Hacoo: mesurer avant d’acheter" },
     es: { home: "Hoja Hacoos 2026", spreadsheet: "Hoja Hacoo", finds: "Hallazgos Hacoo actuales", categories: "Categorías Hacoo", "qc-guide": "Guía de fotos QC Hacoo", shipping: "Guía de envío Hacoo", guide: "Cómo usar enlaces Hacoo", faq: "FAQ de la hoja Hacoo", articles: "Artículos SEO e investigación de Hacoo", "articles/find-product-links": "Cómo encontrar enlaces Hacoo actuales", "articles/read-qc-photos": "Reseñas Hacoo y fotos QC: guía de pruebas", "articles/size-before-you-buy": "Guía de tallas Hacoo: mide antes de comprar" },
     it: { home: "Foglio Hacoos 2026", spreadsheet: "Foglio Hacoo", finds: "Scoperte Hacoo attuali", categories: "Categorie Hacoo", "qc-guide": "Guida foto QC Hacoo", shipping: "Guida spedizione Hacoo", guide: "Come usare i link Hacoo", faq: "FAQ foglio Hacoo", articles: "Articoli SEO e ricerche Hacoo", "articles/find-product-links": "Trovare link Hacoo aggiornati", "articles/read-qc-photos": "Recensioni Hacoo e foto QC: guida alle prove", "articles/size-before-you-buy": "Guida taglie Hacoo: misura prima di acquistare" },
   };
-  const intros: Record<Exclude<Locale, "en">, Record<PageKey, string>> = {
+  const intros: Record<Exclude<Locale, "en">, Record<LegacyPageKey, string>> = {
     de: { home: "Geprüfte Produktwege, QC-Hilfe und Hacoo-Recherche in einem unabhängigen Index.", spreadsheet: "Durchsuche aktuelle Einträge statt kopierte oder abgelaufene Tabellenzeilen.", finds: "Abgeglichene Einträge mit aktuellem Bild, ID und Quellpreis.", categories: "Öffne zuerst die passende Kategorie und grenze danach den Artikel ein.", "qc-guide": "Ein belegbarer Ablauf für Identität, Form, Verarbeitung, Maße und Reklamationsfotos.", shipping: "Offizielle Zeitspannen, Tracking, Rückgabefrist und Nachweise verständlich eingeordnet.", guide: "Vom Fund bis zur Variantenprüfung, ohne einen alten Link als Beweis zu behandeln.", faq: "Fakten zu Links, Region, Lieferung, Rückgabe, Bewertungen, Preis und Größe.", articles: "Ausführliche, quellengestützte Artikel zu Links, QC, Bewertungen und Größenwahl.", "articles/find-product-links": "Warum Zielprüfung wichtiger ist als das Datum einer kopierten Tabelle.", "articles/read-qc-photos": "Bewertungen ausbalancieren, Konstruktion prüfen und brauchbare Nachweise sichern.", "articles/size-before-you-buy": "Kleidungs- und Schuhmaße mit einer passenden eigenen Referenz vergleichen." },
     fr: { home: "Liens vérifiés, aide QC et recherche Hacoo dans un index indépendant.", spreadsheet: "Rechercher des fiches actuelles au lieu de parcourir des lignes copiées ou périmées.", finds: "Fiches rapprochées avec image, identifiant et prix source actuels.", categories: "Ouvrir d’abord la catégorie pertinente, puis préciser l’article.", "qc-guide": "Une méthode fondée sur des preuves pour identité, forme, fabrication, mesures et photos de réclamation.", shipping: "Délais officiels, suivi, retour et preuves expliqués clairement.", guide: "Du premier lien à la vérification de variante sans prendre une ancienne publication pour preuve.", faq: "Réponses documentées sur liens, région, livraison, retour, avis, prix et tailles.", articles: "Articles approfondis et sourcés sur les liens, le QC, les avis et les tailles.", "articles/find-product-links": "Pourquoi vérifier la destination compte davantage que la date d’un tableur recopié.", "articles/read-qc-photos": "Équilibrer les avis, inspecter la fabrication et garder des preuves utiles.", "articles/size-before-you-buy": "Comparer les mesures du vêtement ou de la chaussure à une référence qui vous va." },
     es: { home: "Rutas verificadas, ayuda QC e investigación de Hacoo en un índice independiente.", spreadsheet: "Busca fichas actuales en vez de recorrer filas copiadas o caducadas.", finds: "Fichas comprobadas con imagen, ID y precio original actuales.", categories: "Abre primero la categoría adecuada y después concreta el artículo.", "qc-guide": "Un proceso con pruebas para identidad, forma, construcción, medidas y fotos de reclamación.", shipping: "Plazos oficiales, seguimiento, devolución y pruebas explicados con claridad.", guide: "Desde el enlace inicial hasta la variante exacta sin tratar una publicación antigua como prueba.", faq: "Respuestas documentadas sobre enlaces, región, entrega, devolución, opiniones, precio y talla.", articles: "Artículos extensos y basados en fuentes sobre enlaces, QC, reseñas y tallas.", "articles/find-product-links": "Por qué verificar el destino importa más que la fecha de una hoja copiada.", "articles/read-qc-photos": "Equilibra reseñas, inspecciona construcción y conserva pruebas útiles.", "articles/size-before-you-buy": "Compara medidas de prenda o calzado con una referencia que ya te queda bien." },
     it: { home: "Percorsi verificati, aiuto QC e ricerca Hacoo in un indice indipendente.", spreadsheet: "Cerca schede attuali invece di scorrere righe copiate o scadute.", finds: "Schede verificate con immagine, ID e prezzo originale aggiornati.", categories: "Apri prima la categoria corretta e poi restringi la ricerca.", "qc-guide": "Un metodo basato su prove per identità, forma, costruzione, misure e foto di reclamo.", shipping: "Tempi ufficiali, tracking, resi e prove spiegati con chiarezza.", guide: "Dal primo link alla verifica della variante senza usare un vecchio post come prova.", faq: "Risposte documentate su link, regione, consegna, reso, recensioni, prezzo e taglia.", articles: "Articoli approfonditi e basati su fonti su link, QC, recensioni e taglie.", "articles/find-product-links": "Perché verificare la destinazione conta più della data di un foglio copiato.", "articles/read-qc-photos": "Bilanciare recensioni, controllare la costruzione e conservare prove utili.", "articles/size-before-you-buy": "Confrontare misure di capi o scarpe con un riferimento che veste bene." },
   };
-  copy[locale].pageLabels = Object.fromEntries(pageKeys.map((key) => [key, { title: titles[locale][key], intro: intros[locale][key] }])) as Copy["pageLabels"];
+  copy[locale].pageLabels = Object.fromEntries(legacyPageKeys.map((key) => [key, { title: titles[locale][key], intro: intros[locale][key] }])) as Copy["pageLabels"];
 }
 
 const evidencePositioning: Record<Locale, {
@@ -388,6 +385,24 @@ for (const locale of locales) {
   copy[locale].faq[4][1] = positioning.shippingAnswer;
 }
 
+for (const locale of locales) {
+  for (const key of newArticleKeys) copy[locale].pageLabels[key] = {title:newArticles[locale][key].title, intro:newArticles[locale][key].intro};
+}
+
+const oldArticleKeys = ["articles/find-product-links", "articles/read-qc-photos", "articles/size-before-you-buy"] as const;
+for (const locale of locales) {
+  const r = refreshCopy[locale];
+  Object.assign(copy[locale], {badge:r.badge,heroTitle:r.hero,heroText:r.heroText,updated:r.updated,sourceNote:r.sourceNote,searchButton:r.search,findsTitle:r.findsTitle,findsText:r.findsText});
+  copy[locale].nav.articles = r.nav;
+  copy[locale].pageLabels.home = {title:r.homeTitle,intro:r.homeIntro};
+  copy[locale].pageLabels.articles = {title:r.articlesTitle,intro:r.articlesIntro};
+  copy[locale].pageLabels.shipping = {...copy[locale].pageLabels.shipping,intro:r.shippingSummary};
+  copy[locale].faq[4][1] = r.shippingSummary;
+  copy[locale].faq[5][1] = r.returns;
+  copy[locale].faq[6] = [r.faqPrice[0],r.faqPrice[1]];
+  oldArticleKeys.forEach((key,index) => {copy[locale].pageLabels[key] = {title:r.titles[index],intro:r.intros[index]};});
+}
+
 export const pageMeta = Object.fromEntries(
-  pageKeys.map((page) => [page, Object.fromEntries(locales.map((locale) => [locale, { title: copy[locale].pageLabels[page].title, description: copy[locale].pageLabels[page].intro }]))]),
+  pageKeys.map((page) => [page, Object.fromEntries(locales.map((locale) => [locale, { title: copy[locale].pageLabels[page]!.title, description: copy[locale].pageLabels[page]!.intro }]))]),
 ) as Record<PageKey, Record<Locale, { title: string; description: string }>>;

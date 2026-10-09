@@ -25,12 +25,11 @@ import {
   type Locale,
   type PageKey,
 } from "./site-data";
-import { articles } from "./article-content";
-import { articleExpansions } from "./article-expansions";
+import { newArticleKeys } from "./article-meta";
+import { refreshCopy } from "./seo-refresh";
+import type { Article } from "./article-content";
 import {
-  evidenceFacts,
   pageChecklists,
-  researchBasis,
   ui,
   type ArticleKey,
 } from "./localized-content";
@@ -46,7 +45,8 @@ const navKeys: PageKey[] = [
   "faq",
 ];
 
-const articleKeys: PageKey[] = [
+const articleKeys: ArticleKey[] = [
+  ...newArticleKeys,
   "articles/find-product-links",
   "articles/read-qc-photos",
   "articles/size-before-you-buy",
@@ -71,11 +71,14 @@ function SearchDesk({ locale, compact = false }: { locale: Locale; compact?: boo
   return (
     <form
       className={compact ? "search-desk compact" : "search-desk"}
-      action="https://www.cnfanssp.com/search.html"
+      action="https://www.cnfanshp.com/search.html"
       method="get"
+      data-main-search
+      data-link-type="search"
       target="_blank"
       rel="nofollow"
     >
+      <input type="hidden" name="channelid" value="2" />
       <Search aria-hidden="true" />
       <label className="sr-only" htmlFor={`keywords-${compact ? "compact" : "hero"}`}>
         {t.searchPlaceholder}
@@ -166,7 +169,7 @@ function ProductGrid({ locale, limit }: { locale: Locale; limit?: number }) {
           <div className="product-body">
             <div className="product-meta"><span>{u.productCategories[product.category]}</span><small>ID {product.id}</small></div>
             <h3><a href={product.href} target="_blank" rel="nofollow sponsored noopener">{u.productNames[product.id]}</a></h3>
-            <div className="product-price"><strong>{product.price}</strong><span>{product.sourcePrice}</span></div>
+            <div className="product-price"><strong>{product.price}</strong><span>USD</span></div>
             <a className="product-link" href={product.href} target="_blank" rel="nofollow sponsored noopener">{t.openListing}<ArrowUpRight /></a>
           </div>
         </article>
@@ -217,19 +220,19 @@ function FaqList({ locale, limit }: { locale: Locale; limit?: number }) {
   );
 }
 
-function ArticleCards({ locale }: { locale: Locale }) {
+function ArticleCards({ locale, limit, exclude }: { locale: Locale; limit?: number; exclude?: ArticleKey }) {
   const t = copy[locale];
   const icons = [Search, PackageCheck, Ruler];
   return (
     <div className="article-grid">
-      {articleKeys.map((key, index) => {
-        const Icon = icons[index];
+      {articleKeys.filter(key => key !== exclude).slice(0, limit).map((key, index) => {
+        const Icon = icons[index % icons.length];
         return (
           <a href={routeFor(locale, key)} key={key}>
             <Icon aria-hidden="true" />
             <span>0{index + 1} / {ui[locale].buyerGuides.toUpperCase()}</span>
-            <h2>{t.pageLabels[key].title}</h2>
-            <p>{t.pageLabels[key].intro}</p>
+            <h2>{t.pageLabels[key]!.title}</h2>
+            <p>{t.pageLabels[key]!.intro}</p>
             <b>{t.readGuides}<ArrowRight /></b>
           </a>
         );
@@ -283,7 +286,7 @@ function HomePage({ locale }: { locale: Locale }) {
           <strong>08</strong>
           <p>{u.matchedFinds}</p>
           <div><b>05</b><small>{u.languages}</small></div>
-          <div><b>03</b><small>{u.buyerGuides}</small></div>
+          <div><b>07</b><small>{u.buyerGuides}</small></div>
         </aside>
       </section>
 
@@ -303,7 +306,8 @@ function HomePage({ locale }: { locale: Locale }) {
       </section>
       <section className="section guide-preview">
         <div className="section-heading"><span>06 / {u.deepReads}</span><h2>{t.nav.articles}</h2></div>
-        <ArticleCards locale={locale} />
+        <ArticleCards locale={locale} limit={4} />
+        <a className="text-link" href={routeFor(locale, "articles")}>{t.viewAll}<ArrowRight /></a>
       </section>
       <section className="section faq-preview">
         <div className="section-heading"><span>07 / {u.answers}</span><h2>{t.pageLabels.faq.title}</h2></div>
@@ -314,88 +318,77 @@ function HomePage({ locale }: { locale: Locale }) {
   );
 }
 
-function EvidenceGrid({ locale }: { locale: Locale }) {
-  const u = ui[locale];
-  return (
-    <section className="section evidence-section">
-      <div className="section-heading split">
-        <div><span>{u.evidenceChecked}</span><h2>{u.evidenceTitle}</h2></div>
-        <p>{researchBasis[locale].join(" · ")}</p>
-      </div>
-      <div className="evidence-grid">
-        {evidenceFacts[locale].map((fact) => (
-          <article key={fact.label}>
-            <strong>{fact.value}</strong>
-            <h3>{fact.label}</h3>
-            <p>{fact.note}</p>
-          </article>
-        ))}
-      </div>
-    </section>
-  );
-}
-
-function ArticlePage({ locale, pageKey }: { locale: Locale; pageKey: ArticleKey }) {
+function ArticlePage({ locale, pageKey, article }: { locale: Locale; pageKey: ArticleKey; article: Article }) {
   const t = copy[locale];
   const u = ui[locale];
-  const article = articles[locale][pageKey];
-  const expansions = locale === "en" ? [] : articleExpansions[locale][pageKey];
-  const figureProduct = products[pageKey === "articles/find-product-links" ? 0 : pageKey === "articles/read-qc-photos" ? 1 : 3];
+  const figureProduct = products[pageKey.includes("shoes") || pageKey.includes("size") ? 0 : 1];
+  const r = refreshCopy[locale];
   return (
     <>
       <section className="interior-hero article-hero">
         <span className="eyebrow"><i />{t.badge}</span>
-        <h1>{t.pageLabels[pageKey].title}</h1>
-        <p>{t.pageLabels[pageKey].intro}</p>
+        <h1>{t.pageLabels[pageKey]!.title}</h1>
+        <p>{t.pageLabels[pageKey]!.intro}</p>
         <div className="article-byline">
           <span>{u.readingTime}: {article.minutes} {u.minutes}</span>
-          <span>{u.lastReviewed}: 27 / 08 / 2026</span>
+          <span>{u.lastReviewed}: <time dateTime="2026-10-09">09 / 10 / 2026</time></span>
         </div>
       </section>
-      <EvidenceGrid locale={locale} />
-      <figure className="article-figure">
+      <nav className="article-toc" aria-label={r.contents}>
+        <b>{r.contents}</b>
+        {article.sections.map((section,index) => <a key={section.heading} href={`#section-${index + 1}`}>{section.heading}</a>)}
+      </nav>
+      {!pageKey.includes("tracking") && !pageKey.includes("links-not") && <figure className="article-figure">
         <a href={figureProduct.href} target="_blank" rel="nofollow sponsored noopener">
           <img src={figureProduct.image} alt={`${u.exampleImage}: ${u.productNames[figureProduct.id]}`} loading="lazy" />
         </a>
         <figcaption><b>{u.exampleImage}</b><span>{u.figureCaption}</span></figcaption>
-      </figure>
+      </figure>}
       <article className="long-article">
         {article.sections.map((section, index) => (
-          <section key={section.heading}>
+          <section id={`section-${index + 1}`} key={section.heading}>
             <span>0{index + 1}</span>
             <div>
               <h2>{section.heading}</h2>
               {section.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
-              {expansions[index] && <p>{expansions[index]}</p>}
               {section.bullets && <ul>{section.bullets.map((item) => <li key={item}><Check />{item}</li>)}</ul>}
             </div>
           </section>
         ))}
       </article>
       <section className="section takeaways">
-        <div className="section-heading"><span>{u.keyTakeaways}</span><h2>{t.pageLabels[pageKey].title}</h2></div>
+        <div className="section-heading"><span>{u.keyTakeaways}</span><h2>{t.pageLabels[pageKey]!.title}</h2></div>
         <ol>{article.takeaways.map((item, index) => <li key={item}><b>0{index + 1}</b><span>{item}</span></li>)}</ol>
       </section>
       <section className="section research-basis">
-        <div><span className="kicker">{u.articleSources}</span><h2>{u.evidenceChecked}</h2></div>
-        <ul>{researchBasis[locale].map((source) => <li key={source}>{source}</li>)}</ul>
+        <div><span className="kicker">{u.articleSources}</span><h2>{r.sources}</h2></div>
+        <ul>
+          <li><a href="https://www.hacoo.app/" target="_blank" rel="noopener">{r.official}</a></li>
+          <li><a href="https://web.hacoo.app/en-US/pages/shipping-info" target="_blank" rel="noopener">{r.shippingSource}</a> · 09 / 10 / 2026</li>
+          <li>{r.method}</li>
+        </ul>
       </section>
+      {!pageKey.includes("tracking") && !pageKey.includes("links-not") && <section className="section inline-cta article-next">
+        <h2>{r.next}</h2>
+        <p>{r.destinationNote}</p>
+        <a data-link-type="article-cta" href={`https://www.cnfanshp.com/search.html?keywords=${pageKey.includes("shoes") ? "shoes" : pageKey.includes("clothing") ? "hoodie" : ""}&channelid=2`} target="_blank" rel="nofollow sponsored noopener">{r.search}<ArrowUpRight /></a>
+      </section>}
       <section className="section related-reading">
         <div className="section-heading"><span>{u.relatedReading}</span><h2>{t.pageLabels.articles.title}</h2></div>
-        <ArticleCards locale={locale} />
+        <ArticleCards locale={locale} limit={3} exclude={pageKey} />
       </section>
     </>
   );
 }
 
-function InteriorPage({ locale, pageKey }: { locale: Locale; pageKey: PageKey }) {
+function InteriorPage({ locale, pageKey, article }: { locale: Locale; pageKey: PageKey; article?: Article }) {
   const t = copy[locale];
   const u = ui[locale];
-  const page = t.pageLabels[pageKey];
+  const page = t.pageLabels[pageKey]!;
   const checklist = pageChecklists[locale][pageKey];
   const DetailIcon = detailIcons[pageKey] ?? ShieldCheck;
-  if (pageKey.startsWith("articles/")) {
-    return <ArticlePage locale={locale} pageKey={pageKey as ArticleKey} />;
+  if (pageKey.startsWith("articles/") && article) {
+    return <ArticlePage locale={locale} pageKey={pageKey as ArticleKey} article={article} />;
   }
   return (
     <>
@@ -406,11 +399,12 @@ function InteriorPage({ locale, pageKey }: { locale: Locale; pageKey: PageKey })
         {pageKey === "spreadsheet" && <SearchDesk locale={locale} compact />}
       </section>
 
-      {["spreadsheet", "finds", "categories", "qc-guide", "shipping", "guide", "faq", "articles"].includes(pageKey) && <EvidenceGrid locale={locale} />}
+
 
       {pageKey === "finds" && <section className="section"><ProductGrid locale={locale} /></section>}
       {pageKey === "categories" && <section className="section"><CategoryGrid locale={locale} /></section>}
       {pageKey === "faq" && <section className="section faq-page"><FaqList locale={locale} /></section>}
+      {pageKey === "shipping" && <section className="section inline-cta"><p>{refreshCopy[locale].shippingSummary}</p><a href={routeFor(locale, "articles/tracking-not-updating")}>{t.pageLabels["articles/tracking-not-updating"]!.title}<ArrowRight /></a></section>}
       {pageKey === "articles" && <section className="section"><ArticleCards locale={locale} /></section>}
       {pageKey === "spreadsheet" && (
         <>
@@ -433,7 +427,7 @@ function InteriorPage({ locale, pageKey }: { locale: Locale; pageKey: PageKey })
   );
 }
 
-function Footer({ locale }: { locale: Locale }) {
+function Footer({ locale, pageKey }: { locale: Locale; pageKey: PageKey }) {
   const t = copy[locale];
   return (
     <footer>
@@ -441,17 +435,18 @@ function Footer({ locale }: { locale: Locale }) {
       <div className="footer-links">
         {navKeys.map((key) => <a key={key} href={routeFor(locale, key)}>{t.nav[key]}</a>)}
       </div>
+      <div className="footer-languages">{(["en", "de", "fr", "es", "it"] as Locale[]).map(lang => <a key={lang} href={routeFor(lang, pageKey)} hrefLang={lang} lang={lang}>{({en:"English",de:"Deutsch",fr:"Français",es:"Español",it:"Italiano"})[lang]}</a>)}</div>
       <div className="footer-base"><span>© 2026 Hacoos.pro</span><span>{t.updated}</span></div>
     </footer>
   );
 }
 
-export function SitePage({ locale, pageKey }: { locale: Locale; pageKey: PageKey }) {
+export function SitePage({ locale, pageKey, article }: { locale: Locale; pageKey: PageKey; article?: Article }) {
   useEffect(() => {
     document.documentElement.lang = locale;
     document.documentElement.dataset.locale = locale;
   }, [locale]);
-  const faqJson = pageKey === "faq" || pageKey === "home" ? {
+  const faqJson = pageKey === "faq" ? {
     "@context": "https://schema.org",
     "@type": "FAQPage",
     mainEntity: copy[locale].faq.map(([question, answer]) => ({
@@ -463,10 +458,10 @@ export function SitePage({ locale, pageKey }: { locale: Locale; pageKey: PageKey
   const articleJson = pageKey.startsWith("articles/") ? {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline: copy[locale].pageLabels[pageKey].title,
-    description: copy[locale].pageLabels[pageKey].intro,
-    datePublished: "2026-08-27",
-    dateModified: "2026-08-27",
+    headline: copy[locale].pageLabels[pageKey]!.title,
+    description: copy[locale].pageLabels[pageKey]!.intro,
+    datePublished: newArticleKeys.includes(pageKey as typeof newArticleKeys[number]) ? "2026-10-09" : "2026-08-27",
+    dateModified: "2026-10-09",
     inLanguage: locale,
     author: { "@type": "Organization", name: "Hacoos Research Desk" },
     publisher: { "@type": "Organization", name: "Hacoos" },
@@ -475,8 +470,8 @@ export function SitePage({ locale, pageKey }: { locale: Locale; pageKey: PageKey
   return (
     <div className="site-shell">
       <Header locale={locale} pageKey={pageKey} />
-      <main className={pageKey === "home" ? "home-main" : undefined}>{pageKey === "home" ? <HomePage locale={locale} /> : <InteriorPage locale={locale} pageKey={pageKey} />}</main>
-      <Footer locale={locale} />
+      <main className={pageKey === "home" ? "home-main" : undefined}>{pageKey === "home" ? <HomePage locale={locale} /> : <InteriorPage locale={locale} pageKey={pageKey} article={article} />}</main>
+      <Footer locale={locale} pageKey={pageKey} />
       {faqJson && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJson) }} />}
       {articleJson && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJson) }} />}
     </div>
