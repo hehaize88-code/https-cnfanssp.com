@@ -16,6 +16,7 @@ import {
 import { copy, locales, sections, type Locale, type Section } from "@/lib/site-data";
 import { localizedContent } from "@/lib/localized-content";
 import { sectionDetails } from "@/lib/section-details";
+import { articleLabels, articleSources, relatedArticles } from "@/lib/priority-articles";
 
 const localeNames: Record<Locale, string> = {
   en: "English",
@@ -93,7 +94,7 @@ function Footer({ locale }: { locale: Locale }) {
 function SearchForm({ locale }: { locale: Locale }) {
   const t = copy[locale];
   return (
-    <form className="search-form" action="https://www.cnfanssp.com/search.html" method="get">
+    <form className="search-form" action="https://www.cnfanshp.com/search.html" method="get">
       <Search size={20} strokeWidth={1.5} aria-hidden="true" />
       <input name="keywords" type="search" required placeholder={t.searchPlaceholder} aria-label={t.searchPlaceholder} />
       <input type="hidden" name="channelid" value="2" />
@@ -145,13 +146,13 @@ function CategoryGrid({ locale }: { locale: Locale }) {
   );
 }
 
-function ArticleCards({ locale }: { locale: Locale }) {
+function ArticleCards({ locale, limit }: { locale: Locale; limit?: number }) {
   const t = copy[locale];
   return (
     <div className="guide-grid">
-      {localizedContent[locale].guideCards.map((article, index) => (
+      {localizedContent[locale].guideCards.slice(0, limit).map((article, index) => (
         <Link href={`/${locale}/articles/${article.id}`} className="guide-card" key={article.id}>
-          <div className="guide-index">0{index + 1}</div><p>{article.tag}</p><h3>{article.title}</h3><span>{article.summary}</span>
+          <div className="guide-index">{String(index + 1).padStart(2, "0")}</div><p>{article.tag}</p><h3>{article.title}</h3><span>{article.summary}</span>
           <b>{t.readGuide}<ArrowRight size={16} /></b>
         </Link>
       ))}
@@ -229,7 +230,7 @@ export function HomePage({ locale }: { locale: Locale }) {
           </div>
         </section>
         <section className="section guides-home"><div className="shell">
-          <div className="section-head section-head-light"><div><p className="kicker">{c.ui.kickers[3]}</p><h2>{t.sectionTitles.articles}</h2></div><p>{t.sectionIntros.articles}</p></div><ArticleCards locale={locale} />
+          <div className="section-head section-head-light"><div><p className="kicker">{c.ui.kickers[3]}</p><h2>{t.sectionTitles.articles}</h2></div><p>{t.sectionIntros.articles}</p></div><ArticleCards locale={locale} limit={4} />
         </div></section>
         <section className="section shell faq-home">
           <div className="section-head"><div><p className="kicker">{c.ui.kickers[4]}</p><h2>{t.faqTitle}</h2></div><p>{t.disclaimer}</p></div><FAQList locale={locale} />
@@ -333,16 +334,17 @@ export function SectionPage({ locale, section }: { locale: Locale; section: Sect
 export function ArticlePage({ locale, slug }: { locale: Locale; slug: string }) {
   const c = localizedContent[locale]; const article = c.longGuides.find((item) => item.id === slug);
   if (!article) return null;
+  const labels = articleLabels[locale];
+  const relatedIds = relatedArticles[slug] ?? ["hacoo-links-not-opening", "hacoo-order-tracking", "hacoo-returns-refunds"];
+  const related = relatedIds.map((id) => c.longGuides.find((item) => item.id === id)).filter((item) => item && item.id !== slug);
   const canonical = `https://hacoos.org/${locale}/articles/${article.id}`;
-  const articleIndex = Math.max(0, c.longGuides.findIndex((item) => item.id === article.id));
-  const productImage = c.products[articleIndex % c.products.length].image;
   const publishedAt = article.publishedAt ?? "2026-08-26";
   const modifiedAt = article.modifiedAt ?? "2026-09-16";
-  const wordCount = [article.title, article.standfirst, ...article.sections.flatMap((section) => [section.heading, ...section.paragraphs])].join(" ").trim().split(/\s+/).length;
+  const wordCount = [article.title, article.standfirst, ...article.sections.flatMap((section) => [section.heading, ...section.paragraphs, ...(section.table?.headers ?? []), ...(section.table?.rows.flat() ?? [])])].join(" ").trim().split(/\s+/).length;
   const articleJsonLd = {
     "@context": "https://schema.org", "@type": "Article", headline: article.title, description: article.standfirst,
     datePublished: publishedAt, dateModified: modifiedAt, inLanguage: locale, wordCount, keywords: article.targetKeyword,
-    mainEntityOfPage: canonical, image: `https://hacoos.org${productImage}`,
+    mainEntityOfPage: canonical, image: "https://hacoos.org/hacoo-logo.png",
     author: { "@type": "Organization", name: "Hacoos.org", url: "https://hacoos.org/en" },
     publisher: { "@type": "Organization", name: "Hacoos.org", url: "https://hacoos.org/en", logo: { "@type": "ImageObject", url: "https://hacoos.org/hacoo-logo.png", width: 217, height: 57 } }, isAccessibleForFree: true,
   };
@@ -356,6 +358,6 @@ export function ArticlePage({ locale, slug }: { locale: Locale; slug: string }) 
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
     <section className="article-hero shell"><Link href={`/${locale}/articles`}><ArrowLeft size={15} />{c.ui.backToArticles}</Link><p className="kicker">{article.targetKeyword} · {article.reviewedAt}</p><h1>{article.title}</h1><p>{article.standfirst}</p></section>
     <section className="article-evidence shell"><p>{article.evidenceNote}</p><ArticleFactStrip facts={article.facts} /></section>
-    <section className="longform single-article shell"><aside><p>{c.ui.onThisPage}</p>{article.sections.map((item) => <a href={`#${item.id}`} key={item.id}>{item.heading}</a>)}</aside><div className="articles"><article id="article-start">{article.sections.map((item, index) => <section id={item.id} key={item.id}><h2>{item.heading}</h2>{item.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}{index === 1 && <ArticleFigure locale={locale} articleId={article.id} caption={article.evidenceNote} />}</section>)}</article></div></section>
+    <section className="longform single-article shell"><aside><p>{c.ui.onThisPage}</p>{article.sections.map((item) => <a href={`#${item.id}`} key={item.id}>{item.heading}</a>)}</aside><div className="articles"><article id="article-start">{article.sections.map((item, index) => <section id={item.id} key={item.id}><h2>{item.heading}</h2>{item.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}{item.table && <div className="article-table"><table><thead><tr>{item.table.headers.map((heading) => <th scope="col" key={heading}>{heading}</th>)}</tr></thead><tbody>{item.table.rows.map((row) => <tr key={row[0]}>{row.map((cell, column) => column === 0 ? <th scope="row" key={column}>{cell}</th> : <td key={column}>{cell}</td>)}</tr>)}</tbody></table></div>}{index === 1 && <ArticleFigure locale={locale} articleId={article.id} caption={article.evidenceNote} />}</section>)}<section className="article-sources"><h2>{labels.sources}</h2><ul>{articleSources(slug, locale).map((source) => <li key={source.url}><a href={source.url} rel="noopener noreferrer">{source.label}</a></li>)}</ul></section><section className="article-related"><h2>{labels.related}</h2><ul>{related.map((item) => item && <li key={item.id}><Link href={`/${locale}/articles/${item.id}`}>{item.title}</Link></li>)}<li><Link href={`/${locale}/spreadsheet`}>{copy[locale].sectionTitles.spreadsheet}</Link></li></ul></section></article></div></section>
   </main><Footer locale={locale} /></>;
 }

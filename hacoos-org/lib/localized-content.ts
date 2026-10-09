@@ -7,6 +7,9 @@ import {
 import { seoArticles } from "@/lib/seo-articles";
 
 const articleOrder = [
+  "hacoo-links-not-opening",
+  "hacoo-order-tracking",
+  "hacoo-returns-refunds",
   "hacoo-spreadsheet-guide",
   "hacoo-link-verification",
   "hacoo-dead-link-recovery",
@@ -65,7 +68,7 @@ const enUi: UiCopy = {
   object: "OBJECT",
   paperNote: ["Search less.", "Inspect more."],
   signals: ["live categories", "complete languages", "before commitment", "source-page links"],
-  kickers: ["01 / INDEX", "02 / CATEGORIES", "03 / METHOD", "04 / SEO ARTICLES", "05 / QUESTIONS"],
+  kickers: ["01 / INDEX", "02 / CATEGORIES", "03 / METHOD", "04 / GUIDES", "05 / QUESTIONS"],
   methodCards: [
     ["Find the live source", "Keep the product page, variant and date together. A saved image alone is not a verifiable reference."],
     ["Compare real evidence", "Use measurements, current photos and construction details instead of trusting labels or popularity."],
@@ -80,7 +83,7 @@ const enUi: UiCopy = {
     ["Shortlist three", "Compare evidence and delivered cost. Stop searching when three options satisfy the same brief."],
   ],
   sourceNote: ["Every card opens a live source page", "Re-check the title, images, variant and availability before relying on a saved reference."],
-  articleLibrary: ["SEO ARTICLE LIBRARY", "Twelve independent articles", "Each article has its own indexable URL, full language version and a focused search intent."],
+  articleLibrary: ["HACOO GUIDE LIBRARY", "Fifteen independent articles", "Each article has its own indexable URL, full language version and a focused search intent."],
   guideHub: ["DECISION PATH", "Use the guides in the right order", "Move from discovery to evidence, sizing and parcel planning without skipping the decision points that matter."],
   guideSteps: [
     ["Define the brief", "Write down use, fit, material and the detail you will not compromise on."],
@@ -130,7 +133,7 @@ const de: LocaleText = {
       ["Drei auswählen", "Belege und gelieferte Gesamtkosten vergleichen. Die Suche beenden, sobald drei Optionen denselben Kriterien entsprechen."],
     ],
     sourceNote: ["Jede Karte öffnet eine aktive Quellseite", "Titel, Bilder, Variante und Verfügbarkeit erneut prüfen, bevor eine gespeicherte Referenz verwendet wird."],
-    articleLibrary: ["SEO-ARTIKELBIBLIOTHEK", "Zwölf unabhängige Artikel", "Jeder Artikel besitzt eine eigene indexierbare URL, eine vollständige Sprachversion und eine klar abgegrenzte Suchintention."],
+    articleLibrary: ["HACOO-RATGEBER", "Fünfzehn unabhängige Artikel", "Jeder Artikel besitzt eine eigene indexierbare URL, eine vollständige Sprachversion und eine klar abgegrenzte Suchintention."],
     guideHub: ["ENTSCHEIDUNGSWEG", "Die Ratgeber in der richtigen Reihenfolge nutzen", "Von der Entdeckung über Belege und Größen bis zur Paketplanung gehen, ohne wichtige Entscheidungspunkte zu überspringen."],
     guideSteps: [
       ["Anforderungen definieren", "Nutzung, Passform, Material und das nicht verhandelbare Detail notieren."],
@@ -165,13 +168,37 @@ const de: LocaleText = {
     ["Accessoires", "Taschen, Hüllen, Schmuck und Uhren"], ["Elektronik", "Kleine Geräte und Alltagsnutzen"],
   ],
   products: [
-    ["Performance-Courtschuh", "Schuhe", "Referenz für Form, Außensohle und Dämpfung"],
-    ["Hoodie im Archivschnitt", "Hoodies", "Referenz für Grafikplatzierung und Stoffgewicht"],
-    ["Strukturierte Alltagstasche", "Accessoires", "Referenz für Beschläge und Konstruktion"],
-    ["Statement-Uhr", "Accessoires", "Referenz für Zifferblatt, Fassung und Schließe"],
-    ["Praktische Handyhülle", "Accessoires", "Referenz für Oberfläche und Gerätepassform"],
-    ["Minimalistisches Alltagsaccessoire", "Accessoires", "Referenz für Material und Details"],
+  [
+    "Sportschuh-Referenz",
+    "Schuhe",
+    "Genaue Farbe und Größe vergleichen"
   ],
+  [
+    "Grafik-Hoodie-Referenz",
+    "Hoodies",
+    "Maße und gewähltes Motiv prüfen"
+  ],
+  [
+    "Alltagssneaker-Referenz",
+    "Schuhe",
+    "Aktuelle Farboption prüfen"
+  ],
+  [
+    "Kurzarmhemd-Referenz",
+    "Hemden",
+    "Kragen, Ärmel und Brustmaße vergleichen"
+  ],
+  [
+    "Gürtel-Referenz",
+    "Accessoires",
+    "Länge, Breite und Schließe bestätigen"
+  ],
+  [
+    "Weiße Sneaker-Referenz",
+    "Schuhe",
+    "Aktuelle Variante und Detailfotos prüfen"
+  ]
+],
   faqs: [
     ["Ist Hacoos.org die offizielle Hacoo-Website?", "Nein. Hacoos.org ist ein unabhängiger Informationsindex. Hacoo beschreibt sich als globale Community zum Teilen von Inhalten; diese Bibliothek ist ein eigenständiges Recherche- und Navigationsprojekt."],
     ["Verkauft oder versendet diese Website Produkte?", "Nein. Sie veröffentlicht redaktionellen Kontext und Links zu aktiven Referenzseiten. Kauf, Zahlung, Verkäuferkontakt, Prüfung und Versand finden an anderer Stelle statt."],
@@ -252,7 +279,7 @@ const fr: LocaleText = {
       ["Retenir trois options", "Comparez les preuves et le coût livré. Arrêtez la recherche lorsque trois options répondent au même cahier des charges."],
     ],
     sourceNote: ["Chaque carte ouvre une fiche source active", "Vérifiez de nouveau le titre, les images, la variante et la disponibilité avant d’utiliser une référence enregistrée."],
-    articleLibrary: ["BIBLIOTHÈQUE D’ARTICLES SEO", "Douze articles indépendants", "Chaque article possède sa propre URL indexable, une version linguistique complète et une intention de recherche précise."],
+    articleLibrary: ["GUIDES HACOO", "Quinze articles indépendants", "Chaque article possède sa propre URL indexable, une version linguistique complète et une intention de recherche précise."],
     guideHub: ["PARCOURS DE DÉCISION", "Utiliser les guides dans le bon ordre", "Passez de la découverte aux preuves, aux tailles et à la préparation du colis sans ignorer les décisions importantes."],
     guideSteps: [
       ["Définir le besoin", "Notez l’usage, la coupe, la matière et le détail sur lequel vous ne transigerez pas."],
@@ -284,13 +311,37 @@ const fr: LocaleText = {
     ["Accessoires", "Sacs, étuis, bijoux et montres"], ["Électronique", "Petits appareils et utilité quotidienne"],
   ],
   products: [
-    ["Chaussure de terrain performante", "Chaussures", "Référence de forme, semelle et amorti"],
-    ["Sweat à coupe archive", "Sweats à capuche", "Référence de placement graphique et de grammage"],
-    ["Sac de jour structuré", "Accessoires", "Référence de quincaillerie et de construction"],
-    ["Montre affirmée", "Accessoires", "Référence de cadran, sertissage et fermoir"],
-    ["Coque de téléphone utilitaire", "Accessoires", "Référence de finition et d’ajustement"],
-    ["Accessoire quotidien minimal", "Accessoires", "Référence de matière et de détails"],
+  [
+    "Référence de chaussure de sport",
+    "Chaussures",
+    "Comparer couleur et pointure exactes"
   ],
+  [
+    "Référence de sweat à motif",
+    "Sweats",
+    "Vérifier mesures et motif choisi"
+  ],
+  [
+    "Référence de basket quotidienne",
+    "Chaussures",
+    "Vérifier le coloris actuel"
+  ],
+  [
+    "Référence de chemise à manches courtes",
+    "Chemises",
+    "Comparer col, manches et poitrine"
+  ],
+  [
+    "Référence de ceinture",
+    "Accessoires",
+    "Confirmer longueur, largeur et boucle"
+  ],
+  [
+    "Référence de basket blanche",
+    "Chaussures",
+    "Vérifier variante et photos de détail"
+  ]
+],
   faqs: [
     ["Hacoos.org est-il le site officiel de Hacoo ?", "Non. Hacoos.org est un index informatif indépendant. Hacoo se présente comme une communauté mondiale de partage de contenus ; cette bibliothèque est un projet distinct de recherche et de navigation."],
     ["Ce site vend-il ou expédie-t-il des produits ?", "Non. Il publie du contexte éditorial et des liens vers des fiches actives. Achat, paiement, échange avec le vendeur, inspection et expédition ont lieu ailleurs."],
@@ -371,7 +422,7 @@ const es: LocaleText = {
       ["Elige tres", "Compara pruebas y coste entregado. Deja de buscar cuando tres opciones cumplan el mismo objetivo."],
     ],
     sourceNote: ["Cada tarjeta abre una página fuente activa", "Vuelve a comprobar título, imágenes, variante y disponibilidad antes de confiar en una referencia guardada."],
-    articleLibrary: ["BIBLIOTECA DE ARTÍCULOS SEO", "Doce artículos independientes", "Cada artículo tiene una URL indexable propia, una versión completa en cada idioma y una intención de búsqueda definida."],
+    articleLibrary: ["GUÍAS HACOO", "Quince artículos independientes", "Cada artículo tiene una URL indexable propia, una versión completa en cada idioma y una intención de búsqueda definida."],
     guideHub: ["RUTA DE DECISIÓN", "Usa las guías en el orden adecuado", "Pasa del descubrimiento a las pruebas, las tallas y la planificación del paquete sin saltarte decisiones importantes."],
     guideSteps: [
       ["Define el objetivo", "Anota el uso, el ajuste, el material y el detalle que no estás dispuesto a ceder."],
@@ -403,13 +454,37 @@ const es: LocaleText = {
     ["Accesorios", "Bolsos, fundas, joyería y relojes"], ["Electrónica", "Dispositivos pequeños y utilidad diaria"],
   ],
   products: [
-    ["Zapatilla de pista de alto rendimiento", "Calzado", "Referencia de forma, suela y amortiguación"],
-    ["Sudadera de corte archivo", "Sudaderas", "Referencia de colocación gráfica y gramaje"],
-    ["Bolso de día estructurado", "Accesorios", "Referencia de herrajes y construcción"],
-    ["Reloj llamativo", "Accesorios", "Referencia de esfera, engaste y cierre"],
-    ["Funda de móvil utilitaria", "Accesorios", "Referencia de acabado y ajuste al dispositivo"],
-    ["Accesorio diario minimalista", "Accesorios", "Referencia de material y detalles"],
+  [
+    "Referencia de zapatilla deportiva",
+    "Calzado",
+    "Compara color y talla exactos"
   ],
+  [
+    "Referencia de sudadera gráfica",
+    "Sudaderas",
+    "Revisa medidas y diseño elegido"
+  ],
+  [
+    "Referencia de zapatilla diaria",
+    "Calzado",
+    "Verifica el color actual"
+  ],
+  [
+    "Referencia de camisa de manga corta",
+    "Camisas",
+    "Compara cuello, manga y pecho"
+  ],
+  [
+    "Referencia de cinturón",
+    "Accesorios",
+    "Confirma largo, ancho y hebilla"
+  ],
+  [
+    "Referencia de zapatilla blanca",
+    "Calzado",
+    "Revisa variante y fotos de detalle"
+  ]
+],
   faqs: [
     ["¿Hacoos.org es la web oficial de Hacoo?", "No. Hacoos.org es un índice informativo independiente. Hacoo se describe como una comunidad global para compartir contenidos; esta biblioteca es un proyecto separado de investigación y navegación."],
     ["¿Esta web vende o envía productos?", "No. Publica contexto editorial y enlaces a páginas activas. La compra, el pago, la comunicación con el vendedor, la inspección y el envío tienen lugar en otros servicios."],
@@ -490,7 +565,7 @@ const it: LocaleText = {
       ["Selezionane tre", "Confronta prove e costo consegnato. Smetti di cercare quando tre opzioni soddisfano lo stesso brief."],
     ],
     sourceNote: ["Ogni scheda apre una pagina sorgente attiva", "Ricontrolla titolo, immagini, variante e disponibilità prima di fare affidamento su un riferimento salvato."],
-    articleLibrary: ["BIBLIOTECA DI ARTICOLI SEO", "Dodici articoli indipendenti", "Ogni articolo ha un proprio URL indicizzabile, una versione linguistica completa e un intento di ricerca specifico."],
+    articleLibrary: ["GUIDE HACOO", "Quindici articoli indipendenti", "Ogni articolo ha un proprio URL indicizzabile, una versione linguistica completa e un intento di ricerca specifico."],
     guideHub: ["PERCORSO DECISIONALE", "Usa le guide nell’ordine corretto", "Passa dalla scoperta alle prove, alle taglie e alla pianificazione del pacco senza saltare i passaggi decisivi."],
     guideSteps: [
       ["Definisci il brief", "Annota uso, vestibilità, materiale e il dettaglio su cui non accetti compromessi."],
@@ -522,13 +597,37 @@ const it: LocaleText = {
     ["Accessori", "Borse, custodie, gioielli e orologi"], ["Elettronica", "Piccoli dispositivi e utilità quotidiana"],
   ],
   products: [
-    ["Scarpa performante da campo", "Scarpe", "Riferimento per forma, suola e ammortizzazione"],
-    ["Felpa dal taglio archivio", "Felpe con cappuccio", "Riferimento per grafica e peso del tessuto"],
-    ["Borsa da giorno strutturata", "Accessori", "Riferimento per ferramenta e costruzione"],
-    ["Orologio protagonista", "Accessori", "Riferimento per quadrante, incastonatura e chiusura"],
-    ["Custodia telefono funzionale", "Accessori", "Riferimento per finitura e compatibilità"],
-    ["Accessorio quotidiano minimale", "Accessori", "Riferimento per materiale e dettagli"],
+  [
+    "Riferimento scarpa sportiva",
+    "Scarpe",
+    "Confronta colore e taglia esatti"
   ],
+  [
+    "Riferimento felpa grafica",
+    "Felpe",
+    "Verifica misure e disegno scelto"
+  ],
+  [
+    "Riferimento sneaker quotidiana",
+    "Scarpe",
+    "Controlla il colore attuale"
+  ],
+  [
+    "Riferimento camicia a maniche corte",
+    "Camicie",
+    "Confronta collo, maniche e petto"
+  ],
+  [
+    "Riferimento cintura",
+    "Accessori",
+    "Conferma lunghezza, larghezza e fibbia"
+  ],
+  [
+    "Riferimento sneaker bianca",
+    "Scarpe",
+    "Controlla variante e foto dettagliate"
+  ]
+],
   faqs: [
     ["Hacoos.org è il sito ufficiale di Hacoo?", "No. Hacoos.org è un indice informativo indipendente. Hacoo si descrive come una comunità globale di condivisione dei contenuti; questa biblioteca è un progetto separato di ricerca e navigazione."],
     ["Questo sito vende o spedisce prodotti?", "No. Pubblica contesto editoriale e link a pagine attive. Acquisto, pagamento, comunicazione con il venditore, ispezione e spedizione avvengono altrove."],
@@ -609,7 +708,7 @@ const pt: LocaleText = {
       ["Escolha três", "Compare provas e custo entregue. Pare de procurar quando três opções cumprirem o mesmo objetivo."],
     ],
     sourceNote: ["Cada cartão abre uma página de origem ativa", "Volte a confirmar título, imagens, variante e disponibilidade antes de confiar numa referência guardada."],
-    articleLibrary: ["BIBLIOTECA DE ARTIGOS SEO", "Doze artigos independentes", "Cada artigo tem um URL indexável próprio, uma versão linguística completa e uma intenção de pesquisa definida."],
+    articleLibrary: ["GUIAS HACOO", "Quinze artigos independentes", "Cada artigo tem um URL indexável próprio, uma versão linguística completa e uma intenção de pesquisa definida."],
     guideHub: ["PERCURSO DE DECISÃO", "Use os guias pela ordem correta", "Passe da descoberta às provas, aos tamanhos e ao planeamento do pacote sem ignorar decisões importantes."],
     guideSteps: [
       ["Defina o objetivo", "Anote utilização, corte, material e o detalhe em que não aceita compromisso."],
@@ -641,13 +740,37 @@ const pt: LocaleText = {
     ["Acessórios", "Malas, capas, joias e relógios"], ["Eletrónica", "Pequenos dispositivos e utilidade diária"],
   ],
   products: [
-    ["Sapatilha de campo de desempenho", "Calçado", "Referência de forma, sola e amortecimento"],
-    ["Sweatshirt de corte arquivo", "Sweatshirts", "Referência de posicionamento gráfico e gramagem"],
-    ["Mala de dia estruturada", "Acessórios", "Referência de ferragens e construção"],
-    ["Relógio de destaque", "Acessórios", "Referência de mostrador, cravação e fecho"],
-    ["Capa de telemóvel funcional", "Acessórios", "Referência de acabamento e ajuste"],
-    ["Acessório diário minimalista", "Acessórios", "Referência de material e detalhes"],
+  [
+    "Referência de calçado desportivo",
+    "Calçado",
+    "Compare cor e tamanho exatos"
   ],
+  [
+    "Referência de sweatshirt gráfica",
+    "Sweatshirts",
+    "Verifique medidas e desenho escolhido"
+  ],
+  [
+    "Referência de sapatilha diária",
+    "Calçado",
+    "Confirme a opção de cor atual"
+  ],
+  [
+    "Referência de camisa de manga curta",
+    "Camisas",
+    "Compare gola, manga e peito"
+  ],
+  [
+    "Referência de cinto",
+    "Acessórios",
+    "Confirme comprimento, largura e fivela"
+  ],
+  [
+    "Referência de sapatilha branca",
+    "Calçado",
+    "Verifique variante e fotografias de detalhe"
+  ]
+],
   faqs: [
     ["Hacoos.org é o site oficial da Hacoo?", "Não. Hacoos.org é um índice informativo independente. A Hacoo descreve-se como uma comunidade global de partilha de conteúdos; esta biblioteca é um projeto separado de pesquisa e navegação."],
     ["Este site vende ou envia produtos?", "Não. Publica contexto editorial e ligações para páginas ativas. Compra, pagamento, contacto com vendedor, inspeção e envio acontecem noutros serviços."],

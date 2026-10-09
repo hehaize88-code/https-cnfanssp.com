@@ -1,10 +1,12 @@
 import type { Locale } from "@/lib/site-data";
 import { expandedSeoArticles } from "@/lib/seo-articles-expansion";
+import { priorityArticles, improveArticle } from "@/lib/priority-articles";
 
 export type SeoSection = {
   id: string;
   heading: string;
   paragraphs: string[];
+  table?: { headers: string[]; rows: string[][] };
 };
 
 export type SeoArticle = {
@@ -1130,7 +1132,7 @@ const pt: SeoArticle[] = [
   }
 ];
 
-export const seoArticles: Record<Locale, SeoArticle[]> = {
+const existingArticles: Record<Locale, SeoArticle[]> = {
   en: [...en, ...expandedSeoArticles.en],
   de: [...de, ...expandedSeoArticles.de],
   fr: [...fr, ...expandedSeoArticles.fr],
@@ -1138,3 +1140,10 @@ export const seoArticles: Record<Locale, SeoArticle[]> = {
   it: [...it, ...expandedSeoArticles.it],
   pt: [...pt, ...expandedSeoArticles.pt],
 };
+
+export const seoArticles = Object.fromEntries(
+  Object.entries(existingArticles).map(([locale, articles]) => [locale, [
+    ...priorityArticles[locale as Locale],
+    ...articles.map((article) => improveArticle(article, locale as Locale)),
+  ]]),
+) as Record<Locale, SeoArticle[]>;

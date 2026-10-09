@@ -14,13 +14,12 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const article = localizedContent[locale as Locale].longGuides.find((item) => item.id === slug)!;
   const title = `${article.title} | Hacoos.org`;
   const canonical = `https://hacoos.org/${locale}/articles/${slug}`;
-  const articleImageNumber = (articleSlugs.indexOf(slug as (typeof articleSlugs)[number]) % 6) + 1;
-  const image = `https://hacoos.org/products/hacoo-product-${String(articleImageNumber).padStart(2, "0")}.webp`;
+  const image = "https://hacoos.org/hacoo-logo.png";
   const publishedTime = article.publishedAt ?? "2026-08-26";
   const modifiedTime = article.modifiedAt ?? "2026-09-16";
   return {
     title,
-    description: article.standfirst,
+    description: article.summary,
     alternates: {
       canonical: `https://hacoos.org/${locale}/articles/${slug}`,
       languages: {
@@ -32,7 +31,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       type: "article",
       siteName: "Hacoos.org",
       title,
-      description: article.standfirst,
+      description: article.summary,
       url: canonical,
       locale,
       publishedTime,
@@ -40,9 +39,9 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       images: [{ url: image, alt: article.title }],
     },
     twitter: {
-      card: "summary_large_image",
+      card: "summary",
       title,
-      description: article.standfirst,
+      description: article.summary,
       images: [image],
     },
   };

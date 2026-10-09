@@ -19,7 +19,7 @@ interface ExecutionContext {
   passThroughOnException(): void;
 }
 
-const CACHE_VERSION = "2026-09-16-article-expansion-1";
+const CACHE_VERSION = "2026-10-09-seo-articles-1";
 const CACHE_CONTROL = "public, max-age=300, s-maxage=86400, stale-while-revalidate=604800";
 
 function cachedResponse(response: Response, state: "HIT" | "MISS") {
@@ -58,7 +58,16 @@ const worker = {
       }, allowedWidths);
     }
 
-    const canUseEdgeCache = request.method === "GET" && url.hostname === "hacoos.org";
+    // Framework navigation payloads must never share cached HTML documents.
+    const isFrameworkRequest = request.headers.has("rsc") ||
+      request.headers.has("next-router-state-tree") ||
+      request.headers.has("next-router-prefetch") ||
+      (request.headers.get("accept") ?? "").includes("text/x-component") ||
+      url.searchParams.has("_rsc");
+    const isPublicDocument = /^\/(en|de|fr|es|it|pt)(\/|$)/.test(url.pathname) ||
+      ["/robots.txt", "/sitemap.xml"].includes(url.pathname);
+    const canUseEdgeCache = request.method === "GET" && url.hostname === "hacoos.org" &&
+      isPublicDocument && !isFrameworkRequest && !url.search && !request.headers.has("authorization");
     const edgeCache = typeof caches === "undefined" ? null : (caches as unknown as { default: Cache }).default;
     const cacheUrl = new URL(url);
     cacheUrl.search = "";
@@ -70,9 +79,12 @@ const worker = {
       if (hit) return cachedResponse(hit, "HIT");
     }
 
-    const response = await handler.fetch(request, env, ctx);
+    const renderHeaders = new Headers(request.headers);
+    const locale = url.pathname.split("/")[1];
+    renderHeaders.set("x-hacoos-locale", /^(en|de|fr|es|it|pt)$/.test(locale) ? locale : "en");
+    const response = await handler.fetch(new Request(request, { headers: renderHeaders }), env, ctx);
     const contentType = response.headers.get("content-type") ?? "";
-    const isCacheable = response.status === 200 && (
+    const isCacheable = response.status === 200 && !response.headers.has("set-cookie") && (
       contentType.includes("text/html") ||
       contentType.includes("application/xml") ||
       contentType.includes("text/plain")

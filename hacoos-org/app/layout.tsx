@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { locales, type Locale } from "@/lib/site-data";
+import { headers } from "next/headers";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://hacoos.org"),
@@ -46,13 +48,19 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const locale = (await headers()).get("x-hacoos-locale") ?? "en";
+  const language = locales.includes(locale as Locale) ? locale : "en";
   return (
-    <html lang="en">
+    <html lang={language}>
+      <head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-FNVB24S4VG" />
+        <script defer src="/analytics.js" />
+      </head>
       <body>{children}</body>
     </html>
   );

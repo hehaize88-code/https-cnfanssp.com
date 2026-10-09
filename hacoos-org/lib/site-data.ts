@@ -44,7 +44,7 @@ type Copy = {
 
 export const copy: Record<Locale, Copy> = {
   en: {
-    nav: { spreadsheet: "Index", finds: "Finds", articles: "Articles", guides: "Guides", qc: "QC", shipping: "Shipping", faq: "FAQ" },
+    nav: { spreadsheet: "Spreadsheet", finds: "Finds", articles: "Articles", guides: "Guides", qc: "QC", shipping: "Shipping", faq: "FAQ" },
     eyebrow: "Independent Hacoo product research",
     homeMetaTitle: "Hacoo Product Links & Independent Finds | Hacoos.org",
     title: "Independent Hacoo Product Link Library",
@@ -81,7 +81,7 @@ export const copy: Record<Locale, Copy> = {
     sectionIntros: {
       spreadsheet: "Search the live source catalogue or enter through a category. This independent navigation layer does not claim to be an official Hacoo spreadsheet.",
       finds: "An editorial cross-section of live source-page references. Every card keeps the destination visible and requires a current listing check.",
-      articles: "Twelve independent Hacoo articles with dated evidence, separate search intent and complete language versions.",
+      articles: "Fifteen independent Hacoo articles with dated evidence, separate search intent and complete language versions.",
       guides: "Long-form notes that turn a promising reference into a considered decision.",
       qc: "A repeatable photo-review system for identity, proportions, measurements, material and construction — without claiming that every link includes warehouse QC.",
       shipping: "No universal Hacoo rate or delivery time is presented as fact. Compare the current destination quote, tracking terms and total delivered cost.",
@@ -110,7 +110,7 @@ export const copy: Record<Locale, Copy> = {
     disclaimer: "Hacoos.org ist ein unabhängiger Informationsindex. Die Seite ist nicht Hacoo, verkauft nichts und ist mit den genannten Plattformen oder Verkäufern nicht verbunden.",
     openReference: "Referenz öffnen", allFinds: "Alle Funde", readGuide: "Feldnotiz lesen", language: "Sprache", menu: "Menü", footerLine: "Unabhängige Produktrecherche für sorgfältige Nutzer.",
     sectionTitles: { spreadsheet: "Hacoo Spreadsheet 2026: aktiver Produktlink-Index", finds: "Hacoo Finds mit aktiven Quellseiten", articles: "Recherchierte Hacoo-Ratgeber und Erfahrungen", guides: "Hacoo-Referenzen mit Prüfmethode nutzen", qc: "Hacoo QC ohne Rätselraten", shipping: "Hacoo-Versand vor dem Kauf prüfen", faq: "Hacoo FAQ: Produktlinks, Bewertungen, QC und Versand" },
-    sectionIntros: { spreadsheet: "Durchsuche den aktuellen Quellkatalog. Diese unabhängige Navigation behauptet nicht, ein offizielles Hacoo Spreadsheet zu sein.", finds: "Eine redaktionelle Auswahl aktiver Quellseiten mit sichtbarem Ziel und notwendiger Aktualitätsprüfung.", articles: "Zwölf unabhängige Hacoo-Artikel mit datierten Belegen, getrennter Suchintention und vollständigen Sprachfassungen.", guides: "Ausführliche Notizen für überlegte Entscheidungen.", qc: "Ein wiederholbares System für Identität, Proportion, Maße, Material und Verarbeitung, ohne QC-Fotos für jeden Link zu versprechen.", shipping: "Keine Universalrate oder Lieferfrist wird als Fakt behauptet. Vergleiche aktuelles Angebot, Tracking und Gesamtkosten.", faq: "Was diese Seite ist, wohin Links führen und was du selbst prüfen musst." },
+    sectionIntros: { spreadsheet: "Durchsuche den aktuellen Quellkatalog. Diese unabhängige Navigation behauptet nicht, ein offizielles Hacoo Spreadsheet zu sein.", finds: "Eine redaktionelle Auswahl aktiver Quellseiten mit sichtbarem Ziel und notwendiger Aktualitätsprüfung.", articles: "Fünfzehn unabhängige Hacoo-Artikel mit datierten Belegen, getrennter Suchintention und vollständigen Sprachfassungen.", guides: "Ausführliche Notizen für überlegte Entscheidungen.", qc: "Ein wiederholbares System für Identität, Proportion, Maße, Material und Verarbeitung, ohne QC-Fotos für jeden Link zu versprechen.", shipping: "Keine Universalrate oder Lieferfrist wird als Fakt behauptet. Vergleiche aktuelles Angebot, Tracking und Gesamtkosten.", faq: "Was diese Seite ist, wohin Links führen und was du selbst prüfen musst." },
   },
   fr: {
     nav: { spreadsheet: "Index", finds: "Sélection", articles: "Articles", guides: "Guides", qc: "QC", shipping: "Livraison", faq: "FAQ" },
@@ -127,7 +127,7 @@ export const copy: Record<Locale, Copy> = {
     disclaimer: "Hacoos.org est un index informatif indépendant. Il ne représente pas Hacoo, ne vend aucun produit et n’est affilié à aucune plateforme ou vendeur cité.",
     openReference: "Ouvrir la référence", allFinds: "Voir la sélection", readGuide: "Lire la note", language: "Langue", menu: "Menu", footerLine: "Recherche produit indépendante pour lecteurs attentifs.",
     sectionTitles: { spreadsheet: "Tableur Hacoo 2026 : index de liens actifs", finds: "Hacoo finds avec pages source actives", articles: "Guides et avis Hacoo documentés", guides: "Utiliser les références Hacoo avec méthode", qc: "QC Hacoo sans deviner", shipping: "Vérifier la livraison Hacoo avant l’achat", faq: "FAQ Hacoo : liens produits, avis, QC et livraison" },
-    sectionIntros: { spreadsheet: "Recherchez dans le catalogue source actuel. Cette navigation indépendante ne prétend pas être un tableur Hacoo officiel.", finds: "Une sélection éditoriale de pages source actives, avec destination visible et contrôle actuel nécessaire.", articles: "Douze articles Hacoo avec sources datées, intentions distinctes et versions linguistiques complètes.", guides: "Des notes longues pour transformer une piste en décision réfléchie.", qc: "Une méthode répétable pour identité, proportions, mesures, matière et fabrication, sans promettre des photos QC pour chaque lien.", shipping: "Aucun tarif ou délai universel n’est présenté comme fait. Comparez devis actuel, tracking et coût livré.", faq: "Ce qu’est ce site, où mènent les liens et ce qu’il reste à vérifier." },
+    sectionIntros: { spreadsheet: "Recherchez dans le catalogue source actuel. Cette navigation indépendante ne prétend pas être un tableur Hacoo officiel.", finds: "Une sélection éditoriale de pages source actives, avec destination visible et contrôle actuel nécessaire.", articles: "Quinze articles Hacoo avec sources datées, intentions distinctes et versions linguistiques complètes.", guides: "Des notes longues pour transformer une piste en décision réfléchie.", qc: "Une méthode répétable pour identité, proportions, mesures, matière et fabrication, sans promettre des photos QC pour chaque lien.", shipping: "Aucun tarif ou délai universel n’est présenté comme fait. Comparez devis actuel, tracking et coût livré.", faq: "Ce qu’est ce site, où mènent les liens et ce qu’il reste à vérifier." },
   },
   es: {
     nav: { spreadsheet: "Índice", finds: "Hallazgos", articles: "Artículos", guides: "Guías", qc: "QC", shipping: "Envío", faq: "FAQ" },
@@ -141,7 +141,7 @@ export const copy: Record<Locale, Copy> = {
     disclaimer: "Hacoos.org es un índice informativo independiente. No es Hacoo, no vende productos y no está afiliado con las plataformas o vendedores citados.",
     openReference: "Abrir referencia", allFinds: "Ver hallazgos", readGuide: "Leer la nota", language: "Idioma", menu: "Menú", footerLine: "Investigación independiente para compradores cuidadosos.",
     sectionTitles: { spreadsheet: "Hacoo Spreadsheet 2026: índice de enlaces activos", finds: "Hacoo finds con páginas fuente activas", articles: "Guías y opiniones Hacoo investigadas", guides: "Usar referencias Hacoo con un método", qc: "QC Hacoo sin adivinar", shipping: "Revisar el envío Hacoo antes de pagar", faq: "Preguntas Hacoo: enlaces, opiniones, QC y envío" },
-    sectionIntros: { spreadsheet: "Busca en el catálogo fuente actual. Esta navegación independiente no afirma ser una hoja oficial de Hacoo.", finds: "Selección editorial de páginas fuente activas con destino visible y comprobación actual necesaria.", articles: "Doce artículos Hacoo con pruebas fechadas, intención separada y versiones lingüísticas completas.", guides: "Notas extensas para convertir una referencia en una decisión meditada.", qc: "Sistema para identidad, proporción, medidas, material y confección, sin prometer fotos QC en todos los enlaces.", shipping: "No se presenta una tarifa o plazo universal como hecho. Compara presupuesto actual, tracking y coste entregado.", faq: "Qué es esta web, adónde van los enlaces y qué debes comprobar." },
+    sectionIntros: { spreadsheet: "Busca en el catálogo fuente actual. Esta navegación independiente no afirma ser una hoja oficial de Hacoo.", finds: "Selección editorial de páginas fuente activas con destino visible y comprobación actual necesaria.", articles: "Quince artículos Hacoo con pruebas fechadas, intención separada y versiones lingüísticas completas.", guides: "Notas extensas para convertir una referencia en una decisión meditada.", qc: "Sistema para identidad, proporción, medidas, material y confección, sin prometer fotos QC en todos los enlaces.", shipping: "No se presenta una tarifa o plazo universal como hecho. Compara presupuesto actual, tracking y coste entregado.", faq: "Qué es esta web, adónde van los enlaces y qué debes comprobar." },
   },
   it: {
     nav: { spreadsheet: "Indice", finds: "Selezione", articles: "Articoli", guides: "Guide", qc: "QC", shipping: "Spedizione", faq: "FAQ" },
@@ -155,7 +155,7 @@ export const copy: Record<Locale, Copy> = {
     disclaimer: "Hacoos.org è un indice informativo indipendente. Non è Hacoo, non vende prodotti e non è affiliato alle piattaforme o ai venditori citati.",
     openReference: "Apri riferimento", allFinds: "Vedi la selezione", readGuide: "Leggi la nota", language: "Lingua", menu: "Menu", footerLine: "Ricerca indipendente per chi naviga con attenzione.",
     sectionTitles: { spreadsheet: "Hacoo Spreadsheet 2026: indice di link attivi", finds: "Hacoo finds con fonti attive", articles: "Guide e recensioni Hacoo documentate", guides: "Usare riferimenti Hacoo con metodo", qc: "Hacoo QC senza supposizioni", shipping: "Controllare la spedizione Hacoo prima dell’acquisto", faq: "FAQ Hacoo: link prodotto, recensioni, QC e spedizione" },
-    sectionIntros: { spreadsheet: "Cerca nel catalogo sorgente attuale. Questa navigazione indipendente non afferma di essere un foglio Hacoo ufficiale.", finds: "Selezione editoriale di pagine sorgente attive, con destinazione visibile e controllo corrente necessario.", articles: "Dodici articoli Hacoo con prove datate, intento separato e versioni linguistiche complete.", guides: "Note approfondite per trasformare una pista in una decisione ponderata.", qc: "Metodo per identità, proporzioni, misure, materiale e costruzione, senza promettere foto QC per ogni link.", shipping: "Nessuna tariffa o tempistica universale è presentata come fatto. Confronta preventivo, tracking e costo totale.", faq: "Cos’è questo sito, dove portano i link e cosa devi verificare." },
+    sectionIntros: { spreadsheet: "Cerca nel catalogo sorgente attuale. Questa navigazione indipendente non afferma di essere un foglio Hacoo ufficiale.", finds: "Selezione editoriale di pagine sorgente attive, con destinazione visibile e controllo corrente necessario.", articles: "Quindici articoli Hacoo con prove datate, intento separato e versioni linguistiche complete.", guides: "Note approfondite per trasformare una pista in una decisione ponderata.", qc: "Metodo per identità, proporzioni, misure, materiale e costruzione, senza promettere foto QC per ogni link.", shipping: "Nessuna tariffa o tempistica universale è presentata come fatto. Confronta preventivo, tracking e costo totale.", faq: "Cos’è questo sito, dove portano i link e cosa devi verificare." },
   },
   pt: {
     nav: { spreadsheet: "Índice", finds: "Achados", articles: "Artigos", guides: "Guias", qc: "QC", shipping: "Envio", faq: "FAQ" },
@@ -169,28 +169,82 @@ export const copy: Record<Locale, Copy> = {
     disclaimer: "Hacoos.org é um índice informativo independente. Não é Hacoo, não vende produtos e não é afiliado às plataformas ou vendedores citados.",
     openReference: "Abrir referência", allFinds: "Ver achados", readGuide: "Ler a nota", language: "Idioma", menu: "Menu", footerLine: "Pesquisa independente para quem navega com cuidado.",
     sectionTitles: { spreadsheet: "Hacoo Spreadsheet 2026: índice de ligações ativas", finds: "Hacoo finds com fontes ativas", articles: "Guias e avaliações Hacoo pesquisados", guides: "Usar referências Hacoo com método", qc: "Hacoo QC sem adivinhação", shipping: "Verificar o envio Hacoo antes de pagar", faq: "FAQ Hacoo: links de produtos, avaliações, QC e envio" },
-    sectionIntros: { spreadsheet: "Pesquise no catálogo de origem atual. Esta navegação independente não afirma ser uma folha Hacoo oficial.", finds: "Seleção editorial de páginas de origem ativas, com destino visível e verificação atual necessária.", articles: "Doze artigos Hacoo com provas datadas, intenção separada e versões linguísticas completas.", guides: "Notas extensas para transformar uma referência numa decisão pensada.", qc: "Sistema para identidade, proporções, medidas, material e construção, sem prometer fotos QC em todas as ligações.", shipping: "Nenhuma tarifa ou prazo universal é apresentado como facto. Compare orçamento atual, tracking e custo entregue.", faq: "O que é este site, onde levam os links e o que ainda deve verificar." },
+    sectionIntros: { spreadsheet: "Pesquise no catálogo de origem atual. Esta navegação independente não afirma ser uma folha Hacoo oficial.", finds: "Seleção editorial de páginas de origem ativas, com destino visível e verificação atual necessária.", articles: "Quinze artigos Hacoo com provas datadas, intenção separada e versões linguísticas completas.", guides: "Notas extensas para transformar uma referência numa decisão pensada.", qc: "Sistema para identidade, proporções, medidas, material e construção, sem prometer fotos QC em todas as ligações.", shipping: "Nenhuma tarifa ou prazo universal é apresentado como facto. Compare orçamento atual, tracking e custo entregue.", faq: "O que é este site, onde levam os links e o que ainda deve verificar." },
   },
 };
 
 export const categories = [
-  { name: "Shoes", note: "Court, running and everyday silhouettes", href: "https://www.cnfanssp.com/shoes/", mark: "01" },
-  { name: "Hoodies", note: "Weight, shape and fabric references", href: "https://www.cnfanssp.com/hoodies-sweaters/", mark: "02" },
-  { name: "T-shirts", note: "Print, blank and seasonal layers", href: "https://www.cnfanssp.com/t-shirts/", mark: "03" },
-  { name: "Jackets", note: "Outer layers and technical shapes", href: "https://www.cnfanssp.com/jackets/", mark: "04" },
-  { name: "Pants & shorts", note: "Fit-led bottoms and sets", href: "https://www.cnfanssp.com/pants-shorts/", mark: "05" },
-  { name: "Headwear", note: "Caps, knits and finishing pieces", href: "https://www.cnfanssp.com/headwear/", mark: "06" },
-  { name: "Accessories", note: "Bags, cases, jewellery and watches", href: "https://www.cnfanssp.com/accessories/", mark: "07" },
-  { name: "Electronics", note: "Small devices and everyday utility", href: "https://www.cnfanssp.com/electronics/", mark: "08" },
+  { name: "Shoes", note: "Court, running and everyday silhouettes", href: "https://www.cnfanshp.com/shoes/", mark: "01" },
+  { name: "Hoodies", note: "Weight, shape and fabric references", href: "https://www.cnfanshp.com/hoodies-sweaters/", mark: "02" },
+  { name: "T-shirts", note: "Print, blank and seasonal layers", href: "https://www.cnfanshp.com/t-shirts/", mark: "03" },
+  { name: "Jackets", note: "Outer layers and technical shapes", href: "https://www.cnfanshp.com/jackets/", mark: "04" },
+  { name: "Pants & shorts", note: "Fit-led bottoms and sets", href: "https://www.cnfanshp.com/pants-shorts/", mark: "05" },
+  { name: "Headwear", note: "Caps, knits and finishing pieces", href: "https://www.cnfanshp.com/headwear/", mark: "06" },
+  { name: "Accessories", note: "Bags, cases, jewellery and watches", href: "https://www.cnfanshp.com/accessories/", mark: "07" },
+  { name: "Electronics", note: "Small devices and everyday utility", href: "https://www.cnfanshp.com/electronics/", mark: "08" },
 ];
 
 export const products = [
-  { title: "Performance court shoe", category: "Shoes", href: "https://www.cnfanssp.com/AllProducts/1295.html", image: "/products/hacoo-product-01.webp", imageSmall: "/products/hacoo-product-01-360.webp", imageWidth: 750, imageHeight: 750, note: "Shape, outsole and cushioning reference" },
-  { title: "Archive-cut hoodie", category: "Hoodies", href: "https://www.cnfanssp.com/AllProducts/3447.html", image: "/products/hacoo-product-02.webp", imageSmall: "/products/hacoo-product-02-360.webp", imageWidth: 750, imageHeight: 750, note: "Graphic placement and weight reference" },
-  { title: "Structured day bag", category: "Accessories", href: "https://www.cnfanssp.com/AllProducts/5.html", image: "/products/hacoo-product-03.webp", imageSmall: "/products/hacoo-product-03-360.webp", imageWidth: 960, imageHeight: 960, note: "Hardware and construction reference" },
-  { title: "Statement watch", category: "Accessories", href: "https://www.cnfanssp.com/AllProducts/847.html", image: "/products/hacoo-product-04.webp", imageSmall: "/products/hacoo-product-04-360.webp", imageWidth: 750, imageHeight: 750, note: "Dial, setting and clasp reference" },
-  { title: "Utility phone case", category: "Accessories", href: "https://www.cnfanssp.com/AllProducts/948.html", image: "/products/hacoo-product-05.webp", imageSmall: "/products/hacoo-product-05-360.webp", imageWidth: 1280, imageHeight: 1280, note: "Finish and device-fit reference" },
-  { title: "Minimal everyday accessory", category: "Accessories", href: "https://www.cnfanssp.com/AllProducts/6419.html", image: "/products/hacoo-product-06.webp", imageSmall: "/products/hacoo-product-06-360.webp", imageWidth: 600, imageHeight: 800, note: "Material and detail reference" },
+  {
+    "title": "Sports shoe reference",
+    "category": "Shoes",
+    "href": "https://www.cnfanshp.com/AllProducts/1295.html",
+    "image": "https://www.cnfanshp.com/uploads/allimg/20251119/1-251119161134509.webp",
+    "imageSmall": "https://www.cnfanshp.com/uploads/allimg/20251119/1-251119161134509.webp",
+    "imageWidth": 750,
+    "imageHeight": 750,
+    "note": "Compare the exact colour and size"
+  },
+  {
+    "title": "Graphic hoodie reference",
+    "category": "Hoodies",
+    "href": "https://www.cnfanshp.com/AllProducts/5397.html",
+    "image": "https://www.cnfanshp.com/uploads/allimg/20260313/1-26031313510R08.jpg",
+    "imageSmall": "https://www.cnfanshp.com/uploads/allimg/20260313/1-26031313510R08.jpg",
+    "imageWidth": 750,
+    "imageHeight": 750,
+    "note": "Check measurements and the selected design"
+  },
+  {
+    "title": "Everyday sneaker reference",
+    "category": "Shoes",
+    "href": "https://www.cnfanshp.com/AllProducts/5.html",
+    "image": "https://www.cnfanshp.com/uploads/allimg/20251029/1-25102915203T17.webp",
+    "imageSmall": "https://www.cnfanshp.com/uploads/allimg/20251029/1-25102915203T17.webp",
+    "imageWidth": 750,
+    "imageHeight": 750,
+    "note": "Verify the current colour option"
+  },
+  {
+    "title": "Short-sleeved shirt reference",
+    "category": "Shirts",
+    "href": "https://www.cnfanshp.com/AllProducts/847.html",
+    "image": "https://www.cnfanshp.com/uploads/allimg/20251111/1-25111111061T47.webp",
+    "imageSmall": "https://www.cnfanshp.com/uploads/allimg/20251111/1-25111111061T47.webp",
+    "imageWidth": 750,
+    "imageHeight": 750,
+    "note": "Compare collar, sleeve and chest measurements"
+  },
+  {
+    "title": "Belt reference",
+    "category": "Accessories",
+    "href": "https://www.cnfanshp.com/AllProducts/948.html",
+    "image": "https://www.cnfanshp.com/uploads/allimg/20251112/1-251112114444H6.webp",
+    "imageSmall": "https://www.cnfanshp.com/uploads/allimg/20251112/1-251112114444H6.webp",
+    "imageWidth": 750,
+    "imageHeight": 750,
+    "note": "Confirm length, width and buckle option"
+  },
+  {
+    "title": "White sneaker reference",
+    "category": "Shoes",
+    "href": "https://www.cnfanshp.com/AllProducts/3447.html",
+    "image": "https://www.cnfanshp.com/uploads/allimg/20260109/1-26010Z95342M3.webp",
+    "imageSmall": "https://www.cnfanshp.com/uploads/allimg/20260109/1-26010Z95342M3.webp",
+    "imageWidth": 750,
+    "imageHeight": 750,
+    "note": "Check the current variant and detail photos"
+  }
 ];
 
 export const faqs = [
