@@ -1,4 +1,5 @@
 import { guideSeo } from "./seoUpdates";
+import { priorityMetadata } from "./localizedPriority";
 import { SITE_URL } from "./data";
 
 export const LOCALES = ["en", "es", "fr", "de", "it", "pt"];
@@ -268,6 +269,6 @@ export function localizeGuides(guides, locale = "en") {
   const translations = guideCopy[locale] || guideCopy.en;
   return guides.map((guide) => {
     const translated = translations[guide.slug] || guideCopy.en[guide.slug] || [guide.title, guide.short];
-    return { ...guide, title: translated[0], short: translated[1], ...guideSeo(guide.slug, locale) };
+    return { ...guide, title: translated[0], short: translated[1], ...priorityMetadata(locale, guide.slug), ...guideSeo(guide.slug, locale) };
   });
 }

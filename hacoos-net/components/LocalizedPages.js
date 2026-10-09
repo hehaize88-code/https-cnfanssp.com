@@ -14,6 +14,7 @@ import { getLocalizedResearch } from "@/app/localizedResearch";
 import { wardrobeGapArticle } from "@/app/wardrobeGapArticle";
 import { outfitPlanningArticle } from "@/app/outfitPlanningArticle";
 import { guideSources } from "@/app/editorial";
+import { priorityTranslation } from "@/app/localizedPriority";
 
 function getLocalizedCatalog(locale) {
   const research = getLocalizedResearch(locale);
@@ -134,7 +135,7 @@ export function LocalizedGuide({ locale, slug }) {
   const page = copy.guideDetail;
   const localized = getLocalizedResearch(locale);
   const sourceResearch = guideContent[slug];
-  const originalTranslation = slug === "hacoo-finds-wardrobe-gap-shortlist" ? wardrobeGapArticle[locale] : slug === "hacoo-outfit-planning-wearable-plan" ? outfitPlanningArticle[locale] : localized.guideContent[slug];
+  const originalTranslation = priorityTranslation(locale, slug) || (slug === "hacoo-finds-wardrobe-gap-shortlist" ? wardrobeGapArticle[locale] : slug === "hacoo-outfit-planning-wearable-plan" ? outfitPlanningArticle[locale] : localized.guideContent[slug]);
   const translatedResearch = updatedGuideContent(slug, locale, originalTranslation);
   const research = { ...translatedResearch, image: sourceResearch.image ? { ...translatedResearch.image, src: sourceResearch.image.src } : undefined };
   const checks = depth.guideChecks[slug] || page.steps;

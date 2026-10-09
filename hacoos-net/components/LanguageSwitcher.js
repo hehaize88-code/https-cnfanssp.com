@@ -3,17 +3,6 @@
 import { usePathname, useRouter } from "next/navigation";
 import { LOCALES, LOCALE_NAMES, localeFromPath, localizePath, stripLocale } from "@/app/i18n";
 
-const ENGLISH_ONLY_GUIDES = new Set([
-  "/guides/hacoo-finds-category-budget",
-  "/guides/hacoo-clothing-color-palette",
-  "/guides/hacoo-shoes-everyday-use",
-  "/guides/hacoo-sneakers-shortlist",
-  "/guides/hacoo-hoodies-sweaters-layering",
-  "/guides/hacoo-t-shirts-fit-fabric-use",
-  "/guides/hacoo-jackets-season-layering",
-  "/guides/hacoo-pants-shorts-proportions",
-]);
-
 export default function LanguageSwitcher({ onNavigate }) {
   const pathname = usePathname();
   const router = useRouter();
@@ -30,7 +19,7 @@ export default function LanguageSwitcher({ onNavigate }) {
   function changeLanguage(event) {
     const nextLocale = event.target.value;
     const cleanPath = stripLocale(pathname);
-    const hasLocalizedVersion = !ENGLISH_ONLY_GUIDES.has(cleanPath) && (cleanPath === "/" || /^\/(spreadsheet|categories(?:\/[^/]+)?|products(?:\/[^/]+)?|guides(?:\/[^/]+)?|faq|about|contact|privacy|terms)$/.test(cleanPath));
+    const hasLocalizedVersion = cleanPath === "/" || /^\/(spreadsheet|categories(?:\/[^/]+)?|products(?:\/[^/]+)?|guides(?:\/[^/]+)?|faq|about|contact|privacy|terms)$/.test(cleanPath);
     const fallbackPath = cleanPath.startsWith("/guides/") ? "/guides" : "/";
     const nextPath = localizePath(hasLocalizedVersion ? cleanPath : fallbackPath, nextLocale);
     onNavigate?.();

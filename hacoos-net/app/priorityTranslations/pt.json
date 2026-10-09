@@ -1,0 +1,765 @@
+{
+  "hacoo-finds-category-budget": {
+    "title": "Orçamento para achados Hacoo: limite categorias antes de pesquisar",
+    "seoTitle": "Orçamento para achados Hacoo: limite categorias antes de pesquisar",
+    "short": "Organize o orçamento segundo necessidades do guarda-roupa, utilização realista e informações em falta.",
+    "kicker": "Achados Hacoo / orçamento por categoria",
+    "intro": "Um orçamento útil não distribui simplesmente um valor por tudo o que parece interessante. Liga cada categoria a uma necessidade, frequência de uso e incertezas do anúncio. Definir limites antes de pesquisar permite escolher uma função de cada vez. O método distribui atenção e dinheiro e mantém utilidade quando preços, variantes e disponibilidade mudam na página atual.",
+    "factBox": [
+      [
+        "Comece por",
+        "Uma necessidade do guarda-roupa e uma categoria"
+      ],
+      [
+        "Inclua",
+        "Limite de peças, margem de incerteza e regra de paragem"
+      ],
+      [
+        "Última verificação",
+        "Variante atual, medidas e condições do destino"
+      ]
+    ],
+    "sections": [
+      [
+        "Defina a função antes do valor",
+        [
+          "Escreva uma utilização concreta: camada leve para deslocações frescas, duas camisolas simples para a semana ou sapatos para dias longos no interior. Nomeie uma ocasião e um conjunto existente. Assim o orçamento não autoriza explorar todas as categorias. Sem ligação à roupa habitual, mantenha a ideia como inspiração. Uma função verifica-se; vontade abstrata de novidade, não.",
+          "Defina também o que faria a escolha falhar: casaco que não fecha sobre a sweatshirt, comprimento interior do calçado pouco claro ou mala incapaz de levar o objeto previsto. Mesmo barata, uma peça inútil ocupa espaço e atenção. Decida primeiro quais as provas necessárias e depois quanto gastar."
+        ]
+      ],
+      [
+        "Distribua prioridades por categoria",
+        [
+          "Separe necessidade, apoio e experiência. A necessidade resolve um problema repetido e merece mais atenção. O apoio melhora conjuntos existentes com limite menor. A experiência é opcional e recebe a restrição mais forte. Oito separadores não equivalem a oito necessidades: uma camada diária em falta difere de um acessório original, mesmo mais barato.",
+          "Anote o número de peças antes dos candidatos. Uma vaga para casaco significa concorrência: o melhor substitui o anterior. Não permite ambos. Preços e promoções tornam um montante negociável; o limite de unidades recorda que continua a precisar de uma camada, não de três porque a página mudou."
+        ]
+      ],
+      [
+        "Separe incerteza e valor",
+        [
+          "O preço visível pode corresponder a outro tamanho, cor ou versão. Guarde variante, valor e data como observação provisória. Não faça depender o plano de todos os números ficarem iguais. Reserve margem para diferenças confirmadas depois, sem inventar custos que o destino não apresentou.",
+          "A incerteza também custa tempo: medidas ausentes, fotografias contraditórias e materiais vagos exigem revisão. Marque comparável, incompleto ou por resolver. Uma opção documentada pode justificar mais orçamento porque permite avaliar ajuste e função. Uma capa apelativa não merece margem extra para compensar falta de informação."
+        ]
+      ],
+      [
+        "Use frequência realista como filtro",
+        [
+          "Não precisa de prever uma vida útil exata. Classifique utilização semanal, mensal, sazonal ou rara. Nomeie três conjuntos existentes e duas ocasiões reais. Se for difícil, talvez seja inspiração e não necessidade. Uso repetido pode justificar uma atribuição maior; preço baixo não torna útil uma experiência usada uma vez.",
+          "Com provas fracas, evite custo por utilização falsamente preciso. Indique rotação alta, média ou baixa e explique. Uma sweatshirt neutra para quatro calças tem cobertura; um casaco que repete calor, cor e forma acrescenta pouco. Que trabalho novo fará realmente no guarda-roupa?"
+        ]
+      ],
+      [
+        "Crie uma regra de paragem",
+        [
+          "Pare quando a função estiver preenchida, quando todas as opções restantes carecerem de dados decisivos ou quando a lista ultrapassar três candidatos. Reveja depois do entusiasmo inicial. Retire o que não combina com roupa própria. A necessidade original deve explicar a escolha sem depender da fotografia promocional.",
+          "Compare o melhor candidato com não comprar. Se já consegue vestir-se para a ocasião, conservar o dinheiro pode ser correto. Se a falta persiste, compare apenas variantes e medidas verificadas. Não transfira automaticamente o saldo para outra categoria. Dinheiro não gasto pode provar que o plano resultou."
+        ]
+      ],
+      [
+        "Registe a decisão",
+        [
+          "Guarde categoria, variante exata, ligação, preço observado, medidas decisivas, rotação e uma dúvida, com data. Mantenha a ficha legível no telemóvel. Uma linha sobre peito compatível, três calças disponíveis e forro desconhecido explica mais do que uma nota total.",
+          "Abra o destino com os campos preparados. Confirme seleção, preço associado e condições. Se um pormenor decisivo mudou, volte a marcar por resolver. O orçamento deve tornar o último controlo mais simples e explicável, sem obrigar a preencher todas as vagas.",
+          "Reveja o plano completo: dependências de compras futuras, neutros repetidos e cuidados concorrentes pelo seu tempo. Não substitua imediatamente um candidato eliminado. Confirme a necessidade e marque verba reservada, libertada ou à espera de provas.",
+          "Agende uma única revisão posterior. Elimine ligações indisponíveis, confirme a necessidade e compare apenas campos alterados. Isso reduz pressão de mensagens temporárias. Fora desse momento, novos achados ficam como inspiração sem expandir silenciosamente o orçamento ativo."
+        ]
+      ]
+    ],
+    "dateLabel": "Tradução completa atualizada em 9 de outubro de 2026",
+    "datePublished": "2026-09-15",
+    "dateModified": "2026-10-09",
+    "steps": [
+      "Nomeie uma função",
+      "Limite categorias e quantidades",
+      "Compare candidatos documentados",
+      "Confirme a variante atual exata"
+    ],
+    "sourceNote": "Método independente de planeamento, revisto com as categorias do site em 15 de setembro de 2026. Preços e disponibilidade continuam variáveis.",
+    "sources": [
+      [
+        "Hacoo",
+        "Descrição pública e contexto dos criadores",
+        "2026-09-15"
+      ],
+      [
+        "Hacoos",
+        "Categoria atual e provas da variante",
+        "2026-09-15"
+      ],
+      [
+        "Hacoos",
+        "Método de guarda-roupa, ajuste e utilização",
+        "2026-09-15"
+      ]
+    ]
+  },
+  "hacoo-clothing-color-palette": {
+    "title": "Paleta Hacoo: crie uma seleção fácil de combinar",
+    "seoTitle": "Paleta Hacoo: crie uma seleção fácil de combinar",
+    "short": "Parta das cores base, de apoio e de destaque que usa realmente para comparar os achados Hacoo.",
+    "kicker": "Roupa Hacoo / paleta de cores",
+    "intro": "Uma paleta útil começa na roupa usada frequentemente, não em amostras bonitas. A nova cor deve ligar-se a sapatos, calças e camadas nas luzes e ocasiões habituais. Uma paleta pequena revela essas relações e funções duplicadas. O sistema base-apoio-destaque não pretende que um ecrã demonstre uma tonalidade exata.",
+    "factBox": [
+      [
+        "Bases",
+        "Duas ou três cores frequentes no guarda-roupa"
+      ],
+      [
+        "Apoios",
+        "Pontes simples entre várias bases"
+      ],
+      [
+        "Destaques",
+        "Uma função de contraste intencional de cada vez"
+      ]
+    ],
+    "sections": [
+      [
+        "Analise o que realmente veste",
+        [
+          "Escolha dez conjuntos recentes de dias normais. Liste cores principais de partes superiores, inferiores, casacos e sapatos. Os tons repetidos são as bases reais, mesmo menos interessantes do que a inspiração guardada. O seu valor atravessa categorias: calças escuras versáteis, sapatos habituais ou camada que une combinações.",
+          "Separe cores próprias e desejadas. Um tom vivo admirado mas nunca usado não é base por aparecer nos favoritos. Dê-lhe função de destaque e teste conjuntos completos. Evita comprar peças coordenadas apenas entre si. A análise não proíbe mudança: mede quanto uma nova peça exigiria."
+        ]
+      ],
+      [
+        "Atribua três funções cromáticas",
+        [
+          "Use duas ou três bases, dois apoios e um destaque opcional. Bases ocupam áreas grandes; apoios ligam-nas em t-shirts, malhas e acessórios. O destaque contrasta sem combinar com tudo. Equilíbrio e repetição importam mais do que tonalidades perfeitamente iguais.",
+          "Descreva branco quente, carvão frio ou verde-azeitona discreto em vez de nomes criativos. Anote subtom e profundidade quando alteram combinações: creme e branco ótico diferem junto do mesmo casaco castanho. Procure família e contraste úteis, não valores digitais exatos que as fotos não garantem."
+        ]
+      ],
+      [
+        "Teste três referências próprias",
+        [
+          "Combine cada candidato com umas calças, uns sapatos e uma camada ou mala. Devem representar uso real. Um top verde compatível apenas com calças raras tem pouca cobertura; com ganga, calças pretas e casaco habitual, a função é mais clara.",
+          "Fotografe referências juntas em luz natural neutra, se possível. É mais fiável que a memória. Mantenha luminosidade normal do ecrã e compare várias vistas, incluindo menos editadas. Família e contraste devem funcionar no conjunto, não apenas numa publicidade semelhante à inspiração."
+        ]
+      ],
+      [
+        "Reconheça limites das imagens",
+        [
+          "Luz, balanço de brancos, ecrã, compressão e textura alteram a perceção. Veludo, tecido escovado e nylon brilhante variam com o ângulo. A capa inspira; vistas consistentes documentam melhor. Compare fotos de clientes ou inspeção. Contradições ficam por resolver, sem as ajustar mentalmente à cor esperada.",
+          "Os nomes também são ambíguos: bege pode ser rosado, amarelo, cinzento ou castanho; azul-marinho quase preto. Se a diferença decide o conjunto, faça dela condição de paragem. Escolha provas melhores ou uma experiência assumida com orçamento e função limitados."
+        ]
+      ],
+      [
+        "Detete duplicados pela função",
+        [
+          "Uma sweatshirt pedra e uma camisola aveia podem cumprir a mesma camada casual clara. Compare silhueta, calor, ocasião e conjuntos além da cor. Sem combinação ou função sazonal nova, uma nuance não justifica ambas. Duas peças pretas podem ser calças formais e camada de chuva com funções distintas.",
+          "Crie linhas para candidatos e colunas para conjuntos: funciona, incerto, conflito. Acrescente base, ponte ou destaque. Prefira combinações credíveis sem compras adicionais. Não existe cor universalmente melhor; a conclusão depende das suas peças, situações e confiança visual."
+        ]
+      ],
+      [
+        "Confirme a variante exata",
+        [
+          "Miniaturas e galeria podem diferir; mudar tamanho pode repor a cor. Guarde nome preciso e captura datada com seletor. Confirme no destino e reveja medidas e construção. Cor certa não corrige ajuste errado; boa silhueta não elimina incerteza cromática decisiva.",
+          "Na entrega, compare com as mesmas referências em luz natural e interior. Registe combinações úteis em vez de declarar a foto sempre certa ou errada. Isso revela tolerância a subtons e contraste. A paleta permanece ferramenta viva, não obrigação de comprar todos os favoritos.",
+          "Separe destaques sazonais de bases permanentes. Uma cor profunda de inverno pode desaparecer no verão. Marque todo o ano, tempo quente ou frio e conte apenas conjuntos disponíveis nesse período. Versatilidade teórica não deve incluir combinações nunca usadas ao mesmo tempo.",
+          "Entre tons próximos, escolha contraste: integração, separação média ou foco. A intenção resiste a pequenas alterações fotográficas. Se só uma correspondência exata servir, espere melhores provas ou escolha contraste deliberado.",
+          "Inclua ferragens, estampados e acabamentos. Uma mala castanha pode introduzir metal brilhante contrário ao papel discreto; uma jaqueta preta com gráfico grande vira destaque. Registe toda a composição, sobretudo se o seletor altera cor e decoração juntas."
+        ]
+      ]
+    ],
+    "dateLabel": "Tradução completa atualizada em 9 de outubro de 2026",
+    "datePublished": "2026-09-15",
+    "dateModified": "2026-10-09",
+    "steps": [
+      "Identifique bases usadas",
+      "Atribua apoio e destaque",
+      "Teste três conjuntos existentes",
+      "Confirme a variante de cor atual"
+    ],
+    "sourceNote": "Método independente de guarda-roupa e análise visual. Imagens revistas em 15 de setembro de 2026; nenhum ecrã comprova a cor exata.",
+    "sources": [
+      [
+        "Hacoo",
+        "Descrição pública e contexto dos criadores",
+        "2026-09-15"
+      ],
+      [
+        "Hacoos",
+        "Categoria atual e provas da variante",
+        "2026-09-15"
+      ],
+      [
+        "Hacoos",
+        "Método de guarda-roupa, ajuste e utilização",
+        "2026-09-15"
+      ]
+    ]
+  },
+  "hacoo-shoes-everyday-use": {
+    "title": "Calçado Hacoo diário: compare ajuste e situações de uso",
+    "seoTitle": "Calçado Hacoo diário: compare ajuste e situações de uso",
+    "short": "Avalie percursos, medidas, rotação e conjuntos antes de decidir apenas pela aparência.",
+    "kicker": "Calçado Hacoo / uso diário",
+    "intro": "Uma seleção forte começa pelas horas, superfícies e conjuntos a cobrir. Quotidiano pode significar deslocações em pé, estudo no interior, recados ou pavimento molhado. Cada contexto muda as provas relevantes. Esta matriz não promete conforto através de fotos, mas impede que a aparência esconda dados em falta sobre comprimento, largura, sola e rotação.",
+    "factBox": [
+      [
+        "Referência",
+        "Um par confortável para um dia semelhante"
+      ],
+      [
+        "Provas decisivas",
+        "Método de comprimento, largura, parte superior e sola"
+      ],
+      [
+        "Seleção",
+        "Dois ou três pares para uma função"
+      ]
+    ],
+    "sections": [
+      [
+        "Descreva um dia real",
+        [
+          "Anote vinte minutos a andar, seis horas dentro, escadas e regresso. Junte superfície, clima e peso transportado. Muito tempo em pé destaca estabilidade e amortecimento; humidade, sola e cuidados; retiradas frequentes, fecho. Avalie a parte habitual mais exigente, não a fotografia mais favorável.",
+          "Defina substituição, alternativa climática ou ligação entre desportivo e arranjado. Se três pares existentes já cobrem o mesmo dia, exija diferença funcional clara. Sola espessa não prova amortecimento nem relevo visível garante aderência universal. Separe construção observável e desempenho esperado."
+        ]
+      ],
+      [
+        "Prepare uma referência de ajuste",
+        [
+          "Meça ambos os pés ao final de um dia normal com as meias previstas e registe o maior. Meça, se possível, a palmilha removível de um par confortável com biqueira semelhante. Anote zonas folgadas ou apertadas. Comprimento do pé, palmilha e sola exterior são diferentes; esclareça o método antes de converter tamanhos.",
+          "Largura e volume podem ser igualmente decisivos. Registe pressão à frente, deslizamento do calcanhar ou profundidade para palmilhas ortopédicas. A perspetiva distorce formas. Procure vista superior, lateral e medição clara. Sem dimensão indispensável, mantenha por resolver: um número habitual não corrige geometria desconhecida."
+        ]
+      ],
+      [
+        "Leia parte superior e fecho em conjunto",
+        [
+          "A parte superior influencia estrutura, flexibilidade, ventilação e cuidado, mas aparência não confirma composição. Use descrição para materiais declarados e fotos para painéis, forro e reforços. Identifique onde precisa de movimento e apoio. Um painel rígido na flexão pode importar mais que decoração; material macio continua a precisar de calcanhar seguro.",
+          "Examine atacadores, ilhós, língua, acolchoamento e calcanhar juntos. A regulação deve funcionar com as meias sem pregas ou folga excessiva. Calçar facilmente pode servir uso interior curto, mas regular menos variações de volume do pé. São perguntas a confirmar, não promessas de conforto."
+        ]
+      ],
+      [
+        "Observe a sola sem exagerar desempenho",
+        [
+          "Perfil, traseira e fundo mostram altura, flexão, alinhamento e contacto. Examine junção à parte superior e regularidade. Espessura visível não mede benefício. Espuma, densidade, flexibilidade e duração requerem especificações fiáveis ou testes que uma fotografia não oferece.",
+          "Relacione desenho e dia com prudência: base ampla levanta questão de estabilidade interior, canais de detritos, material claro exposto de desgaste visível. Formule hipóteses. Se aderência molhada, proteção contra impacto ou desempenho técnico forem essenciais, procure documentação em vez de inferência estética."
+        ]
+      ],
+      [
+        "Verifique conjuntos e manutenção",
+        [
+          "Compare três conjuntos normais, incluindo calças com aberturas mais estreita e larga. O volume do sapato altera proporções. Um par para um visual especial tem papel diferente de outro para trabalho, recados e lazer. Além de cor, avalie forma, sola e queda das calças.",
+          "Inclua hábitos reais. Têxteis claros, materiais escovados, rede e painéis complexos podem exigir cuidados diferentes. Não adivinhe materiais pela imagem. Se limpa raramente, um modelo exigente pode ser inadequado, independentemente do preço ou de uma rotina ideal imaginada."
+        ]
+      ],
+      [
+        "Avalie provas, não entusiasmo",
+        [
+          "Use colunas de jornada, clareza de medidas, largura, fecho, sola, conjuntos e dúvidas. Marque aprovado, incerto ou excluído sem um total que esconda problemas. Seis pontos positivos não compensam comprimento interior desconhecido. Um par discreto documentado pode ser o melhor candidato diário.",
+          "Confirme cor, tamanho, tabela correspondente, data, disponibilidade e condições atuais. Atualize as provas afetadas se a página mudar. A matriz não promete conforto; mostra se a informação justifica considerar essa variante para essa função.",
+          "Defina um limiar de substituição: qual par sairá, que desgaste o justifica e que fraqueza será corrigida. Sem isso, a novidade compete com pares válidos enquanto se chama diária. A frequência imaginada pode cair depois das primeiras semanas.",
+          "Distinga compromissos estéticos reversíveis e riscos de ajuste difíceis de corrigir. Atacadores ou calças mudam aparência; largura errada e comprimento desconhecido, menos. Priorize o que determina uso real e repetido.",
+          "Use opiniões para gerar verificações pertinentes. Um comentário de tamanho pode motivar análise da tabela; outro modelo ou país não prova este par. Guarde variante, data e contexto concretos. Sensações alheias não substituem medidas: pés e rotinas podem diferir muito."
+        ]
+      ]
+    ],
+    "dateLabel": "Tradução completa atualizada em 9 de outubro de 2026",
+    "datePublished": "2026-09-15",
+    "dateModified": "2026-10-09",
+    "steps": [
+      "Descreva um dia",
+      "Meça pés e par de referência",
+      "Compare construção e conjuntos",
+      "Confirme a variante atual"
+    ],
+    "sourceNote": "Método independente de ajuste e utilização, revisto em 15 de setembro de 2026. Não certifica conforto, materiais ou desempenho técnico.",
+    "sources": [
+      [
+        "Hacoo",
+        "Descrição pública e contexto dos criadores",
+        "2026-09-15"
+      ],
+      [
+        "Hacoos",
+        "Categoria atual e provas da variante",
+        "2026-09-15"
+      ],
+      [
+        "Hacoos",
+        "Método de guarda-roupa, ajuste e utilização",
+        "2026-09-15"
+      ]
+    ]
+  },
+  "hacoo-sneakers-shortlist": {
+    "title": "Sapatilhas Hacoo: provas de conforto antes da aparência",
+    "seoTitle": "Sapatilhas Hacoo: provas de conforto antes da aparência",
+    "short": "Crie uma seleção breve baseada em ajuste, construção e condições realistas de utilização.",
+    "kicker": "Sapatilhas Hacoo / prioridade ao conforto",
+    "intro": "Forma e cor atraem, mas espaço interior, fixação do calcanhar, flexão, peso, forro e rotação decidem frequentemente o uso. A capa mostra pouco disso. Priorizar conforto significa retirar opções insuficientemente documentadas e colocar gosto visual depois dos controlos funcionais, sem prever sensações pelas fotos.",
+    "factBox": [
+      [
+        "Primeiro filtro",
+        "Tempo de utilização e superfície"
+      ],
+      [
+        "Referência",
+        "Medidas do pé e palmilha de um par comparável"
+      ],
+      [
+        "Conclusão",
+        "Documentado, incerto ou incompatível com este uso"
+      ]
+    ],
+    "sections": [
+      [
+        "Separe inspiração e necessidade",
+        [
+          "Guarde ideias, mas defina a função em falta antes da seleção: perfil baixo para calças largas, dias longos dentro ou cor escura na época húmida. Descreva uso e proporções, não logótipo ou tendência. Pares semelhantes para as mesmas poucas situações não são necessidades diferentes.",
+          "Examine o par mais usado e o evitado. Nomeie calcanhar solto, pressão nos dedos, peso, limpeza ou equilíbrio com calças. São filtros melhores que pedir conforto abstratamente. Preserve o que funciona e resolva um problema conhecido em vez de comparar só imagens."
+        ]
+      ],
+      [
+        "Crie uma ficha de provas",
+        [
+          "Registe método da tabela, forma superior, acolchoamento visível, regulação, forro, palmilha, construção da sola e peso declarado. Separe pressão, calor prolongado e sensação de amortecimento, desconhecidos antes do uso. Macio ou leve não são conclusões sem medidas, especificações ou contexto.",
+          "Compare ângulos equivalentes: cima para afunilamento, trás para calcanhar, perfil para sola e interior para costuras. Juntos criam perguntas, não provas de conforto. Imagens apenas dramáticas sem método de tamanho continuam incertas, mesmo na favorita visual."
+        ]
+      ],
+      [
+        "Ligue medidas a uma variante precisa",
+        [
+          "Anote pé e palmilha confortável em centímetros, formato da biqueira e espessura da meia. Identifique o que a tabela mede. Não aplique folgas padrão cegamente nem encadeie conversões regionais. Se seletor e tabela diferirem, preserve ambos e exija correspondência clara.",
+          "Use o pé maior e considere largura, peito do pé e calcanhar. Biqueira aparentemente larga em perspetiva não é medida. Para antepé largo, palmilha ou calcanhar estreito, falta de dados é decisiva. Um candidato documentado vale mais que três tamanhos familiares adivinhados; não existe quota a cumprir."
+        ]
+      ],
+      [
+        "Compare silhueta e roupa existente",
+        [
+          "Coloque perfis junto das calças direitas, largas e afuniladas mais usadas. Observe espessura da sola, biqueira, blocos de cor e encontro com bainha. Volume pode equilibrar perna larga e dominar abertura estreita; perfil baixo pode fazer o inverso. Teste proporções pessoais, não regras universais.",
+          "Exija três conjuntos credíveis e duas ocasiões. Anote dependências de calças ou paleta novas. Uma experiência deliberada é possível, mas não deve contar como solução diária já versátil. Função e frequência precisam de clareza sem compras futuras imaginadas."
+        ]
+      ],
+      [
+        "Conte com cuidados e rotação",
+        [
+          "Preveja descanso e manutenção compatíveis com a rotina. Observe zonas de material, cores claras, textura, rede e sobreposições. Use apenas composições declaradas, sem inferir durabilidade do aspeto. Verifique métodos de limpeza habituais e limitações meteorológicas. Um modelo para dias secos deve ficar assim identificado.",
+          "Se duplica um par fiável, explique a melhoria: cor escura, limpeza simples, outro perfil ou melhor conjunto. Sem melhoria compete com algo provado e pode ser pouco usado. Planear conforto também significa escolhas de roupa fáceis e cuidados realistas."
+        ]
+      ],
+      [
+        "Faça uma comparação condicionada",
+        [
+          "Compare até três pares: aprovado, pendente ou retirado. Aprovação significa provas suficientes; pendente, resposta em falta; retirada, conflito decisivo. Evite estrelas médias: uma medida ausente supera vários detalhes atrativos. Escreva o que permitiria avançar.",
+          "No destino atual confirme tamanho, cor, imagens, tabela e condições. Guarde data e conclusão limitada: informação suficiente para considerar esta variante neste uso. É mais honesto que prometer conforto e mais fácil de rever depois.",
+          "Procure conflitos com a inspiração. Se a foto favorita mostra outra cor, atacadores, largura de calças ou ângulo, retire-a das provas decisórias. Uma publicidade não deve emprestar características a uma variante pouco documentada.",
+          "Dê prazo aos pendentes. Reveja quando surgirem medidas, mudar a variante ou aumentar a necessidade. Reabrir a mesma página não cria dados. Arquivar protege atenção e mantém a lista pequena no telemóvel.",
+          "Escreva uma frase ligando forma medida, fecho ajustável visível e três calças próprias. Cada parte precisa de prova. Reveja premium, macio ou suporte quando não documentados: mostram onde marketing substituiu um facto.",
+          "Arquive os rejeitados com motivo breve, evitando que outra imagem ou título volte a introduzir as mesmas provas fracas."
+        ]
+      ]
+    ],
+    "dateLabel": "Tradução completa atualizada em 9 de outubro de 2026",
+    "datePublished": "2026-09-15",
+    "dateModified": "2026-10-09",
+    "steps": [
+      "Defina a função em falta",
+      "Documente ajuste e construção",
+      "Teste proporções existentes",
+      "Aprove, suspenda ou retire"
+    ],
+    "sourceNote": "Método independente de guarda-roupa e provas visuais, revisto em 15 de setembro de 2026. Fotografias não provam conforto prolongado.",
+    "sources": [
+      [
+        "Hacoo",
+        "Descrição pública e contexto dos criadores",
+        "2026-09-15"
+      ],
+      [
+        "Hacoos",
+        "Categoria atual e provas da variante",
+        "2026-09-15"
+      ],
+      [
+        "Hacoos",
+        "Método de guarda-roupa, ajuste e utilização",
+        "2026-09-15"
+      ]
+    ]
+  },
+  "hacoo-hoodies-sweaters-layering": {
+    "title": "Sweatshirts e camisolas Hacoo: planeie a camada antes do visual",
+    "seoTitle": "Sweatshirts e camisolas Hacoo: planeie a camada antes do visual",
+    "short": "Compare função, medidas, materiais e conjuntos repetíveis antes de escolher.",
+    "kicker": "Sweatshirts e camisolas Hacoo / camadas",
+    "intro": "Decida onde a peça entra: junto ao corpo, sobre t-shirt, sob casaco ou como exterior. A mesma largura de peito muda com espessura, ombros, bainha e sobreposição. Parta de uma peça própria, planeie folga num conjunto real e separe construção visível de promessas não demonstradas sobre tecido ou calor.",
+    "factBox": [
+      [
+        "Função",
+        "Camada base, intermédia ou exterior"
+      ],
+      [
+        "Referência",
+        "Peça semelhante no conjunto previsto"
+      ],
+      [
+        "Paragem",
+        "Medida decisiva ausente ou método pouco claro"
+      ]
+    ],
+    "sections": [
+      [
+        "Defina primeiro o papel da camada",
+        [
+          "Descreva roupa completa e clima. Camada justa com fecho sob sobretudo difere de camisola larga usada como casaco. Nomeie o que vai por baixo e por cima. O candidato deve caber no conjunto, mostrando se falta calor, facilidade de retirar, equilíbrio de cor ou silhueta.",
+          "Compare peças para as mesmas temperaturas e ocasiões. Porque usa uma e evita outra: mangas limitadas, corpo curto, capuz volumoso, cuidados ou poucas combinações? Resolva uma dificuldade recorrente. Outro estampado num corte inadequado não cria função e preço menor não valoriza duplicação."
+        ]
+      ],
+      [
+        "Meça uma referência adequada",
+        [
+          "Meça ombros, peito plano, manga, comprimento, punho e bainha. Sob casaco considere capuz e mangas; sobre camisa escolha referência com essa folga. Medidas de um top fino sem relação com a função criam falsa confiança para uma camada grossa.",
+          "Esclareça a tabela: peito plano não é perímetro, raglan pode partir do pescoço e ombro descaído muda interpretação. Procure diagrama ou percurso da fita. Use uma unidade e marque desconhecidos. Pose e distância da câmara não substituem proporções decisivas."
+        ]
+      ],
+      [
+        "Leia o tecido com limites claros",
+        [
+          "Separe composição, peso declarado e superfície visível. Fotos mostram interior escovado ou canelado, não provam fibras, calor, respirabilidade ou borboto futuro. Para características decisivas exija especificações atuais. Premium, pesado e macio precisam de contexto mensurável.",
+          "Examine gola, painéis do capuz, cordões, ombros, bolsos, punhos e bainha; na malha, densidade e transições. Considere pressão de alça, casaco e movimentos. Descreva o visível sem diagnosticar duração. Um bom detalhe documenta o exemplar mostrado, não todas as unidades."
+        ]
+      ],
+      [
+        "Teste movimento e casaco",
+        [
+          "Com a referência estique braços, sente-se, levante-os e feche o casaco previsto. Note tensão e acumulações, depois compare dimensões decisivas. Peito amplo com punhos estreitos pode limitar; comprimento extra pode interferir num casaco curto. As medidas funcionam em conjunto.",
+          "Analise o capuz separadamente. Um espesso enche a gola exterior; um pequeno pode encaixar melhor e cobrir menos. As imagens mostram painéis e volume relativo, não sensação final. Para uso frequente sob casaco, compatibilidade real vale mais que aparência isolada."
+        ]
+      ],
+      [
+        "Compare conjuntos e cuidados reais",
+        [
+          "Teste três calças próprias e sapatos habituais. Observe comprimento, largura da bainha e cor. Sweatshirt longa pode competir com calças largas; camisola curta pode exigir altura de cintura ausente. Não são regras fixas, mas dependências a reconhecer.",
+          "Leia cuidados atuais e confronte a rotina. Malha delicada pode não servir deslocações frequentes; pelos de tecido escuro podem afetar a camada inferior. Não invente encolhimento ou resultados de lavagem. Marque cuidado documentado, incerto ou incompatível e ajuste rotação prevista."
+        ]
+      ],
+      [
+        "Registe uma decisão específica às camadas",
+        [
+          "Anote função, por baixo, por cima, medidas, construção, cuidados, três conjuntos e dúvidas. Limite a três opções. Aprove o conjunto sustentado, pause respostas decisivas e retire conflitos. Uma nota total pode esconder problema de manga ou comprimento; deixe as condições escritas.",
+          "Confirme variante, cor, tamanho, tabela e galeria atuais. Guarde data sem garantir disponibilidade futura. Conclua apenas que as provas tornam plausível uma função, não que um guia independente promete calor, toque ou ajuste perfeito.",
+          "Conte alterações impostas ao resto: casaco mais longo, mala menos cómoda, golas concorrentes. Uma opção menos vistosa pode funcionar em vários conjuntos existentes sem outras mudanças.",
+          "Após uso, atualize a referência com camada inferior, condições, movimento e diferenças de medida. Mantenha o retorno ligado à peça e data. Uma entrega não representa todas as variantes ou lotes futuros.",
+          "Desempate pela interação das mangas: punho sob casaco, tecido no cotovelo e possibilidade de arregaçar. A galeria não reproduz camadas em movimento. A referência fornece contexto e as medidas mostram se o confronto é plausível."
+        ]
+      ]
+    ],
+    "dateLabel": "Tradução completa atualizada em 9 de outubro de 2026",
+    "datePublished": "2026-09-15",
+    "dateModified": "2026-10-09",
+    "steps": [
+      "Defina as camadas",
+      "Meça uma peça comparável",
+      "Verifique construção, movimento e cuidado",
+      "Confirme a variante atual"
+    ],
+    "sourceNote": "Método independente de sobreposição e comparação, revisto nas categorias sweatshirts e camisolas em 15 de setembro de 2026.",
+    "sources": [
+      [
+        "Hacoo",
+        "Descrição pública e contexto dos criadores",
+        "2026-09-15"
+      ],
+      [
+        "Hacoos",
+        "Categoria atual e provas da variante",
+        "2026-09-15"
+      ],
+      [
+        "Hacoos",
+        "Método de guarda-roupa, ajuste e utilização",
+        "2026-09-15"
+      ]
+    ]
+  },
+  "hacoo-t-shirts-fit-fabric-use": {
+    "title": "T-shirts Hacoo: compare ajuste, tecido e uso real",
+    "seoTitle": "T-shirts Hacoo: compare ajuste, tecido e uso real",
+    "short": "Use uma referência própria, proporções claras e provas do tecido para uma seleção útil.",
+    "kicker": "T-shirts Hacoo / ajuste e tecido",
+    "intro": "Cada candidata precisa de silhueta, função têxtil e lugar na rotação. Pequenas diferenças de ombro, peito, manga e comprimento alteram camadas e proporções. Imagens sugerem forma e construção, não demonstram toque, encolhimento ou duração. Medidas consistentes e conjuntos reais reduzem suposições sem recomendar universalmente um modelo.",
+    "factBox": [
+      [
+        "Referência",
+        "Uma t-shirt com a silhueta pretendida"
+      ],
+      [
+        "Medidas",
+        "Ombro, peito, manga, comprimento e bainha"
+      ],
+      [
+        "Teste",
+        "Três partes inferiores e uma camada prevista"
+      ]
+    ],
+    "sections": [
+      [
+        "Descreva concretamente a silhueta",
+        [
+          "Troque oversized ou regular por posição do ombro, espaço do peito, fim da manga e encontro da bainha com a cintura. Indique por dentro, por fora ou em camadas. Sob casaco justo precisa de volume diferente de uma t-shirt sozinha com calças largas. A forma reúne proporções, não uma palavra de tamanho.",
+          "Escolha referência realmente usada nesse papel. Fotografe plana e vestida se ajudar; registe por que ombro, manga e bainha funcionam em movimento. Evite favorita sentimental deformada por uso ou lavagem, cuja forma seria difícil de reproduzir."
+        ]
+      ],
+      [
+        "Uniformize as medições",
+        [
+          "Estenda sem puxar. Meça ombros entre costuras quando presentes, peito no ponto declarado, manga da mesma origem e comprimento do mesmo ponto. Especifique largura plana e adicione bainha quando relevante. Use centímetros e método escrito para não esconder definições incompatíveis numa tabela arrumada.",
+          "Ombros descaídos, raglan e bainhas curvas exigem interpretação. Identifique construção e pontos comparáveis. Não deduza medidas ausentes da altura ou pose do modelo sem contexto. Uma letra habitual não prova que estas proporções correspondem à referência."
+        ]
+      ],
+      [
+        "Dê uma função ao tecido",
+        [
+          "Deve assentar liso sob malha, manter forma quadrada, ser leve ao calor ou criar base opaca? Separe composição, peso e queda visível. Luz, produção fotográfica e tamanho da amostra limitam imagens. Não deduza algodão, espessura ou respirabilidade só da aparência.",
+          "Observe gola canelada, fita interior, ombros, bainhas, costuras e estampado. Distinguem capas parecidas sem garantir duração ou pontos ocultos. Se recuperação da gola ou técnica de impressão forem decisivas, procure descrição ou candidato mais claro, não uma suposição confiante."
+        ]
+      ],
+      [
+        "Combine partes inferiores e camadas",
+        [
+          "Teste três calças com cinturas ou volumes diferentes. Comprimento e bainha alteram como entra na cintura e se relaciona com perna larga. Manga e ombro influenciam sobrecamisa e casaco. Junte fotos de conjuntos e medidas: equilibrada sozinha, pode ficar apertada ou excessiva na camada prevista.",
+          "Cor e escala do gráfico também precisam de função. Estampado central pode desaparecer sob casaco aberto ou dominar; cor de apoio pode ligar mais conjuntos. Conte combinações reais e distinga função nova de duplicação. Nenhuma opção é automaticamente superior."
+        ]
+      ],
+      [
+        "Planeie cuidados sem inventar resultados",
+        [
+          "Registe literalmente instruções atuais de temperatura, secagem e estampado. Não suponha uma percentagem de encolhimento. Se uma pequena mudança arruina o ajuste, talvez as provas não sustentem exigência tão precisa. Margem razoável pode valer mais que um número exato sem tolerância conhecida.",
+          "Classifique uso semanal, mensal ou ocasional e explique. Base frequente deve combinar e manter-se facilmente; t-shirt gráfica ocasional pode ter função estreita. Não compare uma peça especializada como se substituísse uma base regular. Ajuste, tecido e frequência devem alinhar-se."
+        ]
+      ],
+      [
+        "Mantenha a seleção transparente",
+        [
+          "Compare até três t-shirts por variante, diferença da referência, tecido, gola, costuras, conjuntos, camadas, cuidado e dúvidas. Aprove, pause ou retire. Comprimento ausente pode bloquear uso por dentro mesmo com outros pontos favoráveis. Um total não deve apagar o fator decisivo.",
+          "Reveja seletor, tabela, cor e galeria e guarde captura datada da variante. Atualize a ficha se os dados mudarem. O método torna o confronto repetível, sem prometer toque ou ajuste final.",
+          "Confira decote e uso: canelado alto sob sobrecamisa, abertura larga que mostra base, gola pesada sob malha. Use vistas frontais e interiores claras. Sem prova, recuperação e suavidade permanecem desconhecidas.",
+          "Entre duas opções válidas escolha a que melhora a rotação: cor útil, casaco melhor combinado ou silhueta de verão. Escreva a melhoria numa frase. Se não conseguir, pode ser gosto e não falta; esperar é legítimo.",
+          "Ligue decoração e tamanho selecionado. Proporções alteram colocação e detalhes promocionais escondem escala. Procure frente completa, pormenor e nome coerentes. Se o gráfico motiva a escolha mas a versão é ambígua, pause: decoração também exige provas.",
+          "Em cores claras, analise transparência e camadas juntas. Use informação têxtil e várias vistas atuais, não um único fundo de estúdio como prova de opacidade."
+        ]
+      ]
+    ],
+    "dateLabel": "Tradução completa atualizada em 9 de outubro de 2026",
+    "datePublished": "2026-09-15",
+    "dateModified": "2026-10-09",
+    "steps": [
+      "Defina a silhueta",
+      "Meça uma t-shirt própria",
+      "Teste tecido, calças e camadas",
+      "Verifique variante e tabela atuais"
+    ],
+    "sourceNote": "Método independente de ajuste e guarda-roupa, revisto na categoria t-shirts em 15 de setembro de 2026.",
+    "sources": [
+      [
+        "Hacoo",
+        "Descrição pública e contexto dos criadores",
+        "2026-09-15"
+      ],
+      [
+        "Hacoos",
+        "Categoria atual e provas da variante",
+        "2026-09-15"
+      ],
+      [
+        "Hacoos",
+        "Método de guarda-roupa, ajuste e utilização",
+        "2026-09-15"
+      ]
+    ]
+  },
+  "hacoo-jackets-season-layering": {
+    "title": "Casacos Hacoo: combine estação, camadas e conjuntos existentes",
+    "seoTitle": "Casacos Hacoo: combine estação, camadas e conjuntos existentes",
+    "short": "Compare clima, espaço para camadas e construção com as combinações que realmente utiliza.",
+    "kicker": "Casacos Hacoo / estação e camadas",
+    "intro": "O candidato adequado corresponde a clima, camadas e dias reais. Um casaco aparentemente versátil pode duplicar outro, não fechar sobre a sweatshirt ou carecer de detalhes sobre forro e fecho. Defina a necessidade antes da seleção; calor, proteção e desempenho continuam desconhecidos sem provas atuais suficientes.",
+    "factBox": [
+      [
+        "Função climática",
+        "Temperatura, vento, chuva e tempo exterior"
+      ],
+      [
+        "Referência",
+        "Casaco próprio com as mesmas camadas"
+      ],
+      [
+        "Controlos",
+        "Fecho, bolsos, forro, punhos, bainha e movimento"
+      ]
+    ],
+    "sections": [
+      [
+        "Descreva condições, não só estações",
+        [
+          "Primavera e inverno variam com local e rotina. Indique temperatura apenas se conhecida, depois vento, chuva, duração fora e atividade. Dez minutos entre edifícios diferem de espera longa parado. Junte guarda-chuva, mala e camada quente habituais. Compare condições sem pedir certificação técnica a uma foto.",
+          "Defina substituição, transição entre sobrecamisa e sobretudo ou opção mais arranjada. Veja alternativas próprias e limitações. Se já cobrem condições e conjuntos, outra cor pode ser preferência legítima, mas não tem a prioridade de uma necessidade prática repetida."
+        ]
+      ],
+      [
+        "Meça o conjunto completo de camadas",
+        [
+          "Vista um casaco com a folga desejada sobre a camada intermédia normal mais grossa. Meça peito plano, ombro pertinente, manga e comprimento; observe costas, cava e cotovelo. Compare pontos iguais. Forro e isolamento ocupam espaço: dimensões externas não garantem volume interno idêntico.",
+          "Avalie fechado e aberto. Confortável aberto pode repuxar fechado; bainha curta pode subir em movimento. Procure frente e perfil no estado previsto, ajuste de punhos e forma do fundo. Sem vista fechada ou medidas essenciais, deixe por resolver em vez de confiar numa pose estilizada."
+        ]
+      ],
+      [
+        "Relacione construção e função",
+        [
+          "Liste fecho útil, bolsos seguros, gola ou capuz, punhos e cobertura. Observe fechos, molas, aberturas, uniões do forro e ombros sob tensão. Descreva o mostrado: capuz não prova proteção da chuva, aspeto grosso não estabelece calor.",
+          "Registe composição declarada; impermeabilidade, respirabilidade e isolamento exigem especificações atuais fiáveis. Se a função depende disso, parecer roupa técnica não basta. Distinga estilo e prova funcional e mude de candidato quando a lacuna importa."
+        ]
+      ],
+      [
+        "Verifique bolsos, mala e movimentos",
+        [
+          "Liste objetos transportados e mochila ou mala a tiracolo. Bolsos podem interferir com alças, cintura ou posição sentada. Fotos mostram acesso, raramente capacidade. Se guardar em segurança é essencial, peça dimensões ou interior claro, sem presumir fecho sob uma pala.",
+          "Estenda braços, sente-se e use a mala com a referência. Note mangas, tensão nas costas, capuz e pressão das alças. Transforme observações em perguntas. Ombro descaído pode acumular sob alça estreita; fundo curto rígido muda sentado. O uso define os compromissos importantes."
+        ]
+      ],
+      [
+        "Teste conjuntos completos",
+        [
+          "Use três combinações das condições previstas, incluindo camada volumosa, calças habituais e sapatos estreitos ou grandes. Compare comprimento, ombros, cor e linhas de fecho. Funcionar apenas no anúncio pode criar mais problemas. Versatilidade precisa de provas pessoais e visíveis.",
+          "Procure duplicados. Dois casacos escuros curtos podem servir chuva e transição leve, mas a diferença precisa de suporte. Sem ele competem. Função clara e medidas completas valem mais que uma fotografia dramática."
+        ]
+      ],
+      [
+        "Termine com condições explícitas",
+        [
+          "Registe clima, camadas, fecho, bolsos, forro, punhos, bainha, conjuntos, cuidado e dúvidas. Aprove provas suficientes, pause respostas decisivas e retire conflitos. Mantenha calor e proteção desconhecidos sem dados e não sugira um teste independente inexistente.",
+          "Confirme tamanho, cor, tabela e condições atuais. Guarde variante e data e reveja se a galeria mudar. A conclusão é limitada: candidato plausível para estas camadas e condições segundo estes dados, não melhor casaco universal.",
+          "Inclua arrumação e manutenção. Estrutura, revestimentos e capuzes grandes podem exigir espaço ou cuidados especiais. Use instruções atuais. Uma peça difícil de manter poderá rodar menos mesmo com boa cor e ajuste.",
+          "Avalie fechado, aberto e transportado na mão. Confira interior visível, praticidade e acesso a bolsos com mala. Muitos dias incluem os três estados; ampliar cenários não permite atribuir desempenho não observado.",
+          "Prepare um conjunto alternativo se subir a temperatura ou aumentar o vento. Pode abrir ou transportar o casaco? O ajuste necessário está documentado? Isso revela alternativas do plano, não prova proteção. Uma peça útil numa única pose merece rotação mais limitada.",
+          "Mantenha uma condição inegociável no topo da ficha para que pormenores apelativos não substituam o requisito climático ou de camadas inicial."
+        ]
+      ]
+    ],
+    "dateLabel": "Tradução completa atualizada em 9 de outubro de 2026",
+    "datePublished": "2026-09-15",
+    "dateModified": "2026-10-09",
+    "steps": [
+      "Defina clima e função",
+      "Meça as camadas reais",
+      "Inspecione construção funcional",
+      "Aprove ou pause a variante atual"
+    ],
+    "sourceNote": "Método independente de estação e construção, revisto em 15 de setembro de 2026. Estilo isolado não demonstra desempenho técnico.",
+    "sources": [
+      [
+        "Hacoo",
+        "Descrição pública e contexto dos criadores",
+        "2026-09-15"
+      ],
+      [
+        "Hacoos",
+        "Categoria atual e provas da variante",
+        "2026-09-15"
+      ],
+      [
+        "Hacoos",
+        "Método de guarda-roupa, ajuste e utilização",
+        "2026-09-15"
+      ]
+    ]
+  },
+  "hacoo-pants-shorts-proportions": {
+    "title": "Calças e calções Hacoo: planeie proporções antes de escolher",
+    "seoTitle": "Calças e calções Hacoo: planeie proporções antes de escolher",
+    "short": "Compare gancho, entreperna, abertura, sapatos e movimento para reduzir suposições de tamanho.",
+    "kicker": "Calças Hacoo / medidas e proporções",
+    "intro": "Uma etiqueta de cintura não basta. O gancho define posição e conforto, a entreperna onde termina a peça, coxa e abertura controlam movimento e silhueta. Tudo interage com tops e sapatos. Use uma referência vestida, esclareça o método e teste conjuntos completos. Toque, elasticidade e ajuste final ficam incertos sem informação suficiente.",
+    "factBox": [
+      [
+        "Medidas",
+        "Método da cintura, gancho, coxa, entreperna e abertura"
+      ],
+      [
+        "Teste",
+        "Sentar, andar e usar os sapatos previstos"
+      ],
+      [
+        "Regra",
+        "Compare métodos antes de números"
+      ]
+    ],
+    "sections": [
+      [
+        "Comece pela ocasião e movimento",
+        [
+          "Descreva muitas horas sentado, bicicleta, caminhadas, calor, trabalho informal ou viagem. Adicione objetos de bolso e cinto. Os movimentos mudam medidas decisivas: calções de foto em pé podem precisar de mais gancho ou coxa sentado; caminhar depende também de abertura e tecido.",
+          "Escolha um par próprio para a mesma ocasião. Anote cintura confortável sentado, gancho útil para tops ou equilíbrio com sapatilhas grandes. Uma peça evitada também ajuda se identificar o problema. Proporções vividas valem mais que uma palavra genérica do anúncio."
+        ]
+      ],
+      [
+        "Esclareça a medição da cintura",
+        [
+          "Pode ser largura plana, perímetro, medida corporal ou intervalo elástico relaxado-estendido. Determine o método. Meça a referência fechada e plana sem puxar e anote se deve duplicar. Não compare perímetro corporal com largura nem extensão máxima com tensão confortável diária.",
+          "Observe botões, ganchos, fechos, cordões, painéis elásticos e presilhas. Alteram o comportamento de números semelhantes. Fotos e descrição mostram sistema ou intervalo, não garantem conforto. Se método falta ou contradiz, pause: calcular média de valores incompatíveis cria precisão sem significado."
+        ]
+      ],
+      [
+        "Localize a peça com gancho e entreperna",
+        [
+          "Gancho frontal e traseiro influenciam cintura e posição sentada. A mesma entreperna pode terminar noutro ponto por causa dessa estrutura. Meça pelos pontos da tabela e anote altura de cintura prevista. Nos calções junte comprimento exterior ou total, se disponível; entreperna não mostra toda a linha.",
+          "Não infira gancho pela pose. A produção pode subir ou baixar cintura e o recorte remove contexto. Procure medidas planas e frente e traseira claras. Se importa para tops curtos ou por dentro, torne-o decisivo. Uma cintura conhecida não compensa proporção vertical desconhecida."
+        ]
+      ],
+      [
+        "Compare coxa, joelho e abertura",
+        [
+          "Coxa influencia mobilidade e queda; joelho e abertura definem volume e afunilamento. Compare pontos equivalentes: junto ao gancho não é centímetros abaixo. Considere elasticidade só quando declarada. Uma queda suave na foto não mede extensão.",
+          "Nos calções abertura e bainha afetam sentar; nas calças, queda sobre sapatos. Fundo estreito pode ficar acima de sapatilha grande; largo pode cobri-la. Teste os seus modelos sem transformar justo, direito ou largo em recomendações universais."
+        ]
+      ],
+      [
+        "Construa conjuntos completos",
+        [
+          "Junte três tops: por dentro, por fora e uma camada. Observe cintura, gancho, comprimentos e volume geral, depois sapatos habituais. Calças que só funcionam com top curto têm pouca cobertura; calções simples com várias combinações podem ser mais usados.",
+          "Cor e acabamento devem apoiar a função. Descreva estruturado, fluido ou texturado sem inferir composição, opacidade ou duração. Para trabalho ou viagem, exija informação atual se vincos ou elasticidade forem decisivos. Mostre compatibilidade e dúvidas de material lado a lado."
+        ]
+      ],
+      [
+        "Decida considerando movimento",
+        [
+          "Registe variante, método da cintura, gancho, coxa, entreperna, abertura, fecho, gestos, três conjuntos, sapatos e dúvidas. Aprove métodos comparáveis, pause medidas essenciais ausentes e elimine conflitos. Um gancho desconhecido pode superar vários aspetos visuais positivos para quem precisa de conforto sentado.",
+          "Reveja o seletor: cor e tamanho podem carregar outras tabelas ou imagens. Guarde data, variante e condições. A ficha não garante ajuste, mas explica por que a escolha é plausível para uma referência e guarda-roupa específicos.",
+          "Se os bolsos importam, distinga aberturas reais de costuras decorativas e procure fechos ou interiores. Fotos raramente provam capacidade. Liste objetos e mantenha dúvida se falta escala. Calças de viagem podem falhar aqui apesar de boas medidas.",
+          "Examine traseira tanto como frente. Encaixe, bolsos, gancho e costuras influenciam forma e posição dos tops. Uma pose frontal não basta para sentar ou avaliar a silhueta inteira. Prefira vistas neutras comparáveis a uma pose esticada.",
+          "Após entrega meça com o mesmo método antes de concluir. Guarde privadamente variante, medidas reais e contexto. Uma amostra não representa todas as cores, tamanhos ou lotes futuros. O retorno datado melhora a próxima seleção sem virar regra universal.",
+          "Teste calções sentado e calças com os sapatos previstos a andar e sentado. Assim entende abertura, queda e bainha. Provas online não reproduzem a experiência, mas podem priorizar medidas relacionadas com ela."
+        ]
+      ]
+    ],
+    "dateLabel": "Tradução completa atualizada em 9 de outubro de 2026",
+    "datePublished": "2026-09-15",
+    "dateModified": "2026-10-09",
+    "steps": [
+      "Defina ocasião e movimento",
+      "Alinhe cintura e método da tabela",
+      "Compare gancho, perna e sapatos",
+      "Confirme a variante atual"
+    ],
+    "sourceNote": "Método independente de medidas e proporções, revisto na categoria calças e calções em 15 de setembro de 2026.",
+    "sources": [
+      [
+        "Hacoo",
+        "Descrição pública e contexto dos criadores",
+        "2026-09-15"
+      ],
+      [
+        "Hacoos",
+        "Categoria atual e provas da variante",
+        "2026-09-15"
+      ],
+      [
+        "Hacoos",
+        "Método de guarda-roupa, ajuste e utilização",
+        "2026-09-15"
+      ]
+    ]
+  }
+}
