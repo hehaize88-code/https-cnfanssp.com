@@ -13,7 +13,7 @@ export default {
     headers.set("Cache-Control", "no-store, no-cache, must-revalidate");
     headers.set("CDN-Cache-Control", "no-store");
     headers.set("Cloudflare-CDN-Cache-Control", "no-store");
-    headers.set("X-Hacoos-Articles-Release", "2026-09-18-eight-guides");
+    headers.set("X-Hacoos-Articles-Release", "2026-10-10-multilingual-guides");
 
     return new Response(response.body, {
       status: response.status,

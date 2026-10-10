@@ -1,3 +1,4 @@
+import { refresh } from "./seo-refresh";
 import type { Locale, PageKey } from "./site-data";
 
 export type ArticleKey = Extract<PageKey, `articles/${string}`>;
@@ -190,3 +191,9 @@ export const researchBasis: Record<Locale, string[]> = {
   es: ["Web oficial de Hacoo, Trust Center y centro de ayuda", "Ficha de Google Play com.saramart.android", "Ficha de Hacoo en Apple App Store", "Perfil de Trustpilot y temas de reseñas recientes"],
   it: ["Sito ufficiale Hacoo, Trust Center e centro assistenza", "Scheda Google Play com.saramart.android", "Scheda Hacoo su Apple App Store", "Profilo Trustpilot e temi delle recensioni recenti"],
 };
+
+for (const locale of Object.keys(refresh) as Locale[]) {
+  pageChecklists[locale].shipping![0] = refresh[locale].shippingAnswer;
+  ui[locale].liveIndex = {en:'PRODUCT INDEX',de:'PRODUKTINDEX',fr:'INDEX PRODUITS',es:'ÍNDICE DE PRODUCTOS',it:'INDICE PRODOTTI'}[locale];
+  ui[locale].matchedFinds = {en:'catalog references',de:'Katalogreferenzen',fr:'références catalogue',es:'referencias de catálogo',it:'riferimenti catalogo'}[locale];
+}

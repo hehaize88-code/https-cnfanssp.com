@@ -1,22 +1,16 @@
-"use client";
-
 import {
   ArrowRight,
   ArrowUpRight,
   BookOpen,
   Check,
-  ChevronRight,
   CircleAlert,
-  Languages,
-  Menu,
   PackageCheck,
   Ruler,
   Search,
   ShieldCheck,
   Truck,
 } from "lucide-react";
-import { useEffect, useState } from "react";
-import { NativeSelect, NativeSelectOption } from "@/components/ui/native-select";
+import { InteractiveHeader, SiteTracking } from "./site-interactions";
 import {
   categories,
   copy,
@@ -25,10 +19,11 @@ import {
   type Locale,
   type PageKey,
 } from "./site-data";
+import { contentRevision, refresh } from "./seo-refresh";
+import { octoberKeys } from "./october-content";
 import { articles } from "./article-content";
 import { articleExpansions } from "./article-expansions";
 import {
-  evidenceFacts,
   pageChecklists,
   pageExplanations,
   researchBasis,
@@ -48,6 +43,7 @@ const navKeys: PageKey[] = [
 ];
 
 const articleKeys: PageKey[] = [
+  ...octoberKeys,
   "articles/hacoo-codes-product-id-guide",
   "articles/hacoo-links-not-working",
   "articles/hacoo-spreadsheet-verify-links",
@@ -63,6 +59,7 @@ const articleKeys: PageKey[] = [
 ];
 
 const articleReleaseDates: Partial<Record<PageKey, string>> = {
+  ...Object.fromEntries(octoberKeys.map(key => [key, contentRevision])),
   "articles/spreadsheet-finds-categories-start": "2026-08-29",
   "articles/hacoo-codes-product-id-guide": "2026-09-17",
   "articles/hacoo-links-not-working": "2026-09-17",
@@ -96,67 +93,31 @@ function Logo({ locale }: { locale: Locale }) {
 function SearchDesk({ locale, compact = false }: { locale: Locale; compact?: boolean }) {
   const t = copy[locale];
   return (
-    <form
+    <div className="catalog-search"><form
+      aria-label={refresh[locale].catalog}
       className={compact ? "search-desk compact" : "search-desk"}
-      action="https://www.cnfanssp.com/search.html"
+      action="https://cnfanshp.com/search.html"
       method="get"
       target="_blank"
-      rel="nofollow"
+      rel="nofollow noopener"
     >
+      <input type="hidden" name="channelid" value="2" />
       <Search aria-hidden="true" />
       <label className="sr-only" htmlFor={`keywords-${compact ? "compact" : "hero"}`}>
         {t.searchPlaceholder}
       </label>
       <input id={`keywords-${compact ? "compact" : "hero"}`} name="keywords" placeholder={t.searchPlaceholder} required />
       <button type="submit">{t.searchButton}<ArrowUpRight aria-hidden="true" /></button>
-    </form>
+    </form><p className="catalog-disclosure">{refresh[locale].catalogNote}</p></div>
   );
 }
 
 function Header({ locale, pageKey }: { locale: Locale; pageKey: PageKey }) {
-  const [open, setOpen] = useState(false);
   const t = copy[locale];
-  const u = ui[locale];
-  const changeLocale = (next: string) => {
-    window.location.href = routeFor(next as Locale, pageKey);
-  };
-  return (
-    <header className="site-header">
-      <div className="header-inner">
-        <Logo locale={locale} />
-        <nav className="desktop-nav" aria-label={u.primaryNav}>
-          {navKeys.map((key) => (
-            <a key={key} className={key === pageKey ? "active" : ""} href={routeFor(locale, key)}>{t.nav[key]}</a>
-          ))}
-        </nav>
-        <div className="header-tools">
-          <div className="language-control">
-            <Languages aria-hidden="true" />
-            <NativeSelect
-              className="language-trigger"
-              value={locale}
-              onChange={(event) => changeLocale(event.target.value)}
-              aria-label={u.language}
-            >
-              <NativeSelectOption value="en">English</NativeSelectOption>
-              <NativeSelectOption value="de">Deutsch</NativeSelectOption>
-              <NativeSelectOption value="fr">Français</NativeSelectOption>
-              <NativeSelectOption value="es">Español</NativeSelectOption>
-              <NativeSelectOption value="it">Italiano</NativeSelectOption>
-            </NativeSelect>
-          </div>
-          <button className="menu-button" onClick={() => setOpen(!open)} aria-expanded={open} aria-label={open ? t.close : t.menu}>
-            <Menu aria-hidden="true" />
-          </button>
-        </div>
-      </div>
-      {open && (
-        <nav className="mobile-nav" aria-label={u.primaryNav}>
-          {navKeys.map((key) => <a key={key} href={routeFor(locale, key)}>{t.nav[key]}<ChevronRight /></a>)}
-        </nav>
-      )}
-    </header>
-  );
+  return <InteractiveHeader logo={<Logo locale={locale} />} locale={locale}
+    links={navKeys.map(key => ({href: routeFor(locale, key), label: t.nav[key], active: key === pageKey}))}
+    localeRoutes={Object.fromEntries(['en', 'de', 'fr', 'es', 'it'].map(lang => [lang, routeFor(lang as Locale, pageKey)]))}
+    labels={{primaryNav: ui[locale].primaryNav, language: ui[locale].language, menu: t.menu, close: t.close}} />;
 }
 
 function CategoryGrid({ locale, limit }: { locale: Locale; limit?: number }) {
@@ -167,7 +128,7 @@ function CategoryGrid({ locale, limit }: { locale: Locale; limit?: number }) {
     <div className="category-grid">
       {visible.map((category, index) => (
         <a key={category.key} href={category.href} target="_blank" rel="nofollow sponsored noopener" className={`category-card color-${index % 4}`}>
-          <span>0{index + 1}</span>
+          <span>{String(index + 1).padStart(2, "0")}</span>
           <strong>{u.categoryNames[category.key]}</strong>
           <ArrowUpRight aria-hidden="true" />
         </a>
@@ -193,7 +154,7 @@ function ProductGrid({ locale, limit }: { locale: Locale; limit?: number }) {
           <div className="product-body">
             <div className="product-meta"><span>{u.productCategories[product.category]}</span><small>ID {product.id}</small></div>
             <h3><a href={product.href} target="_blank" rel="nofollow sponsored noopener">{u.productNames[product.id]}</a></h3>
-            <div className="product-price"><strong>{product.price}</strong><span>{product.sourcePrice}</span></div>
+            <div className="product-price"><strong>{product.price}</strong><span>USD</span></div>
             <a className="product-link" href={product.href} target="_blank" rel="nofollow sponsored noopener">{t.openListing}<ArrowUpRight /></a>
           </div>
         </article>
@@ -244,12 +205,12 @@ function FaqList({ locale, limit }: { locale: Locale; limit?: number }) {
   );
 }
 
-function ArticleCards({ locale }: { locale: Locale }) {
+function ArticleCards({ locale, limit, exclude }: { locale: Locale; limit?: number; exclude?: PageKey }) {
   const t = copy[locale];
   const icons = [Search, PackageCheck, Ruler];
   return (
     <div className="article-grid">
-      {articleKeys.map((key, index) => {
+      {[...articleKeys].filter(key => key !== exclude).sort((a, b) => (articleReleaseDates[b] ?? "2026-08-27").localeCompare(articleReleaseDates[a] ?? "2026-08-27")).slice(0, limit).map((key, index) => {
         const Icon = icons[index % icons.length];
         return (
           <a href={routeFor(locale, key)} key={key}>
@@ -336,7 +297,8 @@ function HomePage({ locale }: { locale: Locale }) {
       </section>
       <section className="section guide-preview">
         <div className="section-heading"><span>06 / {u.deepReads}</span><h2>{t.nav.articles}</h2></div>
-        <ArticleCards locale={locale} />
+        <ArticleCards locale={locale} limit={4} />
+        <a className="text-link" href={routeFor(locale, "articles")}>{t.nav.articles}<ArrowRight /></a>
       </section>
       <section className="section faq-preview">
         <div className="section-heading"><span>07 / {u.answers}</span><h2>{t.pageLabels.faq.title}</h2></div>
@@ -347,25 +309,25 @@ function HomePage({ locale }: { locale: Locale }) {
   );
 }
 
-function EvidenceGrid({ locale }: { locale: Locale }) {
-  const u = ui[locale];
-  return (
-    <section className="section evidence-section">
-      <div className="section-heading split">
-        <div><span>{u.evidenceChecked}</span><h2>{u.evidenceTitle}</h2></div>
-        <p>{researchBasis[locale].join(" · ")}</p>
-      </div>
-      <div className="evidence-grid">
-        {evidenceFacts[locale].map((fact) => (
-          <article key={fact.label}>
-            <strong>{fact.value}</strong>
-            <h3>{fact.label}</h3>
-            <p>{fact.note}</p>
-          </article>
-        ))}
-      </div>
-    </section>
-  );
+const relatedRoutes: Partial<Record<PageKey, PageKey[]>> = {
+  shipping: ['articles/hacoo-order-tracking', 'articles/hacoo-returns-refunds'],
+  'qc-guide': ['articles/read-qc-photos', 'articles/size-before-you-buy', 'articles/hacoo-returns-refunds'],
+  spreadsheet: ['articles/hacoo-spreadsheet-verify-links', 'articles/find-product-links', 'articles/hacoo-search-no-results'],
+  'articles/hacoo-order-tracking': ['shipping', 'articles/hacoo-returns-refunds', 'articles/read-qc-photos'],
+  'articles/hacoo-search-no-results': ['articles/hacoo-links-not-working', 'articles/hacoo-codes-product-id-guide', 'spreadsheet'],
+  'articles/hacoo-returns-refunds': ['articles/read-qc-photos', 'articles/hacoo-order-tracking', 'shipping'],
+};
+function NextSteps({ locale, pageKey }: {locale: Locale; pageKey: PageKey}) {
+  const routes = relatedRoutes[pageKey] ?? ['spreadsheet', 'qc-guide', 'shipping'] as PageKey[];
+  return <nav className="section next-steps" aria-label={refresh[locale].next}>
+    <h2>{refresh[locale].next}</h2>
+    <div>{routes.filter(key => key !== pageKey).map(key => <a key={key} href={routeFor(locale, key)}>{copy[locale].pageLabels[key].title}<ArrowRight aria-hidden="true" /></a>)}</div>
+  </nav>;
+}
+function PageGuidance({locale, pageKey}: {locale: Locale; pageKey: PageKey}) {
+  const sections = refresh[locale].sections[pageKey as 'shipping' | 'qc-guide' | 'spreadsheet'];
+  if (!sections) return null;
+  return <><article className="long-article page-guidance">{sections.map(([heading, ...paragraphs], i) => <section key={heading}><span>{String(i + 1).padStart(2, '0')}</span><div><h2>{heading}</h2>{paragraphs.map(p => <p key={p}>{p}</p>)}</div></section>)}</article><NextSteps locale={locale} pageKey={pageKey} /></>;
 }
 
 function ArticlePage({ locale, pageKey }: { locale: Locale; pageKey: ArticleKey }) {
@@ -373,8 +335,7 @@ function ArticlePage({ locale, pageKey }: { locale: Locale; pageKey: ArticleKey 
   const u = ui[locale];
   const article = articles[locale][pageKey];
   const expansions = locale === "en" ? [] : articleExpansions[locale][pageKey] ?? [];
-  const figureProduct = products[pageKey === "articles/find-product-links" ? 0 : pageKey === "articles/read-qc-photos" ? 1 : 3];
-  const reviewed = articleReleaseDates[pageKey] ?? "2026-08-27";
+  const reviewed = ["articles/find-product-links", "articles/read-qc-photos"].includes(pageKey) ? contentRevision : articleReleaseDates[pageKey] ?? "2026-08-27";
   const reviewedDisplay = reviewed.split("-").reverse().join(" / ");
   return (
     <>
@@ -387,17 +348,14 @@ function ArticlePage({ locale, pageKey }: { locale: Locale; pageKey: ArticleKey 
           <span>{u.lastReviewed}: {reviewedDisplay}</span>
         </div>
       </section>
-      <EvidenceGrid locale={locale} />
-      <figure className="article-figure">
-        <a href={figureProduct.href} target="_blank" rel="nofollow sponsored noopener">
-          <img src={figureProduct.image} alt={`${u.exampleImage}: ${u.productNames[figureProduct.id]}`} loading="lazy" decoding="async" width={900} height={720} />
-        </a>
-        <figcaption><b>{u.exampleImage}</b><span>{u.figureCaption}</span></figcaption>
-      </figure>
+      <nav className="article-toc" aria-label={refresh[locale].contents}>
+        <h2>{refresh[locale].contents}</h2>
+        <ol>{article.sections.map((section, i) => <li key={section.heading}><a href={`#section-${i + 1}`}>{section.heading}</a></li>)}</ol>
+      </nav>
       <article className="long-article">
         {article.sections.map((section, index) => (
-          <section key={section.heading}>
-            <span>0{index + 1}</span>
+          <section id={`section-${index + 1}`} key={section.heading}>
+            <span>{String(index + 1).padStart(2, "0")}</span>
             <div>
               <h2>{section.heading}</h2>
               {section.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
@@ -411,13 +369,14 @@ function ArticlePage({ locale, pageKey }: { locale: Locale; pageKey: ArticleKey 
         <div className="section-heading"><span>{u.keyTakeaways}</span><h2>{t.pageLabels[pageKey].title}</h2></div>
         <ol>{article.takeaways.map((item, index) => <li key={item}><b>0{index + 1}</b><span>{item}</span></li>)}</ol>
       </section>
+      <NextSteps locale={locale} pageKey={pageKey} />
       <section className="section research-basis">
-        <div><span className="kicker">{u.articleSources}</span><h2>{u.evidenceChecked}</h2></div>
-        <ul>{researchBasis[locale].map((source) => <li key={source}>{source}</li>)}</ul>
+        <div><h2>{u.articleSources}</h2><p>{octoberKeys.includes(pageKey as typeof octoberKeys[number]) ? refresh[locale].sourceNote : u.evidenceChecked}</p></div>
+        <ul>{(octoberKeys.includes(pageKey as typeof octoberKeys[number]) ? refresh[locale].sources : researchBasis[locale]).map(source => <li key={source}>{source}</li>)}</ul>
       </section>
       <section className="section related-reading">
         <div className="section-heading"><span>{u.relatedReading}</span><h2>{t.pageLabels.articles.title}</h2></div>
-        <ArticleCards locale={locale} />
+        <ArticleCards locale={locale} limit={4} exclude={pageKey} />
       </section>
     </>
   );
@@ -441,7 +400,7 @@ function InteriorPage({ locale, pageKey }: { locale: Locale; pageKey: PageKey })
         {pageKey === "spreadsheet" && <SearchDesk locale={locale} compact />}
       </section>
 
-      {["spreadsheet", "finds", "categories", "qc-guide", "shipping", "guide", "faq", "articles"].includes(pageKey) && <EvidenceGrid locale={locale} />}
+      <PageGuidance locale={locale} pageKey={pageKey} />
 
       {pageKey === "finds" && <section className="section"><ProductGrid locale={locale} /></section>}
       {pageKey === "categories" && <section className="section"><CategoryGrid locale={locale} /></section>}
@@ -463,7 +422,7 @@ function InteriorPage({ locale, pageKey }: { locale: Locale; pageKey: PageKey })
           </div>
         </section>
       )}
-      {!["finds", "categories", "faq", "articles"].includes(pageKey) && <FieldNotes locale={locale} />}
+      {!["finds", "categories", "faq", "articles", "shipping", "qc-guide", "spreadsheet"].includes(pageKey) && <FieldNotes locale={locale} />}
       {checklist && <section className="section inline-cta"><h2>{t.pageLabels.articles.title}</h2><a href={routeFor(locale, "articles")}>{t.readGuides}<ArrowRight /></a></section>}
     </>
   );
@@ -483,46 +442,10 @@ function Footer({ locale }: { locale: Locale }) {
 }
 
 export function SitePage({ locale, pageKey }: { locale: Locale; pageKey: PageKey }) {
-  useEffect(() => {
-    document.documentElement.lang = locale;
-    document.documentElement.dataset.locale = locale;
-  }, [locale]);
-  useEffect(() => {
-    const sendEvent = (name: string, parameters: Record<string, string>) => {
-      const analyticsWindow = window as Window & { gtag?: (command: string, eventName: string, values: Record<string, string>) => void };
-      analyticsWindow.gtag?.("event", name, parameters);
-    };
-    const trackOutbound = (event: MouseEvent) => {
-      if (!(event.target instanceof Element)) return;
-      const anchor = event.target.closest<HTMLAnchorElement>("a[href]");
-      if (!anchor) return;
-      const destination = new URL(anchor.href, window.location.href);
-      if (destination.hostname !== "www.cnfanssp.com") return;
-      sendEvent("outbound_product_click", {
-        link_url: destination.href,
-        link_text: anchor.textContent?.trim().slice(0, 100) ?? "",
-        page_path: window.location.pathname,
-      });
-    };
-    const trackSearch = (event: SubmitEvent) => {
-      if (!(event.target instanceof HTMLFormElement) || !event.target.matches(".search-desk")) return;
-      const formData = new FormData(event.target);
-      sendEvent("product_search", {
-        search_term: String(formData.get("keywords") ?? "").slice(0, 100),
-        page_path: window.location.pathname,
-      });
-    };
-    document.addEventListener("click", trackOutbound);
-    document.addEventListener("submit", trackSearch);
-    return () => {
-      document.removeEventListener("click", trackOutbound);
-      document.removeEventListener("submit", trackSearch);
-    };
-  }, []);
   const faqJson = pageKey === "faq" || pageKey === "home" ? {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    mainEntity: copy[locale].faq.map(([question, answer]) => ({
+    mainEntity: copy[locale].faq.slice(0, pageKey === "home" ? 3 : undefined).map(([question, answer]) => ({
       "@type": "Question",
       name: question,
       acceptedAnswer: { "@type": "Answer", text: answer },
@@ -534,7 +457,7 @@ export function SitePage({ locale, pageKey }: { locale: Locale; pageKey: PageKey
     headline: copy[locale].pageLabels[pageKey].title,
     description: copy[locale].pageLabels[pageKey].intro,
     datePublished: articleReleaseDates[pageKey] ?? "2026-08-27",
-    dateModified: articleReleaseDates[pageKey] ?? "2026-08-27",
+    dateModified: ["articles/find-product-links", "articles/read-qc-photos"].includes(pageKey) ? contentRevision : articleReleaseDates[pageKey] ?? "2026-08-27",
     inLanguage: locale,
     author: { "@type": "Organization", name: "Hacoos Research Desk" },
     publisher: { "@type": "Organization", name: "Hacoos" },
@@ -542,6 +465,7 @@ export function SitePage({ locale, pageKey }: { locale: Locale; pageKey: PageKey
   } : null;
   return (
     <div className="site-shell">
+      <SiteTracking locale={locale} pageKey={pageKey} />
       <Header locale={locale} pageKey={pageKey} />
       <main className={pageKey === "home" ? "home-main" : undefined}>{pageKey === "home" ? <HomePage locale={locale} /> : <InteriorPage locale={locale} pageKey={pageKey} />}</main>
       <Footer locale={locale} />
