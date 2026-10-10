@@ -1,0 +1,16 @@
+## Définir précisément la confiance
+La question est de savoir si les informations étayent cette affirmation particulière pour l’option choisie à la date indiquée. La confiance ne note ni produit entier, vendeur, authenticité, livraison ou satisfaction. Partez de candidats comparables pour un usage précis. L’étiquette doit expliquer la solidité d’une conclusion et l’information susceptible de la modifier.
+## Établir trois niveaux reproductibles
+Élevée suppose une preuve directe, actuelle, liée à la variante et sans contradiction visible. Moyenne correspond à une information pertinente mais indirecte, par exemple un tableau général sans association claire. Faible convient aux rapports anciens, incomplets ou ambigus. Sans base exploitable, écrivez absente plutôt que faible. Définissez ces règles avant la comparaison et appliquez-les uniformément.
+## Étiqueter chaque critère séparément
+Une note globale masque la localisation des inconnues. Les mesures peuvent être bien étayées, la matière peu documentée et le contenu moyennement certain. Placez le niveau à côté de chaque affirmation. Sa conséquence compte aussi : un détail décoratif incertain diffère d’une compatibilité inconnue. Une moyenne ne doit pas effacer un indispensable non vérifié.
+## Noter la source et son actualité
+Indiquez sélecteur d’option, caractéristique, image, avis client, publication ou page officielle, puis la date. Le type de source ne détermine pas automatiquement la vérité, mais limite la preuve. Une règle officielle de livraison ne démontre pas une dimension ; une photo récente ne montre pas un intérieur caché. Un ancien avis peut suggérer une question sans confirmer la variante actuelle.
+## Réduire la confiance en présence de contradictions
+Si étiquette, texte et option divergent, conservez les différentes versions. Ne retenez pas simplement la valeur favorable. Examinez proximité avec la variante et date ; demandez une clarification si l’écart compte. La contradiction demeure jusqu’à résolution de l’association. Une présentation professionnelle ne justifie pas à elle seule un niveau supérieur.
+## Ne pas transformer confiance en qualité
+Écrivez confiance élevée dans la mesure annoncée, pas produit de grande qualité. Une propriété bien décrite peut être inadaptée à votre besoin. Une fiche incomplète ne prouve pas non plus un mauvais produit. Séparez performance, préférence et solidité de l’information. Ne comptez pas la confiance une seconde fois comme caractéristique qualitative.
+## Orienter la prochaine vérification
+Examinez d’abord une affirmation faiblement étayée et fortement pondérée. Une dimension de coupe inconnue pesant 30 compte davantage qu’une couleur incertaine pesant 5. Demandez la mesure, l’association ou le composant précis susceptible de changer le résultat. Si cette preuve reste inaccessible, mettez le candidat en attente ou acceptez explicitement une conséquence mineure.
+## Adapter la conclusion aux preuves
+Avec une preuve directe, indiquez que l’option annonce une valeur. Avec une preuve indirecte, expliquez que la page la suggère sans association claire. Une absence de donnée ne permet aucune affirmation. Ajoutez date, lacune décisive et prochaine étape. Ces niveaux structurent la recherche sans garantir livraison, authenticité ou performance durable.

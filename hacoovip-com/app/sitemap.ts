@@ -1,3 +1,5 @@
+import { localizedArticles } from "./localized-articles";
+import { newArticleSlugs } from "./release-content";
 import type { MetadataRoute } from "next";
 import { articleSlugs, languages, localizedPath, routeKeys } from "./site-data";
 import { prioritySlugs } from "./hv-priority-articles";
@@ -25,7 +27,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const pages = [...routeKeys, ...articleSlugs.map(slug => `articles/${slug}`)];
   return languages.flatMap(({ code }) => pages.map(path => ({
     url: `${domain}${localizedPath(code, path)}`,
-    lastModified: lastModified(path),
+    lastModified: new Date(path.startsWith("articles/") ? localizedArticles[code][path.slice(9) as keyof typeof localizedArticles.en].modified || (newArticleSlugs.includes(path.slice(9) as never) ? "2026-10-10" : lastModified(path)) : "2026-10-10"),
+    alternates: { languages: Object.fromEntries([...languages.map(({code: alternate}) => [alternate, `${domain}${localizedPath(alternate, path)}`]), ["x-default", `${domain}${localizedPath("en", path)}`]]) },
     changeFrequency: path.startsWith("articles/") ? "monthly" as const : path.includes("policy") || path === "privacy" || path === "terms" ? "yearly" as const : "weekly" as const,
     priority: path === "" ? 1 : path === "spreadsheet" || path === "finds" ? 0.85 : path.startsWith("articles/") ? 0.8 : path === "about" || path === "sources-policy" ? 0.65 : 0.6,
   })));

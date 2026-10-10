@@ -1,3 +1,4 @@
+import { applySeoUpdates } from "./seo-updates";
 import type { CoreRouteKey, Lang } from "./site-data";
 
 type Pair = readonly [string, string];
@@ -136,3 +137,5 @@ const it: LocaleContent = {
 };
 
 export const localizedContent: Record<Lang, LocaleContent> = { en, de, es, fr, it };
+
+applySeoUpdates(localizedContent);

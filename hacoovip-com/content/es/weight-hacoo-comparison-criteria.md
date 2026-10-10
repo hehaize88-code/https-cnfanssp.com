@@ -1,0 +1,16 @@
+## Utiliza pesos después de comprobar la elegibilidad
+Una puntuación alta no repara un requisito incumplido. Empieza con variantes que superen los descartes y solo con incógnitas menores aceptadas expresamente. Los pesos comparan ventajas entre opciones aptas. Un bolso sin compatibilidad demostrada no debe ganar por color y precio. Si ninguno cumple, vuelve a buscar en vez de rebajar después las exigencias.
+## Elige entre cuatro y seis criterios independientes
+Una selección corta se explica mejor y evita duplicidades. En ropa pueden importar medidas, espacio para capas, mantenimiento, información del material y precio actual. Separa claridad de información y prestaciones. No cuentes el mismo ancho de pecho como ajuste, comodidad y calidad. Especifica la prueba independiente necesaria y por qué cada criterio afecta al uso.
+## Asigna pesos según las consecuencias
+Pregunta cuánto perjudicaría la decisión que ese criterio fallara mientras los demás fueran buenos. Ordena su importancia y distribuye un total de 100 puntos. Un ejemplo personal puede ser 30, 25, 20, 15 y 10; no es una recomendación universal Hacoo. Define los pesos antes de ver resultados. Popularidad y cantidad de texto no determinan importancia.
+## Define una escala basada en pruebas
+En una escala de cero a cinco, cada nivel debe significar algo: cero contradice el requisito, uno aporta apoyo débil, tres suficiente con límites y cinco apoyo directo sólido. Desconocido no equivale automáticamente a tres. Registra ausencias y confianza por separado. La escala mide adecuación a tu objetivo, no calidad o autenticidad universales.
+## Calcula intervalos cuando falten datos importantes
+La contribución es peso por puntuación dividido entre cinco. Cuatro sobre cinco con peso 30 aporta 24 puntos. Para un criterio desconocido de peso 25, calcula un resultado inferior y otro superior defendible, sin inventar un punto medio. Un intervalo amplio muestra que nuevas pruebas pueden cambiar al ganador. Evita decimales que sugieran precisión inexistente.
+## Comprueba la sensibilidad del resultado
+Modifica moderadamente un peso importante manteniendo el total en 100. Si gana el mismo candidato, la decisión es más estable. Si pequeños cambios razonables alteran el ganador, tienes un empate práctico, no una superioridad clara. Revisa el dato decisivo y el objetivo inicial. No ajustes reiteradamente los pesos hasta que venza tu favorito.
+## Sitúa precio y gusto en su lugar
+Un menor precio puede favorecer a una opción apta, pero no sustituye su función. Usa el precio de la variante exacta y los cargos relevantes para comparar. Da al gusto un espacio explícitamente personal. Una opción barata e inutilizable no es una buena elección. Un límite presupuestario duro pertenece a los descartes y no puede compensarse con otros puntos.
+## Guarda reglas y resultado juntos
+Conserva candidatos, fecha, pesos, escala, pruebas y dudas. Explica la diferencia decisiva y qué nuevo hecho podría cambiarla. Con resultados próximos, considera consecuencias del error y evidencia más sólida. Volver a comprobar o no elegir siguen siendo válidos. La aritmética organiza el razonamiento; no convierte fichas incompletas en una medición precisa de calidad, duración o satisfacción.

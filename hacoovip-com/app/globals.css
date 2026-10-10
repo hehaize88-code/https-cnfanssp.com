@@ -345,3 +345,6 @@ footer{grid-template-columns:.35fr 1fr .95fr .55fr}
 .footer-links{grid-column:auto}
 footer{grid-template-columns:1fr}
 }
+
+/* October editorial navigation: readable anchors and mobile-safe cards. */
+.article-toc{margin:24px auto;padding:24px;max-width:1100px;border:1px solid var(--line);border-radius:16px;background:#eff5ff}.article-toc ol{columns:2;column-gap:36px;padding-left:24px}.article-toc li{padding:6px 0;break-inside:avoid;line-height:1.5}.article-toc a{text-decoration:underline;text-underline-offset:3px}.article-body section{scroll-margin-top:100px}.article-body p+p{margin-top:16px}.related-guides{display:flex;gap:16px;flex-wrap:wrap;padding:24px clamp(18px,5vw,80px);border-top:1px solid var(--line)}.related-guides a,.all-guides{color:var(--blue);font-weight:700;text-decoration:underline;text-underline-offset:4px}.all-guides{display:inline-block;margin-top:28px}.article-page a,.article-page h1,.article-page h2{overflow-wrap:anywhere}@media(max-width:680px){.article-toc{margin:18px;padding:18px}.article-toc ol{columns:1}.related-guides{flex-direction:column}}

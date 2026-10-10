@@ -1,0 +1,16 @@
+## Usa la matrice dopo la selezione iniziale
+La matrice Hacoo non è un altro catalogo. Confronta due o tre candidati per lo stesso bisogno: strato leggero, borsa per oggetti precisi o scarpe da viaggio. Scrivi uso e limiti di misure, chiusura, capacità, data e importo totale. Compiti diversi richiedono confronti separati. La community ispira; la scelta finale richiede criteri personali coerenti.
+## Verifica i filtri prima dei voti
+Alcune condizioni non vanno mediate. Segna superato, sconosciuto o fallito. Una misura insufficiente fallisce; una assente resta sconosciuta. Non approvare spazio per un portatile senza prove. Controlla variante e destinazione reali: taglia, colore, contenuto e prezzo possono cambiare insieme. L’aspetto non compensa inutilizzabilità e tutti possono essere esclusi.
+## Distribuisci i pesi secondo le conseguenze
+Scegli quattro o sei criteri con totale 100. Un esempio personale per giacche: misure 30, uso previsto 25, abbinamenti esistenti 20, informazioni sul materiale 15 e certezza del costo 10. Per borse, capacità può sostituire vestibilità. Fissa i pesi prima dei totali in base all’utilità, non entusiasmo o popolarità. Usa il prezzo della variante esatta.
+## Separa voto e fiducia
+Usa zero-cinque per l’idoneità sostenuta e alta, media o bassa per le prove. Misure attuali precise sostengono più di una lettera; immagini pertinenti più di un ritaglio. Un’affermazione del creator non diventa dato ufficiale. Ciò che manca resta sconosciuto. Un totale alto con prove deboli non equivale a uno leggermente inferiore ben documentato.
+## Calcola senza nascondere le incognite
+Il contributo è peso per voto diviso cinque. Quattro su cinque con peso 30 produce 24; tre con peso 25 produce 15. Il massimo totale è 100. Un 78 contro 74 non decide se il primo ha prove deboli sul criterio principale. Segna incognite importanti, per esempio da peso 15, e calcola limite inferiore e superiore difendibile. Evita decimali artificiali.
+## Verifica usi già realizzabili
+Nomina tre situazioni o abbinamenti reali anziché « sta con tutto ». Considera capi posseduti, oggetti trasportati, stagione e manutenzione. La felpa da viaggio deve funzionare con giacca e borsa previste. Chiedi se esistono tre usi credibili senza acquisti aggiuntivi. Non sottrarre punti estetici arbitrari. Se no, rivedi il bisogno o rinuncia.
+## Sciogli i pareggi con prove migliori
+Confronta prima requisiti aperti o falliti, prova del criterio principale, conseguenze dell’errore e compatibilità con ciò che possiedi. Il gusto viene dopo. Due giacche simili possono differire per chiarezza delle misure: quella documentata si giustifica meglio per stratificare, non è necessariamente meglio costruita. Salva data, opzione e motivo. Nuovi dati aggiornano la riga interessata.
+## Consenti verifica e nessun acquisto
+Fissa prima una regola personale: per esempio requisiti superati, almeno 70 punti e nessuna incognita debole in un criterio decisivo da 20. Non è una garanzia della piattaforma. Se nessuno la raggiunge, aspetta o cerca altro. Riapri l’opzione e riassumi la scelta in una frase. Se richiede affermazioni non dimostrate su autenticità, qualità o consegna, mantieni la domanda aperta. La matrice ordina il pensiero senza creare certezza.

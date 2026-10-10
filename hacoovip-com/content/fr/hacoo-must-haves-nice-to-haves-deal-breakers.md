@@ -1,0 +1,16 @@
+## Définir une tâche concrète
+Commencez avec deux ou trois candidats pour le même usage. Décrivez personne, situation et tâche : un sac de trajet quotidien pour une tablette de 28 centimètres et une bouteille. « Un joli sac » est trop vague. Gardez catégorie et variante comparables. L’inspiration Hacoo fournit des candidats ; les exigences viennent de votre usage réel.
+## Définir les indispensables par la conséquence de l’échec
+Un indispensable n’est pas simplement apprécié : son absence fait échouer la tâche. Notez quatre à sept conditions avec leur conséquence. Sans 28 centimètres intérieurs utiles, la tablette ne rentre pas. Utilisez mesures, fonctions, composants et compatibilité précis, pas haut de gamme ou confortable. Sans échec fonctionnel explicable, le point appartient plutôt aux préférences.
+## Garder les préférences visibles mais secondaires
+Couleur, poche supplémentaire, détail et prix inférieur peuvent départager des candidats admissibles. Séparez-les et classez leur importance. Ils ne compensent pas une dimension nécessaire absente. Expliquez l’arbitrage, par exemple couleur préférée contre entretien mieux documenté. Popularité et enthousiasme des créateurs ne prouvent pas l’adéquation à votre tâche.
+## Écrire les éliminations avant le total
+Un critère éliminatoire peut être une exigence manquée, un plafond strict, une incompatibilité ou une pièce indispensable absente. Utilisez réussite, échec et inconnu. Inconnu n’est pas une demi-réussite. Décidez quelles lacunes imposent l’attente : un décor peut rester incertain, pas forcément la longueur intérieure nécessaire. Le favori ne reçoit aucune exception.
+## Associer les preuves à la variante précise
+Notez couleur, taille, lot, version et date. Vérifiez ce qui change avec l’option : image, données, contenu et prix. Un tableau général ou accessoire photographié ne s’applique pas automatiquement à toutes les variantes. Distinguez preuves directes, indirectes et absentes. Vous évaluez l’information, pas authenticité, confort ou durée de vie.
+## Construire une grille en deux étapes
+La première vérifie indispensables et éliminations avec des états clairs. Retirez les échecs et suspendez les inconnues importantes. La seconde compare les préférences des seuls candidats admissibles. Un classement ou une légère pondération suffit. Si tous échouent, cherchez ou attendez ; n’abaissez pas l’exigence initiale pour fabriquer un gagnant.
+## Vérifier les catégories par des questions inverses
+Sans cette caractéristique, le produit remplirait-il encore sa fonction ? Si oui, c’est probablement une préférence. Si le fait reste inconnu après paiement, pourrait-il rendre le produit inutilisable ou coûteux ? Il mérite alors attente ou élimination. Appliquez la même règle au candidat moins séduisant. Les photos ne doivent pas transformer le goût en nécessité.
+## Terminer avec une décision et une règle d’arrêt
+Nommez usage, candidat et preuve de chaque indispensable, puis la préférence qui départage. Si la phrase exige des affirmations non prouvées sur matière, confort, authenticité ou livraison, indiquez la lacune. Choisissez lorsque les exigences passent, aucun motif d’élimination ne subsiste et les inconnues majeures sont résolues. Rouvrez l’option exacte avant d’agir ; ne rien choisir reste valide.

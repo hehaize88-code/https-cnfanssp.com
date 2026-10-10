@@ -1,0 +1,16 @@
+## Comprendre trois comme limite de travail
+De nombreux liens aident à découvrir mais compliquent une décision cohérente. Trois candidats offrent une référence, une alternative crédible et un compromis utile. C’est une règle pratique, pas un optimum scientifique universel. Suspendez la découverte et définissez le même usage. Un quatrième candidat ultérieur doit remplacer un membre de la liste, pas l’agrandir.
+## Filtrer l’admissibilité avant les favoris
+Vérifiez même usage, variante identifiable, mesure ou compatibilité essentielle vérifiable, prix dans le plafond et disponibilité pour votre région. Classez admissible, inadmissible ou preuve attendue. Une belle photo ne répond pas. Un candidat incomplet peut rester en réserve, mais ne doit pas occuper une des trois places destinées aux options réellement comparables.
+## Choisir des différences instructives
+Évitez trois fiches presque identiques sauf si la petite différence est précisément votre question. Pour des vestes, comparez mesures claires, entretien simple et prix inférieur. Pour des sacs, capacité, encombrement et fermeture documentée. Écrivez une raison par candidat. Sans raison, son inclusion peut relever de la nouveauté plutôt que d’une utilité décisionnelle.
+## Appliquer une règle de remplacement
+Un nouveau candidat entre s’il améliore un critère important sans violer un indispensable ou résout une inconnue majeure. Comparez-le d’abord au finaliste le plus faible. Notez la raison : mesures, compatibilité, pièce nécessaire ou différence de prix significative. Un effet visuel plus séduisant ne doit pas relancer la recherche si l’apparence avait peu de poids.
+## Uniformiser les fiches de preuves
+Chaque finaliste reçoit URL, date, option, correspondance d’image, prix actuel, dimensions requises, contenu, trois forces démontrées et trois inconnues. Identifiez les sources. Un commentaire de créateur ne joue pas le rôle d’une spécification liée à l’option. Gardez visible la différence de documentation. Il s’agit de décider, pas d’archiver des pages entières ou de favoriser le souvenir des meilleures photos.
+## Faire un tour rapide d’élimination
+Testez les exigences avec réussite, inconnu et échec. Retirez les échecs clairs et suspendez les inconnues importantes. Couleur et prix ne compensent pas l’inutilité. Un seul survivant mérite une vérification finale, pas une victoire automatique. Si aucun ne reste, le filtre a évité un achat forcé. Reprenez la recherche avec la condition manquante clairement formulée.
+## Comparer en une séance puis faire une pause
+Évaluez les trois fiches selon les mêmes règles. Notez résultat provisoire et donnée susceptible de le changer. Interrompez ensuite quelques heures ou une journée selon l’urgence. Au retour, relisez le besoin avant les images. Si seul l’enthousiasme visuel a disparu, il pesait peut-être plus lourd que les preuves.
+## Archiver la décision plutôt que tous les rejets
+Conservez usage, candidats, filtre, critère décisif, incertitude et résultat : choisir, vérifier ou aucun. Gardez assez de preuves pour reproduire le raisonnement sans tout collectionner. Rouvrez l’option avant d’agir. La limite protège l’attention, pas la qualité, le stock ou la livraison. Des faits nouveaux importants peuvent légitimement changer la conclusion.

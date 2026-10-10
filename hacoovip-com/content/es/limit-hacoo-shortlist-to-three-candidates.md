@@ -1,0 +1,16 @@
+## Entiende tres como límite de trabajo
+Muchos enlaces ayudan a descubrir, pero dificultan decidir con coherencia. Tres candidatos permiten una referencia, una alternativa creíble y un compromiso útil. Es una regla práctica, no una cifra científicamente óptima para todos. Pausa la búsqueda y define el mismo uso. Un cuarto candidato posterior debe sustituir a uno existente, no ampliar otra vez la lista.
+## Comprueba aptitud antes de elegir favoritos
+Pregunta si cumple el mismo uso, identifica la variante, permite verificar la medida o compatibilidad clave, respeta el presupuesto y está disponible para tu región. Marca apto, no apto o pendiente de pruebas. Una foto bonita no responde. El candidato incompleto puede quedar en espera, pero no ocupar uno de los tres puestos destinados a comparar opciones evaluables.
+## Elige diferencias que aporten información
+Evita tres fichas casi iguales salvo que esa pequeña diferencia sea la decisión. En chaquetas pueden contrastar medidas claras, mantenimiento sencillo y menor precio. En bolsos, capacidad, volumen y cierre mejor documentado. Escribe un motivo por candidato. Si no existe, puede haber entrado por novedad en lugar de utilidad para decidir.
+## Aplica una regla de sustitución
+Un nuevo candidato entra si mejora un criterio importante sin incumplir requisitos o resuelve una incógnita decisiva. Compáralo primero con el finalista más débil. Anota la razón: medidas, compatibilidad, componente necesario o diferencia de precio relevante. Una impresión estética no debe reiniciar la investigación si antes habías dado poca importancia al aspecto.
+## Normaliza las fichas de pruebas
+Cada finalista recibe URL, fecha, opción, coincidencia de imagen, precio actual, dimensiones necesarias, contenido, tres fortalezas respaldadas y tres dudas. Identifica las fuentes. Un comentario de creador no tiene el mismo papel que una especificación vinculada a la opción. Mantén visible la distinta información disponible. El objetivo es decidir, no archivar páginas enteras ni favorecer recuerdos de imágenes atractivas.
+## Realiza una ronda rápida de descarte
+Prueba requisitos con aprobado, desconocido y fallido. Retira fallos claros y pausa incógnitas importantes. Color o precio no compensan inutilidad. Si queda uno, merece revisión final, no victoria automática. Si no queda ninguno, el filtro evitó una compra forzada. Vuelve a buscar con la condición que falta claramente definida.
+## Compara en una sesión y después descansa
+Evalúa las tres fichas con las mismas reglas en una sesión. Escribe resultado provisional y dato que podría cambiarlo. Deja pasar unas horas o un día según la urgencia. Al volver, lee primero el objetivo y después mira imágenes. Si solo desapareció la emoción visual, quizá esta pesara más que la evidencia.
+## Archiva la decisión, no todos los descartes
+Guarda uso, candidatos, resultado del filtro, criterio decisivo, dudas y desenlace: elegir, revisar o ninguno. Conserva pruebas suficientes para reconstruir el razonamiento, sin coleccionar todo. Reabre la opción exacta antes de actuar. El límite protege la atención, no garantiza calidad, stock o entrega. Nuevos hechos relevantes pueden justificar una decisión distinta.
