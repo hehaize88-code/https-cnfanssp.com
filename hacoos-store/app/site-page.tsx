@@ -269,11 +269,11 @@ function HomePage({ locale }: { locale: Locale }) {
         <aside className="hero-aside">
           <span>{u.liveIndex}</span>
           <a className="hero-feature hero-feature-main" href={products[0].href} target="_blank" rel="nofollow sponsored noopener">
-            <img src={products[0].image} alt={u.productNames[products[0].id]} loading="lazy" decoding="async" fetchPriority="low" width={720} height={720} />
+            <img src={products[0].image} alt={u.productNames[products[0].id]} loading="eager" decoding="async" fetchPriority="high" width={720} height={720} />
             <em>01</em>
           </a>
           <a className="hero-feature hero-feature-small" href={products[3].href} target="_blank" rel="nofollow sponsored noopener">
-            <img src={products[3].image} alt={u.productNames[products[3].id]} loading="lazy" decoding="async" fetchPriority="low" width={720} height={720} />
+            <img src={products[3].image} alt={u.productNames[products[3].id]} loading="eager" decoding="async" width={720} height={720} />
             <em>02</em>
           </a>
           <div className="hero-stat"><b>08</b><small>{u.matchedFinds}</small></div>
