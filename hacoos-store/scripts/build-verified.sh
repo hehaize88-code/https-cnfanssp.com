@@ -18,6 +18,11 @@ if [[ ! -x "${vinext}" ]]; then
   exit 69
 fi
 
+# Cached output can retain a client manifest from before a component moved to
+# the server. Regenerate every publish artifact together on each build.
+echo "Removing previous generated build output..."
+rm -rf -- "${script_dir}/../dist"
+
 echo "Running bounded vinext build..."
 timeout \
   --signal=TERM \
