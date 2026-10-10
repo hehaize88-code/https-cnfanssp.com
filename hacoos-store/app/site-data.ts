@@ -1,3 +1,5 @@
+import { octoberContent } from "./october-content";
+import { refresh } from "./seo-refresh";
 export const locales = ["en", "de", "fr", "es", "it"] as const;
 export type Locale = (typeof locales)[number];
 export const localeNames: Record<Locale, string> = {
@@ -30,6 +32,9 @@ export const pageKeys = [
   "articles/hacoo-hoodie-tracksuit-links",
   "articles/hacoo-bag-links",
   "articles/hacoo-wrong-product-link",
+  "articles/hacoo-order-tracking",
+  "articles/hacoo-search-no-results",
+  "articles/hacoo-returns-refunds",
 ] as const;
 export type PageKey = (typeof pageKeys)[number];
 
@@ -43,85 +48,77 @@ export const products = [
     name: "AMIRI MA-1 Sneakers — 9 styles",
     category: "shoes",
     price: "$53.44",
-    sourcePrice: "¥388",
     id: "7638942248",
-    href: "https://www.cnfanssp.com/AllProducts/3842.html",
-    image: "https://www.cnfanssp.com/uploads/allimg/20251219/1-2512191533513J.webp",
+    href: "https://cnfanshp.com/AllProducts/3842.html",
+    image: "https://cnfanshp.com/uploads/allimg/20251219/1-2512191533513J.webp",
   },
   {
     name: "World T-shirt & Hoodie Set — 40+ styles",
     category: "sets",
     price: "$21.07",
-    sourcePrice: "¥153",
     id: "7656214053",
-    href: "https://www.cnfanssp.com/AllProducts/4643.html",
-    image: "https://www.cnfanssp.com/uploads/allimg/20260109/1-2601091G60V91.webp",
+    href: "https://cnfanshp.com/AllProducts/4643.html",
+    image: "https://cnfanshp.com/uploads/allimg/20260109/1-2601091G60V91.webp",
   },
   {
     name: "Celine Hoodie",
     category: "hoodies",
     price: "$10.88",
-    sourcePrice: "¥79",
     id: "7622957753",
-    href: "https://www.cnfanssp.com/AllProducts/2822.html",
-    image: "https://www.cnfanssp.com/uploads/allimg/20251202/1-2512021250461D.webp",
+    href: "https://cnfanshp.com/AllProducts/2822.html",
+    image: "https://cnfanshp.com/uploads/allimg/20251202/1-2512021250461D.webp",
   },
   {
     name: "Neverfull Tote Bag — 39 styles",
     category: "bags",
     price: "$39.26",
-    sourcePrice: "¥285",
     id: "7666359522",
-    href: "https://www.cnfanssp.com/AllProducts/5030.html",
-    image: "https://www.cnfanssp.com/uploads/allimg/20260116/1-26011615050CE.webp",
+    href: "https://cnfanshp.com/AllProducts/5030.html",
+    image: "https://cnfanshp.com/uploads/allimg/20260116/1-26011615050CE.webp",
   },
   {
     name: "Omerta 47 T-shirt",
     category: "t-shirts",
     price: "$9.50",
-    sourcePrice: "¥69",
     id: "7588924374",
-    href: "https://www.cnfanssp.com/AllProducts/882.html",
-    image: "https://www.cnfanssp.com/uploads/allimg/20251030/1-251030160U1b0.webp",
+    href: "https://cnfanshp.com/AllProducts/882.html",
+    image: "https://cnfanshp.com/uploads/allimg/20251030/1-251030160U1b0.webp",
   },
   {
     name: "6PM Hoodie Set",
     category: "hoodies",
     price: "$27.41",
-    sourcePrice: "¥199",
     id: "7572947321",
-    href: "https://www.cnfanssp.com/AllProducts/24.html",
-    image: "https://www.cnfanssp.com/uploads/allimg/20251016/1-251016161633357.jpg",
+    href: "https://cnfanshp.com/AllProducts/24.html",
+    image: "https://cnfanshp.com/uploads/allimg/20251016/1-251016161633357.jpg",
   },
   {
     name: "Trapstar Bag",
     category: "bags",
     price: "$13.64",
-    sourcePrice: "¥99",
     id: "7582900895",
-    href: "https://www.cnfanssp.com/AllProducts/525.html",
-    image: "https://www.cnfanssp.com/uploads/allimg/20251025/1-251025115303421.webp",
+    href: "https://cnfanshp.com/AllProducts/525.html",
+    image: "https://cnfanshp.com/uploads/allimg/20251025/1-251025115303421.webp",
   },
   {
     name: "Autry Shoes",
     category: "shoes",
     price: "$68.87",
-    sourcePrice: "¥500",
     id: "7645681448",
-    href: "https://www.cnfanssp.com/AllProducts/4276.html",
-    image: "https://www.cnfanssp.com/uploads/allimg/20251225/1-251225144612B9.gif",
+    href: "https://cnfanshp.com/AllProducts/4276.html",
+    image: "https://cnfanshp.com/uploads/allimg/20251225/1-251225144612B9.gif",
   },
 ] as const;
 
 export const categories = [
-  { key: "shoes", href: "https://www.cnfanssp.com/shoes/", count: "Shoes" },
-  { key: "hoodies", href: "https://www.cnfanssp.com/hoodies-sweaters/", count: "Sweatshirts" },
-  { key: "t-shirts", href: "https://www.cnfanssp.com/t-shirts/", count: "T-Shirts" },
-  { key: "jackets", href: "https://www.cnfanssp.com/jackets/", count: "Jackets" },
-  { key: "pants", href: "https://www.cnfanssp.com/pants-shorts/", count: "Pants / Shorts" },
-  { key: "headwear", href: "https://www.cnfanssp.com/headwear/", count: "Headwear" },
-  { key: "accessories", href: "https://www.cnfanssp.com/accessories/", count: "Accessories" },
-  { key: "jersey", href: "https://www.cnfanssp.com/jersey/", count: "Jersey" },
+  { key: "shoes", href: "https://cnfanshp.com/shoes/", count: "Shoes" },
+  { key: "hoodies", href: "https://cnfanshp.com/hoodies-sweaters/", count: "Sweatshirts" },
+  { key: "t-shirts", href: "https://cnfanshp.com/t-shirts/", count: "T-Shirts" },
+  { key: "jackets", href: "https://cnfanshp.com/jackets/", count: "Jackets" },
+  { key: "pants", href: "https://cnfanshp.com/pants-shorts/", count: "Pants / Shorts" },
+  { key: "headwear", href: "https://cnfanshp.com/headwear/", count: "Headwear" },
+  { key: "accessories", href: "https://cnfanshp.com/accessories/", count: "Accessories" },
+  { key: "jersey", href: "https://cnfanshp.com/jersey/", count: "Jersey" },
 ] as const;
 
 type Copy = {
@@ -176,6 +173,7 @@ export const copy: Record<Locale, Copy> = {
     viewAll: "View all checked finds",
     fieldNotes: "Field notes",
     pageLabels: {
+      ...Object.fromEntries(Object.entries(octoberContent.en).map(([key, item]) => [key, {title: item.title, intro: item.intro}])) as Pick<Copy["pageLabels"], keyof typeof octoberContent.en>,
       home: { title: "Hacoo Product Links & Spreadsheet 2026", intro: "Browse current Hacoo product links, verify product IDs and compare source images before opening a matching listing." },
       spreadsheet: { title: "Hacoo Product Link Spreadsheet: IDs & Route Checks", intro: "Use a searchable product-ID index to verify the current destination, first image, option and source price." },
       finds: { title: "Current Hacoo Product Link Checks", intro: "Source-matched routes with a current first image, product ID, source price and exact destination." },
@@ -302,6 +300,38 @@ for (const locale of ["de", "fr", "es", "it"] as const) {
       intro: intros[locale][key] ?? priorityLabel?.intro ?? englishLabels[key].intro,
     }];
   })) as Copy["pageLabels"];
+}
+
+// Apply complete locale-specific metadata after the existing locale labels are assembled.
+for (const locale of locales) {
+  const r = refresh[locale];
+  for (const [key, item] of Object.entries(octoberContent[locale])) {
+    copy[locale].pageLabels[key as PageKey] = {title: item.title, intro: item.intro};
+  }
+  Object.assign(copy[locale].pageLabels, {
+    shipping: {title: r.shippingTitle, intro: r.shippingIntro},
+    'qc-guide': {title: r.qcTitle, intro: r.qcIntro},
+    spreadsheet: {title: r.sheetTitle, intro: r.sheetIntro},
+    'articles/read-qc-photos': {title: r.qcArticleTitle, intro: r.qcArticleIntro},
+    'articles/hacoo-codes-product-id-guide': {title: r.codesTitle, intro: r.codesIntro},
+  });
+  const home = {
+    en: {title: 'Hacoo Spreadsheet & Product Links: IDs, QC and Shipping', intro: 'Find product IDs, compare listing options and read practical Hacoo guides for QC photos, delivery, tracking and returns.'},
+    de: {title: 'Hacoo Spreadsheet und Produktlinks: IDs, QC und Versand', intro: 'Produkt-IDs finden, Varianten vergleichen und Hacoo-Ratgeber zu QC-Fotos, Lieferung, Tracking und Rückgaben lesen.'},
+    fr: {title: 'Tableur et liens Hacoo : identifiants, QC et livraison', intro: 'Trouvez des identifiants, comparez les options et consultez les guides Hacoo sur photos QC, livraison, suivi et retours.'},
+    es: {title: 'Hoja y enlaces Hacoo: ID, QC y envíos', intro: 'Encuentra ID, compara opciones y consulta guías Hacoo de fotos QC, entrega, seguimiento y devoluciones.'},
+    it: {title: 'Foglio e link Hacoo: ID, QC e spedizioni', intro: 'Trova ID, confronta varianti e leggi le guide Hacoo su foto QC, consegna, tracking e resi.'},
+  }[locale];
+  copy[locale].pageLabels.home = home;
+  copy[locale].heroTitle = home.title;
+  copy[locale].heroText = home.intro;
+  copy[locale].badge = r.badge;
+  copy[locale].updated = r.updated;
+  copy[locale].sourceChecked = r.productNote;
+  copy[locale].findsText = r.catalogNote;
+  copy[locale].faq[4][1] = r.shippingAnswer;
+  copy[locale].faq[6] = [r.priceQuestion, r.priceAnswer];
+  copy[locale].nav.articles = {en:'Articles',de:'Artikel',fr:'Articles',es:'Artículos',it:'Articoli'}[locale];
 }
 
 export const pageMeta = Object.fromEntries(

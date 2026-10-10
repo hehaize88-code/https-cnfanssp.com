@@ -583,3 +583,17 @@ footer { padding-top: 44px; }
 }
 
 @media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; transition: none !important; } }
+
+/* Article navigation and focused research guidance, shared across all locales. */
+.catalog-search { width: 100%; }
+.catalog-disclosure { font-size: .78rem !important; line-height: 1.6 !important; max-width: 65ch; opacity: .78; margin-top: .8rem; }
+.article-toc { margin: 0 auto 3rem; max-width: 960px; padding: 1.5rem 2rem; border: 1px solid #d8dfd8; border-radius: 12px; background: #f4f7f1; }
+.article-toc h2 { margin: 0 0 1rem; font-size: 1.1rem; }
+.article-toc ol { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: .6rem 2rem; padding-left: 1.3rem; }
+.article-toc a { text-decoration: underline; text-underline-offset: 3px; overflow-wrap: anywhere; }
+.long-article section[id] { scroll-margin-top: 110px; }
+.next-steps > div { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 1rem; }
+.next-steps a { display: flex; align-items: center; justify-content: space-between; gap: 1rem; border: 1px solid #d8dfd8; border-radius: 10px; padding: 1.1rem; font-weight: 650; background: #f4f7f1; }
+.next-steps svg { flex-shrink: 0; width: 18px; }
+.page-guidance { margin-top: 0; }
+@media(max-width: 700px) { .article-toc { padding: 1rem; margin-left: 1rem; margin-right: 1rem; } .article-toc ol, .next-steps > div { grid-template-columns: 1fr; } }

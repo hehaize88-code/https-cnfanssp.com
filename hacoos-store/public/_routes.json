@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "include": [
+    "/articles",
+    "/articles/*",
+    "/de/articles",
+    "/de/articles/*",
+    "/fr/articles",
+    "/fr/articles/*",
+    "/es/articles",
+    "/es/articles/*",
+    "/it/articles",
+    "/it/articles/*"
+  ],
+  "exclude": []
+}

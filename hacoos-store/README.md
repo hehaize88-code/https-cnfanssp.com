@@ -112,4 +112,12 @@ The timeout defaults can be overridden for a controlled canary with `SITES_INSTA
 - [vinext Documentation](https://github.com/cloudflare/vinext)
 - [Drizzle D1 Guide](https://orm.drizzle.team/docs/get-started/d1-new)
 
-<!-- hacoos.store deployment checkpoint: 2026-09-17 priority guides -->
+<!-- hacoos.store deployment checkpoint: 2026-09-18 eight priority guides -->
+
+## October 2026 multilingual SEO update
+
+The English, German, French, Spanish and Italian editions share the same 15-article inventory. New guides cover order tracking, empty app searches and returns/refunds. Shipping, QC and Spreadsheet pages use dedicated content and topic links. Article bodies render on the server; only navigation and analytics need client hydration.
+
+After `npm run build`, run `python3 scripts/verify-seo.py` to check the 120-page export, reciprocal hreflang, canonical URLs, heading structure, internal links, article inventories and USD-only visible prices. Homepage previews are limited to four articles; the article directory retains all fifteen per language.
+
+The external catalog origin is `https://cnfanshp.com`; search submits `keywords` and `channelid=2`. Existing listing paths and image filenames are retained as reference records. The editorial revision date must not be represented as a new inventory or destination verification date.

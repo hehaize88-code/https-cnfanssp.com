@@ -1,3 +1,5 @@
+import { octoberArticles, type OctoberArticleKey } from "./october-content";
+import { refresh } from "./seo-refresh";
 import type { Locale } from "./site-data";
 import type { ArticleKey } from "./localized-content";
 import { haArticle } from "./ha-article-content";
@@ -10,7 +12,7 @@ export type Article = {
   takeaways: string[];
 };
 
-type LegacyArticleKey = Exclude<ArticleKey, PriorityArticleKey | "articles/spreadsheet-finds-categories-start">;
+type LegacyArticleKey = Exclude<ArticleKey, OctoberArticleKey | PriorityArticleKey | "articles/spreadsheet-finds-categories-start">;
 
 const en: Record<LegacyArticleKey, Article> = {
   "articles/find-product-links": {
@@ -338,9 +340,15 @@ function translatedArticles(locale: Exclude<Locale, "en">): Record<LegacyArticle
 }
 
 export const articles: Record<Locale, Record<ArticleKey, Article>> = {
-  en: {...en, "articles/spreadsheet-finds-categories-start": haArticle.en, ...priorityArticles.en},
-  de: {...translatedArticles("de"), "articles/spreadsheet-finds-categories-start": haArticle.de, ...priorityArticles.de},
-  fr: {...translatedArticles("fr"), "articles/spreadsheet-finds-categories-start": haArticle.fr, ...priorityArticles.fr},
-  es: {...translatedArticles("es"), "articles/spreadsheet-finds-categories-start": haArticle.es, ...priorityArticles.es},
-  it: {...translatedArticles("it"), "articles/spreadsheet-finds-categories-start": haArticle.it, ...priorityArticles.it},
+  en: {...en, "articles/spreadsheet-finds-categories-start": haArticle.en, ...priorityArticles.en, ...octoberArticles.en},
+  de: {...translatedArticles("de"), "articles/spreadsheet-finds-categories-start": haArticle.de, ...priorityArticles.de, ...octoberArticles.de},
+  fr: {...translatedArticles("fr"), "articles/spreadsheet-finds-categories-start": haArticle.fr, ...priorityArticles.fr, ...octoberArticles.fr},
+  es: {...translatedArticles("es"), "articles/spreadsheet-finds-categories-start": haArticle.es, ...priorityArticles.es, ...octoberArticles.es},
+  it: {...translatedArticles("it"), "articles/spreadsheet-finds-categories-start": haArticle.it, ...priorityArticles.it, ...octoberArticles.it},
 };
+
+for (const locale of Object.keys(refresh) as Locale[]) {
+  for (const [key, [heading, ...paragraphs]] of Object.entries(refresh[locale].articleAdditions)) {
+    articles[locale][key as ArticleKey].sections.push({ heading, paragraphs });
+  }
+}

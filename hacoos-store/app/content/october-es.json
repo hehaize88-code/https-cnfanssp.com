@@ -1,0 +1,158 @@
+{
+  "articles/hacoo-order-tracking": {
+    "title": "Seguimiento Hacoo: estados, retrasos y próximos pasos",
+    "intro": "Encuentra el número de seguimiento correcto, interpreta los estados de envío y prepara pruebas útiles cuando un paquete Hacoo deja de avanzar.",
+    "sections": [
+      [
+        "Empieza por el pedido, no por un enlace de producto",
+        "Para seguir un pedido Hacoo, abre sus detalles en la cuenta utilizada para comprar. Busca la información de envío, el transportista y el número de seguimiento asociado. El ID de producto identifica una ficha y no localiza un paquete. El número de pedido identifica la compra y también puede ser distinto del código que acepta el transportista. Guarda cada valor en un campo separado para no mezclar tres identificadores en una solicitud de ayuda. Esta guía independiente no puede ver pedidos privados ni ofrece seguimiento en directo.",
+        "Antes de interpretar un retraso, anota fecha de compra, fecha de expedición si aparece, país de destino e intervalo de entrega mostrado para tu pedido. Guarda una captura del último estado con su hora. Si compraste varios artículos, comprueba si comparten envío. Un artículo ausente puede pertenecer a otro paquete, por lo que la primera entrega no necesariamente completa toda la compra. Utiliza los detalles del pedido para relacionar correctamente artículos y números antes de comunicar una pérdida."
+      ],
+      [
+        "Lee cada actualización como un evento, no como una promesa",
+        "El seguimiento suele describir eventos que ya se han registrado. Una etiqueta creada puede indicar que existen datos de envío sin confirmar que el transportista tenga físicamente el paquete. Un registro de aceptación aporta una prueba más sólida de entrega al transportista. En tránsito describe movimiento por una red, pero no significa necesariamente que el paquete esté en tu país. Las palabras varían según transportista, idioma e interfaz. Lee todo el historial en lugar de convertir una traducción del encabezado en una definición universal.",
+        "Términos como fulfilment hub, centro de clasificación o instalación de procesamiento normalmente describen una etapa de manipulación. Por sí solos no establecen país, fecha exacta de entrega ni un problema. Comprueba ubicación, hora y siguiente evento. Si no aparece ubicación, conserva esa incertidumbre en tus notas. Los registros repetidos en una instalación pueden reflejar actividad normal o una incidencia; los mensajes adicionales ayudan a distinguirlos. No inventes un plazo por el nombre de un centro ni cuentes cada repetición como otro día de envío."
+      ],
+      [
+        "Separa preparación, transporte y reparto local",
+        "Una cronología útil distingue preparación, entrega al transportista, desplazamiento entre instalaciones y reparto final. Un retraso de preparación requiere preguntar por el pedido; un intento de entrega requiere revisar dirección o recogida. Describir ambos como seguimiento bloqueado dificulta la asistencia. Escribe la etapa actual y la prueba que la confirma al principio del registro. Si no hay aceptación del transportista, explica esa ausencia en vez de afirmar que el paquete se ha perdido durante el transporte.",
+        "Las páginas públicas de Hacoo ofrecen estimaciones generales con intervalos que no son idénticos entre páginas y destinos. Usa el plazo de tu pedido como referencia práctica; una guía general no garantiza una fecha de llegada. Distingue días naturales y laborables. Fines de semana, festivos, relevos internacionales o registros ausentes pueden hacer que el historial visible difiera del trayecto real. No sumes estimaciones de etapas que podrían solaparse para crear un total aparentemente preciso."
+      ],
+      [
+        "Cuando el seguimiento Hacoo no se actualiza",
+        "Compara primero la fecha del último evento real con el intervalo de entrega, en lugar de comparar solamente hoy con la fecha de compra. Actualiza la vista del pedido y revisa el transportista que aparece allí. Copia cuidadosamente el código, incluidas letras y ceros iniciales. Si se muestra otro número para el reparto local, anota cómo se relaciona con el original. Que un código falle en el sistema de otro transportista no demuestra que el paquete no exista.",
+        "Después identifica la pregunta útil. Sin expedición confirmada, pregunta si la preparación terminó. Si un transportista aceptó el paquete pero no hay novedades, pregunta quién lo tiene y si puede abrirse una investigación. Si venció el intervalo estimado, incluye ese intervalo y el último evento. No existe una regla universal fiable que convierta cualquier pausa de seguimiento en pérdida después de un número fijo de días. Evita solicitudes idénticas repetidas y conserva un único historial con fechas y respuestas."
+      ],
+      [
+        "Resuelve las incidencias con pruebas adecuadas",
+        "Un intento de entrega debe llevarte a comprobar instrucciones, dirección y cualquier aviso de recogida. Compara la dirección del pedido con el destino real, incluidos piso y código postal. Usa el contacto que figura en el pedido para preguntar por otro intento o por la recogida. Cambiar la dirección del perfil no modifica automáticamente un envío existente. Si hay un error, explícalo pronto y pregunta qué puede corregirse en la fase actual.",
+        "Si aparece entregado pero no encuentras el paquete, revisa buzón, lugar de depósito acordado y si lo recibió alguien de casa o un vecino. Solicita la prueba de entrega del número correspondiente y guarda juntas las respuestas. Un estado de devolución al remitente exige otra consulta: averigua el motivo registrado y pregunta si ese pedido permite reenvío o reembolso. Ninguna de esas soluciones debe prometerse desde un artículo independiente. Conserva el estado original aunque cambie más adelante."
+      ],
+      [
+        "Prepara una solicitud breve que permita actuar",
+        "Un mensaje útil describe un pedido, un problema y un siguiente paso solicitado. Incluye número de pedido, envío afectado, último evento y fecha, país, intervalo anunciado y comprobaciones realizadas. Adjunta una captura clara en vez de muchos fragmentos recortados. Si el transportista abrió un expediente, añade su referencia. Comparte dirección completa y datos de pago solo mediante el canal autenticado cuando sean necesarios, nunca en comentarios públicos o publicaciones sociales.",
+        "Por ejemplo, explica que el transportista registró la aceptación en una fecha concreta, que no hay eventos posteriores y que ha terminado el intervalo previsto. Pregunta quién custodia el paquete y qué investigación puede iniciarse. Es una plantilla para ordenar hechos, no una afirmación sobre tu envío. Añade las pruebas solicitadas al expediente existente cuando sea posible. Anota fecha de respuesta y siguiente acción prometida para que el próximo mensaje se refiera a un punto concreto todavía pendiente."
+      ],
+      [
+        "Distingue los problemas del paquete de los del producto",
+        "El seguimiento informa del proceso de entrega, no de si dentro están la talla, el color y la cantidad correctos. Tras recibirlo, compara el artículo con la opción exacta guardada al comprar. Conserva el embalaje e identifica a qué pedido pertenece cada pieza. Fotografía cualquier diferencia antes de usar, lavar o modificar el producto. Una entrega confirmada y un artículo incorrecto pueden ser ciertos a la vez; las pruebas necesarias para cada problema son distintas.",
+        "En una entrega parcial, compara la lista del pedido con todos los envíos antes de comunicar una unidad ausente. Si hay daños de transporte visibles, documenta embalaje exterior y artículo cuando sea seguro. Para un defecto de producto, toma una vista general y un detalle que muestre su ubicación. Centra la solicitud en hechos demostrables. Las guías de fotos QC y devoluciones explican cómo organizar estas pruebas sin transformar un incidente de seguimiento en una afirmación de calidad sin fundamento."
+      ],
+      [
+        "Mantén un registro de seguimiento reutilizable",
+        "Un registro compacto resulta más útil que abrir la misma página cada pocos minutos. Guarda juntos pedido, números de envío, transportista, último evento, intervalo estimado y expediente de ayuda. Añade una línea solo cuando cambie un evento o llegue una respuesta. Así distingues una actualización real del mismo mensaje mostrado otra vez. También permite que otra persona de casa comprenda lo comprobado sin abrir varias cuentas ni crear una conversación duplicada.",
+        "Antes del siguiente paso confirma tres puntos: qué envío está afectado, qué dice realmente la última prueba y qué acción es posible ahora. Sin incidencia, toma como referencia el intervalo mostrado; si se supera, solicita una comprobación dirigida; ante una petición de dirección o recogida, responde pronto. Son criterios de decisión, no garantías de entrega. Si todavía investigas un artículo y no has comprado, empieza por la hoja y las guías de enlaces. Un código de producto no es un código de seguimiento."
+      ]
+    ],
+    "takeaways": [
+      "Utiliza números de envío, no ID de producto.",
+      "Compara el último evento con el plazo del pedido.",
+      "Describe la fase actual con pruebas concisas.",
+      "Separa entrega, estado del artículo y reembolso."
+    ]
+  },
+  "articles/hacoo-search-no-results": {
+    "title": "Hacoo no muestra productos: búsqueda sin resultados",
+    "intro": "Revisa consulta, aplicación, región e ID para diagnosticar búsquedas vacías, productos que no aparecen y enlaces Hacoo antiguos.",
+    "sections": [
+      [
+        "Identifica qué búsqueda está fallando",
+        "Si Hacoo no muestra resultados, empieza por identificar dónde buscas: aplicación oficial, página web, hoja independiente o catálogo de productos enlazado. Son sistemas distintos y no necesariamente aceptan los mismos identificadores. Un código copiado de un catálogo no tiene por qué funcionar en otro. La búsqueda de este sitio abre un catálogo externo; no es la búsqueda oficial de la aplicación Hacoo y no puede inspeccionar tu cuenta. Anota dónde escribiste la consulta antes de explicar el resultado.",
+        "Describe el fallo con precisión. Una lista vacía, un error, un enlace que abre el inicio y un producto sin talla seleccionable son problemas diferentes. Guarda la consulta exacta, fecha, dispositivo, versión de la aplicación si está disponible y país real de entrega. Captura campo y resultado evitando datos privados. Este registro permite comparar intentos. Sin él, cambiar de consulta o catálogo puede parecer una reparación de la aplicación cuando únicamente se ha realizado otra búsqueda."
+      ],
+      [
+        "Prueba una descripción sencilla",
+        "Empieza con una descripción corta en vez de copiar un texto completo de redes sociales. Un sustantivo y un rasgo distintivo suelen ser más fáciles de interpretar: sudadera con cremallera, bolso de lona o zapatilla baja. Elimina emojis, etiquetas, frases promocionales y palabras irrelevantes. Conserva la consulta original para compararla con la simplificada. Corrige una sola variante ortográfica cada vez. Primero interesa saber si la búsqueda funciona en general, antes de investigar la ausencia de un artículo concreto.",
+        "Si una consulta sencilla devuelve productos relevantes, añade otro rasgo significativo, como color o construcción. Si desaparecen los resultados, esa palabra puede restringir demasiado o no aparecer en los títulos. Eso no demuestra falta de disponibilidad. A la inversa, muchos resultados no demuestran que hayas recuperado el producto original. Cada resultado es un candidato hasta que coincidan identificador, imagen y opciones. No uses expresiones de cupones como nombres de producto: código de descuento, ID y número de seguimiento cumplen funciones distintas."
+      ],
+      [
+        "Comprueba los códigos y su catálogo de origen",
+        "Un identificador es especialmente útil cuando la página lo etiqueta expresamente como ID de artículo o producto. Cópialo exactamente, con ceros iniciales y sin espacios añadidos por mensajería. Una cifra en la URL puede ser un número interno de página. Un archivo de imagen, una referencia de estilo o un número de pedido no lo sustituyen. Anota el catálogo de origen junto al código para que una búsqueda posterior use el sistema adecuado.",
+        "Prueba el enlace directo actual si lo tienes. Si abre, compara el identificador visible con el registro guardado. Si no, busca una descripción neutral y compara candidatos manualmente. No declares la primera imagen parecida como sustituto exacto. Dos bolsos pueden tener una silueta similar y distintas dimensiones, cierres o correas incluidas. Una recuperación exacta necesita suficientes campos coincidentes. Si faltan pruebas, etiqueta el resultado como alternativa y deja sin resolver la asociación original."
+      ],
+      [
+        "Confirma región real y destino de entrega",
+        "Los ajustes regionales y las condiciones de entrega pueden influir en lo visible, pero un resultado ausente no establece por sí solo la causa. Comprueba que cuenta y destino reflejan tu situación real. Lee cualquier aviso explícito de disponibilidad en la ficha. Un producto de una captura compartida quizá ya no se ofrezca para el mismo país u opción. Registra lo que dice la interfaz en vez de atribuir toda búsqueda vacía a una restricción nacional.",
+        "No utilices direcciones falsas, cuentas prestadas ni trucos para ocultar ubicación con el fin de forzar un catálogo. Ver un artículo con ajustes artificiales no demuestra que se pueda entregar y puede introducir problemas de pago. Si el destino real no está admitido, detén ese recorrido de compra y pregunta a la plataforma. Esta guía sirve para diagnosticar diferencias; no promete que cambiar ajustes desbloquee productos ni restaure un catálogo antiguo."
+      ],
+      [
+        "Descarta problemas locales de la aplicación o el navegador",
+        "Comprueba si el resto de la aplicación carga y si funciona otra consulta normal. Si la interfaz no responde, revisa conexión, cierra y abre la aplicación y busca actualizaciones en la tienda oficial. En un navegador, abre de nuevo el destino actual en lugar de depender de una pestaña antigua. Cambia una variable cada vez y registra el resultado. Así separas un fallo temporal de conexión de un producto realmente ausente.",
+        "No instales paquetes de aplicación no oficiales ni introduzcas credenciales en páginas que prometen reparar la búsqueda. Antes de cerrar sesión o borrar datos, asegúrate de poder recuperar la cuenta por su método habitual. No borres capturas útiles de pedidos durante las pruebas. Si fallan varias consultas independientes en una aplicación actualizada, documenta el patrón para soporte. Los testimonios individuales aportan pistas, pero no prueban una caída general ni una causa confirmada para tu cuenta."
+      ],
+      [
+        "Recupera un artículo desde un enlace o una captura antigua",
+        "Los enlaces antiguos y las capturas conservan pruebas distintas. Una URL puede guardar ruta o identificador; una imagen puede mostrar estilo, color seleccionado, medidas o nombre de opción. Escribe esas pistas antes de buscar. Sigue la ruta original y anota el destino final. Una redirección al inicio es una ruta de producto fallida, no una coincidencia válida. Si aparece otro artículo, deja de usar esa URL como prueba del producto inicial.",
+        "Crea una lista pequeña y compara un candidato cada vez. Revisa primera imagen, título, identificador, opción, dimensiones y contenido incluido. El precio puede señalar una discrepancia, pero no demostrar identidad. Guarda los campos coincidentes y los aún desconocidos. Si ningún candidato cumple las pistas importantes, conserva el registro antiguo como no resuelto en vez de publicar un reemplazo seguro. La guía de recuperación de enlaces profundiza en este proceso y la hoja ofrece un punto estructurado para comparar fichas actuales."
+      ],
+      [
+        "Reconoce cuándo buscar no soluciona la disponibilidad",
+        "Una búsqueda localiza información, pero no restaura una ficha retirada ni una opción agotada. Si el producto abre pero no permite elegir la talla necesaria, el problema es disponibilidad de la variante, no una búsqueda vacía. Respeta los avisos explícitos de retirada o limitación de destino. Cambiar constantemente de palabras no convierte una opción no disponible en comprable. Registra el estado y decide entre esperar información oficial o comparar una alternativa claramente identificada.",
+        "Antes de elegir una alternativa, vuelve a definir los requisitos. En ropa pueden ser medidas reales, descripción del tejido y piezas del conjunto; en bolsos, dimensiones y cierre; en calzado, sistema de tallas e información de plantilla. Compara esos campos, no solo la imagen publicitaria más parecida. Mantén las alternativas bajo sus propios ID. Así una guía no cambia silenciosamente el significado de una recomendación antigua y el lector puede decidir con pruebas actuales."
+      ],
+      [
+        "Envía un informe reproducible y conserva el resultado",
+        "Un informe útil incluye consulta exacta, lugar donde se introdujo, versión de aplicación o navegador, destino real, hora de prueba y resultado visible. Explica si funcionó otra búsqueda sencilla y si el enlace directo sigue abriendo. Adjunta una captura del fallo y otra solo cuando aporte un hecho diferente necesario. No hacen falta contraseñas, datos de pago ni todo el historial privado para explicar un problema de búsqueda.",
+        "Después de una respuesta o de que aparentemente vuelva a funcionar, repite el mismo ensayo original antes de considerar resuelto el problema. Verifica después identidad y opción: una lista que funciona es solo el comienzo de la investigación. Guarda la ruta actual con su fecha real de comprobación. Consulta la guía de ID para códigos, la de enlaces rotos para redirecciones y las de QC y tallas antes de comprar. Esta secuencia convierte intentos al azar en un registro que otra persona puede entender y repetir."
+      ]
+    ],
+    "takeaways": [
+      "Identifica la aplicación o catálogo utilizado.",
+      "Simplifica y verifica después ID y opción.",
+      "Usa destino real y actualizaciones oficiales.",
+      "Distingue falta de disponibilidad y error de búsqueda."
+    ]
+  },
+  "articles/hacoo-returns-refunds": {
+    "title": "Devoluciones y reembolsos Hacoo: solicitud y pruebas",
+    "intro": "Prepara fotos y datos del pedido, sigue las instrucciones de devolución y distingue una solicitud aceptada del dinero realmente abonado.",
+    "sections": [
+      [
+        "Empieza por la política de tu pedido",
+        "Para una devolución o reembolso Hacoo, abre el pedido afectado y revisa las instrucciones actuales de posventa. La política pública describe un periodo general de quince días desde la recepción para la mayoría de productos elegibles, con excepciones por categoría. Es un punto de partida publicado, no una garantía para todos los artículos y situaciones. Guarda las condiciones mostradas para tu compra y la fecha de recepción. Esta guía independiente no decide elegibilidad, emite etiquetas ni procesa dinero.",
+        "Actúa pronto cuando detectes un problema. Separa fecha de entrega y fecha de primera inspección o uso; retrasar tu propia comprobación no modifica necesariamente el plazo indicado. Si se discute la entrega o el paquete no ha llegado, explica esa situación en vez de seleccionar un motivo incorrecto de devolución. Si distintas páginas públicas usan palabras diferentes, pide confirmación escrita del proceso para tu pedido. Guarda esa respuesta antes de enviar nada."
+      ],
+      [
+        "Describe el problema mediante hechos observables",
+        "Elige un motivo que corresponda a lo ocurrido: artículo equivocado, conjunto incompleto, daño visible, medida incorrecta, problema de entrega o cambio de opinión. Cada caso necesita pruebas distintas y puede recibir un tratamiento diferente. Resume la discrepancia en una frase antes de adjuntar fotos. Por ejemplo, indica color comprado y recibido, o medida anunciada y medida tomada con el mismo método. Evita decir simplemente mala calidad cuando puedes mostrar un defecto específico.",
+        "Revisa la opción guardada al pagar. Una ficha puede contener varias versiones o mostrar un conjunto mientras la opción seleccionada incluye una sola pieza. Compara confirmación, nombre de variante y descripción, no solo tus recuerdos. Si elegiste algo distinto de lo que pretendías, explícalo honestamente. Un relato preciso distingue cumplimiento, estado, información de la ficha y cambio de preferencias sin convertir incertidumbre en una acusación sin pruebas."
+      ],
+      [
+        "Fotografía identidad, contexto y detalle",
+        "Prepara un conjunto pequeño con tres niveles: vista completa para identificar el artículo, vista intermedia para localizar el problema y primer plano claro de la discrepancia. Incluye etiqueta o código relevante si conecta la fotografía con el pedido. Para una talla, muestra el inicio de la cinta y toda la medida con el artículo plano. Usa cuando sea posible el método del anuncio. La perspectiva o un tejido estirado pueden volver poco fiable la comparación.",
+        "Conserva los originales aunque hagas una copia anotada. Evita filtros que alteren colores u oculten detalles. Si el paquete llegó dañado, registra exterior y etiqueta cuando sea seguro y relaciona el artículo con ese envío. Mantén embalaje, etiquetas y accesorios mientras siga abierto el expediente. No publiques tu dirección completa en imágenes. Envía datos necesarios por el canal autenticado y utiliza copias ocultando información personal en cualquier conversación pública."
+      ],
+      [
+        "Presenta una solicitud completa y guarda su referencia",
+        "Utiliza el acceso de posventa que aparece dentro del pedido. Indica número, artículo y opción afectados, fecha de entrega, motivo breve y fotografías. Si varias piezas tienen problemas distintos, identifica cada una sin presentar toda la compra como defectuosa. Expresa la solución solicitada y deja que soporte confirme las opciones disponibles. Guarda texto enviado, referencia y hora para que una futura consulta se refiera al mismo expediente.",
+        "No crees versiones contradictorias en conversaciones separadas. Añade pruebas al caso existente cuando sea posible. Si hay límite de archivos, prioriza imágenes de identidad y problema e indica que dispones de otros originales. Un acuse de recibo no equivale a aprobación. Lee si la respuesta pide pruebas, propone una solución o da instrucciones de devolución. Cada caso representa un siguiente paso diferente y debe registrarse por separado."
+      ],
+      [
+        "Espera instrucciones confirmadas antes de devolver",
+        "No envíes el artículo a una dirección de un blog, de la etiqueta de origen o de una captura antigua de soporte. Solicita destino autorizado y método para tu pedido. La política pública admite tratamientos diferentes según el caso, con devolución en unos y conservación del artículo en otros. La experiencia de otro comprador no determina tus instrucciones. Guarda autorización escrita, dirección, etiqueta si la proporcionan y cualquier plazo.",
+        "Antes de embalar, comprueba contenido solicitado, accesorios originales y condiciones de estado. Fotografía artículo y paquete para registrar lo enviado. Aclara quién paga el transporte, si se facilita etiqueta y qué seguimiento debes conservar. La palabra gratis no elimina automáticamente todas las condiciones ni cubre necesariamente un método que elijas por tu cuenta. Sigue el procedimiento aprobado y guarda recibo, número y fecha de entrega al transportista. Si falta información, pregunta antes de enviarlo."
+      ],
+      [
+        "Distingue revisión, aprobación y abono",
+        "Una solicitud puede pasar por presentación, revisión, decisión, posible comprobación de devolución, inicio del reembolso y liquidación del pago. Registra la fase que soporte haya confirmado realmente. En revisión no significa que se haya enviado dinero. Un reembolso iniciado tampoco implica que el abono ya aparezca en el banco. Separar estas etapas evita consultas repetidas basadas en una fecha de inicio incorrecta.",
+        "La política pública publica estimaciones de procesamiento, pero festivos, método de pago y requisitos del caso pueden alterar el plazo real. Pregunta desde qué fecha se cuenta la estimación de tu expediente y si son días laborables. Conserva importe aprobado, moneda y referencia. Compara con la transacción original en lugar de asumir un error por una moneda mostrada de otra forma. Si falta el abono después del plazo indicado, contacta con soporte con fecha y referencia y, si te lo aconsejan, con el proveedor de pago."
+      ],
+      [
+        "Pregunta por el paso concreto que sigue pendiente",
+        "Una consulta útil separa lo completado de lo no resuelto. Tras enviar pruebas, pregunta si falta algo para revisar. Tras entregarse la devolución, adjunta su seguimiento y pregunta si se registró la recepción. Tras iniciarse el reembolso, pide referencia y periodo aplicable. No reinicies toda la historia cuando puede verificarse una sola etapa. Ordena respuestas por fecha para mantener un historial comprensible.",
+        "Si rechazan la solicitud, compara el motivo con las condiciones del pedido y las pruebas. Completa una foto ausente o corrige una referencia equivocada de forma factual. No alteres imágenes ni afirmes que un artículo usado no se utilizó. Si la respuesta no aborda el problema documentado, solicita una revisión indicando la discrepancia exacta. Esta guía explica un flujo de pruebas, no una resolución legal ni una garantía de éxito al reclamar. Conserva la decisión final por escrito."
+      ],
+      [
+        "Reduce la incertidumbre antes de volver a comprar",
+        "Un buen registro de devolución comienza antes de pagar. Guarda ID actual, opción, precio, tabla de tallas, descripción y condiciones visibles. En ropa, compara medidas con una prenda propia; en conjuntos, anota cada pieza incluida. Para compras sensibles a fechas, conserva estimación y destino real. Estas pruebas facilitan explicar diferencias y pueden evitar una compra inadecuada. Un enlace comprobado no sustituye esas decisiones.",
+        "Al cerrar el caso, confirma el resultado práctico: el artículo se conservó o devolvió según instrucciones, el importe acordado llegó a la cuenta y no queda ninguna acción pendiente. Guarda las pruebas esenciales hasta entonces. Para paquetes ausentes empieza por seguimiento; para defectos visibles usa la checklist de fotos QC. Cada guía apoya una fase distinta. Seguir el proceso del pedido con un registro factual y breve ayuda más que copiar la historia de otro comprador o suponer un resultado universal."
+      ]
+    ],
+    "takeaways": [
+      "Comprueba la política actual y actúa pronto.",
+      "Documenta identidad, problema y medidas.",
+      "Devuelve solo siguiendo instrucciones autorizadas.",
+      "Separa recepción, aprobación y dinero abonado."
+    ]
+  }
+}
