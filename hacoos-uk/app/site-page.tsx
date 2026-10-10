@@ -1,5 +1,3 @@
-"use client";
-
 import {
   ArrowRight,
   ArrowUpRight,
@@ -15,28 +13,24 @@ import {
   ShieldCheck,
   Truck,
 } from "lucide-react";
-import { useEffect, useState } from "react";
-import { NativeSelect, NativeSelectOption } from "@/components/ui/native-select";
+import { LanguageSelect, SiteAnalytics } from "./site-interactions";
+import { editorial } from "./editorial-copy";
 import {
   categories,
+  locales,
+  localeNames,
   copy,
-  englishOnlyArticleKeys,
   products,
   routeFor,
   type Locale,
   type PageKey,
 } from "./site-data";
-import { articles } from "./article-content";
-import { articleExpansions } from "./article-expansions";
-import { priorityArticleKeys } from "./priority-articles";
+import { articles, articleKeys } from "./article-content";
 import {
-  evidenceFacts,
   pageChecklists,
   pageExplanations,
-  researchBasis,
   ui,
   type ArticleKey,
-  type EvidenceFact,
 } from "./localized-content";
 
 const navKeys: PageKey[] = [
@@ -49,14 +43,6 @@ const navKeys: PageKey[] = [
   "articles",
 ];
 
-const articleKeys: PageKey[] = [
-  "articles/find-product-links",
-  "articles/read-qc-photos",
-  "articles/size-before-you-buy",
-  "articles/hacoo-uk-pre-order-readiness-sheet",
-  ...priorityArticleKeys,
-];
-
 const detailIcons: Partial<Record<PageKey, typeof ShieldCheck>> = {
   spreadsheet: Search,
   finds: PackageCheck,
@@ -67,63 +53,6 @@ const detailIcons: Partial<Record<PageKey, typeof ShieldCheck>> = {
   articles: BookOpen,
   faq: CircleAlert,
   methodology: ShieldCheck,
-};
-
-const englishPageEvidence: Partial<Record<PageKey, EvidenceFact[]>> = {
-  spreadsheet: [
-    { value: "5 fields", label: "identity record", note: "Title, first image, option, source price and source listing ID are checked together." },
-    { value: "1 route", label: "per source listing ID", note: "Duplicate and expired routes belong in the update record rather than the current index." },
-    { value: "dated", label: "destination check", note: "A route is a time-stamped observation, not a permanent availability promise." },
-    { value: "external", label: "catalogue destination", note: "The indexed destinations are not official Hacoo product URLs." },
-  ],
-  finds: [
-    { value: "8 routes", label: "external listings checked", note: "The current index contains eight independently matched catalogue destinations." },
-    { value: "8 / 8", label: "first-image matches", note: "Each card image matched the destination's current first social-preview image on 28 August 2026." },
-    { value: "HTTP 200", label: "destination response", note: "All eight final destinations loaded successfully at the check date." },
-    { value: "0", label: "official Hacoo product URLs", note: "Every product card opens an external catalogue and is labelled accordingly." },
-  ],
-  categories: [
-    { value: "8", label: "external category routes", note: "Each route opens a distinct catalogue category without changing its existing target." },
-    { value: "1 intent", label: "per category", note: "Shoes, clothing, bags and accessories require different identity fields." },
-    { value: "ID + image", label: "minimum identity pair", note: "Category context alone is not enough to identify a listing." },
-    { value: "current", label: "destination evidence", note: "A category label does not guarantee stock, quality or delivery." },
-  ],
-  "qc-guide": [
-    { value: "1st", label: "confirm identity", note: "Match source listing ID, colour and variant before judging construction." },
-    { value: "3 views", label: "photo distance", note: "Use full-item, detail and ruler views to separate scale from defects." },
-    { value: "ruler", label: "measurement evidence", note: "Measured photos are more useful than visual size estimates." },
-    { value: "no", label: "authenticity claim", note: "A first-image match or review score does not prove authenticity or quality." },
-  ],
-  shipping: [
-    { value: "15–25 days", label: "official UK estimate", note: "Hacoo's shipping page lists this range for the United Kingdom." },
-    { value: "3 stages", label: "delivery record", note: "Track preparation, international transit and final-mile delivery separately." },
-    { value: "15 days", label: "general return window", note: "The detailed help guidance starts the general window after receipt and lists exclusions." },
-    { value: "no exchange", label: "current help guidance", note: "The cited help page says exchanges are not currently supported." },
-  ],
-  guide: [
-    { value: "UK", label: "region and address first", note: "Visible catalogue and delivery coverage can depend on the actual region." },
-    { value: "exact", label: "selected option saved", note: "Record colour, size, measurements and source listing ID together." },
-    { value: "UK / EU", label: "size comparison", note: "Use the seller's measurements and a garment or shoe that already fits." },
-    { value: "dated", label: "evidence screenshot", note: "Keep the chosen option, price, route and check date in one record." },
-  ],
-  faq: [
-    { value: "3 types", label: "evidence separated", note: "Official policy, independent route observations and public review themes are labelled separately." },
-    { value: "UK", label: "question scope", note: "Region, address, delivery and returns answers are written for United Kingdom users." },
-    { value: "plain", label: "limits stated", note: "A working link does not guarantee stock, quality or delivery." },
-    { value: "unknown", label: "remains unknown", note: "We do not turn missing official information into a confident claim." },
-  ],
-  articles: [
-    { value: "3", label: "decision-stage guides", note: "External routes, review photos and UK/EU sizing each own a distinct primary intent." },
-    { value: "1", label: "primary intent per guide", note: "Supporting questions are included without making every article target the same keyword." },
-    { value: "1,200–1,800", label: "English words per article", note: "Long-form pages keep useful depth without padding with repeated fact blocks." },
-    { value: "28 Aug 2026", label: "research check", note: "Platform facts and destination observations are date-labelled." },
-  ],
-  methodology: [
-    { value: "4", label: "source classes", note: "Official policy, app stores, public reviews and independent route checks are kept separate." },
-    { value: "28 Aug 2026", label: "current check date", note: "Every named source and route observation carries the same visible review date." },
-    { value: "8 / 8", label: "first-image comparisons", note: "Card images were compared with destination social-preview images." },
-    { value: "200 + identity", label: "live-route rule", note: "A successful response is required, but matching identity fields are required too." },
-  ],
 };
 
 function Logo({ locale }: { locale: Locale }) {
@@ -139,10 +68,12 @@ function SearchDesk({ locale, compact = false }: { locale: Locale; compact?: boo
   return (
     <form
       className={compact ? "search-desk compact" : "search-desk"}
-      action="https://www.cnfanssp.com/search.html"
+      action="https://www.cnfanshp.com/search.html"
+      data-track="search_redirect"
+      data-placement={compact ? "index" : "home"}
       method="get"
       target="_blank"
-      rel="nofollow"
+      rel="nofollow noopener"
     >
       <Search aria-hidden="true" />
       <label className="sr-only" htmlFor={`keywords-${compact ? "compact" : "hero"}`}>
@@ -156,12 +87,8 @@ function SearchDesk({ locale, compact = false }: { locale: Locale; compact?: boo
 }
 
 function Header({ locale, pageKey }: { locale: Locale; pageKey: PageKey }) {
-  const [open, setOpen] = useState(false);
   const t = copy[locale];
   const u = ui[locale];
-  const changeLocale = (next: string) => {
-    window.location.href = routeFor(next as Locale, pageKey);
-  };
   return (
     <header className="site-header">
       <div className="header-inner">
@@ -174,29 +101,16 @@ function Header({ locale, pageKey }: { locale: Locale; pageKey: PageKey }) {
         <div className="header-tools">
           <div className="language-control">
             <Languages aria-hidden="true" />
-            <NativeSelect
-              className="language-trigger"
-              value={locale}
-              onChange={(event) => changeLocale(event.target.value)}
-              aria-label={u.language}
-            >
-              <NativeSelectOption value="en">English</NativeSelectOption>
-              <NativeSelectOption value="de">Deutsch</NativeSelectOption>
-              <NativeSelectOption value="fr">Français</NativeSelectOption>
-              <NativeSelectOption value="es">Español</NativeSelectOption>
-              <NativeSelectOption value="it">Italiano</NativeSelectOption>
-            </NativeSelect>
+            <LanguageSelect locale={locale} label={u.language} routes={Object.fromEntries(locales.map((lang) => [lang, routeFor(lang, pageKey)]))} />
           </div>
-          <button className="menu-button" onClick={() => setOpen(!open)} aria-expanded={open} aria-label={open ? t.close : t.menu}>
-            <Menu aria-hidden="true" />
-          </button>
+          <details className="mobile-menu">
+            <summary className="menu-button" aria-label={t.menu}><Menu aria-hidden="true" /></summary>
+            <nav className="mobile-nav" aria-label={u.primaryNav}>
+              {navKeys.map((key) => <a key={key} href={routeFor(locale, key)}>{t.nav[key]}<ChevronRight aria-hidden="true" /></a>)}
+            </nav>
+          </details>
         </div>
       </div>
-      {open && (
-        <nav className="mobile-nav" aria-label={u.primaryNav}>
-          {navKeys.map((key) => <a key={key} href={routeFor(locale, key)}>{t.nav[key]}<ChevronRight /></a>)}
-        </nav>
-      )}
     </header>
   );
 }
@@ -208,7 +122,7 @@ function CategoryGrid({ locale, limit }: { locale: Locale; limit?: number }) {
   return (
     <div className="category-grid">
       {visible.map((category, index) => (
-        <a key={category.key} href={category.href} target="_blank" rel="nofollow sponsored noopener" className={`category-card color-${index % 4}`}>
+        <a key={category.key} href={category.href} data-track="outbound_category_click" data-category={category.key} data-placement={limit ? "home" : "categories"} target="_blank" rel="nofollow sponsored noopener" className={`category-card color-${index % 4}`}>
           <span>0{index + 1}</span>
           <strong>{u.categoryNames[category.key]}</strong>
           <ArrowUpRight aria-hidden="true" />
@@ -227,16 +141,16 @@ function ProductGrid({ locale, limit }: { locale: Locale; limit?: number }) {
     <div className="product-grid">
       {visible.map((product) => (
         <article className="product-card" key={product.id}>
-          <a href={product.href} target="_blank" rel="nofollow sponsored noopener" className="product-image" aria-label={`${t.openListing}: ${u.productNames[product.id]}`}>
+          <a href={product.href} data-track="outbound_product_click" data-product-id={product.id} data-placement={limit ? "home" : "finds"} target="_blank" rel="nofollow sponsored noopener" className="product-image" aria-label={`${t.openListing}: ${u.productNames[product.id]}`}>
             {/* Remote images stay source-matched; no proxy or local substitution. */}
             <img src={product.image} alt={u.productNames[product.id]} loading="lazy" decoding="async" width={800} height={656} />
             <span><Check />{t.sourceChecked}</span>
           </a>
           <div className="product-body">
             <div className="product-meta"><span>{u.productCategories[product.category]}</span><small>{u.sourceListingId} {product.id}</small></div>
-            <h3><a href={product.href} target="_blank" rel="nofollow sponsored noopener">{u.productNames[product.id]}</a></h3>
-            <div className="product-price"><strong>{product.price}</strong><span>≈ {product.gbp}</span><span>{product.sourcePrice}</span></div>
-            <a className="product-link" href={product.href} target="_blank" rel="nofollow sponsored noopener">{t.openListing}<ArrowUpRight /></a>
+            <h3><a href={product.href} data-track="outbound_product_click" data-product-id={product.id} data-placement={limit ? "home" : "finds"} target="_blank" rel="nofollow sponsored noopener">{u.productNames[product.id]}</a></h3>
+            <div className="product-price"><strong>≈ {product.price}</strong><span>{product.sourcePrice}</span></div>
+            <a className="product-link" href={product.href} data-track="outbound_product_click" data-product-id={product.id} data-placement={limit ? "home" : "finds"} target="_blank" rel="nofollow sponsored noopener">{t.openListing}<ArrowUpRight /></a>
           </div>
         </article>
       ))}
@@ -288,28 +202,46 @@ function FaqList({ locale, limit }: { locale: Locale; limit?: number }) {
   );
 }
 
-function ArticleCards({ locale }: { locale: Locale }) {
+const featuredArticleKeys: ArticleKey[] = [
+  "articles/hacoo-not-showing-products-uk",
+  "articles/hacoo-vs-dhgate-uk",
+  "articles/how-to-use-hacoo-uk",
+  "articles/how-long-does-hacoo-take-to-deliver-uk",
+];
+
+function ArticleCards({ locale, keys = articleKeys }: { locale: Locale; keys?: ArticleKey[] }) {
   const t = copy[locale];
   const icons = [Search, PackageCheck, Ruler, ShieldCheck, Truck, BookOpen, CircleAlert];
-  const visibleKeys = locale === "en"
-    ? articleKeys
-    : articleKeys.filter((key) => !englishOnlyArticleKeys.has(key));
-  return (
-    <div className="article-grid">
-      {visibleKeys.map((key, index) => {
-        const Icon = icons[index % icons.length];
-        return (
-          <a href={routeFor(locale, key)} key={key}>
-            <Icon aria-hidden="true" />
-            <span>0{index + 1} / {ui[locale].buyerGuides.toUpperCase()}</span>
-            <h2>{t.pageLabels[key].title}</h2>
-            <p>{t.pageLabels[key].intro}</p>
-            <b>{t.readGuides}<ArrowRight /></b>
-          </a>
-        );
-      })}
-    </div>
-  );
+  return <div className="article-grid">
+    {keys.map((key, index) => {
+      const Icon = icons[index % icons.length];
+      const article = articles[locale][key];
+      return <a href={routeFor(locale, key)} key={key}>
+        <Icon aria-hidden="true" />
+        <span>{String(index + 1).padStart(2, "0")} / {ui[locale].buyerGuides.toUpperCase()}</span>
+        <h3>{article.title}</h3>
+        <p>{article.intro}</p>
+        <b>{t.readGuides}<ArrowRight aria-hidden="true" /></b>
+      </a>;
+    })}
+  </div>;
+}
+
+const topicPages: ArticleKey[] = ["articles/how-to-use-hacoo-uk", "articles/how-long-does-hacoo-take-to-deliver-uk", "articles/size-before-you-buy", "articles/hacoo-not-showing-products-uk"];
+function TopicLinks({ locale }: { locale: Locale }) {
+  const e = editorial[locale];
+  return <nav className="topic-links" aria-label={e.choose}>
+    {topicPages.map((key, index) => <a key={key} href={routeFor(locale, key)}>{e.topics[index]}<ArrowRight aria-hidden="true" /></a>)}
+  </nav>;
+}
+
+function relatedKeys(pageKey: ArticleKey): ArticleKey[] {
+  const candidates: ArticleKey[] = /delivery|tracking|returns|customs/.test(pageKey)
+    ? ["articles/how-long-does-hacoo-take-to-deliver-uk", "articles/hacoo-tracking-uk", "articles/hacoo-returns-refunds-uk", "articles/hacoo-uk-vat-customs"]
+    : /size|photos|readiness|checklist/.test(pageKey)
+      ? ["articles/size-before-you-buy", "articles/read-qc-photos", "articles/hacoo-uk-pre-order-readiness-sheet", "articles/hacoo-order-checklist-uk"]
+      : ["articles/how-to-use-hacoo-uk", "articles/hacoo-not-showing-products-uk", "articles/hacoo-website-vs-app", "articles/hacoo-vs-dhgate-uk"];
+  return candidates.filter((key) => key !== pageKey).slice(0, 3);
 }
 
 function ResourceCards({ locale }: { locale: Locale }) {
@@ -349,16 +281,17 @@ function HomePage({ locale }: { locale: Locale }) {
           <span className="eyebrow"><i />{t.badge}</span>
           <h1>{t.heroTitle}</h1>
           <p>{t.heroText}</p>
+          <TopicLinks locale={locale} />
           <SearchDesk locale={locale} />
           <small><CircleAlert />{t.sourceNote}</small>
         </div>
         <aside className="hero-aside">
           <span>{u.liveIndex}</span>
-          <a className="hero-feature hero-feature-main" href={products[0].href} target="_blank" rel="nofollow sponsored noopener">
+          <a className="hero-feature hero-feature-main" href={products[0].href} data-track="outbound_product_click" data-product-id={products[0].id} data-placement="hero" target="_blank" rel="nofollow sponsored noopener">
             <img src={products[0].image} alt={u.productNames[products[0].id]} loading="eager" decoding="async" fetchPriority="high" width={720} height={720} />
             <em>01</em>
           </a>
-          <a className="hero-feature hero-feature-small" href={products[3].href} target="_blank" rel="nofollow sponsored noopener">
+          <a className="hero-feature hero-feature-small" href={products[3].href} data-track="outbound_product_click" data-product-id={products[3].id} data-placement="hero" target="_blank" rel="nofollow sponsored noopener">
             <img src={products[3].image} alt={u.productNames[products[3].id]} loading="eager" decoding="async" fetchPriority="high" width={720} height={720} />
             <em>02</em>
           </a>
@@ -382,8 +315,9 @@ function HomePage({ locale }: { locale: Locale }) {
         <ResourceCards locale={locale} />
       </section>
       <section className="section guide-preview">
-        <div className="section-heading"><span>06 / {u.deepReads}</span><h2>{t.nav.articles}</h2></div>
-        <ArticleCards locale={locale} />
+        <div className="section-heading"><span>06 / {u.deepReads}</span><h2>{editorial[locale].latest}</h2></div>
+        <ArticleCards locale={locale} keys={featuredArticleKeys} />
+        <a className="text-link all-guides" href={routeFor(locale, "articles")}>{editorial[locale].all}<ArrowRight aria-hidden="true" /></a>
       </section>
       <section className="section faq-preview">
         <div className="section-heading"><span>07 / {u.answers}</span><h2>{t.pageLabels.faq.title}</h2></div>
@@ -394,40 +328,12 @@ function HomePage({ locale }: { locale: Locale }) {
   );
 }
 
-function EvidenceGrid({ locale, pageKey }: { locale: Locale; pageKey: PageKey }) {
-  const u = ui[locale];
-  const checklist = pageChecklists[locale][pageKey];
-  const facts = locale === "en" && englishPageEvidence[pageKey]
-    ? englishPageEvidence[pageKey]!
-    : checklist
-      ? checklist.slice(0, 4).map((note, index) => ({ value: `0${index + 1}`, label: u.practicalChecklist, note }))
-      : evidenceFacts[locale];
-  return (
-    <section className="section evidence-section">
-      <div className="section-heading split">
-        <div><span>{u.evidenceChecked}</span><h2>{u.evidenceTitle}</h2></div>
-        <p>{researchBasis[locale].join(" · ")}</p>
-      </div>
-      <div className="evidence-grid">
-        {facts.map((fact, index) => (
-          <article key={`${fact.label}-${index}`}>
-            <strong>{fact.value}</strong>
-            <h3>{fact.label}</h3>
-            <p>{fact.note}</p>
-          </article>
-        ))}
-      </div>
-    </section>
-  );
-}
-
 function ArticlePage({ locale, pageKey }: { locale: Locale; pageKey: ArticleKey }) {
   const t = copy[locale];
   const u = ui[locale];
-  const article = articles[locale][pageKey] ?? articles.en[pageKey];
+  const article = articles[locale][pageKey];
   if (!article) return null;
-  const expansions = locale === "en" ? [] : (articleExpansions[locale][pageKey] ?? []);
-  const isPriorityArticle = englishOnlyArticleKeys.has(pageKey);
+  const showFigure = ["articles/find-product-links", "articles/read-qc-photos", "articles/size-before-you-buy"].includes(pageKey);
   const figureProduct = products[pageKey === "articles/find-product-links" ? 0 : pageKey === "articles/read-qc-photos" ? 1 : 3];
   return (
     <>
@@ -440,22 +346,24 @@ function ArticlePage({ locale, pageKey }: { locale: Locale; pageKey: ArticleKey 
           <span>{u.lastReviewed}: {(article.reviewed ?? "2026-08-28").split("-").reverse().join(" / ")}</span>
         </div>
       </section>
-      <EvidenceGrid locale={locale} pageKey={pageKey} />
-      {!isPriorityArticle && <section className="section route-disclosure"><p>{u.externalRouteDisclosure}</p></section>}
-      {!isPriorityArticle && <figure className="article-figure">
-          <a href={figureProduct.href} target="_blank" rel="nofollow sponsored noopener">
+      <nav className="article-toc" aria-label={editorial[locale].contents}>
+        <h2>{editorial[locale].contents}</h2>
+        <ol>{article.sections.map((section, index) => <li key={section.heading}><a href={`#section-${index + 1}`}>{section.heading}</a></li>)}</ol>
+      </nav>
+      {showFigure && <section className="section route-disclosure"><p>{u.externalRouteDisclosure}</p></section>}
+      {showFigure && <figure className="article-figure">
+          <a href={figureProduct.href} data-track="outbound_product_click" data-product-id={figureProduct.id} data-placement="article" target="_blank" rel="nofollow sponsored noopener">
             <img src={figureProduct.image} alt={`${u.exampleImage}: ${u.productNames[figureProduct.id]}`} loading="lazy" decoding="async" width={900} height={720} />
           </a>
           <figcaption><b>{u.exampleImage}</b><span>{u.figureCaption}</span></figcaption>
         </figure>}
       <article className="long-article">
         {article.sections.map((section, index) => (
-          <section key={section.heading}>
+          <section key={section.heading} id={`section-${index + 1}`}>
             <span>0{index + 1}</span>
             <div>
               <h2>{section.heading}</h2>
               {section.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
-              {expansions[index] && <p>{expansions[index]}</p>}
               {section.bullets && <ul>{section.bullets.map((item) => <li key={item}><Check />{item}</li>)}</ul>}
             </div>
           </section>
@@ -466,14 +374,13 @@ function ArticlePage({ locale, pageKey }: { locale: Locale; pageKey: ArticleKey 
         <ol>{article.takeaways.map((item, index) => <li key={item}><b>0{index + 1}</b><span>{item}</span></li>)}</ol>
       </section>
       <section className="section research-basis">
-        <div><span className="kicker">{u.articleSources}</span><h2>{u.evidenceChecked}</h2></div>
-        <ul>{article.sources
-          ? article.sources.map((source) => <li key={source.href}><a href={source.href} target="_blank" rel="nofollow noopener">{source.label}</a></li>)
-          : researchBasis[locale].map((source) => <li key={source}>{source}</li>)}</ul>
+        <div><span className="kicker">{u.articleSources}</span><h2>{u.articleSources}</h2></div>
+        <ul>{article.sources.map((source) => <li key={source.href}><a href={source.href} target="_blank" rel="noopener">{source.label}</a></li>)}</ul>
       </section>
       <section className="section related-reading">
         <div className="section-heading"><span>{u.relatedReading}</span><h2>{t.pageLabels.articles.title}</h2></div>
-        <ArticleCards locale={locale} />
+        <ArticleCards locale={locale} keys={relatedKeys(pageKey)} />
+        <a className="text-link all-guides" href={routeFor(locale, "articles")}>{editorial[locale].all}<ArrowRight aria-hidden="true" /></a>
       </section>
     </>
   );
@@ -497,12 +404,16 @@ function InteriorPage({ locale, pageKey }: { locale: Locale; pageKey: PageKey })
         {pageKey === "spreadsheet" && <SearchDesk locale={locale} compact />}
       </section>
 
-      {["spreadsheet", "finds", "categories", "qc-guide", "shipping", "guide", "faq", "articles", "methodology"].includes(pageKey) && <EvidenceGrid locale={locale} pageKey={pageKey} />}
+      {["guide", "faq", "shipping", "qc-guide"].includes(pageKey) && <section className="topic-section"><h2>{editorial[locale].choose}</h2><TopicLinks locale={locale} /></section>}
+      {pageKey === "methodology" && <section className="section research-basis">
+        <div><h2>{u.articleSources}</h2><p>{t.updated}</p><p>{t.independent}</p></div>
+        <ul>{Array.from(new Map(Object.values(articles[locale]).flatMap((article) => article.sources).map((source) => [source.href, source])).values()).map((source) => <li key={source.href}><a href={source.href} target="_blank" rel="noopener">{source.label}</a></li>)}</ul>
+      </section>}
 
       {pageKey === "finds" && <section className="section"><ProductGrid locale={locale} /></section>}
       {pageKey === "categories" && <section className="section"><CategoryGrid locale={locale} /></section>}
       {pageKey === "faq" && <section className="section faq-page"><FaqList locale={locale} /></section>}
-      {pageKey === "articles" && <section className="section"><ArticleCards locale={locale} /></section>}
+      {pageKey === "articles" && <section className="section article-library"><ArticleCards locale={locale} keys={[...featuredArticleKeys, ...articleKeys.filter((key) => !featuredArticleKeys.includes(key))]} /></section>}
       {pageKey === "spreadsheet" && (
         <>
           <section className="section"><ProductGrid locale={locale} limit={4} /></section>
@@ -525,7 +436,7 @@ function InteriorPage({ locale, pageKey }: { locale: Locale; pageKey: PageKey })
   );
 }
 
-function Footer({ locale }: { locale: Locale }) {
+function Footer({ locale, pageKey }: { locale: Locale; pageKey: PageKey }) {
   const t = copy[locale];
   return (
     <footer>
@@ -534,26 +445,23 @@ function Footer({ locale }: { locale: Locale }) {
         {navKeys.map((key) => <a key={key} href={routeFor(locale, key)}>{t.nav[key]}</a>)}
         <a href={routeFor(locale, "methodology")}>{t.nav.methodology}</a>
       </div>
+      <nav className="language-links" aria-label={ui[locale].language}>{locales.map((lang) => <a key={lang} href={routeFor(lang, pageKey)} hrefLang={lang} lang={lang} aria-current={locale === lang ? "page" : undefined}>{localeNames[lang]}</a>)}</nav>
       <div className="footer-base"><span>© 2026 Hacoos.uk</span><span>{t.updated}</span></div>
     </footer>
   );
 }
 
 export function SitePage({ locale, pageKey }: { locale: Locale; pageKey: PageKey }) {
-  useEffect(() => {
-    document.documentElement.lang = locale;
-    document.documentElement.dataset.locale = locale;
-  }, [locale]);
   const faqJson = pageKey === "faq" || pageKey === "home" ? {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    mainEntity: copy[locale].faq.map(([question, answer]) => ({
+    mainEntity: (pageKey === "home" ? copy[locale].faq.slice(0, 3) : copy[locale].faq).map(([question, answer]) => ({
       "@type": "Question",
       name: question,
       acceptedAnswer: { "@type": "Answer", text: answer },
     })),
   } : null;
-  const article = pageKey.startsWith("articles/") ? (articles[locale][pageKey as ArticleKey] ?? articles.en[pageKey as ArticleKey]) : null;
+  const article = pageKey.startsWith("articles/") ? articles[locale][pageKey as ArticleKey] : null;
   const articleJson = article ? {
     "@context": "https://schema.org",
     "@graph": [{
@@ -571,7 +479,7 @@ export function SitePage({ locale, pageKey }: { locale: Locale; pageKey: PageKey
     }, {
       "@type": "BreadcrumbList",
       itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Hacoos UK", item: "https://hacoos.uk/" },
+        { "@type": "ListItem", position: 1, name: "Hacoos UK", item: `https://hacoos.uk${routeFor(locale, "home")}` },
         { "@type": "ListItem", position: 2, name: copy[locale].pageLabels.articles.title, item: `https://hacoos.uk${routeFor(locale, "articles")}` },
         { "@type": "ListItem", position: 3, name: copy[locale].pageLabels[pageKey].title, item: `https://hacoos.uk${routeFor(locale, pageKey)}` },
       ],
@@ -579,9 +487,10 @@ export function SitePage({ locale, pageKey }: { locale: Locale; pageKey: PageKey
   } : null;
   return (
     <div className="site-shell">
+      <SiteAnalytics locale={locale} />
       <Header locale={locale} pageKey={pageKey} />
       <main className={pageKey === "home" ? "home-main" : undefined}>{pageKey === "home" ? <HomePage locale={locale} /> : <InteriorPage locale={locale} pageKey={pageKey} />}</main>
-      <Footer locale={locale} />
+      <Footer locale={locale} pageKey={pageKey} />
       {faqJson && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJson) }} />}
       {articleJson && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJson) }} />}
     </div>

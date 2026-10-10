@@ -1,0 +1,1300 @@
+{
+  "articles/find-product-links": {
+    "title": "Liens Hacoo au Royaume-Uni : trouver et vérifier les fiches produits",
+    "intro": "Vérifiez la destination d’un lien lié à Hacoo, l’identifiant de la fiche source, l’image et l’option exacte pour qu’un lien fonctionnel ne vous mène pas au mauvais article.",
+    "minutes": 9,
+    "published": "2026-08-28",
+    "reviewed": "2026-10-10",
+    "sources": [
+      {
+        "label": "Site officiel Hacoo — présentation actuelle de la communauté et de la découverte",
+        "href": "https://www.hacoo.app/"
+      },
+      {
+        "label": "Expédition et livraison Hacoo — destination et contexte du service après-vente",
+        "href": "https://web.hacoo.app/en-US/pages/shipping-info"
+      },
+      {
+        "label": "Centre d’aide Hacoo — consignes de retour physique et exclusions",
+        "href": "https://act.hacoo.app/act/sara/helpcenter/home/qa3"
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Pourquoi trouver un produit Hacoo peut sembler plus difficile que consulter une boutique classique",
+        "paragraphs": [
+          "Un guide utile sur les liens Hacoo doit partir de la plateforme actuelle, pas d’une ancienne description d’application marchande copiée sur un autre blog. Le site actuel de Hacoo et les descriptions dans les boutiques d’applications la présentent comme une communauté de partage et de découverte : les membres publient leurs centres d’intérêt, évaluent des produits et services et échangent avec d’autres utilisateurs. Ce modèle explique pourquoi un visiteur peut découvrir un article dans une publication sociale ou un tableau sans obtenir le même résultat en recherchant simplement un nom de marque.",
+          "Un lien partagé peut circuler entre plusieurs pays, appareils et versions de l’application longtemps après sa création. La question pratique ne consiste donc pas seulement à savoir si une URL s’ouvre. Il faut déterminer si la destination correspond toujours au même article, à la même option et au prix qui rendaient le lien intéressant. Conservez assez de contexte pour refaire la vérification : page originale, date et heure, option recherchée et véritable pays de livraison. Ces éléments restent utiles lorsqu’un titre change ou qu’une publication promotionnelle disparaît."
+        ]
+      },
+      {
+        "heading": "Réglez la région avant d’interpréter les résultats de recherche",
+        "paragraphs": [
+          "La région est un paramètre utile pour le dépannage, mais une recherche vide ne prouve pas l’existence d’une restriction géographique. Vérifiez le pays affiché dans le compte, la destination réelle, la version de l’application et votre connexion au compte. Comparez ces conditions à celles de la source du lien partagé. Si le lien échoue encore, l’article peut être indisponible ou la référence ne plus correspondre à la même fiche. Considérez ces explications comme des hypothèses à vérifier, sans promettre qu’un réglage de pays fera apparaître tous les produits.",
+          "N’utilisez pas de VPN, de compte emprunté ni de fausse adresse de livraison uniquement pour forcer l’affichage d’un catalogue. Cela peut créer un décalage entre ce qui apparaît et ce qui peut réellement être livré. Une méthode plus fiable consiste à définir la véritable destination, mettre à jour l’application depuis sa boutique officielle, la fermer puis la rouvrir et réessayer le lien direct. Notez la région avec l’identifiant produit lorsque vous enregistrez une trouvaille. Ce champ supplémentaire rendra un dépannage ultérieur bien plus utile qu’une capture d’écran sans contexte."
+        ]
+      },
+      {
+        "heading": "Vérifiez cinq champs, pas seulement l’URL",
+        "paragraphs": [
+          "Contrôlez un lien produit à l’aide de cinq éléments concrets : titre actuel, première image, variante sélectionnée, identifiant produit et prix à la source. L’identifiant est la référence la plus durable, car les titres et images commerciales peuvent changer. L’image reste importante pour repérer une mauvaise destination évidente : une page qui s’ouvre mais présente une silhouette, une couleur ou une catégorie différente n’est pas une correspondance vérifiée. Le prix constitue un indice secondaire. Une légère évolution peut être normale ; un niveau totalement différent peut signaler un changement de destination ou d’option par défaut.",
+          "Les variantes méritent une vérification distincte. Une fiche peut regrouper plusieurs couleurs, tailles, lots ou versions, et l’option par défaut la moins chère ne correspond pas forcément à la carte partagée. Ouvrez le sélecteur et comparez l’image et le prix après avoir choisi la variante voulue. Si la carte annonce un certain nombre de modèles, assurez-vous que la fiche actuelle propose toujours ces choix. Conservez une capture de la sélection exacte plutôt que de l’état initial de la page."
+        ],
+        "bullets": [
+          "Titre actuel",
+          "Première image",
+          "Variante sélectionnée",
+          "Identifiant produit",
+          "Prix actuel à la source"
+        ]
+      },
+      {
+        "heading": "Pourquoi les tableaux deviennent obsolètes malgré une apparence d’entretien",
+        "paragraphs": [
+          "Un tableau est un plan d’accès, pas un stock. Ses lignes sont faciles à copier et difficiles à contrôler. Les dates indiquent souvent l’ajout d’une ligne par un rédacteur, pas la dernière vérification de sa destination finale. Les images peuvent rester en cache après une modification de la fiche d’origine. Les liens raccourcis peuvent ajouter une étape qui masque la destination du clic. Ces problèmes ne rendent pas les tableaux inutiles ; ils signifient qu’un tableau utile doit afficher une méthode de vérification et une date de contrôle.",
+          "Les meilleures entrées contiennent assez d’informations pour retrouver un article après un changement : identifiant stable, description claire, première image actuelle, prix à la source, catégorie et date de vérification. Une ligne peu utile ne propose qu’un intitulé enthousiaste et un bouton. Pour comparer deux index, privilégiez celui qui facilite la détection de ses propres erreurs. La transparence sur les incertitudes vaut davantage que l’affirmation selon laquelle tous les liens resteraient valides pour toujours."
+        ]
+      },
+      {
+        "heading": "Privilégiez les preuves propres à l’article plutôt que sa popularité",
+        "paragraphs": [
+          "La description officielle de l’application Hacoo présente les notes et avis comme un élément de son modèle de confiance. Les retours récents sur un article sont donc utiles, surtout lorsqu’ils incluent des photos ou des mesures. Une moyenne élevée ne remplace toutefois pas l’examen de la variante exacte. Les avis peuvent concerner différentes couleurs ou périodes de production, et les anciens commentaires une version qui n’est plus proposée par défaut. Triez par date lorsque c’est possible et cherchez des constats récurrents plutôt qu’une opinion spectaculaire isolée.",
+          "Les notes portant sur la plateforme répondent à une autre question. Les avis des boutiques d’applications décrivent l’expérience générale de l’application et du service, tandis que les avis produits peuvent concerner un vêtement, une chaussure ou un vendeur précis. Ces échantillons diffèrent et ne doivent pas être fusionnés en un seul score de qualité. Un commentaire détaillé sur une commande récente peut suggérer une question pertinente ; il ne promet pas le même résultat lors d’un achat futur. Conservez la date, le pays et l’étape de l’expérience avec chaque avis enregistré pour éviter de transformer une plainte sur la livraison en affirmation non étayée sur la fabrication."
+        ]
+      },
+      {
+        "heading": "Traitez la disparition des liens comme un problème normal d’entretien",
+        "paragraphs": [
+          "Une destination introuvable peut avoir plusieurs explications : article indisponible, publication source supprimée, fiche modifiée ou page inaccessible dans le contexte du compte actuel. Si la page d’accueil fonctionne mais qu’un seul lien produit échoue, le problème semble plus limité qu’une indisponibilité générale du service. Notez précisément l’échec avant de chercher un remplacement. Une recherche vide, une page d’erreur et un produit différent sont trois observations distinctes qui ne doivent pas recevoir le même diagnostic.",
+          "Lorsqu’un lien ne fonctionne plus, ne multipliez pas les clics sur des sites miroirs inconnus. Recherchez l’identifiant enregistré dans l’index actuel, puis une description générique concise et la catégorie. Comparez soigneusement les images. Si vous trouvez un remplacement probable, traitez-le comme une nouvelle fiche et vérifiez de nouveau les cinq champs. Ne transférez jamais une ancienne note, un nombre d’avis ou une affirmation de qualité à une fiche de remplacement simplement parce que sa photo ressemble à l’ancienne."
+        ]
+      },
+      {
+        "heading": "Distinguez le parcours du lien du paiement et de l’assistance",
+        "paragraphs": [
+          "Ce site est un index de recherche indépendant. Il ne traite pas les commandes, n’encaisse pas les paiements et ne contrôle pas les décisions du service client d’un vendeur externe. Cette distinction doit rester évidente à chaque étape. Une carte produit aide à découvrir un article, mais la page de destination et les conditions actuelles du paiement sur la plateforme régissent la transaction. Vérifiez le prix final, l’adresse de livraison, le récapitulatif du paiement et les conditions après-vente là où la commande est réellement passée.",
+          "Les pages publiques de Hacoo sur l’après-vente ne décrivent pas un processus unique et cohérent. La page de livraison mentionne une assistance dans les 15 jours suivant la livraison et indique qu’aucun retour n’est nécessaire, tandis que la page d’aide détaillée décrit des retours physiques autorisés avec des exclusions. Aucune ne permet de promettre universellement un remboursement sans retour. Enregistrez les conditions de la commande et demandez des instructions écrites à l’assistance officielle en cas de contradiction. Conservez les captures de l’option sélectionnée et du paiement, et n’envoyez pas un article à une adresse trouvée dans un tutoriel sans rapport avec votre commande."
+        ]
+      },
+      {
+        "heading": "Une vérification du lien en deux minutes, facile à répéter",
+        "paragraphs": [
+          "Une routine rapide vaut mieux qu’une méthode compliquée que vous n’utiliserez pas. Confirmez d’abord le véritable pays de livraison et ouvrez le lien dans l’application actuelle ou sur la page de destination. Comparez ensuite le titre et la première image. Sélectionnez la couleur, la taille ou le lot voulu et notez le prix obtenu. Enregistrez l’identifiant produit. Parcourez les avis récents à la recherche de photos, de mesures et de défauts récurrents. Enfin, capturez l’option exacte avant de quitter la page.",
+          "Cette méthode ne garantit ni la qualité ni la livraison, mais elle élimine plusieurs erreurs évitables : ouvrir le mauvais produit, retenir le prix d’une variante bon marché sans rapport avec votre choix, se fier à une capture périmée ou oublier l’option recherchée. C’est le rôle approprié d’un tableau Hacoo en 2026 : faciliter la recherche, préserver les identifiants et simplifier la vérification sans se faire passer pour la plateforme ou le vendeur."
+        ]
+      }
+    ],
+    "takeaways": [
+      "Définissez la véritable région avant la recherche.",
+      "Faites correspondre titre, image, variante, identifiant et prix.",
+      "Utilisez les avis récents sur l’article comme éléments de preuve, sans garantie.",
+      "Traitez les fiches de remplacement comme de nouvelles références.",
+      "Distinguez la découverte du paiement et de l’assistance."
+    ]
+  },
+  "articles/read-qc-photos": {
+    "title": "Avis Hacoo au Royaume-Uni : qualité, photos, retours et risques",
+    "intro": "Utilisez les avis sur la variante et les photos pour évaluer la fabrication, les mesures et le dossier après-vente, sans considérer les notes comme des garanties.",
+    "minutes": 8,
+    "published": "2026-08-28",
+    "reviewed": "2026-10-10",
+    "sources": [
+      {
+        "label": "Site officiel Hacoo — place des avis et de la confiance",
+        "href": "https://www.hacoo.app/"
+      },
+      {
+        "label": "Expédition et livraison Hacoo — déclaration actuelle sur l’après-vente",
+        "href": "https://web.hacoo.app/en-US/pages/shipping-info"
+      },
+      {
+        "label": "Centre d’aide Hacoo — processus et conditions des retours autorisés",
+        "href": "https://act.hacoo.app/act/sara/helpcenter/home/qa3"
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Ce que les avis Hacoo peuvent vous apprendre, avec leurs limites",
+        "paragraphs": [
+          "Hacoo encourage explicitement les notes et avis pour permettre aux utilisateurs de partager leurs expériences sur des produits, marques et services. Les photos des avis constituent donc une étape de recherche importante, mais pas un certificat de contrôle. Une photo peut montrer une autre taille, couleur ou série de fabrication, ou un éclairage différent. Un auteur peut être satisfait parce que l’article répond à ses attentes liées à un petit prix, tandis qu’un autre le compare à une référence différente. Le contrôle qualité commence par la définition de ce que les éléments disponibles représentent réellement.",
+          "Cet article propose une méthode de lecture des preuves ; il ne repose pas sur un essai pratique de chaque article Hacoo. Les notes des boutiques d’applications, les évaluations des vendeurs et les avis accompagnés de photos mesurent des expériences différentes. Notez où l’avis a été publié, sa date, le pays concerné et s’il identifie l’option achetée. Évitez de présenter une ancienne note globale comme un verdict actuel. Un avis utile indique quoi vérifier ensuite : une plainte récurrente sur une fermeture éclair invite par exemple à demander une photo nette de celle-ci, plutôt qu’à croire qu’une moyenne élevée dispense de tout contrôle."
+        ]
+      },
+      {
+        "heading": "Vérifiez l’identité du produit avant les petits détails",
+        "paragraphs": [
+          "L’erreur la plus fréquente en contrôle qualité consiste à examiner les coutures de la mauvaise variante. Commencez par l’identité : type de produit, couleur, taille choisie, description de la matière et éléments inclus. Comparez l’image actuelle de la fiche à celle qui vous a conduit au produit. Si un ensemble comporte un haut et un bas, confirmez que l’option choisie inclut les deux. Si une page de chaussures regroupe plusieurs modèles, assurez-vous que la photo de l’avis correspond au même code ou à la même vignette.",
+          "Vérifiez ensuite l’identifiant produit et la date de l’avis. Un ancien avis peut encore éclairer la fabrication, mais constitue une preuve plus faible de la disponibilité actuelle. Cherchez plusieurs photos récentes présentant la même forme générale et la même finition. Si la fiche ne comporte que des images de studio soignées sans témoignage client récent, réduisez votre niveau de confiance au lieu de combler le manque par des suppositions."
+        ]
+      },
+      {
+        "heading": "Examinez la silhouette avant les coutures",
+        "paragraphs": [
+          "Les grandes différences de structure comptent davantage qu’un fil isolé. Pour un vêtement, comparez la ligne des épaules, la largeur du corps, la position des manches, la forme de l’ourlet et le tombé du tissu. Pour des chaussures, examinez la forme du bout, le profil, la hauteur du talon, la courbe de la semelle et la symétrie de la paire. Pour un sac, vérifiez les proportions, l’emplacement des anses, l’alignement des panneaux et la stabilité de la base. Regardez l’objet de face avant les vues obliques, susceptibles de masquer une déformation.",
+          "La symétrie fournit un repère pratique. Comparez mentalement les côtés gauche et droit autour de l’axe central. Des cols irréguliers, des poches décalées, des semelles vrillées ou des anses à des hauteurs différentes deviennent plus visibles. Une certaine variation est normale dans les matières souples : utilisez donc plusieurs vues. Un défaut présent sur une seule image compressée peut venir de l’éclairage ; une différence visible sous plusieurs angles constitue un indice plus solide."
+        ]
+      },
+      {
+        "heading": "Contrôlez la fabrication dans un ordre fixe",
+        "paragraphs": [
+          "Après l’identité et la forme, passez des grands éléments aux petits détails. Vérifiez les coutures principales et assemblages, puis les bords et replis, les fermetures et pièces métalliques, et enfin les étiquettes ou impressions. Cet ordre empêche un logo séduisant ou un détail décoratif de détourner l’attention d’une fermeture fragile, d’une semelle décollée ou d’un panneau mal aligné. Ne zoomez qu’après avoir compris l’ensemble de l’objet.",
+          "Pour les coutures, cherchez un espacement régulier, des lignes droites, des extrémités solides et l’absence de points manquants. Pour la peinture de tranche ou le revêtement, vérifiez l’épaisseur et les fissures dans les plis. Pour les pièces métalliques, comparez la finition, l’emplacement et le fonctionnement plutôt que la seule couleur, car la balance des blancs peut modifier les tons. Pour les impressions, contrôlez l’alignement et la netteté des contours. N’affirmez pas l’authenticité à partir de photos : l’objectif défendable est d’évaluer la qualité de fabrication visible et la cohérence avec la fiche."
+        ]
+      },
+      {
+        "heading": "Utilisez les mesures pour donner de la valeur aux photos",
+        "paragraphs": [
+          "Une photo avec une règle répond à des questions que la perspective ne résout pas. Demandez ou consultez des images montrant, selon le cas, largeur de poitrine, longueur du vêtement, largeur d’épaules, longueur de manches, taille, hauteur de fourche, entrejambe ou longueur de semelle intérieure. La règle doit partir du bon bord et rester à plat. Une mesure en diagonale peut exagérer une dimension. Comparez les chiffres à ceux d’un article similaire que vous possédez, mesuré de la même façon.",
+          "Les mesures révèlent aussi les problèmes de proportions. Deux sweats peuvent avoir la même largeur de poitrine, mais des longueurs de corps et des épaules tombantes sensiblement différentes. Deux chaussures portant la même pointure peuvent offrir une longueur intérieure ou un espace aux orteils différent. Notez les centimètres plutôt que de vous fier à S, M, L ou à une pointure régionale familière. L’article suivant de ce guide décrit une méthode complète de choix des tailles."
+        ]
+      },
+      {
+        "heading": "Préparez des photos qui relient le problème à la commande",
+        "paragraphs": [
+          "Un dossier d’assistance a besoin de contexte autant que de gros plans. Pour un problème de taille, conservez la taille sélectionnée, l’étiquette et une mesure au ruban à plat. Pour un dommage, photographiez l’article entier, la zone touchée et l’emballage pertinent. Pour une option erronée ou manquante, reliez la confirmation à ce qui a été reçu. Ces conseils pratiques sur les preuves ne promettent pas qu’une pièce jointe déterminée garantira l’acceptation. Lisez le formulaire réel, dont les champs et instructions peuvent différer de ceux d’un article général.",
+          "Conservez le colis extérieur, l’étiquette d’expédition, le sachet intérieur, le code-barres et les étiquettes pendant l’inspection. Prenez une photo de l’article entier, une vue de contexte puis un gros plan net, et gardez les originaux non retouchés. La page de livraison Hacoo indique qu’un retour n’est pas nécessaire dans le processus après-vente qu’elle décrit ; sa page d’aide détaillée décrit au contraire des retours autorisés et des conditions concernant l’état de l’article. Demandez à l’assistance quelles instructions écrites s’appliquent à votre commande avant de laver, utiliser ou renvoyer le produit. Cette divergence doit rester visible au lieu d’être transformée en garantie."
+        ]
+      },
+      {
+        "heading": "Équilibrez les avis clients au lieu de choisir ceux qui vous arrangent",
+        "paragraphs": [
+          "Une comparaison crédible ne doit pas retenir uniquement les éloges ou les plaintes. Constituez, si possible, un petit échantillon daté provenant du même pays et d’une période récente. Classez chaque avis par livraison, coupe, identité du produit, fabrication ou assistance. Une commande peut réussir à une étape et échouer à une autre. Si un avis n’identifie aucun produit, gardez-le dans le groupe des expériences de plateforme au lieu de le présenter comme une preuve concernant l’article envisagé.",
+          "Recherchez des tendances, pas des personnalités. Comptez les avis récents évoquant le même problème, vérifiez si la réponse de l’entreprise y répond et si l’avis concerne le même pays et la même catégorie de produits. Accordez davantage de poids aux constats précis accompagnés de dates, photos ou détails sur l’étape de commande. Accordez-en moins aux superlatifs d’une seule ligne. Surtout, ne présentez pas le commentaire d’un tiers comme un fait vérifié concernant toutes les commandes.",
+          "Les avis publics sont des témoignages volontaires, pas une étude de contrôle encadrée. Si vous citez un pourcentage, précisez la taille de l’échantillon et sa méthode de sélection ; sinon, le chiffre donne une précision que la recherche ne justifie pas. Les affirmations non résolues doivent rester présentées comme telles. Une photo de fermeture cassée renseigne davantage sur cette fermeture qu’une accusation générale d’une ligne sur tous les vendeurs. Cette méthode produit des questions utiles tout en gardant les limites de l’échantillon à côté de la conclusion."
+        ]
+      },
+      {
+        "heading": "Décidez après avoir défini les défauts acceptables",
+        "paragraphs": [
+          "Avant de décider, répartissez les constats en trois groupes : erreurs d’identité, défauts structurels et variations esthétiques. Une erreur d’identité signifie que les éléments disponibles ne correspondent pas au produit ou à l’option recherchée : arrêtez-vous et vérifiez le lien. Un défaut structurel affecte le fonctionnement ou la durabilité, comme une semelle qui se sépare, une fermeture cassée ou une construction fortement vrillée. Les variations esthétiques incluent de petites différences de couture ou de couleur, éventuellement acceptables selon le prix et vos attentes.",
+          "Notez ce que vous pouvez accepter avant de regarder le prix final. Cela réduit la tentation d’excuser un problème sérieux parce que l’article semble peu cher. Un lien contrôlé et de bonnes photos améliorent la décision, mais ne garantissent pas l’exemplaire qui arrivera. Le meilleur guide de contrôle qualité reste donc transparent : il aide à poser de meilleures questions, à conserver des preuves utiles et à reconnaître l’incertitude plutôt qu’à la remplacer par un score assuré."
+        ]
+      }
+    ],
+    "takeaways": [
+      "Confirmez l’identité et la variante avant les détails.",
+      "Évaluez la forme avant les logos ou les petites coutures.",
+      "Utilisez des photos avec règle et des points de mesure reproductibles.",
+      "Conservez emballages, étiquettes et photos de contexte.",
+      "Comparez les thèmes récurrents sans sélectionner uniquement les avis favorables."
+    ]
+  },
+  "articles/size-before-you-buy": {
+    "title": "Guide des tailles Hacoo au Royaume-Uni : vêtements, chaussures et tailles UK/UE",
+    "intro": "Comparez les mesures des vêtements et des pieds au tableau de l’option exacte, au lieu de deviner à partir des tailles UK, UE ou des lettres.",
+    "minutes": 8,
+    "published": "2026-08-28",
+    "reviewed": "2026-10-10",
+    "sources": [
+      {
+        "label": "Site officiel Hacoo — présentation actuelle de la plateforme",
+        "href": "https://www.hacoo.app/"
+      },
+      {
+        "label": "Expédition et livraison Hacoo — déclaration actuelle sur l’après-vente",
+        "href": "https://web.hacoo.app/en-US/pages/shipping-info"
+      },
+      {
+        "label": "Centre d’aide Hacoo — preuves relatives aux tailles et conditions de retour",
+        "href": "https://act.hacoo.app/act/sara/helpcenter/home/qa3"
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Pourquoi l’étiquette est l’élément le moins fiable pour choisir une taille",
+        "paragraphs": [
+          "Une lettre de taille familière paraît pratique parce qu’elle évite de mesurer, mais elle se transpose mal entre marques, catégories de produits ou coupes recherchées. Le M d’un vendeur peut correspondre au S d’un autre, et une coupe ample peut être plus large tout en portant la même lettre. La comparaison utile ne concerne pas la taille imprimée sur l’étiquette. Elle porte sur l’ensemble des mesures du vêtement ou de la chaussure associé à la variante exacte sélectionnée.",
+          "Conservez les éléments de taille avant le paiement : taille choisie, tableau de la fiche et mesures de comparaison. Si l’article livré diffère, ils permettront d’expliquer si l’étiquette était erronée, si l’article ne respectait pas les mesures annoncées ou si la coupe choisie ne vous convenait simplement pas. Ce sont des questions différentes. La page d’aide détaillée de Hacoo décrit les preuves liées à la taille, mais ses consignes de retour diffèrent de la page publique de livraison. Préservez l’article et demandez les instructions applicables à la commande sans supposer que tout problème de coupe donne droit à un remboursement."
+        ]
+      },
+      {
+        "heading": "Mesurez un article que vous possédez, pas seulement votre corps",
+        "paragraphs": [
+          "Les mensurations corporelles sont utiles, mais la référence la plus pratique est généralement un article similaire qui vous va déjà comme vous le souhaitez. Posez-le à plat sans le tendre et utilisez un mètre souple. Mesurez deux fois. Notez la méthode autant que le chiffre : poitrine d’aisselle à aisselle, par exemple, ou longueur depuis le point le plus haut de l’épaule. Un chiffre sans méthode est difficile à reproduire.",
+          "Choisissez une référence de matière et d’usage comparables. Un tee-shirt ajusté en coton ne constitue pas une bonne comparaison pour une veste matelassée. Une chaussure de course peut exiger un espace aux orteils différent de celui d’une basket de ville. Pour un rendu ample, utilisez un vêtement ample que vous aimez plutôt que d’ajouter un nombre arbitraire de centimètres. Cet article de référence transforme un tableau abstrait en objectif de coupe concret."
+        ]
+      },
+      {
+        "heading": "Hauts et vêtements d’extérieur : comparez toute la forme",
+        "paragraphs": [
+          "Pour les tee-shirts, sweats et vestes, commencez par la demi-largeur de poitrine, la longueur du corps, la largeur d’épaules et la longueur de manches. Mesurez à plat d’un côté à l’autre, pas le tour, sauf si le tableau indique clairement une circonférence. La construction des épaules compte : une épaule tombante déplace le départ de la manche ; comparez donc aussi l’envergure totale. Une veste doit laisser la place aux couches que vous prévoyez de porter dessous.",
+          "La longueur modifie le rendu même lorsque la largeur est correcte. Comparez le devant et le dos si l’ourlet est arrondi ou plus long derrière. Pour un sweat à capuche, notez la taille de la capuche et le bord-côte, qui influencent la manière dont le vêtement se place. Pour les pièces doublées ou matelassées, l’espace intérieur peut sembler inférieur à ce que suggère la mesure extérieure. Prévoyez une aisance raisonnable plutôt que de choisir une mesure exactement égale à celle de votre corps."
+        ],
+        "bullets": [
+          "Demi-largeur de poitrine",
+          "Longueur du corps",
+          "Largeur d’épaules",
+          "Longueur de manches",
+          "Envergure totale pour les épaules tombantes"
+        ]
+      },
+      {
+        "heading": "Pantalons et shorts : le tour de taille ne suffit pas",
+        "paragraphs": [
+          "Le choix d’un pantalon devrait inclure, lorsqu’elles sont disponibles, les mesures de taille, hanches, fourche avant et arrière, cuisse, entrejambe et ouverture de jambe. Une taille élastique exige les dimensions au repos et étirées. La hauteur de fourche détermine où se place la ceinture et modifie la longueur utile. Deux pantalons ayant la même taille et la même entrejambe peuvent tomber très différemment si les hanches ou les cuisses sont étroites.",
+          "Mesurez un pantalon de référence à plat en suivant le même tracé que le tableau du vendeur. Une ceinture mesurée en ligne droite ne donne pas le même résultat qu’une mesure suivant sa courbe. L’entrejambe commence à la couture de la fourche, tandis que la longueur extérieure commence à la ceinture. Pour un short, hauteur de fourche et ouverture de jambe comptent souvent plus qu’un faible écart de longueur. Si le tableau omet la dimension qui vous pose habituellement problème, considérez-la comme une information manquante au lieu de deviner."
+        ]
+      },
+      {
+        "heading": "Pointures Hacoo : comparez correctement pied, semelle intérieure et tableau",
+        "paragraphs": [
+          "Une conversion de pointure UK vers UE n’est qu’un repère initial ; elle ne prouve pas qu’une fiche particulière vous conviendra. Vérifiez d’abord si la valeur en centimètres désigne la longueur du pied, de la semelle intérieure ou de la semelle extérieure. Ces mesures ne sont pas interchangeables. Mesurez les deux pieds debout et retenez la plus grande valeur lorsque le vendeur demande la longueur du pied. Si le tableau indique plutôt la longueur intérieure, comparez-la à celle d’une chaussure confortable mesurée de la même façon. Suivez les consignes d’aisance du tableau pour ne pas ajouter deux fois un espace supplémentaire.",
+          "La largeur et la forme de l’avant-pied sont essentielles. Une chaussure peut être assez longue mais inconfortable à l’avant. Cherchez les avis de personnes précisant leur largeur de pied et ayant choisi le même modèle. Si une fiche contient neuf modèles ou davantage, ne supposez pas qu’ils utilisent tous une forme identique. Vérifiez que la photo de mesure ou l’avis concerne bien la variante recherchée."
+        ]
+      },
+      {
+        "heading": "Matière, fabrication et coupe prévue modifient l’interprétation des chiffres",
+        "paragraphs": [
+          "Une matière extensible peut accepter une mesure à plat plus petite, tandis qu’un tissage lourd non extensible demande davantage d’aisance. Les bords-côtes resserrent le vêtement. Une doublure épaisse réduit l’espace intérieur. Le lavage peut modifier les dimensions du coton, et les consignes d’entretien peuvent compter autant que le tableau initial. Lisez la composition et les avis récents sur le rétrécissement, la rigidité ou une élasticité inhabituelle.",
+          "La silhouette prévue compte également. Très ample, décontractée, droite et ajustée ne sont pas des normes précises, mais ces indications vous aident à choisir le vêtement de référence. Ne prenez pas automatiquement une taille inférieure sur un article ample sans vérifier la longueur et les proportions des manches. De même, prendre une taille supérieure sur une coupe ajustée peut résoudre la largeur mais donner des épaules ou des manches trop longues. Utilisez l’ensemble des mesures plutôt que de vous concentrer sur un seul chiffre."
+        ]
+      },
+      {
+        "heading": "Constituez un dossier de captures avant le paiement",
+        "paragraphs": [
+          "Enregistrez ensemble quatre éléments : identifiant produit, variante sélectionnée, tableau des tailles et mesures de référence. Ajoutez la date, car les fiches changent. Si chaque couleur ou modèle utilise un tableau différent, capturez celui affiché après la sélection. Conservez le prix final et le nom de l’option dans le même dossier. Cela prend moins d’une minute et évite ensuite de devoir se fier à sa mémoire.",
+          "Après réception, si la coupe semble incorrecte, mesurez avant de retirer les étiquettes ou de laver l’article. Photographiez l’article entier, l’étiquette de taille, le code-barres du sachet et la mesure concernée. L’aide détaillée de Hacoo cite précisément l’étiquette et le code-barres parmi les preuves relatives aux tailles. Suivez les consignes actuelles du parcours d’assistance de la commande, car les règles et pièces demandées peuvent évoluer après la date de révision de ce guide."
+        ]
+      },
+      {
+        "heading": "Une règle finale pour choisir la taille",
+        "paragraphs": [
+          "Choisissez la variante dont l’ensemble des mesures se rapproche le plus d’un article de référence ayant la coupe voulue. Si vous hésitez entre deux options, déterminez quelle dimension sera la plus difficile à retoucher ou à accepter. Pour une veste, longueur et placement des épaules peuvent compter plus qu’un petit écart de largeur ; pour des chaussures, l’espace aux orteils peut compter davantage que la pointure affichée. Si le tableau est incomplet et les avis n’apportent pas la mesure manquante, reportez l’achat au lieu de considérer l’incertitude comme une bonne affaire.",
+          "Cette méthode n’élimine pas les variations de fabrication, mais elle est beaucoup plus fiable que le choix de votre lettre habituelle. Elle crée aussi une trace claire si le produit reçu diffère des mesures publiées. Un bon guide des tailles n’est pas un tableau de conversion universel. C’est une comparaison reproductible entre une fiche précise, une variante précise et un article dont vous savez déjà qu’il vous va.",
+          "Si la mesure à réception diffère sensiblement du tableau enregistré, documentez l’écart avant de porter ou laver l’article. Photographiez séparément et clairement le vêtement entier, l’étiquette et la position du ruban, puis gardez le sachet et le code-barres. Le parcours d’aide officiel distingue un problème de taille d’un mauvais article ou d’un défaut de qualité : décrivez donc précisément le problème au lieu de choisir la catégorie la plus alarmante. Un dossier soigné ne garantit pas l’acceptation, mais il fournit les éléments demandés dans les consignes publiées et évite qu’un problème de coupe imprécis devienne impossible à vérifier."
+        ]
+      }
+    ],
+    "takeaways": [
+      "Utilisez un article de référence qui vous va bien.",
+      "Notez la méthode de mesure autant que les chiffres.",
+      "Comparez la forme complète, pas une seule dimension.",
+      "Pour les chaussures, examinez longueur intérieure et largeur.",
+      "Enregistrez variante, tableau, identifiant et date avant le paiement."
+    ]
+  },
+  "articles/hacoo-uk-pre-order-readiness-sheet": {
+    "title": "Fiche de préparation Hacoo au Royaume-Uni : comparez votre sélection",
+    "intro": "Créez une sélection privée à compléter avec les options, les mesures, les besoins de livraison et les questions en suspens avant de passer à la liste de vérification finale.",
+    "minutes": 10,
+    "sections": [
+      {
+        "heading": "La fiche de préparation part de votre usage réel au Royaume-Uni",
+        "paragraphs": [
+          "Utilisez cette fiche pour comparer des candidats avant de vous engager dans un paiement. Faites-en une copie privée dans une note ou un tableau, avec une ligne par candidat. Commencez par la fonction attendue : une couche légère pour un séjour urbain en automne, des baskets quotidiennes pour le trajet au travail ou une tenue pour un événement fixé. Ajoutez la dernière date d’arrivée utile et les caractéristiques non négociables. L’objectif est d’identifier l’option la mieux documentée ou de les rejeter toutes. La liste de contrôle de commande distincte sert à examiner l’écran de paiement final lorsqu’un candidat a passé cette comparaison.",
+          "Hacoo présente son service comme une communauté de découverte de style de vie et d’achats : inspiration et contexte de transaction peuvent donc se côtoyer. Cela ne supprime pas la nécessité d’un dossier côté acheteur. Ce guide indépendant ne traite aucune commande et ne garantit ni vendeur, ni produit, ni livraison. Il aide un utilisateur au Royaume-Uni à conserver la région, l’adresse, l’option exacte, les mesures, le calendrier et les éléments visibles avant d’agir. Consultez la fiche en parallèle de la page produit actuelle plutôt que de laisser une ancienne publication ou capture faire référence."
+        ]
+      },
+      {
+        "heading": "Étape 1 : confirmez la région et la destination avant de comparer",
+        "paragraphs": [
+          "Notez le pays affiché dans l’application ou sur la page et indiquez le Royaume-Uni comme véritable pays de livraison. Une trouvaille partagée peut provenir d’une autre région, d’une autre version de l’application ou d’une destination différente. Si la sélection visible, le prix ou la disponibilité diffèrent, vérifiez le contexte au lieu de conclure qu’une des vues serait universellement correcte. Utilisez la véritable destination et l’application officielle actuelle. N’employez pas une fausse adresse ou un compte emprunté pour forcer un affichage qui ne permettrait pas la commande finale.",
+          "Votre première ligne doit contenir la date du contrôle, le contexte de l’application ou de la page, le pays de livraison et la source exacte ouverte. Si un produit devient indisponible après son enregistrement, gardez l’ancienne fiche comme historique et traitez tout remplacement comme un nouveau candidat. Des photos similaires ne prouvent pas un vendeur, un lot, une matière, des mesures ou des options identiques. Cette étape évite une erreur fréquente : passer du temps sur la coupe et le style avant de confirmer que le candidat est visible dans le contexte réel de la décision."
+        ]
+      },
+      {
+        "heading": "Étape 2 : préparez une adresse britannique exploitable pour la livraison",
+        "paragraphs": [
+          "Copiez le nom de livraison sous une forme que le destinataire peut réellement utiliser, puis vérifiez numéro de maison ou d’appartement, rue, localité, code postal et pays. Ajoutez un numéro joignable uniquement au format demandé lors du paiement. Pour les appartements, bureaux, résidences étudiantes ou bâtiments avec accueil, notez l’unité, l’entreprise ou la résidence et utilisez les champs actuellement prévus pour les précisions de livraison. Ne placez pas de données d’adresse sensibles dans un tableau public, une capture partagée ou un avis ; cette fiche doit rester privée.",
+          "Faites relire l’adresse ou lisez-la à voix haute ligne par ligne en la comparant à un document récent fiable ou à une livraison réussie. L’autoremplissage mérite une attention particulière : il peut conserver un ancien code postal ou supprimer un numéro d’appartement. Le récapitulatif final du paiement, et non votre brouillon, détermine les informations envoyées. Si un champ obligatoire est ambigu, interrompez le paiement et utilisez l’assistance officielle. Résoudre une ambiguïté avant la commande est plus fiable que de supposer qu’un transporteur devinera une unité manquante."
+        ]
+      },
+      {
+        "heading": "Étape 3 : figez l’article exact et les éléments de taille",
+        "paragraphs": [
+          "Enregistrez le titre actuel, la première image, la couleur et la taille ou le lot choisis, le prix affiché, l’identifiant produit ou contenu lorsqu’il existe et la date du contrôle. Distinguez ensuite l’étiquette des mesures. Une taille UK familière ou une lettre S, M ou L ne prouve ni largeur de poitrine, ni fourche, ni entrejambe, ni longueur du vêtement ou de la semelle intérieure. Comparez les mesures de la fiche à celles d’un article similaire qui vous va déjà, avec les mêmes points de départ et d’arrivée et sans tendre le tissu.",
+          "Notez la mesure décisive pour l’usage prévu. Une veste peut échouer parce que sa poitrine ne permet pas la maille prévue dessous, même si les manches semblent correctes. Un pantalon peut coincer à la fourche ou aux cuisses malgré une taille acceptable. Des chaussures peuvent afficher la bonne pointure mais différer par la longueur intérieure, la largeur ou la forme du bout. Lorsqu’une mesure nécessaire manque, indiquez « inconnue ». Ne transformez pas une absence d’information en prédiction assurée de la coupe et ne considérez pas l’apparence d’un créateur ou un avis isolé comme une garantie personnelle de taille."
+        ]
+      },
+      {
+        "heading": "Étape 4 : calculez le calendrier à rebours de la date du besoin",
+        "paragraphs": [
+          "Lors du contrôle du 10 octobre 2026, les informations officielles de Hacoo indiquaient un délai estimé de réception de 15 à 25 jours pour le Royaume-Uni. Utilisez cette fourchette comme repère de planification, pas comme promesse. Les mêmes consignes distinguent traitement et transport et préviennent que les précommandes ou réapprovisionnements peuvent partir séparément. Une estimation de statut peut évoluer, et une commande fractionnée signifie que la réception d’un article ne prouve pas que tous suivent le même calendrier.",
+          "Partez de la date à laquelle l’article doit être utilisable. Réservez du temps pour le traitement, le transport, la distribution finale, l’essayage et la réaction si l’article ne convient pas. Le calcul reste utile sans prédire le résultat : date du besoin moins marge fondée sur les éléments disponibles égale dernière date d’action raisonnable. Si elle est dépassée, choisissez un candidat sans échéance impérative ou un circuit dont les conditions actuelles conviennent. Ne réduisez jamais une fourchette estimée à un jour d’arrivée garanti simplement parce qu’un événement compte pour vous."
+        ]
+      },
+      {
+        "heading": "Étape 5 : conservez un dossier de preuves limité mais utile",
+        "paragraphs": [
+          "Avant d’agir, capturez la page de l’option exacte, le tableau des mesures, le délai affiché pour la destination réelle et le récapitulatif final. Notez l’heure et gardez les fichiers originaux plutôt qu’un seul montage recadré. Après la commande, ajoutez confirmation, évolutions de statut et preuves de livraison au même dossier privé. Ne publiez ni numéro de commande, adresse, données de paiement, code de suivi, conversation ni identité d’une autre personne. L’objectif est un dossier compact permettant de reconstituer le choix, pas un journal public.",
+          "Les preuves ont plusieurs niveaux. Une politique officielle expose la règle publiée de la plateforme à une date donnée. Un écran de commande actuel enregistre ce qui a été affiché dans une transaction précise. Une publication de créateur ou un avis public est un témoignage individuel. Votre comparaison relève de l’analyse éditoriale. Étiquetez ces catégories séparément. Une capture peut prouver un libellé ou une option à un instant, mais pas le stock futur, l’authenticité, les performances d’une matière ou la livraison. Cette distinction rend la fiche utile sans transformer des observations ordinaires en garanties injustifiées."
+        ]
+      },
+      {
+        "heading": "Copiez ces champs dans une feuille de travail privée",
+        "paragraphs": [
+          "Créez cinq colonnes : usage, région et adresse, option et mesures, calendrier, preuves. Donnez à chacune l’un de trois résultats. Valider signifie que les informations nécessaires existent et soutiennent le besoin. Suspendre signifie qu’un manque peut être résolu, par exemple une entrejambe absente ou un numéro d’appartement ambigu. Rejeter signifie que le candidat contredit une exigence non négociable, par exemple une échéance incompatible avec une marge réaliste ou une mesure inférieure au minimum. Ne transformez pas un rejet en réussite par une moyenne simplement parce que l’image plaît.",
+          "Un manteau peut par exemple convenir pour la couleur et le prix mais rester en attente si la largeur de poitrine manque alors que vous devez superposer des couches. Des chaussures peuvent satisfaire les mesures mais être rejetées pour un événement fixe si le délai laisse trop peu de marge pour les essayer. Un résultat sans achat est une bonne utilisation de la fiche : elle a évité une incompatibilité prévisible. Si deux candidats conviennent, comparez uniquement les facteurs du besoin initial au lieu d’inventer un classement général des « meilleurs articles Hacoo »."
+        ],
+        "bullets": [
+          "Nom du candidat / URL source / identifiant / date du contrôle : ______",
+          "Usage / caractéristique essentielle / dernière date d’arrivée utile : ______",
+          "Véritable pays de livraison / adresse vérifiée : ______",
+          "Couleur, taille ou lot exact / prix affiché : ______",
+          "Mesure décisive / mesure de référence / preuve du tableau : ______",
+          "Délai estimé / incertitude de calendrier / preuve manquante : ______",
+          "Question ouverte / source à consulter / décision : valider, suspendre ou rejeter : ______"
+        ]
+      },
+      {
+        "heading": "Transférez la sélection validée vers la liste de contrôle du paiement",
+        "paragraphs": [
+          "Lorsqu’un candidat convient, notez pourquoi il répond au besoin et reportez ses preuves dans la liste de vérification de commande Hacoo distincte. Cette feuille ne remplace pas la dernière lecture du paiement : option, adresse, coût et conditions peuvent changer entre recherche et règlement. Archivez les candidats rejetés avec une courte raison pour ne pas refaire la même recherche la semaine suivante. Pour un candidat en attente, notez la question précise et la source nécessaire à sa résolution, par exemple un tableau de mesures actuel plutôt qu’une autre opinion sur son apparence.",
+          "Terminez par une phrase : « Je choisis ce candidat parce qu’il répond à ce besoin vestimentaire, à ces mesures et à cette condition de calendrier. » Si la phrase dépend d’une promesse non vérifiée, arrêtez-vous. La meilleure fiche de préparation Hacoo au Royaume-Uni reste volontairement modeste. Elle ne garantit ni coupe, qualité, authenticité ni arrivée, mais peut révéler les informations manquantes, protéger les preuves privées et relier le choix final aux besoins définis avant la navigation."
+        ]
+      }
+    ],
+    "takeaways": [
+      "Définissez d’abord l’usage au Royaume-Uni et l’échéance.",
+      "Vérifiez en privé la véritable région et l’adresse complète.",
+      "Enregistrez l’option exacte et comparez les mesures plutôt que les étiquettes.",
+      "Traitez les 15 à 25 jours comme une estimation officielle britannique, jamais comme une promesse.",
+      "Choisissez valider, suspendre ou rejeter ; renoncer à acheter peut être la bonne décision."
+    ],
+    "reviewed": "2026-10-10",
+    "published": "2026-08-29",
+    "sources": [
+      {
+        "label": "Site officiel Hacoo — présentation actuelle de la plateforme",
+        "href": "https://www.hacoo.app/"
+      },
+      {
+        "label": "Expédition et livraison Hacoo — consignes relatives à la destination et à l’après-vente",
+        "href": "https://web.hacoo.app/en-US/pages/shipping-info"
+      }
+    ]
+  },
+  "articles/how-long-does-hacoo-take-to-deliver-uk": {
+    "title": "Combien de temps Hacoo met-il à livrer au Royaume-Uni ? Guide 2026",
+    "intro": "Hacoo annonce 15 à 25 jours pour la réception au Royaume-Uni. Comprenez le traitement, l’expédition internationale, les colis séparés et les retards de suivi à signaler.",
+    "minutes": 9,
+    "published": "2026-09-18",
+    "reviewed": "2026-10-10",
+    "sources": [
+      {
+        "label": "Expédition et livraison Hacoo — estimation britannique, traitement, commandes fractionnées et après-vente",
+        "href": "https://web.hacoo.app/en-US/pages/shipping-info"
+      }
+    ],
+    "sections": [
+      {
+        "heading": "La réponse courte : prévoyez 15 à 25 jours, sans date garantie",
+        "paragraphs": [
+          "La page actuelle Expédition et livraison de Hacoo indique 15 à 25 jours pour le Royaume-Uni. C’est la réponse officielle la plus claire à la question du délai de livraison de Hacoo au Royaume-Uni, mais il s’agit d’une estimation, pas d’une promesse. La même page précise que le délai de réception combine traitement et transport et prévient que des retards peuvent survenir. Une planification raisonnable utilise donc cette fourchette comme fenêtre initiale, pas comme un compte à rebours prouvant un retard dès le vingt-sixième jour.",
+          "Cette estimation concerne aussi une destination, pas chaque article de chaque commande. Disponibilité, traitement, service de livraison choisi, précommande, réapprovisionnement et transfert vers le transporteur final peuvent modifier le parcours. La question utile n’est pas seulement « combien de jours ? », mais aussi « à quelle étape en est la commande, quand cette étape a-t-elle commencé et quels éléments ont changé ? ». Cette approche conduit à de meilleures décisions qu’une comparaison avec une livraison rapide racontée sur les réseaux sociaux."
+        ]
+      },
+      {
+        "heading": "Faites partir le délai du bon événement",
+        "paragraphs": [
+          "Beaucoup de désaccords sur la livraison commencent par la confusion entre deux calendriers. La date d’achat marque le début de l’attente totale du client ; la date d’expédition marque le début de la période de transport. Hacoo indique que le traitement prend normalement trois à cinq jours ouvrés. Week-ends, jours fériés locaux ou attente de disponibilité peuvent créer un écart important entre jours calendaires et jours ouvrés. Notez les deux dates au lieu de supposer qu’une étiquette créée le premier jour prouve un départ immédiat à l’international.",
+          "Créez une chronologie simple : commande passée, paiement confirmé, mise à jour du traitement, avis d’expédition, premier scan de prise en charge, scan dans le pays d’arrivée et scan de livraison. Si l’estimation de la page de commande change, notez le nouveau texte et sa date sans écraser l’original. Cela ne rend pas l’estimation contractuelle, mais conserve ce que vous avez vu et aide à situer le retard avant l’expédition, pendant le transit international ou après la réception par un transporteur britannique."
+        ],
+        "bullets": [
+          "Date de commande",
+          "Date d’expédition",
+          "Premier scan physique du transporteur",
+          "Dernier scan de mouvement",
+          "Fenêtre de livraison actuellement estimée"
+        ]
+      },
+      {
+        "heading": "Temps de traitement et temps de transport sont distincts",
+        "paragraphs": [
+          "La page officielle définit explicitement le délai de réception comme la somme du traitement et du transport. Le traitement couvre les opérations précédant la circulation du colis dans le réseau. Le transport couvre le parcours après l’expédition, y compris l’international et le dernier kilomètre. Un numéro de suivi peut exister alors que le colis attend encore son premier scan physique : sa présence ne prouve donc pas le mouvement. Cherchez un événement du transporteur indiquant un lieu ou une opération.",
+          "Pour planifier, gardez trois colonnes : statut de la plateforme, statut du transporteur et votre interprétation. « Expédié » sur une commande peut signifier une entrée dans un circuit logistique ; « étiquette créée » chez le transporteur peut seulement indiquer la réception de données. Votre interprétation doit rester prudente jusqu’au scan suivant. Cette séparation est particulièrement utile quand l’assistance demande des preuves, car la capture du statut de commande et celle du suivi répondent à des questions différentes.",
+          "D’où Hacoo expédie-t-il vers le Royaume-Uni ? La page officielle indique que certains biens sont envoyés directement par des vendeurs situés à l’étranger, sans désigner un pays d’origine ou un entrepôt unique pour toutes les commandes. Un statut de centre de traitement décrit une étape du parcours ; il ne prouve pas à lui seul l’emplacement initial du vendeur. Consultez le dossier réel d’expédition et les scans. Une adresse de site britannique ou une étiquette du transporteur final britannique ne signifie pas que le colis a commencé son trajet en Grande-Bretagne."
+        ]
+      },
+      {
+        "heading": "Pourquoi une commande peut arriver en plusieurs colis",
+        "paragraphs": [
+          "La page de livraison Hacoo précise que les articles disponibles peuvent partir avant ceux en précommande ou en attente de réapprovisionnement. Une commande de plusieurs articles peut donc être fractionnée. Recevoir un colis ne prouve pas que tous les articles s’y trouvaient, et une ligne absente de la première livraison ne correspond pas automatiquement à un article perdu. Comparez référence du colis, avis d’expédition et lignes de commande avant de déclarer un manque. La commande peut afficher plusieurs numéros de suivi ou un deuxième départ plus tard.",
+          "Établissez un tableau reliant articles et colis. Indiquez pour chaque article la quantité, l’option choisie, le message d’expédition, le numéro de colis et l’état de réception. Photographiez l’étiquette extérieure avant l’ouverture, puis notez le contenu réel. Cette méthode évite de confondre livraison partielle et erreur de préparation. Elle fournit aussi un dossier concis à l’assistance si une ligne est marquée expédiée sans colis correspondant ou si un colis arrive sans l’article attendu."
+        ],
+        "bullets": [
+          "Reliez chaque ligne d’article à une référence de colis",
+          "Gardez l’emballage jusqu’au rapprochement du contenu",
+          "Séparez les listes des articles reçus et attendus",
+          "Vérifiez les avis d’expédition ultérieurs"
+        ]
+      },
+      {
+        "heading": "Prévoyez une marge pour les événements et les voyages",
+        "paragraphs": [
+          "Une estimation de 15 à 25 jours ne justifie pas de commander exactement vingt-cinq jours avant un mariage, des vacances, un anniversaire ou un déplacement. Une véritable échéance demande aussi du temps pour les variations de traitement, les retards de transport, les tentatives de livraison, l’inspection et un éventuel problème. Partez de la dernière date d’arrivée utile. Ajoutez le temps d’essayer, de vérifier la taille et de résoudre un souci. Si l’achat perd son utilité après une date précise, écrivez cette condition avant de payer.",
+          "La marge appropriée dépend des conséquences d’un retard. Un article quotidien tolère davantage d’incertitude qu’une tenue de cérémonie. Même un petit achat peut entraîner un désagrément important s’il faut trouver un remplacement en urgence. Inscrivez une date limite de décision dans le dossier. Si elle est dépassée, choisir une alternative locale peut être plus rigoureux que de traiter la fourchette officielle comme une garantie qu’elle n’a jamais été."
+        ]
+      },
+      {
+        "heading": "Quand un suivi silencieux est normal et quand enquêter",
+        "paragraphs": [
+          "Un suivi international peut rester inchangé entre exportation, transport longue distance, traitement douanier et remise à un réseau britannique. Cette absence de mise à jour ne prouve pas la perte, surtout si la commande reste dans le délai annoncé. Examinez le dernier scan réel : date, lieu, transporteur et libellé. Vérifiez si le même numéro fonctionne sur le site d’un second transporteur après le transfert, mais ne saisissez pas vos identifiants de commande sur des sites de suivi non officiels.",
+          "Une intervention devient plus justifiée quand l’estimation est dépassée, qu’un transporteur signale un incident, que le colis est marqué livré sans être retrouvé ou que le statut contredit l’adresse ou la destination. La page de Hacoo oriente les utilisateurs vers le transporteur concerné pour un colis déclaré livré mais absent et fournit également une voie d’assistance. Avant le contact, préparez en privé numéro de commande, numéro de suivi, adresse, dernier scan et vérifications raisonnables des lieux de dépôt."
+        ]
+      },
+      {
+        "heading": "Un dossier pratique de preuves de livraison au Royaume-Uni",
+        "paragraphs": [
+          "Ne gardez que les éléments utiles à la résolution : confirmation, lignes d’articles choisies, estimation affichée pour la commande, avis d’expédition, historique de suivi, étiquette du colis et photos de livraison disponibles. Stockez-les en privé. Si vous partagez publiquement une capture, masquez nom, adresse complète, téléphone, courriel, numéro de commande, code-barres et numéro de suivi. Une publication publique a rarement besoin de ces identifiants et leur exposition peut mettre le compte ou la livraison en difficulté.",
+          "Nommez les preuves par date et événement plutôt que par des libellés vagues comme capture1. Par exemple, 2026-09-18-confirmation-commande et 2026-10-02-dernier-scan-transporteur rendent la séquence compréhensible. Gardez les originaux sans annotations et créez des copies expurgées pour le partage. Une chronologie claire est plus utile que vingt captures qui se chevauchent et permet d’expliquer si le problème concerne le traitement, le transit international, le transfert britannique ou le statut livré."
+        ]
+      },
+      {
+        "heading": "La règle de décision pour les acheteurs au Royaume-Uni",
+        "paragraphs": [
+          "Utilisez la fourchette officielle britannique de 15 à 25 jours comme repère et conservez l’estimation active de la commande comme élément propre à la transaction. Ne remplacez ni l’une ni l’autre par le meilleur cas d’un créateur ou un ancien message de forum. Si la commande est dans les temps et avance normalement, surveillez-la. Si elle est fractionnée, rapprochez chaque article et colis. Si le délai est dépassé ou qu’un incident apparaît, préparez la chronologie et contactez le transporteur responsable ou l’assistance indiquée pour la commande.",
+          "Cette méthode ne prédit pas le jour exact d’arrivée, mais répond honnêtement à l’intention de recherche : Hacoo publie actuellement une estimation de 15 à 25 jours au Royaume-Uni, traitement et transport sont distincts, des départs séparés sont possibles et aucune date n’est garantie. L’acheteur améliore sa situation en gardant une marge et des preuves et en demandant une intervention à partir du dernier événement vérifié plutôt que de l’inquiétude suscitée par une page de suivi immobile."
+        ]
+      }
+    ],
+    "takeaways": [
+      "Utilisez les 15 à 25 jours comme estimation, pas comme promesse.",
+      "Notez séparément les dates de commande et d’expédition.",
+      "Rapprochez les commandes fractionnées article par article.",
+      "Prévoyez une marge avant un événement ou un voyage.",
+      "Demandez une intervention à partir du dernier scan vérifié."
+    ]
+  },
+  "articles/how-to-use-hacoo-uk": {
+    "title": "Utiliser Hacoo au Royaume-Uni : application, région, recherche et commandes",
+    "intro": "Une méthode détaillée au Royaume-Uni pour installer l’application officielle, vérifier recherche et région, choisir une taille mesurée et conserver le dossier de commande.",
+    "minutes": 9,
+    "published": "2026-09-18",
+    "reviewed": "2026-10-10",
+    "sources": [
+      {
+        "label": "Site officiel Hacoo — présentation de la plateforme et modèle communautaire",
+        "href": "https://www.hacoo.app/"
+      },
+      {
+        "label": "Apple App Store — fiche Hacoo et déclaration de confidentialité du développeur",
+        "href": "https://apps.apple.com/gb/app/hacoo-discovering-inspiring/id1399907836"
+      },
+      {
+        "label": "Google Play — fiche officielle de l’application Android",
+        "href": "https://play.google.com/store/apps/details?id=com.saramart.android"
+      },
+      {
+        "label": "Expédition et livraison Hacoo — estimation britannique, traitement, commandes fractionnées et après-vente",
+        "href": "https://web.hacoo.app/en-US/pages/shipping-info"
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Partez de Hacoo tel qu’il existe aujourd’hui, pas d’un ancien tutoriel",
+        "paragraphs": [
+          "Le site public actuel de Hacoo décrit une communauté ouverte de partage de contenu, de découverte, d’avis et de relations. Ce point compte, car les anciens tutoriels peuvent présenter un parcours d’achat plus limité ou des écrans qui ont changé. Pour un utilisateur britannique, le meilleur départ est le site officiel ou la fiche vérifiée sur l’App Store ou Google Play. Ces voies permettent d’identifier l’application et le développeur actuels avant de suivre un lien de tableau, de publication sociale ou de résultat de recherche.",
+          "Utilisez ce parcours détaillé après le guide britannique court si vous devez accomplir une étape précise ou comprendre le comportement différent d’un lien partagé. Ce site indépendant ne gère aucun compte, paiement ou commande Hacoo. Les interfaces peuvent varier : les titres suivent donc des tâches, sans promettre qu’un bouton conservera toujours le même emplacement. Procédez dans l’ordre : vérifier l’application, contrôler la destination réelle, reproduire la recherche, examiner l’option exacte, comparer les mesures, revoir livraison et coût, puis sauvegarder le dossier final."
+        ]
+      },
+      {
+        "heading": "Installez ou mettez à jour depuis une boutique officielle",
+        "paragraphs": [
+          "Ouvrez le site de Hacoo et suivez son accès de téléchargement, ou cherchez directement dans l’App Store d’Apple ou Google Play. Vérifiez nom de l’application, identité du développeur, URL de la boutique, informations de mise à jour récente et déclaration de confidentialité. Ne téléchargez pas d’APK ni de profil depuis un groupe de liens produits sous prétexte d’accéder à un autre catalogue. Une trouvaille produit n’a pas besoin de remplacer l’application officielle sur votre téléphone.",
+          "Si l’application est déjà installée mais qu’un guide ne correspond plus à l’interface, cherchez une mise à jour dans la boutique puis redémarrez-la. Ne supposez pas qu’effacer les données, changer de pays ou utiliser un compte emprunté soit anodin. Ces opérations peuvent modifier la disponibilité et dissocier l’affichage de votre véritable destination. Le dépannage doit conserver le compte et la région réels pour que le résultat reste pertinent pour une commande britannique."
+        ]
+      },
+      {
+        "heading": "Définissez la véritable destination britannique avant d’évaluer une trouvaille",
+        "paragraphs": [
+          "Confirmez la destination affichée dans le compte actuel et l’adresse où vous pouvez réellement recevoir le colis. Région, version et connexion au compte sont des éléments utiles à noter, pas une explication prouvée pour tout produit manquant. Une trouvaille visible chez quelqu’un montre ce que cette personne a vu ; elle ne prouve pas la disponibilité pour votre commande. Notez la véritable destination Royaume-Uni à côté du lien enregistré pour comparer ensuite les mêmes conditions.",
+          "Si un lien affiche une page vide ou différente, réessayez seulement après avoir vérifié version de l’application, connexion et véritable région. Comparez ensuite titre, première image, option choisie et identifiant. Si ces éléments ne correspondent pas, traitez la page comme un autre candidat même si l’URL fonctionne. Ne forcez pas un affichage étranger avec une fausse adresse : un résultat impossible à livrer à la destination réelle ne constitue pas une vérification utile."
+        ]
+      },
+      {
+        "heading": "Recherchez par caractéristiques, puis vérifiez la destination",
+        "paragraphs": [
+          "Un nom de marque ou de tendance général peut renvoyer de nombreuses publications visuellement similaires. Précisez la recherche avec type d’article, couleur, silhouette, description de la matière et caractéristique distinctive. Si vous partez d’un index externe, traitez-le comme une piste, pas comme une fiche officielle Hacoo. Ouvrez la destination et comparez ensemble ses éléments d’identité. Une image identique ne suffit pas lorsque variantes ou lots diffèrent.",
+          "Conservez une fiche propre par candidat : nom descriptif, URL ou code source, date, première image, option, tableau des tailles, prix affiché et identifiant stable disponible. Supprimez les doublons avant de comparer. Cela évite de traiter la même fiche republiée par plusieurs comptes comme des preuves indépendantes. Il devient aussi plus facile de déterminer si un changement ultérieur est une simple évolution de prix, une variante manquante ou une destination totalement différente.",
+          "Si Hacoo n’affiche aucun produit, distinguez un problème général de chargement d’un seul résultat manquant avant de répéter la recherche. Vérifiez si le contenu ordinaire s’ouvre, essayez une courte description générique et rouvrez une référence qui fonctionnait auparavant. Notez les contrôles réussis. L’article dédié à la recherche et aux régions détaille cette méthode ; changer plusieurs fois de pays sans conserver de trace peut rendre le problème initial plus difficile à expliquer."
+        ]
+      },
+      {
+        "heading": "Lisez les avis comme des éléments de preuve, pas comme un vote",
+        "paragraphs": [
+          "Le site public Hacoo met en avant la confiance et les avis communautaires, mais une note de plateforme ne prédit pas le résultat d’un article choisi. Commencez par les retours récents associés au produit ou à la variante exacte. Vérifiez que les photos montrent la même couleur, taille ou composition de lot, et cherchez des observations répétées plutôt qu’une affirmation spectaculaire isolée. Séparez livraison, coupe, matière et service client, qui décrivent des parties différentes de l’expérience.",
+          "Les photos sont particulièrement utiles lorsqu’elles révèlent proportions, étiquettes, coutures, pièces métalliques ou mesures à la règle. Éclairage et compression peuvent déformer les couleurs, et la perspective faire paraître une chaussure ou un sac plus grand. Utilisez les avis pour réduire l’incertitude, pas pour produire une certitude. Si la variante choisie est peu documentée, réduisez votre confiance ou suspendez la décision ; ne lui transférez pas celle inspirée par une autre option partageant seulement la même page."
+        ]
+      },
+      {
+        "heading": "Choisissez la taille à partir des mesures plutôt que d’une étiquette familière",
+        "paragraphs": [
+          "Tailles UK, UE et lettres ne sont pas des mesures universelles. Sélectionnez d’abord la variante exacte, puis enregistrez son tableau actuel. Mesurez un vêtement ou une chaussure comparable qui vous va, avec la méthode indiquée. Pour les vêtements, les mesures utiles peuvent inclure poitrine, longueur du corps, épaules, manches, taille, fourche et entrejambe. Pour les chaussures, longueur du pied et longueur intérieure doivent intégrer l’aisance nécessaire aux chaussettes et au chaussant prévus.",
+          "Notez la mesure décisive avant le choix. Une veste peut convenir à la poitrine mais pas aux épaules ou aux manches ; un pantalon peut correspondre à la taille mais pas à la fourche. Si le tableau omet la dimension déterminante, le statut honnête est « inconnu ». Prendre automatiquement la taille au-dessus n’est pas une méthode, et taille et poids d’un créateur remplacent mal les mesures du vêtement et ses préférences de coupe."
+        ]
+      },
+      {
+        "heading": "Revoyez livraison, adresse et incertitude du coût total",
+        "paragraphs": [
+          "La page de livraison Hacoo annonce actuellement 15 à 25 jours pour le Royaume-Uni et précise que la réception comprend traitement et transport. Utilisez cette plage comme repère, pas comme arrivée garantie. Vérifiez les articles en précommande ou en réapprovisionnement : la page officielle précise que produits disponibles et retardés peuvent partir séparément. Pour un événement, fixez une date au-delà de laquelle renoncer, avec assez de marge pour inspecter à réception.",
+          "Lisez l’adresse sur l’écran final, sans vous fier à votre mémoire : destinataire, numéro d’appartement ou de maison, rue, localité, code postal et pays. Confirmez le total des articles, les frais de livraison et toute mention fiscale sans considérer le premier prix aperçu comme le coût final. Enregistrez le récapitulatif en privé. Si un champ obligatoire, un frais ou un délai reste ambigu, suspendez avant le paiement au lieu d’espérer que l’écran suivant le corrigera."
+        ]
+      },
+      {
+        "heading": "Conservez le dossier de commande en protégeant les données personnelles",
+        "paragraphs": [
+          "Après la commande, gardez confirmation, lignes d’articles exactes, options choisies, récapitulatif de l’adresse, délai estimé et justificatif de paiement. Ajoutez ensuite avis d’expédition et suivi. Stockez les originaux en privé et masquez les données personnelles avant tout partage dans un groupe. Adresse complète, téléphone, courriel, référence de commande, code-barres ou numéro de suivi ne doivent pas être exposés simplement pour demander si un statut semble normal.",
+          "Le dossier doit rendre la prochaine action évidente. Si l’option change avant paiement, arrêtez-vous. Si le traitement se poursuit, suivez la date de commande. Si les articles sont séparés, reliez chaque colis à ses lignes. À réception, inspectez avant de retirer les étiquettes ou jeter l’emballage. Voilà une manière d’utiliser Hacoo qui résiste aux changements d’interface : s’appuyer sur une séquence de preuves cohérente plutôt que mémoriser une version de l’application."
+        ]
+      },
+      {
+        "heading": "Décision finale : poursuivre, suspendre ou arrêter",
+        "paragraphs": [
+          "Poursuivez seulement lorsque véritable région, option exacte, mesures essentielles, fenêtre de livraison, adresse et prix sont suffisamment clairs. Suspendez lorsqu’un champ manquant peut raisonnablement être vérifié, comme une mesure ou une ligne d’adresse. Arrêtez si la destination contredit une exigence, si l’article ne peut pas être livré dans la vraie région, si le calendrier ne convient plus ou si la page a changé d’identité. Ne pas commander peut être un résultat de recherche réussi.",
+          "Cette méthode répond à plus que la question de savoir où appuyer. Elle explique comment conserver le sens du choix de la découverte à la livraison. L’application fournit l’interface propre au compte ; le site public fournit le contexte de la plateforme et de ses règles ; votre dossier apporte les preuves qu’une publication partagée ne peut fournir. Lorsque ces trois niveaux concordent, la décision est mieux fondée et un changement ultérieur plus facile à résoudre."
+        ]
+      }
+    ],
+    "takeaways": [
+      "Passez par la boutique officielle.",
+      "Définissez d’abord la véritable région Royaume-Uni.",
+      "Vérifiez l’option exacte et les mesures.",
+      "Traitez les dates de livraison comme des estimations.",
+      "Conservez le dossier final en privé."
+    ]
+  },
+  "articles/what-is-hacoo-how-it-works": {
+    "title": "Qu’est-ce que Hacoo et comment fonctionne-t-il ? Guide britannique 2026",
+    "intro": "Comprenez le modèle actuel de communauté et de découverte de Hacoo, les rôles du site et de l’application et les contrôles utiles au Royaume-Uni avant de suivre une trouvaille.",
+    "minutes": 8,
+    "published": "2026-09-18",
+    "reviewed": "2026-10-10",
+    "sources": [
+      {
+        "label": "Site officiel Hacoo — présentation de la plateforme et modèle communautaire",
+        "href": "https://www.hacoo.app/"
+      },
+      {
+        "label": "Apple App Store — fiche Hacoo et déclaration de confidentialité du développeur",
+        "href": "https://apps.apple.com/gb/app/hacoo-discovering-inspiring/id1399907836"
+      },
+      {
+        "label": "Google Play — fiche officielle de l’application Android",
+        "href": "https://play.google.com/store/apps/details?id=com.saramart.android"
+      },
+      {
+        "label": "Expédition et livraison Hacoo — estimation britannique, traitement, commandes fractionnées et après-vente",
+        "href": "https://web.hacoo.app/en-US/pages/shipping-info"
+      }
+    ],
+    "sections": [
+      {
+        "heading": "La présentation officielle actuelle de Hacoo",
+        "paragraphs": [
+          "Le site officiel décrit Hacoo comme une communauté ouverte de partage de contenu autour de la découverte, des avis et des relations. Il invite les utilisateurs à partager leurs intérêts de style de vie, trouver des idées et consulter l’expérience collective. Cette présentation actuelle constitue la réponse la plus fiable à « qu’est-ce que Hacoo ? », puisqu’elle provient de la plateforme. Les anciennes pages et tutoriels tiers peuvent employer d’autres descriptions, mais ne doivent pas primer sur la manière dont le service présente aujourd’hui son objectif.",
+          "Pour un visiteur britannique, cela signifie concrètement que la découverte peut commencer par une publication, une recommandation, un lien partagé ou une recherche dans l’application plutôt que par une catégorie de boutique classique. Voilà pourquoi un même article peut être difficile à retrouver et pourquoi un lien exige un contrôle d’identité. Le contexte communautaire peut faire émerger des idées ; il ne rend toutefois pas toutes les publications actuelles, tous les avis représentatifs ni toutes les destinations externes officielles."
+        ]
+      },
+      {
+        "heading": "Le site et l’application remplissent des fonctions différentes",
+        "paragraphs": [
+          "Le site public explique le positionnement communautaire de Hacoo et propose des accès vers la confiance, la sécurité, les conditions, la confidentialité, le contact et l’application. L’application mobile constitue l’environnement propre au compte où l’utilisateur rencontre les contenus et fonctions disponibles pour son appareil, sa région et son compte. Un moteur de recherche peut afficher le site public alors qu’un tutoriel attend un écran de l’application. Cette différence est normale et ne justifie pas de faire confiance à un téléchargement non officiel.",
+          "Utilisez le site pour vérifier l’identité et le contexte des règles publiques. Consultez la fiche App Store ou Google Play pour vérifier l’application et ses autorisations ou déclarations de confidentialité actuelles. Utilisez l’application installée pour les actions liées au compte. Si une fonction manque, vérifiez version et région avant de conclure à sa suppression. Les interfaces évoluent, mais les voies officielles et les preuves conservées restent plus fiables qu’une capture issue d’un blog sans date."
+        ]
+      },
+      {
+        "heading": "Comment la découverte devient une décision",
+        "paragraphs": [
+          "Un parcours type comporte quatre niveaux : découverte, identité, évaluation et contexte de transaction. La découverte présente une idée. L’identité vérifie si la destination ouverte correspond encore au même article et à la même option. L’évaluation compare mesures, avis récents, description de matière et informations de livraison. Le contexte de transaction confirme véritable région, adresse, récapitulatif du prix et conditions avant paiement. Sauter les étapes intermédiaires transforme l’inspiration en supposition.",
+          "L’importance accordée aux avis par la plateforme peut aider l’évaluation, mais un avis doit correspondre à la variante choisie pour être utile. Une photo d’une autre couleur ou taille peut montrer la fabrication générale tout en renseignant peu sur la coupe. Une note de plateforme exprime un sentiment global sur des expériences et dates diverses ; ce n’est pas une garantie produit. L’utilisateur méthodique précise progressivement ses preuves : plateforme, fiche, option exacte, puis récapitulatif de la commande réelle."
+        ]
+      },
+      {
+        "heading": "Pourquoi la région et le contexte du compte comptent",
+        "paragraphs": [
+          "Le contenu Hacoo partagé peut traverser les frontières plus vite que les catalogues ou les conditions de livraison. Un utilisateur britannique peut ouvrir une publication initialement créée dans un autre pays, une autre version ou un autre état de compte. Le résultat peut être vide, modifié ou indisponible. Cela ne prouve pas automatiquement que la publication d’origine était fausse, et un lien fonctionnel ne prouve pas une livraison possible au Royaume-Uni. Définissez la vraie destination avant de considérer la visibilité comme une preuve.",
+          "Gardez la région dans la fiche enregistrée. Si un lien change, comparez si possible la même version, le même état de connexion et la même destination. Évitez VPN, fausses adresses et applications modifiées non officielles : ils peuvent produire une vue sans rapport avec le parcours réel de commande. Une bonne recherche reproduit les conditions importantes pour l’acheteur. Un résultat qui n’existe qu’après falsification de la destination n’est pas une option d’achat britannique fiable."
+        ]
+      },
+      {
+        "heading": "Ce que Hacoo ne garantit pas",
+        "paragraphs": [
+          "Un guide indépendant ne devrait pas présenter Hacoo comme un agent d’achat traditionnel pour compte de tiers sans confirmation dans ses documents officiels actuels. Il ne devrait promettre ni authenticité, ni stock fixe, ni délai universel, ni remboursement réussi. Découverte communautaire et avis peuvent éclairer le choix, mais ne certifient ni vendeur, ni produit, ni matière, ni résultat. La page de livraison présente elle-même les délais comme indicatifs et précise qu’aucune date précise n’est garantie.",
+          "De même, un index tiers n’est pas le catalogue officiel Hacoo. Il peut aider à trouver une destination, mais son rôle consiste à conserver destination, image, option, prix source et identifiant à une date de contrôle. La transaction a lieu ailleurs. Cette distinction évite à l’acheteur de confondre une correspondance éditoriale avec une promesse de plateforme et améliore la qualité de la recherche en séparant conseils utiles et affirmations d’affiliation."
+        ]
+      },
+      {
+        "heading": "La place de la livraison dans ce modèle",
+        "paragraphs": [
+          "La page actuelle de livraison Hacoo annonce une estimation de 15 à 25 jours au Royaume-Uni et explique que la réception comprend traitement et transport. Elle indique aussi que les articles en précommande ou en réapprovisionnement peuvent partir séparément des articles disponibles. Ces faits servent à planifier la commande, pas à définir chaque publication communautaire. Consultez les informations de livraison actuelles associées à la transaction avant de supposer qu’un résultat général peut vous être livré.",
+          "Cette séparation explique également pourquoi une commande peut comporter plusieurs colis et pourquoi le récit de livraison d’un créateur ne fixe pas votre échéance. La plateforme publie un cadre général ; la commande fournit l’article et son statut précis ; le transporteur fournit les scans de mouvement. Une explication fiable du fonctionnement de Hacoo garde ces sources séparées et utilise chacune pour la question à laquelle elle peut réellement répondre."
+        ]
+      },
+      {
+        "heading": "La hiérarchie des preuves pour un utilisateur britannique",
+        "paragraphs": [
+          "Utilisez les pages officielles actuelles pour l’identité de la plateforme et ses règles publiées. Consultez les boutiques officielles pour l’application authentique et les déclarations du développeur. Utilisez l’écran actif de commande pour les sélections, l’adresse et les estimations propres à la transaction. Consultez le transporteur pour les mouvements physiques. Utilisez les avis publics pour repérer des thèmes et questions, pas comme des règles contraignantes. Un guide indépendant fournit une méthode ; il ne remplace aucune de ces sources.",
+          "Si deux sources semblent contradictoires, vérifiez d’abord date et portée. Un ancien blog peut avoir été exact à son époque mais être dépassé. Une consigne mondiale peut différer d’une estimation propre à une destination. Un scan livré du transporteur peut contredire le constat du destinataire. Ne faites pas la moyenne de ces déclarations pour produire une réponse assurée. Notez le conflit, identifiez la source responsable et demandez une clarification via la commande actuelle ou le transporteur."
+        ],
+        "bullets": [
+          "Page officielle Hacoo : identité et règles publiées",
+          "Boutique officielle : application authentique",
+          "Écran de commande : transaction sélectionnée",
+          "Transporteur : mouvements du colis",
+          "Avis public : expérience individuelle"
+        ]
+      },
+      {
+        "heading": "Une liste de contrôle pour la première utilisation",
+        "paragraphs": [
+          "Lors de la première visite, confirmez le domaine officiel, installez depuis une boutique vérifiée, définissez la vraie destination Royaume-Uni et lisez la présentation actuelle. Avant d’utiliser une trouvaille partagée, comparez titre, image, variante, informations de taille et identifiant. Consultez les éléments récents propres à l’article, enregistrez l’estimation de livraison, lisez le prix final et l’adresse et conservez la confirmation en privé. Ces vérifications restent utiles même si l’interface diffère des captures d’un guide.",
+          "La réponse est donc simple : Hacoo se présente actuellement comme une communauté de partage, de découverte et d’avis de confiance, avec une application mobile et des pages publiques d’assistance. Son fonctionnement pour un acheteur dépend du passage prudent du contenu à une option exacte, puis au contexte réel de commande. La communauté peut aider à découvrir ; la vérification détermine si la trouvaille reste pertinente pour vous."
+        ]
+      }
+    ],
+    "takeaways": [
+      "Hacoo se présente actuellement comme une communauté de découverte.",
+      "Site et application ont des rôles différents.",
+      "Les trouvailles partagées exigent un contrôle d’identité.",
+      "La région influence la pertinence.",
+      "Sources officielles, commande et transporteur apportent des preuves distinctes."
+    ]
+  },
+  "articles/hacoo-returns-refunds-uk": {
+    "title": "Retours et remboursements Hacoo au Royaume-Uni : preuves, délais et colis perdus",
+    "intro": "Comprenez les consignes publiques contradictoires de Hacoo sur les retours et remboursements, puis rassemblez les preuves de votre commande et demandez rapidement des instructions écrites.",
+    "minutes": 8,
+    "published": "2026-09-18",
+    "reviewed": "2026-10-10",
+    "sources": [
+      {
+        "label": "Expédition et livraison Hacoo — estimation britannique, traitement, commandes fractionnées et après-vente",
+        "href": "https://web.hacoo.app/en-US/pages/shipping-info"
+      },
+      {
+        "label": "Centre d’aide Hacoo — politique de retour physique, autorisation et exclusions",
+        "href": "https://act.hacoo.app/act/sara/helpcenter/home/qa3"
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Le délai de 15 jours et la contradiction à résoudre",
+        "paragraphs": [
+          "La page Expédition et livraison de Hacoo annonce un délai de 15 jours après la livraison pour demander une assistance après-vente et indique qu’aucun retour produit n’est nécessaire dans le processus décrit. La page détaillée du centre d’aide décrit au contraire des retours physiques autorisés, des exigences d’état et des exclusions. Ces pages se contredisent. On ne peut pas les combiner de façon fiable pour promettre à toute commande britannique un remboursement sans retour, un retour gratuit ou un résultat précis.",
+          "Un retour renvoie un article ; un remboursement recrédite de l’argent. Le premier peut être nécessaire au second, ou l’assistance peut autoriser une autre résolution. Gardez les conditions affichées avec la commande et la réponse de l’assistance. Demandez quel processus, quelle adresse, quel coût et quelle échéance s’appliquent avant tout envoi. Les déclarations publiques sont des consignes de plateforme, pas un exposé complet des droits légaux. Agissez vite, mais n’inventez pas une règle de comptage à partir de « dans les 15 jours » et ne supposez pas que ce blog détermine votre admissibilité."
+        ]
+      },
+      {
+        "heading": "Inspectez avant de laver, porter ou jeter l’emballage",
+        "paragraphs": [
+          "Ouvrez soigneusement le colis et photographiez son état extérieur et son étiquette avant de jeter quoi que ce soit. Comparez le contenu à la confirmation : produit, couleur, taille, quantité et éléments inclus. Pour un problème de coupe, mesurez avant le lavage. Pour un dommage, montrez l’article entier et le défaut. Garder étiquettes, sachets, codes-barres et emballages facilite le lien entre le dossier et la commande.",
+          "L’objectif n’est pas de produire une image spectaculaire, mais de rendre le problème identifiable. Prenez une vue complète, une vue intermédiaire situant le problème et un gros plan net. Utilisez un éclairage neutre sans filtre esthétique. Pour une mesure, posez le ruban à plat et montrez son point de départ. Gardez les fichiers originaux horodatés. Des copies annotées peuvent expliquer le problème, mais l’original non retouché reste une preuve plus forte."
+        ]
+      },
+      {
+        "heading": "Décrivez un problème en termes vérifiables",
+        "paragraphs": [
+          "Une demande doit indiquer ce qui a été commandé, ce qui est arrivé et la différence. « Mauvaise qualité » est difficile à évaluer. « La taille M noire sélectionnée est arrivée en bleu », « la fermeture éclair ne se ferme pas » ou « la ligne indique deux unités mais le colis n’en contenait qu’une » identifient un écart vérifiable. Évitez les affirmations sur l’authenticité ou la composition sans méthode sérieuse pour les établir.",
+          "Utilisez dates et références sans les publier. Incluez date de commande, date de livraison, ligne d’article, option choisie et statut exact affiché. Si le problème porte sur un article manquant, vérifiez d’abord si la commande a été fractionnée. La page Hacoo précise que les articles disponibles peuvent partir séparément des précommandes ou réapprovisionnements. Une deuxième référence de colis peut transformer le diagnostic d’article manquant en expédition séparée encore attendue."
+        ]
+      },
+      {
+        "heading": "Adaptez les preuves au type de problème",
+        "paragraphs": [
+          "Les problèmes demandent des preuves différentes. Mauvaise option : confirmation, étiquette reçue et article entier. Écart de taille : tableau enregistré, taille choisie, étiquette et mesure à plat. Dommage : colis extérieur, emballage intérieur, article entier et défaut. Quantité manquante : lignes de commande, étiquette du colis, trace de l’ouverture et contenu. Colis livré mais non reçu : statut du transporteur, vérifications des lieux de dépôt et trace du contact avec celui-ci.",
+          "N’envoyez pas toutes vos captures sans index. Nommez les fichiers dans l’ordre et fournissez une chronologie d’un paragraphe. Cinq pièces pertinentes se comprennent plus vite que trente doublons. Si le formulaire limite les pièces jointes, privilégiez identification, contexte et détail. Gardez les autres originaux au cas où une réponse demanderait une autre vue. Un dossier concis améliore la clarté sans modifier la décision d’admissibilité de la plateforme."
+        ],
+        "bullets": [
+          "Preuve de l’option choisie",
+          "Preuve de ce qui est arrivé",
+          "Photo de contexte",
+          "Photo de détail",
+          "Chronologie datée"
+        ]
+      },
+      {
+        "heading": "Agissez rapidement et gardez la trace de la demande",
+        "paragraphs": [
+          "Notez la date réelle de réception et l’échéance affichée dans le parcours d’assistance actuel de la commande. Si le délai ou le fuseau horaire est ambigu, demandez une confirmation écrite à l’assistance officielle et soumettez rapidement le problème documenté. Ne supposez pas que la livraison est le jour zéro ni qu’une demande déposée à la fin du quinzième jour sera nécessairement admise. Gardez description envoyée, pièces jointes, référence du dossier et horodatage ; notez toute demande complémentaire et la date de votre réponse.",
+          "La confirmation de l’envoi d’un message n’est pas une décision de remboursement. Suivez les étapes séparément : demande déposée, preuves demandées, preuves fournies, décision rendue, remboursement lancé et fonds reçus. Les réseaux de paiement peuvent demander un délai supplémentaire après l’initiation du remboursement par la plateforme. Décrivez ce que le compte affiche réellement plutôt que d’affirmer qu’un délai générique s’applique à toutes les banques ou méthodes."
+        ]
+      },
+      {
+        "heading": "Pour un colis déclaré livré mais absent, commencez par le transporteur",
+        "paragraphs": [
+          "La page de livraison Hacoo indique que si le suivi mentionne livré sans réception, le client doit le signaler au transporteur concerné. Vérifiez en privé l’adresse complète, les membres du foyer, l’accueil, les lieux de dépôt, les voisins et toute photo de livraison. Demandez au transporteur les détails du scan ou une référence de dossier. Ne publiez pas le numéro de suivi pour demander de l’aide à un groupe.",
+          "Conservez ensuite la réponse du transporteur avec la commande Hacoo. S’il confirme une erreur de livraison ou ne localise pas le colis, cette preuve est plus utile qu’une capture indiquant seulement livré. Si le colis apparaît ensuite, mettez le dossier à jour. Un scan livré est une déclaration du transporteur, pas une preuve physique entre vos mains ; résoudre l’écart exige toutefois sa procédure et l’assistance actuelle de la plateforme plutôt que des suppositions."
+        ]
+      },
+      {
+        "heading": "Gardez visibles les délais de la plateforme et du prestataire de paiement",
+        "paragraphs": [
+          "Utilisez le parcours après-vente annoncé par la plateforme avec un exposé clair du problème. Si vous pouvez avoir besoin du prestataire de paiement, vérifiez rapidement aussi sa procédure et son échéance applicables. Ne supposez pas qu’une discussion en cours avec le vendeur suspend une autre échéance. Une contestation de paiement est une procédure distincte avec ses propres exigences de preuve. Gardez une description cohérente et factuelle entre organismes et ne traitez pas un modèle trouvé sur les réseaux comme preuve d’un droit.",
+          "Tous les messages doivent rester factuels et cohérents : dates, article, montant, problème et solution demandée. Retirez les commentaires émotionnels qui n’aident pas à vérifier l’événement. Si vous demandez un conseil indépendant aux consommateurs, fournissez en privé la chronologie complète. Ce guide ne peut déterminer les droits légaux de chaque transaction, mais un dossier organisé rend les conseils ultérieurs plus précis et évite que les détails changent au fil des récits."
+        ]
+      },
+      {
+        "heading": "Une liste de décision après-vente pour le Royaume-Uni",
+        "paragraphs": [
+          "Identifiez d’abord si le problème concerne identité de l’article, taille, dommage, quantité manquante, envoi séparé, suivi ou livraison. Notez la réception réelle, examinez les instructions après-vente actuelles et signalez rapidement le problème documenté. Demandez à l’assistance de résoudre toute contradiction sur la nécessité du retour, son adresse et son paiement. Gardez les emballages et l’ensemble minimal de preuves suffisant. En cas d’écart de livraison, conservez la référence du transporteur avec la demande à la plateforme.",
+          "Cette méthode ne peut et ne doit pas garantir un remboursement. Elle améliore la qualité de la demande en reliant commande, article et problème sans exposer les informations privées. Le meilleur guide Hacoo pour les retours et remboursements au Royaume-Uni ne promet pas le succès ; il propose une méthode rigoureuse pour respecter les délais publiés, suivre les consignes actuelles et conserver une trace claire de la livraison au résultat final.",
+          "Ne clôturez le dossier que lorsque le résultat concret est confirmé. Un message approuvant un remboursement ne signifie pas que l’argent est arrivé sur le compte de paiement, et un numéro de suivi de remplacement ne signifie pas une réception. Notez montant final, méthode, date et différence non résolue. En cas de refus, gardez le motif avant de déterminer si une autre voie autorisée existe. Cette dernière étape évite de rouvrir le problème de mémoire avec des dates manquantes et aide à évaluer de futurs achats sans transformer un résultat individuel en affirmation sur tous les clients."
+        ]
+      }
+    ],
+    "takeaways": [
+      "Notez l’échéance propre à la commande et agissez vite ; n’inventez pas de règle du jour zéro.",
+      "Inspectez avant de laver ou jeter l’emballage.",
+      "Adaptez les preuves au problème.",
+      "Contactez le transporteur pour les colis déclarés livrés mais absents.",
+      "Suivez séparément les étapes de demande et de remboursement.",
+      "Des pages publiques contradictoires ne garantissent pas un remboursement sans retour."
+    ]
+  },
+  "articles/hacoo-website-vs-app": {
+    "title": "Site ou application Hacoo : accès officiels, connexion et région",
+    "intro": "Utilisez le site public pour vérifier l’identité et les règles, l’application officielle pour le compte, et évitez les imitations et incohérences de région.",
+    "minutes": 8,
+    "published": "2026-09-18",
+    "reviewed": "2026-10-10",
+    "sources": [
+      {
+        "label": "Site officiel Hacoo — présentation de la plateforme et modèle communautaire",
+        "href": "https://www.hacoo.app/"
+      },
+      {
+        "label": "Apple App Store — fiche Hacoo et déclaration de confidentialité du développeur",
+        "href": "https://apps.apple.com/gb/app/hacoo-discovering-inspiring/id1399907836"
+      },
+      {
+        "label": "Google Play — fiche officielle de l’application Android",
+        "href": "https://play.google.com/store/apps/details?id=com.saramart.android"
+      },
+      {
+        "label": "Expédition et livraison Hacoo — estimation britannique, traitement, commandes fractionnées et après-vente",
+        "href": "https://web.hacoo.app/en-US/pages/shipping-info"
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Le site officiel est le point de référence public",
+        "paragraphs": [
+          "Le site de Hacoo explique l’identité communautaire actuelle de la plateforme et propose des liens vers son centre de confiance, ses conditions, sa confidentialité, son contact et son application. Il permet de consulter une source publique sans dépendre de la capture d’un autre utilisateur. La page de livraison publie aussi des estimations par destination et des indications générales sur l’après-vente. Enregistrez le domaine officiel plutôt que de recommencer une recherche à chaque fois, car les imitations et anciens résultats peuvent créer de la confusion.",
+          "Le site ne reproduit pas nécessairement tous les écrans de l’application propres au compte. Un visiteur attendant une interface précise de recherche, de connexion ou de produit peut croire que le site ne fonctionne pas alors qu’il remplit une autre fonction publique. Utilisez-le pour l’identité, les règles et le contexte de l’assistance. Lorsqu’un guide affirme que Hacoo garantit une fonction, un frais ou un délai, vérifiez si le site actuel confirme réellement cette affirmation et notez la date."
+        ]
+      },
+      {
+        "heading": "L’application fournit le contexte du compte et de la région",
+        "paragraphs": [
+          "L’application mobile officielle est distribuée via les fiches des boutiques Apple et Google. Elle peut présenter du contenu et des actions liés au compte connecté, à l’appareil, à la version et à la région. Ce contexte en fait l’endroit approprié pour confirmer l’option réelle, l’adresse, le récapitulatif et le statut de commande. Cela signifie aussi qu’une capture d’un autre utilisateur peut ne pas se reproduire exactement sur votre téléphone, même si vous utilisez tous deux Hacoo légitimement.",
+          "Installez ou mettez à jour depuis la boutique officielle, pas depuis un APK partagé avec un code produit. Vérifiez identité du développeur, URL de la fiche et informations de mise à jour. Les déclarations de confidentialité des boutiques peuvent aussi indiquer les catégories de données que le développeur dit traiter. Elles donnent un contexte utile mais ne remplacent pas la lecture de la politique liée ni l’examen des autorisations de l’appareil après installation."
+        ]
+      },
+      {
+        "heading": "Comment vérifier un accès officiel",
+        "paragraphs": [
+          "Partez du domaine exact : www.hacoo.app ou hacoo.app. Utilisez ensuite le lien de téléchargement de l’application ou ouvrez directement la boutique reconnue. Vérifiez la barre d’adresse avant de saisir les informations du compte. Une page provenant d’une publicité, d’un lien raccourci ou d’un message reste non vérifiée tant que son nom d’hôte ne correspond pas. HTTPS ne prouve pas à lui seul qu’un site appartient à Hacoo.",
+          "Sur une fiche de boutique, comparez nom de l’application, développeur, icône, historique d’avis et documents de confidentialité liés. N’utilisez pas une image produit comme preuve d’identité : icônes et captures peuvent être copiées. Si une page demande des autorisations inhabituelles, un paiement hors du parcours attendu ou des identifiants sur un autre domaine, arrêtez-vous et revenez au point de départ officiel. Le parcours le plus fiable peut être reproduit sans lien d’invitation privé."
+        ]
+      },
+      {
+        "heading": "Dépanner la connexion et le compte",
+        "paragraphs": [
+          "En cas d’échec de connexion, confirmez d’abord la version actuelle, le réseau, la méthode de connexion et l’adresse courriel ou la voie téléphonique utilisée auparavant. Évitez de créer plusieurs comptes rapidement : cela peut compliquer la recherche de l’historique de commandes et des contenus enregistrés. N’envoyez pas de mot de passe, code à usage unique ni pièce d’identité complète à une personne proposant de l’aide sur les réseaux. Utilisez l’assistance ou la récupération liée au service officiel.",
+          "Si le site et l’application semblent incohérents, précisez la question. Les règles publiques peuvent figurer sur le site tandis que l’état de la commande est dans l’application. Une page web qui charge ne prouve pas que le compte fonctionne correctement, et une erreur de l’application n’invalide pas une règle publiée. Capturez message d’erreur, version, type d’appareil, région et heure, puis décrivez le plus petit problème reproductible sans mot de passe ni données de paiement."
+        ]
+      },
+      {
+        "heading": "Vérifiez région et version sans présumer la cause",
+        "paragraphs": [
+          "Une découverte partagée peut être visible dans un pays ou un contexte de compte et absente dans un autre. Avant de déclarer un lien Hacoo mort, définissez la véritable destination Royaume-Uni, mettez l’application à jour, connectez-vous normalement et réessayez. Comparez titre, image, option et identifiant de la page ouverte. Un lien qui mène à un autre article n’est pas réparé simplement parce que la page répond correctement.",
+          "N’utilisez pas de fausse adresse ni de VPN pour fabriquer une disponibilité. L’objectif est de déterminer si l’article convient à une transaction britannique réelle. Notez région et date du contrôle avec le lien. Si le produit est indisponible, cherchez un nouveau candidat et vérifiez-le depuis le début. Une image similaire ne prouve pas un vendeur, des mesures, une série de fabrication ou des conditions identiques."
+        ]
+      },
+      {
+        "heading": "Utilisez ensemble le site et l’application",
+        "paragraphs": [
+          "Une séquence productive consiste à utiliser le site pour l’identité et les règles, la boutique officielle pour l’identité de l’application, l’application pour la découverte et le contexte de transaction actuels, puis le site du transporteur pour les mouvements physiques. Chaque niveau répond à une question différente. Vouloir qu’un seul réponde aux quatre produit de mauvais conseils, par exemple prendre une page générale de livraison comme preuve d’une date précise ou une capture d’application comme preuve d’une règle mondiale.",
+          "Enregistrez les sources avec des libellés. Écrivez « page officielle de livraison vérifiée le 10 octobre 2026 » plutôt que « Hacoo dit » sans préciser la source. Écrivez « l’écran de commande affichait » pour une estimation propre à la transaction et « le scan du transporteur indiquait » pour le suivi. Ce langage rend article et demande d’assistance plus fiables, car chacun peut voir la source et la portée de chaque déclaration."
+        ]
+      },
+      {
+        "heading": "Protégez les données avant de partager un écran",
+        "paragraphs": [
+          "Une capture de l’application peut exposer nom du compte, courriel, adresse, référence de commande, numéro de suivi, données de paiement ou code-barres. Recadrez et masquez une copie avant publication. Conservez l’original intact en privé si l’assistance officielle en a besoin. Ne partagez jamais un code de connexion à usage unique. Si quelqu’un propose de prendre le contrôle du téléphone pour réparer un lien Hacoo, refusez et utilisez l’assistance officielle.",
+          "Sur le web, examinez le nom d’hôte avant d’accepter une demande de cookies ou de connexion. Dans l’application, revoyez les autorisations de l’appareil et retirez celles inutiles à la fonction utilisée. La confidentialité ne se limite pas à un document juridique ; elle fait partie d’un dossier d’achat pratique. Une capture utile prouve le statut pertinent en révélant le moins possible d’informations d’identité et de paiement."
+        ]
+      },
+      {
+        "heading": "La règle pour choisir entre site et application",
+        "paragraphs": [
+          "Utilisez le site pour une déclaration publique actuelle, un lien de sécurité ou l’accès à l’application officielle. Utilisez l’application pour le compte, la région, l’option choisie, la commande ou son statut. Consultez les boutiques pour vérifier l’authenticité de l’application. Si un tutoriel vous envoie ailleurs, revenez à ces repères et reproduisez le parcours. Une méthode fiable ne dépend ni d’un téléchargement caché ni des identifiants d’un inconnu.",
+          "Cette distinction répond à l’intention principale sans prétendre que les deux expériences sont identiques. Le site expose l’identité publique déclarée de Hacoo. L’application fournit l’expérience actuelle de l’utilisateur. Les boutiques officielles relient les deux. Si région, version ou connexion modifient le résultat, notez ces variables au lieu de conclure que tout écart est une arnaque ou que toute page fonctionnelle est sûre.",
+          "Revérifiez le parcours après une longue absence. Les applications peuvent modifier déclarations du développeur, version minimale du système, méthodes de connexion et libellés ; les sites peuvent déplacer les pages d’assistance. Repartez du domaine ou de la boutique officielle plutôt que d’un ancien lien profond. Si un tutoriel archivé reste utile, ne conservez que la méthode encore reproductible et abandonnez les affirmations que les sources actuelles n’étayent plus. Un contrôle daté est plus fiable qu’un favori permanent dont la destination a discrètement changé."
+        ]
+      }
+    ],
+    "takeaways": [
+      "Site : identité publique et règles.",
+      "Application : contexte du compte et de la région.",
+      "Boutiques : vérification de l’application authentique.",
+      "HTTPS seul ne prouve pas l’appartenance du site.",
+      "Masquez les données personnelles avant de partager une capture."
+    ]
+  },
+  "articles/hacoo-tracking-uk": {
+    "title": "Suivi Hacoo au Royaume-Uni : statuts, retards et colis manquants",
+    "intro": "Interprétez le suivi Hacoo, les centres de traitement, les envois séparés et les transferts britanniques sans transformer un statut en date de livraison garantie.",
+    "minutes": 8,
+    "published": "2026-09-18",
+    "reviewed": "2026-10-10",
+    "sources": [
+      {
+        "label": "Expédition et livraison Hacoo — estimation britannique, traitement, commandes fractionnées et après-vente",
+        "href": "https://web.hacoo.app/en-US/pages/shipping-info"
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Le suivi est une suite de preuves, pas une carte en direct",
+        "paragraphs": [
+          "Une page de suivi Hacoo peut n’afficher que certains événements provenant de plusieurs prestataires logistiques. Les colis internationaux passent souvent par transmission des données, collecte, exportation, transport longue distance, importation, transfert britannique et livraison finale. Chaque transfert ne produit pas forcément un scan public. Traitez l’historique comme une suite d’événements enregistrés, pas comme une localisation minute par minute. Le dernier scan prouve ce qu’un système a enregistré à cet instant, pas où se trouve maintenant le colis.",
+          "La page de livraison Hacoo estime actuellement 15 à 25 jours pour le Royaume-Uni et précise que la réception combine traitement et transport. Utilisez cette fourchette avec le suivi, pas à sa place. Une commande peut rester en traitement avant le premier événement du transporteur. Construisez le dossier à partir de la date de commande, de l’avis d’expédition, du premier scan physique et du dernier scan pour interpréter une page immobile dans la bonne étape."
+        ]
+      },
+      {
+        "heading": "Distinguez numéro de suivi et prise en charge",
+        "paragraphs": [
+          "Un numéro peut être créé lorsque les données d’expédition sont envoyées à un prestataire logistique. Des libellés comme étiquette créée, informations reçues ou préavis ne signifient pas forcément que le colis a été accepté physiquement. Cherchez un événement ultérieur décrivant collecte, prise en charge, départ ou traitement dans un centre nommé. Notez le texte exact plutôt que de le traduire trop tôt par « en transit ».",
+          "Si la commande indique expédiée mais que le transporteur n’affiche que données reçues, les deux systèmes décrivent peut-être des étapes administratives différentes. Attendez dans le cadre du délai de traitement pertinent, puis enquêtez si le statut reste immobile au-delà de l’estimation actuelle ou des consignes d’assistance. Une capture des deux vues est utile : elle montre l’écart sans présumer quel système se trompe."
+        ]
+      },
+      {
+        "heading": "Comprenez les périodes internationales sans mise à jour",
+        "paragraphs": [
+          "Après l’exportation, un colis peut voyager sans scan public jusqu’à un centre d’importation ou un réseau partenaire. Traitement douanier ou transfert groupé peuvent prolonger ce silence. C’est frustrant, mais pas automatiquement une preuve de perte. Notez dernier événement physique, nombre de jours calendaires écoulés et respect ou dépassement de l’estimation officielle britannique. Consultez le suivi à des intervalles raisonnables plutôt que de l’actualiser des dizaines de fois par jour.",
+          "Évitez les sites de suivi non officiels exigeant connexion au compte ou paiement. Un outil neutre multitransporteur peut aider à identifier un partenaire, mais vérifiez si possible les événements importants auprès du transporteur nommé. Ne publiez pas le numéro complet dans un groupe : il peut révéler parcours, zone de livraison et options de gestion. Ne partagez que le libellé expurgé du statut pour demander une interprétation générale.",
+          "Un centre Hacoo indiqué « fulfilment hub », également écrit « fulfillment hub », est un lieu de traitement ou de logistique sur le parcours du colis. Le seul libellé ne prouve ni pays d’origine, ni dédouanement, ni mise en livraison, ni date d’arrivée fixe. Lisez le texte complet, le lieu et l’horodatage, puis cherchez un scan physique ultérieur. Si le même message se répète, notez sa première et sa dernière apparition au lieu de prendre chaque actualisation pour un mouvement. Demandez à l’assistance ou au transporteur nommé d’expliquer un incident plutôt que de transformer un libellé générique de centre en diagnostic."
+        ]
+      },
+      {
+        "heading": "Identifiez le transporteur du dernier kilomètre au Royaume-Uni",
+        "paragraphs": [
+          "Un numéro international peut ensuite correspondre à une référence britannique. Cherchez le nom d’un partenaire, un nouveau numéro sur la commande ou un événement de transfert. Essayez le même numéro sur le site officiel du transporteur nommé ; certains réseaux acceptent la référence initiale. Enregistrez le nouveau numéro en le reliant à l’original plutôt qu’en le remplaçant, car l’assistance peut utiliser l’un ou l’autre.",
+          "Une fois le colis chez le transporteur britannique, ses consignes et preuves deviennent généralement plus pertinentes pour la distribution finale que l’agrégateur en amont. Vérifiez en privé adresse complète, préférences, lieu de dépôt et modalités d’accès. S’il propose une photo de livraison ou une confirmation GPS, conservez-la. Ne changez pas la destination via un lien reçu dans un SMS non vérifié : ouvrez indépendamment le site officiel du transporteur."
+        ]
+      },
+      {
+        "heading": "Rapprochez les envois séparés avant de déclarer un article manquant",
+        "paragraphs": [
+          "Hacoo indique que les articles disponibles peuvent partir séparément des précommandes ou réapprovisionnements. Une commande peut donc générer plusieurs historiques de suivi. Créez un tableau indiquant ligne d’article, date d’expédition, numéro de suivi et réception. À l’arrivée d’un colis, photographiez son étiquette et listez son contenu avant de conclure qu’un autre article manque.",
+          "Si un article apparaît expédié sans numéro correspondant, gardez ce statut et demandez à l’assistance quelle référence s’applique. S’il n’est pas encore expédié, ce n’est pas encore une perte chez le transporteur. Garder articles et colis dans des dossiers distincts évite les signalements contradictoires et aide l’assistance à déterminer si la question porte sur le stock, le départ, le transit international ou la livraison finale."
+        ]
+      },
+      {
+        "heading": "Quand contacter le transporteur et quand contacter Hacoo",
+        "paragraphs": [
+          "Contactez le transporteur lorsqu’il contrôle la dernière étape : problème d’accès à l’adresse, tentative échouée, colis retenu, scan livré ou incident britannique. Contactez la plateforme si la commande n’est pas partie comme prévu, si la référence est invalide dans tous les systèmes nommés, si articles et colis ne peuvent être rapprochés ou si le parcours d’assistance de la commande vous y dirige. Dans les deux cas, fournissez le dernier événement vérifié et, si nécessaire, la référence du dossier de l’autre partie.",
+          "La page publique Hacoo demande aux utilisateurs d’un colis livré mais absent de le signaler au transporteur concerné. Vérifiez d’abord foyer, accueil, voisins et lieux de dépôt. Demandez une référence de dossier ou les détails du scan, puis conservez la réponse. Si le colis apparaît plus tard, mettez les deux dossiers à jour. Une chaîne de contacts claire est plus convaincante que la même plainte vague envoyée simultanément à plusieurs organismes."
+        ]
+      },
+      {
+        "heading": "Créez une chronologie lisible par l’assistance",
+        "paragraphs": [
+          "Utilisez cinq colonnes : date et heure, source, statut exact, lieu et interprétation. La source peut être Hacoo, une page logistique internationale ou le transporteur britannique. Gardez l’interprétation séparée pour ne pas transformer « départ du centre » en « sortie du pays » sans que l’événement le dise. Ajoutez les tentatives de contact et références de dossiers sous la chronologie. Cette structure expose objectivement mouvements et silences.",
+          "Stockez les captures en privé avec des noms fondés sur la date et l’événement. Masquez les copies publiques. N’indiquez la référence de commande que dans le canal officiel d’assistance. Un résumé utile pourrait dire : départ le 20 septembre, première prise en charge le 22, dernier scan d’exportation le 25, aucun événement ultérieur au 4 octobre, toujours dans l’estimation ou au-delà. C’est plus exploitable que « le suivi ne bouge plus depuis une éternité »."
+        ]
+      },
+      {
+        "heading": "Une règle de décision pour un suivi retardé ou absent",
+        "paragraphs": [
+          "Sans scan physique de prise en charge, concentrez-vous sur la confirmation d’expédition et la plateforme. Si le transit international est visible et que la commande reste dans l’estimation, surveillez à intervalles mesurés. En cas d’incident transporteur, suivez ses consignes officielles. Si l’estimation est dépassée sans mouvement, préparez la chronologie et utilisez l’assistance actuelle. Si le colis est marqué livré mais absent, faites les vérifications locales et ouvrez rapidement un dossier transporteur.",
+          "Le suivi ne garantit pas la livraison, mais peut identifier l’étape responsable. Une bonne méthode britannique conserve les références d’origine, reconnaît les envois séparés, évite la publication des numéros et demande une intervention à partir du dernier événement vérifié. Elle transforme ainsi un retard vague en question précise à laquelle une équipe de transporteur ou de plateforme pourra mieux répondre.",
+          "Après réception, n’effacez pas immédiatement le dossier. Conservez étiquette et chronologie jusqu’à la vérification du nombre et de l’état des articles et à l’expiration de toute période après-vente pertinente. Notez la date réelle de réception, pas seulement celle estimée par le transporteur, car des preuves ultérieures peuvent partir de cet événement. Si scan livré et réception physique tombent à des jours différents, gardez les deux faits. Un historique complet distingue un problème de données de suivi d’un problème de préparation ou de produit et évite de fonder une demande ultérieure sur une date approximative.",
+          "Gardez toute référence de dossier du transporteur à côté de l’événement final de livraison pour comprendre l’historique complet sans rouvrir d’anciens messages."
+        ]
+      }
+    ],
+    "takeaways": [
+      "Un numéro ne prouve pas la prise en charge.",
+      "Une période internationale sans mise à jour peut être normale.",
+      "Conservez les références internationale et britannique.",
+      "Reliez chaque colis à ses lignes d’articles.",
+      "Demandez une intervention à partir du dernier événement vérifié."
+    ]
+  },
+  "articles/hacoo-uk-vat-customs": {
+    "title": "TVA et douane Hacoo au Royaume-Uni : les coûts à vérifier en 2026",
+    "intro": "Appliquez les règles GOV.UK actuelles aux biens expédiés de l’étranger, distinguez TVA, droits de douane et frais de livraison et ne confondez pas prix affiché et coût total rendu.",
+    "minutes": 8,
+    "published": "2026-09-18",
+    "reviewed": "2026-10-10",
+    "sources": [
+      {
+        "label": "GOV.UK — fiscalité et douane pour les biens envoyés de l’étranger",
+        "href": "https://www.gov.uk/goods-sent-from-abroad/tax-and-duty"
+      },
+      {
+        "label": "Expédition et livraison Hacoo — estimation britannique, traitement, commandes fractionnées et après-vente",
+        "href": "https://web.hacoo.app/en-US/pages/shipping-info"
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Pourquoi le prix affiché ne résume pas le coût au Royaume-Uni",
+        "paragraphs": [
+          "Une carte produit ou un écran peut afficher un prix sans préciser l’origine d’expédition, l’inclusion de la TVA, le franchissement d’un seuil douanier ou l’ajout de frais de dossier par le transporteur. Pour planifier au Royaume-Uni, utilisez le récapitulatif final et l’origine de l’envoi comme preuves, puis appliquez les règles gouvernementales actuelles. Ne promettez pas « aucun frais de douane » simplement parce qu’un autre acheteur n’a rien payé pour un colis plus petit ou organisé différemment.",
+          "GOV.UK indique que la TVA s’applique aux biens envoyés de l’extérieur du Royaume-Uni vers la Grande-Bretagne, sous réserve de l’exception publiée pour les cadeaux, et décrit différents moments de perception selon la valeur et les circonstances. Le site précise aussi que Royal Mail, Parcelforce ou un transporteur contacte le destinataire si TVA, droits ou frais de livraison doivent être payés pour recevoir les biens. L’avis officiel, et non un message dans un groupe social, constitue la référence pertinente pour le paiement."
+        ]
+      },
+      {
+        "heading": "Comprenez le seuil de valeur de 135 £",
+        "paragraphs": [
+          "Pour des biens d’une valeur totale de 135 £ ou moins, GOV.UK indique que le vendeur inclut généralement la TVA dans le montant à l’achat lorsqu’il ne s’agit pas de produits soumis à accise. Au-delà de 135 £, la société de livraison peut percevoir la TVA avant livraison ou retrait. Pour la Grande-Bretagne, la page précise également que des droits de douane peuvent s’appliquer aux biens envoyés de l’extérieur du Royaume-Uni lorsqu’ils dépassent 135 £ ou sont soumis à accise.",
+          "L’analyse du seuil repose sur l’envoi concerné et les définitions gouvernementales, pas sur un fractionnement informel imaginé après paiement. Gardez visibles valeur des biens, port, emballage et assurance dans votre dossier. GOV.UK précise que la TVA perçue à la livraison peut être calculée sur la valeur totale du colis incluant ces éléments et les droits dus. Si le récapitulatif est ambigu, notez l’incertitude au lieu de calculer un total assuré à partir du seul prix de l’article."
+        ]
+      },
+      {
+        "heading": "TVA, droits de douane et frais du transporteur sont distincts",
+        "paragraphs": [
+          "La TVA est une taxe sur la consommation. Les droits de douane dépendent notamment de la valeur, du type et de l’origine des biens. Un transporteur ou opérateur postal peut aussi facturer la gestion ou l’administration de livraison. Ce sont des lignes distinctes même lorsqu’une seule entreprise les encaisse. Demandez à quelle ligne correspond l’avis avant de le contester. Des frais présentés comme frais de transporteur ne sont pas automatiquement des droits de douane, et un montant de TVA ne prouve pas que des droits ont également été perçus.",
+          "GOV.UK précise que le taux de droits au-delà de 135 £ dépend de la nature et de l’origine des biens, et oriente vers son service Trade Tariff. Un guide Hacoo indépendant ne devrait pas inventer un pourcentage universel pour vêtements, chaussures ou accessoires. Classification et origine peuvent modifier le résultat. Si le montant potentiel influence la décision, consultez le tarif gouvernemental ou sollicitez un conseil compétent avec les caractéristiques réelles du produit."
+        ]
+      },
+      {
+        "heading": "Grande-Bretagne et Irlande du Nord ne sont pas des cas identiques",
+        "paragraphs": [
+          "La page GOV.UK distingue Grande-Bretagne et Irlande du Nord pour les biens envoyés de l’étranger. Elle explique des notions supplémentaires pour l’Irlande du Nord, notamment le risque que les biens entrent dans l’Union européenne. Un guide parlant de « douane britannique » sans demander la destination peut donc être incomplet. Notez Angleterre, Écosse, pays de Galles ou Irlande du Nord comme région de destination avant d’appliquer un résumé.",
+          "Ne transposez pas le résultat de Grande-Bretagne à une commande d’Irlande du Nord, ni l’inverse. Le transporteur peut expliquer au destinataire le traitement de l’envoi, tandis que GOV.UK fournit le cadre actuel. Si destination ou origine sont ambiguës, suspendez l’estimation. Un budget sert à montrer l’inconnu, pas à le faire disparaître derrière une moyenne éventuellement inapplicable."
+        ]
+      },
+      {
+        "heading": "Reconnaître une demande de paiement légitime",
+        "paragraphs": [
+          "GOV.UK indique que l’opérateur postal ou le transporteur contacte le destinataire si un paiement est nécessaire et envoie une facture précisant les frais. Traitez prudemment un lien SMS inattendu. Vérifiez la référence sur le site officiel du transporteur ouvert indépendamment, comparez montant et colis et utilisez le moyen de paiement confirmé par celui-ci. Ne fournissez pas vos identifiants Hacoo pour payer un avis de douane.",
+          "Un véritable avis doit correspondre à un colis attendu et expliquer les frais. Les messages frauduleux créent souvent un sentiment d’urgence, utilisent un domaine ressemblant à l’original ou demandent un petit paiement de nouvelle livraison sans rapport avec le suivi officiel. Gardez le message sans cliquer, puis ouvrez vous-même le site du transporteur. Si le compte et le transporteur ne confirment pas les frais demandés, contactez ce dernier via son assistance publiée."
+        ]
+      },
+      {
+        "heading": "Préparez un relevé du coût total rendu avant de payer",
+        "paragraphs": [
+          "Commencez par total des articles choisis, remise, livraison et toute ligne fiscale affichée au paiement. Ajoutez origine d’expédition si indiquée, région de destination, valeur totale des biens et éventuel fractionnement. Créez des champs séparés pour TVA affichée, TVA à l’importation potentielle, droits possibles et frais possibles du transporteur. En l’absence de preuve, indiquez « inconnu » plutôt que zéro. Cela évite de présenter le prix de l’article comme un coût livré garanti.",
+          "Utilisez les livres sterling pour la planification, mais gardez devise originale et informations de change du paiement réel. La conversion de la carte ou du prestataire peut différer d’un taux de référence. Évitez de publier un équivalent GBP fixe qui deviendra périmé. La comparaison utile porte sur le récapitulatif de transaction et le relevé ultérieur de carte ou du transporteur, avec leurs dates, plutôt que sur un paiement actuel et un ancien taux cité par un blog."
+        ],
+        "bullets": [
+          "Valeur des biens sélectionnés",
+          "Port et emballage",
+          "TVA affichée au paiement",
+          "Droits éventuels",
+          "Frais éventuels du transporteur",
+          "Conversion de la devise du paiement"
+        ]
+      },
+      {
+        "heading": "Que se passe-t-il si les biens sont retournés ?",
+        "paragraphs": [
+          "GOV.UK fournit des démarches pour demander un remboursement de TVA ou de droits de douane lorsque les biens sont retournés ou qu’une personne estime avoir payé trop de taxes. Le formulaire approprié dépend de la livraison par Royal Mail, Parcelforce ou un autre transporteur. Gardez avis de frais d’importation, preuve de paiement, preuve du retour et dossier de remboursement de la plateforme. Un remboursement de plateforme ne restitue pas forcément automatiquement une somme d’importation encaissée séparément.",
+          "Suivez les instructions et échéances gouvernementales actuelles au lieu de supposer que transporteur ou vendeur coordonnera tout. Ne jetez pas une étiquette douanière à réception si un retour est possible. Si seule une partie de l’envoi est retournée, le calcul peut être plus complexe ; fournissez les documents réels pour demander conseil. Cet article propose une méthode de dossier, pas un conseil fiscal individuel."
+        ]
+      },
+      {
+        "heading": "Décider prudemment du coût britannique",
+        "paragraphs": [
+          "Avant de payer, confirmez récapitulatif final, destination, valeur des biens et formulation fiscale. Lisez les consignes GOV.UK actuelles sur les envois étrangers. Si la commande dépasse 135 £ ou contient des biens au traitement particulier, ne vous fiez pas à un calculateur générique. Prévoyez une réserve lorsque perception fiscale par le vendeur ou origine d’expédition sont incertaines. Si un avis de frais arrive, vérifiez-le indépendamment auprès du transporteur nommé.",
+          "La réponse honnête à « Hacoo entraîne-t-il des frais de douane au Royaume-Uni ? » dépend des conditions. Le résultat varie avec l’envoi, l’origine, la valeur, le type de biens, la destination et les sommes déjà perçues. Un bon guide remplace une promesse oui ou non par une liste vérifiable. Cela paraît moins simple, mais reste bien plus utile que de découvrir après le départ qu’une inconnue avait été enregistrée à tort comme zéro.",
+          "Consultez à nouveau la page gouvernementale le jour de la décision : seuils fiscaux, procédures et pratiques de perception des transporteurs peuvent évoluer après la publication d’un article."
+        ]
+      }
+    ],
+    "takeaways": [
+      "Le prix d’un article n’est pas toujours le coût total rendu.",
+      "Appliquez prudemment le seuil de 135 £.",
+      "TVA, droits et frais du transporteur diffèrent.",
+      "L’Irlande du Nord exige un traitement distinct.",
+      "Vérifiez les demandes de paiement sur le site officiel du transporteur."
+    ]
+  },
+  "articles/hacoo-order-checklist-uk": {
+    "title": "Commande Hacoo au Royaume-Uni : 12 vérifications avant paiement",
+    "intro": "Effectuez ces 12 contrôles au paiement final : option, mesures, adresse britannique, livraison, coût total et conditions après-vente acceptées.",
+    "minutes": 8,
+    "published": "2026-09-18",
+    "reviewed": "2026-10-10",
+    "sources": [
+      {
+        "label": "Site officiel Hacoo — présentation de la plateforme et modèle communautaire",
+        "href": "https://www.hacoo.app/"
+      },
+      {
+        "label": "Expédition et livraison Hacoo — estimation britannique, traitement, commandes fractionnées et après-vente",
+        "href": "https://web.hacoo.app/en-US/pages/shipping-info"
+      },
+      {
+        "label": "GOV.UK — fiscalité et douane pour les biens envoyés de l’étranger",
+        "href": "https://www.gov.uk/goods-sent-from-abroad/tax-and-duty"
+      },
+      {
+        "label": "Centre d’aide Hacoo — consignes de retour physique autorisé",
+        "href": "https://act.hacoo.app/act/sara/helpcenter/home/qa3"
+      }
+    ],
+    "sections": [
+      {
+        "heading": "1–2 : reconfirmez l’usage de l’article et la destination britannique",
+        "paragraphs": [
+          "Il s’agit du contrôle final du paiement pour un candidat sélectionné. Si vous comparez encore plusieurs produits, commencez par la fiche de préparation distincte. Ici, la tâche consiste à comparer le récapitulatif actif à la décision déjà documentée, repérer les changements de dernière minute et conserver la preuve de ce que vous soumettez réellement.",
+          "Écrivez d’abord l’usage réel en une phrase : quotidien, cadeau, voyage, événement ou remplacement précis. Ajoutez la dernière date d’arrivée utile et les caractéristiques indispensables. Cela évite qu’une publication séduisante modifie l’objectif en cours de route. Un prix bas n’est pas utile si taille, fonction ou calendrier ne répondent pas au besoin initial.",
+          "Ensuite, définissez la véritable destination Royaume-Uni et notez version de l’application et date. Une trouvaille partagée sous une autre région peut ne pas se reproduire ou afficher des options différentes. N’utilisez pas de fausse adresse ni de VPN pour forcer sa visibilité. Le but est de déterminer si l’article convient aux conditions de la commande réelle, pas s’il peut apparaître quelque part sur un écran."
+        ],
+        "bullets": [
+          "Usage prévu",
+          "Caractéristiques indispensables",
+          "Dernière date d’arrivée utile",
+          "Véritable pays de livraison",
+          "Version de l’application et date du contrôle"
+        ]
+      },
+      {
+        "heading": "3–4 : vérifiez l’article et figez l’option exacte",
+        "paragraphs": [
+          "Troisièmement, comparez titre, première image, type d’article et identifiant de la destination à la trouvaille enregistrée. Une URL ouvrant un autre produit n’est pas une correspondance valable. Déterminez s’il s’agit d’un accès officiel Hacoo ou d’un catalogue externe. Un index indépendant peut faciliter la découverte, mais ne garantit ni stock, vendeur, qualité ni transaction affichée dans l’application Hacoo.",
+          "Quatrièmement, sélectionnez couleur, taille, lot et quantité exacts avant de lire le prix final. Capturez l’écran après sélection : l’état initial peut afficher l’option la moins chère plutôt que celle illustrée. Si un changement d’option modifie photo, description de matière ou délai, enregistrez l’état choisi comme candidat distinct. Ne fusionnez pas les preuves de deux variantes en une seule décision."
+        ]
+      },
+      {
+        "heading": "5–6 : comparez mesures et avis documentés",
+        "paragraphs": [
+          "Cinquièmement, enregistrez le tableau actuel et mesurez un article comparable que vous possédez. Utilisez les centimètres et la même méthode : largeur de poitrine à plat, longueur du corps, épaules, manches, taille, fourche, entrejambe ou longueur intérieure des chaussures selon le cas. Identifiez la dimension déterminante. Une étiquette UK ou UE familière n’est qu’un départ, et prendre automatiquement plus grand peut créer un autre problème de coupe.",
+          "Sixièmement, lisez les éléments récents de la variante choisie. Cherchez observations répétées et photos utiles, pas seulement une moyenne élevée. Séparez coupe, fabrication, couleur, livraison et assistance. Vérifiez que les auteurs montrent la même option. Si les preuves sont rares, notez une confiance faible. Un avis sur une autre couleur peut renseigner la forme générale sans établir la matière, les mesures ou les éléments inclus de votre choix."
+        ]
+      },
+      {
+        "heading": "7–8 : vérifiez calendrier et risque d’envois séparés",
+        "paragraphs": [
+          "Septièmement, utilisez l’estimation actuelle Hacoo de 15 à 25 jours au Royaume-Uni comme repère et lisez celle de la commande réelle. La page officielle précise que réception signifie traitement plus transport et que les dates ne sont pas garanties. Partez de votre échéance avec une marge pour traitement, transit, tentatives de livraison et inspection. Si la date limite de décision est dépassée, choisissez une alternative au lieu de convertir une estimation en promesse.",
+          "Huitièmement, vérifiez si un article est en précommande ou en attente de réapprovisionnement. Hacoo indique que les articles disponibles peuvent partir séparément des articles retardés. Une commande multiple peut donc produire plusieurs colis et calendriers. Notez les lignes susceptibles d’être séparées. Si plusieurs réceptions compliqueraient l’accès, un voyage ou une échéance, intégrez cela à la décision avant paiement."
+        ]
+      },
+      {
+        "heading": "9 : relisez l’adresse britannique sur l’écran final",
+        "paragraphs": [
+          "Confirmez nom du destinataire, numéro de maison ou d’appartement, rue, localité, code postal et pays. Pour résidences, bureaux, bâtiments fermés ou entrées partagées, utilisez uniquement les champs et consignes du parcours actuel. N’ajoutez pas de détails personnels inutiles. Lisez l’adresse à voix haute depuis le dernier écran et comparez-la à une source fiable plutôt que de supposer l’autoremplissage correct.",
+          "La page de livraison Hacoo attribue à l’acheteur la responsabilité de l’adresse correcte et recommande un contact immédiat en cas d’erreur. Le contrôle avant paiement est donc bien plus sûr que l’espoir d’une modification ultérieure. Si une ligne obligatoire est ambiguë, suspendez. Prenez une capture privée du récapitulatif de l’adresse et gardez-la hors des avis ou publications publiques sur le suivi."
+        ]
+      },
+      {
+        "heading": "10 : contrôlez le coût final et l’incertitude fiscale",
+        "paragraphs": [
+          "Lisez total des biens sélectionnés, remises, frais de livraison, mentions fiscales, devise et montant final. Les règles GOV.UK pour les biens étrangers dépendent de la valeur, de l’origine, de la destination et du type de biens. Ne supposez pas qu’un petit prix affiché prouve l’absence ultérieure de TVA, de droits ou de frais de transporteur. Indiquez toute charge non résolue comme inconnue, pas zéro.",
+          "Au-delà de 135 £, ou si traitement de la TVA par le vendeur et origine sont flous, consultez les consignes GOV.UK actuelles et prévoyez une réserve. Séparez devise de transaction et conversion ultérieure de la carte. Un taux de référence n’est pas un taux garanti par le prestataire de paiement. Le but n’est pas de prédire chaque penny, mais d’empêcher des suppositions cachées de faire paraître la commande moins chère que ne le permettent les preuves."
+        ]
+      },
+      {
+        "heading": "11 : enregistrez les règles et les preuves visibles",
+        "paragraphs": [
+          "Avant paiement, conservez option exacte, tableau, délai, récapitulatif final et texte après-vente affiché. La page publique de livraison Hacoo évoque une période de demande de 15 jours sans retour, tandis que l’aide détaillée décrit des retours physiques autorisés avec exclusions. Vérifiez le processus rattaché à la commande et demandez une clarification des contradictions. N’évaluez pas le coût sur l’hypothèse d’un retour gratuit ou d’un remboursement garanti. La capture des règles documente ce qui était visible sans promettre le résultat.",
+          "Stockez les fichiers en privé avec des noms clairs. Gardez les originaux et ne créez des copies masquées que si nécessaire. Retirez de toute publication adresse complète, courriel, téléphone, référence de commande, suivi, code-barres et données de paiement. Une capture doit prouver option ou statut en exposant le minimum de données privées. Qualité des preuves et confidentialité sont compatibles lorsque le dossier est conçu avant un problème."
+        ]
+      },
+      {
+        "heading": "12 : décidez de poursuivre, suspendre ou arrêter",
+        "paragraphs": [
+          "Poursuivez quand identité de l’article, option exacte, mesure essentielle, véritable région, adresse, calendrier et coût sont suffisamment étayés. Suspendez lorsqu’une mesure manquante, un frais ambigu ou une ligne d’adresse peut raisonnablement être résolu. Arrêtez si une exigence indispensable est contredite, si la destination a changé d’identité, si la commande ne peut respecter la vraie échéance ou si la page exige un parcours risqué. Renoncer à acheter peut prouver que la liste a bien fonctionné.",
+          "Écrivez la raison en une phrase avant paiement. Si elle dépend de mots comme probablement, tout le monde ou garanti sans source, revenez au champ fragile. La liste ne garantit ni qualité, ni livraison, ni remboursement. Elle produit une décision britannique traçable et un dossier compact. C’est plus utile qu’un tableau parfait en apparence incapable d’expliquer l’option, la région ou la règle applicable au moment de commander.",
+          "Refaites les douze contrôles si vous revenez à la commande plus tard. Un panier enregistré ne fige ni stock, option, prix, tableau, texte de livraison ni adresse. Comparez l’état actuel au dossier et actualisez la date de décision. Si un élément important a changé, ne réutilisez pas automatiquement l’ancienne validation. Deux minutes de contrôle sont particulièrement utiles après une promotion, une mise à jour ou une modification d’adresse : une page familière peut cacher une variante ou un total différent."
+        ]
+      }
+    ],
+    "takeaways": [
+      "Définissez le besoin avant de naviguer.",
+      "Vérifiez région, article et option exacte.",
+      "Comparez mesures et preuves propres à la variante.",
+      "Contrôlez calendrier, adresse et incertitude fiscale.",
+      "Choisissez poursuivre, suspendre ou arrêter."
+    ]
+  },
+  "articles/hacoo-not-showing-products-uk": {
+    "title": "Hacoo n’affiche pas les produits au Royaume-Uni : recherche et région",
+    "intro": "Si la recherche Hacoo ne fonctionne pas ou si des produits manquent, distinguez un article indisponible d’un problème général, puis vérifiez véritable région britannique, version et contexte du lien.",
+    "minutes": 10,
+    "published": "2026-10-10",
+    "reviewed": "2026-10-10",
+    "sections": [
+      {
+        "heading": "Commencez par identifier ce qui manque réellement",
+        "paragraphs": [
+          "Si Hacoo n’affiche pas les produits, aucun réglage vérifié ne permet de débloquer tous les articles. Distinguez d’abord trois observations : rien ne charge, la recherche s’exécute sans correspondance, ou un seul lien partagé échoue tandis que le reste fonctionne. Elles conduisent à des contrôles différents. Un chargement défaillant invite à vérifier application et connexion. Une requête vide invite à simplifier la recherche et contrôler le contexte. Une seule fiche indisponible invite à vérifier identifiant et source. Aucun de ces cas ne prouve à lui seul une interdiction régionale, une sanction du compte ou une panne générale.",
+          "Le site public actuel de Hacoo décrit une communauté de partage et de découverte de contenu. Il ne faut pas supposer qu’elle expose à chaque visiteur un catalogue permanent et identique. Ce guide propose une méthode de dépannage reproductible fondée sur les accès officiels et les observations enregistrées ; il ne prétend pas avoir diagnostiqué votre compte en pratique. Effectuez les contrôles une fois, dans l’ordre, pour obtenir soit un résultat utilisable, soit une question claire à transmettre à l’assistance."
+        ]
+      },
+      {
+        "heading": "Enregistrez l’état initial avant de modifier les réglages",
+        "paragraphs": [
+          "Notez nom de l’application, version installée, système de l’appareil, état de connexion et pays affiché dans le compte. Indiquez séparément la véritable destination de livraison. Conservez requête exacte ou URL partagée, heure et libellé de l’erreur. Une capture masquant les données personnelles est plus utile qu’une description comme « tout a disparu ». Si un seul écran échoue, notez ceux qui fonctionnent encore. Gardez l’original en privé s’il contient un nom de compte ou des informations de commande.",
+          "Ne changez qu’un élément à la fois. Mettre à jour l’application, changer de réseau, de compte et de requête simultanément empêche d’identifier la différence décisive. Un journal simple comporte trois champs : contrôle effectué, résultat observé et prochaine question. Par exemple, « le contenu ordinaire charge ; la recherche sweat bleu ne trouve rien ; le lien enregistré affiche un message de page supprimée » décrit mieux un problème de découverte que d’accuser toute l’application. N’incluez ni mots de passe ni codes de connexion dans ce journal."
+        ]
+      },
+      {
+        "heading": "Vérifiez d’abord l’application et la connexion",
+        "paragraphs": [
+          "Utilisez l’accès à l’application depuis le site officiel Hacoo ou sa fiche vérifiée Apple ou Google. Comparez nom et développeur à cette source avant toute mise à jour. Un téléchargement modifié promettant de révéler des marques cachées ajoute un problème de confiance sans expliquer l’échec initial. Si une mise à jour est proposée, lisez ses exigences et suivez la procédure normale de la boutique. Fermez puis rouvrez l’application et répétez exactement le test enregistré.",
+          "Si plusieurs écrans ordinaires échouent aussi, testez une page connue comme fonctionnelle sur la même connexion. Si c’est pratique, essayez une autre connexion de confiance et répétez la même requête. Un résultat différent suggère un facteur de connexion à signaler ; il ne prouve pas un diagnostic réseau précis. Évitez de supprimer d’abord l’application ou ses données, surtout si vous ignorez quelle méthode de connexion contient l’historique de commandes. Confirmez les possibilités de récupération auprès du service officiel avant toute réinitialisation."
+        ]
+      },
+      {
+        "heading": "Vérifiez la véritable région britannique sans la falsifier",
+        "paragraphs": [
+          "Confirmez le pays affiché dans le compte et la destination que vous utiliserez réellement. Réglage régional du téléphone, pays de la boutique et adresse de livraison sont des éléments distincts ; ne supposez pas qu’en modifier un change automatiquement les trois. Notez toute incohérence. Si l’interface propose un réglage légitime pour votre vrai pays, utilisez-le puis répétez la requête initiale. Si ce réglage n’apparaît pas ou produit une erreur, demandez à l’assistance comment la corriger.",
+          "Une capture de créateur provenant d’un autre pays ne prouve pas que le même article peut être commandé à une adresse britannique. Inversement, une recherche britannique vide ne prouve pas que chaque article absent subit une restriction régionale. N’utilisez ni fausse adresse, ni compte emprunté, ni astuce de localisation pour fabriquer un résultat. Un résultat obtenu dans des conditions inutilisables au paiement est une mauvaise piste d’achat. L’objectif est une découverte fiable dans votre vrai compte, pas une capture qui semble simplement réussie."
+        ]
+      },
+      {
+        "heading": "Commencez par une description courte, puis précisez",
+        "paragraphs": [
+          "Si la recherche Hacoo ne renvoie rien, commencez par un type d’article ordinaire plutôt que par une longue légende promotionnelle : « zip hoodie », « running shoes » ou « shoulder bag », par exemple. Ajoutez ensuite une caractéristique visible, comme couleur ou forme, après avoir examiné le résultat large. Ce sont des exemples de stratégie de recherche, pas des promesses testées de stock actuel. Gardez des termes pertinents. Une légende copiée peut contenir un surnom, une référence arrêtée ou une expression de créateur que le moteur actuel ne reconnaît pas.",
+          "Si vous disposez d’un identifiant produit, conservez-le exactement et essayez la méthode de recherche prise en charge par la plateforme. Ne supposez pas qu’un identifiant de catalogue externe soit un code produit Hacoo. Si la recherche large fonctionne et la précise échoue, notez cette différence avant d’essayer une autre orthographe. Évitez des dizaines de requêtes presque identiques sans comparaison des résultats. L’objectif est de déterminer si la référence est trop précise, dépassée ou liée à une autre destination, pas d’inventer une explication sur le classement de recherche."
+        ]
+      },
+      {
+        "heading": "Vérifiez un lien partagé comme une référence indépendante",
+        "paragraphs": [
+          "Évaluez un lien produit par sa destination actuelle, pas seulement par son aperçu. Ouvrez la source originale, inspectez le domaine final et comparez titre, image principale, option sélectionnée et identifiant. Une URL peut encore charger alors que taille par défaut, lot ou produit ont changé. Si elle ouvre une page web exigeant une action dans l’application, revenez à l’accès officiel et suivez le parcours prévu plutôt que de donner vos identifiants à une imitation.",
+          "Ce site contient aussi des accès à des catalogues externes. Ces destinations ne sont pas le stock officiel Hacoo, et leurs résultats ne prouvent pas ce que votre compte Hacoo devrait afficher. Gardez les deux recherches séparées. Si une ancienne ligne pointe désormais ailleurs, traitez son remplacement comme un nouveau candidat et vérifiez de nouveau mesures, prix et conditions de livraison. Ne transférez pas avis ou affirmations de qualité simplement parce qu’il utilise une photo familière."
+        ]
+      },
+      {
+        "heading": "Quand des marques manquent, évitez une explication non étayée",
+        "paragraphs": [
+          "La requête « Hacoo not showing brands » décrit ce que l’utilisateur s’attendait à voir ; elle n’établit pas pourquoi cela manque. Termes recherchés, publication modifiée, disponibilité, contexte de l’interface et problème d’application non résolu sont des pistes possibles. Sans explication officielle du cas précis, présentez-les comme des possibilités. Ne promettez pas qu’un code secret, l’ancienneté du compte, une attente arbitraire ou un changement de pays rétablira une liste de marques.",
+          "Un nom de marque dans un titre ne prouve pas non plus authenticité, autorisation d’utiliser un logo ou qualité. Lorsqu’un résultat apparaît, reprenez les contrôles ordinaires plutôt que de supposer que résoudre la découverte résout l’achat. Confirmez option réelle, dimensions, vendeur ou destination, coût total et texte après-vente. Si la fiche manque d’informations nécessaires à son évaluation, la décision raisonnable peut toujours être de ne pas acheter."
+        ]
+      },
+      {
+        "heading": "Envoyez à l’assistance un rapport reproductible",
+        "paragraphs": [
+          "Utilisez le contact de l’application ou du site officiel. Décrivez écran, requête ou lien exacts et précisez si le reste du contenu charge. Fournissez version installée, système, véritable pays, heure approximative et contrôles déjà accomplis. Un rapport compact pourrait dire : « Dans mon compte britannique, le contenu ordinaire s’ouvre, mais cette référence enregistrée renvoie ce message après une mise à jour officielle. » L’assistance dispose ainsi d’un fait à examiner sans accusation d’une cause non vérifiée.",
+          "Si le problème concerne une commande existante, dites-le explicitement et utilisez l’assistance privée de cette commande. Un résultat de découverte absent ne prouve pas qu’une commande payée a été annulée ou perdue. Conservez les confirmations séparément. Ne communiquez identifiants de compte ou de commande que lorsque l’assistance officielle en a besoin ; n’envoyez jamais mot de passe, code à usage unique ou données complètes de carte à quelqu’un proposant de réparer la recherche dans un groupe de discussion."
+        ]
+      },
+      {
+        "heading": "Décidez quand réessayer et quand arrêter",
+        "paragraphs": [
+          "Réessayez lorsqu’une condition significative change : mise à jour officielle, correction du véritable pays, réponse de l’assistance ou nouvelle référence valide. Si un seul article reste indisponible, gardez la référence échouée et examinez un autre candidat selon ses propres qualités. Si tout reste inaccessible, conservez le rapport initial et attendez les instructions officielles au lieu de créer des comptes à répétition. Un résultat non résolu est plus utile qu’une solution inventée présentée avec assurance.",
+          "Quand un résultat fonctionne, notez les conditions de reproduction et passez aux vérifications habituelles du lien, des tailles et de la commande. Rétablir la recherche ne garantit ni stock, coupe, livraison ni acceptation d’un remboursement. Le critère pratique de réussite est plus limité : pouvoir ouvrir l’article actuel voulu dans votre véritable contexte britannique et expliquer sa vérification. Sinon, une demande claire à l’assistance ou la décision d’arrêter constitue une conclusion responsable."
+        ]
+      }
+    ],
+    "takeaways": [
+      "Distinguez un échec général de chargement d’une requête vide ou d’une seule fiche absente.",
+      "Notez version, véritable pays, référence exacte et erreur avant de changer quoi que ce soit.",
+      "Utilisez les mises à jour officielles et ne changez qu’un élément à la fois ; aucun réglage ne garantit les produits cachés.",
+      "Séparez les identifiants des catalogues externes des références officielles Hacoo.",
+      "Préparez un rapport reproductible et revérifiez l’article quand la recherche fonctionne."
+    ],
+    "sources": [
+      {
+        "label": "Site officiel Hacoo — présentation de la communauté et de la découverte",
+        "href": "https://www.hacoo.app/"
+      },
+      {
+        "label": "Apple App Store britannique — application officielle Hacoo et informations du développeur",
+        "href": "https://apps.apple.com/gb/app/hacoo-discovering-inspiring/id1399907836"
+      }
+    ]
+  },
+  "articles/hacoo-vs-dhgate-uk": {
+    "title": "Hacoo ou DHgate au Royaume-Uni : livraison, retours et découverte de produits",
+    "intro": "Comparez Hacoo et DHgate sur l’article exact, le coût livré au Royaume-Uni, les preuves de délai et les consignes après-vente, sans supposer qu’une plateforme est toujours moins chère ou plus rapide.",
+    "minutes": 10,
+    "published": "2026-10-10",
+    "reviewed": "2026-10-10",
+    "sections": [
+      {
+        "heading": "La comparaison utile porte sur deux offres documentées",
+        "paragraphs": [
+          "Pour un acheteur britannique, le choix entre Hacoo et DHgate ne se règle pas par une note d’application ou un récit de livraison d’un créateur. Il faut comparer les offres exactes disponibles pour vous : produit, option, quantité, destination, coût final et conditions après-vente. Des photos similaires ne prouvent pas mêmes fabricant, matières ou dimensions. Si ces champs manquent, les offres ne permettent pas encore une comparaison équitable de valeur, même si les prix affichés attirent.",
+          "Le site public Hacoo présente une communauté de partage et de découverte. La description officielle britannique de DHgate dans l’App Store présente une place de marché reliant directement acheteurs et vendeurs, avec achats à l’unité et en gros, filtres et avis clients. Cette distinction aide à comprendre des points de départ différents pour la recherche ; elle ne prouve pas qu’une plateforme a toujours meilleur stock, prix ou résultats. Il s’agit d’un cadre de décision fondé sur des sources, pas de l’affirmation que nous avons passé des commandes tests identiques sur les deux."
+        ]
+      },
+      {
+        "heading": "Découverte : de l’inspiration à une définition précise du besoin",
+        "paragraphs": [
+          "Hacoo peut servir de point de départ lorsqu’une publication ou recommandation donne une idée sans définir précisément l’article. Traduisez cette idée en caractéristiques avant de comparer : catégorie, forme, couleur, dimensions, description de matière et quantité. Une référence utile doit survivre à la disparition de la légende originale. Gardez identifiant et destination avec l’image. Si la découverte échoue, consultez le guide distinct sur recherche et région avant de considérer une autre application comme remplacement équivalent.",
+          "La fiche de DHgate décrit des filtres de recherche et des achats auprès de vendeurs, à l’unité ou en gros. En évaluant un résultat, contrôlez quantité et option choisies plutôt que de retenir le prix d’appel le plus bas. Une offre en gros et un article à usage personnel répondent à des besoins différents. Une personne cherchant des alternatives à Hacoo au Royaume-Uni doit d’abord définir ce qui manque à son parcours actuel : description plus claire, recherche utilisable, meilleur délai ou conditions après-vente documentées. Changer de plateforme n’aide que si l’alternative résout ce manque précis."
+        ]
+      },
+      {
+        "heading": "Créez un dossier comparatif unique pour les deux offres",
+        "paragraphs": [
+          "Créez deux colonnes et remplissez-les à partir de pages actuelles ouvertes pour la même véritable destination britannique. Écrivez « inconnu » lorsque l’information manque ; ne transformez pas un champ vide en coût nul ou hypothèse favorable. Gardez chaque capture datée : options, stock et promotions peuvent évoluer pendant la recherche. Rouvrez les sélections finales avant de décider. L’image initialement séduisante ne doit pas primer sur une description différente de la page active.",
+          "Le dossier minimal ci-dessous convient aux vêtements, chaussures et accessoires. Ajoutez un champ propre à la catégorie s’il change la décision, comme longueur intérieure ou présence d’une bandoulière. Si les offres ne peuvent pas être mises en correspondance, présentez-les comme des alternatives plutôt que des articles identiques et expliquez la différence pertinente."
+        ],
+        "bullets": [
+          "Identité : destination, vendeur ou source, identifiant et image principale actuelle.",
+          "Sélection : couleur, taille, quantité, éléments inclus et mesures annoncées.",
+          "Coût : biens sélectionnés, livraison, remises, devise et mentions fiscales.",
+          "Calendrier : traitement, délai estimé, origine si indiquée et marge avant échéance.",
+          "Après-vente : voie de demande, preuves, échéance et incertitude éventuelle sur le coût du retour."
+        ]
+      },
+      {
+        "heading": "Prix : comparez le panier final sélectionné",
+        "paragraphs": [
+          "Aucune plateforme ne peut être déclarée universellement moins chère sur la base d’une capture isolée. Sélectionnez la même quantité et l’option pertinente, saisissez la vraie destination et inspectez le récapitulatif final. Notez frais de livraison et conditions des remises. Un prix exigeant une quantité inutile ne doit pas être comparé directement au coût d’une unité. Un coupon inapplicable ne compte pas comme économie. Notez séparément devise réellement payée et montant converti à l’affichage.",
+          "Pour un calcul privé utile, partez du montant confirmé au paiement et listez dessous les frais non résolus. Un frais possible est une incertitude, ni automatiquement nul ni automatiquement dû. Suivez le guide britannique sur TVA et douane vers les sources gouvernementales actuelles si le traitement à l’importation compte. Ne devinez pas l’origine de l’envoi à partir de la marque de l’application. Incluez également le coût pratique d’une incompatibilité : un article apparemment bon marché peut perdre son avantage si dimensions ou conditions de livraison ne répondent pas au besoin."
+        ]
+      },
+      {
+        "heading": "Livraison : utilisez la commande, pas une course entre plateformes",
+        "paragraphs": [
+          "La page publique Hacoo annonce 15 à 25 jours de réception au Royaume-Uni et décrit un traitement habituel de trois à cinq jours ouvrés. Le délai de réception combine traitement et transport : n’ajoutez donc pas automatiquement le traitement une deuxième fois à la fourchette publiée. Ces indications ne garantissent pas une date. Elles précisent aussi que certains biens partent de vendeurs à l’étranger, sans désigner un pays ou entrepôt universel pour chaque commande.",
+          "Pour DHgate, inspectez méthode de livraison, informations de préparation et estimation attachées à l’offre du vendeur choisi et à votre destination. Nous n’avons pas établi de promesse officielle britannique unique valable pour tous les vendeurs et articles ; cet article n’en invente donc pas. Comparez les deux estimations réelles à votre dernière date d’arrivée utile. Si l’une laisse trop peu de marge pour retard et inspection, marquez-la inadaptée à l’échéance. Un avis exceptionnellement rapide ne remplace pas les conditions actuellement proposées."
+        ]
+      },
+      {
+        "heading": "Retours et remboursements : clarifiez les textes avant l’achat",
+        "paragraphs": [
+          "Les sources publiques Hacoo demandent une attention particulière. La page de livraison indique une demande après-vente possible dans les 15 jours suivant la réception et aucun retour nécessaire dans le processus décrit. Le centre d’aide détaillé décrit au contraire des retours physiques autorisés et des exclusions. Ces déclarations se contredisent ; aucune ne doit devenir une garantie universelle de remboursement sans retour. Enregistrez le texte propre à la commande et demandez à l’assistance officielle le processus applicable, notamment adresse, coût et exigences d’état d’un éventuel retour.",
+          "Pour DHgate, lisez les instructions actuelles de la commande et de la plateforme pour l’offre réelle. Ne transférez pas le délai Hacoo à DHgate et ne supposez pas qu’une conversation avec le vendeur remplace une procédure de plateforme. Notez voie de demande, échéance affichée, preuves demandées et partie annoncée comme responsable des frais de retour physique. Si ces informations sont floues, demandez une réponse écrite avant paiement. Ce comparatif ne détermine pas les droits légaux et ne garantit pas une réclamation réussie sur l’une ou l’autre plateforme. Un processus clair est un élément évaluable ; un remboursement supposé ne l’est pas."
+        ]
+      },
+      {
+        "heading": "Avis et qualité : comparez les preuves au même niveau",
+        "paragraphs": [
+          "Utilisez les preuves propres à l’article pour examiner l’option choisie et les avis sur la plateforme pour identifier des questions générales. Un commentaire sur l’interface ne prouve pas la fabrication d’une chaussure. Une plainte de livraison n’établit pas les dimensions d’une veste. Sur les deux plateformes, privilégiez des photos récentes identifiant l’option, puis cherchez la concordance de plusieurs observations précises. Séparez accusations non étayées et superlatifs promotionnels des preuves visibles.",
+          "Comparez forme générale, éléments fonctionnels et mesures avant les détails décoratifs. La même photo commerciale peut apparaître dans des contextes différents ; elle ne prouve donc ni biens identiques ni authenticité. Si une offre possède un tableau clair et des photos récentes pertinentes alors que l’autre n’a qu’une image soignée, notez l’écart de confiance. Ne comblez pas les preuves manquantes avec la note globale de la plateforme. Le guide des avis et photos de contrôle qualité explique un ordre d’inspection reproductible pour les deux candidats."
+        ]
+      },
+      {
+        "heading": "Choisissez selon la contrainte décisive",
+        "paragraphs": [
+          "Pour un achat à échéance, le calendrier le mieux documenté et une solution de repli réaliste comptent davantage qu’une petite économie affichée. Si la coupe est déterminante, un tableau utilisable et des mesures pertinentes valent plus que le nombre de résultats. Pour plusieurs unités, quantité et répartition des livraisons doivent être explicites. Déclarer une plateforme gagnante n’a aucun intérêt si son offre actuelle échoue sur la condition qui a motivé la recherche.",
+          "La décision pratique comporte trois issues. Poursuivez lorsque les preuves nécessaires d’identité, de coût, de calendrier et de règles répondent au besoin. Suspendez si une réponse précise peut combler un champ manquant. Rejetez si l’offre contredit une exigence non négociable. Appliquez le même seuil aux deux candidats. Si aucun ne convient, n’acheter ni l’un ni l’autre est un résultat valable ; une comparaison ne doit pas forcer l’achat simplement parce que deux marques ont été placées côte à côte."
+        ]
+      },
+      {
+        "heading": "Conservez les preuves avec la décision",
+        "paragraphs": [
+          "Avant paiement, enregistrez en privé option exacte, tableau de mesures, récapitulatif final, estimation de livraison et texte après-vente applicable. Après commande, ajoutez confirmation et événements du transporteur au même dossier. En cas de problème, décrivez l’écart réel avec dates et photos claires. Ne comptez pas sur un comparatif pour reconstituer l’option ou la règle vue. Le dossier de commande rend une explication ultérieure précise.",
+          "La question Hacoo ou DHgate trouve donc sa meilleure réponse pour un besoin à un instant donné. Le positionnement communautaire de Hacoo et la description de place de marché de DHgate expliquent des différences utiles de découverte ; l’offre réelle détermine l’achat. Revérifiez les sources lorsque vous reprenez une sélection enregistrée. Une comparaison mesurée reste utile malgré les changements de prix, de fiche ou d’interface, car sa conclusion repose sur des champs que vous pouvez contrôler à nouveau."
+        ]
+      }
+    ],
+    "takeaways": [
+      "Comparez options et quantités exactes, pas deux prix d’appel ou des photos similaires.",
+      "Hacoo met l’accent sur la découverte communautaire ; DHgate décrit des achats directs sur une place de marché de vendeurs.",
+      "Utilisez l’estimation réelle de la commande britannique ; aucune plateforme n’est prouvée toujours plus rapide.",
+      "Clarifiez les textes contradictoires de Hacoo et lisez séparément le processus propre à l’offre DHgate.",
+      "Choisissez l’offre répondant au besoin documenté, ou rejetez les deux si les preuves sont insuffisantes."
+    ],
+    "sources": [
+      {
+        "label": "Site officiel Hacoo — présentation de la communauté et de la découverte",
+        "href": "https://www.hacoo.app/"
+      },
+      {
+        "label": "Apple App Store britannique — présentation officielle de l’application et de la place de marché DHgate",
+        "href": "https://apps.apple.com/gb/app/dhgate-online-wholesale-stores/id905869418"
+      },
+      {
+        "label": "Expédition et livraison Hacoo — estimations par destination et texte après-vente",
+        "href": "https://web.hacoo.app/en-US/pages/shipping-info"
+      },
+      {
+        "label": "Centre d’aide Hacoo — processus de retour physique autorisé et exclusions",
+        "href": "https://act.hacoo.app/act/sara/helpcenter/home/qa3"
+      }
+    ]
+  }
+}

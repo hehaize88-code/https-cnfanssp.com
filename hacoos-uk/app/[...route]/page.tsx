@@ -4,7 +4,6 @@ import { SitePage } from "../site-page";
 import {
   locales,
   localeNames,
-  englishOnlyArticleKeys,
   pageKeys,
   pageMeta,
   routeFor,
@@ -16,12 +15,12 @@ type Props = { params: Promise<{ route: string[] }> };
 
 function resolveRoute(input: string[]): { locale: Locale; pageKey: PageKey } | null {
   const parts = [...input];
+  if (parts[0] === "en") return null;
   const locale: Locale = locales.includes(parts[0] as Locale)
     ? (parts.shift() as Locale)
     : "en";
   const key = parts.length ? parts.join("/") : "home";
   if (!pageKeys.includes(key as PageKey)) return null;
-  if (locale !== "en" && englishOnlyArticleKeys.has(key as PageKey)) return null;
   return { locale, pageKey: key as PageKey };
 }
 
@@ -31,7 +30,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!resolved) return {};
   const { locale, pageKey } = resolved;
   const meta = pageMeta[pageKey][locale];
-  const availableLocales = englishOnlyArticleKeys.has(pageKey) ? (["en"] as const) : locales;
+  const availableLocales = locales;
   const languages = Object.fromEntries(
     availableLocales.map((lang) => [lang, `https://hacoos.uk${routeFor(lang, pageKey)}`]),
   );

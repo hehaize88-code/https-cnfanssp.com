@@ -67,41 +67,6 @@ export const ui: Record<Locale, LocalizedUi> = {
   },
 };
 
-export type EvidenceFact = { value: string; label: string; note: string };
-
-export const evidenceFacts: Record<Locale, EvidenceFact[]> = {
-  en: [
-    { value: "10M+", label: "Google Play downloads", note: "Google Play listed Hacoo at more than ten million downloads when checked." },
-    { value: "15–25 days", label: "official UK delivery estimate", note: "Hacoo's official shipping guidance lists a 15–25 day estimate for the UK." },
-    { value: "15 days", label: "general return window", note: "The official policy lists exclusions and says exchanges are not currently supported." },
-    { value: "3.6 / 5", label: "Trustpilot snapshot", note: "3,274 reviews showed sharply mixed experiences; this is context, not a quality guarantee." },
-  ],
-  de: [
-    { value: "10 Mio.+", label: "Downloads bei Google Play", note: "Google Play führte Hacoo bei der Prüfung mit mehr als zehn Millionen Downloads." },
-    { value: "15–25 Tage", label: "offizielle UK-Lieferprognose", note: "Die offizielle Versandseite nennt für Großbritannien eine Schätzung von 15–25 Tagen." },
-    { value: "15 Tage", label: "allgemeine Rückgabefrist", note: "Die offizielle Regel nennt Ausnahmen und erklärt, dass derzeit kein Umtausch angeboten wird." },
-    { value: "3,6 / 5", label: "Trustpilot-Momentaufnahme", note: "3.274 Bewertungen zeigten stark gemischte Erfahrungen; das ist Kontext, keine Qualitätsgarantie." },
-  ],
-  fr: [
-    { value: "10 M+", label: "téléchargements Google Play", note: "Google Play affichait plus de dix millions de téléchargements lors de notre vérification." },
-    { value: "15–25 jours", label: "estimation officielle UK", note: "La page officielle de livraison indique une estimation de 15–25 jours pour le Royaume-Uni." },
-    { value: "15 jours", label: "délai général de retour", note: "La politique officielle prévoit des exclusions et indique que les échanges ne sont pas proposés actuellement." },
-    { value: "3,6 / 5", label: "instantané Trustpilot", note: "3 274 avis montraient des expériences très partagées; ce chiffre ne garantit pas la qualité." },
-  ],
-  es: [
-    { value: "10 M+", label: "descargas en Google Play", note: "Google Play mostraba más de diez millones de descargas en la fecha de revisión." },
-    { value: "15–25 días", label: "estimación oficial UK", note: "La página oficial de envío indica una estimación de 15–25 días para el Reino Unido." },
-    { value: "15 días", label: "plazo general de devolución", note: "La política oficial incluye excepciones e indica que actualmente no hay cambios." },
-    { value: "3,6 / 5", label: "captura de Trustpilot", note: "3.274 reseñas mostraban experiencias muy divididas; es contexto, no una garantía de calidad." },
-  ],
-  it: [
-    { value: "10 M+", label: "download su Google Play", note: "Google Play indicava oltre dieci milioni di download alla data della verifica." },
-    { value: "15–25 giorni", label: "stima ufficiale UK", note: "La pagina ufficiale di spedizione indica 15–25 giorni per il Regno Unito." },
-    { value: "15 giorni", label: "termine generale di reso", note: "La politica ufficiale prevede esclusioni e precisa che al momento non sono disponibili cambi." },
-    { value: "3,6 / 5", label: "istantanea Trustpilot", note: "3.274 recensioni mostravano esperienze molto contrastanti; è un contesto, non una garanzia." },
-  ],
-};
-
 const enChecklists: Partial<Record<PageKey, string[]>> = {
   spreadsheet: ["Record the product ID as the stable reference before comparing any copied link.", "Open the destination and match its first image, title, selected option and source price as one set.", "Mark a route as changed when the URL works but any identity field points to a different item.", "Keep one current row per product ID and move duplicate or expired routes into the update record.", "Recheck the destination on mobile because regional app routing can differ from a desktop browser."],
   finds: ["Treat each card as a dated route check, not a permanent availability promise.", "Use the product ID to distinguish a real update from a repost with a new caption.", "Compare the card image with the destination before relying on category, style or price labels.", "If a variant disappears, keep the route only when the remaining listing still identifies the same product.", "Save a replacement route only after the title, image, option and source price agree."],
@@ -165,12 +130,12 @@ export const pageChecklists: Record<Locale, Partial<Record<PageKey, string[]>>> 
 export const pageExplanations: Record<Locale, Partial<Record<PageKey, string>>> = {
   en: {
     spreadsheet: "Hacoo's official materials describe a community-driven discovery and content-sharing platform, not a permanent public product database. That is why this index treats every spreadsheet row as a dated research record. A useful record keeps the product ID, current title, first image, selected option, source price, region and check date together. If one identity field changes, the route needs a fresh review even when the URL still opens.",
-    finds: "A checked find proves only that the route and visible identity fields matched on the review date. It does not prove stock, delivery, quality or platform approval. Hacoo's Trust Center says posts and links can be removed for deception, malicious redirects, spam or intellectual-property violations. Its published 2025 enforcement counts are internal platform figures, so they explain why links can change without explaining any one missing item.",
-    categories: "Category pages are discovery shortcuts, not evidence about a product. Narrow the query to the actual garment or accessory type, then compare model, variant, measurements and ID at the destination. This prevents a broad phrase such as Hacoo shoes or Hacoo bags from doing the work of a proper listing check. Each category should answer a distinct search intent instead of repeating the same spreadsheet copy across thin pages.",
+    finds: "A checked find proves only that the route and visible identity fields matched on the review date. It does not prove stock, delivery, quality or platform approval. Recheck the selected size, colour, image and source ID at the destination. Save a dated screenshot and compare the delivered total before deciding; availability and prices can change after our check.",
+    categories: "Category pages are discovery shortcuts, not evidence about a product. Narrow the query to the actual garment or accessory type, then compare model, variant, measurements and ID at the destination. This prevents a broad phrase such as Hacoo shoes or Hacoo bags from doing the work of a proper listing check. Keep the exact listing and selected option in your shortlist so you can compare like for like.",
     "qc-guide": "Identity comes before quality scoring. Start with the product ID, selected colour and variant, then place the listing image beside user photos. Compare shape and proportions before small details; use ruler images for dimensions; separate cosmetic variation from damage. If evidence is needed later, photograph the item, packaging, shipping label and exact defect without filters so the record still describes the selected listing.",
     shipping: "Hacoo's UK shipping page gives an estimated 15–25 days, while its broader help article describes a 15–28 day total made from preparation, international transport and final delivery. These are estimates, not guarantees. Save the order date, dispatch date, tracking number, last scan, destination and package label. The detailed return help describes a general 15-day window after receipt, category exclusions, approval and issue-specific evidence, and says exchanges are not currently offered. Follow the live order flow when its instructions are more specific.",
     guide: "The complete verification path starts with a search term, narrows to a category route, records the product ID and then checks the destination fields in one pass. Title, first image, selected option, measurements and source price must describe the same item. A redirect that opens successfully is not enough. Save the result with its check date and replace a route only after the alternative passes the same field-by-field comparison.",
-    faq: "The answers on this page separate official policy, independent link checks and third-party customer reports. Hacoo's terms say user-generated posts and recommendations can be outdated and that third-party links operate under their own policies. A concise answer should therefore state its scope: an official estimate, a current route observation or an individual review theme. Mixing those categories creates confident but misleading advice.",
+    faq: "The answers on this page separate official policy, independent link checks and third-party customer reports. Hacoo's terms say user-generated posts and recommendations can be outdated and that third-party links operate under their own policies. Check the date and source behind a delivery estimate or customer report, and use the written instructions for your own order when requesting help.",
     articles: "The library is arranged by decision stage: discovery and product IDs first, reviews and QC second, sizing third, with shipping and return evidence covered in the dedicated policy guide. Each article owns one primary keyword and supports related questions naturally. This reduces keyword cannibalisation, gives internal links a clear purpose and makes updates easier when an app-store rating, policy page or route changes.",
     methodology: "We separate four source classes: Hacoo official policy pages, app-store listings, public review platforms and independent destination checks. Official statements are attributed to the named page and check date. A route check records the final URL, HTTP status, first-image match, title, selected option and source listing ID. A 200 response proves only that a page loaded; the identity fields must also agree. Corrections update the affected claim and check date while keeping the same published rules.",
   },
@@ -200,10 +165,52 @@ export const pageExplanations: Record<Locale, Partial<Record<PageKey, string>>> 
   },
 };
 
-export const researchBasis: Record<Locale, string[]> = {
-  en: ["Hacoo Shipping Information — www.hacoo.app/en-US/pages/shipping-info — checked 28 August 2026", "Hacoo Help Center returns guidance — act.hacoo.app/act/sara/helpcenter/home/qa3 — checked 28 August 2026", "Google Play listing com.saramart.android — 10M+ downloads — checked 28 August 2026", "Trustpilot profile www.hacoo.app — 3,274 reviews and 3.6/5 snapshot — checked 28 August 2026", "Bank of England daily spot rates — £1 = $1.3588 on 26 August 2026 — GBP references only"],
-  de: ["Hacoo Shipping Information — www.hacoo.app/en-US/pages/shipping-info — geprüft am 28. August 2026", "Hacoo Help Center Rückgabehinweise — act.hacoo.app/act/sara/helpcenter/home/qa3 — geprüft am 28. August 2026", "Google Play com.saramart.android — 10 Mio.+ Downloads — geprüft am 28. August 2026", "Trustpilot www.hacoo.app — 3.274 Bewertungen, Momentaufnahme 3,6/5 — geprüft am 28. August 2026"],
-  fr: ["Hacoo Shipping Information — www.hacoo.app/en-US/pages/shipping-info — vérifié le 28 août 2026", "Retours Hacoo Help Center — act.hacoo.app/act/sara/helpcenter/home/qa3 — vérifié le 28 août 2026", "Google Play com.saramart.android — 10 M+ téléchargements — vérifié le 28 août 2026", "Trustpilot www.hacoo.app — 3 274 avis, instantané 3,6/5 — vérifié le 28 août 2026"],
-  es: ["Hacoo Shipping Information — www.hacoo.app/en-US/pages/shipping-info — revisado el 28 de agosto de 2026", "Devoluciones Hacoo Help Center — act.hacoo.app/act/sara/helpcenter/home/qa3 — revisado el 28 de agosto de 2026", "Google Play com.saramart.android — 10 M+ descargas — revisado el 28 de agosto de 2026", "Trustpilot www.hacoo.app — 3.274 reseñas, captura 3,6/5 — revisado el 28 de agosto de 2026"],
-  it: ["Hacoo Shipping Information — www.hacoo.app/en-US/pages/shipping-info — verificato il 28 agosto 2026", "Resi Hacoo Help Center — act.hacoo.app/act/sara/helpcenter/home/qa3 — verificato il 28 agosto 2026", "Google Play com.saramart.android — 10 M+ download — verificato il 28 agosto 2026", "Trustpilot www.hacoo.app — 3.274 recensioni, istantanea 3,6/5 — verificato il 28 agosto 2026"],
+
+// Current editorial summaries keep policy uncertainty visible in every locale.
+const shippingSummary: Record<Locale, string> = {
+  en: "Hacoo's public shipping page gives a 15–25 day UK receiving estimate, including processing and transport. Keep the order's own estimate, dispatch date and carrier scans. The shipping page and detailed return help describe different after-sales procedures, so request written instructions for your specific order before returning an item. Act promptly and keep the parcel, labels and evidence while the case is open.",
+  de: "Hacoos öffentliche Versandseite nennt 15–25 Tage bis zum Empfang in Großbritannien einschließlich Bearbeitung und Transport. Speichere die Bestellprognose, das Versanddatum und Zustellerscans. Versandseite und ausführliche Rückgabehilfe beschreiben unterschiedliche Abläufe. Bitte deshalb vor einer Rücksendung um schriftliche Anweisungen für deine Bestellung. Handle zügig und bewahre Verpackung, Etiketten und Belege während des Falls auf.",
+  fr: "La page de livraison Hacoo indique une estimation UK de 15–25 jours comprenant préparation et transport. Gardez l’estimation de la commande, la date d’expédition et les scans du transporteur. Les pages de livraison et d’aide aux retours décrivent des procédures différentes : demandez des instructions écrites pour votre commande avant tout retour. Agissez rapidement et conservez emballage, étiquettes et preuves pendant le traitement du dossier.",
+  es: "La página de envíos de Hacoo estima 15–25 días hasta la recepción en UK, incluidos preparación y transporte. Guarda la estimación del pedido, la fecha de expedición y los registros del transportista. Las páginas de envíos y de ayuda sobre devoluciones describen procedimientos distintos: solicita instrucciones escritas para tu pedido antes de devolver un artículo. Actúa pronto y conserva embalaje, etiquetas y pruebas mientras el caso siga abierto.",
+  it: "La pagina delle spedizioni Hacoo stima 15–25 giorni fino alla ricezione in UK, inclusi preparazione e trasporto. Conserva la stima del tuo ordine, la data di spedizione e le scansioni del corriere. La pagina spedizioni e l’aiuto dettagliato sui resi descrivono procedure diverse: chiedi istruzioni scritte per il tuo ordine prima di restituire un articolo. Agisci tempestivamente e conserva imballaggio, etichette e prove mentre la pratica è aperta.",
 };
+const librarySummary: Record<Locale, string> = {
+  en: "Choose a guide for the problem you have now: using the app, finding an item, comparing sizes, reading reviews, planning delivery or preparing an after-sales request. All 14 guides are available in English, German, French, Spanish and Italian. Changing language keeps you on the same guide.",
+  de: "Wähle den Ratgeber zu deiner aktuellen Frage: App nutzen, Artikel finden, Größen vergleichen, Bewertungen lesen, Lieferung planen oder eine Reklamation vorbereiten. Alle 14 Ratgeber sind auf Englisch, Deutsch, Französisch, Spanisch und Italienisch verfügbar. Beim Sprachwechsel bleibst du im selben Artikel.",
+  fr: "Choisissez le guide qui répond à votre problème : utiliser l’application, trouver un article, comparer les tailles, lire les avis, prévoir la livraison ou préparer une demande après-vente. Les 14 guides existent en anglais, allemand, français, espagnol et italien. Le changement de langue conserve le même article.",
+  es: "Elige la guía para tu problema actual: usar la app, encontrar un artículo, comparar tallas, leer reseñas, planificar una entrega o preparar una solicitud posventa. Las 14 guías están en inglés, alemán, francés, español e italiano. Al cambiar de idioma permaneces en el mismo artículo.",
+  it: "Scegli la guida per il problema attuale: usare l’app, trovare un articolo, confrontare taglie, leggere recensioni, pianificare la consegna o preparare una richiesta di assistenza. Tutte le 14 guide sono disponibili in inglese, tedesco, francese, spagnolo e italiano. Il cambio lingua mantiene lo stesso articolo.",
+};
+for (const locale of ["en", "de", "fr", "es", "it"] as const) {
+  pageExplanations[locale].shipping = shippingSummary[locale];
+  pageExplanations[locale].articles = librarySummary[locale];
+  // The policy summary replaces an oversimplified universal return-window claim.
+  pageChecklists[locale].shipping![4] = shippingSummary[locale].split(/(?<=[.!?])\s+/).slice(-1)[0];
+}
+
+
+// These practical summaries accompany the same checklists in every language.
+Object.assign(pageExplanations.de, {
+  spreadsheet: "Dieser Index behandelt jeden Link als datierten Prüfstand. Bewahre Produkt-ID, aktuellen Titel, erstes Bild, gewählte Option, Quellpreis, Region und Prüfdatum gemeinsam auf. Ändert sich ein Identitätsmerkmal, prüfe den Link erneut, auch wenn er noch funktioniert. Hacoos offizielle Materialien beschreiben eine Community für Entdeckung und Inhalte, keine unveränderliche öffentliche Produktdatenbank.",
+  finds: "Ein geprüfter Fund bestätigt nur, dass Link und sichtbare Identitätsmerkmale am Prüfdatum zusammenpassten. Er bestätigt weder Bestand noch Lieferung, Qualität oder Plattformfreigabe. Prüfe Größe, Farbe, Bild und Quellen-ID am Ziel erneut. Speichere einen datierten Screenshot und vergleiche den Gesamtpreis einschließlich Lieferung; Bestand und Preise können sich ändern.",
+  categories: "Kategorien erleichtern die Suche, liefern aber keinen Qualitätsnachweis. Grenze die Suche auf die konkrete Kleidungs- oder Zubehörart ein und vergleiche dann Modell, Variante, Maße und ID am Ziel. Allgemeine Begriffe wie Hacoo Schuhe oder Hacoo Taschen ersetzen keine Prüfung des Angebots. Speichere Angebot und gewählte Option für einen Vergleich unter gleichen Bedingungen.",
+  faq: "Die Antworten unterscheiden offizielle Richtlinien, unabhängige Linkprüfungen und Kundenberichte. Nutzerbeiträge können veraltet sein; externe Seiten haben eigene Regeln. Prüfe Datum und Quelle einer Lieferprognose oder Bewertung und nutze bei einer Anfrage die schriftlichen Anweisungen zu deiner eigenen Bestellung."
+});
+Object.assign(pageExplanations.fr, {
+  spreadsheet: "Cet index traite chaque lien comme un relevé daté. Gardez ensemble identifiant, titre actuel, première image, option choisie, prix source, région et date de vérification. Si un élément d’identité change, revérifiez le lien même s’il fonctionne encore. Les supports officiels de Hacoo décrivent une communauté de découverte et de partage, pas une base publique de produits immuable.",
+  finds: "Une fiche vérifiée indique uniquement que le lien et les éléments d’identité visibles concordaient à la date du contrôle. Elle ne garantit ni stock, ni livraison, ni qualité, ni approbation de la plateforme. Revérifiez taille, couleur, image et identifiant sur la destination. Gardez une capture datée et comparez le total livré : disponibilité et prix peuvent changer.",
+  categories: "Les catégories facilitent la découverte, mais ne prouvent rien sur un produit. Précisez le type de vêtement ou d’accessoire, puis comparez modèle, variante, mesures et identifiant sur la destination. Une recherche générale comme chaussures Hacoo ou sacs Hacoo ne remplace pas le contrôle de la fiche. Conservez la fiche exacte et l’option choisie pour comparer des éléments équivalents.",
+  faq: "Ces réponses distinguent politiques officielles, contrôles indépendants des liens et témoignages clients. Les publications d’utilisateurs peuvent être dépassées et les sites externes appliquent leurs propres règles. Vérifiez date et source des estimations ou avis, puis suivez les instructions écrites de votre commande pour demander de l’aide."
+});
+Object.assign(pageExplanations.es, {
+  spreadsheet: "Este índice trata cada enlace como un registro fechado. Guarda juntos ID, título actual, primera imagen, opción seleccionada, precio original, región y fecha de revisión. Si cambia algún dato de identidad, revisa el enlace aunque siga abriéndose. Los materiales oficiales de Hacoo describen una comunidad de descubrimiento y contenidos, no una base pública e inmutable de productos.",
+  finds: "Una ficha revisada solo confirma que la ruta y los datos visibles de identidad coincidían en la fecha indicada. No garantiza existencias, entrega, calidad ni aprobación de la plataforma. Comprueba otra vez talla, color, imagen e ID en el destino. Guarda una captura fechada y compara el total con entrega; precios y disponibilidad pueden cambiar.",
+  categories: "Las categorías ayudan a descubrir artículos, pero no demuestran su calidad. Concreta el tipo de prenda o accesorio y compara modelo, variante, medidas e ID en el destino. Una búsqueda general como zapatos Hacoo o bolsos Hacoo no sustituye la revisión de la ficha. Conserva el anuncio exacto y la opción elegida para comparar alternativas equivalentes.",
+  faq: "Las respuestas distinguen políticas oficiales, comprobaciones independientes de enlaces y experiencias de clientes. Las publicaciones pueden quedar desactualizadas y las páginas externas aplican sus propias reglas. Comprueba fecha y fuente de una estimación o reseña y utiliza las instrucciones escritas de tu pedido al solicitar ayuda."
+});
+Object.assign(pageExplanations.it, {
+  spreadsheet: "Questo indice tratta ogni link come una verifica datata. Conserva insieme ID, titolo attuale, prima immagine, opzione scelta, prezzo originale, regione e data del controllo. Se cambia un elemento identificativo, ricontrolla il link anche se si apre ancora. I materiali ufficiali di Hacoo descrivono una community di scoperta e contenuti, non un database pubblico e immutabile di prodotti.",
+  finds: "Una scheda verificata conferma soltanto che percorso e dati identificativi visibili coincidevano alla data del controllo. Non garantisce disponibilità, consegna, qualità o approvazione della piattaforma. Ricontrolla taglia, colore, immagine e ID nella destinazione. Salva uno screenshot datato e confronta il totale consegnato: prezzi e disponibilità possono cambiare.",
+  categories: "Le categorie facilitano la ricerca, ma non costituiscono una prova sul prodotto. Specifica il tipo di capo o accessorio, poi confronta modello, variante, misure e ID nella destinazione. Una ricerca generica come scarpe Hacoo o borse Hacoo non sostituisce il controllo della scheda. Conserva inserzione esatta e opzione scelta per confrontare alternative equivalenti.",
+  faq: "Le risposte distinguono politiche ufficiali, controlli indipendenti dei link ed esperienze dei clienti. I contenuti degli utenti possono essere superati e le pagine esterne hanno regole proprie. Controlla data e fonte di stime o recensioni e segui le istruzioni scritte del tuo ordine quando chiedi assistenza."
+});

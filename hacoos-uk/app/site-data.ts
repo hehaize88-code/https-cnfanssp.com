@@ -1,4 +1,5 @@
-import { priorityArticleKeys, priorityArticleLabels } from "./priority-articles";
+import { articleKeys, articles } from "./article-content";
+import { applyEditorialCopy } from "./editorial-copy";
 
 export const locales = ["en", "de", "fr", "es", "it"] as const;
 export type Locale = (typeof locales)[number];
@@ -21,15 +22,10 @@ export const pageKeys = [
   "faq",
   "articles",
   "methodology",
-  "articles/find-product-links",
-  "articles/read-qc-photos",
-  "articles/size-before-you-buy",
-  "articles/hacoo-uk-pre-order-readiness-sheet",
-  ...priorityArticleKeys,
+  ...articleKeys,
 ] as const;
 export type PageKey = (typeof pageKeys)[number];
 
-export const englishOnlyArticleKeys = new Set<PageKey>(priorityArticleKeys);
 
 export function routeFor(locale: Locale, page: PageKey) {
   const prefix = locale === "en" ? "" : `/${locale}`;
@@ -120,17 +116,17 @@ export const products = [
 ] as const;
 
 export const categories = [
-  { key: "shoes", href: "https://www.cnfanssp.com/shoes/", count: "Shoes" },
-  { key: "hoodies", href: "https://www.cnfanssp.com/hoodies-sweaters/", count: "Sweatshirts" },
-  { key: "t-shirts", href: "https://www.cnfanssp.com/t-shirts/", count: "T-Shirts" },
-  { key: "jackets", href: "https://www.cnfanssp.com/jackets/", count: "Jackets" },
-  { key: "pants", href: "https://www.cnfanssp.com/pants-shorts/", count: "Pants / Shorts" },
-  { key: "headwear", href: "https://www.cnfanssp.com/headwear/", count: "Headwear" },
-  { key: "accessories", href: "https://www.cnfanssp.com/accessories/", count: "Accessories" },
-  { key: "jersey", href: "https://www.cnfanssp.com/jersey/", count: "Jersey" },
+  { key: "shoes", href: "https://www.cnfanshp.com/shoes/", count: "Shoes" },
+  { key: "hoodies", href: "https://www.cnfanshp.com/hoodies-sweaters/", count: "Sweatshirts" },
+  { key: "t-shirts", href: "https://www.cnfanshp.com/t-shirts/", count: "T-Shirts" },
+  { key: "jackets", href: "https://www.cnfanshp.com/jackets/", count: "Jackets" },
+  { key: "pants", href: "https://www.cnfanshp.com/pants-shorts/", count: "Pants / Shorts" },
+  { key: "headwear", href: "https://www.cnfanshp.com/headwear/", count: "Headwear" },
+  { key: "accessories", href: "https://www.cnfanshp.com/accessories/", count: "Accessories" },
+  { key: "jersey", href: "https://www.cnfanshp.com/Jersey/", count: "Jersey" },
 ] as const;
 
-type Copy = {
+export type Copy = {
   nav: Record<string, string>;
   badge: string;
   heroTitle: string;
@@ -196,8 +192,8 @@ export const copy: Record<Locale, Copy> = {
       "articles/read-qc-photos": { title: "Hacoo Reviews UK: Quality, Photos, Returns & Risks", intro: "Use variant-level reviews and photo evidence to assess construction, measurements and after-sales records without treating ratings as guarantees." },
       "articles/size-before-you-buy": { title: "Hacoo Size Guide UK: Clothing, Shoes & UK/EU Fit", intro: "Compare garment and foot measurements with the exact selected chart instead of guessing from UK, EU or letter-size labels." },
       "articles/hacoo-uk-pre-order-readiness-sheet": { title: "Hacoo UK Pre-Order Readiness Sheet: Five Checks Before You Act", intro: "A private UK checklist for the real region, complete address, exact option, measurements, timing buffer and evidence before an order decision." },
-      ...priorityArticleLabels,
-    },
+
+    } as Copy["pageLabels"],
     sectionLabels: ["What to verify", "What can go wrong", "Best next step"],
     sectionText: ["Confirm that the title, first image, selected option, source price and source listing ID still agree. A working URL alone does not prove that the item is the one shown on the card.", "Listings change, variants disappear and reposted sheets can keep an old image after the destination changes. Treat every outbound page as current third-party information, not an official Hacoo product page.", "Save the source listing ID, compare UK/EU measurements, inspect recent feedback and keep screenshots of the selected option before paying on any external service."],
     faq: [["Is this the official Hacoo website?", "No. Hacoos.uk is an independent UK product-link and research guide and does not represent Hacoo."], ["What is Hacoo today?", "Hacoo's current official website and app-store descriptions present it as a content-sharing and discovery community with ratings, reviews and connections between users."], ["Are products sold here?", "No. Product cards open the matching external listing; this site does not process orders or payments."], ["Why can a Hacoo link look different in another country?", "Catalog visibility and delivery coverage can vary. Confirm the real region, destination and current app version before deciding that a link is dead."], ["How long does Hacoo delivery take in the UK?", "Hacoo's official shipping guidance lists 15–25 days for the UK. Treat it as an estimate and keep tracking evidence because delays can occur."], ["What is Hacoo's return window?", "The detailed official help article states a general 15-day window after receipt, lists excluded categories and says exchanges are not currently supported. Follow the instructions attached to the actual order."], ["Why show USD and CNY?", "USD makes comparison easier, while the source CNY amount helps you confirm the listing has not silently changed."], ["Does a checked link guarantee quality?", "No. A matched link confirms the route and first image at the check date; quality and delivery still require current evidence."], ["What should I inspect first?", "Confirm identity and variant first, then shape, stitching, labels, measurements and visible defects."], ["Are public reviews consistently positive?", "No. Google Play and Trustpilot showed different averages and mixed recent themes when checked. Use item-level photos and repeated observations rather than one platform score."]],
@@ -239,7 +235,7 @@ copy.it.updated = "Link verificati: 28 agosto 2026";
 const englishLabels = copy.en.pageLabels;
 for (const locale of ["de", "fr", "es", "it"] as const) {
   const titles: Record<Locale, Partial<Record<PageKey, string>>> = {
-    en: Object.fromEntries(pageKeys.map((k) => [k, englishLabels[k].title])) as Record<PageKey, string>,
+    en: Object.fromEntries(pageKeys.map((k) => [k, englishLabels[k]?.title ?? ""])) as Record<PageKey, string>,
     de: { home: "Hacoo UK: Lieferung, Größen und externe Routen", spreadsheet: "Hacoo UK Link-Prüfindex", finds: "Externe Hacoo-Routen für UK-Nutzer", categories: "Hacoo UK Kategorien und Quellen-IDs", "qc-guide": "Hacoo UK Checkliste für Bewertungsfotos", shipping: "Hacoo Versand nach Großbritannien", guide: "Hacoo in Großbritannien verwenden", faq: "Hacoo UK FAQ zu Region, Lieferung und Rückgabe", articles: "Hacoo UK Käufer-Recherchen", methodology: "Hacoos UK Methodik und Korrekturen", "articles/find-product-links": "Hacoo-bezogene externe Routen in UK prüfen", "articles/read-qc-photos": "Hacoo Bewertungen UK: Foto-Checkliste", "articles/size-before-you-buy": "Hacoo UK Größenguide: UK/EU-Maße", "articles/hacoo-uk-pre-order-readiness-sheet": "Hacoo UK Vorbestell-Check: fünf Prüfungen" },
     fr: { home: "Hacoo UK : livraison, tailles et routes externes", spreadsheet: "Index de vérification des liens Hacoo UK", finds: "Routes externes Hacoo pour le Royaume-Uni", categories: "Catégories Hacoo UK et identifiants source", "qc-guide": "Liste photo des avis Hacoo UK", shipping: "Livraison Hacoo au Royaume-Uni", guide: "Utiliser Hacoo au Royaume-Uni", faq: "FAQ Hacoo UK : région, livraison et retours", articles: "Recherches Hacoo UK pour acheteurs", methodology: "Méthode et corrections Hacoos UK", "articles/find-product-links": "Vérifier des routes externes liées à Hacoo au Royaume-Uni", "articles/read-qc-photos": "Avis Hacoo UK : liste de preuves photo", "articles/size-before-you-buy": "Guide des tailles Hacoo UK : conversion UK/UE", "articles/hacoo-uk-pre-order-readiness-sheet": "Fiche Hacoo UK avant commande : cinq contrôles" },
     es: { home: "Hacoo UK: entrega, tallas y rutas externas", spreadsheet: "Índice de verificación de enlaces Hacoo UK", finds: "Rutas externas Hacoo para usuarios de UK", categories: "Categorías Hacoo UK e ID de fuente", "qc-guide": "Lista de fotos de reseñas Hacoo UK", shipping: "Envío de Hacoo al Reino Unido", guide: "Cómo usar Hacoo en el Reino Unido", faq: "FAQ Hacoo UK: región, entrega y devoluciones", articles: "Investigación Hacoo UK para compradores", methodology: "Método y correcciones de Hacoos UK", "articles/find-product-links": "Verificar rutas externas relacionadas con Hacoo en UK", "articles/read-qc-photos": "Reseñas Hacoo UK: lista de pruebas fotográficas", "articles/size-before-you-buy": "Guía de tallas Hacoo UK: conversión UK/UE", "articles/hacoo-uk-pre-order-readiness-sheet": "Hoja Hacoo UK antes del pedido: cinco controles" },
@@ -252,9 +248,17 @@ for (const locale of ["de", "fr", "es", "it"] as const) {
     it: { home: "Guida UK indipendente su consegna, taglie UK/UE, foto recensioni e percorsi esterni.", spreadsheet: "Controlla percorsi esterni datati invece di righe copiate o scadute.", finds: "Schede esterne verificate con immagine, ID fonte e prezzo aggiornati.", categories: "Apri prima una categoria esterna e poi restringi la ricerca.", "qc-guide": "Un metodo UK basato su prove per identità, costruzione, misure e foto.", shipping: "Tempi ufficiali UK, tracking, resi e prove spiegati con chiarezza.", guide: "Da regione e indirizzo UK ai controlli di taglia, percorso e consegna.", faq: "Risposte UK su regione, consegna, reso, percorsi esterni e taglia.", articles: "Articoli UK basati su fonti su percorsi esterni, foto, recensioni e taglie.", methodology: "Fonti, data, confronto immagini, stato destinazione e politica di correzione del sito.", "articles/find-product-links": "Perché verificare una destinazione esterna conta più della data di un foglio.", "articles/read-qc-photos": "Bilanciare recensioni UK, controllare la costruzione e conservare prove utili.", "articles/size-before-you-buy": "Confrontare taglie UK/UE e misure con un riferimento che veste bene.", "articles/hacoo-uk-pre-order-readiness-sheet": "Controllo privato di regione, indirizzo, opzione, misure, margine e prove prima di decidere." },
   };
   copy[locale].pageLabels = Object.fromEntries(pageKeys.map((key) => [key, {
-    title: titles[locale][key] ?? englishLabels[key].title,
-    intro: intros[locale][key] ?? englishLabels[key].intro,
+    title: titles[locale][key] ?? englishLabels[key]?.title ?? "",
+    intro: intros[locale][key] ?? englishLabels[key]?.intro ?? "",
   }])) as Copy["pageLabels"];
+}
+
+for (const locale of locales) {
+  for (const key of articleKeys) {
+    const article = articles[locale][key];
+    copy[locale].pageLabels[key] = { title: article.title, intro: article.intro };
+  }
+  applyEditorialCopy(copy[locale], locale);
 }
 
 export const pageMeta = Object.fromEntries(
