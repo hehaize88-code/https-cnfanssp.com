@@ -8,11 +8,11 @@
   "scripts": {
     "install:ci": "bash scripts/install-ci.sh",
     "dev": "WRANGLER_LOG_PATH=.wrangler/wrangler.log vite",
-    "build": "next build",
-    "build:pages": "next build",
+    "build": "node scripts/validate-content.mjs && next build && node scripts/finalize-export.mjs && node scripts/validate-export.mjs",
+    "build:pages": "node scripts/validate-content.mjs && next build && node scripts/finalize-export.mjs && node scripts/validate-export.mjs",
     "start": "WRANGLER_LOG_PATH=.wrangler/wrangler.log vinext start",
-    "test": "npm run build && node --test tests/rendered-html.test.mjs",
-    "validate:artifact": "bash scripts/validate-artifact.sh",
+    "test": "npm run build && node --test tests/analytics.test.mjs",
+    "validate:artifact": "node scripts/validate-content.mjs && node scripts/validate-export.mjs",
     "lint": "bash scripts/sites-env.sh -- eslint . --ignore-pattern dist --ignore-pattern .next",
     "db:generate": "bash scripts/sites-env.sh -- drizzle-kit generate"
   },

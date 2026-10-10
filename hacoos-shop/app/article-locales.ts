@@ -1,17 +1,22 @@
 import { articles, articleSlugs, type ArticleRecord, type ArticleSlug } from "./article-data";
-import { fullArticleTranslations } from "./article-translations.generated";
-import { hqArticleTranslations } from "./hq-article-translations";
+import es from "../content/articles/es.json";
+import fr from "../content/articles/fr.json";
+import de from "../content/articles/de.json";
+import it from "../content/articles/it.json";
 
 export type ArticleLanguage = "en" | "es" | "fr" | "de" | "it";
-export const localizedArticleSlugs: ArticleSlug[] = ["hacoo-spreadsheet-guide", "hacoo-qc-photo-checklist", "hacoo-shipping-returns-guide", "hacoo-product-specification-checklist"];
+const localized: Record<ArticleLanguage, Record<ArticleSlug, ArticleRecord>> = {
+  en: articles, es: es as Record<ArticleSlug, ArticleRecord>,
+  fr: fr as Record<ArticleSlug, ArticleRecord>, de: de as Record<ArticleSlug, ArticleRecord>,
+  it: it as Record<ArticleSlug, ArticleRecord>,
+};
+export const localizedArticleSlugs: ArticleSlug[] = [...articleSlugs];
 export function hasLocalizedArticle(slug: ArticleSlug) { return localizedArticleSlugs.includes(slug); }
-
 export function getArticle(lang: ArticleLanguage, slug: ArticleSlug): ArticleRecord {
-  if(lang === "en") return articles[slug];
-  if(slug === "hacoo-product-specification-checklist") return hqArticleTranslations[lang];
-  return fullArticleTranslations[lang][slug] ?? articles[slug];
+  const article = localized[lang][slug];
+  if (!article) throw new Error(`Missing ${lang} article: ${slug}`);
+  return article;
 }
-
 export function getArticleList(lang: ArticleLanguage) {
-  return (lang === "en" ? articleSlugs : localizedArticleSlugs).map(slug => getArticle(lang, slug));
+  return articleSlugs.map(slug => getArticle(lang, slug));
 }
