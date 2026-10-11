@@ -1,0 +1,71 @@
+{
+  "checked": "2026-10-09",
+  "source": "https://www.cnfanshp.com",
+  "usdDisplay": "Source UI reference conversion: 7.26; checked against AMIRI MA-1 $50.69 and Neverfull $13.09.",
+  "products": [
+    {
+      "name": "AMIRI MA-1",
+      "category": "shoes",
+      "price": "$50.69",
+      "id": "7590730248",
+      "href": "https://www.cnfanshp.com/AllProducts/199.html",
+      "image": "https://www.cnfanshp.com/uploads/allimg/20251101/1-251101105932935.webp"
+    },
+    {
+      "name": "World Hoodie Set",
+      "category": "sets",
+      "price": "$53.58",
+      "id": "7665936646",
+      "href": "https://www.cnfanshp.com/AllProducts/3856.html",
+      "image": "https://www.cnfanshp.com/uploads/allimg/20260116/1-260116112914Z4.webp"
+    },
+    {
+      "name": "Celine Hoodie",
+      "category": "hoodies",
+      "price": "$13.64",
+      "id": "7631744461",
+      "href": "https://www.cnfanshp.com/AllProducts/2389.html",
+      "image": "https://www.cnfanshp.com/uploads/allimg/20251214/1-25121410553V09.webp"
+    },
+    {
+      "name": "Louis Vuitton Neverfull",
+      "category": "bags",
+      "price": "$13.09",
+      "id": "7655666412",
+      "href": "https://www.cnfanshp.com/AllProducts/3371.html",
+      "image": "https://www.cnfanshp.com/uploads/allimg/20260106/1-260106125S1326.jpg"
+    },
+    {
+      "name": "Omerta 47 T-shirts",
+      "category": "t-shirts",
+      "price": "$5.23",
+      "id": "7598998360",
+      "href": "https://www.cnfanshp.com/AllProducts/740.html",
+      "image": "https://www.cnfanshp.com/uploads/allimg/20251108/1-25110Q23615c0.webp"
+    },
+    {
+      "name": "6pm Hoodie",
+      "category": "hoodies",
+      "price": "$13.50",
+      "id": "7643039370",
+      "href": "https://www.cnfanshp.com/AllProducts/2897.html",
+      "image": "https://www.cnfanshp.com/uploads/allimg/20251224/1-25122414111U19.webp"
+    },
+    {
+      "name": "Trapstar It's A Secret Messenger Bag [4 styles]",
+      "category": "bags",
+      "price": "$15.01",
+      "id": "7705315883",
+      "href": "https://www.cnfanshp.com/AllProducts/5214.html",
+      "image": "https://www.cnfanshp.com/uploads/allimg/20260311/1-260311124322548.webp"
+    },
+    {
+      "name": "Autry shoes",
+      "category": "shoes",
+      "price": "$28.65",
+      "id": "7706382934",
+      "href": "https://www.cnfanshp.com/AllProducts/5069.html",
+      "image": "https://www.cnfanshp.com/uploads/allimg/20260309/1-26030910540WJ.webp"
+    }
+  ]
+}
