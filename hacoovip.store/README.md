@@ -111,3 +111,39 @@ The timeout defaults can be overridden for a controlled canary with `SITES_INSTA
 
 - [vinext Documentation](https://github.com/cloudflare/vinext)
 - [Drizzle D1 Guide](https://orm.drizzle.team/docs/get-started/d1-new)
+
+## hacoovip.store production website
+
+Production source is this directory (`hacoovip.store`) in
+`hehaize88-code/https-cnfanssp.com`, on `main`. The existing Git integration
+publishes the `hacoovip-store-git` Pages project. Do not create another Site
+or modify sibling website directories for an update to this domain.
+
+Validate the static Pages output with:
+
+```sh
+npm ci
+npm run build:pages
+npm run check:seo
+```
+
+The static output is `out/`. The separate `build` command retains the original
+Vinext/Worker build and is not the static Pages build.
+
+Content is available in English, German, Spanish, French and Italian.
+`lib/discovery-articles.<locale>.json` contains complete localized discovery
+guides. Existing articles and their targeted updates are assembled in
+`lib/articles.ts`; existing sentence translations and interface overrides live
+in `lib/i18n.ts` and the imported JSON files. Adding an English article alone
+is insufficient: include all five versions and verify their rendered routes.
+
+The October 12, 2026 update adds four topics in all five languages, updates
+three existing guides, repairs Spanish translation gaps, and aligns product
+IDs/photos/USD snapshots with the independent destination catalog. Product
+references are not claims of official Hacoo inventory or brand authentication.
+
+Analytics: `main_product_click` now matches actual `/AllProducts/<id>.html`
+URLs. Category and catalog navigation use `category_click` and `catalog_click`;
+`outbound_click` remains a separate event. Do not sum these events to count
+unique product actions. Historical `main_product_click` included other catalog
+navigation, so treat the release date as a measurement-definition change.

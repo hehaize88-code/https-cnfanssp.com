@@ -1,3 +1,10 @@
+import improvements from "./article-improvements.json";
+import type { Locale } from "./site-data";
+import discoveryEn from "./discovery-articles.en.json";
+import discoveryDe from "./discovery-articles.de.json";
+import discoveryEs from "./discovery-articles.es.json";
+import discoveryFr from "./discovery-articles.fr.json";
+import discoveryIt from "./discovery-articles.it.json";
 import priorityArticlesData from "./priority-articles.json";
 
 export type Article = {
@@ -17,7 +24,7 @@ export type Article = {
   sections: { heading: string; paragraphs: string[] }[];
 };
 
-export const articles: Article[] = [
+const existingArticles: Article[] = [
   ...(priorityArticlesData as Article[]),
   {
     slug: "what-is-hacoo-app",
@@ -354,6 +361,42 @@ export const articles: Article[] = [
   },
 ];
 
-export function getArticle(slug: string) {
-  return articles.find((article) => article.slug === slug);
+for (const improvement of improvements) {
+  const article = existingArticles.find(a => a.slug === improvement.slug);
+  if (article) {
+    const { section, slug: _slug, ...fields } = improvement;
+    Object.assign(article, fields);
+    article.sections.push(section);
+  }
+}
+const discovery: Record<Locale, Article[]> = { en: discoveryEn, de: discoveryDe, es: discoveryEs, fr: discoveryFr, it: discoveryIt };
+export const articles: Article[] = [...discovery.en, ...existingArticles];
+export function getArticles(locale: Locale = "en"): Article[] {
+  return [...discovery[locale], ...existingArticles];
+}
+export function getArticle(slug: string, locale: Locale = "en") {
+  return getArticles(locale).find((article) => article.slug === slug);
+}
+const relatedTopics: Record<string, string[]> = {
+  "hacoo-shoes-finds": ["hacoo-size-shipping-planning", "hacoo-qc-photo-checklist", "how-to-use-hacoo-spreadsheet"],
+  "hacoo-clothing-finds": ["hacoo-size-shipping-planning", "hacoo-qc-photo-checklist", "hacoo-bags-accessories"],
+  "hacoo-bags-accessories": ["hacoo-qc-photo-checklist", "how-to-use-hacoo-spreadsheet", "hacoo-clothing-finds"],
+  "hacoo-website-vs-app": ["what-is-hacoo-app", "hacoo-item-no-longer-exists", "hacoo-search-no-results"],
+  "what-is-hacoo-app": ["hacoo-website-vs-app", "how-to-use-hacoo-spreadsheet", "hacoo-reviews-2026"],
+  "how-to-use-hacoo-spreadsheet": ["hacoo-shoes-finds", "hacoo-clothing-finds", "hacoo-bags-accessories"],
+  "hacoo-size-shipping-planning": ["hacoo-shoes-finds", "hacoo-clothing-finds", "hacoo-shipping-returns-refunds"],
+  "hacoo-qc-photo-checklist": ["hacoo-shoes-finds", "hacoo-bags-accessories", "hacoo-return-evidence-checklist"],
+  "hacoo-shipping-returns-refunds": ["where-does-hacoo-ship-from", "hacoo-tracking-explained", "hacoo-return-evidence-checklist"],
+  "where-does-hacoo-ship-from": ["hacoo-shipping-returns-refunds", "hacoo-tracking-explained", "hacoo-order-delayed-or-lost"],
+  "hacoo-tracking-explained": ["hacoo-order-delayed-or-lost", "where-does-hacoo-ship-from", "hacoo-return-evidence-checklist"],
+  "hacoo-order-delayed-or-lost": ["hacoo-tracking-explained", "hacoo-shipping-returns-refunds", "hacoo-return-evidence-checklist"],
+  "hacoo-buyer-protection-spain": ["hacoo-shipping-returns-refunds", "hacoo-return-evidence-checklist", "hacoo-order-delayed-or-lost"],
+  "hacoo-return-evidence-checklist": ["hacoo-shipping-returns-refunds", "hacoo-qc-photo-checklist", "hacoo-order-delayed-or-lost"],
+  "hacoo-seller-counterfeit-rules": ["hacoo-qc-photo-checklist", "hacoo-reviews-2026", "hacoo-website-vs-app"],
+  "hacoo-reviews-2026": ["hacoo-seller-counterfeit-rules", "hacoo-qc-photo-checklist", "hacoo-website-vs-app"],
+  "hacoo-item-no-longer-exists": ["hacoo-website-vs-app", "hacoo-search-no-results", "how-to-use-hacoo-spreadsheet"],
+  "hacoo-search-no-results": ["hacoo-website-vs-app", "hacoo-item-no-longer-exists", "hacoo-shoes-finds"],
+};
+export function getRelatedArticles(slug: string, locale: Locale = "en") {
+  return (relatedTopics[slug] ?? []).map((related) => getArticle(related, locale)).filter((article): article is Article => Boolean(article));
 }

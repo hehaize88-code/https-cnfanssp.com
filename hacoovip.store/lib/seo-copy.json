@@ -1,0 +1,42 @@
+{
+  "en": {
+    "heroTitle": "Hacoo Spreadsheet & Product Finds",
+    "heroBody": "Find shoes, clothing and accessories. Compare photos and measurements, then open the independent catalog to check the current product details.",
+    "eyebrow": "Independent product research · October 2026",
+    "products": "Product links to compare",
+    "productsBody": "Matching destination photos and USD reference prices checked October 12, 2026. Prices exclude any additional delivery charges; verify the selected variant.",
+    "search": "Search catalog"
+  },
+  "de": {
+    "heroTitle": "Hacoo-Tabelle und Produktideen",
+    "heroBody": "Schuhe, Kleidung und Accessoires finden. Fotos und Maße vergleichen und anschließend die aktuellen Produktdetails im unabhängigen Katalog prüfen.",
+    "eyebrow": "Unabhängige Produktrecherche · Oktober 2026",
+    "products": "Produktlinks zum Vergleichen",
+    "productsBody": "Passende Zielbilder und USD-Richtpreise, geprüft am 12. Oktober 2026. Zusätzliche Versandkosten sind nicht enthalten; gewählte Variante erneut prüfen.",
+    "search": "Katalog durchsuchen"
+  },
+  "es": {
+    "heroTitle": "Hoja Hacoo y selección de productos",
+    "heroBody": "Encuentra calzado, ropa y accesorios. Compara fotos y medidas y abre el catálogo independiente para comprobar la ficha actual.",
+    "eyebrow": "Investigación independiente · octubre de 2026",
+    "products": "Enlaces de productos para comparar",
+    "productsBody": "Imágenes del destino y precios orientativos en USD revisados el 12 de octubre de 2026. No incluyen posibles gastos de envío; comprueba la variante elegida.",
+    "search": "Buscar catálogo"
+  },
+  "fr": {
+    "heroTitle": "Tableur Hacoo et idées de produits",
+    "heroBody": "Trouvez chaussures, vêtements et accessoires. Comparez photos et mesures, puis consultez les détails actuels dans le catalogue indépendant.",
+    "eyebrow": "Recherche indépendante · octobre 2026",
+    "products": "Liens produits à comparer",
+    "productsBody": "Images correspondantes et prix indicatifs en USD relevés le 12 octobre 2026. Frais de livraison éventuels exclus ; vérifiez la variante choisie.",
+    "search": "Rechercher"
+  },
+  "it": {
+    "heroTitle": "Foglio Hacoo e idee prodotto",
+    "heroBody": "Trova scarpe, abbigliamento e accessori. Confronta foto e misure, poi apri il catalogo indipendente per verificare i dettagli attuali.",
+    "eyebrow": "Ricerca indipendente · ottobre 2026",
+    "products": "Link prodotto da confrontare",
+    "productsBody": "Immagini corrispondenti e prezzi indicativi in USD verificati il 12 ottobre 2026. Eventuali spese di consegna escluse; controlla la variante.",
+    "search": "Cerca nel catalogo"
+  }
+}

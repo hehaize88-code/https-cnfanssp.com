@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { articles } from "@/lib/articles";
+import { getArticles } from "@/lib/articles";
 import { categories, hrefFor, liveCategory, liveProduct, products, type Locale } from "@/lib/site-data";
 import { localizedCopy, translate } from "@/lib/i18n";
 import { SiteShell } from "./site-shell";
@@ -38,12 +38,13 @@ export function HomeView({ locale = "en" }: { locale?: Locale }) {
           <div className="hero-copy">
             <span className="section-kicker">{tx("HACOO / RESEARCH BRIEF / 2026")}</span>
             <h1>{c.heroTitle}</h1><p>{c.heroBody}</p>
-            <form className="hero-search" action="https://cnfanssp.com/search.html" method="get" target="_blank">
+            <form className="hero-search" action="https://cnfanshp.com/search.html" method="get" target="_blank">
               <label className="sr-only" htmlFor="hero-search">{c.search}</label>
               <input type="hidden" name="channelid" value="2" />
-              <input id="hero-search" name="keywords" placeholder={c.searchPlaceholder} />
+              <input id="hero-search" name="keywords" required maxLength={100} placeholder={c.searchPlaceholder} />
               <button type="submit">{c.search} <span>↗</span></button>
             </form>
+            <p className="catalog-disclosure">{tx("Independent catalog. Product links open a separate service; availability in Hacoo is not confirmed.")}</p>
             <div className="hero-actions">
               <Link className="button primary" href={hrefFor(activeLocale, "spreadsheet")}>{c.browse}</Link>
               <Link className="button text" href={hrefFor(activeLocale, "guide")}>{c.learn} →</Link>
@@ -91,7 +92,7 @@ export function HomeView({ locale = "en" }: { locale?: Locale }) {
               <Link href={hrefFor(activeLocale, "articles")}>{c.articles} →</Link>
             </div>
             <div className="home-article-thumbs">
-              {articles.slice(0, 3).map((article, index) => (
+              {getArticles(activeLocale).slice(0, 4).map((article, index) => (
                 <Link key={article.slug} href={hrefFor(activeLocale, `articles/${article.slug}`)}>
                   <div><span>{tx(article.tag)}</span><small>{String(index + 1).padStart(2, "0")}</small></div>
                   <h3>{tx(article.title)}</h3>

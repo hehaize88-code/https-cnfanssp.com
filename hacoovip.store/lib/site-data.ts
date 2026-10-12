@@ -199,20 +199,68 @@ export const categories = [
   { name: "Pants", slug: "pants-shorts", mark: "05" },
   { name: "Headwear", slug: "headwear", mark: "06" },
   { name: "Accessories", slug: "accessories", mark: "07" },
-  { name: "Jerseys", slug: "Jersey", mark: "08" },
+  { name: "Jerseys", slug: "jersey", mark: "08" },
   { name: "Electronics", slug: "electronics", mark: "09" },
   { name: "Other", slug: "other-stuff", mark: "10" },
 ] as const;
 
 export const products = [
-  { id: 6050, name: "Slate Runner", category: "Shoes", price: "$34.70", image: "https://cnfanssp.com/uploads/allimg/20260416/1-260416213T1S9.jpg" },
-  { id: 6127, name: "Archive Pullover", category: "Hoodies", price: "$16.40", image: "https://cnfanssp.com/uploads/allimg/20260429/1-2604291534502K.jpg" },
-  { id: 6187, name: "Graphic Tee No. 60", category: "T-Shirts", price: "$15.00", image: "https://cnfanssp.com/uploads/allimg/20260429/1-260429162000554.jpg" },
-  { id: 6247, name: "Field Jacket", category: "Jackets", price: "$40.10", image: "https://cnfanssp.com/uploads/allimg/20260429/1-2604291F305238.jpg" },
-  { id: 6307, name: "Relaxed Utility Pants", category: "Pants", price: "$38.90", image: "https://cnfanssp.com/uploads/allimg/20260429/1-260429210FTJ.jpg" },
-  { id: 6367, name: "Everyday Cap", category: "Headwear", price: "$20.30", image: "https://cnfanssp.com/uploads/allimg/20260429/1-26042921502VA.jpg" },
-  { id: 6427, name: "Statement Carryall", category: "Accessories", price: "$51.10", image: "https://cnfanssp.com/uploads/allimg/20260430/1-260430161230537.jpg" },
-  { id: 6667, name: "Match Jersey No. 60", category: "Jerseys", price: "$13.80", image: "https://cnfanssp.com/uploads/allimg/20260430/1-26043021142K50.jpg" },
+  {
+    "id": 6045,
+    "name": "Shoes · 6045",
+    "category": "Shoes",
+    "price": "$45.45",
+    "image": "https://cnfanshp.com/uploads/allimg/20260417/1-26041G55S9251.jpg"
+  },
+  {
+    "id": 5974,
+    "name": "Sweatshirt · 5974",
+    "category": "Hoodies",
+    "price": "$19.28",
+    "image": "https://cnfanshp.com/uploads/allimg/20260417/1-26041G1101D39.webp"
+  },
+  {
+    "id": 5976,
+    "name": "Polo · 5976",
+    "category": "T-Shirts",
+    "price": "$29.61",
+    "image": "https://cnfanshp.com/uploads/allimg/20260417/1-26041G1121Q55.webp"
+  },
+  {
+    "id": 5981,
+    "name": "Jacket · 5981",
+    "category": "Jackets",
+    "price": "$41.05",
+    "image": "https://cnfanshp.com/uploads/allimg/20260417/1-26041G1193O56.webp"
+  },
+  {
+    "id": 5983,
+    "name": "Pants · 5983",
+    "category": "Pants",
+    "price": "$34.30",
+    "image": "https://cnfanshp.com/uploads/allimg/20260417/1-26041G1212V39.webp"
+  },
+  {
+    "id": 5971,
+    "name": "Cap · 5971",
+    "category": "Headwear",
+    "price": "$12.26",
+    "image": "https://cnfanshp.com/uploads/allimg/20260417/1-26041G10Fc05.webp"
+  },
+  {
+    "id": 5952,
+    "name": "Watch · 5952",
+    "category": "Accessories",
+    "price": "$71.63",
+    "image": "https://cnfanshp.com/uploads/allimg/20260417/1-26041G04523609.webp"
+  },
+  {
+    "id": 5850,
+    "name": "Jersey · 5850",
+    "category": "Jerseys",
+    "price": "$12.12",
+    "image": "https://cnfanshp.com/uploads/allimg/20260328/1-26032Q40Z2R6.webp"
+  }
 ] as const;
 
 export function hrefFor(locale: Locale, path = "") {
@@ -234,16 +282,16 @@ export function languageAlternates(path = "") {
 }
 
 export function liveProduct(id: number) {
-  return `https://cnfanssp.com/AllProducts/${id}.html`;
+  return `https://cnfanshp.com/AllProducts/${id}.html`;
 }
 
 export function liveCategory(slug: string) {
-  return `https://cnfanssp.com/${slug}/`;
+  return `https://cnfanshp.com/${slug}/`;
 }
 
 export function liveSearch(query: string) {
   const value = query.trim();
   return value
-    ? `https://cnfanssp.com/search.html?channelid=2&keywords=${encodeURIComponent(value)}`
-    : "https://cnfanssp.com/AllProducts/";
+    ? `https://cnfanshp.com/search.html?channelid=2&keywords=${encodeURIComponent(value)}`
+    : "https://cnfanshp.com/AllProducts/";
 }

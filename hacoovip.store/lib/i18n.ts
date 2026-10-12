@@ -1,3 +1,5 @@
+import seoTranslations from "./seo-translations.json";
+import seoCopy from "./seo-copy.json";
 import translations from "./translations.generated.json";
 import priorityDe from "./priority-translations.de.generated.json";
 import priorityEs from "./priority-translations.es.generated.json";
@@ -236,9 +238,9 @@ const editorialOverrides: Partial<Record<Locale, Record<string, string>>> = {
 };
 
 export function translate(locale: Locale, value: string) {
-  return editorialOverrides[locale]?.[value] ?? overrides[locale]?.[value] ?? priorityTable[locale]?.[value] ?? table[locale]?.[value] ?? value;
+  return (seoTranslations as TranslationTable)[locale]?.[value] ?? editorialOverrides[locale]?.[value] ?? overrides[locale]?.[value] ?? priorityTable[locale]?.[value] ?? table[locale]?.[value] ?? value;
 }
 
 export function localizedCopy(locale: Locale): Record<string, string> {
-  return { ...copy[locale] };
+  return { ...copy[locale], ...seoCopy[locale] };
 }

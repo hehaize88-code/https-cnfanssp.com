@@ -2,7 +2,7 @@ import { ArticleView } from "@/components/article-view";
 import { ContentView } from "@/components/content-view";
 import { HomeView } from "@/components/home-view";
 import { articles, getArticle } from "@/lib/articles";
-import { translate } from "@/lib/i18n";
+import { localizedCopy, translate } from "@/lib/i18n";
 import { copy, languageAlternates, locales, routeNames, trustRouteNames, type Locale, type RouteName, type TrustRouteName } from "@/lib/site-data";
 import { getTrustPage } from "@/lib/trust-pages";
 import { notFound } from "next/navigation";
@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   if (!locales.includes(rawLocale as Locale) || rawLocale === "en") return {};
   const locale = rawLocale as Locale;
   const path = slug.join("/");
-  const article = slug[0] === "articles" && slug[1] ? getArticle(slug[1]) : undefined;
+  const article = slug[0] === "articles" && slug[1] ? getArticle(slug[1], locale) : undefined;
   const titles: Record<string, string> = {
     spreadsheet: "Hacoo Product-Route Index",
     finds: "Hacoo Product-Route Selection",
@@ -45,14 +45,15 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     articles: "Source-checked guides that separate current official statements, dated public records and independent buyer guidance.",
   };
   const trustPage = slug.length === 1 && trustRouteNames.includes(slug[0] as TrustRouteName) ? getTrustPage(locale, slug[0] as TrustRouteName) : undefined;
-  const rawTitle = trustPage?.title ?? article?.seoTitle ?? (path ? titles[slug[0]] : copy[locale].heroTitle);
-  const rawDescription = trustPage?.description ?? article?.seoDescription ?? (path ? descriptions[slug[0]] : copy[locale].heroBody);
+  const rawTitle = trustPage?.title ?? article?.seoTitle ?? (path ? titles[slug[0]] : localizedCopy(locale).heroTitle);
+  const rawDescription = trustPage?.description ?? article?.seoDescription ?? (path ? descriptions[slug[0]] : localizedCopy(locale).heroBody);
   return {
     title: translate(locale, rawTitle),
     description: rawDescription ? translate(locale, rawDescription) : undefined,
     alternates: { canonical: `/${locale}${path ? `/${path}` : ""}`, languages: languageAlternates(path) },
     robots: { index: true, follow: true },
-    openGraph: { title: translate(locale, rawTitle), description: rawDescription ? translate(locale, rawDescription) : undefined, locale, images: article?.image ? [{ url: article.image.src, width: 1200, height: 630, alt: translate(locale, article.image.alt) }] : undefined },
+    twitter: { card: "summary_large_image", title: translate(locale, rawTitle), description: rawDescription ? translate(locale, rawDescription) : undefined },
+    openGraph: { url: `https://hacoovip.store/${locale}${path ? `/${path}` : ""}`, type: article ? "article" : "website", title: translate(locale, rawTitle), description: rawDescription ? translate(locale, rawDescription) : undefined, locale, images: article?.image ? [{ url: article.image.src, width: 1200, height: 630, alt: translate(locale, article.image.alt) }] : undefined },
   };
 }
 

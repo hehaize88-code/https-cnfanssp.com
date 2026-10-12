@@ -1,0 +1,39 @@
+[
+  {
+    "slug": "how-to-use-hacoo-spreadsheet",
+    "title": "Hacoo Spreadsheet: Find Links and Compare Products",
+    "seoTitle": "Hacoo Spreadsheet: Find Links and Compare Products",
+    "modifiedISO": "2026-10-12",
+    "section": {
+      "heading": "A comparison row you can actually use",
+      "paragraphs": [
+        "Create one row per selected variant with the product URL, category, current title, chosen size or dimensions, displayed currency, item price, delivery charge, check date and unresolved questions. Keep the price in its original currency before any comparison conversion. If a detail is missing, write “not stated” instead of filling the gap from a visually similar item. This makes the sheet a record of evidence rather than a list of assumptions. For example, two identical lead images with different size charts should remain separate candidates until the discrepancy is resolved. Reopen the final choice before checkout and confirm the selected variation again. The catalog linked from this website is independent of Hacoo; its listing does not establish availability inside the Hacoo app or make Hacoo policies apply to that separate service."
+      ]
+    }
+  },
+  {
+    "slug": "hacoo-size-shipping-planning",
+    "title": "Hacoo Size Guide: Shoe and Clothing Measurements",
+    "seoTitle": "Hacoo Size Guide: Shoe and Clothing Measurements",
+    "modifiedISO": "2026-10-12",
+    "section": {
+      "heading": "Keep measurement types separate",
+      "paragraphs": [
+        "Use millimetres for foot measurements and clearly labelled centimetres for flat garment measurements. Foot length, insole length and outsole length are different inputs. Likewise, a garment’s flat chest width is not the same field as a body chest circumference. In an illustrative comparison, a top measuring 58 cm across the chest and a chart labelled “chest 116” cannot be treated as equivalent until the seller confirms the second chart’s unit and method. Record the shoulder construction and sleeve starting point too: a dropped shoulder changes the meaning of sleeve length. If the chart lacks a definition, request clarification before choosing. Use a well-fitting item as your reference, repeat the measurements and keep uncertain fields visible. Do not solve uncertainty by applying a universal size-up rule across shoes, hoodies and jackets."
+      ]
+    }
+  },
+  {
+    "slug": "hacoo-shipping-returns-refunds",
+    "title": "Hacoo Shipping Times, Returns and Refund Instructions",
+    "seoTitle": "Hacoo Shipping Times, Returns and Refund Instructions",
+    "modifiedISO": "2026-10-12",
+    "section": {
+      "heading": "Apply the policy to the service that accepted your order",
+      "paragraphs": [
+        "The shipping page was rechecked on October 12, 2026. It still presents delivery ranges as guidance and instructs buyers to follow its refund process. Keep a distinction between published platform guidance, the estimate shown for a particular order and the actual tracking record. These three records answer different questions. Save the terms shown when you place the order, then record any later instruction attached to your support case. If the order-specific instruction differs from an older general article, ask the responsible service to clarify the discrepancy before returning an item or assuming a refund is approved.",
+        "Before using any shipping estimate, identify the service on the order confirmation. A product discovered through this site can lead to an independent catalog, so Hacoo’s policy is not automatically the policy of that eventual purchase. Record the selected destination, item availability, parcel allocation and support contact from the actual transaction. Do not add a processing estimate a second time when the quoted date already represents receiving time. If an order is split, compare each tracking number with its assigned contents rather than treating one delivered parcel as proof that all items arrived. Review these details before payment, because a generic delivery range cannot resolve missing destination information or an unclear seller."
+      ]
+    }
+  }
+]

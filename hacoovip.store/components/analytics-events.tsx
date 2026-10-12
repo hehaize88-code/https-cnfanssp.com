@@ -20,12 +20,12 @@ export function AnalyticsEvents() {
       const url = new URL(anchor.href, window.location.href);
       const label = anchor.textContent?.trim().replace(/\s+/g, " ").slice(0, 100) || "unlabelled";
 
-      if (url.hostname === "cnfanssp.com") {
-        const eventName = url.pathname.includes("/product/detail")
-          ? "product_detail_click"
-          : url.pathname.includes("/AllProducts/category")
-            ? "category_click"
-            : "main_product_click";
+      if (["cnfanshp.com", "www.cnfanshp.com"].includes(url.hostname)) {
+        const eventName = /^\/AllProducts\/\d+\.html$/.test(url.pathname)
+          ? "main_product_click"
+          : url.pathname === "/AllProducts/"
+            ? "catalog_click"
+            : "category_click";
         sendEvent(eventName, { link_url: url.href, link_text: label, page_path: window.location.pathname });
         sendEvent("outbound_click", { link_domain: url.hostname, link_url: url.href, page_path: window.location.pathname });
         return;
@@ -40,9 +40,10 @@ export function AnalyticsEvents() {
       const form = event.target;
       if (!(form instanceof HTMLFormElement)) return;
       const action = new URL(form.action, window.location.href);
-      if (action.hostname !== "cnfanssp.com" || !action.pathname.includes("/search")) return;
+      if (!["cnfanshp.com", "www.cnfanshp.com"].includes(action.hostname) || !action.pathname.includes("/search")) return;
       const input = form.elements.namedItem("keywords");
       const query = input instanceof HTMLInputElement ? input.value.trim() : "";
+      if (!query) return;
       sendEvent("search_submit", { search_term: query.slice(0, 100), page_path: window.location.pathname });
     };
 

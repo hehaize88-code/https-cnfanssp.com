@@ -6,22 +6,21 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL("https://hacoovip.store"),
   title: {
-    default: "Hacoo Spreadsheet 2026: Links, Shipping & App Facts",
+    default: "Hacoo Spreadsheet: Shoes, Clothing & Product Finds",
     template: "%s | HacooVIP",
   },
-  description: "Browse an independent Hacoo spreadsheet, verify live links, check product photos, shipping, returns and current app facts before opening a product route.",
+  description: "Browse shoes, clothing and accessories in an independent product index. Compare photos and sizes, then check current listings and Hacoo app guides.",
   alternates: {
     canonical: "/",
     languages: { "en": "/", "de": "/de", "es": "/es", "fr": "/fr", "it": "/it", "x-default": "/" },
   },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1 } },
-  openGraph: { type: "website", siteName: "HacooVIP", title: "Hacoo Spreadsheet 2026: Links, Shipping & App Facts", description: "Independent Hacoo product routes with current guides to links, tracking, shipping, returns and app facts.", url: "https://hacoovip.store/", images: [{ url: "/article-covers/hacoo-app-facts.svg", width: 1200, height: 630, alt: "HacooVIP independent product research guide" }] },
+  openGraph: { type: "website", siteName: "HacooVIP", title: "Hacoo Spreadsheet: Shoes, Clothing & Product Finds", description: "Independent Hacoo product routes with current guides to links, tracking, shipping, returns and app facts.", url: "https://hacoovip.store/", images: [{ url: "/article-covers/hacoo-app-facts.svg", width: 1200, height: 630, alt: "HacooVIP independent product research guide" }] },
   twitter: { card: "summary_large_image", title: "Hacoo Spreadsheet 2026 | HacooVIP", description: "Independent Hacoo product routes plus current shipping, tracking, returns and app guidance.", images: ["/article-covers/hacoo-app-facts.svg"] },
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",
   },
-  other: { "codex-preview": "development" },
 };
 
 export default function RootLayout({
