@@ -1,3 +1,4 @@
+import { seoRefresh } from "@/lib/seo-refresh";
 import { localizedPages } from "@/lib/page-translations";
 import { pageParitySupplements } from "@/lib/page-parity-supplements";
 
@@ -6,21 +7,21 @@ export type Lang = (typeof languages)[number];
 export const routes = ["", "spreadsheet", "finds", "guide", "qc", "shipping", "articles", "faq"] as const;
 
 export const products = [
-  { name: "AMIRI MA-1 Sneakers", category: "shoes", price: "$53.44", image: "/products/amiri-ma1.webp", href: "https://cnfanssp.com/AllProducts/3842.html" },
-  { name: "Represent Hoodie", category: "hoodies", price: "$17.25", image: "/products/represent-hoodie.webp", href: "https://cnfanssp.com/AllProducts/5214.html" },
-  { name: "C-Star Mohair Sweater", category: "hoodies", price: "$25.43", image: "/products/corteiz-sweater.webp", href: "https://cnfanssp.com/AllProducts/2504.html" },
-  { name: "Jersey 60", category: "jerseys", price: "$13.64", image: "/products/jersey-60.jpg", href: "https://cnfanssp.com/AllProducts/6667.html" },
-  { name: "Graphic Phone Case", category: "accessories", price: "$3.45", image: "/products/phone-case.jpg", href: "https://cnfanssp.com/AllProducts/948.html" },
-  { name: "Utility Shoulder Bag", category: "accessories", price: "$17.90", image: "/products/trapstar-bag.webp", href: "https://cnfanssp.com/AllProducts/525.html" },
+  { name: "AMIRI MA-1 Sneakers", category: "shoes", price: "$53.44", image: "/products/amiri-ma1.webp", href: "https://cnfanshp.com/AllProducts/3842.html" },
+  { name: "Represent Hoodie", category: "hoodies", price: "$17.25", image: "/products/represent-hoodie.webp", href: "https://cnfanshp.com/AllProducts/5214.html" },
+  { name: "C-Star Mohair Sweater", category: "hoodies", price: "$25.43", image: "/products/corteiz-sweater.webp", href: "https://cnfanshp.com/AllProducts/2504.html" },
+  { name: "Jersey 60", category: "jerseys", price: "$13.64", image: "/products/jersey-60.jpg", href: "https://cnfanshp.com/AllProducts/6667.html" },
+  { name: "Graphic Phone Case", category: "accessories", price: "$3.45", image: "/products/phone-case.jpg", href: "https://cnfanshp.com/AllProducts/948.html" },
+  { name: "Utility Shoulder Bag", category: "accessories", price: "$17.90", image: "/products/trapstar-bag.webp", href: "https://cnfanshp.com/AllProducts/525.html" },
 ] as const;
 
 export const categories = [
-  { key: "shoes", href: "https://cnfanssp.com/shoes/", icon: "01" },
-  { key: "hoodies", href: "https://cnfanssp.com/hoodies-sweaters/", icon: "02" },
-  { key: "tshirts", href: "https://cnfanssp.com/t-shirts/", icon: "03" },
-  { key: "jerseys", href: "https://cnfanssp.com/jersey/", icon: "04" },
-  { key: "accessories", href: "https://cnfanssp.com/accessories/", icon: "05" },
-  { key: "all", href: "https://cnfanssp.com/AllProducts/", icon: "06" },
+  { key: "shoes", href: "https://cnfanshp.com/shoes/", icon: "01" },
+  { key: "hoodies", href: "https://cnfanshp.com/hoodies-sweaters/", icon: "02" },
+  { key: "tshirts", href: "https://cnfanshp.com/t-shirts/", icon: "03" },
+  { key: "jerseys", href: "https://cnfanshp.com/jersey/", icon: "04" },
+  { key: "accessories", href: "https://cnfanshp.com/accessories/", icon: "05" },
+  { key: "all", href: "https://cnfanshp.com/AllProducts/", icon: "06" },
 ] as const;
 
 export type PageCopy = { eyebrow: string; title: string; intro: string; sections: { title: string; body: string }[] };
@@ -149,3 +150,14 @@ export const copy: Record<Lang, Copy> = {
     cats: { shoes: "Scarpe", hoodies: "Felpe", tshirts: "T-Shirt", jerseys: "Maglie", accessories: "Accessori", all: "Tutti i prodotti" }, cards: [{ title: "01 · Ricevi", body: "Registra stato, colore, taglia, quantità e parti incluse." }, { title: "02 · Misura", body: "Usa un metodo coerente e confronta i dettagli salvati." }, { title: "03 · Recensisci", body: "Separa prodotto, consegna e servizio con data e Paese." }], pages: localizedPageCopy("it"),
   },
 };
+
+for (const lang of languages) {
+  const refresh = seoRefresh[lang];
+  copy[lang].hero = refresh.hero;
+  copy[lang].heroAccent = refresh.accent;
+  copy[lang].intro = refresh.home.description;
+  for (const route of ["spreadsheet", "guide", "shipping", "articles"] as const) {
+    copy[lang].pages[route].title = refresh[route].title;
+    copy[lang].pages[route].intro = refresh[route].description;
+  }
+}

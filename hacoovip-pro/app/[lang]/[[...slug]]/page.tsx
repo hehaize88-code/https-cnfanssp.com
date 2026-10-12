@@ -1,3 +1,5 @@
+import { articleDates } from "@/lib/october-articles";
+import { seoRefresh } from "@/lib/seo-refresh";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -18,20 +20,13 @@ const localeByLanguage: Record<Lang, string> = {
   fr: "fr_FR",
   it: "it_IT",
 };
-const articleDetails: Record<ArticleSlug, { published: string; modified: string; image: string }> = {
-  "hacoo-spreadsheet-live-source": { published: "2026-08-29", modified: "2026-08-29", image: "/products/amiri-ma1.webp" },
-  "hacoo-reviews-2026": { published: "2026-08-29", modified: "2026-08-29", image: "/hacoo-logo.png" },
-  "hacoo-shipping-time-cost": { published: "2026-08-29", modified: "2026-08-29", image: "/hacoo-logo.png" },
-  "how-does-hacoo-work": { published: "2026-09-19", modified: "2026-09-19", image: "/hacoo-logo.png" },
-  "hacoo-qc-guide": { published: "2026-09-19", modified: "2026-09-19", image: "/hacoo-logo.png" },
-  "hacoo-returns-refunds": { published: "2026-09-19", modified: "2026-09-19", image: "/hacoo-logo.png" },
-  "hacoo-website-vs-app": { published: "2026-09-19", modified: "2026-09-19", image: "/hacoo-logo.png" },
-  "hacoo-order-tracking": { published: "2026-09-19", modified: "2026-09-19", image: "/hacoo-logo.png" },
-  "hacoo-sizing-guide": { published: "2026-09-19", modified: "2026-09-19", image: "/hacoo-logo.png" },
-  "hacoo-product-links-codes": { published: "2026-09-19", modified: "2026-09-19", image: "/hacoo-logo.png" },
-  "hacoo-app-region-access": { published: "2026-09-19", modified: "2026-09-19", image: "/hacoo-logo.png" },
-};
+const articleDetails = Object.fromEntries(articleSlugs.map((slug) => [slug, {
+  ...articleDates(slug), image: slug === "hacoo-spreadsheet-live-source" ? "/products/amiri-ma1.webp" : "/hacoo-logo.png",
+}])) as Record<ArticleSlug, { published: string; modified: string; image: string }>;
 const articleSourceUrls: Record<ArticleSlug, string[]> = {
+  "hacoo-links-not-working": ["https://www.hacoo.app/"],
+  "hacoo-shoe-size-guide": [],
+  "hacoo-refund-status": ["https://act.hacoo.app/act/sara/helpcenter/return11"],
   "hacoo-spreadsheet-live-source": [
     "https://www.hacoo.app/en-US/pages/terms-of-service",
     "https://www.hacoo.app/en-US/pages/intellectual-property",
@@ -206,6 +201,45 @@ function ProductGrid({ lang }: { lang: Lang }) {
   ))}</div>;
 }
 
+const guidesByRoute: Record<string, ArticleSlug[]> = {
+  spreadsheet: ["hacoo-spreadsheet-live-source", "hacoo-links-not-working", "hacoo-product-links-codes"],
+  shipping: ["hacoo-shipping-time-cost", "hacoo-order-tracking", "hacoo-refund-status"],
+  guide: ["how-does-hacoo-work", "hacoo-website-vs-app", "hacoo-returns-refunds"],
+  qc: ["hacoo-qc-guide", "hacoo-sizing-guide", "hacoo-shoe-size-guide"],
+  finds: ["hacoo-spreadsheet-live-source", "hacoo-links-not-working", "hacoo-sizing-guide"],
+};
+
+function relatedArticles(slug: ArticleSlug): ArticleSlug[] {
+  const group = /refund|return|tracking|shipping/.test(slug) ? "shipping"
+    : /size|sizing|qc|review/.test(slug) ? "qc"
+    : /link|spreadsheet|region/.test(slug) ? "spreadsheet" : "guide";
+  return [...new Set<ArticleSlug>([...guidesByRoute[group], "how-does-hacoo-work", "hacoo-refund-status"])]
+    .filter((item) => item !== slug).slice(0, 3);
+}
+
+function RelatedGuides({ lang, slugs }: { lang: Lang; slugs: ArticleSlug[] }) {
+  return <section className="section-shell related-guides"><h2>{seoRefresh[lang].related}</h2>
+    <div>{slugs.map((slug) => <Link key={slug} data-track="related_article_click" href={`/${lang}/articles/${slug}`}>
+      <h3>{articles[lang][slug].title}</h3><p>{articles[lang][slug].description}</p><span>{copy[lang].open} →</span>
+    </Link>)}</div>
+  </section>;
+}
+
+function SpreadsheetTable({ lang }: { lang: Lang }) {
+  const labels = seoRefresh[lang];
+  const c = copy[lang];
+  return <section className="section-shell spreadsheet-table">
+    <h2>{labels.table}</h2><p>{labels.referenceNote}</p>
+    <div className="table-scroll"><table><caption>{labels.table} · 6</caption>
+      <thead><tr><th scope="col">{c.nav.finds}</th><th scope="col">{labels.price}</th><th scope="col">{labels.destination}</th></tr></thead>
+      <tbody>{products.map((product) => <tr key={product.href}>
+        <th scope="row"><div className="table-product"><img src={product.image} alt={product.name} width="64" height="64" loading="lazy" /><span>{product.name}<small>{c.cats[product.category]}</small></span></div></th>
+        <td>{product.price}</td><td><a data-track="spreadsheet_product_click" href={product.href} target="_blank" rel="noopener noreferrer">{c.open} ↗</a></td>
+      </tr>)}</tbody>
+    </table></div>
+  </section>;
+}
+
 function Home({ lang }: { lang: Lang }) {
   const c = copy[lang];
   return <>
@@ -231,7 +265,7 @@ function Home({ lang }: { lang: Lang }) {
         <a className="gallery-main" data-track="outbound_main_site_click" href={products[0].href} target="_blank" rel="noopener noreferrer" aria-label={`${c.open}: ${products[0].name}`}><img src="/products/amiri-ma1.webp" alt="Black and white sneaker product reference" width="750" height="750" /><span>{c.cats.shoes} · $53.44 ↗</span></a>
         <a className="gallery-small gallery-one" data-track="outbound_main_site_click" href={products[1].href} target="_blank" rel="noopener noreferrer" aria-label={`${c.open}: ${products[1].name}`}><img src="/products/represent-hoodie.webp" alt="Hoodie product reference" width="750" height="750" /></a>
         <a className="gallery-small gallery-two" data-track="outbound_main_site_click" href={products[5].href} target="_blank" rel="noopener noreferrer" aria-label={`${c.open}: ${products[5].name}`}><img src="/products/trapstar-bag.webp" alt="Shoulder bag product reference" width="750" height="750" /></a>
-        <a className="gallery-note" data-track="outbound_main_site_click" href="https://cnfanssp.com/AllProducts/" target="_blank" rel="noopener noreferrer" aria-label={c.viewAll}><strong>06</strong><span>{c.nav.finds} ↗</span></a>
+        <a className="gallery-note" data-track="outbound_main_site_click" href="https://cnfanshp.com/AllProducts/" target="_blank" rel="noopener noreferrer" aria-label={c.viewAll}><strong>06</strong><span>{c.nav.finds} ↗</span></a>
       </div>
     </section>
     <section className="category-section">
@@ -243,7 +277,7 @@ function Home({ lang }: { lang: Lang }) {
     <section className="section-shell block-section products-section">
       <div className="section-heading"><div><p className="index">02 · {c.nav.finds} · 06</p><h2>{c.productTitle}</h2></div><p>{c.productSub}</p></div>
       <ProductGrid lang={lang} />
-      <a className="outline-button" data-track="outbound_main_site_click" href="https://cnfanssp.com/AllProducts/" target="_blank" rel="noopener noreferrer">{c.viewAll} ↗</a>
+      <a className="outline-button" data-track="outbound_main_site_click" href="https://cnfanshp.com/AllProducts/" target="_blank" rel="noopener noreferrer">{c.viewAll} ↗</a>
     </section>
     <section className="method-section"><div className="section-shell method-inner">
       <div className="method-intro"><p className="index">03 · {c.nav.guide}</p><h2>{c.guideTitle}</h2><p>{c.guideSub}</p></div>
@@ -251,10 +285,10 @@ function Home({ lang }: { lang: Lang }) {
     </div></section>
     <section className="home-reading-section"><div className="section-shell">
       <div className="home-section-heading"><div><p className="index">04 · {c.nav.articles}</p><h2>{c.pages.articles.title}</h2></div><Link href={`/${lang}/articles`}>{c.nav.articles} →</Link></div>
-      <div className="home-article-grid">{articleSlugs.slice(0, 6).map((slug, index) => {
+      <div className="home-article-grid">{articleSlugs.slice(0, 4).map((slug, index) => {
         const article = articles[lang][slug];
         return <Link className="home-article-card" data-track="article_click" key={slug} href={`/${lang}/articles/${slug}`}>
-          <div className="home-article-thumb"><span>0{index + 1}</span><small>{article.readTime}</small><strong>{index === 0 ? c.nav.spreadsheet : index === 1 ? c.nav.qc : c.nav.shipping}</strong></div>
+          <div className="home-article-thumb"><span>0{index + 1}</span><small>{article.readTime}</small><strong>{c.nav.articles}</strong></div>
           <div><h3>{article.title}</h3><p>{article.description}</p><b>{c.open} →</b></div>
         </Link>;
       })}</div>
@@ -288,15 +322,20 @@ function Interior({ lang, route }: { lang: Lang; route: string }) {
     }} />}
     <section className="interior-hero-wrap"><div className="interior-hero section-shell"><div><div className="breadcrumbs interior-breadcrumbs"><Link href={`/${lang}`}>{c.nav.home}</Link><span>›</span><span>{c.nav[route]}</span></div><p className="eyebrow"><span>{c.nav[route]}</span> {page.eyebrow}</p><h1>{page.title}</h1></div><p>{page.intro}</p></div></section>
     {facts && <section className="fact-strip"><div className="section-shell fact-strip-inner"><div><small>{facts.checked}</small><strong>{facts.label}</strong></div><ul>{facts.items.map((item) => <li key={item}>{item}</li>)}</ul></div></section>}
+    {route === "spreadsheet" && <SpreadsheetTable lang={lang} />}
     {route === "finds" && <section className="section-shell interior-products"><ProductGrid lang={lang} /></section>}
     {route === "articles" ? <ArticleIndex lang={lang} /> : <section className="section-shell article-grid">{page.sections.map((section, index) => <article key={section.title}><span>{String(index + 1).padStart(2,"0")}</span><div><h2>{section.title}</h2><p>{section.body}</p></div></article>)}</section>}
     {(route === "spreadsheet" || route === "finds") && <section className="section-shell inline-search"><h2>{c.categoryTitle}</h2><SearchBox placeholder={c.search} button={c.searchButton} /></section>}
+    <RelatedGuides lang={lang} slugs={guidesByRoute[route] ?? ["hacoo-spreadsheet-live-source", "hacoo-shipping-time-cost", "how-does-hacoo-work"]} />
   </>;
 }
 
 function ArticleIndex({ lang }: { lang: Lang }) {
   const c = copy[lang];
-  return <section className="section-shell article-index">{articleSlugs.map((slug, index) => {
+  return <section className="section-shell article-index"><JsonLd data={{
+    "@context": "https://schema.org", "@type": "ItemList", numberOfItems: articleSlugs.length,
+    itemListElement: articleSlugs.map((slug, i) => ({ "@type": "ListItem", position: i + 1, name: articles[lang][slug].title, url: `${site}/${lang}/articles/${slug}` })),
+  }} />{articleSlugs.map((slug, index) => {
     const article = articles[lang][slug];
     return <Link className="article-card" data-track="article_click" key={slug} href={`/${lang}/articles/${slug}`}>
       <span>{String(index + 1).padStart(2, "0")}</span>
@@ -319,7 +358,7 @@ function ArticleDetail({ lang, slug }: { lang: Lang; slug: ArticleSlug }) {
   const currentIndex = availableSlugs.indexOf(slug);
   const nextSlug = availableSlugs[(currentIndex + 1) % availableSlugs.length];
   const nextArticle = articles[lang][nextSlug];
-  const detail = articleDetails[slug];
+  const detail = { ...articleDetails[slug], ...articleDates(slug, lang) };
   const articleUrl = `${site}/${lang}/articles/${slug}`;
   const structuredData = {
     "@context": "https://schema.org",
@@ -352,16 +391,21 @@ function ArticleDetail({ lang, slug }: { lang: Lang; slug: ArticleSlug }) {
       <div className="breadcrumbs"><Link href={`/${lang}`}>{c.nav.home}</Link><span>›</span><Link href={`/${lang}/articles`}>{c.nav.articles}</Link></div>
       <p className="article-kicker">{c.nav.articles} · {article.readTime}</p>
       <h1>{article.title}</h1><p>{article.description}</p>
+      <p className="article-updated">{seoRefresh[lang].updated} · <time dateTime={detail.modified}>{detail.modified}</time></p>
       {article.factChecked && <small className="article-source-line">{article.factChecked}</small>}
     </div></section>
+    <nav className="section-shell article-toc" aria-label={seoRefresh[lang].contents}>
+      <strong>{seoRefresh[lang].contents}</strong><ol>{article.sections.map((section, i) => <li key={section.title}><a data-track="article_toc_click" href={`#section-${i+1}`}>{section.title}</a></li>)}</ol>
+    </nav>
     <article className="section-shell article-prose">
-      {article.sources && <div className="research-basis"><strong>{sourceLabels.basis}</strong><p>{article.sources.map((source, index) => <span key={source}><a data-track="source_click" href={articleSourceUrls[slug][index]} target="_blank" rel="noopener noreferrer">{source}</a>{index < article.sources!.length - 1 ? " · " : ""}</span>)}</p><small>{sourceLabels.note}</small></div>}
+      {article.sources && <div className="research-basis"><strong>{sourceLabels.basis}</strong><p>{article.sources.map((source, index) => <span key={source}><span>{source}</span>{index < article.sources!.length - 1 ? " · " : ""}</span>)}</p><small>{sourceLabels.note}</small></div>}
       <ArticleVisual lang={lang} slug={slug} />
       {article.sections.map((section, index) => <section key={section.title} id={`section-${index + 1}`}>
         <span>{String(index + 1).padStart(2, "0")}</span><div><h2>{section.title}</h2>{section.body.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}</div>
       </section>)}
       <aside><strong>{c.independent}</strong><p>{c.disclaimer}</p></aside>
     </article>
+    <RelatedGuides lang={lang} slugs={relatedArticles(slug)} />
     <section className="section-shell next-article"><div><small>{c.nav.articles}</small><h2>{nextArticle.title}</h2></div><Link data-track="article_click" href={`/${lang}/articles/${nextSlug}`}>{c.open} →</Link></section>
   </>;
 }
@@ -369,11 +413,11 @@ function ArticleDetail({ lang, slug }: { lang: Lang; slug: ArticleSlug }) {
 function ArticleVisual({ lang, slug }: { lang: Lang; slug: ArticleSlug }) {
   const c = copy[lang];
   const labels = {
-    en: { rating: "Public rating snapshot · 29 Aug 2026 · Google Play is fixed to en-US / US; other regions may display different figures.", other: "Other countries", days: "days", shipping: "Hacoo’s published destination guidance · checked 28 Aug 2026 · not a delivery guarantee." },
-    de: { rating: "Öffentlicher Bewertungsstand · 29. Aug. 2026 · Google Play ist auf en-US / USA festgelegt; andere Regionen können abweichen.", other: "Andere Länder", days: "Tage", shipping: "Veröffentlichte Zielangaben von Hacoo · geprüft am 28. Aug. 2026 · keine Liefergarantie." },
-    es: { rating: "Valoraciones públicas · 29 ago. 2026 · Google Play está fijado en en-US / EE. UU.; otras regiones pueden mostrar cifras distintas.", other: "Otros países", days: "días", shipping: "Plazos por destino publicados por Hacoo · revisados el 28 ago. 2026 · no son una garantía." },
-    fr: { rating: "Notes publiques · 29 août 2026 · Google Play est fixé sur en-US / États-Unis ; les chiffres peuvent varier selon la région.", other: "Autres pays", days: "jours", shipping: "Délais par destination publiés par Hacoo · vérifiés le 28 août 2026 · sans garantie." },
-    it: { rating: "Valutazioni pubbliche · 29 ago. 2026 · Google Play è fissato su en-US / USA; altre regioni possono mostrare dati diversi.", other: "Altri paesi", days: "giorni", shipping: "Tempi per destinazione pubblicati da Hacoo · verificati il 28 ago. 2026 · non sono una garanzia." },
+    en: { rating: "Public rating snapshot · 29 Aug 2026 · Google Play is fixed to en-US / US; other regions may display different figures.", other: "Other countries", days: "days", shipping: "Hacoo’s published destination guidance · checked 12 Oct 2026 · not a delivery guarantee." },
+    de: { rating: "Öffentlicher Bewertungsstand · 29. Aug. 2026 · Google Play ist auf en-US / USA festgelegt; andere Regionen können abweichen.", other: "Andere Länder", days: "Tage", shipping: "Veröffentlichte Zielangaben von Hacoo · geprüft am 12. Okt. 2026 · keine Liefergarantie." },
+    es: { rating: "Valoraciones públicas · 29 ago. 2026 · Google Play está fijado en en-US / EE. UU.; otras regiones pueden mostrar cifras distintas.", other: "Otros países", days: "días", shipping: "Plazos por destino publicados por Hacoo · revisados el 12 oct. 2026 · no son una garantía." },
+    fr: { rating: "Notes publiques · 29 août 2026 · Google Play est fixé sur en-US / États-Unis ; les chiffres peuvent varier selon la région.", other: "Autres pays", days: "jours", shipping: "Délais par destination publiés par Hacoo · vérifiés le 12 octobre 2026 · sans garantie." },
+    it: { rating: "Valutazioni pubbliche · 29 ago. 2026 · Google Play è fissato su en-US / USA; altre regioni possono mostrare dati diversi.", other: "Altri paesi", days: "giorni", shipping: "Tempi per destinazione pubblicati da Hacoo · verificati il 12 ottobre 2026 · non sono una garanzia." },
   }[lang];
   if (slug === "hacoo-spreadsheet-live-source") return <figure className="article-product-strip">
     {products.slice(0, 3).map((product) => <a key={product.href} data-track="outbound_main_site_click" href={product.href} target="_blank" rel="noopener noreferrer"><img src={product.image} alt={product.name} width="750" height="750" loading="lazy" /><span>{product.name}<b>{product.price} ↗</b></span></a>)}
@@ -396,7 +440,7 @@ function ArticleVisual({ lang, slug }: { lang: Lang; slug: ArticleSlug }) {
 
 function Footer({ lang }: { lang: Lang }) {
   const c = copy[lang];
-  return <footer><div className="section-shell footer-grid"><div className="brand footer-brand"><img src="/hacoo-logo.png" alt="Hacoo" width="235" height="58" /><small>{c.independent}</small></div><p>{c.disclaimer}</p><div className="footer-links"><Link href={`/${lang}/faq`}>{c.nav.faq}</Link><Link href={`/${lang}/articles`}>{c.nav.articles}</Link><a data-track="outbound_main_site_click" href="https://cnfanssp.com/AllProducts/" target="_blank" rel="noopener noreferrer">{c.viewAll} ↗</a></div></div></footer>;
+  return <footer><div className="section-shell footer-grid"><div className="brand footer-brand"><img src="/hacoo-logo.png" alt="Hacoo" width="235" height="58" /><small>{c.independent}</small></div><p>{c.disclaimer}</p><div className="footer-links"><Link href={`/${lang}/faq`}>{c.nav.faq}</Link><Link href={`/${lang}/articles`}>{c.nav.articles}</Link><a data-track="outbound_main_site_click" href="https://cnfanshp.com/AllProducts/" target="_blank" rel="noopener noreferrer">{c.viewAll} ↗</a></div></div></footer>;
 }
 
 export default async function SitePage({ params }: Props) {

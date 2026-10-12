@@ -9,11 +9,13 @@ export function SearchBox({ placeholder, button }: { placeholder: string; button
     event.preventDefault();
     const value = query.trim();
     const url = value
-      ? `https://cnfanssp.com/search.html?keywords=${encodeURIComponent(value)}&method=1&channelid=2`
-      : "https://cnfanssp.com/AllProducts/";
+      ? `https://cnfanshp.com/search.html?keywords=${encodeURIComponent(value)}&channelid=2`
+      : "https://cnfanshp.com/AllProducts/";
     (window as Window & { gtag?: (command: "event", name: string, parameters?: Record<string, string>) => void }).gtag?.("event", "search_submit", {
       search_term: value,
-      outbound_destination: "cnfanssp.com",
+      outbound_destination: "cnfanshp.com",
+      page_language: document.documentElement.lang,
+      page_path: window.location.pathname,
     });
     window.open(url, "_blank", "noopener,noreferrer");
   }

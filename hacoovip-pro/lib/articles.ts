@@ -1,3 +1,6 @@
+import localizedRepairs from "@/lib/content/october/localized-repairs.json";
+import { octoberArticleSlugs, octoberArticles } from "@/lib/october-articles";
+import { seoRefresh } from "@/lib/seo-refresh";
 import type { Lang } from "@/lib/site-data";
 import { researchedEnglishArticles } from "@/lib/researched-articles-en";
 import { translatedArticleExpansions } from "@/lib/translated-article-expansions";
@@ -19,7 +22,7 @@ export const legacyArticleSlugs = [
   "hacoo-shipping-time-cost",
 ] as const;
 
-export const articleSlugs = [...legacyArticleSlugs, ...priorityArticleSlugs] as const;
+export const articleSlugs = [...octoberArticleSlugs, ...legacyArticleSlugs, ...priorityArticleSlugs] as const;
 export const localizedArticleSlugs = articleSlugs;
 
 export type LegacyArticleSlug = (typeof legacyArticleSlugs)[number];
@@ -428,15 +431,33 @@ function localizePriorityArticles(
   const links = localizedPriorityTitles[lang].links;
   return {
     ...mapped,
-    "hacoo-qc-guide": { ...legacy["hacoo-reviews-2026"], ...qc },
-    "hacoo-product-links-codes": { ...legacy["hacoo-spreadsheet-live-source"], ...links },
+    "hacoo-qc-guide": { ...qc, sections: localizedRepairs[lang].qc },
+    "hacoo-product-links-codes": { ...links, sections: localizedRepairs[lang].links },
   } as Record<PriorityArticleSlug, Article>;
 }
 
 export const articles: Record<Lang, Record<ArticleSlug, Article>> = {
-  en: en as Record<ArticleSlug, Article>,
-  de: { ...de, ...localizePriorityArticles("de", de, priorityLocalizedSourceArticlesDe) },
-  es: { ...es, ...localizePriorityArticles("es", es, priorityLocalizedSourceArticlesEs) },
-  fr: { ...fr, ...localizePriorityArticles("fr", fr, priorityLocalizedSourceArticlesFr) },
-  it: { ...it, ...localizePriorityArticles("it", it, priorityLocalizedSourceArticlesIt) },
+  en: { ...en, ...priorityEnglishArticles, ...octoberArticles.en },
+  de: { ...de, ...localizePriorityArticles("de", de, priorityLocalizedSourceArticlesDe), ...octoberArticles.de },
+  es: { ...es, ...localizePriorityArticles("es", es, priorityLocalizedSourceArticlesEs), ...octoberArticles.es },
+  fr: { ...fr, ...localizePriorityArticles("fr", fr, priorityLocalizedSourceArticlesFr), ...octoberArticles.fr },
+  it: { ...it, ...localizePriorityArticles("it", it, priorityLocalizedSourceArticlesIt), ...octoberArticles.it },
 };
+
+for (const lang of ["en", "de", "es", "fr", "it"] as const) {
+  const refresh = seoRefresh[lang];
+  const sheet = articles[lang]["hacoo-spreadsheet-live-source"];
+  sheet.title = refresh.sheetTitle;
+  sheet.description = refresh.sheetDescription;
+  sheet.sections.unshift(refresh.sheetSection);
+  const shipping = articles[lang]["hacoo-shipping-time-cost"];
+  shipping.factChecked = `${refresh.updated} · 2026-10-12`;
+  shipping.title = refresh.shippingTitle;
+  shipping.description = refresh.shippingDescription;
+  shipping.sections.unshift(refresh.shippingSection);
+  // Replace the old universal return summary with order-specific instructions.
+  shipping.sections[8] = refresh.returnsSection;
+  articles[lang]["hacoo-returns-refunds"].sections.unshift(refresh.returnsSection);
+  articles[lang]["hacoo-sizing-guide"].sections.unshift(refresh.sizingSection);
+  articles[lang]["how-does-hacoo-work"].sections.unshift(refresh.workSection);
+}

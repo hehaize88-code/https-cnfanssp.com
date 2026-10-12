@@ -219,3 +219,57 @@ test("publishes eight priority guides with multilingual routes and complete SEO 
   const sitemapXml = await sitemap.text();
   for (const slug of slugs) assert.match(sitemapXml, new RegExp(`/en/articles/${slug}`));
 });
+
+test("all 110 routes have complete language groups, working internal links and preserved images", async () => {
+  const sitemap = await (await fetchWorker("https://hacoovip.pro/sitemap.xml")).text();
+  const urls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1]);
+  assert.equal(urls.length, 110);
+  assert.equal(new Set(urls).size, 110);
+  assert.equal((sitemap.match(/hreflang="x-default"/g) ?? []).length, 110);
+  const known = new Set(urls.map((url) => new URL(url).pathname));
+  const fresh = ["hacoo-links-not-working", "hacoo-shoe-size-guide", "hacoo-refund-status"];
+  const titles = new Set();
+  for (const url of urls) {
+    const path = new URL(url).pathname;
+    const lang = path.split("/")[1];
+    const slug = path.split("/")[3];
+    const response = await fetchWorker(url);
+    assert.equal(response.status, 200, path);
+    const html = await response.text();
+    assert.match(html, new RegExp(`<html lang="${lang}"`), path);
+    assert.equal((html.match(/<h1\b/g) ?? []).length, 1, path);
+    assert.ok(html.includes(`rel="canonical" href="${url}"`), path);
+    assert.doesNotMatch(html, /name="robots"[^>]*noindex/, path);
+    for (const target of ["en", "de", "es", "fr", "it", "x-default"]) {
+      assert.ok(html.includes(`hrefLang="${target}" href="https://hacoovip.pro/${target === "x-default" ? "en" : target}${path.slice(3)}"`), `${path}: ${target}`);
+    }
+    const title = html.match(/<title>(.*?)<\/title>/)?.[1];
+    assert.ok(title && !titles.has(title), `${path}: unique title`);
+    titles.add(title);
+    for (const match of html.matchAll(/<a\b[^>]*href="([^"]+)"/g)) {
+      const link = new URL(match[1].replaceAll("&amp;", "&"), url);
+      if (link.hostname !== "hacoovip.pro") {
+        assert.equal(link.hostname, "cnfanshp.com", `${path}: external destination`);
+      } else {
+        assert.ok(known.has(link.pathname), `${path} -> ${link.pathname}`);
+        if (link.hash && link.pathname === path) assert.ok(html.includes(`id="${link.hash.slice(1)}"`), `${path}: anchor`);
+      }
+    }
+    for (const match of html.matchAll(/<img\b[^>]*src="([^"]+)"/g)) {
+      assert.ok((await readFile(new URL(`../public${match[1]}`, import.meta.url))).length, `${path}: image`);
+    }
+    if (path.endsWith("/spreadsheet")) assert.equal((html.match(/data-track="spreadsheet_product_click"/g) ?? []).length, 6, path);
+    if (fresh.includes(slug)) {
+      assert.match(html, /"datePublished":"2026-10-12"/, path);
+      assert.match(html, /"dateModified":"2026-10-12"/, path);
+      const prose = html.match(/<article class="section-shell article-prose">([\s\S]*?)<\/article>/)?.[1] ?? "";
+      assert.equal((prose.match(/<section /g) ?? []).length, 9, path);
+      assert.equal((prose.match(/<p[ >]/g) ?? []).length, 19, `${path}: complete paragraphs plus disclaimer`);
+      const words = prose.replace(/<[^>]+>/g, " ").split(/\s+/).filter(Boolean).length;
+      assert.ok(words >= (lang === "en" ? 1200 : 900), `${path}: ${words} words`);
+      assert.ok(words <= 1800, path);
+      assert.equal((html.match(/data-track="related_article_click"/g) ?? []).length, 3, path);
+      if (lang !== "en") assert.doesNotMatch(prose, /Start with the exact|Read the current status|Measure both feet/, path);
+    }
+  }
+});

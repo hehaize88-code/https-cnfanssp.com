@@ -1,3 +1,4 @@
+import { seoRefresh } from "@/lib/seo-refresh";
 import type { ArticleSlug } from "@/lib/articles";
 import type { Lang } from "@/lib/site-data";
 
@@ -212,3 +213,12 @@ export const articleSeo: Record<Lang, Partial<Record<ArticleSlug, SeoEntry>>> = 
     "hacoo-shipping-time-cost": { title: "Tempi, costi e registro di consegna Hacoo", description: "Leggi gli intervalli pubblicati per Paese, separa stime e garanzie e conserva una cronologia chiara prima del controllo dell’articolo." },
   },
 };
+
+for (const lang of ["en", "de", "es", "fr", "it"] as const) {
+  const refresh = seoRefresh[lang];
+  for (const route of ["home", "spreadsheet", "guide", "shipping", "articles"] as const) {
+    pageSeo[lang][route] = refresh[route];
+  }
+  articleSeo[lang]["hacoo-spreadsheet-live-source"] = { title: refresh.sheetTitle, description: refresh.sheetDescription };
+  articleSeo[lang]["hacoo-shipping-time-cost"] = { title: refresh.shippingTitle, description: refresh.shippingDescription };
+}

@@ -1,3 +1,4 @@
+import italianGuides from "@/lib/content/october/italian-guides.json";
 import type { Article } from "@/lib/articles";
 
 export type LocalizedPrioritySourceSlug =
@@ -377,12 +378,14 @@ const it: Record<LocalizedPrioritySourceSlug, LocalizedDraft> = Object.fromEntri
   }];
 })) as Record<LocalizedPrioritySourceSlug, LocalizedDraft>;
 
+Object.assign(it, italianGuides);
+
 function materializeFrIt(lang: "fr" | "it", drafts: Record<LocalizedPrioritySourceSlug, LocalizedDraft>): Record<LocalizedPrioritySourceSlug, Article> {
   return Object.fromEntries(Object.entries(drafts).map(([slug, draft]) => [slug, {
     title: draft.title,
     description: draft.description,
     readTime: lang === "fr" ? "8 min de lecture" : "8 min di lettura",
-    factChecked: lang === "fr" ? "Vérifié le 19 septembre 2026" : "Verificato il 19 settembre 2026",
+    factChecked: lang === "fr" ? "Vérifié le 19 septembre 2026" : "Aggiornato il 12 ottobre 2026",
     sources: sourceLabels[lang],
     sections: [
       ...draft.headings.map((title, index) => ({ title, body: [draft.bodies[index]] })),

@@ -49,3 +49,8 @@ export const officialFacts: Record<Lang, Record<string, FactSet>> = {
     faq: { label: "Politica attuale", checked: "Centro assistenza ufficiale", items: ["I resi idonei vanno avviati entro 15 giorni dalla consegna tramite assistenza in-app.", "Hacoo dichiara di non supportare cambi: descrive reso/rimborso e nuovo acquisto.", "Le prove dipendono dal problema; prevalgono le istruzioni attuali dell’ordine."] },
   },
 };
+
+// Shipping sources rechecked for the October release; other source dates stay historical.
+for (const lang of ["en", "de", "es", "fr", "it"] as const) {
+  officialFacts[lang].shipping.checked = { en: "Official pages checked · 12 Oct 2026", de: "Offizielle Seiten geprüft · 12. Okt. 2026", es: "Páginas oficiales revisadas · 12 oct. 2026", fr: "Pages officielles vérifiées · 12 octobre 2026", it: "Pagine ufficiali verificate · 12 ottobre 2026" }[lang];
+}

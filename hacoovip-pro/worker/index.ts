@@ -6,7 +6,7 @@ const htmlCacheControl = "public, max-age=300, stale-while-revalidate=86400";
 const edgeCacheControl = "public, max-age=86400, stale-while-revalidate=604800";
 const immutableCacheControl = "public, max-age=31536000, immutable";
 const imageCacheControl = "public, max-age=2592000, stale-while-revalidate=604800";
-const pageCacheVersion = "20260919-priority-guides-v1";
+const pageCacheVersion = "20261012-multilingual-guides-v2";
 
 function permanentRedirect(url: URL): Response {
   return new Response(null, {
