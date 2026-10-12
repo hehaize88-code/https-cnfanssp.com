@@ -23,7 +23,7 @@ export function SiteShell({ locale = "en", children }: { locale?: Locale; childr
           {navRouteNames.map((route) => <Link key={route} href={hrefFor(activeLocale, route)}>{c[route]}</Link>)}
         </nav>
         <div className="header-tools">
-          <form className="mini-search" action="https://cnfanshp.com/search.html" method="get" target="_blank">
+          <form className="mini-search" action="https://www.cnfanshp.com/search.html" method="get" target="_blank">
             <label className="sr-only" htmlFor="header-search">{c.search}</label>
             <input type="hidden" name="channelid" value="2" />
             <input id="header-search" name="keywords" required maxLength={100} placeholder={c.searchPlaceholder} />

@@ -210,56 +210,56 @@ export const products = [
     "name": "Shoes · 6045",
     "category": "Shoes",
     "price": "$45.45",
-    "image": "https://cnfanshp.com/uploads/allimg/20260417/1-26041G55S9251.jpg"
+    "image": "https://www.cnfanshp.com/uploads/allimg/20260417/1-26041G55S9251.jpg"
   },
   {
     "id": 5974,
     "name": "Sweatshirt · 5974",
     "category": "Hoodies",
     "price": "$19.28",
-    "image": "https://cnfanshp.com/uploads/allimg/20260417/1-26041G1101D39.webp"
+    "image": "https://www.cnfanshp.com/uploads/allimg/20260417/1-26041G1101D39.webp"
   },
   {
     "id": 5976,
     "name": "Polo · 5976",
     "category": "T-Shirts",
     "price": "$29.61",
-    "image": "https://cnfanshp.com/uploads/allimg/20260417/1-26041G1121Q55.webp"
+    "image": "https://www.cnfanshp.com/uploads/allimg/20260417/1-26041G1121Q55.webp"
   },
   {
     "id": 5981,
     "name": "Jacket · 5981",
     "category": "Jackets",
     "price": "$41.05",
-    "image": "https://cnfanshp.com/uploads/allimg/20260417/1-26041G1193O56.webp"
+    "image": "https://www.cnfanshp.com/uploads/allimg/20260417/1-26041G1193O56.webp"
   },
   {
     "id": 5983,
     "name": "Pants · 5983",
     "category": "Pants",
     "price": "$34.30",
-    "image": "https://cnfanshp.com/uploads/allimg/20260417/1-26041G1212V39.webp"
+    "image": "https://www.cnfanshp.com/uploads/allimg/20260417/1-26041G1212V39.webp"
   },
   {
     "id": 5971,
     "name": "Cap · 5971",
     "category": "Headwear",
     "price": "$12.26",
-    "image": "https://cnfanshp.com/uploads/allimg/20260417/1-26041G10Fc05.webp"
+    "image": "https://www.cnfanshp.com/uploads/allimg/20260417/1-26041G10Fc05.webp"
   },
   {
     "id": 5952,
     "name": "Watch · 5952",
     "category": "Accessories",
     "price": "$71.63",
-    "image": "https://cnfanshp.com/uploads/allimg/20260417/1-26041G04523609.webp"
+    "image": "https://www.cnfanshp.com/uploads/allimg/20260417/1-26041G04523609.webp"
   },
   {
     "id": 5850,
     "name": "Jersey · 5850",
     "category": "Jerseys",
     "price": "$12.12",
-    "image": "https://cnfanshp.com/uploads/allimg/20260328/1-26032Q40Z2R6.webp"
+    "image": "https://www.cnfanshp.com/uploads/allimg/20260328/1-26032Q40Z2R6.webp"
   }
 ] as const;
 
@@ -282,16 +282,16 @@ export function languageAlternates(path = "") {
 }
 
 export function liveProduct(id: number) {
-  return `https://cnfanshp.com/AllProducts/${id}.html`;
+  return `https://www.cnfanshp.com/AllProducts/${id}.html`;
 }
 
 export function liveCategory(slug: string) {
-  return `https://cnfanshp.com/${slug}/`;
+  return `https://www.cnfanshp.com/${slug}/`;
 }
 
 export function liveSearch(query: string) {
   const value = query.trim();
   return value
-    ? `https://cnfanshp.com/search.html?channelid=2&keywords=${encodeURIComponent(value)}`
-    : "https://cnfanshp.com/AllProducts/";
+    ? `https://www.cnfanshp.com/search.html?channelid=2&keywords=${encodeURIComponent(value)}`
+    : "https://www.cnfanshp.com/AllProducts/";
 }

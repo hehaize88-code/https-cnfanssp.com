@@ -34,6 +34,7 @@ for (const url of urls) {
       const target = new URL(href,base).pathname;
       assert.ok(urls.includes(base+target),`${route}: broken internal link ${href}`);
     }
+    assert.ok(!href.startsWith('https://cnfanshp.com/'),`${route}: bare catalog host loses paths`);
     assert.ok(!href.includes('cnfanssp.com'),`${route}: old catalog URL`);
   }
   for (const m of html.matchAll(/<script type="application\/ld\+json">(.*?)<\/script>/gs)) JSON.parse(m[1]);

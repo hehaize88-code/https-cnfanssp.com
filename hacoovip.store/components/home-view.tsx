@@ -38,7 +38,7 @@ export function HomeView({ locale = "en" }: { locale?: Locale }) {
           <div className="hero-copy">
             <span className="section-kicker">{tx("HACOO / RESEARCH BRIEF / 2026")}</span>
             <h1>{c.heroTitle}</h1><p>{c.heroBody}</p>
-            <form className="hero-search" action="https://cnfanshp.com/search.html" method="get" target="_blank">
+            <form className="hero-search" action="https://www.cnfanshp.com/search.html" method="get" target="_blank">
               <label className="sr-only" htmlFor="hero-search">{c.search}</label>
               <input type="hidden" name="channelid" value="2" />
               <input id="hero-search" name="keywords" required maxLength={100} placeholder={c.searchPlaceholder} />
