@@ -156,6 +156,14 @@ for (const lang of languages) {
   copy[lang].hero = refresh.hero;
   copy[lang].heroAccent = refresh.accent;
   copy[lang].intro = refresh.home.description;
+  copy[lang].updated = `${refresh.updated} · 2026-10-12`;
+  copy[lang].productSub = {
+    en: "Independent visual references. Prices are indicative; confirm the exact item, availability and final cost on the destination page.",
+    de: "Unabhängige Bildreferenzen mit Richtpreisen. Prüfe den genauen Artikel, Verfügbarkeit und Gesamtkosten auf der Zielseite.",
+    es: "Referencias visuales independientes con precios orientativos. Confirma artículo exacto, disponibilidad y coste final en la página de destino.",
+    fr: "Références visuelles indépendantes avec prix indicatifs. Confirmez article exact, disponibilité et coût final sur la page de destination.",
+    it: "Riferimenti visivi indipendenti con prezzi indicativi. Conferma articolo esatto, disponibilità e costo finale nella pagina di destinazione.",
+  }[lang];
   for (const route of ["spreadsheet", "guide", "shipping", "articles"] as const) {
     copy[lang].pages[route].title = refresh[route].title;
     copy[lang].pages[route].intro = refresh[route].description;
