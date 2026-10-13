@@ -1,7 +1,7 @@
 """Check actual exported HTML, independent of the article data and renderer."""
 from pathlib import Path
 from html.parser import HTMLParser
-import json,re,xml.etree.ElementTree as ET
+import fnmatch,json,re,xml.etree.ElementTree as ET
 
 root=Path(__file__).resolve().parents[1]/'dist/pages'
 base='https://joyagoos.store'
@@ -77,4 +77,16 @@ p=Page((root/'404.html').read_text());assert not p.canonical and 'noindex' in p.
 redirects=(root/'_redirects').read_text()
 for lang in langs:assert f'{path_for(lang,"/articles-2026")} {path_for(lang,"/articles")} 301' in redirects
 assert base+'/sitemap.xml' in (root/'robots.txt').read_text()
+# Check the effective cache policy for every public HTML entry, including aliases.
+header_rules=[]
+for block in (root/'_headers').read_text().strip().split('\n\n'):
+ lines=block.splitlines()
+ if lines:header_rules.append((lines[0], '\n'.join(lines[1:])))
+assert len(header_rules)<=100,('Pages header rule limit',len(header_rules))
+html_paths=[url.removeprefix(base) for url in urls]+[path_for(lang,'/articles-2026') for lang in langs]
+for path in html_paths+['/index.html','/404.html','/robots.txt','/sitemap.xml']:
+ policy='\n'.join(value for pattern,value in header_rules if fnmatch.fnmatchcase(path,pattern))
+ assert 'Cache-Control: no-store' in policy and 'Cloudflare-CDN-Cache-Control: no-store' in policy,(path,'stale HTML risk')
+assert not any('no-store' in value for pattern,value in header_rules if fnmatch.fnmatchcase('/assets/example.js',pattern)), 'fingerprinted assets should retain caching'
 print('PASS: 250 pages; 17 articles × 10 languages; canonical/hreflang/HTML lang/schema; all internal links; 4 home articles; tables, 404, redirects and preserved product/category/search mappings.')
+print('PASS: cache rules cover all HTML, language entry points, old article aliases and discovery files; fingerprinted asset caching retained.')

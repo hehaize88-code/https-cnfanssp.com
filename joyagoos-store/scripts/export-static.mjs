@@ -87,8 +87,17 @@ const articleAliasRedirects = articleHubPaths
   .flatMap((pathname) => [`${pathname.replace(/\/articles$/, "/articles-2026")} ${pathname} 301`, `${pathname.replace(/\/articles$/, "/articles-2026")}/ ${pathname} 301`])
   .join("\n");
 await writeFile(join(outputDir, "_redirects"), `https://www.joyagoos.store/* https://joyagoos.store/:splat 301\n${redirects}\n${articleAliasRedirects}\n`);
-const contentHeaders = articleHubPaths.flatMap(pathname => [pathname, `${pathname}/*`, `${pathname}-2026`])
-  .map(pathname => `${pathname}\n  Cache-Control: no-cache, max-age=0, must-revalidate\n`).join("\n");
+// HTML entry points must not keep an old language switcher or article registry.
+// One article wildcard per locale also covers legacy /articles-2026 URLs.
+// Keep these rules separate from fingerprinted assets and below Pages' 100-rule limit.
+const contentPaths = [...new Set([
+  ...pageUrls.map(pageUrl => new URL(pageUrl).pathname)
+    .filter(pathname => !pathname.includes("/articles/"))
+    .map(pathname => articleHubPaths.includes(pathname) ? `${pathname}*` : pathname),
+  "/index.html", "/404.html", "/robots.txt", "/sitemap.xml",
+])];
+const contentHeaders = contentPaths
+  .map(pathname => `${pathname}\n  Cache-Control: no-store, no-cache, max-age=0, must-revalidate\n  CDN-Cache-Control: no-store\n  Cloudflare-CDN-Cache-Control: no-store\n`).join("\n");
 await writeFile(join(outputDir, "_headers"), `${contentHeaders}\n/assets/*\n  Cache-Control: public, max-age=31536000, immutable\n\n/joyagoo-logo.png\n  Cache-Control: public, max-age=604800\n`);
 
 console.log(`Exported ${pageUrls.length} indexable pages to dist/pages.`);
