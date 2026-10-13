@@ -18,6 +18,7 @@ for(const lang of langs){
  for(const page of english){
   const route=lang==='en'?page.path:'/'+lang+page.path;
   const d=load(route);const html=select(d,n=>n.tagName==='html')[0];
+  assert.ok(!text(d).includes('\\fn')&&!text(d).includes('\\fscx'),route+' translation formatting artifacts');
   assert.equal(attr(html,'lang'),lang==='zh'?'zh-CN':lang,route+' language');
   assert.equal(select(d,n=>n.tagName==='h1').length,1,route+' H1');
   assert.equal(attr(select(d,n=>n.tagName==='link'&&attr(n,'rel')==='canonical')[0],'href'),base+route);
@@ -33,7 +34,11 @@ for(const lang of langs){
   for(const image of select(d,n=>n.tagName==='img')){const src=attr(image,'src');assert.ok(src?.startsWith('/'));assert.ok(fs.existsSync(path.join(root,src)),route+' missing image '+src);}
   for(const script of select(d,n=>n.tagName==='script'&&attr(n,'type')==='application/ld+json'))JSON.parse(text(script));
   if(page.path==='/articles/'){assert.equal(select(d,n=>classes(n,'article-index-card')).length,19,route+' article count');}
-  if(page.path==='/'){assert.equal(select(d,n=>n.tagName==='div'&&classes(n,'clean-article-list'))[0].childNodes.filter(n=>n.tagName==='a').length,4,route+' latest articles');}
+  if(page.path==='/'){
+   assert.equal(select(d,n=>n.tagName==='div'&&classes(n,'clean-article-list'))[0].childNodes.filter(n=>n.tagName==='a').length,4,route+' latest articles');
+   const headings=select(d,n=>n.tagName==='h3').map(text).join(' ');
+   for(const brand of ['HOKA','New Balance','Autry','Corteiz','Stussy','Akimbo Club','6PM','Lululemon','Canada Goose','Chrome Hearts'])assert.ok(headings.includes(brand),route+' preserved product brand '+brand);
+  }
   if(page.slug){
    const source=load(page.path);const body=select(d,n=>classes(n,'article-body'))[0];const enBody=select(source,n=>classes(n,'article-body'))[0];
    assert.equal(select(body,n=>n.tagName==='p').length,select(enBody,n=>n.tagName==='p').length,route+' complete paragraphs');
