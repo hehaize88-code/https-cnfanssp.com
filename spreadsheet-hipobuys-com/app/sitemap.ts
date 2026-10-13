@@ -1,11 +1,10 @@
 import type { MetadataRoute } from "next";
 import { articles } from "./article-data";
-export default function sitemap(): MetadataRoute.Sitemap {
-  const base="https://spreadsheet-hipobuys.com";
-  const staticPages=["/","/spreadsheet","/qc","/shipping","/guides","/articles","/faq"];
-  const changedPages=new Set(["/","/spreadsheet","/articles"]);
-  return [
-    ...staticPages.map((path,index)=>({url:`${base}${path}`,lastModified:new Date(changedPages.has(path)?"2026-09-14":"2026-08-25"),changeFrequency:(index===0?"weekly":"monthly") as "weekly"|"monthly",priority:index===0?1:.8})),
-    ...articles.map((article)=>({url:`${base}/articles/${article.slug}`,lastModified:new Date(article.updated),changeFrequency:"monthly" as const,priority:.75}))
-  ];
+import { baseUrl,languages,localPath } from "./i18n";
+export default function sitemap():MetadataRoute.Sitemap {
+  const pages=["/","/spreadsheet","/qc","/shipping","/guides","/articles","/faq"];
+  return languages.flatMap(lang=>[
+    ...pages.map(path=>({url:baseUrl+localPath(path,lang),lastModified:new Date("2026-10-13"),changeFrequency:"weekly" as const,priority:path==="/"?1:0.8})),
+    ...articles.map(a=>({url:baseUrl+localPath(`/articles/${a.slug}`,lang),lastModified:new Date(a.updated),changeFrequency:"monthly" as const,priority:0.75}))
+  ]);
 }

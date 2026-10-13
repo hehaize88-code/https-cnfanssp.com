@@ -415,3 +415,63 @@ footer { padding:44px max(24px,5vw) 25px; display:grid; grid-template-columns:1f
   .language-switcher select { width:94px; }
   .header-cta { padding-inline:6px; }
 }
+
+/* Readable, compact multilingual guides. */
+.home-article-grid { grid-template-columns:repeat(4,minmax(0,1fr)); }
+.home-article-grid h3 { font-size:22px; line-height:1.25; overflow-wrap:anywhere; }
+.language-links { display:flex; flex-wrap:wrap; gap:12px; grid-column:1/-1; font-size:13px; }
+.language-links a[aria-current=page] { font-weight:700; text-decoration:underline; }
+.sub-hero { min-height:0; padding:46px max(24px,7vw); }
+.sub-hero h1 { font-size:clamp(32px,4.4vw,64px); line-height:1.08; letter-spacing:-.045em; overflow-wrap:anywhere; }
+.breadcrumbs { display:flex; gap:10px; padding:22px max(24px,7vw) 0; font-size:13px; }
+.breadcrumbs a { color:var(--blue); }
+.article-layout { padding-top:32px; }
+.article-prose { min-width:0; }
+.article-prose section { scroll-margin-top:24px; }
+.article-toc a { line-height:1.45; }
+.article-card-grid { margin-top:18px; }
+.article-card h3 { font-size:23px; line-height:1.25; margin:14px 0; }
+.article-card-top time { font-size:11px; color:var(--muted); }
+.article-card { min-height:0; }
+.article-topic { margin-top:34px; scroll-margin-top:24px; }
+.topic-nav { display:flex; gap:10px; flex-wrap:wrap; }
+.topic-nav a { border:1px solid var(--line); border-radius:30px; padding:10px 16px; font-size:14px; }
+.source-address { display:block; overflow-wrap:anywhere; color:var(--muted); margin-top:6px; font-size:11px; }
+.related-articles a { color:var(--blue); text-decoration:underline; text-underline-offset:3px; }
+.landing-related { padding:28px max(24px,7vw); }
+.landing-related>div { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:16px; }
+.landing-related a { border:1px solid var(--line); padding:18px; border-radius:12px; }
+.landing-related strong { display:block; line-height:1.35; color:var(--blue); }
+.landing-related span { display:block; margin-top:8px; color:var(--muted); font-size:14px; line-height:1.5; }
+.shipping-calculator { padding:24px; margin:24px auto; border:1px solid var(--line); border-radius:16px; background:var(--surface); max-width:920px; scroll-margin-top:24px; }
+.shipping-calculator h2 { margin-top:0; font-size:28px; }
+.shipping-calculator p { font-size:15px; line-height:1.65; }
+.calculator-fields { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:14px; margin:20px 0; }
+.calculator-fields label { display:flex; flex-direction:column; gap:6px; font-size:13px; line-height:1.4; font-weight:600; }
+.calculator-fields input,.calculator-fields select { min-width:0; width:100%; padding:11px; border:1px solid #aab1b8; border-radius:6px; font:inherit; font-size:16px; color:var(--ink); background:#fff; }
+.calculator-fields .calculator-wide { grid-column:1/-1; }
+.calculator-help { color:var(--muted); }
+.shipping-calculator button { cursor:pointer; font:inherit; }
+.calculator-result { margin-top:18px; border-top:1px solid var(--line); padding-top:14px; }
+.calculator-result strong { color:var(--blue); }
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible { outline:3px solid var(--blue); outline-offset:3px; }
+@media(max-width:1050px) { .home-article-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+@media(max-width:720px) {
+  .sub-hero { padding:28px 18px; min-height:0; }
+  .sub-hero h1 { font-size:34px; margin:12px 0; }
+  .sub-hero>div>p:last-child { font-size:15px; line-height:1.65; }
+  .sub-hero-mark { display:none; }
+  .home-article-grid { grid-template-columns:1fr; }
+  .home-article-grid h3 { font-size:19px; line-height:1.3; }
+  .home-article-grid article>div small,.home-article-grid article>p,.home-article-grid article>a { font-size:12px; }
+  .article-layout { gap:24px; padding:24px 18px 40px; }
+  .article-prose p,.article-prose li { font-size:16px; line-height:1.75; }
+  .article-toc { position:static; }
+  .article-card h3 { font-size:22px; }
+  .landing-related { padding:22px 18px; }
+  .landing-related>div { grid-template-columns:1fr; gap:10px; }
+  .shipping-calculator { padding:18px; margin:20px 18px; }
+  .article-prose .shipping-calculator { margin:20px 0; }
+  .calculator-fields { grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; }
+  .shipping-calculator h2 { font-size:25px; }
+}

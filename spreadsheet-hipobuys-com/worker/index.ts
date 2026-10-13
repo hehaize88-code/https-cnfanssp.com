@@ -65,8 +65,9 @@ const worker = {
   async fetch(request: Request, env: Env, ctx: ExecutionContext): Promise<Response> {
     const url = new URL(request.url);
 
-    if (url.hostname === "www.spreadsheet-hipobuys.com") {
+    if (url.hostname === "www.spreadsheet-hipobuys.com" || (url.hostname === "spreadsheet-hipobuys.com" && url.protocol === "http:")) {
       url.hostname = "spreadsheet-hipobuys.com";
+      url.protocol = "https:";
       return Response.redirect(url.toString(), 301);
     }
 
@@ -96,6 +97,12 @@ const worker = {
         },
       }, allowedWidths);
     }
+
+    // Locale comes only from the public path. Never cache browser-specific translations.
+    const language = /^\/(de|es|fr|it)(?:\/|$)/.exec(url.pathname)?.[1] || "en";
+    const requestHeaders = new Headers(request.headers);
+    requestHeaders.set("x-hipo-language", language);
+    request = new Request(request, { headers: requestHeaders });
 
     if (!shouldCacheHtml(request, url)) return handler.fetch(request, env, ctx);
 

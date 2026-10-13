@@ -21,15 +21,17 @@ export default function AnalyticsEvents() {
           link_url: destination.href,
           link_text: (link.textContent || "").trim().slice(0, 100),
           source_page: window.location.pathname,
+          language: document.documentElement.lang,
         };
         if (destination.hostname === "cnfanssp.com") sendEvent("catalog_click", parameters);
-        else if (destination.origin === window.location.origin && destination.pathname.startsWith("/articles/")) sendEvent("article_click", parameters);
+        else if (destination.origin === window.location.origin && /^\/(?:de\/|es\/|fr\/|it\/)?articles\//.test(destination.pathname)) sendEvent("article_click", parameters);
       }
 
       const categoryButton = target?.closest<HTMLButtonElement>(".clean-tabs button");
       if (categoryButton) sendEvent("category_filter", {
         category: (categoryButton.textContent || "").trim(),
         source_page: window.location.pathname,
+          language: document.documentElement.lang,
       });
     };
 
@@ -40,6 +42,7 @@ export default function AnalyticsEvents() {
       sendEvent("site_search", {
         search_term: input?.value.trim() || "all products",
         source_page: window.location.pathname,
+          language: document.documentElement.lang,
       });
     };
 
