@@ -26,7 +26,7 @@ The October 2026 release adds four distinct product-research guides in all five 
 
 Localized bodies live in `app/content/research-{lang}.json`. Maintain section and route parity when editing them. The shipping worksheet compares weights under a supplied divisor; it does not quote shipping rates. Its defaults and article arithmetic are illustrative.
 
-Article discovery now uses topic groups, four homepage article cards, per-article contents and contextual links. The existing live-price and variant guides have additional practical checks in every language. Buying, spreadsheet, QC and shipping hub steps have individual descriptions.
+Ten existing article search titles have concise, localized wording that describes the actual content. Article discovery now uses topic groups, four homepage article cards, per-article contents and contextual links. The existing live-price and variant guides have additional practical checks in every language. Buying, spreadsheet, QC and shipping hub steps have individual descriptions.
 
 ## Analytics
 

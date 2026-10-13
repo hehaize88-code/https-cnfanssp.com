@@ -1,3 +1,4 @@
+import {searchTitles} from "../../search-titles";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { SitePage } from "../../site-page";
@@ -31,7 +32,7 @@ export async function generateMetadata({params}:{params:Promise<{lang:string;slu
   const category=categoryKeys.includes(page as CategoryKey)?getCategoryPage(lang,page as CategoryKey):null;
   const trust=trustPages.includes(page)?getTrustPage(lang,page as TrustPageKey):null;
   const intro=basePages.includes(page)&&page!=="home"?pageIntro[lang][page as keyof typeof pageIntro.en]:null;
-  const label=page==="home"?uiText[lang].homeTitle:category?.title??trust?.title??article?.title??pageTitles[lang][page]??intro?.[1]??"Joyagoos";
+  const label=page==="home"?uiText[lang].homeTitle:category?.title??trust?.title??searchTitles[lang][page]??article?.title??pageTitles[lang][page]??intro?.[1]??"Joyagoos";
   const description=page==="home"?copy[lang].lede as string:category?.description??trust?.description??article?.description??intro?.[2]??copy[lang].disclaimer as string;
   const archive=Boolean(article&&archivedSeoArticleSlugs.includes(page));
   const canonicalBase=archive?"https://joyagoos.org":siteBase;
