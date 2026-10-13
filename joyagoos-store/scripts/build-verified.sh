@@ -20,6 +20,7 @@ fi
 
 echo "Running bounded vinext build..."
 node "${SITES_PROJECT_ROOT}/scripts/validate-translations.mjs"
+node "${SITES_PROJECT_ROOT}/scripts/validate-editorial.mjs"
 timeout \
   --signal=TERM \
   --kill-after="${SITES_BUILD_KILL_AFTER:-10s}" \

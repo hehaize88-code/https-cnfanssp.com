@@ -10,4 +10,4 @@ export async function generateMetadata({ params }:{params:Promise<{locale:string
   const localContent=localizedSections[locale as Locale][section as Section];
   return buildPageMetadata({ title:`${localContent.title} | ${locales[locale as Locale].label}`, description:localContent.intro, path:`/${section}`, language:locale as Locale });
 }
-export default async function Page({params,searchParams}:{params:Promise<{locale:string;section:string}>;searchParams:Promise<{lang?:string|string[]}>}){const [{locale,section},query]=await Promise.all([params,searchParams]);if(!(locale in locales)||!(section in pageContent))notFound();return <GuideInteractive initialLocale={resolveLanguage(query.lang,locale as Locale)} prefix={`/${locale}`} section={section as Section}/>;}
+export default async function Page({params,searchParams}:{params:Promise<{locale:string;section:string}>;searchParams:Promise<{lang?:string|string[]}>}){const [{locale,section},query]=await Promise.all([params,searchParams]);if(!(locale in locales)||!(section in pageContent))notFound();return <GuideInteractive initialLocale={locale as Locale} prefix={`/${locale}`} section={section as Section}/>;}

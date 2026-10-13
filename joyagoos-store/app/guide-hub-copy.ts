@@ -1,0 +1,13 @@
+import type { SiteLanguage } from "./i18n";
+export const guideHubCopy: Record<SiteLanguage,{title:string;description:string;all:string}> = {
+ en:{title:"Joyagoo Guides: QC, Tracking, Shipping and Product Links",description:"Practical Joyagoo guides for checking QC photos, tracking parcels, preparing shipping estimates and resolving product-link problems.",all:"Browse all guides"},
+ zh:{title:"Joyagoo 实用指南：QC、物流追踪、运费与商品链接",description:"查看 Joyagoo 质检照片清单、物流追踪排查、运费估算准备与商品链接问题指南，按当前购物阶段找到下一步。",all:"查看全部指南"},
+ de:{title:"Joyagoo-Ratgeber: QC, Sendungsverfolgung, Versand und Produktlinks",description:"Praktische Joyagoo-Ratgeber zum Prüfen von QC-Fotos, Verfolgen von Paketen, Vorbereiten von Versandschätzungen und Beheben von Linkproblemen.",all:"Alle Ratgeber ansehen"},
+ pl:{title:"Poradniki Joyagoo: QC, śledzenie, wysyłka i linki produktów",description:"Praktyczne poradniki Joyagoo: sprawdzanie zdjęć QC, śledzenie paczek, przygotowanie wyceny wysyłki i rozwiązywanie problemów z linkami.",all:"Zobacz wszystkie poradniki"},
+ es:{title:"Guías Joyagoo: QC, seguimiento, envíos y enlaces de productos",description:"Guías prácticas de Joyagoo para revisar fotos QC, seguir paquetes, preparar estimaciones de envío y resolver problemas con enlaces de productos.",all:"Ver todas las guías"},
+ it:{title:"Guide Joyagoo: QC, tracciamento, spedizione e link dei prodotti",description:"Guide pratiche Joyagoo per controllare le foto QC, tracciare i pacchi, preparare stime di spedizione e risolvere problemi con i link dei prodotti.",all:"Vedi tutte le guide"},
+ fr:{title:"Guides Joyagoo : QC, suivi, livraison et liens produits",description:"Des guides pratiques Joyagoo pour vérifier les photos QC, suivre les colis, préparer une estimation des frais d’envoi et résoudre les problèmes de liens.",all:"Voir tous les guides"},
+ pt:{title:"Guias Joyagoo: QC, seguimento, envio e ligações de produtos",description:"Guias práticos Joyagoo para verificar fotografias QC, acompanhar encomendas, preparar estimativas de envio e resolver problemas com ligações de produtos.",all:"Ver todos os guias"},
+ ro:{title:"Ghiduri Joyagoo: QC, urmărire, expediere și linkuri de produse",description:"Ghiduri practice Joyagoo pentru verificarea fotografiilor QC, urmărirea coletelor, pregătirea estimărilor de transport și rezolvarea problemelor cu linkurile.",all:"Vezi toate ghidurile"},
+ sv:{title:"Joyagoo-guider: QC, spårning, frakt och produktlänkar",description:"Praktiska Joyagoo-guider för att granska QC-foton, spåra paket, förbereda fraktuppskattningar och lösa problem med produktlänkar.",all:"Visa alla guider"}
+};

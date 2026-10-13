@@ -1,11 +1,9 @@
-"use client";
-
-import { articles, isArticleAvailableInLanguage, type ArticleSlug } from "./article-data";
+import { guideHubCopy } from "./guide-hub-copy";
+import { articlePublishedDates, articles, isArticleAvailableInLanguage, type ArticleSlug } from "./article-data";
 import { completeTranslations } from "./generated-translations";
 import { Footer, Header, locales, localizedSections, pageContent, type Locale } from "./site-data";
 import { pageDetails } from "./full-translations";
 import { withLanguage, type SiteLanguage } from "./i18n";
-import { useLanguage } from "./use-language";
 import { getArticleCopy } from "./article-content";
 
 type HomeLocale = SiteLanguage;
@@ -90,7 +88,7 @@ function getCopy(locale: HomeLocale) {
 }
 
 export function HomeContent({ locale, prefix = "" }: { locale: HomeLocale; prefix?: string }) {
-  const { language, setLanguage } = useLanguage(locale);
+  const language = locale;
   const copy = getCopy(language);
   const activeLocale = language === "en" ? undefined : language;
   const articleSection = language === "en" ? pageContent.articles : localizedSections[language].articles;
@@ -98,7 +96,7 @@ export function HomeContent({ locale, prefix = "" }: { locale: HomeLocale; prefi
   const faqCards = language === "en" ? pageContent.faq.blocks : completeTranslations[language].pageContent.faq.blocks;
   return (
     <main>
-      <Header prefix={prefix} locale={activeLocale} language={language} onLanguageChange={setLanguage} />
+      <Header prefix={prefix} locale={activeLocale} language={language} />
       <section className="hero" id="top">
         <div className="hero-copy">
           <p className="eyebrow">{copy.heroKicker}</p>
@@ -128,13 +126,14 @@ export function HomeContent({ locale, prefix = "" }: { locale: HomeLocale; prefi
       </section>
       <section className="decision-section" id="checks"><div className="decision-title"><p className="eyebrow">{copy.decisionKicker}</p><h2>{copy.decisionTitle}</h2></div><div className="decision-cards">{copy.decisionBlocks.map((title,index)=><article key={title}><span>0{index+1}</span><h3>{title}</h3><p>{copy.decisionText[index]}</p></article>)}</div></section>
       <section className="section home-editorial" id="articles">
-        <div className="section-head"><div><p className="eyebrow">{articleSection.kicker}</p><h2>{articleSection.title}</h2></div><p>{articleSection.intro}</p></div>
+        <div className="section-head"><div><p className="eyebrow">{articleSection.kicker}</p><h2>{guideHubCopy[language].title}</h2></div><p>{guideHubCopy[language].description}</p></div>
         <div className="home-article-grid">
-          {articleEntries.filter(([slug])=>isArticleAvailableInLanguage(slug,language)).slice(language === "en" ? -8 : 0).map(([slug,article],index)=>{
+          {articleEntries.filter(([slug])=>isArticleAvailableInLanguage(slug,language)).sort(([a],[b])=>articlePublishedDates[b].localeCompare(articlePublishedDates[a])).slice(0,4).map(([slug,article],index)=>{
             const translated = getArticleCopy(slug,language);
             return <a href={withLanguage(`/articles/${slug}`,language)} key={slug} className="home-article-card"><span>ARTICLE / 0{index+1}</span><h3>{translated.title}</h3><p>{translated.description}</p><b>{homepageUi[language].readArticle} ↗</b></a>;
           })}
         </div>
+        <a className="all-guides-link" href={withLanguage("/articles",language)}>{guideHubCopy[language].all} ↗</a>
       </section>
       <section className="home-faq" id="faq">
         <div className="home-faq-intro"><p className="eyebrow">{faqSection.kicker}</p><h2>{faqSection.title}</h2><p>{faqSection.intro}</p></div>
@@ -142,7 +141,7 @@ export function HomeContent({ locale, prefix = "" }: { locale: HomeLocale; prefi
           {faqCards.map((item,index)=><a href={withLanguage("/faq",language)} key={`${item.number}-${item.title}`} className="home-faq-card"><span>{item.number}</span><h3>{item.title}</h3><p>{item.text}</p><b>{homepageUi[language].openFaq} ↗</b></a>)}
         </div>
       </section>
-      <Footer prefix={prefix} language={language} onLanguageChange={setLanguage} />
+      <Footer prefix={prefix} language={language} />
     </main>
   );
 }

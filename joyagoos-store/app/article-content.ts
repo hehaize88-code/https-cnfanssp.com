@@ -1,3 +1,4 @@
+import { octoberCopies, octoberEnhancements } from "./october-content";
 import { articles, isArticleAvailableInLanguage, type ArticleSlug } from "./article-data";
 import { completeTranslations } from "./generated-translations";
 import type { SiteLanguage } from "./i18n";
@@ -36,17 +37,18 @@ export function buyerFacingText(text: string, language: SiteLanguage): string {
 
 export function getArticleCopy(slug: ArticleSlug, language: SiteLanguage) {
   if (!isArticleAvailableInLanguage(slug, language)) return articles[slug];
-  const source = slug === polandDestinationArticleSlug
+  const source = octoberCopies[language][slug] || (slug === polandDestinationArticleSlug
     ? polandDestinationArticleByLanguage[language]
     : slug === germanyDestinationArticleSlug
       ? germanyDestinationArticleByLanguage[language]
     : language === "en"
       ? articles[slug]
-      : completeTranslations[language].articles[slug as keyof typeof completeTranslations[typeof language]["articles"]];
+      : completeTranslations[language].articles[slug as keyof typeof completeTranslations[typeof language]["articles"]]);
   const override = slug === "joyagoo-link-verification-guide" ? routeVerificationCopy[language] : null;
+  const enhancement = octoberEnhancements[language][slug];
   return {
     ...source,
-    title: override?.title || source.title,
-    description: override?.description || source.description,
+    title: enhancement?.title || override?.title || source.title,
+    description: enhancement?.description || override?.description || source.description,
   };
 }

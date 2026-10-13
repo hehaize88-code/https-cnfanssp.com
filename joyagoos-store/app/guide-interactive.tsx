@@ -1,8 +1,7 @@
-"use client";
-
+import { getArticleCopy } from "./article-content";
+import type { ArticleSlug } from "./article-data";
 import { Footer, Header, MAIN, locales, localizedSections, pageContent, type Locale, type Section } from "./site-data";
 import { articleHubHref, type SiteLanguage } from "./i18n";
-import { useLanguage } from "./use-language";
 import { completeTranslations } from "./generated-translations";
 import { localizedPath, SITE_URL } from "./seo";
 
@@ -61,7 +60,7 @@ const researchSources: Partial<Record<Section,{title:string;href:string}[]>> = {
 };
 
 export function GuideInteractive({ section, initialLocale = "en", prefix = "" }: { section: Section; initialLocale?: SiteLanguage; prefix?: string }) {
-  const { language, setLanguage } = useLanguage(initialLocale);
+  const language = initialLocale;
   const translated = language === "en" ? null : localizedSections[language][section];
   const source = pageContent[section];
   const ui = interfaceCopy[language];
@@ -80,19 +79,28 @@ export function GuideInteractive({ section, initialLocale = "en", prefix = "" }:
     {"@type":"ListItem",position:1,name:"Home",item:`${SITE_URL}${localizedPath("/",initialLocale)}`},
     {"@type":"ListItem",position:2,name:initialSource.title,item:`${SITE_URL}${localizedPath(`/${section}`,initialLocale)}`},
   ]};
+  const recommendations: Partial<Record<Section,ArticleSlug[]>> = {
+    spreadsheet:["joyagoo-shoes-spreadsheet-size-qc-guide","joyagoo-clothing-spreadsheet-size-guide","joyagoo-links-not-working"],
+    finds:["joyagoo-links-not-working","joyagoo-shoes-spreadsheet-size-qc-guide"],
+    guide:["joyagoo-how-to-buy-guide","joyagoo-fees-explained","joyagoo-tracking-not-updating"],
+    qc:["joyagoo-qc-photo-checklist","joyagoo-returns-refunds-guide"],
+    shipping:["joyagoo-shipping-to-usa-guide","joyagoo-shipping-estimate-input-checklist","joyagoo-actual-vs-volumetric-weight","joyagoo-tracking-not-updating"],
+    faq:["joyagoo-how-to-buy-guide","joyagoo-returns-refunds-guide"],
+  };
   const faqSchema = section === "faq" ? {"@context":"https://schema.org","@type":"FAQPage",mainEntity:initialSource.blocks.map((block)=>({"@type":"Question",name:block.title,acceptedAnswer:{"@type":"Answer",text:block.text}}))} : null;
 
   return <main>
-    <Header prefix={prefix} locale={activeLocale} language={language} onLanguageChange={setLanguage} section={section} />
+    <Header prefix={prefix} locale={activeLocale} language={language} section={section} />
     <section className="inner-hero"><p className="eyebrow">{translated?.kicker || source.kicker}</p><h1>{translated?.title || source.title}</h1><p>{translated?.intro || source.intro}</p>
       <div className="inner-actions"><a href={MAIN + "/AllProducts/"} target="_blank" rel="noreferrer">{activeLocale ? locales[activeLocale].find : "Browse matched products"} ↗</a><a href={articleHubHref(language)}>{ui.latest}</a></div>
     </section>
     <section className="inner-grid">{blocks.map((block) => <article key={block.number}><span>{block.number}</span><h2>{block.title}</h2><p>{block.text}</p>{block.bullets && <ul>{block.bullets.map((item) => <li key={item}>{item}</li>)}</ul>}</article>)}</section>
+    <nav className="article-related section-guide-links" aria-label={ui.latest}>{(recommendations[section] || []).map(slug=><a key={slug} href={localizedPath(`/articles/${slug}`,language)}>{getArticleCopy(slug,language).title} ↗</a>)}</nav>
     <section className="verification-panel" data-last-reviewed="2026-08-29"><div className="verification-heading"><p className="eyebrow">{verification.kicker}</p><h2>{verification.title}</h2></div><div className="verification-grid"><article><strong>{verification.reviewed}</strong><p>2026-08-29</p></article><article><strong>{verification.coverage}</strong><p>{blocks.length} {verification.count}</p></article><article><strong>{verification.fields}</strong><p>{blocks.map((block)=>block.title).join(" · ")}</p></article><article><strong>{verification.rule}</strong><p>{verification.maintenance}</p></article></div></section>
     {researchSources[section] && <section className="source-strip"><div><p className="eyebrow">{ui.sources}</p><h2>{ui.checked}</h2></div><div>{researchSources[section]!.map((source)=><div className="source-reference" key={source.href}><strong>{source.title}</strong><span>{source.href}</span><small>Accessed 2026-08-29</small></div>)}</div></section>}
     <section className="inner-cta"><p className="eyebrow">{ui.next}</p><h2>{ui.connect}</h2><a href={MAIN + "/AllProducts/"} target="_blank" rel="noreferrer">{ui.catalog}</a></section>
     <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(breadcrumb).replace(/</g,"\\u003c")}} />
     {faqSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(faqSchema).replace(/</g,"\\u003c")}} />}
-    <Footer prefix={prefix} language={language} onLanguageChange={setLanguage} section={section} />
+    <Footer prefix={prefix} language={language} section={section} />
   </main>;
 }

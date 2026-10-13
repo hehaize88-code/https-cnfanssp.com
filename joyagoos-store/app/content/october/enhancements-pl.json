@@ -1,0 +1,248 @@
+{
+  "joyagoo-qc-photo-checklist": {
+    "title": "Lista kontroli zdjęć QC Joyagoo: rozmiar, wady i brakujące ujęcia",
+    "description": "Sprawdzaj zdjęcia QC Joyagoo po kolei: dokładny wariant, metkę rozmiaru, pomiary, widoczne wady i brakujące ujęcia. Użyj praktycznej listy przed zatwierdzeniem produktu.",
+    "summary": "Zacznij od dokładnego zamówienia, a potem sprawdź otrzymany produkt. Oznacz każdy punkt jako zgodny, niejasny lub niezgodny. Niejasny pomiar albo brakujące ujęcie wymagają dowodów przed kolejną decyzją.",
+    "caption": "Krótka karta kontroli QC",
+    "columns": [
+      "Kontrola",
+      "Dowody do porównania",
+      "Gdy coś jest niejasne"
+    ],
+    "rows": [
+      [
+        "Produkt i wariant",
+        "Zamówienie: model, kolor, wersja i ilość",
+        "Poproś o właściwą etykietę lub ujęcie całego produktu"
+      ],
+      [
+        "Rozmiar",
+        "Metka rozmiaru oraz system rozmiarów podany przez sprzedawcę",
+        "Oddziel oznaczenia EU, UK, US i CN"
+      ],
+      [
+        "Dowody dopasowania",
+        "Opisany pomiar w tych samych punktach co twój przedmiot odniesienia",
+        "Poproś o brakujący pomiar i jednostkę"
+      ],
+      [
+        "Widoczny stan",
+        "Przód, tył, boki, łączenia, zapięcia i dołączone części",
+        "Wskaż dokładne zdjęcie i zastrzeżenie"
+      ],
+      [
+        "Kolejne działanie",
+        "Aktualne funkcje zamówienia, uprawnienia i obowiązujący termin",
+        "Wyjaśnij szybko przed pakowaniem lub usunięciem metek"
+      ]
+    ]
+  },
+  "joyagoo-fees-explained": {
+    "summary": "Oddziel kwoty zapłacone od nadal szacowanych. Powiąż każdą opłatę z etapem zakupu, walutą i aktualnym źródłem, aby ceny produktu nie pomylić z pełnym kosztem po dostawie.",
+    "caption": "Rejestr kosztów bez zgadywania stawek",
+    "columns": [
+      "Etap",
+      "Zapisz",
+      "Potwierdź przed kolejnym krokiem"
+    ],
+    "rows": [
+      [
+        "Zamówienie produktu",
+        "Cenę wybranego wariantu i dostawę krajową",
+        "Dokładny wariant i aktualną kwotę do zapłaty"
+      ],
+      [
+        "Usługi magazynowe",
+        "Każdą wybraną usługę opcjonalną",
+        "Jej aktualną cenę i zakres"
+      ],
+      [
+        "Paczka międzynarodowa",
+        "Linię, pakowanie, wagę rozliczeniową i szacunek frachtu",
+        "Końcowe pomiary oraz korekty"
+      ],
+      [
+        "Pozostałe należne koszty",
+        "Przewalutowanie płatności lub opłaty docelowe, jeśli dotyczą",
+        "Aktualne zasady operatora lub właściwego organu; nigdy nie zakładaj zera"
+      ]
+    ]
+  },
+  "joyagoo-shipping-to-usa-guide": {
+    "title": "Wysyłka Joyagoo do USA: lista kontroli paczki i linii",
+    "description": "Przygotuj paczkę Joyagoo do USA, sprawdzając adres, dopuszczalność produktów, końcowe pomiary i śledzenie. Porównuj aktualne opcje bez obietnic stałej ceny.",
+    "summary": "Zacznij od dokładnego miejsca docelowego w USA i produktów w paczce. Dostępność, ograniczenia oraz końcowa opłata wynikają z bieżących danych linii i konta; cena lub data dostawy innego kupującego nie jest wyceną twojej przesyłki.",
+    "caption": "Przed zgłoszeniem paczki do USA",
+    "columns": [
+      "Dane",
+      "Sprawdź",
+      "Zachowaj z dokumentacją paczki"
+    ],
+    "rows": [
+      [
+        "Miejsce docelowe",
+        "Kraj, stan i ZIP odpowiadają rzeczywistemu adresowi dostawy",
+        "Prywatne potwierdzenie adresu"
+      ],
+      [
+        "Zawartość",
+        "Każda cecha produktu jest opisana zgodnie z prawdą",
+        "Aktualne uwagi o dopuszczalności dla linii"
+      ],
+      [
+        "Pakowanie",
+        "Ochronę, wymiary zewnętrzne i wagę rzeczywistą",
+        "Zmierzone wartości z jednostkami"
+      ],
+      [
+        "Usługa",
+        "Podstawę naliczania, śledzenie i aktualne warunki",
+        "Wybraną linię i wycenę z datą"
+      ],
+      [
+        "Po wysyłce",
+        "Właściwy identyfikator paczki i numer śledzenia przewoźnika",
+        "Oryginalne ostatnie zdarzenie i prośbę o działanie, jeśli występuje"
+      ]
+    ]
+  },
+  "joyagoo-actual-vs-volumetric-weight": {
+    "summary": "Użyj zewnętrznych wymiarów gotowej paczki, pokazuj jednostki i przeczytaj regułę naliczania wybranej linii. Poniższe obliczenie wyjaśnia arytmetykę; nie jest wyceną frachtu ani twierdzeniem, że wszystkie linie stosują ten sam dzielnik.",
+    "caption": "Przykładowe obliczenie z hipotetycznym dzielnikiem 6000",
+    "columns": [
+      "Dane lub krok",
+      "Wartość przykładowa",
+      "Znaczenie"
+    ],
+    "rows": [
+      [
+        "Wymiary zewnętrzne",
+        "40 × 30 × 20 cm",
+        "Gotowa paczka, a nie pojedynczy produkt"
+      ],
+      [
+        "Objętość",
+        "24 000 cm³",
+        "Długość pomnożona przez szerokość i wysokość"
+      ],
+      [
+        "Waga wymiarowa",
+        "24 000 ÷ 6000 = 4 kg",
+        "Tylko jeśli wybrana reguła używa tego dzielnika"
+      ],
+      [
+        "Rzeczywista waga z ważenia",
+        "3 kg",
+        "Osobna zmierzona wartość"
+      ],
+      [
+        "Porównanie",
+        "max(3, 4) = 4 kg",
+        "Tylko przy regule większej z dwóch wartości, przed jej zaokrągleniem"
+      ]
+    ]
+  },
+  "joyagoo-tracking-not-updating": {
+    "summary": "Na podstawie danych paczki ustal właściwy numer, zachowaj dokładne ostatnie zdarzenie i przeczytaj komunikat wybranej linii. Milcząca strona śledzenia i wyraźna prośba o działanie wymagają różnych odpowiedzi.",
+    "caption": "Rejestr śledzenia: co sprawdzić dalej",
+    "columns": [
+      "Zaobserwowany wynik",
+      "Pierwsza kontrola",
+      "Kolejne działanie"
+    ],
+    "rows": [
+      [
+        "Brak wyniku",
+        "Numer śledzenia paczki i pasujący przewoźnik",
+        "Popraw identyfikator lub zapytaj, który przewoźnik jest właściwy"
+      ],
+      [
+        "Tylko otrzymanie informacji",
+        "Zapis nadania i komunikat właściwy dla linii",
+        "Zapytaj o fizyczne przekazanie, jeśli dowody nie wystarczają"
+      ],
+      [
+        "Brak późniejszego skanu",
+        "Oryginalne ostatnie zdarzenie, czas i komunikat linii",
+        "Prowadź zapis z datą i zadaj jedno konkretne pytanie"
+      ],
+      [
+        "Wyjątek adresowy lub dostawy",
+        "Instrukcje na uwierzytelnionym koncie lub w usłudze przewoźnika",
+        "Odpowiedz szybko przez zweryfikowany kanał"
+      ]
+    ]
+  },
+  "joyagoo-shipping-estimate-input-checklist": {
+    "summary": "Przed porównaniem wyników zapisz miejsce docelowe, jednostki, pomiary paczki i założenia. Aktualizuj zapis przy zmianie zawartości lub pakowania; wstępny szacunek nie ustala końcowej kwoty.",
+    "caption": "Dane do zachowania obok szacunku wysyłki",
+    "columns": [
+      "Pole",
+      "Zapisz",
+      "Częsta niejasność"
+    ],
+    "rows": [
+      [
+        "Miejsce docelowe",
+        "Dokładnie wybrany kraj i wymagany region",
+        "Podobnie przetłumaczona etykieta"
+      ],
+      [
+        "Waga",
+        "Wartość, jednostkę i źródło pomiaru",
+        "Gramy wpisane jako kilogramy"
+      ],
+      [
+        "Wymiary",
+        "Zewnętrzną długość, szerokość i wysokość gotowej paczki z jednostkami",
+        "Wymiary produktu użyte zamiast wymiarów paczki"
+      ],
+      [
+        "Zestaw produktów",
+        "Rzeczywistą zawartość i istotne cechy",
+        "Pomijanie cechy, aby wyświetlić więcej linii"
+      ],
+      [
+        "Pakowanie",
+        "Ochronę i założenia dotyczące pudełek",
+        "Traktowanie zgadywanych wymiarów jak zmierzonych"
+      ],
+      [
+        "Wynik",
+        "Linię, datę, walutę i uwzględnione usługi",
+        "Porównywanie niezgodnych scenariuszy"
+      ]
+    ]
+  },
+  "joyagoo-links-not-working": {
+    "summary": "Zlokalizuj błąd przed zastąpieniem linku: strona źródłowa, import, wybrany wariant lub zmieniony produkt. Zachowaj oryginalny URL i dokładną opcję, aby poprawne ładowanie nie ukryło innego przedmiotu.",
+    "caption": "Decyzje przy rozwiązywaniu problemów z linkami produktów",
+    "columns": [
+      "Problem",
+      "Zweryfikuj",
+      "Kolejny krok"
+    ],
+    "rows": [
+      [
+        "Strona sprzedawcy się nie otwiera",
+        "Pełny URL produktu i wyświetlony komunikat",
+        "Skorzystaj ze zwykłego dostępu lub poproś o aktualną ofertę"
+      ],
+      [
+        "Strona sprzedawcy działa; import zawodzi",
+        "URL produktu, a nie zdjęcia, kategorii lub konta",
+        "Zachowaj błąd importu i poproś o pomoc"
+      ],
+      [
+        "Produkt się ładuje; brakuje wariantu",
+        "Kolor, system rozmiarów, wersję i ilość",
+        "Wyjaśnij dostępność; nie wybieraj zamiennika bez uzgodnienia"
+      ],
+      [
+        "Adres pokazuje teraz inny przedmiot",
+        "Tożsamość, zdjęcia i strukturę opcji",
+        "Wycofaj stary odnośnik i sprawdź zamiennik od początku"
+      ]
+    ]
+  }
+}

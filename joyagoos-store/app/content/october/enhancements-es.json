@@ -1,0 +1,248 @@
+{
+  "joyagoo-qc-photo-checklist": {
+    "title": "Lista de revisión de fotos QC de Joyagoo: talla, defectos y vistas que faltan",
+    "description": "Revisa tus fotos QC de Joyagoo en orden: opción exacta, etiqueta de talla, medidas, defectos visibles y vistas que faltan. Utiliza una lista práctica antes de aprobar el artículo.",
+    "summary": "Empieza por el pedido exacto y después inspecciona el artículo recibido. Marca cada comprobación como coincidente, poco clara o distinta. Una medida poco clara o una vista ausente requiere pruebas antes de tomar la siguiente decisión.",
+    "caption": "Hoja rápida de revisión QC",
+    "columns": [
+      "Comprobación",
+      "Pruebas que comparar",
+      "Si no está claro"
+    ],
+    "rows": [
+      [
+        "Producto y opción",
+        "Pedido: modelo, color, versión y cantidad",
+        "Solicita la etiqueta correspondiente o una vista del artículo completo"
+      ],
+      [
+        "Talla",
+        "Etiqueta de talla y sistema de tallas indicado por el vendedor",
+        "Mantén separadas las etiquetas EU, UK, US y CN"
+      ],
+      [
+        "Pruebas de ajuste",
+        "Una medida identificada que use los mismos puntos que tu artículo de referencia",
+        "Pide la medida y la unidad que faltan"
+      ],
+      [
+        "Estado visible",
+        "Frontal, trasera, laterales, uniones, cierres y piezas incluidas",
+        "Identifica la foto exacta y el motivo de preocupación"
+      ],
+      [
+        "Siguiente acción",
+        "Controles actuales del pedido, requisitos y plazo aplicable",
+        "Acláralo pronto, antes del embalaje o de retirar etiquetas"
+      ]
+    ]
+  },
+  "joyagoo-fees-explained": {
+    "summary": "Separa lo que has pagado de lo que sigue siendo estimado. Vincula cada cargo con su etapa de compra, moneda y fuente actual para no confundir el precio de un producto con el coste completo hasta la entrega.",
+    "caption": "Un registro de costes sin tarifas supuestas",
+    "columns": [
+      "Etapa",
+      "Qué registrar",
+      "Qué confirmar antes de continuar"
+    ],
+    "rows": [
+      [
+        "Pedido del producto",
+        "Precio de la opción seleccionada y entrega nacional",
+        "La variante exacta y el importe actual que pagar"
+      ],
+      [
+        "Servicios de almacén",
+        "Cualquier servicio opcional seleccionado",
+        "Su precio actual y qué incluye"
+      ],
+      [
+        "Paquete internacional",
+        "Ruta, embalaje, peso facturable y estimación de portes",
+        "Las medidas finales y cualquier ajuste"
+      ],
+      [
+        "Otros costes aplicables",
+        "Conversión del pago o cargos de destino cuando procedan",
+        "Reglas actuales del proveedor o de la autoridad; nunca supongas que son cero"
+      ]
+    ]
+  },
+  "joyagoo-shipping-to-usa-guide": {
+    "title": "Envíos de Joyagoo a Estados Unidos: lista de revisión del paquete y la ruta",
+    "description": "Prepara un paquete de Joyagoo para Estados Unidos revisando destino, requisitos de los productos, medidas del paquete y seguimiento. Compara opciones actuales sin promesas de precio fijo.",
+    "summary": "Empieza por el destino exacto en Estados Unidos y los productos del paquete. La disponibilidad, las restricciones y el cargo final proceden de los detalles actuales de la ruta y de la cuenta; el precio o la fecha de llegada de otro comprador no son una cotización para tu envío.",
+    "caption": "Antes de presentar un paquete para Estados Unidos",
+    "columns": [
+      "Registro",
+      "Qué comprobar",
+      "Qué guardar con el paquete"
+    ],
+    "rows": [
+      [
+        "Destino",
+        "Los campos de país, estado y código postal coinciden con la dirección real de entrega",
+        "Una confirmación privada de la dirección"
+      ],
+      [
+        "Contenido",
+        "Todas las características de los productos se describen con precisión",
+        "Las notas actuales de admisibilidad de la ruta"
+      ],
+      [
+        "Embalaje",
+        "Protección, dimensiones exteriores y peso real",
+        "Valores medidos con sus unidades"
+      ],
+      [
+        "Servicio",
+        "Base de facturación, seguimiento y condiciones actuales",
+        "La ruta elegida y la estimación fechada"
+      ],
+      [
+        "Después de la expedición",
+        "Referencias correctas del paquete y del seguimiento del transportista",
+        "El último evento original y cualquier solicitud de actuación"
+      ]
+    ]
+  },
+  "joyagoo-actual-vs-volumetric-weight": {
+    "summary": "Utiliza las dimensiones exteriores del paquete terminado, mantén visibles las unidades y lee la regla de facturación de la ruta elegida. El cálculo siguiente explica la aritmética; no es una cotización de transporte ni afirma que todas las rutas utilicen el mismo divisor.",
+    "caption": "Cálculo ilustrativo con un divisor hipotético de 6.000",
+    "columns": [
+      "Dato o paso",
+      "Valor ilustrativo",
+      "Significado"
+    ],
+    "rows": [
+      [
+        "Dimensiones exteriores",
+        "40 × 30 × 20 cm",
+        "El paquete terminado, no un solo producto"
+      ],
+      [
+        "Volumen",
+        "24.000 cm³",
+        "Largo multiplicado por ancho y alto"
+      ],
+      [
+        "Peso volumétrico",
+        "24.000 ÷ 6.000 = 4 kg",
+        "Solo si la regla elegida utiliza este divisor"
+      ],
+      [
+        "Peso real en báscula",
+        "3 kg",
+        "Un valor medido por separado"
+      ],
+      [
+        "Comparación",
+        "max(3, 4) = 4 kg",
+        "Solo para una regla que toma el mayor de los dos, antes de su redondeo"
+      ]
+    ]
+  },
+  "joyagoo-tracking-not-updating": {
+    "summary": "Usa el registro del paquete para identificar el número correcto, conserva exactamente el último evento y lee el aviso de la ruta elegida. Una página sin novedades y una solicitud explícita de actuar requieren respuestas diferentes.",
+    "caption": "Registro de seguimiento: qué comprobar después",
+    "columns": [
+      "Resultado observado",
+      "Primera comprobación",
+      "Siguiente acción"
+    ],
+    "rows": [
+      [
+        "Sin resultado",
+        "Número de seguimiento del paquete y transportista correspondiente",
+        "Corrige la referencia o pregunta qué transportista corresponde"
+      ],
+      [
+        "Solo información recibida",
+        "Registro de expedición y aviso específico de la ruta",
+        "Pregunta por la entrega física si las pruebas no bastan"
+      ],
+      [
+        "Sin escaneos posteriores",
+        "Último evento original, fecha y hora y aviso de la ruta",
+        "Conserva un registro fechado y formula una pregunta concreta"
+      ],
+      [
+        "Incidencia de dirección o entrega",
+        "Instrucciones de la cuenta autenticada o del servicio del transportista",
+        "Responde pronto por el canal verificado"
+      ]
+    ]
+  },
+  "joyagoo-shipping-estimate-input-checklist": {
+    "summary": "Registra el destino, las unidades, las medidas del paquete y las hipótesis antes de comparar resultados. Actualiza el registro cuando cambien el contenido o el embalaje; una estimación provisional no determina el importe final.",
+    "caption": "Datos que guardar junto a una estimación de envío",
+    "columns": [
+      "Campo",
+      "Qué registrar",
+      "Ambigüedad habitual"
+    ],
+    "rows": [
+      [
+        "Destino",
+        "País exacto seleccionado y cualquier región obligatoria",
+        "Una etiqueta traducida parecida"
+      ],
+      [
+        "Peso",
+        "Valor, unidad y fuente de la medida",
+        "Gramos introducidos como kilogramos"
+      ],
+      [
+        "Dimensiones",
+        "Largo, ancho y alto exteriores del paquete con unidades",
+        "Medidas del artículo utilizadas para el paquete"
+      ],
+      [
+        "Combinación de productos",
+        "Contenido exacto y características relevantes",
+        "Omitir una característica para mostrar más rutas"
+      ],
+      [
+        "Embalaje",
+        "Hipótesis de protección y cajas",
+        "Tratar dimensiones supuestas como medidas"
+      ],
+      [
+        "Resultado",
+        "Ruta, fecha, moneda y servicios incluidos",
+        "Comparar escenarios distintos"
+      ]
+    ]
+  },
+  "joyagoo-links-not-working": {
+    "summary": "Localiza el fallo antes de sustituir el enlace: página de origen, importación, opción seleccionada o producto modificado. Conserva la URL original y la opción exacta para que una carga correcta no oculte un artículo diferente.",
+    "caption": "Decisiones para resolver problemas con enlaces de producto",
+    "columns": [
+      "Problema",
+      "Qué verificar",
+      "Siguiente paso"
+    ],
+    "rows": [
+      [
+        "La página del vendedor no abre",
+        "URL completa del producto y mensaje mostrado",
+        "Usa el acceso normal o solicita la ficha actual"
+      ],
+      [
+        "La página del vendedor abre; falla la importación",
+        "URL de producto en vez de URL de imagen, categoría o cuenta",
+        "Guarda el error de importación y pide ayuda"
+      ],
+      [
+        "El producto carga; falta la opción",
+        "Color, sistema de tallas, versión y cantidad",
+        "Aclara la disponibilidad; no elijas un sustituto sin confirmarlo"
+      ],
+      [
+        "El destino ahora muestra otro artículo",
+        "Identidad, imágenes y estructura de opciones",
+        "Retira el enlace anterior y revisa el sustituto desde el principio"
+      ]
+    ]
+  }
+}

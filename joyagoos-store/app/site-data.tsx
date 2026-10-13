@@ -203,29 +203,29 @@ export const localizedSections: Record<Locale, Record<Section, { kicker:string; 
   },
 };
 
-export function Header({ prefix = "", locale, section, language = locale || "en", onLanguageChange }: { prefix?: string; locale?: Locale; section?: Section; language?: SiteLanguage; onLanguageChange?:(language:SiteLanguage)=>void }) {
-  const path = (section: Section) => `${prefix}/${section}`.replace("//", "/");
+export function Header({ prefix = "", locale, section, language = locale || "en", path }: { prefix?: string; locale?: Locale; section?: Section; language?: SiteLanguage; path?:string }) {
+  const sectionHref = (section: Section) => `${prefix}/${section}`.replace("//", "/");
   return (
     <header className="site-header inner-header">
       <a className="brand" href={withLanguage(prefix || "/", language)}><img className="brand-logo" src="/joyagoo-logo.png" alt="JoyaGoo" width="768" height="235" /></a>
-      <nav aria-label="Primary navigation">{sectionOrder.slice(0, 6).map((item) => <a key={item} href={withLanguage(path(item), language)}>{language !== "en" ? localeNav[language][item] : item[0].toUpperCase() + item.slice(1)}</a>)}</nav>
+      <nav aria-label="Primary navigation">{sectionOrder.slice(0, 6).map((item) => <a key={item} href={withLanguage(sectionHref(item), language)}>{language !== "en" ? localeNav[language][item] : item[0].toUpperCase() + item.slice(1)}</a>)}</nav>
       <div className="header-actions">
         <a className="seo-cta" href={articleHubHref(language)}>{language !== "en" ? localeNav[language].articles : "Articles"}</a>
-        <LanguageMenu language={language} onChange={onLanguageChange} />
+        <LanguageMenu language={language} path={path || (section ? `/${section}` : "/")} />
         <a className="header-cta" href={MAIN + "/AllProducts/"} target="_blank" rel="noreferrer">{language !== "en" ? commonUi[language].catalog : "Open catalog ↗"}</a>
       </div>
     </header>
   );
 }
 
-export function Footer({ prefix = "", section, language = (prefix.replace("/", "") || "en") as SiteLanguage, onLanguageChange }: { prefix?: string; section?: Section; language?: SiteLanguage; onLanguageChange?:(language:SiteLanguage)=>void }) {
+export function Footer({ prefix = "", section, language = (prefix.replace("/", "") || "en") as SiteLanguage, path }: { prefix?: string; section?: Section; language?: SiteLanguage; path?:string }) {
   const footerLocale = language === "en" ? undefined : language;
   const footerText = footerLocale ? localizedSections[footerLocale].faq.intro : "Independent product-discovery guide. Product availability, account actions, payment, warehouse QC and shipping remain in their respective live flows.";
   return (
     <footer>
       <a className="brand" href={withLanguage(prefix || "/", language)}><img className="brand-logo" src="/joyagoo-logo.png" alt="JoyaGoo" width="768" height="235" /></a>
       <p>{footerText}</p>
-      <div><FooterLanguages language={language} onChange={onLanguageChange} /><a href={withLanguage((prefix || "") + "/faq", language)}>{footerLocale ? commonUi[footerLocale].faq : "FAQ"}</a></div>
+      <div><FooterLanguages language={language} path={path || (section ? `/${section}` : "/")} /><a href={withLanguage((prefix || "") + "/faq", language)}>{footerLocale ? commonUi[footerLocale].faq : "FAQ"}</a></div>
     </footer>
   );
 }

@@ -1,0 +1,248 @@
+{
+  "joyagoo-qc-photo-checklist": {
+    "title": "Joyagoo QC-bilder: checklista för storlek, fel och saknade vyer",
+    "description": "Kontrollera dina Joyagoo QC-bilder i ordning: exakt variant, storleksetikett, mått, synliga fel och saknade vyer. Använd en praktisk checklista innan varan godkänns.",
+    "summary": "Börja med den exakta beställningen och granska sedan den mottagna varan. Markera varje kontroll som stämmer, oklart eller avviker. Ett oklart mått eller en saknad vy kräver underlag innan du fattar nästa beslut.",
+    "caption": "Ett snabbt granskningsblad för QC",
+    "columns": [
+      "Kontroll",
+      "Underlag att jämföra",
+      "Om det är oklart"
+    ],
+    "rows": [
+      [
+        "Produkt och variant",
+        "Order: modell, färg, version och antal",
+        "Begär relevant etikett eller en bild av hela varan"
+      ],
+      [
+        "Storlek",
+        "Storleksetikett och säljarens angivna storlekssystem",
+        "Håll EU-, UK-, US- och CN-beteckningar åtskilda"
+      ],
+      [
+        "Passformsunderlag",
+        "Ett märkt mått med samma mätpunkter som din referensvara",
+        "Be om saknat mått och enhet"
+      ],
+      [
+        "Synligt skick",
+        "Framsida, baksida, sidor, fogar, stängningar och medföljande delar",
+        "Ange exakt bild och vad som oroar dig"
+      ],
+      [
+        "Nästa åtgärd",
+        "Aktuella orderfunktioner, villkor och tillämplig tidsfrist",
+        "Be om förtydligande snarast före packning eller borttagning av etiketter"
+      ]
+    ]
+  },
+  "joyagoo-fees-explained": {
+    "summary": "Skilj det du har betalat från det som fortfarande är uppskattat. Koppla varje avgift till köpsteget, valutan och den aktuella källan så att varupriset inte förväxlas med hela kostnaden fram till leverans.",
+    "caption": "En kostnadsanteckning utan gissade priser",
+    "columns": [
+      "Steg",
+      "Anteckna",
+      "Bekräfta innan du fortsätter"
+    ],
+    "rows": [
+      [
+        "Varubeställning",
+        "Priset för vald variant och inrikes leverans",
+        "Exakt variant och aktuellt belopp att betala"
+      ],
+      [
+        "Lagertjänster",
+        "Varje vald tilläggstjänst",
+        "Aktuellt pris och vad som ingår"
+      ],
+      [
+        "Internationellt paket",
+        "Fraktlinje, förpackning, debiteringsvikt och fraktuppskattning",
+        "Slutliga mått och eventuella justeringar"
+      ],
+      [
+        "Övriga tillämpliga kostnader",
+        "Valutaomräkning vid betalning eller destinationsavgifter där det är relevant",
+        "Aktuella regler från leverantör eller behörig källa; anta aldrig noll"
+      ]
+    ]
+  },
+  "joyagoo-shipping-to-usa-guide": {
+    "title": "Joyagoo frakt till USA: checklista för paket och fraktlinje",
+    "description": "Förbered ett Joyagoo-paket till USA med kontroller av destination, tillåtna produkter, packmått och spårning. Jämför aktuella alternativ utan löften om fasta priser.",
+    "summary": "Börja med den exakta USA-destinationen och produkterna i paketet. Tillgänglighet, restriktioner och slutlig avgift kommer från aktuella uppgifter för fraktlinjen och kontot; en annan köpares pris eller ankomstdatum är ingen offert för din försändelse.",
+    "caption": "Före registrering av ett paket till USA",
+    "columns": [
+      "Uppgift",
+      "Kontrollera",
+      "Spara med paketet"
+    ],
+    "rows": [
+      [
+        "Destination",
+        "Land, delstat och ZIP-fält stämmer med den faktiska leveransadressen",
+        "En privat adressbekräftelse"
+      ],
+      [
+        "Innehåll",
+        "Varje produktegenskap beskrivs korrekt",
+        "Fraktlinjens aktuella behörighetsvillkor"
+      ],
+      [
+        "Packning",
+        "Skydd, yttermått och faktisk vikt",
+        "Uppmätta värden med enheter"
+      ],
+      [
+        "Tjänst",
+        "Debiteringsgrund, spårning och aktuella villkor",
+        "Vald fraktlinje och daterad uppskattning"
+      ],
+      [
+        "Efter avsändning",
+        "Rätt paket- och transportörsreferenser för spårning",
+        "Senaste händelsens originaltext och eventuell begäran om åtgärd"
+      ]
+    ]
+  },
+  "joyagoo-actual-vs-volumetric-weight": {
+    "summary": "Använd det packade paketets yttermått, håll enheterna synliga och läs vald fraktlinjes debiteringsregel. Beräkningen nedan förklarar matematiken; den är ingen fraktoffert och inget påstående om att alla fraktlinjer använder samma divisor.",
+    "caption": "Räkneexempel med en hypotetisk divisor på 6 000",
+    "columns": [
+      "Indata eller steg",
+      "Exempelvärde",
+      "Betydelse"
+    ],
+    "rows": [
+      [
+        "Yttermått",
+        "40 × 30 × 20 cm",
+        "Det färdiga paketet, inte en produkt"
+      ],
+      [
+        "Volym",
+        "24 000 cm³",
+        "Längd multiplicerad med bredd och höjd"
+      ],
+      [
+        "Volymvikt",
+        "24 000 ÷ 6 000 = 4 kg",
+        "Endast om den valda regeln använder denna divisor"
+      ],
+      [
+        "Faktisk vågvikt",
+        "3 kg",
+        "Ett separat uppmätt värde"
+      ],
+      [
+        "Jämförelse",
+        "max(3, 4) = 4 kg",
+        "Endast vid en regel som väljer det högsta av två värden, före dess avrundning"
+      ]
+    ]
+  },
+  "joyagoo-tracking-not-updating": {
+    "summary": "Använd paketuppgifterna för att identifiera rätt nummer, behåll den senaste händelsen exakt och läs vald fraktlinjes meddelande. En tyst spårningssida och en uttrycklig begäran om åtgärd kräver olika svar.",
+    "caption": "Spårningsanteckning: vad du kontrollerar härnäst",
+    "columns": [
+      "Observerat resultat",
+      "Första kontroll",
+      "Nästa åtgärd"
+    ],
+    "rows": [
+      [
+        "Inget resultat",
+        "Paketets spårningsnummer och matchande transportör",
+        "Rätta referensen eller fråga vilken transportör som gäller"
+      ],
+      [
+        "Endast information mottagen",
+        "Avsändningsuppgifter och fraktlinjens specifika meddelande",
+        "Fråga om fysisk överlämning om underlaget inte räcker"
+      ],
+      [
+        "Ingen senare skanning",
+        "Senaste händelsens originaltext, tidsstämpel och fraktmeddelande",
+        "Behåll en daterad anteckning och ställ en specifik fråga"
+      ],
+      [
+        "Adress- eller leveransavvikelse",
+        "Instruktioner i det autentiserade kontot eller transportörens tjänst",
+        "Svara snarast genom den verifierade kanalen"
+      ]
+    ]
+  },
+  "joyagoo-shipping-estimate-input-checklist": {
+    "summary": "Anteckna destination, enheter, packmått och antaganden innan du jämför resultat. Uppdatera anteckningen när innehåll eller packning ändras; en preliminär uppskattning kan inte fastställa slutbeloppet.",
+    "caption": "Indata att spara bredvid en fraktuppskattning",
+    "columns": [
+      "Fält",
+      "Anteckna",
+      "Vanlig oklarhet"
+    ],
+    "rows": [
+      [
+        "Destination",
+        "Exakt valt land och eventuell obligatorisk region",
+        "En liknande översatt beteckning"
+      ],
+      [
+        "Vikt",
+        "Värde, enhet och mätkälla",
+        "Gram inmatade som kilogram"
+      ],
+      [
+        "Mått",
+        "Packade yttermått: längd, bredd och höjd med enheter",
+        "Varumått använda som paketmått"
+      ],
+      [
+        "Produktblandning",
+        "Korrekt innehåll och relevanta egenskaper",
+        "En egenskap utelämnas för att visa fler fraktlinjer"
+      ],
+      [
+        "Packning",
+        "Antaganden om skydd och kartonger",
+        "Gissade mått behandlas som uppmätta"
+      ],
+      [
+        "Resultat",
+        "Fraktlinje, datum, valuta och inkluderade tjänster",
+        "Jämförelse mellan olikvärdiga scenarier"
+      ]
+    ]
+  },
+  "joyagoo-links-not-working": {
+    "summary": "Lokalisera felet innan du byter länk: källsida, import, vald variant eller ändrad produkt. Behåll original-URL och exakt variant så att en lyckad sidladdning inte döljer en annan vara.",
+    "caption": "Beslut vid felsökning av produktlänkar",
+    "columns": [
+      "Problem",
+      "Verifiera",
+      "Nästa steg"
+    ],
+    "rows": [
+      [
+        "Säljarens sida öppnas inte",
+        "Fullständig produkt-URL och meddelandet som visas",
+        "Använd vanlig åtkomst eller be om aktuell produktsida"
+      ],
+      [
+        "Säljarens sida öppnas; importen misslyckas",
+        "Produkt-URL i stället för bild-, kategori- eller konto-URL",
+        "Spara importfelet och be om hjälp"
+      ],
+      [
+        "Produkten öppnas; varianten saknas",
+        "Färg, storlekssystem, version och antal",
+        "Klargör tillgängligheten; välj inte en ersättning utan att ange det"
+      ],
+      [
+        "Destinationen visar nu en annan vara",
+        "Identitet, bilder och variantstruktur",
+        "Avför den gamla länken och granska ersättningen från början"
+      ]
+    ]
+  }
+}

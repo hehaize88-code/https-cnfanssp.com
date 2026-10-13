@@ -1,12 +1,8 @@
-"use client";
-
-import { useEffect } from "react";
-import { articlePublishedDates, articles, getRelatedLinks, isArticleAvailableInLanguage, type ArticleSlug } from "./article-data";
+import { octoberEnhancements } from "./october-content";
+import { articleModifiedDate, articlePublishedDates, articles, getRelatedLinks, isArticleAvailableInLanguage, type ArticleSlug } from "./article-data";
 import { Footer, Header, MAIN, localizedSections, type Locale } from "./site-data";
 import type { SiteLanguage } from "./i18n";
 import { commonUi } from "./full-translations";
-import { useLanguage } from "./use-language";
-import { articleTranslations } from "./article-translations";
 import { buyerFacingText, getArticleCopy } from "./article-content";
 import { germanyDestinationArticleSlug } from "./seo-article-germany";
 import { polandDestinationArticleSlug } from "./seo-article-poland";
@@ -26,33 +22,16 @@ const articleUi: Record<SiteLanguage, { kicker:string; updated:string; guide:str
 };
 
 export function ArticleInteractive({ slug, language = "en", prefix = "" }: { slug: ArticleSlug; language?: SiteLanguage; prefix?: string }) {
-  const isLocalizedDestinationArticle = slug === germanyDestinationArticleSlug || slug === polandDestinationArticleSlug;
-  const isEnglishOnly = !isArticleAvailableInLanguage(slug, "zh");
-  const { language:activeLanguage, setLanguage } = useLanguage(language, !isLocalizedDestinationArticle);
-  const changeLanguage = (next: SiteLanguage) => {
-    if (isEnglishOnly && next !== "en") {
-      window.location.assign(localizedPath("/articles", next));
-      return;
-    }
-    if (isLocalizedDestinationArticle) {
-      window.location.assign(localizedPath(`/articles/${slug}`, next));
-      return;
-    }
-    setLanguage(next);
-  };
+  const activeLanguage = language;
   const article = articles[slug];
+  const enhancement = octoberEnhancements[language][slug];
+  const updatedDate = new Intl.DateTimeFormat(language === "zh" ? "zh-CN" : language, {year:"numeric",month:"long",day:"numeric",timeZone:"UTC"}).format(new Date(articleModifiedDate(slug,language)));
   const active = activeLanguage === "en" ? undefined : activeLanguage as Locale;
-  const curatedChinese = active === "zh" ? articleTranslations.zh?.[slug] : null;
   const ui = articleUi[activeLanguage];
   const activeCopy = getArticleCopy(slug, activeLanguage);
-  useEffect(() => {
-    document.documentElement.lang = activeLanguage;
-  }, [activeLanguage]);
   const initialCopy = getArticleCopy(slug, language);
   const title = activeCopy.title;
-  const sections = active
-    ? activeCopy.sections.map(([sectionTitle,text],index) => [buyerFacingText(curatedChinese?.sections[index]?.[0] || sectionTitle, activeLanguage), buyerFacingText(text, activeLanguage)] as const)
-    : article.sections;
+  const sections = activeCopy.sections.map(([heading,body])=>[buyerFacingText(heading,language),buyerFacingText(body,language)] as const);
   const description = activeCopy.description;
   const readTime = active ? `${article.read.match(/\d+/)?.[0]} ${commonUi[active].minutes}` : article.read;
   const canonical = `${SITE_URL}${localizedPath(`/articles/${slug}`, language)}`;
@@ -64,7 +43,7 @@ export function ArticleInteractive({ slug, language = "en", prefix = "" }: { slu
     description:initialCopy.description,
     inLanguage:language,
     datePublished:articlePublishedDates[slug],
-    dateModified:articlePublishedDates[slug],
+    dateModified:articleModifiedDate(slug,language),
     image:`${SITE_URL}${SOCIAL_IMAGE}`,
     author:{"@type":"Organization",name:SITE_NAME,url:SITE_URL},
     publisher:{"@type":"Organization",name:SITE_NAME,logo:{"@type":"ImageObject",url:`${SITE_URL}${SOCIAL_IMAGE}`}},
@@ -80,5 +59,20 @@ export function ArticleInteractive({ slug, language = "en", prefix = "" }: { slu
       {"@type":"ListItem",position:3,name:initialCopy.title,item:canonical},
     ],
   };
-  return <main><Header prefix={prefix} locale={active} language={activeLanguage} onLanguageChange={changeLanguage} section="articles"/><article className="article-page"><header><p className="eyebrow">{ui.kicker}</p><h1>{title}</h1><div><span>{ui.updated} {active ? activeCopy.updated : article.updated}</span><span>{readTime}</span></div><p>{description}</p></header><div className="article-body"><aside><strong>{ui.guide}</strong>{sections.map(([sectionTitle],i)=><a href={`#section-${i+1}`} key={sectionTitle}>0{i+1} {sectionTitle}</a>)}</aside><div>{sections.map(([sectionTitle,text],i)=><section id={`section-${i+1}`} key={sectionTitle}><span>0{i+1}</span><h2>{sectionTitle}</h2><p>{text}</p></section>)}</div></div><nav className="article-related" aria-label={ui.related}><p className="eyebrow">{ui.related}</p>{relatedLinks.map(link=><a href={localizedPath(link.href,activeLanguage)} key={link.href}>{link.label} ↗</a>)}</nav>{article.sources.length > 0 && <div className="article-sources"><p className="eyebrow">{ui.sources}</p>{article.sources.map((source,index)=><div className="source-reference" key={source.href}><strong>{curatedChinese?.sources[index] || activeCopy.sources[index]?.title || source.title}</strong><span>{source.href}</span></div>)}</div>}<div className="article-end"><h2>{ui.end}</h2><a href={MAIN+"/AllProducts/"} target="_blank" rel="noreferrer">{ui.browse}</a></div><script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(schema).replace(/</g,"\\u003c")}}/><script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(breadcrumb).replace(/</g,"\\u003c")}}/></article><Footer prefix={prefix} language={activeLanguage} onLanguageChange={changeLanguage} section="articles"/></main>;
+  return <main><Header prefix={prefix} locale={active} language={activeLanguage} path={`/articles/${slug}`} section="articles"/><article className="article-page"><header><p className="eyebrow">{ui.kicker}</p><h1>{title}</h1><div><span>{ui.updated} {updatedDate}</span><span>{readTime}</span></div><p>{description}</p></header>{enhancement && <section className="article-summary"><p>{enhancement.summary}</p><div className="table-scroll" role="region" aria-label={enhancement.caption} tabIndex={0}><table><caption>{enhancement.caption}</caption><thead><tr>{enhancement.columns.map(column=><th scope="col" key={column}>{column}</th>)}</tr></thead><tbody>{enhancement.rows.map((row,index)=><tr key={index}>{row.map((cell,column)=>column === 0 ? <th scope="row" key={column}>{cell}</th> : <td key={column}>{cell}</td>)}</tr>)}</tbody></table></div></section>}<div className="article-body"><aside><strong>{ui.guide}</strong>{sections.map(([sectionTitle],i)=><a href={`#section-${i+1}`} key={sectionTitle}>0{i+1} {sectionTitle}</a>)}</aside><div>{sections.map(([sectionTitle,text],i)=><section id={`section-${i+1}`} key={sectionTitle}><span>0{i+1}</span><h2>{sectionTitle}</h2>{articleParagraphs(text,language).map((paragraph,index)=><p key={index}>{paragraph}</p>)}</section>)}</div></div><nav className="article-related" aria-label={ui.related}><p className="eyebrow">{ui.related}</p>{relatedLinks.map(link=><a href={localizedPath(link.href,activeLanguage)} key={link.href}>{relatedLabel(link.href,language,link.label)} ↗</a>)}</nav>{article.sources.length > 0 && <div className="article-sources"><p className="eyebrow">{ui.sources}</p>{article.sources.map((source,index)=><div className="source-reference" key={source.href}><strong>{activeCopy.sources[index]?.title || source.title}</strong><span>{source.href}</span></div>)}</div>}<div className="article-end"><h2>{ui.end}</h2><a href={MAIN+"/AllProducts/"} target="_blank" rel="noreferrer">{ui.browse}</a></div><script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(schema).replace(/</g,"\\u003c")}}/><script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(breadcrumb).replace(/</g,"\\u003c")}}/></article><Footer prefix={prefix} language={activeLanguage} path={`/articles/${slug}`} section="articles"/></main>;
+}
+
+function articleParagraphs(text:string, language:SiteLanguage) {
+  const segments = [...new Intl.Segmenter(language,{granularity:"sentence"}).segment(text)].map(item=>item.segment);
+  const result:string[] = []; let paragraph = "";
+  const limit = language === "zh" ? 180 : 520;
+  for(const sentence of segments){paragraph += sentence;if(paragraph.length>=limit){result.push(paragraph.trim());paragraph="";}}
+  if(paragraph.trim())result.push(paragraph.trim());
+  return result;
+}
+function relatedLabel(href:string,language:SiteLanguage,fallback:string){
+  const slug=href.split("/").at(-1) as ArticleSlug;
+  if(href.startsWith("/articles/") && slug in articles) return getArticleCopy(slug,language).title;
+  if(language !== "en" && slug in localizedSections[language]) return localizedSections[language][slug as keyof typeof localizedSections[typeof language]].title;
+  return fallback;
 }

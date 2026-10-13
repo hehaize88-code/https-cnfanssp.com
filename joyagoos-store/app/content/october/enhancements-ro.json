@@ -1,0 +1,248 @@
+{
+  "joyagoo-qc-photo-checklist": {
+    "title": "Lista QC Joyagoo: mărime, defecte și imagini lipsă",
+    "description": "Verifică fotografiile QC Joyagoo în ordine: varianta exactă, eticheta de mărime, măsurătorile, defectele vizibile și imaginile lipsă. Folosește o listă practică înainte de aprobare.",
+    "summary": "Începe cu comanda exactă, apoi inspectează articolul primit. Marchează fiecare verificare drept potrivire, neclaritate sau nepotrivire. O măsurătoare neclară sau o imagine lipsă necesită dovezi înaintea următoarei decizii.",
+    "caption": "Fișă rapidă de verificare QC",
+    "columns": [
+      "Verificare",
+      "Dovezi de comparat",
+      "Dacă este neclar"
+    ],
+    "rows": [
+      [
+        "Produs și variantă",
+        "Comanda: model, culoare, versiune și cantitate",
+        "Cere eticheta relevantă sau o imagine a întregului articol"
+      ],
+      [
+        "Mărime",
+        "Eticheta de mărime și sistemul indicat de vânzător",
+        "Păstrează separat etichetele EU, UK, US și CN"
+      ],
+      [
+        "Dovezi de potrivire",
+        "O măsurătoare etichetată, cu aceleași puncte ca articolul tău de referință",
+        "Cere măsurătoarea și unitatea lipsă"
+      ],
+      [
+        "Stare vizibilă",
+        "Față, spate, laterale, îmbinări, închideri și piese incluse",
+        "Identifică fotografia exactă și problema"
+      ],
+      [
+        "Acțiunea următoare",
+        "Controalele actuale ale comenzii, eligibilitatea și termenul aplicabil",
+        "Clarifică prompt înainte de ambalare sau eliminarea etichetelor"
+      ]
+    ]
+  },
+  "joyagoo-fees-explained": {
+    "summary": "Separă ceea ce ai plătit de ceea ce rămâne estimat. Leagă fiecare cost de etapa cumpărării, monedă și sursa actuală, pentru ca prețul produsului să nu fie confundat cu întregul cost până la livrare.",
+    "caption": "Evidența costurilor fără tarife presupuse",
+    "columns": [
+      "Etapă",
+      "Înregistrează",
+      "Confirmă înainte de continuare"
+    ],
+    "rows": [
+      [
+        "Comanda produsului",
+        "Prețul variantei selectate și livrarea internă",
+        "Varianta exactă și suma actuală de plată"
+      ],
+      [
+        "Servicii în depozit",
+        "Orice serviciu opțional selectat",
+        "Prețul actual și ce include"
+      ],
+      [
+        "Colet internațional",
+        "Ruta, ambalarea, greutatea taxabilă și estimarea transportului",
+        "Măsurătorile finale și orice ajustare"
+      ],
+      [
+        "Alte costuri aplicabile",
+        "Conversia plății sau taxele la destinație unde sunt relevante",
+        "Regulile actuale ale furnizorului sau autorității; nu presupune niciodată zero"
+      ]
+    ]
+  },
+  "joyagoo-shipping-to-usa-guide": {
+    "title": "Transport Joyagoo către SUA: verificarea coletului și a rutei",
+    "description": "Pregătește un colet Joyagoo către SUA verificând destinația, eligibilitatea produselor, măsurătorile ambalate și urmărirea. Compară opțiunile actuale fără promisiuni de preț fix.",
+    "summary": "Începe cu destinația exactă din SUA și produsele din colet. Disponibilitatea, restricțiile și costul final provin din detaliile actuale ale rutei și contului; prețul sau data de sosire a altui cumpărător nu reprezintă o ofertă pentru expedierea ta.",
+    "caption": "Înainte de solicitarea unui colet către SUA",
+    "columns": [
+      "Înregistrare",
+      "Verificare",
+      "Păstrează cu coletul"
+    ],
+    "rows": [
+      [
+        "Destinație",
+        "Câmpurile țară, stat și ZIP corespund adresei reale de livrare",
+        "O confirmare privată a adresei"
+      ],
+      [
+        "Conținut",
+        "Fiecare caracteristică a produselor este descrisă exact",
+        "Notele actuale de eligibilitate ale rutei"
+      ],
+      [
+        "Ambalare",
+        "Protecția, dimensiunile exterioare și greutatea reală",
+        "Valorile măsurate cu unități"
+      ],
+      [
+        "Serviciu",
+        "Baza de facturare, urmărirea și termenii actuali",
+        "Ruta selectată și estimarea datată"
+      ],
+      [
+        "După expediere",
+        "Referințele corecte ale coletului și urmăririi transportatorului",
+        "Ultimul eveniment în formularea originală și orice cerere de acțiune"
+      ]
+    ]
+  },
+  "joyagoo-actual-vs-volumetric-weight": {
+    "summary": "Folosește dimensiunile exterioare ale coletului ambalat, păstrează unitățile vizibile și citește regula de facturare a rutei alese. Calculul de mai jos explică aritmetica; nu este o ofertă de transport și nu afirmă că toate rutele folosesc același divizor.",
+    "caption": "Calcul ilustrativ cu un divizor ipotetic de 6.000",
+    "columns": [
+      "Dată sau pas",
+      "Valoare ilustrativă",
+      "Semnificație"
+    ],
+    "rows": [
+      [
+        "Dimensiuni exterioare",
+        "40 × 30 × 20 cm",
+        "Coletul finalizat, nu un singur produs"
+      ],
+      [
+        "Volum",
+        "24.000 cm³",
+        "Lungimea înmulțită cu lățimea și înălțimea"
+      ],
+      [
+        "Greutate dimensională",
+        "24.000 ÷ 6.000 = 4 kg",
+        "Doar dacă regula selectată folosește acest divizor"
+      ],
+      [
+        "Greutate reală pe cântar",
+        "3 kg",
+        "O valoare măsurată separat"
+      ],
+      [
+        "Comparație",
+        "max(3, 4) = 4 kg",
+        "Doar pentru regula valorii mai mari dintre cele două, înaintea rotunjirii"
+      ]
+    ]
+  },
+  "joyagoo-tracking-not-updating": {
+    "summary": "Folosește evidența coletului pentru a identifica numărul corect, păstrează exact ultimul eveniment și citește anunțul rutei selectate. O pagină de urmărire fără actualizări și o cerere explicită de acțiune necesită răspunsuri diferite.",
+    "caption": "Evidența urmăririi: ce verifici în continuare",
+    "columns": [
+      "Rezultat observat",
+      "Prima verificare",
+      "Acțiunea următoare"
+    ],
+    "rows": [
+      [
+        "Niciun rezultat",
+        "Numărul de urmărire al coletului și transportatorul corespunzător",
+        "Corectează referința sau întreabă ce transportator se aplică"
+      ],
+      [
+        "Doar informații primite",
+        "Evidența expedierii și anunțul specific rutei",
+        "Întreabă despre predarea fizică dacă dovezile sunt insuficiente"
+      ],
+      [
+        "Nicio scanare ulterioară",
+        "Ultimul eveniment original, data și ora și anunțul rutei",
+        "Păstrează o evidență datată și pune o întrebare precisă"
+      ],
+      [
+        "Excepție de adresă sau livrare",
+        "Instrucțiunile din contul autentificat sau serviciul transportatorului",
+        "Răspunde prompt prin canalul verificat"
+      ]
+    ]
+  },
+  "joyagoo-shipping-estimate-input-checklist": {
+    "summary": "Notează destinația, unitățile, măsurătorile ambalate și ipotezele înainte de compararea rezultatelor. Actualizează evidența ori de câte ori se schimbă conținutul sau ambalarea; o estimare provizorie nu poate stabili suma finală.",
+    "caption": "Date de păstrat lângă o estimare de transport",
+    "columns": [
+      "Câmp",
+      "Înregistrare",
+      "Ambiguitate frecventă"
+    ],
+    "rows": [
+      [
+        "Destinație",
+        "Țara exactă selectată și orice regiune cerută",
+        "O denumire tradusă asemănătoare"
+      ],
+      [
+        "Greutate",
+        "Valoare, unitate și sursa măsurătorii",
+        "Grame introduse ca kilograme"
+      ],
+      [
+        "Dimensiuni",
+        "Lungimea, lățimea și înălțimea exterioare după ambalare, cu unități",
+        "Dimensiunile articolului folosite pentru colet"
+      ],
+      [
+        "Combinația produselor",
+        "Conținutul exact și caracteristicile relevante",
+        "Omiterea unei caracteristici pentru afișarea mai multor rute"
+      ],
+      [
+        "Ambalare",
+        "Ipotezele privind protecția și cutiile",
+        "Tratarea dimensiunilor presupuse ca măsurate"
+      ],
+      [
+        "Rezultat",
+        "Ruta, data, moneda și serviciile incluse",
+        "Compararea unor scenarii diferite"
+      ]
+    ]
+  },
+  "joyagoo-links-not-working": {
+    "summary": "Localizează eșecul înainte de înlocuirea linkului: pagina sursă, importul, varianta selectată sau produsul schimbat. Păstrează URL-ul original și varianta exactă, pentru ca încărcarea reușită a paginii să nu ascundă alt articol.",
+    "caption": "Decizii pentru depanarea linkurilor de produs",
+    "columns": [
+      "Problemă",
+      "Verifică",
+      "Pasul următor"
+    ],
+    "rows": [
+      [
+        "Pagina vânzătorului nu se deschide",
+        "URL-ul complet al produsului și mesajul afișat",
+        "Folosește accesul obișnuit sau cere pagina actuală"
+      ],
+      [
+        "Pagina vânzătorului se deschide; importul eșuează",
+        "URL-ul produsului, nu al imaginii, categoriei sau contului",
+        "Salvează eroarea de import și cere ajutor"
+      ],
+      [
+        "Produsul se încarcă; varianta lipsește",
+        "Culoarea, sistemul de mărimi, versiunea și cantitatea",
+        "Clarifică disponibilitatea; nu alege tacit un înlocuitor"
+      ],
+      [
+        "Destinația arată acum alt articol",
+        "Identitatea, imaginile și structura variantelor",
+        "Retrage vechiul link și verifică înlocuitorul de la început"
+      ]
+    ]
+  }
+}

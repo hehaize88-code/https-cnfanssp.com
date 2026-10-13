@@ -1,0 +1,164 @@
+{
+  "joyagoo-tracking-not-updating": {
+    "title": "El seguimiento de Joyagoo no se actualiza: estados y próximos pasos",
+    "description": "Encuentra el seguimiento correcto de tu paquete de Joyagoo, distingue la falta de un escaneo de una solicitud que exige actuar y prepara una consulta clara sin exponer datos privados.",
+    "updated": "13 de octubre de 2026",
+    "read": "8 min de lectura",
+    "sections": [
+      [
+        "Empieza por el registro del paquete, no por el pedido del producto",
+        "Si el seguimiento de Joyagoo no se actualiza, identifica primero qué trayecto estás consultando. El envío de un artículo del vendedor al almacén y el viaje de un paquete internacional hasta tu dirección son movimientos diferentes. Pueden tener identificadores y plazos distintos. El número de pedido sirve para preguntar por la compra del producto; no es necesariamente el número que puede rastrear un transportista. Entra tú mismo en tu cuenta desde una dirección de confianza y busca el paquete que realmente presentaste para envío. Antes de copiar nada, contrasta su contenido o fecha de creación con tus registros. Esto resulta especialmente útil si tienes varios pedidos o dividiste un conjunto de artículos en varios paquetes. No des por hecho que un número recién creado pertenece al paquete que estás esperando. Guarda la referencia del pedido del producto, la del paquete y el número de seguimiento del transportista en campos separados. Esta sencilla distinción evita muchas búsquedas fallidas y facilita la comprensión de cualquier consulta posterior al soporte."
+      ],
+      [
+        "Localiza los detalles del seguimiento y conserva el texto original",
+        "Las instrucciones logísticas oficiales de Joyagoo sitúan Tracking Details dentro de Parcel, en el centro de usuario. Empieza allí y compara el registro del transportista cuando esté disponible. Guarda en una nota privada el nombre de la ruta, la fecha de expedición, el último evento, su fecha y hora y el número de seguimiento. Conserva el texto original del evento junto a su traducción. Una traducción puede difuminar la diferencia entre la recepción de información, la recogida física y un intento de entrega. Anota la zona horaria si aparece: un evento que un sistema muestra como ocurrido ayer puede figurar como de hoy en otro. No necesitas una hoja pública que contenga tu dirección para organizar estos datos; basta una nota local breve. Si dos vistas de seguimiento discrepan, anota lo que dice cada una en vez de combinarlas para crear un nuevo estado. El registro más útil conserva las pruebas y su fuente, incluida la hora a la que las consultaste."
+      ],
+      [
+        "Lee el último evento antes de contar los días sin novedades",
+        "Una página sin nuevos escaneos no explica por qué no hay novedades. Lee con atención el último evento antes de sacar conclusiones. La recepción de información puede referirse a datos electrónicos; un evento de recogida aporta una prueba distinta. Un registro de transferencia identifica una etapa del trayecto, pero no describe necesariamente la ubicación exacta del paquete en este momento. Estos son principios generales de lectura, no un diccionario universal para todos los transportistas. Utiliza la explicación asociada al servicio elegido siempre que esté disponible. El centro de ayuda de Joyagoo reconoce que los intervalos entre escaneos dependen de la ruta, por lo que un intervalo por sí solo no demuestra una pérdida. Al mismo tiempo, una consulta sobre la dirección, un intento de entrega o una incidencia explícita merecen atención aunque el paquete haya salido hace poco. Distingue la ausencia de información de una solicitud que necesita respuesta. Contar días sin interpretar esa diferencia puede provocar preocupación innecesaria o hacer que pases por alto algo sobre lo que puedes actuar."
+      ],
+      [
+        "Comprueba conjuntamente el número y el transportista",
+        "Copia el número de seguimiento desde el registro del paquete en lugar de escribirlo a mano a partir de una captura. Busca espacios añadidos al principio o al final y confirma que el transportista seleccionado coincide con la información de la ruta que recibiste. Algunas herramientas intentan adivinar el transportista; una elección incorrecta puede dar un resultado vacío aunque el número sea válido. Si la cuenta ofrece un segundo número para una fase posterior de entrega, identifica la función de ambos. No sustituyas el registro original ni supongas que todos los envíos tendrán un segundo identificador. Una nota útil de diagnóstico indica qué número consultaste, dónde lo consultaste y qué resultado apareció. Evita probar sitios de transportistas al azar hasta que uno muestre un resultado vagamente parecido. El objetivo es vincular el paquete con un registro fiable, no conseguir cualquier resultado que contenga un país de destino conocido."
+      ],
+      [
+        "Utiliza el aviso de la ruta para decidir el siguiente paso",
+        "Compara el último evento y la fecha de expedición con el aviso actual de la ruta elegida. No apliques a tu paquete el plazo de otro comprador ni conviertas una estimación publicada en una garantía de llegada. Una ruta puede tener una secuencia de traspasos y escaneos diferente de la de otro servicio que se dirija al mismo país. Si la cuenta muestra una acción, una instrucción de contacto o un plazo, lee esa información antes de seguir esperando. Si simplemente no hay novedades, reúne los hechos y pregunta al soporte si la etapa actual es coherente con esa ruta. Solicita una comprobación concreta, como confirmar la entrega física al transportista o aclarar una incidencia en destino. Evita repetir la misma petición en varios mensajes desconectados. Un único mensaje completo, con una pregunta clara, se sigue mejor; los envíos repetidos pueden dispersar detalles importantes entre conversaciones distintas."
+      ],
+      [
+        "Prepara un mensaje que el soporte pueda responder",
+        "Utiliza una estructura breve: referencia del paquete, ruta, fecha de expedición, último evento visible y la pregunta que necesitas resolver. Por ejemplo, una nota ficticia podría decir: el paquete A se presentó el 1 de octubre; el último evento visible es información recibida el 3 de octubre; la consulta al transportista del 6 de octubre no muestra escaneos posteriores. Confirmen si se ha producido la entrega física e indiquen cuál es el siguiente punto de control previsto para esta ruta. Estas fechas ilustran la estructura del mensaje, no un periodo de espera recomendado. Adjunta las pruebas recortadas pertinentes en el canal de soporte autenticado, utilizando los datos reales de tu cuenta. Mantén cualquier traducción junto a la frase original del estado para que el agente pueda resolver ambigüedades. No afirmes que el paquete está perdido, incautado o devuelto salvo que las pruebas disponibles lo indiquen. Pide primero una aclaración y conserva la respuesta en el mismo registro fechado."
+      ],
+      [
+        "Gestiona una incidencia sin exponer información personal",
+        "Si el transportista informa de un problema con la dirección o de un intento de entrega, consulta las instrucciones en la cuenta oficial o en el servicio autenticado del propio transportista. No publiques la etiqueta completa, dirección, teléfono, código de barras ni número de seguimiento en un foro para preguntar qué ha ocurrido. Una captura recortada del estado suele permitir explicar la duda manteniendo privados los campos identificativos. Trata con cautela las solicitudes de pago que lleguen en mensajes no solicitados: que un mensaje mencione un paquete no demuestra por sí solo quién lo envía. Accede por tu cuenta al servicio conocido y verifica allí la solicitud. Esta guía no recoge números de seguimiento ni actúa como intermediario logístico. Si el estado indica entregado y no encuentras el paquete, conserva el evento de entrega y sigue pronto las instrucciones del transportista. No modifiques las pruebas para adaptarlas a una suposición sobre la causa: una cronología precisa será útil cualquiera que sea la explicación final."
+      ],
+      [
+        "Separa las consultas de seguimiento de las de indemnización",
+        "Una consulta de seguimiento pregunta dónde está el paquete y qué acción hace falta. Una consulta de indemnización o seguro pregunta si un evento concreto está cubierto y qué pruebas y plazos se aplican. Las preguntas pueden coincidir en parte, pero la falta de un escaneo no establece un derecho al reembolso. Guarda las condiciones del servicio elegido, el justificante de pago y cualquier selección de seguro con tu archivo privado del paquete. Si la situación deriva en una reclamación, consulta las condiciones vigentes y las instrucciones que aparecen para ese paquete. No te fíes de un plazo genérico de reclamación copiado de otra ruta o del pedido de otra persona. Pide al soporte que identifique el procedimiento aplicable cuando no esté claro. Guarda la fecha de tu consulta y cualquier seguimiento solicitado y responde dentro del periodo realmente indicado. Este método conserva una relación clara de qué se sabía y cuándo, sin prometer un resultado que la página de seguimiento no puede demostrar."
+      ],
+      [
+        "Completa el registro cuando lleguen nuevas pruebas",
+        "Cuando se actualice el seguimiento, añade el nuevo evento en vez de borrar la nota anterior. Marca qué incertidumbre se ha resuelto: el transportista aceptó el paquete, apareció el siguiente tramo, se respondió a una consulta de dirección o se registró la entrega. Mantén separadas las preguntas pendientes para que un escaneo tranquilizador no oculte otro problema sin resolver. Después de la entrega, compara el contenido con tu propia lista de pedidos y conserva las pruebas pertinentes si algo no está bien. Para el siguiente envío, reutiliza la estructura del registro, no la cronología de la entrega anterior. Otros productos, embalajes, rutas y destinos pueden cambiar el trayecto. El objetivo práctico es un registro pequeño y fiable que lleve a la siguiente acción: verificar el número correcto, leer el estado real, revisar el aviso de la ruta y formular una pregunta clara cuando falten pruebas. Actualizar repetidamente la misma página de seguimiento vacía no aporta información nueva a ese proceso."
+      ]
+    ],
+    "sources": [
+      {
+        "title": "Joyagoo: consultar la logística del paquete",
+        "href": "https://mgt.joyagoo.com/help-center/how-to-check-logistics-information-after-the-package-was-sent-out/"
+      },
+      {
+        "title": "Joyagoo: intervalos entre actualizaciones del seguimiento",
+        "href": "https://mgt.joyagoo.com/help-center/why-hasnt-the-tracking-been-updated-since-the-parcel-was-shipped/"
+      }
+    ]
+  },
+  "joyagoo-shipping-estimate-input-checklist": {
+    "title": "Estimación de envío de Joyagoo: datos que debes revisar en la calculadora",
+    "description": "Prepara el destino, las unidades, las dimensiones del paquete y los detalles del producto para estimar el envío de Joyagoo. Compara datos equivalentes y registra lo que sigue siendo incierto antes de pagar.",
+    "updated": "13 de octubre de 2026",
+    "read": "8 min de lectura",
+    "sections": [
+      [
+        "Prepara un registro de datos útil antes de comparar precios",
+        "Una estimación de envío de Joyagoo solo es tan útil como la información introducida. Antes de comparar resultados, anota el destino, la combinación de productos, el peso, las dimensiones del paquete, la hipótesis de embalaje y la fecha de la estimación. Marca si cada valor es medido o provisional. Un resultado que parece preciso puede depender de dimensiones inciertas, por lo que debes mantener esas incertidumbres visibles junto a la cifra. Esta guía se centra en preparar y revisar ese registro de datos; no es una calculadora de portes en tiempo real ni una lista de precios actuales de rutas. Abre el estimador oficial mediante la navegación del propio Joyagoo cuando estés listo para comparar las opciones disponibles. No introduzcas una dirección, un número de pedido ni datos de pago en una calculadora ajena de terceros. Un país y un supuesto de planificación pueden bastar para una comparación inicial; el proceso real de la cuenta mostrará qué campos adicionales necesita tu paquete."
+      ],
+      [
+        "Utiliza el destino y las unidades indicados en el formulario actual",
+        "Lee con cuidado el selector de destino y confirma los campos adicionales de región o código postal que pida el formulario. El nombre traducido de un país debe seguir identificando el mismo destino después de cambiar el idioma de la interfaz. Copia el valor seleccionado en tus notas en vez de confiar en la posición de una opción dentro de un desplegable. Después, comprueba la unidad junto a cada campo numérico. Los kilogramos y los gramos no son intercambiables: 2,4 kilogramos equivalen a 2.400 gramos, mientras que 240 gramos son una décima parte de esa cantidad. Los centímetros y las pulgadas también requieren una conversión explícita. Si debes cambiar de unidades, conserva tanto la medida original etiquetada como el valor convertido etiquetado. Evita introducir una cifra aislada de una tabla del vendedor sin saber qué mide. El registro más seguro debe entenderse más adelante sin volver a abrir el formulario: destino, valor, unidad, fuente de la medida y fecha de obtención de cada dato."
+      ],
+      [
+        "Separa las medidas del artículo de las del paquete",
+        "El tamaño de un artículo no es automáticamente el del envío terminado. La longitud de un zapato no describe la caja exterior, y una prenda doblada puede ocupar otro volumen después de envolverla con protección. Del mismo modo, el peso publicado de un producto puede excluir el embalaje del vendedor o los materiales finales del paquete. Registra a qué etapa pertenece cada prueba: descripción del vendedor, registro del artículo en almacén o medición del paquete embalado. No combines sin indicarlo un peso de artículo medido con dimensiones de paquete supuestas y etiquetes todo el escenario como medido. Joyagoo distingue el peso facturable estimado de las mediciones posteriores al embalaje y de cualquier ajuste del transportista. Para planificar, redacta un escenario provisional e identifica expresamente sus hipótesis de embalaje. Cuando exista una medición del paquete terminado, sustituye el dato provisional por esa prueba y repite la comparación. Conservar la versión anterior junto a la nueva explica por qué cambió el resultado."
+      ],
+      [
+        "Revisa la base de facturación de la ruta antes de calcular",
+        "El peso de una báscula y el peso facturable pueden representar cosas diferentes. Algunas rutas incluyen las dimensiones en su cálculo. El divisor, las reglas de redondeo y las condiciones de aplicación deben proceder de los detalles actuales de la ruta; no se deben copiar de otro servicio solo porque el destino sea el mismo. Como ejemplo puramente ilustrativo, una caja de 40 por 30 por 20 centímetros tiene un volumen de 24.000 centímetros cúbicos. Si una ruta hipotética divide ese volumen entre 6.000, el peso volumétrico resultante es de 4 kilogramos. Si esa ruta hipotética factura el mayor entre el peso volumétrico y un peso real de 3 kilogramos, la comparación parte de 4 kilogramos antes de cualquier redondeo propio de la ruta. Es un ejemplo aritmético, no una cotización de Joyagoo ni una afirmación de que todas las rutas utilicen ese divisor. Guarda la regla real junto al resultado que obtengas."
+      ],
+      [
+        "Compara escenarios cambiando una sola hipótesis cada vez",
+        "Supón que estás valorando conservar o retirar una caja decorativa. Crea dos escenarios claramente etiquetados con el mismo destino, productos y ruta, cambiando solo la hipótesis de embalaje y las medidas que la respalden. Si también cambias la ruta, la combinación de productos y el seguro, un total más bajo no te dirá qué modificación lo causó. Usa un registro sencillo con columnas para nombre del escenario, peso real, dimensiones, regla de facturación, servicios incluidos y estimación mostrada. No inventes unas dimensiones menores solo para que el segundo escenario parezca atractivo. Si el almacén no ha proporcionado esa medida, márcala como provisional. El embalaje también es una decisión de protección: un paquete compacto que permite aplastar un artículo con estructura no es una alternativa equivalente. Conserva las pruebas del nivel de protección que necesitas y compara escenarios viables en lugar de un caso ideal poco realista."
+      ],
+      [
+        "Separa los portes del presupuesto completo de la compra",
+        "Una estimación de envío no incluye automáticamente todos los importes de una compra. Mantén en líneas separadas el pago del producto, la entrega nacional, los servicios opcionales, el transporte internacional y cualquier otro cargo aplicable. Lee el resultado actual para saber exactamente qué incluye, en vez de suponer que un total atractivo lo cubre todo. Utiliza la misma moneda mostrada al comparar dos resultados de rutas y registra la moneda, no solo los dígitos. Si después comparas un pago en otra moneda, separa la conversión de la comparación del transporte. Esta guía no calcula impuestos de destino, no garantiza que una ruta sea apta ni recomienda un valor de declaración aduanera. Estas cuestiones dependen de las reglas actuales y del envío real. Un presupuesto útil deja visible la incertidumbre y remite cada punto pendiente al pago actual correspondiente o a una guía autorizada, en vez de tratar la falta de información como un cargo cero."
+      ],
+      [
+        "Explica un resultado vacío con pruebas, no con conjeturas",
+        "Si el estimador no muestra una ruta utilizable, vuelve a comprobar el destino, las unidades, las dimensiones y la descripción del producto antes de interpretar el resultado. Un error de escritura puede crear un paquete inverosímil, mientras que otra combinación de productos puede requerir un tratamiento diferente. Revisa las restricciones y los límites de tamaño mostrados en los detalles actuales del servicio. No supongas que un resultado vacío demuestra que todos los envíos a un país están suspendidos ni elimines una característica verdadera del producto solo para que aparezca una ruta. Registra los datos exactos y cualquier mensaje mostrado, retirando la información personal de las capturas que compartas fuera de la cuenta. Si el motivo sigue sin estar claro, pregunta al soporte qué campo o restricción requiere atención. Incluye el contexto de la ruta o estimación para que la respuesta trate el escenario real. Una pregunta precisa sobre un dato es más útil que preguntar por qué el envío nunca funciona sin enseñar lo que introdujiste."
+      ],
+      [
+        "Revisa la estimación después de cambiar el embalaje",
+        "Una estimación guardada queda desactualizada cuando cambian la selección de productos, el destino o el embalaje. Añade una fecha de versión al registro y señala qué ha cambiado desde la comparación anterior. Si añades un accesorio frágil, su nueva protección puede afectar al peso y a las dimensiones. Si retiras una caja, confirma el paquete resultante en lugar de restar simplemente una cantidad supuesta. Compara el registro final del paquete con las hipótesis anteriores y conserva la razón de cada ajuste. Lee las instrucciones actuales de pago y ajuste de la cuenta antes de considerar un depósito mostrado como el importe final del transporte. No hagas el presupuesto suponiendo que habrá un reembolso ni que no tendrás que pagar nada más. El cálculo anterior sirve para preparar una decisión, no para sustituir el proceso de medición y facturación que se aplica al paquete real."
+      ],
+      [
+        "Guarda una nota breve para transmitir la estimación",
+        "Una nota completa debe permitir a otra persona entender el paquete propuesto sin adivinar. Incluye destino, referencias de los productos seleccionados, peso real o provisional, dimensiones con unidades, instrucciones de embalaje, fecha de estimación, nombre de la ruta y preguntas pendientes. Dedica una línea breve a cada hipótesis, en lugar de ocultarlas dentro de una captura. Por ejemplo: dimensiones provisionales; se conservan las cajas originales; refuerzo aún sin medir; comparar de nuevo después del embalaje. La nota es una ilustración, no una recomendación para todos los productos. Mantén tu dirección personal y los datos de pago en la cuenta autenticada, no en una hoja de planificación pública. Una vez medido el paquete final, resuelve los puntos provisionales y conserva el registro resultante para tu propia consulta. La mejora más útil no es una supuesta ruta barata universal. Es una forma repetible de aportar datos precisos, entender qué cubre el resultado y reconocer cuándo hay que actualizar la comparación."
+      ]
+    ],
+    "sources": [
+      {
+        "title": "Estimador oficial de envíos de Joyagoo",
+        "href": "https://joyagoo.com/estimation"
+      },
+      {
+        "title": "Joyagoo: peso facturable estimado y real",
+        "href": "https://mgt.joyagoo.com/help-center/estimated-billing-weight-and-actual-billing-weight-when-will-the-overcharged-postage-be-refunded/"
+      },
+      {
+        "title": "Joyagoo: peso real y volumétrico",
+        "href": "https://mgt.joyagoo.com/help-center/actual-weight-and-volumetric-weight/"
+      }
+    ]
+  },
+  "joyagoo-links-not-working": {
+    "title": "Los enlaces de Joyagoo no funcionan: comprobaciones de Weidian e importación",
+    "description": "Resuelve un enlace de producto de Joyagoo que no carga o no se importa. Distingue un enlace roto, una barrera de acceso, una opción agotada y una ficha modificada antes de comprar.",
+    "updated": "13 de octubre de 2026",
+    "read": "8 min de lectura",
+    "sections": [
+      [
+        "Identifica el paso que falla antes de sustituir el enlace",
+        "Cuando un enlace de Joyagoo no funciona, empieza por identificar dónde se produce el fallo. Puede que no se abra la página original del vendedor, que el buscador del agente de compras no pueda importarla o que el producto importado cargue sin la opción que quieres. Son problemas distintos. Guarda el enlace original en una nota privada y escribe una frase que describa el resultado que realmente ves. Un mensaje de error es más útil que la etiqueta genérica de roto. Si llegaste desde una hoja de productos o una publicación compartida, registra esa página de descubrimiento por separado de la URL del vendedor. Que la página de descubrimiento funcione no demuestra que su destino siga existiendo. Esta guía de diagnóstico empieza después de encontrar un fallo; la guía existente de verificación de enlaces de producto cubre la revisión rutinaria más amplia antes de comprar. Separar ambas tareas evita que los clics repetidos sustituyan a un diagnóstico claro."
+      ],
+      [
+        "Recupera una URL de producto completa desde la fuente",
+        "Utiliza la función normal de compartir o copiar enlace de la página del vendedor cuando sea accesible. Un mensaje copiado puede contener el título del producto, texto promocional y varios enlaces; identifica la URL de la ficha deseada antes de pegarla en el campo de búsqueda. Comprueba si la vista previa de un mensaje o una captura ha cortado el enlace. Conserva el identificador del producto y cualquier información necesaria para llegar a la ficha real; no borres a ciegas parámetros desconocidos ni inventes una URL de sustitución a partir del nombre del producto. Si el enlace abre la portada de una tienda en vez de un producto, puede que aún necesites la dirección del artículo concreto. Mantén la versión original junto a cualquier versión limpiada para poder deshacer una edición accidental. No necesitas publicar todo el contenido del portapapeles. Retira la información personal de uso compartido de los ejemplos públicos de diagnóstico y utiliza el canal de soporte autenticado cuando sea necesario el contexto completo de la cuenta."
+      ],
+      [
+        "Comprueba si la ficha del vendedor es accesible",
+        "Abre directamente el destino original del producto y anota el resultado. Una pantalla de inicio de sesión, una ficha retirada, una comprobación de acceso y una página de producto normal no son equivalentes. Si el sitio te pide iniciar sesión, utiliza su proceso autorizado habitual en vez de intentar eludir controles de acceso. Si la página no está disponible, no supongas que el agente de compras puede reponer existencias o recuperar una oferta eliminada. Puede que necesites pedir al vendedor la ficha actual o elegir otro candidato. Aunque la página cargue, también hay que verificar la identidad: compara el tipo de producto, la imagen principal, el modelo y las opciones visibles con tu registro guardado. Un vendedor puede modificar una página sin cambiar la dirección. Trátalo como una nueva comparación, no como confirmación automática de que la recomendación anterior sigue siendo válida."
+      ],
+      [
+        "Comprueba la importación sin cambiar el producto deseado",
+        "La guía de compras de Joyagoo describe la búsqueda mediante el enlace original de un producto e incluye Weidian entre las fuentes compatibles. Esa compatibilidad general no garantiza que todas las fichas individuales se importen correctamente en todo momento. Pega la URL completa y actual del producto en el campo de búsqueda correspondiente y lee cualquier mensaje que aparezca. Si la ficha original funciona pero la importación falla, conserva ambos hechos en tu nota. No cambies a un artículo de aspecto similar solo para conseguir un resultado de importación. Revisa que hayas copiado la página del producto, no la URL de una imagen, una categoría o un pedido personal. Si la interfaz ofrece un pedido manual o DIY, consulta sus requisitos actuales y pide ayuda cuando los detalles del artículo no estén claros. Poder enviar un formulario no confirma por sí solo las existencias, el precio, la admisibilidad ni la variante exacta que suministrará el vendedor."
+      ],
+      [
+        "Distingue una opción no disponible de una página de producto inactiva",
+        "Un producto importado puede ser accesible mientras el color, la talla o la versión deseados no están disponibles. Despliega los selectores de opciones y compáralos con la página del vendedor. Si falta la variante que guardaste, no trates el precio más bajo mostrado ni la primera opción seleccionable como un sustituto. Registra producto, color, sistema de tallas, versión y cantidad en campos separados. Conserva el texto original de las opciones junto a una traducción de trabajo, especialmente cuando dos etiquetas solo se diferencian en un código corto. Un título traducido automáticamente puede parecer correcto mientras describe una combinación equivocada. Si una imagen muestra un conjunto de dos piezas pero la opción elegida es para una sola, se trata de un problema de interpretación del pedido, no del enlace. Detén la compra hasta que la opción que vas a pagar coincida con tu registro. Un enlace operativo es solo el camino hacia esa decisión, no una prueba de que ya se haya tomado."
+      ],
+      [
+        "Compara una ficha de sustitución como un candidato nuevo",
+        "Si el vendedor proporciona un enlace nuevo, guárdalo como un candidato distinto y vuelve a comparar los campos importantes. Comprueba la identidad del vendedor, el modelo, la estructura de opciones, el precio actual, las piezas incluidas y las medidas disponibles. Una miniatura familiar no basta para demostrar que la nueva ficha representa el mismo lote o especificación. Conserva una nota fechada que explique por qué se retiró el enlace anterior: página eliminada, producto modificado, variante no disponible o fallo de importación. No borres ese motivo al añadir el sustituto, porque explica el cambio a quien revise la selección después. Si solo difiere un detalle no esencial, regístralo igualmente de forma explícita en vez de llamar idénticas a las fichas. Si la diferencia es esencial, como la información de tallaje o la compatibilidad eléctrica, pide una aclaración antes de tratar el nuevo candidato como sustituto. Esta comparación importa especialmente cuando una hoja compartida se ha copiado o republicado sin actualizar la fecha de revisión."
+      ],
+      [
+        "Envía una nota de diagnóstico con las pruebas adecuadas",
+        "Una nota útil para soporte indica la fuente original, el producto y la opción deseados, la hora de comprobación, el resultado en la página del vendedor y el resultado dentro de Joyagoo. Incluye el texto exacto del error si existe. Un ejemplo ficticio podría decir: la página del producto del vendedor se abre, pero al importar su URL no aparecen tallas seleccionables; la opción necesaria es negro, EU 42, un par; confirmen si se puede pedir esta ficha y qué texto de opción debe utilizarse. El ejemplo demuestra la estructura, no verifica ningún producto real. Adjunta solo las capturas necesarias para mostrar la discrepancia. Recorta los datos privados de la cuenta, la información de pago y las pestañas del navegador no relacionadas. Utiliza el canal oficial de la cuenta para los identificadores sensibles en vez de enviarlos a un hilo público de comentarios. Un mensaje que separe la accesibilidad de la fuente de la disponibilidad de opciones da al destinatario un problema concreto que investigar."
+      ],
+      [
+        "Separa las decisiones de búsqueda y de compra",
+        "Un resultado de búsqueda puede ayudarte a descubrir otro candidato, pero no demuestra que el enlace modificado de un vendedor equivalga al original. Vuelve a tus campos necesarios antes de aceptar un sustituto. En calzado, pueden incluir el sistema de tallas del vendedor y una medida útil. En ropa, distingue el ancho de la prenda en plano del contorno corporal. En un accesorio, confirma qué se incluye; en electrónica, verifica el modelo exacto y los detalles de compatibilidad. Son ejemplos de pruebas sobre el producto, no garantías de que una categoría pueda enviarse por cualquier ruta concreta. Cuando el enlace y la opción estén claros, conserva el registro de pedido resultante para compararlo después con el almacén. Las fotos QC corresponderán al artículo realmente recibido, mientras que la imagen del vendedor describe la oferta. Mantener esa distinción evita que el enlace recuperado se convierta en una falsa garantía de calidad o ajuste."
+      ],
+      [
+        "Retira los enlaces sin resolver y mantén una selección limpia",
+        "Marca un enlace como pendiente cuando las pruebas sigan siendo incompletas. Puedes conservarlo en una nota privada de investigación sin presentarlo como listo para comprar. En una selección compartida, muestra la fecha de la última comprobación y un motivo claro cuando se retire o sustituya una entrada. No vuelvas a publicar repetidamente un enlace fallido con una etiqueta nueva solo porque atraiga clics. Una vez comprobado el sustituto, registra el nuevo destino y la opción exacta verificada; si ha pasado tiempo, revísalo de nuevo antes de pagar. Este proceso reduce los enlaces desactualizados sin prometer disponibilidad permanente. Un buen resultado es un conjunto más pequeño de candidatos con pruebas comprensibles: página actual del vendedor, importación utilizable, opción coincidente y seleccionable y un registro fechado. Si falta cualquiera de esas piezas, la siguiente acción útil es aclararlo, no hacer otro intento de compra sin verificar."
+      ]
+    ],
+    "sources": [
+      {
+        "title": "Guía oficial de Joyagoo para buscar productos y realizar pedidos",
+        "href": "https://mgt.joyagoo.com/help-center/shopping-assistant-guidance/"
+      }
+    ]
+  }
+}

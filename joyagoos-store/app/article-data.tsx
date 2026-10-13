@@ -1,3 +1,4 @@
+import { newArticles, revisedSlugs } from "./october-content";
 import { Footer, Header, MAIN } from "./site-data";
 import { germanyDestinationArticleByLanguage, germanyDestinationArticleSlug } from "./seo-article-germany";
 import { polandDestinationArticleByLanguage, polandDestinationArticleSlug } from "./seo-article-poland";
@@ -98,11 +99,15 @@ export const articles = {
     ] satisfies Source[],
   },
   ...priorityArticles,
+  ...newArticles,
 } as const;
 
 export type ArticleSlug = keyof typeof articles;
 
 export const articlePublishedDates: Record<ArticleSlug, string> = {
+  "joyagoo-tracking-not-updating":"2026-10-13",
+  "joyagoo-shipping-estimate-input-checklist":"2026-10-13",
+  "joyagoo-links-not-working":"2026-10-13",
   [polandDestinationArticleSlug]: "2026-09-10",
   [germanyDestinationArticleSlug]: "2026-09-08",
   "joyagoo-how-to-buy-guide": "2026-08-29",
@@ -119,13 +124,17 @@ export const articlePublishedDates: Record<ArticleSlug, string> = {
   "joyagoo-app-guide": "2026-09-21",
 };
 
-const englishOnlyArticles = new Set<ArticleSlug>(priorityArticleSlugs);
+export function isArticleAvailableInLanguage(_slug: ArticleSlug, _language: SiteLanguage) { return true; }
+export const articleModifiedDates = Object.fromEntries(Object.entries(articlePublishedDates).map(([slug,date])=>[slug,revisedSlugs.includes(slug)?"2026-10-13":date])) as Record<ArticleSlug,string>;
 
-export function isArticleAvailableInLanguage(slug: ArticleSlug, language: SiteLanguage) {
-  return language === "en" || !englishOnlyArticles.has(slug);
+export function articleModifiedDate(slug:ArticleSlug,language:SiteLanguage="en") {
+  return language!=="en" && (priorityArticleSlugs as string[]).includes(slug) ? "2026-10-13" : articleModifiedDates[slug];
 }
 
 const relatedByArticle: Partial<Record<ArticleSlug, { href: string; label: string }[]>> = {
+  "joyagoo-tracking-not-updating": [{href:"/articles/joyagoo-shipping-to-usa-guide",label:"USA shipping"},{href:"/articles/joyagoo-shipping-estimate-input-checklist",label:"Shipping estimate"},{href:"/articles/joyagoo-how-to-buy-guide",label:"Buying guide"}],
+  "joyagoo-shipping-estimate-input-checklist": [{href:"/articles/joyagoo-actual-vs-volumetric-weight",label:"Parcel weight"},{href:"/articles/joyagoo-fees-explained",label:"Fees"},{href:"/articles/joyagoo-tracking-not-updating",label:"Tracking"}],
+  "joyagoo-links-not-working": [{href:"/articles/joyagoo-link-verification-guide",label:"Verify a link"},{href:"/articles/joyagoo-shoes-spreadsheet-size-qc-guide",label:"Shoes"},{href:"/articles/joyagoo-qc-photo-checklist",label:"QC"}],
   "joyagoo-shoes-spreadsheet-size-qc-guide": [
     { href: "/spreadsheet", label: "Use the Joyagoo spreadsheet" },
     { href: "/qc", label: "Review the QC workflow" },

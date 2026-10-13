@@ -38,8 +38,6 @@ export function withLanguage(path: string, language: SiteLanguage): string {
   return hash ? `${localizedPath}#${hash}` : localizedPath;
 }
 
-// Serve the article hub from a release-specific static path so visitors do not
-// reuse the older /articles HTML. The copied document keeps /articles canonical.
 export function articleHubHref(language: SiteLanguage): string {
-  return withLanguage("/articles-2026", language);
+  return withLanguage("/articles", language);
 }

@@ -84,10 +84,11 @@ const redirects = pageUrls
   .map((pathname) => `${pathname}/ ${pathname} 301`)
   .join("\n");
 const articleAliasRedirects = articleHubPaths
-  .map((pathname) => pathname.replace(/\/articles$/, "/articles-2026"))
-  .map((pathname) => `${pathname}/ ${pathname} 301`)
+  .flatMap((pathname) => [`${pathname.replace(/\/articles$/, "/articles-2026")} ${pathname} 301`, `${pathname.replace(/\/articles$/, "/articles-2026")}/ ${pathname} 301`])
   .join("\n");
 await writeFile(join(outputDir, "_redirects"), `https://www.joyagoos.store/* https://joyagoos.store/:splat 301\n${redirects}\n${articleAliasRedirects}\n`);
-await writeFile(join(outputDir, "_headers"), `/articles\n  Cache-Control: no-cache, max-age=0, must-revalidate\n\n/articles/*\n  Cache-Control: no-cache, max-age=0, must-revalidate\n\n/articles-2026\n  Cache-Control: no-cache, max-age=0, must-revalidate\n\n/*/articles-2026\n  Cache-Control: no-cache, max-age=0, must-revalidate\n\n/assets/*\n  Cache-Control: public, max-age=31536000, immutable\n\n/joyagoo-logo.png\n  Cache-Control: public, max-age=604800\n`);
+const contentHeaders = articleHubPaths.flatMap(pathname => [pathname, `${pathname}/*`, `${pathname}-2026`])
+  .map(pathname => `${pathname}\n  Cache-Control: no-cache, max-age=0, must-revalidate\n`).join("\n");
+await writeFile(join(outputDir, "_headers"), `${contentHeaders}\n/assets/*\n  Cache-Control: public, max-age=31536000, immutable\n\n/joyagoo-logo.png\n  Cache-Control: public, max-age=604800\n`);
 
 console.log(`Exported ${pageUrls.length} indexable pages to dist/pages.`);

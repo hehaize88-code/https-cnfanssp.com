@@ -110,3 +110,13 @@ Advance the cursor only after `https://joyagoos.store/` verifies the new article
 After C30, never loop to C01. Select C31+ from new official evidence, search data, and genuine site gaps while preserving the JMLD boundary.
 
 The run report must include phase, title, production URL, exact English word count, primary/long-tail keywords, search intent, four-site Joyagoo deduplication result, official/independent sources and check date, images, changed files, commit SHA, Cloudflare/production result, and confirmation that old content, modules, layout, ten-language behavior, products, categories, CTAs, and targets remain unchanged.
+
+## Owner-directed update — 2026-10-13
+
+A separate, explicitly requested site improvement adds the following three articles in all ten languages, restores the eight September articles across the nine non-English editions, and improves the existing QC, fees, USA shipping and parcel-weight guides with equivalent check tables:
+
+- `joyagoo-tracking-not-updating`
+- `joyagoo-shipping-estimate-input-checklist`
+- `joyagoo-links-not-working`
+
+These additions are outside the C01–C30 automation track and do not advance or reset its cursor or alter its schedule. Future deduplication must include all 17 articles. Preserve the complete localized content under `app/content/october/`, the canonical `/articles` hub, real language-specific navigation and the original approved product/category/search destinations. New language editions must not be hidden behind English fallback text. The shipping-input article covers input records and uncertainty, not route rankings or current freight quotes. This one-off user instruction authorizes its scope; it does not broaden the recurring automation's future topic rules.

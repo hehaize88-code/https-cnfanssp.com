@@ -1,0 +1,164 @@
+{
+  "joyagoo-tracking-not-updating": {
+    "title": "Urmărirea Joyagoo nu se actualizează: verificarea stărilor și pașii următori",
+    "description": "Găsește evidența corectă de urmărire a coletului Joyagoo, deosebește lipsa unei scanări de o cerere de acțiune și pregătește un mesaj clar pentru asistență fără expunerea datelor private.",
+    "updated": "13 octombrie 2026",
+    "read": "8 minute de lectură",
+    "sections": [
+      [
+        "Începe cu evidența coletului, nu cu comanda produsului",
+        "Dacă urmărirea Joyagoo nu se actualizează, identifică mai întâi ce traseu verifici. Expedierea unui articol de către vânzător către depozit și deplasarea unui colet internațional către adresa ta sunt transporturi diferite. Pot avea identificatori și cronologii diferite. Numărul comenzii este util când întrebi despre cumpărarea produsului; nu este automat numărul pe care îl poate urmări un transportator. Deschide singur contul printr-o adresă de încredere și găsește coletul pe care l-ai solicitat efectiv. Compară conținutul sau data creării cu evidențele proprii înainte să copiezi ceva. Acest lucru este deosebit de util dacă ai mai multe comenzi sau ai împărțit un grup de articole în mai multe colete. Nu presupune că un număr creat recent aparține pachetului pe care îl aștepți. Păstrează referința comenzii de produs, referința coletului și numărul de urmărire al transportatorului în câmpuri separate. Această separare simplă previne multe căutări nereușite și face mai ușor de înțeles orice solicitare ulterioară de asistență."
+      ],
+      [
+        "Găsește detaliile de urmărire și păstrează formularea originală",
+        "Instrucțiunile logistice oficiale Joyagoo plasează Tracking Details în secțiunea Parcel din centrul utilizatorului. Începe acolo și compară evidența transportatorului afișată când există una. Salvează într-o notă privată numele rutei, data expedierii, ultimul eveniment, data și ora evenimentului și numărul de urmărire. Păstrează formularea originală a evenimentului lângă traducere. O expresie tradusă poate estompa diferența dintre primirea informațiilor, preluarea fizică și o tentativă de livrare. Notează fusul orar dacă este afișat; un eveniment apărut ieri într-un sistem poate apărea astăzi în altul. Nu ai nevoie de un tabel public care conține adresa ta pentru a organiza aceste informații. O notă locală scurtă este suficientă. Când două afișări ale urmăririi se contrazic, scrie ce spune efectiv fiecare, în loc să le combini într-o stare nouă. Cea mai utilă evidență păstrează dovada și sursa ei, inclusiv momentul verificării."
+      ],
+      [
+        "Citește ultimul eveniment înainte să numeri zilele fără actualizări",
+        "O pagină de urmărire fără scanări noi nu explică motivul lipsei de actualizări. Citește atent ultimul eveniment înainte să tragi o concluzie. Informații primite poate descrie date electronice; un eveniment de preluare oferă alt tip de dovadă. O înregistrare de transfer identifică o etapă a traseului, dar nu descrie neapărat poziția exactă actuală a coletului. Acestea sunt principii generale de interpretare, nu un dicționar universal pentru fiecare transportator. Folosește explicația atașată serviciului selectat ori de câte ori este disponibilă. Centrul de ajutor Joyagoo recunoaște existența unor intervale între scanări care depind de rută, așa că un interval fără actualizări nu dovedește singur pierderea. În același timp, o întrebare despre adresă, o tentativă de livrare sau o excepție explicită merită atenție chiar dacă expedierea este recentă. Separă lipsa informațiilor de o solicitare care necesită răspuns. Numărarea zilelor fără această distincție poate duce fie la îngrijorare inutilă, fie la ignorarea unei acțiuni necesare."
+      ],
+      [
+        "Verifică împreună numărul și transportatorul",
+        "Copiază numărul de urmărire din evidența coletului, în loc să îl tastezi dintr-o captură de ecran. Caută spații introduse la început sau la sfârșit și confirmă că transportatorul selectat corespunde informațiilor primite despre rută. Unele instrumente de urmărire ghicesc transportatorul; o identificare greșită poate produce un rezultat gol chiar dacă numărul este valid. Dacă în cont apare un al doilea număr pentru o etapă ulterioară de livrare, etichetează ambele numere după rol. Nu înlocui evidența originală și nu presupune că fiecare expediere va primi un al doilea identificator. O notă utilă de depanare spune ce număr a fost verificat, unde și ce rezultat a apărut. Evită încercarea unor site-uri ale transportatorilor la întâmplare până când unul produce un rezultat vag asemănător. Scopul este asocierea coletului cu o evidență de încredere, nu obținerea oricărui rezultat care conține o țară de destinație familiară."
+      ],
+      [
+        "Folosește anunțul rutei pentru alegerea următoarei acțiuni",
+        "Compară ultimul eveniment și data expedierii cu anunțul actual al rutei selectate. Nu aplica propriului colet durata de livrare a altui cumpărător și nu transforma o estimare publicată într-o garanție de sosire. O rută poate avea o succesiune de predări și scanări diferită de alt serviciu către aceeași țară. Dacă în cont apare o acțiune, o instrucțiune de contact sau un termen, citește informația înainte să mai aștepți. Dacă evidența pur și simplu nu se actualizează, adună faptele și întreabă asistența dacă etapa actuală este normală pentru acea rută. Cere o verificare următoare precisă, precum confirmarea predării fizice către transportator sau clarificarea unei excepții la destinație. Evită repetarea aceleiași solicitări în mai multe mesaje fără legătură. Un mesaj complet, cu o întrebare clară, este mai ușor de urmărit, în timp ce solicitările repetate pot împrăștia detalii importante între conversații."
+      ],
+      [
+        "Construiește un mesaj de asistență la care se poate răspunde",
+        "Folosește o structură scurtă: referința coletului, ruta, data expedierii, ultimul eveniment vizibil și întrebarea la care ai nevoie de răspuns. De exemplu, o notă fictivă ar putea suna astfel: Coletul A a fost solicitat la 1 octombrie; ultimul eveniment vizibil este informații primite la 3 octombrie; evidența transportatorului verificată la 6 octombrie nu arată nicio scanare ulterioară. Vă rog să confirmați dacă a avut loc predarea fizică și să identificați următorul punct de verificare așteptat pentru această rută. Aceste date ilustrează structura mesajului, nu o perioadă de așteptare recomandată. Atașează dovezile relevante decupate în canalul autentificat de asistență, folosind detaliile reale din contul tău. Păstrează orice traducere lângă expresia originală a stării, pentru ca agentul să poată lămuri ambiguitatea. Nu afirma că un colet este pierdut, confiscat sau returnat decât dacă dovezile disponibile spun acest lucru. Cere mai întâi clarificări și păstrează răspunsul în aceeași evidență datată."
+      ],
+      [
+        "Gestionează o excepție fără să expui informații personale",
+        "Dacă un transportator raportează o problemă de adresă sau o tentativă de livrare, verifică instrucțiunile în contul oficial ori în serviciul autentificat al transportatorului. Nu publica eticheta completă, adresa, telefonul, codul de bare sau numărul de urmărire într-un forum public pentru a întreba ce s-a întâmplat. O captură decupată a stării poate adesea comunica întrebarea păstrând câmpurile de identificare private. Tratează cu prudență cererile de plată din mesaje nesolicitate: simpla menționare a unui colet nu stabilește cine a trimis mesajul. Accesează independent serviciul cunoscut și verifică acolo solicitarea. Acest ghid nu colectează numere de urmărire și nu acționează ca intermediar logistic. Dacă starea afișată spune livrat, dar nu găsești coletul, păstrează evenimentul de livrare și urmează prompt instrucțiunile transportatorului. Evită modificarea dovezilor pentru a le potrivi unei presupuneri despre cauză; o cronologie exactă rămâne utilă indiferent de explicația finală."
+      ],
+      [
+        "Separă întrebările de urmărire de cele despre despăgubiri",
+        "O întrebare despre urmărire cere localizarea coletului și acțiunea necesară. O întrebare despre despăgubire sau asigurare cere să se stabilească dacă un anumit eveniment este acoperit și ce dovezi și termene se aplică. Aceste întrebări se pot suprapune, dar o scanare lipsă nu stabilește dreptul la rambursare. Păstrează termenii serviciului selectat, dovada plății și orice alegere a asigurării în dosarul privat al coletului. Dacă situația devine o cerere de despăgubire, consultă termenii actuali și instrucțiunile afișate pentru acel colet. Nu te baza pe un termen generic de reclamație copiat de la altă rută sau comanda altei persoane. Cere asistenței să identifice procedura aplicabilă când aceasta este neclară. Salvează data solicitării și orice revenire cerută, apoi răspunde în perioada efectiv specificată. Această abordare păstrează clar ce se știa și când, fără să promită un rezultat pe care pagina de urmărire nu îl poate stabili."
+      ],
+      [
+        "Închide evidența când apar dovezi noi",
+        "Când urmărirea se actualizează, adaugă noul eveniment în loc să ștergi nota anterioară. Marchează ce incertitudine s-a rezolvat: transportatorul a acceptat coletul, următoarea etapă a devenit vizibilă, s-a răspuns unei întrebări despre adresă sau s-a înregistrat livrarea. Păstrează separat întrebările nerezolvate, pentru ca o scanare liniștitoare să nu ascundă altă problemă rămasă. După livrare, compară conținutul coletului cu propria listă de comenzi și păstrează dovezi potrivite dacă ceva nu este în regulă. Pentru următoarea expediere, reutilizează structura evidenței, nu cronologia livrării precedente. Produsele, ambalarea, rutele și destinațiile diferite pot schimba traseul. Scopul practic este o evidență mică și fiabilă care conduce la următoarea acțiune: verifică numărul corect, citește starea reală, consultă anunțul rutei și pune o singură întrebare clară când dovezile sunt insuficiente. Reîmprospătarea repetată a aceleiași pagini goale de urmărire nu adaugă informații noi acestui proces."
+      ]
+    ],
+    "sources": [
+      {
+        "title": "Joyagoo: verificarea informațiilor logistice ale coletului",
+        "href": "https://mgt.joyagoo.com/help-center/how-to-check-logistics-information-after-the-package-was-sent-out/"
+      },
+      {
+        "title": "Joyagoo: intervalele dintre actualizările urmăririi",
+        "href": "https://mgt.joyagoo.com/help-center/why-hasnt-the-tracking-been-updated-since-the-parcel-was-shipped/"
+      }
+    ]
+  },
+  "joyagoo-shipping-estimate-input-checklist": {
+    "title": "Estimarea transportului Joyagoo: datele de verificat înainte de calcul",
+    "description": "Pregătește destinația, unitățile, dimensiunile ambalate și detaliile produselor pentru estimarea transportului Joyagoo. Compară date echivalente și notează incertitudinile înainte de plată.",
+    "updated": "13 octombrie 2026",
+    "read": "8 minute de lectură",
+    "sections": [
+      [
+        "Pregătește date utilizabile înainte de compararea prețurilor",
+        "O estimare a transportului Joyagoo este utilă doar în măsura în care informațiile introduse sunt bune. Înainte de compararea rezultatelor, notează destinația, combinația de produse, greutatea, dimensiunile coletului, ipoteza de ambalare și data estimării. Marchează dacă fiecare valoare este măsurată sau provizorie. Un rezultat care pare precis se poate baza în continuare pe dimensiuni incerte, așa că păstrează incertitudinile vizibile lângă număr. Acest ghid se concentrează pe pregătirea și verificarea acelei evidențe de date; nu este un calculator de transport în timp real sau o listă de prețuri actuale ale rutelor. Deschide estimatorul oficial din navigarea proprie Joyagoo când ești pregătit să compari opțiunile disponibile. Nu introduce o adresă, un număr de comandă sau date de plată într-un calculator terț fără legătură. O țară și un scenariu de planificare pot fi suficiente pentru o comparație inițială, în timp ce fluxul contului real va arăta ce câmpuri suplimentare sunt necesare coletului tău."
+      ],
+      [
+        "Folosește destinația și unitățile afișate în formularul actual",
+        "Citește atent selectorul destinației și confirmă orice câmp suplimentar de regiune sau cod poștal cerut de formularul actual. Numele tradus al unei țări trebuie să identifice în continuare aceeași destinație după schimbarea limbii interfeței. Copiază valoarea selectată în notițe, în loc să te bazezi pe poziția opțiunii în lista derulantă. Apoi verifică unitatea de lângă fiecare câmp numeric. Kilogramele și gramele nu sunt interschimbabile: 2,4 kilograme înseamnă 2.400 de grame, în timp ce 240 de grame reprezintă o zecime din acea cantitate. Centimetrii și inci necesită de asemenea conversie explicită. Păstrează o măsurătoare originală etichetată și o valoare convertită etichetată dacă trebuie să schimbi unitățile. Evită introducerea unui număr izolat din tabelul vânzătorului fără să știi ce măsoară. Cea mai sigură evidență a datelor poate fi înțeleasă ulterior fără redeschiderea formularului: destinație, valoare, unitate, sursa măsurătorii și data obținerii fiecărei valori."
+      ],
+      [
+        "Separă măsurătorile articolului de măsurătorile coletului",
+        "Dimensiunea unui articol nu este automat dimensiunea expedierii finalizate. Lungimea unui pantof nu descrie cutia sa exterioară, iar o haină pliată poate ocupa alt volum după învelirea protectoare. Similar, greutatea listată a unui produs poate omite ambalajul vânzătorului sau materialele coletului final. Notează etapa căreia îi aparține dovada: descrierea vânzătorului, evidența articolului din depozit sau măsurarea coletului ambalat. Nu combina tacit greutatea măsurată a unui articol cu dimensiuni presupuse ale coletului, etichetând întregul scenariu drept măsurat. Joyagoo diferențiază greutatea taxabilă estimată de măsurătorile făcute după ambalare și de orice ajustare a transportatorului. Pentru planificare, scrie un scenariu provizoriu și identifică explicit ipotezele de ambalare. Când apare o măsurătoare după ambalare, înlocuiește datele provizorii cu dovada respectivă și repetă comparația. Păstrarea versiunii vechi lângă cea nouă explică de ce s-a schimbat rezultatul."
+      ],
+      [
+        "Verifică baza de facturare a rutei înainte de calcule",
+        "Greutatea afișată de un cântar și greutatea taxabilă pot reprezenta lucruri diferite. Unele rute folosesc dimensiunile în calculul facturării. Divizorul, regulile de rotunjire și aplicabilitatea trebuie să provină din detaliile actuale ale rutei; nu trebuie copiate de la alt serviciu doar fiindcă destinația este aceeași. Ca exemplu pur ilustrativ, o cutie de 40 pe 30 pe 20 de centimetri are un volum de 24.000 de centimetri cubi. Dacă o rută ipotetică împarte acest volum la 6.000, greutatea dimensională rezultată este de 4 kilograme. Dacă acea rută ipotetică facturează valoarea mai mare dintre greutatea dimensională și o greutate reală de 3 kilograme, comparația pornește de la 4 kilograme înaintea oricărei rotunjiri specifice rutei. Acesta este un exemplu aritmetic, nu o ofertă de preț Joyagoo sau o afirmație că toate rutele folosesc acel divizor. Salvează regula reală lângă rezultatul obținut."
+      ],
+      [
+        "Compară scenarii schimbând câte o singură ipoteză",
+        "Să presupunem că te gândești să păstrezi sau să elimini o cutie decorativă. Construiește două scenarii clar etichetate, cu aceeași destinație, produse și rută, schimbând doar ipoteza de ambalare și măsurătorile susținute de dovezi. Dacă schimbi și ruta, combinația de produse și alegerea asigurării, un total mai mic nu îți va spune ce modificare l-a provocat. Folosește o evidență simplă cu coloane pentru numele scenariului, greutatea reală, dimensiunile, regula de facturare, serviciile incluse și estimarea afișată. Nu inventa dimensiuni ambalate mai mici doar pentru a face al doilea scenariu atractiv. Dacă depozitul nu a oferit măsurătoarea, marcheaz-o provizorie. Ambalarea este și o decizie de protecție: un colet compact care permite strivirea unui articol cu structură rigidă nu este o alternativă echivalentă. Păstrează dovezile pentru nivelul de protecție necesar și compară scenarii fezabile, nu un caz optim nerealist."
+      ],
+      [
+        "Separă transportul de bugetul întregii achiziții",
+        "O estimare de transport nu include automat toate sumele implicate într-o achiziție. Păstrează pe rânduri separate plata produsului, livrarea internă, serviciile opționale, transportul internațional și orice alte costuri aplicabile. Citește rezultatul actual pentru a vedea exact ce include, în loc să presupui că un total atractiv acoperă tot. Folosește aceeași monedă afișată când compari două rezultate de rută și notează moneda, nu doar cifrele. Dacă ulterior compari o plată în altă monedă, păstrează conversia separată de comparația transportului. Acest ghid nu calculează taxele la destinație, nu garantează eligibilitatea rutelor și nu recomandă o valoare pentru declarația vamală. Aceste întrebări depind de regulile actuale și de expedierea reală. Un buget util lasă incertitudinea vizibilă și trimite fiecare element nerezolvat către pagina actuală de plată relevantă sau ghiduri autoritative, în loc să trateze informația lipsă ca taxă zero."
+      ],
+      [
+        "Explică un rezultat gol prin dovezi, nu presupuneri",
+        "Dacă estimatorul nu arată nicio rută utilizabilă, verifică din nou destinația, unitățile, dimensiunile și descrierea produselor înainte de interpretarea rezultatului. O eroare de tastare poate crea un colet neverosimil, iar altă combinație de produse poate cere altă manipulare. Verifică restricțiile și limitele dimensionale afișate în detaliile actuale ale serviciului. Nu presupune că un rezultat gol dovedește indisponibilitatea tuturor transporturilor către o țară și nu elimina o caracteristică reală a produsului doar pentru a face o rută să apară. Notează datele exacte introduse și orice mesaj afișat, eliminând informațiile personale din capturile distribuite în afara contului. Dacă motivul rămâne neclar, întreabă asistența ce câmp sau restricție necesită atenție. Include contextul rutei ori al estimării, pentru ca răspunsul să vizeze scenariul real. O întrebare precisă despre o dată introdusă este mai utilă decât întrebarea de ce transportul nu funcționează niciodată, fără a arăta ce s-a introdus."
+      ],
+      [
+        "Verifică din nou estimarea după schimbarea ambalării",
+        "O estimare salvată devine învechită când selecția produselor, destinația sau ambalarea se schimbă. Adaugă o dată de versiune în evidență și notează ce s-a schimbat față de comparația anterioară. Dacă se adaugă un accesoriu fragil, noua protecție poate influența atât greutatea, cât și dimensiunile. Dacă o cutie este eliminată, confirmă pachetul rezultat, în loc să scazi pur și simplu o cantitate presupusă. Compară evidența finală a coletului cu ipotezele folosite anterior și păstrează motivul oricărei ajustări. Citește instrucțiunile actuale de plată și ajustare din cont înainte să consideri un avans afișat drept suma finală a transportului. Nu construi bugetul pe o rambursare presupusă sau pe presupusa absență a unei plăți suplimentare. Scopul calculului anterior este pregătirea unei decizii, nu înlocuirea procesului de măsurare și facturare aplicat coletului real."
+      ],
+      [
+        "Salvează o notă concisă de predare a estimării",
+        "O notă completă de predare trebuie să permită altei persoane să înțeleagă coletul propus fără presupuneri. Include destinația, referințele produselor selectate, greutatea reală sau provizorie, dimensiunile cu unități, instrucțiunea de ambalare, data estimării, numele rutei și întrebările nerezolvate. Folosește câte un rând scurt separat pentru fiecare ipoteză, în loc să le ascunzi într-o captură de ecran. De exemplu: dimensiunile sunt provizorii; cutiile originale sunt păstrate; ranforsarea nu a fost încă măsurată; comparația trebuie repetată după ambalare. Acea notă este ilustrativă, nu o recomandare pentru fiecare produs. Păstrează adresa personală și informațiile de plată în contul autentificat, nu într-o fișă publică de planificare. După măsurarea coletului final, închide elementele provizorii și păstrează evidența rezultată pentru uz propriu. Cea mai utilă îmbunătățire nu este o presupusă rută ieftină universală. Este o metodă repetabilă de a furniza date exacte, a înțelege ce acoperă rezultatul și a recunoaște când comparația trebuie actualizată."
+      ]
+    ],
+    "sources": [
+      {
+        "title": "Estimatorul oficial de transport Joyagoo",
+        "href": "https://joyagoo.com/estimation"
+      },
+      {
+        "title": "Joyagoo: greutatea taxabilă estimată și reală",
+        "href": "https://mgt.joyagoo.com/help-center/estimated-billing-weight-and-actual-billing-weight-when-will-the-overcharged-postage-be-refunded/"
+      },
+      {
+        "title": "Joyagoo: greutatea reală și volumetrică",
+        "href": "https://mgt.joyagoo.com/help-center/actual-weight-and-volumetric-weight/"
+      }
+    ]
+  },
+  "joyagoo-links-not-working": {
+    "title": "Linkurile Joyagoo nu funcționează: verificări Weidian și de import al produselor",
+    "description": "Depanează un link Joyagoo de produs care nu se încarcă sau nu se importă. Deosebește un link defect, o barieră de autentificare, o variantă indisponibilă și o pagină schimbată înainte de comandă.",
+    "updated": "13 octombrie 2026",
+    "read": "8 minute de lectură",
+    "sections": [
+      [
+        "Identifică etapa care eșuează înainte de înlocuirea linkului",
+        "Când un link Joyagoo nu funcționează, începe prin identificarea locului unde apare eșecul. Pagina originală a vânzătorului poate să nu se deschidă, căutarea agentului de cumpărare poate să nu o importe sau produsul importat se poate încărca fără varianta dorită. Acestea sunt probleme diferite. Păstrează linkul original într-o notă privată și scrie o propoziție care descrie rezultatul efectiv vizibil. Un mesaj de eroare este mai util decât eticheta generală defect. Dacă ai venit dintr-un tabel sau o postare distribuită, notează separat pagina de descoperire și URL-ul vânzătorului. O pagină de descoperire funcțională nu dovedește că destinația ei mai există. Acest ghid de depanare începe după întâlnirea unui eșec; ghidul existent de verificare a linkurilor de produs acoperă verificarea obișnuită mai amplă înainte de comandă. Separarea acestor sarcini împiedică înlocuirea unui diagnostic clar cu clicuri repetate."
+      ],
+      [
+        "Recuperează un URL complet de produs din sursă",
+        "Folosește funcția normală de distribuire sau copiere a linkului de pe pagina vânzătorului când este accesibilă. Un mesaj copiat poate conține titlul produsului, text promoțional și mai multe linkuri, așa că identifică URL-ul paginii dorite înainte să îl lipești în câmpul de căutare. Ai grijă la un link trunchiat de previzualizarea unui mesaj sau de o captură de ecran. Păstrează identificatorul produsului și orice informație necesară pentru a ajunge la pagina reală; nu șterge orbește parametri necunoscuți și nu inventa un URL înlocuitor din numele produsului. Dacă linkul deschide pagina principală a magazinului, nu produsul, este posibil să ai nevoie încă de adresa articolului specific. Păstrează versiunea originală lângă orice versiune curățată, ca să poți anula o modificare accidentală. Nu trebuie să publici tot conținutul clipboardului. Elimină informațiile personale de distribuire din exemplele publice de depanare și folosește canalul autentificat de asistență când este necesar contextul complet al contului."
+      ],
+      [
+        "Verifică dacă pagina vânzătorului este accesibilă",
+        "Deschide direct destinația originală a produsului și notează rezultatul. Un ecran de autentificare, o pagină eliminată, o verificare de acces și o pagină normală de produs nu sunt echivalente. Dacă site-ul cere autentificare, folosește procesul său autorizat obișnuit în loc să încerci ocolirea controalelor de acces. Dacă pagina este indisponibilă, nu presupune că agentul de cumpărare poate restabili stocul sau recupera o ofertă ștearsă. Poate fi nevoie să ceri vânzătorului pagina actuală sau să alegi altă opțiune. Încărcarea reușită cere și verificarea identității: compară tipul produsului, imaginea principală, modelul și variantele vizibile cu evidența salvată. Un vânzător poate schimba o pagină păstrând aceeași adresă. Tratează situația ca pe o nouă comparație, nu ca pe o confirmare automată că recomandarea veche se mai aplică."
+      ],
+      [
+        "Verifică importul fără să schimbi produsul dorit",
+        "Ghidul Joyagoo de cumpărare descrie căutarea cu un link original de produs și include Weidian printre sursele acceptate. Acest suport general nu garantează că fiecare pagină individuală se va importa cu succes în orice moment. Lipește URL-ul complet actual al produsului în câmpul relevant de căutare și citește orice mesaj returnat. Dacă pagina originală funcționează, dar importul eșuează, păstrează ambele fapte în notă. Nu trece la un articol asemănător vizual doar pentru a obține un rezultat de import. Verifică din nou că ai copiat pagina produsului, nu URL-ul unei imagini, o pagină de categorie sau un link personal de comandă. Dacă interfața oferă o opțiune de comandă manuală sau DIY, examinează cerințele actuale și cere ajutor când detaliile articolului sunt neclare. Posibilitatea de a trimite un formular nu confirmă prin ea însăși stocul, prețul, eligibilitatea sau varianta exactă pe care o va furniza vânzătorul."
+      ],
+      [
+        "Deosebește variantele indisponibile de o pagină inactivă",
+        "Un produs importat poate fi accesibil, în timp ce culoarea, mărimea sau versiunea dorită este indisponibilă. Extinde selectoarele de variante și compară-le cu pagina vânzătorului. Dacă varianta salvată lipsește, nu trata cel mai mic preț afișat sau prima opțiune selectabilă drept înlocuitor. Notează produsul, culoarea, sistemul de mărimi, versiunea și cantitatea în câmpuri separate. Păstrează formularea originală a opțiunii lângă o traducere de lucru, mai ales când două etichete diferă doar printr-un cod scurt. Un titlu tradus automat poate suna corect, descriind totuși combinația greșită. Dacă o imagine arată un set de două piese, dar opțiunea selectată este pentru un singur articol, problema privește interpretarea comenzii, nu linkul. Oprește achiziția până când varianta de plătit corespunde evidenței. Un link funcțional este doar calea către acea decizie, nu dovada că decizia a fost deja luată."
+      ],
+      [
+        "Compară pagina înlocuitoare ca pe o opțiune nouă",
+        "Dacă vânzătorul oferă un link nou, salvează-l ca opțiune nouă și compară din nou câmpurile importante. Verifică identitatea vânzătorului, modelul produsului, structura variantelor, prețul actual, piesele incluse și măsurătorile disponibile. O miniatură familiară nu este suficientă pentru a stabili că noua pagină reprezintă același lot sau aceeași specificație. Păstrează o notă datată care explică retragerea vechiului link: pagină eliminată, produs schimbat, variantă indisponibilă sau eșec de import. Nu șterge motivul când adaugi înlocuitorul, deoarece el explică schimbarea oricui revizuiește ulterior selecția. Chiar dacă diferă un singur detaliu neesențial, notează-l explicit în loc să numești paginile identice. Pentru o diferență esențială, precum dovezile de mărime sau compatibilitatea electrică, obține clarificări înainte de a trata noua opțiune drept substitut. Această comparație este deosebit de importantă când un tabel distribuit a fost copiat sau republicat fără o dată actualizată a verificării."
+      ],
+      [
+        "Trimite o notă de depanare cu dovezile potrivite",
+        "O notă utilă pentru asistență precizează sursa originală, produsul și varianta dorite, momentul verificării, rezultatul pe pagina vânzătorului și rezultatul din Joyagoo. Include textul exact al erorii dacă există. Un exemplu fictiv ar putea spune: pagina produsului vânzătorului se deschide, dar importul URL-ului nu arată mărimi selectabile; varianta necesară este negru, EU 42, o pereche; vă rog să confirmați dacă produsul poate fi comandat și ce text al opțiunii trebuie folosit. Acest exemplu demonstrează structura, nu verifică un produs real. Atașează doar capturile necesare pentru a arăta diferența. Decupează datele private ale contului, informațiile de plată și filele de browser fără legătură. Folosește canalul oficial al contului pentru identificatori sensibili, în loc să îi trimiți într-un fir public de comentarii. Un mesaj care separă accesibilitatea sursei de disponibilitatea variantei oferă destinatarului o problemă concretă de investigat."
+      ],
+      [
+        "Separă deciziile de căutare de cele de comandă",
+        "Un rezultat de căutare te poate ajuta să descoperi altă opțiune, dar nu poate dovedi că linkul schimbat al vânzătorului este echivalent cu originalul. Revino la câmpurile necesare înainte de acceptarea unui înlocuitor. Pentru încălțăminte, acestea pot include sistemul de mărimi al vânzătorului și o măsurătoare utilă. Pentru haine, deosebește lățimea hainei întinse de circumferința corpului. Pentru un accesoriu, confirmă ce este inclus; pentru electronice, verifică modelul exact și detaliile de compatibilitate. Acestea sunt exemple de dovezi despre produs, nu garanții că o categorie poate fi expediată pe o anumită rută. După clarificarea linkului și variantei, păstrează evidența comenzii rezultate pentru comparația ulterioară din depozit. Fotografiile QC vor privi articolul primit efectiv, în timp ce imaginea vânzătorului descrie oferta. Păstrarea acestei distincții împiedică transformarea linkului recuperat într-o falsă garanție de calitate sau potrivire."
+      ],
+      [
+        "Retrage linkurile nerezolvate și păstrează o selecție curată",
+        "Marchează un link ca nerezolvat când dovezile rămân incomplete. Îl poți păstra într-o notă privată de cercetare fără a-l prezenta drept gata de comandă. Pentru o selecție distribuită, arată data ultimei verificări și un motiv clar când o intrare este eliminată sau înlocuită. Nu republica repetat un link nefuncțional sub o etichetă nouă doar fiindcă atrage clicuri. După verificarea înlocuitorului, notează noua destinație și varianta exactă verificată, apoi reviziteaz-o înainte de plată dacă a trecut timp. Acest proces reduce linkurile învechite fără să promită disponibilitate permanentă. Un rezultat bun este un set mai mic de opțiuni cu dovezi ușor de înțeles: o pagină actuală a vânzătorului, un import utilizabil, o variantă selectabilă care corespunde și o evidență datată. Dacă lipsește oricare dintre acestea, următoarea acțiune utilă este clarificarea, nu încă o încercare neverificată de cumpărare."
+      ]
+    ],
+    "sources": [
+      {
+        "title": "Ghidul oficial Joyagoo pentru căutarea și comandarea produselor",
+        "href": "https://mgt.joyagoo.com/help-center/shopping-assistant-guidance/"
+      }
+    ]
+  }
+}

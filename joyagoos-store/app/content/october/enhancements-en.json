@@ -1,0 +1,88 @@
+{
+  "joyagoo-qc-photo-checklist": {
+    "title": "Joyagoo QC Photo Checklist: Size, Defects and Missing Views",
+    "description": "Check your Joyagoo QC photos in order: exact option, size label, measurements, visible defects and missing views. Use a practical checklist before approving the item.",
+    "summary": "Start with the exact order, then inspect the received item. Mark each check as matched, unclear or mismatched. An unclear measurement or missing view needs evidence before you make the next decision.",
+    "caption": "A quick QC review sheet",
+    "columns": ["Check", "Evidence to compare", "If unclear"],
+    "rows": [
+      ["Product and option", "Order: model, colour, version and quantity", "Request the relevant label or whole-item view"],
+      ["Size", "Size tag plus the seller's stated size system", "Keep EU, UK, US and CN labels separate"],
+      ["Fit evidence", "A labelled measurement using the same points as your reference item", "Ask for the missing measurement and unit"],
+      ["Visible condition", "Front, back, sides, joins, fastenings and included parts", "Identify the exact photo and concern"],
+      ["Next action", "Current order controls, eligibility and applicable deadline", "Clarify promptly before packing or tag removal"]
+    ]
+  },
+  "joyagoo-fees-explained": {
+    "summary": "Separate what you have paid from what remains estimated. Keep each charge tied to its buying stage, currency and live source so a product price cannot be mistaken for the whole delivered cost.",
+    "caption": "A cost record without guessed rates",
+    "columns": ["Stage", "Record", "Confirm before proceeding"],
+    "rows": [
+      ["Product order", "Selected option price and domestic delivery", "The exact variation and current payable amount"],
+      ["Warehouse services", "Any optional service selected", "Its current price and what it includes"],
+      ["International parcel", "Route, packaging, billing weight and freight estimate", "Final measurements and any adjustment"],
+      ["Other applicable costs", "Payment conversion or destination charges where relevant", "Current provider or authoritative rules; never assume zero"]
+    ]
+  },
+  "joyagoo-shipping-to-usa-guide": {
+    "title": "Joyagoo Shipping to the USA: Parcel and Route Checklist",
+    "description": "Prepare a Joyagoo parcel for the USA with destination, product eligibility, packed measurements and tracking checks. Compare live options without fixed-price promises.",
+    "summary": "Begin with the exact US destination and the products in your parcel. Availability, restrictions and the final charge come from the current route and account details; another buyer's price or arrival date is not a quote for your shipment.",
+    "caption": "Before submitting a USA parcel",
+    "columns": ["Record", "Check", "Keep with the parcel"],
+    "rows": [
+      ["Destination", "Country, state and ZIP fields match the actual delivery address", "A private address confirmation"],
+      ["Contents", "Every product characteristic is described accurately", "The route's current eligibility notes"],
+      ["Packing", "Protection, outer dimensions and actual weight", "Measured values with units"],
+      ["Service", "Billing basis, tracking and current terms", "The selected route and dated estimate"],
+      ["After dispatch", "Correct parcel and carrier tracking references", "The original latest event and any action request"]
+    ]
+  },
+  "joyagoo-actual-vs-volumetric-weight": {
+    "summary": "Use the outer packed dimensions, keep the units visible and read the selected route's billing rule. The calculation below explains the arithmetic; it is not a freight quote or a claim that all routes use the same divisor.",
+    "caption": "Illustrative calculation with a hypothetical divisor of 6,000",
+    "columns": ["Input or step", "Illustrative value", "Meaning"],
+    "rows": [
+      ["Outer dimensions", "40 × 30 × 20 cm", "The finished parcel, not one product"],
+      ["Volume", "24,000 cm³", "Length multiplied by width and height"],
+      ["Dimensional weight", "24,000 ÷ 6,000 = 4 kg", "Only if the selected rule uses this divisor"],
+      ["Actual scale weight", "3 kg", "A separate measured value"],
+      ["Comparison", "max(3, 4) = 4 kg", "Only for a greater-of-two rule, before its rounding"]
+    ]
+  },
+  "joyagoo-tracking-not-updating": {
+    "summary": "Use the parcel record to identify the right number, preserve the last event exactly, and read the selected route's notice. A silent tracking page and an explicit action request need different responses.",
+    "caption": "Tracking record: what to check next",
+    "columns": ["Observed result", "First check", "Next action"],
+    "rows": [
+      ["No result", "Parcel tracking number and the matching carrier", "Correct the reference or ask which carrier applies"],
+      ["Information received only", "Dispatch record and route-specific notice", "Ask about physical handover if the evidence is insufficient"],
+      ["No later scan", "Original last event, timestamp and route notice", "Keep a dated record and ask one specific question"],
+      ["Address or delivery exception", "Instructions in the authenticated account or carrier service", "Respond through the verified channel promptly"]
+    ]
+  },
+  "joyagoo-shipping-estimate-input-checklist": {
+    "summary": "Record the destination, units, packed measurements and assumptions before comparing results. Update the record whenever the contents or packing change; a provisional estimate cannot establish the final amount.",
+    "caption": "Inputs to keep beside a shipping estimate",
+    "columns": ["Field", "Record", "Common ambiguity"],
+    "rows": [
+      ["Destination", "Exact selected country and any required region", "A similar translated label"],
+      ["Weight", "Value, unit and measurement source", "Grams entered as kilograms"],
+      ["Dimensions", "Outer packed length, width and height with units", "Item dimensions used for the parcel"],
+      ["Product mix", "Accurate contents and relevant characteristics", "Omitting a characteristic to show more routes"],
+      ["Packing", "Protection and box assumptions", "Treating guessed dimensions as measured"],
+      ["Result", "Route, date, currency and included services", "Comparing unlike scenarios"]
+    ]
+  },
+  "joyagoo-links-not-working": {
+    "summary": "Locate the failure before replacing the link: source page, import, selected option or changed product. Preserve the original URL and exact option so a successful page load cannot hide a different item.",
+    "caption": "Product-link troubleshooting decisions",
+    "columns": ["Problem", "Verify", "Next step"],
+    "rows": [
+      ["Seller page will not open", "Complete product URL and the displayed message", "Use normal access or request the current listing"],
+      ["Seller page opens; import fails", "Product URL rather than image, category or account URL", "Save the import error and ask for help"],
+      ["Product loads; option missing", "Colour, size system, version and quantity", "Clarify availability; do not choose a substitute silently"],
+      ["Destination now shows another item", "Identity, images and option structure", "Retire the old route and review the replacement afresh"]
+    ]
+  }
+}

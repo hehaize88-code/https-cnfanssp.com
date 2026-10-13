@@ -286,3 +286,21 @@ footer>div:last-child a[aria-current="true"] { color:#36715a; text-decoration:un
   .article-end { margin:0 16px 60px; padding:40px 20px; }
   .article-end h2 { font-size:40px; }
 }
+
+/* Readable evidence tables with contained scrolling on narrow screens. */
+.article-summary { margin: 24px 0 40px; max-width: 100%; }
+.article-summary > p { font-size: clamp(16px, 1.4vw, 19px); line-height: 1.7; max-width: 78ch; }
+.table-scroll { max-width: 100%; overflow-x: auto; margin-top: 20px; border: 1px solid var(--line); border-radius: 10px; }
+.table-scroll table { width: 100%; border-collapse: collapse; font-size: 14px; line-height: 1.55; text-align: left; }
+.table-scroll caption { text-align: left; padding: 16px; font-weight: 800; background: var(--lime); color: var(--ink); }
+.table-scroll th, .table-scroll td { padding: 14px 16px; border-bottom: 1px solid var(--line); vertical-align: top; overflow-wrap: anywhere; }
+.table-scroll thead { background: #f0f1e9; }
+.table-scroll tbody th { width: 21%; font-weight: 700; }
+.table-scroll tbody tr:last-child > * { border-bottom: 0; }
+.article-body p + p { margin-top: 16px; }
+.article-page, .article-body, .article-body > div { min-width: 0; }
+.article-related a { overflow-wrap: anywhere; }
+@media(max-width: 600px) { .table-scroll th,.table-scroll td {padding: 10px 9px;} .table-scroll table {font-size: 12px;} }
+
+.all-guides-link {display:inline-block;margin-top:20px;font-weight:800;text-decoration:underline;text-underline-offset:4px;}
+.section-guide-links {margin:24px clamp(16px,5vw,76px);}

@@ -1,0 +1,248 @@
+{
+  "joyagoo-qc-photo-checklist": {
+    "title": "Liste QC Joyagoo : taille, défauts et vues manquantes",
+    "description": "Vérifiez vos photos QC Joyagoo dans l’ordre : option exacte, étiquette de taille, mesures, défauts visibles et vues manquantes. Utilisez une liste pratique avant d’approuver l’article.",
+    "summary": "Commencez par la commande exacte, puis examinez l’article reçu. Classez chaque contrôle comme conforme, incertain ou non conforme. Une mesure imprécise ou une vue manquante nécessite des preuves avant la décision suivante.",
+    "caption": "Une fiche de vérification QC rapide",
+    "columns": [
+      "Contrôle",
+      "Éléments à comparer",
+      "En cas d’incertitude"
+    ],
+    "rows": [
+      [
+        "Produit et option",
+        "Commande : modèle, couleur, version et quantité",
+        "Demander l’étiquette pertinente ou une vue de l’article entier"
+      ],
+      [
+        "Taille",
+        "Étiquette de taille et système indiqué par le vendeur",
+        "Garder séparés les libellés EU, UK, US et CN"
+      ],
+      [
+        "Preuves de coupe ou de pointure",
+        "Une mesure identifiée utilisant les mêmes points que votre article de référence",
+        "Demander la mesure et l’unité manquantes"
+      ],
+      [
+        "État visible",
+        "Avant, arrière, côtés, assemblages, fermetures et éléments inclus",
+        "Identifier la photo exacte et le problème"
+      ],
+      [
+        "Prochaine action",
+        "Commandes actuelles du compte, admissibilité et échéance applicable",
+        "Clarifier rapidement avant l’emballage ou le retrait des étiquettes"
+      ]
+    ]
+  },
+  "joyagoo-fees-explained": {
+    "summary": "Séparez ce que vous avez payé de ce qui reste estimé. Reliez chaque coût à son étape d’achat, sa devise et sa source actuelle pour ne pas confondre prix du produit et coût total livré.",
+    "caption": "Un relevé des coûts sans tarifs supposés",
+    "columns": [
+      "Étape",
+      "À noter",
+      "À confirmer avant de poursuivre"
+    ],
+    "rows": [
+      [
+        "Commande du produit",
+        "Prix de l’option sélectionnée et livraison intérieure",
+        "La variante exacte et le montant actuel à payer"
+      ],
+      [
+        "Services en entrepôt",
+        "Tout service facultatif sélectionné",
+        "Son prix actuel et ce qu’il comprend"
+      ],
+      [
+        "Colis international",
+        "Ligne, emballage, poids facturable et estimation du fret",
+        "Les mesures finales et tout ajustement"
+      ],
+      [
+        "Autres frais applicables",
+        "Conversion du paiement ou frais à destination si pertinents",
+        "Les règles actuelles du prestataire ou de l’autorité ; ne jamais supposer zéro"
+      ]
+    ]
+  },
+  "joyagoo-shipping-to-usa-guide": {
+    "title": "Transport Joyagoo vers les États-Unis : vérification du colis et de la ligne",
+    "description": "Préparez un colis Joyagoo vers les États-Unis en vérifiant destination, admissibilité des produits, mesures emballées et suivi. Comparez les options actuelles sans promesse de prix fixe.",
+    "summary": "Commencez par la destination exacte aux États-Unis et les produits de votre colis. La disponibilité, les restrictions et le coût final viennent des détails actuels de la ligne et du compte ; le prix ou la date d’arrivée d’un autre acheteur n’est pas un devis pour votre envoi.",
+    "caption": "Avant de soumettre un colis vers les États-Unis",
+    "columns": [
+      "Élément",
+      "Vérification",
+      "À conserver avec le colis"
+    ],
+    "rows": [
+      [
+        "Destination",
+        "Les champs pays, État et ZIP correspondent à l’adresse réelle de livraison",
+        "Une confirmation privée de l’adresse"
+      ],
+      [
+        "Contenu",
+        "Chaque caractéristique des produits est décrite précisément",
+        "Les notes actuelles d’admissibilité de la ligne"
+      ],
+      [
+        "Emballage",
+        "Protection, dimensions extérieures et poids réel",
+        "Les valeurs mesurées avec leurs unités"
+      ],
+      [
+        "Service",
+        "Base de facturation, suivi et conditions actuelles",
+        "La ligne sélectionnée et l’estimation datée"
+      ],
+      [
+        "Après expédition",
+        "Bonnes références du colis et du suivi transporteur",
+        "Le dernier événement original et toute demande d’action"
+      ]
+    ]
+  },
+  "joyagoo-actual-vs-volumetric-weight": {
+    "summary": "Utilisez les dimensions extérieures du colis emballé, gardez les unités visibles et lisez la règle de facturation de la ligne choisie. Le calcul ci-dessous explique l’arithmétique ; ce n’est ni un devis de fret ni l’affirmation que toutes les lignes utilisent le même diviseur.",
+    "caption": "Calcul illustratif avec un diviseur hypothétique de 6 000",
+    "columns": [
+      "Donnée ou étape",
+      "Valeur illustrative",
+      "Signification"
+    ],
+    "rows": [
+      [
+        "Dimensions extérieures",
+        "40 × 30 × 20 cm",
+        "Le colis terminé, pas un seul produit"
+      ],
+      [
+        "Volume",
+        "24 000 cm³",
+        "Longueur multipliée par largeur et hauteur"
+      ],
+      [
+        "Poids volumétrique",
+        "24 000 ÷ 6 000 = 4 kg",
+        "Uniquement si la règle choisie utilise ce diviseur"
+      ],
+      [
+        "Poids réel sur balance",
+        "3 kg",
+        "Une valeur mesurée séparément"
+      ],
+      [
+        "Comparaison",
+        "max(3, 4) = 4 kg",
+        "Uniquement pour une règle retenant la plus grande valeur, avant son arrondi"
+      ]
+    ]
+  },
+  "joyagoo-tracking-not-updating": {
+    "summary": "Utilisez le dossier du colis pour identifier le bon numéro, conservez exactement le dernier événement et lisez l’avis de la ligne choisie. Une page de suivi silencieuse et une demande d’action explicite appellent des réponses différentes.",
+    "caption": "Relevé du suivi : prochaine vérification",
+    "columns": [
+      "Résultat observé",
+      "Premier contrôle",
+      "Prochaine action"
+    ],
+    "rows": [
+      [
+        "Aucun résultat",
+        "Numéro de suivi du colis et transporteur correspondant",
+        "Corriger la référence ou demander quel transporteur s’applique"
+      ],
+      [
+        "Informations reçues uniquement",
+        "Relevé d’expédition et avis propre à la ligne",
+        "Demander si la remise physique a eu lieu lorsque les éléments sont insuffisants"
+      ],
+      [
+        "Aucun scan ultérieur",
+        "Dernier événement original, horodatage et avis de la ligne",
+        "Garder un relevé daté et poser une question précise"
+      ],
+      [
+        "Anomalie d’adresse ou de livraison",
+        "Instructions du compte authentifié ou du service du transporteur",
+        "Répondre rapidement par le canal vérifié"
+      ]
+    ]
+  },
+  "joyagoo-shipping-estimate-input-checklist": {
+    "summary": "Notez la destination, les unités, les mesures emballées et les hypothèses avant de comparer les résultats. Actualisez le relevé chaque fois que le contenu ou l’emballage change ; une estimation provisoire ne permet pas d’établir le montant final.",
+    "caption": "Données à conserver à côté d’une estimation de transport",
+    "columns": [
+      "Champ",
+      "À noter",
+      "Ambiguïté fréquente"
+    ],
+    "rows": [
+      [
+        "Destination",
+        "Pays exact sélectionné et toute région demandée",
+        "Un libellé traduit similaire"
+      ],
+      [
+        "Poids",
+        "Valeur, unité et source de la mesure",
+        "Des grammes saisis comme des kilogrammes"
+      ],
+      [
+        "Dimensions",
+        "Longueur, largeur et hauteur extérieures emballées avec unités",
+        "Des dimensions d’article utilisées pour le colis"
+      ],
+      [
+        "Produits",
+        "Contenu exact et caractéristiques pertinentes",
+        "Omission d’une caractéristique pour afficher davantage de lignes"
+      ],
+      [
+        "Emballage",
+        "Hypothèses de protection et de boîtes",
+        "Dimensions supposées traitées comme mesurées"
+      ],
+      [
+        "Résultat",
+        "Ligne, date, devise et services inclus",
+        "Comparaison de scénarios non équivalents"
+      ]
+    ]
+  },
+  "joyagoo-links-not-working": {
+    "summary": "Localisez l’échec avant de remplacer le lien : page source, import, option sélectionnée ou produit modifié. Conservez l’URL originale et l’option exacte pour qu’un chargement réussi ne masque pas un article différent.",
+    "caption": "Décisions de dépannage des liens produit",
+    "columns": [
+      "Problème",
+      "À vérifier",
+      "Prochaine étape"
+    ],
+    "rows": [
+      [
+        "La page du vendeur ne s’ouvre pas",
+        "URL produit complète et message affiché",
+        "Utiliser l’accès normal ou demander la fiche actuelle"
+      ],
+      [
+        "La page du vendeur s’ouvre ; l’import échoue",
+        "URL du produit, pas d’une image, d’une catégorie ou d’un compte",
+        "Enregistrer l’erreur d’import et demander de l’aide"
+      ],
+      [
+        "Le produit se charge ; l’option manque",
+        "Couleur, système de tailles, version et quantité",
+        "Clarifier la disponibilité ; ne pas choisir discrètement un substitut"
+      ],
+      [
+        "La destination affiche maintenant un autre article",
+        "Identité, images et structure des options",
+        "Retirer l’ancien lien et examiner le remplacement depuis le début"
+      ]
+    ]
+  }
+}

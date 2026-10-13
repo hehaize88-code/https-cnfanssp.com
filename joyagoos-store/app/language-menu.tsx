@@ -1,16 +1,10 @@
-"use client";
+import { languageChoices, languageLabels, withLanguage, type SiteLanguage } from "./i18n";
 
-import { languageChoices, languageLabels, type SiteLanguage } from "./i18n";
-
-export function LanguageMenu({ language = "en", onChange }: { language?: SiteLanguage; onChange?: (language:SiteLanguage)=>void }) {
+export function LanguageMenu({ language = "en", path = "/" }: { language?: SiteLanguage; path?: string }) {
   const label = language === "en" ? "EN / Language" : languageLabels[language];
-  const choose = (next:SiteLanguage,event:React.MouseEvent<HTMLButtonElement>) => {
-    onChange?.(next);
-    event.currentTarget.closest("details")?.removeAttribute("open");
-  };
-  return <details className="language-menu"><summary>{label}</summary><div>{languageChoices.map((item) => <button type="button" key={item} aria-current={language === item ? "true" : undefined} onClick={(event)=>choose(item,event)}>{languageLabels[item]}</button>)}</div></details>;
+  return <details className="language-menu"><summary>{label}</summary><div>{languageChoices.map(item => <a href={withLanguage(path,item)} hrefLang={item} lang={item} key={item} aria-current={language === item ? "true" : undefined}>{languageLabels[item]}</a>)}</div></details>;
 }
 
-export function FooterLanguages({ language = "en", onChange }: { language?: SiteLanguage; onChange?: (language:SiteLanguage)=>void }) {
-  return <>{languageChoices.map((item) => <button type="button" key={item} aria-current={language === item ? "true" : undefined} onClick={()=>onChange?.(item)}>{item === "zh" ? "中文" : item.toUpperCase()}</button>)}</>;
+export function FooterLanguages({ language = "en", path = "/" }: { language?: SiteLanguage; path?: string }) {
+  return <>{languageChoices.map(item => <a href={withLanguage(path,item)} hrefLang={item} lang={item} key={item} aria-current={language === item ? "true" : undefined}>{item === "zh" ? "中文" : item.toUpperCase()}</a>)}</>;
 }
