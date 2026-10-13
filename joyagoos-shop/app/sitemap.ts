@@ -1,3 +1,4 @@
+import {researchArticleSlugs, revisedArticleSlugs, researchDate} from "./seo-article-opportunities";
 import type { MetadataRoute } from "next";
 import { categoryKeys, languages, pageKeys, type CategoryKey, type PageKey } from "./site-data";
 import { indexableSeoArticleSlugs, seoArticleSlugs } from "./seo-articles";
@@ -25,6 +26,8 @@ const changedOn:Partial<Record<PageKey,string>>={
   about:"2026-08-28","editorial-policy":"2026-08-28","how-we-verify-links":"2026-08-28",
 };
 
+for(const page of [...researchArticleSlugs,...revisedArticleSlugs,"home","articles","guide","shipping","qc","spreadsheet"]) changedOn[page as PageKey]=researchDate;
+
 function route(lang:string,page:PageKey){if(page==="home")return `/${lang}/`;if(seoArticleSlugs.includes(page))return `/${lang}/articles/${page}/`;if(categoryKeys.includes(page as CategoryKey))return `/${lang}/categories/${page}/`;return `/${lang}/${page}/`;}
 
 export default function sitemap():MetadataRoute.Sitemap{
@@ -32,6 +35,7 @@ export default function sitemap():MetadataRoute.Sitemap{
   return languages.flatMap(lang=>indexablePages.map(page=>({
     url:`${base}${route(lang,page)}`,
     lastModified:new Date(changedOn[page]??"2026-08-26"),
+    alternates:{languages:Object.fromEntries([...languages.map(code=>[code,`${base}${route(code,page)}`]),["x-default",`${base}${route("en",page)}`]])},
     changeFrequency:page==="home"||page==="finds"?"weekly":"monthly",
     priority: page === "home" ? 1 : (categoryKeys.includes(page as CategoryKey) ? 0.85 : 0.8),
   })));

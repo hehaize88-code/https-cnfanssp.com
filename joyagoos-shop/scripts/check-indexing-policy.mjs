@@ -52,14 +52,14 @@ for (const file of await collectHtmlFiles(outputDir)) {
   }
 
   if (robots !== "index, follow") failures.push(`${routePath}: unexpected robots value ${robots}`);
-  if (!canonical.startsWith("https://joyagoos.shop/")) failures.push(`${routePath}: indexable canonical must use joyagoos.shop`);
+  if (canonical !== `https://joyagoos.shop/${routePath.replace(/index\.html$/, "")}`) failures.push(`${routePath}: indexable canonical must exactly match its route`);
   if (!sitemapUrls.has(canonical)) failures.push(`${routePath}: indexable canonical missing from sitemap`);
   indexableRoutes.push(routePath);
 }
 
 if (archiveRoutes.length !== 25) failures.push(`expected 25 localized archive routes, found ${archiveRoutes.length}`);
-if (sitemapUrls.size !== 155) failures.push(`expected 155 sitemap URLs, found ${sitemapUrls.size}`);
-if (indexableRoutes.length !== 155) failures.push(`expected 155 indexable localized routes, found ${indexableRoutes.length}`);
+if (sitemapUrls.size !== 175) failures.push(`expected 175 sitemap URLs, found ${sitemapUrls.size}`);
+if (indexableRoutes.length !== 175) failures.push(`expected 175 indexable localized routes, found ${indexableRoutes.length}`);
 
 if (failures.length) {
   console.error(failures.join("\n"));

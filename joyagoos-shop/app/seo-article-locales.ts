@@ -1,3 +1,4 @@
+import {researchArticles, researchArticleSlugs, improveExistingArticle} from "./seo-article-opportunities";
 import type {Lang} from "./site-data";
 import {getSeoArticle,type SeoArticle} from "./seo-articles";
 import {destinationListingArticle,destinationListingTranslations} from "./seo-article-destination";
@@ -435,7 +436,8 @@ it:[
 "Alla fine della fase valuta anche la qualità dei dati raccolti. Quando date, variante salvata, foto QC, misure del pacco e ricevute di pagamento coincidono, la scelta successiva diventa più precisa. Se manca un elemento, indica la conclusione come incerta invece di colmare il vuoto con un’ipotesi. In questo modo la guida non crea una falsa esattezza e ogni successivo cambiamento di prezzo, regola del venditore o rotta di spedizione può essere spiegato con prove verificabili."
 ]};
 
-export function getLocalizedSeoArticle(slug:string,lang:Lang):SeoArticle|undefined{
+function getOriginalLocalizedSeoArticle(slug:string,lang:Lang):SeoArticle|undefined{
+  if(researchArticleSlugs.includes(slug))return researchArticles[lang].find(article=>article.slug===slug);
   const base=getSeoArticle(slug);if(!base||lang==="en")return base;
   if(prioritySeoArticleSlugs.includes(slug))return prioritySeoArticleTranslations[lang]?.[slug]??base;
   if(slug===liveFieldsArticle.slug)return liveFieldsTranslations[lang]??base;
@@ -448,5 +450,9 @@ export function getLocalizedSeoArticle(slug:string,lang:Lang):SeoArticle|undefin
   const bridges=depthBridges[lang];
   return {...base,title:translated.title,description:translated.description,meta:translated.meta,sourceNote:translated.sourceNote,quickFacts:translated.quickFacts,sections:translated.rows.map(([heading,text],index)=>({heading,paragraphs:[...text.split("¶"),notes[index%notes.length].replace("{topic}",heading),...(index<bridges.length?[bridges[index]]:[])]}))};
 }
-const publishingOrder=[...prioritySeoArticleSlugs,"joyagoo-listing-availability-price-domestic-freight-recheck","joyagoo-color-size-quantity-variant-check","joyagoo-title-thumbnail-destination-consistency-check","joyagoo-product-id-source-link-destination-url-guide","joyagoo-destination-listing-verification-guide","joyagoo-spreadsheet-independent-product-index-guide","joyagoo-buying-fees-guide","joyagoo-qc-return-window-guide","volumetric-weight-guide","joyagoo-warehouse-rehearsal-shipping-guide","joyagoo-reviews-buyer-signals"];
+export function getLocalizedSeoArticle(slug:string,lang:Lang):SeoArticle|undefined{
+  const article=getOriginalLocalizedSeoArticle(slug,lang);
+  return article?improveExistingArticle(article,lang):undefined;
+}
+const publishingOrder=[...researchArticleSlugs,...prioritySeoArticleSlugs,"joyagoo-listing-availability-price-domestic-freight-recheck","joyagoo-color-size-quantity-variant-check","joyagoo-title-thumbnail-destination-consistency-check","joyagoo-product-id-source-link-destination-url-guide","joyagoo-destination-listing-verification-guide","joyagoo-spreadsheet-independent-product-index-guide","joyagoo-buying-fees-guide","joyagoo-qc-return-window-guide","volumetric-weight-guide","joyagoo-warehouse-rehearsal-shipping-guide","joyagoo-reviews-buyer-signals"];
 export function getLocalizedSeoArticles(lang:Lang){return publishingOrder.map(slug=>getLocalizedSeoArticle(slug,lang)).filter((article):article is SeoArticle=>Boolean(article));}

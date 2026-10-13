@@ -9,7 +9,7 @@
     "dev": "WRANGLER_LOG_PATH=.wrangler/wrangler.log vite",
     "build": "next build && node scripts/fix-html-lang.mjs",
     "start": "wrangler pages dev out",
-    "test": "npm run build && node scripts/check-indexing-policy.mjs",
+    "test": "npm run build && node scripts/check-indexing-policy.mjs && node scripts/check-research-release.mjs",
     "deploy": "npm run build && wrangler pages deploy out --project-name joyagoos-shop",
     "indexnow": "node scripts/submit-indexnow.mjs"
   },

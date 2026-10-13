@@ -38,6 +38,6 @@ export async function generateMetadata({params}:{params:Promise<{lang:string;slu
   const map=Object.fromEntries(languages.map(code=>[code,`${canonicalBase}${route(code,page)}`]));
   const title=page==="home"||label.includes("Joyagoos")?label:`${label} | Joyagoos`;
   const canonical=`${canonicalBase}${route(lang,page)}`;
-  return{title,description,robots:{index:!archive,follow:true},alternates:{canonical,languages:{...map,"x-default":`${canonicalBase}${route("en",page)}`}},openGraph:{type:archive?"article":"website",title,description,url:canonical,siteName:"Joyagoos",images:[{url:"/joyagoo-logo.png",width:768,height:235,alt:"Joyagoos product research"}],locale:lang},twitter:{card:"summary_large_image",title,description,images:["/joyagoo-logo.png"]}};
+  return{title,description,robots:{index:!archive,follow:true},alternates:{canonical,languages:{...map,"x-default":`${canonicalBase}${route("en",page)}`}},openGraph:{type:article?"article":"website",title,description,url:canonical,siteName:"Joyagoos",images:[{url:"/joyagoo-logo.png",width:768,height:235,alt:"Joyagoos product research"}],locale:lang},twitter:{card:"summary_large_image",title,description,images:["/joyagoo-logo.png"]}};
 }
 export default async function LangPage({params}:{params:Promise<{lang:string;slug?:string[]}>}){const {lang:rawLang,slug}=await params;const lang=rawLang as Lang;const page=parsePage(slug);if(!languages.includes(lang)||!page)notFound();return <SitePage lang={lang} page={page}/>;}

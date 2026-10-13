@@ -1,16 +1,33 @@
 # joyagoos.shop
 
-Independent, multilingual Joyagoo spreadsheet and buyer-guide site for `joyagoos.shop`.
+Independent product-link research and buyer guides for `joyagoos.shop`, with complete English, German, Spanish, French and Italian routes.
 
-## Commands
+## Build and verify
 
 ```bash
-npm install
-npm run dev
-npm run build
-npm run deploy
+npm ci
+npm test
 ```
 
-Production is deployed from the `joyagoos-shop` directory to the Cloudflare Pages project `joyagoos-shop`. The root URL redirects to `/en/`; English, German, Spanish, French and Italian routes each have their own canonical and hreflang metadata.
+`npm test` builds the static export in `out/`, fixes document language attributes, and checks canonical/indexing policy, all new localized article bodies, reciprocal language links, article schema, navigation and local links.
 
-The five legacy policy/QC/shipping articles duplicated on `joyagoos.org` remain `noindex, follow`, canonicalize to their `.org` counterparts, and stay out of this site's sitemap. All `.shop`-owned pages must remain `index, follow`, self-canonical, and present in the sitemap. `npm test` builds the site and enforces this policy across all five languages.
+Production changes are published through `main` in `hehaize88-code/https-cnfanssp.com`, scoped to `joyagoos-shop/`, using the existing connected deployment. Do not change the hosting connection or other sites for this project. Confirm the live domain after a GitHub publication; a successful commit alone is not proof that a deployment is live.
+
+## Editorial and indexing policy
+
+The `.shop` site focuses on product discovery, spreadsheets, source links and variant decisions. Five older policy/QC/shipping articles duplicated on `joyagoos.org` remain available as reference, with `noindex, follow`, canonical URLs pointing to `.org`, and exclusion from this sitemap. All `.shop`-owned pages remain indexable and self-canonical. The production export currently contains 175 indexable localized pages and 25 archive pages.
+
+The October 2026 release adds four distinct product-research guides in all five languages:
+
+- `joyagoo-product-link-not-working`
+- `joyagoo-size-chart-measurements-guide`
+- `joyagoo-qc-photos-listing-comparison-guide`
+- `joyagoo-spreadsheet-shipping-budget-checklist`
+
+Localized bodies live in `app/content/research-{lang}.json`. Maintain section and route parity when editing them. The shipping worksheet compares weights under a supplied divisor; it does not quote shipping rates. Its defaults and article arithmetic are illustrative.
+
+Article discovery now uses topic groups, four homepage article cards, per-article contents and contextual links. The existing live-price and variant guides have additional practical checks in every language. Buying, spreadsheet, QC and shipping hub steps have individual descriptions.
+
+## Analytics
+
+Preserve the existing GA4 measurement ID and `cnfanssp.com` destination links. Article and outbound click events include `page_language`, `source_page` and `placement`; actual article clicks also include `article_slug` and `destination_language`. Article-index navigation has its own `article_index_click` event, and in-page TOC clicks are excluded from article-entry counts. The optional weight tool emits `shipping_weight_calculate` after a valid explicit calculation. Reporting on these parameters may require corresponding custom dimensions in GA4.
