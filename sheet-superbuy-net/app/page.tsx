@@ -12,7 +12,7 @@ const faqs = [
 ];
 
 export const metadata: Metadata = {
-  title: "Superbuy Spreadsheet 2026: Curated Finds, USD Prices & QC Checks",
+  title: "Superbuy Spreadsheet 2026: Shoes, Clothing & QC Guides",
   description: "Browse a curated Superbuy spreadsheet with current product links, USD reference prices, QC checks and practical 2026 guides for smarter warehouse and shipping decisions.",
   alternates: { canonical: "/" },
 };
@@ -28,9 +28,9 @@ export default function Home() {
     <main>
       <section className="hero clean-hero">
         <div className="hero-copy">
-          <p className="eyebrow">Independent product index · Updated 12 Sep 2026</p>
+          <p className="eyebrow">Independent product index · Guides updated 13 October 2026</p>
           <h1>Superbuy<br />Spreadsheet 2026</h1>
-          <p className="hero-lead">A cleaner way to browse product links, compare USD reference prices and keep QC checks attached to the decision.</p>
+          <p className="hero-lead">Browse Superbuy spreadsheet finds for shoes, hoodies, jackets and accessories. Compare USD reference prices, check the current listing and use practical QC, fee and shipping guides before ordering.</p>
           <div className="hero-actions"><a className="button button-primary" href="#finds">Browse the sheet</a><Link className="button button-outline" href="/spreadsheet/">How to use it</Link></div>
         </div>
         <div className="hero-summary" aria-label="Spreadsheet summary">
@@ -54,7 +54,7 @@ export default function Home() {
 
       <section className="articles-section clean-section">
         <div className="clean-section-head"><div><p className="eyebrow">Buying guides</p><h2>Read only what you need next.</h2></div><Link href="/articles/">All articles →</Link></div>
-        <div className="clean-article-list">{articles.slice(0, 6).map((article, index) => <Link href={`/articles/${article.slug}/`} key={article.slug}><span>{String(index + 1).padStart(2, "0")}</span><div><small>{article.eyebrow} · {article.read}</small><h3>{article.title}</h3></div><b>↗</b></Link>)}</div>
+        <div className="clean-article-list">{articles.slice(0, 4).map((article, index) => <Link href={`/articles/${article.slug}/`} key={article.slug}><span>{String(index + 1).padStart(2, "0")}</span><div><small>{article.eyebrow} · {article.read}</small><h3>{article.title}</h3></div><b>↗</b></Link>)}</div>
       </section>
 
       <section className="faq-section clean-section">

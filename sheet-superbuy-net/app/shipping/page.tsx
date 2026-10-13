@@ -1,17 +1,19 @@
 import type { Metadata } from "next";
+import { WeightCalculator } from "../components/WeightCalculator";
 import { ResourceShell } from "../components/ResourceShell";
 
 export const metadata: Metadata = { title: "Superbuy Shipping Cost 2026: Weight, Volume & Consolidation", description: "Estimate Superbuy shipping with actual and volumetric weight, packing scenarios, line restrictions, consolidation and the final carrier adjustment.", alternates: { canonical: "/shipping/" } };
 
 export default function ShippingPage() {
   return <ResourceShell eyebrow="Shipping cost" title="Estimate twice: before buying and after packing." intro="Superbuy’s official process separates the product payment from international delivery. The first estimate screens out impractical items; the second uses the intended parcel, current route eligibility and packaging choices." stats={[{ value: "100+", label: "shipping lines stated on official homepage" }, { value: "90 days", label: "official free storage" }, { value: "÷ 6,000", label: "air-cargo volume-weight example" }]}>
+    <WeightCalculator />
     <div className="content-grid">
       <article className="content-card"><span>Before ordering</span><h2>Use weight as a planning input</h2><p>Record an estimated item weight and consider whether the product is bulky, fragile, liquid, battery-powered or otherwise restricted on some routes.</p></article>
       <article className="content-card"><span>At the warehouse</span><h2>Consolidate with a purpose</h2><p>The official guide says stored items can be combined for overseas delivery and identifies 90 days of free storage. Group compatible items rather than waiting without a parcel plan.</p></article>
       <article className="content-card"><span>Before payment</span><h2>Compare eligible routes</h2><p>Review the estimated charge, delivery expectations, restrictions, insurance availability and packing needs after the intended parcel contents are selected.</p></article>
     </div>
     <div className="content-prose">
-      <h2>Why the first estimate is not the final bill</h2><p>Superbuy’s published guide explains that the international shipping deposit is estimated from product weight, destination and the chosen shipping method. The final shipping fee is calculated using the package size and weight verified by the shipping company. The official guide says a difference between the deposit and final amount is returned to the user’s Superbuy account after shipment.</p>
+      <h2>Why the first estimate is not the final bill</h2><p>Superbuy’s published guide explains that the international shipping deposit is estimated from product weight, destination and the chosen shipping method. The final shipping fee is calculated using the package size and weight verified by the shipping company. The current fee page explains that an excess payment is refunded or an outstanding balance is collected. Reconcile the actual adjustment in your account.</p>
       <p>The calculator also explains volume weight. For most air cargo in its example, volumetric weight in kilograms is length × width × height in centimetres divided by 6,000. A light but large parcel can therefore be charged above its scale weight. Treat that formula as a planning example, because individual routes may use different billing and eligibility rules.</p>
       <h2>Restrictions can remove a cheap route</h2><p>The current calculator separates general goods, textiles and leather, branded goods, liquids and powders, digital or electrical items, food and medicine, and other special categories. Its prohibited-item notice lists examples including perfume, simulation guns, banknotes, antiques, weapons, knives, gunpowder, drugs, lighters and high-risk chemicals. Superbuy’s User Guidance also says the interface recommends eligible routes for items with restrictions.</p>
       <p>That means route comparison should start with eligibility, not the lowest displayed number. A battery, liquid, famous-brand label, fragile form or food ingredient may reduce available choices. Destination rules and current notices can also change after an older guide or social-media screenshot was published.</p>

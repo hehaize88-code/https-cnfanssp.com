@@ -1,6 +1,5 @@
 "use client";
 
-import { useMemo, useState } from "react";
 import { categories, products } from "../data";
 
 const copy: Record<string, Record<string, string>> = {
@@ -17,15 +16,10 @@ const copy: Record<string, Record<string, string>> = {
 
 export function CategoryExplorer({ locale = "en" }: { locale?: string }) {
   const t = copy[locale] || copy.en;
-  const [category, setCategory] = useState("All");
-  const [visible, setVisible] = useState(8);
-  const filtered = useMemo(() => products.filter((product) => {
-    const inCategory = category === "All" || product.category === category;
-    return inCategory;
-  }), [category]);
+  const filtered = products;
 
   return <section className="explorer clean-explorer" id="finds">
-    <div className="clean-section-head"><div><p className="eyebrow">{t.sheet}</p><h2>{t.browse}</h2></div><p>{filtered.length} {t.matching}</p></div>
+    <div className="clean-section-head"><div><p className="eyebrow">{t.sheet}</p><h2>{t.browse}</h2></div><p><span data-product-count>{filtered.length}</span> {t.matching}</p></div>
     <div className="clean-controls">
       <form className="main-site-search" action="https://www.cnfanssp.com/search.html" method="get" target="_blank">
         <input type="hidden" name="channelid" value="2" />
@@ -33,17 +27,17 @@ export function CategoryExplorer({ locale = "en" }: { locale?: string }) {
         <label><span>{t.search}</span><input aria-label={t.placeholder} name="keywords" required placeholder={t.placeholder} /></label>
         <button type="submit">{t.submit}</button>
       </form>
-      <div className="category-tabs" aria-label="Product categories">{categories.map((item) => <button className={category === item ? "active" : ""} key={item} onClick={() => { setCategory(item); setVisible(8); }} type="button">{item}</button>)}</div>
+      <div className="category-tabs" aria-label="Product categories">{categories.map((item) => <button data-category-filter={item} className={item === "All" ? "active" : ""} key={item} type="button">{item}</button>)}</div>
     </div>
     <div className="product-table" id="product-grid">
       <div className="product-table-head"><span>{t.product}</span><span>{t.category}</span><span>{t.status}</span><span>{t.reference}</span><span /></div>
-      {filtered.slice(0, visible).map((product) => <article className="product-row" key={product.code}>
+      {filtered.map((product, index) => <article className="product-row" data-product-row data-category={product.category} hidden={index >= 8} key={product.code}>
         <div className="product-name"><img src={product.image} alt={`${product.name} product photo`} loading="lazy" /><div><h3>{product.name}</h3><p>{product.note}</p></div></div>
         <span className="cell-category">{product.category}</span><span className="cell-status">{product.status}</span><b>{product.price}</b>
         <a href={product.href} target="_blank" rel="nofollow sponsored noopener" aria-label={`Check current listing for ${product.name}`}>{t.view}</a>
       </article>)}
     </div>
     {filtered.length === 0 && <div className="empty-state"><b>No exact match.</b><p>Try a shorter keyword or select All.</p></div>}
-    {visible < filtered.length && <button className="load-more" onClick={() => setVisible(filtered.length)} type="button">{t.show} {filtered.length}</button>}
+    <button className="load-more" data-show-products type="button">{t.show} {filtered.length}</button>
   </section>;
 }

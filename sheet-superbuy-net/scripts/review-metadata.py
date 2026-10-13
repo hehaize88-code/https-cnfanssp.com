@@ -1,0 +1,16 @@
+import json,pathlib
+root=pathlib.Path(__file__).resolve().parents[1]
+pages=json.loads((root/'.sites-runtime/english-pages.json').read_text())[:7]
+titles={
+'zh':['Superbuy Spreadsheet 2026：鞋服精选与 QC 指南','Superbuy Spreadsheet 使用教程：2026 下单流程','Superbuy 商品精选：鞋、卫衣、夹克与配件','Superbuy QC 照片指南：发货前的检查步骤','Superbuy 运费计算：实重、体积重与合箱','Superbuy 2026 实用指南：商品表格、QC 与运输','Superbuy Spreadsheet 常见问题'],
+'de':['Superbuy Spreadsheet 2026: Schuhe, Kleidung und QC','Superbuy-Spreadsheet 2026: Anleitung Schritt für Schritt','Superbuy-Funde 2026: Schuhe, Hoodies und Jacken','Superbuy-QC-Fotos: Checkliste vor dem Versand','Superbuy-Versandkosten: Gewicht, Volumen und Sammelpakete','Superbuy-Ratgeber 2026: Spreadsheet, QC und Versand','Superbuy-Spreadsheet: häufige Fragen'],
+'fr':['Superbuy Spreadsheet 2026 : chaussures, vêtements et QC','Utiliser un tableau Superbuy en 2026 : les étapes','Sélection Superbuy 2026 : chaussures, sweats et vestes','Photos QC Superbuy : contrôles avant expédition','Frais Superbuy : poids réel, volume et regroupement','Guides Superbuy 2026 : tableau, QC et livraison','Questions fréquentes sur Superbuy Spreadsheet'],
+'es':['Superbuy Spreadsheet 2026: calzado, ropa y guías QC','Cómo usar Superbuy Spreadsheet en 2026: paso a paso','Productos Superbuy 2026: calzado, sudaderas y chaquetas','Fotos QC de Superbuy: comprobaciones antes del envío','Envíos Superbuy: peso real, volumen y consolidación','Guías Superbuy 2026: productos, QC y envíos','Preguntas frecuentes sobre Superbuy Spreadsheet'],
+'it':['Superbuy Spreadsheet 2026: scarpe, abbigliamento e QC','Come usare Superbuy Spreadsheet nel 2026: guida pratica','Prodotti Superbuy 2026: scarpe, felpe e giacche','Foto QC Superbuy: controlli prima della spedizione','Spedizioni Superbuy: peso, volume e consolidamento','Guide Superbuy 2026: prodotti, QC e spedizione','Domande frequenti su Superbuy Spreadsheet'],
+'pt':['Superbuy Spreadsheet 2026: calçado, roupa e QC','Como usar Superbuy Spreadsheet em 2026: passo a passo','Produtos Superbuy 2026: calçado, camisolas e casacos','Fotografias QC Superbuy: verificar antes do envio','Envios Superbuy: peso real, volume e consolidação','Guias Superbuy 2026: produtos, QC e envio','Perguntas frequentes sobre Superbuy Spreadsheet'],
+'pl':['Superbuy Spreadsheet 2026: buty, odzież i poradniki QC','Jak używać Superbuy Spreadsheet w 2026: krok po kroku','Produkty Superbuy 2026: buty, bluzy i kurtki','Zdjęcia QC Superbuy: kontrola przed wysyłką','Wysyłka Superbuy: waga, objętość i łączenie paczek','Poradniki Superbuy 2026: arkusz, QC i wysyłka','Superbuy Spreadsheet: najczęstsze pytania'],
+'nl':['Superbuy Spreadsheet 2026: schoenen, kleding en QC','Superbuy-Spreadsheet gebruiken in 2026: stap voor stap','Superbuy-producten 2026: schoenen, hoodies en jassen','Superbuy-QC-foto’s: controles vóór verzending','Superbuy-verzendkosten: gewicht, volume en samenvoegen','Superbuy-gidsen 2026: producten, QC en verzending','Veelgestelde vragen over Superbuy Spreadsheet']}
+for lang,values in titles.items():
+ p=root/'content/locales'/f'{lang}.json';a=json.loads(p.read_text())
+ for page,value in zip(pages,values):a[page['meta']['title']]=value
+ p.write_text(json.dumps(a,ensure_ascii=False,indent=2)+'\n')

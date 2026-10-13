@@ -213,3 +213,98 @@ html, body { top:0 !important; margin-top:0 !important; }
   .product-table { grid-template-columns:1fr; }
   .faq-section { grid-template-columns:1fr; }
 }
+
+/* Complete language editions and compact reading tools, October 2026. */
+[hidden] { display:none !important; }
+img { max-width:100%; }
+button, input { color:inherit; }
+a, button, input, summary { -webkit-tap-highlight-color:transparent; }
+a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible { outline:3px solid #245fd5; outline-offset:3px; }
+.language-panel a { display:flex; justify-content:space-between; gap:12px; padding:12px 10px; border-bottom:1px solid var(--line); font-size:13px; }
+.language-panel a small { max-width:180px; font-size:10px; color:#555d61; text-align:right; }
+.language-panel a:hover,.language-panel a.active { background:#eaf0fc; color:#164ba9; }
+.article-page h1 { font-size:clamp(30px,5vw,56px); line-height:1.08; }
+.article-page { padding-top:30px; }
+.article-page .breadcrumbs { margin-bottom:20px; flex-wrap:wrap; }
+.article-summary { margin:20px 0 12px; padding:16px 20px; background:#eef3fc; border-left:3px solid var(--blue); }
+.article-body .article-summary h2 { font-size:18px; margin:0 0 8px; }
+.article-summary ul { margin:0; padding-left:20px; }
+.article-summary li { margin:5px 0; }
+.article-toc { margin:12px 0 20px; padding:12px 16px; border:1px solid var(--line); }
+.article-toc summary { cursor:pointer; font-size:14px; font-weight:600; }
+.article-toc ol { margin:12px 0 0; padding-left:20px; display:grid; grid-template-columns:1fr 1fr; gap:8px 22px; }
+.article-toc a,.topic-guides a,.article-next a { color:#174fba; text-decoration:underline; text-underline-offset:3px; }
+.article-body section { scroll-margin-top:90px; }
+.article-body section h2 { margin:30px 0 12px; font-size:25px; line-height:1.2; }
+.article-body p,.article-body li { font-size:16px; line-height:1.7; }
+.article-figure { max-width:300px; margin:18px auto; }
+.article-figure img { width:100%; aspect-ratio:1; object-fit:contain; }
+.article-next { display:flex; gap:16px; flex-wrap:wrap; padding:20px 0; }
+.topic-guides { margin-top:24px; padding:20px; background:var(--soft); }
+.topic-guides h2 { font-size:21px; margin:0 0 12px; }
+.topic-guides a { display:block; font-size:14px; line-height:1.5; margin:9px 0; }
+.weight-calculator { margin:0 0 25px; padding:22px; border:1px solid #bfcee8; background:#f1f5fc; }
+.weight-calculator h2 { margin:0 0 10px; font-size:25px; }
+.weight-calculator p { font-size:14px; line-height:1.6; }
+.calculator-fields { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px; align-items:end; }
+.calculator-fields label { display:grid; gap:6px; font-size:13px; }
+.calculator-fields input { width:100%; min-width:0; min-height:42px; padding:8px; border:1px solid #aab4c5; background:white; border-radius:3px; }
+.calculator-results { display:flex; flex-wrap:wrap; gap:8px 24px; padding-top:12px; }
+.calculator-results p { margin:0; }
+.calculator-note { color:#4a5565; }
+@media(max-width:700px){
+ .resource-hero { padding:22px 14px; }
+ .resource-hero h1 { font-size:30px; line-height:1.08; letter-spacing:-.025em; }
+ .resource-hero .breadcrumbs { margin-bottom:12px; }
+ .resource-intro { margin-top:12px; font-size:14px; line-height:1.5; }
+ .resource-actions { flex-direction:row; flex-wrap:wrap; gap:6px; margin-top:14px; }
+ .resource-actions .button { min-height:38px; padding:8px 10px; font-size:12px; }
+ .mini-stats { margin-top:16px; }
+ .mini-stats span { font-size:10px; line-height:1.35; }
+ .resource-content { padding:22px 0 32px; }
+ .content-grid { grid-template-columns:1fr; gap:8px; }
+ .content-card { padding:14px; }
+ .content-card h2 { margin:9px 0; font-size:21px; }
+ .content-card p,.content-prose p,.content-prose li { font-size:14px; line-height:1.6; }
+ .content-prose h2 { margin:24px 0 12px; font-size:25px; }
+ .checklist { margin-top:18px; }
+ .checklist div { padding:8px 0; min-height:40px; }
+ .checklist span { font-size:13px; }
+ .article-page { padding:22px 0 35px; }
+ .article-page h1 { font-size:31px; line-height:1.12; }
+ .article-deck { font-size:14px; line-height:1.6; }
+ .article-byline { gap:8px; font-size:11px; margin:14px 0; }
+ .article-summary { padding:12px 14px; }
+ .article-toc ol { grid-template-columns:1fr; }
+ .article-body p,.article-body li { font-size:15px; line-height:1.65; }
+ .article-body section h2 { font-size:23px; margin-top:25px; }
+ .article-figure { width:170px; }
+ .article-index-card { gap:8px; padding:14px 0; }
+ .article-index-card h2 { font-size:19px; line-height:1.3; }
+ .article-index-card p { font-size:12px; }
+ .article-index-card > a { font-size:13px; padding:7px 0; }
+ .article-index-card .eyebrow { margin-bottom:5px; }
+ .weight-calculator { padding:14px; }
+ .calculator-fields { grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; }
+ .calculator-results { display:grid; gap:6px; }
+ .header-actions .button { width:auto; max-width:115px; min-height:34px; font-size:10px; }
+ .mobile-nav a { font-size:12px; min-height:32px; display:grid; align-items:center; }
+ .brand small { font-size:7px; }
+ .language-panel a { padding:13px 8px; }
+ .clean-controls input { font-size:13px; }
+ .clean-controls label { grid-template-columns:45px minmax(0,1fr); }
+ .main-site-search > button { font-size:11px; }
+ .category-tabs button { font-size:10px; min-height:30px; overflow-wrap:anywhere; }
+ .product-name h3 { font-size:12px; line-height:1.25; }
+ .product-name p { font-size:10px; line-height:1.4; }
+ .product-row > span { font-size:9px; }
+ .product-row > b { font-size:12px; }
+ .product-row > a { font-size:12px; min-height:28px; }
+ .clean-article-list h3 { font-size:14px; line-height:1.3; }
+ .clean-article-list small { font-size:9px; }
+ .footer-main { gap:20px; }
+ .site-footer { padding:25px 14px; }
+ .footer-main > div:first-child > p,.footer-links { font-size:12px; }
+ .footer-bottom { margin-top:22px; font-size:10px; line-height:1.4; }
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto;}}

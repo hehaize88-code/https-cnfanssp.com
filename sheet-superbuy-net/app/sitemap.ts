@@ -1,11 +1,9 @@
 import type { MetadataRoute } from "next";
 import { articles } from "./data";
-
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = "https://sheet-superbuy.net";
-  const staticPages = ["", "/spreadsheet/", "/finds/", "/qc/", "/shipping/", "/articles/", "/faq/"];
-  return [
-    ...staticPages.map((path) => ({ url: `${base}${path}`, lastModified: new Date("2026-09-12"), changeFrequency: path === "" || path === "/finds/" || path === "/articles/" ? "weekly" as const : "monthly" as const, priority: path === "" ? 1 : .8 })),
-    ...articles.map((article) => ({ url: `${base}/articles/${article.slug}/`, lastModified: new Date("published" in article ? article.published : article.slug === "superbuy-personal-order-tracker-setup" ? "2026-08-28" : "2026-08-24"), changeFrequency: "monthly" as const, priority: .75 })),
-  ];
+  const base="https://sheet-superbuy.net";
+  const languages=["en","zh","de","fr","es","it","pt","pl","nl"];
+  const paths=["/","/spreadsheet/","/finds/","/qc/","/shipping/","/articles/","/faq/",...articles.map(a=>`/articles/${a.slug}/`)];
+  const url=(p:string,l:string)=>base+(l==="en"?p:`/${l}${p}`);
+  return languages.flatMap(locale=>paths.map(p=>({url:url(p,locale),lastModified:new Date("2026-10-13"),alternates:{languages:Object.fromEntries([...languages.map(l=>[l==="zh"?"zh-CN":l,url(p,l)]),["x-default",url(p,"en")]])}})));
 }
