@@ -1,7 +1,15 @@
 import type { MetadataRoute } from "next";
 import { languages, pageKeys } from "./site-data";
 import { seoArticleSlugs } from "./seo-articles";
-import { spreadsheetArticleSlugs } from "./seo-articles-spreadsheet";
+import { articleDates } from "./article-dates";
+import { revisionDate } from "./seo-refresh";
 const base="https://joyagoos.org";
 export const dynamic = "force-static";
-export default function sitemap():MetadataRoute.Sitemap{return languages.flatMap(lang=>pageKeys.filter(page=>lang==="en"||!spreadsheetArticleSlugs.includes(page)).map(page=>({url:`${base}/${lang}/${page==="home"?"":seoArticleSlugs.includes(page)?`articles/${page}/`:`${page}/`}`,lastModified:new Date(spreadsheetArticleSlugs.includes(page)||page==="home"||page==="spreadsheet"||page==="articles"?"2026-09-21":page==="joyagoo-estimated-final-freight-adjustment-rules"?"2026-09-10":page==="joyagoo-rehearsal-packing-policy-confirmations-limits"?"2026-09-06":page==="joyagoo-warehouse-storage-policy-item-clocks-expiry-evidence"?"2026-09-04":page==="joyagoo-five-day-return-clock-qc-timestamp-deadline"?"2026-09-02":page==="joyagoo-return-eligibility-matrix-seller-condition-packaging"?"2026-08-31":page==="joyagoo-fee-policy-free-agent-service-transaction-costs"?"2026-08-29":"2026-08-28"),changeFrequency:page==="home"?"weekly":"monthly",priority:page==="home"?1:.8})));}
+export default function sitemap():MetadataRoute.Sitemap {
+  return languages.flatMap(lang => pageKeys.map(page => {
+    const isArticle=seoArticleSlugs.includes(page);
+    const suffix=page==="home"?"":isArticle?`articles/${page}/`:`${page}/`;
+    const updated=isArticle?articleDates(page,lang).modified:["home","spreadsheet","finds","guide","qc","shipping","articles"].includes(page)?revisionDate:"2026-08-28";
+    return {url:`${base}/${lang}/${suffix}`,lastModified:new Date(updated),changeFrequency:page==="home"?"weekly" as const:"monthly" as const,priority:page==="home"?1:.8};
+  }));
+}

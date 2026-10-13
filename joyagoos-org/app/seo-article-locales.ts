@@ -1,3 +1,5 @@
+import { getAddedTranslation } from "./content/localized-additions";
+import { newArticleSlugs, practicalSection } from "./seo-refresh";
 import type {Lang} from "./site-data";
 import {getSeoArticle,seoArticles,type SeoArticle} from "./seo-articles";
 import {returnMatrixArticle,returnMatrixTranslations} from "./seo-article-return-matrix";
@@ -431,7 +433,7 @@ it:[
 "Trasforma infine questa sezione in un’azione: definisci il passo successivo, la prova necessaria e una condizione chiara per fermarsi. Se la variante non è confermata, la scadenza è passata o la rotta non appare per quel prodotto, il compratore deve sospendere. Questo criterio protegge più di un consiglio generico a fare attenzione."
 ]};
 
-export function getLocalizedSeoArticle(slug:string,lang:Lang):SeoArticle|undefined{
+function getBaseLocalizedSeoArticle(slug:string,lang:Lang):SeoArticle|undefined{
   const base=getSeoArticle(slug);if(!base||lang==="en")return base;
   if(spreadsheetArticleSlugs.includes(slug))return undefined;
   if(slug===freightAdjustmentArticle.slug)return freightAdjustmentTranslations[lang]??base;
@@ -444,5 +446,11 @@ export function getLocalizedSeoArticle(slug:string,lang:Lang):SeoArticle|undefin
   const bridges=depthBridges[lang];
   return {...base,title:translated.title,description:translated.description,meta:translated.meta,sourceNote:translated.sourceNote,quickFacts:translated.quickFacts,sections:translated.rows.map(([heading,text],index)=>({heading,paragraphs:[...text.split("¶"),notes[index%notes.length].replace("{topic}",heading),...(index<bridges.length?[bridges[index]]:[])]}))};
 }
-const publishingOrder=[...spreadsheetArticleSlugs,"joyagoo-estimated-final-freight-adjustment-rules","joyagoo-rehearsal-packing-policy-confirmations-limits","joyagoo-warehouse-storage-policy-item-clocks-expiry-evidence","joyagoo-five-day-return-clock-qc-timestamp-deadline","joyagoo-return-eligibility-matrix-seller-condition-packaging","joyagoo-fee-policy-free-agent-service-transaction-costs","joyagoo-buying-fees-guide","joyagoo-qc-return-window-guide","volumetric-weight-guide","joyagoo-warehouse-rehearsal-shipping-guide","joyagoo-reviews-buyer-signals"];
+export function getLocalizedSeoArticle(slug:string,lang:Lang):SeoArticle|undefined {
+  const item=getAddedTranslation(slug,lang) ?? getBaseLocalizedSeoArticle(slug,lang);
+  if(!item)return undefined;
+  const extra=practicalSection(slug,lang);
+  return extra ? {...item,sections:[extra,...item.sections]} : item;
+}
+const publishingOrder=[...newArticleSlugs,...spreadsheetArticleSlugs,"joyagoo-estimated-final-freight-adjustment-rules","joyagoo-rehearsal-packing-policy-confirmations-limits","joyagoo-warehouse-storage-policy-item-clocks-expiry-evidence","joyagoo-five-day-return-clock-qc-timestamp-deadline","joyagoo-return-eligibility-matrix-seller-condition-packaging","joyagoo-fee-policy-free-agent-service-transaction-costs","joyagoo-buying-fees-guide","joyagoo-qc-return-window-guide","volumetric-weight-guide","joyagoo-warehouse-rehearsal-shipping-guide","joyagoo-reviews-buyer-signals"];
 export function getLocalizedSeoArticles(lang:Lang){return publishingOrder.map(slug=>getLocalizedSeoArticle(slug,lang)).filter((article):article is SeoArticle=>Boolean(article));}

@@ -26,16 +26,16 @@ document.addEventListener("click", function(event) {
   if (!link) return;
   var name = null;
   if (link.closest(".language-menu")) name = "language_change";
-  else if (link.closest(".article-grid, .publishing-order, .update-strip")) name = "article_cta_click";
+  else if (link.closest(".article-grid, .publishing-order, .update-strip, .guide-cards, .article-related")) name = "article_cta_click";
   else if (link.closest(".category-grid")) name = "category_click";
   else if (link.hostname === "cnfanssp.com") name = "outbound_product_click";
-  if (name) gtag("event", name, {link_url: link.href, link_text: (link.textContent || "").trim().slice(0, 100)});
+  if (name) gtag("event", name, {page_language: document.documentElement.lang, page_path: location.pathname, link_url: link.href, link_text: (link.textContent || "").trim().slice(0, 100)});
 });
 document.addEventListener("submit", function(event) {
   var form = event.target;
   if (form && form.matches && form.matches(".search-panel")) {
     var input = form.querySelector("input[name=keywords]");
-    gtag("event", "search_submit", {search_term: input ? input.value : ""});
+    gtag("event", "search_submit", {page_language: document.documentElement.lang, page_path: location.pathname, search_term: input ? input.value : ""});
   }
 });`}</Script>
         {children}
