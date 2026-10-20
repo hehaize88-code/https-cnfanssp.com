@@ -1,7 +1,7 @@
 # lolobuysheet.nl — Project Memory
 
 Updated: 2026-10-20
-Stage: public visual preview v1 published successfully; production domain binding awaits owner review.
+Stage: replacement Cloudflare Pages preview published and verified in the owner's Chrome; production domain binding awaits owner review.
 
 ## Identity and fixed boundaries
 
@@ -38,7 +38,8 @@ This preview fetches a dated selection of **48 real records from six cnfanssp.co
 - Buying CTAs open the exact original Weidian product in LoloBuy; no purchase/payment was made.
 - Noindex/nofollow and robots disallow on the temporary preview. Preview is not an SEO launch.
 - Preview project: `appgprj_6ad708d85ff08191b10a1d2c8a9d3cf1`.
-- Preview URL: https://lolobuy-nl-preview.hehaize88.chatgpt.site
+- Original preview URL (user browser blocked): https://lolobuy-nl-preview.hehaize88.chatgpt.site
+- Current verified public preview URL: https://lolobuy-nl-preview.pages.dev/
 - Public access verified by the hosting access result; deployment succeeded on 2026-10-20.
 - Preview version: 1. Deployment ID: `appgdep_6ad70cbea9ec819184b0921c799bde82`.
 - Preview source commit: `9bab6a5b9e9b62bb1b67072fd497075c155d0100`.
@@ -72,3 +73,9 @@ Full proposed language plan remains: en, de, es, fr, it, pl, pt, ro, sv, nl, da,
 The owner received a Cloudflare-branded `Sorry, you have been blocked` page on the chatgpt.site preview. Native hosting remains active/public and server HTTP checks return 200, but user-browser reachability is not established. Do not treat hosting success as proof of user access.
 
 A replacement public preview is being configured in the owner's Cloudflare account through the connected Chrome session because the Cloudflare API connector requires reauthentication. Selected Pages project name: `lolobuy-nl-preview`; source: this repository, branch main, root `lolobuysheet-nl`, build `npm run build`, output `dist`. This is a temporary preview only; no domain/DNS binding is authorized at this stage. `PUBLIC_SITE_URL` sets the preview canonical/hreflang origin. Publication and browser verification remain pending until explicitly recorded below.
+
+### Replacement preview verified
+
+Cloudflare Pages reported a successful deployment of commit `7fe031c76f21c12d05e4b72b97c58673ef7e0d6b`. Public URL https://lolobuy-nl-preview.pages.dev/ was opened successfully in the owner's connected Chrome. Main source images loaded, hoodie filtering returned 8 records, English/Dutch switching worked, and canonical correctly points to the new Pages origin. A homepage screenshot was captured as proof. Custom domain and DNS were not changed. Build environment: NODE_VERSION=24.19.0; PUBLIC_SITE_URL=https://lolobuy-nl-preview.pages.dev.
+
+Future preview updates should use the GitHub directory and this Pages project. The original Sites-hosted preview is not the user's working review link. Do not overwrite or recreate the existing Pages project on subsequent turns.
