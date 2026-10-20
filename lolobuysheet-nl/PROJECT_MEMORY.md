@@ -96,3 +96,8 @@ Owner: “帮我部署并连接到cf”. Reuse existing Pages project lolobuy-nl
 - /sitemap.xml HTTP 200 application/xml includes 384 unique canonical URLs; each has 24 language alternates plus x-default. Local build verified every sitemap URL has a matching output and canonical. No speculative lastmod. /robots.txt HTTP 200 allows crawling, excludes /api/ and /data/, and advertises production sitemap.
 - Product API record 6667 HTTP 200 still maps to seller 7632511460 with the exact official LoloBuy buy URL and cnfanssp.com source photo. Browser-rendered production home displays 6,572 items and live source catalogue status. Existing mobile/content validation remains unchanged by this launch.
 - No new database, account sign-in, paid purchase, analytics tracker or Search Console submission was introduced.
+
+## Connectivity report reopened — 2026-10-20 16:23 Asia/Shanghai
+
+Owner reports “连不了” after production launch. Do not treat prior successful tests as proof the owner's failing device/network is working. Fresh checks: root and release.json HTTP 200; www HTTP 301 to root; historical pages.dev HTTP 200. Connected Chrome tab 1681149097 reloaded https://lolobuysheet.nl/ successfully and rendered catalogue/navigation. Google Public DNS returned NOERROR for A/AAAA/NS; nameservers gordon.ns.cloudflare.com and serenity.ns.cloudflare.com. No observed DNS or deployment misconfiguration; do not blindly change DNS, SSL or protection settings. Need owner's failing URL and screenshot with address bar/error code to distinguish page connection failure from image/API loading. Issue remains open pending that evidence.
+
