@@ -66,3 +66,9 @@ Full proposed language plan remains: en, de, es, fr, it, pl, pt, ro, sv, nl, da,
 5. When owner approves, deploy the selected runtime and bind lolobuysheet.nl through Cloudflare. Domain/DNS were not changed during preview work.
 6. Change site canonical origin, publish sitemap/robots, finish agreed localization and verify production links before allowing indexing.
 7. Update this memory at each material decision; preserve real status and limitations.
+
+## Preview access incident — 2026-10-20
+
+The owner received a Cloudflare-branded `Sorry, you have been blocked` page on the chatgpt.site preview. Native hosting remains active/public and server HTTP checks return 200, but user-browser reachability is not established. Do not treat hosting success as proof of user access.
+
+A replacement public preview is being configured in the owner's Cloudflare account through the connected Chrome session because the Cloudflare API connector requires reauthentication. Selected Pages project name: `lolobuy-nl-preview`; source: this repository, branch main, root `lolobuysheet-nl`, build `npm run build`, output `dist`. This is a temporary preview only; no domain/DNS binding is authorized at this stage. `PUBLIC_SITE_URL` sets the preview canonical/hreflang origin. Publication and browser verification remain pending until explicitly recorded below.

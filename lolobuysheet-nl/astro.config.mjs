@@ -1,6 +1,6 @@
 import { defineConfig } from 'astro/config';
 export default defineConfig({
-  site: 'https://lolobuy-nl-preview.hehaize88.chatgpt.site',
+  site: process.env.PUBLIC_SITE_URL || 'https://lolobuy-nl-preview.hehaize88.chatgpt.site',
   output: 'static',
   server: { host: true, port: 4173 },
   trailingSlash: 'always',
