@@ -1,0 +1,18 @@
+<!-- One GA4 tag shared by every language and page. Preview hosts are excluded. -->
+<script is:inline>
+  (() => {
+    if (location.hostname !== 'lolobuysheet.nl' || window.__loloAnalyticsLoaded) return;
+    window.__loloAnalyticsLoaded = true;
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function () { window.dataLayer.push(arguments); };
+    window.gtag('js', new Date());
+    window.gtag('config', 'G-0QCNL16SSV', {
+      allow_google_signals: false,
+      allow_ad_personalization_signals: false
+    });
+    const tag = document.createElement('script');
+    tag.async = true;
+    tag.src = 'https://www.googletagmanager.com/gtag/js?id=G-0QCNL16SSV';
+    document.head.appendChild(tag);
+  })();
+</script>
