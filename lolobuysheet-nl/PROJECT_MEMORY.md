@@ -1,7 +1,7 @@
 # lolobuysheet.nl — Project Memory
 
 Updated: 2026-10-20
-Stage: expanded preview implementation complete; all24locale content validated. GitHub/Cloudflare publication verification in progress. Continue using the existing Cloudflare Pages project. Production domain binding awaits owner approval.
+Stage: expanded public preview published and verified. All24locale content validated. Continue using the existing Cloudflare Pages project. Production domain binding awaits owner approval.
 
 ## Identity and fixed boundaries
 
@@ -71,3 +71,13 @@ Owner originally received a Cloudflare block page on the chatgpt.site URL. Repla
 ## Expansion validation completed — 2026-10-20
 
 All24locale files are complete:576FAQ answers and240full localized articles, each matched to the same20official sources. Translation structure, source IDs, all sections/paragraphs/checklists and no-English-body-fallback checks passed. Catalogue has6,572unique genuine source records. Native source names are preserved. Source-data sorting offers newest, most-viewed and numerical price ordering; no invented featured ranking. Temporary mobile QA file removed before publication.
+
+Publication submitted: GitHub source commit08a94e5d85ea31bbc1b45109400a9a1ac3c9afae; Pages deployment f0218921-07dd-4100-9014-47802b902e50. Build generated625HTMLpages;27,661internal links checked against generated files, all valid; every page has24language alternates plusx-default. Public deployment verification completed below.
+
+## Public preview verified — 2026-10-20
+
+Cloudflare reported successful deployment of source commit08a94e5d85ea31bbc1b45109400a9a1ac3c9afae (deploymentf0218921-07dd-4100-9014-47802b902e50). Public /release.json returns the expected catalogue-content-v2 version,24languages/10articles/24FAQs/6,572items.
+
+Deployed API checks: product6667 HTTP200 maps to seller7632511460 with exact official LoloBuy URL; electronics complete181records HTTP200; shoes complete1,570records HTTP200. Connected Chrome confirmed /spreadsheet/?page=329 has12cards,6,572total and Next disabled. Mobile375px content has no horizontal overflow on product, FAQ, article list and full article; source image loaded, official buy link correct,24FAQ and10article cards visible,24language menu complete. Maltese switch and full article body verified with6chapters/12paragraphs and one expanded mobile chapter. Viewport override reset.
+
+Original connectivity incident cause remains unknown, but this deployed version loaded successfully in connected Chrome. Do not infer all user devices/networks are proven. Source data remains a dated full cache with verified live-category refresh and on-demand details; no separate database. Domain/DNS unchanged.
