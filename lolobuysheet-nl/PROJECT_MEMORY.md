@@ -1,7 +1,7 @@
 # lolobuysheet.nl — Project Memory
 
 Updated: 2026-10-20
-Stage: expanded public preview published and verified. All24locale content validated. Continue using the existing Cloudflare Pages project. Owner authorized production deployment and Cloudflare binding on2026-10-20; launch in progress.
+Stage: PRODUCTION LIVE at https://lolobuysheet.nl/. Owner authorized launch on 2026-10-20. GitHub deployment succeeded; root and www are Active with SSL enabled. All 24 locale content validated.
 
 ## Identity and fixed boundaries
 
@@ -16,11 +16,11 @@ Stage: expanded public preview published and verified. All24locale content valid
 
 ## Existing deployment — preserve
 
-- Public review URL: https://lolobuy-nl-preview.pages.dev/
+- Production URL: https://lolobuysheet.nl/; historical review URL: https://lolobuy-nl-preview.pages.dev/ (noindex HTTP header).
 - Cloudflare Pages project `lolobuy-nl-preview`, GitHub main branch, root `lolobuysheet-nl`, build `npm run build`, output `dist`.
-- Environment NODE_VERSION=24.19.0; PUBLIC_SITE_URL=https://lolobuy-nl-preview.pages.dev.
+- Environment NODE_VERSION=24.19.0; PUBLIC_SITE_URL=https://lolobuysheet.nl.
 - Owner account selected in connected Chrome: 9010cea800ac2a140509889d88fe612e. Native CF connector was unauthenticated and referenced a different account; do not use that account.
-- Do not recreate the project, change DNS or bind lolobuysheet.nl before approval. Preview keeps noindex/nofollow and robots disallow.
+- Preserve this existing project. Owner approved production; root and www now bind to it. Canonical production pages allow indexing; historical Pages host is noindex/nofollow by HTTP header.
 - Original Sites URL https://lolobuy-nl-preview.hehaize88.chatgpt.site was blocked in owner browser. Do not use it for future review updates.
 
 ## Full source catalogue
@@ -46,7 +46,7 @@ The earlier 48-record sample caused the three-page limitation. Replaced with a c
 - Preserve source contradictions:90 vs180day storage guidance; different standard QC photo counts; inconsistent claim windows. Do not turn these into blanket guarantees. Return120-hour eligibility remains conditional. Do not claim guaranteed authenticity, delivery dates, universal free returns, or current payment-method availability.
 - Each locale has105UI fields,24FAQs and10full translated articles with matching sections/paragraphs/checklists/source IDs. Native product names remain the source's text. Validation prevents English-body fallback and missing translations.
 - Top nav: Spreadsheet / How it works / Guides / Articles / FAQ. `/articles/` contains10independent full articles; old guide URLs remain.
--24language native-name menu, query/hash preservation, canonical/hreflang/x-default. Preview is intentionally not an SEO launch; production indexing and sitemap follow approval.
+-24language native-name menu, query/hash preservation, canonical/hreflang/x-default. Production canonical routes allow indexing; sitemap includes 384 URLs across 24 locales. Historical preview host remains noindex by HTTP header.
 
 ## Mobile behavior and verification
 
@@ -61,11 +61,11 @@ The earlier 48-record sample caused the three-page limitation. Replaced with a c
 
 Owner originally received a Cloudflare block page on the chatgpt.site URL. Replacement Pages project was deployed successfully (commit7fe031c76f21c12d05e4b72b97c58673ef7e0d6b) and rendered in connected Chrome. Owner later said “连不了”; a fresh HTTP200 and connected-Chrome reload still worked. That separate device/network failure was not diagnosed. Latest feedback concerns content/layout in the preview; do not claim the earlier connectivity cause is known.
 
-## Next after preview review
+## Future work
 
 1. Apply owner's next content/design feedback within this domain folder.
 2. Obtain upstream image-search/QC contracts if those features become available; no new DB/admin.
-3. When owner approves production, bind lolobuysheet.nl in the correct CF account, change canonical origin, publish sitemap/robots and verify localized URLs before indexing.
+3. Production binding and SEO launch are complete. Search Console submission and indexing monitoring are separate future work; do not claim Google has indexed the site.
 4. Update this memory with verified implementation/deployment status on every material change.
 
 ## Expansion validation completed — 2026-10-20
@@ -84,4 +84,15 @@ Original connectivity incident cause remains unknown, but this deployed version 
 
 ## Production launch authorized — 2026-10-20
 
-Owner: “帮我部署并连接到cf”. Reuse existing Pages project lolobuy-nl-preview and GitHub folder lolobuysheet-nl/. Root lolobuysheet.nl and www authorized for launch. Native CF connector still requires reauthentication; using the already connected Chrome account9010cea800ac2a140509889d88fe612e. Production canonical origin is https://lolobuysheet.nl; remove preview banner, open canonical editorial routes to indexing, publish sitemap.xml/robots.txt. Keep query-based product shells and unavailable image search noindex; do not add them to sitemap. Legacy guide aliases canonicalize to equivalent full articles. Historical Pages host stays noindex by HTTP header. Verification pending.
+Owner: “帮我部署并连接到cf”. Reuse existing Pages project lolobuy-nl-preview and GitHub folder lolobuysheet-nl/. Root lolobuysheet.nl and www authorized for launch. Native CF connector still requires reauthentication; using the already connected Chrome account9010cea800ac2a140509889d88fe612e. Production canonical origin is https://lolobuysheet.nl; remove preview banner, open canonical editorial routes to indexing, publish sitemap.xml/robots.txt. Keep query-based product shells and unavailable image search noindex; do not add them to sitemap. Legacy guide aliases canonicalize to equivalent full articles. Historical Pages host stays noindex by HTTP header. Verification completed below.
+
+## Production verified — 2026-10-20
+
+- Source commit: 432ec8d5b9ac50cdbb2c0596365cd727b9baa722. Cloudflare Pages deployment: 7fe271b0-b708-41f0-8688-80b7dada62be, reported successful by the GitHub Cloudflare check.
+- Zone: lolobuysheet.nl, ID 5352e8d91e7052b6e2520962679a986d in the correct account 9010cea800ac2a140509889d88fe612e. Root and www CNAME records point to lolobuy-nl-preview.pages.dev; Pages dashboard confirms both Active, SSL enabled. No neighboring project/domain modified.
+- Cloudflare Single Redirect enabled: `Canonical HTTPS and www to lolobuysheet.nl`. Filter `(http.host eq "www.lolobuysheet.nl") or (http.host eq "lolobuysheet.nl" and not ssl)`; dynamic target `concat("https://lolobuysheet.nl", http.request.uri.path)`, HTTP 301, preserve query string. HTTPS www test confirmed exact path/query retention. Plain HTTP requests cannot be directly measured from the executor network; the rule is deployed and enabled.
+- Public release.json returns 2026-10-20-production-v1, preview=false, 24 languages, 10 articles and 24 FAQs per language, 6,572 source records.
+- Public home, Dutch home, articles and FAQ return HTTP 200 with production canonical URL and index/follow meta; preview banner removed. Product shell remains noindex/follow. Historical pages.dev responds with X-Robots-Tag: noindex, nofollow.
+- /sitemap.xml HTTP 200 application/xml includes 384 unique canonical URLs; each has 24 language alternates plus x-default. Local build verified every sitemap URL has a matching output and canonical. No speculative lastmod. /robots.txt HTTP 200 allows crawling, excludes /api/ and /data/, and advertises production sitemap.
+- Product API record 6667 HTTP 200 still maps to seller 7632511460 with the exact official LoloBuy buy URL and cnfanssp.com source photo. Browser-rendered production home displays 6,572 items and live source catalogue status. Existing mobile/content validation remains unchanged by this launch.
+- No new database, account sign-in, paid purchase, analytics tracker or Search Console submission was introduced.
