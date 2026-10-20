@@ -1,4 +1,6 @@
-# Keywords and implementation decisions — 2026-10-20
+# Initial preview decisions — superseded on 2026-10-20
+
+Historical record of the original48-product/two-language preview. Current implementation is documented in PROJECT_MEMORY.md, research.md and lolobuy-keyword-evidence.md:6,572source products,24languages,24FAQs and10full articles per language. The owner explicitly reconfirmed cnfanssp.com. The architecture notes below no longer describe the expanded preview.
 
 ## Research basis
 

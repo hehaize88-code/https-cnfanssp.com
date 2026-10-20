@@ -1,0 +1,1131 @@
+{
+  "ui": {
+    "register": "Mergi la LoloBuy",
+    "language": "Limbă",
+    "preview": "Previzualizare design",
+    "previewNote": "O primă privire asupra lolobuysheet.nl",
+    "eyebrow": "DESCOPERIRI BUNE. MAI PUȚINĂ DERULARE.",
+    "hero1": "Următoarea ta descoperire.",
+    "hero2": "Un singur catalog.",
+    "intro": "Explorează catalogul LoloBuy. Descoperă îmbrăcăminte, pantofi sport și accesorii, compară prețurile sursei și deschide următoarea descoperire pe LoloBuy.",
+    "search": "Caută în întregul catalog…",
+    "searchButton": "Caută produse",
+    "photo": "Căutare după imagine",
+    "popular": "Explorează:",
+    "tagline": "Un catalog. Următoarea ta descoperire.",
+    "source": "Produse de pe cnfanssp.com",
+    "independent": "Site independent pentru descoperirea produselor LoloBuy",
+    "browse": "Explorează catalogul",
+    "browseSub": "Puțin mai puține căutări. Mult mai multe descoperiri.",
+    "all": "Toate produsele",
+    "sort": "Sortează după",
+    "count": "produse",
+    "view": "Vezi produsul",
+    "buy": "Deschide pe LoloBuy",
+    "details": "Detalii produs",
+    "previous": "Precedenta",
+    "next": "Următoarea",
+    "page": "Pagina",
+    "empty": "Niciun produs nu corespunde căutării tale.",
+    "reset": "Șterge filtrele",
+    "sourceSearch": "Caută în întregul catalog al sursei",
+    "snapshot": "Catalog actualizat de pe cnfanssp.com. Prețurile produselor în CNY nu includ transportul și taxele de serviciu. Verifică opțiunile actuale și oferta finală pe LoloBuy.",
+    "howTitle": "De la descoperire la despachetare.",
+    "howSub": "Ești nou pe LoloBuy? Începe cu acești trei pași.",
+    "guides": "Puțină îndrumare te ajută mult.",
+    "guidesSub": "Ce este util să știi înainte de prima comandă.",
+    "read": "Citește ghidul",
+    "allGuides": "Toate ghidurile",
+    "cta": "Ai găsit următorul tău produs preferat?",
+    "ctaSub": "Deschide-l pe LoloBuy și fă-l al tău.",
+    "ctaButton": "Explorează toate produsele",
+    "footer": "Un site independent pentru descoperirea produselor. Nu suntem site-ul oficial LoloBuy. Ofertele și fotografiile provin de pe cnfanssp.com. Cumpărăturile se finalizează pe LoloBuy.",
+    "back": "Înapoi la catalog",
+    "sourceListing": "Oferta originală a sursei",
+    "seller": "Oferta vânzătorului",
+    "sourcePrice": "Prețul sursei · CNY",
+    "productId": "ID-ul produsului la vânzător",
+    "gallery": "Fotografii din ofertă",
+    "qc": "Fotografii de control al calității",
+    "qcNote": "Sursa oferă fotografii din oferta acestui produs. Nu sunt fotografii verificate de control al calității din depozit. Verifică QC-ul asociat propriei comenzi LoloBuy înainte de expediere.",
+    "priceNote": "Doar prețul produsului. Confirmă stocul, opțiunile, transportul și taxele de serviciu actuale pe LoloBuy înainte de a comanda.",
+    "photoTitle": "Găsește-l cu o fotografie.",
+    "photoIntro": "Folosește catalogul sursei pentru a găsi și compara produse.",
+    "photoState": "Căutare după imagine la sursă",
+    "photoNote": "Nu a fost verificat niciun serviciu public de căutare după imagine pe cnfanssp.com. Nu acceptăm încărcarea fotografiilor până când serviciul sursei nu este disponibil.",
+    "browseInstead": "Explorează produsele",
+    "faqTitle": "LoloBuy: răspunsuri înainte de a comanda.",
+    "faqIntro": "Documentat din paginile oficiale de ajutor LoloBuy. Când paginile oficiale diferă, răspunsul explică ce trebuie verificat.",
+    "guideLabel": "GHIDUL PRACTIC",
+    "guideTitle": "Prima ta comandă LoloBuy, explicată.",
+    "guideIntro": "De la găsirea unui produs la verificarea lui în depozit: un punct de plecare practic.",
+    "updated": "Verificat în octombrie 2026",
+    "related": "Mai multe de explorat",
+    "home": "Acasă",
+    "aboutPhotos": "Imagini din oferta sursei",
+    "catalogLive": "Catalogul actual al sursei",
+    "catalogCached": "Se afișează ultima copie completă a catalogului sursei.",
+    "catalogLoading": "Se actualizează catalogul sursei…",
+    "catalogError": "Sursa este temporar indisponibilă. Încearcă din nou sau deschide catalogul original.",
+    "retry": "Încearcă din nou",
+    "loading": "Se încarcă…",
+    "productError": "Acest produs nu a putut fi încărcat. Încearcă din nou sau verifică oferta originală.",
+    "pageOf": "din",
+    "jump": "Mergi la pagina",
+    "go": "Mergi",
+    "articlesLabel": "Articole",
+    "articlesTitle": "Informații detaliate despre cumpărăturile pe LoloBuy.",
+    "articlesIntro": "Zece ghiduri practice documentate din ajutorul oficial LoloBuy. Găsește produse, verifică QC-ul, stabilește bugetul și planifică transportul cu informații mai clare.",
+    "articleSources": "Surse oficiale",
+    "reviewed": "Verificat la 20 octombrie 2026",
+    "readArticle": "Citește articolul",
+    "allArticles": "Toate articolele",
+    "contents": "Pe această pagină",
+    "checklist": "Listă practică de verificare",
+    "summary": "Pe scurt",
+    "reading": "min de lectură",
+    "faqSearch": "Caută întrebări…",
+    "noQuestions": "Nu există întrebări corespunzătoare.",
+    "officialHelp": "Citește îndrumările oficiale",
+    "skip": "Sari la conținut",
+    "menu": "Meniu",
+    "close": "Închide",
+    "languageSearch": "Alege limba",
+    "catalogNote": "Prețurile și disponibilitatea se pot modifica.",
+    "articleFooter": "Îndrumări editoriale independente. Verifică termenii afișați pentru comanda ta înainte de plată sau expediere.",
+    "notFound": "Produsul nu a fost găsit",
+    "showMore": "Arată tot",
+    "findSteps": "GĂSEȘTE. VERIFICĂ. COMANDĂ.",
+    "nextFind": "URMĂTOAREA DESCOPERIRE ÎȚI APARȚINE.",
+    "liveLabel": "Actualizat de la sursă",
+    "faqCount": "răspunsuri documentate",
+    "catalogue": "Catalog",
+    "nav": [
+      "Catalog",
+      "Cum funcționează",
+      "Ghiduri",
+      "Articole",
+      "Întrebări frecvente"
+    ],
+    "sorts": [
+      "Recomandate",
+      "Cele mai noi",
+      "Cele mai vizualizate",
+      "Preț: crescător",
+      "Preț: descrescător"
+    ],
+    "footerLinks": [
+      "Catalog",
+      "Ghid de cumpărare",
+      "Căutare după imagine",
+      "Întrebări frecvente"
+    ],
+    "categories": {
+      "shoes": "Încălțăminte",
+      "hoodies": "Hanorace",
+      "tshirts": "Tricouri",
+      "jackets": "Jachete",
+      "pants": "Pantaloni și pantaloni scurți",
+      "headwear": "Șepci și pălării",
+      "accessories": "Accesorii",
+      "sets": "Seturi scurte",
+      "electronics": "Electronice",
+      "other": "Alte articole",
+      "jerseys": "Tricouri sportive"
+    },
+    "steps": [
+      [
+        "01",
+        "Găsește ceva ce îți place",
+        "Explorează categoriile și verifică oferta originală, mărimea și fotografiile produsului."
+      ],
+      [
+        "02",
+        "Deschide-l pe LoloBuy",
+        "Folosește linkul produsului pentru a alege opțiunile și a verifica prețul actual."
+      ],
+      [
+        "03",
+        "Verifică înainte de expediere",
+        "Urmează procesul depozitului LoloBuy, verifică QC-ul disponibil și alege transportul."
+      ]
+    ]
+  },
+  "faqs": [
+    {
+      "id": "what-is-lolobuy",
+      "category": "Primii pași",
+      "question": "Ce face LoloBuy?",
+      "answer": "LoloBuy acționează ca agent de cumpărături: furnizezi o ofertă a vânzătorului, alegi produsul, plătești achiziția și transportul intern din China, apoi verifici etapa de depozit înainte de organizarea transportului internațional. Vânzătorul furnizează bunurile. Un link sau o înregistrare în catalog este un punct de plecare pentru verificarea comenzii, nu o confirmare a stocului actual.",
+      "sourceIds": [
+        "buying",
+        "service"
+      ]
+    },
+    {
+      "id": "place-order",
+      "category": "Primii pași",
+      "question": "Cum comand prin LoloBuy?",
+      "answer": "Lipește linkul original al produsului în LoloBuy, verifică oferta importată și selectează exact culoarea, mărimea și cantitatea. Verifică prețul produsului, transportul intern și serviciile solicitate înainte de plată. Ghidul oficial LoloBuy separă apoi cumpărarea, inspecția în depozit și solicitarea coletului internațional în etape distincte.",
+      "sourceIds": [
+        "buying"
+      ]
+    },
+    {
+      "id": "manual-order",
+      "category": "Primii pași",
+      "question": "Ce se întâmplă dacă LoloBuy nu poate citi linkul produsului?",
+      "answer": "Ghidul oficial de cumpărare descrie un formular manual de comandă atunci când importul automat nu este disponibil. Completează informațiile reale despre produs și opțiunile alese și verifică comanda înainte de trimitere. Nu înlocui ID-ul produsului de pe marketplace cu numărul intern al paginii din catalog: ele identifică înregistrări diferite.",
+      "sourceIds": [
+        "buying"
+      ]
+    },
+    {
+      "id": "domestic-delivery",
+      "category": "Comenzi și plată",
+      "question": "Mai multe produse pot avea o singură taxă de livrare în China?",
+      "answer": "Întrebările frecvente LoloBuy despre livrarea internă descriu o singură taxă atunci când produsele de la același vânzător sunt trimise și plătite împreună. O comandă neobișnuit de mare sau grea poate necesita o plată suplimentară de transport. Această regulă nu combină automat taxele vânzătorilor diferiți și nu include transportul internațional.",
+      "sourceIds": [
+        "domestic"
+      ]
+    },
+    {
+      "id": "seller-promotion",
+      "category": "Comenzi și plată",
+      "question": "Cum cer LoloBuy să aplice o reducere a vânzătorului?",
+      "answer": "Notează promoția reală sau oferta de transport intern gratuit în observațiile comenzii, astfel încât agentul să o poată verifica la vânzător. Ajutorul oficial descrie și utilizarea Order Enquiry dacă ai omis informația despre promoție. Reducerea trebuie verificată; un catalog nu poate promite că o ofertă veche mai este valabilă.",
+      "sourceIds": [
+        "promotions"
+      ]
+    },
+    {
+      "id": "change-order",
+      "category": "Comenzi și plată",
+      "question": "Pot schimba mărimea sau culoarea după comandă?",
+      "answer": "LoloBuy afirmă că poate negocia o schimbare înainte ca vânzătorul să expedieze produsul. După expediere, pagina de ajutor descrie un posibil retur din depozit urmat de o comandă nouă, cu costuri de transport pentru retur. Trimite rapid solicitarea în comanda corespunzătoare și așteaptă acceptarea înainte de a presupune că opțiunea s-a schimbat.",
+      "sourceIds": [
+        "changes"
+      ]
+    },
+    {
+      "id": "confirmation-message",
+      "category": "Comenzi și plată",
+      "question": "Ce înseamnă Pending for Confirmation?",
+      "answer": "Unele detalii ale comenzii necesită confirmarea ta. Citește și răspunde la mesajul asociat comenzii. Ajutorul oficial direcționează întrebările despre comenzile cumpărate către Shopping Agent Order, iar întrebările din etapa de depozit către My Warehouse, unde poate fi solicitată acceptarea sau returnarea. Denumirile meniurilor pot varia; așteptarea unei actualizări de urmărire nu răspunde solicitării.",
+      "sourceIds": [
+        "confirmation",
+        "confirmation-path"
+      ]
+    },
+    {
+      "id": "received-in-stock",
+      "category": "Depozit și QC",
+      "question": "Care este diferența dintre Received și In Stock?",
+      "answer": "Ghidul oficial de stări folosește Received când depozitul a primit coletul vânzătorului și inspecția este în curs. In Stock înseamnă că verificarea calității s-a încheiat, iar produsele sunt stocate în inventarul tău. Primirea în depozit nu înseamnă, prin urmare, că evaluarea ta QC sau expedierea internațională s-au încheiat.",
+      "sourceIds": [
+        "status"
+      ]
+    },
+    {
+      "id": "qc-checks",
+      "category": "Depozit și QC",
+      "question": "Ce verifică QC-ul standard?",
+      "answer": "Inspecția standard LoloBuy verifică detalii vizibile ale comenzii, precum stilul, cantitatea, culoarea, mărimea, modelul și deteriorările evidente. Analizează împreună serviciul efectiv de inspecție și fotografiile comenzii tale. O verificare vizuală nu garantează autenticitatea, potrivirea exactă sau durabilitatea pe termen lung.",
+      "sourceIds": [
+        "qc"
+      ]
+    },
+    {
+      "id": "inspection-exclusions",
+      "category": "Depozit și QC",
+      "question": "Produsele sigilate și electronicele sunt testate complet?",
+      "answer": "Nu. Regulile de inspecție descriu excepții pentru produsele sigilate și exclud explicit testarea autenticității, funcționării și calității electronicelor profesionale și a bunurilor asociate. Cu opțiunea fără inspecție, depozitul verifică restricțiile, dar nu verifică produsul și nu oferă fotografii QC. Verifică serviciul ales înainte să te bazezi pe rezultatul inspecției.",
+      "sourceIds": [
+        "qc"
+      ]
+    },
+    {
+      "id": "qc-photos",
+      "category": "Depozit și QC",
+      "question": "Pot solicita mai multe fotografii QC?",
+      "answer": "Prezentarea serviciului descrie fotografii suplimentare la cerere; pagina serviciului foto oferă și Secondary Quality Inspection dacă inspecția a fost omisă înainte de depozitare. Paginile oficiale indică numere diferite de fotografii standard. Verifică serviciul ales și cere vederea sau măsurătoarea exactă care lipsește, fără a presupune că fiecare comandă include același număr de imagini.",
+      "sourceIds": [
+        "service",
+        "photos",
+        "qc"
+      ]
+    },
+    {
+      "id": "storage-period",
+      "category": "Depozit și QC",
+      "question": "Cât timp pot rămâne produsele în depozitul LoloBuy?",
+      "answer": "Pagina dedicată depozitării și ghidul actual de stări indică 180 de zile pentru bunurile obișnuite depozitate, în timp ce un ghid de cumpărare mai vechi încă indică 90. Coletele anormale neidentificate au reguli separate. Verifică termenul afișat pentru propriul produs și organizează expedierea sau orice prelungire înainte să expire; nu te baza doar pe ghidul vechi.",
+      "sourceIds": [
+        "storage",
+        "status",
+        "buying"
+      ]
+    },
+    {
+      "id": "consolidate",
+      "category": "Transport și urmărire",
+      "question": "Pot expedia mai multe cumpărături într-un singur colet?",
+      "answer": "Ghidul de cumpărare descrie selectarea produselor depozitate în My Warehouse și solicitarea livrării lor împreună. Verifică dacă toate produsele alese au parcurs evaluările necesare și dacă ruta disponibilă acceptă coletul rezultat. Combinarea produselor schimbă coletul ambalat, dar nu garantează un cost total de transport mai mic.",
+      "sourceIds": [
+        "buying"
+      ]
+    },
+    {
+      "id": "remove-packaging",
+      "category": "Transport și urmărire",
+      "question": "Poate LoloBuy elimina cutiile înainte de expediere?",
+      "answer": "Serviciul Package Removal poate fi selectat la solicitarea livrării. Descrierea oficială spune că ambalajul de protecție necesar este păstrat. Dacă ai nevoie de cutiile originale pentru un cadou, păstrare sau un posibil retur, ia în calcul acest lucru înainte de eliminare. Ambalarea finală și costul transportului depind de produse și de expedierea aleasă.",
+      "sourceIds": [
+        "packaging"
+      ]
+    },
+    {
+      "id": "shipping-price",
+      "category": "Transport și urmărire",
+      "question": "De ce poate diferi costul final de transport de estimare?",
+      "answer": "Costul inițial se bazează pe greutatea estimată și pe destinația și ruta alese. Ambalarea poate schimba greutatea și dimensiunile, iar tariful furnizorului logistic determină regularizarea. LoloBuy descrie rambursarea sumelor plătite în plus sau solicitarea unei plăți suplimentare când costul real diferă. Verifică oferta finală a coletului și mesajul din cont.",
+      "sourceIds": [
+        "weight",
+        "freight-balance"
+      ]
+    },
+    {
+      "id": "volumetric-weight",
+      "category": "Transport și urmărire",
+      "question": "Ce este greutatea volumetrică?",
+      "answer": "Transformă dimensiunile coletului într-o greutate utilizată pentru facturarea bunurilor voluminoase. Ajutorul LoloBuy diferențiază formulele specifice rutelor și precizează că greutatea facturabilă poate fi cea mai mare dintre greutatea reală și cea volumetrică. Folosește divizorul și regulile de rotunjire afișate pentru ruta aleasă, nu o afirmație universală despre prețul pe kilogram.",
+      "sourceIds": [
+        "weight"
+      ]
+    },
+    {
+      "id": "supplemental-payment",
+      "category": "Transport și urmărire",
+      "question": "Ce fac dacă primesc o notificare de plată suplimentară pentru transport?",
+      "answer": "Deschide coletul corespunzător și verifică taxa revizuită și solicitarea de confirmare. Regulile de plată suplimentară LoloBuy folosesc praguri diferite și includ cazuri în care un colet poate fi reținut sau anulat. Răspunde în termenul afișat pentru colet și achită soldul acceptat; nu trata estimarea originală ca fiind finală.",
+      "sourceIds": [
+        "freight-balance"
+      ]
+    },
+    {
+      "id": "tracking",
+      "category": "Transport și urmărire",
+      "question": "Unde pot urmări coletul internațional?",
+      "answer": "Ghidul oficial de cumpărare indică My LoloBuy → Parcels după expediere. Ghidul de stări diferențiază Packed de Shipped: un colet ambalat poate aștepta încă confirmarea greutății finale, în timp ce Shipped înseamnă că are număr de urmărire și a fost predat transportatorului. Citește ultimul eveniment al transportatorului și starea din cont.",
+      "sourceIds": [
+        "buying",
+        "status"
+      ]
+    },
+    {
+      "id": "cancellation",
+      "category": "Retururi și asistență postvânzare",
+      "question": "Pot anula o comandă înainte să ajungă în depozit?",
+      "answer": "Anularea depinde de etapa actuală a comenzii. Folosește opțiunea de anulare sau retur/rambursare a comenzii respective. După cumpărarea produsului poate fi necesară confirmarea vânzătorului; o solicitare trimisă nu este o rambursare aprobată. Verifică răspunsul din comandă înainte de a face o achiziție înlocuitoare.",
+      "sourceIds": [
+        "cancellation",
+        "refunds"
+      ]
+    },
+    {
+      "id": "eligible-return",
+      "category": "Retururi și asistență postvânzare",
+      "question": "Ce acoperă regula de retur în cinci zile a LoloBuy?",
+      "answer": "Regula dedicată descrie o fereastră de solicitare de 120 de ore, începând cu ora următoare după Stocked in, pentru bunurile eligibile. Se aplică în continuare acordul vânzătorului, starea produsului și ambalajul necesar. Un retur fără defect poate implica ambele drumuri de transport intern și o taxă de procesare. Verifică rapid eligibilitatea și pagina efectivă de solicitare.",
+      "sourceIds": [
+        "returns"
+      ]
+    },
+    {
+      "id": "refund-destination",
+      "category": "Retururi și asistență postvânzare",
+      "question": "Unde ajunge o rambursare aprobată?",
+      "answer": "Pagina de ajutor pentru retururi descrie în general creditarea rambursărilor aprobate în soldul contului LoloBuy. Separat, descrie o excepție restrânsă de rambursare prin metoda inițială pentru anumite comenzi PayPal care așteaptă aprobarea. Aceasta nu promite că fiecare rambursare ajunge direct pe un card bancar și nici nu dovedește că toate metodele de plată sunt disponibile în prezent.",
+      "sourceIds": [
+        "refunds"
+      ]
+    },
+    {
+      "id": "delivery-problem",
+      "category": "Retururi și asistență postvânzare",
+      "question": "Ce fac dacă coletul livrat este deteriorat sau greșit?",
+      "answer": "Deschide coletul afectat în My LoloBuy → Parcels și folosește Apply After-sales. Descrie problema și păstrează fotografii clare ale coletului și produsului. Articolul oficial conține termene contradictorii pentru reclamații, inclusiv un avertisment mai timpuriu, așa că raportează imediat problema și obține confirmarea pentru cazul tău în loc să aștepți un termen general.",
+      "sourceIds": [
+        "claims"
+      ]
+    },
+    {
+      "id": "sizing",
+      "category": "Alegerea produselor",
+      "question": "Cum aleg mărimea hainelor sau a pantofilor?",
+      "answer": "Referința de mărimi LoloBuy avertizează că standardele magazinelor pot diferi. Compară tabelul real de măsurători al vânzătorului, unitățile și opțiunea aleasă cu măsurătorile tale sau cu un articol care îți vine bine. Tabelele de conversie sunt orientative, nu o garanție că aceeași etichetă se potrivește la orice vânzător. Întreabă despre măsurătorile lipsă înainte să comanzi.",
+      "sourceIds": [
+        "sizing"
+      ]
+    },
+    {
+      "id": "1688",
+      "category": "Alegerea produselor",
+      "question": "Comenzile 1688 folosesc aceleași reguli de cumpărare și inspecție?",
+      "answer": "Ghidul oficial 1688 cere respectarea cantității minime a vânzătorului; prețurile și transportul intern pot varia cu cantitatea. Regulile de inspecție diferențiază produsele de tip A verificate prin eșantionare de produsele de tip B fără QC standard. Confirmă cantitatea, domeniul inspecției și condițiile de retur înainte de plată, fără a presupune tratamentul unei comenzi cu amănuntul.",
+      "sourceIds": [
+        "wholesale",
+        "qc"
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "slug": "using-lolobuy-spreadsheet",
+      "title": "Cum folosești un catalog LoloBuy: transformă linkul unui produs într-o selecție utilă",
+      "description": "Găsește produse după categorie, compară oferta exactă și păstrează detaliile necesare înainte de a deschide un articol pe LoloBuy.",
+      "keyword": "catalog lolobuy",
+      "category": "Primii pași",
+      "summary": "Un catalog util restrânge căutarea. O selecție utilă păstrează produsul exact, opțiunea și întrebările fără răspuns de care vei avea nevoie la comandă.",
+      "sections": [
+        {
+          "heading": "Începe cu o decizie de cumpărare, nu cu o listă lungă",
+          "paragraphs": [
+            "Un catalog LoloBuy este un instrument de descoperire a produselor. Poți explora o categorie, privi fotografii și urma o ofertă către pasul următor. Nu înseamnă că editorul catalogului a cumpărat fiecare produs, a testat vânzătorul sau ți-a rezervat mărimea. Tratează fiecare înregistrare ca pe un punct de plecare care trebuie verificat.",
+            "Înainte de căutare, notează tipul de produs necesar, măsurătorile importante și un buget aproximativ pentru articol. Căutarea unui hanorac negru cu fermoar este mai utilă decât colecționarea tuturor linkurilor atrăgătoare de haine. O întrebare mai precisă te ajută și să observi când unei oferte îi lipsesc informații esențiale."
+          ]
+        },
+        {
+          "heading": "Păstrează identitatea originală a produsului",
+          "paragraphs": [
+            "Numărul din adresa paginii de catalog poate fi un identificator local. El poate diferi de ID-ul produsului de pe marketplace folosit în linkul de cumpărare. Nu modifica manual numerele ca linkul să pară corect. Folosește butonul corespunzător, apoi compară articolul deschis cu oferta pe care voiai să o cumperi.",
+            "Salvează URL-ul original al vânzătorului împreună cu opțiunea aleasă. O captură poate păstra o imagine utilă, dar ajută mai puțin dacă nu știi cărui vânzător, mărimi sau culori îi aparține. Dacă un link deschide alt produs sau o ofertă goală, oprește-te și verifică înainte de a continua."
+          ]
+        },
+        {
+          "heading": "Compară configurații echivalente",
+          "paragraphs": [
+            "Prețul de pornire poate fi pentru cea mai ieftină opțiune, un singur accesoriu sau altă cantitate. Compară aceeași configurație între oferte. Un set din două piese și un singur top nu permit o comparație relevantă a prețului, chiar dacă miniaturile seamănă.",
+            "Verifică dacă galeria arată culoarea selectată și dacă există un tabel de mărimi. Fotografii identice la vânzători diferiți nu demonstrează construcție sau stoc identic. Comparația trebuie să înregistreze dovezile prezente și să lase vizibil ceea ce rămâne necunoscut și important."
+          ],
+          "bullets": [
+            "Produsul exact și URL-ul vânzătorului",
+            "Mărimea, culoarea și cantitatea selectate",
+            "Prețul actual pentru acea opțiune",
+            "Măsurători sau referința tabelului de mărimi",
+            "O întrebare nerezolvată înainte de comandă"
+          ]
+        },
+        {
+          "heading": "Continuă prin procesul oficial de cumpărare",
+          "paragraphs": [
+            "Ghidul LoloBuy descrie trimiterea unui link de marketplace, alegerea opțiunilor disponibile și plata produsului și a transportului intern. Descrie și un formular manual când informația nu poate fi preluată automat. Deschiderea corectă a unui link este, așadar, doar începutul verificării comenzii.",
+            "Pe pagina oficială, verifică din nou imaginea, textul opțiunii și cantitatea. Catalogul nu garantează stocul actual și nu păstrează o alegere pe care nu ai selectat-o la plată. Scrie orice cerință suficient de precis pentru ca agentul să poată acționa, de exemplu numele exact al culorii sau o întrebare despre o măsurătoare."
+          ]
+        },
+        {
+          "heading": "Separă fotografiile de descoperire de propriul QC",
+          "paragraphs": [
+            "Galeria vânzătorului explică oferta. O imagine istorică din depozit poate arăta produsul altcuiva. Fotografiile de inspecție asociate propriei comenzi sunt dovezile de verificat înainte de expedierea acelui articol în străinătate. Cele trei tipuri răspund la întrebări diferite și nu trebuie considerate interschimbabile.",
+            "Selecția trebuie păstrată împreună cu comanda. Când produsul ajunge în depozit, compară opțiunea notată cu eticheta de mărime, culoarea și cantitatea vizibile. O nepotrivire este mai ușor de explicat când ai împreună alegerea originală și referința comenzii."
+          ]
+        },
+        {
+          "heading": "Păstrează selecția utilă și după cumpărare",
+          "paragraphs": [
+            "Reține doar cei mai buni candidați și notează de ce au trecut comparația. De exemplu, un hanorac poate avea un tabel de măsurători mai clar, iar altul o întrebare nerezolvată despre material. Astfel, o colecție de linkuri devine o decizie la care poți reveni fără să reiei cercetarea.",
+            "Înainte de cumpărare, citește ghidurile de comandă și buget. Înainte de solicitarea coletului, citește ghidurile QC și transport. Catalogul este cel mai util când conectează aceste etape, nu când prezintă prețul produsului drept costul complet al unei comenzi livrate."
+          ]
+        }
+      ],
+      "checklist": [
+        "Salvează URL-ul sursei și opțiunea exactă.",
+        "Compară cantități și configurații echivalente.",
+        "Clarifică măsurătorile lipsă înainte de plată.",
+        "Verifică oferta importată pe LoloBuy.",
+        "Analizează QC-ul propriei comenzi înainte de expediere."
+      ],
+      "sourceIds": [
+        "buying",
+        "qc"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 652
+    },
+    {
+      "slug": "how-to-order-on-lolobuy",
+      "title": "Cum comanzi pe LoloBuy: linkuri, opțiuni și etape de plată",
+      "description": "Urmează procesul de la un link de marketplace la inspecția depozitului și solicitarea separată a coletului internațional.",
+      "keyword": "cum comanzi pe lolobuy",
+      "category": "Comenzi",
+      "summary": "Verifică produsul înainte de plată, dovezile din depozit înainte de expediere și oferta coletului înainte de plecare. Fiecare etapă răspunde altei întrebări.",
+      "sections": [
+        {
+          "heading": "Începe pe site-ul oficial",
+          "paragraphs": [
+            "Folosește site-ul oficial LoloBuy pentru înregistrare, acces la cont și plată. Acest catalog independent ajută la descoperire; nu colectează parola și nu procesează comanda. Verifică destinația când deschizi un produs și păstrează discuțiile de cumpărare asociate comenzii relevante.",
+            "Ghidul oficial descrie începutul cu un link de produs de pe un marketplace chinezesc compatibil. Articolul ales este furnizat de vânzătorul din spatele ofertei. Distincția contează deoarece serviciul de cumpărare și vânzătorul nu controlează aceleași părți ale tranzacției."
+          ]
+        },
+        {
+          "heading": "Verifică produsul importat",
+          "paragraphs": [
+            "Lipește linkul original sau folosește butonul LoloBuy corespunzător din catalog. Compară pagina rezultată cu sursa înainte de alegerea opțiunilor. Verifică imaginea principală, numele, informațiile disponibile despre vânzător, culoarea, mărimea și cantitatea. Nu te baza numai pe fotografie.",
+            "Dacă pagina oferă un formular manual de agent, ghidul oficial spune să introduci manual datele. Completează-l din oferta reală, fără să ghicești opțiunile lipsă. Când un detaliu necesar este neclar, clarifică-l prin întrebarea asociată comenzii înainte de a cere agentului să continue."
+          ],
+          "bullets": [
+            "Produsul corespunde URL-ului original",
+            "Textul opțiunii corespunde culorii și mărimii dorite",
+            "Cantitatea și prețul unitar se referă la aceeași configurație",
+            "Orice cerință specială este scrisă clar"
+          ]
+        },
+        {
+          "heading": "Înțelege prima plată",
+          "paragraphs": [
+            "Procesul oficial separă produsul și livrarea internă din China de coletul internațional ulterior. Verifică prima plată poziție cu poziție. Alegerea destinației la cumpărare nu înseamnă că totalul produselor include toate taxele necesare livrării acolo.",
+            "Metodele de plată, monedele și serviciile opționale trebuie verificate în pagina actuală de plată. Lista generală dintr-un articol de ajutor nu promite disponibilitatea tuturor metodelor pentru contul sau comanda ta. Salvează plata și compar-o cu starea comenzii, în loc să plătești din nou doar fiindcă pagina se actualizează lent."
+          ]
+        },
+        {
+          "heading": "Răspunde la întrebările comenzii",
+          "paragraphs": [
+            "LoloBuy are starea „Pending for Confirmation” pentru informații care trebuie verificate. Pagina de ajutor trimite cumpărătorul la instrucțiunile comenzii. Citește întrebarea efectivă și răspunde acelei probleme: poate afecta posibilitatea echipei de a continua cumpărarea.",
+            "Indicațiile oficiale de modificare diferențiază produsele neexpediate de cele deja trimise. Înainte de expediere, agentul poate cere vânzătorului schimbarea; ulterior, poate fi nevoie de retur și comandă nouă. O modificare solicitată nu este realizată până când înregistrarea comenzii nu o confirmă."
+          ]
+        },
+        {
+          "heading": "Verifică sosirea și inspecția",
+          "paragraphs": [
+            "Sosirea în depozit și inspecția încheiată sunt momente diferite. Găsește produsul în zona de depozit și compară fotografiile și opțiunea înregistrată cu achiziția. Verifică mai întâi identitatea, apoi detaliile vizibile importante. Rezolvă o nepotrivire evidentă înainte de includerea produsului în coletul internațional.",
+            "Nu presupune că toate produsele primesc aceeași inspecție. Politica oficială descrie limite pentru bunuri sigilate și tratare specială pentru unele comenzi 1688. Dacă ai nevoie de o măsurătoare sau vedere specifică, verifică disponibilitatea pentru comanda ta; o fotografie QC generală nu dovedește totul."
+          ]
+        },
+        {
+          "heading": "Decide separat solicitarea coletului",
+          "paragraphs": [
+            "Procesul oficial cere selectarea produselor depozitate, introducerea datelor de livrare și alegerea transportului disponibil. Verifică împreună destinația, restricțiile, ambalarea și avansul pentru transport. Un produs cumpărat nu este automat un colet internațional gata de plecare.",
+            "Costul final se poate schimba după ambalare și măsurarea logistică. Urmărește înregistrarea coletului pentru ajustări sau cereri de confirmare. După expediere, folosește secțiunea de colete pentru urmărire, păstrează referințele comenzilor și verifică prompt conținutul când sosește livrarea."
+          ]
+        }
+      ],
+      "checklist": [
+        "Confirmă produsul original și opțiunea exactă.",
+        "Verifică prețul produsului și transportul intern.",
+        "Răspunde solicitărilor de confirmare în așteptare.",
+        "Analizează fotografiile depozitului și problemele nerezolvate.",
+        "Verifică oferta separată a coletului internațional."
+      ],
+      "sourceIds": [
+        "buying",
+        "confirmation",
+        "changes",
+        "qc",
+        "freight-balance"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 570
+    },
+    {
+      "slug": "lolobuy-qc-photos",
+      "title": "Fotografii QC LoloBuy: listă practică de inspecție înainte de expediere",
+      "description": "Separă fotografiile vânzătorului de propria inspecție din depozit și verifică identitatea, starea vizibilă și detaliile care mai cer dovezi.",
+      "keyword": "fotografii qc lolobuy",
+      "category": "Controlul calității",
+      "summary": "Începe cu produsul și opțiunea comandată. Folosește apoi imaginile disponibile pentru a decide ce este clar, ce necesită altă fotografie și ce trebuie rezolvat înainte de expediere.",
+      "sections": [
+        {
+          "heading": "Identifică dovezile pe care le privești",
+          "paragraphs": [
+            "Galeria produsului face parte din oferta vânzătorului. O fotografie QC de referință poate arăta o comandă anterioară. Propriile fotografii din depozit se referă la articolul primit pentru cumpărătura ta. Păstrează aceste categorii distincte când decizi, mai ales dacă produsul are mai multe culori, versiuni sau mărimi.",
+            "Începe prin a potrivi referința comenzii, produsul și opțiunea selectată. O fotografie detaliată a versiunii greșite nu oferă o asigurare utilă. Dacă imaginile nu pot fi legate de articolul din depozitul tău, cere clarificarea legăturii înainte de evaluarea aspectului."
+          ]
+        },
+        {
+          "heading": "Verifică identitatea înaintea detaliilor mici",
+          "paragraphs": [
+            "Verifică mai întâi mărimea, culoarea, cantitatea și modelul. Caută etichete coerente și imagini ale aceluiași produs. Fotografiile pot fi atrăgătoare și totuși să arate o mărime greșită sau un set incomplet. Compară cu opțiunea salvată, nu doar cu memoria.",
+            "Pentru încălțăminte, verifică ambii pantofi și marcajele de mărime vizibile. Pentru haine, verifică culoarea aleasă și eticheta. Pentru o geantă sau un set de accesorii, confirmă că se văd componentele așteptate. Sunt pași practici de evaluare, nu garanția verificării tuturor detaliilor ascunse."
+          ]
+        },
+        {
+          "heading": "Folosește o listă specifică tipului de produs",
+          "paragraphs": [
+            "Pentru haine sunt utile forma generală, fața și spatele, cusăturile, imprimeul sau broderia și zonele unde potrivirea depinde de o măsurătoare. Pentru încălțăminte, analizează perechea împreună, construcția vizibilă și mărimea cerută. La genți, închiderile, mânerele și interiorul răspund la întrebări diferite.",
+            "Notează doar detaliile care influențează decizia. O listă generică lungă poate distrage de la singura măsurătoare lipsă sau închiderea defectă care contează. Dacă fața este clară, dar spatele lipsește, cere vederea lipsă în loc de încă o fotografie generală din același unghi."
+          ],
+          "bullets": [
+            "Confirmă identitatea și opțiunea aleasă",
+            "Examinează starea și construcția vizibile",
+            "Compară măsurătorile solicitate",
+            "Separă vederile lipsă de defectele observate"
+          ]
+        },
+        {
+          "heading": "Înțelege limitele serviciului standard",
+          "paragraphs": [
+            "Pagina de inspecție standard LoloBuy descrie verificări ale aspectului și excluderi. În special, articolele sigilate nu sunt întotdeauna deschise, iar anumite produse profesionale sau electronice nu sunt verificate pentru autenticitate, funcționare sau calitate. Unele comenzi 1688 urmează eșantionarea sau alte reguli.",
+            "Paginile oficiale nu indică aceeași alocație universală de fotografii: pagina de inspecție și prezentarea generală oferă numere diferite. Verifică serviciul atașat comenzii, nu presupune o cifră exactă. Întrebarea utilă este dacă dovezile disponibile acoperă problema pe care trebuie să o decizi."
+          ]
+        },
+        {
+          "heading": "Cere o vedere suplimentară precisă",
+          "paragraphs": [
+            "O cerere clară identifică comanda, zona de fotografiat și motivul. De exemplu: „Arătați eticheta de mărime și măsurați lățimea pieptului hainei întinse, de la cusătură la cusătură”. Este mai clar decât să întrebi dacă produsul este bun. Verifică disponibilitatea și costul înainte de a cere muncă suplimentară.",
+            "Folosește aceeași metodă de măsurare ca în tabelul vânzătorului. Lățimea hainei întinse și circumferința corpului sunt mărimi diferite. Păstrează imaginea și măsura împreună, astfel încât cifra să nu fie confundată cu altă mărime sau alt articol."
+          ]
+        },
+        {
+          "heading": "Ia o decizie documentată",
+          "paragraphs": [
+            "Împarte constatările în confirmate, neclare și inacceptabile. Dacă un detaliu este neclar, cere dovezi. Dacă articolul pare diferit de comandă, folosește asistența sau returul relevant înainte de expedierea internațională. Păstrează o descriere scurtă a problemei și fotografiile care o arată.",
+            "Fotografiile nu pot stabili toate proprietățile materialului, confortul, durabilitatea sau funcționarea internă. Aprobarea stării vizibile este o decizie mai limitată. Citește condițiile de retur cât produsul este încă în depozit și nu trata QC-ul reușit ca pe o promisiune privind vama sau livrarea internațională."
+          ]
+        }
+      ],
+      "checklist": [
+        "Leagă fotografiile de propria comandă.",
+        "Verifică întâi mărimea, culoarea, modelul și cantitatea.",
+        "Cere vederea sau măsurătoarea exactă lipsă.",
+        "Verifică serviciul de inspecție și excluderile sale.",
+        "Rezolvă problemele importante înainte de solicitarea coletului."
+      ],
+      "sourceIds": [
+        "qc",
+        "photos",
+        "service",
+        "sizing"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 607
+    },
+    {
+      "slug": "lolobuy-shipping-costs",
+      "title": "Costurile de transport LoloBuy: compară coletul complet",
+      "description": "Înțelege greutatea estimată, reală și volumetrică, apoi compară rutele cu aceeași destinație, conținut și ambalare.",
+      "keyword": "calculator transport lolobuy",
+      "category": "Transport",
+      "summary": "O comparație utilă a transportului începe cu un colet clar definit. Ghidul explică datele și verificările necesare; nu este o ofertă de transport în timp real.",
+      "sections": [
+        {
+          "heading": "Separă prețul produsului de transport",
+          "paragraphs": [
+            "Prețul de lângă un produs nu este costul complet livrat. Procesul oficial LoloBuy separă cumpărarea și livrarea internă de plata ulterioară a avansului pentru transportul internațional. Poți estima un buget înainte de cumpărare, dar nu poți compara definitiv colete doar din prețul produsului.",
+            "Notează destinația, conținutul prevăzut și ambalajele pe care vrei să le păstrezi. O pereche de pantofi cu cutie și aceeași pereche fără cutie sunt alegeri diferite. Produsele suplimentare pot schimba atât greutatea, cât și dimensiunile, astfel încât o achiziție mică poate afecta oferta în mai multe moduri."
+          ]
+        },
+        {
+          "heading": "Știi ce greutate compari?",
+          "paragraphs": [
+            "Ghidul de greutate LoloBuy diferențiază estimarea de greutatea reală a coletului ambalat. Înregistrarea produsului în depozit include ambalajul original, în timp ce coletul final include și ambalajul exterior și opțiunile de eliminare sau întărire. Aceste etape pot produce măsurători diferite.",
+            "Greutatea volumetrică reflectă spațiul ocupat de colet. Ghidul oficial publică divizori diferiți pentru rute diferite. Nu aplica un singur divizor tuturor transportatorilor și nu presupune că un exemplu vechi reprezintă tariful actual. Folosește condițiile curente ale rutei pentru coletul solicitat."
+          ],
+          "bullets": [
+            "Destinația și codul poștal",
+            "Restricțiile produselor și conținutul",
+            "Greutatea reală după ambalare",
+            "Lungimea, lățimea și înălțimea",
+            "Regulile de tarifare și serviciile incluse ale rutei"
+          ]
+        },
+        {
+          "heading": "Folosește calculele fără a le prezenta drept ofertă",
+          "paragraphs": [
+            "Doar ca ilustrare, un colet de 40 × 30 × 20 centimetri are un volum de 24.000 centimetri cubi. O rută ipotetică cu divizor 6.000 produce 4 kilograme de greutate volumetrică; divizorul 5.000 produce 4,8 kilograme. Niciun calcul nu oferă un preț de transport.",
+            "Exemplul arată importanța regulii rutei. Mai ai nevoie de greutatea reală, pașii de facturare, destinație și tariful curent. Evită alegerea doar după o afirmație „pe kilogram” când taxa depinde de o unitate inițială, unități suplimentare sau greutatea facturabilă mai mare."
+          ]
+        },
+        {
+          "heading": "Compară același colet pe rute diferite",
+          "paragraphs": [
+            "Menține datele constante când compari liniile disponibile. Verifică ce conținut acceptă, estimarea de tranzit, urmărirea, cerințele de ambalare și protecția opțională. O sumă inițială mai mică nu este o comparație completă dacă serviciile sau restricțiile diferă.",
+            "Tratează termenele drept estimări. Procesarea depozitului, deplasarea transportatorului și procedurile destinației sunt etape separate. Ghidul nu promite un termen universal, o rută fără taxe sau o taxă vamală fixă. Decide pe baza ofertei actuale și a regulilor oficiale ale destinației."
+          ]
+        },
+        {
+          "heading": "Evaluează avantajele și limitele ambalării",
+          "paragraphs": [
+            "Pagina oficială de eliminare a ambalajelor descrie îndepărtarea celor exterioare inutile, păstrând protecția necesară produselor. Recomandă și să nu alegi eliminarea când cutiile originale contează pentru cadouri sau păstrare. Reducerea volumului poate fi utilă, dar protecția și scopul cumpărării rămân importante.",
+            "Cere o alegere concretă de ambalare, nu o instrucțiune generală de eliminare a tuturor ambalajelor. Compară dimensiunile finale dacă sunt disponibile. Consolidarea sau scoaterea cutiilor nu reduc automat factura pe orice rută, iar un produs fragil poate necesita mai multă protecție."
+          ]
+        },
+        {
+          "heading": "Urmărește regularizarea finală",
+          "paragraphs": [
+            "Indicațiile LoloBuy despre plăți suplimentare spun că transportul estimat este regularizat cu taxa reală a furnizorului logistic. Poate rezulta rambursarea unui surplus sau o solicitare suplimentară. Citește mesajele coletului și răspunde cererilor atașate expedierii tale.",
+            "Păstrează împreună estimarea inițială, măsurătorile facturabile finale, serviciile și ajustarea. Acest istoric face diferențele mai ușor de înțeles. Bugetează separat costurile posibile la destinație și verifică totalul final înainte de a considera comanda încheiată."
+          ]
+        }
+      ],
+      "checklist": [
+        "Compară rute pentru conținut și destinație identice.",
+        "Verifică regulile greutății reale și volumetrice.",
+        "Păstrează protecția ambalajului în decizie.",
+        "Separă estimările de taxele finale.",
+        "Citește mesajele de ajustare înainte de expediere."
+      ],
+      "sourceIds": [
+        "buying",
+        "weight",
+        "packaging",
+        "freight-balance"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 592
+    },
+    {
+      "slug": "lolobuy-warehouse-consolidation",
+      "title": "Ghidul depozitului LoloBuy: inspecție, stocare și consolidare",
+      "description": "Organizează produsele stocate, rezolvă întrebările QC și alege ambalajul ținând cont de coletul complet.",
+      "keyword": "depozit lolobuy",
+      "category": "Depozit",
+      "summary": "Etapa de depozit este ocazia să legi înregistrarea achiziției de produsul primit și să decizi ce poate fi expediat împreună.",
+      "sections": [
+        {
+          "heading": "Diferențiază sosirea de pregătirea pentru expediere",
+          "paragraphs": [
+            "Un scan de livrare al vânzătorului arată că un colet intern a ajuns într-un punct al traseului. Nu demonstrează singur că produsul a fost inspectat, asociat corect și pregătit pentru transport internațional. Ghidul de stări LoloBuy separă primirea, inspecția și inventarul stocat.",
+            "Folosește înregistrarea depozitului ca listă de lucru, nu un singur mesaj de urmărire. Păstrează numărul comenzii, opțiunea selectată și starea QC a fiecărui articol. Dacă sosesc mai multe colete împreună, acest lucru împiedică un produs finalizat să ascundă o întrebare despre altul."
+          ]
+        },
+        {
+          "heading": "Creează o listă scurtă pentru depozit",
+          "paragraphs": [
+            "Pentru fiecare articol, notează ce ai comandat, ce arată depozitul și ce rămâne nerezolvat. Pot fi doar patru coloane: produs, opțiune corectă, decizie de inspecție și instrucțiune de ambalare. Scopul este păstrarea vizibilă a întrebărilor înainte de alcătuirea coletului.",
+            "Compară imaginile cu selecția originală. O fotografie lipsă și un defect vizibil cer acțiuni diferite. Pentru un detaliu neclar, cere dovezile relevante. Pentru o nepotrivire aparentă, explică diferența cu referința comenzii și ia în calcul procedura de retur aplicabilă."
+          ],
+          "bullets": [
+            "Comanda și opțiunea exactă",
+            "Primirea în depozit și starea inspecției",
+            "Întrebare deschisă sau solicitare de retur",
+            "Păstrarea sau eliminarea ambalajului original",
+            "Gata pentru colet internațional: da sau nu"
+          ]
+        },
+        {
+          "heading": "Verifică direct termenul tău de depozitare",
+          "paragraphs": [
+            "Materialele oficiale conțin afirmații contradictorii: ghidul de cumpărare menționează 90 de zile, iar paginile de stocare și stări menționează 180. Pagina de stocare descrie separat coletele anormale neidentificate. Diferențele nu trebuie reduse la o singură promisiune necondiționată.",
+            "Verifică informațiile asociate propriului produs și clarifică diferențele înainte de a te baza pe un termen. Notează data și orice prelungire plătită aleasă. Nu lăsa bunurile să aștepte nelimitat doar fiindcă un articol general indică mai mult timp decât înregistrarea actuală a depozitului."
+          ]
+        },
+        {
+          "heading": "Consolidează produse compatibile și fără probleme restante",
+          "paragraphs": [
+            "Ghidul oficial descrie selectarea articolelor stocate pentru livrare internațională sau cumpărarea altora și expedierea ulterioară împreună. Consolidarea permite planificarea coletului ca întreg. Nu face orice combinație acceptabilă pe orice rută.",
+            "Înainte de combinare, consideră restricțiile, fragilitatea și problemele nerezolvate. Un produs care așteaptă o decizie de retur nu trebuie tratat ca pregătit. Un accesoriu delicat poate necesita altă protecție decât hainele. Compară dimensiunile și greutatea coletului final, nu doar numărul produselor."
+          ]
+        },
+        {
+          "heading": "Scrie instrucțiuni precise de ambalare",
+          "paragraphs": [
+            "Ajutorul LoloBuy descrie eliminarea ambalajelor inutile, păstrând protecția necesară produsului. Dacă vrei cutia originală pentru un cadou sau o colecție, nu selecta eliminarea și exprimă clar cerința. Valoarea unei cutii nu este întotdeauna doar greutatea ei de transport.",
+            "Folosește instrucțiuni specifice unde trebuie: păstrarea suportului unui articol fragil, conservarea unei cutii comerciale sau întrebarea despre opțiunile de ambalare. Verifică orice taxă suplimentară în formularul actual. Nu presupune că aceeași metodă se potrivește fiecărei categorii."
+          ]
+        },
+        {
+          "heading": "Fă o verificare finală a coletului",
+          "paragraphs": [
+            "Confirmă lista, cantitățile, destinatarul, ruta și serviciile înainte de trimitere. Verifică dacă sunt incluse toate produsele dorite și dacă niciun articol cu problemă nerezolvată nu a ajuns în colet. Revizuirea scurtă este mai simplă decât reconstruirea alegerii după ambalare.",
+            "Paginile oficiale despre greutate și regularizare explică faptul că măsurătorile finale pot schimba costul. Urmărește mesajele după solicitare, inclusiv confirmări sau plăți suplimentare. După expediere, folosește urmărirea și păstrează dovezile din depozit până verifici livrarea."
+          ]
+        }
+      ],
+      "checklist": [
+        "Verifică fiecare articol înainte să îl marchezi pregătit.",
+        "Confirmă termenul din propriul registru de stocare.",
+        "Separă întrebările de retur de produsele gata de expediere.",
+        "Specifică ambalarea potrivită fiecărui produs.",
+        "Revizuiește lista finală și ajustările transportului."
+      ],
+      "sourceIds": [
+        "buying",
+        "status",
+        "storage",
+        "packaging",
+        "freight-balance"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 580
+    },
+    {
+      "slug": "lolobuy-sizing-guide",
+      "title": "Ghid de mărimi LoloBuy: compară măsurătorile înainte de etichetă",
+      "description": "Folosește tabelul vânzătorului, metode de măsurare consecvente și fotografii specifice din depozit pentru o alegere mai clară a mărimii.",
+      "keyword": "ghid mărimi lolobuy",
+      "category": "Mărimi",
+      "summary": "O mărime familiară este un punct de plecare. Comparația utilă este între măsurile vânzătorului, propriile referințe și felul în care vrei să vină produsul.",
+      "sections": [
+        {
+          "heading": "Începe cu tabelul vânzătorului",
+          "paragraphs": [
+            "Referința oficială LoloBuy spune că standardele diferă între magazine și tratează conversiile ca orientative. O etichetă precum medium sau un număr cunoscut de pantof nu stabilește potrivirea fiecărui produs de la fiecare vânzător. Citește tabelul ofertei și opțiunii exacte.",
+            "Verifică dacă numerele descriu corpul, haina finită sau purtătorul recomandat. Sunt măsurători diferite. Dacă tabelul nu explică acest lucru, întreabă înainte să comanzi, în loc să alegi din obișnuință o mărime mai mare sau mai mică."
+          ]
+        },
+        {
+          "heading": "Măsoară o referință de încredere",
+          "paragraphs": [
+            "Pentru haine, compară cu o piesă proprie care îți vine cum dorești. Așaz-o întinsă și folosește aceleași puncte ca în diagrama vânzătorului. Notează unitățile și dacă lățimea este măsurată pe o singură parte sau în jurul corpului. Păstrează măsurătorile cu o fotografie rapidă a metodei.",
+            "Pentru corp, urmează ghidul relevant și ține banda la nivel, fără să o strângi pentru a obține mărimea preferată. O cămașă cambrată, un hanorac larg și o jachetă structurată au nevoie de lejerități diferite. Silueta dorită face parte din decizie, nu este un defect al tabelului."
+          ]
+        },
+        {
+          "heading": "Alege dimensiunile importante",
+          "paragraphs": [
+            "Pentru partea de sus, lățimea pieptului, lungimea, umărul și mâneca răspund la întrebări diferite. La pantaloni, verifică talia, înălțimea șezutului, lungimea interioară și cea totală. O singură cifră a taliei nu explică așezarea cracului, iar pieptul singur nu stabilește lungimea mânecii.",
+            "Ca exemplu, presupune că bluza de referință are 56 centimetri lățime la piept și 70 lungime. Una cu 56 și 64 poate avea o lățime similară, dar corpul vizibil mai scurt. Este un exemplu al metodei de comparație, nu o recomandare pentru o anumită mărime sau un produs."
+          ],
+          "bullets": [
+            "Confirmă unitățile de măsură",
+            "Compară măsurile corpului cu tabele pentru corp",
+            "Compară hainele întinse cu tabele pentru haine",
+            "Verifică mai multe dimensiuni esențiale potrivirii",
+            "Notează silueta dorită, lejeră sau ajustată"
+          ]
+        },
+        {
+          "heading": "Verifică încălțămintea separat",
+          "paragraphs": [
+            "Ghidul oficial recomandă folosirea piciorului mai mare când diferă și observă că etichetele de lungime nu descriu complet lățimea. Citește tabelul vânzătorului și verifică sistemul opțiunii selectate. Nu presupune că un număr EU, US sau UK se transferă perfect între toate ofertele.",
+            "Măsoară după instrucțiuni și consideră șosetele, lățimea și utilizarea prevăzută. Eticheta vizibilă într-o fotografie din depozit poate confirma ce s-a trimis, dar nu stabilește cum se simte pantoful pe picior. Nu trata o imagine a branțului ca tabel universal de conversie."
+          ]
+        },
+        {
+          "heading": "Folosește QC pentru o întrebare specifică",
+          "paragraphs": [
+            "Înainte de transport, compară eticheta vizibilă cu comanda. Dacă o dimensiune importantă rămâne nesigură, cere măsurarea cu puncte clare de început și sfârșit. De exemplu, lățimea pieptului pe plat, între cusături, în loc de simplul „verificați mărimea”.",
+            "Politica de inspecție LoloBuy are limite și nu promite o evaluare completă a potrivirii. Verifică dacă măsurarea sau fotografia suplimentară sunt disponibile pentru produs și dacă există un cost. Un set standard de imagini nu trebuie descris drept consultanță personalizată de mărimi."
+          ]
+        },
+        {
+          "heading": "Decide cât timp mai ai opțiuni",
+          "paragraphs": [
+            "Dacă eticheta primită diferă de selecție, documentează nepotrivirea cu comanda și fotografia. Dacă eticheta corespunde, dar măsura nu este potrivită, verifică prompt condițiile vânzătorului și procesul curent de retur. Situațiile diferă și trebuie descrise exact.",
+            "Măsurile reduc nesiguranța, dar nu elimină diferențe de croială, elasticitate, senzație a materialului sau preferință. Păstrează tabelul și notițele, astfel încât o potrivire bună să ajute următoarea cumpărare. Verifică din nou oferta la repetare, fiindcă alt vânzător sau altă versiune pot folosi alte măsuri."
+          ]
+        }
+      ],
+      "checklist": [
+        "Folosește tabelul ofertei exacte.",
+        "Păstrează consecvente unitățile și metodele.",
+        "Compară mai multe dimensiuni decisive.",
+        "Verifică eticheta primită și măsurătoarea cerută.",
+        "Rezolvă întrebările de potrivire înainte de transport internațional."
+      ],
+      "sourceIds": [
+        "sizing",
+        "qc",
+        "returns"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 605
+    },
+    {
+      "slug": "lolobuy-tracking-guide",
+      "title": "Urmărirea LoloBuy: diferențiază comanda de coletul internațional",
+      "description": "Citește corect etapele de cumpărare, depozit și colet și adună dovezi utile când o actualizare este neclară.",
+      "keyword": "urmărire lolobuy",
+      "category": "Urmărire",
+      "summary": "Starea comenzii și un scan al transportatorului descriu părți diferite ale călătoriei. Păstrează distincte referințele produsului, coletului intern și coletului internațional.",
+      "sections": [
+        {
+          "heading": "Știi ce urmărești?",
+          "paragraphs": [
+            "Un produs poate avea o comandă de cumpărare, o expediere internă a vânzătorului și un colet internațional ulterior. Sunt înregistrări legate, dar nu aceeași expediere. Un mesaj de livrare internă poate însemna sosirea în depozit, nu la domiciliul tău.",
+            "Creează o listă simplă pe măsură ce avansează comanda: număr de produs sau comandă, referința internă a vânzătorului dacă apare, înregistrarea depozitului și numărul coletului internațional. Astfel poți întreba despre etapa corectă fără a trimite suportului o captură din alt traseu."
+          ]
+        },
+        {
+          "heading": "Citește întâi etapele cumpărării",
+          "paragraphs": [
+            "Ghidul oficial de stări LoloBuy diferențiază așteptarea plății, procesarea, cumpărarea și expedierea de către vânzător. Procesarea privește achiziția; nu înseamnă că un transportator internațional mișcă deja coletul. Citește formularea stării înainte de a căuta o actualizare de peste hotare.",
+            "Același ghid descrie bunurile primite și inventarul după inspecție. Dacă transportatorul intern arată livrat, dar controlul depozitului nu s-a încheiat, înregistrările pot descrie etape consecutive, nu o contradicție. Verifică produsul și orice solicitare de confirmare pentru următoarea acțiune necesară."
+          ]
+        },
+        {
+          "heading": "Citește apoi etapele coletului",
+          "paragraphs": [
+            "După crearea coletului internațional, starea are propria succesiune. Pagina oficială descrie așteptarea plății, procesarea, ambalarea și expedierea. Cere și urmărirea modificărilor de cost după cântărirea finală. Un colet creat nu trebuie confundat cu unul expediat.",
+            "Folosește înregistrarea reală, nu doar existența unei referințe. O etichetă sau un număr pot fi pregătite înaintea următoarei mișcări vizibile. Când compari sistemele, observă ce pagină confirmă predarea și ce eveniment a înregistrat efectiv transportatorul."
+          ],
+          "bullets": [
+            "Referința achiziției sau comenzii",
+            "Referința coletului internațional",
+            "Numărul de urmărire al transportatorului",
+            "Ultimul eveniment, locul și momentul",
+            "Orice confirmare sau plată în așteptare"
+          ]
+        },
+        {
+          "heading": "Interpretează atent perioadele fără actualizări",
+          "paragraphs": [
+            "Un interval între scanări nu identifică singur cauza. Verifică estimarea actuală a rutei, ultimul eveniment și anunțurile oficiale relevante. Nu transforma durata obișnuită dintr-o postare veche într-un termen promis pentru coletul tău.",
+            "Evită deschiderea repetată a mai multor site-uri și tratarea fiecărei diferențe de exprimare ca eveniment nou. Păstrează o evidență datată a schimbărilor importante. Dacă etapa pare neconcordantă sau cere o acțiune, ridică problema concretă prin suportul comenzii sau coletului."
+          ]
+        },
+        {
+          "heading": "Trimite o întrebare utilă suportului",
+          "paragraphs": [
+            "Oferă identificatorul comenzii sau coletului, numărul de urmărire, ultimul eveniment și întrebarea precisă. De exemplu: „Coletul apare expediat, dar transportatorul nu arată predarea. Puteți confirma starea predării?”. Este mai ușor de soluționat decât „Unde este totul?”.",
+            "Ghidul LoloBuy trimite utilizatorii către zona de colete pentru urmărire după expediere. Folosește, unde se poate, întrebarea legată de înregistrarea afectată. Nu include date de cont fără legătură sau credențiale de plată într-un mesaj despre urmărire."
+          ]
+        },
+        {
+          "heading": "Păstrează dovezile până la livrare",
+          "paragraphs": [
+            "La sosire, verifică prompt exteriorul și conținutul. Păstrează ambalajul, eticheta și fotografii clare dacă un produs este greșit, lipsește sau este deteriorat. Compară primirea cu lista finală a coletului, nu cu o selecție anterioară ce poate include articole neexpediate.",
+            "Pagina oficială postvânzare cere descriere detaliată și imagini pentru produse greșite sau deteriorate, dar termenele sunt contradictorii. Acționează prompt și verifică termenul aplicabil în procesul actual de suport. Nu aștepta doar pentru că un ghid general pare să ofere mai mult timp."
+          ]
+        }
+      ],
+      "checklist": [
+        "Separă referințele interne și internaționale.",
+        "Verifică dacă coletul este creat, ambalat sau expediat.",
+        "Citește ultimul eveniment cu momentul său.",
+        "Trimite o întrebare concretă și documentată suportului.",
+        "Verifică livrarea prompt și păstrează dovezile relevante."
+      ],
+      "sourceIds": [
+        "status",
+        "buying",
+        "claims",
+        "freight-balance"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 555
+    },
+    {
+      "slug": "lolobuy-returns-refunds",
+      "title": "Retururi și rambursări LoloBuy: acționează în etapa potrivită",
+      "description": "Pregătește dovezile, verifică eligibilitatea la vânzător și diferențiază anularea, returnarea produsului și reclamația coletului.",
+      "keyword": "retururi rambursări lolobuy",
+      "category": "Asistență postvânzare",
+      "summary": "Decizia de retur depinde de produs, vânzător și etapa comenzii. Dovezile clare și o cerere promptă sunt mai utile decât presupunerea unei reguli pentru orice achiziție.",
+      "sections": [
+        {
+          "heading": "Identifică procesul necesar",
+          "paragraphs": [
+            "Anularea unei comenzi necumpărate, returnarea unui articol din depozit și raportarea unei probleme după livrarea internațională sunt proceduri diferite. Începe prin a verifica starea curentă a comenzii sau coletului. Butonul și informațiile relevante pot depinde de avansul tranzacției.",
+            "Paginile LoloBuy de anulare și retur descriu pași diferiți după stare și implicarea vânzătorului. O cerere nu este același lucru cu aprobarea. Citește răspunsul asociat și urmărește ce s-a acceptat, ce este în așteptare și ce acțiune mai trebuie să faci."
+          ]
+        },
+        {
+          "heading": "Păstrează dovezile exacte",
+          "paragraphs": [
+            "Ține împreună URL-ul produsului, opțiunea aleasă, confirmarea și fotografiile relevante. Dacă problema este eticheta de mărime greșită, arată opțiunea comandată și eticheta primită. Dacă sunt daune, arată o vedere generală clară și un detaliu al zonei afectate. Descrie diferența fără exagerare.",
+            "De exemplu, „Am comandat albastru L; fotografia depozitului arată negru cu etichetă M” identifică o nepotrivire verificabilă. „Calitate slabă” este mult mai puțin precis. Dacă imaginile nu stabilesc problema, cere dovezile lipsă înainte de alegerea soluției solicitate."
+          ],
+          "bullets": [
+            "Numărul comenzii și oferta sursei",
+            "Opțiunea și cantitatea selectate",
+            "Descrierea clară a problemei",
+            "Fotografii relevante ale propriei comenzii",
+            "Soluția cerută: clarificare, anulare, retur sau schimb"
+          ]
+        },
+        {
+          "heading": "Citește împreună eligibilitatea și termenul",
+          "paragraphs": [
+            "Pagina oficială de garanție a returului descrie condiții și o fereastră de cerere după intrarea în stoc. Precizează și necesitatea acordului vânzătorului. Alte pagini folosesc termene sau exprimări diferite și neclare. Verifică termenul și serviciul din comanda reală și raportează problema prompt.",
+            "Ambalajul și starea pentru revânzare pot conta. Nu cere eliminarea ambalajelor de care ai putea avea nevoie la un retur eligibil înainte de a înțelege condițiile. Produsele folosite, comenzile speciale și alte categorii pot avea reguli diferite; promisiunea unui retur necondiționat ar induce în eroare."
+          ]
+        },
+        {
+          "heading": "Întreabă ce costuri se aplică",
+          "paragraphs": [
+            "Îndrumarea garanției diferențiază motivul returului și discută transportul intern și taxele de serviciu. Oferta inițială de livrare gratuită a vânzătorului nu face obligatoriu gratuit un retur ulterior. Întreabă costurile cererii tale concrete înainte să accepți continuarea.",
+            "Păstrează răspunsul în comanda respectivă. Clarifică dacă suma include transportul înapoi, costul inițial intern și o taxă de serviciu. O reducere de procesare a platformei și transportul vânzătorului sunt lucruri distincte și nu trebuie combinate într-o afirmație vagă de „retur gratuit”."
+          ]
+        },
+        {
+          "heading": "Urmărește destinația și starea rambursării",
+          "paragraphs": [
+            "Ajutorul oficial descrie în general rambursările aprobate către soldul contului LoloBuy, cu o excepție specifică pentru anumite situații de plată originală. Creditul în cont și returnarea la o metodă externă sunt rezultate diferite. Verifică ce se aplică înainte să presupui apariția banilor în bancă.",
+            "Aprobarea vânzătorului, primirea articolului returnat și finalizarea rambursării pot fi momente separate. Păstrează referința coletului de retur dacă este oferită. Când întrebi despre întârziere, identifică ultimul pas încheiat, în loc să deschizi o cerere nouă fără istoricul existent."
+          ]
+        },
+        {
+          "heading": "Tratează separat problemele după livrare",
+          "paragraphs": [
+            "Pentru probleme după primire, instrucțiunile oficiale indică cererea postvânzare a coletului afectat și solicită descriere detaliată și fotografii. Păstrează ambalajul exterior și eticheta pe lângă imaginile produsului. Ele ajută la legarea daunelor sau nepotrivirii de expediere.",
+            "Pagina oficială conține termene contradictorii. Raportează problema prompt și obține termenul aplicabil direct din procesul actual. Ghidul nu promite aprobare, un timp universal de rambursare sau compensație pentru orice pierdere."
+          ]
+        }
+      ],
+      "checklist": [
+        "Verifică etapa actuală a comenzii sau coletului.",
+        "Documentează exact nepotrivirea sau deteriorarea.",
+        "Confirmă eligibilitatea, termenul și condițiile ambalajului.",
+        "Întreabă toate costurile de retur aplicabile.",
+        "Urmărește aprobarea și destinația reală a rambursării."
+      ],
+      "sourceIds": [
+        "refunds",
+        "cancellation",
+        "returns",
+        "claims",
+        "changes"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 577
+    },
+    {
+      "slug": "lolobuy-order-budget",
+      "title": "Bugetul comenzii LoloBuy: privește dincolo de prețul produsului",
+      "description": "Separă produsele, livrarea internă, serviciile opționale, conversia valutară și transportul internațional înainte de a te angaja la cumpărare.",
+      "keyword": "taxe lolobuy",
+      "category": "Buget",
+      "summary": "Un buget util separă sumele confirmate de estimări. Păstrează vizibile achiziția produselor și plata ulterioară a coletului ca două decizii legate.",
+      "sections": [
+        {
+          "heading": "Calculează prețul opțiunii pe care o vei cumpăra",
+          "paragraphs": [
+            "Prețul din catalog este un punct de plecare pentru comparație. Culoarea, mărimea, setul sau cantitatea alese pot avea alt preț actual în pagina oficială. Verifică configurația exactă înainte de bugetare, mai ales dacă oferta prezintă un interval de preț.",
+            "Compară suma și moneda în aceeași etapă. Prețul înregistrat al produsului, totalul de plată și extrasul cardului pot include componente diferite. Nu numi diferența taxă ascunsă înainte de a verifica cantitatea, transportul, conversia și serviciile selectate."
+          ]
+        },
+        {
+          "heading": "Separă cele două etape principale de plată",
+          "paragraphs": [
+            "Procesul oficial LoloBuy încasează mai întâi produsele și livrarea internă din China. Transportul internațional este tratat când bunurile stocate sunt solicitate într-un colet. Un cumpărător care bugetează doar prima plată poate ajunge în etapa depozitului fără bani suficienți pentru expediere.",
+            "Creează un tabel simplu cu fiecare cost și marchează-l confirmat sau estimat. Menține serviciile opționale vizibile, nu ascunse în prețul produsului. Posibilele taxe ale destinației au nevoie de rând separat, fiindcă nu sunt stabilite de prețul catalogului."
+          ],
+          "bullets": [
+            "Produsele și cantitățile selectate",
+            "Livrarea internă din China",
+            "Serviciile de cumpărare sau depozit alese",
+            "Transportul internațional și ambalarea",
+            "Taxele de plată sau conversie afișate la checkout",
+            "Posibile taxe fiscale sau de procesare la destinație"
+          ]
+        },
+        {
+          "heading": "Citește condițiile transportului intern",
+          "paragraphs": [
+            "Ajutorul oficial spune că articolele unui vânzător trimise și plătite împreună pot împărți o taxă internă, cu posibilă suplimentare pentru supragreutate. Este o condiție specifică, nu o promisiune că toate produsele din coș au o singură taxă.",
+            "Verifică ce vânzător furnizează fiecare produs și cum este grupată comanda. O cantitate mai mare poate schimba prețul sau transportul, mai ales la ofertele en-gros. Păstrează calculul comenzii curente, nu împărți un transport anterior între achiziții fără legătură."
+          ]
+        },
+        {
+          "heading": "Verifică plata și moneda",
+          "paragraphs": [
+            "Revizuiește metodele disponibile în plata oficială, moneda debitată și costurile afișate înainte de confirmare. Disponibilitatea poate depinde de cont și tranzacție. Lista generală a ajutorului nu stabilește că o anumită metodă va fi oferită astăzi pentru comanda ta.",
+            "Dacă furnizorul plății oferă conversie, compară suma finală și condițiile prezentate acolo. Păstrează chitanța împreună cu comanda. Nu promite un curs fix și nu presupune că conversia unei cumpărături anterioare se aplică următoarei."
+          ]
+        },
+        {
+          "heading": "Tratează reducerile ca pe ceva de verificat",
+          "paragraphs": [
+            "Îndrumările promoționale LoloBuy descriu trecerea ofertei vânzătorului în observații pentru a fi verificată de agent. Un banner sau o captură salvată nu dovedesc că opțiunea și cantitatea ta încă se califică. Notează condițiile și cere confirmare prin procesul comenzii.",
+            "Păstrează reducerea separată de bugetul normal până la confirmare. Evită să depinzi de o promoție de recomandare, cupon sau afirmație despre transport copiată din alt ghid. Acest site nu a oferit un credit garantat pentru utilizatori noi și nici un preț universal al transportului."
+          ]
+        },
+        {
+          "heading": "Folosește un interval pentru transportul incert",
+          "paragraphs": [
+            "Înainte de ambalare, greutatea și dimensiunile sunt estimări. Politica oficială regularizează suma inițială cu taxa reală a furnizorului logistic. Lasă loc pentru ajustare, în loc să cheltuiești întregul buget pe produse.",
+            "Ca exercițiu, presupune că produsele și transportul intern confirmate însumează 100 de unități într-o monedă, iar transportul este estimat la 30–45. Totalul provizoriu este 130–145 înainte de alte costuri aplicabile. Numerele sunt ipotetice și ilustrează metoda, nu prețuri sau o ofertă LoloBuy."
+          ]
+        },
+        {
+          "heading": "Fă din buget un instrument de decizie",
+          "paragraphs": [
+            "Dacă totalul probabil depășește limita, revizuiește selecția înainte de plată. Eliminarea unui articol mai puțin important poate fi mai simplă decât recuperarea banilor prin retur. Compară valoarea comenzii complete livrate, nu numărul de produse ieftine pe care le poți aduna.",
+            "După expediere, înlocuiește estimările cu taxele finale înregistrate. Păstrează diferența și explicația. Istoricul ajută la planificarea viitoare, ținând cont că data următoare pot diferi bunurile, dimensiunile, rutele și condițiile de schimb valutar."
+          ]
+        }
+      ],
+      "checklist": [
+        "Bugetează opțiunea exactă selectată.",
+        "Separă transportul intern de cel internațional.",
+        "Notează serviciile opționale și moneda debitată.",
+        "Folosește doar reducerile confirmate.",
+        "Păstrează rezervă pentru transportul incert și costurile destinației."
+      ],
+      "sourceIds": [
+        "buying",
+        "domestic",
+        "promotions",
+        "freight-balance",
+        "wholesale"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 652
+    },
+    {
+      "slug": "lolobuy-seller-and-review-checks",
+      "title": "Produse și recenzii LoloBuy: verifică dovezile din spatele unei oferte",
+      "description": "Evaluează detaliile sursei, relevanța recenziilor și limitele inspecției fără să tratezi o insignă, fotografie sau notă ca garanție.",
+      "keyword": "este lolobuy de încredere",
+      "category": "Decizii de cumpărare",
+      "summary": "Întrebarea utilă este ce demonstrează dovezile disponibile despre această tranzacție. Numele platformei nu răspunde singur la toate întrebările despre vânzător, produs sau colet.",
+      "sections": [
+        {
+          "heading": "Separă platforma de produs",
+          "paragraphs": [
+            "Informațiile LoloBuy descriu cumpărarea de pe platforme terțe, nu vânzarea directă a fiecărui articol prezentat. Acest catalog independent este încă un pas mai departe: organizează descoperirea. Păstrează rolurile clare când decizi cine poate răspunde unei întrebări sau rezolva o problemă.",
+            "Un link funcțional nu demonstrează autenticitatea, stocul, potrivirea sau livrarea viitoare. La fel, o reclamație despre un vânzător nu stabilește cauza tuturor problemelor platformei. Începe cu afirmația exactă pe care o evaluezi și partea responsabilă de acel proces."
+          ]
+        },
+        {
+          "heading": "Verifică oferta înaintea popularității",
+          "paragraphs": [
+            "Caută URL original clar, descriere coerentă, opțiuni identificabile și informații utile despre mărimi sau specificații. Compară opțiunea cu galeria. Un preț inițial mic poate fi pentru altă componentă decât produsul din imaginea principală.",
+            "Dacă mai mulți vânzători folosesc aceleași fotografii, acestea nu arată singure dacă bunurile sunt fabricate sau furnizate identic. Notează ce lipsește și pune o întrebare precisă. Un număr de popularitate sau un nume familiar de lot nu înlocuiește dovezile despre oferta exactă."
+          ],
+          "bullets": [
+            "Oferta originală și identitatea vânzătorului",
+            "Opțiunea și cantitatea exacte",
+            "Măsurători sau specificații relevante",
+            "Informații actuale despre retur",
+            "Întrebări fără răspuns care afectează cumpărarea"
+          ]
+        },
+        {
+          "heading": "Citește recenziile pentru relevanță",
+          "paragraphs": [
+            "O recenzie este mai utilă când poți identifica data, produsul sau serviciul discutat și dovezile concluziei. Un comentariu despre timpul de răspuns al suportului diferă de o evaluare a potrivirii pantofilor. Sosirea reușită a unui colet nu dovedește că fiecare produs din catalog este potrivit.",
+            "Caută declarații despre linkuri de recomandare, stimulente sau alte relații. Prezența lor nu face automat falsă recenzia, dar ajută la înțelegerea scopului. Nu transforma o promovare afiliată, o singură întâmplare sau o mărturie neverificată într-o recomandare universală."
+          ]
+        },
+        {
+          "heading": "Planifică ce poate stabili inspecția",
+          "paragraphs": [
+            "Pagina oficială de inspecție standard descrie verificări vizuale și excluderi importante. Nu promite autentificarea sau testarea funcțională a fiecărei categorii. Produsele sigilate și unele profesionale primesc tratament diferit. Citește limitele înainte de a cumpăra ceva a cărui valoare depinde de ceea ce serviciul nu testează.",
+            "Pentru haine, măsurile clare și construcția vizibilă pot răspunde multor întrebări. Pentru electronice sau produse legate de siguranță, o fotografie nu stabilește performanța internă ori conformitatea. Dacă dovezile necesare lipsesc, acea incertitudine trebuie inclusă în decizia de cumpărare."
+          ]
+        },
+        {
+          "heading": "Păstrează plata și comunicarea la locul potrivit",
+          "paragraphs": [
+            "Folosește site-ul oficial pentru checkout și întrebările comenzii sau coletului relevant pentru problemele tranzacției. Verifică domeniul înainte de autentificare. Catalogul nu are nevoie de parola ta, credențialele plății sau o conversație privată copiată în căutarea produselor.",
+            "Păstrează evidența opțiunii, plății, clarificărilor vânzătorului și cerințelor acceptate. Dacă se schimbă ceva, cere actualizarea în înregistrarea comenzii. Un istoric clar face întrebările ulterioare mai ușor de rezolvat decât mesaje împrăștiate fără referință la articol sau tranzacție."
+          ]
+        },
+        {
+          "heading": "Ia o decizie pe care o poți explica",
+          "paragraphs": [
+            "Scrie o notă scurtă despre motivul pentru care articolul îți satisface nevoia, dovezile care susțin asta, bugetul total și incertitudinile acceptate. Dacă decizia depinde de o întrebare neclară despre mărime, stare sau retur, rezolv-o înainte de plată.",
+            "O primă comandă mică poate limita opțional suma angajată în timp ce înveți procesul, dar nu certifică toți vânzătorii sau expedierile viitoare. Ghidul este o metodă de evaluare a dovezilor, nu un test personal și nici garanția lipsei riscurilor pe LoloBuy. Folosește ghidurile de comandă, QC și retur pentru următoarele verificări concrete."
+          ]
+        }
+      ],
+      "checklist": [
+        "Distinge rolurile catalogului, platformei și vânzătorului.",
+        "Verifică oferta exactă, nu popularitatea sa.",
+        "Analizează data, relevanța și stimulentele recenziilor.",
+        "Înțelege ce nu va verifica inspecția.",
+        "Păstrează decizia documentată și înregistrarea comenzii."
+      ],
+      "sourceIds": [
+        "service",
+        "qc",
+        "buying",
+        "returns"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 588
+    }
+  ]
+}

@@ -1,0 +1,1131 @@
+{
+  "ui": {
+    "nav": [
+      "Tootetabel",
+      "Kuidas see toimib",
+      "Juhendid",
+      "Artiklid",
+      "KKK"
+    ],
+    "register": "Mine LoloBuysse",
+    "language": "Keel",
+    "preview": "Kujunduse eelvaade",
+    "previewNote": "Esmane pilk saidile lolobuysheet.nl",
+    "eyebrow": "HEAD LEIUD. VÄHEM KERIMIST.",
+    "hero1": "Sinu järgmine leid.",
+    "hero2": "Üks tootetabel.",
+    "intro": "Avasta LoloBuy tootetabel. Sirvi rõivaid, tosse ja aksessuaare, võrdle lähtehindu ning ava järgmine leid LoloBuys.",
+    "search": "Otsi kogu kataloogist…",
+    "searchButton": "Otsi leide",
+    "photo": "Pildiotsing",
+    "popular": "Avasta:",
+    "tagline": "Üks kataloog. Sinu järgmine avastus.",
+    "source": "Tooted saidilt cnfanssp.com",
+    "independent": "Sõltumatu LoloBuy toodete avastamise sait",
+    "browse": "Avasta tootetabel",
+    "browseSub": "Veidi vähem otsimist. Palju rohkem leide.",
+    "all": "Kõik leiud",
+    "sort": "Sordi",
+    "sorts": [
+      "Valitud",
+      "Uusimad",
+      "Enim vaadatud",
+      "Hind: odavamad enne",
+      "Hind: kallimad enne"
+    ],
+    "count": "leidu",
+    "view": "Vaata toodet",
+    "buy": "Ava LoloBuys",
+    "details": "Toote üksikasjad",
+    "categories": {
+      "shoes": "Jalatsid",
+      "hoodies": "Dressipluusid",
+      "tshirts": "T-särgid",
+      "jackets": "Jakid",
+      "pants": "Püksid ja lühikesed püksid",
+      "headwear": "Peakatted",
+      "accessories": "Aksessuaarid",
+      "sets": "Lühikesed komplektid",
+      "electronics": "Elektroonika",
+      "other": "Muud tooted",
+      "jerseys": "Spordisärgid"
+    },
+    "previous": "Eelmine",
+    "next": "Järgmine",
+    "page": "Leht",
+    "empty": "Otsingule vastavaid leide pole.",
+    "reset": "Tühjenda filtrid",
+    "sourceSearch": "Otsi kogu lähtekataloogist",
+    "snapshot": "Uuenev kataloog saidilt cnfanssp.com. Toodete hinnad on CNY-des ega sisalda saatmis- ja teenustasusid. Kontrolli kehtivaid valikuid ja lõpphinda LoloBuys.",
+    "howTitle": "Leidmisest lahtipakkimiseni.",
+    "howSub": "Oled LoloBuys uus? Alusta neist kolmest sammust.",
+    "steps": [
+      [
+        "01",
+        "Leia midagi meeldivat",
+        "Sirvi kategooriaid ning kontrolli algset kuulutust, suurust ja tootefotosid."
+      ],
+      [
+        "02",
+        "Ava toode LoloBuys",
+        "Vali tootelingi kaudu soovitud variant ja vaata kehtivat hinda."
+      ],
+      [
+        "03",
+        "Kontrolli enne saatmist",
+        "Järgi LoloBuy laoprotsessi, vaata olemasolevaid QC-fotosid ja vali saatmine."
+      ]
+    ],
+    "guides": "Väikesest juhisest on palju abi.",
+    "guidesSub": "Kasulik teave enne esimest tellimust.",
+    "read": "Loe juhendit",
+    "allGuides": "Kõik juhendid",
+    "cta": "Leidsid järgmise lemmiku?",
+    "ctaSub": "Ava see LoloBuys ja telli endale.",
+    "ctaButton": "Vaata kõiki leide",
+    "footer": "Sõltumatu toodete avastamise sait. Me ei ole LoloBuy ametlik veebisait. Tootekuulutused ja fotod pärinevad saidilt cnfanssp.com. Ostud viiakse lõpule LoloBuys.",
+    "footerLinks": [
+      "Tootetabel",
+      "Ostujuhend",
+      "Pildiotsing",
+      "KKK"
+    ],
+    "back": "Tagasi tootetabelisse",
+    "sourceListing": "Algne lähtekuulutus",
+    "seller": "Müüja kuulutus",
+    "sourcePrice": "Lähtehind · CNY",
+    "productId": "Müüja toote ID",
+    "gallery": "Kuulutuse fotod",
+    "qc": "QC-fotod",
+    "qcNote": "Allikas pakub selle toote kuulutuse fotosid. Need ei ole kinnitatud lao kvaliteedikontrolli fotod. Enne saatmist vaata enda LoloBuy tellimuse QC-fotosid.",
+    "priceNote": "Ainult toote hind. Enne tellimist kontrolli LoloBuys laoseisu, valikuid ning saatmis- ja teenustasusid.",
+    "photoTitle": "Leia foto abil.",
+    "photoIntro": "Kasuta toodete leidmiseks ja võrdlemiseks lähtekataloogi.",
+    "photoState": "Pildiotsing allikas",
+    "photoNote": "cnfanssp.com avalikku pildiotsinguteenust ei ole kinnitatud. Fotode üleslaadimine avatakse alles siis, kui allika teenus on saadaval.",
+    "browseInstead": "Sirvi tooteid",
+    "faqTitle": "LoloBuy: vastused enne tellimist.",
+    "faqIntro": "Uuritud LoloBuy ametlikelt abilehtedelt. Kui ametlikud lehed erinevad, selgitab vastus, mida tuleb kontrollida.",
+    "guideLabel": "PRAKTILINE JUHEND",
+    "guideTitle": "Sinu esimene LoloBuy tellimus selgelt lahti seletatuna.",
+    "guideIntro": "Toote leidmisest laos kontrollimiseni: praktiline algus.",
+    "updated": "Üle vaadatud oktoobris 2026",
+    "related": "Veel avastamist",
+    "home": "Avaleht",
+    "aboutPhotos": "Lähtekuulutuse pildid",
+    "catalogLive": "Uuenev lähtekataloog",
+    "catalogCached": "Kuvatakse allika viimast täielikku koopiat.",
+    "catalogLoading": "Lähtekataloogi uuendatakse…",
+    "catalogError": "Allikas ei ole ajutiselt saadaval. Proovi uuesti või ava algne kataloog.",
+    "retry": "Proovi uuesti",
+    "loading": "Laadimine…",
+    "productError": "Toodet ei saanud laadida. Proovi uuesti või vaata algset kuulutust.",
+    "pageOf": "/",
+    "jump": "Mine lehele",
+    "go": "Mine",
+    "articlesLabel": "Artiklid",
+    "articlesTitle": "LoloBuy ostuteadmised põhjalikult.",
+    "articlesIntro": "Kümme praktilist juhendit LoloBuy ametlike abilehtede põhjal. Leia tooteid, kontrolli QC-d, koosta eelarve ja kavanda saatmist selgema teabega.",
+    "articleSources": "Ametlikud allikad",
+    "reviewed": "Üle vaadatud 20. oktoobril 2026",
+    "readArticle": "Loe artiklit",
+    "allArticles": "Kõik artiklid",
+    "contents": "Sellel lehel",
+    "checklist": "Praktiline kontrollnimekiri",
+    "summary": "Lühiülevaade",
+    "reading": "min lugemist",
+    "faqSearch": "Otsi küsimusi…",
+    "noQuestions": "Sobivaid küsimusi pole.",
+    "officialHelp": "Loe ametlikku juhist",
+    "skip": "Liigu sisu juurde",
+    "menu": "Menüü",
+    "close": "Sulge",
+    "languageSearch": "Vali keel",
+    "catalogNote": "Hinnad ja saadavus võivad muutuda.",
+    "articleFooter": "Sõltumatu toimetuslik juhend. Enne maksmist või saatmist kontrolli oma tellimusele kuvatud tingimusi.",
+    "notFound": "Toodet ei leitud",
+    "showMore": "Näita kõiki",
+    "findSteps": "LEIA. KONTROLLI. TELLI.",
+    "nextFind": "JÄRGMINE LEID ON SINU.",
+    "liveLabel": "Uuendatud allikast",
+    "faqCount": "uuritud vastust",
+    "catalogue": "Kataloog"
+  },
+  "faqs": [
+    {
+      "id": "what-is-lolobuy",
+      "category": "Alustamine",
+      "question": "Mida LoloBuy teeb?",
+      "answer": "LoloBuy on ostuvahendaja: annad müüja kuulutuse, valid toote, maksad ostu ja Hiina-sisese tarne eest ning vaatad laos toimunu üle enne rahvusvahelise saatmise korraldamist. Kauba tarnib müüja. Tootelink või tabelikirje on tellimuse kontrollimise lähtepunkt, mitte kinnitus praeguse laoseisu kohta.",
+      "sourceIds": [
+        "buying",
+        "service"
+      ]
+    },
+    {
+      "id": "place-order",
+      "category": "Alustamine",
+      "question": "Kuidas LoloBuy kaudu tellida?",
+      "answer": "Kleebi algne tootelink LoloBuysse, kontrolli imporditud kuulutust ning vali täpne värv, suurus ja kogus. Enne maksmist vaata üle toote hind, sisetarnekulu ja soovitud teenused. LoloBuy ametlik juhend käsitleb ostmist, laokontrolli ja rahvusvahelise paki esitamist eraldi etappidena.",
+      "sourceIds": [
+        "buying"
+      ]
+    },
+    {
+      "id": "manual-order",
+      "category": "Alustamine",
+      "question": "Mida teha, kui LoloBuy ei suuda tootelinki lugeda?",
+      "answer": "Ametlik ostujuhend kirjeldab käsitsi täidetavat ostuvahenduse tellimusvormi, kui automaatne import ei tööta. Sisesta tegelikud tooteandmed ja valitud variandid ning kontrolli tellimust enne esitamist. Ära asenda turuplatsi toote ID-d tabeli sisemise leheküljenumbriga: need tähistavad erinevaid kirjeid.",
+      "sourceIds": [
+        "buying"
+      ]
+    },
+    {
+      "id": "domestic-delivery",
+      "category": "Tellimused ja maksed",
+      "question": "Kas mitu toodet võivad jagada üht Hiina-sisest tarnetasu?",
+      "answer": "LoloBuy sisetarne KKK kirjeldab üht tasu, kui sama müüja tooted esitatakse ja tasutakse koos. Ebatavaliselt suur või raske tellimus võib vajada lisamakset. See ei ühenda automaatselt eri müüjate tasusid ega hõlma rahvusvahelist saatmist.",
+      "sourceIds": [
+        "domestic"
+      ]
+    },
+    {
+      "id": "seller-promotion",
+      "category": "Tellimused ja maksed",
+      "question": "Kuidas paluda müüja soodustuse rakendamist?",
+      "answer": "Kirjuta tegelik soodustus või tasuta sisetarne pakkumine tellimuse märkustesse, et ostuvahendaja saaks selle müüjaga kinnitada. Ametlik abi kirjeldab ka tellimuspäringu kasutamist, kui pakkumine jäi märkimata. Soodustus tuleb kontrollida; tabel ei saa lubada vana pakkumise kehtivust.",
+      "sourceIds": [
+        "promotions"
+      ]
+    },
+    {
+      "id": "change-order",
+      "category": "Tellimused ja maksed",
+      "question": "Kas pärast tellimist saab muuta suurust või värvi?",
+      "answer": "Enne müüja väljasaatmist saab LoloBuy sõnul muudatuse üle läbi rääkida. Pärast väljasaatmist kirjeldab abileht võimaliku lahendusena tagastust laost ja uut tellimust koos tagastustarne kuludega. Saada taotlus kohe õige tellimuse juures ja oota nõusolekut, enne kui eeldad variandi muutumist.",
+      "sourceIds": [
+        "changes"
+      ]
+    },
+    {
+      "id": "confirmation-message",
+      "category": "Tellimused ja maksed",
+      "question": "Mida tähendab „Pending for Confirmation”?",
+      "answer": "Mõni tellimuse detail vajab sinu kinnitust. Loe tellimusele lisatud teadet ja vasta sellele. Ametlik abi suunab ostetud tellimuse küsimused ostuvahenduse tellimuste ning laoetapi küsimused „My Warehouse” jaotisse, kus võidakse paluda vastuvõtu või tagastamise otsust. Menüü sõnastus võib erineda; jälgimisuuenduse ootamine ei asenda vastust.",
+      "sourceIds": [
+        "confirmation",
+        "confirmation-path"
+      ]
+    },
+    {
+      "id": "received-in-stock",
+      "category": "Ladu ja QC",
+      "question": "Mis vahe on olekutel „Received” ja „In Stock”?",
+      "answer": "Ametlikus olekujuhendis tähendab „Received”, et ladu on müüja paki vastu võtnud ja kontroll käib. „In Stock” tähendab, et kvaliteedikontroll on lõpetatud ning kaup asub sinu laovarus. Lao vastuvõtt ei tähenda seega, et sinu QC ülevaatus või rahvusvaheline saatmine oleks juba lõpetatud.",
+      "sourceIds": [
+        "status"
+      ]
+    },
+    {
+      "id": "qc-checks",
+      "category": "Ladu ja QC",
+      "question": "Mida standardne QC kontrollib?",
+      "answer": "LoloBuy standardkontroll vaatab nähtavaid tellimuse andmeid, näiteks stiili, kogust, värvi, suurust, mudelit ja ilmset kahjustust. Loe valitud kontrollteenust koos oma tellimuse fotodega. Visuaalne kontroll ei taga ehtsust, täpset sobivust ega pikaajalist vastupidavust.",
+      "sourceIds": [
+        "qc"
+      ]
+    },
+    {
+      "id": "inspection-exclusions",
+      "category": "Ladu ja QC",
+      "question": "Kas kinnised tooted ja elektroonika testitakse täielikult?",
+      "answer": "Ei. Kontrollireeglid kirjeldavad kinniste toodete erandeid ning välistavad professionaalse elektroonika ja seotud kaupade ehtsuse, funktsiooni ja kvaliteedi testimise. Kontrollita valiku korral vaatab ladu piiranguid, kuid ei kontrolli toodet ega paku QC-fotosid. Enne tulemusele tuginemist vaata valitud teenuse tingimusi.",
+      "sourceIds": [
+        "qc"
+      ]
+    },
+    {
+      "id": "qc-photos",
+      "category": "Ladu ja QC",
+      "question": "Kas saan tellida rohkem QC-fotosid?",
+      "answer": "Teenuse ülevaade kirjeldab lisafotosid taotluse alusel; fototeenuse leht pakub ka teisest kvaliteedikontrolli, kui kontroll enne ladustamist vahele jäeti. Ametlikud lehed annavad erineva standardfotode arvu. Kontrolli valitud teenust ning küsi konkreetset puuduvat vaadet või mõõtu, eeldamata kõigile tellimustele sama pildiarvu.",
+      "sourceIds": [
+        "service",
+        "photos",
+        "qc"
+      ]
+    },
+    {
+      "id": "storage-period",
+      "category": "Ladu ja QC",
+      "question": "Kui kaua võivad tooted LoloBuy laos olla?",
+      "answer": "Eraldi ladustamisleht ja praegune olekujuhend märgivad tavakaubale 180 päeva, vanem ostujuhend aga 90. Sobitamata erakorralistel pakkidel on eraldi reeglid. Kontrolli oma toote juures kuvatud tähtaega ja korralda saatmine või pikendus enne selle lõppu; ära tugine ainult vanemale juhendile.",
+      "sourceIds": [
+        "storage",
+        "status",
+        "buying"
+      ]
+    },
+    {
+      "id": "consolidate",
+      "category": "Saatmine ja jälgimine",
+      "question": "Kas saan mitu ostu saata ühe pakina?",
+      "answer": "Ostujuhend kirjeldab laos olevate toodete valimist „My Warehouse” jaotises ja nende koos saatmiseks esitamist. Kontrolli, et kõik valitud kaubad oleksid vajalikud kontrollid läbinud ning valitud marsruut lubaks vastavat pakki. Ühendamine muudab pakendatud saadetist, kuid ei taga väiksemat veotasu.",
+      "sourceIds": [
+        "buying"
+      ]
+    },
+    {
+      "id": "remove-packaging",
+      "category": "Saatmine ja jälgimine",
+      "question": "Kas LoloBuy saab enne saatmist karbid eemaldada?",
+      "answer": "Pakendi eemaldamise teenuse saab valida saatmist esitades. Ametlik kirjeldus ütleb, et vajalik kaitsepakend säilitatakse. Kui vajad algseid karpe kingituseks, säilitamiseks või võimalikuks tagastuseks, kaalu seda enne eemaldamist. Lõplik pakend ja veotasu sõltuvad kaubast ning valitud saatmisest.",
+      "sourceIds": [
+        "packaging"
+      ]
+    },
+    {
+      "id": "shipping-price",
+      "category": "Saatmine ja jälgimine",
+      "question": "Miks võib lõplik saatmistasu hinnangust erineda?",
+      "answer": "Algne veotasu põhineb hinnangulisel kaalul ning valitud sihtkohal ja marsruudil. Pakkimine võib muuta kaalu ja mõõtmeid ning lõpparvestus lähtub logistikaettevõtte tasust. LoloBuy kirjeldab enammakse tagastamist või lisamakse küsimist, kui tegelik veotasu erineb. Vaata lõplikku pakkumise hinda ja kontoteadet.",
+      "sourceIds": [
+        "weight",
+        "freight-balance"
+      ]
+    },
+    {
+      "id": "volumetric-weight",
+      "category": "Saatmine ja jälgimine",
+      "question": "Mis on mahukaal?",
+      "answer": "Mahukaal teisendab paki mõõtmed kaaluks, mida kasutatakse mahuka kauba hinnastamisel. LoloBuy abi eristab marsruudipõhiseid valemeid ning märgib, et arvestuskaal võib olla tegelikust ja mahukaalust suurem. Kasuta valitud marsruudi jagajat ja ümardusreegleid, mitte üldist kilohinna väidet.",
+      "sourceIds": [
+        "weight"
+      ]
+    },
+    {
+      "id": "supplemental-payment",
+      "category": "Saatmine ja jälgimine",
+      "question": "Mida teha täiendava saatmismakse teatega?",
+      "answer": "Ava vastav pakk ning vaata muudetud tasu ja kinnitustaotlust. LoloBuy lisamaksete reeglites on erinevad piirmäärad ja juhtumid, kus pakk võidakse ootele jätta või tühistada. Vasta oma pakile näidatud tähtajaks ja tasu kinnitatud jääk; ära käsitle algset hinnangut lõpphinnana.",
+      "sourceIds": [
+        "freight-balance"
+      ]
+    },
+    {
+      "id": "tracking",
+      "category": "Saatmine ja jälgimine",
+      "question": "Kust saan rahvusvahelist pakki jälgida?",
+      "answer": "Ametlik ostujuhend suunab pärast väljasaatmist jaotisse My LoloBuy → Parcels. Olekujuhend eristab „Packed” ja „Shipped” olekut: pakitud saadetis võib oodata lõpliku kaalu kinnitamist, väljasaatmisel on jälgimisnumber ja pakk on vedajale üle antud. Loe nii vedaja viimast sündmust kui ka konto olekut.",
+      "sourceIds": [
+        "buying",
+        "status"
+      ]
+    },
+    {
+      "id": "cancellation",
+      "category": "Tagastused ja müügijärgne tugi",
+      "question": "Kas saan tellimuse enne lattu jõudmist tühistada?",
+      "answer": "Tühistamine sõltub tellimuse praegusest etapist. Kasuta vastava tellimuse tühistamise või tagastuse/tagasimakse valikut. Kui kaup on juba ostetud, võib vaja olla müüja kinnitust; taotluse esitamine ei ole tagasimakse heakskiit. Kontrolli vastust enne asendusostu tegemist.",
+      "sourceIds": [
+        "cancellation",
+        "refunds"
+      ]
+    },
+    {
+      "id": "eligible-return",
+      "category": "Tagastused ja müügijärgne tugi",
+      "question": "Mida hõlmab LoloBuy viiepäevane tagastusreegel?",
+      "answer": "Eraldi reegel kirjeldab sobivate kaupade puhul 120-tunnist taotlusakent, mis algab laovaru oleku saabumisele järgnevast tunnist. Kehtivad endiselt müüja nõusolek, toote seisukord ja nõutav pakend. Põhjuseta tagastus võib hõlmata mõlemat sisetarnekulu ja käsitlustasu. Kontrolli sobivust ning tegelikku taotluslehte kohe.",
+      "sourceIds": [
+        "returns"
+      ]
+    },
+    {
+      "id": "refund-destination",
+      "category": "Tagastused ja müügijärgne tugi",
+      "question": "Kuhu kinnitatud tagasimakse saadetakse?",
+      "answer": "Tagastusabi kirjeldab tavaliselt kinnitatud tagasimaksete kandmist LoloBuy konto saldole. Eraldi on kitsas algse makseviisi erand teatud kinnitust ootavatele PayPali tellimustele. See ei tähenda, et iga tagasimakse läheb otse pangakaardile või et kõik makseviisid on praegu saadaval.",
+      "sourceIds": [
+        "refunds"
+      ]
+    },
+    {
+      "id": "delivery-problem",
+      "category": "Tagastused ja müügijärgne tugi",
+      "question": "Mida teha, kui saabunud pakk on kahjustatud või vale?",
+      "answer": "Ava mõjutatud pakk jaotises My LoloBuy → Parcels ning vali müügijärgse toe taotlus. Kirjelda probleemi ning säilita selged paki- ja tootefotod. Ametlikus artiklis on vastuolulised nõudetähtajad, sealhulgas varasem hoiatus, seega teata probleemist kohe ja küsi juhtumipõhist kinnitust, ootamata üldist tähtaega.",
+      "sourceIds": [
+        "claims"
+      ]
+    },
+    {
+      "id": "sizing",
+      "category": "Tootevalik",
+      "question": "Kuidas valida rõiva või jalatsi suurust?",
+      "answer": "LoloBuy suurusejuhend hoiatab, et poodide standardid võivad erineda. Võrdle tegeliku müüja mõõdutabelit, ühikuid ja valitud varianti oma mõõtude või hästi sobiva esemega. Teisendustabelid on viited, mitte garantii, et sama silt sobib iga müüja juures. Küsi puuduvaid mõõte enne tellimist.",
+      "sourceIds": [
+        "sizing"
+      ]
+    },
+    {
+      "id": "1688",
+      "category": "Tootevalik",
+      "question": "Kas 1688 tellimustel on samad ostu- ja kontrollireeglid?",
+      "answer": "Ametlik 1688 juhend nõuab müüja miinimumkoguse täitmist; hinnad ja sisetarne võivad kogusest sõltuda. Kontrollireeglid eristavad valimiga kontrollitavaid A-tüüpi tooteid ja standardse QC-ta B-tüüpi tooteid. Enne maksmist kinnita kogus, kontrolli ulatus ja tagastustingimused, eeldamata tavalise jaeostu käsitlust.",
+      "sourceIds": [
+        "wholesale",
+        "qc"
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "slug": "using-lolobuy-spreadsheet",
+      "title": "Kuidas kasutada LoloBuy tootetabelit: lingist kasuliku valikuni",
+      "description": "Leia tooteid kategooria järgi, võrdle täpset kuulutust ja säilita vajalikud andmed enne LoloBuys avamist.",
+      "keyword": "LoloBuy tootetabel",
+      "category": "Alustamine",
+      "summary": "Kasulik tabel aitab otsingut kitsendada. Kasulik valik säilitab täpse toote, variandi ja vastuseta küsimused, mida tellimisel vajad.",
+      "sections": [
+        {
+          "heading": "Alusta ostuotsusest, mitte pikast nimekirjast",
+          "paragraphs": [
+            "LoloBuy tootetabel aitab tooteid avastada. Saad sirvida kategooriat, vaadata pilte ja liikuda kuulutuse kaudu järgmisse etappi. See ei tähenda, et avaldaja oleks iga toote ostnud, müüjat testinud või sinu suuruse reserveerinud. Iga kirje on kontrollimist vajav vihje.",
+            "Enne otsimist pane kirja vajalik tooteliik, olulised mõõdud ja ligikaudne eelarve. Musta lukuga kapuutsipluusi otsimine on kasulikum kui kõigi ilusate rõivalinkide kogumine. Täpsem küsimus aitab märgata ka kuulutusest puuduvat olulist teavet."
+          ]
+        },
+        {
+          "heading": "Säilita algne tooteidentiteet",
+          "paragraphs": [
+            "Kataloogilehe aadressis olev number võib olla kohalik kirjenumber. See võib erineda ostulingi turuplatsi toote ID-st. Ära muuda numbreid käsitsi, et link sobiv välja näeks. Kasuta vastava toote nuppu ja võrdle avanenud kaupa soovitud kuulutusega.",
+            "Salvesta algne müüja URL koos valitud variandiga. Ekraanipilt säilitab kasuliku vaate, kuid sellest on vähem abi, kui ei selgu müüja, suurus või värv. Kui link avab teise toote või tühja kuulutuse, peatu ja kontrolli seda."
+          ]
+        },
+        {
+          "heading": "Võrdle võrreldavaid variante",
+          "paragraphs": [
+            "Alghind võib kehtida odavaimale variandile, ühele tarvikule või teisele kogusele. Võrdle eri kuulutustes sama konfiguratsiooni. Kaheosaline komplekt ja üks pluus ei ole mõistlik hinnavõrdlus, isegi kui pisipildid sarnanevad.",
+            "Kontrolli, kas galerii näitab valitud värvi ja kas mõõdutabel on olemas. Samad fotod eri müüjatel ei tõenda sama valmistust või laoseisu. Märgi võrdlusse olemasolev tõendus ja jäta olulisele teadmata asjaolule nähtav koht."
+          ],
+          "bullets": [
+            "Täpne toode ja müüja URL",
+            "Valitud suurus, värv ja kogus",
+            "Selle variandi praegune hind",
+            "Mõõdud või mõõdutabeli viide",
+            "Üks lahendamata küsimus enne tellimist"
+          ]
+        },
+        {
+          "heading": "Liigu ametliku ostuprotsessi juurde",
+          "paragraphs": [
+            "LoloBuy ostujuhend kirjeldab turuplatsi lingi esitamist, valikute tegemist ning toote ja sisetarne eest maksmist. Samuti on käsitsi vorm juhuks, kui andmeid ei saa automaatselt lugeda. Lingi õnnestunud avamine on seega alles tellimuse kontrollimise algus.",
+            "Ametlikul tootelehel kontrolli uuesti pilti, variandi teksti ja kogust. Kataloog ei taga laoseisu ega säilita valikut, mida sa kassas pole teinud. Kirjuta erinõue piisavalt täpselt, näiteks konkreetne värvinimi või mõõtu puudutav küsimus."
+          ]
+        },
+        {
+          "heading": "Erista kuulutuse fotosid enda QC-st",
+          "paragraphs": [
+            "Müüja galerii selgitab pakkumist. Varasem laofoto võib näidata kellegi teise toodet. Sinu tellimusele lisatud kontrollipildid on tõendus, mida enne selle kauba välismaale saatmist vaadata. Need kolm pildiliiki vastavad eri küsimustele ega ole omavahel asendatavad.",
+            "Valiku andmed peaksid tellimusega kaasas käima. Kauba lattu jõudes võrdle salvestatud varianti nähtava suurusesildi, värvi ja kogusega. Erinevust on lihtsam selgitada, kui algne valik ja tellimuse viide on koos."
+          ]
+        },
+        {
+          "heading": "Kasuta valikut ka pärast ostmist",
+          "paragraphs": [
+            "Jäta alles tugevamad kandidaadid ja märgi, miks need võrdluse läbisid. Ühel pluusil võib olla selgem mõõdutabel, teisel aga lahendamata materjaliküsimus. Nii muutub lingikogu otsuseks, mille juurde saab uurimist alustamata tagasi tulla.",
+            "Enne ostmist loe tellimise ja eelarve juhendeid. Enne paki esitamist loe QC ja saatmise juhendeid. Tabel on kasulikum, kui ühendab need etapid, mitte ei esita tootehinda kohale toimetatud tellimuse kogukuluna."
+          ]
+        }
+      ],
+      "checklist": [
+        "Salvesta täpne lähte-URL ja variant.",
+        "Võrdle samu koguseid ja konfiguratsioone.",
+        "Selgita puuduvad mõõdud enne maksmist.",
+        "Kontrolli imporditud kuulutust LoloBuys.",
+        "Vaata enda tellimuse QC-d enne saatmist."
+      ],
+      "sourceIds": [
+        "buying",
+        "qc"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 429
+    },
+    {
+      "slug": "how-to-order-on-lolobuy",
+      "title": "Kuidas LoloBuys tellida: tootelingid, valikud ja makseetapid",
+      "description": "Järgi tellimust turuplatsi lingist laokontrolli ja eraldi esitatava rahvusvahelise pakini.",
+      "keyword": "kuidas LoloBuys tellida",
+      "category": "Tellimine",
+      "summary": "Kontrolli toodet enne maksmist, laotõendeid enne saatmist ja paki hinda enne väljasaatmist. Iga etapp vastab eri küsimusele.",
+      "sections": [
+        {
+          "heading": "Alusta ametlikul saidil",
+          "paragraphs": [
+            "Registreerumiseks, kontole sisenemiseks ja maksmiseks kasuta ametlikku LoloBuy veebisaiti. See sõltumatu kataloog aitab avastada tooteid; see ei küsi sinu parooli ega töötle tellimust. Kontrolli tootelingi sihtkohta ning hoia ostuvestlus vastava tellimuse juures.",
+            "Ametlik ostujuhend kirjeldab alustamist toetatud Hiina turuplatsi tootelingist. Valitud kauba tarnib selle kuulutuse müüja. See vahe on oluline, sest ostuteenuse pakkuja ja müüja ei kontrolli tehingu samu osi."
+          ]
+        },
+        {
+          "heading": "Kontrolli imporditud toodet",
+          "paragraphs": [
+            "Kleebi algne tootelink või kasuta kataloogi sobivat LoloBuy nuppu. Enne valikuid võrdle avanenud lehte allikaga. Kontrolli põhipilti, nime, olemasolevaid müüjaandmeid, värvi, suurust ja kogust. Ära tugine ainult pildile.",
+            "Kui avaneb käsitsi ostuvahenduse vorm, tuleb ametliku juhendi järgi andmed käsitsi täita. Kasuta tegelikku kuulutust, ära arva puuduvaid variante. Kui vajalik detail on ebaselge, täpsusta seda tellimuspäringu kaudu enne ostu jätkamist."
+          ],
+          "bullets": [
+            "Toode vastab algsele URL-ile",
+            "Variandi tekst vastab soovitud värvile ja suurusele",
+            "Kogus ja ühikuhind käsitlevad sama konfiguratsiooni",
+            "Erinõuded on selgelt kirjas"
+          ]
+        },
+        {
+          "heading": "Mõista esimest makset",
+          "paragraphs": [
+            "Ametlik protsess eraldab toote ja Hiina-sisese tarne hilisemast rahvusvahelisest pakist. Vaata esimese makse read ükshaaval üle. Sihtkoha valimine ostu ajal ei tähenda, et toote kogusumma sisaldaks kõiki sinna toimetamise kulusid.",
+            "Kontrolli kehtivaid makseviise, valuutasid ja lisateenuseid kassas. Abilehe üldloend ei taga iga meetodi saadavust sinu kontole või tellimusele. Salvesta maksekinnitus ja võrdle seda olekuga, selle asemel et aeglase värskenduse tõttu uuesti maksta."
+          ]
+        },
+        {
+          "heading": "Vasta tellimuse küsimustele",
+          "paragraphs": [
+            "LoloBuy „Pending for Confirmation” olek märgib täpsustamist vajavat teavet. Abileht juhib tellimuse juhiste juurde. Loe tegelikku küsimust ja vasta sellele, sest see võib määrata, kas ostumeeskond saab edasi tegutseda.",
+            "Muudatuste juhend eristab välja saatmata ja juba saadetud kaupu. Enne saatmist saab müüjalt muudatust küsida; hiljem võib vaja olla tagastust ja uut tellimust. Taotletud muudatus pole tehtud enne, kui tellimuse kirje seda kinnitab."
+          ]
+        },
+        {
+          "heading": "Vaata saabumine ja kontroll üle",
+          "paragraphs": [
+            "Lattu saabumine ja lõpetatud kontroll on eri verstapostid. Leia toode laoalast ning võrdle fotosid ja varianti ostuga. Kontrolli esmalt identiteeti ja seejärel enda jaoks olulisi nähtavaid detaile. Lahenda ilmne erinevus enne rahvusvahelisse pakki lisamist.",
+            "Ära eelda kõigile toodetele ühesugust kontrolli. Standardkontrolli reeglid kirjeldavad kinniste kaupade piiranguid ja mõne 1688 tellimuse erikäsitlust. Vajadusel kontrolli konkreetse mõõdu või vaate saadavust, selle asemel et pidada üldist QC-pilti kõige tõendiks."
+          ]
+        },
+        {
+          "heading": "Esita pakk eraldi otsusena",
+          "paragraphs": [
+            "Ametlik protsess juhendab valima laokaubad, sisestama tarneandmed ja valima olemasoleva saatmisviisi. Vaata koos üle sihtkoht, piirangud, pakkimine ja veotasu ettemakse. Ostetud toode ei ole automaatselt väljasaatmiseks valmis rahvusvaheline pakk.",
+            "Lõplik veotasu võib pärast pakkimist ja logistika mõõtmist erineda. Jälgi paki kirjes muudatusi ja kinnitustaotlusi. Pärast väljasaatmist jälgi saadetist pakkide jaotises, hoia tellimuse viited alles ning kontrolli saabunud sisu viivitamata."
+          ]
+        }
+      ],
+      "checklist": [
+        "Kinnita algne toode ja täpne variant.",
+        "Vaata toote- ja sisetarnekulud üle.",
+        "Vasta kinnitust ootavatele küsimustele.",
+        "Kontrolli laofotosid ja lahendamata probleeme.",
+        "Vaata eraldi rahvusvahelise paki pakkumine üle."
+      ],
+      "sourceIds": [
+        "buying",
+        "confirmation",
+        "changes",
+        "qc",
+        "freight-balance"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 411
+    },
+    {
+      "slug": "lolobuy-qc-photos",
+      "title": "LoloBuy QC-fotod: praktiline kontrollnimekiri enne saatmist",
+      "description": "Erista müüjafotosid enda laokontrollist ning kontrolli identiteeti, nähtavat seisukorda ja puuduvaid tõendeid.",
+      "keyword": "LoloBuy QC-fotod",
+      "category": "Kvaliteedikontroll",
+      "summary": "Alusta tellitud tootest ja variandist. Olemasolevad vaated aitavad otsustada, mis on selge, mis vajab lisafotot ja mis tuleb enne saatmist lahendada.",
+      "sections": [
+        {
+          "heading": "Tee kindlaks, mida vaatad",
+          "paragraphs": [
+            "Tootegalerii kuulub müüja pakkumise juurde. Näidis-QC võib näidata varasemat tellimust. Sinu laofotod käsitlevad sinu ostuks vastu võetud kaupa. Hoia need liigid otsustamisel lahus, eriti mitme värvi, versiooni või suurusega toodetel.",
+            "Alusta tellimuse viite, toote ja variandi sobitamisest. Vale versiooni detailne pilt ei anna vajalikku kindlust. Kui pildiseeriat ei saa sinu laotootega seostada, küsi seost enne välimuse hindamist."
+          ]
+        },
+        {
+          "heading": "Kontrolli identiteeti enne pisidetaile",
+          "paragraphs": [
+            "Vaata esmalt suurust, värvi, kogust ja mudelit. Otsi järjepidevaid silte ning sama toote vaateid. Ilus pildiseeria võib siiski näidata vale suurust või puudulikku komplekti. Võrdle salvestatud tellimusvalikuga, mitte mäluga.",
+            "Jalatsipaari puhul vaata mõlemat jalatsit ja nähtavaid suurusi. Rõival kontrolli valitud värvi ja silti. Koti või tarvikukomplekti puhul vaata oodatud osade olemasolu. Need on praktilised kontrollisammud, mitte garantii kõigi peidetud detailide ülevaatamisest."
+          ]
+        },
+        {
+          "heading": "Kasuta kategooriale sobivat nimekirja",
+          "paragraphs": [
+            "Rõivaste puhul on kasulikud üldkuju, esi- ja tagakülg, õmblused, trükk või tikand ning sobivust määrav mõõt. Jalatsitel vaata paari koos, nähtavat ehitust ja soovitud suurust. Kottide sulgurid, sangad ja sisemus vastavad eri küsimustele.",
+            "Pane kirja ainult otsust mõjutavad detailid. Pikk üldloend võib juhtida tähelepanu kõrvale ühest puuduvast mõõdust või katkisest sulgurist. Kui eestvaade on selge, kuid tagantvaade puudub, küsi puuduvat vaadet, mitte sama nurga uut üldpilti."
+          ],
+          "bullets": [
+            "Kinnita toode ja valitud variant",
+            "Vaata nähtavat seisukorda ja valmistust",
+            "Võrdle soovitud mõõte",
+            "Erista puuduvaid vaateid nähtud vigadest"
+          ]
+        },
+        {
+          "heading": "Mõista standardteenuse piire",
+          "paragraphs": [
+            "LoloBuy standardkontrolli leht kirjeldab välimuse kontrolli ja erandeid. Kinniseid esemeid ei avata alati ning teatud professionaalsete või elektrooniliste toodete ehtsust, toimimist ja kvaliteeti ei kontrollita. Mõne 1688 tellimuse puhul kehtib valimkontroll või teistsugune reegel.",
+            "Ametlikel lehtedel pole ühtset fotokvooti: kontrollileht ja üldine teenuseleht annavad erinevad arvud. Kontrolli oma tellimusega seotud teenust, eeldamata kindlat arvu. Oluline on, kas olemasolev tõendus vastab sinu otsuse jaoks vajalikule küsimusele."
+          ]
+        },
+        {
+          "heading": "Küsi konkreetset lisavaadet",
+          "paragraphs": [
+            "Täpses taotluses on tellimus, pildistatav koht ja põhjus. Näiteks: „Palun näidake suurusesilti ning mõõtke rõiva rinnalaiust tasapinnaliselt õmblusest õmbluseni.” See on selgem kui küsida, kas toode on hea. Kontrolli enne lisatööd saadavust ja tasu.",
+            "Kasuta sama mõõtmismeetodit mis müüja tabel. Rõiva tasapinnaline laius ja keha ümbermõõt on erinevad. Hoia foto ja mõõt koos, et arvu ei peetaks ekslikult teise suuruse või toote mõõduks."
+          ]
+        },
+        {
+          "heading": "Tee dokumenteeritud otsus",
+          "paragraphs": [
+            "Jaga leiud kinnitatuks, ebaselgeks ja vastuvõetamatuks. Ebaselguse korral küsi tõendit. Kui kaup erineb tellimusest, kasuta enne rahvusvahelist saatmist sobivat toe- või tagastusprotsessi. Hoia alles lühike probleemikirjeldus ja seda näitavad fotod.",
+            "Fotod ei tõenda kõiki materjaliomadusi, mugavust, vastupidavust ega sisemist toimimist. Nähtava seisukorra kinnitamine on kitsam otsus. Loe tagastustingimusi kauba veel laos olles ning ära pea edukat QC-d tolli või rahvusvahelise tarne garantiiks."
+          ]
+        }
+      ],
+      "checklist": [
+        "Seosta fotod enda tellimusega.",
+        "Kontrolli esmalt suurust, värvi, mudelit ja kogust.",
+        "Küsi konkreetset puuduvat vaadet või mõõtu.",
+        "Loe kontrollteenuse tingimusi ja erandeid.",
+        "Lahenda olulised küsimused enne paki esitamist."
+      ],
+      "sourceIds": [
+        "qc",
+        "photos",
+        "service",
+        "sizing"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 423
+    },
+    {
+      "slug": "lolobuy-shipping-costs",
+      "title": "LoloBuy saatmiskulud: võrdle tervet pakki",
+      "description": "Mõista hinnangulist, tegelikku ja mahukaalu ning võrdle marsruute sama sihtkoha, sisu ja pakkimisvalikutega.",
+      "keyword": "LoloBuy saatmiskalkulaator",
+      "category": "Saatmine",
+      "summary": "Kasulik veovõrdlus algab ühest täpselt määratletud pakist. Juhend selgitab sisendeid ja kontrolle ega ole reaalajas hinnapakkumine.",
+      "sections": [
+        {
+          "heading": "Erista tootehind veotasust",
+          "paragraphs": [
+            "Toote kõrval olev hind ei ole täielik kohaletoomiskulu. LoloBuy ametlik protsess eristab toote ja sisetarne ostu hilisemast rahvusvahelise veo ettemaksest. Enne ostu saab eelarvet hinnata, kuid lõplikku pakivõrdlust ei saa teha ainult tootehinna põhjal.",
+            "Pane kirja sihtkoht, kavandatud sisu ja alles jäetav pakend. Kingapaar karbiga ja sama paar karbita on erinevad pakkimisotsused. Lisatooted muudavad nii kaalu kui mõõtmeid, mistõttu ka väike ost võib mõjutada hinda mitmel viisil."
+          ]
+        },
+        {
+          "heading": "Tea, millist kaalu võrdled",
+          "paragraphs": [
+            "LoloBuy kaalujuhend eristab hinnangut pakitud saadetise tegelikust kaalust. Lao tootekirje hõlmab algset pakendit, lõplik pakk aga ka välist transpordipakendit ja eemaldamise või tugevdamise valikuid. Eri etappides võivad mõõtmised erineda.",
+            "Mahukaal kajastab pakendi hõivatud ruumi. Ametlik juhend annab eri marsruutidele erinevad jagajad. Ära kasuta üht jagajat kõigi vedajate puhul ega pea vana näidet tänaseks tariifiks. Kasuta esitatava paki kehtivaid marsruuditingimusi."
+          ],
+          "bullets": [
+            "Sihtkoht ja postiindeks",
+            "Tootepiirangud ja sisu",
+            "Pakitud saadetise tegelik kaal",
+            "Pikkus, laius ja kõrgus",
+            "Marsruudi arvestusreeglid ja sisalduvad teenused"
+          ]
+        },
+        {
+          "heading": "Kasuta arvutust hinnapakkumiseks pidamata",
+          "paragraphs": [
+            "Ainult näitena: 40 × 30 × 20 sentimeetri suuruse paki maht on 24 000 kuupsentimeetrit. Oletuslik jagaja 6000 annab mahukaaluks 4 kilogrammi, jagaja 5000 aga 4,8 kilogrammi. Kumbki arvutus ei anna saatmishinda.",
+            "Näide selgitab marsruudireegli tähtsust. Vajad endiselt tegelikku kaalu, arvestussamme, sihtkohta ja kehtivat määra. Ära vali marsruuti üldise kilohinna järgi, kui hind sõltub esimesest ühikust, lisaühikutest või suuremast arvestuskaalust."
+          ]
+        },
+        {
+          "heading": "Võrdle sama pakki eri marsruutidel",
+          "paragraphs": [
+            "Hoia sisendid marsruutide võrdlemisel samad. Kontrolli lubatud sisu, tarneaja hinnangut, jälgimist, pakkimisnõudeid ja valikulist kaitset. Väiksem algsumma ei ole täielik võrdlus, kui teenused või piirangud erinevad.",
+            "Tarneaja hinnang on hinnang. Laokäsitlus, vedaja liikumine ja sihtriigi protsessid on eraldi etapid. Juhend ei luba universaalset tarneaega, maksuvaba marsruuti ega kindlat tollitasu. Otsusta kehtiva pakkumise ja sihtkoha ametlike reeglite alusel."
+          ]
+        },
+        {
+          "heading": "Kaalu pakendamise kompromisse",
+          "paragraphs": [
+            "Ametlik pakendieemalduse leht kirjeldab liigse välispakendi eemaldamist, säilitades kaubale vajaliku kaitse. Samuti soovitab see eemaldamist mitte valida, kui originaalpakend on kingituseks või säilitamiseks oluline. Väiksem maht võib aidata, kuid oluline on ka kaitse ja ostu eesmärk.",
+            "Küsi konkreetset pakkimisvalikut, mitte kõige eemaldamist. Võrdle võimalusel lõppmõõte. Ühendamine või pakendi eemaldamine ei vähenda automaatselt iga marsruudi arvet ning habras toode võib vajada hoopis rohkem kaitset."
+          ]
+        },
+        {
+          "heading": "Jälgi lõpparvestust",
+          "paragraphs": [
+            "LoloBuy lisamaksete juhend ütleb, et hinnanguline veotasu viiakse vastavusse logistikaettevõtte tegeliku tasuga. See võib tähendada enammakse tagastust või lisamakset. Loe paki teateid ja vasta saadetisele lisatud taotlustele.",
+            "Hoia koos algne hinnang, lõplikud arvestusmõõdud, teenused ja muudatus. Nii on erinevust lihtsam mõista. Arvesta võimalikke sihtkohakulusid eraldi ja kontrolli paki lõppsummat enne tellimuse lõpetatuks pidamist."
+          ]
+        }
+      ],
+      "checklist": [
+        "Võrdle marsruute sama sisu ja sihtkohaga.",
+        "Kontrolli tegeliku ja mahukaalu reegleid.",
+        "Arvesta pakendi kaitsefunktsiooniga.",
+        "Erista hinnangut lõpptasust.",
+        "Loe paki hinnamuudatuste teateid enne saatmist."
+      ],
+      "sourceIds": [
+        "buying",
+        "weight",
+        "packaging",
+        "freight-balance"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 398
+    },
+    {
+      "slug": "lolobuy-warehouse-consolidation",
+      "title": "LoloBuy laojuhend: kontroll, ladustamine ja pakkide ühendamine",
+      "description": "Korralda laotooted, lahenda QC-küsimused ja vali pakkimine tervet saadetist silmas pidades.",
+      "keyword": "LoloBuy ladu",
+      "category": "Ladu",
+      "summary": "Laoetapis saad ühendada ostukirje saabunud tootega ning otsustada, millised kaubad on koos saatmiseks valmis.",
+      "sections": [
+        {
+          "heading": "Erista saabumist valmisolekust",
+          "paragraphs": [
+            "Müüja tarneskann tähendab, et sisepakk on jõudnud teekonna ühte punkti. See ei näita iseenesest, et toode on kontrollitud, õigesti seotud ja rahvusvaheliseks saatmiseks valmis. LoloBuy olekujuhend eristab vastuvõtmist, kontrolli ja laovaru.",
+            "Kasuta tööloendina laokirjet, mitte üht jälgimisteadet. Hoia iga toote tellimusnumber, variant ja QC-olek koos. Kui saabub mitu müüjapakki, ei varja ühe toote lõpetatus siis teise lahtist küsimust."
+          ]
+        },
+        {
+          "heading": "Koosta väike laonimekiri",
+          "paragraphs": [
+            "Märgi iga toote kohta tellitu, laos nähtav ja lahendamata küsimused. Piisab neljast veerust: toode, õige variant, kontrolliotsus ja pakkimisjuhis. Eesmärk on hoida ootel küsimus nähtavana enne paki koostamist.",
+            "Võrdle pilte algse valikuga. Puuduv foto ja nähtav viga vajavad eri tegevust. Ebaselge detaili puhul küsi tõendit. Nähtava erinevuse korral selgita seda tellimuse viitega ja kaalu sobivat tagastusprotsessi."
+          ],
+          "bullets": [
+            "Tellimus ja täpne variant",
+            "Lao vastuvõtu- ja kontrolliolek",
+            "Avatud küsimus või tagastustaotlus",
+            "Algpakendi säilitamine või eemaldamine",
+            "Rahvusvaheliseks pakiks valmis: jah või ei"
+          ]
+        },
+        {
+          "heading": "Kontrolli oma ladustamistähtaega",
+          "paragraphs": [
+            "Ametlikes materjalides on vastuolu: ostujuhend nimetab 90 päeva, ladustamis- ja olekulehed 180. Ladustamisleht kirjeldab ka sobitamata erakorraliste pakkide erikäsitlust. Neist erinevustest ei saa teha üht tingimusteta lubadust.",
+            "Kontrolli oma tootele lisatud ladustamisinfot ja selgita erinevused enne tähtajale tuginemist. Märgi kuupäev ja valitud tasuline pikendus. Ära jäta kaupa määramata ajaks ootama, sest üldartikkel annab praegusest laokirjest pikema aja."
+          ]
+        },
+        {
+          "heading": "Ühenda sobivad ja lahendatud kaubad",
+          "paragraphs": [
+            "Ametlik ostujuhend kirjeldab laokaupade valimist rahvusvaheliseks tarneks või lisaostude hilisemat koos saatmist. Ühendamine võimaldab tervet pakki kavandada, kuid ei muuda iga kombinatsiooni iga marsruudi jaoks sobivaks.",
+            "Enne ühendamist kaalu piiranguid, haprust ja lahtisi küsimusi. Tagastusotsust ootavat kaupa ei tule pidada valmisolevaks. Habras aksessuaar võib vajada rõivastest erinevat kaitset. Võrdle lõplikke mõõte ja kaalu, mitte ainult tootearvu."
+          ]
+        },
+        {
+          "heading": "Kirjuta täpsed pakkimisjuhised",
+          "paragraphs": [
+            "LoloBuy pakendieemalduse abi kirjeldab tarbetu pakendi eemaldamist vajaliku kaitse säilitamisega. Kui soovid originaalpakendit kingituseks või kollektsiooni, jäta eemaldamine valimata ja märgi nõue selgelt. Karbi väärtus ei seisne alati ainult kaalumõjus.",
+            "Kasuta vajadusel tootepõhiseid juhiseid: säilita hapra eseme tugi või üks originaalkarp või küsi saadaolevat pakkimisvalikut. Vaata lisatasusid kehtivas pakivormis. Ära eelda sama lahenduse sobivust kõigile kategooriatele."
+          ]
+        },
+        {
+          "heading": "Vaata lõplik pakk üle",
+          "paragraphs": [
+            "Kinnita enne esitamist tooteloend, kogused, saajaandmed, marsruut ja teenused. Kontrolli, et kõik soovitud kaubad on kaasas ning ükski lahendamata probleemiga ese pole pakki sattunud. See lühikontroll on lihtsam kui hiljem valiku taastamine.",
+            "Ametlikud kaalu- ja veotasulehed selgitavad, et lõppmõõtmine võib tasu muuta. Jälgi pärast esitamist kinnituse või lisamakse teateid. Pärast väljasaatmist kasuta paki jälgimiskirjet ja säilita laotõendid kuni saabunud kauba kontrollimiseni."
+          ]
+        }
+      ],
+      "checklist": [
+        "Vaata iga toode üle enne valmis märkimist.",
+        "Kontrolli enda laokirje tähtaega.",
+        "Erista tagastusküsimused saatmisvalmis kaubast.",
+        "Vali igale tootele sobiv pakkimine.",
+        "Kontrolli lõplikku nimekirja ja veotasu muudatusi."
+      ],
+      "sourceIds": [
+        "buying",
+        "status",
+        "storage",
+        "packaging",
+        "freight-balance"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 384
+    },
+    {
+      "slug": "lolobuy-sizing-guide",
+      "title": "LoloBuy suurusejuhend: võrdle mõõte enne sildi valimist",
+      "description": "Kasuta müüja tabelit, järjepidevat mõõtmist ja täpseid laofotosid, et valida suurus teadlikumalt.",
+      "keyword": "LoloBuy suurusejuhend",
+      "category": "Suurused",
+      "summary": "Tuttav suurusesilt on lähtepunkt. Kasulik võrdlus ühendab müüja mõõdud, sinu võrdlusmõõdud ja soovitud istuvuse.",
+      "sections": [
+        {
+          "heading": "Alusta müüja tabelist",
+          "paragraphs": [
+            "LoloBuy ametlik suurusejuhend ütleb, et poodide standardid võivad erineda, ning käsitleb teisendusi viitena. Keskmine suurus või tuttav jalanumber ei määra iga müüja toote sobivust. Loe täpse kuulutuse ja variandi tabelit.",
+            "Kontrolli, kas numbrid kirjeldavad keha, valmis rõivast või soovituslikku kandjat. Need on erinevad mõõtmised. Kui tabel pole selge, küsi enne tellimist, selle asemel et harjumusest suurem või väiksem valida."
+          ]
+        },
+        {
+          "heading": "Mõõda usaldusväärset võrdluseset",
+          "paragraphs": [
+            "Rõivast võrdle enda hästi istuva esemega. Aseta see tasapinnale ja mõõda samadest punktidest nagu müüja joonisel. Märgi ühikud ja see, kas laius on ühe külje mõõt või keha ümbermõõt. Säilita mõõdud koos meetodit näitava fotoga.",
+            "Kehamõõtude puhul järgi juhist ja hoia mõõdulinti sirgelt, pingutamata seda soovitud suuruse saavutamiseks. Liibuv särk, avar kapuutsipluus ja vormikas jakk vajavad eri varu. Soovitud siluett kuulub otsuse juurde, mitte ei ole tabeli viga."
+          ]
+        },
+        {
+          "heading": "Vali olulised mõõtmed",
+          "paragraphs": [
+            "Ülaosa rinnalaius, pikkus, õlg ja varrukas vastavad eri küsimustele. Pükstel kontrolli vöökohta, istmiku kõrgust, sisesäärt ja kogupikkust. Üks vöönumber ei kirjelda sääre istuvust ning rinnamõõt ei määra varrukapikkust.",
+            "Näiteks on võrdluspluusi rinnalaius 56 ja pikkus 70 sentimeetrit. Kandidaat mõõtudega 56 ja 64 võib olla sama lai, kuid märgatavalt lühem. See illustreerib võrdlusmeetodit, mitte kindla suuruse või toote soovitust."
+          ],
+          "bullets": [
+            "Kontrolli mõõtühikuid",
+            "Võrdle kehamõõte kehatabeliga",
+            "Võrdle tasapinnalisi rõivamõõte rõivatabeliga",
+            "Võrdle mitut sobivuse jaoks olulist mõõtu",
+            "Märgi soovitud avar või liibuv lõige"
+          ]
+        },
+        {
+          "heading": "Kontrolli jalatseid eraldi",
+          "paragraphs": [
+            "Ametlik juhend soovitab erinevate jalgade puhul lähtuda suuremast ning märgib, et pikkussuurus ei kirjelda täielikult laiust. Loe müüja jalatsitabelit ja kontrolli valitud variandi süsteemi. Ära eelda EU, US või UK numbri täpset ülekantavust igale kuulutusele.",
+            "Mõõda tabeli juhise järgi ning arvesta sokke, laiust ja kasutust. Laofoto nähtav silt aitab kinnitada saadetud suurust, kuid ei näita tunnet jalas. Ära käsitle sisetallafotot universaalse teisendustabelina."
+          ]
+        },
+        {
+          "heading": "Kasuta QC-d konkreetse küsimuse jaoks",
+          "paragraphs": [
+            "Enne saatmist võrdle suurusesilti tellimusega. Kui oluline mõõt on ebaselge, küsi seda täpsete algus- ja lõpp-punktidega. Näiteks palu rinnalaiust õmblusest õmbluseni, mitte lihtsalt „kontrollige suurust”.",
+            "LoloBuy kontrollireeglitel on piirangud ja need ei luba täielikku istuvushinnangut. Kontrolli, kas mõõtmine või lisafoto on tootele saadaval ning kas see maksab. Standardset pildikomplekti ei tohiks kirjeldada isikliku suuruskonsultatsioonina."
+          ]
+        },
+        {
+          "heading": "Otsusta, kuni valikud on alles",
+          "paragraphs": [
+            "Kui silt erineb valitud variandist, dokumenteeri erinevus tellimuse ja fotoga. Kui silt vastab, kuid mõõt ei sobi, kontrolli kohe müüja tagastustingimusi ja praegust protsessi. Need olukorrad erinevad ja neid tuleb täpselt kirjeldada.",
+            "Mõõdud vähendavad ebakindlust, kuid ei kõrvalda lõike, venivuse, materjalitunde ega isikliku eelistuse erinevusi. Säilita tabel ja märkmed edasiste ostude jaoks. Uuesti tellides kontrolli tegelikku kuulutust, sest teine müüja või versioon võib kasutada teistsuguseid mõõte."
+          ]
+        }
+      ],
+      "checklist": [
+        "Kasuta täpse kuulutuse tabelit.",
+        "Hoia ühikud ja meetodid samad.",
+        "Võrdle mitut olulist mõõtu.",
+        "Kontrolli saabunud silti ja küsitud mõõtu.",
+        "Lahenda sobivusküsimused enne rahvusvahelist saatmist."
+      ],
+      "sourceIds": [
+        "sizing",
+        "qc",
+        "returns"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 405
+    },
+    {
+      "slug": "lolobuy-tracking-guide",
+      "title": "LoloBuy jälgimine: erista tellimust rahvusvahelisest pakist",
+      "description": "Loe ostu-, lao- ja pakietappe õigesti ning kogu kasulikku tõendust ebaselge jälgimise korral.",
+      "keyword": "LoloBuy jälgimine",
+      "category": "Jälgimine",
+      "summary": "Tellimuse olek ja vedaja skann kirjeldavad eri teekonnaosi. Hoia toote, sisepaki ja rahvusvahelise paki viited eraldi.",
+      "sections": [
+        {
+          "heading": "Tea, mida jälgid",
+          "paragraphs": [
+            "Tootel võib olla ostutellimus, müüja sisesaadetis ja hilisem rahvusvaheline pakk. Need on seotud, kuid pole sama saadetis. Sisene tarneteade võib tähendada lattu jõudmist, mitte sinu koju saabumist.",
+            "Koosta protsessi käigus viidete loend: toote- või tellimusnumber, olemasolev müüja jälgimisviide, laokirje ja rahvusvahelise paki number. Nii saad küsida õige etapi kohta ega saada toele teise teekonna ekraanipilti."
+          ]
+        },
+        {
+          "heading": "Loe esmalt ostuetappe",
+          "paragraphs": [
+            "LoloBuy ametlik olekujuhend eristab makse ootamist, töötlemist, tellimist ja müüja väljasaatmist. Töötlemine puudutab ostuprotsessi ega tähenda rahvusvahelise vedaja liikumist. Loe olekut enne välismaise jälgimisuuenduse otsimist.",
+            "Juhend kirjeldab ka vastuvõetud kaupa ja kontrollijärgset laovaru. Kui sisevedaja ütleb „tarnitud”, kuid laokontroll pole valmis, võivad kirjed kirjeldada järjestikuseid etappe, mitte vastuolu. Kontrolli tootet ja kinnitustaotlust järgmise sammu leidmiseks."
+          ]
+        },
+        {
+          "heading": "Seejärel loe pakietappe",
+          "paragraphs": [
+            "Rahvusvahelise paki loomisel algab selle enda olekujärk. Ametlik leht kirjeldab makse ootamist, töötlemist, pakkimist ja väljasaatmist. Samuti palub see jälgida lõppkaalu järel veotasumuudatusi. Loodud pakk ei ole veel välja saadetud pakk.",
+            "Kasuta tegelikku kirjet, mitte ainult viitenumbri olemasolu. Sildi või numbri võib valmistada enne järgmist nähtavat vedajasündmust. Süsteeme võrreldes märgi, milline leht ütleb üleandmist ja millise sündmuse on vedaja tegelikult registreerinud."
+          ],
+          "bullets": [
+            "Ostu või tellimuse viide",
+            "Rahvusvahelise paki viide",
+            "Vedaja jälgimisnumber",
+            "Viimane sündmus, koht ja aeg",
+            "Ootel kinnitus või makse"
+          ]
+        },
+        {
+          "heading": "Tõlgenda vaikseid perioode ettevaatlikult",
+          "paragraphs": [
+            "Skannide vaheline paus ei tuvasta põhjust iseenesest. Vaata marsruudi praegust hinnangut, viimast sündmust ja seotud ametlikke teateid. Ära muuda vana postituse tüüpilist kestust oma paki lubatud tähtajaks.",
+            "Ära ava pidevalt eri jälgimissaite ega pea iga sõnastuserinevust uueks sündmuseks. Säilita oluliste muutuste kuupäevad. Kui etapp tundub vastuoluline või küsitakse tegevust, tõstata just see küsimus paki või tellimuse toe kaudu."
+          ]
+        },
+        {
+          "heading": "Saada kasulik tugiküsimus",
+          "paragraphs": [
+            "Lisa tellimuse või paki ID, jälgimisnumber, viimane nähtav sündmus ja vastust vajav küsimus. Näiteks: „Pakikirje ütleb välja saadetud, kuid vedaja ei näita üleandmist. Kas saate üleandmise oleku kinnitada?” See on tegutsemiseks selgem kui „Kus kõik on?”.",
+            "LoloBuy ostujuhend suunab väljasaatmise järel jälgimiseks pakkide alasse. Kasuta võimalusel vastava kirjega seotud päringut. Ära lisa jälgimissündmuse küsimusse kõrvalisi kontoandmeid või maksemandaate."
+          ]
+        },
+        {
+          "heading": "Säilita tõendid kuni tarne kontrollimiseni",
+          "paragraphs": [
+            "Paki saabudes kontrolli kohe välist seisukorda ja sisu. Vale, puuduva või kahjustatud kauba korral hoia pakend, silt ja selged fotod alles. Võrdle saadud kaupu lõpliku pakiloendiga, mitte varasema valikuga, kus võib olla saatmata tooteid.",
+            "Ametlik müügijärgse toe leht nõuab vale või kahjustatud kauba korral kirjeldust ja fotosid, kuid tähtaegades on vastuolud. Tegutse kiiresti ja kinnita kehtiv tähtaeg jooksvas tugiprotsessis. Ära oota, sest üldjuhend näib lubavat pikemat aega."
+          ]
+        }
+      ],
+      "checklist": [
+        "Erista sise- ja rahvusvahelisi viiteid.",
+        "Kontrolli, kas pakk on loodud, pakitud või saadetud.",
+        "Loe viimast sündmust koos ajaga.",
+        "Saada toele täpne dokumenteeritud küsimus.",
+        "Kontrolli tarne kohe ja säilita tõendid."
+      ],
+      "sourceIds": [
+        "status",
+        "buying",
+        "claims",
+        "freight-balance"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 399
+    },
+    {
+      "slug": "lolobuy-returns-refunds",
+      "title": "LoloBuy tagastused ja tagasimaksed: tegutse õiges etapis",
+      "description": "Valmista tõendid, kontrolli müüja tingimusi ning erista tellimuse tühistamist, toote tagastamist ja pakinõuet.",
+      "keyword": "LoloBuy tagastused ja tagasimaksed",
+      "category": "Müügijärgne tugi",
+      "summary": "Tagastusotsus sõltub tootest, müüjast ja praegusest etapist. Selged tõendid ja kiire taotlus on kasulikumad kui eeldus, et üks reegel sobib kõigile.",
+      "sections": [
+        {
+          "heading": "Tuvasta vajalik protsess",
+          "paragraphs": [
+            "Ostmata tellimuse tühistamine, laos oleva toote tagastus ja rahvusvahelise tarne järgne probleem on erinevad protsessid. Alusta tellimuse või paki praegusest olekust. Nupp ja vajalik info võivad sõltuda tehingu edenemisest.",
+            "LoloBuy tühistamis- ja tagastuslehed kirjeldavad olekupõhiseid samme ja müüja osalust. Taotlus ei võrdu heakskiiduga. Loe vastust õige tellimuse juures ning jälgi, mis on kinnitatud, ootel ja sinu tegevust vajav."
+          ]
+        },
+        {
+          "heading": "Säilita täpsed tõendid",
+          "paragraphs": [
+            "Hoia toote URL, variant, tellimuskinnitus ja asjakohased fotod koos. Vale suurusesildi korral näita tellitud varianti ja saabunud silti. Kahjustuse korral näita üldvaadet ja lähivõtet. Kirjelda erinevust liialdamata.",
+            "Näiteks „Tellisin sinise L-suuruse; laofotol on must M-silt” määratleb kontrollitava erinevuse. „Halb kvaliteet” on palju ebatäpsem. Kui fotod probleemi ei tõenda, küsi puuduv tõend enne lahenduse valimist."
+          ],
+          "bullets": [
+            "Tellimusnumber ja lähtekuulutus",
+            "Valitud variant ja kogus",
+            "Probleemi selge kirjeldus",
+            "Asjakohased tellimuse fotod",
+            "Soovitud lahendus: täpsustus, tühistamine, tagastus või vahetus"
+          ]
+        },
+        {
+          "heading": "Loe sobivust ja tähtaega koos",
+          "paragraphs": [
+            "Ametlik tagastusgarantii leht kirjeldab tingimusi ja laokande järgset taotlusakent. Samuti nõuab see müüja nõusolekut. Teistel abilehtedel on teistsugune või ebaselge ajasõnastus. Kontrolli oma tellimuse tähtaega ja teenust ning esita mure kiiresti.",
+            "Pakend ja edasimüügikõlblikkus võivad olla olulised. Ära palu eemaldada pakendit, mida tagastuseks vajad, enne tingimuste mõistmist. Kasutatud kaubale, eritellimusele ja muudele liikidele võivad kehtida eri reeglid; üldine tingimusteta tagastuslubadus oleks eksitav."
+          ]
+        },
+        {
+          "heading": "Küsi rakenduvaid kulusid",
+          "paragraphs": [
+            "Tagastusgarantii juhend eristab põhjuseid ning käsitleb sisetransporti ja teenustasusid. Müüja algne tasuta tarne ei tee hilisemat tagastust tingimata tasuta. Küsi konkreetseid kulusid enne nõustumist.",
+            "Hoia vastus tellimuse kirjes. Täpsusta, kas summa hõlmab tagasivedu müüjale, algset sisetarnet ja teenustasu. Platvormi käsitlussoodustus ja müüja saatmiskulud on erinevad ega tohiks sulada ähmaseks „tasuta tagastuse” väiteks."
+          ]
+        },
+        {
+          "heading": "Jälgi tagasimakse sihtkohta ja olekut",
+          "paragraphs": [
+            "Ametlik tagastusabi kirjeldab üldiselt raha kandmist LoloBuy saldole ning käsitleb eraldi teatud algse makse olukorra erandit. Kontokrediit ja välisele makseviisile tagastatud raha on eri tulemused. Kontrolli sobivat juhtumit enne pangakontole laekumise eeldamist.",
+            "Müüja nõusolek, tagastatud kauba vastuvõtt ja raha laekumine võivad olla eri verstapostid. Säilita olemasolev tagastuspaki viide. Viivituse kohta küsides nimeta viimane lõpetatud samm, mitte ära alusta senist kirjet eiravat uut taotlust."
+          ]
+        },
+        {
+          "heading": "Käsitle saabunud paki probleemi eraldi",
+          "paragraphs": [
+            "Tarnejärgse probleemi korral suunab ametlik juhend vastava paki müügijärgsesse taotlusse ning küsib kirjeldust ja fotosid. Säilita lisaks tootepiltidele välispakend ja silt. Need aitavad kahjustuse või erinevuse saadetisega siduda.",
+            "Selle ametliku lehe tähtaegades on vastuolud. Teata probleemist kohe ja küsi kehtiv piir praegusest protsessist. Juhend ei luba heakskiitu, ühtset tagasimakseaega ega hüvitist iga kahjuliigi eest."
+          ]
+        }
+      ],
+      "checklist": [
+        "Kontrolli tellimuse või paki etappi.",
+        "Dokumenteeri täpne erinevus või kahjustus.",
+        "Kinnita sobivus, tähtaeg ja pakendinõuded.",
+        "Küsi kõiki tagastuskulusid.",
+        "Jälgi heakskiitu ja raha tegelikku sihtkohta."
+      ],
+      "sourceIds": [
+        "refunds",
+        "cancellation",
+        "returns",
+        "claims",
+        "changes"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 388
+    },
+    {
+      "slug": "lolobuy-order-budget",
+      "title": "LoloBuy eelarve: vaata tootehinnast kaugemale",
+      "description": "Erista tooted, sisetarne, lisateenused, valuutavahetus ja rahvusvaheline vedu enne tellimist.",
+      "keyword": "LoloBuy tasud",
+      "category": "Eelarve",
+      "summary": "Kasulik eelarve eristab kinnitatud summasid hinnangutest. Hoia tooteost ja hilisem pakimakse nähtaval kahe seotud otsusena.",
+      "sections": [
+        {
+          "heading": "Hinda tegelikult ostetavat varianti",
+          "paragraphs": [
+            "Kataloogihind on võrdluse algus. Valitud värvil, suurusel, komplektil või kogusel võib ametlikul tellimuslehel olla teine hind. Kontrolli täpset konfiguratsiooni enne eelarvestamist, eriti hinnavahemikuga kuulutuses.",
+            "Võrdle summat ja valuutat samas etapis. Salvestatud tootehind, kassasumma ja kaardiväljavõte võivad sisaldada eri komponente. Ära nimeta erinevust varjatud tasuks enne koguse, tarne, teisenduse ja teenuste kontrollimist."
+          ]
+        },
+        {
+          "heading": "Erista kahte peamist makseetappi",
+          "paragraphs": [
+            "LoloBuy ametlik protsess kogub esmalt toote ja Hiina-sisese tarne makse. Rahvusvaheline vedu tasutakse laokauba pakina esitamisel. Ainult esimese makse eelarvestanud ostja võib jõuda lattu ilma saatmiseks vajaliku rahata.",
+            "Koosta lihtne kulutabel ja märgi iga rida kinnitatuks või hinnanguliseks. Hoia lisateenused nähtaval, mitte peidus tootehinnas. Võimalikud sihtkohatasud vajavad eraldi rida, sest kataloogihind neid ei kinnita."
+          ],
+          "bullets": [
+            "Valitud tooted ja kogused",
+            "Hiina-sisene tarne",
+            "Valitud ostu- või laoteenused",
+            "Rahvusvaheline vedu ja pakkimisteenused",
+            "Kassas näidatud makse- või valuutavahetustasud",
+            "Võimalikud sihtkoha maksud või käsitlustasud"
+          ]
+        },
+        {
+          "heading": "Loe sisetarne tingimusi",
+          "paragraphs": [
+            "Ametlik sisetarne abi ütleb, et sama müüja koos esitatud ja tasutud tooted võivad jagada tarnetasu, kuid ülekaalu korral võib lisanduda makse. See on konkreetne tingimus, mitte lubadus kogu ostukorvile ühe tasu kohta.",
+            "Kontrolli iga toote müüjat ja tellimuse rühmitust. Suurem kogus võib muuta ka hinda või tarnetingimusi, eriti hulgimüügis. Säilita praegune arvestus, mitte ära jaga varasemat tasu seostamata ostude vahel."
+          ]
+        },
+        {
+          "heading": "Kontrolli makse- ja valuutaandmeid",
+          "paragraphs": [
+            "Enne kinnitamist vaata ametlikus kassas saadaolevaid meetodeid, võetavat valuutat ja näidatud tasusid. Saadavus võib sõltuda kontost ja tehingust. Üldine abiloend ei tõenda konkreetse meetodi tänast saadavust sinu tellimusele.",
+            "Kui makseteenus pakub valuutavahetust, võrdle seal kuvatud lõppsummat ja tingimusi. Hoia kviitung tellimusega koos. Ära eelda kindlat kurssi ega eelmise ostu teisenduse kehtivust järgmisele."
+          ]
+        },
+        {
+          "heading": "Käsitle soodustust kontrollitava pakkumisena",
+          "paragraphs": [
+            "LoloBuy kampaaniajuhend kirjeldab müüja pakkumise märkustesse lisamist, et ostja saaks selle kinnitada. Bänner või salvestatud pilt ei tõenda sinu täpse variandi ja koguse sobivust. Märgi tingimused ja küsi kinnitust tellimuse kaudu.",
+            "Hoia soodustus tavalisest eelarvest lahus kuni kinnitamiseni. Ära tugine kõrvalise juhendi soovituskampaaniale, kupongile või saatmislubadusele. See sait ei ole lubanud garanteeritud uue kasutaja krediiti ega ühtset veohinda."
+          ]
+        },
+        {
+          "heading": "Kasuta ebakindla veo jaoks vahemikku",
+          "paragraphs": [
+            "Enne pakkimist on kaal ja mõõtmed hinnangud. Ametlik lõpparvestus viib esialgse tasu kokku logistikaettevõtte tegeliku tasuga. Jäta võimalikuks muudatuseks varu, selle asemel et kogu eelarve toodetele kulutada.",
+            "Planeerimisnäitena olgu tooted ja sisetarne 100 ühikut ühes valuutas ning saatmishinnang 30–45. Esialgne kogusumma on siis enne muid kulusid 130–145. Need on meetodit illustreerivad oletuslikud arvud, mitte LoloBuy hinnad ega pakkumine."
+          ]
+        },
+        {
+          "heading": "Kasuta eelarvet otsustamiseks",
+          "paragraphs": [
+            "Kui tõenäoline kogukulu ületab piiri, muuda valikut enne maksmist. Väheolulise toote eemaldamine võib olla lihtsam kui hiljem raha tagastuse kaudu tagasi saada. Võrdle kogu kohale toodud tellimuse väärtust, mitte odavate esemete arvu.",
+            "Pärast väljasaatmist asenda hinnangud tegelike tasudega. Säilita erinevus ja selgitus. Ajalugu aitab järgmise ostu planeerimisel, arvestades siiski teistsuguseid kaupu, mõõte, marsruute ja vahetustingimusi."
+          ]
+        }
+      ],
+      "checklist": [
+        "Eelarvesta täpne valitud variant.",
+        "Erista sise- ja rahvusvahelist tarnet.",
+        "Märgi lisateenused ja maksevaluuta.",
+        "Kasuta ainult kinnitatud soodustusi.",
+        "Jäta varu veole ja sihtkohakuludele."
+      ],
+      "sourceIds": [
+        "buying",
+        "domestic",
+        "promotions",
+        "freight-balance",
+        "wholesale"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 425
+    },
+    {
+      "slug": "lolobuy-seller-and-review-checks",
+      "title": "LoloBuy leiud ja arvustused: kontrolli kuulutuse tõendeid",
+      "description": "Hinda lähteandmeid, arvustuse asjakohasust ja kontrollipiire, pidamata märgist, fotot või hinnangut garantiiks.",
+      "keyword": "kas LoloBuy on usaldusväärne",
+      "category": "Ostuotsused",
+      "summary": "Kasulik küsimus on, mida olemasolev tõendus selle tehingu kohta kinnitab. Platvormi nimi ei vasta kõigile müüja, toote või paki küsimustele.",
+      "sections": [
+        {
+          "heading": "Erista platvormi tootest",
+          "paragraphs": [
+            "LoloBuy teenuseteave kirjeldab kaupade ostmist kolmandate osapoolte platvormidelt, mitte iga loetletud kauba ise müümist. Sõltumatu tootetabel on veel üks samm eemal: see korraldab avastamist. Hoia rollid selged, kui otsustad, kes saab vastata või probleemi lahendada.",
+            "Töötav link ei tõenda ehtsust, saadavust, sobivust ega tulevast tarnet. Samuti ei selgita ühe müüja kaebus kõigi platvormiprobleemide põhjust. Alusta täpsest väitest ja selle protsessiosa eest vastutajast."
+          ]
+        },
+        {
+          "heading": "Kontrolli kuulutust enne populaarsust",
+          "paragraphs": [
+            "Otsi selget algset URL-i, järjepidevat kirjeldust, eristatavaid variante ning kasulikke mõõte või tehnilisi andmeid. Võrdle valitud varianti galeriiga. Odav alghind võib viidata teisele osale kui põhipildil olev toode.",
+            "Kui mitu müüjat kasutavad samu fotosid, ei tõenda pildid sama valmistust ega tarnet. Märgi puuduv ja küsi täpselt. Populaarsusarv või tuttav partiinimi ei asenda konkreetse kuulutuse tõendeid."
+          ],
+          "bullets": [
+            "Algne kuulutus ja müüja identiteet",
+            "Täpne variant ja kogus",
+            "Asjakohased mõõdud või tehnilised andmed",
+            "Praegune tagastusinfo",
+            "Ostu mõjutavad vastuseta küsimused"
+          ]
+        },
+        {
+          "heading": "Loe arvustusi asjakohasuse järgi",
+          "paragraphs": [
+            "Arvustus on kasulikum, kui selguvad kuupäev, käsitletud toode või teenus ja järelduse tõendid. Toe vastamiskiirus erineb jalatsi sobivuse arvustusest. Ühe paki õnnestunud saabumine ei tõenda kõigi kataloogitoodete sobivust.",
+            "Otsi avaldatud soovituslinke, stiimuleid ja muid suhteid. Need ei tee arvustust automaatselt valeks, kuid aitavad mõista selle eesmärki. Ära muuda sidusreklaami, üksikut kogemust või kontrollimata tunnistust üldiseks soovituseks."
+          ]
+        },
+        {
+          "heading": "Planeeri, mida kontroll suudab tõendada",
+          "paragraphs": [
+            "Ametlik standardkontrolli leht kirjeldab välimuse kontrolli ja olulisi erandeid. See ei luba iga kategooria ehtsuse või toimimise testimist. Kinniseid ja mõningaid professionaalseid kaupu käsitletakse teisiti. Loe piire enne ostu, mille väärtus sõltub testimata omadusest.",
+            "Rõiva puhul võivad selged mõõdud ja nähtav valmistus vastata suurele osale küsimustest. Elektroonika või ohutusega seotud kauba sisemist toimimist ja nõuetele vastavust foto ei tõenda. Puuduv vajalik tõendus tähendab ostuotsuses alles jäävat ebakindlust."
+          ]
+        },
+        {
+          "heading": "Hoia makse ja suhtlus õiges kohas",
+          "paragraphs": [
+            "Kasuta ametlikku kassat ning tehinguküsimusteks vastava tellimuse või paki päringut. Kontrolli domeeni enne sisselogimist. Kataloog ei vaja sinu parooli, makseandmeid ega privaatse vestluse kopeerimist tooteotsingusse.",
+            "Hoia valiku, makse, müüja täpsustuse ja kokkulepitud nõuete kirjed alles. Muutuse korral küsi uuendust tellimuse kirjes. Selge ajalugu aitab rohkem kui laialipillutatud sõnumid ilma toote või tehingu viiteta."
+          ]
+        },
+        {
+          "heading": "Tee otsus, mida suudad selgitada",
+          "paragraphs": [
+            "Kirjuta lühidalt, miks toode sobib, milline tõendus seda toetab, milline on eelarve ja mis ebakindluse aktsepteerid. Kui otsus sõltub vastuseta suuruse, seisukorra või tagastusõiguse küsimusest, lahenda see enne maksmist.",
+            "Väike esimene tellimus võib olla vabatahtlik viis protsessi õppides kuluriski piirata, kuid ei sertifitseeri kõiki müüjaid ega tulevasi saadetisi. See juhend õpetab tõendeid hindama ega ole isiklik testiaruanne või riskivaba LoloBuy garantii. Järgmisteks kontrollideks kasuta tellimise, QC ja tagastuste juhendeid."
+          ]
+        }
+      ],
+      "checklist": [
+        "Erista kataloogi, platvormi ja müüja rollid.",
+        "Kontrolli konkreetset kuulutust, mitte populaarsust.",
+        "Hinda arvustuse kuupäeva, asjakohasust ja stiimuleid.",
+        "Mõista, mida kontroll ei tõenda.",
+        "Hoia otsuse põhjendus ja tellimuse kirje alles."
+      ],
+      "sourceIds": [
+        "service",
+        "qc",
+        "buying",
+        "returns"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 411
+    }
+  ]
+}

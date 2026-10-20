@@ -1,0 +1,1131 @@
+{
+  "ui": {
+    "nav": [
+      "Lentelė",
+      "Kaip tai veikia",
+      "Gidai",
+      "Straipsniai",
+      "DUK"
+    ],
+    "register": "Atverti LoloBuy",
+    "language": "Kalba",
+    "preview": "Dizaino peržiūra",
+    "previewNote": "Pirmasis žvilgsnis į lolobuysheet.nl",
+    "eyebrow": "GERI RADINIAI. MAŽIAU SLINKIMO.",
+    "hero1": "Kitas jūsų radinys.",
+    "hero2": "Viena lentelė.",
+    "intro": "Naršykite LoloBuy lentelę. Peržiūrėkite drabužius, sportbačius ir aksesuarus, palyginkite šaltinio kainas ir kitą radinį atverkite LoloBuy.",
+    "search": "Ieškoti visame kataloge…",
+    "searchButton": "Ieškoti prekių",
+    "photo": "Paieška pagal vaizdą",
+    "popular": "Naršykite:",
+    "tagline": "Vienas katalogas. Kitas jūsų atradimas.",
+    "source": "Prekės iš cnfanssp.com",
+    "independent": "Nepriklausoma LoloBuy prekių paieškos svetainė",
+    "browse": "Naršykite lentelę",
+    "browseSub": "Šiek tiek mažiau paieškų. Gerokai daugiau radinių.",
+    "all": "Visos prekės",
+    "sort": "Rikiuoti pagal",
+    "sorts": [
+      "Atrinktos",
+      "Naujausios",
+      "Daugiausia peržiūrėtos",
+      "Kaina: nuo mažiausios",
+      "Kaina: nuo didžiausios"
+    ],
+    "count": "prekių",
+    "view": "Peržiūrėti prekę",
+    "buy": "Atverti LoloBuy",
+    "details": "Prekės informacija",
+    "categories": {
+      "shoes": "Avalynė",
+      "hoodies": "Džemperiai",
+      "tshirts": "Marškinėliai",
+      "jackets": "Striukės",
+      "pants": "Kelnės ir šortai",
+      "headwear": "Galvos apdangalai",
+      "accessories": "Aksesuarai",
+      "sets": "Trumpi komplektai",
+      "electronics": "Elektronika",
+      "other": "Kitos prekės",
+      "jerseys": "Sportiniai marškinėliai"
+    },
+    "previous": "Ankstesnis",
+    "next": "Kitas",
+    "page": "Puslapis",
+    "empty": "Paiešką atitinkančių prekių nėra.",
+    "reset": "Išvalyti filtrus",
+    "sourceSearch": "Ieškoti visame šaltinio kataloge",
+    "snapshot": "Aktualus katalogas iš cnfanssp.com. Prekių kainos CNY neapima siuntimo ir paslaugų mokesčių. Esamus variantus ir galutinę kainą tikrinkite LoloBuy.",
+    "howTitle": "Nuo radinio iki siuntos išpakavimo.",
+    "howSub": "LoloBuy naudojate pirmą kartą? Pradėkite nuo šių trijų žingsnių.",
+    "steps": [
+      [
+        "01",
+        "Raskite tai, kas patinka",
+        "Naršykite kategorijas ir patikrinkite pradinį skelbimą, dydį bei prekės nuotraukas."
+      ],
+      [
+        "02",
+        "Atverkite prekę LoloBuy",
+        "Per prekės nuorodą pasirinkite variantus ir patikrinkite dabartinę kainą."
+      ],
+      [
+        "03",
+        "Patikrinkite prieš siuntimą",
+        "Sekite LoloBuy sandėlio procesą, peržiūrėkite prieinamą QC ir pasirinkite siuntimą."
+      ]
+    ],
+    "guides": "Keli patarimai padeda daug.",
+    "guidesSub": "Naudinga informacija prieš pirmąjį užsakymą.",
+    "read": "Skaityti gidą",
+    "allGuides": "Visi gidai",
+    "cta": "Radote naują mėgstamą prekę?",
+    "ctaSub": "Atverkite ją LoloBuy ir užsisakykite.",
+    "ctaButton": "Naršyti visas prekes",
+    "footer": "Nepriklausoma prekių paieškos svetainė. Nesame oficiali LoloBuy svetainė. Prekių skelbimai ir nuotraukos gaunami iš cnfanssp.com. Pirkimai užbaigiami LoloBuy.",
+    "footerLinks": [
+      "Lentelė",
+      "Pirkimo gidas",
+      "Paieška pagal vaizdą",
+      "DUK"
+    ],
+    "back": "Grįžti į lentelę",
+    "sourceListing": "Pradinis šaltinio skelbimas",
+    "seller": "Pardavėjo skelbimas",
+    "sourcePrice": "Šaltinio kaina · CNY",
+    "productId": "Pardavėjo prekės ID",
+    "gallery": "Skelbimo nuotraukos",
+    "qc": "Kokybės patikros nuotraukos",
+    "qcNote": "Šaltinis pateikia šios prekės skelbimo nuotraukas. Tai nėra patvirtintos sandėlio QC nuotraukos. Prieš siuntimą peržiūrėkite QC, pridėtą prie savo LoloBuy užsakymo.",
+    "priceNote": "Tik prekės kaina. Prieš užsakydami LoloBuy patikrinkite likutį, variantus, siuntimą ir paslaugų mokesčius.",
+    "photoTitle": "Raskite pagal nuotrauką.",
+    "photoIntro": "Šaltinio kataloge raskite ir palyginkite prekes.",
+    "photoState": "Paieška pagal vaizdą šaltinyje",
+    "photoNote": "cnfanssp.com vieša paieškos pagal vaizdą paslauga nepatvirtinta. Nuotraukų įkėlimo nepriimame, kol šaltinio paslauga nebus prieinama.",
+    "browseInstead": "Naršyti prekes",
+    "faqTitle": "LoloBuy: atsakymai prieš užsakant.",
+    "faqIntro": "Parengta ištyrus oficialius LoloBuy pagalbos puslapius. Kai oficialūs puslapiai nesutampa, atsakyme paaiškinama, ką reikia patikrinti.",
+    "guideLabel": "PRAKTINIS GIDAS",
+    "guideTitle": "Pirmasis LoloBuy užsakymas paaiškintas.",
+    "guideIntro": "Nuo prekės paieškos iki patikros sandėlyje: praktiška pradžia.",
+    "updated": "Peržiūrėta 2026 m. spalį",
+    "related": "Daugiau atradimų",
+    "home": "Pradžia",
+    "aboutPhotos": "Šaltinio skelbimo vaizdai",
+    "catalogLive": "Aktualus šaltinio katalogas",
+    "catalogCached": "Rodoma paskutinė išsami šaltinio kopija.",
+    "catalogLoading": "Atnaujinamas šaltinio katalogas…",
+    "catalogError": "Šaltinis laikinai nepasiekiamas. Bandykite dar kartą arba atverkite pradinį katalogą.",
+    "retry": "Bandyti dar kartą",
+    "loading": "Įkeliama…",
+    "productError": "Šios prekės įkelti nepavyko. Bandykite dar kartą arba patikrinkite pradinį skelbimą.",
+    "pageOf": "iš",
+    "jump": "Eiti į puslapį",
+    "go": "Eiti",
+    "articlesLabel": "Straipsniai",
+    "articlesTitle": "Išsamios žinios apie pirkimą per LoloBuy.",
+    "articlesIntro": "Dešimt praktinių gidų, parengtų ištyrus oficialius LoloBuy pagalbos puslapius. Raskite prekes, tikrinkite QC, planuokite biudžetą ir siuntimą turėdami aiškesnę informaciją.",
+    "articleSources": "Oficialūs šaltiniai",
+    "reviewed": "Peržiūrėta 2026 m. spalio 20 d.",
+    "readArticle": "Skaityti straipsnį",
+    "allArticles": "Visi straipsniai",
+    "contents": "Šiame puslapyje",
+    "checklist": "Praktinis kontrolinis sąrašas",
+    "summary": "Trumpai",
+    "reading": "min. skaitymo",
+    "faqSearch": "Ieškoti klausimų…",
+    "noQuestions": "Atitinkančių klausimų nėra.",
+    "officialHelp": "Skaityti oficialias gaires",
+    "skip": "Pereiti prie turinio",
+    "menu": "Meniu",
+    "close": "Uždaryti",
+    "languageSearch": "Pasirinkite kalbą",
+    "catalogNote": "Kainos ir prieinamumas gali keistis.",
+    "articleFooter": "Nepriklausomos redakcinės gairės. Prieš mokėdami arba siųsdami patikrinkite savo užsakymui rodomas sąlygas.",
+    "notFound": "Prekė nerasta",
+    "showMore": "Rodyti viską",
+    "findSteps": "RASKITE. PATIKRINKITE. UŽSAKYKITE.",
+    "nextFind": "KITAS RADINYS JŪSŲ.",
+    "liveLabel": "Atnaujinta iš šaltinio",
+    "faqCount": "ištirti atsakymai",
+    "catalogue": "Katalogas"
+  },
+  "faqs": [
+    {
+      "id": "what-is-lolobuy",
+      "category": "Pradžia",
+      "question": "Ką daro LoloBuy?",
+      "answer": "LoloBuy veikia kaip pirkimo tarpininkas: pateikiate pardavėjo skelbimą, pasirenkate prekę, sumokate už pirkimą ir pristatymą Kinijoje, tuomet prieš organizuodami tarptautinį siuntimą peržiūrite sandėlio etapą. Prekes tiekia pardavėjas. Prekės nuoroda ar lentelės įrašas yra pradinis užsakymo patikros taškas, o ne dabartinio likučio patvirtinimas.",
+      "sourceIds": [
+        "buying",
+        "service"
+      ]
+    },
+    {
+      "id": "place-order",
+      "category": "Pradžia",
+      "question": "Kaip užsisakyti per LoloBuy?",
+      "answer": "Įklijuokite pradinę prekės nuorodą į LoloBuy, patikrinkite importuotą skelbimą ir pasirinkite tikslią spalvą, dydį bei kiekį. Prieš mokėdami peržiūrėkite prekės kainą, vietinį pristatymą ir pageidaujamas paslaugas. Oficialus LoloBuy gidas pirkimą, sandėlio patikrą ir tarptautinės siuntos pateikimą skiria į atskirus etapus.",
+      "sourceIds": [
+        "buying"
+      ]
+    },
+    {
+      "id": "manual-order",
+      "category": "Pradžia",
+      "question": "Ką daryti, jei LoloBuy negali nuskaityti prekės nuorodos?",
+      "answer": "Oficialus pirkimo gidas aprašo rankinio užsakymo per tarpininką formą, kai automatinis importas nepasiekiamas. Įveskite tikrąją prekės informaciją ir pasirinktus variantus, o prieš pateikdami peržiūrėkite užsakymą. Prekyvietės prekės ID nekeiskite vidiniu lentelės puslapio numeriu: jie nurodo skirtingus įrašus.",
+      "sourceIds": [
+        "buying"
+      ]
+    },
+    {
+      "id": "domestic-delivery",
+      "category": "Užsakymai ir mokėjimas",
+      "question": "Ar kelioms prekėms gali būti taikomas vienas pristatymo Kinijoje mokestis?",
+      "answer": "LoloBuy vietinio pristatymo DUK aprašo vieną mokestį, kai to paties pardavėjo prekės pateikiamos ir apmokamos kartu. Neįprastai dideliam ar sunkiam užsakymui gali reikėti papildomo pristatymo mokėjimo. Ši tvarka automatiškai nesujungia skirtingų pardavėjų mokesčių ir neapima tarptautinio siuntimo.",
+      "sourceIds": [
+        "domestic"
+      ]
+    },
+    {
+      "id": "seller-promotion",
+      "category": "Užsakymai ir mokėjimas",
+      "question": "Kaip paprašyti LoloBuy pritaikyti pardavėjo nuolaidą?",
+      "answer": "Tikrą akciją ar nemokamo vietinio pristatymo pasiūlymą įrašykite užsakymo pastabose, kad tarpininkas galėtų jį patikrinti su pardavėju. Oficiali pagalba taip pat aprašo Order Enquiry naudojimą, jei akcijos duomenys buvo praleisti. Nuolaidą reikia patikrinti; lentelė negali pažadėti, kad senas pasiūlymas vis dar galioja.",
+      "sourceIds": [
+        "promotions"
+      ]
+    },
+    {
+      "id": "change-order",
+      "category": "Užsakymai ir mokėjimas",
+      "question": "Ar po užsakymo galiu pakeisti dydį arba spalvą?",
+      "answer": "LoloBuy teigia galintis derėtis dėl pakeitimo, kol pardavėjas prekės neišsiuntė. Po išsiuntimo pagalbos puslapis vietoj to aprašo galimą grąžinimą iš sandėlio ir naują užsakymą, patiriant grąžinimo siuntimo išlaidas. Prašymą konkrečiam užsakymui pateikite nedelsdami ir prieš laikydami variantą pakeistu sulaukite patvirtinimo.",
+      "sourceIds": [
+        "changes"
+      ]
+    },
+    {
+      "id": "confirmation-message",
+      "category": "Užsakymai ir mokėjimas",
+      "question": "Ką reiškia Pending for Confirmation?",
+      "answer": "Kai kuriems užsakymo duomenims reikia jūsų patvirtinimo. Perskaitykite prie užsakymo pridėtą žinutę ir atsakykite. Oficiali pagalba nukreipia klausimus apie nupirktas prekes į Shopping Agent Order, o sandėlio etapo klausimus į My Warehouse, kur gali reikėti sprendimo priimti ar grąžinti. Meniu pavadinimai gali skirtis; laukimas, kol atsinaujins sekimas, į prašymą neatsako.",
+      "sourceIds": [
+        "confirmation",
+        "confirmation-path"
+      ]
+    },
+    {
+      "id": "received-in-stock",
+      "category": "Sandėlis ir kokybės patikra",
+      "question": "Kuo skiriasi Received ir In Stock?",
+      "answer": "Oficialiame būsenų gide Received naudojama, kai sandėlis priėmė pardavėjo siuntą ir patikra dar vyksta. In Stock reiškia, kad kokybės patikra baigta ir prekės saugomos jūsų atsargose. Todėl priėmimas sandėlyje nereiškia, kad jūsų QC peržiūra arba tarptautinis išsiuntimas jau užbaigti.",
+      "sourceIds": [
+        "status"
+      ]
+    },
+    {
+      "id": "qc-checks",
+      "category": "Sandėlis ir kokybės patikra",
+      "question": "Ką tikrina standartinė QC?",
+      "answer": "Standartinė LoloBuy patikra tikrina matomus užsakymo duomenis: stilių, kiekį, spalvą, dydį, modelį ir akivaizdžius pažeidimus. Kartu skaitykite faktinės patikros paslaugos aprašą ir užsakymo nuotraukas. Vizualinė patikra negarantuoja autentiškumo, tikslaus tinkamumo ar ilgalaikio patvarumo.",
+      "sourceIds": [
+        "qc"
+      ]
+    },
+    {
+      "id": "inspection-exclusions",
+      "category": "Sandėlis ir kokybės patikra",
+      "question": "Ar užplombuotos prekės ir elektronika visiškai išbandomos?",
+      "answer": "Ne. Patikros taisyklės aprašo užplombuotų prekių išimtis ir aiškiai netaiko profesionalios elektronikos bei susijusių prekių autentiškumo, veikimo ir kokybės bandymų. Pasirinkus variantą be patikros, sandėlis tikrina apribojimus, bet netikrina prekės ir nepateikia QC nuotraukų. Prieš pasikliaudami rezultatu peržiūrėkite pasirinktą paslaugą.",
+      "sourceIds": [
+        "qc"
+      ]
+    },
+    {
+      "id": "qc-photos",
+      "category": "Sandėlis ir kokybės patikra",
+      "question": "Ar galiu paprašyti daugiau QC nuotraukų?",
+      "answer": "Paslaugų apžvalgoje aprašomos papildomos nuotraukos pagal prašymą; nuotraukų paslaugos puslapis taip pat siūlo Secondary Quality Inspection, jei patikra prieš sandėliavimą buvo praleista. Oficialūs puslapiai nurodo skirtingus standartinius nuotraukų kiekius. Patikrinkite pasirinktą paslaugą ir paprašykite konkretaus trūkstamo vaizdo ar matavimo, užuot manę, kad kiekvienas užsakymas turi tiek pat nuotraukų.",
+      "sourceIds": [
+        "service",
+        "photos",
+        "qc"
+      ]
+    },
+    {
+      "id": "storage-period",
+      "category": "Sandėlis ir kokybės patikra",
+      "question": "Kiek laiko prekės gali būti LoloBuy sandėlyje?",
+      "answer": "Atskiras sandėliavimo puslapis ir dabartinis būsenų gidas įprastoms saugomoms prekėms nurodo 180 dienų, o senesnis pirkimo gidas vis dar nurodo 90. Neįprastoms nesusietoms siuntoms taikomos atskiros taisyklės. Patikrinkite savo prekei rodomą terminą ir iki jo pabaigos sutvarkykite siuntimą ar pratęsimą; nepasikliaukite vien senesniu gidu.",
+      "sourceIds": [
+        "storage",
+        "status",
+        "buying"
+      ]
+    },
+    {
+      "id": "consolidate",
+      "category": "Siuntimas ir sekimas",
+      "question": "Ar kelis pirkinius galiu siųsti vienoje siuntoje?",
+      "answer": "Pirkimo gidas aprašo saugomų prekių pasirinkimą My Warehouse ir bendrą jų pateikimą pristatymui. Patikrinkite, ar visos pasirinktos prekės tinkamai peržiūrėtos ir ar prieinamas maršrutas priima gautą siuntą. Prekių sujungimas pakeičia supakuotą siuntą; tai negarantuoja mažesnės bendros siuntimo kainos.",
+      "sourceIds": [
+        "buying"
+      ]
+    },
+    {
+      "id": "remove-packaging",
+      "category": "Siuntimas ir sekimas",
+      "question": "Ar LoloBuy prieš siuntimą gali pašalinti dėžes?",
+      "answer": "Pateikiant pristatymą galima pasirinkti Package Removal paslaugą. Oficialus aprašas teigia, kad būtina apsauginė pakuotė paliekama. Jei originalių dėžių reikia dovanai, saugojimui ar galimam grąžinimui, įvertinkite tai prieš rinkdamiesi pašalinimą. Galutinis pakavimas ir siuntimo kaina priklauso nuo prekių bei pasirinktos siuntos.",
+      "sourceIds": [
+        "packaging"
+      ]
+    },
+    {
+      "id": "shipping-price",
+      "category": "Siuntimas ir sekimas",
+      "question": "Kodėl galutinė siuntimo kaina gali skirtis nuo apskaičiuotos?",
+      "answer": "Pradinis siuntimo mokestis grindžiamas numatomu svoriu, pasirinkta paskirties vieta ir maršrutu. Pakavimas gali pakeisti svorį ir matmenis, o galutinį atsiskaitymą lemia logistikos teikėjo mokestis. LoloBuy aprašo permokų grąžinimą arba papildomą mokėjimą, kai tikroji siuntimo kaina skiriasi. Patikrinkite galutinę siuntos kainą ir paskyros žinutę.",
+      "sourceIds": [
+        "weight",
+        "freight-balance"
+      ]
+    },
+    {
+      "id": "volumetric-weight",
+      "category": "Siuntimas ir sekimas",
+      "question": "Kas yra tūrinis svoris?",
+      "answer": "Jis siuntos matmenis paverčia svoriu, naudojamu didelių gabaritų prekių kainai skaičiuoti. LoloBuy pagalba skiria maršrutams būdingas formules ir pažymi, kad apmokestinamas svoris gali būti didesnis iš faktinio ir tūrinio. Naudokite pasirinktam maršrutui nurodytą daliklį ir apvalinimo taisykles, o ne universalią kainą už kilogramą.",
+      "sourceIds": [
+        "weight"
+      ]
+    },
+    {
+      "id": "supplemental-payment",
+      "category": "Siuntimas ir sekimas",
+      "question": "Ką daryti gavus pranešimą apie papildomą siuntimo mokėjimą?",
+      "answer": "Atverkite atitinkamą siuntą ir peržiūrėkite pakeistą mokestį bei patvirtinimo prašymą. LoloBuy papildomų mokėjimų taisyklėse taikomos skirtingos ribos ir aprašomi siuntos sulaikymo ar atšaukimo atvejai. Atsakykite iki savo siuntai rodomo termino ir sumokėkite sutartą likutį; pradinio įverčio nelaikykite galutiniu.",
+      "sourceIds": [
+        "freight-balance"
+      ]
+    },
+    {
+      "id": "tracking",
+      "category": "Siuntimas ir sekimas",
+      "question": "Kur galiu sekti tarptautinę siuntą?",
+      "answer": "Oficialus pirkimo gidas po išsiuntimo nukreipia į My LoloBuy → Parcels. Būsenų gidas skiria Packed ir Shipped: supakuota siunta dar gali laukti galutinio svorio patvirtinimo, o Shipped reiškia, kad ji turi sekimo numerį ir perduota vežėjui. Skaitykite naujausią vežėjo įvykį ir paskyros būseną.",
+      "sourceIds": [
+        "buying",
+        "status"
+      ]
+    },
+    {
+      "id": "cancellation",
+      "category": "Grąžinimas ir pagalba po pirkimo",
+      "question": "Ar galiu atšaukti užsakymą prieš jam pasiekiant sandėlį?",
+      "answer": "Atšaukimas priklauso nuo dabartinio užsakymo etapo. Naudokite atitinkamo užsakymo atšaukimo arba prekių ir pinigų grąžinimo parinktį. Kai prekė jau nupirkta, gali reikėti pardavėjo patvirtinimo; pateiktas prašymas nėra patvirtintas pinigų grąžinimas. Prieš pakaitinį pirkimą patikrinkite atsakymą užsakyme.",
+      "sourceIds": [
+        "cancellation",
+        "refunds"
+      ]
+    },
+    {
+      "id": "eligible-return",
+      "category": "Grąžinimas ir pagalba po pirkimo",
+      "question": "Ką apima penkių dienų LoloBuy grąžinimo taisyklė?",
+      "answer": "Atskira taisyklė tinkamoms prekėms aprašo 120 valandų prašymo laikotarpį nuo kitos valandos po Stocked in būsenos. Vis tiek taikomi pardavėjo sutikimo, prekės būklės ir būtinos pakuotės reikalavimai. Grąžinant be trūkumo gali reikėti mokėti už abu vietinio siuntimo etapus ir administravimą. Nedelsdami patikrinkite tinkamumą bei tikrąjį prašymo puslapį.",
+      "sourceIds": [
+        "returns"
+      ]
+    },
+    {
+      "id": "refund-destination",
+      "category": "Grąžinimas ir pagalba po pirkimo",
+      "question": "Kur pervedamas patvirtintas pinigų grąžinimas?",
+      "answer": "Grąžinimo pagalbos puslapyje dažniausiai aprašomas patvirtintų grąžinimų įskaitymas į LoloBuy paskyros likutį. Atskirai nurodoma siaura pirminio mokėjimo būdo išimtis tam tikriems patvirtinimo laukiantiems PayPal užsakymams. Tai nežada, kad kiekvienas grąžinimas keliaus tiesiai į banko kortelę, ir neįrodo, kad visi mokėjimo būdai dabar prieinami.",
+      "sourceIds": [
+        "refunds"
+      ]
+    },
+    {
+      "id": "delivery-problem",
+      "category": "Grąžinimas ir pagalba po pirkimo",
+      "question": "Ką daryti, jei pristatyta siunta sugadinta arba neteisinga?",
+      "answer": "Atverkite paveiktą siuntą My LoloBuy → Parcels ir naudokite Apply After-sales. Aprašykite problemą ir išsaugokite aiškias siuntos bei prekės nuotraukas. Oficialiame straipsnyje pateikti prieštaringi pretenzijų terminai, įskaitant ankstesnį įspėjimą, todėl praneškite iškart ir gaukite konkretaus atvejo patvirtinimą, užuot laukę bendro termino.",
+      "sourceIds": [
+        "claims"
+      ]
+    },
+    {
+      "id": "sizing",
+      "category": "Prekių pasirinkimas",
+      "question": "Kaip pasirinkti drabužių arba batų dydį?",
+      "answer": "LoloBuy dydžių gairės perspėja, kad parduotuvių standartai gali skirtis. Tikrojo pardavėjo matavimų lentelę, vienetus ir pasirinktą variantą palyginkite su savo matmenimis ar gerai tinkančia preke. Perskaičiavimo lentelės yra orientacinės, o ne garantija, kad ta pati žyma tiks pas kiekvieną pardavėją. Prieš užsakydami teiraukitės trūkstamų matavimų.",
+      "sourceIds": [
+        "sizing"
+      ]
+    },
+    {
+      "id": "1688",
+      "category": "Prekių pasirinkimas",
+      "question": "Ar 1688 užsakymams taikomos tos pačios pirkimo ir patikros taisyklės?",
+      "answer": "Oficialus 1688 gidas reikalauja pardavėjo minimalaus kiekio; kainos ir vietinis siuntimas gali kisti pagal kiekį. Patikros taisyklės skiria atrankinę A tipo prekių patikrą nuo B tipo prekių be standartinės QC. Prieš mokėdami patvirtinkite kiekį, patikros apimtį ir grąžinimo sąlygas, užuot tikėjęsi mažmeninio užsakymo tvarkos.",
+      "sourceIds": [
+        "wholesale",
+        "qc"
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "slug": "using-lolobuy-spreadsheet",
+      "title": "Kaip naudoti LoloBuy lentelę: prekės nuorodą paverskite naudingu atrinktų prekių sąrašu",
+      "description": "Raskite prekes pagal kategoriją, palyginkite tikslų skelbimą ir išsaugokite reikalingą informaciją prieš atverdami prekę LoloBuy.",
+      "keyword": "lolobuy spreadsheet",
+      "category": "Pradžia",
+      "summary": "Naudinga lentelė susiaurina paiešką. Naudingas atrankos sąrašas užfiksuoja tikslų gaminį, variantą ir neatsakytus klausimus, kurių reikės užsakymui.",
+      "sections": [
+        {
+          "heading": "Pradėkite nuo pirkimo sprendimo, o ne ilgo sąrašo",
+          "paragraphs": [
+            "LoloBuy lentelė yra prekių atradimo įrankis. Galite naršyti kategoriją, žiūrėti prekių vaizdus ir sekti skelbimą į kitą žingsnį. Tai nereiškia, kad katalogo leidėjas nupirko kiekvieną prekę, išbandė pardavėją ar rezervavo jūsų dydį. Kiekvieną eilutę laikykite užuomina, kurią reikia patikrinti.",
+            "Prieš ieškodami užsirašykite reikiamos prekės tipą, svarbius matmenis ir apytikslį prekės biudžetą. Ieškoti juodo užsegamo džemperio naudingiau nei rinkti kiekvieną patrauklią drabužių nuorodą. Siauresnis klausimas taip pat padeda pastebėti, kada skelbimui trūksta esminės informacijos."
+          ]
+        },
+        {
+          "heading": "Išsaugokite pradinę prekės tapatybę",
+          "paragraphs": [
+            "Katalogo puslapio adreso skaičius gali būti vietinis įrašo numeris. Jis gali skirtis nuo prekyvietės prekės ID pirkimo nuorodoje. Nekeiskite skaičių ranka, kad nuoroda atrodytų teisinga. Naudokite atitinkamą prekės mygtuką, tada atsidariusią prekę palyginkite su skelbimu, kurį ketinote pirkti.",
+            "Išsaugokite pradinį pardavėjo URL kartu su pasirinktu variantu. Ekrano kopija gali užfiksuoti naudingą vaizdą, bet ji mažiau vertinga, jei nežinote, kuriam pardavėjui, dydžiui ar spalvai priklauso. Jei nuoroda atveria kitą prekę ar tuščią skelbimą, sustokite ir patikrinkite prieš tęsdami."
+          ]
+        },
+        {
+          "heading": "Lyginkite lygiaverčius variantus",
+          "paragraphs": [
+            "Pradinė kaina gali būti taikoma pigiausiam variantui, vienam aksesuarui ar kitokiam kiekiui. Skelbimuose lyginkite tą pačią prekės komplektaciją. Dviejų dalių komplekto ir vienų marškinėlių kainų palyginimas nėra prasmingas, net jei jų miniatiūros atrodo panašiai.",
+            "Patikrinkite, ar galerijoje rodoma pasirinkta spalva ir ar yra dydžių lentelė. Vienodos nuotraukos pas skirtingus pardavėjus neįrodo vienodos konstrukcijos ar atsargų. Palyginime užfiksuokite esamus įrodymus ir palikite matomą spragą ten, kur svarbi informacija nežinoma."
+          ],
+          "bullets": [
+            "Tikslus gaminys ir pardavėjo URL",
+            "Pasirinktas dydis, spalva ir kiekis",
+            "Dabartinė šio varianto kaina",
+            "Matmenys arba dydžių lentelės nuoroda",
+            "Vienas neišspręstas klausimas prieš užsakant"
+          ]
+        },
+        {
+          "heading": "Pirkimą tęskite oficialiu būdu",
+          "paragraphs": [
+            "LoloBuy pirkimo gidas aprašo prekyvietės nuorodos pateikimą, prieinamų variantų pasirinkimą ir prekės bei vietinio pristatymo apmokėjimą. Jame taip pat aprašoma rankinė užsakymo forma, jei prekės informacijos negalima nuskaityti automatiškai. Todėl sėkmingas nuorodos atvėrimas tėra užsakymo peržiūros pradžia.",
+            "Oficialiame prekės puslapyje dar kartą patikrinkite vaizdą, varianto tekstą ir kiekį. Katalogas negali garantuoti dabartinių atsargų ar išsaugoti pasirinkimo, kurio nepasirinkote atsiskaitydami. Specialų reikalavimą pateikite pakankamai tiksliai, kad pirkėjas galėtų veikti, pavyzdžiui, nurodykite tikslią spalvą ar klausimą dėl matavimo."
+          ]
+        },
+        {
+          "heading": "Atskirkite atradimo nuotraukas nuo savo QC",
+          "paragraphs": [
+            "Pardavėjo galerija paaiškina pasiūlymą. Ankstesnė sandėlio nuotrauka gali rodyti kito žmogaus prekę. Prie jūsų užsakymo pridėtos patikros nuotraukos yra įrodymai, kuriuos reikia peržiūrėti prieš išsiunčiant tą prekę į užsienį. Šie trys vaizdų tipai atsako į skirtingus klausimus ir nėra pakeičiami vienas kitu.",
+            "Atrinktų prekių sąrašas turėtų lydėti užsakymą. Prekei atvykus į sandėlį, užfiksuotą variantą palyginkite su matoma dydžio etikete, spalva ir kiekiu. Neatitikimą lengviau paaiškinti, kai pradinis pasirinkimas ir užsakymo numeris yra kartu."
+          ]
+        },
+        {
+          "heading": "Tegul atranka išlieka naudinga ir po pirkimo",
+          "paragraphs": [
+            "Palikite tik stipriausius kandidatus ir užrašykite, kodėl kiekvienas išliko po palyginimo. Pavyzdžiui, vienas džemperis gali turėti aiškesnę matavimų lentelę, o kitam trūkti audinio detalės paaiškinimo. Taip nuorodų kolekcija tampa sprendimu, prie kurio galite grįžti nekartodami tyrimo.",
+            "Prieš pirkdami skaitykite užsakymo ir biudžeto gidus. Prieš pateikdami siuntą skaitykite QC ir siuntimo gidus. Lentelė naudingiausia tada, kai sujungia šiuos etapus, o ne pateikia prekės kainą kaip visą pristatyto užsakymo kainą."
+          ]
+        }
+      ],
+      "checklist": [
+        "Išsaugokite tikslų šaltinio URL ir variantą.",
+        "Lyginkite vienodus kiekius ir komplektacijas.",
+        "Prieš mokėdami išsiaiškinkite trūkstamus matmenis.",
+        "Patikrinkite importuotą LoloBuy skelbimą.",
+        "Prieš siųsdami peržiūrėkite savo užsakymo QC."
+      ],
+      "sourceIds": [
+        "buying",
+        "qc"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 560
+    },
+    {
+      "slug": "how-to-order-on-lolobuy",
+      "title": "Kaip užsakyti LoloBuy: prekių nuorodos, variantai ir mokėjimo etapai",
+      "description": "Sekite užsakymą nuo prekyvietės nuorodos iki sandėlio patikros ir atskirai pateikiamos tarptautinės siuntos.",
+      "keyword": "how to order on lolobuy",
+      "category": "Užsakymas",
+      "summary": "Patikrinkite prekę prieš mokėdami, sandėlio įrodymus prieš siųsdami ir siuntos kainą prieš išsiuntimą. Kiekvienas etapas atsako į kitą klausimą.",
+      "sections": [
+        {
+          "heading": "Pradėkite oficialioje svetainėje",
+          "paragraphs": [
+            "Registracijai, prisijungimui prie paskyros ir mokėjimui naudokite oficialią LoloBuy svetainę. Šis nepriklausomas katalogas padeda atrasti prekes; jis nerenka jūsų slaptažodžio ir neapdoroja užsakymo. Atverdami prekę patikrinkite paskirties adresą, o pirkimo pokalbius laikykite prie atitinkamo užsakymo.",
+            "Oficialus pirkimo gidas aprašo pradžią nuo prekės nuorodos palaikomoje Kinijos prekyvietėje. Pasirinktą prekę tiekia skelbimo pardavėjas. Šis skirtumas svarbus, nes pirkimo paslauga ir pardavėjas nevaldo tų pačių sandorio dalių."
+          ]
+        },
+        {
+          "heading": "Patikrinkite importuotą prekę",
+          "paragraphs": [
+            "Įklijuokite pradinę prekės nuorodą arba naudokite atitinkamą katalogo LoloBuy mygtuką. Prieš pasirinkdami variantus, atvertą puslapį palyginkite su šaltiniu. Patikrinkite pagrindinį vaizdą, pavadinimą, prieinamą pardavėjo informaciją, spalvą, dydį ir kiekį. Nepasikliaukite vien vaizdu.",
+            "Jei puslapyje rodoma rankinė tarpininko užsakymo forma, oficialus gidas nurodo informaciją įvesti ranka. Pildykite pagal tikrąjį skelbimą, užuot spėlioję trūkstamus variantus. Neaiškią būtiną detalę išsiaiškinkite per užsakymo užklausą prieš prašydami pirkėjo tęsti."
+          ],
+          "bullets": [
+            "Prekė atitinka pradinį URL",
+            "Varianto tekstas atitinka norimą spalvą ir dydį",
+            "Kiekis ir vieneto kaina nurodo tą pačią komplektaciją",
+            "Specialus reikalavimas parašytas aiškiai"
+          ]
+        },
+        {
+          "heading": "Supraskite pirmąjį mokėjimą",
+          "paragraphs": [
+            "Oficialus pirkimo procesas atskiria prekę ir vietinį pristatymą Kinijoje nuo vėlesnės tarptautinės siuntos. Pirmąjį mokėjimą peržiūrėkite eilutė po eilutės. Paskirties pasirinkimas perkant nereiškia, kad rodomoje prekių sumoje yra visi pristatymui į tą vietą reikalingi mokesčiai.",
+            "Mokėjimo būdus, valiutas ir papildomas paslaugas tikrinkite dabartiniame atsiskaitymo lange. Bendras pagalbos straipsnio sąrašas nežada, kad kiekvienas būdas prieinamas jūsų paskyrai ar užsakymui. Išsaugokite mokėjimo įrašą ir palyginkite su užsakymo būsena, užuot mokėję dar kartą dėl lėto puslapio atnaujinimo."
+          ]
+        },
+        {
+          "heading": "Atsakykite į užsakymo klausimus",
+          "paragraphs": [
+            "LoloBuy turi „Pending for Confirmation“ būseną informacijai, kurią reikia patvirtinti. Pagalbos puslapis nukreipia pirkėją į užsakymo instrukcijas. Perskaitykite konkretų klausimą ir atsakykite į jį: nuo to gali priklausyti, ar pirkimo komanda galės tęsti.",
+            "Oficialios pakeitimų gairės skiria dar neišsiųstas ir jau išsiųstas prekes. Iki išsiuntimo pirkėjas gali prašyti pardavėjo pakeitimo; po išsiuntimo gali reikėti grąžinimo ir naujo užsakymo. Prašomas pakeitimas nėra įvykęs, kol to nepatvirtina užsakymo įrašas."
+          ]
+        },
+        {
+          "heading": "Peržiūrėkite atvykimą ir patikrą",
+          "paragraphs": [
+            "Atvykimas į sandėlį ir baigta patikra yra atskiri etapai. Raskite prekę sandėlio skiltyje ir palyginkite nuotraukas bei užfiksuotą variantą su pirkiniu. Pirmiausia tikrinkite tapatybę, tuomet jums svarbias matomas detales. Akivaizdų neatitikimą išspręskite prieš įtraukdami prekę į tarptautinę siuntą.",
+            "Nemanykite, kad visos prekės tikrinamos vienodai. Oficiali standartinės patikros politika aprašo užplombuotų prekių apribojimus ir specialias kai kurių 1688 užsakymų taisykles. Jei reikia konkretaus matavimo ar vaizdo, tikrinkite jo prieinamumą savo užsakymui, o ne laikykite bendrą QC nuotrauką visko įrodymu."
+          ]
+        },
+        {
+          "heading": "Siuntos pateikimą vertinkite kaip atskirą sprendimą",
+          "paragraphs": [
+            "Oficialus procesas nurodo pasirinkti saugomas prekes, įvesti pristatymo duomenis ir rinktis iš prieinamų siuntimo variantų. Kartu peržiūrėkite paskirtį, apribojimus, pakavimo pasirinkimus ir siuntimo avansą. Nupirkta prekė automatiškai netampa paruošta išsiųsti tarptautine siunta.",
+            "Po pakavimo ir logistikos matavimo galutinis mokestis gali skirtis. Stebėkite siuntos įrašą dėl pakeitimų ar patvirtinimo prašymo. Išsiuntus naudokite siuntų skiltį sekimui, išsaugokite užsakymų nuorodas ir gavę nedelsdami patikrinkite turinį."
+          ]
+        }
+      ],
+      "checklist": [
+        "Patvirtinkite pradinę prekę ir tikslų variantą.",
+        "Peržiūrėkite prekės ir vietinio pristatymo mokesčius.",
+        "Atsakykite į laukiančius patvirtinimo prašymus.",
+        "Patikrinkite sandėlio nuotraukas ir neišspręstus klausimus.",
+        "Peržiūrėkite atskirą tarptautinės siuntos pasiūlymą."
+      ],
+      "sourceIds": [
+        "buying",
+        "confirmation",
+        "changes",
+        "qc",
+        "freight-balance"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 524
+    },
+    {
+      "slug": "lolobuy-qc-photos",
+      "title": "LoloBuy QC nuotraukos: praktinis patikros sąrašas prieš siuntimą",
+      "description": "Atskirkite pardavėjo nuotraukas nuo savo sandėlio patikros ir tikrinkite tapatybę, matomą būklę bei detales, kurioms dar reikia įrodymų.",
+      "keyword": "lolobuy qc photos",
+      "category": "Kokybės patikra",
+      "summary": "Pradėkite nuo užsakytos prekės ir varianto. Pagal prieinamus vaizdus nuspręskite, kas aišku, kam reikia papildomos nuotraukos ir ką išspręsti prieš išsiuntimą.",
+      "sections": [
+        {
+          "heading": "Atpažinkite, kokius įrodymus matote",
+          "paragraphs": [
+            "Prekės galerija yra pardavėjo pasiūlymo dalis. Referencinė QC nuotrauka gali rodyti ankstesnį užsakymą. Jūsų sandėlio nuotraukos susijusios su preke, gauta jūsų pirkimui. Spręsdami šias grupes laikykite atskirai, ypač jei prekė turi kelias spalvas, versijas ar dydžius.",
+            "Pirmiausia susiekite užsakymo numerį, prekę ir pasirinktą variantą. Detali netinkamos versijos nuotrauka nesuteikia naudingo tikrumo. Jei vaizdų negalima susieti su jūsų sandėlio preke, prieš vertindami išvaizdą paprašykite šio susiejimo."
+          ]
+        },
+        {
+          "heading": "Tapatybę tikrinkite prieš smulkias detales",
+          "paragraphs": [
+            "Pirmiausia peržiūrėkite dydį, spalvą, kiekį ir modelį. Ieškokite nuoseklių etikečių ir to paties gaminio vaizdų. Nuotraukų rinkinys gali būti patrauklus, bet rodyti netinkamą dydžio žymą ar nepilną komplektą. Matomą informaciją lyginkite su išsaugotu pasirinkimu, o ne atmintimi.",
+            "Batų porai patikrinkite abu batus ir matomas dydžio žymas. Drabužiui patikrinkite pasirinktą spalvą ir etiketės dydį. Krepšiui ar aksesuarų rinkiniui patikrinkite, ar matomos tikėtinos dalys. Tai praktiniai peržiūros žingsniai, o ne garantija, kad patikrinta kiekviena paslėpta detalė."
+          ]
+        },
+        {
+          "heading": "Naudokite kategorijai tinkamą sąrašą",
+          "paragraphs": [
+            "Drabužiams naudingi bendras siluetas, priekis ir nugara, siūlės, spauda ar siuvinėjimas bei vietos, kur tinkamumas priklauso nuo matavimo. Avalynei tikrinkite porą kartu, matomą konstrukciją ir prašytą dydį. Krepšiams užsegimai, rankenos ir vidaus vaizdai atsako į skirtingus klausimus.",
+            "Užrašykite tik sprendimą lemiančias detales. Ilgas bendras sąrašas gali nukreipti dėmesį nuo vieno svarbaus trūkstamo matavimo ar pažeisto užsegimo. Jei priekis aiškus, bet nugaros vaizdo nėra, prašykite trūkstamo vaizdo, o ne dar vienos bendros nuotraukos tuo pačiu kampu."
+          ],
+          "bullets": [
+            "Patvirtinkite tapatybę ir pasirinktą variantą",
+            "Apžiūrėkite matomą būklę ir konstrukciją",
+            "Palyginkite prašytus matavimus",
+            "Trūkstamus vaizdus žymėkite atskirai nuo matomų trūkumų"
+          ]
+        },
+        {
+          "heading": "Supraskite standartinės paslaugos ribas",
+          "paragraphs": [
+            "LoloBuy standartinės patikros puslapis aprašo išvaizdos tikrinimą ir išimtis. Užplombuotos prekės ne visuomet atidaromos, o tam tikri profesionalūs ar elektroniniai gaminiai netikrinami dėl autentiškumo, veikimo ar kokybės. Kai kuriems 1688 užsakymams taikoma atranka arba kitos patikros taisyklės.",
+            "Oficialūs puslapiai nesutaria dėl vienos universalios nuotraukų normos: patikros ir bendras paslaugų puslapiai aprašo skirtingus kiekius. Patikrinkite prie savo užsakymo priskirtą paslaugą, užuot tikėjęsi konkretaus skaičiaus. Naudingas klausimas yra, ar prieinami įrodymai padeda išspręsti jums rūpimą klausimą."
+          ]
+        },
+        {
+          "heading": "Prašykite konkretaus papildomo vaizdo",
+          "paragraphs": [
+            "Tikslus prašymas nurodo užsakymą, fotografuojamą vietą ir priežastį. Pavyzdžiui: „Parodykite dydžio etiketę ir išmatuokite plokščiai padėto drabužio krūtinės plotį nuo siūlės iki siūlės.“ Tai aiškiau nei klausti, ar prekė gera. Prieš papildomą darbą patikrinkite paslaugos prieinamumą ir kainą.",
+            "Naudokite tą patį matavimo metodą kaip pardavėjo lentelėje. Plokščio drabužio plotis ir kūno apimtis yra skirtingi dydžiai. Nuotrauką ir matavimą saugokite kartu, kad skaičius nebūtų supainiotas su kito dydžio ar kitos prekės matavimu."
+          ]
+        },
+        {
+          "heading": "Priimkite dokumentuotą sprendimą",
+          "paragraphs": [
+            "Išvadas suskirstykite į patvirtintas, neaiškias ir nepriimtinas. Jei detalė neaiški, prašykite įrodymo. Jei prekė skiriasi nuo užsakymo, prieš tarptautinį siuntimą naudokite tinkamą pagalbos ar grąžinimo procesą. Saugokite trumpą problemos aprašymą ir ją rodančias nuotraukas.",
+            "Nuotraukos negali nustatyti visų medžiagos savybių, patogumo, ilgalaikio patvarumo ar vidinio veikimo. Matomos būklės patvirtinimas yra siauresnis sprendimas. Grąžinimo sąlygas skaitykite prekei dar esant sandėlyje ir sėkmingos QC nelaikykite pažadu dėl muitinės ar tarptautinio pristatymo."
+          ]
+        }
+      ],
+      "checklist": [
+        "Susiekite nuotraukas su savo užsakymu.",
+        "Pirma tikrinkite dydį, spalvą, modelį ir kiekį.",
+        "Prašykite konkretaus trūkstamo vaizdo ar matavimo.",
+        "Patikrinkite patikros paslaugą ir jos išimtis.",
+        "Svarbias problemas išspręskite prieš pateikdami siuntą."
+      ],
+      "sourceIds": [
+        "qc",
+        "photos",
+        "service",
+        "sizing"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 549
+    },
+    {
+      "slug": "lolobuy-shipping-costs",
+      "title": "LoloBuy siuntimo išlaidos: palyginkite visą siuntą",
+      "description": "Supraskite numatomą, faktinį ir tūrinį svorį, tada lyginkite maršrutus su ta pačia paskirtimi, turiniu ir pakavimu.",
+      "keyword": "lolobuy shipping calculator",
+      "category": "Siuntimas",
+      "summary": "Naudingas siuntimo kainos palyginimas prasideda nuo aiškiai apibrėžtos siuntos. Gidas paaiškina duomenis ir patikras; tai nėra tiesioginis kainos pasiūlymas.",
+      "sections": [
+        {
+          "heading": "Atskirkite prekės kainą nuo siuntimo",
+          "paragraphs": [
+            "Kaina prie prekės nėra visa pristatymo kaina. Oficialus LoloBuy procesas atskiria prekės pirkimą ir vietinį pristatymą nuo vėliau mokamo tarptautinio siuntimo avanso. Biudžetą galite numatyti prieš pirkdami, tačiau galutinio siuntų palyginimo negalite atlikti vien pagal prekės kainą.",
+            "Užrašykite paskirtį, numatomą turinį ir pakuotę, kurią norite pasilikti. Batų pora su dėže ir ta pati pora be jos yra skirtingi pakavimo sprendimai. Papildomos prekės gali pakeisti svorį ir matmenis, todėl vienas nedidelis pirkinys galutinę kainą gali paveikti keliais būdais."
+          ]
+        },
+        {
+          "heading": "Žinokite, kokį svorį lyginate",
+          "paragraphs": [
+            "LoloBuy svorio gidas skiria įvertį nuo tikrojo supakuotos siuntos svorio. Sandėlio prekės įrašas apima originalią pakuotę, o galutinė siunta dar turi išorinę siuntimo pakuotę ir pasirinktą pašalinimą ar sutvirtinimą. Šiuose etapuose matmenys gali skirtis.",
+            "Tūrinis svoris atspindi siuntos užimamą vietą. Oficialus gidas skirtingiems maršrutams skelbia skirtingus daliklius. Netaikykite vieno daliklio visiems vežėjams ir nemanykite, kad senas pavyzdys yra šiandienos tarifas. Naudokite dabartines pateikiamos siuntos maršruto sąlygas."
+          ],
+          "bullets": [
+            "Paskirtis ir pašto kodas",
+            "Prekių apribojimai ir turinys",
+            "Faktinis supakuotos siuntos svoris",
+            "Ilgis, plotis ir aukštis",
+            "Maršruto apmokestinimo taisyklės ir įtrauktos paslaugos"
+          ]
+        },
+        {
+          "heading": "Skaičiuokite neapsimesdami, kad tai pasiūlymas",
+          "paragraphs": [
+            "Tik iliustracijai: 40 × 30 × 20 centimetrų siuntos tūris yra 24 000 kubinių centimetrų. Hipotetinis maršrutas su 6 000 dalikliu duoda 4 kilogramų tūrinį svorį; 5 000 daliklis duoda 4,8 kilogramo. Nė vienas skaičiavimas nepateikia siuntimo kainos.",
+            "Pavyzdys parodo, kodėl maršruto taisyklė svarbi. Vis tiek reikia faktinio svorio, apmokestinimo žingsnių, paskirties ir dabartinio tarifo. Nesirinkite maršruto pagal reklaminę kainą „už kilogramą“, kai mokestis priklauso nuo pirmo vieneto, papildomų vienetų ar didesnio apmokestinamo svorio."
+          ]
+        },
+        {
+          "heading": "Skirtingais maršrutais lyginkite tą pačią siuntą",
+          "paragraphs": [
+            "Lygindami prieinamas linijas išlaikykite tuos pačius pradinius duomenis. Patikrinkite priimamą turinį, nurodytą kelionės įvertį, sekimą, pakavimo reikalavimus ir papildomą apsaugą. Mažesnė pradinė suma nėra pilnas palyginimas, jei paslaugos ar apribojimai skiriasi.",
+            "Pristatymo įverčius laikykite įverčiais. Sandėlio tvarkymas, vežėjo judėjimas ir paskirties procesai yra atskiri etapai. Gidas nežada universalaus pristatymo laiko, neapmokestinamo maršruto ar fiksuoto muito. Spręsdami naudokite dabartinį pasiūlymą ir oficialias paskirties taisykles."
+          ]
+        },
+        {
+          "heading": "Įvertinkite pakavimo kompromisus",
+          "paragraphs": [
+            "Oficialus pakuotės pašalinimo puslapis aprašo nereikalingos išorinės pakuotės pašalinimą išsaugant prekei būtiną apsaugą. Taip pat patariama nesirinkti pašalinimo, jei originali pakuotė svarbi dovanai ar išsaugojimui. Mažesnis tūris gali padėti, tačiau apsauga ir pirkimo tikslas vis tiek svarbūs.",
+            "Prašykite konkretaus pakavimo, o ne bendro nurodymo viską pašalinti. Jei prieinami, palyginkite galutinius matmenis. Sujungimas ar pakuotės pašalinimas automatiškai nesumažina sąskaitos kiekviename maršrute, o lengvai pažeidžiamai prekei gali reikėti daugiau apsaugos."
+          ]
+        },
+        {
+          "heading": "Stebėkite galutinį atsiskaitymą",
+          "paragraphs": [
+            "LoloBuy papildomų mokėjimų gairės teigia, kad numatytas siuntimas suderinamas su tikruoju logistikos teikėjo mokesčiu. Tai gali reikšti permokos grąžinimą ar papildomą mokėjimą. Skaitykite siuntos žinutes ir atsakykite į su jūsų siunta susijusius prašymus.",
+            "Pradinį įvertį, galutinius apmokestinamus matmenis, pasirinktas paslaugas ir korekciją laikykite kartu. Toks įrašas padeda suprasti skirtumą. Galimus paskirties mokesčius planuokite atskirai ir patikrinkite galutinę siuntos sumą prieš laikydami užsakymą baigtu."
+          ]
+        }
+      ],
+      "checklist": [
+        "Lyginkite maršrutus su tuo pačiu turiniu ir paskirtimi.",
+        "Patikrinkite faktinio ir tūrinio svorio taisykles.",
+        "Sprendime išlaikykite pakuotės apsaugos svarbą.",
+        "Atskirkite įverčius nuo galutinių mokesčių.",
+        "Prieš išsiuntimą perskaitykite korekcijų žinutes."
+      ],
+      "sourceIds": [
+        "buying",
+        "weight",
+        "packaging",
+        "freight-balance"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 529
+    },
+    {
+      "slug": "lolobuy-warehouse-consolidation",
+      "title": "LoloBuy sandėlio gidas: patikra, saugojimas ir sujungimas",
+      "description": "Tvarkykite saugomas prekes, išspręskite QC klausimus ir pasirinkite pakuotę atsižvelgdami į visą siuntą.",
+      "keyword": "lolobuy warehouse",
+      "category": "Sandėlis",
+      "summary": "Sandėlio etapas leidžia susieti pirkimo įrašą su gauta preke ir nuspręsti, kas paruošta siųsti kartu.",
+      "sections": [
+        {
+          "heading": "Atskirkite atvykimą nuo pasirengimo",
+          "paragraphs": [
+            "Pardavėjo pristatymo skenavimas reiškia, kad vietinė siunta pasiekė tam tikrą kelionės tašką. Jis pats neparodo, kad jūsų prekė patikrinta, tinkamai susieta ir paruošta tarptautiniam išsiuntimui. LoloBuy būsenų gidas atskiria gautas prekes, patikrą ir saugomas atsargas.",
+            "Darbinį sąrašą sudarykite pagal sandėlio įrašą, o ne vieną sekimo žinutę. Kiekvienai prekei laikykite užsakymo numerį, variantą ir QC būseną. Jei keli pardavėjo paketai atvyksta kartu, tai neleidžia vienai baigtai prekei paslėpti klausimo apie kitą."
+          ]
+        },
+        {
+          "heading": "Sudarykite trumpą sandėlio sąrašą",
+          "paragraphs": [
+            "Kiekvienai prekei pažymėkite, ką užsakėte, ką rodo sandėlis ir kas neišspręsta. Pakanka keturių stulpelių: prekė, teisingas variantas, patikros sprendimas ir pakavimo nurodymas. Tikslas – matyti atvirą klausimą prieš sudarant siuntą.",
+            "Nuotraukas lyginkite su pradiniu pasirinkimu. Trūkstama nuotrauka ir matomas defektas reikalauja skirtingų veiksmų. Neaiškiai detalei prašykite įrodymo. Akivaizdaus neatitikimo atveju paaiškinkite skirtumą su užsakymo numeriu ir apsvarstykite taikomą grąžinimo procesą."
+          ],
+          "bullets": [
+            "Užsakymas ir tikslus variantas",
+            "Gavimo sandėlyje ir patikros būsena",
+            "Atviras klausimas ar grąžinimo prašymas",
+            "Palikti ar pašalinti originalią pakuotę",
+            "Paruošta tarptautinei siuntai: taip ar ne"
+          ]
+        },
+        {
+          "heading": "Saugojimo terminą tikrinkite tiesiogiai",
+          "paragraphs": [
+            "Oficialioje medžiagoje saugojimo teiginiai prieštarauja: pirkimo gidas mini 90 dienų, o saugojimo ir būsenų puslapiai – 180. Saugojimo puslapis taip pat aprašo atskirą nesusietų neįprastų siuntų tvarką. Šių skirtumų negalima sumažinti iki vieno besąlyginio pažado.",
+            "Patikrinkite prie savo prekės pridėtą saugojimo informaciją ir išsiaiškinkite neatitikimą prieš pasikliaudami terminu. Užfiksuokite datą ir pasirinktą mokamą pratęsimą. Nepalikite prekių neribotam laikui vien todėl, kad bendrame straipsnyje laikotarpis ilgesnis už dabartinį sandėlio įrašą."
+          ]
+        },
+        {
+          "heading": "Junkite suderinamas ir patikrintas prekes",
+          "paragraphs": [
+            "Oficialus pirkimo gidas aprašo saugomų prekių pasirinkimą tarptautiniam pristatymui arba papildomą pirkimą ir bendrą išsiuntimą vėliau. Sujungimas leidžia siuntą planuoti kaip visumą. Jis nepadaro kiekvieno derinio tinkamo kiekvienam maršrutui.",
+            "Prieš jungdami įvertinkite apribojimus, trapumą ir neišspręstus klausimus. Prekės, laukiančios grąžinimo sprendimo, nelaikykite paruošta. Trapiam aksesuarui gali reikėti kitokios apsaugos nei drabužiams. Lyginkite būsimos siuntos matmenis ir svorį, ne vien prekių skaičių."
+          ]
+        },
+        {
+          "heading": "Parašykite tikslius pakavimo nurodymus",
+          "paragraphs": [
+            "LoloBuy pakuotės pašalinimo pagalba aprašo nereikalingos pakuotės pašalinimą išsaugant prekei reikalingą apsaugą. Jei originalios pakuotės norite dovanai ar kolekcijai, nepasirinkite pašalinimo ir aiškiai nurodykite reikalavimą. Dėžės vertė ne visada yra vien jos siuntimo svoris.",
+            "Prireikus pateikite konkrečios prekės nurodymus: palikti trapaus gaminio apsauginę atramą, išsaugoti vieną mažmeninę dėžę arba pasiteirauti, koks pakavimas prieinamas. Papildomą mokestį tikrinkite dabartinėje siuntos formoje. Nemanykite, kad tas pats pakavimo būdas tinka visoms kategorijoms."
+          ]
+        },
+        {
+          "heading": "Atlikite galutinę siuntos peržiūrą",
+          "paragraphs": [
+            "Prieš pateikdami patvirtinkite prekių sąrašą, kiekius, gavėjo duomenis, maršrutą ir paslaugas. Patikrinkite, ar įtrauktos visos norimos prekės ir nepateko prekė su neišspręsta problema. Ši trumpa peržiūra lengvesnė nei bandymas atkurti pasirinkimą po pakavimo.",
+            "Oficialūs svorio ir atsiskaitymo puslapiai paaiškina, kad galutiniai matmenys gali pakeisti mokestį. Po pateikimo stebėkite siuntos žinutes, įskaitant patvirtinimo ar papildomo mokėjimo prašymus. Išsiuntus naudokite sekimo įrašą ir sandėlio įrodymus saugokite, kol patikrinsite pristatytą siuntą."
+          ]
+        }
+      ],
+      "checklist": [
+        "Peržiūrėkite kiekvieną prekę prieš pažymėdami paruošta.",
+        "Patikrinkite savo saugojimo įrašo terminą.",
+        "Grąžinimo klausimus atskirkite nuo paruoštų siųsti prekių.",
+        "Nurodykite kiekvienai prekei tinkamą pakuotę.",
+        "Peržiūrėkite galutinį siuntos sąrašą ir mokesčio korekcijas."
+      ],
+      "sourceIds": [
+        "buying",
+        "status",
+        "storage",
+        "packaging",
+        "freight-balance"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 511
+    },
+    {
+      "slug": "lolobuy-sizing-guide",
+      "title": "LoloBuy dydžių gidas: lyginkite matmenis prieš pasirinkdami etiketę",
+      "description": "Naudokite pardavėjo lentelę, nuoseklų matavimo metodą ir tikslines sandėlio nuotraukas aiškesniam dydžio sprendimui.",
+      "keyword": "lolobuy size guide",
+      "category": "Dydžiai",
+      "summary": "Pažįstama dydžio žyma yra pradžia. Naudinga lyginti pardavėjo matmenis, savo atskaitos matmenis ir norimą prigludimą.",
+      "sections": [
+        {
+          "heading": "Pradėkite nuo pardavėjo lentelės",
+          "paragraphs": [
+            "Oficiali LoloBuy dydžių nuoroda teigia, kad parduotuvių standartai gali skirtis, o perskaičiavimo duomenys yra orientaciniai. Vidutinio dydžio žyma ar pažįstamas batų numeris nenustato kiekvieno pardavėjo prekės tinkamumo. Skaitykite tikslaus skelbimo ir varianto lentelę.",
+            "Patikrinkite, ar skaičiai apibūdina kūną, gatavą drabužį ar rekomenduojamą dėvėtoją. Tai skirtingi matavimai. Jei lentelė neaiški, klauskite prieš užsakydami, užuot iš įpročio rinkęsi didesnį ar mažesnį dydį."
+          ]
+        },
+        {
+          "heading": "Išmatuokite patikimą atskaitos gaminį",
+          "paragraphs": [
+            "Drabužius lyginkite su turimu gaminiu, kuris tinka taip, kaip norite. Padėkite jį lygiai ir matuokite tais pačiais taškais kaip pardavėjo schemoje. Pažymėkite vienetus ir ar plotis matuojamas per vieną pusę, ar aplink kūną. Matmenis saugokite su trumpa metodo nuotrauka.",
+            "Kūno matavimams vadovaukitės tinkamu gidu ir juostą laikykite lygiai, o ne veržkite siekdami norimo dydžio. Prigludę marškiniai, laisvas džemperis ir struktūruota striukė reikalauja skirtingų laisvumo priedų. Norimas siluetas yra sprendimo dalis, ne lentelės trūkumas."
+          ]
+        },
+        {
+          "heading": "Pasirinkite svarbius matmenis",
+          "paragraphs": [
+            "Viršutiniam drabužiui krūtinės plotis, ilgis, pečiai ir rankovė atsako į skirtingus tinkamumo klausimus. Kelnėms tikrinkite liemenį, liemens aukštį, vidinę siūlę ir bendrą ilgį. Vien liemens skaičius nepaaiškina klešnės kritimo, o krūtinės matmuo nenustato rankovės ilgio.",
+            "Pavyzdžiui, jūsų atskaitos drabužio krūtinės plotis yra 56 centimetrai, ilgis 70. Kandidatas su 56 ir 64 matmenimis gali būti panašaus pločio, bet pastebimai trumpesnis. Tai palyginimo metodo pavyzdys, o ne konkretaus dydžio ar gaminio rekomendacija."
+          ],
+          "bullets": [
+            "Patvirtinkite matavimo vienetus",
+            "Kūno matmenis lyginkite su kūno lentelėmis",
+            "Plokščio drabužio matmenis lyginkite su drabužio lentelėmis",
+            "Lyginkite daugiau nei vieną svarbų matmenį",
+            "Užfiksuokite norimą laisvą ar prigludusį siluetą"
+          ]
+        },
+        {
+          "heading": "Avalynę tikrinkite atskirai",
+          "paragraphs": [
+            "Oficialus dydžių gidas rekomenduoja naudoti didesnę pėdą, jei jos skiriasi, ir pažymi, kad ilgio žymos nevisiškai apibūdina plotį. Skaitykite pardavėjo avalynės lentelę ir tikrinkite pasirinkto varianto sistemą. Nemanykite, kad EU, US ar UK numeris tobulai persikelia tarp visų skelbimų.",
+            "Matuokite pagal lentelės instrukcijas ir įvertinkite kojines, plotį bei paskirtį. Matoma bato etiketė sandėlio nuotraukoje padeda patvirtinti, kas atsiųsta, bet nepasako, kaip batas jausis ant kojos. Vidpadžio nuotraukos nelaikykite universalia perskaičiavimo lentele."
+          ]
+        },
+        {
+          "heading": "QC naudokite konkrečiam klausimui atsakyti",
+          "paragraphs": [
+            "Prieš siųsdami matomą dydžio etiketę palyginkite su užsakymu. Jei svarbus drabužio matmuo neaiškus, prašykite jo matavimo su aiškiais pradžios ir pabaigos taškais. Pavyzdžiui, prašykite plokščio krūtinės pločio nuo siūlės iki siūlės, o ne tiesiog „patikrinti dydį“.",
+            "LoloBuy patikros politika turi ribas ir nežada pilno tinkamumo įvertinimo. Patikrinkite, ar matavimas ar papildoma nuotrauka prieinama jūsų prekei ir ar tai kainuoja. Standartinio nuotraukų rinkinio nereikėtų apibūdinti kaip individualios dydžio konsultacijos."
+          ]
+        },
+        {
+          "heading": "Spręskite, kol galimybės dar atviros",
+          "paragraphs": [
+            "Jei gauta etiketė skiriasi nuo pasirinkto varianto, neatitikimą dokumentuokite užsakymu ir nuotrauka. Jei etiketė sutampa, bet matmenys netinka, nedelsdami tikrinkite pardavėjo grąžinimo sąlygas ir esamą procesą. Tai skirtingos situacijos, kurias reikia aprašyti tiksliai.",
+            "Matmenys mažina neapibrėžtumą, bet nepanaikina kirpimo, tamprumo, audinio pojūčio ar asmeninių pageidavimų skirtumų. Saugokite lentelę ir palyginimo pastabas, kad sėkmingas tinkamumas padėtų ateities pirkimui. Užsakydami vėl tikrinkite tikrąjį skelbimą, nes kitas pardavėjas ar versija gali naudoti kitus matmenis."
+          ]
+        }
+      ],
+      "checklist": [
+        "Naudokite tikslaus skelbimo lentelę.",
+        "Išlaikykite vienodus vienetus ir matavimo metodus.",
+        "Palyginkite kelis svarbius tinkamumo matmenis.",
+        "Patikrinkite gautą dydžio žymą ir prašytą matavimą.",
+        "Tinkamumo klausimus išspręskite prieš tarptautinį siuntimą."
+      ],
+      "sourceIds": [
+        "sizing",
+        "qc",
+        "returns"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 529
+    },
+    {
+      "slug": "lolobuy-tracking-guide",
+      "title": "LoloBuy sekimas: atskirkite užsakymą nuo tarptautinės siuntos",
+      "description": "Teisingai skaitykite pirkimo, sandėlio ir siuntos etapus bei rinkite naudingus įrodymus, kai sekimo naujiena neaiški.",
+      "keyword": "lolobuy tracking",
+      "category": "Sekimas",
+      "summary": "Užsakymo būsena ir vežėjo skenavimas aprašo skirtingas kelionės dalis. Prekės, vietinio paketo ir tarptautinės siuntos numerius laikykite atskirai.",
+      "sections": [
+        {
+          "heading": "Žinokite, ką sekate",
+          "paragraphs": [
+            "Prekė gali turėti pirkimo užsakymą, pardavėjo vietinę siuntą ir vėlesnę tarptautinę siuntą. Tai susiję įrašai, bet ne ta pati siunta. Vietinio pristatymo žinutė gali reikšti atvykimą į sandėlį, o ne pristatymą į namus.",
+            "Užsakymui judant sudarykite paprastą sąrašą: prekės/užsakymo numeris, rodomas pardavėjo sekimo numeris, sandėlio prekės įrašas ir tarptautinės siuntos numeris. Taip lengviau klausti apie tinkamą etapą, nesiunčiant pagalbai kitos kelionės ekrano kopijos."
+          ]
+        },
+        {
+          "heading": "Pirmiausia skaitykite pirkimo etapus",
+          "paragraphs": [
+            "Oficialus LoloBuy būsenų gidas skiria laukimą apmokėjimo, apdorojimą, užsakymą ir pardavėjo išsiuntimą. Apdorojimas susijęs su pirkimu; tai nereiškia, kad tarptautinis vežėjas gabena jūsų siuntą. Prieš ieškodami užsienio sekimo naujienos perskaitykite būsenos tekstą.",
+            "Tas pats gidas aprašo gautas prekes ir atsargas po patikros. Jei vietinis vežėjas rodo pristatymą, bet sandėlio patikra nebaigta, įrašai gali aprašyti nuoseklius etapus, o ne prieštaravimą. Patikrinkite prekės įrašą ir patvirtinimo prašymą dėl kito veiksmo."
+          ]
+        },
+        {
+          "heading": "Tada skaitykite siuntos etapus",
+          "paragraphs": [
+            "Sukūrus tarptautinę siuntą, jos būsena turi atskirą seką. Oficialus puslapis aprašo laukimą mokėjimo, apdorojimą, supakavimą ir išsiuntimą. Taip pat ragina stebėti mokesčio pokyčius po galutinio svėrimo. Sukurtos siuntos nepainiokite su išsiųsta.",
+            "Naudokite tikrąjį įrašą, o ne vien numerio egzistavimą. Etiketė ar numeris gali būti paruošti prieš kitą matomą vežėjo judėjimą. Lygindami sistemas pažymėkite, kuris puslapis sako, kad siunta perduota, ir kokį įvykį iš tiesų užfiksavo vežėjas."
+          ],
+          "bullets": [
+            "Pirkimo/užsakymo numeris",
+            "Tarptautinės siuntos numeris",
+            "Vežėjo sekimo numeris",
+            "Paskutinis įvykis, vieta ir laikas",
+            "Laukiamas patvirtinimas ar mokėjimas"
+          ]
+        },
+        {
+          "heading": "Tylos laikotarpius vertinkite atsargiai",
+          "paragraphs": [
+            "Tarpas tarp skenavimų savaime nepaaiškina priežasties. Tikrinkite dabartinį pasirinkto maršruto įvertį, paskutinį įvykį ir oficialius to maršruto pranešimus. Įprastos trukmės iš seno įrašo nepaverskite pažadėtu savo siuntos terminu.",
+            "Venkite nuolat atverti įvairias sekimo svetaines ir kiekvieną formuluotės skirtumą laikyti nauju įvykiu. Veskite datuotą reikšmingų pokyčių įrašą. Jei etapas atrodo nenuoseklus ar prašoma veiksmo, šį konkretų klausimą kelkite per siuntos ar užsakymo pagalbos kanalą."
+          ]
+        },
+        {
+          "heading": "Siųskite naudingą pagalbos klausimą",
+          "paragraphs": [
+            "Pateikite užsakymo ar siuntos identifikatorių, sekimo numerį, paskutinį matomą įvykį ir klausimą. Pavyzdžiui: „Siuntos įrašas sako išsiųsta, tačiau vežėjas nerodo perdavimo įvykio. Ar galite patvirtinti perdavimo būseną?“ Tai konkrečiau nei „Kur viskas?“.",
+            "LoloBuy pirkimo gidas sekimui po išsiuntimo nukreipia į siuntų skiltį. Jei įmanoma, naudokite užklausą, susietą su paveiktu įrašu. Į žinutę apie sekimą neįtraukite nesusijusių paskyros duomenų ar mokėjimo prisijungimų."
+          ]
+        },
+        {
+          "heading": "Saugokite įrodymus iki pristatymo",
+          "paragraphs": [
+            "Siuntai atvykus, greitai patikrinkite išorinę būklę ir turinį. Jei prekė netinkama, trūkstama ar sugadinta, išlaikykite pakuotę, etiketę ir aiškias nuotraukas. Gautas prekes sulyginkite su galutiniu siuntos sąrašu, o ne ankstesne atranka, kurioje galėjo būti neišsiųstų prekių.",
+            "Oficialus pagalbos po pristatymo puslapis prašo išsamaus aprašymo ir netinkamos ar sugadintos prekės nuotraukų, bet jo terminai prieštarauja. Veikite greitai ir galiojantį terminą patikrinkite dabartiniame pagalbos procese. Nelaukite vien todėl, kad bendras gidas atrodo suteikiantis ilgesnį laiką."
+          ]
+        }
+      ],
+      "checklist": [
+        "Atskirkite vietinius ir tarptautinius numerius.",
+        "Patikrinkite, ar siunta sukurta, supakuota ar išsiųsta.",
+        "Perskaitykite paskutinį įvykį su laiku.",
+        "Pagalbai siųskite konkretų dokumentuotą klausimą.",
+        "Greitai patikrinkite pristatymą ir išsaugokite įrodymus."
+      ],
+      "sourceIds": [
+        "status",
+        "buying",
+        "claims",
+        "freight-balance"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 502
+    },
+    {
+      "slug": "lolobuy-returns-refunds",
+      "title": "LoloBuy prekių ir pinigų grąžinimas: veikite tinkamu užsakymo etapu",
+      "description": "Paruoškite įrodymus, patikrinkite pardavėjo tinkamumo sąlygas ir supraskite atšaukimo, prekės grąžinimo bei siuntos pretenzijos skirtumus.",
+      "keyword": "lolobuy returns refunds",
+      "category": "Pagalba po pirkimo",
+      "summary": "Grąžinimo sprendimas priklauso nuo prekės, pardavėjo ir esamo užsakymo etapo. Aiškūs įrodymai bei greitas prašymas naudingesni už prielaidą, kad viena taisyklė tinka visiems pirkiniams.",
+      "sections": [
+        {
+          "heading": "Nustatykite reikalingą procesą",
+          "paragraphs": [
+            "Dar nenupirkto užsakymo atšaukimas, sandėlyje laikomos prekės grąžinimas ir problemos pranešimas po tarptautinio pristatymo yra skirtingi procesai. Pradėkite nuo dabartinės užsakymo ar siuntos būsenos. Tinkamas mygtukas ir informacija gali priklausyti nuo sandorio pažangos.",
+            "LoloBuy atšaukimo ir grąžinimo puslapiai aprašo kelis nuo būsenos bei pardavėjo dalyvavimo priklausančius žingsnius. Prašymas nėra patvirtinimas. Skaitykite atsakymą prie užsakymo ir sekite, kas priimta, kas laukia ir ko dar reikia iš jūsų."
+          ]
+        },
+        {
+          "heading": "Išsaugokite tikslius įrodymus",
+          "paragraphs": [
+            "Kartu laikykite prekės URL, pasirinktą variantą, užsakymo patvirtinimą ir susijusias nuotraukas. Jei problema netinkama dydžio žyma, parodykite užsakytą variantą ir gautą etiketę. Pažeidimui pateikite aiškų bendrą vaizdą ir pažeistos vietos stambų planą. Skirtumą aprašykite neperdėdami.",
+            "Pavyzdžiui: „Užsakyta mėlyna L; sandėlio nuotraukoje juoda M etiketė“ nurodo patikrinamą neatitikimą. „Prasta kokybė“ daug mažiau tikslu. Jei nuotraukos pernelyg neaiškios problemai nustatyti, paprašykite trūkstamo įrodymo prieš pasirinkdami sprendimą."
+          ],
+          "bullets": [
+            "Užsakymo numeris ir šaltinio skelbimas",
+            "Pasirinktas variantas ir kiekis",
+            "Aiškus problemos aprašymas",
+            "Susijusios konkretaus užsakymo nuotraukos",
+            "Prašomas sprendimas: paaiškinimas, atšaukimas, grąžinimas ar keitimas"
+          ]
+        },
+        {
+          "heading": "Tinkamumą ir terminą skaitykite kartu",
+          "paragraphs": [
+            "Oficialus grąžinimo garantijos puslapis aprašo tinkamumo sąlygas ir prašymo laiką po priėmimo į sandėlį. Jis taip pat reikalauja pardavėjo sutikimo. Kiti puslapiai laiką aprašo skirtingai ar neaiškiai. Patikrinkite tikrojo užsakymo terminą bei paslaugą ir pateikite problemą nedelsdami.",
+            "Pakuotė ir tinkamumas pakartotinai parduoti gali būti svarbūs. Neprašykite pašalinti grąžinimui reikalingos pakuotės, kol nesuprantate sąlygų. Naudotos prekės, specialūs užsakymai ir kitos kategorijos gali turėti kitokias taisykles; bendras besąlyginio grąžinimo pažadas klaidintų."
+          ]
+        },
+        {
+          "heading": "Paklauskite, kokios išlaidos taikomos",
+          "paragraphs": [
+            "Grąžinimo garantijos gairės skiria grąžinimo priežastį ir aptaria vietinį transportą bei paslaugų mokesčius. Pardavėjo pradinis nemokamas pristatymas nebūtinai padaro vėlesnį grąžinimą nemokamą. Prieš sutikdami tęsti, paklauskite konkretaus prašymo išlaidų.",
+            "Atsakymą laikykite užsakymo įraše. Išsiaiškinkite, ar suma apima siuntimą atgal pardavėjui, pradinį vietinį pristatymą ir paslaugos mokestį. Platformos administravimo lengvata ir pardavėjo siuntimo išlaidos skiriasi; jų negalima sujungti į miglotą „nemokamą grąžinimą“."
+          ]
+        },
+        {
+          "heading": "Sekite pinigų grąžinimo paskirtį ir būseną",
+          "paragraphs": [
+            "Oficialios gairės paprastai aprašo patvirtintų grąžinimų pervedimą į LoloBuy paskyros likutį, su konkrečia tam tikrų pradinio mokėjimo situacijų išimtimi. Paskyros kreditas ir pinigai išoriniam mokėjimo būdui yra skirtingi rezultatai. Prieš tikėdamiesi pinigų banke patikrinkite, kuris taikomas.",
+            "Pardavėjo sutikimas, grąžintos prekės gavimas ir pinigų grąžinimo užbaigimas gali būti atskiri etapai. Jei pateikiamas, išsaugokite grąžinimo siuntos numerį. Klausiant apie vėlavimą nurodykite paskutinį baigtą žingsnį, o ne pradėkite naują prašymą be esamo grąžinimo įrašo."
+          ]
+        },
+        {
+          "heading": "Pristatytos siuntos problemas spręskite atskirai",
+          "paragraphs": [
+            "Po pristatymo oficialios instrukcijos nukreipia į paveiktos siuntos pagalbos prašymą ir prašo išsamaus aprašymo bei nuotraukų. Be prekių vaizdų saugokite išorinę pakuotę ir siuntos etiketę. Jos padeda susieti pažeidimą ar neatitikimą su siunta.",
+            "Tas oficialus puslapis turi prieštaringus terminus. Praneškite greitai ir taikomą terminą gaukite tiesiogiai iš dabartinio proceso. Gidas nežada patvirtinimo, universalaus pinigų grąžinimo laiko ar kompensacijos už visų tipų nuostolius."
+          ]
+        }
+      ],
+      "checklist": [
+        "Patikrinkite dabartinį užsakymo ar siuntos etapą.",
+        "Dokumentuokite tikslų neatitikimą ar pažeidimą.",
+        "Patvirtinkite tinkamumą, terminą ir pakuotės sąlygas.",
+        "Paklauskite visų taikomų grąžinimo išlaidų.",
+        "Sekite sutikimą ir tikrąją grąžinamų pinigų paskirtį."
+      ],
+      "sourceIds": [
+        "refunds",
+        "cancellation",
+        "returns",
+        "claims",
+        "changes"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 519
+    },
+    {
+      "slug": "lolobuy-order-budget",
+      "title": "LoloBuy užsakymo biudžetas: žiūrėkite plačiau nei prekės kaina",
+      "description": "Prieš įsipareigodami užsakymui atskirkite prekių kainą, vietinį pristatymą, papildomas paslaugas, valiutos keitimą ir tarptautinį siuntimą.",
+      "keyword": "lolobuy fees",
+      "category": "Biudžetas",
+      "summary": "Naudingas biudžetas atskiria patvirtintas sumas nuo įverčių. Prekės pirkimą ir vėlesnį siuntos mokėjimą laikykite dviem matomais susijusiais sprendimais.",
+      "sections": [
+        {
+          "heading": "Įkainokite variantą, kurį tikrai pirksite",
+          "paragraphs": [
+            "Katalogo kaina yra palyginimo pradžia. Pasirinkta spalva, dydis, komplektas ar kiekis oficialiame užsakymo puslapyje gali turėti kitą dabartinę kainą. Prieš įtraukdami į biudžetą tikrinkite tikslią komplektaciją, ypač jei šaltinio skelbimas rodo intervalą.",
+            "Sumą ir valiutą lyginkite tame pačiame etape. Užfiksuota prekės kaina, atsiskaitymo suma ir kortelės išrašas gali apimti skirtingas dalis. Skirtumo nevadinkite paslėptu mokesčiu, kol nepatikrinote kiekio, pristatymo, konvertavimo ir pasirinktų paslaugų."
+          ]
+        },
+        {
+          "heading": "Atskirkite du pagrindinius mokėjimo etapus",
+          "paragraphs": [
+            "Oficialus LoloBuy procesas pirmiausia surenka mokėjimą už prekes ir vietinį pristatymą Kinijoje. Tarptautinis siuntimas tvarkomas, kai saugomos prekės pateikiamos kaip siunta. Planuodamas tik pirmą mokėjimą pirkėjas gali pasiekti sandėlį neturėdamas pakankamai pinigų išsiųsti.",
+            "Sukurkite paprastą kiekvienos išlaidų dalies lentelę ir pažymėkite ją patvirtinta arba numatoma. Papildomas paslaugas laikykite matomas, o ne paslėptas prekės kainoje. Galimi paskirties mokesčiai turi atskirą eilutę, nes jų nenustato katalogo kaina."
+          ],
+          "bullets": [
+            "Pasirinktos prekės ir kiekiai",
+            "Vietinis pristatymas Kinijoje",
+            "Pasirinktos pirkimo ar sandėlio paslaugos",
+            "Tarptautinis siuntimas ir pakavimo paslaugos",
+            "Atsiskaityme rodomi mokėjimo ar valiutos keitimo mokesčiai",
+            "Galimi paskirties mokesčiai ar administravimas"
+          ]
+        },
+        {
+          "heading": "Skaitykite vietinio pristatymo sąlygas",
+          "paragraphs": [
+            "Oficiali vietinio pristatymo pagalba sako, kad vieno pardavėjo prekės, pateiktos ir apmokėtos kartu, gali dalintis vietiniu mokesčiu, o viršijus svorį gali reikėti priemokos. Tai konkreti sąlyga, ne pažadas, kad visoms krepšelio prekėms taikomas vienas mokestis.",
+            "Patikrinkite, kuris pardavėjas tiekia kiekvieną prekę ir kaip grupuojamas užsakymas. Didesnis kiekis taip pat gali pakeisti kainą ar siuntimo sąlygas, ypač didmenoje. Saugokite dabartinį skaičiavimą, užuot ankstesnį pristatymo mokestį daliję nesusijusiems pirkiniams."
+          ]
+        },
+        {
+          "heading": "Patikrinkite mokėjimo ir valiutos duomenis",
+          "paragraphs": [
+            "Prieš patvirtindami peržiūrėkite oficialiai siūlomus mokėjimo būdus, nuskaitomą valiutą ir rodomas išlaidas. Prieinamumas gali priklausyti nuo paskyros ir sandorio. Bendras pagalbos sąrašas neįrodo, kad konkretus būdas šiandien bus siūlomas jūsų užsakymui.",
+            "Jei mokėjimo teikėjas siūlo valiutos konvertavimą, palyginkite galutinę nuskaitomą sumą ir ten rodomas sąlygas. Kvitą saugokite su užsakymu. Nežadėkite fiksuoto kurso ir nemanykite, kad ankstesnio pirkimo kursas tiks kitam."
+          ]
+        },
+        {
+          "heading": "Nuolaidas laikykite tikrintina informacija",
+          "paragraphs": [
+            "LoloBuy akcijų gairės aprašo pardavėjo pasiūlymo duomenų įrašymą užsakymo pastabose, kad pirkėjas galėtų juos patvirtinti. Reklamjuostė ar ekrano kopija neįrodo, kad jūsų tikslus variantas ir kiekis vis dar atitinka sąlygas. Užrašykite sąlygas ir prašykite patvirtinimo per užsakymą.",
+            "Iki patvirtinimo nuolaidą atskirkite nuo įprasto biudžeto. Nesiremkite rekomendacijų akcija, kuponu ar siuntimo teiginiu iš nesusijusio gido. Ši svetainė nepateikė garantuoto naujo vartotojo kredito ar universalios siuntimo kainos."
+          ]
+        },
+        {
+          "heading": "Neaiškiam siuntimui naudokite intervalą",
+          "paragraphs": [
+            "Iki pakavimo svoris ir dydis yra įverčiai. Oficiali atsiskaitymo politika suderina pradinę sumą su tikruoju logistikos teikėjo mokesčiu. Palikite vietos galimai korekcijai, užuot visą biudžetą išleidę prekėms.",
+            "Planavimo pavyzdys: patvirtintos prekės ir vietinis pristatymas sudaro 100 vienos valiutos vienetų, o dabartinis siuntimo įvertis 30–45. Laikina suma yra 130–145 prieš kitas taikomas išlaidas. Tai hipotetiniai metodo skaičiai, ne LoloBuy kainos ar pasiūlymas."
+          ]
+        },
+        {
+          "heading": "Paverskite biudžetą sprendimo įrankiu",
+          "paragraphs": [
+            "Jei tikėtina suma viršija ribą, peržiūrėkite atranką prieš mokėdami. Pašalinti mažesnio prioriteto prekę gali būti lengviau nei vėliau susigrąžinti pinigus per grąžinimą. Lyginkite viso pristatyto užsakymo vertę, o ne surenkamų pigių prekių skaičių.",
+            "Po išsiuntimo įverčius pakeiskite galutiniais įrašytais mokesčiais. Saugokite skirtumą ir jo paaiškinimą. Ši istorija naudinga planuojant ateityje, kartu atsižvelgiant į kitokias prekes, matmenis, maršrutus ir valiutos sąlygas kitą kartą."
+          ]
+        }
+      ],
+      "checklist": [
+        "Planuokite tikslų pasirinktą variantą.",
+        "Atskirkite vietinį ir tarptautinį pristatymą.",
+        "Užfiksuokite papildomas paslaugas ir nuskaitomą valiutą.",
+        "Naudokite tik patvirtintas nuolaidas.",
+        "Palikite rezervą neaiškiam siuntimui ir paskirties išlaidoms."
+      ],
+      "sourceIds": [
+        "buying",
+        "domestic",
+        "promotions",
+        "freight-balance",
+        "wholesale"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 570
+    },
+    {
+      "slug": "lolobuy-seller-and-review-checks",
+      "title": "LoloBuy radiniai ir apžvalgos: tikrinkite skelbimo įrodymus",
+      "description": "Vertinkite šaltinio detales, apžvalgų aktualumą ir patikros ribas nelaikydami ženkliuko, nuotraukos ar įvertinimo garantija.",
+      "keyword": "is lolobuy legit",
+      "category": "Pirkimo sprendimai",
+      "summary": "Naudingas klausimas – ką prieinami įrodymai patvirtina apie šį sandorį. Vien platformos pavadinimas neatsako į visus klausimus apie pardavėją, prekę ar siuntą.",
+      "sections": [
+        {
+          "heading": "Atskirkite platformą nuo prekės",
+          "paragraphs": [
+            "LoloBuy paslaugų informacija aprašo prekių pirkimą iš trečiųjų šalių platformų, o ne kiekvienos rodomos prekės pardavimą pačiam. Ši nepriklausoma lentelė dar toliau: ji organizuoja atradimą. Aiškiai atskirkite vaidmenis, spręsdami, kas gali atsakyti ar išspręsti problemą.",
+            "Veikianti prekės nuoroda neįrodo autentiškumo, likučio, tinkamumo ar būsimo pristatymo. Taip pat skundas apie vieną pardavėją nenustato kiekvienos platformos problemos priežasties. Pradėkite nuo tikslaus vertinamo teiginio ir už tą proceso dalį atsakingos šalies."
+          ]
+        },
+        {
+          "heading": "Skelbimą tikrinkite prieš populiarumą",
+          "paragraphs": [
+            "Ieškokite aiškaus pradinio URL, nuoseklaus aprašymo, atpažįstamų variantų ir naudingų dydžio ar specifikacijų duomenų. Pasirinktą variantą palyginkite su galerija. Maža pradinė kaina gali būti taikoma kitai daliai nei pagrindiniame vaizde rodoma prekė.",
+            "Jei keli pardavėjai naudoja tas pačias nuotraukas, vien jos nepasako, ar prekės pagamintos arba tiekiamos vienodai. Užfiksuokite, ko trūksta, ir užduokite tikslų klausimą. Populiarumo skaičius ar pažįstamas partijos pavadinimas nepakeičia įrodymų apie tikslų skelbimą."
+          ],
+          "bullets": [
+            "Pradinis skelbimas ir pardavėjo tapatybė",
+            "Tikslus variantas ir kiekis",
+            "Svarbūs matmenys ar specifikacijos",
+            "Dabartinė grąžinimo informacija",
+            "Neatsakyti pirkimą veikiantys klausimai"
+          ]
+        },
+        {
+          "heading": "Apžvalgas skaitykite pagal aktualumą",
+          "paragraphs": [
+            "Apžvalga naudingesnė, kai galite nustatyti datą, aptariamą prekę ar paslaugą ir išvados įrodymus. Komentaras apie pagalbos atsakymo laiką skiriasi nuo avalynės tinkamumo apžvalgos. Sėkmingai atvykusi siunta neįrodo, kad kiekviena katalogo prekė tinkama.",
+            "Ieškokite atskleistų rekomendacijų nuorodų, paskatų ar kitų ryšių. Jų buvimas automatiškai nepadaro apžvalgos melagingos, bet padeda suprasti tikslą. Partnerinės akcijos, vieno pasakojimo ar nepatvirtinto liudijimo nepaverskite universalia rekomendacija."
+          ]
+        },
+        {
+          "heading": "Planuokite, ką patikra gali nustatyti",
+          "paragraphs": [
+            "Oficialus standartinės patikros puslapis aprašo išvaizdos tikrinimą ir svarbias išimtis. Jis nežada kiekvienos kategorijos autentifikuoti ar funkciškai testuoti. Užplombuotos ir kai kurios profesionalios prekės tvarkomos kitaip. Perskaitykite ribas prieš pirkdami prekę, kurios vertė priklauso nuo to, ko paslauga netikrins.",
+            "Drabužiui aiškūs matmenys ir matoma konstrukcija gali atsakyti į didelę dalį klausimo. Elektronikai ar su sauga susijusioms prekėms nuotrauka nepatvirtina vidinio veikimo ar atitikties. Jei būtinų įrodymų nėra, šis neapibrėžtumas turi būti pirkimo sprendimo dalis."
+          ]
+        },
+        {
+          "heading": "Mokėjimą ir bendravimą laikykite tinkamoje vietoje",
+          "paragraphs": [
+            "Atsiskaitymui naudokite oficialią svetainę, o sandorio klausimams – atitinkamo užsakymo ar siuntos užklausą. Prieš prisijungdami patikrinkite domeną. Katalogui nereikia jūsų slaptažodžio, mokėjimo duomenų ar privataus pokalbio, nukopijuoto į prekių paiešką.",
+            "Saugokite pasirinkto varianto, mokėjimo, pardavėjo paaiškinimo ir sutartų reikalavimų įrašus. Jei kas keičiasi, paprašykite atnaujinti užsakymo įrašą. Aiški istorija leidžia lengviau išspręsti vėlesnį klausimą nei išmėtytos žinutės be prekės ar sandorio nuorodos."
+          ]
+        },
+        {
+          "heading": "Priimkite sprendimą, kurį galite paaiškinti",
+          "paragraphs": [
+            "Trumpai užrašykite, kodėl prekė tenkina poreikius, kokie įrodymai tai remia, bendrą biudžetą ir priimamus neaiškumus. Jei sprendimas priklauso nuo neatsakyto dydžio, būklės ar grąžinimo tinkamumo klausimo, išspręskite jį prieš mokėdami.",
+            "Mažas pirmasis užsakymas gali būti pasirenkamas būdas apriboti sumą mokantis proceso, tačiau nepatvirtina visų pardavėjų ar būsimų siuntų. Šis gidas yra įrodymų vertinimo metodas, ne asmeninio bandymo ataskaita ar garantija, kad LoloBuy nerizikingas. Kitiems konkretiems patikrinimams naudokite užsakymo, QC ir grąžinimo gidus."
+          ]
+        }
+      ],
+      "checklist": [
+        "Atskirkite katalogo, platformos ir pardavėjo vaidmenis.",
+        "Tikrinkite tikslų skelbimą, o ne populiarumą.",
+        "Apžvalgose vertinkite datą, aktualumą ir paskatas.",
+        "Supraskite, ko patikra nepatvirtins.",
+        "Saugokite dokumentuotą sprendimą ir užsakymo įrašą."
+      ],
+      "sourceIds": [
+        "service",
+        "qc",
+        "buying",
+        "returns"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 521
+    }
+  ]
+}

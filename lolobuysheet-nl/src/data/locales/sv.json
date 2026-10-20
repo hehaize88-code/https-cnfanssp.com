@@ -1,0 +1,1131 @@
+{
+  "ui": {
+    "nav": [
+      "Produktlista",
+      "Så fungerar det",
+      "Guider",
+      "Artiklar",
+      "Vanliga frågor"
+    ],
+    "register": "Till LoloBuy",
+    "language": "Språk",
+    "preview": "Designförhandsvisning",
+    "previewNote": "En första titt på lolobuysheet.nl",
+    "eyebrow": "BRA FYND. MINDRE SKROLLANDE.",
+    "hero1": "Ditt nästa fynd.",
+    "hero2": "En produktlista.",
+    "intro": "Utforska LoloBuy-produktlistan. Bläddra bland kläder, sneakers och accessoarer, jämför källans priser och öppna ditt nästa fynd på LoloBuy.",
+    "search": "Sök i hela katalogen…",
+    "searchButton": "Sök fynd",
+    "photo": "Bildsökning",
+    "popular": "Utforska:",
+    "tagline": "En katalog. Din nästa upptäckt.",
+    "source": "Produkter från cnfanssp.com",
+    "independent": "Oberoende upptäcktssajt för LoloBuy",
+    "browse": "Utforska produktlistan",
+    "browseSub": "Lite mindre sökande. Många fler fynd.",
+    "all": "Alla fynd",
+    "sort": "Sortera efter",
+    "sorts": [
+      "Utvalda",
+      "Nyaste",
+      "Mest visade",
+      "Pris: lågt till högt",
+      "Pris: högt till lågt"
+    ],
+    "count": "fynd",
+    "view": "Visa produkt",
+    "buy": "Öppna på LoloBuy",
+    "details": "Produktinformation",
+    "categories": {
+      "shoes": "Skor",
+      "hoodies": "Tröjor",
+      "tshirts": "T-shirts",
+      "jackets": "Jackor",
+      "pants": "Byxor och shorts",
+      "headwear": "Huvudbonader",
+      "accessories": "Accessoarer",
+      "sets": "Shortsset",
+      "electronics": "Elektronik",
+      "other": "Övriga produkter",
+      "jerseys": "Matchtröjor"
+    },
+    "previous": "Föregående",
+    "next": "Nästa",
+    "page": "Sida",
+    "empty": "Inga fynd matchar din sökning.",
+    "reset": "Rensa filter",
+    "sourceSearch": "Sök i källans hela katalog",
+    "snapshot": "Aktuell katalog från cnfanssp.com. Produktpriserna i CNY inkluderar inte frakt och serviceavgifter. Kontrollera aktuella alternativ och den slutliga offerten på LoloBuy.",
+    "howTitle": "Från fynd till uppackning.",
+    "howSub": "Ny på LoloBuy? Börja med dessa tre steg.",
+    "steps": [
+      [
+        "01",
+        "Hitta något du gillar",
+        "Bläddra bland kategorier och kontrollera originalannonsen, storleken och produktbilderna."
+      ],
+      [
+        "02",
+        "Öppna produkten på LoloBuy",
+        "Använd produktlänken för att välja alternativ och kontrollera det aktuella priset."
+      ],
+      [
+        "03",
+        "Kontrollera före frakt",
+        "Följ lagerprocessen på LoloBuy, granska tillgänglig kvalitetskontroll och välj frakt."
+      ]
+    ],
+    "guides": "Lite vägledning gör stor skillnad.",
+    "guidesSub": "Bra att veta före din första beställning.",
+    "read": "Läs guiden",
+    "allGuides": "Alla guider",
+    "cta": "Hittat din nästa favorit?",
+    "ctaSub": "Öppna den på LoloBuy och gör den till din.",
+    "ctaButton": "Utforska alla fynd",
+    "footer": "En oberoende sajt för att upptäcka produkter. Vi är inte LoloBuys officiella webbplats. Produktannonser och bilder hämtas från cnfanssp.com. Köpen genomförs på LoloBuy.",
+    "footerLinks": [
+      "Produktlista",
+      "Köpguide",
+      "Bildsökning",
+      "Vanliga frågor"
+    ],
+    "back": "Tillbaka till produktlistan",
+    "sourceListing": "Originalannons hos källan",
+    "seller": "Säljarens annons",
+    "sourcePrice": "Källans pris · CNY",
+    "productId": "Säljarens produkt-ID",
+    "gallery": "Annonsbilder",
+    "qc": "QC-bilder",
+    "qcNote": "Källan tillhandahåller annonsbilder för denna produkt. De är inte verifierade QC-bilder från lagret. Granska kvalitetskontrollen för din egen LoloBuy-beställning före frakt.",
+    "priceNote": "Endast produktpris. Bekräfta aktuellt lager, alternativ, frakt och serviceavgifter på LoloBuy innan du beställer.",
+    "photoTitle": "Hitta den med en bild.",
+    "photoIntro": "Använd källans katalog för att hitta och jämföra produkter.",
+    "photoState": "Bildsökning hos källan",
+    "photoNote": "Ingen offentlig bildsöktjänst har verifierats på cnfanssp.com. Vi tar inte emot bilduppladdningar förrän källans tjänst är tillgänglig.",
+    "browseInstead": "Bläddra bland produkter",
+    "faqTitle": "LoloBuy: svar innan du beställer.",
+    "faqIntro": "Undersökt utifrån LoloBuys officiella hjälpsidor. När officiella sidor skiljer sig åt förklarar svaret vad du behöver kontrollera.",
+    "guideLabel": "DEN PRAKTISKA GUIDEN",
+    "guideTitle": "Din första LoloBuy-beställning, förklarad.",
+    "guideIntro": "Från att hitta en produkt till att granska den på lagret: en praktisk startpunkt.",
+    "updated": "Granskat i oktober 2026",
+    "related": "Mer att utforska",
+    "home": "Hem",
+    "aboutPhotos": "Bilder från källans annons",
+    "catalogLive": "Källans aktuella katalog",
+    "catalogCached": "Visar den senaste fullständiga ögonblicksbilden av källan.",
+    "catalogLoading": "Uppdaterar källans katalog…",
+    "catalogError": "Källan är tillfälligt otillgänglig. Försök igen eller öppna originalkatalogen.",
+    "retry": "Försök igen",
+    "loading": "Laddar…",
+    "productError": "Produkten kunde inte laddas. Försök igen eller kontrollera originalannonsen.",
+    "pageOf": "av",
+    "jump": "Gå till sida",
+    "go": "Gå",
+    "articlesLabel": "Artiklar",
+    "articlesTitle": "Fördjupad kunskap om att handla med LoloBuy.",
+    "articlesIntro": "Tio praktiska guider baserade på LoloBuys officiella hjälpsidor. Hitta produkter, kontrollera QC, planera din budget och frakt med tydligare information.",
+    "articleSources": "Officiella källor",
+    "reviewed": "Granskat den 20 oktober 2026",
+    "readArticle": "Läs artikeln",
+    "allArticles": "Alla artiklar",
+    "contents": "På denna sida",
+    "checklist": "Praktisk checklista",
+    "summary": "Snabb överblick",
+    "reading": "min läsning",
+    "faqSearch": "Sök frågor…",
+    "noQuestions": "Inga matchande frågor.",
+    "officialHelp": "Läs officiell vägledning",
+    "skip": "Hoppa till innehållet",
+    "menu": "Meny",
+    "close": "Stäng",
+    "languageSearch": "Välj ditt språk",
+    "catalogNote": "Priser och tillgänglighet kan ändras.",
+    "articleFooter": "Oberoende redaktionell vägledning. Kontrollera villkoren som visas för din beställning innan du betalar eller skickar.",
+    "notFound": "Produkten hittades inte",
+    "showMore": "Visa alla",
+    "findSteps": "HITTA. KONTROLLERA. BESTÄLL.",
+    "nextFind": "NÄSTA FYND ÄR DITT.",
+    "liveLabel": "Uppdaterat från källan",
+    "faqCount": "undersökta svar",
+    "catalogue": "Katalog"
+  },
+  "faqs": [
+    {
+      "id": "what-is-lolobuy",
+      "category": "Kom igång",
+      "question": "Vad gör LoloBuy?",
+      "answer": "LoloBuy fungerar som inköpsagent: du anger en säljarannons, väljer produkten, betalar köpet och den kinesiska inrikesfrakten och granskar sedan lagersteget innan du ordnar internationell frakt. Säljaren levererar varorna. En produktlänk eller rad i en produktlista är en utgångspunkt för att kontrollera en beställning, inte en bekräftelse på aktuellt lagersaldo.",
+      "sourceIds": [
+        "buying",
+        "service"
+      ]
+    },
+    {
+      "id": "place-order",
+      "category": "Kom igång",
+      "question": "Hur beställer jag genom LoloBuy?",
+      "answer": "Klistra in den ursprungliga produktlänken i LoloBuy, kontrollera den importerade annonsen och välj exakt färg, storlek och antal. Granska produktpriset, inrikesfrakten och eventuella begärda tjänster före betalning. LoloBuys officiella guide delar sedan upp inköp, lagerkontroll och inlämning av internationella paket i separata steg.",
+      "sourceIds": [
+        "buying"
+      ]
+    },
+    {
+      "id": "manual-order",
+      "category": "Kom igång",
+      "question": "Vad gör jag om LoloBuy inte kan läsa min produktlänk?",
+      "answer": "Den officiella köpguiden beskriver ett manuellt beställningsformulär för inköpsagenten när automatisk import inte fungerar. Fyll i de faktiska produktuppgifterna och valda alternativen och granska beställningen innan du skickar den. Ersätt inte marknadsplatsens produkt-ID med produktlistans interna sidnummer: de identifierar olika poster.",
+      "sourceIds": [
+        "buying"
+      ]
+    },
+    {
+      "id": "domestic-delivery",
+      "category": "Beställningar och betalning",
+      "question": "Kan flera produkter dela en kinesisk fraktavgift?",
+      "answer": "LoloBuys frågor och svar om inrikesfrakt beskriver en gemensam avgift när produkter från samma säljare skickas in och betalas tillsammans. En ovanligt stor eller tung beställning kan kräva ytterligare fraktbetalning. Detta slår inte automatiskt ihop avgifter från olika säljare och inkluderar inte internationell frakt.",
+      "sourceIds": [
+        "domestic"
+      ]
+    },
+    {
+      "id": "seller-promotion",
+      "category": "Beställningar och betalning",
+      "question": "Hur ber jag LoloBuy att använda säljarens rabatt?",
+      "answer": "Ange den verkliga kampanjen eller erbjudandet om gratis inrikesfrakt i beställningens anmärkningar så att inköpsagenten kan kontrollera det med säljaren. Den officiella hjälpen beskriver också hur du använder Order Enquiry om kampanjinformationen saknades. En uppgiven rabatt måste kontrolleras; en produktlista kan inte lova att ett gammalt erbjudande fortfarande gäller.",
+      "sourceIds": [
+        "promotions"
+      ]
+    },
+    {
+      "id": "change-order",
+      "category": "Beställningar och betalning",
+      "question": "Kan jag ändra storlek eller färg efter beställningen?",
+      "answer": "Innan säljaren skickar produkten säger LoloBuy att de kan förhandla om en ändring. Efter avsändning beskriver hjälpsidan i stället en möjlig retur från lagret följd av en ny beställning, med returfraktkostnader. Skicka begäran på den aktuella beställningen så snart som möjligt och invänta godkännande innan du antar att alternativet har ändrats.",
+      "sourceIds": [
+        "changes"
+      ]
+    },
+    {
+      "id": "confirmation-message",
+      "category": "Beställningar och betalning",
+      "question": "Vad betyder Pending for Confirmation?",
+      "answer": "Vissa beställningsuppgifter behöver din bekräftelse. Läs och besvara meddelandet som hör till beställningen. Officiell hjälp hänvisar frågor om köpta beställningar till Shopping Agent Order och frågor i lagersteget till My Warehouse, där ett beslut om godkännande eller retur kan efterfrågas. Menynamnen kan variera; att vänta på en spårningsuppdatering besvarar inte begäran.",
+      "sourceIds": [
+        "confirmation",
+        "confirmation-path"
+      ]
+    },
+    {
+      "id": "received-in-stock",
+      "category": "Lager och QC",
+      "question": "Vad är skillnaden mellan Received och In Stock?",
+      "answer": "Den officiella statusguiden använder Received när lagret har kvitterat säljarens paket och kontrollen pågår. In Stock betyder att kvalitetskontrollen är klar och produkterna är lagrade i ditt lagerkonto. Mottagning på lagret betyder därför inte att din QC-granskning eller internationella frakt redan är färdig.",
+      "sourceIds": [
+        "status"
+      ]
+    },
+    {
+      "id": "qc-checks",
+      "category": "Lager och QC",
+      "question": "Vad kontrolleras vid standard-QC?",
+      "answer": "LoloBuys standardkontroll granskar synliga beställningsuppgifter som modell, antal, färg, storlek, utförande och uppenbara skador. Läs villkoren för den faktiska kontrolltjänsten tillsammans med dina beställningsbilder. En visuell kontroll garanterar inte äkthet, exakt passform eller långvarig hållbarhet.",
+      "sourceIds": [
+        "qc"
+      ]
+    },
+    {
+      "id": "inspection-exclusions",
+      "category": "Lager och QC",
+      "question": "Testas förseglade produkter och elektronik fullständigt?",
+      "answer": "Nej. Kontrollreglerna beskriver undantag för förseglade produkter och utesluter uttryckligen testning av äkthet, funktion och kvalitet för professionell elektronik och relaterade varor. Med alternativet utan kontroll granskar lagret begränsningar men verifierar inte produkten och tillhandahåller inga QC-bilder. Granska den valda tjänsten innan du förlitar dig på ett kontrollresultat.",
+      "sourceIds": [
+        "qc"
+      ]
+    },
+    {
+      "id": "qc-photos",
+      "category": "Lager och QC",
+      "question": "Kan jag begära fler QC-bilder?",
+      "answer": "Tjänsteöversikten beskriver ytterligare bilder på begäran. Fototjänstens sida erbjuder även Secondary Quality Inspection när kontroll hoppades över före lagring. De officiella sidorna anger olika standardantal bilder. Kontrollera din valda tjänst och begär den specifika vy eller mätning som saknas, i stället för att anta att alla beställningar innehåller lika många bilder.",
+      "sourceIds": [
+        "service",
+        "photos",
+        "qc"
+      ]
+    },
+    {
+      "id": "storage-period",
+      "category": "Lager och QC",
+      "question": "Hur länge kan produkter ligga i LoloBuys lager?",
+      "answer": "Den särskilda lagringssidan och den aktuella statusguiden anger 180 dagar för vanliga lagrade varor, medan en äldre köpguide fortfarande säger 90. Avvikande paket utan matchning har separata regler. Kontrollera tidsfristen som visas för din egen produkt och ordna frakt eller eventuell förlängning innan den löper ut; förlita dig inte enbart på den äldre guiden.",
+      "sourceIds": [
+        "storage",
+        "status",
+        "buying"
+      ]
+    },
+    {
+      "id": "consolidate",
+      "category": "Frakt och spårning",
+      "question": "Kan jag skicka flera inköp i ett paket?",
+      "answer": "Köpguiden beskriver hur du väljer lagrade produkter i My Warehouse och lämnar in dem för gemensam leverans. Kontrollera att alla valda produkter har genomgått nödvändig granskning och att den tillgängliga fraktrutten accepterar det färdiga paketet. Att kombinera produkter ändrar det packade paketet men garanterar inte en lägre total fraktkostnad.",
+      "sourceIds": [
+        "buying"
+      ]
+    },
+    {
+      "id": "remove-packaging",
+      "category": "Frakt och spårning",
+      "question": "Kan LoloBuy ta bort kartonger före frakt?",
+      "answer": "Tjänsten Package Removal kan väljas när du beställer leverans. Enligt den officiella beskrivningen behålls nödvändiga skyddsförpackningar. Om du behöver originalkartonger till en present, förvaring eller en möjlig retur bör du tänka på det innan du väljer borttagning. Slutlig packning och frakt beror på varorna och den valda försändelsen.",
+      "sourceIds": [
+        "packaging"
+      ]
+    },
+    {
+      "id": "shipping-price",
+      "category": "Frakt och spårning",
+      "question": "Varför kan den slutliga fraktkostnaden skilja sig från uppskattningen?",
+      "answer": "Den inledande frakten bygger på uppskattad vikt och vald destination och fraktrutt. Packningen kan ändra vikt och mått, och logistikleverantörens avgift avgör slutregleringen. LoloBuy beskriver återbetalning av för mycket betald frakt eller begäran om tilläggsbetalning när den faktiska frakten avviker. Kontrollera paketets slutliga offert och meddelandet i ditt konto.",
+      "sourceIds": [
+        "weight",
+        "freight-balance"
+      ]
+    },
+    {
+      "id": "volumetric-weight",
+      "category": "Frakt och spårning",
+      "question": "Vad är volymvikt?",
+      "answer": "Den omvandlar paketets mått till en vikt som används för debitering av skrymmande varor. LoloBuys hjälp skiljer mellan ruttspecifika formler och anger att den debiterbara vikten kan vara den högsta av faktisk vikt och volymvikt. Använd divisorn och avrundningsreglerna för din valda fraktrutt, inte ett allmänt påstående om pris per kilo.",
+      "sourceIds": [
+        "weight"
+      ]
+    },
+    {
+      "id": "supplemental-payment",
+      "category": "Frakt och spårning",
+      "question": "Vad ska jag göra med ett meddelande om extra fraktbetalning?",
+      "answer": "Öppna det berörda paketet och granska den ändrade avgiften och begäran om bekräftelse. LoloBuys regler för tilläggsbetalning har olika hanteringsgränser och omfattar fall där paket kan hållas kvar eller annulleras. Svara inom tidsfristen för ditt paket och betala ett godkänt återstående belopp; behandla inte den ursprungliga uppskattningen som slutgiltig.",
+      "sourceIds": [
+        "freight-balance"
+      ]
+    },
+    {
+      "id": "tracking",
+      "category": "Frakt och spårning",
+      "question": "Var kan jag spåra mitt internationella paket?",
+      "answer": "Den officiella köpguiden hänvisar till My LoloBuy → Parcels efter avsändning. Statusguiden skiljer mellan Packed och Shipped: ett packat paket kan fortfarande invänta bekräftelse av slutlig vikt, medan Shipped betyder att det har ett spårningsnummer och har lämnats till transportören. Läs den senaste transportörshändelsen tillsammans med kontostatusen.",
+      "sourceIds": [
+        "buying",
+        "status"
+      ]
+    },
+    {
+      "id": "cancellation",
+      "category": "Returer och kundservice",
+      "question": "Kan jag avbeställa innan beställningen når lagret?",
+      "answer": "Möjligheten att avbeställa beror på beställningens aktuella steg. Använd avbeställnings- eller retur/återbetalningsalternativet på den berörda beställningen. När produkten har köpts kan säljarens bekräftelse krävas; en inskickad begäran är inte en godkänd återbetalning. Kontrollera svaret i beställningen innan du gör ett ersättningsköp.",
+      "sourceIds": [
+        "cancellation",
+        "refunds"
+      ]
+    },
+    {
+      "id": "eligible-return",
+      "category": "Returer och kundservice",
+      "question": "Vad omfattar LoloBuys femdagarsregel för returer?",
+      "answer": "Den särskilda regeln beskriver ett fönster på 120 timmar för att begära retur av godkända varor, räknat från nästa hela timme efter Stocked in. Säljarens godkännande, produktens skick och nödvändiga förpackningar gäller fortfarande. En retur utan fel på varan kan medföra båda inrikesfrakterna och en hanteringsavgift. Kontrollera behörighet och den faktiska begärandesidan omgående.",
+      "sourceIds": [
+        "returns"
+      ]
+    },
+    {
+      "id": "refund-destination",
+      "category": "Returer och kundservice",
+      "question": "Vart går en godkänd återbetalning?",
+      "answer": "Hjälpsidan för returer beskriver i allmänhet att godkända återbetalningar sätts in på LoloBuy-kontots saldo. Den beskriver separat ett snävt undantag med återbetalning till ursprungligt betalsätt för vissa PayPal-beställningar som väntar på godkännande. Det innebär inte att alla återbetalningar går direkt till ett bankkort eller att alla betalningsmetoder är tillgängliga nu.",
+      "sourceIds": [
+        "refunds"
+      ]
+    },
+    {
+      "id": "delivery-problem",
+      "category": "Returer och kundservice",
+      "question": "Vad gör jag om mitt levererade paket är skadat eller fel?",
+      "answer": "Öppna det berörda paketet i My LoloBuy → Parcels och använd Apply After-sales. Beskriv problemet och spara tydliga bilder av paketet och produkten. Den officiella artikeln innehåller motstridiga tidsfrister för reklamation, inklusive en tidigare varning, så rapportera problemet direkt och få bekräftelse för ditt ärende i stället för att vänta på en allmän tidsfrist.",
+      "sourceIds": [
+        "claims"
+      ]
+    },
+    {
+      "id": "sizing",
+      "category": "Produktval",
+      "question": "Hur väljer jag kläd- eller skostorlek?",
+      "answer": "LoloBuys storleksreferens varnar för att olika butiker kan använda olika standarder. Jämför den faktiska säljarens måttabell, enheter och valda alternativ med dina mått eller en produkt som passar bra. Omvandlingstabellerna är referenser, ingen garanti för att en storleksbeteckning passar hos alla säljare. Fråga om mått som saknas innan du beställer.",
+      "sourceIds": [
+        "sizing"
+      ]
+    },
+    {
+      "id": "1688",
+      "category": "Produktval",
+      "question": "Gäller samma inköps- och kontrollregler för 1688-beställningar?",
+      "answer": "Den officiella 1688-guiden kräver säljarens minsta antal; priser och inrikesfrakt kan variera med mängden. Kontrollreglerna skiljer mellan stickprovskontrollerade produkter av typ A och produkter av typ B utan standard-QC. Bekräfta antal, kontrollens omfattning och returvillkor före betalning i stället för att anta att reglerna för detaljhandelsbeställningar gäller.",
+      "sourceIds": [
+        "wholesale",
+        "qc"
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "slug": "using-lolobuy-spreadsheet",
+      "title": "Så använder du en LoloBuy-produktlista: gör en produktlänk till en användbar urvalslista",
+      "description": "Hitta produkter efter kategori, jämför den exakta annonsen och spara uppgifterna du behöver innan du öppnar en produkt på LoloBuy.",
+      "keyword": "lolobuy spreadsheet",
+      "category": "Kom igång",
+      "summary": "En användbar produktlista hjälper dig att begränsa sökningen. En användbar urvalslista sparar exakt produkt, alternativ och obesvarade frågor som du behöver för beställningen.",
+      "sections": [
+        {
+          "heading": "Börja med ett köpbeslut, inte en lång lista",
+          "paragraphs": [
+            "En LoloBuy-produktlista är ett verktyg för att upptäcka produkter. Du kan bläddra i en kategori, titta på produktbilder och följa en annons till nästa steg. Det betyder inte att katalogens utgivare har köpt varje produkt, testat säljaren eller reserverat din storlek. Betrakta varje rad som ett uppslag som behöver kontrolleras.",
+            "Skriv före sökningen ned vilken typ av produkt du behöver, vilka mått som spelar roll och en ungefärlig produktbudget. Att söka efter en svart huvtröja med dragkedja är mer användbart än att samla alla lockande klädlänkar. En smalare fråga gör det också lättare att upptäcka när en annons saknar viktig information."
+          ]
+        },
+        {
+          "heading": "Behåll produktens ursprungliga identitet",
+          "paragraphs": [
+            "Numret i adressen till en katalogsida kan vara ett lokalt post-ID. Det kan skilja sig från marknadsplatsens produkt-ID i köplänken. Ändra inte numren för hand för att få en länk att se rätt ut. Använd den matchande produktknappen och jämför sedan produkten som öppnas med annonsen du avsåg att köpa från.",
+            "Spara säljarens ursprungliga URL tillsammans med ditt valda alternativ. En skärmbild kan bevara en användbar vy, men är mindre användbar om du inte vet vilken säljare, storlek eller färg den gäller. Om en länk öppnar en annan produkt eller en tom annons ska du pausa och kontrollera innan du fortsätter."
+          ]
+        },
+        {
+          "heading": "Jämför likvärdiga alternativ",
+          "paragraphs": [
+            "Ett frånpris kan gälla det billigaste alternativet, en enda accessoar eller ett annat antal. Jämför samma produktkonfiguration mellan annonser. Ett tvådelat set och en enda överdel är ingen meningsfull prisjämförelse, även om miniatyrbilderna liknar varandra.",
+            "Kontrollera om galleriet visar vald färg och om det finns en storlekstabell. Identiska bilder hos olika säljare bevisar inte identisk konstruktion eller tillgänglighet. Din jämförelse bör registrera den information som finns och lämna en tydlig lucka där något viktigt är okänt."
+          ],
+          "bullets": [
+            "Exakt produkt och säljarens URL",
+            "Vald storlek, färg och mängd",
+            "Aktuellt pris för det alternativet",
+            "Mått eller hänvisning till storlekstabell",
+            "En obesvarad fråga före beställning"
+          ]
+        },
+        {
+          "heading": "Gå vidare genom den officiella köpprocessen",
+          "paragraphs": [
+            "LoloBuys köpguide beskriver hur du skickar in en marknadsplatslänk, väljer tillgängliga alternativ och betalar produkten och inrikesfrakten. Den beskriver också ett manuellt beställningsformulär när produktinformationen inte kan hämtas automatiskt. Att en länk öppnas är därför bara början på granskningen av beställningen.",
+            "Kontrollera bilden, alternativtexten och antalet igen på den officiella produktsidan. En katalog kan inte garantera aktuellt lager eller bevara ett alternativ som du inte har valt i kassan. Gör särskilda önskemål tillräckligt specifika för att inköparen ska kunna agera, exempelvis ett exakt färgnamn eller en fråga om mått."
+          ]
+        },
+        {
+          "heading": "Skilj upptäcktsbilder från din egen QC",
+          "paragraphs": [
+            "Säljarens galleri förklarar erbjudandet. En tidigare lagerbild kan visa någon annans produkt. Kontrollbilderna som hör till din egen beställning är underlaget du ska granska innan just den produkten skickas utomlands. Dessa tre bildtyper besvarar olika frågor och är inte utbytbara.",
+            "Låt urvalslistan följa med beställningen. När produkten når lagret jämför du det sparade alternativet med synlig storleksetikett, färg och antal. En avvikelse är lättare att förklara när du har originalvalet och orderreferensen tillsammans."
+          ]
+        },
+        {
+          "heading": "Gör urvalslistan användbar även efter köpet",
+          "paragraphs": [
+            "Behåll bara de starkaste kandidaterna och skriv varför var och en klarade jämförelsen. En huvtröja kan exempelvis ha en tydligare måttabell medan en annan har en obesvarad fråga om tyget. Det gör en samling länkar till ett beslut du kan återvända till utan att börja undersökningen från början.",
+            "Läs beställnings- och budgetguiderna före köp. Läs QC- och fraktguiderna före paketinlämning. Produktlistan är mest användbar när den kopplar ihop dessa steg i stället för att presentera produktpriset som hela kostnaden för en levererad beställning."
+          ]
+        }
+      ],
+      "checklist": [
+        "Spara den exakta källadressen och alternativet.",
+        "Jämför samma antal och konfigurationer.",
+        "Klargör saknade mått före betalning.",
+        "Kontrollera den importerade annonsen på LoloBuy.",
+        "Granska beställningsspecifik QC före frakt."
+      ],
+      "sourceIds": [
+        "buying",
+        "qc"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 651
+    },
+    {
+      "slug": "how-to-order-on-lolobuy",
+      "title": "Så beställer du på LoloBuy: produktlänkar, alternativ och betalningssteg",
+      "description": "Följ beställningen från en marknadsplatslänk till lagerkontroll och ett separat inlämnat internationellt paket.",
+      "keyword": "hur man beställer på lolobuy",
+      "category": "Beställning",
+      "summary": "Kontrollera produkten före betalning, lagerunderlaget före frakt och paketofferten före avsändning. Varje steg besvarar en egen fråga.",
+      "sections": [
+        {
+          "heading": "Börja på den officiella webbplatsen",
+          "paragraphs": [
+            "Använd LoloBuys officiella webbplats för registrering, kontoinloggning och betalning. Denna oberoende katalog hjälper dig att upptäcka produkter; den samlar inte in ditt lösenord och behandlar inte din beställning. Kontrollera destinationen när du öppnar en produkt och håll köpdiskussioner kopplade till den aktuella beställningen.",
+            "Den officiella köpguiden beskriver hur du börjar med en produktlänk från en kinesisk marknadsplats som stöds. Produkten du väljer levereras av säljaren bakom annonsen. Skillnaden är viktig eftersom en inköpstjänst och en säljare inte styr samma delar av affären."
+          ]
+        },
+        {
+          "heading": "Kontrollera den importerade produkten",
+          "paragraphs": [
+            "Klistra in den ursprungliga produktlänken eller använd katalogens matchande LoloBuy-knapp. Jämför sidan som öppnas med källan innan du väljer alternativ. Kontrollera huvudbild, produktnamn, tillgängliga säljaruppgifter, vald färg, storlek och antal. Förlita dig inte enbart på bilden.",
+            "Om sidan visar ett manuellt formulär för inköpsagenten säger den officiella guiden att du ska ange beställningsuppgifterna manuellt. Fyll i dem utifrån den verkliga annonsen i stället för att gissa saknade alternativ. Klargör nödvändiga men otydliga uppgifter genom beställningsförfrågan innan du ber inköparen fortsätta."
+          ],
+          "bullets": [
+            "Produkten matchar originaladressen",
+            "Alternativtexten matchar avsedd färg och storlek",
+            "Antal och styckepris avser samma konfiguration",
+            "Särskilda krav är tydligt skrivna"
+          ]
+        },
+        {
+          "heading": "Förstå den första betalningen",
+          "paragraphs": [
+            "Den officiella köpprocessen skiljer produkt och kinesisk inrikesfrakt från det senare internationella paketet. Granska den första betalningen rad för rad. Att välja destination vid köpet innebär inte att det visade produktbeloppet inkluderar alla kostnader för leverans dit.",
+            "Kontrollera betalningsmetoder, valutor och tillvalstjänster i den aktuella kassan. En hjälpartikels allmänna lista lovar inte att varje metod finns för ditt konto eller din beställning. Spara betalningsunderlaget och jämför med beställningsstatusen i stället för att betala igen för att en siduppdatering känns långsam."
+          ]
+        },
+        {
+          "heading": "Svara på beställningsfrågor",
+          "paragraphs": [
+            "LoloBuy använder statusen Pending for Confirmation för uppgifter som måste verifieras. Hjälpsidan hänvisar köparen till instruktionerna i beställningen. Läs den faktiska frågan och besvara just den: den kan avgöra om inköpsteamet kan fortsätta.",
+            "Den officiella ändringsguiden skiljer mellan produkter som säljaren ännu inte skickat och redan skickade produkter. Före avsändning kan inköparen fråga säljaren om ändring; efteråt kan retur och ny beställning behövas. En begärd ändring är inte genomförd förrän beställningsposten bekräftar den."
+          ]
+        },
+        {
+          "heading": "Granska ankomst och kontroll",
+          "paragraphs": [
+            "Ankomst till lagret och färdig kontroll är separata milstolpar. Hitta produkten i lagerdelen och jämför bilderna och det registrerade alternativet med ditt köp. Kontrollera först identiteten och sedan de synliga detaljer som är viktiga för dig. Lös en tydlig avvikelse innan produkten läggs i ett internationellt paket.",
+            "Anta inte att alla produkter får samma kontroll. Den officiella standardpolicyn beskriver begränsningar för förseglade produkter och särskild hantering av vissa 1688-beställningar. Om du behöver ett särskilt mått eller en viss vy, kontrollera om den kan fås för din beställning i stället för att se en allmän QC-bild som bevis för allt."
+          ]
+        },
+        {
+          "heading": "Behandla paketinlämningen som ett eget beslut",
+          "paragraphs": [
+            "Den officiella processen instruerar användaren att välja lagrade produkter, ange leveransuppgifter och välja bland tillgängliga fraktalternativ. Granska destination, begränsningar, förpackningsval och fraktförskott tillsammans. En köpt produkt är inte automatiskt ett internationellt paket klart för avsändning.",
+            "Den slutliga frakten kan ändras efter packning och logistikmätning. Bevaka paketposten för justeringar eller bekräftelsefrågor. Efter avsändning använder du paketdelen för spårning, sparar orderreferenserna och kontrollerar innehållet snabbt när leveransen anländer."
+          ]
+        }
+      ],
+      "checklist": [
+        "Bekräfta originalprodukten och exakt alternativ.",
+        "Granska produkt- och inrikesfraktkostnader.",
+        "Besvara väntande bekräftelsefrågor.",
+        "Kontrollera lagerbilder och olösta problem.",
+        "Granska den separata internationella paketofferten."
+      ],
+      "sourceIds": [
+        "buying",
+        "confirmation",
+        "changes",
+        "qc",
+        "freight-balance"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 640
+    },
+    {
+      "slug": "lolobuy-qc-photos",
+      "title": "LoloBuy QC-bilder: en praktisk kontrollista före frakt",
+      "description": "Skilj säljarbilder från din egen lagerkontroll och granska identitet, synligt skick och detaljer som fortfarande behöver underlag.",
+      "keyword": "lolobuy qc bilder",
+      "category": "Kvalitetskontroll",
+      "summary": "Börja med produkten och alternativet du beställde. Använd sedan tillgängliga vyer för att avgöra vad som är tydligt, vad som behöver en till bild och vad som ska lösas före avsändning.",
+      "sections": [
+        {
+          "heading": "Identifiera underlaget du tittar på",
+          "paragraphs": [
+            "Ett produktgalleri ingår i säljarens erbjudande. En QC-referensbild kan visa en tidigare beställning. Dina egna lagerbilder gäller produkten som togs emot för ditt köp. Håll kategorierna åtskilda när du beslutar, särskilt om produkten har flera färger, versioner eller storlekar.",
+            "Börja med att matcha orderreferens, produkt och valt alternativ. En detaljerad bild av fel version ger ingen användbar trygghet. Om bildserien inte kan kopplas till produkten i ditt lager, be om den kopplingen innan du bedömer utseendet."
+          ]
+        },
+        {
+          "heading": "Kontrollera identitet före smådetaljer",
+          "paragraphs": [
+            "Granska först storlek, färg, antal och modell. Leta efter samstämmiga etiketter och vyer av samma produkt. En bildserie kan se attraktiv ut men ändå visa fel storleksetikett eller ett ofullständigt set. Jämför med ditt sparade orderval i stället för att lita på minnet.",
+            "För skor kontrollerar du båda skorna och synliga storleksmarkeringar. För ett plagg kontrollerar du vald färg och märkt storlek. För en väska eller accessoaruppsättning kontrollerar du att förväntade delar syns. Detta är praktiska granskningssteg, ingen garanti för att alla dolda detaljer har kontrollerats."
+          ]
+        },
+        {
+          "heading": "Använd en kategorianpassad checklista",
+          "paragraphs": [
+            "För kläder är helhetsform, fram- och baksida, sömmar, tryck eller broderi och områden där passformen beror på mått användbara vyer. För skor granskar du paret tillsammans, synlig konstruktion och beställd storlek. För väskor kan stängning, handtag och insida besvara olika frågor.",
+            "Skriv bara ned detaljerna som påverkar ditt beslut. En lång allmän lista kan distrahera från ett saknat mått eller ett skadat spänne som verkligen betyder något. Om framsidan syns tydligt men baksidan saknas, be om den saknade vyn i stället för ännu en allmän bild från samma vinkel."
+          ],
+          "bullets": [
+            "Bekräfta identitet och valt alternativ",
+            "Granska synligt skick och konstruktion",
+            "Jämför begärda mått",
+            "Skilj saknade vyer från konstaterade fel"
+          ]
+        },
+        {
+          "heading": "Förstå standardtjänstens begränsningar",
+          "paragraphs": [
+            "LoloBuys standardkontrollsida beskriver utseendekontroller och undantag. Förseglade produkter öppnas exempelvis inte alltid, och vissa professionella eller elektroniska produkter testas inte för äkthet, funktion eller kvalitet. Vissa 1688-beställningar följer stickprov eller andra kontrollregler.",
+            "De officiella sidorna enas inte om ett allmängiltigt antal bilder: kontrollsidan och den bredare tjänstesidan anger olika antal. Kontrollera tjänsten kopplad till din beställning i stället för att anta ett exakt antal. Det viktiga är om underlaget täcker frågan du behöver avgöra."
+          ]
+        },
+        {
+          "heading": "Begär en specifik extra vy",
+          "paragraphs": [
+            "En fokuserad begäran identifierar beställningen, området som ska fotograferas och orsaken. Exempelvis: ”Visa storleksetiketten och mät plaggets plana bröstbredd från söm till söm.” Det är tydligare än att fråga om produkten är bra. Kontrollera tillgänglighet och avgifter innan du ber om extra arbete.",
+            "Använd samma mätmetod som säljarens tabell. Ett plant plaggs bredd och kroppens omkrets är olika mått. Spara bilden tillsammans med måttet så att siffran inte förväxlas med ett mått för en annan storlek eller produkt."
+          ]
+        },
+        {
+          "heading": "Fatta ett dokumenterat beslut",
+          "paragraphs": [
+            "Dela upp iakttagelserna i bekräftade, oklara och oacceptabla. Begär underlag om något är oklart. Om produkten verkar avvika från beställningen, använd relevant support- eller returprocess före internationell frakt. Spara en kort problembeskrivning och bilderna som visar det.",
+            "Bilder kan inte fastställa alla materialegenskaper, komfort, långvarig hållbarhet eller intern funktion. Att godkänna synligt skick är ett mer begränsat beslut. Läs returvillkoren medan produkten finns på lagret och se inte lyckad QC som ett löfte om tull eller internationell leverans."
+          ]
+        }
+      ],
+      "checklist": [
+        "Matcha bilderna med din egen beställning.",
+        "Kontrollera storlek, färg, modell och antal först.",
+        "Begär den specifika vy eller mätning som saknas.",
+        "Kontrollera tjänsten och dess undantag.",
+        "Lös betydande problem före paketinlämning."
+      ],
+      "sourceIds": [
+        "qc",
+        "photos",
+        "service",
+        "sizing"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 643
+    },
+    {
+      "slug": "lolobuy-shipping-costs",
+      "title": "LoloBuy-fraktkostnader: jämför hela paketet",
+      "description": "Förstå uppskattad vikt, faktisk vikt och volymvikt och jämför sedan tillgängliga rutter med samma destination, innehåll och förpackningsval.",
+      "keyword": "lolobuy fraktkalkylator",
+      "category": "Frakt",
+      "summary": "En användbar fraktjämförelse börjar med ett tydligt definierat paket. Guiden förklarar uppgifter och kontroller; den är ingen aktuell fraktoffert.",
+      "sections": [
+        {
+          "heading": "Skilj produktpris från frakt",
+          "paragraphs": [
+            "Priset bredvid en produkt är inte den fullständiga leveranskostnaden. LoloBuys officiella process skiljer köp och inrikesfrakt från det senare förskottet för internationell frakt. Du kan uppskatta en budget före köp, men inte göra en slutlig paketjämförelse enbart från produktpriset.",
+            "Skriv ned destination, planerat innehåll och förpackningar du vill behålla. Ett par skor med kartong och samma par utan kartong är olika förpackningsbeslut. Extra produkter kan ändra både vikt och mått, så ett litet tilläggsköp kan påverka slutofferten på flera sätt."
+          ]
+        },
+        {
+          "heading": "Vet vilken vikt du jämför",
+          "paragraphs": [
+            "LoloBuys viktguide skiljer en uppskattning från det packade paketets verkliga vikt. Lagerposten inkluderar originalförpackningen, medan slutpaketet även omfattar ytteremballage och eventuella val om borttagning eller förstärkning. Dessa steg kan ge olika mätresultat.",
+            "Volymvikt avspeglar utrymmet paketet upptar. Den officiella guiden publicerar olika divisorer för olika rutter. Använd inte samma divisor för alla transportörer och anta inte att ett gammalt exempel är dagens prislista. Använd aktuella ruttvillkor för paketet du lämnar in."
+          ],
+          "bullets": [
+            "Destination och postnummer",
+            "Produktbegränsningar och innehåll",
+            "Faktisk packad vikt",
+            "Längd, bredd och höjd",
+            "Ruttspecifika debiteringsregler och inkluderade tjänster"
+          ]
+        },
+        {
+          "heading": "Räkna utan att låtsas ge en offert",
+          "paragraphs": [
+            "Enbart som illustration har ett paket på 40 × 30 × 20 centimeter volymen 24 000 kubikcentimeter. En hypotetisk rutt med divisorn 6 000 ger 4 kilo volymvikt; divisorn 5 000 ger 4,8 kilo. Ingen av beräkningarna ger ett fraktpris.",
+            "Exemplet visar varför ruttregeln spelar roll. Du behöver fortfarande faktisk vikt, debiteringsintervall, destination och aktuellt pris. Välj inte rutt utifrån en rubriks pris per kilo när avgiften beror på en första enhet, tilläggsenheter eller större debiterbar vikt."
+          ]
+        },
+        {
+          "heading": "Jämför samma paket mellan rutter",
+          "paragraphs": [
+            "Behåll samma indata när du jämför tillgängliga transportlinjer. Kontrollera tillåtet innehåll, angiven transportuppskattning, spårning, förpackningskrav och eventuellt tilläggsskydd. Ett lägre startbelopp är ingen fullständig jämförelse när tjänster eller begränsningar skiljer sig.",
+            "Behandla leveransuppskattningar som uppskattningar. Lagerhantering, transport och processer vid destinationen är separata steg. Guiden lovar ingen allmängiltig leveranstid, skattefri rutt eller fast tullavgift. Använd aktuell offert och destinationens officiella regler för beslutet."
+          ]
+        },
+        {
+          "heading": "Bedöm förpackningen som en avvägning",
+          "paragraphs": [
+            "Den officiella sidan om förpackningsborttagning beskriver att onödigt ytteremballage tas bort medan nödvändigt skydd behålls. Den avråder också från borttagning när originalförpackningen behövs för presenter eller bevarande. Mindre volym kan vara värdefullt, men skyddet och köpsyftet spelar fortfarande roll.",
+            "Begär ett specifikt förpackningsval i stället för att generellt ta bort allt. Jämför slutmåtten om de finns. Samfrakt eller borttagna förpackningar ger inte automatiskt lägre kostnad på varje rutt, och känsliga produkter kan behöva mer skydd i stället."
+          ]
+        },
+        {
+          "heading": "Bevaka slutregleringen",
+          "paragraphs": [
+            "LoloBuys vägledning för tilläggsbetalning säger att uppskattad frakt regleras mot logistikleverantörens faktiska avgift. Det kan innebära återbetalning av för mycket betalt eller krav på ytterligare betalning. Läs paketmeddelandena och svara på begäranden kopplade till försändelsen.",
+            "Spara första uppskattningen, slutliga debiterbara mått, valda tjänster och justeringen tillsammans. Då blir en avvikelse lättare att förstå. Budgetera möjliga destinationsavgifter separat och kontrollera paketets slutbelopp innan du betraktar beställningen som färdig."
+          ]
+        }
+      ],
+      "checklist": [
+        "Jämför rutter för identiskt innehåll och destination.",
+        "Kontrollera regler för faktisk vikt och volymvikt.",
+        "Ta med förpackningsskydd i beslutet.",
+        "Skilj uppskattningar från slutliga avgifter.",
+        "Läs paketets justeringsmeddelanden före avsändning."
+      ],
+      "sourceIds": [
+        "buying",
+        "weight",
+        "packaging",
+        "freight-balance"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 604
+    },
+    {
+      "slug": "lolobuy-warehouse-consolidation",
+      "title": "LoloBuys lagerguide: kontroll, förvaring och samfrakt",
+      "description": "Organisera lagrade produkter, lös QC-frågor och välj förpackning med hela paketet i åtanke.",
+      "keyword": "lolobuy lager",
+      "category": "Lager",
+      "summary": "Lagersteget låter dig koppla köpunderlaget till den mottagna produkten och avgöra vad som är redo att skickas tillsammans.",
+      "sections": [
+        {
+          "heading": "Skilj ankomst från fraktberedskap",
+          "paragraphs": [
+            "En leveransskanning från säljaren betyder att ett inrikespaket nått en punkt på resan. Den visar inte ensam att produkten är kontrollerad, rätt matchad och redo för internationell avsändning. LoloBuys statusguide skiljer mottagna varor, kontroll och lagrat innehav åt.",
+            "Använd lagerposten i stället för ett enda spårningsmeddelande som arbetslista. Spara ordernummer, valt alternativ och QC-status för varje produkt. Om flera säljarpaket anländer samtidigt förhindrar det att en färdig produkt döljer en fråga om en annan."
+          ]
+        },
+        {
+          "heading": "Skapa en liten lagerchecklista",
+          "paragraphs": [
+            "Anteckna för varje produkt vad du beställde, vad lagret visar och vad som återstår att lösa. Det kan räcka med fyra kolumner: produkt, rätt alternativ, kontrollbeslut och packinstruktion. Syftet är att hålla väntande frågor synliga innan du sätter ihop ett paket.",
+            "Granska bilderna mot originalvalet. En saknad bild och ett synligt fel kräver olika åtgärder. Begär relevant underlag för en oklar detalj. För en synlig avvikelse förklarar du skillnaden med orderreferens och överväger tillämplig returprocess."
+          ],
+          "bullets": [
+            "Beställning och exakt alternativ",
+            "Lagermottagning och kontrollstatus",
+            "Öppen fråga eller returförfrågan",
+            "Behåll eller ta bort originalförpackning",
+            "Redo för internationellt paket: ja eller nej"
+          ]
+        },
+        {
+          "heading": "Kontrollera din lagringsfrist direkt",
+          "paragraphs": [
+            "Det officiella materialet har motstridiga lagringsuppgifter: köpguiden nämner 90 dagar, medan lagrings- och statussidorna nämner 180. Lagringssidan beskriver även särskild hantering av avvikande paket utan matchning. Skillnaderna bör inte förenklas till ett villkorslöst löfte.",
+            "Kontrollera lagringsinformationen för din egen produkt och klargör avvikelser innan du förlitar dig på en tidsfrist. Anteckna datumet och eventuell betald förlängning du väljer. Låt inte varor vänta obegränsat för att en allmän artikel anger längre tid än den aktuella lagerposten."
+          ]
+        },
+        {
+          "heading": "Samfrakta kompatibla produkter med lösta frågor",
+          "paragraphs": [
+            "Den officiella köpguiden beskriver hur du väljer lagrade produkter för internationell leverans eller köper fler och skickar dem tillsammans senare. Samfrakt låter dig planera hela paketet. Det gör inte varje kombination tillåten på varje rutt.",
+            "Bedöm begränsningar, ömtålighet och olösta frågor innan du kombinerar varor. En produkt som väntar på returbeslut ska inte betraktas som redo. En känslig accessoar kan behöva annat skydd än kläder. Jämför slutliga paketmått och vikt, inte bara antalet produkter."
+          ]
+        },
+        {
+          "heading": "Skriv precisa packinstruktioner",
+          "paragraphs": [
+            "LoloBuys hjälp om förpackningsborttagning beskriver att onödiga förpackningar tas bort medan nödvändigt skydd bevaras. Om du vill ha originalförpackningen för en present eller samling, välj inte borttagning och gör kravet tydligt. Värdet av en kartong är inte alltid dess fraktvikt.",
+            "Använd produktspecifika instruktioner vid behov: behåll stödet för en ömtålig produkt, spara en butikskartong eller fråga vilket packalternativ som finns. Granska eventuell tilläggsavgift i det aktuella paketformuläret. Anta inte att samma packmetod passar varje kategori."
+          ]
+        },
+        {
+          "heading": "Gör en sista paketgranskning",
+          "paragraphs": [
+            "Bekräfta produktlista, antal, mottagaruppgifter, vald rutt och tjänster före inlämning. Kontrollera att alla avsedda produkter finns med och att inget med olöst problem har hamnat i paketet. Den korta kontrollen är lättare än att rekonstruera valet efter packningen.",
+            "De officiella sidorna om vikt och fraktreglering förklarar att slutmåtten kan ändra avgiften. Bevaka paketmeddelanden efter inlämning, inklusive begäran om bekräftelse eller tilläggsbetalning. Efter avsändning använder du paketspårningen och behåller lagerunderlaget tills leveransen har kontrollerats."
+          ]
+        }
+      ],
+      "checklist": [
+        "Granska varje produkt innan den markeras som redo.",
+        "Kontrollera tidsfristen i din egen lagerpost.",
+        "Skilj returfrågor från fraktklara produkter.",
+        "Ange förpackningsval som passar varje produkt.",
+        "Granska slutlig paketlista och fraktjusteringar."
+      ],
+      "sourceIds": [
+        "buying",
+        "status",
+        "storage",
+        "packaging",
+        "freight-balance"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 612
+    },
+    {
+      "slug": "lolobuy-sizing-guide",
+      "title": "LoloBuys storleksguide: jämför mått innan du väljer beteckning",
+      "description": "Använd säljarens tabell, konsekventa mätmetoder och riktade lagerbilder för ett tydligare storleksbeslut.",
+      "keyword": "lolobuy storleksguide",
+      "category": "Storlekar",
+      "summary": "En välbekant storleksbeteckning är en utgångspunkt. Den användbara jämförelsen gäller säljarens mått, dina referensmått och den passform du vill ha.",
+      "sections": [
+        {
+          "heading": "Börja med säljarens tabell",
+          "paragraphs": [
+            "LoloBuys officiella storleksreferens säger att storleksstandarder kan skilja mellan butiker och behandlar omvandlingarna som referensinformation. Medium eller en bekant skostorlek avgör inte hur alla säljares produkter passar. Läs tabellen för exakt annons och alternativ.",
+            "Kontrollera om siffrorna beskriver en kropp, ett färdigt plagg eller en rekommenderad bärare. Det är olika mått. Om tabellen är oklar, fråga före beställning i stället för att av vana gå upp eller ned en storlek."
+          ]
+        },
+        {
+          "heading": "Mät en tillförlitlig referens",
+          "paragraphs": [
+            "För kläder jämför du med ett plagg du äger som sitter som du vill. Lägg det plant och använd samma mätpunkter som säljarens diagram. Anteckna enheterna och om bredden mäts över en sida eller runt kroppen. Spara måtten med en snabb bild av metoden.",
+            "För kroppsmått följer du relevant guide och håller måttbandet jämnt i stället för att dra åt för att få en önskad storlek. En åtsittande skjorta, en ledig huvtröja och en formsydd jacka behöver olika rörelsevidd. Den önskade silhuetten är en del av beslutet, inte ett fel i tabellen."
+          ]
+        },
+        {
+          "heading": "Välj måtten som spelar roll",
+          "paragraphs": [
+            "För en överdel besvarar bröstbredd, kroppslängd, axlar och ärmar olika passformsfrågor. För byxor kontrollerar du midja, grenhöjd, innerbenslängd och totallängd. Ett enda midjemått förklarar inte hur byxbenet sitter, och bröstmått anger inte ärmlängden.",
+            "Som illustration kan din referensöverdel mäta 56 centimeter över bröstet och 70 centimeter på längden. En kandidat på 56 och 64 kan ha samma bredd men en tydligt kortare kropp. Detta illustrerar jämförelsemetoden och rekommenderar ingen särskild storlek eller produkt."
+          ],
+          "bullets": [
+            "Bekräfta måttenheterna",
+            "Matcha kroppsmått mot kroppstabeller",
+            "Matcha plana plaggmått mot plaggtabeller",
+            "Jämför flera passformskritiska mått",
+            "Notera önskad ledig eller åtsittande silhuett"
+          ]
+        },
+        {
+          "heading": "Kontrollera skor separat",
+          "paragraphs": [
+            "Den officiella storleksguiden rekommenderar den större foten när fötterna skiljer sig och påpekar att längdbeteckningar inte fullt beskriver bredden. Läs säljarens skotabell och kontrollera systemet för valt alternativ. Anta inte att EU-, US- eller UK-nummer överförs perfekt mellan alla annonser.",
+            "Mät enligt tabellen och tänk på strumpor, bredd och användning. En synlig storleksetikett på lagerbilden hjälper till att bekräfta vad som skickades men kan inte visa hur skon känns på foten. Behandla inte en innersulebild som en universell omvandlingstabell."
+          ]
+        },
+        {
+          "heading": "Använd QC för en specifik fråga",
+          "paragraphs": [
+            "Jämför synlig storleksetikett med beställningen före frakt. Om ett viktigt plaggmått är osäkert, begär mätning med tydliga start- och slutpunkter. Be exempelvis om plan bröstbredd från söm till söm i stället för bara ”kontrollera storleken”.",
+            "LoloBuys kontrollpolicy har begränsningar och lovar ingen fullständig passformsbedömning. Kontrollera om mått eller extrabild kan beställas för produkten och om det kostar. En standardbildserie bör inte beskrivas som personlig storleksrådgivning."
+          ]
+        },
+        {
+          "heading": "Besluta medan alternativ finns kvar",
+          "paragraphs": [
+            "Om mottagen etikett skiljer sig från valt alternativ, dokumentera avvikelsen med både beställning och bild. Om etiketten matchar men måttet inte passar, kontrollera säljarens returvillkor och aktuella orderprocess snabbt. Det är olika situationer som ska beskrivas korrekt.",
+            "Mått minskar osäkerhet men tar inte bort skillnader i snitt, stretch, tygkänsla eller personlig preferens. Spara tabellen och jämförelseanteckningarna så att god passform kan hjälpa framtida köp. Kontrollera den verkliga annonsen igen vid återköp eftersom en annan säljare eller version kan ha andra mått."
+          ]
+        }
+      ],
+      "checklist": [
+        "Använd den exakta annonsens tabell.",
+        "Håll enheter och mätmetoder konsekventa.",
+        "Jämför flera mått som avgör passformen.",
+        "Kontrollera mottagen storleksetikett och begärt mått.",
+        "Lös passformsfrågor före internationell avsändning."
+      ],
+      "sourceIds": [
+        "sizing",
+        "qc",
+        "returns"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 648
+    },
+    {
+      "slug": "lolobuy-tracking-guide",
+      "title": "LoloBuy-spårning: skilj beställningen från det internationella paketet",
+      "description": "Läs köp-, lager- och paketstegen korrekt och samla användbart underlag när en spårningsuppdatering är oklar.",
+      "keyword": "lolobuy spårning",
+      "category": "Spårning",
+      "summary": "En orderstatus och en transportörsskanning beskriver olika delar av resan. Håll produkt-, inrikespaket- och internationella paketreferenser åtskilda.",
+      "sections": [
+        {
+          "heading": "Vet vad du spårar",
+          "paragraphs": [
+            "En produkt kan ha en inköpsorder, säljarens inrikesförsändelse och ett senare internationellt paket. Posterna hör ihop men är inte samma försändelse. Ett inrikes leveransmeddelande kan avse ankomst till lagret, inte till ditt hem.",
+            "Skapa en enkel referenslista allteftersom beställningen fortskrider: produkt-/ordernummer, säljarens spårningsreferens om den visas, lagerpost och internationellt paketnummer. Det gör det lättare att fråga om rätt steg utan att skicka supporten en skärmbild från en annan transport."
+          ]
+        },
+        {
+          "heading": "Läs inköpsstegen först",
+          "paragraphs": [
+            "LoloBuys officiella statusguide skiljer mellan väntande betalning, behandling, beställt och skickat av säljaren. Behandling gäller inköpsprocessen; det betyder inte att en internationell transportör flyttar ditt paket. Läs statusens ordalydelse innan du söker en utlandsspårning.",
+            "Samma guide beskriver mottagna varor och lager efter kontroll. Om inrikestransportören säger levererat men lagerkontrollen inte är färdig kan posterna beskriva efterföljande steg i stället för en motsägelse. Kontrollera produktposten och eventuella bekräftelsefrågor för nästa åtgärd."
+          ]
+        },
+        {
+          "heading": "Läs sedan paketstegen",
+          "paragraphs": [
+            "När du skapat ett internationellt paket har dess status en egen följd. Den officiella sidan beskriver väntar på betalning, behandling, packat och skickat. Den säger också att bevaka fraktändringar efter slutvägning. Ett skapat paket ska inte förväxlas med ett avsänt.",
+            "Använd den faktiska posten, inte bara förekomsten av ett referensnummer. En etikett eller ett nummer kan förberedas innan nästa synliga transportörshändelse. När du jämför system, notera vilken sida som säger att paketet överlämnats och vilken händelse transportören verkligen registrerat."
+          ],
+          "bullets": [
+            "Köp-/orderreferens",
+            "Internationell paketreferens",
+            "Transportörens spårningsnummer",
+            "Senaste händelse, plats och tid",
+            "Väntande bekräftelse eller betalning"
+          ]
+        },
+        {
+          "heading": "Tolka tysta perioder försiktigt",
+          "paragraphs": [
+            "Ett mellanrum mellan skanningar visar inte orsaken i sig. Kontrollera vald rutts aktuella uppskattning, senaste registrerade händelse och relevant officiellt meddelande. Gör inte en typisk tidslängd från ett gammalt inlägg till en utlovad tidsfrist för ditt paket.",
+            "Undvik att öppna olika spårningssidor om och om igen och tolka varje formulering som en ny händelse. För en daterad logg över betydande förändringar. Om aktuellt steg verkar inkonsekvent eller en åtgärd begärs, ta upp just den frågan via paket- eller ordersupporten."
+          ]
+        },
+        {
+          "heading": "Skicka en användbar supportfråga",
+          "paragraphs": [
+            "Ange order- eller paket-ID, spårningsnummer, senaste synliga händelse och frågan du vill ha svar på. Exempelvis: ”Paketposten säger skickat, men transportören visar ingen överlämning. Kan ni bekräfta överlämningsstatus?” Det är lättare att agera på än ”Var är allt?”",
+            "LoloBuys köpguide hänvisar till paketdelen för spårning efter avsändning. Använd om möjligt förfrågan kopplad till den berörda posten. Ta inte med ovidkommande kontouppgifter eller betalningsuppgifter i ett meddelande om en spårningshändelse."
+          ]
+        },
+        {
+          "heading": "Spara underlaget genom leveransen",
+          "paragraphs": [
+            "Kontrollera ytterförpackning och innehåll direkt när paketet anländer. Behåll förpackning, etikett och tydliga bilder om en produkt är felaktig, saknas eller är skadad. Jämför mottagna produkter med den slutliga paketlistan i stället för en tidigare urvalslista som kan innehålla produkter du inte skickade.",
+            "Den officiella sidan om paketservice efter leverans begär detaljerad beskrivning och bilder när en produkt är fel eller skadad, men dess tidsfrister motsäger varandra. Agera snabbt och kontrollera gällande frist i den aktuella supportprocessen. Vänta inte för att en allmän guide verkar ge längre tid."
+          ]
+        }
+      ],
+      "checklist": [
+        "Skilj inrikes och internationella referenser åt.",
+        "Kontrollera om paketet är skapat, packat eller avsänt.",
+        "Läs senaste händelse med tidsstämpel.",
+        "Skicka supporten en specifik, dokumenterad fråga.",
+        "Kontrollera leveransen direkt och spara relevant underlag."
+      ],
+      "sourceIds": [
+        "status",
+        "buying",
+        "claims",
+        "freight-balance"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 618
+    },
+    {
+      "slug": "lolobuy-returns-refunds",
+      "title": "LoloBuy-returer och återbetalningar: agera i rätt beställningssteg",
+      "description": "Förbered underlag, kontrollera säljarens villkor och förstå skillnaden mellan avbeställning, produktretur och paketreklamation.",
+      "keyword": "lolobuy returer återbetalningar",
+      "category": "Efterköpsservice",
+      "summary": "Ett returbeslut beror på produkten, säljaren och aktuellt beställningssteg. Tydligt underlag och en snabb begäran är mer användbara än att anta en regel för varje köp.",
+      "sections": [
+        {
+          "heading": "Identifiera processen du behöver",
+          "paragraphs": [
+            "Att avbeställa en ännu inte köpt order, returnera en produkt på lagret och anmäla problem efter internationell leverans är olika processer. Börja med att kontrollera aktuell order- eller paketstatus. Relevant knapp och information kan bero på hur långt affären har kommit.",
+            "LoloBuys avbeställnings- och retursidor beskriver flera statusberoende steg och säljarens medverkan. En begäran är inte samma sak som ett godkännande. Läs svaret i beställningen och håll reda på vad som godkänts, vad som väntar och vad du fortfarande behöver göra."
+          ]
+        },
+        {
+          "heading": "Bevara det exakta underlaget",
+          "paragraphs": [
+            "Spara produktadress, valt alternativ, orderbekräftelse och relevanta bilder tillsammans. Om problemet är fel storleksetikett, visa beställt alternativ och mottagen etikett. Om problemet är skada, visa tydlig helhetsbild och närbild av området. Beskriv skillnaden utan överdrift.",
+            "Exempelvis identifierar ”Beställde blå i L; lagerbilden visar en svart M-etikett” en kontrollerbar avvikelse. ”Dålig kvalitet” är betydligt mindre precist. Om bilderna är för otydliga för att fastställa problemet, begär det saknade underlaget innan du väljer lösning."
+          ],
+          "bullets": [
+            "Ordernummer och källannons",
+            "Valt alternativ och antal",
+            "Tydlig problembeskrivning",
+            "Relevanta bilder för just beställningen",
+            "Önskad åtgärd: klargörande, avbeställning, retur eller byte"
+          ]
+        },
+        {
+          "heading": "Läs behörighet och tidsfrist tillsammans",
+          "paragraphs": [
+            "Den officiella sidan om returgaranti beskriver villkor och en begärandeperiod efter inlagring. Den säger även att säljarens godkännande krävs. Andra hjälpsidor använder avvikande eller otydliga tidsformuleringar. Kontrollera tidsfristen och tjänsten på den verkliga beställningen och skicka frågan snabbt.",
+            "Förpackning och återförsäljningsbart skick kan spela roll. Be inte om borttagning av förpackning som kan behövas vid en godkänd retur innan du förstått villkoren. Använda produkter, specialbeställningar och andra kategorier kan ha andra regler; ett generellt löfte om villkorslösa returer vore missvisande."
+          ]
+        },
+        {
+          "heading": "Fråga vilka kostnader som gäller",
+          "paragraphs": [
+            "Returgarantins vägledning skiljer mellan orsaker till retur och diskuterar inrikestransport och serviceavgifter. Säljarens ursprungliga erbjudande om fri frakt gör inte nödvändigtvis senare retur gratis. Fråga om kostnaderna för din specifika begäran innan du godkänner fortsatt hantering.",
+            "Spara svaret i beställningsposten. Klargör om beloppet omfattar transport tillbaka till säljaren, eventuell ursprunglig inrikesfrakt och serviceavgift. Plattformens hanteringsförmån och säljarens fraktavgifter är olika saker och bör inte sammanfattas i ett otydligt löfte om ”gratis retur”."
+          ]
+        },
+        {
+          "heading": "Följ återbetalningens mål och status",
+          "paragraphs": [
+            "Den officiella returvägledningen beskriver normalt att godkända återbetalningar går till LoloBuy-kontots saldo, med ett särskilt undantag för vissa ursprungliga betalningssituationer. Kontotillgodohavande och pengar tillbaka till en extern betalningsmetod är olika resultat. Kontrollera vad som gäller innan du antar att pengarna syns på bankkontot.",
+            "Säljarens godkännande, mottagning av returvaran och färdig återbetalning kan vara separata milstolpar. Spara returpaketets referens om den finns. När du frågar om försening, ange det senaste färdiga steget i stället för att starta en ny begäran utan tidigare returuppgifter."
+          ]
+        },
+        {
+          "heading": "Hantera problem med levererade paket separat",
+          "paragraphs": [
+            "För problem efter leverans hänvisar officiella instruktioner till efterköpsansökan på det berörda paketet och begär detaljerad beskrivning och bilder. Spara ytterförpackning och paketetikett utöver produktbilder. De hjälper att koppla skada eller avvikelse till försändelsen.",
+            "Den officiella sidan innehåller motstridiga tidsfrister. Anmäl problemet snabbt och få gällande tidsgräns direkt från aktuell process. Guiden lovar inte godkännande, en universell återbetalningstid eller ersättning för varje sorts förlust."
+          ]
+        }
+      ],
+      "checklist": [
+        "Kontrollera aktuellt order- eller paketsteg.",
+        "Dokumentera exakt avvikelse eller skada.",
+        "Bekräfta behörighet, tidsfrist och förpackningsvillkor.",
+        "Fråga om alla tillämpliga returkostnader.",
+        "Följ godkännandet och återbetalningens faktiska mål."
+      ],
+      "sourceIds": [
+        "refunds",
+        "cancellation",
+        "returns",
+        "claims",
+        "changes"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 626
+    },
+    {
+      "slug": "lolobuy-order-budget",
+      "title": "LoloBuy-budget: se bortom produktpriset",
+      "description": "Skilj produktkostnad, inrikesfrakt, tillval, valutaomvandling och internationell frakt innan du bestämmer dig.",
+      "keyword": "lolobuy avgifter",
+      "category": "Budget",
+      "summary": "En användbar budget skiljer bekräftade belopp från uppskattningar. Håll produktköpet och den senare paketbetalningen synliga som två sammanhängande beslut.",
+      "sections": [
+        {
+          "heading": "Prissätt alternativet du faktiskt ska köpa",
+          "paragraphs": [
+            "Katalogpriset är en utgångspunkt för jämförelse. Vald färg, storlek, uppsättning eller mängd kan ha ett annat aktuellt pris på den officiella ordersidan. Kontrollera exakt konfiguration innan du budgeterar med den, särskilt om källannonsen visar ett prisintervall.",
+            "Jämför belopp och valuta i samma steg. Ett registrerat produktpris, kassans total och ett kortutdrag kan innehålla olika delar. Kalla inte skillnaden dold avgift förrän du kontrollerat antal, leverans, omvandling och eventuella valda tjänster."
+          ]
+        },
+        {
+          "heading": "Skilj de två huvudsakliga betalningsstegen",
+          "paragraphs": [
+            "LoloBuys officiella köpprocess tar först betalt för produkterna och kinesisk inrikesfrakt. Internationell frakt hanteras när de lagrade varorna lämnas in som paket. Den som bara budgeterar första betalningen kan nå lagersteget utan tillräckligt med pengar för att skicka beställningen.",
+            "Skapa en enkel tabell med varje kostnadsdel och markera bekräftad eller uppskattad. Håll tillvalstjänster synliga i stället för att gömma dem i produktsiffran. Möjliga destinationsavgifter behöver en egen rad eftersom de inte fastställs av katalogpriset."
+          ],
+          "bullets": [
+            "Valda produkter och antal",
+            "Kinesisk inrikesfrakt",
+            "Valda inköps- eller lagertjänster",
+            "Internationell frakt och packtjänster",
+            "Betalnings- eller växlingsavgifter som visas i kassan",
+            "Möjliga skatter eller hanteringsavgifter vid destinationen"
+          ]
+        },
+        {
+          "heading": "Läs villkoren för inrikesfrakt",
+          "paragraphs": [
+            "Den officiella hjälpen säger att produkter från samma säljare som skickas in och betalas tillsammans kan dela inrikesfrakt, med möjlig extra avgift för övervikt. Det är ett specifikt villkor, inte ett löfte om gemensam avgift för alla produkter i varukorgen.",
+            "Kontrollera vilken säljare som levererar varje produkt och hur ordern grupperas. Större antal kan också ändra säljarpris eller fraktvillkor, särskilt för grossistannonser. Spara aktuell orderberäkning i stället för att fördela en tidigare fraktavgift på orelaterade köp."
+          ]
+        },
+        {
+          "heading": "Kontrollera betalning och valuta",
+          "paragraphs": [
+            "Granska metoderna i den officiella kassan, valutan som debiteras och synliga avgifter innan du bekräftar. Tillgänglighet kan bero på konto och transaktion. En allmän hjälplista räcker inte för att fastställa att en viss metod erbjuds för din beställning i dag.",
+            "Om betalningsleverantören erbjuder valutaomvandling, jämför slutligt debiterat belopp och villkor som visas där. Spara kvittot tillsammans med beställningen. Lova inte en fast växelkurs och anta inte att föregående köps omvandling gäller nästa gång."
+          ]
+        },
+        {
+          "heading": "Se rabatter som något att verifiera",
+          "paragraphs": [
+            "LoloBuys kampanjvägledning beskriver att säljarens erbjudande anges i orderanmärkningar så att inköparen kan verifiera det. En banner eller sparad skärmbild bevisar inte att exakt alternativ och antal fortfarande kvalificerar. Anteckna villkoren och be om bekräftelse genom orderprocessen.",
+            "Håll en rabatt utanför den ordinarie budgeten tills den bekräftats. Förlita dig inte på en värvningskampanj, kupong eller fraktuppgift från en orelaterad guide. Denna webbplats har inte utlovat någon garanterad nykundskredit eller universellt fraktpris."
+          ]
+        },
+        {
+          "heading": "Använd ett intervall för osäker frakt",
+          "paragraphs": [
+            "Vikt och storlek är uppskattningar före packning. Den officiella fraktregleringen stämmer av första fraktbeloppet mot logistikleverantörens verkliga avgift. Lämna utrymme för en möjlig justering i stället för att använda hela budgeten till produkter.",
+            "Som planeringsövning kan bekräftade produkter och inrikesfrakt vara 100 enheter i en valuta medan aktuell fraktuppskattning är 30–45. Ditt preliminära totalbelopp blir 130–145 före övriga tillämpliga kostnader. Detta är hypotetiska siffror som visar metoden, inte LoloBuy-priser eller en offert."
+          ]
+        },
+        {
+          "heading": "Gör budgeten till ett beslutsverktyg",
+          "paragraphs": [
+            "Om trolig totalsumma överstiger gränsen, ändra urvalslistan före betalning. Att ta bort en lågprioriterad produkt kan vara enklare än att återfå pengar genom senare retur. Jämför värdet av hela den levererade beställningen, inte hur många billiga produkter du kan samla.",
+            "Efter avsändning ersätter du uppskattningar med slutligt registrerade avgifter. Spara skillnaden och förklaringen. Historiken hjälper framtida planering, men nästa gång kan varor, mått, rutter och växlingsvillkor ändå skilja sig."
+          ]
+        }
+      ],
+      "checklist": [
+        "Budgetera exakt valt alternativ.",
+        "Skilj inrikes och internationell frakt.",
+        "Notera tillval och debiterad valuta.",
+        "Använd bara bekräftade rabatter.",
+        "Behåll en reserv för osäker frakt och destinationskostnader."
+      ],
+      "sourceIds": [
+        "buying",
+        "domestic",
+        "promotions",
+        "freight-balance",
+        "wholesale"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 690
+    },
+    {
+      "slug": "lolobuy-seller-and-review-checks",
+      "title": "LoloBuy-fynd och omdömen: granska underlaget bakom en annons",
+      "description": "Bedöm källuppgifter, omdömens relevans och kontrollens begränsningar utan att se en symbol, bild eller ett betyg som garanti.",
+      "keyword": "är lolobuy pålitligt",
+      "category": "Köpbeslut",
+      "summary": "Den användbara frågan är vad underlaget faktiskt visar om den här affären. Ett plattformsnamn besvarar inte alla frågor om säljare, produkt eller paket.",
+      "sections": [
+        {
+          "heading": "Skilj plattform från produkt",
+          "paragraphs": [
+            "LoloBuys tjänsteinformation beskriver inköp av varor från tredjepartsplattformar, inte egen försäljning av varje listad produkt. Den oberoende produktlistan är ytterligare ett steg bort: den organiserar upptäckten. Håll rollerna tydliga när du avgör vem som kan besvara en fråga eller lösa ett problem.",
+            "En fungerande produktlänk bevisar inte äkthet, lager, passform eller framtida leverans. Ett klagomål om en säljare fastställer inte heller orsaken till alla plattformsproblem. Börja med det exakta påståendet du behöver bedöma och parten ansvarig för den delen av processen."
+          ]
+        },
+        {
+          "heading": "Kontrollera annonsen före populariteten",
+          "paragraphs": [
+            "Leta efter tydlig originaladress, konsekvent produktbeskrivning, identifierbara alternativ och användbara mått eller specifikationer. Jämför valt alternativ med galleriet. Ett lågt frånpris kan avse en annan del än produkten på huvudbilden.",
+            "Om flera säljare använder samma bilder visar bilderna ensamma inte om varorna tillverkas eller levereras på samma sätt. Skriv vad som saknas och ställ en fokuserad fråga. En popularitetssiffra eller ett känt batchnamn ersätter inte underlag om den exakta annonsen."
+          ],
+          "bullets": [
+            "Originalannons och säljaridentitet",
+            "Exakt alternativ och antal",
+            "Relevanta mått eller specifikationer",
+            "Aktuell returinformation",
+            "Obesvarade frågor som påverkar köpet"
+          ]
+        },
+        {
+          "heading": "Läs omdömen utifrån relevans",
+          "paragraphs": [
+            "Ett omdöme är mer användbart när datum, diskuterad produkt eller tjänst och underlaget bakom slutsatsen framgår. En kommentar om svarstid är något annat än ett omdöme om skopassform. En lyckad paketleverans bevisar inte att varje katalogprodukt är lämplig.",
+            "Leta efter redovisade affiliatelänkar, ersättningar eller andra relationer. De gör inte automatiskt omdömet falskt, men hjälper att förklara syftet. Gör inte en affiliatereklam, en enda berättelse eller ett obekräftat vittnesmål till en generell rekommendation."
+          ]
+        },
+        {
+          "heading": "Planera vad kontrollen kan visa",
+          "paragraphs": [
+            "Den officiella standardkontrollsidan beskriver utseendekontroller och viktiga undantag. Den lovar inte autentisering eller funktionstest av varje kategori. Förseglade varor och vissa professionella produkter hanteras annorlunda. Läs begränsningarna före köp om produktens värde beror på något tjänsten inte testar.",
+            "För ett plagg kan tydliga mått och synlig konstruktion besvara mycket. För elektronik eller säkerhetsrelaterade produkter visar en bild inte intern prestanda eller regelefterlevnad. Om nödvändigt underlag saknas ska osäkerheten ingå i köpbeslutet."
+          ]
+        },
+        {
+          "heading": "Håll betalning och kommunikation på rätt plats",
+          "paragraphs": [
+            "Använd den officiella webbplatsen för betalning och relevant order- eller paketförfrågan för transaktionsfrågor. Kontrollera domänen före inloggning. Katalogen behöver inte ditt lösenord, dina betalningsuppgifter eller privata samtal kopierade till produktsökningen.",
+            "Spara valt alternativ, betalning, säljarens klargöranden och överenskomna krav. Om något ändras, be att uppdateringen förs in i orderposten. En tydlig historik gör senare frågor lättare att lösa än spridda meddelanden utan produkt- eller transaktionsreferens."
+          ]
+        },
+        {
+          "heading": "Fatta ett beslut du kan förklara",
+          "paragraphs": [
+            "Skriv kort varför produkten uppfyller dina behov, vilket underlag som stödjer det, totalbudget och osäkerheter du accepterar. Om beslutet beror på en obesvarad fråga om storlek, skick eller returvillkor, lös den före betalning.",
+            "En liten första beställning kan vara ett valfritt sätt att begränsa beloppet medan du lär dig processen, men den certifierar inte varje säljare eller framtida leverans. Guiden är en metod för att bedöma underlag, inte en personlig testrapport eller garanti för att LoloBuy är riskfritt. Använd beställnings-, QC- och returguiderna för nästa konkreta kontroller."
+          ]
+        }
+      ],
+      "checklist": [
+        "Skilj katalogens, plattformens och säljarens roller.",
+        "Kontrollera exakt annons i stället för popularitet.",
+        "Bedöm omdömens datum, relevans och incitament.",
+        "Förstå vad kontrollen inte verifierar.",
+        "Behåll ett dokumenterat beslut och en orderhistorik."
+      ],
+      "sourceIds": [
+        "service",
+        "qc",
+        "buying",
+        "returns"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 626
+    }
+  ]
+}

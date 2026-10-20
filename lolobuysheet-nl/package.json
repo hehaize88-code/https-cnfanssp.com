@@ -5,9 +5,12 @@
   "private": true,
   "scripts": {
     "dev": "astro dev --host 0.0.0.0 --port 4173",
-    "build": "astro build",
+    "build": "node scripts/validate-content.mjs && astro build",
     "preview": "astro preview --host 0.0.0.0 --port 4173",
-    "sync:catalog": "node scripts/sync-catalog.mjs"
+    "sync:catalog": "node scripts/sync-full-catalog.mjs"
   },
-  "dependencies": {"astro": "7.4.1", "cheerio": "1.1.2"}
+  "dependencies": {
+    "astro": "7.4.1",
+    "cheerio": "1.1.2"
+  }
 }

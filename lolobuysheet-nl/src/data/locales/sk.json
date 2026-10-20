@@ -1,0 +1,1131 @@
+{
+  "ui": {
+    "register": "Prejsť na LoloBuy",
+    "language": "Jazyk",
+    "preview": "Náhľad návrhu",
+    "previewNote": "Prvý pohľad na lolobuysheet.nl",
+    "eyebrow": "DOBRÉ NÁLEZY. MENEJ PRECHÁDZANIA.",
+    "hero1": "Váš ďalší nález.",
+    "hero2": "Jeden prehľad.",
+    "intro": "Preskúmajte prehľad LoloBuy. Prezerajte si oblečenie, tenisky a doplnky, porovnajte ceny zo zdroja a otvorte svoj ďalší nález na LoloBuy.",
+    "search": "Hľadať v celom katalógu…",
+    "searchButton": "Hľadať produkty",
+    "photo": "Hľadanie podľa obrázka",
+    "popular": "Preskúmať:",
+    "tagline": "Jeden katalóg. Váš ďalší objav.",
+    "source": "Produkty z cnfanssp.com",
+    "independent": "Nezávislý web na objavovanie produktov na LoloBuy",
+    "browse": "Preskúmať prehľad produktov",
+    "browseSub": "O niečo menej hľadania. Oveľa viac nálezov.",
+    "all": "Všetky produkty",
+    "sort": "Zoradiť podľa",
+    "count": "produktov",
+    "view": "Zobraziť produkt",
+    "buy": "Otvoriť na LoloBuy",
+    "details": "Podrobnosti produktu",
+    "previous": "Predchádzajúca",
+    "next": "Ďalšia",
+    "page": "Strana",
+    "empty": "Vášmu hľadaniu nezodpovedajú žiadne produkty.",
+    "reset": "Vymazať filtre",
+    "sourceSearch": "Hľadať v úplnom zdrojovom katalógu",
+    "snapshot": "Aktuálny katalóg z cnfanssp.com. Ceny položiek v CNY nezahŕňajú dopravu ani poplatky za služby. Aktuálne možnosti a konečnú ponuku si overte na LoloBuy.",
+    "howTitle": "Od nálezu po rozbalenie.",
+    "howSub": "Začínate s LoloBuy? Postupujte podľa týchto troch krokov.",
+    "guides": "Trocha návodu vám uľahčí cestu.",
+    "guidesSub": "Čo je užitočné vedieť pred prvou objednávkou.",
+    "read": "Prečítať sprievodcu",
+    "allGuides": "Všetky návody",
+    "cta": "Našli ste nového favorita?",
+    "ctaSub": "Otvorte ho na LoloBuy a zaobstarajte si ho.",
+    "ctaButton": "Preskúmať všetky produkty",
+    "footer": "Nezávislý web na objavovanie produktov. Nie sme oficiálny web LoloBuy. Ponuky a fotografie produktov pochádzajú z cnfanssp.com. Nákupy sa dokončujú na LoloBuy.",
+    "back": "Späť na prehľad produktov",
+    "sourceListing": "Pôvodná ponuka v zdroji",
+    "seller": "Ponuka predajcu",
+    "sourcePrice": "Cena v zdroji · CNY",
+    "productId": "ID produktu predajcu",
+    "gallery": "Fotografie z ponuky",
+    "qc": "Fotografie kontroly kvality",
+    "qcNote": "Zdroj poskytuje fotografie tohto produktu z ponuky. Nejde o overené skladové fotografie QC. Pred odoslaním si pozrite kontrolu kvality priloženú k vlastnej objednávke na LoloBuy.",
+    "priceNote": "Iba cena položky. Pred objednaním na LoloBuy overte aktuálnu skladovú dostupnosť, varianty, dopravu a poplatky za služby.",
+    "photoTitle": "Nájdite ho podľa fotky.",
+    "photoIntro": "Pomocou zdrojového katalógu vyhľadajte a porovnajte produkty.",
+    "photoState": "Hľadanie podľa obrázka v zdroji",
+    "photoNote": "Na cnfanssp.com nebola overená verejná služba hľadania podľa obrázka. Kým nebude zdrojová služba dostupná, nahrávanie fotografií neprijímame.",
+    "browseInstead": "Prezerať produkty",
+    "faqTitle": "LoloBuy: odpovede pred objednaním.",
+    "faqIntro": "Spracované podľa oficiálnych stránok pomoci LoloBuy. Ak sa oficiálne stránky líšia, odpoveď vysvetľuje, čo treba overiť.",
+    "guideLabel": "PRAKTICKÝ SPRIEVODCA",
+    "guideTitle": "Vaša prvá objednávka na LoloBuy zrozumiteľne.",
+    "guideIntro": "Od nájdenia produktu po jeho kontrolu v sklade: praktický úvod.",
+    "updated": "Overené v októbri 2026",
+    "related": "Ďalšie možnosti objavovania",
+    "home": "Domov",
+    "aboutPhotos": "Obrázky zo zdrojovej ponuky",
+    "catalogLive": "Aktuálny zdrojový katalóg",
+    "catalogCached": "Zobrazuje sa posledná úplná kópia zdroja.",
+    "catalogLoading": "Aktualizácia zdrojového katalógu…",
+    "catalogError": "Zdroj je dočasne nedostupný. Skúste to znova alebo otvorte pôvodný katalóg.",
+    "retry": "Skúsiť znova",
+    "loading": "Načítava sa…",
+    "productError": "Tento produkt sa nepodarilo načítať. Skúste to znova alebo overte pôvodnú ponuku.",
+    "pageOf": "z",
+    "jump": "Prejsť na stranu",
+    "go": "Prejsť",
+    "articlesLabel": "Články",
+    "articlesTitle": "Nakupovanie na LoloBuy podrobne.",
+    "articlesIntro": "Desať praktických sprievodcov na základe oficiálnej pomoci LoloBuy. Hľadajte produkty, kontrolujte QC, zostavte rozpočet a plánujte dopravu s jasnejšími informáciami.",
+    "articleSources": "Oficiálne zdroje",
+    "reviewed": "Overené 20. októbra 2026",
+    "readArticle": "Prečítať článok",
+    "allArticles": "Všetky články",
+    "contents": "Na tejto stránke",
+    "checklist": "Praktický kontrolný zoznam",
+    "summary": "Stručný prehľad",
+    "reading": "min čítania",
+    "faqSearch": "Hľadať otázky…",
+    "noQuestions": "Žiadne zodpovedajúce otázky.",
+    "officialHelp": "Prečítať oficiálne pokyny",
+    "skip": "Prejsť na obsah",
+    "menu": "Ponuka",
+    "close": "Zavrieť",
+    "languageSearch": "Vyberte svoj jazyk",
+    "catalogNote": "Ceny a dostupnosť sa môžu meniť.",
+    "articleFooter": "Nezávislé redakčné rady. Pred platbou alebo odoslaním overte podmienky zobrazené pri vašej objednávke.",
+    "notFound": "Produkt sa nenašiel",
+    "showMore": "Zobraziť všetko",
+    "findSteps": "NÁJSŤ. OVERIŤ. OBJEDNAŤ.",
+    "nextFind": "ĎALŠÍ NÁLEZ JE VÁŠ.",
+    "liveLabel": "Aktualizované zo zdroja",
+    "faqCount": "overených odpovedí",
+    "catalogue": "Katalóg",
+    "nav": [
+      "Prehľad produktov",
+      "Ako to funguje",
+      "Návody",
+      "Články",
+      "Časté otázky"
+    ],
+    "sorts": [
+      "Odporúčané",
+      "Najnovšie",
+      "Najprezeranejšie",
+      "Cena: od najnižšej",
+      "Cena: od najvyššej"
+    ],
+    "categories": {
+      "shoes": "Obuv",
+      "hoodies": "Mikiny",
+      "tshirts": "Tričká",
+      "jackets": "Bundy",
+      "pants": "Nohavice a šortky",
+      "headwear": "Pokrývky hlavy",
+      "accessories": "Doplnky",
+      "sets": "Súpravy s kraťasmi",
+      "electronics": "Elektronika",
+      "other": "Ostatné produkty",
+      "jerseys": "Dresy"
+    },
+    "steps": [
+      [
+        "01",
+        "Nájdite niečo, čo sa vám páči",
+        "Prezerajte si kategórie a overte pôvodnú ponuku, veľkosť a fotografie produktu."
+      ],
+      [
+        "02",
+        "Otvorte produkt na LoloBuy",
+        "Pomocou odkazu vyberte varianty a overte aktuálnu cenu."
+      ],
+      [
+        "03",
+        "Skontrolujte pred odoslaním",
+        "Postupujte podľa skladového procesu LoloBuy, pozrite si dostupné QC a vyberte dopravu."
+      ]
+    ],
+    "footerLinks": [
+      "Prehľad produktov",
+      "Sprievodca nákupom",
+      "Hľadanie podľa obrázka",
+      "Časté otázky"
+    ]
+  },
+  "faqs": [
+    {
+      "id": "what-is-lolobuy",
+      "category": "Začíname",
+      "question": "Čo robí LoloBuy?",
+      "answer": "LoloBuy funguje ako nákupný sprostredkovateľ: poskytnete ponuku predajcu, vyberiete tovar, zaplatíte nákup a vnútroštátnu dopravu v Číne a pred dohodnutím medzinárodnej dopravy skontrolujete skladovú fázu. Tovar dodáva predajca. Odkaz na produkt alebo položka v prehľade je východiskom na overenie objednávky, nie potvrdením aktuálnej skladovej dostupnosti.",
+      "sourceIds": [
+        "buying",
+        "service"
+      ]
+    },
+    {
+      "id": "place-order",
+      "category": "Začíname",
+      "question": "Ako objednať cez LoloBuy?",
+      "answer": "Vložte pôvodný odkaz na produkt do LoloBuy, skontrolujte načítanú ponuku a vyberte presnú farbu, veľkosť a množstvo. Pred platbou skontrolujte cenu tovaru, vnútroštátnu dopravu a požadované služby. Oficiálny sprievodca LoloBuy následne rozlišuje nákup, kontrolu v sklade a zadanie medzinárodnej zásielky ako samostatné fázy.",
+      "sourceIds": [
+        "buying"
+      ]
+    },
+    {
+      "id": "manual-order",
+      "category": "Začíname",
+      "question": "Čo ak LoloBuy nedokáže načítať môj odkaz na produkt?",
+      "answer": "Oficiálny sprievodca nákupom opisuje formulár na ručné zadanie sprostredkovaného nákupu, ak automatické načítanie nie je dostupné. Vyplňte skutočné údaje o produkte a vybrané varianty a pred odoslaním objednávku skontrolujte. Nenahrádzajte ID položky trhoviska interným číslom stránky z prehľadu: označujú rôzne záznamy.",
+      "sourceIds": [
+        "buying"
+      ]
+    },
+    {
+      "id": "domestic-delivery",
+      "category": "Objednávky a platby",
+      "question": "Môžu mať viaceré položky jeden spoločný poplatok za dopravu v Číne?",
+      "answer": "Pomoc LoloBuy k vnútroštátnej doprave opisuje jeden poplatok pri spoločnom odoslaní a zaplatení produktov od rovnakého predajcu. Nezvyčajne objemná alebo ťažká objednávka môže vyžadovať doplatok dopravy. Toto usporiadanie automaticky nezlučuje poplatky rôznych predajcov ani nezahŕňa medzinárodnú dopravu.",
+      "sourceIds": [
+        "domestic"
+      ]
+    },
+    {
+      "id": "seller-promotion",
+      "category": "Objednávky a platby",
+      "question": "Ako požiadať LoloBuy o uplatnenie zľavy predajcu?",
+      "answer": "Skutočnú akciu alebo ponuku bezplatnej vnútroštátnej dopravy uveďte do poznámok objednávky, aby ju nákupný sprostredkovateľ mohol overiť u predajcu. Ak ste informáciu o akcii vynechali, oficiálna pomoc opisuje aj použitie Order Enquiry. Uvádzanú zľavu treba overiť; prehľad produktov nemôže sľúbiť, že stará ponuka stále platí.",
+      "sourceIds": [
+        "promotions"
+      ]
+    },
+    {
+      "id": "change-order",
+      "category": "Objednávky a platby",
+      "question": "Môžem po objednaní zmeniť veľkosť alebo farbu?",
+      "answer": "LoloBuy uvádza, že pred odoslaním tovaru predajcom môže zmenu vyjednať. Po odoslaní pomoc opisuje prípadné vrátenie zo skladu a následnú novú objednávku s nákladmi na spätnú dopravu. Požiadavku pošlite čo najskôr ku konkrétnej objednávke a pred predpokladom, že bol variant zmenený, počkajte na prijatie žiadosti.",
+      "sourceIds": [
+        "changes"
+      ]
+    },
+    {
+      "id": "confirmation-message",
+      "category": "Objednávky a platby",
+      "question": "Čo znamená Pending for Confirmation?",
+      "answer": "Niektoré údaje objednávky vyžadujú vaše potvrdenie. Prečítajte si správu pripojenú k objednávke a odpovedzte na ňu. Oficiálna pomoc odkazuje otázky k zakúpenému tovaru do Shopping Agent Order a otázky v skladovej fáze do My Warehouse, kde môžete byť vyzvaní na prijatie alebo vrátenie. Názvy ponúk sa môžu líšiť; čakanie na aktualizáciu sledovania žiadosť nevybaví.",
+      "sourceIds": [
+        "confirmation",
+        "confirmation-path"
+      ]
+    },
+    {
+      "id": "received-in-stock",
+      "category": "Sklad a kontrola kvality",
+      "question": "Aký je rozdiel medzi Received a In Stock?",
+      "answer": "Oficiálny prehľad stavov používa Received, keď sklad prevzal zásielku predajcu a prebieha kontrola. In Stock znamená, že kontrola kvality sa skončila a položky sú uložené vo vašom inventári. Prijatie do skladu teda neznamená, že už bola dokončená vaša kontrola QC alebo medzinárodná preprava.",
+      "sourceIds": [
+        "status"
+      ]
+    },
+    {
+      "id": "qc-checks",
+      "category": "Sklad a kontrola kvality",
+      "question": "Čo kontroluje štandardné QC?",
+      "answer": "Štandardná kontrola LoloBuy overuje viditeľné údaje objednávky, napríklad vyhotovenie, množstvo, farbu, veľkosť, model a zjavné poškodenie. Skutočne zvolenú kontrolnú službu posudzujte spolu s fotografiami svojej objednávky. Vizuálna kontrola nezaručuje pravosť, presné sadnutie ani dlhodobú odolnosť.",
+      "sourceIds": [
+        "qc"
+      ]
+    },
+    {
+      "id": "inspection-exclusions",
+      "category": "Sklad a kontrola kvality",
+      "question": "Sú zapečatené výrobky a elektronika úplne testované?",
+      "answer": "Nie. Pravidlá kontroly uvádzajú výnimky pre zapečatené výrobky a výslovne vylučujú testovanie pravosti, funkčnosti a kvality odbornej elektroniky a súvisiaceho tovaru. Pri možnosti bez kontroly sklad overuje obmedzenia, ale neoveruje samotný produkt ani neposkytuje fotografie QC. Skôr než sa spoľahnete na výsledok kontroly, overte zvolenú službu.",
+      "sourceIds": [
+        "qc"
+      ]
+    },
+    {
+      "id": "qc-photos",
+      "category": "Sklad a kontrola kvality",
+      "question": "Môžem požiadať o ďalšie fotografie QC?",
+      "answer": "Prehľad služieb opisuje ďalšie fotografie na vyžiadanie; stránka fotografických služieb ponúka aj Secondary Quality Inspection, ak bola kontrola pred uskladnením vynechaná. Oficiálne stránky uvádzajú rôzne štandardné počty fotografií. Overte vybranú službu a požiadajte o konkrétny chýbajúci záber alebo meranie namiesto predpokladu, že každá objednávka obsahuje rovnaký počet snímok.",
+      "sourceIds": [
+        "service",
+        "photos",
+        "qc"
+      ]
+    },
+    {
+      "id": "storage-period",
+      "category": "Sklad a kontrola kvality",
+      "question": "Ako dlho môžu položky zostať v sklade LoloBuy?",
+      "answer": "Samostatná stránka uskladnenia a aktuálny sprievodca stavmi uvádzajú pri bežne uskladnenom tovare 180 dní, zatiaľ čo starší sprievodca nákupom stále uvádza 90. Neštandardné nespárované zásielky majú vlastné pravidlá. Overte lehotu zobrazenú pri svojej položke a zabezpečte dopravu alebo prípadné predĺženie pred jej uplynutím; nespoliehajte sa iba na staršieho sprievodcu.",
+      "sourceIds": [
+        "storage",
+        "status",
+        "buying"
+      ]
+    },
+    {
+      "id": "consolidate",
+      "category": "Doprava a sledovanie",
+      "question": "Môžem odoslať niekoľko nákupov v jednej zásielke?",
+      "answer": "Sprievodca nákupom opisuje výber uložených položiek v My Warehouse a ich spoločné zadanie na doručenie. Overte, že všetky vybrané položky prešli potrebnou kontrolou a že dostupná prepravná služba prijíma výslednú zásielku. Zlúčenie položiek mení zabalený balík; nezaručuje nižšiu celkovú cenu prepravy.",
+      "sourceIds": [
+        "buying"
+      ]
+    },
+    {
+      "id": "remove-packaging",
+      "category": "Doprava a sledovanie",
+      "question": "Môže LoloBuy pred odoslaním odstrániť škatule?",
+      "answer": "Službu Package Removal možno vybrať pri zadaní doručenia. Oficiálny opis uvádza, že nevyhnutné ochranné obaly zostávajú zachované. Ak potrebujete pôvodné škatule ako súčasť darčeka, na skladovanie alebo prípadné vrátenie, zvážte to pred voľbou odstránenia. Konečný spôsob zabalenia aj prepravné závisia od tovaru a zvolenej zásielky.",
+      "sourceIds": [
+        "packaging"
+      ]
+    },
+    {
+      "id": "shipping-price",
+      "category": "Doprava a sledovanie",
+      "question": "Prečo sa môže konečné prepravné líšiť od odhadu?",
+      "answer": "Počiatočné prepravné vychádza z odhadovanej hmotnosti, vybranej destinácie a prepravnej služby. Balenie môže zmeniť hmotnosť aj rozmery a konečné vyúčtovanie určuje poplatok dopravcu. LoloBuy opisuje vrátenie preplatku alebo požiadavku na doplatok, ak sa skutočné prepravné líši. Skontrolujte konečnú ponuku zásielky a správu v účte.",
+      "sourceIds": [
+        "weight",
+        "freight-balance"
+      ]
+    },
+    {
+      "id": "volumetric-weight",
+      "category": "Doprava a sledovanie",
+      "question": "Čo je objemová hmotnosť?",
+      "answer": "Prepočítava rozmery balíka na hmotnosť používanú pri účtovaní objemného tovaru. Pomoc LoloBuy rozlišuje vzorce pre jednotlivé prepravné služby a uvádza, že účtovanou hmotnosťou môže byť vyššia zo skutočnej a objemovej hmotnosti. Použite deliteľ a pravidlá zaokrúhľovania uvedené pri vybranej službe, nie univerzálne tvrdenie o cene za kilogram.",
+      "sourceIds": [
+        "weight"
+      ]
+    },
+    {
+      "id": "supplemental-payment",
+      "category": "Doprava a sledovanie",
+      "question": "Čo mám urobiť, keď príde upozornenie na doplatok dopravy?",
+      "answer": "Otvorte príslušnú zásielku a skontrolujte upravený poplatok aj požiadavku na potvrdenie. Pravidlá LoloBuy pre doplatky používajú rôzne hranice spracovania a zahŕňajú situácie, keď môže byť zásielka pozastavená alebo zrušená. Reagujte v lehote zobrazenej pri svojej zásielke a uhraďte prípadný odsúhlasený zostatok; nepovažujte pôvodný odhad za konečnú cenu.",
+      "sourceIds": [
+        "freight-balance"
+      ]
+    },
+    {
+      "id": "tracking",
+      "category": "Doprava a sledovanie",
+      "question": "Kde môžem sledovať medzinárodnú zásielku?",
+      "answer": "Oficiálny sprievodca nákupom odkazuje používateľov po odoslaní do My LoloBuy → Parcels. Prehľad stavov rozlišuje Packed a Shipped: zabalená zásielka môže stále čakať na potvrdenie konečnej hmotnosti, zatiaľ čo Shipped znamená, že má sledovacie číslo a bola odovzdaná dopravcovi. Okrem stavu v účte si prečítajte aj najnovšiu udalosť dopravcu.",
+      "sourceIds": [
+        "buying",
+        "status"
+      ]
+    },
+    {
+      "id": "cancellation",
+      "category": "Vrátenie a popredajné služby",
+      "question": "Môžem objednávku zrušiť pred doručením do skladu?",
+      "answer": "Zrušenie závisí od aktuálnej fázy objednávky. Použite možnosť zrušenia alebo vrátenia/refundácie pri príslušnej objednávke. Po zakúpení položky môže byť potrebné potvrdenie predajcu; odoslaná žiadosť nie je schválená refundácia. Pred náhradným nákupom skontrolujte odpoveď v danej objednávke.",
+      "sourceIds": [
+        "cancellation",
+        "refunds"
+      ]
+    },
+    {
+      "id": "eligible-return",
+      "category": "Vrátenie a popredajné služby",
+      "question": "Na čo sa vzťahuje päťdňové pravidlo vrátenia LoloBuy?",
+      "answer": "Samostatné pravidlo opisuje 120-hodinové obdobie na podanie žiadosti, ktoré pri oprávnenom tovare začína nasledujúcou celou hodinou po stave Stocked in. Naďalej platí súhlas predajcu, stav položky a požadovaný obal. Vrátenie bez vady môže zahŕňať obe vnútroštátne prepravné cesty aj manipulačný poplatok. Čo najskôr overte oprávnenosť a skutočnú stránku žiadosti.",
+      "sourceIds": [
+        "returns"
+      ]
+    },
+    {
+      "id": "refund-destination",
+      "category": "Vrátenie a popredajné služby",
+      "question": "Kam sa posiela schválená refundácia?",
+      "answer": "Pomoc k vráteniu všeobecne opisuje pripísanie schválených refundácií na zostatok účtu LoloBuy. Osobitne uvádza úzku výnimku vrátenia pôvodným spôsobom platby pre niektoré objednávky PayPal čakajúce na schválenie. Nejde o prísľub, že každá refundácia pôjde priamo na bankovú kartu, ani o dôkaz súčasnej dostupnosti všetkých platobných metód.",
+      "sourceIds": [
+        "refunds"
+      ]
+    },
+    {
+      "id": "delivery-problem",
+      "category": "Vrátenie a popredajné služby",
+      "question": "Čo mám robiť, keď je doručený balík poškodený alebo obsahuje nesprávny tovar?",
+      "answer": "Otvorte dotknutú zásielku v My LoloBuy → Parcels a použite Apply After-sales. Opíšte problém a uchovajte jasné fotografie balíka aj produktu. Oficiálny článok uvádza rozporné lehoty na reklamáciu vrátane skoršieho upozornenia, preto problém nahláste ihneď a vyžiadajte si potvrdenie pre konkrétny prípad namiesto čakania na všeobecnú lehotu.",
+      "sourceIds": [
+        "claims"
+      ]
+    },
+    {
+      "id": "sizing",
+      "category": "Výber produktov",
+      "question": "Ako vybrať veľkosť oblečenia alebo obuvi?",
+      "answer": "Veľkostný prehľad LoloBuy upozorňuje, že štandardy obchodov sa môžu líšiť. Porovnajte tabuľku meraní skutočného predajcu, jednotky a vybraný variant so svojimi mierami alebo dobre padnúcim odevom. Prevodné tabuľky sú orientačné, nie záruka, že rovnaký štítok sedí u každého predajcu. Na chýbajúce rozmery sa pýtajte pred objednaním.",
+      "sourceIds": [
+        "sizing"
+      ]
+    },
+    {
+      "id": "1688",
+      "category": "Výber produktov",
+      "question": "Platia pre objednávky z 1688 rovnaké pravidlá nákupu a kontroly?",
+      "answer": "Oficiálny sprievodca pre 1688 vyžaduje minimálne množstvo stanovené predajcom; ceny aj vnútroštátne prepravné sa môžu líšiť podľa množstva. Kontrolné pravidlá rozlišujú vzorkovo kontrolované produkty typu A a produkty typu B bez štandardného QC. Pred platbou overte množstvo, rozsah kontroly a podmienky vrátenia namiesto predpokladu rovnakých pravidiel ako pri maloobchodnej objednávke.",
+      "sourceIds": [
+        "wholesale",
+        "qc"
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "slug": "using-lolobuy-spreadsheet",
+      "title": "Ako používať prehľad LoloBuy: premeňte odkaz na produkt na užitočný užší výber",
+      "description": "Nájdite produkty podľa kategórie, porovnajte presnú ponuku a uložte údaje potrebné pred otvorením položky na LoloBuy.",
+      "keyword": "prehľad produktov LoloBuy",
+      "category": "Začíname",
+      "summary": "Užitočný prehľad zužuje hľadanie. Užitočný užší výber zaznamenáva presnú položku, variant a nezodpovedané otázky potrebné pre objednávku.",
+      "sections": [
+        {
+          "heading": "Začnite nákupným rozhodnutím, nie dlhým zoznamom",
+          "paragraphs": [
+            "Prehľad LoloBuy je nástroj na objavovanie produktov. Môžete prezerať kategóriu, pozerať obrázky a nasledovať ponuku k ďalšiemu kroku. Neznamená to, že vydavateľ katalógu kúpil každú položku, otestoval predajcu alebo rezervoval vašu veľkosť. Každý riadok berte ako podnet, ktorý treba overiť.",
+            "Pred hľadaním si napíšte typ požadovaného produktu, dôležité rozmery a približný rozpočet na položku. Hľadanie čiernej mikiny na zips je užitočnejšie než zhromažďovanie všetkých atraktívnych odkazov na oblečenie. Užšia otázka tiež pomáha rozpoznať, keď v ponuke chýbajú zásadné informácie."
+          ]
+        },
+        {
+          "heading": "Zachovajte pôvodnú identitu produktu",
+          "paragraphs": [
+            "Číslo v adrese katalógovej stránky môže byť miestne číslo záznamu. Môže sa líšiť od ID produktu trhoviska použitého v nákupnom odkaze. Nemeňte čísla ručne, aby odkaz vyzeral správne. Použite zodpovedajúce tlačidlo produktu a porovnajte otvorenú položku s ponukou, ktorú ste chceli kúpiť.",
+            "Uložte pôvodnú URL predajcu s vybraným variantom. Snímka obrazovky môže zachovať užitočný pohľad, ale menej pomôže, keď neviete, ku ktorému predajcovi, veľkosti alebo farbe patrí. Ak odkaz otvorí iný produkt alebo prázdnu ponuku, zastavte sa a pred pokračovaním ho overte."
+          ]
+        },
+        {
+          "heading": "Porovnávajte porovnateľné varianty",
+          "paragraphs": [
+            "Východisková cena môže platiť pre najlacnejší variant, jediný doplnok alebo iné množstvo. Naprieč ponukami porovnávajte rovnakú konfiguráciu. Dvojdielna súprava a samostatný top nie sú zmysluplným cenovým porovnaním, aj keď ich náhľadové obrázky vyzerajú podobne.",
+            "Overte, či galéria ukazuje vybranú farbu a či existuje veľkostná tabuľka. Rovnaké fotografie u rôznych predajcov nedokladajú rovnaké spracovanie ani skladovú dostupnosť. Porovnanie by malo zaznamenať prítomné dôkazy a viditeľne ponechať medzeru tam, kde niečo dôležité neviete."
+          ],
+          "bullets": [
+            "Presná položka a URL predajcu",
+            "Vybraná veľkosť, farba a množstvo",
+            "Aktuálna cena daného variantu",
+            "Rozmery alebo odkaz na veľkostnú tabuľku",
+            "Jedna nevyriešená otázka pred objednaním"
+          ]
+        },
+        {
+          "heading": "Pokračujte oficiálnym nákupným postupom",
+          "paragraphs": [
+            "Sprievodca nákupom LoloBuy opisuje zadanie odkazu z trhoviska, výber dostupných variantov a zaplatenie položky aj vnútroštátnej dopravy. Opisuje tiež ručný formulár, ak údaje o produkte nemožno načítať automaticky. Úspešné otvorenie odkazu je preto iba začiatkom kontroly objednávky.",
+            "Na oficiálnej produktovej stránke znovu overte obrázok, text variantu a množstvo. Katalóg nemôže zaručiť aktuálnu zásobu ani uchovať voľbu, ktorú ste nevybrali pri platení. Osobitné požiadavky píšte dostatočne konkrétne, aby podľa nich mohol nákupca postupovať, napríklad presný názov farby alebo otázku na rozmer."
+          ]
+        },
+        {
+          "heading": "Oddeľte fotografie ponuky od vlastného QC",
+          "paragraphs": [
+            "Galéria predajcu vysvetľuje ponuku. Historická skladová fotografia môže ukazovať položku niekoho iného. Kontrolné snímky pripojené k vašej objednávke sú podkladom, ktorý treba posúdiť pred odoslaním tohto tovaru do zahraničia. Tieto tri druhy obrázkov odpovedajú na rôzne otázky a nie sú zameniteľné.",
+            "Užší výber by mal zostať spojený s objednávkou. Po príchode položky do skladu porovnajte zaznamenaný variant s viditeľným veľkostným štítkom, farbou a množstvom. Nesúlad sa vysvetľuje ľahšie, keď máte pokope pôvodný výber aj číslo objednávky."
+          ]
+        },
+        {
+          "heading": "Využite užší výber aj po nákupe",
+          "paragraphs": [
+            "Ponechajte iba najsilnejších kandidátov a zaznamenajte, prečo každý v porovnaní obstál. Jedna mikina môže mať napríklad jasnejšiu tabuľku rozmerov, zatiaľ čo pri inej zostáva nevyriešený detail materiálu. Súbor odkazov sa tak zmení na rozhodnutie, ku ktorému sa môžete vrátiť bez opakovania celého prieskumu.",
+            "Pred nákupom si prečítajte sprievodcov objednávaním a rozpočtom. Pred zadaním zásielky si prečítajte sprievodcov QC a dopravou. Prehľad je najužitočnejší, keď prepája tieto fázy, namiesto prezentovania ceny položky ako úplných nákladov doručenej objednávky."
+          ]
+        }
+      ],
+      "checklist": [
+        "Uložte presnú zdrojovú URL a variant.",
+        "Porovnávajte zodpovedajúce množstvá a konfigurácie.",
+        "Vyjasnite chýbajúce rozmery pred platbou.",
+        "Skontrolujte načítanú ponuku na LoloBuy.",
+        "Pred odoslaním posúďte QC konkrétnej objednávky."
+      ],
+      "sourceIds": [
+        "buying",
+        "qc"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 491
+    },
+    {
+      "slug": "how-to-order-on-lolobuy",
+      "title": "Ako objednať na LoloBuy: produktové odkazy, varianty a fázy platby",
+      "description": "Prejdite objednávaním od odkazu na trhovisko po kontrolu v sklade a samostatné zadanie medzinárodnej zásielky.",
+      "keyword": "ako objednať na LoloBuy",
+      "category": "Objednávanie",
+      "summary": "Pred platbou overte položku, pred prepravou skladové podklady a pred odoslaním ponuku zásielky. Každá fáza odpovedá na inú otázku.",
+      "sections": [
+        {
+          "heading": "Začnite na oficiálnom webe",
+          "paragraphs": [
+            "Na registráciu, prístup k účtu a platby používajte oficiálny web LoloBuy. Tento nezávislý katalóg pomáha s hľadaním; nezbiera vaše heslo ani nespracúva objednávku. Pri otvorení produktu overte cieľový web a nákupnú komunikáciu uchovávajte pri príslušnej objednávke.",
+            "Oficiálny sprievodca nákupom opisuje začiatok s produktovým odkazom z podporovaného čínskeho trhoviska. Vybranú položku dodáva predajca stojaci za ponukou. Na tomto rozlíšení záleží, pretože nákupná služba a predajca neovládajú rovnaké časti transakcie."
+          ]
+        },
+        {
+          "heading": "Skontrolujte načítaný produkt",
+          "paragraphs": [
+            "Vložte pôvodný produktový odkaz alebo použite zodpovedajúce tlačidlo LoloBuy v katalógu. Pred výberom variantov porovnajte výslednú stránku so zdrojom. Skontrolujte hlavný obrázok, názov položky, dostupné údaje o predajcovi, vybranú farbu, veľkosť a množstvo. Nespoliehajte sa iba na obrázok.",
+            "Ak sa zobrazí ručný formulár sprostredkovaného nákupu, oficiálny sprievodca hovorí zadať údaje objednávky ručne. Vyplňte ich podľa skutočnej ponuky namiesto odhadovania chýbajúcich variantov. Ak je požadovaný detail nejasný, vyjasnite ho otázkou pri objednávke, skôr než požiadate nákupcu o pokračovanie."
+          ],
+          "bullets": [
+            "Produkt zodpovedá pôvodnej URL",
+            "Text variantu zodpovedá požadovanej farbe a veľkosti",
+            "Množstvo a jednotková cena sa vzťahujú na rovnakú konfiguráciu",
+            "Každá osobitná požiadavka je napísaná jasne"
+          ]
+        },
+        {
+          "heading": "Pochopte prvú platbu",
+          "paragraphs": [
+            "Oficiálny nákupný postup oddeľuje položku a čínsku vnútroštátnu dopravu od neskoršej medzinárodnej zásielky. Prvú platbu kontrolujte položku po položke. Výber destinácie pri nákupe neznamená, že zobrazený súčet zahŕňa všetky poplatky potrebné na doručenie tovaru do tejto destinácie.",
+            "Platobné metódy, meny a voliteľné služby overujte pri aktuálnom platení. Všeobecný zoznam v pomoci nesľubuje, že každá metóda je dostupná pre váš účet alebo objednávku. Uložte doklad o platbe a porovnajte ho so stavom objednávky namiesto opakovaného platenia pre pomalé obnovenie stránky."
+          ]
+        },
+        {
+          "heading": "Odpovedajte na otázky k objednávke",
+          "paragraphs": [
+            "LoloBuy používa stav „Pending for Confirmation“ pre informácie, ktoré treba overiť. Pomoc odkazuje kupujúceho na pokyny pri objednávke. Prečítajte si skutočnú otázku a odpovedzte na daný problém: môže ovplyvniť, či nákupný tím môže pokračovať.",
+            "Oficiálne pokyny k zmenám rozlišujú položky, ktoré predajca ešte neodoslal, a už odoslaný tovar. Pred odoslaním môže nákupca požiadať predajcu o zmenu; po odoslaní môže byť potrebné vrátenie a nová objednávka. Požadovaná zmena nie je dokončená, kým ju nepotvrdí záznam objednávky."
+          ]
+        },
+        {
+          "heading": "Skontrolujte príchod a kontrolu",
+          "paragraphs": [
+            "Príchod do skladu a dokončená kontrola sú odlišné míľniky. Nájdite položku v skladovej časti a porovnajte fotografie a zaznamenaný variant so svojím nákupom. Najprv overte identitu, potom viditeľné detaily, na ktorých vám záleží. Zjavný nesúlad vyriešte pred zaradením položky do medzinárodnej zásielky.",
+            "Nepredpokladajte rovnakú kontrolu pri všetkých produktoch. Oficiálne pravidlá štandardnej kontroly opisujú obmedzenia pre zapečatené výrobky a osobitné postupy pri niektorých objednávkach 1688. Ak potrebujete konkrétny rozmer alebo záber, overte dostupnosť pri svojej objednávke namiesto považovania všeobecnej snímky QC za dôkaz všetkého."
+          ]
+        },
+        {
+          "heading": "Zadanie zásielky posudzujte samostatne",
+          "paragraphs": [
+            "Oficiálny postup inštruuje používateľov vybrať uložené položky, zadať doručovacie údaje a vybrať z dostupných prepravných možností. Spoločne posúďte destináciu, obmedzenia, možnosti balenia a zálohu prepravného. Zakúpená položka sa automaticky nestáva medzinárodnou zásielkou pripravenou na odoslanie.",
+            "Konečné prepravné sa môže zmeniť po zabalení a zmeraní logistickým poskytovateľom. Sledujte v zázname zásielky úpravy a žiadosti o potvrdenie. Po odoslaní používajte sekciu zásielok na sledovanie, uchovajte čísla objednávok a po doručení obsah bezodkladne skontrolujte."
+          ]
+        }
+      ],
+      "checklist": [
+        "Overte pôvodný produkt a presný variant.",
+        "Skontrolujte cenu položky a vnútroštátnej dopravy.",
+        "Odpovedzte na čakajúce žiadosti o potvrdenie.",
+        "Skontrolujte skladové fotografie a nevyriešené problémy.",
+        "Posúďte samostatnú ponuku medzinárodnej zásielky."
+      ],
+      "sourceIds": [
+        "buying",
+        "confirmation",
+        "changes",
+        "qc",
+        "freight-balance"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 482
+    },
+    {
+      "slug": "lolobuy-qc-photos",
+      "title": "Fotografie QC na LoloBuy: praktický zoznam kontrol pred odoslaním",
+      "description": "Rozlíšte fotografie predajcu od vlastnej skladovej kontroly a overte identitu, viditeľný stav aj detaily vyžadujúce ďalšie dôkazy.",
+      "keyword": "fotografie QC LoloBuy",
+      "category": "Kontroly kvality",
+      "summary": "Začnite položkou a variantom, ktorý ste objednali. Dostupné zábery potom použite na rozlíšenie toho, čo je jasné, čo potrebuje ďalšiu fotografiu a čo treba vyriešiť pred odoslaním.",
+      "sections": [
+        {
+          "heading": "Určite, aké podklady si prezeráte",
+          "paragraphs": [
+            "Produktová galéria je súčasťou ponuky predajcu. Referenčná fotografia QC môže ukazovať skoršiu objednávku. Vaše vlastné skladové fotografie sa týkajú tovaru prijatého pre váš nákup. Pri rozhodovaní tieto kategórie oddeľujte, najmä ak má produkt niekoľko farieb, verzií alebo veľkostí.",
+            "Začnite prepojením čísla objednávky, produktu a vybraného variantu. Podrobná fotografia nesprávnej verzie nie je užitočným uistením. Ak sadu obrázkov nemožno priradiť k položke vo vašom sklade, vyžiadajte si toto prepojenie pred hodnotením vzhľadu."
+          ]
+        },
+        {
+          "heading": "Identitu overte pred drobnými detailmi",
+          "paragraphs": [
+            "Najprv preverte veľkosť, farbu, množstvo a model. Hľadajte konzistentné štítky a zábery rovnakej položky. Sada fotografií môže pôsobiť atraktívne, a predsa ukazovať nesprávny veľkostný štítok alebo neúplnú súpravu. To, čo vidíte, porovnajte s uloženou voľbou objednávky namiesto spoliehania sa na pamäť.",
+            "Pri páre topánok skontrolujte obe topánky a viditeľné označenia veľkosti. Pri odeve overte vybranú farbu a uvedenú veľkosť. Pri taške alebo sade doplnkov overte viditeľnosť očakávaných súčastí. Ide o praktické kroky kontroly, nie o záruku preverenia každého skrytého detailu."
+          ]
+        },
+        {
+          "heading": "Použite zoznam pre konkrétnu kategóriu",
+          "paragraphs": [
+            "Pri oblečení sú užitočné zábery celkového tvaru, prednej a zadnej strany, švov, potlače či výšivky a oblastí, kde sadnutie závisí od rozmeru. Pri obuvi posúďte pár spoločne, viditeľné spracovanie a požadovanú veľkosť. Pri taškách môžu zapínanie, rukoväti a vnútorné pohľady odpovedať na rôzne otázky.",
+            "Zapisujte iba detaily ovplyvňujúce vaše rozhodnutie. Dlhý všeobecný zoznam môže odvádzať pozornosť od jediného chýbajúceho rozmeru alebo poškodeného zapínania, ktoré je podstatné. Ak je predný pohľad jasný, ale zadný chýba, požiadajte o chýbajúci pohľad namiesto ďalšej všeobecnej fotografie z rovnakého uhla."
+          ],
+          "bullets": [
+            "Overte identitu a vybraný variant",
+            "Posúďte viditeľný stav a spracovanie",
+            "Porovnajte požadované merania",
+            "Chýbajúce zábery uvádzajte oddelene od pozorovaných chýb"
+          ]
+        },
+        {
+          "heading": "Pochopte obmedzenia štandardnej služby",
+          "paragraphs": [
+            "Stránka štandardnej kontroly LoloBuy opisuje vizuálne kontroly a výluky. Najmä zapečatené položky nemusia byť otvorené a niektoré odborné či elektronické produkty nie sú kontrolované na pravosť, funkčnosť alebo kvalitu. Niektoré objednávky 1688 podliehajú vzorkovaniu alebo iným pravidlám kontroly.",
+            "Oficiálne stránky sa nezhodujú na jednom univerzálnom počte fotografií: stránka kontroly a širšia stránka služieb uvádzajú rôzne počty. Namiesto predpokladu presného počtu overte službu pripojenú k vašej objednávke. Užitočná otázka znie, či dostupné dôkazy pokrývajú problém, o ktorom potrebujete rozhodnúť."
+          ]
+        },
+        {
+          "heading": "Požiadajte o konkrétny ďalší záber",
+          "paragraphs": [
+            "Cielená požiadavka označuje objednávku, fotografovanú oblasť aj dôvod. Napríklad: „Prosím ukážte veľkostný štítok a zmerajte šírku odevu cez hrudník naplocho od švu k švu.“ To je jasnejšie než otázka, či je produkt dobrý. Pred požiadavkou na ďalšiu prácu overte dostupnosť služby a prípadný poplatok.",
+            "Použite rovnakú metódu merania ako v tabuľke predajcu. Šírka odevu naplocho a obvod tela sú rôzne veličiny. Fotografiu a meranie uchovávajte spolu, aby sa číslo nemohlo zameniť za rozmer inej veľkosti alebo inej položky."
+          ]
+        },
+        {
+          "heading": "Rozhodnutie zdokumentujte",
+          "paragraphs": [
+            "Zistenia rozdeľte na potvrdené, nejasné a neprijateľné. Ak je detail nejasný, vyžiadajte dôkazy. Ak položka zrejme nezodpovedá objednávke, využite príslušnú podporu alebo proces vrátenia pred medzinárodnou dopravou. Uchovajte stručný opis problému a fotografie, ktoré ho preukazujú.",
+            "Fotografie nemôžu overiť všetky vlastnosti materiálu, pohodlie, dlhodobú odolnosť ani vnútornú funkčnosť. Schválenie viditeľného stavu je užšie rozhodnutie. Podmienky vrátenia si prečítajte, kým je tovar v sklade, a úspešné QC nepovažujte za prísľub výsledku colného konania alebo medzinárodného doručenia."
+          ]
+        }
+      ],
+      "checklist": [
+        "Priraďte fotografie k vlastnej objednávke.",
+        "Najprv overte veľkosť, farbu, model a množstvo.",
+        "Požiadajte o konkrétny chýbajúci pohľad alebo meranie.",
+        "Overte kontrolnú službu a jej výluky.",
+        "Významné problémy vyriešte pred zadaním zásielky."
+      ],
+      "sourceIds": [
+        "qc",
+        "photos",
+        "service",
+        "sizing"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 498
+    },
+    {
+      "slug": "lolobuy-shipping-costs",
+      "title": "Cena dopravy LoloBuy: porovnávajte celú zásielku",
+      "description": "Pochopte odhadovanú, skutočnú a objemovú hmotnosť a porovnajte dostupné služby pre rovnakú destináciu, obsah a voľby balenia.",
+      "keyword": "kalkulačka dopravy LoloBuy",
+      "category": "Doprava",
+      "summary": "Užitočné porovnanie prepravného začína jednou jasne definovanou zásielkou. Tento sprievodca vysvetľuje vstupy a kontroly; nejde o aktuálnu cenovú ponuku dopravy.",
+      "sections": [
+        {
+          "heading": "Oddeľte cenu položky od prepravného",
+          "paragraphs": [
+            "Cena pri produkte nie je úplným nákladom doručenia. Oficiálny postup LoloBuy oddeľuje nákup položky a vnútroštátnu dopravu od neskoršej platby zálohy medzinárodnej dopravy. Rozpočet môžete odhadnúť pred nákupom, ale konečné porovnanie zásielky nemožno vykonať iba z ceny produktu.",
+            "Zapíšte destináciu, plánovaný obsah a obaly, ktoré chcete ponechať. Pár topánok so škatuľou a ten istý pár bez nej predstavujú odlišné rozhodnutia o balení. Ďalšie položky môžu meniť hmotnosť aj rozmery, takže pridanie jediného malého nákupu môže výslednú ponuku ovplyvniť viacerými spôsobmi."
+          ]
+        },
+        {
+          "heading": "Vedzte, ktorú hmotnosť porovnávate",
+          "paragraphs": [
+            "Hmotnostný sprievodca LoloBuy rozlišuje odhad a skutočnú hmotnosť zabaleného balíka. Skladový záznam položky zahŕňa pôvodný obal, zatiaľ čo konečný balík zahŕňa aj vonkajší prepravný obal a voľby odstránenia či spevnenia. V týchto fázach môžu vzniknúť rôzne namerané hodnoty.",
+            "Objemová hmotnosť odráža priestor zabraný balíkom. Oficiálny sprievodca zverejňuje rôzne výpočtové delitele pre rôzne prepravné služby. Nepoužívajte jeden deliteľ pre každého dopravcu ani nepovažujte starý príklad za dnešný tarif. Pre zadávanú zásielku použite aktuálne podmienky služby."
+          ],
+          "bullets": [
+            "Destinácia a poštové smerovacie číslo",
+            "Obmedzenia produktov a obsah",
+            "Skutočná hmotnosť zabalenej zásielky",
+            "Dĺžka, šírka a výška",
+            "Pravidlá účtovania konkrétnej služby a zahrnuté služby"
+          ]
+        },
+        {
+          "heading": "Použite výpočet bez predstierania cenovej ponuky",
+          "paragraphs": [
+            "Iba na ilustráciu: balík s rozmermi 40 × 30 × 20 centimetrov má objem 24 000 kubických centimetrov. Hypotetická prepravná služba s deliteľom 6 000 dáva objemovú hmotnosť 4 kilogramy; deliteľ 5 000 dáva 4,8 kilogramu. Ani jeden výpočet neurčuje cenu dopravy.",
+            "Príklad ukazuje dôležitosť pravidiel služby. Stále potrebujete skutočnú hmotnosť, účtovacie prírastky, destináciu a aktuálnu sadzbu. Nevyberajte službu podľa titulkového tvrdenia o cene „za kilogram“, ak poplatok závisí od prvej jednotky, ďalších jednotiek alebo vyššej účtovanej hmotnosti."
+          ]
+        },
+        {
+          "heading": "Porovnávajte pri rôznych službách rovnakú zásielku",
+          "paragraphs": [
+            "Pri porovnávaní dostupných liniek ponechajte vstupy rovnaké. Overte prijímaný obsah, uvedený odhad prepravy, sledovanie, požiadavky na balenie a voliteľnú ochranu. Nižšia počiatočná suma nie je úplným porovnaním, ak sa služby alebo obmedzenia líšia.",
+            "Odhady doručenia berte ako odhady. Spracovanie v sklade, pohyb u dopravcu a procesy v destinácii sú samostatné fázy. Tento sprievodca nesľubuje univerzálnu dodaciu lehotu, nezdanenú prepravnú cestu ani pevný colný poplatok. Pri rozhodovaní použite aktuálnu ponuku a oficiálne pravidlá destinácie."
+          ]
+        },
+        {
+          "heading": "Posudzujte balenie ako vyvažovanie rôznych potrieb",
+          "paragraphs": [
+            "Oficiálna stránka odstránenia obalov opisuje odstránenie zbytočných vonkajších obalov pri zachovaní ochrany potrebnej pre tovar. Tiež neodporúča odstránenie tam, kde je pôvodný obal dôležitý na darovanie alebo uchovanie. Zmenšenie objemu môže pomôcť, ale ochrana a účel nákupu zostávajú dôležité.",
+            "Požadujte konkrétny spôsob balenia namiesto plošného pokynu odstrániť všetko. Ak sú dostupné, porovnajte konečné rozmery. Zlúčenie zásielok alebo odstránenie obalov automaticky neznamená nižší účet na každej linke a ľahko poškoditeľná položka môže naopak potrebovať väčšiu ochranu."
+          ]
+        },
+        {
+          "heading": "Sledujte konečné vyúčtovanie",
+          "paragraphs": [
+            "Pokyny LoloBuy k doplatkom uvádzajú, že odhadované prepravné sa porovnáva so skutočným poplatkom logistického poskytovateľa. Môže to znamenať vrátenie preplatku alebo žiadosť o doplatok. Čítajte správy zásielky a odpovedajte na žiadosti pripojené k vašej preprave.",
+            "Počiatočný odhad, konečné účtované rozmery, vybrané služby a úpravu uchovávajte spoločne. Takýto záznam uľahčuje pochopenie rozdielu. Prípadné poplatky v destinácii rozpočtujte samostatne a pred považovaním objednávky za dokončenú overte konečnú celkovú cenu zásielky."
+          ]
+        }
+      ],
+      "checklist": [
+        "Porovnávajte služby pre totožný obsah a destináciu.",
+        "Overte pravidlá skutočnej a objemovej hmotnosti.",
+        "Zohľadnite ochranu pri balení.",
+        "Oddeľte odhady od konečných poplatkov.",
+        "Pred odoslaním čítajte správy o úprave ceny zásielky."
+      ],
+      "sourceIds": [
+        "buying",
+        "weight",
+        "packaging",
+        "freight-balance"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 478
+    },
+    {
+      "slug": "lolobuy-warehouse-consolidation",
+      "title": "Sprievodca skladom LoloBuy: kontrola, uskladnenie a zlučovanie zásielok",
+      "description": "Usporiadajte uložené položky, vyriešte otázky QC a vyberte balenie s ohľadom na celý balík.",
+      "keyword": "sklad LoloBuy a zlučovanie zásielok",
+      "category": "Sklad",
+      "summary": "Skladová fáza je príležitosťou prepojiť nákupný záznam s prijatou položkou a rozhodnúť, čo je pripravené na spoločné odoslanie.",
+      "sections": [
+        {
+          "heading": "Rozlišujte príchod a pripravenosť",
+          "paragraphs": [
+            "Doručovací záznam predajcu znamená, že vnútroštátny balík dosiahol určitý bod svojej cesty. Sám osebe nepreukazuje, že je vaša položka skontrolovaná, správne priradená a pripravená na medzinárodné odoslanie. Prehľad stavov LoloBuy oddeľuje prijatý tovar, kontrolu a uložený inventár.",
+            "Ako pracovný zoznam používajte skladový záznam namiesto jedinej správy sledovania. Pri každej položke uchovávajte číslo objednávky, vybraný variant a stav QC. Ak dorazí viac balíkov od predajcov súčasne, zabráni to tomu, aby jedna dokončená položka zakryla otázku pri inej."
+          ]
+        },
+        {
+          "heading": "Vytvorte stručný skladový kontrolný zoznam",
+          "paragraphs": [
+            "Pri každej položke zaznamenajte, čo ste objednali, čo ukazuje sklad a čo zostáva nevyriešené. Môžu stačiť štyri stĺpce: položka, správny variant, rozhodnutie po kontrole a pokyn na balenie. Zmyslom je uchovať čakajúcu otázku viditeľnú pred zostavením balíka.",
+            "Porovnajte obrázky s pôvodným výberom. Chýbajúca fotografia a viditeľná chyba vyžadujú iné kroky. Pri nejasnom detaile požiadajte o príslušné dôkazy. Pri zjavnom nesúlade vysvetlite rozdiel s číslom objednávky a zvážte použiteľný proces vrátenia."
+          ],
+          "bullets": [
+            "Objednávka a presný variant",
+            "Prijatie do skladu a stav kontroly",
+            "Otvorená otázka alebo žiadosť o vrátenie",
+            "Ponechať alebo odstrániť pôvodný obal",
+            "Pripravené na medzinárodnú zásielku: áno alebo nie"
+          ]
+        },
+        {
+          "heading": "Overte svoju lehotu uskladnenia priamo",
+          "paragraphs": [
+            "Oficiálne materiály obsahujú rozporné údaje o skladovaní: sprievodca nákupom uvádza 90 dní, zatiaľ čo stránky uskladnenia a stavov uvádzajú 180 dní. Stránka uskladnenia tiež opisuje odlišné zaobchádzanie s neštandardnými nespárovanými zásielkami. Tieto rozdiely nemožno zredukovať na jeden bezpodmienečný prísľub.",
+            "Overte informácie o uskladnení pri svojej položke a vyjasnite nezrovnalosti pred spoliehaním sa na lehotu. Zaznamenajte dátum aj prípadné platené predĺženie, ktoré zvolíte. Nenechávajte tovar čakať neobmedzene iba preto, že všeobecný článok uvádza dlhší čas než aktuálny skladový záznam."
+          ]
+        },
+        {
+          "heading": "Zlučujte zlučiteľné položky s vyriešenými otázkami",
+          "paragraphs": [
+            "Oficiálny sprievodca nákupom opisuje výber uložených položiek na medzinárodné doručenie alebo ďalšie nákupy so spoločným odoslaním neskôr. Zlúčenie umožňuje plánovať balík ako celok. Nerobí však každú kombináciu prijateľnou pre každú prepravnú službu.",
+            "Pred spojením položiek zvážte obmedzenia, krehkosť a nevyriešené otázky. Položku čakajúcu na rozhodnutie o vrátení nemožno považovať za pripravenú. Krehký doplnok môže potrebovať inú ochranu než oblečenie. Porovnávajte výsledné rozmery a hmotnosť balíka, nielen počet produktov."
+          ]
+        },
+        {
+          "heading": "Píšte presné pokyny na balenie",
+          "paragraphs": [
+            "Pomoc LoloBuy k odstráneniu obalov opisuje odstránenie zbytočného balenia pri zachovaní ochrany potrebnej pre produkt. Ak chcete pôvodný obal pre darček alebo zbierku, odstránenie nevyberajte a požiadavku jasne uveďte. Hodnota škatule nespočíva vždy v jej prepravnej hmotnosti.",
+            "Podľa potreby použite pokyny pre jednotlivé položky: zachovať ochrannú výplň krehkého produktu, ponechať jednu predajnú škatuľu alebo sa opýtať na dostupné možnosti balenia. Prípadný príplatok za službu overte v aktuálnom formulári zásielky. Nepredpokladajte, že rovnaký spôsob balenia vyhovuje každej kategórii."
+          ]
+        },
+        {
+          "heading": "Vykonajte záverečnú kontrolu zásielky",
+          "paragraphs": [
+            "Pred zadaním potvrďte zoznam položiek, množstvá, údaje príjemcu, vybranú prepravnú službu a doplnkové služby. Overte zahrnutie všetkých zamýšľaných položiek a to, že sa do balíka nedostalo nič s nevyriešeným problémom. Táto krátka kontrola je jednoduchšia než spätné rekonštruovanie voľby po zabalení.",
+            "Oficiálne stránky hmotnosti a vyúčtovania prepravného vysvetľujú, že konečné merania môžu zmeniť poplatok. Po zadaní sledujte správy zásielky vrátane žiadostí o potvrdenie či doplatok. Po odoslaní používajte sledovací záznam zásielky a skladové podklady ponechajte až do kontroly doručeného obsahu."
+          ]
+        }
+      ],
+      "checklist": [
+        "Skontrolujte každú položku pred označením za pripravenú.",
+        "Overte lehotu zobrazenú vo vlastnom skladovom zázname.",
+        "Otázky vrátenia oddeľte od položiek pripravených na prepravu.",
+        "Určte balenie vhodné pre každý produkt.",
+        "Skontrolujte konečný zoznam zásielky a úpravy prepravného."
+      ],
+      "sourceIds": [
+        "buying",
+        "status",
+        "storage",
+        "packaging",
+        "freight-balance"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 484
+    },
+    {
+      "slug": "lolobuy-sizing-guide",
+      "title": "Veľkostný sprievodca LoloBuy: porovnajte rozmery pred výberom štítku",
+      "description": "Použite tabuľku predajcu, jednotné metódy merania a cielené skladové fotografie na jasnejšie rozhodnutie o veľkosti.",
+      "keyword": "veľkostný sprievodca LoloBuy",
+      "category": "Veľkosti",
+      "summary": "Známy veľkostný štítok je východiskový bod. Užitočné porovnanie vychádza z rozmerov predajcu, vašich referenčných rozmerov a požadovaného strihu.",
+      "sections": [
+        {
+          "heading": "Začnite tabuľkou predajcu",
+          "paragraphs": [
+            "Oficiálny veľkostný prehľad LoloBuy hovorí, že veľkostné štandardy obchodov sa môžu líšiť, a označuje prevodné informácie za orientačné. Označenie ako medium alebo známa veľkosť topánok neurčujú sadnutie produktu každého predajcu. Čítajte tabuľku pre presnú ponuku a variant.",
+            "Overte, či čísla opisujú telo, hotový odev alebo odporúčaného nositeľa. Ide o rôzne rozmery. Ak to tabuľka neuvádza jasne, opýtajte sa pred objednaním namiesto zvykového výberu väčšej alebo menšej veľkosti."
+          ]
+        },
+        {
+          "heading": "Zmerajte spoľahlivú referenciu",
+          "paragraphs": [
+            "Pri oblečení porovnávajte s vlastným odevom, ktorý sedí požadovaným spôsobom. Položte ho naplocho a použite rovnaké meracie body ako v nákrese predajcu. Poznačte jednotky a to, či je šírka meraná cez jednu stranu alebo po obvode tela. Rozmery uchovajte s rýchlou fotografiou postupu.",
+            "Pri telesných rozmeroch sa riaďte príslušným návodom a držte meter vodorovne namiesto uťahovania na dosiahnutie preferovanej veľkosti. Priliehavá košeľa, voľná mikina a tvarované sako vyžadujú rôznu voľnosť. Požadovaná silueta je súčasťou rozhodnutia, nie chybou tabuľky."
+          ]
+        },
+        {
+          "heading": "Vyberte podstatné rozmery",
+          "paragraphs": [
+            "Pri hornom diele môžu šírka hrudníka, dĺžka tela, ramená a rukáv odpovedať na rôzne otázky sadnutia. Pri nohaviciach overte pás, výšku sedu, vnútornú dĺžku nohavice a celkovú dĺžku. Jediné číslo pása nevysvetľuje polohu nohavice a samotný rozmer hrudníka neurčuje dĺžku rukáva.",
+            "Na ilustráciu predpokladajme, že referenčný top meria 56 centimetrov cez hrudník a 70 centimetrov na dĺžku. Kandidát s rozmermi 56 a 64 môže mať podobnú šírku, ale výrazne kratšie telo. Ide o príklad metódy porovnávania, nie o odporúčanie konkrétnej veľkosti alebo produktu."
+          ],
+          "bullets": [
+            "Overte meracie jednotky",
+            "Porovnávajte telesné rozmery s tabuľkami tela",
+            "Porovnávajte odev meraný naplocho s tabuľkami odevu",
+            "Porovnajte viac než jeden rozmer zásadný pre sadnutie",
+            "Zaznamenajte požadovanú voľnú alebo priliehavú siluetu"
+          ]
+        },
+        {
+          "heading": "Obuv posudzujte samostatne",
+          "paragraphs": [
+            "Oficiálny veľkostný sprievodca odporúča pri rozdielnych chodidlách používať väčšie a uvádza, že dĺžkové značenie plne neopisuje šírku. Čítajte tabuľku obuvi predajcu a overte systém vybraného variantu. Nepredpokladajte, že číslo EU, US alebo UK sa dá dokonale preniesť medzi všetkými ponukami.",
+            "Merajte podľa pokynov tabuľky a zvážte ponožky, šírku aj plánované použitie. Viditeľný štítok topánky na skladovej fotografii môže pomôcť potvrdiť odoslaný variant, ale nemôže určiť pocit topánky na nohe. Fotografiu vložky nepovažujte za univerzálnu prevodnú tabuľku."
+          ]
+        },
+        {
+          "heading": "Použite QC na zodpovedanie konkrétnej otázky",
+          "paragraphs": [
+            "Pred prepravou porovnajte viditeľný veľkostný štítok s objednávkou. Ak zostáva dôležitý rozmer odevu neistý, požiadajte o jeho zmeranie s jasnými počiatočnými a koncovými bodmi. Napríklad požiadajte o šírku hrudníka naplocho od švu k švu namiesto samotného „skontrolujte veľkosť“.",
+            "Kontrolné pravidlá LoloBuy majú obmedzenia a nesľubujú úplné posúdenie sadnutia. Overte, či je meranie alebo dodatočná fotografia pre vašu položku dostupná a či sa platí. Štandardnú sadu fotografií nemožno opisovať ako osobné poradenstvo ohľadom veľkosti."
+          ]
+        },
+        {
+          "heading": "Rozhodnite, kým sú možnosti otvorené",
+          "paragraphs": [
+            "Ak sa prijatý štítok líši od vybraného variantu, zdokumentujte nesúlad pomocou objednávky aj fotografie. Ak štítok zodpovedá, ale rozmer nevyhovuje, bezodkladne overte podmienky vrátenia predajcu a aktuálny postup objednávky. Sú to rôzne situácie a treba ich presne opísať.",
+            "Meranie znižuje neistotu; neodstraňuje rozdiely v strihu, pružnosti, pocite z materiálu ani osobných preferenciách. Tabuľku a poznámky k porovnaniu uchovajte, aby úspešná voľba pomohla pri ďalšom nákupe. Pri opakovanom objednaní overte skutočnú ponuku znovu, pretože iný predajca alebo verzia môžu používať iné rozmery."
+          ]
+        }
+      ],
+      "checklist": [
+        "Použite tabuľku presnej ponuky.",
+        "Dodržujte rovnaké jednotky a metódy merania.",
+        "Porovnajte niekoľko rozmerov zásadných pre sadnutie.",
+        "Overte prijatý veľkostný štítok a požadované meranie.",
+        "Vyriešte otázky sadnutia pred medzinárodným odoslaním."
+      ],
+      "sourceIds": [
+        "sizing",
+        "qc",
+        "returns"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 487
+    },
+    {
+      "slug": "lolobuy-tracking-guide",
+      "title": "Sledovanie LoloBuy: rozlišujte objednávku a medzinárodnú zásielku",
+      "description": "Správne čítajte nákupné, skladové a prepravné fázy a zhromaždite užitočné podklady, ak je aktualizácia sledovania nejasná.",
+      "keyword": "sledovanie zásielok LoloBuy",
+      "category": "Sledovanie",
+      "summary": "Stav objednávky a záznam dopravcu opisujú rôzne časti cesty. Uchovávajte oddelene identifikátory položky, vnútroštátneho balíka a medzinárodnej zásielky.",
+      "sections": [
+        {
+          "heading": "Vedzte, čo sledujete",
+          "paragraphs": [
+            "Produkt môže mať nákupnú objednávku, vnútroštátnu zásielku predajcu a neskorší medzinárodný balík. Ide o súvisiace záznamy, nie o rovnakú zásielku. Správa o vnútroštátnom doručení môže znamenať príchod do skladu, nie doručenie k vám domov.",
+            "S postupom objednávky vytvorte jednoduchý zoznam identifikátorov: číslo produktu/objednávky, sledovacie číslo predajcu, ak je zobrazené, skladový záznam položky a číslo medzinárodnej zásielky. Ľahšie sa potom opýtate na správnu fázu namiesto poslania snímky obrazovky podpore, ktorá sa týka inej cesty."
+          ]
+        },
+        {
+          "heading": "Najprv čítajte nákupné fázy",
+          "paragraphs": [
+            "Oficiálny prehľad stavov LoloBuy rozlišuje čakanie na platbu, spracovanie, objednanie a odoslanie predajcom. Spracovanie sa týka nákupného postupu; neznamená, že medzinárodný dopravca prepravuje váš balík. Skôr než hľadáte zahraničnú aktualizáciu sledovania, prečítajte si znenie stavu.",
+            "Ten istý prehľad opisuje prijatý tovar a inventár po kontrole. Ak vnútroštátny dopravca uvádza doručené, ale skladová kontrola nie je dokončená, záznamy môžu opisovať nadväzujúce fázy, nie rozpor. V zázname položky a prípadnej žiadosti o potvrdenie overte ďalší potrebný krok."
+          ]
+        },
+        {
+          "heading": "Potom čítajte fázy zásielky",
+          "paragraphs": [
+            "Po vytvorení medzinárodnej zásielky má jej stav vlastnú postupnosť. Oficiálna stránka opisuje čakanie na platbu, spracovanie, zabalenie a odoslanie. Tiež vyzýva sledovať zmeny prepravného po konečnom zvážení. Vytvorená zásielka sa nesmie zamieňať za odoslanú.",
+            "Používajte skutočný záznam, nie samotnú existenciu identifikačného čísla. Štítok alebo číslo môžu byť pripravené ešte pred ďalším viditeľným pohybom u dopravcu. Pri porovnávaní systémov zaznamenajte, ktorá stránka uvádza odovzdanie balíka a akú udalosť dopravca skutočne zaznamenal."
+          ],
+          "bullets": [
+            "Identifikátor nákupu/objednávky",
+            "Identifikátor medzinárodnej zásielky",
+            "Sledovacie číslo dopravcu",
+            "Posledná udalosť, miesto a čas",
+            "Čakajúce potvrdenie alebo platba"
+          ]
+        },
+        {
+          "heading": "Obdobia bez aktualizácií vykladajte opatrne",
+          "paragraphs": [
+            "Medzera medzi záznamami sama osebe neurčuje príčinu. Overte aktuálny odhad vybranej prepravnej služby, poslednú zaznamenanú udalosť a relevantné oficiálne oznámenie. Typický čas zo starého príspevku nepremieňajte na sľúbený termín svojej zásielky.",
+            "Neotvárajte opakovane rôzne sledovacie weby s predstavou, že každý rozdiel vo formulácii je novou udalosťou. Uchovávajte datovaný záznam významných zmien. Ak aktuálna fáza pôsobí rozporne alebo sa vyžaduje akcia, riešte tento konkrétny problém cez podporu zásielky alebo objednávky."
+          ]
+        },
+        {
+          "heading": "Pošlite podpore užitočnú otázku",
+          "paragraphs": [
+            "Uveďte identifikátor objednávky alebo zásielky, sledovacie číslo, poslednú viditeľnú udalosť a otázku, na ktorú potrebujete odpoveď. Napríklad: „Záznam zásielky uvádza odoslané, ale dopravca nezobrazuje odovzdanie. Môžete potvrdiť stav odovzdania?“ To je lepšie riešiteľné než „Kde je všetko?“",
+            "Sprievodca nákupom LoloBuy odkazuje používateľov po odoslaní na sledovanie v časti zásielok. Ak je to možné, použite otázku pripojenú k dotknutému záznamu. Do správy o sledovacej udalosti nezahŕňajte nesúvisiace údaje účtu ani platobné prihlasovacie informácie."
+          ]
+        },
+        {
+          "heading": "Uchovajte podklady až do doručenia",
+          "paragraphs": [
+            "Po príchode balíka bezodkladne skontrolujte vonkajší stav a obsah. Ak je položka nesprávna, chýba alebo je poškodená, uchovajte obal, štítok a jasné fotografie. Prijaté položky porovnajte s konečným zoznamom zásielky namiesto skoršieho užšieho výberu, ktorý môže obsahovať neodoslané produkty.",
+            "Oficiálna stránka popredajných služieb zásielok vyžaduje pri nesprávnych alebo poškodených položkách podrobný opis a fotografie, ale jej údaje o lehotách si odporujú. Konajte rýchlo a overte použiteľnú lehotu v aktuálnom procese podpory. Nečakajte iba preto, že všeobecný sprievodca zdanlivo ponúka dlhší čas."
+          ]
+        }
+      ],
+      "checklist": [
+        "Oddeľte vnútroštátne a medzinárodné identifikátory.",
+        "Overte, či je balík vytvorený, zabalený alebo odoslaný.",
+        "Čítajte poslednú udalosť vrátane času.",
+        "Pošlite podpore konkrétnu doloženú otázku.",
+        "Doručenie bezodkladne skontrolujte a uchovajte relevantné podklady."
+      ],
+      "sourceIds": [
+        "status",
+        "buying",
+        "claims",
+        "freight-balance"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 470
+    },
+    {
+      "slug": "lolobuy-returns-refunds",
+      "title": "Vrátenie a refundácie LoloBuy: konajte v správnej fáze objednávky",
+      "description": "Pripravte dôkazy, overte podmienky predajcu a pochopte rozdiel medzi zrušením objednávky, vrátením položky a reklamáciou zásielky.",
+      "keyword": "vrátenie a refundácie LoloBuy",
+      "category": "Popredajné služby",
+      "summary": "Rozhodnutie o vrátení závisí od položky, predajcu a aktuálnej fázy objednávky. Jasné dôkazy a včasná žiadosť sú užitočnejšie než predpoklad jediného pravidla pre každý nákup.",
+      "sections": [
+        {
+          "heading": "Určite potrebný proces",
+          "paragraphs": [
+            "Zrušenie doteraz nenakúpenej objednávky, vrátenie položky uloženej v sklade a hlásenie problému po medzinárodnom doručení sú rôzne procesy. Začnite kontrolou aktuálneho stavu objednávky alebo zásielky. Príslušné tlačidlo aj informácie môžu závisieť od toho, ako ďaleko transakcia pokročila.",
+            "Stránky LoloBuy k zrušeniu a vráteniu opisujú niekoľko krokov závislých od stavu a zapojenia predajcu. Žiadosť nie je to isté ako schválenie. Čítajte odpoveď pripojenú k objednávke a evidujte, čo bolo prijaté, čo čaká a akú akciu ešte musíte urobiť."
+          ]
+        },
+        {
+          "heading": "Uchovajte presné dôkazy",
+          "paragraphs": [
+            "URL položky, vybraný variant, potvrdenie objednávky a relevantné fotografie uchovávajte spolu. Ak ide o nesprávny veľkostný štítok, ukážte objednaný variant a prijatý štítok. Ak ide o poškodenie, ukážte jasný celkový pohľad aj detail dotknutého miesta. Opíšte rozdiel bez preháňania.",
+            "Napríklad „Objednaná modrá vo veľkosti L; skladová fotografia ukazuje čierny štítok M“ označuje overiteľný nesúlad. „Zlá kvalita“ je oveľa menej presné. Ak fotografie nestačia na doloženie problému, požiadajte o chýbajúce dôkazy pred voľbou požadovaného riešenia."
+          ],
+          "bullets": [
+            "Číslo objednávky a zdrojová ponuka",
+            "Vybraný variant a množstvo",
+            "Jasný opis problému",
+            "Relevantné fotografie konkrétnej objednávky",
+            "Požadované riešenie: objasnenie, zrušenie, vrátenie alebo výmena"
+          ]
+        },
+        {
+          "heading": "Čítajte oprávnenosť aj lehoty spoločne",
+          "paragraphs": [
+            "Oficiálna stránka garancie vrátenia opisuje podmienky oprávnenosti a obdobie na žiadosť po uskladnení. Uvádza tiež nutnosť súhlasu predajcu. Iné stránky pomoci používajú na časovanie iné alebo neobratné formulácie. Overte lehotu aj službu dostupnú pri skutočnej objednávke a problém predložte bezodkladne.",
+            "Na obale a stave umožňujúcom ďalší predaj môže záležať. Nedávajte pokyn na odstránenie obalu, ktorý by ste mohli potrebovať na oprávnené vrátenie, kým nerozumiete podmienkam. Použité produkty, osobitné objednávky a iné kategórie môžu mať odlišné pravidlá; všeobecný prísľub bezpodmienečného vrátenia by bol zavádzajúci."
+          ]
+        },
+        {
+          "heading": "Opýtajte sa na použiteľné náklady",
+          "paragraphs": [
+            "Pokyny ku garancii vrátenia rozlišujú dôvod vrátenia a rozoberajú vnútroštátnu prepravu aj servisné poplatky. Pôvodná ponuka predajcu na dopravu zadarmo nemusí znamenať neskoršie vrátenie zadarmo. Pred odsúhlasením pokračovania sa opýtajte na náklady vzťahujúce sa na vašu konkrétnu žiadosť.",
+            "Odpoveď ponechajte v zázname objednávky. Vyjasnite, či suma zahŕňa prepravu späť k predajcovi, pôvodné vnútroštátne dopravné a servisný poplatok. Príspevok platformy na spracovanie a dopravné predajcu sú rôzne veci a nemali by splývať v neurčitom tvrdení „vrátenie zadarmo“."
+          ]
+        },
+        {
+          "heading": "Sledujte cieľ a stav refundácie",
+          "paragraphs": [
+            "Oficiálne pokyny k vráteniu všeobecne opisujú pripisovanie schválených refundácií na zostatok účtu LoloBuy a konkrétnu výnimku pre určité situácie pôvodnej platby. Kredit účtu a peniaze vrátené na externú platobnú metódu sú rôzne výsledky. Skôr než predpokladáte príchod peňazí na bankový účet, overte, ktorý platí.",
+            "Súhlas predajcu, prijatie vrátenej položky a dokončenie refundácie môžu byť odlišné míľniky. Uchovajte identifikátor spätnej zásielky, ak ho dostanete. Pri otázke na zdržanie uveďte posledný dokončený krok namiesto novej žiadosti, ktorá vynecháva doterajší záznam vrátenia."
+          ]
+        },
+        {
+          "heading": "Problémy doručeného balíka riešte samostatne",
+          "paragraphs": [
+            "Pri problémoch po doručení oficiálne pokyny odkazujú na popredajnú žiadosť dotknutej zásielky a požadujú podrobný opis a fotografie. Okrem snímok produktov uchovajte vonkajší obal a prepravný štítok. Pomáhajú prepojiť poškodenie alebo nesúlad so zásielkou.",
+            "Táto oficiálna stránka obsahuje rozporné údaje o lehotách. Problém nahláste rýchlo a použiteľný časový limit si vyžiadajte priamo v aktuálnom procese. Tento sprievodca nesľubuje schválenie, univerzálny čas refundácie ani náhradu každého druhu straty."
+          ]
+        }
+      ],
+      "checklist": [
+        "Overte aktuálnu fázu objednávky alebo zásielky.",
+        "Zdokumentujte presný nesúlad alebo poškodenie.",
+        "Potvrďte oprávnenosť, lehotu a podmienky balenia.",
+        "Opýtajte sa na všetky príslušné náklady vrátenia.",
+        "Sledujte schválenie a skutočný cieľ refundácie."
+      ],
+      "sourceIds": [
+        "refunds",
+        "cancellation",
+        "returns",
+        "claims",
+        "changes"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 486
+    },
+    {
+      "slug": "lolobuy-order-budget",
+      "title": "Rozpočet objednávky LoloBuy: pozerajte sa za cenu produktu",
+      "description": "Pred záväzným nákupom oddeľte cenu položiek, vnútroštátnu dopravu, voliteľné služby, výmenu meny a medzinárodné prepravné.",
+      "keyword": "poplatky LoloBuy",
+      "category": "Rozpočet",
+      "summary": "Užitočný rozpočet oddeľuje potvrdené sumy od odhadov. Nákup produktu a neskoršiu platbu zásielky udržiavajte viditeľné ako dve prepojené rozhodnutia.",
+      "sections": [
+        {
+          "heading": "Oceňte variant, ktorý skutočne kúpite",
+          "paragraphs": [
+            "Katalógová cena je východiskom porovnávania. Vybraná farba, veľkosť, súprava alebo množstvo môžu mať na oficiálnej objednávkovej stránke inú aktuálnu cenu. Pred použitím v rozpočte overte presnú konfiguráciu, najmä ak zdrojová ponuka ukazuje cenové rozpätie.",
+            "Porovnávajte sumu a menu v rovnakej fáze. Zaznamenaná cena položky, súčet pri platení a výpis karty môžu zahŕňať rôzne zložky. Ich rozdiel nenazývajte skrytým poplatkom, kým ste neoverili množstvo, dopravu, prevod meny a vybrané služby."
+          ]
+        },
+        {
+          "heading": "Oddeľte dve hlavné fázy platieb",
+          "paragraphs": [
+            "Oficiálny nákupný proces LoloBuy najprv vyberá platbu za položky a čínsku vnútroštátnu dopravu. Medzinárodné prepravné sa rieši pri zadaní uskladneného tovaru ako zásielky. Kupujúci, ktorý rozpočtuje iba prvú platbu, môže dôjsť do skladovej fázy bez dostatku peňazí na odoslanie objednávky.",
+            "Vytvorte jednoduchú tabuľku nákladových zložiek a označte ich ako potvrdené alebo odhadované. Voliteľné služby ponechajte viditeľné namiesto skrytia v cene produktu. Možné poplatky v destinácii patria na samostatný riadok, pretože ich katalógová cena neurčuje."
+          ],
+          "bullets": [
+            "Vybrané položky a množstvá",
+            "Čínska vnútroštátna doprava",
+            "Vybrané nákupné alebo skladové služby",
+            "Medzinárodná doprava a baliace služby",
+            "Platobné alebo výmenné poplatky zobrazené pri platení",
+            "Prípadné dane alebo manipulačné poplatky v destinácii"
+          ]
+        },
+        {
+          "heading": "Čítajte podmienky vnútroštátnej dopravy",
+          "paragraphs": [
+            "Oficiálna pomoc k vnútroštátnej doprave uvádza, že položky od jedného predajcu zadané a zaplatené spoločne môžu zdieľať jedno dopravné s prípadným doplatkom za nadmerne ťažkú zásielku. Ide o konkrétnu podmienku, nie o prísľub jedného poplatku pre všetky produkty v košíku.",
+            "Overte, ktorý predajca dodáva jednotlivé položky a ako je objednávka zoskupená. Väčšie množstvo môže zmeniť aj cenu predajcu alebo dodacie podmienky, najmä pri veľkoobchodných ponukách. Uchovajte aktuálny výpočet objednávky namiesto rozdeľovania skoršieho dopravného medzi nesúvisiace nákupy."
+          ]
+        },
+        {
+          "heading": "Overte platobné a menové údaje",
+          "paragraphs": [
+            "Pred potvrdením overte metódy dostupné v oficiálnom platení, účtovanú menu a všetky zobrazené náklady. Dostupnosť môže závisieť od účtu a transakcie. Všeobecný zoznam v pomoci nestačí na potvrdenie, že sa konkrétna metóda objaví dnes pri vašej objednávke.",
+            "Ak poskytovateľ platby ponúka prevod meny, porovnajte tu zobrazenú konečnú účtovanú sumu a podmienky. Doklad uchovajte s objednávkou. Nesľubujte pevný kurz ani nepredpokladajte, že sa prepočet predchádzajúceho nákupu použije na ďalší."
+          ]
+        },
+        {
+          "heading": "Zľavy berte ako niečo na overenie",
+          "paragraphs": [
+            "Pokyny LoloBuy k akciám opisujú uvedenie podmienok ponuky predajcu v poznámkach objednávky, aby ich nákupca overil. Banner alebo uložená snímka nie je dôkazom, že váš presný variant a množstvo stále spĺňajú podmienky. Podmienky zaznamenajte a požiadajte o potvrdenie prostredníctvom objednávky.",
+            "Do potvrdenia zľavu držte oddelene od bežného rozpočtu. Nespoliehajte sa na odporúčaciu akciu, kupón alebo tvrdenie o preprave prevzaté z nesúvisiaceho sprievodcu. Tento web neposkytuje zaručený kredit novému používateľovi ani univerzálnu cenu dopravy."
+          ]
+        },
+        {
+          "heading": "Pri neistom prepravnom použite rozpätie",
+          "paragraphs": [
+            "Pred zabalením sú hmotnosť a rozmery odhady. Oficiálne pravidlá vyúčtovania prepravného porovnávajú počiatočnú sumu so skutočným poplatkom logistického poskytovateľa. Ponechajte priestor na prípadnú úpravu namiesto minutia celého rozpočtu na produkty.",
+            "Ako plánovací príklad predpokladajte potvrdenú cenu položiek a vnútroštátnej dopravy 100 jednotiek v jednej mene a súčasný odhad dopravy 30–45 jednotiek. Pred ďalšími príslušnými nákladmi je predbežný súčet 130–145. Ide o hypotetické čísla ilustrujúce metódu, nie o ceny LoloBuy alebo cenovú ponuku."
+          ]
+        },
+        {
+          "heading": "Používajte rozpočet pri rozhodovaní",
+          "paragraphs": [
+            "Ak pravdepodobný súčet presahuje limit, upravte užší výber pred platbou. Vyradenie menej dôležitej položky môže byť jednoduchšie než neskoršie získavanie peňazí späť vrátením. Porovnávajte hodnotu celej doručenej objednávky namiesto počtu lacných produktov, ktoré môžete nazbierať.",
+            "Po odoslaní nahraďte odhady konečnými zaznamenanými poplatkami. Uchovajte rozdiel a vysvetlenie. Táto história pomáha pri ďalšom plánovaní, pričom stále treba zohľadniť nabudúce iný tovar, rozmery, prepravné služby a výmenné podmienky."
+          ]
+        }
+      ],
+      "checklist": [
+        "Rozpočtujte presný vybraný variant.",
+        "Oddeľte vnútroštátnu a medzinárodnú dopravu.",
+        "Zaznamenajte voliteľné služby a účtovanú menu.",
+        "Používajte iba potvrdené zľavy.",
+        "Ponechajte rezervu na neisté prepravné a náklady v destinácii."
+      ],
+      "sourceIds": [
+        "buying",
+        "domestic",
+        "promotions",
+        "freight-balance",
+        "wholesale"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 525
+    },
+    {
+      "slug": "lolobuy-seller-and-review-checks",
+      "title": "Nálezy a recenzie LoloBuy: preverte dôkazy za ponukou",
+      "description": "Posudzujte zdrojové údaje, relevantnosť recenzií a obmedzenia kontroly bez považovania odznaku, fotografie alebo hodnotenia za záruku.",
+      "keyword": "je LoloBuy dôveryhodné",
+      "category": "Nákupné rozhodnutia",
+      "summary": "Užitočná otázka znie, čo dostupné dôkazy skutočne dokladajú o tejto transakcii. Samotný názov platformy neodpovie na všetky otázky o predajcovi, produkte alebo zásielke.",
+      "sections": [
+        {
+          "heading": "Oddeľte platformu a produkt",
+          "paragraphs": [
+            "Informácie o službách LoloBuy opisujú nákup tovaru z platforiem tretích strán, nie vlastný predaj každej uvedenej položky. Tento nezávislý prehľad je ešte o krok ďalej: organizuje hľadanie. Pri rozhodovaní, kto môže odpovedať na otázku alebo vyriešiť problém, tieto roly jasne rozlišujte.",
+            "Funkčný produktový odkaz nedokladá pravosť, zásobu, sadnutie ani budúce doručenie. Rovnako sťažnosť na jedného predajcu neurčuje príčinu všetkých problémov platformy. Začnite presným tvrdením, ktoré potrebujete posúdiť, a stranou zodpovednou za túto časť procesu."
+          ]
+        },
+        {
+          "heading": "Ponuku preverte pred jej popularitou",
+          "paragraphs": [
+            "Hľadajte jasnú pôvodnú URL, konzistentný opis produktu, rozpoznateľné varianty a užitočné rozmery či špecifikácie. Porovnajte vybraný variant s galériou. Lacná počiatočná cena sa môže vzťahovať na inú súčasť než na položku na hlavnom obrázku.",
+            "Ak niekoľko predajcov používa rovnaké fotografie, samotné obrázky nepovedia, či sa tovar vyrába alebo dodáva rovnako. Zaznamenajte chýbajúce informácie a položte cielenú otázku. Číslo popularity ani známy názov výrobnej série nenahrádzajú dôkazy o presnej ponuke."
+          ],
+          "bullets": [
+            "Pôvodná ponuka a identita predajcu",
+            "Presný variant a množstvo",
+            "Relevantné rozmery alebo špecifikácie",
+            "Aktuálne informácie o vrátení",
+            "Nezodpovedané otázky ovplyvňujúce nákup"
+          ]
+        },
+        {
+          "heading": "Recenzie čítajte s ohľadom na relevantnosť",
+          "paragraphs": [
+            "Recenzia je užitočnejšia, keď poznáte jej dátum, rozoberaný produkt alebo službu a dôkazy za záverom. Komentár o rýchlosti podpory sa líši od recenzie sadnutia obuvi. Úspešné doručenie zásielky nepreukazuje vhodnosť každého produktu v katalógu.",
+            "Hľadajte zverejnené odporúčacie odkazy, stimuly a ďalšie vzťahy. Ich prítomnosť recenziu automaticky nerobí nepravdivou, pomáha však vysvetliť jej účel. Partnerskú propagáciu, jedinú skúsenosť ani neoverené svedectvo nepremieňajte na univerzálne odporúčanie."
+          ]
+        },
+        {
+          "heading": "Naplánujte, čo môže kontrola overiť",
+          "paragraphs": [
+            "Oficiálna stránka štandardnej kontroly opisuje vizuálne kontroly a dôležité výluky. Nesľubuje overenie pravosti alebo funkčné testovanie každej kategórie. So zapečateným tovarom a niektorými odbornými produktmi sa zaobchádza inak. Pred kúpou položky, ktorej hodnota závisí od niečoho netestovaného službou, tieto obmedzenia prečítajte.",
+            "Pri odeve môžu jasné rozmery a viditeľné spracovanie zodpovedať veľkú časť otázky. Pri elektronike alebo tovare súvisiacom s bezpečnosťou fotografia nepreukazuje vnútorný výkon ani súlad s požiadavkami. Ak potrebné dôkazy chýbajú, musí sa táto neistota premietnuť do nákupného rozhodnutia."
+          ]
+        },
+        {
+          "heading": "Platby a komunikáciu držte na správnom mieste",
+          "paragraphs": [
+            "Na platenie používajte oficiálny web a na transakčné otázky otázku pri príslušnej objednávke alebo zásielke. Pred prihlásením overte doménu. Tento katalóg nepotrebuje vaše heslo, platobné prihlasovacie údaje ani súkromnú konverzáciu vloženú do produktového vyhľadávania.",
+            "Uchovávajte záznamy vybraného variantu, platby, vysvetlenia predajcu a dohodnutých požiadaviek. Ak sa niečo zmení, požiadajte o aktualizáciu v zázname objednávky. Jasná história uľahčuje neskoršie riešenie otázky viac než roztrúsené správy bez identifikátora položky alebo transakcie."
+          ]
+        },
+        {
+          "heading": "Urobte rozhodnutie, ktoré dokážete vysvetliť",
+          "paragraphs": [
+            "Napíšte stručnú poznámku, prečo položka vyhovuje vašim potrebám, aké dôkazy to podporujú, aký je celkový rozpočet a aké neistoty prijímate. Ak rozhodnutie závisí od nezodpovedanej otázky o veľkosti, stave alebo možnosti vrátenia, vyriešte ju pred platením.",
+            "Malá prvá objednávka môže byť voliteľným spôsobom obmedzenia vloženej sumy pri spoznávaní postupu, ale necertifikuje každého predajcu ani budúcu zásielku. Tento sprievodca ponúka metódu hodnotenia dôkazov, nie osobný test alebo záruku bezrizikovosti LoloBuy. Na ďalšie konkrétne kontroly použite sprievodcov objednávaním, QC a vracaním."
+          ]
+        }
+      ],
+      "checklist": [
+        "Rozlišujte roly katalógu, platformy a predajcu.",
+        "Preverte presnú ponuku namiesto jej popularity.",
+        "Recenzie posudzujte podľa dátumu, relevantnosti a stimulov.",
+        "Pochopte, čo kontrola neoverí.",
+        "Uchovajte zdokumentované rozhodnutie aj záznam objednávky."
+      ],
+      "sourceIds": [
+        "service",
+        "qc",
+        "buying",
+        "returns"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 464
+    }
+  ]
+}

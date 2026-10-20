@@ -1,0 +1,1131 @@
+{
+  "ui": {
+    "nav": [
+      "Tuoteluettelo",
+      "Näin se toimii",
+      "Oppaat",
+      "Artikkelit",
+      "Usein kysytyt kysymykset"
+    ],
+    "register": "Siirry LoloBuyhin",
+    "language": "Kieli",
+    "preview": "Ulkoasun esikatselu",
+    "previewNote": "Ensikatsaus lolobuysheet.nl-sivustoon",
+    "eyebrow": "HYVIÄ LÖYTÖJÄ. VÄHEMMÄN SELAAMISTA.",
+    "hero1": "Seuraava löytösi.",
+    "hero2": "Yksi tuoteluettelo.",
+    "intro": "Tutustu LoloBuy-tuoteluetteloon. Selaa vaatteita, lenkkareita ja asusteita, vertaa lähteen hintoja ja avaa seuraava löytösi LoloBuyssa.",
+    "search": "Hae koko luettelosta…",
+    "searchButton": "Hae löytöjä",
+    "photo": "Kuvahaku",
+    "popular": "Tutustu:",
+    "tagline": "Yksi luettelo. Seuraava löytösi.",
+    "source": "Tuotteet lähteestä cnfanssp.com",
+    "independent": "Riippumaton LoloBuy-tuotteiden löytösivusto",
+    "browse": "Tutustu tuoteluetteloon",
+    "browseSub": "Hieman vähemmän etsimistä. Paljon enemmän löytöjä.",
+    "all": "Kaikki löydöt",
+    "sort": "Järjestä",
+    "sorts": [
+      "Poiminnat",
+      "Uusimmat",
+      "Katsotuimmat",
+      "Hinta: halvin ensin",
+      "Hinta: kallein ensin"
+    ],
+    "count": "löytöä",
+    "view": "Katso tuote",
+    "buy": "Avaa LoloBuyssa",
+    "details": "Tuotetiedot",
+    "categories": {
+      "shoes": "Kengät",
+      "hoodies": "Collegepaidat",
+      "tshirts": "T-paidat",
+      "jackets": "Takit",
+      "pants": "Housut ja shortsit",
+      "headwear": "Päähineet",
+      "accessories": "Asusteet",
+      "sets": "Shortsiasut",
+      "electronics": "Elektroniikka",
+      "other": "Muut tuotteet",
+      "jerseys": "Pelipaidat"
+    },
+    "previous": "Edellinen",
+    "next": "Seuraava",
+    "page": "Sivu",
+    "empty": "Hakuasi vastaavia löytöjä ei löytynyt.",
+    "reset": "Tyhjennä suodattimet",
+    "sourceSearch": "Hae lähteen koko luettelosta",
+    "snapshot": "Ajantasainen luettelo lähteestä cnfanssp.com. CNY-tuotehinnat eivät sisällä toimitus- ja palvelumaksuja. Tarkista nykyiset vaihtoehdot ja lopullinen tarjous LoloBuyssa.",
+    "howTitle": "Löydöstä pakkauksen avaamiseen.",
+    "howSub": "Uusi LoloBuyssa? Aloita näistä kolmesta vaiheesta.",
+    "steps": [
+      [
+        "01",
+        "Löydä jotain mieluista",
+        "Selaa kategorioita ja tarkista alkuperäinen ilmoitus, koko ja tuotekuvat."
+      ],
+      [
+        "02",
+        "Avaa tuote LoloBuyssa",
+        "Valitse vaihtoehdot tuotelinkin kautta ja tarkista nykyinen hinta."
+      ],
+      [
+        "03",
+        "Tarkista ennen lähettämistä",
+        "Seuraa LoloBuyn varastoprosessia, tarkista saatavilla oleva laadunvalvonta ja valitse toimitustapa."
+      ]
+    ],
+    "guides": "Pienestä opastuksesta on paljon apua.",
+    "guidesSub": "Hyödyllistä tietoa ennen ensimmäistä tilaustasi.",
+    "read": "Lue opas",
+    "allGuides": "Kaikki oppaat",
+    "cta": "Löysitkö seuraavan suosikkisi?",
+    "ctaSub": "Avaa se LoloBuyssa ja hanki omaksesi.",
+    "ctaButton": "Tutustu kaikkiin löytöihin",
+    "footer": "Riippumaton tuotteiden löytösivusto. Emme ole LoloBuyn virallinen verkkosivusto. Tuoteilmoitukset ja kuvat ovat lähteestä cnfanssp.com. Ostokset tehdään LoloBuyssa.",
+    "footerLinks": [
+      "Tuoteluettelo",
+      "Osto-opas",
+      "Kuvahaku",
+      "Usein kysytyt kysymykset"
+    ],
+    "back": "Takaisin tuoteluetteloon",
+    "sourceListing": "Lähteen alkuperäinen ilmoitus",
+    "seller": "Myyjän ilmoitus",
+    "sourcePrice": "Lähteen hinta · CNY",
+    "productId": "Myyjän tuotetunnus",
+    "gallery": "Ilmoituksen kuvat",
+    "qc": "QC-kuvat",
+    "qcNote": "Lähde tarjoaa tämän tuotteen ilmoituskuvat. Ne eivät ole varmennettuja varaston QC-kuvia. Tarkista omaan LoloBuy-tilaukseesi liitetty laadunvalvonta ennen lähettämistä.",
+    "priceNote": "Vain tuotteen hinta. Vahvista nykyinen saatavuus, vaihtoehdot sekä toimitus- ja palvelumaksut LoloBuyssa ennen tilaamista.",
+    "photoTitle": "Löydä se kuvalla.",
+    "photoIntro": "Etsi ja vertaa tuotteita lähteen luettelossa.",
+    "photoState": "Kuvahaku lähteessä",
+    "photoNote": "cnfanssp.com-sivustolla ei ole varmennettu julkista kuvahakupalvelua. Kuvien lataaminen ei ole käytössä ennen kuin lähteen palvelu on saatavilla.",
+    "browseInstead": "Selaa tuotteita",
+    "faqTitle": "LoloBuy: vastauksia ennen tilaamista.",
+    "faqIntro": "Tutkittu LoloBuyn virallisilta ohjesivuilta. Kun virallisten sivujen tiedot eroavat toisistaan, vastaus kertoo, mitä tulee tarkistaa.",
+    "guideLabel": "KÄYTÄNNÖN OPAS",
+    "guideTitle": "Ensimmäinen LoloBuy-tilauksesi vaihe vaiheelta.",
+    "guideIntro": "Tuotteen löytämisestä sen tarkistamiseen varastossa: käytännöllinen lähtökohta.",
+    "updated": "Tarkistettu lokakuussa 2026",
+    "related": "Lisää tutkittavaa",
+    "home": "Etusivu",
+    "aboutPhotos": "Lähteen ilmoituskuvat",
+    "catalogLive": "Lähteen ajantasainen luettelo",
+    "catalogCached": "Näytetään viimeisin täydellinen lähdetietojen tallenne.",
+    "catalogLoading": "Päivitetään lähteen luetteloa…",
+    "catalogError": "Lähde ei ole tilapäisesti käytettävissä. Yritä uudelleen tai avaa alkuperäinen luettelo.",
+    "retry": "Yritä uudelleen",
+    "loading": "Ladataan…",
+    "productError": "Tuotetta ei voitu ladata. Yritä uudelleen tai tarkista alkuperäinen ilmoitus.",
+    "pageOf": "/",
+    "jump": "Siirry sivulle",
+    "go": "Siirry",
+    "articlesLabel": "Artikkelit",
+    "articlesTitle": "Syvällistä tietoa LoloBuy-ostoksista.",
+    "articlesIntro": "Kymmenen käytännöllistä opasta LoloBuyn virallisten ohjesivujen pohjalta. Löydä tuotteita, tarkista QC, budjetoi ja suunnittele toimitukset selkeämpien tietojen avulla.",
+    "articleSources": "Viralliset lähteet",
+    "reviewed": "Tarkistettu 20. lokakuuta 2026",
+    "readArticle": "Lue artikkeli",
+    "allArticles": "Kaikki artikkelit",
+    "contents": "Tällä sivulla",
+    "checklist": "Käytännön tarkistuslista",
+    "summary": "Yhdellä silmäyksellä",
+    "reading": "min lukuaika",
+    "faqSearch": "Hae kysymyksiä…",
+    "noQuestions": "Vastaavia kysymyksiä ei löytynyt.",
+    "officialHelp": "Lue virallinen ohje",
+    "skip": "Siirry sisältöön",
+    "menu": "Valikko",
+    "close": "Sulje",
+    "languageSearch": "Valitse kielesi",
+    "catalogNote": "Hinnat ja saatavuus voivat muuttua.",
+    "articleFooter": "Riippumatonta toimituksellista opastusta. Tarkista tilaustasi koskevat ehdot ennen maksamista tai lähettämistä.",
+    "notFound": "Tuotetta ei löytynyt",
+    "showMore": "Näytä kaikki",
+    "findSteps": "LÖYDÄ. TARKISTA. TILAA.",
+    "nextFind": "SEURAAVA LÖYTÖ ON SINUN.",
+    "liveLabel": "Päivitetty lähteestä",
+    "faqCount": "tutkittua vastausta",
+    "catalogue": "Luettelo"
+  },
+  "faqs": [
+    {
+      "id": "what-is-lolobuy",
+      "category": "Aloittaminen",
+      "question": "Mitä LoloBuy tekee?",
+      "answer": "LoloBuy toimii ostoagenttina: annat myyjän ilmoituksen, valitset tuotteen, maksat ostoksen ja Kiinan sisäisen toimituksen ja tarkistat sitten varastovaiheen ennen kansainvälisen toimituksen järjestämistä. Myyjä toimittaa tavarat. Tuotelinkki tai luettelomerkintä on lähtökohta tilauksen tarkistamiseen, ei vahvistus nykyisestä saatavuudesta.",
+      "sourceIds": [
+        "buying",
+        "service"
+      ]
+    },
+    {
+      "id": "place-order",
+      "category": "Aloittaminen",
+      "question": "Miten tilaan LoloBuyn kautta?",
+      "answer": "Liitä alkuperäinen tuotelinkki LoloBuyhin, tarkista tuotu ilmoitus ja valitse täsmällinen väri, koko ja määrä. Tarkista tuotteen hinta, kotimaan toimitus ja mahdolliset pyydetyt palvelut ennen maksamista. LoloBuyn virallinen opas erottaa tämän jälkeen oston, varastotarkastuksen ja kansainvälisen paketin lähetyspyynnön omiksi vaiheikseen.",
+      "sourceIds": [
+        "buying"
+      ]
+    },
+    {
+      "id": "manual-order",
+      "category": "Aloittaminen",
+      "question": "Entä jos LoloBuy ei pysty lukemaan tuotelinkkiäni?",
+      "answer": "Virallinen osto-opas kuvaa ostoagentin manuaalisen tilauslomakkeen tilanteisiin, joissa automaattinen tuonti ei ole käytettävissä. Täytä tuotteen todelliset tiedot ja valitut vaihtoehdot ja tarkista tilaus ennen lähettämistä. Älä korvaa markkinapaikan tuotetunnusta tuoteluettelon sisäisellä sivunumerolla: ne yksilöivät eri tietueet.",
+      "sourceIds": [
+        "buying"
+      ]
+    },
+    {
+      "id": "domestic-delivery",
+      "category": "Tilaukset ja maksaminen",
+      "question": "Voiko usealla tuotteella olla yksi yhteinen Kiinan toimitusmaksu?",
+      "answer": "LoloBuyn kotimaan toimituksia koskeva ohje kuvaa yhden maksun, kun saman myyjän tuotteet lähetetään tilattaviksi ja maksetaan yhdessä. Poikkeuksellisen suuri tai painava tilaus voi vaatia lisätoimitusmaksun. Järjestely ei automaattisesti yhdistä eri myyjien maksuja eikä sisällä kansainvälistä toimitusta.",
+      "sourceIds": [
+        "domestic"
+      ]
+    },
+    {
+      "id": "seller-promotion",
+      "category": "Tilaukset ja maksaminen",
+      "question": "Miten pyydän LoloBuyta käyttämään myyjän alennuksen?",
+      "answer": "Kirjaa todellinen kampanja tai ilmaisen kotimaan toimituksen tarjous tilauksen huomautuksiin, jotta ostoagentti voi tarkistaa sen myyjältä. Virallinen ohje kertoo myös Order Enquiry -toiminnon käyttämisestä, jos kampanjatiedot jäivät pois. Ilmoitettu alennus on tarkistettava; tuoteluettelo ei voi luvata vanhan tarjouksen olevan edelleen voimassa.",
+      "sourceIds": [
+        "promotions"
+      ]
+    },
+    {
+      "id": "change-order",
+      "category": "Tilaukset ja maksaminen",
+      "question": "Voinko muuttaa kokoa tai väriä tilaamisen jälkeen?",
+      "answer": "LoloBuy kertoo voivansa neuvotella muutoksesta ennen kuin myyjä lähettää tuotteen. Lähettämisen jälkeen ohjesivu kuvaa sen sijaan mahdollista palautusta varastosta ja uutta tilausta sekä palautustoimituksen kuluja. Lähetä pyyntö oikean tilauksen yhteydessä viipymättä ja odota hyväksyntää ennen kuin oletat valinnan muuttuneen.",
+      "sourceIds": [
+        "changes"
+      ]
+    },
+    {
+      "id": "confirmation-message",
+      "category": "Tilaukset ja maksaminen",
+      "question": "Mitä Pending for Confirmation tarkoittaa?",
+      "answer": "Jotkin tilaustiedot tarvitsevat vahvistuksesi. Lue tilaukseen liitetty viesti ja vastaa siihen. Virallinen ohje ohjaa ostettujen tilausten kysymykset Shopping Agent Order -osioon ja varastovaiheen kysymykset My Warehouse -osioon, jossa voidaan pyytää hyväksymis- tai palautuspäätöstä. Valikkojen nimet voivat vaihdella; seurannan päivityksen odottaminen ei vastaa pyyntöön.",
+      "sourceIds": [
+        "confirmation",
+        "confirmation-path"
+      ]
+    },
+    {
+      "id": "received-in-stock",
+      "category": "Varasto ja QC",
+      "question": "Mitä eroa on Received- ja In Stock -tiloilla?",
+      "answer": "Virallinen tilaopas käyttää Received-tilaa, kun varasto on kuitannut myyjän paketin ja tarkastus on käynnissä. In Stock tarkoittaa, että laadunvalvonta on valmis ja tuotteet on varastoitu varastoluetteloosi. Vastaanotto varastossa ei siis tarkoita, että oma QC-tarkistuksesi tai kansainvälinen lähetys olisi jo valmis.",
+      "sourceIds": [
+        "status"
+      ]
+    },
+    {
+      "id": "qc-checks",
+      "category": "Varasto ja QC",
+      "question": "Mitä tavallinen QC tarkistaa?",
+      "answer": "LoloBuyn tavallinen tarkastus katsoo näkyviä tilaustietoja, kuten tyyliä, määrää, väriä, kokoa, mallia ja selviä vaurioita. Tutustu varsinaiseen tarkastuspalveluun yhdessä tilauskuviesi kanssa. Silmämääräinen tarkastus ei takaa aitoutta, täsmällistä istuvuutta tai pitkäaikaista kestävyyttä.",
+      "sourceIds": [
+        "qc"
+      ]
+    },
+    {
+      "id": "inspection-exclusions",
+      "category": "Varasto ja QC",
+      "question": "Testataanko sinetöidyt tuotteet ja elektroniikka kokonaan?",
+      "answer": "Ei. Tarkastussäännöt kuvaavat sinetöityjen tuotteiden poikkeuksia ja sulkevat nimenomaisesti pois ammattielektroniikan ja vastaavien tuotteiden aitous-, toiminta- ja laatutestit. Ilman tarkastusta -vaihtoehdossa varasto tarkistaa rajoitukset mutta ei varmista tuotetta eikä tarjoa QC-kuvia. Tarkista valittu palvelu ennen kuin luotat tarkastustulokseen.",
+      "sourceIds": [
+        "qc"
+      ]
+    },
+    {
+      "id": "qc-photos",
+      "category": "Varasto ja QC",
+      "question": "Voinko pyytää lisää QC-kuvia?",
+      "answer": "Palveluyhteenveto kuvaa lisäkuvien pyytämisen. Kuvauspalvelun sivu tarjoaa myös Secondary Quality Inspection -palvelun, kun tarkastus ohitettiin ennen varastointia. Viralliset sivut ilmoittavat eri vakiomääriä kuville. Tarkista valitsemasi palvelu ja pyydä juuri puuttuva näkymä tai mittaus sen sijaan, että olettaisit jokaisen tilauksen sisältävän saman määrän kuvia.",
+      "sourceIds": [
+        "service",
+        "photos",
+        "qc"
+      ]
+    },
+    {
+      "id": "storage-period",
+      "category": "Varasto ja QC",
+      "question": "Kuinka kauan tuotteita voi säilyttää LoloBuyn varastossa?",
+      "answer": "Erillinen varastointisivu ja nykyinen tilaopas ilmoittavat tavallisten varastoitujen tuotteiden ajaksi 180 päivää, kun vanhempi osto-opas sanoo yhä 90. Poikkeaville, kohdistamattomille paketeille on omat sääntönsä. Tarkista omalle tuotteellesi näkyvä määräaika ja järjestä toimitus tai mahdollinen jatkoaika ennen sen päättymistä; älä luota pelkästään vanhempaan oppaaseen.",
+      "sourceIds": [
+        "storage",
+        "status",
+        "buying"
+      ]
+    },
+    {
+      "id": "consolidate",
+      "category": "Toimitus ja seuranta",
+      "question": "Voinko lähettää useita ostoksia yhdessä paketissa?",
+      "answer": "Osto-opas kuvaa varastoitujen tuotteiden valitsemisen My Warehouse -osiossa ja yhteisen toimituspyynnön tekemisen. Tarkista, että kaikki valitut tuotteet ovat läpäisseet tarvittavan tarkistuksen ja että käytettävissä oleva reitti hyväksyy muodostuvan paketin. Tuotteiden yhdistäminen muuttaa pakattua lähetystä mutta ei takaa pienempää kokonaistoimitusmaksua.",
+      "sourceIds": [
+        "buying"
+      ]
+    },
+    {
+      "id": "remove-packaging",
+      "category": "Toimitus ja seuranta",
+      "question": "Voiko LoloBuy poistaa laatikoita ennen toimitusta?",
+      "answer": "Package Removal -palvelun voi valita toimituspyyntöä tehtäessä. Virallisen kuvauksen mukaan tarpeelliset suojapakkaukset säilytetään. Jos tarvitset alkuperäiset laatikot lahjaa, säilytystä tai mahdollista palautusta varten, huomioi tämä ennen poistamisen valintaa. Lopullinen pakkaus ja toimitusmaksu riippuvat tavaroista ja valitusta lähetyksestä.",
+      "sourceIds": [
+        "packaging"
+      ]
+    },
+    {
+      "id": "shipping-price",
+      "category": "Toimitus ja seuranta",
+      "question": "Miksi lopullinen toimitusmaksu voi poiketa arviosta?",
+      "answer": "Alkuperäinen toimitusmaksu perustuu arvioituun painoon sekä valittuun kohteeseen ja reittiin. Pakkaaminen voi muuttaa painoa ja mittoja, ja logistiikkapalvelun veloitus ratkaisee lopullisen tasauksen. LoloBuy kertoo palauttavansa liikaa maksetun osuuden tai pyytävänsä lisämaksua, jos todellinen toimitusmaksu poikkeaa arviosta. Tarkista paketin lopullinen tarjous ja tiliviesti.",
+      "sourceIds": [
+        "weight",
+        "freight-balance"
+      ]
+    },
+    {
+      "id": "volumetric-weight",
+      "category": "Toimitus ja seuranta",
+      "question": "Mitä tilavuuspaino tarkoittaa?",
+      "answer": "Se muuntaa paketin mitat painoksi, jota käytetään tilaa vievien tavaroiden laskutukseen. LoloBuyn ohje erottaa reittikohtaiset kaavat ja kertoo laskutuspainon voivan olla todellisen painon ja tilavuuspainon suurempi arvo. Käytä valitulle reitillesi näytettyä jakajaa ja pyöristyssääntöjä, älä yleistä kilohintaväitettä.",
+      "sourceIds": [
+        "weight"
+      ]
+    },
+    {
+      "id": "supplemental-payment",
+      "category": "Toimitus ja seuranta",
+      "question": "Mitä teen toimituksen lisämaksuilmoitukselle?",
+      "answer": "Avaa kyseinen paketti ja tarkista päivitetty veloitus sekä vahvistuspyyntö. LoloBuyn lisämaksusäännöissä on erilaisia käsittelyrajoja ja tilanteita, joissa paketti voidaan pysäyttää tai perua. Vastaa paketillesi näkyvään määräaikaan mennessä ja maksa hyväksymäsi saldo; älä käsittele alkuperäistä arviota lopullisena hintana.",
+      "sourceIds": [
+        "freight-balance"
+      ]
+    },
+    {
+      "id": "tracking",
+      "category": "Toimitus ja seuranta",
+      "question": "Missä voin seurata kansainvälistä pakettiani?",
+      "answer": "Virallinen osto-opas ohjaa lähetyksen jälkeen kohtaan My LoloBuy → Parcels. Tilaopas erottaa Packed- ja Shipped-tilat: pakattu paketti voi vielä odottaa lopullisen painon vahvistusta, kun taas Shipped tarkoittaa, että sillä on seurantanumero ja se on luovutettu kuljetusliikkeelle. Lue uusin kuljetusliikkeen tapahtuma yhdessä tilin tilatiedon kanssa.",
+      "sourceIds": [
+        "buying",
+        "status"
+      ]
+    },
+    {
+      "id": "cancellation",
+      "category": "Palautukset ja jälkipalvelu",
+      "question": "Voinko perua tilauksen ennen sen saapumista varastoon?",
+      "answer": "Peruminen riippuu tilauksen tämänhetkisestä vaiheesta. Käytä kyseisen tilauksen perumis- tai palautus/hyvitysvaihtoehtoa. Kun tuote on ostettu, myyjän vahvistus voi olla tarpeen; lähetetty pyyntö ei ole hyväksytty hyvitys. Tarkista tilauksen vastaus ennen korvaavan ostoksen tekemistä.",
+      "sourceIds": [
+        "cancellation",
+        "refunds"
+      ]
+    },
+    {
+      "id": "eligible-return",
+      "category": "Palautukset ja jälkipalvelu",
+      "question": "Mitä LoloBuyn viiden päivän palautussääntö kattaa?",
+      "answer": "Erillinen sääntö kuvaa palautuskelpoisille tavaroille 120 tunnin pyyntöajan, joka alkaa seuraavasta täydestä tunnista Stocked in -tilan jälkeen. Myyjän suostumus, tuotteen kunto ja vaadittu pakkaus ovat edelleen ehtoja. Virheettömän tuotteen palautuksesta voi aiheutua molemmat kotimaan toimitusmaksut ja käsittelymaksu. Tarkista kelpoisuus ja varsinainen pyyntösivu viipymättä.",
+      "sourceIds": [
+        "returns"
+      ]
+    },
+    {
+      "id": "refund-destination",
+      "category": "Palautukset ja jälkipalvelu",
+      "question": "Minne hyväksytty hyvitys maksetaan?",
+      "answer": "Palautusohje kuvaa yleensä hyväksyttyjen hyvitysten lisäämisen LoloBuy-tilin saldoon. Se kuvaa erikseen rajatun poikkeuksen, jossa tietyt hyväksyntää odottavat PayPal-tilaukset hyvitetään alkuperäiselle maksutavalle. Tämä ei lupaa, että kaikki hyvitykset tulevat suoraan pankkikortille, eikä osoita kaikkien maksutapojen olevan tällä hetkellä käytössä.",
+      "sourceIds": [
+        "refunds"
+      ]
+    },
+    {
+      "id": "delivery-problem",
+      "category": "Palautukset ja jälkipalvelu",
+      "question": "Mitä teen, jos toimitettu paketti on vaurioitunut tai väärä?",
+      "answer": "Avaa kyseinen paketti kohdassa My LoloBuy → Parcels ja käytä Apply After-sales -toimintoa. Kuvaa ongelma ja säilytä selkeät kuvat paketista ja tuotteesta. Virallisessa artikkelissa on ristiriitaisia reklamaatioaikoja, myös aikaisempi varoitus, joten ilmoita ongelmasta heti ja hanki tapauskohtainen vahvistus yleisen määräajan odottamisen sijaan.",
+      "sourceIds": [
+        "claims"
+      ]
+    },
+    {
+      "id": "sizing",
+      "category": "Tuotevalinnat",
+      "question": "Miten valitsen vaatteen tai kengän koon?",
+      "answer": "LoloBuyn koko-ohje varoittaa kauppojen erilaisten standardien mahdollisuudesta. Vertaa varsinaisen myyjän mittataulukkoa, yksiköitä ja valittua vaihtoehtoa omiin mittoihisi tai hyvin istuvaan tuotteeseen. Muuntotaulukot ovat viitteitä, eivät takuu siitä, että sama kokomerkintä sopii kaikilla myyjillä. Kysy puuttuvista mitoista ennen tilaamista.",
+      "sourceIds": [
+        "sizing"
+      ]
+    },
+    {
+      "id": "1688",
+      "category": "Tuotevalinnat",
+      "question": "Ovatko 1688-tilausten osto- ja tarkastussäännöt samat?",
+      "answer": "Virallinen 1688-opas edellyttää myyjän vähimmäismäärää; hinnat ja kotimaan toimitus voivat vaihdella määrän mukaan. Tarkastussäännöt erottavat otannalla tarkastettavat A-tyypin tuotteet B-tyypin tuotteista, joille ei tehdä tavallista QC:tä. Vahvista määrä, tarkastuksen laajuus ja palautusehdot ennen maksamista sen sijaan, että olettaisit vähittäistilausten käytäntöjen pätevän.",
+      "sourceIds": [
+        "wholesale",
+        "qc"
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "slug": "using-lolobuy-spreadsheet",
+      "title": "Näin käytät LoloBuy-tuoteluetteloa: muuta tuotelinkki hyödylliseksi valintalistaksi",
+      "description": "Löydä tuotteita kategorioittain, vertaa täsmällistä ilmoitusta ja säilytä tarvitsemasi tiedot ennen tuotteen avaamista LoloBuyssa.",
+      "keyword": "lolobuy spreadsheet",
+      "category": "Aloittaminen",
+      "summary": "Hyödyllinen tuoteluettelo auttaa rajaamaan hakua. Hyödyllinen valintalista tallentaa täsmällisen tuotteen, vaihtoehdon ja avoimet kysymykset, joita tarvitset tilausta varten.",
+      "sections": [
+        {
+          "heading": "Aloita ostopäätöksestä, älä pitkästä listasta",
+          "paragraphs": [
+            "LoloBuy-tuoteluettelo on tuotteiden löytämisen työkalu. Voit selata kategoriaa, katsella tuotekuvia ja siirtyä ilmoituksesta seuraavaan vaiheeseen. Se ei tarkoita, että luettelon julkaisija olisi ostanut jokaisen tuotteen, testannut myyjän tai varannut valitsemasi koon. Käsittele jokaista riviä tarkistettavana vihjeenä.",
+            "Kirjoita ennen hakua tarvitsemasi tuotetyyppi, olennaiset mitat ja likimääräinen tuotebudjetti. Mustan vetoketjuhupparin etsiminen on hyödyllisempää kuin jokaisen houkuttelevan vaatetuslinkin kerääminen. Rajatumpi kysymys auttaa myös huomaamaan, milloin ilmoituksesta puuttuu olennaisia tietoja."
+          ]
+        },
+        {
+          "heading": "Säilytä tuotteen alkuperäinen tunniste",
+          "paragraphs": [
+            "Luettelosivun osoitteen numero voi olla paikallinen tietuetunnus. Se voi erota ostolinkissä käytetystä markkinapaikan tuotetunnuksesta. Älä muuta numeroita käsin saadaksesi linkin näyttämään oikealta. Käytä vastaavaa tuotepainiketta ja vertaa avautuvaa tuotetta ilmoitukseen, josta aioit ostaa.",
+            "Tallenna alkuperäinen myyjäosoite yhdessä valitsemasi vaihtoehdon kanssa. Kuvakaappaus voi säilyttää hyödyllisen näkymän, mutta siitä on vähemmän hyötyä, jos et tiedä, mihin myyjään, kokoon tai väriin se liittyy. Jos linkki avaa eri tuotteen tai tyhjän ilmoituksen, pysähdy tarkistamaan ennen jatkamista."
+          ]
+        },
+        {
+          "heading": "Vertaa keskenään vastaavia vaihtoehtoja",
+          "paragraphs": [
+            "Alkaen-hinta voi koskea halvinta vaihtoehtoa, yksittäistä asustetta tai eri määrää. Vertaa samaa tuotekokoonpanoa eri ilmoituksissa. Kaksiosainen asu ja pelkkä yläosa eivät ole mielekäs hintavertailu, vaikka niiden pienoiskuvat näyttäisivät samanlaisilta.",
+            "Tarkista, näyttääkö galleria valitun värin ja onko kokotaulukkoa saatavilla. Samat kuvat eri myyjillä eivät osoita samaa rakennetta tai varastotilannetta. Kirjaa vertailuun olemassa oleva näyttö ja jätä selkeä aukko kohtaan, jossa jotain tärkeää ei tiedetä."
+          ],
+          "bullets": [
+            "Täsmällinen tuote ja myyjän osoite",
+            "Valittu koko, väri ja määrä",
+            "Kyseisen vaihtoehdon nykyinen hinta",
+            "Mitat tai kokotaulukon viite",
+            "Yksi avoin kysymys ennen tilausta"
+          ]
+        },
+        {
+          "heading": "Siirry viralliseen ostoprosessiin",
+          "paragraphs": [
+            "LoloBuyn osto-opas kuvaa markkinapaikkalinkin lähettämisen, vaihtoehtojen valinnan sekä tuotteen ja kotimaan toimituksen maksamisen. Se kuvaa myös manuaalisen tilauslomakkeen tilanteisiin, joissa tuotetietoja ei voi hakea automaattisesti. Linkin onnistunut avaaminen on siis vasta tilauksen tarkistamisen alku.",
+            "Tarkista kuva, vaihtoehdon teksti ja määrä uudelleen virallisella tuotesivulla. Luettelo ei voi taata nykyistä saatavuutta tai säilyttää valintaa, jota et ole valinnut kassalla. Muotoile erityisvaatimus niin täsmällisesti, että ostaja voi toimia sen perusteella, esimerkiksi tarkka värin nimi tai mittakysymys."
+          ]
+        },
+        {
+          "heading": "Erota löytämiseen käytetyt kuvat omasta QC:stäsi",
+          "paragraphs": [
+            "Myyjän galleria selittää tarjouksen. Aikaisempi varastokuva voi näyttää jonkun muun tuotteen. Omaan tilaukseesi liitetyt tarkastuskuvat ovat näyttö, joka tulee tarkistaa ennen juuri sen tuotteen lähettämistä ulkomaille. Nämä kolme kuvatyyppiä vastaavat eri kysymyksiin eivätkä korvaa toisiaan.",
+            "Pidä valintalista tilauksen mukana. Kun tuote saapuu varastoon, vertaa tallennettua vaihtoehtoa näkyvään kokolappuun, väriin ja määrään. Poikkeama on helpompi selittää, kun alkuperäinen valinta ja tilausviite ovat yhdessä."
+          ]
+        },
+        {
+          "heading": "Tee valintalistasta hyödyllinen myös oston jälkeen",
+          "paragraphs": [
+            "Säilytä vain vahvimmat ehdokkaat ja kirjaa, miksi kukin selvisi vertailusta. Yhdellä hupparilla voi esimerkiksi olla selkeämpi mittataulukko, kun toisessa kangastieto jää avoimeksi. Näin linkkikokoelmasta tulee päätös, johon voit palata aloittamatta tutkimusta uudelleen.",
+            "Lue tilaus- ja budjettioppaat ennen ostamista. Lue QC- ja toimitusoppaat ennen paketin lähetyspyyntöä. Tuoteluettelo on hyödyllisimmillään yhdistäessään nämä vaiheet sen sijaan, että se esittäisi tuotteen hinnan toimitetun tilauksen koko kustannuksena."
+          ]
+        }
+      ],
+      "checklist": [
+        "Tallenna täsmällinen lähdeosoite ja vaihtoehto.",
+        "Vertaa samoja määriä ja kokoonpanoja.",
+        "Selvitä puuttuvat mitat ennen maksamista.",
+        "Tarkista LoloBuyhin tuotu ilmoitus.",
+        "Tarkista tilauskohtainen QC ennen lähettämistä."
+      ],
+      "sourceIds": [
+        "buying",
+        "qc"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 651
+    },
+    {
+      "slug": "how-to-order-on-lolobuy",
+      "title": "Näin tilaat LoloBuyssa: tuotelinkit, vaihtoehdot ja maksuvaiheet",
+      "description": "Seuraa tilausta markkinapaikkalinkistä varastotarkastukseen ja erilliseen kansainvälisen paketin lähetyspyyntöön.",
+      "keyword": "miten tilata lolobuyssa",
+      "category": "Tilaaminen",
+      "summary": "Tarkista tuote ennen maksua, varaston näyttö ennen toimitusta ja pakettitarjous ennen lähettämistä. Kukin vaihe vastaa eri kysymykseen.",
+      "sections": [
+        {
+          "heading": "Aloita viralliselta sivustolta",
+          "paragraphs": [
+            "Käytä rekisteröitymiseen, kirjautumiseen ja maksamiseen LoloBuyn virallista verkkosivustoa. Tämä riippumaton luettelo auttaa löytämisessä; se ei kerää salasanasi eikä käsittele tilaustasi. Tarkista kohde tuotetta avatessa ja pidä ostokeskustelut liitettyinä oikeaan tilaukseen.",
+            "Virallinen osto-opas kertoo aloittamaan tuetun kiinalaisen markkinapaikan tuotelinkillä. Valitsemasi tuotteen toimittaa ilmoituksen myyjä. Tämä ero on tärkeä, sillä ostopalvelu ja myyjä eivät hallitse samoja osia kaupasta."
+          ]
+        },
+        {
+          "heading": "Tarkista tuotu tuote",
+          "paragraphs": [
+            "Liitä alkuperäinen tuotelinkki tai käytä luettelon vastaavaa LoloBuy-painiketta. Vertaa avautuvaa sivua lähteeseen ennen vaihtoehtojen valintaa. Tarkista pääkuva, tuotteen nimi, saatavilla olevat myyjätiedot, valittu väri, koko ja määrä. Älä luota pelkkään kuvaan.",
+            "Jos sivu tarjoaa ostoagentin manuaalisen lomakkeen, virallinen opas neuvoo syöttämään tilaustiedot käsin. Täytä ne varsinaisesta ilmoituksesta puuttuvien vaihtoehtojen arvaamisen sijaan. Selvitä epäselvä pakollinen tieto tilauskyselyn kautta ennen kuin pyydät ostajaa jatkamaan."
+          ],
+          "bullets": [
+            "Tuote vastaa alkuperäistä osoitetta",
+            "Vaihtoehdon teksti vastaa aiottua väriä ja kokoa",
+            "Määrä ja yksikköhinta koskevat samaa kokoonpanoa",
+            "Erityisvaatimukset on kirjoitettu selkeästi"
+          ]
+        },
+        {
+          "heading": "Ymmärrä ensimmäinen maksu",
+          "paragraphs": [
+            "Virallinen ostoprosessi erottaa tuotteen ja Kiinan sisäisen toimituksen myöhemmästä kansainvälisestä paketista. Tarkista ensimmäinen maksu rivi riviltä. Kohteen valinta oston aikana ei tarkoita, että näkyvä tuotesumma sisältäisi kaikki tavaroiden sinne toimittamiseen tarvittavat kulut.",
+            "Maksutavat, valuutat ja lisäpalvelut tulee tarkistaa nykyisessä kassassa. Ohjeartikkelin yleinen lista ei lupaa kaikkien menetelmien olevan käytössä tililläsi tai tilauksessasi. Säilytä maksutosite ja vertaa sitä tilauksen tilaan sen sijaan, että maksaisit uudelleen sivun hitaan päivityksen vuoksi."
+          ]
+        },
+        {
+          "heading": "Vastaa tilauskysymyksiin",
+          "paragraphs": [
+            "LoloBuy käyttää Pending for Confirmation -tilaa vahvistettaville tiedoille. Ohjesivu ohjaa ostajan tilauksen ohjeisiin. Lue varsinainen kysymys ja vastaa siihen: se voi ratkaista, pystyykö ostotiimi jatkamaan.",
+            "Virallinen muutosohje erottaa tuotteet, joita myyjä ei ole lähettänyt, jo lähetetyistä. Ennen lähetystä ostaja voi kysyä myyjältä muutoksesta; sen jälkeen voidaan tarvita palautus ja uusi tilaus. Pyydetty muutos ei ole valmis ennen kuin tilausmerkintä vahvistaa sen."
+          ]
+        },
+        {
+          "heading": "Tarkista saapuminen ja tarkastus",
+          "paragraphs": [
+            "Saapuminen varastoon ja valmis tarkastus ovat eri vaiheita. Etsi tuote varasto-osiosta ja vertaa kuvia sekä kirjattua vaihtoehtoa ostokseesi. Tarkista ensin tuotteen identiteetti ja sitten sinulle tärkeät näkyvät yksityiskohdat. Selvitä ilmeinen poikkeama ennen tuotteen lisäämistä kansainväliseen pakettiin.",
+            "Älä oleta kaikkien tuotteiden saavan samaa tarkastusta. Virallinen tavallisen tarkastuksen käytäntö kuvaa sinetöityjen tuotteiden rajoituksia ja joidenkin 1688-tilausten erityiskäsittelyä. Jos tarvitset tietyn mitan tai näkymän, tarkista sen saatavuus tilauksellesi sen sijaan, että pitäisit yleistä QC-kuvaa todisteena kaikesta."
+          ]
+        },
+        {
+          "heading": "Käsittele paketin lähetyspyyntö omana päätöksenään",
+          "paragraphs": [
+            "Virallinen prosessi neuvoo valitsemaan varastoidut tuotteet, syöttämään toimitustiedot ja valitsemaan saatavilla olevista toimitustavoista. Tarkista kohde, rajoitukset, pakkausvalinnat ja toimitusennakko yhdessä. Ostettu tuote ei automaattisesti ole lähetysvalmis kansainvälinen paketti.",
+            "Lopullinen toimitusmaksu voi muuttua pakkaamisen ja logistiikkamittauksen jälkeen. Seuraa pakettitiedoista oikaisuja ja vahvistuspyyntöjä. Lähettämisen jälkeen käytä pakettiosiota seurantaan, säilytä tilausviitteet ja tarkista sisältö nopeasti toimituksen saapuessa."
+          ]
+        }
+      ],
+      "checklist": [
+        "Vahvista alkuperäinen tuote ja täsmällinen vaihtoehto.",
+        "Tarkista tuote- ja kotimaan toimitusmaksut.",
+        "Vastaa odottaviin vahvistuspyyntöihin.",
+        "Tarkista varastokuvat ja avoimet asiat.",
+        "Tarkista erillinen kansainvälisen paketin tarjous."
+      ],
+      "sourceIds": [
+        "buying",
+        "confirmation",
+        "changes",
+        "qc",
+        "freight-balance"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 640
+    },
+    {
+      "slug": "lolobuy-qc-photos",
+      "title": "LoloBuy QC-kuvat: käytännön tarkistuslista ennen lähettämistä",
+      "description": "Erota myyjän kuvat omasta varastotarkastuksestasi ja tarkista identiteetti, näkyvä kunto sekä vielä näyttöä tarvitsevat yksityiskohdat.",
+      "keyword": "lolobuy qc kuvat",
+      "category": "Laadun tarkistus",
+      "summary": "Aloita tilaamastasi tuotteesta ja vaihtoehdosta. Päätä sitten saatavilla olevien näkymien avulla, mikä on selvää, mikä tarvitsee lisäkuvan ja mikä on ratkaistava ennen lähetystä.",
+      "sections": [
+        {
+          "heading": "Tunnista tarkastelemasi näyttö",
+          "paragraphs": [
+            "Tuotegalleria on osa myyjän tarjousta. QC-viitekuva voi näyttää aikaisemman tilauksen. Omat varastokuvasi liittyvät ostostasi varten vastaanotettuun tuotteeseen. Pidä kategoriat erillään päätöstä tehdessäsi, etenkin jos tuotteella on useita värejä, versioita tai kokoja.",
+            "Aloita yhdistämällä tilausviite, tuote ja valittu vaihtoehto. Yksityiskohtainen kuva väärästä versiosta ei anna hyödyllistä varmuutta. Jos kuvajoukkoa ei voi liittää varastossasi olevaan tuotteeseen, pyydä yhteyden vahvistusta ennen ulkonäön arviointia."
+          ]
+        },
+        {
+          "heading": "Tarkista identiteetti ennen pieniä yksityiskohtia",
+          "paragraphs": [
+            "Tarkista ensin koko, väri, määrä ja malli. Etsi yhtenäisiä etikettejä ja näkymiä samasta tuotteesta. Kuvajoukko voi näyttää hyvältä mutta sisältää väärän kokolapun tai vajaan setin. Vertaa näkymää tallennettuun tilausvalintaan muistiin luottamisen sijaan.",
+            "Kenkäparista tarkista molemmat kengät ja näkyvät kokomerkinnät. Vaatteesta tarkista valittu väri ja merkitty koko. Laukusta tai asustesetistä tarkista odotettujen osien näkyminen. Nämä ovat käytännöllisiä tarkistusvaiheita, eivät takuu jokaisen piilossa olevan yksityiskohdan tarkastamisesta."
+          ]
+        },
+        {
+          "heading": "Käytä kategoriakohtaista tarkistuslistaa",
+          "paragraphs": [
+            "Vaatteille hyödyllisiä näkymiä ovat kokonaismuoto, etu- ja takaosa, saumat, painatus tai kirjonta sekä kohdat, joissa istuvuus riippuu mitasta. Kengissä tarkista pari yhdessä, näkyvä rakenne ja pyydetty koko. Laukun sulkimet, kahvat ja sisäkuvat voivat vastata eri kysymyksiin.",
+            "Kirjaa vain päätökseesi vaikuttavat yksityiskohdat. Pitkä yleislista voi viedä huomion yhdestä olennaisesta puuttuvasta mitasta tai vaurioituneesta sulkimesta. Jos etukuva on selvä mutta takakuva puuttuu, pyydä puuttuva näkymä saman kulman uuden yleiskuvan sijaan."
+          ],
+          "bullets": [
+            "Vahvista identiteetti ja valittu vaihtoehto",
+            "Tarkista näkyvä kunto ja rakenne",
+            "Vertaa pyydettyjä mittoja",
+            "Erota puuttuvat näkymät havaituista vioista"
+          ]
+        },
+        {
+          "heading": "Ymmärrä tavallisen palvelun rajat",
+          "paragraphs": [
+            "LoloBuyn tavallisen tarkastuksen sivu kuvaa ulkonäkötarkastuksia ja poikkeuksia. Sinetöityjä tuotteita ei erityisesti aina avata, eikä tiettyjen ammatti- tai elektroniikkatuotteiden aitoutta, toimintaa tai laatua testata. Joissakin 1688-tilauksissa käytetään otantaa tai erilaisia tarkastussääntöjä.",
+            "Viralliset sivut eivät ilmoita yhtä yhteistä kuvakiintiötä: tarkastussivu ja laajempi palvelusivu kuvaavat eri määriä. Tarkista tilaukseesi liitetty palvelu tarkan kuvamäärän olettamisen sijaan. Hyödyllinen kysymys on, kattaako saatavilla oleva näyttö päätettävän asian."
+          ]
+        },
+        {
+          "heading": "Pyydä täsmällinen lisänäkymä",
+          "paragraphs": [
+            "Kohdennettu pyyntö kertoo tilauksen, kuvattavan alueen ja syyn. Esimerkiksi: ”Näytä kokolappu ja mittaa vaatteen tasainen rinnan leveys saumasta saumaan.” Se on selkeämpää kuin kysymys tuotteen hyvyydestä. Tarkista palvelun saatavuus ja maksu ennen lisätyön pyytämistä.",
+            "Käytä samaa mittaustapaa kuin myyjän taulukossa. Tasaisen vaatteen leveys ja kehon ympärysmitta ovat eri suureita. Pidä kuva ja mitta yhdessä, jotta lukua ei sekoiteta toisen koon tai tuotteen mittaan."
+          ]
+        },
+        {
+          "heading": "Tee dokumentoitu päätös",
+          "paragraphs": [
+            "Jaa havainnot vahvistettuihin, epäselviin ja hyväksymättömiin. Jos yksityiskohta on epäselvä, pyydä näyttöä. Jos tuote näyttää poikkeavan tilauksesta, käytä asiaankuuluvaa tuki- tai palautusprosessia ennen kansainvälistä lähetystä. Säilytä lyhyt ongelmakuvaus ja sitä osoittavat kuvat.",
+            "Kuvat eivät osoita kaikkia materiaaliominaisuuksia, mukavuutta, pitkäaikaista kestävyyttä tai sisäistä toimintaa. Näkyvän kunnon hyväksyminen on rajatumpi päätös. Lue palautusehdot tuotteen ollessa vielä varastossa äläkä käsittele onnistunutta QC:tä lupauksena tullista tai kansainvälisestä toimituksesta."
+          ]
+        }
+      ],
+      "checklist": [
+        "Yhdistä kuvat omaan tilaukseesi.",
+        "Tarkista ensin koko, väri, malli ja määrä.",
+        "Pyydä täsmällinen puuttuva näkymä tai mittaus.",
+        "Tarkista tarkastuspalvelu ja sen poikkeukset.",
+        "Ratkaise merkittävät ongelmat ennen lähetyspyyntöä."
+      ],
+      "sourceIds": [
+        "qc",
+        "photos",
+        "service",
+        "sizing"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 643
+    },
+    {
+      "slug": "lolobuy-shipping-costs",
+      "title": "LoloBuyn toimituskulut: vertaa koko pakettia",
+      "description": "Ymmärrä arvioitu paino, todellinen paino ja tilavuuspaino ja vertaa reittejä samalla kohteella, sisällöllä ja pakkausvalinnoilla.",
+      "keyword": "lolobuy toimituslaskuri",
+      "category": "Toimitus",
+      "summary": "Hyödyllinen toimitusvertailu alkaa yhdestä selkeästi määritellystä paketista. Opas selittää tarvittavat tiedot ja tarkistukset; se ei ole ajantasainen toimitustarjous.",
+      "sections": [
+        {
+          "heading": "Erota tuotehinta toimituksesta",
+          "paragraphs": [
+            "Tuotteen vieressä oleva hinta ei ole koko toimitettu kustannus. LoloBuyn virallinen prosessi erottaa tuoteoston ja kotimaan toimituksen myöhemmästä kansainvälisen toimituksen ennakosta. Voit arvioida budjetin ennen ostoa, mutta et tehdä lopullista pakettivertailua pelkällä tuotehinnalla.",
+            "Kirjoita kohde, suunniteltu sisältö ja säilytettävä pakkaus. Kenkäpari laatikossa ja sama pari ilman laatikkoa ovat eri pakkauspäätöksiä. Lisätuotteet voivat muuttaa painoa ja mittoja, joten pieni lisäostos voi vaikuttaa lopputarjoukseen usealla tavalla."
+          ]
+        },
+        {
+          "heading": "Tiedä, mitä painoa vertaat",
+          "paragraphs": [
+            "LoloBuyn paino-opas erottaa arvion pakatun paketin todellisesta painosta. Varastotuotetieto sisältää alkuperäispakkauksen, kun loppupakettiin kuuluu myös ulkopakkaus ja poistamis- tai vahvistamisvalinnat. Vaiheet voivat tuottaa eri mittatuloksia.",
+            "Tilavuuspaino kuvaa pakkauksen viemää tilaa. Virallinen opas julkaisee eri reiteille eri laskentajakajia. Älä käytä yhtä jakajaa kaikille kuljettajille tai oleta vanhan esimerkin olevan nykyinen hinnasto. Käytä lähettämäsi paketin reitin nykyisiä ehtoja."
+          ],
+          "bullets": [
+            "Kohde ja postinumero",
+            "Tuoterajoitukset ja sisältö",
+            "Todellinen pakattu paino",
+            "Pituus, leveys ja korkeus",
+            "Reittikohtaiset laskutussäännöt ja sisältyvät palvelut"
+          ]
+        },
+        {
+          "heading": "Laske esimerkkejä esittämättä niitä tarjouksina",
+          "paragraphs": [
+            "Vain havainnollistavana esimerkkinä 40 × 30 × 20 senttimetrin paketin tilavuus on 24 000 kuutiosenttimetriä. Kuvitteellinen reitti jakajalla 6 000 tuottaa 4 kilogramman tilavuuspainon; jakaja 5 000 tuottaa 4,8 kilogrammaa. Kumpikaan laskelma ei anna toimitushintaa.",
+            "Esimerkki osoittaa reittisäännön merkityksen. Tarvitset edelleen todellisen painon, laskutusportaat, kohteen ja nykyisen hinnan. Älä valitse reittiä otsikon kilohinnan perusteella, kun maksu riippuu ensimmäisestä yksiköstä, lisäyksiköistä tai suuremmasta laskutuspainosta."
+          ]
+        },
+        {
+          "heading": "Vertaa samaa pakettia eri reiteillä",
+          "paragraphs": [
+            "Pidä lähtötiedot samoina vertaillessasi käytettävissä olevia linjoja. Tarkista hyväksytty sisältö, ilmoitettu kuljetusarvio, seuranta, pakkausvaatimukset ja mahdollinen lisäsuoja. Pienempi alkusumma ei ole täydellinen vertailu, jos palvelut tai rajoitukset eroavat.",
+            "Käsittele toimitusarvioita arvioina. Varastokäsittely, kuljetus ja kohdemaan prosessit ovat eri vaiheita. Opas ei lupaa yleistä toimitusaikaa, verotonta reittiä tai kiinteää tullimaksua. Käytä päätökseen nykyistä tarjousta ja kohteen virallisia sääntöjä."
+          ]
+        },
+        {
+          "heading": "Punnitse pakkausvalinnan hyötyjä ja haittoja",
+          "paragraphs": [
+            "Virallinen pakkausten poistosivu kuvaa tarpeettoman ulkopakkauksen poistamisen säilyttäen tavaroiden tarvitseman suojan. Se neuvoo myös välttämään poistoa, kun alkuperäispakkaus on tärkeä lahjan tai säilyttämisen vuoksi. Tilavuuden vähentäminen voi auttaa, mutta suoja ja oston tarkoitus ovat edelleen tärkeitä.",
+            "Pyydä täsmällinen pakkausvalinta kaiken poistamisen yleisohjeen sijaan. Vertaa loppumittoja, jos ne ovat saatavilla. Yhdistäminen tai pakkausten poisto ei automaattisesti pienennä laskua jokaisella reitillä, ja herkästi vaurioituva tuote voi tarvita lisää suojaa."
+          ]
+        },
+        {
+          "heading": "Seuraa lopullista tasausta",
+          "paragraphs": [
+            "LoloBuyn lisämaksuohje kertoo arvioidun toimitusmaksun tasaamisesta logistiikkapalvelun todelliseen veloitukseen. Tämä voi tarkoittaa liikamaksun palautusta tai lisämaksupyyntöä. Lue pakettiviestit ja vastaa lähetykseesi liitettyihin pyyntöihin.",
+            "Pidä alkuarvio, lopulliset laskutettavat mitat, valitut palvelut ja oikaisu yhdessä. Näin eron ymmärtäminen helpottuu. Budjetoi mahdolliset kohdekulut erikseen ja tarkista paketin loppusumma ennen kuin katsot tilauksen valmiiksi."
+          ]
+        }
+      ],
+      "checklist": [
+        "Vertaa reittejä samalla sisällöllä ja kohteella.",
+        "Tarkista todellisen ja tilavuuspainon säännöt.",
+        "Huomioi pakkauksen suoja päätöksessä.",
+        "Erota arviot lopullisista veloituksista.",
+        "Lue paketin oikaisutiedot ennen lähetystä."
+      ],
+      "sourceIds": [
+        "buying",
+        "weight",
+        "packaging",
+        "freight-balance"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 604
+    },
+    {
+      "slug": "lolobuy-warehouse-consolidation",
+      "title": "LoloBuyn varasto-opas: tarkastus, säilytys ja yhdistäminen",
+      "description": "Järjestä varastoidut tuotteet, ratkaise QC-kysymykset ja valitse pakkaus koko paketti huomioiden.",
+      "keyword": "lolobuy varasto",
+      "category": "Varasto",
+      "summary": "Varastovaiheessa voit yhdistää ostotiedot vastaanotettuun tuotteeseen ja päättää, mitä voidaan lähettää yhdessä.",
+      "sections": [
+        {
+          "heading": "Erota saapuminen valmiudesta",
+          "paragraphs": [
+            "Myyjän toimitusskannaus tarkoittaa kotimaan paketin saapuneen matkansa tiettyyn kohtaan. Se ei yksin osoita tuotteen olevan tarkastettu, oikein kohdistettu ja valmis kansainväliseen lähetykseen. LoloBuyn tilaopas erottaa vastaanotetut tavarat, tarkastuksen ja varastoidun saldon.",
+            "Käytä työlistana varastotietoa yksittäisen seurantaviestin sijaan. Säilytä jokaisesta tuotteesta tilausnumero, valittu vaihtoehto ja QC-tila. Jos useita myyjäpaketteja saapuu yhdessä, tämä estää valmiin tuotteen peittämästä toisen avoimia kysymyksiä."
+          ]
+        },
+        {
+          "heading": "Tee pieni varaston tarkistuslista",
+          "paragraphs": [
+            "Kirjaa kustakin tuotteesta tilattu asia, varaston näyttämät tiedot ja ratkaisemattomat asiat. Neljä saraketta riittää: tuote, oikea vaihtoehto, tarkastuspäätös ja pakkausohje. Tarkoitus on pitää avoin kysymys näkyvissä ennen paketin kokoamista.",
+            "Vertaa kuvia alkuperäiseen valintaan. Puuttuva kuva ja näkyvä vika tarvitsevat erilaiset toimet. Epäselvästä yksityiskohdasta pyydä asiaankuuluvaa näyttöä. Ilmeisestä poikkeamasta kerro ero tilausviitteineen ja harkitse soveltuvaa palautusprosessia."
+          ],
+          "bullets": [
+            "Tilaus ja täsmällinen vaihtoehto",
+            "Varaston vastaanotto- ja tarkastustila",
+            "Avoin kysymys tai palautuspyyntö",
+            "Säilytä tai poista alkuperäispakkaus",
+            "Valmis kansainväliseen pakettiin: kyllä tai ei"
+          ]
+        },
+        {
+          "heading": "Tarkista säilytyksen määräaika suoraan",
+          "paragraphs": [
+            "Virallisessa materiaalissa on ristiriitaisia säilytysaikoja: osto-opas mainitsee 90 päivää, varastointi- ja tilasivut 180 päivää. Varastointisivu kuvaa myös kohdistamattomien poikkeavien pakettien erilliskäsittelyn. Näitä eroja ei pidä tiivistää yhdeksi ehdottomaksi lupaukseksi.",
+            "Tarkista omaan tuotteeseesi liitetyt säilytystiedot ja selvitä ristiriidat ennen määräaikaan luottamista. Kirjaa päivämäärä ja mahdollinen valitsemasi maksullinen jatkoaika. Älä jätä tavaroita odottamaan määräämättömästi siksi, että yleisartikkeli antaa pidemmän ajan kuin nykyinen varastotieto."
+          ]
+        },
+        {
+          "heading": "Yhdistä yhteensopivat tuotteet, joiden asiat on ratkaistu",
+          "paragraphs": [
+            "Virallinen osto-opas kuvaa varastotuotteiden valitsemisen kansainväliseen toimitukseen tai lisäostosten tekemisen ja yhteislähetyksen myöhemmin. Yhdistäminen auttaa suunnittelemaan paketin kokonaisuutena. Se ei tee kaikista yhdistelmistä hyväksyttäviä jokaiselle reitille.",
+            "Huomioi rajoitukset, hauraus ja avoimet asiat ennen yhdistämistä. Palautuspäätöstä odottavaa tuotetta ei pidä käsitellä valmiina. Herkkä asuste voi tarvita erilaisen suojauksen kuin vaatteet. Vertaa lopullisen paketin mittoja ja painoa, älä vain tuotteiden lukumäärää."
+          ]
+        },
+        {
+          "heading": "Kirjoita täsmälliset pakkausohjeet",
+          "paragraphs": [
+            "LoloBuyn pakkausten poisto-ohje kuvaa tarpeettoman pakkauksen poistamisen säilyttäen tuotteen tarvitseman suojan. Jos tarvitset alkuperäispakkauksen lahjaan tai kokoelmaan, jätä poistaminen valitsematta ja tee vaatimus selväksi. Laatikon arvo ei aina vastaa sen toimituspainoa.",
+            "Käytä tarvittaessa tuotekohtaisia ohjeita: säilytä hauraan tuotteen suojatuki, pidä yksi myyntilaatikko tai kysy saatavilla olevaa pakkausvalintaa. Tarkista mahdollinen lisäpalvelumaksu nykyisessä pakettilomakkeessa. Älä oleta saman pakkaustavan sopivan kaikkiin kategorioihin."
+          ]
+        },
+        {
+          "heading": "Tee paketin lopputarkistus",
+          "paragraphs": [
+            "Vahvista tuotelista, määrät, vastaanottajatiedot, valittu reitti ja palvelut ennen lähetyspyyntöä. Tarkista, että kaikki aiotut tuotteet ovat mukana eikä avoimen ongelman tuotetta ole päätynyt pakettiin. Lyhyt tarkistus on helpompi kuin valinnan selvittäminen pakkaamisen jälkeen.",
+            "Viralliset paino- ja toimituksen tasaussivut selittävät loppumittojen mahdollisen vaikutuksen veloitukseen. Seuraa pakettiviestejä pyynnön jälkeen, myös vahvistus- ja lisämaksupyyntöjä. Lähettämisen jälkeen käytä pakettiseurantaa ja säilytä varaston näyttö toimituksen tarkistamiseen asti."
+          ]
+        }
+      ],
+      "checklist": [
+        "Tarkista jokainen tuote ennen valmiiksi merkitsemistä.",
+        "Katso oman varastotietosi määräaika.",
+        "Pidä palautuskysymykset erillään lähetysvalmiista tuotteista.",
+        "Määritä kullekin tuotteelle sopiva pakkaus.",
+        "Tarkista lopullinen pakettisisältö ja toimitusoikaisut."
+      ],
+      "sourceIds": [
+        "buying",
+        "status",
+        "storage",
+        "packaging",
+        "freight-balance"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 612
+    },
+    {
+      "slug": "lolobuy-sizing-guide",
+      "title": "LoloBuyn koko-opas: vertaa mittoja ennen kokomerkinnän valintaa",
+      "description": "Käytä myyjän taulukkoa, yhtenäisiä mittaustapoja ja kohdennettuja varastokuvia selkeämpään kokopäätökseen.",
+      "keyword": "lolobuy koko-opas",
+      "category": "Koot",
+      "summary": "Tuttu kokomerkintä on lähtökohta. Hyödyllinen vertailu tehdään myyjän mittojen, omien vertailumittojesi ja haluamasi istuvuuden välillä.",
+      "sections": [
+        {
+          "heading": "Aloita myyjän taulukosta",
+          "paragraphs": [
+            "LoloBuyn virallinen koko-ohje kertoo kokostandardien voivan vaihdella kauppojen välillä ja pitää muunnostietoja viitteellisinä. Medium-merkintä tai tuttu kengänkoko ei osoita jokaisen myyjän tuotteen istuvuutta. Lue täsmällisen ilmoituksen ja vaihtoehdon taulukko.",
+            "Tarkista, kuvaavatko numerot kehoa, valmista vaatetta vai suositeltua käyttäjää. Nämä ovat eri mittoja. Jos taulukko ei tee eroa selväksi, kysy ennen tilausta sen sijaan, että valitsisit tottumuksesta suuremman tai pienemmän koon."
+          ]
+        },
+        {
+          "heading": "Mittaa luotettava vertailutuote",
+          "paragraphs": [
+            "Vertaa vaatteita omistamaasi vaatteeseen, joka istuu haluamallasi tavalla. Aseta se tasaisesti ja käytä samoja pisteitä kuin myyjän kaaviossa. Kirjaa yksiköt ja se, mitataanko leveys yhden puolen poikki vai kehon ympäri. Säilytä mitat ja nopea kuva mittaustavasta.",
+            "Kehon mitoissa seuraa asiaankuuluvaa ohjetta ja pidä nauha suorassa kiristämättä sitä haluttuun kokoon. Istuva paita, rento huppari ja rakenteellinen takki tarvitsevat eri väljyyden. Haluttu siluetti on osa päätöstä, ei taulukon virhe."
+          ]
+        },
+        {
+          "heading": "Valitse merkitykselliset mitat",
+          "paragraphs": [
+            "Yläosassa rinnan leveys, vartalon pituus, hartiat ja hiha vastaavat eri istuvuuskysymyksiin. Housuissa tarkista vyötärö, haarakorkeus, sisälahje ja kokonaispituus. Yksi vyötäröluku ei kerro lahkeen sijoittumista, eikä rinnanympärys yksin osoita hihan pituutta.",
+            "Esimerkiksi vertailupaitasi voi olla rinnasta 56 senttimetriä leveä ja 70 senttimetriä pitkä. Vaihtoehto mitoilla 56 ja 64 voi olla samanlevyinen mutta selvästi lyhyempi. Tämä havainnollistaa vertailutapaa, ei suosittele tiettyä kokoa tai tuotetta."
+          ],
+          "bullets": [
+            "Vahvista mittayksiköt",
+            "Vertaa kehon mittoja kehon taulukoihin",
+            "Vertaa tasaisia vaatteen mittoja vaatetaulukoihin",
+            "Vertaa useaa istuvuuden kannalta tärkeää mittaa",
+            "Kirjaa haluttu rento tai istuva siluetti"
+          ]
+        },
+        {
+          "heading": "Tarkista jalkineet erikseen",
+          "paragraphs": [
+            "Virallinen koko-opas suosittelee suuremman jalan käyttämistä jalkojen erikokoisuuden tapauksessa ja huomauttaa, etteivät pituusmerkinnät kuvaa leveyttä täysin. Lue myyjän jalkinetaulukko ja tarkista valitun vaihtoehdon järjestelmä. Älä oleta EU-, US- tai UK-numeron siirtyvän täydellisesti kaikkien ilmoitusten välillä.",
+            "Mittaa taulukon ohjeen mukaan ja huomioi sukat, leveys ja käyttötarkoitus. Varastokuvan näkyvä kenkämerkintä voi vahvistaa lähetetyn tuotteen mutta ei sitä, miltä kenkä tuntuu jalassa. Älä pidä pohjalliskuvaa yleispätevänä muuntotaulukkona."
+          ]
+        },
+        {
+          "heading": "Käytä QC:tä täsmälliseen kysymykseen",
+          "paragraphs": [
+            "Vertaa näkyvää kokolappua tilaukseen ennen lähetystä. Jos tärkeä vaatemitta on epävarma, pyydä sitä selkeillä alku- ja loppupisteillä. Pyydä esimerkiksi tasaista rinnan leveyttä saumasta saumaan pelkän ”tarkista koko” -pyynnön sijaan.",
+            "LoloBuyn tarkastuspolitiikalla on rajat eikä se lupaa täydellistä istuvuusarviota. Tarkista, onko mitta tai lisäkuva saatavilla tuotteellesi ja maksaako se. Tavallista kuvajoukkoa ei pidä kuvata henkilökohtaiseksi kokoneuvonnaksi."
+          ]
+        },
+        {
+          "heading": "Päätä vaihtoehtojen ollessa vielä avoinna",
+          "paragraphs": [
+            "Jos saatu merkintä eroaa valinnasta, dokumentoi poikkeama sekä tilauksen että kuvan avulla. Jos merkintä täsmää mutta mitta ei sovi, tarkista myyjän palautusehdot ja nykyinen tilausprosessi nopeasti. Nämä ovat eri tilanteita, jotka tulee kuvata täsmällisesti.",
+            "Mitat vähentävät epävarmuutta mutta eivät poista leikkauksen, jouston, kangastuntuman tai mieltymysten eroja. Säilytä taulukko ja vertailumerkinnät, jotta hyvä istuvuus voi auttaa tulevassa ostossa. Tarkista varsinainen ilmoitus uudelleen tilatessa, sillä toinen myyjä tai versio voi käyttää eri mittoja."
+          ]
+        }
+      ],
+      "checklist": [
+        "Käytä täsmällisen ilmoituksen taulukkoa.",
+        "Pidä yksiköt ja mittaustavat yhtenäisinä.",
+        "Vertaa useita istuvuuden keskeisiä mittoja.",
+        "Tarkista vastaanotettu kokolappu ja pyydetty mitta.",
+        "Ratkaise istuvuuskysymykset ennen kansainvälistä lähetystä."
+      ],
+      "sourceIds": [
+        "sizing",
+        "qc",
+        "returns"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 648
+    },
+    {
+      "slug": "lolobuy-tracking-guide",
+      "title": "LoloBuyn seuranta: erota tilaus kansainvälisestä paketista",
+      "description": "Lue osto-, varasto- ja pakettivaiheet oikein ja kerää hyödyllistä näyttöä, kun seurantapäivitys on epäselvä.",
+      "keyword": "lolobuy seuranta",
+      "category": "Seuranta",
+      "summary": "Tilauksen tila ja kuljettajan skannaus kuvaavat matkan eri osia. Pidä tuotteen, kotimaan paketin ja kansainvälisen paketin viitteet erillään.",
+      "sections": [
+        {
+          "heading": "Tiedä, mitä seuraat",
+          "paragraphs": [
+            "Tuotteella voi olla ostotilaus, myyjän kotimaan lähetys ja myöhempi kansainvälinen paketti. Tiedot liittyvät toisiinsa, mutta eivät ole sama lähetys. Kotimaan toimitusviesti voi tarkoittaa saapumista varastoon eikä kotiisi.",
+            "Tee tilauksen edetessä yksinkertainen viitelista: tuote-/tilausnumero, mahdollinen myyjän seurantaviite, varastotuotetieto ja kansainvälisen paketin numero. Näin oikeasta vaiheesta kysyminen helpottuu ilman toisesta matkasta kertovan kuvakaappauksen lähettämistä tuelle."
+          ]
+        },
+        {
+          "heading": "Lue ensin ostovaiheet",
+          "paragraphs": [
+            "LoloBuyn virallinen tilaopas erottaa maksun odottamisen, käsittelyn, tilaamisen ja myyjän lähettämän tilan. Käsittely koskee ostoprosessia; se ei tarkoita kansainvälisen kuljettajan siirtävän pakettiasi. Lue tilan sanamuoto ennen ulkomaanseurannan päivityksen etsimistä.",
+            "Sama opas kuvaa vastaanotetut tavarat ja tarkastuksen jälkeisen varastoinnin. Jos kotimaan kuljettaja ilmoittaa toimitetuksi mutta varastotarkastus on kesken, tiedot voivat kuvata peräkkäisiä vaiheita ristiriidan sijaan. Tarkista tuote ja vahvistuspyynnöt seuraavan tarvittavan toimen selvittämiseksi."
+          ]
+        },
+        {
+          "heading": "Lue sitten pakettivaiheet",
+          "paragraphs": [
+            "Luodun kansainvälisen paketin tilalla on oma järjestyksensä. Virallinen sivu kuvaa maksun odottamisen, käsittelyn, pakkaamisen ja lähettämisen. Se myös neuvoo seuraamaan toimitusmuutoksia loppupunnituksen jälkeen. Luotua pakettia ei pidä sekoittaa lähetettyyn.",
+            "Käytä varsinaista tietuetta pelkän viitenumeron olemassaolon sijaan. Etiketti tai numero voidaan valmistella ennen seuraavaa näkyvää kuljetustapahtumaa. Järjestelmiä verratessa huomioi, mikä sivu ilmoittaa luovutuksesta ja minkä tapahtuman kuljettaja on todella kirjannut."
+          ],
+          "bullets": [
+            "Osto-/tilausviite",
+            "Kansainvälisen paketin viite",
+            "Kuljettajan seurantanumero",
+            "Viimeisin tapahtuma, paikka ja aikaleima",
+            "Odottava vahvistus tai maksu"
+          ]
+        },
+        {
+          "heading": "Tulkitse hiljaisia jaksoja varoen",
+          "paragraphs": [
+            "Skannausten väli ei itsessään kerro syytä. Tarkista valitun reitin nykyinen arvio, viimeisin tapahtuma ja reittiä koskeva virallinen tiedote. Älä muuta vanhan viestin tavallista kestoa paketillesi luvatuksi määräajaksi.",
+            "Vältä toistuvaa eri seurantasivujen avaamista ja jokaisen sanamuotoeron tulkitsemista uudeksi tapahtumaksi. Pidä päivätty kirjaus olennaisista muutoksista. Jos vaihe vaikuttaa ristiriitaiselta tai pyydetään toimintaa, esitä juuri kyseinen asia paketti- tai tilaustuen kautta."
+          ]
+        },
+        {
+          "heading": "Lähetä hyödyllinen tukikysymys",
+          "paragraphs": [
+            "Anna tilaus- tai pakettitunnus, seurantanumero, viimeisin näkyvä tapahtuma ja kysymys, johon tarvitset vastauksen. Esimerkiksi: ”Pakettitieto kertoo lähetetystä, mutta kuljettaja ei näytä luovutusta. Voitteko vahvistaa luovutuksen tilan?” Tämä on helpommin käsiteltävä kuin ”Missä kaikki on?”",
+            "LoloBuyn osto-opas ohjaa lähetyksen jälkeen pakettiosioon seurantaa varten. Käytä mahdollisuuksien mukaan kyseiseen tietueeseen liitettyä kyselyä. Älä sisällytä seurantatapahtumaa koskevaan viestiin asiaankuulumattomia tilitietoja tai maksutunnuksia."
+          ]
+        },
+        {
+          "heading": "Säilytä näyttö toimitukseen asti",
+          "paragraphs": [
+            "Tarkista ulkoinen kunto ja sisältö nopeasti paketin saapuessa. Säilytä pakkaus, etiketti ja selkeät kuvat, jos tuote on väärä, puuttuu tai on vaurioitunut. Vertaa vastaanotettuja tuotteita lopulliseen pakettilistaan aiemman valintalistan sijaan, jossa voi olla lähettämättömiä tuotteita.",
+            "Virallinen paketin jälkipalvelusivu pyytää yksityiskohtaista kuvausta ja kuvia väärästä tai vaurioituneesta tuotteesta, mutta määräajat ovat ristiriitaisia. Toimi nopeasti ja varmista soveltuva määräaika nykyisestä tukiprosessista. Älä odota siksi, että yleisopas näyttää antavan pidemmän ajan."
+          ]
+        }
+      ],
+      "checklist": [
+        "Erota kotimaan ja kansainväliset viitteet.",
+        "Tarkista, onko paketti luotu, pakattu vai lähetetty.",
+        "Lue viimeisin tapahtuma aikaleimoineen.",
+        "Lähetä tuelle täsmällinen, dokumentoitu kysymys.",
+        "Tarkista toimitus nopeasti ja säilytä olennainen näyttö."
+      ],
+      "sourceIds": [
+        "status",
+        "buying",
+        "claims",
+        "freight-balance"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 618
+    },
+    {
+      "slug": "lolobuy-returns-refunds",
+      "title": "LoloBuyn palautukset ja hyvitykset: toimi oikeassa tilausvaiheessa",
+      "description": "Valmistele näyttö, tarkista myyjän kelpoisuusehdot ja ymmärrä perumisen, tuotepalautuksen ja pakettireklamaation ero.",
+      "keyword": "lolobuy palautukset hyvitykset",
+      "category": "Jälkipalvelu",
+      "summary": "Palautuspäätös riippuu tuotteesta, myyjästä ja nykyisestä tilausvaiheesta. Selkeä näyttö ja nopea pyyntö auttavat enemmän kuin oletus yhdestä säännöstä kaikille ostoksille.",
+      "sections": [
+        {
+          "heading": "Tunnista tarvitsemasi prosessi",
+          "paragraphs": [
+            "Ostamattoman tilauksen peruminen, varastossa olevan tuotteen palautus ja ongelmasta ilmoittaminen kansainvälisen toimituksen jälkeen ovat eri prosesseja. Aloita nykyisen tilaus- tai pakettitilan tarkistamisesta. Oikea painike ja tiedot voivat riippua kaupan etenemisestä.",
+            "LoloBuyn perumis- ja palautussivut kuvaavat useita tilariippuvaisia vaiheita ja myyjän osallistumista. Pyyntö ei ole sama kuin hyväksyntä. Lue tilaukseen liitetty vastaus ja seuraa, mikä on hyväksytty, mikä odottaa ja mitä sinulta vielä tarvitaan."
+          ]
+        },
+        {
+          "heading": "Säilytä täsmällinen näyttö",
+          "paragraphs": [
+            "Pidä tuotteen osoite, valittu vaihtoehto, tilausvahvistus ja olennaiset kuvat yhdessä. Jos huoli on väärä kokolappu, näytä tilattu vaihtoehto ja vastaanotettu lappu. Jos huoli on vaurio, näytä selkeä kokonaiskuva ja lähikuva kyseisestä kohdasta. Kuvaa poikkeama liioittelematta.",
+            "Esimerkiksi ”Tilasin sinisen L-koon; varastokuvassa näkyy musta M-merkintä” yksilöi tarkistettavan poikkeaman. ”Huono laatu” on paljon epätarkempi. Jos kuvat eivät osoita ongelmaa riittävän selvästi, pyydä puuttuva näyttö ennen halutun ratkaisun valitsemista."
+          ],
+          "bullets": [
+            "Tilausnumero ja lähdeilmoitus",
+            "Valittu vaihtoehto ja määrä",
+            "Selkeä ongelman kuvaus",
+            "Olennaiset tilauskohtaiset kuvat",
+            "Toivottu ratkaisu: selvitys, peruminen, palautus tai vaihto"
+          ]
+        },
+        {
+          "heading": "Lue kelpoisuus ja aikarajat yhdessä",
+          "paragraphs": [
+            "Virallinen palautustakuusivu kuvaa kelpoisuusehdot ja pyyntöajan varastoinnin jälkeen. Se kertoo myös myyjän suostumuksen tarpeesta. Muut ohjesivut käyttävät erilaisia tai epäselviä aikamuotoiluja. Tarkista määräaika ja saatavilla oleva palvelu varsinaisesta tilauksesta ja ilmoita huolesta nopeasti.",
+            "Pakkaus ja jälleenmyyntikunto voivat vaikuttaa. Älä määrää poistamaan mahdollisesti palautukseen tarvittavaa pakkausta ennen ehtojen ymmärtämistä. Käytetyt tuotteet, erikoistilaukset ja muut kategoriat voivat noudattaa eri sääntöjä; yleinen ehdottomien palautusten lupaus olisi harhaanjohtava."
+          ]
+        },
+        {
+          "heading": "Kysy soveltuvista kustannuksista",
+          "paragraphs": [
+            "Palautustakuuohje erottaa palautuksen syyn ja käsittelee kotimaan kuljetus- ja palvelumaksuja. Myyjän alkuperäinen ilmaistoimitus ei välttämättä tee myöhemmästä palautuksesta ilmaista. Kysy oman pyyntösi kuluja ennen jatkamisen hyväksymistä.",
+            "Pidä vastaus tilaustiedoissa. Selvitä, sisältääkö summa kuljetuksen takaisin myyjälle, mahdollisen alkuperäisen kotimaan toimituksen ja palvelumaksun. Alustan käsittelyetu ja myyjän toimituskulut ovat eri asioita, eikä niitä pidä yhdistää epämääräiseen ”ilmainen palautus” -väitteeseen."
+          ]
+        },
+        {
+          "heading": "Seuraa hyvityksen kohdetta ja tilaa",
+          "paragraphs": [
+            "Virallinen palautusohje kuvaa yleensä hyväksyttyjen hyvitysten menevän LoloBuy-tilin saldoon sekä erillisen poikkeuksen tiettyihin alkuperäisiin maksutilanteisiin. Tilihyvitys ja ulkoiselle maksutavalle palautettu raha ovat eri lopputuloksia. Tarkista soveltuva tapa ennen oletusta rahojen saapumisesta pankkitilille.",
+            "Myyjän hyväksyntä, palautustuotteen vastaanotto ja hyvityksen valmistuminen voivat olla eri vaiheita. Säilytä palautuspaketin viite, jos se annetaan. Viivettä kysyessäsi kerro viimeisin valmis vaihe uuden pyynnön aloittamisen sijaan, josta puuttuu aiempi palautustieto."
+          ]
+        },
+        {
+          "heading": "Käsittele toimitetun paketin ongelmat erikseen",
+          "paragraphs": [
+            "Toimituksen jälkeisiin ongelmiin viralliset ohjeet osoittavat kyseisen paketin jälkipalveluhakemuksen ja pyytävät tarkkaa kuvausta sekä kuvia. Säilytä ulkopakkaus ja etiketti tuotekuvien lisäksi. Ne yhdistävät vaurion tai poikkeaman lähetykseen.",
+            "Virallisessa sivussa on ristiriitaisia määräaikoja. Ilmoita ongelmasta nopeasti ja hanki soveltuva aikaraja suoraan nykyisestä prosessista. Opas ei lupaa hyväksyntää, yleistä hyvitysaikaa tai korvausta kaikentyyppisille menetyksille."
+          ]
+        }
+      ],
+      "checklist": [
+        "Tarkista nykyinen tilaus- tai pakettivaihe.",
+        "Dokumentoi täsmällinen poikkeama tai vaurio.",
+        "Vahvista kelpoisuus, määräaika ja pakkausvaatimukset.",
+        "Kysy kaikista soveltuvista palautuskuluista.",
+        "Seuraa hyväksyntää ja hyvityksen todellista kohdetta."
+      ],
+      "sourceIds": [
+        "refunds",
+        "cancellation",
+        "returns",
+        "claims",
+        "changes"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 626
+    },
+    {
+      "slug": "lolobuy-order-budget",
+      "title": "LoloBuy-tilauksen budjetti: katso tuotehintaa pidemmälle",
+      "description": "Erota tuotekulut, kotimaan toimitus, lisäpalvelut, valuutanvaihto ja kansainvälinen toimitus ennen sitoutumista tilaukseen.",
+      "keyword": "lolobuy maksut",
+      "category": "Budjetointi",
+      "summary": "Hyödyllinen budjetti erottaa vahvistetut summat arvioista. Pidä tuoteosto ja myöhempi pakettimaksu näkyvissä kahtena toisiinsa liittyvänä päätöksenä.",
+      "sections": [
+        {
+          "heading": "Hinnoittele todella ostamasi vaihtoehto",
+          "paragraphs": [
+            "Luettelohinta on vertailun lähtökohta. Valitulla värillä, koolla, setillä tai määrällä voi olla eri nykyhinta virallisella tilaussivulla. Tarkista täsmällinen kokoonpano ennen sen käyttämistä budjetissa, etenkin jos lähdeilmoitus näyttää hintavälin.",
+            "Vertaa summaa ja valuuttaa samassa vaiheessa. Kirjattu tuotehinta, kassan loppusumma ja korttilasku voivat sisältää eri osia. Älä nimeä eroa piilomaksuksi ennen määrän, toimituksen, muunnon ja valittujen palvelujen tarkistamista."
+          ]
+        },
+        {
+          "heading": "Erota kaksi päämaksuvaihetta",
+          "paragraphs": [
+            "LoloBuyn virallinen ostoprosessi kerää ensin tuotteiden ja Kiinan sisäisen toimituksen maksun. Kansainvälinen toimitus käsitellään varastotuotteiden lähetyspyynnössä. Vain ensimmäisen maksun budjetoinut ostaja voi päätyä varastovaiheeseen ilman riittäviä lähetysrahoja.",
+            "Tee yksinkertainen taulukko kulueristä ja merkitse kukin vahvistetuksi tai arvioiduksi. Pidä lisäpalvelut näkyvissä tuotehintaan piilottamisen sijaan. Mahdolliset kohdekulut tarvitsevat oman rivin, sillä luettelohinta ei määritä niitä."
+          ],
+          "bullets": [
+            "Valitut tuotteet ja määrät",
+            "Kiinan sisäinen toimitus",
+            "Valitut osto- tai varastopalvelut",
+            "Kansainvälinen toimitus ja pakkauspalvelut",
+            "Kassalla näkyvät maksu- tai valuutanvaihtokulut",
+            "Mahdolliset kohdemaan verot tai käsittelymaksut"
+          ]
+        },
+        {
+          "heading": "Lue kotimaan toimituksen ehdot",
+          "paragraphs": [
+            "Virallinen kotimaan toimitusohje kertoo saman myyjän yhdessä tilattujen ja maksettujen tuotteiden voivan jakaa toimitusmaksun, johon voi tulla lisäys ylipainosta. Tämä on täsmällinen ehto, ei lupaus kaikkien ostoskorin tuotteiden yhteisestä maksusta.",
+            "Tarkista kunkin tuotteen myyjä ja tilauksen ryhmittely. Suurempi määrä voi muuttaa myyjän hintaa tai toimitusehtoja, erityisesti tukkuilmoituksissa. Säilytä nykyinen tilauslaskelma sen sijaan, että jakaisit aiemman toimitusmaksun asiaankuulumattomille ostoksille."
+          ]
+        },
+        {
+          "heading": "Tarkista maksu- ja valuuttatiedot",
+          "paragraphs": [
+            "Tarkista virallisessa kassassa tarjotut tavat, veloitusvaluutta ja näkyvät kulut ennen vahvistamista. Saatavuus voi riippua tilistä ja tapahtumasta. Yleinen ohjesivun lista ei osoita tietyn tavan olevan tarjolla tilauksellesi tänään.",
+            "Jos maksupalvelu tarjoaa valuuttamuunnosta, vertaa lopullista veloitusta ja siellä näkyviä ehtoja. Säilytä kuitti tilauksen mukana. Älä lupaa kiinteää vaihtokurssia tai oleta edellisen oston muunnon pätevän seuraavaan."
+          ]
+        },
+        {
+          "heading": "Käsittele alennuksia tarkistettavina",
+          "paragraphs": [
+            "LoloBuyn kampanjaohje kertoo myyjän tarjoustietojen lisäämisestä tilauksen huomautuksiin ostajan vahvistettavaksi. Banneri tai kuvakaappaus ei todista täsmällisen vaihtoehtosi ja määrän täyttävän ehtoja edelleen. Kirjaa ehdot ja pyydä vahvistus tilausprosessissa.",
+            "Pidä alennus erillään tavallisesta budjetista vahvistamiseen asti. Älä luota suosittelukampanjaan, kuponkiin tai toimitusväitteeseen, joka on kopioitu muusta oppaasta. Tämä sivusto ei ole tarjonnut taattua uuden käyttäjän hyvitystä tai yleistä toimitushintaa."
+          ]
+        },
+        {
+          "heading": "Käytä vaihteluväliä epävarmalle toimitukselle",
+          "paragraphs": [
+            "Ennen pakkaamista paino ja koko ovat arvioita. Virallinen toimituksen tasaus sovittaa alkuperäisen summan logistiikkapalvelun todelliseen veloitukseen. Varaa mahdolliselle oikaisulle tilaa koko budjetin tuotteisiin käyttämisen sijaan.",
+            "Suunnitteluesimerkissä vahvistetut tuotteet ja kotimaan toimitus voivat olla 100 yksikköä yhdessä valuutassa ja nykyinen toimitusarvio 30–45. Alustava kokonaissumma on 130–145 ennen muita soveltuvia kuluja. Luvut ovat kuvitteellisia ja kuvaavat menetelmää, eivät LoloBuyn hintoja tai tarjousta."
+          ]
+        },
+        {
+          "heading": "Tee budjetista päätöstyökalu",
+          "paragraphs": [
+            "Jos todennäköinen loppusumma ylittää rajasi, muuta valintalistaa ennen maksamista. Vähemmän tärkeän tuotteen poistaminen voi olla helpompaa kuin rahojen palauttaminen myöhemmin. Vertaa koko toimitetun tilauksen arvoa, älä kerättävien halpojen tuotteiden määrää.",
+            "Korvaa arviot lopullisilla kirjatuilla veloituksilla lähetyksen jälkeen. Säilytä ero ja sen selitys. Historia auttaa tulevaa suunnittelua huomioiden kuitenkin seuraavan kerran erilaiset tavarat, mitat, reitit ja valuuttaehdot."
+          ]
+        }
+      ],
+      "checklist": [
+        "Budjetoi täsmällinen valittu vaihtoehto.",
+        "Erota kotimaan ja kansainvälinen toimitus.",
+        "Kirjaa lisäpalvelut ja veloitusvaluutta.",
+        "Käytä vain vahvistettuja alennuksia.",
+        "Säilytä varaus epävarmoille toimitus- ja kohdekuluille."
+      ],
+      "sourceIds": [
+        "buying",
+        "domestic",
+        "promotions",
+        "freight-balance",
+        "wholesale"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 690
+    },
+    {
+      "slug": "lolobuy-seller-and-review-checks",
+      "title": "LoloBuy-löydöt ja arvostelut: tarkista ilmoituksen takana oleva näyttö",
+      "description": "Arvioi lähdetietoja, arvostelujen merkitystä ja tarkastuksen rajoja pitämättä merkkiä, kuvaa tai arviota takuuna.",
+      "keyword": "onko lolobuy luotettava",
+      "category": "Ostopäätökset",
+      "summary": "Hyödyllinen kysymys on, mitä näyttö osoittaa juuri tästä kaupasta. Pelkkä alustan nimi ei vastaa kaikkiin myyjää, tuotetta tai pakettia koskeviin kysymyksiin.",
+      "sections": [
+        {
+          "heading": "Erota alusta tuotteesta",
+          "paragraphs": [
+            "LoloBuyn palvelutiedot kuvaavat tuotteiden ostamista kolmansien osapuolten alustoilta, eivät kaikkien listattujen tuotteiden omaa myyntiä. Riippumaton tuoteluettelo on vielä yhden askeleen kauempana: se järjestää löytämistä. Pidä roolit selkeinä päättäessäsi, kuka voi vastata kysymykseen tai ratkaista ongelman.",
+            "Toimiva tuotelinkki ei osoita aitoutta, saatavuutta, istuvuutta tai tulevaa toimitusta. Myöskään valitus yhdestä myyjästä ei osoita kaikkien alustaongelmien syytä. Aloita täsmällisestä arvioitavasta väitteestä ja osapuolesta, joka vastaa kyseisestä prosessin osasta."
+          ]
+        },
+        {
+          "heading": "Tarkista ilmoitus ennen suosiota",
+          "paragraphs": [
+            "Etsi selkeä alkuperäinen osoite, johdonmukainen tuotekuvaus, tunnistettavat vaihtoehdot ja hyödylliset koko- tai tekniset tiedot. Vertaa valintaa galleriaan. Halpa alkaen-hinta voi koskea muuta osaa kuin pääkuvassa näkyvää tuotetta.",
+            "Jos useat myyjät käyttävät samoja kuvia, ne eivät yksin kerro tavaroiden valmistuksen tai toimituksen samanlaisuudesta. Kirjaa puuttuvat tiedot ja kysy täsmällisesti. Suosioluku tai tuttu eränimi ei korvaa juuri kyseistä ilmoitusta koskevaa näyttöä."
+          ],
+          "bullets": [
+            "Alkuperäinen ilmoitus ja myyjän identiteetti",
+            "Täsmällinen vaihtoehto ja määrä",
+            "Olennaiset mitat tai tekniset tiedot",
+            "Nykyiset palautustiedot",
+            "Ostoon vaikuttavat avoimet kysymykset"
+          ]
+        },
+        {
+          "heading": "Lue arvosteluja niiden merkityksen perusteella",
+          "paragraphs": [
+            "Arvostelu auttaa enemmän, kun tiedät päivämäärän, käsitellyn tuotteen tai palvelun ja johtopäätöksen perustan. Tuen vastausaikakommentti on eri asia kuin kengän istuvuusarvio. Onnistunut pakettitoimitus ei todista kaikkien luettelotuotteiden sopivuutta.",
+            "Etsi ilmoitettuja suosittelulinkkejä, kannustimia ja muita suhteita. Ne eivät automaattisesti tee arvostelusta väärää mutta selittävät sen tarkoitusta. Älä muuta kumppanimainontaa, yhtä kokemusta tai varmentamatonta suositusta yleispäteväksi suositukseksi."
+          ]
+        },
+        {
+          "heading": "Suunnittele, mitä tarkastus voi osoittaa",
+          "paragraphs": [
+            "Virallinen tavallisen tarkastuksen sivu kuvaa ulkonäkötarkastukset ja tärkeät poikkeukset. Se ei lupaa kaikkien kategorioiden aitous- tai toimintatestiä. Sinetöityjä ja joitakin ammattituotteita käsitellään eri tavoin. Lue rajat ennen tuotteen ostoa, jos sen arvo riippuu testaamatta jäävästä ominaisuudesta.",
+            "Vaatteelle selkeät mitat ja näkyvä rakenne voivat vastata suureen osaan kysymyksistä. Elektroniikassa tai turvallisuustuotteissa kuva ei osoita sisäistä suorituskykyä tai vaatimustenmukaisuutta. Jos tarvittava näyttö ei ole saatavilla, epävarmuus kuuluu ostopäätökseen."
+          ]
+        },
+        {
+          "heading": "Pidä maksu ja viestintä oikeassa paikassa",
+          "paragraphs": [
+            "Käytä kassana virallista sivustoa ja kauppakysymyksiin kyseisen tilauksen tai paketin kyselyä. Tarkista verkkotunnus ennen kirjautumista. Luettelo ei tarvitse salasanaasi, maksutunnuksia tai yksityiskeskustelun kopiointia tuotehakuun.",
+            "Säilytä valinta, maksu, myyjän selvitykset ja sovitut vaatimukset. Jos jokin muuttuu, pyydä päivitys tilausmerkintään. Selkeä historia helpottaa myöhempää selvitystä verrattuna hajanaisiin viesteihin ilman tuote- tai tapahtumaviitettä."
+          ]
+        },
+        {
+          "heading": "Tee päätös, jonka pystyt selittämään",
+          "paragraphs": [
+            "Kirjoita lyhyesti, miksi tuote täyttää tarpeesi, mikä näyttö tukee sitä, kokonaisbudjetti ja hyväksymäsi epävarmuudet. Jos päätös riippuu avoimesta koko-, kunto- tai palautuskelpoisuuskysymyksestä, ratkaise se ennen maksamista.",
+            "Pieni ensimmäinen tilaus voi halutessasi rajoittaa sitoutunutta summaa prosessia opetellessa, mutta ei vahvista kaikkia myyjiä tai tulevia lähetyksiä. Opas on näytön arviointimenetelmä, ei henkilökohtainen testiraportti tai takuu LoloBuyn riskittömyydestä. Käytä tilaus-, QC- ja palautusoppaita seuraaviin konkreettisiin tarkistuksiin."
+          ]
+        }
+      ],
+      "checklist": [
+        "Erota luettelon, alustan ja myyjän roolit.",
+        "Tarkista täsmällinen ilmoitus sen suosion sijaan.",
+        "Lue arvostelujen päiväys, merkitys ja kannustimet.",
+        "Ymmärrä, mitä tarkastus ei varmista.",
+        "Säilytä dokumentoitu päätös ja tilaushistoria."
+      ],
+      "sourceIds": [
+        "service",
+        "qc",
+        "buying",
+        "returns"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 626
+    }
+  ]
+}

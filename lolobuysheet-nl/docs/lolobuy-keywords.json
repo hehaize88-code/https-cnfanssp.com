@@ -1,0 +1,306 @@
+{
+  "date": "2026-10-20",
+  "project": "lolobuysheet.nl",
+  "primaryKeyword": "lolobuy spreadsheet",
+  "method": "Current search-result and competitor-topic review. No keyword-tool volumes, rankings or traffic estimates were obtained. Priority is editorial inference from recurring observable intents, not measured demand.",
+  "competitors": [
+    {
+      "url": "https://oglolobuy.com/guide.html",
+      "observedTopics": [
+        "step-by-step ordering",
+        "marketplace links",
+        "categories",
+        "QC",
+        "consolidation",
+        "shipping"
+      ],
+      "ownership": "Not verified; treat as a search-result reference, not a known independent business.",
+      "evidenceRef": "turn12view0"
+    },
+    {
+      "url": "https://lolobuyfind.net/lolobuy-spreadsheet-agent-guide",
+      "observedTopics": [
+        "agent service",
+        "comparison",
+        "fees",
+        "QC",
+        "buyer protection",
+        "beginner mistakes"
+      ],
+      "ownership": "Not verified.",
+      "evidenceRef": "turn11search12",
+      "caution": "Contains fixed transit, free-return and savings assertions not established by official sources. Do not transfer those claims."
+    },
+    {
+      "url": "https://lolobuy.co.uk/",
+      "observedTopics": [
+        "sneakers",
+        "streetwear",
+        "seller comparison",
+        "shipping calculator",
+        "size guide",
+        "payment guide"
+      ],
+      "ownership": "May belong to the user’s broader network; not classified as independent.",
+      "evidenceRef": "turn12view1"
+    },
+    {
+      "url": "https://www.reddit.com/r/YNReps/comments/1vh5cp4/lolobuy_spreadsheet_2026_new_finds_qc_photos/",
+      "observedTopics": [
+        "lolobuy spreadsheet",
+        "lolobuy links",
+        "lolobuy finds",
+        "lolobuy QC",
+        "lolobuy guide",
+        "categories"
+      ],
+      "ownership": "Public promotional community post; keyword observation only.",
+      "evidenceRef": "turn11search0",
+      "caution": "Promotional volume, discount and shipping claims are not adopted."
+    }
+  ],
+  "articles": [
+    {
+      "slug": "using-lolobuy-spreadsheet",
+      "title": "How to use a LoloBuy spreadsheet: from a product link to a checked shortlist",
+      "description": "Use categories, product links and source details to build a useful shortlist, then check the exact option before opening LoloBuy.",
+      "keyword": "lolobuy spreadsheet",
+      "intent": "Discovery / beginner workflow",
+      "outline": [
+        "Explain the spreadsheet as an independent catalogue; distinguish catalogue record ID from marketplace product ID.",
+        "Choose a category or a specific item keyword; check the source product photo rather than relying on a category label.",
+        "Keep an evidence record: seller URL, source item ID, chosen size/color, current displayed price, date and unanswered question.",
+        "Compare equivalent variants; do not infer identical quality from copied images or an unusually low starting price.",
+        "Open the matching product in LoloBuy; confirm image, options, quantity, domestic delivery and availability.",
+        "Separate catalogue discovery from order-specific warehouse QC and the later international parcel.",
+        "Finish with a practical five-field shortlist and links to ordering, QC and budget articles."
+      ],
+      "officialSources": [
+        "https://www.lolobuy.com/helpCenter/1242296499766165",
+        "https://www.lolobuy.com/helpCenter/1242300728672386"
+      ],
+      "sourceVerification": "Current public official help JSON verified 2026-10-20 by official_research; source IDs and reader URLs recorded in sources.json. Claims conflicts preserved rather than resolved by assumption."
+    },
+    {
+      "slug": "how-to-order-on-lolobuy",
+      "title": "How to order on LoloBuy: links, options and the two payment stages",
+      "description": "A step-by-step LoloBuy ordering guide covering product links, variant checks, warehouse arrival and international parcel submission.",
+      "keyword": "how to order on lolobuy",
+      "intent": "Transactional education",
+      "outline": [
+        "Start on the official website; register using the supplied official link and protect account credentials.",
+        "Paste the original marketplace URL or use the exact catalogue purchase button; explain why random ID replacement fails.",
+        "Check the imported listing against the source: seller, image, item, size, color and quantity.",
+        "If the listing cannot be imported, use the manual-order instructions from the official buying guide; do not claim every link is accepted.",
+        "Explain payment stage one for items and domestic shipping, then warehouse inspection, then parcel selection/payment.",
+        "Explain what to do with a price difference, missing option or unavailable item before confirming.",
+        "Provide a before-pay / before-ship checklist and link directly to the relevant official guide."
+      ],
+      "officialSources": [
+        "https://www.lolobuy.com/helpCenter/1242296499766165",
+        "https://www.lolobuy.com/helpCenter/1242296869258363",
+        "https://www.lolobuy.com/helpCenter/1242296854971485",
+        "https://www.lolobuy.com/helpCenter/1242300728672386",
+        "https://www.lolobuy.com/helpCenter/1242300801155283"
+      ],
+      "sourceVerification": "Current public official help JSON verified 2026-10-20 by official_research; source IDs and reader URLs recorded in sources.json. Claims conflicts preserved rather than resolved by assumption."
+    },
+    {
+      "slug": "lolobuy-qc-photos",
+      "title": "LoloBuy QC photos: an inspection checklist before shipping",
+      "description": "Learn how to separate seller photos from order-specific QC and check the option, measurements, visible defects and unresolved details.",
+      "keyword": "lolobuy qc photos",
+      "intent": "Quality-check education",
+      "outline": [
+        "Distinguish listing photos, historical reference QC and photos of the buyer’s own order.",
+        "Check identity before aesthetics: item number, selected option, size tag, color and quantity.",
+        "Use category-specific checks: clothing seams/print/measurement, shoes pairing/shape/size, bags closures/interior.",
+        "Explain photographic limits: lighting, angle, hidden areas, function and material cannot always be established visually.",
+        "Ground standard-inspection limits in the official QC article; do not guarantee authenticity, function or durability.",
+        "Frame a specific extra-photo request with item/order and exact missing detail, checking availability/cost in the live service.",
+        "Decide to approve, ask a question or investigate return eligibility before international dispatch."
+      ],
+      "officialSources": [
+        "https://www.lolobuy.com/helpCenter/1242300728672386",
+        "https://www.lolobuy.com/helpCenter/1242300722511995",
+        "https://www.lolobuy.com/helpCenter/1242300714582134",
+        "https://www.lolobuy.com/helpCenter/1242296504877978"
+      ],
+      "sourceVerification": "Current public official help JSON verified 2026-10-20 by official_research; source IDs and reader URLs recorded in sources.json. Claims conflicts preserved rather than resolved by assumption."
+    },
+    {
+      "slug": "lolobuy-shipping-costs",
+      "title": "LoloBuy shipping costs: compare a real parcel, not a price per kilo",
+      "description": "Plan international shipping with the destination, goods, measured weight, parcel dimensions and live route conditions.",
+      "keyword": "lolobuy shipping calculator",
+      "intent": "Cost comparison / tool intent",
+      "outline": [
+        "Explain that this editorial page is a calculation guide, not a live quote engine.",
+        "List input fields: destination/postcode, contents, actual weight, length/width/height, packaging and route restrictions.",
+        "Explain actual versus volumetric weight without treating a single divisor as universal; use each route’s current terms.",
+        "Show a labelled hypothetical example with a stated divisor only as arithmetic, never as a LoloBuy tariff.",
+        "Compare routes for the same packed parcel and included services, not just headline transit estimates.",
+        "Explain why removing packaging or consolidation may change both size and protection; savings are not guaranteed.",
+        "Keep duties, taxes and carrier handling separate; check destination authority and current quotation rather than publish legal thresholds.",
+        "Provide a quote-comparison worksheet and checklist for final parcel submission."
+      ],
+      "officialSources": [
+        "https://www.lolobuy.com/helpCenter/1242296499766165",
+        "https://www.lolobuy.com/helpCenter/1242300798075086",
+        "https://www.lolobuy.com/helpCenter/1242306518844916",
+        "https://www.lolobuy.com/helpCenter/1242300801155283"
+      ],
+      "sourceVerification": "Current public official help JSON verified 2026-10-20 by official_research; source IDs and reader URLs recorded in sources.json. Claims conflicts preserved rather than resolved by assumption."
+    },
+    {
+      "slug": "lolobuy-warehouse-consolidation",
+      "title": "LoloBuy warehouse guide: inspect, organise and consolidate your order",
+      "description": "Use warehouse records and QC to plan a parcel, resolve missing details and compare packaging choices before shipment.",
+      "keyword": "lolobuy warehouse",
+      "intent": "Post-purchase warehouse workflow",
+      "outline": [
+        "Distinguish seller dispatch, warehouse arrival, inspection completion and parcel dispatch.",
+        "Create an item-level warehouse list linking each order, option, QC status and unanswered issue.",
+        "Review the storage terms actually shown on the current order; do not invent free-storage days or universal fees.",
+        "Explain consolidation as a packing decision; compare compatible goods and final measurements rather than assume bigger is cheaper.",
+        "Inspect shoes, apparel and delicate accessories before deciding about packaging removal.",
+        "Keep unresolved/return-request items out of a ready-to-ship parcel until the relevant process is clarified.",
+        "Provide a packing instruction checklist covering keep/remove packaging, protective services and route limits."
+      ],
+      "officialSources": [
+        "https://www.lolobuy.com/helpCenter/1242296499766165",
+        "https://www.lolobuy.com/helpCenter/1242296850973779",
+        "https://www.lolobuy.com/helpCenter/1242300757049499",
+        "https://www.lolobuy.com/helpCenter/1242306518844916",
+        "https://www.lolobuy.com/helpCenter/1242300801155283"
+      ],
+      "sourceVerification": "Current public official help JSON verified 2026-10-20 by official_research; source IDs and reader URLs recorded in sources.json. Claims conflicts preserved rather than resolved by assumption."
+    },
+    {
+      "slug": "lolobuy-sizing-guide",
+      "title": "LoloBuy size guide: clothing measurements and sneaker checks",
+      "description": "Compare seller measurements with a garment that fits, then use targeted warehouse photos to check the exact size you ordered.",
+      "keyword": "lolobuy size guide",
+      "intent": "Product fit / purchase decision",
+      "outline": [
+        "Explain why a familiar S/M/L or EU/US label is not enough to establish fit across different sellers.",
+        "Measure a well-fitting garment using the same method as the seller’s chart; distinguish flat width, circumference and body measurements.",
+        "For tops, compare chest width, length, sleeve and shoulder; for bottoms, waist, rise and inseam.",
+        "For footwear, check seller chart, label system and intended fit; avoid universal conversion promises.",
+        "Use a labelled comparison example showing the method, not invented seller-specific dimensions.",
+        "Request a specific measurement if the chart or photo is unclear; confirm extra services in the current order.",
+        "Explain how visible measurements reduce uncertainty but cannot guarantee comfort or account for every material/cut."
+      ],
+      "officialSources": [
+        "https://www.lolobuy.com/helpCenter/1242296504877978",
+        "https://www.lolobuy.com/helpCenter/1242300728672386",
+        "https://www.lolobuy.com/helpCenter/1242296939447441"
+      ],
+      "sourceVerification": "Current public official help JSON verified 2026-10-20 by official_research; source IDs and reader URLs recorded in sources.json. Claims conflicts preserved rather than resolved by assumption."
+    },
+    {
+      "slug": "lolobuy-tracking-guide",
+      "title": "LoloBuy tracking: understand order stages and parcel updates",
+      "description": "Separate domestic seller tracking from international parcel tracking and collect the right information when an update is unclear.",
+      "keyword": "lolobuy tracking",
+      "intent": "Post-purchase troubleshooting",
+      "outline": [
+        "Map the stages: purchase request, seller dispatch, warehouse inspection, parcel submission and carrier movement.",
+        "Keep domestic and international tracking references separate; a seller delivery scan is not overseas delivery.",
+        "Compare the current LoloBuy order stage with the carrier event, location and timestamp rather than a guessed ETA.",
+        "Explain that a created label is not necessarily a physical handover; wording differs by carrier.",
+        "When scans pause, check the chosen route’s estimate and current notice; do not promise a fixed maximum wait.",
+        "Prepare a concise support request with order/parcel ID, tracking number, last event and the specific question.",
+        "Check delivered parcels promptly; keep outer packaging and evidence if contents differ or are damaged."
+      ],
+      "officialSources": [
+        "https://www.lolobuy.com/helpCenter/1242296850973779",
+        "https://www.lolobuy.com/helpCenter/1242296499766165",
+        "https://www.lolobuy.com/helpCenter/1242301393535401",
+        "https://www.lolobuy.com/helpCenter/1242300801155283"
+      ],
+      "sourceVerification": "Current public official help JSON verified 2026-10-20 by official_research; source IDs and reader URLs recorded in sources.json. Claims conflicts preserved rather than resolved by assumption."
+    },
+    {
+      "slug": "lolobuy-returns-refunds",
+      "title": "LoloBuy returns and refunds: what to check before international dispatch",
+      "description": "Match a return request to its order stage, preserve clear evidence and confirm seller eligibility, costs and the refund destination.",
+      "keyword": "lolobuy returns refunds",
+      "intent": "After-sales decision",
+      "outline": [
+        "Distinguish cancellation before purchase, seller return after purchase and a problem after international delivery.",
+        "Check the current official procedure and specific seller eligibility; do not imply unconditional returns.",
+        "Preserve item ID, selected option, purchase record, order-specific QC, defect description and desired remedy.",
+        "Explain why timing matters before parcel submission; contact support promptly instead of waiting for an invented universal deadline.",
+        "Clarify questions to ask: seller acceptance, domestic return postage, service costs, deduction and refund destination.",
+        "Separate account balance credit from external-payment refund and check the actual status rather than promise arrival time.",
+        "Provide one focused example of an incorrect-size-tag request and a decision checklist."
+      ],
+      "officialSources": [
+        "https://www.lolobuy.com/helpCenter/1242296789304333",
+        "https://www.lolobuy.com/helpCenter/1242297000395937",
+        "https://www.lolobuy.com/helpCenter/1242296939447441",
+        "https://www.lolobuy.com/helpCenter/1242301393535401",
+        "https://www.lolobuy.com/helpCenter/1242296854971485"
+      ],
+      "sourceVerification": "Current public official help JSON verified 2026-10-20 by official_research; source IDs and reader URLs recorded in sources.json. Claims conflicts preserved rather than resolved by assumption."
+    },
+    {
+      "slug": "lolobuy-order-budget",
+      "title": "LoloBuy order budget: item price, shipping and payment checks",
+      "description": "Build a total-order budget that separates the item price, domestic delivery, currency conversion, optional services and international freight.",
+      "keyword": "lolobuy fees",
+      "intent": "Budget / payment education",
+      "outline": [
+        "Start with the selected variant’s current price rather than a catalogue starting price.",
+        "Separate the two payment stages and identify which line items are known versus still estimated.",
+        "Build a budget table with items, domestic shipping, selected extras, international shipping and possible destination charges.",
+        "Check the payment methods actually offered in the current official checkout, their currency and any displayed charges; no invented method list.",
+        "Explain that exchange-rate movement and payment-provider conversion can change the amount; compare the charged currency and final amount.",
+        "Use a hypothetical budget to show the method without claiming a universal fee schedule or savings.",
+        "Keep a reserve for uncertain costs; if total cost breaks the budget, revise the shortlist before buying."
+      ],
+      "officialSources": [
+        "https://www.lolobuy.com/helpCenter/1242296499766165",
+        "https://www.lolobuy.com/helpCenter/1242296838456383",
+        "https://www.lolobuy.com/helpCenter/1242296946132123",
+        "https://www.lolobuy.com/helpCenter/1242300801155283",
+        "https://www.lolobuy.com/helpCenter/1242296792646674"
+      ],
+      "sourceVerification": "Current public official help JSON verified 2026-10-20 by official_research; source IDs and reader URLs recorded in sources.json. Claims conflicts preserved rather than resolved by assumption."
+    },
+    {
+      "slug": "lolobuy-seller-and-review-checks",
+      "title": "LoloBuy finds and reviews: evaluate a listing without trusting a badge",
+      "description": "Check seller evidence, exact variants and review relevance before ordering, and separate platform service claims from product quality.",
+      "keyword": "is lolobuy legit",
+      "intent": "Trust / research intent",
+      "outline": [
+        "Explain that the guide evaluates evidence and process, not an unconditional verdict or personal test-order claim.",
+        "Confirm the official destination and distinguish this independent catalogue from LoloBuy itself.",
+        "Assess source seller detail: exact listing, consistent options, measurements, images and return information.",
+        "Read reviews for date, exact product/variant, order evidence and sponsorship; a rating is not a guarantee.",
+        "Do not infer authenticity or performance from a stock photo, platform logo, batch name or popularity count.",
+        "Use the official inspection limits to plan what can be checked before shipping and what remains unknown.",
+        "Use a small, affordable first order only as an optional risk-management choice; no promise that it verifies all future orders.",
+        "Provide a documented decision record and link to QC, ordering and returns rather than invented testimonials."
+      ],
+      "officialSources": [
+        "https://www.lolobuy.com/helpCenter/1242300714582134",
+        "https://www.lolobuy.com/helpCenter/1242300728672386",
+        "https://www.lolobuy.com/helpCenter/1242296499766165",
+        "https://www.lolobuy.com/helpCenter/1242296939447441"
+      ],
+      "sourceVerification": "Current public official help JSON verified 2026-10-20 by official_research; source IDs and reader URLs recorded in sources.json. Claims conflicts preserved rather than resolved by assumption."
+    }
+  ],
+  "editorialRules": [
+    "Use original prose and clearly separate platform policy from general buyer advice.",
+    "No invented volume, cheapest/best ranking, delivered-price promises, official affiliation, purchase experience or testimonials.",
+    "Avoid fixed shipping/storage/return times until a directly verified official page supports them and record the checked date.",
+    "Keep all ten articles and their meaning in each enabled language. Translate full content; do not label English fallback as translated.",
+    "Compact article presentation may use a short overview, contents navigation and collapsible sections on mobile without deleting content.",
+    "Keep homepage to 4–6 recent article cards; provide all ten on a distinct Articles page in the top navigation.",
+    "Link each article to a relevant catalogue/category and two related guides; use a distinct title/description/H1 and Article/Breadcrumb metadata."
+  ]
+}

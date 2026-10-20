@@ -1,0 +1,202 @@
+[
+  {
+    "id": "buying",
+    "title": "How to purchase on LoloBuy?",
+    "url": "https://www.lolobuy.com/helpCenter/1242296499766165",
+    "apiUrl": "https://www.lolobuy.com/prod-api/user/common/helpMenuDetail?id=1242296499766165",
+    "checked": "2026-10-20",
+    "claims": [
+      "Link or manual ordering; item and domestic delivery first, international parcel later."
+    ]
+  },
+  {
+    "id": "qc",
+    "title": "Standard inspection service",
+    "url": "https://www.lolobuy.com/helpCenter/1242300728672386",
+    "apiUrl": "https://www.lolobuy.com/prod-api/user/common/helpMenuDetail?id=1242300728672386",
+    "checked": "2026-10-20",
+    "claims": [
+      "Standard inspection checks visible attributes; no-inspection and specialist/sealed-goods exclusions apply."
+    ]
+  },
+  {
+    "id": "sizing",
+    "title": "Size Reference",
+    "url": "https://www.lolobuy.com/helpCenter/1242296504877978",
+    "apiUrl": "https://www.lolobuy.com/prod-api/user/common/helpMenuDetail?id=1242296504877978",
+    "checked": "2026-10-20",
+    "claims": [
+      "Store measurements can differ; reference sizing is not a product-specific fit guarantee."
+    ]
+  },
+  {
+    "id": "storage",
+    "title": "Free Storage Period",
+    "url": "https://www.lolobuy.com/helpCenter/1242300757049499",
+    "apiUrl": "https://www.lolobuy.com/prod-api/user/common/helpMenuDetail?id=1242300757049499",
+    "checked": "2026-10-20",
+    "claims": [
+      "Dedicated storage page states 180 days for ordinary goods and separate abnormal-parcel rules."
+    ]
+  },
+  {
+    "id": "packaging",
+    "title": "Package removal",
+    "url": "https://www.lolobuy.com/helpCenter/1242306518844916",
+    "apiUrl": "https://www.lolobuy.com/prod-api/user/common/helpMenuDetail?id=1242306518844916",
+    "checked": "2026-10-20",
+    "claims": [
+      "Optional package removal preserves necessary protective packaging."
+    ]
+  },
+  {
+    "id": "weight",
+    "title": "The estimated weight and real weight",
+    "url": "https://www.lolobuy.com/helpCenter/1242300798075086",
+    "apiUrl": "https://www.lolobuy.com/prod-api/user/common/helpMenuDetail?id=1242300798075086",
+    "checked": "2026-10-20",
+    "claims": [
+      "Final packed dimensions and weight can change freight; volumetric billing is route dependent."
+    ]
+  },
+  {
+    "id": "status",
+    "title": "Status of the Shopping Agent Orders",
+    "url": "https://www.lolobuy.com/helpCenter/1242296850973779",
+    "apiUrl": "https://www.lolobuy.com/prod-api/user/common/helpMenuDetail?id=1242296850973779",
+    "checked": "2026-10-20",
+    "claims": [
+      "Received precedes completed inspection; In Stock means stored inventory; parcel stages are separate."
+    ]
+  },
+  {
+    "id": "cancellation",
+    "title": "Can the Shopping Agent orders be cancelled or refunded?",
+    "url": "https://www.lolobuy.com/helpCenter/1242297000395937",
+    "apiUrl": "https://www.lolobuy.com/prod-api/user/common/helpMenuDetail?id=1242297000395937",
+    "checked": "2026-10-20",
+    "claims": [
+      "Cancellation and refund depend on order stage and seller agreement."
+    ]
+  },
+  {
+    "id": "claims",
+    "title": "How to apply for parcel after-sales",
+    "url": "https://www.lolobuy.com/helpCenter/1242301393535401",
+    "apiUrl": "https://www.lolobuy.com/prod-api/user/common/helpMenuDetail?id=1242301393535401",
+    "checked": "2026-10-20",
+    "claims": [
+      "Parcel after-sales uses a parcel-specific application with product and package evidence; stated time limits conflict."
+    ]
+  },
+  {
+    "id": "photos",
+    "title": "Standard photo service",
+    "url": "https://www.lolobuy.com/helpCenter/1242300722511995",
+    "apiUrl": "https://www.lolobuy.com/prod-api/user/common/helpMenuDetail?id=1242300722511995",
+    "checked": "2026-10-20",
+    "claims": [
+      "Secondary Quality Inspection is offered for stored goods whose inspection was previously skipped."
+    ]
+  },
+  {
+    "id": "service",
+    "title": "Shopping Agent Service",
+    "url": "https://www.lolobuy.com/helpCenter/1242300714582134",
+    "apiUrl": "https://www.lolobuy.com/prod-api/user/common/helpMenuDetail?id=1242300714582134",
+    "checked": "2026-10-20",
+    "claims": [
+      "Service overview describes additional QC photos on request, but numbers differ from standard inspection."
+    ]
+  },
+  {
+    "id": "changes",
+    "title": "Can I modify my order after the order has been submitted?",
+    "url": "https://www.lolobuy.com/helpCenter/1242296854971485",
+    "apiUrl": "https://www.lolobuy.com/prod-api/user/common/helpMenuDetail?id=1242296854971485",
+    "checked": "2026-10-20",
+    "claims": [
+      "Before dispatch changes are negotiated; after dispatch return and a new order may be needed."
+    ]
+  },
+  {
+    "id": "confirmation",
+    "title": "What does \"Pending for confirmation\" means and what do I do?",
+    "url": "https://www.lolobuy.com/helpCenter/1242296869258363",
+    "apiUrl": "https://www.lolobuy.com/prod-api/user/common/helpMenuDetail?id=1242296869258363",
+    "checked": "2026-10-20",
+    "claims": [
+      "Pending for Confirmation requires an answer to the order message."
+    ]
+  },
+  {
+    "id": "confirmation-path",
+    "title": "How to reply if Shopping Agent order is ‘Pending for Confirmatio",
+    "url": "https://www.lolobuy.com/helpCenter/1242296873911429",
+    "apiUrl": "https://www.lolobuy.com/prod-api/user/common/helpMenuDetail?id=1242296873911429",
+    "checked": "2026-10-20",
+    "claims": [
+      "Purchased-order and warehouse confirmations are handled in different account sections."
+    ]
+  },
+  {
+    "id": "freight-balance",
+    "title": "How LoloBuy Collects Supplemental Payments for Parcels",
+    "url": "https://www.lolobuy.com/helpCenter/1242300801155283",
+    "apiUrl": "https://www.lolobuy.com/prod-api/user/common/helpMenuDetail?id=1242300801155283",
+    "checked": "2026-10-20",
+    "claims": [
+      "Initial freight is estimated; actual freight can require a supplemental payment or refund."
+    ]
+  },
+  {
+    "id": "domestic",
+    "title": "Shall I just pay for one delivery fee if I bought several items ",
+    "url": "https://www.lolobuy.com/helpCenter/1242296838456383",
+    "apiUrl": "https://www.lolobuy.com/prod-api/user/common/helpMenuDetail?id=1242296838456383",
+    "checked": "2026-10-20",
+    "claims": [
+      "Same-seller items checked out together can share domestic freight; heavy orders may require a balance."
+    ]
+  },
+  {
+    "id": "promotions",
+    "title": "What do I do if the item has a discounted price?",
+    "url": "https://www.lolobuy.com/helpCenter/1242296946132123",
+    "apiUrl": "https://www.lolobuy.com/prod-api/user/common/helpMenuDetail?id=1242296946132123",
+    "checked": "2026-10-20",
+    "claims": [
+      "Real seller offers should be described in remarks for agent verification."
+    ]
+  },
+  {
+    "id": "returns",
+    "title": "Terms of Promised Returns with no reasons",
+    "url": "https://www.lolobuy.com/helpCenter/1242296939447441",
+    "apiUrl": "https://www.lolobuy.com/prod-api/user/common/helpMenuDetail?id=1242296939447441",
+    "checked": "2026-10-20",
+    "claims": [
+      "Eligible returns have a stated 120-hour window from the hour after Stocked in, subject to conditions."
+    ]
+  },
+  {
+    "id": "refunds",
+    "title": "Return the Product",
+    "url": "https://www.lolobuy.com/helpCenter/1242296789304333",
+    "apiUrl": "https://www.lolobuy.com/prod-api/user/common/helpMenuDetail?id=1242296789304333",
+    "checked": "2026-10-20",
+    "claims": [
+      "Approved refunds generally go to account balance; a narrow PayPal exception is not general payment-method evidence."
+    ]
+  },
+  {
+    "id": "wholesale",
+    "title": "Guide to 1688 Shopping Agent Service",
+    "url": "https://www.lolobuy.com/helpCenter/1242296792646674",
+    "apiUrl": "https://www.lolobuy.com/prod-api/user/common/helpMenuDetail?id=1242296792646674",
+    "checked": "2026-10-20",
+    "claims": [
+      "1688 orders require seller minimums and have separate quantity/inspection considerations."
+    ]
+  }
+]

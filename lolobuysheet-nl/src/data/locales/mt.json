@@ -1,0 +1,1131 @@
+{
+  "ui": {
+    "nav": [
+      "Spreadsheet",
+      "Kif jaħdem",
+      "Gwidi",
+      "Artikli",
+      "Mistoqsijiet komuni"
+    ],
+    "register": "Mur fuq LoloBuy",
+    "language": "Lingwa",
+    "preview": "Previżjoni tad-disinn",
+    "previewNote": "L-ewwel ħarsa lejn lolobuysheet.nl",
+    "eyebrow": "SEJBIET TAJBIN. INQAS SKROLLJAR.",
+    "hero1": "Is-sejba li jmiss tiegħek.",
+    "hero2": "Spreadsheet waħda.",
+    "intro": "Esplora l-ispreadsheet ta’ LoloBuy. Ibbrawżja ħwejjeġ, żraben sportivi u aċċessorji, qabbel il-prezzijiet tas-sors u iftaħ is-sejba tiegħek fuq LoloBuy.",
+    "search": "Fittex fil-katalgu kollu…",
+    "searchButton": "Fittex prodotti",
+    "photo": "Tfittxija bl-immaġni",
+    "popular": "Esplora:",
+    "tagline": "Katalgu wieħed. L-iskoperta li jmiss tiegħek.",
+    "source": "Prodotti minn cnfanssp.com",
+    "independent": "Sit indipendenti biex tiskopri prodotti ta’ LoloBuy",
+    "browse": "Esplora l-ispreadsheet",
+    "browseSub": "Ftit inqas tfittxija. Ħafna aktar sejbiet.",
+    "all": "Il-prodotti kollha",
+    "sort": "Issortja skont",
+    "sorts": [
+      "Magħżula",
+      "L-aktar ġodda",
+      "L-aktar li rawhom",
+      "Prezz: baxx għal għoli",
+      "Prezz: għoli għal baxx"
+    ],
+    "count": "prodott",
+    "view": "Ara l-prodott",
+    "buy": "Iftaħ fuq LoloBuy",
+    "details": "Dettalji tal-prodott",
+    "categories": {
+      "shoes": "Żraben",
+      "hoodies": "Sweatshirts",
+      "tshirts": "T-shirts",
+      "jackets": "Ġkieket",
+      "pants": "Qliezet u xorts",
+      "headwear": "Ilbies għar-ras",
+      "accessories": "Aċċessorji",
+      "sets": "Settijiet qosra",
+      "electronics": "Elettronika",
+      "other": "Prodotti oħra",
+      "jerseys": "Flokkijiet sportivi"
+    },
+    "previous": "Preċedenti",
+    "next": "Li jmiss",
+    "page": "Paġna",
+    "empty": "L-ebda prodott ma jaqbel mat-tfittxija.",
+    "reset": "Neħħi l-filtri",
+    "sourceSearch": "Fittex fil-katalgu sħiħ tas-sors",
+    "snapshot": "Katalgu dirett minn cnfanssp.com. Il-prezzijiet f’CNY ma jinkludux it-trasport u t-tariffi tas-servizz. Iċċekkja l-għażliet attwali u l-kwotazzjoni finali fuq LoloBuy.",
+    "howTitle": "Mis-sejba sal-ftuħ tal-pakkett.",
+    "howSub": "Ġdid għal LoloBuy? Ibda b’dawn it-tliet passi.",
+    "steps": [
+      [
+        "01",
+        "Sib xi ħaġa li togħġbok",
+        "Ibbrawżja l-kategoriji u ċċekkja l-listing oriġinali, id-daqs u r-ritratti."
+      ],
+      [
+        "02",
+        "Iftaħha fuq LoloBuy",
+        "Uża l-link tal-prodott biex tagħżel il-varjant u tara l-prezz attwali."
+      ],
+      [
+        "03",
+        "Iċċekkja qabel tibgħat",
+        "Segwi l-proċess tal-maħżen ta’ LoloBuy, ara l-QC disponibbli u agħżel it-trasport."
+      ]
+    ],
+    "guides": "Ftit gwida tgħin ħafna.",
+    "guidesSub": "Tagħrif utli qabel l-ewwel ordni.",
+    "read": "Aqra l-gwida",
+    "allGuides": "Il-gwidi kollha",
+    "cta": "Sibt il-favorit li jmiss tiegħek?",
+    "ctaSub": "Iftaħu fuq LoloBuy u agħmlu tiegħek.",
+    "ctaButton": "Esplora l-prodotti kollha",
+    "footer": "Sit indipendenti għall-iskoperta tal-prodotti. M’aħniex is-sit uffiċjali ta’ LoloBuy. Il-listings u r-ritratti ġejjin minn cnfanssp.com. Ix-xiri jitlesta fuq LoloBuy.",
+    "footerLinks": [
+      "Spreadsheet",
+      "Gwida għax-xiri",
+      "Tfittxija bl-immaġni",
+      "Mistoqsijiet komuni"
+    ],
+    "back": "Lura għall-ispreadsheet",
+    "sourceListing": "Il-listing oriġinali tas-sors",
+    "seller": "Listing tal-bejjiegħ",
+    "sourcePrice": "Prezz tas-sors · CNY",
+    "productId": "ID tal-prodott tal-bejjiegħ",
+    "gallery": "Ritratti tal-listing",
+    "qc": "Ritratti QC",
+    "qcNote": "Is-sors jipprovdi ritratti tal-listing għal dan il-prodott. Dawn mhumiex ritratti verifikati tal-QC fil-maħżen. Iċċekkja l-QC marbut mal-ordni tiegħek fuq LoloBuy qabel tibgħat.",
+    "priceNote": "Prezz tal-prodott biss. Qabel tordna, ikkonferma l-istokk, l-għażliet u t-tariffi tat-trasport u tas-servizz fuq LoloBuy.",
+    "photoTitle": "Sibu b’ritratt.",
+    "photoIntro": "Uża l-katalgu tas-sors biex issib u tqabbel prodotti.",
+    "photoState": "Tfittxija bl-immaġni fis-sors",
+    "photoNote": "Ma ġiex verifikat servizz pubbliku ta’ tfittxija bl-immaġni fuq cnfanssp.com. Ma naċċettawx uploads ta’ ritratti sakemm ikun disponibbli s-servizz tas-sors.",
+    "browseInstead": "Ibbrawżja prodotti",
+    "faqTitle": "LoloBuy: tweġibiet qabel tordna.",
+    "faqIntro": "Riċerka mill-paġni uffiċjali tal-għajnuna ta’ LoloBuy. Fejn il-paġni jvarjaw, it-tweġiba tispjega x’għandu jiġi ċċekkjat.",
+    "guideLabel": "IL-GWIDA PRATTIKA",
+    "guideTitle": "L-ewwel ordni LoloBuy tiegħek, spjegata.",
+    "guideIntro": "Mis-sejba tal-prodott sal-kontroll fil-maħżen: punt tat-tluq prattiku.",
+    "updated": "Rivedut f’Ottubru 2026",
+    "related": "Aktar x’tesplora",
+    "home": "Paġna ewlenija",
+    "aboutPhotos": "Immaġnijiet tal-listing tas-sors",
+    "catalogLive": "Katalgu dirett tas-sors",
+    "catalogCached": "Qed tintwera l-aħħar kopja sħiħa tas-sors.",
+    "catalogLoading": "Il-katalgu tas-sors qed jiġi aġġornat…",
+    "catalogError": "Is-sors mhux disponibbli għalissa. Erġa’ pprova jew iftaħ il-katalgu oriġinali.",
+    "retry": "Erġa’ pprova",
+    "loading": "Qed jitgħabba…",
+    "productError": "Dan il-prodott ma setax jitgħabba. Erġa’ pprova jew iċċekkja l-listing oriġinali.",
+    "pageOf": "minn",
+    "jump": "Mur fil-paġna",
+    "go": "Mur",
+    "articlesLabel": "Artikli",
+    "articlesTitle": "Tagħrif dettaljat dwar ix-xiri fuq LoloBuy.",
+    "articlesIntro": "Għaxar gwidi prattiċi bbażati fuq l-għajnuna uffiċjali ta’ LoloBuy. Sib prodotti, iċċekkja QC, ippjana baġit u trasport b’informazzjoni aktar ċara.",
+    "articleSources": "Sorsi uffiċjali",
+    "reviewed": "Rivedut fl-20 ta’ Ottubru 2026",
+    "readArticle": "Aqra l-artiklu",
+    "allArticles": "L-artikli kollha",
+    "contents": "F’din il-paġna",
+    "checklist": "Lista prattika ta’ kontroll",
+    "summary": "Daqqa t’għajn",
+    "reading": "minuti qari",
+    "faqSearch": "Fittex mistoqsijiet…",
+    "noQuestions": "L-ebda mistoqsija ma taqbel.",
+    "officialHelp": "Aqra l-gwida uffiċjali",
+    "skip": "Mur għall-kontenut",
+    "menu": "Menu",
+    "close": "Agħlaq",
+    "languageSearch": "Agħżel il-lingwa tiegħek",
+    "catalogNote": "Il-prezzijiet u d-disponibbiltà jistgħu jinbidlu.",
+    "articleFooter": "Gwida editorjali indipendenti. Iċċekkja t-termini murija għall-ordni tiegħek qabel tħallas jew tibgħat.",
+    "notFound": "Il-prodott ma nstabx",
+    "showMore": "Uri kollox",
+    "findSteps": "SIB. IĊĊEKKJA. ORDINA.",
+    "nextFind": "IS-SEJBA LI JMISS HI TIEGĦEK.",
+    "liveLabel": "Aġġornat mis-sors",
+    "faqCount": "tweġiba riċerkata",
+    "catalogue": "Katalgu"
+  },
+  "faqs": [
+    {
+      "id": "what-is-lolobuy",
+      "category": "Biex tibda",
+      "question": "X’tagħmel LoloBuy?",
+      "answer": "LoloBuy taġixxi bħala aġent tax-xiri: tagħti listing tal-bejjiegħ, tagħżel il-prodott, tħallas għax-xiri u t-trasport domestiku fiċ-Ċina, imbagħad tirrevedi l-istadju tal-maħżen qabel tirranġa t-trasport internazzjonali. Il-bejjiegħ jipprovdi l-oġġetti. Link jew entrata fl-ispreadsheet hija punt tat-tluq biex tiċċekkja ordni, mhux konferma tal-istokk attwali.",
+      "sourceIds": [
+        "buying",
+        "service"
+      ]
+    },
+    {
+      "id": "place-order",
+      "category": "Biex tibda",
+      "question": "Kif nordna permezz ta’ LoloBuy?",
+      "answer": "Waħħal il-link oriġinali fuq LoloBuy, iċċekkja l-listing importat u agħżel il-kulur, id-daqs u l-kwantità eżatti. Qabel tħallas, irrevedi l-prezz, it-trasport domestiku u s-servizzi mitluba. Il-gwida uffiċjali mbagħad tifred ix-xiri, l-ispezzjoni fil-maħżen u s-sottomissjoni tal-pakkett internazzjonali fi stadji distinti.",
+      "sourceIds": [
+        "buying"
+      ]
+    },
+    {
+      "id": "manual-order",
+      "category": "Biex tibda",
+      "question": "X’jiġri jekk LoloBuy ma tistax taqra l-link tiegħi?",
+      "answer": "Il-gwida uffiċjali tiddeskrivi formola manwali għall-ordni meta l-importazzjoni awtomatika ma tkunx disponibbli. Daħħal l-informazzjoni vera u l-għażliet u irrevedi qabel tissottometti. Tibdilx l-ID tal-prodott tas-suq bin-numru intern ta’ paġna fl-ispreadsheet: jidentifikaw rekords differenti.",
+      "sourceIds": [
+        "buying"
+      ]
+    },
+    {
+      "id": "domestic-delivery",
+      "category": "Ordnijiet u ħlas",
+      "question": "Jistgħu diversi prodotti jaqsmu tariffa domestika waħda?",
+      "answer": "L-għajnuna dwar il-kunsinna domestika tiddeskrivi tariffa waħda meta prodotti mill-istess bejjiegħ jiġu sottomessi u mħallsa flimkien. Ordni kbira jew tqila ħafna tista’ teħtieġ ħlas addizzjonali. Dan ma jgħaqqadx awtomatikament tariffi ta’ bejjiegħa differenti u ma jinkludix it-trasport internazzjonali.",
+      "sourceIds": [
+        "domestic"
+      ]
+    },
+    {
+      "id": "seller-promotion",
+      "category": "Ordnijiet u ħlas",
+      "question": "Kif nitlob li jiġi applikat skont tal-bejjiegħ?",
+      "answer": "Niżżel il-promozzjoni vera jew l-offerta ta’ kunsinna domestika b’xejn fin-noti tal-ordni biex l-aġent jivverifikaha mal-bejjiegħ. L-għajnuna tispjega wkoll l-użu ta’ Order Enquiry jekk id-dettalji tħallew barra. Skont irid jiġi ċċekkjat; spreadsheet ma tistax twiegħed li offerta antika għadha valida.",
+      "sourceIds": [
+        "promotions"
+      ]
+    },
+    {
+      "id": "change-order",
+      "category": "Ordnijiet u ħlas",
+      "question": "Nista’ nbiddel id-daqs jew il-kulur wara li nordna?",
+      "answer": "Qabel il-bejjiegħ jibgħat, LoloBuy tgħid li tista’ tinnegozja bidla. Wara, il-paġna tiddeskrivi ritorn possibbli mill-maħżen u ordni ġdida, bi spejjeż tat-trasport tar-ritorn. Ibgħat it-talba mal-ordni t-tajba minnufih u stenna l-aċċettazzjoni qabel tassumi li l-għażla nbidlet.",
+      "sourceIds": [
+        "changes"
+      ]
+    },
+    {
+      "id": "confirmation-message",
+      "category": "Ordnijiet u ħlas",
+      "question": "Xi jfisser Pending for Confirmation?",
+      "answer": "Xi dettalji jeħtieġu l-konferma tiegħek. Aqra u wieġeb il-messaġġ marbut mal-ordni. L-għajnuna tidderieġi mistoqsijiet dwar ordnijiet mixtrija lejn Shopping Agent Order u mistoqsijiet tal-maħżen lejn My Warehouse, fejn tista’ tintalab deċiżjoni ta’ aċċettazzjoni jew ritorn. Il-kliem tal-menu jista’ jvarja; li tistenna aġġornament tat-traċċar mhux tweġiba.",
+      "sourceIds": [
+        "confirmation",
+        "confirmation-path"
+      ]
+    },
+    {
+      "id": "received-in-stock",
+      "category": "Maħżen u QC",
+      "question": "X’inhi d-differenza bejn Received u In Stock?",
+      "answer": "Il-gwida uffiċjali tuża Received meta l-maħżen ikun irċieva l-pakkett tal-bejjiegħ u l-ispezzjoni tkun għaddejja. In Stock ifisser li l-kontroll tlesta u l-oġġetti jinsabu fl-inventarju tiegħek. Riċevuta fil-maħżen għalhekk ma tfissirx li r-reviżjoni QC tiegħek jew it-trasport internazzjonali tlestew.",
+      "sourceIds": [
+        "status"
+      ]
+    },
+    {
+      "id": "qc-checks",
+      "category": "Maħżen u QC",
+      "question": "X’jiċċekkja l-QC standard?",
+      "answer": "L-ispezzjoni standard ta’ LoloBuy tivverifika dettalji viżibbli bħal stil, kwantità, kulur, daqs, mudell u ħsara ovvja. Aqra s-servizz magħżul flimkien mar-ritratti tal-ordni tiegħek. Kontroll viżiv mhux garanzija ta’ awtentiċità, qies eżatt jew durabilità fit-tul.",
+      "sourceIds": [
+        "qc"
+      ]
+    },
+    {
+      "id": "inspection-exclusions",
+      "category": "Maħżen u QC",
+      "question": "L-oġġetti ssiġillati u l-elettronika jiġu ttestjati kompletament?",
+      "answer": "Le. Ir-regoli għandhom eċċezzjonijiet għal prodotti ssiġillati u jeskludu t-testijiet ta’ awtentiċità, funzjoni u kwalità ta’ elettronika professjonali u prodotti relatati. Bl-għażla mingħajr spezzjoni, il-maħżen jiċċekkja r-restrizzjonijiet iżda ma jivverifikax il-prodott u ma jipprovdix ritratti QC. Irrevedi s-servizz qabel tiddependi fuq ir-riżultat.",
+      "sourceIds": [
+        "qc"
+      ]
+    },
+    {
+      "id": "qc-photos",
+      "category": "Maħżen u QC",
+      "question": "Nista’ nitlob aktar ritratti QC?",
+      "answer": "L-overview tas-servizz isemmi ritratti addizzjonali fuq talba; il-paġna tar-ritratti toffri wkoll Secondary Quality Inspection jekk l-ispezzjoni nqabżet qabel il-ħażna. Il-paġni uffiċjali jagħtu għadd differenti ta’ ritratti standard. Iċċekkja s-servizz tiegħek u itlob il-vista jew il-kejl nieqes, minflok tassumi l-istess għadd għal kull ordni.",
+      "sourceIds": [
+        "service",
+        "photos",
+        "qc"
+      ]
+    },
+    {
+      "id": "storage-period",
+      "category": "Maħżen u QC",
+      "question": "Kemm jistgħu jdumu l-oġġetti fil-maħżen ta’ LoloBuy?",
+      "answer": "Il-paġna ddedikata għall-ħażna u l-gwida tal-istatus attwali jgħidu 180 jum għall-oġġetti ordinarji, filwaqt li gwida tax-xiri eqdem għadha tgħid 90. Pakketti anormali mhux imqabbla għandhom regoli separati. Iċċekkja l-iskadenza murija għall-oġġett tiegħek u rranġa t-trasport jew estensjoni qabel tiskadi; tiddependix fuq il-gwida l-antika biss.",
+      "sourceIds": [
+        "storage",
+        "status",
+        "buying"
+      ]
+    },
+    {
+      "id": "consolidate",
+      "category": "Trasport u traċċar",
+      "question": "Nista’ nibgħat diversi xiri f’pakkett wieħed?",
+      "answer": "Il-gwida tiddeskrivi l-għażla ta’ oġġetti f’My Warehouse u s-sottomissjoni tagħhom flimkien għall-kunsinna. Iċċekkja li kull oġġett ikun għadda mir-reviżjoni meħtieġa u li r-rotta disponibbli taċċetta l-pakkett. Li tgħaqqad l-oġġetti jibdel il-pakkett ippakkjat; ma jiggarantixxix spiża totali aktar baxxa.",
+      "sourceIds": [
+        "buying"
+      ]
+    },
+    {
+      "id": "remove-packaging",
+      "category": "Trasport u traċċar",
+      "question": "Tista’ LoloBuy tneħħi l-kaxxi qabel tibgħat?",
+      "answer": "Tista’ tagħżel Package Removal waqt is-sottomissjoni tal-kunsinna. Id-deskrizzjoni uffiċjali tgħid li jinżamm l-ippakkjar protettiv meħtieġ. Jekk trid il-kaxxi oriġinali għal rigal, ħażna jew ritorn possibbli, ikkunsidra dan qabel it-tneħħija. L-ippakkjar finali u t-tariffa jiddependu mill-oġġetti u l-vjeġġ magħżul.",
+      "sourceIds": [
+        "packaging"
+      ]
+    },
+    {
+      "id": "shipping-price",
+      "category": "Trasport u traċċar",
+      "question": "Għaliex it-tariffa finali tista’ tvarja mill-istima?",
+      "answer": "L-ewwel tariffa tibbaża fuq il-piż stmat, id-destinazzjoni u r-rotta. L-ippakkjar jista’ jibdel il-piż u d-dimensjonijiet, u t-tariffa tal-fornitur loġistiku tiddetermina s-saldu. LoloBuy tiddeskrivi rifużjoni tal-ħlas żejjed jew talba għal ħlas addizzjonali jekk it-trasport attwali jvarja. Iċċekkja l-kwotazzjoni finali u l-messaġġ fil-kont.",
+      "sourceIds": [
+        "weight",
+        "freight-balance"
+      ]
+    },
+    {
+      "id": "volumetric-weight",
+      "category": "Trasport u traċċar",
+      "question": "X’inhu l-piż volumetriku?",
+      "answer": "Jikkonverti d-dimensjonijiet tal-pakkett f’piż għall-kontijiet ta’ oġġetti goffi. L-għajnuna ta’ LoloBuy tiddistingwi formuli skont ir-rotta u tinnota li l-piż fatturabbli jista’ jkun l-akbar bejn il-piż reali u volumetriku. Uża d-diviżur u r-regoli ta’ arrotondament tar-rotta tiegħek, mhux prezz universali għal kull kilogramma.",
+      "sourceIds": [
+        "weight"
+      ]
+    },
+    {
+      "id": "supplemental-payment",
+      "category": "Trasport u traċċar",
+      "question": "X’nagħmel b’avviż ta’ ħlas addizzjonali tat-trasport?",
+      "answer": "Iftaħ il-pakkett rilevanti u ara t-tariffa riveduta u t-talba għall-konferma. Ir-regoli ta’ LoloBuy għandhom limiti differenti u każijiet fejn pakkett jista’ jinżamm jew jitħassar. Wieġeb sal-iskadenza murija għall-pakkett u ħallas is-saldu aċċettat; tqisx l-istima oriġinali bħala finali.",
+      "sourceIds": [
+        "freight-balance"
+      ]
+    },
+    {
+      "id": "tracking",
+      "category": "Trasport u traċċar",
+      "question": "Fejn nista’ nsegwi l-pakkett internazzjonali tiegħi?",
+      "answer": "Il-gwida uffiċjali tidderieġi lejn My LoloBuy → Parcels wara li jintbagħat. Il-gwida tal-istatus tiddistingwi Packed minn Shipped: pakkett ippakkjat jista’ għadu jistenna l-konferma tal-piż, filwaqt li Shipped ifisser numru ta’ traċċar u konsenja lill-kurrier. Aqra l-aħħar avveniment tal-kurrier flimkien mal-istatus fil-kont.",
+      "sourceIds": [
+        "buying",
+        "status"
+      ]
+    },
+    {
+      "id": "cancellation",
+      "category": "Ritorni u wara l-bejgħ",
+      "question": "Nista’ nikkanċella ordni qabel tasal fil-maħżen?",
+      "answer": "Il-kanċellazzjoni tiddependi mill-istadju attwali. Uża l-għażla ta’ kanċellazzjoni jew ritorn/rifużjoni tal-ordni. Wara x-xiri tista’ tkun meħtieġa konferma tal-bejjiegħ; talba sottomessa mhix rifużjoni approvata. Iċċekkja t-tweġiba qabel tagħmel xiri sostitut.",
+      "sourceIds": [
+        "cancellation",
+        "refunds"
+      ]
+    },
+    {
+      "id": "eligible-return",
+      "category": "Ritorni u wara l-bejgħ",
+      "question": "X’tkopri r-regola ta’ ritorn ta’ ħamest ijiem?",
+      "answer": "Ir-regola ddedikata tiddeskrivi tieqa ta’ 120 siegħa li tibda fis-siegħa wara Stocked in għal prodotti eliġibbli. Għadhom japplikaw il-kunsens tal-bejjiegħ, il-kundizzjoni u l-ippakkjar meħtieġ. Ritorn mingħajr tort jista’ jinvolvi ż-żewġ vjaġġi domestiċi u tariffa ta’ mmaniġġjar. Iċċekkja l-eliġibbiltà u l-paġna tat-talba minnufih.",
+      "sourceIds": [
+        "returns"
+      ]
+    },
+    {
+      "id": "refund-destination",
+      "category": "Ritorni u wara l-bejgħ",
+      "question": "Fejn tintbagħat rifużjoni approvata?",
+      "answer": "Il-paġna tal-għajnuna ġeneralment tiddeskrivi rifużjonijiet lejn il-bilanċ tal-kont LoloBuy. Tispjega separatament eċċezzjoni limitata għall-metodu oriġinali għal ċerti ordnijiet PayPal li għadhom jistennew approvazzjoni. Dan mhux wegħda li kull rifużjoni tmur direttament fuq karta bankarja, jew prova li kull metodu ta’ ħlas huwa disponibbli bħalissa.",
+      "sourceIds": [
+        "refunds"
+      ]
+    },
+    {
+      "id": "delivery-problem",
+      "category": "Ritorni u wara l-bejgħ",
+      "question": "X’nagħmel jekk il-pakkett li wasal huwa bil-ħsara jew ħażin?",
+      "answer": "Iftaħ il-pakkett f’My LoloBuy → Parcels u uża Apply After-sales. Iddeskrivi l-problema u żomm ritratti ċari tal-pakkett u tal-prodott. L-artiklu uffiċjali fih skadenzi kontradittorji, inkluż twissija aktar bikrija, għalhekk irrapporta immedjatament u ikseb konferma speċifika għall-każ minflok tistenna skadenza ġenerika.",
+      "sourceIds": [
+        "claims"
+      ]
+    },
+    {
+      "id": "sizing",
+      "category": "Għażliet tal-prodott",
+      "question": "Kif nagħżel daqs tal-ħwejjeġ jew taż-żraben?",
+      "answer": "Ir-referenza ta’ LoloBuy twissi li l-istandards tal-ħwienet jistgħu jvarjaw. Qabbel it-tabella tal-bejjiegħ, l-unitajiet u l-għażla mal-kejl tiegħek jew oġġett li joqgħod tajjeb. It-tabelli ta’ konverżjoni huma referenzi, mhux garanzija li tikketta waħda taqbel minn kull bejjiegħ. Staqsi dwar kejl nieqes qabel tordna.",
+      "sourceIds": [
+        "sizing"
+      ]
+    },
+    {
+      "id": "1688",
+      "category": "Għażliet tal-prodott",
+      "question": "L-ordnijiet 1688 għandhom l-istess regoli ta’ xiri u spezzjoni?",
+      "answer": "Il-gwida uffiċjali 1688 titlob il-kwantità minima tal-bejjiegħ; il-prezzijiet u t-trasport domestiku jistgħu jinbidlu mal-kwantità. Ir-regoli jiddistingwu prodotti Tip A b’kontroll ta’ kampjun minn Tip B mingħajr QC standard. Ikkonferma l-kwantità, l-ambitu tal-ispezzjoni u t-termini tar-ritorn qabel tħallas, minflok tassumi trattament ta’ xiri bl-imnut.",
+      "sourceIds": [
+        "wholesale",
+        "qc"
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "slug": "using-lolobuy-spreadsheet",
+      "title": "Kif tuża spreadsheet ta’ LoloBuy: minn link għal lista qasira utli",
+      "description": "Sib prodotti skont il-kategorija, qabbel il-listing eżatt u żomm id-dettalji meħtieġa qabel tiftaħ prodott fuq LoloBuy.",
+      "keyword": "spreadsheet LoloBuy",
+      "category": "Biex tibda",
+      "summary": "Spreadsheet utli tnaqqas it-tfittxija. Lista qasira utli tirreġistra l-prodott, il-varjant u l-mistoqsijiet li jkollok bżonn għall-ordni.",
+      "sections": [
+        {
+          "heading": "Ibda b’deċiżjoni tax-xiri, mhux lista twila",
+          "paragraphs": [
+            "Spreadsheet ta’ LoloBuy hija għodda biex tiskopri prodotti. Tista’ tibbrawżja kategorija, tara stampi u ssegwi listing. Ma tfissirx li l-pubblikatur xtara kull prodott, ittestja l-bejjiegħ jew irriżerva d-daqs tiegħek. Ittratta kull entrata bħala ħjiel li jeħtieġ kontroll.",
+            "Qabel tfittex, ikteb it-tip ta’ oġġett, il-kejl importanti u baġit approssimattiv. Li tfittex hoodie sewda biż-żipp huwa aktar utli milli tiġbor kull link sabiħ. Mistoqsija aktar preċiża tgħinek tara meta listing ma jagħtix informazzjoni essenzjali."
+          ]
+        },
+        {
+          "heading": "Żomm l-identità oriġinali tal-prodott",
+          "paragraphs": [
+            "In-numru fl-indirizz tal-katalgu jista’ jkun rekord lokali u mhux l-ID tal-prodott fis-suq użat fil-link tax-xiri. Tibdilx in-numri bl-idejn biex link jidher tajjeb. Uża l-buttuna tal-prodott u qabbel dak li jinfetaħ mal-listing li ridt.",
+            "Salva l-URL oriġinali tal-bejjiegħ flimkien mal-varjant. Screenshot tista’ żżomm vista utli, iżda tkun inqas utli jekk ma turix il-bejjiegħ, id-daqs jew il-kulur. Jekk link jiftaħ prodott ieħor jew listing vojt, waqqaf u ċċekkja qabel tkompli."
+          ]
+        },
+        {
+          "heading": "Qabbel konfigurazzjonijiet indaqs",
+          "paragraphs": [
+            "Prezz inizjali jista’ japplika għall-orħos varjant, aċċessorju wieħed jew kwantità oħra. Qabbel l-istess konfigurazzjoni bejn listings. Sett ta’ żewġ biċċiet u top wieħed mhumiex paragun sinifikanti, anki jekk l-istampi żgħar jixbhu lil xulxin.",
+            "Iċċekkja li l-gallerija turi l-kulur magħżul u li hemm tabella tad-daqs. Ritratti identiċi minn bejjiegħa differenti ma juru l-istess manifattura jew stokk. Irreġistra l-evidenza disponibbli u ħalli vojt ċar fejn xi ħaġa importanti mhix magħrufa."
+          ],
+          "bullets": [
+            "Prodott eżatt u URL tal-bejjiegħ",
+            "Daqs, kulur u kwantità magħżula",
+            "Prezz attwali għal dak il-varjant",
+            "Kejl jew referenza tat-tabella",
+            "Mistoqsija waħda mhux solvuta qabel l-ordni"
+          ]
+        },
+        {
+          "heading": "Kompli permezz tax-xiri uffiċjali",
+          "paragraphs": [
+            "Il-gwida ta’ LoloBuy tiddeskrivi sottomissjoni ta’ link tas-suq, għażla tal-varjanti u ħlas tal-prodott u t-trasport domestiku. Tiddeskrivi wkoll formola manwali meta d-dettalji ma jinqrawx awtomatikament. Li link jinfetaħ b’suċċess huwa biss il-bidu tal-kontroll.",
+            "Fuq il-paġna uffiċjali, iċċekkja mill-ġdid l-immaġni, it-test tal-għażla u l-kwantità. Katalgu ma jiggarantixxix stokk u ma jżommx għażla li ma għamiltx fil-checkout. Agħmel kull rekwiżit speċifiku biżżejjed, bħal isem eżatt ta’ kulur jew mistoqsija dwar kejl."
+          ]
+        },
+        {
+          "heading": "Ifred ir-ritratti tas-sejba mill-QC tiegħek",
+          "paragraphs": [
+            "Il-gallerija tal-bejjiegħ tispjega l-offerta. Ritratt storiku fil-maħżen jista’ juri l-oġġett ta’ ħaddieħor. Ir-ritratti tal-ispezzjoni marbuta mal-ordni tiegħek huma l-evidenza li tirrevedi qabel tibgħat dak l-oġġett barra. Dawn it-tliet tipi jwieġbu mistoqsijiet differenti.",
+            "Il-lista qasira għandha tibqa’ mal-ordni. Meta l-prodott jasal fil-maħżen, qabbel il-varjant irreġistrat mat-tikketta tad-daqs, il-kulur u l-kwantità. Huwa aktar faċli tispjega diskrepanza meta għandek l-għażla oriġinali u r-referenza flimkien."
+          ]
+        },
+        {
+          "heading": "Uża l-lista anki wara x-xiri",
+          "paragraphs": [
+            "Żomm l-aħjar kandidati u għaliex għaddew mill-paragun. Hoodie waħda jista’ jkollha tabella aktar ċara u oħra mistoqsija mhux solvuta dwar id-drapp. Dan ibiddel ġabra ta’ links f’deċiżjoni li tista’ terġa’ tara mingħajr terġa’ tibda r-riċerka.",
+            "Qabel tixtri, aqra l-gwidi tal-ordni u tal-baġit. Qabel tissottometti pakkett, aqra l-QC u t-trasport. L-ispreadsheet hija l-aktar utli meta tgħaqqad dawn l-istadji, mhux meta turi prezz tal-prodott bħala l-ispiża kollha biex jasal."
+          ]
+        }
+      ],
+      "checklist": [
+        "Salva l-URL u l-varjant eżatti.",
+        "Qabbel kwantitajiet u konfigurazzjonijiet indaqs.",
+        "Iċċara kejl nieqes qabel tħallas.",
+        "Iċċekkja l-listing importat fuq LoloBuy.",
+        "Ara l-QC tal-ordni tiegħek qabel tibgħat."
+      ],
+      "sourceIds": [
+        "buying",
+        "qc"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 447
+    },
+    {
+      "slug": "how-to-order-on-lolobuy",
+      "title": "Kif tordna fuq LoloBuy: links, għażliet u stadji tal-ħlas",
+      "description": "Segwi l-proċess minn link tas-suq sal-ispezzjoni fil-maħżen u pakkett internazzjonali sottomess separatament.",
+      "keyword": "kif tordna fuq LoloBuy",
+      "category": "Ordnijiet",
+      "summary": "Iċċekkja l-prodott qabel il-ħlas, l-evidenza tal-maħżen qabel it-trasport u l-kwotazzjoni qabel jintbagħat. Kull stadju jwieġeb mistoqsija differenti.",
+      "sections": [
+        {
+          "heading": "Ibda fuq is-sit uffiċjali",
+          "paragraphs": [
+            "Uża s-sit uffiċjali ta’ LoloBuy għar-reġistrazzjoni, l-aċċess għall-kont u l-ħlas. Dan il-katalgu indipendenti jgħin fis-sejba; ma jiġborx il-password u ma jipproċessax l-ordni. Iċċekkja d-destinazzjoni tal-link u żomm il-konversazzjoni max-xiri rilevanti.",
+            "Il-gwida uffiċjali tibda b’link minn suq Ċiniż appoġġjat. Il-bejjiegħ wara dak il-listing jipprovdi l-oġġett. Din id-distinzjoni tgħodd għax servizz tax-xiri u bejjiegħ ma jikkontrollawx l-istess partijiet tat-tranżazzjoni."
+          ]
+        },
+        {
+          "heading": "Iċċekkja l-prodott importat",
+          "paragraphs": [
+            "Waħħal il-link oriġinali jew uża l-buttuna LoloBuy tal-katalgu. Qabbel il-paġna mas-sors qabel tagħżel. Iċċekkja l-istampa ewlenija, l-isem, id-dettalji tal-bejjiegħ fejn hemm, il-kulur, id-daqs u l-kwantità. Tiddependix fuq l-istampa biss.",
+            "Jekk tidher formola manwali tal-aġent, il-gwida tgħid li timla d-dettalji bl-idejn. Uża l-listing reali u taqtax għażliet neqsin. Jekk dettall essenzjali mhux ċar, iċċarah permezz tal-mistoqsija tal-ordni qabel titlob lill-aġent ikompli."
+          ],
+          "bullets": [
+            "Il-prodott jaqbel mal-URL oriġinali",
+            "It-test jaqbel mal-kulur u d-daqs mixtieqa",
+            "Kwantità u prezz għal kull unità għall-istess konfigurazzjoni",
+            "Rekwiżit speċjali miktub ċar"
+          ]
+        },
+        {
+          "heading": "Ifhem l-ewwel ħlas",
+          "paragraphs": [
+            "Il-proċess uffiċjali jifred il-prodott u t-trasport domestiku fiċ-Ċina mill-pakkett internazzjonali aktar tard. Aqra l-ewwel ħlas linja b’linja. Li tagħżel destinazzjoni waqt ix-xiri ma jfissirx li t-total jinkludi kull spiża biex jasal hemm.",
+            "Iċċekkja l-metodi, il-muniti u s-servizzi fakultattivi fil-checkout attwali. Lista ġenerali fl-għajnuna ma twiegħedx li kull metodu huwa disponibbli għall-kont jew l-ordni. Salva l-ħlas u qabblu mal-istatus minflok terġa’ tħallas għax il-paġna qed taġġorna bil-mod."
+          ]
+        },
+        {
+          "heading": "Wieġeb il-mistoqsijiet tal-ordni",
+          "paragraphs": [
+            "L-istatus Pending for Confirmation jindika informazzjoni li trid tiġi vverifikata. Il-paġna tal-għajnuna tindirizzak lejn l-istruzzjonijiet fl-ordni. Aqra l-mistoqsija vera u wieġeb dak il-punt, għax jista’ jiddetermina jekk it-tim jistax ikompli.",
+            "Il-gwida tal-bidliet tiddistingwi bejn oġġetti mhux mibgħuta u dawk diġà mibgħuta. Qabel, tista’ tintalab bidla mill-bejjiegħ; wara, jista’ jkun hemm bżonn ritorn u ordni ġdida. Talba mhix bidla lesta sakemm ir-rekord jikkonfermaha."
+          ]
+        },
+        {
+          "heading": "Irrevedi l-wasla u l-ispezzjoni",
+          "paragraphs": [
+            "Wasla fil-maħżen u spezzjoni kompluta huma stadji differenti. Sib l-oġġett fil-maħżen u qabbel ir-ritratti u l-varjant max-xiri. Iċċekkja l-identità l-ewwel, imbagħad id-dettalji viżibbli importanti. Solvi diskrepanza ċara qabel tpoġġih f’pakkett internazzjonali.",
+            "Tassumix l-istess spezzjoni għal kull prodott. Ir-regoli jiddeskrivu limiti għall-oġġetti ssiġillati u trattament speċjali għal ċerti ordnijiet 1688. Jekk trid kejl jew vista speċifika, iċċekkja jekk hix disponibbli minflok tqis ritratt ġenerali QC bħala prova ta’ kollox."
+          ]
+        },
+        {
+          "heading": "Issottometti l-pakkett bħala deċiżjoni separata",
+          "paragraphs": [
+            "Il-proċess uffiċjali jitlob li tagħżel oġġetti maħżuna, timla l-kunsinna u tagħżel mir-rotot disponibbli. Irrevedi d-destinazzjoni, ir-restrizzjonijiet, l-ippakkjar u d-depożitu flimkien. Prodott mixtri mhux awtomatikament pakkett internazzjonali lest.",
+            "It-tariffa finali tista’ tinbidel wara l-ippakkjar u l-kejl loġistiku. Ara r-rekord għal aġġustamenti jew talbiet ta’ konferma. Wara li jintbagħat, uża t-taqsima tal-pakketti għat-traċċar, żomm ir-referenzi u ċċekkja l-kontenut minnufih mal-wasla."
+          ]
+        }
+      ],
+      "checklist": [
+        "Ikkonferma l-prodott oriġinali u l-varjant eżatt.",
+        "Irrevedi l-prezz u t-trasport domestiku.",
+        "Wieġeb talbiet għall-konferma.",
+        "Iċċekkja r-ritratti u l-problemi mhux solvuti.",
+        "Irrevedi l-kwotazzjoni internazzjonali separata."
+      ],
+      "sourceIds": [
+        "buying",
+        "confirmation",
+        "changes",
+        "qc",
+        "freight-balance"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 412
+    },
+    {
+      "slug": "lolobuy-qc-photos",
+      "title": "Ritratti QC ta’ LoloBuy: kontroll prattiku qabel tibgħat",
+      "description": "Ifred ir-ritratti tal-bejjiegħ mill-ispezzjoni tiegħek u ċċekkja identità, kundizzjoni viżibbli u evidenza nieqsa.",
+      "keyword": "ritratti QC LoloBuy",
+      "category": "Kontroll tal-kwalità",
+      "summary": "Ibda mill-prodott u l-varjant ordnati. Il-veduti jgħinuk tiddeċiedi x’inhu ċar, x’jeħtieġ ritratt ieħor u x’għandu jiġi solvut qabel jintbagħat.",
+      "sections": [
+        {
+          "heading": "Identifika l-evidenza li qed tara",
+          "paragraphs": [
+            "Gallerija hija parti mill-offerta tal-bejjiegħ. Ritratt QC ta’ referenza jista’ juri ordni eqdem. Ir-ritratti tal-maħżen tiegħek jirrigwardaw l-oġġett riċevut għax-xiri tiegħek. Żomm dawn il-kategoriji separati, speċjalment għal prodotti b’diversi kuluri, verżjonijiet jew daqsijiet.",
+            "Ibda billi tqabbel ir-referenza, il-prodott u l-għażla. Ritratt dettaljat tal-verżjoni ħażina mhux serħan il-moħħ utli. Jekk ma tistax torbot is-sett mal-oġġett tiegħek, itlob dik ir-rabta qabel tiġġudika d-dehra."
+          ]
+        },
+        {
+          "heading": "Iċċekkja l-identità qabel id-dettalji żgħar",
+          "paragraphs": [
+            "Ara d-daqs, il-kulur, il-kwantità u l-mudell l-ewwel. Fittex tikketti konsistenti u veduti tal-istess oġġett. Sett sabiħ jista’ xorta juri daqs ħażin jew sett nieqes. Qabbel mal-għażla salvata minflok tiddependi fuq il-memorja.",
+            "Għal żraben, iċċekkja t-tnejn u l-marki tad-daqs. Għal ħwejjeġ, ara l-kulur u t-tikketta. Għal borża jew sett ta’ aċċessorji, ara l-komponenti mistennija. Dawn huma passi prattiċi, mhux garanzija li ġie ċċekkjat kull dettall moħbi."
+          ]
+        },
+        {
+          "heading": "Uża kontroll skont il-kategorija",
+          "paragraphs": [
+            "Għall-ħwejjeġ, veduti utli jinkludu l-forma, quddiem u wara, ħjatat, stampar jew rakkmu u kejl li jaffettwa l-qies. Għaż-żraben, ara l-par flimkien, il-kostruzzjoni viżibbli u d-daqs. Għall-basktijiet, għeluq, manki u ġewwieni jwieġbu mistoqsijiet differenti.",
+            "Ikteb biss dettalji li jaffettwaw id-deċiżjoni. Lista ġenerika twila tista’ taħbi l-kejl wieħed jew l-għeluq bil-ħsara li jgħodd. Jekk quddiem jidher ċar iżda wara jonqos, itlob il-vista nieqsa minflok oħra mill-istess angolu."
+          ],
+          "bullets": [
+            "Ikkonferma l-identità u l-varjant",
+            "Ara l-kundizzjoni u l-kostruzzjoni viżibbli",
+            "Qabbel il-kejl mitlub",
+            "Ifred veduti nieqsa minn difetti osservati"
+          ]
+        },
+        {
+          "heading": "Ifhem il-limiti tas-servizz standard",
+          "paragraphs": [
+            "Il-paġna tal-ispezzjoni ta’ LoloBuy tispjega kontrolli tad-dehra u esklużjonijiet. B’mod partikolari, oġġetti ssiġillati mhux dejjem jinfetħu, u ċerti prodotti professjonali jew elettroniċi ma jiġux ittestjati għall-awtentiċità, funzjoni jew kwalità. Xi ordnijiet 1688 jużaw kampjuni jew regoli oħra.",
+            "Il-paġni uffiċjali ma jaqblux fuq għadd universali ta’ ritratti: il-paġna tal-ispezzjoni u dik ġenerali jagħtu numri differenti. Iċċekkja s-servizz marbut mal-ordni minflok tassumi numru eżatt. Il-mistoqsija utli hija jekk l-evidenza tkoprix id-deċiżjoni tiegħek."
+          ]
+        },
+        {
+          "heading": "Itlob vista addizzjonali speċifika",
+          "paragraphs": [
+            "Talba preċiża tidentifika l-ordni, il-parti u r-raġuni. Pereżempju: “Uri t-tikketta tad-daqs u kejjel il-wisa’ tas-sider ċatt minn ħjata għal ħjata.” Dan huwa aktar ċar milli tistaqsi jekk il-prodott hux tajjeb. Iċċekkja disponibbiltà u tariffa qabel xogħol addizzjonali.",
+            "Uża l-istess metodu tat-tabella tal-bejjiegħ. Wisa’ ċatta tal-ħwejjeġ u ċirkonferenza tal-ġisem mhumiex l-istess. Żomm ritratt u kejl flimkien biex in-numru ma jitħawwadx ma’ daqs jew prodott ieħor."
+          ]
+        },
+        {
+          "heading": "Agħmel deċiżjoni dokumentata",
+          "paragraphs": [
+            "Aqsam ir-riżultati f’konfermati, mhux ċari u inaċċettabbli. Itlob evidenza għal punt mhux ċar. Jekk l-oġġett jidher differenti mill-ordni, uża l-appoġġ jew ir-ritorn rilevanti qabel it-trasport internazzjonali. Żomm deskrizzjoni qasira u r-ritratti li juru l-problema.",
+            "Ritratti ma jistgħux jistabbilixxu kull proprjetà tal-materjal, kumdità, durabilità jew funzjoni interna. L-approvazzjoni tad-dehra hija deċiżjoni aktar limitata. Aqra r-ritorni waqt li l-oġġett għadu fil-maħżen; QC tajjeb mhuwiex wegħda dwar id-dwana jew il-kunsinna."
+          ]
+        }
+      ],
+      "checklist": [
+        "Qabbel ir-ritratti mal-ordni tiegħek.",
+        "Iċċekkja daqs, kulur, mudell u kwantità l-ewwel.",
+        "Itlob il-vista jew il-kejl nieqes eżatt.",
+        "Ara s-servizz tal-ispezzjoni u l-esklużjonijiet.",
+        "Solvi kwistjonijiet importanti qabel tissottometti pakkett."
+      ],
+      "sourceIds": [
+        "qc",
+        "photos",
+        "service",
+        "sizing"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 439
+    },
+    {
+      "slug": "lolobuy-shipping-costs",
+      "title": "Spejjeż tat-trasport LoloBuy: qabbel il-pakkett kollu",
+      "description": "Ifhem il-piż stmat, reali u volumetriku, u qabbel rotot bl-istess destinazzjoni, kontenut u ppakkjar.",
+      "keyword": "kalkulatur tat-trasport LoloBuy",
+      "category": "Trasport",
+      "summary": "Paragun utli jibda b’pakkett definit ċar. Din il-gwida tispjega d-dettalji meħtieġa u l-kontrolli; mhix kwotazzjoni diretta.",
+      "sections": [
+        {
+          "heading": "Ifred il-prezz tal-prodott mit-trasport",
+          "paragraphs": [
+            "Il-prezz ħdejn prodott mhux il-kost kollu tal-kunsinna. Il-proċess uffiċjali jifred ix-xiri u t-trasport domestiku mid-depożitu internazzjonali aktar tard. Tista’ tistma baġit qabel tixtri, iżda ma tistax tagħmel paragun finali minn prezz tal-prodott biss.",
+            "Ikteb id-destinazzjoni, il-kontenut u l-ippakkjar li trid iżżomm. Par żraben bil-kaxxa u l-istess par mingħajrha huma deċiżjonijiet differenti. Oġġetti addizzjonali jibdlu piż u dimensjonijiet, għalhekk anki xiri żgħir jista’ jaffettwa l-kwotazzjoni b’diversi modi."
+          ]
+        },
+        {
+          "heading": "Kun af liema piż qed tqabbel",
+          "paragraphs": [
+            "Il-gwida tal-piż tiddistingwi stima mill-piż reali tal-pakkett. Ir-rekord fil-maħżen jinkludi l-ippakkjar oriġinali, filwaqt li l-pakkett finali jinkludi wkoll il-kaxxa tat-trasport u għażliet ta’ tneħħija jew tisħiħ. Il-kejl jista’ jvarja bejn l-istadji.",
+            "Il-piż volumetriku jirrifletti l-ispazju tal-pakkett. Il-gwida uffiċjali tagħti diviżuri differenti skont ir-rotta. Tapplikax wieħed għal kull kurrier u tassumix li eżempju qadim hu tariffa attwali. Uża l-kundizzjonijiet kurrenti għall-pakkett li qed tissottometti."
+          ],
+          "bullets": [
+            "Destinazzjoni u kodiċi postali",
+            "Restrizzjonijiet u kontenut",
+            "Piż reali wara l-ippakkjar",
+            "Tul, wisa’ u għoli",
+            "Regoli tal-kontijiet u servizzi tar-rotta"
+          ]
+        },
+        {
+          "heading": "Uża l-kalkolu mingħajr ma ssejjaħlu kwotazzjoni",
+          "paragraphs": [
+            "Bħala eżempju biss, pakkett ta’ 40 × 30 × 20 ċentimetru għandu volum ta’ 24,000 ċentimetru kubu. Diviżur ipotetiku ta’ 6,000 jagħti 4 kilogrammi volumetriċi; 5,000 jagħti 4.8 kilogrammi. L-ebda kalkolu ma jagħti prezz tat-trasport.",
+            "L-eżempju juri għaliex ir-regola tgħodd. Għad għandek bżonn piż reali, passi tal-kontijiet, destinazzjoni u rata kurrenti. Tagħżilx rotta minn prezz ewlieni “għal kull kilogramma” meta t-tariffa tiddependi minn unità inizjali, unitajiet addizzjonali jew piż fatturabbli akbar."
+          ]
+        },
+        {
+          "heading": "Qabbel l-istess pakkett bejn rotot",
+          "paragraphs": [
+            "Żomm l-istess inputs fil-paragun. Iċċekkja l-kontenut aċċettat, il-ħin stmat, it-traċċar, ir-rekwiżiti tal-ippakkjar u l-protezzjoni fakultattiva. Somma inizjali aktar baxxa mhix paragun komplut jekk is-servizzi jew ir-restrizzjonijiet ivarjaw.",
+            "Ħinijiet ta’ kunsinna huma stimi. L-immaniġġjar fil-maħżen, il-moviment tal-kurrier u l-proċessi fid-destinazzjoni huma stadji differenti. Din il-gwida ma twiegħedx ħin universali, rotta mingħajr taxxa jew tariffa fissa tad-dwana. Uża l-kwotazzjoni u r-regoli uffiċjali attwali."
+          ]
+        },
+        {
+          "heading": "Ikkunsidra l-kompromess tal-ippakkjar",
+          "paragraphs": [
+            "Il-paġna uffiċjali tiddeskrivi t-tneħħija ta’ ppakkjar estern żejjed filwaqt li tinżamm il-protezzjoni meħtieġa. Tagħti wkoll parir kontra t-tneħħija jekk il-pakkett oriġinali jgħodd għal rigal jew preservazzjoni. Tnaqqis fil-volum jista’ jgħin, iżda l-protezzjoni u l-għan tax-xiri jgħoddu wkoll.",
+            "Itlob għażla speċifika minflok istruzzjoni biex jitneħħa kollox. Qabbel il-kejl finali fejn disponibbli. Konsolidazzjoni jew tneħħija ma jnaqqsux awtomatikament kull kont; oġġett fraġli jista’ jeħtieġ aktar protezzjoni."
+          ]
+        },
+        {
+          "heading": "Segwi s-saldu finali",
+          "paragraphs": [
+            "Il-gwida tal-ħlas addizzjonali tgħid li l-istima tiġi rrikonċiljata mat-tariffa reali tal-fornitur loġistiku. Dan jista’ jfisser rifużjoni ta’ ħlas żejjed jew talba għal aktar ħlas. Aqra l-messaġġi u wieġeb it-talbiet marbuta mal-vjeġġ.",
+            "Żomm l-istima inizjali, il-kejl finali fatturabbli, is-servizzi u l-aġġustament flimkien. Dan jagħmel id-differenza aktar faċli biex tifhimha. Ippjana spejjeż possibbli tad-destinazzjoni separatament u ara t-total finali qabel tqis l-ordni lesta."
+          ]
+        }
+      ],
+      "checklist": [
+        "Qabbel rotot għall-istess kontenut u destinazzjoni.",
+        "Iċċekkja r-regoli tal-piż reali u volumetriku.",
+        "Żomm il-protezzjoni fid-deċiżjoni.",
+        "Ifred stimi minn tariffi finali.",
+        "Aqra aġġustamenti tal-pakkett qabel jintbagħat."
+      ],
+      "sourceIds": [
+        "buying",
+        "weight",
+        "packaging",
+        "freight-balance"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 427
+    },
+    {
+      "slug": "lolobuy-warehouse-consolidation",
+      "title": "Gwida tal-maħżen LoloBuy: spezzjoni, ħażna u konsolidazzjoni",
+      "description": "Organizza oġġetti maħżuna, solvi mistoqsijiet QC u agħżel l-ippakkjar għall-pakkett kollu.",
+      "keyword": "maħżen LoloBuy",
+      "category": "Maħżen",
+      "summary": "L-istadju tal-maħżen jippermettilek tqabbel ix-xiri mal-prodott riċevut u tiddeċiedi x’inhu lest biex jintbagħat flimkien.",
+      "sections": [
+        {
+          "heading": "Ifred il-wasla mill-istat lest",
+          "paragraphs": [
+            "Scan tal-kunsinna tal-bejjiegħ ifisser li pakkett domestiku wasal f’punt tal-vjaġġ. Ma jurix waħdu li l-oġġett ġie spezzjonat, imqabbel u lest għat-trasport internazzjonali. Il-gwida tal-istatus tifred ir-riċeviment, l-ispezzjoni u l-inventarju maħżun.",
+            "Uża r-rekord tal-maħżen bħala lista tax-xogħol, mhux messaġġ wieħed ta’ traċċar. Żomm in-numru tal-ordni, l-għażla u l-istatus QC għal kull oġġett. Jekk jaslu diversi pakketti, b’hekk wieħed lest ma jaħbix mistoqsija dwar ieħor."
+          ]
+        },
+        {
+          "heading": "Agħmel lista żgħira tal-maħżen",
+          "paragraphs": [
+            "Għal kull oġġett, irreġistra x’ordnajt, x’juri l-maħżen u x’għadu mhux solvut. Erba’ kolonni huma biżżejjed: oġġett, għażla korretta, deċiżjoni tal-ispezzjoni u istruzzjoni tal-ippakkjar. L-għan hu li mistoqsija miftuħa tibqa’ tidher qabel toħloq pakkett.",
+            "Qabbel l-immaġnijiet mal-għażla oriġinali. Ritratt nieqes u difett viżibbli jeħtieġu azzjonijiet differenti. Għal dettall mhux ċar, itlob evidenza. Għal diskrepanza, spjegaha mar-referenza u kkunsidra l-proċess tar-ritorn rilevanti."
+          ],
+          "bullets": [
+            "Ordni u għażla eżatta",
+            "Riċeviment u status tal-ispezzjoni",
+            "Mistoqsija jew ritorn miftuħ",
+            "Żamma jew tneħħija tal-ippakkjar oriġinali",
+            "Lest għal pakkett internazzjonali: iva jew le"
+          ]
+        },
+        {
+          "heading": "Iċċekkja l-iskadenza tiegħek direttament",
+          "paragraphs": [
+            "L-informazzjoni uffiċjali hija kontradittorja: il-gwida tax-xiri tgħid 90 jum, iżda l-paġni tal-ħażna u tal-istatus jgħidu 180. Il-paġna tal-ħażna tiddeskrivi wkoll pakketti anormali mhux imqabbla. Dawn id-differenzi ma għandhomx jinbidlu f’wegħda waħda bla kundizzjoni.",
+            "Ara l-informazzjoni tal-oġġett tiegħek u ċċara kull differenza qabel tiddependi fuq skadenza. Irreġistra d-data u estensjoni mħallsa jekk tagħżilha. Tħallix oġġetti jistennew indefinittivament għax artiklu ġenerali jagħti żmien itwal mir-rekord attwali."
+          ]
+        },
+        {
+          "heading": "Għaqqad oġġetti kompatibbli u solvuti",
+          "paragraphs": [
+            "Il-gwida uffiċjali tiddeskrivi l-għażla ta’ oġġetti maħżuna għal kunsinna jew aktar xiri biex jintbagħat flimkien wara. Il-konsolidazzjoni tgħinek tippjana pakkett sħiħ, iżda ma tagħmilx kull kombinazzjoni aċċettabbli fuq kull rotta.",
+            "Qabel tgħaqqad, ikkunsidra restrizzjonijiet, fraġilità u problemi miftuħa. Oġġett li jistenna ritorn mhux lest. Aċċessorju delikat jista’ jeħtieġ protezzjoni differenti mill-ħwejjeġ. Qabbel id-dimensjonijiet u l-piż finali, mhux in-numru ta’ prodotti biss."
+          ]
+        },
+        {
+          "heading": "Ikteb istruzzjonijiet preċiżi",
+          "paragraphs": [
+            "L-għajnuna ta’ LoloBuy tispjega t-tneħħija ta’ ppakkjar mhux meħtieġ filwaqt li żżomm il-protezzjoni. Jekk trid kaxxa oriġinali għal rigal jew kollezzjoni, tagħżilx tneħħija u għid hekk ċar. Il-valur ta’ kaxxa mhuwiex dejjem il-piż tagħha.",
+            "Agħti istruzzjonijiet għal oġġett speċifiku fejn meħtieġ: żomm appoġġ protettiv, kaxxa waħda jew staqsi liema għażla teżisti. Iċċekkja t-tariffa żejda fil-formola attwali. Tassumix l-istess ippakkjar għal kull kategorija."
+          ]
+        },
+        {
+          "heading": "Irrevedi l-pakkett finali",
+          "paragraphs": [
+            "Qabel tissottometti, ikkonferma l-lista, il-kwantitajiet, ir-riċevitur, ir-rotta u s-servizzi. Ara li hemm kull oġġett mixtieq u li ebda wieħed bi problema miftuħa ma daħal bi żball. Kontroll qasir huwa eħfef milli terġa’ tibni d-deċiżjoni wara l-ippakkjar.",
+            "Il-paġni tal-piż u tas-saldu jispjegaw li l-kejl finali jista’ jibdel it-tariffa. Wara s-sottomissjoni segwi messaġġi ta’ konferma jew ħlas żejjed. Meta jintbagħat, uża t-traċċar tal-pakkett u żomm l-evidenza tal-maħżen sakemm tiċċekkja l-kunsinna."
+          ]
+        }
+      ],
+      "checklist": [
+        "Irrevedi kull oġġett qabel timmarkah lest.",
+        "Iċċekkja l-iskadenza tar-rekord tiegħek.",
+        "Ifred ritorni minn oġġetti lesti biex jintbagħtu.",
+        "Agħżel ippakkjar adattat għal kull prodott.",
+        "Ara l-lista finali u l-aġġustamenti tat-trasport."
+      ],
+      "sourceIds": [
+        "buying",
+        "status",
+        "storage",
+        "packaging",
+        "freight-balance"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 421
+    },
+    {
+      "slug": "lolobuy-sizing-guide",
+      "title": "Gwida tad-daqs LoloBuy: qabbel il-kejl qabel tagħżel tikketta",
+      "description": "Uża t-tabella tal-bejjiegħ, kejl konsistenti u ritratti mmirati biex tagħżel daqs b’mod aktar ċar.",
+      "keyword": "gwida tad-daqs LoloBuy",
+      "category": "Daqsijiet",
+      "summary": "Tikketta familjari hija bidu. Il-paragun utli huwa bejn il-kejl tal-bejjiegħ, ir-referenza tiegħek u l-qies li trid.",
+      "sections": [
+        {
+          "heading": "Ibda bit-tabella tal-bejjiegħ",
+          "paragraphs": [
+            "Ir-referenza uffiċjali ta’ LoloBuy tgħid li l-istandards ivarjaw bejn ħwienet u li l-konverżjonijiet huma referenza. Tikketta medium jew daqs taż-żarbun familjari ma jistabbilixxux kif joqgħod kull prodott. Aqra t-tabella tal-listing u l-għażla eżatti.",
+            "Iċċekkja jekk in-numri humiex għall-ġisem, għall-ħwejjeġ lesti jew għal min hu rakkomandat li jilbeshom. Dawn huma kejl differenti. Jekk mhux ċar, staqsi qabel tordna minflok tagħżel akbar jew iżgħar b’drawwa."
+          ]
+        },
+        {
+          "heading": "Kejjel referenza affidabbli",
+          "paragraphs": [
+            "Qabbel ma’ biċċa ħwejjeġ tiegħek li toqgħod kif trid. Poġġiha ċatta u uża l-istess punti tad-dijagramma tal-bejjiegħ. Niżżel l-unitajiet u jekk il-wisa’ hijiex naħa waħda jew ċirkonferenza. Żomm ritratt tal-metodu mal-kejl.",
+            "Għall-ġisem, segwi l-gwida u żomm it-tejp dritt, mingħajr issikkar biex tikseb daqs mixtieq. Qmis issikkata, hoodie maħlula u ġakketta strutturata jeħtieġu spazju differenti. Is-siluwett mixtieq huwa parti mid-deċiżjoni, mhux żball fit-tabella."
+          ]
+        },
+        {
+          "heading": "Agħżel id-dimensjonijiet importanti",
+          "paragraphs": [
+            "Għal top, wisa’ tas-sider, tul, spalla u kmiem jwieġbu mistoqsijiet differenti. Għall-qliezet, iċċekkja qadd, rise, tul ta’ ġewwa u tul sħiħ. Numru tal-qadd waħdu ma jispjegax is-sieq, u s-sider ma jistabbilixxix tul tal-kmiem.",
+            "Bħala eżempju, jekk it-top tiegħek hu 56 ċentimetru wiesa’ u 70 twil, kandidat ta’ 56 u 64 jista’ jkollu wisa’ simili iżda ġisem ħafna iqsar. Dan juri l-metodu, mhux rakkomandazzjoni għal daqs jew prodott."
+          ],
+          "bullets": [
+            "Ikkonferma l-unitajiet",
+            "Qabbel kejl tal-ġisem ma’ tabelli tal-ġisem",
+            "Qabbel kejl ċatt ma’ tabelli tal-ħwejjeġ",
+            "Qabbel aktar minn dimensjoni waħda importanti",
+            "Irreġistra qies maħlul jew issikkat mixtieq"
+          ]
+        },
+        {
+          "heading": "Iċċekkja ż-żraben separatament",
+          "paragraphs": [
+            "Il-gwida uffiċjali tirrakkomanda s-sieq l-akbar jekk hemm differenza u tinnota li t-tul ma jurix il-wisa’ kollha. Aqra t-tabella taż-żraben u s-sistema tal-varjant. Tassumix li numru EU, US jew UK jittrasferixxi perfettament bejn kull listing.",
+            "Kejjel skont it-tabella u kkunsidra kalzetti, wisa’ u użu. Tikketta viżibbli f’ritratt tista’ tikkonferma x’ntbagħat, iżda mhux kif tinħass iż-żarbuna fuq saqajk. Ritratt tas-suletta mhuwiex tabella universali ta’ konverżjoni."
+          ]
+        },
+        {
+          "heading": "Uża QC għal mistoqsija speċifika",
+          "paragraphs": [
+            "Qabel tibgħat, qabbel it-tikketta mal-ordni. Jekk kejl importanti għadu mhux ċar, itolbu b’punti tal-bidu u tat-tmiem ċari. Pereżempju, itlob wisa’ tas-sider ċatta minn ħjata għal ħjata minflok “iċċekkja d-daqs”.",
+            "Il-politika tal-ispezzjoni għandha limiti u ma twiegħedx valutazzjoni sħiħa tal-qies. Iċċekkja jekk kejl jew ritratt ieħor huwiex disponibbli u jekk għandux tariffa. Sett standard ta’ ritratti mhuwiex konsultazzjoni personali tad-daqs."
+          ]
+        },
+        {
+          "heading": "Iddeċiedi waqt li għad hemm għażliet",
+          "paragraphs": [
+            "Jekk it-tikketta tvarja mill-varjant, iddokumenta d-differenza bl-ordni u r-ritratt. Jekk it-tikketta taqbel iżda l-kejl ma jaqbilx, ara t-termini tar-ritorn u l-proċess attwali minnufih. Dawn huma sitwazzjonijiet differenti u għandhom jiġu deskritti eżatt.",
+            "Kejl inaqqas l-inċertezza iżda mhux differenzi fil-qatgħa, stretch, sensazzjoni tad-drapp u preferenza. Żomm it-tabella u n-noti biex qies tajjeb jgħin fix-xiri li jmiss. Erġa’ ċċekkja l-listing għax bejjiegħ jew verżjoni oħra jistgħu jużaw kejl differenti."
+          ]
+        }
+      ],
+      "checklist": [
+        "Uża t-tabella tal-listing eżatt.",
+        "Żomm unitajiet u metodi konsistenti.",
+        "Qabbel diversi dimensjonijiet importanti.",
+        "Iċċekkja t-tikketta u l-kejl tal-prodott riċevut.",
+        "Solvi mistoqsijiet dwar il-qies qabel tibgħat barra."
+      ],
+      "sourceIds": [
+        "sizing",
+        "qc",
+        "returns"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 423
+    },
+    {
+      "slug": "lolobuy-tracking-guide",
+      "title": "Traċċar LoloBuy: ifred l-ordni mill-pakkett internazzjonali",
+      "description": "Aqra sew l-istadji tax-xiri, tal-maħżen u tal-pakkett, u iġbor evidenza utli meta aġġornament mhux ċar.",
+      "keyword": "traċċar LoloBuy",
+      "category": "Traċċar",
+      "summary": "Status tal-ordni u scan tal-kurrier jiddeskrivu partijiet differenti tal-vjaġġ. Żomm referenzi tal-prodott, tal-pakkett domestiku u internazzjonali separati.",
+      "sections": [
+        {
+          "heading": "Kun af x’qed issegwi",
+          "paragraphs": [
+            "Prodott jista’ jkollu ordni tax-xiri, vjeġġ domestiku tal-bejjiegħ u pakkett internazzjonali aktar tard. Huma rekords relatati, mhux l-istess vjeġġ. Messaġġ ta’ kunsinna domestika jista’ jfisser wasla fil-maħżen, mhux id-dar tiegħek.",
+            "Agħmel lista ta’ referenzi tul il-proċess: numru tal-prodott jew ordni, traċċar tal-bejjiegħ jekk jidher, rekord tal-maħżen u numru internazzjonali. Dan jgħinek tistaqsi dwar l-istadju t-tajjeb minflok tibgħat screenshot ta’ vjaġġ ieħor."
+          ]
+        },
+        {
+          "heading": "Aqra l-istadji tax-xiri l-ewwel",
+          "paragraphs": [
+            "Il-gwida tal-istatus ta’ LoloBuy tifred stennija għall-ħlas, ipproċessar, ordnat u mibgħut mill-bejjiegħ. Ipproċessar jirrigwarda x-xiri, mhux li kurrier internazzjonali qed iċċaqlaq il-pakkett. Aqra l-kliem tal-istatus qabel tfittex aġġornament barra ċ-Ċina.",
+            "L-istess gwida tiddeskrivi riċeviment u inventarju wara l-ispezzjoni. Jekk il-kurrier domestiku jgħid ikkunsinnat iżda l-kontroll għadu mhux lest, dawn jistgħu jkunu stadji konsekuttivi, mhux kontradizzjoni. Iċċekkja r-rekord u talbiet ta’ konferma għall-pass li jmiss."
+          ]
+        },
+        {
+          "heading": "Imbagħad aqra l-istadji tal-pakkett",
+          "paragraphs": [
+            "Wara li toħloq pakkett internazzjonali, l-istatus għandu sekwenza tiegħu: stennija għall-ħlas, ipproċessar, ippakkjat u mibgħut fil-gwida. Il-paġna twissi wkoll dwar bidliet fit-tariffa wara l-kejl. Pakkett maħluq m’għandux jitħawwad ma’ wieħed mibgħut.",
+            "Uża r-rekord reali minflok l-eżistenza ta’ numru biss. Tikketta jew numru jistgħu jitħejjew qabel il-moviment viżibbli li jmiss. Meta tqabbel sistemi, innota liema paġna tgħid konsenja lill-kurrier u liema avveniment il-kurrier irreġistra."
+          ],
+          "bullets": [
+            "Referenza tax-xiri jew ordni",
+            "Referenza tal-pakkett internazzjonali",
+            "Numru tat-traċċar tal-kurrier",
+            "L-aħħar avveniment, post u ħin",
+            "Konferma jew ħlas pendenti"
+          ]
+        },
+        {
+          "heading": "Interpreta pawżi b’attenzjoni",
+          "paragraphs": [
+            "Nuqqas ta’ scans ma jidentifikax il-kawża waħdu. Iċċekkja l-istima attwali tar-rotta, l-aħħar avveniment u avviżi uffiċjali relatati. Tbiddilx żmien tipiku minn post qadim fi skadenza mwiegħda għall-pakkett tiegħek.",
+            "Evita li tiftaħ diversi siti ripetutament u tqis kull differenza fil-kliem bħala avveniment ġdid. Żomm rekord bid-data tal-bidliet sinifikanti. Jekk l-istadju jidher inkonsistenti jew tintalab azzjoni, għolli dik il-kwistjoni speċifika permezz tal-appoġġ rilevanti."
+          ]
+        },
+        {
+          "heading": "Ibgħat mistoqsija utli lill-appoġġ",
+          "paragraphs": [
+            "Agħti l-ID tal-ordni jew pakkett, in-numru tat-traċċar, l-aħħar avveniment u l-mistoqsija. Pereżempju: “Ir-rekord jgħid mibgħut, iżda l-kurrier ma jurix konsenja. Tistgħu tikkonfermaw it-trasferiment?” Dan huwa aktar ċar minn “Fejn qiegħed kollox?”.",
+            "Il-gwida ta’ LoloBuy tidderieġi lejn il-pakketti għat-traċċar wara li jintbagħtu. Uża l-mistoqsija marbuta mar-rekord fejn possibbli. Tinkludix dettalji tal-kont mhux relatati jew kredenzjali tal-ħlas f’mistoqsija dwar traċċar."
+          ]
+        },
+        {
+          "heading": "Żomm l-evidenza sal-kunsinna",
+          "paragraphs": [
+            "Meta jasal, iċċekkja l-kundizzjoni esterna u l-kontenut minnufih. Żomm il-pakkett, it-tikketta u ritratti ċari għal oġġett ħażin, nieqes jew bil-ħsara. Qabbel mal-lista finali tal-pakkett, mhux lista qadima li tinkludi prodotti li ma bgħattx.",
+            "Il-paġna uffiċjali ta’ wara l-bejgħ titlob deskrizzjoni u ritratti għal oġġett ħażin jew bil-ħsara, iżda l-iskadenzi tagħha jikkonfliġġu. Aġixxi malajr u kkonferma t-terminu fil-proċess attwali. Tistenniex għax gwida ġenerali tidher toffri aktar żmien."
+          ]
+        }
+      ],
+      "checklist": [
+        "Ifred referenzi domestiċi u internazzjonali.",
+        "Ara jekk il-pakkett hu maħluq, ippakkjat jew mibgħut.",
+        "Aqra l-aħħar avveniment mal-ħin.",
+        "Ibgħat mistoqsija preċiża u dokumentata.",
+        "Iċċekkja l-kunsinna minnufih u żomm l-evidenza."
+      ],
+      "sourceIds": [
+        "status",
+        "buying",
+        "claims",
+        "freight-balance"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 418
+    },
+    {
+      "slug": "lolobuy-returns-refunds",
+      "title": "Ritorni u rifużjonijiet LoloBuy: aġixxi fl-istadju t-tajjeb",
+      "description": "Ħejji evidenza, iċċekkja eliġibbiltà u ifhem id-differenza bejn kanċellazzjoni, ritorn u talba dwar pakkett.",
+      "keyword": "ritorni u rifużjonijiet LoloBuy",
+      "category": "Wara l-bejgħ",
+      "summary": "Deċiżjoni tar-ritorn tiddependi mill-prodott, il-bejjiegħ u l-istadju attwali. Evidenza ċara u talba fil-pront huma aktar utli minn regola waħda għal kull xiri.",
+      "sections": [
+        {
+          "heading": "Identifika l-proċess meħtieġ",
+          "paragraphs": [
+            "Kanċellazzjoni qabel ix-xiri, ritorn ta’ oġġett fil-maħżen u problema wara kunsinna internazzjonali huma proċessi differenti. Ibda billi tara l-istatus attwali tal-ordni jew pakkett. Il-buttuna u l-informazzjoni jistgħu jiddependu mill-progress tat-tranżazzjoni.",
+            "Il-paġni ta’ LoloBuy jiddeskrivu passi skont l-istatus u involviment tal-bejjiegħ. Talba mhix approvazzjoni. Aqra t-tweġiba tal-ordni u żomm rekord ta’ x’ġie aċċettat, x’għadu pendenti u x’azzjoni għad trid tagħmel."
+          ]
+        },
+        {
+          "heading": "Żomm l-evidenza eżatta",
+          "paragraphs": [
+            "Żomm URL, varjant, konferma u ritratti rilevanti flimkien. Jekk id-daqs fuq it-tikketta huwa ħażin, uri l-għażla ordnata u t-tikketta riċevuta. Għal ħsara, agħti vista sħiħa u mill-qrib. Iddeskrivi d-differenza mingħajr esaġerazzjoni.",
+            "Pereżempju, “Ordnajt blu daqs L; ir-ritratt juri tikketta sewda M” jagħti diskrepanza verifikabbli. “Kwalità ħażina” huwa ħafna inqas preċiż. Jekk ir-ritratti mhumiex ċari, itlob l-evidenza nieqsa qabel tagħżel rimedju."
+          ],
+          "bullets": [
+            "Numru tal-ordni u listing oriġinali",
+            "Varjant u kwantità",
+            "Deskrizzjoni ċara tal-problema",
+            "Ritratti rilevanti tal-ordni",
+            "Rimedju mixtieq: kjarifika, kanċellazzjoni, ritorn jew skambju"
+          ]
+        },
+        {
+          "heading": "Aqra l-eliġibbiltà flimkien mal-ħin",
+          "paragraphs": [
+            "Il-paġna tal-garanzija tar-ritorn tagħti kundizzjonijiet u tieqa wara d-dħul fl-istokk u titlob il-kunsens tal-bejjiegħ. Paġni oħra għandhom kliem differenti jew mhux ċar dwar il-ħin. Iċċekkja l-iskadenza u s-servizz tal-ordni vera u issottometti l-problema malajr.",
+            "L-ippakkjar u l-kundizzjoni għall-bejgħ mill-ġdid jistgħu jgħoddu. Titlobx tneħħija ta’ ppakkjar meħtieġ għar-ritorn qabel tifhem il-kundizzjonijiet. Prodotti użati, ordnijiet speċjali u kategoriji oħra jistgħu jkollhom regoli differenti; wegħda ġenerali ta’ ritorn bla kundizzjoni tkun qarrieqa."
+          ]
+        },
+        {
+          "heading": "Staqsi liema spejjeż japplikaw",
+          "paragraphs": [
+            "Il-gwida tal-garanzija tifred ir-raġuni tar-ritorn u tiddiskuti t-trasport domestiku u t-tariffi. Offerta oriġinali ta’ kunsinna b’xejn ma tagħmilx ritorn b’xejn. Itlob il-kost speċifiku qabel taqbel.",
+            "Żomm it-tweġiba fir-rekord. Iċċara jekk is-somma tinkludix ir-ritorn lill-bejjiegħ, it-trasport domestiku oriġinali u tariffa tas-servizz. Allowance tal-immaniġġjar tal-pjattaforma u spejjeż tal-bejjiegħ mhumiex l-istess u m’għandhomx jingħaqdu fi stqarrija vaga ta’ “ritorn b’xejn”."
+          ]
+        },
+        {
+          "heading": "Segwi d-destinazzjoni u l-istatus tar-rifużjoni",
+          "paragraphs": [
+            "L-għajnuna ġeneralment tiddeskrivi rifużjonijiet lejn il-bilanċ LoloBuy, b’eċċezzjoni speċifika għal ċerti sitwazzjonijiet tal-ħlas oriġinali. Kreditu fil-kont u flus lura fuq metodu estern huma riżultati differenti. Iċċekkja liema japplika qabel tistenna flus fil-bank.",
+            "Approvazzjoni tal-bejjiegħ, wasla tal-oġġett ritornat u rifużjoni kompluta jistgħu jkunu stadji differenti. Żomm referenza tat-trasport tar-ritorn jekk tingħata. Meta tistaqsi dwar dewmien, identifika l-aħħar pass komplut minflok tiftaħ talba ġdida mingħajr l-istorja."
+          ]
+        },
+        {
+          "heading": "Ittratta problemi wara l-kunsinna separatament",
+          "paragraphs": [
+            "Għal problema wara l-kunsinna, il-gwida tindirizza lejn it-talba ta’ wara l-bejgħ tal-pakkett u titlob deskrizzjoni u ritratti. Żomm l-ippakkjar estern u t-tikketta flimkien mal-istampi tal-prodott. Dawn jorbtu l-ħsara jew id-diskrepanza mal-vjeġġ.",
+            "Il-paġna uffiċjali għandha skadenzi kontradittorji. Irrapporta minnufih u ikseb il-limitu applikabbli mill-proċess attwali. Il-gwida ma twiegħedx approvazzjoni, ħin universali ta’ rifużjoni jew kumpens għal kull tip ta’ telf."
+          ]
+        }
+      ],
+      "checklist": [
+        "Iċċekkja l-istadju attwali.",
+        "Iddokumenta d-diskrepanza jew ħsara eżatta.",
+        "Ikkonferma eliġibbiltà, skadenza u ppakkjar.",
+        "Staqsi dwar l-ispejjeż kollha tar-ritorn.",
+        "Segwi approvazzjoni u d-destinazzjoni vera tar-rifużjoni."
+      ],
+      "sourceIds": [
+        "refunds",
+        "cancellation",
+        "returns",
+        "claims",
+        "changes"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 414
+    },
+    {
+      "slug": "lolobuy-order-budget",
+      "title": "Baġit tal-ordni LoloBuy: ħares lil hinn mill-prezz tal-prodott",
+      "description": "Ifred prodotti, trasport domestiku, servizzi fakultattivi, konverżjoni tal-munita u trasport internazzjonali qabel tordna.",
+      "keyword": "tariffi LoloBuy",
+      "category": "Baġit",
+      "summary": "Baġit utli jifred somom ikkonfermati minn stimi. Żomm ix-xiri u l-ħlas tal-pakkett aktar tard viżibbli bħala żewġ deċiżjonijiet relatati.",
+      "sections": [
+        {
+          "heading": "Ikkalkula l-varjant li se tixtri",
+          "paragraphs": [
+            "Prezz tal-katalgu huwa bidu għall-paragun. Kulur, daqs, sett jew kwantità magħżula jistgħu jkollhom prezz ieħor fuq il-paġna uffiċjali. Irrevedi l-konfigurazzjoni eżatta qabel tużaha fil-baġit, speċjalment jekk hemm firxa ta’ prezzijiet.",
+            "Qabbel l-ammont u l-munita fl-istess stadju. Prezz irreġistrat, total fil-checkout u rendikont tal-karta jistgħu jinkludu komponenti differenti. Issejjaħx id-differenza tariffa moħbija qabel tiċċekkja kwantità, kunsinna, konverżjoni u servizzi."
+          ]
+        },
+        {
+          "heading": "Ifred iż-żewġ stadji ewlenin tal-ħlas",
+          "paragraphs": [
+            "Il-proċess uffiċjali jiġbor l-ewwel il-ħlas tal-prodotti u t-trasport domestiku Ċiniż. It-trasport internazzjonali jiġi meta l-oġġetti maħżuna jiġu sottomessi bħala pakkett. Min jippjana l-ewwel ħlas biss jista’ jasal fil-maħżen mingħajr flus biżżejjed għat-trasport.",
+            "Agħmel tabella sempliċi u mmarka kull spiża bħala kkonfermata jew stmata. Żomm servizzi fakultattivi viżibbli, mhux moħbija fil-prezz. Spejjeż possibbli fid-destinazzjoni għandhom linja separata għax il-katalgu ma jistabbilixxihomx."
+          ],
+          "bullets": [
+            "Prodotti u kwantitajiet magħżula",
+            "Trasport domestiku fiċ-Ċina",
+            "Servizzi tax-xiri jew tal-maħżen",
+            "Trasport internazzjonali u ppakkjar",
+            "Tariffi tal-ħlas jew konverżjoni murija fil-checkout",
+            "Taxxi jew immaniġġjar possibbli fid-destinazzjoni"
+          ]
+        },
+        {
+          "heading": "Aqra l-kundizzjonijiet tal-kunsinna domestika",
+          "paragraphs": [
+            "L-għajnuna uffiċjali tgħid li oġġetti mill-istess bejjiegħ sottomessi u mħallsa flimkien jistgħu jaqsmu tariffa, b’saldu addizzjonali jekk il-vjeġġ ikun tqil. Din hija kundizzjoni speċifika, mhux wegħda ta’ tariffa waħda għall-karrettun kollu.",
+            "Iċċekkja min ibigħ kull prodott u kif l-ordni hija miġbura. Kwantità akbar tista’ tbiddel il-prezz jew it-trasport, partikolarment bl-ingrossa. Żomm il-kalkolu attwali minflok tqassam tariffa qadima fuq xiri mhux relatat."
+          ]
+        },
+        {
+          "heading": "Iċċekkja ħlas u munita",
+          "paragraphs": [
+            "Ara l-metodi disponibbli fil-checkout uffiċjali, il-munita li se titħallas u t-tariffi qabel tikkonferma. Id-disponibbiltà tista’ tiddependi mill-kont u t-tranżazzjoni. Lista ġenerali mhix biżżejjed biex tistabbilixxi li metodu huwa offrut illum.",
+            "Jekk fornitur joffri konverżjoni, qabbel l-ammont finali u t-termini murija. Żomm l-irċevuta mal-ordni. Twiegħedx rata fissa u tassumix li r-rata ta’ xiri preċedenti tapplika għax-xiri li jmiss."
+          ]
+        },
+        {
+          "heading": "Ittratta skont bħala xi ħaġa li trid tivverifika",
+          "paragraphs": [
+            "Il-gwida tal-promozzjonijiet tiddeskrivi li tpoġġi d-dettalji fin-noti biex jiġu vverifikati mal-bejjiegħ. Banner jew screenshot mhux prova li l-varjant u l-kwantità għadhom eliġibbli. Irreġistra l-kundizzjonijiet u itlob konferma fl-ordni.",
+            "Żomm skont barra mill-baġit normali sakemm jiġi kkonfermat. Tiddependix fuq kampanja ta’ referral, kupun jew wegħda tat-trasport minn gwida mhux relatata. Dan is-sit ma wegħidx kreditu garantit għal utenti ġodda jew prezz universali tat-trasport."
+          ]
+        },
+        {
+          "heading": "Uża firxa għal trasport inċert",
+          "paragraphs": [
+            "Qabel l-ippakkjar, il-piż u d-daqs huma stimi. Il-politika uffiċjali tirrikonċilja l-ewwel tariffa mal-ispiża reali tal-fornitur. Ħalli spazju għal aġġustament minflok tonfoq il-baġit kollu fuq prodotti.",
+            "Bħala eżerċizzju, jekk il-prodotti u t-trasport domestiku huma 100 unità ta’ munita u l-istima tat-trasport hija 30–45, it-total proviżorju huwa 130–145 qabel spejjeż oħra. Dawn huma numri ipotetiċi biex juru l-metodu, mhux prezzijiet jew kwotazzjoni ta’ LoloBuy."
+          ]
+        },
+        {
+          "heading": "Uża l-baġit biex tiddeċiedi",
+          "paragraphs": [
+            "Jekk it-total probabbli jaqbeż il-limitu, ibdel il-lista qasira qabel tħallas. Jista’ jkun aktar faċli tneħħi oġġett ta’ prijorità baxxa milli tfittex il-flus lura wara. Qabbel il-valur tal-ordni kollha kkunsinnata, mhux kemm tista’ tiġbor prodotti rħas.",
+            "Wara li jintbagħat, ibdel l-istimi bit-tariffi reali. Żomm id-differenza u l-ispjegazzjoni tagħha. L-istorja tgħin fil-baġit li jmiss, waqt li tqis prodotti, dimensjonijiet, rotot u rati differenti."
+          ]
+        }
+      ],
+      "checklist": [
+        "Ippjana l-varjant eżatt magħżul.",
+        "Ifred trasport domestiku u internazzjonali.",
+        "Irreġistra servizzi u munita tal-ħlas.",
+        "Uża biss skontijiet ikkonfermati.",
+        "Żomm riżerva għat-trasport u spejjeż tad-destinazzjoni."
+      ],
+      "sourceIds": [
+        "buying",
+        "domestic",
+        "promotions",
+        "freight-balance",
+        "wholesale"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 464
+    },
+    {
+      "slug": "lolobuy-seller-and-review-checks",
+      "title": "Sejbiet u reviżjonijiet LoloBuy: iċċekkja l-evidenza tal-listing",
+      "description": "Evalwa s-sors, ir-rilevanza tar-reviżjonijiet u l-limiti tal-ispezzjoni mingħajr tqis badge, ritratt jew rating bħala garanzija.",
+      "keyword": "LoloBuy hija affidabbli",
+      "category": "Deċiżjonijiet tax-xiri",
+      "summary": "Il-mistoqsija utli hija x’tistabbilixxi l-evidenza dwar din it-tranżazzjoni. Isem ta’ pjattaforma ma jwieġebx kull mistoqsija dwar bejjiegħ, prodott jew pakkett.",
+      "sections": [
+        {
+          "heading": "Ifred il-pjattaforma mill-prodott",
+          "paragraphs": [
+            "L-informazzjoni ta’ LoloBuy tiddeskrivi xiri minn pjattaformi ta’ partijiet terzi, mhux bejgħ ta’ kull prodott minnha stess. Din l-ispreadsheet indipendenti hija pass ieħor ’il bogħod: torganizza s-sejba. Żomm ir-rwoli ċari meta tiddeċiedi min jista’ jwieġeb jew isolvi problema.",
+            "Link li jaħdem ma jurix awtentiċità, stokk, qies jew kunsinna futura. Bl-istess mod, ilment dwar bejjiegħ wieħed ma jistabbilixxix il-kawża ta’ kull problema tal-pjattaforma. Ibda mill-istqarrija eżatta u l-parti responsabbli għal dak l-istadju."
+          ]
+        },
+        {
+          "heading": "Iċċekkja listing qabel il-popolarità tiegħu",
+          "paragraphs": [
+            "Fittex URL oriġinali ċar, deskrizzjoni konsistenti, għażliet identifikabbli u kejl jew speċifikazzjonijiet utli. Qabbel il-varjant mal-gallerija. Prezz inizjali irħis jista’ jkun għal komponent differenti minn dak fl-immaġni ewlenija.",
+            "Jekk diversi bejjiegħa jużaw l-istess ritratti, dawn waħedhom ma jurux l-istess manifattura jew provvista. Irreġistra x’jonqos u staqsi b’mod preċiż. Għadd ta’ popolarità jew isem familjari ta’ batch mhuwiex sostitut għall-evidenza tal-listing."
+          ],
+          "bullets": [
+            "Listing oriġinali u identità tal-bejjiegħ",
+            "Varjant u kwantità eżatti",
+            "Kejl jew speċifikazzjonijiet rilevanti",
+            "Informazzjoni attwali tar-ritorn",
+            "Mistoqsijiet li jaffettwaw ix-xiri"
+          ]
+        },
+        {
+          "heading": "Aqra reviżjonijiet għar-rilevanza",
+          "paragraphs": [
+            "Reviżjoni hija aktar utli meta taf id-data, il-prodott jew is-servizz u l-evidenza wara l-konklużjoni. Kumment dwar il-ħin tal-appoġġ mhux l-istess bħal reviżjoni tal-qies ta’ żarbun. Pakkett li jasal tajjeb ma jipprovax li kull prodott fil-katalgu huwa adattat.",
+            "Fittex links ta’ referral, inċentivi jew relazzjonijiet iddikjarati. Dawn ma jagħmlux reviżjoni falza awtomatikament, iżda jgħinu jispjegaw l-għan tagħha. Tbiddilx promozzjoni ta’ affiljat, esperjenza waħda jew testimonjanza mhux verifikata f’rakkomandazzjoni universali."
+          ]
+        },
+        {
+          "heading": "Ippjana x’tista’ tistabbilixxi l-ispezzjoni",
+          "paragraphs": [
+            "Il-paġna standard tiddeskrivi kontrolli tad-dehra u esklużjonijiet importanti. Ma twiegħedx awtentikazzjoni jew test tal-funzjoni għal kull kategorija. Oġġetti ssiġillati u ċerti prodotti professjonali jiġu trattati differenti. Aqra l-limiti qabel tixtri xi ħaġa li l-valur tagħha jiddependi minn kwalità mhux ittestjata.",
+            "Għal ħwejjeġ, kejl ċar u kostruzzjoni viżibbli jistgħu jwieġbu ħafna. Għal elettronika jew oġġetti relatati mas-sigurtà, ritratt ma jistabbilixxix prestazzjoni interna jew konformità. Jekk l-evidenza meħtieġa mhix hemm, dik l-inċertezza għandha tidħol fid-deċiżjoni."
+          ]
+        },
+        {
+          "heading": "Żomm ħlas u komunikazzjoni fil-post it-tajjeb",
+          "paragraphs": [
+            "Uża s-sit uffiċjali għall-checkout u l-mistoqsija tal-ordni jew pakkett għall-kwistjonijiet tat-tranżazzjoni. Iċċekkja d-dominju qabel tidħol. Il-katalgu ma jeħtieġx password, kredenzjali tal-ħlas jew konversazzjoni privata fil-kaxxa tat-tfittxija.",
+            "Żomm rekord tal-varjant, ħlas, kjarifika tal-bejjiegħ u kull rekwiżit miftiehem. Jekk xi ħaġa tinbidel, itlob aġġornament fir-rekord tal-ordni. Storja ċara tgħin aktar minn messaġġi mxerrda mingħajr referenza tal-prodott jew tranżazzjoni."
+          ]
+        },
+        {
+          "heading": "Agħmel deċiżjoni li tista’ tispjega",
+          "paragraphs": [
+            "Ikteb nota qasira dwar għaliex il-prodott jaqbel mal-bżonn, l-evidenza, il-baġit totali u l-inċertezzi li taċċetta. Jekk tiddependi minn mistoqsija mhux imwieġba dwar daqs, kundizzjoni jew ritorn, solviha qabel tħallas.",
+            "L-ewwel ordni żgħira tista’ tkun għażla biex tillimita s-somma impenjata waqt li titgħallem il-proċess, iżda ma tiċċertifikax kull bejjiegħ jew vjeġġ futur. Din hija metodu ta’ evalwazzjoni, mhux rapport ta’ test personali jew garanzija li LoloBuy hija mingħajr riskju. Uża l-gwidi tal-ordni, QC u ritorni għall-kontrolli li jmiss."
+          ]
+        }
+      ],
+      "checklist": [
+        "Ifred ir-rwoli tal-katalgu, il-pjattaforma u l-bejjiegħ.",
+        "Iċċekkja l-listing eżatt, mhux il-popolarità.",
+        "Evalwa data, rilevanza u inċentivi tar-reviżjoni.",
+        "Ifhem x’ma tivverifikax l-ispezzjoni.",
+        "Żomm deċiżjoni dokumentata u rekord tal-ordni."
+      ],
+      "sourceIds": [
+        "service",
+        "qc",
+        "buying",
+        "returns"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 452
+    }
+  ]
+}

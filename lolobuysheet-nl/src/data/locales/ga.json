@@ -1,0 +1,1131 @@
+{
+  "ui": {
+    "nav": [
+      "Scarbhileog",
+      "Conas a oibríonn sé",
+      "Treoracha",
+      "Ailt",
+      "Ceisteanna coitianta"
+    ],
+    "register": "Téigh chuig LoloBuy",
+    "language": "Teanga",
+    "preview": "Réamhamharc dearaidh",
+    "previewNote": "An chéad amharc ar lolobuysheet.nl",
+    "eyebrow": "FIONNACHTANA MAITHE. NÍOS LÚ SCROLLAITHE.",
+    "hero1": "Do chéad fhionnachtain eile.",
+    "hero2": "Scarbhileog amháin.",
+    "intro": "Déan iniúchadh ar scarbhileog LoloBuy. Brabhsáil éadaí, bróga spóirt agus oiriúintí, cuir praghsanna na foinse i gcomparáid agus oscail do rogha ar LoloBuy.",
+    "search": "Cuardaigh an chatalóg iomlán…",
+    "searchButton": "Cuardaigh táirgí",
+    "photo": "Cuardach íomhá",
+    "popular": "Féach ar:",
+    "tagline": "Catalóg amháin. Do chéad fhionnachtain eile.",
+    "source": "Táirgí ó cnfanssp.com",
+    "independent": "Suíomh neamhspleách chun táirgí LoloBuy a aimsiú",
+    "browse": "Déan iniúchadh ar an scarbhileog",
+    "browseSub": "Níos lú cuardaigh. I bhfad níos mó fionnachtana.",
+    "all": "Gach táirge",
+    "sort": "Sórtáil de réir",
+    "sorts": [
+      "Roghnaithe",
+      "Is nuaí",
+      "Is mó amharc",
+      "Praghas: íseal go hard",
+      "Praghas: ard go híseal"
+    ],
+    "count": "táirge",
+    "view": "Féach ar an táirge",
+    "buy": "Oscail ar LoloBuy",
+    "details": "Sonraí an táirge",
+    "categories": {
+      "shoes": "Bróga",
+      "hoodies": "Léinte allais",
+      "tshirts": "T-léinte",
+      "jackets": "Seaicéid",
+      "pants": "Bríste agus brístí gearra",
+      "headwear": "Ceannbhearta",
+      "accessories": "Oiriúintí",
+      "sets": "Tacair ghearra",
+      "electronics": "Leictreonaic",
+      "other": "Táirgí eile",
+      "jerseys": "Geansaithe spóirt"
+    },
+    "previous": "Roimhe",
+    "next": "Ar aghaidh",
+    "page": "Leathanach",
+    "empty": "Níl aon táirge ag teacht leis an gcuardach.",
+    "reset": "Glan na scagairí",
+    "sourceSearch": "Cuardaigh catalóg iomlán na foinse",
+    "snapshot": "Catalóg bheo ó cnfanssp.com. Ní chuimsíonn praghsanna CNY loingseoireacht ná táillí seirbhíse. Seiceáil na roghanna reatha agus an luachan deiridh ar LoloBuy.",
+    "howTitle": "Ó aimsiú go díphacáil.",
+    "howSub": "Nua le LoloBuy? Tosaigh leis na trí chéim seo.",
+    "steps": [
+      [
+        "01",
+        "Aimsigh rud a thaitníonn leat",
+        "Brabhsáil catagóirí agus seiceáil an liostú bunaidh, an méid agus grianghraif an táirge."
+      ],
+      [
+        "02",
+        "Oscail ar LoloBuy é",
+        "Úsáid nasc an táirge chun roghanna a dhéanamh agus an praghas reatha a sheiceáil."
+      ],
+      [
+        "03",
+        "Déan athbhreithniú roimh sheoladh",
+        "Lean próiseas stórais LoloBuy, seiceáil an QC atá ar fáil agus roghnaigh loingseoireacht."
+      ]
+    ],
+    "guides": "Is mór an chabhair beagán treorach.",
+    "guidesSub": "Eolas úsáideach roimh do chéad ordú.",
+    "read": "Léigh an treoir",
+    "allGuides": "Gach treoir",
+    "cta": "Ar aimsigh tú do chéad rogha eile?",
+    "ctaSub": "Oscail ar LoloBuy í agus déan do cheann féin di.",
+    "ctaButton": "Féach ar gach táirge",
+    "footer": "Suíomh neamhspleách chun táirgí a aimsiú. Ní suíomh oifigiúil LoloBuy muid. Tagann liostuithe agus grianghraif ó cnfanssp.com. Cuirtear ceannacháin i gcrích ar LoloBuy.",
+    "footerLinks": [
+      "Scarbhileog",
+      "Treoir cheannaigh",
+      "Cuardach íomhá",
+      "Ceisteanna coitianta"
+    ],
+    "back": "Ar ais chuig an scarbhileog",
+    "sourceListing": "Liostú bunaidh na foinse",
+    "seller": "Liostú an díoltóra",
+    "sourcePrice": "Praghas na foinse · CNY",
+    "productId": "ID táirge an díoltóra",
+    "gallery": "Grianghraif an liostaithe",
+    "qc": "Grianghraif QC",
+    "qcNote": "Soláthraíonn an fhoinse grianghraif liostaithe don táirge seo. Ní grianghraif fhíoraithe QC stórais iad. Seiceáil QC d’ordú féin ar LoloBuy roimh sheoladh.",
+    "priceNote": "Praghas an táirge amháin. Dearbhaigh stoc, roghanna agus táillí loingseoireachta agus seirbhíse ar LoloBuy roimh ordú.",
+    "photoTitle": "Aimsigh le grianghraf é.",
+    "photoIntro": "Úsáid catalóg na foinse chun táirgí a aimsiú agus a chur i gcomparáid.",
+    "photoState": "Cuardach íomhá ar an bhfoinse",
+    "photoNote": "Níor fíoraíodh seirbhís phoiblí cuardaigh íomhá ar cnfanssp.com. Ní ghlacaimid le huaslódáil grianghraf go dtí go mbeidh seirbhís na foinse ar fáil.",
+    "browseInstead": "Brabhsáil táirgí",
+    "faqTitle": "LoloBuy: freagraí roimh ordú.",
+    "faqIntro": "Taighde bunaithe ar leathanaigh chabhrach oifigiúla LoloBuy. Nuair a bhíonn difríochtaí eatarthu, mínítear cad is gá a sheiceáil.",
+    "guideLabel": "AN TREOIR PHRAITICIÚIL",
+    "guideTitle": "Do chéad ordú LoloBuy, mínithe.",
+    "guideIntro": "Ó tháirge a aimsiú go dtí é a sheiceáil sa stóras: tús praiticiúil.",
+    "updated": "Athbhreithnithe i nDeireadh Fómhair 2026",
+    "related": "Tuilleadh le fiosrú",
+    "home": "Baile",
+    "aboutPhotos": "Íomhánna liostaithe na foinse",
+    "catalogLive": "Catalóg bheo na foinse",
+    "catalogCached": "An chóip iomlán dheireanach den fhoinse á taispeáint.",
+    "catalogLoading": "Catalóg na foinse á nuashonrú…",
+    "catalogError": "Níl an fhoinse ar fáil faoi láthair. Bain triail eile as nó oscail an bhunchatalóg.",
+    "retry": "Bain triail eile as",
+    "loading": "Á luchtú…",
+    "productError": "Níorbh fhéidir an táirge a luchtú. Bain triail eile as nó seiceáil an liostú bunaidh.",
+    "pageOf": "de",
+    "jump": "Téigh go leathanach",
+    "go": "Téigh",
+    "articlesLabel": "Ailt",
+    "articlesTitle": "Eolas mionsonraithe faoi cheannach ar LoloBuy.",
+    "articlesIntro": "Deich dtreoir phraiticiúla bunaithe ar chabhair oifigiúil LoloBuy. Aimsigh táirgí, seiceáil QC, déan buiséad agus pleanáil loingseoireacht le heolas níos soiléire.",
+    "articleSources": "Foinsí oifigiúla",
+    "reviewed": "Athbhreithnithe an 20 Deireadh Fómhair 2026",
+    "readArticle": "Léigh an t-alt",
+    "allArticles": "Gach alt",
+    "contents": "Ar an leathanach seo",
+    "checklist": "Seicliosta praiticiúil",
+    "summary": "Sracfhéachaint",
+    "reading": "nóiméad léitheoireachta",
+    "faqSearch": "Cuardaigh ceisteanna…",
+    "noQuestions": "Níl aon cheist mheaitseála ann.",
+    "officialHelp": "Léigh an treoir oifigiúil",
+    "skip": "Léim chuig an ábhar",
+    "menu": "Roghchlár",
+    "close": "Dún",
+    "languageSearch": "Roghnaigh do theanga",
+    "catalogNote": "Féadfaidh praghsanna agus infhaighteacht athrú.",
+    "articleFooter": "Treoir eagarthóireachta neamhspleách. Seiceáil téarmaí d’ordaithe roimh íoc nó seoladh.",
+    "notFound": "Níor aimsíodh an táirge",
+    "showMore": "Taispeáin gach ceann",
+    "findSteps": "AIMSIGH. SEICEÁIL. ORDAIGH.",
+    "nextFind": "IS LEATSA AN CHÉAD FHIONNACHTAIN EILE.",
+    "liveLabel": "Nuashonraithe ón bhfoinse",
+    "faqCount": "freagra taighde",
+    "catalogue": "Catalóg"
+  },
+  "faqs": [
+    {
+      "id": "what-is-lolobuy",
+      "category": "Ag tosú",
+      "question": "Cad a dhéanann LoloBuy?",
+      "answer": "Feidhmíonn LoloBuy mar ghníomhaire ceannaigh: tugann tú liostú díoltóra, roghnaíonn tú an táirge agus íocann tú as an gceannach agus seachadadh intíre sa tSín. Ansin seiceálann tú céim an stórais sula socraíonn tú loingseoireacht idirnáisiúnta. Soláthraíonn an díoltóir na hearraí. Is tús seiceála é nasc nó iontráil scarbhileoige, ní deimhniú ar stoc reatha.",
+      "sourceIds": [
+        "buying",
+        "service"
+      ]
+    },
+    {
+      "id": "place-order",
+      "category": "Ag tosú",
+      "question": "Conas a ordaím trí LoloBuy?",
+      "answer": "Greamaigh an nasc bunaidh in LoloBuy, seiceáil an liostú iompórtáilte agus roghnaigh an dath, méid agus líon cruinn. Seiceáil praghas an táirge, seachadadh intíre agus seirbhísí iarrtha roimh íoc. Scarann an treoir oifigiúil ceannach, cigireacht stórais agus cur isteach an phacáiste idirnáisiúnta ina gcéimeanna éagsúla.",
+      "sourceIds": [
+        "buying"
+      ]
+    },
+    {
+      "id": "manual-order",
+      "category": "Ag tosú",
+      "question": "Cad mura féidir le LoloBuy mo nasc táirge a léamh?",
+      "answer": "Déanann an treoir oifigiúil cur síos ar fhoirm ordaithe láimhe nuair nach bhfuil iompórtáil uathoibríoch ar fáil. Líon isteach an fíoreolas agus na roghanna agus seiceáil roimh chur isteach. Ná cuir uimhir inmheánach leathanaigh scarbhileoige in áit ID an táirge ar an margadh: is taifid éagsúla iad.",
+      "sourceIds": [
+        "buying"
+      ]
+    },
+    {
+      "id": "domestic-delivery",
+      "category": "Orduithe agus íocaíocht",
+      "question": "An féidir le roinnt táirgí táille seachadta Síneach amháin a roinnt?",
+      "answer": "Déanann cabhair seachadta LoloBuy cur síos ar tháille amháin nuair a chuirtear táirgí ón díoltóir céanna isteach agus nuair a íoctar astu le chéile. D’fhéadfadh ordú an-mhór nó trom íocaíocht bhreise a éileamh. Ní chomhcheanglaíonn sé seo táillí díoltóirí éagsúla go huathoibríoch ná ní chuimsíonn sé loingseoireacht idirnáisiúnta.",
+      "sourceIds": [
+        "domestic"
+      ]
+    },
+    {
+      "id": "seller-promotion",
+      "category": "Orduithe agus íocaíocht",
+      "question": "Conas a iarraim lascaine díoltóra a chur i bhfeidhm?",
+      "answer": "Cuir sonraí na fíor-lascaine nó na tairisceana seachadta intíre saor in aisce sna nótaí ordaithe, le go bhféadfaidh an gníomhaire iad a fhíorú leis an díoltóir. Míníonn an chabhair freisin úsáid Fiosrúcháin Ordaithe má fágadh na sonraí ar lár. Caithfear an tairiscint a sheiceáil; ní féidir le scarbhileog gealltanas a thabhairt go bhfuil seantairiscint bailí.",
+      "sourceIds": [
+        "promotions"
+      ]
+    },
+    {
+      "id": "change-order",
+      "category": "Orduithe agus íocaíocht",
+      "question": "An féidir liom méid nó dath a athrú tar éis ordú?",
+      "answer": "Deir LoloBuy gur féidir athrú a chaibidliú sula seolann an díoltóir an táirge. Tar éis seolta, déanann an chabhair cur síos ar fhilleadh ón stóras agus ordú nua mar fhéidearthacht, le costais fillte. Seol an t-iarratas go pras ar an ordú ceart agus fan le glacadh sula nglacann tú leis go ndearnadh an t-athrú.",
+      "sourceIds": [
+        "changes"
+      ]
+    },
+    {
+      "id": "confirmation-message",
+      "category": "Orduithe agus íocaíocht",
+      "question": "Cad is brí le Pending for Confirmation?",
+      "answer": "Tá do dheimhniú ag teastáil ar chuid de shonraí an ordaithe. Léigh agus freagair an teachtaireacht a ghabhann leis. Treoraíonn an chabhair ceisteanna ceannaithe chuig Shopping Agent Order agus ceisteanna stórais chuig My Warehouse, áit ar féidir cinneadh glactha nó fillte a iarraidh. D’fhéadfadh téacs roghchláir athrú; ní freagra é fanacht le nuashonrú rianaithe.",
+      "sourceIds": [
+        "confirmation",
+        "confirmation-path"
+      ]
+    },
+    {
+      "id": "received-in-stock",
+      "category": "Stóras agus QC",
+      "question": "Cad é an difríocht idir Received agus In Stock?",
+      "answer": "Sa treoir oifigiúil, ciallaíonn Received gur ghlac an stóras le pacáiste an díoltóra agus go bhfuil cigireacht ar siúl. Ciallaíonn In Stock go bhfuil an seiceáil críochnaithe agus na hearraí i d’fhardal. Ní chiallaíonn admháil stórais go bhfuil do léirmheas QC nó do loingsiú idirnáisiúnta críochnaithe.",
+      "sourceIds": [
+        "status"
+      ]
+    },
+    {
+      "id": "qc-checks",
+      "category": "Stóras agus QC",
+      "question": "Cad a sheiceálann QC caighdeánach?",
+      "answer": "Seiceálann cigireacht chaighdeánach LoloBuy sonraí infheicthe amhail stíl, líon, dath, méid, múnla agus damáiste soiléir. Léigh téarmaí na seirbhíse leis na grianghraif d’ordú féin. Ní ráthaíocht barántúlachta, oiriúnachta beacht ná marthanachta fadtéarmaí í cigireacht amhairc.",
+      "sourceIds": [
+        "qc"
+      ]
+    },
+    {
+      "id": "inspection-exclusions",
+      "category": "Stóras agus QC",
+      "question": "An ndéantar tástáil iomlán ar earraí séalaithe agus leictreonaic?",
+      "answer": "Ní dhéantar. Tá eisceachtaí d’earraí séalaithe sna rialacha agus eisiatar tástáil barántúlachta, feidhme agus cáilíochta ar leictreonaic ghairmiúil agus earraí gaolmhara. Le rogha gan chigireacht, seiceálann an stóras srianta ach ní fhíoraíonn sé an táirge ná ní thugann sé grianghraif QC. Léigh an tseirbhís roghnaithe sula mbraitheann tú ar thoradh.",
+      "sourceIds": [
+        "qc"
+      ]
+    },
+    {
+      "id": "qc-photos",
+      "category": "Stóras agus QC",
+      "question": "An féidir tuilleadh grianghraf QC a iarraidh?",
+      "answer": "Luaitear grianghraif bhreise ar iarratas san achoimre seirbhíse. Cuireann leathanach na ngrianghraf Cigireacht Cháilíochta Thánaisteach ar fáil freisin má fágadh cigireacht ar lár roimh stóráil. Tá líon éagsúil grianghraf sna leathanaigh oifigiúla. Seiceáil do sheirbhís agus iarr an radharc nó tomhas ar leith atá ar iarraidh, seachas líon céanna íomhánna a shamhlú do gach ordú.",
+      "sourceIds": [
+        "service",
+        "photos",
+        "qc"
+      ]
+    },
+    {
+      "id": "storage-period",
+      "category": "Stóras agus QC",
+      "question": "Cá fhad is féidir earraí a choinneáil i stóras LoloBuy?",
+      "answer": "Deir an leathanach stórála tiomnaithe agus an treoir stádais reatha 180 lá d’earraí gnáthstórála, ach deir treoir cheannaigh níos sine 90. Tá rialacha ar leith do phacáistí neamhmheaitseáilte neamhghnácha. Seiceáil spriocdháta do tháirge féin agus socraigh seoladh nó síneadh sula rachaidh sé in éag; ná bí ag brath ar an seantreoir amháin.",
+      "sourceIds": [
+        "storage",
+        "status",
+        "buying"
+      ]
+    },
+    {
+      "id": "consolidate",
+      "category": "Loingseoireacht agus rianú",
+      "question": "An féidir roinnt ceannachán a sheoladh i bpacáiste amháin?",
+      "answer": "Míníonn an treoir roghnú earraí stóráilte in My Warehouse agus iad a chur isteach le haghaidh seachadta le chéile. Seiceáil go bhfuil an t-athbhreithniú riachtanach déanta ar gach earra agus go nglacann an bealach leis an bpacáiste. Athraíonn comhcheangal an pacáiste pacáilte; ní ráthaíonn sé táille lasta iomlán níos ísle.",
+      "sourceIds": [
+        "buying"
+      ]
+    },
+    {
+      "id": "remove-packaging",
+      "category": "Loingseoireacht agus rianú",
+      "question": "An féidir le LoloBuy boscaí a bhaint roimh sheoladh?",
+      "answer": "Is féidir Package Removal a roghnú agus seachadadh á chur isteach. Deir an cur síos oifigiúil go gcoinnítear pacáistiú cosanta riachtanach. Má theastaíonn boscaí bunaidh mar bhronntanas, do stóráil nó d’fhilleadh féideartha, smaoinigh air sin roimh bhaint. Braitheann toradh na pacála agus an lastas ar na hearraí agus ar an loingsiú.",
+      "sourceIds": [
+        "packaging"
+      ]
+    },
+    {
+      "id": "shipping-price",
+      "category": "Loingseoireacht agus rianú",
+      "question": "Cén fáth a mbíonn an táille dheiridh difriúil ón meastachán?",
+      "answer": "Bunaítear an chéad lastas ar mheáchan measta, ceann scríbe agus bealach. Féadfaidh pacáil meáchan agus toisí a athrú agus cinneann muirear an tsoláthraí lóistíochta an socrú deiridh. Déanann LoloBuy cur síos ar ró-íocaíocht a aisíoc nó íocaíocht bhreise a iarraidh nuair a bhíonn difríocht ann. Seiceáil luachan deiridh an phacáiste agus an teachtaireacht chuntais.",
+      "sourceIds": [
+        "weight",
+        "freight-balance"
+      ]
+    },
+    {
+      "id": "volumetric-weight",
+      "category": "Loingseoireacht agus rianú",
+      "question": "Cad é meáchan toirtmhéadrach?",
+      "answer": "Tiontaíonn sé toisí an phacáiste ina mheáchan chun earraí toirtiúla a bhilleáil. Déanann cabhair LoloBuy idirdhealú idir foirmlí de réir bealaigh agus deir sí go bhféadfadh an meáchan inbhilleála a bheith ar an gceann is mó den mheáchan fíor agus toirtmhéadrach. Úsáid roinnteoir agus rialacha slánaithe an bhealaigh roghnaithe, ní éileamh uilíoch ar phraghas an chileagraim.",
+      "sourceIds": [
+        "weight"
+      ]
+    },
+    {
+      "id": "supplemental-payment",
+      "category": "Loingseoireacht agus rianú",
+      "question": "Cad a dhéanaim le fógra íocaíochta breise loingseoireachta?",
+      "answer": "Oscail an pacáiste comhfhreagrach agus seiceáil an muirear athbhreithnithe agus an t-iarratas deimhniúcháin. Tá tairseacha láimhseála éagsúla i rialacha LoloBuy, lena n-áirítear pacáiste a choinneáil nó a chur ar ceal. Freagair faoin spriocdháta atá ar do phacáiste agus íoc an t-iarmhéid a nglacann tú leis; ní praghas deiridh é an chéad mheastachán.",
+      "sourceIds": [
+        "freight-balance"
+      ]
+    },
+    {
+      "id": "tracking",
+      "category": "Loingseoireacht agus rianú",
+      "question": "Cá rianaím mo phacáiste idirnáisiúnta?",
+      "answer": "Treoraíonn an treoir oifigiúil chuig My LoloBuy → Parcels tar éis seolta. Déanann an treoir stádais idirdhealú idir Packed agus Shipped: d’fhéadfadh pacáiste pacáilte fanacht le meáchan deiridh, ach ciallaíonn Shipped go bhfuil uimhir rianaithe aige agus gur tugadh don iompróir é. Léigh an teagmhas iompróra is déanaí chomh maith le stádas an chuntais.",
+      "sourceIds": [
+        "buying",
+        "status"
+      ]
+    },
+    {
+      "id": "cancellation",
+      "category": "Fillteacha agus iar-dhíolachán",
+      "question": "An féidir ordú a chur ar ceal sula sroicheann sé an stóras?",
+      "answer": "Braitheann cealú ar chéim reatha an ordaithe. Úsáid rogha cealaithe nó fillte/aisíocaíochta an ordaithe. Nuair atá an táirge ceannaithe, d’fhéadfadh deimhniú díoltóra a bheith riachtanach; ní aisíocaíocht cheadaithe é iarratas curtha isteach. Seiceáil an freagra sula gceannaíonn tú earra ionaid.",
+      "sourceIds": [
+        "cancellation",
+        "refunds"
+      ]
+    },
+    {
+      "id": "eligible-return",
+      "category": "Fillteacha agus iar-dhíolachán",
+      "question": "Cad a chumhdaíonn riail fillte cúig lá LoloBuy?",
+      "answer": "Míníonn an riail tréimhse iarratais 120 uair d’earraí incháilithe, ag tosú an uair i ndiaidh stádas Stocked in. Tá comhaontú díoltóra, riocht na hearraí agus pacáistiú riachtanach fós i bhfeidhm. D’fhéadfadh costas an dá threo seachadta intíre agus táille láimhseála a bheith ar fhilleadh gan locht. Seiceáil incháilitheacht agus an leathanach iarratais go pras.",
+      "sourceIds": [
+        "returns"
+      ]
+    },
+    {
+      "id": "refund-destination",
+      "category": "Fillteacha agus iar-dhíolachán",
+      "question": "Cá seoltar aisíocaíocht cheadaithe?",
+      "answer": "De ghnáth míníonn an leathanach fillte aisíocaíochtaí chuig iarmhéid chuntas LoloBuy. Luaitear eisceacht chúng don bhunmhodh íocaíochta do roinnt orduithe PayPal atá ag fanacht le ceadú. Ní gealltanas é seo go dtéann gach aisíocaíocht díreach chuig cárta bainc ná fianaise go bhfuil gach modh íocaíochta ar fáil anois.",
+      "sourceIds": [
+        "refunds"
+      ]
+    },
+    {
+      "id": "delivery-problem",
+      "category": "Fillteacha agus iar-dhíolachán",
+      "question": "Cad a dhéanaim má tá an pacáiste seachadta damáistithe nó mícheart?",
+      "answer": "Oscail an pacáiste cuí in My LoloBuy → Parcels agus úsáid Apply After-sales. Déan cur síos ar an bhfadhb agus coinnigh grianghraif shoiléire den phacáiste agus den táirge. Tá tréimhsí éilimh contrártha san alt oifigiúil, lena n-áirítear rabhadh níos luaithe, mar sin tuairiscigh láithreach agus faigh deimhniú do cháis seachas fanacht le spriocdháta ginearálta.",
+      "sourceIds": [
+        "claims"
+      ]
+    },
+    {
+      "id": "sizing",
+      "category": "Roghanna táirge",
+      "question": "Conas méid éadaigh nó bróige a roghnú?",
+      "answer": "Tugann tagairt méide LoloBuy rabhadh gur féidir le caighdeáin siopaí a bheith éagsúil. Cuir fíorchairt tomhais an díoltóra, aonaid agus rogha i gcomparáid le do thomhais nó le hearra a oireann duit. Is tagairtí iad táblaí comhshó, ní ráthaíocht go n-oireann lipéad amháin ó gach díoltóir. Fiafraigh faoi thomhais ar iarraidh roimh ordú.",
+      "sourceIds": [
+        "sizing"
+      ]
+    },
+    {
+      "id": "1688",
+      "category": "Roghanna táirge",
+      "question": "An bhfuil na rialacha ceannaigh agus cigireachta céanna ag orduithe 1688?",
+      "answer": "Éilíonn an treoir oifigiúil 1688 íoslíon an díoltóra; féadfaidh praghas agus lastas intíre athrú leis an líon. Scarann na rialacha cigireacht shamplach Cineál A ó tháirgí Cineál B gan QC caighdeánach. Dearbhaigh an líon, raon na cigireachta agus téarmaí fillte roimh íoc, seachas cóireáil miondíola a ghlacadh leis.",
+      "sourceIds": [
+        "wholesale",
+        "qc"
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "slug": "using-lolobuy-spreadsheet",
+      "title": "Conas scarbhileog LoloBuy a úsáid: ó nasc go gearrliosta úsáideach",
+      "description": "Aimsigh táirgí de réir catagóire, cuir an liostú cruinn i gcomparáid agus coinnigh sonraí riachtanacha roimh LoloBuy a oscailt.",
+      "keyword": "scarbhileog LoloBuy",
+      "category": "Ag tosú",
+      "summary": "Cabhraíonn scarbhileog leis an gcuardach a chúngú. Coinníonn gearrliosta úsáideach an táirge, an rogha agus na ceisteanna gan freagra a bheidh de dhíth don ordú.",
+      "sections": [
+        {
+          "heading": "Tosaigh le cinneadh ceannaigh, ní liosta fada",
+          "paragraphs": [
+            "Is uirlis aimsithe táirgí í scarbhileog LoloBuy. Is féidir catagóir a bhrabhsáil, íomhánna a fheiceáil agus liostú a leanúint. Ní chiallaíonn sé gur cheannaigh an foilsitheoir gach táirge, gur thástáil sé an díoltóir nó gur chuir sé do mhéid in áirithe. Is leid le seiceáil gach iontráil.",
+            "Roimh chuardach, scríobh síos an cineál earra, na tomhais thábhachtacha agus buiséad garbh. Is úsáidí geansaí dubh le cochall agus zip a chuardach ná gach nasc éadaigh deas a bhailiú. Cuidíonn ceist bheacht leat eolas riachtanach ar iarraidh a aithint."
+          ]
+        },
+        {
+          "heading": "Coinnigh aitheantas bunaidh an táirge",
+          "paragraphs": [
+            "D’fhéadfadh an uimhir in URL catalóige a bheith ina huimhir thaifid áitiúil, éagsúil ó ID táirge an mhargaidh sa nasc ceannaigh. Ná hathraigh uimhreacha de láimh chun cuma cheart a chur ar nasc. Úsáid cnaipe an táirge agus cuir an rud a osclaíonn i gcomparáid leis an liostú beartaithe.",
+            "Sábháil URL bunaidh an díoltóra leis an rogha. Is féidir le gabháil scáileáin radharc a chaomhnú, ach is lú an tairbhe mura léir an díoltóir, méid nó dath. Má osclaíonn nasc táirge eile nó liostú folamh, stad agus seiceáil é."
+          ]
+        },
+        {
+          "heading": "Cuir rudaí comhionanna i gcomparáid",
+          "paragraphs": [
+            "Féadfaidh praghas tosaigh a bheith don rogha is saoire, d’oiriúint amháin nó do líon eile. Cuir an chumraíocht chéanna i gcomparáid thar liostuithe. Ní comparáid fhiúntach é tacar dhá phíosa le barr amháin, fiú má tá cuma chomhchosúil ar na mionsamhlacha.",
+            "Seiceáil an léiríonn an gailearaí an dath roghnaithe agus an bhfuil cairt méide ann. Ní chruthaíonn grianghraif chomhionanna ó dhíoltóirí éagsúla an déantús nó stoc céanna. Taifead an fhianaise atá ann agus fág bearna infheicthe don eolas tábhachtach nach bhfuil ar fáil."
+          ],
+          "bullets": [
+            "An táirge cruinn agus URL an díoltóra",
+            "Méid, dath agus líon roghnaithe",
+            "Praghas reatha na rogha sin",
+            "Tomhais nó tagairt don chairt méide",
+            "Ceist amháin gan réiteach roimh ordú"
+          ]
+        },
+        {
+          "heading": "Úsáid an próiseas ceannaigh oifigiúil",
+          "paragraphs": [
+            "Míníonn treoir LoloBuy nasc margaidh a chur isteach, roghanna a roghnú agus íoc as an earra agus seachadadh intíre. Míníonn sí foirm láimhe freisin nuair nach féidir sonraí a ghabháil go huathoibríoch. Níl nasc a oscailt go rathúil ach ina thús don athbhreithniú ordaithe.",
+            "Ar leathanach oifigiúil an táirge, seiceáil an íomhá, téacs na rogha agus líon arís. Ní féidir leis an gcatalóg stoc reatha nó rogha nár roghnaigh tú sa tseiceáil amach a ráthú. Déan riachtanas speisialta beacht, mar ainm cruinn datha nó ceist tomhais."
+          ]
+        },
+        {
+          "heading": "Scar grianghraif aimsithe ó do QC féin",
+          "paragraphs": [
+            "Míníonn gailearaí díoltóra an tairiscint. D’fhéadfadh íomhá stórais stairiúil earra duine eile a thaispeáint. Is iad grianghraif chigireachta d’ordaithe féin an fhianaise le léamh roimh sheoladh thar lear. Freagraíonn na trí chineál íomhá ceisteanna éagsúla agus ní hionann iad.",
+            "Coinnigh do ghearrliosta leis an ordú. Nuair a thagann an earra chuig an stóras, cuir an rogha thaifeadta i gcomparáid leis an lipéad méide, dath agus líon. Is fusa neamhréir a mhíniú leis an mbunrogha agus tagairt ordaithe le chéile."
+          ]
+        },
+        {
+          "heading": "Déan an gearrliosta úsáideach tar éis ceannaigh",
+          "paragraphs": [
+            "Coinnigh na hiarrthóirí is láidre agus taifead cén fáth. D’fhéadfadh cairt tomhais níos soiléire a bheith ag geansaí amháin agus ceist fabraice gan réiteach ag ceann eile. Déanann sé seo cinneadh inathbhreithnithe as bailiúchán nasc, gan an taighde a atosú.",
+            "Léigh treoracha ordaithe agus buiséid roimh cheannach; léigh QC agus loingseoireacht roimh phacáiste a chur isteach. Is úsáidí an scarbhileog nuair a cheanglaíonn sí na céimeanna sin seachas praghas earra a chur i láthair mar chostas iomlán ordaithe seachadta."
+          ]
+        }
+      ],
+      "checklist": [
+        "Sábháil an URL cruinn agus an rogha.",
+        "Cuir na líonta agus cumraíochtaí céanna i gcomparáid.",
+        "Réitigh tomhais ar iarraidh roimh íoc.",
+        "Seiceáil an liostú iompórtáilte ar LoloBuy.",
+        "Léigh QC d’ordaithe féin roimh sheoladh."
+      ],
+      "sourceIds": [
+        "buying",
+        "qc"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 561
+    },
+    {
+      "slug": "how-to-order-on-lolobuy",
+      "title": "Conas ordú ar LoloBuy: naisc, roghanna agus céimeanna íocaíochta",
+      "description": "Lean an próiseas ón nasc margaidh go cigireacht stórais agus pacáiste idirnáisiúnta a chuirtear isteach ar leithligh.",
+      "keyword": "conas ordú ar LoloBuy",
+      "category": "Ordú",
+      "summary": "Seiceáil an táirge roimh íoc, fianaise stórais roimh sheoladh agus luachan an phacáiste roimh imeacht. Freagraíonn gach céim ceist éagsúil.",
+      "sections": [
+        {
+          "heading": "Tosaigh ar an suíomh oifigiúil",
+          "paragraphs": [
+            "Úsáid suíomh oifigiúil LoloBuy le haghaidh clárúcháin, logála isteach agus íocaíochta. Cabhraíonn an chatalóg neamhspleách seo le haimsiú; ní bhailíonn sí do phasfhocal ná ní phróiseálann sí ordú. Seiceáil an ceann scríbe nuair a osclaíonn tú táirge agus coinnigh comhráite ceannaigh leis an ordú cuí.",
+            "Tosaíonn an treoir oifigiúil le nasc táirge ó mhargadh Síneach tacaithe. Soláthraíonn an díoltóir taobh thiar den liostú an earra. Tá an difríocht sin tábhachtach mar ní rialaíonn an tseirbhís cheannaigh agus an díoltóir na codanna céanna den idirbheart."
+          ]
+        },
+        {
+          "heading": "Seiceáil an táirge iompórtáilte",
+          "paragraphs": [
+            "Greamaigh an nasc bunaidh nó úsáid cnaipe meaitseála LoloBuy. Cuir an leathanach a osclaíonn i gcomparáid leis an bhfoinse sula roghnaíonn tú. Seiceáil príomhíomhá, ainm, sonraí díoltóra má tá siad ann, dath, méid agus líon. Ná braith ar an íomhá amháin.",
+            "Má thagann foirm láimhe an ghníomhaire chun cinn, deir an treoir sonraí a líonadh de láimh. Úsáid an fíorliostú, ná tomhais roghanna ar iarraidh. Má tá sonra riachtanach doiléir, iarr soiléiriú trí fhiosrúchán ordaithe sula leanann an ceannaitheoir ar aghaidh."
+          ],
+          "bullets": [
+            "Táirge ag teacht leis an mbun-URL",
+            "Téacs rogha ag teacht leis an dath agus méid beartaithe",
+            "Líon agus praghas aonaid don chumraíocht chéanna",
+            "Riachtanas speisialta scríofa go soiléir"
+          ]
+        },
+        {
+          "heading": "Tuig an chéad íocaíocht",
+          "paragraphs": [
+            "Scarann an sreabhadh oifigiúil an earra agus seachadadh intíre Síneach ón bpacáiste idirnáisiúnta níos déanaí. Léigh gach líne den chéad íocaíocht. Ní chiallaíonn roghnú tíre le linn ceannaigh go bhfuil gach costas seachadta san iomlán táirge.",
+            "Seiceáil modhanna, airgeadraí agus seirbhísí roghnacha sa tseiceáil amach reatha. Ní gealltanas do gach cuntas ná ordú é liosta ginearálta cabhrach. Sábháil an taifead íocaíochta agus cuir é leis an stádas, seachas íoc arís mar tá athnuachan an leathanaigh mall."
+          ]
+        },
+        {
+          "heading": "Freagair ceisteanna an ordaithe",
+          "paragraphs": [
+            "Tá stádas Pending for Confirmation ag LoloBuy nuair is gá sonraí a fhíorú. Treoraíonn an chabhair chuig treoracha an ordaithe. Léigh an cheist iarbhír agus freagair í: d’fhéadfadh sí a chinneadh an féidir leis an bhfoireann dul ar aghaidh.",
+            "Scarann treoir athruithe earraí nach bhfuil seolta ag an díoltóir ó earraí atá seolta. Roimh sheoladh, is féidir athrú a iarraidh; ina dhiaidh, b’fhéidir filleadh agus ordú nua a dhéanamh. Ní athrú críochnaithe é iarratas go dtí go ndeimhníonn taifead an ordaithe é."
+          ]
+        },
+        {
+          "heading": "Seiceáil teacht isteach agus cigireacht",
+          "paragraphs": [
+            "Is garspriocanna éagsúla iad teacht chuig an stóras agus cigireacht críochnaithe. Aimsigh an t-earra agus cuir na grianghraif agus an rogha i gcomparáid le do cheannach. Seiceáil aitheantas ar dtús, ansin sonraí infheicthe tábhachtacha. Réitigh neamhréir shoiléir sula gcuireann tú i bpacáiste idirnáisiúnta é.",
+            "Ná glac leis go ndéantar an chigireacht chéanna ar gach earra. Míníonn an polasaí teorainneacha d’earraí séalaithe agus láimhseáil speisialta do roinnt orduithe 1688. Más gá tomhas nó radharc áirithe, seiceáil a infhaighteacht seachas grianghraf ginearálta a mheas mar chruthúnas ar gach rud."
+          ]
+        },
+        {
+          "heading": "Cuir an pacáiste isteach mar chinneadh ar leith",
+          "paragraphs": [
+            "Treoraíonn an próiseas oifigiúil earraí stóráilte a roghnú, sonraí seachadta a líonadh agus ceann de na roghanna loingseoireachta a roghnú. Léigh an ceann scríbe, srianta, pacáil agus éarlais lasta le chéile. Ní pacáiste idirnáisiúnta réidh é earra ceannaithe go huathoibríoch.",
+            "Féadfaidh lastas deiridh athrú tar éis pacála agus tomhais lóistíochta. Bí ag faire ar choigeartuithe agus iarratais deimhniúcháin. Tar éis seolta, úsáid rannóg na bpacáistí le haghaidh rianaithe, coinnigh tagairtí agus seiceáil an t-ábhar go pras ar theacht."
+          ]
+        }
+      ],
+      "checklist": [
+        "Dearbhaigh an buntáirge agus an rogha bheacht.",
+        "Seiceáil costais earra agus seachadta intíre.",
+        "Freagair iarratais deimhniúcháin.",
+        "Seiceáil grianghraif agus saincheisteanna gan réiteach.",
+        "Seiceáil an luachan idirnáisiúnta ar leith."
+      ],
+      "sourceIds": [
+        "buying",
+        "confirmation",
+        "changes",
+        "qc",
+        "freight-balance"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 536
+    },
+    {
+      "slug": "lolobuy-qc-photos",
+      "title": "Grianghraif QC LoloBuy: seicliosta praiticiúil roimh sheoladh",
+      "description": "Scar íomhánna díoltóra ó do chigireacht féin agus seiceáil aitheantas, riocht infheicthe agus fianaise atá fós ar iarraidh.",
+      "keyword": "grianghraif QC LoloBuy",
+      "category": "Cáilíocht",
+      "summary": "Tosaigh leis an táirge agus an rogha a d’ordaigh tú. Cuidíonn na radhairc leat a chinneadh cad atá soiléir, cad a éilíonn grianghraf eile agus cad is gá a réiteach.",
+      "sections": [
+        {
+          "heading": "Aithin an fhianaise atá á léamh agat",
+          "paragraphs": [
+            "Is cuid de thairiscint an díoltóra an gailearaí. D’fhéadfadh grianghraf tagartha QC ordú níos sine a thaispeáint. Baineann do ghrianghraif stórais féin leis an earra a fuarthas do do cheannach. Coinnigh na catagóirí sin ar leith, go háirithe le dathanna, leaganacha nó méideanna éagsúla.",
+            "Meaitseáil tagairt an ordaithe, an táirge agus an rogha ar dtús. Ní suaimhneas úsáideach é grianghraf mionsonraithe den leagan mícheart. Mura féidir na híomhánna a nascadh le d’earra stórais, iarr an nasc sin roimh bhreithiúnas ar chuma."
+          ]
+        },
+        {
+          "heading": "Seiceáil aitheantas roimh mhionsonraí",
+          "paragraphs": [
+            "Seiceáil méid, dath, líon agus múnla ar dtús. Cuardaigh lipéid chomhsheasmhacha agus radhairc den earra céanna. Féadfaidh íomhánna deasa méid mícheart nó tacar neamhiomlán a thaispeáint. Cuir leis an rogha shábháilte iad, seachas brath ar chuimhne.",
+            "Le péire bróg, seiceáil an dá bhróg agus marcálacha méide. Le héadach, seiceáil dath agus lipéad roghnaithe. Le mála nó tacar oiriúintí, seiceáil na comhpháirteanna ionchais. Is céimeanna praiticiúla iad seo, ní ráthaíocht gur seiceáladh gach sonra folaithe."
+          ]
+        },
+        {
+          "heading": "Úsáid seicliosta don chatagóir",
+          "paragraphs": [
+            "Maidir le héadaí, tá cruth iomlán, tosaigh, cúl, fuáil, prionta nó bróidnéireacht agus tomhais oiriúnachta úsáideach. Le bróga, féach ar an bpéire le chéile, déantús infheicthe agus méid. Freagraíonn dúntóirí, hanlaí agus taobh istigh mála ceisteanna éagsúla.",
+            "Scríobh síos na sonraí a athraíonn do chinneadh. Féadfaidh liosta fada ginearálta aird a bhaint ón tomhas amháin nó dúntóir damáistithe atá tábhachtach. Má tá an tosaigh soiléir ach an cúl ar iarraidh, iarr an cúl seachas grianghraf eile den uillinn chéanna."
+          ],
+          "bullets": [
+            "Dearbhaigh aitheantas agus rogha",
+            "Seiceáil riocht agus déantús infheicthe",
+            "Cuir tomhais iarrtha i gcomparáid",
+            "Scar radhairc ar iarraidh ó lochtanna feicthe"
+          ]
+        },
+        {
+          "heading": "Tuig teorainneacha na seirbhíse",
+          "paragraphs": [
+            "Míníonn leathanach caighdeánach LoloBuy seiceálacha cuma agus eisceachtaí. Ní osclaítear earraí séalaithe i gcónaí agus ní dhéantar barántúlacht, feidhm ná cáilíocht roinnt earraí gairmiúla nó leictreonacha a thástáil. Tá sampláil nó rialacha eile ag roinnt orduithe 1688.",
+            "Ní aontaíonn na leathanaigh ar líon uilíoch grianghraf: tá figiúirí éagsúla sa leathanach cigireachta agus san achoimre seirbhíse. Seiceáil seirbhís d’ordaithe féin. Is í an cheist úsáideach an gclúdaíonn an fhianaise an pointe atá riachtanach don chinneadh."
+          ]
+        },
+        {
+          "heading": "Iarr radharc breise beacht",
+          "paragraphs": [
+            "Aithníonn iarratas fócasaithe an t-ordú, an áit agus an chúis. Mar shampla: “Taispeáin an lipéad méide agus tomhais leithead cothrom an chliabhraigh ó fhuáil go fuáil.” Is soiléire é ná fiafraí an bhfuil an t-earra go maith. Seiceáil infhaighteacht agus costas roimh obair bhreise.",
+            "Úsáid modh tomhais chairt an díoltóra. Ní hionann leithead cothrom éadaigh agus imlíne coirp. Coinnigh an grianghraf agus an tomhas le chéile ionas nach gceapfar gur méid eile nó earra eile atá sa líon."
+          ]
+        },
+        {
+          "heading": "Déan cinneadh taifeadta",
+          "paragraphs": [
+            "Roinn torthaí ina ndeimhnithe, doiléire agus do-ghlactha. Iarr fianaise ar phointe doiléir. Má tá an t-earra difriúil ón ordú, úsáid tacaíocht nó filleadh cuí roimh sheoladh idirnáisiúnta. Coinnigh cur síos gairid agus na grianghraif a léiríonn é.",
+            "Ní féidir le grianghraif gach airí ábhair, compord, marthanacht nó feidhm inmheánach a chruthú. Is cinneadh níos cúinge é cuma infheicthe a cheadú. Léigh na téarmaí fillte agus an t-earra fós sa stóras; ní gealltanas custaim ná seachadta é QC rathúil."
+          ]
+        }
+      ],
+      "checklist": [
+        "Meaitseáil grianghraif le d’ordú féin.",
+        "Seiceáil méid, dath, múnla agus líon ar dtús.",
+        "Iarr an radharc nó tomhas ar leith atá ar iarraidh.",
+        "Léigh an tseirbhís cigireachta agus eisceachtaí.",
+        "Réitigh mórcheisteanna roimh phacáiste a chur isteach."
+      ],
+      "sourceIds": [
+        "qc",
+        "photos",
+        "service",
+        "sizing"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 530
+    },
+    {
+      "slug": "lolobuy-shipping-costs",
+      "title": "Costais loingseoireachta LoloBuy: cuir an pacáiste iomlán i gcomparáid",
+      "description": "Tuig meáchan measta, fíor agus toirtmhéadrach agus cuir bealaí i gcomparáid leis an gceann scríbe, ábhar agus pacáil chéanna.",
+      "keyword": "áireamhán loingseoireachta LoloBuy",
+      "category": "Loingseoireacht",
+      "summary": "Tosaíonn comparáid lasta úsáideach le pacáiste sainithe amháin. Míníonn an treoir seo na hionchuir agus na seiceálacha; ní luachan beo í.",
+      "sections": [
+        {
+          "heading": "Scar praghas an earra ón lastas",
+          "paragraphs": [
+            "Ní costas iomlán seachadta é an praghas in aice le táirge. Scarann próiseas LoloBuy ceannach agus seachadadh intíre ón éarlais idirnáisiúnta níos déanaí. Is féidir buiséad a mheas roimh cheannach ach ní comparáid phacáiste deiridh ó phraghas an táirge amháin.",
+            "Scríobh an ceann scríbe, na hearraí beartaithe agus an pacáistiú atá le coinneáil. Is cinntí éagsúla iad péire bróg lena bhosca agus gan é. Féadfaidh earraí breise meáchan agus toisí a athrú, mar sin d’fhéadfadh ceannach beag dul i bhfeidhm ar an luachan ar roinnt bealaí."
+          ]
+        },
+        {
+          "heading": "Bíodh a fhios agat cén meáchan atá á chur i gcomparáid",
+          "paragraphs": [
+            "Scarann treoir LoloBuy meastachán ó fhíormheáchan an phacáiste pacáilte. Cuimsíonn taifead an earra bunphacáistiú; cuimsíonn an pacáiste deiridh bosca seolta agus roghanna bainte nó treisithe freisin. Féadfaidh tomhais éagsúla teacht as na céimeanna.",
+            "Léiríonn meáchan toirtmhéadrach an spás a ghlacann an pacáiste. Foilsíonn an treoir roinnteoirí éagsúla do bhealaí éagsúla. Ná cuir roinnteoir amháin i bhfeidhm ar gach iompróir ná glac le seanshampla mar tharaif reatha. Úsáid téarmaí reatha do phacáiste."
+          ],
+          "bullets": [
+            "Ceann scríbe agus cód poist",
+            "Srianta táirge agus ábhar",
+            "Fíormheáchan pacáilte",
+            "Fad, leithead agus airde",
+            "Rialacha billeála an bhealaigh agus seirbhísí san áireamh"
+          ]
+        },
+        {
+          "heading": "Déan an uimhríocht gan luachan a shamhlú",
+          "paragraphs": [
+            "Mar shampla amháin, tá toirt 24,000 ceintiméadar ciúbach ag pacáiste 40 × 30 × 20 ceintiméadar. Tugann roinnteoir hipitéiseach 6,000 meáchan toirtmhéadrach 4 chileagram; tugann 5,000 toradh 4.8 cileagram. Ní thugann ceachtar acu praghas loingseoireachta.",
+            "Léiríonn sé seo tábhacht riail an bhealaigh. Teastaíonn fíormheáchan, incrimintí billeála, ceann scríbe agus ráta reatha fós. Ná roghnaigh bealach ó éileamh “in aghaidh an chileagraim” má bhraitheann an muirear ar chéad aonad, aonaid bhreise nó meáchan inbhilleála níos airde."
+          ]
+        },
+        {
+          "heading": "Cuir an pacáiste céanna i gcomparáid thar bhealaí",
+          "paragraphs": [
+            "Coinnigh na hionchuir mar an gcéanna. Seiceáil na hearraí inghlactha, meastachán ama, rianú, riachtanais pacála agus cosaint roghnach. Ní comparáid iomlán é méid tosaigh níos ísle má tá seirbhísí nó srianta difriúil.",
+            "Is meastacháin iad amanna seachadta. Is céimeanna ar leith iad láimhseáil stórais, gluaiseacht iompróra agus próisis cinn scríbe. Ní gheallann an treoir am uilíoch, bealach saor ó cháin ná muirear custaim seasta. Úsáid an luachan reatha agus rialacha oifigiúla na háite."
+          ]
+        },
+        {
+          "heading": "Meas an pacáistiú mar rogha le comhréiteach",
+          "paragraphs": [
+            "Míníonn leathanach bainte pacáistithe seachtrach nach bhfuil de dhíth a bhaint agus cosaint riachtanach a choinneáil. Molann sé gan bhaint a roghnú má tá bunphacáistiú tábhachtach do bhronntanas nó do chaomhnú. Is féidir le toirt níos lú cabhrú, ach tá cosaint agus cuspóir an cheannaigh tábhachtach.",
+            "Iarr rogha bheacht seachas gach rud a bhaint. Cuir toisí deiridh i gcomparáid má tá siad ar fáil. Ní laghdaíonn comhdhlúthú nó baint an bille ar gach bealach go huathoibríoch; d’fhéadfadh níos mó cosanta a bheith de dhíth ar earra leochaileach."
+          ]
+        },
+        {
+          "heading": "Bí ag faire ar an socrú deiridh",
+          "paragraphs": [
+            "Deir treoir íocaíochta breise LoloBuy go réitítear an lastas measta leis an muirear iarbhír ón soláthraí lóistíochta. D’fhéadfadh aisíocaíocht ró-íocaíochta nó íocaíocht bhreise a bheith ann. Léigh teachtaireachtaí an phacáiste agus freagair iarratais a bhaineann leis.",
+            "Coinnigh an meastachán, na tomhais inbhilleála deiridh, na seirbhísí agus an coigeartú le chéile. Déanann sé sin difríocht níos sothuigthe. Buiséadaigh costais cinn scríbe ar leithligh agus seiceáil an t-iomlán deiridh sula measann tú an t-ordú críochnaithe."
+          ]
+        }
+      ],
+      "checklist": [
+        "Déan comparáid le hábhar agus ceann scríbe comhionann.",
+        "Seiceáil rialacha fíormheáchain agus toirtmheáchain.",
+        "Coinnigh cosaint pacáistithe sa chinneadh.",
+        "Scar meastacháin ó tháillí deiridh.",
+        "Léigh teachtaireachtaí coigeartaithe roimh sheoladh."
+      ],
+      "sourceIds": [
+        "buying",
+        "weight",
+        "packaging",
+        "freight-balance"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 514
+    },
+    {
+      "slug": "lolobuy-warehouse-consolidation",
+      "title": "Treoir stórais LoloBuy: cigireacht, stóráil agus comhdhlúthú",
+      "description": "Eagraigh earraí stóráilte, réitigh ceisteanna QC agus roghnaigh pacáistiú don phacáiste iomlán.",
+      "keyword": "stóras LoloBuy",
+      "category": "Stóras",
+      "summary": "Sa chéim stórais, ceangail an taifead ceannaigh leis an earra a fuarthas agus cinntigh cad atá réidh le seoladh le chéile.",
+      "sections": [
+        {
+          "heading": "Scar teacht isteach ó bheith réidh",
+          "paragraphs": [
+            "Ciallaíonn scanadh seachadta díoltóra go bhfuil pacáiste intíre tar éis pointe den turas a shroicheadh. Ní chruthaíonn sé go bhfuil an t-earra cigireachta, meaitseáilte agus réidh don seoladh idirnáisiúnta. Scarann treoir stádais LoloBuy fáil, cigireacht agus fardal stóráilte.",
+            "Úsáid an taifead stórais mar liosta oibre seachas teachtaireacht rianaithe amháin. Coinnigh uimhir ordaithe, rogha agus stádas QC gach earra. Má thagann roinnt pacáistí le chéile, ní cheileann earra críochnaithe ceist faoi cheann eile."
+          ]
+        },
+        {
+          "heading": "Cruthaigh seicliosta beag stórais",
+          "paragraphs": [
+            "Taifead an t-earra ordaithe, an méid a léiríonn an stóras agus na ceisteanna gan réiteach. Is leor ceithre cholún: earra, rogha cheart, cinneadh cigireachta agus treoir pacála. Coinníonn sé seo ceist oscailte infheicthe roimh phacáiste a chruthú.",
+            "Cuir na híomhánna leis an mbunrogha. Teastaíonn gníomhartha éagsúla do ghrianghraf ar iarraidh agus locht infheicthe. Iarr fianaise ar shonra doiléir. Le neamhréir dhealraitheach, mínigh an difríocht le tagairt ordaithe agus meas an próiseas fillte cuí."
+          ],
+          "bullets": [
+            "Ordú agus rogha chruinn",
+            "Fáil stórais agus stádas cigireachta",
+            "Ceist oscailte nó iarratas fillte",
+            "Bunphacáistiú a choinneáil nó a bhaint",
+            "Réidh don phacáiste idirnáisiúnta: tá nó níl"
+          ]
+        },
+        {
+          "heading": "Seiceáil do spriocdháta stórála go díreach",
+          "paragraphs": [
+            "Tá ráitis contrártha san ábhar oifigiúil: 90 lá sa treoir cheannaigh, 180 sna leathanaigh stórála agus stádais. Déanann an leathanach stórála cur síos freisin ar phacáistí neamhghnácha neamhmheaitseáilte. Ní ceart na difríochtaí sin a iompú ina ngealltanas amháin gan choinníoll.",
+            "Seiceáil an fhaisnéis ar d’earra féin agus soiléirigh neamhréir sula mbraitheann tú ar spriocdháta. Taifead an dáta agus aon síneadh íoctha. Ná fág earraí ar feitheamh gan teorainn mar tá tréimhse níos faide in alt ginearálta ná sa taifead reatha."
+          ]
+        },
+        {
+          "heading": "Comhcheangail earraí comhoiriúnacha réitithe",
+          "paragraphs": [
+            "Míníonn an treoir earraí stórais a roghnú don seachadadh idirnáisiúnta nó tuilleadh a cheannach agus a sheoladh le chéile níos déanaí. Ligeann comhdhlúthú duit an pacáiste iomlán a phleanáil. Ní dhéanann sé gach teaglaim inghlactha do gach bealach.",
+            "Meas srianta, leochaileacht agus saincheisteanna oscailte roimh chomhcheangal. Níor cheart earra ag fanacht le cinneadh fillte a mheas réidh. D’fhéadfadh cosaint eile a bheith ag oiriúint íogair seachas éadaí. Cuir toisí agus meáchan deiridh i gcomparáid, ní líon táirgí amháin."
+          ]
+        },
+        {
+          "heading": "Scríobh treoracha pacála beachta",
+          "paragraphs": [
+            "Míníonn cabhair LoloBuy pacáistiú neamhriachtanach a bhaint agus cosaint a chaomhnú. Má tá bosca bunaidh uait mar bhronntanas nó do bhailiúchán, ná roghnaigh baint agus déan an riachtanas soiléir. Ní hé meáchan seolta an t-aon luach atá ag bosca.",
+            "Tabhair treoir don earra nuair is gá: coinnigh tacaíocht chosanta, bosca miondíola amháin nó fiafraigh faoin rogha atá ar fáil. Seiceáil táille bhreise sa fhoirm reatha. Ná glac leis go n-oireann an pacáistiú céanna do gach catagóir."
+          ]
+        },
+        {
+          "heading": "Déan athbhreithniú deiridh ar an bpacáiste",
+          "paragraphs": [
+            "Dearbhaigh liosta earraí, líonta, sonraí faighteora, bealach agus seirbhísí roimh chur isteach. Seiceáil go bhfuil gach earra beartaithe ann agus nach bhfuil earra gan réiteach istigh de thaisme. Is fusa an seiceáil ghearr seo ná an cinneadh a atógáil tar éis pacála.",
+            "Míníonn leathanaigh mheáchain agus socraithe lasta go bhféadfaidh tomhais deiridh an táille a athrú. Bí ag faire ar theachtaireachtaí deimhniúcháin nó íocaíochta. Tar éis seolta, úsáid taifead rianaithe an phacáiste agus coinnigh fianaise stórais go dtí go seiceálann tú an seachadadh."
+          ]
+        }
+      ],
+      "checklist": [
+        "Seiceáil gach earra roimh é a mharcáil réidh.",
+        "Léigh spriocdháta do thaifid stórála féin.",
+        "Scar ceisteanna fillte ó earraí réidh le seoladh.",
+        "Sonraigh pacáil oiriúnach do gach táirge.",
+        "Seiceáil an liosta deiridh agus coigeartuithe lasta."
+      ],
+      "sourceIds": [
+        "buying",
+        "status",
+        "storage",
+        "packaging",
+        "freight-balance"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 518
+    },
+    {
+      "slug": "lolobuy-sizing-guide",
+      "title": "Treoir méide LoloBuy: cuir tomhais i gcomparáid roimh lipéad a roghnú",
+      "description": "Úsáid cairt an díoltóra, modhanna comhsheasmhacha agus grianghraif stórais spriocdhírithe le rogha méide níos soiléire.",
+      "keyword": "treoir méide LoloBuy",
+      "category": "Méideanna",
+      "summary": "Is tús é lipéad coitianta. Is í an chomparáid úsáideach tomhais an díoltóra, do thomhais tagartha agus an oiriúnacht atá uait.",
+      "sections": [
+        {
+          "heading": "Tosaigh le cairt an díoltóra",
+          "paragraphs": [
+            "Deir tagairt oifigiúil LoloBuy gur féidir le caighdeáin méide athrú idir siopaí agus gur tagairt é an comhshó. Ní chruthaíonn “meánach” ná méid bróige aithnidiúil oiriúnacht gach táirge. Léigh an chairt don liostú agus don rogha chruinn.",
+            "Seiceáil an mbaineann na huimhreacha le corp, ball éadaigh críochnaithe nó duine molta. Is tomhais éagsúla iad. Mura bhfuil sé soiléir, fiafraigh roimh ordú seachas méid níos mó nó níos lú a roghnú de nós."
+          ]
+        },
+        {
+          "heading": "Tomhais tagairt iontaofa",
+          "paragraphs": [
+            "Cuir éadaí i gcomparáid le ball atá agat agus a oireann mar is mian leat. Leag cothrom é agus úsáid pointí léaráid an díoltóra. Taifead aonaid agus an leithead aon taoibh nó imlíne atá i gceist. Coinnigh grianghraf gairid den mhodh leis na tomhais.",
+            "Le tomhais coirp, lean an treoir agus coinnigh an téip cothrom, gan í a theannadh chun méid roghnaithe a bhaint amach. Teastaíonn liúntais éagsúla do léine fheistithe, geansaí scaoilte agus seaicéad struchtúrtha. Is cuid den chinneadh an cruth inmhianaithe, ní locht sa chairt."
+          ]
+        },
+        {
+          "heading": "Roghnaigh na toisí tábhachtacha",
+          "paragraphs": [
+            "Le barr, freagraíonn leithead cliabhraigh, fad, gualainn agus muinchille ceisteanna éagsúla. Le bríste, seiceáil coim, ardú, fad inmheánach coise agus fad iomlán. Ní mhíníonn uimhir choime amháin suíomh na coise ná tomhas cliabhraigh fad muinchille.",
+            "Mar léiriú, má tá do bharr tagartha 56 ceintiméadar trasna agus 70 ar fad, d’fhéadfadh rogha 56 agus 64 a bheith chomh leathan ach i bhfad níos giorra. Léiríonn sé seo modh comparáide, ní moladh ar mhéid nó táirge áirithe."
+          ],
+          "bullets": [
+            "Dearbhaigh aonaid tomhais",
+            "Meaitseáil tomhais coirp le cairteacha coirp",
+            "Meaitseáil tomhais chothroma le cairteacha éadaigh",
+            "Cuir roinnt toisí tábhachtacha i gcomparáid",
+            "Taifead an cruth scaoilte nó feistithe atá uait"
+          ]
+        },
+        {
+          "heading": "Seiceáil bróga ar leithligh",
+          "paragraphs": [
+            "Molann an treoir oifigiúil an chos is mó a úsáid má tá difríocht eatarthu agus deir sí nach léiríonn lipéad faid an leithead go hiomlán. Léigh cairt bróige an díoltóra agus córas na rogha. Ná glac le comhshó foirfe EU, US nó UK thar gach liostú.",
+            "Tomhais de réir na cairte agus smaoinigh ar stocaí, leithead agus úsáid. Cabhraíonn lipéad infheicthe i ngrianghraf stórais leis an méid seolta a dhearbhú, ach ní mhíníonn sé mothú na bróige ar do chos. Ní tábla comhshó uilíoch é grianghraf boinn istigh."
+          ]
+        },
+        {
+          "heading": "Úsáid QC le ceist bheacht a fhreagairt",
+          "paragraphs": [
+            "Roimh sheoladh, cuir an lipéad leis an ordú. Má tá toise tábhachtach doiléir, iarr tomhas le pointí tosaigh agus deiridh soiléire. Mar shampla, iarr leithead cothrom cliabhraigh ó fhuáil go fuáil seachas “seiceáil an méid”.",
+            "Tá teorainneacha le cigireacht LoloBuy agus ní ghealltar measúnú iomlán oiriúnachta. Seiceáil an bhfuil tomhas nó grianghraf breise ar fáil agus an táille atá air. Ní comhairliúchán méide pearsanta é tacar grianghraf caighdeánach."
+          ]
+        },
+        {
+          "heading": "Déan cinneadh agus roghanna fós agat",
+          "paragraphs": [
+            "Má tá lipéad an earra difriúil ón rogha, taifead an neamhréir leis an ordú agus grianghraf. Má mheaitseálann an lipéad ach nach n-oireann an tomhas, seiceáil téarmaí fillte agus an próiseas reatha go pras. Is cásanna éagsúla iad agus ba cheart iad a mhíniú go cruinn.",
+            "Laghdaíonn tomhais éiginnteacht, ach ní bhaineann siad difríochtaí gearrtha, síneadh, mothú fabraice ná rogha phearsanta. Coinnigh an chairt agus nótaí chun ceannach amach anseo a threorú. Seiceáil an liostú arís mar d’fhéadfadh tomhais eile a bheith ag díoltóir nó leagan eile."
+          ]
+        }
+      ],
+      "checklist": [
+        "Úsáid cairt an liostaithe chruinn.",
+        "Coinnigh aonaid agus modhanna comhsheasmhach.",
+        "Cuir roinnt toisí oiriúnachta i gcomparáid.",
+        "Seiceáil lipéad agus tomhas an earra faighte.",
+        "Réitigh ceisteanna oiriúnachta roimh sheoladh idirnáisiúnta."
+      ],
+      "sourceIds": [
+        "sizing",
+        "qc",
+        "returns"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 527
+    },
+    {
+      "slug": "lolobuy-tracking-guide",
+      "title": "Rianú LoloBuy: scar an t-ordú ón bpacáiste idirnáisiúnta",
+      "description": "Léigh céimeanna ceannaigh, stórais agus pacáiste i gceart agus bailigh fianaise úsáideach nuair atá nuashonrú doiléir.",
+      "keyword": "rianú LoloBuy",
+      "category": "Rianú",
+      "summary": "Cuireann stádas ordaithe agus scanadh iompróra síos ar chodanna éagsúla den turas. Coinnigh tagairtí earra, pacáiste intíre agus pacáiste idirnáisiúnta ar leith.",
+      "sections": [
+        {
+          "heading": "Bíodh a fhios agat cad atá á rianú",
+          "paragraphs": [
+            "D’fhéadfadh ordú ceannaigh, loingsiú intíre ón díoltóir agus pacáiste idirnáisiúnta níos déanaí a bheith ag táirge. Is taifid ghaolmhara iad, ní an loingsiú céanna. D’fhéadfadh teachtaireacht seachadta intíre teacht chuig an stóras a chiallaíonn, ní chuig do theach.",
+            "Cruthaigh liosta tagartha de réir mar a théann an t-ordú ar aghaidh: uimhir táirge/ordaithe, tagairt díoltóra má tá sí ann, taifead stórais agus uimhir phacáiste idirnáisiúnta. Cabhraíonn sé le ceist a chur faoin gcéim cheart, seachas gabháil scáileáin turais eile a sheoladh."
+          ]
+        },
+        {
+          "heading": "Léigh céimeanna ceannaigh ar dtús",
+          "paragraphs": [
+            "Scarann treoir oifigiúil LoloBuy fanacht le híocaíocht, próiseáil, ordaithe agus seolta ag an díoltóir. Baineann próiseáil leis an gceannach; ní chiallaíonn sé go bhfuil iompróir idirnáisiúnta ag bogadh do phacáiste. Léigh an téacs sula lorgann tú nuashonrú thar lear.",
+            "Míníonn an treoir fáil earraí agus fardal tar éis cigireachta freisin. Má deir iompróir intíre seachadta ach nach bhfuil QC críochnaithe, d’fhéadfadh céimeanna leanúnacha a bheith sna taifid seachas contrárthacht. Seiceáil taifead an earra agus iarratais deimhniúcháin don chéad ghníomh eile."
+          ]
+        },
+        {
+          "heading": "Ansin léigh céimeanna an phacáiste",
+          "paragraphs": [
+            "Nuair a chruthaíonn tú pacáiste idirnáisiúnta, tá a sheicheamh féin aige: fanacht le híocaíocht, próiseáil, pacáilte agus seolta sa treoir. Deirtear freisin faire ar athruithe lasta tar éis meá deiridh. Ná meas pacáiste cruthaithe mar phacáiste seolta.",
+            "Úsáid an taifead iarbhír seachas uimhir thagartha amháin. Is féidir lipéad nó uimhir a ullmhú roimh an gcéad ghluaiseacht infheicthe eile. Agus córais á gcur i gcomparáid, taifead cén leathanach a deir aistriú don iompróir agus cén teagmhas a thaifead an t-iompróir féin."
+          ],
+          "bullets": [
+            "Tagairt ceannaigh nó ordaithe",
+            "Tagairt phacáiste idirnáisiúnta",
+            "Uimhir rianaithe iompróra",
+            "Teagmhas, áit agus am is déanaí",
+            "Deimhniú nó íocaíocht ar feitheamh"
+          ]
+        },
+        {
+          "heading": "Léigh tréimhsí ciúine go cúramach",
+          "paragraphs": [
+            "Ní aithníonn bearna scanadh an chúis inti féin. Seiceáil meastachán reatha an bhealaigh, an teagmhas deireanach agus fógraí oifigiúla ábhartha. Ná déan spriocdháta geallta de ghnáthfhad ó sheanphostáil.",
+            "Seachain suíomhanna rianaithe éagsúla a oscailt arís agus arís agus gach difríocht focal a mheas mar theagmhas nua. Coinnigh taifead dátaithe d’athruithe suntasacha. Má tá an chéim neamhréireach nó gníomh iarrtha, luaigh an fhadhb bheacht sa tacaíocht ordaithe nó pacáiste."
+          ]
+        },
+        {
+          "heading": "Seol ceist úsáideach don tacaíocht",
+          "paragraphs": [
+            "Tabhair ID ordaithe nó pacáiste, uimhir rianaithe, an teagmhas deireanach agus do cheist. Mar shampla: “Deir an taifead seolta, ach níl teagmhas aistrithe ag an iompróir. An féidir an t-aistriú a dhearbhú?” Is soiléire é ná “Cá bhfuil gach rud?”.",
+            "Treoraíonn treoir LoloBuy chuig rannóg na bpacáistí tar éis seolta. Úsáid fiosrúchán a ghabhann leis an taifead nuair is féidir. Ná cuir sonraí cuntais neamhghaolmhara ná dintiúir íocaíochta i gceist faoi rianú."
+          ]
+        },
+        {
+          "heading": "Coinnigh fianaise go dtí an seachadadh",
+          "paragraphs": [
+            "Nuair a thagann an pacáiste, seiceáil an taobh amuigh agus an t-ábhar go pras. Coinnigh pacáistiú, lipéad agus grianghraif shoiléire má tá rud mícheart, ar iarraidh nó damáistithe. Cuir na hearraí leis an liosta pacáiste deiridh, ní gearrliosta níos sine le hearraí nár seoladh.",
+            "Iarrann an leathanach iar-dhíolacháin cur síos agus grianghraif ar earra mícheart nó damáistithe, ach tá a spriocdhátaí contrártha. Gníomhaigh go pras agus dearbhaigh an spriocdháta sa phróiseas beo. Ná fan mar tugann treoir ghinearálta tréimhse níos faide le fios."
+          ]
+        }
+      ],
+      "checklist": [
+        "Scar tagairtí intíre agus idirnáisiúnta.",
+        "Seiceáil an bhfuil pacáiste cruthaithe, pacáilte nó seolta.",
+        "Léigh an teagmhas deireanach lena am.",
+        "Seol ceist bheacht thaifeadta don tacaíocht.",
+        "Seiceáil seachadadh go pras agus coinnigh fianaise."
+      ],
+      "sourceIds": [
+        "status",
+        "buying",
+        "claims",
+        "freight-balance"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 517
+    },
+    {
+      "slug": "lolobuy-returns-refunds",
+      "title": "Fillteacha agus aisíocaíochtaí LoloBuy: gníomhaigh ag an gcéim cheart",
+      "description": "Ullmhaigh fianaise, seiceáil incháilitheacht agus tuig an difríocht idir cealú, filleadh táirge agus éileamh pacáiste.",
+      "keyword": "fillteacha agus aisíocaíochtaí LoloBuy",
+      "category": "Iar-dhíolachán",
+      "summary": "Braitheann filleadh ar an earra, díoltóir agus céim ordaithe. Is úsáidí fianaise shoiléir agus iarratas pras ná riail amháin a shamhlú do gach ceannach.",
+      "sections": [
+        {
+          "heading": "Aithin an próiseas atá uait",
+          "paragraphs": [
+            "Is próisis éagsúla iad ordú nár ceannaíodh a chealú, earra stórais a fhilleadh agus fadhb a thuairisciú tar éis seachadadh idirnáisiúnta. Tosaigh le stádas reatha an ordaithe nó pacáiste. Braitheann an cnaipe agus an t-eolas ar dhul chun cinn an idirbhirt.",
+            "Míníonn leathanaigh LoloBuy céimeanna de réir stádais agus baint an díoltóra. Ní ceadú é iarratas. Léigh an freagra san ordú agus taifead cad atá glactha, cad atá ar feitheamh agus cad is gá duit a dhéanamh fós."
+          ]
+        },
+        {
+          "heading": "Caomhnaigh an fhianaise bheacht",
+          "paragraphs": [
+            "Coinnigh URL, rogha, deimhniú ordaithe agus grianghraif le chéile. Le lipéad méide mícheart, taispeáin an rogha ordaithe agus an lipéad faighte. Le damáiste, tabhair radharc iomlán agus gar-radharc. Mínigh an difríocht gan áibhéil.",
+            "Mar shampla, “Gorm i méid L a ordaíodh; taispeánann an grianghraf lipéad dubh M” is neamhréir inseiceáilte. Tá “drochcháilíocht” i bhfad níos doiléire. Mura léiríonn na grianghraif an fhadhb, iarr an fhianaise ar iarraidh roimh leigheas a roghnú."
+          ],
+          "bullets": [
+            "Uimhir ordaithe agus bunliostú",
+            "Rogha agus líon",
+            "Cur síos soiléir ar an bhfadhb",
+            "Grianghraif ábhartha d’ordaithe féin",
+            "Leigheas iarrtha: soiléiriú, cealú, filleadh nó malartú"
+          ]
+        },
+        {
+          "heading": "Léigh incháilitheacht agus am le chéile",
+          "paragraphs": [
+            "Míníonn an leathanach ráthaíochta fillte coinníollacha agus fuinneog iarratais tar éis stocáil, agus éilíonn sé comhaontú díoltóra. Tá téacs ama difriúil nó míshoiléir ar leathanaigh eile. Seiceáil spriocdháta agus seirbhís d’ordaithe féin agus cuir an cheist isteach go pras.",
+            "D’fhéadfadh pacáistiú agus riocht athdhíola a bheith tábhachtach. Ná hiarr pacáistiú riachtanach don fhilleadh a bhaint sula dtuigeann tú na téarmaí. D’fhéadfadh rialacha eile a bheith ar earraí úsáidte, speisialta agus catagóirí eile; bheadh gealltanas fillte gan choinníoll míthreorach."
+          ]
+        },
+        {
+          "heading": "Fiafraigh cad iad na costais",
+          "paragraphs": [
+            "Scarann an treoir ráthaíochta cúiseanna fillte agus pléann sí iompar intíre agus táillí seirbhíse. Ní chiallaíonn seachadadh saor bunaidh filleadh saor níos déanaí. Iarr na costais do do chás roimh aontú.",
+            "Coinnigh an freagra san ordú. Soiléirigh an gcuimsíonn an méid iompar ar ais, an seachadadh intíre bunaidh agus táille seirbhíse. Ní hionann liúntas láimhseála ardáin agus costais díoltóra, agus níor cheart iad a chumasc ina n-éileamh doiléir “filleadh saor”."
+          ]
+        },
+        {
+          "heading": "Lean ceann scríbe agus stádas na haisíocaíochta",
+          "paragraphs": [
+            "De ghnáth tagraíonn an chabhair do chreidmheas chuig iarmhéid LoloBuy, le heisceacht ar leith do chásanna buníocaíochta áirithe. Is torthaí éagsúla iad creidmheas cuntais agus airgead chuig modh seachtrach. Seiceáil cé acu sula nglacann tú le hairgead i do bhanc.",
+            "Is féidir le ceadú díoltóra, fáil an earra fillte agus críochnú aisíocaíochta a bheith ina gcéimeanna ar leith. Coinnigh tagairt an phacáiste fillte má thugtar í. Nuair a fhiafraíonn tú faoi mhoill, ainmnigh an chéim dheireanach in áit iarratas nua a fhágann an stair ar lár."
+          ]
+        },
+        {
+          "heading": "Déileáil le pacáiste seachadta ar leithligh",
+          "paragraphs": [
+            "Tar éis seachadta, treoraíonn an chabhair chuig iarratas iar-dhíolacháin an phacáiste agus iarrann sí cur síos agus grianghraif. Coinnigh pacáistiú seachtrach agus lipéad chomh maith le híomhánna táirge. Ceanglaíonn siad damáiste nó neamhréir leis an loingsiú.",
+            "Tá spriocdhátaí contrártha ar an leathanach sin. Tuairiscigh go pras agus faigh an teorainn ón bpróiseas reatha. Ní gheallann an treoir ceadú, am uilíoch aisíocaíochta ná cúiteamh do gach caillteanas."
+          ]
+        }
+      ],
+      "checklist": [
+        "Seiceáil céim reatha an ordaithe nó pacáiste.",
+        "Taifead an neamhréir nó damáiste cruinn.",
+        "Dearbhaigh incháilitheacht, spriocdháta agus pacáistiú.",
+        "Fiafraigh faoi gach costas fillte.",
+        "Lean ceadú agus fíorcheann scríbe na haisíocaíochta."
+      ],
+      "sourceIds": [
+        "refunds",
+        "cancellation",
+        "returns",
+        "claims",
+        "changes"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 503
+    },
+    {
+      "slug": "lolobuy-order-budget",
+      "title": "Buiséad ordaithe LoloBuy: féach thar phraghas an táirge",
+      "description": "Scar costas earraí, seachadadh intíre, seirbhísí roghnacha, comhshó airgeadra agus lastas idirnáisiúnta roimh ordú.",
+      "keyword": "táillí LoloBuy",
+      "category": "Buiséad",
+      "summary": "Scarann buiséad úsáideach méideanna deimhnithe ó mheastacháin. Coinnigh ceannach agus íocaíocht phacáiste níos déanaí le feiceáil mar dhá chinneadh ghaolmhara.",
+      "sections": [
+        {
+          "heading": "Praghsáil an rogha a cheannóidh tú",
+          "paragraphs": [
+            "Is pointe comparáide é praghas catalóige. D’fhéadfadh praghas reatha eile a bheith ag dath, méid, tacar nó líon ar an leathanach ordaithe. Seiceáil an chumraíocht chruinn roimh bhuiséadú, go háirithe le raon praghsanna.",
+            "Cuir méid agus airgeadra i gcomparáid ag an gcéim chéanna. D’fhéadfadh comhpháirteanna éagsúla a bheith i bpraghas taifeadta, iomlán seiceála amach agus ráiteas cárta. Ná glaoigh táille fholaithe ar an difríocht gan líon, seachadadh, comhshó agus seirbhísí a sheiceáil."
+          ]
+        },
+        {
+          "heading": "Scar an dá phríomhchéim íocaíochta",
+          "paragraphs": [
+            "Bailíonn próiseas oifigiúil LoloBuy íocaíocht as earraí agus seachadadh intíre Síneach ar dtús. Láimhseáiltear lastas idirnáisiúnta nuair a chuirtear earraí stórais isteach mar phacáiste. D’fhéadfadh ceannaitheoir a bhuiséadaíonn an chéad íocaíocht amháin teacht chuig an stóras gan airgead seolta.",
+            "Cruthaigh tábla simplí agus marcáil gach costas deimhnithe nó measta. Taispeáin seirbhísí roghnacha seachas iad a cheilt sa phraghas earra. Cuir muirir fhéideartha cinn scríbe ar líne ar leith mar ní dhearbhaíonn an chatalóg iad."
+          ],
+          "bullets": [
+            "Earraí agus líonta roghnaithe",
+            "Seachadadh intíre sa tSín",
+            "Seirbhísí ceannaigh nó stórais roghnaithe",
+            "Lastas idirnáisiúnta agus pacáil",
+            "Táillí íocaíochta nó comhshó sa tseiceáil amach",
+            "Cánacha nó láimhseáil fhéideartha ag an gceann scríbe"
+          ]
+        },
+        {
+          "heading": "Léigh coinníollacha seachadta intíre",
+          "paragraphs": [
+            "Deir an chabhair gur féidir le hearraí ón díoltóir céanna, curtha isteach agus íoctha le chéile, táille intíre a roinnt, le híocaíocht bhreise fhéideartha d’ualach trom. Is coinníoll sonrach é, ní gealltanas táille amháin do gach earra sa chairt.",
+            "Seiceáil díoltóir gach earra agus grúpáil an ordaithe. Is féidir le líon níos mó praghas nó téarmaí seachadta a athrú, go háirithe ar liostuithe mórdhíola. Coinnigh an ríomh reatha seachas táille seanordaithe a roinnt ar cheannacháin neamhghaolmhara."
+          ]
+        },
+        {
+          "heading": "Seiceáil íocaíocht agus airgeadra",
+          "paragraphs": [
+            "Léigh modhanna atá ar fáil sa tseiceáil amach oifigiúil, an t-airgeadra muirir agus na costais sula ndeimhníonn tú. D’fhéadfadh infhaighteacht brath ar chuntas agus idirbheart. Ní chruthaíonn liosta ginearálta go mbeidh modh ar fáil duit inniu.",
+            "Má thairgeann an soláthraí comhshó, cuir an méid deiridh agus na téarmaí i gcomparáid. Coinnigh an admháil leis an ordú. Ná geall ráta seasta ná glac leis go mbeidh comhshó ceannaigh roimhe i bhfeidhm an chéad uair eile."
+          ]
+        },
+        {
+          "heading": "Meas lascaine mar rud le fíorú",
+          "paragraphs": [
+            "Míníonn treoir LoloBuy sonraí tairisceana a chur i nótaí chun fíorú leis an díoltóir. Ní chruthaíonn meirge ná gabháil scáileáin go gcáilíonn an rogha agus líon cruinn fós. Taifead na coinníollacha agus iarr deimhniú san ordú.",
+            "Coinnigh lascaine ar leith ón mbuiséad gnáth go dtí go ndeimhnítear í. Ná braith ar thagairt, cúpón ná éileamh loingseoireachta ó threoir neamhghaolmhar. Níor thug an suíomh seo creidmheas ráthaithe nua-úsáideora ná praghas uilíoch lasta."
+          ]
+        },
+        {
+          "heading": "Úsáid raon do lastas éiginnte",
+          "paragraphs": [
+            "Roimh phacáil, is meastacháin iad meáchan agus méid. Réitíonn an polasaí oifigiúil an chéad lastas leis an muirear iarbhír. Fág spás do choigeartú féideartha seachas an buiséad iomlán a chaitheamh ar tháirgí.",
+            "Mar chleachtadh, má tá earraí agus seachadadh deimhnithe 100 aonad in airgeadra amháin agus lastas measta 30–45, is é 130–145 an t-iomlán sealadach roimh chostais eile. Is uimhreacha hipitéiseacha iad chun an modh a léiriú, ní praghsanna ná luachan LoloBuy."
+          ]
+        },
+        {
+          "heading": "Úsáid an buiséad le cinneadh a dhéanamh",
+          "paragraphs": [
+            "Má sháraíonn an t-iomlán dóchúil do theorainn, athraigh an gearrliosta roimh íoc. Is fusa earra íseal-tosaíochta a bhaint ná airgead a ghnóthú trí fhilleadh. Cuir luach an ordaithe seachadta iomláin i gcomparáid, ní líon na n-earraí saora.",
+            "Tar éis seolta, cuir muirir thaifeadta in áit meastachán. Coinnigh an difríocht agus a míniú. Cabhraíonn an stair le pleanáil amach anseo, agus difríochtaí earraí, toisí, bealaí agus rátaí fós á gceadú."
+          ]
+        }
+      ],
+      "checklist": [
+        "Buiséadaigh an rogha bheacht.",
+        "Scar seachadadh intíre agus idirnáisiúnta.",
+        "Taifead seirbhísí roghnacha agus airgeadra muirir.",
+        "Úsáid lascainí deimhnithe amháin.",
+        "Coinnigh cúlchiste do lastas agus costais cinn scríbe."
+      ],
+      "sourceIds": [
+        "buying",
+        "domestic",
+        "promotions",
+        "freight-balance",
+        "wholesale"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 555
+    },
+    {
+      "slug": "lolobuy-seller-and-review-checks",
+      "title": "Táirgí agus léirmheasanna LoloBuy: seiceáil fianaise an liostaithe",
+      "description": "Meas sonraí foinse, ábharthacht léirmheasa agus teorainneacha cigireachta gan suaitheantas, íomhá ná rátáil a mheas mar ráthaíocht.",
+      "keyword": "an bhfuil LoloBuy iontaofa",
+      "category": "Cinntí ceannaigh",
+      "summary": "Is í an cheist úsáideach cad a chruthaíonn an fhianaise faoin idirbheart seo. Ní féidir le hainm ardáin gach ceist díoltóra, táirge nó pacáiste a fhreagairt.",
+      "sections": [
+        {
+          "heading": "Scar an t-ardán ón táirge",
+          "paragraphs": [
+            "Déanann eolas seirbhíse LoloBuy cur síos ar cheannach ó ardáin tríú páirtí seachas gach earra liostaithe a dhíol é féin. Tá an scarbhileog neamhspleách céim eile uaidh: eagraíonn sí aimsiú. Coinnigh na róil soiléir agus tú ag socrú cé a fhreagraíonn ceist nó a réitíonn fadhb.",
+            "Ní chruthaíonn nasc oibre barántúlacht, stoc, oiriúnacht ná seachadadh amach anseo. Ní mhíníonn gearán faoi dhíoltóir amháin gach fadhb ardáin ach oiread. Tosaigh leis an éileamh beacht agus leis an bpáirtí atá freagrach as an gcuid sin den phróiseas."
+          ]
+        },
+        {
+          "heading": "Seiceáil liostú roimh a tóir",
+          "paragraphs": [
+            "Cuardaigh bun-URL soiléir, cur síos comhsheasmhach, roghanna inaitheanta agus tomhais nó sonraíochtaí úsáideacha. Cuir an rogha leis an ngailearaí. D’fhéadfadh praghas tosaigh íseal a bheith do chomhpháirt eile ná an ceann sa phríomhíomhá.",
+            "Má úsáideann roinnt díoltóirí grianghraif chéanna, ní léiríonn siad déantús nó soláthar comhionann. Taifead cad atá ar iarraidh agus fiafraigh go beacht. Ní hionad fianaise faoin liostú é líon tóra ná ainm baisce aithnidiúil."
+          ],
+          "bullets": [
+            "Bunliostú agus aitheantas díoltóra",
+            "Rogha agus líon cruinn",
+            "Tomhais nó sonraíochtaí ábhartha",
+            "Eolas reatha fillte",
+            "Ceisteanna gan freagra a théann i bhfeidhm ar cheannach"
+          ]
+        },
+        {
+          "heading": "Léigh léirmheasanna de réir ábharthachta",
+          "paragraphs": [
+            "Is úsáidí léirmheas nuair atá a dháta, an táirge nó seirbhís agus an fhianaise taobh thiar den chonclúid soiléir. Ní hionann trácht ar luas tacaíochta agus léirmheas oiriúnachta bróige. Ní chruthaíonn pacáiste rathúil go bhfuil gach táirge sa chatalóg oiriúnach.",
+            "Cuardaigh naisc atreoraithe, dreasachtaí nó caidrimh nochta. Ní dhéanann siad léirmheas bréagach go huathoibríoch, ach míníonn siad a chuspóir. Ná déan moladh uilíoch de chur chun cinn cleamhnaithe, scéal aonair nó teistiméireacht neamhfhíoraithe."
+          ]
+        },
+        {
+          "heading": "Pleanáil cad is féidir le cigireacht a chruthú",
+          "paragraphs": [
+            "Míníonn an leathanach caighdeánach seiceálacha cuma agus eisceachtaí tábhachtacha. Ní gheallann sé barántúlacht ná feidhm gach catagóire a thástáil. Láimhseáiltear earraí séalaithe agus roinnt earraí gairmiúla ar bhealach eile. Léigh na teorainneacha roimh cheannach atá ag brath ar airí nach ndéanfar a thástáil.",
+            "Le héadach, d’fhéadfadh tomhais shoiléire agus déantús infheicthe mórán a fhreagairt. Le leictreonaic nó earraí sábháilteachta, ní chruthaíonn grianghraf feidhm inmheánach ná comhlíonadh. Má tá an fhianaise riachtanach ar iarraidh, caithfear an éiginnteacht a áireamh sa chinneadh."
+          ]
+        },
+        {
+          "heading": "Coinnigh íocaíocht agus comhrá san áit cheart",
+          "paragraphs": [
+            "Úsáid an suíomh oifigiúil don tseiceáil amach agus fiosrúchán an ordaithe nó pacáiste do cheisteanna idirbhirt. Seiceáil an fearann roimh logáil isteach. Ní theastaíonn do phasfhocal, dintiúir íocaíochta ná comhrá príobháideach sa bhosca cuardaigh ón gcatalóg.",
+            "Coinnigh taifid den rogha, íocaíocht, soiléiriú díoltóra agus riachtanas aontaithe. Má athraíonn rud, iarr nuashonrú i dtaifead an ordaithe. Is fusa ceist a réiteach le stair shoiléir ná teachtaireachtaí scaipthe gan tagairt táirge nó idirbhirt."
+          ]
+        },
+        {
+          "heading": "Déan cinneadh is féidir a mhíniú",
+          "paragraphs": [
+            "Scríobh nóta gairid faoin gcúis a oireann an táirge, an fhianaise, an buiséad iomlán agus na héiginnteachtaí a nglacann tú leo. Má bhraitheann an cinneadh ar cheist mhéide, riochta nó fillte gan freagra, réitigh í roimh íoc.",
+            "Is rogha amháin é chéad ordú beag chun an méid airgid i mbaol a theorannú agus an próiseas á fhoghlaim, ach ní dheimhníonn sé gach díoltóir ná loingsiú eile. Is modh measúnaithe fianaise é seo, ní tuairisc thástála phearsanta ná ráthaíocht gan riosca. Úsáid treoracha ordaithe, QC agus fillte do na chéad seiceálacha eile."
+          ]
+        }
+      ],
+      "checklist": [
+        "Scar róil catalóige, ardáin agus díoltóra.",
+        "Seiceáil an liostú cruinn seachas tóir.",
+        "Meas dáta, ábharthacht agus dreasachtaí léirmheasa.",
+        "Tuig cad nach bhfíoraíonn cigireacht.",
+        "Coinnigh cinneadh taifeadta agus taifead ordaithe."
+      ],
+      "sourceIds": [
+        "service",
+        "qc",
+        "buying",
+        "returns"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 522
+    }
+  ]
+}

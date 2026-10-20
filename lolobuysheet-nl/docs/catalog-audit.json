@@ -1,0 +1,40 @@
+{
+  "checkedAt": "2026-10-20T07:20:12.449Z",
+  "sourceAllPages": 110,
+  "sourceAllCount": 6550,
+  "categoryUnionCount": 6568,
+  "missing": [
+    "6053",
+    "5988",
+    "2279",
+    "1193"
+  ],
+  "extra": [
+    "6189",
+    "6188",
+    "5994",
+    "5993",
+    "5780",
+    "5779",
+    "5643",
+    "5642",
+    "5462",
+    "5461",
+    "5282",
+    "5281",
+    "5102",
+    "5101",
+    "4384",
+    "4383",
+    "4382",
+    "4381",
+    "4380",
+    "4379",
+    "4018",
+    "4017"
+  ],
+  "finalUnionCount": 6572,
+  "missingFromFinalUnion": [],
+  "resolution": "Crawl all category pages AND All Products; retain their deduplicated union. The four All Products-only records were added; 22 category-only source records were retained.",
+  "completeSourcePages": 226
+}

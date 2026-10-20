@@ -1,0 +1,1131 @@
+{
+  "ui": {
+    "register": "Ir a LoloBuy",
+    "language": "Idioma",
+    "preview": "Vista previa del diseño",
+    "previewNote": "Un primer vistazo a lolobuysheet.nl",
+    "eyebrow": "BUENOS HALLAZGOS. MENOS DESPLAZAMIENTOS.",
+    "hero1": "Tu próximo hallazgo.",
+    "hero2": "Una hoja de productos.",
+    "intro": "Explora la hoja de productos de LoloBuy. Descubre ropa, zapatillas y accesorios, compara los precios de origen y abre tu próximo hallazgo en LoloBuy.",
+    "search": "Buscar en todo el catálogo…",
+    "searchButton": "Buscar productos",
+    "photo": "Búsqueda por imagen",
+    "popular": "Explorar:",
+    "tagline": "Un catálogo. Tu próximo descubrimiento.",
+    "source": "Productos de cnfanssp.com",
+    "independent": "Sitio independiente de descubrimiento de productos para LoloBuy",
+    "browse": "Explora la hoja de productos",
+    "browseSub": "Un poco menos de búsqueda. Muchos más hallazgos.",
+    "all": "Todos los productos",
+    "sort": "Ordenar por",
+    "count": "productos",
+    "view": "Ver producto",
+    "buy": "Abrir en LoloBuy",
+    "details": "Detalles del producto",
+    "previous": "Anterior",
+    "next": "Siguiente",
+    "page": "Página",
+    "empty": "No hay productos que coincidan con tu búsqueda.",
+    "reset": "Borrar filtros",
+    "sourceSearch": "Buscar en todo el catálogo de origen",
+    "snapshot": "Catálogo en directo de cnfanssp.com. Los precios en CNY no incluyen gastos de envío ni de servicio. Consulta las opciones actuales y el presupuesto final en LoloBuy.",
+    "howTitle": "Del descubrimiento a abrir el paquete.",
+    "howSub": "¿Es tu primera vez en LoloBuy? Empieza por estos tres pasos.",
+    "guides": "Una pequeña guía ayuda mucho.",
+    "guidesSub": "Lo que conviene saber antes de tu primer pedido.",
+    "read": "Leer guía",
+    "allGuides": "Todas las guías",
+    "cta": "¿Has encontrado tu próximo favorito?",
+    "ctaSub": "Ábrelo en LoloBuy y hazlo tuyo.",
+    "ctaButton": "Explorar todos los productos",
+    "footer": "Un sitio independiente para descubrir productos. No somos la web oficial de LoloBuy. Las fichas y fotografías proceden de cnfanssp.com. Las compras se completan en LoloBuy.",
+    "back": "Volver a la hoja de productos",
+    "sourceListing": "Ficha original de origen",
+    "seller": "Ficha del vendedor",
+    "sourcePrice": "Precio de origen · CNY",
+    "productId": "ID de producto del vendedor",
+    "gallery": "Fotos de la ficha",
+    "qc": "Fotos de control de calidad",
+    "qcNote": "La fuente ofrece fotos de la ficha de este artículo. No son fotos verificadas de control de calidad del almacén. Revisa el control de calidad de tu propio pedido de LoloBuy antes del envío.",
+    "priceNote": "Solo el precio del artículo. Confirma las existencias, opciones y gastos de envío y servicio actuales en LoloBuy antes de pedir.",
+    "photoTitle": "Encuéntralo con una foto.",
+    "photoIntro": "Utiliza el catálogo de origen para encontrar y comparar productos.",
+    "photoState": "Búsqueda por imagen en la fuente",
+    "photoNote": "No se ha verificado ningún servicio público de búsqueda por imagen en cnfanssp.com. No aceptamos fotos hasta que esté disponible el servicio de origen.",
+    "browseInstead": "Explorar productos",
+    "faqTitle": "LoloBuy: respuestas antes de pedir.",
+    "faqIntro": "Investigado a partir de las páginas oficiales de ayuda de LoloBuy. Cuando las páginas oficiales difieren, la respuesta explica qué hay que comprobar.",
+    "guideLabel": "LA GUÍA PRÁCTICA",
+    "guideTitle": "Tu primer pedido en LoloBuy, explicado.",
+    "guideIntro": "Desde encontrar un producto hasta revisarlo en el almacén: un punto de partida práctico.",
+    "updated": "Revisado en octubre de 2026",
+    "related": "Más por descubrir",
+    "home": "Inicio",
+    "aboutPhotos": "Imágenes de la ficha de origen",
+    "catalogLive": "Catálogo de origen en directo",
+    "catalogCached": "Se muestra la última copia completa del catálogo de origen.",
+    "catalogLoading": "Actualizando el catálogo de origen…",
+    "catalogError": "La fuente no está disponible temporalmente. Vuelve a intentarlo o abre el catálogo original.",
+    "retry": "Reintentar",
+    "loading": "Cargando…",
+    "productError": "No se ha podido cargar este producto. Vuelve a intentarlo o consulta la ficha original.",
+    "pageOf": "de",
+    "jump": "Ir a la página",
+    "go": "Ir",
+    "articlesLabel": "Artículos",
+    "articlesTitle": "Conocimientos para comprar en LoloBuy, en detalle.",
+    "articlesIntro": "Diez guías prácticas investigadas a partir de la ayuda oficial de LoloBuy. Encuentra productos, revisa el control de calidad, calcula tu presupuesto y planifica el envío con información más clara.",
+    "articleSources": "Fuentes oficiales",
+    "reviewed": "Revisado el 20 de octubre de 2026",
+    "readArticle": "Leer artículo",
+    "allArticles": "Todos los artículos",
+    "contents": "En esta página",
+    "checklist": "Lista de comprobación práctica",
+    "summary": "De un vistazo",
+    "reading": "min de lectura",
+    "faqSearch": "Buscar preguntas…",
+    "noQuestions": "No hay preguntas coincidentes.",
+    "officialHelp": "Leer las indicaciones oficiales",
+    "skip": "Saltar al contenido",
+    "menu": "Menú",
+    "close": "Cerrar",
+    "languageSearch": "Elige tu idioma",
+    "catalogNote": "Los precios y la disponibilidad pueden cambiar.",
+    "articleFooter": "Orientación editorial independiente. Consulta las condiciones de tu pedido antes de pagar o enviarlo.",
+    "notFound": "Producto no encontrado",
+    "showMore": "Mostrar todo",
+    "findSteps": "ENCUENTRA. REVISA. PIDE.",
+    "nextFind": "EL PRÓXIMO HALLAZGO ES TUYO.",
+    "liveLabel": "Actualizado desde la fuente",
+    "faqCount": "respuestas investigadas",
+    "catalogue": "Catálogo",
+    "nav": [
+      "Hoja de productos",
+      "Cómo funciona",
+      "Guías",
+      "Artículos",
+      "Preguntas frecuentes"
+    ],
+    "sorts": [
+      "Destacados",
+      "Más recientes",
+      "Más vistos",
+      "Precio: de menor a mayor",
+      "Precio: de mayor a menor"
+    ],
+    "footerLinks": [
+      "Hoja de productos",
+      "Guía de compra",
+      "Búsqueda por imagen",
+      "Preguntas frecuentes"
+    ],
+    "categories": {
+      "shoes": "Calzado",
+      "hoodies": "Sudaderas",
+      "tshirts": "Camisetas",
+      "jackets": "Chaquetas",
+      "pants": "Pantalones y shorts",
+      "headwear": "Gorras y sombreros",
+      "accessories": "Accesorios",
+      "sets": "Conjuntos cortos",
+      "electronics": "Electrónica",
+      "other": "Otros artículos",
+      "jerseys": "Camisetas deportivas"
+    },
+    "steps": [
+      [
+        "01",
+        "Encuentra algo que te guste",
+        "Explora las categorías y revisa la ficha original, la talla y las fotos del producto."
+      ],
+      [
+        "02",
+        "Ábrelo en LoloBuy",
+        "Utiliza el enlace del producto para elegir las opciones y revisar el precio actual."
+      ],
+      [
+        "03",
+        "Revisa antes del envío",
+        "Sigue el proceso de almacén de LoloBuy, revisa el control de calidad disponible y elige el envío."
+      ]
+    ]
+  },
+  "faqs": [
+    {
+      "id": "what-is-lolobuy",
+      "category": "Primeros pasos",
+      "question": "¿Qué hace LoloBuy?",
+      "answer": "LoloBuy actúa como agente de compras: proporcionas una ficha del vendedor, eliges el artículo, pagas la compra y el envío dentro de China y después revisas la fase de almacén antes de organizar el envío internacional. El vendedor suministra los productos. Un enlace o una entrada en la hoja de productos es un punto de partida para comprobar el pedido, no una confirmación de existencias actuales.",
+      "sourceIds": [
+        "buying",
+        "service"
+      ]
+    },
+    {
+      "id": "place-order",
+      "category": "Primeros pasos",
+      "question": "¿Cómo se hace un pedido a través de LoloBuy?",
+      "answer": "Pega el enlace original del producto en LoloBuy, revisa la ficha importada y elige el color, la talla y la cantidad exactos. Comprueba el precio del artículo, el envío nacional y los servicios solicitados antes de pagar. La guía oficial de LoloBuy distingue después las fases de compra, inspección del almacén y solicitud de envío internacional.",
+      "sourceIds": [
+        "buying"
+      ]
+    },
+    {
+      "id": "manual-order",
+      "category": "Primeros pasos",
+      "question": "¿Qué ocurre si LoloBuy no puede leer el enlace de mi producto?",
+      "answer": "La guía oficial de compra describe un formulario manual de pedido cuando la importación automática no está disponible. Introduce los datos reales del producto y las opciones elegidas y revisa el pedido antes de enviarlo. No sustituyas el ID del artículo del marketplace por el número interno de página de una hoja de productos: identifican registros distintos.",
+      "sourceIds": [
+        "buying"
+      ]
+    },
+    {
+      "id": "domestic-delivery",
+      "category": "Pedidos y pagos",
+      "question": "¿Pueden varios artículos compartir un mismo gasto de envío dentro de China?",
+      "answer": "Las preguntas frecuentes de LoloBuy sobre envío nacional describen un único cargo cuando los productos del mismo vendedor se envían como pedido y se pagan juntos. Un pedido especialmente grande o pesado puede requerir un pago adicional de transporte. Esto no combina automáticamente los cargos de distintos vendedores ni incluye el envío internacional.",
+      "sourceIds": [
+        "domestic"
+      ]
+    },
+    {
+      "id": "seller-promotion",
+      "category": "Pedidos y pagos",
+      "question": "¿Cómo solicito que LoloBuy aplique un descuento del vendedor?",
+      "answer": "Anota la promoción real o la oferta de envío nacional gratuito en los comentarios del pedido para que el agente pueda verificarla con el vendedor. La ayuda oficial también indica que puedes usar Order Enquiry si omitiste la promoción. El descuento debe comprobarse; una hoja de productos no puede garantizar que una oferta antigua siga vigente.",
+      "sourceIds": [
+        "promotions"
+      ]
+    },
+    {
+      "id": "change-order",
+      "category": "Pedidos y pagos",
+      "question": "¿Puedo cambiar la talla o el color después de pedir?",
+      "answer": "LoloBuy indica que puede negociar un cambio antes de que el vendedor despache el artículo. Después del despacho, la ayuda describe como alternativa una posible devolución desde el almacén y un nuevo pedido, con gastos de transporte de devolución. Envía la solicitud cuanto antes en el pedido correspondiente y espera su aceptación antes de dar por hecho el cambio.",
+      "sourceIds": [
+        "changes"
+      ]
+    },
+    {
+      "id": "confirmation-message",
+      "category": "Pedidos y pagos",
+      "question": "¿Qué significa Pending for Confirmation?",
+      "answer": "Algunos detalles del pedido requieren tu confirmación. Lee y responde al mensaje asociado. La ayuda oficial dirige las consultas sobre artículos comprados a Shopping Agent Order y las de la fase de almacén a My Warehouse, donde pueden pedirte que aceptes o devuelvas el artículo. Los nombres de los menús pueden variar; esperar una actualización del seguimiento no responde a la solicitud.",
+      "sourceIds": [
+        "confirmation",
+        "confirmation-path"
+      ]
+    },
+    {
+      "id": "received-in-stock",
+      "category": "Almacén y control de calidad",
+      "question": "¿Qué diferencia hay entre Received e In Stock?",
+      "answer": "La guía oficial de estados utiliza Received cuando el almacén ha recibido el paquete del vendedor y está realizando la inspección. In Stock significa que el control de calidad ha terminado y los artículos están almacenados en tu inventario. La recepción en el almacén no implica que tu revisión de QC o el envío internacional hayan finalizado.",
+      "sourceIds": [
+        "status"
+      ]
+    },
+    {
+      "id": "qc-checks",
+      "category": "Almacén y control de calidad",
+      "question": "¿Qué comprueba el control de calidad estándar?",
+      "answer": "La inspección estándar de LoloBuy comprueba detalles visibles del pedido, como estilo, cantidad, color, talla, modelo y daños evidentes. Revisa conjuntamente el servicio de inspección contratado y las fotos de tu pedido. Una revisión visual no garantiza autenticidad, ajuste preciso ni durabilidad a largo plazo.",
+      "sourceIds": [
+        "qc"
+      ]
+    },
+    {
+      "id": "inspection-exclusions",
+      "category": "Almacén y control de calidad",
+      "question": "¿Se comprueban completamente los productos precintados y los aparatos electrónicos?",
+      "answer": "No. Las normas de inspección describen excepciones para productos precintados y excluyen expresamente las pruebas de autenticidad, funcionamiento y calidad de aparatos electrónicos profesionales y productos relacionados. Con la opción sin inspección, el almacén comprueba las restricciones, pero no verifica el producto ni proporciona fotos QC. Revisa el servicio elegido antes de basarte en un resultado de inspección.",
+      "sourceIds": [
+        "qc"
+      ]
+    },
+    {
+      "id": "qc-photos",
+      "category": "Almacén y control de calidad",
+      "question": "¿Puedo pedir más fotos de control de calidad?",
+      "answer": "La descripción del servicio contempla fotos adicionales a petición; la página del servicio fotográfico también ofrece Secondary Quality Inspection si se omitió la inspección antes del almacenamiento. Las páginas oficiales dan cifras distintas para las fotos estándar. Comprueba el servicio elegido y solicita la vista o medida concreta que falta, sin asumir que todos los pedidos incluyen el mismo número de imágenes.",
+      "sourceIds": [
+        "service",
+        "photos",
+        "qc"
+      ]
+    },
+    {
+      "id": "storage-period",
+      "category": "Almacén y control de calidad",
+      "question": "¿Cuánto tiempo pueden permanecer los artículos en el almacén de LoloBuy?",
+      "answer": "La página específica de almacenamiento y la guía actual de estados indican 180 días para productos almacenados ordinarios, mientras que una guía de compra anterior todavía indica 90. Los paquetes anómalos sin identificar tienen normas distintas. Comprueba el plazo que aparece para tu artículo y organiza el envío o cualquier ampliación antes de su vencimiento; no te bases solo en la guía antigua.",
+      "sourceIds": [
+        "storage",
+        "status",
+        "buying"
+      ]
+    },
+    {
+      "id": "consolidate",
+      "category": "Envíos y seguimiento",
+      "question": "¿Puedo enviar varias compras en un solo paquete?",
+      "answer": "La guía de compra describe cómo seleccionar artículos almacenados en My Warehouse y solicitar su envío conjunto. Comprueba que todos hayan superado las revisiones necesarias y que la ruta disponible acepte el paquete resultante. Agrupar artículos cambia el paquete embalado; no garantiza un coste total de transporte más bajo.",
+      "sourceIds": [
+        "buying"
+      ]
+    },
+    {
+      "id": "remove-packaging",
+      "category": "Envíos y seguimiento",
+      "question": "¿Puede LoloBuy retirar las cajas antes del envío?",
+      "answer": "El servicio Package Removal puede seleccionarse al solicitar el envío. Su descripción oficial indica que se conserva el embalaje protector necesario. Si necesitas las cajas originales para un regalo, almacenamiento o una posible devolución, valora esto antes de retirarlas. El embalaje final y el coste del transporte dependen de los productos y del envío elegido.",
+      "sourceIds": [
+        "packaging"
+      ]
+    },
+    {
+      "id": "shipping-price",
+      "category": "Envíos y seguimiento",
+      "question": "¿Por qué puede diferir el coste final del envío de la estimación?",
+      "answer": "El transporte inicial se calcula con el peso estimado y el destino y la ruta elegidos. El embalaje puede cambiar el peso y las dimensiones, y el cargo del proveedor logístico determina el ajuste. LoloBuy describe devoluciones por exceso de pago o solicitudes de pagos adicionales si el coste real difiere. Comprueba el presupuesto final del paquete y el mensaje de tu cuenta.",
+      "sourceIds": [
+        "weight",
+        "freight-balance"
+      ]
+    },
+    {
+      "id": "volumetric-weight",
+      "category": "Envíos y seguimiento",
+      "question": "¿Qué es el peso volumétrico?",
+      "answer": "Convierte las dimensiones del paquete en un peso utilizado para facturar productos voluminosos. La ayuda de LoloBuy distingue fórmulas según la ruta e indica que el peso facturable puede ser el mayor entre el real y el volumétrico. Utiliza el divisor y las reglas de redondeo de tu ruta, no una afirmación universal de precio por kilogramo.",
+      "sourceIds": [
+        "weight"
+      ]
+    },
+    {
+      "id": "supplemental-payment",
+      "category": "Envíos y seguimiento",
+      "question": "¿Qué hago si recibo un aviso de pago adicional del envío?",
+      "answer": "Abre el paquete correspondiente y revisa el cargo modificado y la solicitud de confirmación. Las normas de pago adicional de LoloBuy utilizan distintos umbrales e incluyen situaciones en las que el paquete puede quedar retenido o cancelarse. Responde dentro del plazo mostrado para tu paquete y paga el saldo aceptado; no consideres definitiva la estimación inicial.",
+      "sourceIds": [
+        "freight-balance"
+      ]
+    },
+    {
+      "id": "tracking",
+      "category": "Envíos y seguimiento",
+      "question": "¿Dónde puedo seguir mi paquete internacional?",
+      "answer": "La guía oficial de compra dirige a My LoloBuy → Parcels después del despacho. La guía de estados distingue Packed de Shipped: un paquete embalado puede estar pendiente de confirmar el peso final, mientras que Shipped significa que tiene número de seguimiento y se ha entregado al transportista. Consulta el último evento del transportista además del estado de la cuenta.",
+      "sourceIds": [
+        "buying",
+        "status"
+      ]
+    },
+    {
+      "id": "cancellation",
+      "category": "Devoluciones y posventa",
+      "question": "¿Puedo cancelar un pedido antes de que llegue al almacén?",
+      "answer": "La cancelación depende de la fase actual del pedido. Utiliza su opción de cancelación o devolución/reembolso. Una vez comprado el artículo, puede ser necesaria la confirmación del vendedor; enviar una solicitud no equivale a tener un reembolso aprobado. Revisa la respuesta del pedido antes de realizar otra compra que lo sustituya.",
+      "sourceIds": [
+        "cancellation",
+        "refunds"
+      ]
+    },
+    {
+      "id": "eligible-return",
+      "category": "Devoluciones y posventa",
+      "question": "¿Qué cubre la norma de devolución de cinco días de LoloBuy?",
+      "answer": "La norma específica describe un plazo de solicitud de 120 horas a partir de la hora siguiente al estado Stocked in para productos elegibles. Siguen aplicándose el acuerdo del vendedor, el estado del artículo y los requisitos de embalaje. Una devolución sin defecto puede implicar ambos trayectos de envío nacional y una tasa de gestión. Comprueba cuanto antes la elegibilidad y la página real de solicitud.",
+      "sourceIds": [
+        "returns"
+      ]
+    },
+    {
+      "id": "refund-destination",
+      "category": "Devoluciones y posventa",
+      "question": "¿Dónde se recibe un reembolso aprobado?",
+      "answer": "La ayuda sobre devoluciones describe, por lo general, el abono de reembolsos aprobados al saldo de la cuenta LoloBuy. También recoge una excepción limitada de devolución al método original para determinados pedidos de PayPal pendientes de aprobación. No es una promesa de que todos los reembolsos lleguen directamente a una tarjeta bancaria ni prueba de que todos los métodos de pago estén disponibles actualmente.",
+      "sourceIds": [
+        "refunds"
+      ]
+    },
+    {
+      "id": "delivery-problem",
+      "category": "Devoluciones y posventa",
+      "question": "¿Qué hago si el paquete entregado está dañado o es incorrecto?",
+      "answer": "Abre el paquete afectado en My LoloBuy → Parcels y utiliza Apply After-sales. Describe el problema y conserva fotos claras del paquete y del producto. El artículo oficial contiene plazos de reclamación contradictorios, incluida una advertencia más temprana; comunica el problema inmediatamente y consigue una confirmación específica para tu caso en lugar de esperar un plazo genérico.",
+      "sourceIds": [
+        "claims"
+      ]
+    },
+    {
+      "id": "sizing",
+      "category": "Elección de productos",
+      "question": "¿Cómo debo elegir la talla de ropa o calzado?",
+      "answer": "La referencia de tallas de LoloBuy advierte que los criterios pueden variar entre tiendas. Compara la tabla de medidas del vendedor, las unidades y la opción elegida con tus medidas o con una prenda que te quede bien. Sus tablas de conversión son orientativas, no una garantía de que la misma etiqueta corresponda en todos los vendedores. Pregunta por las medidas que falten antes de pedir.",
+      "sourceIds": [
+        "sizing"
+      ]
+    },
+    {
+      "id": "1688",
+      "category": "Elección de productos",
+      "question": "¿Los pedidos de 1688 siguen las mismas normas de compra e inspección?",
+      "answer": "La guía oficial de 1688 exige respetar la cantidad mínima del vendedor; los precios y el envío nacional pueden variar según la cantidad. Las normas de inspección distinguen los productos de tipo A con muestreo de los de tipo B sin QC estándar. Confirma cantidad, alcance de inspección y condiciones de devolución antes de pagar, sin dar por hecho el tratamiento de un pedido minorista.",
+      "sourceIds": [
+        "wholesale",
+        "qc"
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "slug": "using-lolobuy-spreadsheet",
+      "title": "Cómo usar una hoja de productos de LoloBuy: convierte un enlace en una selección útil",
+      "description": "Encuentra productos por categoría, compara la ficha exacta y conserva los detalles necesarios antes de abrir un artículo en LoloBuy.",
+      "keyword": "hoja de productos lolobuy",
+      "category": "Primeros pasos",
+      "summary": "Una hoja útil te ayuda a acotar la búsqueda. Una selección útil conserva el artículo exacto, la opción y las preguntas pendientes que necesitarás al pedir.",
+      "sections": [
+        {
+          "heading": "Empieza por una decisión de compra, no por una lista interminable",
+          "paragraphs": [
+            "Una hoja de productos de LoloBuy es una herramienta para descubrir artículos. Permite explorar categorías, ver imágenes y seguir una ficha hasta el siguiente paso. No significa que el editor del catálogo haya comprado cada producto, probado al vendedor o reservado tu talla. Trata cada entrada como una pista que debes comprobar.",
+            "Antes de buscar, anota el tipo de artículo que necesitas, las medidas importantes y un presupuesto aproximado para el producto. Buscar una sudadera negra con cremallera resulta más útil que guardar cualquier enlace de ropa atractivo. Una pregunta concreta también facilita reconocer cuándo una ficha carece de información esencial."
+          ]
+        },
+        {
+          "heading": "Conserva la identidad original del producto",
+          "paragraphs": [
+            "El número de la dirección de una página del catálogo puede ser un identificador local. Puede diferir del ID del marketplace utilizado en el enlace de compra. No cambies los números manualmente para que el enlace parezca correcto. Usa el botón correspondiente y compara el artículo que se abre con el que querías comprar.",
+            "Guarda la URL original del vendedor junto con la opción elegida. Una captura conserva una vista útil, pero sirve menos si no sabes a qué vendedor, talla o color pertenece. Si un enlace abre otro producto o una ficha vacía, detente y compruébalo antes de continuar."
+          ]
+        },
+        {
+          "heading": "Compara configuraciones equivalentes",
+          "paragraphs": [
+            "Un precio inicial puede corresponder a la opción más barata, a un solo accesorio o a otra cantidad. Compara la misma configuración entre ofertas. Un conjunto de dos piezas y una prenda superior por separado no permiten una comparación de precios válida, aunque sus miniaturas se parezcan.",
+            "Comprueba si la galería muestra el color seleccionado y si existe una tabla de tallas. Las mismas fotografías en distintos vendedores no demuestran una fabricación o unas existencias idénticas. Registra las pruebas disponibles y deja visible qué información importante sigue sin conocerse."
+          ],
+          "bullets": [
+            "Artículo exacto y URL del vendedor",
+            "Talla, color y cantidad seleccionados",
+            "Precio actual de esa opción",
+            "Medidas o referencia de la tabla de tallas",
+            "Una pregunta pendiente antes de pedir"
+          ]
+        },
+        {
+          "heading": "Continúa mediante el proceso oficial de compra",
+          "paragraphs": [
+            "La guía de compra de LoloBuy describe cómo enviar un enlace de marketplace, seleccionar las opciones disponibles y pagar el artículo y la entrega nacional. También describe un formulario manual cuando no puede recuperarse automáticamente la información del producto. Abrir correctamente un enlace solo inicia la revisión del pedido.",
+            "En la página oficial del producto, vuelve a comprobar la imagen, el texto de las opciones y la cantidad. Un catálogo no puede garantizar existencias actuales ni conservar una elección que no hayas seleccionado al pagar. Expresa cualquier requisito de forma concreta para que el agente pueda actuar, como el nombre exacto del color o una pregunta sobre medidas."
+          ]
+        },
+        {
+          "heading": "Distingue las fotos de descubrimiento de tu propio QC",
+          "paragraphs": [
+            "La galería del vendedor explica la oferta. Una imagen histórica de almacén puede mostrar el artículo de otra persona. Las imágenes de inspección de tu propio pedido son las que debes revisar antes de enviarlo al extranjero. Estos tres tipos de imágenes responden a preguntas diferentes y no son intercambiables.",
+            "Conserva tu selección junto con el pedido. Cuando el artículo llegue al almacén, compara la opción anotada con la etiqueta de talla, el color y la cantidad visibles. Es más fácil explicar una discrepancia cuando tienes juntos la selección original y el número de pedido."
+          ]
+        },
+        {
+          "heading": "Haz que tu selección siga siendo útil después de comprar",
+          "paragraphs": [
+            "Guarda solo los mejores candidatos y anota por qué superaron la comparación. Por ejemplo, una sudadera puede tener una tabla de medidas más clara y otra una duda pendiente sobre el tejido. Así conviertes un grupo de enlaces en una decisión que puedes revisar sin empezar de nuevo.",
+            "Antes de comprar, lee las guías de pedidos y presupuesto. Antes de solicitar el envío, consulta las de QC y transporte. La hoja de productos resulta más útil cuando conecta estas etapas en lugar de presentar el precio del artículo como el coste completo del pedido entregado."
+          ]
+        }
+      ],
+      "checklist": [
+        "Guarda la URL de origen y la opción exactas.",
+        "Compara cantidades y configuraciones equivalentes.",
+        "Resuelve las medidas que falten antes de pagar.",
+        "Comprueba la ficha importada en LoloBuy.",
+        "Revisa el QC de tu pedido antes del envío."
+      ],
+      "sourceIds": [
+        "buying",
+        "qc"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 727
+    },
+    {
+      "slug": "how-to-order-on-lolobuy",
+      "title": "Cómo pedir en LoloBuy: enlaces, opciones y fases de pago",
+      "description": "Sigue el proceso desde un enlace de marketplace hasta la inspección del almacén y la solicitud independiente del paquete internacional.",
+      "keyword": "cómo pedir en lolobuy",
+      "category": "Pedidos",
+      "summary": "Comprueba el artículo antes de pagar, las pruebas del almacén antes de enviar y el presupuesto del paquete antes del despacho. Cada etapa responde a una pregunta distinta.",
+      "sections": [
+        {
+          "heading": "Empieza en la web oficial",
+          "paragraphs": [
+            "Utiliza la web oficial de LoloBuy para registrarte, acceder a tu cuenta y pagar. Este catálogo independiente ayuda a descubrir productos; no recoge tu contraseña ni procesa tu pedido. Comprueba el destino al abrir un producto y mantén las conversaciones de compra asociadas al pedido correspondiente.",
+            "La guía oficial indica que se empieza con un enlace de producto de un marketplace chino compatible. El artículo seleccionado lo suministra el vendedor de esa ficha. Esta distinción importa porque el servicio de compra y el vendedor no controlan las mismas partes de la transacción."
+          ]
+        },
+        {
+          "heading": "Comprueba el producto importado",
+          "paragraphs": [
+            "Pega el enlace original o utiliza el botón correspondiente de LoloBuy del catálogo. Compara la página resultante con la fuente antes de elegir opciones. Comprueba imagen principal, nombre, información disponible del vendedor, color, talla y cantidad seleccionados. No te bases únicamente en la imagen.",
+            "Si aparece un formulario manual de agente de compras, la guía oficial indica que introduzcas los datos manualmente. Complétalo con la ficha real, sin adivinar las opciones que falten. Si un dato necesario no está claro, acláralo mediante la consulta del pedido antes de pedir al agente que continúe."
+          ],
+          "bullets": [
+            "El producto coincide con la URL original",
+            "El texto de la opción coincide con el color y la talla previstos",
+            "La cantidad y el precio unitario corresponden a la misma configuración",
+            "Cualquier requisito especial está escrito con claridad"
+          ]
+        },
+        {
+          "heading": "Entiende el primer pago",
+          "paragraphs": [
+            "El proceso oficial separa el artículo y la entrega nacional en China del posterior paquete internacional. Revisa el primer pago línea por línea. Elegir un destino durante la compra no significa que el total del artículo incluya todos los cargos necesarios para llevarlo hasta allí.",
+            "Comprueba los métodos de pago, las monedas y los servicios opcionales en el proceso de pago actual. Una lista general de ayuda no promete que todos los métodos estén disponibles para tu cuenta o pedido. Guarda el justificante y compáralo con el estado del pedido en lugar de volver a pagar porque la página tarde en actualizarse."
+          ]
+        },
+        {
+          "heading": "Responde a las preguntas del pedido",
+          "paragraphs": [
+            "LoloBuy utiliza el estado «Pending for Confirmation» cuando hay información que verificar. Su ayuda dirige al comprador a las instrucciones del pedido. Lee la pregunta concreta y responde a ese asunto: puede determinar si el equipo de compras puede continuar.",
+            "Las indicaciones oficiales de modificación distinguen entre artículos no despachados y artículos ya enviados. Antes del despacho, el agente puede consultar un cambio al vendedor; después, quizá sea necesaria una devolución y un pedido nuevo. Un cambio solicitado no está completado hasta que lo confirme el registro del pedido."
+          ]
+        },
+        {
+          "heading": "Revisa la llegada y la inspección",
+          "paragraphs": [
+            "La llegada al almacén y la inspección completada son hitos distintos. Localiza el artículo en el almacén y compara fotos y opción registrada con tu compra. Comprueba primero la identidad y después los detalles visibles importantes. Resuelve cualquier discrepancia evidente antes de incluirlo en un paquete internacional.",
+            "No supongas que todos los productos reciben la misma inspección. La política oficial establece límites para productos precintados y un tratamiento especial de algunos pedidos de 1688. Si necesitas una medida o vista concreta, comprueba su disponibilidad para tu pedido; una imagen QC general no demuestra todo."
+          ]
+        },
+        {
+          "heading": "Decide el envío del paquete por separado",
+          "paragraphs": [
+            "El proceso oficial indica seleccionar artículos almacenados, introducir los datos de entrega y elegir entre las opciones de transporte disponibles. Revisa conjuntamente destino, restricciones, embalaje y depósito de transporte. Un artículo comprado no se convierte automáticamente en un paquete internacional listo para salir.",
+            "El coste final puede cambiar tras embalar y medir la logística. Consulta el registro del paquete por si hay ajustes o solicitudes de confirmación. Después del despacho, usa la sección de paquetes para el seguimiento, conserva los números de pedido y revisa pronto el contenido cuando llegue."
+          ]
+        }
+      ],
+      "checklist": [
+        "Confirma el producto original y la opción exacta.",
+        "Revisa los cargos del artículo y la entrega nacional.",
+        "Responde a las confirmaciones pendientes.",
+        "Comprueba las fotos de almacén y los problemas sin resolver.",
+        "Revisa el presupuesto separado del paquete internacional."
+      ],
+      "sourceIds": [
+        "buying",
+        "confirmation",
+        "changes",
+        "qc",
+        "freight-balance"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 697
+    },
+    {
+      "slug": "lolobuy-qc-photos",
+      "title": "Fotos QC de LoloBuy: lista práctica de inspección antes del envío",
+      "description": "Distingue las fotos del vendedor de tu propia inspección de almacén y comprueba identidad, estado visible y detalles que necesitan más pruebas.",
+      "keyword": "fotos qc lolobuy",
+      "category": "Control de calidad",
+      "summary": "Empieza por el artículo y la opción que pediste. Después utiliza las vistas disponibles para decidir qué está claro, qué necesita otra foto y qué debe resolverse antes del despacho.",
+      "sections": [
+        {
+          "heading": "Identifica las pruebas que estás mirando",
+          "paragraphs": [
+            "Una galería de producto forma parte de la oferta del vendedor. Una foto QC de referencia puede mostrar un pedido anterior. Tus fotos de almacén corresponden al artículo recibido para tu compra. Distingue estas categorías al decidir, especialmente si un producto tiene varios colores, versiones o tallas.",
+            "Empieza relacionando número de pedido, producto y opción seleccionada. Una foto detallada de otra versión no aporta tranquilidad útil. Si no puedes relacionar las imágenes con el artículo de tu almacén, pide esa correspondencia antes de juzgar su aspecto."
+          ]
+        },
+        {
+          "heading": "Comprueba la identidad antes de los detalles pequeños",
+          "paragraphs": [
+            "Revisa primero talla, color, cantidad y modelo. Busca etiquetas coherentes y vistas del mismo artículo. Un conjunto de fotos puede resultar atractivo y aun mostrar una talla equivocada o un conjunto incompleto. Compara lo visible con la selección guardada, sin confiar en la memoria.",
+            "En un par de zapatos, comprueba ambos y las marcas de talla visibles. En una prenda, revisa color y talla etiquetada. En un bolso o conjunto de accesorios, comprueba que se vean los componentes previstos. Son pasos de revisión prácticos, no una garantía de que se hayan inspeccionado todos los detalles ocultos."
+          ]
+        },
+        {
+          "heading": "Utiliza una lista adecuada a la categoría",
+          "paragraphs": [
+            "En ropa, son útiles las vistas de la forma general, delantero y trasero, costuras, estampado o bordado y las zonas cuyo ajuste depende de una medida. En calzado, inspecciona el par junto, la construcción visible y la talla pedida. En bolsos, cierres, asas e interiores responden a preguntas distintas.",
+            "Anota solo los detalles que influyen en tu decisión. Una lista genérica larga puede distraer de la única medida que falta o del cierre dañado que importa. Si el frontal se ve bien pero falta la parte trasera, solicita esa vista en lugar de otra foto general desde el mismo ángulo."
+          ],
+          "bullets": [
+            "Confirma la identidad y la opción seleccionada",
+            "Inspecciona el estado y la construcción visibles",
+            "Compara las medidas solicitadas",
+            "Separa las vistas que faltan de los defectos observados"
+          ]
+        },
+        {
+          "heading": "Entiende los límites del servicio estándar",
+          "paragraphs": [
+            "La página de inspección estándar de LoloBuy describe comprobaciones de aspecto y exclusiones. En particular, los artículos precintados no siempre se abren y determinados productos profesionales o electrónicos no se comprueban en autenticidad, funcionamiento o calidad. Algunos pedidos de 1688 siguen muestreo u otras reglas.",
+            "Las páginas oficiales no coinciden en una cantidad universal de fotos: la página de inspección y la descripción general del servicio indican cifras diferentes. Comprueba el servicio asociado a tu pedido en lugar de asumir un número exacto. Lo importante es si las pruebas disponibles cubren la cuestión que necesitas decidir."
+          ]
+        },
+        {
+          "heading": "Pide una vista adicional concreta",
+          "paragraphs": [
+            "Una solicitud precisa identifica el pedido, la zona que fotografiar y el motivo. Por ejemplo: «Muestra la etiqueta de talla y mide el ancho de pecho de la prenda extendida, de costura a costura». Resulta más claro que preguntar si el artículo es bueno. Comprueba disponibilidad y coste antes de pedir trabajo adicional.",
+            "Utiliza el mismo método de medición que la tabla del vendedor. El ancho de una prenda extendida y el contorno corporal son cantidades distintas. Conserva juntos imagen y medida para no confundir una cifra con la de otra talla o artículo."
+          ]
+        },
+        {
+          "heading": "Toma una decisión documentada",
+          "paragraphs": [
+            "Clasifica los resultados en confirmados, inciertos e inaceptables. Si algo no está claro, pide pruebas. Si el artículo parece diferir del pedido, utiliza el soporte o la devolución correspondiente antes del envío internacional. Conserva una descripción breve del problema y las fotos que lo demuestran.",
+            "Las fotos no prueban todas las propiedades del material, comodidad, durabilidad ni funcionamiento interno. Aprobar el estado visible es una decisión más limitada. Lee las condiciones de devolución mientras el artículo siga en el almacén y no interpretes un QC favorable como una promesa sobre aduanas o entrega internacional."
+          ]
+        }
+      ],
+      "checklist": [
+        "Relaciona las fotos con tu propio pedido.",
+        "Verifica primero talla, color, modelo y cantidad.",
+        "Pide la vista o medida concreta que falta.",
+        "Comprueba el servicio de inspección y sus exclusiones.",
+        "Resuelve los problemas importantes antes de solicitar el paquete."
+      ],
+      "sourceIds": [
+        "qc",
+        "photos",
+        "service",
+        "sizing"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 698
+    },
+    {
+      "slug": "lolobuy-shipping-costs",
+      "title": "Costes de envío de LoloBuy: compara el paquete completo",
+      "description": "Entiende el peso estimado, real y volumétrico y compara las rutas disponibles con el mismo destino, contenido y embalaje.",
+      "keyword": "calculadora de envío lolobuy",
+      "category": "Envíos",
+      "summary": "Una comparación útil de transporte empieza con un paquete bien definido. Esta guía explica los datos y comprobaciones necesarios; no es un presupuesto de envío en directo.",
+      "sections": [
+        {
+          "heading": "Separa el precio del artículo del transporte",
+          "paragraphs": [
+            "El precio junto al producto no es el coste completo entregado. El proceso oficial de LoloBuy separa la compra del artículo y la entrega nacional del posterior depósito del transporte internacional. Puedes estimar un presupuesto antes de comprar, pero el precio del producto por sí solo no permite comparar paquetes de forma definitiva.",
+            "Anota el destino, el contenido previsto y el embalaje que quieres conservar. Un par de zapatos con caja y el mismo par sin ella son decisiones de embalaje distintas. Añadir artículos puede cambiar peso y dimensiones; incluso una compra pequeña puede afectar al presupuesto de varias maneras."
+          ]
+        },
+        {
+          "heading": "Identifica qué peso estás comparando",
+          "paragraphs": [
+            "La guía de pesos de LoloBuy distingue la estimación del peso real del paquete embalado. El registro del artículo en almacén incluye el embalaje original; el paquete final incorpora además la caja exterior y las decisiones de retirada o refuerzo. Estas etapas pueden producir medidas distintas.",
+            "El peso volumétrico refleja el espacio ocupado por el paquete. La guía oficial publica divisores diferentes según la ruta. No apliques un único divisor a todos los transportistas ni supongas que un ejemplo antiguo sea la tarifa actual. Usa las condiciones vigentes de la ruta del paquete que vas a enviar."
+          ],
+          "bullets": [
+            "Destino y código postal",
+            "Restricciones y contenido de los productos",
+            "Peso real del paquete embalado",
+            "Largo, ancho y alto",
+            "Reglas de facturación y servicios incluidos de la ruta"
+          ]
+        },
+        {
+          "heading": "Utiliza los cálculos sin confundirlos con un presupuesto",
+          "paragraphs": [
+            "Solo como ejemplo, un paquete de 40 × 30 × 20 centímetros tiene un volumen de 24.000 centímetros cúbicos. Una ruta hipotética con divisor 6.000 da 4 kilogramos de peso volumétrico; un divisor 5.000 da 4,8 kilogramos. Ninguno de esos cálculos proporciona un precio de envío.",
+            "El ejemplo muestra por qué importa la regla de la ruta. Todavía necesitas peso real, incrementos de facturación, destino y tarifa actual. No elijas por un reclamo de precio «por kilogramo» si el cargo depende de una primera unidad, unidades adicionales o un peso facturable mayor."
+          ]
+        },
+        {
+          "heading": "Compara el mismo paquete entre rutas",
+          "paragraphs": [
+            "Mantén fijos los datos al comparar líneas disponibles. Comprueba contenido aceptado, estimación de tránsito, seguimiento, requisitos de embalaje y protección opcional. Un importe inicial menor no constituye una comparación completa si los servicios o restricciones difieren.",
+            "Trata los plazos estimados como estimaciones. El trabajo de almacén, el movimiento del transportista y los trámites de destino son etapas separadas. Esta guía no promete un plazo universal, una ruta libre de impuestos ni un coste aduanero fijo. Decide con el presupuesto actual y las normas oficiales del destino."
+          ]
+        },
+        {
+          "heading": "Valora las ventajas e inconvenientes del embalaje",
+          "paragraphs": [
+            "La página oficial de retirada de embalaje describe eliminar envoltorios exteriores innecesarios conservando la protección que necesitan los artículos. También desaconseja hacerlo cuando las cajas originales importan para regalos o conservación. Reducir volumen puede ayudar, pero también cuentan la protección y el propósito de la compra.",
+            "Pide una elección de embalaje concreta en lugar de ordenar retirar todo. Compara las medidas finales si están disponibles. Agrupar compras o quitar embalaje no reduce automáticamente el coste en todas las rutas, y un artículo frágil puede necesitar más protección."
+          ]
+        },
+        {
+          "heading": "Vigila el ajuste final",
+          "paragraphs": [
+            "Las indicaciones de pagos adicionales de LoloBuy explican que el transporte estimado se ajusta al cargo real del proveedor logístico. Puede resultar una devolución por exceso de pago o una solicitud de importe adicional. Lee los mensajes del paquete y responde a las solicitudes asociadas a tu envío.",
+            "Conserva juntos la estimación inicial, las medidas facturables finales, los servicios seleccionados y el ajuste. Ese registro facilita entender una diferencia. Presupuesta por separado los posibles cargos de destino y comprueba el total final antes de considerar completado el pedido."
+          ]
+        }
+      ],
+      "checklist": [
+        "Compara rutas para el mismo contenido y destino.",
+        "Comprueba las reglas de peso real y volumétrico.",
+        "Incluye la protección del embalaje en la decisión.",
+        "Distingue las estimaciones de los cargos finales.",
+        "Lee los mensajes de ajuste antes del despacho."
+      ],
+      "sourceIds": [
+        "buying",
+        "weight",
+        "packaging",
+        "freight-balance"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 681
+    },
+    {
+      "slug": "lolobuy-warehouse-consolidation",
+      "title": "Guía del almacén LoloBuy: inspección, almacenamiento y consolidación",
+      "description": "Organiza los artículos almacenados, resuelve las dudas de QC y elige el embalaje pensando en el paquete completo.",
+      "keyword": "almacén lolobuy",
+      "category": "Almacén",
+      "summary": "La fase de almacén permite relacionar el registro de compra con el artículo recibido y decidir cuáles están listos para enviarse juntos.",
+      "sections": [
+        {
+          "heading": "Distingue llegada y preparación para el envío",
+          "paragraphs": [
+            "Un registro de entrega del vendedor significa que un paquete nacional ha llegado a un punto de su recorrido. No demuestra por sí solo que tu artículo esté inspeccionado, correctamente identificado y listo para el despacho internacional. La guía de estados de LoloBuy distingue recepción, inspección e inventario almacenado.",
+            "Usa el registro de almacén como lista de trabajo, no un único mensaje de seguimiento. Conserva número de pedido, opción seleccionada y estado QC de cada artículo. Si llegan varios paquetes de vendedores juntos, esto evita que un producto terminado oculte una duda sobre otro."
+          ]
+        },
+        {
+          "heading": "Crea una pequeña lista de control del almacén",
+          "paragraphs": [
+            "Para cada artículo, anota qué pediste, qué muestra el almacén y qué falta resolver. Bastan cuatro columnas: artículo, opción correcta, decisión de inspección e instrucción de embalaje. El objetivo es mantener visibles las preguntas pendientes antes de formar el paquete.",
+            "Compara las imágenes con la selección original. Una foto que falta y un defecto visible requieren acciones distintas. Ante una duda, solicita las pruebas adecuadas. Ante una discrepancia aparente, explica la diferencia con el número de pedido y valora el procedimiento de devolución aplicable."
+          ],
+          "bullets": [
+            "Pedido y opción exacta",
+            "Recepción en almacén y estado de inspección",
+            "Duda abierta o solicitud de devolución",
+            "Conservar o retirar el embalaje original",
+            "Listo para paquete internacional: sí o no"
+          ]
+        },
+        {
+          "heading": "Comprueba directamente tu plazo de almacenamiento",
+          "paragraphs": [
+            "La documentación oficial contiene información contradictoria: la guía de compra menciona 90 días y las páginas de almacenamiento y estados, 180. La página de almacenamiento también distingue los paquetes anómalos sin identificar. Estas diferencias no deben reducirse a una única promesa incondicional.",
+            "Comprueba la información asociada a tu artículo y aclara cualquier discrepancia antes de confiar en un plazo. Anota la fecha y cualquier ampliación de pago elegida. No dejes los productos esperando indefinidamente porque un artículo general indique más tiempo que el registro actual del almacén."
+          ]
+        },
+        {
+          "heading": "Agrupa artículos compatibles y sin problemas pendientes",
+          "paragraphs": [
+            "La guía oficial describe cómo seleccionar artículos almacenados para una entrega internacional o comprar más y enviarlos juntos después. La consolidación permite planificar el paquete completo. No hace que cualquier combinación sea admisible en todas las rutas.",
+            "Antes de agrupar, considera restricciones, fragilidad y cuestiones pendientes. Un artículo a la espera de una decisión de devolución no está listo. Un accesorio delicado quizá necesite una protección distinta de la ropa. Compara las dimensiones y el peso finales, no solo el número de productos."
+          ]
+        },
+        {
+          "heading": "Escribe instrucciones de embalaje precisas",
+          "paragraphs": [
+            "La ayuda de LoloBuy sobre retirada de embalaje describe quitar lo innecesario conservando la protección requerida. Si quieres las cajas originales para un regalo o una colección, no selecciones la retirada y deja clara la petición. El valor de una caja no siempre se reduce a su peso de transporte.",
+            "Utiliza instrucciones por artículo cuando corresponda: conservar el soporte protector de una pieza frágil, mantener una caja comercial o preguntar qué embalaje está disponible. Revisa los cargos extra en el formulario actual del paquete. No supongas que el mismo método sirve para todas las categorías."
+          ]
+        },
+        {
+          "heading": "Revisa el paquete por última vez",
+          "paragraphs": [
+            "Confirma lista de artículos, cantidades, destinatario, ruta y servicios antes de enviarlo. Comprueba que incluya todo lo previsto y que no se haya añadido ningún artículo con un problema pendiente. Esta revisión breve es más sencilla que reconstruir la decisión después de embalar.",
+            "Las páginas oficiales de peso y ajuste del transporte explican que las medidas finales pueden cambiar el coste. Vigila los mensajes después de la solicitud, incluidas confirmaciones y pagos adicionales. Una vez despachado, sigue el registro del paquete y conserva las pruebas del almacén hasta revisar la entrega."
+          ]
+        }
+      ],
+      "checklist": [
+        "Revisa cada artículo antes de marcarlo como listo.",
+        "Comprueba el plazo de tu propio registro de almacenamiento.",
+        "Separa las devoluciones pendientes de los artículos listos.",
+        "Especifica un embalaje adecuado para cada producto.",
+        "Revisa la lista final y los ajustes del transporte."
+      ],
+      "sourceIds": [
+        "buying",
+        "status",
+        "storage",
+        "packaging",
+        "freight-balance"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 666
+    },
+    {
+      "slug": "lolobuy-sizing-guide",
+      "title": "Guía de tallas LoloBuy: compara medidas antes de elegir una etiqueta",
+      "description": "Utiliza la tabla del vendedor, métodos de medición coherentes y fotos de almacén específicas para elegir la talla con más información.",
+      "keyword": "guía de tallas lolobuy",
+      "category": "Tallas",
+      "summary": "Una talla conocida es un punto de partida. La comparación útil se hace entre las medidas del vendedor, tus medidas de referencia y el ajuste que buscas.",
+      "sections": [
+        {
+          "heading": "Empieza con la tabla del vendedor",
+          "paragraphs": [
+            "La referencia oficial de tallas de LoloBuy indica que los criterios pueden variar entre tiendas y considera orientativas sus conversiones. Una etiqueta como mediana o una talla de zapatos conocida no establece cómo quedará cada producto de cada vendedor. Lee la tabla de la ficha y opción exactas.",
+            "Comprueba si los números describen un cuerpo, una prenda terminada o al usuario recomendado. Son medidas distintas. Si la tabla no lo aclara, pregunta antes de pedir en lugar de elegir por costumbre una talla más grande o pequeña."
+          ]
+        },
+        {
+          "heading": "Mide una referencia fiable",
+          "paragraphs": [
+            "En ropa, compara con una prenda que ya tengas y te quede como deseas. Extiéndela en plano y utiliza los mismos puntos del dibujo del vendedor. Anota las unidades y si el ancho mide un lado o todo el contorno. Guarda las medidas con una foto rápida del método.",
+            "Para medidas corporales, sigue la guía correspondiente y mantén la cinta nivelada, sin apretarla para forzar una talla preferida. Una camisa ajustada, una sudadera holgada y una chaqueta estructurada necesitan holguras distintas. La silueta deseada forma parte de la decisión, no es un defecto de la tabla."
+          ]
+        },
+        {
+          "heading": "Elige las dimensiones importantes",
+          "paragraphs": [
+            "En una prenda superior, ancho de pecho, largo, hombros y manga responden a preguntas distintas. En pantalones, comprueba cintura, tiro, entrepierna y largo total. Una única cifra de cintura no explica la caída de la pernera, y el pecho por sí solo no establece el largo de manga.",
+            "Por ejemplo, imagina que tu prenda de referencia mide 56 centímetros de ancho de pecho y 70 de largo. Otra de 56 y 64 puede tener un ancho similar, pero un cuerpo notablemente más corto. Es un ejemplo del método de comparación, no una recomendación de talla o producto concretos."
+          ],
+          "bullets": [
+            "Confirma las unidades",
+            "Compara medidas corporales con tablas corporales",
+            "Compara prendas extendidas con tablas de prendas",
+            "Revisa varias dimensiones esenciales para el ajuste",
+            "Anota si buscas una silueta holgada o ajustada"
+          ]
+        },
+        {
+          "heading": "Revisa el calzado por separado",
+          "paragraphs": [
+            "La guía oficial recomienda usar el pie mayor si difieren y advierte que la longitud no describe por completo el ancho. Lee la tabla de calzado del vendedor y comprueba el sistema de la opción seleccionada. No supongas una equivalencia perfecta de números EU, US o UK entre todas las fichas.",
+            "Mide como indica la tabla y considera calcetines, ancho y uso previsto. Una etiqueta visible en la foto del almacén ayuda a confirmar qué se envió, pero no cómo se siente el zapato en tu pie. No trates una foto de plantilla como tabla universal de conversión."
+          ]
+        },
+        {
+          "heading": "Utiliza QC para responder a una pregunta concreta",
+          "paragraphs": [
+            "Antes de enviar, compara la etiqueta de talla visible con el pedido. Si una dimensión importante sigue siendo incierta, solicita esa medida con puntos de inicio y fin claros. Por ejemplo, pide ancho de pecho en plano de costura a costura, en lugar de simplemente «comprobar la talla».",
+            "La política de inspección de LoloBuy tiene límites y no promete evaluar todo el ajuste. Comprueba si la medida o foto adicional está disponible para tu artículo y si cuesta algo. Un conjunto de fotos estándar no debe presentarse como asesoramiento personalizado de tallaje."
+          ]
+        },
+        {
+          "heading": "Decide mientras sigan abiertas las opciones",
+          "paragraphs": [
+            "Si la etiqueta recibida difiere de la opción seleccionada, documenta la discrepancia con el pedido y la foto. Si coincide, pero la medida no sirve, consulta pronto las condiciones del vendedor y el proceso actual de devolución. Son situaciones diferentes que deben describirse con precisión.",
+            "Las medidas reducen la incertidumbre, pero no eliminan diferencias de corte, elasticidad, tacto o preferencias. Guarda la tabla y las notas para aprovechar un buen ajuste en futuras compras. Vuelve a comprobar la ficha al repetir, pues otro vendedor o versión puede utilizar medidas distintas."
+          ]
+        }
+      ],
+      "checklist": [
+        "Utiliza la tabla de la ficha exacta.",
+        "Mantén unidades y métodos coherentes.",
+        "Compara varias dimensiones fundamentales.",
+        "Comprueba la etiqueta recibida y la medida solicitada.",
+        "Resuelve las dudas de ajuste antes del envío internacional."
+      ],
+      "sourceIds": [
+        "sizing",
+        "qc",
+        "returns"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 685
+    },
+    {
+      "slug": "lolobuy-tracking-guide",
+      "title": "Seguimiento de LoloBuy: distingue el pedido del paquete internacional",
+      "description": "Interpreta correctamente las etapas de compra, almacén y paquete y reúne pruebas útiles cuando una actualización no esté clara.",
+      "keyword": "seguimiento lolobuy",
+      "category": "Seguimiento",
+      "summary": "El estado de un pedido y un registro del transportista describen partes distintas del recorrido. Separa las referencias del artículo, paquete nacional y paquete internacional.",
+      "sections": [
+        {
+          "heading": "Identifica qué estás siguiendo",
+          "paragraphs": [
+            "Un producto puede tener un pedido de compra, un envío nacional del vendedor y un paquete internacional posterior. Son registros relacionados, pero no el mismo envío. Un aviso de entrega nacional puede significar llegada al almacén, no a tu domicilio.",
+            "Crea una lista sencilla a medida que avanza: número de producto o pedido, referencia nacional del vendedor si aparece, registro de almacén y número del paquete internacional. Así resulta más fácil preguntar por la etapa correcta sin enviar al soporte una captura de un trayecto distinto."
+          ]
+        },
+        {
+          "heading": "Lee primero las etapas de compra",
+          "paragraphs": [
+            "La guía oficial de estados de LoloBuy distingue pendiente de pago, en proceso, comprado y enviado por el vendedor. «En proceso» se refiere a la compra; no significa que un transportista internacional esté moviendo tu paquete. Lee el estado antes de buscar una actualización de seguimiento exterior.",
+            "La misma guía distingue recepción e inventario después de la inspección. Si el transportista nacional indica entregado, pero la inspección no está terminada, ambos registros pueden describir etapas sucesivas y no una contradicción. Comprueba el artículo y las solicitudes de confirmación para saber qué acción sigue."
+          ]
+        },
+        {
+          "heading": "Después interpreta las etapas del paquete",
+          "paragraphs": [
+            "Al crear un paquete internacional comienza su propia secuencia. La página oficial describe pendiente de pago, en proceso, embalado y enviado. También indica vigilar los cambios de transporte tras el pesaje final. No confundas un paquete creado con uno despachado.",
+            "Usa el registro real y no solo la existencia de una referencia. Una etiqueta o número pueden prepararse antes del siguiente movimiento visible del transportista. Al comparar sistemas, distingue qué página confirma la entrega al transportista y qué evento ha registrado este realmente."
+          ],
+          "bullets": [
+            "Referencia de compra o pedido",
+            "Referencia del paquete internacional",
+            "Número de seguimiento del transportista",
+            "Último evento, lugar y fecha y hora",
+            "Confirmaciones o pagos pendientes"
+          ]
+        },
+        {
+          "heading": "Interpreta con cuidado los periodos sin cambios",
+          "paragraphs": [
+            "Un intervalo sin registros no identifica por sí solo la causa. Comprueba la estimación actual de la ruta elegida, el último evento y cualquier aviso oficial relevante. No conviertas la duración habitual de una publicación antigua en una fecha prometida para tu paquete.",
+            "Evita abrir constantemente distintas webs de seguimiento y considerar cada diferencia de redacción como un evento nuevo. Guarda un registro fechado de los cambios importantes. Si la etapa parece incoherente o solicita una acción, plantea ese asunto concreto mediante el soporte del paquete o pedido."
+          ]
+        },
+        {
+          "heading": "Envía una pregunta útil al soporte",
+          "paragraphs": [
+            "Proporciona el identificador de pedido o paquete, el número de seguimiento, el último evento y la pregunta que necesitas resolver. Por ejemplo: «El paquete figura como enviado, pero el transportista no muestra la recepción. ¿Podéis confirmar la entrega al transportista?». Es más útil que preguntar «¿Dónde está todo?».",
+            "La guía de compra dirige a la zona de paquetes para el seguimiento después del despacho. Utiliza, cuando sea posible, la consulta vinculada al registro afectado. No incluyas datos de cuenta ajenos al asunto ni credenciales de pago en un mensaje sobre seguimiento."
+          ]
+        },
+        {
+          "heading": "Conserva pruebas hasta la entrega",
+          "paragraphs": [
+            "Cuando llegue el paquete, revisa pronto el exterior y el contenido. Conserva embalaje, etiqueta y fotos claras si falta algo, hay un artículo incorrecto o daños. Compara lo recibido con la lista final del paquete, no con una selección anterior que quizá incluya productos no enviados.",
+            "La página oficial de posventa pide descripción detallada y fotografías si un artículo es incorrecto o está dañado, pero contiene plazos contradictorios. Actúa pronto y verifica el plazo aplicable en el proceso actual de soporte. No esperes porque una guía general parezca dar más tiempo."
+          ]
+        }
+      ],
+      "checklist": [
+        "Separa referencias nacionales e internacionales.",
+        "Comprueba si el paquete está creado, embalado o enviado.",
+        "Lee el último evento con su fecha y hora.",
+        "Envía una pregunta concreta y documentada al soporte.",
+        "Revisa la entrega pronto y conserva las pruebas relevantes."
+      ],
+      "sourceIds": [
+        "status",
+        "buying",
+        "claims",
+        "freight-balance"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 656
+    },
+    {
+      "slug": "lolobuy-returns-refunds",
+      "title": "Devoluciones y reembolsos de LoloBuy: actúa en la fase adecuada",
+      "description": "Prepara pruebas, comprueba las condiciones del vendedor y distingue cancelar un pedido, devolver un artículo y reclamar por un paquete.",
+      "keyword": "devoluciones y reembolsos lolobuy",
+      "category": "Posventa",
+      "summary": "La devolución depende del artículo, el vendedor y la fase actual del pedido. Las pruebas claras y una solicitud rápida ayudan más que asumir una regla única para todas las compras.",
+      "sections": [
+        {
+          "heading": "Identifica el procedimiento necesario",
+          "paragraphs": [
+            "Cancelar un pedido aún no comprado, devolver un artículo del almacén y comunicar un problema tras la entrega internacional son procesos distintos. Empieza comprobando el estado actual del pedido o paquete. El botón y la información disponibles pueden depender del avance de la transacción.",
+            "Las páginas de cancelaciones y devoluciones de LoloBuy describen pasos según el estado y la intervención del vendedor. Solicitar no equivale a obtener aprobación. Lee la respuesta asociada al pedido y distingue qué se aceptó, qué está pendiente y qué acción todavía debes realizar."
+          ]
+        },
+        {
+          "heading": "Conserva las pruebas exactas",
+          "paragraphs": [
+            "Guarda juntos URL del artículo, opción elegida, confirmación y fotos relevantes. Si el problema es una etiqueta de talla incorrecta, muestra opción pedida y etiqueta recibida. Si hay daños, aporta vista general y acercamiento claro de la zona afectada. Describe las diferencias sin exagerar.",
+            "Por ejemplo, «Pedí azul en talla L; la foto de almacén muestra negro con etiqueta M» identifica una discrepancia comprobable. «Mala calidad» es mucho menos preciso. Si las fotos no permiten determinar el problema, pide las pruebas que faltan antes de decidir qué solución solicitar."
+          ],
+          "bullets": [
+            "Número de pedido y ficha de origen",
+            "Opción y cantidad seleccionadas",
+            "Descripción clara del problema",
+            "Fotos relevantes de ese pedido",
+            "Solución solicitada: aclarar, cancelar, devolver o cambiar"
+          ]
+        },
+        {
+          "heading": "Lee conjuntamente requisitos y plazos",
+          "paragraphs": [
+            "La página oficial de garantía de devoluciones describe condiciones y un plazo de solicitud tras entrar en inventario. También exige acuerdo del vendedor. Otras páginas utilizan tiempos o expresiones diferentes y poco claras. Comprueba el plazo y el servicio del pedido real y comunica el problema pronto.",
+            "El embalaje y el estado apto para reventa pueden importar. No ordenes retirar cajas que podrías necesitar para una devolución elegible antes de entender las condiciones. Productos usados, pedidos especiales y otras categorías pueden tener reglas distintas; prometer devoluciones incondicionales sería engañoso."
+          ]
+        },
+        {
+          "heading": "Pregunta qué costes se aplican",
+          "paragraphs": [
+            "Las indicaciones de garantía distinguen el motivo de devolución y tratan los costes de transporte nacional y servicio. Una oferta original de entrega gratuita no convierte necesariamente en gratuita una devolución posterior. Pregunta los costes de tu solicitud concreta antes de aceptar continuar.",
+            "Conserva la respuesta en el pedido. Aclara si el importe incluye transporte de vuelta al vendedor, entrega nacional original y tasa de servicio. Una bonificación de gestión de la plataforma y los gastos del vendedor son conceptos distintos y no deben fusionarse en una vaga promesa de «devolución gratis»."
+          ]
+        },
+        {
+          "heading": "Sigue el destino y el estado del reembolso",
+          "paragraphs": [
+            "La ayuda oficial describe normalmente el ingreso de los reembolsos aprobados en el saldo de LoloBuy, con una excepción específica para algunas situaciones de pago original. Un abono en cuenta y una devolución al método externo son resultados diferentes. Comprueba cuál corresponde antes de esperar el dinero en el banco.",
+            "Aprobación del vendedor, recepción del artículo devuelto y reembolso terminado pueden ser hitos separados. Guarda la referencia de devolución si se facilita. Al preguntar por un retraso, identifica el último paso completado en lugar de abrir otra solicitud omitiendo el registro existente."
+          ]
+        },
+        {
+          "heading": "Trata por separado los problemas tras la entrega",
+          "paragraphs": [
+            "Para problemas posteriores a la entrega, las instrucciones oficiales remiten a la solicitud de posventa del paquete afectado y piden descripción detallada y fotos. Conserva también el embalaje exterior y la etiqueta. Ayudan a relacionar el daño o la discrepancia con el envío.",
+            "Esa página oficial contiene plazos contradictorios. Comunica el problema pronto y obtén el límite aplicable directamente del proceso actual. Esta guía no promete aprobación, un plazo universal de reembolso ni compensación por cualquier tipo de pérdida."
+          ]
+        }
+      ],
+      "checklist": [
+        "Comprueba la fase actual del pedido o paquete.",
+        "Documenta la discrepancia o el daño exactos.",
+        "Confirma elegibilidad, plazo y condiciones del embalaje.",
+        "Pregunta todos los costes de devolución aplicables.",
+        "Sigue la aprobación y el destino real del reembolso."
+      ],
+      "sourceIds": [
+        "refunds",
+        "cancellation",
+        "returns",
+        "claims",
+        "changes"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 659
+    },
+    {
+      "slug": "lolobuy-order-budget",
+      "title": "Presupuesto de pedidos LoloBuy: mira más allá del precio del producto",
+      "description": "Separa artículos, entrega nacional, servicios opcionales, conversión de moneda y transporte internacional antes de comprometerte con un pedido.",
+      "keyword": "tasas lolobuy",
+      "category": "Presupuesto",
+      "summary": "Un presupuesto útil separa importes confirmados y estimaciones. Mantén visibles la compra del producto y el pago posterior del paquete como dos decisiones relacionadas.",
+      "sections": [
+        {
+          "heading": "Calcula el precio de la opción que realmente comprarás",
+          "paragraphs": [
+            "El precio del catálogo es un punto de partida para comparar. El color, talla, conjunto o cantidad elegidos pueden tener otro precio actual en la página oficial del pedido. Revisa la configuración exacta antes de presupuestar, especialmente si la ficha muestra un intervalo.",
+            "Compara importe y moneda en la misma fase. Un precio registrado, el total de pago y el extracto de la tarjeta pueden incluir componentes distintos. No llames tasa oculta a la diferencia hasta comprobar cantidad, entrega, conversión y servicios seleccionados."
+          ]
+        },
+        {
+          "heading": "Separa las dos fases principales de pago",
+          "paragraphs": [
+            "El proceso oficial de LoloBuy cobra primero productos y entrega nacional en China. El transporte internacional se gestiona cuando se solicitan como paquete los artículos almacenados. Presupuestar solo el primer pago puede dejarte sin dinero suficiente para enviarlos al llegar al almacén.",
+            "Crea una tabla sencilla con cada coste y márcalo como confirmado o estimado. Mantén visibles los servicios opcionales en lugar de esconderlos en el precio del producto. Los posibles cargos del destino necesitan su propia línea porque no los determina el precio del catálogo."
+          ],
+          "bullets": [
+            "Artículos y cantidades seleccionados",
+            "Entrega nacional en China",
+            "Servicios de compra o almacén elegidos",
+            "Transporte internacional y servicios de embalaje",
+            "Gastos de pago o conversión mostrados al pagar",
+            "Posibles impuestos o tasas de gestión del destino"
+          ]
+        },
+        {
+          "heading": "Lee las condiciones de entrega nacional",
+          "paragraphs": [
+            "La ayuda oficial indica que los artículos de un vendedor pedidos y pagados juntos pueden compartir un cargo nacional, con posible suplemento por sobrepeso. Es una condición concreta, no una promesa de que todos los artículos del carrito compartan tasa.",
+            "Comprueba quién suministra cada artículo y cómo se agrupa el pedido. Una cantidad mayor también puede cambiar precio o condiciones de transporte, especialmente en ofertas mayoristas. Conserva el cálculo actual en lugar de repartir una entrega anterior entre compras no relacionadas."
+          ]
+        },
+        {
+          "heading": "Comprueba pago y moneda",
+          "paragraphs": [
+            "Revisa los métodos disponibles en el pago oficial, la moneda cobrada y los costes mostrados antes de confirmar. La disponibilidad puede depender de la cuenta y la operación. Una lista general de ayuda no basta para asegurar que hoy se ofrezca un método concreto en tu pedido.",
+            "Si el proveedor de pago ofrece conversión, compara allí el importe final y las condiciones. Guarda el recibo con el pedido. No prometas un tipo de cambio fijo ni supongas que la conversión de una compra anterior se aplicará a la siguiente."
+          ]
+        },
+        {
+          "heading": "Trata los descuentos como algo que debe verificarse",
+          "paragraphs": [
+            "Las indicaciones de promociones describen aportar los datos de la oferta del vendedor en las observaciones para que el agente los compruebe. Un banner o captura guardada no demuestra que tu opción y cantidad sigan cumpliendo requisitos. Registra las condiciones y pide confirmación por el pedido.",
+            "Mantén separado el descuento del presupuesto normal hasta confirmarlo. No dependas de promociones de referidos, cupones o reclamos de envío copiados de otra guía. Esta web no proporciona un crédito garantizado para nuevos usuarios ni un precio universal de transporte."
+          ]
+        },
+        {
+          "heading": "Usa un intervalo para el transporte incierto",
+          "paragraphs": [
+            "Antes de embalar, peso y tamaño son estimaciones. La política oficial ajusta el importe inicial al cargo real del proveedor logístico. Reserva margen para un posible ajuste en lugar de gastar todo el presupuesto en productos.",
+            "Como ejercicio, imagina que artículos y entrega nacional confirmados suman 100 unidades de una moneda y el transporte se estima entre 30 y 45. El total provisional será 130–145 antes de otros costes aplicables. Son cifras hipotéticas para explicar el método, no precios ni un presupuesto de LoloBuy."
+          ]
+        },
+        {
+          "heading": "Convierte el presupuesto en una herramienta de decisión",
+          "paragraphs": [
+            "Si el total probable supera tu límite, revisa la selección antes de pagar. Eliminar un artículo poco prioritario puede ser más fácil que recuperar el dinero mediante devolución. Compara el valor del pedido completo entregado, no cuántos productos baratos consigues reunir.",
+            "Después del despacho, sustituye las estimaciones por cargos finales registrados. Conserva la diferencia y su explicación. Ese historial ayuda a planificar futuras compras, teniendo en cuenta que la próxima vez pueden cambiar productos, dimensiones, rutas y condiciones de cambio."
+          ]
+        }
+      ],
+      "checklist": [
+        "Presupuesta la opción exacta seleccionada.",
+        "Separa entrega nacional e internacional.",
+        "Registra servicios opcionales y moneda cobrada.",
+        "Utiliza solo descuentos confirmados.",
+        "Reserva margen para transporte incierto y costes de destino."
+      ],
+      "sourceIds": [
+        "buying",
+        "domestic",
+        "promotions",
+        "freight-balance",
+        "wholesale"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 727
+    },
+    {
+      "slug": "lolobuy-seller-and-review-checks",
+      "title": "Hallazgos y opiniones de LoloBuy: comprueba las pruebas detrás de una oferta",
+      "description": "Evalúa la información de origen, la relevancia de las opiniones y los límites de inspección sin tratar distintivos, fotos o puntuaciones como garantías.",
+      "keyword": "es fiable lolobuy",
+      "category": "Decisiones de compra",
+      "summary": "La pregunta útil es qué demuestran las pruebas disponibles sobre esta operación. El nombre de una plataforma no responde por sí solo a todo sobre un vendedor, producto o paquete.",
+      "sections": [
+        {
+          "heading": "Separa plataforma y producto",
+          "paragraphs": [
+            "La información de servicios de LoloBuy describe comprar en plataformas de terceros, no vender directamente cada artículo anunciado. Este catálogo independiente está un paso más alejado: organiza el descubrimiento. Distingue esas funciones al decidir quién puede responder una pregunta o resolver un problema.",
+            "Un enlace que funciona no demuestra autenticidad, existencias, ajuste ni entrega futura. Del mismo modo, una queja sobre un vendedor no establece la causa de todos los problemas de la plataforma. Empieza por la afirmación exacta que quieres evaluar y quién controla esa parte del proceso."
+          ]
+        },
+        {
+          "heading": "Revisa la ficha antes que su popularidad",
+          "paragraphs": [
+            "Busca una URL original clara, una descripción coherente, opciones identificables e información útil de medidas o especificaciones. Compara la opción elegida con la galería. Un precio inicial bajo puede corresponder a otro componente distinto del que muestra la imagen principal.",
+            "Si varios vendedores usan las mismas fotos, esas imágenes no permiten saber si fabrican o suministran productos idénticos. Anota lo que falta y plantea una pregunta concreta. Una cifra de popularidad o un nombre conocido de lote no sustituye las pruebas de la ficha exacta."
+          ],
+          "bullets": [
+            "Oferta original e identidad del vendedor",
+            "Opción y cantidad exactas",
+            "Medidas o especificaciones relevantes",
+            "Información actual de devoluciones",
+            "Preguntas pendientes que afectan a la compra"
+          ]
+        },
+        {
+          "heading": "Lee las opiniones por su relevancia",
+          "paragraphs": [
+            "Una opinión es más útil cuando puedes identificar fecha, producto o servicio comentado y pruebas de la conclusión. Un comentario sobre rapidez del soporte no es una evaluación del ajuste del calzado. Que llegue un paquete no demuestra que todos los productos del catálogo sean adecuados.",
+            "Busca declaraciones de enlaces de referido, incentivos u otras relaciones. Su presencia no vuelve falsa una opinión automáticamente, pero ayuda a entender su finalidad. No conviertas una promoción de afiliado, una anécdota o un testimonio sin verificar en una recomendación universal."
+          ]
+        },
+        {
+          "heading": "Prevé qué puede demostrar la inspección",
+          "paragraphs": [
+            "La página oficial de inspección estándar describe controles de aspecto y exclusiones importantes. No promete autenticar ni probar el funcionamiento de todas las categorías. Los artículos precintados y algunos profesionales reciben un trato distinto. Lee esos límites antes de comprar algo cuyo valor dependa de lo que el servicio no examinará.",
+            "En una prenda, medidas claras y construcción visible pueden resolver buena parte de tus dudas. En electrónica o artículos relacionados con la seguridad, una foto no establece funcionamiento interno ni cumplimiento normativo. Si no están disponibles las pruebas necesarias, esa incertidumbre debe formar parte de la decisión."
+          ]
+        },
+        {
+          "heading": "Mantén pago y comunicación en el lugar adecuado",
+          "paragraphs": [
+            "Utiliza la web oficial para pagar y la consulta del pedido o paquete correspondiente para asuntos de la operación. Comprueba el dominio antes de iniciar sesión. Este catálogo no necesita tu contraseña, credenciales de pago ni conversaciones privadas copiadas en una búsqueda de productos.",
+            "Guarda opción elegida, pago, aclaraciones del vendedor y requisitos acordados. Si cambia algo, pide la actualización en el registro del pedido. Un historial claro facilita resolver dudas más que mensajes dispersos sin referencia del artículo o transacción."
+          ]
+        },
+        {
+          "heading": "Toma una decisión que puedas explicar",
+          "paragraphs": [
+            "Escribe una nota breve con por qué el artículo cubre tus necesidades, qué pruebas lo respaldan, el presupuesto total y las incertidumbres aceptadas. Si depende de una pregunta sin resolver sobre talla, estado o devolución, aclárala antes de pagar.",
+            "Un primer pedido pequeño puede limitar opcionalmente el importe comprometido mientras aprendes el proceso, pero no certifica a todos los vendedores ni futuros envíos. Esta guía es un método para evaluar pruebas, no una prueba personal ni una garantía de ausencia de riesgos en LoloBuy. Utiliza las guías de pedidos, QC y devoluciones para las siguientes comprobaciones concretas."
+          ]
+        }
+      ],
+      "checklist": [
+        "Distingue las funciones de catálogo, plataforma y vendedor.",
+        "Comprueba la ficha exacta, no su popularidad.",
+        "Revisa fecha, relevancia e incentivos de las opiniones.",
+        "Entiende qué no verificará la inspección.",
+        "Conserva una decisión documentada y el registro del pedido."
+      ],
+      "sourceIds": [
+        "service",
+        "qc",
+        "buying",
+        "returns"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 667
+    }
+  ]
+}

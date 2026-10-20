@@ -1,0 +1,308 @@
+{
+  "source": "https://www.cnfanssp.com",
+  "retrievedAt": "2026-10-20T07:23:40.281Z",
+  "mode": "complete-source-catalogue",
+  "categories": [
+    {
+      "key": "shoes",
+      "slug": "shoes",
+      "products": 1570,
+      "pages": 27
+    },
+    {
+      "key": "hoodies",
+      "slug": "hoodies-sweaters",
+      "products": 838,
+      "pages": 14
+    },
+    {
+      "key": "tshirts",
+      "slug": "t-shirts",
+      "products": 796,
+      "pages": 14
+    },
+    {
+      "key": "jackets",
+      "slug": "jackets",
+      "products": 595,
+      "pages": 10
+    },
+    {
+      "key": "pants",
+      "slug": "pants-shorts",
+      "products": 610,
+      "pages": 11
+    },
+    {
+      "key": "headwear",
+      "slug": "headwear",
+      "products": 490,
+      "pages": 9
+    },
+    {
+      "key": "accessories",
+      "slug": "accessories",
+      "products": 474,
+      "pages": 8
+    },
+    {
+      "key": "sets",
+      "slug": "short-sets",
+      "products": 519,
+      "pages": 9
+    },
+    {
+      "key": "electronics",
+      "slug": "electronics",
+      "products": 181,
+      "pages": 4
+    },
+    {
+      "key": "other",
+      "slug": "other-stuff",
+      "products": 351,
+      "pages": 6
+    },
+    {
+      "key": "jerseys",
+      "slug": "jersey",
+      "products": 148,
+      "pages": 4
+    }
+  ],
+  "sourcePages": 226,
+  "products": [
+    {
+      "recordId": "6667",
+      "name": "Jersey-60",
+      "priceCny": 99,
+      "views": 545,
+      "date": 1777554985,
+      "image": "https://www.cnfanssp.com/uploads/allimg/20260430/1-26043021142K50.jpg",
+      "source": "https://www.cnfanssp.com/AllProducts/6667.html",
+      "category": "jerseys"
+    },
+    {
+      "recordId": "6666",
+      "name": "Jersey-59",
+      "priceCny": 99,
+      "views": 847,
+      "date": 1777554974,
+      "image": "https://www.cnfanssp.com/uploads/allimg/20260430/1-260430211425539.jpg",
+      "source": "https://www.cnfanssp.com/AllProducts/6666.html",
+      "category": "jerseys"
+    },
+    {
+      "recordId": "6665",
+      "name": "Jersey-58",
+      "priceCny": 99,
+      "views": 759,
+      "date": 1777554963,
+      "image": "https://www.cnfanssp.com/uploads/allimg/20260430/1-260430211423422.jpg",
+      "source": "https://www.cnfanssp.com/AllProducts/6665.html",
+      "category": "jerseys"
+    },
+    {
+      "recordId": "6664",
+      "name": "Jersey-57",
+      "priceCny": 99,
+      "views": 602,
+      "date": 1777554949,
+      "image": "https://www.cnfanssp.com/uploads/allimg/20260430/1-2604302114224a.jpg",
+      "source": "https://www.cnfanssp.com/AllProducts/6664.html",
+      "category": "jerseys"
+    },
+    {
+      "recordId": "6663",
+      "name": "Jersey-56",
+      "priceCny": 180,
+      "views": 811,
+      "date": 1777554936,
+      "image": "https://www.cnfanssp.com/uploads/allimg/20260430/1-260430211421Z1.jpg",
+      "source": "https://www.cnfanssp.com/AllProducts/6663.html",
+      "category": "jerseys"
+    },
+    {
+      "recordId": "6662",
+      "name": "Jersey-55",
+      "priceCny": 180,
+      "views": 908,
+      "date": 1777554925,
+      "image": "https://www.cnfanssp.com/uploads/allimg/20260430/1-260430211420242.jpg",
+      "source": "https://www.cnfanssp.com/AllProducts/6662.html",
+      "category": "jerseys"
+    },
+    {
+      "recordId": "6661",
+      "name": "Jersey-54",
+      "priceCny": 180,
+      "views": 781,
+      "date": 1777554915,
+      "image": "https://www.cnfanssp.com/uploads/allimg/20260430/1-26043021141a07.jpg",
+      "source": "https://www.cnfanssp.com/AllProducts/6661.html",
+      "category": "jerseys"
+    },
+    {
+      "recordId": "6660",
+      "name": "Jersey-53",
+      "priceCny": 180,
+      "views": 520,
+      "date": 1777554901,
+      "image": "https://www.cnfanssp.com/uploads/allimg/20260430/1-26043021141b32.jpg",
+      "source": "https://www.cnfanssp.com/AllProducts/6660.html",
+      "category": "jerseys"
+    },
+    {
+      "recordId": "6659",
+      "name": "Jersey-52",
+      "priceCny": 109,
+      "views": 832,
+      "date": 1777554877,
+      "image": "https://www.cnfanssp.com/uploads/allimg/20260430/1-260430211419352.jpg",
+      "source": "https://www.cnfanssp.com/AllProducts/6659.html",
+      "category": "jerseys"
+    },
+    {
+      "recordId": "6658",
+      "name": "Jersey-51",
+      "priceCny": 109,
+      "views": 700,
+      "date": 1777554848,
+      "image": "https://www.cnfanssp.com/uploads/allimg/20260430/1-26043021141V11.jpg",
+      "source": "https://www.cnfanssp.com/AllProducts/6658.html",
+      "category": "jerseys"
+    },
+    {
+      "recordId": "6657",
+      "name": "Jersey-50",
+      "priceCny": 109,
+      "views": 555,
+      "date": 1777554836,
+      "image": "https://www.cnfanssp.com/uploads/allimg/20260430/1-260430211204295.jpg",
+      "source": "https://www.cnfanssp.com/AllProducts/6657.html",
+      "category": "jerseys"
+    },
+    {
+      "recordId": "6656",
+      "name": "Jersey-49",
+      "priceCny": 84,
+      "views": 670,
+      "date": 1777554824,
+      "image": "https://www.cnfanssp.com/uploads/allimg/20260430/1-260430211203925.jpg",
+      "source": "https://www.cnfanssp.com/AllProducts/6656.html",
+      "category": "jerseys"
+    },
+    {
+      "recordId": "6655",
+      "name": "Jersey-48",
+      "priceCny": 84,
+      "views": 817,
+      "date": 1777554813,
+      "image": "https://www.cnfanssp.com/uploads/allimg/20260430/1-260430211202937.jpg",
+      "source": "https://www.cnfanssp.com/AllProducts/6655.html",
+      "category": "jerseys"
+    },
+    {
+      "recordId": "6654",
+      "name": "Jersey-47",
+      "priceCny": 84,
+      "views": 909,
+      "date": 1777554798,
+      "image": "https://www.cnfanssp.com/uploads/allimg/20260430/1-2604302112003P.jpg",
+      "source": "https://www.cnfanssp.com/AllProducts/6654.html",
+      "category": "jerseys"
+    },
+    {
+      "recordId": "6653",
+      "name": "Jersey-46",
+      "priceCny": 69,
+      "views": 532,
+      "date": 1777554786,
+      "image": "https://www.cnfanssp.com/uploads/allimg/20260430/1-260430211159361.jpg",
+      "source": "https://www.cnfanssp.com/AllProducts/6653.html",
+      "category": "jerseys"
+    },
+    {
+      "recordId": "6652",
+      "name": "Jersey-45",
+      "priceCny": 69,
+      "views": 943,
+      "date": 1777554776,
+      "image": "https://www.cnfanssp.com/uploads/allimg/20260430/1-26043021115S10.jpg",
+      "source": "https://www.cnfanssp.com/AllProducts/6652.html",
+      "category": "jerseys"
+    },
+    {
+      "recordId": "6651",
+      "name": "Jersey-44",
+      "priceCny": 69,
+      "views": 630,
+      "date": 1777554762,
+      "image": "https://www.cnfanssp.com/uploads/allimg/20260430/1-26043021115H08.jpg",
+      "source": "https://www.cnfanssp.com/AllProducts/6651.html",
+      "category": "jerseys"
+    },
+    {
+      "recordId": "6650",
+      "name": "Jersey-43",
+      "priceCny": 79,
+      "views": 756,
+      "date": 1777554750,
+      "image": "https://www.cnfanssp.com/uploads/allimg/20260430/1-260430211156130.jpg",
+      "source": "https://www.cnfanssp.com/AllProducts/6650.html",
+      "category": "jerseys"
+    },
+    {
+      "recordId": "6649",
+      "name": "Jersey-42",
+      "priceCny": 79,
+      "views": 839,
+      "date": 1777554737,
+      "image": "https://www.cnfanssp.com/uploads/allimg/20260430/1-260430211155440.jpg",
+      "source": "https://www.cnfanssp.com/AllProducts/6649.html",
+      "category": "jerseys"
+    },
+    {
+      "recordId": "6648",
+      "name": "Jersey-41",
+      "priceCny": 88,
+      "views": 562,
+      "date": 1777554704,
+      "image": "https://www.cnfanssp.com/uploads/allimg/20260430/1-260430211154957.jpg",
+      "source": "https://www.cnfanssp.com/AllProducts/6648.html",
+      "category": "jerseys"
+    }
+  ],
+  "featured": [
+    {
+      "recordId": "6050",
+      "name": "shoes-60",
+      "priceCny": 250,
+      "views": 803,
+      "date": 1776346854,
+      "image": "https://www.cnfanssp.com/uploads/allimg/20260416/1-260416213T1S9.jpg",
+      "source": "https://www.cnfanssp.com/AllProducts/6050.html",
+      "category": "shoes"
+    },
+    {
+      "recordId": "6127",
+      "name": "Hoodie-60",
+      "priceCny": 118,
+      "views": 563,
+      "date": 1777448193,
+      "image": "https://www.cnfanssp.com/uploads/allimg/20260429/1-2604291534502K.jpg",
+      "source": "https://www.cnfanssp.com/AllProducts/6127.html",
+      "category": "hoodies"
+    },
+    {
+      "recordId": "6427",
+      "name": "Accessories-60",
+      "priceCny": 368,
+      "views": 860,
+      "date": 1777536863,
+      "image": "https://www.cnfanssp.com/uploads/allimg/20260430/1-260430161230537.jpg",
+      "source": "https://www.cnfanssp.com/AllProducts/6427.html",
+      "category": "accessories"
+    }
+  ]
+}

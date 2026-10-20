@@ -1,27 +1,50 @@
-# lolobuysheet.nl — Astro preview
+# lolobuysheet.nl
 
-LoloBuy-only frontend. Astro 7.4.1 / static generation. No database or administration application.
+LoloBuy discovery site. Astro 7.4.1 static pages plus small Cloudflare Pages Functions that read the existing public source. No database or administration system.
 
-## Run
+## Existing deployment
 
-Requires Node >=22.22 and Python 3 (only for refreshing public source records).
+- GitHub: `hehaize88-code/https-cnfanssp.com`, directory `lolobuysheet-nl/`
+- Cloudflare Pages project: `lolobuy-nl-preview`
+- Preview: https://lolobuy-nl-preview.pages.dev/
+- Build: `npm run build`; output `dist`; Node 24.19.0
+- `PUBLIC_SITE_URL=https://lolobuy-nl-preview.pages.dev`
+- Keep preview noindex; production domain approval is separate.
+
+## Development
 
 ```sh
 npm ci
-npm run dev
+npm run sync:catalog
 npm run build
+npm run dev
 ```
 
-`npm run sync:catalog` refreshes a bounded preview selection from six cnfanssp.com categories, then validates original Weidian IDs against each detail page. It refuses to synthesize sample products. The resulting JSON is a build artifact source snapshot, not an independently maintained product database. Product image URLs remain on cnfanssp.com.
+`npm run dev` previews the Astro pages. Product and live catalogue Functions run on Cloudflare Pages; for a complete local runtime use `npx wrangler pages dev dist` after building. Managed ChatGPT QA uses its preview supervisor.
 
-The preview contains 48 source records, 16 per page, six categories, English/Dutch routes, four guides, FAQs and real LoloBuy product redirects. Text search and sorting currently operate on this source snapshot. The full-source search link opens cnfanssp.com. Image search and warehouse QC are explicitly unavailable until the upstream services are verified.
+## Source contract
 
-Prices preserve source CNY values. No unverified USD exchange rate is used. A CMS `recordId` is deliberately distinct from a Weidian `productId`.
+Only https://www.cnfanssp.com supplies product records and image URLs. `scripts/sync-full-catalog.mjs` follows every actual pagination link in all 11 categories AND All Products, deduplicates CMS record IDs, and writes a complete dated build cache under `public/data/`. This is a generated source cache, not a manually maintained database. Never substitute sample products or another data domain.
 
-## Deploy later
+The client initially loads that complete cache, then requests the 11 source categories through `/api/catalog`. A failed category refresh leaves the complete cache visible; partial data must not erase products. Cloudflare edge caching lasts 15 minutes. The current audited catalogue is 6,572 unique records. Category pages and All Products differ slightly; their union preserves the source's own listings.
 
-Production target: https://lolobuysheet.nl . GitHub folder: `lolobuysheet-nl/`. Build command: `npm ci && npm run build`; output directory: `dist`. Keep this folder isolated from other repository sites.
+`/api/product?id={CMS record ID}` reads the current source detail page, extracts the original Weidian item ID, and constructs the exact LoloBuy link. CMS IDs must never be used as seller item IDs. Seller photos are not QC photos. No public image-search/QC feed has been verified; the interface states that limitation.
 
-The preview has `noindex,nofollow` and disallows crawling. Before production: confirm authoritative upstream, connect full dynamic search/QC/image search, decide refresh vs SSR, set production `site`, add sitemap, review indexability and translations, and then bind Cloudflare. Do not reuse the temporary preview Site identity for a new domain deployment without an explicit hosting decision.
+All filters/search/price sorting run against the complete source-derived data already loaded by the browser. Spreadsheet pagination is 20 items; homepage pagination is 8. The raw source item price is labeled CNY and excludes shipping and service fees.
 
-See PROJECT_MEMORY.md and docs/KEYWORDS_AND_DECISIONS.md for continuity.
+## Content and languages
+
+24 full locales under `src/data/locales/`: en/de/es/fr/it/pl/pt/ro/sv/nl/da/fi/el/cs/hu/bg/sk/hr/sl/lt/lv/et/ga/mt. Each has 24 sourced FAQ answers and 10 full original articles. English is `/`, all other locales have their code prefix. Language switches preserve path, query and hash. Native product titles are preserved from the source.
+
+`/articles/` is a separate top-navigation entry. Existing guide and product URLs continue to work. Mobile article chapters collapse without dropping their full HTML text. Article, FAQ and language parity checks block incomplete builds. `docs/` holds the official evidence, keyword research and catalogue audit.
+
+## Verification
+
+```sh
+node scripts/check-source.mjs
+node scripts/validate-content.mjs
+npm run build
+npx wrangler pages functions build functions --outdir=/tmp/lolo-functions-build
+```
+
+`public/_routes.json` invokes Functions only on `/api/*`; editorial HTML and other assets remain static. Do not edit other domain folders or recreate the existing Pages project.

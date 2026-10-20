@@ -3,3 +3,6 @@ dist/
 .astro/
 .env*
 .DS_Store
+
+# Local responsive QA harness
+public/qa-mobile.html

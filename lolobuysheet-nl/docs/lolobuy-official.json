@@ -1,0 +1,465 @@
+{
+  "checkedAt": "2026-10-20",
+  "sources": [
+    {
+      "id": "buying",
+      "title": "How to purchase on LoloBuy?",
+      "url": "https://www.lolobuy.com/helpCenter/1242296499766165",
+      "apiUrl": "https://www.lolobuy.com/prod-api/user/common/helpMenuDetail?id=1242296499766165",
+      "checked": "2026-10-20",
+      "claims": [
+        "Link or manual ordering; item and domestic delivery first, international parcel later."
+      ]
+    },
+    {
+      "id": "qc",
+      "title": "Standard inspection service",
+      "url": "https://www.lolobuy.com/helpCenter/1242300728672386",
+      "apiUrl": "https://www.lolobuy.com/prod-api/user/common/helpMenuDetail?id=1242300728672386",
+      "checked": "2026-10-20",
+      "claims": [
+        "Standard inspection checks visible attributes; no-inspection and specialist/sealed-goods exclusions apply."
+      ]
+    },
+    {
+      "id": "sizing",
+      "title": "Size Reference",
+      "url": "https://www.lolobuy.com/helpCenter/1242296504877978",
+      "apiUrl": "https://www.lolobuy.com/prod-api/user/common/helpMenuDetail?id=1242296504877978",
+      "checked": "2026-10-20",
+      "claims": [
+        "Store measurements can differ; reference sizing is not a product-specific fit guarantee."
+      ]
+    },
+    {
+      "id": "storage",
+      "title": "Free Storage Period",
+      "url": "https://www.lolobuy.com/helpCenter/1242300757049499",
+      "apiUrl": "https://www.lolobuy.com/prod-api/user/common/helpMenuDetail?id=1242300757049499",
+      "checked": "2026-10-20",
+      "claims": [
+        "Dedicated storage page states 180 days for ordinary goods and separate abnormal-parcel rules."
+      ]
+    },
+    {
+      "id": "packaging",
+      "title": "Package removal",
+      "url": "https://www.lolobuy.com/helpCenter/1242306518844916",
+      "apiUrl": "https://www.lolobuy.com/prod-api/user/common/helpMenuDetail?id=1242306518844916",
+      "checked": "2026-10-20",
+      "claims": [
+        "Optional package removal preserves necessary protective packaging."
+      ]
+    },
+    {
+      "id": "weight",
+      "title": "The estimated weight and real weight",
+      "url": "https://www.lolobuy.com/helpCenter/1242300798075086",
+      "apiUrl": "https://www.lolobuy.com/prod-api/user/common/helpMenuDetail?id=1242300798075086",
+      "checked": "2026-10-20",
+      "claims": [
+        "Final packed dimensions and weight can change freight; volumetric billing is route dependent."
+      ]
+    },
+    {
+      "id": "status",
+      "title": "Status of the Shopping Agent Orders",
+      "url": "https://www.lolobuy.com/helpCenter/1242296850973779",
+      "apiUrl": "https://www.lolobuy.com/prod-api/user/common/helpMenuDetail?id=1242296850973779",
+      "checked": "2026-10-20",
+      "claims": [
+        "Received precedes completed inspection; In Stock means stored inventory; parcel stages are separate."
+      ]
+    },
+    {
+      "id": "cancellation",
+      "title": "Can the Shopping Agent orders be cancelled or refunded?",
+      "url": "https://www.lolobuy.com/helpCenter/1242297000395937",
+      "apiUrl": "https://www.lolobuy.com/prod-api/user/common/helpMenuDetail?id=1242297000395937",
+      "checked": "2026-10-20",
+      "claims": [
+        "Cancellation and refund depend on order stage and seller agreement."
+      ]
+    },
+    {
+      "id": "claims",
+      "title": "How to apply for parcel after-sales",
+      "url": "https://www.lolobuy.com/helpCenter/1242301393535401",
+      "apiUrl": "https://www.lolobuy.com/prod-api/user/common/helpMenuDetail?id=1242301393535401",
+      "checked": "2026-10-20",
+      "claims": [
+        "Parcel after-sales uses a parcel-specific application with product and package evidence; stated time limits conflict."
+      ]
+    },
+    {
+      "id": "photos",
+      "title": "Standard photo service",
+      "url": "https://www.lolobuy.com/helpCenter/1242300722511995",
+      "apiUrl": "https://www.lolobuy.com/prod-api/user/common/helpMenuDetail?id=1242300722511995",
+      "checked": "2026-10-20",
+      "claims": [
+        "Secondary Quality Inspection is offered for stored goods whose inspection was previously skipped."
+      ]
+    },
+    {
+      "id": "service",
+      "title": "Shopping Agent Service",
+      "url": "https://www.lolobuy.com/helpCenter/1242300714582134",
+      "apiUrl": "https://www.lolobuy.com/prod-api/user/common/helpMenuDetail?id=1242300714582134",
+      "checked": "2026-10-20",
+      "claims": [
+        "Service overview describes additional QC photos on request, but numbers differ from standard inspection."
+      ]
+    },
+    {
+      "id": "changes",
+      "title": "Can I modify my order after the order has been submitted?",
+      "url": "https://www.lolobuy.com/helpCenter/1242296854971485",
+      "apiUrl": "https://www.lolobuy.com/prod-api/user/common/helpMenuDetail?id=1242296854971485",
+      "checked": "2026-10-20",
+      "claims": [
+        "Before dispatch changes are negotiated; after dispatch return and a new order may be needed."
+      ]
+    },
+    {
+      "id": "confirmation",
+      "title": "What does \"Pending for confirmation\" means and what do I do?",
+      "url": "https://www.lolobuy.com/helpCenter/1242296869258363",
+      "apiUrl": "https://www.lolobuy.com/prod-api/user/common/helpMenuDetail?id=1242296869258363",
+      "checked": "2026-10-20",
+      "claims": [
+        "Pending for Confirmation requires an answer to the order message."
+      ]
+    },
+    {
+      "id": "confirmation-path",
+      "title": "How to reply if Shopping Agent order is ‘Pending for Confirmatio",
+      "url": "https://www.lolobuy.com/helpCenter/1242296873911429",
+      "apiUrl": "https://www.lolobuy.com/prod-api/user/common/helpMenuDetail?id=1242296873911429",
+      "checked": "2026-10-20",
+      "claims": [
+        "Purchased-order and warehouse confirmations are handled in different account sections."
+      ]
+    },
+    {
+      "id": "freight-balance",
+      "title": "How LoloBuy Collects Supplemental Payments for Parcels",
+      "url": "https://www.lolobuy.com/helpCenter/1242300801155283",
+      "apiUrl": "https://www.lolobuy.com/prod-api/user/common/helpMenuDetail?id=1242300801155283",
+      "checked": "2026-10-20",
+      "claims": [
+        "Initial freight is estimated; actual freight can require a supplemental payment or refund."
+      ]
+    },
+    {
+      "id": "domestic",
+      "title": "Shall I just pay for one delivery fee if I bought several items ",
+      "url": "https://www.lolobuy.com/helpCenter/1242296838456383",
+      "apiUrl": "https://www.lolobuy.com/prod-api/user/common/helpMenuDetail?id=1242296838456383",
+      "checked": "2026-10-20",
+      "claims": [
+        "Same-seller items checked out together can share domestic freight; heavy orders may require a balance."
+      ]
+    },
+    {
+      "id": "promotions",
+      "title": "What do I do if the item has a discounted price?",
+      "url": "https://www.lolobuy.com/helpCenter/1242296946132123",
+      "apiUrl": "https://www.lolobuy.com/prod-api/user/common/helpMenuDetail?id=1242296946132123",
+      "checked": "2026-10-20",
+      "claims": [
+        "Real seller offers should be described in remarks for agent verification."
+      ]
+    },
+    {
+      "id": "returns",
+      "title": "Terms of Promised Returns with no reasons",
+      "url": "https://www.lolobuy.com/helpCenter/1242296939447441",
+      "apiUrl": "https://www.lolobuy.com/prod-api/user/common/helpMenuDetail?id=1242296939447441",
+      "checked": "2026-10-20",
+      "claims": [
+        "Eligible returns have a stated 120-hour window from the hour after Stocked in, subject to conditions."
+      ]
+    },
+    {
+      "id": "refunds",
+      "title": "Return the Product",
+      "url": "https://www.lolobuy.com/helpCenter/1242296789304333",
+      "apiUrl": "https://www.lolobuy.com/prod-api/user/common/helpMenuDetail?id=1242296789304333",
+      "checked": "2026-10-20",
+      "claims": [
+        "Approved refunds generally go to account balance; a narrow PayPal exception is not general payment-method evidence."
+      ]
+    },
+    {
+      "id": "wholesale",
+      "title": "Guide to 1688 Shopping Agent Service",
+      "url": "https://www.lolobuy.com/helpCenter/1242296792646674",
+      "apiUrl": "https://www.lolobuy.com/prod-api/user/common/helpMenuDetail?id=1242296792646674",
+      "checked": "2026-10-20",
+      "claims": [
+        "1688 orders require seller minimums and have separate quantity/inspection considerations."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "id": "what-is-lolobuy",
+      "category": "Getting started",
+      "question": "What does LoloBuy do?",
+      "answer": "LoloBuy acts as a purchasing agent: you provide a seller listing, select the item, pay for the purchase and Chinese domestic delivery, then review the warehouse stage before arranging international shipping. The seller supplies the goods. A product link or spreadsheet entry is a starting point for checking an order, not confirmation of current stock.",
+      "sourceIds": [
+        "buying",
+        "service"
+      ]
+    },
+    {
+      "id": "place-order",
+      "category": "Getting started",
+      "question": "How do I order through LoloBuy?",
+      "answer": "Paste the original product link into LoloBuy, check the imported listing and select the exact color, size and quantity. Review the item price, domestic delivery and any requested services before payment. LoloBuy’s official guide then separates purchasing, warehouse inspection and international parcel submission into distinct stages.",
+      "sourceIds": [
+        "buying"
+      ]
+    },
+    {
+      "id": "manual-order",
+      "category": "Getting started",
+      "question": "What if LoloBuy cannot read my product link?",
+      "answer": "The official buying guide describes a manual shopping-agent order form when automatic import is unavailable. Complete the actual product information and chosen options, and review the order before submitting it. Do not replace a marketplace item ID with a spreadsheet’s internal page number: they identify different records.",
+      "sourceIds": [
+        "buying"
+      ]
+    },
+    {
+      "id": "domestic-delivery",
+      "category": "Orders and payment",
+      "question": "Can several items share one Chinese delivery fee?",
+      "answer": "LoloBuy’s domestic-delivery FAQ describes one charge when products from the same seller are submitted and checked out together. An unusually large or heavy order can require an additional delivery payment. This arrangement does not automatically combine charges across different sellers or include international shipping.",
+      "sourceIds": [
+        "domestic"
+      ]
+    },
+    {
+      "id": "seller-promotion",
+      "category": "Orders and payment",
+      "question": "How do I ask LoloBuy to apply a seller’s discount?",
+      "answer": "Record the real promotion or free-domestic-shipping offer in the order remarks so the purchasing agent can verify it with the seller. The official help also describes using Order Enquiry if the promotion information was omitted. A claimed discount must be checked; a spreadsheet cannot promise that an old offer still applies.",
+      "sourceIds": [
+        "promotions"
+      ]
+    },
+    {
+      "id": "change-order",
+      "category": "Orders and payment",
+      "question": "Can I change my size or color after ordering?",
+      "answer": "Before the seller dispatches the item, LoloBuy says it can negotiate a change. After dispatch, the help page describes a possible warehouse return followed by a new order instead, with return delivery costs. Send the request against the actual order promptly and wait for acceptance before assuming the option has changed.",
+      "sourceIds": [
+        "changes"
+      ]
+    },
+    {
+      "id": "confirmation-message",
+      "category": "Orders and payment",
+      "question": "What does Pending for Confirmation mean?",
+      "answer": "Some order details need your confirmation. Read and answer the message attached to the order. Official help directs purchased-order questions to Shopping Agent Order and warehouse-stage questions to My Warehouse, where an accept-or-return decision may be requested. Menu wording can vary; waiting for a tracking update does not answer the request.",
+      "sourceIds": [
+        "confirmation",
+        "confirmation-path"
+      ]
+    },
+    {
+      "id": "received-in-stock",
+      "category": "Warehouse and QC",
+      "question": "What is the difference between Received and In Stock?",
+      "answer": "The official status guide uses Received when the warehouse has signed for the seller’s parcel and inspection is underway. In Stock means the quality check is complete and the items are stored in your inventory. Warehouse receipt therefore does not mean your QC review or international shipment is already finished.",
+      "sourceIds": [
+        "status"
+      ]
+    },
+    {
+      "id": "qc-checks",
+      "category": "Warehouse and QC",
+      "question": "What does standard QC check?",
+      "answer": "LoloBuy’s standard inspection checks visible order details such as style, quantity, color, size, model and obvious damage. Read the actual inspection service and your order photos together. A visual check is not a guarantee of authenticity, precise fit or long-term durability.",
+      "sourceIds": [
+        "qc"
+      ]
+    },
+    {
+      "id": "inspection-exclusions",
+      "category": "Warehouse and QC",
+      "question": "Are sealed items and electronics fully tested?",
+      "answer": "No. The inspection rules describe exceptions for sealed products and explicitly exclude authenticity, function and quality testing for professional electronics and related goods. With the no-inspection option, the warehouse checks restrictions but does not verify the product or provide QC photos. Review the chosen service before relying on an inspection result.",
+      "sourceIds": [
+        "qc"
+      ]
+    },
+    {
+      "id": "qc-photos",
+      "category": "Warehouse and QC",
+      "question": "Can I request more QC photos?",
+      "answer": "The service overview describes additional photos on request; the photo-service page also offers Secondary Quality Inspection when inspection was skipped before storage. The official pages give differing standard photo counts. Check your selected service and request the specific missing view or measurement, rather than assuming every order includes the same number of images.",
+      "sourceIds": [
+        "service",
+        "photos",
+        "qc"
+      ]
+    },
+    {
+      "id": "storage-period",
+      "category": "Warehouse and QC",
+      "question": "How long can items stay in the LoloBuy warehouse?",
+      "answer": "The dedicated storage page and current status guide state 180 days for ordinary stored goods, while an older buying guide still says 90. Abnormal unmatched parcels have separate rules. Check the deadline displayed for your own item and arrange shipping or any extension before it expires; do not rely on the older guide alone.",
+      "sourceIds": [
+        "storage",
+        "status",
+        "buying"
+      ]
+    },
+    {
+      "id": "consolidate",
+      "category": "Shipping and tracking",
+      "question": "Can I ship several purchases in one parcel?",
+      "answer": "The buying guide describes selecting stored items in My Warehouse and submitting them for delivery together. Check that all chosen items have completed the necessary review and that the available route accepts the resulting parcel. Combining items changes the packed parcel; it does not guarantee a lower total freight charge.",
+      "sourceIds": [
+        "buying"
+      ]
+    },
+    {
+      "id": "remove-packaging",
+      "category": "Shipping and tracking",
+      "question": "Can LoloBuy remove boxes before shipping?",
+      "answer": "The Package Removal service can be selected when submitting delivery. Its official description says necessary protective packaging is retained. If you need original boxes for a gift, storage or a possible return, consider that before choosing removal. The final packing result and freight depend on the goods and chosen shipment.",
+      "sourceIds": [
+        "packaging"
+      ]
+    },
+    {
+      "id": "shipping-price",
+      "category": "Shipping and tracking",
+      "question": "Why can the final shipping charge differ from the estimate?",
+      "answer": "The initial freight is based on estimated weight and the chosen destination and route. Packing can change weight and dimensions, and the logistics provider’s charge determines settlement. LoloBuy describes refunding overpayments or requesting a supplemental payment when the actual freight differs. Check the final parcel quote and account message.",
+      "sourceIds": [
+        "weight",
+        "freight-balance"
+      ]
+    },
+    {
+      "id": "volumetric-weight",
+      "category": "Shipping and tracking",
+      "question": "What is volumetric weight?",
+      "answer": "It converts the parcel’s dimensions into a weight used for billing bulky goods. LoloBuy’s help distinguishes route-specific formulas and notes that billable weight can be the greater of actual and volumetric weight. Use the divisor and rounding rules shown for your selected route, not a universal price-per-kilogram claim.",
+      "sourceIds": [
+        "weight"
+      ]
+    },
+    {
+      "id": "supplemental-payment",
+      "category": "Shipping and tracking",
+      "question": "What should I do about an extra shipping-payment notice?",
+      "answer": "Open the corresponding parcel and review the revised charge and confirmation request. LoloBuy’s supplemental-payment rules use different handling thresholds and include cases where a parcel can be held or canceled. Respond to the deadline shown for your parcel and settle any accepted balance; do not treat the original estimate as final.",
+      "sourceIds": [
+        "freight-balance"
+      ]
+    },
+    {
+      "id": "tracking",
+      "category": "Shipping and tracking",
+      "question": "Where can I track my international parcel?",
+      "answer": "The official buying guide directs users to My LoloBuy → Parcels after dispatch. The status guide distinguishes Packed from Shipped: a packed parcel may still await final weight confirmation, while Shipped means it has a tracking number and has been handed to the carrier. Read the latest carrier event as well as the account status.",
+      "sourceIds": [
+        "buying",
+        "status"
+      ]
+    },
+    {
+      "id": "cancellation",
+      "category": "Returns and after-sales",
+      "question": "Can I cancel an order before it reaches the warehouse?",
+      "answer": "Cancellation depends on the current order stage. Use the relevant order’s cancellation or return/refund option. Once the item has been purchased, seller confirmation may be required; a submitted request is not an approved refund. Check the response in that order before making a replacement purchase.",
+      "sourceIds": [
+        "cancellation",
+        "refunds"
+      ]
+    },
+    {
+      "id": "eligible-return",
+      "category": "Returns and after-sales",
+      "question": "What does LoloBuy’s five-day return rule cover?",
+      "answer": "The dedicated rule describes a 120-hour request window starting at the next hour after Stocked in for eligible goods. Seller agreement, item condition and required packaging still apply. A no-fault return can involve both domestic shipping legs and a handling fee. Check eligibility and the actual request page promptly.",
+      "sourceIds": [
+        "returns"
+      ]
+    },
+    {
+      "id": "refund-destination",
+      "category": "Returns and after-sales",
+      "question": "Where is an approved refund sent?",
+      "answer": "The return-help page generally describes crediting approved refunds to the LoloBuy account balance. It separately describes a narrow original-payment-method exception for certain PayPal orders awaiting approval. This is not a promise that every refund goes straight to a bank card, or evidence that every payment method is currently available.",
+      "sourceIds": [
+        "refunds"
+      ]
+    },
+    {
+      "id": "delivery-problem",
+      "category": "Returns and after-sales",
+      "question": "What should I do if my delivered parcel is damaged or wrong?",
+      "answer": "Open the affected parcel in My LoloBuy → Parcels and use Apply After-sales. Describe the issue and retain clear photos of the parcel and product. The official article contains conflicting claim windows, including an earlier warning, so report the problem immediately and obtain case-specific confirmation rather than waiting for a generic deadline.",
+      "sourceIds": [
+        "claims"
+      ]
+    },
+    {
+      "id": "sizing",
+      "category": "Product decisions",
+      "question": "How should I choose a clothing or shoe size?",
+      "answer": "LoloBuy’s size reference warns that store standards can differ. Compare the actual seller’s measurement chart, units and chosen option with your measurements or a well-fitting item. Its conversion tables are references, not a guarantee that one label fits across every seller. Ask about missing measurements before ordering.",
+      "sourceIds": [
+        "sizing"
+      ]
+    },
+    {
+      "id": "1688",
+      "category": "Product decisions",
+      "question": "Do 1688 orders use the same purchase and inspection rules?",
+      "answer": "The official 1688 guide requires the seller’s minimum quantity; prices and domestic freight can vary with quantity. Inspection rules distinguish sampled Type A products from Type B products without standard QC. Confirm the quantity, inspection scope and return terms before payment instead of assuming retail-order treatment.",
+      "sourceIds": [
+        "wholesale",
+        "qc"
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "topic": "Storage discrepancy",
+      "evidence": "Dedicated storage and current status: 180 days. Older buying guide: 90 days.",
+      "editorialRule": "Disclose discrepancy and prioritize the current item deadline; do not promise unconditional storage."
+    },
+    {
+      "topic": "Photo counts differ",
+      "evidence": "Standard inspection: 3–6. Service overview: 5 plus 5 on request; separate parcel photos.",
+      "editorialRule": "Do not turn either marketing description into a universal entitlement."
+    },
+    {
+      "topic": "After-sales deadlines conflict",
+      "evidence": "Same parcel-help article says 7 days after receipt or 45 since dispatch, then warns after 3 days delivered may be rejected.",
+      "editorialRule": "Recommend immediate reporting and confirmation for the specific parcel; do not invent one consolidated deadline."
+    },
+    {
+      "topic": "Weight example is malformed",
+      "evidence": "Official example switches 2573/2537, arithmetic signs and currency/gram units.",
+      "editorialRule": "Explain route-specific billing; any numerical illustration must be explicitly hypothetical and mathematically correct."
+    },
+    {
+      "topic": "1688 photo table",
+      "evidence": "Standard photo-service table is embedded as an image. Inspection text states Type A sampling and Type B no standard QC.",
+      "editorialRule": "Use verified text rules; do not infer unread photo-table cells."
+    },
+    {
+      "topic": "Current payment methods",
+      "evidence": "Old buying guide lists methods, return article has specific PayPal exception.",
+      "editorialRule": "Do not claim every mentioned payment method is available in current checkout."
+    }
+  ]
+}

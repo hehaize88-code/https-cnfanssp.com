@@ -1,0 +1,1131 @@
+{
+  "ui": {
+    "nav": [
+      "Izklājlapa",
+      "Kā tas darbojas",
+      "Ceļveži",
+      "Raksti",
+      "BUJ"
+    ],
+    "register": "Atvērt LoloBuy",
+    "language": "Valoda",
+    "preview": "Dizaina priekšskatījums",
+    "previewNote": "Pirmais ieskats lolobuysheet.nl",
+    "eyebrow": "LABI ATRADUMI. MAZĀK RITINĀŠANAS.",
+    "hero1": "Jūsu nākamais atradums.",
+    "hero2": "Viena izklājlapa.",
+    "intro": "Izpētiet LoloBuy izklājlapu. Pārlūkojiet apģērbu, sporta apavus un aksesuārus, salīdziniet avota cenas un atveriet nākamo atradumu LoloBuy.",
+    "search": "Meklēt visā katalogā…",
+    "searchButton": "Meklēt preces",
+    "photo": "Meklēšana pēc attēla",
+    "popular": "Izpētiet:",
+    "tagline": "Viens katalogs. Jūsu nākamais atklājums.",
+    "source": "Preces no cnfanssp.com",
+    "independent": "Neatkarīga LoloBuy preču atklāšanas vietne",
+    "browse": "Izpētiet izklājlapu",
+    "browseSub": "Nedaudz mazāk meklēšanas. Daudz vairāk atradumu.",
+    "all": "Visas preces",
+    "sort": "Kārtot pēc",
+    "sorts": [
+      "Izcelts",
+      "Jaunākās",
+      "Visvairāk skatītās",
+      "Cena: no zemākās",
+      "Cena: no augstākās"
+    ],
+    "count": "preces",
+    "view": "Skatīt preci",
+    "buy": "Atvērt LoloBuy",
+    "details": "Preces informācija",
+    "categories": {
+      "shoes": "Apavi",
+      "hoodies": "Džemperi",
+      "tshirts": "T-krekli",
+      "jackets": "Jakas",
+      "pants": "Bikses un šorti",
+      "headwear": "Galvassegas",
+      "accessories": "Aksesuāri",
+      "sets": "Īsie komplekti",
+      "electronics": "Elektronika",
+      "other": "Citas preces",
+      "jerseys": "Sporta krekli"
+    },
+    "previous": "Iepriekšējā",
+    "next": "Nākamā",
+    "page": "Lapa",
+    "empty": "Nav meklējumam atbilstošu preču.",
+    "reset": "Notīrīt filtrus",
+    "sourceSearch": "Meklēt visā avota katalogā",
+    "snapshot": "Aktuālais katalogs no cnfanssp.com. Preču cenas CNY neietver piegādi un pakalpojumu maksu. Pašreizējos variantus un gala piedāvājumu pārbaudiet LoloBuy.",
+    "howTitle": "No atraduma līdz pakas atvēršanai.",
+    "howSub": "LoloBuy lietojat pirmo reizi? Sāciet ar šiem trim soļiem.",
+    "steps": [
+      [
+        "01",
+        "Atrodiet kaut ko sev tīkamu",
+        "Pārlūkojiet kategorijas un pārbaudiet sākotnējo sludinājumu, izmēru un preces fotoattēlus."
+      ],
+      [
+        "02",
+        "Atveriet preci LoloBuy",
+        "Izmantojiet preces saiti, lai izvēlētos variantus un pārbaudītu pašreizējo cenu."
+      ],
+      [
+        "03",
+        "Pārbaudiet pirms nosūtīšanas",
+        "Sekojiet LoloBuy noliktavas procesam, pārbaudiet pieejamo QC un izvēlieties piegādi."
+      ]
+    ],
+    "guides": "Daži padomi palīdz daudz.",
+    "guidesSub": "Noderīga informācija pirms pirmā pasūtījuma.",
+    "read": "Lasīt ceļvedi",
+    "allGuides": "Visi ceļveži",
+    "cta": "Atradāt savu nākamo iecienīto preci?",
+    "ctaSub": "Atveriet to LoloBuy un pasūtiet.",
+    "ctaButton": "Izpētīt visas preces",
+    "footer": "Neatkarīga preču atklāšanas vietne. Mēs neesam oficiālā LoloBuy vietne. Preču sludinājumi un fotoattēli tiek iegūti no cnfanssp.com. Pirkumi tiek pabeigti LoloBuy.",
+    "footerLinks": [
+      "Izklājlapa",
+      "Pirkšanas ceļvedis",
+      "Meklēšana pēc attēla",
+      "BUJ"
+    ],
+    "back": "Atpakaļ uz izklājlapu",
+    "sourceListing": "Sākotnējais avota sludinājums",
+    "seller": "Pārdevēja sludinājums",
+    "sourcePrice": "Avota cena · CNY",
+    "productId": "Pārdevēja preces ID",
+    "gallery": "Sludinājuma fotoattēli",
+    "qc": "Kvalitātes pārbaudes fotoattēli",
+    "qcNote": "Avots šai precei piedāvā sludinājuma fotoattēlus. Tie nav pārbaudīti noliktavas QC fotoattēli. Pirms nosūtīšanas pārskatiet QC, kas pievienota jūsu pašu LoloBuy pasūtījumam.",
+    "priceNote": "Tikai preces cena. Pirms pasūtīšanas LoloBuy pārbaudiet pieejamību, variantus, piegādi un pakalpojumu maksu.",
+    "photoTitle": "Atrodiet ar fotoattēlu.",
+    "photoIntro": "Izmantojiet avota katalogu, lai atrastu un salīdzinātu preces.",
+    "photoState": "Meklēšana pēc attēla avotā",
+    "photoNote": "cnfanssp.com nav apstiprināts publisks attēlu meklēšanas pakalpojums. Mēs nepieņemam fotoattēlu augšupielādi, kamēr avota pakalpojums nav pieejams.",
+    "browseInstead": "Pārlūkot preces",
+    "faqTitle": "LoloBuy: atbildes pirms pasūtīšanas.",
+    "faqIntro": "Izpētīts oficiālajās LoloBuy palīdzības lapās. Ja oficiālās lapas atšķiras, atbildē paskaidrots, kas jāpārbauda.",
+    "guideLabel": "PRAKTISKAIS CEĻVEDIS",
+    "guideTitle": "Izskaidrots pirmais LoloBuy pasūtījums.",
+    "guideIntro": "No preces atrašanas līdz pārbaudei noliktavā: praktisks sākums.",
+    "updated": "Pārskatīts 2026. gada oktobrī",
+    "related": "Vēl ko izpētīt",
+    "home": "Sākums",
+    "aboutPhotos": "Avota sludinājuma attēli",
+    "catalogLive": "Aktuālais avota katalogs",
+    "catalogCached": "Tiek rādīts pēdējais pilnais avota momentuzņēmums.",
+    "catalogLoading": "Atjaunina avota katalogu…",
+    "catalogError": "Avots īslaicīgi nav pieejams. Mēģiniet vēlreiz vai atveriet sākotnējo katalogu.",
+    "retry": "Mēģināt vēlreiz",
+    "loading": "Ielādē…",
+    "productError": "Šo preci neizdevās ielādēt. Mēģiniet vēlreiz vai pārbaudiet sākotnējo sludinājumu.",
+    "pageOf": "no",
+    "jump": "Pāriet uz lapu",
+    "go": "Pāriet",
+    "articlesLabel": "Raksti",
+    "articlesTitle": "Detalizētas zināšanas par iepirkšanos LoloBuy.",
+    "articlesIntro": "Desmit praktiski ceļveži, kas izpētīti oficiālajās LoloBuy palīdzības lapās. Atrodiet preces, pārbaudiet QC, plānojiet budžetu un piegādi ar skaidrāku informāciju.",
+    "articleSources": "Oficiālie avoti",
+    "reviewed": "Pārskatīts 2026. gada 20. oktobrī",
+    "readArticle": "Lasīt rakstu",
+    "allArticles": "Visi raksti",
+    "contents": "Šajā lapā",
+    "checklist": "Praktisks kontrolsaraksts",
+    "summary": "Īsumā",
+    "reading": "min lasīšanai",
+    "faqSearch": "Meklēt jautājumus…",
+    "noQuestions": "Nav atbilstošu jautājumu.",
+    "officialHelp": "Lasīt oficiālos norādījumus",
+    "skip": "Pāriet uz saturu",
+    "menu": "Izvēlne",
+    "close": "Aizvērt",
+    "languageSearch": "Izvēlieties valodu",
+    "catalogNote": "Cenas un pieejamība var mainīties.",
+    "articleFooter": "Neatkarīgi redakcionāli norādījumi. Pirms maksāšanas vai nosūtīšanas pārbaudiet savam pasūtījumam norādītos noteikumus.",
+    "notFound": "Prece nav atrasta",
+    "showMore": "Rādīt visu",
+    "findSteps": "ATRODIET. PĀRBAUDIET. PASŪTIET.",
+    "nextFind": "NĀKAMAIS ATRADUMS IR JŪSU.",
+    "liveLabel": "Atjaunināts no avota",
+    "faqCount": "izpētītas atbildes",
+    "catalogue": "Katalogs"
+  },
+  "faqs": [
+    {
+      "id": "what-is-lolobuy",
+      "category": "Darba sākšana",
+      "question": "Ko dara LoloBuy?",
+      "answer": "LoloBuy darbojas kā iepirkšanās aģents: jūs iesniedzat pārdevēja sludinājumu, izvēlaties preci, samaksājat par pirkumu un vietējo piegādi Ķīnā, pēc tam pārskatāt noliktavas posmu pirms starptautiskās piegādes organizēšanas. Preces nodrošina pārdevējs. Preces saite vai izklājlapas ieraksts ir sākumpunkts pasūtījuma pārbaudei, nevis pašreizējo krājumu apstiprinājums.",
+      "sourceIds": [
+        "buying",
+        "service"
+      ]
+    },
+    {
+      "id": "place-order",
+      "category": "Darba sākšana",
+      "question": "Kā pasūtīt ar LoloBuy?",
+      "answer": "Ielīmējiet sākotnējo preces saiti LoloBuy, pārbaudiet importēto sludinājumu un izvēlieties precīzu krāsu, izmēru un daudzumu. Pirms maksāšanas pārskatiet preces cenu, vietējo piegādi un pieprasītos pakalpojumus. Oficiālais LoloBuy ceļvedis pirkšanu, noliktavas pārbaudi un starptautiskās pakas iesniegšanu nodala atsevišķos posmos.",
+      "sourceIds": [
+        "buying"
+      ]
+    },
+    {
+      "id": "manual-order",
+      "category": "Darba sākšana",
+      "question": "Ko darīt, ja LoloBuy nevar nolasīt preces saiti?",
+      "answer": "Oficiālais pirkšanas ceļvedis apraksta manuālu aģenta pasūtījuma veidlapu, ja automātiska importēšana nav pieejama. Aizpildiet faktisko preces informāciju un izvēlētos variantus, pēc tam pārskatiet pasūtījumu pirms iesniegšanas. Neaizstājiet tirdzniecības vietnes preces ID ar izklājlapas iekšējās lapas numuru: tie identificē dažādus ierakstus.",
+      "sourceIds": [
+        "buying"
+      ]
+    },
+    {
+      "id": "domestic-delivery",
+      "category": "Pasūtījumi un maksāšana",
+      "question": "Vai vairākām precēm var būt viena piegādes maksa Ķīnā?",
+      "answer": "LoloBuy vietējās piegādes BUJ apraksta vienu maksu, ja viena pārdevēja preces tiek iesniegtas un apmaksātas kopā. Neparasti lielam vai smagam pasūtījumam var būt vajadzīgs papildu piegādes maksājums. Šī kārtība automātiski neapvieno dažādu pārdevēju maksas un neietver starptautisko piegādi.",
+      "sourceIds": [
+        "domestic"
+      ]
+    },
+    {
+      "id": "seller-promotion",
+      "category": "Pasūtījumi un maksāšana",
+      "question": "Kā lūgt LoloBuy piemērot pārdevēja atlaidi?",
+      "answer": "Īsto akciju vai bezmaksas vietējās piegādes piedāvājumu ierakstiet pasūtījuma piezīmēs, lai aģents to var pārbaudīt ar pārdevēju. Oficiālā palīdzība arī apraksta Order Enquiry lietošanu, ja akcijas informācija izlaista. Atlaide ir jāpārbauda; izklājlapa nevar apsolīt, ka vecs piedāvājums vēl darbojas.",
+      "sourceIds": [
+        "promotions"
+      ]
+    },
+    {
+      "id": "change-order",
+      "category": "Pasūtījumi un maksāšana",
+      "question": "Vai pēc pasūtīšanas var mainīt izmēru vai krāsu?",
+      "answer": "LoloBuy norāda, ka var vienoties par izmaiņām pirms pārdevējs nosūta preci. Pēc nosūtīšanas palīdzības lapa apraksta iespējamu atgriešanu no noliktavas un jaunu pasūtījumu, sedzot atgriešanas piegādi. Nekavējoties nosūtiet pieprasījumu konkrētajam pasūtījumam un sagaidiet pieņemšanu, pirms uzskatāt variantu par mainītu.",
+      "sourceIds": [
+        "changes"
+      ]
+    },
+    {
+      "id": "confirmation-message",
+      "category": "Pasūtījumi un maksāšana",
+      "question": "Ko nozīmē Pending for Confirmation?",
+      "answer": "Dažas pasūtījuma detaļas jāapstiprina jums. Izlasiet pasūtījumam pievienoto ziņu un atbildiet. Oficiālā palīdzība jautājumus par nopirktajām precēm novirza uz Shopping Agent Order, bet noliktavas posma jautājumus uz My Warehouse, kur var būt jāizlemj pieņemt vai atgriezt preci. Izvēļņu nosaukumi var atšķirties; gaidīšana uz izsekošanas atjauninājumu neatbild uz pieprasījumu.",
+      "sourceIds": [
+        "confirmation",
+        "confirmation-path"
+      ]
+    },
+    {
+      "id": "received-in-stock",
+      "category": "Noliktava un kvalitātes pārbaude",
+      "question": "Kāda ir atšķirība starp Received un In Stock?",
+      "answer": "Oficiālais statusu ceļvedis lieto Received, kad noliktava ir pieņēmusi pārdevēja paku un pārbaude vēl notiek. In Stock nozīmē, ka kvalitātes pārbaude pabeigta un preces glabājas jūsu krājumos. Saņemšana noliktavā tādēļ nenozīmē, ka jūsu QC pārskatīšana vai starptautiskā nosūtīšana jau pabeigta.",
+      "sourceIds": [
+        "status"
+      ]
+    },
+    {
+      "id": "qc-checks",
+      "category": "Noliktava un kvalitātes pārbaude",
+      "question": "Ko pārbauda standarta QC?",
+      "answer": "LoloBuy standarta pārbaude apskata redzamas pasūtījuma detaļas, piemēram, stilu, daudzumu, krāsu, izmēru, modeli un acīmredzamus bojājumus. Kopā pārskatiet faktisko pārbaudes pakalpojumu un pasūtījuma fotoattēlus. Vizuāla pārbaude negarantē autentiskumu, precīzu piegulumu vai ilgtermiņa izturību.",
+      "sourceIds": [
+        "qc"
+      ]
+    },
+    {
+      "id": "inspection-exclusions",
+      "category": "Noliktava un kvalitātes pārbaude",
+      "question": "Vai aizzīmogotas preces un elektroniku pilnībā testē?",
+      "answer": "Nē. Pārbaudes noteikumi apraksta izņēmumus aizzīmogotām precēm un tieši izslēdz profesionālās elektronikas un saistītu preču autentiskuma, darbības un kvalitātes testēšanu. Izvēloties variantu bez pārbaudes, noliktava pārbauda ierobežojumus, bet nepārbauda preci un nesniedz QC fotoattēlus. Pirms paļaušanās uz rezultātu pārskatiet izvēlēto pakalpojumu.",
+      "sourceIds": [
+        "qc"
+      ]
+    },
+    {
+      "id": "qc-photos",
+      "category": "Noliktava un kvalitātes pārbaude",
+      "question": "Vai varu pieprasīt vairāk QC fotoattēlu?",
+      "answer": "Pakalpojumu pārskats apraksta papildu fotoattēlus pēc pieprasījuma; foto pakalpojuma lapa piedāvā arī Secondary Quality Inspection, ja pārbaude pirms uzglabāšanas izlaista. Oficiālajās lapās standarta attēlu skaits atšķiras. Pārbaudiet izvēlēto pakalpojumu un pieprasiet konkrēto trūkstošo skatu vai mērījumu, nevis pieņemiet, ka visos pasūtījumos ir vienāds attēlu skaits.",
+      "sourceIds": [
+        "service",
+        "photos",
+        "qc"
+      ]
+    },
+    {
+      "id": "storage-period",
+      "category": "Noliktava un kvalitātes pārbaude",
+      "question": "Cik ilgi preces var palikt LoloBuy noliktavā?",
+      "answer": "Atsevišķā uzglabāšanas lapa un pašreizējais statusu ceļvedis parastām uzglabātām precēm norāda 180 dienas, bet vecāks pirkšanas ceļvedis vēl norāda 90. Neparastām nesasaistītām pakām ir atsevišķi noteikumi. Pārbaudiet savai precei rādīto termiņu un pirms tā beigām noorganizējiet piegādi vai pagarinājumu; nepaļaujieties tikai uz vecāko ceļvedi.",
+      "sourceIds": [
+        "storage",
+        "status",
+        "buying"
+      ]
+    },
+    {
+      "id": "consolidate",
+      "category": "Piegāde un izsekošana",
+      "question": "Vai vairākus pirkumus var nosūtīt vienā pakā?",
+      "answer": "Pirkšanas ceļvedis apraksta uzglabāto preču izvēli My Warehouse un kopīgu iesniegšanu piegādei. Pārbaudiet, vai visas izvēlētās preces ir pienācīgi pārskatītas un vai pieejamais maršruts pieņem izveidoto paku. Preču apvienošana maina iepakoto paku; tā negarantē zemāku kopējo pārvadājuma maksu.",
+      "sourceIds": [
+        "buying"
+      ]
+    },
+    {
+      "id": "remove-packaging",
+      "category": "Piegāde un izsekošana",
+      "question": "Vai LoloBuy pirms nosūtīšanas var noņemt kastes?",
+      "answer": "Iesniedzot piegādi, var izvēlēties Package Removal pakalpojumu. Oficiālais apraksts norāda, ka nepieciešamais aizsargiepakojums tiek saglabāts. Ja oriģinālās kastes vajadzīgas dāvanai, glabāšanai vai iespējamai atgriešanai, apsveriet to pirms noņemšanas. Gala iepakojums un pārvadājums atkarīgs no precēm un izvēlētā sūtījuma.",
+      "sourceIds": [
+        "packaging"
+      ]
+    },
+    {
+      "id": "shipping-price",
+      "category": "Piegāde un izsekošana",
+      "question": "Kāpēc gala piegādes maksa var atšķirties no aprēķina?",
+      "answer": "Sākotnējais pārvadājums balstās uz paredzēto svaru un izvēlēto galamērķi un maršrutu. Iepakošana var mainīt svaru un izmērus, bet norēķinu nosaka loģistikas pakalpojuma sniedzēja maksa. LoloBuy apraksta pārmaksu atmaksāšanu vai papildu maksājumu, ja faktiskā maksa atšķiras. Pārbaudiet gala pakas piedāvājumu un konta ziņu.",
+      "sourceIds": [
+        "weight",
+        "freight-balance"
+      ]
+    },
+    {
+      "id": "volumetric-weight",
+      "category": "Piegāde un izsekošana",
+      "question": "Kas ir tilpumsvars?",
+      "answer": "Tas pārvērš pakas izmērus svarā, ko izmanto apjomīgu preču izmaksu aprēķināšanai. LoloBuy palīdzība izšķir maršrutam raksturīgas formulas un norāda, ka apmaksājamais svars var būt lielākais no faktiskā un tilpumsvara. Izmantojiet izvēlētā maršruta dalītāju un noapaļošanas noteikumus, nevis universālu solījumu par cenu kilogramā.",
+      "sourceIds": [
+        "weight"
+      ]
+    },
+    {
+      "id": "supplemental-payment",
+      "category": "Piegāde un izsekošana",
+      "question": "Ko darīt ar paziņojumu par papildu piegādes maksājumu?",
+      "answer": "Atveriet attiecīgo paku un pārskatiet mainīto maksu un apstiprinājuma pieprasījumu. LoloBuy papildu maksājumu noteikumi izmanto atšķirīgus apstrādes sliekšņus un paredz gadījumus, kad paku var aizturēt vai atcelt. Atbildiet līdz savai pakai norādītajam termiņam un samaksājiet pieņemto atlikumu; sākotnējo aprēķinu neuzskatiet par galīgu.",
+      "sourceIds": [
+        "freight-balance"
+      ]
+    },
+    {
+      "id": "tracking",
+      "category": "Piegāde un izsekošana",
+      "question": "Kur izsekot starptautisko paku?",
+      "answer": "Oficiālais pirkšanas ceļvedis pēc nosūtīšanas norāda My LoloBuy → Parcels. Statusu ceļvedis atšķir Packed no Shipped: iepakota paka vēl var gaidīt gala svara apstiprinājumu, bet Shipped nozīmē, ka tai ir izsekošanas numurs un tā nodota pārvadātājam. Pārskatiet jaunāko pārvadātāja notikumu un konta statusu.",
+      "sourceIds": [
+        "buying",
+        "status"
+      ]
+    },
+    {
+      "id": "cancellation",
+      "category": "Atgriešana un pēcpārdošanas atbalsts",
+      "question": "Vai varu atcelt pasūtījumu pirms nonākšanas noliktavā?",
+      "answer": "Atcelšana atkarīga no pašreizējā pasūtījuma posma. Izmantojiet konkrētā pasūtījuma atcelšanas vai preces/naudas atgriešanas iespēju. Kad prece nopirkta, var būt vajadzīgs pārdevēja apstiprinājums; iesniegts pieprasījums nav apstiprināta atmaksa. Pirms aizstājoša pirkuma pārbaudiet atbildi šajā pasūtījumā.",
+      "sourceIds": [
+        "cancellation",
+        "refunds"
+      ]
+    },
+    {
+      "id": "eligible-return",
+      "category": "Atgriešana un pēcpārdošanas atbalsts",
+      "question": "Ko aptver LoloBuy piecu dienu atgriešanas noteikums?",
+      "answer": "Atsevišķais noteikums atbilstošām precēm apraksta 120 stundu pieprasījuma periodu, sākot ar nākamo stundu pēc Stocked in statusa. Joprojām jāievēro pārdevēja piekrišana, preces stāvoklis un prasītais iepakojums. Atgriešana bez defekta var ietvert abus vietējās piegādes posmus un apstrādes maksu. Nekavējoties pārbaudiet atbilstību un faktisko pieprasījuma lapu.",
+      "sourceIds": [
+        "returns"
+      ]
+    },
+    {
+      "id": "refund-destination",
+      "category": "Atgriešana un pēcpārdošanas atbalsts",
+      "question": "Kur tiek ieskaitīta apstiprināta atmaksa?",
+      "answer": "Atgriešanas palīdzības lapa parasti apraksta apstiprinātu atmaksu ieskaitīšanu LoloBuy konta atlikumā. Tā atsevišķi apraksta šauru sākotnējā maksājuma veida izņēmumu dažiem PayPal pasūtījumiem, kas gaida apstiprinājumu. Tas nav solījums, ka katra atmaksa nonāks tieši bankas kartē, un nepierāda, ka visi maksājumu veidi pašlaik ir pieejami.",
+      "sourceIds": [
+        "refunds"
+      ]
+    },
+    {
+      "id": "delivery-problem",
+      "category": "Atgriešana un pēcpārdošanas atbalsts",
+      "question": "Ko darīt, ja piegādātā paka ir bojāta vai nepareiza?",
+      "answer": "Atveriet attiecīgo paku My LoloBuy → Parcels un izmantojiet Apply After-sales. Aprakstiet problēmu un saglabājiet skaidrus pakas un preces fotoattēlus. Oficiālajā rakstā ir pretrunīgi pieteikumu termiņi, tostarp agrāks brīdinājums, tādēļ ziņojiet nekavējoties un saņemiet konkrētā gadījuma apstiprinājumu, nevis gaidiet vispārīgu termiņu.",
+      "sourceIds": [
+        "claims"
+      ]
+    },
+    {
+      "id": "sizing",
+      "category": "Preču izvēle",
+      "question": "Kā izvēlēties apģērba vai apavu izmēru?",
+      "answer": "LoloBuy izmēru atsauce brīdina, ka veikalu standarti var atšķirties. Faktiskā pārdevēja mērījumu tabulu, vienības un izvēlēto variantu salīdziniet ar saviem izmēriem vai labi piegulošu preci. Pārrēķinu tabulas ir orientieris, ne garantija, ka viena etiķete derēs pie visiem pārdevējiem. Pirms pasūtīšanas jautājiet par trūkstošajiem mērījumiem.",
+      "sourceIds": [
+        "sizing"
+      ]
+    },
+    {
+      "id": "1688",
+      "category": "Preču izvēle",
+      "question": "Vai 1688 pasūtījumiem ir tie paši pirkšanas un pārbaudes noteikumi?",
+      "answer": "Oficiālais 1688 ceļvedis pieprasa pārdevēja minimālo daudzumu; cenas un vietējais pārvadājums var mainīties atkarībā no daudzuma. Pārbaudes noteikumi atšķir A tipa preču izlases pārbaudi no B tipa precēm bez standarta QC. Pirms maksāšanas apstipriniet daudzumu, pārbaudes apjomu un atgriešanas noteikumus, nevis pieņemiet mazumtirdzniecības pasūtījuma kārtību.",
+      "sourceIds": [
+        "wholesale",
+        "qc"
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "slug": "using-lolobuy-spreadsheet",
+      "title": "Kā lietot LoloBuy izklājlapu: pārvērtiet preces saiti noderīgā atlasē",
+      "description": "Atrodiet preces pēc kategorijas, salīdziniet precīzu sludinājumu un saglabājiet vajadzīgo informāciju pirms preces atvēršanas LoloBuy.",
+      "keyword": "lolobuy spreadsheet",
+      "category": "Darba sākšana",
+      "summary": "Noderīga izklājlapa sašaurina meklēšanu. Noderīga atlase fiksē precīzo preci, variantu un neatbildētos jautājumus, kas būs vajadzīgi pasūtījumam.",
+      "sections": [
+        {
+          "heading": "Sāciet ar pirkšanas lēmumu, nevis garu sarakstu",
+          "paragraphs": [
+            "LoloBuy izklājlapa ir preču atklāšanas rīks. Varat pārlūkot kategoriju, skatīt preču attēlus un sekot sludinājumam uz nākamo soli. Tas nenozīmē, ka kataloga izdevējs nopircis katru preci, pārbaudījis pārdevēju vai rezervējis jūsu izmēru. Katru rindu uztveriet kā norādi, kas jāpārbauda.",
+            "Pirms meklēšanas pierakstiet vajadzīgās preces veidu, svarīgos mērījumus un aptuveno preces budžetu. Melna džempera ar rāvējslēdzēju meklēšana ir lietderīgāka nekā visu pievilcīgo apģērbu saišu vākšana. Šaurāks jautājums arī palīdz pamanīt sludinājumu, kurā trūkst būtiskas informācijas."
+          ]
+        },
+        {
+          "heading": "Saglabājiet preces sākotnējo identitāti",
+          "paragraphs": [
+            "Skaitlis kataloga lapas adresē var būt vietējā ieraksta numurs. Tas var atšķirties no tirdzniecības vietnes preces ID pirkšanas saitē. Nemainiet skaitļus manuāli, lai saite izskatītos pareiza. Izmantojiet attiecīgās preces pogu un tad salīdziniet atvērto preci ar sludinājumu, kuru vēlējāties iegādāties.",
+            "Saglabājiet sākotnējo pārdevēja URL kopā ar izvēlēto variantu. Ekrānuzņēmums var saglabāt noderīgu skatu, bet tas ir mazāk noderīgs, ja nav zināms pārdevējs, izmērs vai krāsa. Ja saite atver citu preci vai tukšu sludinājumu, apstājieties un pārbaudiet pirms turpināšanas."
+          ]
+        },
+        {
+          "heading": "Salīdziniet līdzvērtīgus variantus",
+          "paragraphs": [
+            "Sākumcena var attiekties uz lētāko variantu, vienu aksesuāru vai citu daudzumu. Dažādos sludinājumos salīdziniet vienādu preces konfigurāciju. Divdaļīgs komplekts un viens tops nav jēgpilns cenu salīdzinājums, pat ja to sīktēli izskatās līdzīgi.",
+            "Pārbaudiet, vai galerija rāda izvēlēto krāsu un vai ir izmēru tabula. Vienādi attēli pie dažādiem pārdevējiem nepierāda vienādu izgatavošanu vai krājumus. Salīdzinājumā fiksējiet pieejamos pierādījumus un skaidri atstājiet tukšumu, ja svarīgs fakts nav zināms."
+          ],
+          "bullets": [
+            "Precīzā prece un pārdevēja URL",
+            "Izvēlētais izmērs, krāsa un daudzums",
+            "Pašreizējā cena šim variantam",
+            "Mērījumi vai izmēru tabulas atsauce",
+            "Viens neatrisināts jautājums pirms pasūtīšanas"
+          ]
+        },
+        {
+          "heading": "Izmantojiet oficiālo pāreju uz pirkumu",
+          "paragraphs": [
+            "LoloBuy pirkšanas ceļvedis apraksta tirdzniecības vietnes saites iesniegšanu, pieejamo variantu izvēli un samaksu par preci un vietējo piegādi. Tas apraksta arī manuālu pasūtījuma veidlapu, ja preces informāciju nevar iegūt automātiski. Veiksmīga saites atvēršana tādēļ ir tikai pasūtījuma pārskatīšanas sākums.",
+            "Oficiālajā preces lapā vēlreiz pārbaudiet attēlu, varianta tekstu un daudzumu. Katalogs nevar garantēt pašreizējos krājumus vai saglabāt izvēli, kuru neesat izvēlējies norēķinoties. Īpašu prasību aprakstiet pietiekami konkrēti, lai pircējs var rīkoties, piemēram, precīzu krāsas nosaukumu vai jautājumu par mērījumu."
+          ]
+        },
+        {
+          "heading": "Atdaliet atklāšanas attēlus no sava QC",
+          "paragraphs": [
+            "Pārdevēja galerija skaidro piedāvājumu. Vēsturisks noliktavas attēls var rādīt citas personas preci. Jūsu pasūtījumam pievienotie pārbaudes attēli ir pierādījumi, kas jāpārskata pirms šīs preces nosūtīšanas uz ārzemēm. Šie trīs attēlu veidi atbild uz dažādiem jautājumiem un nav savstarpēji aizvietojami.",
+            "Atlasei jāseko pasūtījumam. Kad prece sasniedz noliktavu, salīdziniet fiksēto variantu ar redzamo izmēra etiķeti, krāsu un daudzumu. Neatbilstību ir vieglāk izskaidrot, ja sākotnējā izvēle un pasūtījuma atsauce glabājas kopā."
+          ]
+        },
+        {
+          "heading": "Padariet atlasi noderīgu arī pēc pirkuma",
+          "paragraphs": [
+            "Saglabājiet tikai spēcīgākos kandidātus un pierakstiet, kāpēc katrs izturēja salīdzinājumu. Piemēram, vienam džemperim var būt skaidrāka mērījumu tabula, bet otram neatrisināta auduma detaļa. Tas pārvērš saišu krājumu lēmumā, ko varat pārskatīt bez izpētes sākšanas no jauna.",
+            "Pirms pirkšanas izlasiet pasūtīšanas un budžeta ceļvežus. Pirms pakas iesniegšanas izlasiet QC un piegādes ceļvežus. Izklājlapa ir visnoderīgākā, ja tā sasaista šos posmus, nevis pasniedz preces cenu kā pilnu piegādāta pasūtījuma izmaksu."
+          ]
+        }
+      ],
+      "checklist": [
+        "Saglabājiet precīzo avota URL un variantu.",
+        "Salīdziniet vienādus daudzumus un konfigurācijas.",
+        "Noskaidrojiet trūkstošos mērījumus pirms maksāšanas.",
+        "Pārbaudiet importēto sludinājumu LoloBuy.",
+        "Pirms nosūtīšanas pārskatiet sava pasūtījuma QC."
+      ],
+      "sourceIds": [
+        "buying",
+        "qc"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 554
+    },
+    {
+      "slug": "how-to-order-on-lolobuy",
+      "title": "Kā pasūtīt LoloBuy: preču saites, varianti un maksājuma posmi",
+      "description": "Sekojiet pasūtīšanai no tirdzniecības vietnes saites līdz noliktavas pārbaudei un atsevišķi iesniegtai starptautiskai pakai.",
+      "keyword": "how to order on lolobuy",
+      "category": "Pasūtīšana",
+      "summary": "Pārbaudiet preci pirms maksāšanas, noliktavas pierādījumus pirms nosūtīšanas un pakas piedāvājumu pirms izsūtīšanas. Katrs posms atbild uz citu jautājumu.",
+      "sections": [
+        {
+          "heading": "Sāciet oficiālajā vietnē",
+          "paragraphs": [
+            "Reģistrācijai, konta piekļuvei un maksāšanai izmantojiet oficiālo LoloBuy vietni. Šis neatkarīgais katalogs palīdz atklāt preces; tas nevāc jūsu paroli un neapstrādā pasūtījumu. Atverot preci, pārbaudiet galamērķi un sarunas par pirkumu saglabājiet pie attiecīgā pasūtījuma.",
+            "Oficiālais pirkšanas ceļvedis apraksta sākšanu ar preces saiti no atbalstītas Ķīnas tirdzniecības vietnes. Izvēlēto preci nodrošina pārdevējs, kas ievietojis sludinājumu. Šī atšķirība ir svarīga, jo iepirkšanās pakalpojums un pārdevējs nekontrolē vienas un tās pašas darījuma daļas."
+          ]
+        },
+        {
+          "heading": "Pārbaudiet importēto preci",
+          "paragraphs": [
+            "Ielīmējiet sākotnējo preces saiti vai izmantojiet atbilstošo kataloga LoloBuy pogu. Pirms variantu izvēles salīdziniet atvērto lapu ar avotu. Pārbaudiet galveno attēlu, preces nosaukumu, pieejamo pārdevēja informāciju, krāsu, izmēru un daudzumu. Nepaļaujieties tikai uz attēlu.",
+            "Ja lapa parāda manuālu aģenta pasūtījuma veidlapu, oficiālais ceļvedis norāda ievadīt datus manuāli. Aizpildiet tos pēc faktiskā sludinājuma, nevis miniet trūkstošos variantus. Neskaidru vajadzīgo detaļu precizējiet pasūtījuma jautājumu procesā, pirms lūdzat pircējam turpināt."
+          ],
+          "bullets": [
+            "Prece atbilst sākotnējam URL",
+            "Varianta teksts atbilst paredzētajai krāsai un izmēram",
+            "Daudzums un vienības cena attiecas uz to pašu konfigurāciju",
+            "Īpašā prasība uzrakstīta skaidri"
+          ]
+        },
+        {
+          "heading": "Izprotiet pirmo maksājumu",
+          "paragraphs": [
+            "Oficiālais pirkšanas process atdala preci un vietējo piegādi Ķīnā no vēlākās starptautiskās pakas. Pirmo maksājumu pārskatiet pa pozīcijām. Galamērķa izvēle pirkšanas laikā nenozīmē, ka redzamā preču kopsumma ietver visas maksas, kas vajadzīgas piegādei uz šo vietu.",
+            "Maksājuma veidus, valūtas un izvēles pakalpojumus pārbaudiet pašreizējā norēķinu lapā. Palīdzības raksta vispārīgs saraksts nesola, ka katrs veids ir pieejams jūsu kontam vai pasūtījumam. Saglabājiet maksājuma ierakstu un salīdziniet ar pasūtījuma statusu, nevis maksājiet vēlreiz lēnas lapas atsvaidzināšanas dēļ."
+          ]
+        },
+        {
+          "heading": "Atbildiet uz pasūtījuma jautājumiem",
+          "paragraphs": [
+            "LoloBuy izmanto “Pending for Confirmation” statusu informācijai, kas jāpārbauda. Palīdzības lapa pircēju novirza uz norādījumiem pasūtījumā. Izlasiet konkrēto jautājumu un atbildiet uz to: tas var ietekmēt, vai iepirkšanās komanda var turpināt.",
+            "Oficiālās izmaiņu vadlīnijas atšķir preces, kuras pārdevējs vēl nav nosūtījis, no jau nosūtītām. Pirms nosūtīšanas pircējs var jautāt pārdevējam par izmaiņām; pēc tam var būt vajadzīga atgriešana un jauns pasūtījums. Pieprasīta izmaiņa nav izpildīta, kamēr to neapstiprina pasūtījuma ieraksts."
+          ]
+        },
+        {
+          "heading": "Pārskatiet saņemšanu un pārbaudi",
+          "paragraphs": [
+            "Ierašanās noliktavā un pabeigta pārbaude ir atsevišķi atskaites punkti. Atrodiet preci noliktavas sadaļā un salīdziniet fotoattēlus un reģistrēto variantu ar pirkumu. Vispirms pārbaudiet identitāti, pēc tam svarīgās redzamās detaļas. Acīmredzamu neatbilstību atrisiniet pirms iekļaušanas starptautiskajā pakā.",
+            "Nepieņemiet, ka visas preces pārbauda vienādi. Oficiālā standarta pārbaudes politika apraksta aizzīmogotu preču ierobežojumus un dažu 1688 pasūtījumu īpašu apstrādi. Ja vajadzīgs noteikts mērījums vai skats, pārbaudiet tā pieejamību jūsu pasūtījumam, nevis uzskatiet vispārīgu QC attēlu par pierādījumu visam."
+          ]
+        },
+        {
+          "heading": "Pakas iesniegšana ir atsevišķs lēmums",
+          "paragraphs": [
+            "Oficiālais process norāda izvēlēties glabātās preces, ievadīt piegādes datus un izvēlēties pieejamās nosūtīšanas iespējas. Kopā pārskatiet galamērķi, ierobežojumus, iepakojuma izvēles un pārvadājuma depozītu. Nopirkta prece automātiski nav starptautiska paka, kas gatava izsūtīšanai.",
+            "Gala pārvadājums var atšķirties pēc iepakošanas un loģistikas mērījumiem. Sekojiet pakas ierakstam, vai nav korekciju vai apstiprinājuma pieprasījuma. Pēc nosūtīšanas izmantojiet paku sadaļu izsekošanai, saglabājiet pasūtījumu atsauces un pēc saņemšanas ātri pārbaudiet saturu."
+          ]
+        }
+      ],
+      "checklist": [
+        "Apstipriniet sākotnējo preci un precīzo variantu.",
+        "Pārskatiet preces un vietējās piegādes maksas.",
+        "Atbildiet uz gaidošiem apstiprinājuma pieprasījumiem.",
+        "Pārbaudiet noliktavas fotoattēlus un neatrisinātos jautājumus.",
+        "Pārskatiet atsevišķo starptautiskās pakas piedāvājumu."
+      ],
+      "sourceIds": [
+        "buying",
+        "confirmation",
+        "changes",
+        "qc",
+        "freight-balance"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 538
+    },
+    {
+      "slug": "lolobuy-qc-photos",
+      "title": "LoloBuy QC fotoattēli: praktisks pārbaudes saraksts pirms nosūtīšanas",
+      "description": "Atdaliet pārdevēja attēlus no savas noliktavas pārbaudes un pārbaudiet identitāti, redzamo stāvokli un detaļas, kurām vēl vajadzīgi pierādījumi.",
+      "keyword": "lolobuy qc photos",
+      "category": "Kvalitātes pārbaude",
+      "summary": "Sāciet ar pasūtīto preci un variantu. Izmantojiet pieejamos skatus, lai izlemtu, kas ir skaidrs, kam vajadzīgs papildu attēls un kas jāatrisina pirms izsūtīšanas.",
+      "sections": [
+        {
+          "heading": "Nosakiet, kādus pierādījumus skatāties",
+          "paragraphs": [
+            "Preces galerija ir pārdevēja piedāvājuma daļa. Atsauces QC fotoattēls var rādīt agrāku pasūtījumu. Jūsu noliktavas attēli attiecas uz preci, kas saņemta jūsu pirkumam. Pieņemot lēmumu, šīs grupas nodaliet, īpaši ja precei ir vairākas krāsas, versijas vai izmēri.",
+            "Sāciet, sasaistot pasūtījuma atsauci, preci un izvēlēto variantu. Detalizēta nepareizās versijas fotogrāfija nav noderīgs mierinājums. Ja attēlus nevar sasaistīt ar jūsu noliktavas preci, pirms izskata vērtēšanas lūdziet šo sasaisti."
+          ]
+        },
+        {
+          "heading": "Identitāti pārbaudiet pirms sīkām detaļām",
+          "paragraphs": [
+            "Vispirms pārskatiet izmēru, krāsu, daudzumu un modeli. Meklējiet saskanīgas etiķetes un vienas preces skatus. Attēlu kopums var būt pievilcīgs, bet joprojām rādīt nepareizu izmēru vai nepilnu komplektu. Redzamo salīdziniet ar saglabāto pasūtījuma izvēli, nevis atmiņu.",
+            "Apavu pārim pārbaudiet abus apavus un redzamos izmēra marķējumus. Apģērbam pārbaudiet izvēlēto krāsu un etiķetes izmēru. Somai vai aksesuāru komplektam pārbaudiet, vai gaidītās daļas ir redzamas. Tie ir praktiski pārbaudes soļi, nevis garantija, ka apskatīta katra slēptā detaļa."
+          ]
+        },
+        {
+          "heading": "Izmantojiet kategorijai atbilstošu sarakstu",
+          "paragraphs": [
+            "Apģērbam noder kopējā forma, priekšpuse un aizmugure, šuves, apdruka vai izšuvums un vietas, kur piegulums atkarīgs no mērījuma. Apaviem apskatiet pāri kopā, redzamo konstrukciju un prasīto izmēru. Somām aizdares, rokturi un iekšpuses skati atbild uz atšķirīgiem jautājumiem.",
+            "Pierakstiet tikai lēmumu ietekmējošās detaļas. Garš vispārīgs saraksts var novērst uzmanību no viena svarīga trūkstoša mērījuma vai bojātas aizdares. Ja priekšpuse skaidra, bet aizmugure trūkst, lūdziet trūkstošo skatu, nevis vēl vienu vispārīgu foto no tā paša leņķa."
+          ],
+          "bullets": [
+            "Apstipriniet identitāti un izvēlēto variantu",
+            "Apskatiet redzamo stāvokli un konstrukciju",
+            "Salīdziniet pieprasītos mērījumus",
+            "Trūkstošos skatus uzskaitiet atsevišķi no novērotiem defektiem"
+          ]
+        },
+        {
+          "heading": "Izprotiet standarta pakalpojuma robežas",
+          "paragraphs": [
+            "LoloBuy standarta pārbaudes lapa apraksta izskata pārbaudi un izņēmumus. Aizzīmogotas preces ne vienmēr atver, un noteiktas profesionālās vai elektroniskās preces nepārbauda attiecībā uz autentiskumu, darbību vai kvalitāti. Dažiem 1688 pasūtījumiem ir izlases vai citi pārbaudes noteikumi.",
+            "Oficiālās lapas nesaskan par vienu universālu fotoattēlu skaitu: pārbaudes lapa un plašākais pakalpojumu pārskats norāda dažādus daudzumus. Pārbaudiet pasūtījumam pievienoto pakalpojumu, nevis pieņemiet precīzu skaitu. Noderīgais jautājums ir, vai pieejamie pierādījumi aptver jūsu lēmumam vajadzīgo."
+          ]
+        },
+        {
+          "heading": "Lūdziet konkrētu papildu skatu",
+          "paragraphs": [
+            "Precīzs pieprasījums norāda pasūtījumu, fotografējamo vietu un iemeslu. Piemēram: “Lūdzu, parādiet izmēra etiķeti un izmēriet plakaniski nolikta apģērba krūšu platumu no šuves līdz šuvei.” Tas ir skaidrāk nekā jautāt, vai prece laba. Pirms papildu darba pārbaudiet pakalpojuma pieejamību un maksu.",
+            "Izmantojiet to pašu mērīšanas metodi, kas pārdevēja tabulā. Plakana apģērba platums un ķermeņa apkārtmērs ir dažādi lielumi. Saglabājiet attēlu un mērījumu kopā, lai skaitli nevarētu sajaukt ar cita izmēra vai citas preces mērījumu."
+          ]
+        },
+        {
+          "heading": "Pieņemiet dokumentētu lēmumu",
+          "paragraphs": [
+            "Sadaliet konstatēto apstiprinātajā, neskaidrajā un nepieņemamajā. Ja detaļa neskaidra, prasiet pierādījumus. Ja prece šķiet atšķirīga no pasūtījuma, pirms starptautiskās nosūtīšanas izmantojiet atbilstošo atbalsta vai atgriešanas procesu. Saglabājiet īsu problēmas aprakstu un attēlus, kas to pierāda.",
+            "Fotoattēli nevar noteikt visas materiāla īpašības, komfortu, ilgtermiņa izturību vai iekšējo darbību. Redzamā stāvokļa apstiprināšana ir šaurāks lēmums. Izlasiet atgriešanas noteikumus, kamēr prece vēl noliktavā, un neuztveriet veiksmīgu QC kā solījumu par muitu vai starptautisko piegādi."
+          ]
+        }
+      ],
+      "checklist": [
+        "Sasaistiet fotoattēlus ar savu pasūtījumu.",
+        "Vispirms pārbaudiet izmēru, krāsu, modeli un daudzumu.",
+        "Lūdziet konkrēto trūkstošo skatu vai mērījumu.",
+        "Pārbaudiet pārbaudes pakalpojumu un tā izņēmumus.",
+        "Būtiskas problēmas atrisiniet pirms pakas iesniegšanas."
+      ],
+      "sourceIds": [
+        "qc",
+        "photos",
+        "service",
+        "sizing"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 551
+    },
+    {
+      "slug": "lolobuy-shipping-costs",
+      "title": "LoloBuy piegādes izmaksas: salīdziniet visu paku",
+      "description": "Izprotiet paredzēto, faktisko un tilpumsvaru, tad salīdziniet maršrutus ar vienādu galamērķi, saturu un iepakojumu.",
+      "keyword": "lolobuy shipping calculator",
+      "category": "Piegāde",
+      "summary": "Noderīgs pārvadājuma salīdzinājums sākas ar vienu skaidri definētu paku. Ceļvedis skaidro ievaddatus un pārbaudes; tas nav aktuāls piegādes cenas piedāvājums.",
+      "sections": [
+        {
+          "heading": "Atdaliet preces cenu no pārvadājuma",
+          "paragraphs": [
+            "Cena pie preces nav pilnā piegādātā pirkuma maksa. Oficiālais LoloBuy process atdala preces pirkumu un vietējo piegādi no vēlākā starptautiskās piegādes depozīta. Budžetu varat novērtēt pirms pirkšanas, bet gala pakas salīdzinājumu nevar izveidot tikai no preces cenas.",
+            "Pierakstiet galamērķi, paredzēto saturu un iepakojumu, ko plānojat saglabāt. Apavu pāris ar kasti un tas pats pāris bez kastes ir dažādi iepakošanas lēmumi. Papildu preces maina svaru un izmērus, tāpēc viens mazs pirkums gala piedāvājumu var ietekmēt vairākos veidos."
+          ]
+        },
+        {
+          "heading": "Ziniet, kuru svaru salīdzināt",
+          "paragraphs": [
+            "LoloBuy svara ceļvedis atdala aprēķinu no iepakotās pakas faktiskā svara. Noliktavas preces ierakstā ir oriģinālais iepakojums, bet gala pakā arī ārējais transporta iepakojums un izvēlētā noņemšana vai nostiprināšana. Šajos posmos mērījumi var atšķirties.",
+            "Tilpumsvars atspoguļo pakas aizņemto telpu. Oficiālais ceļvedis dažādiem maršrutiem publicē atšķirīgus dalītājus. Nepiemērojiet vienu dalītāju visiem pārvadātājiem un nepieņemiet, ka vecs piemērs ir šodienas tarifs. Iesniedzamajai pakai izmantojiet pašreizējos maršruta noteikumus."
+          ],
+          "bullets": [
+            "Galamērķis un pasta indekss",
+            "Preču ierobežojumi un saturs",
+            "Faktiskais iepakotais svars",
+            "Garums, platums un augstums",
+            "Maršruta norēķinu noteikumi un iekļautie pakalpojumi"
+          ]
+        },
+        {
+          "heading": "Rēķiniet, nepasniedzot aprēķinu kā piedāvājumu",
+          "paragraphs": [
+            "Tikai ilustrācijai: 40 × 30 × 20 centimetru pakas tilpums ir 24 000 kubikcentimetru. Hipotētisks maršruts ar dalītāju 6 000 dod 4 kilogramu tilpumsvaru; dalītājs 5 000 dod 4,8 kilogramus. Neviens aprēķins nenosaka piegādes cenu.",
+            "Piemērs rāda, kāpēc maršruta noteikums ir svarīgs. Joprojām vajadzīgs faktiskais svars, norēķinu soļi, galamērķis un pašreizējā likme. Neizvēlieties maršrutu pēc skaļas “par kilogramu” cenas, ja maksa atkarīga no pirmās vienības, papildvienībām vai lielāka apmaksājamā svara."
+          ]
+        },
+        {
+          "heading": "Salīdziniet vienu un to pašu paku dažādos maršrutos",
+          "paragraphs": [
+            "Salīdzinot pieejamās līnijas, saglabājiet nemainīgus ievaddatus. Pārbaudiet pieņemto saturu, norādīto pārvadājuma aplēsi, izsekošanu, iepakojuma prasības un papildu aizsardzību. Zemāka sākuma summa nav pilnīgs salīdzinājums, ja pakalpojumi vai ierobežojumi atšķiras.",
+            "Piegādes aplēses uztveriet kā aplēses. Noliktavas apstrāde, pārvadātāja kustība un galamērķa procesi ir atsevišķi posmi. Šis ceļvedis nesola universālu piegādes laiku, beznodokļu maršrutu vai fiksētu muitas maksu. Lēmumam izmantojiet pašreizējo piedāvājumu un galamērķa oficiālos noteikumus."
+          ]
+        },
+        {
+          "heading": "Izvērtējiet iepakojuma kompromisus",
+          "paragraphs": [
+            "Oficiālā iepakojuma noņemšanas lapa apraksta nevajadzīga ārējā iepakojuma noņemšanu, saglabājot precei vajadzīgo aizsardzību. Tā iesaka neizvēlēties noņemšanu, ja oriģinālais iepakojums svarīgs dāvanai vai saglabāšanai. Mazāks tilpums var palīdzēt, taču aizsardzība un pirkuma mērķis joprojām ir svarīgi.",
+            "Lūdziet konkrētu iepakojumu, nevis vispārīgi noņemt visu. Salīdziniet gala mērījumus, ja tie pieejami. Apvienošana vai iepakojuma noņemšana automātiski nesamazina rēķinu katrā maršrutā, bet viegli bojājamai precei var vajadzēt vairāk aizsardzības."
+          ]
+        },
+        {
+          "heading": "Sekojiet gala norēķinam",
+          "paragraphs": [
+            "LoloBuy papildu maksājumu norādījumi saka, ka paredzēto pārvadājumu saskaņo ar loģistikas sniedzēja faktisko maksu. Tas var nozīmēt pārmaksas atmaksu vai papildu maksājumu. Lasiet pakas ziņas un atbildiet uz jūsu sūtījumam pievienotiem pieprasījumiem.",
+            "Sākotnējo aplēsi, gala apmaksājamos mērījumus, izvēlētos pakalpojumus un korekciju glabājiet kopā. Šis ieraksts palīdz saprast atšķirību. Iespējamās galamērķa maksas budžetējiet atsevišķi un pārbaudiet gala pakas summu, pirms uzskatāt pasūtījumu par pabeigtu."
+          ]
+        }
+      ],
+      "checklist": [
+        "Salīdziniet maršrutus ar identisku saturu un galamērķi.",
+        "Pārbaudiet faktiskā un tilpumsvara noteikumus.",
+        "Iekļaujiet lēmumā iepakojuma aizsardzību.",
+        "Atdaliet aplēses no gala maksām.",
+        "Pirms izsūtīšanas izlasiet pakas korekciju ziņas."
+      ],
+      "sourceIds": [
+        "buying",
+        "weight",
+        "packaging",
+        "freight-balance"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 519
+    },
+    {
+      "slug": "lolobuy-warehouse-consolidation",
+      "title": "LoloBuy noliktavas ceļvedis: pārbaude, glabāšana un apvienošana",
+      "description": "Sakārtojiet glabātās preces, atrisiniet QC jautājumus un izvēlieties iepakojumu, domājot par visu paku.",
+      "keyword": "lolobuy warehouse",
+      "category": "Noliktava",
+      "summary": "Noliktavas posms ļauj sasaistīt pirkuma ierakstu ar saņemto preci un izlemt, kas gatavs kopīgai nosūtīšanai.",
+      "sections": [
+        {
+          "heading": "Atšķiriet saņemšanu no gatavības",
+          "paragraphs": [
+            "Pārdevēja piegādes skenējums nozīmē, ka vietējā paka sasniegusi punktu savā ceļā. Tas pats par sevi neparāda, ka prece pārbaudīta, pareizi sasaistīta un gatava starptautiskai izsūtīšanai. LoloBuy statusu ceļvedis atdala saņemtās preces, pārbaudi un noliktavas krājumus.",
+            "Par darba sarakstu izmantojiet noliktavas ierakstu, nevis vienu izsekošanas ziņu. Katrai precei saglabājiet pasūtījuma numuru, variantu un QC statusu. Ja vairākas pārdevēja pakas pienāk kopā, tas neļauj vienai pabeigtai precei noslēpt jautājumu par citu."
+          ]
+        },
+        {
+          "heading": "Izveidojiet īsu noliktavas kontrolsarakstu",
+          "paragraphs": [
+            "Katrai precei fiksējiet pasūtīto, noliktavā redzamo un neatrisināto. Pietiek ar četrām kolonnām: prece, pareizais variants, pārbaudes lēmums un iepakošanas norāde. Mērķis ir saglabāt redzamu atvērtu jautājumu pirms pakas veidošanas.",
+            "Salīdziniet attēlus ar sākotnējo izvēli. Trūkstošs attēls un redzams defekts prasa atšķirīgas darbības. Neskaidrai detaļai lūdziet pierādījumus. Acīmredzamai neatbilstībai izskaidrojiet atšķirību ar pasūtījuma atsauci un apsveriet piemērojamo atgriešanas procesu."
+          ],
+          "bullets": [
+            "Pasūtījums un precīzais variants",
+            "Saņemšana noliktavā un pārbaudes statuss",
+            "Atvērts jautājums vai atgriešanas pieprasījums",
+            "Saglabāt vai noņemt oriģinālo iepakojumu",
+            "Gatavs starptautiskai pakai: jā vai nē"
+          ]
+        },
+        {
+          "heading": "Pārbaudiet glabāšanas termiņu tieši",
+          "paragraphs": [
+            "Oficiālajā materiālā ir pretrunīgi glabāšanas apgalvojumi: pirkšanas ceļvedī minētas 90 dienas, bet glabāšanas un statusu lapās 180. Glabāšanas lapa arī apraksta atsevišķu rīcību nesasaistītām neparastām pakām. Šīs atšķirības nedrīkst pārvērst vienā beznosacījumu solījumā.",
+            "Pārbaudiet savai precei pievienoto glabāšanas informāciju un precizējiet neatbilstību pirms paļaušanās uz termiņu. Fiksējiet datumu un izvēlēto maksas pagarinājumu. Neatstājiet preces gaidīt bezgalīgi tikai tāpēc, ka vispārīgs raksts dod ilgāku periodu nekā pašreizējais noliktavas ieraksts."
+          ]
+        },
+        {
+          "heading": "Apvienojiet saderīgas un pārbaudītas preces",
+          "paragraphs": [
+            "Oficiālais pirkšanas ceļvedis apraksta glabāto preču izvēli starptautiskai piegādei vai papildu pirkšanu un kopīgu sūtīšanu vēlāk. Apvienošana ļauj plānot paku kā veselumu. Tā nepadara katru kombināciju pieņemamu visos maršrutos.",
+            "Pirms apvienošanas ņemiet vērā ierobežojumus, trauslumu un neatrisinātos jautājumus. Preci, kas gaida atgriešanas lēmumu, neuzskatiet par gatavu. Smalkam aksesuāram var būt vajadzīga cita aizsardzība nekā apģērbam. Salīdziniet gala pakas izmērus un svaru, ne tikai preču skaitu."
+          ]
+        },
+        {
+          "heading": "Uzrakstiet precīzas iepakošanas norādes",
+          "paragraphs": [
+            "LoloBuy iepakojuma noņemšanas palīdzība apraksta nevajadzīga iepakojuma noņemšanu, saglabājot precei nepieciešamo aizsardzību. Ja oriģinālo iepakojumu vēlaties dāvanai vai kolekcijai, neatlasiet noņemšanu un skaidri norādiet prasību. Kastes vērtība ne vienmēr ir tās pārvadājuma svars.",
+            "Ja vajag, sniedziet katrai precei norādes: saglabāt trauslas preces aizsargbalstu, paturēt vienu mazumtirdzniecības kasti vai jautāt par pieejamu iepakošanu. Papildu pakalpojuma maksu pārskatiet pašreizējā pakas veidlapā. Nepieņemiet, ka viena iepakošanas pieeja der katrai kategorijai."
+          ]
+        },
+        {
+          "heading": "Veiciet gala pakas pārbaudi",
+          "paragraphs": [
+            "Pirms iesniegšanas apstipriniet preču sarakstu, daudzumus, saņēmēja datus, izvēlēto maršrutu un pakalpojumus. Pārbaudiet, vai iekļautas visas paredzētās preces un nav nejauši pievienota prece ar neatrisinātu problēmu. Šī īsā pārbaude ir vieglāka nekā izvēles atjaunošana pēc iepakošanas.",
+            "Oficiālās svara un norēķinu lapas skaidro, ka gala mērījumi var mainīt maksu. Pēc iesniegšanas sekojiet pakas ziņām, tostarp apstiprinājuma vai papildu maksājuma pieprasījumiem. Pēc izsūtīšanas izmantojiet pakas izsekošanu un glabājiet noliktavas pierādījumus līdz piegādes pārbaudei."
+          ]
+        }
+      ],
+      "checklist": [
+        "Pārskatiet katru preci pirms atzīmēšanas par gatavu.",
+        "Pārbaudiet sava glabāšanas ieraksta termiņu.",
+        "Atgriešanas jautājumus atdaliet no gatavajām precēm.",
+        "Norādiet katrai precei atbilstošu iepakojumu.",
+        "Pārskatiet gala pakas sarakstu un maksas korekcijas."
+      ],
+      "sourceIds": [
+        "buying",
+        "status",
+        "storage",
+        "packaging",
+        "freight-balance"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 513
+    },
+    {
+      "slug": "lolobuy-sizing-guide",
+      "title": "LoloBuy izmēru ceļvedis: salīdziniet mērījumus pirms etiķetes izvēles",
+      "description": "Izmantojiet pārdevēja tabulu, konsekventas mērīšanas metodes un mērķētus noliktavas attēlus skaidrākam izmēra lēmumam.",
+      "keyword": "lolobuy size guide",
+      "category": "Izmēri",
+      "summary": "Pazīstama izmēra etiķete ir sākumpunkts. Noderīgs salīdzinājums ir starp pārdevēja mērījumiem, jūsu atsauces mērījumiem un vēlamo piegulumu.",
+      "sections": [
+        {
+          "heading": "Sāciet ar pārdevēja tabulu",
+          "paragraphs": [
+            "LoloBuy oficiālā izmēru atsauce norāda, ka standarti starp veikaliem var atšķirties, un pārrēķinu informāciju uzskata par orientieri. Vidēja izmēra apzīmējums vai pazīstams apavu numurs nenosaka katra pārdevēja preces piegulumu. Lasiet precīzā sludinājuma un varianta tabulu.",
+            "Pārbaudiet, vai skaitļi apraksta ķermeni, gatavu apģērbu vai ieteicamo valkātāju. Tie ir dažādi mērījumi. Ja tabula to nepaskaidro, jautājiet pirms pasūtīšanas, nevis ieraduma dēļ izvēlieties lielāku vai mazāku izmēru."
+          ]
+        },
+        {
+          "heading": "Izmēriet uzticamu atsauci",
+          "paragraphs": [
+            "Apģērbu salīdziniet ar savu apģērbu, kas der tieši tā, kā vēlaties. Novietojiet to plakaniski un izmantojiet tos pašus punktus kā pārdevēja shēmā. Atzīmējiet vienības un vai platums mērīts pāri vienai pusei vai apkārt ķermenim. Mērījumus saglabājiet ar ātru metodes fotoattēlu.",
+            "Ķermeņa mērījumiem sekojiet attiecīgajam ceļvedim un turiet mērlenti līmenī, nevis savelciet to vēlamā izmēra iegūšanai. Piegulošam kreklam, brīvam džemperim un strukturētai jakai vajag atšķirīgu brīvumu. Vēlamais siluets ir lēmuma daļa, nevis tabulas defekts."
+          ]
+        },
+        {
+          "heading": "Izvēlieties svarīgos izmērus",
+          "paragraphs": [
+            "Augšdaļai krūšu platums, garums, pleci un piedurkne atbild uz dažādiem pieguluma jautājumiem. Biksēm pārbaudiet vidukli, sēdes augstumu, iekšstaru un kopējo garumu. Viens vidukļa skaitlis neizskaidro staras kritumu, un krūšu mērījums nenosaka piedurknes garumu.",
+            "Piemēram, jūsu atsauces augšdaļas krūšu platums ir 56 centimetri un garums 70. Kandidātam ar 56 un 64 var būt līdzīgs platums, bet ievērojami īsāks korpuss. Tas ir salīdzināšanas metodes piemērs, nevis noteikta izmēra vai preces ieteikums."
+          ],
+          "bullets": [
+            "Apstipriniet mērvienības",
+            "Ķermeņa mērījumus salīdziniet ar ķermeņa tabulām",
+            "Plakana apģērba mērījumus salīdziniet ar apģērba tabulām",
+            "Salīdziniet vairāk nekā vienu piegulumam svarīgu izmēru",
+            "Fiksējiet vēlamo brīvo vai piegulošo siluetu"
+          ]
+        },
+        {
+          "heading": "Apavus pārbaudiet atsevišķi",
+          "paragraphs": [
+            "Oficiālais ceļvedis iesaka izmantot lielāko pēdu, ja tās atšķiras, un atzīmē, ka garuma etiķetes pilnībā neapraksta platumu. Izlasiet pārdevēja apavu tabulu un pārbaudiet izvēlētā varianta sistēmu. Nepieņemiet, ka EU, US vai UK numurs precīzi pārnesams starp visiem sludinājumiem.",
+            "Mēriet pēc tabulas norādījumiem un apsveriet zeķes, platumu un lietojumu. Redzama apava etiķete noliktavas attēlā var palīdzēt apstiprināt nosūtīto, bet nevar noteikt, kā apavs jutīsies uz pēdas. Neuztveriet zolītes attēlu kā universālu pārrēķinu tabulu."
+          ]
+        },
+        {
+          "heading": "Izmantojiet QC konkrētam jautājumam",
+          "paragraphs": [
+            "Pirms nosūtīšanas salīdziniet redzamo izmēra etiķeti ar pasūtījumu. Ja svarīgs apģērba mērījums vēl neskaidrs, pieprasiet to ar skaidriem sākuma un beigu punktiem. Piemēram, lūdziet plakanu krūšu platumu no šuves līdz šuvei, nevis vienkārši “pārbaudīt izmēru”.",
+            "LoloBuy pārbaudes politikai ir robežas, un tā nesola pilnu pieguluma novērtējumu. Pārbaudiet, vai mērījums vai papildu attēls pieejams jūsu precei un vai ir maksa. Standarta foto kopu nevajag aprakstīt kā personalizētu izmēru konsultāciju."
+          ]
+        },
+        {
+          "heading": "Izlemiet, kamēr iespējas vēl atvērtas",
+          "paragraphs": [
+            "Ja saņemtā etiķete atšķiras no izvēlētā varianta, dokumentējiet neatbilstību ar pasūtījumu un fotoattēlu. Ja etiķete sakrīt, bet mērījums nav piemērots, nekavējoties pārbaudiet pārdevēja atgriešanas noteikumus un pašreizējo procesu. Tās ir dažādas situācijas, kas jāapraksta precīzi.",
+            "Mērījumi samazina neskaidrību, bet nenovērš piegriezuma, elastības, auduma sajūtas vai personīgās gaumes atšķirības. Saglabājiet tabulu un salīdzināšanas piezīmes, lai veiksmīga piegulšana palīdzētu nākamajam pirkumam. Pasūtot atkal, pārbaudiet faktisko sludinājumu, jo cits pārdevējs vai versija var lietot citus mērījumus."
+          ]
+        }
+      ],
+      "checklist": [
+        "Izmantojiet precīzā sludinājuma tabulu.",
+        "Saglabājiet vienādas vienības un mērīšanas metodes.",
+        "Salīdziniet vairākus piegulumam svarīgus izmērus.",
+        "Pārbaudiet saņemto izmēra etiķeti un prasīto mērījumu.",
+        "Atrisiniet pieguluma jautājumus pirms starptautiskas izsūtīšanas."
+      ],
+      "sourceIds": [
+        "sizing",
+        "qc",
+        "returns"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 535
+    },
+    {
+      "slug": "lolobuy-tracking-guide",
+      "title": "LoloBuy izsekošana: atšķiriet pasūtījumu no starptautiskās pakas",
+      "description": "Pareizi lasiet pirkuma, noliktavas un pakas posmus un savāciet noderīgus pierādījumus, ja izsekošanas jaunums ir neskaidrs.",
+      "keyword": "lolobuy tracking",
+      "category": "Izsekošana",
+      "summary": "Pasūtījuma statuss un pārvadātāja skenējums apraksta dažādas ceļa daļas. Preces, vietējās pakas un starptautiskās pakas atsauces glabājiet atsevišķi.",
+      "sections": [
+        {
+          "heading": "Ziniet, ko izsekojat",
+          "paragraphs": [
+            "Precei var būt pirkšanas pasūtījums, pārdevēja vietējais sūtījums un vēlāka starptautiskā paka. Tie ir saistīti ieraksti, bet nav viens sūtījums. Vietējās piegādes ziņa var nozīmēt saņemšanu noliktavā, nevis piegādi jūsu mājās.",
+            "Pasūtījumam virzoties, veidojiet vienkāršu sarakstu: preces/pasūtījuma numurs, redzamā pārdevēja izsekošanas atsauce, noliktavas preces ieraksts un starptautiskās pakas numurs. Tas palīdz jautāt par pareizo posmu, nesūtot atbalstam cita ceļa ekrānuzņēmumu."
+          ]
+        },
+        {
+          "heading": "Vispirms lasiet pirkšanas posmus",
+          "paragraphs": [
+            "Oficiālais LoloBuy statusu ceļvedis atšķir maksājuma gaidīšanu, apstrādi, pasūtītu un pārdevēja nosūtītu preci. Apstrāde attiecas uz pirkšanas procesu; tā nenozīmē, ka starptautiskais pārvadātājs ved jūsu paku. Pirms ārzemju izsekošanas jaunuma meklēšanas izlasiet statusa tekstu.",
+            "Tas pats ceļvedis apraksta saņemtās preces un krājumus pēc pārbaudes. Ja vietējais pārvadātājs rāda piegādāts, bet noliktavas pārbaude nav pabeigta, ieraksti var aprakstīt secīgus posmus, nevis pretrunu. Nākamajai darbībai pārbaudiet preces ierakstu un iespējamo apstiprinājuma pieprasījumu."
+          ]
+        },
+        {
+          "heading": "Tad lasiet pakas posmus",
+          "paragraphs": [
+            "Pēc starptautiskas pakas izveides tās statusam ir sava secība. Oficiālā lapa apraksta maksājuma gaidīšanu, apstrādi, iepakotu un nosūtītu paku. Tā arī liek vērot pārvadājuma izmaiņas pēc gala svēršanas. Izveidotu paku nedrīkst sajaukt ar izsūtītu.",
+            "Izmantojiet faktisko ierakstu, ne tikai atsauces numura esamību. Etiķeti vai numuru var sagatavot pirms nākamās redzamās pārvadātāja kustības. Salīdzinot sistēmas, pierakstiet, kura lapa saka, ka paka nodota, un kuru notikumu pārvadātājs reāli fiksējis."
+          ],
+          "bullets": [
+            "Pirkuma/pasūtījuma atsauce",
+            "Starptautiskās pakas atsauce",
+            "Pārvadātāja izsekošanas numurs",
+            "Pēdējais notikums, vieta un laiks",
+            "Gaidošs apstiprinājums vai maksājums"
+          ]
+        },
+        {
+          "heading": "Klusos periodus interpretējiet piesardzīgi",
+          "paragraphs": [
+            "Pārtraukums starp skenējumiem pats nenorāda cēloni. Pārbaudiet izvēlētā maršruta pašreizējo aplēsi, pēdējo notikumu un attiecīgos oficiālos paziņojumus. Nepārvērtiet tipisku ilgumu no veca ieraksta solītā termiņā savai pakai.",
+            "Izvairieties nemitīgi atvērt dažādas izsekošanas vietnes un katru formulējuma atšķirību uztvert kā jaunu notikumu. Saglabājiet datētu būtisku izmaiņu pierakstu. Ja posms šķiet nesaskanīgs vai prasīta darbība, konkrēto jautājumu paceliet pakas vai pasūtījuma atbalsta kanālā."
+          ]
+        },
+        {
+          "heading": "Nosūtiet atbalstam noderīgu jautājumu",
+          "paragraphs": [
+            "Norādiet pasūtījuma vai pakas identifikatoru, izsekošanas numuru, pēdējo redzamo notikumu un vajadzīgo jautājumu. Piemēram: “Pakas ieraksts rāda nosūtīts, bet pārvadātājs nav parādījis nodošanu. Vai varat apstiprināt nodošanas statusu?” Tas ir konkrētāk nekā “Kur ir viss?”.",
+            "LoloBuy pirkšanas ceļvedis pēc izsūtīšanas novirza uz paku sadaļu izsekošanai. Ja iespējams, izmantojiet ar skarto ierakstu sasaistītu jautājumu. Izsekošanas ziņā neiekļaujiet nesaistītus konta datus vai maksājumu piekļuves informāciju."
+          ]
+        },
+        {
+          "heading": "Saglabājiet pierādījumus līdz piegādei",
+          "paragraphs": [
+            "Kad paka pienāk, nekavējoties pārbaudiet ārējo stāvokli un saturu. Saglabājiet iepakojumu, etiķeti un skaidrus attēlus, ja prece nepareiza, trūkst vai bojāta. Saņemtās preces salīdziniet ar gala pakas sarakstu, nevis agrāku atlasi, kurā var būt nenosūtītas preces.",
+            "Oficiālā pakas pēcpārdošanas lapa prasa detalizētu aprakstu un fotoattēlus nepareizai vai bojātai precei, bet tās termiņu apgalvojumi konfliktē. Rīkojieties ātri un pārbaudiet piemērojamo termiņu pašreizējā atbalsta procesā. Negaidiet tikai tāpēc, ka vispārīgs ceļvedis šķiet dodam ilgāku laiku."
+          ]
+        }
+      ],
+      "checklist": [
+        "Atdaliet vietējās un starptautiskās atsauces.",
+        "Pārbaudiet, vai paka izveidota, iepakota vai izsūtīta.",
+        "Lasiet pēdējo notikumu ar laika atzīmi.",
+        "Atbalstam sūtiet konkrētu dokumentētu jautājumu.",
+        "Ātri pārbaudiet piegādi un saglabājiet pierādījumus."
+      ],
+      "sourceIds": [
+        "status",
+        "buying",
+        "claims",
+        "freight-balance"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 504
+    },
+    {
+      "slug": "lolobuy-returns-refunds",
+      "title": "LoloBuy atgriešana un atmaksas: rīkojieties pareizajā pasūtījuma posmā",
+      "description": "Sagatavojiet pierādījumus, pārbaudiet pārdevēja atbilstību un izprotiet atcelšanas, preces atgriešanas un pakas prasības atšķirību.",
+      "keyword": "lolobuy returns refunds",
+      "category": "Pēcpārdošanas atbalsts",
+      "summary": "Atgriešanas lēmums atkarīgs no preces, pārdevēja un pašreizējā pasūtījuma posma. Skaidri pierādījumi un ātrs pieprasījums noder vairāk nekā pieņēmums par vienu noteikumu visiem pirkumiem.",
+      "sections": [
+        {
+          "heading": "Nosakiet vajadzīgo procesu",
+          "paragraphs": [
+            "Vēl nenopirkta pasūtījuma atcelšana, noliktavā esošas preces atgriešana un problēmas ziņošana pēc starptautiskas piegādes ir dažādi procesi. Sāciet ar pašreizējā pasūtījuma vai pakas statusu. Attiecīgā poga un informācija var būt atkarīga no darījuma progresa.",
+            "LoloBuy atcelšanas un atgriešanas lapas apraksta vairākus no statusa un pārdevēja līdzdalības atkarīgus soļus. Pieprasījums nav apstiprinājums. Lasiet pasūtījumam pievienoto atbildi un sekojiet pieņemtajam, gaidošajam un vēl nepieciešamajām darbībām no jums."
+          ]
+        },
+        {
+          "heading": "Saglabājiet precīzos pierādījumus",
+          "paragraphs": [
+            "Preces URL, izvēlēto variantu, pasūtījuma apstiprinājumu un attiecīgos attēlus glabājiet kopā. Ja problēma ir nepareiza izmēra etiķete, parādiet pasūtīto variantu un saņemto etiķeti. Bojājumam sniedziet skaidru kopskatu un tuvplānu. Aprakstiet atšķirību bez pārspīlēšanas.",
+            "Piemēram: “Pasūtīta zila L; noliktavas attēlā melna M etiķete” norāda pārbaudāmu neatbilstību. “Slikta kvalitāte” ir daudz mazāk precīzi. Ja attēli pārāk neskaidri problēmas noteikšanai, pieprasiet trūkstošo pierādījumu pirms risinājuma izvēles."
+          ],
+          "bullets": [
+            "Pasūtījuma numurs un avota sludinājums",
+            "Izvēlētais variants un daudzums",
+            "Skaidrs problēmas apraksts",
+            "Attiecīgi konkrētā pasūtījuma fotoattēli",
+            "Prasītais risinājums: precizēšana, atcelšana, atgriešana vai maiņa"
+          ]
+        },
+        {
+          "heading": "Atbilstību un laiku lasiet kopā",
+          "paragraphs": [
+            "Oficiālā atgriešanas garantijas lapa apraksta atbilstības noteikumus un pieteikuma periodu pēc ievietošanas noliktavā. Tā arī prasa pārdevēja piekrišanu. Citas palīdzības lapas laiku formulē atšķirīgi vai neveikli. Pārbaudiet termiņu un pakalpojumu faktiskajā pasūtījumā un problēmu iesniedziet ātri.",
+            "Iepakojumam un tālākpārdošanas stāvoklim var būt nozīme. Nelūdziet noņemt atgriešanai vajadzīgu iepakojumu pirms noteikumu izpratnes. Lietotām precēm, īpašiem pasūtījumiem un citām kategorijām var būt atšķirīgi noteikumi; vispārīgs beznosacījumu atgriešanas solījums būtu maldinošs."
+          ]
+        },
+        {
+          "heading": "Jautājiet, kādas izmaksas piemēro",
+          "paragraphs": [
+            "Atgriešanas garantijas norādes atšķir atgriešanas iemeslu un aplūko vietējo transportu un pakalpojumu maksas. Pārdevēja sākotnējā bezmaksas piegāde ne vienmēr padara vēlāku atgriešanu bezmaksas. Pirms piekrišanas turpināt jautājiet konkrētā pieprasījuma izmaksas.",
+            "Atbildi glabājiet pasūtījuma ierakstā. Noskaidrojiet, vai summa ietver transportu atpakaļ pārdevējam, sākotnējo vietējo piegādi un pakalpojuma maksu. Platformas apstrādes atlaide un pārdevēja piegādes izmaksas ir dažādas lietas, ko nevajag apvienot neskaidrā “bezmaksas atgriešanā”."
+          ]
+        },
+        {
+          "heading": "Sekojiet atmaksas galamērķim un statusam",
+          "paragraphs": [
+            "Oficiālās atgriešanas norādes parasti apraksta apstiprinātu atmaksu LoloBuy konta atlikumā, ar konkrētu izņēmumu dažām sākotnējā maksājuma situācijām. Konta kredīts un nauda ārējā maksājuma veidā ir atšķirīgi rezultāti. Pirms gaidāt naudu bankā, pārbaudiet piemērojamo.",
+            "Pārdevēja apstiprinājums, atgrieztās preces saņemšana un atmaksas pabeigšana var būt atsevišķi atskaites punkti. Saglabājiet atgrieztās pakas atsauci, ja tā sniegta. Jautājot par kavējumu, norādiet pēdējo pabeigto soli, nevis sāciet jaunu pieprasījumu bez esošā atgriešanas ieraksta."
+          ]
+        },
+        {
+          "heading": "Piegādātas pakas problēmas apstrādājiet atsevišķi",
+          "paragraphs": [
+            "Problēmām pēc piegādes oficiālie norādījumi novirza uz attiecīgās pakas pēcpārdošanas pieteikumu un prasa detalizētu aprakstu un attēlus. Saglabājiet ārējo iepakojumu un pakas etiķeti līdzās preces attēliem. Tie palīdz sasaistīt bojājumu vai neatbilstību ar sūtījumu.",
+            "Šajā oficiālajā lapā ir pretrunīgi termiņu apgalvojumi. Ziņojiet ātri un piemērojamo laika robežu saņemiet tieši pašreizējā procesā. Ceļvedis nesola apstiprinājumu, universālu atmaksas laiku vai kompensāciju par katru zaudējuma veidu."
+          ]
+        }
+      ],
+      "checklist": [
+        "Pārbaudiet pašreizējo pasūtījuma vai pakas posmu.",
+        "Dokumentējiet precīzu neatbilstību vai bojājumu.",
+        "Apstipriniet atbilstību, termiņu un iepakojuma noteikumus.",
+        "Jautājiet par visām piemērojamām atgriešanas izmaksām.",
+        "Sekojiet apstiprinājumam un faktiskajam atmaksas galamērķim."
+      ],
+      "sourceIds": [
+        "refunds",
+        "cancellation",
+        "returns",
+        "claims",
+        "changes"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 513
+    },
+    {
+      "slug": "lolobuy-order-budget",
+      "title": "LoloBuy pasūtījuma budžets: skatieties tālāk par preces cenu",
+      "description": "Pirms saistībām atdaliet preču izmaksas, vietējo piegādi, izvēles pakalpojumus, valūtas maiņu un starptautisko pārvadājumu.",
+      "keyword": "lolobuy fees",
+      "category": "Budžets",
+      "summary": "Noderīgs budžets atdala apstiprinātas summas no aplēsēm. Preces pirkumu un vēlāko pakas maksājumu saglabājiet redzamus kā divus saistītus lēmumus.",
+      "sections": [
+        {
+          "heading": "Aprēķiniet variantu, ko tiešām pirksiet",
+          "paragraphs": [
+            "Kataloga cena ir salīdzinājuma sākums. Izvēlētajai krāsai, izmēram, komplektam vai daudzumam oficiālajā pasūtījuma lapā var būt cita pašreizējā cena. Pirms lietošanas budžetā pārskatiet precīzo konfigurāciju, īpaši ja avota sludinājumā ir diapazons.",
+            "Summu un valūtu salīdziniet vienā posmā. Reģistrētā preces cena, norēķinu kopsumma un kartes izraksts var ietvert dažādus komponentus. Nesauciet starpību par slēptu maksu, pirms pārbaudīts daudzums, piegāde, konvertācija un izvēlētie pakalpojumi."
+          ]
+        },
+        {
+          "heading": "Atdaliet divus galvenos maksājuma posmus",
+          "paragraphs": [
+            "LoloBuy oficiālais pirkšanas process vispirms iekasē par precēm un vietējo piegādi Ķīnā. Starptautisko pārvadājumu apstrādā, kad glabātās preces iesniedz kā paku. Pircējs, kas budžetē tikai pirmo maksājumu, var sasniegt noliktavu bez pietiekamas naudas nosūtīšanai.",
+            "Izveidojiet vienkāršu katras izmaksas tabulu un atzīmējiet apstiprināto vai aplēsto. Izvēles pakalpojumus turiet redzamus, nevis paslēptus preces summā. Iespējamām galamērķa maksām vajag savu rindu, jo kataloga cena tās nenosaka."
+          ],
+          "bullets": [
+            "Izvēlētās preces un daudzumi",
+            "Vietējā piegāde Ķīnā",
+            "Izvēlētie pirkšanas vai noliktavas pakalpojumi",
+            "Starptautiskā piegāde un iepakošanas pakalpojumi",
+            "Norēķinā parādītās maksājuma vai valūtas maiņas maksas",
+            "Iespējamie galamērķa nodokļi vai apstrādes maksas"
+          ]
+        },
+        {
+          "heading": "Lasiet vietējās piegādes nosacījumus",
+          "paragraphs": [
+            "Oficiālā palīdzība saka, ka viena pārdevēja preces, kas iesniegtas un apmaksātas kopā, var dalīt vietējās piegādes maksu, ar iespējamu piemaksu pārāk smagam sūtījumam. Tas ir konkrēts nosacījums, ne solījums par vienu maksu visām groza precēm.",
+            "Pārbaudiet katras preces pārdevēju un pasūtījuma grupēšanu. Lielāks daudzums var mainīt arī pārdevēja cenu vai piegādes noteikumus, īpaši vairumtirdzniecībā. Saglabājiet pašreizējo aprēķinu, nevis daliet agrāku piegādes maksu starp nesaistītiem pirkumiem."
+          ]
+        },
+        {
+          "heading": "Pārbaudiet maksājuma un valūtas detaļas",
+          "paragraphs": [
+            "Pirms apstiprināšanas pārskatiet oficiālajā norēķinā pieejamos veidus, iekasēto valūtu un redzamās izmaksas. Pieejamība var būt atkarīga no konta un darījuma. Vispārīgs palīdzības saraksts nav pietiekams pierādījums, ka konkrētais veids šodien būs pieejams jūsu pasūtījumam.",
+            "Ja maksājuma sniedzējs piedāvā valūtas konvertāciju, salīdziniet gala iekasēto summu un tur parādītos noteikumus. Kvīti glabājiet ar pasūtījumu. Nesoliet fiksētu kursu un nepieņemiet, ka iepriekšējā pirkuma konvertācija attieksies uz nākamo."
+          ]
+        },
+        {
+          "heading": "Atlaides uztveriet kā pārbaudāmas",
+          "paragraphs": [
+            "LoloBuy akciju vadlīnijas apraksta pārdevēja piedāvājuma datu ievietošanu pasūtījuma piezīmēs, lai pircējs tos pārbaudītu. Reklāmkarogs vai saglabāts attēls nepierāda, ka jūsu precīzais variants un daudzums joprojām kvalificējas. Pierakstiet noteikumus un lūdziet apstiprinājumu pasūtījuma procesā.",
+            "Atlaidi turiet atsevišķi no parastā budžeta līdz apstiprināšanai. Nepaļaujieties uz ieteikumu akciju, kuponu vai piegādes apgalvojumu no nesaistīta ceļveža. Šī vietne nav devusi garantētu jauna lietotāja kredītu vai universālu piegādes cenu."
+          ]
+        },
+        {
+          "heading": "Neskaidram pārvadājumam izmantojiet diapazonu",
+          "paragraphs": [
+            "Pirms iepakošanas svars un izmērs ir aplēses. Oficiālā norēķinu politika saskaņo sākotnējo summu ar loģistikas sniedzēja faktisko maksu. Atstājiet vietu iespējamai korekcijai, nevis iztērējiet visu budžetu precēm.",
+            "Plānošanas piemērā pieņemsim, ka apstiprinātās preces un vietējā piegāde kopā ir 100 vienas valūtas vienības, bet pašreizējā piegādes aplēse 30–45. Provizoriskā summa ir 130–145 pirms citām piemērojamām izmaksām. Tie ir hipotētiski metodes skaitļi, ne LoloBuy cenas vai piedāvājums."
+          ]
+        },
+        {
+          "heading": "Padariet budžetu par lēmuma rīku",
+          "paragraphs": [
+            "Ja iespējamā summa pārsniedz limitu, pārskatiet atlasi pirms maksāšanas. Mazāk svarīgas preces izņemšana var būt vieglāka nekā vēlāka naudas atgūšana ar atgriešanu. Salīdziniet visa piegādātā pasūtījuma vērtību, ne lētu preču skaitu, ko varat savākt.",
+            "Pēc izsūtīšanas aizstājiet aplēses ar gala reģistrētajām maksām. Saglabājiet atšķirību un skaidrojumu. Šī vēsture noder nākamajai plānošanai, vienlaikus ņemot vērā citas preces, izmērus, maršrutus un valūtas apstākļus nākamreiz."
+          ]
+        }
+      ],
+      "checklist": [
+        "Budžetējiet precīzi izvēlēto variantu.",
+        "Atdaliet vietējo un starptautisko piegādi.",
+        "Fiksējiet izvēles pakalpojumus un iekasēto valūtu.",
+        "Izmantojiet tikai apstiprinātas atlaides.",
+        "Saglabājiet rezervi neskaidram pārvadājumam un galamērķa izmaksām."
+      ],
+      "sourceIds": [
+        "buying",
+        "domestic",
+        "promotions",
+        "freight-balance",
+        "wholesale"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 575
+    },
+    {
+      "slug": "lolobuy-seller-and-review-checks",
+      "title": "LoloBuy atradumi un atsauksmes: pārbaudiet sludinājuma pierādījumus",
+      "description": "Vērtējiet avota detaļas, atsauksmju atbilstību un pārbaudes robežas, neuzskatot emblēmu, fotoattēlu vai vērtējumu par garantiju.",
+      "keyword": "is lolobuy legit",
+      "category": "Pirkšanas lēmumi",
+      "summary": "Noderīgais jautājums ir, ko pieejamie pierādījumi nosaka par šo darījumu. Platformas nosaukums viens neatbild uz visiem jautājumiem par pārdevēju, preci vai paku.",
+      "sections": [
+        {
+          "heading": "Atdaliet platformu no preces",
+          "paragraphs": [
+            "LoloBuy pakalpojumu informācija apraksta preču iegādi no trešo pušu platformām, nevis katras uzskaitītās preces pārdošanu pašam. Šī neatkarīgā izklājlapa ir vēl soli tālāk: tā organizē atklāšanu. Saglabājiet lomas skaidras, lemjot, kurš var atbildēt uz jautājumu vai atrisināt problēmu.",
+            "Darbojoša preces saite nepierāda autentiskumu, krājumus, piegulumu vai nākotnes piegādi. Arī sūdzība par vienu pārdevēju nenosaka katras platformas problēmas cēloni. Sāciet ar precīzo vērtējamo apgalvojumu un par šo procesa daļu atbildīgo pusi."
+          ]
+        },
+        {
+          "heading": "Sludinājumu pārbaudiet pirms popularitātes",
+          "paragraphs": [
+            "Meklējiet skaidru sākotnējo URL, konsekventu aprakstu, identificējamus variantus un noderīgu izmēru vai specifikāciju informāciju. Izvēlēto variantu salīdziniet ar galeriju. Lēta sākumcena var attiekties uz citu komponentu nekā galvenajā attēlā redzamā prece.",
+            "Ja vairāki pārdevēji lieto vienus fotoattēlus, attēli vien nevar pateikt, vai preces ražotas vai piegādātas identiski. Fiksējiet trūkstošo un uzdodiet konkrētu jautājumu. Popularitātes skaitlis vai pazīstams partijas nosaukums neaizstāj pierādījumus par precīzo sludinājumu."
+          ],
+          "bullets": [
+            "Sākotnējais sludinājums un pārdevēja identitāte",
+            "Precīzais variants un daudzums",
+            "Attiecīgie mērījumi vai specifikācijas",
+            "Pašreizējā atgriešanas informācija",
+            "Neatbildēti jautājumi, kas ietekmē pirkumu"
+          ]
+        },
+        {
+          "heading": "Atsauksmes lasiet pēc atbilstības",
+          "paragraphs": [
+            "Atsauksme noder vairāk, ja var noteikt datumu, apspriesto preci vai pakalpojumu un secinājuma pierādījumus. Komentārs par atbalsta atbildes ātrumu atšķiras no apavu pieguluma atsauksmes. Veiksmīgi pienākusi paka nepierāda, ka katra kataloga prece ir piemērota.",
+            "Meklējiet atklātas ieteikumu saites, stimulus vai citas attiecības. To klātbūtne automātiski nepadara atsauksmi nepatiesu, bet palīdz izprast mērķi. Nepārvērtiet partneru akciju, vienu pieredzi vai nepārbaudītu liecību universālā ieteikumā."
+          ]
+        },
+        {
+          "heading": "Plānojiet, ko pārbaude var noteikt",
+          "paragraphs": [
+            "Oficiālā standarta pārbaudes lapa apraksta izskata pārbaudi un svarīgus izņēmumus. Tā nesola autentificēt vai funkcionāli pārbaudīt katru kategoriju. Aizzīmogotas preces un daži profesionāli produkti saņem atšķirīgu apstrādi. Izlasiet robežas pirms preces, kuras vērtība atkarīga no tā, ko pakalpojums netestē.",
+            "Apģērbam skaidri mērījumi un redzama konstrukcija var atbildēt uz lielu jautājuma daļu. Elektronikai vai ar drošību saistītām precēm fotogrāfija nevar noteikt iekšējo veiktspēju vai atbilstību. Ja nepieciešamie pierādījumi nav pieejami, šī neskaidrība pieder pirkšanas lēmumam."
+          ]
+        },
+        {
+          "heading": "Maksājumu un saziņu turiet pareizajā vietā",
+          "paragraphs": [
+            "Norēķinam izmantojiet oficiālo vietni, bet darījuma jautājumiem attiecīgā pasūtījuma vai pakas pieprasījumu. Pirms pieslēgšanās pārbaudiet domēnu. Katalogam nav vajadzīga jūsu parole, maksājumu dati vai privāta saruna, kas iekopēta preču meklēšanā.",
+            "Saglabājiet izvēlētā varianta, maksājuma, pārdevēja precizējumu un vienoto prasību ierakstus. Ja kas mainās, lūdziet atjauninājumu pasūtījumā. Skaidra vēsture palīdz atrisināt vēlāku jautājumu vieglāk nekā izkaisītas ziņas bez preces vai darījuma atsauces."
+          ]
+        },
+        {
+          "heading": "Pieņemiet lēmumu, ko varat izskaidrot",
+          "paragraphs": [
+            "Uzrakstiet īsu piezīmi, kāpēc prece atbilst vajadzībām, kādi pierādījumi to pamato, kāds ir kopējais budžets un kādu neskaidrību pieņemat. Ja lēmums atkarīgs no neatbildēta izmēra, stāvokļa vai atgriešanas atbilstības jautājuma, atrisiniet to pirms maksāšanas.",
+            "Mazs pirmais pasūtījums var būt izvēles veids, kā ierobežot ieguldīto summu, mācoties procesu, taču tas neapstiprina katru pārdevēju vai nākotnes sūtījumu. Šis ceļvedis ir pierādījumu vērtēšanas metode, ne personīga testa atskaite vai garantija, ka LoloBuy ir bez riska. Nākamajām pārbaudēm izmantojiet pasūtīšanas, QC un atgriešanas ceļvežus."
+          ]
+        }
+      ],
+      "checklist": [
+        "Atšķiriet kataloga, platformas un pārdevēja lomas.",
+        "Pārbaudiet precīzo sludinājumu, nevis popularitāti.",
+        "Atsauksmēs vērtējiet datumu, atbilstību un stimulus.",
+        "Izprotiet, ko pārbaude neapstiprinās.",
+        "Saglabājiet dokumentētu lēmumu un pasūtījuma ierakstu."
+      ],
+      "sourceIds": [
+        "service",
+        "qc",
+        "buying",
+        "returns"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 531
+    }
+  ]
+}

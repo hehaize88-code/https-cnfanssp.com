@@ -1,0 +1,1131 @@
+{
+  "ui": {
+    "nav": [
+      "Preglednica",
+      "Kako deluje",
+      "Vodiči",
+      "Članki",
+      "Pogosta vprašanja"
+    ],
+    "register": "Odpri LoloBuy",
+    "language": "Jezik",
+    "preview": "Predogled oblike",
+    "previewNote": "Prvi pogled na lolobuysheet.nl",
+    "eyebrow": "DOBRE NAJDBE. MANJ POMIKANJA.",
+    "hero1": "Vaša naslednja najdba.",
+    "hero2": "Ena preglednica.",
+    "intro": "Raziščite preglednico LoloBuy. Oglejte si oblačila, superge in dodatke, primerjajte izvorne cene ter naslednjo najdbo odprite na LoloBuyu.",
+    "search": "Preiščite celoten katalog…",
+    "searchButton": "Poišči izdelke",
+    "photo": "Iskanje s sliko",
+    "popular": "Raziščite:",
+    "tagline": "En katalog. Vaše naslednje odkritje.",
+    "source": "Izdelki s cnfanssp.com",
+    "independent": "Neodvisna stran za odkrivanje izdelkov za LoloBuy",
+    "browse": "Raziščite preglednico",
+    "browseSub": "Nekoliko manj iskanja. Veliko več najdb.",
+    "all": "Vsi izdelki",
+    "sort": "Razvrsti po",
+    "sorts": [
+      "Izpostavljeno",
+      "Najnovejše",
+      "Največ ogledov",
+      "Cena: od nižje do višje",
+      "Cena: od višje do nižje"
+    ],
+    "count": "izdelkov",
+    "view": "Ogled izdelka",
+    "buy": "Odpri na LoloBuyu",
+    "details": "Podrobnosti izdelka",
+    "categories": {
+      "shoes": "Obutev",
+      "hoodies": "Puloverji",
+      "tshirts": "Majice",
+      "jackets": "Jakne",
+      "pants": "Hlače in kratke hlače",
+      "headwear": "Pokrivala",
+      "accessories": "Dodatki",
+      "sets": "Kratki kompleti",
+      "electronics": "Elektronika",
+      "other": "Drugi izdelki",
+      "jerseys": "Dresi"
+    },
+    "previous": "Prejšnja",
+    "next": "Naslednja",
+    "page": "Stran",
+    "empty": "Noben izdelek ne ustreza iskanju.",
+    "reset": "Počisti filtre",
+    "sourceSearch": "Preišči celoten izvorni katalog",
+    "snapshot": "Aktualni katalog s cnfanssp.com. Cene izdelkov v CNY ne vključujejo dostave in storitvenih pristojbin. Trenutne možnosti in končno ponudbo preverite na LoloBuyu.",
+    "howTitle": "Od najdbe do odpiranja paketa.",
+    "howSub": "Prvič uporabljate LoloBuy? Začnite s temi tremi koraki.",
+    "steps": [
+      [
+        "01",
+        "Poiščite nekaj, kar vam je všeč",
+        "Prebrskajte kategorije ter preverite izvorni oglas, velikost in fotografije izdelka."
+      ],
+      [
+        "02",
+        "Odprite izdelek na LoloBuyu",
+        "S povezavo izdelka izberite možnosti in preverite trenutno ceno."
+      ],
+      [
+        "03",
+        "Preglejte pred odpremo",
+        "Sledite skladiščnemu postopku na LoloBuyu, preverite razpoložljivo kontrolo kakovosti in izberite dostavo."
+      ]
+    ],
+    "guides": "Nekaj napotkov veliko pomaga.",
+    "guidesSub": "Koristne informacije pred prvim naročilom.",
+    "read": "Preberi vodič",
+    "allGuides": "Vsi vodiči",
+    "cta": "Ste našli nov najljubši izdelek?",
+    "ctaSub": "Odprite ga na LoloBuyu in naročite.",
+    "ctaButton": "Razišči vse izdelke",
+    "footer": "Neodvisna stran za odkrivanje izdelkov. Nismo uradna spletna stran LoloBuy. Oglasi in fotografije izdelkov izvirajo s cnfanssp.com. Nakupi se zaključijo na LoloBuyu.",
+    "footerLinks": [
+      "Preglednica",
+      "Nakupovalni vodič",
+      "Iskanje s sliko",
+      "Pogosta vprašanja"
+    ],
+    "back": "Nazaj na preglednico",
+    "sourceListing": "Izvorni oglas",
+    "seller": "Prodajalčev oglas",
+    "sourcePrice": "Izvorna cena · CNY",
+    "productId": "Prodajalčev ID izdelka",
+    "gallery": "Fotografije oglasa",
+    "qc": "Fotografije kontrole kakovosti",
+    "qcNote": "Vir za ta izdelek ponuja fotografije oglasa. To niso preverjene fotografije skladiščne kontrole kakovosti. Pred odpremo preverite QC, povezan z lastnim naročilom LoloBuy.",
+    "priceNote": "Samo cena izdelka. Pred naročilom na LoloBuyu preverite zalogo, možnosti, dostavo in storitvene pristojbine.",
+    "photoTitle": "Poiščite ga s fotografijo.",
+    "photoIntro": "V izvornem katalogu poiščite in primerjajte izdelke.",
+    "photoState": "Iskanje s sliko pri viru",
+    "photoNote": "Na cnfanssp.com ni bila potrjena javna storitev iskanja s sliko. Fotografij ne sprejemamo, dokler izvorna storitev ni na voljo.",
+    "browseInstead": "Prebrskaj izdelke",
+    "faqTitle": "LoloBuy: odgovori pred naročilom.",
+    "faqIntro": "Raziskano na uradnih straneh pomoči LoloBuy. Kadar se uradne strani razlikujejo, odgovor pojasni, kaj je treba preveriti.",
+    "guideLabel": "PRAKTIČNI VODIČ",
+    "guideTitle": "Razloženo prvo naročilo LoloBuy.",
+    "guideIntro": "Od iskanja izdelka do pregleda v skladišču: praktičen začetek.",
+    "updated": "Pregledano oktobra 2026",
+    "related": "Še več za raziskovanje",
+    "home": "Domov",
+    "aboutPhotos": "Slike izvornega oglasa",
+    "catalogLive": "Aktualni izvorni katalog",
+    "catalogCached": "Prikazan je zadnji popolni posnetek vira.",
+    "catalogLoading": "Posodabljanje izvornega kataloga…",
+    "catalogError": "Vir trenutno ni na voljo. Poskusite znova ali odprite izvorni katalog.",
+    "retry": "Poskusi znova",
+    "loading": "Nalaganje…",
+    "productError": "Izdelka ni bilo mogoče naložiti. Poskusite znova ali preverite izvorni oglas.",
+    "pageOf": "od",
+    "jump": "Pojdi na stran",
+    "go": "Pojdi",
+    "articlesLabel": "Članki",
+    "articlesTitle": "Podrobno znanje o nakupovanju z LoloBuyem.",
+    "articlesIntro": "Deset praktičnih vodičev, raziskanih na uradnih straneh pomoči LoloBuy. Z jasnejšimi informacijami poiščite izdelke, preverite QC ter načrtujte stroške in dostavo.",
+    "articleSources": "Uradni viri",
+    "reviewed": "Pregledano 20. oktobra 2026",
+    "readArticle": "Preberi članek",
+    "allArticles": "Vsi članki",
+    "contents": "Na tej strani",
+    "checklist": "Praktični kontrolni seznam",
+    "summary": "Na kratko",
+    "reading": "min branja",
+    "faqSearch": "Poiščite vprašanja…",
+    "noQuestions": "Ni ustreznih vprašanj.",
+    "officialHelp": "Preberi uradna navodila",
+    "skip": "Preskoči na vsebino",
+    "menu": "Meni",
+    "close": "Zapri",
+    "languageSearch": "Izberite jezik",
+    "catalogNote": "Cene in razpoložljivost se lahko spremenijo.",
+    "articleFooter": "Neodvisni uredniški napotki. Pred plačilom ali odpremo preverite pogoje, prikazane za vaše naročilo.",
+    "notFound": "Izdelka ni mogoče najti",
+    "showMore": "Prikaži vse",
+    "findSteps": "POIŠČITE. PREVERITE. NAROČITE.",
+    "nextFind": "NASLEDNJA NAJDBA JE VAŠA.",
+    "liveLabel": "Posodobljeno iz vira",
+    "faqCount": "raziskanih odgovorov",
+    "catalogue": "Katalog"
+  },
+  "faqs": [
+    {
+      "id": "what-is-lolobuy",
+      "category": "Prvi koraki",
+      "question": "Kaj počne LoloBuy?",
+      "answer": "LoloBuy je nakupovalni posrednik: posredujete prodajalčev oglas, izberete izdelek, plačate nakup in domačo dostavo na Kitajskem, nato pa pred urejanjem mednarodne dostave pregledate skladiščno fazo. Blago dobavi prodajalec. Povezava izdelka ali vnos v preglednici je izhodišče za preverjanje naročila, ne potrditev trenutne zaloge.",
+      "sourceIds": [
+        "buying",
+        "service"
+      ]
+    },
+    {
+      "id": "place-order",
+      "category": "Prvi koraki",
+      "question": "Kako naročim prek LoloBuya?",
+      "answer": "Prilepite izvorno povezavo izdelka v LoloBuy, preverite uvoženi oglas ter izberite natančno barvo, velikost in količino. Pred plačilom preglejte ceno izdelka, domačo dostavo in zahtevane storitve. Uradni vodič LoloBuy nato loči nakup, skladiščni pregled in oddajo mednarodnega paketa v posamezne faze.",
+      "sourceIds": [
+        "buying"
+      ]
+    },
+    {
+      "id": "manual-order",
+      "category": "Prvi koraki",
+      "question": "Kaj če LoloBuy ne more prebrati povezave izdelka?",
+      "answer": "Uradni nakupovalni vodič opisuje ročni obrazec za posredniško naročilo, kadar samodejni uvoz ni na voljo. Vnesite dejanske informacije o izdelku in izbrane možnosti ter pred oddajo preverite naročilo. ID-ja izdelka na tržnici ne zamenjajte z interno številko strani preglednice: označujeta različna zapisa.",
+      "sourceIds": [
+        "buying"
+      ]
+    },
+    {
+      "id": "domestic-delivery",
+      "category": "Naročila in plačilo",
+      "question": "Ali ima lahko več izdelkov eno pristojbino za kitajsko dostavo?",
+      "answer": "Pogosta vprašanja LoloBuy o domači dostavi opisujejo eno pristojbino, kadar izdelke istega prodajalca oddate in plačate skupaj. Neobičajno veliko ali težko naročilo lahko zahteva doplačilo dostave. To ne združuje samodejno pristojbin različnih prodajalcev in ne vključuje mednarodne dostave.",
+      "sourceIds": [
+        "domestic"
+      ]
+    },
+    {
+      "id": "seller-promotion",
+      "category": "Naročila in plačilo",
+      "question": "Kako LoloBuy zaprosim za prodajalčev popust?",
+      "answer": "Dejansko promocijo ali ponudbo brezplačne domače dostave zapišite v opombe naročila, da jo posrednik preveri pri prodajalcu. Uradna pomoč opisuje tudi uporabo Order Enquiry, če ste podatke o promociji izpustili. Popust je treba preveriti; preglednica ne more obljubiti, da stara ponudba še velja.",
+      "sourceIds": [
+        "promotions"
+      ]
+    },
+    {
+      "id": "change-order",
+      "category": "Naročila in plačilo",
+      "question": "Ali lahko po naročilu spremenim velikost ali barvo?",
+      "answer": "LoloBuy navaja, da se lahko pred prodajalčevo odpremo dogovori za spremembo. Po odpremi pomoč namesto tega opisuje morebitno vračilo iz skladišča in novo naročilo, s stroški povratne dostave. Zahtevo za konkretno naročilo pošljite takoj in počakajte na sprejem, preden predpostavite, da je možnost spremenjena.",
+      "sourceIds": [
+        "changes"
+      ]
+    },
+    {
+      "id": "confirmation-message",
+      "category": "Naročila in plačilo",
+      "question": "Kaj pomeni Pending for Confirmation?",
+      "answer": "Nekatere podrobnosti naročila potrebujejo vašo potrditev. Preberite in odgovorite na sporočilo ob naročilu. Uradna pomoč usmerja vprašanja o kupljenem blagu v Shopping Agent Order, skladiščna vprašanja pa v My Warehouse, kjer je lahko potrebna odločitev o sprejemu ali vračilu. Imena menijev se lahko razlikujejo; čakanje na posodobitev sledenja ne odgovori na zahtevo.",
+      "sourceIds": [
+        "confirmation",
+        "confirmation-path"
+      ]
+    },
+    {
+      "id": "received-in-stock",
+      "category": "Skladišče in kontrola kakovosti",
+      "question": "Kakšna je razlika med Received in In Stock?",
+      "answer": "Uradni vodič uporablja Received, ko skladišče prevzame prodajalčev paket in pregled še poteka. In Stock pomeni, da je kontrola kakovosti končana in so izdelki shranjeni v vaši zalogi. Prejem v skladišče zato ne pomeni, da sta vaš pregled QC ali mednarodna odprema že zaključena.",
+      "sourceIds": [
+        "status"
+      ]
+    },
+    {
+      "id": "qc-checks",
+      "category": "Skladišče in kontrola kakovosti",
+      "question": "Kaj preverja standardna kontrola kakovosti?",
+      "answer": "Standardni pregled LoloBuy preverja vidne podrobnosti naročila, kot so slog, količina, barva, velikost, model in očitne poškodbe. Skupaj preberite opis dejanske storitve pregleda in fotografije naročila. Vizualni pregled ne zagotavlja pristnosti, natančnega prileganja ali dolgoročne vzdržljivosti.",
+      "sourceIds": [
+        "qc"
+      ]
+    },
+    {
+      "id": "inspection-exclusions",
+      "category": "Skladišče in kontrola kakovosti",
+      "question": "Ali zapečatene izdelke in elektroniko popolnoma preizkusijo?",
+      "answer": "Ne. Pravila pregleda opisujejo izjeme za zapečatene izdelke in izrecno izključujejo preverjanje pristnosti, delovanja in kakovosti profesionalne elektronike ter sorodnega blaga. Pri možnosti brez pregleda skladišče preveri omejitve, ne preveri pa izdelka in ne zagotovi QC fotografij. Preden se zanesete na rezultat, preverite izbrano storitev.",
+      "sourceIds": [
+        "qc"
+      ]
+    },
+    {
+      "id": "qc-photos",
+      "category": "Skladišče in kontrola kakovosti",
+      "question": "Ali lahko zahtevam več QC fotografij?",
+      "answer": "Pregled storitev opisuje dodatne fotografije na zahtevo; stran fotografske storitve ponuja tudi Secondary Quality Inspection, kadar je bil pregled pred skladiščenjem izpuščen. Uradne strani navajajo različna standardna števila fotografij. Preverite izbrano storitev in zahtevajte konkreten manjkajoči pogled ali meritev, namesto da predpostavite enako število slik pri vsakem naročilu.",
+      "sourceIds": [
+        "service",
+        "photos",
+        "qc"
+      ]
+    },
+    {
+      "id": "storage-period",
+      "category": "Skladišče in kontrola kakovosti",
+      "question": "Kako dolgo so lahko izdelki v skladišču LoloBuy?",
+      "answer": "Namenska stran skladiščenja in trenutni vodič statusov navajata 180 dni za običajno shranjeno blago, starejši nakupovalni vodič pa še vedno 90. Za nenavadne nepovezane pakete veljajo ločena pravila. Preverite rok pri svojem izdelku in pred iztekom uredite dostavo ali podaljšanje; ne zanašajte se le na starejši vodič.",
+      "sourceIds": [
+        "storage",
+        "status",
+        "buying"
+      ]
+    },
+    {
+      "id": "consolidate",
+      "category": "Dostava in sledenje",
+      "question": "Ali lahko več nakupov pošljem v enem paketu?",
+      "answer": "Nakupovalni vodič opisuje izbiro shranjenih izdelkov v My Warehouse in njihovo skupno oddajo za dostavo. Preverite, da so bili vsi izbrani izdelki ustrezno pregledani in da razpoložljiva pot sprejme nastali paket. Združevanje izdelkov spremeni zapakirani paket; ni zagotovilo za nižji skupni strošek prevoza.",
+      "sourceIds": [
+        "buying"
+      ]
+    },
+    {
+      "id": "remove-packaging",
+      "category": "Dostava in sledenje",
+      "question": "Ali lahko LoloBuy pred odpremo odstrani škatle?",
+      "answer": "Storitev Package Removal lahko izberete pri oddaji dostave. Uradni opis pravi, da potrebna zaščitna embalaža ostane. Če originalne škatle potrebujete za darilo, shranjevanje ali morebitno vračilo, to upoštevajte pred odstranitvijo. Končno pakiranje in prevoz sta odvisna od blaga in izbrane pošiljke.",
+      "sourceIds": [
+        "packaging"
+      ]
+    },
+    {
+      "id": "shipping-price",
+      "category": "Dostava in sledenje",
+      "question": "Zakaj se končni strošek dostave razlikuje od ocene?",
+      "answer": "Začetni prevoz temelji na ocenjeni teži ter izbranem cilju in poti. Pakiranje lahko spremeni težo in mere, obračun pa določa pristojbina logističnega ponudnika. LoloBuy opisuje vračilo preplačila ali zahtevo za doplačilo, če je dejanski prevoz drugačen. Preverite končno ponudbo paketa in sporočilo na računu.",
+      "sourceIds": [
+        "weight",
+        "freight-balance"
+      ]
+    },
+    {
+      "id": "volumetric-weight",
+      "category": "Dostava in sledenje",
+      "question": "Kaj je volumetrična teža?",
+      "answer": "Mere paketa pretvori v težo za obračun prostornega blaga. Pomoč LoloBuy razlikuje formule po poteh in opozarja, da je obračunska teža lahko večja izmed dejanske in volumetrične teže. Uporabite delitelj in pravila zaokroževanja za izbrano pot, ne splošne obljube o ceni na kilogram.",
+      "sourceIds": [
+        "weight"
+      ]
+    },
+    {
+      "id": "supplemental-payment",
+      "category": "Dostava in sledenje",
+      "question": "Kaj storim ob obvestilu o doplačilu dostave?",
+      "answer": "Odprite ustrezni paket ter preglejte popravljeno pristojbino in zahtevo za potrditev. Pravila LoloBuy za doplačila uporabljajo različne pragove obravnave in vključujejo primere zadržanja ali preklica paketa. Odgovorite do prikazanega roka svojega paketa in poravnajte sprejeti znesek; prvotne ocene ne obravnavajte kot končne.",
+      "sourceIds": [
+        "freight-balance"
+      ]
+    },
+    {
+      "id": "tracking",
+      "category": "Dostava in sledenje",
+      "question": "Kje lahko sledim mednarodnemu paketu?",
+      "answer": "Uradni nakupovalni vodič uporabnike po odpremi usmeri v My LoloBuy → Parcels. Vodič statusov razlikuje Packed od Shipped: zapakirani paket lahko še čaka na potrditev končne teže, Shipped pa pomeni, da ima številko za sledenje in je predan prevozniku. Preberite zadnji dogodek prevoznika in stanje računa.",
+      "sourceIds": [
+        "buying",
+        "status"
+      ]
+    },
+    {
+      "id": "cancellation",
+      "category": "Vračila in poprodajna podpora",
+      "question": "Ali lahko naročilo prekličem pred prihodom v skladišče?",
+      "answer": "Preklic je odvisen od trenutne faze naročila. Uporabite možnost preklica ali vračila blaga/denarja pri ustreznem naročilu. Ko je izdelek kupljen, je lahko potrebna prodajalčeva potrditev; oddana zahteva ni odobreno vračilo denarja. Pred nadomestnim nakupom preverite odgovor v naročilu.",
+      "sourceIds": [
+        "cancellation",
+        "refunds"
+      ]
+    },
+    {
+      "id": "eligible-return",
+      "category": "Vračila in poprodajna podpora",
+      "question": "Kaj vključuje LoloBuyjevo pravilo petdnevnega vračila?",
+      "answer": "Namensko pravilo za upravičeno blago opisuje 120-urni rok za zahtevo od naslednje ure po statusu Stocked in. Še vedno veljajo soglasje prodajalca, stanje izdelka in zahtevana embalaža. Vračilo brez napake lahko vključuje oba domača prevoza in pristojbino za obravnavo. Upravičenost in dejansko stran zahteve preverite takoj.",
+      "sourceIds": [
+        "returns"
+      ]
+    },
+    {
+      "id": "refund-destination",
+      "category": "Vračila in poprodajna podpora",
+      "question": "Kam prispe odobreno vračilo denarja?",
+      "answer": "Pomoč za vračila na splošno opisuje nakazilo odobrenih vračil na stanje računa LoloBuy. Posebej opisuje ozko izjemo prvotnega načina plačila za določena naročila PayPal, ki čakajo na odobritev. To ne obljublja, da vsako vračilo prispe neposredno na bančno kartico, niti ne dokazuje, da so trenutno na voljo vsi načini plačila.",
+      "sourceIds": [
+        "refunds"
+      ]
+    },
+    {
+      "id": "delivery-problem",
+      "category": "Vračila in poprodajna podpora",
+      "question": "Kaj storim, če je dostavljeni paket poškodovan ali napačen?",
+      "answer": "Odprite prizadeti paket v My LoloBuy → Parcels in uporabite Apply After-sales. Opišite težavo ter shranite jasne fotografije paketa in izdelka. Uradni članek vsebuje nasprotujoče si roke, vključno z zgodnejšim opozorilom, zato težavo prijavite takoj in pridobite potrditev za svoj primer, namesto da čakate na splošen rok.",
+      "sourceIds": [
+        "claims"
+      ]
+    },
+    {
+      "id": "sizing",
+      "category": "Izbira izdelkov",
+      "question": "Kako izberem velikost oblačila ali čevljev?",
+      "answer": "LoloBuyjeva referenca velikosti opozarja, da se standardi trgovin razlikujejo. Tabelo mer dejanskega prodajalca, enote in izbrano možnost primerjajte s svojimi merami ali dobro prilegajočim se izdelkom. Pretvorbene tabele so orientacija, ne jamstvo, da ista oznaka ustreza pri vseh prodajalcih. Pred naročilom povprašajte o manjkajočih meritvah.",
+      "sourceIds": [
+        "sizing"
+      ]
+    },
+    {
+      "id": "1688",
+      "category": "Izbira izdelkov",
+      "question": "Ali imajo naročila 1688 enaka pravila nakupa in pregleda?",
+      "answer": "Uradni vodič 1688 zahteva prodajalčevo minimalno količino; cene in domači prevoz se lahko spreminjajo s količino. Pravila pregleda razlikujejo vzorčenje izdelkov tipa A od izdelkov tipa B brez standardnega QC. Pred plačilom potrdite količino, obseg pregleda in pogoje vračila, namesto da predpostavite maloprodajno obravnavo.",
+      "sourceIds": [
+        "wholesale",
+        "qc"
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "slug": "using-lolobuy-spreadsheet",
+      "title": "Kako uporabljati preglednico LoloBuy: iz povezave izdelka ustvarite uporaben ožji izbor",
+      "description": "Poiščite izdelke po kategorijah, primerjajte natančen oglas in shranite potrebne podatke pred odpiranjem izdelka na LoloBuyu.",
+      "keyword": "lolobuy spreadsheet",
+      "category": "Prvi koraki",
+      "summary": "Uporabna preglednica zoži iskanje. Uporaben ožji izbor beleži natančen izdelek, možnost in neodgovorjena vprašanja, potrebna za naročilo.",
+      "sections": [
+        {
+          "heading": "Začnite z nakupno odločitvijo, ne dolgim seznamom",
+          "paragraphs": [
+            "Preglednica LoloBuy je orodje za odkrivanje izdelkov. Prebrskate lahko kategorijo, pogledate slike in sledite oglasu do naslednjega koraka. To ne pomeni, da je izdajatelj kataloga kupil vsak izdelek, preizkusil prodajalca ali rezerviral vašo velikost. Vsako vrstico obravnavajte kot namig, ki zahteva preverjanje.",
+            "Pred iskanjem zapišite vrsto potrebnega izdelka, pomembne meritve in okvirni proračun zanj. Iskanje črnega puloverja s kapuco in zadrgo je uporabnejše od zbiranja vsake privlačne povezave do oblačil. Ožje vprašanje tudi olajša prepoznavanje oglasa, ki mu manjkajo bistvene informacije."
+          ]
+        },
+        {
+          "heading": "Ohranite izvorno identiteto izdelka",
+          "paragraphs": [
+            "Številka v naslovu kataloške strani je lahko lokalna številka zapisa. Lahko se razlikuje od ID-ja izdelka na tržnici v nakupni povezavi. Številk ne spreminjajte ročno, da bi povezava izgledala pravilno. Uporabite ustrezni gumb izdelka, nato odprti izdelek primerjajte z oglasom, ki ste ga nameravali kupiti.",
+            "Shranite izvorni prodajalčev URL skupaj z izbrano možnostjo. Posnetek zaslona lahko ohrani uporaben pogled, vendar je manj uporaben, če ne veste, kateremu prodajalcu, velikosti ali barvi pripada. Če povezava odpre drug izdelek ali prazen oglas, pred nadaljevanjem preverite."
+          ]
+        },
+        {
+          "heading": "Primerjajte primerljivo",
+          "paragraphs": [
+            "Začetna cena lahko velja za najcenejšo možnost, posamezen dodatek ali drugo količino. Med oglasi primerjajte enako konfiguracijo izdelka. Dvodelni komplet in posamezna majica nista smiselna cenovna primerjava, čeprav so njune sličice podobne.",
+            "Preverite, ali galerija prikazuje izbrano barvo in ali obstaja tabela velikosti. Enake fotografije pri različnih prodajalcih ne dokazujejo enake izdelave ali zaloge. Primerjava naj zabeleži razpoložljive dokaze in jasno označi vrzel, kadar pomemben podatek ni znan."
+          ],
+          "bullets": [
+            "Natančen izdelek in prodajalčev URL",
+            "Izbrana velikost, barva in količina",
+            "Trenutna cena te možnosti",
+            "Meritve ali sklic na tabelo velikosti",
+            "Eno nerešeno vprašanje pred naročilom"
+          ]
+        },
+        {
+          "heading": "Uporabite uradni prehod na nakup",
+          "paragraphs": [
+            "Nakupovalni vodič LoloBuy opisuje oddajo povezave s tržnice, izbiro razpoložljivih možnosti ter plačilo izdelka in domače dostave. Opisuje tudi ročni obrazec, kadar informacij ni mogoče samodejno zajeti. Uspešno odprta povezava je zato šele začetek pregleda naročila.",
+            "Na uradni strani izdelka ponovno preverite sliko, besedilo možnosti in količino. Katalog ne more zagotoviti trenutne zaloge ali ohraniti izbire, ki je niste izbrali pri plačilu. Posebna zahteva naj bo dovolj konkretna za ukrepanje kupca, na primer natančno ime barve ali vprašanje o meritvi."
+          ]
+        },
+        {
+          "heading": "Ločite slike za odkrivanje od lastnega QC",
+          "paragraphs": [
+            "Prodajalčeva galerija pojasnjuje ponudbo. Starejša skladiščna slika lahko prikazuje izdelek druge osebe. Fotografije pregleda ob vašem naročilu so dokazi za pregled pred pošiljanjem tega izdelka v tujino. Te tri vrste slik odgovarjajo na različna vprašanja in niso zamenljive.",
+            "Ožji izbor naj spremlja naročilo. Ko izdelek prispe v skladišče, zapisano možnost primerjajte z vidno oznako velikosti, barvo in količino. Neskladje je lažje pojasniti, če imate izvorno izbiro in referenco naročila skupaj."
+          ]
+        },
+        {
+          "heading": "Naj ožji izbor koristi tudi po nakupu",
+          "paragraphs": [
+            "Ohranite le najmočnejše kandidate in zapišite, zakaj je vsak prestal primerjavo. En pulover ima lahko jasnejšo tabelo mer, drugi pa nerazjasnjeno podrobnost tkanine. Tako zbirka povezav postane odločitev, h kateri se lahko vrnete brez ponovnega raziskovanja.",
+            "Pred nakupom preberite vodiča o naročanju in proračunu. Pred oddajo paketa preberite vodiča o QC in dostavi. Preglednica je najuporabnejša, kadar povezuje te faze, namesto da ceno izdelka predstavlja kot celotni strošek dostavljenega naročila."
+          ]
+        }
+      ],
+      "checklist": [
+        "Shranite natančen izvorni URL in možnost.",
+        "Primerjajte enake količine in konfiguracije.",
+        "Pred plačilom razjasnite manjkajoče meritve.",
+        "Preverite uvoženi oglas na LoloBuyu.",
+        "Pred odpremo preglejte QC svojega naročila."
+      ],
+      "sourceIds": [
+        "buying",
+        "qc"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 580
+    },
+    {
+      "slug": "how-to-order-on-lolobuy",
+      "title": "Kako naročiti na LoloBuyu: povezave izdelkov, možnosti in faze plačila",
+      "description": "Sledite naročanju od povezave s tržnice do skladiščnega pregleda in posebej oddanega mednarodnega paketa.",
+      "keyword": "how to order on lolobuy",
+      "category": "Naročanje",
+      "summary": "Pred plačilom preverite izdelek, pred pošiljanjem skladiščne dokaze in pred odpremo ponudbo paketa. Vsaka faza odgovori na drugo vprašanje.",
+      "sections": [
+        {
+          "heading": "Začnite na uradni strani",
+          "paragraphs": [
+            "Za registracijo, dostop do računa in plačilo uporabite uradno spletno stran LoloBuy. Ta neodvisni katalog pomaga pri odkrivanju; ne zbira vašega gesla in ne obdeluje naročila. Pri odpiranju izdelka preverite cilj, pogovore o nakupu pa ohranite ob ustreznem naročilu.",
+            "Uradni nakupovalni vodič opisuje začetek s povezavo izdelka s podprte kitajske tržnice. Izbrani izdelek dobavi prodajalec oglasa. Razlika je pomembna, ker nakupna storitev in prodajalec ne nadzorujeta istih delov transakcije."
+          ]
+        },
+        {
+          "heading": "Preverite uvoženi izdelek",
+          "paragraphs": [
+            "Prilepite izvorno povezavo ali uporabite ustrezni gumb LoloBuy v katalogu. Pred izbiro možnosti odprto stran primerjajte z virom. Preverite glavno sliko, ime izdelka, razpoložljive podatke prodajalca, izbrano barvo, velikost in količino. Ne zanašajte se zgolj na sliko.",
+            "Če stran prikaže ročni obrazec posredniškega naročila, uradni vodič naroča ročni vnos podatkov. Izpolnite ga iz dejanskega oglasa, namesto da ugibate manjkajoče možnosti. Nejasno potrebno podrobnost razjasnite s povpraševanjem ob naročilu, preden kupca prosite za nadaljevanje."
+          ],
+          "bullets": [
+            "Izdelek ustreza izvornemu URL-ju",
+            "Besedilo možnosti ustreza želeni barvi in velikosti",
+            "Količina in cena na enoto se nanašata na isto konfiguracijo",
+            "Posebna zahteva je jasno zapisana"
+          ]
+        },
+        {
+          "heading": "Razumite prvo plačilo",
+          "paragraphs": [
+            "Uradni potek nakupa loči izdelek in domačo dostavo na Kitajskem od poznejšega mednarodnega paketa. Prvo plačilo preglejte po postavkah. Izbira cilja med nakupom ne pomeni, da prikazani seštevek izdelkov vsebuje vse stroške dostave na ta cilj.",
+            "Načine plačila, valute in dodatne storitve preverite pri trenutni blagajni. Splošen seznam v članku pomoči ni obljuba, da je vsak način na voljo za vaš račun ali naročilo. Shranite potrdilo plačila in ga primerjajte s stanjem naročila, namesto da ponovno plačate zaradi počasnega osveževanja strani."
+          ]
+        },
+        {
+          "heading": "Odgovorite na vprašanja o naročilu",
+          "paragraphs": [
+            "LoloBuy uporablja status »Pending for Confirmation« za podatke, ki jih je treba preveriti. Stran pomoči kupca usmeri na navodila ob naročilu. Preberite dejansko vprašanje in odgovorite nanj: lahko vpliva na možnost nadaljevanja nakupne ekipe.",
+            "Uradna navodila za spremembe ločijo izdelke, ki jih prodajalec še ni odposlal, od že poslanih. Pred odpremo lahko kupec prodajalca vpraša za spremembo; po odpremi sta lahko potrebna vračilo in novo naročilo. Zahtevana sprememba ni izvedena, dokler je zapis naročila ne potrdi."
+          ]
+        },
+        {
+          "heading": "Preglejte prihod in kontrolo",
+          "paragraphs": [
+            "Prihod v skladišče in zaključen pregled sta ločena mejnika. Izdelek poiščite v skladiščnem razdelku ter fotografije in zapisano možnost primerjajte z nakupom. Najprej preverite identiteto, nato vidne podrobnosti, ki so vam pomembne. Očitno neskladje razrešite pred vključitvijo izdelka v mednarodni paket.",
+            "Ne predpostavljajte enakega pregleda za vse izdelke. Uradna politika standardnega pregleda opisuje omejitve zapečatenih izdelkov in posebno obravnavo nekaterih naročil 1688. Če potrebujete posebno meritev ali pogled, preverite razpoložljivost pri svojem naročilu, namesto da splošno QC sliko razumete kot dokaz vsega."
+          ]
+        },
+        {
+          "heading": "Oddaja paketa je samostojna odločitev",
+          "paragraphs": [
+            "Uradni postopek uporabnike usmeri k izbiri shranjenih izdelkov, vnosu podatkov dostave in izbiri razpoložljivega pošiljanja. Skupaj preglejte cilj, omejitve, izbire pakiranja in predujem prevoznine. Kupljeni izdelek še ni samodejno mednarodni paket, pripravljen za odpremo.",
+            "Končna prevoznina se lahko po pakiranju in logističnem merjenju spremeni. Spremljajte zapis paketa zaradi popravkov ali zahteve za potrditev. Po odpremi uporabite razdelek paketov za sledenje, shranite reference naročil in ob dostavi hitro preverite vsebino."
+          ]
+        }
+      ],
+      "checklist": [
+        "Potrdite izvorni izdelek in natančno možnost.",
+        "Preglejte stroške izdelka in domače dostave.",
+        "Odgovorite na čakajoče zahteve za potrditev.",
+        "Preverite skladiščne slike in nerešena vprašanja.",
+        "Preglejte ločeno ponudbo mednarodnega paketa."
+      ],
+      "sourceIds": [
+        "buying",
+        "confirmation",
+        "changes",
+        "qc",
+        "freight-balance"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 572
+    },
+    {
+      "slug": "lolobuy-qc-photos",
+      "title": "LoloBuy QC fotografije: praktični seznam pregleda pred pošiljanjem",
+      "description": "Ločite prodajalčeve slike od svojega skladiščnega pregleda ter preverite identiteto, vidno stanje in podrobnosti, ki še potrebujejo dokaze.",
+      "keyword": "lolobuy qc photos",
+      "category": "Kontrola kakovosti",
+      "summary": "Začnite z naročenim izdelkom in možnostjo. Z razpoložljivimi pogledi presodite, kaj je jasno, kaj zahteva novo fotografijo in kaj rešiti pred odpremo.",
+      "sections": [
+        {
+          "heading": "Prepoznajte dokaze, ki jih gledate",
+          "paragraphs": [
+            "Galerija izdelka je del prodajalčeve ponudbe. Referenčna QC fotografija lahko prikazuje starejše naročilo. Vaše skladiščne fotografije se nanašajo na izdelek, prejet za vaš nakup. Pri odločanju ločite te skupine, zlasti če ima izdelek več barv, različic ali velikosti.",
+            "Najprej povežite referenco naročila, izdelek in izbrano možnost. Podrobna slika napačne različice ni koristno zagotovilo. Če slik ni mogoče povezati z izdelkom v vašem skladišču, pred presojo videza zahtevajte to povezavo."
+          ]
+        },
+        {
+          "heading": "Identiteto preverite pred drobnimi podrobnostmi",
+          "paragraphs": [
+            "Najprej preverite velikost, barvo, količino in model. Poiščite skladne oznake in poglede istega izdelka. Fotografije so lahko privlačne, a vseeno kažejo napačno velikost ali nepopoln komplet. Videno primerjajte s shranjeno izbiro naročila, ne s spominom.",
+            "Pri čevljih preverite oba čevlja in vidne oznake velikosti. Pri oblačilu preverite izbrano barvo in označeno velikost. Pri torbi ali kompletu dodatkov preverite, ali so pričakovani deli vidni. To so praktični koraki pregleda, ne jamstvo, da je bila pregledana vsaka skrita podrobnost."
+          ]
+        },
+        {
+          "heading": "Uporabite seznam glede na kategorijo",
+          "paragraphs": [
+            "Pri oblačilih so uporabni celotna oblika, sprednja in zadnja stran, šivi, tisk ali vezenje ter področja, kjer prileganje določa meritev. Pri obutvi preglejte par skupaj, vidno izdelavo in zahtevano velikost. Pri torbah zapirala, ročaji in notranji pogledi odgovarjajo na različna vprašanja.",
+            "Zapišite samo podrobnosti, ki vplivajo na odločitev. Dolg splošen seznam lahko odvrne pozornost od ene pomembne manjkajoče meritve ali poškodovanega zapirala. Če je sprednji pogled jasen, zadnji pa manjka, zahtevajte manjkajoči pogled namesto nove splošne slike iz istega kota."
+          ],
+          "bullets": [
+            "Potrdite identiteto in izbrano možnost",
+            "Preglejte vidno stanje in izdelavo",
+            "Primerjajte zahtevane meritve",
+            "Manjkajoče poglede navedite ločeno od opaženih napak"
+          ]
+        },
+        {
+          "heading": "Razumite omejitve standardne storitve",
+          "paragraphs": [
+            "Stran standardnega pregleda LoloBuy opisuje preglede videza in izjeme. Zapečatenih izdelkov zlasti ne odprejo vedno, pri nekaterih profesionalnih ali elektronskih izdelkih pa ne preverjajo pristnosti, delovanja ali kakovosti. Nekatera naročila 1688 imajo vzorčenje ali drugačna pravila.",
+            "Uradne strani se ne strinjajo o eni univerzalni kvoti fotografij: stran pregleda in širša storitvena stran opisujeta različna števila. Preverite storitev svojega naročila, namesto da predpostavite natančno število. Koristno vprašanje je, ali razpoložljivi dokazi pokrijejo odločitev, ki jo potrebujete."
+          ]
+        },
+        {
+          "heading": "Zahtevajte natančen dodatni pogled",
+          "paragraphs": [
+            "Usmerjena zahteva opredeli naročilo, območje fotografiranja in razlog. Na primer: »Pokažite oznako velikosti in izmerite ravno širino prsi oblačila od šiva do šiva.« To je jasneje kot vprašanje, ali je izdelek dober. Pred dodatnim delom preverite razpoložljivost storitve in morebitno plačilo.",
+            "Uporabite enako merilno metodo kot prodajalčeva tabela. Ravna širina oblačila in obseg telesa sta različni količini. Sliko in meritev ohranite skupaj, da številke ne zamenjate za meritev druge velikosti ali izdelka."
+          ]
+        },
+        {
+          "heading": "Sprejmite dokumentirano odločitev",
+          "paragraphs": [
+            "Ugotovitve razvrstite v potrjene, nejasne in nesprejemljive. Za nejasno podrobnost zahtevajte dokaz. Če se izdelek očitno razlikuje od naročila, pred mednarodnim pošiljanjem uporabite ustrezno podporo ali postopek vračila. Shranite kratek opis težave in fotografije, ki jo dokazujejo.",
+            "Slike ne morejo dokazati vseh lastnosti materiala, udobja, dolgoročne vzdržljivosti ali notranjega delovanja. Odobritev vidnega stanja je ožja odločitev. Preberite pogoje vračila, ko je izdelek še v skladišču, in uspešnega QC ne razumite kot obljubo glede carine ali mednarodne dostave."
+          ]
+        }
+      ],
+      "checklist": [
+        "Povežite fotografije s svojim naročilom.",
+        "Najprej preverite velikost, barvo, model in količino.",
+        "Zahtevajte konkreten manjkajoči pogled ali meritev.",
+        "Preverite storitev pregleda in izjeme.",
+        "Pomembne težave rešite pred oddajo paketa."
+      ],
+      "sourceIds": [
+        "qc",
+        "photos",
+        "service",
+        "sizing"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 573
+    },
+    {
+      "slug": "lolobuy-shipping-costs",
+      "title": "Stroški dostave LoloBuy: primerjajte celoten paket",
+      "description": "Razumite ocenjeno, dejansko in volumetrično težo ter primerjajte poti z istim ciljem, vsebino in pakiranjem.",
+      "keyword": "lolobuy shipping calculator",
+      "category": "Dostava",
+      "summary": "Koristna primerjava prevoznine se začne z jasno opredeljenim paketom. Vodič pojasnjuje podatke in preverjanja; ni trenutna ponudba dostave.",
+      "sections": [
+        {
+          "heading": "Ločite ceno izdelka od prevoznine",
+          "paragraphs": [
+            "Cena ob izdelku ni celotni strošek dostavljenega naročila. Uradni postopek LoloBuy loči nakup izdelka in domačo dostavo od poznejšega mednarodnega predujma. Proračun lahko ocenite pred nakupom, končne primerjave paketa pa ne morete narediti samo iz cene izdelka.",
+            "Zapišite cilj, predvideno vsebino in embalažo, ki jo želite obdržati. Par čevljev s škatlo in isti par brez nje sta različni odločitvi pakiranja. Dodatni izdelki spremenijo težo in mere, zato lahko majhen nakup na končno ponudbo vpliva na več načinov."
+          ]
+        },
+        {
+          "heading": "Vedite, katero težo primerjate",
+          "paragraphs": [
+            "Vodič LoloBuy loči oceno od dejanske teže zapakiranega paketa. Skladiščni zapis izdelka vključuje originalno embalažo, končni paket pa še zunanjo poštno embalažo ter izbire odstranitve ali ojačitve. V teh fazah lahko nastanejo različne meritve.",
+            "Volumetrična teža izraža prostor, ki ga zasede paket. Uradni vodič objavlja različne delitelje za različne poti. Ne uporabljajte istega delitelja za vse prevoznike in ne predpostavljajte, da je star primer današnja tarifa. Za oddani paket uporabite trenutne pogoje poti."
+          ],
+          "bullets": [
+            "Cilj in poštna številka",
+            "Omejitve izdelkov in vsebina",
+            "Dejanska zapakirana teža",
+            "Dolžina, širina in višina",
+            "Obračunska pravila poti in vključene storitve"
+          ]
+        },
+        {
+          "heading": "Računajte, ne da bi izračun prikazali kot ponudbo",
+          "paragraphs": [
+            "Zgolj ponazoritev: paket velikosti 40 × 30 × 20 centimetrov ima prostornino 24.000 kubičnih centimetrov. Hipotetična pot z deliteljem 6.000 da 4 kilograme volumetrične teže; delitelj 5.000 da 4,8 kilograma. Noben izračun ne poda cene dostave.",
+            "Primer kaže pomen pravil poti. Še vedno potrebujete dejansko težo, obračunske korake, cilj in trenutno tarifo. Poti ne izbirajte po naslovni ceni »na kilogram«, kadar je strošek odvisen od začetne enote, dodatnih enot ali večje obračunske teže."
+          ]
+        },
+        {
+          "heading": "Med potmi primerjajte isti paket",
+          "paragraphs": [
+            "Pri primerjavi razpoložljivih linij ohranite iste vhodne podatke. Preverite sprejeto vsebino, navedeno oceno prevoza, sledenje, zahteve pakiranja in dodatno zaščito. Nižji začetni znesek ni popolna primerjava, če se storitve ali omejitve razlikujejo.",
+            "Čase dostave obravnavajte kot ocene. Skladiščna obdelava, prevoznikovo gibanje in postopki na cilju so ločene faze. Ta vodič ne obljublja univerzalnega časa dostave, poti brez davkov ali fiksne carinske pristojbine. Pri odločitvi uporabite trenutno ponudbo in uradna pravila cilja."
+          ]
+        },
+        {
+          "heading": "Pri pakiranju tehtajte koristi in omejitve",
+          "paragraphs": [
+            "Uradna stran odstranitve embalaže opisuje odstranitev nepotrebne zunanje embalaže ob ohranitvi zaščite, potrebne za blago. Odsvetuje odstranitev, kadar je originalna embalaža pomembna za darilo ali ohranjanje. Manjši volumen je lahko koristen, a zaščita in namen nakupa ostajata pomembna.",
+            "Zahtevajte konkretno pakiranje namesto splošnega navodila, naj odstranijo vse. Če so na voljo, primerjajte končne mere. Združevanje ali odstranitev embalaže ne zniža samodejno računa na vsaki poti, lomljiv izdelek pa lahko potrebuje dodatno zaščito."
+          ]
+        },
+        {
+          "heading": "Spremljajte končni obračun",
+          "paragraphs": [
+            "Navodila LoloBuy za doplačila navajajo uskladitev ocenjene prevoznine z dejansko pristojbino logističnega ponudnika. To lahko pomeni vračilo preplačila ali dodatni zahtevek. Preberite sporočila paketa in odgovorite na zahteve, povezane z vašo pošiljko.",
+            "Začetno oceno, končne obračunske mere, izbrane storitve in popravek hranite skupaj. Tak zapis olajša razumevanje razlike. Morebitne ciljne pristojbine načrtujte ločeno in pred zaključkom naročila preverite končni znesek paketa."
+          ]
+        }
+      ],
+      "checklist": [
+        "Primerjajte poti za enako vsebino in cilj.",
+        "Preverite pravila dejanske in volumetrične teže.",
+        "Pri odločitvi upoštevajte zaščito embalaže.",
+        "Ločite ocene od končnih stroškov.",
+        "Pred odpremo preberite sporočila popravkov paketa."
+      ],
+      "sourceIds": [
+        "buying",
+        "weight",
+        "packaging",
+        "freight-balance"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 547
+    },
+    {
+      "slug": "lolobuy-warehouse-consolidation",
+      "title": "Vodič skladišča LoloBuy: pregled, hramba in združevanje",
+      "description": "Organizirajte shranjene izdelke, rešite QC vprašanja in izberite pakiranje z mislijo na celoten paket.",
+      "keyword": "lolobuy warehouse",
+      "category": "Skladišče",
+      "summary": "Skladiščna faza omogoča povezavo nakupnega zapisa s prejetim izdelkom in odločitev, kaj je pripravljeno za skupno pošiljanje.",
+      "sections": [
+        {
+          "heading": "Ločite prihod od pripravljenosti",
+          "paragraphs": [
+            "Zapis prodajalčeve dostave pomeni, da je domači paket dosegel točko na poti. Sam ne kaže, da je vaš izdelek pregledan, pravilno povezan in pripravljen za mednarodno odpremo. Vodič statusov LoloBuy loči prejeto blago, pregled in shranjeno zalogo.",
+            "Kot delovni seznam uporabite skladiščni zapis, ne enega sporočila sledenja. Za vsak izdelek hranite številko naročila, izbrano možnost in QC status. Če več prodajalčevih paketov prispe skupaj, tako zaključen izdelek ne prikrije vprašanja o drugem."
+          ]
+        },
+        {
+          "heading": "Sestavite kratek skladiščni seznam",
+          "paragraphs": [
+            "Za vsak izdelek zapišite naročeno, prikazano v skladišču in nerešeno. Dovolj so štirje stolpci: izdelek, pravilna možnost, odločitev pregleda in navodilo pakiranja. Namen je, da odprto vprašanje ostane vidno pred sestavljanjem paketa.",
+            "Slike primerjajte z izvorno izbiro. Manjkajoča slika in vidna napaka potrebujeta različna ukrepa. Pri nejasni podrobnosti zahtevajte dokaz. Pri očitnem neskladju pojasnite razliko z referenco naročila in preučite ustrezni postopek vračila."
+          ],
+          "bullets": [
+            "Naročilo in natančna možnost",
+            "Prejem v skladišče in stanje pregleda",
+            "Odprto vprašanje ali zahteva za vračilo",
+            "Ohranitev ali odstranitev originalne embalaže",
+            "Pripravljeno za mednarodni paket: da ali ne"
+          ]
+        },
+        {
+          "heading": "Rok hrambe preverite neposredno",
+          "paragraphs": [
+            "Uradno gradivo vsebuje nasprotujoče si navedbe: nakupovalni vodič omenja 90 dni, strani hrambe in statusov pa 180. Stran hrambe opisuje tudi ločeno obravnavo nepovezanih nenavadnih paketov. Teh razlik ne smemo skrčiti na eno brezpogojno obljubo.",
+            "Preverite podatke hrambe ob svojem izdelku in razjasnite neskladje, preden se zanesete na rok. Zapišite datum in izbrano plačano podaljšanje. Blaga ne puščajte čakati nedoločen čas, ker splošen članek navaja daljše obdobje kot trenutni skladiščni zapis."
+          ]
+        },
+        {
+          "heading": "Združujte združljive in razjasnjene izdelke",
+          "paragraphs": [
+            "Uradni nakupovalni vodič opisuje izbiro shranjenih izdelkov za mednarodno dostavo ali nakup dodatnih in poznejše skupno pošiljanje. Združevanje omogoča načrtovanje paketa kot celote. Vsake kombinacije pa ne naredi sprejemljive za vsako pot.",
+            "Pred združevanjem upoštevajte omejitve, lomljivost in odprta vprašanja. Izdelka, ki čaka na odločitev o vračilu, ne obravnavajte kot pripravljenega. Občutljiv dodatek morda potrebuje drugačno zaščito kot oblačilo. Primerjajte končne mere in težo paketa, ne le števila izdelkov."
+          ]
+        },
+        {
+          "heading": "Napišite natančna navodila pakiranja",
+          "paragraphs": [
+            "Pomoč LoloBuy za odstranitev embalaže opisuje odstranitev nepotrebnega pakiranja ob ohranitvi zaščite, ki jo izdelek potrebuje. Če originalno embalažo želite za darilo ali zbirko, odstranitve ne izberite in zahtevo jasno navedite. Vrednost škatle ni vedno le njena transportna teža.",
+            "Po potrebi uporabite navodila za posamezen izdelek: ohranite zaščitno oporo lomljivega predmeta, zadržite eno trgovsko škatlo ali vprašajte za razpoložljivo pakiranje. Dodatne stroške preverite v trenutnem obrazcu paketa. Ne predpostavljajte, da isti pristop ustreza vsaki kategoriji."
+          ]
+        },
+        {
+          "heading": "Opravite zadnji pregled paketa",
+          "paragraphs": [
+            "Pred oddajo potrdite seznam izdelkov, količine, podatke prejemnika, izbrano pot in storitve. Preverite vključitev vseh želenih izdelkov in odsotnost takih z nerešenimi težavami. Ta kratek pregled je lažji kot rekonstruiranje izbire po pakiranju.",
+            "Uradni strani teže in obračuna pojasnjujeta, da lahko končne meritve spremenijo strošek. Po oddaji spremljajte sporočila paketa, vključno s potrditvami ali doplačili. Po odpremi uporabite zapis sledenja in skladiščne dokaze hranite do pregleda dostave."
+          ]
+        }
+      ],
+      "checklist": [
+        "Pred oznako pripravljenosti preglejte vsak izdelek.",
+        "Preverite rok svojega skladiščnega zapisa.",
+        "Vprašanja vračil ločite od izdelkov za odpremo.",
+        "Določite pakiranje, ki ustreza posameznemu izdelku.",
+        "Preglejte končni seznam paketa in popravke prevoznine."
+      ],
+      "sourceIds": [
+        "buying",
+        "status",
+        "storage",
+        "packaging",
+        "freight-balance"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 539
+    },
+    {
+      "slug": "lolobuy-sizing-guide",
+      "title": "Vodič velikosti LoloBuy: primerjajte meritve pred izbiro oznake",
+      "description": "Za jasnejšo odločitev uporabite prodajalčevo tabelo, dosledne merilne metode in usmerjene skladiščne fotografije.",
+      "keyword": "lolobuy size guide",
+      "category": "Velikosti",
+      "summary": "Znana oznaka velikosti je izhodišče. Koristna primerjava poveže prodajalčeve meritve, vaše referenčne mere in želeno prileganje.",
+      "sections": [
+        {
+          "heading": "Začnite s prodajalčevo tabelo",
+          "paragraphs": [
+            "Uradna referenca LoloBuy pravi, da se standardi velikosti razlikujejo med trgovinami, pretvorbe pa obravnava kot orientacijo. Oznaka srednje velikosti ali znana številka čevljev ne določi prileganja izdelka vsakega prodajalca. Preberite tabelo natančnega oglasa in možnosti.",
+            "Preverite, ali številke opisujejo telo, končno oblačilo ali priporočenega uporabnika. To so različne meritve. Če tabela ni jasna, vprašajte pred naročilom, namesto da iz navade izberete večjo ali manjšo velikost."
+          ]
+        },
+        {
+          "heading": "Izmerite zanesljivo referenco",
+          "paragraphs": [
+            "Oblačilo primerjajte s svojim kosom, ki se prilega tako, kot želite. Položite ga ravno in uporabite iste točke kot prodajalčev prikaz. Zapišite enote in ali se širina meri čez eno stran ali okoli telesa. Mere shranite s hitro fotografijo metode.",
+            "Pri telesnih merah sledite ustreznemu vodiču in trak držite ravno, namesto da ga zategujete za želeno velikost. Oprijeta srajca, sproščen pulover in strukturirana jakna potrebujejo različne dodatke. Želena silhueta je del odločitve, ne napaka tabele."
+          ]
+        },
+        {
+          "heading": "Izberite pomembne dimenzije",
+          "paragraphs": [
+            "Pri zgornjem delu širina prsnega dela, dolžina, ramena in rokav odgovarjajo na različna vprašanja. Pri hlačah preverite pas, višino sedala, notranjo in skupno dolžino. Ena številka pasu ne pojasni padca hlačnice, mera prsnega dela pa ne določa dolžine rokava.",
+            "Za ponazoritev ima vaš referenčni zgornji del 56 centimetrov čez prsi in 70 centimetrov dolžine. Kandidat z merama 56 in 64 ima lahko podobno širino, a opazno krajši trup. To je primer metode primerjave, ne priporočilo določene velikosti ali izdelka."
+          ],
+          "bullets": [
+            "Potrdite merske enote",
+            "Telesne mere primerjajte s telesnimi tabelami",
+            "Ravne mere oblačila primerjajte s tabelami oblačil",
+            "Primerjajte več kot eno ključno dimenzijo",
+            "Zapišite želeno sproščeno ali oprijeto silhueto"
+          ]
+        },
+        {
+          "heading": "Obutev preverite ločeno",
+          "paragraphs": [
+            "Uradni vodič priporoča uporabo večjega stopala, kadar se razlikujeta, in opozarja, da dolžinske oznake ne opišejo širine v celoti. Preberite prodajalčevo tabelo obutve in preverite sistem izbrane možnosti. Ne predpostavljajte popolnega prenosa EU, US ali UK številke med vsemi oglasi.",
+            "Merite po navodilih tabele ter upoštevajte nogavice, širino in namen uporabe. Vidna oznaka čevlja na skladiščni fotografiji pomaga potrditi poslano, ne more pa ugotoviti občutka na stopalu. Slike vložka ne obravnavajte kot univerzalno pretvorbeno tabelo."
+          ]
+        },
+        {
+          "heading": "S QC odgovorite na konkretno vprašanje",
+          "paragraphs": [
+            "Pred odpremo vidno oznako velikosti primerjajte z naročilom. Če pomembna dimenzija ostaja nejasna, zahtevajte meritev z jasno začetno in končno točko. Zahtevajte na primer ravno širino prsnega dela od šiva do šiva, ne le »preverite velikost«.",
+            "Politika pregleda LoloBuy ima omejitve in ne obljublja popolne ocene prileganja. Preverite, ali sta meritev ali dodatna slika na voljo za vaš izdelek in ali sta plačljivi. Standardnega sklopa slik ne opisujte kot osebno svetovanje o velikosti."
+          ]
+        },
+        {
+          "heading": "Odločite se, dokler možnosti ostajajo odprte",
+          "paragraphs": [
+            "Če prejeta oznaka odstopa od izbrane možnosti, neskladje dokumentirajte z naročilom in fotografijo. Če oznaka ustreza, meritev pa ne, hitro preverite prodajalčeve pogoje vračila in trenutni postopek. Gre za različni situaciji, ki ju je treba natančno opisati.",
+            "Meritve zmanjšajo negotovost, ne odpravijo pa razlik kroja, raztegljivosti, občutka tkanine ali osebnih želja. Tabelo in primerjalne zapiske shranite, da uspešno prileganje pomaga pri prihodnjem nakupu. Ob ponovnem naročilu preverite dejanski oglas, saj lahko drug prodajalec ali različica uporablja druge mere."
+          ]
+        }
+      ],
+      "checklist": [
+        "Uporabite tabelo natančnega oglasa.",
+        "Ohranite enake enote in metode merjenja.",
+        "Primerjajte več ključnih dimenzij.",
+        "Preverite prejeto oznako in zahtevano meritev.",
+        "Vprašanja prileganja rešite pred mednarodno odpremo."
+      ],
+      "sourceIds": [
+        "sizing",
+        "qc",
+        "returns"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 561
+    },
+    {
+      "slug": "lolobuy-tracking-guide",
+      "title": "Sledenje LoloBuy: ločite naročilo od mednarodnega paketa",
+      "description": "Pravilno berite nakupne, skladiščne in paketne faze ter zberite uporabne dokaze ob nejasni posodobitvi sledenja.",
+      "keyword": "lolobuy tracking",
+      "category": "Sledenje",
+      "summary": "Status naročila in prevoznikov zapis opisujeta različna dela poti. Reference izdelka, domačega paketa in mednarodne pošiljke hranite ločeno.",
+      "sections": [
+        {
+          "heading": "Vedite, čemu sledite",
+          "paragraphs": [
+            "Izdelek ima lahko nakupno naročilo, prodajalčevo domačo pošiljko in poznejši mednarodni paket. Zapisi so povezani, vendar ne gre za isto pošiljko. Sporočilo domače dostave lahko pomeni prihod v skladišče, ne na vaš dom.",
+            "Med napredovanjem naročila ustvarite preprost seznam: številka izdelka/naročila, prikazana prodajalčeva sledilna referenca, skladiščni zapis in številka mednarodnega paketa. Tako lažje vprašate o pravi fazi, ne da bi podpori poslali posnetek druge poti."
+          ]
+        },
+        {
+          "heading": "Najprej preberite faze nakupa",
+          "paragraphs": [
+            "Uradni vodič statusov LoloBuy razlikuje čakanje na plačilo, obdelavo, naročeno in poslano s strani prodajalca. Obdelava zadeva nakupni postopek; ne pomeni, da mednarodni prevoznik premika paket. Pred iskanjem čezmorske posodobitve preberite besedilo statusa.",
+            "Isti vodič opisuje prejeto blago in zalogo po pregledu. Če domači prevoznik navaja dostavljeno, skladiščni pregled pa še ni končan, lahko zapisa opisujeta zaporedni fazi, ne protislovja. Za naslednje potrebno dejanje preverite zapis izdelka in morebitno potrditev."
+          ]
+        },
+        {
+          "heading": "Nato preberite faze paketa",
+          "paragraphs": [
+            "Po ustvarjanju mednarodnega paketa ima status svoj potek. Uradna stran opisuje čakanje na plačilo, obdelavo, zapakirano in odposlano. Opozarja tudi na spremembe prevoznine po končnem tehtanju. Ustvarjenega paketa ne zamenjujte z odposlanim.",
+            "Uporabite dejanski zapis, ne zgolj obstoja referenčne številke. Nalepka ali številka je lahko pripravljena pred naslednjim vidnim premikom prevoznika. Pri primerjavi sistemov zabeležite, katera stran govori o predaji paketa in kateri dogodek je prevoznik dejansko zapisal."
+          ],
+          "bullets": [
+            "Referenca nakupa/naročila",
+            "Referenca mednarodnega paketa",
+            "Sledilna številka prevoznika",
+            "Zadnji dogodek, kraj in čas",
+            "Čakajoča potrditev ali plačilo"
+          ]
+        },
+        {
+          "heading": "Obdobja brez sprememb razlagajte previdno",
+          "paragraphs": [
+            "Razmik med skeniranji sam po sebi ne določi vzroka. Preverite trenutno oceno izbrane poti, zadnji dogodek in uradna obvestila za to pot. Običajnega trajanja iz stare objave ne pretvorite v obljubljeni rok svojega paketa.",
+            "Ne odpirajte nenehno različnih sledilnih strani in ne obravnavajte vsake besedne razlike kot novega dogodka. Vodite datiran zapis pomembnih sprememb. Če je trenutna faza neskladna ali zahteva dejanje, konkretno težavo naslovite prek podpore paketa ali naročila."
+          ]
+        },
+        {
+          "heading": "Pošljite uporabno vprašanje podpori",
+          "paragraphs": [
+            "Navedite identifikator naročila ali paketa, številko sledenja, zadnji vidni dogodek in vprašanje. Na primer: »Zapis paketa pravi odposlano, prevoznik pa ne kaže predaje. Lahko potrdite stanje predaje?« To omogoča konkretnejšo pomoč kot »Kje je vse?«.",
+            "Nakupovalni vodič LoloBuy po odpremi usmeri na razdelek paketov za sledenje. Kjer je mogoče, uporabite povpraševanje ob prizadetem zapisu. V sporočilo o sledilnem dogodku ne vključujte nepovezanih podatkov računa ali plačilnih poverilnic."
+          ]
+        },
+        {
+          "heading": "Ohranite dokaze do dostave",
+          "paragraphs": [
+            "Ob prihodu hitro preverite zunanje stanje in vsebino paketa. Embalažo, nalepko in jasne slike shranite, če je izdelek napačen, manjka ali je poškodovan. Prejete izdelke primerjajte s končnim seznamom paketa, ne starejšim izborom, ki lahko vključuje neposlane izdelke.",
+            "Uradna stran poprodajne podpore zahteva podroben opis in slike napačnega ali poškodovanega izdelka, vendar si navedeni roki nasprotujejo. Ukrepajte hitro in veljavni rok preverite v trenutnem postopku podpore. Ne čakajte, ker splošen vodič navidez ponuja daljše obdobje."
+          ]
+        }
+      ],
+      "checklist": [
+        "Ločite domače in mednarodne reference.",
+        "Preverite, ali je paket ustvarjen, zapakiran ali odposlan.",
+        "Preberite zadnji dogodek s časom.",
+        "Podpori pošljite konkretno dokumentirano vprašanje.",
+        "Dostavo hitro preverite in ohranite ustrezne dokaze."
+      ],
+      "sourceIds": [
+        "status",
+        "buying",
+        "claims",
+        "freight-balance"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 526
+    },
+    {
+      "slug": "lolobuy-returns-refunds",
+      "title": "LoloBuy vračila blaga in denarja: ukrepajte v pravi fazi",
+      "description": "Pripravite dokaze, preverite prodajalčevo upravičenost in razumite razliko med preklicem, vračilom izdelka in zahtevkom za paket.",
+      "keyword": "lolobuy returns refunds",
+      "category": "Poprodajna podpora",
+      "summary": "Vračilo je odvisno od izdelka, prodajalca in trenutne faze naročila. Jasni dokazi in hitra zahteva so koristnejši od domneve, da eno pravilo velja za vse nakupe.",
+      "sections": [
+        {
+          "heading": "Prepoznajte potrebni postopek",
+          "paragraphs": [
+            "Preklic še nekupljenega naročila, vračilo izdelka v skladišču in prijava težave po mednarodni dostavi so različni postopki. Začnite s trenutnim statusom naročila ali paketa. Ustrezni gumb in podatki so lahko odvisni od napredka transakcije.",
+            "Strani LoloBuy o preklicu in vračilu opisujejo več korakov glede na status in sodelovanje prodajalca. Zahteva ni isto kot odobritev. Preberite odgovor ob naročilu in spremljajte sprejeto, čakajoče ter dejanja, ki jih še morate opraviti."
+          ]
+        },
+        {
+          "heading": "Ohranite natančne dokaze",
+          "paragraphs": [
+            "URL izdelka, izbrano možnost, potrditev naročila in ustrezne slike hranite skupaj. Če gre za napačno oznako velikosti, pokažite naročeno možnost in prejeto oznako. Pri poškodbi pokažite jasen celoten in bližnji pogled prizadetega območja. Razliko opišite brez pretiravanja.",
+            "Na primer: »Naročena modra velikost L; skladiščna slika kaže črno oznako M« opredeli preverljivo neskladje. »Slaba kakovost« je veliko manj natančno. Če slike problema ne pokažejo jasno, pred izbiro rešitve zahtevajte manjkajoče dokaze."
+          ],
+          "bullets": [
+            "Številka naročila in izvorni oglas",
+            "Izbrana možnost in količina",
+            "Jasen opis težave",
+            "Ustrezne slike konkretnega naročila",
+            "Želena rešitev: pojasnilo, preklic, vračilo ali zamenjava"
+          ]
+        },
+        {
+          "heading": "Upravičenost in rok berite skupaj",
+          "paragraphs": [
+            "Uradna stran jamstva vračila opisuje pogoje in rok za zahtevo po skladiščenju. Zahteva tudi prodajalčevo soglasje. Drugi članki o časovnih rokih uporabljajo drugačno ali nerodno besedilo. Preverite rok in storitev pri dejanskem naročilu ter težavo sporočite hitro.",
+            "Pomembna sta lahko embalaža in stanje za ponovno prodajo. Pred razumevanjem pogojev ne naročite odstranitve embalaže, ki jo morda potrebujete za upravičeno vračilo. Rabljeno blago, posebna naročila in druge kategorije imajo lahko drugačna pravila; splošna obljuba brezpogojnih vračil bi bila zavajajoča."
+          ]
+        },
+        {
+          "heading": "Vprašajte, kateri stroški veljajo",
+          "paragraphs": [
+            "Navodila jamstva vračila razlikujejo razlog vračila ter obravnavajo domači prevoz in storitvene stroške. Prvotna brezplačna prodajalčeva dostava ne pomeni nujno brezplačnega poznejšega vračila. Pred soglasjem vprašajte za stroške konkretne zahteve.",
+            "Odgovor ohranite pri naročilu. Razjasnite, ali znesek vključuje prevoz nazaj prodajalcu, prvotno domačo dostavo in storitveno pristojbino. Platformina ugodnost obravnave in prodajalčevi stroški pošiljanja sta različni stvari, ki ju ne smemo združiti v nejasno »brezplačno vračilo«."
+          ]
+        },
+        {
+          "heading": "Spremljajte cilj in stanje vračila denarja",
+          "paragraphs": [
+            "Uradna navodila večinoma opisujejo nakazilo odobrenih vračil na račun LoloBuy, s posebno izjemo za določene prvotne načine plačila. Dobroimetje in vračilo zunanjemu plačilnemu sredstvu sta različna izida. Pred pričakovanjem denarja na banki preverite, kateri velja.",
+            "Prodajalčeva odobritev, prejem vrnjenega izdelka in zaključek vračila denarja so lahko ločeni mejniki. Če obstaja, shranite referenco povratnega paketa. Ob vprašanju o zamudi navedite zadnji dokončani korak, namesto da začnete novo zahtevo brez obstoječega zapisa vračila."
+          ]
+        },
+        {
+          "heading": "Težave dostavljenega paketa obravnavajte ločeno",
+          "paragraphs": [
+            "Za težave po dostavi uradna navodila usmerijo na poprodajno vlogo prizadetega paketa ter zahtevajo opis in slike. Poleg slik izdelka ohranite zunanjo embalažo in nalepko. To pomaga povezati poškodbo ali neskladje s pošiljko.",
+            "Ta uradna stran vsebuje nasprotujoče si roke. Težavo prijavite hitro in veljavni rok pridobite neposredno iz trenutnega postopka. Vodič ne obljublja odobritve, univerzalnega časa vračila ali nadomestila za vsako vrsto izgube."
+          ]
+        }
+      ],
+      "checklist": [
+        "Preverite trenutno fazo naročila ali paketa.",
+        "Dokumentirajte natančno neskladje ali poškodbo.",
+        "Potrdite upravičenost, rok in embalažne pogoje.",
+        "Vprašajte o vseh stroških vračila.",
+        "Spremljajte odobritev in dejanski cilj vračila denarja."
+      ],
+      "sourceIds": [
+        "refunds",
+        "cancellation",
+        "returns",
+        "claims",
+        "changes"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 547
+    },
+    {
+      "slug": "lolobuy-order-budget",
+      "title": "Proračun naročila LoloBuy: poglejte dlje od cene izdelka",
+      "description": "Pred naročilom ločite ceno izdelkov, domačo dostavo, dodatne storitve, valutno pretvorbo in mednarodno prevoznino.",
+      "keyword": "lolobuy fees",
+      "category": "Proračun",
+      "summary": "Uporaben proračun loči potrjene zneske od ocen. Nakup izdelka in poznejše plačilo paketa naj ostaneta vidna kot dve povezani odločitvi.",
+      "sections": [
+        {
+          "heading": "Ocenite možnost, ki jo boste dejansko kupili",
+          "paragraphs": [
+            "Kataloška cena je izhodišče primerjave. Izbrana barva, velikost, komplet ali količina imajo lahko drugo trenutno ceno na uradni strani naročila. Pred vključitvijo v proračun preverite natančno konfiguracijo, zlasti ko izvorni oglas kaže razpon.",
+            "Znesek in valuto primerjajte v isti fazi. Zapisana cena izdelka, seštevek pri plačilu in kartični izpisek lahko vključujejo različne sestavine. Razlike ne označite za skrito pristojbino, preden preverite količino, dostavo, pretvorbo in izbrane storitve."
+          ]
+        },
+        {
+          "heading": "Ločite dve glavni fazi plačila",
+          "paragraphs": [
+            "Uradni postopek LoloBuy najprej zaračuna izdelke in domačo dostavo na Kitajskem. Mednarodno prevoznino urejate ob oddaji shranjenih izdelkov v paket. Kupec, ki načrtuje le prvo plačilo, lahko doseže skladiščno fazo brez dovolj denarja za pošiljanje.",
+            "Ustvarite preprosto tabelo sestavin stroška in jih označite kot potrjene ali ocenjene. Dodatne storitve naj ostanejo vidne, ne skrite v ceni izdelka. Morebitne ciljne pristojbine sodijo v svojo vrstico, ker jih kataloška cena ne določa."
+          ],
+          "bullets": [
+            "Izbrani izdelki in količine",
+            "Domača dostava na Kitajskem",
+            "Izbrane nakupne ali skladiščne storitve",
+            "Mednarodni prevoz in pakiranje",
+            "Prikazane plačilne ali menjalne pristojbine",
+            "Morebitni ciljni davki ali stroški obravnave"
+          ]
+        },
+        {
+          "heading": "Preberite pogoje domače dostave",
+          "paragraphs": [
+            "Uradna pomoč pravi, da lahko izdelki enega prodajalca, oddani in plačani skupaj, delijo domačo pristojbino, z možnim doplačilom za pretežko pošiljko. To je poseben pogoj, ne obljuba enotne pristojbine za vse izdelke v košarici.",
+            "Preverite prodajalca vsakega izdelka in združevanje naročila. Večja količina lahko spremeni tudi prodajalčevo ceno ali dostavne pogoje, zlasti pri veleprodaji. Ohranite trenutni izračun, namesto da staro dostavno pristojbino razdelite med nepovezane nakupe."
+          ]
+        },
+        {
+          "heading": "Preverite plačilne in valutne podatke",
+          "paragraphs": [
+            "Pred potrditvijo preglejte načine uradne blagajne, valuto bremenitve in prikazane stroške. Razpoložljivost je lahko odvisna od računa in transakcije. Splošen seznam pomoči ne dokazuje, da bo določeni način danes na voljo vašemu naročilu.",
+            "Če plačilni ponudnik ponuja pretvorbo valute, primerjajte končni znesek in tam prikazane pogoje. Potrdilo shranite ob naročilu. Ne obljubljajte stalnega tečaja in ne predpostavljajte, da bo pretvorba prejšnjega nakupa veljala za naslednjega."
+          ]
+        },
+        {
+          "heading": "Popuste obravnavajte kot nekaj za preverjanje",
+          "paragraphs": [
+            "Promocijska navodila LoloBuy opisujejo vnos prodajalčeve ponudbe v opombe naročila, da jo kupec preveri. Pasica ali shranjen posnetek ne dokazuje, da vaša natančna možnost in količina še izpolnjujeta pogoje. Zapišite pogoje in zahtevajte potrditev prek naročila.",
+            "Popust do potrditve ločite od običajnega proračuna. Ne zanašajte se na priporočilno akcijo, kupon ali dostavno trditev iz nepovezanega vodiča. Ta stran ni ponudila zagotovljenega dobroimetja novim uporabnikom ali univerzalne cene dostave."
+          ]
+        },
+        {
+          "heading": "Za negotovo prevoznino uporabite razpon",
+          "paragraphs": [
+            "Pred pakiranjem sta teža in velikost ocenjeni. Uradna politika obračuna uskladi začetni znesek s pristojbino logističnega ponudnika. Pustite prostor za morebiten popravek, namesto da celoten proračun porabite za izdelke.",
+            "Kot vajo predpostavite, da potrjeni izdelki in domača dostava stanejo 100 enot iste valute, trenutna ocena pošiljanja pa 30–45. Začasni seštevek je 130–145 pred drugimi veljavnimi stroški. To so hipotetične številke za prikaz metode, ne cene LoloBuy ali ponudba."
+          ]
+        },
+        {
+          "heading": "Proračun naj bo orodje odločitve",
+          "paragraphs": [
+            "Če verjetni skupni znesek preseže omejitev, ožji izbor popravite pred plačilom. Odstraniti manj pomemben izdelek je lahko lažje kot pozneje izterjati denar z vračilom. Primerjajte vrednost celotnega dostavljenega naročila, ne števila poceni izdelkov, ki jih lahko zberete.",
+            "Po odpremi ocene nadomestite s končnimi stroški. Ohranite razliko in razlago. Ta zgodovina pomaga prihodnjemu načrtovanju, ob upoštevanju drugačnega blaga, mer, poti in tečajnih pogojev naslednjič."
+          ]
+        }
+      ],
+      "checklist": [
+        "Načrtujte natančno izbrano možnost.",
+        "Ločite domačo in mednarodno dostavo.",
+        "Zapišite dodatne storitve in valuto bremenitve.",
+        "Uporabite le potrjene popuste.",
+        "Ohranite rezervo za negotovo prevoznino in ciljne stroške."
+      ],
+      "sourceIds": [
+        "buying",
+        "domestic",
+        "promotions",
+        "freight-balance",
+        "wholesale"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 601
+    },
+    {
+      "slug": "lolobuy-seller-and-review-checks",
+      "title": "Najdbe in ocene LoloBuy: preverite dokaze za oglasom",
+      "description": "Presodite izvorne podatke, ustreznost ocen in omejitve pregleda, ne da bi oznako, fotografijo ali oceno razumeli kot jamstvo.",
+      "keyword": "is lolobuy legit",
+      "category": "Nakupne odločitve",
+      "summary": "Koristno vprašanje je, kaj razpoložljivi dokazi potrjujejo o tej transakciji. Samo ime platforme ne odgovori na vsa vprašanja o prodajalcu, izdelku ali paketu.",
+      "sections": [
+        {
+          "heading": "Ločite platformo od izdelka",
+          "paragraphs": [
+            "Storitvene informacije LoloBuy opisujejo nakup blaga s platform tretjih oseb, ne lastne prodaje vsakega navedenega izdelka. Ta neodvisna preglednica je še korak dlje: organizira odkrivanje. Vloge ohranite jasne pri odločitvi, kdo lahko odgovori na vprašanje ali reši težavo.",
+            "Delujoča povezava izdelka ne dokazuje pristnosti, zaloge, prileganja ali prihodnje dostave. Tudi pritožba o enem prodajalcu ne določi vzroka vseh težav platforme. Začnite z natančno trditvijo, ki jo vrednotite, in odgovorno stranjo za ta del postopka."
+          ]
+        },
+        {
+          "heading": "Oglas preverite pred priljubljenostjo",
+          "paragraphs": [
+            "Poiščite jasen izvorni URL, skladen opis izdelka, določljive možnosti in uporabne podatke velikosti ali specifikacij. Izbrano možnost primerjajte z galerijo. Nizka začetna cena lahko velja za drugo sestavino kot izdelek na glavni sliki.",
+            "Če več prodajalcev uporablja iste fotografije, slike same ne povedo, ali je blago enako izdelano ali dobavljeno. Zapišite manjkajoče podatke in postavite usmerjeno vprašanje. Številka priljubljenosti ali znano ime serije ne nadomesti dokazov o točnem oglasu."
+          ],
+          "bullets": [
+            "Izvorni oglas in identiteta prodajalca",
+            "Natančna možnost in količina",
+            "Ustrezne meritve ali specifikacije",
+            "Trenutne informacije vračila",
+            "Neodgovorjena vprašanja, ki vplivajo na nakup"
+          ]
+        },
+        {
+          "heading": "Ocene berite glede na ustreznost",
+          "paragraphs": [
+            "Ocena je uporabnejša, če prepoznate datum, obravnavani izdelek ali storitev in dokaze zaključka. Komentar o odzivu podpore je drugačen od ocene prileganja čevljev. Uspešno dostavljen paket ne dokazuje ustreznosti vsakega kataloškega izdelka.",
+            "Poiščite razkrite priporočilne povezave, spodbude ali druge odnose. Njihova prisotnost ocene ne naredi samodejno lažne, vendar pomaga razumeti namen. Partnerske promocije, posamezne izkušnje ali nepreverjenega pričevanja ne spremenite v univerzalno priporočilo."
+          ]
+        },
+        {
+          "heading": "Načrtujte, kaj pregled lahko ugotovi",
+          "paragraphs": [
+            "Uradna stran standardnega pregleda opisuje preverjanje videza in pomembne izjeme. Ne obljublja preverjanja pristnosti ali delovanja vsake kategorije. Zapečateno blago in nekateri profesionalni izdelki imajo drugačno obravnavo. Omejitve preberite pred nakupom izdelka, katerega vrednost temelji na nečem, česar storitev ne testira.",
+            "Pri oblačilu lahko jasne meritve in vidna izdelava odgovorijo na veliko vprašanj. Pri elektroniki ali varnostno pomembnem blagu fotografija ne more potrditi notranjega delovanja ali skladnosti. Če nujni dokazi niso na voljo, ta negotovost sodi v nakupno odločitev."
+          ]
+        },
+        {
+          "heading": "Plačilo in komunikacijo ohranite na pravem mestu",
+          "paragraphs": [
+            "Za plačilo uporabite uradno stran, za transakcijska vprašanja pa povpraševanje ob ustreznem naročilu ali paketu. Pred prijavo preverite domeno. Katalog ne potrebuje vašega gesla, plačilnih podatkov ali zasebnega pogovora, kopiranega v iskalnik izdelkov.",
+            "Hranite zapise izbrane možnosti, plačila, prodajalčevih pojasnil in dogovorjenih zahtev. Ob spremembi zahtevajte posodobitev v naročilu. Jasna zgodovina olajša poznejše vprašanje bolj kot razpršena sporočila brez reference izdelka ali transakcije."
+          ]
+        },
+        {
+          "heading": "Odločite se tako, da lahko pojasnite razlog",
+          "paragraphs": [
+            "Napišite kratek zapis, zakaj izdelek ustreza potrebam, kateri dokazi to podpirajo, kakšen je celoten proračun in katere negotovosti sprejemate. Če odločitev temelji na neodgovorjenem vprašanju velikosti, stanja ali vračila, ga rešite pred plačilom.",
+            "Manjše prvo naročilo je lahko možnost za omejitev vložka med učenjem postopka, ne potrdi pa vseh prodajalcev ali prihodnjih pošiljk. Ta vodič je metoda vrednotenja dokazov, ne osebno testno poročilo ali jamstvo, da je LoloBuy brez tveganja. Za naslednja preverjanja uporabite vodiče naročanja, QC in vračil."
+          ]
+        }
+      ],
+      "checklist": [
+        "Ločite vloge kataloga, platforme in prodajalca.",
+        "Preverite točen oglas, ne priljubljenosti.",
+        "Ocene berite glede na datum, ustreznost in spodbude.",
+        "Razumite, česa pregled ne bo preveril.",
+        "Ohranite dokumentirano odločitev in zapis naročila."
+      ],
+      "sourceIds": [
+        "service",
+        "qc",
+        "buying",
+        "returns"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 561
+    }
+  ]
+}

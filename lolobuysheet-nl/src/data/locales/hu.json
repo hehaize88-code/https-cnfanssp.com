@@ -1,0 +1,1131 @@
+{
+  "ui": {
+    "register": "Tovább a LoloBuy oldalára",
+    "language": "Nyelv",
+    "preview": "Tervelőnézet",
+    "previewNote": "Első pillantás a lolobuysheet.nl oldalra",
+    "eyebrow": "JÓ TALÁLATOK. KEVESEBB GÖRGETÉS.",
+    "hero1": "A következő találatod.",
+    "hero2": "Egyetlen terméklista.",
+    "intro": "Fedezd fel a LoloBuy terméklistát. Böngéssz ruhák, sportcipők és kiegészítők között, hasonlítsd össze a forrásban szereplő árakat, és nyisd meg következő találatodat a LoloBuy oldalán.",
+    "search": "Keresés a teljes katalógusban…",
+    "searchButton": "Termékek keresése",
+    "photo": "Képkeresés",
+    "popular": "Fedezd fel:",
+    "tagline": "Egy katalógus. A következő felfedezésed.",
+    "source": "Termékek a cnfanssp.com oldalról",
+    "independent": "Független LoloBuy termékkereső oldal",
+    "browse": "A terméklista böngészése",
+    "browseSub": "Kicsit kevesebb keresés. Sokkal több találat.",
+    "all": "Minden termék",
+    "sort": "Rendezés",
+    "count": "termék",
+    "view": "Termék megtekintése",
+    "buy": "Megnyitás a LoloBuy oldalán",
+    "details": "Termékadatok",
+    "previous": "Előző",
+    "next": "Következő",
+    "page": "Oldal",
+    "empty": "Nincs a keresésnek megfelelő termék.",
+    "reset": "Szűrők törlése",
+    "sourceSearch": "Keresés a teljes forráskatalógusban",
+    "snapshot": "Élő katalógus a cnfanssp.com oldalról. A CNY-ban megadott termékárak nem tartalmazzák a szállítási és szolgáltatási díjakat. Az aktuális változatokat és a végleges ajánlatot a LoloBuy oldalán ellenőrizd.",
+    "howTitle": "A felfedezéstől a kicsomagolásig.",
+    "howSub": "Most ismerkedsz a LoloBuyjal? Kezdd ezzel a három lépéssel.",
+    "guides": "Egy kis útmutatás sokat segít.",
+    "guidesSub": "Hasznos tudnivalók az első rendelésed előtt.",
+    "read": "Útmutató elolvasása",
+    "allGuides": "Minden útmutató",
+    "cta": "Megtaláltad új kedvencedet?",
+    "ctaSub": "Nyisd meg a LoloBuy oldalán, és szerezd be.",
+    "ctaButton": "Minden termék böngészése",
+    "footer": "Független termékkereső oldal. Nem vagyunk a LoloBuy hivatalos weboldala. A termékadatok és fényképek a cnfanssp.com oldalról származnak. A vásárlás a LoloBuy oldalán történik.",
+    "back": "Vissza a terméklistához",
+    "sourceListing": "Eredeti forrásoldal",
+    "seller": "Az eladó hirdetése",
+    "sourcePrice": "Forrásár · CNY",
+    "productId": "Az eladó termékazonosítója",
+    "gallery": "Hirdetési fényképek",
+    "qc": "QC-fotók",
+    "qcNote": "A forrás a termékhirdetés fényképeit biztosítja. Ezek nem ellenőrzött raktári QC-fotók. Szállítás előtt nézd át a saját LoloBuy-rendelésedhez tartozó minőségellenőrzést.",
+    "priceNote": "Csak a termék ára. Rendelés előtt ellenőrizd az aktuális készletet, változatokat, szállítást és szolgáltatási díjakat a LoloBuy oldalán.",
+    "photoTitle": "Találd meg fénykép alapján.",
+    "photoIntro": "A forráskatalógusban kereshetsz és összehasonlíthatsz termékeket.",
+    "photoState": "Képkeresés a forrásban",
+    "photoNote": "A cnfanssp.com oldalon nem sikerült ellenőrizni nyilvános képkereső szolgáltatást. Amíg a forrás szolgáltatása nem érhető el, nem fogadunk fényképfeltöltést.",
+    "browseInstead": "Termékek böngészése",
+    "faqTitle": "LoloBuy: válaszok rendelés előtt.",
+    "faqIntro": "A LoloBuy hivatalos súgóoldalai alapján készült. Ha a hivatalos oldalak eltérnek egymástól, a válasz jelzi, mit kell ellenőrizni.",
+    "guideLabel": "GYAKORLATI ÚTMUTATÓ",
+    "guideTitle": "Az első LoloBuy-rendelésed érthetően.",
+    "guideIntro": "A termék megtalálásától a raktári ellenőrzésig: gyakorlati kezdőlépések.",
+    "updated": "Ellenőrizve: 2026. október",
+    "related": "További felfedeznivalók",
+    "home": "Kezdőlap",
+    "aboutPhotos": "Képek a forráshirdetésből",
+    "catalogLive": "Élő forráskatalógus",
+    "catalogCached": "Az utolsó teljes forráspillanatkép látható.",
+    "catalogLoading": "A forráskatalógus frissítése…",
+    "catalogError": "A forrás átmenetileg nem érhető el. Próbáld újra, vagy nyisd meg az eredeti katalógust.",
+    "retry": "Újrapróbálás",
+    "loading": "Betöltés…",
+    "productError": "A terméket nem sikerült betölteni. Próbáld újra, vagy ellenőrizd az eredeti hirdetést.",
+    "pageOf": "/",
+    "jump": "Ugrás az oldalra",
+    "go": "Ugrás",
+    "articlesLabel": "Cikkek",
+    "articlesTitle": "LoloBuy vásárlási ismeretek részletesen.",
+    "articlesIntro": "Tíz gyakorlati útmutató a LoloBuy hivatalos súgóoldalai alapján. Keress termékeket, ellenőrizd a QC-t, készíts költségvetést és tervezz szállítást érthetőbb információkkal.",
+    "articleSources": "Hivatalos források",
+    "reviewed": "Ellenőrizve: 2026. október 20.",
+    "readArticle": "Cikk elolvasása",
+    "allArticles": "Minden cikk",
+    "contents": "Ezen az oldalon",
+    "checklist": "Gyakorlati ellenőrzőlista",
+    "summary": "Rövid áttekintés",
+    "reading": "perc olvasás",
+    "faqSearch": "Kérdések keresése…",
+    "noQuestions": "Nincs megfelelő kérdés.",
+    "officialHelp": "Hivatalos útmutatás elolvasása",
+    "skip": "Ugrás a tartalomra",
+    "menu": "Menü",
+    "close": "Bezárás",
+    "languageSearch": "Válaszd ki a nyelvet",
+    "catalogNote": "Az árak és a készlet változhatnak.",
+    "articleFooter": "Független szerkesztőségi útmutatás. Fizetés vagy szállítás előtt ellenőrizd a rendelésednél megjelenő feltételeket.",
+    "notFound": "A termék nem található",
+    "showMore": "Összes megjelenítése",
+    "findSteps": "KERESÉS. ELLENŐRZÉS. RENDELÉS.",
+    "nextFind": "A KÖVETKEZŐ TALÁLAT A TIÉD.",
+    "liveLabel": "Frissítve a forrásból",
+    "faqCount": "kutatáson alapuló válasz",
+    "catalogue": "Katalógus",
+    "nav": [
+      "Terméklista",
+      "Hogyan működik",
+      "Útmutatók",
+      "Cikkek",
+      "GYIK"
+    ],
+    "sorts": [
+      "Kiemelt",
+      "Legújabb",
+      "Legnézettebb",
+      "Ár: növekvő",
+      "Ár: csökkenő"
+    ],
+    "categories": {
+      "shoes": "Cipők",
+      "hoodies": "Pulóverek",
+      "tshirts": "Pólók",
+      "jackets": "Kabátok",
+      "pants": "Nadrágok és rövidnadrágok",
+      "headwear": "Fejfedők",
+      "accessories": "Kiegészítők",
+      "sets": "Rövidnadrágos szettek",
+      "electronics": "Elektronika",
+      "other": "Egyéb termékek",
+      "jerseys": "Mezek"
+    },
+    "steps": [
+      [
+        "01",
+        "Keress valamit, ami tetszik",
+        "Böngészd a kategóriákat, és ellenőrizd az eredeti hirdetést, a méretet és a termékfotókat."
+      ],
+      [
+        "02",
+        "Nyisd meg a LoloBuy oldalán",
+        "A terméklinkkel válaszd ki a változatokat, és ellenőrizd az aktuális árat."
+      ],
+      [
+        "03",
+        "Ellenőrizd szállítás előtt",
+        "Kövesd a LoloBuy raktári folyamatát, nézd át a rendelkezésre álló QC-t, és válassz szállítást."
+      ]
+    ],
+    "footerLinks": [
+      "Terméklista",
+      "Vásárlási útmutató",
+      "Képkeresés",
+      "GYIK"
+    ]
+  },
+  "faqs": [
+    {
+      "id": "what-is-lolobuy",
+      "category": "Első lépések",
+      "question": "Mit csinál a LoloBuy?",
+      "answer": "A LoloBuy vásárlási közvetítőként működik: megadod az eladó hirdetését, kiválasztod a terméket, kifizeted a vásárlást és a kínai belföldi szállítást, majd a nemzetközi szállítás megszervezése előtt áttekinted a raktári szakaszt. Az árut az eladó biztosítja. Egy terméklink vagy terméklista-bejegyzés a rendelés ellenőrzésének kiindulópontja, nem az aktuális készlet visszaigazolása.",
+      "sourceIds": [
+        "buying",
+        "service"
+      ]
+    },
+    {
+      "id": "place-order",
+      "category": "Első lépések",
+      "question": "Hogyan rendelhetek a LoloBuyon keresztül?",
+      "answer": "Illeszd be az eredeti terméklinket a LoloBuyba, ellenőrizd az importált hirdetést, és válaszd ki a pontos színt, méretet és mennyiséget. Fizetés előtt nézd át a termék árát, a belföldi szállítást és a kért szolgáltatásokat. A LoloBuy hivatalos útmutatója ezután külön szakaszként kezeli a beszerzést, a raktári ellenőrzést és a nemzetközi csomag feladásának kezdeményezését.",
+      "sourceIds": [
+        "buying"
+      ]
+    },
+    {
+      "id": "manual-order",
+      "category": "Első lépések",
+      "question": "Mi történik, ha a LoloBuy nem tudja beolvasni a terméklinkemet?",
+      "answer": "A hivatalos vásárlási útmutató kézi közvetített rendelési űrlapot ismertet arra az esetre, ha az automatikus importálás nem érhető el. Töltsd ki a tényleges termékadatokat és a kiválasztott változatokat, majd beküldés előtt ellenőrizd a rendelést. Ne helyettesítsd a piactéri termékazonosítót a terméklista belső oldalszámával: különböző rekordokat azonosítanak.",
+      "sourceIds": [
+        "buying"
+      ]
+    },
+    {
+      "id": "domestic-delivery",
+      "category": "Rendelések és fizetés",
+      "question": "Több termékhez tartozhat egyetlen kínai szállítási díj?",
+      "answer": "A LoloBuy belföldi szállítási GYIK-je egyetlen díjat ír le, ha az azonos eladótól származó termékeket együtt adják le és fizetik ki. A szokatlanul nagy vagy nehéz rendelés további szállítási díjat igényelhet. Ez nem vonja automatikusan össze különböző eladók díjait, és nem tartalmazza a nemzetközi szállítást.",
+      "sourceIds": [
+        "domestic"
+      ]
+    },
+    {
+      "id": "seller-promotion",
+      "category": "Rendelések és fizetés",
+      "question": "Hogyan kérhetem az eladó kedvezményének érvényesítését?",
+      "answer": "A tényleges akciót vagy ingyenes belföldi szállítási ajánlatot írd a rendelési megjegyzésbe, hogy a beszerző ellenőrizhesse az eladónál. A hivatalos súgó az Order Enquiry használatát is ismerteti, ha az akció adatai kimaradtak. Az állított kedvezményt ellenőrizni kell; a terméklista nem ígérheti, hogy egy régi ajánlat továbbra is érvényes.",
+      "sourceIds": [
+        "promotions"
+      ]
+    },
+    {
+      "id": "change-order",
+      "category": "Rendelések és fizetés",
+      "question": "Rendelés után megváltoztathatom a méretet vagy a színt?",
+      "answer": "A LoloBuy szerint az eladó feladása előtt egyeztethetnek a változtatásról. Feladás után a súgó lehetséges raktári visszaküldést, majd új rendelést ír le, visszaszállítási költséggel. A kérést mielőbb a tényleges rendeléshez küldd el, és várd meg az elfogadását, mielőtt úgy tekintenéd, hogy a változat módosult.",
+      "sourceIds": [
+        "changes"
+      ]
+    },
+    {
+      "id": "confirmation-message",
+      "category": "Rendelések és fizetés",
+      "question": "Mit jelent a Pending for Confirmation állapot?",
+      "answer": "Bizonyos rendelési részleteket meg kell erősítened. Olvasd el és válaszold meg a rendeléshez csatolt üzenetet. A hivatalos súgó a már megvásárolt rendelések kérdéseit a Shopping Agent Order, a raktári szakasz kérdéseit a My Warehouse menübe irányítja, ahol elfogadásról vagy visszaküldésről kellhet döntened. A menük elnevezése eltérhet; a követési frissítésre várás nem válaszolja meg a kérést.",
+      "sourceIds": [
+        "confirmation",
+        "confirmation-path"
+      ]
+    },
+    {
+      "id": "received-in-stock",
+      "category": "Raktár és minőségellenőrzés",
+      "question": "Mi a különbség a Received és az In Stock között?",
+      "answer": "A hivatalos állapotútmutatóban a Received azt jelenti, hogy a raktár átvette az eladó csomagját, és folyamatban van az ellenőrzés. Az In Stock azt jelzi, hogy a minőségellenőrzés befejeződött, és a termékeket a készletedben tárolják. A raktári átvétel tehát nem jelenti, hogy a saját QC-ellenőrzésed vagy a nemzetközi szállítás már befejeződött.",
+      "sourceIds": [
+        "status"
+      ]
+    },
+    {
+      "id": "qc-checks",
+      "category": "Raktár és minőségellenőrzés",
+      "question": "Mit ellenőriz az alap QC?",
+      "answer": "A LoloBuy alapellenőrzése a rendelés látható adatait vizsgálja, például a fazont, mennyiséget, színt, méretet, modellt és nyilvánvaló sérülést. A tényleges ellenőrzési szolgáltatást a saját rendelésed fotóival együtt értékeld. A vizuális ellenőrzés nem garantálja az eredetiséget, a pontos illeszkedést vagy a hosszú távú tartósságot.",
+      "sourceIds": [
+        "qc"
+      ]
+    },
+    {
+      "id": "inspection-exclusions",
+      "category": "Raktár és minőségellenőrzés",
+      "question": "A lezárt termékeket és az elektronikát teljeskörűen tesztelik?",
+      "answer": "Nem. Az ellenőrzési szabályok kivételeket írnak le lezárt termékeknél, és kifejezetten kizárják a szakelektronikai és kapcsolódó termékek eredetiségének, működésének és minőségének tesztelését. Az ellenőrzés nélküli opciónál a raktár megvizsgálja a korlátozásokat, de nem ellenőrzi a terméket és nem készít QC-fotókat. Mielőtt az eredményre támaszkodnál, nézd át a kiválasztott szolgáltatást.",
+      "sourceIds": [
+        "qc"
+      ]
+    },
+    {
+      "id": "qc-photos",
+      "category": "Raktár és minőségellenőrzés",
+      "question": "Kérhetek több QC-fotót?",
+      "answer": "A szolgáltatási áttekintés kérésre további fényképeket ismertet; a fotószolgáltatás oldala Secondary Quality Inspection lehetőséget is kínál, ha a tárolás előtti ellenőrzés kimaradt. A hivatalos oldalak eltérő alapfotószámokat adnak meg. Ellenőrizd a választott szolgáltatást, és kérd a konkrét hiányzó nézetet vagy mérést, ahelyett hogy minden rendelésnél azonos képszámot feltételeznél.",
+      "sourceIds": [
+        "service",
+        "photos",
+        "qc"
+      ]
+    },
+    {
+      "id": "storage-period",
+      "category": "Raktár és minőségellenőrzés",
+      "question": "Meddig maradhatnak a termékek a LoloBuy raktárában?",
+      "answer": "A külön tárolási oldal és az aktuális állapotútmutató a szokásos tárolt árukra 180 napot ír, míg egy régebbi vásárlási útmutató még 90-et. A rendellenes, nem párosított csomagokra külön szabályok vonatkoznak. Ellenőrizd a saját termékednél kijelzett határidőt, és lejárat előtt szervezd meg a szállítást vagy az esetleges hosszabbítást; ne támaszkodj kizárólag a régi útmutatóra.",
+      "sourceIds": [
+        "storage",
+        "status",
+        "buying"
+      ]
+    },
+    {
+      "id": "consolidate",
+      "category": "Szállítás és követés",
+      "question": "Több vásárlást feladhatok egy csomagban?",
+      "answer": "A vásárlási útmutató ismerteti a My Warehouse tárolt termékeinek kiválasztását és közös szállításra leadását. Ellenőrizd, hogy minden kiválasztott termék szükséges felülvizsgálata megtörtént, és az elérhető szállítási útvonal elfogadja az így kialakuló csomagot. A termékek összevonása megváltoztatja a becsomagolt küldeményt; nem garantál alacsonyabb teljes fuvardíjat.",
+      "sourceIds": [
+        "buying"
+      ]
+    },
+    {
+      "id": "remove-packaging",
+      "category": "Szállítás és követés",
+      "question": "A LoloBuy eltávolíthatja a dobozokat szállítás előtt?",
+      "answer": "A Package Removal szolgáltatás a szállítás leadásakor választható. Hivatalos leírása szerint a szükséges védőcsomagolás megmarad. Ha az eredeti dobozokra ajándékozáshoz, tároláshoz vagy esetleges visszaküldéshez szükséged van, ezt az eltávolítás kiválasztása előtt mérlegeld. A végleges csomagolás és a fuvardíj az árutól és a választott küldeménytől függ.",
+      "sourceIds": [
+        "packaging"
+      ]
+    },
+    {
+      "id": "shipping-price",
+      "category": "Szállítás és követés",
+      "question": "Miért térhet el a végleges szállítási díj a becsléstől?",
+      "answer": "A kezdeti fuvardíj a becsült súlyon, a célországon és a kiválasztott útvonalon alapul. A csomagolás megváltoztathatja a súlyt és a méreteket, az elszámolást pedig a logisztikai szolgáltató díja határozza meg. A LoloBuy túlfizetés-visszatérítést vagy pótfizetési kérést ír le, ha a tényleges fuvardíj eltér. Ellenőrizd a végleges csomagajánlatot és a fiókod üzenetét.",
+      "sourceIds": [
+        "weight",
+        "freight-balance"
+      ]
+    },
+    {
+      "id": "volumetric-weight",
+      "category": "Szállítás és követés",
+      "question": "Mi a térfogatsúly?",
+      "answer": "A csomag méreteit alakítja át a terjedelmes áruk számlázására használt súllyá. A LoloBuy súgója útvonalspecifikus képleteket különböztet meg, és jelzi, hogy a számlázható súly a tényleges és a térfogatsúly közül a nagyobb lehet. A kiválasztott útvonalnál jelzett osztót és kerekítési szabályokat használd, ne általános kilogrammonkénti árígéretet.",
+      "sourceIds": [
+        "weight"
+      ]
+    },
+    {
+      "id": "supplemental-payment",
+      "category": "Szállítás és követés",
+      "question": "Mit tegyek, ha további szállítási díjról kapok értesítést?",
+      "answer": "Nyisd meg a megfelelő csomagot, és nézd át a módosított díjat és a megerősítési kérést. A LoloBuy pótfizetési szabályai különböző kezelési küszöböket alkalmaznak, és olyan eseteket is tartalmaznak, amikor a csomagot visszatarthatják vagy törölhetik. A saját csomagodnál jelzett határidőre válaszolj, és rendezd az elfogadott tartozást; ne tekintsd véglegesnek az eredeti becslést.",
+      "sourceIds": [
+        "freight-balance"
+      ]
+    },
+    {
+      "id": "tracking",
+      "category": "Szállítás és követés",
+      "question": "Hol követhetem a nemzetközi csomagomat?",
+      "answer": "A hivatalos vásárlási útmutató feladás után a My LoloBuy → Parcels menübe irányít. Az állapotútmutató megkülönbözteti a Packed és Shipped állapotot: a becsomagolt küldemény még várhat a végleges súly megerősítésére, míg a Shipped azt jelenti, hogy van követési száma és átadták a fuvarozónak. A fiók állapota mellett olvasd el a fuvarozó legfrissebb eseményét is.",
+      "sourceIds": [
+        "buying",
+        "status"
+      ]
+    },
+    {
+      "id": "cancellation",
+      "category": "Visszaküldés és értékesítés utáni ügyintézés",
+      "question": "Lemondhatom a rendelést, mielőtt a raktárba érkezik?",
+      "answer": "A lemondás az aktuális rendelési szakasztól függ. Használd az érintett rendelés lemondási vagy visszaküldési/visszatérítési lehetőségét. Ha a terméket már megvásárolták, szükség lehet az eladó megerősítésére; a benyújtott kérelem nem jóváhagyott visszatérítés. Új helyettesítő vásárlás előtt ellenőrizd a választ az adott rendelésnél.",
+      "sourceIds": [
+        "cancellation",
+        "refunds"
+      ]
+    },
+    {
+      "id": "eligible-return",
+      "category": "Visszaküldés és értékesítés utáni ügyintézés",
+      "question": "Mire vonatkozik a LoloBuy ötnapos visszaküldési szabálya?",
+      "answer": "A külön szabály a jogosult áruknál 120 órás kérelmezési időszakot ír le, amely a Stocked in állapotot követő egész órától indul. Az eladó beleegyezése, a termék állapota és az előírt csomagolás továbbra is számít. A hibátlan termék visszaküldése mindkét belföldi szállítási szakasz költségét és kezelési díjat is jelenthet. Mielőbb ellenőrizd a jogosultságot és a tényleges kérelmi oldalt.",
+      "sourceIds": [
+        "returns"
+      ]
+    },
+    {
+      "id": "refund-destination",
+      "category": "Visszaküldés és értékesítés utáni ügyintézés",
+      "question": "Hová küldik a jóváhagyott visszatérítést?",
+      "answer": "A visszaküldési súgó általában a jóváhagyott visszatérítés LoloBuy-fiókegyenlegen történő jóváírását írja le. Külön említ egy szűk kivételt: bizonyos jóváhagyásra váró PayPal-rendeléseknél az eredeti fizetési módra történő visszatérítést. Ez nem ígéret arra, hogy minden visszatérítés közvetlenül bankkártyára érkezik, és nem bizonyítja, hogy jelenleg minden fizetési mód elérhető.",
+      "sourceIds": [
+        "refunds"
+      ]
+    },
+    {
+      "id": "delivery-problem",
+      "category": "Visszaküldés és értékesítés utáni ügyintézés",
+      "question": "Mit tegyek, ha a kézbesített csomag sérült vagy téves terméket tartalmaz?",
+      "answer": "Nyisd meg az érintett csomagot a My LoloBuy → Parcels menüben, és válaszd az Apply After-sales lehetőséget. Írd le a problémát, és őrizz meg jól látható fotókat a csomagról és a termékről. A hivatalos cikk egymásnak ellentmondó igénybejelentési határidőket tartalmaz, köztük egy korábbi figyelmeztetést, ezért azonnal jelentsd a hibát, és kérj az ügyedre vonatkozó visszaigazolást az általános határidőre várás helyett.",
+      "sourceIds": [
+        "claims"
+      ]
+    },
+    {
+      "id": "sizing",
+      "category": "Termékválasztás",
+      "question": "Hogyan válasszak ruha- vagy cipőméretet?",
+      "answer": "A LoloBuy méretútmutatója figyelmeztet, hogy az üzletek szabványai eltérhetnek. Hasonlítsd össze a tényleges eladó mérettáblázatát, mértékegységeit és választott változatát saját méreteiddel vagy egy jól illeszkedő darabbal. Az átváltási táblázatok tájékoztató jellegűek, nem garantálják, hogy ugyanaz a jelölés minden eladónál jó lesz. Rendelés előtt kérdezz rá a hiányzó méretekre.",
+      "sourceIds": [
+        "sizing"
+      ]
+    },
+    {
+      "id": "1688",
+      "category": "Termékválasztás",
+      "question": "A 1688-rendelésekre ugyanazok a beszerzési és ellenőrzési szabályok vonatkoznak?",
+      "answer": "A hivatalos 1688-útmutató megköveteli az eladó minimális rendelési mennyiségét; az árak és a belföldi fuvardíj mennyiségfüggők lehetnek. Az ellenőrzési szabályok különbséget tesznek a mintavétellel ellenőrzött A típusú és az alap QC nélküli B típusú termékek között. Fizetés előtt tisztázd a mennyiséget, az ellenőrzés körét és a visszaküldési feltételeket, ne feltételezz kiskereskedelmi rendelésnek megfelelő kezelést.",
+      "sourceIds": [
+        "wholesale",
+        "qc"
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "slug": "using-lolobuy-spreadsheet",
+      "title": "A LoloBuy terméklista használata: terméklinkből átgondolt válogatás",
+      "description": "Keress kategóriánként, hasonlítsd össze a pontos hirdetést, és őrizd meg a szükséges adatokat, mielőtt a LoloBuy oldalán megnyitod a terméket.",
+      "keyword": "LoloBuy terméklista",
+      "category": "Első lépések",
+      "summary": "A hasznos terméklista szűkíti a keresést. Az átgondolt válogatás rögzíti a pontos terméket, változatot és a rendeléshez tisztázandó kérdéseket.",
+      "sections": [
+        {
+          "heading": "Vásárlási döntéssel kezdj, ne hosszú listával",
+          "paragraphs": [
+            "A LoloBuy terméklista termékfelfedező eszköz. Böngészhetsz kategóriánként, megnézheted a képeket, majd továbbléphetsz a hirdetéshez. Ez nem jelenti azt, hogy a katalógus kiadója minden terméket megvásárolt, tesztelte az eladót vagy lefoglalta a méretedet. Minden bejegyzés ellenőrzésre váró kiindulópont.",
+            "Keresés előtt írd le, milyen termékre van szükséged, mely méretek fontosak, és körülbelül mennyit szánsz rá. Fekete cipzáras pulóvert keresni hasznosabb, mint minden tetszetős ruhalinket összegyűjteni. A szűkebb kérdésből könnyebben felismered azt is, ha lényeges információ hiányzik a hirdetésből."
+          ]
+        },
+        {
+          "heading": "Őrizd meg a termék eredeti azonosítását",
+          "paragraphs": [
+            "A katalógusoldal címében szereplő szám helyi rekordazonosító lehet. Eltérhet a vásárlási link piactéri termékazonosítójától. Ne módosítsd kézzel a számokat azért, hogy a link helyesnek tűnjön. Használd a megfelelő termékgombot, majd hasonlítsd össze a megnyíló árut azzal, amit meg akartál venni.",
+            "Mentsd el az eredeti eladói URL-t a választott változattal együtt. A képernyőkép megőrizhet hasznos részletet, de kevésbé használható, ha nem tudod, melyik eladóhoz, mérethez vagy színhez tartozik. Ha a link másik terméket vagy üres hirdetést nyit meg, állj meg, és ellenőrizd a folytatás előtt."
+          ]
+        },
+        {
+          "heading": "Azonos tartalmat hasonlíts össze",
+          "paragraphs": [
+            "Az induló ár a legolcsóbb változatra, egyetlen kiegészítőre vagy más mennyiségre vonatkozhat. A hirdetések között azonos összeállítást hasonlíts össze. Egy kétrészes szett és egyetlen felső ára nem vethető össze érdemben, még ha bélyegképeik hasonlók is.",
+            "Ellenőrizd, hogy a galéria a választott színt mutatja-e, és van-e mérettáblázat. Különböző eladók azonos fényképei nem bizonyítanak azonos kidolgozást vagy készletet. Az összehasonlításban rögzítsd a meglévő bizonyítékokat, és tedd láthatóvá, ahol fontos információ ismeretlen."
+          ],
+          "bullets": [
+            "Pontos termék és eladói URL",
+            "Választott méret, szín és mennyiség",
+            "A változat aktuális ára",
+            "Méretek vagy mérettáblázat hivatkozása",
+            "Egy rendelés előtt tisztázandó kérdés"
+          ]
+        },
+        {
+          "heading": "A hivatalos vásárlási folyamattal folytasd",
+          "paragraphs": [
+            "A LoloBuy vásárlási útmutatója piactéri link beküldését, a rendelkezésre álló változatok kiválasztását, valamint a termék és a belföldi szállítás kifizetését írja le. Kézi rendelési űrlapot is ismertet arra az esetre, ha a termékadatok nem olvashatók be automatikusan. A link sikeres megnyitása tehát csak a rendelés ellenőrzésének kezdete.",
+            "A hivatalos termékoldalon ismét nézd át a képet, a változat szövegét és a mennyiséget. A katalógus nem garantálhat aktuális készletet, és nem őriz meg olyan választást, amelyet a pénztárban nem jelöltél ki. Különleges kérésed legyen elég konkrét a beszerző számára, például pontos színnév vagy egy mérésre vonatkozó kérdés."
+          ]
+        },
+        {
+          "heading": "Válaszd külön a felfedezés képeit és saját QC-det",
+          "paragraphs": [
+            "Az eladó galériája az ajánlatot mutatja be. Egy korábbi raktári kép valaki más termékét ábrázolhatja. A saját rendelésedhez csatolt ellenőrzési képek azok a bizonyítékok, amelyeket az adott áru külföldre küldése előtt értékelned kell. A három képtípus különböző kérdésekre válaszol, ezért nem felcserélhető.",
+            "Válogatásod maradjon összekapcsolva a rendeléssel. Amikor a termék a raktárba ér, hasonlítsd össze a feljegyzett változatot a látható méretcímkével, színnel és mennyiséggel. Az eltérés könnyebben elmagyarázható, ha az eredeti választás és a rendelési azonosító együtt van."
+          ]
+        },
+        {
+          "heading": "Vásárlás után is legyen használható a válogatás",
+          "paragraphs": [
+            "Csak a legerősebb jelölteket tartsd meg, és írd le, melyik miért maradt versenyben. Az egyik pulóvernél például egyértelműbb lehet a mérettáblázat, míg a másiknál tisztázatlan az anyag egyik részlete. Így a linkgyűjtemény visszakereshető döntéssé válik, és nem kell elölről kezdened a kutatást.",
+            "Vásárlás előtt olvasd el a rendelési és költségvetési útmutatót. A csomag leadása előtt a QC- és szállítási útmutatót nézd át. A terméklista akkor a leghasznosabb, ha összeköti ezeket a szakaszokat, ahelyett hogy a termékárat a kézbesített rendelés teljes költségeként mutatná be."
+          ]
+        }
+      ],
+      "checklist": [
+        "Mentsd a pontos forrás-URL-t és változatot.",
+        "Azonos mennyiséget és összeállítást hasonlíts össze.",
+        "Fizetés előtt tisztázd a hiányzó méreteket.",
+        "Ellenőrizd a LoloBuyban megnyitott hirdetést.",
+        "Szállítás előtt vizsgáld meg a rendelésed saját QC-jét."
+      ],
+      "sourceIds": [
+        "buying",
+        "qc"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 516
+    },
+    {
+      "slug": "how-to-order-on-lolobuy",
+      "title": "Rendelés a LoloBuyon: terméklinkek, változatok és fizetési szakaszok",
+      "description": "Kövesd a rendelést a piactéri linktől a raktári ellenőrzésig és a külön leadott nemzetközi csomagig.",
+      "keyword": "hogyan rendelj a LoloBuyon",
+      "category": "Rendelés",
+      "summary": "Fizetés előtt a terméket, szállítás előtt a raktári bizonyítékokat, feladás előtt a csomagajánlatot ellenőrizd. Minden szakasz más kérdésre válaszol.",
+      "sections": [
+        {
+          "heading": "A hivatalos oldalon kezdj",
+          "paragraphs": [
+            "Regisztrációhoz, fiókhozzáféréshez és fizetéshez a hivatalos LoloBuy weboldalt használd. Ez a független katalógus a keresést segíti; nem gyűjti a jelszavadat és nem dolgozza fel rendelésedet. Termék megnyitásakor ellenőrizd a céloldalt, és a vásárlási beszélgetést tartsd az érintett rendeléshez kapcsolva.",
+            "A hivatalos vásárlási útmutató egy támogatott kínai piactér terméklinkjéből indul ki. A kiválasztott árut a hirdetés mögött álló eladó biztosítja. Ez a különbség fontos, mert a vásárlási szolgáltatás és az eladó nem a tranzakció ugyanazon részeit irányítja."
+          ]
+        },
+        {
+          "heading": "Ellenőrizd az importált terméket",
+          "paragraphs": [
+            "Illeszd be az eredeti terméklinket, vagy használd a katalógus megfelelő LoloBuy-gombját. Változatválasztás előtt hasonlítsd össze a megnyíló oldalt a forrással. Ellenőrizd a főképet, terméknevet, az elérhető eladói adatokat, a színt, méretet és mennyiséget. Ne hagyatkozz csak a képre.",
+            "Ha kézi közvetített rendelési űrlap jelenik meg, a hivatalos útmutató szerint kézzel kell kitölteni a rendelési adatokat. A valódi hirdetésből dolgozz, ne találgasd a hiányzó változatokat. Ha egy kötelező adat nem világos, a rendelési érdeklődésen keresztül tisztázd, mielőtt folytatást kérsz a beszerzőtől."
+          ],
+          "bullets": [
+            "A termék megfelel az eredeti URL-nek",
+            "A változat szövege a kívánt színt és méretet jelöli",
+            "A mennyiség és az egységár ugyanarra az összeállításra vonatkozik",
+            "Minden különleges kérés világosan szerepel"
+          ]
+        },
+        {
+          "heading": "Értsd meg az első fizetést",
+          "paragraphs": [
+            "A hivatalos folyamat elkülöníti a terméket és a kínai belföldi szállítást a későbbi nemzetközi csomagtól. Az első fizetést soronként nézd át. A célország vásárláskori kiválasztása nem jelenti, hogy a termékek kijelzett összege az oda történő kézbesítés minden költségét tartalmazza.",
+            "A fizetési módokat, pénznemeket és választható szolgáltatásokat az aktuális pénztárban ellenőrizd. A súgócikk általános listája nem ígéret arra, hogy minden módszer a te fiókodnál vagy rendelésednél is elérhető. Őrizd meg a fizetési bizonylatot, és hasonlítsd össze az állapottal, ne fizess újra pusztán a lassú oldalfrissítés miatt."
+          ]
+        },
+        {
+          "heading": "Válaszolj a rendelési kérdésekre",
+          "paragraphs": [
+            "A LoloBuy „Pending for Confirmation” állapotot használ az ellenőrzendő információknál. Súgója a rendelésen belüli utasításokhoz irányítja a vásárlót. Olvasd el a tényleges kérdést, és arra válaszolj: befolyásolhatja, hogy a beszerzési csapat folytathatja-e a munkát.",
+            "A hivatalos módosítási tájékoztató különbséget tesz a még fel nem adott és a már elküldött termékek között. Feladás előtt a beszerző egyeztethet változtatásról az eladóval; utána visszaküldés és új rendelés válhat szükségessé. A kért módosítás csak akkor befejezett, ha a rendelési rekord visszaigazolja."
+          ]
+        },
+        {
+          "heading": "Vizsgáld meg a beérkezést és az ellenőrzést",
+          "paragraphs": [
+            "A raktárba érkezés és a befejezett ellenőrzés külön mérföldkő. Keresd meg az árut a raktári részben, és vesd össze a képeket és rögzített változatot a vásárlásoddal. Először az azonosságot, majd a számodra fontos látható részleteket ellenőrizd. Nyilvánvaló eltérést a nemzetközi csomagba helyezés előtt rendezz.",
+            "Ne feltételezd, hogy minden termék ugyanazt az ellenőrzést kapja. Az alapellenőrzési szabályzat korlátokat ír le lezárt termékeknél és külön eljárást bizonyos 1688-rendeléseknél. Ha adott mérésre vagy nézetre van szükséged, ellenőrizd annak elérhetőségét a saját rendelésednél, ne tekints egy általános QC-képet mindenre kiterjedő bizonyítéknak."
+          ]
+        },
+        {
+          "heading": "A csomag leadása külön döntés",
+          "paragraphs": [
+            "A hivatalos folyamat szerint a tárolt termékek kiválasztása után megadod a szállítási adatokat és választasz az elérhető lehetőségek közül. A célállomást, korlátozásokat, csomagolást és fuvardíjelőleget együtt értékeld. A megvásárolt termék nem válik automatikusan feladásra kész nemzetközi csomaggá.",
+            "A végleges fuvardíj csomagolás és logisztikai mérés után változhat. Figyeld a csomagrekordban a módosításokat és megerősítési kéréseket. Feladás után a csomagrészben kövesd a szállítást, őrizd meg a rendelési azonosítókat, és érkezéskor mielőbb ellenőrizd a tartalmat."
+          ]
+        }
+      ],
+      "checklist": [
+        "Ellenőrizd az eredeti terméket és a pontos változatot.",
+        "Nézd át a termék és a belföldi szállítás díját.",
+        "Válaszolj a függő megerősítési kérésekre.",
+        "Ellenőrizd raktári fotóidat és a nyitott problémákat.",
+        "Nézd át a külön nemzetközi csomagajánlatot."
+      ],
+      "sourceIds": [
+        "buying",
+        "confirmation",
+        "changes",
+        "qc",
+        "freight-balance"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 512
+    },
+    {
+      "slug": "lolobuy-qc-photos",
+      "title": "LoloBuy QC-fotók: gyakorlati ellenőrzőlista szállítás előtt",
+      "description": "Különítsd el az eladói képeket a saját raktári ellenőrzéstől, és vizsgáld meg az azonosságot, a látható állapotot és a még bizonyítandó részleteket.",
+      "keyword": "LoloBuy QC-fotók",
+      "category": "Minőségellenőrzés",
+      "summary": "A megrendelt termékkel és változattal kezdj. A rendelkezésre álló nézetek alapján döntsd el, mi világos, mihez kell új kép, és mit kell feladás előtt tisztázni.",
+      "sections": [
+        {
+          "heading": "Azonosítsd, milyen bizonyítékot nézel",
+          "paragraphs": [
+            "A termékgaléria az eladó ajánlatának része. Egy referencia-QC-fotó korábbi rendelést ábrázolhat. Saját raktári képeid a vásárlásodhoz beérkezett árura vonatkoznak. Döntéskor tartsd külön ezeket a kategóriákat, különösen több színnel, verzióval vagy mérettel rendelkező terméknél.",
+            "Először egyeztesd a rendelési azonosítót, a terméket és a választott változatot. A rossz verzió részletes fényképe nem hasznos megnyugtatás. Ha a képsor nem kapcsolható a raktáradban lévő áruhoz, kérd ennek tisztázását, mielőtt a megjelenését értékelnéd."
+          ]
+        },
+        {
+          "heading": "Az apró részletek előtt az azonosságot ellenőrizd",
+          "paragraphs": [
+            "Először méretet, színt, mennyiséget és modellt vizsgálj. Keress egymással összhangban lévő címkéket és ugyanazt a terméket ábrázoló nézeteket. Egy tetszetős képsor is mutathat téves méretcímkét vagy hiányos szettet. Emlékezet helyett az elmentett rendelési választással hasonlítsd össze, amit látsz.",
+            "Cipőpárnál mindkét cipőt és a látható méretjelzéseket ellenőrizd. Ruhánál a választott színt és címkézett méretet nézd. Táskánál vagy kiegészítőcsomagnál azt vizsgáld, láthatók-e a várt részek. Ezek gyakorlati ellenőrzési lépések, nem garanciák minden rejtett részlet megvizsgálására."
+          ]
+        },
+        {
+          "heading": "Használj kategóriához illő ellenőrzőlistát",
+          "paragraphs": [
+            "Ruhánál hasznos az összkép, az eleje és hátulja, a varrás, nyomat vagy hímzés, valamint a mérettől függő illeszkedési terület. Cipőnél együtt nézd a párt, a látható kidolgozást és a kért méretet. Táskánál a záródás, a fogantyú és a belső nézet különböző kérdésekre válaszolhat.",
+            "Csak a döntésedet befolyásoló részleteket írd fel. Egy hosszú általános lista elvonhatja a figyelmet az egyetlen fontos hiányzó mérésről vagy sérült zárról. Ha az elölnézet világos, de a hátoldal hiányzik, azt kérd, ne ugyanabból a szögből újabb általános képet."
+          ],
+          "bullets": [
+            "Egyeztesd az azonosságot és a választott változatot",
+            "Vizsgáld meg a látható állapotot és kidolgozást",
+            "Hasonlítsd össze a kért méréseket",
+            "A hiányzó nézeteket különítsd el a megfigyelt hibáktól"
+          ]
+        },
+        {
+          "heading": "Ismerd az alapszolgáltatás korlátait",
+          "paragraphs": [
+            "A LoloBuy alapellenőrzési oldala külső vizsgálatokat és kizárásokat ír le. A lezárt termékeket például nem mindig nyitják fel, és bizonyos szakmai vagy elektronikai termékek eredetiségét, működését, minőségét nem tesztelik. Egyes 1688-rendelések mintavételes vagy eltérő ellenőrzési szabályokat követnek.",
+            "A hivatalos oldalak nem egyeznek egyetlen általános fotókeretben: az ellenőrzési és a tágabb szolgáltatási oldal eltérő darabszámot ad. Pontos képszám feltételezése helyett a rendelésedhez tartozó szolgáltatást nézd. Az a hasznos kérdés, hogy a bizonyíték lefedi-e a döntéshez szükséges problémát."
+          ]
+        },
+        {
+          "heading": "Kérj konkrét további nézetet",
+          "paragraphs": [
+            "A célzott kérés megjelöli a rendelést, a fényképezendő területet és az okot. Például: „Kérem a méretcímkét és a ruha fektetett mellkasszélességének mérését varrástól varrásig.” Ez világosabb annál, hogy jó-e a termék. Extra munka kérése előtt ellenőrizd a szolgáltatás elérhetőségét és esetleges díját.",
+            "Ugyanazt a mérési módszert használd, mint az eladó táblázata. A fektetett ruhaszélesség és a test körmérete különböző mennyiség. A képet és mérést együtt őrizd, hogy a számot ne lehessen más méret vagy más termék mérésével összekeverni."
+          ]
+        },
+        {
+          "heading": "Hozz dokumentált döntést",
+          "paragraphs": [
+            "A megállapításokat sorold megerősített, bizonytalan és elfogadhatatlan csoportba. Bizonytalan részletnél kérj bizonyítékot. Ha az áru eltérni látszik a rendeléstől, még a nemzetközi szállítás előtt használd a megfelelő támogatási vagy visszaküldési folyamatot. Őrizd meg a rövid problémaleírást és az azt bemutató képeket.",
+            "A fotók nem bizonyítanak minden anyagtulajdonságot, kényelmet, tartósságot vagy belső működést. A látható állapot elfogadása ennél szűkebb döntés. A visszaküldési feltételeket még raktározás közben olvasd el, és a sikeres QC-t ne tekintsd vámkezelési vagy nemzetközi kézbesítési ígéretnek."
+          ]
+        }
+      ],
+      "checklist": [
+        "A képeket saját rendelésedhez párosítsd.",
+        "Először méretet, színt, modellt és mennyiséget ellenőrizz.",
+        "A konkrét hiányzó nézetet vagy mérést kérd.",
+        "Nézd át az ellenőrzési szolgáltatást és kizárásait.",
+        "A lényeges problémákat csomagleadás előtt rendezd."
+      ],
+      "sourceIds": [
+        "qc",
+        "photos",
+        "service",
+        "sizing"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 487
+    },
+    {
+      "slug": "lolobuy-shipping-costs",
+      "title": "LoloBuy szállítási költségek: a teljes csomagot hasonlítsd össze",
+      "description": "Értsd meg a becsült, tényleges és térfogatsúlyt, majd azonos célállomással, tartalommal és csomagolással hasonlítsd össze az elérhető útvonalakat.",
+      "keyword": "LoloBuy szállítási kalkulátor",
+      "category": "Szállítás",
+      "summary": "A hasznos fuvardíj-összehasonlítás egy pontosan meghatározott csomagból indul ki. Ez az útmutató a bemenő adatokat és ellenőrzéseket magyarázza, nem élő szállítási ajánlat.",
+      "sections": [
+        {
+          "heading": "Különítsd el a termékárat a fuvardíjtól",
+          "paragraphs": [
+            "A termék melletti ár nem a teljes kézbesített költség. A LoloBuy hivatalos folyamata elválasztja a termék és a belföldi szállítás megvásárlását a későbbi nemzetközi szállítási előlegtől. Vásárlás előtt becsülhetsz költségvetést, de végleges csomag-összehasonlítást pusztán a termékárból nem készíthetsz.",
+            "Írd le a célállomást, a tervezett tartalmat és a megtartandó csomagolást. Egy dobozos cipőpár és ugyanaz doboz nélkül külön csomagolási döntés. Az extra termékek a súlyt és a méreteket is változtathatják, ezért egyetlen kis vásárlás hozzáadása is többféleképpen módosíthatja a végső ajánlatot."
+          ]
+        },
+        {
+          "heading": "Tudd, melyik súlyt hasonlítod össze",
+          "paragraphs": [
+            "A LoloBuy súlyútmutatója különbséget tesz a becslés és a becsomagolt küldemény valós súlya között. A raktári termékrekord tartalmazza az eredeti csomagolást, míg a végső csomaghoz külső szállítási csomagolás, eltávolítás vagy megerősítés is tartozhat. Ezek a szakaszok eltérő mérési eredményt adhatnak.",
+            "A térfogatsúly a csomag által elfoglalt helyet tükrözi. A hivatalos útmutató különböző útvonalakhoz eltérő számítási osztókat közöl. Ne alkalmazz egyetlen osztót minden fuvarozóra, és ne tekints egy régi példát mai tarifának. A leadott csomaghoz az aktuális útvonalfeltételeket használd."
+          ],
+          "bullets": [
+            "Célállomás és irányítószám",
+            "Termékkorlátozások és tartalom",
+            "Tényleges csomagolt súly",
+            "Hosszúság, szélesség és magasság",
+            "Útvonalfüggő számlázási szabályok és benne foglalt szolgáltatások"
+          ]
+        },
+        {
+          "heading": "Számolj anélkül, hogy ajánlatnak neveznéd",
+          "paragraphs": [
+            "Csak szemléltetésként: egy 40 × 30 × 20 centiméteres csomag térfogata 24 000 köbcentiméter. Egy feltételezett, 6 000-es osztót használó útvonalnál ez 4 kilogramm térfogatsúly; 5 000-es osztóval 4,8 kilogramm. Egyik számítás sem ad szállítási árat.",
+            "A példa megmutatja, miért fontos az útvonal szabálya. Továbbra is kell a tényleges súly, a számlázási lépcső, a célállomás és az aktuális tarifa. Ne válassz útvonalat egy kiemelt „kilogrammonkénti” állítás alapján, ha a díj első egységtől, további egységektől vagy nagyobb díjköteles súlytól függ."
+          ]
+        },
+        {
+          "heading": "Ugyanazt a csomagot hasonlítsd össze az útvonalakon",
+          "paragraphs": [
+            "Az elérhető vonalak összevetésekor tartsd változatlanul a bemenő adatokat. Ellenőrizd az elfogadott tartalmat, a közölt szállítási becslést, követést, csomagolási feltételeket és választható védelmet. Az alacsonyabb kezdeti összeg nem teljes összehasonlítás, ha a szolgáltatások vagy korlátozások eltérnek.",
+            "A kézbesítési becslést kezeld becslésként. A raktári feldolgozás, a fuvarozói mozgás és a célállomási eljárások külön szakaszok. Ez az útmutató nem ígér általános szállítási időt, adómentes útvonalat vagy fix vámköltséget. Döntéshez az aktuális ajánlatot és a célország hivatalos szabályait használd."
+          ]
+        },
+        {
+          "heading": "Mérlegeld a csomagolás előnyeit és hátrányait",
+          "paragraphs": [
+            "A hivatalos csomagoláseltávolítási oldal a felesleges külső csomagolás megszüntetését írja le az áru szükséges védelmének megtartásával. Nem javasolja az eltávolítást, ha az eredeti csomagolás ajándékhoz vagy megőrzéshez fontos. A térfogatcsökkentés hasznos lehet, de a védelem és a vásárlás célja továbbra is számít.",
+            "Konkrét csomagolási választást kérj, ne mindent eltávolító általános utasítást. Ha elérhetők, hasonlítsd össze a végleges méreteket. Az összevonás vagy csomagoláseltávolítás nem eredményez automatikusan kisebb számlát minden útvonalon, a sérülékeny áru pedig épp több védelmet igényelhet."
+          ]
+        },
+        {
+          "heading": "Figyeld a végleges elszámolást",
+          "paragraphs": [
+            "A LoloBuy pótfizetési útmutatója szerint a becsült fuvardíjat a logisztikai szolgáltató tényleges díjához igazítják. Ez túlfizetés visszatérítését vagy további fizetési kérést jelenthet. Olvasd a csomagüzeneteket, és válaszolj a küldeményedhez kapcsolt kérésekre.",
+            "Az első becslést, a végleges díjköteles méreteket, a kiválasztott szolgáltatásokat és a módosítást együtt őrizd. A feljegyzés megkönnyíti az eltérés megértését. A lehetséges célállomási költségekre külön tervezz, és ellenőrizd a csomag végösszegét, mielőtt befejezettnek tekinted a rendelést."
+          ]
+        }
+      ],
+      "checklist": [
+        "Azonos tartalomra és célállomásra hasonlíts útvonalakat.",
+        "Ellenőrizd a tényleges és térfogatsúly szabályait.",
+        "A csomagolás védelmét is mérlegeld.",
+        "Válaszd el a becslést a végleges díjtól.",
+        "Feladás előtt olvasd el a csomagdíj-módosításokat."
+      ],
+      "sourceIds": [
+        "buying",
+        "weight",
+        "packaging",
+        "freight-balance"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 488
+    },
+    {
+      "slug": "lolobuy-warehouse-consolidation",
+      "title": "LoloBuy raktári útmutató: ellenőrzés, tárolás és összevonás",
+      "description": "Rendszerezd a tárolt árukat, tisztázd a QC-kérdéseket, és a teljes csomagra gondolva válassz csomagolást.",
+      "keyword": "LoloBuy raktár és csomagösszevonás",
+      "category": "Raktár",
+      "summary": "A raktári szakasz lehetőséget ad a vásárlási rekord és a beérkezett áru összekapcsolására, valamint annak eldöntésére, mi küldhető együtt.",
+      "sections": [
+        {
+          "heading": "Különböztesd meg az érkezést a készenléttől",
+          "paragraphs": [
+            "Az eladó kézbesítési bejegyzése azt jelenti, hogy egy belföldi csomag eljutott útja egy pontjára. Önmagában nem igazolja, hogy a termékedet ellenőrizték, helyesen hozzárendelték és nemzetközi feladásra kész. A LoloBuy állapotútmutatója elkülöníti a beérkezett árut, az ellenőrzést és a tárolt készletet.",
+            "Munkalistaként a raktári rekordot használd, ne egyetlen követési üzenetet. Minden terméknél őrizd a rendelési számot, változatot és QC-állapotot. Ha egyszerre több eladói csomag érkezik, így az egyik kész termék nem takarja el egy másik nyitott kérdését."
+          ]
+        },
+        {
+          "heading": "Készíts rövid raktári ellenőrzőlistát",
+          "paragraphs": [
+            "Minden terméknél rögzítsd, mit rendeltél, mit mutat a raktár és mi tisztázatlan. Elég lehet négy oszlop: termék, helyes változat, ellenőrzési döntés és csomagolási utasítás. A cél az, hogy a függő kérdés a csomag összeállítása előtt látható maradjon.",
+            "A képeket az eredeti választással vesd össze. Hiányzó fotó és látható hiba eltérő lépést kíván. Bizonytalan részletnél kérj megfelelő bizonyítékot. Látszólagos eltérésnél a rendelési azonosítóval magyarázd el a különbséget, és mérlegeld az alkalmazható visszaküldési folyamatot."
+          ],
+          "bullets": [
+            "Rendelés és pontos változat",
+            "Raktári átvétel és ellenőrzési állapot",
+            "Nyitott kérdés vagy visszaküldési kérelem",
+            "Eredeti csomagolás megtartása vagy eltávolítása",
+            "Nemzetközi csomagra kész: igen vagy nem"
+          ]
+        },
+        {
+          "heading": "Közvetlenül ellenőrizd a tárolási határidődet",
+          "paragraphs": [
+            "A hivatalos anyagok ellentmondó tárolási időket tartalmaznak: a vásárlási útmutató 90 napot, a tárolási és állapotoldal 180 napot említ. A tárolási oldal külön eljárást ír le a nem párosított, rendellenes csomagokra is. Ezeket a különbségeket nem szabad egyetlen feltétel nélküli ígéretté egyszerűsíteni.",
+            "A saját termékedhez csatolt tárolási információt ellenőrizd, és a határidőre hagyatkozás előtt tisztázz minden eltérést. Jegyezd fel a dátumot és az esetleg választott fizetett hosszabbítást. Ne hagyd az árut korlátlanul várni azért, mert egy általános cikk hosszabb időt ad, mint az aktuális raktári rekord."
+          ]
+        },
+        {
+          "heading": "Összeillő, tisztázott termékeket vonj össze",
+          "paragraphs": [
+            "A hivatalos vásárlási útmutató leírja a tárolt termékek nemzetközi szállításra kiválasztását, illetve további vásárlások későbbi közös feladását. Az összevonással a csomagot egészként tervezheted. Ettől még nem lesz minden kombináció minden útvonalon elfogadható.",
+            "Összevonás előtt mérlegeld a korlátozásokat, törékenységet és nyitott ügyeket. Visszaküldési döntésre váró áru nem kezelhető késznek. Egy kényes kiegészítő más védelmet igényelhet, mint a ruha. A kialakuló csomag méreteit és súlyát hasonlítsd össze, ne csak a termékek számát."
+          ]
+        },
+        {
+          "heading": "Írj pontos csomagolási utasítást",
+          "paragraphs": [
+            "A LoloBuy csomagoláseltávolítási súgója a felesleges csomagolás eltávolítását írja le a termékhez szükséges védelem megőrzésével. Ha az eredeti doboz ajándékhoz vagy gyűjteményhez kell, ne jelöld az eltávolítást, és tedd egyértelművé a kérést. Egy doboz értéke nem mindig a szállítási súlya.",
+            "Szükség esetén termékenként adj utasítást: tartsák meg a törékeny áru védőtámaszát, egy bolti dobozt, vagy kérdezd meg az elérhető csomagolási megoldást. Az aktuális csomagűrlapon nézd át az extra díjat. Ne feltételezd, hogy minden kategóriához ugyanaz a csomagolás illik."
+          ]
+        },
+        {
+          "heading": "Végezz végső csomagellenőrzést",
+          "paragraphs": [
+            "Leadás előtt erősítsd meg a terméklistát, mennyiségeket, címzetti adatokat, útvonalat és szolgáltatásokat. Ellenőrizd, hogy minden kívánt áru szerepel, és nem került be tisztázatlan ügyű termék. Ez a rövid áttekintés könnyebb, mint csomagolás után visszafejteni a választást.",
+            "A hivatalos súly- és fuvardíj-elszámolási oldalak szerint a végleges mérések módosíthatják a díjat. Leadás után figyeld a csomagüzeneteket, köztük a megerősítési és pótfizetési kéréseket. Feladás után a csomagkövetési rekordot használd, és a raktári bizonyítékokat a kézbesítés ellenőrzéséig őrizd."
+          ]
+        }
+      ],
+      "checklist": [
+        "Minden terméket ellenőrizz, mielőtt késznek jelölöd.",
+        "A saját tárolási rekordod határidejét nézd.",
+        "A visszaküldési ügyeket különítsd el a szállításra kész áruktól.",
+        "Termékhez illő csomagolást adj meg.",
+        "Nézd át a végleges csomaglistát és fuvardíj-módosításokat."
+      ],
+      "sourceIds": [
+        "buying",
+        "status",
+        "storage",
+        "packaging",
+        "freight-balance"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 489
+    },
+    {
+      "slug": "lolobuy-sizing-guide",
+      "title": "LoloBuy méretútmutató: címkeválasztás előtt hasonlíts méreteket",
+      "description": "Az eladó táblázatával, következetes méréssel és célzott raktári fotókkal hozz világosabb méretdöntést.",
+      "keyword": "LoloBuy méretútmutató",
+      "category": "Méretezés",
+      "summary": "Az ismerős méretjelzés kiindulópont. A valódi összehasonlítás az eladó méretei, saját referenciaméreteid és a kívánt illeszkedés között történik.",
+      "sections": [
+        {
+          "heading": "Az eladó táblázatával kezdj",
+          "paragraphs": [
+            "A LoloBuy hivatalos mérettájékoztatója szerint az üzletek méretszabványai eltérhetnek, és az átváltási adatokat tájékoztatónak tekinti. A medium jelölés vagy az ismerős cipőméret nem bizonyítja, hogy minden eladó áruja ugyanúgy illeszkedik. A pontos hirdetés és változat táblázatát olvasd.",
+            "Ellenőrizd, hogy a számok testméretet, kész ruhát vagy ajánlott viselőt írnak-e le. Ezek eltérő mérések. Ha ez nem világos, rendelés előtt kérdezz, ne megszokásból válassz nagyobb vagy kisebb méretet."
+          ]
+        },
+        {
+          "heading": "Mérj megbízható referenciát",
+          "paragraphs": [
+            "Ruhánál saját, kívánt módon illeszkedő darabbal hasonlíts. Fektesd simára, és az eladó ábrájával azonos pontokat mérd. Jegyezd fel a mértékegységet és azt, hogy a szélesség az egyik oldalon át vagy a test körül értendő. A méretek mellé tegyél gyors fotót a módszerről.",
+            "Testmérésnél kövesd a megfelelő útmutatót, és tartsd vízszintesen a mérőszalagot, ne szorítsd meg a kívánt méret érdekében. Egy szűk ing, laza pulóver és strukturált kabát eltérő ráhagyást igényel. A kívánt sziluett a döntés része, nem a táblázat hibája."
+          ]
+        },
+        {
+          "heading": "A fontos méreteket válaszd ki",
+          "paragraphs": [
+            "Felsőnél a mellkasszélesség, törzshossz, váll és ujj különböző illeszkedési kérdést válaszol meg. Nadrágnál nézd a derekat, ülepemelkedést, belső szárhosszt és teljes hosszt. Egyetlen derékszám nem magyarázza a szár állását, és a mellkasméret önmagában nem adja meg az ujjhosszt.",
+            "Példaként a referenciapólód mellkasszélessége 56 centiméter, hossza 70 centiméter. Egy 56 és 64 centiméteres jelölt hasonló széles, mégis feltűnően rövidebb lehet. Ez összehasonlítási módszert mutat, nem egy adott méret vagy termék ajánlása."
+          ],
+          "bullets": [
+            "Ellenőrizd a mértékegységeket",
+            "Testméretet testmérettáblázattal vess össze",
+            "Fektetett ruhaméretet ruhatáblázattal hasonlíts",
+            "Több illeszkedést meghatározó méretet vizsgálj",
+            "Rögzítsd a kívánt laza vagy testhezálló sziluettet"
+          ]
+        },
+        {
+          "heading": "A lábbelit külön ellenőrizd",
+          "paragraphs": [
+            "A hivatalos méretútmutató eltérő lábméretnél a nagyobb láb használatát javasolja, és jelzi, hogy a hosszjelölés nem írja le teljesen a szélességet. Olvasd az eladó cipőtáblázatát és a választott opció méretrendszerét. Ne feltételezd, hogy az EU-, US- vagy UK-szám minden hirdetés között tökéletesen átvihető.",
+            "A táblázat szerint mérj, és vedd figyelembe a zoknit, szélességet és felhasználást. A raktári képen látható cipőcímke segíthet megerősíteni, mit küldtek, de nem mutatja meg, milyen érzés a lábadon. A talpbetét fotóját ne kezeld univerzális méretváltó táblázatként."
+          ]
+        },
+        {
+          "heading": "A QC-vel konkrét kérdést válaszolj meg",
+          "paragraphs": [
+            "Szállítás előtt a látható méretcímkét hasonlítsd össze a rendeléssel. Ha fontos ruhaméret bizonytalan, világos kezdő- és végponttal kérj mérést. Például varrástól varrásig mért fektetett mellkasszélességet kérj, ne egyszerűen azt, hogy „ellenőrizzék a méretet”.",
+            "A LoloBuy ellenőrzési szabályzata korlátozott, nem ígér teljes illeszkedési értékelést. Nézd meg, hogy a mérés vagy extra fotó elérhető-e a termékednél, és van-e díja. Az alapfotócsomagot nem helyes személyre szabott mérettanácsadásként bemutatni."
+          ]
+        },
+        {
+          "heading": "Akkor dönts, amíg van választásod",
+          "paragraphs": [
+            "Ha a kapott címke eltér a választott opciótól, a rendelést és fotót együtt használva dokumentáld az eltérést. Ha a címke egyezik, de a mérés nem megfelelő, mielőbb ellenőrizd az eladó visszaküldési feltételeit és az aktuális rendelési folyamatot. Ezek külön helyzetek, pontos leírást igényelnek.",
+            "A mérések csökkentik a bizonytalanságot, de nem szüntetik meg a szabás, rugalmasság, anyagérzet és személyes ízlés különbségeit. Őrizd meg a táblázatot és jegyzeteidet, hogy a sikeres illeszkedés segítse a következő vásárlást. Újrarendeléskor ismét nézd meg a tényleges hirdetést, mert más eladó vagy verzió eltérő méreteket használhat."
+          ]
+        }
+      ],
+      "checklist": [
+        "A pontos hirdetés táblázatát használd.",
+        "Tartsd következetesen a mértékegységet és módszert.",
+        "Több fontos illeszkedési méretet hasonlíts össze.",
+        "Ellenőrizd a kapott címkét és a kért mérést.",
+        "A méretkérdéseket nemzetközi feladás előtt rendezd."
+      ],
+      "sourceIds": [
+        "sizing",
+        "qc",
+        "returns"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 481
+    },
+    {
+      "slug": "lolobuy-tracking-guide",
+      "title": "LoloBuy követés: különböztesd meg a rendelést a nemzetközi csomagtól",
+      "description": "Értelmezd helyesen a beszerzési, raktári és csomagszakaszokat, és gyűjts hasznos bizonyítékot, ha a követési frissítés nem egyértelmű.",
+      "keyword": "LoloBuy csomagkövetés",
+      "category": "Követés",
+      "summary": "A rendelési állapot és a fuvarozói bejegyzés az út különböző részeit írja le. A termék, belföldi csomag és nemzetközi küldemény azonosítóit tartsd külön.",
+      "sections": [
+        {
+          "heading": "Tudd, mit követsz",
+          "paragraphs": [
+            "Egy termékhez beszerzési rendelés, eladói belföldi küldemény és későbbi nemzetközi csomag tartozhat. Összefüggő rekordok, de nem ugyanaz a szállítmány. A belföldi kézbesítési üzenet jelentheti a raktárba érkezést, nem feltétlenül az otthoni kézbesítést.",
+            "A rendelés haladásakor készíts egyszerű azonosítólistát: termék/rendelési szám, eladói követési szám, ha látható, raktári termékrekord és nemzetközi csomagszám. Így könnyebb a megfelelő szakaszról kérdezni anélkül, hogy másik útra vonatkozó képernyőképet küldenél a támogatásnak."
+          ]
+        },
+        {
+          "heading": "Először a beszerzési szakaszt olvasd",
+          "paragraphs": [
+            "A LoloBuy hivatalos állapotútmutatója különböztet fizetésre váró, feldolgozás alatti, megrendelt és az eladó által feladott állapotot. A feldolgozás a vásárlásról szól, nem arról, hogy nemzetközi fuvarozó viszi a csomagod. Külföldi követési frissítés keresése előtt olvasd az állapot megfogalmazását.",
+            "Ugyanez az útmutató leírja a beérkezett árut és az ellenőrzés utáni készletet. Ha a belföldi fuvarozó kézbesítést jelez, de a raktári ellenőrzés nincs kész, a rekordok egymást követő szakaszokat is jelenthetnek, nem ellentmondást. A következő teendőt a termékrekordban és a megerősítési kérésekben nézd meg."
+          ]
+        },
+        {
+          "heading": "Ezután olvasd a csomag szakaszait",
+          "paragraphs": [
+            "A nemzetközi csomag létrehozása után annak saját állapotsora van. A hivatalos oldal fizetésre várást, feldolgozást, csomagoltságot és feladást ír le. Arra is figyelmeztet, hogy végleges mérlegelés után változhat a fuvardíj. A létrehozott csomagot ne keverd össze a feladottal.",
+            "A tényleges rekordból indulj ki, ne pusztán egy azonosító létezéséből. A címke vagy szám a következő látható fuvarozói mozgás előtt elkészülhet. Rendszerek összevetésekor jegyezd fel, melyik oldal mondja átadottnak a csomagot, és milyen eseményt rögzített ténylegesen a fuvarozó."
+          ],
+          "bullets": [
+            "Beszerzési/rendelési azonosító",
+            "Nemzetközi csomagazonosító",
+            "Fuvarozói követési szám",
+            "Utolsó esemény, hely és időpont",
+            "Függő megerősítés vagy fizetés"
+          ]
+        },
+        {
+          "heading": "Óvatosan értelmezd a csendes időszakokat",
+          "paragraphs": [
+            "A bejegyzések közötti szünet önmagában nem azonosítja az okot. Ellenőrizd a választott útvonal aktuális becslését, az utolsó eseményt és a vonalra vonatkozó hivatalos közleményt. Egy régi bejegyzés tipikus időtartamából ne csinálj ígért határidőt saját csomagodnak.",
+            "Ne nyiss meg újra és újra különböző követőoldalakat úgy, mintha minden eltérő megfogalmazás új esemény lenne. A jelentős változásokról vezess dátumozott feljegyzést. Ha a jelenlegi szakasz következetlennek tűnik vagy lépést kérnek, az adott problémát jelezd a csomag- vagy rendeléstámogatáson keresztül."
+          ]
+        },
+        {
+          "heading": "Használható kérdést küldj a támogatásnak",
+          "paragraphs": [
+            "Add meg a rendelés vagy csomag azonosítóját, a követési számot, az utolsó látható eseményt és a megválaszolandó kérdést. Például: „A csomagrekord feladást jelez, de a fuvarozónál nincs átadási esemény. Megerősítenék az átadás állapotát?” Ez kezelhetőbb, mint a „Hol van minden?” kérdés.",
+            "A LoloBuy vásárlási útmutatója feladás után a csomagrészhez irányít követésre. Lehetőség szerint az érintett rekordhoz kapcsolt érdeklődést használd. Követési eseményről szóló üzenetbe ne tegyél oda nem tartozó fiókadatot vagy fizetési hitelesítő adatot."
+          ]
+        },
+        {
+          "heading": "A kézbesítésig őrizd a bizonyítékokat",
+          "paragraphs": [
+            "Amikor megérkezik a csomag, mielőbb ellenőrizd külső állapotát és tartalmát. Téves, hiányzó vagy sérült árunál tartsd meg a csomagolást, címkét és világos fotókat. A kapott termékeket a végleges csomaglistával egyeztesd, ne a korábbi válogatással, amely el nem küldött termékeket is tartalmazhat.",
+            "A hivatalos csomag-utókezelési oldal téves vagy sérült árunál részletes leírást és képeket kér, de határidői ellentmondanak egymásnak. Cselekedj gyorsan, és a tényleges támogatási folyamatban ellenőrizd az alkalmazható határidőt. Ne várj azért, mert egy általános útmutató hosszabb időt látszik adni."
+          ]
+        }
+      ],
+      "checklist": [
+        "Különítsd el a belföldi és nemzetközi azonosítókat.",
+        "Nézd meg, létrehozott, csomagolt vagy feladott-e a küldemény.",
+        "Az utolsó eseményt időponttal együtt olvasd.",
+        "Konkrét, dokumentált kérdést küldj a támogatásnak.",
+        "Gyorsan ellenőrizd a kézbesítést és őrizd meg a bizonyítékot."
+      ],
+      "sourceIds": [
+        "status",
+        "buying",
+        "claims",
+        "freight-balance"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 487
+    },
+    {
+      "slug": "lolobuy-returns-refunds",
+      "title": "LoloBuy visszaküldés és visszatérítés: a megfelelő rendelési szakaszban lépj",
+      "description": "Készíts bizonyítékot, ellenőrizd az eladó feltételeit, és értsd meg a lemondás, termékvisszaküldés és csomagreklamáció különbségét.",
+      "keyword": "LoloBuy visszaküldés visszatérítés",
+      "category": "Értékesítés utáni ügyintézés",
+      "summary": "A visszaküldési döntés a terméktől, eladótól és rendelési szakasztól függ. A világos bizonyíték és gyors kérelem hasznosabb, mint egyetlen szabályt feltételezni minden vásárlásra.",
+      "sections": [
+        {
+          "heading": "Azonosítsd a szükséges folyamatot",
+          "paragraphs": [
+            "A még meg nem vásárolt rendelés lemondása, a raktári áru visszaküldése és a nemzetközi kézbesítés utáni probléma bejelentése különböző folyamat. Először az aktuális rendelési vagy csomagállapotot nézd meg. A megfelelő gomb és információ a tranzakció előrehaladásától függhet.",
+            "A LoloBuy lemondási és visszaküldési oldalai több állapotfüggő lépést és eladói közreműködést írnak le. A kérelem nem azonos a jóváhagyással. Olvasd a rendeléshez kapcsolt választ, és kövesd, mit fogadtak el, mi függő, és mit kell még tenned."
+          ]
+        },
+        {
+          "heading": "Őrizd meg a pontos bizonyítékot",
+          "paragraphs": [
+            "Tartsd együtt a termék URL-jét, a választott változatot, rendelési visszaigazolást és releváns fotókat. Téves méretcímkénél mutasd meg a rendelt változatot és a kapott címkét. Sérülésnél adj tiszta összképet és közelit az érintett részről. Túlzás nélkül írd le az eltérést.",
+            "Például: „Kéket rendeltem L méretben; a raktári fotón fekete, M-es címke látszik” ellenőrizhető eltérést nevez meg. A „rossz minőség” jóval pontatlanabb. Ha a kép túl homályos a hiba megállapításához, kérd a hiányzó bizonyítékot, mielőtt eldöntöd a kívánt megoldást."
+          ],
+          "bullets": [
+            "Rendelési szám és forráshirdetés",
+            "Választott változat és mennyiség",
+            "A probléma világos leírása",
+            "Releváns, rendeléshez tartozó fotók",
+            "Kért megoldás: tisztázás, lemondás, visszaküldés vagy csere"
+          ]
+        },
+        {
+          "heading": "A jogosultságot és időzítést együtt olvasd",
+          "paragraphs": [
+            "A hivatalos visszaküldési garanciaoldal jogosultsági feltételeket és raktározás utáni kérelmezési ablakot ír le. Az eladó hozzájárulását is megköveteli. Más súgóoldalak eltérő vagy nehézkes időbeli megfogalmazást használnak. A tényleges rendelés határidejét és elérhető szolgáltatását ellenőrizd, és mielőbb jelezd az aggályt.",
+            "A csomagolás és az újraértékesíthető állapot fontos lehet. Ne kérd olyan csomagolás eltávolítását, amely egy jogos visszaküldéshez kellhet, amíg nem érted a feltételeket. Használt termékekre, egyedi rendelésekre és más kategóriákra eltérő szabályok lehetnek; az általános feltétel nélküli visszaküldési ígéret félrevezető lenne."
+          ]
+        },
+        {
+          "heading": "Kérdezd meg az alkalmazható költségeket",
+          "paragraphs": [
+            "A visszaküldési garancia útmutatója különbséget tesz a visszaküldés okai között, és tárgyalja a belföldi szállítást, valamint szolgáltatási díjakat. Az eladó eredeti ingyenes szállítási ajánlata nem teszi szükségszerűen ingyenessé a későbbi visszaküldést. Beleegyezés előtt kérdezd meg a konkrét kérelmed költségeit.",
+            "A választ tartsd a rendelési rekordban. Tisztázd, hogy az összeg tartalmazza-e a visszaszállítást az eladóhoz, az eredeti belföldi díjat és a szolgáltatási költséget. A platform kezelési kedvezménye és az eladó szállítási díja külön dolog, ne olvadjanak homályos „ingyenes visszaküldés” állítássá."
+          ]
+        },
+        {
+          "heading": "Kövesd a visszatérítés célját és állapotát",
+          "paragraphs": [
+            "A hivatalos visszaküldési tájékoztató általában LoloBuy-fiókegyenlegre történő jóváírást ír le, bizonyos eredeti fizetési helyzetekhez megadott kivétellel. A fiókjóváírás és a külső fizetési módra visszaérkező pénz eltérő eredmény. Ellenőrizd, melyik vonatkozik rád, mielőtt bankszámládon várnád az összeget.",
+            "Az eladó jóváhagyása, a visszaküldött áru átvétele és a visszatérítés befejezése külön mérföldkő lehet. Ha megadják, őrizd a visszacsomag azonosítóját. Késésről kérdezve az utolsó befejezett lépést nevezd meg, ne indíts olyan új kérelmet, amely kihagyja a meglévő visszaküldési előzményt."
+          ]
+        },
+        {
+          "heading": "A kézbesített csomag problémáját külön kezeld",
+          "paragraphs": [
+            "Kézbesítés utáni gondnál a hivatalos utasítás az érintett csomag utókezelési kérelméhez irányít, és részletes leírást, fotókat kér. A termékképek mellett a külső csomagolást és címkét is őrizd. Ezek kapcsolják a sérülést vagy eltérést a küldeményhez.",
+            "Az adott hivatalos oldal egymásnak ellentmondó határidőket tartalmaz. Jelentsd gyorsan a problémát, és közvetlenül az aktuális folyamatból kérd az alkalmazható időkorlátot. Ez az útmutató nem ígér jóváhagyást, általános visszatérítési időt vagy minden veszteségre kártérítést."
+          ]
+        }
+      ],
+      "checklist": [
+        "Ellenőrizd a rendelés vagy csomag aktuális szakaszát.",
+        "Dokumentáld a pontos eltérést vagy sérülést.",
+        "Erősítsd meg a jogosultságot, határidőt és csomagolási feltételt.",
+        "Kérdezz rá minden visszaküldési költségre.",
+        "Kövesd a jóváhagyást és a visszatérítés tényleges célját."
+      ],
+      "sourceIds": [
+        "refunds",
+        "cancellation",
+        "returns",
+        "claims",
+        "changes"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 488
+    },
+    {
+      "slug": "lolobuy-order-budget",
+      "title": "LoloBuy rendelési költségvetés: a termékáron túl is számolj",
+      "description": "A rendelés vállalása előtt különítsd el a termékköltséget, belföldi szállítást, extra szolgáltatásokat, pénzváltást és nemzetközi fuvardíjat.",
+      "keyword": "LoloBuy díjak",
+      "category": "Költségvetés",
+      "summary": "A jó költségvetés külön kezeli a megerősített és becsült összegeket. A termékvásárlás és a későbbi csomagfizetés két összekapcsolt döntésként maradjon látható.",
+      "sections": [
+        {
+          "heading": "A ténylegesen megvásárolandó változatot árazd",
+          "paragraphs": [
+            "A katalógusár összehasonlítási kiindulópont. A kiválasztott szín, méret, szett vagy mennyiség aktuális ára eltérhet a hivatalos rendelési oldalon. Költségvetésbe vétel előtt nézd át a pontos összeállítást, különösen, ha a forráshirdetés ártartományt mutat.",
+            "Azonos szakaszban hasonlíts összeget és pénznemet. Egy rögzített termékár, pénztári végösszeg és kártyakivonat különböző összetevőket tartalmazhat. Különbségüket ne nevezd rejtett díjnak, amíg nem ellenőrizted a mennyiséget, szállítást, átváltást és választott szolgáltatást."
+          ]
+        },
+        {
+          "heading": "Válaszd külön a két fő fizetési szakaszt",
+          "paragraphs": [
+            "A LoloBuy hivatalos vásárlási folyamata először a termékek és a kínai belföldi szállítás díját szedi be. A nemzetközi fuvardíj a tárolt áruk csomagként történő leadásakor következik. A csak első fizetéssel számoló vásárló a raktári szakaszba juthat úgy, hogy nincs elég pénze elküldeni a rendelést.",
+            "Készíts egyszerű táblázatot minden költségelemmel, és jelöld megerősítettnek vagy becsültnek. Az extra szolgáltatásokat ne rejtsd a termékösszegbe, maradjanak láthatók. A lehetséges célállomási díjak külön sorba tartoznak, mert a katalógusár nem állapítja meg őket."
+          ],
+          "bullets": [
+            "Kiválasztott termékek és mennyiségek",
+            "Kínai belföldi szállítás",
+            "Választott beszerzési vagy raktári szolgáltatások",
+            "Nemzetközi szállítás és csomagolási szolgáltatások",
+            "A pénztárban jelzett fizetési vagy átváltási díjak",
+            "Lehetséges célállomási adók vagy kezelési díjak"
+          ]
+        },
+        {
+          "heading": "Olvasd el a belföldi szállítás feltételeit",
+          "paragraphs": [
+            "A hivatalos belföldi szállítási súgó szerint egy eladótól együtt leadott és kifizetett termékek közös belföldi díjat kaphatnak, túlsúlyos küldeménynél lehetséges pótdíjjal. Ez konkrét feltétel, nem ígéret arra, hogy a kosár minden termékéhez egyetlen díj tartozik.",
+            "Ellenőrizd az egyes termékek eladóját és a rendelés csoportosítását. Nagyobb mennyiség az eladói árat vagy szállítási feltételeket is módosíthatja, különösen nagykereskedelmi hirdetésnél. Az aktuális rendelési számítást őrizd, ne egy régi fuvardíjat ossz el egymástól független vásárlások között."
+          ]
+        },
+        {
+          "heading": "Vizsgáld meg a fizetési és pénznemadatokat",
+          "paragraphs": [
+            "Megerősítés előtt nézd át a hivatalos pénztár módszereit, a terhelt pénznemet és minden kijelzett költséget. Az elérhetőség fiók- és tranzakciófüggő lehet. Egy általános súgólista nem bizonyítja, hogy egy adott módot ma felajánlanak a rendelésedhez.",
+            "Ha a fizetési szolgáltató átváltást kínál, hasonlítsd össze az ott jelzett végleges terhelést és feltételeket. A nyugtát a rendeléssel együtt tartsd meg. Ne ígérj fix árfolyamot, és ne feltételezd, hogy a korábbi vásárlás átváltása a következőnél is érvényes."
+          ]
+        },
+        {
+          "heading": "A kedvezményt ellenőrizendő tételnek tekintsd",
+          "paragraphs": [
+            "A LoloBuy akciós útmutatója az eladó ajánlatának rendelési megjegyzésben való megadását írja le, hogy a beszerző ellenőrizhesse. Egy banner vagy elmentett kép nem bizonyítja, hogy pontos változatod és mennyiséged még jogosult. Rögzítsd a feltételeket, és a rendelési folyamatban kérj visszaigazolást.",
+            "Megerősítésig a kedvezményt különítsd el a szokásos költségvetéstől. Ne építs független útmutatóból másolt ajánlói akcióra, kuponra vagy szállítási állításra. Ez a webhely nem adott garantált újfelhasználói jóváírást vagy univerzális szállítási árat."
+          ]
+        },
+        {
+          "heading": "A bizonytalan fuvardíjhoz tartományt használj",
+          "paragraphs": [
+            "Csomagolás előtt a súly és méret becslés. A hivatalos fuvardíj-elszámolási szabályzat a kezdeti összeget a logisztikai szolgáltató tényleges díjával egyezteti. Hagyj helyet módosításra, ne költsd az egész keretet termékekre.",
+            "Tervezési példaként tegyük fel, hogy a megerősített termékek és belföldi szállítás egy pénznemben 100 egység, a jelenlegi nemzetközi becslés pedig 30–45. Előzetes összeged más alkalmazható költségek előtt 130–145. Ezek a módszert szemléltető feltételezett számok, nem LoloBuy-árak és nem ajánlat."
+          ]
+        },
+        {
+          "heading": "A költségvetés legyen döntési eszköz",
+          "paragraphs": [
+            "Ha a várható összeg meghaladja a keretedet, fizetés előtt módosítsd a válogatást. Egy kevésbé fontos áru elhagyása könnyebb lehet, mint később visszaküldéssel visszaszerezni a pénzt. A teljes kézbesített rendelés értékét vesd össze, ne azt, hány olcsó terméket gyűjthetsz össze.",
+            "Feladás után a becsléseket cseréld a végleges rögzített díjakra. Őrizd meg az eltérést és magyarázatát. Az előzmény hasznos a következő tervezéshez, miközben számolnod kell az eltérő áruval, méretekkel, útvonalakkal és árfolyamfeltételekkel is."
+          ]
+        }
+      ],
+      "checklist": [
+        "A pontos változatra tervezz költségvetést.",
+        "Különítsd el a belföldi és nemzetközi szállítást.",
+        "Rögzítsd az extra szolgáltatásokat és a terhelt pénznemet.",
+        "Csak megerősített kedvezménnyel számolj.",
+        "Hagyj tartalékot bizonytalan fuvardíjra és célállomási költségre."
+      ],
+      "sourceIds": [
+        "buying",
+        "domestic",
+        "promotions",
+        "freight-balance",
+        "wholesale"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 525
+    },
+    {
+      "slug": "lolobuy-seller-and-review-checks",
+      "title": "LoloBuy találatok és értékelések: ellenőrizd a hirdetés bizonyítékait",
+      "description": "Értékeld a forrásadatokat, a vélemények relevanciáját és az ellenőrzés korlátait anélkül, hogy jelvényt, képet vagy pontszámot garanciának tekintenél.",
+      "keyword": "megbízható a LoloBuy",
+      "category": "Vásárlási döntések",
+      "summary": "A hasznos kérdés az, mit igazol a rendelkezésre álló bizonyíték erről a tranzakcióról. A platform neve önmagában nem válaszol minden eladói, termék- vagy csomagkérdésre.",
+      "sections": [
+        {
+          "heading": "Különítsd el a platformot a terméktől",
+          "paragraphs": [
+            "A LoloBuy szolgáltatási tájékoztatója harmadik felek platformjairól történő beszerzést ír le, nem minden felsorolt termék saját értékesítését. Ez a független terméklista még egy lépéssel távolabb van: a felfedezést rendszerezi. Tartsd világosan ezeket a szerepeket, amikor azt döntöd el, ki válaszolhat vagy oldhat meg egy problémát.",
+            "Egy működő terméklink nem bizonyít eredetiséget, készletet, illeszkedést vagy jövőbeli kézbesítést. Hasonlóan egy eladói panasz nem állapítja meg minden platformprobléma okát. A pontos értékelendő állítással és az adott folyamatrészért felelős féllel kezdj."
+          ]
+        },
+        {
+          "heading": "A népszerűség előtt a hirdetést nézd",
+          "paragraphs": [
+            "Keress egyértelmű eredeti URL-t, következetes termékleírást, azonosítható változatokat és hasznos méret- vagy specifikációadatokat. A választott opciót vesd össze a galériával. Az olcsó induló ár a főképen láthatótól eltérő alkatrészre is vonatkozhat.",
+            "Ha több eladó ugyanazt a fotót használja, a képek önmagukban nem mondják meg, azonos-e a gyártás vagy az ellátás. Jegyezd fel a hiányt, és kérdezz célzottan. Népszerűségi szám vagy ismerős gyártási sorozatnév nem helyettesíti a pontos hirdetés bizonyítékát."
+          ],
+          "bullets": [
+            "Eredeti hirdetés és eladói azonosság",
+            "Pontos változat és mennyiség",
+            "Releváns méretek vagy specifikációk",
+            "Aktuális visszaküldési információ",
+            "A vásárlást befolyásoló nyitott kérdések"
+          ]
+        },
+        {
+          "heading": "A véleményt relevancia szerint olvasd",
+          "paragraphs": [
+            "A vélemény akkor hasznosabb, ha azonosítható a dátuma, a tárgyalt termék vagy szolgáltatás és a következtetés bizonyítéka. A támogatás válaszidejéről szóló komment más, mint a cipő illeszkedésének értékelése. Egy sikeresen megérkezett csomag nem bizonyítja a katalógus minden termékének alkalmasságát.",
+            "Keress feltüntetett ajánlói linkeket, ösztönzőket és más kapcsolatokat. Jelenlétük nem teszi automatikusan hamissá a véleményt, de magyarázza a célját. Partneri promócióból, egyetlen történetből vagy ellenőrizetlen ajánlásból ne csinálj általános tanácsot."
+          ]
+        },
+        {
+          "heading": "Tervezd meg, mit igazolhat az ellenőrzés",
+          "paragraphs": [
+            "A hivatalos alapellenőrzési oldal külső vizsgálatot és fontos kizárásokat ír le. Nem ígéri minden kategória hitelesítését vagy működésvizsgálatát. A lezárt áruk és egyes szakmai termékek eltérő kezelést kapnak. Mielőtt olyat veszel, amelynek értéke nem vizsgált tulajdonságtól függ, olvasd át a korlátokat.",
+            "Ruhánál a pontos méretek és látható kidolgozás sok kérdést megválaszolhat. Elektronikánál vagy biztonsággal kapcsolatos árunál a fénykép nem igazol belső teljesítményt vagy megfelelőséget. Ha a szükséges bizonyíték hiányzik, annak bizonytalansága része a vásárlási döntésnek."
+          ]
+        },
+        {
+          "heading": "A fizetést és kommunikációt tartsd megfelelő helyen",
+          "paragraphs": [
+            "Fizetésre a hivatalos oldalt, tranzakciós kérdésre az érintett rendelés vagy csomag érdeklődési felületét használd. Belépés előtt ellenőrizd a domaint. Ennek a katalógusnak nincs szüksége a jelszavadra, fizetési hitelesítő adataidra vagy keresőbe másolt magánbeszélgetésedre.",
+            "Őrizd a választott változat, fizetés, eladói tisztázás és egyeztetett követelmény feljegyzéseit. Változásnál kérd a rendelési rekord frissítését. Az egyértelmű előzmény jobban segít későbbi kérdés rendezésében, mint az áru- vagy tranzakcióazonosítót nélkülöző szétszórt üzenetek."
+          ]
+        },
+        {
+          "heading": "Olyan döntést hozz, amelyet meg tudsz indokolni",
+          "paragraphs": [
+            "Írj rövid feljegyzést arról, miért felel meg az áru, milyen bizonyíték támasztja alá, mennyi a teljes keret, és mely bizonytalanságokat fogadod el. Ha a döntés nyitott méret-, állapot- vagy visszaküldési kérdéstől függ, fizetés előtt tisztázd.",
+            "Egy kis első rendelés választható módja lehet a lekötött összeg korlátozásának a folyamat tanulása közben, de nem minősít minden eladót vagy későbbi küldeményt. Ez az útmutató bizonyítékértékelési módszer, nem személyes teszt és nem garancia a LoloBuy kockázatmentességére. A következő konkrét ellenőrzésekhez a rendelési, QC- és visszaküldési útmutatót használd."
+          ]
+        }
+      ],
+      "checklist": [
+        "Különböztesd meg a katalógus, platform és eladó szerepét.",
+        "A pontos hirdetést vizsgáld, ne népszerűségét.",
+        "A vélemény dátumát, relevanciáját és ösztönzőit nézd.",
+        "Értsd meg, mit nem igazol az ellenőrzés.",
+        "Őrizd a dokumentált döntést és rendelési rekordot."
+      ],
+      "sourceIds": [
+        "service",
+        "qc",
+        "buying",
+        "returns"
+      ],
+      "readingMinutes": 3,
+      "wordCount": 474
+    }
+  ]
+}
