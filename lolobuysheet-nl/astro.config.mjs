@@ -1,6 +1,6 @@
 import { defineConfig } from 'astro/config';
 export default defineConfig({
-  site: process.env.PUBLIC_SITE_URL || 'https://lolobuy-nl-preview.pages.dev',
+  site: process.env.PUBLIC_SITE_URL || 'https://lolobuysheet.nl',
   output: 'static',
   server: { host: true, port: 4173 },
   trailingSlash: 'always',

@@ -6,10 +6,12 @@ LoloBuy discovery site. Astro 7.4.1 static pages plus small Cloudflare Pages Fun
 
 - GitHub: `hehaize88-code/https-cnfanssp.com`, directory `lolobuysheet-nl/`
 - Cloudflare Pages project: `lolobuy-nl-preview`
-- Preview: https://lolobuy-nl-preview.pages.dev/
+- Production: https://lolobuysheet.nl/
+- Historical preview: https://lolobuy-nl-preview.pages.dev/
 - Build: `npm run build`; output `dist`; Node 24.19.0
-- `PUBLIC_SITE_URL=https://lolobuy-nl-preview.pages.dev`
-- Keep preview noindex; production domain approval is separate.
+- `PUBLIC_SITE_URL=https://lolobuysheet.nl`
+- Owner authorized production launch on2026-10-20. Canonical/hreflang/sitemap use lolobuysheet.nl. Pages preview hosts retain an X-Robots-Tag noindex header.
+- Sitemap: /sitemap.xml contains384canonical editorial/catalogue URLs across24languages. Product shells, unavailable image search and duplicate legacy guides are excluded; product/image-search pages remain noindex.
 
 ## Development
 

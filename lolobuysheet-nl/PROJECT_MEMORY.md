@@ -1,7 +1,7 @@
 # lolobuysheet.nl — Project Memory
 
 Updated: 2026-10-20
-Stage: expanded public preview published and verified. All24locale content validated. Continue using the existing Cloudflare Pages project. Production domain binding awaits owner approval.
+Stage: expanded public preview published and verified. All24locale content validated. Continue using the existing Cloudflare Pages project. Owner authorized production deployment and Cloudflare binding on2026-10-20; launch in progress.
 
 ## Identity and fixed boundaries
 
@@ -81,3 +81,7 @@ Cloudflare reported successful deployment of source commit08a94e5d85ea31bbc1b451
 Deployed API checks: product6667 HTTP200 maps to seller7632511460 with exact official LoloBuy URL; electronics complete181records HTTP200; shoes complete1,570records HTTP200. Connected Chrome confirmed /spreadsheet/?page=329 has12cards,6,572total and Next disabled. Mobile375px content has no horizontal overflow on product, FAQ, article list and full article; source image loaded, official buy link correct,24FAQ and10article cards visible,24language menu complete. Maltese switch and full article body verified with6chapters/12paragraphs and one expanded mobile chapter. Viewport override reset.
 
 Original connectivity incident cause remains unknown, but this deployed version loaded successfully in connected Chrome. Do not infer all user devices/networks are proven. Source data remains a dated full cache with verified live-category refresh and on-demand details; no separate database. Domain/DNS unchanged.
+
+## Production launch authorized — 2026-10-20
+
+Owner: “帮我部署并连接到cf”. Reuse existing Pages project lolobuy-nl-preview and GitHub folder lolobuysheet-nl/. Root lolobuysheet.nl and www authorized for launch. Native CF connector still requires reauthentication; using the already connected Chrome account9010cea800ac2a140509889d88fe612e. Production canonical origin is https://lolobuysheet.nl; remove preview banner, open canonical editorial routes to indexing, publish sitemap.xml/robots.txt. Keep query-based product shells and unavailable image search noindex; do not add them to sitemap. Legacy guide aliases canonicalize to equivalent full articles. Historical Pages host stays noindex by HTTP header. Verification pending.
