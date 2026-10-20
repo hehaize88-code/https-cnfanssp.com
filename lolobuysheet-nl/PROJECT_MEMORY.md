@@ -1,7 +1,7 @@
 # lolobuysheet.nl — Project Memory
 
 Updated: 2026-10-20
-Stage: replacement Cloudflare Pages preview published and verified in the owner's Chrome; production domain binding awaits owner review.
+Stage: replacement Cloudflare Pages preview published; owner still reports connection trouble. Fresh HTTP and connected-Chrome reload succeed, but the owner's reported failure remains unresolved pending the failing URL/error. Production domain binding awaits owner review.
 
 ## Identity and fixed boundaries
 
@@ -79,3 +79,7 @@ A replacement public preview is being configured in the owner's Cloudflare accou
 Cloudflare Pages reported a successful deployment of commit `7fe031c76f21c12d05e4b72b97c58673ef7e0d6b`. Public URL https://lolobuy-nl-preview.pages.dev/ was opened successfully in the owner's connected Chrome. Main source images loaded, hoodie filtering returned 8 records, English/Dutch switching worked, and canonical correctly points to the new Pages origin. A homepage screenshot was captured as proof. Custom domain and DNS were not changed. Build environment: NODE_VERSION=24.19.0; PUBLIC_SITE_URL=https://lolobuy-nl-preview.pages.dev.
 
 Future preview updates should use the GitHub directory and this Pages project. The original Sites-hosted preview is not the user's working review link. Do not overwrite or recreate the existing Pages project on subsequent turns.
+
+### Follow-up connection report — 2026-10-20
+
+Owner reported “连不了” after receiving the Pages link. Rechecked https://lolobuy-nl-preview.pages.dev/: fresh server HTTP 200 and an intentional reload in the owner's connected Chrome rendered the homepage successfully. This does not establish that the owner's separate failing attempt/device works. No new deployment, DNS, security setting or domain binding was changed. Need the failing address and visible error (ideally an address-bar screenshot) to distinguish old-link use from a device/network-specific failure; do not invent a cause or claim resolved.
