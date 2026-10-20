@@ -1,0 +1,32 @@
+---
+import catalog from '../data/catalog.json';
+import {text,pathFor,type Language} from '../data/i18n';
+import Icon from './Icon.astro';
+const {lang='en',compact=false}=Astro.props;const t=text[lang as Language];
+const icons:Record<string,string>={shoes:'shoe',hoodies:'shirt',tshirts:'shirt',pants:'bag',accessories:'heart',jerseys:'shirt'};
+---
+<section class="catalog-section container" id="finds" data-catalog data-page-label={t.page}>
+<div class="section-heading"><div><p class="eyebrow">THE LOLOBUY SPREADSHEET</p><h2>{t.browse}</h2><p>{t.browseSub}</p></div><div class="catalog-count"><span data-result-count>{catalog.products.length}</span> {t.count}<span class="small-dot"></span>CNY</div></div>
+<div class="category-tabs" role="group" aria-label={t.browse}><button class="category-tab active" data-category="all" aria-pressed="true"><Icon name="grid" size={18}/>{t.all}</button>{Object.entries(t.categories).map(([key,label])=><button class="category-tab" data-category={key} aria-pressed="false"><Icon name={icons[key]} size={18}/>{label}</button>)}</div>
+<div class="catalog-toolbar"><div class="filter-search"><Icon name="search" size={18}/><input type="search" id="catalog-search" placeholder={t.search} aria-label={t.search}/></div><label class="sort-control"><span>{t.sort}:</span><select id="catalog-sort" aria-label={t.sort}>{['featured','new','views','price-asc','price-desc'].map((v,i)=><option value={v}>{t.sorts[i]}</option>)}</select></label></div>
+<div class="product-grid">{catalog.products.map((item,i)=><article class="product-card" data-product data-name={item.name.toLowerCase()} data-id={item.productId} data-category={item.category} data-price={item.priceCny} data-views={item.views} data-date={item.date} data-order={i} hidden={i>=16}><a class="product-image" href={pathFor(lang,`product/${item.recordId}`)}><img src={item.image} alt={item.name} loading="lazy" width="420" height="420" referrerpolicy="no-referrer"/><span class="product-category">{t.categories[item.category as keyof typeof t.categories]}</span><span class="product-arrow"><Icon name="arrow" size={18}/></span></a><div class="product-meta"><p>{t.categories[item.category as keyof typeof t.categories]}</p><a class="product-title" href={pathFor(lang,`product/${item.recordId}`)}>{item.name}</a><div class="product-bottom"><span class="price">¥{item.priceCny.toFixed(2)}<small>CNY</small></span><a href={pathFor(lang,`product/${item.recordId}`)} aria-label={`${t.view}: ${item.name}`}><Icon name="arrow" size={18}/></a></div></div></article>)}</div>
+<div class="empty-state" hidden data-empty><Icon name="search" size={32}/><h3>{t.empty}</h3><button class="button" data-reset>{t.reset}</button></div>
+<div class="catalog-bottom"><p class="source-note"><span class="source-dot"></span>{t.source}</p><div class="pagination"><button data-prev aria-label={t.previous}>←</button><span data-page-indicator>1 / {Math.ceil(catalog.products.length/16)}</span><button data-next aria-label={t.next}>→</button></div><a class="text-link" data-source-search href="https://www.cnfanssp.com/AllProducts/" target="_blank" rel="noopener noreferrer">{t.sourceSearch}<Icon name="external" size={14}/></a></div><p class="fine-print">{t.snapshot}</p>
+</section>
+<script>
+const root=document.querySelector<HTMLElement>('[data-catalog]');
+if(root){
+ const cards=Array.from(root.querySelectorAll<HTMLElement>('[data-product]'));const grid=root.querySelector('.product-grid')!;const search=root.querySelector<HTMLInputElement>('#catalog-search')!;const sort=root.querySelector<HTMLSelectElement>('#catalog-sort')!;const params=new URLSearchParams(location.search);let category=params.get('category')||'all',page=1;search.value=params.get('q')||'';sort.value=params.get('sort')||'featured';
+ const render=()=>{
+  const query=search.value.trim().toLowerCase();let filtered=cards.filter(c=>(category==='all'||c.dataset.category===category)&&((c.dataset.name||'').includes(query)||(c.dataset.id||'').includes(query)));
+  filtered.sort((a,b)=>{const n=(c:HTMLElement,key:string)=>Number(c.dataset[key]);switch(sort.value){case'new':return n(b,'date')-n(a,'date');case'views':return n(b,'views')-n(a,'views');case'price-asc':return n(a,'price')-n(b,'price');case'price-desc':return n(b,'price')-n(a,'price');default:return n(a,'order')-n(b,'order')}});
+  const pages=Math.max(1,Math.ceil(filtered.length/16));page=Math.min(page,pages);cards.forEach(c=>c.hidden=true);filtered.forEach((c,i)=>{grid.append(c);c.hidden=i<(page-1)*16||i>=page*16});
+  root.querySelector('[data-result-count]')!.textContent=String(filtered.length);root.querySelector('[data-page-indicator]')!.textContent=`${page} / ${pages}`;(root.querySelector('[data-empty]') as HTMLElement).hidden=filtered.length>0;(root.querySelector('[data-prev]') as HTMLButtonElement).disabled=page<=1;(root.querySelector('[data-next]') as HTMLButtonElement).disabled=page>=pages;
+  root.querySelectorAll<HTMLButtonElement>('.category-tab').forEach(btn=>{const active=btn.dataset.category===category;btn.classList.toggle('active',active);btn.setAttribute('aria-pressed',String(active))});
+  const url=new URL('https://www.cnfanssp.com/search.html');url.searchParams.set('keywords',search.value.trim());url.searchParams.set('channelid','2');(root.querySelector('[data-source-search]') as HTMLAnchorElement).href=query?url.href:'https://www.cnfanssp.com/AllProducts/';
+  const state=new URLSearchParams();if(query)state.set('q',search.value.trim());if(category!=='all')state.set('category',category);if(sort.value!=='featured')state.set('sort',sort.value);history.replaceState(null,'',location.pathname+(state.size?'?'+state:'')+location.hash);
+ };
+ root.querySelectorAll<HTMLElement>('.category-tab').forEach(btn=>btn.addEventListener('click',()=>{category=btn.dataset.category!;page=1;render()}));search.addEventListener('input',()=>{page=1;render()});sort.addEventListener('change',()=>{page=1;render()});
+ root.querySelector('[data-prev]')?.addEventListener('click',()=>{page--;render();root.scrollIntoView({behavior:'smooth',block:'start'})});root.querySelector('[data-next]')?.addEventListener('click',()=>{page++;render();root.scrollIntoView({behavior:'smooth',block:'start'})});root.querySelector('[data-reset]')?.addEventListener('click',()=>{category='all';search.value='';page=1;render()});render();
+}
+</script>

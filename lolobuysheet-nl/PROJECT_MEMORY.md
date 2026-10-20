@@ -1,89 +1,68 @@
 # lolobuysheet.nl — Project Memory
 
-Updated: 2026-10-20 (Asia/Shanghai)
-Stage: requirements, reference review and repository setup. No application or production deployment has been completed.
+Updated: 2026-10-20
+Stage: public visual preview v1 published successfully; production domain binding awaits owner review.
 
-## Confirmed project identity
+## Identity and fixed boundaries
 
-- Platform: LoloBuy.
-- Domain supplied by owner: https://lolobuysheet.nl
-- Repository: https://github.com/hehaize88-code/https-cnfanssp.com
-- Project root: `lolobuysheet-nl/`.
-- One domain per independent project directory. Do not alter neighboring sites or reuse their canonical URLs.
-- Framework requirement: current stable Astro, with SSG or SSR chosen around the actual upstream capabilities.
-- Registration URL: https://www.lolobuy.com/index
-- Weidian purchase URL: `https://www.lolobuy.com/productDetail/{productId}?url=` plus the URL-encoded `https://weidian.com/item.html?itemID={productId}`.
-- A CMS record ID is not a Weidian product ID.
-- Use official LoloBuy logo and favicon. Observed official logo URL: https://usfile.lolobuy.com/lolobuyWeb/index/iconLolobuyLogo.svg . Original favicon remains to be verified.
+- One platform/domain per conversation and per folder. This project is LoloBuy / lolobuysheet.nl.
+- GitHub: hehaize88-code/https-cnfanssp.com; isolated folder: `lolobuysheet-nl/`. Preserve neighboring sites.
+- User specifically requested latest Astro SSR or SSG. Implemented Astro 7.4.1 SSG, Node >=22.22.
+- No independent product database, SQL, D1, admin dashboard, product CRUD or invented catalogue/images.
+- Registration URL: https://www.lolobuy.com/index (no referral token was supplied).
+- Purchase URL: `https://www.lolobuy.com/productDetail/{productId}?url=` plus URL-encoded original Weidian item URL. Never use the CMS record ID as productId.
+- Official logo: https://usfile.lolobuy.com/lolobuyWeb/index/iconLolobuyLogo.svg
+- Official favicon: https://www.lolobuy.com/loloBuyIcon.png
 
-## Source boundary — clarification required before integration
+## Source decision and current capability limits
 
-The initial brief specifies cnfanssp.com. The latest instruction repeats cnfanssp.com twice and names a repository containing cnfanssp, but its final sentence says cnfansge. Provisional planning follows cnfanssp.com; the authoritative source must be clarified before live integration. Do not combine the two sources or silently substitute either one.
+The repeated instructions specify cnfanssp.com; the last word in an earlier instruction said cnfansge. The preview explicitly follows cnfanssp.com provisionally, as communicated to the owner. Do not silently switch or mix the sources; confirm the final authoritative service before production integration.
 
-No independent product database, D1, SQL, product CRUD system or admin dashboard. No mock products, generated product photographs, stock-image catalog or copied reference-site product inventory. All actual catalog records, prices, main images, galleries, QC references, search results and sorting must originate from the confirmed upstream service. Interface translations and original editorial content are site files, not a second product database.
+This preview fetches a dated selection of **48 real records from six cnfanssp.com categories**, validates every original Weidian product ID on the source detail page, and generates static pages. `src/data/catalog.json` is a build-time source snapshot, not a separately managed product database. Photos remain direct cnfanssp.com URLs. No reference-site inventory, stock photos or AI product images were used.
 
-## Reference review
+- Direct source reads were verified with an ordinary User-Agent after previous unadorned requests failed.
+- Current local search, categories, sorting and pagination operate on this bounded source snapshot, not the entire live catalogue. This is stated in the interface.
+- Full-source keyword search uses https://www.cnfanssp.com/search.html?keywords=...&channelid=2.
+- Source keyword-plus-price-sort previously returned unrelated items. Do not assume that endpoint is correct.
+- Source raw prices are displayed as CNY without inventing a USD exchange rate. Earlier source browser views showed 99 in search and USD 13.64 in detail; reconcile currency semantics before production.
+- No upstream image-search endpoint or warehouse QC feed has been verified. Preview image-search and QC sections explicitly state unavailable/pending; seller photos are never called QC.
+- Source sync command: `npm run sync:catalog`. It fails rather than inventing records when insufficient valid data is returned.
 
-Reference: https://kakobuypicklist.com/ (reviewed 2026-10-20).
+## Preview implemented
 
-Observed structure:
-- Light background, compact navigation with brand, language picker and search.
-- SEO headline and primary search, category links, real product listings and supporting explanation.
-- Dedicated spreadsheet page with category and sorting controls.
-- Dedicated image-search page.
-- 24 language choices with independent URL prefixes; English at the root and Dutch at /nl/.
-- Product details distinguish seller images from QC references where present.
+- Homepage: light warm background, official LoloBuy mark/favicon, SEO heading, search, category filters, 16 products per page, three-step buying explanation, four original guide cards and footer.
+- Independent routes: `/spreadsheet/`, `/how-it-works/`, `/guides/`, `/faq/`, `/image-search/`, four guide articles and 48 product detail pages.
+- English at `/`; Dutch at `/nl/`. Equivalent page inventory, real IDs and core copy. Same-page language switch retains query/category/sort state.
+- 116 static pages total. Mobile two-column catalogue and compact hero; no separate mobile catalogue.
+- Price sorting uses source numerical prices; most viewed uses source view counts. No fabricated popularity/rating labels.
+- Buying CTAs open the exact original Weidian product in LoloBuy; no purchase/payment was made.
+- Noindex/nofollow and robots disallow on the temporary preview. Preview is not an SEO launch.
+- Preview project: `appgprj_6ad708d85ff08191b10a1d2c8a9d3cf1`.
+- Preview URL: https://lolobuy-nl-preview.hehaize88.chatgpt.site
+- Public access verified by the hosting access result; deployment succeeded on 2026-10-20.
+- Preview version: 1. Deployment ID: `appgdep_6ad70cbea9ec819184b0921c799bde82`.
+- Preview source commit: `9bab6a5b9e9b62bb1b67072fd497075c155d0100`.
 
-Use this as a layout and interaction reference. Do not copy Kakobuy branding, product records or unsupported claims.
+## Validation
 
-## Multilingual plan
+Astro build generated 116 pages successfully. All 48 records have distinct source record IDs and matching Weidian IDs in their purchase links. Browser checks covered desktop homepage, 390px English/Dutch layout, source image loading, category filter (8 hoodies), ascending price order, keyword search, product URL and same-product language switching.
 
-Proposed full language set matching the reference:
-en, de, es, fr, it, pl, pt, ro, sv, nl, da, fi, el, cs, hu, bg, sk, hr, sl, lt, lv, et, ga, mt.
+Managed preview uses `server: { host: true, port: 4173 }` in Astro config. CLI flags alone did not bind correctly in the supervisor. Keep this compatibility repair.
 
-- English at `/`; Dutch at `/nl/`; other languages at their corresponding prefixes.
-- Put English and Dutch prominently in the selector. Do not force language changes based on IP.
-- Language switching stays on the equivalent page and retains product ID, category, valid sorting and pagination state.
-- Translate navigation, controls, homepage prose, guide/FAQ/article content, titles and descriptions.
-- Use one upstream product data set for every language. Preserve source identifiers, product images, factual specifications and currency.
-- Do not publish partial translations as if complete; translation coverage is a release check.
-- Correct HTML lang, self-canonical URLs, reciprocal hreflang and x-default.
-- Indexable localized pages are generated as HTML, not only translated by a client-side widget.
-- Preserve the same article inventory and essential meaning across locales.
+## SEO and multilingual plan
 
-## Page and mobile plan
+Reference reviewed: https://kakobuypicklist.com/ . Follow its broad information hierarchy without copying its branding/inventory or unverified claims.
 
-Routes: /, /spreadsheet/, /categories/, /finds/, /guide/, /qc/, /shipping/, /faq/, /articles/, and individual articles. Implement product details only against verified source records.
-Homepage focus: "lolobuy spreadsheet"; supporting intents: finds, links, buying guide, QC and shipping.
-Mobile: compact top section, two-column products, 16 products per catalog page, no horizontal overflow, latest 4–6 article cards on homepage.
-Use actual source images only; keep missing-data states explicit.
+Primary keyword: `lolobuy spreadsheet`. Supporting intents: lolobuy finds, links, sneakers/clothing/accessories, how to use lolobuy, buying guide, QC photos and shipping costs. No measured search-volume claims; see docs/KEYWORDS_AND_DECISIONS.md.
 
-## Upstream findings from preliminary cnfanssp checks
+Full proposed language plan remains: en, de, es, fr, it, pl, pt, ro, sv, nl, da, fi, el, cs, hu, bg, sk, hr, sl, lt, lv, et, ga, mt. **Only English/Dutch are implemented and exposed in this preview.** Expand with full page translations, canonical/hreflang/x-default, same article inventory and shared product data. Never present fallback English as completed translation.
 
-- Browser reads work, but direct network reads previously returned HTTP 403. CI/server access is not yet verified.
-- Public directory: /AllProducts/
-- Public search was exercised at /search.html?keywords=Jersey-60&channelid=2.
-- Sample record 6667 initially displayed Weidian item 7632511460 and USD 13.64; search displayed $99. Currency interpretation must be verified.
-- Price sorting after a keyword search displayed unrelated items despite retaining the keyword in the URL. Do not blindly copy this behavior.
-- The inspected directory had no image-upload control; this does not prove that no upstream visual-search service exists.
-- No explicit QC feed has been verified; seller gallery images must not be labeled as QC.
-- No backend/admin operations are requested.
+## Next after owner reviews the public preview
 
-## Deployment constraints
-
-GitHub is confirmed as the code destination. GitHub Pages supports SSG, not an Astro SSR runtime.
-Use an isolated project build root `lolobuysheet-nl/`; the repository contains multiple domains, so do not replace the repository-wide Pages deployment with this site.
-After source verification choose:
-1. SSG pages plus the confirmed upstream browser-accessible dynamic services; or
-2. Pre-rendered SEO pages plus an Astro server adapter where a server proxy is needed.
-A production runtime/domain binding has not yet been chosen or created in this task.
-No public claim of a completed deployment until the build and real URL have been verified.
-
-## Next actions
-
-1. Resolve cnfanssp.com vs cnfansge.com.
-2. Verify source data, search/sorting/pagination, image search, QC, currency and image paths without creating a new database.
-3. Implement the Astro frontend and complete localization.
-4. Build, check links and mobile layout, then provide a preview.
-5. Deploy from this domain directory to the agreed runtime, verify the custom domain, sitemap and robots.
-6. Update this file after every material decision or implementation change.
+1. Apply visual/content feedback.
+2. Confirm final source and usable full catalogue/search/image-search/QC contracts. No backend/admin build is required.
+3. Choose SSG refresh plus upstream APIs or Astro SSR/proxy only as required by those contracts. Production feature integration is still outstanding.
+4. Prepare production build in this GitHub domain folder; GitHub is code hosting, GitHub Pages itself cannot run SSR. Do not overwrite repository-wide Pages settings for other sites.
+5. When owner approves, deploy the selected runtime and bind lolobuysheet.nl through Cloudflare. Domain/DNS were not changed during preview work.
+6. Change site canonical origin, publish sitemap/robots, finish agreed localization and verify production links before allowing indexing.
+7. Update this memory at each material decision; preserve real status and limitations.

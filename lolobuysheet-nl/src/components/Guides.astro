@@ -1,0 +1,6 @@
+---
+import {text,pathFor,articleSlugs,type Language} from '../data/i18n';
+import Icon from './Icon.astro';
+const {lang='en'}=Astro.props;const t=text[lang as Language];
+---
+<section class="guides-section container" id="guides"><div class="section-heading"><div><p class="eyebrow">{t.guideLabel}</p><h2>{t.guides}</h2><p>{t.guidesSub}</p></div><a class="text-link" href={pathFor(lang,'guides')}>{t.allGuides}<Icon name="arrow" size={17}/></a></div><div class="guide-grid">{articleSlugs.map((s,i)=><a class={`guide-card guide-${i}`} href={pathFor(lang,`guides/${s}`)}><div class="guide-illustration"><span class="guide-number">0{i+1}</span><span class="guide-icon"><Icon name={['book','camera','bag','shirt'][i]} size={48}/></span><span class="guide-art-label">LOLOBUY<br/>{lang==='nl'?'VELDNOTITIES':'FIELD NOTES'}</span></div><div class="guide-card-body"><p class="eyebrow">{t.articleTags[i]}</p><h3>{t.articleTitles[i]}</h3><span class="text-link">{t.read}<Icon name="arrow" size={16}/></span></div></a>)}</div></section>

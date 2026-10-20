@@ -1,0 +1,17 @@
+---
+import '../styles/global.css';
+import {text,pathFor,type Language} from '../data/i18n';
+import Icon from '../components/Icon.astro';
+const {lang='en',page='',title='LoloBuy Spreadsheet — Discover Your Next Find',description}=Astro.props;
+const t=text[lang as Language], p=(path='')=>pathFor(lang,path);
+const canonical=new URL(p(page),Astro.site).href;
+const links=['spreadsheet','how-it-works','guides','faq'];
+---
+<!doctype html><html lang={lang}><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><meta name="description" content={description||t.intro}/><meta name="robots" content="noindex,nofollow"/><meta name="theme-color" content="#fbf9f5"/><link rel="icon" type="image/png" href="/brand/favicon.png"/><link rel="canonical" href={canonical}/>{(['en','nl'] as Language[]).map(l=><link rel="alternate" hreflang={l} href={new URL(pathFor(l,page),Astro.site).href}/>)}<link rel="alternate" hreflang="x-default" href={new URL(pathFor('en',page),Astro.site).href}/><meta property="og:title" content={title}/><meta property="og:description" content={description||t.intro}/><meta property="og:type" content="website"/><title>{title}</title></head><body>
+<a class="skip-link" href="#main">{lang==='nl'?'Naar de inhoud':'Skip to content'}</a>
+<div class="preview-bar"><span class="preview-dot"></span><strong>{t.preview}</strong><span class="preview-note">{t.previewNote}</span><span class="preview-url">lolobuysheet.nl ↗</span></div>
+<header class="site-header"><div class="container header-inner"><a class="brand" href={p()} aria-label="LoloBuy Spreadsheet home"><img src="/brand/lolobuy.svg" alt="LoloBuy" width="128" height="30"/><span class="brand-divider"></span><span class="brand-sheet">sheet<span class="brand-point">.</span></span></a><nav class="main-nav" aria-label="Main">{links.map((l,i)=><a href={p(l)} class:list={{active:page===l}}>{t.nav[i]}</a>)}</nav><div class="header-actions"><div class="language-switch"><Icon name="globe" size={17}/><select aria-label={t.language} id="language-select">{(['en','nl'] as Language[]).map(l=><option value={pathFor(l,page)} selected={lang===l}>{l==='en'?'EN':'NL'}</option>)}</select></div><a class="button button-small" href="https://www.lolobuy.com/index" target="_blank" rel="noopener noreferrer nofollow">{t.register}<Icon name="external" size={15}/></a></div></div></header>
+<main id="main"><slot/></main>
+<footer><div class="container footer-top"><div><a class="brand" href={p()}><img src="/brand/lolobuy.svg" alt="LoloBuy" width="128" height="30"/><span class="brand-sheet">sheet.</span></a><p>{t.footer}</p></div><nav aria-label="Footer">{['spreadsheet','how-it-works','image-search','faq'].map((s,i)=><a href={p(s)}>{t.footerLinks[i]}</a>)}</nav></div><div class="container footer-bottom"><span>© 2026 lolobuysheet.nl</span><span>{t.independent}</span><span>EN / NL</span></div></footer>
+<script>document.querySelector('#language-select')?.addEventListener('change',e=>{const target=e.target as HTMLSelectElement;window.location.href=target.value+window.location.search});</script>
+</body></html>
