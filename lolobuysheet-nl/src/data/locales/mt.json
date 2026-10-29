@@ -20,7 +20,7 @@
     "photo": "Tfittxija bl-immaġni",
     "popular": "Esplora:",
     "tagline": "Katalgu wieħed. L-iskoperta li jmiss tiegħek.",
-    "source": "Prodotti minn cnfanssp.com",
+    "source": "Skoperta ta’ prodotti u gwidi tax-xiri",
     "independent": "Sit indipendenti biex tiskopri prodotti ta’ LoloBuy",
     "browse": "Esplora l-ispreadsheet",
     "browseSub": "Ftit inqas tfittxija. Ħafna aktar sejbiet.",
@@ -56,7 +56,7 @@
     "empty": "L-ebda prodott ma jaqbel mat-tfittxija.",
     "reset": "Neħħi l-filtri",
     "sourceSearch": "Fittex fil-katalgu sħiħ tas-sors",
-    "snapshot": "Katalgu dirett minn cnfanssp.com. Il-prezzijiet f’CNY ma jinkludux it-trasport u t-tariffi tas-servizz. Iċċekkja l-għażliet attwali u l-kwotazzjoni finali fuq LoloBuy.",
+    "snapshot": "Il-prezzijiet tal-oġġetti f’CNY ma jinkludux it-tbaħħir jew it-tariffi tas-servizzi. Iċċekkja l-għażliet attwali u l-kwotazzjoni finali fuq LoloBuy.",
     "howTitle": "Mis-sejba sal-ftuħ tal-pakkett.",
     "howSub": "Ġdid għal LoloBuy? Ibda b’dawn it-tliet passi.",
     "steps": [
@@ -83,7 +83,7 @@
     "cta": "Sibt il-favorit li jmiss tiegħek?",
     "ctaSub": "Iftaħu fuq LoloBuy u agħmlu tiegħek.",
     "ctaButton": "Esplora l-prodotti kollha",
-    "footer": "Sit indipendenti għall-iskoperta tal-prodotti. M’aħniex is-sit uffiċjali ta’ LoloBuy. Il-listings u r-ritratti ġejjin minn cnfanssp.com. Ix-xiri jitlesta fuq LoloBuy.",
+    "footer": "Sit indipendenti għall-iskoperta ta’ prodotti. M’aħniex is-sit uffiċjali ta’ LoloBuy. Ix-xiri jitlesta fuq LoloBuy.",
     "footerLinks": [
       "Spreadsheet",
       "Gwida għax-xiri",
@@ -102,7 +102,7 @@
     "photoTitle": "Sibu b’ritratt.",
     "photoIntro": "Uża l-katalgu tas-sors biex issib u tqabbel prodotti.",
     "photoState": "Tfittxija bl-immaġni fis-sors",
-    "photoNote": "Ma ġiex verifikat servizz pubbliku ta’ tfittxija bl-immaġni fuq cnfanssp.com. Ma naċċettawx uploads ta’ ritratti sakemm ikun disponibbli s-servizz tas-sors.",
+    "photoNote": "Bħalissa m’hemmx servizz appoġġjat ta’ tfittxija bl-immaġni konness. Minflok, fittex fil-katalgu b’kelma ewlenija jew kategorija.",
     "browseInstead": "Ibbrawżja prodotti",
     "faqTitle": "LoloBuy: tweġibiet qabel tordna.",
     "faqIntro": "Riċerka mill-paġni uffiċjali tal-għajnuna ta’ LoloBuy. Fejn il-paġni jvarjaw, it-tweġiba tispjega x’għandu jiġi ċċekkjat.",
@@ -124,8 +124,8 @@
     "jump": "Mur fil-paġna",
     "go": "Mur",
     "articlesLabel": "Artikli",
-    "articlesTitle": "Tagħrif dettaljat dwar ix-xiri fuq LoloBuy.",
-    "articlesIntro": "Għaxar gwidi prattiċi bbażati fuq l-għajnuna uffiċjali ta’ LoloBuy. Sib prodotti, iċċekkja QC, ippjana baġit u trasport b’informazzjoni aktar ċara.",
+    "articlesTitle": "Gwidi LoloBuy: ordnijiet, QC, tbaħħir u ħlasijiet",
+    "articlesIntro": "Gwidi prattiċi LoloBuy għal links tal-prodotti, kontrolli fil-maħżen, spejjeż tat-tbaħħir u deċiżjonijiet dwar il-ħlas. Agħżel il-gwida għall-pass li jmiss.",
     "articleSources": "Sorsi uffiċjali",
     "reviewed": "Rivedut fl-20 ta’ Ottubru 2026",
     "readArticle": "Aqra l-artiklu",
@@ -149,7 +149,17 @@
     "nextFind": "IS-SEJBA LI JMISS HI TIEGĦEK.",
     "liveLabel": "Aġġornat mis-sors",
     "faqCount": "tweġiba riċerkata",
-    "catalogue": "Katalgu"
+    "catalogue": "Katalgu",
+    "homeTitle": "Spreadsheet LoloBuy u Gwidi tax-Xiri | LoloBuy Sheet",
+    "catalogTitle": "Esplora Prodotti LoloBuy: Ħwejjeġ, Żraben Sportivi u Aċċessorji",
+    "catalogDescription": "Esplora prodotti LoloBuy skont il-kategorija, fittex fil-katalgu kollu u qabbel il-prezzijiet. Iċċekkja d-dettalji qabel tiftaħ il-link tax-xiri LoloBuy li taqbel.",
+    "guidesTitle": "Gwidi tax-Xiri LoloBuy: Minn Links tal-Prodotti sal-Kunsinna",
+    "guideMetaTitle": "Kif Jaħdem LoloBuy: Ordnijiet, QC u Tbaħħir Internazzjonali",
+    "shippingNav": "Tbaħħir",
+    "reviewedLabel": "Aġġornat",
+    "nextStep": "Kompli għall-pass li jmiss",
+    "priorityTitle": "Qabel tordna jew tibgħat",
+    "priorityIntro": "Iċċekkja l-prodott, eżamina l-evidenza tal-maħżen u qabbel l-ispiża sħiħa tal-pakkett."
   },
   "faqs": [
     {
@@ -450,7 +460,9 @@
         "qc"
       ],
       "readingMinutes": 3,
-      "wordCount": 447
+      "wordCount": 627,
+      "published": "2026-10-20",
+      "modified": "2026-10-29"
     },
     {
       "slug": "how-to-order-on-lolobuy",
@@ -507,6 +519,35 @@
             "Il-proċess uffiċjali jitlob li tagħżel oġġetti maħżuna, timla l-kunsinna u tagħżel mir-rotot disponibbli. Irrevedi d-destinazzjoni, ir-restrizzjonijiet, l-ippakkjar u d-depożitu flimkien. Prodott mixtri mhux awtomatikament pakkett internazzjonali lest.",
             "It-tariffa finali tista’ tinbidel wara l-ippakkjar u l-kejl loġistiku. Ara r-rekord għal aġġustamenti jew talbiet ta’ konferma. Wara li jintbagħat, uża t-taqsima tal-pakketti għat-traċċar, żomm ir-referenzi u ċċekkja l-kontenut minnufih mal-wasla."
           ]
+        },
+        {
+          "heading": "Oħloq rekord tal-ewwel ordni li tista’ terġa’ tuża",
+          "paragraphs": [
+            "Qabel tibgħat l-ewwel ordni, ħejji rekord qasir bil-URL tal-bejjiegħ, it-titlu tal-oġġett, l-għażla eżatta, il-kwantità, ir-referenza tat-tabella tad-daqsijiet u l-mistoqsijiet mhux imwieġba. Żomm il-kliem oriġinali tal-għażla tal-bejjiegħ meta traduzzjoni tista’ tkun ambigwa. Għal sett, identifika l-komponenti mistennija fil-pakkett. Dan ir-rekord jippermetti tqabbil waqt il-ħlas u aktar tard fil-maħżen, minflok ma tiddependi fuq stampa żgħira li tiftakar.",
+            "Pereżempju, ordni ta’ ħwejjeġ tista’ tispeċifika sweatshirt wieħed blu skur fid-daqs M tal-bejjiegħ, b’wisa’ partikolari tas-sider meta mqiegħed ċatt kif murija fit-tabella. Din hija istruzzjoni aktar ċara milli titlob flokk blu medju. Jekk it-tabella jew l-isem tal-kulur mhumiex ċari, staqsi qabel tixtri. Talba preċiża ttejjeb il-komunikazzjoni iżda ma tikkonfermax li l-bejjiegħ għandu stokk jew li l-ilbies se joqgħod sew."
+          ]
+        },
+        {
+          "heading": "Issepara problema tal-prodott minn problema tal-ħlas",
+          "paragraphs": [
+            "Jekk l-oġġett importat huwa ħażin jew nieqsa għażla meħtieġa, irranġa l-listing qabel tħallas. Uża s-sors oriġinali biex tara jekk il-bejjiegħ bidilx l-offerta jew jekk l-importazzjoni ħallietx informazzjoni barra. Ordni manwali, meta tkun offruta, għandha żżomm id-dettalji reali tal-prodott. Li tbiddel l-identifikaturi jew tagħżel għażla bejn wieħed u ieħor simili ma jsolvix ordni inċerta u jista’ jagħmilha aktar diffiċli tiddokumenta nuqqas ta’ qbil aktar tard.",
+            "Jekk l-oġġett huwa korrett iżda l-istatus tal-ħlas mhuwiex ċar, qabbel il-kont, il-bilanċ u r-rekord tal-fornitur tal-ħlas. Żomm ir-referenza tat-tranżazzjoni u l-iżball viżibbli qabel terġa’ tipprova. Paġna li għadha qed titgħabba ma tipprovax waħedha li l-ħlas falla. Itlob lill-appoġġ jiċċara debitu ambigwu minflok toħloq diversi tentattivi li jikkoinċidu. Żomm l-identità tal-prodott, l-istatus tal-ħlas u t-tluq mingħand il-bejjiegħ bħala punti separati għax is-suċċess ta’ stadju ma jikkonfermax dak ta’ wara."
+          ]
+        },
+        {
+          "heading": "Ippjana d-deċiżjoni tal-maħżen qabel tissottometti pakkett",
+          "paragraphs": [
+            "Iddeċiedi liema evidenza għandek bżonn qabel jaslu l-oġġetti. Ilbies fejn id-daqs huwa importanti jista’ jeħtieġ kejl speċifiku, filwaqt li sett ta’ aċċessorji jista’ jeħtieġ dehra ċara tal-komponenti kollha. Iċċekkja s-servizz ta’ spezzjoni disponibbli u l-limiti tiegħu. Meta r-ritratti jkunu lesti, qabbilhom mar-rekord tal-ordni u elenka kull dettall mhux solvut. Itlob dehra jew spjegazzjoni partikolari minflok ġudizzju ġenerali li l-oġġett jidher tajjeb.",
+            "Iċċekkja fil-pront il-kundizzjonijiet tar-ritorn waqt li l-oġġetti għadhom fil-maħżen. Il-perjodu tal-ħażna u t-tieqa tar-ritorn tal-bejjiegħ huma skadenzi differenti. Li tistenna biex tgħaqqad diversi oġġetti jista’ jħalli oġġett mhux mixtieq barra l-perjodu tar-ritorn tiegħu. Jekk trid tibdil jew ritorn, staqsi dwar l-eliġibbiltà u l-ispejjeż mistennija qabel iddaħħlu f’pakkett internazzjonali. Tassumix li pakkett jista’ jitwaqqaf wara kull pass sussegwenti tal-ipproċessar."
+          ]
+        },
+        {
+          "heading": "Temm l-ordni b’rekord sħiħ tal-ispejjeż",
+          "paragraphs": [
+            "Żomm l-oġġetti u l-kunsinna domestika, is-servizzi magħżula, il-merkanzija internazzjonali u l-ħlasijiet fid-destinazzjoni f’oqsma separati. Għodd tariffa darba biss u rreġistra l-munita tagħha. Hekk kif l-ordni timxi ’l quddiem, ibdel l-istimi b’kontijiet ikkonfermati, waqt li żżomm iċ-ċifri ta’ qabel għat-tqabbil. Jekk it-tbaħħir jinbidel wara l-ippakkjar, rabat l-aġġustament mar-referenza tal-pakkett u mal-kejl. Dan jispjega l-ispiża sal-kunsinna aħjar minn total wieħed mingħajr data.",
+            "Wara l-kunsinna, qabbel il-kontenut mal-lista oriġinali u żomm evidenza tal-ippakkjar jekk hemm problema. Uża l-kanal ta’ appoġġ xieraq għall-ordni jew il-pakkett, u ddeskrivi l-kwistjoni u r-rekords li jorbtuha max-xiri tiegħek. Żomm id-dati tax-xiri, il-wasla fil-maħżen, it-tluq u l-kunsinna bħala stadji separati. Dawn l-osservazzjonijiet jistgħu jgħinu fl-ordni li jmiss mingħajr ma jsiru wegħda li pakkett ieħor isegwi l-istess ħinijiet.",
+            "Qabel tagħlaq ir-rekord, identifika liema passi kellhom bżonn kjarifika u liema suppożizzjonijiet inbidlu. Jekk link ta’ prodott kellha bżonn dħul manwali, żomm it-test tal-għażla kkonfermata għal referenza futura. Jekk l-istima tat-tbaħħir inbidlet, żomm il-kejl tal-kaxxa ħdejn l-istima oriġinali. In-noti għandhom jiddeskrivu l-ordni tiegħek biss. Meta terġa’ tordna, iċċekkja l-listing, il-ħlas u l-kundizzjonijiet tat-tbaħħir attwali, anki jekk l-oġġett jidher identiku. Xiri ta’ suċċess preċedenti ma jirriżervax stokk jew iżomm l-istess prezz, servizz jew kundizzjonijiet tal-bejjiegħ."
+          ]
         }
       ],
       "checklist": [
@@ -523,8 +564,10 @@
         "qc",
         "freight-balance"
       ],
-      "readingMinutes": 3,
-      "wordCount": 412
+      "readingMinutes": 6,
+      "wordCount": 1257,
+      "published": "2026-10-20",
+      "modified": "2026-10-29"
     },
     {
       "slug": "lolobuy-qc-photos",
@@ -581,6 +624,35 @@
             "Aqsam ir-riżultati f’konfermati, mhux ċari u inaċċettabbli. Itlob evidenza għal punt mhux ċar. Jekk l-oġġett jidher differenti mill-ordni, uża l-appoġġ jew ir-ritorn rilevanti qabel it-trasport internazzjonali. Żomm deskrizzjoni qasira u r-ritratti li juru l-problema.",
             "Ritratti ma jistgħux jistabbilixxu kull proprjetà tal-materjal, kumdità, durabilità jew funzjoni interna. L-approvazzjoni tad-dehra hija deċiżjoni aktar limitata. Aqra r-ritorni waqt li l-oġġett għadu fil-maħżen; QC tajjeb mhuwiex wegħda dwar id-dwana jew il-kunsinna."
           ]
+        },
+        {
+          "heading": "Ibdel kontroll tal-ilbies f’talba ċara",
+          "paragraphs": [
+            "Ibda bil-kejl li jinfluwenza kif joqgħod l-ilbies minflok titlob lill-maħżen jiġġudika jekk id-daqs hux tajjeb għalik. Għal sweatshirt, jista’ jkollok bżonn wisa’ tas-sider meta ċatt, tul tal-ġisem u tul tal-kmiem imkejla mill-istess punti tat-tabella tal-bejjiegħ. Speċifika l-metodu u l-unità. Tikketta tad-daqs hija evidenza utli tal-identità, iżda ma tissostitwixxix il-kejl tal-ilbies.",
+            "Jekk it-tabella tuża ċ-ċirkonferenza tal-ġisem u r-ritratt juri wisa’ ċatta, tqabbilx iż-żewġ numri direttament. Iċċekkja fejn jibda u jispiċċa t-tejp, jekk l-ilbies hux imqiegħed ċatt u jekk in-numru jistax jinqara. Id-dawl u l-perspettiva jistgħu wkoll ibiddlu kif jidher kulur. Meta l-kulur huwa importanti, itlob dehra aktar ċara, waqt li tagħraf li ritratt fuq skrin ma jistax jiggarantixxi l-isfumatura eżatta fir-realtà."
+          ]
+        },
+        {
+          "heading": "Eżamina żraben u aċċessorji mingħajr stqarrijiet eċċessivi",
+          "paragraphs": [
+            "Għaż-żraben, qabbel iż-żewġ żraben, il-marki viżibbli tad-daqs, il-forma ġenerali u ż-żoni relatati mat-tħassib tiegħek. Jekk jeħtieġ kejl jew dettall mill-qrib, identifikah espliċitament. Għal borża, iċċekkja l-mankijiet, l-għeluq u l-komponenti mistennija fejn jidhru. Għal aċċessorju b’diversi partijiet, agħmel lista ta’ dak li għandu jkun inkluż u qabbelha mar-ritratti minflok tassumi li kaxxa magħluqa fiha kollox.",
+            "Difett viżibbli fil-ħjata jew fil-wiċċ jista’ jiġi dokumentat b’ritratt mill-qrib u l-post tiegħu. Il-kostruzzjoni moħbija, il-kumdità waqt l-użu, il-kompożizzjoni tal-materjal u d-durabilità fit-tul normalment jeħtieġu evidenza differenti. Tqisx ritratt tal-maħżen bħala ċertifikat ta’ awtentiċità jew test professjonali tal-funzjoni. Għal prodotti ssiġillati jew elettronika speċjalizzata, aqra l-esklużjonijiet tal-ispezzjoni qabel tiddeċiedi jekk is-servizz disponibbli jwieġeb it-tħassib reali tiegħek."
+          ]
+        },
+        {
+          "heading": "Żomm l-inċertezza separata minn difett ikkonfermat",
+          "paragraphs": [
+            "Uża tliet stati sempliċi fin-noti: qbil ikkonfermat, hemm bżonn aktar evidenza, u nuqqas ta’ qbil osservat. Pereżempju, tikketta tad-daqs li ma tinqrax tidħol fit-tieni stat sakemm ikun hemm ritratt aktar ċar; tikketta b’daqs ċar iżda differenti tidħol fit-tielet. Dan jevita li ritratt nieqes jiġi deskritt bħala difett ippruvat, u li stampa ġenerali attraenti taħbi mistoqsija mhux imwieġba.",
+            "Għal kull punt mhux solvut, irreġistra n-numru tal-ordni, l-immaġni rilevanti, il-mistoqsija preċiża u l-azzjoni li jmiss. Meta tasal tweġiba, aġġorna dak il-punt minflok tissostitwixxi r-rekord kollu b’approvazzjoni vaga. Jekk għad hemm nuqqas ta’ qbil, staqsi dwar ir-rimedju applikabbli waqt li l-oġġett għadu fil-maħżen. Żomm flimkien il-kunsens tal-bejjiegħ, ir-rekwiżiti tar-ritorn u t-tariffi. Li titlob ritorn mhux l-istess bħal li dan ikun approvat."
+          ]
+        },
+        {
+          "heading": "Ħu d-deċiżjoni qabel l-iskadenza li jmiss",
+          "paragraphs": [
+            "Eżamina l-oġġett malajr meta l-informazzjoni tal-maħżen tkun disponibbli. Il-gwida tar-ritorn ta’ LoloBuy tagħmel l-eliġibbiltà dipendenti fuq l-ordni, il-bejjiegħ u l-ħin. Perjodu ġenerali ta’ ħażna ma jestendix it-tieqa tar-ritorn. Aqra l-iskadenza u l-kundizzjonijiet applikabbli għall-oġġett, u żomm l-ippakkjar oriġinali meta jista’ jkun meħtieġ. Tdewwimx mistoqsija meħtieġa sempliċiment għax oġġetti oħra fil-pakkett ippjanat għadhom ma waslux.",
+            "Meta tapprova oġġett għat-tbaħħir, irreġistra x’ġie ċċekkjat fil-fatt u x’għadu mhux magħruf. Pereżempju, l-identità u l-kejl viżibbli jistgħu jkunu kkonfermati filwaqt li l-kumdità u d-durabilità jibqgħu mhux ittestjati. Żomm din il-konklużjoni limitata mar-referenza tal-oġġett. Irrivedi kwalunkwe tħassib mhux solvut qabel tissottometti pakkett, speċjalment jekk tibdil fl-ippakkjar ineħħi tikketti jew ippakkjar oriġinali rilevanti għar-rekord. Dan joħloq traċċa utli tad-deċiżjoni mingħajr ma jippretendi li QC jelimina kull riskju tax-xiri.",
+            "Żomm l-immaġnijiet oriġinali u nota qasira tad-deċiżjoni flimkien minflok issalva biss dettall maqtugħ. L-immaġni aktar wiesgħa torbot it-tħassib mal-oġġett it-tajjeb, u r-referenza tal-ordni torbot ir-ritratt max-xiri tiegħek. Jekk immaġni oħra ssolvi l-mistoqsija aktar tard, żomm it-tnejn u għid x’inbidel. Evita li taqsam informazzjoni personali tal-ordni pubblikament. Rekord utli huwa osservazzjoni speċifika b’sors traċċabbli, mhux klassifikazzjoni mingħajr bażi jew stqarrija li kull prodott tal-bejjiegħ ġie ċċekkjat."
+          ]
         }
       ],
       "checklist": [
@@ -594,15 +666,18 @@
         "qc",
         "photos",
         "service",
-        "sizing"
+        "sizing",
+        "returns"
       ],
-      "readingMinutes": 3,
-      "wordCount": 439
+      "readingMinutes": 6,
+      "wordCount": 1256,
+      "published": "2026-10-20",
+      "modified": "2026-10-29"
     },
     {
       "slug": "lolobuy-shipping-costs",
-      "title": "Spejjeż tat-trasport LoloBuy: qabbel il-pakkett kollu",
-      "description": "Ifhem il-piż stmat, reali u volumetriku, u qabbel rotot bl-istess destinazzjoni, kontenut u ppakkjar.",
+      "title": "Spejjeż tat-tbaħħir LoloBuy: kalkulatur, piż u tariffi",
+      "description": "Uża l-kalkulatur tat-tbaħħir LoloBuy, qabbel piż reali u volumetriku, u iċċekkja l-ippakkjar, l-aġġustamenti tat-tbaħħir u l-baġit sħiħ tal-pakkett.",
       "keyword": "kalkulatur tat-trasport LoloBuy",
       "category": "Trasport",
       "summary": "Paragun utli jibda b’pakkett definit ċar. Din il-gwida tispjega d-dettalji meħtieġa u l-kontrolli; mhix kwotazzjoni diretta.",
@@ -655,6 +730,35 @@
             "Il-gwida tal-ħlas addizzjonali tgħid li l-istima tiġi rrikonċiljata mat-tariffa reali tal-fornitur loġistiku. Dan jista’ jfisser rifużjoni ta’ ħlas żejjed jew talba għal aktar ħlas. Aqra l-messaġġi u wieġeb it-talbiet marbuta mal-vjeġġ.",
             "Żomm l-istima inizjali, il-kejl finali fatturabbli, is-servizzi u l-aġġustament flimkien. Dan jagħmel id-differenza aktar faċli biex tifhimha. Ippjana spejjeż possibbli tad-destinazzjoni separatament u ara t-total finali qabel tqis l-ordni lesta."
           ]
+        },
+        {
+          "heading": "Uża l-kalkulatur uffiċjali b’linja bażi salvata",
+          "paragraphs": [
+            "Iftaħ l-istimatur attwali tat-tbaħħir LoloBuy u agħżel id-destinazzjoni reali. Daħħal il-kontenut, il-piż u d-dimensjonijiet mitluba bl-unitajiet murija. Issejvja d-data, l-inputs, is-servizz magħżul u l-munita mar-riżultat. Jekk l-oġġetti għadhom ma waslux fil-maħżen, immarka l-kejl bħala stima. Dan huwa importanti għax piż approssimattiv tal-bejjiegħ ma jiddeskrivix kaxxa lesta bl-ippakkjar estern tagħha.",
+            "Irreġistra linja bażi qabel tbiddel għażla tal-ippakkjar jew tneħħi oġġett. Għal kull alternattiva, ibdel varjabbli waħda u żomm l-oħrajn fejn possibbli. Jekk rotta tisparixxi meta tinbidel il-kategorija tal-oġġetti, dik ir-restrizzjoni hija parti mir-riżultat; li tagħżel kategorija mhux eżatta għal kwotazzjoni irħas ma jagħmilx ir-rotta adattata. Qabbel biss servizzi offruti għall-oġġetti u d-destinazzjoni reali, u żomm ċara kull mistoqsija mhux imwieġba dwar l-eliġibbiltà."
+          ]
+        },
+        {
+          "heading": "Oħloq tqabbil li jinkludi kull pakkett",
+          "paragraphs": [
+            "Uża ringiela waħda għal kull xenarju sħiħ tat-tbaħħir. Irreġistra l-kontenut, in-numru ta’ pakketti, il-piż reali, id-dimensjonijiet, is-servizzi tal-ippakkjar, ir-rotta u t-total. Għal għażla ta’ żewġ pakketti, għodd iż-żewġ kwotazzjonijiet sħaħ qabel tqabbilhom ma’ vjeġġ wieħed magħqud. Tariffi minimi separati jistgħu jbiddlu r-riżultat. Numru aktar baxx għall-ewwel pakkett biss ma jurix li t-tqassim tal-ordni kollha huwa orħos.",
+            "Tqabbil sinifikanti jirreġistra wkoll differenzi fil-protezzjoni u fis-servizz. Xenarju jista’ jżomm kaxxa taż-żraben u ieħor ineħħiha; wieħed jista’ jinkludi rinfurzar li ieħor iħalli barra. Ikteb dawn il-bidliet biex l-ammont ma jaħbix riżultat differenti. Jekk il-kejl finali mhuwiex disponibbli, uża t-tqabbil għall-ippjanar u erġa’ agħmlu wara li l-informazzjoni tal-ippakkjar tkun ikkonfermata. Tibdilx tfaddil stmat f’kont finali garantit."
+          ]
+        },
+        {
+          "heading": "Eżamina stima mibdula linja b’linja",
+          "paragraphs": [
+            "Jekk it-tbaħħir finali huwa differenti mill-istima salvata, l-ewwel qabbel id-destinazzjoni, l-oġġetti magħżula, il-piż reali u d-dimensjonijiet tal-kaxxa. Imbagħad iċċekkja r-rotta, l-inkrement tal-kont, is-servizzi fakultattivi u l-munita. Kaxxa esterna itqal, oġġett goff jew servizz differenti jistgħu jispjegaw bidla anki meta l-lista tal-prodotti tidher simili. Staqsi liema kejl jew linja nbidlet minflok tassumi li kull differenza hija l-istess tariffa.",
+            "Żomm id-depożitu inizjali u kull aġġustament sussegwenti mar-referenza tal-istess pakkett. Kreditu fil-kont għal ħlas żejjed u rifużjoni lejn metodu ta’ ħlas estern huma rekords differenti. Ikkonferma fejn ġie kkreditat l-ammont jew liema ħlas supplimentari għadu dovut. Jekk l-ispjegazzjoni mhix sħiħa, żomm iż-żewġ kwotazzjonijiet u staqsi dwar l-ordni speċifika. Dan huwa aktar utli milli tqabbel it-total tiegħek ma’ pakkett mhux relatat għal destinazzjoni jew data oħra."
+          ]
+        },
+        {
+          "heading": "Żomm it-tbaħħir separat mill-baġit sal-kunsinna",
+          "paragraphs": [
+            "L-ammont tat-tbaħħir internazzjonali jista’ ma jinkludix kull ħlas marbut mal-wasla tal-oġġetti. Iċċekkja separatament ix-xiri oriġinali, il-kunsinna domestika, ix-xogħol fakultattiv fil-maħżen, it-tariffi tal-ħlas u l-ispejjeż fid-destinazzjoni. Immarka servizz inkluż b’mod ċar biex ma tgħoddux darbtejn. Ammont vojt għandu jibqa’ mistoqsija x’tissolva, mhux jinbidel fis-skiet f’żero fl-istima tal-ispiża sal-kunsinna.",
+            "Qabel tħallas, iċċekkja l-informazzjoni attwali tad-destinazzjoni u dak li s-servizz magħżul jgħid li jinkludi. Tiddeduċix it-trattament doganali jew il-protezzjoni tax-xerrej minn laqam ta’ rotta. Jekk aktar tard tippubblika eżempju tat-tbaħħir, inkludi d-data, il-kontenut, id-destinazzjoni, il-kaxxa mkejla u x’jkopri l-ammont, filwaqt li tneħħi informazzjoni personali. Każ storiku dokumentat tajjeb jgħin lill-qarrej jirrepeti t-tqabbil, iżda prezz iżolat ma jistabbilixxix ir-rata għall-pakkett tiegħu.",
+            "Folja ta’ tqabbil tista’ tibqa’ sempliċi: linja għal kull xenarju bid-data tal-kwotazzjoni, id-destinazzjoni, l-oġġetti, is-sors tal-piż, id-dimensjonijiet, ir-rotta, l-ammont u l-mistoqsijiet mhux solvuti. Żid kolonna finali għar-riżultat ikkonfermat meta jintbagħat il-pakkett. Tissostitwixxix l-istima oriġinali mingħajr ma żżomm l-inputs tagħha, għax tneħħi l-ispjegazzjoni tad-differenza. Jekk input għadu mhux magħruf, ġibu mir-rekord attwali tal-pakkett jew mill-appoġġ qabel tqabbil sod. Uża dan il-metodu għal kull pakkett ġdid minflok testendi prezz storiku wieħed għal kull xiri futur."
+          ]
         }
       ],
       "checklist": [
@@ -668,10 +772,13 @@
         "buying",
         "weight",
         "packaging",
-        "freight-balance"
+        "freight-balance",
+        "estimate"
       ],
-      "readingMinutes": 3,
-      "wordCount": 427
+      "readingMinutes": 6,
+      "wordCount": 1225,
+      "published": "2026-10-20",
+      "modified": "2026-10-29"
     },
     {
       "slug": "lolobuy-warehouse-consolidation",
@@ -746,7 +853,9 @@
         "freight-balance"
       ],
       "readingMinutes": 3,
-      "wordCount": 421
+      "wordCount": 586,
+      "published": "2026-10-20",
+      "modified": "2026-10-29"
     },
     {
       "slug": "lolobuy-sizing-guide",
@@ -819,7 +928,9 @@
         "returns"
       ],
       "readingMinutes": 3,
-      "wordCount": 423
+      "wordCount": 619,
+      "published": "2026-10-20",
+      "modified": "2026-10-29"
     },
     {
       "slug": "lolobuy-tracking-guide",
@@ -893,7 +1004,9 @@
         "freight-balance"
       ],
       "readingMinutes": 3,
-      "wordCount": 418
+      "wordCount": 601,
+      "published": "2026-10-20",
+      "modified": "2026-10-29"
     },
     {
       "slug": "lolobuy-returns-refunds",
@@ -968,7 +1081,9 @@
         "changes"
       ],
       "readingMinutes": 3,
-      "wordCount": 414
+      "wordCount": 602,
+      "published": "2026-10-20",
+      "modified": "2026-10-29"
     },
     {
       "slug": "lolobuy-order-budget",
@@ -1050,8 +1165,10 @@
         "freight-balance",
         "wholesale"
       ],
-      "readingMinutes": 3,
-      "wordCount": 464
+      "readingMinutes": 4,
+      "wordCount": 662,
+      "published": "2026-10-20",
+      "modified": "2026-10-29"
     },
     {
       "slug": "lolobuy-seller-and-review-checks",
@@ -1125,7 +1242,280 @@
         "returns"
       ],
       "readingMinutes": 3,
-      "wordCount": 452
+      "wordCount": 604,
+      "published": "2026-10-20",
+      "modified": "2026-10-29"
+    },
+    {
+      "slug": "lolobuy-shipping-netherlands",
+      "title": "Tbaħħir LoloBuy lejn in-Netherlands: spejjeż, ħinijiet u kontrolli tal-pakkett",
+      "description": "Ippjana pakkett LoloBuy għan-Netherlands: qabbel l-inputs tal-kalkulatur, l-ippakkjar, l-istadji tal-kunsinna u r-rekords meħtieġa biex tiċċekkja l-ħlasijiet tal-importazzjoni.",
+      "keyword": "tbaħħir lolobuy Netherlands",
+      "category": "Kunsinna lejn in-Netherlands",
+      "summary": "Uża n-Netherlands bħala d-destinazzjoni reali meta tqabbel it-tbaħħir. Żomm kwotazzjoni bid-data, iddistingwi l-istadji tal-kunsinna u iċċekkja l-gwida attwali tad-Dwana Olandiża qabel tħallas.",
+      "sections": [
+        {
+          "heading": "Ibda bi speċifikazzjoni tal-pakkett għan-Netherlands",
+          "paragraphs": [
+            "Tqabbil utli tat-tbaħħir LoloBuy jibda bil-pakkett li biħsiebek tirċievi, mhux bi prezz li ħallas ħaddieħor. Ikteb il-pajjiż tad-destinazzjoni, il-kodiċi postali, il-lista tal-oġġetti, il-kwantitajiet u l-ippakkjar li għandu jibqa’ mal-oġġetti. Rotta disponibbli għal pakkett żgħir ta’ ħwejjeġ tista’ ma taċċettax taħlita differenti ta’ prodotti. Il-pajjiż waħdu ma jistabbilixxix li l-pakkett huwa eliġibbli.",
+            "Agħmel żewġ listi: fatti diġà kkonfermati u informazzjoni li għadha stmata. Id-dimensjonijiet tal-bejjiegħ, il-piż tal-oġġett fil-maħżen u d-dimensjonijiet ta’ kaxxa lesta huma rekords differenti. Immarka s-sorsi tagħhom biex tkun taf x’taġġorna meta jaslu l-oġġetti. Jekk kaxxa tar-rigal trid tibqa’ sħiħa, għid dan qabel tqabbel ippakkjar irħas li jassumi li titneħħa. Dik l-għażla tista’ tbiddel kemm il-protezzjoni kif ukoll il-volum."
+          ]
+        },
+        {
+          "heading": "Aqra l-prezz fi stadji separati",
+          "paragraphs": [
+            "Il-gwida uffiċjali tax-xiri LoloBuy tissepara l-ewwel ħlas tal-oġġett u l-kunsinna domestika fiċ-Ċina mis-sottomissjoni sussegwenti tal-pakkett internazzjonali. Għal ordni lejn in-Netherlands, żomm dawn l-istadji separati fil-baġit. Il-prezz tal-katalgu huwa punt tat-tluq għall-oġġett, mhux kwotazzjoni għall-wasla għand biebek. Żid biss spejjeż li r-rekord attwali tal-ordni jew tal-pakkett jikkonferma fil-fatt.",
+            "Żomm reġistru sempliċi b’kolonni għall-oġġett, il-kunsinna domestika, is-servizzi fakultattivi tal-maħżen, it-tbaħħir internazzjonali, l-ispejjeż tal-ħlas u dawk tad-destinazzjoni. Irreġistra l-munita ħdejn kull ammont. Meta kwotazzjoni diġà tinkludi tariffa, immarkaha bħala inkluża minflok iżżidha mill-ġdid. Qasam mhux imwieġeb għandu jibqa’ mhux solvut. Total b’vojt ċar huwa aktar utli minn total li jidher preċiż iżda jqis kull spiża nieqsa bħala żero."
+          ]
+        },
+        {
+          "heading": "Ħejji tqabbil tal-kalkulatur li tista’ tirrepeti",
+          "paragraphs": [
+            "Iftaħ l-istimatur uffiċjali tat-tbaħħir LoloBuy u agħżel in-Netherlands bħala destinazzjoni. Daħħal il-piż, id-dimensjonijiet u l-kategorija mitluba bl-unitajiet tal-formola attwali. Iċċekkja grammi kontra kilogrammi qabel tqabbel ir-riżultati. Piż f’unità ħażina jiddeskrivi pakkett ieħor, anki jekk l-iskrin jidher plawżibbli. Issejvja l-inputs flimkien mal-għażliet murija.",
+            "Għal kull rotta eliġibbli, irreġistra d-data tal-kwotazzjoni, il-munita, l-ammont, iż-żmien stmat tat-tranżitu, l-informazzjoni tat-traċċar u r-restrizzjonijiet. Żomm il-kontenut u l-kejl identiċi waqt it-tqabbil. Jekk rotta teħtieġ metodu differenti tal-ippakkjar, innota d-differenza espliċitament. Tibdilx screenshot qadima f’tabella attwali tal-prezzijiet. Tqabbil utli jista’ jerġa’ jsir bid-data mkejla fil-maħżen meta tkun disponibbli."
+          ]
+        },
+        {
+          "heading": "Ifhem x’tibdel kaxxa eħfef jew iżgħar",
+          "paragraphs": [
+            "Il-piż reali jkejjel il-massa; il-piż volumetriku jirrappreżenta l-ispazju li jokkupa pakkett skont ir-regola tal-kont tar-rotta. Il-gwida LoloBuy tiddeskrivi formuli li jiddependu fuq ir-rotta. Aqra l-kundizzjonijiet attwali minflok tapplika diviżur wieħed għal kull servizz. Iċċekkja wkoll l-arrotondament, it-tariffi minimi u l-inkrement tal-piż addizzjonali. Tnaqqis żgħir fil-piż fiżiku jista’ jħalli l-pakkett fl-istess medda tal-prezz.",
+            "Ikkunsidra kaxxa illustrattiva ta’ 40 × 30 × 20 ċentimetru. Il-volum tagħha huwa 24,000 ċentimetru kubu. B’diviżur ipotetiku ta’ 6,000, il-piż volumetriku jkun 4 kilogrammi. Jekk naħa titnaqqas għal 15-il ċentimetru, ir-riżultat ikun 3 kilogrammi skont l-istess regola assunta. Dan il-kalkolu jispjega tqabbil tal-ippakkjar; ma jikkonfermax rotta LoloBuy disponibbli, prezz tat-tbaħħir jew iffrankar garantit."
+          ]
+        },
+        {
+          "heading": "Qabbel il-konsolidazzjoni ma’ pakketti separati",
+          "paragraphs": [
+            "Meta diversi oġġetti jkunu maħżuna, qabbel pakkett wieħed magħqud mat-total tal-pakketti separati kollha proposti. Uża l-istess destinazzjoni u inkludi s-servizzi tal-ippakkjar għal kull għażla. Ammont iżgħar ħdejn pakkett wieħed maqsum mhuwiex it-total biex tibgħat il-basket kollu. Kull pakkett jista’ jkollu tariffa minima u proċessar separat fid-destinazzjoni.",
+            "Il-protezzjoni u r-restrizzjonijiet jistgħu jkunu aktar importanti mill-inqas spiża inizjali tat-tbaħħir. Oġġett fraġli jista’ jeħtieġ separazzjoni jew rinfurzar, filwaqt li kaxxa goffa tista’ tiddomina l-volum ta’ pakkett li altrimenti jkun kompatt. Itlob li tiġi evalwata l-arranġament partikolari li trid. Żomm il-protezzjoni meħtieġa u iċċekkja li s-servizz magħżul jaċċetta l-kontenut reali. Il-konsolidazzjoni hija deċiżjoni x’tevalwa, mhux wegħda awtomatika ta’ spiża aktar baxxa."
+          ]
+        },
+        {
+          "heading": "Aqra l-ħin tal-kunsinna bħala sekwenza",
+          "paragraphs": [
+            "Issepara t-tluq mingħand il-bejjiegħ, il-kunsinna lejn il-maħżen Ċiniż, l-ispezzjoni, il-preparazzjoni tal-pakkett, it-trasport internazzjonali, il-proċessar fid-destinazzjoni u l-kunsinna finali. Stima tat-tranżitu tat-trasportatur tista’ tkopri biss parti minn din is-sekwenza. Irreġistra minn liema stadju tibda l-istima qabel tqabbilha maż-żmien totali li stenna xerrej ieħor. Il-konferma tal-ordni u l-aċċettazzjoni mit-trasportatur mhumiex l-istess bidu.",
+            "Wara t-tluq, segwi r-referenza tal-pakkett fil-kont u l-informazzjoni tat-trasportatur marbuta magħha. Numru ta’ traċċar maħluq ma jikkonfermax waħdu li t-trasportatur ħa l-pakkett fiżikament. Meta l-progress mhuwiex ċar, staqsi liema stadju tlesta u min għandu l-pakkett. Għal xiri li jiddependi fuq data, ħalli marġni ta’ żmien minflok tqis il-perjodu stmat tal-wasla bħala data garantita."
+          ]
+        },
+        {
+          "heading": "Iċċekkja l-informazzjoni attwali tal-importazzjoni Olandiża",
+          "paragraphs": [
+            "Qabel tħallas, ikkonsulta l-informazzjoni attwali tad-Dwana Olandiża dwar xiri online li jasal minn barra l-Unjoni Ewropea. Il-gwida tiddistingwi bejn VAT, dazju tal-importazzjoni u tariffi tal-immaniġġjar tat-trasportatur. Ir-regoli għal kunsinni ta’ valur baxx inbidlu f’Lulju 2026, għalhekk gwida antika li tgħid li xiri ta’ valur baxx huwa awtomatikament ħieles mid-dazju m’għandhiex tintuża għal kalkolu attwali. Iċċekkja r-regoli għall-oġġetti reali u d-data tal-importazzjoni.",
+            "Żomm flimkien id-deskrizzjonijiet, l-ammonti tax-xiri, il-munita u kull taxxa jew dazju diġà miġbur. Staqsi lit-trasportatur jew lill-bejjiegħ kif ħlas inkluż huwa dokumentat u x’għad irid jitħallas. Laqam ta’ linja tat-tbaħħir ma jistabbilixxix it-trattament fiskali tal-pakkett. Din il-gwida ma tikkalkulax kont doganali Olandiż universali: il-klassifikazzjoni, it-tranżazzjoni u l-proċedura applikabbli huma importanti. Uża deskrizzjonijiet u valuri eżatti meta tipprovdi l-informazzjoni mitluba."
+          ]
+        },
+        {
+          "heading": "Irrikonċilja t-tbaħħir finali u żomm l-evidenza",
+          "paragraphs": [
+            "Il-gwida uffiċjali LoloBuy tiddeskrivi l-ġbir ta’ stima u r-rikonċiljazzjoni tagħha aktar tard mal-ħlas loġistiku. Qabbel kull aġġustament mal-piż finali ppakkjat, id-dimensjonijiet, ir-rotta u s-servizzi magħżula. Jekk l-ammont jinbidel, identifika l-input mibdul qabel tassumi li l-istima kienet impenn fiss. Żomm il-kwotazzjoni inizjali u l-kont finali tal-pakkett fl-istess rekord.",
+            "Meta tasal il-kunsinna, qabbel il-kontenut mal-lista salvata u eżamina l-ippakkjar qabel tarmih. Żomm ritratti jekk xi ħaġa tidher nieqsa jew bil-ħsara, imbagħad uża l-proċess ta’ appoġġ rilevanti għall-ordni jew għall-pakkett. Ritorn lill-bejjiegħ, talbiet dwar pakketti internazzjonali u tariffi tat-trasportatur jinvolvu rekords differenti. Dokumentazzjoni tajba tagħmel it-talba aktar ċara mingħajr ma twiegħed rifużjoni jew riżoluzzjoni partikolari."
+          ]
+        },
+        {
+          "heading": "Oħloq rekord utli għall-ordni li jmiss",
+          "paragraphs": [
+            "Wara li tlesti ordni, żomm dak li jista’ jitqabbel b’mod onest: id-data, id-destinazzjoni, l-oġġetti reali, il-kaxxa mkejla, is-servizz, it-tbaħħir finali u l-istadji osservati. Neħħi l-informazzjoni personali tal-indirizz qabel taqsam eżempju. Kunsinna storika tista’ tgħin xerrej ieħor jifhem il-proċess, iżda għandha tibqa’ mmarkata bħala każ wieħed bid-data, mhux prezz ġenerali jew wegħda ta’ kunsinna.",
+            "Uża dak ir-rekord biex ittejjeb l-istima li jmiss. Innota jekk il-volum jew il-piż ikkontrollax il-ħlas, jekk servizz fakultattiv bidilx il-kaxxa u liema spiża kienet inizjalment minsija. Qabel terġa’ tuża ċ-ċifri, iċċekkja li d-destinazzjoni, il-kontenut u l-kundizzjonijiet attwali tar-rotta għadhom jaqblu. Metodu li tista’ tirrepeti huwa aktar utli milli tiġbor l-orħos numru apparenti minn pakkett differenti."
+          ]
+        }
+      ],
+      "checklist": [
+        "Agħżel in-Netherlands u l-kodiċi postali korrett fil-kwotazzjoni attwali.",
+        "Żomm piż, volum u kontenut identiċi għat-tqabbil tar-rotot.",
+        "Issepara l-ħin fil-maħżen, it-tranżitu internazzjonali u l-kunsinna finali.",
+        "Ivverifika l-gwida attwali Olandiża u kull ammont diġà miġbur.",
+        "Żomm flimkien il-kontijiet inizjali u finali tal-pakkett."
+      ],
+      "sourceIds": [
+        "buying",
+        "weight",
+        "packaging",
+        "freight-balance",
+        "estimate"
+      ],
+      "readingMinutes": 6,
+      "wordCount": 1222,
+      "published": "2026-10-29",
+      "modified": "2026-10-29"
+    },
+    {
+      "slug": "lolobuy-payment-methods-fees",
+      "title": "Metodi ta’ ħlas u tariffi LoloBuy: checkout, munita u bilanċ",
+      "description": "Iċċekkja l-metodi ta’ ħlas LoloBuy waqt iċ-checkout, qabbel id-debitu sħiħ u ddistingwi krediti fil-bilanċ minn rifużjonijiet lejn il-metodu oriġinali.",
+      "keyword": "metodi ta’ ħlas lolobuy",
+      "category": "Ħlasijiet u tariffi",
+      "summary": "Rabat kull ħlas ma’ ordni ta’ oġġetti jew kont ta’ pakkett. Qabbel it-total u l-munita attwali, żomm ir-referenza tat-tranżazzjoni u ivverifika fejn tiġi kkreditata rifużjoni.",
+      "sections": [
+        {
+          "heading": "Ibda bil-kont li biħsiebek tħallas",
+          "paragraphs": [
+            "Qabel tagħżel metodu ta’ ħlas, identifika s-suġġett tal-kont. Jista’ jkun għal ordni ta’ prodott, kunsinna domestika, tbaħħir internazzjonali, aġġustament jew żieda fil-bilanċ. Il-proċess uffiċjali LoloBuy jissepara l-ħlas tal-oġġetti mill-ħlas sussegwenti tal-pakkett. L-ewwel tranżazzjoni b’suċċess ma tikkonfermax li kull stadju sussegwenti tax-xiri huwa diġà mħallas.",
+            "Żomm in-numru tal-ordni jew tal-pakkett, l-ammont u l-munita ħdejn l-iskrin tal-ħlas. Jekk diversi kontijiet għandhom totali simili, uża r-referenzi tagħhom u mhux l-ammont biss biex tiddistingwihom. Ikkonferma li l-oġġetti u l-kwantitajiet huma korretti qabel tqabbel il-kanali tal-ħlas. Li ssolvi ordni ta’ oġġett ħażin wara l-ħlas huwa kompitu differenti milli tagħżel mod konvenjenti biex tħallas ordni korretta."
+          ]
+        },
+        {
+          "heading": "Iċċekkja l-metodi fiċ-checkout attwali",
+          "paragraphs": [
+            "Il-gwida pubblika LoloBuy issemmi diversi kategoriji ta’ ħlas, inklużi karti, servizzi Ċiniżi u trasferiment bankarju. Lista ġenerali tal-għajnuna hija informazzjoni ta’ sfond, mhux prova li kull metodu huwa attwalment disponibbli għal kull kont, pajjiż, munita jew fattura. Aqra l-metodi fil-fatt offruti għat-tranżazzjoni tiegħek u kull informazzjoni dwar eliġibbiltà jew verifika murija magħhom.",
+            "Tiddeduċix tariffa jew żmien ta’ saldu attwali minn logo f’tutorjal antik. Jekk kanal mhuwiex disponibbli, żomm il-messaġġ u iċċekkja mal-appoġġ uffiċjali minflok tassumi li għażla ta’ pajjiż differenti hija xierqa. Uża d-dettalji reali tal-kont tiegħek. Jekk iċ-checkout jitlob għażla ta’ munita, irreġistraha qabel tqabbel kanal ieħor sabiex iż-żewġ totali jiddeskrivu xiri ekwivalenti."
+          ]
+        },
+        {
+          "heading": "Issepara s-saffi tal-ispiża",
+          "paragraphs": [
+            "Tqabbil sħiħ jiddistingwi l-kont bażi, tariffa tal-pjattaforma, il-konverżjoni tal-munita u kull tariffa ta’ fornitur estern. Xi wħud jistgħu jkunu inklużi fit-total muri; oħrajn jistgħu jidhru separatament mill-bank jew mill-fornitur tal-ħlas. Irreġistra dak magħruf u dak li għad irid jiġi ċċekkjat. Evita li żżid tariffa darbtejn sempliċiment għax tidher kemm fid-dettalji kif ukoll fit-total finali.",
+            "Għal tariffa perċentwali, identifika l-ammont li għalih japplika l-perċentwal. Għal tariffa fissa, irreġistra l-munita u jekk hijiex għal kull tranżazzjoni. Tariffa fissa tista’ taffettwa xiri żgħir b’mod differenti minn wieħed kbir. Din il-gwida ma tippubblikax tabella permanenti tat-tariffi għax in-numru utli huwa l-ammont sħiħ li tawtorizza għall-kont attwali skont il-kundizzjonijiet attwali."
+          ]
+        },
+        {
+          "heading": "Qabbel l-istess kont f’munita waħda",
+          "paragraphs": [
+            "Assumi li żewġ skrins jirreferu għall-istess kont illustrattiv tal-oġġetti. Wieħed juri debitu kollox inkluż ta’ 102 unitajiet tal-munita li tonfoq biha u ieħor 104. Jekk in-numru aktar baxx jeskludi tariffa addizzjonali tal-fornitur, it-tqabbil mhux sħiħ. Irreġistra t-total ikkonfermat għal kull għażla u semmi kull tariffa mhux solvuta minflok tippreżenta ċ-ċifra ewlenija bħala l-ispiża finali.",
+            "Meta l-kont jiġi kkreditat f’munita u l-bank jiddebita oħra, żomm iż-żewġ ammonti. Jekk taqsam l-ammont ikkreditat bid-debitu reali, tikseb miżura effettiva tal-konverżjoni għal dik it-tranżazzjoni partikolari. Ma tistabbilixxix ir-rata universali tal-pjattaforma. Uża l-istess ħin u kont meta tqabbel alternattivi, u ddistingwi rata kkwotata mill-ammont finali rreġistrat wara s-saldu."
+          ]
+        },
+        {
+          "heading": "Żomm iż-żieda fil-fondi separata mill-ħlas tal-ordni",
+          "paragraphs": [
+            "Li żżid fondi f’kont tal-pjattaforma joħloq entrata tal-bilanċ. Il-ħlas ta’ ordni juża fondi jew kanal ieħor biex iħallas kont speċifiku. Dawn l-avvenimenti jistgħu jkunu qrib xulxin iżda jwieġbu mistoqsijiet differenti. Wara żieda fil-fondi, iċċekkja l-kreditu; wara l-ħlas, iċċekkja l-istatus tal-ordni jew tal-pakkett relatat. Żieda fil-bilanċ waħedha ma tipprovax li l-ordni mixtieqa tħallset.",
+            "Reġistru qasir jista’ juża ringiela għall-ħlas estern, waħda għall-kreditu fil-bilanċ u waħda għat-tnaqqis tal-ordni, b’referenzi li jorbtuhom. Dan huwa partikolarment utli meta tiffinanzja aktar minn ordni waħda. Tqisx il-bilanċ li fadal bħala skont fuq ix-xiri li jmiss: huwa flus li l-ispiża preċedenti tal-finanzjament tagħhom għadha parti mir-rekords ġenerali. Irreġistra fondi mhux użati separatament mill-ispejjeż tax-xiri lest."
+          ]
+        },
+        {
+          "heading": "Ittratta ħlas pendenti jew fallut bir-reqqa",
+          "paragraphs": [
+            "Jekk il-paġna tal-ħlas teħel jew tirrapporta falliment, qabbel l-istatus tal-kont, l-istorja u r-rekord tal-fornitur qabel tirrepeti t-tranżazzjoni. Awtorizzazzjoni bankarja pendenti u ħlas ikkonfermat lill-pjattaforma huma stati differenti. Issejvja l-ħin, ir-referenza u l-messaġġ eżatt. Dawn il-fatti jippermettu lill-appoġġ jinvestiga tentattiv speċifiku minflok jaqta’ minn screenshot tal-bilanċ attwali.",
+            "Jekk il-fornitur juri debitu iżda l-kont għadu mhux imħallas, ikkuntattja l-appoġġ rilevanti bir-rekords marbuta. Tassumix li kull ħlas pendenti jiġi saldat jew imreġġa’ lura f’perjodu universali wieħed. Staqsi liema status huwa kkonfermat u x’azzjoni hija meħtieġa. Meta taqsam evidenza, aħbi d-dettalji sħaħ tal-karta u attività mhux relatata. Żomm l-identifikaturi tat-tranżazzjoni meħtieġa biex jitqabbel il-każ."
+          ]
+        },
+        {
+          "heading": "Ifhem fejn tmur rifużjoni",
+          "paragraphs": [
+            "Il-gwida tar-ritorn LoloBuy ġeneralment tiddeskrivi rifużjonijiet eliġibbli bħala kreditu fil-bilanċ tal-kont LoloBuy. Tiddeskrivi wkoll eċċezzjoni limitata għal ċerti ordnijiet PayPal li qed jistennew approvazzjoni. Dik l-eċċezzjoni m’għandhiex tinkiteb bħala wegħda li kull rifużjoni tirritorna awtomatikament għall-metodu oriġinali. Iċċekkja r-regola marbuta mal-istadju reali tal-ordni u r-rekord tal-ħlas.",
+            "Iddistingwi bejn l-approvazzjoni tar-ritorn mill-bejjiegħ, il-wasla tal-flus għand il-pjattaforma, il-kreditu fil-kont u l-wasla fil-kont estern tiegħek. Kull stadju jeħtieġ l-evidenza tiegħu. Kreditu fil-bilanċ jista’ jtemm parti mill-proċess mingħajr ma jikkonferma li l-fondi ġew irtirati. Qabel tiddependi fuq irtirar, iċċekkja l-eliġibbiltà attwali, l-azzjoni disponibbli u l-kundizzjonijiet għal dak il-bilanċ. Tassumix li bilanċ mhux użat jiġi ttrattat bl-istess mod f’kull każ."
+          ]
+        },
+        {
+          "heading": "Eżamina l-aġġustamenti tat-tbaħħir separatament",
+          "paragraphs": [
+            "It-tbaħħir internazzjonali jibda bħala stima separata fil-proċess uffiċjali tax-xiri. L-ippakkjar jew il-kejl loġistiku aktar tard jistgħu joħolqu ammont addizzjonali jew kreditu għal ħlas żejjed. Rabat kull aġġustament man-numru tal-pakkett u l-kejl finali. Kont żejjed tat-tbaħħir mhuwiex awtomatikament tariffa tal-metodu ta’ ħlas, u kreditu tat-tbaħħir mhux bilfors huwa treġġigħ lura tax-xiri oriġinali.",
+            "Żomm l-ammont inizjali tat-tbaħħir, il-kejl mibdul, l-ammont finali u kull kreditu jew ħlas supplimentari. Jekk linja mhix ċara, staqsi liema parti tal-kalkolu nbidlet. Issepara din ir-rikonċiljazzjoni mit-taxxi fid-destinazzjoni jew tariffi tal-immaniġġjar li jistgħu jsegwu proċess ieħor. Kategoriji separati jagħmlu t-total aktar faċli biex jiġi eżaminat u jgħinuk tevita li tħallas talba mhux familjari mingħajr ma tifhem ir-rabta tagħha mal-pakkett."
+          ]
+        },
+        {
+          "heading": "Issejvja rekord tal-ħlas li jibqa’ utli",
+          "paragraphs": [
+            "Rekord utli jinkludi d-data, is-suġġett tal-kont, ir-referenza tal-ordni jew tal-pakkett, l-ammont bażi, it-tariffa murija, il-munita tas-saldu, l-ammont finali dovut u r-referenza tal-fornitur. Żid l-istatus tal-pjattaforma u l-moviment tal-bilanċ wara l-ħlas. Għal rifużjoni, ehmeż l-ordni oriġinali u d-destinazzjoni tal-kreditu. Dawn l-oqsma jorbtu dak li ridt tħallas ma’ dak li ġara fil-fatt.",
+            "Qabel il-ħlas li jmiss, erġa’ qabbel iċ-checkout attwali. Id-disponibbiltà tal-metodi, il-konverżjoni u t-tariffi jistgħu jinbidlu, għalhekk tranżazzjoni preċedenti b’suċċess hija referenza, mhux lista permanenti ta’ rati. Agħżel fost il-metodi verament offruti għall-kont tiegħek, qabbel id-debitu sħiħ u żomm l-evidenza. Jekk tariffa meħtieġa jew kundizzjoni tar-rifużjoni għadha mhux ċara, solvi dik l-inċertezza mal-appoġġ uffiċjali qabel tawtorizza l-ħlas."
+          ]
+        }
+      ],
+      "checklist": [
+        "Rabat il-ħlas mal-kont eżatt tal-ordni jew tal-pakkett.",
+        "Qabbel it-tariffi attwali u d-debitu finali fl-istess munita.",
+        "Iċċekkja jekk kreditu fil-bilanċ ħallasx ukoll il-kont mixtieq.",
+        "Iċċara status ambigwu qabel tirrepeti ħlas.",
+        "Ivverifika jekk rifużjoni waslitx fil-bilanċ tal-pjattaforma jew fil-metodu oriġinali."
+      ],
+      "sourceIds": [
+        "buying",
+        "refunds",
+        "cancellation",
+        "freight-balance"
+      ],
+      "readingMinutes": 6,
+      "wordCount": 1226,
+      "published": "2026-10-29",
+      "modified": "2026-10-29"
+    },
+    {
+      "slug": "lolobuy-link-not-working",
+      "title": "Link LoloBuy ma taħdimx: kontrolli għal Taobao, Weidian u 1688",
+      "description": "Solvi problema ta’ link LoloBuy billi tissepara d-disponibbiltà tal-bejjiegħ, il-format tal-link u l-importazzjoni tal-ordni, imbagħad ivverifika l-oġġett eżatt qabel ordni manwali.",
+      "keyword": "link lolobuy ma taħdimx",
+      "category": "Links tal-prodotti",
+      "summary": "Żomm il-link oriġinali tal-prodott u identifika fejn tfalli. Sib l-istess oġġett u varjant, imbagħad eżamina l-ordni importata minflok tbiddel IDs jew taqta’ dettalji neqsin.",
+      "sections": [
+        {
+          "heading": "Identifika fejn il-link tfalli",
+          "paragraphs": [
+            "Link ta’ prodott tista’ tfalli qabel jew wara li tasal għand LoloBuy. Il-listing oriġinali tal-bejjiegħ jista’ ma jkunx disponibbli, indirizz imqassar jista’ ma jinfetaħx, jew il-formola tal-importazzjoni tista’ ma taqbadx id-dettalji minn paġna li mod ieħor għadha attiva. Ikteb x’jiġri fil-fatt: żball, preview vojt, talba biex tidħol fil-kont jew prodott differenti. Dawn l-osservazzjonijiet iwasslu għal kontrolli differenti.",
+            "Issejvja l-URL oriġinali qabel tbiddel xi ħaġa. Irreġistra s-suq, l-identifikatur viżibbli tal-oġġett jekk disponibbli, l-għażla mixtieqa u d-data tal-kontroll. Screenshot tal-oġġett mistenni tista’ tgħin, iżda għandha tibqa’ marbuta mal-link tal-bejjiegħ. L-għan huwa li tirkupra biżżejjed informazzjoni għax-xiri mixtieq, mhux sempliċiment li turi kwalunkwe paġna ta’ prodott fil-browser."
+          ]
+        },
+        {
+          "heading": "L-ewwel iċċekkja l-listing oriġinali tal-bejjiegħ",
+          "paragraphs": [
+            "Iftaħ il-listing oriġinali tas-suq bl-aċċess pubbliku normali jew billi tidħol fil-kont, kif xieraq. Jekk il-bejjiegħ neħħa l-oġġett jew l-għażla mixtieqa mhix disponibbli, tibdil fil-format tal-indirizz ma jerġax iġib l-istokk. Żomm l-isem tal-bejjiegħ, it-titlu u l-kejl rilevanti sabiex tevalwa listing ieħor bħala kandidat ġdid. Ritratti simili waħedhom ma jistabbilixxux ekwivalenza.",
+            "Jekk il-listing oriġinali huwa attiv u juri l-għażla mixtieqa, il-problema tista’ tkun fil-link maqsuma jew fl-importazzjoni tagħha. Ikkopja l-link tal-qsim jew l-indirizz proprju tal-listing attwali u qabblu mal-verżjoni salvata. Ħalli redirects leġittimi jitlestew minflok tbiddel id-destinazzjoni bl-addoċċ. Paġna li teħtieġ aċċess b’kont għandha tiġi ċċekkjata bil-proċess normali tas-suq; din il-gwida ma taqbiżx il-kontrolli tal-aċċess tiegħu."
+          ]
+        },
+        {
+          "heading": "Iddistingwi IDs tas-sors minn IDs tal-katalgu",
+          "paragraphs": [
+            "Sit għall-iskoperta ta’ prodotti jista’ jassenja n-numru tiegħu stess lil rekord. Dak in-numru mhux bilfors huwa l-identifikatur tal-oġġett fuq Taobao, Weidian jew 1688. Fuq dan is-sit, id-dettalji jużaw ir-rekord tal-katalgu biex iġibu l-listing tas-sors u l-link tax-xiri li taqbel. Jekk tissostitwixxi identifikatur tas-suq bin-numru minn indirizz tal-katalgu lokali, tista’ tasal għal oġġett mhux relatat jew għal ebda oġġett.",
+            "Uża l-buttuna tax-xiri li taqbel mal-prodott meta tkun disponibbli, imbagħad qabbel il-paġna miftuħa mas-sors. Jekk id-destinazzjoni hija ħażina, żomm iż-żewġ URLs u rrapporta n-nuqqas ta’ qbil. Iżżidx jew tbiddilx IDs numeriċi sakemm titgħabba xi ħaġa. L-immaġni, it-titlu, il-bejjiegħ u l-għażliet murija għandhom flimkien jaqblu mal-listing mixtieq. Dettall wieħed li jaqbel mhuwiex biżżejjed biex jerġa’ jibni l-identità sħiħa tal-prodott."
+          ]
+        },
+        {
+          "heading": "Irkupra links Taobao bl-għażla magħhom",
+          "paragraphs": [
+            "Messaġġ ta’ qsim Taobao jista’ jinkludi test deskrittiv kif ukoll link. Ikkopja l-link reali tal-listing minflok tqis il-messaġġ kollu bħala indirizz. Jekk il-link tagħmel redirect, ikkonferma l-oġġett li jirriżulta qabel tuża dik id-destinazzjoni f’LoloBuy. Żomm il-messaġġ oriġinali bħala referenza meta jinkludi deskrizzjoni ta’ għażla li l-indirizz waħdu ma jżommx.",
+            "Meta l-oġġett jitgħabba, qabbel il-kulur, id-daqs, il-kwantità u l-bażi tal-prezz magħżula. Importazzjoni b’suċċess xorta tista’ turi l-għażla awtomatika minflok dik mixtieqa. Issejvja l-kliem oriġinali tal-għażla flimkien ma’ kull traduzzjoni, speċjalment meta diversi għażliet għandhom ismijiet simili. Jekk il-bejjiegħ juża tabella tad-daqsijiet f’immaġni, żommha u iċċara l-kejl meħtieġ qabel tawtorizza ordni."
+          ]
+        },
+        {
+          "heading": "Iċċekkja l-bejjiegħ Weidian u l-informazzjoni tal-varjant",
+          "paragraphs": [
+            "Għal listing Weidian, ivverifika l-paġna tal-bejjiegħ u l-oġġett flimkien. Link salvata tista’ tibqa’ attiva waqt li l-offerta, il-varjanti disponibbli jew il-prezz inbidlu. Qabbel it-titlu attwali, l-immaġnijiet, l-ismijiet tal-għażliet u l-informazzjoni tal-bejjiegħ mar-rekord preċedenti. Qis listing mibdul bħala deċiżjoni ġdida minflok tassumi li immaġni familjari żżomm l-offerta l-antika.",
+            "Meta l-preview importat ikun differenti mill-paġna attwali tal-bejjiegħ, iddokumenta d-differenza speċifika. Pereżempju, identifika liema daqs huwa nieqes jew il-prezz ta’ liema għażla qed jintwera. Inkludi l-URL oriġinali u l-għażla mixtieqa fil-mistoqsija dwar l-ordni. Evita istruzzjonijiet bħal “dak fir-ritratt” meta l-listing ikollu diversi prodotti jew varjanti. Deskrizzjoni preċiża tal-għażla hija aktar faċli biex it-tim tax-xiri jivverifikaha."
+          ]
+        },
+        {
+          "heading": "Qis il-kwantità 1688 bħala parti mill-prodott",
+          "paragraphs": [
+            "Il-gwida uffiċjali LoloBuy għal 1688 tgħid li l-kwantitajiet minimi tal-bejjiegħ iridu jintlaħqu u li l-prezz u t-tbaħħir domestiku jistgħu jiddependu fuq il-kwantità mixtrija. Prezz importat mingħajr il-livell tal-kwantità li jaqbel għalhekk huwa mhux sħiħ. Iċċekkja jekk il-prezz huwiex għal biċċa, par, sett, kaxxa jew unità oħra. Numru baxx jista’ jirreferi għal komponent jew għal livell ta’ xiri akbar.",
+            "Irreġistra l-kwantità minima, il-kwantità mixtieqa, il-varjanti magħżula u l-prezz għal dik il-kombinazzjoni. Jekk hemm kuluri jew daqsijiet imħallta, iċċara l-kundizzjonijiet tal-bejjiegħ minflok tassumi li kwalunkwe taħlita tilħaq il-minimu. Il-gwida uffiċjali tiddeskrivi wkoll konsiderazzjonijiet separati tal-ispezzjoni għal ordnijiet 1688. Li ssolvi link ma jneħħix dawn il-kundizzjonijiet tal-kwantità, spezzjoni jew ritorn mid-deċiżjoni tax-xiri."
+          ]
+        },
+        {
+          "heading": "Uża ordni manwali biss b’dettalji vverifikati",
+          "paragraphs": [
+            "Il-gwida uffiċjali LoloBuy tiddeskrivi kif timla ordni ta’ aġent tax-xiri manwalment meta l-informazzjoni tal-prodott ma tistax tinqabad awtomatikament. Uża din l-għażla meta tkun offruta għall-ordni u agħti d-dettalji mil-listing reali. Inkludi l-link oriġinali, il-prodott u l-għażliet eżatti, il-kwantità, il-prezz attwali u l-informazzjoni magħrufa dwar kunsinna domestika. Immarka informazzjoni mhux solvuta għal kjarifika minflok tivvintaha.",
+            "Formola manwali hija mod kif tikkomunika ordni; mhijiex garanzija li prodott mhux disponibbli jista’ jinxtara jew li kull bejjiegħ jaċċetta l-kundizzjonijiet mitluba. Qabel tħallas, qabbel il-formola mimlija mar-rekord tas-sors. Wara s-sottomissjoni, wieġeb kull talba għal konferma permezz tal-mistoqsija rilevanti tal-ordni. Żomm l-għażla finali kkonfermata biex aktar tard tqabbilha mal-evidenza tal-maħżen."
+          ]
+        },
+        {
+          "heading": "Eżamina r-riżultat importat qabel tħallas",
+          "paragraphs": [
+            "Kemm jekk il-link ġiet irranġata kif ukoll jekk intużat formola manwali, agħmel l-istess kontroll finali. Qabbel l-identità, il-bejjiegħ, il-kulur, id-daqs, il-kwantità, l-unità u t-total. Ikkonferma li l-ammont muri huwa għall-konfigurazzjoni magħżula u iċċekkja l-kunsinna domestika separatament. Preview b’suċċess jipprova li xi informazzjoni tgħabbiet, mhux li kull dettall meħtieġ ġie importat sew jew li l-istokk huwa riżervat.",
+            "Jekk is-sors u l-formola tal-ordni ma jaqblux, waqqaf fil-punt tan-nuqqas ta’ qbil u solvih speċifikament. Li tissottometti ordnijiet simili ripetutament jista’ jagħmel ir-rekord aktar diffiċli biex issegwih. Żomm traċċa waħda ċara tal-evidenza bil-listing oriġinali, l-għażla kkoreġuta u r-referenza tal-ordni li tirriżulta. Meta l-oġġett jasal fil-maħżen, qabbel l-oġġetti riċevuti mar-rekord ikkonfermat qabel tissottometti pakkett internazzjonali."
+          ]
+        },
+        {
+          "heading": "Żomm rekord tal-links li tista’ terġa’ tiċċekkja",
+          "paragraphs": [
+            "Żomm il-URL antik, il-URL attwali, is-suq, il-bejjiegħ, l-ID viżibbli tal-oġġett, l-għażla, id-data u r-riżultat f’rekord sempliċi. Riżultati utli jinkludu attiv u jaqbel, attiv iżda mibdul, għażla mhux disponibbli, listing imneħħi jew importazzjoni mhux solvuta. Jekk issib sostitut, żomm id-dettalji tiegħu minflok tikteb fuq l-oriġinal bħallikieku ma nbidel xejn. Dan iżomm ir-raġuni għad-deċiżjoni tiegħek.",
+            "Erġa’ iċċekkja l-listing eżatt qabel tordna għax l-irkupru tal-link ma jiggarantixxix disponibbiltà futura. Jekk taqsam link ikkoreġuta, spjega d-data u x’ġie vverifikat mingħajr ma ssostni li l-bejjiegħ jew l-oġġetti fiżiċi ġew ittestjati indipendentement. Direttorju affidabbli jgħin lin-nies jiskopru u jivverifikaw kandidati. Rekords ċari u informazzjoni eżatta dwar l-istatus iżommuh utli anki meta listings individwali tas-swieq jinbidlu."
+          ]
+        }
+      ],
+      "checklist": [
+        "Issejvja l-URL oriġinali qabel timmodifika link.",
+        "Iċċekkja d-disponibbiltà tal-bejjiegħ separatament mill-importazzjoni LoloBuy.",
+        "Żomm IDs tar-rekords tal-katalgu separati mill-IDs tal-oġġetti tas-suq.",
+        "Ivverifika l-unitajiet, il-kwantitajiet minimi u l-livelli tal-prezz 1688.",
+        "Qabbel l-ordni finali importata jew manwali mas-sors."
+      ],
+      "sourceIds": [
+        "buying",
+        "wholesale",
+        "confirmation",
+        "qc"
+      ],
+      "readingMinutes": 6,
+      "wordCount": 1217,
+      "published": "2026-10-29",
+      "modified": "2026-10-29"
     }
   ]
 }

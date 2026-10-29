@@ -18,3 +18,14 @@ html{scroll-padding-top:110px}body{font-size:14px}.container{width:calc(100% - 2
 @media(max-width:800px){.site-header{margin-bottom:0}.main-nav{height:auto}.header-actions{margin-left:0}.step>span{position:absolute;margin:0}.footer-top nav{margin-top:0;flex-direction:row}}
 
 @media(max-width:800px){.guide-grid{grid-template-columns:1fr}.guide-card{display:block}.guide-illustration{display:none}.guide-card-body{padding:13px 14px}.guide-card h3{font-size:14px;line-height:1.45}.article-card-description{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;font-size:12px}.guide-card .text-link{margin-top:7px}.page-intro+.guides-section{padding-top:16px}}
+
+/* Compact editorial entry points stay visible before the catalogue. */
+.priority-guides{padding-top:24px;padding-bottom:28px;border-bottom:1px solid var(--line,#dedbd5)}
+.priority-guides h2{font-size:clamp(1.3rem,2.4vw,1.8rem);margin:6px 0}.priority-guides>div>p{max-width:760px}
+.priority-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:16px}
+.priority-grid>a{display:grid;grid-template-columns:1fr auto;gap:6px;padding:14px;border:1px solid #e2ded7;border-radius:12px;text-decoration:none;color:inherit;background:#fff}
+.priority-grid>a>span:first-child{grid-column:1/-1;font-size:.72rem;color:#776d61}.priority-grid strong{font-size:.93rem;line-height:1.4}.priority-grid>a:hover{border-color:#f16b35}
+.article-next{margin:24px 0;padding:18px;background:#f5eee4;border-radius:12px}.article-next h2{font-size:1.1rem;margin:0 0 10px}.article-next a{display:block;margin:8px 0;color:inherit;font-weight:600;line-height:1.5}
+.main-nav{flex-wrap:wrap}.article-main{min-width:0}.chapter-copy p,.chapter-copy li{overflow-wrap:anywhere}
+@media(max-width:800px){.priority-guides{padding-top:16px;padding-bottom:18px}.priority-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:10px}.priority-grid>a{padding:10px}.priority-grid strong{font-size:.8rem}.priority-grid>a>span:first-child{font-size:.65rem}.priority-guides>div>p{font-size:.86rem;margin:6px 0}.article-next{padding:12px;margin:18px 0}.main-nav{gap:10px}.article-next a{font-size:.88rem}}
+@media(max-width:800px){.header-inner .main-nav{grid-template-columns:repeat(4,minmax(0,1fr));gap:5px}.header-inner .main-nav a{min-height:32px;padding:6px 4px;line-height:1.3;font-size:10px;display:flex;align-items:center;justify-content:center;overflow-wrap:anywhere}.article-chapter{scroll-margin-top:135px}}

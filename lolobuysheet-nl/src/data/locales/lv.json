@@ -20,7 +20,7 @@
     "photo": "Meklēšana pēc attēla",
     "popular": "Izpētiet:",
     "tagline": "Viens katalogs. Jūsu nākamais atklājums.",
-    "source": "Preces no cnfanssp.com",
+    "source": "Produktu atklāšana un iepirkšanās ceļveži",
     "independent": "Neatkarīga LoloBuy preču atklāšanas vietne",
     "browse": "Izpētiet izklājlapu",
     "browseSub": "Nedaudz mazāk meklēšanas. Daudz vairāk atradumu.",
@@ -56,7 +56,7 @@
     "empty": "Nav meklējumam atbilstošu preču.",
     "reset": "Notīrīt filtrus",
     "sourceSearch": "Meklēt visā avota katalogā",
-    "snapshot": "Aktuālais katalogs no cnfanssp.com. Preču cenas CNY neietver piegādi un pakalpojumu maksu. Pašreizējos variantus un gala piedāvājumu pārbaudiet LoloBuy.",
+    "snapshot": "Preču cenas CNY neietver piegādes un pakalpojumu maksas. Pārbaudiet pašreizējās iespējas un gala piedāvājumu LoloBuy.",
     "howTitle": "No atraduma līdz pakas atvēršanai.",
     "howSub": "LoloBuy lietojat pirmo reizi? Sāciet ar šiem trim soļiem.",
     "steps": [
@@ -83,7 +83,7 @@
     "cta": "Atradāt savu nākamo iecienīto preci?",
     "ctaSub": "Atveriet to LoloBuy un pasūtiet.",
     "ctaButton": "Izpētīt visas preces",
-    "footer": "Neatkarīga preču atklāšanas vietne. Mēs neesam oficiālā LoloBuy vietne. Preču sludinājumi un fotoattēli tiek iegūti no cnfanssp.com. Pirkumi tiek pabeigti LoloBuy.",
+    "footer": "Neatkarīga produktu atklāšanas vietne. Mēs neesam LoloBuy oficiālā vietne. Pirkumi tiek pabeigti LoloBuy.",
     "footerLinks": [
       "Izklājlapa",
       "Pirkšanas ceļvedis",
@@ -102,7 +102,7 @@
     "photoTitle": "Atrodiet ar fotoattēlu.",
     "photoIntro": "Izmantojiet avota katalogu, lai atrastu un salīdzinātu preces.",
     "photoState": "Meklēšana pēc attēla avotā",
-    "photoNote": "cnfanssp.com nav apstiprināts publisks attēlu meklēšanas pakalpojums. Mēs nepieņemam fotoattēlu augšupielādi, kamēr avota pakalpojums nav pieejams.",
+    "photoNote": "Pašlaik nav pievienots atbalstīts attēlu meklēšanas pakalpojums. Pārlūkojiet katalogu pēc atslēgvārda vai kategorijas.",
     "browseInstead": "Pārlūkot preces",
     "faqTitle": "LoloBuy: atbildes pirms pasūtīšanas.",
     "faqIntro": "Izpētīts oficiālajās LoloBuy palīdzības lapās. Ja oficiālās lapas atšķiras, atbildē paskaidrots, kas jāpārbauda.",
@@ -124,8 +124,8 @@
     "jump": "Pāriet uz lapu",
     "go": "Pāriet",
     "articlesLabel": "Raksti",
-    "articlesTitle": "Detalizētas zināšanas par iepirkšanos LoloBuy.",
-    "articlesIntro": "Desmit praktiski ceļveži, kas izpētīti oficiālajās LoloBuy palīdzības lapās. Atrodiet preces, pārbaudiet QC, plānojiet budžetu un piegādi ar skaidrāku informāciju.",
+    "articlesTitle": "LoloBuy ceļveži: pasūtīšana, kvalitātes pārbaude, piegāde un maksājumi",
+    "articlesIntro": "Praktiski LoloBuy ceļveži par produktu saitēm, noliktavas pārbaudēm, piegādes izmaksām un maksājumu izvēli. Izvēlieties ceļvedi nākamajam solim.",
     "articleSources": "Oficiālie avoti",
     "reviewed": "Pārskatīts 2026. gada 20. oktobrī",
     "readArticle": "Lasīt rakstu",
@@ -149,7 +149,17 @@
     "nextFind": "NĀKAMAIS ATRADUMS IR JŪSU.",
     "liveLabel": "Atjaunināts no avota",
     "faqCount": "izpētītas atbildes",
-    "catalogue": "Katalogs"
+    "catalogue": "Katalogs",
+    "homeTitle": "LoloBuy preču tabula un iepirkšanās ceļveži | LoloBuy Sheet",
+    "catalogTitle": "Pārlūkojiet LoloBuy atradumus: apģērbu, sporta apavus un aksesuārus",
+    "catalogDescription": "Pārlūkojiet LoloBuy atradumus pa kategorijām, meklējiet visā katalogā un salīdziniet preču cenas. Pirms atbilstošās LoloBuy pirkuma saites atvēršanas pārbaudiet produkta informāciju.",
+    "guidesTitle": "LoloBuy iepirkšanās ceļveži: no produktu saitēm līdz piegādei",
+    "guideMetaTitle": "Kā darbojas LoloBuy: pasūtīšana, kvalitātes pārbaude un starptautiskā piegāde",
+    "shippingNav": "Piegāde",
+    "reviewedLabel": "Atjaunināts",
+    "nextStep": "Turpiniet ar nākamo soli",
+    "priorityTitle": "Pirms pasūtīšanas vai nosūtīšanas",
+    "priorityIntro": "Pārbaudiet produktu, izskatiet noliktavas pierādījumus un salīdziniet visas sūtījuma izmaksas."
   },
   "faqs": [
     {
@@ -450,7 +460,9 @@
         "qc"
       ],
       "readingMinutes": 3,
-      "wordCount": 554
+      "wordCount": 627,
+      "published": "2026-10-20",
+      "modified": "2026-10-29"
     },
     {
       "slug": "how-to-order-on-lolobuy",
@@ -507,6 +519,35 @@
             "Oficiālais process norāda izvēlēties glabātās preces, ievadīt piegādes datus un izvēlēties pieejamās nosūtīšanas iespējas. Kopā pārskatiet galamērķi, ierobežojumus, iepakojuma izvēles un pārvadājuma depozītu. Nopirkta prece automātiski nav starptautiska paka, kas gatava izsūtīšanai.",
             "Gala pārvadājums var atšķirties pēc iepakošanas un loģistikas mērījumiem. Sekojiet pakas ierakstam, vai nav korekciju vai apstiprinājuma pieprasījuma. Pēc nosūtīšanas izmantojiet paku sadaļu izsekošanai, saglabājiet pasūtījumu atsauces un pēc saņemšanas ātri pārbaudiet saturu."
           ]
+        },
+        {
+          "heading": "Izveidojiet atkārtoti izmantojamu pirmā pasūtījuma ierakstu",
+          "paragraphs": [
+            "Pirms pirmā pasūtījuma iesniegšanas sagatavojiet īsu ierakstu ar pārdevēja URL, preces nosaukumu, precīzu variantu, daudzumu, izmēru tabulas atsauci un neatbildētajiem jautājumiem. Ja tulkojums var būt neskaidrs, saglabājiet pārdevēja sākotnējo varianta formulējumu. Komplektam norādiet daļas, kurām jābūt pakā. Šis ieraksts ļauj salīdzināt informāciju maksājot un vēlāk noliktavā, nevis paļauties uz atmiņā palikušu sīktēlu.",
+            "Piemēram, apģērba pasūtījumā var norādīt vienu tumši zilu sporta kreklu pārdevēja M izmērā ar konkrētu tabulā redzamu krūšu platumu, mērot izklātu apģērbu. Tas ir skaidrāks norādījums nekā lūgt vidēja izmēra zilu kreklu. Ja tabula vai krāsas nosaukums ir neskaidrs, pajautājiet pirms pirkuma. Precīzs pieprasījums uzlabo saziņu, taču nepierāda, ka pārdevējam prece ir krājumā vai ka apģērbs derēs."
+          ]
+        },
+        {
+          "heading": "Nošķiriet produkta problēmu no maksājuma problēmas",
+          "paragraphs": [
+            "Ja importētā prece ir nepareiza vai vajadzīgais variants nav pieejams, atrisiniet sludinājuma problēmu pirms maksāšanas. Sākotnējā avotā pārbaudiet, vai pārdevējs mainījis piedāvājumu vai importēšanā izlaista informācija. Ja tiek piedāvāts manuāls pasūtījums, tajā jāsaglabā faktiskās produkta detaļas. ID mainīšana vai aptuveni līdzīga varianta izvēle neatrisina neskaidru pasūtījumu un vēlāk var apgrūtināt neatbilstības dokumentēšanu.",
+            "Ja prece ir pareiza, bet maksājuma statuss neskaidrs, salīdziniet rēķinu, konta atlikumu un maksājumu pakalpojuma sniedzēja ierakstu. Pirms atkārtota mēģinājuma saglabājiet darījuma atsauci un redzamo kļūdu. Ielādes lapa pati par sevi nepierāda neveiksmi. Lūdziet atbalstam izskaidrot neskaidru norakstījumu, nevis veiciet vairākus pārklājošus mēģinājumus. Produkta identitāti, maksājuma statusu un pārdevēja nosūtīšanu uztveriet kā atsevišķus kontrolpunktus: viena posma izdošanās nepierāda nākamā izdošanos."
+          ]
+        },
+        {
+          "heading": "Plānojiet lēmumu noliktavā pirms sūtījuma iesniegšanas",
+          "paragraphs": [
+            "Pirms preču ierašanās izlemiet, kādi pierādījumi nepieciešami. Apģērbam, kura piegulums ir svarīgs, var būt vajadzīgs konkrēts mērījums, bet aksesuāru komplektam — skaidrs visu daļu attēls. Pārbaudiet pieejamo pārbaudes pakalpojumu un tā ierobežojumus. Kad fotoattēli ir gatavi, salīdziniet tos ar saglabāto pasūtījuma ierakstu un uzskaitiet katru neatrisināto detaļu. Pieprasiet konkrētu skatu vai paskaidrojumu, nevis vispārīgu vērtējumu, ka prece izskatās laba.",
+            "Savlaicīgi pārbaudiet piemērojamos atgriešanas nosacījumus, kamēr preces vēl ir noliktavā. Uzglabāšanas laiks un pārdevēja atgriešanas periods ir atšķirīgi termiņi. Gaidot vairāku preču apvienošanu, nevēlamas preces atgriešanas termiņš var beigties. Ja vēlaties apmaiņu vai atgriešanu, noskaidrojiet konkrētās preces atbilstību un paredzamās izmaksas pirms tās ievietošanas starptautiskajā sūtījumā. Nepieņemiet, ka sūtījumu var apturēt pēc katra turpmākā apstrādes soļa."
+          ]
+        },
+        {
+          "heading": "Pabeidziet pasūtījumu ar pilnīgu izmaksu uzskaiti",
+          "paragraphs": [
+            "Preces un vietējo piegādi, izvēlētos pakalpojumus, starptautisko transportu un galamērķa maksas uzskaitiet atsevišķos laukos. Katru maksu pievienojiet tikai vienreiz un norādiet valūtu. Pasūtījumam virzoties uz priekšu, aizstājiet aplēses ar apstiprinātiem rēķiniem, saglabājot agrākos skaitļus salīdzināšanai. Ja transporta cena mainās pēc iepakošanas, sasaistiet korekciju ar sūtījuma atsauci un mērījumiem. Šāds ieraksts piegādātās preces izmaksas izskaidro labāk nekā viena summa bez datuma.",
+            "Pēc piegādes salīdziniet saņemto saturu ar sākotnējo preču sarakstu un problēmas gadījumā saglabājiet iepakojuma pierādījumus. Izmantojiet attiecīgo pasūtījuma vai sūtījuma atbalsta kanālu, aprakstot problēmu un ierakstus, kas to sasaista ar pirkumu. Pirkuma, ierašanās noliktavā, nosūtīšanas un piegādes datumus saglabājiet kā atsevišķus atskaites punktus. Šie novērojumi var palīdzēt nākamajam pasūtījumam, taču nav solījums, ka citam sūtījumam būs tāds pats grafiks.",
+            "Pirms ieraksta noslēgšanas norādiet, kuri soļi prasīja precizējumus un kuri pieņēmumi mainījās. Ja produkta saite bija jāievada manuāli, saglabājiet apstiprinātā varianta tekstu turpmākai atsaucei. Ja transporta aplēse mainījās, saglabājiet izmērītās kastes datus pie sākotnējās aplēses. Šīm piezīmēm jāapraksta tikai jūsu pasūtījums. Pasūtot atkārtoti, pārbaudiet pašreizējo sludinājumu, maksāšanas un piegādes nosacījumus, pat ja prece šķiet identiska. Iepriekš veiksmīgs pirkums nerezervē krājumus un nesaglabā to pašu cenu, pakalpojumu vai pārdevēja noteikumus."
+          ]
         }
       ],
       "checklist": [
@@ -523,8 +564,10 @@
         "qc",
         "freight-balance"
       ],
-      "readingMinutes": 3,
-      "wordCount": 538
+      "readingMinutes": 6,
+      "wordCount": 1257,
+      "published": "2026-10-20",
+      "modified": "2026-10-29"
     },
     {
       "slug": "lolobuy-qc-photos",
@@ -581,6 +624,35 @@
             "Sadaliet konstatēto apstiprinātajā, neskaidrajā un nepieņemamajā. Ja detaļa neskaidra, prasiet pierādījumus. Ja prece šķiet atšķirīga no pasūtījuma, pirms starptautiskās nosūtīšanas izmantojiet atbilstošo atbalsta vai atgriešanas procesu. Saglabājiet īsu problēmas aprakstu un attēlus, kas to pierāda.",
             "Fotoattēli nevar noteikt visas materiāla īpašības, komfortu, ilgtermiņa izturību vai iekšējo darbību. Redzamā stāvokļa apstiprināšana ir šaurāks lēmums. Izlasiet atgriešanas noteikumus, kamēr prece vēl noliktavā, un neuztveriet veiksmīgu QC kā solījumu par muitu vai starptautisko piegādi."
           ]
+        },
+        {
+          "heading": "Pārvērtiet apģērba pārbaudi skaidrā pieprasījumā",
+          "paragraphs": [
+            "Sāciet ar mērījumiem, kas ietekmē piegulumu, nevis lūdziet noliktavai izlemt, vai apģērbs jums ir pareizā izmērā. Sporta kreklam var būt nepieciešams izklāta apģērba krūšu platums, garums un piedurknes garums, mērot no tiem pašiem punktiem kā pārdevēja tabulā. Norādiet metodi un mērvienību. Izmēra etiķete ir noderīgs identitātes pierādījums, bet neaizstāj apģērba mērījumus.",
+            "Ja tabulā norādīts ķermeņa apkārtmērs, bet fotoattēlā redzams izklāta apģērba platums, nesalīdziniet šos skaitļus tieši. Pārbaudiet mērlentes sākumu un beigas, vai apģērbs ir izklāts līdzeni un vai skaitli var nolasīt. Arī apgaismojums un perspektīva var mainīt krāsas izskatu. Ja krāsa ir svarīga, lūdziet skaidrāku attēlu, apzinoties, ka ekrānā redzama fotogrāfija nevar garantēt precīzu reālo toni."
+          ]
+        },
+        {
+          "heading": "Pārbaudiet apavus un aksesuārus bez pārspīlētiem secinājumiem",
+          "paragraphs": [
+            "Apaviem salīdziniet abus apavus, redzamos izmēra marķējumus, kopējo formu un ar jūsu bažām saistītās vietas. Ja vajadzīgs noteikts mērījums vai tuvplāns, skaidri to norādiet. Somai pārbaudiet redzamos rokturus, aizdares un paredzētās daļas. Daudzdaļīgam aksesuāram izveidojiet komplektācijas sarakstu un salīdziniet to ar attēliem, nevis pieņemiet, ka slēgtā kastē ir viss.",
+            "Redzamu šuves vai virsmas defektu var dokumentēt ar tuvplānu un atrašanās vietu. Slēptai konstrukcijai, lietošanas ērtumam, materiāla sastāvam un ilgtermiņa izturībai parasti vajadzīgi citi pierādījumi. Neuztveriet noliktavas fotogrāfiju kā autentiskuma sertifikātu vai profesionālu funkcionalitātes testu. Aizzīmogotām precēm vai specializētai elektronikai izlasiet pārbaudes izņēmumus, pirms izlemjat, vai pakalpojums atbild uz jūsu faktisko jautājumu."
+          ]
+        },
+        {
+          "heading": "Nošķiriet neskaidrību no apstiprināta defekta",
+          "paragraphs": [
+            "Piezīmēs izmantojiet trīs vienkāršus statusus: apstiprināta atbilstība, nepieciešami papildu pierādījumi un novērota neatbilstība. Piemēram, nenolasāma izmēra etiķete pieder otrajam statusam, līdz pieejams skaidrāks attēls; skaidri atšķirīga etiķete pieder trešajam. Tas novērš trūkstoša attēla aprakstīšanu kā pierādītu defektu un neļauj pievilcīgam kopskatam paslēpt neatbildētu jautājumu.",
+            "Katram neatrisinātajam punktam pierakstiet pasūtījuma numuru, attiecīgo attēlu, precīzu jautājumu un nākamo darbību. Saņemot atbildi, atjauniniet šo punktu, nevis aizstājiet visu ierakstu ar neskaidru apstiprinājumu. Ja neatbilstība paliek, noskaidrojiet piemērojamo risinājumu, kamēr prece vēl atrodas noliktavā. Saglabājiet kopā pārdevēja piekrišanu, atgriešanas prasības un maksas. Atgriešanas pieprasīšana nav tas pats, kas tās apstiprināšana."
+          ]
+        },
+        {
+          "heading": "Pieņemiet lēmumu pirms nākamā termiņa",
+          "paragraphs": [
+            "Pārskatiet preci drīz pēc noliktavas informācijas pieejamības. LoloBuy atgriešanas norādījumi paredz, ka atbilstība ir atkarīga no pasūtījuma, pārdevēja un laika. Vispārējs uzglabāšanas periods nepagarina atgriešanas termiņu. Izlasiet precei piemērojamo termiņu un stāvokļa prasības un saglabājiet oriģinālo iepakojumu, ja tas var būt vajadzīgs. Neatlieciet nepieciešamu jautājumu tikai tāpēc, ka citas plānotā sūtījuma preces vēl nav ieradušās.",
+            "Apstiprinot preci nosūtīšanai, pierakstiet, kas faktiski pārbaudīts un kas paliek nezināms. Piemēram, identitāte un redzamie mērījumi var būt apstiprināti, kamēr ērtums un izturība nav pārbaudīti. Sasaistiet šo ierobežoto secinājumu ar preces atsauci. Pirms sūtījuma iesniegšanas pārskatiet neatrisinātās bažas, īpaši ja iepakojuma maiņa noņemtu ierakstam būtiskas etiķetes vai oriģinālo iepakojumu. Tā veidojas noderīga lēmumu vēsture, neizliekoties, ka kvalitātes pārbaude novērš visus pirkuma riskus.",
+            "Saglabājiet sākotnējos attēlus kopā ar īsu lēmuma piezīmi, nevis tikai apgrieztu detaļu. Plašāks attēls palīdz sasaistīt jautājumu ar pareizo preci, un pasūtījuma atsauce sasaista fotogrāfiju ar pirkumu. Ja vēlāk cits attēls atrisina jautājumu, saglabājiet abus un norādiet, kas mainījās. Neizpaudiet personisku pasūtījuma informāciju publiski. Noderīgs ieraksts ir konkrēts novērojums ar izsekojamu avotu, nevis nepamatots vērtējums vai apgalvojums, ka pārbaudīta katra pārdevēja prece."
+          ]
         }
       ],
       "checklist": [
@@ -594,15 +666,18 @@
         "qc",
         "photos",
         "service",
-        "sizing"
+        "sizing",
+        "returns"
       ],
-      "readingMinutes": 3,
-      "wordCount": 551
+      "readingMinutes": 6,
+      "wordCount": 1256,
+      "published": "2026-10-20",
+      "modified": "2026-10-29"
     },
     {
       "slug": "lolobuy-shipping-costs",
-      "title": "LoloBuy piegādes izmaksas: salīdziniet visu paku",
-      "description": "Izprotiet paredzēto, faktisko un tilpumsvaru, tad salīdziniet maršrutus ar vienādu galamērķi, saturu un iepakojumu.",
+      "title": "LoloBuy piegādes izmaksas: kalkulators, svars un maksas",
+      "description": "Izmantojiet LoloBuy piegādes kalkulatoru, salīdziniet faktisko un tilpumsvaru un pārbaudiet iepakošanas iespējas, transporta korekcijas un visu sūtījuma budžetu.",
       "keyword": "lolobuy shipping calculator",
       "category": "Piegāde",
       "summary": "Noderīgs pārvadājuma salīdzinājums sākas ar vienu skaidri definētu paku. Ceļvedis skaidro ievaddatus un pārbaudes; tas nav aktuāls piegādes cenas piedāvājums.",
@@ -655,6 +730,35 @@
             "LoloBuy papildu maksājumu norādījumi saka, ka paredzēto pārvadājumu saskaņo ar loģistikas sniedzēja faktisko maksu. Tas var nozīmēt pārmaksas atmaksu vai papildu maksājumu. Lasiet pakas ziņas un atbildiet uz jūsu sūtījumam pievienotiem pieprasījumiem.",
             "Sākotnējo aplēsi, gala apmaksājamos mērījumus, izvēlētos pakalpojumus un korekciju glabājiet kopā. Šis ieraksts palīdz saprast atšķirību. Iespējamās galamērķa maksas budžetējiet atsevišķi un pārbaudiet gala pakas summu, pirms uzskatāt pasūtījumu par pabeigtu."
           ]
+        },
+        {
+          "heading": "Izmantojiet oficiālo kalkulatoru ar saglabātu sākuma variantu",
+          "paragraphs": [
+            "Atveriet pašreizējo LoloBuy piegādes kalkulatoru un izvēlieties faktisko galamērķi. Ievadiet prasīto saturu, svaru un izmērus norādītajās mērvienībās. Saglabājiet datumu, ievades vērtības, izvēlēto pakalpojumu un valūtu kopā ar rezultātu. Ja preces vēl nav noliktavā, atzīmējiet mērījumus kā aplēses. Tas ir svarīgi, jo pārdevēja aptuvenais preces svars neapraksta gatavu kasti ar ārējo iepakojumu.",
+            "Saglabājiet vienu sākuma variantu pirms iepakojuma maiņas vai preces izņemšanas. Katram alternatīvam variantam mainiet vienu lielumu un, ja iespējams, pārējos atstājiet nemainīgus. Ja, mainot preču kategoriju, maršruts pazūd, šis ierobežojums ir rezultāta daļa; nepareizas kategorijas izvēle lētākam piedāvājumam nepadara maršrutu piemērotu. Salīdziniet tikai faktiskajām precēm un galamērķim piedāvātos pakalpojumus un skaidri saglabājiet neatbildētos atbilstības jautājumus."
+          ]
+        },
+        {
+          "heading": "Veidojiet salīdzinājumu, kurā iekļauti visi sūtījumi",
+          "paragraphs": [
+            "Katrai pilnai piegādes shēmai izmantojiet vienu rindu. Norādiet saturu, paku skaitu, faktisko svaru, izmērus, iepakošanas pakalpojumus, maršrutu un kopējo transporta cenu. Divu paku variantam saskaitiet abus pilnos piedāvājumus pirms salīdzināšanas ar vienu apvienotu sūtījumu. Atsevišķas minimālās maksas var ietekmēt rezultātu. Mazāka summa tikai pirmajai pakai nepierāda, ka visa pasūtījuma sadalīšana ir lētāka.",
+            "Jēgpilns salīdzinājums reģistrē arī aizsardzības un pakalpojumu atšķirības. Vienā variantā apavu kaste var saglabāties, citā to izņem; vienā var būt nostiprināšana, otrā ne. Pierakstiet šīs izmaiņas, lai summa neslēptu atšķirīgu rezultātu. Ja galīgie mērījumi nav pieejami, uztveriet salīdzinājumu kā plānošanas informāciju un atkārtojiet to pēc iepakošanas datu apstiprināšanas. Nepārvērtiet paredzēto ietaupījumu garantētā gala rēķinā."
+          ]
+        },
+        {
+          "heading": "Pārbaudiet mainījušos aplēsi pa rindām",
+          "paragraphs": [
+            "Ja gala transporta cena atšķiras no saglabātās aplēses, vispirms salīdziniet galamērķi, izvēlētās preces, faktisko svaru un kastes izmērus. Pēc tam pārbaudiet maršrutu, aprēķina soli, papildpakalpojumus un valūtu. Smagāka ārējā kaste, apjomīga prece vai cits pakalpojums var izskaidrot izmaiņas pat tad, ja preču saraksts šķiet līdzīgs. Vaicājiet par konkrēto mainīto mērījumu vai rēķina pozīciju, nevis pieņemiet, ka katra atšķirība nozīmē vienu un to pašu maksu.",
+            "Sākotnējo iemaksu un vēlākas korekcijas sasaistiet ar vienu sūtījuma atsauci. Pārmaksas ieskaitīšana kontā un atmaksa ārējam maksāšanas līdzeklim ir atšķirīgi ieraksti. Pārbaudiet, kur summa ieskaitīta vai kāda piemaksa vēl jāsamaksā. Ja skaidrojums ir nepilnīgs, saglabājiet abus piedāvājumus un uzdodiet konkrētam pasūtījumam atbilstošu jautājumu. Tas ir noderīgāk nekā salīdzināt savu kopsummu ar nesaistītu paku citā galamērķī vai datumā."
+          ]
+        },
+        {
+          "heading": "Nošķiriet transportu no visa piegādes budžeta",
+          "paragraphs": [
+            "Starptautiskā transporta summa var neietvert visus maksājumus, kas saistīti ar preču saņemšanu. Atsevišķi pārskatiet sākotnējo pirkumu, vietējo piegādi, izvēles darbus noliktavā, maksājumu komisijas un galamērķa izmaksas. Skaidri atzīmējiet iekļautu pakalpojumu, lai to neskaitītu divreiz. Tukšai summai jāpaliek atrisināmam jautājumam, nevis nemanāmi jākļūst par nulli kopējo piegādes izmaksu aplēsē.",
+            "Pirms maksāšanas pārbaudiet pašreizējo galamērķa informāciju un izvēlētā pakalpojuma norādīto saturu. Neizseciniet muitas režīmu vai pircēja aizsardzību no maršruta iesaukas. Ja vēlāk publicējat piegādes piemēru, iekļaujiet datumu, saturu, galamērķi, izmērīto kasti un piedāvātās summas tvērumu, izņemot personas datus. Labi dokumentēts vēsturisks gadījums palīdz lasītājiem atkārtot salīdzinājumu, bet atsevišķa cena nenosaka tarifu viņu pakai.",
+            "Salīdzinājuma tabula var būt vienkārša: viena rinda katram variantam ar piedāvājuma datumu, galamērķi, precēm, svara avotu, izmēriem, maršrutu, summu un neatrisinātajiem jautājumiem. Pievienojiet pēdējo kolonnu apstiprinātajam rezultātam, kad paka nosūtīta. Neaizstājiet sākotnējo aplēsi, nesaglabājot ievades datus, jo tad pazustu atšķirības skaidrojums. Ja kāds lielums vēl nav zināms, iegūstiet to no pašreizējā sūtījuma ieraksta vai atbalsta pirms droša salīdzinājuma. Izmantojiet šo metodi katram jaunam sūtījumam, nevis attieciniet vienu vēsturisku cenu uz visiem nākamajiem pirkumiem."
+          ]
         }
       ],
       "checklist": [
@@ -668,10 +772,13 @@
         "buying",
         "weight",
         "packaging",
-        "freight-balance"
+        "freight-balance",
+        "estimate"
       ],
-      "readingMinutes": 3,
-      "wordCount": 519
+      "readingMinutes": 6,
+      "wordCount": 1225,
+      "published": "2026-10-20",
+      "modified": "2026-10-29"
     },
     {
       "slug": "lolobuy-warehouse-consolidation",
@@ -746,7 +853,9 @@
         "freight-balance"
       ],
       "readingMinutes": 3,
-      "wordCount": 513
+      "wordCount": 586,
+      "published": "2026-10-20",
+      "modified": "2026-10-29"
     },
     {
       "slug": "lolobuy-sizing-guide",
@@ -819,7 +928,9 @@
         "returns"
       ],
       "readingMinutes": 3,
-      "wordCount": 535
+      "wordCount": 619,
+      "published": "2026-10-20",
+      "modified": "2026-10-29"
     },
     {
       "slug": "lolobuy-tracking-guide",
@@ -893,7 +1004,9 @@
         "freight-balance"
       ],
       "readingMinutes": 3,
-      "wordCount": 504
+      "wordCount": 601,
+      "published": "2026-10-20",
+      "modified": "2026-10-29"
     },
     {
       "slug": "lolobuy-returns-refunds",
@@ -968,7 +1081,9 @@
         "changes"
       ],
       "readingMinutes": 3,
-      "wordCount": 513
+      "wordCount": 602,
+      "published": "2026-10-20",
+      "modified": "2026-10-29"
     },
     {
       "slug": "lolobuy-order-budget",
@@ -1050,8 +1165,10 @@
         "freight-balance",
         "wholesale"
       ],
-      "readingMinutes": 3,
-      "wordCount": 575
+      "readingMinutes": 4,
+      "wordCount": 662,
+      "published": "2026-10-20",
+      "modified": "2026-10-29"
     },
     {
       "slug": "lolobuy-seller-and-review-checks",
@@ -1125,7 +1242,280 @@
         "returns"
       ],
       "readingMinutes": 3,
-      "wordCount": 531
+      "wordCount": 604,
+      "published": "2026-10-20",
+      "modified": "2026-10-29"
+    },
+    {
+      "slug": "lolobuy-shipping-netherlands",
+      "title": "LoloBuy piegāde uz Nīderlandi: izmaksas, termiņi un sūtījuma pārbaudes",
+      "description": "Plānojiet LoloBuy sūtījumu uz Nīderlandi: salīdziniet kalkulatora datus, iepakojumu, piegādes posmus un importa maksājumu pārbaudei vajadzīgos dokumentus.",
+      "keyword": "LoloBuy piegāde uz Nīderlandi",
+      "category": "Piegāde uz Nīderlandi",
+      "summary": "Salīdzinot transportu, izmantojiet Nīderlandi kā faktisko galamērķi. Saglabājiet datētu piedāvājumu, nošķiriet piegādes posmus un pirms maksāšanas pārbaudiet aktuālos Nīderlandes muitas norādījumus.",
+      "sections": [
+        {
+          "heading": "Sāciet ar uz Nīderlandi sūtāmās pakas aprakstu",
+          "paragraphs": [
+            "Noderīgs LoloBuy piegādes salīdzinājums sākas ar paku, kuru vēlaties saņemt, nevis cenu, ko samaksājis kāds cits. Pierakstiet galamērķa valsti, pasta indeksu, preču sarakstu, daudzumus un iepakojumu, kam jāpaliek pie precēm. Maršruts, kas pieejams nelielai apģērbu pakai, var nepieņemt citādu preču kombināciju. Valsts vien nenosaka, ka jūsu paka ir piemērota.",
+            "Izveidojiet divus sarakstus: jau apstiprinātos faktus un vēl aptuveno informāciju. Pārdevēja izmēri, noliktavas preces svars un gatavas kastes izmēri ir atšķirīgi ieraksti. Atzīmējiet avotus, lai zinātu, kas jāatjaunina pēc preču ierašanās. Ja dāvanu kastītei jāpaliek neskartai, norādiet to pirms lētākas iepakošanas iespējas salīdzināšanas, kurā paredzēta tās izņemšana. Šī izvēle var ietekmēt gan aizsardzību, gan tilpumu."
+          ]
+        },
+        {
+          "heading": "Lasiet cenu pa atsevišķiem posmiem",
+          "paragraphs": [
+            "LoloBuy oficiālais pirkšanas ceļvedis nošķir pirmo samaksu par precēm un piegādi Ķīnā no vēlākas starptautiska sūtījuma iesniegšanas. Pasūtot uz Nīderlandi, turiet šos posmus budžetā atsevišķi. Kataloga cena ir sākumpunkts precei, nevis piedāvājums piegādei līdz jūsu durvīm. Pievienojiet tikai izmaksas, ko faktiski apstiprina pašreizējais pasūtījuma vai sūtījuma ieraksts.",
+            "Veidojiet vienkāršu uzskaiti ar kolonnām precei, vietējai piegādei, izvēles noliktavas pakalpojumiem, starptautiskajam transportam, maksājumu izmaksām un galamērķa maksām. Pie katras summas norādiet valūtu. Ja maksa jau iekļauta piedāvājumā, atzīmējiet to kā iekļautu, nevis pieskaitiet vēlreiz. Neatbildētam laukam jāpaliek neatrisinātam. Kopsumma ar skaidru iztrūkumu ir noderīgāka nekā maldinoši precīza summa, kas visām trūkstošajām izmaksām pieņem nulli."
+          ]
+        },
+        {
+          "heading": "Sagatavojiet atkārtojamu kalkulatora salīdzinājumu",
+          "paragraphs": [
+            "Atveriet LoloBuy oficiālo transporta kalkulatoru un izvēlieties Nīderlandi kā galamērķi. Ievadiet prasīto svaru, izmērus un preču kategoriju pašreizējā formā norādītajās vienībās. Pirms rezultātu salīdzināšanas pārbaudiet gramus un kilogramus. Nepareizā vienībā ievadīts svars apraksta citu paku, pat ja iegūtais ekrāns izskatās ticams. Saglabājiet ievades datus kopā ar piedāvātajām iespējām.",
+            "Katram piemērotajam maršrutam pierakstiet piedāvājuma datumu, valūtu, summu, paredzamo pārvadājuma laiku, izsekošanas informāciju un norādītos ierobežojumus. Salīdzinājumā saglabājiet identisku saturu un izmērus. Ja maršrutam vajadzīga cita iepakošanas metode, skaidri atzīmējiet atšķirību. Nepārvērtiet vecu ekrānattēlu pašreizējā cenu tabulā. Noderīgu salīdzinājumu var atkārtot ar izmērītiem noliktavas datiem, kad tie pieejami."
+          ]
+        },
+        {
+          "heading": "Saprotiet, ko maina vieglāka vai mazāka kaste",
+          "paragraphs": [
+            "Faktiskais svars mēra masu; tilpumsvars atspoguļo pakas aizņemto telpu saskaņā ar maršruta aprēķina noteikumiem. LoloBuy svara norādījumi apraksta no maršruta atkarīgas formulas. Lasiet aktuālos nosacījumus, nevis piemērojiet vienu dalītāju katram pakalpojumam. Pārbaudiet arī noapaļošanu, minimālās maksas un papildu svara soli. Neliels fiziskā svara samazinājums var atstāt paku tajā pašā cenu joslā.",
+            "Aplūkojiet ilustratīvu kasti ar izmēriem 40 × 30 × 20 centimetri. Tās tilpums ir 24 000 kubikcentimetru. Pie hipotētiska dalītāja 6000 tilpumsvars būtu 4 kilogrami. Vienas malas samazināšana līdz 15 centimetriem dotu 3 kilogramus pēc tā paša pieņemtā noteikuma. Šis aprēķins izskaidro iepakojuma salīdzināšanu; tas neapstiprina pieejamu LoloBuy maršrutu, transporta cenu vai garantētu ietaupījumu."
+          ]
+        },
+        {
+          "heading": "Salīdziniet apvienošanu ar atsevišķām pakām",
+          "paragraphs": [
+            "Ja noliktavā ir vairākas preces, salīdziniet vienu apvienotu paku ar visu iecerēto atsevišķo paku kopējo summu. Izmantojiet vienu galamērķi un katrā variantā iekļaujiet iepakošanas pakalpojumus. Mazāka summa pie vienas sadalītā sūtījuma pakas nav visa groza nosūtīšanas cena. Katrai pakai var būt sava minimālā maksa un atsevišķa apstrāde galamērķī.",
+            "Aizsardzība un ierobežojumi var būt svarīgāki par zemāko sākotnējo transporta cenu. Trauslai precei var vajadzēt atsevišķu iepakojumu vai nostiprināšanu, bet liela kaste var noteikt citādi kompaktas pakas tilpumu. Lūdziet izvērtēt tieši vēlamo izvietojumu. Saglabājiet nepieciešamo aizsardzību un pārbaudiet, vai izvēlētais pakalpojums pieņem faktisko saturu. Apvienošana ir izvērtējams lēmums, nevis automātisks zemāku izmaksu solījums."
+          ]
+        },
+        {
+          "heading": "Uztveriet piegādes laiku kā posmu secību",
+          "paragraphs": [
+            "Nošķiriet pārdevēja nosūtīšanu, piegādi Ķīnas noliktavai, pārbaudi, pakas sagatavošanu, starptautisko transportu, apstrādi galamērķī un gala piegādi. Pārvadātāja laika aplēse var aptvert tikai daļu šīs secības. Pirms salīdzināšanas ar cita pircēja kopējo gaidīšanas laiku norādiet atskaites punktu, no kura sākas aplēse. Pasūtījuma apstiprinājums un pārvadātāja pieņemšana nav viens sākuma notikums.",
+            "Pēc nosūtīšanas sekojiet sūtījuma atsaucei kontā un ar to saistītajai pārvadātāja informācijai. Izveidots izsekošanas numurs pats par sevi nepierāda, ka pārvadātājs fiziski saņēmis paku. Ja progress nav skaidrs, jautājiet, kurš posms pabeigts un pie kura dalībnieka atrodas paka. Laika ziņā svarīgam pirkumam paredziet rezervi, nevis uzskatiet paredzamo ierašanās intervālu par garantētu datumu."
+          ]
+        },
+        {
+          "heading": "Pārbaudiet aktuālo Nīderlandes importa informāciju",
+          "paragraphs": [
+            "Pirms maksāšanas iepazīstieties ar Nīderlandes muitas aktuālo informāciju par tiešsaistes pirkumiem no valstīm ārpus Eiropas Savienības. Norādījumos nošķirts PVN, muitas nodoklis un pārvadātāja apstrādes izmaksas. Zemas vērtības sūtījumu noteikumi mainījās 2026. gada jūlijā, tādēļ vecāks ceļvedis, kas apgalvo, ka mazvērtīgam pirkumam automātiski nav muitas nodokļa, nav derīgs pašreizējam aprēķinam. Pārbaudiet faktiskajām precēm un importa datumam piemērojamos noteikumus.",
+            "Saglabājiet kopā preču aprakstus, pirkuma summas, valūtu un jau iekasētos nodokļus vai nodevas. Jautājiet pārvadātājam vai pārdevējam, kā dokumentēta iekļautā maksa un kas vēl jāmaksā. Transporta līnijas iesauka nenosaka jūsu pakas nodokļu režīmu. Šis ceļvedis neaprēķina universālu Nīderlandes muitas rēķinu: nozīme ir klasifikācijai, darījumam un piemērojamajai procedūrai. Sniedzot prasīto informāciju, izmantojiet precīzus aprakstus un vērtības."
+          ]
+        },
+        {
+          "heading": "Saskaņojiet gala transporta maksu un saglabājiet pierādījumus",
+          "paragraphs": [
+            "LoloBuy oficiālie transporta norādījumi apraksta aplēses iekasēšanu un vēlāku saskaņošanu ar loģistikas cenu. Salīdziniet korekcijas ar galīgo iepakotās pakas svaru, izmēriem, maršrutu un izvēlētajiem pakalpojumiem. Ja summa mainās, nosakiet mainīto ievades lielumu, pirms pieņemat, ka aplēse bija fiksēta saistība. Sākotnējo piedāvājumu un gala sūtījuma rēķinu glabājiet vienā ierakstā.",
+            "Kad piegāde saņemta, salīdziniet saturu ar saglabāto preču sarakstu un pārbaudiet iepakojumu pirms izmešanas. Saglabājiet fotogrāfijas, ja kaut kas trūkst vai ir bojāts, un izmantojiet problēmai atbilstošo pasūtījuma vai sūtījuma atbalsta procesu. Pārdevēja atgriešana, starptautiska sūtījuma pretenzijas un pārvadātāja maksas ietver atšķirīgus ierakstus. Laba dokumentācija padara pieprasījumu skaidrāku, nesolot konkrētu atmaksu vai risinājumu."
+          ]
+        },
+        {
+          "heading": "Izveidojiet noderīgu ierakstu nākamajam pasūtījumam",
+          "paragraphs": [
+            "Pēc pasūtījuma pabeigšanas saglabājiet godīgi salīdzināmos datus: datumu, galamērķi, faktiskās preces, izmērīto kasti, izvēlēto pakalpojumu, gala transporta maksu un novērotos piegādes posmus. Pirms piemēra kopīgošanas izņemiet personisko adresi. Vēsturisks sūtījums var palīdzēt citam pircējam izprast procesu, taču tam jāpaliek vienam datētam gadījumam, nevis vispārīgam cenas vai piegādes solījumam.",
+            "Izmantojiet šo ierakstu, lai uzlabotu nākamo aplēsi. Atzīmējiet, vai maksu noteica tilpums vai svars, vai papildpakalpojums mainīja kasti un kura budžeta pozīcija sākumā izlaista. Pirms skaitļu atkārtotas lietošanas pārbaudiet, vai galamērķis, saturs un pašreizējie maršruta nosacījumi joprojām sakrīt. Atkārtojama metode ir noderīgāka nekā lētāk izskatīga skaitļa savākšana no citas pakas."
+          ]
+        }
+      ],
+      "checklist": [
+        "Pašreizējā piedāvājumā izvēlieties Nīderlandi un pareizo pasta indeksu.",
+        "Maršrutu salīdzināšanai saglabājiet identisku svaru, tilpumu un saturu.",
+        "Nošķiriet noliktavas laiku, starptautisko pārvadājumu un gala piegādi.",
+        "Pārbaudiet aktuālos Nīderlandes importa norādījumus un jau iekasētās summas.",
+        "Saglabājiet sākotnējo un galīgo sūtījuma rēķinu kopā."
+      ],
+      "sourceIds": [
+        "buying",
+        "weight",
+        "packaging",
+        "freight-balance",
+        "estimate"
+      ],
+      "readingMinutes": 6,
+      "wordCount": 1222,
+      "published": "2026-10-29",
+      "modified": "2026-10-29"
+    },
+    {
+      "slug": "lolobuy-payment-methods-fees",
+      "title": "LoloBuy maksājumu veidi un maksas: norēķini, valūta un atlikums",
+      "description": "Pārbaudiet LoloBuy maksājumu veidus norēķinu laikā, salīdziniet pilnu norakstījumu un nošķiriet konta kredītus no atmaksas uz sākotnējo maksāšanas līdzekli.",
+      "keyword": "LoloBuy maksājumu veidi",
+      "category": "Maksājumi un maksas",
+      "summary": "Sasaistiet katru maksājumu ar preces pasūtījumu vai sūtījuma rēķinu. Salīdziniet aktuālo kopsummu un valūtu, saglabājiet darījuma atsauci un pārbaudiet, kur ieskaitīta atmaksa.",
+      "sections": [
+        {
+          "heading": "Sāciet ar rēķinu, kuru plānojat apmaksāt",
+          "paragraphs": [
+            "Pirms maksāšanas veida izvēles nosakiet rēķina priekšmetu. Tas var attiekties uz produkta pasūtījumu, vietējo piegādi, starptautisko transportu, korekciju vai konta papildināšanu. LoloBuy oficiālais pirkšanas process nošķir preču maksājumu no vēlākā sūtījuma maksājuma. Veiksmīgs pirmais darījums nepierāda, ka visi vēlākie pirkuma posmi jau apmaksāti.",
+            "Turiet pasūtījuma vai sūtījuma numuru, summu un valūtu blakus maksājuma ekrānam. Ja vairākiem rēķiniem ir līdzīgas summas, atšķiriet tos pēc atsaucēm, nevis tikai summas. Pirms maksājumu kanālu salīdzināšanas pārliecinieties par izvēlēto preču un daudzumu pareizību. Nepareizas preces pasūtījuma risināšana pēc maksājuma ir cits uzdevums nekā ērtas apmaksas izvēle pareizajam pasūtījumam."
+          ]
+        },
+        {
+          "heading": "Pārbaudiet metodes pašreizējā norēķinu lapā",
+          "paragraphs": [
+            "LoloBuy publiskais pirkšanas ceļvedis nosauc vairākas maksājumu kategorijas, tostarp kartes, Ķīnas maksājumu pakalpojumus un bankas pārskaitījumu. Vispārējs palīdzības saraksts ir konteksts, nevis pierādījums, ka katra metode pašlaik pieejama katram kontam, valstij, valūtai vai rēķinam. Izlasiet jūsu darījumam faktiski piedāvātās metodes un pie tām redzamo atbilstības vai verifikācijas informāciju.",
+            "Neizseciniet pašreizējo maksu vai norēķinu laiku no logotipa vecā pamācībā. Ja kanāls nav pieejams, saglabājiet redzamo paziņojumu un pārbaudiet pie oficiālā atbalsta, nevis pieņemiet, ka piemērota citas valsts izvēle. Izmantojiet savus faktiskos norēķinu datus. Ja norēķinu lapa prasa izvēlēties valūtu, pierakstiet to pirms cita kanāla salīdzināšanas, lai abas kopsummas aprakstītu līdzvērtīgus pirkumus."
+          ]
+        },
+        {
+          "heading": "Nošķiriet izmaksu slāņus",
+          "paragraphs": [
+            "Pilns salīdzinājums nošķir pamatrēķinu, platformas maksājuma komisiju, valūtas konvertēšanu un ārējā pakalpojuma sniedzēja maksu. Daļa var būt iekļauta redzamajā kopsummā, bet citas banka vai maksājumu sniedzējs var rādīt atsevišķi. Pierakstiet zināmo un vēl pārbaudāmo. Nepieskaitiet komisiju divreiz tikai tāpēc, ka tā parādās gan sadalījumā, gan gala summā.",
+            "Procentuālai komisijai nosakiet summu, kurai procentu piemēro. Fiksētai maksai pierakstiet valūtu un to, vai tā jāmaksā par katru darījumu. Fiksēta maksa mazu pirkumu var ietekmēt citādi nekā lielu. Šis ceļvedis nepublicē nemainīgu tarifu tabulu, jo noderīgais skaitlis ir visa summa, ko jūs apstiprinātu par pašreizējo rēķinu saskaņā ar aktuālajiem nosacījumiem."
+          ]
+        },
+        {
+          "heading": "Salīdziniet vienu rēķinu vienā valūtā",
+          "paragraphs": [
+            "Pieņemsim, ka divi maksājuma ekrāni attiecas uz to pašu ilustratīvo preču rēķinu. Viens rāda pilnu norakstījumu 102 jūsu norēķinu valūtas vienības, otrs — 104. Ja mazākajā skaitlī nav papildu pakalpojuma sniedzēja komisijas, salīdzinājums ir nepilnīgs. Reģistrējiet katras iespējas apstiprināto kopsummu un norādiet nenoskaidrotās maksas, nevis pasniedziet lielo cenu kā galīgās izmaksas.",
+            "Ja kontā ieskaita vienu valūtu, bet banka noraksta citu, saglabājiet abas summas. Ieskaitītās summas dalīšana ar faktisko norakstījumu dod šī konkrētā darījuma efektīvo maiņas attiecību. Tā nenosaka universālu platformas maiņas kursu. Salīdziniet alternatīvas vienā laikā un vienam rēķinam un atšķiriet piedāvāto kursu no gala summas, kas reģistrēta pēc norēķina."
+          ]
+        },
+        {
+          "heading": "Konta papildināšanu turiet atsevišķi no pasūtījuma apmaksas",
+          "paragraphs": [
+            "Naudas pievienošana platformas kontam rada atlikuma ierakstu. Pasūtījuma apmaksa izmanto līdzekļus vai citu maksājumu kanālu konkrēta rēķina segšanai. Šie notikumi var būt tuvu laikā, taču atbild uz dažādiem jautājumiem. Pēc papildināšanas pārbaudiet kredīta ierakstu; pēc apmaksas — saistītā pasūtījuma vai sūtījuma statusu. Atlikuma pieaugums vien nepierāda, ka iecerētais pasūtījums apmaksāts.",
+            "Īsā uzskaitē var būt viena rinda ārējam maksājumam, viena atlikuma kredītam un viena pasūtījuma atskaitījumam ar tos savienojošām atsaucēm. Tas ir īpaši noderīgi, finansējot vairākus pasūtījumus. Neuztveriet atlikušo atlikumu kā atlaidi nākamajam pirkumam: tā ir nauda, kuras agrākās papildināšanas izmaksas joprojām pieder kopējai uzskaitei. Neizmantotos līdzekļus reģistrējiet atsevišķi no pabeigto pirkumu izmaksām."
+          ]
+        },
+        {
+          "heading": "Rīkojieties uzmanīgi ar gaidošu vai neveiksmīgu maksājumu",
+          "paragraphs": [
+            "Ja maksājuma lapa apstājas vai ziņo par kļūmi, pirms atkārtošanas salīdziniet rēķina statusu, konta vēsturi un pakalpojuma sniedzēja ierakstu. Gaidoša bankas autorizācija un apstiprināts platformas maksājums ir dažādi stāvokļi. Saglabājiet laiku, darījuma atsauci un precīzu paziņojumu. Šie fakti ļauj atbalstam pārbaudīt konkrētu mēģinājumu, nevis minēt pēc pašreizējā atlikuma ekrānattēla.",
+            "Ja pakalpojuma sniedzējs rāda norakstījumu, bet rēķins joprojām nav apmaksāts, sazinieties ar attiecīgo atbalsta kanālu un iesniedziet saistītos ierakstus. Nepieņemiet, ka katrs gaidošais maksājums tiks pabeigts vai atcelts vienā universālā termiņā. Pajautājiet, kāds statuss ir apstiprināts un kāda darbība nepieciešama. Daloties ar pierādījumiem, aizklājiet pilnus kartes datus un nesaistītu konta darbību. Saglabājiet darījuma identifikatorus, kas vajadzīgi lietas sasaistīšanai."
+          ]
+        },
+        {
+          "heading": "Saprotiet, kur nonāk atmaksa",
+          "paragraphs": [
+            "LoloBuy atgriešanas norādījumi parasti apraksta atbilstošu atmaksu ieskaitīšanu LoloBuy konta atlikumā. Tajos minēts arī šaurs izņēmums noteiktiem PayPal pasūtījumiem, kas gaida apstiprinājumu. Šo izņēmumu nedrīkst pārrakstīt par solījumu, ka katra atmaksa automātiski atgriežas sākotnējā maksāšanas līdzeklī. Pārbaudiet noteikumu, kas piesaistīts faktiskajam pasūtījuma posmam un maksājuma ierakstam.",
+            "Nošķiriet pārdevēja piekrišanu atgriešanai, naudas saņemšanu platformā, kredīta saņemšanu kontā un naudas nonākšanu ārējā kontā. Katram posmam vajag savus pierādījumus. Atlikuma kredīts var pabeigt vienu procesa daļu, nepierādot līdzekļu izņemšanu. Pirms paļauties uz izņemšanu, pārbaudiet šī atlikuma aktuālo atbilstību, pieejamo darbību un piemērojamos nosacījumus. Nepieņemiet, ka neizmantotam atlikumam visos gadījumos ir identiska kārtība."
+          ]
+        },
+        {
+          "heading": "Pārskatiet transporta korekcijas atsevišķi",
+          "paragraphs": [
+            "Starptautiskais transports oficiālajā pirkšanas procesā sākas kā atsevišķa aplēse. Vēlākā iepakošana vai loģistikas mērījumi var radīt piemaksu vai pārmaksas kredītu. Sasaistiet korekciju ar sūtījuma numuru un galīgajiem mērījumiem. Papildu transporta rēķins nav automātiski maksājuma metodes komisija, un transporta kredīts ne vienmēr ir sākotnējā preču pirkuma atcelšana.",
+            "Saglabājiet sākotnējo transporta summu, izmainītos mērījumus, gala summu un kredītu vai piemaksu. Ja pozīcija ir neskaidra, jautājiet, kura sūtījuma aprēķina daļa mainījusies. Nošķiriet šo saskaņošanu no galamērķa nodokļiem vai pārvadātāja apstrādes izmaksām, kam var būt cita procedūra. Atsevišķas kategorijas atvieglo kopsummas pārbaudi un palīdz nemaksāt nepazīstamu pieprasījumu, nesaprotot tā saistību ar paku."
+          ]
+        },
+        {
+          "heading": "Saglabājiet maksājuma ierakstu, kas paliek noderīgs",
+          "paragraphs": [
+            "Noderīgs maksājuma ieraksts ietver datumu, rēķina priekšmetu, pasūtījuma vai sūtījuma atsauci, pamatsummu, norādīto komisiju, norēķinu valūtu, gala maksājamo summu un pakalpojuma sniedzēja darījuma atsauci. Pēc maksājuma pievienojiet platformas statusu un atlikuma kustību. Atmaksai pievienojiet sākotnējo pasūtījumu un kredīta galamērķi. Šie lauki savieno plānoto maksājumu ar faktiski notikušo.",
+            "Pirms nākamā maksājuma atkārtojiet pašreizējās norēķinu lapas salīdzinājumu. Metožu pieejamība, konvertēšana un komisijas var mainīties, tādēļ iepriekš veiksmīgs darījums ir atsauce, nevis pastāvīgs tarifs. Izvēlieties tikai rēķinam faktiski piedāvātās metodes, salīdziniet pilnu norakstījumu un saglabājiet pierādījumus. Ja nepieciešama maksa vai atmaksas nosacījums paliek neskaidrs, pirms maksājuma apstiprināšanas atrisiniet šo konkrēto jautājumu pie oficiālā atbalsta."
+          ]
+        }
+      ],
+      "checklist": [
+        "Sasaistiet maksājumu ar precīzu pasūtījuma vai sūtījuma rēķinu.",
+        "Salīdziniet aktuālās maksas un gala norakstījumu vienā valūtā.",
+        "Pārbaudiet, vai konta kredīts arī apmaksāja iecerēto rēķinu.",
+        "Noskaidrojiet neskaidru maksājuma statusu pirms atkārtošanas.",
+        "Pārbaudiet, vai atmaksa sasniedza platformas atlikumu vai sākotnējo maksāšanas līdzekli."
+      ],
+      "sourceIds": [
+        "buying",
+        "refunds",
+        "cancellation",
+        "freight-balance"
+      ],
+      "readingMinutes": 6,
+      "wordCount": 1226,
+      "published": "2026-10-29",
+      "modified": "2026-10-29"
+    },
+    {
+      "slug": "lolobuy-link-not-working",
+      "title": "LoloBuy saite nedarbojas: Taobao, Weidian un 1688 pārbaudes",
+      "description": "Novērsiet LoloBuy produkta saites problēmu, nošķirot pārdevēja pieejamību, saites formātu un pasūtījuma parsēšanu, un pirms manuāla pasūtījuma pārbaudiet precīzo preci.",
+      "keyword": "LoloBuy saite nedarbojas",
+      "category": "Produktu saites",
+      "summary": "Saglabājiet sākotnējo produkta saiti un nosakiet kļūmes vietu. Atjaunojiet to pašu preci un variantu, tad pārskatiet importēto pasūtījumu, nevis mainiet ID vai miniet trūkstošos datus.",
+      "sections": [
+        {
+          "heading": "Nosakiet, kur saite pārstāj darboties",
+          "paragraphs": [
+            "Produkta saite var nedarboties pirms vai pēc nonākšanas LoloBuy. Sākotnējais pārdevēja sludinājums var nebūt pieejams, saīsinātā adrese var neatvērties vai importa forma var nespēt iegūt informāciju no citādi darbojošās lapas. Pierakstiet faktisko notikumu: kļūdu, tukšu priekšskatījumu, pieteikšanās prasību vai citu produktu. Šie novērojumi noved pie atšķirīgām pārbaudēm.",
+            "Pirms jebkādām izmaiņām saglabājiet sākotnējo URL. Pierakstiet tirdzniecības platformu, redzamo preces identifikatoru, ja tas pieejams, iecerēto variantu un pārbaudes datumu. Sagaidāmās preces ekrānattēls var palīdzēt, taču tam jāpaliek sasaistītam ar pārdevēja saiti. Mērķis ir atgūt pietiekami daudz informācijas iecerētajam pirkumam, nevis tikai panākt jebkuras produkta lapas parādīšanos pārlūkā."
+          ]
+        },
+        {
+          "heading": "Vispirms pārbaudiet sākotnējo pārdevēja sludinājumu",
+          "paragraphs": [
+            "Atveriet sākotnējo sludinājumu ar platformas parasto publisko vai, ja nepieciešams, konta piekļuvi. Ja pārdevējs noņēmis preci vai vēlamais variants nav pieejams, adreses pārformatēšana neatjauno krājumus. Saglabājiet pārdevēja nosaukumu, preces virsrakstu un būtiskos mērījumus, lai citu sludinājumu vērtētu kā jaunu kandidātu. Līdzīgas fotogrāfijas vien nepierāda līdzvērtību.",
+            "Ja sākotnējais sludinājums darbojas un rāda vēlamo variantu, problēma var būt kopīgotajā saitē vai tās importā. Kopējiet pašreizējā sludinājuma paša kopīgošanas saiti vai adresi un salīdziniet ar saglabāto. Ļaujiet pamatotām pāradresācijām pabeigties, nevis akli mainiet galamērķi. Lapa, kas prasa konta piekļuvi, jāpārbauda ar platformas parasto procesu; šis ceļvedis neapiet piekļuves kontroli."
+          ]
+        },
+        {
+          "heading": "Turiet avota ID un kataloga ID atsevišķi",
+          "paragraphs": [
+            "Produktu atklāšanas vietne ierakstam var piešķirt savu numuru. Tas ne vienmēr ir Taobao, Weidian vai 1688 preces identifikators. Šajā vietnē produkta informācija izmanto kataloga ierakstu, lai iegūtu avota sludinājumu un atbilstošo pirkuma saiti. Platformas identifikatora aizstāšana ar numuru no vietējās kataloga adreses var aizvest uz nesaistītu preci vai vispār neatrast preci.",
+            "Ja pieejama, izmantojiet produkta atbilstošo pirkuma pogu, pēc tam salīdziniet atvērto lapu ar avotu. Ja galamērķis nepareizs, saglabājiet abus URL un ziņojiet par neatbilstību. Nepalieliniet un nemainiet skaitliskos ID, līdz kaut kas ielādējas. Attēlam, virsrakstam, pārdevējam un variantu kopumam kopā jāatbilst iecerētajam sludinājumam. Viena sakrītoša detaļa nav pietiekama pilnas produkta identitātes atjaunošanai."
+          ]
+        },
+        {
+          "heading": "Atjaunojiet Taobao saiti kopā ar variantu",
+          "paragraphs": [
+            "Taobao kopīgošanas ziņojums var saturēt aprakstošu tekstu un saiti. Kopējiet faktisko sludinājuma saiti, nevis uztveriet visu ziņojumu kā adresi. Ja kopīgošanas saite pāradresē, pārbaudiet iegūto preci pirms galamērķa izmantošanas LoloBuy. Saglabājiet sākotnējo ziņojumu atsaucei, ja tajā ir varianta apraksts, ko pati adrese nesaglabā.",
+            "Kad prece ielādējas, salīdziniet izvēlēto krāsu, izmēru, daudzumu un cenas pamatu. Veiksmīgs imports joprojām var rādīt noklusējuma variantu, nevis iecerēto. Saglabājiet sākotnējo varianta formulējumu blakus tulkojumam, īpaši ja vairākiem variantiem ir līdzīgi nosaukumi. Ja pārdevējs izmēru tabulu ievietojis attēlā, saglabājiet to un noskaidrojiet nepieciešamos mērījumus pirms pasūtījuma apstiprināšanas."
+          ]
+        },
+        {
+          "heading": "Pārbaudiet Weidian pārdevēju un variantus",
+          "paragraphs": [
+            "Weidian sludinājumam pārbaudiet pārdevēja lapu kopā ar preci. Saglabāta saite var turpināt darboties, kamēr piedāvājums, pieejamie varianti vai cena mainās. Salīdziniet pašreizējo virsrakstu, attēlus, variantu nosaukumus un pārdevēja informāciju ar agrāko ierakstu. Mainītu sludinājumu uztveriet kā jaunu lēmumu, nevis pieņemiet, ka pazīstams attēls saglabā veco piedāvājumu.",
+            "Ja importa priekšskatījums atšķiras no pārdevēja aktuālās lapas, dokumentējiet konkrēto neatbilstību. Piemēram, norādiet trūkstošo izmēru vai to, kura varianta cena tiek rādīta. Pasūtījuma jautājumā iekļaujiet sākotnējo URL un iecerēto izvēli. Izvairieties no norādes “tas, kas attēlā”, ja sludinājumā ir vairākas preces vai varianti. Precīzu varianta aprakstu iepirkumu komandai ir vieglāk pārbaudīt."
+          ]
+        },
+        {
+          "heading": "Uztveriet 1688 daudzumu kā produkta daļu",
+          "paragraphs": [
+            "LoloBuy oficiālais 1688 ceļvedis norāda, ka jāievēro pārdevēja minimālie daudzumi un ka cena un vietējais transports var būt atkarīgs no pirkuma apjoma. Tādēļ importēta cena bez atbilstošā daudzuma līmeņa ir nepilnīga. Pārbaudiet, vai cena norādīta par gabalu, pāri, komplektu, kasti vai citu vienību. Zems skaitlis var raksturot detaļu vai lielāka pirkuma cenu līmeni.",
+            "Pierakstiet minimālo daudzumu, iecerēto daudzumu, izvēlētos variantus un kombinācijai piemērojamo cenu. Ja jaucat krāsas vai izmērus, noskaidrojiet pārdevēja nosacījumus, nevis pieņemiet, ka jebkurš maisījums izpilda minimumu. Oficiālajā ceļvedī aprakstīti arī atsevišķi 1688 pasūtījumu pārbaudes apsvērumi. Saites atrisināšana neizņem no pirkuma lēmuma daudzuma, pārbaudes vai atgriešanas nosacījumus."
+          ]
+        },
+        {
+          "heading": "Manuālu pasūtījumu izmantojiet tikai ar pārbaudītiem datiem",
+          "paragraphs": [
+            "LoloBuy oficiālais pirkšanas ceļvedis apraksta iepirkumu aģenta pasūtījuma manuālu aizpildīšanu, kad produkta informāciju nevar iegūt automātiski. Izmantojiet šo iespēju, ja tā piedāvāta pasūtījumam, un ievadiet datus no faktiskā sludinājuma. Iekļaujiet sākotnējo saiti, precīzu preci un variantus, daudzumu, pašreizējo cenu un zināmo vietējās piegādes informāciju. Neatrisināto atzīmējiet precizēšanai, nevis izdomājiet.",
+            "Manuālā forma ir pasūtījuma nodošanas veids, nevis garantija, ka nepieejamu preci var iegādāties vai ka katrs pārdevējs pieņems pieprasītos noteikumus. Pirms maksāšanas salīdziniet aizpildīto formu ar avota ierakstu. Pēc iesniegšanas atbildiet uz apstiprinājuma jautājumiem attiecīgajā pasūtījuma saziņā. Saglabājiet galīgo apstiprināto izvēli, lai vēlāk to varētu salīdzināt ar noliktavas pierādījumiem."
+          ]
+        },
+        {
+          "heading": "Pārskatiet importēto rezultātu pirms maksāšanas",
+          "paragraphs": [
+            "Neatkarīgi no tā, vai saite salabota vai izmantota manuāla forma, veiciet to pašu gala pārbaudi. Salīdziniet identitāti, pārdevēju, krāsu, izmēru, daudzumu, vienību un kopsummu. Pārliecinieties, ka redzamā summa attiecas uz izvēlēto komplektāciju, un vietējo piegādi pārbaudiet atsevišķi. Veiksmīgs priekšskatījums pierāda dažu datu ielādi, nevis visu nepieciešamo detaļu pareizu importu vai krājumu rezervēšanu.",
+            "Ja avots un pasūtījuma forma nesakrīt, apstājieties pie konkrētās neatbilstības un atrisiniet to. Atkārtota līdzīgu pasūtījumu iesniegšana var apgrūtināt ierakstu izsekošanu. Saglabājiet vienu skaidru pierādījumu ķēdi ar sākotnējo sludinājumu, laboto izvēli un iegūto pasūtījuma atsauci. Kad prece nonāk noliktavā, salīdziniet saņemto ar šo apstiprināto ierakstu pirms starptautiska sūtījuma iesniegšanas."
+          ]
+        },
+        {
+          "heading": "Uzturiet saites ierakstu atkārtotai pārbaudei",
+          "paragraphs": [
+            "Vienkāršā ierakstā saglabājiet veco URL, pašreizējo URL, platformu, pārdevēju, redzamo preces ID, izvēlēto variantu, datumu un rezultātu. Noderīgi rezultāti ir darbojas un sakrīt, darbojas, bet mainīts, variants nepieejams, sludinājums noņemts vai imports neatrisināts. Ja atrodat aizstājēju, saglabājiet tā datus, nevis pārrakstiet sākotnējo tā, it kā nekas nebūtu mainījies. Tā saglabājas lēmuma pamatojums.",
+            "Pārbaudiet sludinājumu vēlreiz tieši pirms pasūtīšanas, jo saites atjaunošana negarantē pieejamību nākotnē. Daloties ar labotu saiti, paskaidrojiet datumu un pārbaudīto, neapgalvojot, ka pārdevējs vai fiziskās preces neatkarīgi testētas. Uzticams produktu katalogs palīdz cilvēkiem atklāt un pārbaudīt kandidātus. Skaidri ieraksti un precīza statusa informācija saglabā šo noderīgumu arī tad, ja atsevišķi platformu sludinājumi mainās."
+          ]
+        }
+      ],
+      "checklist": [
+        "Pirms saites maiņas saglabājiet sākotnējo URL.",
+        "Pārbaudiet pārdevēja pieejamību atsevišķi no LoloBuy importa.",
+        "Nošķiriet kataloga ierakstu ID no tirdzniecības platformas preču ID.",
+        "Pārbaudiet 1688 vienības, minimālos daudzumus un cenu līmeņus.",
+        "Salīdziniet gala importēto vai manuālo pasūtījumu ar avotu."
+      ],
+      "sourceIds": [
+        "buying",
+        "wholesale",
+        "confirmation",
+        "qc"
+      ],
+      "readingMinutes": 6,
+      "wordCount": 1217,
+      "published": "2026-10-29",
+      "modified": "2026-10-29"
     }
   ]
 }

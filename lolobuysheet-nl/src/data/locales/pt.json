@@ -1,5 +1,12 @@
 {
   "ui": {
+    "nav": [
+      "Folha de produtos",
+      "Como funciona",
+      "Guias",
+      "Artigos",
+      "Perguntas frequentes"
+    ],
     "register": "Ir para a LoloBuy",
     "language": "Idioma",
     "preview": "Pré-visualização do design",
@@ -13,25 +20,62 @@
     "photo": "Pesquisa por imagem",
     "popular": "Explorar:",
     "tagline": "Um catálogo. A tua próxima descoberta.",
-    "source": "Produtos de cnfanssp.com",
+    "source": "Descoberta de produtos e guias de compra",
     "independent": "Site independente de descoberta de produtos para a LoloBuy",
     "browse": "Explora a folha de produtos",
     "browseSub": "Um pouco menos de pesquisa. Muito mais descobertas.",
     "all": "Todos os produtos",
     "sort": "Ordenar por",
+    "sorts": [
+      "Destaques",
+      "Mais recentes",
+      "Mais vistos",
+      "Preço: crescente",
+      "Preço: decrescente"
+    ],
     "count": "produtos",
     "view": "Ver artigo",
     "buy": "Abrir na LoloBuy",
     "details": "Detalhes do produto",
+    "categories": {
+      "shoes": "Calçado",
+      "hoodies": "Sweatshirts",
+      "tshirts": "T-shirts",
+      "jackets": "Casacos",
+      "pants": "Calças e calções",
+      "headwear": "Chapéus e bonés",
+      "accessories": "Acessórios",
+      "sets": "Conjuntos curtos",
+      "electronics": "Eletrónica",
+      "other": "Outros artigos",
+      "jerseys": "Camisolas desportivas"
+    },
     "previous": "Anterior",
     "next": "Seguinte",
     "page": "Página",
     "empty": "Nenhum produto corresponde à tua pesquisa.",
     "reset": "Limpar filtros",
     "sourceSearch": "Pesquisar em todo o catálogo de origem",
-    "snapshot": "Catálogo em direto de cnfanssp.com. Os preços em CNY não incluem portes nem taxas de serviço. Confirma as opções atuais e o orçamento final na LoloBuy.",
+    "snapshot": "Os preços dos artigos em CNY não incluem portes nem taxas de serviço. Confirme as opções atuais e o orçamento final na LoloBuy.",
     "howTitle": "Da descoberta à abertura da encomenda.",
     "howSub": "É a tua primeira vez na LoloBuy? Começa por estes três passos.",
+    "steps": [
+      [
+        "01",
+        "Encontra algo de que gostes",
+        "Explora as categorias e verifica o anúncio original, o tamanho e as fotografias do produto."
+      ],
+      [
+        "02",
+        "Abre-o na LoloBuy",
+        "Utiliza a ligação do produto para escolher as opções e confirmar o preço atual."
+      ],
+      [
+        "03",
+        "Verifica antes do envio",
+        "Segue o processo de armazém da LoloBuy, verifica o controlo de qualidade disponível e escolhe o envio."
+      ]
+    ],
     "guides": "Uma pequena orientação faz a diferença.",
     "guidesSub": "O que convém saber antes da tua primeira encomenda.",
     "read": "Ler guia",
@@ -39,7 +83,13 @@
     "cta": "Encontraste o teu próximo favorito?",
     "ctaSub": "Abre-o na LoloBuy e torna-o teu.",
     "ctaButton": "Explorar todos os produtos",
-    "footer": "Um site independente para descobrir produtos. Não somos o site oficial da LoloBuy. Os anúncios e as fotografias são provenientes de cnfanssp.com. As compras são concluídas na LoloBuy.",
+    "footer": "Um site independente de descoberta de produtos. Não somos o site oficial da LoloBuy. As compras são concluídas na LoloBuy.",
+    "footerLinks": [
+      "Folha de produtos",
+      "Guia de compra",
+      "Pesquisa por imagem",
+      "Perguntas frequentes"
+    ],
     "back": "Voltar à folha de produtos",
     "sourceListing": "Anúncio original da fonte",
     "seller": "Anúncio do vendedor",
@@ -52,7 +102,7 @@
     "photoTitle": "Encontra-o com uma fotografia.",
     "photoIntro": "Utiliza o catálogo de origem para encontrar e comparar produtos.",
     "photoState": "Pesquisa por imagem na fonte",
-    "photoNote": "Não foi verificado nenhum serviço público de pesquisa por imagem em cnfanssp.com. Não aceitamos o envio de fotografias até estar disponível o serviço de origem.",
+    "photoNote": "Neste momento não existe um serviço compatível de pesquisa por imagem ligado ao site. Explore o catálogo por palavra-chave ou categoria.",
     "browseInstead": "Explorar produtos",
     "faqTitle": "LoloBuy: respostas antes de encomendar.",
     "faqIntro": "Investigado nas páginas oficiais de ajuda da LoloBuy. Quando as páginas oficiais divergem, a resposta explica o que é preciso confirmar.",
@@ -74,8 +124,8 @@
     "jump": "Ir para a página",
     "go": "Ir",
     "articlesLabel": "Artigos",
-    "articlesTitle": "Conhecimentos para comprar na LoloBuy, em detalhe.",
-    "articlesIntro": "Dez guias práticos baseados nas páginas oficiais de ajuda da LoloBuy. Encontra produtos, verifica o controlo de qualidade, calcula o orçamento e planeia o envio com informação mais clara.",
+    "articlesTitle": "Guias LoloBuy: encomendas, QC, envios e pagamentos",
+    "articlesIntro": "Guias práticos da LoloBuy sobre ligações de produtos, verificações no armazém, portes e decisões de pagamento. Escolha o guia para o seu próximo passo.",
     "articleSources": "Fontes oficiais",
     "reviewed": "Revisto em 20 de outubro de 2026",
     "readArticle": "Ler artigo",
@@ -100,56 +150,16 @@
     "liveLabel": "Atualizado a partir da fonte",
     "faqCount": "respostas investigadas",
     "catalogue": "Catálogo",
-    "nav": [
-      "Folha de produtos",
-      "Como funciona",
-      "Guias",
-      "Artigos",
-      "Perguntas frequentes"
-    ],
-    "sorts": [
-      "Destaques",
-      "Mais recentes",
-      "Mais vistos",
-      "Preço: crescente",
-      "Preço: decrescente"
-    ],
-    "footerLinks": [
-      "Folha de produtos",
-      "Guia de compra",
-      "Pesquisa por imagem",
-      "Perguntas frequentes"
-    ],
-    "categories": {
-      "shoes": "Calçado",
-      "hoodies": "Sweatshirts",
-      "tshirts": "T-shirts",
-      "jackets": "Casacos",
-      "pants": "Calças e calções",
-      "headwear": "Chapéus e bonés",
-      "accessories": "Acessórios",
-      "sets": "Conjuntos curtos",
-      "electronics": "Eletrónica",
-      "other": "Outros artigos",
-      "jerseys": "Camisolas desportivas"
-    },
-    "steps": [
-      [
-        "01",
-        "Encontra algo de que gostes",
-        "Explora as categorias e verifica o anúncio original, o tamanho e as fotografias do produto."
-      ],
-      [
-        "02",
-        "Abre-o na LoloBuy",
-        "Utiliza a ligação do produto para escolher as opções e confirmar o preço atual."
-      ],
-      [
-        "03",
-        "Verifica antes do envio",
-        "Segue o processo de armazém da LoloBuy, verifica o controlo de qualidade disponível e escolhe o envio."
-      ]
-    ]
+    "homeTitle": "Folha de produtos e guias de compra LoloBuy | LoloBuy Sheet",
+    "catalogTitle": "Explore produtos LoloBuy: roupa, sapatilhas e acessórios",
+    "catalogDescription": "Explore os produtos LoloBuy por categoria, pesquise no catálogo completo e compare preços. Verifique os detalhes antes de abrir a ligação de compra correspondente na LoloBuy.",
+    "guidesTitle": "Guias de compra LoloBuy: das ligações de produtos à entrega",
+    "guideMetaTitle": "Como funciona a LoloBuy: encomendas, QC e envio internacional",
+    "shippingNav": "Envios",
+    "reviewedLabel": "Atualizado",
+    "nextStep": "Continue para o próximo passo",
+    "priorityTitle": "Antes de encomendar ou enviar",
+    "priorityIntro": "Verifique o produto, analise as provas do armazém e compare o custo total da encomenda."
   },
   "faqs": [
     {
@@ -450,7 +460,9 @@
         "qc"
       ],
       "readingMinutes": 3,
-      "wordCount": 732
+      "wordCount": 627,
+      "published": "2026-10-20",
+      "modified": "2026-10-29"
     },
     {
       "slug": "how-to-order-on-lolobuy",
@@ -507,6 +519,35 @@
             "O processo oficial instrui a selecionar artigos armazenados, introduzir os dados de entrega e escolher entre opções de transporte disponíveis. Revê em conjunto destino, restrições, embalagem e depósito do transporte. Um artigo comprado não é automaticamente uma encomenda internacional pronta a expedir.",
             "O transporte final pode mudar depois da embalagem e medição logística. Consulta o registo da encomenda para ajustes ou pedidos de confirmação. Depois de expedida, usa a secção de encomendas para rastreio, conserva as referências e verifica rapidamente o conteúdo quando a entrega chegar."
           ]
+        },
+        {
+          "heading": "Crie um registo reutilizável da primeira encomenda",
+          "paragraphs": [
+            "Antes de submeter a primeira encomenda, prepare um registo breve com o URL do vendedor, título do artigo, opção exata, quantidade, referência da tabela de tamanhos e dúvidas por esclarecer. Guarde a designação original das opções quando a tradução puder ser ambígua. Num conjunto, identifique os componentes esperados na embalagem. Este registo permite comparar os dados no pagamento e, depois, no armazém, sem depender da memória de uma miniatura.",
+            "Por exemplo, uma encomenda de roupa pode indicar uma sweatshirt azul-marinho no tamanho M do vendedor, com uma determinada largura do peito medida em plano e indicada na tabela. É uma instrução mais clara do que pedir uma camisola azul média. Se a tabela ou o nome da cor forem pouco claros, pergunte antes de comprar. Um pedido preciso melhora a comunicação, mas não comprova a existência de stock nem que a peça lhe servirá."
+          ]
+        },
+        {
+          "heading": "Distinga um problema do produto de um problema de pagamento",
+          "paragraphs": [
+            "Se o artigo importado estiver incorreto ou faltar uma opção necessária, esclareça o anúncio antes de pagar. Consulte a fonte original para saber se o vendedor alterou a oferta ou se a importação omitiu dados. Uma encomenda manual, quando disponível, deve conservar os detalhes reais do produto. Alterar identificadores ou escolher uma opção aproximadamente semelhante não resolve uma encomenda incerta e pode dificultar a documentação de uma divergência posterior.",
+            "Se o artigo estiver correto mas o estado do pagamento for incerto, compare a fatura, o saldo da conta e o registo do prestador de pagamentos. Guarde a referência da transação e o erro apresentado antes de tentar novamente. Uma página em carregamento não comprova, por si só, uma falha. Peça ao apoio que esclareça um débito ambíguo, em vez de criar várias tentativas sobrepostas. Trate a identidade do produto, o pagamento e a expedição pelo vendedor como verificações distintas: o sucesso de uma etapa não comprova o da seguinte."
+          ]
+        },
+        {
+          "heading": "Planeie a decisão no armazém antes de submeter o pacote",
+          "paragraphs": [
+            "Decida que provas necessita antes de os artigos chegarem. Uma peça cujo tamanho seja importante pode exigir uma medição específica; um conjunto de acessórios pode precisar de uma imagem clara de todos os componentes. Verifique o serviço de inspeção disponível e os seus limites. Quando as fotografias estiverem prontas, compare-as com o registo guardado e enumere os pontos por esclarecer. Peça uma vista ou explicação concreta, em vez de uma opinião genérica de que o artigo parece bom.",
+            "Consulte rapidamente as condições de devolução aplicáveis enquanto os artigos permanecem no armazém. O período de armazenamento e o prazo de devolução do vendedor são diferentes. Esperar para juntar vários artigos pode fazer expirar o prazo de devolução de um artigo indesejado. Se pretende uma troca ou devolução, pergunte pela elegibilidade e custos previstos desse artigo antes de o incluir num pacote internacional. Não suponha que é possível interromper o envio depois de qualquer etapa posterior do processamento."
+          ]
+        },
+        {
+          "heading": "Conclua a encomenda com um registo completo dos custos",
+          "paragraphs": [
+            "Registe em campos separados os artigos e a entrega nacional, os serviços escolhidos, o transporte internacional e os encargos no destino. Some cada encargo apenas uma vez e indique a moeda. À medida que a encomenda avança, substitua estimativas por faturas confirmadas, guardando os valores anteriores para comparação. Se o transporte mudar após a embalagem, associe o ajuste à referência do pacote e às medições. Este registo explica o custo entregue melhor do que um único total sem data.",
+            "Após a entrega, compare o conteúdo recebido com a lista original e preserve provas da embalagem se houver um problema. Utilize o canal de apoio da encomenda ou do pacote adequado, descrevendo o problema e os registos que o ligam à sua compra. Guarde separadamente as datas de compra, chegada ao armazém, expedição e entrega. Estas observações podem ajudar na próxima encomenda sem prometer que outro pacote seguirá os mesmos prazos.",
+            "Antes de fechar o registo, identifique as etapas que exigiram esclarecimentos e os pressupostos que mudaram. Se uma ligação de produto necessitou de introdução manual, guarde o texto da opção confirmada para consulta futura. Se a estimativa do transporte mudou, conserve as medições da caixa junto da estimativa original. Estas notas devem descrever apenas a sua encomenda. Volte a verificar o anúncio, o pagamento e as condições de envio ao encomendar novamente, mesmo que o artigo pareça idêntico. Uma compra anterior bem-sucedida não reserva stock nem mantém o mesmo preço, serviço ou condições do vendedor."
+          ]
         }
       ],
       "checklist": [
@@ -523,8 +564,10 @@
         "qc",
         "freight-balance"
       ],
-      "readingMinutes": 3,
-      "wordCount": 682
+      "readingMinutes": 6,
+      "wordCount": 1257,
+      "published": "2026-10-20",
+      "modified": "2026-10-29"
     },
     {
       "slug": "lolobuy-qc-photos",
@@ -581,6 +624,35 @@
             "Separa as conclusões em confirmadas, pouco claras e inaceitáveis. Se um detalhe é incerto, pede provas. Se o artigo parece diferente do pedido, usa o suporte ou processo de devolução relevante antes do transporte internacional. Guarda uma descrição breve do problema e as imagens que o demonstram.",
             "As fotografias não comprovam todas as propriedades do material, conforto, durabilidade ou funcionamento interno. Aprovar o estado visível é uma decisão mais limitada. Lê as condições de devolução enquanto o artigo está no armazém e não trates um QC satisfatório como promessa sobre alfândega ou entrega internacional."
           ]
+        },
+        {
+          "heading": "Transforme a verificação de roupa num pedido claro",
+          "paragraphs": [
+            "Comece pelas medidas que influenciam o ajuste, em vez de pedir ao armazém que decida se uma peça tem o tamanho certo para si. Numa sweatshirt, poderá precisar da largura do peito em plano, do comprimento da peça e da manga, medidos nos mesmos pontos da tabela do vendedor. Indique o método e a unidade. A etiqueta de tamanho ajuda a identificar o artigo, mas não substitui as medidas da peça.",
+            "Se a tabela usar o perímetro corporal e a fotografia mostrar uma largura em plano, não compare diretamente os dois números. Verifique onde a fita começa e termina, se a peça está estendida e se o valor é legível. A iluminação e a perspetiva também podem alterar a aparência da cor. Quando a cor for importante, peça uma imagem mais clara, reconhecendo que uma fotografia no ecrã não garante a tonalidade exata na realidade."
+          ]
+        },
+        {
+          "heading": "Inspecione calçado e acessórios sem conclusões excessivas",
+          "paragraphs": [
+            "No calçado, compare os dois pés do par, as marcas de tamanho visíveis, a forma geral e as zonas relacionadas com a sua preocupação. Se precisar de uma medição ou aproximação específica, indique-a expressamente. Numa mala, verifique as alças, os fechos e os componentes esperados que estejam visíveis. Num acessório com várias partes, enumere o conteúdo esperado e compare-o com as fotografias, em vez de pressupor que uma caixa fechada contém tudo.",
+            "Uma costura ou defeito superficial visível pode ser documentado com uma fotografia aproximada e a sua localização. A construção oculta, o conforto de utilização, a composição do material e a durabilidade normalmente exigem provas diferentes. Não trate uma fotografia do armazém como certificado de autenticidade ou teste funcional profissional. Para produtos selados ou eletrónica especializada, leia as exclusões da inspeção antes de decidir se o serviço disponível responde à sua preocupação concreta."
+          ]
+        },
+        {
+          "heading": "Distinga uma incerteza de um defeito confirmado",
+          "paragraphs": [
+            "Use três estados simples nas notas: correspondência confirmada, necessidade de mais provas e divergência observada. Por exemplo, uma etiqueta de tamanho ilegível pertence ao segundo estado até existir uma fotografia mais clara; uma etiqueta com um tamanho claramente diferente pertence ao terceiro. Isto evita descrever uma fotografia em falta como defeito comprovado e impede que uma imagem geral atraente esconda uma pergunta sem resposta.",
+            "Para cada ponto por resolver, registe o número da encomenda, a imagem relevante, a pergunta exata e a próxima ação. Quando receber uma resposta, atualize esse ponto em vez de substituir todo o registo por uma aprovação vaga. Se a divergência persistir, pergunte pela solução aplicável enquanto o artigo está no armazém. Guarde conjuntamente a aceitação do vendedor, os requisitos de devolução e eventuais custos. Pedir uma devolução não é o mesmo que tê-la aprovada."
+          ]
+        },
+        {
+          "heading": "Tome a decisão antes do próximo prazo",
+          "paragraphs": [
+            "Analise o artigo assim que as informações do armazém estiverem disponíveis. As orientações da LoloBuy condicionam a devolução à encomenda, ao vendedor e ao prazo. Uma autorização geral de armazenamento não prolonga a janela de devolução. Leia o prazo e os requisitos aplicáveis ao artigo e conserve a embalagem original quando possa ser necessária. Não adie uma pergunta importante apenas porque ainda não chegaram outros artigos do pacote planeado.",
+            "Ao aprovar um artigo para envio, registe o que foi efetivamente verificado e o que permanece desconhecido. Por exemplo, a identidade e as medidas visíveis podem estar confirmadas, enquanto o conforto e a durabilidade continuam por testar. Associe essa conclusão limitada à referência do artigo. Reveja as dúvidas antes de submeter o pacote, sobretudo se uma alteração da embalagem remover etiquetas ou embalagens originais relevantes. Assim cria um registo útil da decisão sem fingir que o QC elimina todos os riscos da compra.",
+            "Guarde as imagens originais com uma breve nota da decisão, em vez de conservar apenas um recorte. A imagem mais ampla ajuda a ligar a preocupação ao artigo correto, e a referência da encomenda liga a fotografia à compra. Se outra imagem esclarecer posteriormente a questão, mantenha ambas e indique o que mudou. Evite divulgar dados pessoais da encomenda. Um registo útil é uma observação específica com fonte identificável, não uma classificação sem fundamento ou uma afirmação de que todos os produtos do vendedor foram verificados."
+          ]
         }
       ],
       "checklist": [
@@ -594,15 +666,18 @@
         "qc",
         "photos",
         "service",
-        "sizing"
+        "sizing",
+        "returns"
       ],
-      "readingMinutes": 3,
-      "wordCount": 695
+      "readingMinutes": 6,
+      "wordCount": 1256,
+      "published": "2026-10-20",
+      "modified": "2026-10-29"
     },
     {
       "slug": "lolobuy-shipping-costs",
-      "title": "Custos de envio da LoloBuy: compara a encomenda completa",
-      "description": "Compreende o peso estimado, real e volumétrico e compara as rotas disponíveis com o mesmo destino, conteúdo e embalagem.",
+      "title": "Custos de envio LoloBuy: calculadora, peso e taxas",
+      "description": "Utilize a calculadora de envio LoloBuy, compare peso real e volumétrico e verifique opções de embalagem, ajustes do transporte e orçamento completo do pacote.",
       "keyword": "calculadora de envio lolobuy",
       "category": "Envio",
       "summary": "Uma comparação útil de transporte começa por uma encomenda claramente definida. Este guia explica os dados e verificações necessários; não é um orçamento de envio em direto.",
@@ -655,6 +730,35 @@
             "A orientação de pagamentos adicionais da LoloBuy explica que a estimativa é reconciliada com o custo real do operador logístico. Pode haver reembolso do excesso pago ou um pedido adicional. Lê as mensagens da encomenda e responde às solicitações associadas ao teu envio.",
             "Guarda a estimativa inicial, as medidas faturáveis finais, os serviços escolhidos e o ajuste em conjunto. Esse registo ajuda a compreender as diferenças. Orçamenta possíveis custos no destino separadamente e confirma o total final antes de considerar a encomenda concluída."
           ]
+        },
+        {
+          "heading": "Use a calculadora oficial com uma base guardada",
+          "paragraphs": [
+            "Abra a calculadora de envio atual da LoloBuy e selecione o destino real. Introduza o conteúdo, peso e dimensões solicitados nas unidades apresentadas. Guarde com o resultado a data, os valores introduzidos, o serviço escolhido e a moeda. Se os artigos ainda não chegaram ao armazém, identifique as medidas como estimativas. Esta distinção importa porque o peso aproximado de um artigo indicado pelo vendedor não descreve uma caixa final com a embalagem exterior.",
+            "Registe um cenário de base antes de alterar a embalagem ou retirar um artigo. Para cada alternativa, mude uma variável e mantenha as restantes sempre que possível. Se uma rota desaparecer quando muda a categoria dos artigos, essa restrição faz parte do resultado; escolher uma categoria incorreta para obter um preço menor não torna a rota adequada. Compare apenas serviços oferecidos para os artigos e destino reais e mantenha visíveis as dúvidas de elegibilidade."
+          ]
+        },
+        {
+          "heading": "Crie uma comparação que inclua todos os pacotes",
+          "paragraphs": [
+            "Use uma linha para cada cenário completo de envio. Registe o conteúdo, número de pacotes, peso real, dimensões, serviços de embalagem, rota e transporte total. Para dois pacotes, some os dois orçamentos completos antes de comparar com um envio conjunto. Os mínimos cobrados separadamente podem afetar o resultado. Um valor inferior apenas para o primeiro pacote não demonstra que dividir toda a encomenda é mais barato.",
+            "Uma comparação útil também regista diferenças de proteção e serviço. Um cenário pode conservar a caixa dos sapatos e outro removê-la; um pode incluir reforço e outro não. Anote estas alterações para que o preço não esconda um resultado diferente. Se as medidas finais não estiverem disponíveis, trate a comparação como planeamento e repita-a quando a embalagem for confirmada. Não transforme uma poupança estimada numa fatura final garantida."
+          ]
+        },
+        {
+          "heading": "Analise linha a linha uma estimativa alterada",
+          "paragraphs": [
+            "Se o transporte final diferir da estimativa guardada, compare primeiro o destino, artigos escolhidos, peso real e dimensões da caixa. Depois verifique a rota, o incremento de faturação, os serviços opcionais e a moeda. Uma caixa exterior mais pesada, um artigo volumoso ou outro serviço podem explicar a alteração, mesmo quando a lista de produtos parece semelhante. Pergunte pela medição ou rubrica concreta que mudou, em vez de pressupor que qualquer diferença representa a mesma taxa.",
+            "Associe o depósito inicial e os ajustes posteriores à mesma referência do pacote. Um crédito na conta por pagamento excessivo e um reembolso para um meio de pagamento externo são registos distintos. Confirme onde o montante foi creditado ou que pagamento adicional continua devido. Se a explicação estiver incompleta, conserve os dois orçamentos e faça uma pergunta específica sobre a encomenda. É mais útil do que comparar o total com um pacote sem relação, de outro destino ou data."
+          ]
+        },
+        {
+          "heading": "Separe o transporte do orçamento até à entrega",
+          "paragraphs": [
+            "O valor do transporte internacional pode não incluir todos os pagamentos ligados à receção dos artigos. Analise separadamente a compra original, a entrega nacional, os serviços opcionais do armazém, os custos de pagamento e os encargos no destino. Identifique claramente os serviços incluídos para evitar dupla contagem. Um montante em branco deve continuar a ser uma dúvida por esclarecer, em vez de se tornar silenciosamente zero na estimativa do custo entregue.",
+            "Antes de pagar, consulte as informações atuais do destino e as inclusões declaradas do serviço escolhido. Não deduza o tratamento aduaneiro ou a proteção do comprador pelo nome informal de uma rota. Se publicar posteriormente um exemplo de envio, inclua data, conteúdo, destino, caixa medida e âmbito do valor citado, retirando dados pessoais. Um caso histórico bem documentado ajuda a reproduzir a comparação, mas um preço isolado não estabelece a tarifa do pacote de outro leitor.",
+            "Uma folha de comparação pode ser simples: uma linha por cenário, com data do orçamento, destino, artigos, fonte do peso, dimensões, rota, montante e dúvidas. Acrescente uma coluna final para o resultado confirmado quando o pacote for expedido. Não substitua a estimativa original sem preservar os dados introduzidos, pois isso apagaria a explicação da diferença. Se algum dado continuar desconhecido, obtenha-o no registo atual do pacote ou junto do apoio antes de fazer uma comparação definitiva. Aplique este método a cada pacote, em vez de prolongar um preço histórico a todas as compras futuras."
+          ]
         }
       ],
       "checklist": [
@@ -668,10 +772,13 @@
         "buying",
         "weight",
         "packaging",
-        "freight-balance"
+        "freight-balance",
+        "estimate"
       ],
-      "readingMinutes": 3,
-      "wordCount": 676
+      "readingMinutes": 6,
+      "wordCount": 1225,
+      "published": "2026-10-20",
+      "modified": "2026-10-29"
     },
     {
       "slug": "lolobuy-warehouse-consolidation",
@@ -746,7 +853,9 @@
         "freight-balance"
       ],
       "readingMinutes": 3,
-      "wordCount": 660
+      "wordCount": 586,
+      "published": "2026-10-20",
+      "modified": "2026-10-29"
     },
     {
       "slug": "lolobuy-sizing-guide",
@@ -819,7 +928,9 @@
         "returns"
       ],
       "readingMinutes": 3,
-      "wordCount": 658
+      "wordCount": 619,
+      "published": "2026-10-20",
+      "modified": "2026-10-29"
     },
     {
       "slug": "lolobuy-tracking-guide",
@@ -893,7 +1004,9 @@
         "freight-balance"
       ],
       "readingMinutes": 3,
-      "wordCount": 654
+      "wordCount": 601,
+      "published": "2026-10-20",
+      "modified": "2026-10-29"
     },
     {
       "slug": "lolobuy-returns-refunds",
@@ -968,7 +1081,9 @@
         "changes"
       ],
       "readingMinutes": 3,
-      "wordCount": 652
+      "wordCount": 602,
+      "published": "2026-10-20",
+      "modified": "2026-10-29"
     },
     {
       "slug": "lolobuy-order-budget",
@@ -1050,8 +1165,10 @@
         "freight-balance",
         "wholesale"
       ],
-      "readingMinutes": 3,
-      "wordCount": 729
+      "readingMinutes": 4,
+      "wordCount": 662,
+      "published": "2026-10-20",
+      "modified": "2026-10-29"
     },
     {
       "slug": "lolobuy-seller-and-review-checks",
@@ -1125,7 +1242,280 @@
         "returns"
       ],
       "readingMinutes": 3,
-      "wordCount": 677
+      "wordCount": 604,
+      "published": "2026-10-20",
+      "modified": "2026-10-29"
+    },
+    {
+      "slug": "lolobuy-shipping-netherlands",
+      "title": "Envio LoloBuy para os Países Baixos: custos, prazos e verificações",
+      "description": "Planeie um pacote LoloBuy para os Países Baixos: compare dados da calculadora, embalagem, etapas de entrega e documentos para verificar encargos de importação.",
+      "keyword": "envio lolobuy Países Baixos",
+      "category": "Entrega nos Países Baixos",
+      "summary": "Use os Países Baixos como destino real ao comparar o transporte. Guarde um orçamento com data, distinga as etapas de entrega e consulte as orientações atuais da alfândega neerlandesa antes de pagar.",
+      "sections": [
+        {
+          "heading": "Comece com os dados do pacote para os Países Baixos",
+          "paragraphs": [
+            "Uma comparação útil de envios LoloBuy começa pelo pacote que pretende receber, não pelo preço pago por outra pessoa. Anote o país de destino, código postal, lista de artigos, quantidades e embalagens que devem acompanhar os produtos. Uma rota disponível para um pequeno pacote de roupa pode não aceitar outra combinação de produtos. O país, por si só, não determina a elegibilidade do pacote.",
+            "Faça duas listas: factos já confirmados e informações ainda estimadas. As dimensões do vendedor, o peso do artigo no armazém e as medidas da caixa final são registos diferentes. Identifique as fontes para saber o que atualizar após a chegada dos artigos. Se uma caixa de presente tiver de permanecer intacta, indique-o antes de comparar uma embalagem mais barata que pressuponha a sua remoção. Essa escolha pode afetar a proteção e o volume."
+          ]
+        },
+        {
+          "heading": "Leia o preço em etapas separadas",
+          "paragraphs": [
+            "O guia oficial da LoloBuy separa o primeiro pagamento dos artigos e a entrega doméstica chinesa da posterior submissão de um pacote internacional. Numa encomenda para os Países Baixos, separe estas etapas no orçamento. O preço do catálogo é um ponto de partida para o artigo, não um orçamento de entrega à sua porta. Acrescente apenas os custos efetivamente confirmados no registo atual da encomenda ou pacote.",
+            "Mantenha um registo simples com colunas para o artigo, entrega nacional, serviços opcionais do armazém, transporte internacional, custos de pagamento e encargos no destino. Indique a moeda junto de cada montante. Se um orçamento já incluir um encargo, marque-o como incluído em vez de o somar novamente. Um campo sem resposta deve permanecer por esclarecer. Um total com uma lacuna explícita é mais útil do que um total aparentemente preciso que considere zero todos os custos em falta."
+          ]
+        },
+        {
+          "heading": "Prepare uma comparação repetível na calculadora",
+          "paragraphs": [
+            "Abra o estimador oficial de envio da LoloBuy e selecione os Países Baixos como destino. Introduza peso, dimensões e categoria dos artigos nas unidades pedidas pelo formulário atual. Confirme gramas e quilogramas antes de comparar resultados. Um peso na unidade errada descreve outro pacote, mesmo que o resultado pareça plausível. Guarde os dados introduzidos com as opções apresentadas.",
+            "Para cada rota elegível, registe data do orçamento, moeda, montante, prazo estimado de transporte, informações de acompanhamento e restrições declaradas. Mantenha conteúdo e medidas idênticos ao comparar rotas. Se uma rota exigir outra embalagem, indique expressamente essa diferença. Não transforme uma captura antiga numa tabela de preços atual. Uma comparação útil pode repetir-se com dados medidos pelo armazém quando estiverem disponíveis."
+          ]
+        },
+        {
+          "heading": "Compreenda o efeito de uma caixa mais leve ou pequena",
+          "paragraphs": [
+            "O peso real mede a massa; o peso volumétrico representa o espaço ocupado pelo pacote segundo a regra de faturação da rota. As orientações de peso da LoloBuy descrevem fórmulas dependentes da rota. Leia as condições atuais em vez de aplicar o mesmo divisor a todos os serviços. Verifique também arredondamentos, mínimos e incrementos do peso adicional. Uma pequena redução do peso físico pode deixar o pacote no mesmo escalão de preço.",
+            "Considere, apenas como exemplo, uma caixa de 40 por 30 por 20 centímetros. O volume é de 24 000 centímetros cúbicos. Com um divisor hipotético de 6 000, o peso volumétrico seria 4 quilogramas. Reduzir um lado para 15 centímetros produziria 3 quilogramas segundo a mesma regra suposta. Este cálculo explica uma comparação de embalagens; não comprova uma rota disponível na LoloBuy, um preço de transporte ou uma poupança garantida."
+          ]
+        },
+        {
+          "heading": "Compare consolidação e pacotes separados",
+          "paragraphs": [
+            "Quando há vários artigos armazenados, compare um pacote conjunto com o total de todos os pacotes separados propostos. Use o mesmo destino e inclua os serviços de embalagem de cada opção. Um valor menor junto de um dos pacotes separados não é o custo total de enviar todo o conjunto. Cada pacote pode ter o seu próprio mínimo e processamento separado no destino.",
+            "A proteção e as restrições podem importar mais do que o menor transporte inicial. Um artigo frágil pode precisar de separação ou reforço, enquanto uma caixa volumosa pode dominar o volume de artigos compactos. Peça a disposição concreta que quer avaliar. Preserve a proteção necessária e confirme que o serviço aceita o conteúdo real. A consolidação é uma decisão a avaliar, não uma promessa automática de custo inferior."
+          ]
+        },
+        {
+          "heading": "Leia o prazo de entrega como uma sequência",
+          "paragraphs": [
+            "Distinga a expedição pelo vendedor, a entrega no armazém chinês, a inspeção, a preparação do pacote, o transporte internacional, o processamento no destino e a entrega final. Uma estimativa de trânsito da transportadora pode cobrir apenas parte desta sequência. Registe o marco inicial da estimativa antes de a comparar com a espera total de outro comprador. A confirmação da encomenda e a aceitação pela transportadora não são o mesmo evento inicial.",
+            "Após a expedição, acompanhe a referência do pacote na conta e as informações da transportadora associada. A criação de um número de acompanhamento não comprova, por si só, que a transportadora recebeu fisicamente o pacote. Se o progresso for incerto, pergunte que marco foi concluído e quem detém o pacote. Para uma compra urgente, reserve uma margem em vez de tratar a janela estimada como data garantida."
+          ]
+        },
+        {
+          "heading": "Verifique as informações atuais de importação neerlandesas",
+          "paragraphs": [
+            "Antes de pagar, consulte as informações atuais da alfândega neerlandesa para compras online provenientes de fora da União Europeia. As orientações distinguem IVA, direitos de importação e custos de processamento da transportadora. As regras das remessas de baixo valor mudaram em julho de 2026; por isso, um guia antigo que afirme isenção automática de direitos para compras de baixo valor não deve servir de cálculo atual. Verifique as regras aplicáveis aos artigos e à data de importação reais.",
+            "Guarde conjuntamente descrições dos artigos, valores de compra, moeda e impostos ou direitos já cobrados. Pergunte à transportadora ou vendedor como é documentado um encargo incluído e o que falta pagar. O nome informal de uma linha de envio não define o tratamento fiscal do pacote. Este guia não calcula uma fatura aduaneira neerlandesa universal: a classificação do produto, a transação e o procedimento aplicável importam. Forneça descrições e valores corretos nas informações solicitadas."
+          ]
+        },
+        {
+          "heading": "Reconcilie o transporte final e conserve provas",
+          "paragraphs": [
+            "As orientações oficiais da LoloBuy descrevem a cobrança de uma estimativa seguida de reconciliação com o custo logístico. Compare os ajustes com o peso final embalado, as dimensões, a rota e os serviços escolhidos. Se o valor mudar, identifique o dado alterado antes de assumir que a estimativa era um compromisso fixo. Guarde o orçamento inicial e a fatura final no mesmo registo.",
+            "Quando a entrega chegar, compare o conteúdo com a lista guardada e examine a embalagem antes de a descartar. Preserve fotografias se algo parecer em falta ou danificado e utilize depois o apoio da encomenda ou do pacote adequado ao problema. Devoluções ao vendedor, reclamações de pacotes internacionais e encargos da transportadora envolvem registos distintos. Uma boa documentação torna o pedido mais claro sem prometer um reembolso ou solução específicos."
+          ]
+        },
+        {
+          "heading": "Crie um registo útil para a próxima encomenda",
+          "paragraphs": [
+            "Após concluir uma encomenda, conserve os dados que permitem comparação honesta: data, destino, artigos reais, caixa medida, serviço escolhido, transporte final e marcos de entrega observados. Retire informações pessoais da morada antes de partilhar um exemplo. Um envio histórico pode ajudar outro comprador a compreender o processo, mas deve continuar identificado como um caso datado, não como promessa geral de preço ou entrega.",
+            "Use esse registo para melhorar a próxima estimativa. Anote se o volume ou o peso determinou a cobrança, se um serviço opcional alterou a caixa e que custo foi inicialmente esquecido. Antes de reutilizar os valores, verifique se o destino, conteúdo e condições atuais da rota continuam iguais. Um método repetível é mais útil do que recolher o número aparentemente mais barato de outro pacote."
+          ]
+        }
+      ],
+      "checklist": [
+        "Selecione os Países Baixos e o código postal correto no orçamento atual.",
+        "Guarde peso, volume e conteúdo idênticos para comparar rotas.",
+        "Separe tempo no armazém, transporte internacional e entrega final.",
+        "Verifique as orientações atuais de importação neerlandesas e os montantes já cobrados.",
+        "Guarde conjuntamente as faturas inicial e final do pacote."
+      ],
+      "sourceIds": [
+        "buying",
+        "weight",
+        "packaging",
+        "freight-balance",
+        "estimate"
+      ],
+      "readingMinutes": 6,
+      "wordCount": 1222,
+      "published": "2026-10-29",
+      "modified": "2026-10-29"
+    },
+    {
+      "slug": "lolobuy-payment-methods-fees",
+      "title": "Métodos de pagamento e taxas LoloBuy: pagamento, moeda e saldo",
+      "description": "Verifique os métodos de pagamento LoloBuy no checkout, compare o débito completo e distinga créditos no saldo de reembolsos ao meio de pagamento original.",
+      "keyword": "métodos de pagamento lolobuy",
+      "category": "Pagamentos e taxas",
+      "summary": "Associe cada pagamento a uma encomenda ou fatura de pacote. Compare o total e a moeda atuais, guarde a referência da transação e confirme onde é creditado qualquer reembolso.",
+      "sections": [
+        {
+          "heading": "Comece pela fatura que pretende pagar",
+          "paragraphs": [
+            "Antes de escolher um meio de pagamento, identifique o objeto da fatura. Pode ser uma encomenda de produto, entrega doméstica, transporte internacional, ajuste ou carregamento da conta. O processo oficial da LoloBuy separa o pagamento dos artigos do posterior pagamento do pacote. Uma primeira transação bem-sucedida não demonstra que todas as etapas seguintes da compra já estão pagas.",
+            "Mantenha o número da encomenda ou pacote, o montante e a moeda junto do ecrã de pagamento. Se várias faturas tiverem totais semelhantes, distinga-as pelas referências, não apenas pelo valor. Confirme os artigos e quantidades antes de comparar canais de pagamento. Resolver uma encomenda do artigo errado após pagar é uma tarefa diferente de escolher uma forma conveniente de pagar a encomenda correta."
+          ]
+        },
+        {
+          "heading": "Verifique os métodos no checkout atual",
+          "paragraphs": [
+            "O guia público da LoloBuy menciona várias categorias, incluindo cartões, serviços de pagamento chineses e transferência bancária. Uma lista geral de ajuda é informação de contexto, não prova de que todos os métodos estão atualmente disponíveis para qualquer conta, país, moeda ou fatura. Leia os métodos efetivamente oferecidos para a sua transação e as informações de elegibilidade ou verificação apresentadas junto deles.",
+            "Não deduza uma taxa ou prazo de liquidação atuais a partir de um logótipo num tutorial antigo. Se um canal estiver indisponível, guarde a mensagem e consulte o apoio oficial em vez de supor que deve selecionar outro país. Use os seus dados de faturação reais. Se o checkout pedir uma moeda, registe-a antes de comparar outro canal, para que ambos os totais descrevam compras equivalentes."
+          ]
+        },
+        {
+          "heading": "Separe as diferentes camadas do custo",
+          "paragraphs": [
+            "Uma comparação completa distingue a fatura de base, a taxa de pagamento da plataforma, a conversão cambial e os encargos de um prestador externo. Alguns podem estar incluídos no total apresentado; outros podem aparecer separadamente no banco ou prestador de pagamentos. Registe o que sabe e o que falta verificar. Evite somar uma taxa duas vezes só porque aparece na discriminação e no total final.",
+            "Para uma taxa percentual, identifique o montante sobre o qual incide. Para uma taxa fixa, registe a moeda e se é cobrada por transação. Uma taxa fixa pode afetar uma compra pequena de forma diferente de uma maior. Este guia não publica uma tabela permanente de taxas, porque o número útil é o montante completo que autorizaria para a fatura atual nas condições atuais."
+          ]
+        },
+        {
+          "heading": "Compare a mesma fatura numa única moeda",
+          "paragraphs": [
+            "Suponha que dois ecrãs de pagamento se referem à mesma fatura ilustrativa de artigos. Um apresenta um débito total de 102 unidades da sua moeda e outro de 104. Se o valor menor excluir uma taxa adicional do prestador, a comparação está incompleta. Registe o total confirmado de cada opção e declare os encargos por esclarecer, em vez de apresentar o número em destaque como custo final.",
+            "Quando a conta recebe crédito numa moeda e o banco debita noutra, guarde ambos os montantes. Dividir o montante creditado pelo débito efetivo dá uma medida da conversão dessa transação específica. Não estabelece uma taxa de câmbio universal da plataforma. Compare alternativas para a mesma fatura e momento e distinga a taxa apresentada do valor final registado após a liquidação."
+          ]
+        },
+        {
+          "heading": "Separe o carregamento da conta do pagamento da encomenda",
+          "paragraphs": [
+            "Adicionar fundos à conta da plataforma cria um movimento de saldo. Pagar uma encomenda utiliza fundos ou outro canal para liquidar uma fatura concreta. Estes eventos podem ocorrer quase juntos, mas respondem a perguntas distintas. Após carregar, verifique o crédito; após pagar, confirme o estado da encomenda ou pacote. Um aumento do saldo, por si só, não comprova que a encomenda pretendida foi paga.",
+            "Um registo breve pode ter uma linha para o pagamento externo, outra para o crédito no saldo e outra para a dedução da encomenda, ligadas por referências. É particularmente útil ao financiar várias encomendas. Não trate o saldo restante como desconto na próxima compra: é dinheiro cujo custo inicial de carregamento continua a pertencer ao registo global. Registe fundos não utilizados separadamente dos custos de compras concluídas."
+          ]
+        },
+        {
+          "heading": "Trate cuidadosamente um pagamento pendente ou falhado",
+          "paragraphs": [
+            "Se a página bloquear ou indicar falha, compare o estado da fatura, o histórico da conta e o registo do prestador antes de repetir a transação. Uma autorização bancária pendente e um pagamento confirmado na plataforma são estados diferentes. Guarde a hora, referência da transação e mensagem exata. Estes factos permitem ao apoio investigar uma tentativa específica, em vez de adivinhar a partir de uma captura do saldo atual.",
+            "Se o prestador mostrar um débito mas a fatura continuar por pagar, contacte o apoio relevante com os registos ligados. Não suponha que todos os movimentos pendentes serão liquidados ou anulados num prazo universal. Pergunte qual o estado confirmado e que ação é necessária. Ao partilhar provas, oculte dados completos do cartão e movimentos sem relação. Mantenha os identificadores da transação necessários para identificar o caso."
+          ]
+        },
+        {
+          "heading": "Compreenda o destino de um reembolso",
+          "paragraphs": [
+            "As orientações de devolução da LoloBuy descrevem geralmente reembolsos elegíveis creditados no saldo da conta LoloBuy. Também referem uma exceção limitada para certas encomendas PayPal a aguardar aprovação. Não transforme essa exceção numa promessa de que todos os reembolsos regressam automaticamente ao meio de pagamento original. Verifique a regra associada à etapa real da encomenda e ao registo do pagamento.",
+            "Distinga a aprovação da devolução pelo vendedor, a receção do dinheiro pela plataforma, o crédito na conta e a chegada do dinheiro à conta externa. Cada etapa precisa de provas próprias. Um crédito no saldo pode resolver parte do processo sem comprovar um levantamento. Antes de contar com um levantamento, verifique a elegibilidade atual, a ação disponível e as condições desse saldo. Não suponha tratamento idêntico para saldos não utilizados em todos os casos."
+          ]
+        },
+        {
+          "heading": "Analise os ajustes do transporte separadamente",
+          "paragraphs": [
+            "No processo oficial, o transporte internacional começa como uma estimativa separada. A embalagem posterior ou as medições logísticas podem gerar um montante adicional ou um crédito por excesso de pagamento. Associe cada ajuste ao número do pacote e às medidas finais. Uma fatura extra de transporte não é automaticamente uma taxa do meio de pagamento, e um crédito de transporte não é necessariamente uma anulação da compra original dos artigos.",
+            "Conserve o transporte inicial, as medições alteradas, o montante final e os créditos ou pagamentos adicionais. Se uma rubrica for incerta, pergunte que parte do cálculo mudou. Separe esta reconciliação de impostos no destino ou taxas de processamento da transportadora que possam seguir outro procedimento. Distinguir as categorias facilita a revisão do total e evita pagar um pedido desconhecido sem compreender a sua ligação ao pacote."
+          ]
+        },
+        {
+          "heading": "Guarde um registo de pagamento que continue útil",
+          "paragraphs": [
+            "Um registo útil inclui data, objeto da fatura, referência da encomenda ou pacote, montante de base, taxa apresentada, moeda de liquidação, total a pagar e referência da transação do prestador. Acrescente o estado resultante na plataforma e o movimento do saldo após o pagamento. Num reembolso, ligue a encomenda de origem ao destino do crédito. Estes campos relacionam o que pretendia pagar com o que efetivamente aconteceu.",
+            "Antes do pagamento seguinte, repita a comparação no checkout atual. A disponibilidade dos métodos, a conversão e os encargos podem mudar; uma transação anterior bem-sucedida é uma referência, não uma tabela permanente. Escolha entre os métodos realmente oferecidos para a fatura, compare o débito completo e guarde as provas. Se uma taxa ou condição de reembolso necessária continuar incerta, esclareça essa questão no apoio oficial antes de autorizar o pagamento."
+          ]
+        }
+      ],
+      "checklist": [
+        "Associe o pagamento à fatura exata da encomenda ou pacote.",
+        "Compare taxas atuais e débito final na mesma moeda.",
+        "Verifique se um crédito de saldo também liquidou a fatura pretendida.",
+        "Esclareça um estado de pagamento ambíguo antes de repetir a operação.",
+        "Confirme se o reembolso chegou ao saldo da plataforma ou ao meio de pagamento original."
+      ],
+      "sourceIds": [
+        "buying",
+        "refunds",
+        "cancellation",
+        "freight-balance"
+      ],
+      "readingMinutes": 6,
+      "wordCount": 1226,
+      "published": "2026-10-29",
+      "modified": "2026-10-29"
+    },
+    {
+      "slug": "lolobuy-link-not-working",
+      "title": "Ligação LoloBuy não funciona: verificações Taobao, Weidian e 1688",
+      "description": "Resolva problemas de ligações LoloBuy distinguindo disponibilidade do vendedor, formato da ligação e importação da encomenda; confirme o artigo antes de encomendar manualmente.",
+      "keyword": "ligação lolobuy não funciona",
+      "category": "Ligações de produtos",
+      "summary": "Preserve a ligação original e identifique onde falha. Recupere o mesmo artigo e variante e reveja a encomenda importada, em vez de alterar identificadores ou adivinhar dados em falta.",
+      "sections": [
+        {
+          "heading": "Identifique onde a ligação falha",
+          "paragraphs": [
+            "Uma ligação pode falhar antes ou depois de chegar à LoloBuy. O anúncio original pode estar indisponível, um endereço abreviado pode não resolver ou o formulário de importação pode não captar dados de uma página ativa. Anote o que acontece efetivamente: erro, pré-visualização vazia, pedido de início de sessão ou produto diferente. Estas observações levam a verificações distintas.",
+            "Guarde o URL original antes de alterar qualquer coisa. Registe o marketplace, o identificador visível do artigo se existir, a opção pretendida e a data. Uma captura do artigo esperado pode ajudar, mas deve continuar associada à ligação do vendedor. O objetivo é recuperar informação suficiente para a compra pretendida, não apenas fazer aparecer uma página de produto no navegador."
+          ]
+        },
+        {
+          "heading": "Verifique primeiro o anúncio original do vendedor",
+          "paragraphs": [
+            "Abra o anúncio original através do acesso público ou autenticado normal, conforme adequado. Se o vendedor removeu o artigo ou a opção pretendida estiver indisponível, reformular o endereço não repõe stock. Preserve o nome do vendedor, o título e as medidas relevantes para avaliar outro anúncio como novo candidato. Fotografias semelhantes, por si só, não comprovam equivalência.",
+            "Se o anúncio original estiver ativo e mostrar a opção pretendida, o problema pode estar na ligação partilhada ou na importação. Copie a ligação de partilha ou endereço do anúncio atual e compare-a com a versão guardada. Deixe concluir redirecionamentos legítimos em vez de editar o destino sem fundamento. Uma página que exija conta deve ser consultada pelo processo normal do marketplace; este guia não contorna os seus controlos de acesso."
+          ]
+        },
+        {
+          "heading": "Distinga identificadores de origem e de catálogo",
+          "paragraphs": [
+            "Um site de descoberta pode atribuir um número de registo próprio a uma entrada. Esse número não é necessariamente o identificador do artigo Taobao, Weidian ou 1688. Neste site, os detalhes usam o registo do catálogo para obter o anúncio de origem e a ligação de compra correspondente. Substituir o identificador do marketplace pelo número de um endereço local do catálogo pode levar a outro artigo ou a nenhum.",
+            "Use o botão de compra correspondente quando disponível e compare depois a página aberta com a origem. Se o destino estiver errado, guarde ambos os URLs e comunique a divergência. Não incremente nem troque identificadores numéricos até algo carregar. A imagem, título, vendedor e conjunto de opções devem corresponder em conjunto ao anúncio pretendido. Um único detalhe coincidente não basta para reconstruir a identidade completa do produto."
+          ]
+        },
+        {
+          "heading": "Recupere ligações Taobao com a opção associada",
+          "paragraphs": [
+            "Uma mensagem de partilha Taobao pode conter texto descritivo e uma ligação. Copie a ligação real do anúncio em vez de tratar toda a mensagem como endereço. Se houver redirecionamento, confirme o artigo resultante antes de utilizar o destino na LoloBuy. Guarde a mensagem original quando incluir uma descrição de opção que o endereço, sozinho, não preserva.",
+            "Depois de carregar o artigo, compare a cor, tamanho, quantidade e base do preço selecionados. Uma importação bem-sucedida pode ainda mostrar a opção predefinida, não a pretendida. Guarde a designação original junto da tradução, sobretudo quando várias opções têm nomes semelhantes. Se o vendedor incluir a tabela de tamanhos numa imagem, preserve-a e esclareça as medidas necessárias antes de autorizar a encomenda."
+          ]
+        },
+        {
+          "heading": "Verifique o vendedor e a variante Weidian",
+          "paragraphs": [
+            "Num anúncio Weidian, verifique em conjunto a página do vendedor e o artigo. Uma ligação guardada pode continuar ativa apesar de alterações na oferta, variantes ou preço. Compare o título atual, imagens, nomes das opções e dados do vendedor com o registo anterior. Trate um anúncio alterado como uma nova decisão, em vez de supor que uma imagem familiar preserva a oferta antiga.",
+            "Quando a pré-visualização importada divergir da página atual do vendedor, documente a divergência concreta. Por exemplo, identifique o tamanho ausente ou o preço da opção apresentado. Inclua o URL original e a seleção pretendida na consulta da encomenda. Evite instruções como «o da fotografia» quando o anúncio inclui vários produtos ou variantes. Uma descrição precisa facilita a verificação pela equipa de compras."
+          ]
+        },
+        {
+          "heading": "Trate a quantidade 1688 como parte do produto",
+          "paragraphs": [
+            "O guia oficial 1688 da LoloBuy diz que devem ser cumpridas as quantidades mínimas do vendedor e que preço e transporte nacional podem depender do volume comprado. Um preço importado sem o escalão de quantidade correspondente é, portanto, incompleto. Verifique se o preço é por peça, par, conjunto, caixa ou outra unidade. Um valor baixo pode corresponder a um componente ou a um escalão de compra maior.",
+            "Registe a quantidade mínima, a pretendida, as variantes selecionadas e o preço dessa combinação. Se misturar cores ou tamanhos, esclareça as condições do vendedor em vez de pressupor que qualquer mistura cumpre o mínimo. O guia oficial também descreve condições de inspeção específicas para encomendas 1688. Resolver a ligação não elimina da decisão as condições de quantidade, inspeção ou devolução."
+          ]
+        },
+        {
+          "heading": "Use encomenda manual apenas com detalhes verificados",
+          "paragraphs": [
+            "O guia oficial LoloBuy descreve o preenchimento manual de uma encomenda por agente quando os dados do produto não podem ser captados automaticamente. Utilize essa opção quando for oferecida e forneça os dados do anúncio real. Inclua ligação original, produto e opções exatos, quantidade, preço atual e entrega nacional quando conhecidos. Assinale informações por esclarecer em vez de as inventar.",
+            "Um formulário manual comunica uma encomenda; não garante que se consiga comprar um produto indisponível nem que todos os vendedores aceitem as condições pedidas. Antes de pagar, compare o formulário preenchido com o registo de origem. Após submeter, responda aos pedidos de confirmação pelo canal da encomenda. Guarde a seleção final confirmada para a comparar depois com as provas do armazém."
+          ]
+        },
+        {
+          "heading": "Reveja o resultado importado antes de pagar",
+          "paragraphs": [
+            "Quer tenha corrigido a ligação ou usado um formulário manual, faça a mesma verificação final. Compare identidade, vendedor, cor, tamanho, quantidade, unidade e total. Confirme que o montante apresentado pertence à configuração escolhida e verifique a entrega nacional separadamente. Uma pré-visualização bem-sucedida prova que alguns dados carregaram, não que todos foram importados corretamente ou que o stock está reservado.",
+            "Se a origem e o formulário divergirem, pare nesse ponto e esclareça-o especificamente. Submeter repetidamente encomendas semelhantes pode tornar o registo mais difícil de seguir. Mantenha uma sequência clara de provas com o anúncio original, seleção corrigida e referência resultante. Quando o artigo chegar ao armazém, compare os bens recebidos com esse registo confirmado antes de submeter o pacote internacional."
+          ]
+        },
+        {
+          "heading": "Mantenha um registo de ligações que possa rever",
+          "paragraphs": [
+            "Num registo simples, guarde URL antigo, URL atual, marketplace, vendedor, ID visível, opção, data e resultado. Estados úteis incluem ativo e correspondente, ativo mas alterado, opção indisponível, anúncio removido ou importação por resolver. Se encontrar uma substituição, preserve os seus dados em vez de sobrescrever o original como se nada tivesse mudado. Assim mantém a razão da decisão.",
+            "Volte a verificar o anúncio imediatamente antes de encomendar, pois recuperar uma ligação não garante disponibilidade futura. Se partilhar a ligação corrigida, explique a data e o que verificou, sem afirmar que testou independentemente o vendedor ou os artigos físicos. Um diretório fiável ajuda a descobrir e verificar candidatos. Registos claros e estados corretos mantêm essa utilidade mesmo quando os anúncios individuais mudam."
+          ]
+        }
+      ],
+      "checklist": [
+        "Guarde o URL original antes de modificar uma ligação.",
+        "Verifique a disponibilidade do vendedor separadamente da importação LoloBuy.",
+        "Distinga os IDs de registo do catálogo dos IDs dos artigos do marketplace.",
+        "Verifique unidades, quantidades mínimas e escalões de preço 1688.",
+        "Compare a encomenda final importada ou manual com a origem."
+      ],
+      "sourceIds": [
+        "buying",
+        "wholesale",
+        "confirmation",
+        "qc"
+      ],
+      "readingMinutes": 6,
+      "wordCount": 1217,
+      "published": "2026-10-29",
+      "modified": "2026-10-29"
     }
   ]
 }

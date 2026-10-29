@@ -20,7 +20,7 @@
     "photo": "Bildersuche",
     "popular": "Entdecken:",
     "tagline": "Ein Katalog. Deine nächste Entdeckung.",
-    "source": "Produkte von cnfanssp.com",
+    "source": "Produkte entdecken und Einkaufsratgeber",
     "independent": "Unabhängiger LoloBuy Produktführer",
     "browse": "Spreadsheet entdecken",
     "browseSub": "Etwas weniger suchen. Viel mehr finden.",
@@ -56,7 +56,7 @@
     "empty": "Keine Produkte passen zu deiner Suche.",
     "reset": "Filter zurücksetzen",
     "sourceSearch": "Gesamten Quellkatalog durchsuchen",
-    "snapshot": "Aktueller Katalog von cnfanssp.com. Artikelpreise in CNY enthalten keine Versand- und Servicegebühren. Prüfe die aktuellen Optionen und das endgültige Angebot bei LoloBuy.",
+    "snapshot": "Artikelpreise in CNY verstehen sich ohne Versand- und Servicegebühren. Prüfe aktuelle Optionen und den endgültigen Preis bei LoloBuy.",
     "howTitle": "Vom Entdecken zum Auspacken.",
     "howSub": "Neu bei LoloBuy? Beginne mit diesen drei Schritten.",
     "steps": [
@@ -83,7 +83,7 @@
     "cta": "Deinen nächsten Favoriten gefunden?",
     "ctaSub": "Öffne ihn bei LoloBuy und mach ihn zu deinem.",
     "ctaButton": "Alle Produkte entdecken",
-    "footer": "Ein unabhängiger Produktführer. Wir sind nicht die offizielle LoloBuy Website. Produktangebote und Fotos stammen von cnfanssp.com. Einkäufe werden bei LoloBuy abgeschlossen.",
+    "footer": "Eine unabhängige Website zur Produktsuche. Wir sind nicht die offizielle LoloBuy-Website. Einkäufe werden bei LoloBuy abgeschlossen.",
     "footerLinks": [
       "Spreadsheet",
       "Kaufratgeber",
@@ -102,7 +102,7 @@
     "photoTitle": "Mit einem Foto finden.",
     "photoIntro": "Nutze den Quellkatalog, um Produkte zu finden und zu vergleichen.",
     "photoState": "Bildersuche bei der Quelle",
-    "photoNote": "Auf cnfanssp.com wurde bisher kein öffentlicher Bildsuchdienst verifiziert. Foto-Uploads sind erst verfügbar, wenn der entsprechende Quelldienst bereitsteht.",
+    "photoNote": "Derzeit ist kein unterstützter Bildsuchdienst angebunden. Durchsuche den Katalog stattdessen nach Stichwort oder Kategorie.",
     "browseInstead": "Produkte ansehen",
     "faqTitle": "LoloBuy: Antworten vor deiner Bestellung.",
     "faqIntro": "Auf Grundlage offizieller LoloBuy Hilfeseiten recherchiert. Wenn offizielle Seiten voneinander abweichen, erklärt die Antwort, was du prüfen solltest.",
@@ -124,8 +124,8 @@
     "jump": "Zur Seite",
     "go": "Los",
     "articlesLabel": "Artikel",
-    "articlesTitle": "Ausführliches Wissen zum Einkauf bei LoloBuy.",
-    "articlesIntro": "Zehn praktische Ratgeber auf Grundlage offizieller LoloBuy Hilfeseiten. Finde Produkte, prüfe QC-Fotos, kalkuliere dein Budget und plane den Versand mit klaren Informationen.",
+    "articlesTitle": "LoloBuy-Ratgeber: Bestellung, QC, Versand und Zahlung",
+    "articlesIntro": "Praktische LoloBuy-Ratgeber zu Produktlinks, Lagerprüfung, Versandkosten und Zahlungen. Wähle den Ratgeber für deinen nächsten Schritt.",
     "articleSources": "Offizielle Quellen",
     "reviewed": "Geprüft am 20. Oktober 2026",
     "readArticle": "Artikel lesen",
@@ -149,7 +149,17 @@
     "nextFind": "DER NÄCHSTE FUND GEHÖRT DIR.",
     "liveLabel": "Aus der Quelle aktualisiert",
     "faqCount": "recherchierte Antworten",
-    "catalogue": "Katalog"
+    "catalogue": "Katalog",
+    "homeTitle": "LoloBuy Spreadsheet und Einkaufsratgeber | LoloBuy Sheet",
+    "catalogTitle": "LoloBuy-Funde durchsuchen: Kleidung, Sneaker und Accessoires",
+    "catalogDescription": "Durchsuche LoloBuy-Funde nach Kategorie, suche im vollständigen Katalog und vergleiche Artikelpreise. Prüfe die Produktdetails, bevor du den passenden LoloBuy-Kauflink öffnest.",
+    "guidesTitle": "LoloBuy-Einkaufsratgeber: Vom Produktlink bis zur Lieferung",
+    "guideMetaTitle": "So funktioniert LoloBuy: Bestellung, QC und internationaler Versand",
+    "shippingNav": "Versand",
+    "reviewedLabel": "Aktualisiert",
+    "nextStep": "Weiter zum nächsten Schritt",
+    "priorityTitle": "Vor der Bestellung oder dem Versand",
+    "priorityIntro": "Prüfe das Produkt, sichte die Lagerunterlagen und vergleiche die vollständigen Paketkosten."
   },
   "faqs": [
     {
@@ -450,7 +460,9 @@
         "qc"
       ],
       "readingMinutes": 3,
-      "wordCount": 490
+      "wordCount": 627,
+      "published": "2026-10-20",
+      "modified": "2026-10-29"
     },
     {
       "slug": "how-to-order-on-lolobuy",
@@ -507,6 +519,35 @@
             "Der offizielle Ablauf verlangt die Auswahl gelagerter Artikel, Lieferangaben und einer verfügbaren Versandoption. Prüfe Ziel, Beschränkungen, Verpackung und Frachtvorschuss zusammen. Ein gekaufter Artikel ist nicht automatisch ein abholbereites internationales Paket.",
             "Nach Verpackung und logistischer Messung können sich die endgültigen Frachtkosten ändern. Beobachte den Paketdatensatz auf Anpassungen oder Bestätigungsfragen. Nutze nach dem Versand den Paketbereich für Tracking, bewahre Bestellreferenzen und prüfe den Inhalt nach der Lieferung zeitnah."
           ]
+        },
+        {
+          "heading": "Erstelle einen wiederverwendbaren Datensatz für die erste Bestellung",
+          "paragraphs": [
+            "Bereite vor der ersten Bestellung eine kompakte Aufzeichnung mit Verkäufer-URL, Artikeltitel, genauer Option, Menge, Größentabellenreferenz und offenen Fragen vor. Bewahre die Originalbezeichnung der Option auf, wenn eine Übersetzung mehrdeutig sein könnte. Benenne bei einem Set die erwarteten Bestandteile. Dieser Datensatz ermöglicht einen Vergleich an der Kasse und später im Lager, statt sich auf die Erinnerung an ein Vorschaubild zu verlassen.",
+            "Eine beispielhafte Kleidungsbestellung könnte ein marineblaues Sweatshirt in Verkäufergröße M mit einer bestimmten flachen Brustweite aus der Tabelle benennen. Das ist klarer als die Bitte um ein mittelgroßes blaues Oberteil. Ist Tabelle oder Farbname unklar, frage vor dem Kauf nach. Präzise Wünsche verbessern die Kommunikation, belegen aber weder Verkäuferbestand noch passende Kleidungsgröße."
+          ]
+        },
+        {
+          "heading": "Trenne Produktprobleme von Zahlungsproblemen",
+          "paragraphs": [
+            "Ist der importierte Artikel falsch oder fehlt eine notwendige Option, kläre das Angebot vor Zahlung. Prüfe anhand der Originalquelle, ob der Verkäufer das Angebot geändert oder der Import Angaben ausgelassen hat. Eine angebotene manuelle Bestellung sollte die tatsächlichen Produktdetails bewahren. IDs zu verändern oder eine ungefähr ähnliche Option zu wählen, löst eine unsichere Bestellung nicht und kann spätere Abweichungen schwerer belegbar machen.",
+            "Ist der Artikel korrekt, aber der Zahlungsstatus unklar, vergleiche Rechnung, Kontoguthaben und Zahlungsanbieterbeleg. Sichere vor einem neuen Versuch Transaktionsreferenz und Fehlermeldung. Eine ladende Seite beweist allein keinen Fehlschlag. Bitte den Support um Klärung einer unklaren Belastung, statt mehrere überlappende Versuche zu erzeugen. Behandle Produktidentität, Zahlungsstatus und Verkäuferversand als separate Prüfpunkte: Erfolg in einer Phase bestätigt nicht den nächsten Schritt."
+          ]
+        },
+        {
+          "heading": "Plane die Lagerentscheidung vor der Paketanmeldung",
+          "paragraphs": [
+            "Lege vor Wareneingang fest, welche Nachweise du brauchst. Bei einem größenabhängigen Kleidungsstück kann eine bestimmte Messung nötig sein, bei einem Accessoire-Set ein deutlicher Blick auf alle Bestandteile. Prüfe den verfügbaren Inspektionsdienst und seine Grenzen. Vergleiche fertige Fotos mit der gespeicherten Bestellung und liste offene Details auf. Bitte um eine konkrete Ansicht oder Erklärung statt eines pauschalen Urteils, der Artikel sehe gut aus.",
+            "Prüfe rechtzeitig die Rückgabebedingungen, solange die Ware im Lager ist. Lagerdauer und Rückgabefrist des Verkäufers sind verschiedene Fristen. Das Warten auf mehrere Artikel für ein gemeinsames Paket kann die Rückgabefrist eines unerwünschten Artikels verstreichen lassen. Frage vor internationalem Versand nach dessen Austausch- oder Rückgabemöglichkeit und voraussichtlichen Kosten. Gehe nicht davon aus, dass ein Paket nach jedem weiteren Bearbeitungsschritt noch gestoppt werden kann."
+          ]
+        },
+        {
+          "heading": "Schließe die Bestellung mit einer vollständigen Kostenaufstellung ab",
+          "paragraphs": [
+            "Erfasse Waren und Inlandsversand, Zusatzleistungen, internationale Fracht und Zielortgebühren getrennt. Addiere jede Gebühr nur einmal und notiere ihre Währung. Ersetze im Verlauf Schätzungen durch bestätigte Rechnungen und behalte frühere Zahlen zum Vergleich. Ändert sich die Fracht nach dem Packen, ordne die Anpassung der Paketreferenz und den Messwerten zu. So werden die Gesamtkosten klarer als mit einer einzelnen undatierten Summe.",
+            "Vergleiche nach Lieferung die erhaltene Ware mit der ursprünglichen Artikelliste und bewahre bei Problemen Verpackungsnachweise auf. Nutze den passenden Bestell- oder Paketsupport und beschreibe Problem und Belege, die es mit deinem Kauf verbinden. Halte Kaufdatum, Lagerankunft, Versand und Zustellung als separate Meilensteine fest. Diese Beobachtungen können die nächste Bestellung unterstützen, ohne denselben zeitlichen Ablauf für ein anderes Paket zu versprechen.",
+            "Notiere vor Abschluss, welche Schritte Rückfragen erforderten und welche Annahmen sich änderten. War eine manuelle Bestellung nötig, bewahre die bestätigte Optionsbezeichnung auf. Änderte sich die Frachtschätzung, halte den gemessenen Karton neben dem ursprünglichen Angebot fest. Diese Notizen beschreiben nur deine eigene Bestellung. Prüfe Angebot, Kasse und Versandbedingungen beim nächsten Kauf erneut, selbst bei scheinbar identischen Artikeln. Ein erfolgreicher früherer Kauf reserviert weder Bestand noch denselben Preis, Service oder dieselben Verkäuferbedingungen."
+          ]
         }
       ],
       "checklist": [
@@ -523,8 +564,10 @@
         "qc",
         "freight-balance"
       ],
-      "readingMinutes": 3,
-      "wordCount": 451
+      "readingMinutes": 6,
+      "wordCount": 1257,
+      "published": "2026-10-20",
+      "modified": "2026-10-29"
     },
     {
       "slug": "lolobuy-qc-photos",
@@ -581,6 +624,35 @@
             "Ordne Ergebnisse als bestätigt, unklar oder nicht akzeptabel ein. Bei Unklarheit fordere Belege an. Weicht der Artikel offenbar von der Bestellung ab, nutze vor dem internationalen Versand Support oder Rückgabeprozess. Bewahre eine kurze Problembeschreibung und die beweisenden Fotos.",
             "Fotos belegen nicht jede Materialeigenschaft, Komfort, Haltbarkeit oder innere Funktion. Die sichtbare Beschaffenheit zu akzeptieren ist eine engere Entscheidung. Lies Rückgabebedingungen, solange der Artikel im Lager liegt, und deute erfolgreiche QC nicht als Zusage zu Zoll oder internationaler Lieferung."
           ]
+        },
+        {
+          "heading": "Formuliere eine klare Anfrage zur Kleidungsprüfung",
+          "paragraphs": [
+            "Beginne mit den für die Passform wichtigen Maßen, statt das Lager beurteilen zu lassen, ob dir ein Kleidungsstück passt. Bei einem Sweatshirt können flache Brustweite, Rückenlänge und Ärmellänge nach denselben Messpunkten wie in der Verkäufertabelle nötig sein. Nenne Messmethode und Einheit. Das Größenetikett ist ein nützlicher Identitätsnachweis, ersetzt aber keine Maße des Kleidungsstücks.",
+            "Verwendet die Tabelle Körperumfang und das Foto flache Breite, vergleiche die Zahlen nicht direkt. Prüfe Anfang und Ende des Maßbands, flache Auslage des Kleidungsstücks und Lesbarkeit der Zahl. Licht und Perspektive können die Farbwahrnehmung verändern. Bitte bei wichtiger Farbe um eine klarere Ansicht, berücksichtige aber, dass ein Bildschirmfoto keinen exakten tatsächlichen Farbton garantieren kann."
+          ]
+        },
+        {
+          "heading": "Prüfe Schuhe und Accessoires ohne überzogene Aussagen",
+          "paragraphs": [
+            "Vergleiche bei Schuhen beide Exemplare, sichtbare Größenangaben, Gesamtform und die für deine Frage relevanten Bereiche. Benenne eine benötigte Messung oder Nahansicht ausdrücklich. Prüfe bei einer Tasche Griffe, Verschlüsse und sichtbare erwartete Bestandteile. Liste bei mehrteiligen Accessoires den Sollumfang auf und gleiche ihn mit den Fotos ab, statt bei einer geschlossenen Schachtel automatisch Vollständigkeit anzunehmen.",
+            "Eine sichtbare Naht oder ein Oberflächenfehler lässt sich mit Nahaufnahme und Ortsangabe dokumentieren. Verborgene Konstruktion, Tragekomfort, Materialzusammensetzung und langfristige Haltbarkeit erfordern gewöhnlich andere Nachweise. Behandle ein Lagerfoto nicht als Echtheitszertifikat oder professionelle Funktionsprüfung. Lies bei versiegelten Produkten oder Spezialelektronik zuerst die Inspektionsausschlüsse, bevor du beurteilst, ob die Leistung deine eigentliche Frage beantwortet."
+          ]
+        },
+        {
+          "heading": "Unterscheide Unsicherheit und bestätigten Mangel",
+          "paragraphs": [
+            "Verwende drei Zustände: bestätigte Übereinstimmung, weiterer Nachweis nötig und beobachtete Abweichung. Ein unlesbares Größenetikett gehört beispielsweise bis zu einem deutlicheren Foto in die zweite Gruppe; ein klar anderes Größenetikett in die dritte. So wird ein fehlendes Foto nicht als bewiesener Mangel beschrieben und eine attraktive Gesamtaufnahme verdeckt keine offene Frage.",
+            "Notiere für jeden offenen Punkt Bestellnummer, relevantes Bild, präzise Frage und nächste Handlung. Aktualisiere diesen Punkt nach der Antwort, statt die gesamte Aufzeichnung durch eine vage Freigabe zu ersetzen. Bleibt eine Abweichung bestehen, frage nach der anwendbaren Lösung, solange der Artikel im Lager ist. Bewahre Verkäuferzustimmung, Rückgabeanforderungen und mögliche Kosten gemeinsam auf. Eine Rückgabe zu beantragen ist nicht gleichbedeutend mit ihrer Genehmigung."
+          ]
+        },
+        {
+          "heading": "Entscheide vor der nächsten Frist",
+          "paragraphs": [
+            "Prüfe den Artikel zeitnah, sobald seine Lagerinformationen vorliegen. LoloBuys Rückgabehinweise machen die Berechtigung von Bestellung, Verkäufer und Zeitpunkt abhängig. Eine allgemeine Lagerfrist verlängert keine Rückgabefrist. Lies die konkreten Zeit- und Zustandsanforderungen und erhalte benötigte Originalverpackung. Verzögere eine notwendige Anfrage nicht bloß deshalb, weil andere Artikel des geplanten Pakets noch fehlen.",
+            "Notiere bei Versandfreigabe, was tatsächlich geprüft wurde und was unbekannt bleibt. Identität und sichtbare Maße können etwa bestätigt sein, Komfort und Haltbarkeit aber ungetestet bleiben. Halte diese begrenzte Aussage bei der Artikelreferenz fest. Überprüfe offene Bedenken vor Paketanmeldung erneut, insbesondere wenn eine Verpackungsänderung relevante Etiketten oder Originalverpackung entfernen würde. So entsteht ein brauchbarer Entscheidungsverlauf, ohne QC als Beseitigung aller Kaufrisiken darzustellen.",
+            "Bewahre Originalbilder und kurze Entscheidungsnotiz gemeinsam auf, statt nur einen zugeschnittenen Ausschnitt zu speichern. Die Gesamtaufnahme ordnet die Frage dem richtigen Artikel zu; die Bestellreferenz verbindet das Foto mit deinem Kauf. Klärt ein späteres Bild die Frage, bewahre beide auf und benenne die Änderung. Teile persönliche Bestelldaten nicht öffentlich. Ein nützlicher Beleg ist eine konkrete Beobachtung mit nachvollziehbarer Quelle, keine unbegründete Bewertung oder Behauptung, jedes Verkäuferprodukt sei geprüft."
+          ]
         }
       ],
       "checklist": [
@@ -594,15 +666,18 @@
         "qc",
         "photos",
         "service",
-        "sizing"
+        "sizing",
+        "returns"
       ],
-      "readingMinutes": 3,
-      "wordCount": 440
+      "readingMinutes": 6,
+      "wordCount": 1256,
+      "published": "2026-10-20",
+      "modified": "2026-10-29"
     },
     {
       "slug": "lolobuy-shipping-costs",
-      "title": "LoloBuy Versandkosten: das vollständige Paket vergleichen",
-      "description": "Verstehe geschätztes, tatsächliches und Volumengewicht und vergleiche Routen mit gleichem Ziel, Inhalt und Verpackungswunsch.",
+      "title": "LoloBuy-Versandkosten: Rechner, Gewicht und Gebühren",
+      "description": "Nutze den LoloBuy-Versandkostenrechner, vergleiche tatsächliches und Volumengewicht und prüfe Verpackung, Frachtanpassungen und das vollständige Paketbudget.",
       "keyword": "lolobuy versandrechner",
       "category": "Versand",
       "summary": "Ein sinnvoller Frachtvergleich beginnt mit einem eindeutig definierten Paket. Dieser Ratgeber erklärt Eingaben und Prüfungen und liefert kein aktuelles Versandangebot.",
@@ -655,6 +730,35 @@
             "LoloBuys Nachzahlungshinweise erklären den Abgleich geschätzter Fracht mit der tatsächlichen Logistikrechnung. Daraus können Erstattung oder Nachzahlungsanfrage folgen. Lies Paketnachrichten und beantworte Anfragen zu deiner Sendung.",
             "Bewahre Schätzung, endgültige abrechenbare Maße, gewählte Leistungen und Anpassung zusammen. Damit lassen sich Unterschiede leichter erklären. Plane mögliche Zielgebühren separat und prüfe das endgültige Pakettotal, bevor du die Bestellung als abgeschlossen betrachtest."
           ]
+        },
+        {
+          "heading": "Nutze den offiziellen Rechner mit einer gespeicherten Ausgangsbasis",
+          "paragraphs": [
+            "Öffne LoloBuys aktuellen Versandkostenrechner und wähle das tatsächliche Ziel. Gib Inhalt, Gewicht und Maße in den angezeigten Einheiten ein. Speichere Datum, Eingaben, Dienst und Währung zusammen mit dem Ergebnis. Sind die Waren noch nicht im Lager, kennzeichne Maße als Schätzungen. Das ist wichtig, denn ein ungefähres Verkäufergewicht beschreibt keinen fertig gepackten Karton samt Außenverpackung.",
+            "Speichere eine Ausgangskonfiguration, bevor du Verpackung oder Artikelliste änderst. Ändere für jede Alternative möglichst nur eine Variable. Verschwindet eine Route bei Änderung der Warenkategorie, gehört diese Beschränkung zum Ergebnis; eine falsche Kategorie für ein günstigeres Angebot macht die Route nicht geeignet. Vergleiche nur für tatsächliche Ware und Ziel angebotene Dienste und lasse unbeantwortete Zulässigkeitsfragen sichtbar."
+          ]
+        },
+        {
+          "heading": "Erstelle einen Vergleich aller Pakete",
+          "paragraphs": [
+            "Verwende eine Zeile pro vollständigem Versandszenario. Erfasse Inhalt, Paketanzahl, tatsächliches Gewicht, Maße, Verpackungsleistungen, Route und Gesamtfracht. Addiere bei zwei Paketen beide vollständigen Angebote, bevor du sie einem gemeinsamen Paket gegenüberstellst. Separate Mindestgebühren können das Ergebnis beeinflussen. Eine kleinere Zahl für das erste Paket belegt nicht, dass das Aufteilen der gesamten Bestellung günstiger ist.",
+            "Ein sinnvoller Vergleich erfasst auch Schutz- und Leistungsunterschiede. Ein Szenario erhält vielleicht den Schuhkarton, ein anderes entfernt ihn; eines enthält Verstärkung, ein anderes nicht. Dokumentiere diese Änderungen, damit der Betrag keine unterschiedlichen Ergebnisse verdeckt. Fehlen endgültige Maße, behandle den Vergleich als Planung und wiederhole ihn nach Bestätigung der Verpackungsdaten. Mache aus einer geschätzten Ersparnis keine garantierte Endrechnung."
+          ]
+        },
+        {
+          "heading": "Prüfe eine geänderte Schätzung Position für Position",
+          "paragraphs": [
+            "Unterscheidet sich die endgültige Fracht von der gespeicherten Schätzung, vergleiche zuerst Ziel, ausgewählte Artikel, tatsächliches Gewicht und Kartonmaße. Prüfe anschließend Route, Abrechnungsstaffel, Zusatzleistungen und Währung. Ein schwererer Umkarton, sperriger Artikel oder anderer Dienst kann die Änderung erklären, selbst bei ähnlicher Artikelliste. Frage nach der konkreten Messung oder Position, statt jede Differenz derselben Gebühr zuzuordnen.",
+            "Verknüpfe anfängliche Anzahlung und spätere Anpassungen mit derselben Paketreferenz. Eine Kontogutschrift wegen Überzahlung und eine Erstattung auf ein externes Zahlungsmittel sind unterschiedliche Vorgänge. Prüfe das Gutschriftziel oder die noch fällige Nachzahlung. Bewahre bei unvollständiger Erklärung beide Angebote auf und stelle eine paketbezogene Frage. Das ist hilfreicher, als deine Summe mit einem fremden Paket an ein anderes Ziel oder zu einem anderen Datum zu vergleichen."
+          ]
+        },
+        {
+          "heading": "Trenne Fracht vom Gesamtbudget bis zur Lieferung",
+          "paragraphs": [
+            "Der internationale Frachtbetrag enthält möglicherweise nicht jede Zahlung, die mit dem Erhalt der Ware verbunden ist. Prüfe ursprünglichen Artikelkauf, Inlandsversand, optionale Lagerarbeit, Zahlungsgebühren und Zielortkosten separat. Kennzeichne enthaltene Leistungen eindeutig, um doppelte Anrechnung zu vermeiden. Ein leeres Betragsfeld bleibt eine offene Frage und wird nicht stillschweigend zu null im Gesamtbudget.",
+            "Prüfe vor Zahlung aktuelle Zielortinformationen und die ausdrücklich enthaltenen Leistungen des gewählten Dienstes. Leite Zollbehandlung oder Käuferschutz nicht aus einem Routennamen ab. Veröffentlichst du später ein Versandbeispiel, nenne Datum, Inhalt, Ziel, gemessenen Karton und Umfang des angebotenen Betrags ohne personenbezogene Daten. Ein gut belegter vergangener Fall hilft beim Wiederholen des Vergleichs; ein isolierter Preis bestimmt keinen Tarif für das Paket anderer Leser.",
+            "Eine Vergleichstabelle kann einfach bleiben: eine Zeile pro Szenario mit Angebotsdatum, Ziel, Ware, Gewichtsquelle, Maßen, Route, Betrag und offenen Fragen. Ergänze beim Versand eine Spalte für das bestätigte Ergebnis. Ersetze die ursprüngliche Schätzung nicht ohne ihre Eingaben zu bewahren, sonst geht die Erklärung der Differenz verloren. Beschaffe unbekannte Eingaben aus dem aktuellen Paketdatensatz oder vom Support, bevor du einen belastbaren Vergleich ziehst. Verwende die Methode für jedes neue Paket, statt einen alten Preis auf alle künftigen Käufe auszudehnen."
+          ]
         }
       ],
       "checklist": [
@@ -668,10 +772,13 @@
         "buying",
         "weight",
         "packaging",
-        "freight-balance"
+        "freight-balance",
+        "estimate"
       ],
-      "readingMinutes": 3,
-      "wordCount": 400
+      "readingMinutes": 6,
+      "wordCount": 1225,
+      "published": "2026-10-20",
+      "modified": "2026-10-29"
     },
     {
       "slug": "lolobuy-warehouse-consolidation",
@@ -746,7 +853,9 @@
         "freight-balance"
       ],
       "readingMinutes": 3,
-      "wordCount": 411
+      "wordCount": 586,
+      "published": "2026-10-20",
+      "modified": "2026-10-29"
     },
     {
       "slug": "lolobuy-sizing-guide",
@@ -819,7 +928,9 @@
         "returns"
       ],
       "readingMinutes": 3,
-      "wordCount": 434
+      "wordCount": 619,
+      "published": "2026-10-20",
+      "modified": "2026-10-29"
     },
     {
       "slug": "lolobuy-tracking-guide",
@@ -893,7 +1004,9 @@
         "freight-balance"
       ],
       "readingMinutes": 3,
-      "wordCount": 407
+      "wordCount": 601,
+      "published": "2026-10-20",
+      "modified": "2026-10-29"
     },
     {
       "slug": "lolobuy-returns-refunds",
@@ -968,7 +1081,9 @@
         "changes"
       ],
       "readingMinutes": 3,
-      "wordCount": 389
+      "wordCount": 602,
+      "published": "2026-10-20",
+      "modified": "2026-10-29"
     },
     {
       "slug": "lolobuy-order-budget",
@@ -1050,8 +1165,10 @@
         "freight-balance",
         "wholesale"
       ],
-      "readingMinutes": 3,
-      "wordCount": 463
+      "readingMinutes": 4,
+      "wordCount": 662,
+      "published": "2026-10-20",
+      "modified": "2026-10-29"
     },
     {
       "slug": "lolobuy-seller-and-review-checks",
@@ -1125,7 +1242,280 @@
         "returns"
       ],
       "readingMinutes": 3,
-      "wordCount": 404
+      "wordCount": 604,
+      "published": "2026-10-20",
+      "modified": "2026-10-29"
+    },
+    {
+      "slug": "lolobuy-shipping-netherlands",
+      "title": "LoloBuy-Versand in die Niederlande: Kosten, Dauer und Paketprüfung",
+      "description": "Plane ein LoloBuy-Paket für die Niederlande: Vergleiche Eingaben im Versandkostenrechner, Verpackung, Lieferphasen und Unterlagen zur Prüfung von Einfuhrkosten.",
+      "keyword": "LoloBuy Versand Niederlande",
+      "category": "Lieferung in die Niederlande",
+      "summary": "Verwende die Niederlande als tatsächliches Zielland beim Frachtvergleich. Bewahre ein datiertes Angebot auf, unterscheide die Lieferphasen und prüfe vor der Zahlung aktuelle Informationen des niederländischen Zolls.",
+      "sections": [
+        {
+          "heading": "Beginne mit den Angaben zum Niederlande-Paket",
+          "paragraphs": [
+            "Ein sinnvoller Vergleich der LoloBuy-Versandkosten beginnt mit dem Paket, das du erhalten möchtest, nicht mit einem Preis, den jemand anderes gezahlt hat. Notiere Zielland, Postleitzahl, Artikelliste, Mengen und Verpackungen, die bei der Ware bleiben müssen. Eine Versandart für ein kleines Kleidungspaket akzeptiert möglicherweise keine andere Produktmischung. Das Land allein belegt nicht, dass dein Paket zugelassen ist.",
+            "Führe zwei Listen: bereits bestätigte Angaben und noch geschätzte Informationen. Verkäufermaße, Artikelgewicht im Lager und Maße eines fertig gepackten Kartons sind unterschiedliche Angaben. Kennzeichne ihre Quellen, damit du weißt, was nach Wareneingang zu aktualisieren ist. Muss eine Geschenkbox unversehrt bleiben, halte das fest, bevor du eine günstigere Verpackungsoption vergleichst, die ihre Entfernung voraussetzt. Diese Entscheidung kann Schutz und Volumen beeinflussen."
+          ]
+        },
+        {
+          "heading": "Lies den Preis nach einzelnen Phasen",
+          "paragraphs": [
+            "Der offizielle LoloBuy-Einkaufsratgeber trennt die erste Artikelzahlung und den chinesischen Inlandsversand von der späteren Anmeldung des internationalen Pakets. Halte diese Phasen auch bei einer Bestellung in die Niederlande im Budget getrennt. Der Katalogpreis ist ein Ausgangspunkt für den Artikel und kein Angebot für die Lieferung bis zu deiner Tür. Ergänze nur Kosten, die der aktuelle Bestell- oder Paketdatensatz tatsächlich bestätigt.",
+            "Führe eine einfache Aufstellung mit Spalten für Artikel, Inlandsversand, optionale Lagerleistungen, internationale Fracht, Zahlungskosten und Abgaben am Zielort. Notiere bei jedem Betrag die Währung. Enthält ein Angebot bereits eine Gebühr, kennzeichne sie als enthalten, statt sie erneut zu addieren. Ein unbeantwortetes Feld bleibt offen. Eine Summe mit ausdrücklich benannter Lücke ist hilfreicher als eine scheinbar genaue Summe, die fehlende Kosten als null behandelt."
+          ]
+        },
+        {
+          "heading": "Bereite einen wiederholbaren Rechnervergleich vor",
+          "paragraphs": [
+            "Öffne den offiziellen LoloBuy-Versandkostenrechner und wähle die Niederlande als Ziel. Gib Gewicht, Maße und Warenkategorie in den Einheiten ein, die das aktuelle Formular verlangt. Prüfe Gramm und Kilogramm, bevor du Ergebnisse vergleichst. Ein Gewicht in der falschen Einheit beschreibt ein anderes Paket, selbst wenn die Ergebnisanzeige plausibel aussieht. Speichere die Eingaben zusammen mit den angebotenen Optionen.",
+            "Notiere für jede zulässige Versandart Angebotsdatum, Währung, Betrag, geschätzte Laufzeit, Trackinginformationen und genannte Einschränkungen. Halte Inhalt und Maße beim Vergleich identisch. Erfordert eine Versandart eine andere Verpackung, dokumentiere den Unterschied ausdrücklich. Mache aus einem alten Screenshot keine aktuelle Preistabelle. Ein nützlicher Vergleich lässt sich mit gemessenen Lagerdaten wiederholen, sobald diese verfügbar sind."
+          ]
+        },
+        {
+          "heading": "Verstehe die Wirkung eines leichteren oder kleineren Kartons",
+          "paragraphs": [
+            "Das tatsächliche Gewicht misst die Masse; das Volumengewicht bildet den belegten Raum nach der Abrechnungsregel der Versandart ab. LoloBuys Gewichtshinweise beschreiben unterschiedliche Formeln je nach Route. Lies die aktuellen Bedingungen, statt denselben Divisor für alle Dienste anzuwenden. Prüfe außerdem Rundung, Mindestgebühren und die Staffel für Zusatzgewicht. Eine geringe Gewichtsreduktion kann das Paket in derselben Preisstufe belassen.",
+            "Betrachte als Rechenbeispiel einen Karton mit 40 mal 30 mal 20 Zentimetern. Sein Volumen beträgt 24.000 Kubikzentimeter. Bei einem hypothetischen Divisor von 6.000 ergäbe sich ein Volumengewicht von 4 Kilogramm. Wird eine Seite auf 15 Zentimeter verkürzt, ergeben sich nach derselben angenommenen Regel 3 Kilogramm. Diese Rechnung erklärt einen Verpackungsvergleich; sie bestätigt weder eine verfügbare LoloBuy-Route noch einen Frachtpreis oder eine garantierte Ersparnis."
+          ]
+        },
+        {
+          "heading": "Vergleiche Zusammenfassung und getrennte Pakete",
+          "paragraphs": [
+            "Liegen mehrere Artikel im Lager, vergleiche ein gemeinsames Paket mit der Summe aller vorgesehenen Einzelpakete. Verwende dasselbe Ziel und berücksichtige die Verpackungsleistungen jeder Option. Ein niedrigerer Betrag neben einem Teilpaket ist nicht der Gesamtpreis für den Versand des ganzen Warenkorbs. Jedes Paket kann eine eigene Mindestgebühr und separate Bearbeitung am Ziel haben.",
+            "Schutz und Beschränkungen können wichtiger sein als die niedrigste anfängliche Fracht. Ein zerbrechlicher Artikel braucht möglicherweise Trennung oder Verstärkung, während eine sperrige Schachtel das Volumen eines sonst kompakten Pakets bestimmt. Frage nach der konkreten Anordnung, die geprüft werden soll. Erhalte notwendigen Schutz und kontrolliere, dass der gewählte Dienst den tatsächlichen Inhalt akzeptiert. Zusammenfassung ist eine zu bewertende Entscheidung und kein automatisches Sparversprechen."
+          ]
+        },
+        {
+          "heading": "Betrachte die Lieferzeit als Abfolge",
+          "paragraphs": [
+            "Unterscheide Verkäuferversand, Ankunft im chinesischen Lager, Prüfung, Paketvorbereitung, internationalen Transport, Bearbeitung am Ziel und letzte Zustellung. Eine Laufzeitschätzung des Transporteurs kann nur einen Teil dieser Abfolge abdecken. Notiere, ab welchem Ereignis eine Schätzung beginnt, bevor du sie mit der gesamten Wartezeit anderer Käufer vergleichst. Bestellbestätigung und Übernahme durch den Transporteur sind verschiedene Startpunkte.",
+            "Verfolge nach dem Versand die Paketreferenz im Konto und die zugeordneten Transporteurinformationen. Eine erzeugte Sendungsnummer beweist allein nicht, dass der Transporteur das Paket physisch übernommen hat. Ist der Fortschritt unklar, frage, welcher Meilenstein abgeschlossen ist und wer das Paket gerade hält. Plane bei zeitkritischen Käufen einen Puffer, statt einen geschätzten Lieferzeitraum als garantiertes Datum zu behandeln."
+          ]
+        },
+        {
+          "heading": "Prüfe aktuelle niederländische Einfuhrinformationen",
+          "paragraphs": [
+            "Informiere dich vor der Zahlung beim niederländischen Zoll über aktuelle Regeln für Onlinekäufe von außerhalb der Europäischen Union. Seine Hinweise unterscheiden Mehrwertsteuer, Einfuhrzoll und Bearbeitungskosten des Transporteurs. Die Regeln für geringwertige Sendungen änderten sich im Juli 2026. Ein älterer Ratgeber, der solche Käufe automatisch als zollfrei bezeichnet, ist daher keine Grundlage für eine aktuelle Berechnung. Prüfe die Regeln für die tatsächliche Ware und das Einfuhrdatum.",
+            "Bewahre Artikelbeschreibungen, Kaufbeträge, Währung und bereits erhobene Steuern oder Zölle gemeinsam auf. Frage Transporteur oder Verkäufer, wie eine enthaltene Abgabe dokumentiert wird und was noch zu zahlen ist. Der Kurzname einer Versandlinie bestimmt nicht die steuerliche Behandlung deines Pakets. Dieser Ratgeber berechnet keine allgemeingültige niederländische Zollrechnung: Warenklassifizierung, Transaktion und Verfahren sind entscheidend. Verwende korrekte Beschreibungen und Werte bei verlangten Angaben."
+          ]
+        },
+        {
+          "heading": "Gleiche die endgültige Fracht ab und bewahre Nachweise auf",
+          "paragraphs": [
+            "LoloBuys offizielle Frachthinweise beschreiben, dass zunächst ein Schätzwert erhoben und später mit der Logistikgebühr abgeglichen wird. Vergleiche jede Anpassung mit dem endgültigen Paketgewicht, den Maßen, der Route und den gewählten Leistungen. Ändert sich der Betrag, identifiziere die veränderte Eingabe, bevor du die Schätzung als feste Zusage ansiehst. Bewahre ursprüngliches Angebot und endgültige Paketrechnung gemeinsam auf.",
+            "Vergleiche nach der Lieferung den Inhalt mit der gespeicherten Artikelliste und prüfe die Verpackung, bevor du sie entsorgst. Sichere Fotos, wenn etwas fehlt oder beschädigt erscheint, und nutze den passenden Bestell- oder Paketsupport. Verkäuferrückgaben, internationale Paketansprüche und Transporteurgebühren betreffen unterschiedliche Unterlagen. Gute Dokumentation macht eine Anfrage verständlicher, ohne eine bestimmte Erstattung oder Lösung zu versprechen."
+          ]
+        },
+        {
+          "heading": "Erstelle einen nützlichen Datensatz für die nächste Bestellung",
+          "paragraphs": [
+            "Bewahre nach Abschluss einer Bestellung ehrlich vergleichbare Angaben auf: Datum, Ziel, tatsächliche Ware, gemessener Karton, gewählter Dienst, endgültige Fracht und beobachtete Liefermeilensteine. Entferne persönliche Adressdaten, bevor du ein Beispiel teilst. Eine vergangene Sendung kann anderen den Ablauf erklären, sollte aber als einzelner datierter Fall und nicht als allgemeines Preis- oder Lieferzeitversprechen gekennzeichnet bleiben.",
+            "Nutze diese Aufzeichnung, um die nächste Schätzung zu verbessern. Notiere, ob Volumen oder Gewicht die Abrechnung bestimmte, ob eine Zusatzleistung den Karton veränderte und welche Budgetposition zunächst fehlte. Prüfe vor Wiederverwendung der Zahlen, ob Ziel, Inhalt und aktuelle Versandbedingungen weiterhin passen. Eine wiederholbare Methode ist hilfreicher als die günstigste Zahl aus einem ganz anderen Paket."
+          ]
+        }
+      ],
+      "checklist": [
+        "Wähle die Niederlande und die korrekte Postleitzahl im aktuellen Angebot.",
+        "Speichere identische Gewichts-, Volumen- und Inhaltsangaben für den Routenvergleich.",
+        "Trenne Lagerzeit, internationalen Transport und letzte Zustellung.",
+        "Prüfe aktuelle niederländische Einfuhrhinweise und bereits erhobene Beträge.",
+        "Bewahre ursprüngliche und endgültige Paketrechnungen gemeinsam auf."
+      ],
+      "sourceIds": [
+        "buying",
+        "weight",
+        "packaging",
+        "freight-balance",
+        "estimate"
+      ],
+      "readingMinutes": 6,
+      "wordCount": 1222,
+      "published": "2026-10-29",
+      "modified": "2026-10-29"
+    },
+    {
+      "slug": "lolobuy-payment-methods-fees",
+      "title": "LoloBuy-Zahlungsmethoden und Gebühren: Kasse, Währung und Guthaben",
+      "description": "Prüfe LoloBuy-Zahlungsmethoden an der Kasse, vergleiche die vollständige Belastung und unterscheide Kontogutschriften von Erstattungen auf das ursprüngliche Zahlungsmittel.",
+      "keyword": "LoloBuy Zahlungsmethoden",
+      "category": "Zahlungen und Gebühren",
+      "summary": "Ordne jede Zahlung einer Artikelbestellung oder Paketrechnung zu. Vergleiche aktuellen Gesamtbetrag und Währung, bewahre die Transaktionsreferenz auf und prüfe das Ziel einer Erstattung.",
+      "sections": [
+        {
+          "heading": "Beginne mit der Rechnung, die du bezahlen willst",
+          "paragraphs": [
+            "Bestimme vor der Auswahl einer Zahlungsmethode den Gegenstand der Rechnung. Sie kann eine Produktbestellung, Inlandsversand, internationale Fracht, eine Anpassung oder eine Kontoaufladung betreffen. LoloBuys offizieller Kaufprozess trennt die Warenzahlung von der späteren Paketzahlung. Eine erfolgreiche erste Transaktion bestätigt nicht, dass alle späteren Phasen des Kaufs bereits bezahlt sind.",
+            "Halte Bestell- oder Paketnummer, Betrag und Währung neben dem Zahlungsbildschirm bereit. Haben mehrere Rechnungen ähnliche Summen, unterscheide sie anhand ihrer Referenzen statt nur des Betrags. Prüfe Artikel und Mengen, bevor du Zahlungswege vergleichst. Eine falsche Artikelbestellung nach Zahlung zu lösen, ist eine andere Aufgabe als eine bequeme Zahlungsart für die richtige Bestellung auszuwählen."
+          ]
+        },
+        {
+          "heading": "Prüfe die Methoden an der aktuellen Kasse",
+          "paragraphs": [
+            "LoloBuys öffentlicher Einkaufsratgeber nennt verschiedene Zahlungskategorien, darunter Karten, chinesische Zahlungsdienste und Banküberweisung. Eine allgemeine Hilfeliste ist Hintergrundwissen, kein Nachweis, dass jede Methode für jedes Konto, Land, jede Währung oder Rechnung aktuell verfügbar ist. Lies die tatsächlich für deine Transaktion angebotenen Methoden und die daneben genannten Voraussetzungen oder Verifizierungsinformationen.",
+            "Leite aus einem Logo in einer älteren Anleitung keine aktuelle Gebühr oder Abwicklungsdauer ab. Ist ein Zahlungsweg nicht verfügbar, bewahre die Meldung auf und frage beim offiziellen Support nach, statt eine andere Länderauswahl für angemessen zu halten. Verwende deine tatsächlichen Rechnungsdaten. Verlangt die Kasse eine Währungswahl, notiere sie vor dem Vergleich anderer Wege, damit beide Summen gleichwertige Käufe beschreiben."
+          ]
+        },
+        {
+          "heading": "Trenne die Kostenbestandteile",
+          "paragraphs": [
+            "Ein vollständiger Vergleich unterscheidet Grundrechnung, Zahlungsgebühr der Plattform, Währungsumrechnung und mögliche Gebühren des externen Anbieters. Manche Bestandteile sind im angezeigten Gesamtbetrag enthalten; andere zeigt die Bank oder der Zahlungsdienst separat. Halte fest, was bekannt ist und was geprüft werden muss. Addiere eine Gebühr nicht doppelt, nur weil sie sowohl in einer Aufschlüsselung als auch in der Endsumme erscheint.",
+            "Kläre bei einer Prozentgebühr, auf welchen Betrag sie angewendet wird. Notiere bei einer festen Gebühr Währung und Berechnung pro Transaktion. Eine kleine Bestellung kann von einer Fixgebühr anders betroffen sein als eine große. Dieser Ratgeber veröffentlicht keine dauerhaft gültige Gebührentabelle: Entscheidend ist der vollständige Betrag, den du für die aktuelle Rechnung zu den aktuellen Bedingungen freigeben würdest."
+          ]
+        },
+        {
+          "heading": "Vergleiche dieselbe Rechnung in einer Währung",
+          "paragraphs": [
+            "Angenommen, zwei Zahlungsanzeigen betreffen dieselbe beispielhafte Warenrechnung. Eine zeigt eine vollständige Belastung von 102 Einheiten deiner Ausgabewährung, die andere 104. Fehlt bei der niedrigeren Zahl eine weitere Anbietergebühr, ist der Vergleich unvollständig. Notiere für jede Option den bestätigten Gesamtbetrag und benenne ungeklärte Gebühren, statt den hervorgehobenen Preis als endgültige Kosten darzustellen.",
+            "Wird dein Plattformkonto in einer Währung gutgeschrieben und dein Bankkonto in einer anderen belastet, bewahre beide Beträge auf. Der gutgeschriebene Betrag geteilt durch die tatsächliche Belastung liefert eine effektive Umrechnungskennzahl für genau diese Transaktion. Er belegt keinen allgemeinen Plattformwechselkurs. Vergleiche Alternativen für dieselbe Rechnung zum selben Zeitpunkt und unterscheide einen angebotenen Kurs vom nach Abwicklung tatsächlich verbuchten Betrag."
+          ]
+        },
+        {
+          "heading": "Trenne Kontoaufladung und Bestellzahlung",
+          "paragraphs": [
+            "Das Einzahlen auf ein Plattformkonto erzeugt einen Guthabeneintrag. Die Zahlung einer Bestellung verwendet Guthaben oder einen anderen Zahlungsweg, um eine bestimmte Rechnung zu begleichen. Diese Ereignisse können nahe beieinanderliegen, beantworten aber unterschiedliche Fragen. Prüfe nach der Aufladung die Gutschrift und nach Zahlung den zugehörigen Bestell- oder Paketstatus. Ein höheres Guthaben allein beweist nicht, dass die gewünschte Bestellung bezahlt wurde.",
+            "Eine kompakte Aufstellung kann eine Zeile für die externe Zahlung, eine für die Guthabengutschrift und eine für die Bestellabbuchung mit verbindenden Referenzen enthalten. Das ist besonders bei der Finanzierung mehrerer Bestellungen hilfreich. Behandle Restguthaben nicht als Rabatt auf den nächsten Kauf: Seine früheren Finanzierungskosten gehören weiterhin in deine Gesamtaufstellung. Erfasse ungenutztes Guthaben getrennt von abgeschlossenen Kaufkosten."
+          ]
+        },
+        {
+          "heading": "Gehe sorgfältig mit ausstehenden oder fehlgeschlagenen Zahlungen um",
+          "paragraphs": [
+            "Hängt die Zahlungsseite oder meldet sie einen Fehler, vergleiche Rechnungsstatus, Kontoverlauf und Anbieterbeleg, bevor du erneut zahlst. Eine ausstehende Bankautorisierung und eine bestätigte Plattformzahlung sind verschiedene Zustände. Speichere Zeitpunkt, Transaktionsreferenz und genaue Meldung. Damit kann der Support einen konkreten Versuch untersuchen, statt anhand eines Screenshots des aktuellen Guthabens zu raten.",
+            "Zeigt der Anbieter eine Belastung, während die Rechnung unbezahlt bleibt, kontaktiere den zuständigen Support mit den verknüpften Belegen. Nimm nicht an, dass jeder ausstehende Posten innerhalb derselben Frist verbucht oder aufgehoben wird. Frage, welcher Status bestätigt ist und welche Handlung erforderlich bleibt. Schwärze beim Teilen vollständige Kartendaten und fremde Kontoaktivitäten. Erhalte die zur Zuordnung nötigen Transaktionskennungen."
+          ]
+        },
+        {
+          "heading": "Verstehe, wohin eine Erstattung geht",
+          "paragraphs": [
+            "LoloBuys Rückgabehinweise beschreiben grundsätzlich, dass berechtigte Erstattungen dem LoloBuy-Kontoguthaben gutgeschrieben werden. Sie nennen außerdem eine eng begrenzte Ausnahme für bestimmte PayPal-Bestellungen, deren Freigabe noch aussteht. Diese Ausnahme ist kein Versprechen, dass jede Erstattung automatisch auf das ursprüngliche Zahlungsmittel zurückgeht. Prüfe die Regel für den tatsächlichen Bestellstatus und Zahlungsdatensatz.",
+            "Unterscheide Verkäuferzustimmung zur Rückgabe, Geldeingang bei der Plattform, Kontogutschrift und Eingang auf deinem externen Konto. Jede Phase braucht einen eigenen Beleg. Eine Guthabengutschrift kann einen Teil des Vorgangs abschließen, ohne eine Auszahlung zu belegen. Prüfe vor Verlass auf eine Auszahlung die aktuellen Voraussetzungen, verfügbare Aktion und geltenden Bedingungen für dieses Guthaben. Ungenutzte Beträge werden nicht zwingend in jedem Fall gleich behandelt."
+          ]
+        },
+        {
+          "heading": "Prüfe Frachtanpassungen gesondert",
+          "paragraphs": [
+            "Internationale Fracht beginnt im offiziellen Kaufprozess als eigene Schätzung. Späteres Verpacken oder Logistikmessungen können einen Zusatzbetrag oder eine Überzahlungsgutschrift verursachen. Ordne jede Anpassung der Paketnummer und den endgültigen Maßen zu. Eine weitere Frachtrechnung ist nicht automatisch eine Zahlungsgebühr, und eine Frachtgutschrift ist nicht notwendigerweise eine Rückabwicklung des ursprünglichen Warenkaufs.",
+            "Bewahre anfängliche Fracht, geänderte Messwerte, endgültigen Betrag und jede Gutschrift oder Nachzahlung auf. Ist eine Position unklar, frage, welcher Teil der Paketberechnung sich geändert hat. Trenne diesen Abgleich von Einfuhrabgaben oder Bearbeitungsgebühren des Transporteurs, die einem anderen Ablauf folgen können. Klare Kategorien erleichtern die Prüfung der Summe und helfen, unbekannte Zahlungsaufforderungen erst nach Klärung ihres Paketbezugs zu bezahlen."
+          ]
+        },
+        {
+          "heading": "Bewahre einen langfristig brauchbaren Zahlungsnachweis auf",
+          "paragraphs": [
+            "Ein nützlicher Zahlungsdatensatz enthält Datum, Rechnungsgegenstand, Bestell- oder Paketreferenz, Grundbetrag, angezeigte Gebühr, Abrechnungswährung, endgültigen Zahlbetrag und Transaktionsreferenz des Anbieters. Ergänze nach Zahlung Plattformstatus und Guthabenbewegung. Verknüpfe bei einer Erstattung die ursprüngliche Bestellung und das Ziel der Gutschrift. So lässt sich die beabsichtigte Zahlung mit dem tatsächlichen Ablauf verbinden.",
+            "Wiederhole vor der nächsten Zahlung den Vergleich an der aktuellen Kasse. Verfügbarkeit, Umrechnung und Gebühren können sich ändern; eine frühere erfolgreiche Transaktion ist ein Vergleichsbeleg und keine dauerhafte Preisliste. Wähle nur tatsächlich für deine Rechnung angebotene Methoden, vergleiche die vollständige Belastung und bewahre Nachweise auf. Ist eine relevante Gebühren- oder Erstattungsbedingung unklar, kläre genau diesen Punkt über den offiziellen Support, bevor du die Zahlung freigibst."
+          ]
+        }
+      ],
+      "checklist": [
+        "Ordne die Zahlung der genauen Bestell- oder Paketrechnung zu.",
+        "Vergleiche aktuelle Gebühren und Endbelastung in derselben Währung.",
+        "Prüfe, ob eine Guthabengutschrift auch die beabsichtigte Rechnung beglichen hat.",
+        "Kläre einen mehrdeutigen Zahlungsstatus vor einer Wiederholung.",
+        "Prüfe, ob die Erstattung das Plattformguthaben oder das ursprüngliche Zahlungsmittel erreicht hat."
+      ],
+      "sourceIds": [
+        "buying",
+        "refunds",
+        "cancellation",
+        "freight-balance"
+      ],
+      "readingMinutes": 6,
+      "wordCount": 1226,
+      "published": "2026-10-29",
+      "modified": "2026-10-29"
+    },
+    {
+      "slug": "lolobuy-link-not-working",
+      "title": "LoloBuy-Link funktioniert nicht: Taobao, Weidian und 1688 prüfen",
+      "description": "Prüfe einen LoloBuy-Produktlink, indem du Verkäuferverfügbarkeit, Linkformat und Bestellimport trennst, und bestätige vor einer manuellen Bestellung den genauen Artikel.",
+      "keyword": "LoloBuy Link funktioniert nicht",
+      "category": "Produktlinks",
+      "summary": "Bewahre den ursprünglichen Produktlink auf und finde heraus, wo er scheitert. Stelle denselben Artikel und dieselbe Variante wieder her und prüfe den Bestellimport, statt IDs zu ändern oder Angaben zu erraten.",
+      "sections": [
+        {
+          "heading": "Finde heraus, wo der Link scheitert",
+          "paragraphs": [
+            "Ein Produktlink kann vor oder nach der Übergabe an LoloBuy scheitern. Das ursprüngliche Verkäuferangebot ist möglicherweise nicht verfügbar, eine Kurzadresse wird nicht aufgelöst oder das Importformular erfasst keine Details einer ansonsten erreichbaren Seite. Notiere den tatsächlichen Vorgang: Fehler, leere Vorschau, Anmeldeaufforderung oder anderes Produkt. Diese Beobachtungen führen zu unterschiedlichen Prüfungen.",
+            "Speichere die ursprüngliche URL, bevor du Änderungen vornimmst. Notiere Marktplatz, sichtbare Artikelkennung, sofern vorhanden, gewünschte Option und Prüfdatum. Ein Screenshot des erwarteten Artikels kann helfen, sollte aber mit dem Verkäuferlink verbunden bleiben. Ziel ist, genügend Angaben für den beabsichtigten Kauf wiederherzustellen, nicht einfach irgendeine Produktseite im Browser zu öffnen."
+          ]
+        },
+        {
+          "heading": "Prüfe zuerst das ursprüngliche Verkäuferangebot",
+          "paragraphs": [
+            "Öffne das ursprüngliche Marktplatzangebot über den normalen öffentlichen oder erforderlichen angemeldeten Zugang. Hat der Verkäufer den Artikel entfernt oder ist die gewünschte Option nicht verfügbar, stellt eine andere Adressformatierung keinen Lagerbestand her. Bewahre Verkäufername, Artikeltitel und relevante Maße auf, damit du ein anderes Angebot als neuen Kandidaten bewerten kannst. Ähnliche Fotos allein belegen keine Gleichwertigkeit.",
+            "Ist das ursprüngliche Angebot erreichbar und zeigt die beabsichtigte Option, kann das Problem beim geteilten Link oder Import liegen. Kopiere den aktuellen Freigabe- oder Adresslink des Angebots und vergleiche ihn mit der gespeicherten Version. Lass legitime Weiterleitungen abschließen, statt das Ziel blind zu bearbeiten. Erfordert eine Seite Kontozugang, prüfe sie über den normalen Marktplatzablauf; dieser Ratgeber umgeht keine Zugangskontrollen."
+          ]
+        },
+        {
+          "heading": "Unterscheide Quell-IDs und Katalog-IDs",
+          "paragraphs": [
+            "Eine Produktsuchseite kann jedem Eintrag eine eigene Datensatznummer zuweisen. Diese ist nicht notwendigerweise die Artikelkennung von Taobao, Weidian oder 1688. Auf dieser Website dient der Katalogdatensatz dazu, das Quellangebot und den passenden Kauflink für die Produktdetails abzurufen. Wird eine Marktplatzkennung durch die Zahl aus einer lokalen Katalogadresse ersetzt, kann ein fremder oder gar kein Artikel erscheinen.",
+            "Nutze den passenden Kaufbutton des Produkts, wenn vorhanden, und vergleiche die geöffnete Seite mit der Quelle. Ist das Ziel falsch, bewahre beide URLs auf und melde die Abweichung. Erhöhe oder vertausche Zahlenkennungen nicht, bis etwas lädt. Bild, Titel, Verkäufer und Optionsauswahl müssen gemeinsam zum gewünschten Angebot passen. Ein einzelnes übereinstimmendes Merkmal reicht nicht, um die vollständige Produktidentität herzustellen."
+          ]
+        },
+        {
+          "heading": "Stelle Taobao-Links zusammen mit der Option wieder her",
+          "paragraphs": [
+            "Eine Taobao-Freigabenachricht kann neben einem Link beschreibenden Text enthalten. Kopiere den tatsächlichen Angebotslink, statt die ganze Nachricht als Adresse zu behandeln. Leitet der Link weiter, bestätige den resultierenden Artikel, bevor du das Ziel bei LoloBuy verwendest. Bewahre die ursprüngliche Nachricht als Referenz auf, wenn sie eine Optionsbeschreibung enthält, die in der Adresse allein nicht erhalten bleibt.",
+            "Vergleiche nach dem Laden Farbe, Größe, Menge und Preisgrundlage. Auch ein erfolgreicher Import kann die Standardoption statt deiner gewünschten Auswahl zeigen. Speichere die ursprüngliche Optionsbezeichnung neben einer Übersetzung, besonders bei ähnlichen Namen. Verwendet der Verkäufer eine Größentabelle als Bild, bewahre sie auf und kläre die benötigten Maße, bevor du eine Bestellung freigibst."
+          ]
+        },
+        {
+          "heading": "Prüfe Weidian-Verkäufer und Varianten",
+          "paragraphs": [
+            "Bestätige bei Weidian Verkäuferseite und Artikel gemeinsam. Ein gespeicherter Link kann erreichbar bleiben, während sich Angebot, Varianten oder Preis ändern. Vergleiche aktuellen Titel, Bilder, Optionsnamen und Verkäuferangaben mit deiner früheren Aufzeichnung. Ein verändertes Angebot verlangt eine neue Entscheidung; ein vertrautes Produktbild bewahrt nicht automatisch das alte Angebot.",
+            "Weicht die Importvorschau von der aktuellen Verkäuferseite ab, dokumentiere genau den Unterschied. Benenne etwa die fehlende Größe oder den angezeigten Optionspreis. Füge der Bestellanfrage die ursprüngliche URL und gewünschte Auswahl bei. Vermeide Angaben wie „das auf dem Foto“, wenn das Angebot mehrere Produkte oder Varianten zeigt. Eine präzise Optionsbeschreibung lässt sich vom Einkaufsteam leichter prüfen."
+          ]
+        },
+        {
+          "heading": "Betrachte bei 1688 die Menge als Teil des Produkts",
+          "paragraphs": [
+            "LoloBuys offizieller 1688-Ratgeber erklärt, dass Mindestmengen des Verkäufers eingehalten werden müssen und Preis sowie Inlandsfracht von der Einkaufsmenge abhängen können. Ein importierter Preis ohne passende Mengenstaffel ist deshalb unvollständig. Prüfe, ob pro Stück, Paar, Set, Schachtel oder anderer Einheit abgerechnet wird. Eine niedrige Zahl kann ein Einzelteil oder eine größere Mengenstufe betreffen.",
+            "Notiere Mindestmenge, gewünschte Menge, ausgewählte Varianten und den für diese Kombination geltenden Preis. Kläre bei gemischten Farben oder Größen die Verkäuferbedingungen, statt anzunehmen, jede Mischung erfülle das Minimum. Der offizielle Ratgeber nennt außerdem gesonderte Prüfbedingungen für 1688-Bestellungen. Ein reparierter Link beseitigt diese Mengen-, Prüf- oder Rückgabebedingungen nicht aus der Kaufentscheidung."
+          ]
+        },
+        {
+          "heading": "Nutze eine manuelle Bestellung nur mit geprüften Angaben",
+          "paragraphs": [
+            "Der offizielle LoloBuy-Einkaufsratgeber beschreibt das manuelle Ausfüllen einer Einkaufsagentenbestellung, wenn Produktangaben nicht automatisch erfasst werden können. Verwende diese Möglichkeit, wenn sie für die Bestellung angeboten wird, und übertrage Angaben aus dem tatsächlichen Angebot. Nenne ursprünglichen Link, genauen Artikel und Optionen, Menge, aktuellen Artikelpreis und bekannte Inlandsversandkosten. Kennzeichne ungeklärte Angaben zur Rückfrage, statt sie zu erfinden.",
+            "Ein manuelles Formular übermittelt eine Bestellung; es garantiert weder den Kauf eines nicht verfügbaren Produkts noch die Zustimmung jedes Verkäufers zu gewünschten Bedingungen. Vergleiche das ausgefüllte Formular vor Zahlung mit dem Quelldatensatz. Beantworte nach Einreichung Bestätigungsanfragen über die zuständige Bestellanfrage. Bewahre die endgültig bestätigte Auswahl auf, damit sie später mit den Lagernachweisen verglichen werden kann."
+          ]
+        },
+        {
+          "heading": "Prüfe das importierte Ergebnis vor Zahlung",
+          "paragraphs": [
+            "Führe dieselbe Abschlussprüfung durch, unabhängig davon, ob der Link repariert oder ein manuelles Formular verwendet wurde. Vergleiche Identität, Verkäufer, Farbe, Größe, Menge, Einheit und Gesamtsumme. Prüfe, dass der Betrag zur gewählten Konfiguration gehört, und kontrolliere den Inlandsversand separat. Eine erfolgreiche Vorschau zeigt, dass Informationen geladen wurden, nicht dass alle nötigen Details korrekt importiert oder Waren reserviert sind.",
+            "Widersprechen sich Quelle und Bestellformular, halte bei genau diesem Widerspruch an und kläre ihn. Wiederholtes Einreichen ähnlicher Bestellungen erschwert die Nachverfolgung. Bewahre eine eindeutige Belegkette vom ursprünglichen Angebot über die korrigierte Auswahl bis zur Bestellreferenz. Vergleiche bei Wareneingang im Lager die erhaltenen Artikel mit dieser bestätigten Aufzeichnung, bevor du das internationale Paket anmeldest."
+          ]
+        },
+        {
+          "heading": "Pflege einen später erneut prüfbaren Linkdatensatz",
+          "paragraphs": [
+            "Führe alte URL, aktuelle URL, Marktplatz, Verkäufer, sichtbare Artikel-ID, gewählte Option, Datum und Ergebnis in einer einfachen Aufzeichnung. Nützliche Zustände sind erreichbar und passend, erreichbar aber verändert, Option nicht verfügbar, Angebot entfernt oder Import ungeklärt. Bewahre bei einem Ersatz dessen eigene Angaben auf, statt das Original zu überschreiben, als hätte sich nichts verändert. So bleibt die Entscheidungsgrundlage erhalten.",
+            "Prüfe das Angebot unmittelbar vor Bestellung erneut, denn Linkwiederherstellung garantiert keine künftige Verfügbarkeit. Erkläre beim Teilen eines korrigierten Links Datum und Prüfumfang, ohne eine unabhängige Prüfung des Verkäufers oder der physischen Ware zu behaupten. Ein zuverlässiges Produktverzeichnis hilft beim Entdecken und Prüfen von Kandidaten. Klare Aufzeichnungen und korrekte Statusangaben bleiben auch dann nützlich, wenn sich einzelne Marktplatzangebote ändern."
+          ]
+        }
+      ],
+      "checklist": [
+        "Speichere die ursprüngliche URL, bevor du einen Link bearbeitest.",
+        "Prüfe Verkäuferverfügbarkeit getrennt vom LoloBuy-Import.",
+        "Halte Katalogdatensatz-IDs und Marktplatzartikel-IDs auseinander.",
+        "Prüfe bei 1688 Einheiten, Mindestmengen und Preisstaffeln.",
+        "Vergleiche die endgültige importierte oder manuelle Bestellung mit der Quelle."
+      ],
+      "sourceIds": [
+        "buying",
+        "wholesale",
+        "confirmation",
+        "qc"
+      ],
+      "readingMinutes": 6,
+      "wordCount": 1217,
+      "published": "2026-10-29",
+      "modified": "2026-10-29"
     }
   ]
 }

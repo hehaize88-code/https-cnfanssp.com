@@ -13,7 +13,7 @@
     "photo": "Hledání podle obrázku",
     "popular": "Prozkoumat:",
     "tagline": "Jeden katalog. Váš další objev.",
-    "source": "Produkty z cnfanssp.com",
+    "source": "Objevování produktů a nákupní průvodci",
     "independent": "Nezávislý web pro objevování produktů na LoloBuy",
     "browse": "Prozkoumat přehled produktů",
     "browseSub": "O něco méně hledání. Mnohem více nálezů.",
@@ -29,7 +29,7 @@
     "empty": "Vašemu hledání neodpovídají žádné produkty.",
     "reset": "Vymazat filtry",
     "sourceSearch": "Hledat v úplném zdrojovém katalogu",
-    "snapshot": "Aktuální katalog z cnfanssp.com. Ceny položek v CNY nezahrnují dopravu ani poplatky za služby. Aktuální možnosti a konečnou nabídku si ověřte na LoloBuy.",
+    "snapshot": "Ceny položek v CNY nezahrnují dopravu ani poplatky za služby. Aktuální možnosti a konečnou nabídku ověřte na LoloBuy.",
     "howTitle": "Od nálezu po rozbalení.",
     "howSub": "Začínáte s LoloBuy? Postupujte podle těchto tří kroků.",
     "guides": "Trocha návodu vám usnadní cestu.",
@@ -39,7 +39,7 @@
     "cta": "Našli jste nového favorita?",
     "ctaSub": "Otevřete ho na LoloBuy a pořiďte si ho.",
     "ctaButton": "Prozkoumat všechny produkty",
-    "footer": "Nezávislý web pro objevování produktů. Nejsme oficiální web LoloBuy. Nabídky a fotografie produktů pocházejí z cnfanssp.com. Nákupy se dokončují na LoloBuy.",
+    "footer": "Nezávislý katalog produktů. Nejsme oficiální web LoloBuy. Nákupy se dokončují na LoloBuy.",
     "back": "Zpět na přehled produktů",
     "sourceListing": "Původní nabídka ve zdroji",
     "seller": "Nabídka prodejce",
@@ -52,7 +52,7 @@
     "photoTitle": "Najděte ho podle fotky.",
     "photoIntro": "Pomocí zdrojového katalogu vyhledejte a porovnejte produkty.",
     "photoState": "Hledání podle obrázku ve zdroji",
-    "photoNote": "Na cnfanssp.com nebyla ověřena veřejná služba hledání podle obrázku. Dokud nebude zdrojová služba dostupná, nahrávání fotografií nepřijímáme.",
+    "photoNote": "Momentálně není připojena podporovaná služba vyhledávání obrázkem. Katalog procházejte podle klíčového slova nebo kategorie.",
     "browseInstead": "Procházet produkty",
     "faqTitle": "LoloBuy: odpovědi před objednáním.",
     "faqIntro": "Zpracováno podle oficiálních stránek nápovědy LoloBuy. Pokud se oficiální stránky liší, odpověď vysvětluje, co je třeba ověřit.",
@@ -74,8 +74,8 @@
     "jump": "Přejít na stranu",
     "go": "Přejít",
     "articlesLabel": "Články",
-    "articlesTitle": "Nákupy na LoloBuy podrobně.",
-    "articlesIntro": "Deset praktických průvodců na základě oficiální nápovědy LoloBuy. Hledejte produkty, kontrolujte QC, sestavte rozpočet a plánujte dopravu s jasnějšími informacemi.",
+    "articlesTitle": "Průvodci LoloBuy: objednávání, QC, doprava a platby",
+    "articlesIntro": "Praktičtí průvodci LoloBuy pro odkazy na produkty, skladové kontroly, náklady na dopravu a rozhodování o platbách. Vyberte průvodce pro svůj další krok.",
     "articleSources": "Oficiální zdroje",
     "reviewed": "Ověřeno 20. října 2026",
     "readArticle": "Přečíst článek",
@@ -149,7 +149,17 @@
       "Průvodce nákupem",
       "Hledání podle obrázku",
       "Časté dotazy"
-    ]
+    ],
+    "homeTitle": "Tabulka LoloBuy a nákupní průvodci | LoloBuy Sheet",
+    "catalogTitle": "Procházejte nálezy LoloBuy: oblečení, tenisky a doplňky",
+    "catalogDescription": "Procházejte produkty LoloBuy podle kategorií, vyhledávejte v celém katalogu a porovnávejte ceny. Před otevřením odpovídajícího nákupního odkazu LoloBuy ověřte podrobnosti produktu.",
+    "guidesTitle": "Nákupní průvodci LoloBuy: od odkazu po doručení",
+    "guideMetaTitle": "Jak funguje LoloBuy: objednávání, QC a mezinárodní doprava",
+    "shippingNav": "Doprava",
+    "reviewedLabel": "Aktualizováno",
+    "nextStep": "Pokračujte dalším krokem",
+    "priorityTitle": "Než objednáte nebo odešlete",
+    "priorityIntro": "Ověřte produkt, prohlédněte skladové podklady a porovnejte úplné náklady balíku."
   },
   "faqs": [
     {
@@ -450,7 +460,9 @@
         "qc"
       ],
       "readingMinutes": 3,
-      "wordCount": 491
+      "wordCount": 627,
+      "published": "2026-10-20",
+      "modified": "2026-10-29"
     },
     {
       "slug": "how-to-order-on-lolobuy",
@@ -507,6 +519,35 @@
             "Oficiální postup instruuje uživatele vybrat uložené položky, zadat doručovací údaje a vybrat z dostupných přepravních možností. Společně posuďte destinaci, omezení, možnosti balení a zálohu přepravného. Zakoupená položka se automaticky nestává mezinárodní zásilkou připravenou k odeslání.",
             "Konečné přepravné se může změnit po zabalení a změření logistickým poskytovatelem. Sledujte v záznamu zásilky úpravy a žádosti o potvrzení. Po odeslání používejte sekci zásilek ke sledování, uchovejte čísla objednávek a po doručení obsah neprodleně zkontrolujte."
           ]
+        },
+        {
+          "heading": "Připravte znovu použitelný záznam první objednávky",
+          "paragraphs": [
+            "Před podáním první objednávky vytvořte stručný záznam s URL prodejce, názvem produktu, přesnou variantou, množstvím, odkazem na tabulku velikostí a nezodpovězenými otázkami. Pokud může být překlad nejednoznačný, zachovejte původní znění varianty prodejce. U sady určete součásti očekávané v balení. Tento záznam umožní porovnání v pokladně i později ve skladu místo spoléhání na zapamatovanou miniaturu.",
+            "Například objednávka oblečení může uvádět jednu tmavě modrou mikinu ve velikosti M prodejce s konkrétní šířkou hrudníku naplocho podle tabulky. To je jasnější pokyn než požadavek na střední modrý svršek. Je-li tabulka nebo název barvy nejasný, zeptejte se před nákupem. Přesná žádost zlepšuje komunikaci, ale nepotvrzuje skladovou dostupnost prodejce ani to, že oděv bude sedět."
+          ]
+        },
+        {
+          "heading": "Oddělte problém produktu od problému platby",
+          "paragraphs": [
+            "Je-li importovaná položka nesprávná nebo chybí požadovaná varianta, vyřešte nabídku před platbou. Pomocí původního zdroje určete, zda prodejce nabídku změnil, nebo import vynechal informace. Ruční objednávka, je-li nabízena, musí zachovat skutečné údaje produktu. Změna ID či volba přibližně podobné varianty nejistou objednávku neřeší a může ztížit doložení pozdější neshody.",
+            "Pokud je položka správná, ale stav platby nejasný, porovnejte účet k zaplacení, zůstatek platformy a záznam poskytovatele. Před dalším pokusem uchovejte referenci transakce a viditelnou chybu. Načítající se stránka sama nedokazuje selhání. Požádejte podporu o vyjasnění nejednoznačného zatížení místo několika překrývajících se pokusů. Identitu produktu, stav platby a odeslání prodejcem udržujte jako samostatné kontrolní body, protože úspěch jedné fáze nepotvrzuje další."
+          ]
+        },
+        {
+          "heading": "Naplánujte skladové rozhodnutí před podáním balíku",
+          "paragraphs": [
+            "Určete potřebné důkazy před příchodem zboží. Oděv citlivý na velikost může vyžadovat konkrétní měření, sada doplňků jasný pohled na všechny součásti. Ověřte dostupnou kontrolní službu a její omezení. Až budou fotografie připraveny, porovnejte je s uloženou objednávkou a vypište každý nevyřešený detail. Žádejte konkrétní pohled nebo vysvětlení místo obecného posouzení, že položka vypadá dobře.",
+            "Příslušné podmínky vrácení ověřte včas, dokud je zboží ve skladu. Doba skladování a lhůta vrácení prodejce jsou odlišné termíny. Čekání na spojení více položek může nechtěnou položku dostat mimo platné období vrácení. Chcete-li výměnu či vrácení, zeptejte se na způsobilost dané položky a očekávané náklady před jejím přesunem do mezinárodního balíku. Nepředpokládejte, že lze zásilku zastavit po každém pozdějším kroku zpracování."
+          ]
+        },
+        {
+          "heading": "Dokončete objednávku úplným přehledem nákladů",
+          "paragraphs": [
+            "Zboží a vnitrostátní dopravu, vybrané služby, mezinárodní přepravu a cílové poplatky veďte v oddělených polích. Každý poplatek započítejte jen jednou a poznamenejte měnu. Jak objednávka postupuje, nahrazujte odhady potvrzenými účty a dřívější čísla uchovejte pro porovnání. Změní-li se přepravné po balení, přiřaďte úpravu k referenci balíku a měřením. Takový záznam vysvětluje konečný doručený náklad lépe než jeden nedatovaný součet.",
+            "Po doručení porovnejte obsah s původním seznamem a při problému zachovejte důkazy o balení. Využijte příslušnou podporu objednávky či balíku a popište problém i záznamy spojující jej s nákupem. Data nákupu, příchodu do skladu, odeslání a doručení uchovejte jako samostatné milníky. Pozorování mohou pomoci další objednávce, aniž by slibovala, že jiný balík projde stejným časovým průběhem.",
+            "Před uzavřením záznamu určete, které kroky vyžadovaly vyjasnění a které předpoklady se změnily. Vyžadoval-li produktový odkaz ruční zadání, uchovejte potvrzené znění varianty pro budoucí použití. Změnil-li se odhad dopravy, ponechte naměřený karton vedle původní nabídky. Poznámky mají popisovat pouze vaši objednávku. Při novém nákupu znovu ověřte aktuální nabídku, pokladnu a přepravní podmínky, i když položka vypadá totožně. Dřívější úspěšný nákup nerezervuje zásoby ani nezachovává cenu, službu či podmínky prodejce."
+          ]
         }
       ],
       "checklist": [
@@ -523,8 +564,10 @@
         "qc",
         "freight-balance"
       ],
-      "readingMinutes": 3,
-      "wordCount": 480
+      "readingMinutes": 6,
+      "wordCount": 1257,
+      "published": "2026-10-20",
+      "modified": "2026-10-29"
     },
     {
       "slug": "lolobuy-qc-photos",
@@ -581,6 +624,35 @@
             "Zjištění rozdělte na potvrzená, nejasná a nepřijatelná. Je-li detail nejasný, vyžádejte důkazy. Pokud položka zřejmě neodpovídá objednávce, využijte příslušnou podporu nebo proces vrácení před mezinárodní dopravou. Uchovejte stručný popis problému a fotografie, které ho prokazují.",
             "Fotografie nemohou ověřit všechny vlastnosti materiálu, pohodlí, dlouhodobou odolnost ani vnitřní funkčnost. Schválení viditelného stavu je užší rozhodnutí. Podmínky vrácení si přečtěte, dokud je zboží ve skladu, a úspěšné QC nepovažujte za příslib výsledku celního řízení nebo mezinárodního doručení."
           ]
+        },
+        {
+          "heading": "Proměňte kontrolu oblečení v jasný požadavek",
+          "paragraphs": [
+            "Začněte rozměry ovlivňujícími padnutí místo žádosti, aby sklad posoudil správnou velikost pro vás. U mikiny můžete potřebovat šířku hrudníku naplocho, délku těla a rukávu měřenou od stejných bodů jako v tabulce prodejce. Uveďte metodu a jednotku. Velikostní štítek je užitečný důkaz identity, ale nenahrazuje rozměry oděvu.",
+            "Pokud tabulka uvádí obvod těla a fotografie ukazuje šířku naplocho, čísla přímo neporovnávejte. Ověřte začátek a konec pásma, rovné položení oděvu i čitelnost čísla. Osvětlení a perspektiva mohou také změnit vzhled barvy. Je-li barva důležitá, žádejte jasnější pohled, ale mějte na paměti, že fotografie na obrazovce nezaručuje přesný odstín ve skutečnosti."
+          ]
+        },
+        {
+          "heading": "Kontrolujte obuv a doplňky bez přehnaných tvrzení",
+          "paragraphs": [
+            "U obuvi porovnejte oba kusy, viditelné označení velikosti, celkový tvar a místa vztahující se k vašemu problému. Potřebujete-li konkrétní měření či detailní pohled, výslovně jej určete. U tašky ověřte držadla, uzávěry a očekávané součásti, pokud jsou vidět. U vícedílného doplňku sepište očekávaný obsah a porovnejte jej s fotografiemi místo předpokladu, že zavřená krabice obsahuje vše.",
+            "Viditelnou vadu švu nebo povrchu lze doložit detailní fotografií a určením místa. Skrytá konstrukce, pohodlí při používání, materiálové složení a dlouhodobá odolnost obvykle potřebují jiné důkazy. Nepovažujte skladový snímek za certifikát pravosti ani profesionální funkční test. U zapečetěných produktů či odborné elektroniky přečtěte uvedené výluky kontroly, než rozhodnete, zda dostupná služba odpovídá na vaši skutečnou otázku."
+          ]
+        },
+        {
+          "heading": "Oddělte nejistotu od potvrzené vady",
+          "paragraphs": [
+            "Používejte v poznámkách tři jednoduché stavy: potvrzená shoda, potřeba dalších důkazů a pozorovaná neshoda. Například nečitelný štítek velikosti patří do druhého stavu, dokud nepřijde jasnější snímek; jednoznačně jiná velikost patří do třetího. To brání popisu chybějící fotografie jako prokázané vady i tomu, aby přitažlivý celkový obrázek zakryl nezodpovězenou otázku.",
+            "U každého nevyřešeného bodu zapište číslo objednávky, příslušný snímek, přesnou otázku a další krok. Po odpovědi aktualizujte daný bod místo nahrazení celého záznamu neurčitým schválením. Pokud neshoda zůstává, zeptejte se na příslušnou nápravu, dokud je položka ve skladu. Uchovejte souhlas prodejce, požadavky vrácení a případné poplatky společně. Žádost o vrácení není totéž co její schválení."
+          ]
+        },
+        {
+          "heading": "Rozhodněte před dalším termínem",
+          "paragraphs": [
+            "Položku zkontrolujte brzy po zpřístupnění skladových informací. Podmínky LoloBuy pro vrácení závisí na objednávce, prodejci a čase. Obecná skladovací lhůta neprodlužuje období vrácení. Přečtěte termín a stavové požadavky pro danou položku a uchovejte původní obal, může-li být potřebný. Neodkládejte nutný dotaz jen proto, že ostatní položky plánovaného balíku ještě nedorazily.",
+            "Při schválení k odeslání zapište, co bylo skutečně ověřeno a co zůstává neznámé. Například identita a viditelné rozměry mohou být potvrzené, zatímco pohodlí a odolnost zůstávají netestované. Tento omezený závěr připojte k referenci položky. Nevyřešené obavy znovu posuďte před podáním balíku, zejména pokud by změna balení odstranila štítky či originální obal významné pro záznam. Tím vzniká užitečná rozhodovací stopa bez předstírání, že QC odstraní každé nákupní riziko.",
+            "Uchovejte původní snímky s krátkou rozhodovací poznámkou místo uložení pouze oříznutého detailu. Širší obraz spojuje problém se správnou položkou a reference objednávky spojuje fotografii s nákupem. Vyřeší-li pozdější obrázek otázku, uchovejte oba a uveďte, co se změnilo. Osobní údaje objednávky nesdílejte veřejně. Užitečný záznam je konkrétní pozorování s dohledatelným zdrojem, nikoli nepodložené hodnocení či tvrzení o kontrole všech výrobků prodejce."
+          ]
         }
       ],
       "checklist": [
@@ -594,15 +666,18 @@
         "qc",
         "photos",
         "service",
-        "sizing"
+        "sizing",
+        "returns"
       ],
-      "readingMinutes": 3,
-      "wordCount": 492
+      "readingMinutes": 6,
+      "wordCount": 1256,
+      "published": "2026-10-20",
+      "modified": "2026-10-29"
     },
     {
       "slug": "lolobuy-shipping-costs",
-      "title": "Cena dopravy LoloBuy: porovnávejte celou zásilku",
-      "description": "Pochopte odhadovanou, skutečnou a objemovou hmotnost a porovnejte dostupné služby pro stejnou destinaci, obsah a volby balení.",
+      "title": "Náklady na dopravu LoloBuy: kalkulátor, hmotnost a poplatky",
+      "description": "Použijte kalkulátor dopravy LoloBuy, porovnejte skutečnou a objemovou hmotnost a ověřte balení, úpravy přepravného i úplný rozpočet balíku.",
       "keyword": "kalkulačka dopravy LoloBuy",
       "category": "Doprava",
       "summary": "Užitečné srovnání přepravného začíná jednou jasně definovanou zásilkou. Tento průvodce vysvětluje vstupy a kontroly; nejde o aktuální cenovou nabídku dopravy.",
@@ -655,6 +730,35 @@
             "Pokyny LoloBuy k doplatkům uvádějí, že odhadované přepravné se srovnává se skutečným poplatkem logistického poskytovatele. Může to znamenat vrácení přeplatku nebo žádost o doplatek. Čtěte zprávy zásilky a odpovídejte na žádosti připojené k vaší přepravě.",
             "Počáteční odhad, konečné účtované rozměry, vybrané služby a úpravu uchovávejte společně. Takový záznam usnadňuje pochopení rozdílu. Případné poplatky v destinaci rozpočtujte samostatně a před považováním objednávky za dokončenou ověřte konečnou celkovou cenu zásilky."
           ]
+        },
+        {
+          "heading": "Používejte oficiální kalkulátor s uloženým výchozím stavem",
+          "paragraphs": [
+            "Otevřete aktuální kalkulátor dopravy LoloBuy a vyberte skutečný cíl. Zadejte požadovaný obsah, hmotnost a rozměry v uvedených jednotkách. S výsledkem uložte datum, vstupní hodnoty, vybranou službu a měnu. Pokud zboží ještě nedorazilo do skladu, označte rozměry jako odhad. Označení je důležité, protože přibližná hmotnost položky od prodejce nepopisuje hotový karton s vnějším balením.",
+            "Před změnou balicí možnosti nebo odstraněním položky zaznamenejte jeden výchozí stav. U každé alternativy měňte jednu proměnnou a ostatní podle možností zachovejte. Zmizí-li linka po změně kategorie, je omezení součástí výsledku; uvedení nesprávné kategorie pro levnější nabídku nečiní linku vhodnou. Porovnávejte pouze služby nabízené pro skutečné zboží a cíl a ponechte viditelné nevyřešené otázky způsobilosti."
+          ]
+        },
+        {
+          "heading": "Vytvořte porovnání zahrnující všechny balíky",
+          "paragraphs": [
+            "Použijte jeden řádek pro každý úplný přepravní scénář. Zaznamenejte obsah, počet balíků, skutečnou hmotnost, rozměry, balicí služby, linku a celkové přepravné. U dvoubalíkové možnosti sečtěte obě úplné nabídky před porovnáním s jednou spojenou zásilkou. Samostatné minimální poplatky mohou ovlivnit výsledek. Nižší číslo u prvního balíku neukazuje, že rozdělení celé objednávky je levnější.",
+            "Smysluplné porovnání zaznamenává také rozdíly v ochraně a službách. Jeden scénář může zachovat krabici obuvi a druhý ji odstranit; jeden zahrnuje vyztužení vynechané druhým. Zapište změny, aby částka nezakrývala rozdílný výsledek. Pokud konečná měření nejsou dostupná, považujte porovnání za plánovací podklad a opakujte je po potvrzení balení. Nezaměňujte odhadovanou úsporu za garantovaný konečný účet."
+          ]
+        },
+        {
+          "heading": "Změněný odhad prověřte řádek po řádku",
+          "paragraphs": [
+            "Liší-li se konečné přepravné od uloženého odhadu, nejprve porovnejte cíl, vybrané položky, skutečnou hmotnost a rozměry kartonu. Potom ověřte linku, účtovací přírůstek, volitelné služby a měnu. Těžší vnější krabice, rozměrná položka či jiná služba mohou vysvětlit změnu i při podobném seznamu produktů. Žádejte konkrétní změněné měření či položku místo předpokladu, že každý rozdíl představuje tentýž poplatek.",
+            "Počáteční zálohu i pozdější úpravy propojte se stejnou referencí balíku. Připsání přeplatku na účet a refundace externí platební metodou jsou různé záznamy. Potvrďte, kam byla částka připsána nebo jaký doplatek zbývá. Je-li vysvětlení neúplné, uchovejte obě nabídky a položte otázku ke konkrétní objednávce. Je to užitečnější než porovnávání součtu s nesouvisející zásilkou do jiného cíle či z jiného dne."
+          ]
+        },
+        {
+          "heading": "Oddělte přepravné od celkového rozpočtu doručení",
+          "paragraphs": [
+            "Částka mezinárodní dopravy nemusí zahrnovat všechny platby spojené s převzetím zboží. Původní nákup položek, vnitrostátní dopravu, volitelnou skladovou práci, platební poplatky a cílové náklady ověřte samostatně. Zahrnutou službu označte, abyste ji nezapočítali dvakrát. Prázdná částka má zůstat otázkou k vyřešení, nikoli se tiše proměnit v nulu v odhadu doručeného nákladu.",
+            "Před zaplacením ověřte aktuální cílové informace a uvedené zahrnutí vybrané služby. Neodvozujte celní zacházení ani ochranu kupujícího z přezdívky linky. Publikujete-li později příklad přepravy, zahrňte datum, obsah, cíl, naměřený karton a rozsah částky a odstraňte osobní údaje. Dobře doložený historický případ pomáhá čtenářům zopakovat porovnání; izolovaná cena nemůže určovat sazbu jejich vlastního balíku.",
+            "Srovnávací list může být jednoduchý: jeden řádek na scénář s datem nabídky, cílem, zbožím, zdrojem hmotnosti, rozměry, linkou, částkou a nevyřešenými otázkami. Přidejte závěrečný sloupec s potvrzeným výsledkem po odeslání. Nenahrazujte původní odhad bez zachování vstupů, protože byste odstranili vysvětlení rozdílu. Zůstává-li vstup neznámý, získejte jej z aktuálního záznamu balíku či podpory před pevným porovnáním. Metodu používejte pro každý nový balík místo rozšiřování jedné historické ceny na všechny budoucí nákupy."
+          ]
         }
       ],
       "checklist": [
@@ -668,10 +772,13 @@
         "buying",
         "weight",
         "packaging",
-        "freight-balance"
+        "freight-balance",
+        "estimate"
       ],
-      "readingMinutes": 3,
-      "wordCount": 474
+      "readingMinutes": 6,
+      "wordCount": 1225,
+      "published": "2026-10-20",
+      "modified": "2026-10-29"
     },
     {
       "slug": "lolobuy-warehouse-consolidation",
@@ -746,7 +853,9 @@
         "freight-balance"
       ],
       "readingMinutes": 3,
-      "wordCount": 483
+      "wordCount": 586,
+      "published": "2026-10-20",
+      "modified": "2026-10-29"
     },
     {
       "slug": "lolobuy-sizing-guide",
@@ -819,7 +928,9 @@
         "returns"
       ],
       "readingMinutes": 3,
-      "wordCount": 486
+      "wordCount": 619,
+      "published": "2026-10-20",
+      "modified": "2026-10-29"
     },
     {
       "slug": "lolobuy-tracking-guide",
@@ -893,7 +1004,9 @@
         "freight-balance"
       ],
       "readingMinutes": 3,
-      "wordCount": 465
+      "wordCount": 601,
+      "published": "2026-10-20",
+      "modified": "2026-10-29"
     },
     {
       "slug": "lolobuy-returns-refunds",
@@ -968,7 +1081,9 @@
         "changes"
       ],
       "readingMinutes": 3,
-      "wordCount": 482
+      "wordCount": 602,
+      "published": "2026-10-20",
+      "modified": "2026-10-29"
     },
     {
       "slug": "lolobuy-order-budget",
@@ -1050,8 +1165,10 @@
         "freight-balance",
         "wholesale"
       ],
-      "readingMinutes": 3,
-      "wordCount": 523
+      "readingMinutes": 4,
+      "wordCount": 662,
+      "published": "2026-10-20",
+      "modified": "2026-10-29"
     },
     {
       "slug": "lolobuy-seller-and-review-checks",
@@ -1125,7 +1242,280 @@
         "returns"
       ],
       "readingMinutes": 3,
-      "wordCount": 465
+      "wordCount": 604,
+      "published": "2026-10-20",
+      "modified": "2026-10-29"
+    },
+    {
+      "slug": "lolobuy-shipping-netherlands",
+      "title": "Doprava LoloBuy do Nizozemska: náklady, doba a kontrola balíku",
+      "description": "Naplánujte balík LoloBuy do Nizozemska: porovnejte vstupy kalkulátoru, balení, fáze doručení a podklady potřebné k ověření dovozních poplatků.",
+      "keyword": "doprava LoloBuy do Nizozemska",
+      "category": "Doručení do Nizozemska",
+      "summary": "Při porovnávání přepravy zvolte Nizozemsko jako skutečný cíl. Uchovejte nabídku s datem, rozlišujte fáze doručení a před platbou ověřte aktuální pokyny nizozemské celní správy.",
+      "sections": [
+        {
+          "heading": "Začněte zadáním balíku do Nizozemska",
+          "paragraphs": [
+            "Užitečné porovnání dopravy LoloBuy začíná balíkem, který chcete obdržet, nikoli cenou zaplacenou někým jiným. Zapište cílovou zemi, poštovní směrovací číslo, seznam položek, množství a obaly, které musí u zboží zůstat. Linka dostupná pro malý balík oblečení nemusí přijímat jinou kombinaci produktů. Samotná země nepotvrzuje, že váš balík splňuje podmínky přepravy.",
+            "Vytvořte dva seznamy: již potvrzené skutečnosti a dosud odhadované údaje. Rozměry od prodejce, skladová hmotnost položky a rozměry hotového kartonu jsou různé záznamy. Označte jejich zdroje, abyste věděli, co po příchodu zboží aktualizovat. Musí-li dárková krabice zůstat neporušená, uveďte to před porovnáním levnějšího balení, které předpokládá její odstranění. Tato volba může ovlivnit ochranu i objem."
+          ]
+        },
+        {
+          "heading": "Rozdělte cenu do jednotlivých fází",
+          "paragraphs": [
+            "Oficiální nákupní průvodce LoloBuy odděluje první platbu za položky a vnitrostátní dopravu v Číně od pozdějšího podání mezinárodního balíku. Stejně rozlišujte tyto fáze v rozpočtu objednávky do Nizozemska. Katalogová cena je výchozím údajem za produkt, nikoli nabídkou doručení až ke dveřím. Připočítejte pouze náklady skutečně potvrzené v aktuální objednávce nebo záznamu balíku.",
+            "Veďte jednoduchý přehled se sloupci pro položku, vnitrostátní dopravu, volitelné skladové služby, mezinárodní přepravu, platební náklady a poplatky v cíli. U každé částky zapište měnu. Pokud nabídka již poplatek zahrnuje, označte jej jako zahrnutý a nepřičítejte znovu. Nezodpovězené pole ponechte nevyřešené. Součet s výslovně uvedenou mezerou je užitečnější než zdánlivě přesná částka předpokládající, že každý neznámý náklad je nulový."
+          ]
+        },
+        {
+          "heading": "Připravte opakovatelné porovnání kalkulátoru",
+          "paragraphs": [
+            "Otevřete oficiální odhad dopravy LoloBuy a jako cíl zvolte Nizozemsko. Zadejte požadovanou hmotnost, rozměry a kategorii zboží v jednotkách uvedených v aktuálním formuláři. Před porovnáním výsledků zkontrolujte gramy a kilogramy. Hmotnost zadaná v nesprávné jednotce popisuje jiný balík, i když výsledná obrazovka vypadá věrohodně. Uložte vstupy společně se zobrazenými možnostmi.",
+            "U každé přípustné linky zaznamenejte datum nabídky, měnu, částku, odhadovanou dobu přepravy, informace o sledování a uvedená omezení. Při porovnávání zachovejte stejný obsah a rozměry. Vyžaduje-li linka jiný způsob balení, výslovně tuto odlišnost poznamenejte. Neproměňujte starý snímek obrazovky v aktuální ceník. Užitečné porovnání lze zopakovat s naměřenými skladovými údaji, jakmile budou k dispozici."
+          ]
+        },
+        {
+          "heading": "Pochopte vliv lehčího nebo menšího kartonu",
+          "paragraphs": [
+            "Skutečná hmotnost měří hmotnost; objemová hmotnost představuje prostor zabraný balíkem podle účtovacího pravidla linky. Pokyny LoloBuy popisují vzorce závislé na trase. Přečtěte aktuální podmínky místo použití jednoho dělitele pro všechny služby. Ověřte také zaokrouhlování, minimální poplatky a přírůstek pro dodatečnou hmotnost. Malé snížení fyzické hmotnosti může ponechat balík ve stejném cenovém pásmu.",
+            "Uvažujte ilustrativní karton o rozměrech 40 krát 30 krát 20 centimetrů. Jeho objem činí 24 000 krychlových centimetrů. Při hypotetickém děliteli 6000 by objemová hmotnost byla 4 kilogramy. Zkrácení jedné strany na 15 centimetrů by při stejném předpokládaném pravidle dalo 3 kilogramy. Výpočet vysvětluje porovnání balení; nepotvrzuje dostupnou linku LoloBuy, cenu přepravy ani zaručenou úsporu."
+          ]
+        },
+        {
+          "heading": "Porovnejte sloučení a samostatné balíky",
+          "paragraphs": [
+            "Pokud je ve skladu více položek, porovnejte jeden společný balík se součtem všech navržených samostatných balíků. Použijte stejný cíl a zahrňte balicí služby každé možnosti. Nižší částka uvedená u jednoho odděleného balíku není celkovým nákladem odeslání celého košíku. Každý balík může mít vlastní minimální poplatek a samostatné zpracování v cílové zemi.",
+            "Ochrana a omezení mohou být důležitější než nejnižší počáteční přepravné. Křehká položka může potřebovat oddělení nebo vyztužení, zatímco rozměrná krabice může určovat objem jinak kompaktního balíku. Požádejte o posouzení konkrétního uspořádání. Zachovejte potřebnou ochranu a ověřte, že zvolená služba přijímá skutečný obsah. Sloučení je rozhodnutí k posouzení, nikoli automatický příslib nižších nákladů."
+          ]
+        },
+        {
+          "heading": "Čtěte dobu doručení jako posloupnost",
+          "paragraphs": [
+            "Rozlišujte odeslání prodejcem, doručení do čínského skladu, kontrolu, přípravu balíku, mezinárodní přepravu, zpracování v cíli a konečné doručení. Odhad dopravce může pokrývat pouze část této posloupnosti. Než jej porovnáte s celkovým čekáním jiného kupujícího, zapište milník, od kterého se počítá. Potvrzení objednávky a převzetí dopravcem nejsou stejnou počáteční událostí.",
+            "Po odeslání sledujte číslo balíku v účtu a související údaje dopravce. Vytvořené sledovací číslo samo nepotvrzuje fyzické převzetí zásilky dopravcem. Pokud je postup nejasný, zeptejte se, který milník byl dokončen a kdo balík drží. U časově citlivého nákupu ponechte rezervu místo toho, abyste odhadované doručovací období považovali za garantovaný termín."
+          ]
+        },
+        {
+          "heading": "Ověřte aktuální nizozemské dovozní informace",
+          "paragraphs": [
+            "Před zaplacením prostudujte aktuální informace nizozemské celní správy o internetových nákupech přicházejících ze zemí mimo Evropskou unii. Pokyny rozlišují DPH, dovozní clo a manipulační náklady dopravce. Pravidla pro zásilky nízké hodnoty se změnila v červenci 2026, proto starší průvodce tvrdící, že levný nákup je automaticky osvobozen od cla, nemá sloužit jako aktuální výpočet. Ověřte pravidla pro skutečné zboží a datum dovozu.",
+            "Uchovávejte společně popisy položek, nákupní částky, měnu a již vybranou daň nebo clo. Zeptejte se dopravce či prodejce, jak je zahrnutý poplatek doložen a co zbývá zaplatit. Přezdívka přepravní linky neurčuje daňové zacházení s balíkem. Tento průvodce nepočítá univerzální nizozemský celní účet: záleží na klasifikaci produktu, transakci a příslušném postupu. Při poskytování požadovaných údajů používejte přesné popisy a hodnoty."
+          ]
+        },
+        {
+          "heading": "Vyrovnejte konečné přepravné a uchovejte důkazy",
+          "paragraphs": [
+            "Oficiální pokyny LoloBuy popisují vybrání odhadu a jeho pozdější vyrovnání s logistickým poplatkem. Každou úpravu porovnejte s konečnou hmotností zabalené zásilky, rozměry, linkou a zvolenými službami. Změní-li se částka, nejprve určete změněný vstup, než budete odhad považovat za pevný závazek. Původní nabídku a konečný účet balíku ponechte v jednom záznamu.",
+            "Po doručení porovnejte obsah s uloženým seznamem položek a prohlédněte obal před jeho vyhozením. Pokud něco chybí nebo je poškozené, uchovejte fotografie a využijte podporu objednávky či balíku odpovídající problému. Vrácení prodejci, reklamace mezinárodních balíků a poplatky dopravce zahrnují různé záznamy. Dobrá dokumentace zpřesňuje požadavek, aniž by slibovala konkrétní refundaci či řešení."
+          ]
+        },
+        {
+          "heading": "Vytvořte užitečný záznam pro další objednávku",
+          "paragraphs": [
+            "Po dokončení objednávky uchovejte údaje, které lze poctivě porovnávat: datum, cíl, skutečné zboží, naměřený karton, zvolenou službu, konečné přepravné a pozorované milníky doručení. Před sdílením příkladu odstraňte osobní adresní údaje. Historická zásilka může pomoci jinému kupujícímu pochopit proces, ale měla by zůstat označena jako jeden datovaný případ, nikoli obecný příslib ceny či doručení.",
+            "Pomocí záznamu zlepšete další odhad. Poznamenejte, zda poplatek určoval objem nebo hmotnost, zda volitelná služba změnila karton a který rozpočtový náklad byl původně přehlédnut. Před opětovným použitím čísel ověřte shodu cíle, obsahu a aktuálních podmínek linky. Opakovatelná metoda je užitečnější než shromažďování nejlevněji vypadajících částek pro jiný balík."
+          ]
+        }
+      ],
+      "checklist": [
+        "V aktuální nabídce zvolte Nizozemsko a správné poštovní směrovací číslo.",
+        "Pro porovnání linek uložte stejnou hmotnost, objem a obsah.",
+        "Oddělte čas ve skladu, mezinárodní přepravu a doručení.",
+        "Ověřte aktuální nizozemské dovozní pokyny a již vybrané částky.",
+        "Uchovejte počáteční a konečné účty balíku společně."
+      ],
+      "sourceIds": [
+        "buying",
+        "weight",
+        "packaging",
+        "freight-balance",
+        "estimate"
+      ],
+      "readingMinutes": 6,
+      "wordCount": 1222,
+      "published": "2026-10-29",
+      "modified": "2026-10-29"
+    },
+    {
+      "slug": "lolobuy-payment-methods-fees",
+      "title": "Platební metody a poplatky LoloBuy: pokladna, měna a zůstatek",
+      "description": "Ověřte platební metody LoloBuy v pokladně, porovnejte úplné zatížení a rozlišujte připsání zůstatku od vrácení na původní platební metodu.",
+      "keyword": "platební metody LoloBuy",
+      "category": "Platby a poplatky",
+      "summary": "Přiřaďte každou platbu k objednávce položky nebo účtu balíku. Porovnejte aktuální součet a měnu, uchovejte referenci transakce a ověřte, kam se refundace připisuje.",
+      "sections": [
+        {
+          "heading": "Začněte účtem, který chcete zaplatit",
+          "paragraphs": [
+            "Před výběrem platební metody určete předmět účtu. Může jít o objednávku produktu, vnitrostátní dopravu, mezinárodní přepravu, úpravu částky nebo dobití účtu. Oficiální nákupní postup LoloBuy odděluje platbu za zboží od pozdější platby za balík. Úspěšná první transakce nepotvrzuje zaplacení všech následujících fází nákupu.",
+            "Mějte číslo objednávky či balíku, částku a měnu vedle platební obrazovky. Pokud má několik účtů podobnou výši, rozlišujte je podle referencí, ne pouze částky. Před porovnáváním platebních kanálů potvrďte správnost vybraných položek a množství. Řešení nesprávně objednaného produktu po zaplacení je jiný úkol než výběr pohodlné platby za správnou objednávku."
+          ]
+        },
+        {
+          "heading": "Ověřte metody v aktuální pokladně",
+          "paragraphs": [
+            "Veřejný nákupní průvodce LoloBuy uvádí několik platebních kategorií včetně karet, čínských platebních služeb a bankovního převodu. Obecný seznam nápovědy je kontext, nikoli důkaz, že je každá metoda aktuálně dostupná pro každý účet, zemi, měnu či účet k zaplacení. Přečtěte metody skutečně nabízené pro vaši transakci a uvedené podmínky dostupnosti nebo ověřování.",
+            "Neodvozujte aktuální poplatek ani dobu vypořádání z loga ve starším návodu. Není-li kanál dostupný, uchovejte zobrazenou zprávu a ověřte situaci u oficiální podpory místo předpokladu, že je vhodné vybrat jinou zemi. Používejte skutečné fakturační údaje. Vyžaduje-li pokladna volbu měny, zapište ji před porovnáním jiného kanálu, aby oba součty popisovaly rovnocenné nákupy."
+          ]
+        },
+        {
+          "heading": "Oddělte vrstvy nákladů",
+          "paragraphs": [
+            "Úplné porovnání rozlišuje základní účet, platební poplatek platformy, převod měny a případný poplatek externího poskytovatele. Některé mohou být zahrnuty ve zobrazené částce, jiné banka nebo poskytovatel ukazuje samostatně. Zapište známé údaje i to, co je třeba ověřit. Nepřičítejte poplatek dvakrát jen proto, že se objevuje v rozpisu i konečném součtu.",
+            "U procentního poplatku určete částku, ze které se počítá. U pevného poplatku zaznamenejte měnu a zda platí pro každou transakci. Na malý nákup může pevný poplatek působit jinak než na velký. Tento průvodce nepublikuje trvalý ceník, protože užitečné číslo je úplná částka, kterou byste schválili za aktuální účet podle aktuálních podmínek."
+          ]
+        },
+        {
+          "heading": "Porovnávejte stejný účet v jedné měně",
+          "paragraphs": [
+            "Předpokládejme, že dvě platební obrazovky odpovídají stejnému ilustrativnímu účtu za zboží. Jedna uvádí celkové zatížení 102 jednotek vaší měny a druhá 104. Pokud nižší číslo nezahrnuje dodatečný poplatek poskytovatele, porovnání není úplné. Zaznamenejte potvrzenou konečnou částku každé možnosti a označte nevyjasněné náklady místo vydávání hlavního čísla za finální cenu.",
+            "Je-li účet připsán v jedné měně a banka odečítá jinou, uchovejte obě částky. Vydělení připsané částky skutečným zatížením poskytne efektivní přepočet pro konkrétní transakci. Neurčuje univerzální kurz platformy. Alternativy porovnávejte pro stejný čas a účet a odlišujte nabízený kurz od konečné částky zaznamenané po vypořádání."
+          ]
+        },
+        {
+          "heading": "Oddělte financování účtu a platbu objednávky",
+          "paragraphs": [
+            "Přidání peněz na účet platformy vytváří přírůstek zůstatku. Platba objednávky využívá prostředky nebo jiný kanál k vyrovnání konkrétního účtu. Události mohou být časově blízko, ale odpovídají na odlišné otázky. Po dobití ověřte připsání; po platbě ověřte stav příslušné objednávky nebo balíku. Samotné zvýšení zůstatku nedokazuje zaplacení zamýšlené objednávky.",
+            "Stručná evidence může obsahovat řádek externí platby, řádek připsání zůstatku a řádek odečtení za objednávku, propojené referencemi. To pomáhá zejména při financování více objednávek. Nepovažujte zbývající zůstatek za slevu na příští nákup: náklad na jeho dřívější financování stále patří do celkové evidence. Nevyužité prostředky zapisujte odděleně od nákladů dokončených nákupů."
+          ]
+        },
+        {
+          "heading": "S čekající nebo neúspěšnou platbou zacházejte opatrně",
+          "paragraphs": [
+            "Pokud se platební stránka zasekne nebo hlásí chybu, před opakováním porovnejte stav účtu k zaplacení, historii platformy a záznam poskytovatele. Čekající bankovní autorizace a potvrzená platba platformy jsou různé stavy. Uchovejte čas, referenci transakce a přesné znění zprávy. Tyto údaje umožňují podpoře zkoumat konkrétní pokus místo odhadů ze snímku aktuálního zůstatku.",
+            "Pokud poskytovatel ukazuje odečtení, ale účet zůstává nezaplacený, kontaktujte příslušnou podporu s propojenými podklady. Nepředpokládejte, že každá čekající položka bude vypořádána nebo stornována v jedné univerzální lhůtě. Zeptejte se, který stav je potvrzen a jaký krok je nutný. Při sdílení důkazů zakryjte úplné údaje karty a nesouvisející aktivitu. Zachovejte identifikátory potřebné ke spojení případu."
+          ]
+        },
+        {
+          "heading": "Pochopte, kam směřuje refundace",
+          "paragraphs": [
+            "Pokyny LoloBuy k vracení obecně popisují připisování oprávněných refundací na zůstatek účtu LoloBuy. Uvádějí také úzkou výjimku pro některé objednávky PayPal čekající na schválení. Tuto výjimku nelze přepsat jako příslib automatického vrácení každé refundace původní platební metodou. Ověřte pravidlo příslušné skutečné fázi objednávky a záznamu platby.",
+            "Rozlišujte souhlas prodejce s vrácením, přijetí peněz platformou, připsání na účet a příchod peněz na externí účet. Každá fáze potřebuje vlastní důkaz. Připsání zůstatku může vyřešit jednu část procesu, aniž potvrzuje výběr prostředků. Než na výběr spolehnete, ověřte aktuální oprávnění, dostupnou akci a podmínky daného zůstatku. Nepředpokládejte stejné zacházení s nevyužitým zůstatkem ve všech situacích."
+          ]
+        },
+        {
+          "heading": "Změny přepravného kontrolujte samostatně",
+          "paragraphs": [
+            "Mezinárodní přepravné začíná v oficiálním nákupním procesu jako samostatný odhad. Pozdější balení nebo logistické měření může vést k doplatku či připsání přeplatku. Každou úpravu přiřaďte k číslu balíku a konečným měřením. Dodatečný účet za dopravu není automaticky poplatkem za platební metodu a vrácení přepravného nemusí znamenat storno původního nákupu zboží.",
+            "Uchovejte počáteční přepravné, změněná měření, konečnou částku a případné připsání či doplatek. Je-li položka nejasná, zeptejte se, která část výpočtu balíku se změnila. Oddělte toto vyrovnání od cílových daní a manipulačních poplatků dopravce, které mohou mít jiný postup. Rozlišení kategorií usnadňuje audit součtu a pomáhá neplatit neznámou výzvu bez pochopení jejího vztahu k balíku."
+          ]
+        },
+        {
+          "heading": "Uchovejte platební záznam, který zůstane užitečný",
+          "paragraphs": [
+            "Užitečný platební záznam obsahuje datum, předmět účtu, referenci objednávky nebo balíku, základní částku, uvedený poplatek, měnu vypořádání, konečnou splatnou částku a referenci transakce poskytovatele. Po zaplacení připojte výsledný stav platformy a pohyb zůstatku. U refundace přiložte zdrojovou objednávku a cíl připsání. Tyto údaje spojují zamýšlenou platbu s tím, co se skutečně stalo.",
+            "Před další platbou zopakujte porovnání v aktuální pokladně. Dostupnost metod, přepočet i poplatky se mohou měnit, proto předchozí úspěšná transakce představuje referenci, nikoli trvalý ceník. Vyberte ze skutečně nabízených metod pro váš účet, porovnejte úplné zatížení a uchovejte důkazy. Zůstává-li povinný poplatek nebo podmínka refundace nejasná, vyřešte tuto konkrétní nejistotu s oficiální podporou před schválením platby."
+          ]
+        }
+      ],
+      "checklist": [
+        "Přiřaďte platbu k přesnému účtu objednávky nebo balíku.",
+        "Porovnejte aktuální poplatky a konečné zatížení ve stejné měně.",
+        "Ověřte, zda připsání zůstatku zaplatilo i zamýšlený účet.",
+        "Před opakováním vyjasněte nejednoznačný stav platby.",
+        "Ověřte, zda refundace dorazila na zůstatek platformy, nebo původní platební metodu."
+      ],
+      "sourceIds": [
+        "buying",
+        "refunds",
+        "cancellation",
+        "freight-balance"
+      ],
+      "readingMinutes": 6,
+      "wordCount": 1226,
+      "published": "2026-10-29",
+      "modified": "2026-10-29"
+    },
+    {
+      "slug": "lolobuy-link-not-working",
+      "title": "Odkaz LoloBuy nefunguje: kontrola Taobao, Weidian a 1688",
+      "description": "Vyřešte nefunkční produktový odkaz LoloBuy rozlišením dostupnosti prodejce, formátu odkazu a importu objednávky a před ručním zadáním ověřte přesnou položku.",
+      "keyword": "odkaz LoloBuy nefunguje",
+      "category": "Odkazy na produkty",
+      "summary": "Uchovejte původní produktový odkaz a určete místo problému. Obnovte stejnou položku a variantu, poté ověřte importovanou objednávku místo změn ID nebo odhadování chybějících údajů.",
+      "sections": [
+        {
+          "heading": "Určete, kde odkaz selhává",
+          "paragraphs": [
+            "Produktový odkaz může selhat před vstupem do LoloBuy i po něm. Původní nabídka prodejce může být nedostupná, zkrácená adresa se nemusí otevřít nebo importní formulář nedokáže načíst údaje z jinak fungující stránky. Zapište skutečný projev: chybu, prázdný náhled, požadavek na přihlášení nebo jiný produkt. Každé pozorování vede k odlišné kontrole.",
+            "Před jakoukoli změnou uložte původní URL. Zaznamenejte tržiště, viditelný identifikátor položky, je-li k dispozici, zamýšlenou variantu a datum kontroly. Snímek očekávaného produktu může pomoci, ale musí zůstat spojen s odkazem prodejce. Cílem je obnovit dost informací pro zamýšlený nákup, nikoli pouze zobrazit v prohlížeči jakoukoli produktovou stránku."
+          ]
+        },
+        {
+          "heading": "Nejprve zkontrolujte původní nabídku prodejce",
+          "paragraphs": [
+            "Otevřete původní nabídku běžným veřejným nebo přihlášeným přístupem podle požadavků tržiště. Pokud prodejce položku odstranil nebo požadovaná varianta není dostupná, změna formátu adresy neobnoví zásobu. Uchovejte jméno prodejce, název položky a relevantní rozměry, abyste mohli jinou nabídku posoudit jako nového kandidáta. Podobné fotografie samy nepotvrzují rovnocennost.",
+            "Pokud původní nabídka funguje a ukazuje zamýšlenou variantu, problém může být ve sdíleném odkazu nebo importu. Zkopírujte aktuální vlastní sdílecí odkaz či adresu nabídky a porovnejte ji s uloženou verzí. Nechte legitimní přesměrování doběhnout místo slepé úpravy cíle. Stránku vyžadující účet ověřujte běžným postupem tržiště; tento průvodce neobchází jeho kontrolu přístupu."
+          ]
+        },
+        {
+          "heading": "Rozlišujte zdrojová a katalogová ID",
+          "paragraphs": [
+            "Web pro objevování produktů může záznamu přidělit vlastní číslo. Nemusí jít o identifikátor položky Taobao, Weidian nebo 1688. Na tomto webu používá detail produktu katalogový záznam k načtení zdrojové nabídky a odpovídajícího nákupního odkazu. Nahrazení identifikátoru tržiště číslem z místní katalogové adresy může vést k nesouvisející položce nebo vůbec k žádné.",
+            "Použijte odpovídající nákupní tlačítko produktu, je-li dostupné, a otevřenou stránku následně porovnejte se zdrojem. Je-li cíl nesprávný, uchovejte obě URL a nahlaste neshodu. Nezvyšujte ani nezaměňujte číselná ID, dokud se něco nenačte. Vrácený obrázek, název, prodejce a sada variant musí společně odpovídat zamýšlené nabídce. Jeden shodný detail nestačí k obnovení úplné identity produktu."
+          ]
+        },
+        {
+          "heading": "Obnovte odkaz Taobao společně s variantou",
+          "paragraphs": [
+            "Sdílená zpráva Taobao může kromě odkazu obsahovat popisný text. Zkopírujte skutečný odkaz nabídky místo považování celé zprávy za adresu. Pokud odkaz přesměruje, ověřte výslednou položku před použitím cíle v LoloBuy. Původní zprávu uchovejte jako referenci, obsahuje-li popis varianty, který samotná adresa nezachovává.",
+            "Po načtení položky porovnejte vybranou barvu, velikost, množství a základ ceny. Úspěšný import může stále zobrazovat výchozí variantu místo zamýšlené. Uchovejte původní znění varianty vedle překladu, zejména pokud má více možností podobné názvy. Používá-li prodejce tabulku velikostí v obrázku, uložte ji a před schválením objednávky vyjasněte požadované rozměry."
+          ]
+        },
+        {
+          "heading": "Ověřte informace prodejce a varianty Weidian",
+          "paragraphs": [
+            "U nabídky Weidian ověřte společně stránku prodejce a produkt. Uložený odkaz může fungovat, zatímco nabídka, dostupné varianty nebo cena se změnily. Porovnejte aktuální název, obrázky, názvy možností a informace prodejce s dřívějším záznamem. Změněnou nabídku berte jako nové rozhodnutí, nikoli jako zachování staré nabídky jen díky známé fotografii.",
+            "Pokud se importovaný náhled liší od živé stránky prodejce, zdokumentujte konkrétní neshodu. Uveďte například chybějící velikost nebo to, cena které varianty se zobrazuje. Do dotazu k objednávce přiložte původní URL a zamýšlený výběr. Vyhněte se instrukcím jako „ten na fotce“, pokud nabídka obsahuje více produktů či variant. Přesný popis usnadňuje nákupnímu týmu ověření."
+          ]
+        },
+        {
+          "heading": "Považujte množství 1688 za součást produktu",
+          "paragraphs": [
+            "Oficiální průvodce LoloBuy pro 1688 uvádí nutnost splnit minimální množství prodejce a závislost ceny i vnitrostátní dopravy na objemu nákupu. Importovaná cena bez odpovídajícího množstevního pásma je proto neúplná. Ověřte, zda se nabídka účtuje za kus, pár, sadu, krabici nebo jinou jednotku. Nízká částka může popisovat součást nebo vyšší nákupní pásmo.",
+            "Zapište minimální množství, zamýšlené množství, vybrané varianty a cenu pro danou kombinaci. Pokud kombinujete barvy či velikosti, vyjasněte podmínky prodejce místo předpokladu, že minimum splňuje libovolná směs. Oficiální průvodce také popisuje odlišné kontrolní podmínky objednávek 1688. Vyřešení odkazu neodstraňuje z nákupního rozhodnutí pravidla množství, kontroly či vrácení."
+          ]
+        },
+        {
+          "heading": "Ruční objednávku použijte jen s ověřenými údaji",
+          "paragraphs": [
+            "Oficiální nákupní průvodce LoloBuy popisuje ruční vyplnění objednávky nákupního agenta, pokud nelze informace produktu načíst automaticky. Použijte tuto možnost, je-li pro objednávku nabídnuta, a vyplňte údaje ze skutečné nabídky. Zahrňte původní odkaz, přesný produkt a varianty, množství, aktuální cenu a známé informace o vnitrostátní dopravě. Nevyřešené údaje označte k vyjasnění místo vymýšlení.",
+            "Ruční formulář je způsob předání objednávky, nikoli záruka možnosti zakoupit nedostupnou položku nebo přijetí požadovaných podmínek každým prodejcem. Před zaplacením porovnejte vyplněný formulář se zdrojovým záznamem. Po podání odpovídejte na žádosti o potvrzení v příslušném dotazu k objednávce. Uchovejte konečný potvrzený výběr pro pozdější porovnání se skladovými podklady."
+          ]
+        },
+        {
+          "heading": "Před platbou ověřte importovaný výsledek",
+          "paragraphs": [
+            "Ať byl odkaz opraven nebo použit ruční formulář, proveďte stejnou závěrečnou kontrolu. Porovnejte identitu, prodejce, barvu, velikost, množství, jednotku a součet. Potvrďte, že zobrazená částka patří ke zvolené konfiguraci, a vnitrostátní dopravu ověřte zvlášť. Úspěšný náhled dokazuje načtení určitých informací, nikoli správný import všech potřebných detailů či rezervaci zásob.",
+            "Pokud se zdroj a formulář liší, zastavte se u této neshody a konkrétně ji vyřešte. Opakované podávání podobných objednávek může záznam znepřehlednit. Uchovejte jednu jasnou důkazní stopu: původní nabídku, opravený výběr a vzniklou referenci objednávky. Po příchodu do skladu porovnejte obdržené zboží s potvrzeným záznamem před podáním mezinárodního balíku."
+          ]
+        },
+        {
+          "heading": "Veďte záznam odkazu pro další kontrolu",
+          "paragraphs": [
+            "V jednoduchém záznamu uchovejte starou URL, aktuální URL, tržiště, prodejce, viditelné ID položky, vybranou variantu, datum a výsledek. Užitečné výsledky jsou fungující a shodné, fungující se změnou, nedostupná varianta, odstraněná nabídka nebo nevyřešený import. Najdete-li náhradu, uchovejte její vlastní údaje místo přepsání originálu, jako by se nic nezměnilo. Tím zachováte důvod rozhodnutí.",
+            "Nabídku znovu ověřte těsně před objednáním, protože obnovení odkazu nezaručuje budoucí dostupnost. Sdílíte-li opravený odkaz, vysvětlete datum a rozsah ověření bez tvrzení o nezávislém testování prodejce či fyzického zboží. Spolehlivý katalog pomáhá objevovat a ověřovat kandidáty. Jasné záznamy a přesné stavy zachovávají jeho užitečnost, i když se jednotlivé nabídky tržišť mění."
+          ]
+        }
+      ],
+      "checklist": [
+        "Uložte původní URL před změnou odkazu.",
+        "Ověřte dostupnost prodejce odděleně od importu LoloBuy.",
+        "Rozlišujte ID katalogových záznamů a ID položek tržišť.",
+        "Ověřte jednotky, minimální množství a cenová pásma 1688.",
+        "Porovnejte konečnou importovanou nebo ruční objednávku se zdrojem."
+      ],
+      "sourceIds": [
+        "buying",
+        "wholesale",
+        "confirmation",
+        "qc"
+      ],
+      "readingMinutes": 6,
+      "wordCount": 1217,
+      "published": "2026-10-29",
+      "modified": "2026-10-29"
     }
   ]
 }

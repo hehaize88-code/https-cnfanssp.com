@@ -20,7 +20,7 @@
     "photo": "Image search",
     "popular": "Explore:",
     "tagline": "One catalogue. Your next discovery.",
-    "source": "Products from cnfanssp.com",
+    "source": "Product discovery and buying guides",
     "independent": "Independent LoloBuy discovery site",
     "browse": "Explore the spreadsheet",
     "browseSub": "A little less searching. A lot more finding.",
@@ -56,7 +56,7 @@
     "empty": "No finds match your search.",
     "reset": "Clear filters",
     "sourceSearch": "Search the full source catalogue",
-    "snapshot": "Live catalogue from cnfanssp.com. Item prices in CNY exclude shipping and service fees. Check current options and the final quote on LoloBuy.",
+    "snapshot": "Item prices in CNY exclude shipping and service fees. Check current options and the final quote on LoloBuy.",
     "howTitle": "From finding to unboxing.",
     "howSub": "New to LoloBuy? Start with these three steps.",
     "steps": [
@@ -83,7 +83,7 @@
     "cta": "Found your next favourite?",
     "ctaSub": "Take it to LoloBuy and make it yours.",
     "ctaButton": "Explore all finds",
-    "footer": "An independent product discovery site. We are not the official LoloBuy website. Product listings and photos are sourced from cnfanssp.com. Purchases are completed on LoloBuy.",
+    "footer": "An independent product discovery site. We are not the official LoloBuy website. Purchases are completed on LoloBuy.",
     "footerLinks": [
       "Spreadsheet",
       "Buying guide",
@@ -102,7 +102,7 @@
     "photoTitle": "Find it with a photo.",
     "photoIntro": "Use the source catalogue to find and compare products.",
     "photoState": "Image search on the source",
-    "photoNote": "No public image-search service has been verified on cnfanssp.com. We do not accept photo uploads until its source service is available.",
+    "photoNote": "No supported image-search service is currently connected. Browse the catalogue by keyword or category instead.",
     "browseInstead": "Browse products",
     "faqTitle": "LoloBuy: answers before you order.",
     "faqIntro": "Researched from official LoloBuy help pages. Where official pages differ, the answer explains what needs checking.",
@@ -124,8 +124,8 @@
     "jump": "Go to page",
     "go": "Go",
     "articlesLabel": "Articles",
-    "articlesTitle": "LoloBuy buying knowledge, in detail.",
-    "articlesIntro": "Ten practical guides, researched from LoloBuy’s official help pages. Find products, check QC, budget and plan shipping with clearer information.",
+    "articlesTitle": "LoloBuy guides: ordering, QC, shipping and payments",
+    "articlesIntro": "Practical LoloBuy guides for product links, warehouse checks, shipping costs and payment decisions. Choose the guide for your next step.",
     "articleSources": "Official sources",
     "reviewed": "Reviewed 20 October 2026",
     "readArticle": "Read article",
@@ -149,7 +149,17 @@
     "nextFind": "THE NEXT FIND IS YOURS.",
     "liveLabel": "Updated from the source",
     "faqCount": "researched answers",
-    "catalogue": "Catalogue"
+    "catalogue": "Catalogue",
+    "homeTitle": "LoloBuy Spreadsheet & Buying Guides | LoloBuy Sheet",
+    "catalogTitle": "Browse LoloBuy Finds: Clothing, Sneakers & Accessories",
+    "catalogDescription": "Browse LoloBuy finds by category, search the full catalogue and compare item prices. Check product details before opening the matching LoloBuy purchase link.",
+    "guidesTitle": "LoloBuy Buying Guides: From Product Links to Delivery",
+    "guideMetaTitle": "How LoloBuy Works: Ordering, QC & International Shipping",
+    "shippingNav": "Shipping",
+    "reviewedLabel": "Updated",
+    "nextStep": "Continue with the next step",
+    "priorityTitle": "Before you order or ship",
+    "priorityIntro": "Check the product, review warehouse evidence and compare the full parcel cost."
   },
   "faqs": [
     {
@@ -450,7 +460,9 @@
         "qc"
       ],
       "readingMinutes": 3,
-      "wordCount": 651
+      "wordCount": 627,
+      "published": "2026-10-20",
+      "modified": "2026-10-29"
     },
     {
       "slug": "how-to-order-on-lolobuy",
@@ -507,6 +519,35 @@
             "The official workflow instructs users to select stored items, enter delivery details and choose from the available shipping options. Review the destination, restrictions, packing choices and freight deposit together. An item that has been bought is not automatically an international parcel ready for dispatch.",
             "The final freight can differ after packing and logistics measurement. Watch the parcel record for any adjustment or confirmation request. Once dispatched, use the parcel section for tracking, keep the order references and check the contents promptly when the delivery arrives."
           ]
+        },
+        {
+          "heading": "Build a first-order record you can reuse",
+          "paragraphs": [
+            "Before submitting a first order, prepare a compact record with the seller URL, item title, exact option, quantity, size-chart reference and unanswered questions. Keep the seller's original option wording when a translation could be ambiguous. For a set, identify the components expected in the package. This record provides a comparison at checkout and later at the warehouse, rather than relying on a remembered thumbnail.",
+            "For illustration, a clothing order might specify one navy sweatshirt in the seller's size M, with a particular flat chest measurement shown on the chart. That is a clearer instruction than asking for a medium blue top. If the chart or colour name is unclear, ask before purchasing. A precise request improves communication but does not establish that the seller has the item in stock or that the garment will fit."
+          ]
+        },
+        {
+          "heading": "Separate a product problem from a payment problem",
+          "paragraphs": [
+            "If the imported item is incorrect or a required option is absent, resolve the listing before paying. Use the original source to identify whether the seller changed the offer or whether the import omitted information. A manual order, when offered, should preserve the actual product details. Changing IDs or selecting an approximately similar option does not resolve an uncertain order and can make a later mismatch harder to document.",
+            "If the item is correct but payment status is unclear, compare the bill, account balance and payment-provider record. Preserve the transaction reference and visible error before trying again. A loading page does not by itself prove failure. Ask support to clarify an ambiguous debit rather than creating several overlapping attempts. Keep product identity, payment status and seller dispatch as separate checkpoints because success at one stage does not establish success at the next."
+          ]
+        },
+        {
+          "heading": "Plan a warehouse decision before parcel submission",
+          "paragraphs": [
+            "Decide which evidence you need before the goods arrive. A size-sensitive garment may require a specific measurement, while an accessory set may require a clear view of all components. Check the available inspection service and its limits. When the photos are ready, compare them with the saved order record and list each unresolved detail. Request a particular view or explanation rather than a general judgement that the item looks good.",
+            "Check the relevant return conditions promptly while the goods remain in the warehouse. Storage time and the seller's return window are different deadlines. Waiting to combine several items can leave an unwanted item outside its applicable return period. If you want a replacement or return, ask about that item's eligibility and expected costs before moving it into an international parcel. Do not assume a parcel can be stopped after every later processing step."
+          ]
+        },
+        {
+          "heading": "Finish the order with a complete cost record",
+          "paragraphs": [
+            "Keep goods and domestic delivery, selected services, international freight and destination charges in separate fields. Add a charge only once and record its currency. Replace estimates with confirmed bills as the order progresses, retaining the earlier figures for comparison. If freight changes after packing, match the adjustment to the parcel reference and measurements. That record explains the delivered cost more clearly than a single undated total.",
+            "After delivery, compare the received contents with the original item list and preserve packaging evidence if there is a problem. Use the relevant order or parcel support route, describing the issue and the records that connect it to your purchase. Retain the dates of purchase, warehouse arrival, dispatch and delivery as separate milestones. These observations can inform your next order without becoming a promise that another parcel will follow the same timing.",
+            "Before closing the record, identify which steps required clarification and which assumptions changed. If a product link needed manual entry, keep the confirmed option text for future reference. If the freight estimate changed, keep the measured carton beside the original estimate. These notes should describe your own order only. Recheck the current listing, checkout and shipping conditions when ordering again, even when the item appears identical. A previous successful purchase does not reserve stock or preserve the same price, service or seller terms."
+          ]
         }
       ],
       "checklist": [
@@ -523,8 +564,10 @@
         "qc",
         "freight-balance"
       ],
-      "readingMinutes": 3,
-      "wordCount": 640
+      "readingMinutes": 6,
+      "wordCount": 1257,
+      "published": "2026-10-20",
+      "modified": "2026-10-29"
     },
     {
       "slug": "lolobuy-qc-photos",
@@ -581,6 +624,35 @@
             "Sort findings into confirmed, unclear and unacceptable. If a detail is unclear, request evidence. If the item appears to differ from the order, use the relevant support or return process before international shipping. Keep a short description of the issue and the photos that demonstrate it.",
             "Photos cannot establish every material property, comfort, long-term durability or internal function. Approving visible condition is a narrower decision. Read the return conditions while the item is still in the warehouse, and do not treat successful QC as a promise about customs or international delivery."
           ]
+        },
+        {
+          "heading": "Turn a clothing check into a clear request",
+          "paragraphs": [
+            "Start with the measurements that influence fit rather than asking the warehouse to judge whether a garment is the right size for you. For a sweatshirt, you might need flat chest width, body length and sleeve length measured from the same points as the seller's chart. State the measurement method and unit. A size label is useful identity evidence, but it does not replace the garment measurements.",
+            "If the chart uses body circumference while the photograph shows flat width, do not compare the two numbers directly. Check where the tape starts and finishes, whether the garment is laid flat and whether the number can be read. Lighting and perspective can also change how a colour looks. Where colour matters, ask for a clearer view, while recognising that a screen photograph cannot guarantee an exact real-world shade."
+          ]
+        },
+        {
+          "heading": "Inspect shoes and accessories without overclaiming",
+          "paragraphs": [
+            "For footwear, compare both shoes, visible size markings, the overall shape and the areas relevant to your concern. If a particular measurement or close view is needed, identify it explicitly. For a bag, check handles, closures and expected components where visible. For a multi-part accessory, make a list of what should be included and compare that with the photographs instead of assuming a closed box contains everything.",
+            "A visible seam or surface defect can be documented with a close photograph and its location. Hidden construction, comfort during use, material composition and long-term durability usually require different evidence. Do not treat a warehouse photo as an authenticity certificate or a professional functional test. For sealed products or specialist electronics, read the stated inspection exclusions before deciding whether the available service answers your actual concern."
+          ]
+        },
+        {
+          "heading": "Keep uncertainty separate from a confirmed defect",
+          "paragraphs": [
+            "Use three simple states in your notes: confirmed match, needs more evidence, and observed mismatch. For example, an unreadable size label belongs in the second state until a clearer photograph is available; a clearly different size label belongs in the third. This prevents a missing photograph from being described as a proven defect, and prevents an attractive overall image from hiding an unanswered question.",
+            "For each unresolved point, record the order number, relevant image, precise question and next action. When a response arrives, update that point rather than replacing the whole record with a vague approval. If a mismatch remains, ask about the applicable remedy while the item is still at the warehouse. Keep the seller's acceptance, return requirements and any charges together. Requesting a return is not the same as having one approved."
+          ]
+        },
+        {
+          "heading": "Make the decision before the next deadline",
+          "paragraphs": [
+            "Review the item promptly when its warehouse information becomes available. LoloBuy's return guidance makes eligibility conditional on the order, seller and timing. A general storage allowance does not extend a return window. Read the deadline and condition requirements applicable to the item, and preserve original packaging when it may be needed. Do not delay a necessary enquiry merely because other items in a planned parcel have not arrived.",
+            "When you approve an item for shipping, record what was actually checked and what remains unknown. For example, identity and visible measurements may be confirmed while comfort and durability remain untested. Keep that limited conclusion attached to the item reference. Revisit any unresolved concern before parcel submission, particularly if a packing change would remove labels or original packaging relevant to the record. This creates a useful decision trail without pretending that QC eliminates every purchase risk.",
+            "Keep the original images and a short decision note together rather than saving only a cropped detail. The wider image helps connect the concern to the correct item, and the order reference connects the photograph to your purchase. If another image later resolves the question, retain both and state what changed. Avoid sharing personal order information publicly. The useful record is a specific observation with a traceable source, not an unsupported rating or a claim that every product from the seller has been checked."
+          ]
         }
       ],
       "checklist": [
@@ -594,15 +666,18 @@
         "qc",
         "photos",
         "service",
-        "sizing"
+        "sizing",
+        "returns"
       ],
-      "readingMinutes": 3,
-      "wordCount": 643
+      "readingMinutes": 6,
+      "wordCount": 1256,
+      "published": "2026-10-20",
+      "modified": "2026-10-29"
     },
     {
       "slug": "lolobuy-shipping-costs",
-      "title": "LoloBuy shipping costs: compare the complete parcel",
-      "description": "Understand estimated, actual and volumetric weight, then compare available routes using the same destination, contents and packing choices.",
+      "title": "LoloBuy shipping costs: calculator, weight and fees",
+      "description": "Use the LoloBuy shipping calculator, compare actual and volumetric weight, and check packing choices, freight adjustments and the complete parcel budget.",
       "keyword": "lolobuy shipping calculator",
       "category": "Shipping",
       "summary": "A useful freight comparison starts with one clearly defined parcel. This guide explains the inputs and checks; it is not a live shipping quotation.",
@@ -655,6 +730,35 @@
             "LoloBuy’s supplemental-payment guidance says that estimated freight is reconciled with the logistics provider’s actual charge. This can mean a refund of overpayment or an additional payment request. Read the parcel messages and respond to any request attached to your shipment.",
             "Keep the initial estimate, final chargeable measurements, selected services and adjustment together. That record makes a difference easier to understand. Budget possible destination charges separately and check the final parcel total before treating the order as complete."
           ]
+        },
+        {
+          "heading": "Use the official calculator with a saved baseline",
+          "paragraphs": [
+            "Open LoloBuy's current shipping estimator and select the actual destination. Enter the requested contents, weight and dimensions using the displayed units. Save the date, input values, selected service and currency with the result. If the goods have not reached the warehouse, label the measurements as estimates. That label matters because a seller's approximate item weight does not describe a finished carton with its outer packing.",
+            "Record one baseline before changing a packing option or removing an item. For each alternative, change one variable and retain the others where possible. If a route disappears when the goods category changes, that restriction is part of the result; selecting an inaccurate category to obtain a cheaper quote does not make the route suitable. Compare only services offered for the actual goods and destination, and keep any unanswered eligibility question visible."
+          ]
+        },
+        {
+          "heading": "Build a comparison that includes every parcel",
+          "paragraphs": [
+            "Use one row for each complete shipping scenario. Record the contents, number of parcels, actual weight, dimensions, packing services, route and total freight. For a two-parcel option, add both complete parcel quotations before comparing it with one combined shipment. Separate minimum charges can affect the result. A lower number for the first parcel alone does not show that splitting the whole order is cheaper.",
+            "A meaningful comparison also records protection and service differences. One scenario may preserve a shoe box while another removes it; one may include reinforcement that another omits. Write down those changes so that the amount does not hide a different outcome. If the final measurements are unavailable, treat the comparison as planning evidence and repeat it after packing information is confirmed. Do not convert an estimated saving into a guaranteed final bill."
+          ]
+        },
+        {
+          "heading": "Audit a changed estimate line by line",
+          "paragraphs": [
+            "If the final freight differs from your saved estimate, first compare destination, selected items, actual weight and carton dimensions. Then check the route, billing increment, optional services and currency. A heavier outer box, a bulky item or a different service can explain a change even when the product list appears similar. Ask for the specific measurement or line item that changed instead of assuming that every difference represents the same fee.",
+            "Keep the initial deposit and any later adjustment linked to the same parcel reference. An account credit for overpayment and a refund to an external payment method are different records. Confirm where the amount was credited or what supplemental payment remains due. If the explanation is incomplete, preserve the two quotations and ask an order-specific question. This is more useful than comparing your total with an unrelated parcel from another destination or date."
+          ]
+        },
+        {
+          "heading": "Keep freight separate from the delivered budget",
+          "paragraphs": [
+            "The international freight figure may not include every payment associated with receiving the goods. Review the original item purchase, domestic delivery, optional warehouse work, payment charges and destination costs separately. Mark an included service clearly to avoid counting it twice. A blank amount should remain a question to resolve, rather than silently becoming zero in a delivered-cost estimate.",
+            "Before paying, check current destination information and the selected service's stated inclusions. Do not infer customs treatment or buyer protection from a route nickname. If you later publish a shipping example, include the date, contents, destination, measured carton and scope of the quoted amount, removing personal information. A well-documented historical case can help readers reproduce the comparison, while an isolated price cannot establish the rate for their own parcel.",
+            "A comparison worksheet can remain simple: one line per scenario, with the quotation date, destination, goods, weight source, dimensions, route, amount and unresolved questions. Add a final column for the confirmed result when the parcel is dispatched. Do not replace the original estimate without keeping its inputs, because that would remove the explanation for the difference. If an input remains unknown, obtain it from the current parcel record or support before making a firm comparison. Use this method for each new parcel rather than extending one historical price to every future purchase."
+          ]
         }
       ],
       "checklist": [
@@ -668,10 +772,13 @@
         "buying",
         "weight",
         "packaging",
-        "freight-balance"
+        "freight-balance",
+        "estimate"
       ],
-      "readingMinutes": 3,
-      "wordCount": 604
+      "readingMinutes": 6,
+      "wordCount": 1225,
+      "published": "2026-10-20",
+      "modified": "2026-10-29"
     },
     {
       "slug": "lolobuy-warehouse-consolidation",
@@ -746,7 +853,9 @@
         "freight-balance"
       ],
       "readingMinutes": 3,
-      "wordCount": 612
+      "wordCount": 586,
+      "published": "2026-10-20",
+      "modified": "2026-10-29"
     },
     {
       "slug": "lolobuy-sizing-guide",
@@ -819,7 +928,9 @@
         "returns"
       ],
       "readingMinutes": 3,
-      "wordCount": 648
+      "wordCount": 619,
+      "published": "2026-10-20",
+      "modified": "2026-10-29"
     },
     {
       "slug": "lolobuy-tracking-guide",
@@ -893,7 +1004,9 @@
         "freight-balance"
       ],
       "readingMinutes": 3,
-      "wordCount": 618
+      "wordCount": 601,
+      "published": "2026-10-20",
+      "modified": "2026-10-29"
     },
     {
       "slug": "lolobuy-returns-refunds",
@@ -968,7 +1081,9 @@
         "changes"
       ],
       "readingMinutes": 3,
-      "wordCount": 626
+      "wordCount": 602,
+      "published": "2026-10-20",
+      "modified": "2026-10-29"
     },
     {
       "slug": "lolobuy-order-budget",
@@ -1050,8 +1165,10 @@
         "freight-balance",
         "wholesale"
       ],
-      "readingMinutes": 3,
-      "wordCount": 690
+      "readingMinutes": 4,
+      "wordCount": 662,
+      "published": "2026-10-20",
+      "modified": "2026-10-29"
     },
     {
       "slug": "lolobuy-seller-and-review-checks",
@@ -1125,7 +1242,280 @@
         "returns"
       ],
       "readingMinutes": 3,
-      "wordCount": 626
+      "wordCount": 604,
+      "published": "2026-10-20",
+      "modified": "2026-10-29"
+    },
+    {
+      "slug": "lolobuy-shipping-netherlands",
+      "title": "LoloBuy shipping to the Netherlands: costs, timing and parcel checks",
+      "description": "Plan a LoloBuy parcel for the Netherlands: compare calculator inputs, packing, delivery stages and the records needed to check import charges.",
+      "keyword": "lolobuy shipping Netherlands",
+      "category": "Netherlands delivery",
+      "summary": "Use the Netherlands as the actual destination when comparing freight. Keep a dated quotation, distinguish delivery stages and check current Dutch Customs guidance before paying.",
+      "sections": [
+        {
+          "heading": "Start with a Netherlands parcel brief",
+          "paragraphs": [
+            "A useful LoloBuy shipping comparison starts with the parcel you intend to receive, rather than a price someone else paid. Write down the destination country, postcode, item list, quantities and any packaging that must stay with the goods. A route available for a small clothing parcel may not accept a different mix of products. The country alone does not establish that your parcel is eligible.",
+            "Make two lists: facts already confirmed and information still estimated. Seller dimensions, warehouse item weight and the dimensions of a finished carton are different records. Mark their sources so that you know what to update after the goods arrive. If a gift box must remain intact, say so before comparing a cheaper packing option that assumes its removal. That choice can affect both protection and volume."
+          ]
+        },
+        {
+          "heading": "Read the price in separate stages",
+          "paragraphs": [
+            "LoloBuy's official buying guide separates the first item payment and Chinese domestic delivery from a later international parcel submission. For a Netherlands order, keep these stages separate in your budget. The catalogue price is a starting point for the item, not a quotation for arrival at your door. Add only costs that the current order or parcel record actually confirms.",
+            "Keep a simple ledger with columns for the item, domestic delivery, optional warehouse services, international freight, payment costs and destination charges. Record the currency beside every amount. When a quotation already includes a charge, mark it as included instead of adding it again. An unanswered field should remain unresolved. A total with an explicit gap is more useful than a deceptively precise total that assumes every missing cost is zero."
+          ]
+        },
+        {
+          "heading": "Prepare a repeatable calculator comparison",
+          "paragraphs": [
+            "Open LoloBuy's official shipping estimator and select the Netherlands as the destination. Enter the requested weight, dimensions and goods category using the units shown by the current form. Check grams against kilograms before comparing results. A weight entered in the wrong unit describes a different parcel, even if the resulting screen looks plausible. Save the inputs together with the displayed options.",
+            "For each eligible route, record the quotation date, currency, quoted amount, estimated transit period, tracking information and stated restrictions. Keep the contents and measurements identical while comparing routes. If a route requires a different packing method, note that difference explicitly. Do not turn an old screenshot into a current price table. A useful comparison can be repeated with measured warehouse data when that information becomes available."
+          ]
+        },
+        {
+          "heading": "Understand what a lighter or smaller carton changes",
+          "paragraphs": [
+            "Actual weight measures mass; volumetric weight represents the space the parcel occupies under a route's billing rule. LoloBuy's weight guidance describes route-dependent formulas. Read the current conditions rather than applying one divisor to every service. Also check rounding, minimum charges and the increment used for additional weight. Reducing the physical weight slightly may leave the parcel in the same price band.",
+            "Consider an illustrative carton measuring 40 by 30 by 20 centimetres. Its volume is 24,000 cubic centimetres. With a hypothetical divisor of 6,000, dimensional weight would be 4 kilograms. Reducing one side to 15 centimetres would produce 3 kilograms under that same assumed rule. This calculation explains a packing comparison; it does not establish an available LoloBuy route, a freight price or a guaranteed saving."
+          ]
+        },
+        {
+          "heading": "Compare consolidation with separate parcels",
+          "paragraphs": [
+            "When several items are in storage, compare one combined parcel with the total for all proposed separate parcels. Use the same destination and include the packing services for each option. A smaller amount shown beside one split parcel is not the total cost of shipping the whole basket. Each parcel can have its own minimum charge and separate destination processing.",
+            "Protection and restrictions can matter more than the lowest initial freight. A fragile item may need separation or reinforcement, while a bulky box may dominate the volume of an otherwise compact parcel. Ask for the particular arrangement you want considered. Keep necessary protection and check that the selected service accepts the actual contents. Consolidation is a decision to evaluate, not an automatic promise of lower cost."
+          ]
+        },
+        {
+          "heading": "Read delivery time as a sequence",
+          "paragraphs": [
+            "Separate seller dispatch, delivery to the Chinese warehouse, inspection, parcel preparation, international transport, destination processing and final delivery. A carrier transit estimate may cover only part of that sequence. Record the milestone from which an estimate starts before comparing it with another shopper's total wait. Order confirmation and carrier acceptance are not the same starting event.",
+            "After dispatch, follow the parcel reference in the account and the carrier information associated with it. A created tracking number does not by itself establish that the carrier has physically accepted the parcel. When progress is unclear, ask which milestone has been completed and which party holds the parcel. For a time-sensitive purchase, leave a buffer instead of treating an estimated arrival window as a guaranteed date."
+          ]
+        },
+        {
+          "heading": "Check current Dutch import information",
+          "paragraphs": [
+            "Before payment, consult Dutch Customs' current information for online purchases arriving from outside the European Union. Its guidance distinguishes VAT, import duty and carrier handling costs. The rules for low-value consignments changed in July 2026, so an older guide saying that a low-value purchase is automatically free of import duty should not be used as a current calculation. Check the rules applicable to the actual goods and import date.",
+            "Keep the item descriptions, purchase amounts, currency and any tax or duty already collected together. Ask the carrier or seller how an included charge is documented and what remains payable. A shipping-line nickname does not establish the tax treatment of your parcel. This guide does not calculate a universal Dutch customs bill: product classification, the transaction and the applicable procedure matter. Use accurate descriptions and values when providing the requested information."
+          ]
+        },
+        {
+          "heading": "Reconcile the final freight and retain evidence",
+          "paragraphs": [
+            "The official LoloBuy freight guidance describes collecting an estimate and later reconciling it with the logistics charge. Compare any adjustment with the final packed weight, dimensions, route and selected services. If the amount changes, identify the changed input before assuming the estimate was a fixed commitment. Keep the initial quotation and the final parcel bill in the same record.",
+            "When delivery arrives, compare the contents with the saved item list and inspect the packaging before discarding it. Preserve photographs if something appears missing or damaged, then use the order or parcel support process relevant to the issue. Seller returns, international parcel claims and carrier charges involve different records. Good documentation makes the request clearer without promising a particular refund or resolution."
+          ]
+        },
+        {
+          "heading": "Build a useful record for the next order",
+          "paragraphs": [
+            "After completing an order, retain what can be compared honestly: the date, destination, actual goods, measured carton, selected service, final freight and the observed delivery milestones. Remove personal address information before sharing an example. A historical shipment can help another buyer understand the process, but it should remain labelled as one dated case rather than a general price or delivery promise.",
+            "Use that record to improve the next estimate. Note whether volume or weight controlled the charge, whether an optional service changed the carton, and which budget item was initially overlooked. Before reusing the figures, check that the destination, contents and current route conditions still match. A repeatable method is more useful than collecting the cheapest-looking number from a different parcel."
+          ]
+        }
+      ],
+      "checklist": [
+        "Select the Netherlands and the correct postcode in the current quote.",
+        "Save identical weight, volume and contents for route comparisons.",
+        "Separate warehouse time, international transit and final delivery.",
+        "Verify current Dutch import guidance and any amount already collected.",
+        "Keep initial and final parcel bills together."
+      ],
+      "sourceIds": [
+        "buying",
+        "weight",
+        "packaging",
+        "freight-balance",
+        "estimate"
+      ],
+      "readingMinutes": 6,
+      "wordCount": 1222,
+      "published": "2026-10-29",
+      "modified": "2026-10-29"
+    },
+    {
+      "slug": "lolobuy-payment-methods-fees",
+      "title": "LoloBuy payment methods and fees: checkout, currency and balance",
+      "description": "Check LoloBuy payment methods at checkout, compare the complete debit, and distinguish account balance credits from refunds to the original payment method.",
+      "keyword": "lolobuy payment methods",
+      "category": "Payments and fees",
+      "summary": "Match every payment to an item order or parcel bill. Compare the current total and currency, keep the transaction reference, and verify where any refund is credited.",
+      "sections": [
+        {
+          "heading": "Begin with the bill you intend to pay",
+          "paragraphs": [
+            "Before choosing a payment method, identify the subject of the bill. It may concern a product order, domestic delivery, international freight, an adjustment or an account top-up. The official LoloBuy purchase process separates the goods payment from the later parcel payment. A successful first transaction does not establish that every later stage of the purchase is already paid.",
+            "Keep the order or parcel number, amount and currency beside the payment screen. If several bills have similar totals, use their references rather than the amount alone to distinguish them. Confirm that the selected items and quantities are correct before comparing payment channels. Solving a wrong-item order after payment is a different task from selecting a convenient way to pay for the correct order."
+          ]
+        },
+        {
+          "heading": "Check methods in the current checkout",
+          "paragraphs": [
+            "LoloBuy's public buying guide names several payment categories, including cards, Chinese payment services and bank transfer. A general help list is background information, not proof that every method is currently available for every account, country, currency or bill. Read the methods actually offered for your transaction and any eligibility or verification information displayed beside them.",
+            "Do not infer a current fee or settlement time from a logo in an older tutorial. If a channel is unavailable, preserve the visible message and check official support rather than assuming that a different country selection is appropriate. Use your actual billing details. If the checkout asks for a currency choice, record it before comparing another channel so that the two totals describe equivalent purchases."
+          ]
+        },
+        {
+          "heading": "Separate the cost layers",
+          "paragraphs": [
+            "A complete comparison distinguishes the underlying bill, a platform payment charge, currency conversion and any external provider charge. Some of these may be included in a displayed total; others may be shown separately by the bank or payment provider. Record what is known and what remains to be checked. Avoid adding a fee twice merely because it appears on both a breakdown and a final total.",
+            "For a percentage charge, identify the amount to which that percentage applies. For a fixed charge, record the currency and whether it is per transaction. A small purchase can be affected differently by a fixed fee than a larger one. This guide does not publish a permanent fee table because the useful number is the complete amount you would authorise for the current bill under the current terms."
+          ]
+        },
+        {
+          "heading": "Compare the same bill in one currency",
+          "paragraphs": [
+            "Suppose two payment screens refer to the same illustrative goods bill. One shows an all-in debit of 102 units of your spending currency and another shows 104. If the lower number excludes an additional provider charge, the comparison is incomplete. Record the confirmed total for each option and state any unresolved charge rather than presenting the headline figure as the final cost.",
+            "When the account is credited in one currency and your bank debits another, keep both amounts. Dividing the credited amount by the actual debit gives an effective conversion measure for that particular transaction. It does not establish the platform's universal exchange rate. Use the same time and bill when comparing alternatives, and distinguish a quoted rate from the final amount recorded after settlement."
+          ]
+        },
+        {
+          "heading": "Keep account funding and order payment separate",
+          "paragraphs": [
+            "Adding funds to a platform account creates a balance entry. Paying an order uses funds or another payment channel to settle a specific bill. These events may be close together but they answer different questions. After funding, check the credit entry; after paying, check the associated order or parcel status. A balance increase alone does not prove that the intended order has been paid.",
+            "A compact ledger can use one row for the external payment, one for the balance credit and one for the order deduction, with references linking them. This is particularly useful when funding more than one order. Avoid treating the remaining balance as a discount on your next purchase: it is money whose earlier funding cost still belongs in your overall records. Record unused funds separately from completed purchase costs."
+          ]
+        },
+        {
+          "heading": "Handle a pending or failed payment carefully",
+          "paragraphs": [
+            "If a payment page stalls or reports a failure, compare the bill status, account history and provider record before repeating the transaction. A pending bank authorisation and a confirmed platform payment are different states. Save the time, transaction reference and exact message. Those facts allow support to investigate a specific attempt instead of guessing from a screenshot of the current balance.",
+            "If the provider shows a debit but the bill remains unpaid, contact the relevant support channel with the linked records. Do not assume that every pending item will settle or reverse within one universal period. Ask which status is confirmed and what action is required. When sharing evidence, redact full card details and unrelated account activity. Keep the transaction identifiers needed to match the case."
+          ]
+        },
+        {
+          "heading": "Understand where a refund goes",
+          "paragraphs": [
+            "LoloBuy's return guidance generally describes eligible refunds being credited to the LoloBuy account balance. It also describes a narrow exception for certain PayPal orders awaiting approval. That exception should not be rewritten as a promise that every refund returns automatically to the original payment method. Check the rule attached to the actual order stage and payment record.",
+            "Distinguish the seller approving a return, the platform receiving money, the account receiving a credit and money reaching your external account. Each stage needs its own evidence. A balance credit can settle one part of the process without establishing that funds have been withdrawn. Before relying on withdrawal, check the live eligibility, available action and applicable conditions for that balance. Do not assume that an unused balance has identical treatment in every case."
+          ]
+        },
+        {
+          "heading": "Review freight adjustments independently",
+          "paragraphs": [
+            "International freight starts as a separate estimate in the official buying process. Later packing or logistics measurements can produce an additional amount or an overpayment credit. Match any adjustment to the parcel number and final measurements. An extra freight bill is not automatically a payment-method fee, and a freight credit is not necessarily a reversal of the original goods purchase.",
+            "Retain the initial freight amount, changed measurements, final amount and any credit or supplemental payment. If a line item is unclear, ask which part of the parcel calculation changed. Separate this reconciliation from destination taxes or carrier handling charges that may follow another process. Keeping the categories distinct makes a total easier to audit and helps you avoid paying an unfamiliar request without understanding its connection to the parcel."
+          ]
+        },
+        {
+          "heading": "Save a payment record that remains useful",
+          "paragraphs": [
+            "A useful payment record contains the date, bill subject, order or parcel reference, base amount, displayed fee, settlement currency, final payable amount and provider transaction reference. Add the resulting platform status and balance movement after payment. For a refund, attach the source order and the destination of the credit. These fields connect what you intended to pay with what actually happened.",
+            "Before the next payment, repeat the current-checkout comparison. Method availability, conversion and charges can change, so a previous successful transaction is a reference rather than a permanent rate card. Choose among the methods genuinely offered for your bill, compare the complete debit and retain the evidence. If a required fee or refund condition remains unclear, resolve that specific uncertainty through official support before committing the payment."
+          ]
+        }
+      ],
+      "checklist": [
+        "Match the payment to the exact order or parcel bill.",
+        "Compare current fees and final debit in the same currency.",
+        "Check whether a balance credit also settled the intended bill.",
+        "Resolve ambiguous payment status before repeating it.",
+        "Verify whether a refund reached platform balance or the original payment method."
+      ],
+      "sourceIds": [
+        "buying",
+        "refunds",
+        "cancellation",
+        "freight-balance"
+      ],
+      "readingMinutes": 6,
+      "wordCount": 1226,
+      "published": "2026-10-29",
+      "modified": "2026-10-29"
+    },
+    {
+      "slug": "lolobuy-link-not-working",
+      "title": "LoloBuy link not working: Taobao, Weidian and 1688 checks",
+      "description": "Troubleshoot a LoloBuy product link by separating seller availability, link format and order parsing, then verify the exact item before a manual order.",
+      "keyword": "lolobuy link not working",
+      "category": "Product links",
+      "summary": "Preserve the original product link and identify where it fails. Recover the same item and variant, then review the imported order instead of changing IDs or guessing missing details.",
+      "sections": [
+        {
+          "heading": "Identify where the link fails",
+          "paragraphs": [
+            "A product link can fail before or after it reaches LoloBuy. The original seller listing might be unavailable, a shortened address might not resolve, or the import form might fail to capture details from an otherwise live page. Write down what actually happens: an error, an empty preview, a login request or a different product. These observations lead to different checks.",
+            "Save the original URL before changing anything. Record the marketplace, visible item identifier if available, intended option and date of the check. A screenshot of the expected item can help, but it should remain connected to the seller link. The aim is to recover enough information for the intended purchase, not merely to make any product page appear in the browser."
+          ]
+        },
+        {
+          "heading": "Check the original seller listing first",
+          "paragraphs": [
+            "Open the original marketplace listing using its normal public or signed-in access as appropriate. If the seller has removed the item or the desired option is unavailable, reformatting the address does not restore stock. Preserve the seller name, item title and relevant measurements so that you can evaluate another listing as a new candidate. Similar photographs alone do not establish equivalence.",
+            "If the original listing is live and shows the intended option, the problem may concern the shared link or its import. Copy the current listing's own share or address link and compare it with the saved version. Let legitimate redirects complete rather than editing the destination blindly. A page that requires account access should be checked through the marketplace's normal process; this guide does not bypass its access controls."
+          ]
+        },
+        {
+          "heading": "Keep source IDs and catalogue IDs distinct",
+          "paragraphs": [
+            "A product discovery site can assign its own record number to an entry. That number is not necessarily the Taobao, Weidian or 1688 item identifier. On this site, product details use the catalogue record to retrieve the source listing and its matching purchase link. Replacing a marketplace identifier with the number from a local catalogue address can point to an unrelated item or no item at all.",
+            "Use the product's matching purchase button when available, then compare the opened page with the source. If the destination is wrong, retain both URLs and report the mismatch. Do not increment or swap numeric IDs until something loads. The returned image, title, seller and option set should jointly match the intended listing. One matching detail is not enough to reconstruct the complete product identity."
+          ]
+        },
+        {
+          "heading": "Recover Taobao links with the option attached",
+          "paragraphs": [
+            "A Taobao share message can contain descriptive text as well as a link. Copy the actual listing link rather than treating the entire message as an address. If the share link redirects, confirm the resulting item before using that destination in LoloBuy. Keep the original message as a reference when it contains an option description that the address alone does not preserve.",
+            "Once the item loads, compare the selected colour, size, quantity and price basis. A successful import may still show the default option rather than the one you intended. Save the original option wording alongside any translation, especially when several options have similar names. If the seller uses a size chart inside an image, preserve that chart and clarify the required measurements before authorising an order."
+          ]
+        },
+        {
+          "heading": "Check Weidian seller and variant information",
+          "paragraphs": [
+            "For a Weidian listing, verify the seller page and item together. A saved link may remain live while the offer, available variants or price has changed. Compare the current title, images, option names and seller information with your earlier record. Treat a changed listing as a new decision rather than assuming that a familiar product image preserves the old offer.",
+            "When the import preview differs from the live seller page, document the specific mismatch. For example, identify which size is absent or which option price is being displayed. Include the original URL and intended selection in the order enquiry. Avoid instructions such as 'the one in the photo' when the listing contains several products or variants. A precise option description is easier for the purchasing team to verify."
+          ]
+        },
+        {
+          "heading": "Treat 1688 quantity as part of the product",
+          "paragraphs": [
+            "LoloBuy's official 1688 guide says that seller minimum quantities must be met and that price and domestic freight can depend on the purchase amount. An imported price without the matching quantity tier is therefore incomplete. Check whether the listing is priced per piece, pair, set, box or another unit. A low number might describe a component or a larger purchase tier.",
+            "Record the minimum quantity, your intended quantity, the selected variants and the price applicable to that combination. If mixed colours or sizes are involved, clarify the seller's conditions rather than assuming that any mixture meets the minimum. The official guide also describes separate inspection considerations for 1688 orders. Resolving a link does not remove those quantity, inspection or return conditions from the buying decision."
+          ]
+        },
+        {
+          "heading": "Use a manual order only with verified details",
+          "paragraphs": [
+            "The official LoloBuy buying guide describes manually filling a shopping-agent order when product information cannot be captured automatically. Use that option when it is offered for the order and supply the details from the actual listing. Include the original link, exact product and options, quantity, current item price and domestic delivery information where known. Mark unresolved information for clarification rather than inventing it.",
+            "A manual form is a way to communicate an order; it is not a guarantee that an unavailable product can be purchased or that every seller will accept the requested terms. Before payment, compare the completed form with the source record. After submission, answer any request for confirmation through the relevant order enquiry. Keep the final confirmed selection so that it can later be compared with warehouse evidence."
+          ]
+        },
+        {
+          "heading": "Review the imported result before paying",
+          "paragraphs": [
+            "Whether the link was repaired or a manual form was used, perform the same final check. Compare identity, seller, colour, size, quantity, unit and total. Confirm that the displayed amount belongs to the chosen configuration and check domestic delivery separately. A successful preview proves that some information was loaded, not that every required detail was imported correctly or that stock is reserved.",
+            "If the source and order form disagree, stop at the disagreement and resolve it specifically. Repeatedly submitting similar orders can make the record harder to follow. Keep one clear evidence trail showing the original listing, the corrected selection and the resulting order reference. When the item reaches the warehouse, compare the received goods with that confirmed record before international parcel submission."
+          ]
+        },
+        {
+          "heading": "Maintain a link record that can be checked again",
+          "paragraphs": [
+            "Keep the old URL, current URL, marketplace, seller, visible item ID, selected option, date and outcome in a simple record. Useful outcomes include live and matched, live but changed, unavailable option, removed listing or unresolved import. If you find a replacement, retain its own details instead of overwriting the original as though nothing changed. This preserves the reason for your decision.",
+            "Recheck the listing immediately before ordering because link recovery does not guarantee future availability. If you share a corrected link, explain the date and what was verified without claiming that the seller or physical goods were independently tested. A reliable product directory helps people discover and verify candidates. Clear records and accurate status information make that useful even when individual marketplace listings change."
+          ]
+        }
+      ],
+      "checklist": [
+        "Save the original URL before modifying a link.",
+        "Check seller availability separately from LoloBuy import.",
+        "Keep catalogue record IDs separate from marketplace item IDs.",
+        "Verify 1688 units, minimum quantities and price tiers.",
+        "Compare the final imported or manual order with the source."
+      ],
+      "sourceIds": [
+        "buying",
+        "wholesale",
+        "confirmation",
+        "qc"
+      ],
+      "readingMinutes": 6,
+      "wordCount": 1217,
+      "published": "2026-10-29",
+      "modified": "2026-10-29"
     }
   ]
 }

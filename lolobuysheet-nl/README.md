@@ -11,7 +11,7 @@ LoloBuy discovery site. Astro 7.4.1 static pages plus small Cloudflare Pages Fun
 - Build: `npm run build`; output `dist`; Node 24.19.0
 - `PUBLIC_SITE_URL=https://lolobuysheet.nl`
 - Owner authorized production launch on2026-10-20. Canonical/hreflang/sitemap use lolobuysheet.nl. Pages preview hosts retain an X-Robots-Tag noindex header.
-- Sitemap: /sitemap.xml contains384canonical editorial/catalogue URLs across24languages. Product shells, unavailable image search and duplicate legacy guides are excluded; product/image-search pages remain noindex.
+- Sitemap: /sitemap.xml contains456canonical editorial/catalogue URLs across24languages. Product shells, unavailable image search and duplicate legacy guides are excluded; product/image-search pages remain noindex.
 
 ## Development
 
@@ -36,7 +36,7 @@ All filters/search/price sorting run against the complete source-derived data al
 
 ## Content and languages
 
-24 full locales under `src/data/locales/`: en/de/es/fr/it/pl/pt/ro/sv/nl/da/fi/el/cs/hu/bg/sk/hr/sl/lt/lv/et/ga/mt. Each has 24 sourced FAQ answers and 10 full original articles. English is `/`, all other locales have their code prefix. Language switches preserve path, query and hash. Native product titles are preserved from the source.
+24 full locales under `src/data/locales/`: en/de/es/fr/it/pl/pt/ro/sv/nl/da/fi/el/cs/hu/bg/sk/hr/sl/lt/lv/et/ga/mt. Each has 24 sourced FAQ answers and 13 full original articles. English is `/`, all other locales have their code prefix. Language switches preserve path, query and hash. Native product titles are preserved from the source.
 
 `/articles/` is a separate top-navigation entry. Existing guide and product URLs continue to work. Mobile article chapters collapse without dropping their full HTML text. Article, FAQ and language parity checks block incomplete builds. `docs/` holds the official evidence, keyword research and catalogue audit.
 
@@ -50,3 +50,9 @@ npx wrangler pages functions build functions --outdir=/tmp/lolo-functions-build
 ```
 
 `public/_routes.json` invokes Functions only on `/api/*`; editorial HTML and other assets remain static. Do not edit other domain folders or recreate the existing Pages project.
+
+## SEO content update — 2026-10-29
+
+Three new guides in all 24 languages: Netherlands shipping, payment methods/fees, and product-link troubleshooting. Ordering, QC and general shipping expanded in place; existing article URLs are retained. Homepage and catalogue metadata differ, priority guides appear before products, and every article has relevant onward links. Sources and editorial boundaries: `docs/SEO_UPDATE_2026-10-29.md`.
+
+Validation: `node scripts/validate-content.mjs`, `node scripts/check-analytics.mjs`, `npm run build`, then `node scripts/validate-build.mjs`. The final build contains 312 article pages and 456 sitemap URLs. Products and API contracts are unchanged.

@@ -1,6 +1,12 @@
 ---
 import {content,text,pathFor,type Language} from '../data/i18n';
+import {orderArticles} from '../lib/editorial';
 import Icon from './Icon.astro';
-const {lang='en',limit=10,showHeading=true}=Astro.props;const t=text[lang as Language],items=content[lang as Language].articles.slice(0,limit);
+const {lang='en',limit,showHeading=true}=Astro.props;
+const t=text[lang as Language],all=orderArticles(content[lang as Language].articles);
+const items=limit===undefined?all:all.slice(0,limit);
 ---
-<section class="guides-section container">{showHeading&&<div class="section-heading"><div><p class="eyebrow">{t.articlesLabel}</p><h2>{t.articlesTitle}</h2></div>{limit<10&&<a class="text-link" href={pathFor(lang,'articles')}>{t.allArticles} →</a>}</div>}<div class="guide-grid">{items.map((a:any,i:number)=><a class={`guide-card guide-${i%4}`} href={pathFor(lang,'articles/'+a.slug)}><div class="guide-illustration"><span class="guide-number">{String(i+1).padStart(2,'0')}</span><span class="guide-icon"><Icon name={['book','camera','bag','shirt'][i%4]} size={46}/></span></div><div class="guide-card-body"><p class="eyebrow">{a.category}</p><h3>{a.title}</h3><p class="article-card-description">{a.description}</p><span class="text-link">{t.readArticle} →</span></div></a>)}</div></section>
+<section class="guides-section container">
+ {showHeading&&<div class="section-heading"><div><p class="eyebrow">{t.articlesLabel}</p><h2>{t.articlesTitle}</h2></div>{items.length<all.length&&<a class="text-link" href={pathFor(lang,'articles')}>{t.allArticles} →</a>}</div>}
+ <div class="guide-grid">{items.map((a:any,i:number)=><a class={`guide-card guide-${i%4}`} href={pathFor(lang,'articles/'+a.slug)}><div class="guide-illustration"><span class="guide-number">{String(i+1).padStart(2,'0')}</span><span class="guide-icon"><Icon name={['book','camera','bag','shirt'][i%4]} size={46}/></span></div><div class="guide-card-body"><p class="eyebrow">{a.category}</p><h3>{a.title}</h3><p class="article-card-description">{a.description}</p><span class="text-link">{t.readArticle} →</span></div></a>)}</div>
+</section>

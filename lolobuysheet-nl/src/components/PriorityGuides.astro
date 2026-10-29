@@ -1,0 +1,10 @@
+---
+import {content,text,pathFor,type Language} from '../data/i18n';
+import {priorityArticles} from '../lib/editorial';
+const {lang='en'}=Astro.props as {lang:Language};
+const t=text[lang],items=priorityArticles.map(slug=>content[lang].articles.find((a:any)=>a.slug===slug)).filter(Boolean);
+---
+<section class="priority-guides container" aria-labelledby="priority-heading">
+ <div><p class="eyebrow">{t.articlesLabel}</p><h2 id="priority-heading">{t.priorityTitle}</h2><p>{t.priorityIntro}</p></div>
+ <div class="priority-grid">{items.map((a:any)=><a href={pathFor(lang,'articles/'+a.slug)}><span>{a.category}</span><strong>{a.title}</strong><span aria-hidden="true">→</span></a>)}</div>
+</section>

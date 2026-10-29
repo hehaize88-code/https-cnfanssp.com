@@ -1,1 +1,15 @@
-{"version":"2026-10-20-production-v1","languages":24,"articlesPerLanguage":10,"faqsPerLanguage":24,"catalogueItems":6572,"cataloguePageSize":20,"preview":false,"domain":"lolobuysheet.nl"}
+{
+  "version": "2026-10-29-seo-content-v2",
+  "languages": 24,
+  "articlesPerLanguage": 13,
+  "faqsPerLanguage": 24,
+  "catalogueItems": 6572,
+  "cataloguePageSize": 20,
+  "preview": false,
+  "domain": "lolobuysheet.nl",
+  "newArticles": [
+    "lolobuy-shipping-netherlands",
+    "lolobuy-payment-methods-fees",
+    "lolobuy-link-not-working"
+  ]
+}

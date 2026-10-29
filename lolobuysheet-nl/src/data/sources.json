@@ -4,7 +4,7 @@
     "title": "How to purchase on LoloBuy?",
     "url": "https://www.lolobuy.com/helpCenter/1242296499766165",
     "apiUrl": "https://www.lolobuy.com/prod-api/user/common/helpMenuDetail?id=1242296499766165",
-    "checked": "2026-10-20",
+    "checked": "2026-10-29",
     "claims": [
       "Link or manual ordering; item and domestic delivery first, international parcel later."
     ]
@@ -14,7 +14,7 @@
     "title": "Standard inspection service",
     "url": "https://www.lolobuy.com/helpCenter/1242300728672386",
     "apiUrl": "https://www.lolobuy.com/prod-api/user/common/helpMenuDetail?id=1242300728672386",
-    "checked": "2026-10-20",
+    "checked": "2026-10-29",
     "claims": [
       "Standard inspection checks visible attributes; no-inspection and specialist/sealed-goods exclusions apply."
     ]
@@ -54,7 +54,7 @@
     "title": "The estimated weight and real weight",
     "url": "https://www.lolobuy.com/helpCenter/1242300798075086",
     "apiUrl": "https://www.lolobuy.com/prod-api/user/common/helpMenuDetail?id=1242300798075086",
-    "checked": "2026-10-20",
+    "checked": "2026-10-29",
     "claims": [
       "Final packed dimensions and weight can change freight; volumetric billing is route dependent."
     ]
@@ -144,7 +144,7 @@
     "title": "How LoloBuy Collects Supplemental Payments for Parcels",
     "url": "https://www.lolobuy.com/helpCenter/1242300801155283",
     "apiUrl": "https://www.lolobuy.com/prod-api/user/common/helpMenuDetail?id=1242300801155283",
-    "checked": "2026-10-20",
+    "checked": "2026-10-29",
     "claims": [
       "Initial freight is estimated; actual freight can require a supplemental payment or refund."
     ]
@@ -174,7 +174,7 @@
     "title": "Terms of Promised Returns with no reasons",
     "url": "https://www.lolobuy.com/helpCenter/1242296939447441",
     "apiUrl": "https://www.lolobuy.com/prod-api/user/common/helpMenuDetail?id=1242296939447441",
-    "checked": "2026-10-20",
+    "checked": "2026-10-29",
     "claims": [
       "Eligible returns have a stated 120-hour window from the hour after Stocked in, subject to conditions."
     ]
@@ -184,7 +184,7 @@
     "title": "Return the Product",
     "url": "https://www.lolobuy.com/helpCenter/1242296789304333",
     "apiUrl": "https://www.lolobuy.com/prod-api/user/common/helpMenuDetail?id=1242296789304333",
-    "checked": "2026-10-20",
+    "checked": "2026-10-29",
     "claims": [
       "Approved refunds generally go to account balance; a narrow PayPal exception is not general payment-method evidence."
     ]
@@ -194,9 +194,18 @@
     "title": "Guide to 1688 Shopping Agent Service",
     "url": "https://www.lolobuy.com/helpCenter/1242296792646674",
     "apiUrl": "https://www.lolobuy.com/prod-api/user/common/helpMenuDetail?id=1242296792646674",
-    "checked": "2026-10-20",
+    "checked": "2026-10-29",
     "claims": [
       "1688 orders require seller minimums and have separate quantity/inspection considerations."
+    ]
+  },
+  {
+    "id": "estimate",
+    "title": "LoloBuy shipping estimator",
+    "url": "https://www.lolobuy.com/estimate",
+    "checked": "2026-10-29",
+    "claims": [
+      "Use destination, weight, dimensions and goods inputs for a current estimate; no fixed freight tariff is claimed."
     ]
   }
 ]

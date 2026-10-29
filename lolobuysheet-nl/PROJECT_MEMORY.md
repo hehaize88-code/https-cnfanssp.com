@@ -115,3 +115,18 @@ Cloudflare deployment cb1d5a61-f913-4ed4-8559-631385d37df6 succeeded for source 
 
 Actual browser navigation through home and Articles appeared in GA4 property 559722968 Realtime: 1 active user, 2 page_view events; exact titles LoloBuy Spreadsheet | Explore the spreadsheet and LoloBuy buying knowledge, in detail., one view each; first_visit, session_start and user_engagement received. These are setup verification visits, not organic traffic or proof of ranking. No measurement-protocol synthetic hits or additional API secrets were created. All 24 locales use the same dedicated property; normal reports may process later.
 
+
+## SEO content expansion — 2026-10-29
+
+Owner explicitly requested improvements and deployment across every language. Scope remains only lolobuysheet-nl/ in the existing https-cnfanssp.com repository and lolobuy-nl-preview Pages project. Cloudflare connector still cannot authenticate and points at another account; use the existing GitHub-connected deployment. No DNS/account recreation is needed.
+
+- All 24 languages now target 13 complete articles each. Added slugs: lolobuy-shipping-netherlands, lolobuy-payment-methods-fees, lolobuy-link-not-working. Retain all 10 previous URLs.
+- Expanded ordering, QC and shipping articles in place to 1,200–1,800 English words, with every added paragraph localized. New articles have the same English length range. Remaining seven original bodies preserved; all articles gain relevant next-step links and shared navigation changes.
+- 24 FAQ entries retained per locale. UI and content schema parity are enforced; missing languages no longer silently disappear through a hardcoded 10-article route filter. Article hub includes all articles dynamically.
+- Distinct localized homepage/catalogue metadata, descriptive hub titles, six priority links before catalogue, QC/shipping navigation, contextual reading graph, real article dates and breadcrumb schema. Sitemap target 456 URLs, with actual update dates for changed content. Canonical/hreflang/x-default and product noindex preserved.
+- All product data, images, seller-ID handoff and source refresh remain cnfanssp.com. Public copy no longer repeats the source-domain brand; source links and API data are retained.
+- New GA4 interaction events reuse existing G-0QCNL16SSV configuration and production-host guard. Search event carries term length/result count only. Avoid redundant history replacement when the URL is unchanged. No new tracker, extra manual page_view, conversion configuration or revenue claims.
+- Official platform sources rechecked 29 October. Full translations were prepared directly, then structurally checked. No fabricated shipment/QC evidence, current rate table or delivery guarantee. Dutch import discussion refers readers to current official rules and does not give a universal tax calculation.
+- Release marker: 2026-10-29-seo-content-v2, 24 languages, 13 articles per language. Final build and public deployment verification recorded below after completion.
+
+Local release validation passed: production build generated 697 HTML pages; build audit verified 312 article pages (13 × 24 languages), 456 unique sitemap URLs, 34,601 internal links, canonical/hreflang targets, full localized chapter/paragraph parity and exactly one GA4 configuration per page. Analytics behavior checks passed separately, including preview exclusion, idempotence and no raw search-term collection. Mobile 375px and desktop browser previews reviewed. Fixed the 404 page language selector to lead to each language homepage instead of nonexistent localized 404 routes.

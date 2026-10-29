@@ -20,7 +20,7 @@
     "photo": "Zoeken met foto",
     "popular": "Ontdek:",
     "tagline": "Eén catalogus. Jouw volgende ontdekking.",
-    "source": "Producten van cnfanssp.com",
+    "source": "Producten ontdekken en aankoopgidsen",
     "independent": "Onafhankelijke LoloBuy productgids",
     "browse": "Ontdek de spreadsheet",
     "browseSub": "Een beetje minder zoeken. Veel meer vinden.",
@@ -56,7 +56,7 @@
     "empty": "Geen producten gevonden voor je zoekopdracht.",
     "reset": "Filters wissen",
     "sourceSearch": "Zoek in de volledige broncatalogus",
-    "snapshot": "Actuele catalogus van cnfanssp.com. Artikelprijzen in CNY zijn exclusief verzend- en servicekosten. Controleer de actuele opties en definitieve offerte op LoloBuy.",
+    "snapshot": "Artikelprijzen in CNY zijn exclusief verzend- en servicekosten. Controleer de actuele opties en de definitieve offerte op LoloBuy.",
     "howTitle": "Van ontdekking tot uitpakken.",
     "howSub": "Nieuw bij LoloBuy? Begin met deze drie stappen.",
     "steps": [
@@ -83,7 +83,7 @@
     "cta": "Je volgende favoriet gevonden?",
     "ctaSub": "Bekijk hem op LoloBuy en maak hem van jou.",
     "ctaButton": "Ontdek alle producten",
-    "footer": "Een onafhankelijke productgids. Wij zijn niet de officiële website van LoloBuy. Productgegevens en foto’s komen van cnfanssp.com. Je koopt via LoloBuy.",
+    "footer": "Een onafhankelijke website voor het ontdekken van producten. Wij zijn niet de officiële LoloBuy-website. Aankopen worden op LoloBuy afgerond.",
     "footerLinks": [
       "Spreadsheet",
       "Koopgids",
@@ -102,7 +102,7 @@
     "photoTitle": "Vind het met een foto.",
     "photoIntro": "Gebruik de broncatalogus om producten te vinden en te vergelijken.",
     "photoState": "Zoeken met foto bij de bron",
-    "photoNote": "Er is nog geen openbare dienst voor zoeken met foto geverifieerd op cnfanssp.com. Foto’s uploaden is niet beschikbaar totdat deze brondienst beschikbaar is.",
+    "photoNote": "Er is momenteel geen ondersteunde beeldzoekdienst aangesloten. Doorzoek de catalogus op trefwoord of categorie.",
     "browseInstead": "Bekijk producten",
     "faqTitle": "LoloBuy: antwoorden voordat je bestelt.",
     "faqIntro": "Onderzocht aan de hand van officiële LoloBuy hulppagina’s. Als officiële pagina’s verschillen, legt het antwoord uit wat je moet controleren.",
@@ -124,8 +124,8 @@
     "jump": "Ga naar pagina",
     "go": "Ga",
     "articlesLabel": "Artikelen",
-    "articlesTitle": "Alles over kopen via LoloBuy.",
-    "articlesIntro": "Tien praktische gidsen op basis van officiële LoloBuy hulppagina’s. Vind producten, controleer QC, maak een budget en plan je verzending met heldere informatie.",
+    "articlesTitle": "LoloBuy-gidsen: bestellen, QC, verzending en betalen",
+    "articlesIntro": "Praktische LoloBuy-gidsen over productlinks, magazijncontroles, verzendkosten en betaalkeuzes. Kies de gids voor je volgende stap.",
     "articleSources": "Officiële bronnen",
     "reviewed": "Gecontroleerd op 20 oktober 2026",
     "readArticle": "Lees artikel",
@@ -149,7 +149,17 @@
     "nextFind": "DE VOLGENDE VONDST IS VOOR JOU.",
     "liveLabel": "Bijgewerkt vanuit de bron",
     "faqCount": "onderzochte antwoorden",
-    "catalogue": "Catalogus"
+    "catalogue": "Catalogus",
+    "homeTitle": "LoloBuy-spreadsheet en aankoopgidsen | LoloBuy Sheet",
+    "catalogTitle": "Ontdek LoloBuy-vondsten: kleding, sneakers en accessoires",
+    "catalogDescription": "Bekijk LoloBuy-vondsten per categorie, doorzoek de volledige catalogus en vergelijk artikelprijzen. Controleer de productgegevens voordat je de bijbehorende LoloBuy-aankooplink opent.",
+    "guidesTitle": "LoloBuy-aankoopgidsen: van productlink tot bezorging",
+    "guideMetaTitle": "Zo werkt LoloBuy: bestellen, QC en internationale verzending",
+    "shippingNav": "Verzending",
+    "reviewedLabel": "Bijgewerkt",
+    "nextStep": "Ga verder met de volgende stap",
+    "priorityTitle": "Voordat je bestelt of verzendt",
+    "priorityIntro": "Controleer het product, bekijk het bewijsmateriaal uit het magazijn en vergelijk de volledige pakketkosten."
   },
   "faqs": [
     {
@@ -450,7 +460,9 @@
         "qc"
       ],
       "readingMinutes": 3,
-      "wordCount": 554
+      "wordCount": 627,
+      "published": "2026-10-20",
+      "modified": "2026-10-29"
     },
     {
       "slug": "how-to-order-on-lolobuy",
@@ -507,6 +519,35 @@
             "Het officiële proces vraagt gebruikers opgeslagen artikelen te selecteren, bezorggegevens in te voeren en een beschikbare verzendoptie te kiezen. Bekijk bestemming, beperkingen, verpakking en vrachtvoorschot samen. Een gekocht artikel vormt niet automatisch een internationaal pakket dat klaarstaat voor vertrek.",
             "De uiteindelijke vrachtkosten kunnen na verpakking en logistieke meting afwijken. Controleer het pakketdossier op aanpassingen of bevestigingsverzoeken. Gebruik na verzending de pakketsectie voor tracking, bewaar de bestelnummers en controleer de inhoud snel na bezorging."
           ]
+        },
+        {
+          "heading": "Maak een herbruikbaar overzicht van je eerste bestelling",
+          "paragraphs": [
+            "Maak voordat je een eerste bestelling indient een beknopt overzicht met de verkoperslink, artikelnaam, exacte uitvoering, hoeveelheid, verwijzing naar de maattabel en openstaande vragen. Bewaar de oorspronkelijke benaming van de verkoper wanneer een vertaling dubbelzinnig kan zijn. Noteer bij een set welke onderdelen in de verpakking horen te zitten. Dit overzicht biedt een vergelijking bij het afrekenen en later in het magazijn, zonder op een onthouden miniatuurafbeelding te vertrouwen.",
+            "Een kledingbestelling kan bijvoorbeeld één marineblauwe sweater in verkopersmaat M specificeren, met een bepaalde plat gemeten borstbreedte uit de maattabel. Dat is duidelijker dan vragen om een middelgrote blauwe trui. Vraag vóór aankoop om verduidelijking als de tabel of kleurnaam onduidelijk is. Een nauwkeurige aanvraag verbetert de communicatie, maar bewijst niet dat de verkoper het artikel op voorraad heeft of dat het kledingstuk zal passen."
+          ]
+        },
+        {
+          "heading": "Onderscheid een productprobleem van een betaalprobleem",
+          "paragraphs": [
+            "Los een probleem met de aanbieding vóór betaling op als het geïmporteerde artikel onjuist is of een vereiste optie ontbreekt. Gebruik de oorspronkelijke bron om te bepalen of de verkoper het aanbod heeft gewijzigd of dat bij het importeren informatie ontbreekt. Een handmatige bestelling moet, wanneer die mogelijkheid wordt aangeboden, de werkelijke productgegevens behouden. Identificatienummers wijzigen of een ongeveer vergelijkbare optie selecteren neemt de onzekerheid niet weg en kan een latere afwijking moeilijker aantoonbaar maken.",
+            "Als het artikel klopt maar de betaalstatus onduidelijk is, vergelijk dan de rekening, het accountsaldo en de registratie van de betaaldienst. Bewaar het transactienummer en de zichtbare foutmelding voordat je het opnieuw probeert. Een ladende pagina bewijst op zichzelf niet dat de betaling is mislukt. Vraag ondersteuning om een onduidelijke afschrijving te verklaren in plaats van meerdere overlappende pogingen te doen. Behandel productidentiteit, betaalstatus en verzending door de verkoper als aparte controlepunten: een geslaagde stap bewijst niet dat de volgende ook is voltooid."
+          ]
+        },
+        {
+          "heading": "Plan je magazijnbeslissing vóór het indienen van het pakket",
+          "paragraphs": [
+            "Bepaal vóór aankomst welk bewijs je nodig hebt. Voor kleding waarbij de maat nauw luistert, kan een specifieke meting nodig zijn; bij een accessoireset een duidelijk beeld van alle onderdelen. Controleer de beschikbare inspectiedienst en de beperkingen daarvan. Vergelijk de foto's zodra ze beschikbaar zijn met je opgeslagen besteloverzicht en noteer ieder onduidelijk detail. Vraag om een specifieke opname of uitleg in plaats van een algemeen oordeel dat het artikel er goed uitziet.",
+            "Controleer de toepasselijke retourvoorwaarden tijdig terwijl de goederen nog in het magazijn liggen. De opslagduur en de retourtermijn van de verkoper zijn verschillende deadlines. Wachten om meerdere artikelen te combineren kan betekenen dat de geldende retourtermijn van een ongewenst artikel verstrijkt. Vraag bij een gewenste vervanging of retour naar de voorwaarden en verwachte kosten voor dat artikel voordat het in een internationaal pakket terechtkomt. Neem niet aan dat een pakket na iedere volgende verwerkingsstap nog kan worden tegengehouden."
+          ]
+        },
+        {
+          "heading": "Rond de bestelling af met een volledig kostenoverzicht",
+          "paragraphs": [
+            "Houd goederen en binnenlandse bezorging, gekozen diensten, internationale vracht en kosten op de bestemming in aparte velden bij. Tel elke kostenpost maar één keer en vermeld de valuta. Vervang schattingen tijdens het bestelproces door bevestigde rekeningen, maar bewaar eerdere bedragen voor vergelijking. Koppel een vrachtcorrectie na het inpakken aan het pakketnummer en de metingen. Dat overzicht verklaart de kosten tot aan bezorging duidelijker dan één totaal zonder datum.",
+            "Vergelijk na bezorging de ontvangen inhoud met de oorspronkelijke artikellijst en bewaar bewijs van de verpakking als er een probleem is. Gebruik de passende ondersteuning voor de bestelling of het pakket en beschrijf het probleem en de gegevens die het aan je aankoop koppelen. Bewaar aankoopdatum, aankomst in het magazijn, verzending en bezorging als afzonderlijke mijlpalen. Die waarnemingen kunnen je volgende bestelling helpen zonder te beloven dat een ander pakket dezelfde timing volgt.",
+            "Noteer voordat je het dossier afsluit welke stappen verduidelijking vroegen en welke aannames veranderden. Bewaar de bevestigde optietekst als een productlink handmatig moest worden ingevoerd. Bewaar bij een gewijzigde vrachtschatting de gemeten doos naast de oorspronkelijke schatting. Deze notities beschrijven alleen jouw bestelling. Controleer bij een volgende aankoop opnieuw de actuele aanbieding, betaalpagina en verzendvoorwaarden, ook wanneer het artikel identiek lijkt. Een eerdere geslaagde aankoop reserveert geen voorraad en behoudt niet dezelfde prijs, dienst of verkopersvoorwaarden."
+          ]
         }
       ],
       "checklist": [
@@ -523,8 +564,10 @@
         "qc",
         "freight-balance"
       ],
-      "readingMinutes": 3,
-      "wordCount": 520
+      "readingMinutes": 6,
+      "wordCount": 1257,
+      "published": "2026-10-20",
+      "modified": "2026-10-29"
     },
     {
       "slug": "lolobuy-qc-photos",
@@ -581,6 +624,35 @@
             "Verdeel bevindingen in bevestigd, onduidelijk en onaanvaardbaar. Vraag bewijs wanneer een detail onduidelijk is. Lijkt het artikel af te wijken van je bestelling, gebruik dan vóór internationale verzending de passende ondersteuning of retourprocedure. Bewaar een korte probleembeschrijving en de foto’s die het aantonen.",
             "Foto’s bewijzen niet iedere materiaaleigenschap, comfort, duurzaamheid of interne werking. Zichtbare staat goedkeuren is een beperktere beslissing. Lees de retourvoorwaarden terwijl het artikel nog in het magazijn ligt en beschouw succesvolle QC niet als belofte over douane of internationale bezorging."
           ]
+        },
+        {
+          "heading": "Maak van een kledingcontrole een duidelijke aanvraag",
+          "paragraphs": [
+            "Begin met de maten die de pasvorm bepalen, in plaats van het magazijn te vragen of een kledingstuk voor jou de juiste maat heeft. Bij een sweater kun je bijvoorbeeld plat gemeten borstbreedte, lichaamslengte en mouwlengte nodig hebben, gemeten vanaf dezelfde punten als in de maattabel van de verkoper. Vermeld de meetmethode en eenheid. Een maatlabel helpt de identiteit te controleren, maar vervangt de afmetingen van het kledingstuk niet.",
+            "Vergelijk een lichaamsomtrek uit de tabel niet rechtstreeks met een plat gemeten breedte op de foto. Controleer waar het meetlint begint en eindigt, of het kledingstuk plat ligt en of het getal leesbaar is. Licht en perspectief kunnen ook beïnvloeden hoe een kleur eruitziet. Vraag bij een belangrijke kleur om een duidelijker beeld, maar besef dat een foto op een scherm geen exacte kleurweergave in werkelijkheid garandeert."
+          ]
+        },
+        {
+          "heading": "Controleer schoenen en accessoires zonder te veel te concluderen",
+          "paragraphs": [
+            "Vergelijk bij schoenen beide exemplaren, zichtbare maatmarkeringen, de algemene vorm en de gebieden waarop je vraag betrekking heeft. Benoem expliciet welke meting of detailopname je nodig hebt. Controleer bij een tas handvatten, sluitingen en verwachte onderdelen voor zover zichtbaar. Maak bij een accessoire met meerdere onderdelen een lijst van wat erbij hoort en vergelijk die met de foto's, in plaats van aan te nemen dat een gesloten doos alles bevat.",
+            "Een zichtbaar naad- of oppervlaktedefect kun je vastleggen met een detailfoto en de locatie ervan. Verborgen constructie, draagcomfort, materiaalsamenstelling en duurzaamheid op lange termijn vragen doorgaans ander bewijs. Behandel een magazijnfoto niet als echtheidscertificaat of professionele functietest. Lees bij verzegelde producten of specialistische elektronica de uitgesloten inspecties voordat je beslist of de beschikbare dienst je werkelijke vraag beantwoordt."
+          ]
+        },
+        {
+          "heading": "Onderscheid onzekerheid van een bevestigd gebrek",
+          "paragraphs": [
+            "Gebruik drie eenvoudige statussen in je notities: overeenkomst bevestigd, meer bewijs nodig en afwijking vastgesteld. Een onleesbaar maatlabel hoort bijvoorbeeld bij de tweede status totdat er een duidelijkere foto is; een duidelijk afwijkend maatlabel bij de derde. Zo wordt een ontbrekende foto niet als bewezen gebrek beschreven en verbergt een aantrekkelijke overzichtsfoto geen onbeantwoorde vraag.",
+            "Noteer voor ieder onopgelost punt het bestelnummer, de relevante afbeelding, de precieze vraag en de volgende actie. Werk dat punt bij zodra er antwoord is in plaats van het hele overzicht te vervangen door een vage goedkeuring. Vraag bij een blijvende afwijking naar de toepasselijke oplossing terwijl het artikel nog in het magazijn ligt. Bewaar de toestemming van de verkoper, retourvoorwaarden en eventuele kosten samen. Een retour aanvragen is niet hetzelfde als goedkeuring krijgen."
+          ]
+        },
+        {
+          "heading": "Beslis vóór de volgende deadline",
+          "paragraphs": [
+            "Beoordeel het artikel zodra de magazijninformatie beschikbaar komt. Volgens de retourinformatie van LoloBuy hangen de mogelijkheden af van bestelling, verkoper en timing. Een algemene opslagtermijn verlengt de retourtermijn niet. Lees de deadline en staatseisen voor het artikel en bewaar de oorspronkelijke verpakking wanneer die nodig kan zijn. Stel een noodzakelijke vraag niet uit omdat andere artikelen voor een gepland pakket nog niet zijn aangekomen.",
+            "Leg bij goedkeuring voor verzending vast wat daadwerkelijk is gecontroleerd en wat onbekend blijft. Identiteit en zichtbare afmetingen kunnen bijvoorbeeld bevestigd zijn, terwijl comfort en duurzaamheid niet getest zijn. Koppel die beperkte conclusie aan het artikelnummer. Bekijk openstaande vragen opnieuw vóór pakketindiening, vooral als een andere verpakking labels of originele verpakking uit het bewijs zou verwijderen. Zo ontstaat een bruikbaar besluitspoor zonder te doen alsof QC ieder aankooprisico wegneemt.",
+            "Bewaar de oorspronkelijke afbeeldingen samen met een korte beslisnotitie in plaats van alleen een uitgesneden detail. Het bredere beeld koppelt het aandachtspunt aan het juiste artikel en het bestelnummer koppelt de foto aan je aankoop. Bewaar beide beelden als een latere foto de vraag oplost en vermeld wat veranderde. Deel geen persoonlijke bestelgegevens openbaar. Een bruikbaar dossier bevat een specifieke waarneming met een herleidbare bron, geen ongefundeerde beoordeling of claim dat elk product van de verkoper is gecontroleerd."
+          ]
         }
       ],
       "checklist": [
@@ -594,15 +666,18 @@
         "qc",
         "photos",
         "service",
-        "sizing"
+        "sizing",
+        "returns"
       ],
-      "readingMinutes": 3,
-      "wordCount": 504
+      "readingMinutes": 6,
+      "wordCount": 1256,
+      "published": "2026-10-20",
+      "modified": "2026-10-29"
     },
     {
       "slug": "lolobuy-shipping-costs",
-      "title": "LoloBuy verzendkosten: vergelijk het volledige pakket",
-      "description": "Begrijp geschat, werkelijk en volumegewicht en vergelijk beschikbare routes met dezelfde bestemming, inhoud en verpakkingskeuzes.",
+      "title": "LoloBuy-verzendkosten: calculator, gewicht en toeslagen",
+      "description": "Gebruik de LoloBuy-verzendcalculator, vergelijk werkelijk en volumetrisch gewicht en controleer verpakkingskeuzes, vrachtcorrecties en het volledige pakketbudget.",
       "keyword": "lolobuy verzendcalculator",
       "category": "Verzending",
       "summary": "Een nuttige vrachtvergelijking begint met één duidelijk omschreven pakket. Deze gids legt invoer en controles uit; hij geeft geen actuele verzendofferte.",
@@ -655,6 +730,35 @@
             "Volgens LoloBuy wordt geschatte vracht verrekend met de werkelijke rekening van de logistieke dienstverlener. Dat kan een terugbetaling of verzoek om bijbetaling betekenen. Lees pakketberichten en reageer op verzoeken die bij jouw zending horen.",
             "Bewaar de eerste schatting, definitieve factureerbare maten, gekozen diensten en correctie samen. Dat maakt een verschil begrijpelijker. Begroot mogelijke kosten op bestemming apart en controleer het definitieve pakkettotaal voordat je de bestelling als afgerond beschouwt."
           ]
+        },
+        {
+          "heading": "Gebruik de officiële calculator met een opgeslagen uitgangspunt",
+          "paragraphs": [
+            "Open de actuele verzendcalculator van LoloBuy en kies de werkelijke bestemming. Voer de gevraagde inhoud, het gewicht en de afmetingen in met de weergegeven eenheden. Bewaar datum, invoerwaarden, gekozen dienst en valuta bij het resultaat. Geef aan dat metingen schattingen zijn wanneer de goederen nog niet in het magazijn liggen. Dat onderscheid is belangrijk: het geschatte artikelgewicht van de verkoper beschrijft geen ingepakte doos met buitenverpakking.",
+            "Leg één uitgangssituatie vast voordat je een verpakkingsoptie wijzigt of een artikel verwijdert. Verander per alternatief één variabele en houd de andere waar mogelijk gelijk. Verdwijnt een route wanneer de goederencategorie verandert, dan hoort die beperking bij de uitkomst. Een onjuiste categorie kiezen voor een goedkoper tarief maakt de route niet geschikt. Vergelijk uitsluitend diensten die worden aangeboden voor de werkelijke goederen en bestemming, en laat onbeantwoorde toelatingsvragen zichtbaar staan."
+          ]
+        },
+        {
+          "heading": "Vergelijk alle pakketten samen",
+          "paragraphs": [
+            "Gebruik één rij voor elk volledig verzendscenario. Noteer inhoud, aantal pakketten, werkelijk gewicht, afmetingen, verpakkingsdiensten, route en totale vracht. Tel bij twee pakketten beide volledige offertes op voordat je ze met één gecombineerde zending vergelijkt. Afzonderlijke minimumtarieven kunnen het resultaat beïnvloeden. Een lager bedrag voor alleen het eerste pakket bewijst niet dat splitsing van de gehele bestelling goedkoper is.",
+            "Een goede vergelijking vermeldt ook verschillen in bescherming en diensten. In het ene scenario blijft een schoenendoos behouden en in het andere wordt die verwijderd; het ene kan versteviging bevatten die het andere mist. Noteer die verschillen zodat achter een bedrag geen andere uitkomst schuilgaat. Behandel de vergelijking als planningsinformatie wanneer definitieve metingen ontbreken en herhaal haar zodra de verpakkingsgegevens zijn bevestigd. Maak van een geschatte besparing geen gegarandeerde eindfactuur."
+          ]
+        },
+        {
+          "heading": "Controleer een gewijzigde schatting post voor post",
+          "paragraphs": [
+            "Vergelijk eerst bestemming, geselecteerde artikelen, werkelijk gewicht en doosafmetingen als de definitieve vracht afwijkt van je opgeslagen schatting. Controleer daarna route, rekeneenheid, optionele diensten en valuta. Een zwaardere buitenverpakking, volumineus artikel of andere dienst kan een wijziging verklaren, ook wanneer de productlijst vergelijkbaar lijkt. Vraag naar de specifieke meting of kostenpost die veranderde, in plaats van elk verschil aan dezelfde toeslag toe te schrijven.",
+            "Koppel het eerste voorschot en latere correcties aan hetzelfde pakketnummer. Een accounttegoed voor te veel betaalde vracht en een terugbetaling via een externe betaalmethode zijn verschillende registraties. Controleer waar het bedrag is bijgeschreven of welke bijbetaling nog nodig is. Bewaar bij een onvolledige uitleg beide offertes en stel een pakketspecifieke vraag. Dat helpt meer dan je totaal vergelijken met een ongerelateerd pakket naar een andere bestemming of op een andere datum."
+          ]
+        },
+        {
+          "heading": "Houd vracht apart van het budget tot aan bezorging",
+          "paragraphs": [
+            "Internationale vracht omvat mogelijk niet iedere betaling die hoort bij het ontvangen van de goederen. Controleer de oorspronkelijke aankoop, binnenlandse bezorging, optioneel magazijnwerk, betaaltoeslagen en bestemmingskosten afzonderlijk. Markeer inbegrepen diensten duidelijk om dubbeltelling te voorkomen. Een leeg bedrag moet een open vraag blijven en niet stilzwijgend nul worden in de schatting van de totale kosten.",
+            "Controleer vóór betaling de actuele informatie voor de bestemming en wat volgens de gekozen dienst is inbegrepen. Leid douanebehandeling of kopersbescherming niet af uit een routenaam. Vermeld bij een later gepubliceerd verzendvoorbeeld datum, inhoud, bestemming, gemeten doos en reikwijdte van het bedrag, zonder persoonlijke gegevens. Een goed gedocumenteerd historisch geval helpt lezers de vergelijking te herhalen; een los bedrag bewijst niet het tarief voor hun eigen pakket.",
+            "Een vergelijkingsblad kan eenvoudig blijven: één regel per scenario met offertedatum, bestemming, goederen, gewichtsbron, afmetingen, route, bedrag en openstaande vragen. Voeg een kolom toe voor het bevestigde resultaat wanneer het pakket wordt verzonden. Bewaar bij vervanging van de oorspronkelijke schatting de invoerwaarden, anders verdwijnt de verklaring voor het verschil. Haal ontbrekende invoer uit het actuele pakketdossier of vraag ondersteuning voordat je een definitieve vergelijking maakt. Gebruik deze methode voor ieder nieuw pakket in plaats van één historische prijs op alle toekomstige aankopen toe te passen."
+          ]
         }
       ],
       "checklist": [
@@ -668,10 +772,13 @@
         "buying",
         "weight",
         "packaging",
-        "freight-balance"
+        "freight-balance",
+        "estimate"
       ],
-      "readingMinutes": 3,
-      "wordCount": 471
+      "readingMinutes": 6,
+      "wordCount": 1225,
+      "published": "2026-10-20",
+      "modified": "2026-10-29"
     },
     {
       "slug": "lolobuy-warehouse-consolidation",
@@ -746,7 +853,9 @@
         "freight-balance"
       ],
       "readingMinutes": 3,
-      "wordCount": 472
+      "wordCount": 586,
+      "published": "2026-10-20",
+      "modified": "2026-10-29"
     },
     {
       "slug": "lolobuy-sizing-guide",
@@ -819,7 +928,9 @@
         "returns"
       ],
       "readingMinutes": 3,
-      "wordCount": 498
+      "wordCount": 619,
+      "published": "2026-10-20",
+      "modified": "2026-10-29"
     },
     {
       "slug": "lolobuy-tracking-guide",
@@ -893,7 +1004,9 @@
         "freight-balance"
       ],
       "readingMinutes": 3,
-      "wordCount": 470
+      "wordCount": 601,
+      "published": "2026-10-20",
+      "modified": "2026-10-29"
     },
     {
       "slug": "lolobuy-returns-refunds",
@@ -968,7 +1081,9 @@
         "changes"
       ],
       "readingMinutes": 3,
-      "wordCount": 458
+      "wordCount": 602,
+      "published": "2026-10-20",
+      "modified": "2026-10-29"
     },
     {
       "slug": "lolobuy-order-budget",
@@ -1050,8 +1165,10 @@
         "freight-balance",
         "wholesale"
       ],
-      "readingMinutes": 3,
-      "wordCount": 549
+      "readingMinutes": 4,
+      "wordCount": 662,
+      "published": "2026-10-20",
+      "modified": "2026-10-29"
     },
     {
       "slug": "lolobuy-seller-and-review-checks",
@@ -1125,7 +1242,280 @@
         "returns"
       ],
       "readingMinutes": 3,
-      "wordCount": 480
+      "wordCount": 604,
+      "published": "2026-10-20",
+      "modified": "2026-10-29"
+    },
+    {
+      "slug": "lolobuy-shipping-netherlands",
+      "title": "LoloBuy-verzending naar Nederland: kosten, timing en pakketcontroles",
+      "description": "Plan een LoloBuy-pakket voor Nederland: vergelijk calculatorinvoer, verpakking, bezorgfasen en de gegevens die nodig zijn om invoerkosten te controleren.",
+      "keyword": "LoloBuy verzending Nederland",
+      "category": "Bezorging in Nederland",
+      "summary": "Gebruik Nederland als werkelijke bestemming wanneer je vracht vergelijkt. Bewaar een offerte met datum, onderscheid de bezorgfasen en raadpleeg vóór betaling de actuele informatie van de Nederlandse Douane.",
+      "sections": [
+        {
+          "heading": "Begin met een pakketoverzicht voor Nederland",
+          "paragraphs": [
+            "Een bruikbare vergelijking van LoloBuy-verzending begint bij het pakket dat je wilt ontvangen, niet bij een bedrag dat iemand anders betaalde. Noteer bestemmingsland, postcode, artikellijst, hoeveelheden en verpakking die bij de goederen moet blijven. Een route voor een klein kledingpakket accepteert mogelijk geen andere productmix. Alleen het land bepaalt niet of jouw pakket wordt toegelaten.",
+            "Maak twee lijsten: bevestigde feiten en informatie die nog geschat is. Verkopersafmetingen, artikelgewicht in het magazijn en de afmetingen van een ingepakte doos zijn verschillende gegevens. Noteer hun bronnen zodat duidelijk is wat je na aankomst moet bijwerken. Geef vóór de vergelijking aan wanneer een geschenkdoos intact moet blijven, als een goedkopere verpakkingsoptie verwijdering veronderstelt. Die keuze kan bescherming én volume beïnvloeden."
+          ]
+        },
+        {
+          "heading": "Lees de prijs in afzonderlijke stappen",
+          "paragraphs": [
+            "De officiële koopgids van LoloBuy scheidt de eerste artikelbetaling en Chinese binnenlandse bezorging van de latere indiening van een internationaal pakket. Houd die stappen in het budget voor een Nederlandse bestelling apart. De catalogusprijs is een uitgangspunt voor het artikel, geen offerte voor bezorging aan huis. Voeg alleen kosten toe die het actuele bestel- of pakketdossier werkelijk bevestigt.",
+            "Houd een eenvoudig overzicht bij met kolommen voor artikel, binnenlandse bezorging, optionele magazijndiensten, internationale vracht, betaalkosten en bestemmingskosten. Vermeld naast ieder bedrag de valuta. Markeer kosten die al in een offerte zitten als inbegrepen in plaats van ze opnieuw op te tellen. Laat onbeantwoorde velden open. Een totaal met een expliciet ontbrekend onderdeel is nuttiger dan een schijnbaar nauwkeurig totaal dat iedere onbekende kostenpost als nul behandelt."
+          ]
+        },
+        {
+          "heading": "Maak de calculatorvergelijking herhaalbaar",
+          "paragraphs": [
+            "Open de officiële verzendcalculator van LoloBuy en kies Nederland als bestemming. Vul gevraagd gewicht, afmetingen en goederencategorie in met de eenheden uit het actuele formulier. Controleer grammen tegenover kilogrammen voordat je uitkomsten vergelijkt. Een gewicht in de verkeerde eenheid beschrijft een ander pakket, ook als het scherm aannemelijk lijkt. Bewaar de invoer samen met de getoonde opties.",
+            "Noteer voor iedere toegelaten route offertedatum, valuta, bedrag, geschatte vervoersduur, trackinginformatie en vermelde beperkingen. Houd inhoud en metingen gelijk bij de routevergelijking. Vermeld het expliciet als een route een andere verpakking vereist. Maak van een oude schermafbeelding geen actuele prijslijst. Een bruikbare vergelijking kan opnieuw worden uitgevoerd met gemeten magazijngegevens zodra die beschikbaar zijn."
+          ]
+        },
+        {
+          "heading": "Begrijp wat een lichtere of kleinere doos verandert",
+          "paragraphs": [
+            "Werkelijk gewicht meet massa; volumetrisch gewicht vertegenwoordigt de ruimte die een pakket inneemt volgens de tariefregel van een route. De gewichtsinformatie van LoloBuy beschrijft routeafhankelijke formules. Lees de actuele voorwaarden in plaats van één deler voor alle diensten te gebruiken. Controleer ook afronding, minimumkosten en de stapgrootte voor extra gewicht. Een kleine daling van het fysieke gewicht kan het pakket in dezelfde prijsklasse laten vallen.",
+            "Neem als rekenvoorbeeld een doos van 40 bij 30 bij 20 centimeter. Het volume is 24.000 kubieke centimeter. Met een hypothetische deler van 6.000 zou het volumegewicht 4 kilogram zijn. Als één zijde naar 15 centimeter daalt, wordt dat volgens dezelfde aangenomen regel 3 kilogram. Deze berekening verduidelijkt een verpakkingsvergelijking; zij bewijst geen beschikbare LoloBuy-route, vrachtprijs of gegarandeerde besparing."
+          ]
+        },
+        {
+          "heading": "Vergelijk samenvoegen met afzonderlijke pakketten",
+          "paragraphs": [
+            "Wanneer meerdere artikelen in opslag liggen, vergelijk dan één gecombineerd pakket met het totaal van alle voorgestelde afzonderlijke pakketten. Gebruik dezelfde bestemming en neem de verpakkingsdiensten van iedere optie mee. Een lager bedrag naast één gesplitst pakket is niet de totale verzendprijs voor het hele winkelmandje. Ieder pakket kan eigen minimumkosten en afzonderlijke verwerking op de bestemming hebben.",
+            "Bescherming en beperkingen kunnen zwaarder wegen dan de laagste eerste vrachtprijs. Een kwetsbaar artikel kan scheiding of versteviging nodig hebben, terwijl een grote doos het volume van een verder compact pakket kan bepalen. Vraag naar de specifieke opstelling die je wilt laten beoordelen. Behoud noodzakelijke bescherming en controleer of de dienst de werkelijke inhoud accepteert. Samenvoegen is een afweging, geen automatische belofte van lagere kosten."
+          ]
+        },
+        {
+          "heading": "Lees levertijd als een reeks fasen",
+          "paragraphs": [
+            "Maak onderscheid tussen verzending door de verkoper, bezorging bij het Chinese magazijn, inspectie, pakketvoorbereiding, internationaal vervoer, verwerking op de bestemming en uiteindelijke bezorging. Een geschatte vervoersduur kan slechts een deel van die reeks beslaan. Noteer bij welke mijlpaal een schatting begint voordat je die met de totale wachttijd van een andere koper vergelijkt. Bestelbevestiging en aanname door de vervoerder zijn verschillende startmomenten.",
+            "Volg na verzending het pakketnummer in het account en de daarbij horende vervoerdersinformatie. Een aangemaakt trackingnummer bewijst op zichzelf niet dat de vervoerder het pakket fysiek heeft ontvangen. Vraag bij onduidelijke voortgang welke mijlpaal is afgerond en bij welke partij het pakket ligt. Houd bij tijdgevoelige aankopen ruimte voor vertraging in plaats van een geschat bezorgvenster als gegarandeerde datum te behandelen."
+          ]
+        },
+        {
+          "heading": "Controleer actuele Nederlandse invoerinformatie",
+          "paragraphs": [
+            "Raadpleeg vóór betaling de actuele informatie van de Nederlandse Douane over online aankopen van buiten de Europese Unie. Daarin worden btw, invoerrechten en afhandelingskosten van de vervoerder onderscheiden. De regels voor zendingen met een lage waarde veranderden in juli 2026. Gebruik daarom een oudere gids die zulke aankopen automatisch vrijstelt van invoerrechten niet als actuele berekening. Controleer de regels voor de werkelijke goederen en invoerdatum.",
+            "Bewaar artikelomschrijvingen, aankoopbedragen, valuta en al geïnde belastingen of rechten samen. Vraag vervoerder of verkoper hoe inbegrepen kosten worden gedocumenteerd en wat nog betaald moet worden. Een bijnaam van een verzendroute bepaalt de fiscale behandeling van je pakket niet. Deze gids berekent geen universele Nederlandse douanerekening: productindeling, transactie en toepasselijke procedure zijn van belang. Geef correcte omschrijvingen en waarden op wanneer daarom wordt gevraagd."
+          ]
+        },
+        {
+          "heading": "Controleer de definitieve vracht en bewaar bewijs",
+          "paragraphs": [
+            "Volgens de officiële vrachtinformatie van LoloBuy wordt eerst een schatting geïnd en later met de logistieke kosten verrekend. Vergelijk correcties met het definitieve ingepakte gewicht, de afmetingen, route en gekozen diensten. Zoek bij een gewijzigd bedrag eerst de veranderde invoer op voordat je aanneemt dat de schatting een vaste toezegging was. Bewaar de eerste offerte en definitieve pakketrekening samen.",
+            "Vergelijk bij bezorging de inhoud met de opgeslagen artikellijst en bekijk de verpakking voordat je die weggooit. Bewaar foto's als iets lijkt te ontbreken of beschadigd is en gebruik daarna de bij het probleem horende ondersteuning voor bestelling of pakket. Retouren aan de verkoper, internationale pakketclaims en vervoerderskosten horen bij verschillende dossiers. Goede documentatie verduidelijkt je verzoek zonder een specifieke terugbetaling of oplossing te beloven."
+          ]
+        },
+        {
+          "heading": "Maak een bruikbaar dossier voor de volgende bestelling",
+          "paragraphs": [
+            "Bewaar na afronding wat eerlijk vergelijkbaar is: datum, bestemming, werkelijke goederen, gemeten doos, gekozen dienst, definitieve vracht en waargenomen bezorgmijlpalen. Verwijder persoonlijke adresgegevens voordat je een voorbeeld deelt. Een historische zending helpt een andere koper het proces begrijpen, maar moet één geval met datum blijven en geen algemene prijs- of bezorgbelofte worden.",
+            "Gebruik het dossier om de volgende schatting te verbeteren. Noteer of volume of gewicht de kosten bepaalde, of een optionele dienst de doos veranderde en welke budgetpost eerst over het hoofd werd gezien. Controleer voordat je bedragen hergebruikt of bestemming, inhoud en actuele routevoorwaarden nog overeenkomen. Een herhaalbare methode is nuttiger dan het goedkoopst lijkende bedrag van een ander pakket verzamelen."
+          ]
+        }
+      ],
+      "checklist": [
+        "Selecteer Nederland en de juiste postcode in de actuele offerte.",
+        "Bewaar dezelfde gewichts-, volume- en inhoudsgegevens bij routevergelijkingen.",
+        "Scheid magazijntijd, internationaal vervoer en uiteindelijke bezorging.",
+        "Controleer actuele Nederlandse invoerinformatie en reeds geïnde bedragen.",
+        "Bewaar eerste en definitieve pakketrekeningen samen."
+      ],
+      "sourceIds": [
+        "buying",
+        "weight",
+        "packaging",
+        "freight-balance",
+        "estimate"
+      ],
+      "readingMinutes": 6,
+      "wordCount": 1222,
+      "published": "2026-10-29",
+      "modified": "2026-10-29"
+    },
+    {
+      "slug": "lolobuy-payment-methods-fees",
+      "title": "LoloBuy-betaalmethoden en kosten: afrekenen, valuta en saldo",
+      "description": "Controleer LoloBuy-betaalmethoden bij het afrekenen, vergelijk de volledige afschrijving en onderscheid accounttegoed van terugbetalingen via de oorspronkelijke betaalmethode.",
+      "keyword": "LoloBuy betaalmethoden",
+      "category": "Betalingen en kosten",
+      "summary": "Koppel elke betaling aan een artikelbestelling of pakketrekening. Vergelijk het actuele totaal en de valuta, bewaar het transactienummer en controleer waar een terugbetaling wordt bijgeschreven.",
+      "sections": [
+        {
+          "heading": "Begin bij de rekening die je wilt betalen",
+          "paragraphs": [
+            "Bepaal vóór het kiezen van een betaalmethode waarop de rekening betrekking heeft. Dat kan een productbestelling, binnenlandse bezorging, internationale vracht, correctie of saldo-opwaardering zijn. Het officiële aankoopproces van LoloBuy scheidt de goederenbetaling van de latere pakketbetaling. Een geslaagde eerste transactie bewijst niet dat alle latere stappen van de aankoop al betaald zijn.",
+            "Houd bestel- of pakketnummer, bedrag en valuta bij het betaalscherm. Gebruik bij meerdere rekeningen met vergelijkbare totalen de referenties om ze te onderscheiden, niet alleen het bedrag. Controleer of de gekozen artikelen en hoeveelheden kloppen voordat je betaalmethoden vergelijkt. Een bestelling met het verkeerde artikel na betaling oplossen is iets anders dan een handige betaalwijze kiezen voor de juiste bestelling."
+          ]
+        },
+        {
+          "heading": "Controleer methoden in de actuele betaalomgeving",
+          "paragraphs": [
+            "De openbare koopgids van LoloBuy noemt diverse betaalcategorieën, waaronder kaarten, Chinese betaaldiensten en bankoverschrijvingen. Een algemene lijst is achtergrondinformatie, geen bewijs dat iedere methode nu beschikbaar is voor elk account, land, iedere valuta of rekening. Lees welke methoden werkelijk voor jouw transactie worden aangeboden en welke toelatings- of verificatiegegevens erbij staan.",
+            "Leid actuele kosten of verwerkingstijd niet af uit een logo in een oude handleiding. Bewaar bij een niet-beschikbare methode de zichtbare melding en raadpleeg officiële ondersteuning, in plaats van aan te nemen dat een ander land selecteren passend is. Gebruik je werkelijke factuurgegevens. Noteer een gevraagde valutakeuze voordat je een andere methode vergelijkt, zodat beide totalen op gelijkwaardige aankopen betrekking hebben."
+          ]
+        },
+        {
+          "heading": "Scheid de kostenlagen",
+          "paragraphs": [
+            "Een volledige vergelijking onderscheidt de oorspronkelijke rekening, een betaaltoeslag van het platform, valutawissel en eventuele kosten van de externe betaaldienst. Sommige kunnen in het getoonde totaal zijn opgenomen, terwijl bank of betaaldienst andere afzonderlijk toont. Noteer wat bekend is en wat nog gecontroleerd moet worden. Tel een toeslag niet dubbel omdat hij zowel in de uitsplitsing als in het eindtotaal voorkomt.",
+            "Bepaal bij een procentuele toeslag over welk bedrag dat percentage wordt berekend. Noteer bij een vast bedrag de valuta en of het per transactie geldt. Een vaste toeslag kan een kleine aankoop anders beïnvloeden dan een grote. Deze gids publiceert geen permanente tarieventabel: het bruikbare getal is het volledige bedrag dat je voor de actuele rekening onder de huidige voorwaarden zou goedkeuren."
+          ]
+        },
+        {
+          "heading": "Vergelijk dezelfde rekening in één valuta",
+          "paragraphs": [
+            "Stel dat twee betaalschermen bij dezelfde voorbeeldrekening voor goederen horen. Het ene toont een totale afschrijving van 102 eenheden van je betaalvaluta en het andere 104. Als het lagere bedrag extra kosten van de betaaldienst uitsluit, is de vergelijking onvolledig. Noteer per optie het bevestigde totaal en benoem openstaande kosten, in plaats van het opvallendste bedrag als eindprijs te presenteren.",
+            "Als het account in de ene valuta wordt gecrediteerd en je bank in een andere afschrijft, bewaar dan beide bedragen. Het bijgeschreven bedrag delen door de werkelijke afschrijving geeft een effectieve omrekenverhouding voor die specifieke transactie. Dat is niet de universele wisselkoers van het platform. Vergelijk alternatieven voor dezelfde rekening op hetzelfde moment en onderscheid een aangeboden koers van het definitief geboekte bedrag."
+          ]
+        },
+        {
+          "heading": "Houd saldo toevoegen en een bestelling betalen apart",
+          "paragraphs": [
+            "Geld toevoegen aan een platformaccount creëert een saldoboeking. Een bestelling betalen gebruikt saldo of een andere betaalmethode om een specifieke rekening te voldoen. Die gebeurtenissen kunnen kort na elkaar plaatsvinden, maar beantwoorden verschillende vragen. Controleer na opwaarderen de bijschrijving en na betalen de bijbehorende bestel- of pakketstatus. Een hoger saldo alleen bewijst niet dat de bedoelde bestelling is betaald.",
+            "Een compact overzicht kan één rij voor de externe betaling, één voor de saldobijschrijving en één voor de bestelafschrijving bevatten, verbonden met referenties. Dat is vooral handig wanneer je meerdere bestellingen financiert. Behandel het resterende saldo niet als korting op de volgende aankoop: de eerdere kosten om dat geld toe te voegen horen nog steeds in je totale administratie. Noteer ongebruikt geld apart van afgeronde aankoopkosten."
+          ]
+        },
+        {
+          "heading": "Ga zorgvuldig om met een lopende of mislukte betaling",
+          "paragraphs": [
+            "Vergelijk rekeningstatus, accountgeschiedenis en de gegevens van de betaaldienst voordat je een betaling herhaalt als het betaalscherm vastloopt of een fout toont. Een lopende bankautorisatie en een bevestigde platformbetaling zijn verschillende statussen. Bewaar tijdstip, transactienummer en exacte melding. Daarmee kan ondersteuning een specifieke poging onderzoeken in plaats van te gokken op basis van een schermafbeelding van het huidige saldo.",
+            "Neem contact op met de passende ondersteuning als de betaaldienst een afschrijving toont maar de rekening onbetaald blijft, en lever de gekoppelde gegevens aan. Neem niet aan dat iedere lopende transactie binnen dezelfde termijn wordt geboekt of teruggedraaid. Vraag welke status is bevestigd en welke actie nodig is. Scherm bij het delen van bewijs volledige kaartgegevens en ongerelateerde accountactiviteiten af. Bewaar de transactiereferenties waarmee de zaak kan worden gekoppeld."
+          ]
+        },
+        {
+          "heading": "Begrijp waar een terugbetaling terechtkomt",
+          "paragraphs": [
+            "De retourinformatie van LoloBuy beschrijft doorgaans dat goedgekeurde terugbetalingen op het LoloBuy-accountsaldo worden bijgeschreven. Er wordt ook een beperkte uitzondering beschreven voor bepaalde PayPal-bestellingen die op goedkeuring wachten. Maak van die uitzondering geen belofte dat iedere terugbetaling automatisch naar de oorspronkelijke betaalmethode gaat. Controleer de regel voor de werkelijke bestelfase en betaalregistratie.",
+            "Onderscheid toestemming van de verkoper voor een retour, ontvangst van geld door het platform, bijschrijving op het account en ontvangst op je externe rekening. Iedere stap heeft eigen bewijs nodig. Een saldobijschrijving kan een deel afronden zonder te bewijzen dat geld is opgenomen. Controleer vóór je op opname rekent de actuele voorwaarden, beschikbare handeling en toepasselijke regels voor dat saldo. Ga er niet van uit dat ongebruikt saldo in iedere situatie hetzelfde wordt behandeld."
+          ]
+        },
+        {
+          "heading": "Beoordeel vrachtcorrecties afzonderlijk",
+          "paragraphs": [
+            "Internationale vracht begint in het officiële koopproces als een aparte schatting. Latere verpakkings- of logistieke metingen kunnen tot een extra bedrag of een tegoed voor te veel betaalde vracht leiden. Koppel elke correctie aan het pakketnummer en de definitieve metingen. Een extra vrachtsom is niet automatisch een betaalmethodetoeslag, en vrachttegoed is niet noodzakelijk een terugdraaiing van de oorspronkelijke aankoop.",
+            "Bewaar de eerste vrachtsom, gewijzigde metingen, het eindbedrag en eventuele bijschrijving of bijbetaling. Vraag bij een onduidelijke kostenpost welk deel van de pakketberekening veranderde. Houd deze verrekening apart van bestemmingsbelastingen of afhandelingskosten van de vervoerder, die een ander proces kunnen volgen. Gescheiden categorieën maken het totaal controleerbaar en voorkomen betaling van een onbekend verzoek zonder het verband met het pakket te begrijpen."
+          ]
+        },
+        {
+          "heading": "Bewaar betaalgegevens die bruikbaar blijven",
+          "paragraphs": [
+            "Een bruikbaar betaaloverzicht bevat datum, onderwerp van de rekening, bestel- of pakketnummer, basisbedrag, getoonde toeslag, afrekenvaluta, eindbedrag en transactiereferentie van de betaaldienst. Voeg na betaling de resulterende platformstatus en saldobeweging toe. Koppel bij een terugbetaling de oorspronkelijke bestelling en bestemming van het tegoed. Deze velden verbinden wat je wilde betalen met wat werkelijk gebeurde.",
+            "Herhaal vóór de volgende betaling de vergelijking in de actuele betaalomgeving. Beschikbaarheid, omrekening en kosten kunnen veranderen, dus een eerdere geslaagde transactie is een referentie en geen permanente tarieflijst. Kies uit methoden die werkelijk bij je rekening worden aangeboden, vergelijk de volledige afschrijving en bewaar het bewijs. Los een onduidelijke toeslag of terugbetalingsvoorwaarde via officiële ondersteuning op voordat je de betaling vastlegt."
+          ]
+        }
+      ],
+      "checklist": [
+        "Koppel de betaling aan de exacte bestel- of pakketrekening.",
+        "Vergelijk actuele kosten en de volledige afschrijving in dezelfde valuta.",
+        "Controleer of een saldobijschrijving ook de bedoelde rekening heeft voldaan.",
+        "Verduidelijk een onzekere betaalstatus voordat je opnieuw betaalt.",
+        "Controleer of een terugbetaling het accountsaldo of de oorspronkelijke betaalmethode bereikte."
+      ],
+      "sourceIds": [
+        "buying",
+        "refunds",
+        "cancellation",
+        "freight-balance"
+      ],
+      "readingMinutes": 6,
+      "wordCount": 1226,
+      "published": "2026-10-29",
+      "modified": "2026-10-29"
+    },
+    {
+      "slug": "lolobuy-link-not-working",
+      "title": "LoloBuy-link werkt niet: controles voor Taobao, Weidian en 1688",
+      "description": "Los een probleem met een LoloBuy-productlink op door verkopersbeschikbaarheid, linkformaat en import te onderscheiden, en controleer het exacte artikel vóór een handmatige bestelling.",
+      "keyword": "LoloBuy link werkt niet",
+      "category": "Productlinks",
+      "summary": "Bewaar de oorspronkelijke productlink en bepaal waar het misgaat. Vind hetzelfde artikel en dezelfde uitvoering terug en controleer de geïmporteerde bestelling, in plaats van ID's te veranderen of ontbrekende gegevens te raden.",
+      "sections": [
+        {
+          "heading": "Bepaal waar de link niet werkt",
+          "paragraphs": [
+            "Een productlink kan vóór of na het bereiken van LoloBuy misgaan. De oorspronkelijke verkopersaanbieding kan verdwenen zijn, een verkorte link kan niet doorverwijzen of het importformulier kan gegevens van een verder werkende pagina niet ophalen. Noteer wat werkelijk gebeurt: een fout, een lege voorvertoning, een aanmeldverzoek of een ander product. Die waarnemingen leiden tot verschillende controles.",
+            "Bewaar de oorspronkelijke URL voordat je iets wijzigt. Noteer marktplaats, zichtbaar artikelnummer indien beschikbaar, gewenste optie en controledatum. Een schermafbeelding van het verwachte artikel kan helpen, maar moet verbonden blijven met de verkoperslink. Het doel is voldoende gegevens voor de bedoelde aankoop terug te vinden, niet zomaar een willekeurige productpagina in de browser te laten verschijnen."
+          ]
+        },
+        {
+          "heading": "Controleer eerst de oorspronkelijke verkopersaanbieding",
+          "paragraphs": [
+            "Open de oorspronkelijke marktplaatsaanbieding via de normale openbare toegang of, waar nodig, je aangemelde account. Is het artikel verwijderd of de gewenste optie niet beschikbaar, dan brengt een anders opgemaakte URL de voorraad niet terug. Bewaar verkopersnaam, artikelnaam en relevante maten zodat je een andere aanbieding als nieuwe kandidaat kunt beoordelen. Vergelijkbare foto's bewijzen geen gelijkwaardigheid.",
+            "Als de oorspronkelijke aanbieding werkt en de bedoelde optie toont, kan het probleem de gedeelde link of de import betreffen. Kopieer de actuele deel- of adreslink van de aanbieding zelf en vergelijk die met de opgeslagen versie. Laat geldige doorverwijzingen afronden in plaats van de bestemming blind te wijzigen. Controleer een pagina die accounttoegang vereist via de normale marktplaatsprocedure; deze gids omzeilt geen toegangscontroles."
+          ]
+        },
+        {
+          "heading": "Houd bron-ID's en catalogus-ID's apart",
+          "paragraphs": [
+            "Een productontdekkingssite kan een eigen registratienummer aan een artikel geven. Dat is niet noodzakelijk het artikelnummer op Taobao, Weidian of 1688. Op deze website gebruikt de productpagina het catalogusnummer om de bronaanbieding en bijbehorende aankooplink op te halen. Een marktplaats-ID vervangen door het nummer uit een lokale catalogus-URL kan naar een ongerelateerd artikel of helemaal niets verwijzen.",
+            "Gebruik waar beschikbaar de bijbehorende aankoopknop en vergelijk de geopende pagina met de bron. Bewaar bij een verkeerde bestemming beide URL's en meld de afwijking. Verhoog of verwissel geen numerieke ID's totdat er iets laadt. Afbeelding, titel, verkoper en opties moeten samen overeenkomen met de bedoelde aanbieding. Eén passend detail is onvoldoende om de volledige productidentiteit te reconstrueren."
+          ]
+        },
+        {
+          "heading": "Herstel Taobao-links met behoud van de optie",
+          "paragraphs": [
+            "Een Taobao-deelbericht kan behalve een link ook beschrijvende tekst bevatten. Kopieer de werkelijke aanbiedingslink in plaats van het hele bericht als adres te behandelen. Controleer na een doorverwijzing het resulterende artikel voordat je de bestemming in LoloBuy gebruikt. Bewaar het oorspronkelijke bericht als referentie wanneer daarin een optiebeschrijving staat die niet in de URL behouden blijft.",
+            "Vergelijk na het laden kleur, maat, hoeveelheid en prijsbasis. Een geslaagde import kan nog steeds de standaardoptie tonen in plaats van je bedoelde keuze. Bewaar de oorspronkelijke optietekst naast een vertaling, vooral wanneer namen op elkaar lijken. Staat de maattabel in een afbeelding, bewaar die dan en verduidelijk de vereiste afmetingen voordat je de bestelling goedkeurt."
+          ]
+        },
+        {
+          "heading": "Controleer verkoper en uitvoering op Weidian",
+          "paragraphs": [
+            "Controleer bij een Weidian-aanbieding de verkoperspagina en het artikel samen. Een opgeslagen link kan blijven werken terwijl aanbod, opties of prijs zijn veranderd. Vergelijk actuele titel, afbeeldingen, optienamen en verkopersgegevens met je eerdere overzicht. Behandel een gewijzigde aanbieding als nieuwe beslissing in plaats van aan te nemen dat een bekende productfoto het oude aanbod bewaart.",
+            "Documenteer de precieze afwijking als de importvoorvertoning verschilt van de actuele verkoperspagina. Geef bijvoorbeeld aan welke maat ontbreekt of bij welke optie de getoonde prijs hoort. Voeg oorspronkelijke URL en gewenste keuze toe aan de bestelvraag. Vermijd instructies als 'die op de foto' wanneer de aanbieding meerdere producten of uitvoeringen bevat. Een exacte optiebeschrijving kan het aankoopteam beter controleren."
+          ]
+        },
+        {
+          "heading": "Behandel de 1688-hoeveelheid als onderdeel van het product",
+          "paragraphs": [
+            "Volgens de officiële 1688-gids van LoloBuy moet aan minimumaantallen van verkopers worden voldaan en kunnen prijs en binnenlandse vracht afhangen van de hoeveelheid. Een geïmporteerde prijs zonder bijbehorende staffel is dus onvolledig. Controleer of de prijs per stuk, paar, set, doos of andere eenheid geldt. Een laag bedrag kan een onderdeel of een grotere aankoopstaffel betreffen.",
+            "Noteer minimumaantal, gewenste hoeveelheid, gekozen uitvoeringen en de prijs voor die combinatie. Verduidelijk bij gemengde kleuren of maten de verkopersvoorwaarden in plaats van aan te nemen dat iedere mix het minimum haalt. De officiële gids beschrijft ook afzonderlijke inspectieregels voor 1688-bestellingen. Een werkende link neemt die hoeveelheids-, inspectie- of retourvoorwaarden niet uit de aankoopbeslissing weg."
+          ]
+        },
+        {
+          "heading": "Gebruik een handmatige bestelling alleen met geverifieerde gegevens",
+          "paragraphs": [
+            "De officiële koopgids van LoloBuy beschrijft het handmatig invullen van een aankoopopdracht wanneer productgegevens niet automatisch kunnen worden opgehaald. Gebruik die optie wanneer zij voor de bestelling wordt aangeboden en neem de gegevens over van de werkelijke aanbieding. Vermeld oorspronkelijke link, exact product en opties, hoeveelheid, actuele artikelprijs en bekende binnenlandse bezorgkosten. Markeer ontbrekende informatie voor verduidelijking in plaats van haar te verzinnen.",
+            "Een handmatig formulier communiceert een bestelling; het garandeert niet dat een niet-beschikbaar product kan worden gekocht of dat iedere verkoper de gewenste voorwaarden aanvaardt. Vergelijk vóór betaling het ingevulde formulier met de brongegevens. Beantwoord na indiening bevestigingsvragen via de betreffende bestelvraag. Bewaar de definitief bevestigde selectie om die later met het bewijs uit het magazijn te kunnen vergelijken."
+          ]
+        },
+        {
+          "heading": "Controleer het geïmporteerde resultaat vóór betaling",
+          "paragraphs": [
+            "Voer dezelfde eindcontrole uit, of de link nu is hersteld of een handmatig formulier is gebruikt. Vergelijk identiteit, verkoper, kleur, maat, hoeveelheid, eenheid en totaal. Controleer of het getoonde bedrag bij de gekozen samenstelling hoort en bekijk binnenlandse bezorging apart. Een werkende voorvertoning bewijst dat bepaalde informatie geladen is, niet dat ieder vereist detail correct is geïmporteerd of dat voorraad is gereserveerd.",
+            "Stop bij een verschil tussen bron en bestelformulier en los dat specifieke verschil op. Herhaaldelijk vergelijkbare bestellingen indienen kan het overzicht moeilijker te volgen maken. Bewaar één duidelijk bewijsspoor met oorspronkelijke aanbieding, gecorrigeerde selectie en resulterend bestelnummer. Vergelijk bij aankomst in het magazijn de ontvangen goederen met die bevestigde registratie voordat je het internationale pakket indient."
+          ]
+        },
+        {
+          "heading": "Houd een opnieuw controleerbaar linkoverzicht bij",
+          "paragraphs": [
+            "Bewaar oude URL, actuele URL, marktplaats, verkoper, zichtbaar artikelnummer, gekozen optie, datum en uitkomst in een eenvoudig overzicht. Bruikbare uitkomsten zijn werkend en overeenkomstig, werkend maar gewijzigd, optie niet beschikbaar, aanbieding verwijderd of importprobleem onopgelost. Bewaar bij een vervanging de eigen gegevens daarvan in plaats van het origineel te overschrijven alsof er niets veranderde. Zo blijft de reden voor je keuze behouden.",
+            "Controleer de aanbieding vlak vóór bestelling opnieuw: een herstelde link garandeert geen toekomstige beschikbaarheid. Vermeld bij het delen van een gecorrigeerde link datum en geverifieerde gegevens, zonder te beweren dat de verkoper of fysieke goederen onafhankelijk zijn getest. Een betrouwbare productcatalogus helpt mensen kandidaten ontdekken en controleren. Duidelijke registraties en correcte statusinformatie blijven daarbij nuttig, ook wanneer afzonderlijke marktplaatsaanbiedingen veranderen."
+          ]
+        }
+      ],
+      "checklist": [
+        "Bewaar de oorspronkelijke URL voordat je een link wijzigt.",
+        "Controleer verkopersbeschikbaarheid los van de LoloBuy-import.",
+        "Houd catalogusnummers apart van marktplaatsartikelnummers.",
+        "Controleer bij 1688 eenheden, minimumaantallen en prijsstaffels.",
+        "Vergelijk de definitieve geïmporteerde of handmatige bestelling met de bron."
+      ],
+      "sourceIds": [
+        "buying",
+        "wholesale",
+        "confirmation",
+        "qc"
+      ],
+      "readingMinutes": 6,
+      "wordCount": 1217,
+      "published": "2026-10-29",
+      "modified": "2026-10-29"
     }
   ]
 }

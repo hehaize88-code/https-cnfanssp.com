@@ -20,7 +20,7 @@
     "photo": "Billedsøgning",
     "popular": "Udforsk:",
     "tagline": "Ét katalog. Din næste opdagelse.",
-    "source": "Produkter fra cnfanssp.com",
+    "source": "Produktopdagelse og købsguider",
     "independent": "Uafhængig side med LoloBuy-fund",
     "browse": "Udforsk produktlisten",
     "browseSub": "Lidt mindre søgning. Mange flere fund.",
@@ -56,7 +56,7 @@
     "empty": "Ingen fund matcher din søgning.",
     "reset": "Ryd filtre",
     "sourceSearch": "Søg i kildens fulde katalog",
-    "snapshot": "Aktuelt katalog fra cnfanssp.com. Produktpriser i CNY inkluderer ikke fragt og servicegebyrer. Kontrollér aktuelle valgmuligheder og det endelige tilbud på LoloBuy.",
+    "snapshot": "Varepriser i CNY omfatter ikke fragt- og servicegebyrer. Kontrollér de aktuelle muligheder og det endelige tilbud på LoloBuy.",
     "howTitle": "Fra fund til udpakning.",
     "howSub": "Ny på LoloBuy? Start med disse tre trin.",
     "steps": [
@@ -83,7 +83,7 @@
     "cta": "Fundet din næste favorit?",
     "ctaSub": "Åbn den på LoloBuy, og gør den til din.",
     "ctaButton": "Udforsk alle fund",
-    "footer": "En uafhængig side til at finde produkter. Vi er ikke LoloBuys officielle hjemmeside. Produktannoncer og billeder kommer fra cnfanssp.com. Køb gennemføres på LoloBuy.",
+    "footer": "Et uafhængigt websted til produktopdagelse. Vi er ikke LoloBuys officielle websted. Køb gennemføres på LoloBuy.",
     "footerLinks": [
       "Produktliste",
       "Købsguide",
@@ -102,7 +102,7 @@
     "photoTitle": "Find det med et billede.",
     "photoIntro": "Brug kildens katalog til at finde og sammenligne produkter.",
     "photoState": "Billedsøgning hos kilden",
-    "photoNote": "Ingen offentlig billedsøgetjeneste er verificeret på cnfanssp.com. Vi modtager ikke billeduploads, før kildens tjeneste er tilgængelig.",
+    "photoNote": "Der er i øjeblikket ingen understøttet billedsøgningstjeneste tilsluttet. Søg i kataloget efter søgeord eller kategori i stedet.",
     "browseInstead": "Se produkter",
     "faqTitle": "LoloBuy: svar før du bestiller.",
     "faqIntro": "Undersøgt ud fra LoloBuys officielle hjælpesider. Hvor officielle sider er forskellige, forklarer svaret, hvad du skal kontrollere.",
@@ -124,8 +124,8 @@
     "jump": "Gå til side",
     "go": "Gå",
     "articlesLabel": "Artikler",
-    "articlesTitle": "Viden om køb med LoloBuy, i dybden.",
-    "articlesIntro": "Ti praktiske guider baseret på LoloBuys officielle hjælpesider. Find produkter, kontrollér QC, læg budget, og planlæg fragt med klarere information.",
+    "articlesTitle": "LoloBuy-guider: bestilling, QC, fragt og betaling",
+    "articlesIntro": "Praktiske LoloBuy-guider om produktlinks, lagerkontrol, fragtomkostninger og betalingsvalg. Vælg guiden til dit næste trin.",
     "articleSources": "Officielle kilder",
     "reviewed": "Gennemgået den 20. oktober 2026",
     "readArticle": "Læs artiklen",
@@ -149,7 +149,17 @@
     "nextFind": "DET NÆSTE FUND ER DIT.",
     "liveLabel": "Opdateret fra kilden",
     "faqCount": "undersøgte svar",
-    "catalogue": "Katalog"
+    "catalogue": "Katalog",
+    "homeTitle": "LoloBuy-regneark og købsguider | LoloBuy Sheet",
+    "catalogTitle": "Find LoloBuy-fund: tøj, sneakers og tilbehør",
+    "catalogDescription": "Se LoloBuy-fund efter kategori, søg i hele kataloget, og sammenlign varepriser. Kontrollér produktoplysningerne, før du åbner det tilhørende købslink på LoloBuy.",
+    "guidesTitle": "LoloBuy-købsguider: fra produktlinks til levering",
+    "guideMetaTitle": "Sådan fungerer LoloBuy: bestilling, QC og international fragt",
+    "shippingNav": "Fragt",
+    "reviewedLabel": "Opdateret",
+    "nextStep": "Fortsæt med næste trin",
+    "priorityTitle": "Før du bestiller eller sender",
+    "priorityIntro": "Kontrollér produktet, gennemgå dokumentationen fra lageret, og sammenlign pakkens samlede omkostninger."
   },
   "faqs": [
     {
@@ -450,7 +460,9 @@
         "qc"
       ],
       "readingMinutes": 3,
-      "wordCount": 651
+      "wordCount": 627,
+      "published": "2026-10-20",
+      "modified": "2026-10-29"
     },
     {
       "slug": "how-to-order-on-lolobuy",
@@ -507,6 +519,35 @@
             "Den officielle proces beder brugeren vælge lagrede varer, indtaste leveringsoplysninger og vælge blandt tilgængelige fragtmuligheder. Gennemgå destination, begrænsninger, pakkevalg og fragtdepositum samlet. En købt vare er ikke automatisk en international pakke, der er klar til afsendelse.",
             "Den endelige fragt kan ændres efter pakning og logistisk måling. Hold øje med pakkeposten for justeringer eller bekræftelsesanmodninger. Efter afsendelse bruger du pakkeområdet til sporing, gemmer ordrereferencerne og kontrollerer indholdet hurtigt, når leveringen ankommer."
           ]
+        },
+        {
+          "heading": "Opret en oversigt over din første bestilling, som kan genbruges",
+          "paragraphs": [
+            "Inden du indsender den første bestilling, bør du samle sælgerens URL, varenavn, præcis variant, antal, henvisning til størrelsestabellen og ubesvarede spørgsmål. Behold sælgerens oprindelige varianttekst, hvis en oversættelse kan være tvetydig. Angiv ved et sæt, hvilke dele der skal være i pakken. Oversigten giver et sammenligningsgrundlag ved betaling og senere på lageret, så du ikke skal stole på en erindret miniature.",
+            "En tøjbestilling kan eksempelvis angive én marineblå sweatshirt i sælgerens størrelse M med en bestemt fladt målt brystbredde fra tabellen. Det er tydeligere end at bede om en mellemstor blå trøje. Spørg før køb, hvis tabellen eller farvenavnet er uklart. En præcis anmodning forbedrer kommunikationen, men beviser ikke, at sælgeren har varen på lager, eller at tøjet vil passe."
+          ]
+        },
+        {
+          "heading": "Skeln mellem et produktproblem og et betalingsproblem",
+          "paragraphs": [
+            "Hvis den importerede vare er forkert, eller en nødvendig variant mangler, skal annoncen afklares før betaling. Brug den oprindelige kilde til at se, om sælgeren har ændret tilbuddet, eller om importen udelod oplysninger. En manuel bestilling skal, når den tilbydes, bevare de faktiske produktoplysninger. At ændre ID'er eller vælge en nogenlunde lignende variant løser ikke usikkerheden og kan gøre en senere afvigelse vanskeligere at dokumentere.",
+            "Hvis varen er korrekt, men betalingsstatus er uklar, skal du sammenligne regningen, kontosaldoen og betalingsudbyderens oplysninger. Gem transaktionsreferencen og den synlige fejl, før du prøver igen. En side, der indlæses, beviser ikke i sig selv, at betalingen mislykkedes. Bed support om at afklare en uklar debitering i stedet for at foretage flere overlappende forsøg. Hold produktidentitet, betalingsstatus og sælgerens afsendelse som separate kontrolpunkter: succes i én fase beviser ikke, at den næste er gennemført."
+          ]
+        },
+        {
+          "heading": "Planlæg lagerbeslutningen, før pakken indsendes",
+          "paragraphs": [
+            "Afgør, hvilken dokumentation du behøver, før varerne ankommer. Et stykke tøj med følsom pasform kan kræve et bestemt mål, mens et tilbehørssæt kan kræve et tydeligt billede af alle dele. Kontrollér den tilgængelige inspektion og dens begrænsninger. Sammenlign billederne med den gemte bestilling, når de er klar, og noter hvert uafklaret punkt. Bed om et bestemt billede eller en forklaring frem for en generel vurdering af, at varen ser god ud.",
+            "Kontrollér de relevante returvilkår hurtigt, mens varerne stadig er på lageret. Opbevaringstid og sælgerens returfrist er forskellige tidsgrænser. Hvis du venter for at samle flere varer, kan returfristen for en uønsket vare udløbe. Spørg om den konkrete vares vilkår og forventede omkostninger ved ombytning eller retur, før den indgår i en international pakke. Antag ikke, at pakken kan standses efter hvert senere behandlingstrin."
+          ]
+        },
+        {
+          "heading": "Afslut bestillingen med en fuld omkostningsoversigt",
+          "paragraphs": [
+            "Hold varer og indenrigslevering, valgte tjenester, international fragt og destinationsomkostninger i separate felter. Tilføj hver omkostning én gang, og angiv valutaen. Erstat estimater med bekræftede regninger undervejs, men behold tidligere beløb til sammenligning. Hvis fragten ændrer sig efter pakning, skal reguleringen knyttes til pakkereferencen og målene. Oversigten forklarer prisen frem til levering tydeligere end ét udateret totalbeløb.",
+            "Sammenlign efter levering indholdet med den oprindelige vareliste, og gem dokumentation om emballagen, hvis noget er galt. Brug den relevante supportvej for ordren eller pakken, og beskriv problemet og de oplysninger, der forbinder det med købet. Gem datoer for køb, lagerankomst, afsendelse og levering som særskilte milepæle. Observationerne kan hjælpe ved næste bestilling uden at love, at en anden pakke følger samme tidsplan.",
+            "Notér, før du afslutter sagen, hvilke trin der krævede afklaring, og hvilke antagelser der ændrede sig. Gem den bekræftede varianttekst, hvis produktlinket krævede manuel indtastning. Gem den opmålte kasse sammen med det oprindelige estimat, hvis fragtoverslaget ændrede sig. Noterne skal kun beskrive din egen ordre. Kontrollér den aktuelle annonce, betaling og fragtvilkår ved næste køb, selv hvis varen ser identisk ud. Et tidligere vellykket køb reserverer ikke lager eller fastholder samme pris, tjeneste eller sælgervilkår."
+          ]
         }
       ],
       "checklist": [
@@ -523,8 +564,10 @@
         "qc",
         "freight-balance"
       ],
-      "readingMinutes": 3,
-      "wordCount": 640
+      "readingMinutes": 6,
+      "wordCount": 1257,
+      "published": "2026-10-20",
+      "modified": "2026-10-29"
     },
     {
       "slug": "lolobuy-qc-photos",
@@ -581,6 +624,35 @@
             "Inddel observationerne i bekræftede, uklare og uacceptable. Er en detalje uklar, så bed om dokumentation. Ser varen ud til at afvige fra ordren, skal du bruge den relevante support- eller returproces før international fragt. Gem en kort beskrivelse af problemet og billederne, der viser det.",
             "Billeder kan ikke fastslå alle materialeegenskaber, komfort, langtidsholdbarhed eller indvendig funktion. Godkendelse af synlig stand er en mere begrænset beslutning. Læs returvilkårene, mens varen stadig er på lageret, og behandl ikke vellykket QC som et løfte om told eller international levering."
           ]
+        },
+        {
+          "heading": "Gør en tøjkontrol til en tydelig anmodning",
+          "paragraphs": [
+            "Begynd med de mål, der påvirker pasformen, i stedet for at bede lageret vurdere, om tøjet er den rigtige størrelse til dig. Til en sweatshirt kan du have brug for flad brystbredde, kropslængde og ærmelængde målt fra samme punkter som i sælgerens tabel. Angiv metode og enhed. Størrelsesmærket er nyttigt ved identitetskontrol, men erstatter ikke tøjets mål.",
+            "Hvis tabellen angiver kropsomkreds, mens billedet viser flad bredde, må tallene ikke sammenlignes direkte. Kontrollér, hvor målebåndet starter og slutter, om tøjet ligger fladt, og om tallet kan læses. Lys og perspektiv kan også ændre farvens udseende. Bed om et tydeligere billede, når farven er vigtig, men husk, at et foto på en skærm ikke garanterer en nøjagtig farve i virkeligheden."
+          ]
+        },
+        {
+          "heading": "Undersøg sko og tilbehør uden overdrevne konklusioner",
+          "paragraphs": [
+            "Sammenlign ved fodtøj begge sko, synlige størrelsesmærker, den overordnede form og de områder, din bekymring gælder. Angiv udtrykkeligt, hvis du har brug for et bestemt mål eller nærbillede. Kontrollér ved en taske håndtag, lukninger og forventede dele, hvor de er synlige. Lav ved tilbehør med flere dele en liste over det forventede indhold, og sammenlign med billederne i stedet for at antage, at en lukket kasse indeholder alt.",
+            "En synlig fejl i syning eller overflade kan dokumenteres med et nærbillede og dens placering. Skjult konstruktion, komfort under brug, materialesammensætning og langtidsholdbarhed kræver normalt anden dokumentation. Behandl ikke et lagerfoto som et ægthedscertifikat eller en professionel funktionstest. Læs inspektionsundtagelserne for forseglede produkter eller specialelektronik, før du afgør, om den tilgængelige tjeneste besvarer dit faktiske spørgsmål."
+          ]
+        },
+        {
+          "heading": "Hold usikkerhed adskilt fra en bekræftet fejl",
+          "paragraphs": [
+            "Brug tre enkle tilstande i noterne: bekræftet overensstemmelse, mere dokumentation nødvendig og observeret afvigelse. Et ulæseligt størrelsesmærke hører eksempelvis til den anden, indtil der foreligger et tydeligere billede; et klart forkert størrelsesmærke til den tredje. Det forhindrer, at et manglende foto beskrives som en bevist fejl, og at et flot helhedsbillede skjuler et ubesvaret spørgsmål.",
+            "Notér ordrenummer, relevant billede, præcist spørgsmål og næste handling for hvert uafklaret punkt. Opdater punktet, når svaret kommer, frem for at erstatte hele oversigten med en vag godkendelse. Spørg om den relevante løsning, hvis afvigelsen består, mens varen stadig er på lageret. Gem sælgerens accept, returkrav og eventuelle omkostninger sammen. At anmode om retur er ikke det samme som at have fået den godkendt."
+          ]
+        },
+        {
+          "heading": "Træf beslutningen før næste frist",
+          "paragraphs": [
+            "Gennemgå varen hurtigt, når lageroplysningerne bliver tilgængelige. LoloBuys returvejledning gør mulighederne afhængige af ordre, sælger og tidspunkt. En generel opbevaringsperiode forlænger ikke en returfrist. Læs de tidsgrænser og krav til varens stand, som gælder, og behold originalemballagen, hvis den kan blive nødvendig. Udsæt ikke en nødvendig forespørgsel, blot fordi andre varer i en planlagt pakke endnu ikke er ankommet.",
+            "Når du godkender en vare til afsendelse, skal du registrere, hvad der faktisk blev kontrolleret, og hvad der fortsat er ukendt. Identitet og synlige mål kan eksempelvis være bekræftet, mens komfort og holdbarhed er utestede. Knyt den begrænsede konklusion til varereferencen. Gennemgå uafklarede bekymringer igen før pakkeindsendelse, især hvis en emballageændring fjerner mærker eller originalemballage fra dokumentationen. Det skaber et nyttigt beslutningsspor uden at påstå, at QC fjerner enhver købsrisiko.",
+            "Gem originalbillederne sammen med en kort beslutningsnote i stedet for kun en beskåret detalje. Det bredere billede forbinder bekymringen med den rigtige vare, og ordrenummeret forbinder fotoet med købet. Behold begge billeder, hvis et senere foto afklarer spørgsmålet, og angiv, hvad der ændrede sig. Del ikke personlige ordreoplysninger offentligt. Et nyttigt underlag er en konkret observation med en sporbar kilde, ikke en udokumenteret bedømmelse eller et udsagn om, at alle sælgerens produkter er kontrolleret."
+          ]
         }
       ],
       "checklist": [
@@ -594,15 +666,18 @@
         "qc",
         "photos",
         "service",
-        "sizing"
+        "sizing",
+        "returns"
       ],
-      "readingMinutes": 3,
-      "wordCount": 643
+      "readingMinutes": 6,
+      "wordCount": 1256,
+      "published": "2026-10-20",
+      "modified": "2026-10-29"
     },
     {
       "slug": "lolobuy-shipping-costs",
-      "title": "LoloBuy-fragtpriser: sammenlign hele pakken",
-      "description": "Forstå estimeret vægt, faktisk vægt og volumenvægt, og sammenlign ruter med samme destination, indhold og pakkevalg.",
+      "title": "LoloBuy-fragtomkostninger: beregner, vægt og gebyrer",
+      "description": "Brug LoloBuys fragtberegner, sammenlign faktisk vægt og volumenvægt, og kontrollér emballagevalg, fragtreguleringer og hele pakkebudgettet.",
       "keyword": "lolobuy fragtberegner",
       "category": "Fragt",
       "summary": "En nyttig fragtsammenligning begynder med én tydeligt defineret pakke. Guiden forklarer oplysninger og kontroller; den er ikke et aktuelt fragttilbud.",
@@ -655,6 +730,35 @@
             "LoloBuys vejledning om tillægsbetaling siger, at den estimerede fragt afstemmes med logistikudbyderens faktiske pris. Det kan betyde tilbagebetaling af for meget betalt fragt eller en ekstra betalingsanmodning. Læs pakkebeskederne, og besvar anmodninger knyttet til forsendelsen.",
             "Gem det første skøn, de endelige fakturerbare mål, valgte tjenester og justeringen samlet. Så bliver en forskel nemmere at forstå. Budgettér mulige destinationsafgifter særskilt, og kontrollér pakkens endelige beløb, før du betragter ordren som afsluttet."
           ]
+        },
+        {
+          "heading": "Brug den officielle beregner med et gemt udgangspunkt",
+          "paragraphs": [
+            "Åbn LoloBuys aktuelle fragtberegner, og vælg den faktiske destination. Indtast indhold, vægt og mål i de viste enheder. Gem dato, indtastede værdier, valgt tjeneste og valuta sammen med resultatet. Markér målene som estimater, hvis varerne endnu ikke er nået lageret. Det er vigtigt, fordi sælgerens omtrentlige varevægt ikke beskriver en færdig kasse med yderemballage.",
+            "Gem ét udgangspunkt, før du ændrer emballage eller fjerner en vare. Ændr én variabel pr. alternativ, og behold de øvrige, hvor det er muligt. Hvis en rute forsvinder, når varekategorien ændres, er begrænsningen en del af resultatet; en forkert kategori for at få et billigere tilbud gør ikke ruten egnet. Sammenlign kun tjenester, der tilbydes til de faktiske varer og destinationen, og hold ubesvarede spørgsmål om adgang synlige."
+          ]
+        },
+        {
+          "heading": "Lav en sammenligning, som omfatter alle pakker",
+          "paragraphs": [
+            "Brug én række til hvert fulde fragtscenarie. Registrér indhold, antal pakker, faktisk vægt, mål, emballagetjenester, rute og samlet fragt. Læg begge komplette pakketilbud sammen ved en løsning med to pakker, før du sammenligner med én samlet forsendelse. Separate minimumsgebyrer kan påvirke resultatet. Et lavere tal for kun den første pakke viser ikke, at hele ordren er billigere at opdele.",
+            "En meningsfuld sammenligning registrerer også forskelle i beskyttelse og tjenester. Ét scenarie kan bevare en skotøjsæske, mens et andet fjerner den; ét kan omfatte forstærkning, som det andet udelader. Notér forskellene, så beløbet ikke skjuler forskellige resultater. Hvis slutmål mangler, skal sammenligningen behandles som planlægningsunderlag og gentages, når pakkeoplysningerne er bekræftet. Gør ikke en estimeret besparelse til en garanteret slutfaktura."
+          ]
+        },
+        {
+          "heading": "Gennemgå et ændret estimat post for post",
+          "paragraphs": [
+            "Hvis den endelige fragt afviger fra dit gemte estimat, skal du først sammenligne destination, valgte varer, faktisk vægt og kassens mål. Kontrollér derefter rute, faktureringsinterval, tilvalg og valuta. En tungere yderkasse, en stor vare eller en anden tjeneste kan forklare en ændring, selv når varelisten virker ens. Spørg efter det konkrete mål eller den post, der ændrede sig, frem for at antage, at alle forskelle er samme gebyr.",
+            "Knyt det første depositum og senere reguleringer til samme pakkereference. En kontokreditering for overbetaling og en tilbagebetaling til en ekstern betalingsmetode er forskellige registreringer. Bekræft, hvor beløbet blev krediteret, eller hvilken tillægsbetaling der mangler. Gem begge tilbud og stil et pakkespecifikt spørgsmål, hvis forklaringen er ufuldstændig. Det hjælper mere end at sammenligne totalen med en uvedkommende pakke til en anden destination eller fra en anden dato."
+          ]
+        },
+        {
+          "heading": "Hold fragt adskilt fra det fulde leveringsbudget",
+          "paragraphs": [
+            "Den internationale fragt omfatter muligvis ikke alle betalinger, der følger med at modtage varerne. Gennemgå oprindeligt varekøb, indenrigslevering, valgfrit lagerarbejde, betalingsgebyrer og destinationsomkostninger hver for sig. Markér inkluderede tjenester tydeligt, så de ikke tælles dobbelt. Et tomt beløb skal forblive et spørgsmål til afklaring i stedet for stiltiende at blive nul i et samlet leveringsestimat.",
+            "Kontrollér aktuelle destinationsoplysninger og den valgte tjenestes angivne indhold før betaling. Udled ikke toldbehandling eller køberbeskyttelse af et rutenavn. Hvis du senere offentliggør et fragteksempel, bør dato, indhold, destination, opmålt kasse og beløbets omfang fremgå, mens personlige oplysninger fjernes. Et veldokumenteret historisk tilfælde kan hjælpe læseren med at gentage sammenligningen; en isoleret pris fastslår ikke prisen for læserens egen pakke.",
+            "Et sammenligningsark kan være enkelt: én linje pr. scenarie med tilbudsdato, destination, varer, vægtkilde, mål, rute, beløb og uafklarede spørgsmål. Tilføj en sidste kolonne med det bekræftede resultat, når pakken afsendes. Erstat ikke det oprindelige estimat uden at gemme input, da forklaringen på forskellen ellers forsvinder. Hent ukendte oplysninger fra den aktuelle pakkeregistrering eller support før en fast sammenligning. Brug metoden til hver ny pakke i stedet for at anvende én historisk pris på alle fremtidige køb."
+          ]
         }
       ],
       "checklist": [
@@ -668,10 +772,13 @@
         "buying",
         "weight",
         "packaging",
-        "freight-balance"
+        "freight-balance",
+        "estimate"
       ],
-      "readingMinutes": 3,
-      "wordCount": 604
+      "readingMinutes": 6,
+      "wordCount": 1225,
+      "published": "2026-10-20",
+      "modified": "2026-10-29"
     },
     {
       "slug": "lolobuy-warehouse-consolidation",
@@ -746,7 +853,9 @@
         "freight-balance"
       ],
       "readingMinutes": 3,
-      "wordCount": 612
+      "wordCount": 586,
+      "published": "2026-10-20",
+      "modified": "2026-10-29"
     },
     {
       "slug": "lolobuy-sizing-guide",
@@ -819,7 +928,9 @@
         "returns"
       ],
       "readingMinutes": 3,
-      "wordCount": 648
+      "wordCount": 619,
+      "published": "2026-10-20",
+      "modified": "2026-10-29"
     },
     {
       "slug": "lolobuy-tracking-guide",
@@ -893,7 +1004,9 @@
         "freight-balance"
       ],
       "readingMinutes": 3,
-      "wordCount": 618
+      "wordCount": 601,
+      "published": "2026-10-20",
+      "modified": "2026-10-29"
     },
     {
       "slug": "lolobuy-returns-refunds",
@@ -968,7 +1081,9 @@
         "changes"
       ],
       "readingMinutes": 3,
-      "wordCount": 626
+      "wordCount": 602,
+      "published": "2026-10-20",
+      "modified": "2026-10-29"
     },
     {
       "slug": "lolobuy-order-budget",
@@ -1050,8 +1165,10 @@
         "freight-balance",
         "wholesale"
       ],
-      "readingMinutes": 3,
-      "wordCount": 690
+      "readingMinutes": 4,
+      "wordCount": 662,
+      "published": "2026-10-20",
+      "modified": "2026-10-29"
     },
     {
       "slug": "lolobuy-seller-and-review-checks",
@@ -1125,7 +1242,280 @@
         "returns"
       ],
       "readingMinutes": 3,
-      "wordCount": 626
+      "wordCount": 604,
+      "published": "2026-10-20",
+      "modified": "2026-10-29"
+    },
+    {
+      "slug": "lolobuy-shipping-netherlands",
+      "title": "LoloBuy-fragt til Nederlandene: omkostninger, tider og pakkekontrol",
+      "description": "Planlæg en LoloBuy-pakke til Nederlandene: sammenlign beregnerens input, emballage, leveringstrin og den dokumentation, der kræves for at kontrollere importomkostninger.",
+      "keyword": "LoloBuy fragt Nederlandene",
+      "category": "Levering til Nederlandene",
+      "summary": "Brug Nederlandene som den faktiske destination, når du sammenligner fragt. Gem et dateret tilbud, skeln mellem leveringstrinene, og kontrollér den aktuelle vejledning fra nederlandsk told før betaling.",
+      "sections": [
+        {
+          "heading": "Begynd med en pakkebeskrivelse til Nederlandene",
+          "paragraphs": [
+            "En nyttig sammenligning af LoloBuy-fragt begynder med den pakke, du vil modtage, ikke en pris, en anden betalte. Notér destinationsland, postnummer, vareliste, antal og emballage, der skal blive hos varerne. En rute, der accepterer en lille tøjpakke, accepterer måske ikke en anden produktblanding. Landet alene afgør ikke, om din pakke er tilladt.",
+            "Lav to lister: bekræftede fakta og oplysninger, som stadig er anslåede. Sælgerens mål, varevægten på lageret og den færdige kasses mål er forskellige registreringer. Angiv kilderne, så du ved, hvad der skal opdateres efter ankomst. Sig til, hvis en gaveæske skal forblive intakt, før du sammenligner med billigere pakning, der forudsætter fjernelse. Valget kan påvirke både beskyttelse og volumen."
+          ]
+        },
+        {
+          "heading": "Læs prisen i separate trin",
+          "paragraphs": [
+            "LoloBuys officielle købsvejledning adskiller den første varebetaling og kinesisk indenrigslevering fra senere indsendelse af en international pakke. Hold trinene adskilt i budgettet for en bestilling til Nederlandene. Katalogprisen er et udgangspunkt for varen, ikke et tilbud på levering til døren. Tilføj kun omkostninger, som den aktuelle ordre eller pakkeregistrering faktisk bekræfter.",
+            "Før en enkel oversigt med kolonner for vare, indenrigslevering, valgfri lagertjenester, international fragt, betalingsomkostninger og destinationsafgifter. Angiv valuta ved hvert beløb. Markér en omkostning som inkluderet, når den allerede indgår i tilbuddet, i stedet for at tilføje den igen. Lad ubesvarede felter stå uafklarede. En sum med et tydeligt hul er mere nyttig end en tilsyneladende præcis sum, der antager, at alle manglende omkostninger er nul."
+          ]
+        },
+        {
+          "heading": "Forbered en gentagelig beregnersammenligning",
+          "paragraphs": [
+            "Åbn LoloBuys officielle fragtberegner, og vælg Nederlandene som destination. Indtast den efterspurgte vægt, mål og varekategori i de enheder, som det aktuelle skema viser. Kontrollér gram i forhold til kilogram, før du sammenligner resultater. En vægt i forkert enhed beskriver en anden pakke, selv om skærmen ser plausibel ud. Gem input sammen med de viste muligheder.",
+            "Notér tilbudsdato, valuta, beløb, forventet transporttid, sporingsoplysninger og angivne begrænsninger for hver tilladt rute. Hold indhold og mål identiske under sammenligningen. Angiv udtrykkeligt, hvis en rute kræver en anden pakningsmetode. Gør ikke et gammelt skærmbillede til en aktuel prisliste. En god sammenligning kan gentages med målte lagerdata, når de bliver tilgængelige."
+          ]
+        },
+        {
+          "heading": "Forstå, hvad en lettere eller mindre kasse ændrer",
+          "paragraphs": [
+            "Faktisk vægt måler masse; volumenvægt repræsenterer den plads, pakken optager efter rutens faktureringsregel. LoloBuys vægtvejledning beskriver ruteafhængige formler. Læs aktuelle vilkår i stedet for at bruge én divisor til alle tjenester. Kontrollér også afrunding, minimumsgebyrer og trinnet for ekstra vægt. En lille reduktion i fysisk vægt kan lade pakken blive i samme prisinterval.",
+            "Tænk på en eksempelpakke på 40 gange 30 gange 20 centimeter. Volumen er 24.000 kubikcentimeter. Med en hypotetisk divisor på 6.000 ville volumenvægten være 4 kilogram. Hvis én side reduceres til 15 centimeter, bliver resultatet 3 kilogram efter samme antagne regel. Beregningen forklarer en emballagesammenligning; den fastslår ikke en tilgængelig LoloBuy-rute, en fragtpris eller en garanteret besparelse."
+          ]
+        },
+        {
+          "heading": "Sammenlign samling med separate pakker",
+          "paragraphs": [
+            "Når flere varer er på lager, bør du sammenligne én samlet pakke med totalen for alle foreslåede separate pakker. Brug samme destination, og medtag emballagetjenester for hver mulighed. Et lavere beløb ved én delpakke er ikke den samlede pris for at sende hele kurven. Hver pakke kan have eget minimumsgebyr og separat destinationsbehandling.",
+            "Beskyttelse og begrænsninger kan være vigtigere end laveste indledende fragtpris. En skrøbelig vare kan kræve adskillelse eller forstærkning, mens en stor æske kan dominere volumen i en ellers kompakt pakke. Bed om den konkrete ordning, du vil have vurderet. Behold nødvendig beskyttelse, og kontrollér, at den valgte tjeneste accepterer det faktiske indhold. Samling er et valg, der skal vurderes, ikke et automatisk løfte om lavere pris."
+          ]
+        },
+        {
+          "heading": "Læs leveringstid som et forløb",
+          "paragraphs": [
+            "Skeln mellem sælgerafsendelse, transport til lageret i Kina, inspektion, pakkeklargøring, international transport, destinationsbehandling og endelig levering. Transportørens tidsestimat dækker måske kun en del af forløbet. Notér den milepæl, som estimatet starter ved, før du sammenligner med en anden købers samlede ventetid. Ordrebekræftelse og transportørens modtagelse er ikke samme startbegivenhed.",
+            "Følg efter afsendelse pakkereferencen i kontoen og de tilknyttede transportøroplysninger. Et oprettet sporingsnummer beviser ikke i sig selv, at transportøren fysisk har modtaget pakken. Spørg ved uklar fremdrift, hvilken milepæl der er gennemført, og hvilken part der har pakken. Indbyg en buffer ved tidsfølsomme køb i stedet for at behandle et anslået leveringsinterval som en garanteret dato."
+          ]
+        },
+        {
+          "heading": "Kontrollér aktuelle nederlandske importoplysninger",
+          "paragraphs": [
+            "Læs før betaling den nederlandske toldmyndigheds aktuelle information om netkøb fra lande uden for EU. Vejledningen skelner mellem moms, importtold og transportørens håndteringsgebyrer. Reglerne for forsendelser med lav værdi ændrede sig i juli 2026. Brug derfor ikke en ældre guide, der siger, at små køb automatisk er toldfri, som aktuel beregningsregel. Kontrollér reglerne for de faktiske varer og importdatoen.",
+            "Gem varebeskrivelser, købsbeløb, valuta og allerede opkrævet skat eller told sammen. Spørg transportør eller sælger, hvordan inkluderede afgifter dokumenteres, og hvad der endnu skal betales. Et kælenavn for en fragtrute fastlægger ikke pakkens skattebehandling. Denne guide beregner ikke en universel nederlandsk toldregning: vareklassifikation, transaktion og relevant procedure har betydning. Oplys korrekte beskrivelser og værdier, når oplysningerne efterspørges."
+          ]
+        },
+        {
+          "heading": "Afstem den endelige fragt, og gem dokumentation",
+          "paragraphs": [
+            "Den officielle LoloBuy-fragtvejledning beskriver opkrævning af et estimat og senere afstemning med logistikprisen. Sammenlign reguleringer med endelig pakket vægt, mål, rute og valgte tjenester. Find det ændrede input, når beløbet ændres, før du antager, at estimatet var en fast forpligtelse. Gem det første tilbud og den endelige pakkeregning i samme oversigt.",
+            "Sammenlign ved levering indholdet med den gemte vareliste, og undersøg emballagen, før du smider den ud. Gem fotos, hvis noget virker manglende eller beskadiget, og brug derefter supportprocessen for den relevante ordre eller pakke. Sælgerreturer, krav ved internationale pakker og transportørgebyrer bruger forskellige registreringer. God dokumentation gør anmodningen tydeligere uden at love en bestemt tilbagebetaling eller løsning."
+          ]
+        },
+        {
+          "heading": "Skab et nyttigt underlag til næste bestilling",
+          "paragraphs": [
+            "Gem efter en afsluttet ordre de oplysninger, der kan sammenlignes retvisende: dato, destination, faktiske varer, opmålt kasse, valgt tjeneste, endelig fragt og observerede leveringsmilepæle. Fjern personlige adresseoplysninger, før du deler et eksempel. En historisk forsendelse kan hjælpe en anden køber med processen, men skal mærkes som ét dateret tilfælde og ikke et generelt pris- eller leveringsløfte.",
+            "Brug registreringen til at forbedre næste estimat. Notér, om volumen eller vægt styrede prisen, om en tilvalgstjeneste ændrede kassen, og hvilken budgetpost først blev overset. Kontrollér, at destination, indhold og aktuelle rutevilkår stadig passer, før du genbruger tallene. En gentagelig metode er mere nyttig end at samle det billigst udseende beløb fra en anden pakke."
+          ]
+        }
+      ],
+      "checklist": [
+        "Vælg Nederlandene og korrekt postnummer i det aktuelle tilbud.",
+        "Gem identiske oplysninger om vægt, volumen og indhold ved rutesammenligninger.",
+        "Skeln mellem lagertid, international transport og endelig levering.",
+        "Kontrollér den aktuelle nederlandske importvejledning og allerede opkrævede beløb.",
+        "Gem de første og endelige pakkeregninger sammen."
+      ],
+      "sourceIds": [
+        "buying",
+        "weight",
+        "packaging",
+        "freight-balance",
+        "estimate"
+      ],
+      "readingMinutes": 6,
+      "wordCount": 1222,
+      "published": "2026-10-29",
+      "modified": "2026-10-29"
+    },
+    {
+      "slug": "lolobuy-payment-methods-fees",
+      "title": "LoloBuy-betalingsmetoder og gebyrer: betaling, valuta og saldo",
+      "description": "Kontrollér LoloBuys betalingsmetoder ved betaling, sammenlign hele debiteringen, og skeln mellem kontokreditering og tilbagebetaling til den oprindelige betalingsmetode.",
+      "keyword": "LoloBuy betalingsmetoder",
+      "category": "Betalinger og gebyrer",
+      "summary": "Knyt hver betaling til en vareordre eller pakkeregning. Sammenlign aktuelt totalbeløb og valuta, gem transaktionsreferencen, og kontrollér, hvor en tilbagebetaling krediteres.",
+      "sections": [
+        {
+          "heading": "Begynd med den regning, du vil betale",
+          "paragraphs": [
+            "Identificér regningens formål, før du vælger betalingsmetode. Den kan gælde en vareordre, indenrigslevering, international fragt, regulering eller kontooptankning. LoloBuys officielle købsproces adskiller varebetalingen fra den senere pakkebetaling. En vellykket første transaktion viser ikke, at alle senere trin i købet allerede er betalt.",
+            "Hold ordre- eller pakkenummer, beløb og valuta ved betalingsskærmen. Brug referencer og ikke kun beløb til at skelne regninger med lignende totaler. Bekræft, at valgte varer og antal er korrekte, før du sammenligner betalingskanaler. At løse en bestilling med forkert vare efter betaling er en anden opgave end at vælge en praktisk måde at betale den korrekte ordre på."
+          ]
+        },
+        {
+          "heading": "Kontrollér metoderne i den aktuelle betaling",
+          "paragraphs": [
+            "LoloBuys offentlige købsvejledning nævner flere betalingskategorier, blandt andet kort, kinesiske betalingstjenester og bankoverførsel. En generel hjælpeliste er baggrundsviden, ikke bevis på, at alle metoder aktuelt findes for enhver konto, ethvert land, enhver valuta eller regning. Læs de metoder, som faktisk tilbydes til transaktionen, og de angivne adgangs- eller verificeringskrav.",
+            "Udled ikke et aktuelt gebyr eller en behandlingstid fra et logo i en ældre vejledning. Gem den synlige besked, hvis en kanal ikke er tilgængelig, og spørg officiel support i stedet for at antage, at et andet landevalg er passende. Brug dine faktiske faktureringsoplysninger. Notér valutaen, før du sammenligner en anden kanal, hvis betalingen kræver et valutavalg, så totalerne beskriver tilsvarende køb."
+          ]
+        },
+        {
+          "heading": "Adskil omkostningslagene",
+          "paragraphs": [
+            "En fuld sammenligning adskiller grundregningen, platformens betalingsgebyr, valutaomregning og eventuelle eksterne udbydergebyrer. Nogle kan være inkluderet i en vist total, mens andre vises særskilt af banken eller betalingstjenesten. Registrér, hvad der er kendt, og hvad der mangler at blive kontrolleret. Tilføj ikke et gebyr to gange, blot fordi det står både i specifikationen og i slutbeløbet.",
+            "Find beregningsgrundlaget ved et procentgebyr. Registrér valuta og om gebyret gælder pr. transaktion ved et fast beløb. Et lille køb kan påvirkes anderledes af et fast gebyr end et stort. Guiden udgiver ingen permanent gebyrtabel, fordi det relevante tal er hele det beløb, du ville godkende for den aktuelle regning efter aktuelle vilkår."
+          ]
+        },
+        {
+          "heading": "Sammenlign samme regning i én valuta",
+          "paragraphs": [
+            "Forestil dig, at to betalingsskærme gælder samme eksempelregning for varer. Den ene viser en samlet debitering på 102 enheder af din betalingsvaluta og den anden 104. Sammenligningen er ufuldstændig, hvis det lavere beløb udelader et ekstra udbydergebyr. Notér den bekræftede total for hver mulighed, og angiv uafklarede omkostninger frem for at præsentere overskriftsprisen som den endelige pris.",
+            "Gem begge beløb, når kontoen krediteres i én valuta, og banken debiterer en anden. Det krediterede beløb divideret med den faktiske debitering giver et effektivt omregningsmål for den konkrete transaktion. Det fastlægger ikke platformens universelle valutakurs. Sammenlign alternativer på samme tidspunkt og for samme regning, og skeln mellem en tilbudt kurs og det endelige beløb efter afregning."
+          ]
+        },
+        {
+          "heading": "Hold kontooptankning og ordrebetaling adskilt",
+          "paragraphs": [
+            "At tilføje penge til en platformskonto skaber en saldopost. At betale en ordre bruger penge eller en anden betalingskanal til at afregne en bestemt regning. Begivenhederne kan ske tæt på hinanden, men besvarer forskellige spørgsmål. Kontrollér krediteringen efter optankning og den tilknyttede ordre- eller pakkestatus efter betaling. En saldoøgning alene beviser ikke, at den tilsigtede ordre er betalt.",
+            "En kompakt oversigt kan bruge én række til ekstern betaling, én til saldokreditering og én til ordrefradrag med referencer, som forbinder dem. Det er særligt nyttigt, når flere ordrer finansieres. Behandl ikke den resterende saldo som rabat på næste køb: de tidligere omkostninger ved at tilføje pengene hører stadig til den samlede registrering. Hold ubrugte midler adskilt fra omkostningerne ved afsluttede køb."
+          ]
+        },
+        {
+          "heading": "Håndtér afventende eller mislykket betaling omhyggeligt",
+          "paragraphs": [
+            "Hvis betalingssiden går i stå eller melder fejl, skal du sammenligne regningsstatus, kontohistorik og udbyderens registrering, før du gentager transaktionen. En afventende bankautorisation og en bekræftet platformbetaling er forskellige tilstande. Gem tidspunkt, transaktionsreference og præcis besked. Det giver support mulighed for at undersøge et bestemt forsøg frem for at gætte ud fra et skærmbillede af den aktuelle saldo.",
+            "Kontakt den relevante support med sammenkædede oplysninger, hvis udbyderen viser en debitering, men regningen stadig er ubetalt. Antag ikke, at enhver afventende post afregnes eller tilbageføres inden for én universel periode. Spørg, hvilken status der er bekræftet, og hvad der kræves. Skjul fulde kortoplysninger og uvedkommende kontoaktivitet, når du deler dokumentation. Behold transaktions-ID'erne, som er nødvendige for at matche sagen."
+          ]
+        },
+        {
+          "heading": "Forstå, hvor en tilbagebetaling ender",
+          "paragraphs": [
+            "LoloBuys returvejledning beskriver generelt, at berettigede tilbagebetalinger krediteres LoloBuy-kontoens saldo. Den beskriver også en snæver undtagelse for visse PayPal-ordrer, der afventer godkendelse. Gør ikke undtagelsen til et løfte om, at alle tilbagebetalinger automatisk går til den oprindelige betalingsmetode. Kontrollér reglen for det faktiske ordretrin og betalingsregistreringen.",
+            "Skeln mellem sælgerens godkendelse af retur, platformens modtagelse af pengene, kreditering af kontoen og modtagelse på din eksterne konto. Hvert trin kræver sit eget bevis. En saldokreditering kan afslutte en del uden at vise, at midlerne er hævet. Kontrollér aktuel adgang, tilgængelig handling og relevante betingelser for saldoen, før du regner med udbetaling. Antag ikke, at ubrugt saldo behandles ens i alle situationer."
+          ]
+        },
+        {
+          "heading": "Gennemgå fragtreguleringer særskilt",
+          "paragraphs": [
+            "International fragt begynder som et separat estimat i den officielle købsproces. Senere emballage- eller logistikmålinger kan give et ekstra beløb eller kreditering for overbetaling. Knyt hver regulering til pakkenummer og endelige mål. En ekstra fragtregning er ikke automatisk et betalingsmetodegebyr, og en fragtkredit er ikke nødvendigvis en tilbageførsel af det oprindelige varekøb.",
+            "Gem det første fragtbeløb, ændrede mål, endeligt beløb og eventuel kredit eller tillægsbetaling. Spørg, hvilken del af pakkeberegningen der ændrede sig, hvis en post er uklar. Hold afstemningen adskilt fra destinationsskatter og transportørens håndteringsgebyrer, som kan følge en anden proces. Adskilte kategorier gør totalen lettere at kontrollere og hjælper dig med at undgå at betale et ukendt krav uden at forstå forbindelsen til pakken."
+          ]
+        },
+        {
+          "heading": "Gem betalingsoplysninger, der forbliver nyttige",
+          "paragraphs": [
+            "Et nyttigt betalingsunderlag indeholder dato, regningens formål, ordre- eller pakkereference, grundbeløb, vist gebyr, afregningsvaluta, endeligt betalingsbeløb og udbyderens transaktionsreference. Tilføj den resulterende platformstatus og saldobevægelse efter betaling. Knyt ved tilbagebetaling den oprindelige ordre og kreditens destination. Felterne forbinder det, du ville betale, med det, der faktisk skete.",
+            "Gentag sammenligningen i den aktuelle betaling før næste transaktion. Metodetilgængelighed, omregning og gebyrer kan ændre sig, så en tidligere vellykket transaktion er en reference og ikke en permanent prisliste. Vælg mellem de metoder, der reelt tilbydes til regningen, sammenlign hele debiteringen, og gem dokumentationen. Få en uklar omkostning eller tilbagebetalingsbetingelse afklaret gennem officiel support, før du godkender betalingen."
+          ]
+        }
+      ],
+      "checklist": [
+        "Knyt betalingen til den præcise ordre- eller pakkeregning.",
+        "Sammenlign aktuelle gebyrer og den endelige debitering i samme valuta.",
+        "Kontrollér, om en saldokreditering også afregnede den tilsigtede regning.",
+        "Afklar tvetydig betalingsstatus, før du gentager betalingen.",
+        "Kontrollér, om tilbagebetalingen nåede kontosaldoen eller den oprindelige betalingsmetode."
+      ],
+      "sourceIds": [
+        "buying",
+        "refunds",
+        "cancellation",
+        "freight-balance"
+      ],
+      "readingMinutes": 6,
+      "wordCount": 1226,
+      "published": "2026-10-29",
+      "modified": "2026-10-29"
+    },
+    {
+      "slug": "lolobuy-link-not-working",
+      "title": "LoloBuy-link virker ikke: kontroller for Taobao, Weidian og 1688",
+      "description": "Fejlsøg et LoloBuy-produktlink ved at adskille sælgertilgængelighed, linkformat og ordreimport, og kontrollér den præcise vare før en manuel bestilling.",
+      "keyword": "LoloBuy link virker ikke",
+      "category": "Produktlinks",
+      "summary": "Gem det oprindelige produktlink, og identificér, hvor fejlen opstår. Find samme vare og variant igen, og gennemgå den importerede ordre i stedet for at ændre ID'er eller gætte manglende oplysninger.",
+      "sections": [
+        {
+          "heading": "Identificér, hvor linket fejler",
+          "paragraphs": [
+            "Et produktlink kan fejle før eller efter, at det når LoloBuy. Sælgerens oprindelige annonce kan være utilgængelig, en forkortet adresse kan undlade at viderestille, eller importformularen kan ikke hente oplysninger fra en ellers fungerende side. Notér, hvad der faktisk sker: en fejl, tom forhåndsvisning, et loginønske eller et andet produkt. Observationerne fører til forskellige kontroller.",
+            "Gem den oprindelige URL, før du ændrer noget. Registrér markedsplads, synligt vare-ID hvis tilgængeligt, ønsket variant og kontroldato. Et skærmbillede af den forventede vare kan hjælpe, men skal forblive forbundet med sælgerlinket. Målet er at genskabe tilstrækkelige oplysninger til det ønskede køb, ikke blot få en vilkårlig produktside frem i browseren."
+          ]
+        },
+        {
+          "heading": "Kontrollér først sælgerens oprindelige annonce",
+          "paragraphs": [
+            "Åbn den oprindelige markedspladsannonce via dens normale offentlige eller indloggede adgang efter behov. Hvis sælgeren har fjernet varen, eller den ønskede variant er utilgængelig, genskaber en omformateret adresse ikke lageret. Gem sælgernavn, varetitel og relevante mål, så du kan vurdere en anden annonce som en ny kandidat. Lignende billeder alene beviser ikke, at varerne er tilsvarende.",
+            "Hvis originalannoncen virker og viser den ønskede variant, kan problemet gælde delingslinket eller importen. Kopiér annoncens aktuelle delingslink eller adresse, og sammenlign med den gemte version. Lad legitime viderestillinger gennemføres frem for at redigere destinationen blindt. En side, der kræver kontoadgang, skal kontrolleres gennem markedspladsens normale proces; denne guide omgår ikke dens adgangskontrol."
+          ]
+        },
+        {
+          "heading": "Hold kilde-ID'er og katalog-ID'er adskilt",
+          "paragraphs": [
+            "Et produktopdagelseswebsted kan tildele en post sit eget registreringsnummer. Nummeret er ikke nødvendigvis vareidentifikatoren på Taobao, Weidian eller 1688. På dette websted bruger produktdetaljerne katalogposten til at hente kildeannoncen og det tilsvarende købslink. Hvis et markedsplads-ID erstattes af nummeret i en lokal katalogadresse, kan det føre til en uvedkommende vare eller ingen vare.",
+            "Brug varens tilsvarende købsknap, når den findes, og sammenlign den åbnede side med kilden. Gem begge URL'er og rapportér afvigelsen, hvis destinationen er forkert. Forøg eller byt ikke numeriske ID'er, indtil noget indlæses. Det viste billede, titel, sælger og variantsæt skal samlet svare til den ønskede annonce. Én matchende detalje er ikke nok til at rekonstruere hele produktidentiteten."
+          ]
+        },
+        {
+          "heading": "Gendan Taobao-links med varianten bevaret",
+          "paragraphs": [
+            "En Taobao-delingsbesked kan indeholde beskrivende tekst såvel som et link. Kopiér selve annoncens link i stedet for at behandle hele beskeden som en adresse. Hvis delingslinket viderestiller, skal du bekræfte den resulterende vare, før destinationen bruges i LoloBuy. Gem originalbeskeden som reference, når den indeholder en variantbeskrivelse, som adressen alene ikke bevarer.",
+            "Sammenlign farve, størrelse, antal og prisgrundlag, når varen er indlæst. En vellykket import kan stadig vise standardvarianten i stedet for dit ønskede valg. Gem den oprindelige varianttekst sammen med oversættelsen, især når flere muligheder har lignende navne. Hvis sælgeren viser en størrelsestabel i et billede, skal du bevare tabellen og afklare de nødvendige mål, før du godkender ordren."
+          ]
+        },
+        {
+          "heading": "Kontrollér Weidian-sælger og variantoplysninger",
+          "paragraphs": [
+            "Kontrollér sælgersiden og varen sammen ved en Weidian-annonce. Et gemt link kan fortsat virke, selv om tilbud, varianter eller pris er ændret. Sammenlign nuværende titel, billeder, variantnavne og sælgeroplysninger med tidligere registrering. Behandl en ændret annonce som en ny beslutning i stedet for at antage, at et velkendt produktbillede bevarer det gamle tilbud.",
+            "Dokumentér den konkrete forskel, når importens forhåndsvisning afviger fra sælgerens aktuelle side. Angiv eksempelvis, hvilken størrelse der mangler, eller hvilken variant den viste pris gælder. Medtag original-URL og ønsket valg i ordreforespørgslen. Undgå instruktioner som 'den på billedet', når annoncen rummer flere produkter eller varianter. En præcis variantbeskrivelse er nemmere for indkøbsteamet at kontrollere."
+          ]
+        },
+        {
+          "heading": "Behandl 1688-antallet som en del af produktet",
+          "paragraphs": [
+            "LoloBuys officielle 1688-guide siger, at sælgerens minimumsantal skal overholdes, og at pris og indenrigsfragt kan afhænge af købsmængden. En importeret pris uden tilsvarende mængdetrin er derfor ufuldstændig. Kontrollér, om prisen gælder pr. styk, par, sæt, kasse eller anden enhed. Et lavt tal kan beskrive en komponent eller et større indkøbstrin.",
+            "Registrér minimumsantal, ønsket antal, valgte varianter og prisen for kombinationen. Afklar sælgerens betingelser ved blandede farver eller størrelser i stedet for at antage, at enhver blanding opfylder minimum. Den officielle guide beskriver også særlige inspektionshensyn for 1688-ordrer. At løse linket fjerner ikke disse antal-, inspektions- eller returvilkår fra købsbeslutningen."
+          ]
+        },
+        {
+          "heading": "Brug kun manuel bestilling med verificerede oplysninger",
+          "paragraphs": [
+            "LoloBuys officielle købsvejledning beskriver manuel udfyldning af en indkøbsagentordre, når produktdata ikke kan hentes automatisk. Brug muligheden, når den tilbydes til ordren, og hent oplysningerne fra den faktiske annonce. Medtag originalt link, præcist produkt og varianter, antal, aktuel varepris og kendte oplysninger om indenrigslevering. Markér uafklarede oplysninger til afklaring i stedet for at opfinde dem.",
+            "En manuel formular er en måde at kommunikere en ordre på; den garanterer ikke, at en utilgængelig vare kan købes, eller at enhver sælger accepterer de ønskede vilkår. Sammenlign den udfyldte formular med kildeoplysningerne før betaling. Besvar efter indsendelse bekræftelsesanmodninger gennem den relevante ordreforespørgsel. Gem det endeligt bekræftede valg, så det senere kan sammenlignes med dokumentationen fra lageret."
+          ]
+        },
+        {
+          "heading": "Gennemgå importresultatet før betaling",
+          "paragraphs": [
+            "Udfør den samme slutkontrol, uanset om linket er repareret, eller en manuel formular blev brugt. Sammenlign identitet, sælger, farve, størrelse, antal, enhed og total. Bekræft, at beløbet gælder den valgte konfiguration, og kontrollér indenrigslevering særskilt. En vellykket forhåndsvisning viser, at visse oplysninger blev indlæst, ikke at alle nødvendige detaljer blev korrekt importeret, eller at lager er reserveret.",
+            "Stop ved forskelle mellem kilden og ordreformularen, og løs netop uoverensstemmelsen. Gentagne lignende bestillinger kan gøre registreringen sværere at følge. Gem ét klart dokumentationsspor med originalannonce, korrigeret valg og resulterende ordrenummer. Sammenlign de modtagne varer med den bekræftede registrering, når de når lageret, før den internationale pakke indsendes."
+          ]
+        },
+        {
+          "heading": "Vedligehold et linkregister, der kan kontrolleres igen",
+          "paragraphs": [
+            "Gem gammel URL, aktuel URL, markedsplads, sælger, synligt vare-ID, valgt variant, dato og resultat i et enkelt register. Nyttige resultater er aktiv og matchende, aktiv men ændret, variant utilgængelig, annonce fjernet eller import uafklaret. Gem en erstatningsvares egne oplysninger i stedet for at overskrive originalen, som om intet ændrede sig. Det bevarer begrundelsen for beslutningen.",
+            "Kontrollér annoncen igen umiddelbart før bestilling, da linkgendannelse ikke garanterer fremtidig tilgængelighed. Angiv dato og kontrollerede forhold, når du deler et rettet link, uden at påstå, at sælgeren eller de fysiske varer blev uafhængigt testet. Et pålideligt produktkatalog hjælper folk med at finde og kontrollere kandidater. Klare registreringer og korrekt status gør det nyttigt, også når individuelle markedspladsannoncer ændrer sig."
+          ]
+        }
+      ],
+      "checklist": [
+        "Gem den oprindelige URL, før du ændrer et link.",
+        "Kontrollér sælgertilgængelighed adskilt fra LoloBuy-import.",
+        "Hold katalogpost-ID'er adskilt fra markedspladsens vare-ID'er.",
+        "Kontrollér 1688-enheder, minimumsantal og prisniveauer.",
+        "Sammenlign den endelige importerede eller manuelle ordre med kilden."
+      ],
+      "sourceIds": [
+        "buying",
+        "wholesale",
+        "confirmation",
+        "qc"
+      ],
+      "readingMinutes": 6,
+      "wordCount": 1217,
+      "published": "2026-10-29",
+      "modified": "2026-10-29"
     }
   ]
 }
