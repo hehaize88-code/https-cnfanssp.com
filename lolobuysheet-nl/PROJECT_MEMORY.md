@@ -130,3 +130,11 @@ Owner explicitly requested improvements and deployment across every language. Sc
 - Release marker: 2026-10-29-seo-content-v2, 24 languages, 13 articles per language. Final build and public deployment verification recorded below after completion.
 
 Local release validation passed: production build generated 697 HTML pages; build audit verified 312 article pages (13 × 24 languages), 456 unique sitemap URLs, 34,601 internal links, canonical/hreflang targets, full localized chapter/paragraph parity and exactly one GA4 configuration per page. Analytics behavior checks passed separately, including preview exclusion, idempotence and no raw search-term collection. Mobile 375px and desktop browser previews reviewed. Fixed the 404 page language selector to lead to each language homepage instead of nonexistent localized 404 routes.
+
+### Production release verified — 29 October 2026
+
+Application commit `169ec050b6d3b3acb57b9142f8386d6982baea9d` deployed successfully through the existing GitHub integration. Cloudflare Pages check `Cloudflare Pages: lolobuy-nl-preview` completed successfully; deployment ID `f8f0a973-0365-4730-a08f-8c8339bc600f`. Public release.json confirms `2026-10-29-seo-content-v2`.
+
+HTTP checks passed for all 144 priority article URLs (the three new and three expanded topics in all 24 languages): status 200, exact localized title, canonical URL, document language, chapter counts, updated date and indexable markup. Live sitemap contains 456 unique URLs. Production browser inspection confirmed the Dutch article hub lists 13 full articles, all three new guides open with their localized bodies, and the updated desktop navigation renders correctly.
+
+Additional production checks passed for English/Dutch home, spreadsheet, robots.txt and product API record 6667. The product handoff still uses seller ID 7632511460 and the original source images. These checks establish deployment and availability, not search-engine indexing or organic traffic gains. No sitemap re-submission or IndexNow submission was performed in this release; the existing sitemap URL remains in robots.txt and contains the updated entries.
