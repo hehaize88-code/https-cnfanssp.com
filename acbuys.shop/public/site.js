@@ -64,11 +64,18 @@
     const a = event.target.closest('a[href]');
     if (!a) return;
     const u = new URL(a.href, location.href);
+    const placement = a.closest('.product') ? 'product_card'
+      : a.closest('.related-articles') ? 'related_guides'
+      : a.closest('.home-research') ? 'home_guides'
+      : a.closest('.info-sections') ? 'guide_directory'
+      : a.closest('header') ? 'navigation' : 'page';
+    const context = { link_url: u.origin + u.pathname, link_text: a.textContent.trim().slice(0,100), placement };
     if (u.hostname === 'www.cnfanssp.com') {
       const name = /^\/AllProducts\/\d+\.html$/.test(u.pathname) ? 'product_click' : /^\/AllProducts\/?$/.test(u.pathname) ? 'catalog_click' : 'category_click';
-      track(name, {link_url: u.href, link_text: a.textContent.trim().slice(0,100)});
-    } else if (u.hostname === location.hostname && /\/articles\//.test(u.pathname)) {
-      track('article_click', {link_url:u.href, link_text:a.textContent.trim().slice(0,100)});
+      const productId = u.pathname.match(/^\/AllProducts\/(\d+)\.html$/)?.[1];
+      track(name, productId ? { ...context, item_id: productId } : context);
+    } else if (u.hostname === location.hostname && /\/articles\//.test(u.pathname) && u.pathname !== location.pathname) {
+      track('article_click', context);
     }
   });
 })();

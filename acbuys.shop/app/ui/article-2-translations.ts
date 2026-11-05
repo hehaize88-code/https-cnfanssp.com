@@ -1,6 +1,6 @@
-import { getArticle } from "../articles/article-data";
+import { coreArticles } from "../articles/article-data";
 type Pairs = Array<[string,string]>;
-const a = getArticle("acbuy-qc-photos-guide");
+const a = coreArticles.find(article => article.slug === "acbuy-qc-photos-guide")!;
 const sources = [a.shortTitle,a.title,a.category,a.primaryKeyword,a.dek,a.researchNote,...(a.visual?.items??[]),a.visual?.caption??"",...a.sections.flatMap(s=>[s.heading,...s.paragraphs,...(s.bullets??[]),...(s.callout?[s.callout.title,s.callout.text]:[])]),...a.faq.flatMap(f=>[f.question,f.answer])];
 function make(values:string[]):Pairs { if(values.length!==sources.length) throw new Error("Article 2 translation count mismatch"); return sources.map((s,i)=>[s,values[i]]); }
 

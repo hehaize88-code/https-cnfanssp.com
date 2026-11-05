@@ -1,5 +1,6 @@
 "use client";
 
+import copy from "../../content/editorial/en/ui.json";
 import { FormEvent, useMemo, useState } from "react";
 import { LanguageSwitcher } from "./LanguageProvider";
 
@@ -59,33 +60,23 @@ export default function CatalogHome() {
 
       <section className="hero" id="top">
         <div>
-          <span className="eyebrow">Updated product research for 2026</span>
-          <h1>ACBuy <em>Spreadsheet</em><br />Finds for 2026.</h1>
-          <p>Browse organized ACBuy finds with clear USD prices and direct product records, then use practical QC, fee, warehouse and shipping guides before ordering.</p>
+          <span className="eyebrow">{copy.catalogLabel}</span>
+          <h1>ACBuy <em>Spreadsheet</em></h1>
+          <p>{copy.heroCopy}</p>
           <form className="search" onSubmit={searchMain}>
             <span>⌕</span><input value={query} onChange={(e) => setQuery(e.target.value)} aria-label="Search products" placeholder="Search sneakers, hoodies, bags…" /><button type="submit">Search full catalog</button>
           </form>
-          <div className="proof"><span><b>Live</b> public records</span><span><b>USD</b> price view</span><span><b>QC</b> review workflow</span></div>
+          <div className="proof"><span>{copy.homeView}</span><span><b>USD</b> price view</span><span><b>QC</b> review workflow</span></div>
         </div>
         <div className="hero-image">
           <img src="/catalog-visual.png" alt="Unbranded sneakers, hoodie, tote and jersey arranged for a product catalog" width="1199" height="750" />
-          <span className="checked"><i /> Editorial update October 7, 2026</span>
+          <span className="checked"><i /> {copy.monthEdit}</span>
           <span className="qc-count">Product research</span>
         </div>
       </section>
 
-      <section className="guide home-research" id="research">
-        <div className="section-title"><div><span className="eyebrow">Most useful next reads</span><h2>Plan your next order with practical guides.</h2></div><p>Follow the next step: understand an order status, prepare packing, compare shipping or investigate a tracking update.</p></div>
-        <div className="steps research-links">
-          <article><span>01</span><h3>ACBuy rehearsal packing</h3><p>Prepare packing instructions and compare dimensions with shipping quotes.</p><a href="/articles/acbuy-rehearsal-packing-guide/">Read the guide ↗</a></article>
-          <article><span>02</span><h3>ACBuy order status</h3><p>Understand Purchased, Seller Sent and Stored before taking the next step.</p><a href="/articles/acbuy-order-status-guide/">Read the guide ↗</a></article>
-          <article><span>03</span><h3>ACBuy parcel tracking</h3><p>Check the right reference, carrier handoffs and missing updates.</p><a href="/articles/acbuy-parcel-tracking-guide/">Read the guide ↗</a></article>
-          <article><span>04</span><h3>ACBuy shipping cost</h3><p>Separate item costs, chargeable weight and parcel charges.</p><a href="/articles/acbuy-shipping-cost-guide/">Plan the parcel ↗</a></article>
-        </div>
-      </section>
-
       <section className="catalog" id="finds">
-        <div className="section-title"><div><span className="eyebrow">Freshly checked</span><h2>Popular finds, minus the guesswork.</h2></div><p>Preview listings use public product records and the current first image from each linked product page. Verify the exact item details on the destination page.</p></div>
+        <div className="section-title"><div><span className="eyebrow">{copy.catalogLabel}</span><h2>{copy.catalogTitle}</h2></div><p>{copy.catalogCopy}</p></div>
         <div className="toolbar">
           <div className="filters">{categories.map((c) => <button key={c} className={category === c ? "active" : ""} onClick={() => { setCategory(c); window.gtag?.("event", "category_filter", { category: c }); }}>{c}</button>)}</div>
           <label>Sort <select value={sort} onChange={(e) => setSort(e.target.value)}><option value="featured">Featured</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option></select></label>
@@ -98,9 +89,19 @@ export default function CatalogHome() {
         ))}</div> : <div className="empty"><b>No matching preview finds.</b><span>Try another category or open the complete catalog.</span><a href="https://www.cnfanssp.com/AllProducts/" target="_blank" rel="noopener">Open full catalog ↗</a></div>}
       </section>
 
+      <section className="guide home-research" id="research">
+        <div className="section-title"><h2>{copy.homeResearchTitle}</h2></div>
+        <div className="steps research-links">
+          <article><h3><a href="/articles/acbuy-service-status/">{copy.shortStatus}</a></h3><p>{copy.linkStatus}</p></article>
+          <article><h3><a href="/articles/acbuy-payment-methods/">{copy.shortPay}</a></h3><p>{copy.linkPay}</p></article>
+          <article><h3><a href="/articles/acbuy-product-links-not-working/">{copy.shortLink}</a></h3><p>{copy.linkSource}</p></article>
+          <article><h3><a href="/articles/acbuy-shipping-cost-guide/">ACBuy shipping cost</a></h3><p>Separate item costs, chargeable weight and parcel charges.</p></article>
+        </div>
+      </section>
+
       <section className="categories" id="categories">
         <div className="section-title"><div><span className="eyebrow">Browse by category</span><h2>Start broad. Get specific fast.</h2></div></div>
-        <div className="category-grid">{categoryLinks.map((item, i) => <a key={item.name} href={item.href} target="_blank" rel="noopener"><span className={`num n${i}`}>{String(i+1).padStart(2,"0")}</span><span><b>{item.name}</b><small>Open category on main site</small></span><i>↗</i></a>)}</div>
+        <div className="category-grid">{categoryLinks.map((item, i) => <a key={item.name} href={item.href} target="_blank" rel="noopener"><span className={`num n${i}`}>{String(i+1).padStart(2,"0")}</span><span><b>{item.name}</b></span><i>↗</i></a>)}</div>
       </section>
 
       <section className="qc" id="qc">
@@ -109,7 +110,7 @@ export default function CatalogHome() {
       </section>
 
       <section className="guide" id="guide">
-        <div className="section-title"><div><span className="eyebrow">Simple workflow</span><h2>From find to warehouse in four steps.</h2></div><p>Based on ACBuy’s current official shopping flow: paste a product link, order, inspect warehouse QC, store items, then submit an international parcel.</p></div>
+        <div className="section-title"><div><span className="eyebrow">Simple workflow</span><h2>From find to warehouse in four steps.</h2></div><p>{copy.workflow}</p></div>
         <div className="steps">{[["01","Choose a find","Search by name or browse a category."],["02","Open the record","Review the price and source details."],["03","Inspect QC","Check the warehouse photos carefully."],["04","Build your parcel","Combine items and compare shipping lines."]].map(([n,t,c]) => <article key={n}><span>{n}</span><h3>{t}</h3><p>{c}</p></article>)}</div>
       </section>
 

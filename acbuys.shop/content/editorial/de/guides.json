@@ -1,0 +1,178 @@
+{
+  "acbuy-service-status": {
+    "title": "Funktioniert ACBuy? Bestellungen, Lagerartikel und Pakete prüfen",
+    "description": "Was ACBuy zum Einkauf und Versand mitgeteilt hat und wie du den nächsten Schritt für deine Bestellung, deinen Lagerartikel oder dein Paket findest.",
+    "intro": "Stand unserer Prüfung vom 5. November 2026 konnten wir keine datierte Mitteilung finden, die den Einkauf über ACBuy für alle Kunden wieder freigibt. Am 14. September hieß es in einer Antwort der ACBuy-Community noch, dass Einkäufe vorübergehend ausgesetzt seien. Bei einer bestehenden Bestellung zählt vor allem der letzte dokumentierte Schritt. Wartest du auf den Versand einer Jacke durch den Verkäufer, ist eine andere Stelle zuständig, als wenn dieselbe Jacke schon beim internationalen Paketdienst liegt.",
+    "sections": [
+      {
+        "heading": "Was aus den öffentlichen Mitteilungen hervorgeht",
+        "paragraphs": [
+          "Für den Umbau der Plattform kündigte ACBuy an, Einkäufe und Umtausch vom 12. bis 30. Juni auszusetzen. Kunden mit eingelagerten Waren sollten möglichst bald den Versand veranlassen. Als Ziel für eine schrittweise Wiederaufnahme nannte die Mitteilung den 1. Juli. Welche Funktionen an diesem Tag tatsächlich freigegeben wurden, ging daraus nicht hervor. In einer späteren Antwort im Juli hieß es, dass weiterhin keine neuen Bestellungen möglich seien.",
+          "Am 14. September fragte ein Kunde, der sich wieder anmelden konnte, nach der Bestellfunktion. Die Antwort lautete, dass der Einkauf weiterhin ausgesetzt sei. In einer weiteren Ankündigung gab die Community einem separaten Angebot für individuell gestaltete Produkte Vorrang. Prüfe bei einem Gutschein für dieses Angebot, für welches Produkt und an welcher Kasse er gilt. Eine frühere Bestellung klärst du anhand ihres ursprünglichen ACBuy-Belegs."
+        ]
+      },
+      {
+        "heading": "Wenn du etwas neu bestellen möchtest",
+        "paragraphs": [
+          "Speichere den ursprünglichen Verkäuferlink und notiere die gewünschte Größe, Farbe und Ausführung. Über eine Artikelliste kannst du Angebote vergleichen, während der Einkauf beim Agenten pausiert. Prüfe auf dem Marktplatz, ob genau deine Variante verfügbar ist. Öffne anschließend die offizielle ACBuy-Seite und suche nach einer datierten Mitteilung zum Einkauf und nach Einschränkungen, die dein Konto anzeigt.",
+          "Wenn der Vorgang nach dem Einfügen des Links stoppt, notiere den letzten Schritt und den genauen Wortlaut. Eine fehlende Größe kann am Angebot liegen. Dieselbe Kaufbeschränkung bei mehreren Artikeln spricht dafür, die Verfügbarkeit des Bestelldienstes zu erfragen. Warte mit dem Aufladen deines Guthabens auf diese Auskunft. Einen Testkauf brauchst du dafür nicht. Ist das Zahlungsfenster unerwartet verschwunden, prüfe Bestellübersicht und Zahlungsvorgänge, bevor du es erneut versuchst."
+        ]
+      },
+      {
+        "heading": "Wenn du bezahlt hast und auf den Verkäufer wartest",
+        "paragraphs": [
+          "Suche Bestellnummer, Variante, Zahlungsdatum und letzte datierte Meldung heraus. Eine verbuchte Zahlung, der Einkauf beim Händler, der Inlandsversand und der Wareneingang sind vier verschiedene Schritte. Speichere die letzte sichtbare Meldung. Prüfe bei einer Bestellung mit mehreren Artikeln jede betroffene Position einzeln. Zwei Artikel desselben Einkaufs können unterschiedlich weit sein.",
+          "Ist eine inländische Sendungsnummer hinterlegt, frage, ob das Paket im Lager angekommen ist und deiner Bestellposition zugeordnet wurde. Siehst du bisher nur die Zahlung, frage, ob ACBuy bereits beim Verkäufer bestellt hat und welche Möglichkeiten du für diesen Auftrag hast. Nutze für Rückfragen die bestehende Nummer. Eine erneute Bestellung würde einen zweiten Vorgang eröffnen, der später abgeglichen werden muss."
+        ]
+      },
+      {
+        "heading": "Wenn der Artikel im ACBuy-Lager liegt",
+        "paragraphs": [
+          "Öffne die Bestandsübersicht und die Nachrichten zum Artikel. Sichere Lagernummer, Eingangsdatum, letzte Fotos, angezeigte Fristen und verfügbare Aktionen. Vergleiche auf einem Foto das Größenetikett oder die Farbe mit deiner Bestellung. Ältere QC-Fotos helfen, den damaligen Wareneingang zuzuordnen. Ob die Ware heute verpackt werden kann, lässt sich anhand des aktuellen Bestands und der Auskunft des Lagers klären.",
+          "Im Juni bat ACBuy Kunden, den Paketversand frühzeitig anzustoßen. Das bezog sich auf die damalige Umstellung. Fehlt heute ein Eintrag, schau zuerst bei archivierten und abgeschlossenen Paketen nach. Vielleicht wurde der Artikel bereits einer Sendung zugeordnet. Bitte den Support anschließend, die Lagernummer zu prüfen und dir mitzuteilen, ob die Ware noch vor Ort ist. Frage nach dem nächsten möglichen Schritt und der für diesen Artikel geltenden Frist."
+        ]
+      },
+      {
+        "heading": "Wenn das Paket eine Sendungsnummer hat",
+        "paragraphs": [
+          "Kopiere aus der Paketübersicht den Paketdienst, die Sendungsnummer und das Datum der letzten Meldung. Prüfe die Nummer direkt beim genannten Dienst. Eine elektronische Ankündigung kann bereits mit dem Erstellen des Etiketts erscheinen. Ein datierter Übernahme- oder Abholscan gibt Auskunft über die tatsächliche Übergabe. Die chinesische Sendung vom Verkäufer zum Lager und das internationale Paket können unterschiedliche Nummern haben.",
+          "Zeigt die Verfolgung bisher nur die Ankündigung, frage das Lager nach dem Übergabedatum. Gibt es einen Annahmescan und danach eine Lücke, nenne dem Paketdienst den letzten Scan, das Zielland und die Nummer. Speichere auch eine gegebenenfalls für die Zustellung vergebene zweite Nummer. Damit kannst du später beim lokalen Zusteller nachfragen, selbst wenn sich die Anzeige bei ACBuy nicht mehr aktualisiert."
+        ]
+      },
+      {
+        "heading": "So kann der Support gezielt nachsehen",
+        "paragraphs": [
+          "Nutze den Support in deinem Konto oder auf der offiziellen ACBuy-Website. Zum Beispiel: „Bei Bestellung [Nummer] steht seit [Datum] die Meldung [Wortlaut]. Wurde der Artikel gekauft, eingelagert oder schon einem Paket zugeordnet? Was kann ich als Nächstes tun und welche Frist gilt?“ Frage zunächst nach einem Artikel und füge einen zugeschnittenen Screenshot mit Status und Nummer bei.",
+          "Bewahre Antwortdatum und Vorgangsnummer privat auf. Verweist die Antwort auf ein künftiges Update, frage nach dem Veröffentlichungsort oder dem Eintrag, der sich in deinem Konto ändern soll. Betrifft derselbe Schritt mehrere Artikel, ergänze deren Nummern im bestehenden Gespräch. Zugangscodes, Passwörter und vollständige Kartendaten gehören weder in eine öffentliche Diskussion noch in die Anfrage.",
+          "Kannst du dich nicht anmelden, nimm deine gespeicherte Bestätigung, um die Bestellung zuzuordnen. Notiere, wann der Zugriff zuletzt geklappt hat, welche offizielle Seite du aufgerufen hast und was nach dem Absenden des Formulars geschehen ist. Ergänze die Zeitzone, wenn Lager und Paketdienst verschiedene Daten anzeigen. Ein abendliches Ereignis am Zielort kann im Lagerprotokoll unter dem Folgetag stehen. Die Originalzeit neben jedem Eintrag erleichtert den Abgleich."
+        ]
+      },
+      {
+        "heading": "Häufige Fragen zu ACBuy",
+        "paragraphs": [
+          "Belegt ein kürzlich veröffentlichtes Paketvideo, dass Einkäufe wieder möglich sind? Achte auf Bestelldatum und Übergabe an den Paketdienst. Auch während einer Einkaufspause können früher aufgegebene Sendungen eintreffen. Für neue Käufe zählt eine datierte Ankündigung, die den Einkaufsdienst ausdrücklich erwähnt.",
+          "Gilt die alte Versandfrist oder ein damaliger Gutschein für meinen Lagerartikel? Vergleiche Datum, betroffene Waren und die Bedingungen in deinem Konto. Ist die Aktion abgelaufen oder die Position verschwunden, frage mit der Lagernummer nach den heutigen Möglichkeiten. Ein Screenshot des alten Angebots erleichtert die zeitliche Zuordnung.",
+          "Was würde die Einschätzung ändern? Eine neue datierte Mitteilung zur Wiederaufnahme von Marktplatzeinkäufen. Bei einer einzelnen Bestellung kann schon die datierte Bestätigung des Einkaufs, des Lagerbestands oder der Paketabholung die konkrete Frage klären. Schau beim nächsten Mal direkt in diesen Vorgang."
+        ]
+      }
+    ]
+  },
+  "acbuy-payment-methods": {
+    "title": "ACBuy-Zahlungsmethoden, Gebühren und fehlgeschlagene Zahlungen",
+    "description": "So prüfst du die Zahlungsarten für deine ACBuy-Bestellung, unterscheidest die Versandkosten und klärst eine vorgemerkte Abbuchung.",
+    "intro": "Welche Zahlungsmethoden kannst du bei ACBuy nutzen? Öffne die Zahlungsübersicht der jeweiligen Bestellung oder des Pakets auf der offiziellen Website. Im öffentlichen Hilfemenü gibt es einen Eintrag zu internationalen Kreditkarten. Ob deine Karte, PayPal oder eine bestimmte Wallet für deinen Vorgang zur Auswahl steht, siehst du erst dort. Wenn sich die Kasse nicht öffnen lässt, notiere die Bestellnummer und frage bei ACBuy nach, bevor du Geld als Guthaben einzahlst.",
+    "sections": [
+      {
+        "heading": "Die Zahlungsarten für deinen Vorgang prüfen",
+        "paragraphs": [
+          "Melde dich bei ACBuy an. Öffne die richtige unbezahlte Bestellung. Geht es um den Versand bereits eingelagerter Ware, wähle die betreffenden Artikel im Lagerbereich aus. Prüfe Variante, Stückzahl, Währung und Bestell- oder Paketnummer. Gehe bis zur Zahlungsübersicht, ohne die Zahlung freizugeben. Welche Methoden lassen sich auswählen, und welcher Gesamtbetrag steht jeweils daneben?",
+          "Ein fremder Screenshot kann von einer anderen Bestellung, aus einer anderen Währung oder von einem früheren Tag stammen. Fehlt eine erwartete Methode, halte fest, wofür du bezahlen möchtest und welche Optionen du tatsächlich siehst. Frage den Support mit genau diesen Angaben. Für vorhandene Lagerware ist die Paketansicht der richtige Ausgangspunkt. Im Warenkorb einer neuen Bestellung können andere Angaben stehen."
+        ]
+      },
+      {
+        "heading": "Warenkauf und internationalen Versand auseinanderhalten",
+        "paragraphs": [
+          "Der Einkaufsleitfaden von ACBuy beschreibt zwei Schritte. Zunächst zahlst du den Warenpreis und gegebenenfalls den angegebenen Versand vom Verkäufer zum Lager in China. Später wählst du die eingelagerten Artikel, die Lieferadresse und die internationale Versandlinie. Erst dann erhältst du den geschätzten Betrag für diese zweite Strecke. Bewahre den ersten Beleg auf, damit du seinen Umfang später wiedererkennst.",
+          "Ein Rechenbeispiel: Ein Hemd kostet 160 CNY, der Verkäufer verlangt 10 CNY Inlandsversand. Diese beiden Positionen ergeben 170 CNY. Im Lager legst du das Hemd und einen separat bestellten Schal in dasselbe Paket. Die spätere Zahlungsanforderung gehört zur Paketnummer und deckt den internationalen Versand beider Artikel. Für deine eigene Rechnung übernimmst du Beträge, Währung und weitere ausgewiesene Positionen aus deiner Bestellübersicht."
+        ]
+      },
+      {
+        "heading": "Gebühren in derselben Währung vergleichen",
+        "paragraphs": [
+          "Schreibe vor der Freigabe den Bestellwert, die Belastungswährung, ausgewiesene Bearbeitungs- oder Zahlungsgebühren und den Endbetrag auf. Vergleiche zwei Zahlungsarten anhand derselben Bestellung im selben Schritt. Bei verschiedenen Währungen sagt die kleinere Zahl allein wenig aus. Wird ein Wechselkurs angezeigt, sichere auch diese Angabe.",
+          "Zu eigenen Umrechnungs- oder Auslandsgebühren kann dir deine Bank Auskunft geben. Weicht die Buchung vom Betrag bei ACBuy ab, stelle zuerst beide Originalbeträge mit Währung gegenüber. Prüfe danach, wer umgerechnet hat und ob auf dem Kontoauszug eine separate Gebühr auftaucht. Mit „170 CNY an der Kasse, Kontoauszug in EUR“ lässt sich der Vorgang leichter zuordnen als mit zwei Zahlen ohne Währung."
+        ]
+      },
+      {
+        "heading": "Den Versandkostenvorschuss nachvollziehen",
+        "paragraphs": [
+          "Kontrolliere beim Einreichen des Pakets Zielland, Versandlinie und gewählte Verpackungsleistungen. ACBuy schätzt den Vorschuss für den internationalen Versand anhand der Strecke sowie des Gewichts und Volumens. Nach dem Verpacken stehen die endgültigen Maße fest. Vergleiche den endgültigen Versandbetrag in den Paketdetails mit dem Vorschuss für dieselbe Paketnummer.",
+          "Bei einem angenommenen Vorschuss von 240 CNY und endgültigen Kosten von 226 CNY beträgt die Differenz zu deinen Gunsten 14 CNY. Werden 252 CNY ermittelt, fehlen 12 CNY. ACBuy beschreibt beide Fälle im Leitfaden. Prüfe in deinem Konto, wie die Differenz bei diesem Paket verbucht wurde. Lege den Paketbeleg zum Zahlungsbeleg. Die Zahlen dienen nur dem Rechenbeispiel."
+        ]
+      },
+      {
+        "heading": "Wenn die Karte abgelehnt wird oder die Kasse hängen bleibt",
+        "paragraphs": [
+          "Öffne nach einer Fehlermeldung die Bestellhistorie in einem neuen Tab. Prüfe die Referenz und ob ACBuy die Bestellung als offen, in Bearbeitung oder bezahlt anzeigt. Suche dann beim Zahlungsanbieter nach Uhrzeit, Betrag und Währung. Ein abgebrochener Ladevorgang bedeutet zunächst, dass die Bestätigung im Browser fehlt. Ob eine Autorisierung erfolgt ist, musst du getrennt prüfen.",
+          "Steht die Bestellung auf offen und beim Anbieter ist kein Vorgang sichtbar, kläre vor einem weiteren Versuch eine mögliche Ablehnung mit der Bank. Prüfe Rechnungsdaten und eine eventuell unterbrochene Freigabe. Ist die Bestellung bezahlt, sichere den Beleg. Ist bei der Bank ein Betrag vorgemerkt, während ACBuy weiter Geld verlangt, bitte den Support zuerst um Zuordnung des Versuchs. Eine zweite Zahlung erschwert diese Prüfung."
+        ]
+      },
+      {
+        "heading": "Vormerkung, doppelte Buchung oder Erstattung?",
+        "paragraphs": [
+          "Ein vorgemerkter Kartenumsatz kann sich bis zur endgültigen Buchung ändern. Zwei Zeilen in der App können zu einer Autorisierung und ihrer Buchung, zu zwei Zahlungsversuchen oder zu Warenkauf und Paketversand gehören. Vergleiche Referenzen, Datum, Währung und Buchungsstatus. Wurden zwei Beträge für denselben Kauf endgültig gebucht, melde beide an ACBuy. Bleibt das Problem offen, frage den Kartenanbieter nach dem weiteren Vorgehen. Einen von dir nicht autorisierten Umsatz meldest du direkt dort.",
+          "Bei einer Erstattung oder Frachtkorrektur brauchst du den Bezug zum ursprünglichen Vorgang. Frage nach Betrag, Währung, Ausführungsdatum und Ziel der Gutschrift. Soll sie auf das Guthaben gegangen sein, prüfe dessen Verlauf. Bei Rückzahlung auf die ursprüngliche Zahlungsmethode bitte um eine nachvollziehbare Referenz für den Anbieter. Eine Stornierung, eine Frachtdifferenz und eine tatsächlich verbuchte Erstattung lassen sich anhand getrennter Belege prüfen."
+        ]
+      },
+      {
+        "heading": "Eine nachvollziehbare Anfrage an ACBuy schreiben",
+        "paragraphs": [
+          "Eine kurze Nachricht reicht: „Ich habe am [Datum, Uhrzeit, Zeitzone] versucht, die Bestellung [Referenz] über [Betrag, Währung] zu bezahlen. ACBuy zeigt [Status], meine Bank zeigt [vorgemerkt oder gebucht]. Können Sie die Zahlung zuordnen und prüfen, ob noch ein Betrag offen ist?“ Beim Versand nennst du die Paketnummer sowie Vorschuss und Endbetrag.",
+          "Schneide Screenshots so zu, dass fremde Umsätze, vollständige Kartendaten, Adresse und Kontostand verborgen bleiben. Passwörter, Kartenprüfnummern und Einmalcodes gehören nicht in eine Nachricht. Nutze die Kontaktmöglichkeit der offiziellen Website oder die Anfrage zur Bestellung im Konto. Notiere Versuche und Antworten in zeitlicher Reihenfolge, damit du eine spätere Korrektur erkennst."
+        ]
+      }
+    ]
+  },
+  "acbuy-product-links-not-working": {
+    "title": "ACBuy-Link funktioniert nicht? So findest du den Originallink zu Taobao oder Weidian",
+    "description": "So findest du aus einer ACBuy-Tabelle zurück zum Händler, erkennst die Artikelnummer bei Taobao, Weidian und 1688 und sicherst die gewählte Größe.",
+    "intro": "Wenn der Link in einer ACBuy-Tabelle ins Leere führt, suche zuerst die Produktseite des Händlers. Dort kannst du prüfen, ob das Angebot noch besteht, ob deine Größe auswählbar ist und ob sich der Artikel bei ACBuy einlesen lässt. Lass die Tabellenzeile dabei geöffnet. Speichere am Ende den Link zum Händler und die genaue Ausführung, die du bestellen wolltest, getrennt voneinander.",
+    "sections": [
+      {
+        "heading": "Welches Ziel hat der Link in der Tabellenzeile?",
+        "paragraphs": [
+          "Angenommen, eine Zeile zeigt eine marineblaue Jacke in zwei Passformen. Ein Klick auf das Bild vergrößert nur das Foto. Die Schaltfläche unter dem Preis führt dagegen zum Artikel. Auf dem Foto erkennst du die Jacke, aber weder den Händler noch die ausgewählte Passform. Prüfe auch den Produkttitel und suche nach einem separaten Händlerlink. Kopiere am Rechner die Linkadresse. Nutze am Handy das Linkmenü oder die Teilen-Funktion des Artikels. Mit der Teilen-Funktion der Tabelle verschickst du unter Umständen nur die ganze Übersicht.",
+          "Füge die Adresse zunächst in eine private Notiz ein. Führt sie zu einem einzelnen Produkt, zu einer Suche, zum Shop oder zur Tabelle? Öffnet sich die Marktplatz-App, rufe vor dem Teilen den betreffenden Artikel auf. Bietet die Einkaufsplattform einen Verweis auf das ursprüngliche Angebot, folge ihm und prüfe das Ziel. Bewahre beide Adressen auf, bis der Artikel eindeutig feststeht."
+        ]
+      },
+      {
+        "heading": "Marktplatz und Artikelnummer zusammen ablesen",
+        "paragraphs": [
+          "Ein vollständiger Taobao-Link hat häufig das Muster item.taobao.com/item.htm?id=NUMMER, bei Tmall lautet es detail.tmall.com/item.htm?id=NUMMER. Bei Weidian findest du oft weidian.com/item.html?itemID=NUMMER. 1688 verwendet unter anderem detail.1688.com/offer/NUMMER.html. NUMMER steht jeweils für die Ziffern in der tatsächlichen Adresse. Diese Muster sind keine kaufbaren Angebote. Links aus mobilen Apps können anders aussehen.",
+          "Bei Taobao und Weidian steckt die Nummer hinter dem Fragezeichen. Löschst du diesen Teil, fehlt der entscheidende Bezug zum Artikel. Bei 1688 steht die Nummer im Pfad zwischen /offer/ und .html. Daneben kann eine SKU die Farbe, Größe oder eine andere Variante kennzeichnen. Eine Shopnummer gehört zum Händler, eine Bestellnummer zum Kauf und eine Sendungsnummer zum Paket. Übernimm nur Marktplatz und Nummer, die in derselben Quelle zusammen angegeben sind. Dasselbe Produktfoto kann bei mehreren Verkäufern auftauchen."
+        ]
+      },
+      {
+        "heading": "Eine Händleradresse aus einem längeren Link herausholen",
+        "paragraphs": [
+          "Manche Agentenlinks enthalten die Händleradresse in einem Feld namens url oder productUrl. Der Anfang https%3A%2F%2Fweidian.com steht dann für eine codierte Weidian-Adresse. Am einfachsten kopierst du einen vorhandenen Link zum Original auf der Artikelseite. Andernfalls kannst du die eingebettete Adresse im eigenen Browser oder mit einem lokal ausgeführten URL-Werkzeug auslesen. Erhalte den Parameter mit der Artikelnummer vollständig.",
+          "Prüfe vor dem Öffnen den tatsächlichen Hostnamen der Zieladresse. „Weidian“ kann auch im Pfad einer völlig anderen Website stehen. Siehst du nur eine interne Nummer ohne Angabe des Marktplatzes, frage die Person, von der die Tabelle stammt, nach dem direkten Händlerlink. Für die Identifikation reicht die öffentliche Produktadresse. Kontoseiten, Links zur Kasse und persönliche Bestellnummern gehören nicht in eine geteilte Tabelle."
+        ]
+      },
+      {
+        "heading": "Wenn ein Kurzlink zur App, zur Anmeldung oder auf die Startseite führt",
+        "paragraphs": [
+          "Eine geteilte Nachricht kann neben dem Titel auch Werbetext und einen Kurzlink enthalten. Hebe sie vollständig auf. Öffne einen erkennbaren Link aus einer vertrauenswürdigen Quelle und sieh nach, wo die Weiterleitung endet. Auf der Shop-Startseite fehlt noch ein Schritt. Öffne das einzelne Angebot mit Produktname, Preis und Auswahlmöglichkeiten und teile erst diese Ansicht. Landest du im App-Store oder wieder auf der Startseite, bitte den Absender, den Artikel erneut direkt aus der Produktansicht zu teilen.",
+          "Verlangt der Marktplatz eine Anmeldung oder schränkt er den Zugriff regional ein, bleibt offen, ob das Angebot noch verfügbar ist. Nutze deine gewohnte offizielle App oder frage den Verkäufer nach einem öffentlichen Angebot. Ein externer Linkdienst braucht weder dein Passwort noch Bilder deines Kontos. Aus der Zeichenfolge eines Kurzlinks lässt sich die Artikelnummer nicht zuverlässig herleiten."
+        ]
+      },
+      {
+        "heading": "Die richtige Ausführung im neuen Link festhalten",
+        "paragraphs": [
+          "Bei der Jacke stimmen Titel und Produktfoto. Vorausgewählt ist aber die schwarze Variante in regulärer Passform. Vergleiche Händler, genaue Farbbezeichnung, Schnitt, Größe und gegebenenfalls Ausführung oder Charge. Hinter der Übersetzung „Blau“ können zwei unterschiedliche Farbtöne stehen. Kopiere die ursprüngliche Bezeichnung des Verkäufers zu deiner Notiz. Bei einer Größentabelle lohnt sich auch das für deine Wahl wichtige Maß. Steht dort die Breite der flach liegenden Jacke oder ein Körperumfang?",
+          "Öffne den gespeicherten Link in einem neuen Tab. Bleiben Farbe und Größe ausgewählt? Eine einzige Adresse kann mehrere Varianten mit verschiedenen Preisen abdecken. Notiere Stückzahl und Preis für deine Auswahl. Prüfe bei 1688 zusätzlich die Mindestmenge und die zu deiner Bestellmenge passende Preisstaffel. Der Einstiegsbetrag für ein Zubehörteil oder für hundert Stück sagt wenig über den Preis einer einzelnen Jacke aus."
+        ]
+      },
+      {
+        "heading": "Händlerangebot, ausverkaufte Größe oder Fehler beim Einlesen?",
+        "paragraphs": [
+          "Ist deine Variante beim Händler sichtbar, ACBuy zeigt aber einen Fehler, füge die öffentliche Produktadresse in die Produktsuche der Plattform ein. Die ACBuy-Einkaufsanleitung beschreibt das Einlesen von Marktplatzlinks und einen manuellen Bestellweg für Fälle, in denen Hilfe nötig ist. Prüfe, welche Möglichkeiten dein Konto gerade anbietet. Ein manuelles Formular bestätigt weder Lagerbestand noch Endpreis oder die aktuelle Annahme neuer Bestellungen.",
+          "Ist nur deine Größe ausgegraut, halte fest, dass der Link funktioniert und diese Variante derzeit nicht auswählbar ist. Hat der Händler das Angebot laut eigener Meldung entfernt, frage nach einer Neuveröffentlichung. Vergleiche bei einer neuen Nummer erneut Shop, Beschreibung, Maße, Preis und Menge. Erscheint lediglich eine Anmeldeseite oder eine technische Fehlermeldung, notiere den genauen Befund. So muss die nächste Person bei der Prüfung nicht wieder von vorne anfangen."
+        ]
+      },
+      {
+        "heading": "QC-Bilder und Rückfragen dem richtigen Angebot zuordnen",
+        "paragraphs": [
+          "Ein QC-Foto aus dem Lager kann Nähte, Knöpfe, Etiketten oder Maße zeigen. Dafür muss es zum richtigen Angebot und zur richtigen Variante gehören. Ein älteres Foto belegt nicht, dass derselbe Verkäufer die abgebildete Ausführung heute noch führt. Speichere die Händleradresse zusammen mit dem Bildverweis. Findest du über die Bildersuche einen möglichen Ersatz, prüfe dessen Verkäufer und Auswahl neu, bevor du vorhandene Bilder übernimmst.",
+          "Nutze bei einer bestehenden Bestellung deren privaten Supportverlauf. Nenne den öffentlichen Produktlink, den Verkäufer, die genaue Variante und den Schritt, bei dem der Fehler auftritt. Eine konkrete Frage hilft, etwa ob genau die marineblaue Jacke unter einer neuen Artikelnummer angeboten wird. Schicke die Bestellnummer nur im offiziellen Kontobereich. Für einen öffentlichen Screenshot genügen Produkttitel, Optionen und Fehlermeldung."
+        ]
+      },
+      {
+        "heading": "Was sollte nach der Prüfung in der Tabelle stehen?",
+        "paragraphs": [
+          "Lege bei wichtigen Unterschieden eine Zeile je Variante an. Für die Jacke etwa Händlername, Taobao-Artikelnummer, Marineblau, lockere Passform, Größe L, Preis der Auswahl und Prüfdatum. Nutze getrennte Spalten für Händleradresse und ACBuy-Link. Ist ein Ersatzangebot bestätigt, notiere kurz die vorherige Nummer und was sich geändert hat. Damit bleibt der Fund nachvollziehbar, wenn ein Link später erneut ausfällt."
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "acbuy-spreadsheet-guide": {
+    "heading": "Przejdź z wiersza arkusza do oferty sprzedawcy",
+    "paragraphs": [
+      "Weźmy bluzę z kapturem dostępną w dwóch kolorach. Otwórz wiersz arkusza, przejdź do oferty sprzedawcy i wybierz kolor oraz rozmiar. Zapisz nazwę platformy, identyfikator produktu, oznaczenie rozmiaru i cenę za sztukę. Jeśli w drugim wierszu widzisz to samo zdjęcie, sprawdź sprzedawcę i identyfikator, zanim porównasz ceny obu bluz.",
+      "Obok wiersza zapisz oryginalny adres oferty i datę sprawdzenia. Jeśli wybranego rozmiaru nie da się zaznaczyć albo link prowadzi teraz na stronę główną sklepu, oznacz ten wiersz jako niedostępny na potrzeby tego zakupu. Działający odnośnik do innego rozmiaru niewiele pomoże, gdy przyjdzie porównać zamówienie ze zdjęciami z magazynu."
+    ]
+  },
+  "acbuy-shipping-cost-guide": {
+    "heading": "Porównaj dwa rozmiary kartonu na tej samej trasie",
+    "paragraphs": [
+      "Załóżmy, że zapakowana para butów waży 2,0 kg, a karton ma 40 × 30 × 20 cm. Wyłącznie na potrzeby przykładu przyjmijmy, że przewoźnik dzieli objętość w cm³ przez 6000 i nalicza opłatę według większej z dwóch mas: rzeczywistej lub objętościowej. Wynik to 4,0 kg. W kartonie 40 × 30 × 15 cm przy tej samej masie 2,0 kg wynik spada do 3,0 kg. To dane przykładowe.",
+      "W kalkulatorze zachowaj ten sam kraj docelowy, wariant wysyłki, zawartość i masę. Zmień tylko wymiary, po czym zapisz obie ceny i zasadę zaokrąglania. Po spakowaniu powtórz obliczenie z wymiarami podanymi przez magazyn. Zanim zlecisz usunięcie pudełka po butach, zapytaj, jak buty zostaną zabezpieczone i czy da się uzyskać mniejsze wymiary zewnętrzne."
+    ]
+  },
+  "acbuy-qc-photos-guide": {
+    "heading": "Poproś o zdjęcie, które rozstrzygnie wątpliwość co do rozmiaru",
+    "paragraphs": [
+      "Metka w rozmiarze L niewiele mówi o szerokości bluzy na wysokości klatki piersiowej. Najpierw sprawdź, jaki wymiar podaje tabela sprzedawcy. Jeśli to szerokość na płasko, poproś o zdjęcie rozłożonej bluzy, z zapiętym zamkiem, jeśli go ma. Miarka powinna biec prosto od jednego szwu pod pachą do drugiego. Oba punkty pomiaru i podziałka powinny być widoczne na jednym ujęciu.",
+      "Zmierz w ten sam sposób własną dobrze leżącą bluzę i porównaj wyniki. Pełnego obwodu klatki nie można porównywać wprost z szerokością na płasko. Jeśli materiał jest rozciągnięty, początek miarki zasłonięty lub jednostka nieczytelna, poproś o wyjaśnienie przed zatwierdzeniem paczki. Wcześniej sprawdź w zamówieniu dostępne opcje zdjęć i ich ceny."
+    ]
+  },
+  "acbuy-fees-explained": {
+    "heading": "Rozlicz zaliczkę na wysyłkę z końcową opłatą",
+    "paragraphs": [
+      "Weźmy przykładowe zamówienie w juanach. Produkt kosztuje 180 ¥, a dostawa na terenie Chin 12 ¥. Później wpłacasz 95 ¥ zaliczki na wysyłkę międzynarodową. Po zapakowaniu końcowa opłata widoczna w szczegółach paczki wynosi 88 ¥. Do tej pory z twoich środków ubyło 287 ¥. Jeśli różnica 7 ¥ pojawi się jako dostępne saldo konta, produkt i dostawy kosztują łącznie 280 ¥ przed innymi opłatami. Odróżniaj saldo na koncie od zwrotu na kartę.",
+      "Każdą pozycję zapisz w osobnym wierszu: produkt, dostawa krajowa, zaliczka, koszt końcowy lub korekta. Przed liczeniem porównaj numery zamówienia i paczki. Dodanie 88 ¥ do zaliczki 95 ¥ jako kolejnej płatności zawyży koszt. Sprawdź faktycznie zaksięgowane operacje, aby ustalić, czy jakaś różnica nadal czeka na rozliczenie."
+    ]
+  },
+  "acbuy-coupons-shipping-discounts": {
+    "heading": "Zanim zaplanujesz paczkę, sprawdź, na co możesz wymienić punkty ACBuy",
+    "paragraphs": [
+      "W sekcji punktów na koncie sprawdź osobno saldo, nagrody dostępne obecnie do wyboru i warunki interesującej cię nagrody. Według opublikowanego poradnika zakupowego ACBuy po osiągnięciu 500 punktów można wyświetlić dostępne opcje wymiany. Informacja dotyczy dostępu do listy. Nie określa wartości pieniężnej punktu ani nie gwarantuje kuponu na wysyłkę wybraną trasą.",
+      "Jeśli widzisz nagrodę na wysyłkę, przed wydaniem punktów sprawdź termin ważności, dostępne trasy, wymagany próg kwotowy i opłatę objętą rabatem. Przy zgłaszaniu paczki porównaj kwotę przed wybraniem kuponu i po nim, bez zmiany trasy i usług. Uwzględnij oszczędność, gdy obniżka pojawi się w sumie. Jeśli nagrody brakuje, w budżecie zostaw kwotę z pierwotnej wyceny."
+    ]
+  }
+}

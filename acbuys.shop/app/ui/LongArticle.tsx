@@ -60,7 +60,7 @@ export default function LongArticle({ article, related }: { article: ArticleReco
                 {section.callout && <div className="article-callout"><b>{section.callout.title}</b><p>{section.callout.text}</p></div>}
               </section>
             ))}
-            <div className="source-box"><b>Sources and verification</b><p>Source context: <a href="https://www.acbuy.com/shopping-guide" target="_blank" rel="noopener">ACBuy official Shopping Guide</a>, homepage and shipping estimator. See the research note for the scope of this article. Editorial update: {article.updatedLabel}. Confirm changing service terms in the live account.</p></div>
+            <div className="source-box"><b>Sources and verification</b>{article.sources ? <ul>{article.sources.map((source) => <li key={source.url}><a href={source.url} target="_blank" rel="noopener">{source.label}</a></li>)}</ul> : <p>Source context: <a href="https://www.acbuy.com/shopping-guide" target="_blank" rel="noopener">ACBuy official Shopping Guide</a>, homepage and shipping estimator. See the research note for the scope of this article. Editorial update: {article.updatedLabel}. Confirm changing service terms in the live account.</p>}</div>
           </div>
         </div>
       </article>

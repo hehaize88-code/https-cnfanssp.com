@@ -15,11 +15,11 @@ const walk = directory => readdirSync(directory).sort().flatMap(name => {
 });
 const digest = file => createHash('sha256').update(readFileSync(file)).digest('hex');
 const inventory = files => Object.fromEntries(files.sort().map(file => [path.relative(root, file).split(path.sep).join('/'), digest(file)]));
-const sourceFiles = ['app', 'public', 'content/locales', 'scripts', 'build', 'worker'].flatMap(dir => walk(path.join(root, dir)));
+const sourceFiles = ['app', 'public', 'content/locales', 'content/editorial', 'scripts', 'build', 'worker'].flatMap(dir => walk(path.join(root, dir)));
 sourceFiles.push(...['package.json', 'package-lock.json', 'vite.config.ts', 'next.config.ts', 'postcss.config.mjs'].map(file => path.join(root, file)));
 const files = walk(output);
 const pages = files.filter(file => path.basename(file) === 'index.html');
-assert.equal(pages.length, 132, 'The complete six-language export must contain 132 pages');
+assert.equal(pages.length, 150, 'The complete six-language export must contain 150 pages');
 const counts = Object.fromEntries(langs.map(lang => [lang, 0]));
 const routes = new Set();
 for (const file of pages) {
@@ -38,12 +38,12 @@ for (const file of pages) {
   for (const alternate of [...langs, 'x-default']) {
     assert.equal(links.filter(tag => tag.includes(`hreflang="${alternate}"`)).length, 1, `${route}: missing ${alternate} alternate`);
   }
-  assert.ok(/<script\b[^>]*src="\/site\.js\?v=20261007"/.test(html), `${route}: missing interactions`);
+  assert.ok(/<script\b[^>]*src="\/site\.js\?v=20261105"/.test(html), `${route}: missing interactions`);
 }
-assert.deepEqual(counts, Object.fromEntries(langs.map(lang => [lang, 22])));
+assert.deepEqual(counts, Object.fromEntries(langs.map(lang => [lang, 25])));
 const sitemap = readFileSync(path.join(output, 'sitemap.xml'), 'utf8');
 const urls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(match => match[1]);
-assert.equal(urls.length, 132, 'Sitemap must include every language page once');
+assert.equal(urls.length, 150, 'Sitemap must include every language page once');
 assert.deepEqual(new Set(urls), routes, 'Sitemap routes must match the exported pages');
 assert.equal(readFileSync(path.join(root, 'public/site.js'), 'utf8'), readFileSync(path.join(output, 'site.js'), 'utf8'), 'Exported interactions are stale');
 for (const file of files) assert.ok(statSync(file).size < 25 * 1024 * 1024, `Deployment file too large: ${file}`);
@@ -54,5 +54,5 @@ if (process.argv.includes('--write-manifest')) {
 } else {
   const expected = JSON.parse(readFileSync(manifestPath, 'utf8'));
   assert.deepEqual(current, expected, 'Source or export changed: rebuild and validate all language editions before publishing');
-  console.log('PASS: verified source/output hashes, 132 pages, six languages, sitemap, canonicals and interactions.');
+  console.log('PASS: verified source/output hashes, 150 pages, six languages, sitemap, canonicals and interactions.');
 }

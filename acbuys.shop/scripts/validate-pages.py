@@ -13,7 +13,7 @@ for p in root.rglob('index.html'):
  route='/'+p.parent.relative_to(root).as_posix().strip('.')
  if not route.endswith('/'):route+='/'
  pages[route]=BeautifulSoup(p.read_text(),'html.parser')
-assert len(pages)==132, len(pages)
+assert len(pages)==150, len(pages)
 for route,s in pages.items():
  lang=route.split('/')[1] if route.split('/')[1] in langs[1:] else 'en'
  counts[lang]+=1
@@ -60,5 +60,5 @@ for route,s in pages.items():
 sitemap=ET.parse(root/'sitemap.xml')
 locs={x.text for x in sitemap.iter('{http://www.sitemaps.org/schemas/sitemap/0.9}loc')}
 assert locs=={'https://acbuys.shop'+p for p in pages}
-assert set(counts.values())=={22},counts
-print('PASS: 132 pages; 22 per language; canonicals, hreflang, sitemap, schema, assets, section parity and internal links verified.')
+assert set(counts.values())=={25},counts
+print('PASS: 150 pages; 25 per language; canonicals, hreflang, sitemap, schema, assets, section parity and internal links verified.')

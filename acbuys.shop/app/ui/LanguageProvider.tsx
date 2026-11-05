@@ -1,6 +1,7 @@
 "use client";
 
 import { createContext, ReactNode, useContext, useEffect, useMemo, useRef, useState } from "react";
+import { loadEditorialTranslations } from "./editorial-translations";
 import { dictionaries, Lang, languageOptions } from "./translation-data";
 
 type ContextValue = { lang: Lang; setLang: (lang: Lang) => void };
@@ -59,10 +60,18 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
       applying.current = false;
     };
 
+    let active = true;
+    if (lang !== "en") {
+      void loadEditorialTranslations(lang).then(pairs => {
+        if (!active) return;
+        for (const [key, value] of pairs) dictionaries[lang].set(key, value);
+        apply();
+      });
+    }
     apply();
     const observer = new MutationObserver(() => queueMicrotask(apply));
     observer.observe(document.body, { childList: true, subtree: true, characterData: true });
-    return () => observer.disconnect();
+    return () => { active = false; observer.disconnect(); };
   }, [lang]);
 
   const value = useMemo(() => ({ lang, setLang }), [lang]);

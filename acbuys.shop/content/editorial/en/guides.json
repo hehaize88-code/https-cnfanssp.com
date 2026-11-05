@@ -1,0 +1,178 @@
+{
+  "acbuy-service-status": {
+    "title": "Is ACBuy working? Check new orders, warehouse items and parcels",
+    "description": "See what ACBuy said about buying and shipping, then check a new order, an item in storage or a parcel already in transit.",
+    "intro": "As of our 5 November 2026 review, we could not verify a dated announcement that ACBuy had reopened its purchasing service for all customers. The clearest dated reply we found was on 14 September, when the ACBuy community said purchases were still unavailable. If you already have an order, start with the last event recorded against it. A shopper waiting for a seller to dispatch a jacket needs a different answer from someone whose jacket is already with an international carrier.",
+    "sections": [
+      {
+        "heading": "What the public announcements establish",
+        "paragraphs": [
+          "In June, ACBuy announced changes to purchasing, exchanges and parcel handling during a platform upgrade. Its plan suspended purchases and exchanges from 12 to 30 June. It asked people who already had goods in storage to arrange shipment and set 1 July as its target for a gradual restart. A target date alone tells you little about which features actually returned. A subsequent July community reply said ordering remained unavailable at the time.",
+          "The 14 September response answered a shopper who had regained access to their account and wanted to know whether they could buy. The community also published an update giving priority to a separate custom-product service. If you find a promotion for that service, check what product and checkout the offer covers. Use the original ACBuy order record when you need help with an earlier purchase."
+        ]
+      },
+      {
+        "heading": "If you are planning a new purchase",
+        "paragraphs": [
+          "Keep the seller's original listing and the precise size, colour and variant you wanted. A spreadsheet can still be useful for comparing listings, even when the agent cannot place an order. Open the listing to see whether that particular option is available at the marketplace. Then open ACBuy from its official address and look for a dated purchase notice and any order restrictions shown for your account.",
+          "If a form stops after importing a link, note the step and the exact message. A missing size may be a listing issue. A message about purchasing across different items is a reason to ask whether the order service is open. Get that answer before adding funds. There is no need to make a small payment just to discover whether a product page works. If the payment screen closed unexpectedly, check your order history and payment activity before trying again."
+        ]
+      },
+      {
+        "heading": "If you paid and are waiting for the seller",
+        "paragraphs": [
+          "Find the ACBuy order number, the item or variant, the date you paid and the latest dated update. Read what that update actually confirms. Payment recorded, order placed with seller, seller dispatched and warehouse received are four different milestones. Screenshot the last one you can see. If your order has several lines, look up the affected line individually. Two items from the same purchase can be at different stages.",
+          "For example, if a seller tracking number appears, ask whether the local parcel reached the warehouse and whether it has been matched to your item. If the order only shows payment, ask whether the agent placed the purchase with the seller and what options apply to that order. Include the existing order number if you follow up. A second order can leave two different records for support to reconcile."
+        ]
+      },
+      {
+        "heading": "If the item is in the ACBuy warehouse",
+        "paragraphs": [
+          "Open the inventory screen and the messages associated with the item. Save the stock reference, arrival date, latest photos, any displayed deadline and the available actions. Open a photograph and compare its size sticker or colour with the order line. Older QC photos help identify what arrived at the time. Current inventory and support messages are the place to establish whether that item can still be packed for you.",
+          "The June warehouse announcement encouraged customers to submit parcels early. It described specific arrangements during the upgrade. For a missing row today, first check your archived or completed parcels in case it has already been assigned to a shipment. Then ask support to locate the stock reference, confirm whether it is physically held and state the next action and deadline for that particular item. Keep the reply alongside the original receipt."
+        ]
+      },
+      {
+        "heading": "If a parcel has a tracking number",
+        "paragraphs": [
+          "Open the parcel record and copy the carrier name, tracking number and last dated event. Look up the number directly on that carrier's site. A label or electronic shipment notice can appear before a carrier takes possession. A dated acceptance or collection scan gives you a more precise starting point. The seller's domestic number and the international number may lead to different tracking histories.",
+          "If the carrier shows only label creation, ask the warehouse whether it handed the parcel over and on what date. If the tracking shows physical acceptance followed by a gap, give the carrier the last scan, destination country and tracking reference when asking about the next step. Save any second tracking number issued for the local delivery leg. This lets you continue the enquiry even if the agent's page later stops updating."
+        ]
+      },
+      {
+        "heading": "Asking support a question they can answer",
+        "paragraphs": [
+          "Use the support entry inside your account or on ACBuy's own website. A practical message might read, “My order [reference] last changed on [date] and shows [exact wording]. Has this item been purchased, received or assigned to a parcel? Which action is available and is there a deadline?” Ask about one item or parcel first and include a cropped screenshot showing that reference and the status.",
+          "Keep a private copy with the date and the case reference. When a reply refers to a later update, ask where it will be posted or which change to watch for in your account. If the same issue affects several products, add the other references to the same conversation after identifying the common step. Keep full payment-card details, passwords and login codes out of messages and public discussions.",
+          "If you cannot sign in, use the order confirmation you already saved to identify the affected purchase. Record when access last worked, which official page you opened and what happened after you submitted the form. Include the time zone if the order and carrier records show different dates. For instance, a late-evening update at your destination can appear under the following day in a warehouse log. Keeping the original time next to each event makes it easier to match the two records."
+        ]
+      },
+      {
+        "heading": "Common questions about ACBuy service status",
+        "paragraphs": [
+          "Can an old haul video confirm ordering is back? Look for when the shopper placed the order and when the parcel was handed over. Someone can receive an older shipment during a pause in new purchases. A dated notice naming the purchasing function is stronger evidence for a shopper hoping to place a fresh order.",
+          "Will an old shipping deadline or coupon apply to my warehouse item? Read the notice date, the goods it covered and the conditions in your account. If the item is missing or the action has expired, send the stock reference and ask for the options available now. A screenshot of the old offer may help identify the relevant period.",
+          "What would change this assessment? A new dated ACBuy notice explicitly reopening marketplace purchases would change the general answer. For your own order, a confirmed purchase, inventory check or carrier collection with a date can settle the narrower question immediately. Return to the relevant order, stock or parcel record when checking again."
+        ]
+      }
+    ]
+  },
+  "acbuy-payment-methods": {
+    "title": "ACBuy Payment Methods, Fees and Failed Payments",
+    "description": "Check which ACBuy payment methods appear for your order, read the two shipping charges and trace a pending payment before you try again.",
+    "intro": "Which payment methods can you use on ACBuy? Open the official checkout for the purchase or parcel you intend to pay for and read the choices before confirming. An international credit card appears as a topic in ACBuy’s public help menu. That alone cannot confirm that your card, PayPal or a particular wallet is available for your transaction. If checkout is unavailable, keep the order reference and check with ACBuy before moving money into an account balance. Here is how to read each amount and what to do if the two sides of a payment disagree.",
+    "sections": [
+      {
+        "heading": "Find the payment options for your particular purchase",
+        "paragraphs": [
+          "Start from your own account on the official ACBuy site. Open the correct unpaid order, or select the stored items for a parcel if you have reached the shipping stage. Verify the product variant, quantity, currency and order or parcel reference. Continue only as far as the payment summary. Look for the methods you can select there and the amount next to each one. You can make this comparison without authorizing a payment.",
+          "Someone else’s screenshot may show a different stage, currency or checkout date. If a method you expected is missing, note what you are paying for and the options you can see. Ask support whether that method is available for this transaction. For an existing warehouse item, open the parcel itself. Returning to the shopping cart would show you the options for a new purchase. Keep the two screens separate if you need to explain the problem later."
+        ]
+      },
+      {
+        "heading": "Read the product payment and the parcel payment separately",
+        "paragraphs": [
+          "ACBuy’s shopping guide divides the journey into two payments. The initial order covers the goods and any stated delivery charge from the seller to the warehouse in China. Later, once you select stored items and an international route, you see a parcel shipping estimate. Paying the seller-to-warehouse amount does not settle the journey from the warehouse to your home. Save the first receipt so you can identify exactly which part of the journey it covers.",
+          "For a worked example, imagine a shirt costs CNY 160 and the seller charges CNY 10 for domestic delivery. The figures on those two lines add up to CNY 170. At the warehouse you put the shirt and a separately ordered scarf into one parcel. The later parcel request has its own reference and covers the international shipment of both items. These numbers illustrate the arithmetic. For your own budget, copy the amounts and currency from your checkout and include any other separately listed charges."
+        ]
+      },
+      {
+        "heading": "Compare fees in the same currency",
+        "paragraphs": [
+          "Before choosing a method, take note of the amount being purchased, the currency in which the method will charge you, any payment or service fee that is shown and the total you will authorize. If ACBuy offers two ways to pay, compare them for the same order at the same point in checkout. A lower-looking number in a different currency is insufficient to identify the cheaper option. Keep the displayed exchange quote if one is provided.",
+          "Your bank or payment provider can explain its own currency conversion or cross-border charges. When the number posted by the bank differs from the amount shown by ACBuy, first put both amounts in their original currencies side by side. Then check which party converted the money and whether the statement shows a separate fee. Reporting “CNY 170 at checkout, my statement is in EUR” gives support a better starting point than comparing two unlabeled numbers."
+        ]
+      },
+      {
+        "heading": "Understand a shipping deposit and its adjustment",
+        "paragraphs": [
+          "When you submit a parcel, check the destination, selected shipping line and any optional packing services. ACBuy describes the international shipping deposit as an estimate based on the route and the package’s weight and volume. Final packing gives the warehouse different information from an estimate made before the box exists. Check the parcel details after packing for the final amount and compare it with the deposit on that same parcel reference.",
+          "Suppose the deposit is CNY 240. A final figure of CNY 226 would leave a difference of CNY 14 in your favour. A final figure of CNY 252 would leave CNY 12 to pay. ACBuy’s guide describes an adjustment in either direction. Check the account record for how your particular adjustment is handled. Keep the final parcel record with the original payment receipt. The example amounts are illustrative and say nothing about the current price of a shipping line."
+        ]
+      },
+      {
+        "heading": "When a card is declined or checkout times out",
+        "paragraphs": [
+          "After a failure message, leave the payment screen and open your order history in a fresh tab. Match the reference and look for an unpaid, processing or paid status. Then check your bank or provider for an entry with the same time, amount and currency. A browser timeout tells you that the final confirmation did not reach that browser session. By itself it cannot tell you whether the provider authorized the attempt.",
+          "If the order is unpaid and the provider shows no record, ask the issuer about a decline before another attempt. Check the billing details requested by the actual payment form and whether an authentication step was left incomplete. If the order is paid, stop retrying and save the receipt. If the bank shows an authorization but ACBuy still asks for payment, pause and ask support to match the attempt to your order. Starting a second checkout makes the first attempt harder to trace."
+        ]
+      },
+      {
+        "heading": "Identify a pending entry, duplicate charge or refund",
+        "paragraphs": [
+          "A pending card entry means the issuer has recorded an authorization. Its amount or status can still change. Two rows in a banking app can represent different stages of one payment, two attempts or the product and parcel payments. Compare references, dates, currencies and whether the bank marks each row pending or posted. If two charges have posted for the same purchase, give ACBuy both records and ask your issuer how to proceed if the issue remains unresolved. Report a payment you did not authorize directly to your issuer.",
+          "For a refund or freight adjustment, identify the transaction being reversed. Ask ACBuy what amount and currency were issued, on what date, and to which destination. If support says a refund went to a balance, review that balance’s history. If it went to the original payment method, ask for a traceable reference that your provider can use. Timing and handling depend on the transaction. A cancellation message, a freight difference and a posted refund are three separate records worth keeping."
+        ]
+      },
+      {
+        "heading": "What to send ACBuy when payment records disagree",
+        "paragraphs": [
+          "A short, specific message is usually easier to investigate than a screen recording. For example: “I attempted to pay for order [reference] at [time and time zone]. Checkout showed [amount and currency]. My order currently shows [status] and my provider shows [pending or posted]. Can you match this attempt and tell me whether further payment is due?” For a freight issue, replace the order reference with the parcel reference and include both the deposit and final amount.",
+          "Attach only what identifies the transaction. Crop screenshots to remove unrelated purchases, full card details, address and balance. Keep passwords, security codes and one-time authentication codes private. Start the conversation from the official site or the order inquiry in your account. While you wait for the answer, keep a single timeline of attempts and responses. It will help you recognize a later adjustment and avoid paying the same request twice."
+        ]
+      }
+    ]
+  },
+  "acbuy-product-links-not-working": {
+    "title": "ACBuy Link Not Working? Find the Original Taobao or Weidian URL",
+    "description": "Recover the seller’s link from an ACBuy spreadsheet, read Taobao, Weidian or 1688 item IDs, and keep the size and colour you originally saved.",
+    "intro": "When an ACBuy spreadsheet link stops opening, the most useful thing to recover is the seller’s product page. It lets you check whether the item still exists, whether your size is available and whether the buying platform can read the listing. Keep the original spreadsheet row open while you work. A link to the correct seller and a record of the exact option you wanted are worth saving separately.",
+    "sections": [
+      {
+        "heading": "Start with the button you actually clicked",
+        "paragraphs": [
+          "Suppose a spreadsheet row shows a navy jacket in two fits. Clicking the photo opens a larger image, while the button beneath the price opens a product page. The image can help you recognise the jacket, but it cannot tell you which seller listed it or which fit was selected. Look for a separate source link, shop name or link attached to the product title. On a computer, copy that link’s address. On a phone, use the link menu or the product’s share button rather than the browser’s button for sharing the spreadsheet itself.",
+          "Paste the address into a private note first. This makes it easier to see if you copied a product, the whole spreadsheet, a search results page or a shop homepage. If the item opens in the marketplace app, navigate to its individual product screen before copying. Where the buying platform provides a link back to the seller, use it and check the destination. Keep both addresses until you have identified the product."
+        ]
+      },
+      {
+        "heading": "Read the marketplace and its listing number together",
+        "paragraphs": [
+          "On a full Taobao product page, look for item.taobao.com/item.htm?id=NUMBER. On Tmall the common form is detail.tmall.com/item.htm?id=NUMBER. Weidian often uses weidian.com/item.html?itemID=NUMBER. For 1688, look for detail.1688.com/offer/NUMBER.html. NUMBER represents the digits you actually see. These examples describe the layout of an address. They do not refer to items for sale. Mobile and app share links can look different.",
+          "On Taobao or Weidian, removing everything after the question mark would remove the listing number. On 1688, the offer number sits between /offer/ and .html. A nearby SKU number may identify a particular choice within a listing. A shop ID identifies a seller, and an order or tracking number refers to a transaction or parcel. Only combine a marketplace and number that appeared together on the source page. A familiar photo appearing on another marketplace is too little evidence to match the listing."
+        ]
+      },
+      {
+        "heading": "Recover a link hidden inside another link",
+        "paragraphs": [
+          "A buying-agent address may carry the seller URL inside a parameter such as url or productUrl. For example, the text https%3A%2F%2Fweidian.com is an encoded way of writing the start of a Weidian address. If the product page offers a source link, copying it directly is usually simpler than editing the wrapper. Otherwise, read the embedded address in your own browser or use a local URL parser. Preserve the seller’s parameter containing the item number.",
+          "Check the destination’s actual hostname before opening it. A marketplace name can appear in the path or query of a different website. If all you can see is an internal product number with no identifiable marketplace, keep the original link and request the source from the person who shared it. Sending the public item address is sufficient for identification. Keep account pages, checkout links and private order references out of shared spreadsheets."
+        ]
+      },
+      {
+        "heading": "When a short link opens the app, a login page or a homepage",
+        "paragraphs": [
+          "An app share may include an invitation, a title and a short URL in the same message. Keep a copy of the whole message. Follow a recognisable link from a trusted source, then look at the destination after the app or browser finishes opening. A store banner is one step early. Open the item that has its own product name, price and choices, then share that screen. If the message opens the app store or homepage, ask the sender for a fresh share directly from the product.",
+          "If a marketplace asks you to log in or says the item cannot be viewed in your region, the product’s availability is still uncertain. Use your usual official app or ask the seller for a public listing. Do not give a third-party link tool your credentials or share a screen containing account details. A short code alone does not provide a reliable way to reconstruct an item number."
+        ]
+      },
+      {
+        "heading": "Match the variant before saving a replacement",
+        "paragraphs": [
+          "Return to the jacket example. The listing title and hero photo match, yet the default option is black in a regular fit. Check the seller name, original colour wording, fit, size and any version or batch label. A translated option such as “blue” can hide a distinction between two shades. Copy the seller’s wording beside your own note. If a size chart is shown, record the measurement relevant to your choice and whether the chart describes the garment laid flat or the wearer.",
+          "Reopen the saved link in a fresh tab and see which options remain selected. A product URL can lead to the right listing while losing every selection you made. Write the quantity and selected-option price alongside the link. With a 1688 listing, also check the minimum quantity and which price tier applies to your quantity. A price attached to the smallest accessory or the largest quantity can look attractive in a spreadsheet and change when you choose the actual item."
+        ]
+      },
+      {
+        "heading": "Separate a missing listing from an import problem",
+        "paragraphs": [
+          "If the seller page opens and shows your exact option, but ACBuy cannot display the item, try pasting that public seller address into the platform’s product search. ACBuy’s shopping guide describes importing a marketplace URL and a manual order flow for items that require assistance. Check which options are currently offered in your own account. A manual form is a request for assistance and does not confirm stock, price or the ability to place a new order.",
+          "If the listing opens but your size is greyed out or unavailable, record the link as valid and the variant as unavailable. If the seller explicitly says the listing was removed, ask whether it was relisted. A new listing number deserves a fresh check of the seller, description, measurements, quantity and price. If the only result is a login prompt or a technical error, record what you saw and leave availability open. These distinctions make the next check much quicker."
+        ]
+      },
+      {
+        "heading": "Use warehouse photos and support with the right reference",
+        "paragraphs": [
+          "A warehouse QC photo can help compare buttons, stitching, measurements or labels when its listing and variant match. A photograph from an older order cannot tell you that the seller still has the same version today. Keep the original seller URL beside the image reference. If you found a possible replacement through image search, treat it as a new candidate and repeat the seller and option checks before attaching the photos.",
+          "For an existing order, use its private support conversation. Include the public source URL, the seller name, the variant as written on the listing and the screen where the link failed. State what you need the agent to confirm, such as whether the seller moved that exact navy jacket to another listing. Share the order reference only through the account’s official support channel. A public screenshot can usually be cropped to show the product title, options and error alone."
+        ]
+      },
+      {
+        "heading": "What belongs in the spreadsheet after the check?",
+        "paragraphs": [
+          "Save one row per option when differences matter. For the jacket, that might read “seller name / Taobao item number / navy, relaxed fit / size L / selected price / last checked date”. Keep the seller URL and ACBuy link in separate columns. If a replacement is confirmed, preserve a short note identifying the old listing and what changed. This gives the next reader a way to verify the find even when one of the links expires again."
+        ]
+      }
+    ]
+  }
+}

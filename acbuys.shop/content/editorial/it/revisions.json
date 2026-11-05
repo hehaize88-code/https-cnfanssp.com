@@ -1,0 +1,37 @@
+{
+  "acbuy-spreadsheet-guide": {
+    "heading": "Risali da una riga del foglio all’inserzione del venditore",
+    "paragraphs": [
+      "Prendi una felpa con cappuccio proposta in due colori. Apri la riga del foglio, passa all’inserzione del venditore e seleziona il colore e la taglia che cerchi. Annota la piattaforma, l’ID articolo, la taglia indicata e il prezzo per un pezzo. Se un’altra riga usa la stessa foto, confronta il venditore e l’ID prima di trattare i due prezzi come offerte per la stessa felpa.",
+      "Salva l’indirizzo originale dell’inserzione accanto alla riga, con la data del controllo. Se la tua taglia non è selezionabile o il link ora porta alla pagina iniziale del negozio, segna la riga come inutilizzabile per questo acquisto. Un link che apre un’altra taglia serve a poco quando devi confrontare le foto del magazzino con l’ordine."
+    ]
+  },
+  "acbuy-shipping-cost-guide": {
+    "heading": "Confronta due scatole sulla stessa linea di spedizione",
+    "paragraphs": [
+      "Supponi che un paio di scarpe imballato pesi 2,0 kg in uno scatolone da 40 × 30 × 20 cm. Solo per questo esempio, la linea divide i centimetri cubi per 6.000 e applica il maggiore tra peso reale e volumetrico. Il risultato è 4,0 kg. Con uno scatolone da 40 × 30 × 15 cm e gli stessi 2,0 kg si scende a 3,0 kg. Sono valori illustrativi.",
+      "Nel calcolatore lascia invariati destinazione, linea, contenuto e peso. Modifica solo le dimensioni e annota i due prezzi e la regola di arrotondamento. Dopo l’imballaggio, ripeti il calcolo con le misure del magazzino. Prima di chiedere la rimozione della scatola delle scarpe, verifica come verrà protetto il paio e se si potranno davvero ottenere le dimensioni esterne desiderate."
+    ]
+  },
+  "acbuy-qc-photos-guide": {
+    "heading": "Chiedi una foto che chiarisca un dubbio sulla taglia",
+    "paragraphs": [
+      "Un’etichetta con la taglia L dice poco sulla larghezza di una felpa all’altezza del petto. Controlla prima quale misura riporta la tabella del venditore. Se indica la larghezza del capo in piano, chiedi una foto della felpa ben distesa, con la zip chiusa se presente, e un metro disposto in linea retta tra le due cuciture sotto le ascelle. Nello stesso scatto devono vedersi i due punti di misura e i numeri.",
+      "Misura allo stesso modo una felpa che ti sta bene e confronta i risultati. Una circonferenza torace completa richiede un confronto diverso rispetto alla larghezza in piano. Se il tessuto è teso, lo zero è nascosto o l’unità è poco chiara, chiedi spiegazioni prima di approvare il pacco. Verifica prima nell’ordine quali foto puoi richiedere e a che prezzo."
+    ]
+  },
+  "acbuy-fees-explained": {
+    "heading": "Confronta l’anticipo di spedizione con l’addebito finale",
+    "paragraphs": [
+      "Ecco un ordine ipotetico in yuan. L’articolo costa 180 ¥ e il trasporto in Cina 12 ¥. In seguito versi 95 ¥ di anticipo per la spedizione internazionale. Dopo l’imballaggio, la scheda del pacco indica un costo finale di 88 ¥. Finora hai sborsato 287 ¥. Se la differenza di 7 ¥ viene accreditata come saldo utilizzabile, articolo e spedizioni costano complessivamente 280 ¥ prima di altri oneri. Tieni distinto il credito sul conto da un rimborso sulla carta.",
+      "Usa una riga per ogni voce: articolo, trasporto interno, anticipo, importo definitivo o conguaglio. Verifica i riferimenti di ordine e pacco prima di sommare. Registrare gli 88 ¥ come un pagamento aggiuntivo oltre ai 95 ¥ di anticipo gonfierebbe il totale. Controlla i movimenti effettivi sul conto per capire se resta una differenza da ricevere o da versare."
+    ]
+  },
+  "acbuy-coupons-shipping-discounts": {
+    "heading": "Verifica cosa puoi ottenere con i punti ACBuy prima di preparare il pacco",
+    "paragraphs": [
+      "Apri la sezione punti del tuo account e prendi nota separatamente del saldo, dei premi che puoi scegliere adesso e delle condizioni del premio che ti interessa. La guida agli acquisti pubblicata da ACBuy indica che a 500 punti si possono visualizzare le opzioni di riscatto. L’indicazione riguarda l’accesso all’elenco. Non stabilisce un valore monetario per punto e non garantisce un buono spedizione per la tua tratta.",
+      "Se trovi un premio per la spedizione, leggine le condizioni prima di usare i punti. Controlla scadenza, linee ammesse, importo minimo e voce di costo a cui si applica. Al momento di confermare il pacco, confronta il totale prima e dopo la selezione del buono, mantenendo gli stessi servizi e la stessa linea. Conta il risparmio quando compare nel totale. Se il premio manca, tieni a budget il preventivo iniziale."
+    ]
+  }
+}

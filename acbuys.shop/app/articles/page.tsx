@@ -1,18 +1,19 @@
+import copy from "../../content/editorial/en/ui.json";
 import type { Metadata } from "next";
 import InfoPage from "../ui/InfoPage";
 import { articles } from "./article-data";
 
 export const metadata: Metadata = {
-  title: "ACBuy Shopping Articles | Finds, Fees, QC & Shipping",
-  description: "Practical ACBuy guides covering the 2026 spreadsheet, legitimacy, fees, QC photos, warehouse storage, returns and international parcel planning.",
+  title: copy.hubTitle,
+  description: copy.hubIntro,
   alternates: { canonical: "https://acbuys.shop/articles/" },
 };
 
 export default function ArticlesPage() {
   const sections = articles.map((article) => ({
-    kicker: `${article.category} · ${article.readingTime} min`,
+    kicker: article.category,
     title: article.title,
-    body: <><p>{article.description}</p><a className="article-link" href={`/articles/${article.slug}/`}>Read the complete article ↗</a></>,
+    body: <><p>{article.description}</p><a className="article-link" href={`/articles/${article.slug}/`}>{article.shortTitle} ↗</a></>,
   }));
-  return <InfoPage canonicalPath="/articles/" accent="blue" eyebrow="Research & guides" title="ACBuy guides: find products, check orders and plan shipping." intro="Start with the updated ACBuy spreadsheet for 2026, then open the focused guide that matches your next decision. Every article is grounded in current platform information and connected to a practical next step." sections={sections} />;
+  return <InfoPage canonicalPath="/articles/" accent="blue" eyebrow="Research & guides" title="ACBuy guides: find products, check orders and plan shipping." intro={copy.hubIntro} sections={sections} />;
 }

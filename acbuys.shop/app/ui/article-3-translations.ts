@@ -1,5 +1,5 @@
-import { getArticle } from "../articles/article-data";
-type Pairs=Array<[string,string]>; const a=getArticle("acbuy-shipping-cost-guide");
+import { coreArticles } from "../articles/article-data";
+type Pairs=Array<[string,string]>; const a=coreArticles.find(article => article.slug === "acbuy-shipping-cost-guide")!;
 const s=[a.shortTitle,a.title,a.category,a.primaryKeyword,a.dek,a.researchNote,...(a.visual?.items??[]),a.visual?.caption??"",...a.sections.flatMap(x=>[x.heading,...x.paragraphs,...(x.bullets??[]),...(x.callout?[x.callout.title,x.callout.text]:[])]),...a.faq.flatMap(f=>[f.question,f.answer])];
 function m(v:string[]):Pairs{if(v.length!==s.length)throw new Error("Article 3 translation count mismatch");return s.map((x,i)=>[x,v[i]])}
 export const article3Translations:Record<"de"|"fr"|"es"|"it"|"pl",Pairs>={

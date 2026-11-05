@@ -36,13 +36,29 @@ def translate_schema(obj, t, lang, routes):
         result = {}
         for k, v in obj.items():
             if k == 'inLanguage': result[k] = lang
-            elif k in ['headline', 'description', 'name'] and isinstance(v, str): result[k] = t(v, strict=False)
+            elif k in ['headline', 'description', 'name', 'text'] and isinstance(v, str): result[k] = t(v, strict=False)
             else: result[k] = translate_schema(v, t, lang, routes)
         return result
     if isinstance(obj, str) and obj.startswith(ORIGIN):
         route = obj[len(ORIGIN):]
         if route in routes: return ORIGIN + path_for(route, lang)
     return obj
+
+def read_editorial(lang):
+    directory = ROOT / 'content/editorial' / lang
+    return {file.stem: json.loads(file.read_text()) for file in directory.glob('*.json')}
+
+def match_copy(english, local, translations):
+    if isinstance(english, dict):
+        if english.keys() != local.keys():
+            raise ValueError('Mismatched editorial fields')
+        for key in english:
+            match_copy(english[key], local[key], translations)
+    elif isinstance(english, list):
+        for pair in zip(english, local, strict=True):
+            match_copy(*pair, translations)
+    else:
+        translations[english] = local
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--collect', action='store_true')
@@ -64,9 +80,15 @@ if args.collect:
     raise SystemExit
 
 missing = []
-written = []
+written = {}
 for lang in LANGS:
     translations = {} if lang == 'en' else json.loads((LOCALES/(lang+'.json')).read_text())
+    if lang != 'en':
+        match_copy(read_editorial('en'), read_editorial(lang), translations)
+        # Publication names and dated source labels are shared across editions.
+        for links in json.loads((ROOT / 'content/editorial/sources.json').read_text()).values():
+            for link in links:
+                translations[link['label']] = link['label']
     def t(value, strict=True):
         if lang == 'en' or not re.search(r'[A-Za-z]', value): return value
         if value in translations: return translations[value]
@@ -129,16 +151,23 @@ for lang in LANGS:
             title = soup.new_tag('b'); title.string = t(extra[0]); empty.append(title)
             note = soup.new_tag('span'); note.string = t(extra[1]); empty.append(note)
             soup.select_one('.product-grid').insert_after(empty)
-        js = soup.new_tag('script', src='/site.js?v=20261007', defer='')
+        js = soup.new_tag('script', src='/site.js?v=20261105', defer='')
         soup.body.append(js)
         target = OUT / path_for(route, lang).lstrip('/') / 'index.html'
         target.parent.mkdir(parents=True, exist_ok=True)
         target.write_text(str(soup))
-        written.append(canonical)
+        modified = '2026-10-07'
+        if route in ['/', '/articles/', '/guide/', '/faq/']:
+            modified = '2026-11-05'
+        for script in soup.select('script[type="application/ld+json"]'):
+            schema = json.loads(script.string)
+            if schema.get('@type') == 'Article':
+                modified = max(modified, schema.get('dateModified', modified))
+        written[canonical] = modified
 
 if missing:
     raise RuntimeError('Missing translations: '+json.dumps(missing[:25], ensure_ascii=False)+f' ({len(missing)} total)')
-sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + '\n'.join(f'<url><loc>{u}</loc><lastmod>2026-10-07</lastmod></url>' for u in written) + '\n</urlset>\n'
+sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + '\n'.join(f'<url><loc>{u}</loc><lastmod>{date}</lastmod></url>' for u, date in written.items()) + '\n</urlset>\n'
 (OUT/'sitemap.xml').write_text(sitemap)
 (OUT/'_headers').write_text('/*\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n  Cache-Control: public, max-age=0, must-revalidate\n\n/assets/*\n  Cache-Control: public, max-age=31536000, immutable\n')
 print(f'Exported {len(written)} complete pages across {len(LANGS)} languages')

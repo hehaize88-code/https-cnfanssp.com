@@ -10,6 +10,9 @@ const serverEntry = path.resolve("dist/server/index.js");
 const routes = [
   "/",
   "/articles/",
+  "/articles/acbuy-service-status/",
+  "/articles/acbuy-payment-methods/",
+  "/articles/acbuy-product-links-not-working/",
   "/articles/acbuy-rehearsal-packing-guide/",
   "/articles/acbuy-order-status-guide/",
   "/articles/acbuy-parcel-tracking-guide/",
@@ -34,7 +37,15 @@ const routes = [
 
 await rm(outputDir, { recursive: true, force: true });
 await mkdir(outputDir, { recursive: true });
-await cp(clientDir, outputDir, { recursive: true });
+// Localized pages use site.js for interactions. Hydration chunks and Vite's
+// client manifest are only needed by the server-rendered development build.
+await cp(clientDir, outputDir, {
+  recursive: true,
+  filter: file => {
+    const relative = path.relative(clientDir, file);
+    return relative !== ".vite" && !(relative.startsWith("assets" + path.sep) && relative.endsWith(".js"));
+  },
+});
 
 const { default: worker } = await import(pathToFileURL(serverEntry).href);
 const env = {

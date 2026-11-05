@@ -1,3 +1,5 @@
+import copy from "../../content/editorial/en/ui.json";
+import { newGuides, updateGuide } from "./editorial";
 export type ArticleSection = {
   heading: string;
   paragraphs: string[];
@@ -20,12 +22,13 @@ export type ArticleRecord = {
   updatedLabel: string;
   readingTime: number;
   researchNote: string;
+  sources?: { label: string; url: string }[];
   visual?: { kind: string; items: string[]; caption: string };
   sections: ArticleSection[];
   faq: { question: string; answer: string }[];
 };
 
-const coreArticles: ArticleRecord[] = [
+export const coreArticles: ArticleRecord[] = [
   {
     slug: "acbuy-spreadsheet-guide",
     shortTitle: "ACBuy Spreadsheet 2026",
@@ -77,7 +80,7 @@ const coreArticles: ArticleRecord[] = [
       {
         heading: "Build a warehouse evidence checkpoint",
         paragraphs: [
-          "After the seller ships domestically, the item goes to ACBuy’s designated warehouse. ACBuy’s Shopping Guide describes warehouse inspection and says that usually three free QC photographs are provided. It also advertises 90 days of free storage. These are current platform statements, not permanent promises, so the live account should be checked when an order arrives. The important habit is to stop treating the original listing as the only evidence once physical warehouse photographs exist.",
+          copy.photoNote,
           "Compare the warehouse item with the saved order record. Start with the selected color and model, then review quantity, obvious dimensions, included pieces, overall shape and visible damage. If a crucial detail is missing from the default views, investigate the platform’s current options for additional photographs or service requests before accepting the item. A spreadsheet can organize QC links or notes, but it should never replace looking carefully at the actual images."
         ],
         bullets: ["Match the item to the saved source ID and variant.", "Check the whole object before zooming into details.", "Record questions while return or exchange options may still be available.", "Do not confuse a clean photograph with proof of material or durability."]
@@ -125,13 +128,13 @@ const coreArticles: ArticleRecord[] = [
     updated: "2026-10-07",
     updatedLabel: "October 7, 2026",
     readingTime: 10,
-    researchNote: "ACBuy’s Shopping Guide says that usually three free QC photos are provided after warehouse processing. This article treats those statements as current platform information and avoids claiming that photographs authenticate goods or guarantee invisible qualities.",
+    researchNote: copy.researchNote,
     visual: { kind: "check", items: ["Order match", "Whole-item shape", "Color consistency", "Construction details", "Measurements", "Damage and accessories"], caption: "Review the evidence in the same order every time; consistency reduces missed defects." },
     sections: [
       {
         heading: "Start with the role of warehouse QC",
         paragraphs: [
-          "Quality-control photographs sit between the seller listing and international parcel submission. The seller page shows what was offered; warehouse images show the physical item that arrived at the designated warehouse. ACBuy’s official Shopping Guide describes warehouse inspection and says that usually three free QC photographs are provided. The exact photo set and optional services should still be checked in the live account because service details can change.",
+          copy.photoNote,
           "The useful question is not simply whether the pictures look attractive. It is whether they contain enough evidence to compare the received item with the submitted order. QC can reveal an incorrect color, visibly damaged surface, missing accessory, obvious size discrepancy or major construction problem. It cannot prove every material claim, how an item will fit, how long it will last or whether a customs authority will accept a parcel."
         ],
         callout: { title: "Evidence, not certification", text: "Treat warehouse photos as visual evidence of one received item. Do not describe them as authentication, laboratory testing or a universal quality guarantee." }
@@ -196,7 +199,7 @@ const coreArticles: ArticleRecord[] = [
       }
     ],
     faq: [
-      { question: "How many free ACBuy QC photos are currently advertised?", answer: "ACBuy’s Shopping Guide currently says that usually three free QC photos are provided. Confirm the exact set and any optional services in the live account because platform terms can change." },
+      { question: "How many free ACBuy QC photos are currently advertised?", answer: copy.photoNote },
       { question: "Can QC photos prove authenticity?", answer: "No. They show visible features of the received item. They are not laboratory testing, legal authentication or proof of hidden materials." },
       { question: "What should I do if a detail is missing?", answer: "Check current options for additional photography or support questions before accepting or submitting the parcel. Ask for one specific, measurable view." },
       { question: "Are seller pictures enough for QC?", answer: "No. Seller pictures describe the offer. Warehouse images provide evidence of the physical unit that arrived and should be compared with the saved order." }
@@ -216,7 +219,7 @@ const coreArticles: ArticleRecord[] = [
     updated: "2026-10-07",
     updatedLabel: "October 7, 2026",
     readingTime: 10,
-    researchNote: "ACBuy’s official flow separates product and domestic delivery charges from international shipping, promotes warehouse consolidation, advertises 90 days of free storage and provides shipping options that depend on the parcel and destination. Route availability and charges are dynamic, so this guide explains variables instead of publishing a universal price table.",
+    researchNote: copy.researchNote,
     visual: { kind: "cost", items: ["Product price", "Domestic delivery", "Warehouse services", "Chargeable weight", "Packaging", "Destination route", "Local tax or customs"], caption: "A parcel estimate is a stack of variables, not one reusable price per kilogram." },
     sections: [
       {
@@ -237,7 +240,7 @@ const coreArticles: ArticleRecord[] = [
       {
         heading: "Use consolidation deliberately",
         paragraphs: [
-          "ACBuy’s official pages describe purchases from different sellers arriving at a designated warehouse and being consolidated for international shipping. Combining items can reduce repeated base parcel costs and make better use of a shipment. The current homepage also advertises 90 days of free storage, giving customers time to wait for additional orders. Confirm the active storage policy in the account before relying on a specific deadline.",
+          copy.storageNote,
           "More items do not always produce the lowest-risk or lowest-cost parcel. A larger parcel can cross a weight tier, become volumetrically expensive or lose access to a route with tighter size limits. Mixed product categories may also face different restrictions. Consolidate products that fit the same shipping strategy, not simply everything in the warehouse. Compare one larger parcel with two smaller scenarios when the estimator and available routes allow it."
         ],
         bullets: ["Group items with compatible restrictions.", "Compare chargeable weight before and after packaging.", "Watch route size and weight limits.", "Leave time for QC and after-sales decisions before the storage deadline."]
@@ -387,7 +390,7 @@ const coreArticles: ArticleRecord[] = [
   }
 ];
 
-export const articles: ArticleRecord[] = [...priorityArticles, coreArticles[0], ...growthArticles, ...coreArticles.slice(1)];
+export const articles: ArticleRecord[] = [...priorityArticles, coreArticles[0], ...growthArticles, ...coreArticles.slice(1)].map(updateGuide).concat(newGuides);
 
 export function getArticle(slug: string) {
   const article = articles.find((item) => item.slug === slug);
@@ -401,6 +404,9 @@ import { priorityArticles } from "./priority-articles";
 // Keep the next step relevant to the reader's current task.
 export function getRelatedArticles(slug: string): ArticleRecord[] {
   const groups = [
+    ["acbuy-service-status", "acbuy-order-status-guide", "acbuy-warehouse-storage-consolidation", "acbuy-parcel-tracking-guide"],
+    ["acbuy-payment-methods", "acbuy-fees-explained", "acbuy-coupons-shipping-discounts", "acbuy-shipping-cost-guide"],
+    ["acbuy-product-links-not-working", "acbuy-spreadsheet-guide", "acbuy-qc-photos-guide", "is-acbuy-legit-review"],
     ["acbuy-rehearsal-packing-guide", "acbuy-shipping-cost-guide", "acbuy-actual-vs-volumetric-weight", "acbuy-warehouse-storage-consolidation"],
     ["acbuy-order-status-guide", "acbuy-parcel-tracking-guide", "acbuy-returns-refunds-after-sales", "acbuy-qc-photos-guide"],
     ["acbuy-spreadsheet-guide", "is-acbuy-legit-review", "acbuy-fees-explained", "acbuy-coupons-shipping-discounts"],

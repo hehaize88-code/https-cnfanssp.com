@@ -1,0 +1,37 @@
+{
+  "acbuy-spreadsheet-guide": {
+    "heading": "Retrouver l’annonce du vendeur à partir d’une ligne du tableau",
+    "paragraphs": [
+      "Prenons un sweat à capuche proposé en deux couleurs. Depuis sa ligne dans le tableau, ouvre l’annonce du vendeur et sélectionne la couleur et la taille voulues. Note la plateforme, l’identifiant de l’article, la taille indiquée et le prix à l’unité. Si tu retrouves la même photo sur une autre ligne, vérifie d’abord le vendeur et l’identifiant avant de comparer les deux prix.",
+      "Enregistre le lien de l’annonce d’origine à côté de la ligne, avec la date de vérification. Si ta taille est grisée ou si le lien mène désormais à l’accueil de la boutique, indique que cette ligne ne convient plus pour cet achat. Un lien vers une autre taille sera peu utile au moment de comparer la commande aux photos de l’entrepôt."
+    ]
+  },
+  "acbuy-shipping-cost-guide": {
+    "heading": "Comparer deux formats de carton sur la même ligne d’expédition",
+    "paragraphs": [
+      "Imaginons une paire de chaussures emballée qui pèse 2,0 kg dans un carton de 40 × 30 × 20 cm. Pour cet exemple uniquement, la ligne divise le volume en cm³ par 6 000 et retient le plus élevé des deux poids, réel ou volumétrique. On obtient 4,0 kg. Avec un carton de 40 × 30 × 15 cm pour les mêmes 2,0 kg, on obtient 3,0 kg. Ces chiffres illustrent le calcul.",
+      "Dans le simulateur, conserve la destination, la ligne, le contenu et le poids. Modifie uniquement les dimensions et relève les deux prix ainsi que la règle d’arrondi. Après emballage, refais le calcul avec les mesures de l’entrepôt. Avant de faire enlever la boîte à chaussures, demande comment la paire sera protégée et si les dimensions extérieures souhaitées sont réalistes."
+    ]
+  },
+  "acbuy-qc-photos-guide": {
+    "heading": "Demander une photo qui permet de trancher une question de taille",
+    "paragraphs": [
+      "Une étiquette L renseigne peu sur la largeur réelle d’un sweat. Vérifie d’abord la mesure donnée dans le guide des tailles du vendeur. S’il indique une largeur de poitrine à plat, demande une photo du sweat posé bien à plat, fermeture remontée le cas échéant, avec un mètre tendu droit d’une couture d’aisselle à l’autre. Les deux points de mesure et les graduations doivent apparaître sur la même photo.",
+      "Mesure de la même façon un sweat qui te va et compare les chiffres. Un tour de poitrine complet ne se compare pas directement à une largeur à plat. Si le tissu est étiré, si le zéro est caché ou si l’unité est illisible, demande une précision avant de valider le colis. Consulte d’abord les options photo et leur prix dans ta commande."
+    ]
+  },
+  "acbuy-fees-explained": {
+    "heading": "Rapprocher la provision pour le transport du montant final",
+    "paragraphs": [
+      "Prenons une commande fictive en yuans. L’article coûte 180 ¥ et la livraison en Chine 12 ¥. Tu verses ensuite une provision de 95 ¥ pour l’envoi international. Après emballage, le dossier du colis indique un coût définitif de 88 ¥. Tu as déjà déboursé 287 ¥. Si les 7 ¥ d’écart sont crédités sur ton compte et utilisables, l’article et les livraisons reviennent à 280 ¥ avant les autres frais. Distingue cet avoir d’un remboursement sur ta carte.",
+      "Consacre une ligne à chaque opération : article, livraison intérieure, provision, coût définitif ou régularisation. Fais correspondre les références de commande et de colis avant de calculer le total. Ajouter 88 ¥ aux 95 ¥ de provision comme s’il s’agissait d’un second paiement gonflerait le coût. Vérifie les écritures réellement enregistrées pour savoir si une régularisation reste à recevoir ou à payer."
+    ]
+  },
+  "acbuy-coupons-shipping-discounts": {
+    "heading": "Vérifier ce que permettent les points ACBuy avant de préparer un colis",
+    "paragraphs": [
+      "Ouvre la rubrique des points de ton compte et relève séparément ton solde, les récompenses disponibles et les conditions de celle qui t’intéresse. Le guide d’achat publié par ACBuy indique qu’à partir de 500 points, il est possible de consulter les options d’échange. Cette indication concerne l’accès à la liste. Elle ne fixe ni la valeur d’un point en argent ni la disponibilité d’un bon de transport pour ta ligne.",
+      "Si un bon de transport apparaît, lis ses conditions avant d’utiliser tes points. Vérifie la date limite, les lignes admises, le minimum à atteindre et les frais concernés. Au moment de valider le colis, compare le total avant et après sélection du bon en conservant la même ligne et les mêmes services. Retiens l’économie affichée dans le total final. Si la récompense manque, garde le devis initial comme base de ton budget."
+    ]
+  }
+}
