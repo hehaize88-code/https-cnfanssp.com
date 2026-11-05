@@ -431,3 +431,11 @@ footer { width: min(1480px, calc(100% - 40px)); margin: 0 auto; padding: 70px 0 
 
 @media(min-width:900px) { .guide-preview .article-grid { grid-template-columns:repeat(4,minmax(0,1fr)); } .guide-preview .article-grid h2 { font-size:25px; } }
 @media(max-width:640px) { .article-grid > a { min-height:0; padding:18px; } .article-grid > a > svg { width:25px; height:25px; margin:0; } .article-grid > a > span { margin:14px 0 8px; } .article-grid h2 { font-size:25px; line-height:1.1; } .inline-cta a { max-width:100%; width:fit-content; white-space:normal; } }
+
+.guide-links { display:flex; flex-wrap:wrap; gap:.55rem .85rem; position:relative; z-index:1; margin:1.15rem 0; }
+.guide-links a { display:inline-flex; align-items:center; gap:.45rem; max-width:100%; padding:.55rem .8rem; border:1px solid currentColor; font-weight:650; line-height:1.35; overflow-wrap:anywhere; }
+.guide-links a:hover, .guide-links a:focus-visible { color:var(--blue); background:white; }
+.guide-links svg { width:1rem; height:1rem; flex:none; }
+.shipping-details > div:not(.guide-links) { max-width:76ch; margin:2rem 0; }
+.shipping-details h2 { font-family:Georgia,serif; font-size:clamp(1.45rem,3vw,2.1rem); }
+.shipping-details p { line-height:1.65; margin:.7rem 0; }

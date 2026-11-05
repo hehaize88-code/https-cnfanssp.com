@@ -25,7 +25,8 @@ import {
   type Locale,
   type PageKey,
 } from "./site-data";
-import { newArticleKeys } from "./article-meta";
+import shippingDetails from "./content/shipping-details.json";
+import { newArticleKeys, publishedOn, revisedOn } from "./article-meta";
 import { refreshCopy } from "./seo-refresh";
 import type { Article } from "./article-content";
 import {
@@ -228,11 +229,11 @@ function ArticleCards({ locale, limit, exclude }: { locale: Locale; limit?: numb
       {articleKeys.filter(key => key !== exclude).slice(0, limit).map((key, index) => {
         const Icon = icons[index % icons.length];
         return (
-          <a href={routeFor(locale, key)} key={key}>
+          <a href={routeFor(locale, key)} key={key} data-link-type="related-guide">
             <Icon aria-hidden="true" />
-            <span>0{index + 1} / {ui[locale].buyerGuides.toUpperCase()}</span>
+            <span>{String(index + 1).padStart(2, "0")} / {ui[locale].buyerGuides.toUpperCase()}</span>
             <h2>{t.pageLabels[key]!.title}</h2>
-            <p>{t.pageLabels[key]!.intro}</p>
+            <p>{t.pageLabels[key]!.description ?? t.pageLabels[key]!.intro}</p>
             <b>{t.readGuides}<ArrowRight /></b>
           </a>
         );
@@ -268,6 +269,27 @@ function ResourceCards({ locale }: { locale: Locale }) {
   );
 }
 
+const shoppingGuides: ArticleKey[] = ["articles/shoes-spreadsheet", "articles/clothing-spreadsheet", "articles/size-before-you-buy"];
+const nextReads: Partial<Record<PageKey, PageKey[]>> = {
+  "articles/find-product-links": ["articles/links-not-working", "articles/shoes-spreadsheet"],
+  "articles/links-not-working": ["articles/find-product-links", "spreadsheet"],
+  "articles/shoes-spreadsheet": ["articles/size-before-you-buy", "articles/find-product-links"],
+  "articles/clothing-spreadsheet": ["articles/size-before-you-buy", "articles/wrong-size-returns"],
+  "articles/size-before-you-buy": ["articles/wrong-size-returns", "articles/shoes-spreadsheet"],
+  "articles/read-qc-photos": ["articles/size-before-you-buy", "articles/wrong-size-returns"],
+  "articles/tracking-not-updating": ["articles/delivered-not-received", "shipping"],
+  "articles/delivered-not-received": ["articles/tracking-not-updating", "shipping"],
+  "articles/canary-islands-shipping": ["shipping", "articles/tracking-not-updating"],
+  "articles/wrong-size-returns": ["articles/size-before-you-buy", "articles/read-qc-photos"],
+  shipping: ["articles/canary-islands-shipping", "articles/tracking-not-updating", "articles/delivered-not-received"],
+};
+
+function GuideLinks({ locale, pages, labels }: { locale: Locale; pages: PageKey[]; labels?: readonly string[] }) {
+  return <div className="guide-links">{pages.map((key, index) =>
+    <a key={key} href={routeFor(locale, key)} data-link-type="related-guide">{labels?.[index] ?? copy[locale].pageLabels[key]!.title}<ArrowRight aria-hidden="true" /></a>
+  )}</div>;
+}
+
 function HomePage({ locale }: { locale: Locale }) {
   const t = copy[locale];
   const u = ui[locale];
@@ -278,6 +300,7 @@ function HomePage({ locale }: { locale: Locale }) {
           <span className="eyebrow"><i />{t.badge}</span>
           <h1>{t.heroTitle}</h1>
           <p>{t.heroText}</p>
+          <GuideLinks locale={locale} pages={shoppingGuides} labels={refreshCopy[locale].heroLinks} />
           <SearchDesk locale={locale} />
           <small><CircleAlert />{t.sourceNote}</small>
         </div>
@@ -286,7 +309,7 @@ function HomePage({ locale }: { locale: Locale }) {
           <strong>08</strong>
           <p>{u.matchedFinds}</p>
           <div><b>05</b><small>{u.languages}</small></div>
-          <div><b>07</b><small>{u.buyerGuides}</small></div>
+          <div><b>{articleKeys.length}</b><small>{u.buyerGuides}</small></div>
         </aside>
       </section>
 
@@ -323,22 +346,25 @@ function ArticlePage({ locale, pageKey, article }: { locale: Locale; pageKey: Ar
   const u = ui[locale];
   const figureProduct = products[pageKey.includes("shoes") || pageKey.includes("size") ? 0 : 1];
   const r = refreshCopy[locale];
+  const showProduct = !article.sources && !pageKey.includes("tracking") && !pageKey.includes("links-not");
+  const reviewDate = revisedOn(pageKey);
   return (
     <>
       <section className="interior-hero article-hero">
         <span className="eyebrow"><i />{t.badge}</span>
         <h1>{t.pageLabels[pageKey]!.title}</h1>
         <p>{t.pageLabels[pageKey]!.intro}</p>
+        <GuideLinks locale={locale} pages={nextReads[pageKey] ?? []} labels={pageKey === "articles/find-product-links" ? r.findLinks : undefined} />
         <div className="article-byline">
           <span>{u.readingTime}: {article.minutes} {u.minutes}</span>
-          <span>{u.lastReviewed}: <time dateTime="2026-10-09">09 / 10 / 2026</time></span>
+          <span>{u.lastReviewed}: <time dateTime={reviewDate}>{new Intl.DateTimeFormat(locale, {dateStyle:"long", timeZone:"UTC"}).format(new Date(reviewDate))}</time></span>
         </div>
       </section>
       <nav className="article-toc" aria-label={r.contents}>
         <b>{r.contents}</b>
         {article.sections.map((section,index) => <a key={section.heading} href={`#section-${index + 1}`}>{section.heading}</a>)}
       </nav>
-      {!pageKey.includes("tracking") && !pageKey.includes("links-not") && <figure className="article-figure">
+      {showProduct && <figure className="article-figure">
         <a href={figureProduct.href} target="_blank" rel="nofollow sponsored noopener">
           <img src={figureProduct.image} alt={`${u.exampleImage}: ${u.productNames[figureProduct.id]}`} loading="lazy" />
         </a>
@@ -356,19 +382,27 @@ function ArticlePage({ locale, pageKey, article }: { locale: Locale; pageKey: Ar
           </section>
         ))}
       </article>
-      <section className="section takeaways">
+      {article.faqs && <section className="section faq-page">
+        <h2>{t.nav.faq}</h2>
+        <div className="faq-list">{article.faqs.map(({q, a}) =>
+          <details key={q}><summary><span>{q}</span><b>+</b></summary><p>{a}</p></details>
+        )}</div>
+      </section>}
+      {article.takeaways && <section className="section takeaways">
         <div className="section-heading"><span>{u.keyTakeaways}</span><h2>{t.pageLabels[pageKey]!.title}</h2></div>
         <ol>{article.takeaways.map((item, index) => <li key={item}><b>0{index + 1}</b><span>{item}</span></li>)}</ol>
-      </section>
+      </section>}
       <section className="section research-basis">
         <div><span className="kicker">{u.articleSources}</span><h2>{r.sources}</h2></div>
         <ul>
+          {article.sources ? article.sources.map(({label,url}) => <li key={url}><a href={url} target="_blank" rel="noopener">{label}</a></li>) : <>
           <li><a href="https://www.hacoo.app/" target="_blank" rel="noopener">{r.official}</a></li>
           <li><a href="https://web.hacoo.app/en-US/pages/shipping-info" target="_blank" rel="noopener">{r.shippingSource}</a> · 09 / 10 / 2026</li>
           <li>{r.method}</li>
+          </>}
         </ul>
       </section>
-      {!pageKey.includes("tracking") && !pageKey.includes("links-not") && <section className="section inline-cta article-next">
+      {showProduct && <section className="section inline-cta article-next">
         <h2>{r.next}</h2>
         <p>{r.destinationNote}</p>
         <a data-link-type="article-cta" href={`https://www.cnfanshp.com/search.html?keywords=${pageKey.includes("shoes") ? "shoes" : pageKey.includes("clothing") ? "hoodie" : ""}&channelid=2`} target="_blank" rel="nofollow sponsored noopener">{r.search}<ArrowUpRight /></a>
@@ -404,7 +438,16 @@ function InteriorPage({ locale, pageKey, article }: { locale: Locale; pageKey: P
       {pageKey === "finds" && <section className="section"><ProductGrid locale={locale} /></section>}
       {pageKey === "categories" && <section className="section"><CategoryGrid locale={locale} /></section>}
       {pageKey === "faq" && <section className="section faq-page"><FaqList locale={locale} /></section>}
-      {pageKey === "shipping" && <section className="section inline-cta"><p>{refreshCopy[locale].shippingSummary}</p><a href={routeFor(locale, "articles/tracking-not-updating")}>{t.pageLabels["articles/tracking-not-updating"]!.title}<ArrowRight /></a></section>}
+      {(pageKey === "categories" || pageKey === "spreadsheet") && <section className="section">
+        <GuideLinks locale={locale} pages={shoppingGuides} labels={refreshCopy[locale].heroLinks} />
+      </section>}
+      {pageKey === "shipping" && <section className="section shipping-details">
+        <GuideLinks locale={locale} pages={nextReads.shipping!} />
+        {shippingDetails[locale].map(({heading, paragraphs}) => <div key={heading}>
+          <h2>{heading}</h2>{paragraphs.map(p => <p key={p}>{p}</p>)}
+        </div>)}
+        <a className="text-link" href="https://web.hacoo.app/en-US/pages/shipping-info">{refreshCopy[locale].shippingSource}<ArrowUpRight aria-hidden="true" /></a>
+      </section>}
       {pageKey === "articles" && <section className="section"><ArticleCards locale={locale} /></section>}
       {pageKey === "spreadsheet" && (
         <>
@@ -459,9 +502,9 @@ export function SitePage({ locale, pageKey, article }: { locale: Locale; pageKey
     "@context": "https://schema.org",
     "@type": "Article",
     headline: copy[locale].pageLabels[pageKey]!.title,
-    description: copy[locale].pageLabels[pageKey]!.intro,
-    datePublished: newArticleKeys.includes(pageKey as typeof newArticleKeys[number]) ? "2026-10-09" : "2026-08-27",
-    dateModified: "2026-10-09",
+    description: copy[locale].pageLabels[pageKey]!.description ?? copy[locale].pageLabels[pageKey]!.intro,
+    datePublished: publishedOn(pageKey),
+    dateModified: revisedOn(pageKey),
     inLanguage: locale,
     author: { "@type": "Organization", name: "Hacoos Research Desk" },
     publisher: { "@type": "Organization", name: "Hacoos" },

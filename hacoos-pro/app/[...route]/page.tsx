@@ -1,4 +1,5 @@
 import { articles, type Article } from "../article-content";
+import updates from "../content/guide-sections.json";
 import { articleExpansions } from "../article-expansions";
 import type { ArticleKey } from "../localized-content";
 import type { Metadata } from "next";
@@ -57,6 +58,13 @@ export default async function RoutePage({ params }: Props) {
     const original = articles[resolved.locale][key];
     const extra = resolved.locale === "en" ? [] : articleExpansions[resolved.locale][key] ?? [];
     article = {...original, sections: original.sections.map((section,index) => ({...section, paragraphs:[...section.paragraphs, ...(index > 0 && extra[index - 1] ? [extra[index - 1]] : [])]}))};
+    const edits = updates[resolved.locale];
+    if (key === "articles/find-product-links") {
+      article.sections = [edits.findSection, ...article.sections];
+    }
+    if (key === "articles/size-before-you-buy") {
+      article.sections = [...edits.sizeSections, ...article.sections];
+    }
     const words = article.sections.flatMap(section => section.paragraphs).join(" ").split(/\s+/).length;
     article.minutes = Math.max(3, Math.ceil(words / 180));
   }

@@ -24,6 +24,14 @@
     if (!anchor) return;
     try {
       var target = new URL(anchor.href);
+      if (target.origin === location.origin && anchor.dataset.linkType === 'related-guide') {
+        window.gtag('event', 'guide_navigation', {
+          page_path: location.pathname,
+          destination_path: target.pathname,
+          content_language: document.documentElement.lang,
+          transport_type: 'beacon'
+        });
+      }
       if (['cnfanshp.com', 'www.cnfanshp.com'].includes(target.hostname)) send('main_site_click', anchor);
     } catch (_) { /* Ignore non-URL controls. */ }
   });

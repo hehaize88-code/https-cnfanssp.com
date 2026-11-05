@@ -15,6 +15,21 @@
     "articles/tracking-not-updating": {
       "title": "Hacoo Tracking Not Updating: Stages & Next Steps",
       "intro": "Understand label creation, carrier handover and delivery exceptions. Check Hacoo tracking against the actual order estimate and know what to send support."
+    },
+    "articles/canary-islands-shipping": {
+      "title": "Does Hacoo ship to the Canary Islands? Check your postcode",
+      "intro": "If you want to order from Hacoo in Tenerife, Gran Canaria or another Canary Island, start with the delivery address for that order. Hacoo’s public shipping page lists Spain and gives a national delivery estimate. It does not give an island-by-island coverage list or a rate for a particular Canary Islands postcode. The useful check is whether Hacoo offers a delivery method and a price for the item and address you actually intend to use. You can review those details before deciding whether to pay.",
+      "description": "Check whether Hacoo offers delivery to your Canary Islands address, where to find shipping costs, and how to read the Spain delivery estimate."
+    },
+    "articles/wrong-size-returns": {
+      "title": "Hacoo returns and refunds when the size is wrong",
+      "intro": "Start with the size saved on the paid order. Lay the item beside its original bag and check the sewn-in label. Those two pieces of information usually tell you which problem to report. An M on the order and an S on the garment is a different case from an M that pulls across the shoulders. Keep the packaging and tags while you work out which applies. Open the request through the service that actually took your order.",
+      "description": "Ordered M and received S, or received M and it feels tight? Compare the order, label and measurements, then check your return options and postage."
+    },
+    "articles/delivered-not-received": {
+      "title": "Hacoo Says Delivered but My Parcel Is Missing: What to Check",
+      "intro": "When Hacoo tracking says “delivered” and you have nothing in your hands, open the shipment inside your order. Match the tracking number, check the stated drop-off point and ask anyone who could have accepted it. If the parcel is still missing, contact the delivery carrier and open a report through the service where you ordered. The steps below help you give each team the details it can actually use.",
+      "description": "Match the delivery scan to the right parcel, request proof from the last-mile carrier and report the missing delivery through your Hacoo order."
     }
   },
   "de": {
@@ -33,6 +48,21 @@
     "articles/tracking-not-updating": {
       "title": "Hacoo-Tracking ohne Update: Status & nächste Schritte",
       "intro": "Ordne Versandlabel, Übergabe und Zustellprobleme ein. Vergleiche Hacoo-Tracking mit deinem Auftrag und bereite eine klare Supportanfrage vor."
+    },
+    "articles/canary-islands-shipping": {
+      "title": "Liefert Hacoo auf die Kanaren? So prüfst du deine Postleitzahl",
+      "intro": "Du möchtest etwas nach Teneriffa, Gran Canaria oder auf eine andere Kanareninsel bestellen? Hacoo nennt auf seiner öffentlichen Versandseite Spanien als Lieferland und gibt dafür eine Zeitspanne an. Welche Inseln und Postleitzahlen erreicht werden und was dein Paket kostet, lässt sich daraus nicht ablesen. Wähle deshalb den konkreten Artikel und die tatsächliche Empfangsadresse aus. In der Bestellübersicht kannst du vor dem Bezahlen prüfen, ob Hacoo eine Versandart mit einem Preis anbietet.",
+      "description": "Prüfe, ob Hacoo für deine Lieferadresse auf den Kanaren einen Versand anbietet, wo du die Kosten findest und wie du die Lieferzeit für Spanien einordnest."
+    },
+    "articles/wrong-size-returns": {
+      "title": "Hacoo-Rückgabe und Erstattung bei falscher Größe",
+      "intro": "Rufen Sie die bezahlte Bestellung auf und legen Sie den Artikel neben seinen Originalbeutel. Vergleichen Sie die ausgewählte Größe mit dem eingenähten Etikett. Steht dort S und in der Bestellung M, lässt sich die Abweichung direkt zeigen. Steht auf beiden M, beschreiben Sie, an welcher Stelle das Kleidungsstück zu eng oder zu weit sitzt. Heben Sie Anhänger und Verpackung auf. Ihre Anlaufstelle ist der Dienst, bei dem die Bestellung tatsächlich aufgegeben wurde.",
+      "description": "M bestellt und S erhalten? Oder passt die gelieferte M nicht? So vergleichen Sie Bestellung, Etikett und Maße und klären das Rückporto vor dem Versand."
+    },
+    "articles/delivered-not-received": {
+      "title": "Hacoo-Paket als zugestellt markiert, aber nicht erhalten: Was tun?",
+      "intro": "Bei Hacoo steht „zugestellt“, doch vor der Tür und im Briefkasten liegt nichts. Öffne zunächst die einzelne Sendung in deiner Bestellung. Gleiche die Nummer ab, prüfe den genannten Ablageort und frage nach, ob jemand das Paket angenommen hat. Bleibt es verschwunden, helfen dir die folgenden Schritte, dem Zusteller und dem Bestellservice jeweils die richtigen Informationen zu geben.",
+      "description": "Prüfe die Sendungsnummer, fordere beim Zusteller einen Zustellnachweis an und melde das fehlende Hacoo-Paket über die zugehörige Bestellung."
     }
   },
   "fr": {
@@ -51,6 +81,21 @@
     "articles/tracking-not-updating": {
       "title": "Suivi Hacoo bloqué : étapes et démarches utiles",
       "intro": "Distinguez création d’étiquette, remise au transporteur et incident de livraison. Comparez le suivi à votre commande et préparez les preuves pour l’assistance."
+    },
+    "articles/canary-islands-shipping": {
+      "title": "Hacoo livre-t-il aux Canaries ? Vérifier son code postal",
+      "intro": "Vous souhaitez vous faire livrer à Tenerife, à Grande Canarie ou sur une autre île de l’archipel ? Hacoo donne un délai indicatif pour l’Espagne sur sa page consacrée aux livraisons. Cette page ne précise ni les îles desservies une par une ni le tarif applicable à votre code postal. Pour prendre une décision, sélectionnez votre article et votre adresse de réception, puis regardez si le récapitulatif propose un mode de livraison avec un prix. Vous pouvez vous arrêter à cette étape avant de payer.",
+      "description": "Vérifiez si Hacoo propose une livraison à votre adresse aux Canaries, où trouver les frais de port et comment lire le délai annoncé pour l’Espagne."
+    },
+    "articles/wrong-size-returns": {
+      "title": "Retour et remboursement Hacoo en cas de problème de taille",
+      "intro": "Ressortez le sachet de l’article et ouvrez le détail de la commande payée. Comparez la taille choisie avec l’étiquette cousue sur le vêtement. Si vous aviez commandé un M et qu’on vous a livré un S, la première pièce à montrer est l’étiquette. Si vous avez bien reçu un M mais que les épaules tirent, expliquez plutôt où la coupe vous gêne. Gardez emballage et étiquettes, puis adressez la demande au service auprès duquel vous avez commandé.",
+      "description": "Vous avez reçu du S au lieu du M, ou le M vous serre ? Vérifiez la commande, l’étiquette et les mesures avant de demander un retour et de payer des frais de port."
+    },
+    "articles/delivered-not-received": {
+      "title": "Colis Hacoo indiqué livré mais non reçu : quelles démarches faire ?",
+      "intro": "Le suivi Hacoo annonce une livraison, mais vous n’avez pas le colis. Ouvrez le détail de l’envoi dans votre commande, vérifiez le numéro et le lieu indiqué, puis demandez si quelqu’un a réceptionné le paquet. Si ces vérifications ne donnent rien, signalez la livraison au transporteur et au service auprès duquel vous avez commandé. Voici comment leur transmettre un dossier exploitable.",
+      "description": "Retrouvez le bon numéro de colis, demandez la preuve de livraison au transporteur et signalez la non-réception depuis la commande concernée."
     }
   },
   "es": {
@@ -69,6 +114,21 @@
     "articles/tracking-not-updating": {
       "title": "Seguimiento Hacoo sin actualizar: estados y soluciones",
       "intro": "Distingue etiqueta creada, entrega al transportista e incidencias. Compara el seguimiento con tu pedido y prepara la información que necesita soporte."
+    },
+    "articles/canary-islands-shipping": {
+      "title": "¿Hacoo envía a Canarias? Comprueba tu código postal y los gastos",
+      "intro": "Si quieres hacer un pedido de Hacoo desde Tenerife, Gran Canaria u otra isla, la guía pública de envíos solo resuelve parte de la duda. Hacoo incluye España y publica un plazo orientativo para el país. En esa página no detalla qué códigos postales canarios cubre ni cuánto cobra por cada destino. Para saber si puedes recibir un producto concreto, revisa la dirección, el método de envío y los gastos que aparecen al tramitar tu cesta. Puedes hacer esa comprobación antes de autorizar el pago.",
+      "description": "Comprueba si Hacoo ofrece envío a tu dirección en Canarias, cuánto cuesta en tu cesta y cómo interpretar el plazo orientativo para España."
+    },
+    "articles/wrong-size-returns": {
+      "title": "Devoluciones y reembolsos en Hacoo por una talla equivocada",
+      "intro": "Busca la talla que figura en el pedido pagado y compárala con la etiqueta cosida en la prenda. Deja a mano la bolsa original. Si pediste una M y la prenda lleva una S, puedes enseñar esa diferencia en una foto. Si la etiqueta dice M pero te tira de los hombros, conviene explicar en qué zona falla el ajuste. Conserva las etiquetas y el embalaje y abre la solicitud en el servicio donde hiciste el pedido.",
+      "description": "¿Pediste una M y llegó una S, o la M te queda pequeña? Compara pedido, etiqueta y medidas y comprueba quién paga el envío antes de tramitar la devolución."
+    },
+    "articles/delivered-not-received": {
+      "title": "Mi pedido de Hacoo figura como entregado, pero no lo he recibido",
+      "intro": "Si el seguimiento de Hacoo dice «entregado» y el paquete no está, abre los detalles del envío dentro del pedido. Comprueba el número de seguimiento, el punto de entrega y si alguien pudo recogerlo por ti. Si sigue sin aparecer, avisa al transportista que hizo el reparto y abre una incidencia en el servicio donde compraste. Estos pasos te ayudarán a distinguir qué necesita cada uno.",
+      "description": "Comprueba qué paquete figura como entregado, pide el justificante al transportista y comunica la incidencia desde la compra correspondiente."
     }
   },
   "it": {
@@ -87,6 +147,21 @@
     "articles/tracking-not-updating": {
       "title": "Tracking Hacoo fermo: stati e prossimi passi",
       "intro": "Distingui etichetta creata, consegna al corriere e problemi di recapito. Confronta il tracking con l’ordine e prepara le informazioni per l’assistenza."
+    },
+    "articles/canary-islands-shipping": {
+      "title": "Hacoo spedisce alle Canarie? Come verificare il tuo CAP",
+      "intro": "Vuoi ricevere un ordine a Tenerife, Gran Canaria o su un’altra isola dell’arcipelago? Nella sua pagina pubblica sulle spedizioni, Hacoo indica una stima per la Spagna. Non specifica su quella pagina quali isole o codici postali siano serviti, né una tariffa valida per il tuo domicilio. Per decidere, controlla se il servizio che gestisce l’ordine offre un metodo di consegna e un prezzo per l’articolo e l’indirizzo prescelti. Puoi leggere il riepilogo prima di autorizzare il pagamento.",
+      "description": "Verifica se Hacoo propone una spedizione al tuo indirizzo alle Canarie, dove leggere i costi e come interpretare i tempi indicati per la Spagna."
+    },
+    "articles/wrong-size-returns": {
+      "title": "Reso e rimborso Hacoo quando la taglia è sbagliata",
+      "intro": "Apri il dettaglio dell’ordine pagato e metti il capo accanto alla sua busta originale. Confronta la variante scelta con l’etichetta cucita. Se hai ordinato una M e al collo trovi una S, puoi mostrare subito la differenza. Se entrambe indicano M ma la giacca tira sulle spalle, descrivi dove si presenta il problema. Conserva cartellini e imballaggio e apri la richiesta presso il servizio con cui hai effettuato l’acquisto.",
+      "description": "Hai ordinato una M e ricevuto una S, oppure la M veste stretta? Confronta ordine, etichetta e misure e verifica le spese prima di spedire il reso."
+    },
+    "articles/delivered-not-received": {
+      "title": "Hacoo segna il pacco come consegnato, ma non l’ho ricevuto",
+      "intro": "Il tracking Hacoo indica «consegnato», ma il pacco non c’è. Apri il dettaglio della singola spedizione, controlla il numero e il luogo di consegna e chiedi se qualcuno ha ritirato il collo per te. Se non lo trovi, contatta il corriere dell’ultimo tratto e segnala il problema al servizio presso cui hai ordinato. I passaggi seguenti ti aiutano a fornire a ciascuno le informazioni pertinenti.",
+      "description": "Verifica il numero della spedizione, chiedi la prova di consegna al corriere locale e segnala il pacco mancante dall’ordine con cui hai acquistato."
     }
   }
 }

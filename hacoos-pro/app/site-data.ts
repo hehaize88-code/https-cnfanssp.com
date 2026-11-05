@@ -111,6 +111,8 @@ export const categories = [
   { key: "jersey", href: "https://www.cnfanshp.com/Jersey/", count: "Jersey" },
 ] as const;
 
+type PageLabel = { title: string; intro: string; description?: string };
+
 type Copy = {
   nav: Record<string, string>;
   badge: string;
@@ -133,7 +135,7 @@ type Copy = {
   close: string;
   viewAll: string;
   fieldNotes: string;
-  pageLabels: Record<LegacyPageKey, { title: string; intro: string }> & Partial<Record<PageKey, { title: string; intro: string }>>;
+  pageLabels: Record<LegacyPageKey, PageLabel> & Partial<Record<PageKey, PageLabel>>;
   sectionLabels: [string, string, string];
   sectionText: [string, string, string];
   faq: Array<[string, string]>;
@@ -386,7 +388,7 @@ for (const locale of locales) {
 }
 
 for (const locale of locales) {
-  for (const key of newArticleKeys) copy[locale].pageLabels[key] = {title:newArticles[locale][key].title, intro:newArticles[locale][key].intro};
+  for (const key of newArticleKeys) copy[locale].pageLabels[key] = newArticles[locale][key];
 }
 
 const oldArticleKeys = ["articles/find-product-links", "articles/read-qc-photos", "articles/size-before-you-buy"] as const;
@@ -396,7 +398,7 @@ for (const locale of locales) {
   copy[locale].nav.articles = r.nav;
   copy[locale].pageLabels.home = {title:r.homeTitle,intro:r.homeIntro};
   copy[locale].pageLabels.articles = {title:r.articlesTitle,intro:r.articlesIntro};
-  copy[locale].pageLabels.shipping = {...copy[locale].pageLabels.shipping,intro:r.shippingSummary};
+  copy[locale].pageLabels.shipping = {title:r.shippingTitle,intro:r.shippingSummary};
   copy[locale].faq[4][1] = r.shippingSummary;
   copy[locale].faq[5][1] = r.returns;
   copy[locale].faq[6] = [r.faqPrice[0],r.faqPrice[1]];
@@ -404,5 +406,5 @@ for (const locale of locales) {
 }
 
 export const pageMeta = Object.fromEntries(
-  pageKeys.map((page) => [page, Object.fromEntries(locales.map((locale) => [locale, { title: copy[locale].pageLabels[page]!.title, description: copy[locale].pageLabels[page]!.intro }]))]),
+  pageKeys.map((page) => [page, Object.fromEntries(locales.map((locale) => [locale, { title: copy[locale].pageLabels[page]!.title, description: copy[locale].pageLabels[page]!.description ?? copy[locale].pageLabels[page]!.intro }]))]),
 ) as Record<PageKey, Record<Locale, { title: string; description: string }>>;

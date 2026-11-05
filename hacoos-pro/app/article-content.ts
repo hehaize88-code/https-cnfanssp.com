@@ -8,7 +8,9 @@ export type ArticleSection = { heading: string; paragraphs: string[]; bullets?: 
 export type Article = {
   minutes: number;
   sections: ArticleSection[];
-  takeaways: string[];
+  takeaways?: string[];
+  faqs?: { q: string; a: string }[];
+  sources?: { label: string; url: string }[];
 };
 
 const en: Record<LegacyArticleKey, Article> = {
