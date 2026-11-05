@@ -1,4 +1,182 @@
 export const roEditorial = {
+  "spreadsheet-find-original-listing-check": {
+  "title": "Cum verifici un produs din spreadsheet în oferta originală",
+  "description": "Urmărește linkul din spreadsheet, verifică mărimea și culoarea exactă și stabilește ce fotografii QC se potrivesc. Cu un ID Weidian real.",
+  "intro": [
+    "Un rând din spreadsheet spune „pantofi gri”. Deschizi linkul și recunoști modelul, însă meniul de culori conține mai multe perechi gri. Ce variantă a comandat persoana care a adăugat produsul? Deschide separat tabelul, oferta vânzătorului și albumul QC din depozit. Exemplul de mai jos arată cum legi cele trei înregistrări și cum notezi informațiile care încă lipsesc."
+  ],
+  "sections": [
+    {
+      "title": "1. Salvează rândul înainte să urmezi linkul",
+      "paragraphs": [
+        "Copiază adresa reală din numele produsului sau din buton. Într-un tabel partajat, celula poate afișa un domeniu prescurtat, un preț ori simplul cuvânt „cumpără”. Deschide previzualizarea linkului sau folosește comanda browserului pentru copierea adresei. Notează numele tabelului, foaia, denumirea rândului, data și opțiunea dorită. Numărul rândului își poate pierde utilitatea imediat ce cineva sortează tabelul.",
+        "Păstrează descrierea din tabel și observațiile tale în câmpuri separate. „Gri, mărimea 42, șireturi de rezervă” poate combina numele culorii ales de autor, mărimea dorită de tine și un accesoriu vizibil în miniatură. Separă aceste informații. Ulterior poți verifica nuanța prin codul variantei, mărimea prin selecția comenzii și șireturile prin descrierea scrisă sau o fotografie a conținutului primit."
+      ]
+    },
+    {
+      "title": "2. Urmărește linkul până la ID-ul ofertei",
+      "paragraphs": [
+        "Spreadsheetul public Weidian de la QCRadar conține un rând numit „Asics GEL-NYC Grey Rice”. Linkul spre marketplace duce la https://weidian.com/item.html?itemID=7721998852. Platforma este Weidian, iar valoarea după itemID este 7721998852. Poți verifica aceste două elemente copiind adresa destinației. Când am urmat linkul, acesta a redirecționat spre o adresă de magazin Weidian care păstrează același număr. Am verificat asocierea linkului prin director. Prețul și stocul curente ale vânzătorului trebuie verificate în momentul comenzii.",
+        "Dacă spreadsheetul deschide mai întâi pagina unui agent, caută linkul produsului original sau al sursei. Salvează-l alături de adresa agentului și compară platforma și ID-ul complet. Păstrează toate cifrele, inclusiv eventualele zerouri inițiale, în format text. Adresa poate conține și un cod de recomandare, un număr de magazin ori un SKU. Dacă nu există un link sursă și platforma rămâne neclară, lasă câmpul deschis și cere autorului adresa originală."
+      ]
+    },
+    {
+      "title": "3. Identifică varianta exactă din ofertă",
+      "paragraphs": [
+        "Deschide fișa produsului din exemplu. QCRadar afișează, printre alte opțiuni, 1203A372-600 灰 și 1203A789-250 绿. 灰 înseamnă gri, iar 绿 înseamnă verde. Oferta include și alte opțiuni gri, așa că este important să copiezi întregul cod. Pentru varianta gri folosită aici, notează 1203A372-600 灰. ID-ul identifică oferta, iar codul variantei restrânge alegerea la opțiunea relevantă din interiorul ei.",
+        "Scrie separat mărimea dorită și verifică dacă vânzătorul folosește mărimi EU, centimetri sau un tabel propriu. Selectează culoarea și mărimea, apoi citește din nou alegerea în coș sau în previzualizarea comenzii. Miniatura implicită poate rămâne vizibilă chiar dacă textul indică altă variantă. Dacă imaginea și textul se contrazic, păstrează ambele dovezi și întreabă ce opțiune ar intra efectiv în comandă înainte să continui."
+      ]
+    },
+    {
+      "title": "4. Leagă fotografiile QC de varianta selectată",
+      "paragraphs": [
+        "Începe căutarea QC cu linkul ofertei originale. Ghidul FindQC explică faptul că rezultatele pot include grupuri care probabil reprezintă același produs și sugestii apropiate vizual. Deschide un rezultat și compară adresa sursă, numărul ofertei și datele disponibile despre culoarea sau mărimea comenzii fotografiate. Stabilește mai întâi din ce comandă provine fotografia de depozit. Păstrează imaginile de catalog ale vânzătorului lângă descrierea aspectului promis.",
+        "Să presupunem că un album arată eticheta cu mărimea 42 și o talpă vizibilă clar. Dacă lipsește codul culorii, iar oferta include mai multe perechi gri, imaginea poate ajuta la formularea unei întrebări despre poziția unui marcaj. Ai în continuare nevoie de un link sau o etichetă lizibilă care leagă albumul de culoarea aleasă. Pentru potrivire, caută ambele capete ale ruletei în același cadru și notează metoda de măsurare. Eticheta oferă mărimea imprimată."
+      ]
+    },
+    {
+      "title": "5. Recuperează un link schimbat păstrând istoricul",
+      "paragraphs": [
+        "Dacă rândul deschide prima pagină a magazinului sau un produs indisponibil, păstrează URL-ul vechi. Caută întâi ID-ul și apoi numele magazinului împreună cu întregul cod de model ori culoare. Dacă ai doar o captură, decupează un detaliu distinctiv, precum eticheta de pe limba pantofului, pentru a găsi candidați. Deschide oferta fiecărui candidat și creează o înregistrare separată cu vânzătorul, platforma și numărul produsului.",
+        "Un alt vânzător poate utiliza aceeași fotografie de catalog. Chiar și același magazin poate republica modelul sub un alt număr. Păstrează înregistrarea veche lângă cea nouă și descrie legătura verificabilă. „Același cod de model, ID nou, fotografii ale comenzii de verificat” îi permite altei persoane să repete căutarea. Verifică din nou conținutul pachetului, dimensiunile, stocul și prețul ofertei înlocuitoare înainte să o alegi."
+      ]
+    },
+    {
+      "title": "6. Rezolvă o nepotrivire înainte de plată",
+      "paragraphs": [
+        "Imaginează-ți că vrei varianta gri din exemplu în EU 42. Rândul salvat indică Weidian 7721998852. Previzualizarea comenzii arată 1203A789-250 绿, iar albumul QC găsit identifică doar mărimea 42. Ai un link confirmat, o selecție contradictorie și un album incomplet. Revino la lista de variante, selectează 1203A372-600 灰 și redeschide previzualizarea. Mărimea coincide în ambele înregistrări, dar încă trebuie verificată culoarea dacă acest detaliu este important pentru tine.",
+        "O întrebare concretă îl ajută pe vânzător sau agent: „Pentru produsul 7721998852, puteți confirma opțiunea 1203A372-600 灰 în mărimea 42? Când ajunge în depozit, vă rog să fotografiați eticheta de pe limbă și ambii pantofi împreună”. Acesta este un exemplu de solicitare. Când primești o fotografie, notează referința comenzii și detaliile vizibile înainte să decizi expedierea."
+      ]
+    },
+    {
+      "title": "7. Păstrează o verificare care poate fi repetată",
+      "paragraphs": [
+        "Folosește o notă scurtă pentru fiecare candidat. Include numele și data rândului, linkul original și ID-ul, textul exact al variantei, mărimea cerută și data ultimei deschideri a ofertei. Adaugă linkul albumului QC și detaliul pe care îl confirmă. Scrie întrebările rămase în cuvinte clare. Pentru acest exemplu, nota se poate încheia cu „link original identificat, cod gri copiat, mărime și album de depozit în așteptare”. Rămâne utilă dacă titlul sau ordinea tabelului se schimbă.",
+        "Când revii la un produs salvat, începe cu întrebările deschise. O fotografie nouă poate lămuri eticheta și poate lăsa dimensiunile neclare. Adaugă observația cu data ei și păstrează intrările anterioare, mai ales dacă vânzătorul a modificat oferta. Înainte să trimiți propriul colet, leagă fotografiile lui de depozit de referința comenzii și de varianta selectată. Apoi decide dacă incertitudinea rămasă influențează achiziția."
+      ]
+    },
+    {
+      "title": "8. Alege următorul pas după rezultate",
+      "paragraphs": [
+        "Dacă oferta sursă, varianta și mărimea coincid, salvează candidatul și verifică detaliile importante pentru acel produs. La pantofi pot conta perechea completă, etichetele de mărime și lungimea branțului. La un tricou de fotbal pot conta numele și numărul solicitate, emblema frontală și lățimea pieptului. Alege solicitările după utilizarea dorită și descrierea vânzătorului, astfel încât fiecare fotografie să răspundă unei întrebări de cumpărare.",
+        "Dacă ID-ul coincide, dar varianta este neclară, rezolvă mai întâi selecția. Dacă linkul a dispărut, evaluează înlocuitorul în propria înregistrare. Dacă fotografia de depozit arată o mărime greșită sau o componentă lipsă, prezintă diferența alături de detaliile comenzii și întreabă ce procedură de corectare și ce termen sunt disponibile. Când contribui la un spreadsheet, publică linkul original, varianta exactă și data verificării, apoi descrie detaliile vizibile efectiv în fotografii."
+      ]
+    }
+  ],
+  "keywords": [
+    "produse din tabel QC",
+    "verifică linkul produsului",
+    "fotografii QC din tabel"
+  ],
+  "seoTitle": "Verifică un produs din tabel folosind oferta originală",
+  "dateISO": "2026-11-05",
+  "dateModified": "2026-11-05",
+  "sources": [
+    {
+      "label": "FindQC — How FindQC Works",
+      "href": "https://findqc.com/how-findqc-works",
+      "note": "Documentație și exemple publicate, consultate la 5 noiembrie 2026."
+    },
+    {
+      "label": "QCRadar — Weidian Spreadsheet",
+      "href": "https://qcradar.com/weidian-spreadsheet",
+      "note": "Documentație și exemple publicate, consultate la 5 noiembrie 2026."
+    },
+    {
+      "label": "QCRadar — Asics GEL-NYC Grey Rice listing and variant labels",
+      "href": "https://qcradar.com/p/asics-gel-nyc-grey-rice-1203a372-600-f6a972fb",
+      "note": "Documentație și exemple publicate, consultate la 5 noiembrie 2026."
+    },
+    {
+      "label": "Published marketplace destination — Weidian item 7721998852",
+      "href": "https://weidian.com/item.html?itemID=7721998852",
+      "note": "Documentație și exemple publicate, consultate la 5 noiembrie 2026."
+    }
+  ]
+},
+  "football-jersey-qc-photos-name-number-fit": {
+  "title": "Fotografii QC pentru tricouri de fotbal: nume, număr și mărime",
+  "description": "Compară tricoul cu comanda folosind fotografiile din depozit. Verifică numele, numărul, emblemele competiției, poziția imprimeului și măsurătorile înainte de expediere.",
+  "intro": [
+    "Un tricou poate avea culorile corecte și totuși să ajungă cu alt nume, alt ecuson sau altă croială. Ține confirmarea comenzii lângă albumul din depozit. Începe cu detaliile pe care o fotografie suplimentară le poate lămuri, precum un accent sau o ruletă ilizibilă. Lasă deschise întrebările despre comportamentul după utilizare îndelungată. Metoda se aplică atât unui tricou simplu de antrenament, cât și unuia de meci personalizat."
+  ],
+  "sections": [
+    {
+      "title": "Pregătește referința pentru tricoul exact",
+      "paragraphs": [
+        "Notează clubul sau țara, sezonul, modelul de acasă ori de deplasare, mărimea, lungimea mânecii, croiala și fiecare opțiune aleasă la cumpărare. Copiază personalizarea exact, inclusiv spații, semne de punctuație, accente și zerouri inițiale. O captură a confirmării păstrează detalii pe care vânzătorul le poate modifica ulterior în ofertă. Notează și dacă ai ales spatele fără inscripție sau ai refuzat ecusonul ligii. Aceste alegeri se pierd ușor din vedere când începi să compari fotografii cu jucători.",
+        "Folosește mai întâi fotografia vânzătorului pentru varianta comandată. O imagine oficială a clubului poate ajuta la stabilirea poziției emblemei dacă arată același sezon, aceeași versiune și aceeași competiție. Într-un album de la o achiziție anterioară, caută ID-ul produsului, varianta și data. Utilizează acel album pentru a decide ce unghiuri să soliciți. Bazează aprobarea expedierii pe imagini asociate propriei comenzi."
+      ]
+    },
+    {
+      "title": "Cere imagini separate pentru față, spate și mâneci",
+      "paragraphs": [
+        "Solicită fotografii ale feței și spatelui cu tricoul întins, făcute vertical de sus, cu gulerul, ambele subrațuri și tivul inferior în cadru. Cere întinderea mânecilor dacă ecusoanele sunt orientate lateral. Adaugă o fotografie lizibilă a etichetei de mărime. Păstrează imaginea completă chiar dacă detaliul pare mai clar. O emblemă decupată, fără mânecă sau guler în jur, oferă puține indicii despre partea pe care se află și distanța față de cusătură.",
+        "Verifică orientarea înainte să raportezi un detaliu inversat. Citește un cuvânt recognoscibil în aceeași fotografie și stabilește stânga și dreapta purtătorului. O emblemă pe pieptul stâng al acestuia apare de regulă în dreapta privitorului într-o fotografie frontală obișnuită. La vederea din spate, relația se schimbă. Compară folosind centrul gulerului, cusăturile de sub brațe și panourile laterale. Dacă un umăr este îndoit dedesubt, cere întinderea tricoului înainte de a evalua alinierea."
+      ]
+    },
+    {
+      "title": "Citește numele și numărul caracter cu caracter",
+      "paragraphs": [
+        "Citește numele din comandă, apoi spune pe litere ce vezi în fotografie. Verifică accentele, consoanele duble, un S final și formele cifrelor 1 și 7. Confirmă că numărul aparține acestei comenzi. Lista actuală a echipei ajută puțin la un tricou retro sau la un număr ales de client. Pentru un număr din două cifre, urmărește distanța dintre ele și înălțimea la care se află față de tiv.",
+        "Competiția contează când verifici fontul. Centrul de ajutor Liverpool diferențiază inscripția pentru cupe de cea pentru Premier League. Manchester City a documentat un font separat pentru tricourile de cupă ale echipei masculine în 2024/25. Exemplele arată de ce o literă diferită cere revenirea la opțiunea cumpărată. Compară cu referința corespunzătoare. Folosește o vedere dreaptă pentru centrare și un detaliu în lumină uniformă pentru un colț suspect. O fotografie poate arăta o margine vizibil desprinsă. Rezistența imprimeului la spălări rămâne necunoscută."
+      ]
+    },
+    {
+      "title": "Verifică separat emblema, sponsorul și ecusoanele",
+      "paragraphs": [
+        "Fă o listă cu fiecare element și poziția sa așteptată. Compară emblema cu aceeași ediție, sponsorul cu designul ales și fiecare ecuson cu competiția selectată. Citește textele mici la rezoluție completă. Dacă oferta include mai multe seturi de ecusoane, cere ambele mâneci într-o singură fotografie, cu fața tricoului în sus. Acea vedere poate lămuri problema stânga-dreapta fără încă un cadru cu un ecuson izolat.",
+        "Urmărește conturul fiecărei aplicații. Caută un colț îndoit, o parte lipsă dintr-o literă, o cusătură întreruptă sau o cută la îmbinarea suprafețelor. Reflexia pe un transfer neted poate face o margine intactă să pară deschisă la culoare. Cere aceeași zonă dintr-un unghi jos și în lumină difuză. Descrie observația concret, de exemplu „colțul din dreapta jos al sponsorului pare ridicat”. Dacă lipsește un ecuson, trimite împreună opțiunea din comandă și imaginea mânecii complete."
+      ]
+    },
+    {
+      "title": "Măsoară cu aceleași repere ca un tricou pe care îl porți",
+      "paragraphs": [
+        "Așază pe o suprafață plană un tricou care îți vine confortabil. Măsoară drept între cusăturile de sub brațe, fără să tragi materialul, și notează lățimea. Pentru lungime, folosește o metodă repetabilă, de exemplu de la punctul înalt al umărului, lângă guler, până la tiv. Dacă spatele este mai lung, notează panoul măsurat. Cere în depozit exact aceleași capete. O măsurătoare pe centru, de la guler la tiv, produce altă lungime.",
+        "Solicită o fotografie care include gradațiile în centimetri, marcajul zero și ambele capete. Dacă ruleta începe la 2 cm și se termină la 55 cm, distanța vizibilă este 53 cm. Verifică unghiul benzii și dacă materialul a fost întins. Citește titlul tabelului vânzătorului la fel de atent ca numerele. Tabelul Nike pentru bluze bărbătești folosește, de exemplu, măsuri ale corpului. Fotografia din depozit arată lățimea articolului întins. Compararea cu propriul tricou ține cont de lejeritatea pe care o preferi la piept."
+      ]
+    },
+    {
+      "title": "Lămurește o diferență printr-o cerere precisă",
+      "paragraphs": [
+        "Să presupunem o comandă fictivă cu numele MARTÍN, numărul 17 și ecusonul ligii pe mâneca dreaptă a purtătorului. Tricoul tău preferat are lățimea de 54 cm. Înainte de a vedea albumul, decizi că intervalul 53–55 cm ți-ar fi potrivit. Fotografia spatelui arată 17, dar accentul este neclar. Capătul mânecii iese din cadru, iar ruleta pare să se termine aproape de 55 cm. Poți deja să marchezi numărul drept confirmat. Lasă celelalte trei aspecte deschise.",
+        "Un mesaj util ar fi „Pentru această comandă, fotografiați tot spatele și mâneca dreaptă întinsă. Adăugați un detaliu al literei Í din MARTÍN și o imagine între subrațuri cu ambele capete ale ruletei vizibile”. Presupunem că imaginile noi arată inscripția și ecusonul cerute, iar ruleta merge de la 2 la 55 cm. Cei 53 cm intră în intervalul stabilit pentru acest exemplu. Cine preferă 55–57 cm ar putea lua altă decizie privind croiala pe baza acelorași fotografii."
+      ]
+    },
+    {
+      "title": "Salvează o decizie scurtă înainte de expediere",
+      "paragraphs": [
+        "Păstrează referința comenzii, cele mai clare imagini din față și din spate, personalizarea aleasă, lățimea și lungimea măsurată și câte o propoziție pentru fiecare întrebare deschisă. Marchează detaliile drept confirmate, diferite de comandă sau ilizibile. Dacă spatele este gol deși ai comandat inscripționare, trimite împreună opțiunea și fotografia și întreabă agentul ce soluții și termene se aplică acelui articol. Dacă o aparentă înclinare dispare într-o fotografie perpendiculară, păstrează vederea corectată alături de notițe.",
+        "Înainte să aprobi transportul internațional, verifică dacă răspunsul privește același exemplar și dacă tricoul îndeplinește cerințele tale. Condițiile de personalizare, înlocuire și retur depind de vânzător și de etapa comenzii. Salvează răspunsul în scris cât timp articolul încă poate fi inspectat. Ai nevoie de o evidență scurtă, ușor de înțeles și mâine: ce tricou a ajuns, ce măsuri ai văzut și de ce ai ales expedierea, încă o întrebare sau o corectare."
+      ]
+    }
+  ],
+  "keywords": [
+    "poze QC tricou fotbal",
+    "verificare nume număr tricou",
+    "măsurători tricou fotbal"
+  ],
+  "seoTitle": "QC tricou de fotbal — nume, număr și măsuri",
+  "dateISO": "2026-11-05",
+  "dateModified": "2026-11-05",
+  "sources": [
+    {
+      "label": "Nike men's tops size guide — body measurements",
+      "href": "https://www.nike.com/sg/size-fit/mens-tops-alpha",
+      "note": "Documentație și exemple publicate, consultate la 5 noiembrie 2026."
+    },
+    {
+      "label": "Liverpool FC — Premier League printing and club printing",
+      "href": "https://faq.liverpoolfc.com/articles/products-and-stock/what-is-the-difference-between-premier-league-printing-and-our-printing/65969c1f74e6ff44331e568a",
+      "note": "Documentație și exemple publicate, consultate la 5 noiembrie 2026."
+    },
+    {
+      "label": "Manchester City — 2024/25 cup shirt font",
+      "href": "https://www.mancity.com/news/club/man-city-noel-gallagher-club-font-63854300",
+      "note": "Documentație și exemple publicate, consultate la 5 noiembrie 2026."
+    }
+  ]
+},
  'taobao-qc-finder-item-id-link-checks': {
   title:'Taobao QC Finder: verifică linkul, ID-ul și fotografiile QC',description:'Caută fotografii QC cu linkul sau ID-ul Taobao, separă rezultatele similare și verifică oferta și varianta actuală.',keywords:['Taobao QC Finder','poze QC Taobao','ID produs Taobao','căutare QC'],
   intro:['Căutarea fotografiilor QC de pe Taobao începe cu identificarea ofertei. O imagine familiară nu este suficientă: platforma, ID-ul articolului, vânzătorul și opțiunea trebuie să corespundă înregistrării. Abia apoi poți evalua fotografiile.','FindQCS este un ghid și un index independent. Nu operăm Taobao sau FindQC și nu efectuăm inspecția comenzii tale în depozit.'],
@@ -12,17 +190,103 @@ export const roEditorial = {
   ],
  },
  'weidian-qc-finder-item-id-original-listing': {
-  title:'Weidian QC Finder: verifică linkul original și itemID',description:'Asociază fotografiile QC Weidian cu sursa corectă: verifică redirecționări, itemID, vânzătorul, variantele și ofertele vechi.',keywords:['Weidian QC Finder','poze QC Weidian','Weidian itemID','link original Weidian'],
-  intro:['Linkurile Weidian circulă prin chat-uri, tabele și convertoare ale agenților. Oferta originală poate rămâne ascunsă în spatele unei redirecționări. Înainte să judeci fotografiile, reconstituie legătura dintre sursă și rezultat.'],
-  sections:[
-   {title:'1. Păstrează linkul primit și destinația',paragraphs:['Salvează ambele adrese. Caută identificatorul ofertei concrete, adesea în câmpul itemID, și compară-l cu referința inițială. ID-ul magazinului sau al unei comenzi private înseamnă altceva. Dacă sursa nu este vizibilă, identitatea rămâne necunoscută; nu construi o adresă dintr-un număr ales la întâmplare.']},
-   {title:'2. Începe cu metoda cea mai precisă',paragraphs:['Introdu linkul Weidian complet într-o căutare QC care acceptă acest format. Încearcă apoi ID-ul integral dacă interfața permite. Vânzătorul și cuvintele distinctive ajută la descoperirea candidaților. O imagine este utilă când lipsește linkul, dar nu dovedește același magazin sau aceeași ofertă.']},
-   {title:'3. Compară sursa și opțiunea',table:[['Câmp','Verificare'],['Platformă și ID','Destinația finală corespunde sursei'],['Vânzător','Magazinul nu contrazice înregistrarea'],['Variantă','Culoarea, mărimea, versiunea și conținutul coincid'],['Dată','Separă fotografia istorică de pagina curentă']],paragraphs:['O singură ofertă poate avea opțiuni foarte diferite. Fotografia unei versiuni nu confirmă execuția alteia. Păstrează denumirea exactă a variantei chiar dacă agentul o traduce sau o prescurtează.']},
-   {title:'4. Ține separate grupurile QC',paragraphs:['Distinge fotografiile istorice ale aceluiași ID, alte variante și produse similare ale altor vânzători. Fiecare grup răspunde altor întrebări. Imaginile promoționale comune nu dovedesc un lot comun. Folosește detaliile vizibile drept puncte de control pentru exemplarul tău, nu ca predicție despre toate produsele magazinului.']},
-   {title:'5. Tratează linkurile vechi ca arhivă',paragraphs:['Verifică dacă adresa încă deschide produsul sau doar pagina magazinului. Dacă oferta a dispărut, galeria rămâne istorică. Un candidat găsit prin text sau imagine are nevoie de o înregistrare nouă, cu propriul ID și propriile dovezi QC. Nu transfera automat concluziile vechi.']},
-   {title:'6. Verifică din nou înainte de cumpărare și expediere',paragraphs:['Confirmă opțiunea actuală și condițiile cu vânzătorul sau agentul înainte de comandă. În depozit contează asocierea cu comanda ta, etichetele și fotografiile propriei unități. Păstrează sursa, varianta, data, întrebarea deschisă și acțiunea următoare împreună. Această continuitate este mai utilă decât un folder de fotografii fără proveniență.']},
+  "title": "Weidian QC Finder pentru itemID, linkuri și fotografii potrivite",
+  "description": "Găsește itemID-ul Weidian și verifică fotografiile QC în raport cu oferta originală, vânzătorul și culoarea sau mărimea aleasă.",
+  "intro": [
+    "O căutare QC pentru Weidian devine mai ușor de urmărit când păstrezi identitatea produsului lângă fiecare fotografie analizată. Linkurile pot trece prin tabele, conversații și agenți de cumpărături. Salvează adresa primită și verifică destinația înainte de a atribui imaginile produsului dorit.",
+    "Ghidul urmărește traseul de la un link copiat la o verificare datată. FindQC descrie căutarea prin link, cuvinte și imagine. Pașii practici de mai jos te ajută să alegi intrarea, să compari rezultatele și să pregătești întrebările pentru agent când comanda ajunge în depozit."
   ],
- },
+  "sections": [
+    {
+      "title": "1. Salvează linkul primit și contextul său",
+      "paragraphs": [
+        "Copiază adresa completă din celula tabelului sau mesajul original într-o notiță. Notează denumirea folosită acolo, data și orice culoare, mărime sau versiune menționată în apropiere. Păstrează captura originală dacă există. Poate explica intenția autorului chiar dacă destinația se schimbă ulterior. O denumire precum pantofi gri de alergare are nevoie de detalii suplimentare pentru o cumpărare precisă.",
+        "Deschide linkul și salvează adresa finală afișată pentru produs. Păstrează împreună linkul agentului și sursa originală când ambele sunt vizibile. Dacă apare o pagină de autentificare, consemnează observația și lasă destinația neconfirmată. Examinează parametrii într-o copie, astfel încât adresa primită integral să rămână disponibilă."
+      ]
+    },
+    {
+      "title": "2. Identifică itemID într-un exemplu publicat",
+      "paragraphs": [
+        "La 5 noiembrie 2026, pagina principală QCRadar afișa exemplul weidian.com/item.html?itemID=7617089695. În această adresă, weidian.com identifică platforma, /item.html este ruta produsului, iar 7617089695 reprezintă valoarea itemID. A fost verificată publicarea acestui link. Stocul actual, mărimile disponibile și conținutul fiecărui album din depozit necesită verificări separate pe paginile corespunzătoare.",
+        "Folosește structura pentru propria adresă. Copiază valoarea de după itemID= până la următorul &, dacă mai există parametri. Verifică scrierea și fiecare cifră. Identificatorul unui magazin, numărul coletului sau cifrele din numele unei imagini au alte roluri. Dacă linkul agentului include o adresă codificată, deschide sursa vizibilă când este disponibilă și compară destinația cu adresa salvată."
+      ]
+    },
+    {
+      "title": "3. Alege căutarea după informațiile disponibile",
+      "paragraphs": [
+        "Începe cu URL-ul complet al produsului Weidian într-un instrument QC care îl acceptă. Salvează exact textul introdus. Dacă încercarea eșuează și interfața acceptă ID-ul articolului, folosește identificatorul confirmat. Păstrează numele platformei lângă număr pentru a putea reconstitui originea mai târziu. Salvează și pagina rezultatului sau adresa ei.",
+        "Când linkul dispare, folosește o expresie distinctivă despre produs. Când rămâne numai captura, încearcă o căutare prin imagine. Un model sau un detaliu vizibil ajută mai mult decât un titlu publicitar lung. Examinează separat fiecare candidat. Dacă un produs pare familiar, deschide sursa și compară ID-ul înainte de a adăuga fotografiile în documentație."
+      ]
+    },
+    {
+      "title": "4. Verifică împreună oferta finală și vânzătorul",
+      "paragraphs": [
+        "Deschide destinația originală afișată de rezultat și compar-o cu linkul primit. Confirmă platforma, itemID-ul, magazinul și tipul produsului. Păstrează numele vânzătorului exact cum apare, inclusiv formularea originală când există o traducere. Un link stabil al magazinului oferă context. Verifică apoi imaginile principale și denumirile variantelor pentru schimbări relevante comenzii.",
+        "Creează o înregistrare separată când alt magazin utilizează aceeași imagine promoțională. Prețul, termenul estimat și opțiunile aparțin acelei oferte. Dacă ID-ul original conduce acum la alt produs, notează schimbarea și data. Înainte de a alege un înlocuitor, repetă verificările de identitate și adună dovezile sale. Istoricul va rămâne inteligibil și după câteva săptămâni."
+      ]
+    },
+    {
+      "title": "5. Potrivește culoarea, mărimea, versiunea și conținutul",
+      "paragraphs": [
+        "O ofertă poate include mai multe culori, mărimi, versiuni sau seturi. Selectează combinația dorită pe pagina actuală și salvează textul exact al opțiunilor. Citește prețurile dependente de mărime, accesoriile incluse și disponibilitatea asociată selecției. Dacă traducerea este ambiguă, păstrează originalul și cere vânzătorului sau agentului confirmarea opțiunii ce va fi comandată.",
+        "Compară apoi înregistrarea QC cu această alegere. Caută culoarea, eticheta de mărime, codul modelului și piesele efectiv vizibile. Să presupunem că vrei pantofi negri de mărimea 42 și găsești un album cu 41 sub același itemID. Păstrează-l ca exemplu istoric pentru altă mărime și folosește-l pentru alegerea unghiurilor de verificat. Obține dovada mărimii comenzii tale înainte de aprobare."
+      ]
+    },
+    {
+      "title": "6. Citește fiecare album QC cu data și proveniența",
+      "paragraphs": [
+        "Păstrează împreună fotografiile fiecărei comenzi, data și sursa afișate de instrument. Începe cu produsul întreg, apoi examinează etichetele, construcția și măsurătorile. Dacă mai multe seturi arată neclar aceeași zonă, pregătește o cerere precisă pentru acel unghi. Recunoaște fișierele repetate, deoarece copiile aceleiași fotografii reprezintă aceeași observație.",
+        "Pentru produsul deja ajuns la agent, stabilește care album aparține comenzii tale. Compară privat referința comenzii și întreabă agentul când asocierea este neclară. Folosește albumele vechi pentru pregătirea întrebărilor, apoi evaluează unitatea actuală prin propriile fotografii. Păstrează filigranele, capetele riglei și etichetele utile în copiile de lucru."
+      ]
+    },
+    {
+      "title": "7. Transformă observațiile în cereri concrete",
+      "paragraphs": [
+        "Pentru fiecare nelămurire, scrie zona, observația și fotografia necesară rezolvării. Poți cere o vedere perpendiculară asupra etichetei sau o măsurare a pieptului cu haina așezată plat și ambele capete ale benzii vizibile. Aplică aceeași metodă unui articol care îți vine bine. Două lățimi se pot compara util când folosesc aceleași puncte de început și final.",
+        "Identifică în notiță descrierile vânzătorului și observațiile tale. O afirmație despre material trebuie să își păstreze sursa și data. O cusătură aparent desfăcută poate justifica o fotografie mai clară sau verificarea acelei zone. Întreabă ce poate controla agentul cât produsul se află în depozit și consemnează răspunsul înainte de a decide următorul pas."
+      ]
+    },
+    {
+      "title": "8. Recuperează un link indisponibil păstrând istoricul",
+      "paragraphs": [
+        "Dacă adresa redirecționează spre magazin sau nu mai arată produsul, păstrează URL-ul vechi și notează destinația observată. Încearcă ID-ul salvat și contextul vânzătorului. Extinde apoi căutarea folosind expresia produsului sau captura. Fiecare înlocuitor are nevoie de o înregistrare nouă cu URL, ID, magazin și opțiuni, pentru a putea compara alternativele cu alegerea inițială.",
+        "Când căutarea QC nu întoarce fotografii, verifică întâi URL-ul și metoda de introducere. Rezultatul gol lasă deschise întrebări despre existența unei înregistrări utilizabile în acoperirea serviciului. Salvează mesajul exact al interfeței. Pentru raportarea unui link defect, oferă adresa primită, itemID-ul așteptat, destinația observată și data verificării, astfel încât administratorul să poată reproduce situația."
+      ]
+    },
+    {
+      "title": "9. Încheie cu o decizie datată și verifică înainte de comandă",
+      "paragraphs": [
+        "Notița finală trebuie să includă URL-ul primit, sursa actuală, itemID-ul, magazinul, opțiunea dorită, metoda de căutare, albumele analizate și întrebarea deschisă. Descrie concis relația, de exemplu aceeași ofertă cu opțiune vizibilă potrivită, aceeași ofertă cu opțiune necunoscută, candidat similar sau ofertă indisponibilă. Leagă fiecare concluzie de înregistrarea relevantă pentru a permite repetarea verificării.",
+        "Chiar înaintea comenzii, redeschide destinația și confirmă opțiunea, prețul și disponibilitatea actuale. După sosirea în depozit, compară unitatea cu comanda și cere dovezile lipsă înainte de ambalare. Încheie notița cu o acțiune, precum cererea fotografiei etichetei, confirmarea șireturilor incluse, aprobarea după măsurare sau clarificarea unei diferențe. Salvează data acțiunii."
+      ]
+    }
+  ],
+  "keywords": [
+    "ID articol Weidian",
+    "fotografii QC Weidian",
+    "verificare link Weidian"
+  ],
+  "seoTitle": "Weidian QC Finder — verifică ID-ul și linkul original",
+  "dateISO": "2026-09-15",
+  "dateModified": "2026-11-05",
+  "sources": [
+    {
+      "label": "FindQC — How FindQC Works",
+      "href": "https://findqc.com/how-findqc-works",
+      "note": "Documentație și exemple publicate, consultate la 5 noiembrie 2026."
+    },
+    {
+      "label": "FindQC — What is QC?",
+      "href": "https://findqc.com/what-is-qc",
+      "note": "Documentație și exemple publicate, consultate la 5 noiembrie 2026."
+    },
+    {
+      "label": "QCRadar — published Weidian example link",
+      "href": "https://qcradar.com/",
+      "note": "Documentație și exemple publicate, consultate la 5 noiembrie 2026."
+    }
+  ]
+},
  '1688-qc-finder-supplier-variant-batch-checks': {
   title:'1688 QC Finder: diferențiază furnizorul, varianta și lotul',description:'Asociază pozele QC 1688 cu oferta, furnizorul și opțiunea; verifică cantitățile și evită atribuirea unui lot fără dovezi.',keywords:['1688 QC Finder','poze QC 1688','furnizor 1688','lot QC'],
   intro:['O ofertă 1688 poate include multe culori, mărimi, unități de vânzare și praguri cantitative. Un singur set QC nu descrie automat tot ce se poate comanda din acel link. Începe cu opțiunea exactă și furnizorul.'],
@@ -48,17 +312,99 @@ export const roEditorial = {
   ],
  },
  'findqc-image-search-reference-photo-checks': {
-  title:'Căutare prin imagini FindQC: referințe bune și potriviri false',description:'Caută poze QC cu imagini clare, decupaje utile și mai multe vederi; confirmă apoi oferta originală și varianta.',keywords:['FindQC căutare imagine','QC Finder imagine','poze QC după imagine','produse similare'],
-  intro:['Căutarea vizuală găsește candidați când lipsește numele sau linkul. Nu confirmă singură aceeași ofertă. O referință bună îmbunătățește căutarea, iar verificarea ulterioară a sursei și variantei stabilește relația reală.'],
-  sections:[
-   {title:'1. Alege o imagine inițială clară',paragraphs:['Folosește o vedere bine focalizată, cu forma produsului vizibilă și puțin fundal. Colajele, prețurile suprapuse și filtrele puternice pot accentua elemente irelevante. Păstrează originalul nemodificat. Elimină nume, adrese și referințe private înainte să trimiți fotografia unui serviciu extern de căutare.']},
-   {title:'2. Testează decupaje cu un scop',paragraphs:['Începe cu produsul complet, apoi cu un detaliu distinctiv dacă este necesar. Nu elimina formele esențiale. Un logo izolat poate genera multe rezultate fără legătură; forma completă și o cusătură caracteristică oferă context. Notează ce decupaj a produs fiecare candidat.']},
-   {title:'3. Folosește mai multe vederi din aceeași sursă',paragraphs:['Dacă le ai, caută separat cu fața și spatele. Rezultatele diferite indică incertitudine. Nu combina detaliile convenabile din oferte diferite ca și cum ar forma un singur produs. Nici detaliile generate sau adăugate artificial nu sunt dovezi despre original.']},
-   {title:'4. Revizuiește sistematic rezultatele',items:['Corespund categoria și forma generală?','Se potrivesc cusăturile, închiderile, etichetele și accesoriile?','Culoarea și mărimea aparțin opțiunii dorite?','Linkul original este vizibil și actual?'],paragraphs:['O imagine similară poate aparține altui material sau vânzător. Poziția în rezultate nu este o evaluare de calitate ori autenticitate. Salvează fiecare candidat cu sursa proprie.']},
-   {title:'5. Revino la verificarea exactă a linkului',paragraphs:['Deschide candidatul și notează platforma, ID-ul, vânzătorul și varianta. Dacă știi ID-ul inițial, compară-l direct. Cu alt ID, rezultatul rămâne similar. Dacă aveai doar o fotografie, precizează că nu ai putut confirma o asociere exactă cu oferta inițială.']},
-   {title:'6. Transformă asemănarea într-o întrebare utilă',paragraphs:['Un rezultat poate sugera un unghi lipsă sau un detaliu constructiv de verificat. Cere, de exemplu, o fotografie apropiată a închiderii exemplarului tău. Nu deduce un lot comun ori aceeași compoziție. Căutarea se termină cu un candidat verificat sau cu o incertitudine explicită.']},
+  "title": "Căutare prin imagini în FindQC — Găsește produsul și verifică potrivirea",
+  "description": "Găsește fotografii QC pornind de la o captură, compară produse similare și verifică oferta originală, vânzătorul și varianta înainte de cumpărare.",
+  "intro": [
+    "O captură salvată poate rămâne singurul indiciu după dispariția linkului unui produs. FindQC descrie căutarea prin imagini pentru găsirea unor înregistrări asemănătoare vizual, alături de căutarea prin link și cuvinte-cheie. Începe cu fotografia, apoi folosește datele sursei pentru a stabili ce ofertă și variantă descriu imaginile candidatului.",
+    "Acest ghid transformă procesul într-o verificare repetabilă. Vei pregăti două vederi utile, vei compara rezultatele, vei elimina o asemănare înșelătoare și vei salva un candidat cu suficiente informații pentru a-l redeschide. Exemplul cu hanoracul este fictiv și ilustrează modul de luare a deciziei."
   ],
- },
+  "sections": [
+    {
+      "title": "1. Păstrează un original clar și pregătește o copie de încărcat",
+      "paragraphs": [
+        "Salvează cel mai bun original disponibil înainte de editare. Alege o vedere cu întregul produs, conturul și panourile, buzunarele sau închiderile distinctive. O fotografie mare și clară oferă de obicei mai multe informații decât o miniatură mărită. Privește fișierul la dimensiune normală și decide ce detalii vizibile poți compara în mod fiabil cu altă imagine.",
+        "Pregătește separat copia de încărcat. Decupează comenzile aplicației, prețurile, produsele fără legătură și datele private ale comenzii. Verifică marginile și etichetele pentru nume, adrese, numere de urmărire sau conversații. Păstrează originalul în privat dacă îți trebuie pentru comandă. Când fotografia aparține altcuiva, folosește o imagine pe care ai permisiunea să o distribui."
+      ]
+    },
+    {
+      "title": "2. Pregătește două vederi pentru întrebări diferite",
+      "paragraphs": [
+        "Creează un decupaj al produsului întreg, cu puțin spațiu în jurul marginilor. Al doilea decupaj trebuie să arate o trăsătură distinctivă, de exemplu cusătura unui buzunar, un panou al călcâiului sau poziția închiderilor. Păstrează suficient context pentru localizarea detaliului. Denumește fișierele simplu, astfel încât fiecare candidat să poată fi asociat cu vederea care l-a găsit.",
+        "Un logo izolat poate apărea pe multe produse. Un decupaj prea strâns poate elimina un indiciu util, precum poziția logoului față de buzunar. Păstrează proporțiile și evită filtrele de culoare, accentuarea artificială și detaliile generate. Dacă sursa oferă un al doilea unghi, folosește-l într-o căutare separată și păstrează legătura dintre cele două vederi originale."
+      ]
+    },
+    {
+      "title": "3. Formează o listă scurtă din rezultatele vizuale",
+      "paragraphs": [
+        "Deschide interfața actuală de căutare prin imagini FindQC și încarcă vederea pregătită. Documentația descrie potrivirea vizuală și diferențiază grupurile cu probabil același articol de recomandările similare. Verifică etichetele afișate efectiv în pagina de rezultate. Salvează trei sau patru candidați promițători cu linkurile, data căutării și un motiv scurt pentru alegere.",
+        "Începe cu structura. Numără buzunarele, compară limitele panourilor, identifică închiderile și examinează forma tălpii, gulerului sau tivului. Lumina și editarea pot modifica aspectul culorii, așa că asociază culoarea cu detalii vizibile mai specifice. Un rezultat afișat sus merită verificat, însă poziția sa singură nu oferă dovezi despre identitatea vânzătorului, stoc sau starea unei viitoare comenzi."
+      ]
+    },
+    {
+      "title": "4. Verifică fiecare candidat cu a doua vedere",
+      "paragraphs": [
+        "Repetă căutarea cu decupajul detaliului sau cu al doilea unghi original. Compară fiecare candidat rămas cu ambele imagini, folosind aceeași listă de caracteristici. Un rezultat compatibil cu fața și spatele referinței este un indiciu mai solid decât unul susținut doar de o culoare comună. Notează orice nepotrivire chiar dacă fotografia principală pare convingătoare.",
+        "Verifică scara și perspectiva înainte să elimini produsul. Un buzunar poate părea mai lat fiindcă haina este înclinată sau pliată. Caută altă imagine clară din oferta aceluiași candidat. Dacă zona rămâne ascunsă, scrie „detaliu neclarificat”. Păstrează separat înregistrările, astfel încât vederea utilă a unui vânzător să rămână asociată produsului pe care îl documentează."
+      ]
+    },
+    {
+      "title": "5. Urmărește un exemplu fictiv cu un hanorac",
+      "paragraphs": [
+        "Imaginează-ți o fotografie frontală salvată a unui hanorac gri cu fermoar, două buzunare oblice separate și o cusătură curbată în partea superioară a mânecii. Candidatul A are aceeași culoare și un desen asemănător pe piept, dar fotografia detaliată arată un singur buzunar cangur continuu. Candidatul B are buzunarele separate și cusătura curbată. Acești candidați fictivi explică verificarea.",
+        "Elimină A pentru modelul dorit și păstrează B pentru investigație. Verifică apoi varianta selectată. Dacă albumul din depozit aparține versiunii negre, iar tu vrei gri, notează limita și caută o înregistrare a versiunii gri. Păstrează separat culoarea și fiecare mărime disponibilă, astfel încât observațiile unui album să se refere la opțiunea fotografiată.",
+        "Presupune acum că vânzătorul și ID-ul ofertei B sunt vizibile, însă captura originală nu conținea aceste date. Poți identifica precis B și îl poți redeschide, dar relația cu oferta inițială pierdută rămâne neconfirmată. Dacă un mesaj vechi dezvăluie ulterior sursa, compară platforma, ID-ul complet, vânzătorul și opțiunea. Acest indiciu poate confirma relația sau poate impune alt candidat."
+      ]
+    },
+    {
+      "title": "6. Verifică oferta originală, vânzătorul și opțiunea",
+      "paragraphs": [
+        "Deschide sursa candidatului și notează platforma, URL-ul final, identificatorul complet al produsului și vânzătorul. Păstrează linkul agentului lângă linkul platformei originale când ambele există. La o pagină de produs Weidian, parametrul itemID este util pentru comparația cu sursa salvată. Alte numere dintr-un link intermediar sau dintr-o referință de comandă pot identifica lucruri diferite.",
+        "Compară textul efectiv al culorii, mărimii, versiunii și pieselor incluse. Redeschide selectorul dacă fotografia de copertă rămâne aceeași când schimbi opțiunea. Notează data și câmpurile inspectate. Dacă sursa se oprește la autentificare sau la o pagină indisponibilă, păstrează conținutul actual ca neclarificat și cere o sursă verificabilă înainte să te bazezi pe un titlu ori o previzualizare veche."
+      ]
+    },
+    {
+      "title": "7. Asociază fiecare album QC cu articolul fotografiat",
+      "paragraphs": [
+        "Pentru fiecare album util, notează sursa, data când este disponibilă, oferta asociată și indiciile vizibile despre variantă. O fotografie comercială ajută la descrierea ofertei. O fotografie din depozit ajută la examinarea unei unități primite. Păstrează legătura imaginilor cu înregistrarea sau comanda pentru a explica ce produs susțin și ce detalii rămân incerte.",
+        "Folosește imaginile istorice pentru pregătirea propriei verificări. Pentru hanoracul din exemplu, cere o vedere frontală completă, un detaliu clar al buzunarelor, eticheta de mărime și lățimea pieptului măsurată pe plan drept cu ambele capete ale ruletei vizibile. Compară unitatea primită cu comanda făcută. Un unghi lipsă permite o solicitare precisă, iar o măsurătoare ilizibilă cere o fotografie repetată."
+      ]
+    },
+    {
+      "title": "8. Schimbă metoda când imaginea oferă prea puține informații",
+      "paragraphs": [
+        "Dacă primele căutări afișează doar produse generice, încearcă o vedere originală mai clară înainte de schimbarea metodei. Extrage o denumire distinctivă de model, categoria produsului sau o etichetă lizibilă și caută prin cuvinte-cheie. Când un candidat oferă un link de sursă sigur, încearcă metoda documentată de căutare prin link. Păstrează candidații anteriori și motivele eliminării pentru a urmări procesul.",
+        "Unele produse au puține fotografii QC publice. O căutare fără rezultat lasă potrivirea neclarificată. Poți cere linkul original persoanei care a distribuit imaginea, poți întreba vânzătorul sau agentul despre variantă ori poți alege un candidat cu date verificabile. Stabilește un punct de oprire după aceste verificări, pentru ca repetarea căutării să nu transforme o asemănare slabă într-o potrivire presupusă."
+      ]
+    },
+    {
+      "title": "9. Salvează concluzia și verific-o înainte de cumpărare",
+      "paragraphs": [
+        "Păstrează împreună referința originală, numele ambelor copii, URL-ul candidatului, platforma, ID-ul, vânzătorul, varianta și data verificării. Adaugă o frază despre relație, de exemplu „Candidatul B corespunde buzunarelor și cusăturii vizibile a mânecii; ID-ul sursei pierdute rămâne necunoscut”. Notează pasul următor, cum ar fi obținerea linkului original sau solicitarea unei fotografii cu măsurătoare.",
+        "Înainte de cumpărare, redeschide destinația salvată și verifică din nou opțiunea și disponibilitatea. După sosirea în depozit, folosește fotografiile comenzii tale pentru decizia de expediere. Distribuie cercetarea cu datele private ascunse și legende clare pentru referințe, QC istorice și fotografiile propriei comenzi. Alt cititor ar trebui să poată urma aceeași rută și să înțeleagă concluzia."
+      ]
+    }
+  ],
+  "keywords": [
+    "căutare prin imagine FindQC",
+    "căutare foto QC",
+    "produs din captură"
+  ],
+  "seoTitle": "FindQC prin imagini — verifică fotografii și capturi",
+  "dateISO": "2026-09-15",
+  "dateModified": "2026-11-05",
+  "sources": [
+    {
+      "label": "FindQC — How FindQC Works",
+      "href": "https://findqc.com/how-findqc-works",
+      "note": "Documentație și exemple publicate, consultate la 5 noiembrie 2026."
+    },
+    {
+      "label": "FindQC Academy — Choosing the Best Search Method",
+      "href": "https://academy.findqc.com/2024/12/21/mastering-qc-finder-choosing-the-best-search-method/",
+      "note": "Documentație și exemple publicate, consultate la 5 noiembrie 2026."
+    }
+  ]
+},
  'qc-photos-vs-qc-videos-evidence-guide': {
   title:'Fotografii QC sau video QC: ce dovadă răspunde întrebării?',description:'Alege fotografii pentru detalii și măsurători, video pentru mișcare și vederi continue. Înțelege limitele ambelor formate.',keywords:['fotografii QC vs video','video QC','poze depozit','dovezi QC'],
   intro:['Mai multe imagini nu înseamnă automat dovezi mai bune. O fotografie clară poate arăta eticheta mai bine decât un clip mișcat; un video poate arăta mișcarea unei închideri pe care un cadru fix nu o surprinde. Alege formatul după întrebarea deschisă.'],
@@ -84,17 +430,102 @@ export const roEditorial = {
   ],
  },
  'clothing-qc-photos-measurements-print-stitching': {
-  title:'Fotografii QC pentru haine: măsurători, imprimeuri și cusături',description:'Verifică hainele în poze QC: variantă și etichetă, dimensiuni pe plan, poziția imprimeului, cusături, închideri și unghiuri lipsă.',keywords:['poze QC haine','măsurători QC haine','QC imprimeu','QC cusături'],
-  intro:['Eticheta de mărime răspunde doar unei întrebări de identificare. Pentru a vedea dacă haina corespunde așteptărilor ai nevoie și de dimensiuni comparabile, execuție vizibilă și varianta corectă. Verifică aceste elemente separat.'],
-  sections:[
-   {title:'1. Confirmă varianta comandată',paragraphs:['Compară culoarea, modelul, mărimea și conținutul cu confirmarea comenzii. O imagine comercială poate grupa mai multe opțiuni. Verifică fața, spatele și etichetele lizibile ale exemplarului actual. O etichetă corectă nu dovedește dimensiunile sau compoziția materialului.']},
-   {title:'2. Compară cu o haină care îți vine bine',paragraphs:['Măsoară piesa de referință întinsă pe plan, fără să o tragi. Notează lățimea pieptului, lungimea și, după caz, umerii, mâneca, talia sau interiorul cracului, cu punctele exacte. Cere aceeași metodă depozitului. Măsurile corpului, lățimile plane și circumferințele nu trebuie amestecate fără explicație.']},
-   {title:'3. Evaluează imprimeul fără eroare de perspectivă',paragraphs:['Cere așezarea dreaptă a hainei. Compară imprimeul cu cusăturile și axa centrală, nu doar cu marginea unei imagini decupate. Un pliu poate crea impresia de deplasare. Pentru margini neclare ajută un cadru apropiat; reflexiile și compresia nu sunt defecte confirmate ale imprimării.']},
-   {title:'4. Verifică cusăturile, tivurile și închiderile',paragraphs:['Caută cusături deschise vizibile, tivuri inegale, fire libere, nasturi și fermoare. Descrie locul și cere alt unghi dacă trebuie. Exteriorul nu arată toate întăriturile interne. O verificare scurtă a fermoarului demonstrează mișcarea, nu durata sa viitoare.']},
-   {title:'5. Compară suprafața și accesoriile',items:['Reverifică petele și urmele în lumină uniformă.','Numără buzunarele, șnururile, curelele și piesele incluse.','Etichetează afirmațiile despre material ca declarații.','Notează zonele interioare nevizibile ca întrebări deschise.'],paragraphs:['Moliciunea, mirosul, confortul și comportamentul la spălare nu pot fi stabilite sigur prin fotografii. O suprafață curată nu dovedește aceste proprietăți.']},
-   {title:'6. Formulează o cerere care rezolvă nelămurirea',paragraphs:['Exemplu: „Măsoară pe plan de la cusătura de sub un braț la cea de sub celălalt, fără întindere și cu ambele capete vizibile”. Sau: „Fotografiază marginea dreaptă a imprimeului de aproape și în context”. Verifică serviciile și termenele, actualizează criteriile și decide dacă accepți, ceri alt control ori întrebi despre schimb.']},
+  "title": "Fotografii QC pentru haine: măsuri, imprimeuri și cusături",
+  "description": "Verifică hainele în fotografii QC printr-un exemplu de măsurare, interval de potrivire, imprimeuri, cusături, etichete și o decizie pentru depozit.",
+  "intro": [
+    "Verifică fotografiile QC ale hainelor într-o ordine constantă. Confirmă articolul și varianta, compară măsurători lizibile cu un tricou propriu, apoi inspectează grafica, construcția și accesoriile. O metodă consecventă simplifică cererea unei fotografii suplimentare utile și decizia înainte de expirarea termenului aplicabil comenzii.",
+    "Ghidul se aplică tricourilor, hanoracelor, jachetelor și pantalonilor, cu puncte de măsurare adaptate construcției. Păstrează separat rezultatele istorice și fotografiile comenzii actuale. Valorile de mai jos sunt exemple ilustrative de calcul."
   ],
- },
+  "sections": [
+    {
+      "title": "1. Confirmă articolul exact și varianta aleasă",
+      "paragraphs": [
+        "Deschide împreună oferta originală, poziția comenzii și înregistrarea depozitului. Notează platforma, ID-ul, vânzătorul, tipul articolului, culoarea, mărimea, versiunea și cantitatea. O ofertă poate include mai multe variante sub aceeași imagine principală. Compară miniatura selectată și denumirea originală a variantei cu comanda. Păstrează denumirile de culoare dificil de tradus în limba originală pentru o referință clară.",
+        "Compară integral fața și spatele cu varianta aleasă. Verifică grafica, dispunerea buzunarelor, mânecile, croiala și detaliile de sezon sau versiune. Numără centura, căptușeala ori alte piese incluse. Rezolvă o diferență clară de identitate înaintea detaliilor cosmetice și include numărul comenzii în fiecare solicitare."
+      ]
+    },
+    {
+      "title": "2. Obține vederi complete înainte de fotografiile apropiate",
+      "paragraphs": [
+        "Cere așezarea naturală a articolului pe o suprafață dreaptă, cu mânecile, tivul și închiderile vizibile. Materialul trebuie netezit ușor și lăsat relaxat. Păstrează o vedere frontală și una din spate complete, pentru localizarea fiecărui detaliu. Plierea strânsă poate ascunde urme sau forma panourilor. O cameră înclinată poate deforma relația dintre umeri, buzunare și tiv.",
+        "Localizează fiecare problemă în fotografia largă înainte de a cere un prim-plan. Descrie locul exact, precum colțul buzunarului drept, și solicită aceeași zonă în lumină uniformă. Ia în calcul umbrele, cutele și felul în care cade materialul. O a doua imagine aliniată ajută la verificarea unei pete, margini inegale sau grafici deplasate."
+      ]
+    },
+    {
+      "title": "3. Măsoară între capete definite și verifică aritmetica",
+      "paragraphs": [
+        "Folosește această metodă ilustrativă pentru a compara un tricou cu unul pe care îl ai deja. Așază tricoul de referință pe o suprafață plană, netezește-l ușor și lasă materialul relaxat. Identifică îmbinările cusăturilor sub ambele brațe. Întinde metrul drept între aceste puncte și fotografiază împreună marcajele de început, de sfârșit și articolul. Cere depozitului aceleași puncte și aceeași tensiune a materialului. UNIQLO descrie lățimea corpului prin punctele de sub brațe. Verifică și convenția din tabelul vânzătorului.",
+        "Într-o fotografie QC ipotetică, capătul stâng este la 3 cm, iar cel drept la 58 cm. Lățimea dintre puncte este 58 − 3 = 55 cm. Salvează scăderea lângă fotografie. O a doua imagine cu metrul pornind de la zero simplifică verificarea. Dublarea lățimii măsurate pe plan oferă, prin această metodă, o circumferință aproximativă de 110 cm. Păstrează măsura inițială de 55 cm, astfel încât toate comparațiile să folosească aceeași mărime.",
+        "Pentru lungime, definește precis punctul superior, de exemplu umărul de lângă guler, și tivul inferior. Cere o fotografie cu ambele capete și întregul traseu al metrului. Lungimea pe centrul spatelui și cea de la umăr la tiv urmează trasee diferite. Notează metoda vânzătorului și folosește-o la comparațiile ulterioare."
+      ]
+    },
+    {
+      "title": "4. Stabilește intervalul de potrivire înainte de citire",
+      "paragraphs": [
+        "Notează lățimea unui tricou confortabil, măsurând aceleași puncte. Ca preferință personală ilustrativă, să presupunem că are 55 cm și accepți un articol nou între 54 și 56 cm. Etichetează intervalul drept alegerea ta pentru potrivire. Vânzătorul poate declara o toleranță de fabricație. Înregistreaz-o separat, deoarece privește concordanța cu mărimea anunțată.",
+        "Dacă fotografia depozitului pare să arate 53,5 cm, verifică mai întâi capetele metrului, unghiul camerei, întinderea materialului și mărimea selectată. Cere repetarea măsurării cu materialul relaxat și metrul complet vizibil. Dacă se confirmă 53,5 cm, compară rezultatul cu intervalul tău și tabelul vânzătorului. Apoi întreabă despre o altă mărime sau un schimb. Decide înainte de organizarea transportului internațional, folosind opțiunile și termenele actuale ale agentului.",
+        "Ține cont de elasticitate, croială și hainele purtate dedesubt. Păstrează lățimea pieptului, lățimea umerilor și lungimea în câmpuri separate. Folosește măsurile pentru a cere dovezile suplimentare relevante și salvează solicitarea și răspunsul în înregistrarea comenzii."
+      ]
+    },
+    {
+      "title": "5. Compară imprimeul și broderia cu reperele hainei",
+      "paragraphs": [
+        "Compară grafica cu exact culoarea și versiunea selectate. Folosește axa articolului, fermoarul, marginea buzunarului, cusătura umărului și tivul drept repere. Verifică centrarea generală, înălțimea prevăzută, zonele umplute, literele și marginile. Păstrează fotografia completă lângă prim-planul zonei discutabile, pentru a menține clare poziția și dimensiunea.",
+        "Dacă imprimeul pare înclinat, verifică orientarea camerei și a hainei. Cere o vedere dreaptă înainte de decizie. O cută sau o reflexie poate schimba aspectul unei margini. La broderie, caută secțiuni vizibil lipsă și verifică prinderea conturului. Notează localizarea desprinderilor, golurilor sau deplasărilor confirmate. Rezistența după spălări repetate necesită dovezi adunate în timp."
+      ]
+    },
+    {
+      "title": "6. Urmărește cusăturile și descrie exact problemele vizibile",
+      "paragraphs": [
+        "Verifică îmbinările umerilor, subrațele, cusăturile laterale, colțurile buzunarelor și tivurile. La pantaloni, include șezutul, talia și cusătura interioară. Caută secțiuni deschise, puncte sărite, încrețire accentuată și prinderi slabe. Indică locul și întinderea aproximativă, pentru ca agentul să reproducă verificarea. Înregistrează separat un capăt de ață și o cusătură desfăcută.",
+        "Pentru o zonă neclară, cere un prim-plan împreună cu un cadru larg de localizare. Compară ambele părți când construcția este simetrică. Marchează cusăturile interioare ascunse drept verificări în așteptare, dacă influențează decizia. Notează starea exterioară observată la inspecție. Păstrează rezultatele ulterioare de purtare și spălare într-o înregistrare personală separată."
+      ]
+    },
+    {
+      "title": "7. Numără închiderile, buzunarele și componentele incluse",
+      "paragraphs": [
+        "Compară fermoarele, nasturii, capsele, șnururile, opritoarele, centurile, căptușelile și piesele detașabile cu varianta aleasă. Pentru mai multe componente, cere o fotografie cu toate așezate separat. Verifică punctele vizibile de prindere și deteriorările evidente. Confirmă poziția buzunarelor și solicită alt unghi când o cută sau cusătură ascunde deschiderea.",
+        "Dacă decizia depinde de funcționarea unui fermoar sau a unei capse, întreabă despre un videoclip scurt cu o operațiune completă vizibilă. Notează mișcarea demonstrată și verifică prețul serviciului înainte de solicitare. Păstrează împreună ambalajul și piesele detașabile cât timp discuți un schimb, dacă agentul poate face asta. Confirmă termenele curente de depozitare și soluționare."
+      ]
+    },
+    {
+      "title": "8. Compară etichetele cu varianta și măsurile articolului",
+      "paragraphs": [
+        "Cere o fotografie frontală a etichetei de la gât sau de mărime, o imagine lizibilă a instrucțiunilor de îngrijire și un cadru larg care arată unde este atașată fiecare. Păstrează alături mărimea selectată în comandă. Dacă ai comandat L, eticheta spune XL, iar măsurile seamănă cu rândul L din tabelul vânzătorului, solicită confirmarea variantei livrate înainte de acceptare.",
+        "Înregistrează exact ce scrie despre mărime, codul produsului și compoziție. O etichetă lizibilă documentează textul atașat acelui articol. Pentru evaluarea compoziției reale sau a comportamentului materialului sunt necesare dovezi suplimentare. Compară fiecare caracter al codului cu oferta, inclusiv litere, cratime și sufixe. Păstrează fotografia clară a instrucțiunilor de îngrijire împreună cu comanda, pentru a le putea consulta după eliminarea ambalajului.",
+        "Când mărimea și măsurătorile se contrazic, trimite o singură solicitare cu ID-ul comenzii, varianta aleasă, fotografia etichetei și valoarea măsurată. Cere agentului să verifice convenția de mărimi a vânzătorului și să confirme opțiunile de înlocuire sau schimb aplicabile acelei comenzi."
+      ]
+    },
+    {
+      "title": "9. Trimite o cerere precisă și înregistrează decizia",
+      "paragraphs": [
+        "Pregătește o evaluare cu rânduri separate pentru identitate, măsuri, grafică, cusături, componente și ambalaj. Atribuie fiecăruia o stare precum confirmat, întrebare deschisă sau neconcordanță. Atașează oferta originală, varianta și fotografia relevantă. O cerere de măsurare utilă numește ambele capete, cere material relaxat și metrul complet vizibil. Pentru un imprimeu, indică marginea exactă și include o vedere largă.",
+        "După primirea dovezilor lipsă, compară-le cu cerințele notate înaintea inspecției. Acceptă articolul când informațiile necesare sunt clare și satisfăcătoare. Pentru o neconcordanță confirmată, întreabă agentul despre schimb sau retur conform condițiilor curente, înaintea expedierii internaționale. Salvează răspunsul și termenul aplicabil. Notează separat în același document taxele suplimentare și timpul estimat pentru înlocuire.",
+        "După livrare, repetă măsurile importante prin aceeași metodă și înregistrează cum îți vine articolul. Dacă urmărești un ciclu de îngrijire, notează separat metoda și dimensiunile rezultate. Astfel obții o referință personală pentru comanda următoare. Leagă rezultatul de articolul, materialul și achiziția respective, pentru a păstra contextul comparației."
+      ]
+    }
+  ],
+  "keywords": [
+    "fotografii QC haine",
+    "cum citești măsurătorile QC",
+    "toleranță măsurare haine"
+  ],
+  "seoTitle": "Poze QC haine — măsuri, etichete și potrivire",
+  "dateISO": "2026-09-15",
+  "dateModified": "2026-11-05",
+  "sources": [
+    {
+      "label": "How FindQC Works",
+      "href": "https://findqc.com/how-findqc-works",
+      "note": "Documentație și exemple publicate, consultate la 5 noiembrie 2026."
+    },
+    {
+      "label": "UNIQLO product measurement guidelines",
+      "href": "https://faq-sg.uniqlo.com/articles/en_US/FAQ/Product-Measurement-Guidelines-SG",
+      "note": "Documentație și exemple publicate, consultate la 5 noiembrie 2026."
+    }
+  ]
+},
  'warehouse-measurement-guide': {
   title:'Cum citești dimensiunile în poze QC: ruletă, capete și comparație',description:'Compară corect măsurătorile din depozit: punctul zero, capătul, lățimea pe plan, lungimea interioară și dimensiunile coletului.',keywords:['dimensiuni QC','măsurători depozit','ruletă QC','măsurare haine QC'],
   intro:['O cifră lângă o ruletă pare precisă, dar devine utilă doar când metoda este vizibilă. Stabilește întâi ce distanță s-a măsurat. Mărirea unei poze neclare nu transformă un capăt ilizibil într-o măsurătoare exactă.'],

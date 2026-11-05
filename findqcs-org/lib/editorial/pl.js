@@ -1,4 +1,182 @@
 export const plEditorial = {
+  "spreadsheet-find-original-listing-check": {
+  "title": "Jak sprawdzić produkt ze spreadsheetu w oryginalnej ofercie",
+  "description": "Prześledź link z arkusza do sprzedawcy, sprawdź dokładny kolor i rozmiar oraz dobierz właściwe zdjęcia QC. Z prawdziwym przykładem ID Weidian.",
+  "intro": [
+    "Wiersz arkusza opisuje „szare buty”. Otwierasz link i widzisz odpowiedni model, lecz lista kolorów zawiera kilka szarych par. Którą zamówiła osoba dodająca produkt? Otwórz osobno arkusz, ofertę sprzedawcy i album QC z magazynu. Ten przykład pokazuje, jak powiązać te trzy źródła i zapisać informacje, które wciąż wymagają sprawdzenia."
+  ],
+  "sections": [
+    {
+      "title": "1. Zachowaj wiersz przed otwarciem linku",
+      "paragraphs": [
+        "Skopiuj rzeczywisty adres ukryty pod nazwą produktu lub przyciskiem. Komórka może wyświetlać skróconą domenę, cenę albo samo słowo „kup”. Otwórz podgląd linku lub użyj przeglądarkowej funkcji kopiowania adresu. Zapisz nazwę arkusza, zakładkę, opis wiersza, datę i wybrany wariant. Sam numer wiersza przestaje być wiarygodnym punktem odniesienia po ponownym sortowaniu tabeli.",
+        "Opis z arkusza i własne obserwacje przechowuj w oddzielnych polach. „Szary, rozmiar 42, dodatkowe sznurowadła” może łączyć nazwę koloru używaną przez autora, twój planowany rozmiar i dodatek widoczny na miniaturze. Rozdziel te dane. Następnie porównasz kolor z kodem wariantu, rozmiar z wyborem w zamówieniu, a sznurowadła z opisem sprzedawcy lub zdjęciem zawartości przesyłki."
+      ]
+    },
+    {
+      "title": "2. Przejdź od linku do identyfikatora oferty",
+      "paragraphs": [
+        "Publiczny arkusz Weidian w QCRadar zawiera pozycję „Asics GEL-NYC Grey Rice”. Jej link do platformy prowadzi do https://weidian.com/item.html?itemID=7721998852. Platformą jest Weidian, a wartość po itemID to 7721998852. Możesz sprawdzić te dane, kopiując adres docelowy. Podczas naszego sprawdzenia link przekierował do adresu sklepu Weidian z tym samym numerem. Potwierdziliśmy powiązanie linków w katalogu. Aktualną cenę i dostępność u sprzedawcy trzeba sprawdzić w chwili składania zamówienia.",
+        "Jeżeli arkusz otwiera najpierw stronę agenta, poszukaj linku do oryginalnego produktu lub źródła. Zapisz go obok adresu agenta i porównaj nazwę platformy oraz pełny identyfikator. Zachowaj wszystkie cyfry, również ewentualne zera na początku, jako tekst. W adresie mogą też występować kod polecający, numer sklepu i SKU. Gdy źródła brakuje i nie można ustalić platformy, pozostaw tę informację jako otwartą i poproś autora o oryginalny adres."
+      ]
+    },
+    {
+      "title": "3. Dopasuj wariant wewnątrz oferty",
+      "paragraphs": [
+        "Otwórz kartę produktu z przykładu. QCRadar pokazuje między innymi opcje 1203A372-600 灰 oraz 1203A789-250 绿. 灰 oznacza szary, a 绿 zielony. Oferta zawiera też inne szare opcje, dlatego skopiuj pełny kod koloru. Dla szarego wariantu omawianego tutaj wpisz 1203A372-600 灰. Identyfikator wskazuje ofertę, a kod wariantu zawęża wybór do konkretnej opcji w tej ofercie.",
+        "W osobnym polu zapisz żądany rozmiar i ustal, czy sprzedawca używa rozmiarówki EU, centymetrów czy własnej tabeli. Wybierz kolor i rozmiar, a następnie ponownie odczytaj wybór w koszyku lub podglądzie zamówienia. Miniatura może pozostać domyślna, nawet gdy tekst opisuje inny wariant. Jeśli tekst i obraz się różnią, zachowaj oba i przed kontynuowaniem zapytaj, która opcja rzeczywiście trafiłaby do zamówienia."
+      ]
+    },
+    {
+      "title": "4. Ustal, które zdjęcia QC dotyczą wariantu",
+      "paragraphs": [
+        "Rozpocznij wyszukiwanie QC od oryginalnego linku oferty. FindQC opisuje w swoim przewodniku grupy prawdopodobnie tego samego produktu oraz wizualnie podobne propozycje. Otwórz wynik i porównaj źródłowy link, numer oferty oraz dostępne dane o rozmiarze i kolorze konkretnego zamówienia. Najpierw ustal, z którego zamówienia pochodzi zdjęcie magazynowe. Zdjęcia katalogowe sprzedawcy zachowaj razem z opisem oferowanego wyglądu.",
+        "Załóżmy, że album pokazuje metkę z rozmiarem 42 i czytelną podeszwę. Jeśli nie podaje kodu koloru, a oferta obejmuje kilka szarych par, zdjęcie może pomóc sformułować pytanie o położenie oznaczenia. Nadal potrzebujesz linku lub czytelnej etykiety łączącej album z wybranym kolorem. Do sprawdzania dopasowania szukaj obu końców taśmy mierniczej w jednym ujęciu i zapisz sposób pomiaru. Metka z rozmiarem podaje oznaczenie wydrukowane na produkcie."
+      ]
+    },
+    {
+      "title": "5. Odzyskaj zmieniony link i zachowaj historię",
+      "paragraphs": [
+        "Gdy wiersz prowadzi na stronę główną sklepu albo do niedostępnego produktu, zachowaj dawny URL. Najpierw wyszukaj ID, później nazwę sklepu wraz z pełnym kodem modelu lub koloru. Jeśli masz tylko zrzut ekranu, wytnij charakterystyczny detal, na przykład metkę na języku buta, aby znaleźć kandydatów. Dla każdego kandydata otwórz ofertę i utwórz osobny zapis sprzedawcy, platformy i numeru produktu.",
+        "Inny sprzedawca może korzystać z tej samej fotografii katalogowej. Również ten sam sklep może ponownie wystawić model pod innym numerem. Zachowaj oba zapisy obok siebie i opisz relację, którą potrafisz potwierdzić. „Ten sam kod modelu, nowe ID, zdjęcia zamówienia do sprawdzenia” wystarczy, by ktoś odtworzył wyszukiwanie. Przed wyborem zamiennika ponownie sprawdź zawartość zestawu, wymiary, dostępność i cenę."
+      ]
+    },
+    {
+      "title": "6. Wyjaśnij rozbieżność przed zapłatą",
+      "paragraphs": [
+        "Wyobraź sobie, że chcesz kupić szary wariant z przykładu w EU 42. Zachowany wiersz wskazuje Weidian 7721998852. Podgląd zamówienia pokazuje 1203A789-250 绿, a znaleziony album QC określa jedynie rozmiar 42. Masz potwierdzony link, sprzeczny wybór i niepełny album. Wróć do listy wariantów, wybierz 1203A372-600 灰 i otwórz podgląd ponownie. Rozmiar pasuje w obu zapisach, ale wciąż brakuje potwierdzenia koloru, jeśli jest ważny dla twojego zakupu.",
+        "Konkretne pytanie ułatwia pracę sprzedawcy lub agentowi: „Czy dla produktu 7721998852 możecie potwierdzić wariant 1203A372-600 灰 w rozmiarze 42? Po przyjęciu tej opcji do magazynu proszę o zdjęcie metki na języku i obu butów razem”. To przykład prośby. Gdy otrzymasz zdjęcie, zapisz numer zamówienia oraz widoczne szczegóły przed podjęciem decyzji o wysyłce."
+      ]
+    },
+    {
+      "title": "7. Prowadź zapis, który da się odtworzyć",
+      "paragraphs": [
+        "Przygotuj krótką notatkę dla każdego kandydata. Uwzględnij nazwę wiersza i datę, surowy link platformy i ID, dokładny opis wariantu, żądany rozmiar oraz datę ostatniego otwarcia oferty. Dodaj link albumu QC i szczegół, który można na nim sprawdzić. Otwarty problem opisz prostymi słowami. W naszym przykładzie notatka może kończyć się „źródłowy link ustalony, szary kod skopiowany, rozmiar i album magazynowy do potwierdzenia”. Pozostanie użyteczna po zmianie tytułu lub kolejności arkusza.",
+        "Wracając do zapisanego produktu, zacznij od otwartych pytań. Nowe zdjęcie może wyjaśnić metkę i nadal nie pokazywać wymiarów. Dodaj obserwację z datą, zachowując wcześniejsze wpisy, zwłaszcza gdy zmieniono ofertę. Przed wysyłką własnej paczki połącz jej zdjęcia magazynowe ze swoim numerem zamówienia i wariantem. Potem oceń, czy pozostałe niewiadome wpływają na twoją decyzję."
+      ]
+    },
+    {
+      "title": "8. Wybierz kolejny krok na podstawie wyników",
+      "paragraphs": [
+        "Gdy zgadzają się oferta źródłowa, wariant i rozmiar, zapisz kandydata i przejrzyj szczegóły ważne dla danego produktu. Przy butach mogą to być oba egzemplarze, metki rozmiaru i pomiar wkładki. Przy koszulce piłkarskiej sprawdź zamówione nazwisko i numer, herb z przodu oraz szerokość klatki piersiowej. Dopasuj prośby do planowanego użycia i opisu sprzedawcy, aby zdjęcia odpowiadały na konkretne pytania zakupowe.",
+        "Jeżeli ID się zgadza, lecz wariant jest niejasny, najpierw wyjaśnij wybór. Gdy link zniknął, oceń zastępczą ofertę w osobnym zapisie. Jeśli zdjęcie magazynowe pokazuje zły rozmiar lub brakującą część, przedstaw rozbieżność wraz z danymi zamówienia i zapytaj o dostępny sposób korekty oraz termin. Udostępniając własny wpis w arkuszu, dodaj oryginalny link, pełny wariant i datę sprawdzenia, a następnie opisz szczegóły rzeczywiście widoczne na fotografiach."
+      ]
+    }
+  ],
+  "keywords": [
+    "produkty z arkusza QC",
+    "sprawdzenie linku produktu",
+    "zdjęcia QC z arkusza"
+  ],
+  "seoTitle": "Jak sprawdzić produkt z arkusza z ofertą źródłową",
+  "dateISO": "2026-11-05",
+  "dateModified": "2026-11-05",
+  "sources": [
+    {
+      "label": "FindQC — How FindQC Works",
+      "href": "https://findqc.com/how-findqc-works",
+      "note": "Dokumentacja i opublikowane przykłady, sprawdzone 5 listopada 2026 r."
+    },
+    {
+      "label": "QCRadar — Weidian Spreadsheet",
+      "href": "https://qcradar.com/weidian-spreadsheet",
+      "note": "Dokumentacja i opublikowane przykłady, sprawdzone 5 listopada 2026 r."
+    },
+    {
+      "label": "QCRadar — Asics GEL-NYC Grey Rice listing and variant labels",
+      "href": "https://qcradar.com/p/asics-gel-nyc-grey-rice-1203a372-600-f6a972fb",
+      "note": "Dokumentacja i opublikowane przykłady, sprawdzone 5 listopada 2026 r."
+    },
+    {
+      "label": "Published marketplace destination — Weidian item 7721998852",
+      "href": "https://weidian.com/item.html?itemID=7721998852",
+      "note": "Dokumentacja i opublikowane przykłady, sprawdzone 5 listopada 2026 r."
+    }
+  ]
+},
+  "football-jersey-qc-photos-name-number-fit": {
+  "title": "Zdjęcia QC koszulek piłkarskich: nazwisko, numer i rozmiar",
+  "description": "Porównaj koszulkę z zamówieniem na zdjęciach magazynowych. Sprawdź nazwisko, numer, naszywki rozgrywek, położenie nadruku i wymiary na płasko przed wysyłką.",
+  "intro": [
+    "Koszulka może przyjechać we właściwych kolorach, a mimo to mieć inne nazwisko, naszywkę lub krój. Połóż potwierdzenie zamówienia obok albumu magazynowego. Zacznij od szczegółów, które wyjaśni kolejne zdjęcie, takich jak niewyraźny akcent nad literą lub nieczytelna miarka. Pytania o długotrwałe użytkowanie pozostaw otwarte. Ten sposób sprawdzania pasuje do gładkiej koszulki treningowej i do personalizowanej koszulki meczowej."
+  ],
+  "sections": [
+    {
+      "title": "Przygotuj wzorzec dokładnie tej koszulki",
+      "paragraphs": [
+        "Zapisz klub lub reprezentację, sezon, wzór domowy lub wyjazdowy, rozmiar, długość rękawa, krój i każdy dodatek wybrany podczas zakupu. Przepisz tekst personalizacji dokładnie, wraz ze spacjami, interpunkcją, znakami diakrytycznymi i zerami na początku. Zrzut potwierdzenia zachowa informacje, które sprzedawca może później zmienić w ofercie. Zanotuj również wybór pleców bez nadruku lub rezygnację z naszywki ligi. Podczas oglądania zdjęć zawodników łatwo zapomnieć o tych opcjach.",
+        "Najpierw porównaj koszulkę ze zdjęciem sprzedawcy przedstawiającym wybrany wariant. Oficjalna fotografia klubu może pomóc ustalić położenie herbu, jeśli przedstawia ten sam sezon, wersję i rozgrywki. W albumie z wcześniejszego zakupu poszukaj identyfikatora produktu, wariantu i daty. Wykorzystaj go do ustalenia, o jakie ujęcia poprosić. Decyzję o wysyłce oprzyj na fotografiach przypisanych do własnego zamówienia."
+      ]
+    },
+    {
+      "title": "Poproś o przód, tył i rękawy pokazujące różne szczegóły",
+      "paragraphs": [
+        "Poproś o przód i tył koszulki rozłożonej płasko, sfotografowane pionowo z góry. W kadrze powinny mieścić się kołnierz, obie pachy i dolna krawędź. Rękawy trzeba rozłożyć osobno, jeśli naszywki są skierowane na bok. Dodaj czytelne zdjęcie metki rozmiaru. Zachowaj całe ujęcie nawet wtedy, gdy zbliżenie jest ostrzejsze. Sam wykadrowany herb, bez rękawa lub dekoltu, niewiele mówi o stronie i odległości od szwu.",
+        "Sprawdź orientację obrazu, zanim zgłosisz odwrócony element. Odczytaj rozpoznawalne słowo na tej samej fotografii i ustal prawą oraz lewą stronę osoby noszącej koszulkę. Herb na jej lewej piersi zwykle znajduje się po prawej stronie normalnego zdjęcia od przodu. Przy zdjęciu pleców ta relacja się zmienia. Porównuj względem środka kołnierza, szwów pach i paneli bocznych. Jeśli jedno ramię jest podwinięte, poproś o pełne rozłożenie przed oceną symetrii."
+      ]
+    },
+    {
+      "title": "Odczytaj nazwisko i numer znak po znaku",
+      "paragraphs": [
+        "Przeczytaj nazwisko z zamówienia, a potem przeliteruj je ze zdjęcia. Przyjrzyj się akcentom, podwójnym spółgłoskom, końcowemu S oraz kształtom 1 i 7. Sprawdź, czy numer należy do tego konkretnego zamówienia. Aktualna lista zawodników słabo nadaje się do oceny koszulki retro lub własnego numeru klienta. Przy numerze dwucyfrowym sprawdź odstęp między cyframi i ich wysokość względem dolnej krawędzi.",
+        "Podczas sprawdzania czcionki liczą się rozgrywki. Centrum pomocy Liverpoolu rozróżnia nadruk pucharowy i nadruk Premier League. Manchester City udokumentował osobną czcionkę pucharową dla męskiej drużyny w sezonie 2024/25. Takie przykłady pokazują, dlaczego inny kształt litery wymaga powrotu do wybranej opcji. Porównuj z właściwym wzorcem. Ujęcie na wprost pomoże sprawdzić wyśrodkowanie, a równomiernie oświetlone zbliżenie podejrzany narożnik. Fotografia może pokazać odstającą krawędź. Odporność nadruku na kolejne prania pozostaje nieustalona."
+      ]
+    },
+    {
+      "title": "Osobno sprawdź herb, sponsora i naszywki",
+      "paragraphs": [
+        "Wypisz każdy element oraz przewidywane miejsce. Porównuj herb z tą samą edycją, sponsora z zamówionym wzorem, a każdą naszywkę z wybranymi rozgrywkami. Drobny tekst czytaj przy pełnej rozdzielczości. Jeżeli oferta zawiera kilka zestawów naszywek, poproś o oba rękawy na jednym zdjęciu z przodem koszulki do góry. Taki widok może rozstrzygnąć kwestię lewej i prawej strony bez kolejnego zdjęcia samej naszywki.",
+        "Śledź obrys każdej aplikacji. Szukaj zawiniętego rogu, brakującego fragmentu litery, przerwanych szwów lub zagięcia w miejscu styku powierzchni. Odbicie na gładkim transferze może rozjaśnić nienaruszoną krawędź. Poproś o tę samą okolicę pod małym kątem i w rozproszonym świetle. Opisz obserwację konkretnie, na przykład „dolny prawy róg nadruku sponsora wygląda na uniesiony”. Przy brakującej naszywce wyślij razem wybraną opcję i zdjęcie całego rękawa."
+      ]
+    },
+    {
+      "title": "Używaj tych samych punktów pomiaru co na własnej koszulce",
+      "paragraphs": [
+        "Połóż wygodną koszulkę na płaskiej powierzchni. Zmierz prosto od jednego szwu pachy do drugiego, bez naciągania, i zapisz szerokość. Długość mierz powtarzalną metodą, na przykład od najwyższego punktu ramienia przy kołnierzu do dołu. Jeśli tył jest dłuższy, zanotuj zmierzony panel. Poproś magazyn o dokładnie te same końce pomiaru. Pomiar środkiem od dekoltu do dołu da inną długość.",
+        "Poproś o zdjęcie pokazujące centymetry, oznaczenie zera i oba końce miarki. Jeżeli zaczyna się na 2 cm, a kończy na 55 cm, widoczny odcinek wynosi 53 cm. Sprawdź kąt ułożenia i to, czy materiał był rozciągnięty. Czytaj nagłówek tabeli sprzedawcy równie uważnie jak liczby. Tabela męskich koszulek Nike podaje przykładowo wymiary ciała. Zdjęcie magazynowe pokazuje szerokość rozłożonego ubrania. Porównanie z własną koszulką uwzględnia preferowany luz w klatce piersiowej."
+      ]
+    },
+    {
+      "title": "Rozwiąż rozbieżność jednym konkretnym pytaniem",
+      "paragraphs": [
+        "Załóżmy fikcyjne zamówienie z nazwiskiem MARTÍN, numerem 17 i naszywką ligi na prawym rękawie osoby noszącej koszulkę. Twoja ulubiona koszulka ma 54 cm szerokości. Przed obejrzeniem albumu uznajesz zakres 53–55 cm za odpowiedni. Zdjęcie pleców pokazuje 17, ale akcent jest rozmyty. Koniec rękawa wypada poza kadr, a miarka wydaje się kończyć blisko 55 cm. Numer możesz już oznaczyć jako potwierdzony. Pozostałe trzy kwestie pozostaw otwarte.",
+        "Przydatna wiadomość brzmi „Proszę sfotografować całe plecy i rozłożony prawy rękaw tego zamówienia. Proszę dodać zbliżenie Í w MARTÍN oraz zdjęcie pomiaru od pachy do pachy z oboma końcami miarki”. Załóżmy, że nowe obrazy pokazują właściwy napis i naszywkę, a miarka biegnie od 2 do 55 cm. Odcinek 53 cm mieści się w zakresie wybranym dla tego przykładu. Osoba preferująca 55–57 cm mogłaby podjąć inną decyzję o dopasowaniu na podstawie identycznych zdjęć."
+      ]
+    },
+    {
+      "title": "Zachowaj krótką decyzję przed zwolnieniem do wysyłki",
+      "paragraphs": [
+        "Zapisz numer zamówienia, najczytelniejsze zdjęcia przodu i tyłu, wybraną personalizację, zmierzoną szerokość i długość oraz zdanie dotyczące każdej otwartej kwestii. Oznacz szczegóły jako potwierdzone, odmienne od zamówienia albo nieczytelne. Jeżeli plecy są gładkie mimo zamówionego nadruku, wyślij opcję i zdjęcie razem oraz zapytaj agenta o rozwiązania i terminy dotyczące tego zakupu. Jeśli rzekome przekrzywienie znika na prostopadłej fotografii, zachowaj poprawione ujęcie w notatkach.",
+        "Przed zgodą na wysyłkę międzynarodową sprawdź, czy odpowiedź dotyczy tego samego egzemplarza i czy koszulka spełnia twoje wymagania. Warunki personalizacji, wymiany i zwrotu zależą od sprzedawcy oraz etapu zamówienia. Zachowaj odpowiedź na piśmie, gdy produkt jest jeszcze dostępny do oględzin. Potrzebujesz krótkiego zapisu, który zrozumiesz również jutro: jaka koszulka przyjechała, jakie wymiary były widoczne i dlaczego wybrałeś wysyłkę, dodatkowe pytanie albo poprawkę."
+      ]
+    }
+  ],
+  "keywords": [
+    "zdjęcia QC koszulki piłkarskiej",
+    "nadruk nazwiska i numeru",
+    "wymiary koszulki piłkarskiej"
+  ],
+  "seoTitle": "QC koszulki piłkarskiej — nazwisko, numer i wymiary",
+  "dateISO": "2026-11-05",
+  "dateModified": "2026-11-05",
+  "sources": [
+    {
+      "label": "Nike men's tops size guide — body measurements",
+      "href": "https://www.nike.com/sg/size-fit/mens-tops-alpha",
+      "note": "Dokumentacja i opublikowane przykłady, sprawdzone 5 listopada 2026 r."
+    },
+    {
+      "label": "Liverpool FC — Premier League printing and club printing",
+      "href": "https://faq.liverpoolfc.com/articles/products-and-stock/what-is-the-difference-between-premier-league-printing-and-our-printing/65969c1f74e6ff44331e568a",
+      "note": "Dokumentacja i opublikowane przykłady, sprawdzone 5 listopada 2026 r."
+    },
+    {
+      "label": "Manchester City — 2024/25 cup shirt font",
+      "href": "https://www.mancity.com/news/club/man-city-noel-gallagher-club-font-63854300",
+      "note": "Dokumentacja i opublikowane przykłady, sprawdzone 5 listopada 2026 r."
+    }
+  ]
+},
  'taobao-qc-finder-item-id-link-checks': {
   title:'Taobao QC Finder: sprawdź link, ID produktu i zdjęcia QC',description:'Szukaj zdjęć QC przez link lub ID Taobao, oddziel podobne wyniki i zweryfikuj aktualną ofertę oraz wybrany wariant.',keywords:['Taobao QC Finder','zdjęcia QC Taobao','ID produktu Taobao','wyszukiwanie QC'],
   intro:['Wyszukiwanie zdjęć QC z Taobao zaczyna się od ustalenia tożsamości oferty. Znajome zdjęcie nie wystarcza: platforma, ID produktu, sprzedawca i wybrany wariant muszą pasować do rekordu. Dopiero potem warto oceniać fotografie.','FindQCS jest niezależnym poradnikiem i indeksem produktów. Nie prowadzimy Taobao ani FindQC i nie wykonujemy kontroli Twojego zamówienia w magazynie.'],
@@ -12,17 +190,103 @@ export const plEditorial = {
   ],
  },
  'weidian-qc-finder-item-id-original-listing': {
-  title:'Weidian QC Finder: sprawdź oryginalny link i itemID',description:'Połącz zdjęcia QC Weidian z właściwą ofertą: sprawdź przekierowania, itemID, sprzedawcę, warianty i nieaktualne strony.',keywords:['Weidian QC Finder','zdjęcia QC Weidian','Weidian itemID','oryginalny link Weidian'],
-  intro:['Linki Weidian przechodzą przez komunikatory, arkusze i konwertery agentów. Pierwotna oferta może ukryć się za przekierowaniem. Zanim ocenisz fotografie, odtwórz związek między źródłem a wynikiem wyszukiwania.'],
-  sections:[
-   {title:'1. Zachowaj otrzymany link i jego cel',paragraphs:['Zapisz oba adresy. Znajdź identyfikator konkretnej oferty, często w polu itemID, i porównaj go ze źródłem. ID sklepu lub prywatnego zamówienia oznacza coś innego. Jeśli źródło nie jest widoczne, tożsamość pozostaje nieznana; nie twórz pasującego adresu z przypadkowej liczby.']},
-   {title:'2. Zacznij od najdokładniejszej metody',paragraphs:['Wprowadź pełny link Weidian do wyszukiwarki QC, która obsługuje taki format. Następnie spróbuj całego ID, jeśli interfejs to umożliwia. Sprzedawca i wyróżniające słowa pomagają znaleźć kandydatów. Zdjęcie jest użyteczne przy braku linku, ale nie dowodzi tego samego sklepu ani oferty.']},
-   {title:'3. Porównaj źródło i wariant',table:[['Pole','Co sprawdzić'],['Platforma i ID','Końcowy cel zgadza się ze źródłem'],['Sprzedawca','Sklep nie przeczy zapisanym informacjom'],['Wariant','Kolor, rozmiar, wersja i zestaw odpowiadają zamówieniu'],['Data','Oddziel zdjęcie historyczne od bieżącej strony']],paragraphs:['Jedna oferta może zawierać bardzo różne opcje. Zdjęcie jednej wersji nie potwierdza wykonania drugiej. Zachowaj dokładną nazwę wariantu, nawet gdy agent ją tłumaczy lub skraca.']},
-   {title:'4. Nie mieszaj grup zdjęć QC',paragraphs:['Oddziel historyczne zdjęcia tego samego ID, inne warianty i podobne produkty innych sprzedawców. Każda grupa odpowiada na inne pytania. Wspólne fotografie reklamowe dwóch sklepów nie dowodzą wspólnej partii. Widoczne szczegóły traktuj jako punkty kontroli własnego egzemplarza, a nie przewidywanie jakości wszystkich produktów sklepu.']},
-   {title:'5. Traktuj nieaktualne linki jako archiwum',paragraphs:['Sprawdź, czy adres nadal otwiera konkretny produkt, czy tylko stronę sklepu. Po usunięciu oferty galeria pozostaje historyczna. Kandydat znaleziony tekstem lub obrazem potrzebuje nowego rekordu z własnym ID i własnymi dowodami QC. Nie przenoś automatycznie wcześniejszych ocen.']},
-   {title:'6. Sprawdź ponownie przed zakupem i wysyłką',paragraphs:['Przed zamówieniem potwierdź aktualną opcję i warunki u sprzedawcy lub agenta. W magazynie najważniejsze są powiązanie z Twoim zamówieniem, metki i zdjęcia Twojej sztuki. Zachowaj źródło, wariant, datę, otwarte pytanie i następną czynność w jednym rekordzie. To bardziej użyteczne niż folder zdjęć bez pochodzenia.']},
+  "title": "Weidian QC Finder — sprawdzanie itemID, linków i zdjęć",
+  "description": "Znajdź itemID Weidian, sprawdź link produktu i powiąż zdjęcia QC z ofertą źródłową, sprzedawcą oraz wybranym kolorem lub rozmiarem.",
+  "intro": [
+    "Wyszukiwanie QC dla Weidian jest łatwiejsze, gdy obok każdego zdjęcia zachowujesz dane identyfikujące produkt. Linki przechodzą przez arkusze, czaty i serwisy agentów zakupowych. Zapisz otrzymany adres i sprawdź jego cel, zanim przypiszesz fotografie do interesującego Cię produktu.",
+    "Ten poradnik prowadzi od skopiowanego linku do datowanej notatki z weryfikacji. FindQC opisuje wyszukiwanie linkiem, słowami i obrazem. Poniższe praktyczne kroki pomagają wybrać dane wejściowe, porównać wyniki i przygotować pytania do agenta po przyjęciu Twojego zamówienia do magazynu."
   ],
- },
+  "sections": [
+    {
+      "title": "1. Zapisz otrzymany link i jego kontekst",
+      "paragraphs": [
+        "Skopiuj pełny adres z komórki arkusza lub pierwotnej wiadomości do notatki. Zapisz podaną nazwę produktu, datę oraz kolor, rozmiar lub wersję wymienione obok. Zachowaj oryginalny zrzut ekranu, jeśli istnieje. Może wyjaśnić intencję autora, nawet gdy strona docelowa później się zmieni. Opis szare buty do biegania wymaga dodatkowych szczegółów, aby wskazać konkretny zakup.",
+        "Otwórz link i zapisz końcowy adres widoczny dla produktu. Zachowaj razem link agenta i źródłową ofertę, gdy oba są dostępne. Jeśli pojawi się ekran logowania, odnotuj to i pozostaw cel jako niepotwierdzony. Analizuj parametry na kopii adresu, aby zawsze móc wrócić do pełnej wersji otrzymanego linku."
+      ]
+    },
+    {
+      "title": "2. Rozpoznaj itemID na opublikowanym przykładzie",
+      "paragraphs": [
+        "5 listopada 2026 r. strona główna QCRadar pokazywała przykład weidian.com/item.html?itemID=7617089695. W tym adresie weidian.com określa platformę, /item.html ścieżkę produktu, a 7617089695 wartość itemID. Sprawdzono publikację tego linku. Aktualne zapasy sprzedawcy, dostępne rozmiary oraz zawartość poszczególnych albumów magazynowych trzeba zweryfikować oddzielnie na odpowiednich stronach.",
+        "Zastosuj ten schemat do własnego adresu. Skopiuj wartość po itemID= do kolejnego znaku &, jeżeli dalej występują parametry. Sprawdź pisownię i każdą cyfrę. Numer sklepu, przesyłki czy pliku zdjęcia odnosi się do innej informacji. Jeśli adres agenta zawiera zakodowany link platformy, otwórz widoczne odnośniki do źródła, gdy są dostępne, i porównaj cel z zapisaną ofertą."
+      ]
+    },
+    {
+      "title": "3. Dobierz wyszukiwanie do posiadanych danych",
+      "paragraphs": [
+        "Zacznij od pełnej URL produktu Weidian w wyszukiwarce QC, która ją obsługuje. Zachowaj dokładną wpisaną treść. Jeśli ta próba zawiedzie, a interfejs obsługuje ID artykułu, użyj potwierdzonego identyfikatora. Zapisz platformę obok numeru, aby później odtworzyć jego pochodzenie. Zachowaj również stronę wynikową lub jej adres.",
+        "Gdy link zniknął, użyj charakterystycznej frazy produktu. Gdy pozostał tylko zrzut ekranu, spróbuj wyszukiwania obrazem. Model lub rozpoznawalny detal są użyteczniejsze od długiego reklamowego tytułu. Sprawdzaj kandydatów osobno. Przy znajomo wyglądającym produkcie otwórz jego źródło i porównaj ID przed dołączeniem zdjęć do swojej dokumentacji."
+      ]
+    },
+    {
+      "title": "4. Sprawdź wspólnie końcową ofertę i sprzedawcę",
+      "paragraphs": [
+        "Otwórz ofertę źródłową wskazaną w wyniku i porównaj ją z otrzymanym linkiem. Potwierdź platformę, itemID, sklep i rodzaj produktu. Zapisz nazwę sprzedawcy tak, jak została pokazana, zachowując także oryginalny tekst przy tłumaczeniu. Stały adres sklepu daje dodatkowy kontekst. Następnie porównaj główne zdjęcia oraz etykiety wariantów i poszukaj zmian istotnych dla zamówienia.",
+        "Gdy inny sklep wykorzystuje to samo zdjęcie reklamowe, utwórz oddzielny wpis. Jego cena, termin oraz opcje należą do tej konkretnej oferty. Jeśli pierwotne ID prowadzi teraz do innego produktu, zapisz zmianę z datą. Przed wybraniem zamiennika powtórz sprawdzanie tożsamości i zbierz jego własne materiały. Historia pozostanie czytelna także po kilku tygodniach."
+      ]
+    },
+    {
+      "title": "5. Dopasuj kolor, rozmiar, wersję i zawartość",
+      "paragraphs": [
+        "Jedna oferta może obejmować kilka kolorów, rozmiarów, wersji lub zestawów. Wybierz potrzebną kombinację na aktualnej stronie i zapisz dokładny tekst opcji. Sprawdź cenę zależną od rozmiaru, dołączone akcesoria i dostępność dla tego wyboru. Przy niejasnym tłumaczeniu zachowaj oryginał i poproś sprzedawcę lub agenta o potwierdzenie zamawianego wariantu.",
+        "Następnie porównaj zapis QC z wybraną opcją. Szukaj widocznego koloru, metki rozmiaru, kodu modelu i części zestawu. Załóżmy, że chcesz czarne buty w rozmiarze 42, a znajdujesz album rozmiaru 41 z tym samym itemID. Zachowaj go jako historyczny przykład innego rozmiaru i wykorzystaj przy wyborze ujęć do sprawdzenia. Przed zatwierdzeniem swojego zamówienia uzyskaj dowód jego rozmiaru."
+      ]
+    },
+    {
+      "title": "6. Czytaj każdy album QC z datą i pochodzeniem",
+      "paragraphs": [
+        "Zachowuj fotografie każdego zamówienia razem z datą oraz źródłem pokazywanym przez wyszukiwarkę. Zacznij od całego przedmiotu, następnie sprawdź metki, wykonanie i pomiary. Jeśli jakiś fragment jest nieczytelny w kilku zestawach, przygotuj konkretną prośbę o jego zdjęcie. Rozpoznawaj powtarzające się pliki, ponieważ kopie jednego zdjęcia dają tę samą obserwację.",
+        "Jeżeli produkt znajduje się już u Twojego agenta, ustal album należący do Twojego zamówienia. Prywatnie porównaj numer zamówienia i zapytaj agenta, jeśli powiązanie budzi wątpliwości. Starsze albumy wykorzystuj do przygotowania pytań. Aktualną sztukę oceniaj na jej własnych zdjęciach. W roboczych kopiach zachowaj znaki wodne, końce linijki i ważne etykiety."
+      ]
+    },
+    {
+      "title": "7. Zamień obserwacje w konkretne prośby",
+      "paragraphs": [
+        "Dla każdej wątpliwości zapisz fragment produktu, obserwację i zdjęcie potrzebne do rozstrzygnięcia. Możesz poprosić o ujęcie metki na wprost albo pomiar szerokości klatki na płasko z widocznymi końcami taśmy. Zastosuj tę samą metodę do ubrania, które dobrze na Tobie leży. Porównanie szerokości wymaga tych samych punktów początku i końca.",
+        "Oznacz pochodzenie opisów sprzedawcy i własnych obserwacji. Informacja o materiale powinna zachować źródło oraz datę. Widoczny luźny szew może uzasadniać prośbę o wyraźniejsze zdjęcie lub kontrolę tego miejsca. Zapytaj, co agent może sprawdzić podczas przechowywania w magazynie. Zapisz odpowiedź przed decyzją o kolejnym kroku."
+      ]
+    },
+    {
+      "title": "8. Odzyskaj niedostępny link, zachowując historię",
+      "paragraphs": [
+        "Jeśli adres prowadzi na stronę główną sklepu lub przestaje pokazywać artykuł, zachowaj dawną URL i zanotuj nowy cel. Spróbuj zapisanego itemID i danych sprzedawcy. Następnie rozszerz wyszukiwanie o frazę produktu lub zrzut ekranu. Każdy zamiennik potrzebuje osobnego wpisu z URL, ID, sklepem i opcjami. Ułatwi to porównanie alternatyw z pierwotnym wyborem.",
+        "Gdy wyszukiwarka QC nie zwraca zdjęć, najpierw sprawdź URL i sposób wprowadzenia. Pusty wynik pozostawia pytania o dostępność użytecznego rekordu w zasobach danej usługi. Zapisz dokładny komunikat interfejsu. Zgłaszając błędny link do indeksu, podaj otrzymany adres, oczekiwane itemID, zaobserwowany cel i datę sprawdzenia, aby opiekun mógł odtworzyć sytuację."
+      ]
+    },
+    {
+      "title": "9. Zapisz datowaną decyzję i sprawdź przed zakupem",
+      "paragraphs": [
+        "Końcowa notatka powinna obejmować otrzymaną URL, aktualne źródło, itemID, sklep, wybraną opcję, metodę wyszukiwania, sprawdzone albumy i otwarte pytanie. Krótko określ relację, na przykład ta sama oferta ze zgodnym widocznym wariantem, ta sama oferta z nieznanym wariantem, podobny kandydat lub niedostępna oferta. Powiąż każdy wniosek z konkretnym zapisem, żeby inna osoba mogła powtórzyć sprawdzenie.",
+        "Tuż przed zakupem otwórz ponownie ofertę i potwierdź opcję, aktualną cenę oraz dostępność. Po dostarczeniu do magazynu porównaj sztukę z zamówieniem i poproś o brakujące dowody przed pakowaniem. Zakończ notatkę działaniem, takim jak prośba o metkę rozmiaru, potwierdzenie dodatkowych sznurowadeł, zatwierdzenie po pomiarze lub wyjaśnienie niezgodności. Zapisz datę tego działania."
+      ]
+    }
+  ],
+  "keywords": [
+    "Weidian ID produktu",
+    "zdjęcia QC Weidian",
+    "sprawdzanie linku Weidian"
+  ],
+  "seoTitle": "Weidian QC Finder — ID produktu i oryginalny link",
+  "dateISO": "2026-09-15",
+  "dateModified": "2026-11-05",
+  "sources": [
+    {
+      "label": "FindQC — How FindQC Works",
+      "href": "https://findqc.com/how-findqc-works",
+      "note": "Dokumentacja i opublikowane przykłady, sprawdzone 5 listopada 2026 r."
+    },
+    {
+      "label": "FindQC — What is QC?",
+      "href": "https://findqc.com/what-is-qc",
+      "note": "Dokumentacja i opublikowane przykłady, sprawdzone 5 listopada 2026 r."
+    },
+    {
+      "label": "QCRadar — published Weidian example link",
+      "href": "https://qcradar.com/",
+      "note": "Dokumentacja i opublikowane przykłady, sprawdzone 5 listopada 2026 r."
+    }
+  ]
+},
  '1688-qc-finder-supplier-variant-batch-checks': {
   title:'1688 QC Finder: rozróżnij dostawcę, wariant i partię',description:'Przypisz zdjęcia QC 1688 do oferty, dostawcy i opcji; sprawdź ilości oraz unikaj niepotwierdzonych twierdzeń o partii.',keywords:['1688 QC Finder','zdjęcia QC 1688','dostawca 1688','partia QC'],
   intro:['Oferta 1688 może obejmować wiele kolorów, rozmiarów, jednostek sprzedaży i progów ilościowych. Jeden zestaw QC nie opisuje automatycznie wszystkiego, co można zamówić z tego linku. Zacznij od konkretnej opcji i dostawcy.'],
@@ -48,17 +312,99 @@ export const plEditorial = {
   ],
  },
  'findqc-image-search-reference-photo-checks': {
-  title:'Wyszukiwanie obrazem FindQC: dobre zdjęcie i fałszywe dopasowania',description:'Szukaj zdjęć QC obrazem, używając czytelnej referencji, przydatnych kadrów i kilku widoków; potem potwierdź źródłową ofertę.',keywords:['FindQC wyszukiwanie obrazem','QC Finder obraz','zdjęcia QC po obrazie','podobne produkty'],
-  intro:['Wyszukiwanie wizualne pomaga znaleźć kandydatów, gdy brakuje nazwy albo linku. Samo nie potwierdza tej samej oferty. Dobre zdjęcie pomaga wyszukiwarce, a późniejsze sprawdzenie źródła i wariantu ustala rzeczywisty związek.'],
-  sections:[
-   {title:'1. Wybierz czytelne zdjęcie wyjściowe',paragraphs:['Użyj ostrego widoku z widocznym kształtem produktu i ograniczonym tłem. Kolaże, nakładki cen i mocne filtry mogą kierować uwagę na nieistotne elementy. Zachowaj niezmieniony oryginał. Usuń nazwiska, adresy i prywatne numery przed przekazaniem fotografii zewnętrznej wyszukiwarce.']},
-   {title:'2. Testuj kadry w konkretnym celu',paragraphs:['Najpierw szukaj całym produktem, następnie charakterystycznym detalem. Nie wycinaj najważniejszych kształtów. Sam znak graficzny może dać wiele niezwiązanych wyników; cała forma z wyróżniającym szwem daje więcej kontekstu. Zapisz, który kadr doprowadził do danego kandydata.']},
-   {title:'3. Wykorzystaj kilka widoków tego samego źródła',paragraphs:['Jeśli je masz, szukaj osobno przodem i tyłem. Różne wyniki sygnalizują niepewność. Nie łącz wygodnych szczegółów kilku ofert w jeden domniemany produkt. Nie używaj też sztucznie dodanych detali jako dowodu na zawartość oryginału.']},
-   {title:'4. Systematycznie przejrzyj kandydatów',items:['Czy zgadza się rodzaj produktu i ogólny kształt?','Czy pasują szwy, zapięcia, metki i dodatki?','Czy kolor i rozmiar należą do wybranej opcji?','Czy źródłowy link jest widoczny i aktualny?'],paragraphs:['Podobne zdjęcie może dotyczyć innego materiału lub sprzedawcy. Pozycja w wynikach nie jest oceną jakości ani autentyczności. Każdego kandydata zachowaj wraz z jego własnym źródłem.']},
-   {title:'5. Wróć do dokładnego sprawdzenia linku',paragraphs:['Otwórz wynik i zapisz platformę, ID, sprzedawcę oraz wariant. Gdy znasz pierwotne ID, porównaj je bezpośrednio. Inny identyfikator oznacza podobny produkt. Jeśli dysponujesz tylko zdjęciem, uczciwie zaznacz, że nie udało się potwierdzić dokładnego związku z pierwotną ofertą.']},
-   {title:'6. Zamień podobieństwo w użyteczne pytanie',paragraphs:['Wynik może podpowiedzieć brakujące ujęcie albo szczegół konstrukcji do sprawdzenia. Poproś na przykład o zbliżenie zapięcia własnej sztuki. Nie wnioskuj o wspólnej partii lub identycznym składzie materiału. Poszukiwanie kończy się zweryfikowanym kandydatem albo jasno nazwaną niepewnością.']},
+  "title": "Wyszukiwanie obrazem w FindQC — Znajdź produkt i sprawdź dopasowanie",
+  "description": "Znajdź zdjęcia QC ze zrzutu ekranu, porównaj podobne produkty i zweryfikuj ofertę źródłową, sprzedawcę oraz wybrany wariant.",
+  "intro": [
+    "Zapisany zrzut ekranu może być jedyną wskazówką po zniknięciu linku do produktu. FindQC opisuje wyszukiwanie obrazem jako sposób znajdowania wizualnie podobnych rekordów, obok wyszukiwania linkiem i słowami kluczowymi. Zacznij od zdjęcia, a następnie sprawdź dane źródłowe kandydata, aby ustalić, którą ofertę i opcję przedstawiają obrazy.",
+    "Ten poradnik zamienia ten proces w powtarzalną kontrolę. Przygotujesz dwa użyteczne ujęcia, porównasz wyniki, odrzucisz mylące podobieństwo i zapiszesz kandydata z danymi pozwalającymi ponownie go otworzyć. Przykład bluzy jest fikcyjny i pokazuje sposób podejmowania decyzji."
   ],
- },
+  "sections": [
+    {
+      "title": "1. Zachowaj wyraźny oryginał i przygotuj kopię do udostępnienia",
+      "paragraphs": [
+        "Przed edycją zapisz najlepszy dostępny oryginał. Wybierz ujęcie całego przedmiotu, obejmujące jego kontur oraz charakterystyczne panele, kieszenie lub zapięcia. Duże, ostre zdjęcie zwykle dostarcza więcej informacji niż powiększona miniatura. Obejrzyj plik w normalnym rozmiarze i wybierz szczegóły, które możesz wiarygodnie porównać z innym obrazem.",
+        "Przygotuj oddzielną kopię do przesłania. Usuń z kadru przyciski aplikacji, ceny, inne produkty i prywatne dane zamówienia. Sprawdź rogi oraz etykiety pod kątem nazwisk, adresów, numerów przesyłek i wiadomości. Zachowaj oryginał prywatnie, jeśli jest potrzebny do dokumentacji zamówienia. Przy cudzym zdjęciu korzystaj z materiału, który możesz udostępnić za zgodą właściciela."
+      ]
+    },
+    {
+      "title": "2. Przygotuj dwa ujęcia odpowiadające na różne pytania",
+      "paragraphs": [
+        "Wykadruj najpierw cały produkt z niewielkim marginesem wokół krawędzi. Drugi kadr powinien pokazywać cechę odróżniającą go od podobnych rzeczy, na przykład szew kieszeni, panel pięty albo układ zapięć. Pozostaw dość otoczenia, aby ustalić położenie szczegółu. Nazwij pliki prosto, by połączyć każdego kandydata z ujęciem, które go znalazło.",
+        "Samo logo może występować na wielu produktach. Zbyt ciasny kadr może usunąć ważną wskazówkę, choćby położenie logo względem kieszeni. Zachowaj proporcje i unikaj filtrów kolorystycznych, sztucznego wyostrzania oraz generowanych szczegółów. Jeśli źródło zawiera drugi kąt, użyj go w osobnym wyszukiwaniu i zachowaj informację, że obie oryginalne fotografie należą do jednej oferty."
+      ]
+    },
+    {
+      "title": "3. Zbuduj krótką listę kandydatów z wyników",
+      "paragraphs": [
+        "Otwórz aktualny interfejs wyszukiwania obrazem FindQC i prześlij przygotowany widok produktu. Dokumentacja opisuje dopasowanie wizualne oraz odróżnia grupy prawdopodobnie tego samego artykułu od podobnych rekomendacji. Sprawdź oznaczenia faktycznie wyświetlane na stronie. Zapisz trzech lub czterech obiecujących kandydatów wraz z linkami, datą i krótkim powodem wyboru.",
+        "Zacznij od konstrukcji. Policz kieszenie, porównaj granice paneli, znajdź zapięcia i obejrzyj kształt podeszwy, kołnierza lub dolnego brzegu. Oświetlenie i obróbka mogą zmieniać kolory, dlatego zestawiaj je z bardziej charakterystycznymi szczegółami. Wysoko wyświetlony wynik warto sprawdzić, lecz sama pozycja nie potwierdza sprzedawcy, dostępności ani stanu przyszłego zamówienia."
+      ]
+    },
+    {
+      "title": "4. Sprawdź każdego kandydata drugim ujęciem",
+      "paragraphs": [
+        "Powtórz wyszukiwanie z kadrem szczegółu albo drugim oryginalnym kątem. Porównaj kandydatów z obydwoma zdjęciami, stosując tę samą listę cech. Wynik wyjaśniający przód i tył wzoru jest mocniejszą wskazówką niż wynik oparty tylko na pospolitym kolorze. Zapisuj rozbieżności nawet wtedy, gdy główne zdjęcie wygląda przekonująco.",
+        "Przed odrzuceniem sprawdź skalę i perspektywę. Kieszeń może wyglądać szerzej, ponieważ odzież leży ukośnie lub jest złożona. Poszukaj kolejnego wyraźnego zdjęcia w ofercie danego kandydata. Jeśli obszar pozostaje ukryty, zapisz „szczegół nierozstrzygnięty”. Zachowuj oddzielne rekordy, aby przydatne tylne ujęcie od jednego sprzedawcy pozostawało dowodem dotyczącym właściwego produktu."
+      ]
+    },
+    {
+      "title": "5. Prześledź fikcyjny przykład szarej bluzy",
+      "paragraphs": [
+        "Wyobraź sobie zapisane zdjęcie szarej bluzy na zamek, z dwiema oddzielnymi ukośnymi kieszeniami i zakrzywionym szwem w górnej części rękawa. Kandydat A ma ten sam kolor i podobną grafikę na piersi, ale zbliżenie pokazuje jedną ciągłą kieszeń kangurkową. Kandydat B ma dwie ukośne kieszenie i zakrzywiony szew. Te fikcyjne oferty służą wyjaśnieniu kontroli.",
+        "Odrzuć A przy poszukiwaniu tego wzoru i zachowaj B do dalszej weryfikacji. Następnie sprawdź wybrany wariant B. Jeśli album magazynowy dotyczy czarnej wersji, a chcesz szarą, zapisz to ograniczenie i poszukaj rekordu szarej wersji. Zapisuj kolor i każdy dostępny rozmiar oddzielnie, aby wnioski z albumu dotyczyły właściwej opcji.",
+        "Załóż teraz, że sprzedawca oraz ID oferty B są widoczne, ale oryginalny zrzut nie zawierał żadnej z tych informacji. Potrafisz już dokładnie wskazać B i ponownie go otworzyć, lecz związek z utraconą ofertą pozostaje niepotwierdzony. Gdy stara wiadomość ujawni źródło, porównaj platformę, pełne ID, sprzedawcę i wariant. Taka informacja może potwierdzić relację lub wymagać nowego kandydata."
+      ]
+    },
+    {
+      "title": "6. Zweryfikuj źródłową ofertę, sprzedawcę i wariant",
+      "paragraphs": [
+        "Otwórz źródłowy adres kandydata i zapisz platformę, końcowy URL, pełny identyfikator produktu oraz sprzedawcę. Przechowuj link agenta razem z odnośnikiem do platformy źródłowej, jeśli oba są dostępne. Na stronie produktu Weidian parametr itemID pomaga porównać wynik z zapisanym źródłem. Inne liczby w przekierowaniu lub numerze zamówienia mogą oznaczać inne rekordy.",
+        "Porównaj dokładny tekst koloru, rozmiaru, wersji i dołączonych elementów. Otwórz selektor ponownie, gdy zdjęcie główne nie zmienia się przy zmianie opcji. Zapisz datę oraz pola, które udało się obejrzeć. Jeśli link kończy się ekranem logowania albo niedostępną stroną, pozostaw aktualną zawartość nierozstrzygniętą i poproś o sprawdzalne źródło przed poleganiem na starym tytule lub podglądzie."
+      ]
+    },
+    {
+      "title": "7. Powiąż album QC z fotografowanym przedmiotem",
+      "paragraphs": [
+        "Przy każdym użytecznym albumie zanotuj źródło, dostępną datę, przypisaną ofertę i widoczne wskazówki wariantu. Zdjęcie oferty pomaga opisać ofertę. Fotografia magazynowa pomaga ocenić otrzymany egzemplarz. Zachowaj powiązanie zdjęć z zamówieniem lub rekordem, aby wyjaśnić, którego produktu dotyczą i jakie szczegóły nadal wymagają sprawdzenia.",
+        "Wykorzystaj starsze ujęcia do zaplanowania własnej kontroli. Dla przykładowej bluzy poproś o pełny przód, wyraźne zdjęcie konstrukcji kieszeni, etykietę rozmiaru oraz szerokość klatki piersiowej na płasko z widocznymi końcami miarki. Porównuj otrzymany przedmiot z dokonanym zamówieniem. Brak kąta prowadzi do konkretnej prośby, a nieczytelny pomiar wymaga ponownej fotografii."
+      ]
+    },
+    {
+      "title": "8. Zmień metodę, gdy zdjęcie daje zbyt mało informacji",
+      "paragraphs": [
+        "Jeśli początkowe wyszukiwania pokazują jedynie ogólne produkty, wypróbuj jedno wyraźniejsze oryginalne ujęcie przed zmianą metody. Odczytaj charakterystyczną nazwę modelu, kategorię lub etykietę i wyszukaj słowami kluczowymi. Gdy kandydat zawiera wiarygodny link źródłowy, spróbuj opisanej przez usługę metody wyszukiwania linkiem. Zachowaj poprzednie wyniki i powody odrzucenia.",
+        "Niektóre produkty mają mało publicznych zdjęć QC. Nieudane wyszukiwanie pozostawia dopasowanie otwarte. Możesz poprosić osobę udostępniającą zdjęcie o pierwotny link, zapytać sprzedawcę lub agenta o wariant albo wybrać kandydata ze sprawdzalnymi danymi. Ustal punkt zakończenia po tych próbach, aby wielokrotne przeglądanie nie zamieniło słabego podobieństwa w przyjętą zgodność."
+      ]
+    },
+    {
+      "title": "9. Zapisz krótki wniosek i sprawdź go przed zakupem",
+      "paragraphs": [
+        "Zapisz razem oryginalną referencję, nazwy obu kopii, adres kandydata, platformę, ID, sprzedawcę, wariant i datę kontroli. Dodaj zdanie opisujące relację, na przykład „Kandydat B odpowiada widocznym kieszeniom i szwowi rękawa; nadal brakuje ID utraconej oferty”. Wskaż następny krok, choćby uzyskanie źródłowego linku lub zdjęcia z pomiarem.",
+        "Przed zakupem otwórz zapisany adres i ponownie sprawdź wariant oraz dostępność. Po dostarczeniu do magazynu oprzyj decyzję o wysyłce na zdjęciach własnego zamówienia. Udostępniając badanie, usuń dane prywatne i podpisz obrazy jako referencje, starsze QC lub zdjęcia swojej jednostki. Inny czytelnik powinien móc przejść tę samą drogę i zrozumieć podstawę wniosku."
+      ]
+    }
+  ],
+  "keywords": [
+    "wyszukiwanie obrazem FindQC",
+    "szukanie QC zdjęciem",
+    "produkt ze zrzutu ekranu"
+  ],
+  "seoTitle": "FindQC obrazem — sprawdzaj zdjęcia i zrzuty ekranu",
+  "dateISO": "2026-09-15",
+  "dateModified": "2026-11-05",
+  "sources": [
+    {
+      "label": "FindQC — How FindQC Works",
+      "href": "https://findqc.com/how-findqc-works",
+      "note": "Dokumentacja i opublikowane przykłady, sprawdzone 5 listopada 2026 r."
+    },
+    {
+      "label": "FindQC Academy — Choosing the Best Search Method",
+      "href": "https://academy.findqc.com/2024/12/21/mastering-qc-finder-choosing-the-best-search-method/",
+      "note": "Dokumentacja i opublikowane przykłady, sprawdzone 5 listopada 2026 r."
+    }
+  ]
+},
  'qc-photos-vs-qc-videos-evidence-guide': {
   title:'Zdjęcia QC czy film QC: jaki dowód odpowie na pytanie?',description:'Wybierz zdjęcia do detali i pomiarów, a film do ruchu i ciągłych ujęć. Sprawdź ograniczenia obu formatów.',keywords:['zdjęcia QC a film','film QC','zdjęcia magazynowe','dowody QC'],
   intro:['Więcej materiału nie zawsze oznacza lepszy dowód. Ostre zdjęcie może pokazać metkę lepiej niż poruszony film, a film może ujawnić ruch zapięcia niedostępny na pojedynczej fotografii. Dobierz format do pytania, które pozostało otwarte.'],
@@ -84,17 +430,102 @@ export const plEditorial = {
   ],
  },
  'clothing-qc-photos-measurements-print-stitching': {
-  title:'Zdjęcia QC odzieży: wymiary, nadruki i szwy',description:'Sprawdź odzież na zdjęciach QC: wariant i metkę, pomiary na płasko, pozycję nadruku, szwy, zapięcia i brakujące ujęcia.',keywords:['zdjęcia QC odzieży','pomiary QC ubrania','QC nadruk','QC szwy'],
-  intro:['Metka rozmiaru odpowiada tylko na pytanie o oznaczenie ubrania. O spełnieniu oczekiwań decydują też porównywalne wymiary, widoczne wykonanie i właściwy wariant. Sprawdzaj te elementy osobno.'],
-  sections:[
-   {title:'1. Potwierdź zamówiony wariant',paragraphs:['Porównaj kolor, model, rozmiar i zawartość z potwierdzeniem zamówienia. Zdjęcie reklamowe może obejmować kilka opcji. Sprawdź przód, tył i czytelne metki aktualnego egzemplarza. Poprawna metka nie dowodzi wymiarów ani składu tkaniny.']},
-   {title:'2. Porównaj z dobrze dopasowanym ubraniem',paragraphs:['Zmierz własną rzecz na płasko bez rozciągania. Zapisz szerokość klatki, długość oraz w razie potrzeby barki, rękaw, pas lub nogawkę wraz z punktami pomiaru. Poproś magazyn o tę samą metodę. Wymiary ciała, szerokości na płasko i obwody nie mogą trafiać do jednej kolumny bez wyjaśnienia różnicy.']},
-   {title:'3. Oceń nadruk bez błędu perspektywy',paragraphs:['Poproś o równe rozłożenie ubrania. Porównuj położenie nadruku względem szwów i osi, a nie tylko krawędzi przyciętego zdjęcia. Zagięcie może sprawiać wrażenie przesunięcia. Przy nieczytelnych krawędziach pomoże zbliżenie; odblasku i kompresji nie przedstawiaj jako potwierdzonej wady nadruku.']},
-   {title:'4. Sprawdź szwy, brzegi i zapięcia',paragraphs:['Szukaj widocznych otwartych szwów, nierównych wykończeń, luźnych nitek, guzików i zamków. Opisz lokalizację i poproś o drugie ujęcie, jeśli trzeba. Zdjęcie z zewnątrz nie pokazuje wszystkich wewnętrznych wzmocnień. Krótkie sprawdzenie zamka potwierdza ruch, nie przyszłą trwałość.']},
-   {title:'5. Porównaj powierzchnię oraz wyposażenie',items:['Sprawdź plamy i ślady ponownie w równym świetle.','Policz kieszenie, sznurki, paski i dołączone części.','Oznacz deklaracje materiału jako deklaracje.','Zapisz niewidoczne obszary wewnętrzne jako otwarte.'],paragraphs:['Miękkości, zapachu, wygody i zachowania po praniu nie da się wiarygodnie ustalić na podstawie fotografii. Czysta powierzchnia nie jest dowodem tych cech.']},
-   {title:'6. Sformułuj prośbę rozwiązującą wątpliwość',paragraphs:['Przykład: „Zmierz na płasko od szwu pod pachą do drugiego, bez naciągania i z widocznymi końcami taśmy”. Albo: „Pokaż prawą krawędź nadruku z bliska i na ujęciu ogólnym”. Sprawdź usługi i terminy, zaktualizuj kryteria i zdecyduj o akceptacji, dodatkowej kontroli lub pytaniu o wymianę.']},
+  "title": "Zdjęcia QC ubrań: wymiary, położenie nadruku i szwy",
+  "description": "Sprawdź zdjęcia QC ubrań z przykładem odczytu miarki, zakresem dopasowania, kontrolą nadruku, szwów i metek oraz decyzją dla magazynu.",
+  "intro": [
+    "Sprawdzaj zdjęcia QC ubrań w stałej kolejności. Potwierdź produkt i wariant, porównaj czytelne pomiary z własną koszulką, a następnie obejrzyj grafikę, wykonanie i wyposażenie. Powtarzalna metoda ułatwia zamówienie potrzebnego dodatkowego zdjęcia i podjęcie decyzji przed upływem właściwego terminu.",
+    "Poradnik dotyczy koszulek, bluz, kurtek i spodni. Dopasuj punkty pomiaru do konstrukcji. Historyczne wyniki wyszukiwania przechowuj oddzielnie od zdjęć bieżącego zamówienia. Podane wartości są ilustracyjnymi przykładami obliczeń."
   ],
- },
+  "sections": [
+    {
+      "title": "1. Potwierdź dokładny produkt i wybrany wariant",
+      "paragraphs": [
+        "Otwórz jednocześnie ofertę źródłową, pozycję zamówienia i zapis magazynu. Zanotuj platformę, ID produktu, sprzedawcę, rodzaj ubrania, kolor, rozmiar, wersję i liczbę sztuk. Oferta może prezentować kilka wariantów pod jednym zdjęciem głównym. Porównaj miniaturę wybranej opcji i jej oryginalną nazwę z zamówieniem. Trudne nazwy kolorów zachowaj w języku źródłowym, aby późniejsze tłumaczenie miało jednoznaczny punkt odniesienia.",
+        "Porównaj cały przód i tył z wybraną wersją. Sprawdź grafikę, kieszenie, rodzaj rękawów, planowany krój oraz szczegóły sezonu lub wersji. Policz dołączony pasek, podpinkę i pozostałe elementy. Wyraźną niezgodność produktu wyjaśnij przed oceną drobnych detali. W każdej prośbie podawaj numer zamówienia."
+      ]
+    },
+    {
+      "title": "2. Zdobądź pełny widok przodu i tyłu przed zbliżeniami",
+      "paragraphs": [
+        "Poproś o naturalne ułożenie ubrania na równej powierzchni z widocznymi rękawami, dolnym brzegiem i zapięciami. Materiał powinien być delikatnie wygładzony i rozluźniony. Zachowaj pełne zdjęcie przodu i tyłu, aby umiejscowić każdy detal. Mocne złożenie może ukryć ślady albo kształt panelu. Przechylony aparat zmienia proporcje między ramionami, kieszeniami i dołem.",
+        "Przed zamówieniem zbliżenia wskaż problem na szerokim zdjęciu. Opisz pozycję, na przykład narożnik prawej kieszeni, i poproś o tę samą część przy równomiernym oświetleniu. Uwzględnij cienie, fałdy i naturalne układanie się tkaniny. Drugi, prosto wykonany kadr pomaga ustalić, czy plama, nierówny brzeg albo przesunięta grafika pozostają widoczne."
+      ]
+    },
+    {
+      "title": "3. Mierz między ustalonymi końcami i sprawdź obliczenie",
+      "paragraphs": [
+        "Ta przykładowa metoda pozwala porównać koszulkę z ubraniem, które już masz. Połóż własną koszulkę płasko, delikatnie ją wygładź i pozostaw tkaninę bez naciągania. Wskaż połączenia szwów pod obiema pachami. Poprowadź taśmę prosto między tymi punktami i sfotografuj jej początek oraz koniec razem z ubraniem. Poproś magazyn o użycie tych samych punktów i napięcia tkaniny. UNIQLO opisuje szerokość korpusu poprzez punkty pod pachami. Sprawdź też dokładną metodę przyjętą w tabeli sprzedawcy.",
+        "Na hipotetycznym zdjęciu QC lewy punkt wypada przy 3 cm, a prawy przy 58 cm. Szerokość między punktami wynosi 58 − 3 = 55 cm. Zapisz obliczenie obok zdjęcia. Drugie zdjęcie z początkiem przy zerze ułatwi kontrolę. Podwojona szerokość na płasko daje przy tej metodzie przybliżony obwód ubrania wynoszący 110 cm. Zachowaj oryginalny pomiar 55 cm, aby kolejne porównania dotyczyły tej samej wielkości.",
+        "Dla długości określ dokładnie górny punkt, na przykład ramię przy kołnierzyku, i dolny brzeg ubrania. Poproś o jedno zdjęcie pokazujące oba końce i całą taśmę. Długość po środku pleców oraz długość od ramienia do dołu przebiegają innymi trasami. Zapisz metodę sprzedawcy i stosuj ją podczas kolejnych porównań."
+      ]
+    },
+    {
+      "title": "4. Ustal zakres dopasowania przed odczytaniem miarki",
+      "paragraphs": [
+        "Zapisz szerokość wygodnej koszulki, mierząc te same punkty. Jako przykładową osobistą preferencję przyjmij 55 cm i akceptowany zakres nowego ubrania od 54 do 56 cm. Oznacz ten przedział jako własny zakres dopasowania. Sprzedawca może podać tolerancję produkcyjną. Zapisz ją oddzielnie, ponieważ dotyczy ona zgodności z reklamowanym rozmiarem.",
+        "Jeśli na zdjęciu magazynowym odczytujesz około 53,5 cm, najpierw sprawdź końce taśmy, kąt aparatu, naciągnięcie materiału i wybrany rozmiar. Poproś o ponowny pomiar przy rozluźnionej tkaninie i całej taśmie w kadrze. Jeżeli wynik ponownie wynosi 53,5 cm, porównaj go ze swoim zakresem i tabelą sprzedawcy. Następnie zapytaj o większy rozmiar lub wymianę. Podejmij decyzję przed wysyłką międzynarodową, korzystając z aktualnych opcji i terminów agenta.",
+        "Uwzględnij elastyczność, planowany krój oraz ubrania noszone pod spodem. Szerokość klatki, szerokość ramion i długość zapisuj oddzielnie. Wykorzystaj pomiary do określenia potrzebnych dodatkowych dowodów i zachowaj prośbę oraz odpowiedź przy zamówieniu."
+      ]
+    },
+    {
+      "title": "5. Porównaj nadruk i haft ze stałymi punktami ubrania",
+      "paragraphs": [
+        "Porównuj wzór z dokładnym kolorem i wersją zamówienia. Jako odniesienie wykorzystaj środek ubrania, zamek, krawędź kieszeni, szew ramienia i dolny brzeg. Oceń ogólne wyśrodkowanie, wysokość, wypełnione obszary, litery i krawędzie. Zachowaj całe zdjęcie ubrania obok zbliżenia problemu, aby położenie i skala były czytelne.",
+        "Przy pozornie krzywym nadruku sprawdź obrót aparatu i ułożenie ubrania. Poproś o prosty widok przed decyzją. Zagięcie lub refleks może zmienić wygląd krawędzi. Przy hafcie szukaj widocznych brakujących fragmentów i sprawdź mocowanie wokół obwodu. Zapisz położenie potwierdzonych odklejeń, luk albo przesunięć. Trwałość po wielokrotnym praniu wymaga obserwacji rozłożonych w czasie."
+      ]
+    },
+    {
+      "title": "6. Prześledź szwy i precyzyjnie opisz widoczne problemy",
+      "paragraphs": [
+        "Sprawdź połączenia ramion, pachy, szwy boczne, narożniki kieszeni i obszycia. Przy spodniach uwzględnij krok, pas i wewnętrzną część nogawek. Szukaj otwartych odcinków, pominiętych ściegów, silnego marszczenia i luźnych mocowań. Podaj dokładną lokalizację i przybliżony rozmiar problemu, aby agent mógł odtworzyć kontrolę. Końcówkę nici i otwarty szew zapisz jako oddzielne obserwacje.",
+        "Dla nieczytelnego miejsca poproś o zbliżenie i szeroki kadr pokazujący lokalizację. Porównaj obie strony, gdy konstrukcja ma być symetryczna. Ukryte szwy wewnętrzne oznacz jako oczekujące na kontrolę, jeżeli mają znaczenie dla decyzji. Zapisz zewnętrzny stan w chwili sprawdzenia. Późniejsze wyniki noszenia lub prania przechowuj oddzielnie."
+      ]
+    },
+    {
+      "title": "7. Policz zapięcia, kieszenie i dołączone części",
+      "paragraphs": [
+        "Porównaj zamki, guziki, zatrzaski, sznurki, stopery, paski, podpinki i odpinane elementy z wybraną opcją. Przy kilku częściach poproś o zdjęcie wszystkich rozłożonych razem. Sprawdź widoczne punkty mocowania oraz uszkodzenia. Potwierdź kieszenie w przewidzianych miejscach i poproś o wyraźniejszy widok, gdy fałda albo szew zasłania otwór.",
+        "Jeżeli decyzja zależy od działania zamka lub zatrzasku, zapytaj o krótki film magazynowy pokazujący pełny ruch. Zapisz obserwowaną czynność i sprawdź cenę usługi przed zleceniem. Gdy wyjaśniasz wymianę, poproś w miarę możliwości o przechowanie opakowania i odpinanych elementów razem. Potwierdź aktualne terminy magazynowania oraz rozpatrzenia sprawy w obsłudze zamówienia."
+      ]
+    },
+    {
+      "title": "8. Porównaj metki z wariantem i wymiarami ubrania",
+      "paragraphs": [
+        "Poproś o zdjęcie metki przy szyi lub metki rozmiarowej na wprost, czytelne zdjęcie metki pielęgnacyjnej i szerszy kadr pokazujący miejsce każdej z nich. Zachowaj obok zdjęć rozmiar wybrany w zamówieniu. Jeżeli zamówiono L, metka wskazuje XL, a wymiary odpowiadają pozycji L w tabeli sprzedawcy, poproś agenta o potwierdzenie dostarczonego wariantu przed akceptacją.",
+        "Zapisz dokładną treść dotyczącą rozmiaru, kodu produktu i składu. Czytelna metka dokumentuje oznaczenia dołączone do danego ubrania. Do oceny rzeczywistego składu lub właściwości tkaniny potrzebne są dodatkowe dowody. Porównaj każdy znak kodu z ofertą, w tym litery, łączniki i końcówki. Zachowaj czytelne zdjęcie instrukcji pielęgnacji przy zamówieniu, aby mieć do nich dostęp po wyrzuceniu opakowania.",
+        "Przy sprzecznych informacjach wyślij jedną prośbę z ID zamówienia, wybranym wariantem, zdjęciem metki i wynikiem pomiaru. Poproś agenta o sprawdzenie systemu rozmiarów sprzedawcy i potwierdzenie dostępnych dla tego zamówienia możliwości wymiany lub zastąpienia produktu."
+      ]
+    },
+    {
+      "title": "9. Wyślij precyzyjną prośbę i zapisz decyzję",
+      "paragraphs": [
+        "Przygotuj krótką ocenę z osobnymi wierszami dla produktu, wymiarów, grafiki, szwów, wyposażenia i opakowania. Nadaj każdemu status, na przykład potwierdzone, pytanie otwarte lub niezgodność. Dołącz ofertę źródłową, wariant i właściwe zdjęcie magazynowe. Przy pomiarze nazwij oba końce, poproś o rozluźniony materiał i całą widoczną taśmę. Przy nadruku wskaż konkretną krawędź i załącz szeroki widok.",
+        "Po otrzymaniu brakujących dowodów porównaj je z wymaganiami zapisanymi przed kontrolą. Zaakceptuj ubranie, gdy potrzebne informacje są czytelne i mieszczą się w twoich kryteriach. Przy potwierdzonej niezgodności zapytaj agenta o wymianę lub zwrot na aktualnych zasadach przed wysyłką międzynarodową. Zapisz odpowiedź i termin. W tej samej notatce zachowaj dodatkowe opłaty oraz przewidywany czas dostarczenia zamiennika.",
+        "Po odbiorze powtórz istotne pomiary tą samą metodą i zanotuj własne wrażenia z dopasowania. Jeśli obserwujesz pranie lub pielęgnację, zapisz osobno metodę i późniejsze wymiary. Powstanie osobisty punkt odniesienia na następne zamówienie. Powiąż wynik z konkretnym ubraniem, tkaniną i zakupem, aby zachować kontekst."
+      ]
+    }
+  ],
+  "keywords": [
+    "zdjęcia QC odzieży",
+    "jak czytać wymiary QC",
+    "tolerancja pomiaru ubrania"
+  ],
+  "seoTitle": "QC odzieży — wymiary, metki i dopasowanie",
+  "dateISO": "2026-09-15",
+  "dateModified": "2026-11-05",
+  "sources": [
+    {
+      "label": "How FindQC Works",
+      "href": "https://findqc.com/how-findqc-works",
+      "note": "Dokumentacja i opublikowane przykłady, sprawdzone 5 listopada 2026 r."
+    },
+    {
+      "label": "UNIQLO product measurement guidelines",
+      "href": "https://faq-sg.uniqlo.com/articles/en_US/FAQ/Product-Measurement-Guidelines-SG",
+      "note": "Dokumentacja i opublikowane przykłady, sprawdzone 5 listopada 2026 r."
+    }
+  ]
+},
  'warehouse-measurement-guide': {
   title:'Jak czytać wymiary na zdjęciach QC: taśma, końce i porównanie',description:'Porównuj pomiary magazynowe poprawnie: punkt zero, koniec, szerokość na płasko, długość wewnętrzna i wymiary paczki.',keywords:['wymiary QC','pomiary magazynowe','taśma miernicza QC','mierzenie ubrań QC'],
   intro:['Liczba przy taśmie wygląda precyzyjnie, ale jest użyteczna dopiero przy widocznej metodzie. Najpierw ustal, jaki odcinek zmierzono. Powiększanie niewyraźnego zdjęcia nie zamienia ukrytego końca w dokładny pomiar.'],

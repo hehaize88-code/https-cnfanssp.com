@@ -27,7 +27,7 @@ const PAGE_SEO_KEYS = {
 };
 
 const ENGLISH_SEARCH_TITLES = {
-  "/": "QC Finder Guides & Product Links | FindQCS",
+  "/": "FindQCS – Find QC Photos for Weidian, Taobao & 1688",
   "/products": "FindQC Finds & Product Index: 108 Source Listings | FindQCS",
   "/categories": "FindQC Product Categories: Shoes, Hoodies & More | FindQCS",
   "/shipping": "FindQC Shipping Cost Checklist: Weight, Volume & Fees",
@@ -38,33 +38,48 @@ const ENGLISH_SEARCH_TITLES = {
 
 const LOCALIZED_SEARCH_TITLES = {
   pl: {
-    "/": "Poradniki QC Finder i linki do produktów | FindQCS",
+    "/": "FindQCS – Jak znaleźć zdjęcia QC z Weidian i Taobao",
     "/guides": "Poradnik FindQC: linki, ID, wyszukiwanie obrazem i zdjęcia QC",
     "/articles": "Poradniki QC Finder: zdjęcia, pomiary i zakup | FindQCS",
   },
   es: {
-    "/": "Guías QC Finder y enlaces de productos | FindQCS",
+    "/": "FindQCS – Cómo encontrar fotos QC de ropa",
     "/guides": "Guía FindQC: enlaces, ID, búsqueda por imagen y fotos QC",
     "/articles": "Guías QC Finder: fotos, medidas y compras | FindQCS",
   },
   de: {
-    "/": "QC-Finder-Ratgeber und Produktlinks | FindQCS",
+    "/": "FindQCS – QC-Fotos für Weidian und Taobao finden",
     "/guides": "FindQC-Anleitung: Links, IDs, Bildsuche und QC-Fotos",
     "/articles": "QC-Finder-Ratgeber: Fotos, Maße und Kauf | FindQCS",
   },
   ro: {
-    "/": "Ghiduri QC Finder și linkuri de produse | FindQCS",
+    "/": "FindQCS – Cum găsești poze QC din Weidian și Taobao",
     "/guides": "Ghid FindQC: linkuri, ID-uri, căutare prin imagini și poze QC",
     "/articles": "Ghiduri QC Finder: fotografii, măsurători și cumpărături | FindQCS",
   },
 };
 
 const SEARCH_DESCRIPTIONS = {
-  en: "Find product links and practical QC guides for Taobao, Weidian and 1688. Check photo matches, measurements and your own warehouse evidence before shipping.",
-  de: "Produktlinks und QC-Ratgeber für Taobao, Weidian und 1688: Fototreffer, Maße und die eigenen Lagerbilder vor dem Versand prüfen.",
-  es: "Enlaces de productos y guías QC para Taobao, Weidian y 1688. Comprueba coincidencias, medidas y fotos de tu pedido antes del envío.",
-  pl: "Linki do produktów i poradniki QC dla Taobao, Weidian oraz 1688. Sprawdź dopasowanie zdjęć, wymiary i własny egzemplarz przed wysyłką.",
-  ro: "Linkuri de produse și ghiduri QC pentru Taobao, Weidian și 1688. Verifică potrivirile, măsurătorile și pozele comenzii înainte de expediere.",
+  "en": {
+    "/": "Learn how to find QC photos from Weidian, Taobao and 1688 links. Check a photo match, clothing measurements and the original listing before buying.",
+    "/articles": "Choose a QC guide for product links, image search, spreadsheet finds, football jerseys and garment measurements. Follow practical examples before shipping."
+  },
+  "es": {
+    "/": "Aprende a encontrar fotos QC de ropa con enlaces Weidian, Taobao y 1688. Comprueba la publicación, las tallas y las medidas antes de comprar.",
+    "/articles": "Guías de enlaces, búsqueda por imagen, productos de hojas de cálculo, camisetas de fútbol y medidas. Resuelve cada paso con ejemplos prácticos."
+  },
+  "de": {
+    "/": "Finde QC-Fotos mit Links von Weidian, Taobao und 1688. Prüfe Bildtreffer, das Originalangebot und Kleidungsmaße vor dem Kauf.",
+    "/articles": "QC-Anleitungen für Produktlinks, Bildsuche, Spreadsheet-Funde, Fußballtrikots und Kleidungsmaße. Arbeite die Schritte mit konkreten Beispielen durch."
+  },
+  "pl": {
+    "/": "Dowiedz się, jak znaleźć zdjęcia QC przez linki Weidian, Taobao i 1688. Sprawdź ofertę źródłową, dopasowanie zdjęcia i wymiary odzieży przed zakupem.",
+    "/articles": "Poradniki QC o linkach, wyszukiwaniu obrazem, produktach z arkuszy, koszulkach piłkarskich i wymiarach odzieży. Sprawdź konkretne przykłady krok po kroku."
+  },
+  "ro": {
+    "/": "Află cum găsești poze QC prin linkuri Weidian, Taobao și 1688. Verifică oferta originală, potrivirea imaginii și măsurile hainelor înainte de cumpărare.",
+    "/articles": "Ghiduri QC pentru linkuri, căutare după imagine, produse din tabele, tricouri de fotbal și măsuri. Urmează pașii și exemplele practice înainte de expediere."
+  }
 };
 
 function translatedSeo(metadata, pathname) {
@@ -93,7 +108,7 @@ function translatedSeo(metadata, pathname) {
   return {
     ...metadata,
     title,
-    description: ["/", "/articles"].includes(pathname) ? SEARCH_DESCRIPTIONS[BUILD_LANGUAGE] : translate(BUILD_LANGUAGE, keys.description),
+    description: SEARCH_DESCRIPTIONS[BUILD_LANGUAGE]?.[pathname] || translate(BUILD_LANGUAGE, keys.description),
   };
 }
 

@@ -24,6 +24,11 @@ export default function HomePage({ children }) {
           </div>
           <h1>{t("home.titleLine1")}<br /><em>{t("home.titleLine2")}</em></h1>
           <p>{t("home.intro")}</p>
+          <nav className="home-task-links" aria-label={t("home.guideLabel")}>
+            <Link href="/articles/weidian-qc-finder-item-id-original-listing" data-analytics-event="article_open" data-analytics-id="weidian-qc-finder-item-id-original-listing">{t("home.linkGuide")} <ArrowIcon /></Link>
+            <Link href="/articles/findqc-image-search-reference-photo-checks" data-analytics-event="article_open" data-analytics-id="findqc-image-search-reference-photo-checks">{t("home.imageGuide")} <ArrowIcon /></Link>
+            <Link href="/articles/clothing-qc-photos-measurements-print-stitching" data-analytics-event="article_open" data-analytics-id="clothing-qc-photos-measurements-print-stitching">{t("home.clothingGuide")} <ArrowIcon /></Link>
+          </nav>
           <SearchBox />
           <dl className="index-metrics">
             <div><dt>{products.length}</dt><dd>{t("home.catalogShortlist")}</dd></div>
@@ -55,6 +60,8 @@ export default function HomePage({ children }) {
           </footer>
         </div>
       </section>
+
+      {children}
 
       <section className="index-directory shell">
         <div className="index-section-label">
@@ -117,8 +124,6 @@ export default function HomePage({ children }) {
           ))}
         </ol>
       </section>
-
-      {children}
 
       <section className="index-reading section shell">
         <div className="index-article">

@@ -50,7 +50,7 @@ function localizeArticle(article, language) {
     const localized=ARTICLE_LOCALES[language]?.[key];
     if (!localized) throw new Error(`Missing ${language} article: ${article.slug}`);
     const sourceLocales=ARTICLE_SOURCE_LOCALES[language]||{};
-    const sources=(localized.sources||article.sources||[]).map(source=>({
+    const sources=localized.sources||(article.sources||[]).map(source=>({
       ...source,...(sourceLocales[source.href]||{label:localeUi[language].source,note:localeUi[language].sourceNote}),
     }));
     result={...article,...localized,slug:article.slug,sources,
@@ -61,16 +61,16 @@ function localizeArticle(article, language) {
   }
   if(!result.sources.length) result.sources=[{href:"https://www.cnfanssp.com/AllProducts/",label:catalogCopy[language][0],note:catalogCopy[language][1]}];
   result.dateISO=article.dateISO;
-  result.dateModified=REVIEW_DATE;
+  result.dateModified=result.dateModified||REVIEW_DATE;
   result.date=new Intl.DateTimeFormat(language,{day:'numeric',month:'long',year:'numeric',timeZone:'UTC'})
     .format(new Date(article.dateISO+'T00:00:00Z'));
   result.updatedDate=new Intl.DateTimeFormat(language,{day:'numeric',month:'long',year:'numeric',timeZone:'UTC'})
-    .format(new Date(REVIEW_DATE+'T00:00:00Z'));
+    .format(new Date(result.dateModified+'T00:00:00Z'));
   result.topic=topicConfig[article.slug]?.[0]||topicOverrides[article.slug];
   result.related=relatedOverrides[article.slug]||topicConfig[article.slug]?.[2]||article.related;
   // A concise answer precedes the detailed workflow in every edition.
   result.quickAnswer=result.description;
-  result.seoTitle=articleSearchTitles[language][article.slug];
+  result.seoTitle=result.seoTitle||articleSearchTitles[language][article.slug];
   // Correct a legacy illustration path; it never denoted a real QC record.
   result.sections=result.sections.map(section=>({...section,blocks:section.blocks.map(block=>
     block.type==='figure'&&block.image==='/products/accessories.webp'?{...block,image:'/products/watch.webp'}:block)}));

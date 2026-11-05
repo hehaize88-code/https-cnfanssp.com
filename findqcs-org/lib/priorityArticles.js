@@ -1,3 +1,4 @@
+import { makeGuide } from './editorial/shared.js';
 const official = {
   howItWorks: {
     label: "FindQC — How FindQC Works",
@@ -101,67 +102,104 @@ export const priorityArticles = [
     related: ["product-search-link-id-keyword", "qc-finder-no-photos-dead-link-recovery", "findqc-image-search-reference-photo-checks"],
     cta: productCta,
   },
-  {
-    slug: "weidian-qc-finder-item-id-original-listing",
-    title: "Weidian QC Finder: Extract the Item ID and Verify the Original Listing",
-    shortTitle: "Weidian Item-ID Verification",
-    description: "Recover a Weidian item ID from shared links, classify QC-finder matches correctly, and confirm the original live listing and variant.",
-    excerpt: "Wrapped links and reused product images make visual familiarity unreliable; preserve the Weidian route and verify the final item ID.",
-    category: "Link Verification",
-    readTime: "10 min read",
-    date: "15 September 2026",
-    dateISO: "2026-09-15",
-    dateModified: "2026-09-15",
-    heroImage: "/products/hoodie.webp",
-    heroAlt: "Hooded garment used as an editorial example for verifying a Weidian listing",
-    keywords: ["Weidian QC finder", "Weidian QC photos", "Weidian item ID", "original listing check", "FindQC"],
-    intro: [
-      "Weidian links are often copied through messaging apps, spreadsheets and shopping-agent converters. By the time a link reaches a QC finder, its useful identity may be buried inside a wrapper or mixed with tracking data. The safest workflow preserves the original marketplace route, extracts the item ID, and checks the result against the live seller and variant before any photo review begins.",
-      "FindQCS is an independent index and education site. It does not certify a Weidian seller or operate FindQC. This guide follows the official FindQC distinction between precise link searches and broader keyword or image searches, then adds a reproducible listing-verification record.",
-    ],
-    sections: [
-      { id: "unpack", title: "1. Unpack the shared link without losing provenance", blocks: [
-        { type: "p", text: "Keep the message or spreadsheet cell where the link appeared, then open it without deleting parameters. Record every hop: wrapper, intermediate redirect and final Weidian destination. The wrapper may be useful for agent context, while the final marketplace URL supplies the strongest listing identity. If the page cannot be opened, copy the raw string exactly and avoid editing it in a way that could remove the only surviving identifier." },
-        { type: "list", title: "Record before searching", items: ["Raw shared URL", "Final Weidian URL if reachable", "Numeric item ID", "Shop or seller name", "Selected colour, size or version", "Date and source context"] },
-      ] },
-      { id: "id", title: "2. Distinguish the product ID from other numbers", blocks: [
-        { type: "p", text: "A long link may contain campaign codes, user identifiers, timestamps and a product identifier. Use the value attached to the product route or the final live page, not simply the longest number. Cross-check it by reopening a clean URL or by searching the intact link in the QC finder. If two candidate IDs produce different products, return to the redirect chain and label the ambiguity instead of choosing the result with the more familiar image." },
-        { type: "callout", title: "Do not infer", text: "A number copied from an agent order, image filename or tracking parameter is not automatically the Weidian item ID." },
-      ] },
-      { id: "method", title: "3. Choose link, ID, keyword and image search deliberately", blocks: [
-        { type: "p", text: "Start with the complete original link because it preserves marketplace and route together. Use the confirmed item ID when wrappers fail. A distinctive title phrase can widen discovery, and a clean product photo can surface visual alternatives. FindQC’s official search guidance makes the trade-off clear: broader methods help discovery but require more result filtering. Keep the input used beside the outcome so an ID match is never confused with an image resemblance." },
-        { type: "table", headers: ["Method", "Evidence it starts with", "Valid conclusion"], rows: [["Original link", "Marketplace route", "Candidate for exact verification"], ["Confirmed ID", "Listing identifier", "Candidate for exact verification"], ["Keyword", "Shared description", "Textually related candidate"], ["Image", "Visual features", "Visually related candidate"]] },
-      ] },
-      { id: "seller", title: "4. Verify the shop context as well as the ID", blocks: [
-        { type: "p", text: "An exact item ID is essential, but the surrounding page still matters. Compare the final domain, shop name, seller context, title, primary images and variant labels with the saved source. If the same route now shows a materially different item, mark the listing changed. If a copied image appears under another seller and ID, mark it similar. Do not transfer prices, return terms, materials or QC history between those records." },
-        { type: "p", text: "Seller names can be stylized or translated, so preserve the visible form and, when available, a stable shop link. Use it as a consistency signal rather than proof that every listing from that shop shares the same quality." },
-      ] },
-      { id: "variant", title: "5. Confirm the exact Weidian variant", blocks: [
-        { type: "p", text: "A listing can group several colours, batches, sizes or bundles under one item ID. Select the intended option and capture its full label, current image and price state. Historical QC photos may belong to a different option even when the parent ID matches. Compare visible option clues such as colour, size tag, included pieces or model code. If the record does not expose the option, classify it as same listing, variant unknown." },
-        { type: "list", title: "Variant gate", items: ["Required option remains selectable", "Option label is saved exactly", "Reference image agrees with that option", "Historical record exposes enough detail to compare", "Unknown batch or bundle differences stay visible"] },
-      ] },
-      { id: "qc-records", title: "6. Read Weidian QC photos at the right evidence level", blocks: [
-        { type: "p", text: "Same-listing photos show what reached a warehouse for another order. They can reveal useful inspection angles, repeated packaging patterns or a measurement format. They do not prove what your unit will look like. Review several dated sets where available, separate obvious variant differences and note recurring themes without converting them into a seller score. One dramatic photo may be real and still be unrepresentative of other units." },
-        { type: "p", text: "For a current order, the most relevant evidence is the agent’s own warehouse set tied to the order record. Use historical FindQC results to prepare questions, then replace expectation with current photos wherever possible." },
-      ] },
-      { id: "listing-claims", title: "7. Separate listing claims from observed evidence", blocks: [
-        { type: "p", text: "A Weidian title or description may state a material, process, grade or measurement. Save the exact statement and its date, but label it as a seller claim. A warehouse image can support visible colour, labels, broad shape, obvious condition and a properly shown measurement; it cannot independently prove fibre content, internal construction, authenticity, safety or long-term durability. This separation keeps an article useful without repeating promotional language as fact." },
-        { type: "callout", title: "Evidence wording", text: "Write “the listing states” for seller copy and “the image shows” only for a visible observation." },
-      ] },
-      { id: "stale", title: "8. Recover a stale Weidian candidate without false continuity", blocks: [
-        { type: "p", text: "If the original listing is unavailable, search the saved ID and shop context once, then widen to distinctive keywords and images. Create a new row for every replacement candidate. Never overwrite the original ID or imply that a visually identical thumbnail preserves the same seller, variant, price or QC history. Verify the replacement from the beginning and retain the old route as a stale reference so the change remains auditable." },
-        { type: "p", text: "When reporting the problem to an index, include the old mapped route, expected ID, observed destination and check date. Neutral route evidence is actionable; speculation about motive is not." },
-      ] },
-      { id: "decision", title: "9. Finish with a dated, repeatable conclusion", blocks: [
-        { type: "p", text: "A complete record should let another reviewer repeat the search and reach the same classification. Include the raw URL, extracted ID, method used, result group, final listing, shop context, intended option, QC sets reviewed and unresolved fields. Use exact, same listing with unknown variant, similar, stale or rejected as controlled labels. Add the action required before purchase or shipment." },
-        { type: "p", text: "The strongest conclusion remains limited: the Weidian ID, final route and shop agreed on September 15; the chosen option was live; two historical sets suggested which measurements to request; and composition remained a seller claim. Clear limits improve a shortlist because they show what still needs current evidence." },
-        { type: "p", text: "Schedule one final recheck close to the purchase rather than relying on the first successful search. Compare the saved destination, shop, item ID, option and live price state with the record. If any identity field changes, reopen the QC relationship instead of treating the old classification as permanent. This short step matters because a valid recovery today does not prevent a listing, option or seller route from changing tomorrow." },
-      ] },
-    ],
-    sources: [official.howItWorks, official.searchMethods, official.whatIsQc, official.terms],
-    related: ["taobao-qc-finder-item-id-link-checks", "qc-finder-no-photos-dead-link-recovery", "what-qc-photos-can-prove"],
-    cta: productCta,
-  },
+  makeGuide("weidian-qc-finder-item-id-original-listing", "en", {
+  "title": "Weidian QC Finder Guide to Item IDs, Links and Photo Matches",
+  "description": "Find a Weidian item ID, check a shared product link and match QC photos to the original listing, seller and selected colour or size.",
+  "intro": [
+    "A Weidian QC search works best when you keep the original product identity beside every photo you review. Shared links can pass through spreadsheets, chats and shopping agents before reaching a finder. Save the received address and identify its destination before deciding which pictures belong to the product you want.",
+    "This guide takes you from a copied link to a dated verification record. FindQC documents product-link, keyword and image search. The practical checks below help you select an input, compare results and decide what to ask your agent when your own order reaches the warehouse."
+  ],
+  "sections": [
+    {
+      "title": "1. Save the received link and its context",
+      "paragraphs": [
+        "Copy the complete address from the spreadsheet cell or original message into a note. Record the product name used there, the date and any colour, size or version mentioned nearby. Keep the original screenshot if one exists. It can explain what the author meant even if the destination later changes. A title such as grey running shoes needs more detail before it can identify a specific purchase.",
+        "Open the shared link and save the final address displayed for the product. Retain the agent link alongside the source link when both are visible. If a page stops at a sign-in prompt, store that observation and leave the destination unconfirmed. Avoid deleting unfamiliar parameters from your only copy. Work from a duplicate so you can always return to the original evidence."
+      ]
+    },
+    {
+      "title": "2. Identify itemID with a real published example",
+      "paragraphs": [
+        "On 5 November 2026, QCRadar’s homepage displayed the example weidian.com/item.html?itemID=7617089695. In that address, weidian.com identifies the marketplace, /item.html is the product route and 7617089695 is the value of itemID. This is a verified example of a published link. Current seller stock, available sizes and the contents of any particular warehouse album require separate checks on their respective pages.",
+        "Use this structure to inspect your own address. Copy the value after itemID= until the next ampersand, if another parameter follows. Confirm the spelling and every digit. A shop identifier, parcel number or number in an image filename answers a different question. If an agent wrapper contains an encoded marketplace URL, open its visible source link where available and compare the destination with your saved address."
+      ]
+    },
+    {
+      "title": "3. Choose the search input from the evidence you have",
+      "paragraphs": [
+        "Start with the complete Weidian product URL in a QC finder that accepts it. Record the exact input before searching. If that route fails and the interface supports an item ID, try the confirmed identifier. Keep the marketplace beside the number in your notes so a later search can reconstruct where it came from. Save the result page or its URL as well as the input.",
+        "Use a distinctive product phrase when the link has disappeared, and try image search when only a screenshot survives. Include a model phrase or visible design detail rather than a long copied advertising title. Treat these results as candidates for checking. If a visually familiar product appears, open its source link and compare its ID before adding its photos to your research record."
+      ]
+    },
+    {
+      "title": "4. Check the final listing and seller together",
+      "paragraphs": [
+        "Open the source destination shown by the result and compare it with the received link. Confirm the marketplace, item ID, shop name and product type. Preserve the seller name as displayed, including the original wording when a translation is available. A stable shop link is useful context. Then inspect the primary images and variant labels for changes that might affect your order.",
+        "Keep a separate row when another shop uses the same promotional image. Its price, delivery estimate and option set belong to that listing. If the original ID now leads to a different product, write down what changed and the date observed. Before choosing a replacement, repeat the identity checks and collect its own evidence. This keeps the history understandable when you return to it weeks later."
+      ]
+    },
+    {
+      "title": "5. Match colour, size, version and included pieces",
+      "paragraphs": [
+        "A single listing may contain several colours, sizes, versions or bundles. Select the intended combination on the current page and save the exact option text. Read any size-dependent price, included accessory and availability indication beside that selection. If a translated label is ambiguous, keep the original text and ask the seller or agent to confirm which option will be ordered.",
+        "Next compare the QC record with the selected option. Look for the colour, size label, model code and included pieces that are actually visible. Suppose you want black shoes in size 42 and find a size-41 album under the same item ID. Save it as a historical example for another size and use it to choose inspection angles. Obtain size evidence for your own order before approving it."
+      ]
+    },
+    {
+      "title": "6. Review each QC album with its date and origin",
+      "paragraphs": [
+        "Keep photos from each order together with the date and source shown by the finder. A useful review can start with the whole product, then move to labels, construction details and measurements. If several sets show the same area poorly, write a targeted request for that view. Multiple copies of one photograph provide one observation, so avoid counting them as independent confirmations.",
+        "For an item already in your agent’s warehouse, establish which album belongs to your order. Compare the order reference privately and ask the agent if the association is unclear. Use the earlier albums to prepare questions, then judge the current unit from its own evidence. Preserve watermarks, ruler edges and relevant labels in your working copies so that the origin and measurement method remain visible."
+      ]
+    },
+    {
+      "title": "7. Turn observations into specific checks",
+      "paragraphs": [
+        "Write a short note for each concern. Name the area, the observation and the photo needed to resolve it. For example, ask for a square-on view of the size label, or a flat chest-width measurement with both tape endpoints visible. Match the method to an item you already own. A photographed width can guide a fit decision only when the two measurements use the same endpoints.",
+        "Keep seller descriptions and your own observations identifiable in the record. A material statement should retain its source and date. A visible loose seam can support a request for a clearer image or inspection of that seam. Ask what can be checked while the item is at the warehouse, then record the answer before choosing a next step. Missing evidence should lead to a focused question."
+      ]
+    },
+    {
+      "title": "8. Recover an unavailable link while preserving its history",
+      "paragraphs": [
+        "If the address redirects to a shop homepage or stops showing the item, retain the old URL and note the observed destination. Retry the saved item ID and seller context. Then widen the search using the product phrase or screenshot. Each replacement needs a fresh row containing its own URL, ID, shop and options. This lets you compare alternatives without overwriting the evidence behind your original choice.",
+        "When a QC finder returns no photos, first confirm the URL and input method. An empty result can leave several questions open, including whether that listing has a usable record in the service’s coverage. Record exactly what the interface shows. If you report a broken link to an index, provide the received address, expected item ID, destination you saw and check date so the maintainer can reproduce it."
+      ]
+    },
+    {
+      "title": "9. Finish with a dated decision and recheck before ordering",
+      "paragraphs": [
+        "Your final note should contain the received URL, current source URL, item ID, shop, intended option, search method, albums reviewed and unanswered question. Choose a concise description of the relationship, such as same listing and matching visible option, same listing with unknown option, similar candidate or unavailable listing. Link each conclusion to the relevant record so another reader can repeat the check.",
+        "Immediately before ordering, reopen the destination and confirm the selected option, current price and availability. After warehouse arrival, check the unit against that order record and request any missing evidence before packing. A completed research note should end with an action, such as ask for size-label photo, confirm included laces, approve after measurement or contact the agent about a mismatch. Save the date with that action."
+      ]
+    }
+  ],
+  "keywords": [
+    "Weidian item ID",
+    "Weidian QC finder",
+    "find QC photos from a Weidian link"
+  ],
+  "seoTitle": "Weidian QC Finder — Check the Item ID & Original Link",
+  "dateISO": "2026-09-15",
+  "dateModified": "2026-11-05",
+  "sources": [
+    {
+      "label": "FindQC — How FindQC Works",
+      "href": "https://findqc.com/how-findqc-works",
+      "note": "Referenced documentation and published examples, checked 5 November 2026."
+    },
+    {
+      "label": "FindQC — What is QC?",
+      "href": "https://findqc.com/what-is-qc",
+      "note": "Referenced documentation and published examples, checked 5 November 2026."
+    },
+    {
+      "label": "QCRadar — published Weidian example link",
+      "href": "https://qcradar.com/",
+      "note": "Referenced documentation and published examples, checked 5 November 2026."
+    }
+  ]
+}),
   {
     slug: "1688-qc-finder-supplier-variant-batch-checks",
     title: "1688 QC Finder: Supplier, Variant and Batch-Match Checks",
@@ -284,68 +322,100 @@ export const priorityArticles = [
     related: ["taobao-qc-finder-item-id-link-checks", "weidian-qc-finder-item-id-original-listing", "findqc-image-search-reference-photo-checks"],
     cta: productCta,
   },
-  {
-    slug: "findqc-image-search-reference-photo-checks",
-    title: "FindQC Image Search: Better Reference Photos and False-Match Checks",
-    shortTitle: "FindQC Image-Search Checks",
-    description: "Prepare stronger reference images for FindQC image search, compare candidates systematically and reject false visual matches before shortlisting.",
-    excerpt: "Image search is a discovery tool: crop deliberately, run more than one view and verify every candidate with identifiers and live listing fields.",
-    category: "Visual Search",
-    readTime: "10 min read",
-    date: "15 September 2026",
-    dateISO: "2026-09-15",
-    dateModified: "2026-09-15",
-    heroImage: "/products/tshirt.webp",
-    heroAlt: "Folded shirt used as an editorial reference for FindQC image search",
-    keywords: ["FindQC image search", "QC image search", "reverse image search", "reference photo", "false match"],
-    intro: [
-      "FindQC image search is most useful when a link or item ID is missing and the product has visually distinctive features. Its output should begin a candidate list, not end the identity check. Similar colour, silhouette or promotional photography can connect products that come from different sellers, listings, variants or manufacturing sources.",
-      "A reliable workflow improves the input image, runs complementary crops, records why each result looks related, and then switches from pixels to identifiers. The final shortlist should contain live routes that can be repeated and verified, not screenshots that merely look convincing.",
-    ],
-    sections: [
-      { id: "source", title: "1. Choose the highest-information source image", blocks: [
-        { type: "p", text: "Start with the clearest available photo of the whole product. Prefer an image with the item centered, enough resolution to preserve distinctive details, limited obstruction and no heavy filters. Keep the original file before editing. A small messaging preview, collage, screenshot with overlays or warehouse photo dominated by packaging gives the search system less useful shape and texture information." },
-        { type: "list", title: "Stronger input qualities", items: ["Whole item is visible", "Edges are not cropped accidentally", "Distinctive construction remains sharp", "Background is less dominant than the product", "No private order data is visible", "Original and edited versions are both saved"] },
-      ] },
-      { id: "crop", title: "2. Make purposeful crops instead of one aggressive crop", blocks: [
-        { type: "p", text: "Create two or three inputs: the complete item, a crop of its most distinctive structural feature and, when useful, a label or graphic. Leave a small border so shape is preserved. Avoid enlarging a blurred detail until compression artifacts resemble stitching or texture. Each crop should test a different visual hypothesis. Record which input produced each candidate because a logo crop and a silhouette crop support different kinds of resemblance." },
-        { type: "callout", title: "Crop rule", text: "Remove irrelevant interface and background, but do not remove the shape or context needed to distinguish the product." },
-      ] },
-      { id: "run", title: "3. Run image search as a discovery pass", blocks: [
-        { type: "p", text: "FindQC’s official documentation places image search beside link and keyword methods. Use it when the available evidence is primarily visual, then scan results for candidate families rather than assuming the first card is exact. Save a manageable set and note the matching cues: panel shape, print placement, hardware, sole pattern, pocket geometry or packaging. Reject candidates that conflict on a major feature even if their colour and photography are similar." },
-        { type: "table", headers: ["Visual cue", "Useful for", "Common false match"], rows: [["Silhouette", "Product family", "Generic shapes"], ["Print placement", "Variant separation", "Mirrored or reused artwork"], ["Hardware", "Construction clues", "Different finish or scale"], ["Label", "Model clue", "Copied promotional label image"]] },
-      ] },
-      { id: "second", title: "4. Use a second image to challenge the first result", blocks: [
-        { type: "p", text: "A candidate that appears under both a whole-item image and an independent detail crop deserves closer verification. A candidate that appears only for a generic colour or logo crop is weaker. Change one input variable at a time so the result is interpretable. If two views point to different product families, preserve the conflict and return to broader identity clues such as marketplace, seller, title fragments or a model number." },
-        { type: "p", text: "The aim is not to force agreement. A failed second view is evidence that the first visual match may have depended on background, styling or another generic feature." },
-      ] },
-      { id: "identity", title: "5. Move from visual similarity to listing identity", blocks: [
-        { type: "p", text: "Open each candidate and capture the marketplace, final URL, item ID, seller, title and variant. Compare those fields with any surviving source information. Only an identity agreement can promote a visual candidate to an exact listing match. If no source identifier exists, use likely visual candidate and say which fields remain unknown. Do not borrow historical QC photos, prices or reviews from one candidate to fill gaps in another." },
-        { type: "list", title: "False-match rejection gate", items: ["Marketplace conflicts with the source", "Seller or item ID differs", "Required variant does not exist", "Distinctive construction feature conflicts", "Final route is stale or unrelated", "Only a reused promotional image agrees"] },
-      ] },
-      { id: "warehouse", title: "6. Separate listing images from warehouse QC photos", blocks: [
-        { type: "p", text: "Promotional images describe an offer and are optimized for presentation. Warehouse images document one received unit under practical lighting. Image search may connect the two visually, but they remain different evidence types. A promotional render cannot prove delivered condition, while one warehouse set cannot prove every advertised material or feature. Label each image by source, date, listing identity and whether it belongs to your order, a historical same-item record or a similar reference." },
-        { type: "p", text: "When publishing a guide, caption editorial product photos clearly so readers do not mistake them for customer inspection records. Provenance is part of image quality." },
-      ] },
-      { id: "qc-use", title: "7. Use matched QC records to design the current review", blocks: [
-        { type: "p", text: "Once the exact listing relationship is established, inspect multiple historical sets for recurring views and issues. Turn patterns into a short checklist for the current unit: a measurement, a rear view, a label close-up or a packaging count. Do not average photos into a quality score or assume that silence proves no defect. Historical evidence is strongest when it changes a specific request for the current order." },
-        { type: "callout", title: "Evidence handoff", text: "Image search finds candidates; identifiers establish continuity; current warehouse photos support the shipment decision." },
-      ] },
-      { id: "privacy", title: "8. Protect privacy and source context", blocks: [
-        { type: "p", text: "Before uploading a reference photo, remove order numbers, addresses, names, tracking codes and chat details that are not necessary for matching. Keep an untouched local original if those fields matter for your private record. Do not upload another person’s private warehouse photo without permission. A public listing image is still a source asset; link to the current page where practical and avoid presenting it as your own inspection evidence." },
-        { type: "p", text: "Store the check date because results and listing availability can change. A reproducible note should identify which crop was used and which live route was verified afterward." },
-      ] },
-      { id: "decision", title: "9. End with a confidence label and next action", blocks: [
-        { type: "p", text: "Use a controlled label: exact identity verified, likely candidate, similar reference, unresolved or rejected. State the evidence behind it and the field that would change the label. Reopen exact candidates immediately before purchase. For likely or similar candidates, decide whether a current agent-side listing check and fresh warehouse photos are enough, or whether a stronger source link is required first." },
-        { type: "p", text: "This conclusion avoids a common image-search error: describing a highly ranked picture as the product. Ranking indicates visual relevance within the service, not seller identity, authenticity, stock, quality or suitability. The verified destination and current evidence remain the decision layer." },
-        { type: "p", text: "Keep a compact search sheet with the original image, crop filenames, query dates, candidate URLs and rejection reasons. Recheck only the candidates that survived the identity gate. This record prevents repeated browsing, makes a later route change visible and lets another reviewer challenge the match without recreating every search. Delete private upload copies from shared folders when they are no longer needed, while retaining a redacted research record." },
-        { type: "p", text: "Before purchase, open the candidate from the saved final URL rather than from an old screenshot. Confirm that the item ID and required variant still agree." },
-      ] },
-    ],
-    sources: [official.howItWorks, official.searchMethods, official.whatIsQc, official.terms],
-    related: ["product-search-link-id-keyword", "qc-finder-no-photos-dead-link-recovery", "what-qc-photos-can-prove"],
-    cta: productCta,
-  },
+  makeGuide("findqc-image-search-reference-photo-checks", "en", {
+  "title": "FindQC Image Search — Find a Product from a Photo and Verify the Match",
+  "description": "Find QC photos from a screenshot, compare similar products, then check the original listing, seller and selected option before buying.",
+  "intro": [
+    "A saved screenshot can be the only clue left after a product link disappears. FindQC documents image search for finding visually similar records, alongside searches using product links and keywords. Start with the picture, then use the candidate’s source details to establish which listing and option the photos describe.",
+    "This guide turns that process into a repeatable check. You will prepare two useful views, compare the results, reject a misleading look-alike and save a candidate with enough information to reopen it. The worked hoodie example below is fictional and illustrates a decision process."
+  ],
+  "sections": [
+    {
+      "title": "1. Keep a clear original and prepare a shareable copy",
+      "paragraphs": [
+        "Save the best available original before editing. Choose a view that shows the whole item, including its outline and any distinctive panels, pockets or hardware. A larger clear photograph is usually more informative than an enlarged thumbnail. Inspect the file at normal viewing size and decide which visible details you could reliably compare with another image.",
+        "Prepare a separate upload copy. Crop away shopping-app controls, prices, unrelated products and private order information. Check corners and labels for names, addresses, tracking references or chat details. Preserve the original privately if it is needed for your order record. When the photograph belongs to someone else, use an image you have permission to share."
+      ]
+    },
+    {
+      "title": "2. Prepare two views that answer different questions",
+      "paragraphs": [
+        "Make one crop around the full product with a little space around its edges. Make a second crop around a feature that distinguishes it from similar products, such as a pocket seam, heel panel or fastening arrangement. Keep enough surrounding shape to show where the detail belongs. Give the files simple names so you can connect each candidate with the view that produced it.",
+        "A logo alone may describe many products. A very tight crop can also remove a useful clue such as the position of that logo relative to a pocket. Keep proportions intact and avoid colour filters, artificial sharpening or generated details. If the source supplies a second angle, use it as a separate search input and retain the relationship between those two original views."
+      ]
+    },
+    {
+      "title": "3. Use the image results to build a short candidate list",
+      "paragraphs": [
+        "Open FindQC’s current image-search interface and upload your prepared product view. Its documentation describes visual matching and separates likely same-item groups from similar recommendations. Check the labels actually shown on the current result page. Save three or four promising candidates with their links, the search date and a brief reason for including them.",
+        "Look first at structure. Count pockets, compare panel boundaries, locate fasteners and examine the shape of a sole, collar or hem. Colours can vary with light and editing, so combine colour with stronger visible details. A card near the top deserves inspection, but its placement alone supplies no evidence about the seller, available stock or the condition of a future order."
+      ]
+    },
+    {
+      "title": "4. Challenge each candidate with the second view",
+      "paragraphs": [
+        "Repeat the search with your detail crop or second original angle. Compare the surviving candidates against both views, using the same feature list. A result that explains the front and back of the reference is a stronger lead than one supported only by a generic colour. Record any disagreement even when the main photograph looks very persuasive.",
+        "Check scale and perspective before rejecting an item. A pocket may appear wider because a garment is angled or folded. Look for another clear image from that candidate’s own listing. If the relevant area remains hidden, write “detail unresolved” beside it. Keep images from different candidates in separate records so one seller’s useful rear view never becomes evidence for another seller’s product."
+      ]
+    },
+    {
+      "title": "5. Work through a hypothetical hoodie match",
+      "paragraphs": [
+        "Imagine a saved front photo of a grey zip hoodie with two separate slanted pockets and a curved seam across the upper sleeve. Candidate A has the same colour and a similar chest graphic, but its detail photo shows one continuous pouch pocket. Candidate B shows separate slanted pockets and the curved sleeve seam. These are fictional candidates used to explain the check.",
+        "Reject A for the intended design and retain B for further investigation. Then inspect B’s selected option. If its displayed warehouse album belongs to the black version while you want grey, record that limitation and look for a grey-version record. Keep a separate note for the colour option and each available size rather than applying one album to every option on the page.",
+        "Finally suppose B’s seller and listing ID are visible, but the original screenshot contained neither. You can now identify B precisely and reopen it, while the relationship to the lost original listing remains unconfirmed. If an old message later reveals the original source, compare the platform, full item ID, seller and option. That additional evidence can confirm the relationship or require a fresh candidate."
+      ]
+    },
+    {
+      "title": "6. Verify the original listing, seller and option",
+      "paragraphs": [
+        "Open the candidate’s source route and record the marketplace, final URL, full item identifier and seller. Keep an agent link alongside the underlying marketplace link when both are available. For a Weidian item page, the itemID parameter is a useful field to compare with a saved source. Other numbers in a wrapper or an order reference can describe different things.",
+        "Compare the actual option text for colour, size, version and included pieces. Reopen the selector if the cover photograph stays the same as options change. Record the date and the fields you could inspect. When a source link stops at a sign-in screen or an unavailable page, leave its current contents unresolved and ask for a verifiable source before relying on an old title or preview."
+      ]
+    },
+    {
+      "title": "7. Connect any QC album to the item it records",
+      "paragraphs": [
+        "For each useful album, record its source, date when available, associated listing and visible option clues. A listing photograph helps describe an offer. A warehouse photograph helps inspect a received unit. Keep the order or record association with the images so you can explain which product the album supports and which details remain uncertain.",
+        "Use the historical views to plan your own warehouse check. For the hoodie example, request a full front view, a clear pocket construction view, the size label and a flat chest-width measurement with both tape endpoints visible. Compare your delivered item against the order you placed. A missing angle is a concrete follow-up request, and an unreadable measurement needs a repeat photograph."
+      ]
+    },
+    {
+      "title": "8. Change the search method when the image is insufficient",
+      "paragraphs": [
+        "If the first searches produce only generic products, try one clearer original view before changing methods. Extract a distinctive model phrase, product category or readable label from the reference and use keyword search. If a candidate supplies a reliable source link, try the documented link-search route next. Keep the earlier candidates and their rejection reasons so the process stays traceable.",
+        "Some items have limited public QC coverage. A failed image search leaves the match unresolved. You can return to the person who shared the image for the original listing, ask the seller or agent about the option, or choose a candidate with verifiable source details. Set a stopping point after these checks so repeated searches do not turn a weak resemblance into an assumed match."
+      ]
+    },
+    {
+      "title": "9. Save a short conclusion and check it again before buying",
+      "paragraphs": [
+        "Save the original reference, both upload filenames, candidate URL, marketplace, item ID, seller, selected option and checked date together. Add one sentence explaining the relationship, for example “Candidate B matches the visible pocket and sleeve construction; the lost source ID is still unknown.” Add the next action, such as obtaining the original link or requesting a measurement photograph.",
+        "Before purchasing, reopen the saved destination and check the option and live availability again. After warehouse arrival, use the current order’s photos for the shipping decision. When sharing your research, use redacted records and clear captions identifying reference images, historical QC and your own order photos. Another reader should be able to follow the same route and understand how you reached the conclusion."
+      ]
+    }
+  ],
+  "keywords": [
+    "FindQC image search",
+    "QC photo search",
+    "find product from screenshot"
+  ],
+  "seoTitle": "FindQC Image Search — Verify Photo & Screenshot Matches",
+  "dateISO": "2026-09-15",
+  "dateModified": "2026-11-05",
+  "sources": [
+    {
+      "label": "FindQC — How FindQC Works",
+      "href": "https://findqc.com/how-findqc-works",
+      "note": "Referenced documentation and published examples, checked 5 November 2026."
+    },
+    {
+      "label": "FindQC Academy — Choosing the Best Search Method",
+      "href": "https://academy.findqc.com/2024/12/21/mastering-qc-finder-choosing-the-best-search-method/",
+      "note": "Referenced documentation and published examples, checked 5 November 2026."
+    }
+  ]
+}),
   {
     slug: "qc-photos-vs-qc-videos-evidence-guide",
     title: "QC Photos vs QC Videos: What Each Format Can Actually Prove",
@@ -470,66 +540,101 @@ export const priorityArticles = [
     related: ["before-you-buy-qc-guide", "warehouse-measurement-guide", "qc-photos-vs-qc-videos-evidence-guide"],
     cta: qcCta,
   },
-  {
-    slug: "clothing-qc-photos-measurements-print-stitching",
-    title: "Clothing QC Photos: Measurements, Print Placement and Stitching",
-    shortTitle: "Clothing QC Photo Checks",
-    description: "Review clothing QC photos for identity, garment measurements, print and embroidery placement, stitching, hardware, labels and packaging.",
-    excerpt: "Lay the garment flat, define every measurement endpoint and compare visible construction without turning seller claims into tested facts.",
-    category: "Category Decision Guide",
-    readTime: "12 min read",
-    date: "15 September 2026",
-    dateISO: "2026-09-15",
-    dateModified: "2026-09-15",
-    heroImage: "/products/hoodie.webp",
-    heroAlt: "Folded hoodie used as an editorial clothing QC photo example",
-    keywords: ["clothing QC", "hoodie QC photos", "warehouse measurements", "print placement", "stitching checklist"],
-    intro: [
-      "Clothing QC photos are strongest when they answer three separate questions: did the correct garment arrive, do measured dimensions fit the intended tolerance, and are visible construction and graphics acceptable? Combining those questions into a vague impression makes it easy to miss a wrong size while debating a small loose thread.",
-      "This checklist applies to hoodies, T-shirts, jackets, trousers and similar garments, with adjustments for construction. It uses historical QC-finder records as inspection context, not as a guarantee. The current order’s warehouse evidence and the third-party service’s live remedy window control the actual decision.",
-    ],
-    sections: [
-      { id: "identity", title: "1. Confirm garment identity and selected option", blocks: [
-        { type: "p", text: "Open the exact listing, order line and warehouse record together. Check marketplace item ID, seller, product type, colour, size, version and quantity. Confirm whether an image or price corresponds to the selected variant rather than the cover option. If a listing uses colour names that are difficult to translate, save the original text and its selected thumbnail. Identity errors should be resolved before measurements or cosmetic inspection." },
-        { type: "list", title: "Identity gate", items: ["Source route and order line agree", "Garment type and colour match", "Size label matches the selected system", "Version, graphic or season option agrees", "Included belt, liner or accessory is present"] },
-      ] },
-      { id: "flat", title: "2. Ask for a flat, readable whole-garment view", blocks: [
-        { type: "p", text: "A garment should be laid naturally on a level surface with sleeves, hem and closures visible. Tight folding can hide panel shape, stains and print alignment; stretching can distort measurements. Use front and back wide views before close-ups. Compare obvious left-right relationships such as sleeve length, pocket placement and shoulder lines, while allowing for soft fabric, folds and camera perspective." },
-        { type: "callout", title: "Wide-view rule", text: "Locate the concern on a complete garment image before requesting a close-up that removes its context." },
-      ] },
-      { id: "measure", title: "3. Define every garment measurement by endpoints", blocks: [
-        { type: "p", text: "Terms such as chest, length and sleeve can be measured in different ways. Write the method: pit to pit across a flat garment, back length from a named collar seam to hem, shoulder seam to shoulder seam, or sleeve from shoulder seam to cuff. The ruler must begin and end visibly, lie on the same plane and avoid diagonal drift. Compare with a garment you already use measured by the identical method." },
-        { type: "table", headers: ["Measurement", "Useful endpoints", "Common error"], rows: [["Chest width", "Underarm seam to underarm seam", "Doubling one width inconsistently"], ["Back length", "Named collar seam to hem", "Including collar on one item"], ["Shoulder", "Seam to seam", "Following a curved path"], ["Sleeve", "Shoulder seam to cuff", "Mixing raglan and set-in methods"]] },
-      ] },
-      { id: "tolerance", title: "4. Set a fit tolerance before reading the ruler", blocks: [
-        { type: "p", text: "Use the reference garment’s actual fit to decide which dimensions are non-negotiable and how much variation is acceptable. Seller size charts are planning claims; the warehouse frame is evidence for one received garment when measured clearly. Fabric relaxation, folds and manual placement create small differences, so avoid treating a single ambiguous mark as exact. If the measured result sits near the decision boundary, request a repeat with named endpoints." },
-        { type: "p", text: "Do not convert between circumference and flat width silently. Record units and whether a value is one side, doubled body circumference or an approximate seller specification." },
-      ] },
-      { id: "print", title: "5. Check print and embroidery placement from aligned views", blocks: [
-        { type: "p", text: "Review the graphic relative to stable garment features: center line, placket, pocket, shoulder seam and hem. Look for visible skew, displacement, missing areas, lifting edges or obvious surface damage. Compare the exact selected variant rather than a similar colourway whose placement may differ. Camera rotation can create apparent skew, so use garment edges and a second view before confirming the concern." },
-        { type: "list", title: "Graphic checks", items: ["Correct artwork or embroidery version", "Broad centering and intended height", "Edges, fill and missing areas", "Alignment with pocket or closure", "No packaging fold mistaken for a print crack"] },
-      ] },
-      { id: "stitching", title: "6. Trace stitching and seam construction", blocks: [
-        { type: "p", text: "Follow visible high-stress areas: shoulder or raglan joins, underarm, side seam, pocket corners, crotch, waistband, zipper base and hem. Look for skipped sections, open seams, severe puckering or loose attachment. A few thread ends may be cosmetic; an open seam is functionally different. Describe the location and length instead of using a general quality label. Request one focused image only when the wide view is insufficient." },
-        { type: "p", text: "Warehouse photos cannot reveal every internal seam or predict wash durability. Keep hidden construction and long-term performance outside the conclusion unless a suitable source tests them." },
-      ] },
-      { id: "hardware", title: "7. Inspect closures, pockets and included parts", blocks: [
-        { type: "p", text: "Confirm that zips, buttons, snaps, drawcords, toggles, belts, liners and removable pieces shown for the selected option are present. Photos can show attachment and obvious damage. A short video may help when the decision depends on a closure moving through one visible cycle, but that does not prove durability. Count pieces in a laid-out frame and compare their colour and placement with the order." },
-        { type: "callout", title: "Function wording", text: "Describe the action shown once; do not turn one successful closure cycle into a lifetime-performance claim." },
-      ] },
-      { id: "labels", title: "8. Read labels while respecting their limits", blocks: [
-        { type: "p", text: "Ask for square, sharp images of size, model and care labels when they matter. Compare the readable text with the order and seller claim. A label can support identity and declared care information, but the photograph does not independently verify fibre content, country of origin, safety or authenticity. If characters are hidden by a fold or glare, record not readable rather than guessing from a similar historical photo." },
-        { type: "p", text: "Keep historical same-item label images separate from the current garment. They may show where to request the frame, not what your label says." },
-      ] },
-      { id: "decision", title: "9. Assemble the clothing QC decision", blocks: [
-        { type: "p", text: "Summarize identity, measurements, visible construction, graphics, hardware and packaging in separate lines. Accept when required fields are clear and within the pre-set tolerance. Investigate a missing endpoint, obscured label or ambiguous seam. Resolve a mismatch or deal-breaker through the third-party service before international dispatch and within its current terms. Save the listing, selected option, reference garment method, warehouse media and response." },
-        { type: "p", text: "A precise conclusion might state that colour, size label and graphic version matched; chest and back length fell inside the chosen tolerance; no open seam was visible in supplied views; care-label composition remained a manufacturer statement; and long-term shrinkage was not tested. This is stronger than a generic pass because the buyer knows exactly what the QC photos did and did not establish." },
-        { type: "p", text: "After delivery, measure the garment again with the same endpoints and record how it fits before and after any care cycle you choose to track. Keep that personal outcome separate from the warehouse decision, because handling and measurement conditions have changed. Over time, the paired records create a useful reference for selecting tolerances on similar garments without claiming that one result predicts every fabric, listing or production run." },
-        { type: "p", text: "When comparing mapped clothing finds, use the same columns for every candidate: exact route, selected option, stated chart, historical evidence, current measurement plan and unknowns. A card with more text is not automatically better. Eliminate products that fail a required dimension or identity check, and keep the remaining trade-offs visible until current warehouse evidence is available." },
-      ] },
-    ],
-    sources: [official.whatIsQc, official.checklist, official.howItWorks, official.terms],
-    related: ["warehouse-measurement-guide", "before-you-buy-qc-guide", "1688-qc-finder-supplier-variant-batch-checks"],
-    cta: qcCta,
-  },
+  makeGuide("clothing-qc-photos-measurements-print-stitching", "en", {
+  "title": "Clothing QC Photos: Measurements, Print Placement and Stitching",
+  "description": "Check clothing QC photos against your order with a worked measurement example, fit range, print and seam checks, labels and a clear warehouse decision.",
+  "intro": [
+    "Review clothing QC photos in a fixed order. Confirm the garment and selected option, compare readable measurements with a shirt you own, then inspect graphics, construction and included parts. A consistent process makes it easier to ask for a useful extra photograph and decide before the order’s remedy deadline.",
+    "Use this guide for T-shirts, hoodies, jackets and trousers, adapting the measuring points to the construction. Keep historical search results and your current order photos in separate records. The worked values below are illustrative teaching examples."
+  ],
+  "sections": [
+    {
+      "title": "1. Confirm the exact garment and selected option",
+      "paragraphs": [
+        "Open the original listing, order line and warehouse record together. Record the marketplace, item ID, seller, product type, colour, size, version and quantity. A listing can display several variants under one cover photograph. Match the selected thumbnail and original option wording with the order. Save difficult colour names in their original language so a later translation keeps the reference intact.",
+        "Compare the full front and back with that selected option. Check the graphic, pocket arrangement, sleeve type, intended cut and any seasonal or version detail. Count a belt, liner or other included component where applicable. Resolve a clear identity mismatch before spending time on cosmetic details, and keep the order number visible in every request."
+      ]
+    },
+    {
+      "title": "2. Get complete front and back views before close-ups",
+      "paragraphs": [
+        "Ask for the garment laid naturally on a level surface with sleeves, hem and closures visible. Fabric should be gently smoothed and relaxed. Keep a complete front view and complete back view so the position of every detail remains clear. Tight folding can hide marks or panel shape, while a tilted camera can distort the relationship between shoulders, pockets and the hem.",
+        "Locate each concern on the wide photograph before requesting a close-up. Describe a mark by its position, such as the right pocket corner, and ask for the same area under even lighting. Allow for shadows, folds and the way soft fabric settles. A second aligned view helps establish whether a stain, uneven edge or displaced graphic remains visible."
+      ]
+    },
+    {
+      "title": "3. Measure between named endpoints and check the arithmetic",
+      "paragraphs": [
+        "Use this illustrative method for comparing a T-shirt with one you already own. Lay the reference shirt flat, smooth it gently and keep the fabric relaxed. Mark the two underarm seam junctions. Place the tape straight between those points and photograph its starting and finishing marks together with the shirt. Use the same points and fabric tension for the warehouse request. UNIQLO describes body width using the underarm points, but each seller chart should still be checked for its own measurement convention.",
+        "In a hypothetical QC image, the left endpoint sits at 3 cm and the right endpoint at 58 cm. The width between the points is 58 − 3 = 55 cm. Save that subtraction beside the photograph. A second image with the tape beginning at zero is easier to review. Doubling the flat width gives an approximate garment circumference of 110 cm under this method. Keep the original 55 cm flat measurement in your notes so comparisons use the same quantity.",
+        "For body length, specify the top point precisely, for example the shoulder beside the collar down to the hem. Ask for one photograph showing both endpoints and the entire tape route. A centre-back length and a shoulder-to-hem length follow different paths. Record the method used by the seller and use that method for every later comparison."
+      ]
+    },
+    {
+      "title": "4. Choose your fit range before reading the ruler",
+      "paragraphs": [
+        "Write down the width of a shirt that fits you comfortably, measured using the same endpoints. As an illustrative personal preference, suppose that width is 55 cm and you would accept a new shirt between 54 and 56 cm. Label that interval as your chosen fit range. A seller may publish its own manufacturing tolerance, which should be recorded separately because it answers a different question about the advertised size.",
+        "If the warehouse photo appears to show 53.5 cm, first check the tape endpoints, camera angle, fabric tension and chosen size. Ask for a repeat measurement with the garment relaxed and the full tape visible. If the repeat confirms 53.5 cm, compare it with your written preference and the seller’s chart, then ask about the next size or an exchange. Decide before arranging international shipping, using the agent’s current order options and deadlines.",
+        "Take account of fabric stretch, intended cut and the layers you plan to wear. Keep chest width, shoulder width and length in separate fields. Use the measurements to decide whether more evidence is needed, and save the request and reply with the order record."
+      ]
+    },
+    {
+      "title": "5. Check print and embroidery against garment features",
+      "paragraphs": [
+        "Compare the artwork with the exact colourway and version selected in the order. Use the garment centre line, zipper, pocket edge, shoulder seam and hem as references for placement. Inspect broad centring, intended height, filled areas, lettering and edges. Save the whole-garment view beside a focused picture of a concerning area so the scale and position stay understandable.",
+        "If a print appears tilted, check whether the camera and garment are rotated. Ask for a straight view before deciding. A fold or reflection can change how an edge appears. For embroidery, inspect missing visible sections and attachment around the border. Record any confirmed lifting, gap or displaced section with its location. Durability after repeated washing requires evidence gathered over time."
+      ]
+    },
+    {
+      "title": "6. Trace seams and describe each visible concern",
+      "paragraphs": [
+        "Follow shoulder joins, underarms, side seams, pocket corners and hems. On trousers, include the crotch, waistband and inner leg. Look for open sections, skipped stitches, marked puckering and loose attachment. State the exact location and approximate extent of a concern so the agent can reproduce the inspection. A thread end and an opened seam should be recorded as separate observations.",
+        "For an unclear area, request a close-up together with its location on a wide view. Compare both sides where the construction is intended to be symmetrical. Mark hidden internal seams as pending if they matter to your decision. Record observed external condition at the time of inspection and collect later wear or wash results in a separate personal record."
+      ]
+    },
+    {
+      "title": "7. Count closures, pockets and included components",
+      "paragraphs": [
+        "Match zips, buttons, snaps, drawcords, toggles, belts, liners and removable pieces with the selected option. Ask for a laid-out picture when several components are included. Check visible attachment points and obvious damage. Confirm pockets in their intended locations and request a clearer view when a seam or fold hides the opening.",
+        "If your decision depends on a zipper or snap functioning, ask whether the warehouse offers a short video showing one full visible operation. Record the action shown and the service cost before requesting it. Keep packaging and detachable parts together while an exchange question remains open, where the agent can do so. Confirm current storage and remedy deadlines through the order service."
+      ]
+    },
+    {
+      "title": "8. Match the labels to the option and the measured garment",
+      "paragraphs": [
+        "Request a straight-on photograph of the neck or size label, a readable care-label image and a wider view showing where each label sits on the garment. Keep the order’s chosen size beside these photographs. If the order says L, the size label says XL and the measurements resemble the seller’s L row, ask the agent to confirm which variant was supplied before approving the item.",
+        "Record exactly what the label states about size, product code and fibre composition. A readable label establishes the wording attached to that garment. Further evidence is needed to assess fibre content or performance. For a product code, compare every character with the source listing, including letters, hyphens and suffixes. For washing instructions, preserve a clear image with the order record so the instructions remain available after packaging is discarded.",
+        "When the size label and measurement disagree, send a single request containing the order identifier, selected option, label photo and measured value. Ask the agent to check the seller’s sizing convention and confirm the replacement or exchange options that apply to that order."
+      ]
+    },
+    {
+      "title": "9. Send one precise request and record the decision",
+      "paragraphs": [
+        "Create a short review with separate lines for identity, measurements, graphics, seams, hardware and packaging. Give each line a status such as confirmed, question outstanding or mismatch. Attach the source listing, selected option and relevant warehouse photograph. A useful measurement request names both endpoints, asks for relaxed fabric and asks for the whole tape to remain visible. A print request names the exact edge and includes a wide view.",
+        "Once the missing evidence arrives, compare it with the requirements you wrote before the inspection. Accept a garment when your required fields are clear and acceptable. For a confirmed mismatch, ask the agent about exchange or return options under the current terms before international dispatch. Save the response and applicable deadline. Keep any additional fee and replacement shipping time in the same note.",
+        "After delivery, repeat the key measurements using the same method and record your own fit experience. If you track a care cycle, note the method and resulting measurements separately. This provides a personal reference for your next order. Keep the outcome tied to that specific garment, fabric and purchase so future comparisons retain their context."
+      ]
+    }
+  ],
+  "keywords": [
+    "clothing QC photos",
+    "how to read QC measurements",
+    "garment measurement tolerance"
+  ],
+  "seoTitle": "Clothing QC Photos — Measurements, Labels & Fit",
+  "dateISO": "2026-09-15",
+  "dateModified": "2026-11-05",
+  "sources": [
+    {
+      "label": "How FindQC Works",
+      "href": "https://findqc.com/how-findqc-works",
+      "note": "Referenced documentation and published examples, checked 5 November 2026."
+    },
+    {
+      "label": "UNIQLO product measurement guidelines",
+      "href": "https://faq-sg.uniqlo.com/articles/en_US/FAQ/Product-Measurement-Guidelines-SG",
+      "note": "Referenced documentation and published examples, checked 5 November 2026."
+    }
+  ]
+}),
 ];

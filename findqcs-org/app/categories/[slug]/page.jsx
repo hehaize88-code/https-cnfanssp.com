@@ -7,6 +7,8 @@ import { ArrowIcon, CheckIcon, ExternalIcon } from "../../../components/Icons";
 import T from "../../../components/LocalizedText";
 import { categories, products } from "../../../lib/data";
 import { localizedMetadata } from "../../../lib/seo";
+import { getLocalizedArticle } from "../../../lib/localizedArticles";
+import { BUILD_LANGUAGE } from "../../../lib/routing";
 
 export function generateStaticParams() {
   return categories.map(({ slug }) => ({ slug }));
@@ -28,6 +30,7 @@ export default async function CategoryPage({ params }) {
   if (!category) notFound();
   const matches = products.filter((product) => product.category === category.slug);
   const categoryKey = `category.${category.slug}.name`;
+  const jerseyGuide = getLocalizedArticle("football-jersey-qc-photos-name-number-fit", BUILD_LANGUAGE);
 
   return (
     <div className="shell inner-page">
@@ -48,6 +51,7 @@ export default async function CategoryPage({ params }) {
           <h2><T id="categoryDetail.quickTitle" /></h2>
           <ol>{[1, 2, 3].map((number, index) => <li key={number}><span>0{index + 1}</span><p><T id={`category.${category.slug}.prompts.${number}`} /></p><CheckIcon /></li>)}</ol>
           <Link href="/guides/qc-photo-checklist"><T id="categoryDetail.complete" /> <ArrowIcon /></Link>
+          {slug === "jersey" && <Link href={`/articles/${jerseyGuide.slug}`} data-analytics-event="article_open" data-analytics-id={jerseyGuide.slug}>{jerseyGuide.seoTitle} <ArrowIcon /></Link>}
         </aside>
       </section>
 
