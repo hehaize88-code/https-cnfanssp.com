@@ -2,15 +2,15 @@ import type { PriorityArticle } from "./priorityArticles";
 
 export const searchArticles: PriorityArticle[] = [
   {
-    slug: "no-qc-photos-found", label: "QC SEARCH TROUBLESHOOTING",
-    title: "No QC Photos Found? Check the Link, Item ID and Variant",
-    shortTitle: "No QC Photos Found",
-    metaTitle: "No QC Photos Found? Link and Item ID Checks | FindQCs",
-    description: "Troubleshoot an empty QC search: check the original Weidian, Taobao or 1688 link, preserve the item ID and separate missing evidence from a product defect.",
+    slug: "no-qc-photos-found", label: "QC SEARCH GUIDE",
+    title: "QC Photo Search Troubleshooting Guide for Product Links",
+    shortTitle: "QC Search Troubleshooting Guide",
+    metaTitle: "QC Photo Search Troubleshooting Guide | FindQCs",
+    description: "Resolve QC photo search problems with a worked Weidian jersey example, marketplace item ID checks, variant matching and a practical photo request checklist.",
     primaryKeyword: "no QC photos found",
     keywords: ["no QC photos found", "QC finder no results", "Weidian QC photos", "Taobao QC photos", "1688 product link"],
     readTime: "9 min", datePublished: "2026-10-08", dateModified: "2026-11-05",
-    intro: "An empty QC search means that this search did not return usable photographs. It does not establish that a product is defective, that the seller has no customers or that the listing is safe. Work through the link, identity and coverage checks below before deciding what evidence is still missing.",
+    intro: "Use this guide to troubleshoot QC photo searches for Weidian, Taobao and 1688 listings. Follow a worked jersey example, identify the original marketplace item ID, match the selected variant and choose a specific follow-up photo request.",
     sections: [
       { id: "quick-check", heading: "Start with a five-minute search check", paragraphs: [
         "Keep the original product URL in your notes before editing it. Open the source page, record its marketplace and item identifier, and confirm the selected color and size. Then try the clean source link in a search tool that explicitly supports that marketplace. If the result is still empty, search a short, distinctive product description. Change one thing at a time so you know whether the problem was the link format or a lack of indexed records.",
