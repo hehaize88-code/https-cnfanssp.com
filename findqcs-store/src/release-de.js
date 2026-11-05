@@ -1,9 +1,101 @@
 export default [
   {
+    "title": "GL oder RL? So beurteilst du die QC-Fotos deiner Bestellung",
+    "description": "Freigeben, nachfragen oder reklamieren? Prüfe Variante, Maße und mögliche Mängel auf Lagerfotos. Beispiele für Kleidung, Schuhe und Taschen helfen bei der Entscheidung.",
+    "summary": "Die Fotos deines Shopping-Agenten liegen vor, aber ein Schuh wirkt schief und das Größenetikett ist kaum lesbar. Ob du den Versand freigibst, hängt davon ab, welche Frage offen ist. Hier prüfst du erst die Zuordnung zur Bestellung, dann Passform und sichtbaren Zustand. Am Ende kannst du dem Lager sagen, was mit genau diesem Artikel geschehen soll.",
+    "sections": [
+      [
+        "Was GL, RL und Abwarten für deine Bestellung bedeuten",
+        "GL steht unter Käufern für „Green Light“. Damit drückst du aus, dass du den abgebildeten Artikel in diesem Zustand akzeptierst. RL („Red Light“) bedeutet, dass du einen Grund siehst, ihn vor dem Versand zu beanstanden. Manche Käufer schreiben dazwischen einfach „hold“ und warten auf ein weiteres Foto. Solche Kürzel in einem Forum erklären die Einschätzung der Person, die sie schreibt. Ob du einen Versand auslöst oder eine Rückgabe beantragst, regelst du im entsprechenden Auftrag bei deinem Agenten.\n\nSchau zuerst, woher die Bilder stammen. In einer öffentlichen QC-Galerie kann eine Jacke aus einer älteren Bestellung hervorragend aussehen. Das Foto hilft dir etwa, die Lage der Taschen zu erkennen. Über den Reißverschluss deiner eigenen Jacke gibt es keine Auskunft. Öffne die Bilder aus deiner Bestellposition und vergleiche deren Kennzeichnung mit dem Wareneingang. Hast du nur fremde Fotos vor dir, kannst du dir eine Liste für die spätere Prüfung anlegen. Eine persönliche Versandfreigabe setzt die Zuordnung zu deinem Exemplar voraus."
+      ],
+      [
+        "Geh von Bestellposition und Variante aus",
+        "Öffne den Auftrag und das Fotoalbum nebeneinander. Wenn du drei Shirts beim selben Händler bestellt hast, reicht der Name des Händlers zur Zuordnung kaum aus. Lies Artikelnummer, gewählte Farbe, Größe, Stückzahl und gegebenenfalls die Version aus der Bestellung ab. Gehe anschließend das Übersichtsbild und die Etiketten durch. Ein zweites, fast identisches Shirt auf einem Sammelfoto ist schnell verwechselt. Einzeln ausgewiesene Bestellpositionen und getrennte Fotos machen den Vergleich auch bei gleichfarbigen Artikeln nachvollziehbar.\n\nStell dir vor, du hast ein dunkelblaues Shirt in L und ein schwarzes in M bestellt. Das oberste Shirt wirkt unter der Lagerlampe schwarz, das sichtbare Etikett zeigt L. Fordere eine Aufnahme an, auf der das aufgefaltete Shirt und das zugehörige Größenetikett gemeinsam erkennbar sind. Schreib dazu die betroffene Bestellposition. Ergibt die Aufnahme Dunkelblau und L, ist die Zuordnung geklärt. Fehlt die Größenangabe ganz, bleibt genau dieser Punkt offen. Halte die Farbe aus der Bestellung und deinen Bildeindruck getrennt fest."
+      ],
+      [
+        "Prüfe die Passform an einer nachmessbaren Stelle",
+        "Ein aufgedrucktes L sagt wenig darüber aus, wie ein Oberteil bei dir sitzt. Such dir ein gut passendes Stück mit ähnlichem Schnitt und Stoff. Lege es flach hin, ohne die Seiten nach außen zu ziehen, und miss waagerecht zwischen den Ansatzpunkten der Ärmel unter den Achseln. Notiere den Wert als einfache Breite. Miss dein Lieblingsshirt beispielsweise mit 55 cm, dann brauchst du auf dem QC-Foto dieselben Endpunkte und eine lesbare Skala. Ein Maßband knapp unterhalb der Achseln kann bei einem taillierten Schnitt bereits einen anderen Wert ergeben.\n\nAuf dem Lagerfoto liest du 56 cm ab. Bei vergleichbarer Messung liegt das neue Shirt also flach gemessen 1 cm über deinem Referenzstück. Ob dir das gefällt, hängt unter anderem davon ab, wie viel Platz dein jetziges Shirt lässt. Prüfe außerdem Stoffdehnung und Schnitt anhand der verfügbaren Angaben. Verschwindet der Anfang des Maßbands in einer Falte, lässt sich der Zentimeter Unterschied aus dem Bild kaum verlässlich bestimmen. Lass dann genau die Brustbreite erneut zeigen, bevor du aus der Zahl eine Größenentscheidung ableitest."
+      ],
+      [
+        "Vergleiche die Fersen eines Schuhpaars auf gleicher Höhe",
+        "Ein Schuh steht weiter vorne, die Kamera blickt schräg von oben, und schon scheint seine Fersenkappe höher als die des anderen. Achte im ersten Bild auf die Stellung der Sohlen. Berühren beide dieselbe ebene Fläche? Liegen beide Fersen auf einer Linie? Siehst du von einem Schuh deutlich mehr Seitenfläche? Diese Hinweise helfen dir, Unterschiede durch die Aufstellung zu erkennen. Ebenfalls aufschlussreich ist ein Blick auf beide Größenetiketten, besonders wenn links und rechts unterschiedlich lang wirken.\n\nBleibt die Form für dich kaufentscheidend, bitte um eine Rückansicht mit beiden Schuhen direkt nebeneinander. Die Kamera soll mittig hinter dem Paar ungefähr auf Fersenhöhe stehen. So lassen sich Oberkanten, hintere Nähte und der Übergang zur Sohle fairer vergleichen. Verschwindet die vermeintliche Schieflage auf der geraden Aufnahme, kannst du den ersten Eindruck entsprechend korrigieren. Siehst du dieselbe Abweichung auch dort, markiere die genaue Stelle für deine Rückfrage. Bezeichnungen wie „linker Schuh im Bild“ helfen dem Lager dabei, denselben Schuh wiederzufinden."
+      ],
+      [
+        "Unterscheide eine sichtbare Spur von einem Aufnahmeeffekt",
+        "An der Ecke einer schwarzen Tasche ist neben dem Reißverschluss ein heller Strich zu sehen. Möglich sind ein abstehender Faden, eine beschädigte Kante oder ein Lichtreflex vom Metall. Schau den Verlauf an. Folgt der Strich der Kante oder läuft er quer über Material und Naht? Siehst du auf der zweiten Aufnahme aus anderem Winkel dieselbe Stelle? Zoome das Originalbild so weit, dass du die Naht noch erkennen kannst. Stark vergrößerte Bildpunkte machen aus einer unscharfen Kante schnell einen vermeintlichen Riss.\n\nBeschreibe, was auf dem Bild erkennbar ist. „Heller Strich am oberen Ende des Reißverschlusses neben dem Trageriemen“ ist genauer als „Die Tasche ist kaputt“. Bitte um ein scharfes Nahbild aus einem leicht anderen Winkel. Wenn du vor allem wissen willst, ob der Verschluss läuft, frage separat nach einer Funktionsprüfung, sofern der Agent sie anbietet. Das Foto eines geschlossenen Reißverschlusses kann die Ausrichtung der Zähne zeigen. Wie leicht sich der Schieber bewegt, erfährst du erst durch eine Prüfung am Artikel."
+      ],
+      [
+        "Fordere das Zusatzfoto an, das die Entscheidung ändern würde",
+        "Formuliere die offene Frage zuerst für dich selbst. Würdest du den Pullover bei klar lesbarer Ärmellänge freigeben? Dann bitte direkt um diese Messung. Bezweifelst du die Farbe eines Drucks, bringt dir eine weitere Aufnahme des Größenetiketts wenig. Nenne in der Nachricht die Bestellposition, die Stelle und den gewünschten Blickwinkel. Bei einer Messung gehören die beiden Endpunkte und die Einheit dazu. Achte beim Rücklauf darauf, dass auch das neue Bild wieder deiner Position zugeordnet ist.\n\nDu kannst zum Beispiel schreiben „Bitte fotografiert bei Position [Nummer] beide Jackenärmel nebeneinander, von oben und flach ausgebreitet. Ich möchte sehen, ob die Bündchen gleich hoch angesetzt sind. Bitte vorerst im Lager lassen.“ Prüfe nach dem Absenden den tatsächlichen Status im Auftrag. Falls bereits ein Paket zur Bearbeitung angemeldet ist, kläre beim Agenten, ob eine Unterbrechung noch möglich ist. Behalte eine angezeigte Frist im Blick, während du auf die Antwort wartest, und frage bei einer knappen Frist ausdrücklich nach deinen Optionen."
+      ],
+      [
+        "Halte Freigabe, Rückfrage oder Reklamation fest",
+        "Eine brauchbare Notiz enthält die Bestellposition, die bestätigte Variante, den ausschlaggebenden Befund und deine Entscheidung. Eine mögliche Notiz lautet „Hoodie L, Brustweite 56 cm, Vergleichsstück 55 cm, etwas mehr Weite erwünscht. Freigabe.“ Bei einer offenen Frage kannst du dir „Fersenfoto schräg aufgenommen, gerade Rückansicht angefragt, Entscheidung offen“ notieren. Damit weißt du bei einer späteren Antwort noch, worauf es ankam. Bewahre die ursprünglichen Bilder zusammen mit der Ergänzung auf, möglichst mit Datum oder Bezug zum Auftrag.\n\nMöchtest du reklamieren, benenne die konkrete Abweichung zur Bestellung und füge das Bild bei, auf dem sie am besten zu erkennen ist. Frage nach den verfügbaren Möglichkeiten für genau diesen Artikel sowie nach etwaigen Kosten und Fristen. War dagegen alles ausreichend geklärt, schließe die Prüfung in deinem Auftrag ab und kontrolliere, welche Bestellpositionen du tatsächlich für das Paket ausgewählt hast. So geht bei mehreren ähnlichen Artikeln nur das Exemplar weiter, für das du die Entscheidung getroffen hast."
+      ]
+    ],
+    "slug": "gl-or-rl-warehouse-qc-photos",
+    "related": [
+      "how-to-request-extra-qc-photos",
+      "qc-photo-measurements-clothing-fit",
+      "how-to-read-qc-photos"
+    ],
+    "published": "2026-11-05",
+    "modified": "2026-11-05",
+    "textOnly": true,
+    "reviewed": "Aktualisiert am 5. November 2026",
+    "readTime": "6 Min. Lesezeit"
+  },
+  {
+    "title": "Zusätzliche QC-Fotos beim Shopping-Agenten anfordern",
+    "description": "Mit kopierbaren deutschen Vorlagen für Brustweite, Einlegesohle und Taschenreißverschluss bestellst du die passende Detailaufnahme zu deiner Lagerbestellung.",
+    "summary": "Auf dem ersten Lagerfoto ist der Hoodie vollständig zu sehen, doch das Maßband verschwindet unter dem Ärmel. Eine präzise Bitte um ein einziges neues Foto kann diese Lücke schließen. Die folgenden Vorlagen helfen dir, Artikel, Aufnahmewinkel und Messpunkte so anzugeben, dass du die Antwort direkt mit deinem eigenen Kleidungsstück oder dem Angebot vergleichen kannst.",
+    "sections": [
+      [
+        "Öffne den Auftrag in der passenden Bearbeitungsphase",
+        "Suche im Konto deines Shopping-Agenten die Bestellung des betreffenden Artikels. Öffne die einzelne Position und prüfe, ob der Wareneingang bereits angezeigt wird und welche Lagerbilder vorliegen. Wenn das Paket vom Verkäufer noch unterwegs ist, kann das Lager üblicherweise erst nach Eingang den tatsächlichen Artikel vor die Kamera legen. Manche Dienste bieten bei der Bestellung ein Feld für besondere Wünsche. Ob ein Hinweis dort als beauftragte Fotoleistung zählt, kannst du der Bestätigung oder einer Rückmeldung im Auftrag entnehmen.\n\nBei einem eingelagerten Artikel findest du je nach Dienst eine Option für Detailfotos, Zusatzleistungen oder eine Nachricht an die zuständige Person. Verknüpfe die Anfrage mit der Bestellposition. Auch ein Supportformular lässt sich eindeutiger zuordnen, wenn du die Positionsnummer und die gewählte Variante nennst. Ist der Artikel bereits einem Versandpaket zugeordnet, prüfe zuerst den Bearbeitungsstand. Frage, ob das Lager noch an den Artikel herankommt und wie eine Pause bestätigt wird. Warte auf die Bestätigung, bevor du davon ausgehst, dass das Paket für die Aufnahme zurückgehalten wird."
+      ],
+      [
+        "Schreibe einen Auftrag mit Blickwinkel, Messpunkten und Einheit",
+        "Überlege, welche Information du nachher ablesen willst. „Mehr Fotos bitte“ lässt dem Fotografen die Wahl zwischen Rückseite, Etikett und einer neuen Gesamtansicht. Schreibe stattdessen den Namen der Position, das gesuchte Detail und die beste Perspektive in den ersten Satz. Brauchst du ein Maß, nenne Anfang, Ende und Einheit. Bitte um den sichtbaren Nullpunkt und um ein Bild, auf dem sich das Ende der Skala noch lesen lässt. Soll nur die Verarbeitung geprüft werden, kannst du die Skala weglassen.\n\nFür eine kurze Nachricht eignet sich diese Formulierung. „Zu [Bestellposition], [Farbe, Größe], hätte ich eine Bitte. Könnt ihr [Stelle] direkt von [Blickrichtung] fotografieren? Ich möchte [konkretes Detail] erkennen. Für das Maß bitte von [Punkt A] bis [Punkt B] in Zentimetern messen. Beide Enden sollen im Bild sein.“ Streiche alle Teile, die du für deinen Artikel entbehren kannst. Ein kurzer, eindeutiger Auftrag lässt sich leichter übersetzen und am Arbeitsplatz ausführen. Falls dein Agent nur einen Wunsch pro Aufnahme zulässt, bestelle die Ansicht, von der deine Entscheidung tatsächlich abhängt."
+      ],
+      [
+        "Vorlage für die Brustweite von Achsel zu Achsel",
+        "Eine Brustweite kannst du am eigenen Shirt vorbereiten. Lege das Kleidungsstück flach mit der Vorderseite nach oben, richte die Seitennähte aus und streiche große Falten vorsichtig glatt. Ziehe den Stoff dabei möglichst wenig. Miss von der unteren Ansatzstelle des linken Ärmels waagerecht zur entsprechenden Stelle rechts. Halte deine einfache Breite in Zentimetern fest. Dieser Ablauf eignet sich für einen Vergleich, wenn Lager und Käufer dasselbe Verfahren anwenden. Bei überschnittenen Schultern oder sehr tiefen Armausschnitten ist eine genaue Beschreibung der Endpunkte besonders wichtig.\n\n„Bitte legt den Hoodie [Position, Größe] flach hin. Messt die Breite waagerecht von der linken zur rechten Achselnaht, ohne den Stoff zu dehnen. Bitte ein Foto senkrecht von oben, mit beiden Nähten und dem Maßband in Zentimetern. Ich brauche die einfache Breite.“ Liest du 56 cm ab und dein eigener Hoodie misst 55 cm, beträgt der Unterschied bei dieser Messung 1 cm. Ein Foto, bei dem das Band bogenförmig durchhängt, kann denselben Hoodie größer erscheinen lassen. Dann genügt eine Wiederholung mit gerade geführtem Band."
+      ],
+      [
+        "Vorlage für die Länge einer herausnehmbaren Einlegesohle",
+        "Kläre, welches Maß dir beim Vergleich hilft. Die Länge der Außensohle schließt den Aufbau an Ferse und Spitze ein. Ein Wert vom Boden des Schuhs lässt sich deshalb schlecht mit der Einlegesohle deines Lieblingspaars vergleichen. Nutze als Referenz eine herausnehmbare Einlegesohle und miss sie mit derselben Methode wie das Lager. Für einen nachvollziehbaren Vergleich sollten beide Sohlen ähnlich aufgebaut sein. Eine steil hochgezogene Fersenschale kann zum Beispiel bei einer Messung entlang der gekrümmten Oberfläche einen anderen Wert ergeben als bei flacher Ausrichtung.\n\n„Bitte prüft beim Schuhpaar [Position, Größe], ob die Einlegesohle lose herausnehmbar ist. Falls ja, legt sie möglichst flach neben ein Zentimetermaß und fotografiert sie senkrecht von oben. Bitte die hinterste Fersenkante und die vorderste Spitze vollständig zeigen. Falls sie fest sitzt, bitte so lassen und kurz Bescheid geben.“ Für die Einordnung zählen auch Breite und Form des Schuhs. Falls dir bereits die Größe auf dem Schuh unklar ist, ist ein lesbares Foto des Innenetiketts häufig der einfachere erste Schritt."
+      ],
+      [
+        "Vorlage für die Ecke am Taschenreißverschluss",
+        "Eine Nahaufnahme lässt sich leichter ausführen, wenn die Person im Lager die richtige Ecke ohne Rätselraten findet. Beschreibe zuerst, wie die Tasche vor ihr liegen soll, etwa „Vorderfach zur Kamera, Henkel oben“. Verwende anschließend einen zweiten Orientierungspunkt wie den Ansatz des rechten Henkels oder das Ende des Hauptreißverschlusses. Bei einer symmetrischen Tasche kannst du im vorhandenen Bild einen Kreis um die Stelle setzen und diese Kopie zusammen mit der Nachricht schicken. Lass dabei genügend Umgebung sichtbar, damit sich die Position am echten Artikel wiederfinden lässt.\n\n„Für die Tasche [Position, Farbe] brauche ich eine weitere Aufnahme. Bitte Vorderfach zur Kamera und Henkel nach oben legen. Ich brauche ein scharfes Nahbild der oberen rechten Ecke am Ende des Hauptreißverschlusses. Bitte die Naht und ein kurzes Stück des angrenzenden Materials im selben Bild zeigen. Auf dem ersten Foto ist dort eine helle Linie.“ Ein zweiter Winkel hilft, wenn eine Metallkante Licht zurückwirft. Möchtest du zusätzlich wissen, ob sich der Reißverschluss vollständig öffnen lässt, frage ausdrücklich, ob das Lager diesen Handgriff prüfen kann."
+      ],
+      [
+        "Antworte auf ein unvollständiges Foto mit einer genauen Korrektur",
+        "Lies deine ursprüngliche Anfrage neben dem neuen Foto. Ist die Bestellposition richtig, aber am Maßband fehlt der Anfang, brauchst du weder ein neues Album noch eine erneute Erörterung der Größe. Sag, welcher Teil schon zu sehen ist und welches Detail noch fehlt. Wenn aus technischen Gründen zwei Aufnahmen nötig sind, frage möglichst nach einem Übersichtsbild mit beiden Messpunkten und einem zusätzlichen Bild von der schwer lesbaren Stelle. Zwei lose Detailaufnahmen ohne erkennbaren Zusammenhang machen die Messung später schwer überprüfbar.\n\nSo könnte deine Antwort aussehen. „Danke, die rechte Achselnaht und der Zentimeterwert sind gut sichtbar. Bitte dieselbe flache Lage beibehalten und die Kamera etwas höher halten, damit auch die linke Naht und der Nullpunkt im Bild sind.“ Hattest du zwei fast gleiche Jacken bestellt und erkennst das Exemplar auf dem neuen Bild nicht wieder, kläre erst die Zuordnung. Frage dazu im Auftrag nach der Position oder einer gemeinsamen Aufnahme von Artikel und zugehörigem Etikett. Erst danach lohnt sich eine weitere Detailmessung."
+      ],
+      [
+        "Entscheide anhand der Antwort und sichere die Konditionen",
+        "Vergleiche das Ergebnis mit deinem vorher notierten Maß oder deiner konkreten Frage. Ist die Spur neben dem Reißverschluss nur bei einem Aufnahmewinkel zu sehen, kann ein Reflex plausibel sein. Zeigt das neue Nahbild dagegen eine offene Naht, hast du einen benennbaren Grund für eine Rückfrage zum Umtausch. Halte Messwert, Bild und Entscheidung in derselben Bestellposition oder in deinen eigenen Notizen fest. Bei mehreren ähnlichen Artikeln lohnt sich das besonders, weil Bilddateien und Farben auf dem Telefon schnell durcheinandergeraten.\n\nPrüfe vor der Buchung einer weiteren Aufnahme, welchen Preis dein Agent für den konkreten Auftrag anzeigt und bis wann du über die Bestellung entscheiden musst. Wenn eine zusätzliche Prüfung Zeit kostet, erkundige dich, ob eine laufende Rückgabe- oder Bearbeitungsfrist dadurch beeinflusst wird. Sichere eine Nachricht oder Bestätigung, wenn die Antwort für deine Entscheidung wichtig ist. Anschließend kannst du den Versand freigeben, die Position weiter im Lager lassen oder das angebotene Reklamationsverfahren nutzen. Prüfe zum Schluss den Status im Konto, damit die gewählte Aktion bei der richtigen Position angekommen ist."
+      ]
+    ],
+    "slug": "how-to-request-extra-qc-photos",
+    "related": [
+      "gl-or-rl-warehouse-qc-photos",
+      "qc-finder-not-working-missing-photos",
+      "shoe-qc-photo-checklist-shape-stitching-labels-measurements"
+    ],
+    "published": "2026-11-05",
+    "modified": "2026-11-05",
+    "textOnly": true,
+    "reviewed": "Aktualisiert am 5. November 2026",
+    "readTime": "6 Min. Lesezeit"
+  },
+  {
     "slug": "qc-finder-not-working-missing-photos",
-    "title": "QC Finder ohne Ergebnis: Fehlende Fotos und falsche Zuordnungen",
-    "description": "Leere QC-Ergebnisse, fehlerhafte Produktlinks und falsche Fotozuordnungen anhand von Artikel-ID und Variante systematisch prüfen.",
-    "summary": "Ein fehlendes Foto bedeutet eine Beleglücke und erlaubt noch kein Urteil über das Produkt. Prüfe zuerst, ob die Seite nicht lädt, die Suche keine Datensätze findet oder die gefundenen Datensätze zu einer anderen Variante gehören. Bewahre die ursprüngliche Produkt-URL und die Artikel-ID gemeinsam auf, dokumentiere deine Versuche und fordere aktuelle Lagerfotos an, wenn die Suche die Kaufentscheidung nicht klärt. Dieser unabhängige Leitfaden beschreibt die Fehlersuche; das Suchfeld dieser Website öffnet den Produktkatalog.",
+    "title": "Keine QC-Fotos gefunden? So prüfst du Link und Variante",
+    "description": "Leeres Album, defektes Bild oder falsche Größe? Grenze die Ursache ein und finde heraus, wann sich ein neues Lagerfoto lohnt.",
+    "summary": "Öffnet sich der Artikel mit leerem Album, prüfe zuerst den ursprünglichen Produktlink und seine ID. Zeigt das Album nur eine andere Farbe oder Größe, verwende es als Vergleich. Sobald dein Artikel im Lager ist, kannst du gezielt die fehlende Ansicht anfordern.",
     "sections": [
       [
         "Drei Fehlerarten unterscheiden",
@@ -19,7 +111,7 @@ export default [
       ],
       [
         "Suchergebnisse und Alternativen auseinanderhalten",
-        "Versuchen Sie es einmal mit dem korrigierten direkten Link und vergleichen Sie dann die zurückgegebene Artikelidentität. Wenn der direkte Link keine Datensätze hat, verwenden Sie eine unverwechselbare Produktbeschreibung oder ein Bild, um Kandidaten zu finden, während Sie den ursprünglichen Link in Ihren Notizen behalten. Ein Ergebnis, das durch eine andere Abfrage erreicht wird, bleibt ein Kandidat, bis Verkäufer, Artikel-ID und Option zustimmen. Vermeiden Sie es, ein breites Bild-Matching-Ergebnis in den Beweis zu verwandeln, dass eine bestimmte Produktseite QC-Abdeckung hat. Wenn eine Schnittstelle Größen-, Farb- oder Datumsfilter bietet, ändern Sie einen Filter nach dem anderen und notieren Sie den Effekt. Wenn Sie einen Filter löschen, werden möglicherweise Datensätze für andere Optionen angezeigt. Es schafft keine Beweise für die Option, die Sie wollen. Bewahren Sie diese Aufzeichnungen in der Vergleichstabelle getrennt auf."
+        "Versuchen Sie es einmal mit dem korrigierten direkten Link und vergleichen Sie dann die zurückgegebene Artikelidentität. Wenn der direkte Link keine Datensätze hat, verwenden Sie eine unverwechselbare Produktbeschreibung oder ein Bild, um Kandidaten zu finden, während Sie den ursprünglichen Link in Ihren Notizen behalten. Ein Ergebnis, das durch eine andere Abfrage erreicht wird, bleibt ein Kandidat, bis Verkäufer, Artikel-ID und Option zustimmen. Vermeiden Sie es, ein breites Bild-Matching-Ergebnis in den Beweis zu verwandeln, dass eine bestimmte Produktseite QC-Abdeckung hat. Wenn eine Schnittstelle Größen-, Farb- oder Datumsfilter bietet, ändern Sie einen Filter nach dem anderen und notieren Sie den Effekt. Wenn Sie einen Filter löschen, werden möglicherweise Datensätze für andere Optionen angezeigt. Es schafft keine Beweise für die Option, die Sie wollen. Bewahren Sie diese Aufzeichnungen in der Vergleichstabelle getrennt auf.\n\nErscheint der schwarze Hoodie, sobald du den Größenfilter entfernst, funktionieren Suche und Album. Wähle wieder den blauen Hoodie in L, den du kaufen möchtest. Fehlen die Bilder nur bei dieser Auswahl, weißt du, für welche Variante du beim Lager nachfragen musst."
       ],
       [
         "Fehlende Bilder und leere Ergebnisse unterscheiden",
@@ -44,14 +136,44 @@ export default [
     ],
     "related": [
       "use-qc-finder-taobao-weidian-1688-links",
-      "findqc-image-search-verify-matches",
-      "qc-photo-measurements-clothing-fit"
+      "how-to-request-extra-qc-photos",
+      "findqc-image-search-verify-matches"
     ],
     "published": "2026-10-08",
-    "modified": "2026-10-08",
+    "modified": "2026-11-05",
     "textOnly": true,
     "readTime": "7 Min. Lesezeit",
-    "reviewed": "Aktualisiert am 8. Oktober 2026"
+    "reviewed": "Aktualisiert am 5. November 2026",
+    "checkTable": {
+      "caption": "Was erscheint beim Öffnen des Links?",
+      "columns": [
+        "Anzeige",
+        "Erste Prüfung",
+        "Nächster Schritt"
+      ],
+      "rows": [
+        [
+          "Shopseite statt Artikel",
+          "Vergleiche Händler und Nummer im gespeicherten Angebot.",
+          "Kopiere den Link zum einzelnen Artikel und versuche es erneut."
+        ],
+        [
+          "Richtiger Artikel, leeres Album",
+          "Kontrolliere die Artikel-ID und entferne probeweise einen Variantenfilter.",
+          "Bleibt das Album leer, notiere die fehlende Aufnahme. Frage bei Ankunft nach Fotos deiner Bestellung."
+        ],
+        [
+          "Album mit einer anderen Größe",
+          "Vergleiche Größenetikett und bestellte Variante.",
+          "Nutze das Album für sichtbare Details. Fordere Etikett und Maße deiner Größe an."
+        ],
+        [
+          "Vorschaubild sichtbar, Großansicht fehlt",
+          "Öffne ein anderes Bild desselben Albums und lade das betroffene einmal neu.",
+          "Melde den Datensatz und das Bild. Warte mit der Freigabe, wenn die Ansicht entscheidend ist."
+        ]
+      ]
+    }
   },
   {
     "slug": "findqc-image-search-verify-matches",
@@ -217,12 +339,12 @@ export default [
   },
   {
     "slug": "use-qc-finder-taobao-weidian-1688-links",
-    "title": "QC Finder: Taobao-, Weidian- und 1688-Links prüfen",
-    "description": "Finden Sie relevante QC-Fotos aus einem Original-Produktlink, überprüfen Sie die Marktplatz-Artikel-ID und halten Sie ähnliche Ergebnisse von genauen Übereinstimmungen getrennt.",
+    "title": "QC-Fotos mit Links von Weidian, Taobao oder 1688 finden",
+    "description": "So liest du die Artikel-ID bei Weidian, Taobao und 1688 aus und prüfst, ob das Lagerfoto deine gewählte Größe und Farbe zeigt.",
     "readTime": "8 Min. Lesezeit",
-    "reviewed": "Aktualisiert am 8. Oktober 2026",
+    "reviewed": "Aktualisiert am 5. November 2026",
     "published": "2026-09-17",
-    "modified": "2026-10-08",
+    "modified": "2026-11-05",
     "sections": [
       [
         "Direkte Produktseite zuerst",
@@ -230,7 +352,7 @@ export default [
       ],
       [
         "Artikel-ID beim Bereinigen erhalten",
-        "Marketplace-Links enthalten häufig Kampagnenparameter, Empfehlungscodes und mobile Wrapper. Die abnehmbaren Teile sind nicht identisch mit der Artikelkennung. Bevor Sie eine URL verkürzen, vergleichen Sie die Seite vor und nach der Bereinigung und stellen Sie sicher, dass Artikel, Verkäufer und Optionen gleich bleiben. Speichern Sie sowohl die saubere URL als auch die numerische ID in Ihrer Forschungsnotiz. Wenn ein Finder den vollständigen Link nicht erkennt, versuchen Sie als nächstes die Item-ID. Gehen Sie niemals davon aus, dass zwei ähnliche Nummern zum gleichen Marktplatz oder Datensatztyp gehören. Eine Auftrags-ID, Lager-ID und Produkt-ID können gleich aussehen, während völlig unterschiedliche Objekte identifiziert werden."
+        "Marketplace-Links enthalten häufig Kampagnenparameter, Empfehlungscodes und mobile Wrapper. Die abnehmbaren Teile sind nicht identisch mit der Artikelkennung. Bevor Sie eine URL verkürzen, vergleichen Sie die Seite vor und nach der Bereinigung und stellen Sie sicher, dass Artikel, Verkäufer und Optionen gleich bleiben. Speichern Sie sowohl die saubere URL als auch die numerische ID in Ihrer Forschungsnotiz. Wenn ein Finder den vollständigen Link nicht erkennt, versuchen Sie als nächstes die Item-ID. Gehen Sie niemals davon aus, dass zwei ähnliche Nummern zum gleichen Marktplatz oder Datensatztyp gehören. Eine Auftrags-ID, Lager-ID und Produkt-ID können gleich aussehen, während völlig unterschiedliche Objekte identifiziert werden.\n\nEin geteilter Agentenlink kann sowohl eine Katalognummer als auch eine eingebettete Marktplatzadresse enthalten. Öffne die Produktseite im Browser und folge dort dem Link zur Quelle. Behalte bei Taobao das Feld id, auch wenn du zusätzlich eine skuId siehst. Die erste Nummer bezeichnet das Angebot, die zweite kann bei der Zuordnung einer Variante helfen. Prüfe bei 1688, was eine Verkaufseinheit umfasst. Ein einzelnes Stück und ein ganzes Farbset können dieselbe Angebotsnummer haben. Notiere die genaue Bezeichnung der ausgewählten Option und vergleiche sie mit dem sichtbaren Etikett oder Packzettel."
       ],
       [
         "Angebot vor Bildqualität abgleichen",
@@ -238,7 +360,7 @@ export default [
       ],
       [
         "Historische Datensätze trennen",
-        "QC-Finder-Ergebnisse stellen in der Regel frühere Lageraufzeichnungen dar. Sie können erkennen, welche Winkel häufig fotografiert werden, wie die Verpackung aussieht und ob sich die sichtbaren Details in den einzelnen Aufzeichnungen unterscheiden. Sie können nicht garantieren, dass der Verkäufer immer noch die gleiche Charge, Materialien oder Optionsmapping verwendet. Vergleichen Sie mehrere Datensätze, wenn verfügbar und notieren Sie wiederkehrende Muster, aber treffen Sie die endgültige Entscheidung von der aktuellen Produktseite und den Fotos Ihrer eigenen Einheit. Datum jeder gespeicherten Aufzeichnung. Eine seite, die vor monaten aufgenommen wurde, kann immer noch ein nützlicher kontext sein, aber ihr alter sollte neben jeder aus ihr gezogenen schlussfolgerung sichtbar bleiben."
+        "QC-Finder-Ergebnisse stellen in der Regel frühere Lageraufzeichnungen dar. Sie können erkennen, welche Winkel häufig fotografiert werden, wie die Verpackung aussieht und ob sich die sichtbaren Details in den einzelnen Aufzeichnungen unterscheiden. Sie können nicht garantieren, dass der Verkäufer immer noch die gleiche Charge, Materialien oder Optionsmapping verwendet. Vergleichen Sie mehrere Datensätze, wenn verfügbar und notieren Sie wiederkehrende Muster, aber treffen Sie die endgültige Entscheidung von der aktuellen Produktseite und den Fotos Ihrer eigenen Einheit. Datum jeder gespeicherten Aufzeichnung. Eine seite, die vor monaten aufgenommen wurde, kann immer noch ein nützlicher kontext sein, aber ihr alter sollte neben jeder aus ihr gezogenen schlussfolgerung sichtbar bleiben.\n\nEin Beispiel für einen geänderten Link: Du hast eine Jacke mit abnehmbarer Kapuze gespeichert. Heute öffnet der Link eine ähnliche Jacke im selben Shop, aber die Artikelnummer hat sich geändert. Auf dem alten Foto erkennst du Druckknöpfe am Kragen. Das beantwortet die Frage für die damalige Jacke. Bei der aktuellen Jacke prüfst du die Variantenbeschreibung und die passenden aktuellen Bilder. Notiere die beiden Nummern getrennt. Möchtest du den Händler nach der Kapuze fragen, nenne die heutige Artikelnummer und bitte um eine Aufnahme der Befestigung an genau dieser Jacke."
       ],
       [
         "Feste Prüfreihenfolge nutzen",
@@ -249,17 +371,42 @@ export default [
         "Bewahren Sie eine kompakte Notiz auf, die den ursprünglichen Link, den bereinigten Link, die Artikel-ID, die Zieloption, das überprüfte Datum und die verwendeten QC-Datensätze enthält. Fügen Sie einen Satz hinzu, in dem erklärt wird, ob jeder Datensatz genau, wahrscheinlich derselbe Gegenstand oder nur visuell ähnlich ist. Dies ermöglicht es, die Suche nach Änderungen einer Produktseite zu wiederholen und verhindert, dass Sie Beweise zwischen Tabs mischen. Screenshots können den Kontext bewahren, behalten aber auch den Quelllink bei, da eine Ernte den Verkäufer, die ausgewählte Option oder das Datum verbergen kann. Das Ziel ist kein großes Archiv; es ist ein nachvollziehbarer Pfad von der beabsichtigten Produktseite zu jedem Vergleichsbild. Wenn mehrere historische aufzeichnungen verfügbar sind, ordnen sie sie nach aufnahmedatum und option statt visueller anziehungskraft an. Dies zeigt, ob scheinbare Variation zu Zeit, Größe, Farbe oder Fotografie gehört. Verwenden Sie eine kurze Beobachtung für jeden Unterschied und vermeiden Sie es, die Anzahl der Datensätze in einen Qualitätsfaktor umzuwandeln. Zehn lose übereinstimmende Bilder können schwächere Beweise sein als zwei genaue, datierte Aufzeichnungen. Wenn eine aktuelle Option keine genauen historischen Fotos hat, sagen Sie dies direkt und verwenden Sie ähnliche Aufzeichnungen nur, um zu planen, welche Winkel und Messungen für die eigene Einheit des Käufers angefordert werden sollten."
       ],
       [
-        "Am Live-Angebot abschließen",
-        "Kehren Sie zur aktuellen Produktseite zurück, bevor Sie Maßnahmen ergreifen. Überprüfen Sie erneut die Verfügbarkeit, die ausgewählte Option, den Preis, die enthaltenen Teile und alle Routen- oder Zielbeschränkungen, die von dem Dienst angezeigt werden, den Sie verwenden möchten. Wenn sich die Produktseite geändert hat, behandeln Sie ältere QC-Beweise als historisch und nicht als aktuell. Wenn die Identität unsicher ist, suchen Sie erneut mit dem direkten Link oder der ID und fordern Sie ein fehlendes Foto an, nachdem der Artikel im Lagerhaus angekommen ist. Ein QC-Finder reduziert die Forschungsreibung; er überprüft nicht die Authentizität, die versteckte Konstruktion, die Verkäuferleistung, die Zollbehandlung oder die Lieferbedingung. Vor der endgültigen Aktion müssen separate Anforderungen, Präferenzen und Unbekannte vorliegen. Eine falsche Größe oder fehlende Komponente kann ein Muss verfehlen, während eine kleine Verpackungsmarke nur eine Präferenz sein kann. Unbekannt sollte sichtbar bleiben, bis eine gezielte Überprüfung es löst oder der Käufer das Risiko akzeptiert. Diese Struktur verhindert, dass attraktive QC-Fotos den ursprünglichen Kaufstandard ändern. Speichern Sie den letzten Satz mit der Produktseite und dem Datum, damit ein anderer Rezensent verstehen kann, welche Beweise wichtig sind, welches Risiko bestehen geblieben ist und warum die Entscheidung zu diesem Zeitpunkt angemessen war. Eine praktische Link-First-Überprüfung kann als kontrollierte Sequenz zusammengefasst werden. Erfassen Sie die Live-Quelle, normalisieren Sie sie, ohne das Element zu ändern, suchen Sie mit Link und ID, bewerten Sie jedes Ergebnis, vergleichen Sie datierte Datensätze und inspizieren Sie dann die aktuelle Einheit. Bewahren Sie bei jedem Transfer das Feld auf, das die Identität nach vorne trägt. Wenn der Link durch ein Keyword ersetzt wird oder die Option aus der Notiz verschwindet, wird die Kette schwächer und das Ergebnis muss herabgestuft werden. Diese Regel gilt gleichermaßen für Taobao, Weidian und 1688, obwohl sich ihre Seitenstrukturen und Identifikatoren unterscheiden. Erzwingen Sie nicht die Nummer eines Marktplatzes in das Suchfeld eines anderen Marktplatzes. Behalten Sie den Quelltyp explizit. Wenn ein Ergebnis nur visuell ähnlich ist, kann es immer noch helfen, eine Foto-Checkliste zu erstellen, aber es sollte keine Ansprüche über den Verkäufer oder die Option unterstützen. Vor dem Versand öffnen Sie die Live-Seite erneut und vergleichen Sie den aktuellen Optionstext mit dem Lagerlagerdatensatz. Speichern Sie geänderte Preise oder Verfügbarkeiten als Kontext, nicht als Qualitätsnachweis. Die fertige Notiz sollte es einer anderen Person ermöglichen, die Suche zu reproduzieren, die gleiche Quelle zu identifizieren, zu sehen, was abgeglichen wurde und zu verstehen, warum die verbleibende Unsicherheit akzeptiert oder gelöst wurde. Eine praktische abschließende Überprüfung besteht darin, das Produkt aus Ihrer gespeicherten Vergleichszeile erneut zu öffnen und die Marktplatz-ID mit dem zurückgegebenen Datensatz zu vergleichen. Wenn der Quelllink intakt ist, aber kein QC-Datensatz angezeigt wird, verwenden Sie die Fehlerbehebungsanleitung für fehlende Fotos. Wenn nur visuell verwandte Produkte erscheinen, verwenden Sie die Methode zur Überprüfung der Bildsuche, bevor Sie diese Datensätze dem Element zuordnen. Behalten Sie die ausgewählte Option und das Suchdatum neben dem Link. Das Suchfeld auf dieser Website öffnet den Produktkatalog; historische QC-Forschung und Katalogverfügbarkeit sind unterschiedliche Prüfungen. Beenden Sie, indem Sie eine verifizierte Quelladresse und eine klare nächste Aktion anstelle einer Sammlung nicht verwandter Miniaturansichten speichern."
+        "Zwei Nummern am Beispiel eines Sneaker-Angebots",
+        "Die flachen Sneaker in unserem Katalog tragen zwei Nummern. 4276 öffnet die Katalogseite. Auf der Karte steht als Artikelnummer der Quelle 7645681448. Prüfe beim Anbieter den Marktplatz und kopiere den Produktlink, bevor du nach Lagerfotos suchst. Mit 4276 im Feld für die Artikel-ID würdest du nach einem anderen Datensatz suchen.\n\nAngenommen, das Album zeigt ein weißes Paar in EU 42, du möchtest aber das graue in EU 43. Selbst bei identischem Händler und Produktlink gehören das Etikett und die Farbe auf den Bildern zum weißen Paar. Nutze die Aufnahmen, um die benötigten Ansichten zu bestimmen. Prüfe beim Eingang deines eigenen Paars beide Schuhe, Farbe und Größenetikett."
       ]
     ],
     "textOnly": true,
     "related": [
       "qc-finder-not-working-missing-photos",
-      "findqc-image-search-verify-matches",
-      "qc-photo-matching-exact-item-color-size-batch"
+      "qc-photo-matching-exact-item-color-size-batch",
+      "gl-or-rl-warehouse-qc-photos"
     ],
-    "summary": "Finden Sie relevante QC-Fotos aus einem Original-Produktlink, überprüfen Sie die Marktplatz-Artikel-ID und halten Sie ähnliche Ergebnisse von genauen Übereinstimmungen getrennt."
+    "summary": "Öffne das ursprüngliche Angebot, kopiere die Artikelnummer und notiere die Variante. Suche mit diesem Link in einem QC-Finder, der den Marktplatz unterstützt. Vergleiche dann Händler, Größe und Farbe mit dem Album. Die Suche auf dieser Website öffnet den Produktkatalog.",
+    "checkTable": {
+      "caption": "Welche Nummer gehört zum Produkt?",
+      "columns": [
+        "Marktplatz",
+        "Beispiel für den Linkaufbau",
+        "Was du brauchst"
+      ],
+      "rows": [
+        [
+          "Weidian",
+          "weidian.com/item.html?itemID=…",
+          "Die Ziffern hinter itemID=. Führt ein geteilter Link zum Shop, öffne den einzelnen Artikel."
+        ],
+        [
+          "Taobao",
+          "item.taobao.com/item.htm?id=…",
+          "Die Ziffern hinter id=. Größe und gegebenenfalls skuId gesondert festhalten."
+        ],
+        [
+          "1688",
+          "detail.1688.com/offer/….html",
+          "Die Angebotsnummer zwischen /offer/ und .html. Farbe, Packungsgröße und Verkaufseinheit dazuschreiben."
+        ]
+      ]
+    }
   },
   {
     "slug": "qc-photo-matching-exact-item-color-size-batch",

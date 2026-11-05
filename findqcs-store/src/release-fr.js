@@ -1,9 +1,101 @@
 export default [
   {
+    "title": "GL ou RL ? Comment décider à partir des photos QC de l’entrepôt",
+    "description": "Apprenez à lire les photos QC de votre commande, à comparer une mesure à plat et à choisir entre validation, photo supplémentaire et demande d’échange.",
+    "summary": "GL veut dire que vous acceptez l’article photographié. RL indique que vous souhaitez signaler un problème avant son expédition. Entre les deux, vous pouvez suspendre votre décision le temps de vérifier un détail précis. Commencez par retrouver la bonne ligne de commande, puis comparez ce que montre la photo avec ce que vous aviez choisi. Une mesure prise au bon endroit vous en apprendra souvent davantage qu’une série de gros plans.",
+    "sections": [
+      [
+        "À quelle commande donnez-vous le feu vert ?",
+        "Dans les discussions entre acheteurs, GL vient de « green light », le feu vert. RL vient de « red light », le feu rouge. Ces deux expressions résument l’avis de la personne qui regarde les photos. Pour agir sur votre commande, ouvrez le dossier de l’article chez votre agent d’achat et regardez quelles opérations y sont proposées. Un commentaire « GL » sous une photo publique exprime seulement l’avis de son auteur. Il ne donne aucune instruction à votre entrepôt.\n\nUne galerie associée à une fiche produit peut vous aider à repérer un détail à demander, par exemple l’étiquette intérieure d’un manteau. Pour accepter le vôtre, prenez comme point de départ les clichés rattachés à votre exemplaire. Deux personnes peuvent acheter sur la même fiche, choisir deux couleurs et recevoir deux articles différents. Si vous disposez seulement d’anciennes photos, notez ce que vous voulez contrôler à la réception. Réservez votre décision jusqu’au moment où vous pourrez examiner votre propre commande."
+      ],
+      [
+        "Vérifier la variante avant de chercher les défauts",
+        "Revenez à la confirmation de commande. Relevez le nom court de l’article, sa couleur, sa taille, la quantité et, si elle figure dans le dossier, la référence du modèle. Sur une fiche qui réunit une veste avec capuche et une version sans capuche, le numéro de la fiche est commun aux deux. La présence de la capuche sur la photo de face compte donc davantage pour cette vérification que la ressemblance du tissu avec la première image du vendeur.\n\nSupposons que vous ayez acheté deux pulls noirs, l’un en M pour vous, l’autre en L pour un proche. Deux photos de face soigneusement prises donneront peu d’indices pour les distinguer. Ouvrez chaque ligne séparément et associez-y une vue de son étiquette. Si seul le sachet porte une taille, demandez une photo de l’étiquette cousue. Vous pourrez alors signaler une différence de taille sans attribuer par erreur à l’un des pulls la photo de l’autre. Gardez la confirmation d’origine si le vendeur modifie ensuite sa fiche."
+      ],
+      [
+        "Pour un vêtement, comparer deux mesures prises de la même façon",
+        "Prenez un vêtement de coupe comparable qui vous va déjà. Posez-le à plat, sans l’étirer, et mesurez sa largeur de poitrine d’une couture d’aisselle à l’autre. Imaginons que votre sweat mesure 55 cm et que vous aimiez porter un tee-shirt en dessous. Sur le cliché de l’entrepôt, vérifiez le départ du mètre, son trajet horizontal et le point d’arrivée. Si les coutures sont bien visibles et si vous lisez 56 cm, le nouveau sweat présente un centimètre de plus en largeur à plat.\n\nCe centimètre vous renseigne sur l’aisance au niveau de la poitrine. Les épaules, les manches et l’épaisseur du tissu peuvent encore changer la façon dont le vêtement tombe. Demandez la mesure qui correspond à votre hésitation réelle. Si la manche de votre sweat de référence vous couvre déjà la main, la longueur de manche sera plus utile qu’un second gros plan de la poitrine. Et si le mètre disparaît sous un pli avant la dernière graduation, suspendez la comparaison. Une nouvelle vue du trait d’arrivée vous permettra peut-être de départager deux tailles."
+      ],
+      [
+        "Pour des chaussures, remettre les deux talons dans le même axe",
+        "Vu de dessus, un talon paraît parfois plus haut ou plus large que son voisin. Observez d’abord la position des chaussures sur la table. Si la chaussure droite est tournée vers l’appareil et légèrement avancée, son contrefort occupe davantage de place dans l’image. Suivre son contour sur l’écran ne suffit pas à mesurer l’écart. Regardez également si du papier de maintien dépasse d’un côté ou si un lacet tire la tige vers l’intérieur.\n\nPour départager l’effet de perspective et une vraie différence, demandez que les deux semelles reposent sur une surface plane, talons alignés sur la même ligne, pointes dirigées vers le fond. Une photo prise de face par rapport aux talons, l’objectif à leur hauteur, donne un repère commun. Comparez ensuite les mêmes points, par exemple la jonction entre semelle et tige puis le haut du col. Si l’écart disparaît, vous pouvez lever cette réserve. S’il persiste et vous gêne, joignez cette nouvelle vue à votre demande en nommant précisément le côté concerné."
+      ],
+      [
+        "Un pli, un reflet ou un défaut ? Le cas de la fermeture d’un sac",
+        "Sur la photo de face d’un sac souple, la fermeture éclair semble parfois onduler et un point blanc peut apparaître près du curseur. Agrandir la photo grossit aussi ses pixels. Avant d’en conclure qu’une dent manque, regardez où le tissu se replie, si la doublure dépasse et où se trouve la source lumineuse. Le métal renvoie la lumière, tandis qu’un sac vide posé de travers peut déformer visuellement toute la ligne de fermeture.\n\nSi la fermeture est importante pour vous, demandez une vue de dessus, sac posé sans torsion, puis un gros plan du même endroit avec le curseur légèrement déplacé, si l’équipe peut le manipuler sans forcer. Une brillance qui suit le curseur évoque un reflet. Une ouverture qui reste au même endroit derrière le curseur fermé justifie une vérification du fonctionnement. Le mot « défaut » seul laisse plusieurs interprétations. « Après fermeture, il reste un jour près de l’angle gauche » permet à la personne qui tient le sac de reproduire exactement votre observation."
+      ],
+      [
+        "Demander l’image qui départagera deux explications",
+        "Avant d’écrire, terminez cette phrase pour vous-même : « Je donnerai mon accord si je peux vérifier que… » Si la suite est « la tache se trouve sur le sachet », une photo sans le sachet répondra à la question. Si la suite est « la manche est assez longue », précisez l’endroit où commence la mesure sur votre vêtement de référence. Vous éviterez de recevoir une autre image nette et bien éclairée qui laisse pourtant tout le doute intact.\n\nVous pouvez envoyer ce message pour un tee-shirt : « Sur la photo de face, je vois une marque près de l’épaule droite de la personne qui porterait le tee-shirt. Pourriez-vous photographier cette zone hors du sachet, vêtement posé à plat, avec la couture de l’épaule dans le cadre ? Merci de le conserver en attendant ma réponse. » Le repère de couture permet de retrouver l’endroit même si le vêtement est retourné ou si l’éclairage change. Vérifiez le prix éventuel et le temps disponible pour répondre dans votre propre dossier avant de commander la photo."
+      ],
+      [
+        "Consigner la décision avant de préparer le colis",
+        "Pour un GL, notez brièvement ce qui vous a convaincu. « Pull M anthracite, étiquette M lisible, poitrine 56 cm à plat, mesure compatible avec mon sweat de 55 cm » est plus parlant que « vu et validé ». Enregistrez la photo avec la référence de l’article. Lorsque vous retrouverez plusieurs pulls dans la préparation du colis, vous saurez lequel vous avez accepté et sur quelle base.\n\nSi vous hésitez encore, laissez l’article en attente et consignez la pièce qui manque, par exemple « deuxième talon caché, vue arrière demandée ». Consultez le statut et les échéances affichés pour cet article. Pour un RL, décrivez l’écart constaté, joignez le cliché correspondant et demandez les possibilités d’échange ou de retour proposées pour votre commande. Précisez votre préférence si la même taille ou la même couleur peut être obtenue. Avant d’ajouter l’article au colis international, relisez la réponse de l’agent et vérifiez que le statut affiché correspond bien à la suite que vous avez choisie."
+      ]
+    ],
+    "slug": "gl-or-rl-warehouse-qc-photos",
+    "related": [
+      "how-to-request-extra-qc-photos",
+      "qc-photo-measurements-clothing-fit",
+      "how-to-read-qc-photos"
+    ],
+    "published": "2026-11-05",
+    "modified": "2026-11-05",
+    "textOnly": true,
+    "reviewed": "Mis à jour le 5 novembre 2026",
+    "readTime": "7 min de lecture"
+  },
+  {
+    "title": "Comment demander des photos QC supplémentaires à votre agent d’achat",
+    "description": "Trois messages à copier pour demander une mesure de poitrine, une photo de semelle intérieure ou un gros plan de fermeture, puis vérifier la réponse.",
+    "summary": "Une demande de photo supplémentaire fonctionne mieux quand l’entrepôt sait quel article sortir, dans quelle position le placer et ce qui doit rester lisible dans le cadre. Les exemples ci-dessous couvrent un vêtement, une paire de chaussures et un sac. Adaptez le message à votre commande et remplacez les indications entre crochets. Avant de valider un service photo, vérifiez ce que votre agent propose pour l’état actuel de l’article.",
+    "sections": [
+      [
+        "Ouvrir le dossier de l’article au bon moment",
+        "Retrouvez d’abord la ligne qui correspond à l’objet à photographier dans votre espace client. Selon le service, les demandes passent par la fiche de la commande, celle de l’article entreposé ou la messagerie d’assistance. Recherchez la référence d’entrée en stock si elle existe. Un numéro de colis international peut regrouper plusieurs articles et laisser un doute sur celui qui vous intéresse. Si vous avez acheté deux coloris du même modèle, joignez le libellé de la variante demandée.\n\nL’état de la commande indique aussi ce que vous pouvez utilement demander. Si le vendeur vient seulement d’expédier l’article, conservez votre consigne pour sa réception ou demandez à l’agent où la déposer. Si les premières photos sont disponibles, lisez-les avant d’en commander d’autres. Une étiquette visible sur la troisième vue peut déjà répondre à votre question. Si le colis est en préparation, vérifiez si l’article reste accessible et si une interruption est encore possible. Attendez la confirmation du service lorsque votre décision d’expédier dépend de cette vérification."
+      ],
+      [
+        "Décrire l’image en une consigne de prise de vue",
+        "Commencez par ce que vous voulez vérifier. Pour une dimension, nommez l’objet, la face visible, le point de départ, le point d’arrivée et l’unité. Pour un détail de finition, donnez un repère fixe et le côté sous lequel il doit apparaître. « L’angle gauche du sac quand on regarde la poche extérieure » situe mieux un problème que « en bas à gauche », qui peut désigner l’autre angle après rotation de la photo.\n\nVoici une structure à adapter : « Commande [référence], article [nom, variante]. Pour vérifier [détail], pourriez-vous poser [article et position] et prendre une photo [de dessus, de face ou de profil] ? J’ai besoin de voir [les deux repères] dans le même cadre, avec [l’unité ou le détail] lisible. » Ajoutez une annotation à une copie du premier cliché si cela aide à situer la zone. Si deux vues sont nécessaires, numérotez-les et expliquez à quoi sert chacune. La personne qui prépare l’article pourra ainsi choisir la bonne distance pour chaque photo."
+      ],
+      [
+        "Message à copier pour mesurer la poitrine d’un vêtement",
+        "« Bonjour, pour le sweat [référence, couleur, taille], pourriez-vous le poser à plat, face avant visible, sans étirer le tissu ? Placez le zéro d’un mètre en centimètres à la jonction de la manche et de la couture latérale sous une aisselle. Faites passer le mètre horizontalement jusqu’au même point de l’autre côté. Merci de prendre la photo de dessus avec les deux coutures et les graduations visibles sur la même image. » Si le vêtement se ferme devant, indiquez si vous souhaitez la mesure fermeture fermée. Faites de même sur votre vêtement de comparaison.\n\nL’intérêt de cette formulation apparaît lorsqu’une fiche annonce simplement « poitrine ». Cette mention peut désigner une largeur à plat ou un tour complet. Si votre propre sweat mesure 55 cm entre les aisselles et que la photo montre 56 cm entre les mêmes points, vous comparez deux largeurs à plat. Si la photo prend comme point de départ le bord extérieur de la manche, même une valeur parfaitement lisible ne répondra pas à cette question. Demandez alors de déplacer le mètre avant de choisir votre taille."
+      ],
+      [
+        "Message à copier pour la longueur d’une semelle intérieure",
+        "« Pour la paire [référence, pointure], pourriez-vous vérifier si la semelle intérieure se retire librement ? Si oui, merci d’en poser une à plat et de la photographier de dessus, avec le mètre en centimètres dans le sens de la longueur. Placez le zéro au bord arrière du talon et faites apparaître l’extrémité avant la plus éloignée ainsi que la graduation correspondante. Si la semelle est fixée, merci de la laisser en place et de me l’indiquer. » Mesurez de la même manière la semelle amovible d’une paire confortable avant de comparer les valeurs.\n\nVérifiez que la photo permet de situer les extrémités de la semelle elle-même. Un mètre décalé d’un centimètre au talon décale aussi la lecture à la pointe. Si la semelle est collée, une photo de l’étiquette intérieure peut encore confirmer la pointure livrée. Une mesure de la semelle extérieure renseigne sur une autre dimension. Gardez-lui un intitulé distinct dans vos notes. Deux chaussures de même longueur intérieure peuvent aussi avoir des formes différentes à l’avant, point important si vous cherchez surtout de l’aisance pour les orteils."
+      ],
+      [
+        "Message à copier pour la fermeture ou l’angle d’un sac",
+        "« Pour le sac [référence et coloris], sur la vue de face on distingue un espace près de l’angle situé du côté de la poche extérieure. Pourriez-vous poser le sac droit, fermer doucement la fermeture si elle coulisse librement et prendre une vue de dessus montrant toute la ligne ? J’aimerais aussi un gros plan de cet angle, avec les deux rangées de dents et la couture voisine dans le cadre. Si le curseur accroche, merci de vous arrêter et de préciser où cela se produit. »\n\nLa vue large permet de situer la zone sur le bon côté du sac. Le gros plan sert à voir les dents et le bord du tissu. Si votre doute porte sur une éraflure dans un angle, changez la consigne : demandez une vue légèrement oblique avec le coin entier, puis un détail en lumière diffuse si l’entrepôt peut le fournir. Un reflet blanc qui masque le grain du matériau apporte peu d’information, même sur un agrandissement. Évitez de demander de frotter une marque ou de retirer un film si cela risque de modifier l’état de l’article."
+      ],
+      [
+        "Répondre à une photo qui ne tranche pas la question",
+        "Commencez par décrire ce que le nouveau cliché a permis d’établir. Vous voyez peut-être enfin l’étiquette de taille, mais toujours pas l’extrémité du mètre. Une relance comme « Merci, je confirme que l’étiquette indique M. Sur cette image, le zéro est caché sous la manche. Pourriez-vous reprendre uniquement la vue de poitrine en dégageant le départ du mètre ? » préserve le travail déjà effectué et dit exactement ce qui manque. Mentionnez le fichier ou la vue concernée si l’équipe vous a renvoyé plusieurs photos.\n\nAutre cas fréquent : vous recevez une valeur tapée dans un message sans photo de la méthode. Si cette valeur suffit pour une décision sans enjeu particulier, enregistrez-la comme mesure communiquée par l’agent. Si l’endroit précis de la mesure est déterminant, demandez une vue des deux repères. Pour une question de fermeture qui coince, une photo fixe montre la position du curseur tandis qu’un bref commentaire de manipulation peut préciser ce que l’équipe a senti, si cette vérification est possible. Choisissez la relance en fonction de l’information dont vous avez encore besoin."
+      ],
+      [
+        "Décider et garder une trace des conditions de votre agent",
+        "Avant de confirmer une demande payante, lisez le libellé du service. Un prix affiché peut concerner une vue, un ensemble de clichés ou une autre prestation. Vérifiez le montant, la devise, les conditions applicables et la date à laquelle vous devez donner votre réponse sur cette commande. Si une information manque, demandez-la à l’agent dans le dossier de l’article. Ne supposez pas que l’attente d’une image supplémentaire prolonge un délai annoncé par le vendeur ou l’entrepôt.\n\nUne fois la réponse reçue, conservez la photo, la référence de la variante et la date. Notez la mesure avec son unité et sa méthode, par exemple « largeur entre aisselles, à plat, 56 cm ». Pour un défaut visible, gardez aussi la vue large qui identifie l’objet. Vous pouvez maintenant accepter l’article, demander les modalités d’un échange ou décider que les informations restent insuffisantes. Donnez votre instruction via la commande concernée et vérifiez sa prise en compte avant de préparer le colis. En retrouvant cette note plus tard, vous saurez exactement ce que l’entrepôt a vérifié pour vous."
+      ]
+    ],
+    "slug": "how-to-request-extra-qc-photos",
+    "related": [
+      "gl-or-rl-warehouse-qc-photos",
+      "qc-finder-not-working-missing-photos",
+      "shoe-qc-photo-checklist-shape-stitching-labels-measurements"
+    ],
+    "published": "2026-11-05",
+    "modified": "2026-11-05",
+    "textOnly": true,
+    "reviewed": "Mis à jour le 5 novembre 2026",
+    "readTime": "7 min de lecture"
+  },
+  {
     "slug": "qc-finder-not-working-missing-photos",
-    "title": "QC Finder sans résultat : photos absentes et mauvaises correspondances",
-    "description": "Vérifiez les résultats QC vides, les liens défectueux et les photos mal associées à partir de l’identifiant produit et de la variante.",
-    "summary": "Une photo absente constitue un manque de preuves, pas un verdict sur le produit. Déterminez d’abord si la page ne charge pas, si la recherche ne trouve aucun dossier ou si les dossiers concernent une autre option. Conservez ensemble l’URL originale et l’identifiant produit, notez vos essais et demandez des photos actuelles à l’entrepôt si la recherche ne permet pas de décider. Ce guide propose une méthode indépendante ; le champ de recherche de ce site ouvre les fiches du catalogue.",
+    "title": "Aucune photo QC trouvée ? Vérifiez le lien et la variante",
+    "description": "Galerie vide, image qui ne charge pas ou mauvaise taille : repérez la cause et déterminez quelle photo demander à l’entrepôt.",
+    "summary": "Si la fiche s’ouvre avec une galerie vide, vérifiez le lien d’origine et le numéro du produit. Si vous trouvez uniquement un autre coloris ou une autre taille, gardez ces images à titre de comparaison. Dès réception à l’entrepôt, demandez la vue manquante de votre article.",
     "sections": [
       [
         "Distinguer trois types de problème",
@@ -19,7 +111,7 @@ export default [
       ],
       [
         "Distinguer correspondances et alternatives",
-        "Essayez une fois avec le lien direct corrigé, puis comparez l'identité de l'élément retourné. Si le lien direct n'a aucun document, utilisez une description de produit distinctive ou une image pour découvrir les candidats, tout en conservant le lien original dans vos notes. Un résultat obtenu à travers une requête différente reste un candidat jusqu'à ce que le vendeur, l'identifiant de l'élément et l'option conviennent. Évitez de transformer un résultat d'appariement d'image large en preuve qu'une page de produit spécifique a une couverture QC. Lorsqu'une interface offre des filtres de taille, de couleur ou de date, changez un filtre à la fois et enregistrez l'effet. Effacer un filtre peut révéler des enregistrements pour d'autres options. Il ne crée pas de preuves pour l'option que vous voulez. Gardez ces enregistrements séparés dans le tableau de comparaison."
+        "Essayez une fois avec le lien direct corrigé, puis comparez l'identité de l'élément retourné. Si le lien direct n'a aucun document, utilisez une description de produit distinctive ou une image pour découvrir les candidats, tout en conservant le lien original dans vos notes. Un résultat obtenu à travers une requête différente reste un candidat jusqu'à ce que le vendeur, l'identifiant de l'élément et l'option conviennent. Évitez de transformer un résultat d'appariement d'image large en preuve qu'une page de produit spécifique a une couverture QC. Lorsqu'une interface offre des filtres de taille, de couleur ou de date, changez un filtre à la fois et enregistrez l'effet. Effacer un filtre peut révéler des enregistrements pour d'autres options. Il ne crée pas de preuves pour l'option que vous voulez. Gardez ces enregistrements séparés dans le tableau de comparaison.\n\nSi les photos d’un sweat noir apparaissent dès que vous retirez le filtre de taille, la recherche et la galerie fonctionnent. Sélectionnez à nouveau le sweat bleu en L. Si les photos disparaissent, vous savez exactement pour quelle variante demander un cliché."
       ],
       [
         "Séparer images absentes et résultats vides",
@@ -44,14 +136,44 @@ export default [
     ],
     "related": [
       "use-qc-finder-taobao-weidian-1688-links",
-      "findqc-image-search-verify-matches",
-      "qc-photo-measurements-clothing-fit"
+      "how-to-request-extra-qc-photos",
+      "findqc-image-search-verify-matches"
     ],
     "published": "2026-10-08",
-    "modified": "2026-10-08",
+    "modified": "2026-11-05",
     "textOnly": true,
     "readTime": "8 min de lecture",
-    "reviewed": "Mis à jour le 8 octobre 2026"
+    "reviewed": "Mis à jour le 5 novembre 2026",
+    "checkTable": {
+      "caption": "Que voyez-vous à l’ouverture du lien ?",
+      "columns": [
+        "À l’écran",
+        "Premier contrôle",
+        "Suite à donner"
+      ],
+      "rows": [
+        [
+          "La page d’accueil du vendeur",
+          "Vérifiez le vendeur et le numéro de la fiche enregistrée.",
+          "Copiez le lien direct de l’article avant de réessayer."
+        ],
+        [
+          "Le bon produit avec une galerie vide",
+          "Vérifiez le numéro d’origine et retirez un filtre de variante.",
+          "Si la galerie reste vide, relevez la vue manquante. Demandez des photos à réception de votre pièce."
+        ],
+        [
+          "Un album avec une autre taille",
+          "Comparez l’étiquette photographiée avec la taille commandée.",
+          "Utilisez ces images pour observer la coupe. Demandez l’étiquette et les mesures de votre taille."
+        ],
+        [
+          "La miniature apparaît, la grande image ne charge pas",
+          "Ouvrez une autre photo du même album et rechargez une fois l’image concernée.",
+          "Indiquez le dossier et la photo au service client. Si cet angle est décisif, attendez avant de valider."
+        ]
+      ]
+    }
   },
   {
     "slug": "findqc-image-search-verify-matches",
@@ -217,12 +339,12 @@ export default [
   },
   {
     "slug": "use-qc-finder-taobao-weidian-1688-links",
-    "title": "QC Finder : rechercher les liens Taobao, Weidian et 1688",
-    "description": "Trouvez les photos pertinentes de QC à partir d'un lien de produit original, vérifiez l'identifiant de l'élément du marché et gardez les résultats similaires séparés des correspondances exactes.",
+    "title": "Trouver des photos QC avec un lien Weidian, Taobao ou 1688",
+    "description": "Repérez le numéro de l’article sur Weidian, Taobao ou 1688, puis vérifiez que les photos prises en entrepôt montrent la taille et le coloris choisis.",
     "readTime": "9 min de lecture",
-    "reviewed": "Mis à jour le 8 octobre 2026",
+    "reviewed": "Mis à jour le 5 novembre 2026",
     "published": "2026-09-17",
-    "modified": "2026-10-08",
+    "modified": "2026-11-05",
     "sections": [
       [
         "Partir de la fiche directe",
@@ -230,7 +352,7 @@ export default [
       ],
       [
         "Conserver l’ID pendant le nettoyage",
-        "Les liens du marché contiennent souvent des paramètres de campagne, des codes de référence et des enveloppes mobiles. Les pièces amovibles ne sont pas les mêmes que l'identificateur de l'article. Avant de raccourcir une URL, comparez la page avant et après le nettoyage et assurez-vous que l'article, le vendeur et les options restent les mêmes. Enregistrez à la fois l'URL propre et l'ID numérique dans votre note de recherche. Si un finder ne reconnaît pas le lien complet, essayez l'identifiant de l'élément suivant. Ne présumez jamais que deux numéros semblables appartiennent au même type de marché ou d'enregistrement. Un identifiant de commande, l'identifiant d'entrepôt et l'identifiant de produit peuvent se ressembler tout en identifiant des objets complètement différents."
+        "Les liens du marché contiennent souvent des paramètres de campagne, des codes de référence et des enveloppes mobiles. Les pièces amovibles ne sont pas les mêmes que l'identificateur de l'article. Avant de raccourcir une URL, comparez la page avant et après le nettoyage et assurez-vous que l'article, le vendeur et les options restent les mêmes. Enregistrez à la fois l'URL propre et l'ID numérique dans votre note de recherche. Si un finder ne reconnaît pas le lien complet, essayez l'identifiant de l'élément suivant. Ne présumez jamais que deux numéros semblables appartiennent au même type de marché ou d'enregistrement. Un identifiant de commande, l'identifiant d'entrepôt et l'identifiant de produit peuvent se ressembler tout en identifiant des objets complètement différents.\n\nUn lien partagé par un intermédiaire peut contenir sa propre référence de catalogue et l’adresse du produit sur la plateforme d’origine. Ouvrez la fiche dans votre navigateur et suivez le lien vers cette source. Sur Taobao, conservez le paramètre id même si vous voyez aussi un skuId. Le premier identifie la fiche, le second peut aider à retrouver la variante. Sur 1688, vérifiez ce que comprend une unité de vente. Un assortiment de couleurs et un article vendu à la pièce peuvent partager le même numéro d’offre. Relevez le libellé exact et comparez-le à l’étiquette ou au bordereau visible sur les photos."
       ],
       [
         "Relier avant de juger les photos",
@@ -238,7 +360,7 @@ export default [
       ],
       [
         "Séparer les archives",
-        "Les résultats de l'analyseur QC représentent habituellement des registres d'entrepôt antérieurs. Ils peuvent révéler quels angles sont généralement photographiés, comment l'emballage ressemble et si les détails visibles varient d'un enregistrement à l'autre. Ils ne peuvent garantir que le vendeur utilise toujours le même lot, les mêmes matériaux ou la cartographie d'options. Comparez plusieurs enregistrements lorsque disponibles et notez des motifs récurrents, mais prenez la décision finale à partir de la page de produit actuelle et les photos de votre propre unité. Dater tous les enregistrements enregistrés. Une page capturée il y a des mois peut encore être un contexte utile, mais son âge devrait rester visible à côté de toute conclusion tirée de lui."
+        "Les résultats de l'analyseur QC représentent habituellement des registres d'entrepôt antérieurs. Ils peuvent révéler quels angles sont généralement photographiés, comment l'emballage ressemble et si les détails visibles varient d'un enregistrement à l'autre. Ils ne peuvent garantir que le vendeur utilise toujours le même lot, les mêmes matériaux ou la cartographie d'options. Comparez plusieurs enregistrements lorsque disponibles et notez des motifs récurrents, mais prenez la décision finale à partir de la page de produit actuelle et les photos de votre propre unité. Dater tous les enregistrements enregistrés. Une page capturée il y a des mois peut encore être un contexte utile, mais son âge devrait rester visible à côté de toute conclusion tirée de lui.\n\nVoici comment vérifier un favori qui a changé de destination. Vous aviez enregistré une veste à capuche amovible. Le lien ouvre désormais une veste presque identique dans la même boutique, mais le numéro d’article a changé. Dans l’ancien album, vous distinguez des boutons-pression au dos du col. Vous savez ainsi comment la capuche de la première veste était fixée. Pour la veste actuelle, vérifiez la description de la variante et les photos correspondantes. Gardez les deux numéros sur des lignes séparées. Si vous interrogez le vendeur, indiquez la référence actuelle et demandez une photo de la fixation sur cette pièce."
       ],
       [
         "Garder un ordre fixe",
@@ -249,17 +371,42 @@ export default [
         "Conservez une note compacte contenant le lien d'origine, le lien nettoyé, l'ID de l'élément, l'option cible, la date vérifiée et les enregistrements QC utilisés. Ajouter une phrase expliquant si chaque enregistrement est exact, probablement le même élément ou seulement visuellement similaire. Cela permet de répéter la recherche après les modifications d'une page de produit et vous empêche de mélanger les preuves entre les onglets. Les captures d'écran peuvent préserver le contexte, mais conserver le lien source aussi parce qu'une récolte peut masquer le vendeur, l'option sélectionnée ou la date. L'objectif n'est pas une grande archive; c'est un chemin traçable de la page de produit prévue à chaque image de comparaison. Lorsque plusieurs documents historiques sont disponibles, arrangez-les par date et option de capture plutôt que par appel visuel. Cela révèle si la variation apparente appartient au temps, à la taille, à la couleur ou à la photographie. Utilisez une courte observation pour chaque différence et évitez de convertir le nombre d'enregistrements en un score de qualité. Dix images peu appariées peuvent être des preuves plus faibles que deux enregistrements exacts datés. Si une option actuelle n'a pas de photos historiques exactes, dites-le directement et utilisez des enregistrements similaires uniquement pour planifier quels angles et mesures devraient être demandés pour la propre unité de l'acheteur."
       ],
       [
-        "Finir sur la fiche active",
-        "Retourner à la page de produit actuelle avant d'agir. Revérifier la disponibilité, l'option sélectionnée, le prix, les pièces incluses et toutes les restrictions d'itinéraire ou de destination indiquées par le service que vous prévoyez utiliser. Si la page produit a changé, traitez les anciennes données de QC comme historiques plutôt que actuelles. Si l'identité est incertaine, recherchez à nouveau avec le lien direct ou ID et demandez une photo manquante après que l'article arrive à l'entrepôt de stockage. Un rechercheur QC réduit les frictions de recherche; il ne vérifie pas l'authenticité, la construction cachée, la performance du vendeur, le traitement douanier ou l'état de livraison. Avant l'action finale, les exigences, les préférences et les inconnues doivent être séparées. Une mauvaise taille ou un composant manquant peut échouer à un must-have, alors qu'une petite marque d'emballage peut être seulement une préférence. L'inconnu doit rester visible jusqu'à ce qu'un contrôle ciblé le résolve ou que l'acheteur accepte le risque. Cette structure empêche les photos de QC attrayantes de changer la norme d'achat originale. Épargnez la dernière phrase avec la page du produit et la date afin qu'un autre examinateur puisse comprendre quelle preuve importe, quel risque restait et pourquoi la décision était raisonnable à ce moment-là. Un premier examen pratique du lien peut être résumé comme une séquence contrôlée. Capturer la source en direct, la normaliser sans changer l'article, rechercher avec le lien et l'ID, classer chaque résultat, comparer les enregistrements datés et ensuite inspecter l'unité actuelle. À chaque transfert, conservez le champ qui porte l'identité en avant. Si le lien est remplacé par un mot-clé ou si l'option disparaît de la note, la chaîne devient plus faible et le résultat doit être rétrogradé. Cette règle s'applique également à Taobao, Weidian et 1688 même si leurs structures de page et leurs identifiants diffèrent. Ne forcez pas le numéro d'un marché dans le champ de recherche d'un autre marché. Gardez le type de source explicite. Si un résultat n'est que visuellement similaire, il peut encore aider à créer une liste de contrôle photo, mais il ne doit pas soutenir les revendications au sujet du vendeur ou de l'option. Avant d'expédier, rouvrez la page en direct et comparez son libellé d'option actuel avec le registre de l'entrepôt de stockage. Économisez tout changement de prix ou de disponibilité dans le contexte, pas comme preuve de qualité. La note finie devrait permettre à une autre personne de reproduire la recherche, d'identifier la même source, de voir ce qui a été apparié et de comprendre pourquoi l'incertitude restante a été acceptée ou résolue. Une vérification finale pratique est de rouvrir le produit de votre ligne de comparaison sauvegardée et de comparer l'ID du marché avec l'enregistrement retourné. Si le lien source est intact mais qu'aucun enregistrement QC n'apparaît, utilisez le guide de dépannage de l'image manquante. Si seulement des produits liés visuellement apparaissent, utilisez la méthode de vérification image-recherche avant d'attribuer ces enregistrements à l'élément. Gardez l'option sélectionnée et la date de recherche à côté du lien. Le champ de recherche sur ce site ouvre le catalogue de produits; la recherche historique QC et la disponibilité du catalogue sont des vérifications différentes. Terminez en enregistrant une adresse source vérifiée et une action suivante claire plutôt qu'une collection de vignettes non reliées."
+        "Deux numéros pour une même fiche de baskets",
+        "Les baskets basses de notre catalogue portent deux numéros. Le 4276 ouvre la fiche du catalogue. Le numéro d’origine indiqué sur la carte est le 7645681448. Vérifiez la plateforme et copiez le lien du produit sur la fiche d’origine avant de rechercher un album QC. Saisir 4276 dans le champ réservé au numéro d’article renverrait à une autre référence.\n\nImaginez que l’album montre une paire blanche en 42 alors que vous souhaitez la grise en 43. Même si le vendeur et le numéro d’article correspondent, la pointure et la couleur photographiées concernent la paire blanche. Servez-vous de ces vues pour préparer votre demande. À la réception en entrepôt, vérifiez les deux chaussures, la couleur et l’étiquette de votre paire."
       ]
     ],
     "textOnly": true,
     "related": [
       "qc-finder-not-working-missing-photos",
-      "findqc-image-search-verify-matches",
-      "qc-photo-matching-exact-item-color-size-batch"
+      "qc-photo-matching-exact-item-color-size-batch",
+      "gl-or-rl-warehouse-qc-photos"
     ],
-    "summary": "Trouvez les photos pertinentes de QC à partir d'un lien de produit original, vérifiez l'identifiant de l'élément du marché et gardez les résultats similaires séparés des correspondances exactes."
+    "summary": "Ouvrez la fiche d’origine, copiez le numéro de l’article et notez la variante. Utilisez le lien dans un outil de recherche de photos QC compatible avec cette plateforme, puis vérifiez le vendeur et la variante dans l’album. La recherche sur ce site ouvre le catalogue de produits.",
+    "checkTable": {
+      "caption": "Quelle partie du lien identifie le produit ?",
+      "columns": [
+        "Plateforme",
+        "Format du lien",
+        "Élément à copier"
+      ],
+      "rows": [
+        [
+          "Weidian",
+          "weidian.com/item.html?itemID=…",
+          "Les chiffres après itemID=. Si un lien partagé ouvre la boutique, accédez à la fiche du produit."
+        ],
+        [
+          "Taobao",
+          "item.taobao.com/item.htm?id=…",
+          "Les chiffres après id=. Notez la taille ou le skuId à part."
+        ],
+        [
+          "1688",
+          "detail.1688.com/offer/….html",
+          "Le numéro de l’offre entre /offer/ et .html. Précisez également la couleur, le conditionnement et l’unité de vente."
+        ]
+      ]
+    }
   },
   {
     "slug": "qc-photo-matching-exact-item-color-size-batch",

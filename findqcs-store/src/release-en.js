@@ -1,9 +1,101 @@
 export default [
   {
+    "title": "GL or RL? How to Decide From Warehouse QC Photos",
+    "description": "Decide whether to ship, ask for another photo, or request an exchange. Work through real-world examples for garment fit, shoe heels and bag hardware.",
+    "summary": "GL means you are happy to keep the item shown. RL means you have seen a problem significant enough to ask about a return or exchange. You can also pause. If the choice depends on a measurement or a detail hidden in shadow, identify the single photograph that would settle it before you release the item for shipping.",
+    "sections": [
+      [
+        "Decide what the photographs can answer",
+        "Start by opening the photographs attached to your warehouse order. A QC finder may show earlier purchases from the same listing, which can help you recognize a pocket shape or an alternative sole. Only the photographs associated with your own order show the particular item waiting for your decision. Keep both sets open if a comparison helps, and mark which one belongs to you. The most flattering photograph in an older gallery has little bearing on a mark visible on the garment you received.\n\nWrite down what would make you keep this item. For a jacket, that might be enough room over your usual sweater, the hood you selected and an intact front fastening. These criteria give GL, or green light, a practical meaning. RL, or red light, follows when a visible difference would make you give the item up. Use a third answer, hold, when a necessary detail is missing. Someone else's GL can point you toward an area worth checking, but their taste and fit preferences may differ from yours."
+      ],
+      [
+        "Match the warehouse item to your selected option",
+        "Read the order line before zooming into seams. Find the item number, seller option, colour and size you actually selected. Where one order contains several pieces, work on just one line at a time. For a navy jacket sold with or without a hood, a dark front view may fit either description. The back view, collar construction or a readable option label can settle which version arrived. A photograph of a shipping bag with a size sticker can support the match, but a clear view of the garment itself is stronger evidence if the two disagree.\n\nCheck the parts that were supposed to come with that option. A bag photographed without a shoulder strap may have the strap stored inside it. Ask the warehouse to lay the included pieces together if that detail affects your decision. Save the order wording as well as the matching image. If the seller changes the listing later, you will still be able to explain exactly which configuration you chose and which detail caused you to pause."
+      ],
+      [
+        "Read a flat chest measurement before judging fit",
+        "Put a top you like on a table, smooth the fabric without pulling it, and measure straight across from one underarm seam to the other. Suppose your comfortable top measures 55 cm, and the warehouse photograph shows 56 cm using the same method. That is a 1 cm difference across the laid-flat garment. A seller's chart headed “chest circumference” uses a different convention. First establish which value the chart represents, and compare flat width with flat width. A body measurement taken with a tape around your chest answers a different question again.\n\nLook closely at both ends of the tape in the photograph. A tape starting inside the seam, disappearing under a sleeve or crossing diagonally can change the reading enough to matter in this example. Then think about the garment you used for comparison. A stretchy T-shirt and a lined jacket can feel very different at the same width. If the width is close but the sleeves of your comparison top are already at their limit, sleeve length may be the more useful final check. Ask for the specific measurement that could change your decision."
+      ],
+      [
+        "Check both shoe heels from the same angle",
+        "In a warehouse picture, the shoe nearer the camera can appear taller. A pair arranged in a shallow V can also make one heel tab look off-centre while the other looks straight. Before drawing a line across the screen, examine the position of the outsoles, the direction of the toes and the tilt of the camera. If one foot is rotated and the other points straight ahead, the photograph mixes the shape of the shoes with the way they were arranged. Treat the apparent difference as a question.\n\nRequest a view that gives both heels an equal chance of showing the issue. For example, write “Please stand both shoes side by side on the same flat surface, with the toes pointing away, and photograph both heels straight on at heel height.” Use the new view to compare the centred back seams, heel tabs and the way each sole meets the table. If they now align, you can close that particular concern. If a twist remains visible from two comparable angles, consider whether it would bother you enough to seek an exchange."
+      ],
+      [
+        "Separate a visible defect from a camera effect",
+        "Take a bag with a dark zipper. In the overview, one section of the teeth looks white. Several explanations fit the same image. A light can reflect from a metal surface, packing tissue can be caught against the zip, or teeth can actually be misaligned. Check whether the pale streak continues across neighbouring hardware at the same angle. Then inspect an available second view. A highlight that moves when the camera moves is different evidence from a gap that stays at the same point beside a seam.\n\nDistinguish what you can see from what you still need to learn about function. A closed zipper can look straight while a slider catches at a bend. If operation is important, ask whether staff can check that short section by gently moving the slider, and photograph its position if it catches. A still image of a closed bag can establish appearance, while a report of a gentle opening addresses movement. A small surface mark you are willing to accept and a zipper that prevents you closing the bag may justify opposite decisions."
+      ],
+      [
+        "Ask for one extra view when the result is uncertain",
+        "Describe the doubt in terms someone standing over the item can act on. “Does this look good?” leaves the warehouse to decide what matters to you. “Please photograph the inside of the left cuff with the edge turned out, so I can see whether the loose thread crosses an open seam” tells them the location, the view and the reason. Include the warehouse item reference in a private message, especially where two pieces share a seller photograph. Ask about any fee or timing limit shown for that service before confirming the request.\n\nDecide in advance how you will use the reply. For the cuff, an unbroken row of stitches behind a loose thread may be enough for you to keep the garment. A visible opening through the seam would support a different decision. If the reply shows only the outside again, use that distinction to explain what remains unresolved. This gives you a stopping point and avoids buying a sequence of nearly identical close-ups that still leave the relevant surface hidden."
+      ],
+      [
+        "Record your GL, hold or RL before releasing the parcel",
+        "Keep a brief note with the warehouse item reference and the image that settled the question. You might write “GL on the jacket. The size label matches my order and the new flat chest photograph reads 56 cm against my 55 cm reference.” For a hold, write down the one unanswered detail and keep the item out of your shipping selection while you ask. For an RL, say what you can show, such as “Ordered the hooded version. The back and collar pictures show the version without a hood.”\n\nUse the controls or support channel your own agent provides to carry out the decision. A GL in a discussion thread records an opinion. Shipping, requesting an exchange or arranging a return requires the relevant action on your actual order. Check the options and any deadline displayed there while the item is still at the warehouse. If the warehouse offers an exchange, review the photographs of the replacement as a new item. Your earlier decision explains what to inspect first when it arrives."
+      ]
+    ],
+    "slug": "gl-or-rl-warehouse-qc-photos",
+    "related": [
+      "how-to-request-extra-qc-photos",
+      "qc-photo-measurements-clothing-fit",
+      "how-to-read-qc-photos"
+    ],
+    "published": "2026-11-05",
+    "modified": "2026-11-05",
+    "textOnly": true,
+    "reviewed": "Updated 5 November 2026",
+    "readTime": "7 min read"
+  },
+  {
+    "title": "How to Request Extra QC Photos From a Shopping Agent",
+    "description": "Use copyable warehouse photo requests for a garment, shoe insole or bag zipper. Specify the angle, measurement and detail you need before shipping.",
+    "summary": "Ask for the photograph that will change your decision. A useful request identifies the warehouse item, describes how to position it and tells the photographer what must be visible. The examples below cover three common cases and show how to follow up if the first picture answers only part of the question.",
+    "sections": [
+      [
+        "Find your item and the right moment to ask",
+        "Open the order in your shopping agent account and check its status. A seller's product photograph and an agent's warehouse photograph come from different stages of the order. If the item is still on its way to the warehouse, check whether your agent lets you leave an instruction for arrival. Once the item is in storage, look for a detailed photo, extra inspection or service request attached to that item. If you cannot locate an option, contact support from the order and include the warehouse reference. The exact labels and available services vary.\n\nReview the standard pictures first. You may already have a useful back view tucked behind the thumbnail for the front. Open the original image or zoom in before paying for a duplicate. Then identify the physical detail that affects whether you keep the item. For a garment with a readable size label, that might be the actual width across its chest. Save the request and wait for the answer before including the item in a parcel if your shipping decision depends on it."
+      ],
+      [
+        "Give the photographer a position and an endpoint",
+        "A good instruction can be read while someone is holding the item. Name the piece first, including its colour or option when the order has several. Say which side should face the camera, what needs to move, and what must stay inside the frame. For a measurement, give both endpoints and specify centimetres or inches. “Measure sleeve” leaves several choices. “Measure from the shoulder seam to the end of the cuff, straight along the outside of the sleeve, in centimetres” makes the result comparable to a garment you can measure at home.\n\nYou can adapt this message for most requests. “For warehouse item [reference], please lay the [item and colour] [position]. Photograph [specific area] from [angle]. Please include [two endpoints or relevant detail] clearly in the same image.” Replace each bracket with something the photographer can see. If your question concerns a small area, refer to a feature close to it, such as the first snap below the collar. This is easier to locate than “the little mark on the right,” which changes sides when the item is turned over."
+      ],
+      [
+        "Copy a pit-to-pit request for a top or jacket",
+        "“For my black zip jacket, item [reference], please close the zip and lay the jacket flat with the front facing up. Smooth the chest without stretching it. Place a tape in centimetres straight across from one underarm seam to the other. Please photograph the whole width from above so I can read the zero mark and the number at the opposite seam.” For a pullover, leave out the instruction about the zip. Tell the agent if a different construction makes the underarm seam hard to locate.\n\nMeasure a garment you already wear in the same position. This gives a clear purpose to the request. If your reference width is 55 cm, a readable 56 cm in the warehouse picture tells you the new jacket is 1 cm wider across that line. That observation is more precise than asking if a size L will fit. Keep the width as a flat measurement when you record it. If a chart lists a full circumference, write down its heading and units separately so the two measurements do not get mixed up later."
+      ],
+      [
+        "Copy an insole-length request for shoes",
+        "“For the shoes in item [reference], please check whether an insole lifts out easily. If it does, place one insole on a flat surface and photograph it from above beside a centimetre ruler. Please align zero with the back of the heel and include the furthest point of the toe, with both ends readable. If it is glued down or resists lifting, please leave it in place and tell me.” Naming the removable part matters. A ruler along the outside of the shoe measures a different object and gives you no direct insole comparison.\n\nUse a removable insole from a pair that fits you to get a personal reference. Position both in the same way and note the outline as well as the length. Two insoles can share a length while one narrows much more sharply at the toe. If the warehouse cannot remove the insole safely, ask which existing measurement or label they can show and decide whether that answers your question. Avoid asking staff to pry up a bonded insole simply to produce a number."
+      ],
+      [
+        "Copy a request for a bag zipper or corner",
+        "Anchor the request to a feature that will remain recognizable when the photographer turns the bag. For a pale mark at a bend in the zipper, try this. “For the brown bag, item [reference], please photograph the top zipper where it curves beside the handle attachment. Take a close view with the zipper closed, keeping the handle attachment and the teeth on both sides of the curve in the picture. Please angle the light so I can see the teeth.” An isolated square of shiny hardware might fill the frame yet reveal little about where the mark sits.\n\nFor a scuffed-looking corner, change the instruction. “Please stand the bag upright, front pocket facing the camera, and photograph the lower corner under the pocket's zip pull. Include the piping and the base seam.” This gives the photographer a fixed landmark. If the actual question is whether a slider catches, ask separately whether staff can try moving it gently through the bend and report what happens. A close photograph records the surface well. A functional check needs a different action, which your agent may or may not offer."
+      ],
+      [
+        "Follow up when a photograph answers half the question",
+        "Before sending another request, read the new photograph as if you had never seen your original message. Can you identify the item and its orientation? Can you see both measurement endpoints or the specific surface you asked about? A close-up of a tape at 56 cm with the zero mark cropped out is a plausible reading, but you cannot tell how far the tape starts from the first seam. Save that image and explain the missing information instead of repeating every part of the earlier request.\n\nFor example, write “Thank you. I can read the number at the far underarm. Could you pull the camera back a little so both underarm seams and the zero mark appear together?” A similar follow-up for a bag might say “The handle attachment is clear. Please turn the bag slightly so the light falls across the teeth rather than straight back into the lens.” Ask whether another image involves a new charge if the order page leaves this unclear. Stop once you can answer the question you originally set out to resolve."
+      ],
+      [
+        "Use the answer while the item is still in storage",
+        "Read the service price and any return, exchange or dispatch deadline on your own order. An extra photo request can take time, and the existence of a request alone gives you no basis for assuming a deadline has moved. Where timing is close, ask the agent to confirm what is possible before you pay or approve shipment. A useful private message is “I need the chest measurement before deciding on this jacket. Could you confirm the photo fee and my latest time to request an exchange for this item?”\n\nKeep the reply, warehouse reference and useful image together. Make a short note of the observation, such as “Both zipper tracks meet at the corner, and staff confirmed the slider passes the bend.” Then record the action that observation supports. You might release the item for shipping, request an available exchange or hold it while you clarify an unresolved issue. If the missing view cannot be supplied, base your choice on what you actually know and how important that detail is to you. That closes the request with a specific decision you can trace back to the order."
+      ]
+    ],
+    "slug": "how-to-request-extra-qc-photos",
+    "related": [
+      "gl-or-rl-warehouse-qc-photos",
+      "qc-finder-not-working-missing-photos",
+      "shoe-qc-photo-checklist-shape-stitching-labels-measurements"
+    ],
+    "published": "2026-11-05",
+    "modified": "2026-11-05",
+    "textOnly": true,
+    "reviewed": "Updated 5 November 2026",
+    "readTime": "7 min read"
+  },
+  {
     "slug": "qc-finder-not-working-missing-photos",
-    "title": "QC Finder Not Working: Fix Missing Photos and Wrong Matches",
-    "description": "Troubleshoot empty QC results, broken product links and wrong photo matches with a repeatable item-ID and variant check.",
-    "summary": "A missing photo is an evidence gap, not a verdict on a product. First establish whether the page fails to load, the search returns no records, or the records belong to another option. Keep the original product URL and item ID together, record what you tried, and request current warehouse evidence when a search cannot answer the purchase decision. This guide provides an independent troubleshooting method; the catalog search on this site opens product listings.",
+    "title": "No QC Photos Found? Check the Link, Item ID and Variant",
+    "description": "An empty gallery, a broken photo and the wrong size need different fixes. Identify what you see and decide when to ask the warehouse for a new photo.",
+    "summary": "If the product opens but its gallery is empty, copy the original marketplace link and check its ID once. If only another colour or size appears, keep that album as a reference. Once your order is in the warehouse, ask for the specific missing view of your item.",
     "sections": [
       [
         "Separate three different failures",
@@ -19,7 +111,7 @@ export default [
       ],
       [
         "Test the search without confusing alternatives",
-        "Retry once with the corrected direct link, then compare the returned item identity. If the direct link has no records, use a distinctive product description or an image to discover candidates, while keeping the original link in your notes. A result reached through a different query remains a candidate until seller, item ID and option agree. Avoid turning a broad image match into proof that a specific listing has QC coverage. Where an interface offers size, color or date filters, change one filter at a time and record the effect. Clearing a filter may reveal records for other options. It does not create evidence for the option you want. Keep those records separate in the comparison table."
+        "Retry once with the corrected direct link, then compare the returned item identity. If the direct link has no records, use a distinctive product description or an image to discover candidates, while keeping the original link in your notes. A result reached through a different query remains a candidate until seller, item ID and option agree. Avoid turning a broad image match into proof that a specific listing has QC coverage. Where an interface offers size, color or date filters, change one filter at a time and record the effect. Clearing a filter may reveal records for other options. It does not create evidence for the option you want. Keep those records separate in the comparison table.\n\nFor example, if the black hoodie appears as soon as you clear the size filter, the search and gallery both work. Switch the filter back to the blue L you plan to buy. If that choice still has no pictures, you have narrowed the problem down to the option and can stop retrying the same link."
       ],
       [
         "Read missing images separately from empty results",
@@ -44,14 +136,44 @@ export default [
     ],
     "related": [
       "use-qc-finder-taobao-weidian-1688-links",
-      "findqc-image-search-verify-matches",
-      "qc-photo-measurements-clothing-fit"
+      "how-to-request-extra-qc-photos",
+      "findqc-image-search-verify-matches"
     ],
     "published": "2026-10-08",
-    "modified": "2026-10-08",
+    "modified": "2026-11-05",
     "textOnly": true,
     "readTime": "7 min read",
-    "reviewed": "Updated 8 October 2026"
+    "reviewed": "Updated 5 November 2026",
+    "checkTable": {
+      "caption": "What do you see after opening the link?",
+      "columns": [
+        "What you see",
+        "First check",
+        "Next step"
+      ],
+      "rows": [
+        [
+          "Shop homepage instead of the item",
+          "Open the saved listing and compare the seller and item number.",
+          "Copy the direct product link before retrying."
+        ],
+        [
+          "Correct item, empty photo gallery",
+          "Confirm the original ID and temporarily clear one variant filter.",
+          "If the list stays empty, record the gap. Ask for your own order photos once the item arrives."
+        ],
+        [
+          "Album opens, but only another size appears",
+          "Read the size tag in the photo and the option on the order.",
+          "Use that album for visible design details. Request the label and measurements of your own size."
+        ],
+        [
+          "Thumbnail appears, full image fails",
+          "Try another image from the same album and reload the affected one once.",
+          "Give support the record and the failed image. Hold the decision if that angle matters."
+        ]
+      ]
+    }
   },
   {
     "slug": "findqc-image-search-verify-matches",
@@ -217,12 +339,12 @@ export default [
   },
   {
     "slug": "use-qc-finder-taobao-weidian-1688-links",
-    "title": "QC Finder: Search Taobao, Weidian and 1688 Links",
-    "description": "Find relevant QC photos from an original product link, verify the marketplace item ID and keep similar results separate from exact matches.",
+    "title": "How to Find QC Photos From a Weidian, Taobao or 1688 Link",
+    "description": "Identify a Weidian itemID, Taobao product ID or 1688 offer number, then check whether a warehouse album shows the size and colour you selected.",
     "readTime": "7 min read",
-    "reviewed": "Updated 8 October 2026",
+    "reviewed": "Updated 5 November 2026",
     "published": "2026-09-17",
-    "modified": "2026-10-08",
+    "modified": "2026-11-05",
     "sections": [
       [
         "Begin with the direct product page",
@@ -230,7 +352,7 @@ export default [
       ],
       [
         "Preserve the item ID when cleaning the link",
-        "Marketplace links often contain campaign parameters, referral codes and mobile wrappers. The removable parts are not the same as the item identifier. Before shortening a URL, compare the page before and after cleanup and make sure the item, seller and options remain the same. Save both the clean URL and the numeric ID in your research note. If a finder does not recognize the full link, try the item ID next. Never assume that two similar numbers belong to the same marketplace or record type. An order ID, warehouse ID and product ID can look alike while identifying completely different objects."
+        "Marketplace links often contain campaign parameters, referral codes and mobile wrappers. The removable parts are not the same as the item identifier. Before shortening a URL, compare the page before and after cleanup and make sure the item, seller and options remain the same. Save both the clean URL and the numeric ID in your research note. If a finder does not recognize the full link, try the item ID next. Never assume that two similar numbers belong to the same marketplace or record type. An order ID, warehouse ID and product ID can look alike while identifying completely different objects.\n\nA link shared by a shopping agent can contain both its own catalog number and a nested marketplace address. Open the product in a browser and use the source link provided on the page. For a Taobao listing, keep the id field even if you also see a skuId. The first identifies the listing, while the latter can help recover the selected option. For a 1688 offer, check what one unit buys: a colour bundle pictured in the album may have been sold as a pack. An individual item and a pack can share an offer number. Save the exact option wording alongside the number, then compare it with any visible packing slip or variant label. A number by itself cannot tell you what the earlier buyer received."
       ],
       [
         "Match the listing before judging photo quality",
@@ -238,7 +360,7 @@ export default [
       ],
       [
         "Separate historical records from your own unit",
-        "QC finder results usually represent earlier warehouse records. They can reveal which angles are commonly photographed, how packaging looks and whether visible details vary across records. They cannot guarantee that the seller still uses the same batch, materials or option mapping. Compare several records when available and note recurring patterns, but make the final decision from the current listing and the photos of your own unit. Date every saved record. A page captured months ago can still be useful context, yet its age should remain visible beside any conclusion drawn from it."
+        "QC finder results usually represent earlier warehouse records. They can reveal which angles are commonly photographed, how packaging looks and whether visible details vary across records. They cannot guarantee that the seller still uses the same batch, materials or option mapping. Compare several records when available and note recurring patterns, but make the final decision from the current listing and the photos of your own unit. Date every saved record. A page captured months ago can still be useful context, yet its age should remain visible beside any conclusion drawn from it.\n\nTry this check when a saved link starts sending you somewhere new. Imagine you bookmarked a jacket with a detachable hood. Today the link opens a nearly identical jacket in the same shop, but the marketplace item number has changed. Open the album you saved and look at the back of the collar. If the photograph shows attachment snaps, you can describe that earlier jacket precisely. To answer whether the current jacket has those snaps, look at the new listing's option text and the corresponding current photos. Save the two numbers on separate lines. That small distinction matters if you later ask the seller about the hood: include the current item number and ask for a photo of the attachment on that piece."
       ],
       [
         "Use a fixed comparison sequence",
@@ -249,17 +371,42 @@ export default [
         "Keep a compact note containing the original link, cleaned link, item ID, target option, date checked and the QC records used. Add one sentence explaining whether each record is exact, likely the same item or only visually similar. This makes it possible to repeat the search after a listing changes and prevents you from mixing evidence between tabs. Screenshots can preserve context, but retain the source link as well because a crop may hide the seller, selected option or date. The goal is not a large archive; it is a traceable path from the intended listing to each comparison image. When several historical records are available, arrange them by capture date and option rather than visual appeal. This reveals whether apparent variation belongs to time, size, color or photography. Use a short observation for each difference and avoid converting the number of records into a quality score. Ten loosely matched images can be weaker evidence than two exact, dated records. If a current option has no exact historical photos, say so directly and use similar records only to plan which angles and measurements should be requested for the buyer's own unit."
       ],
       [
-        "Finish on the live listing",
-        "Return to the current product page before taking action. Recheck availability, selected option, price, included parts and any route or destination restrictions shown by the service you plan to use. If the listing has changed, treat older QC evidence as historical rather than current. If identity is uncertain, search again with the direct link or ID and request a missing photo after the item arrives at the warehouse. A QC finder reduces research friction; it does not verify authenticity, hidden construction, seller performance, customs treatment or delivery condition. Before the final action, separate must-have requirements, preferences and unknowns. A wrong size or missing component may fail a must-have, while a small packaging mark may be only a preference. Unknown should remain visible until a targeted check resolves it or the buyer accepts the risk. This structure stops attractive QC photos from changing the original buying standard. Save the final sentence with the listing and date so another reviewer can understand which evidence mattered, which risk remained and why the decision was reasonable at that time. A practical link-first review can be summarized as a controlled sequence. Capture the live source, normalize it without changing the item, search with link and ID, grade every result, compare dated records and then inspect the current unit. At each transfer, preserve the field that carries identity forward. If the link is replaced by a keyword or the option disappears from the note, the chain becomes weaker and the result must be downgraded. This rule applies equally to Taobao, Weidian and 1688 even though their page structures and identifiers differ. Do not force one marketplace's number into another marketplace's search field. Keep source type explicit. If a result is only visually similar, it can still help create a photo checklist, but it should not support claims about the seller or option. Before shipping, reopen the live page and compare its current option wording with the warehouse record. Save any changed price or availability as context, not as proof of quality. The finished note should let another person reproduce the search, identify the same source, see what was matched and understand why the remaining uncertainty was accepted or resolved. A practical final check is to reopen the product from your saved comparison row and compare the marketplace ID with the returned record. If the source link is intact but no QC record appears, use the missing-photo troubleshooting guide. If only visually related products appear, use the image-search verification method before assigning those records to the item. Keep the selected option and the search date beside the link. The search field on this site opens the product catalog; historical QC research and catalog availability are different checks. Finish by saving one verified source address and one clear next action rather than a collection of unrelated thumbnails."
+        "Read a real catalog row before looking up a photo",
+        "The low-top sneakers in our product directory have two numbers. Opening listing 4276 takes you to a catalog page. The source ID shown on the card is 7645681448. Copy the source marketplace and product address from the listing before looking for a QC album. Pasting 4276 into an item-ID field would search for the wrong record.\n\nSuppose the album shows a white pair in EU 42 and the pair you want is grey in EU 43. Even if the seller and source ID agree, the size tag and the photographed colour belong to the white pair. Use it to decide which views to request. When your pair reaches the warehouse, compare the label, colour and both shoes in your own photos before approving shipment."
       ]
     ],
     "textOnly": true,
     "related": [
       "qc-finder-not-working-missing-photos",
-      "findqc-image-search-verify-matches",
-      "qc-photo-matching-exact-item-color-size-batch"
+      "qc-photo-matching-exact-item-color-size-batch",
+      "gl-or-rl-warehouse-qc-photos"
     ],
-    "summary": "Find relevant QC photos from an original product link, verify the marketplace item ID and keep similar results separate from exact matches."
+    "summary": "Open the original listing, copy its marketplace ID and write down the variant. Use that link in a QC finder that accepts the marketplace, then compare the seller and option with the album. The search box on this site opens product listings.",
+    "checkTable": {
+      "caption": "Which part of the product link should you keep?",
+      "columns": [
+        "Marketplace",
+        "Example link pattern",
+        "What to copy"
+      ],
+      "rows": [
+        [
+          "Weidian",
+          "weidian.com/item.html?itemID=…",
+          "The digits after itemID=. Open the product page if a share link lands on a shop."
+        ],
+        [
+          "Taobao",
+          "item.taobao.com/item.htm?id=…",
+          "The digits after id=. Keep the selected size or skuId separately."
+        ],
+        [
+          "1688",
+          "detail.1688.com/offer/….html",
+          "The offer number between /offer/ and .html. Save the colour, pack size and order unit alongside it."
+        ]
+      ]
+    }
   },
   {
     "slug": "qc-photo-matching-exact-item-color-size-batch",

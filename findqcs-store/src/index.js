@@ -62,11 +62,11 @@ const categories = [
 ];
 
 const languages = {
-  en: { label: "EN", search: "Search by product, keyword or source link", button: "Search catalog", eyebrow: "Inspect the item. Not the hype.", heading: "QC Finder Guides, QC Photos and Exact Product Links", slogan: "Inspect the item. Not the hype.", sub: "Use source-matched product finds and practical QC finder workflows to verify product links, photo records, options and listings before you decide.", trending: "Current research set", open: "Inspect listing", guide: "QC guide", finds: "Product finds", sheet: "Spreadsheet", shipping: "Shipping", articles: "Guides", faq: "FAQ" },
-  de: { label: "DE", search: "Nach Produkt, Stichwort oder Link suchen", button: "Katalog durchsuchen", eyebrow: "Prüfe den Artikel. Nicht den Hype.", heading: "QC-Finder-Leitfäden, QC-Fotos und exakte Produktlinks", slogan: "Prüfe den Artikel. Nicht den Hype.", sub: "Nutze quellengenaue Produktfunde und praktische QC-Finder-Abläufe, um Links, Fotos, Optionen und Angebote vor der Entscheidung zu prüfen.", trending: "Aktuelle Auswahl", open: "Angebot prüfen", guide: "QC-Leitfaden", finds: "Produktfunde", sheet: "Tabelle", shipping: "Versand", articles: "Ratgeber", faq: "FAQ" },
-  es: { label: "ES", search: "Buscar por producto, palabra o enlace", button: "Buscar catálogo", eyebrow: "Revisa el artículo. No el ruido.", heading: "Guías QC Finder, fotos QC y enlaces exactos", slogan: "Revisa el artículo. No el ruido.", sub: "Usa productos vinculados a su fuente y flujos QC para comprobar enlaces, fotos, opciones y fichas antes de decidir.", trending: "Selección actual", open: "Revisar ficha", guide: "Guía QC", finds: "Productos", sheet: "Hoja", shipping: "Envío", articles: "Guías", faq: "Preguntas" },
-  fr: { label: "FR", search: "Rechercher un produit, un mot ou un lien", button: "Rechercher", eyebrow: "Inspectez l’article. Pas le battage.", heading: "Guides QC Finder, photos QC et liens produit exacts", slogan: "Inspectez l’article. Pas le battage.", sub: "Utilisez des produits reliés à leur source et des méthodes QC pour vérifier liens, photos, options et fiches avant de décider.", trending: "Sélection actuelle", open: "Voir la fiche", guide: "Guide QC", finds: "Trouvailles", sheet: "Tableur", shipping: "Livraison", articles: "Guides", faq: "FAQ" },
-  it: { label: "IT", search: "Cerca per prodotto, parola o link", button: "Cerca catalogo", eyebrow: "Controlla l’articolo. Non l’hype.", heading: "Guide QC Finder, foto QC e link prodotto esatti", slogan: "Controlla l’articolo. Non l’hype.", sub: "Usa prodotti abbinati alla fonte e flussi QC pratici per verificare link, foto, opzioni e schede prima di decidere.", trending: "Selezione attuale", open: "Controlla scheda", guide: "Guida QC", finds: "Prodotti", sheet: "Foglio", shipping: "Spedizione", articles: "Guide", faq: "FAQ" },
+  en: { label: "EN", search: "Search by product, keyword or source link", button: "Search product listings", eyebrow: "Warehouse photo guides", heading: "Find QC photos for a product link", slogan: "Inspect the item. Not the hype.", sub: "Match Weidian, Taobao and 1688 listings to warehouse photos. Check the size and colour you ordered, or look up a product in the catalog below.", trending: "Current research set", open: "Inspect listing", lookupLink: "Look up QC photos by link", missingLink: "No QC photos found?", guide: "QC guide", finds: "Product finds", sheet: "Spreadsheet", shipping: "Shipping", articles: "Guides", faq: "FAQ" },
+  de: { label: "DE", search: "Nach Produkt, Stichwort oder Link suchen", button: "Produkte suchen", eyebrow: "Ratgeber zu Lagerfotos", heading: "QC-Fotos zum Produktlink finden", slogan: "Prüfe den Artikel. Nicht den Hype.", sub: "Ordne Lagerfotos einem Angebot auf Weidian, Taobao oder 1688 zu. Prüfe die bestellte Größe und Farbe oder suche unten im Produktkatalog.", trending: "Aktuelle Auswahl", open: "Angebot prüfen", lookupLink: "QC-Fotos per Link finden", missingLink: "Keine QC-Fotos gefunden?", guide: "QC-Leitfaden", finds: "Produktfunde", sheet: "Tabelle", shipping: "Versand", articles: "Ratgeber", faq: "FAQ" },
+  es: { label: "ES", search: "Buscar por producto, palabra o enlace", button: "Buscar productos", eyebrow: "Guías de fotos de almacén", heading: "Cómo encontrar fotos QC con el enlace del producto", slogan: "Revisa el artículo. No el ruido.", sub: "Compara las fotos de almacén con la ficha de Weidian, Taobao o 1688. Comprueba la talla y el color que pediste o busca un producto en el catálogo.", trending: "Selección actual", open: "Revisar ficha", lookupLink: "Buscar fotos QC por enlace", missingLink: "¿No aparecen fotos QC?", guide: "Guía QC", finds: "Productos", sheet: "Hoja", shipping: "Envío", articles: "Guías", faq: "Preguntas" },
+  fr: { label: "FR", search: "Rechercher un produit, un mot ou un lien", button: "Chercher un produit", eyebrow: "Guides photo en entrepôt", heading: "Trouver les photos QC à partir du lien produit", slogan: "Inspectez l’article. Pas le battage.", sub: "Comparez les photos prises en entrepôt avec la fiche Weidian, Taobao ou 1688. Vérifiez la taille et la couleur commandées ou recherchez un article dans le catalogue.", trending: "Sélection actuelle", open: "Voir la fiche", lookupLink: "Retrouver les photos QC avec un lien", missingLink: "Aucune photo QC trouvée ?", guide: "Guide QC", finds: "Trouvailles", sheet: "Tableur", shipping: "Livraison", articles: "Guides", faq: "FAQ" },
+  it: { label: "IT", search: "Cerca per prodotto, parola o link", button: "Cerca prodotti", eyebrow: "Guide alle foto di magazzino", heading: "Come trovare le foto QC dal link del prodotto", slogan: "Controlla l’articolo. Non l’hype.", sub: "Confronta le foto di magazzino con la scheda Weidian, Taobao o 1688. Verifica taglia e colore del tuo ordine oppure cerca un articolo nel catalogo.", trending: "Selezione attuale", open: "Controlla scheda", lookupLink: "Trova le foto QC dal link", missingLink: "Non trovi le foto QC?", guide: "Guida QC", finds: "Prodotti", sheet: "Foglio", shipping: "Spedizione", articles: "Guide", faq: "FAQ" },
 };
 
 const spreadsheetCopy = {
@@ -158,11 +158,20 @@ function searchBox(t, lang, compact = false) {
   </form>`;
 }
 
+function lookupGuideLinks(lang) {
+  const t = languages[lang];
+  const guides = [
+    ["use-qc-finder-taobao-weidian-1688-links", t.lookupLink],
+    ["qc-finder-not-working-missing-photos", t.missingLink],
+  ];
+  return `<div class="lookup-guides">${guides.map(([slug, label]) => `<a href="${localizedPath(lang, `/articles/${slug}`)}">${esc(label)} →</a>`).join("")}</div>`;
+}
+
 function home(lang, t) {
   const c = copy[lang];
   return `<main class="home-page">
     <section class="hero hero-editorial">
-      <div class="hero-copy"><p class="issue-line"><span>${esc(c.issue)}</span><span>${esc(c.issueNo)}</span></p><p class="eyebrow"><span></span>${esc(t.eyebrow)}</p><h1>${esc(t.heading).replace("\n", "<br>")}</h1><p class="lede">${esc(t.sub)}</p><div class="hero-search">${searchBox(t, lang)}<div class="quick-tags"><span>${esc(c.quick)}</span>${c.productCategories.slice(0, 4).map((x) => `<button type="button" data-query="${esc(x)}">${esc(x)}</button>`).join("")}</div></div><div class="proof-row">${c.proofs.map(([n, label]) => `<span><b>${esc(n)}</b>${esc(label)}</span>`).join("")}</div></div>
+      <div class="hero-copy"><p class="issue-line"><span>${esc(c.issue)}</span><span>${esc(c.issueNo)}</span></p><p class="eyebrow"><span></span>${esc(t.eyebrow)}</p><h1>${esc(t.heading).replace("\n", "<br>")}</h1><p class="lede">${esc(t.sub)}</p>${lookupGuideLinks(lang)}<div class="hero-search">${searchBox(t, lang)}<div class="quick-tags"><span>${esc(c.quick)}</span>${c.productCategories.slice(0, 4).map((x) => `<button type="button" data-query="${esc(x)}">${esc(x)}</button>`).join("")}</div></div><div class="proof-row">${c.proofs.map(([n, label]) => `<span><b>${esc(n)}</b>${esc(label)}</span>`).join("")}</div></div>
       <div class="hero-collage" aria-label="${esc(t.finds)}"><figure class="collage-main"><img src="${products[0].image}" alt="${esc(c.productNames[0])}" width="760" height="920"><figcaption><span>${esc(t.finds)}</span><b>${esc(c.productNames[0])}</b></figcaption></figure><figure class="collage-small"><img src="${products[3].image}" alt="${esc(c.productNames[3])}" width="480" height="480"><figcaption>${esc(c.productCategories[3])} · 04</figcaption></figure><div class="editor-note"><span>${esc(c.editorNote)}</span><p>${esc(c.editorBody)}</p><i>FQ / 01</i></div></div>
     </section>
     <section class="marquee" aria-label="${esc(c.methodTitle)}">${c.process.map((x, i) => `${i ? "<i>→</i>" : ""}<span>${esc(x)}</span>`).join("")}</section>
@@ -267,7 +276,14 @@ function articlesPage(lang, preview = false) {
     const viewAll = { en: "View all articles", de: "Alle Artikel ansehen", es: "Ver todos los artículos", fr: "Voir tous les articles", it: "Vedi tutti gli articoli" }[lang];
     return block.replace("</div></section>", `</div><a class="article-button all-articles-link" href="${localizedPath(lang, "/articles")}">${esc(viewAll)} →</a></section>`);
   }
-  return `<main class="inner"><section class="page-intro"><p class="eyebrow"><span></span>${esc(c.eyebrow)}</p><h1>${esc(c.title)}</h1><p>${esc(c.intro)}</p></section>${block}${researchBlock(lang, "articles")}</main>`;
+  return `<main class="inner"><section class="page-intro"><p class="eyebrow"><span></span>${esc(c.eyebrow)}</p><h1>${esc(c.title)}</h1><p>${esc(c.intro)}</p>${lookupGuideLinks(lang)}</section>${block}${researchBlock(lang, "articles")}</main>`;
+}
+
+function articleCheckTable(table) {
+  if (!table) return "";
+  const headings = table.columns.map((label) => `<th scope="col">${esc(label)}</th>`).join("");
+  const rows = table.rows.map(([first, ...cells]) => `<tr><th scope="row">${esc(first)}</th>${cells.map((value) => `<td>${esc(value)}</td>`).join("")}</tr>`).join("");
+  return `<table class="guide-check-table"><caption>${esc(table.caption)}</caption><thead><tr>${headings}</tr></thead><tbody>${rows}</tbody></table>`;
 }
 
 function articlePage(lang, slug) {
@@ -278,11 +294,11 @@ function articlePage(lang, slug) {
   const articleDate = article.modified || (slug === "must-haves-vs-preferences-buyer-acceptance-criteria" ? "2026-09-15" : slug === "define-product-use-case-before-search" ? "2026-08-30" : slug === "product-requirements-brief-before-search" ? "2026-08-28" : "2026-08-27");
   const schema = JSON.stringify({ "@context": "https://schema.org", "@type": "Article", headline: article.title, description: article.description, ...(!isTextOnlyArticle ? { image: products[{ "how-to-read-qc-photos": 0, "search-product-link-id-keyword": 4, "actual-vs-volumetric-weight": 1 }[slug] ?? 0].image } : {}), datePublished: article.published || articleDate, dateModified: articleDate, inLanguage: lang, mainEntityOfPage: `${ORIGIN}${localizedPath(lang, `/articles/${slug}`)}`, author: { "@type": "Organization", name: "FindQC Store Editorial Team", url: ORIGIN }, publisher: { "@type": "Organization", name: "FindQC Store", url: ORIGIN } }).replace(/</g, "\\u003c");
   const visualIndex = { "how-to-read-qc-photos": 0, "search-product-link-id-keyword": 4, "actual-vs-volumetric-weight": 1, "product-requirements-brief-before-search": 2 }[slug] ?? 0;
-  const sections = article.sections.map(([title, body], i) => `<section id="step-${i + 1}"><span>${String(i + 1).padStart(2, "0")}</span><h2>${esc(title)}</h2><p>${esc(body)}</p></section>${i === 2 && !isTextOnlyArticle ? `<figure class="article-evidence-photo"><img src="${products[visualIndex].image}" alt="${esc(copy[lang].productNames[visualIndex])}" width="760" height="620" loading="lazy"><figcaption>${esc(copy[lang].productNames[visualIndex])} · ${esc(c.independent)}</figcaption></figure>` : ""}`).join("");
+  const sections = article.sections.map(([title, body], i) => `<section id="step-${i + 1}"><span>${String(i + 1).padStart(2, "0")}</span><h2>${esc(title)}</h2>${body.split(/\n\s*\n/).map((paragraph) => `<p>${esc(paragraph)}</p>`).join("")}</section>${i === 2 && !isTextOnlyArticle ? `<figure class="article-evidence-photo"><img src="${products[visualIndex].image}" alt="${esc(copy[lang].productNames[visualIndex])}" width="760" height="620" loading="lazy"><figcaption>${esc(copy[lang].productNames[visualIndex])} · ${esc(c.independent)}</figcaption></figure>` : ""}`).join("");
   const requestedRelated = (article.related || []).map((target) => seoArticles[lang].find((item) => item.slug === target)).filter((item) => item && item.slug !== slug);
   const related = [...requestedRelated, ...seoArticles[lang].filter((item) => item.slug !== slug && !requestedRelated.includes(item))].slice(0, 3);
   const relatedTitle = { en: "Continue the workflow", de: "Ablauf fortsetzen", es: "Continuar el flujo", fr: "Poursuivre la méthode", it: "Continua il flusso" }[lang];
-  return `<main class="article-page"><script type="application/ld+json">${schema}</script><header class="article-header"><a class="back-link" href="${localizedPath(lang, "/articles")}">← ${esc(c.back)}</a><p class="eyebrow"><span></span>${esc(article.reviewed || c.reviewed)}</p><h1>${esc(article.title)}</h1><p class="standfirst">${esc(article.description)}</p><div class="article-meta"><span>${esc(article.readTime)}</span><span>${esc(c.independent)}</span></div></header><div class="article-layout"><aside><strong>${esc(c.inGuide)}</strong>${article.sections.map(([title], i) => `<a href="#step-${i + 1}">${String(i + 1).padStart(2, "0")} ${esc(title)}</a>`).join("")}</aside><article class="prose"><div class="summary-box"><strong>${esc(c.summary)}</strong><p>${esc(article.summary)}</p></div>${sections}<div class="article-cta"><h2>${esc(c.ready)}</h2><p>${esc(c.readyText)}</p><a class="button" href="${localizedPath(lang, "/finds")}">${esc(c.browse)} →</a></div><section class="related-guides"><h2>${esc(relatedTitle)}</h2>${related.map((item) => `<a href="${localizedPath(lang, `/articles/${item.slug}`)}"><strong>${esc(item.title)}</strong><span>→</span></a>`).join("")}</section></article></div></main>`;
+  return `<main class="article-page" data-guide="${esc(slug)}"><script type="application/ld+json">${schema}</script><header class="article-header"><a class="back-link" href="${localizedPath(lang, "/articles")}">← ${esc(c.back)}</a><p class="eyebrow"><span></span>${esc(article.reviewed || c.reviewed)}</p><h1>${esc(article.title)}</h1><p class="standfirst">${esc(article.description)}</p><div class="article-meta"><span>${esc(article.readTime)}</span><span>${esc(c.independent)}</span></div></header><div class="article-layout"><aside><strong>${esc(c.inGuide)}</strong>${article.sections.map(([title], i) => `<a href="#step-${i + 1}">${String(i + 1).padStart(2, "0")} ${esc(title)}</a>`).join("")}</aside><article class="prose"><div class="summary-box"><strong>${esc(c.summary)}</strong><p>${esc(article.summary)}</p></div>${articleCheckTable(article.checkTable)}${sections}<div class="article-cta"><h2>${esc(c.ready)}</h2><p>${esc(c.readyText)}</p><a class="button" href="${localizedPath(lang, "/finds")}">${esc(c.browse)} →</a></div><section class="related-guides"><h2>${esc(relatedTitle)}</h2>${related.map((item) => `<a href="${localizedPath(lang, `/articles/${item.slug}`)}"><strong>${esc(item.title)}</strong><span>→</span></a>`).join("")}</section></article></div></main>`;
 }
 
 function faqPage(lang) {
@@ -371,6 +387,8 @@ function styles() {
   .home-page .article-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.home-page .article-grid .featured-article{grid-row:auto}.home-page .all-articles-link{margin-top:20px}
   .category-audit{background:#f4eee5}.category-detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line)}.category-detail-grid article{background:#fffaf2;padding:34px}.category-detail-grid h3,.category-faq>h2{font-family:Georgia,"Times New Roman",serif;font-size:32px;font-style:italic;font-weight:400}.category-detail-grid ol,.category-detail-grid ul{padding-left:22px;margin:0}.category-detail-grid li{padding:9px 0;color:var(--muted);line-height:1.6}.mismatch-note{margin:28px 0 70px;padding:24px 28px;background:#174cff;color:white;display:grid;grid-template-columns:.3fr 1fr;gap:28px;align-items:start}.mismatch-note p{margin:0;line-height:1.7}.category-examples{padding-top:10px}.category-products{max-width:820px}.category-empty{padding:24px;border:1px solid var(--line);background:#fffaf2;color:var(--muted);line-height:1.7}.category-faq{margin-top:70px}.category-faq details{border-top:1px solid var(--line)}.category-faq details:last-child{border-bottom:1px solid var(--line)}.category-faq summary{padding:20px 0;display:flex;justify-content:space-between;gap:20px;font-weight:750;cursor:pointer}.category-faq summary i{font-style:normal;color:var(--blue)}.category-faq details p{max-width:760px;color:var(--muted);line-height:1.7;padding-bottom:20px}
   @media(max-width:720px){.category-detail-grid{grid-template-columns:1fr}.category-detail-grid article{padding:22px 18px}.category-detail-grid h3,.category-faq>h2{font-size:26px}.category-detail-grid li{font-size:13px;line-height:1.5}.mismatch-note{grid-template-columns:1fr;margin:18px 0 38px;padding:20px;gap:8px}.mismatch-note p,.category-empty,.category-faq details p{font-size:13px}.category-faq{margin-top:38px}.category-card .article-button,.article-button{font-size:10px}body.home-shell .menu-button{font-size:10px}.home-page .issue-line,.home-page .eyebrow,.home-page .kicker{font-size:9px}.home-page .hero h1{font-size:32px}.home-page .lede{font-size:12px;line-height:1.32}.home-page .hero-search .search-box label,.home-page .hero-search .search-row input{font-size:11px}.home-page .hero-search .search-row button{font-size:10px;height:28px}.home-page .hero-search .search-status,.home-page .quick-tags span{font-size:9px}.home-page .quick-tags button{font-size:10px;padding:3px 5px}.home-page .proof-row span{font-size:9px}.home-page .hero-collage{min-height:480px}.home-page .editor-note span,.home-page .editor-note i,.home-page .collage-main figcaption span,.home-page .collage-small figcaption,.home-page .field-photo figcaption span{font-size:9px}.home-page .marquee{font-size:9px;padding:7px 3px}.home-page .section{padding:22px 4vw}.home-page .section-head{margin-bottom:10px}.home-page .section-head>p,.home-page .article-band>div>p:not(.kicker){font-size:11px;line-height:1.3}.home-page .category-card p,.home-page .evidence-cards p,.home-page .method-grid p{font-size:11px;line-height:1.25}.home-page .category-card .article-button,.home-page .article-button,.home-page .button{font-size:10px}.home-page .category-image span,.home-page .index,.home-page .evidence-cards article>span,.home-page .article-grid span{font-size:9px}.home-page .product-copy p{font-size:11px;line-height:1.2}.home-page .product-meta,.home-page .text-link,.home-page .arrow-link{font-size:9px}.home-page .article-grid p,.home-page .seo-card p{font-size:11px;line-height:1.24}.home-page .field-photo,.home-page .field-photo img{min-height:190px;height:190px}body.home-shell footer p,body.home-shell .footer-links{font-size:10px}}
+  .lookup-guides{display:flex;flex-wrap:wrap;gap:.35rem 1.2rem;margin:1rem 0}.lookup-guides a{font-size:.94rem;font-weight:650;color:var(--ink);text-decoration:underline;text-underline-offset:.2em;padding:.35em 0}.lookup-guides a:hover{text-decoration-thickness:2px}.prose section>p+p{margin-top:1em}
+  .article-layout>.prose{min-width:0}.guide-check-table{width:100%;border-collapse:collapse;margin:1.3rem 0 2.5rem;text-align:start}.guide-check-table caption{text-align:start;font-weight:700;margin-bottom:.65rem}.guide-check-table td,.guide-check-table th{border-bottom:1px solid var(--line);padding:.7rem .45rem;vertical-align:top;overflow-wrap:anywhere}.guide-check-table thead{background:var(--paper)}@media(max-width:600px){.guide-check-table{font-size:.86rem;line-height:1.45}.guide-check-table td,.guide-check-table th{padding:.48rem .25rem}}
   </style>`;
 }
 
@@ -380,7 +398,22 @@ function scripts() {
   document.querySelectorAll('[data-query]').forEach((button)=>button.addEventListener('click',()=>{const input=document.querySelector('#site-search');input.value=button.dataset.query;input.focus()}));
   const localSearch=document.querySelector('#product-grid');const input=document.querySelector('#site-search');if(localSearch&&input){input.addEventListener('input',()=>{const q=input.value.trim().toLowerCase();let visible=0;document.querySelectorAll('.product-card').forEach((card)=>{const show=!q||card.dataset.search.includes(q);card.hidden=!show;if(show)visible++});document.querySelector('.empty-state').hidden=visible!==0})}
   document.querySelectorAll('[data-filter]').forEach((button)=>button.addEventListener('click',()=>{document.querySelectorAll('[data-filter]').forEach(b=>b.classList.remove('active'));button.classList.add('active');const q=button.dataset.filter;let visible=0;document.querySelectorAll('.product-card').forEach((card)=>{const show=q==='all'||card.dataset.search.includes(q);card.hidden=!show;if(show)visible++});document.querySelector('.empty-state').hidden=visible!==0}));
-  document.querySelectorAll('a[href*="cnfanssp.com"]').forEach((link)=>link.addEventListener('click',()=>{if(typeof gtag==='function')gtag('event','main_site_click',{link_url:link.href,link_text:(link.textContent||'').trim(),page_path:location.pathname})}));
+  // The guide journey stays on this site until the reader opens a catalog listing.
+  document.addEventListener('click', (event) => {
+    const link = event.target.closest?.('a[href]');
+    if (!link || typeof gtag !== 'function' || link.origin !== location.origin) return;
+    const source = link.closest('main');
+    if (!source) return;
+    const lang = document.documentElement.lang;
+    const destination = link.pathname.split('/').filter(Boolean);
+    const parent = destination.at(-2);
+    if (parent === 'articles' && !link.hash) {
+      gtag('event', 'guide_open', { guide_slug: destination.at(-1), from_path: location.pathname, site_language: lang });
+    } else if (source.dataset.guide && destination.at(-1) === 'finds') {
+      gtag('event', 'guide_finds_click', { guide_slug: source.dataset.guide, site_language: lang });
+    }
+  });
+  document.querySelectorAll('a[href*="cnfanssp.com"]').forEach((link)=>link.addEventListener('click',()=>{if(typeof gtag==='function')gtag('event','main_site_click',{link_url:link.href,link_text:(link.textContent||'').trim(),link_kind:link.closest('.product-card')?'product':'catalog',site_language:document.documentElement.lang,page_path:location.pathname})}));
   document.querySelectorAll('[data-search-form]').forEach((form)=>form.addEventListener('submit',()=>{if(typeof gtag==='function')gtag('event','catalog_search',{search_term:(form.querySelector('input[name="keywords"]')||{}).value||'',page_path:location.pathname})}));
   </script>`;
 }
@@ -421,11 +454,11 @@ function renderPage(path, lang) {
   }[path];
   const [title, description] = meta;
   const homeTitles = {
-    en: "FindQC Store: QC Finder Guides, QC Photos & Product Links",
-    de: "FindQC Store: QC Finder, QC-Fotos & exakte Produktlinks",
-    es: "FindQC Store: buscador QC, fotos QC y enlaces exactos",
-    fr: "FindQC Store : QC Finder, photos QC et liens exacts",
-    it: "FindQC Store: QC Finder, foto QC e link esatti",
+    en: "FindQC Store | QC Finds & Photo Guides for Weidian and Taobao",
+    de: "FindQC Store | QC-Fotos und Produktfunde auf Weidian und Taobao",
+    es: "FindQC Store | Fotos QC y productos de Weidian y Taobao",
+    fr: "FindQC Store | Photos QC et trouvailles sur Weidian et Taobao",
+    it: "FindQC Store | Foto QC e prodotti su Weidian e Taobao",
   };
   const documentTitle = path === "/" ? homeTitles[lang] : `${title} — FindQC Store`;
   const robots = path === "/privacy" || path === "/terms" ? "noindex,follow" : "index,follow,max-image-preview:large";
@@ -439,7 +472,7 @@ function sitemap() {
   const paths = ["/", "/categories", ...categories.map((category) => `/categories/${category.slug}`), "/finds", "/spreadsheet", "/qc-guide", "/shipping", "/articles", ...seoArticles.en.map((article) => `/articles/${article.slug}`), "/faq"];
   const urls = Object.keys(languages).flatMap((lang) => paths.map((path) => {
     const article = path.startsWith("/articles/") ? seoArticles[lang].find((item) => path.endsWith(item.slug)) : null;
-    const lastmod = article?.modified || (path === "/articles/must-haves-vs-preferences-buyer-acceptance-criteria" ? "2026-09-15" : path === "/" || path === "/articles" ? "2026-10-08" : path === "/spreadsheet" ? "2026-09-17" : "2026-08-30");
+    const lastmod = article?.modified || (path === "/articles/must-haves-vs-preferences-buyer-acceptance-criteria" ? "2026-09-15" : path === "/" || path === "/articles" ? "2026-11-05" : path === "/spreadsheet" ? "2026-09-17" : "2026-08-30");
     return `<url><loc>${ORIGIN}${localizedPath(lang, path)}</loc><lastmod>${lastmod}</lastmod></url>`;
   })).join("");
   return `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${urls}</urlset>`;
@@ -457,7 +490,7 @@ export default {
       if (url.pathname === "/sitemap.xml") return new Response(sitemap(), { headers: { "content-type": "application/xml; charset=utf-8", "cache-control": "public, max-age=3600" } });
       const html = renderPage(path, lang);
       if (!html) return new Response("Not Found", { status: 404, headers: { "content-type": "text/plain; charset=utf-8", "x-robots-tag": "noindex, nofollow" } });
-      return new Response(html, { headers: { "content-type": "text/html; charset=utf-8", "cache-control": "public, max-age=300", "x-content-release": "findqcs-store-2026-10-08", "x-content-type-options": "nosniff", "referrer-policy": "strict-origin-when-cross-origin", "x-frame-options": "SAMEORIGIN" } });
+      return new Response(html, { headers: { "content-type": "text/html; charset=utf-8", "cache-control": "public, max-age=300", "x-content-release": "findqcs-store-2026-11-05", "x-content-type-options": "nosniff", "referrer-policy": "strict-origin-when-cross-origin", "x-frame-options": "SAMEORIGIN" } });
     } catch (error) {
       console.error(JSON.stringify({ event: "render_error", message: error instanceof Error ? error.message : String(error) }));
       return new Response("Temporary service error", { status: 500, headers: { "content-type": "text/plain; charset=utf-8", "x-robots-tag": "noindex, nofollow" } });

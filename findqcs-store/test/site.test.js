@@ -22,9 +22,9 @@ for (const [input, expected] of [
 
 const home = await get("https://findqcs.store/");
 assert.equal(home.response.status, 200);
-assert.match(home.body, /<title>FindQC Store: QC Finder Guides, QC Photos &amp; Product Links<\/title>/);
-assert.match(home.body, /<h1>QC Finder Guides, QC Photos and Exact Product Links<\/h1>/);
-assert.match(home.body, /practical QC finder workflows/);
+assert.match(home.body, /<title>FindQC Store \| QC Finds &amp; Photo Guides for Weidian and Taobao<\/title>/);
+assert.match(home.body, /<h1>Find QC photos for a product link<\/h1>/);
+assert.match(home.body, /Search product listings/);
 assert.equal((home.body.match(/application\/ld\+json/g) || []).length, 2);
 
 for (const lang of ["en", "de", "es", "fr", "it"]) {
@@ -44,7 +44,7 @@ const privacy = await get("https://findqcs.store/privacy");
 assert.match(privacy.body, /<meta name="robots" content="noindex,follow">/);
 
 const sitemap = await get("https://findqcs.store/sitemap.xml");
-assert.equal((sitemap.body.match(/<url>/g) || []).length, 160);
+assert.equal((sitemap.body.match(/<url>/g) || []).length, 170);
 assert.doesNotMatch(sitemap.body, /\/privacy|\/terms/);
 assert.match(sitemap.body, /product-requirements-brief-before-search/);
 assert.match(sitemap.body, /define-product-use-case-before-search/);
