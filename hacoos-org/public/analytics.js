@@ -19,7 +19,7 @@
     var link = e.target instanceof Element && e.target.closest('a[href]');
     if (!link) return;
     var url = new URL(link.href, location.href);
-    if (url.hostname === 'cnfanshp.com' || url.hostname === 'www.cnfanshp.com') {
+    if (url.hostname === 'cnfansge.com' || url.hostname === 'www.cnfansge.com') {
       event(url.pathname.indexOf('/AllProducts/') === 0 ? 'product_click' : 'category_click', {
         destination_path: url.pathname
       });

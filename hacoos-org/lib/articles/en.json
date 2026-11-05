@@ -1,5 +1,105 @@
 [
   {
+    "id": "how-to-buy-on-hacoo",
+    "tag": "First Hacoo order",
+    "title": "How to Buy on Hacoo From a Shared Product Link",
+    "description": "Follow a shared Hacoo link, identify where it opens, check the size and checkout total, and find the record of your first order.",
+    "intro": "Buying through Hacoo starts in the app. Follow the shared link to identify the item, sign in to Hacoo, choose the exact option and review the cart before paying. A spreadsheet can help you find a product, but some links lead to a different shop. Here is how to tell which route you are on.",
+    "sections": [
+      [
+        "Where does the shared link take you?",
+        "Open the link from the original message or post and look at the destination. You might see a Hacoo creator’s recommendation, the app home screen, a specific product or a listing in an independent catalogue. Each gives you a different starting point. A creator may feature several items in one outfit, so check whether the link under the photograph refers to the jacket, trousers or shoes. Keep the original post open until you can identify the item from the details on the page.",
+        "Suppose a friend sends a photo of a cream zip hoodie with a blue chest patch. The spreadsheet row opens a third-party product page with a marketplace purchase button. You can use that page to learn about the hoodie, but paying there would place an order through that other service. If you want to buy in Hacoo, ask your friend for the Hacoo share link for that exact hoodie. A marketplace item number alone gives you no assurance that Hacoo uses the same identifier."
+      ],
+      [
+        "Open the item in the Hacoo app",
+        "Hacoo’s ordering instructions start with opening its app and logging in. If you need the app, use the download link on Hacoo’s own website. Open it normally first, sign in to the account you intend to use, then return to the shared link. If the link previously opened a login prompt or a download page, this second attempt lets you see what happens once the app is ready. There is no reason to enter Hacoo login details into an independent product directory.",
+        "If the app lands on its home screen, try the original link from your usual browser instead of the preview inside the message. Note where the link takes you each time. When it repeatedly opens the feed, ask the sender to share the product again from the item they can see. If the item opens with a message about availability, record that wording before looking for a replacement. An unavailable listing and a link that never reached a listing need different next steps."
+      ],
+      [
+        "Choose the exact product and variant",
+        "Match the page to the detail that attracted you. For the cream hoodie, look for the full zip, patch placement and pocket shape, then find the name of the colour option. A gallery can contain photographs of several versions of an item. Select the colour you want and read the option text beside the selection. If the photo shows a contrast hood lining but the description lists a plain one, use the seller or support contact available on the listing to clarify before committing.",
+        "Check what one unit includes. A styled photograph may show a hoodie with matching joggers, or two colours hanging side by side. Read the selected option and the description for the contents of the purchase. If you can only establish that you are buying one hoodie, compare prices on that basis. Save the link and a note of the chosen colour and size. Those two details are more useful than a screenshot of the first gallery image when you check the cart."
+      ],
+      [
+        "Use the measurements for that option",
+        "For clothing, find out what the chart actually measures. A flat garment width across the chest and a body circumference are different quantities. If the chart gives a flat width, lay a hoodie you like on a level surface and measure between the same points without stretching it. Compare the stated length as well. A wider hoodie can still feel too short, and a larger size can change both dimensions. Keep the units visible when comparing numbers read from different charts.",
+        "Try the comparison with a concrete example. Your own hoodie measures 57 cm across the chest. The selected garment chart lists 54 cm for one size and 58 cm for the next. If both widths were measured in the same way, the second is closer to your reference garment across the chest. Now check its sleeve and body length before choosing. When the listing gives only letter sizes, ask for the measurement that matters most instead of assuming a familiar size will fit."
+      ],
+      [
+        "Check what went into the cart",
+        "After selecting the item, add it to the Hacoo cart and read the resulting line. Verify the description, selected size, colour, quantity and price for that combination. A price shown in a search result can refer to another option. If you changed from the plain hoodie to the patch version, make sure the total now refers to that version. Remove any trial choices you added while comparing sizes. Two similar cart lines can be easy to mistake for a single item shown twice.",
+        "If you want different sizes for two people, look for two separate lines showing the intended sizes. A quantity of two beside size M describes two units of M. Revisit the item page to add the second size if needed, then check both lines again. A quick read here can save a refund request later. Save your shortlist separately if you want to think overnight, and reopen the cart before paying to confirm that the same options are still available."
+      ],
+      [
+        "Read the total for your address",
+        "At checkout, read the delivery address as the carrier will receive it. Check the recipient, apartment or building number, postcode and country. Then review the shipping charge, delivery estimate, currency and order total displayed for that address. Consider an estimate against the date you actually need the item. A delivery range that ends after your trip leaves you with a real timing risk, even if the low end of the range looks suitable. Keep any time-sensitive decision tied to the estimate for this order.",
+        "When using an offer, look for its effect on the payable total. A code mentioned in a post may have conditions that depend on the account, item or date. Enter it only where the checkout offers that option, read any message and check the final amount. For example, if a discount reduces the merchandise subtotal while shipping stays the same, compare the two final totals with shipping included. Save the relevant offer terms if the discount affects your decision to place the order."
+      ],
+      [
+        "Pay once and look for the confirmation",
+        "Use a payment method offered in your checkout. Before confirming, read the amount and currency on the payment step and check they agree with the total you have accepted. Then allow the payment flow to bring you back to Hacoo. Look for an order confirmation in the same account and check the item, selected option and delivery details against what you intended to buy. Keep the order reference somewhere you can find it without relying on the shared link.",
+        "A closed window or a slow return from the payment screen can leave you unsure whether an order was created. Open the order list and look for an entry with the amount and approximate time before attempting the payment again. A payment notification gives you something to investigate, but it does not identify the size or item that an order contains. If the records do not match, use the app’s support chat with the time, amount and any reference available. Keep payment credentials private."
+      ],
+      [
+        "Find the order after the product link changes",
+        "Your order record is the place to start for a delivery, cancellation or after-sales question. Find the purchase under My orders in the account used at checkout. If a product link leads to a newer listing tomorrow, the receipt still ties your purchase to its date, selected variant and amount. For a tracking question, follow the information attached to the order. When more than one parcel is shown, match the particular parcel to the item before checking its delivery progress.",
+        "Imagine the friend who sent the hoodie later shares a new link with a different price. Before changing anything, open your existing order and see what you agreed to buy. Compare the actual colour, size and paid amount with your saved notes. If you need help, explain one discrepancy and give the order reference privately through the relevant support channel. Hacoo’s official contact page directs app and account questions to in-app support. For an item bought through a separate marketplace, use that marketplace’s receipt and support route."
+      ]
+    ],
+    "publishedAt": "2026-11-05"
+  },
+  {
+    "id": "cancel-hacoo-order-before-shipping",
+    "tag": "Order cancellation",
+    "title": "Can I Cancel a Hacoo Order Before It Ships?",
+    "description": "Find the right order in Hacoo, check whether it has shipped, request cancellation and verify the outcome before reordering or following up about a refund.",
+    "intro": "Hacoo’s European help centre says an unshipped order can be cancelled from My orders using Cancel. Open the order in the account that paid for it and check its current status. If it has shipped, or you cannot see the control, the next step depends on what the order actually shows.",
+    "sections": [
+      [
+        "Find the purchase you want to cancel",
+        "Start with the receipt or order confirmation and identify who accepted the order. A Hacoo post, an independent spreadsheet and a marketplace listing can all show the same pair of shoes. If your receipt came from another shop or shopping service, use that service’s order history. For a purchase made inside Hacoo, sign in to the account you used to pay and open My orders. The page for the shoes may have changed since then, but the order reference will still help identify your transaction.",
+        "Take a moment to match the reference, purchase date, amount and item. This is especially important when the problem involves duplicate orders. Two pairs in different sizes can have the same total and an almost identical thumbnail. Write down which reference you want to keep and which one you want to cancel. If you only have a payment notification, look for a matching order first. Acting on a similar-looking entry can cancel the purchase you actually wanted to receive."
+      ],
+      [
+        "Check whether the order has shipped",
+        "Open the order details and read the status there. A delivery estimate on the product listing describes a possible future purchase. A tracking number in a message might belong to a different parcel. Look for shipment information tied to your exact reference and note the wording as displayed. If you can see separate item or parcel statuses, look at the one containing the unwanted item. Keep the time of your check, since the status may change while you are deciding how to proceed.",
+        "Hacoo’s European cancellation guidance makes shipment the dividing line. It directs buyers with an unshipped order to the cancellation control and gives different instructions once the order has shipped. It does not set a guaranteed number of hours during which every order can be cancelled. An order placed recently can already show a shipment status, while another placed earlier can still be preparing. If the status is unclear, ask support about the order as it appears now and include the reference."
+      ],
+      [
+        "Use Cancel and read the result",
+        "If the order is unshipped and Cancel is available, select it for the verified order. Read any confirmation screen closely, especially the order number and the items affected. If you want to remove one item from a basket of three, check whether the screen names just that item or the whole purchase before confirming. Use the reason that fits if a reason is requested. There is no need to start a separate return from a product page to cancel an unshipped order.",
+        "After you confirm, reopen the order details. A cancelled status or a cancellation confirmation provides a useful record. If the screen instead reports that a request was received, keep that message and follow the request through to its outcome. Save the reference and the time of the action. If the app closes before displaying a result, check the order again rather than assuming the action succeeded. Until you can establish its status, placing a replacement order could leave two active purchases."
+      ],
+      [
+        "What if the Cancel button is missing?",
+        "Open Hacoo directly and revisit My orders once to get the latest order details. Check whether the payment was made with a different account and whether the order you opened is the right one. If you are viewing a creator post, a parcel-tracking page or the product listing, go back to the actual transaction. Those screens can contain helpful information while offering no cancellation control. If the order now shows shipped, move on to the instructions for a dispatched purchase.",
+        "When an order still appears unshipped and the control is absent, contact Hacoo using the support route in the app. Give the order reference, the exact status, the item and the time you checked. A concise message might read, “I want to cancel order ending 4821. At 10:15 it showed preparing. I opened its details under My orders and could not find Cancel. Can you confirm whether cancellation is still possible?” Keep any reply attached to the same conversation so you can follow the result."
+      ],
+      [
+        "Changing a size or removing one item",
+        "Suppose you purchased size 39 instead of size 40 and want to keep the rest of the basket. First see whether the submitted order offers an action for that specific line. Hacoo’s help on adding or removing items describes cancelling the original order and placing a new one when you need to change its contents. Read how much of the order the cancellation would affect. Before cancelling an entire basket for one size change, check the other items and whether the replacement size is still available.",
+        "Make a short copy of the options you want to retain, including size, colour and quantity. Check the current basket total for a replacement purchase. Stock, shipping and any offer applied at your first checkout can affect the decision you make today. Once cancellation of the original has been confirmed, verify the replacement as a fresh order before paying. Keep both references and label them clearly. If support later asks about the old purchase, sending the new order number can delay the answer."
+      ],
+      [
+        "When the delivery address is the problem",
+        "Read the address saved on the submitted order to identify the mistake. A flat number missing from an otherwise correct address presents a different question from a parcel addressed to another country. Updating an address in your account for future purchases may leave the submitted purchase as it was. Hacoo’s address help directs buyers with a preparing order to customer service and says the country cannot be changed at that stage. Ask whether the specific correction can still be applied to this order.",
+        "Send the necessary address details privately in the official support conversation. Request confirmation against the order reference and check the updated destination in the order details if it is displayed. If the destination cannot be corrected and the order remains unshipped, check whether cancellation is available. If it has shipped, Hacoo’s address guidance says the shipping address can no longer be edited there. Use the instructions for your order and carrier rather than relying on a change saved to your profile."
+      ],
+      [
+        "When tracking already shows a shipment",
+        "Once the order has shipped, read the after-sales instructions for that destination and contact support with the order and parcel reference. Hacoo’s European help describes a possible route involving refusal of the parcel and contacting Hacoo once the parcel has been returned. Check whether that route applies to your delivery before acting. The carrier may already have delivered it, left it at a collection point or handed it to another recipient. Explain what has happened so that the response addresses your actual options.",
+        "For an order containing several items, ask which items the parcel contains before refusing a delivery. A sealed parcel could include the item you want to keep. If it is already in your possession, consult the return instructions for your order and wait for the correct destination and method. For a parcel travelling back, keep the tracking evidence and date of return. A parcel scan describes where the shipment went. The outcome of an after-sales request is a separate detail to obtain from Hacoo."
+      ],
+      [
+        "Check the cancellation and any refund separately",
+        "Keep a short record showing the order reference, the cancellation confirmation and any amount or refund status displayed. If one charge covered several items, compare the amount with the order or items the cancellation actually covered. If your payment provider shows a pending transaction, capture the wording and check what it becomes before describing it as a second completed payment. Avoid promising yourself a fixed refund date unless the order or support message gives a timeframe applicable to this transaction.",
+        "If the stated timeframe passes, reply in the original support conversation with the confirmation date, amount, currency and the last status you can see. Ask which step has been completed and whether there is a refund reference your payment provider can use. Keep private details inside that official channel and share only what is needed to identify the transaction. Once the order is cancelled and any expected amount is accounted for, retain the short record alongside the receipt for any replacement order."
+      ]
+    ],
+    "publishedAt": "2026-11-05"
+  },
+  {
     "id": "hacoo-links-not-opening",
     "tag": "Link troubleshooting",
     "title": "Hacoo Links Not Opening: App, Account and Listing Checks",

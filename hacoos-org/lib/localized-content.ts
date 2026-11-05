@@ -7,6 +7,8 @@ import {
 import { seoArticles } from "@/lib/seo-articles";
 
 const articleOrder = [
+  "how-to-buy-on-hacoo",
+  "cancel-hacoo-order-before-shipping",
   "hacoo-links-not-opening",
   "hacoo-order-tracking",
   "hacoo-returns-refunds",
@@ -37,7 +39,8 @@ type UiCopy = {
   entryPoints: string;
   editorialSteps: Array<[string, string]>;
   sourceNote: [string, string];
-  articleLibrary: [string, string, string];
+  articleLibrary: [string, string];
+  topics: [string, string, string];
   guideHub: [string, string, string];
   guideSteps: Array<[string, string]>;
   onThisPage: string;
@@ -83,7 +86,8 @@ const enUi: UiCopy = {
     ["Shortlist three", "Compare evidence and delivered cost. Stop searching when three options satisfy the same brief."],
   ],
   sourceNote: ["Every card opens a live source page", "Re-check the title, images, variant and availability before relying on a saved reference."],
-  articleLibrary: ["HACOO GUIDE LIBRARY", "Fifteen independent articles", "Each article has its own indexable URL, full language version and a focused search intent."],
+  articleLibrary: ["HACOO GUIDE LIBRARY", "Choose a guide"],
+  topics: ["Find a product", "Before you order", "After you order"],
   guideHub: ["DECISION PATH", "Use the guides in the right order", "Move from discovery to evidence, sizing and parcel planning without skipping the decision points that matter."],
   guideSteps: [
     ["Define the brief", "Write down use, fit, material and the detail you will not compromise on."],
@@ -133,7 +137,8 @@ const de: LocaleText = {
       ["Drei auswählen", "Belege und gelieferte Gesamtkosten vergleichen. Die Suche beenden, sobald drei Optionen denselben Kriterien entsprechen."],
     ],
     sourceNote: ["Jede Karte öffnet eine aktive Quellseite", "Titel, Bilder, Variante und Verfügbarkeit erneut prüfen, bevor eine gespeicherte Referenz verwendet wird."],
-    articleLibrary: ["HACOO-RATGEBER", "Fünfzehn unabhängige Artikel", "Jeder Artikel besitzt eine eigene indexierbare URL, eine vollständige Sprachversion und eine klar abgegrenzte Suchintention."],
+    articleLibrary: ["HACOO-RATGEBER", "Ratgeber auswählen"],
+    topics: ["Produkte finden", "Vor der Bestellung", "Nach der Bestellung"],
     guideHub: ["ENTSCHEIDUNGSWEG", "Die Ratgeber in der richtigen Reihenfolge nutzen", "Von der Entdeckung über Belege und Größen bis zur Paketplanung gehen, ohne wichtige Entscheidungspunkte zu überspringen."],
     guideSteps: [
       ["Anforderungen definieren", "Nutzung, Passform, Material und das nicht verhandelbare Detail notieren."],
@@ -167,38 +172,12 @@ const de: LocaleText = {
     ["Hosen & Shorts", "Passformorientierte Unterteile und Sets"], ["Kopfbedeckungen", "Caps, Strick und abschließende Details"],
     ["Accessoires", "Taschen, Hüllen, Schmuck und Uhren"], ["Elektronik", "Kleine Geräte und Alltagsnutzen"],
   ],
-  products: [
-  [
-    "Sportschuh-Referenz",
-    "Schuhe",
-    "Genaue Farbe und Größe vergleichen"
-  ],
-  [
-    "Grafik-Hoodie-Referenz",
-    "Hoodies",
-    "Maße und gewähltes Motiv prüfen"
-  ],
-  [
-    "Alltagssneaker-Referenz",
-    "Schuhe",
-    "Aktuelle Farboption prüfen"
-  ],
-  [
-    "Kurzarmhemd-Referenz",
-    "Hemden",
-    "Kragen, Ärmel und Brustmaße vergleichen"
-  ],
-  [
-    "Gürtel-Referenz",
-    "Accessoires",
-    "Länge, Breite und Schließe bestätigen"
-  ],
-  [
-    "Weiße Sneaker-Referenz",
-    "Schuhe",
-    "Aktuelle Variante und Detailfotos prüfen"
-  ]
-],
+  products: [["Legacy 312 Low Sneaker", "Schuhe", "Genaue Farbe und Größe vergleichen"],
+    ["4tune-Kapuzenjacke mit Reißverschluss", "Hoodies", "Maße und gewähltes Motiv prüfen"],
+    ["Samba Low Sneaker", "Schuhe", "Aktuelle Farboption prüfen"],
+    ["Kurzärmliges Poloshirt", "Poloshirts", "Kragen, Ärmel und Brustmaße vergleichen"],
+    ["FF-Canvasgürtel", "Accessoires", "Länge, Breite und Schließe bestätigen"],
+    ["Gel-Kayano-Laufschuhe", "Schuhe", "Aktuelle Variante und Detailfotos prüfen"]],
   faqs: [
     ["Ist Hacoos.org die offizielle Hacoo-Website?", "Nein. Hacoos.org ist ein unabhängiger Informationsindex. Hacoo beschreibt sich als globale Community zum Teilen von Inhalten; diese Bibliothek ist ein eigenständiges Recherche- und Navigationsprojekt."],
     ["Verkauft oder versendet diese Website Produkte?", "Nein. Sie veröffentlicht redaktionellen Kontext und Links zu aktiven Referenzseiten. Kauf, Zahlung, Verkäuferkontakt, Prüfung und Versand finden an anderer Stelle statt."],
@@ -279,7 +258,8 @@ const fr: LocaleText = {
       ["Retenir trois options", "Comparez les preuves et le coût livré. Arrêtez la recherche lorsque trois options répondent au même cahier des charges."],
     ],
     sourceNote: ["Chaque carte ouvre une fiche source active", "Vérifiez de nouveau le titre, les images, la variante et la disponibilité avant d’utiliser une référence enregistrée."],
-    articleLibrary: ["GUIDES HACOO", "Quinze articles indépendants", "Chaque article possède sa propre URL indexable, une version linguistique complète et une intention de recherche précise."],
+    articleLibrary: ["GUIDES HACOO", "Choisir un guide"],
+    topics: ["Trouver un produit", "Avant de commander", "Après la commande"],
     guideHub: ["PARCOURS DE DÉCISION", "Utiliser les guides dans le bon ordre", "Passez de la découverte aux preuves, aux tailles et à la préparation du colis sans ignorer les décisions importantes."],
     guideSteps: [
       ["Définir le besoin", "Notez l’usage, la coupe, la matière et le détail sur lequel vous ne transigerez pas."],
@@ -310,38 +290,12 @@ const fr: LocaleText = {
     ["Pantalons et shorts", "Bas et ensembles guidés par la coupe"], ["Couvre-chefs", "Casquettes, mailles et pièces de finition"],
     ["Accessoires", "Sacs, étuis, bijoux et montres"], ["Électronique", "Petits appareils et utilité quotidienne"],
   ],
-  products: [
-  [
-    "Référence de chaussure de sport",
-    "Chaussures",
-    "Comparer couleur et pointure exactes"
-  ],
-  [
-    "Référence de sweat à motif",
-    "Sweats",
-    "Vérifier mesures et motif choisi"
-  ],
-  [
-    "Référence de basket quotidienne",
-    "Chaussures",
-    "Vérifier le coloris actuel"
-  ],
-  [
-    "Référence de chemise à manches courtes",
-    "Chemises",
-    "Comparer col, manches et poitrine"
-  ],
-  [
-    "Référence de ceinture",
-    "Accessoires",
-    "Confirmer longueur, largeur et boucle"
-  ],
-  [
-    "Référence de basket blanche",
-    "Chaussures",
-    "Vérifier variante et photos de détail"
-  ]
-],
+  products: [["Baskets basses Legacy 312", "Chaussures", "Comparer couleur et pointure exactes"],
+    ["Sweat à capuche zippé 4tune", "Sweats", "Vérifier mesures et motif choisi"],
+    ["Baskets basses Samba", "Chaussures", "Vérifier le coloris actuel"],
+    ["Polo à manches courtes", "Polos", "Comparer col, manches et poitrine"],
+    ["Ceinture en toile FF", "Accessoires", "Confirmer longueur, largeur et boucle"],
+    ["Chaussures de running Gel-Kayano", "Chaussures", "Vérifier variante et photos de détail"]],
   faqs: [
     ["Hacoos.org est-il le site officiel de Hacoo ?", "Non. Hacoos.org est un index informatif indépendant. Hacoo se présente comme une communauté mondiale de partage de contenus ; cette bibliothèque est un projet distinct de recherche et de navigation."],
     ["Ce site vend-il ou expédie-t-il des produits ?", "Non. Il publie du contexte éditorial et des liens vers des fiches actives. Achat, paiement, échange avec le vendeur, inspection et expédition ont lieu ailleurs."],
@@ -422,7 +376,8 @@ const es: LocaleText = {
       ["Elige tres", "Compara pruebas y coste entregado. Deja de buscar cuando tres opciones cumplan el mismo objetivo."],
     ],
     sourceNote: ["Cada tarjeta abre una página fuente activa", "Vuelve a comprobar título, imágenes, variante y disponibilidad antes de confiar en una referencia guardada."],
-    articleLibrary: ["GUÍAS HACOO", "Quince artículos independientes", "Cada artículo tiene una URL indexable propia, una versión completa en cada idioma y una intención de búsqueda definida."],
+    articleLibrary: ["GUÍAS HACOO", "Elegir una guía"],
+    topics: ["Encontrar un producto", "Antes de comprar", "Después del pedido"],
     guideHub: ["RUTA DE DECISIÓN", "Usa las guías en el orden adecuado", "Pasa del descubrimiento a las pruebas, las tallas y la planificación del paquete sin saltarte decisiones importantes."],
     guideSteps: [
       ["Define el objetivo", "Anota el uso, el ajuste, el material y el detalle que no estás dispuesto a ceder."],
@@ -453,38 +408,12 @@ const es: LocaleText = {
     ["Pantalones y shorts", "Prendas inferiores y conjuntos guiados por el ajuste"], ["Accesorios de cabeza", "Gorras, punto y piezas finales"],
     ["Accesorios", "Bolsos, fundas, joyería y relojes"], ["Electrónica", "Dispositivos pequeños y utilidad diaria"],
   ],
-  products: [
-  [
-    "Referencia de zapatilla deportiva",
-    "Calzado",
-    "Compara color y talla exactos"
-  ],
-  [
-    "Referencia de sudadera gráfica",
-    "Sudaderas",
-    "Revisa medidas y diseño elegido"
-  ],
-  [
-    "Referencia de zapatilla diaria",
-    "Calzado",
-    "Verifica el color actual"
-  ],
-  [
-    "Referencia de camisa de manga corta",
-    "Camisas",
-    "Compara cuello, manga y pecho"
-  ],
-  [
-    "Referencia de cinturón",
-    "Accesorios",
-    "Confirma largo, ancho y hebilla"
-  ],
-  [
-    "Referencia de zapatilla blanca",
-    "Calzado",
-    "Revisa variante y fotos de detalle"
-  ]
-],
+  products: [["Zapatillas bajas Legacy 312", "Calzado", "Compara color y talla exactos"],
+    ["Sudadera 4tune con cremallera", "Sudaderas", "Revisa medidas y diseño elegido"],
+    ["Zapatillas bajas Samba", "Calzado", "Verifica el color actual"],
+    ["Polo de manga corta", "Polos", "Compara cuello, manga y pecho"],
+    ["Cinturón de lona FF", "Accesorios", "Confirma largo, ancho y hebilla"],
+    ["Zapatillas de running Gel-Kayano", "Calzado", "Revisa variante y fotos de detalle"]],
   faqs: [
     ["¿Hacoos.org es la web oficial de Hacoo?", "No. Hacoos.org es un índice informativo independiente. Hacoo se describe como una comunidad global para compartir contenidos; esta biblioteca es un proyecto separado de investigación y navegación."],
     ["¿Esta web vende o envía productos?", "No. Publica contexto editorial y enlaces a páginas activas. La compra, el pago, la comunicación con el vendedor, la inspección y el envío tienen lugar en otros servicios."],
@@ -565,7 +494,8 @@ const it: LocaleText = {
       ["Selezionane tre", "Confronta prove e costo consegnato. Smetti di cercare quando tre opzioni soddisfano lo stesso brief."],
     ],
     sourceNote: ["Ogni scheda apre una pagina sorgente attiva", "Ricontrolla titolo, immagini, variante e disponibilità prima di fare affidamento su un riferimento salvato."],
-    articleLibrary: ["GUIDE HACOO", "Quindici articoli indipendenti", "Ogni articolo ha un proprio URL indicizzabile, una versione linguistica completa e un intento di ricerca specifico."],
+    articleLibrary: ["GUIDE HACOO", "Scegli una guida"],
+    topics: ["Trovare un prodotto", "Prima di ordinare", "Dopo l’ordine"],
     guideHub: ["PERCORSO DECISIONALE", "Usa le guide nell’ordine corretto", "Passa dalla scoperta alle prove, alle taglie e alla pianificazione del pacco senza saltare i passaggi decisivi."],
     guideSteps: [
       ["Definisci il brief", "Annota uso, vestibilità, materiale e il dettaglio su cui non accetti compromessi."],
@@ -596,38 +526,12 @@ const it: LocaleText = {
     ["Pantaloni e shorts", "Capi inferiori e completi guidati dalla vestibilità"], ["Copricapi", "Cappelli, maglieria e dettagli finali"],
     ["Accessori", "Borse, custodie, gioielli e orologi"], ["Elettronica", "Piccoli dispositivi e utilità quotidiana"],
   ],
-  products: [
-  [
-    "Riferimento scarpa sportiva",
-    "Scarpe",
-    "Confronta colore e taglia esatti"
-  ],
-  [
-    "Riferimento felpa grafica",
-    "Felpe",
-    "Verifica misure e disegno scelto"
-  ],
-  [
-    "Riferimento sneaker quotidiana",
-    "Scarpe",
-    "Controlla il colore attuale"
-  ],
-  [
-    "Riferimento camicia a maniche corte",
-    "Camicie",
-    "Confronta collo, maniche e petto"
-  ],
-  [
-    "Riferimento cintura",
-    "Accessori",
-    "Conferma lunghezza, larghezza e fibbia"
-  ],
-  [
-    "Riferimento sneaker bianca",
-    "Scarpe",
-    "Controlla variante e foto dettagliate"
-  ]
-],
+  products: [["Sneakers basse Legacy 312", "Scarpe", "Confronta colore e taglia esatti"],
+    ["Felpa 4tune con cappuccio e zip", "Felpe", "Verifica misure e disegno scelto"],
+    ["Sneakers basse Samba", "Scarpe", "Controlla il colore attuale"],
+    ["Polo a maniche corte", "Polo", "Confronta collo, maniche e petto"],
+    ["Cintura in tela FF", "Accessori", "Conferma lunghezza, larghezza e fibbia"],
+    ["Scarpe da corsa Gel-Kayano", "Scarpe", "Controlla variante e foto dettagliate"]],
   faqs: [
     ["Hacoos.org è il sito ufficiale di Hacoo?", "No. Hacoos.org è un indice informativo indipendente. Hacoo si descrive come una comunità globale di condivisione dei contenuti; questa biblioteca è un progetto separato di ricerca e navigazione."],
     ["Questo sito vende o spedisce prodotti?", "No. Pubblica contesto editoriale e link a pagine attive. Acquisto, pagamento, comunicazione con il venditore, ispezione e spedizione avvengono altrove."],
@@ -708,7 +612,8 @@ const pt: LocaleText = {
       ["Escolha três", "Compare provas e custo entregue. Pare de procurar quando três opções cumprirem o mesmo objetivo."],
     ],
     sourceNote: ["Cada cartão abre uma página de origem ativa", "Volte a confirmar título, imagens, variante e disponibilidade antes de confiar numa referência guardada."],
-    articleLibrary: ["GUIAS HACOO", "Quinze artigos independentes", "Cada artigo tem um URL indexável próprio, uma versão linguística completa e uma intenção de pesquisa definida."],
+    articleLibrary: ["GUIAS HACOO", "Escolha um guia"],
+    topics: ["Encontrar um produto", "Antes de encomendar", "Depois da encomenda"],
     guideHub: ["PERCURSO DE DECISÃO", "Use os guias pela ordem correta", "Passe da descoberta às provas, aos tamanhos e ao planeamento do pacote sem ignorar decisões importantes."],
     guideSteps: [
       ["Defina o objetivo", "Anote utilização, corte, material e o detalhe em que não aceita compromisso."],
@@ -739,38 +644,12 @@ const pt: LocaleText = {
     ["Calças e calções", "Peças inferiores e conjuntos guiados pelo corte"], ["Acessórios de cabeça", "Bonés, malhas e peças finais"],
     ["Acessórios", "Malas, capas, joias e relógios"], ["Eletrónica", "Pequenos dispositivos e utilidade diária"],
   ],
-  products: [
-  [
-    "Referência de calçado desportivo",
-    "Calçado",
-    "Compare cor e tamanho exatos"
-  ],
-  [
-    "Referência de sweatshirt gráfica",
-    "Sweatshirts",
-    "Verifique medidas e desenho escolhido"
-  ],
-  [
-    "Referência de sapatilha diária",
-    "Calçado",
-    "Confirme a opção de cor atual"
-  ],
-  [
-    "Referência de camisa de manga curta",
-    "Camisas",
-    "Compare gola, manga e peito"
-  ],
-  [
-    "Referência de cinto",
-    "Acessórios",
-    "Confirme comprimento, largura e fivela"
-  ],
-  [
-    "Referência de sapatilha branca",
-    "Calçado",
-    "Verifique variante e fotografias de detalhe"
-  ]
-],
+  products: [["Sapatilhas de cano baixo Legacy 312", "Calçado", "Compare cor e tamanho exatos"],
+    ["Sweatshirt 4tune com capuz e fecho", "Sweatshirts", "Verifique medidas e desenho escolhido"],
+    ["Sapatilhas de cano baixo Samba", "Calçado", "Confirme a opção de cor atual"],
+    ["Polo de manga curta", "Polos", "Compare gola, manga e peito"],
+    ["Cinto em lona FF", "Acessórios", "Confirme comprimento, largura e fivela"],
+    ["Sapatilhas de corrida Gel-Kayano", "Calçado", "Verifique variante e fotografias de detalhe"]],
   faqs: [
     ["Hacoos.org é o site oficial da Hacoo?", "Não. Hacoos.org é um índice informativo independente. A Hacoo descreve-se como uma comunidade global de partilha de conteúdos; esta biblioteca é um projeto separado de pesquisa e navegação."],
     ["Este site vende ou envia produtos?", "Não. Publica contexto editorial e ligações para páginas ativas. Compra, pagamento, contacto com vendedor, inspeção e envio acontecem noutros serviços."],

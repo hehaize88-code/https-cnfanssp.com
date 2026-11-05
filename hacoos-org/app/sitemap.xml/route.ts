@@ -3,8 +3,8 @@ import { localizedContent } from "@/lib/localized-content";
 
 export async function GET() {
   const urls = [
-    ...locales.map((locale) => ({ url: `https://hacoos.org/${locale}`, lastmod: "2026-10-09" })),
-    ...locales.flatMap((locale) => sections.map((section) => ({ url: `https://hacoos.org/${locale}/${section}`, lastmod: "2026-10-09" }))),
+    ...locales.map((locale) => ({ url: `https://hacoos.org/${locale}`, lastmod: "2026-11-05" })),
+    ...locales.flatMap((locale) => sections.map((section) => ({ url: `https://hacoos.org/${locale}/${section}`, lastmod: ["articles", "guides", "spreadsheet", "finds"].includes(section) ? "2026-11-05" : "2026-10-09" }))),
     ...locales.flatMap((locale) => localizedContent[locale].longGuides.map((article) => ({ url: `https://hacoos.org/${locale}/articles/${article.id}`, lastmod: article.modifiedAt ?? "2026-09-16" }))),
   ];
   const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${urls.map(({ url, lastmod }) => `\n  <url><loc>${url}</loc><lastmod>${lastmod}</lastmod></url>`).join("")}\n</urlset>`;

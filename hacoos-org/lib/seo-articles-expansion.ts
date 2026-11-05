@@ -44,14 +44,15 @@ const en: LocalizedArticle[] = [
   {
     id: "hacoo-dead-link-recovery",
     tag: "Link recovery",
-    title: "Hacoo Link Not Working? A Listing-Recovery Workflow Without Guessing",
+    title: "Find a Hacoo Item From an Old Link or Screenshot",
     standfirst: "When a Hacoo link stops working, recover the product identity from your evidence before searching for a replacement.",
-    summary: "A safe dead-link recovery workflow using saved titles, images, variants, dates and category clues instead of unverified replacement links.",
-    targetKeyword: "hacoo link not working",
+    summary: "Find clues in a saved Hacoo screenshot or an old product link. Compare the model, fastening and exact option before saving a replacement.",
+    targetKeyword: "find a Hacoo item from a screenshot",
     reviewedAt: "Method reviewed 16 September 2026",
     evidenceNote: "Recovery can identify a current candidate; it cannot prove that a replacement is identical to an unavailable listing.",
     facts: [["FIRST STEP", "Classify the failure"], ["BEST CLUES", "Title + image + variant"], ["SAFE RESULT", "Replacement candidate"]],
     sections: [
+      { id: "screenshot-example", heading: "Example: a screenshot of a zip-up hoodie", paragraphs: ["A cropped photo shows a grey hoodie with a two-way zip and two separate pockets. Start with those details. If a new listing shows a single pouch and only one zip pull, move on even when the colour matches. If the right details appear only on the black option, ask for a photo of the grey one before saving the link."] },
       { id: "classify", heading: "Classify why the Hacoo link is not working", paragraphs: [
         "A failed link can mean several different things: the page was removed, the exact option sold out, the address changed, the content is restricted by region, the page requires an app session, or a temporary network problem interrupted loading. Do not start by searching for the first visually similar product. Open the address again, note the visible status or message and test whether the domain and category pages still load. Record device, region and sign-in state because access differences can imitate deletion.",
         "Classifying the failure changes the recovery method. A temporary error calls for a later recheck. A missing variant requires searching within the same parent listing or category. A removed page requires reconstructing identity from saved evidence. A regional restriction may need the reader to search independently in the service available to them. Treating all failures as deletion wastes time and can lead to false replacements that share only a promotional image." ]},
@@ -342,7 +343,8 @@ const de = buildLocalized({
       section("recheck", "Am Entscheidungspunkt erneut prüfen", "Öffne URL, Variante, Preis, Maße, Bilder und Verfügbarkeit unmittelbar vor einem unumkehrbaren Schritt neu. Nutze die Status geprüft, geändert, nicht verfügbar oder ungeklärt. So versteckt der Satz „der Link funktioniert“ keine wichtige Abweichung."),
       section("workflow", "Fünf-Minuten-Ablauf", "Ziel öffnen, Identität abgleichen, genaue Variante wählen, Belege mit Datum speichern und offene Punkte einstufen. Gute Linkprüfung verspricht keinen Erfolg; sie schafft ein Objekt, das eine andere Person mit denselben aktuellen Fakten erneut bewerten kann."),
     ]),
-    localized("hacoo-dead-link-recovery", "Linkwiederherstellung", "Hacoo-Link funktioniert nicht? Ein Ablauf ohne Raten", "Rekonstruiere zuerst die Produktidentität aus deinen Belegen, bevor du nach Ersatz suchst.", "Sichere Wiederherstellung mit Titel, Bildern, Variante, Datum und Kategoriemerkmalen.", "Eine Wiederherstellung findet Kandidaten, beweist aber nicht, dass ein Ersatz mit dem verschwundenen Eintrag identisch ist.", [["ZUERST", "Fehler einordnen"], ["BESTE SPUREN", "Titel + Bild + Variante"], ["ERGEBNIS", "Ersatzkandidat"]], [
+    localized("hacoo-dead-link-recovery", "Linkwiederherstellung", "Hacoo-Produkt mit altem Link oder Screenshot wiederfinden", "Rekonstruiere zuerst die Produktidentität aus deinen Belegen, bevor du nach Ersatz suchst.", "Nutze Foto, Modellmerkmale und gespeicherte Variante, um ein Hacoo-Produkt trotz abgelaufenem Link wiederzufinden.", "Eine Wiederherstellung findet Kandidaten, beweist aber nicht, dass ein Ersatz mit dem verschwundenen Eintrag identisch ist.", [["ZUERST", "Fehler einordnen"], ["BESTE SPUREN", "Titel + Bild + Variante"], ["ERGEBNIS", "Ersatzkandidat"]], [
+      section("screenshot-example", "Beispiel: eine graue Kapuzenjacke", "Auf dem Bild erkennst du zwei getrennte Taschen und einen Zweiwege-Reißverschluss. Suche zuerst mit diesen Merkmalen. Zeigt ein Angebot eine Kängurutasche oder nur einen Schieber, passt das Modell trotz ähnlicher Farbe nicht. Sind die Details nur auf dem Foto der schwarzen Variante sichtbar, frage vor dem Speichern nach einem Bild der grauen Jacke."),
       section("classify", "Warum der Link scheitert", "Unterscheide vorübergehenden Fehler, entfernte Seite, ausverkaufte Variante, regionale Sperre und erforderliche App-Sitzung. Notiere Meldung, Datum, Gerät, Region und Login-Zustand. Nicht jeder Fehler ist eine Löschung."),
       section("evidence", "Ursprüngliche Identität rekonstruieren", "Sammle alte URL, Titel, Kategorie, Optionsnamen, Maße, Preisdatum, Bilder und Kennung. Formuliere einen Identitätssatz mit Produkttyp, zwei sichtbaren Merkmalen, Variante und einer Zahl. Trenne bestätigte Fakten von Erinnerung."),
       section("search", "Von engen Spuren zur Kategorie suchen", "Beginne mit Kennung oder markantem Titelfragment, danach Produkttyp plus seltenem Merkmal und zuletzt Kategorie. Ein Bildtreffer ist nur ein Kandidat; prüfe Maße, Konstruktion und Optionsstruktur. Ohne Übereinstimmung lautet das Ergebnis ehrlich „nicht wiedergefunden“."),
@@ -420,7 +422,8 @@ const fr = buildLocalized({
       section("recheck", "Recontrôler au moment de décider", "Rouvrez adresse, variante, prix, mesures, images et disponibilité avant toute étape irréversible. Classez le résultat : vérifié, modifié, indisponible ou non résolu. Ainsi, « le lien marche » ne masque pas une différence essentielle."),
       section("workflow", "Routine de cinq minutes", "Ouvrez la destination, confirmez l’identité, choisissez la variante, sauvegardez preuves et date, puis classez les inconnues. La vérification ne promet pas un bon achat ; elle rend l’objet assez clair pour qu’une autre personne puisse le réexaminer."),
     ]),
-    localized("hacoo-dead-link-recovery", "Récupération de lien", "Lien Hacoo inaccessible ? Une méthode de récupération sans deviner", "Reconstituez d’abord l’identité du produit à partir des preuves avant de chercher un remplacement.", "Récupération avec titre, images, variante, date et indices de catégorie.", "La récupération trouve un candidat actuel ; elle ne prouve pas qu’il est identique à la fiche disparue.", [["PREMIER", "Classer l’échec"], ["INDICES", "Titre + image + variante"], ["RÉSULTAT", "Candidat de remplacement"]], [
+    localized("hacoo-dead-link-recovery", "Récupération de lien", "Retrouver un produit Hacoo avec une capture d’écran ou un ancien lien", "Reconstituez d’abord l’identité du produit à partir des preuves avant de chercher un remplacement.", "Identifiez un article Hacoo à partir d’une capture : comparez le modèle, la fermeture et le coloris avant de conserver un nouveau lien.", "La récupération trouve un candidat actuel ; elle ne prouve pas qu’il est identique à la fiche disparue.", [["PREMIER", "Classer l’échec"], ["INDICES", "Titre + image + variante"], ["RÉSULTAT", "Candidat de remplacement"]], [
+      section("screenshot-example", "Exemple : un sweat gris à capuche", "La photo montre deux poches séparées et une fermeture à double curseur. Cherchez ces détails en premier. Une poche kangourou ou un seul curseur indiquent une différence, même si la couleur correspond. Si les détails ne sont visibles que sur le modèle noir, demandez une photo du gris avant de garder le lien."),
       section("classify", "Classer l’échec du lien", "Distinguez erreur temporaire, page supprimée, variante épuisée, restriction régionale et session d’application requise. Notez message, date, appareil, région et connexion. Tous les échecs ne signifient pas suppression."),
       section("evidence", "Reconstituer l’identité d’origine", "Rassemblez anciennes URL, titre, catégorie, options, mesures, date du prix, images et identifiant. Écrivez une phrase avec type, deux détails visibles, variante et un chiffre. Séparez faits confirmés et souvenir."),
       section("search", "Chercher des indices étroits vers la catégorie", "Commencez par l’identifiant ou un fragment distinctif, puis type plus détail rare, enfin catégorie. Une image correspondante n’est qu’une piste : vérifiez mesures et structure. Sans convergence, concluez « non retrouvé »."),
@@ -498,7 +501,8 @@ const es = buildLocalized({
       section("recheck", "Revisar en el momento de decisión", "Vuelve a abrir dirección, variante, precio, medidas, imágenes y disponibilidad antes de un paso irreversible. Clasifica: verificado, cambiado, no disponible o sin resolver. Así, «el enlace funciona» no oculta diferencias."),
       section("workflow", "Rutina de cinco minutos", "Abre el destino, confirma identidad, elige variante, guarda pruebas con fecha y clasifica incógnitas. No garantiza una compra; crea un objeto que otra persona puede volver a identificar y evaluar."),
     ]),
-    localized("hacoo-dead-link-recovery", "Recuperación de enlaces", "¿No funciona un enlace Hacoo? Recupéralo sin adivinar", "Reconstruye primero la identidad del producto con tus pruebas y después busca reemplazo.", "Flujo seguro con título, imágenes, variante, fecha y pistas de categoría.", "La recuperación localiza candidatos, pero no demuestra que un sustituto sea idéntico a la ficha desaparecida.", [["PRIMERO", "Clasificar el fallo"], ["PISTAS", "Título + imagen + variante"], ["RESULTADO", "Candidato sustituto"]], [
+    localized("hacoo-dead-link-recovery", "Recuperación de enlaces", "Cómo encontrar un producto de Hacoo con una captura o un enlace antiguo", "Reconstruye primero la identidad del producto con tus pruebas y después busca reemplazo.", "Usa una foto guardada o un enlace antiguo de Hacoo para comparar el modelo, el cierre y la variante antes de guardar una nueva ficha.", "La recuperación localiza candidatos, pero no demuestra que un sustituto sea idéntico a la ficha desaparecida.", [["PRIMERO", "Clasificar el fallo"], ["PISTAS", "Título + imagen + variante"], ["RESULTADO", "Candidato sustituto"]], [
+      section("screenshot-example", "Ejemplo: una sudadera gris con cremallera", "En la foto se ven dos bolsillos separados y una cremallera de doble cursor. Empieza por esos detalles. Descarta una ficha con bolsillo canguro o un único cursor aunque el tono coincida. Si los detalles solo se aprecian en el modelo negro, pide una foto del gris antes de guardar el enlace."),
       section("classify", "Clasificar el motivo del fallo", "Distingue error temporal, página retirada, variante agotada, restricción regional o sesión de app. Anota mensaje, fecha, dispositivo, región y cuenta. No todos los fallos equivalen a eliminación."),
       section("evidence", "Reconstruir la identidad original", "Reúne URL antigua, título, categoría, opciones, medidas, fecha del precio, imágenes e identificador. Escribe una frase con tipo, dos rasgos, variante y una cifra. Separa hechos de memoria."),
       section("search", "Buscar de pistas estrechas a categoría", "Empieza por identificador o frase distintiva, sigue con tipo más rasgo raro y termina en categoría. Una coincidencia de imagen es candidata, no identidad. Si nada converge, registra «no recuperado»."),
@@ -576,7 +580,8 @@ const it = buildLocalized({
       section("recheck", "Ricontrollare al momento della decisione", "Riapri indirizzo, variante, prezzo, misure, immagini e disponibilità prima di un passo irreversibile. Classifica: verificato, cambiato, non disponibile o irrisolto. Così “il link funziona” non nasconde differenze importanti."),
       section("workflow", "Routine di cinque minuti", "Apri la destinazione, conferma identità, scegli variante, salva prove e data, quindi classifica le incognite. Non garantisce l’acquisto: crea un oggetto che un’altra persona può identificare e valutare di nuovo."),
     ]),
-    localized("hacoo-dead-link-recovery", "Recupero link", "Link Hacoo non funzionante? Recuperare la scheda senza indovinare", "Ricostruisci prima l’identità del prodotto dalle prove e solo dopo cerca un sostituto.", "Flusso sicuro con titolo, immagini, variante, data e indizi di categoria.", "Il recupero trova candidati attuali, ma non dimostra che siano identici alla scheda scomparsa.", [["PRIMO", "Classificare l’errore"], ["INDIZI", "Titolo + immagine + variante"], ["RISULTATO", "Candidato sostitutivo"]], [
+    localized("hacoo-dead-link-recovery", "Recupero link", "Come ritrovare un prodotto Hacoo da uno screenshot o da un vecchio link", "Ricostruisci prima l’identità del prodotto dalle prove e solo dopo cerca un sostituto.", "Usa uno screenshot o un vecchio link Hacoo per confrontare modello, chiusura e variante prima di salvare una nuova scheda.", "Il recupero trova candidati attuali, ma non dimostra che siano identici alla scheda scomparsa.", [["PRIMO", "Classificare l’errore"], ["INDIZI", "Titolo + immagine + variante"], ["RISULTATO", "Candidato sostitutivo"]], [
+      section("screenshot-example", "Esempio: una felpa grigia con zip", "Nella foto si vedono due tasche separate e una zip a doppio cursore. Parti da questi dettagli. Una tasca a marsupio o un solo cursore segnalano un modello diverso, anche con lo stesso colore. Se i dettagli compaiono solo sulla variante nera, chiedi una foto della felpa grigia prima di salvare il link."),
       section("classify", "Classificare il problema", "Distingui errore temporaneo, pagina rimossa, variante esaurita, limite regionale e sessione app. Annota messaggio, data, dispositivo, regione e accesso. Non ogni errore significa cancellazione."),
       section("evidence", "Ricostruire l’identità originale", "Raccogli URL vecchio, titolo, categoria, opzioni, misure, data del prezzo, immagini e ID. Scrivi una frase con tipo, due dettagli, variante e un numero. Separa fatti confermati e memoria."),
       section("search", "Cercare dall’indizio stretto alla categoria", "Parti da ID o frammento distintivo, poi tipo più caratteristica rara, infine categoria. Una corrispondenza d’immagine è solo candidata: verifica misure e struttura. Senza convergenza registra “non recuperato”."),
@@ -654,7 +659,8 @@ const pt = buildLocalized({
       section("recheck", "Rever no momento da decisão", "Reabra endereço, variante, preço, medidas, imagens e disponibilidade antes de um passo irreversível. Classifique: verificado, alterado, indisponível ou não resolvido. Assim, “o link funciona” não esconde diferenças relevantes."),
       section("workflow", "Rotina de cinco minutos", "Abra o destino, confirme identidade, escolha variante, guarde provas e data e classifique dúvidas. Não garante uma compra; cria um objeto que outra pessoa pode identificar e avaliar novamente."),
     ]),
-    localized("hacoo-dead-link-recovery", "Recuperação de links", "Link Hacoo não funciona? Recupere a página sem adivinhar", "Reconstrua primeiro a identidade do produto a partir das provas e só depois procure substituto.", "Fluxo seguro com título, imagens, variante, data e pistas de categoria.", "A recuperação encontra candidatos atuais, mas não prova que sejam idênticos à página desaparecida.", [["PRIMEIRO", "Classificar a falha"], ["PISTAS", "Título + imagem + variante"], ["RESULTADO", "Candidato substituto"]], [
+    localized("hacoo-dead-link-recovery", "Recuperação de links", "Como encontrar um produto Hacoo com uma captura de ecrã ou ligação antiga", "Reconstrua primeiro a identidade do produto a partir das provas e só depois procure substituto.", "Recupere pistas numa captura de ecrã ou ligação antiga da Hacoo. Compare o modelo, o fecho e a variante antes de guardar uma nova ficha.", "A recuperação encontra candidatos atuais, mas não prova que sejam idênticos à página desaparecida.", [["PRIMEIRO", "Classificar a falha"], ["PISTAS", "Título + imagem + variante"], ["RESULTADO", "Candidato substituto"]], [
+      section("screenshot-example", "Exemplo: uma sweatshirt cinzenta com capuz", "Na fotografia distinguem-se dois bolsos separados e um fecho de correr com dois cursores. Comece por esses pormenores. Um bolso único ou um só cursor indicam outra versão, mesmo com uma cor parecida. Se os pormenores só aparecerem na opção preta, peça uma fotografia da cinzenta antes de guardar a ligação."),
       section("classify", "Classificar a falha", "Distinga erro temporário, página removida, variante esgotada, restrição regional e sessão de app. Anote mensagem, data, dispositivo, região e conta. Nem toda falha significa eliminação."),
       section("evidence", "Reconstruir a identidade original", "Reúna URL antigo, título, categoria, opções, medidas, data do preço, imagens e identificador. Escreva uma frase com tipo, dois traços, variante e um número. Separe factos confirmados de memória."),
       section("search", "Procurar de pistas estreitas à categoria", "Comece pelo ID ou fragmento distintivo, depois tipo mais característica rara e por fim categoria. Uma imagem coincidente é candidata, não identidade. Sem convergência, registe “não recuperado”."),
@@ -720,13 +726,16 @@ const pt = buildLocalized({
   ],
 });
 
-// LOCALIZED_PACKS
+function withEditorialDates(article: LocalizedArticle): SeoArticle {
+  const modifiedAt = article.id === "hacoo-dead-link-recovery" ? "2026-11-05" : dates.modifiedAt;
+  return { ...article, ...dates, modifiedAt };
+}
 
 export const expandedSeoArticles: Record<Locale, SeoArticle[]> = {
-  en: en.map((article) => ({ ...article, ...dates })),
-  de: de.map((article) => ({ ...article, ...dates })),
-  fr: fr.map((article) => ({ ...article, ...dates })),
-  es: es.map((article) => ({ ...article, ...dates })),
-  it: it.map((article) => ({ ...article, ...dates })),
-  pt: pt.map((article) => ({ ...article, ...dates })),
+  en: en.map(withEditorialDates),
+  de: de.map(withEditorialDates),
+  fr: fr.map(withEditorialDates),
+  es: es.map(withEditorialDates),
+  it: it.map(withEditorialDates),
+  pt: pt.map(withEditorialDates),
 };

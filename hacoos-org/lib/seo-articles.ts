@@ -40,6 +40,7 @@ const en: SeoArticle[] = [
       ["BEST USE", "Discovery followed by verification"],
     ],
     sections: [
+      { id: "link-destination", heading: "When a spreadsheet link opens a different shop", paragraphs: ["Open one directory row and note the destination, item name and selected option. A catalogue page can offer a marketplace buy link; an app share can open a creator post. Save each under its destination so you know where to check the cart and whom to contact about that purchase."] },
       {
         id: "meaning",
         heading: "What people mean by a Hacoo spreadsheet",
@@ -175,9 +176,9 @@ const en: SeoArticle[] = [
   {
     id: "hacoo-reviews",
     tag: "Hacoo reviews",
-    title: "Hacoo Reviews 2026: What Current Users Report and What to Verify",
-    standfirst: "Hacoo review scores vary sharply by platform and region. A useful assessment looks beyond one headline number and separates company claims, store data and individual experiences.",
-    summary: "A balanced, dated review of Hacoo's official positioning, app-store scores, recurring customer themes and practical checks.",
+    title: "Hacoo Reviews: What to Check Before Your First Order",
+    standfirst: "Compare Hacoo reviews about app access, delivery and refunds. Read the dated rating snapshot alongside recent buyer accounts before choosing your first item.",
+    summary: "Compare Hacoo reviews about app access, delivery and refunds. Read the dated rating snapshot alongside recent buyer accounts before choosing your first item.",
     targetKeyword: "hacoo reviews",
     reviewedAt: "Public review snapshot: 16 September 2026",
     evidenceNote: "Sources reviewed: Hacoo official pages, Apple App Store, Google Play and Trustpilot. Ratings and review counts change over time and by locale.",
@@ -186,7 +187,9 @@ const en: SeoArticle[] = [
       ["GOOGLE PLAY", "3.6 from 59.4K reviews"],
       ["TRUSTPILOT", "3.7 average from 3,338 reviews"],
     ],
+    modifiedAt: "2026-11-05",
     sections: [
+      { id: "reading-a-delivery-review", heading: "Reading a delivery review before you buy", paragraphs: ["If a buyer says a parcel arrived late, look for the destination, the checkout estimate and the delivery date. A three-week delivery may have met one buyer’s estimate and missed another’s. For a first order, compare those comments with the estimate shown for your own address.", "A five-star comment about an easy checkout tells you little about the fit of a hoodie. Look for a review of the same option with a measurement, or compare the size chart with a garment you own. Use the dated ratings below for context, then reopen the public reviews for more recent experiences."] },
       {
         id: "method",
         heading: "How this Hacoo review was researched",
@@ -332,6 +335,7 @@ const de: SeoArticle[] = [
     evidenceNote: "Grundlage sind Hacoos aktuelle offizielle Positionierung, öffentliche App-Store-Informationen und Prüfungen aktiver Quellseiten. Zahlen Dritter zur Kataloggröße gelten nicht als offizielle Fakten.",
     facts: [["HAUPTINTENTION", "Hacoo Spreadsheet"], ["ZWEITINTENTION", "Hacoo Finds und Produktlinks"], ["BESTE NUTZUNG", "Entdecken und danach prüfen"]],
     sections: [
+      { id: "link-destination", heading: "Wenn ein Tabellenlink zu einem anderen Shop führt", paragraphs: ["Öffne einen Eintrag und notiere Zielseite, Produktname und gewählte Ausführung. Eine Katalogseite kann zum Kauf auf einem Marktplatz führen, ein App-Link dagegen zu einem Beitrag. Speichere das jeweilige Ziel mit der Variante. So findest du später den richtigen Warenkorb und den zuständigen Kundenservice."] },
       { id: "meaning", heading: "Was mit einem Hacoo Spreadsheet gemeint ist", paragraphs: [
         "Wer nach einem Hacoo Spreadsheet sucht, möchte meist eine Abkürzung: Produktkategorien, erkennbare Bilder und Links zu einer nützlichen Zielseite. Diese Suchintention ist real, doch der Begriff kann falsche Sicherheit erzeugen. Eine Tabelle kann Referenzen ordnen; sie beweist weder aktuelle Verfügbarkeit noch die Richtigkeit einer Creator-Empfehlung, die Zuverlässigkeit eines Verkäufers oder die Übereinstimmung der heutigen Option mit einer vor Monaten gespeicherten. Behandle die Tabelle als Karte, nicht als Gütesiegel.",
         "Das ist wichtig, weil Hacoos aktuelle Website und App-Store-Beschreibung Hacoo als Community für Content und Lifestyle-Entdeckung darstellen. Laut Nutzungsbedingungen stammen Empfehlungen und Inhalte von unabhängigen Creatorn, die für Richtigkeit und Authentizität verantwortlich bleiben. Das ist etwas anderes als ein offizieller Hacoo-Katalog. Hacoos.org verwendet den bekannten Suchbegriff, benennt die Rolle aber klar: ein unabhängiger Index, der Produktsuchen und Referenzen zum aktuellen Live-Quellkatalog führt."
@@ -404,13 +408,15 @@ const de: SeoArticle[] = [
   },
   {
     id: "hacoo-reviews", tag: "Hacoo Erfahrungen", targetKeyword: "hacoo reviews",
-    title: "Hacoo Erfahrungen 2026: Was Nutzer berichten und was du prüfen solltest",
-    standfirst: "Hacoo-Bewertungen unterscheiden sich stark nach Plattform und Region. Eine nützliche Einordnung blickt hinter eine einzelne Zahl und trennt Unternehmensangaben, Store-Daten und persönliche Erfahrungen.",
-    summary: "Eine ausgewogene, datierte Auswertung von Hacoos Positionierung, App-Store-Werten, wiederkehrenden Kundenthemen und praktischen Prüfungen.",
+    title: "Hacoo-Erfahrungen: Was vor der ersten Bestellung zählt",
+    standfirst: "Ordne Hacoo-Bewertungen zu App, Lieferung und Erstattung ein. Vergleiche den datierten Bewertungsstand mit aktuellen Berichten zu deinem Zielland.",
+    summary: "Ordne Hacoo-Bewertungen zu App, Lieferung und Erstattung ein. Vergleiche den datierten Bewertungsstand mit aktuellen Berichten zu deinem Zielland.",
     reviewedAt: "Öffentlicher Bewertungsstand: 16. September 2026",
     evidenceNote: "Geprüft wurden offizielle Hacoo-Seiten, Apple App Store, Google Play und Trustpilot. Bewertungen und Anzahlen ändern sich mit Zeit und Region.",
     facts: [["APPLE PORTUGAL", "4,7 bei 6.800 Bewertungen"], ["GOOGLE PLAY", "3,6 bei 59.400 Rezensionen"], ["TRUSTPILOT", "3,7 bei 3.338 Rezensionen"]],
+    modifiedAt: "2026-11-05",
     sections: [
+      { id: "reading-a-delivery-review", heading: "Was eine Lieferbewertung über deine Bestellung aussagt", paragraphs: ["Steht in einem Bericht „zu spät geliefert“, suche nach Zielland, angekündigter Lieferzeit und tatsächlichem Zustelldatum. Drei Wochen können bei einer Bestellung im erwarteten Zeitraum liegen und bei einer anderen deutlich darüber. Entscheidend für deinen Vergleich ist die Schätzung für deine eigene Adresse.", "Fünf Sterne für einen unkomplizierten Kauf sagen wenig über den Sitz eines Hoodies. Suche nach Maßen für genau die gewählte Größe oder vergleiche die Tabelle mit einem passenden Kleidungsstück. Die folgenden Bewertungen sind datiert. Über den Quellenlink kannst du neuere Erfahrungen nachlesen."] },
       { id: "method", heading: "Wie diese Hacoo-Erfahrungsanalyse recherchiert wurde", paragraphs: [
         "Diese Analyse nutzt einen datierten Stand statt dauerhafte App-Wertungen vorzutäuschen. Am 16. September 2026 prüften wir Hacoos Website, Trust Center, Bedingungen und IP-Seite, den portugiesischen Apple-App-Store-Eintrag, den englischen US-Google-Play-Eintrag und das Trustpilot-Profil. Aussagen von Hacoo, Plattformstatistiken und Einzelbewertungen wurden getrennt, weil sie verschiedene Fragen beantworten.",
         "Store-Werte hängen von Region, Gerät, Zeitraum und Bewertungsverlauf ab. Trustpilot kann Profile zusammenführen und verwendet eine eigene Score-Methode. Einzelne Rezensionen können echt und trotzdem nicht repräsentativ sein. Deshalb nennen wir Plattform und Datum, fassen wiederkehrende Themen ohne Verallgemeinerung zusammen und nutzen keine dramatische Einzelmeinung als Beweis."
@@ -494,6 +500,7 @@ const fr: SeoArticle[] = [
     evidenceNote: "Fondé sur le positionnement officiel actuel de Hacoo, les informations publiques des boutiques d'applications et la vérification de pages source actives. Les volumes annoncés par des tiers ne sont pas traités comme des faits officiels.",
     facts: [["INTENTION PRINCIPALE", "Tableur Hacoo"], ["INTENTION SECONDAIRE", "Hacoo finds et liens produit"], ["MEILLEUR USAGE", "Découvrir puis vérifier"]],
     sections: [
+      { id: "link-destination", heading: "Quand le lien du tableur ouvre une autre boutique", paragraphs: ["Ouvrez une ligne du tableur et notez la destination, le nom du produit et la variante sélectionnée. Une fiche du catalogue peut proposer un achat sur une place de marché ; un lien partagé dans l’application peut ouvrir une publication. Gardez la destination avec le modèle pour retrouver le bon panier et le bon interlocuteur."] },
       { id: "meaning", heading: "Ce que signifie réellement « tableur Hacoo »", paragraphs: [
         "Les internautes qui recherchent un tableur Hacoo veulent généralement un raccourci : catégories, images reconnaissables et liens utiles. L'intention est réelle, mais l'expression peut donner une fausse impression de certitude. Un tableur organise des références ; il ne prouve ni la disponibilité, ni l'exactitude d'une recommandation, ni la fiabilité d'un vendeur, ni la correspondance entre l'option actuelle et celle enregistrée des mois plus tôt. C'est une carte, pas un label de qualité.",
         "Cette nuance compte car le site officiel et la fiche d'application actuels présentent Hacoo comme une communauté de partage de contenu et de découverte lifestyle. Ses conditions indiquent que les recommandations proviennent de créateurs indépendants responsables de leur exactitude. Cela ne transforme pas un tableur tiers en catalogue officiel. Hacoos.org reprend l'intention de recherche tout en restant clair : cet index indépendant dirige les recherches et références vers le catalogue source actif."
@@ -566,13 +573,15 @@ const fr: SeoArticle[] = [
   },
   {
     id: "hacoo-reviews", tag: "Avis Hacoo", targetKeyword: "hacoo reviews",
-    title: "Avis Hacoo 2026 : ce que rapportent les utilisateurs et quoi vérifier",
-    standfirst: "Les notes Hacoo varient fortement selon la plateforme et la région. Une analyse utile dépasse un score unique et sépare déclarations de l'entreprise, données des stores et expériences personnelles.",
-    summary: "Une analyse équilibrée et datée du positionnement Hacoo, des scores publics, des thèmes clients et des vérifications utiles.",
+    title: "Avis Hacoo : que vérifier avant une première commande ?",
+    standfirst: "Comparez les avis Hacoo sur l’application, la livraison et les remboursements. Situez les notes datées par rapport aux témoignages récents dans votre pays.",
+    summary: "Comparez les avis Hacoo sur l’application, la livraison et les remboursements. Situez les notes datées par rapport aux témoignages récents dans votre pays.",
     reviewedAt: "Instantané public du 16 septembre 2026",
     evidenceNote: "Sources : pages officielles Hacoo, Apple App Store, Google Play et Trustpilot. Notes et volumes changent selon le temps et la région.",
     facts: [["APPLE PORTUGAL", "4,7 pour 6,8 k notes"], ["GOOGLE PLAY", "3,6 pour 59,4 k avis"], ["TRUSTPILOT", "3,7 pour 3 338 avis"]],
+    modifiedAt: "2026-11-05",
     sections: [
+      { id: "reading-a-delivery-review", heading: "Comment lire un avis sur la livraison", paragraphs: ["Si un acheteur écrit que son colis est arrivé en retard, cherchez le pays de livraison, la période annoncée et la date de réception. Trois semaines peuvent respecter le délai d’une commande et dépasser celui d’une autre. Comparez ce récit à l’estimation affichée pour votre adresse.", "Un avis cinq étoiles sur la facilité de paiement renseigne peu sur la coupe d’un sweat. Cherchez un commentaire donnant les mesures de la taille choisie, ou comparez le tableau à un vêtement que vous portez. Les notes ci-dessous sont datées ; la source permet de consulter des avis plus récents."] },
       { id: "method", heading: "Comment cet avis Hacoo a été recherché", paragraphs: [
         "Cette analyse utilise un instantané daté. Le 16 septembre 2026, nous avons consulté le site, le Trust Center, les conditions et la page propriété intellectuelle de Hacoo, la fiche Apple au Portugal, Google Play en anglais américain et Trustpilot. Nous séparons les affirmations de Hacoo, les statistiques de plateformes et les avis individuels, car ils répondent à des questions différentes.",
         "Les notes dépendent du pays, de l'appareil, de la période et de l'historique. Trustpilot peut fusionner des profils et applique sa propre méthode. Un avis peut être authentique sans être représentatif. Nous nommons donc plateforme et date, synthétisons les thèmes sans généraliser et évitons de transformer un témoignage spectaculaire en preuve."
@@ -656,6 +665,7 @@ const es: SeoArticle[] = [
     evidenceNote: "Basado en el posicionamiento oficial actual de Hacoo, datos públicos de las tiendas de aplicaciones y comprobaciones de páginas fuente activas. Las cifras de catálogos de terceros no se tratan como hechos oficiales.",
     facts: [["INTENCIÓN PRINCIPAL", "Hacoo spreadsheet"], ["INTENCIÓN SECUNDARIA", "Hacoo finds y enlaces"], ["MEJOR USO", "Descubrir y después verificar"]],
     sections: [
+      { id: "link-destination", heading: "Cuando el enlace de la hoja abre otra tienda", paragraphs: ["Abre una fila de la hoja y anota el destino, el nombre del artículo y la opción seleccionada. La ficha de un catálogo puede remitir a otro mercado para comprar; un enlace de la aplicación puede abrir una publicación. Guarda el destino junto a la variante para saber qué carrito y qué atención al cliente corresponden a la compra."] },
       { id: "meaning", heading: "Qué significa realmente una hoja Hacoo", paragraphs: [
         "Quien busca una hoja Hacoo suele querer un atajo: categorías, imágenes reconocibles y enlaces útiles. La intención es real, pero el término puede crear falsa seguridad. Una hoja organiza referencias; no demuestra disponibilidad, exactitud de una recomendación, fiabilidad del vendedor ni que la opción actual coincida con la guardada meses atrás. Trátala como un mapa, no como un sello de aprobación.",
         "La distinción importa porque la web y la ficha oficial actuales describen Hacoo como comunidad de contenido y descubrimiento de estilo de vida. Sus condiciones dicen que las recomendaciones proceden de creadores independientes responsables de su exactitud. Eso no convierte una hoja de terceros en catálogo oficial. Hacoos.org usa la intención popular con un papel claro: índice independiente que dirige búsquedas y referencias al catálogo fuente activo."
@@ -728,13 +738,15 @@ const es: SeoArticle[] = [
   },
   {
     id: "hacoo-reviews", tag: "Opiniones Hacoo", targetKeyword: "hacoo reviews",
-    title: "Opiniones Hacoo 2026: qué cuentan los usuarios y qué verificar",
-    standfirst: "Las puntuaciones de Hacoo cambian mucho entre plataformas y regiones. Una evaluación útil separa afirmaciones de la empresa, datos de tiendas y experiencias individuales.",
-    summary: "Revisión equilibrada y fechada del posicionamiento oficial, las puntuaciones, los temas de clientes y los controles prácticos.",
+    title: "Opiniones de Hacoo: qué mirar antes del primer pedido",
+    standfirst: "Compara opiniones de Hacoo sobre la aplicación, la entrega y los reembolsos. Contrasta las valoraciones fechadas con experiencias recientes de tu país.",
+    summary: "Compara opiniones de Hacoo sobre la aplicación, la entrega y los reembolsos. Contrasta las valoraciones fechadas con experiencias recientes de tu país.",
     reviewedAt: "Instantánea pública: 16 de septiembre de 2026",
     evidenceNote: "Fuentes: páginas oficiales de Hacoo, Apple App Store, Google Play y Trustpilot. Las puntuaciones y cantidades cambian con el tiempo y la región.",
     facts: [["APPLE PORTUGAL", "4,7 con 6,8 mil valoraciones"], ["GOOGLE PLAY", "3,6 con 59,4 mil reseñas"], ["TRUSTPILOT", "3,7 con 3.338 reseñas"]],
+    modifiedAt: "2026-11-05",
     sections: [
+      { id: "reading-a-delivery-review", heading: "Cómo interpretar una opinión sobre la entrega", paragraphs: ["Si alguien dice que el paquete llegó tarde, busca el país de destino, la fecha estimada al pagar y el día de entrega. Tres semanas pueden cumplir el plazo de un pedido y superar el de otro. Para decidir, compáralo con la estimación de tu propia dirección.", "Cinco estrellas por un pago sencillo dicen poco sobre el corte de una sudadera. Busca medidas de la talla elegida o compara la tabla con una prenda que uses. Las cifras de abajo corresponden a la fecha indicada. Abre la fuente para leer opiniones más recientes."] },
       { id: "method", heading: "Cómo se investigó esta reseña de Hacoo", paragraphs: [
         "Usamos una instantánea fechada. El 16 de septiembre de 2026 revisamos la web, Trust Center, condiciones y propiedad intelectual de Hacoo, Apple Portugal, Google Play en inglés estadounidense y Trustpilot. Separamos declaraciones de Hacoo, estadísticas de plataformas y opiniones individuales porque responden preguntas distintas.",
         "Las notas dependen de país, dispositivo, periodo e historial. Trustpilot puede fusionar perfiles y calcula su propia puntuación. Una opinión puede ser auténtica y no representativa. Por eso citamos plataforma y fecha, sintetizamos temas sin universalizarlos y no usamos una reseña extrema como prueba."
@@ -818,6 +830,7 @@ const it: SeoArticle[] = [
     evidenceNote: "Basato sul posizionamento ufficiale attuale di Hacoo, sulle informazioni pubbliche degli app store e sul controllo di pagine sorgente attive. I totali di catalogo di terzi non sono trattati come fatti ufficiali.",
     facts: [["INTENTO PRIMARIO", "Hacoo spreadsheet"], ["INTENTO SECONDARIO", "Hacoo finds e link prodotto"], ["USO MIGLIORE", "Scoprire, poi verificare"]],
     sections: [
+      { id: "link-destination", heading: "Quando il link del foglio apre un altro negozio", paragraphs: ["Apri una riga del foglio e annota la destinazione, il nome del prodotto e la variante selezionata. Una scheda del catalogo può rimandare a un marketplace per il pagamento, mentre un link dell’app può aprire un post. Salva il nome del sito insieme alla variante per ritrovare il carrello e il servizio clienti giusto."] },
       { id: "meaning", heading: "Cosa significa davvero Hacoo spreadsheet", paragraphs: [
         "Chi cerca un Hacoo spreadsheet vuole di solito una scorciatoia: categorie, immagini riconoscibili e link utili. L'intento è reale, ma la parola può creare falsa certezza. Un foglio organizza riferimenti; non dimostra disponibilità, accuratezza del consiglio, affidabilità del venditore o corrispondenza tra l'opzione di oggi e quella salvata mesi fa. Consideralo una mappa, non un'approvazione.",
         "La distinzione conta perché il sito e la scheda ufficiali attuali descrivono Hacoo come comunità di contenuti e scoperta lifestyle. I termini dicono che i consigli provengono da creator indipendenti, responsabili della loro accuratezza. Questo non rende ufficiale un foglio di terzi. Hacoos.org usa l'intento popolare con ruolo chiaro: indice indipendente che porta ricerche e riferimenti al catalogo sorgente attivo."
@@ -890,13 +903,15 @@ const it: SeoArticle[] = [
   },
   {
     id: "hacoo-reviews", tag: "Recensioni Hacoo", targetKeyword: "hacoo reviews",
-    title: "Recensioni Hacoo 2026: cosa riferiscono gli utenti e cosa verificare",
-    standfirst: "I punteggi Hacoo variano molto per piattaforma e regione. Un'analisi utile separa dichiarazioni aziendali, dati degli store ed esperienze individuali.",
-    summary: "Analisi equilibrata e datata di posizionamento, valutazioni pubbliche, temi ricorrenti e controlli pratici.",
+    title: "Recensioni Hacoo: cosa controllare prima del primo ordine",
+    standfirst: "Leggi le recensioni Hacoo su app, consegne e rimborsi. Confronta i punteggi datati con le esperienze più recenti di chi ordina nel tuo paese.",
+    summary: "Leggi le recensioni Hacoo su app, consegne e rimborsi. Confronta i punteggi datati con le esperienze più recenti di chi ordina nel tuo paese.",
     reviewedAt: "Istantanea pubblica: 16 settembre 2026",
     evidenceNote: "Fonti: pagine ufficiali Hacoo, Apple App Store, Google Play e Trustpilot. Punteggi e numeri cambiano con tempo e località.",
     facts: [["APPLE PORTOGALLO", "4,7 da 6,8 mila valutazioni"], ["GOOGLE PLAY", "3,6 da 59,4 mila recensioni"], ["TRUSTPILOT", "3,7 da 3.338 recensioni"]],
+    modifiedAt: "2026-11-05",
     sections: [
+      { id: "reading-a-delivery-review", heading: "Come leggere un giudizio sulla consegna", paragraphs: ["Se un acquirente scrive che il pacco è arrivato in ritardo, cerca il paese di destinazione, la data prevista al pagamento e quella effettiva. Tre settimane possono rientrare nella stima di un ordine e superare quella di un altro. Confronta il racconto con la previsione per il tuo indirizzo.", "Cinque stelle per un pagamento veloce dicono poco sulla vestibilità di una felpa. Cerca le misure della stessa taglia oppure confronta la tabella con un capo che indossi. I punteggi riportati qui sotto hanno una data precisa; apri la fonte per leggere i commenti più recenti."] },
       { id: "method", heading: "Come è stata ricercata questa recensione Hacoo", paragraphs: [
         "Usiamo un'istantanea datata. Il 16 settembre 2026 abbiamo controllato sito, Trust Center, termini e proprietà intellettuale Hacoo, Apple Portogallo, Google Play in inglese USA e Trustpilot. Separiamo affermazioni di Hacoo, statistiche delle piattaforme e recensioni individuali perché rispondono a domande diverse.",
         "I punteggi dipendono da paese, dispositivo, periodo e storia. Trustpilot può unire profili e usa un metodo proprio. Una recensione può essere vera ma non rappresentativa. Perciò citiamo piattaforma e data, sintetizziamo temi senza universalizzarli e non trasformiamo un caso estremo in prova."
@@ -980,6 +995,7 @@ const pt: SeoArticle[] = [
     evidenceNote: "Baseado no posicionamento oficial atual da Hacoo, em informação pública das lojas de aplicações e na verificação de páginas de origem ativas. Totais de catálogos de terceiros não são tratados como factos oficiais.",
     facts: [["INTENÇÃO PRINCIPAL", "Hacoo spreadsheet"], ["INTENÇÃO SECUNDÁRIA", "Hacoo finds e ligações"], ["MELHOR USO", "Descobrir e depois verificar"]],
     sections: [
+      { id: "link-destination", heading: "Quando uma ligação da folha abre outra loja", paragraphs: ["Abra uma linha da folha e anote o destino, o nome do artigo e a opção selecionada. Uma ficha de catálogo pode encaminhar a compra para outro mercado; uma ligação da aplicação pode abrir uma publicação. Guarde o destino com a variante para saber onde encontrar o carrinho e a quem pedir apoio."] },
       { id: "meaning", heading: "O que significa realmente Hacoo spreadsheet", paragraphs: [
         "Quem pesquisa uma folha Hacoo costuma querer um atalho: categorias, imagens reconhecíveis e ligações úteis. A intenção é real, mas o termo pode criar falsa certeza. Uma folha organiza referências; não prova disponibilidade, exatidão de uma recomendação, fiabilidade do vendedor nem que a opção atual coincide com a guardada meses antes. Trate-a como mapa, não como selo de aprovação.",
         "A distinção importa porque o site e a ficha oficial atuais descrevem a Hacoo como comunidade de conteúdos e descoberta de estilo de vida. Os termos dizem que as recomendações vêm de criadores independentes responsáveis pela exatidão. Isso não torna oficial uma folha de terceiros. Hacoos.org usa a intenção popular com papel claro: índice independente que leva pesquisas e referências ao catálogo de origem ativo."
@@ -1052,13 +1068,15 @@ const pt: SeoArticle[] = [
   },
   {
     id: "hacoo-reviews", tag: "Avaliações Hacoo", targetKeyword: "hacoo reviews",
-    title: "Avaliações Hacoo 2026: o que relatam os utilizadores e o que verificar",
-    standfirst: "As pontuações Hacoo variam muito entre plataformas e regiões. Uma análise útil separa afirmações da empresa, dados das lojas e experiências individuais.",
-    summary: "Análise equilibrada e datada do posicionamento, classificações públicas, temas de clientes e verificações práticas.",
+    title: "Opiniões sobre a Hacoo: o que verificar antes da primeira encomenda",
+    standfirst: "Compare opiniões sobre a aplicação Hacoo, entregas e reembolsos. Consulte a data das classificações e procure relatos recentes no seu país.",
+    summary: "Compare opiniões sobre a aplicação Hacoo, entregas e reembolsos. Consulte a data das classificações e procure relatos recentes no seu país.",
     reviewedAt: "Instantâneo público: 16 de setembro de 2026",
     evidenceNote: "Fontes: páginas oficiais Hacoo, Apple App Store, Google Play e Trustpilot. Pontuações e números mudam com tempo e região.",
     facts: [["APPLE PORTUGAL", "4,7 em 6,8 mil avaliações"], ["GOOGLE PLAY", "3,6 em 59,4 mil avaliações"], ["TRUSTPILOT", "3,7 em 3.338 avaliações"]],
+    modifiedAt: "2026-11-05",
     sections: [
+      { id: "reading-a-delivery-review", heading: "Como interpretar um comentário sobre a entrega", paragraphs: ["Quando alguém escreve que a encomenda chegou atrasada, procure o país de destino, o prazo previsto no pagamento e a data de entrega. Três semanas podem cumprir a previsão de uma encomenda e ultrapassar a de outra. Compare o relato com a estimativa apresentada para a sua morada.", "Cinco estrelas pela facilidade do pagamento dizem pouco sobre o corte de uma sweatshirt. Procure medidas do tamanho escolhido ou compare a tabela com uma peça sua. As classificações abaixo correspondem à data indicada. Abra a fonte para consultar comentários mais recentes."] },
       { id: "method", heading: "Como esta análise Hacoo foi pesquisada", paragraphs: [
         "Usamos um instantâneo datado. Em 16 de setembro de 2026 consultámos site, Trust Center, termos e propriedade intelectual da Hacoo, Apple Portugal, Google Play em inglês dos EUA e Trustpilot. Separamos declarações da Hacoo, estatísticas das plataformas e opiniões individuais porque respondem a perguntas diferentes.",
         "As pontuações dependem de país, dispositivo, período e histórico. A Trustpilot pode fundir perfis e usa método próprio. Uma opinião pode ser verdadeira sem representar todos. Por isso citamos plataforma e data, resumimos temas sem universalizar e não transformamos um caso extremo em prova."

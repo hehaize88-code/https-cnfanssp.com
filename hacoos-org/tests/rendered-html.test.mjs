@@ -33,7 +33,7 @@ test("renders indexable production metadata and SEO endpoints", async () => {
   assert.doesNotMatch(html, /noindex|nofollow/i);
   assert.match(html, /Independent Hacoo Product Link Library/);
   assert.match(html, /WebSite/);
-  assert.match(html, /www\.cnfanshp\.com\/uploads\/allimg\//);
+  assert.match(html, /www\.cnfansge\.com\/uploads\/allimg\//);
   assert.doesNotMatch(html, /CNFansSP/);
   assert.equal(response.headers.get("x-hacoos-cache"), "MISS");
 
@@ -63,7 +63,7 @@ test("renders indexable production metadata and SEO endpoints", async () => {
   assert.match(sitemapXml, /<loc>https:\/\/hacoos\.org\/en<\/loc>/);
   assert.match(sitemapXml, /<loc>https:\/\/hacoos\.org\/de\/articles\//);
   assert.doesNotMatch(sitemapXml, /<loc>https:\/\/hacoos\.org\/<\/loc>/);
-  assert.equal((sitemapXml.match(/<url>/g) ?? []).length, 138);
+  assert.equal((sitemapXml.match(/<url>/g) ?? []).length, 150);
 
   const httpResponse = await worker.fetch(
     new Request("http://hacoos.org/de?source=http"),

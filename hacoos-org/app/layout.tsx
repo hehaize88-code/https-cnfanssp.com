@@ -59,7 +59,7 @@ export default async function RootLayout({
     <html lang={language}>
       <head>
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-FNVB24S4VG" />
-        <script defer src="/analytics.js" />
+        <script defer src="/analytics.js?v=20261105" />
       </head>
       <body>{children}</body>
     </html>

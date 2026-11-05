@@ -11,7 +11,7 @@ const render = (url, headers = {}) => worker.fetch(new Request(url, { headers })
 test("all sitemap pages render with the correct language, canonical and reciprocal alternates", async () => {
   const xml = await (await render("https://hacoos.org/sitemap.xml")).text();
   const urls = [...xml.matchAll(/<loc>(.*?)<\/loc>/g)].map((match) => match[1]);
-  assert.equal(urls.length, 138);
+  assert.equal(urls.length, 150);
   const knownPaths = new Set(urls.map((url) => new URL(url).pathname));
   for (const url of urls) {
     const response = await render(url);
@@ -31,7 +31,7 @@ test("all sitemap pages render with the correct language, canonical and reciproc
     for (const match of html.matchAll(/<a\b[^>]*href="(\/[^"?#]*)/g)) {
       assert.ok(knownPaths.has(match[1]), `${url}: broken internal path ${match[1]}`);
     }
-    if (pathname.endsWith("/articles")) assert.equal((html.match(/class="guide-card"/g) ?? []).length, 15);
+    if (pathname.endsWith("/articles")) assert.equal((html.match(/class="guide-card"/g) ?? []).length, 17);
     if (/^\/(en|de|fr|es|it|pt)$/.test(pathname)) assert.equal((html.match(/class="guide-card"/g) ?? []).length, 4);
     if (pathname.includes("/articles/")) {
       const scripts = [...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)];
@@ -46,7 +46,7 @@ test("all sitemap pages render with the correct language, canonical and reciproc
 test("new translations retain every section and paragraph without English fallback", async () => {
   for (const locale of locales) {
     const articles = JSON.parse(await readFile(new URL(`../lib/articles/${locale}.json`, import.meta.url), "utf8"));
-    assert.equal(articles.length, 3);
+    assert.equal(articles.length, 5);
     for (const article of articles) {
       assert.equal(article.sections.length, 8);
       assert.ok(article.sections.every((section) => section.length === 3));

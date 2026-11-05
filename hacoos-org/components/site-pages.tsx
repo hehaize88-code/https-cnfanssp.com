@@ -94,11 +94,10 @@ function Footer({ locale }: { locale: Locale }) {
 function SearchForm({ locale }: { locale: Locale }) {
   const t = copy[locale];
   return (
-    <form className="search-form" action="https://www.cnfanshp.com/search.html" method="get">
+    <form className="search-form" action="https://www.cnfansge.com/search.html" method="get">
       <Search size={20} strokeWidth={1.5} aria-hidden="true" />
       <input name="keywords" type="search" required placeholder={t.searchPlaceholder} aria-label={t.searchPlaceholder} />
       <input type="hidden" name="channelid" value="2" />
-      <input type="hidden" name="method" value="1" />
       <button type="submit">{t.searchButton}<ArrowRight size={17} /></button>
     </form>
   );
@@ -126,7 +125,8 @@ function ProductGrid({ locale, limit, eagerCount = 2 }: { locale: Locale; limit?
           </div>
           <div className="product-meta">
             <p>{product.category}</p><h3>{product.title}</h3>
-            <div><span>{product.note}</span><ArrowUpRight size={18} strokeWidth={1.4} aria-label={t.openReference} /></div>
+            <div><span>{product.note}</span></div>
+            <strong className="product-action">{t.openReference}<ArrowUpRight size={15} aria-hidden="true" /></strong>
           </div>
         </a>
       ))}
@@ -146,11 +146,11 @@ function CategoryGrid({ locale }: { locale: Locale }) {
   );
 }
 
-function ArticleCards({ locale, limit }: { locale: Locale; limit?: number }) {
+function ArticleCards({ locale, limit, ids }: { locale: Locale; limit?: number; ids?: readonly string[] }) {
   const t = copy[locale];
   return (
     <div className="guide-grid">
-      {localizedContent[locale].guideCards.slice(0, limit).map((article, index) => (
+      {localizedContent[locale].guideCards.filter((article) => !ids || ids.includes(article.id)).slice(0, limit).map((article, index) => (
         <Link href={`/${locale}/articles/${article.id}`} className="guide-card" key={article.id}>
           <div className="guide-index">{String(index + 1).padStart(2, "0")}</div><p>{article.tag}</p><h3>{article.title}</h3><span>{article.summary}</span>
           <b>{t.readGuide}<ArrowRight size={16} /></b>
@@ -248,8 +248,21 @@ function SectionHero({ locale, section }: { locale: Locale; section: Section }) 
 function SpreadsheetPage({ locale }: { locale: Locale }) {
   const t = copy[locale]; const c = localizedContent[locale];
   return <>
-    <section className="index-search shell"><SearchForm locale={locale} /><p>{c.ui.searchHelp}</p></section>
+    <section className="index-search shell">
+      <SearchForm locale={locale} />
+      <div className="catalog-shortcuts">
+        {[c.categories[0], c.categories[1], c.categories[6]].map((category) => (
+          <a key={category.href} href={category.href}>{category.name}<ArrowUpRight size={14} aria-hidden="true" /></a>
+        ))}
+      </div>
+      <p>{c.ui.searchHelp}</p>
+      <Link className="text-link" href={`/${locale}/articles/how-to-buy-on-hacoo`}>{c.guideCards.find((a) => a.id === "how-to-buy-on-hacoo")!.title}<ArrowRight size={16} /></Link>
+    </section>
     <section className="section shell"><div className="section-head"><div><p className="kicker">{c.ui.entryPoints}</p><h2>{t.categories}</h2></div><p>{t.categoriesIntro}</p></div><CategoryGrid locale={locale} /></section>
+    <section className="section shell subpage-products">
+      <div className="section-head"><div><h2>{t.nav.finds}</h2></div><Link className="text-link" href={localPath(locale, "finds")}>{t.allFinds}<ArrowRight size={16} /></Link></div>
+      <ProductGrid locale={locale} limit={3} eagerCount={0} />
+    </section>
     <section className="section section-tint"><div className="shell"><div className="editorial-grid">{c.ui.editorialSteps.map(([title, text], index) => <article key={title}><span>0{index + 1}</span><h2>{title}</h2><p>{text}</p></article>)}</div></div></section>
   </>;
 }
@@ -259,9 +272,17 @@ function FindsPage({ locale }: { locale: Locale }) {
   return <section className="section shell subpage-products"><ProductGrid locale={locale} /><div className="source-note"><PackageCheck /><div><h2>{c.ui.sourceNote[0]}</h2><p>{c.ui.sourceNote[1]}</p></div></div></section>;
 }
 
+const articleTopics = [
+  ["hacoo-links-not-opening", "hacoo-spreadsheet-guide", "hacoo-link-verification", "hacoo-dead-link-recovery", "hacoo-listing-change-log", "hacoo-spreadsheet-maintenance"],
+  ["how-to-buy-on-hacoo", "hacoo-reviews", "hacoo-product-shortlist", "hacoo-size-evidence", "hacoo-image-evidence", "hacoo-price-variant-record", "hacoo-qc-guide", "hacoo-shipping-guide"],
+  ["cancel-hacoo-order-before-shipping", "hacoo-order-tracking", "hacoo-returns-refunds"],
+] as const;
+
 function ArticlesPage({ locale }: { locale: Locale }) {
   const c = localizedContent[locale];
-  return <section className="section shell article-library"><div className="article-library-note"><p className="kicker">{c.ui.articleLibrary[0]}</p><h2>{c.ui.articleLibrary[1]}</h2><p>{c.ui.articleLibrary[2]}</p></div><ArticleCards locale={locale} /></section>;
+  return <section className="section shell article-library"><div className="article-library-note"><p className="kicker">{c.ui.articleLibrary[0]}</p><h2>{c.ui.articleLibrary[1]}</h2><nav className="topic-nav">{c.ui.topics.map((label, i) => <a key={label} href={`#topic-${i + 1}`}>{label}</a>)}</nav></div>
+    {articleTopics.map((ids, i) => <section className="article-topic" key={ids[0]} id={`topic-${i + 1}`}><h2>{c.ui.topics[i]}</h2><ArticleCards locale={locale} ids={ids} /></section>)}
+  </section>;
 }
 
 function ArticleFactStrip({ facts }: { facts: Array<[string, string]> }) {
