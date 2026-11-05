@@ -1,0 +1,19 @@
+{
+  "lastUpdated": "2026-08-28",
+  "site": "findqcs.shop",
+  "track": "QDR",
+  "articles": [
+    {
+      "cycle": "C01",
+      "planTrack": "QDR01",
+      "slug": "can-you-trust-old-qc-photos",
+      "primaryQuery": "old QC photos",
+      "intent": "Decide which limited observations from dated QC evidence remain useful after identity, age, batch-drift, coverage and consequence checks",
+      "longTailQueries": ["QC photo age", "can you trust old QC photos", "old warehouse QC evidence", "date and batch QC risk"],
+      "focus": ["three dates", "identity state", "batch-drift risk", "coverage and compression", "freshness-consequence matrix", "current-unit recheck"],
+      "liveVerified": true,
+      "deploymentStatus": "live-verified-2026-08-28",
+      "baselineArticles": ["how-findqc-works-2026", "findqc-real-buyer-reviews-analysis", "how-to-read-qc-photos", "qc-finder-vs-spreadsheet", "check-a-listing-before-order"]
+    }
+  ]
+}
