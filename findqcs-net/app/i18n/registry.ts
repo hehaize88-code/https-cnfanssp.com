@@ -15,7 +15,7 @@ import * as page11 from "../guides/warehouse-lighting/page";
 import * as page12 from "../page";
 import * as page13 from "../privacy/page";
 
-const homeMetadata: Metadata = { title: "FindQCs: QC Photo Search and Inspection Guides", description: "Find product listings and learn to check Weidian, Taobao and 1688 QC photos, sneaker details, clothing measurements and color differences." };
+const homeMetadata: Metadata = { title: "FindQCs – QC Photo Finder for Weidian, Taobao & 1688", description: "Search the catalogue by product link or keyword. Match a Weidian, Taobao or 1688 listing, then check available QC photos for size, stitching and visible defects." };
 
 export const staticPages: Record<string, { Page: ComponentType; metadata: Metadata }> = {
   "/articles/map-listing-identity-to-qc-record/": {Page: page0.default, metadata: page0.metadata},

@@ -9,7 +9,7 @@ export const searchArticles: PriorityArticle[] = [
     description: "Troubleshoot an empty QC search: check the original Weidian, Taobao or 1688 link, preserve the item ID and separate missing evidence from a product defect.",
     primaryKeyword: "no QC photos found",
     keywords: ["no QC photos found", "QC finder no results", "Weidian QC photos", "Taobao QC photos", "1688 product link"],
-    readTime: "9 min", datePublished: "2026-10-08", dateModified: "2026-10-08",
+    readTime: "9 min", datePublished: "2026-10-08", dateModified: "2026-11-05",
     intro: "An empty QC search means that this search did not return usable photographs. It does not establish that a product is defective, that the seller has no customers or that the listing is safe. Work through the link, identity and coverage checks below before deciding what evidence is still missing.",
     sections: [
       { id: "quick-check", heading: "Start with a five-minute search check", paragraphs: [
@@ -20,6 +20,9 @@ export const searchArticles: PriorityArticle[] = [
         "A shopping-agent page, shared short link and original seller listing may all refer to the same item, but their URLs are not interchangeable. A search tool may understand one format and treat another as ordinary text. Use the source-link field or the original-product link supplied on the page when available. Check the destination you actually reach instead of assuming that copying the browser address has recovered the marketplace listing.",
         "Preserve identifying parameters. For example, an item identifier contained in an id= parameter can be essential even when referral or campaign parameters are unnecessary. Do not delete the entire query string automatically. Keep the untouched link alongside the cleaned version and compare the visible title and options after opening both. If a redirect leads to a different item, stop treating it as an exact-match search."
       ] },
+      { id: "catalogue-number", heading: "Two numbers on a jersey page: which one goes in the search?", paragraphs: [
+        "The Jersey 60 catalogue page ends in 6667.html, but its original Weidian link contains itemID=7632511460. These are two different numbering systems. Use 6667 to reopen that catalogue page and use the full Weidian link to look for a warehouse record of the seller’s listing. Finding the catalogue card confirms its identity in that catalogue; the card alone cannot tell you which size was photographed."
+      ], link: { href: "https://cnfanssp.com/AllProducts/6667.html", label: "Open the Jersey 60 listing and check its original product link" } },
       { id: "identity", heading: "Use the item ID before the product title", paragraphs: [
         "Titles are weak identifiers because sellers, agents and translation systems can rewrite them. A title may also cover several colors, sizes or bundles. Record the marketplace, seller and item ID as separate fields. Two pages with similar photographs but different item IDs are different listings until you have stronger evidence connecting them. Identical-looking catalogue pictures are especially common and cannot establish a shared warehouse record.",
         "The same item ID still does not prove the same received unit. A listing can remain online while available options or stock change. Match the selected color, size, material option and included quantity against each candidate gallery. If a shoe gallery shows another size, it may help you plan useful photo angles, but it cannot confirm the measurements of your own pair. State that narrower use clearly."

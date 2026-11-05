@@ -1,3 +1,4 @@
+import { inspectionArticles } from "./inspectionArticles";
 import { searchArticles } from "./searchArticles";
 export type PriorityArticle = {
   slug: string;
@@ -16,6 +17,7 @@ export type PriorityArticle = {
     id: string;
     heading: string;
     paragraphs: string[];
+    link?: { href: string; label: string };
     panel?: { title: string; items: string[] };
   }>;
   next: { href: string; label: string };
@@ -868,4 +870,4 @@ const existingPriorityArticles: PriorityArticle[] = [
   },
 ];
 
-export const priorityArticles: PriorityArticle[] = [...searchArticles, ...existingPriorityArticles];
+export const priorityArticles: PriorityArticle[] = [...inspectionArticles, ...searchArticles, ...existingPriorityArticles];

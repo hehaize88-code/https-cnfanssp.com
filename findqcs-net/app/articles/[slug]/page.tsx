@@ -85,6 +85,7 @@ export default async function PriorityArticlePage({ params }: { params: Params }
             <section key={section.id} aria-labelledby={section.id}>
               <h2 id={section.id}>{section.heading}</h2>
               {section.paragraphs.map((paragraph, index) => <p key={index}>{paragraph}</p>)}
+              {section.link && <p><Link href={section.link.href}>{section.link.label}</Link></p>}
               {section.panel && <div className="check-block"><strong>{section.panel.title}</strong><ul>{section.panel.items.map((item) => <li key={item}>{item}</li>)}</ul></div>}
             </section>
           ))}

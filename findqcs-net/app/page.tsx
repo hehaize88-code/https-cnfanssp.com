@@ -1,17 +1,18 @@
 "use client";
 
+import { catalogueSearch, identifyListing } from "./catalogueLookup";
 import { FormEvent, useState } from "react";
 import Link from "next/link";
 import LanguageLinks from "./components/LanguageLinks";
 import { LocalizedContent } from "./components/LocalizedContent";
-import { trackEvent } from "./components/AnalyticsEvents";
+import { trackEvent, trackCatalogueOpen } from "./components/AnalyticsEvents";
 import { changeLanguage, type Lang, useLanguage } from "./components/language";
 
 const copy = {
   en: {
     nav: ["Search", "Categories", "QC Guide", "FAQ"], eyebrow: "Independent product research workspace",
-    titleA: "Find the listing.", titleB: "Inspect QC photos.", intro: "Find product listings, match Weidian, Taobao and 1688 source links, and learn how to read QC photos, measurements and visible defects before buying.",
-    link: "Product link", keyword: "Keyword", placeholder: "Paste a product link or search shoes, jersey, hoodie…", search: "Search now", helper: "Search opens the product catalogue in a new tab. Photo availability depends on the listing.",
+    heading: "QC Photo Finder", intro: "Paste a Weidian, Taobao or 1688 product link, or search by name. Match the seller and selected size before comparing warehouse photos.",
+    link: "Product link", keyword: "Keyword", placeholder: "Paste a product link or search shoes, jersey, hoodie…", search: "Search now", helper: "Catalogue pages open in a new tab. If a link returns no photos, try the product name.", matchNote: "Several catalogue cards use this Weidian link. Choose the design that matches your order.",
     updated: "Research-first", free: "Free to browse", sources: "10 categories", catTitle: "Browse by category", catSub: "Go straight to the matching product collection.",
     freshTitle: "Fresh listings to inspect", freshSub: "Current product pages from the connected catalogue. Listing images are references—not QC approval.", open: "Open listing", listing: "Listing preview",
     method: "A better QC routine", methodSub: "The same three checks, every time. Fast enough for daily use; strict enough to catch obvious problems.",
@@ -22,8 +23,8 @@ const copy = {
   },
   de: {
     nav: ["Suche", "Kategorien", "QC-Ratgeber", "FAQ"], eyebrow: "Unabhängiger Arbeitsbereich zur Produktrecherche",
-    titleA: "Produkt finden.", titleB: "QC-Fotos prüfen.", intro: "Produktangebote finden, Weidian-, Taobao- und 1688-Links zuordnen und QC-Fotos, Maße und sichtbare Mängel vor dem Kauf prüfen.",
-    link: "Produktlink", keyword: "Suchbegriff", placeholder: "Produktlink einfügen oder Schuhe, Trikot, Hoodie suchen…", search: "Jetzt suchen", helper: "Die Suche öffnet den Produktkatalog in einem neuen Tab. Ob QC-Fotos vorliegen, hängt vom Angebot ab.",
+    heading: "QC-Fotos finden", intro: "Gib einen Produktlink von Weidian, Taobao oder 1688 ein oder suche nach dem Namen. Prüfe Anbieter und gewählte Größe, bevor du Lagerfotos vergleichst.",
+    link: "Produktlink", keyword: "Suchbegriff", placeholder: "Produktlink einfügen oder Schuhe, Trikot, Hoodie suchen…", search: "Jetzt suchen", helper: "Katalogseiten öffnen sich in einem neuen Tab. Fehlen Fotos, suche nach dem Produktnamen.", matchNote: "Mehrere Katalogeinträge verwenden diesen Weidian-Link. Wähle das Design aus deiner Bestellung.",
     updated: "Recherche zuerst", free: "Kostenlos", sources: "10 Kategorien", catTitle: "Nach Kategorie suchen", catSub: "Direkt zur passenden Produktkollektion.",
     freshTitle: "Aktuelle Artikel zum Prüfen", freshSub: "Aktuelle Produktseiten aus dem verbundenen Katalog. Artikelbilder sind Referenzen – keine QC-Freigabe.", open: "Artikel öffnen", listing: "Artikelvorschau",
     method: "Eine bessere QC-Routine", methodSub: "Immer dieselben drei Prüfungen: schnell im Alltag und streng genug für offensichtliche Probleme.",
@@ -33,8 +34,8 @@ const copy = {
   },
   fr: {
     nav: ["Recherche", "Catégories", "Guide QC", "FAQ"], eyebrow: "Espace indépendant de recherche produit",
-    titleA: "Trouvez l’article.", titleB: "Examinez les photos QC.", intro: "Trouvez des produits, identifiez les liens Weidian, Taobao et 1688, puis apprenez à lire les photos QC, les mesures et les défauts visibles avant l’achat.",
-    link: "Lien produit", keyword: "Mot-clé", placeholder: "Collez un lien ou recherchez chaussures, maillot, hoodie…", search: "Rechercher", helper: "La recherche ouvre le catalogue dans un nouvel onglet. Les photos disponibles dépendent de la fiche produit.",
+    heading: "Recherche de photos QC", intro: "Collez le lien d’un article Weidian, Taobao ou 1688 ou cherchez-le par son nom. Vérifiez le vendeur et la taille choisie avant de comparer les photos d’entrepôt.",
+    link: "Lien produit", keyword: "Mot-clé", placeholder: "Collez un lien ou recherchez chaussures, maillot, hoodie…", search: "Rechercher", helper: "Les fiches du catalogue s’ouvrent dans un nouvel onglet. Si le lien ne donne aucune photo, essayez le nom de l’article.", matchNote: "Plusieurs fiches renvoient à ce lien Weidian. Choisissez le modèle de votre commande.",
     updated: "Recherche d’abord", free: "Accès gratuit", sources: "10 catégories", catTitle: "Explorer par catégorie", catSub: "Accédez directement à la collection correspondante.",
     freshTitle: "Fiches récentes à inspecter", freshSub: "Pages actuelles du catalogue connecté. Les images sont des références, pas une validation QC.", open: "Ouvrir la fiche", listing: "Aperçu de fiche",
     method: "Une meilleure routine QC", methodSub: "Toujours les trois mêmes contrôles : assez rapides au quotidien et assez stricts pour repérer les problèmes visibles.",
@@ -44,8 +45,8 @@ const copy = {
   },
   es: {
     nav: ["Buscar", "Categorías", "Guía QC", "FAQ"], eyebrow: "Espacio independiente de investigación de productos",
-    titleA: "Encuentra el producto.", titleB: "Revisa las fotos QC.", intro: "Encuentra productos, identifica enlaces de Weidian, Taobao y 1688 y aprende a revisar fotos QC, medidas y defectos visibles antes de comprar.",
-    link: "Enlace del producto", keyword: "Palabra clave", placeholder: "Pega un enlace o busca zapatillas, camiseta, sudadera…", search: "Buscar ahora", helper: "La búsqueda abre el catálogo en otra pestaña. La disponibilidad de fotos depende del anuncio.",
+    heading: "Buscador de fotos QC", intro: "Pega un enlace de Weidian, Taobao o 1688, o busca por nombre. Comprueba el vendedor y la talla elegida antes de comparar las fotos de almacén.",
+    link: "Enlace del producto", keyword: "Palabra clave", placeholder: "Pega un enlace o busca zapatillas, camiseta, sudadera…", search: "Buscar ahora", helper: "Las fichas se abren en otra pestaña. Si el enlace no muestra fotos, prueba con el nombre del producto.", matchNote: "Varias fichas comparten este enlace de Weidian. Elige el diseño que pediste.",
     updated: "Primero investigar", free: "Acceso gratuito", sources: "10 categorías", catTitle: "Explorar por categoría", catSub: "Accede directamente a la colección correspondiente.",
     freshTitle: "Productos recientes para revisar", freshSub: "Páginas actuales del catálogo conectado. Las imágenes son referencias, no una aprobación QC.", open: "Abrir producto", listing: "Vista previa",
     method: "Una rutina QC mejor", methodSub: "Las mismas tres comprobaciones cada vez: rápidas para el uso diario y estrictas con los problemas visibles.",
@@ -55,8 +56,8 @@ const copy = {
   },
   it: {
     nav: ["Cerca", "Categorie", "Guida QC", "FAQ"], eyebrow: "Spazio indipendente per la ricerca dei prodotti",
-    titleA: "Trova l’articolo.", titleB: "Esamina le foto QC.", intro: "Trova prodotti, identifica i link Weidian, Taobao e 1688 e impara a leggere foto QC, misure e difetti visibili prima dell’acquisto.",
-    link: "Link prodotto", keyword: "Parola chiave", placeholder: "Incolla un link o cerca scarpe, maglia, felpa…", search: "Cerca ora", helper: "La ricerca apre il catalogo in una nuova scheda. Le foto disponibili dipendono dall’inserzione.",
+    heading: "Cerca foto QC", intro: "Incolla il link di un articolo Weidian, Taobao o 1688 oppure cercalo per nome. Verifica il venditore e la taglia scelta prima di confrontare le foto di magazzino.",
+    link: "Link prodotto", keyword: "Parola chiave", placeholder: "Incolla un link o cerca scarpe, maglia, felpa…", search: "Cerca ora", helper: "Le schede si aprono in una nuova scheda del browser. Se il link non restituisce foto, prova il nome del prodotto.", matchNote: "Più schede usano questo link Weidian. Scegli il modello che hai ordinato.",
     updated: "Prima la ricerca", free: "Accesso gratuito", sources: "10 categorie", catTitle: "Esplora per categoria", catSub: "Vai direttamente alla collezione corrispondente.",
     freshTitle: "Articoli recenti da controllare", freshSub: "Pagine attuali del catalogo collegato. Le immagini sono riferimenti, non un’approvazione QC.", open: "Apri articolo", listing: "Anteprima articolo",
     method: "Una routine QC migliore", methodSub: "Sempre gli stessi tre controlli: rapidi ogni giorno e rigorosi sui problemi visibili.",
@@ -92,23 +93,38 @@ const footerLabels: Record<Lang, readonly [string,string]> = {en:["Privacy","Dis
 const popularTerms: Record<Lang, readonly string[]> = {en:["sneakers","jersey","hoodie","jacket"],de:["Sneaker","Trikot","Hoodie","Jacke"],fr:["baskets","maillot","hoodie","veste"],es:["zapatillas","camiseta","sudadera","chaqueta"],it:["sneaker","maglia","felpa","giacca"]};
 
 const products = [
-  { name: "Jersey 60", id: 6667, price: "$13.80", image: "https://www.cnfanssp.com/uploads/allimg/20260430/1-26043021142K50.jpg" },
-  { name: "Jersey 59", id: 6666, price: "$13.80", image: "https://www.cnfanssp.com/uploads/allimg/20260430/1-260430211425539.jpg" },
-  { name: "Jersey 58", id: 6665, price: "$13.80", image: "https://www.cnfanssp.com/uploads/allimg/20260430/1-260430211423422.jpg" },
-  { name: "Jersey 57", id: 6664, price: "$13.80", image: "https://www.cnfanssp.com/uploads/allimg/20260430/1-2604302114224a.jpg" },
-  { name: "Jersey 56", id: 6663, price: "$25.10", image: "https://www.cnfanssp.com/uploads/allimg/20260430/1-260430211421Z1.jpg" },
-  { name: "Jersey 55", id: 6662, price: "$25.10", image: "https://www.cnfanssp.com/uploads/allimg/20260430/1-260430211420242.jpg" },
+  { name: "Jersey 60", id: 6667, weidianId: "7632511460", price: "$13.80", image: "https://www.cnfanssp.com/uploads/allimg/20260430/1-26043021142K50.jpg" },
+  { name: "Jersey 59", id: 6666, weidianId: "7632511460", price: "$13.80", image: "https://www.cnfanssp.com/uploads/allimg/20260430/1-260430211425539.jpg" },
+  { name: "Jersey 58", id: 6665, weidianId: "7632511460", price: "$13.80", image: "https://www.cnfanssp.com/uploads/allimg/20260430/1-260430211423422.jpg" },
+  { name: "Jersey 57", id: 6664, weidianId: "7632511460", price: "$13.80", image: "https://www.cnfanssp.com/uploads/allimg/20260430/1-2604302114224a.jpg" },
+  { name: "Jersey 56", id: 6663, weidianId: "7632591132", price: "$25.10", image: "https://www.cnfanssp.com/uploads/allimg/20260430/1-260430211421Z1.jpg" },
+  { name: "Jersey 55", id: 6662, weidianId: "7632591132", price: "$25.10", image: "https://www.cnfanssp.com/uploads/allimg/20260430/1-260430211420242.jpg" },
 ];
 
 export default function Home() {
   const lang = useLanguage();
   const [mode, setMode] = useState<"link" | "keyword">("link");
   const [query, setQuery] = useState("");
+  const [submittedLink, setSubmittedLink] = useState("");
+  const matches = products.filter(item => item.weidianId === submittedLink);
   const t = copy[lang];
   const x = extra[lang];
 
   function changeLang(next: Lang) { changeLanguage(next); }
-  function submit(e: FormEvent) { e.preventDefault(); const value = query.trim(); const target = value ? `https://cnfanssp.com/search.html?keywords=${encodeURIComponent(value)}&channelid=2` : "https://cnfanssp.com/AllProducts/"; trackEvent("catalogue_search", { search_mode: mode, query_present: value ? 1 : 0, page_language: lang }); window.open(target, "_blank", "noopener,noreferrer"); }
+  function submit(e: FormEvent) {
+    e.preventDefault();
+    const value = query.trim();
+    const listing = mode === "link" ? identifyListing(value) : undefined;
+    const sourceId = listing?.sourceId;
+    const hasMatches = sourceId && products.some(item => item.weidianId === sourceId);
+    const result = hasMatches ? "matching_cards" : listing?.catalogueUrl ? "catalogue_item" : "catalogue_search";
+    trackEvent("catalogue_search", { search_mode: mode, query_present: value ? 1 : 0, search_outcome: result, page_language: lang });
+    setSubmittedLink(hasMatches ? sourceId : "");
+    if (hasMatches) return;
+    const url = new URL(listing?.catalogueUrl || catalogueSearch(value));
+    trackCatalogueOpen(url, listing?.catalogueUrl ? "product" : value ? "search" : "category");
+    window.open(url.href, "_blank", "noopener,noreferrer");
+  }
 
   const websiteSchema = { "@context":"https://schema.org", "@type":"WebSite", "@id":"https://findqcs.net/#website", url:"https://findqcs.net/", name:"FindQCs", description:"An independent QC finder and QC photo guide for product research, measurements and visible-detail inspection." };
   const organizationSchema = { "@context":"https://schema.org", "@type":"Organization", "@id":"https://findqcs.net/#organization", url:"https://findqcs.net/", name:"FindQCs", logo:{"@type":"ImageObject",url:"https://findqcs.net/findqc-logo.png",width:128,height:128} };
@@ -125,11 +141,18 @@ export default function Home() {
       </header>
 
       <section id="top" className="command-area frame">
-        <div className="command-copy"><span>{t.eyebrow}</span><h1>{t.titleA} <strong>{t.titleB}</strong></h1><p>{t.intro}</p></div>
+        <div className="command-copy"><span>{t.eyebrow}</span><h1>{t.heading}</h1><p>{t.intro}</p></div>
         <div id="finder" className="command-search">
-          <div className="command-tabs"><button type="button" className={mode==="link"?"active":""} onClick={()=>setMode("link")}>{t.link}</button><button type="button" className={mode==="keyword"?"active":""} onClick={()=>setMode("keyword")}>{t.keyword}</button></div>
-          <form onSubmit={submit}><b aria-hidden="true">⌕</b><input value={query} onChange={(e)=>setQuery(e.target.value)} placeholder={t.placeholder} aria-label={t.placeholder}/><button type="submit">{t.search}<span>↗</span></button></form>
-          <div className="quick-terms"><span>{x.popular}</span>{popularTerms[lang].map((item,index)=><button type="button" key={item} onClick={()=>setQuery(["sneakers","jersey","hoodie","jacket"][index])}>{item}</button>)}<small>{t.helper}</small></div>
+          <div className="command-tabs"><button type="button" className={mode==="link"?"active":""} onClick={()=>{setMode("link");setSubmittedLink("");}}>{t.link}</button><button type="button" className={mode==="keyword"?"active":""} onClick={()=>{setMode("keyword");setSubmittedLink("");}}>{t.keyword}</button></div>
+          <form onSubmit={submit}><b aria-hidden="true">⌕</b><input value={query} onChange={(e)=>{setQuery(e.target.value);setSubmittedLink("");}} placeholder={t.placeholder} aria-label={t.placeholder}/><button type="submit">{t.search}<span>↗</span></button></form>
+          <div aria-live="polite">
+            {matches.length > 0 && <div className="finder-matches">
+              <p>{t.matchNote}</p>
+              <ul>{matches.map(item => <li key={item.id}><a href={`https://cnfanssp.com/AllProducts/${item.id}.html`} target="_blank" rel="noopener noreferrer">{item.name} ↗</a></li>)}</ul>
+            </div>}
+          </div>
+          <div className="quick-terms"><span>{x.popular}</span>{popularTerms[lang].map((item,index)=><button type="button" key={item} onClick={()=>{setMode("keyword");setSubmittedLink("");setQuery(["sneakers","jersey","hoodie","jacket"][index]);}}>{item}</button>)}<small>{t.helper}</small></div>
+          <div className="finder-help"><Link href="/guides/warehouse-lighting/">How to find QC photos from a product link</Link></div>
         </div>
       </section>
 
@@ -151,7 +174,7 @@ export default function Home() {
       </section>
 
       <section className="knowledge-zone">
-          <div className="frame knowledge-grid"><div className="knowledge-intro"><span>{articleLabel[lang]}</span><h2>{x.readingTitle}</h2><Link href="/articles/">{x.read} ↗</Link></div><Link href="/guides/qc-photo-checklist/" className="knowledge-feature"><span>12 MIN</span><h3>{x.fullTitle}</h3><p>{x.fullDesc}</p><b>{x.open} ↗</b></Link><div className="knowledge-stack"><Link href="/articles/no-qc-photos-found/"><span>12 MIN</span><b>No QC photos found? Check the link</b><i>↗</i></Link><Link href="/articles/qc-photo-lighting-color-difference/"><span>13 MIN</span><b>Lighting or product color difference?</b><i>↗</i></Link><Link href="/articles/sneaker-qc-photo-checklist/"><span>13 MIN</span><b>Sneaker QC photo checklist</b><i>↗</i></Link><Link href="/articles/seller-photos-vs-warehouse-qc/"><span>13 MIN</span><b>Seller photos vs warehouse QC photos</b><i>↗</i></Link></div></div>
+          <div className="frame knowledge-grid"><div className="knowledge-intro"><span>{articleLabel[lang]}</span><h2>{x.readingTitle}</h2><Link href="/articles/">{x.read} ↗</Link></div><Link href="/guides/qc-photo-checklist/" className="knowledge-feature"><span>12 MIN</span><h3>{x.fullTitle}</h3><p>{x.fullDesc}</p><b>{x.open} ↗</b></Link><div className="knowledge-stack"><Link href="/articles/football-shirt-qc-checklist/"><b>Football shirt QC checklist</b><i>↗</i></Link><Link href="/articles/qc-photo-shoe-weight-with-box/"><b>Does the QC weight include the shoe box?</b><i>↗</i></Link><Link href="/articles/no-qc-photos-found/"><span>12 MIN</span><b>No QC photos found? Check the link</b><i>↗</i></Link><Link href="/articles/qc-photo-lighting-color-difference/"><span>13 MIN</span><b>Lighting or product color difference?</b><i>↗</i></Link><Link href="/articles/sneaker-qc-photo-checklist/"><span>13 MIN</span><b>Sneaker QC photo checklist</b><i>↗</i></Link><Link href="/articles/seller-photos-vs-warehouse-qc/"><span>13 MIN</span><b>Seller photos vs warehouse QC photos</b><i>↗</i></Link></div></div>
       </section>
 
       <section id="faq" className="work-faq frame"><div className="work-faq-intro"><span>FAQ / 04</span><h2>{t.faqTitle}</h2><p>{t.faqSub}</p><Link href="/faq/">{x.all} ↗</Link></div><div className="work-faq-list">{t.faqs.map(([q,a],i)=><details key={q} open={i===0}><summary><span>0{i+1}</span>{q}<b>+</b></summary><p>{a}</p></details>)}</div></section>

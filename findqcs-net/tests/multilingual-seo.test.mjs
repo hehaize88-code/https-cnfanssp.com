@@ -4,11 +4,11 @@ import test from "node:test";
 
 const root=new URL('../dist/client/',import.meta.url);
 const languages=['en','de','fr','es','it'];
-const slugs=['no-qc-photos-found','sneaker-qc-photo-checklist','seller-photos-vs-warehouse-qc'];
+const slugs=['no-qc-photos-found','sneaker-qc-photo-checklist','seller-photos-vs-warehouse-qc','football-shirt-qc-checklist','qc-photo-shoe-weight-with-box'];
 test('every sitemap page has matching language, canonical, reciprocal alternates and live internal links',async()=>{
   const sitemap=await readFile(new URL('sitemap.xml',root),'utf8');
   const urls=[...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m=>new URL(m[1]));
-  assert.equal(urls.length,135);
+  assert.equal(urls.length,145);
   for(const url of urls){
     const html=await readFile(new URL(url.pathname.slice(1)+'index.html',root),'utf8');
     const lang=url.pathname.match(/^\/(de|fr|es|it)\//)?.[1]||'en';
@@ -43,7 +43,8 @@ test('new articles contain complete translated prose and localized article schem
     const paragraphs=[...main.matchAll(/<p(?:\s[^>]*)?>(.*?)<\/p>/g)];
     assert.ok(paragraphs.length>=17,`${path} incomplete body`);
     assert.match(html,new RegExp(`"inLanguage":"${lang}"`));
-    assert.match(html,/"datePublished":"2026-10-08"/);
+    const date = ['football-shirt-qc-checklist', 'qc-photo-shoe-weight-with-box'].includes(slug) ? '2026-11-05' : '2026-10-08';
+    assert.ok(html.includes(`"datePublished":"${date}"`));
     assert.doesNotMatch(html,/"@type":"FAQPage"/);
     if(lang!=='en'){
       assert.doesNotMatch(main,/An empty QC search means|A useful sneaker QC checklist starts|Seller photographs describe an offer/);

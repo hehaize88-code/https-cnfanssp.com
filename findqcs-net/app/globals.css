@@ -81,3 +81,11 @@ a:focus-visible,button:focus-visible,summary:focus-visible,select:focus-visible,
 .related-reading li{margin:8px 0}
 
 .language-links{display:flex;gap:16px;flex-wrap:wrap;font-size:12px;letter-spacing:.05em;margin-top:16px}.language-links a[aria-current="page"]{font-weight:700;text-decoration:underline}
+
+.finder-help { margin-top: .75rem; font-size: .875rem; }
+.finder-help a { color: inherit; text-decoration: underline; text-underline-offset: .18em; }
+.prose code { overflow-wrap: anywhere; }
+
+.finder-matches { padding: .75rem 0; font-size: .9rem; }
+.finder-matches ul { display: flex; flex-wrap: wrap; gap: .6rem 1.2rem; list-style: none; padding: 0; }
+.finder-matches a { color: inherit; text-decoration: underline; }

@@ -24,7 +24,7 @@ test("renders canonical URLs and SEO schemas in static HTML", async () => {
 
   const home = await render("/");
   assert.match(home, /<link rel="canonical" href="https:\/\/findqcs\.net\/"\/>/i);
-  assert.match(home, /FindQCs: QC Photo Search and Inspection Guides/i);
+  assert.match(home, /FindQCs – QC Photo Finder for Weidian, Taobao &amp; 1688/i);
   assert.match(home, /"@type":"WebSite"/i);
   assert.match(home, /href="\/articles\/"/i);
 
@@ -49,6 +49,8 @@ test("renders canonical URLs and SEO schemas in static HTML", async () => {
   assert.doesNotMatch(freshness, /href="https:\/\/(?:findqc\.com|[^"']*(?:agent|spreadsheet))/i);
 
   const prioritySlugs = [
+    "football-shirt-qc-checklist",
+    "qc-photo-shoe-weight-with-box",
     "no-qc-photos-found",
     "sneaker-qc-photo-checklist",
     "seller-photos-vs-warehouse-qc",
@@ -75,7 +77,12 @@ test("renders canonical URLs and SEO schemas in static HTML", async () => {
     assert.match(html, /"@type":"Article"/i);
     assert.equal((html.match(/"@type":"BreadcrumbList"/g) ?? []).length, 1);
     assert.doesNotMatch(html, /"@type":"FAQPage"/i);
-    assert.doesNotMatch(html, /href="https:\/\/(?!(?:findqcs\.net|cnfanssp\.com))/i);
+    const allowedSource = ({
+      "football-shirt-qc-checklist": "https://www.astroreps.com/qc/football-jerseys-collection-team-logos-sponsor-brands-dragon-versace-designs.html",
+      "qc-photo-shoe-weight-with-box": "https://theqcfinder.com/qc/off-white-sneakers-trainers-oof/",
+    })[slug];
+    if (allowedSource) assert.ok(html.includes(`href="${allowedSource}"`));
+    assert.doesNotMatch(allowedSource ? html.replaceAll(allowedSource, "") : html, /href="https:\/\/(?!(?:findqcs\.net|cnfanssp\.com))/i);
 
     const articleStart = html.indexOf('<article class="editorial-content shell">');
     const articleEnd = html.indexOf("</article>", articleStart);

@@ -6,12 +6,12 @@ import Document from "./components/Document";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://findqcs.net"),
-  title: "FindQCs: QC Photo Search and Inspection Guides",
-  description: "Find product listings and learn to check Weidian, Taobao and 1688 QC photos, sneaker details, clothing measurements and color differences.",
+  title: "FindQCs – QC Photo Finder for Weidian, Taobao & 1688",
+  description: "Search the catalogue by product link or keyword. Match a Weidian, Taobao or 1688 listing, then check available QC photos for size, stitching and visible defects.",
   keywords: ["QC finder", "find QC photos", "QC photo guide", "product QC photos", "QC photo checklist"],
   alternates: { canonical: "/", languages: languageAlternates("/") },
-  openGraph: { title: "QC Finder & QC Photo Guide | FindQCs", description: "Find product listings and use practical QC photo guides to inspect visible details.", type: "website", url: "/", images: ["/og.png"] },
-  twitter: { card: "summary_large_image", title: "QC Finder & QC Photo Guide | FindQCs", description: "Find product listings and use practical QC photo guides to inspect visible details.", images: ["/og.png"] },
+  openGraph: { title: "FindQCs – QC Photo Finder for Weidian, Taobao & 1688", description: "Search the catalogue by product link or keyword. Match a Weidian, Taobao or 1688 listing, then check available QC photos for size, stitching and visible defects.", type: "website", url: "/", images: ["/og.png"] },
+  twitter: { card: "summary_large_image", title: "FindQCs – QC Photo Finder for Weidian, Taobao & 1688", description: "Search the catalogue by product link or keyword. Match a Weidian, Taobao or 1688 listing, then check available QC photos for size, stitching and visible defects.", images: ["/og.png"] },
   icons: { icon: "/findqc-logo.png", shortcut: "/findqc-logo.png" },
 };
 

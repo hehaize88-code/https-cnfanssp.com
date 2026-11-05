@@ -1,4 +1,5 @@
 import { languageAlternates } from "../i18n/paths";
+import Link from "next/link";
 import type { Metadata } from "next";
 import { EditorialPage } from "../components/EditorialPage";
 
@@ -15,6 +16,7 @@ export default function Categories(){return <EditorialPage eyebrow="DISCOVER / C
   <section className="directory-copy prose standalone" aria-labelledby="category-research-heading">
     <h2 id="category-research-heading">Build the checklist around the product</h2>
     <p>A useful QC review begins with the failure points that matter for that category. Footwear needs paired-item comparison, toe and heel shape, sole attachment and size-label checks. Clothing needs flat measurements, seam alignment and print or embroidery placement. Accessories often depend more on edges, hardware, closures and dimensions. Electronics require exact model and accessory matching, while ordinary photographs still cannot confirm battery condition, internal parts or long-term performance.</p>
+    <ul><li><Link href="/articles/football-shirt-qc-checklist/">Football shirt QC checklist</Link></li><li><Link href="/articles/qc-photo-shoe-weight-with-box/">Does the QC weight include the shoe box?</Link></li></ul>
     <h2>Use the listing before judging the photo</h2>
     <p>Open the current product page and record the selected color, size, material option and included pieces before inspecting small details. Product titles can describe several variations at once, so the selected option and visible labels are stronger identifiers than the headline alone. If the photograph does not show a detail needed to distinguish two variations, mark it as unknown and request a specific angle rather than assuming a match.</p>
     <h2>Separate defects from photo conditions</h2>
