@@ -105,14 +105,19 @@ function copyHtmlBuild(language, sourceRoot) {
 }
 
 function buildSitemap(routes) {
-  const updatedRoutes = new Set(["/", "/articles", ...articles.map(article => `/articles/${article.slug}`)]);
+  const modifiedDates = new Map([
+    ["/", "2026-11-05"],
+    ["/articles", "2026-11-05"],
+    ["/categories/jersey", "2026-11-05"],
+    ...articles.map(article => [`/articles/${article.slug}`, article.dateModified || REVIEW_DATE]),
+  ]);
   const entries = routes.flatMap((route) => (englishOnlyRoutes.has(route) ? ["en"] : languages).map((language) => {
     const alternatesForRoute = englishOnlyRoutes.has(route) ? ["en"] : languages;
     const alternates = [
       ...alternatesForRoute.map((candidate) => `    <xhtml:link rel="alternate" hreflang="${candidate}" href="${localizedUrl(route, candidate)}" />`),
       `    <xhtml:link rel="alternate" hreflang="x-default" href="${localizedUrl(route, "en")}" />`,
     ].join("\n");
-    return `  <url>\n    <loc>${localizedUrl(route, language)}</loc>\n${alternates}\n${updatedRoutes.has(route) ? `    <lastmod>${REVIEW_DATE}</lastmod>` : ""}\n  </url>`;
+    return `  <url>\n    <loc>${localizedUrl(route, language)}</loc>\n${alternates}\n${modifiedDates.has(route) ? `    <lastmod>${modifiedDates.get(route)}</lastmod>` : ""}\n  </url>`;
   }));
 
   return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${entries.join("\n")}\n</urlset>\n`;
@@ -123,6 +128,9 @@ let indexableRoutes = [];
 
 for (const language of languages) {
   const languageOut = path.join(buildRun, language);
+  // Next static export shares .next even when distDir names the export folder.
+  // Each locale needs a fresh compiler cache to avoid reusing another language.
+  retireDirectory(path.join(root, ".next"), "next-cache");
 
   const result = spawnSync(process.execPath, [nextBin, "build"], {
     cwd: root,
@@ -161,7 +169,7 @@ writeFileSync(path.join(staging, "robots.txt"), "User-Agent: *\nAllow: /\nSitema
 
 rmSync(buildOut, { recursive: true, force: true });
 renameSync(staging, buildOut);
-rmSync(buildRun, { recursive: true, force: true });
+retireDirectory(buildRun, "build");
 
 rmSync(dist, { recursive: true, force: true });
 mkdirSync(path.join(dist, "client"), { recursive: true });

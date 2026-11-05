@@ -2320,6 +2320,8 @@ main {
 .long-read-header h1 {
   max-width: none;
   font-size: clamp(55px, 7vw, 92px);
+  overflow-wrap: anywhere;
+  hyphens: auto;
 }
 
 .long-read-header > p {
@@ -4923,3 +4925,16 @@ body::before { display: none; }
 .article-quick-answer p{margin:10px 0 0!important}
 .article-highlights .related-article-grid{margin-top:24px}
 @media(max-width:600px){.article-topic-nav{display:grid}.article-topic-nav a{justify-content:space-between}.article-quick-answer{padding:18px}.article-highlights .section-heading{align-items:flex-start;gap:14px}}
+
+.home-task-links { display: grid; gap: 8px; margin: 0 0 24px; }
+.home-task-links a { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 12px 15px; border: 1px solid var(--ink); font-size: 14px; font-weight: 700; }
+.home-task-links a:first-child { color: var(--white); background: var(--cobalt); }
+.home-task-links a:hover, .home-task-links a:focus-visible { outline: 2px solid var(--cobalt); outline-offset: 2px; }
+.home-task-links svg { flex-shrink: 0; }
+.index-hero-copy h1 { font-size: clamp(52px, 5.4vw, 82px); line-height: 1; letter-spacing: -.06em; overflow-wrap: anywhere; }
+@media (max-width: 760px) {
+  .index-hero-copy h1 { font-size: clamp(38px, 10.5vw, 58px); }
+  .home-task-links { gap: 7px; margin-bottom: 20px; }
+  .home-task-links a { padding: 11px 12px; font-size: 13px; }
+  .index-hero-copy .search-box:not(.compact) > p { display: block; }
+}

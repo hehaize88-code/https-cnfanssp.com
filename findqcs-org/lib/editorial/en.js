@@ -1,5 +1,183 @@
 import { makeGuide } from './shared.js';
 export const englishEditorial = {
+  "spreadsheet-find-original-listing-check": {
+  "title": "How to Check a Spreadsheet Find Against the Original Listing",
+  "description": "Trace a spreadsheet link to its seller listing, match the exact size and colour, and decide which warehouse QC photos apply. Includes a real Weidian item ID.",
+  "intro": [
+    "A spreadsheet row says “grey trainers.” You open the link and see the right shoe, but the colour menu contains several grey pairs. Which one did the person who submitted the find actually order? Keep the spreadsheet, the seller listing and any warehouse QC album open separately. The following example shows how to connect those three records and what to write down when a connection is missing."
+  ],
+  "sections": [
+    {
+      "title": "1. Save the row before following it",
+      "paragraphs": [
+        "Copy the actual hyperlink attached to the product name or button. In a shared sheet, a cell can display an abbreviated domain, a price or just the word “buy.” Open the link preview or use the browser’s copy-link command to capture its destination. Note the sheet name, tab, row label, date and the option you want. A row number alone becomes unreliable as soon as someone sorts the sheet.",
+        "Keep the row’s description in one field and your observation in another. “Grey, size 42, with spare laces” might combine a curator’s colour name, your intended size and an accessory shown in a thumbnail. Separate those three pieces now. Later you can verify the colour against an option code, the size against the selected size field and the laces against a written description or a photo showing the package contents."
+      ]
+    },
+    {
+      "title": "2. Follow the row to a marketplace item ID",
+      "paragraphs": [
+        "QCRadar’s public Weidian spreadsheet includes a row titled “Asics GEL-NYC Grey Rice.” Its marketplace link points to https://weidian.com/item.html?itemID=7721998852. The platform is Weidian and the value following itemID is 7721998852. You can check that pair by copying the destination yourself. When we followed it, the destination redirected to a shop-specific Weidian address carrying the same number. We verified the link mapping through the directory. The seller’s live stock and price still need checking when you order.",
+        "If your spreadsheet opens an agent page first, look for the original product or source link. Copy it alongside the agent URL and compare the marketplace name and complete item ID. Keep all digits, including any leading zeros, as text. A referral code, shop number or SKU may also be present. When the page offers no source link and you cannot identify the marketplace, leave that field open and ask the curator for the original address."
+      ]
+    },
+    {
+      "title": "3. Match the option inside the listing",
+      "paragraphs": [
+        "Open the product card for the example row. QCRadar displays both 1203A372-600 灰 and 1203A789-250 绿 among its options. 灰 means grey and 绿 means green. The listing also includes other options labelled grey, so copy the whole colour code. If you want the grey option used in this example, your record should say 1203A372-600 灰. The item ID identifies the listing and the option code narrows it to the relevant selection.",
+        "Write your requested size on a separate line and record whether the seller uses EU sizing, centimetres or a shop-specific chart. Switch the colour, select the size and read the selection back in the cart or order preview. A preview that shows the default thumbnail can still have another option in its text. If the thumbnail and text disagree, keep both visible and ask which option the order would actually contain before continuing."
+      ]
+    },
+    {
+      "title": "4. Decide which QC photos belong to that option",
+      "paragraphs": [
+        "Start a QC search with the original listing link. FindQC’s own guide explains that a search can return likely same-item groups and visually similar suggestions. Open a result and compare its source link, listing number and any order-specific colour or size details. A warehouse photo can help you check a particular feature only after you establish which order it came from. A seller’s catalogue photograph is useful for the promised design; store it with the listing information.",
+        "Suppose an album shows the size tag 42 and a clear view of the sole. If the album gives no colour code and the row contains several grey pairs, you can use that picture to ask where a marking should be visible. You still need a link or readable label tying the album to your chosen colour. For fit, look for both ends of the measuring tape in one frame and note the measurement method. A size tag by itself gives you the printed size."
+      ]
+    },
+    {
+      "title": "5. Recover a changed link without losing the original trail",
+      "paragraphs": [
+        "If the row opens a shop homepage or an unavailable item, retain its old URL. Search the item ID first, then try the shop name together with the complete colour or style code. If all you have is a screenshot, crop a distinctive detail such as the tongue label and use it to identify candidates. For each candidate, open its listing and start a fresh record with its own seller, marketplace and item number.",
+        "A second seller can use the same catalogue photograph. Even the same seller may relist a style under a new number. Keep the old and replacement records side by side and label the relationship you can support. “Same style code; new item ID; order photos outstanding” is enough for someone else to reproduce your search. Recheck package contents, measurements, stock and price on that replacement before choosing it."
+      ]
+    },
+    {
+      "title": "6. Work through a mismatch before paying",
+      "paragraphs": [
+        "Imagine that you intend to buy the example grey option in EU 42. Your saved row points to Weidian 7721998852. The order preview shows 1203A789-250 绿, while the QC album you found only identifies a size 42. You have one confirmed link, one conflicting selection and one incomplete album. Return to the option menu, choose 1203A372-600 灰 and reopen the preview. The size matches in both records, but you still need colour-specific evidence if that detail matters to you.",
+        "A precise question gives the seller or agent something concrete to check: “For item 7721998852, can you confirm that the selected option reads 1203A372-600 灰 in size 42? If that option reaches the warehouse, please photograph the tongue label and both shoes together.” This is a worked example of a request. If an agent supplies a photo later, record the order reference and the details visible in that photo before making a shipping decision."
+      ]
+    },
+    {
+      "title": "7. Keep a record another buyer can reproduce",
+      "paragraphs": [
+        "Use one short note per candidate. Include the spreadsheet row name and date, raw marketplace link and item ID, exact option text, requested size, and the date you last reopened the listing. Add the QC album link and the detail it supports. Record any unanswered question in plain language. A useful entry for this example would end with “original item link traced; grey code copied; size and warehouse album pending.” It remains useful if the sheet title or display order changes tomorrow.",
+        "When you revisit a saved find, start with those open questions. A new order photo may resolve a missing label while leaving the measurements unclear. Add the new observation with its date and retain the older one, especially if the seller changed the listing. Before forwarding your own parcel, match its warehouse photos to your order reference and selected option, then decide whether the remaining uncertainty affects the purchase."
+      ]
+    },
+    {
+      "title": "8. Use the checks to choose a next step",
+      "paragraphs": [
+        "If the source listing, variant and size agree, save the candidate and review the checks that matter for that product. For trainers these might include the paired shoes, size labels and an insole measurement. For a jersey they might include the requested name and number, the front badge and the chest width. Choose those requests from your intended use and the seller’s description so the resulting pictures answer a purchase question.",
+        "If the item ID agrees but the option is unclear, resolve the option first. If the link has disappeared, assess a replacement under its own record. If a warehouse photo reveals a wrong size or missing component, show the discrepancy alongside the order details and ask the agent about the available correction procedure and deadline. Each next step should follow the evidence you have saved. This also makes a spreadsheet contribution more useful: share the original link, the exact option and the date checked, then describe what the photos actually show."
+      ]
+    }
+  ],
+  "keywords": [
+    "QC spreadsheet finds",
+    "check spreadsheet product link",
+    "find QC photos from a spreadsheet"
+  ],
+  "seoTitle": "Check Spreadsheet Finds Against the Original Listing",
+  "dateISO": "2026-11-05",
+  "dateModified": "2026-11-05",
+  "sources": [
+    {
+      "label": "FindQC — How FindQC Works",
+      "href": "https://findqc.com/how-findqc-works",
+      "note": "Referenced documentation and published examples, checked 5 November 2026."
+    },
+    {
+      "label": "QCRadar — Weidian Spreadsheet",
+      "href": "https://qcradar.com/weidian-spreadsheet",
+      "note": "Referenced documentation and published examples, checked 5 November 2026."
+    },
+    {
+      "label": "QCRadar — Asics GEL-NYC Grey Rice listing and variant labels",
+      "href": "https://qcradar.com/p/asics-gel-nyc-grey-rice-1203a372-600-f6a972fb",
+      "note": "Referenced documentation and published examples, checked 5 November 2026."
+    },
+    {
+      "label": "Published marketplace destination — Weidian item 7721998852",
+      "href": "https://weidian.com/item.html?itemID=7721998852",
+      "note": "Referenced documentation and published examples, checked 5 November 2026."
+    }
+  ]
+},
+  "football-jersey-qc-photos-name-number-fit": {
+  "title": "Football Jersey QC Photos: Check the Name, Number and Fit",
+  "description": "Check a football shirt against your order using warehouse photos. Verify the nameset, competition patches, print placement and flat measurements before shipping.",
+  "intro": [
+    "A football shirt can arrive in the right colours and still have the wrong name, sleeve patch or cut. Keep the confirmed order beside the warehouse album. Start with details a second photograph can settle, such as a missing accent or an unreadable ruler. Leave questions about long-term wear open. These checks work for a plain training top as well as a personalised match shirt."
+  ],
+  "sections": [
+    {
+      "title": "Build a reference for the exact shirt",
+      "paragraphs": [
+        "Write down the club or country, season, home or away design, size, sleeve length, cut and every optional addition selected at checkout. Copy the custom lettering exactly, including spaces, punctuation, accents and leading zeroes. A screenshot of the confirmation preserves details that a seller may later change on the listing. If you selected a blank back or declined a league patch, record that too. Those choices disappear easily when you start looking at photographs of players.",
+        "Use the seller’s photo of your selected option as the first comparison. A club’s official product image can help identify where a badge sits, provided it shows the same season, version and competition. In an album from a previous purchase, look for the product ID, option and date. Use that album to decide which views to request. Make the decision about shipping from pictures tied to your own order."
+      ]
+    },
+    {
+      "title": "Get front, back and sleeve photos that answer different questions",
+      "paragraphs": [
+        "Ask for the front and back laid flat, photographed from directly above with the collar, both armpits and bottom hem in frame. Lay the sleeves out separately if the badges face sideways. Request one readable shot of the size label. Keep the full-shirt view even when the close-up looks sharper. A cropped badge without a sleeve or neckline gives you little evidence of which side it occupies or how far it sits from a seam.",
+        "Check orientation before reporting a reversed detail. Read a familiar word on the same photograph and identify the wearer’s left and right. A left chest crest usually appears on the viewer’s right in a front-facing shot if the image is displayed normally. Photographing the back changes that relationship. When comparing two images, use the collar centre, underarm seams and side panels as landmarks. If one shoulder is folded under, ask for the shirt to be spread out before judging alignment."
+      ]
+    },
+    {
+      "title": "Read the nameset one character at a time",
+      "paragraphs": [
+        "Read the name aloud from the order, then spell it from the photo. Look closely at accented letters, repeated consonants, a final S and the shapes of 1 and 7. Check that the number belongs to this particular order. A current squad page is a poor reference for a retro shirt or a customer’s own number. For a double-digit print, examine the space between the digits and whether they sit at the same height relative to the hem.",
+        "The competition matters when checking lettering. Liverpool’s own help centre distinguishes its cup printing from Premier League printing. Manchester City documented a dedicated cup typeface for its men's team in 2024/25. Those examples show why a different letter shape deserves a second look at the option you chose. Compare against the corresponding reference. Use a straight-on view to check centring, and a close-up in even light for a suspected lifted corner. A photograph can show a visibly loose edge. How well the print will withstand washing remains unknown."
+      ]
+    },
+    {
+      "title": "Check the crest, sponsor and sleeve patches separately",
+      "paragraphs": [
+        "List each component and its expected location. Compare the crest with the same edition, the sponsor with the chosen design, and each sleeve patch with the selected competition. Read small text at full resolution. If the product page offers different patch sets, ask for both sleeves in one picture with the front of the jersey facing up. That simple view can resolve a left-or-right dispute without another close-up of an isolated badge.",
+        "Follow the outlines of each application. Look for a folded corner, missing piece of a letter, interrupted stitching or a crease exactly where two surfaces meet. A reflection on a smooth transfer can make an intact edge appear pale. Ask for the same area from a shallow angle under diffuse light. Describe the observation in your request, such as “the lower right corner of the sponsor looks raised”. For a dispute over a missing patch, include the order option and the full sleeve image together."
+      ]
+    },
+    {
+      "title": "Measure the shirt using the same endpoints as a shirt you wear",
+      "paragraphs": [
+        "Lay a shirt that fits you comfortably on a flat surface. Measure straight across from one underarm seam to the other without pulling and write down the width. For length, use one repeatable method, such as the high shoulder point beside the collar down to the hem. Record which panel you measured if the back is longer. Compare the warehouse shirt using exactly those same endpoints. A collar-to-hem measurement taken down the centre produces a different length.",
+        "Ask for a tape showing centimetres, the zero mark, and both endpoints in one photograph. If a tape starts at 2 cm and finishes at 55 cm, the visible span is 53 cm. Check its angle and whether the garment has been stretched. Read the seller’s chart heading as carefully as the numbers. Nike’s men’s tops chart, for example, uses body measurements. A warehouse photo gives the width of a garment lying flat. A comparison with your own flat shirt accounts for how much room you personally like through the chest."
+      ]
+    },
+    {
+      "title": "Resolve a discrepancy with one specific request",
+      "paragraphs": [
+        "Suppose a fictional order specifies the name MARTÍN, number 17 and a league patch on the wearer’s right sleeve. Your favourite shirt measures 54 cm across. Before reviewing the album, you decide that a width of 53–55 cm would suit you. The back photograph shows 17, but the accent is blurred. The edge of the sleeve lies outside the image, and the tape seems to end near 55 cm. You can already record the number as confirmed. Leave the other three fields open.",
+        "A useful message would be “For this order, please photograph the full back and right sleeve laid out. Please add a close-up of the Í in MARTÍN and one underarm-to-underarm photo with both tape ends visible.” Suppose the new images show the requested lettering and patch, with the tape running from 2 to 55 cm. The 53 cm span falls inside the range you set for this example. Someone who prefers 55–57 cm could reasonably make a different fit decision from the identical photos."
+      ]
+    },
+    {
+      "title": "Save a short decision before release",
+      "paragraphs": [
+        "Keep the order reference, the clearest front and back images, the selected nameset, the measured width and length, and one line for any open question. Mark each detail as confirmed, different from the order, or unreadable. If the back is blank when you ordered printing, send the option and the back photo together and ask the agent which remedies and deadlines apply to that order. If a crooked appearance disappears in a square-on image, keep the corrected view with your notes.",
+        "Before authorising international shipping, check that the response covers the same item and that the shirt still meets your own requirements. Personalisation, replacement and return conditions depend on the seller and order stage. Save the written answer while the item is still available to inspect. The outcome you need is a short record you could read tomorrow and understand immediately: which jersey arrived, which measurements you saw, and why you chose to ship, ask again or request a correction."
+      ]
+    }
+  ],
+  "keywords": [
+    "football jersey QC photos",
+    "jersey name set QC",
+    "football shirt QC measurements"
+  ],
+  "seoTitle": "Football Jersey QC Photos — Names, Numbers & Fit",
+  "dateISO": "2026-11-05",
+  "dateModified": "2026-11-05",
+  "sources": [
+    {
+      "label": "Nike men's tops size guide — body measurements",
+      "href": "https://www.nike.com/sg/size-fit/mens-tops-alpha",
+      "note": "Referenced documentation and published examples, checked 5 November 2026."
+    },
+    {
+      "label": "Liverpool FC — Premier League printing and club printing",
+      "href": "https://faq.liverpoolfc.com/articles/products-and-stock/what-is-the-difference-between-premier-league-printing-and-our-printing/65969c1f74e6ff44331e568a",
+      "note": "Referenced documentation and published examples, checked 5 November 2026."
+    },
+    {
+      "label": "Manchester City — 2024/25 cup shirt font",
+      "href": "https://www.mancity.com/news/club/man-city-noel-gallagher-club-font-63854300",
+      "note": "Referenced documentation and published examples, checked 5 November 2026."
+    }
+  ]
+},
   'qc-checker-review-decision-guide': {
     title:'QC Checker: How to Review Photos and Decide Before Shipping',
     description:'Use a QC checker worksheet to separate a confirmed defect from an unclear photo, request the right evidence, and record a shipping decision.',

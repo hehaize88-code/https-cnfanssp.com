@@ -182,6 +182,8 @@ for (const language of languages) {
   for (const article of getLocalizedArticles(language)) {
     if (!listing.includes(`href="${prefix}/articles/${article.slug}"`)) failures.push(`Article absent from index: ${language}/${article.slug}`);
     const html = readFileSync(htmlPath(`${prefix}/articles/${article.slug}`), "utf8");
+    const heading = visibleText(html.match(/<h1\b[^>]*>([\s\S]*?)<\/h1>/i)?.[1] || "");
+    if (heading !== article.title) failures.push(`Article heading differs from its language data: ${language}/${article.slug}`);
     if (/<meta[^>]+name="robots"[^>]+content="[^"]*noindex/.test(html)) failures.push(`Article is noindex: ${language}/${article.slug}`);
     if (!html.includes('article-quick-answer')) failures.push(`Missing answer panel: ${language}/${article.slug}`);
     if (!html.includes(article.seoTitle.replace(/&/g, "&amp;"))) failures.push(`Missing search title: ${language}/${article.slug}`);

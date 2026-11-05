@@ -10,6 +10,13 @@ const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const slugs=articles.map(a=>a.slug);
 assert.equal(new Set(slugs).size,slugs.length,'Duplicate article slug');
 const failures=[];
+const synchronizedArticles = new Set([
+ 'weidian-qc-finder-item-id-original-listing',
+ 'findqc-image-search-reference-photo-checks',
+ 'clothing-qc-photos-measurements-print-stitching',
+ 'spreadsheet-find-original-listing-check',
+ 'football-jersey-qc-photos-name-number-fit',
+]);
 for(const language of SITE_LANGUAGES) {
  const edition=getLocalizedArticles(language);
  assert.deepEqual(edition.map(a=>a.slug),slugs,`Article parity: ${language}`);
@@ -24,6 +31,10 @@ for(const language of SITE_LANGUAGES) {
   for(const asset of assets) if(!existsSync(path.join(root,'public',asset))) failures.push(`${name}: missing image ${asset}`);
   for(const slug of article.related) if(!slugs.includes(slug)) failures.push(`${name}: unknown related article ${slug}`);
   const eng=articles.find(a=>a.slug===article.slug);
+  if(synchronizedArticles.has(article.slug)) {
+   assert.equal(article.sections.length,eng.sections.length,`Section parity: ${name}`);
+   assert.deepEqual(article.sections.map(s=>s.blocks.map(b=>b.type)),eng.sections.map(s=>s.blocks.map(b=>b.type)),`Content structure parity: ${name}`);
+  }
   if(language!=='en') {
    if(article.title===eng.title||JSON.stringify(article.sections)===JSON.stringify(eng.sections)) failures.push(`${name}: English fallback`);
    // Two formerly misrouted topics must have their own translated data.

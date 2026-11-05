@@ -7,14 +7,16 @@ export const localeUi = {
   ro: { category:'Ghid QC', read:'min de lectură', next:'Pasul următor', cta:'Deschide indexul de produse', ctaTitle:'Găsește produse candidate, apoi verifică oferta originală și fotografiile QC ale comenzii tale.', source:'FindQC: documentație despre căutare și QC', sourceNote:'Referință pentru metodele de căutare și limitele serviciului. Exemplele și fișele sunt îndrumări editoriale independente.', updated:'Actualizat', quick:'Răspuns pe scurt', count:'ghiduri practice', groups:['Găsește fotografii QC','Verifică un articol','Planifică achiziția'], note:'Alege ghidul potrivit întrebării tale: găsește oferta originală, verifică dovezile din depozit sau pregătește o comandă. Toate subiectele sunt disponibile în cinci limbi.' },
 };
 export const topicConfig = {
+  'spreadsheet-find-original-listing-check': ['search','/products/shoes-60.jpg',['weidian-qc-finder-item-id-original-listing','compare-qc-photos-same-item','qc-finder-no-photos-dead-link-recovery']],
+  'football-jersey-qc-photos-name-number-fit': ['review','/products/catalog-current/jersey-6665.jpg',['clothing-qc-photos-measurements-print-stitching','warehouse-measurement-guide','request-extra-qc-photos-templates']],
   'taobao-qc-finder-item-id-link-checks': ['search','/products/shoes-60.jpg',['product-search-link-id-keyword','qc-finder-no-photos-dead-link-recovery','findqc-image-search-reference-photo-checks']],
-  'weidian-qc-finder-item-id-original-listing': ['search','/products/hoodie.webp',['taobao-qc-finder-item-id-link-checks','qc-finder-no-photos-dead-link-recovery','compare-qc-photos-same-item']],
+  'weidian-qc-finder-item-id-original-listing': ['search','/products/hoodie.webp',['spreadsheet-find-original-listing-check','qc-finder-no-photos-dead-link-recovery','compare-qc-photos-same-item']],
   '1688-qc-finder-supplier-variant-batch-checks': ['search','/products/tshirt.webp',['warehouse-measurement-guide','clothing-qc-photos-measurements-print-stitching','compare-qc-photos-same-item']],
   'qc-finder-no-photos-dead-link-recovery': ['search','/products/jacket.webp',['taobao-qc-finder-item-id-link-checks','weidian-qc-finder-item-id-original-listing','findqc-image-search-reference-photo-checks']],
   'findqc-image-search-reference-photo-checks': ['search','/products/shoes-60.jpg',['qc-finder-no-photos-dead-link-recovery','compare-qc-photos-same-item','product-search-link-id-keyword']],
   'qc-photos-vs-qc-videos-evidence-guide': ['review','/products/hoodie.webp',['what-qc-photos-can-prove','request-extra-qc-photos-templates','qc-checker-review-decision-guide']],
   'sneaker-qc-photo-checklist-shape-tags-soles-box': ['review','/products/shoes-60.jpg',['warehouse-measurement-guide','request-extra-qc-photos-templates','qc-checker-review-decision-guide']],
-  'clothing-qc-photos-measurements-print-stitching': ['review','/products/tshirt.webp',['warehouse-measurement-guide','request-extra-qc-photos-templates','qc-checker-review-decision-guide']],
+  'clothing-qc-photos-measurements-print-stitching': ['review','/products/tshirt.webp',['warehouse-measurement-guide','request-extra-qc-photos-templates','football-jersey-qc-photos-name-number-fit']],
   'warehouse-measurement-guide': ['review','/products/hoodie.webp',['clothing-qc-photos-measurements-print-stitching','sneaker-qc-photo-checklist-shape-tags-soles-box','request-extra-qc-photos-templates']],
   'shipping-cost-checklist': ['plan','/products/jacket.webp',['findqc-shopping-agent-workflow','warehouse-measurement-guide','before-you-buy-qc-guide']],
   'findqc-product-signals': ['search','/products/watch.webp',['compare-qc-photos-same-item','what-qc-photos-can-prove','mapped-findqc-product-index-without-recommendation']],
@@ -28,15 +30,15 @@ export function makeGuide(slug, language, content) {
   const [topic, heroImage, related]=topicConfig[slug];
   const {sections,...copy}=content;
   const result={...copy, slug, topic, shortTitle:copy.shortTitle||copy.title, excerpt:copy.excerpt||copy.description, category:ui.category,
-    heroImage, heroAlt:copy.heroAlt||copy.title, dateISO:REVIEW_DATE, dateModified:REVIEW_DATE,
-    date:new Intl.DateTimeFormat(language,{day:'numeric',month:'long',year:'numeric',timeZone:'UTC'}).format(new Date(REVIEW_DATE+'T00:00:00Z')),
+    heroImage, heroAlt:copy.heroAlt||copy.title, dateISO:copy.dateISO||REVIEW_DATE, dateModified:copy.dateModified||REVIEW_DATE,
+    date:new Intl.DateTimeFormat(language,{day:'numeric',month:'long',year:'numeric',timeZone:'UTC'}).format(new Date((copy.dateISO||REVIEW_DATE)+'T00:00:00Z')),
     sections: sections.map((s,i)=>({id:s.id||`step-${i+1}`,title:s.title,blocks:s.blocks||[
       ...(s.paragraphs||[]).map(text=>({type:'p',text})),
       ...(s.items?[{type:'list',items:s.items}]:[]),
       ...(s.table?[{type:'table',headers:s.table[0],rows:s.table.slice(1)}]:[]),
     ]})),
-    related, sources:[{href:'https://findqc.com/how-findqc-works',label:ui.source,note:ui.sourceNote}],
-    cta:{eyebrow:ui.next,title:ui.ctaTitle,label:ui.cta,href:'/products'},
+    related, sources:copy.sources||[{href:'https://findqc.com/how-findqc-works',label:ui.source,note:ui.sourceNote}],
+    cta:{eyebrow:ui.next,title:ui.ctaTitle,label:ui.cta,href:'/products',...copy.cta},
   };
   const text=JSON.stringify([result.intro,result.sections]);
   result.readTime=`${Math.max(3,Math.ceil(text.split(/\s+/).length/190))} ${ui.read}`;
