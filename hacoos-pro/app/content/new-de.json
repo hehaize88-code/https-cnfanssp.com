@@ -1,0 +1,508 @@
+{
+  "shoes-spreadsheet": {
+    "title": "Hacoo Schuhe: Tabelle, Links, Größen & Fotocheck",
+    "intro": "Vergleiche Hacoo-Schuhlinks anhand der genauen Variante, passender Maße und aussagekräftiger Fotos. Erkenne veraltete Einträge vor dem Kauf.",
+    "minutes": 5,
+    "sections": [
+      {
+        "heading": "Eine Schuhauswahl anlegen, die sich überprüfen lässt",
+        "paragraphs": [
+          "Die Suche nach einer Hacoo-Schuh-Tabelle beginnt häufig mit einem Foto: einem Sneaker, einer Farbe oder einer Form, die du wiederfinden möchtest. Eine lange Linkliste hilft nur, wenn sie genau diesen Schuh identifiziert. Notiere Schuhart, besondere Merkmale, Zieladresse, Angebots-ID, gewählte Variante, Größenangaben und Prüfdatum. Fehlen diese Felder, ist die Zeile ein Recherchehinweis, keine geprüfte Empfehlung. Eine größere Tabelle ist nicht automatisch die bessere Auswahl.",
+          "Hacoos.pro ist ein unabhängiger Ratgeber. Seine Produkt- und Kategoriebuttons führen zum separaten Produktkatalog. Sie sind keine offiziellen Hacoo-App-Angebote und belegen keine Verfügbarkeit bei Hacoo. Für einen Fund in der App behältst du den ursprünglichen App-Link und die Angaben des jeweiligen Auftrags. Diese Trennung verhindert, dass ein vertrautes Foto als Beweis für denselben Verkäufer, Lagerbestand oder dieselben Servicebedingungen missverstanden wird."
+        ]
+      },
+      {
+        "heading": "Vor dem Preisvergleich die genaue Ausführung abgleichen",
+        "paragraphs": [
+          "Vergleiche Silhouette, Sohle, Obermaterial-Paneele, Verschluss und Farbverteilung mit deinem gespeicherten Bild. Wähle anschließend die gewünschte Ausführung. Ein Angebot kann mehrere Designs unter einer Überschrift bündeln; Titelbild und niedrigster Preis gehören dann möglicherweise zu einer anderen Option. Prüfe, ob Vorschaubild, Variantenname und Preis gemeinsam wechseln. Speichere die sichtbare Angebots-ID und die Auswahl, denn ein Werbename allein ist bei umbenannten Angeboten wenig belastbar.",
+          "Lege für jeden Kandidaten eine Zeile mit URL, ID, Modell oder Farbe, Größe, angezeigtem Preis, Maßquelle und Prüfdatum an. Fehlende Angaben bleiben offen, statt von einem ähnlichen Schuh übernommen zu werden. Zwei Links mit demselben Bild gehören nicht automatisch zusammen. Vergleiche erst IDs und Optionen. Bilder können wiederverwendet werden. Die Übersicht soll Unterschiede vor der Zahlung sichtbar machen und nicht durch erfundene Einträge vollständig aussehen."
+        ]
+      },
+      {
+        "heading": "Maße nur mit gleicher Messmethode vergleichen",
+        "paragraphs": [
+          "Nutze deine Füße und ein bequemes Paar für einen ähnlichen Zweck als Ausgangspunkt. Miss beide Füße im Stehen mit den vorgesehenen Socken nach der Methode der Größentabelle und notiere den längeren Fuß. Fußlänge, Einlegesohlenlänge und Außensohlenlänge sind unterschiedliche Angaben. Vergleiche sie nicht direkt miteinander. Fehlt die Definition des Maßes, frage vor der Größenwahl nach.",
+          "Eine herausnehmbare Einlegesohle eines passenden Schuhs liefert einen zusätzlichen Vergleich, beweist aber nicht den nutzbaren Innenraum eines anderen Modells. Fersenform, Polsterung, Fußgewölbe und Zehenbox beeinflussen die Passform ebenfalls. Vergleiche Messweise und Form, statt immer denselben Zuschlag anzuwenden. EU-, UK- und US-Umrechnungen sind Orientierung, keine Garantie. Widersprechen sich Etikett und Tabelle, sichere beide Angaben und kläre den Unterschied, statt einfach deine übliche Nummer zu bestellen."
+        ]
+      },
+      {
+        "heading": "Schuhfotos mit ihren Grenzen auswerten",
+        "paragraphs": [
+          "Hilfreiche Bilder zeigen Seitenprofil, beide Schuhe zusammen, Fersen, Sohlen, Zehenbox und Größenetikett. Prüfe Symmetrie, sichtbare Klebereste, Nähte und die Ausrichtung der Paneele. Unterscheide klare Fehler von Schatten, Perspektive oder Bildkompression. Eine Nahaufnahme ohne Gesamtansicht kann einen kleinen Fleck übermäßig groß wirken lassen. Bitte bei Unklarheit um eine weitere Ansicht und prüfe, ob sämtliche Bilder dieselbe Ausführung und Größe zeigen.",
+          "QC bedeutet hier Qualitätsprüfung, nicht das Versprechen von Lagerhaus-Prüffotos durch Hacoo. Verkäuferbilder, Käuferbewertungen und Fotos deiner gelieferten Ware erfüllen verschiedene Aufgaben: Angebot darstellen, eine fremde Lieferung zeigen oder deinen Auftrag dokumentieren. Kein einzelnes Bild beweist Echtheit, langfristige Haltbarkeit oder Komfort. Begriffe wie beste Charge oder garantierte Qualität benötigen konkrete, glaubwürdige Nachweise darüber, was tatsächlich geprüft wurde."
+        ]
+      },
+      {
+        "heading": "Die gesamte Entscheidung statt des niedrigsten Preises vergleichen",
+        "paragraphs": [
+          "Ein Katalogpreis dient zur Orientierung; die gewählte Variante kann teurer sein. Kontrolliere Artikelpreis, Versand, beim Abschluss angezeigte Steuern und Währung auf dem Zielservice. Hacoos.pro zeigt USD-Referenzpreise, berechnet aber keinen verbindlichen Gesamtpreis bis zur Haustür. Ein billiger Schuh ohne brauchbare Maße kann die schlechtere Wahl sein, besonders wenn der Einsatzzweck eine genaue Passform verlangt.",
+          "Lies Liefer- und Servicebedingungen dort, wo du bestellen wirst. Eine Hacoo-Regel gilt nicht automatisch für einen anderen Anbieter, nur weil beide Seiten bei derselben Recherche geöffnet wurden. Speichere auftragsbezogene Bedingungen und Variante. Prüfe bei einem Rabatt, ob er für dein Konto und Zielland gilt. Ein auffälliger Einstiegspreis mit unbekannten Voraussetzungen ist keine ausreichende Entscheidungsgrundlage."
+        ]
+      },
+      {
+        "heading": "Ein Vergleichsbeispiel ohne erfundene Produkttests",
+        "paragraphs": [
+          "Stell dir zwei ähnliche Alltagssneaker vor. Kandidat A zeigt deine Wunschfarbe und eine klar definierte Fußlängentabelle, aber kein Käuferfoto der Ferse. Kandidat B hat mehrere aktuelle Fotos, doch seine Längenangabe ist nicht erklärt. Das sind Beispielsituationen, keine Testergebnisse zu unseren Katalogprodukten. Bei A fehlt die Fersenansicht, bei B die Definition des Maßes. Viele Bewertungen ersetzen keine dieser Informationen.",
+          "Vergleiche nach der Klärung beide Kandidaten mit deinem Referenzschuh und Einsatzzweck. Eine schmale Zehenbox kann trotz passender Länge ein Ausschlussgrund sein. Verschluss und Polsterung verändern die Passform zusätzlich. Notiere, warum du einen Kandidaten behältst oder verwirfst. Diese Begründung hilft beim nächsten Besuch mehr als eine Sternezahl ohne Kontext und verhindert, dass du dieselbe Suche wieder von vorn beginnst."
+        ]
+      },
+      {
+        "heading": "Die Auswahl bei geänderten Links aktuell halten",
+        "paragraphs": [
+          "Öffne vor der Zahlung jedes Ziel erneut. Lädt es nicht mehr, suche im ursprünglichen Service nach gespeicherter ID und genauer Beschreibung. Unser Ratgeber zu defekten Links unterscheidet Probleme beim App-Öffnen von nicht verfügbaren Angeboten. Ersetze eine tote Zeile nicht unbemerkt durch einen ähnlichen Schuh. Bewahre die alte Referenz auf und erfasse den Ersatz als neuen Kandidaten. Nur so bleiben geprüfte Fotos und tatsächlich ausgewählte Ware nachvollziehbar verbunden.",
+          "Vergleiche nach der Lieferung Schuh und Etikett mit deiner gespeicherten Auswahl, bevor du die Verpackung entsorgst. Dokumentiere bei Problemen Gesamtansicht, konkreten Fehler und Auftrags-ID und nutze den Serviceprozess dieser Bestellung. Ergänze deine Passformerfahrung, ohne daraus eine allgemeine Größenregel zu machen. Eine nützliche Hacoo-Schuh-Tabelle bietet einen wiederholbaren Vergleich aus genauem Link, genauer Variante, kompatiblen Maßen und erneut prüfbaren Nachweisen."
+        ]
+      }
+    ],
+    "takeaways": [
+      "Hacoo-App-Links und Produktkatalog getrennt halten.",
+      "Ausführung und Messmethode vergleichen.",
+      "Fotos garantieren weder Echtheit noch Passform.",
+      "Ziel und Auftragsbedingungen vor der Zahlung erneut prüfen."
+    ]
+  },
+  "clothing-spreadsheet": {
+    "title": "Hacoo Kleidung: Hoodies, T-Shirts & Sets vergleichen",
+    "intro": "Erstelle eine Hacoo-Kleiderliste mit genauen Varianten, Kleidungsmaßen und Materialangaben. Prüfe Hoodies, T-Shirts und Sets ohne Größenraten.",
+    "minutes": 5,
+    "sections": [
+      {
+        "heading": "Kleidungslinks nach dem benötigten Outfit ordnen",
+        "paragraphs": [
+          "Eine Hacoo-Kleidertabelle hilft, wenn sie eine konkrete Frage beantwortet: Welcher Hoodie, welches T-Shirt oder welches Set passt zu meiner gewünschten Form und Nutzung? Beginne mit Kategorie und Zweck. Eine leichte Schicht für Innenräume benötigt andere Nachweise als ein schweres Oberteil. Notiere neben dem Foto das genaue Ziel und die ausgewählte Option. Schöne Bilder ohne aktuelle Variantenangaben liefern Inspiration, aber keinen verlässlichen Kaufvergleich.",
+          "Dieser unabhängige Ratgeber verlinkt zur Produktsuche auf den separaten Produktkatalog. Das sind keine offiziellen Hacoo-App-Links und keine Bestandsbestätigung für Hacoo. Bewahre einen ursprünglichen App-Link getrennt auf. Lieferung, Bezahlung und Support gehören zu dem Service, bei dem du tatsächlich bestellst. Ähnliche Fotos auf unterschiedlichen Webseiten verbinden weder deren Lagerbestände noch deren Bedingungen."
+        ]
+      },
+      {
+        "heading": "Für jedes Kleidungsstück und jede Variante eine eigene Zeile",
+        "paragraphs": [
+          "Erfasse Kategorie, Angebots-ID, Farbe oder Stil, Größe, Stückzahl, Materialbeschreibung, Maße, Preiswährung und Prüfdatum. Kennzeichne unbekannte Angaben ausdrücklich als ungeklärt. Bietet eine Seite T-Shirt, Hoodie und Hose zur Auswahl, ist nicht automatisch das ganze Outfit enthalten. Der niedrigste Preis kann ein Einzelteil betreffen. Wähle die gewünschte Option, lies den Lieferumfang und sichere Variantenname und danach angezeigten Preis.",
+          "Prüfe bei Sets, ob Ober- und Unterteil dieselbe Größe haben müssen oder getrennt auswählbar sind, ob Zubehör enthalten ist und ob das Bild das tatsächliche Paket zeigt. Notiere die Maße beider Teile, selbst wenn nur eine Größenbezeichnung angegeben ist. Wer oben und unten unterschiedliche Größen benötigt, kann mit einem scheinbar praktischen Set schlechter bedient sein. Styling-Requisiten auf einem Foto belegen keinen Lieferumfang."
+        ]
+      },
+      {
+        "heading": "Ein passendes Kleidungsstück als Messreferenz verwenden",
+        "paragraphs": [
+          "Lege ein ähnliches Teil ohne Zug flach aus und miss zweimal. Für T-Shirt oder Hoodie sind Brustbreite, Körperlänge, Schulterbreite und Ärmellänge wichtig, jeweils mit denselben Endpunkten wie in der Angebotstabelle. Halbe Brustbreite ist kein Brustumfang. Bei überschnittenen Schultern verändert sich der Beginn der Ärmelmessung. Halte die Bandposition mit einem Foto oder einer kleinen Skizze fest, damit du später dieselbe Methode wiederholen kannst.",
+          "Vergleiche die Form mit: Ein kastiger Hoodie kann breiter und kürzer sein als ein regulärer. Eine größere Größe verlängert womöglich nur die Ärmel, ohne die gewünschte Silhouette zu erzeugen. Referenz und Kandidat sollten ähnliches Material und einen ähnlichen Zweck haben. Ein dünnes Stretchshirt ist kein guter Maßstab für eine steife Hemdjacke. Ein Größenbuchstabe allein reicht nicht für einen präzisen Vergleich; fehlende Maße solltest du erfragen."
+        ]
+      },
+      {
+        "heading": "Materialversprechen und Verarbeitung getrennt prüfen",
+        "paragraphs": [
+          "Lies Zusammensetzung, Futter, Verschluss und Pflegehinweise. Auf einem Bild lassen sich Stoffgewicht, Faseranteile und Hautgefühl nicht zuverlässig feststellen. Angaben wie Premium oder schwer brauchen konkrete Belege. Eine Zahl ohne Einheit oder Messmethode genügt nicht. Kläre bei Gewichtsangaben, ob Stoffgewicht oder Gesamtgewicht des Kleidungsstücks gemeint ist. Diese Werte beschreiben unterschiedliche Eigenschaften und gehören nicht unbesehen in dieselbe Vergleichsspalte.",
+          "Prüfe auf Fotos Nähte, Kragenform, Druckposition, Bündchen, Säume sowie Taschen- und Reißverschlussausrichtung. Kombiniere Gesamtansichten und Details. Stelle fest, ob Farbe und Größe übereinstimmen und ob ein Verkäuferbild oder ein Käuferfoto vorliegt. Eine Bewertung mit Angaben zu Waschverhalten, Passform und Variante ist oft hilfreicher als kurzes Lob. Ein gutes Foto beweist weder Echtheit noch garantierte Haltbarkeit."
+        ]
+      },
+      {
+        "heading": "Hosen und Sets über die Bundweite hinaus vergleichen",
+        "paragraphs": [
+          "Erfasse bei Hosen Bund, Leibhöhe, Hüfte, Oberschenkel, Innenbeinlänge und Beinöffnung, soweit vorhanden. Elastische Bünde brauchen Angaben im entspannten und gedehnten Zustand. Die Bundweite allein sagt wenig über Platz an Gesäß und Oberschenkeln. Innenbein- und Außenlänge beginnen an verschiedenen Stellen. Miss deine Referenz nach derselben Methode und entscheide vor der Größenwahl, welche Dimension für dich am wenigsten Spielraum hat.",
+          "Vergleiche bei einem Set beide Teile mit getrennten Referenzen. Ein Hoodie kann bewusst weit ausfallen, während die Hose schmal geschnitten ist. Prüfe die Farbübereinstimmung möglichst bei gleichmäßiger Beleuchtung, berücksichtige aber Unterschiede durch Licht und Bildschirm. Bestätige, dass beide Teile in der gezeigten Farbe enthalten sind. Fehlt ein wesentliches Maß oder eine Lieferumfangsangabe, bleibt das gesamte Set ungeklärt."
+        ]
+      },
+      {
+        "heading": "Aus konkreten Unterschieden eine Entscheidung ableiten",
+        "paragraphs": [
+          "Ein Beispiel: Ein lockerer Hoodie hat Angaben zu Brust und Länge, aber keine Ärmellänge. Ein anderer besitzt vier Maße, ist jedoch kurz geschnitten. Das sind illustrative Datensätze, keine Produkttests. Vergleiche beide mit deinem vorhandenen Hoodie. Beim ersten fehlt die Ärmelangabe; beim zweiten musst du entscheiden, ob der kürzere Körper zu deinem Ziel passt. Das gemeinsame Wort Oversize löst keine dieser Fragen.",
+          "Vergleiche dann den Preis der tatsächlich gewählten Option und die Endkosten auf dem Zielservice. Hacoos.pro zeigt USD-Referenzpreise; zahlbarer Betrag, Versand und gegebenenfalls Steuern stehen am Ziel. Speichere Variante, Tabelle und Lieferumfang vor der Zahlung. Ein vermeintliches Schnäppchen kann ungeeignet sein, wenn du ein zweites Teil separat kaufen musst oder die Passform unklar bleibt. Entscheidend ist das brauchbare Outfit, nicht die Zahl deiner Tabellenzeilen."
+        ]
+      },
+      {
+        "heading": "Eine Dokumentation für die Zeit nach der Lieferung behalten",
+        "paragraphs": [
+          "Vergleiche Ware, Größenetikett und Inhalt mit dem gespeicherten Angebot, bevor du Etiketten entfernst oder wäschst. Fotografiere bei Problemen das gesamte Teil, die Abweichung und das relevante Maß mit sichtbaren Bandendpunkten. Bewahre Verpackung und Auftragsreferenz auf und folge dem Serviceprozess dieser Bestellung. Eine für Hacoo zitierte Regel gilt nicht automatisch für einen Einkauf über einen anderen Anbieter.",
+          "Ergänze anschließend erhaltene Variante, Vergleich mit deinem Referenzteil und zuvor fehlende Materialdetails. Halte Beobachtungen auf den konkreten Artikel und Auftrag begrenzt. Ein guter Kauf bestätigt nicht jede Farbe, Größe oder spätere Charge derselben Seite. Öffne das Ziel vor einer erneuten Bestellung, weil Lieferumfang, Fotos und Tabellen wechseln können. Unser Größenratgeber und Fotoguide in derselben Sprache erklären die nächsten Prüfschritte ausführlicher."
+        ]
+      }
+    ],
+    "takeaways": [
+      "Jedes Teil und jede Set-Option separat erfassen.",
+      "Brust, Länge, Schultern und Ärmel mit gleicher Methode messen.",
+      "Bei Sets beide Teile und den Lieferumfang prüfen.",
+      "Bedingungen an den tatsächlichen Bestellservice binden."
+    ]
+  },
+  "links-not-working": {
+    "title": "Hacoo-Link funktioniert nicht? App & Angebot prüfen",
+    "intro": "Prüfe fehlerhafte Hacoo-Links systematisch: Originaladresse, App-Version, echtes Zielland und genaue Variante statt wahlloser Ersatzlinks.",
+    "minutes": 5,
+    "sections": [
+      {
+        "heading": "Zuerst feststellen, was genau nicht funktioniert",
+        "paragraphs": [
+          "Bei einem defekten Hacoo-Link zählt das sichtbare Problem. Ein Browser öffnet sich statt der App, eine Produktseite meldet Nichtverfügbarkeit oder eine andere Farbe erscheint: Das sind verschiedene Fälle. Notiere den Ablauf, die ursprüngliche URL, die Fehlermeldung, dein Lieferland und den Zeitpunkt. Diese kleine Dokumentation verhindert, dass du mehrere Einstellungen gleichzeitig änderst und dabei den ursprünglichen Fehler nicht mehr nachvollziehen kannst.",
+          "Es gibt keine einzelne Lösung, die jedes entfernte Angebot zurückbringt. Möglich sind ein vorübergehender Ladefehler, ein Problem beim App-Aufruf, regionale Einschränkungen, geänderte Varianten oder ein zurückgezogenes Angebot. Das sind zu unterscheidende Möglichkeiten, keine Diagnosen aus einem Screenshot. Beginne mit einfachen Prüfungen. Bestelle nicht mehrfach Ersatz und ändere nicht vorschnell Lieferdaten, nur weil ein geteilter Link anders reagiert als erwartet."
+        ]
+      },
+      {
+        "heading": "Den Service hinter dem Link identifizieren",
+        "paragraphs": [
+          "Sieh dir vor dem Öffnen die vollständige Zieladresse an. Bewahre den ursprünglichen Teilen-Link der App auf, statt einen gekürzten Text aus einer Bildunterschrift zu kopieren. Hat eine Nachrichten-App die Adresse getrennt, lass dir den vollständigen Link erneut geben. Eine Ratgeberseite, ein Beitrag oder ein Produktkatalog war möglicherweise nie ein offizielles Hacoo-Angebot. Hacoos.pro ist unabhängig und seine Produktbuttons führen zum separaten Produktkatalog.",
+          "Bei einem bestehenden Auftrag beginnst du in dem Service, in dem du bestellt hast. Eine Ratgeberseite kann weder dein Hacoo-Konto einsehen noch den Status ändern. Gehört der Link zum externen Katalog, prüfst du dessen Ziel und Suche getrennt. Gib kein Passwort auf einer unbekannten Ersatzseite ein, die verschwundene Angebote wiederherstellen will. Nutze den Kontoablauf der App und die beim Auftrag angegebenen Supportwege."
+        ]
+      },
+      {
+        "heading": "App-Aufruf und Version prüfen, ohne die Nachweise zu verlieren",
+        "paragraphs": [
+          "Aktualisiere Hacoo über den offiziellen App-Store, schließe die App und öffne sie erneut. Teste den ursprünglichen Link. Lädt er im eingebauten Browser einer sozialen App, nutze gegebenenfalls deren normale Funktion zum Öffnen im Browser oder in der App. Bezeichnungen unterscheiden sich nach Gerät und Version. Ein fehlender Button beweist kein gelöschtes Produkt. Prüfe zunächst, ob die App selbst und ein anderer bekannter Link normal laden.",
+          "Funktionieren andere Seiten, liegt das Problem eher beim konkreten Link oder Angebot als bei der gesamten Verbindung. Lädt gar nichts, kontrolliere die Verbindung und teste einmal über ein normales, vertrauenswürdiges Netz. Sichere URLs und Screenshots, bevor du dich abmeldest oder lokale App-Daten löschst. Eine Neuinstallation ist kein notwendiger erster Schritt und stellt kein zurückgezogenes Angebot wieder her. Vermeide störende Änderungen ohne konkreten Anlass."
+        ]
+      },
+      {
+        "heading": "Echtes Lieferland und Kontokontext kontrollieren",
+        "paragraphs": [
+          "Prüfe das tatsächliche Lieferland und eine gegebenenfalls sichtbare Regionseinstellung. Verfügbarkeit kann vom Markt abhängen; der Bericht eines anderen Nutzers beweist aber nicht, dass dies hier die Ursache ist. Notiere die Einstellung und ob sich das Angebot nach Korrektur eines versehentlichen Fehlers verändert. Verwende keine falsche Adresse oder ein fremdes Konto, um eine andere Ansicht zu erzwingen. Sichtbarkeit bedeutet nicht automatisch Lieferbarkeit.",
+          "Kommt der geteilte Link aus einem anderen Land, bitte um Angebots-ID, genaue Ausführung und Datum des Screenshots. So kannst du dieselbe Sache vergleichen, ohne fremde Kontoeinstellungen zu übernehmen. Auch Aktionen und Optionen können abweichen. Die konkrete Frage lautet, ob dasselbe Angebot mit derselben Variante für dein reales Ziel verfügbar ist. Ein anderes erreichbares Produkt ist eine neue Alternative und kein Beweis für eine Reparatur des ursprünglichen Links."
+        ]
+      },
+      {
+        "heading": "Fehlende Variante und fehlendes Angebot unterscheiden",
+        "paragraphs": [
+          "Eine Seite kann bestehen bleiben, während Größe, Farbe oder Set verschwunden sind. Vergleiche aktuelle Optionen mit deinem gespeicherten Screenshot. Prüfe ID, erstes Bild und Variantenname, bevor du eine neue Standardauswahl für dasselbe Produkt hältst. Hat sich die Identität geändert, ist die alte Zeile veraltet, auch wenn die Seite technisch erfolgreich lädt. Erreichbarkeit und korrekter Produktabgleich sind getrennte Prüfungen.",
+          "Die Meldung, ein Artikel existiere nicht, erklärt allein nicht, ob das Angebot entfernt, verschoben oder in deinem Kontext unsichtbar ist. Suche im ursprünglichen Service nach gespeicherter ID, soweit unterstützt, und danach nach einer genauen Beschreibung. Eine breite Markensuche kann bloß ähnliche Artikel liefern. Prüfe einen Ersatz neu: Ziel, Variante, Maße, Preis und Bedingungen. Übertrage alte Fotos oder Bewertungen nicht ohne nachgewiesenen Zusammenhang auf ein anderes Angebot."
+        ]
+      },
+      {
+        "heading": "Dem Support nachvollziehbare Informationen schicken",
+        "paragraphs": [
+          "Betrifft das Problem einen Auftrag oder bleibt es ungelöst, kontaktiere den zuständigen Service über dessen offiziellen Supportweg. Übermittle Original-Link, Angebots- oder Auftrags-ID, genaue Meldung, App-Version, Gerätetyp und echtes Lieferland. Erkläre, was du versucht hast und wann der Link zuletzt funktionierte. Eine kurze zeitliche Übersicht ist hilfreicher als viele undatierte Bilder. Passwörter, Anmeldecodes und vollständige Zahlungsdaten gehören niemals in öffentliche Kommentare.",
+          "Ein hilfreicher Bericht beschreibt beispielsweise, dass der Link die App öffnet, dort aber Nichtverfügbarkeit meldet, während andere Angebote laden, und nennt die gespeicherte Variante. Das ist ein Berichtsbeispiel, keine Behauptung über eine aktuelle Hacoo-Störung. Frage nach genau diesem Angebot für dein Zielland. Ein unabhängiger Katalog kann weder den Bestand wiederherstellen noch einen Auftrag auf einer anderen Plattform zurückholen."
+        ]
+      },
+      {
+        "heading": "Die gespeicherte Liste korrigieren und gezielt fortfahren",
+        "paragraphs": [
+          "Markiere den ursprünglichen Eintrag mit Datum und beobachteter Meldung als nicht verfügbar oder ungeklärt. Bewahre seine ID auf. Ein Ersatz erhält eine neue Zeile und wird als neuer Kauf verglichen. Bei Schuhen mit vielen Ausführungen und Kleidungssets ist das besonders wichtig, weil ähnliche Bilder unterschiedliche Größen oder Inhalte verdecken. Eine glaubwürdige Tabelle zeigt Unsicherheit, statt sämtliche Links als aktuell bestätigt auszugeben.",
+          "Funktioniert der Weg wieder, folgen Variante, Fotos, Maßtabelle und Endbedingungen. Für einen laufenden Hacoo-Auftrag nutze den Tracking-Ratgeber statt wiederholter Produktsuchen. Für eine neue Katalogsuche steht die klar gekennzeichnete Katalogsuche bereit. Du sollst erkennen können, welcher Service und Artikel betroffen sind, was scheiterte und welcher Nachweis das klärt. Ein funktionierender Link eröffnet diese Prüfung, schließt sie aber nicht ab."
+        ]
+      }
+    ],
+    "takeaways": [
+      "Genaue Fehlermeldung und Original-URL sichern.",
+      "App-Aufruf, Zielland und Variantenproblem unterscheiden.",
+      "Reales Land und offizielle App-Version prüfen.",
+      "Ersatzangebote vollständig neu vergleichen."
+    ]
+  },
+  "tracking-not-updating": {
+    "title": "Hacoo-Tracking ohne Update: Status & nächste Schritte",
+    "intro": "Ordne Versandlabel, Übergabe und Zustellprobleme ein. Vergleiche Hacoo-Tracking mit deinem Auftrag und bereite eine klare Supportanfrage vor.",
+    "minutes": 5,
+    "sections": [
+      {
+        "heading": "Das letzte Ereignis lesen, bevor du Tage zählst",
+        "paragraphs": [
+          "Wenn Hacoo-Tracking keine neuen Informationen zeigt, können unterschiedliche Situationen vorliegen: Bearbeitung, ein vor Abholung erzeugtes Versandlabel oder eine Sendung zwischen zwei Scans. Beginne mit letztem Ereignis, Zeitstempel, Sendungsnummer und Lieferprognose deines Auftrags. Speichere diese Angaben zusammen. Eine Auftragsnummer bezeichnet den Kauf, eine Sendungsnummer das Paket; sie lassen sich nicht zwangsläufig gegeneinander austauschen.",
+          "Dieser Ratgeber hilft, sichtbare Informationen einzuordnen. Hacoos.pro kann weder dein Konto einsehen noch ein Paket orten oder einen Termin garantieren. Bei einer Bestellung über einen anderen Service nutzt du dessen Auftragsdaten. Der an anderer Stelle verlinkte Produktkatalog ist von Hacoo getrennt. Seine Produktlinks erschließen keine Hacoo-Aufträge, und Hacoos Versandprognosen gelten nicht automatisch für Einkäufe auf anderen Plattformen."
+        ]
+      },
+      {
+        "heading": "Die offizielle Prognose richtig abgrenzen",
+        "paragraphs": [
+          "Die am 9. Oktober 2026 geprüfte Hacoo-Seite Shipping & Delivery nennt allgemein 15–28 Tage bis zum Erhalt und gewöhnlich 3–5 Werktage Bearbeitung. Für Großbritannien, Frankreich, Deutschland und Italien nennt sie 15–25 Tage, für Spanien 15–30 und für andere Länder 25–65 Tage Empfangszeit. Das sind veröffentlichte Richtwerte, keine Zusage für einen konkreten Auftrag. Die Seite erklärt ausdrücklich, dass bestimmte Liefertermine nicht garantiert sind.",
+          "Empfangszeit bedeutet dort Bearbeitung plus Versand. Addiere Bearbeitung nicht noch einmal zu einer Prognose, die sie bereits enthält. Die schnellste Expresslaufzeit ist keine normale Liefererwartung. Werktage und Kalendertage sind außerdem verschiedene Zeitmaßstäbe. Vergleiche Wortlaut, gebuchten Service und Zielort deines Auftrags. Steht dort eine andere maßgebliche Prognose, sichere sie und bitte bei Widersprüchen zur allgemeinen Seite um Klärung."
+        ]
+      },
+      {
+        "heading": "Versandlabel und tatsächliche Übernahme unterscheiden",
+        "paragraphs": [
+          "Ein Status wie Label erstellt oder Versanddaten empfangen bedeutet häufig zunächst, dass elektronische Sendungsdaten vorliegen. Er beweist nicht immer eine physische Abholung. Suche nach Abhol-, Annahme- oder Eingangsscan, bevor du von laufendem Transport ausgehst. Die Begriffe unterscheiden sich je Paketdienst; nutze dessen eigene Erläuterung. Bewahre den Originaltext auf, statt ihn selbst in verloren oder beim Zoll festzusetzen umzudeuten.",
+          "Prüfe bei fortdauernder Bearbeitung Hinweise auf Vorbestellung, Rückstand oder einen besonderen Versandtermin. Hacoos öffentliche Versandseite erklärt, dass verfügbare Artikel getrennt von vorbestellten oder rückständigen Artikeln versendet werden können. Ein Auftrag kann deshalb mehrere Pakete haben. Ordne Inhalt und Sendungsnummer jedem Paket zu. Eine Teillieferung bedeutet nicht automatisch, dass der Rest vergessen wurde; sein tatsächlicher Status muss dennoch geprüft werden."
+        ]
+      },
+      {
+        "heading": "App- und Paketdienstangaben nebeneinander prüfen",
+        "paragraphs": [
+          "Öffne den Tracking-Link im Auftrag und gleiche die Nummer mit der App ab. Lies letzten Zeitstempel und Ort beim Paketdienst neben der Zusammenfassung der App. Aktualisierungen können zeitversetzt erscheinen. Bei einer Übergabe können ein lokaler Zusteller und eine zusätzliche Referenz hinzukommen. Notiere beide, wenn sie im Auftrag angegeben werden. Ersetze die Nummer nicht durch fremde Angaben aus sozialen Beiträgen und unterstelle verschiedenen Trackingseiten keine identischen Definitionen.",
+          "Eine Scanpause kann während Transport, Übergabe oder weiterer Bearbeitung auftreten. Allein ihre Dauer erklärt aber nicht den Grund. Suche nach einer konkreten Ausnahme, Informationsanforderung oder einem Zustellversuch. Zahlungs- oder Adressaufforderungen solltest du über den offiziellen Auftragsweg überprüfen. Unerwartete Nachrichten können Zustellbenachrichtigungen nachahmen. Maßgeblich ist das tatsächlich gemeldete Ereignis, nicht die beruhigendste Erklärung aus einem Forum."
+        ]
+      },
+      {
+        "heading": "Auf Ausnahmen reagieren statt auf eine universelle Frist warten",
+        "paragraphs": [
+          "Es gibt keine belegte Zahl stiller Tage, nach der jedes Hacoo-Paket sicher verloren wäre. Betrachte die auftragsbezogene Frist, den letzten Scan und konkrete Ausnahmen gemeinsam. Ist das Lieferfenster überschritten, liegt ein Adressproblem vor oder verlangt der Paketdienst eine Handlung, kontaktiere zeitnah den zuständigen Support. Eine falsche Adresse sollte sofort gemeldet werden; laut offizieller Seite bleibt wegen schneller Bearbeitung oft wenig Zeit zur Korrektur.",
+          "Steht zugestellt im Tracking, obwohl nichts angekommen ist, prüfe Zustellangaben, Empfang und einen vereinbarten Ablageort. Kontaktiere danach Paketdienst und Bestellservice. Sichere Zeitpunkt und gegebenenfalls Zustellfoto oder Unterschriftsangaben. Ein weiterer gewöhnlicher Transitscan wird einen abgeschlossenen Zustellstatus nicht automatisch auflösen. Frage nach einer Nachforschung und bewahre die Fallnummer auf. Dieser Fall unterscheidet sich von einem Paket ohne ersten Annahmescan."
+        ]
+      },
+      {
+        "heading": "Eine kurze, vollständige Supportdokumentation vorbereiten",
+        "paragraphs": [
+          "Übermittle Auftrags-ID, Sendungsnummer, Ziel, Bestelldatum, letztes Ereignis und die beim Kauf genannte Prognose. Füge klare Screenshots mit Datum bei und erkläre, ob alle Artikel oder nur ein Teil betroffen sind. Nenne frühere Adresskorrekturen und Supportkontakte. Eine zeitliche Übersicht hilft, eine Verzögerung vor Versand von einem Transportproblem zu unterscheiden, ohne dieselben Angaben wiederholt abzufragen.",
+          "Ein Beispielbericht nennt eines von zwei bereits zugestellten Paketen und identifiziert das fehlende Paket mit letztem Scan und Uhrzeit. Das ist ein Formulierungsbeispiel, keine Aussage über deinen Auftrag. Passwörter, Einmalcodes und vollständige Zahlungsdaten gehören nicht hinein. Fordert der Support zusätzliche Nachweise, folge dem jeweiligen Prozess und sichere die Antwort. Ein öffentlicher Kommentar unter einem Ratgeber ersetzt keinen auftragsbezogenen Fall."
+        ]
+      },
+      {
+        "heading": "Serviceoptionen sichern und den Vorgang sauber abschließen",
+        "paragraphs": [
+          "Die geprüfte Versandseite nennt 15 Tage ab Lieferung für After-Sales-Anfragen und verlangt die Befolgung der Rückerstattungsanweisungen. Auf dieser Seite wird zudem ein Vorgehen ohne Rücksendung beschrieben. Daraus folgt weder eine bedingungslose Erstattung noch ein Vorrang gegenüber den Bedingungen deines konkreten Auftrags. Prüfe dessen Supportablauf und melde Probleme zeitnah. Markiere ein nicht erhaltenes Paket nicht als empfangen, um eine andere Ansicht freizuschalten.",
+          "Vergleiche nach Ankunft Inhalt und Auftrag, bevor du Etiketten und Verpackung entsorgst. Fotografiere Schäden, fehlende Teile oder falsche Varianten und bewahre die relevante Sendungshistorie bis zur Klärung auf. Bleibt die Lieferung offen, ergänze Fallnummer und nächsten Schritt statt ständig verschiedene Tracker neu zu laden. Die Nachweise bestimmen die Handlung: Bearbeitung klären, Übernahme bestätigen, auf eine Ausnahme reagieren oder nach Ablauf des gültigen Fensters eine Untersuchung verlangen."
+        ]
+      }
+    ],
+    "takeaways": [
+      "Empfangsprognosen enthalten die Bearbeitung, wenn die Regel dies so definiert.",
+      "Ein erzeugtes Label beweist noch keine Abholung.",
+      "Jedes Paket mit eigener Nummer und Inhalt prüfen.",
+      "Ausnahmen und überfällige Aufträge mit datierten Nachweisen melden."
+    ]
+  },
+  "canary-islands-shipping": {
+    "title": "Liefert Hacoo auf die Kanaren? So prüfst du deine Postleitzahl",
+    "intro": "Du möchtest etwas nach Teneriffa, Gran Canaria oder auf eine andere Kanareninsel bestellen? Hacoo nennt auf seiner öffentlichen Versandseite Spanien als Lieferland und gibt dafür eine Zeitspanne an. Welche Inseln und Postleitzahlen erreicht werden und was dein Paket kostet, lässt sich daraus nicht ablesen. Wähle deshalb den konkreten Artikel und die tatsächliche Empfangsadresse aus. In der Bestellübersicht kannst du vor dem Bezahlen prüfen, ob Hacoo eine Versandart mit einem Preis anbietet.",
+    "sections": [
+      {
+        "heading": "Die tatsächliche Lieferadresse eintragen",
+        "paragraphs": [
+          "Öffne das Adressbuch des Hacoo-Kontos, mit dem du bestellen möchtest. Die europäische Hilfe verweist auf den Adresseintrag im Kontomenü. Je nach App-Version kann er etwas anders heißen. Wähle Spanien aus und trage die richtige Postleitzahl, den Ort, die Straße und die Angaben zu Hausnummer und Wohnung ein. Fragt das Formular Gemeinde und Provinz getrennt ab, verwende die Bezeichnungen deiner üblichen Postanschrift. Der Inselname allein reicht unter Umständen nicht aus, um die Gemeinde zuzuordnen.",
+          "Lies nach dem Zurückkehren zum Warenkorb die ausgewählte Lieferanschrift noch einmal. Eine frühere Adresse auf dem spanischen Festland kann als Standard gespeichert sein. Die gewählte App-Sprache und die Preisanzeige in Euro sagen wenig darüber aus, wohin ein Paket gehen soll. Entscheidend ist die Postleitzahl in der Lieferübersicht. Bietet die automatische Vervollständigung eine andere Gemeinde an, prüfe deine Eingabe, bevor du den Vorschlag übernimmst. Sonst vergleichst du Versandkosten für zwei verschiedene Ziele."
+        ]
+      },
+      {
+        "heading": "Mit einem Artikel in der gewünschten Ausführung beginnen",
+        "paragraphs": [
+          "Wähle zunächst nur einen Artikel aus, den du tatsächlich kaufen würdest. Stelle Farbe, Größe und Stückzahl ein und gehe in dem offiziellen Dienst, der die Bestellung abwickelt, zur Versandübersicht. Suche dort die gewählte Adresse, eine verfügbare Versandart und den für den Versand ausgewiesenen Betrag. Siehst du auch ein voraussichtliches Lieferfenster, halte Wortlaut und Datum fest. Ein gespeicherter Produktlink hilft dir, das Angebot wiederzufinden. Der Preis in einer Artikelsammlung beantwortet jedoch die Frage nach dem Versand an deine Adresse noch nicht.",
+          "Angenommen, du vergleichst zwei Paar Schuhe für eine Lieferung nach Teneriffa. Prüfe das erste Paar in deiner Größe mit der gespeicherten Adresse. Probiere dann das andere Paar mit derselben Adresse und Stückzahl. Erscheint nur für eines der Angebote eine Versandart, weißt du, welches der beiden du an dieser Stelle bestellen könntest. Daraus folgt keine allgemeine Aussage über alle Schuhe oder alle Lieferungen nach Teneriffa. Falls du den Support kontaktierst, kannst du genau benennen, bei welchem Angebot die Auswahl fehlt."
+        ]
+      },
+      {
+        "heading": "Die Anzeige im Warenkorb richtig lesen",
+        "paragraphs": [
+          "Wenn Adresse, Versandart und Preis zusammen angezeigt werden, notiere das Angebot für deinen Vergleich. Prüfe die Übersicht unmittelbar vor dem Bezahlen erneut, insbesondere nach einer Mengenänderung, dem Einlösen eines Rabatts oder dem Wechsel der Lieferanschrift. Steht beim Versand ausdrücklich ein Betrag von null Euro, gilt diese Angabe für den angezeigten Warenkorb. Ein leeres Feld, ein Strich oder der Hinweis auf eine spätere Berechnung lässt die genaue Höhe der Versandkosten offen.",
+          "Nimmt das Formular die Adresse an, bietet im Warenkorb aber keine Versandart an, prüfe zunächst den ursprünglichen Artikel einzeln. Funktioniert das, lege die übrigen Artikel nacheinander wieder dazu. Fehlt auch beim Einzelartikel jede Option, bewahre Artikelreferenz und Wortlaut der Meldung auf. Scheitert bereits die Adresseingabe, kontrolliere die Zuordnung von Gemeinde, Provinz und Postleitzahl. Eine Festland-Postleitzahl nur zur Umgehung der Meldung einzusetzen, würde eine Berechnung für eine fremde Lieferadresse auslösen."
+        ]
+      },
+      {
+        "heading": "Versandkosten und Gesamtpreis auseinanderhalten",
+        "paragraphs": [
+          "Laut Hacoos Angaben zu Versandgebühren steht der genaue Grundpreis beim Bestellabschluss. Auch das Gewicht kann eine Rolle spielen. Für deine Adresse auf den Kanaren lohnt sich der Blick auf vier Beträge: Warenwert, Versand, ausgewiesener Rabatt und Endsumme. Prüfe, auf welche Position sich ein Preisnachlass bezieht. Eine günstigere Endsumme kann auch dadurch entstehen, dass der Artikel reduziert ist und die eigentlichen Versandkosten gleich bleiben.",
+          "Vergleiche beispielsweise einen Warenkorb mit einem Paar Schuhe mit einem zweiten, in dem zu denselben Schuhen ein Kapuzenpullover kommt. Halte bei beiden Datum, Stückzahl, Versandart, Versandgebühr und Endsumme fest. Die Differenz zeigt, wie viel du für die größere Bestellung tatsächlich zusätzlich zahlen würdest. Dafür musst du nicht annehmen, dass pro Kleidungsstück immer derselbe Versandbetrag berechnet wird. Warte auf die vollständige Kostenübersicht. Eine ältere Preisangabe oder ein Screenshot von jemandem mit Adresse in Madrid enthält weder dein heutiges Versandziel noch die konkrete Zusammenstellung."
+        ]
+      },
+      {
+        "heading": "Die Zeitangabe von 15 bis 30 Tagen einordnen",
+        "paragraphs": [
+          "Auf der öffentlichen Versandseite nennt Hacoo für Spanien eine voraussichtliche Empfangszeit von 15 bis 30 Tagen. Diese Angabe umfasst laut Seite Bearbeitung und Transport. Eine eigene Frist für die Kanarischen Inseln wird dort nicht genannt. Wird im Warenkorb oder nach der Bestellung ein Lieferfenster für deine Sendung angezeigt, notiere es zusammen mit dem Bestelldatum. Wenn sich eine Schätzung bereits auf den gesamten Zeitraum bis zum Empfang bezieht, solltest du die allgemeinen Bearbeitungstage kein zweites Mal hinzurechnen.",
+          "Bei Vorbestellungen oder derzeit nicht vorrätigen Artikeln ist es besonders wichtig, die Zuordnung der Sendungen zu prüfen. Hacoo erklärt, dass verfügbare Ware separat von Artikeln verschickt werden kann, auf die noch gewartet wird. Hast du zwei Kleidungsstücke bestellt und siehst erst eine Sendungsnummer, schau nach, welches Stück diesem Paket zugeordnet ist. Bewahre für jede Sendung das eigene Lieferfenster und die Nummer auf. Benötigst du das zweite Stück zu einem festen Termin, liefert der Empfang des ersten Pakets allein noch keinen verlässlichen Anhaltspunkt."
+        ]
+      },
+      {
+        "heading": "Dem Support eine konkrete Frage stellen",
+        "paragraphs": [
+          "Wenn sich keine nutzbare Versandart auswählen lässt, verwende Hacoos offiziellen Supportchat in der App. Eine kurze Anfrage könnte lauten: „Ich möchte [Artikelnummer, Größe und Farbe] an [Postleitzahl und Gemeinde] auf den Kanaren in Spanien bestellen. Die Adresse lässt sich speichern. In der Bestellübersicht steht jedoch [genauer Wortlaut]. Ist diese Variante an diese Postleitzahl lieferbar, und wo sehe ich die vollständigen Versandkosten?“ Erwähne, ob der Artikel einzeln im Warenkorb lag. Auf einem zugeschnittenen Screenshot sind die Meldung und der Artikel erkennbar, ohne die gesamte Wohnanschrift oder Zahlungsdaten zu zeigen.",
+          "Entdeckst du nach der Zahlung eine falsche Lieferadresse, melde dich umgehend mit der Bestellnummer beim Support. Auf der offiziellen Versandseite weist Hacoo darauf hin, dass für eine Korrektur nur wenig Zeit bleibt. Prüfe die der Bestellung zugeordnete Adresse auch dann, wenn du das Adressbuch inzwischen berichtigt hast. Bewahre die Antwort zur Bestellung auf, besonders wenn das Paket bereits beim Versandunternehmen ist. Welche Änderung noch möglich ist, hängt vom Bearbeitungsstand ab."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Liefert Hacoo auf jede der Kanarischen Inseln?",
+        "a": "Die öffentliche Versandseite für Spanien führt die Abdeckung weder nach Insel noch nach Postleitzahl auf. Prüfe die gewünschte Ausführung mit deiner vollständigen Adresse. Fehlt eine Option, frage den Support nach genau dieser Kombination."
+      },
+      {
+        "q": "Ist der Versand auf die Kanaren kostenlos?",
+        "a": "Maßgeblich für deinen Vergleich ist die Versandposition im Warenkorb. Steht dort ausdrücklich null Euro, bezieht sich das auf diese Bestellung. Aus einem leeren Feld oder dem Rabatt eines anderen Käufers lässt sich dein Preis nicht ableiten."
+      },
+      {
+        "q": "Bedeutet ein funktionierender Produktlink, dass ein Paket nach Gran Canaria geliefert wird?",
+        "a": "Er zeigt, dass du das Angebot öffnen kannst. Erst die Auswahl von Variante und Lieferadresse im Bestellvorgang zeigt, ob dafür eine Versandart angeboten wird."
+      },
+      {
+        "q": "Kann ich zwei Lieferadressen vor der Zahlung vergleichen?",
+        "a": "Wenn du an beiden Anschriften tatsächlich ein Paket empfangen kannst, wähle sie nacheinander aus. Notiere die Gebühren mit der jeweiligen Postleitzahl und wähle vor der Bestellung die gewünschte Adresse wieder aus."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Hacoo: Lieferzeiten für Spanien",
+        "url": "https://web.hacoo.app/es-ES/pages/shipping-info"
+      },
+      {
+        "label": "Hacoo: Angaben zu Versandgebühren",
+        "url": "https://act.hacoo.app/shipping-info"
+      },
+      {
+        "label": "Hacoo-Hilfe zum Ändern einer Adresse vor der Bestellung",
+        "url": "https://act.hacoo.app/eu/help-center/account/2"
+      },
+      {
+        "label": "Offizielle Kontaktmöglichkeiten bei Hacoo",
+        "url": "https://web.hacoo.app/en-US/pages/contact-us"
+      }
+    ],
+    "minutes": 5
+  },
+  "wrong-size-returns": {
+    "title": "Hacoo-Rückgabe und Erstattung bei falscher Größe",
+    "intro": "Rufen Sie die bezahlte Bestellung auf und legen Sie den Artikel neben seinen Originalbeutel. Vergleichen Sie die ausgewählte Größe mit dem eingenähten Etikett. Steht dort S und in der Bestellung M, lässt sich die Abweichung direkt zeigen. Steht auf beiden M, beschreiben Sie, an welcher Stelle das Kleidungsstück zu eng oder zu weit sitzt. Heben Sie Anhänger und Verpackung auf. Ihre Anlaufstelle ist der Dienst, bei dem die Bestellung tatsächlich aufgegeben wurde.",
+    "sections": [
+      {
+        "heading": "Falsche Größe geliefert oder falsche Passform?",
+        "paragraphs": [
+          "Vergleichen Sie Modell, Farbe und Stückzahl mit der betreffenden Bestellposition. Zwei schwarze T-Shirts im selben Paket können zu unterschiedlichen Positionen gehören. Trägt der Beutel einen M-Aufkleber und das Shirt ein S-Etikett, fotografieren Sie beide. Beschreiben Sie die beiden Aufschriften. Der Kundendienst kann dann prüfen, ob der Artikel, seine Beschriftung oder die Verpackung vertauscht wurde. Ein Bild Ihrer ursprünglichen Bestellung belegt die ausgewählte Variante auch dann, wenn der Anbieter sein Sortiment inzwischen geändert hat.",
+          "Stimmen die Größenangaben überein, beschreiben Sie den Sitz möglichst konkret. Eine Jacke kann sich bequem schließen lassen und trotzdem spannen, sobald Sie die Arme nach vorn strecken. Ein Schuh kann lang genug sein, aber vorn drücken. Eine dritte Möglichkeit ist eine M, deren Maße deutlich von der Tabelle für genau diese Variante abweichen. Sichern Sie diese Tabelle und die Messanleitung. Trennen Sie Ihren Eindruck bei der Anprobe von den Werten, die Sie tatsächlich nachmessen können."
+        ]
+      },
+      {
+        "heading": "Diese Belege gehören zur betroffenen Bestellposition",
+        "paragraphs": [
+          "Speichern Sie den Ausschnitt der Bestellung mit Größe, Bezeichnung und gezahltem Preis. Machen Sie eine Gesamtaufnahme des Artikels, ein lesbares Foto des Größenetiketts und eines vom Strichcode des Produktbeutels. Hacoo bittet bei Größenproblemen um Etikett und Strichcode sowie um eine Beschreibung der zu engen oder zu weiten Stelle. Ergänzen Sie das Empfangsdatum. Ordnen Sie die Bilder pro Kleidungsstück, damit die Ärmelmessung des einen Pullovers nicht dem anderen zugeschrieben wird.",
+          "Bei einem Zweiteiler haben Oberteil und Hose möglicherweise eigene Etiketten. Prüfen Sie außerdem, ob die Bestellung das Set in einer oder zwei Positionen führt. Passt die Hose und betrifft Ihr Anliegen nur den Pullover, erwähnen Sie das ausdrücklich. Fragen Sie, welche Teile Sie zurückschicken sollen. Haben Sie L und XL desselben Modells zum Vergleich bestellt, lassen Sie jede Größe bei ihrem eigenen Beutel und fotografieren Sie die Zuordnung vor dem Verpacken."
+        ]
+      },
+      {
+        "heading": "So lässt sich Ihre Messung nachvollziehen",
+        "paragraphs": [
+          "Legen Sie einen Hoodie auf eine ebene Fläche und streichen Sie ihn glatt, ohne die Maschen zu dehnen. Gibt die Tabelle die einfache Brustweite von Achsel zu Achsel an, legen Sie das Maßband an diesen beiden Stellen an. Zeigen Sie Anfang, Endwert und Einheit möglichst auf demselben Foto. Auf einer zweiten Aufnahme mit mehr Abstand sind die Ansatzpunkte zu erkennen. Einfache Brustweite, Umfang des Kleidungsstücks und Brustumfang der Person bezeichnen unterschiedliche Maße.",
+          "Ein Rechenbeispiel ohne Bezug zu einem bestimmten Angebot: Für M sind 54 cm einfache Brustweite angegeben, zwischen den entsprechenden Nähten messen Sie 49 cm. Nennen Sie beide Werte und fügen Sie die Tabelle für M sowie eine gegebenenfalls angegebene Toleranz bei. Diese Zahlen illustrieren die Dokumentation und legen keine allgemeine Erstattungsgrenze fest. Bei Schuhen fotografieren Sie das Etikett in beiden Schuhen und auf dem Karton. Vergleichen Sie Fußlänge mit Fußlänge. Eine herausnehmbare Einlegesohle ist nur dann der richtige Vergleich, wenn der Anbieter diese Länge angibt."
+        ]
+      },
+      {
+        "heading": "Anfrage rechtzeitig stellen und Eingangsdatum sichern",
+        "paragraphs": [
+          "Öffnen Sie die Bestellung im Konto, über das Sie bezahlt haben. Wählen Sie Artikel und Stückzahl und suchen Sie nach der für diese Position angebotenen Rückgabe oder Kundenbetreuung. Die Hacoo-Hilfe beschreibt auch den Einstieg über den Kundendienst im Konto. Die veröffentlichte Rückgaberichtlinie nennt für die gewöhnliche Rückgabe 15 Tage ab Erhalt und Bedingungen für den Zustand der Ware. Lesen Sie die für Ihre Bestellung und Ihr Lieferland angezeigten Hinweise frühzeitig. Speichern Sie die datierte Eingangsbestätigung, auch wenn noch Fotos nachzureichen sind.",
+          "Eine mögliche Nachricht lautet: „Bestellt habe ich den schwarzen Hoodie in M. Im Nacken ist S eingenäht, auf dem Beutel steht M. Die Fotos und die Bestellposition liegen bei. Wie soll ich zurücksenden und wer trägt das Porto?“ Stimmen die Etiketten überein, ersetzen Sie die Größenabweichung durch das tatsächliche Problem. Möchten Sie lieber die nächste Größe, klären Sie die verfügbaren Optionen, bevor Sie eine zweite Bestellung bezahlen und mit der Erstattung der ersten rechnen."
+        ]
+      },
+      {
+        "heading": "Rückporto und Paketinhalt vor dem Versand klären",
+        "paragraphs": [
+          "Laut Hacoos Rückgaberichtlinie trägt bei einer gewöhnlichen Rückgabe wegen Nichtgefallens der Käufer das Rückporto. Für einen anerkannt falsch gelieferten Artikel sieht die Richtlinie die Übernahme der betreffenden Kosten vor. Auf der offiziellen Versandseite wird zudem ein Verfahren beschrieben, bei dem die Ware beim Käufer bleiben kann. Maßgeblich für das weitere Vorgehen ist die schriftliche Antwort zu Ihrem Fall. Fragen Sie nach Adresse, Rücksendeetikett, Versandfrist und etwaiger Vorleistung. Falls Porto erstattet wird, klären Sie Versandart und erforderlichen Beleg.",
+          "Vergleichen Sie den angebotenen Betrag mit dem tatsächlich bezahlten Artikelpreis nach Rabatt. Rechnen Sie ursprüngliche Versandkosten und Rückporto getrennt. Bei einem Set sollte klar sein, ob das Angebot die Rückgabe des gesamten Sets voraussetzt. Verwenden Sie die Adresse aus der genehmigten Rückgabe. Bewahren Sie Einlieferungsbeleg und Sendungsnummer auf. Erhalten Sie die Anweisung, den Artikel zu behalten, speichern Sie diese zusammen mit der Erstattungsentscheidung."
+        ]
+      },
+      {
+        "heading": "Ab wann läuft die Frist für die Gutschrift?",
+        "paragraphs": [
+          "Notieren Sie vier Daten getrennt: Eröffnung der Anfrage, Genehmigung, etwaige Zustellung der Rücksendung und Veranlassung der Erstattung. Eine Eingangsbestätigung für Fotos sagt nichts über den Buchungstag auf der Karte aus. Prüfen Sie Betrag, Währung und das angegebene Erstattungsziel. Nennt die Nachricht ein Kontoguthaben, lässt sich die Buchung zunächst in den Bewegungen dieses Guthabens prüfen.",
+          "Die veröffentlichte Richtlinie nennt als Richtwerte fünf bis sieben Werktage für PayPal und acht bis fünfzehn für eine Kreditkarte. Die EU-Hilfe weist darauf hin, dass der ursprünglich gewählte Zahlungsweg den Zeitraum beeinflusst. Ist die für Ihren Fall genannte Frist abgelaufen, antworten Sie im selben Vorgang mit Referenz, Betrag und dem Datum der veranlassten Zahlung. Fehlt stattdessen ein Scan der Rücksendung, helfen dem Kundendienst Einlieferungsbeleg und Sendungsnummer des richtigen Pakets."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Darf ich das Kleidungsstück waschen, um zu sehen, ob es einläuft?",
+        "a": "Prüfen Sie erst Ihre Rückgabemöglichkeit. Die gewöhnlichen Bedingungen verlangen unter anderem unbenutzte, ungewaschene Ware mit Verpackung und Etiketten. Dokumentieren Sie die Maße und jede Abweichung zuerst im Lieferzustand."
+      },
+      {
+        "q": "Was bedeutet eine einzelne 40 in meiner Bestellung?",
+        "a": "Sehen Sie nach, welches Größensystem neben der gekauften Variante und auf dem Artikel steht. Bei einer fehlenden Angabe können Sie Bestellnachweis und Etikett vorlegen und nach der Zuordnung fragen. Sichern Sie die ursprüngliche Bestätigung."
+      },
+      {
+        "q": "Der Beutel mit dem Strichcode ist weg. Was nun?",
+        "a": "Weisen Sie darauf hin und reichen Sie Bestellposition, Gesamtaufnahme und eingenähtes Etikett ein. Fragen Sie nach einem akzeptierten Ersatznachweis. Ein Code von einer anderen Bestellung würde auf den falschen Artikel verweisen."
+      },
+      {
+        "q": "Kann ich M zum alten Aktionspreis gegen L tauschen?",
+        "a": "Prüfen Sie die im Auftrag angebotenen Lösungen. Eine Hilfeseite von Hacoo beschreibt Rückgaben ohne direkten Umtausch. Lassen Sie sich verfügbare Ersatzgrößen und deren Preis bestätigen, bevor Sie sich auf den früheren Rabatt verlassen."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Hacoos Richtlinie zu Rückgaben und Erstattungen",
+        "url": "https://act.hacoo.app/refund-policy"
+      },
+      {
+        "label": "Hacoo-Hilfe zu Größenbelegen und Rücksendungen",
+        "url": "https://act.hacoo.app/act/sara/helpcenter/home/qa3"
+      },
+      {
+        "label": "Hacoo-Versandinformationen und Kundendienst nach dem Kauf",
+        "url": "https://web.hacoo.app/en-US/pages/shipping-info"
+      },
+      {
+        "label": "EU-Hilfecenter von Hacoo zu Erstattungsfristen",
+        "url": "https://act.hacoo.app/eu/help-center/after-sales/3"
+      }
+    ],
+    "minutes": 5
+  },
+  "delivered-not-received": {
+    "title": "Hacoo-Paket als zugestellt markiert, aber nicht erhalten: Was tun?",
+    "intro": "Bei Hacoo steht „zugestellt“, doch vor der Tür und im Briefkasten liegt nichts. Öffne zunächst die einzelne Sendung in deiner Bestellung. Gleiche die Nummer ab, prüfe den genannten Ablageort und frage nach, ob jemand das Paket angenommen hat. Bleibt es verschwunden, helfen dir die folgenden Schritte, dem Zusteller und dem Bestellservice jeweils die richtigen Informationen zu geben.",
+    "sections": [
+      {
+        "heading": "Welche Sendung fehlt tatsächlich?",
+        "paragraphs": [
+          "Suche die Bestellbestätigung und öffne dein Konto bei dem Anbieter, der sie ausgestellt hat. Schau nach, ob mehrere Pakete zu dieser Bestellung gehören und welcher Artikel welcher Sendungsnummer zugeordnet ist. Laut Hacoos Versandseite können sofort verfügbare Artikel vorbestellten oder nachbestellten Waren vorausgeschickt werden. Ein gemeinsamer Zahlungsvorgang kann also zu mehreren Lieferungen führen.",
+          "Angenommen, du hast Schuhe und einen Kapuzenpullover bestellt. Sind die Schuhe da und hat der Pullover eine eigene Nummer mit dem Status „unterwegs“, verfolge diese zweite Sendung. Sollten beide Artikel im zugestellten Paket liegen, bewahre Versandetikett und Verpackung auf, fotografiere den Inhalt und melde den fehlenden Artikel. Fehlt das ganze Paket, obwohl die passende Nummer eine Zustellung anzeigt, geht es dagegen um die Übergabe des Pakets. Diese Unterscheidung spart dem Support eine Rückfrage."
+        ]
+      },
+      {
+        "heading": "Den letzten Eintrag beim Zusteller lesen",
+        "paragraphs": [
+          "Öffne den Link zur Sendungsverfolgung aus deiner Bestellung. Bei einer grenzüberschreitenden Sendung kann der örtliche Zusteller eine eigene Nummer vergeben haben. Notiere beide Nummern sowie das Datum, die angezeigte Uhrzeit und den Wortlaut der letzten Meldung. Sichere auch den vorherigen Verlauf. So lässt sich später erkennen, welcher Transportdienst die letzte Strecke übernommen hat.",
+          "„Im Zustellzentrum eingetroffen“, „zur Abholung bereit“ und „abgeholt“ beschreiben unterschiedliche Situationen. Bei einem Paketshop oder einer Packstation kann die Ware noch zur Abholung bereitliegen. Wird sie hingegen bereits als abgeholt geführt, obwohl du sie nicht geholt hast, bitte um Prüfung des Abholvorgangs. Zeigt nur die App „zugestellt“, die Seite des Zustellers aber noch den Transport, sende beide Ansichten samt Datum und bitte um Zuordnung zum richtigen Paket."
+        ]
+      },
+      {
+        "heading": "Adresse, Ablageort und mögliche Empfänger prüfen",
+        "paragraphs": [
+          "Vergleiche die Lieferadresse in der Bestellung mit deiner tatsächlichen Anschrift. Achte auf Hausnummernzusätze, Wohnung, Hauseingang und einen gegebenenfalls vereinbarten Ablageort. Suche nach einer Benachrichtigung im Briefkasten. Prüfe zugängliche Paketablagen, erkundige dich an der Rezeption und frage die Personen im Haushalt oder einen in der Nachricht genannten Nachbarn. Dies entspricht den ersten Schritten in Hacoos europäischer Hilfe.",
+          "Ein Zustellfoto kann einen Hinweis liefern: Erkennst du die Klingelleiste, die Türnummer oder den Boden vor dem Eingang? Beschreibe einen konkreten Unterschied, wenn das Bild ein anderes Haus zu zeigen scheint. Ist der Ort unbekannt, sag das genau so. Die Prüfung übernimmt der Zusteller; dafür brauchst du weder fremde Räume zu betreten noch ein Foto aus dem Hausflur öffentlich zu teilen."
+        ]
+      },
+      {
+        "heading": "Einen Zustellnachweis und eine Vorgangsnummer anfordern",
+        "paragraphs": [
+          "Kontaktiere den örtlichen Zusteller über die Sendungsseite oder seinen Kundenservice. Nenne die lokale Sendungsnummer, das Zustelldatum und deine Postleitzahl. Frage, ob das Paket persönlich übergeben, an einem vereinbarten Ort abgelegt oder einem Paketshop zugestellt wurde. Bitte um die Angaben, die für diese Versandart verfügbar sind, etwa Ablagevermerk, Foto oder Unterschriftsnachweis. Eine bestimmte Form des Nachweises ist nicht bei jeder Sendung verfügbar.",
+          "Zeigt das Foto deinen Hauseingang, das Paket fehlt aber, beschreibe beides getrennt. Darf nur der Absender einen Nachforschungsauftrag stellen, bitte um eine schriftliche Bestätigung oder eine Vorgangsnummer. Diese Information hilft dem Bestellservice, bei seinem Versandpartner nachzufassen. Notiere, wann du den Zusteller erreicht hast und bis wann er eine Rückmeldung angekündigt hat."
+        ]
+      },
+      {
+        "heading": "Den Fall bei der richtigen Bestellung eröffnen",
+        "paragraphs": [
+          "Die europäische Hacoo-Hilfe verweist bei einer fehlenden Zustellung auf die betroffene Bestellung. Öffne dort den Bereich für Erstattung oder Umtausch und wähle als Grund, dass du das Paket nicht erhalten hast. Folge den dort angezeigten Schritten für eine Untersuchung. Auf seiner Web-Versandseite verweist Hacoo zunächst an den auf der Sendungsseite genannten Zusteller und bei weiteren Fragen an den Kundendienst. Entscheidend ist der Weg, den deine eigene Bestellbestätigung und dein Konto anzeigen.",
+          "Hast du den Artikel in einem unabhängigen Verzeichnis entdeckt, aber über einen anderen Anbieter bestellt, melde dich bei dem Dienst, der die Zahlung und Bestellung abgewickelt hat. Das Verzeichnis kann den Zustellvorgang nicht einsehen. Fehlt bei einer tatsächlichen Hacoo-Bestellung die passende Auswahl, öffne die Hilfe in der App. Nenne die sichtbaren Optionen und frage, wie du den fehlenden Empfang für genau diese Bestellung melden kannst."
+        ]
+      },
+      {
+        "heading": "Eine aussagekräftige Meldung schreiben",
+        "paragraphs": [
+          "Stelle Bestellnummer, Sendungsnummer und Namen des örtlichen Zustellers an den Anfang. Ergänze den letzten Scan, die bereits geprüften Orte, die Auskunft der Personen vor Ort und die Antwort des Versanddienstes. Bei mehreren Teilsendungen liste nur die zu diesem Paket gehörenden Artikel als fehlend auf. Teile die Unterlagen im privaten Supportkanal. Angaben zu anderen Bestellungen oder zur Zahlung kannst du auf Bildschirmfotos ausblenden.",
+          "Eine mögliche Formulierung: „Bestellung [Nummer], Sendung [Nummer]. Laut [Zusteller] am [Datum/Uhrzeit] bei [Ablageort laut Meldung] zugestellt. Ich habe [Orte] geprüft und [Personen/Rezeption] gefragt. Das Paket fehlt. Der Zusteller führt die Anfrage unter [Vorgang] und teilte mir [Antwort] mit. Bitte prüfen Sie die Zustellung und nennen Sie mir den nächsten Schritt.“ Ist eine andere Teilsendung angekommen, vermerke deren Nummer gesondert."
+        ]
+      },
+      {
+        "heading": "Fristen beachten und die Antwort prüfen",
+        "paragraphs": [
+          "In seiner App-Versandrichtlinie nennt Hacoo für eine Erstattungsanfrage wegen eines fehlenden Pakets 15 Tage ab der Zustellmeldung. Die Web-Versandseite nennt gesondert 15 Tage nach Lieferung für den Kundendienst nach dem Kauf. Prüfe die Hinweise an deiner Bestellung. Melde dich zeitnah, selbst wenn die Nachforschung beim Zusteller noch läuft. Hebe Eingangsbestätigung, Vorgangsnummer und Kopien der eingereichten Nachweise auf.",
+          "Wiederholt eine Antwort nur den bekannten Sendungsstatus, hake im selben Vorgang mit der offenen Frage nach: Wo genau wurde abgelegt, wer hat die Sendung angenommen oder welcher Nachweis gehört zur lokalen Sendungsnummer? Erkundige dich, ob weitere Unterlagen nötig sind. Über eine Erstattung oder Ersatzlieferung entscheidet der Bestellservice nach Prüfung. Taucht das Paket inzwischen auf, informiere sowohl den Zusteller als auch den Bestellservice."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Sollte ich nach dem Zustellscan erst ein paar Tage warten?",
+        "a": "Prüfe den angegebenen Ort und frage mögliche Empfänger zeitnah. Bleibt das Paket verschwunden, melde es. Bittet der Zusteller um Geduld, notiere den Rückmeldetermin und behalte unabhängig davon die Frist deiner Bestellung im Blick."
+      },
+      {
+        "q": "Was tun, wenn es kein Zustellfoto gibt?",
+        "a": "Bitte um den verfügbaren Übergabe- oder Ablagevermerk und eine Vorgangsnummer. Teile dem Bestellservice mit, welche Auskunft du erhalten hast, und frage, ob er als Absender weitere Angaben anfordern kann."
+      },
+      {
+        "q": "Was passiert, wenn ich den Empfang versehentlich bestätigt habe?",
+        "a": "Schreibe dem Support über die ursprüngliche Bestellung. Erkläre, welche Bestätigung du angeklickt hast, wann das passiert ist und was der Zusteller anzeigt. Bitte um den für diese Bestellung noch möglichen Meldeweg."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Hacoo EU-Hilfe – Sendung als zugestellt markiert",
+        "url": "https://act.hacoo.app/eu/help-center/shipping/3"
+      },
+      {
+        "label": "Hacoo-Webshop – Versand und Zustellung",
+        "url": "https://web.hacoo.app/en-US/pages/shipping-info"
+      },
+      {
+        "label": "Hacoo-App – Versandrichtlinie und fehlende Pakete",
+        "url": "https://act.hacoo.app/freeshiping"
+      },
+      {
+        "label": "Hacoo – Kontakt zum Support",
+        "url": "https://web.hacoo.app/en-US/pages/contact-us"
+      }
+    ],
+    "minutes": 5
+  }
+}

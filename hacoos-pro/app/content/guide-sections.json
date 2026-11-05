@@ -1,0 +1,132 @@
+{
+  "en": {
+    "findSection": {
+      "heading": "Start with the link, name or photo you already have",
+      "paragraphs": [
+        "If someone sent you a Hacoo link, open the original message on your phone and follow the complete address. If your phone offers to open Hacoo, choose it and check where you land. A product page should show identifying details you can compare. If you land on the app home screen, keep the original message so you can retry without losing the link.",
+        "If you have a name or a screenshot, pick two details that narrow the search: the model wording on the tongue and the colour of the sole, for example. Try the product name or reference in the search available to you. Open promising results individually and compare their photos and option names with the original. A similar shape or a matching first photo alone is weak evidence.",
+        "Before saving a replacement link, select the size and colour again. Check the product ID where one is shown and the service named on the page. If a post points to an independent listing, treat it as a comparison reference. For questions about a purchase, use the order record from the service where you paid."
+      ]
+    },
+    "sizeSections": [
+      {
+        "heading": "Will the M hoodie fit like mine? Compare flat chest widths",
+        "paragraphs": [
+          "Lay a hoodie that fits you on a table, smooth the front without stretching it and measure straight from one underarm seam to the other. Suppose it measures 54 cm. If the listing gives 52 cm for the same flat measurement in M, the listed hoodie is 2 cm narrower across the front. A chart showing the buyer’s chest circumference uses a different measurement.",
+          "Take the same measurement on a second hoodie if you are unsure how much room you like. Then compare length and sleeves. If the seller only lists S, M and L, ask for the underarm width of the actual size and colour before using a letter as your comparison."
+        ]
+      },
+      {
+        "heading": "Is size 11 UK or US? Read the label above the number",
+        "paragraphs": [
+          "Check the size system and, for a US chart, whether it specifies a men's or women's scale. A bare 11 is ambiguous. Select the model and read the centimetre column to see whether it asks for foot length or gives the length of the insole.",
+          "For foot length, stand on paper, mark the heel and longest toe, and measure both feet. For insole length, measure a removable insole from a comfortable shoe as the seller describes. Use like-for-like measurements. If the listing gives no system or measuring method, ask for the chart for that model."
+        ]
+      }
+    ]
+  },
+  "de": {
+    "findSection": {
+      "heading": "Vom Link, Produktnamen oder Foto zum passenden Angebot",
+      "paragraphs": [
+        "Öffne auf dem Handy die Nachricht mit dem ursprünglichen Link und folge der vollständigen Adresse. Bietet das Gerät an, zu Hacoo zu wechseln, wähle die App. Prüfe dann, ob du auf einer konkreten Produktseite landest. Öffnet sich die Startseite, behalte die Nachricht mit der Adresse für einen weiteren Versuch.",
+        "Liegt nur ein Bild vor, suche zwei erkennbare Details heraus, zum Beispiel den Modellnamen auf der Zunge und die Farbe der Sohle. Suche mit dem Namen oder der sichtbaren Modellnummer. Öffne mögliche Treffer einzeln und vergleiche Fotos und Varianten. Ähnlich aussehende Sneaker können unterschiedliche Modelle sein.",
+        "Wähle in einem möglichen Treffer Farbe und Größe erneut aus. Vergleiche die Artikelnummer, falls sie angezeigt wird, und achte auf den Anbieter. Ein Angebot eines unabhängigen Katalogs eignet sich zum Vergleich. Wenn es um eine bereits bezahlte Bestellung geht, findest du die zuständige Anlaufstelle im ursprünglichen Auftrag."
+      ]
+    },
+    "sizeSections": [
+      {
+        "heading": "Hoodie in M: die Brustweite im Liegen vergleichen",
+        "paragraphs": [
+          "Lege einen gut sitzenden Hoodie flach hin und miss, ohne den Stoff zu ziehen, von Achselnaht zu Achselnaht. Angenommen, du misst 54 cm. Stehen beim angebotenen Hoodie für M bei derselben Messmethode 52 cm, ist er vorne 2 cm schmaler. Der Körperumfang in einer Größentabelle ist ein anderes Maß.",
+          "Vergleiche auch Ärmel- und Rückenlänge, besonders wenn du den Hoodie über einem weiteren Oberteil trägst. Gibt das Angebot nur S, M und L an, frage gezielt nach der einfachen Brustweite in deiner Wunschgröße und Farbe."
+        ]
+      },
+      {
+        "heading": "Schuhgröße 11: zuerst UK oder US klären",
+        "paragraphs": [
+          "Lies die Überschrift der Größenspalte. Bei US-Angaben ist auch wichtig, ob die Damen- oder Herrenskala gemeint ist. Schau anschließend nach, ob die Zentimeterangabe für die Fußlänge oder die Einlegesohle gilt.",
+          "Für die Fußlänge stellst du dich auf Papier und misst bei beiden Füßen von der Ferse bis zum längsten Zeh. Für eine Einlegesohlenlänge misst du nach Anleitung des Anbieters die herausnehmbare Sohle eines passenden Paars. Fehlen Skala oder Messmethode, frage nach der Tabelle für genau dieses Modell."
+        ]
+      }
+    ]
+  },
+  "fr": {
+    "findSection": {
+      "heading": "Retrouver une fiche à partir d’un lien, d’un nom ou d’une photo",
+      "paragraphs": [
+        "Ouvrez le message d’origine sur votre téléphone et touchez le lien complet. Si le téléphone propose de l’ouvrir dans Hacoo, choisissez l’application. Vérifiez si vous arrivez sur une fiche avec un modèle et des variantes. Si vous aboutissez à l’accueil, gardez le message pour pouvoir repartir de la même adresse.",
+        "Si vous avez seulement une photo, relevez deux indices visibles, par exemple le nom sur la languette d’une basket et la couleur de sa semelle. Essayez le modèle ou la référence dans le champ de recherche dont vous disposez. Ouvrez les résultats plausibles et comparez les photos ainsi que les noms des coloris.",
+        "Avant d’enregistrer un nouveau lien, sélectionnez à nouveau la couleur et la taille. Vérifiez la référence de l’article lorsqu’elle est affichée et le service sur lequel la fiche s’ouvre. Une fiche de catalogue indépendante peut servir à comparer des modèles. Pour une commande déjà payée, retrouvez le bon interlocuteur dans votre confirmation de commande."
+      ]
+    },
+    "sizeSections": [
+      {
+        "heading": "Sweat en M : mesurer la largeur de poitrine à plat",
+        "paragraphs": [
+          "Étalez un sweat qui vous va et mesurez la distance entre les coutures sous les aisselles sans étirer le tissu. Prenons 54 cm. Si la fiche indique 52 cm en M pour la même mesure à plat, le sweat proposé est plus étroit de 2 cm sur le devant. Un tour de poitrine mesuré sur le corps correspond à une autre mesure.",
+          "Vérifiez ensuite la longueur des manches et celle du vêtement. Si la fiche indique seulement S, M et L, demandez la largeur sous les aisselles dans la taille et le coloris envisagés."
+        ]
+      },
+      {
+        "heading": "Pointure 11 : vérifier le système et la mesure en centimètres",
+        "paragraphs": [
+          "Lisez l’en-tête de la colonne qui contient le 11. S’agit-il de pointures britanniques ou américaines ? Une grille américaine peut aussi distinguer les pointures femme et homme. Regardez ensuite si les centimètres désignent le pied ou la semelle intérieure.",
+          "Pour la longueur du pied, tenez-vous debout sur une feuille et mesurez du talon à l’orteil le plus long, des deux côtés. Pour la semelle intérieure, mesurez celle d’une paire confortable si elle est amovible, en suivant la méthode du vendeur. Si l’unité reste ambiguë, demandez la grille propre au modèle."
+        ]
+      }
+    ]
+  },
+  "es": {
+    "findSection": {
+      "heading": "Buscar un producto con un enlace, un nombre o una captura",
+      "paragraphs": [
+        "Abre en el móvil el mensaje original y pulsa el enlace completo. Si el teléfono te ofrece abrirlo en Hacoo, elige la aplicación. Comprueba si ves una ficha que permita identificar el modelo y sus opciones. Si terminas en la pantalla de inicio, guarda el mensaje para poder volver a intentarlo desde la dirección original.",
+        "Si solo tienes una captura, identifica dos detalles que puedas reconocer en los resultados: por ejemplo, la referencia de la lengüeta y el color de la suela. Busca el nombre o la referencia visible y abre las fichas que se parecen. Contrasta tanto las fotos como el nombre del color o del acabado.",
+        "Antes de guardar un enlace nuevo, selecciona otra vez la talla y el color. Comprueba el identificador del artículo si aparece y mira en qué servicio se ha abierto la ficha. Un catálogo independiente puede servir para comparar modelos. Si ya pagaste y necesitas ayuda, entra en el pedido desde el servicio donde compraste."
+      ]
+    },
+    "sizeSections": [
+      {
+        "heading": "Sudadera en talla M: compara el ancho de sisa a sisa",
+        "paragraphs": [
+          "Extiende una sudadera que te quede bien y mide de una costura de la axila a la otra sin estirar la tela. Imagina que obtienes 54 cm. Si la ficha indica 52 cm en M medidos de la misma manera, la sudadera anunciada tiene 2 cm menos de ancho en plano. Una tabla de contorno de pecho corporal utiliza otra medida.",
+          "Compara también el largo de la prenda y de las mangas. Si solo figuran las letras S, M y L, pide el ancho de sisa a sisa para la talla y el color que piensas elegir."
+        ]
+      },
+      {
+        "heading": "Calzado en talla 11: distingue UK, US, pie y plantilla",
+        "paragraphs": [
+          "Comprueba qué sistema indica la cabecera de la tabla. Si pone US, mira si hay escalas distintas de hombre y mujer. Antes de comparar centímetros, lee si la ficha se refiere a la longitud del pie o a la de la plantilla.",
+          "Para medir el pie, ponte de pie sobre una hoja y mide del talón al dedo más largo en ambos pies. Si piden longitud de plantilla, mide la plantilla extraíble de unas zapatillas cómodas siguiendo el método de la ficha. Si faltan el sistema o el método, pide la tabla del modelo."
+        ]
+      }
+    ]
+  },
+  "it": {
+    "findSection": {
+      "heading": "Risalire al prodotto partendo da un link, un nome o una foto",
+      "paragraphs": [
+        "Apri sul telefono il messaggio originale e tocca l’indirizzo completo. Se il telefono propone di passare a Hacoo, scegli l’app. Verifica che la pagina mostri il modello e le opzioni del prodotto. Se finisci sulla schermata iniziale, conserva il messaggio per poter ripartire dallo stesso indirizzo.",
+        "Se hai soltanto una foto, cerca due particolari riconoscibili: per esempio la sigla sulla linguetta della scarpa e il colore della suola. Cerca il nome o il codice visibile, poi apri le schede più plausibili. Confronta sia le immagini sia i nomi delle varianti disponibili.",
+        "Prima di salvare un nuovo link, seleziona di nuovo colore e taglia. Controlla il codice articolo, quando è presente, e il nome del servizio che ospita la pagina. Una scheda di un catalogo indipendente può servire per un confronto. Per ricevere assistenza su un acquisto, apri l’ordine presso il servizio a cui hai pagato."
+      ]
+    },
+    "sizeSections": [
+      {
+        "heading": "Felpa in M: confronta la larghezza da ascella ad ascella",
+        "paragraphs": [
+          "Stendi una felpa che ti sta bene e misura da una cucitura sotto l’ascella all’altra, senza tendere il tessuto. Supponiamo che misuri 54 cm. Se la scheda indica 52 cm in M per la stessa misura in piano, la felpa proposta è più stretta di 2 cm sul davanti. La circonferenza del torace misurata sul corpo è un altro dato.",
+          "Controlla anche lunghezza delle maniche e del busto. Se la scheda riporta solo S, M e L, chiedi la larghezza da ascella ad ascella per la taglia e il colore che intendi acquistare."
+        ]
+      },
+      {
+        "heading": "Scarpe numero 11: controlla il sistema e la misura in centimetri",
+        "paragraphs": [
+          "Leggi l’intestazione della colonna: il numero 11 può appartenere alla scala britannica o a quella statunitense. Per le taglie US controlla anche se la tabella riguarda il modello da uomo o da donna. I centimetri possono riferirsi al piede oppure alla soletta.",
+          "Per la lunghezza del piede, resta in piedi su un foglio e misura dal tallone al dito più lungo, su entrambi i piedi. Se la scheda indica la soletta, misura quella estraibile di una scarpa comoda seguendo il metodo del venditore. In caso di dubbio chiedi la tabella del modello esatto."
+        ]
+      }
+    ]
+  }
+}

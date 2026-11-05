@@ -1,0 +1,82 @@
+{
+  "en": [
+    {
+      "heading": "Read the estimate for your destination",
+      "paragraphs": [
+        "Hacoo’s public delivery guide includes order processing in the overall receiving time. It describes processing as usually taking 3–5 business days, so adding those days again to a destination’s receiving estimate would count preparation twice.",
+        "For an order already placed, check the promised window on the order and the latest event for that parcel. Preordered items may ship separately. Match each tracking number to its contents before deciding that part of the order is late."
+      ]
+    },
+    {
+      "heading": "Find the shipping charge before you pay",
+      "paragraphs": [
+        "Enter the complete delivery address and postcode, select the exact items and quantities, and read the shipping line in the final summary. Country, parcel weight and the delivery options offered for that cart can affect the amount.",
+        "If you change the address, quantity or delivery method, review the new total before paying. For a Canary Islands address, check whether that postcode and basket are accepted and whether a delivery option and charge appear. The Spain-wide estimate alone cannot confirm an island delivery."
+      ]
+    }
+  ],
+  "de": [
+    {
+      "heading": "Welche Lieferzeit gilt für mein Paket?",
+      "paragraphs": [
+        "Die öffentliche Versandseite nennt für Deutschland, Frankreich, Italien und das Vereinigte Königreich 15–25 Tage, für Spanien 15–30 Tage. Die übliche Bearbeitung von 3–5 Werktagen ist im Gesamtzeitraum bereits berücksichtigt.",
+        "Öffne bei einer laufenden Bestellung den voraussichtlichen Lieferzeitraum und die letzte Meldung zur passenden Sendungsnummer. Vorbestellte Artikel können getrennt ankommen. Vergleiche deshalb den Inhalt des angekündigten Pakets mit der Artikelliste."
+      ]
+    },
+    {
+      "heading": "Wo sehe ich die Versandkosten?",
+      "paragraphs": [
+        "Trage Lieferanschrift und Postleitzahl ein und prüfe nach der Auswahl von Größe, Stückzahl und Versandart die Versandzeile in der Bestellübersicht. Das Gewicht des Pakets und das Zielland können den Betrag verändern.",
+        "Änderst du Menge, Versandart oder Anschrift, kontrolliere die neue Endsumme. Für eine Lieferung auf die Kanaren lohnt sich die Prüfung mit der tatsächlichen Inseladresse: Erst die verfügbaren Optionen für diesen Warenkorb zeigen, ob Lieferung und Preis angeboten werden."
+      ]
+    }
+  ],
+  "fr": [
+    {
+      "heading": "Quel délai prévoir pour la France ?",
+      "paragraphs": [
+        "La page officielle de livraison indique 15 à 25 jours pour la France, l’Allemagne, l’Italie et le Royaume-Uni, et 15 à 30 jours pour l’Espagne. Elle inclut la préparation dans le délai de réception. Les 3 à 5 jours ouvrés de traitement habituels sont donc déjà compris.",
+        "Si la commande est passée, consultez son estimation et le dernier événement associé au numéro de suivi. Une précommande peut partir séparément. Vérifiez quels articles sont rattachés à chaque envoi avant de relancer le service client."
+      ]
+    },
+    {
+      "heading": "Où voir les frais de port de mon panier ?",
+      "paragraphs": [
+        "Renseignez l’adresse et le code postal, choisissez les variantes et les quantités, puis consultez la ligne de livraison dans le récapitulatif avant paiement. Le pays, le poids du colis et les modes proposés pour ce panier peuvent modifier le prix.",
+        "Si vous changez d’adresse, de quantité ou de mode de livraison, relisez le total. Pour les Canaries, faites la vérification avec le code postal de l’île concernée. Un délai publié pour l’Espagne entière ne confirme pas la desserte de cette adresse."
+      ]
+    }
+  ],
+  "es": [
+    {
+      "heading": "Plazo de entrega en España: qué incluye la estimación",
+      "paragraphs": [
+        "La página oficial indica que el tiempo de recepción incluye la preparación y el transporte. Los 3 a 5 días laborables habituales de preparación ya están contemplados. Para Francia, Alemania, Italia y el Reino Unido la referencia es de 15 a 25 días; para España, de 15 a 30.",
+        "Si tu pedido ya está en marcha, consulta la fecha estimada de la compra y el último movimiento de ese paquete. Los artículos en preventa pueden salir por separado. Comprueba qué artículos incluye cada envío antes de dar uno por retrasado."
+      ]
+    },
+    {
+      "heading": "Gastos de envío y entregas a Canarias",
+      "paragraphs": [
+        "Introduce la dirección de entrega y el código postal reales, selecciona las cantidades y revisa la línea de envío al final del carrito. El peso, el destino y las modalidades disponibles pueden cambiar el importe. Revisa el total de nuevo si modificas el pedido.",
+        "Si vives en Canarias, comprueba que el carrito admita tu dirección y ofrezca una modalidad con precio para esos artículos. La mención de España en la lista de destinos no garantiza cobertura para un código postal insular. Si no aparece ninguna opción, consulta con el servicio de atención antes de pagar."
+      ]
+    }
+  ],
+  "it": [
+    {
+      "heading": "Quanto impiega un ordine Hacoo ad arrivare in Italia?",
+      "paragraphs": [
+        "La guida ufficiale indica 15–25 giorni per Italia, Francia, Germania e Regno Unito e 15–30 giorni per la Spagna. Il tempo di ricezione comprende la preparazione: i normali 3–5 giorni lavorativi di lavorazione sono già inclusi.",
+        "Per un acquisto già effettuato, guarda la stima nell’ordine e l’ultimo aggiornamento del relativo pacco. Gli articoli in preordine possono partire separatamente. Verifica quali prodotti sono associati a ciascun numero di tracciamento."
+      ]
+    },
+    {
+      "heading": "Dove si controlla il prezzo della spedizione?",
+      "paragraphs": [
+        "Inserisci l’indirizzo completo e il CAP, seleziona le varianti e le quantità, poi leggi la voce relativa alla spedizione nel riepilogo prima del pagamento. L’importo può variare con il peso del pacco, la destinazione e le opzioni di consegna disponibili.",
+        "Se cambi indirizzo, quantità o metodo di spedizione, ricontrolla il totale. Per una consegna alle Canarie usa il CAP effettivo dell’isola e verifica che il carrello mostri un’opzione con il relativo costo. La stima nazionale spagnola, da sola, non conferma la copertura dell’indirizzo."
+      ]
+    }
+  ]
+}
