@@ -13,11 +13,11 @@ Independent multilingual product-research and Hacoo guides at https://hacoos.sho
 
 ## Content
 
-`content/articles/{en,es,fr,de,it}.json` contain the same 15 independent articles in all five languages. `app/article-data.ts` is the explicit route registry. Add a complete translated record in every language before adding a new slug. A missing translation is a build/validation error, never an English fallback.
+`content/articles/{en,es,fr,de,it}.json` contain the same 18 independent articles in all five languages. `app/article-data.ts` is the explicit route registry. Add a complete translated record in every language before adding a new slug. A missing translation is a build/validation error, never an English fallback.
 
 Keep canonical paths stable. Translated routes use the same slug under the language directory. Every article has self-referencing canonical metadata, reciprocal language alternates, x-default, Article/Breadcrumb JSON-LD and a same-article language selector. Sitemap entries use actual content dates.
 
-The three new topics are broken product links, tracking that stops updating, and parcels marked delivered but not received. Each has a distinct task and links to the relevant broader guides.
+The November guides cover parcels returned to sender, cancellation before dispatch, and checking checkout discounts. Each has a distinct task and links to the relevant broader guides.
 
 Official source facts reviewed 10 October 2026:
 
@@ -36,6 +36,6 @@ npm ci
 npm test
 ```
 
-This builds and checks all 75 article pages, five article indexes, content/translation parity, duplicate paragraphs, local links, initial HTML languages, canonical/hreflang metadata, structured data and 115 sitemap URLs. Event tests verify correct catalog attribution and prevent duplicate binding or transmitting typed search text.
+This builds and checks all 90 article pages, five article indexes, content/translation parity, duplicate paragraphs, local links, initial HTML languages, canonical/hreflang metadata, structured data and 130 sitemap URLs. Event tests verify correct catalog attribution and prevent duplicate binding or transmitting typed search text.
 
 `public/analytics-events.js` sends `product_click`, `catalogue_click`, `search_submit`, `article_click` and `language_change` to the existing GA4 tag. Product IDs and page language are attached; raw search text and query strings are not sent. These intent events are not purchases and are not automatically marked as key events.

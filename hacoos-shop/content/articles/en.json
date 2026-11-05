@@ -715,9 +715,9 @@
     ]
   },
   "find-products-on-hacoo": {
-    "updated": "10 October 2026",
+    "updated": "5 November 2026",
     "publishedISO": "2026-09-16T00:00:00+00:00",
-    "updatedISO": "2026-10-10T00:00:00Z",
+    "updatedISO": "2026-11-05T00:00:00Z",
     "slug": "find-products-on-hacoo",
     "title": "How to Find Products on Hacoo When Search Shows No Results",
     "description": "A practical workflow for finding Hacoo products with neutral keywords, saved identifiers, category clues and verified destination images.",
@@ -741,6 +741,13 @@
         "heading": "Define the product before choosing keywords",
         "paragraphs": [
           "A search fails more often when the request is vague. Replace ‘best Hacoo finds’ with a small requirement set: category, visible shape, colour family, intended use and one non-negotiable measurement or feature. For example, ‘low-top shoe, plain side panels, dark neutral colour, foot-length guidance’ describes observable attributes without relying on a brand-like phrase. This gives you several searchable clues and a clear rejection rule. Write the requirements before opening results so attractive but irrelevant images do not redefine the task. If a requirement cannot be verified from the current page, mark it unknown rather than assuming the picture proves it. Product discovery should narrow uncertainty, not decorate it. The strongest search starts with a decision brief that can survive changes in wording, language and listing title."
+        ]
+      },
+      {
+        "heading": "Find the crossbody bag in a screenshot",
+        "paragraphs": [
+          "You have a creator’s photo of a black crossbody bag. Two useful details survive the crop: a vertical front zip and a strap attached by clips. Try “crossbody bag front zip” in the search you are using. If the results are too broad, add “detachable strap”. Leave the colour until later if most of the candidates offer several options.",
+          "Open two promising listings. The first has a front zip but a sewn-in strap. The second shows clips at both ends, yet its black option has a horizontal pocket. Neither confirms an exact match. Save the second only as a possible alternative if the pocket direction does not matter to you. A similar lead photograph is a good reason to look closer, not a reason to stop checking."
         ]
       },
       {
@@ -909,9 +916,9 @@
     ]
   },
   "hacoo-returns-refund-timeline": {
-    "updated": "10 October 2026",
+    "updated": "5 November 2026",
     "publishedISO": "2026-09-16T00:00:00+00:00",
-    "updatedISO": "2026-10-10T00:00:00Z",
+    "updatedISO": "2026-11-05T00:00:00Z",
     "slug": "hacoo-returns-refund-timeline",
     "title": "Hacoo Returns & Refunds: Deadlines, Evidence & Payment",
     "description": "Prepare a Hacoo return or refund request with the official 15-day window, a clear evidence set and realistic review and payment stages.",
@@ -939,6 +946,13 @@
         "heading": "Start the clock from delivery",
         "paragraphs": [
           "Hacoo’s official shipping information says after-sale support may be requested within 15 days of delivery, and its help material describes eligible-product return handling. Treat that window as a reason to inspect promptly, not a guarantee that every request will be approved. Save the recorded delivery date, the order reference, item and exact selected option. If an order arrives in several parcels, identify which delivery contains the affected item rather than using the first parcel date for everything. Recheck the current order-linked instructions because eligibility, exclusions and required steps can change. A general guide can explain how to prepare; it cannot extend a deadline or decide a case. Begin as soon as a material issue is identified instead of waiting for the end of the published window."
+        ]
+      },
+      {
+        "heading": "A partial refund on a discounted basket",
+        "paragraphs": [
+          "Imagine you paid £54 for a £48 jacket and a £12 cap after a £6 discount on the basket. Only the cap arrived in the wrong colour. Attach the order line showing the selected colour and a photograph of the received cap. Keep the jacket out of the return request so the reviewer can see exactly what you want resolved.",
+          "If the proposed item refund is £10.80, one possible explanation is that £1.20 of the original discount was allocated to the cap. Check the order breakdown or ask support to confirm that calculation. The example illustrates how to reconcile the figures. Your actual order may allocate the discount differently. Compare any separate delivery charge on its own line."
         ]
       },
       {
@@ -1315,9 +1329,9 @@
     "title": "Hacoo Tracking Not Updating: Check the Gap and Next Step",
     "description": "Work out why Hacoo tracking appears stuck: separate label creation, physical scans, carrier handoffs and missed estimates before contacting support.",
     "readTime": "8 min read",
-    "updated": "10 October 2026",
+    "updated": "5 November 2026",
     "publishedISO": "2026-10-10T00:00:00Z",
-    "updatedISO": "2026-10-10T00:00:00Z",
+    "updatedISO": "2026-11-05T00:00:00Z",
     "keywords": [
       "Hacoo tracking not updating",
       "Hacoo tracking stuck",
@@ -1342,6 +1356,13 @@
         "paragraphs": [
           "If Hacoo tracking is not updating, record the last event before deciding what it means. Open the relevant order, identify the parcel and save the exact status, displayed event time, location and carrier. Also note the time you checked. Reopening the same screen without recording those details makes a quiet period feel longer while adding little useful information.",
           "Look first for an explicit request that needs action, a failed delivery attempt or a delivered status. Those states need their own response and should not be treated as a routine scan gap. If the screen simply shows no newer movement, continue with the checks below. The purpose is to identify the missing evidence and the right next question, not to assign a cause from silence."
+        ]
+      },
+      {
+        "heading": "A pickup reminder arrives while the tracking screen looks frozen",
+        "paragraphs": [
+          "Suppose the tracking page for a coat still shows the sorting depot, but a text message says a parcel is waiting at a locker. Open the carrier’s own service from the order details. Check the tracking reference against the message, particularly if you are expecting another delivery. A matching postcode alone cannot identify the parcel.",
+          "If the carrier confirms the locker, ask where to find the collection instructions and when pickup closes. If the references differ, keep the reminder with the parcel it actually names. For the coat, quote the last depot scan when asking about its whereabouts. This avoids spending the afternoon at the wrong locker while the other parcel’s collection time runs down."
         ]
       },
       {
@@ -1525,5 +1546,272 @@
         ]
       }
     ]
+  },
+  "hacoo-parcel-returned-to-sender": {
+    "slug": "hacoo-parcel-returned-to-sender",
+    "title": "Hacoo Parcel Returned to Sender? How to Request the Next Step",
+    "description": "Find out whether a Hacoo parcel is still available for pickup or already returning, then ask about redelivery, the cost of a resend or a refund.",
+    "sections": [
+      {
+        "heading": "Read the last scan before contacting anyone",
+        "paragraphs": [
+          "Open the Hacoo order, copy the tracking number for the parcel you expected and read the newest dated event on the carrier’s own tracking page. If it says the parcel is being returned to sender, contact Hacoo through the app and ask whether this particular parcel can be sent out again. Hacoo’s European help page says a failed delivery or an expired collection period can send a parcel back to the shipping company’s overseas warehouse. A resend depends on whether the route supports it.",
+          "The last verb in the history matters. A driver who tried your door this morning may have left the parcel at a collection point. A carrier moving it back to a warehouse is describing a different journey. Read the events in date order, including any instructions underneath the status. An older message inviting you to collect the parcel can stay on screen after a newer scan records its departure."
+        ]
+      },
+      {
+        "heading": "Match the tracking number to the items",
+        "paragraphs": [
+          "One checkout can produce more than one consignment. In the order details, look for the item names, quantities and tracking reference grouped together. If your shoes arrived on Monday and the jacket is missing, make sure the return scan belongs to the jacket parcel. Include its size and colour if two jackets appear on the same order. A support agent can investigate a specific missing parcel much more quickly than an order described as partly delivered.",
+          "Suppose a blue shirt and two pairs of socks sit under one reference and a second shirt under another. The carrier reports a return on the first reference. Ask about the blue shirt and both pairs of socks. Leave the second shirt on its own timeline. If the app doesn’t show which items belong to either number, tell support exactly that and ask them to identify the contents before discussing a replacement."
+        ]
+      },
+      {
+        "heading": "If the parcel is still available for collection",
+        "paragraphs": [
+          "Read the carrier’s notice for the collection location, the deadline and anything it asks you to bring. Check the street and opening hours against the carrier’s current information before making a trip. If the scan says a delivery was attempted without giving a collection address, use the carrier’s published contact details and ask where it is being held and whether a second attempt is available.",
+          "A useful question is, “Is parcel [reference] physically at the collection point today, and when is the last time it can be collected?” This is worth asking when a Friday notice is followed by a weekend or a public holiday. Keep the answer and its date. If the collection point says it has already handed the parcel back, ask for the latest event or reference and switch to the return enquiry with Hacoo."
+        ]
+      },
+      {
+        "heading": "If the return journey has already started",
+        "paragraphs": [
+          "Save the event that first mentioned the return, then note the latest event below it. The depot where a parcel changes direction can be different from the place that ultimately receives it. Ask the carrier whether there is any remaining collection or redelivery option. Where the carrier says the sender must act, pass that answer to Hacoo together with the date and reference instead of repeatedly visiting the pickup point.",
+          "For example, a parcel might show an attempted delivery on Tuesday, an expired pickup period the following Monday and a sorting-depot scan on Wednesday. The Wednesday scan shows that the parcel moved after the deadline. It does not tell you that Hacoo has received the goods, identified the order or approved compensation. Ask support which event they need next and when they want you to check back if it never appears."
+        ]
+      },
+      {
+        "heading": "Check the reason against the actual order",
+        "paragraphs": [
+          "Common situations named in Hacoo’s help include an unsuccessful delivery, an absent recipient and an expired collection period. Use the carrier’s wording in your enquiry. Where the tracker reports an incomplete address, compare the address on the paid order with what the carrier displays. A complete new address saved in your profile today does not show what the original parcel label contained.",
+          "If the issue is an apartment number, identify the missing field in the private support conversation and ask whether the corrected information could be used for a new delivery. If the address on the order was complete, keep a screenshot and explain which part the carrier questioned. In either case, ask support to confirm the address attached to any resend before the new parcel leaves. Keep personal address details out of posts asking other shoppers for advice."
+        ]
+      },
+      {
+        "heading": "When the app and carrier show different updates",
+        "paragraphs": [
+          "Read the date and local time printed beside each event. A Hacoo summary might still show an attempted delivery while the named carrier has already recorded departure from the pickup point. Save both screens together and use the later physical event in your enquiry. If the two histories use different time zones, quote the dates and times exactly as displayed. Ask the carrier which scan reflects where the parcel is now."
+        ]
+      },
+      {
+        "heading": "Ask about a resend or a refund",
+        "paragraphs": [
+          "Hacoo’s short shipping FAQ describes a possible resend or refund after review. Its detailed refund policy lists circumstances such as an incorrect address or a missed collection deadline in which the customer can be asked to pay reshipping costs and a refund may be unavailable. These details matter if you still want the item but would prefer a refund to paying a second delivery charge.",
+          "Ask three questions in the same enquiry. Can this parcel be resent to the confirmed address? Would there be a charge, and how much in the order currency? If a resend is unavailable or you choose against it, which refund terms apply to this order and why? You can then compare the actual options. A parcel marked as returned gives support a case to examine. It does not establish the amount or the date of a payment."
+        ]
+      },
+      {
+        "heading": "Send a message that can be acted on",
+        "paragraphs": [
+          "Start with the order and parcel references, then give the last two meaningful events, including their dates. Add the carrier’s answer, the items affected and the result you would prefer. A screenshot is most useful when it shows the event wording and tracking suffix together. Mask unrelated names, addresses and payment details. Send the full identifiers only through the official private support route for the order.",
+          "Here is an example you can adapt. “My jacket from order [order reference] is on parcel [tracking reference]. The carrier marked the pickup period expired on [date] and the parcel returning on [date]. Today the pickup point confirmed it has left. I would like the jacket if a resend is available. Please confirm the destination and any charge. If it cannot be resent, please tell me the applicable refund decision and what evidence you need.”"
+        ]
+      },
+      {
+        "heading": "Follow the agreed outcome to completion",
+        "paragraphs": [
+          "For a resend, record the new tracking reference, the items it covers and any revised delivery estimate. Keep the old tracking history as well. A later scan on the original return leg cannot tell you where the replacement parcel is. If support says the original reference will still be used, ask what change in the tracking history will mark the start of the new outward journey.",
+          "For an approved refund, check the amount, currency and destination support gives you. If other items in the order arrived, compare the amount with the affected lines and ask about any shipping component that you cannot reconcile. Record the approved date separately from the date the credit actually appears. If support is waiting for a warehouse scan, keep the case reference and use the agreed follow-up date to send only the new information."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "label": "Hacoo Help Centre — parcels sent back",
+        "url": "https://act.hacoo.app/eu/help-center/shipping/6"
+      },
+      {
+        "label": "Hacoo Help Centre — missed delivery notice",
+        "url": "https://act.hacoo.app/act/sara/helpcenter/ship7"
+      },
+      {
+        "label": "Hacoo return and refund policy",
+        "url": "https://act.hacoo.app/refund-policy"
+      },
+      {
+        "label": "Hacoo support",
+        "url": "https://web.hacoo.app/en-US/pages/contact-us"
+      }
+    ],
+    "readTime": "6 min read",
+    "updated": "5 November 2026",
+    "updatedISO": "2026-11-05T00:00:00Z",
+    "publishedISO": "2026-11-05T00:00:00Z",
+    "sourceNote": "Compare the latest carrier scan with the specific Hacoo order. The EU shipping guidance and the return policy describe different outcomes depending on the reason for return."
+  },
+  "cancel-hacoo-order-before-shipping": {
+    "slug": "cancel-hacoo-order-before-shipping",
+    "title": "How to Cancel a Hacoo Order Before It Ships",
+    "description": "Find Cancel in My orders, check which items it covers and confirm the result. Learn what to ask Hacoo if the button is missing or your order has shipped.",
+    "sections": [
+      {
+        "heading": "Find the order and check whether it has shipped",
+        "paragraphs": [
+          "If your Hacoo order has not shipped, open My orders, choose the purchase you want to stop and look for Cancel. This is the route given in Hacoo’s EU help centre. Act when you spot the mistake. A dispatch estimate shows when the parcel is expected to leave, while the status on your individual order tells you which action is available now. Open the order itself before relying on an older email or notification.",
+          "Suppose you bought a medium jacket and immediately noticed that the chart called for a large. Check the order number, colour, size and quantity before tapping anything. Two orders for the same jacket can look almost identical in the list. If the wrong one is still awaiting shipment, follow the cancellation steps for that order and read the confirmation carefully. Keep the correct order open separately so you can check that it is still active."
+        ]
+      },
+      {
+        "heading": "Check what the cancellation will cover",
+        "paragraphs": [
+          "An order can contain the item you want to stop and other items you still want. The help page describes cancelling an order. It does not establish that every customer can remove a single line after payment. Read the scope displayed on your cancellation screen. A screen showing the full order total and all three items deserves a closer look if you only meant to remove one T-shirt.",
+          "If the app offers a choice, check the selected items and quantities before confirming. If the only option covers the whole purchase, decide whether you are willing to cancel everything. For an order you partly want to keep, ask Hacoo support whether they can help with the specific line while it is still unshipped. Give them the item description and the order reference. Treat that enquiry as pending until the order record shows an outcome."
+        ]
+      },
+      {
+        "heading": "Distinguish an order from a basket or payment enquiry",
+        "paragraphs": [
+          "Removing something from a shopping cart changes a selection for checkout. Once an order number exists, return to the corresponding order details to see whether the purchase can be cancelled. Deleting a saved product or editing its size in a fresh cart leaves the earlier purchase to be dealt with separately. This is particularly easy to miss if you reopened a product page from the confirmation message.",
+          "If you saw an unexpected payment entry but cannot find a matching order, look in the account used at checkout and check the time, amount and currency on the confirmation. Two similar bank entries alone do not identify two Hacoo orders. If there are two distinct order references, choose which one you want to stop. If there is only one or none, ask support to identify the payment in question before cancelling a purchase you intended to keep."
+        ]
+      },
+      {
+        "heading": "If the Cancel option is missing",
+        "paragraphs": [
+          "Read the latest status shown for that exact order, refresh its detail page once and note the time. One common source of confusion is a carrier page with no scans yet. Lack of carrier movement does not establish that Hacoo still considers the order unshipped. If the app says it has shipped, use the shipped-order guidance. If the status still suggests preparation but you cannot find the option, contact official in-app support promptly.",
+          "A short enquiry is easier to act on than a long explanation. Try, “Order [reference] still shows [exact wording] at [local time and date]. I cannot see a cancellation option. I want to cancel [the entire order or named item and quantity]. Can it still be stopped before dispatch? Please confirm what you can cancel and whether I need to take another step.” Keep a copy of the response in the same conversation."
+        ]
+      },
+      {
+        "heading": "If the item or address just needs correcting",
+        "paragraphs": [
+          "An unwanted order, a wrong delivery address and a wrong size may need different outcomes. If the only problem is an address field, ask whether the existing order can be corrected before shipment. Tell support which field is wrong and confirm the correction in the order, rather than assuming a change in the address book applies to an existing label. If a correction is unavailable, you can then decide whether cancellation is preferable.",
+          "For a size or colour mistake, compare the selected option in the order with the currently available variant in the listing. A replacement order has its own price, stock, delivery estimate and promotions. If the larger size has sold out, cancelling the original cannot reserve it. Conversely, placing the second order before the first cancellation is confirmed may leave two orders active. Choose which of those outcomes you can accept before pressing the next button."
+        ]
+      },
+      {
+        "heading": "When a parcel has already shipped",
+        "paragraphs": [
+          "Hacoo publishes two pieces of guidance that matter here. Its EU cancellation FAQ mentions refusing a shipped parcel, then contacting support once it is returned. Its detailed return and refund policy directs customers seeking a return during transit to receive the parcel first. That policy also warns that refusal or missing a collection can prevent the return request being processed. These instructions can lead to materially different outcomes for the same parcel.",
+          "Contact Hacoo through the order and ask for written instructions for your destination and shipment before refusing delivery or letting a collection deadline expire. Give support the current carrier event and any pickup deadline. Ask whether you should accept the parcel, whether the item is eligible for return, and which process applies. Keep the response with the order. An ordinary doorstep refusal should never be presented as a guaranteed refund route for every Hacoo buyer."
+        ]
+      },
+      {
+        "heading": "Check the status after you submit",
+        "paragraphs": [
+          "Read the next screen before closing the app. A request that has been sent for review, an order recorded as cancelled and a refund recorded as issued describe different stages. Save the message you actually receive, including the order reference and the amount if one is displayed. Reopen the same order from your history and check that its status agrees. A cancelled checkout screen for a subsequent shopping cart is easy to mistake for the original.",
+          "If you receive a shipping notification afterwards, compare the reference first. It may be for another order or another parcel. If it matches the purchase you tried to cancel, send support both the cancellation confirmation and the dispatch notice with their timestamps. Ask whether the first request was completed before shipment and which delivery instructions now apply. Keep the parcel available for any next step support gives you, particularly if they identify a return requirement.",
+          "If the app only gives you a general acknowledgement, use the wording in your follow-up. “We received your enquiry” leaves a different trail from “the order was cancelled”. Ask for the affected order number and item lines to be reflected in the reply. That small detail is especially valuable when a gift and a personal purchase arrived in the order history on the same day."
+        ]
+      },
+      {
+        "heading": "Track the money separately from the order",
+        "paragraphs": [
+          "Use the amount and payment destination stated in the order or support confirmation. If the cancelled purchase contained several lines, compare the refund with the quantity that was actually cancelled. With a partial cancellation, ask how delivery charges or an order-level promotion were allocated if the figures are unclear. A refund can be approved on one day and become visible at the payment provider later. Record each date according to what you can see.",
+          "Before placing a replacement order, take a last look at the original status, the corrected item and the new checkout total. If the cancelled purchase used an offer, check whether the new basket actually shows it again. Reusing the same code or buying the same size gives no assurance about the new amount. Once you can identify the cancelled order, the payment outcome and any replacement by separate references, you have a clear record if support needs to investigate further."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "label": "Hacoo Help Centre — cancelling an order",
+        "url": "https://act.hacoo.app/eu/help-center/order/2"
+      },
+      {
+        "label": "Hacoo return and refund policy",
+        "url": "https://act.hacoo.app/refund-policy"
+      },
+      {
+        "label": "Hacoo support",
+        "url": "https://web.hacoo.app/en-US/pages/contact-us"
+      }
+    ],
+    "readTime": "6 min read",
+    "updated": "5 November 2026",
+    "updatedISO": "2026-11-05T00:00:00Z",
+    "publishedISO": "2026-11-05T00:00:00Z",
+    "sourceNote": "Hacoo’s cancellation FAQ covers orders before dispatch. For a parcel already in transit, confirm the instructions for that order in writing with Hacoo support."
+  },
+  "where-to-enter-hacoo-discount-code": {
+    "slug": "where-to-enter-hacoo-discount-code",
+    "title": "Where to Enter a Hacoo Discount Code and Check It Applied",
+    "description": "Find the coupon option before paying, compare the same basket before and after, and check why a Hacoo first-order offer might leave your total unchanged.",
+    "sections": [
+      {
+        "heading": "Look for the offer in the Hacoo order you are about to pay for",
+        "paragraphs": [
+          "Open the official Hacoo app, sign in, add the item and go as far as the order review before payment. If your checkout offers a coupon field or a voucher selector, use it there and check the resulting amount before confirming the purchase. The independent Hacoo Links shopping guide describes a coupon field at checkout. Hacoo’s own short ordering guide confirms the app, cart and checkout sequence, but does not specify a single coupon control for every account.",
+          "The place where you discovered a product can look very different from the place where you pay. A spreadsheet search box finds products. A creator’s page can display an offer. Neither can show the amount Hacoo will charge for your particular basket. Follow the intended product into the official order flow, check the item and size, and look for an order summary showing the amount due in your currency."
+        ]
+      },
+      {
+        "heading": "Work out what the offer asks you to do",
+        "paragraphs": [
+          "Read the original promotion once before copying anything. A written code, a voucher offered for selection and a discount already included in a displayed price call for different actions. If the offer gives an actual string of letters or numbers, copy just that string. Keep any eligibility wording alongside it. If the promotion says to claim an offer first, check in your account whether that claim is available and follow the instructions shown there.",
+          "A social post might say “use my first-order code” while a listing simply advertises a sale price. Those are two separate claims. Keep the item price and the advertised coupon terms distinct when comparing the total. Record the source and date if you intend to ask support about the offer. Another person being offered the discount last month tells you little about eligibility for the basket open on your phone today."
+        ]
+      },
+      {
+        "heading": "Establish a like-for-like starting total",
+        "paragraphs": [
+          "Before applying the coupon, check the item, variant, quantity, delivery destination, shipping choice and currency. Note the merchandise subtotal, any discount already shown, delivery charge and final amount due. You can write down the figures or keep a private screenshot. The comparison takes seconds and makes it easier to see which line moved after you entered the code, especially when another discount was already in place.",
+          "Here is a simple illustration using invented figures. Two items cost £32 and £18, and delivery is £4. The starting total is £54. If an offer reduces the £50 merchandise subtotal by £5 while delivery stays at £4, the new amount payable is £49. The £5 difference is visible in the order figures. This example describes how to read a summary and makes no claim about a current Hacoo rate or an eligible product."
+        ]
+      },
+      {
+        "heading": "Apply the code and read the response",
+        "paragraphs": [
+          "Enter the code in the field labelled for a coupon or promotion, if your checkout displays one. If the screen instead offers a choice of vouchers, open the available offer and read its conditions. Use the confirmation action the app provides and stay on the order summary long enough to see its response. A code visible as text in a field may still be waiting for you to apply it.",
+          "Read the discount line and the final total together. Suppose a basket already has a £3 promotional reduction and the new voucher offers £5 for the same eligible items. If checkout replaces the first reduction with the second, the gain against your starting total is £2. If both remain visible, the arithmetic will show how they were treated. The words on the offer and the recalculated total tell you which result you actually have."
+        ]
+      },
+      {
+        "heading": "If you cannot find a promo-code field",
+        "paragraphs": [
+          "First check which screen you are on. A product listing, an external product catalogue and a saved discovery link can all show prices without giving you access to the Hacoo order summary. Open the app yourself if you are unsure where the link landed. Check that your cart contains the intended item, then continue to the review stage while leaving the final payment action untouched.",
+          "Look at the terms again for instructions specific to the offer. A promotion that uses a selectable account voucher may give you nothing to type. A page describing a benefit for a particular campaign might send you to a claim screen. If neither a relevant field nor an applicable offer appears, ask support whether your account and basket can use it before buying. Do not complete an order on the assumption that a field will appear after payment."
+        ]
+      },
+      {
+        "heading": "If checkout rejects the code",
+        "paragraphs": [
+          "Capture the exact error wording. An expired offer, an unrecognised string and a basket below a stated minimum raise different questions. Compare the copied text with the original, including digits, spaces and stray punctuation. Look at the offer’s stated dates and destination, any first-order condition, any minimum eligible spend and any listed exclusions. Use these as checks against the actual terms rather than assuming every campaign has the same restrictions.",
+          "Imagine an offer whose written conditions require £40 of eligible merchandise. A £37 item plus £5 in delivery produces a £42 total, yet the item alone falls short if the rules exclude delivery from the threshold. If you cannot tell which lines count, ask support before adding something you do not want. If the offer is limited to first orders and your purchase history is ambiguous, describe that history through the official support channel and let them check eligibility."
+        ]
+      },
+      {
+        "heading": "Separate coupon savings from money already in the wallet",
+        "paragraphs": [
+          "Read the labels if the order uses a balance or account credit. Hacoo separately documents review cashback, which is an account benefit associated with eligible product reviews after delivery. The wallet screen tracks that benefit. Spending credit can reduce the amount charged to your card even when the price of the merchandise has not changed. A coupon and a wallet payment can therefore produce similar-looking card totals for different reasons.",
+          "For example, an order summary might show £46 due, £6 covered by existing credit and £40 left for the payment method. Those numbers explain how the £46 purchase is funded. To establish whether your promotional code helped, look for the price reduction in the order calculation as well. If the credit is optional and the app lets you review it separately before payment, compare the item and delivery figures with the same credit setting each time."
+        ]
+      },
+      {
+        "heading": "When the final amount is still unexpected",
+        "paragraphs": [
+          "Check whether a change in quantity, shipping method or destination occurred while you were testing the offer. If two variants carry different prices, selecting a new size after applying the coupon also breaks your original comparison. Restore the basket you actually intend to buy and recalculate. If the amount still differs, the most useful evidence is a before-and-after pair showing the same item lines, delivery selection and currency.",
+          "In official support chat, give the promotion wording, where you saw it, the eligible subtotal you calculated and the exact message shown at checkout. Ask which rule affects this basket or where the applicable voucher should appear. A cropped screenshot of the offer and order figures is usually more useful than a picture of the product. Avoid including card numbers or payment credentials. You can leave the order unpaid while you decide whether the amount on screen works for you."
+        ]
+      },
+      {
+        "heading": "Recheck after the last change to the basket",
+        "paragraphs": [
+          "Once you have the right items, look at the last summary immediately before authorising payment. Check the discount amount, any existing credit, delivery and the total that will go to your payment method. If the promotion has disappeared after an edit, return to the summary and resolve it before paying. If you have already paid, refer to the amount and benefits recorded on that order and ask official support about that specific purchase. Never rely on a third-party code list as proof that an adjustment will be made after checkout."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "label": "Hacoo Help Centre — ordering in the app",
+        "url": "https://act.hacoo.app/act/sara/helpcenter/order1"
+      },
+      {
+        "label": "Hacoo Links — independent checkout walkthrough",
+        "url": "https://hacoolinks.com/en/blog/901-how-to-buy-on-hacoo"
+      },
+      {
+        "label": "Hacoo — how review cashback works",
+        "url": "https://act.hacoo.app/about-order-review-cashback"
+      },
+      {
+        "label": "Hacoo support",
+        "url": "https://web.hacoo.app/en-US/pages/contact-us"
+      }
+    ],
+    "readTime": "6 min read",
+    "updated": "5 November 2026",
+    "updatedISO": "2026-11-05T00:00:00Z",
+    "publishedISO": "2026-11-05T00:00:00Z",
+    "sourceNote": "The official help page describes ordering in the app. The independent checkout guide illustrates the coupon step. Eligibility and the payable amount are shown for your order."
   }
 }

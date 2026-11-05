@@ -612,9 +612,9 @@
     "title": "Come trovare prodotti su Hacoo quando la ricerca non dà risultati",
     "description": "Trova prodotti Hacoo usando parole descrittive, codici salvati e categorie; verifica immagini, varianti e collegamenti prima di scegliere.",
     "readTime": "8 min di lettura",
-    "updated": "10 ottobre 2026",
+    "updated": "5 novembre 2026",
     "publishedISO": "2026-10-10T00:00:00Z",
-    "updatedISO": "2026-10-10T00:00:00Z",
+    "updatedISO": "2026-11-05T00:00:00Z",
     "keywords": [
       "come trovare prodotti su Hacoo",
       "ricerca Hacoo senza risultati",
@@ -634,6 +634,13 @@
         "heading": "Definisci il prodotto prima delle parole chiave",
         "paragraphs": [
           "Una ricerca vaga rende più probabile un risultato inutile. Sostituisci «migliori prodotti Hacoo» con pochi requisiti: categoria, forma visibile, famiglia di colori, utilizzo e una misura o caratteristica indispensabile. Per esempio, «scarpa bassa, pannelli laterali semplici, colore scuro neutro, indicazioni sulla lunghezza del piede» descrive elementi osservabili senza affidarsi a parole che richiamano un marchio. Ottieni così più indizi da cercare e un criterio chiaro di esclusione. Scrivi i requisiti prima di aprire i risultati, in modo che fotografie attraenti ma irrilevanti non cambino il tuo obiettivo. Se una condizione non è verificabile nella pagina corrente, segnala che manca invece di presumere che la foto la dimostri. La ricerca deve ridurre l’incertezza. Una buona descrizione iniziale resta utile anche quando cambiano lingua, titolo e formulazione dell’inserzione."
+        ]
+      },
+      {
+        "heading": "Ritrovare la borsa a tracolla di uno screenshot",
+        "paragraphs": [
+          "Nella foto di una borsa nera distingui una tasca frontale con cerniera verticale e una tracolla fissata con moschettoni. Prova a cercare «borsa a tracolla cerniera davanti». Se i risultati sono troppi, aggiungi «tracolla staccabile». Puoi controllare il nero dopo aver aperto le schede, se ciascun modello è disponibile in più colori.",
+          "Apri due schede plausibili. La prima ha una tasca con cerniera, ma la tracolla è cucita. La seconda mostra entrambi i moschettoni, mentre nella variante nera la tasca è orizzontale. Nessuna delle due permette di riconoscere con certezza il modello della foto. Salva la seconda come alternativa soltanto se l’orientamento della tasca per te è indifferente."
         ]
       },
       {
@@ -806,9 +813,9 @@
     "title": "Reso Hacoo e tempi di rimborso: procedura, prove e pagamento",
     "description": "Prepara un reso Hacoo entro la finestra pubblicata, distingui verifica della richiesta, eventuale restituzione e accredito su carta o PayPal.",
     "readTime": "8 min di lettura",
-    "updated": "10 ottobre 2026",
+    "updated": "5 novembre 2026",
     "publishedISO": "2026-10-10T00:00:00Z",
-    "updatedISO": "2026-10-10T00:00:00Z",
+    "updatedISO": "2026-11-05T00:00:00Z",
     "keywords": [
       "reso Hacoo",
       "rimborso Hacoo",
@@ -832,6 +839,13 @@
         "heading": "Conta il termine dalla consegna dell’articolo",
         "paragraphs": [
           "La politica ufficiale Hacoo consultata prevede per la maggior parte dei prodotti una finestra di 15 giorni dalla ricezione per chiedere il reso e il rimborso, con condizioni ed esclusioni. Considerala un motivo per controllare presto, non una garanzia di approvazione. Salva data di consegna, riferimento dell’ordine, articolo e variante precisa. Se l’ordine arriva in più pacchi, identifica quello contenente il prodotto interessato, senza usare per tutto la prima consegna. Ricontrolla le istruzioni correnti dell’ordine: idoneità, esclusioni e passaggi possono cambiare. Per esempio, la politica consultata distingue elettronica aperta o attivata e categorie personali; non trasferire l’idoneità di un prodotto a tutti gli altri. Una guida spiega come prepararsi, ma non estende una scadenza e non decide il caso. Avvia la procedura quando emerge il problema, senza aspettare l’ultimo giorno."
+        ]
+      },
+      {
+        "heading": "Controllare un rimborso parziale su un carrello scontato",
+        "paragraphs": [
+          "Supponi di aver pagato 54 € per una giacca da 48 € e un cappellino da 12 €, dopo uno sconto di 6 € sul carrello. Solo il cappellino è arrivato nel colore sbagliato. Allega la riga dell’ordine con il colore scelto e una foto di quello ricevuto. Specifica che vuoi tenere la giacca.",
+          "Se per il cappellino ti propongono 10,80 €, una possibile spiegazione è che gli siano stati attribuiti 1,20 € dello sconto. Controlla il riepilogo o chiedi all’assistenza di confermare il calcolo. Nel tuo ordine lo sconto potrebbe essere ripartito diversamente. Verifica a parte le eventuali spese di spedizione."
         ]
       },
       {
@@ -1309,9 +1323,9 @@
     "title": "Tracking Hacoo non aggiornato: verifica la pausa e il passo successivo",
     "description": "Se il tracking Hacoo è fermo, distingui etichetta, scansioni fisiche, cambio di corriere e stima superata prima di contattare l’assistenza.",
     "readTime": "8 min di lettura",
-    "updated": "10 ottobre 2026",
+    "updated": "5 novembre 2026",
     "publishedISO": "2026-10-10T00:00:00Z",
-    "updatedISO": "2026-10-10T00:00:00Z",
+    "updatedISO": "2026-11-05T00:00:00Z",
     "keywords": [
       "tracking Hacoo non aggiornato",
       "tracking Hacoo fermo",
@@ -1336,6 +1350,13 @@
         "paragraphs": [
           "Se il tracking Hacoo non si aggiorna, registra l’ultimo evento prima di interpretarlo. Apri l’ordine pertinente, identifica il pacco e salva stato preciso, orario visualizzato, località e corriere. Annota anche quando hai effettuato il controllo. Riaprire la stessa schermata senza conservare questi dettagli può far sembrare più lunga la pausa, senza aggiungere informazioni utili.",
           "Cerca innanzitutto una richiesta esplicita di azione, un tentativo di consegna fallito o uno stato di consegna completata. Questi casi richiedono risposte specifiche e non vanno trattati come una normale assenza di scansioni. Se la pagina mostra semplicemente nessun movimento nuovo, continua con le verifiche successive. Lo scopo è individuare la prova mancante e la domanda giusta, senza attribuire una causa al solo silenzio del sistema."
+        ]
+      },
+      {
+        "heading": "Arriva un avviso di ritiro ma il tracciamento sembra fermo",
+        "paragraphs": [
+          "Immagina che il tracciamento del tuo cappotto indichi ancora il centro di smistamento, mentre un SMS segnala un pacco disponibile in un armadietto di ritiro. Apri il tracciamento del corriere dai dettagli dell’ordine e confronta il numero di spedizione con quello del messaggio. Se aspetti più consegne, il solo CAP non basta a identificare il pacco.",
+          "Se il corriere conferma che il cappotto è nell’armadietto, chiedi dove trovare le istruzioni e fino a quando puoi ritirarlo. Se i numeri sono diversi, associa l’avviso alla spedizione che indica. Per il cappotto, cita l’ultima scansione presso il centro di smistamento. Eviterai un viaggio inutile senza perdere di vista la scadenza dell’altro pacco."
         ]
       },
       {
@@ -1519,5 +1540,248 @@
         ]
       }
     ]
+  },
+  "hacoo-parcel-returned-to-sender": {
+    "slug": "hacoo-parcel-returned-to-sender",
+    "title": "Pacco Hacoo restituito al mittente: come chiedere assistenza",
+    "description": "Il tracking Hacoo indica un rientro? Distingui giacenza e restituzione, verifica il collo giusto e chiedi a Hacoo se puoi ottenere rispedizione o rimborso.",
+    "sections": [
+      {
+        "heading": "Leggi l’ultima riga del tracciamento",
+        "paragraphs": [
+          "Se il tracking Hacoo indica «restituito al mittente», apri il dettaglio dell’ordine, copia il numero di spedizione e consulta il sito del corriere che ha gestito la consegna. Se anche lì compare il rientro, contatta Hacoo dall’app con il numero d’ordine e la data dell’ultimo movimento. Il centro assistenza spiega che il pacco può tornare al magazzino del trasportatore e che Hacoo valuta, secondo il caso, una nuova spedizione se disponibile oppure un rimborso.",
+          "Cambia invece la prima cosa da fare quando leggi «destinatario assente» o «disponibile per il ritiro». Prima di chiedere una rispedizione, controlla se puoi ancora ricevere quel collo. Apri l’avviso originale del corriere, cerca il luogo di ritiro e verifica la scadenza indicata. Agisci sulla voce più recente riferita al tuo numero di spedizione. Una notifica arrivata in ritardo sul telefono può descrivere un tentativo di ieri mentre il pacco oggi è già ritirabile."
+        ]
+      },
+      {
+        "heading": "Distingui il tentativo di consegna dal rientro",
+        "paragraphs": [
+          "Un tentativo di consegna fallito registra ciò che è successo all’indirizzo di destinazione. Leggi le righe successive per sapere se il corriere prevede un altro passaggio o lascia il pacco in un punto di ritiro. Le opzioni dipendono dal servizio effettivamente utilizzato. Se l’avviso riporta soltanto l’assenza del destinatario, chiedi al corriere quale sia il passaggio successivo comunicando la lettera di vettura. Inventare una nuova data di consegna rende più difficile organizzarsi.",
+          "La dicitura «in restituzione» indica un viaggio nella direzione opposta. «Restituito» può riferirsi a una scansione presso un deposito. Confronta la località e la data con la consegna tentata. Se il dettaglio mostra un viaggio di ritorno avviato, chiedi al trasportatore se sia ancora possibile intervenire su quella spedizione e avvisa Hacoo. Quando il collo ha già raggiunto il magazzino, è Hacoo a doverti indicare le opzioni per l’ordine."
+        ]
+      },
+      {
+        "heading": "Associa gli articoli al collo giusto",
+        "paragraphs": [
+          "Un ordine con più articoli può avere più numeri di spedizione. Immagina di aver comprato una felpa e una cintura. La cintura è arrivata e l’app mostra anche un evento di rientro. Controlla quale articolo risulta associato a ciascun numero prima di segnalare che è tornato indietro tutto. Se la felpa ha un numero diverso, salva il suo tracciamento. Se gli articoli non sono associati chiaramente ai colli, chiedi all’assistenza di controllare il collegamento.",
+          "La verifica vale anche al contrario. Se un unico pacco è stato consegnato e, aprendolo, hai trovato solo la cintura, la domanda riguarda il contenuto della confezione o una seconda spedizione ancora da individuare. Conserva l’etichetta del pacco ricevuto. È più preciso segnalare quale articolo manca e quale collo hai in mano che chiedere il rimborso di una spedizione che il corriere considera consegnata. Una foto leggibile dell’etichetta può aiutare l’assistenza ad associare il collo corretto."
+        ]
+      },
+      {
+        "heading": "Controlla l’indirizzo usato per questa consegna",
+        "paragraphs": [
+          "Apri il riepilogo dell’acquisto e confronta via, numero civico, CAP, comune ed eventuale interno con le informazioni necessarie al corriere. Guarda l’indirizzo registrato nell’ordine. Quello salvato oggi nel profilo potrebbe essere stato modificato dopo l’acquisto. Se noti una differenza, annotala con precisione. «Nel dettaglio dell’ordine manca l’interno 4» dà all’assistenza un’informazione verificabile. «Il corriere ha sbagliato» lascia aperte diverse spiegazioni.",
+          "Quando l’indirizzo appare completo, cerca invece eventuali avvisi di giacenza, tentativi di contatto o istruzioni per accedere al portone. Il centro assistenza cita tra le possibili circostanze un tentativo fallito, l’assenza del destinatario e la scadenza del periodo di ritiro. Per il tuo caso fa fede ciò che riescono a ricostruire corriere e assistenza. Se non hai ricevuto un avviso, comunicare questo fatto è più utile che scegliere per ipotesi una delle cause."
+        ]
+      },
+      {
+        "heading": "Prepara una richiesta che permetta di decidere",
+        "paragraphs": [
+          "Apri l’assistenza dal tuo account Hacoo e indica numero d’ordine, articolo interessato, numero di tracciamento, nome del corriere e ultimo movimento con data e località. Allega la porzione di schermata che collega la spedizione all’evento di ritorno. Se hai già interpellato il corriere, aggiungi il suo riscontro e l’eventuale riferimento della pratica. In una conversazione privata con l’assistenza puoi completare i dati richiesti per verificare l’indirizzo.",
+          "Un messaggio possibile è «Il secondo collo del mio ordine, contenente la felpa, risulta restituito il 4 novembre. Il corriere mi ha confermato che non è più al punto di ritiro. Potete verificare se è stato ricevuto al deposito e se si può rispedire al mio indirizzo corretto? Vorrei conoscere le eventuali spese prima di confermare». Sostituisci date e circostanze con quelle effettive. Se preferisci sapere se il caso è rimborsabile, chiedilo esplicitamente nello stesso messaggio."
+        ]
+      },
+      {
+        "heading": "Valuta una rispedizione con i dati aggiornati",
+        "paragraphs": [
+          "Se Hacoo propone una nuova spedizione, chiedi quali articoli comprenderà, a quale indirizzo e con quali eventuali spese. Verifica soprattutto il dettaglio che aveva reso difficile la prima consegna. Se nel frattempo ti sei trasferito o il punto di ritiro ha chiuso, segnalarlo prima della conferma evita di replicare il problema. Aspetta che l’assistenza confermi le istruzioni per il tuo ordine e conserva quella risposta insieme al numero della pratica.",
+          "Distingui la conferma di una rispedizione dal movimento effettivo del nuovo collo. Chiedi quale numero usare per seguirlo. Quando arriva un nuovo identificativo, annotalo accanto al precedente e controlla che si riferisca allo stesso articolo. Il vecchio tracking può continuare a mostrare il ritorno anche dopo l’avvio della nuova spedizione. Conservando entrambi, puoi indicare subito quale pacco stai aspettando se il corriere ti contatta per la consegna."
+        ]
+      },
+      {
+        "heading": "Se chiedi il rimborso, verifica a cosa si riferisce",
+        "paragraphs": [
+          "La risposta dipende anche dal motivo del rientro. La pagina di assistenza dedicata ai pacchi restituiti contempla la possibilità di rimborso secondo il caso. La politica su resi e rimborsi distingue situazioni come indirizzo errato, mancato ritiro o rifiuto del pacco e segnala possibili costi per la nuova spedizione. Chiedi quindi una risposta riferita al tuo ordine e al motivo registrato dal trasportatore. Il solo movimento di ritorno non permette di calcolare una cifra o una data di accredito.",
+          "Se hai ricevuto solo una parte dell’ordine, controlla che l’esito scritto si riferisca all’articolo mancante e all’importo indicato nei relativi dettagli. Se l’assistenza valuta ancora il caso, conserva il riferimento e chiedi quando e dove potrai verificarne l’esito. Se comunica un rimborso, prendi nota dell’importo, del mezzo di accredito indicato e della data di conferma. Queste informazioni servono anche se una parte dell’acquisto è stata pagata con un credito."
+        ]
+      },
+      {
+        "heading": "Usa la prova giusta per il passaggio successivo",
+        "paragraphs": [
+          "Per un pacco ancora in giacenza, il documento più utile è l’avviso con indirizzo e termine di ritiro. Per un pacco che sta già tornando, è l’ultimo evento associato alla lettera di vettura. Per un ritorno completato, è il riscontro di Hacoo sull’esito richiesto. Prima di chiudere la richiesta, assicurati di avere almeno uno di questi elementi per il collo interessato. Saprai così se devi recarti in un punto di ritiro, attendere una nuova spedizione o verificare l’accredito concordato."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "label": "Hacoo · Pacco restituito al mittente",
+        "url": "https://act.hacoo.app/eu/help-center/shipping/6"
+      },
+      {
+        "label": "Hacoo · Politica su resi e rimborsi",
+        "url": "https://act.hacoo.app/refund-policy"
+      },
+      {
+        "label": "Hacoo · Contatti e assistenza in app",
+        "url": "https://web.hacoo.app/en-US/pages/contact-us"
+      }
+    ],
+    "readTime": "6 min di lettura",
+    "updated": "5 novembre 2026",
+    "updatedISO": "2026-11-05T00:00:00Z",
+    "publishedISO": "2026-11-05T00:00:00Z",
+    "sourceNote": "Confronta l’ultimo evento del corriere con l’ordine. Il passo successivo dipende dal motivo del rientro e dalle istruzioni ricevute per quel pacco."
+  },
+  "cancel-hacoo-order-before-shipping": {
+    "slug": "cancel-hacoo-order-before-shipping",
+    "title": "Come annullare un ordine Hacoo prima della spedizione",
+    "description": "Scopri dove annullare un ordine Hacoo ancora da spedire, come correggere indirizzo o taglia e cosa verificare se il pulsante di annullamento manca.",
+    "sections": [
+      {
+        "heading": "Cerca l’acquisto nei tuoi ordini Hacoo",
+        "paragraphs": [
+          "Per annullare un ordine Hacoo prima della spedizione, apri l’app con l’account usato per acquistare, entra nell’elenco dei tuoi ordini e individua quello corretto. La guida ufficiale indica il comando «Cancel» per gli ordini ancora da spedire. Nella tua lingua può essere tradotto. Apri il dettaglio e controlla numero d’ordine, articoli e stato prima di toccarlo. Se la spedizione risulta già partita, chiedi all’assistenza quale procedura si applichi adesso.",
+          "Agisci appena ti accorgi dell’errore. Il criterio descritto da Hacoo è lo stato della spedizione. Il fatto di avere pagato pochi minuti fa, di avere appena ricevuto un’e-mail o di non vedere ancora il nome del corriere non basta per sapere se l’annullamento è disponibile. Apri la scheda dell’ordine nell’app, leggi lo stato riportato in quel momento e verifica quale operazione ti offre. Una schermata salvata ieri può essere già superata."
+        ]
+      },
+      {
+        "heading": "Controlla quale ordine vuoi annullare",
+        "paragraphs": [
+          "Quando due acquisti si somigliano, confronta il numero d’ordine della conferma con il dettaglio in app. Controlla colore, taglia, quantità, importo e data. Poniamo che tu abbia acquistato la stessa felpa lunedì e martedì, prima in taglia M e poi in L. Se vuoi mantenere la L, non basta riconoscere la fotografia. Cerca la variante nella scheda, annota il numero della M e avvia la richiesta solo dopo aver confrontato entrambi gli acquisti.",
+          "La stessa attenzione serve per un ordine con più articoli. Se vuoi eliminare un solo pezzo, leggi cosa comprende la schermata di annullamento. La breve guida Hacoo parla dell’ordine e non specifica una rimozione parziale disponibile in ogni situazione. Controlla quali righe compaiono nella conferma. Se il comando riguarda l’intero acquisto e vuoi conservare gli altri articoli, fermati e chiedi all’assistenza se può intervenire sulla sola riga interessata."
+        ]
+      },
+      {
+        "heading": "Se hai sbagliato indirizzo, verifica prima la modifica",
+        "paragraphs": [
+          "Per gli ordini ancora da spedire, la pagina ufficiale dedicata alle modifiche indica che l’indirizzo si può correggere dal dettaglio dell’ordine. Se il tuo problema è un civico mancante, prova prima questo percorso. Confronta anche CAP, comune e interno. Salva la correzione quando l’interfaccia la consente, torna all’elenco degli acquisti, riapri lo stesso ordine e verifica che ora riporti i dati corretti. Così puoi evitare di dover acquistare una seconda volta.",
+          "Cambiare un indirizzo nella rubrica del profilo serve per la gestione dei recapiti. Per sapere dove andrà il pacco che hai già pagato, leggi l’indirizzo che compare proprio su quell’acquisto. Se il dettaglio è bloccato o mostra ancora la via precedente, invia all’assistenza il numero d’ordine e indica il campo da correggere. A spedizione avviata Hacoo rimanda al corriere per verificare eventuali possibilità di intervento dopo la presa in carico."
+        ]
+      },
+      {
+        "heading": "Per taglia o modello errati, separa i due acquisti",
+        "paragraphs": [
+          "Secondo la guida Hacoo, una volta concluso l’ordine non puoi sostituire direttamente taglia o modello. Se l’ordine deve ancora partire, il percorso indicato è annullarlo e acquistare di nuovo nella variante giusta. Prima di procedere, puoi aprire la scheda attuale e verificare se la taglia desiderata sia ancora selezionabile. Controlla quale misura corrisponde alla tabella di quella specifica inserzione. Il contenuto del carrello e la disponibilità possono essere cambiati rispetto al primo acquisto.",
+          "Tieni distinti il vecchio ordine e la nuova scelta. Per esempio, se la scarpa nella taglia desiderata ricompare soltanto in un’altra inserzione, controlla nuovamente colore, misure e costo complessivo. Verifica l’eventuale annullamento del primo ordine prima di confermare il secondo, soprattutto se non puoi sostenere due pagamenti contemporanei. Un nuovo ordine non eredita automaticamente prezzo, spedizione o vantaggi promozionali del precedente. Sono gli importi visibili nel nuovo riepilogo a permetterti di decidere."
+        ]
+      },
+      {
+        "heading": "Conferma l’operazione e verifica la risposta dell’app",
+        "paragraphs": [
+          "Nel riepilogo dell’annullamento leggi il numero dell’acquisto e l’estensione dell’operazione un’ultima volta. Se compare una scelta del motivo, indica quello effettivo. Dopo la conferma ritorna al dettaglio dello stesso ordine e annota lo stato risultante. Conserva l’eventuale messaggio dell’app con la data. Un messaggio che segnala la ricezione della richiesta indica un passaggio diverso da uno stato finale di ordine annullato. Usa le parole effettive della schermata quando scrivi all’assistenza.",
+          "Se l’app si chiude subito dopo il tocco, riaprila e controlla l’acquisto prima di ripetere la procedura. Potresti trovare l’operazione già registrata. Se invece lo stato mostra ancora l’ordine in preparazione e non compare una conferma, salva l’ultima schermata e comunica l’ora del tentativo. Se arriva anche un’e-mail, confrontane il numero d’ordine con quello dell’app. Questo dettaglio evita equivoci frequenti quando in famiglia sono stati effettuati più acquisti lo stesso giorno."
+        ]
+      },
+      {
+        "heading": "Se il pulsante manca o l’acquisto risulta spedito",
+        "paragraphs": [
+          "Controlla di essere nell’account corretto e nell’ordine pagato, poi riapri il dettaglio per leggere lo stato aggiornato. Se il pulsante manca anche se la scheda sembra indicare la preparazione, contatta il servizio clienti da Hacoo. Un messaggio breve può bastare: «Ho acquistato la variante blu invece della nera. Alle 10.15 il mio ordine risultava ancora in preparazione, ma non trovavo l’opzione di annullamento. Potete verificare se si può ancora fermare?». Allega il riferimento dell’ordine e attendi una risposta sul suo stato.",
+          "Per un collo già partito, le pagine ufficiali usano indicazioni diverse sul rifiuto della consegna. La FAQ breve ne parla come possibilità, mentre la politica dettagliata avverte che un rifiuto o un mancato ritiro possono impedire la gestione del reso e incidere sul rimborso. Chiedi a Hacoo istruzioni scritte riferite al tuo ordine prima di decidere di rifiutare il pacco o lasciarlo in giacenza. Se lo hai già ricevuto, descrivi questa nuova situazione quando apri la pratica."
+        ]
+      },
+      {
+        "heading": "Segui separatamente annullamento e accredito",
+        "paragraphs": [
+          "Conserva il riepilogo di quanto avevi effettivamente pagato, inclusi eventuali sconti o crediti. Se Hacoo conferma un rimborso, controlla l’importo e il mezzo di accredito indicati nella risposta. Nel caso di pagamenti ripartiti tra più mezzi, chiedi come verificare ciascuna parte. Confronta il rimborso con il dettaglio del pagamento interessato, senza usare come riferimento il prezzo di listino che compariva prima di applicare uno sconto.",
+          "La conferma di annullamento riguarda l’ordine. Per verificare il movimento economico servono la conferma del rimborso e il riscontro sul mezzo indicato. Annota quando è stata comunicata l’operazione. Se viene fornito un riferimento del rimborso, conservalo. Nel caso in cui manchi ancora l’accredito dopo il periodo comunicato per il tuo caso, riapri la stessa conversazione con numero d’ordine, importo atteso e data della conferma. Non occorre trasmettere il numero completo della carta."
+        ]
+      },
+      {
+        "heading": "Prima di ordinare di nuovo",
+        "paragraphs": [
+          "Riparti dalla scheda del prodotto che vuoi effettivamente ricevere. Verifica variante, quantità e indirizzo, poi leggi l’importo finale nella valuta del tuo checkout. Se un’offerta legata al primo acquisto non compare più, chiedi conferma al servizio clienti prima di inserirla nel tuo calcolo. Non dare per scontato che il buono torni disponibile dopo l’annullamento. Una volta effettuato il nuovo ordine, conserva il suo riferimento separatamente dal precedente: uno servirà per seguire la spedizione, l’altro per controllare la pratica chiusa."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "label": "Hacoo · Annullamento degli ordini",
+        "url": "https://act.hacoo.app/eu/help-center/order/2"
+      },
+      {
+        "label": "Hacoo · Modifiche a indirizzo, taglia e modello",
+        "url": "https://act.hacoo.app/eu/help-center/order/3"
+      },
+      {
+        "label": "Hacoo · Politica su resi e rimborsi",
+        "url": "https://act.hacoo.app/refund-policy"
+      }
+    ],
+    "readTime": "6 min di lettura",
+    "updated": "5 novembre 2026",
+    "updatedISO": "2026-11-05T00:00:00Z",
+    "publishedISO": "2026-11-05T00:00:00Z",
+    "sourceNote": "L’assistenza Hacoo descrive come annullare prima della spedizione. Se il pacco è già in viaggio, chiedi istruzioni scritte per il tuo ordine."
+  },
+  "where-to-enter-hacoo-discount-code": {
+    "slug": "where-to-enter-hacoo-discount-code",
+    "title": "Dove inserire il codice sconto Hacoo e verificare il totale",
+    "description": "Trova il coupon nel riepilogo Hacoo, confronta il totale prima e dopo lo sconto e scopri cosa controllare se il campo manca o il codice viene rifiutato.",
+    "sections": [
+      {
+        "heading": "Cerca il coupon nel riepilogo prima di pagare",
+        "paragraphs": [
+          "Per usare un codice sconto Hacoo, apri l’acquisto nell’app, aggiungi il prodotto al carrello e vai al riepilogo che precede il pagamento. Cerca la voce relativa a coupon o promozioni. Se compare un campo, incolla il codice e applicalo. Se vedi una lista di buoni, seleziona quello disponibile per l’ordine. Controlla subito la riduzione e il totale da pagare. Conferma l’acquisto soltanto quando la cifra mostrata ti va bene.",
+          "La guida ufficiale all’acquisto indica di accedere all’app, scegliere gli articoli, aggiungerli al carrello e procedere al pagamento. Una guida italiana indipendente colloca l’inserimento del coupon nel checkout. Le due fonti permettono di capire dove cercare, ma la guida ufficiale non specifica un pulsante identico per tutte le versioni dell’app. Leggi quindi le voci disponibili nel tuo riepilogo. Se sei ancora nella pagina del sito che ti ha suggerito un prodotto, devi prima raggiungere il carrello dell’esercente indicato dall’offerta."
+        ]
+      },
+      {
+        "heading": "Prima di copiare il codice, leggi a chi si rivolge",
+        "paragraphs": [
+          "Apri il messaggio o la pagina originale della promozione. Cerca la data, il paese, il tipo di account ammesso, gli articoli interessati e la soglia minima, se indicata. Una dicitura come «primo ordine» richiede particolare attenzione se hai già concluso un acquisto, anche nel caso in cui tu l’abbia annullato. Come viene valutata questa situazione dipende dalle condizioni di quella promozione. Se il dubbio influenza la scelta di comprare, chiedi chiarimenti prima di confermare.",
+          "Confronta il testo della promozione con l’acquisto che stai preparando. Un post può riferirsi a una particolare categoria o invitare a passare da un collegamento dedicato. Se mostra soltanto il codice senza alcun dettaglio, conserva il riferimento per ritrovarlo, poi verifica nell’app cosa succede al tuo carrello. Valuta la spesa totale che stai per sostenere. Una percentuale scritta nella didascalia, soprattutto se la pubblicazione è vecchia, da sola non permette di calcolarla."
+        ]
+      },
+      {
+        "heading": "Registra il totale prima e dopo l’applicazione",
+        "paragraphs": [
+          "Prima di provare il codice, apri il dettaglio degli importi e annota prezzo dei prodotti, spedizione, eventuali riduzioni già visibili e totale. Mantieni la stessa quantità, la stessa valuta, lo stesso indirizzo e lo stesso metodo di spedizione durante il confronto. Applica il codice o seleziona il buono e rileggi le medesime righe. Verificare due numeri riferiti allo stesso carrello è più affidabile che confrontare l’importo finale con il prezzo visto giorni fa nel post di un creator.",
+          "Ecco un esempio ipotetico con cifre semplici. Hai articoli per 60 euro e 5 euro di spedizione. Prima della prova il totale è 65 euro. Dopo l’applicazione compare una riduzione di 6 euro e il totale diventa 59 euro: il risparmio effettivo per quel carrello è 6 euro. Non applicare la percentuale anche alla spedizione se le condizioni non la includono. Se mentre provi il coupon cambi destinazione o metodo di consegna, ricomincia il confronto dai nuovi importi di partenza."
+        ]
+      },
+      {
+        "heading": "Il campo per il codice non compare",
+        "paragraphs": [
+          "Controlla innanzitutto in quale schermata ti trovi. Una scheda prodotto può mostrare un prezzo e un invito a comprare senza offrire strumenti per la promozione. Entra nel carrello del tuo account, seleziona gli articoli e arriva al riepilogo dell’acquisto. Se c’è una sezione espandibile con le riduzioni o i buoni disponibili, leggila. In presenza di una lista di coupon già assegnati, verifica se devi sceglierne uno anziché digitare un codice.",
+          "Se il tuo riepilogo continua a non mostrare alcuna opzione, confrontalo con il percorso indicato nella promozione. Il codice potrebbe riferirsi a un altro esercente, a un diverso paese o a una campagna richiamata soltanto dalla pagina che l’ha diffuso. Prendi nota della schermata che raggiungi. Puoi chiedere all’assistenza «Per questo ordine vedo il riepilogo degli importi e il tasto di pagamento. Dove posso verificare se la mia offerta è utilizzabile?». Aspetta di chiarire il punto se il prezzo pieno non ti interessa."
+        ]
+      },
+      {
+        "heading": "Il codice viene rifiutato, oppure il totale resta uguale",
+        "paragraphs": [
+          "Quando compare un messaggio, rileggilo per distinguere un codice irriconoscibile da una condizione non soddisfatta. Incolla la sequenza esatta rimuovendo eventuali spazi esterni, virgolette o punteggiatura copiata dal post. Se l’avviso cita una soglia minima, confrontala con la base di spesa prevista dalle condizioni. Per esempio, qualora la soglia riguardi i soli articoli ammessi, nel calcolo potrebbero rientrare soltanto alcune righe del carrello. Il totale comprensivo di spedizione da solo non risolve il dubbio.",
+          "Può anche succedere che il riepilogo segnali l’applicazione di un buono senza abbassare il totale quanto ti aspettavi. Confronta ogni voce con i numeri iniziali. Una promozione disponibile potrebbe sostituire una riduzione precedente. In un esempio ipotetico, se il primo sconto valeva 4 euro e quello appena scelto vale 6 euro, il vantaggio aggiuntivo è di 2 euro. Leggi quali promozioni sono rimaste nel riepilogo prima di decidere se conservare quella nuova o tornare alla selezione precedente."
+        ]
+      },
+      {
+        "heading": "Valuta quanto spendi per raggiungere la soglia",
+        "paragraphs": [
+          "Aggiungere un articolo solo per ottenere uno sconto può aumentare la spesa complessiva. Supponi che un acquisto costi 38 euro e che un prodotto aggiuntivo da 8 euro permetta un risparmio di 5 euro. A parità di altre voci spenderesti 41 euro invece di 38. Se desideravi comunque il secondo prodotto, valuta se questa combinazione ti convenga. Se ti interessava soltanto il primo, il totale minore resta quello del carrello iniziale.",
+          "Anche la rimozione di un articolo può cambiare l’applicazione del coupon. Dopo aver modificato quantità, colore o variante, torna al riepilogo e controlla l’importo finale. Una combinazione che ieri mostrava uno sconto può avere oggi un prezzo o una disponibilità diversi. Fai l’ultimo confronto sulla composizione del carrello che realmente vuoi acquistare e sulla valuta che compare subito prima del pagamento. Gli esempi di questa guida servono a leggere i risultati, senza attribuire nuove condizioni alle offerte Hacoo."
+        ]
+      },
+      {
+        "heading": "Distingui il codice promozionale dal cashback dopo la consegna",
+        "paragraphs": [
+          "Hacoo descrive separatamente un cashback legato alle recensioni con foto reali dopo la consegna. Secondo la sua guida, l’importo applicabile compare nella pagina della recensione e l’eventuale credito si consulta nell’area dedicata del portafoglio. Se un messaggio parla di foto da caricare dopo aver ricevuto la merce, stai valutando un beneficio successivo. Non sottrarre un credito futuro dalla cifra che il checkout ti chiede oggi.",
+          "Se disponi già di un saldo, leggi come viene conteggiato nel riepilogo. Distinguere il valore del buono dall’eventuale utilizzo di un credito aiuta a capire sia quanto risparmi sia quale somma verrà addebitata sul mezzo di pagamento scelto. Conserva la conferma dell’ordine se vuoi ricostruire gli importi in seguito. Se hai già pagato e ritieni che il totale non corrisponda al riepilogo, invia all’assistenza quel confronto e il riferimento dell’ordine, senza presumere che possa applicare il codice dopo l’acquisto."
+        ]
+      },
+      {
+        "heading": "Cosa conservare quando chiedi assistenza",
+        "paragraphs": [
+          "Salva il codice come testo, le condizioni visualizzate, il messaggio ricevuto e una schermata ritagliata con le voci dei prezzi. Indica il paese dell’ordine, la valuta e il passaggio esatto in cui il risultato cambia. Una domanda come «Il buono compare come selezionato ma il totale resta a 59 euro, quale voce dovrebbe cambiare?» offre più elementi di una generica segnalazione sullo sconto. Nascondi recapiti, dati di pagamento e altre informazioni estranee prima di allegare immagini."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "label": "Hacoo · Come effettuare un ordine",
+        "url": "https://act.hacoo.app/act/sara/helpcenter/order1"
+      },
+      {
+        "label": "Hacoo · Come funziona il cashback sulle recensioni",
+        "url": "https://act.hacoo.app/about-order-review-cashback"
+      },
+      {
+        "label": "Hacoo Links · Guida italiana indipendente all’acquisto",
+        "url": "https://hacoolinks.com/it/blog/901-come-acquistare-su-hacoo-passo-dopo-passo"
+      }
+    ],
+    "readTime": "6 min di lettura",
+    "updated": "5 novembre 2026",
+    "updatedISO": "2026-11-05T00:00:00Z",
+    "publishedISO": "2026-11-05T00:00:00Z",
+    "sourceNote": "L’assistenza ufficiale descrive l’ordine nell’app. La guida indipendente illustra il passaggio del coupon. Verifica le condizioni e il totale da pagare nel carrello."
   }
 }

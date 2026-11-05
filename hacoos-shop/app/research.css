@@ -61,3 +61,16 @@
  .function-bar a{overflow-wrap:anywhere}
 }
 .catalogue-note{margin:12px 0 0;font-size:12px;line-height:1.5;max-width:750px;opacity:.85}
+
+.home-routes,.sheet-categories{display:flex;flex-wrap:wrap;gap:8px 18px}
+.home-routes{margin:0 0 20px}
+.home-routes a,.sheet-categories a,.faq-list a{font-weight:650;text-decoration:underline;text-underline-offset:3px}
+.sheet-finds,.faq-list{max-width:1180px;margin:32px auto}
+.sheet-categories a{padding:6px 0}
+.links-reviewed{margin:14px 0;color:var(--wine);font-size:.875rem}
+.sheet-finds .route-products{margin-top:10px}
+.faq-list details{border-bottom:1px solid var(--line);padding:15px 0}
+.faq-list summary{cursor:pointer;font-weight:700;line-height:1.45}
+.faq-list p{max-width:72ch;margin:12px 0;line-height:1.6}
+.faq-list a{display:inline-block;max-width:100%;overflow-wrap:anywhere}
+@media(max-width:620px){.home-routes,.sheet-categories{font-size:13px}.sheet-finds,.faq-list{margin:20px auto}.faq-list summary{font-size:15px}.faq-list p,.faq-list a{font-size:14px}.sheet-finds .route-products h3{font-size:16px;line-height:1.2}}

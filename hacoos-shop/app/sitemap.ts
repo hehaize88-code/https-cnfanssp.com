@@ -6,7 +6,7 @@ export const dynamic = "force-static";
 const origin = 'https://hacoos.shop';
 export default function sitemap(): MetadataRoute.Sitemap {
   const routes = languages.flatMap(lang => publicPages.map(page => ({
-    url: origin + routePath(lang, page), lastModified: new Date('2026-10-10'),
+    url: origin + routePath(lang, page), lastModified: new Date(['home','spreadsheet','faq','articles','shipping','guide'].includes(page) ? '2026-11-05' : '2026-10-10'),
     alternates: { languages: { ...Object.fromEntries(languages.map(code => [code, origin + routePath(code, page)])), 'x-default': origin + routePath('en', page) } },
   })));
   const articles = languages.flatMap(lang => articleSlugs.map(slug => ({

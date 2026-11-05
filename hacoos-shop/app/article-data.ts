@@ -1,6 +1,9 @@
 import english from "../content/articles/en.json";
 
 export const articleSlugs = [
+  "hacoo-parcel-returned-to-sender",
+  "cancel-hacoo-order-before-shipping",
+  "where-to-enter-hacoo-discount-code",
   "hacoo-links-not-working",
   "hacoo-tracking-not-updating",
   "hacoo-delivered-but-not-received",

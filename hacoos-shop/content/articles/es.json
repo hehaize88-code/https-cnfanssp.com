@@ -711,9 +711,9 @@
     ]
   },
   "find-products-on-hacoo": {
-    "updated": "10 de octubre de 2026",
+    "updated": "5 de noviembre de 2026",
     "publishedISO": "2026-10-10T00:00:00Z",
-    "updatedISO": "2026-10-10T00:00:00Z",
+    "updatedISO": "2026-11-05T00:00:00Z",
     "slug": "find-products-on-hacoo",
     "title": "Cómo encontrar productos en Hacoo cuando la búsqueda no da resultados",
     "description": "Encuentra productos Hacoo con palabras descriptivas, códigos guardados y categorías. Aprende a comprobar imágenes y enlaces antes de seleccionar una alternativa.",
@@ -737,6 +737,13 @@
         "heading": "Define el producto antes de escoger palabras",
         "paragraphs": [
           "Una petición vaga dificulta encontrar lo que necesitas. Sustituye «mejores productos de Hacoo» por unos requisitos: categoría, forma visible, familia de color, uso y una medida o función imprescindible. «Zapatilla baja, paneles lisos, color oscuro neutro e indicaciones de longitud del pie» ofrece pistas observables sin depender de expresiones de marca. Escribe los requisitos antes de abrir resultados para que las fotos atractivas pero irrelevantes no cambien la búsqueda. Si una característica no puede comprobarse en la página, déjala como desconocida; una imagen no la demuestra por defecto. El objetivo es reducir incertidumbre con un criterio que siga siendo útil aunque cambien título, idioma o vocabulario."
+        ]
+      },
+      {
+        "heading": "Cómo buscar el bolso bandolera de una captura",
+        "paragraphs": [
+          "Tienes la foto de una bandolera negra. En el recorte se distinguen dos detalles: una cremallera vertical en la parte delantera y una correa con mosquetones. Prueba «bandolera cremallera delantera» en el buscador que estés usando. Si salen demasiados modelos, añade «correa desmontable». Puedes seleccionar el negro después si las fichas ofrecen varios colores.",
+          "Abre dos fichas que se parezcan. La primera tiene cremallera delantera, pero la correa está cosida. La segunda muestra dos mosquetones, aunque la variante negra tiene el bolsillo horizontal. Ninguna coincide en todo. Guarda la segunda como alternativa solo si la orientación del bolsillo te da igual. Comprueba siempre las fotos de la variante que piensas elegir."
         ]
       },
       {
@@ -905,9 +912,9 @@
     ]
   },
   "hacoo-returns-refund-timeline": {
-    "updated": "10 de octubre de 2026",
+    "updated": "5 de noviembre de 2026",
     "publishedISO": "2026-10-10T00:00:00Z",
-    "updatedISO": "2026-10-10T00:00:00Z",
+    "updatedISO": "2026-11-05T00:00:00Z",
     "slug": "hacoo-returns-refund-timeline",
     "title": "Devoluciones y reembolsos Hacoo: plazo de 15 días, revisión y pago",
     "description": "Prepara una devolución Hacoo con pruebas y el plazo aplicable. Distingue revisión de la solicitud, instrucciones de devolución y abono del reembolso.",
@@ -935,6 +942,13 @@
         "heading": "Cuenta desde la recepción del artículo afectado",
         "paragraphs": [
           "La política oficial contempla devoluciones y reembolsos para la mayoría de los productos dentro de los 15 días siguientes a su recepción, con requisitos y excepciones. La información de envíos también menciona asistencia posventa en ese plazo. Inspecciona pronto; el intervalo no garantiza que toda solicitud se apruebe. Guarda fecha de entrega, referencia del pedido, artículo y variante exacta. Si recibes varios paquetes, identifica cuál contiene el producto afectado y no apliques automáticamente a todo la primera entrega. Consulta las instrucciones del pedido: condiciones, exclusiones y pasos pueden cambiar. Una guía prepara el caso, pero no amplía plazos ni decide elegibilidad. Empieza cuando detectes una incidencia relevante, sin esperar al último día."
+        ]
+      },
+      {
+        "heading": "Cómo comprobar un reembolso parcial cuando usaste un descuento",
+        "paragraphs": [
+          "Supón que pagaste 54 € por una chaqueta de 48 € y una gorra de 12 €, tras un descuento de 6 € sobre la cesta. Solo la gorra llegó en otro color. Adjunta la línea del pedido que muestra el color elegido y una foto de la gorra recibida. Solicita la revisión de esa prenda y deja claro que te quedas con la chaqueta.",
+          "Si el importe propuesto es de 10,80 €, una explicación posible es que se hayan asignado 1,20 € del descuento a la gorra. Comprueba el desglose o pide a atención al cliente que confirme el cálculo. Tu pedido puede repartir el descuento de otra forma. Si también figuran gastos de envío, revísalos por separado."
         ]
       },
       {
@@ -1310,9 +1324,9 @@
     "title": "El seguimiento de Hacoo no se actualiza: qué comprobar y cuándo consultar",
     "description": "Comprueba por qué el seguimiento Hacoo parece detenido: etiqueta, registros físicos, cambio de transportista y estimación del pedido antes de consultar a soporte.",
     "readTime": "7 min de lectura",
-    "updated": "10 de octubre de 2026",
+    "updated": "5 de noviembre de 2026",
     "publishedISO": "2026-10-10T00:00:00Z",
-    "updatedISO": "2026-10-10T00:00:00Z",
+    "updatedISO": "2026-11-05T00:00:00Z",
     "keywords": [
       "seguimiento Hacoo no se actualiza",
       "seguimiento Hacoo detenido",
@@ -1337,6 +1351,13 @@
         "paragraphs": [
           "Si el seguimiento de Hacoo no se actualiza, registra el último evento antes de decidir qué significa. Abre el pedido correspondiente, identifica el paquete y guarda estado exacto, fecha y hora del evento, ubicación y transportista. Anota también cuándo lo consultaste. Reabrir la pantalla sin estos datos puede hacer que la espera parezca más larga sin añadir información útil.",
           "Busca primero una solicitud que requiera actuar, un intento de entrega fallido o un estado de entrega completada. Necesitan su propia respuesta y no deben tratarse como una pausa ordinaria. Si simplemente no aparecen nuevos movimientos, continúa con las comprobaciones siguientes. El objetivo es identificar qué prueba falta y qué preguntar, sin deducir una causa del silencio."
+        ]
+      },
+      {
+        "heading": "Llega un aviso de recogida y el seguimiento sigue en el almacén",
+        "paragraphs": [
+          "Imagina que el seguimiento de un abrigo sigue mostrando el centro de clasificación, pero recibes un SMS que anuncia la llegada de un paquete a una taquilla. Abre el seguimiento del transportista desde el pedido y compara su referencia con la del mensaje. Si esperas otra entrega en la misma dirección, el código postal por sí solo no identifica el paquete.",
+          "Si el transportista confirma que el abrigo está en la taquilla, pregunta dónde consultar las instrucciones de recogida y hasta cuándo puedes retirarlo. Si las referencias son distintas, guarda el aviso con el envío al que corresponde. Al preguntar por el abrigo, indica el último registro del centro de clasificación. Así podrás atender ambos envíos sin desplazarte a la taquilla equivocada."
         ]
       },
       {
@@ -1520,5 +1541,261 @@
         ]
       }
     ]
+  },
+  "hacoo-parcel-returned-to-sender": {
+    "slug": "hacoo-parcel-returned-to-sender",
+    "title": "Paquete Hacoo devuelto al remitente: ¿qué hago ahora?",
+    "description": "Distingue un intento fallido de un paquete en devolución, comprueba si aún puedes recogerlo y prepara la consulta sobre reenvío o reembolso.",
+    "sections": [
+      {
+        "heading": "Cuando el seguimiento dice «devuelto al remitente»",
+        "paragraphs": [
+          "Abre el pedido de Hacoo y copia el número de seguimiento del paquete afectado. Consulta ese mismo número con el transportista que registró el último movimiento. Si indica que el paquete ya va de vuelta, contacta con Hacoo desde el pedido o desde el chat de la aplicación. Su centro de ayuda explica que, según el caso, puede solicitar un reenvío si está disponible o tramitar un reembolso. El primer dato que necesitas es si todavía puedes recoger el paquete o el retorno ya está en marcha.",
+          "Imagina que compraste una sudadera y unas zapatillas. Llegan las zapatillas y al día siguiente recibes un aviso de devolución. Mira qué artículo figura bajo el número del aviso antes de comunicar que se ha devuelto todo el pedido. Puede haber varios envíos asociados a una misma compra. Si la aplicación no indica qué contenía cada paquete, describe lo que llegó y facilita los dos identificadores que sí puedes verificar.",
+          "Si la única señal es un mensaje de texto y el seguimiento oficial del mismo número muestra otra cosa, consulta directamente al operador. Un enlace recibido por SMS no acredita por sí solo que el paquete se haya devuelto."
+        ]
+      },
+      {
+        "heading": "Intento fallido, pendiente de recogida o en devolución",
+        "paragraphs": [
+          "Un intento de entrega fallido indica que la entrega no se completó en ese momento. Lee el movimiento siguiente y las instrucciones que lo acompañan. El repartidor puede haber dejado un aviso con un punto de recogida o una nueva fecha. Si el historial solo muestra la ausencia del destinatario, pregunta al transportista si puedes elegir otra entrega o retirar el paquete. Dar por hecho que ya ha salido de vuelta puede hacerte perder una recogida todavía disponible.",
+          "Si aparece un comercio o una oficina de recogida, comprueba su dirección completa, el horario y la fecha límite indicada para tu envío. Una oficina con el mismo nombre en otro barrio no podrá confirmarte la entrega. Si la fecha ya pasó, llama antes de desplazarte. Cuando el historial muestra una salida posterior del punto hacia un almacén, pide que te confirmen si aún tienen físicamente el paquete. Una notificación antigua puede seguir visible después de que haya salido."
+        ]
+      },
+      {
+        "heading": "Cómo interpretar el retorno sin confundir el destino",
+        "paragraphs": [
+          "Hacoo cita entre los motivos posibles una entrega fallida, la ausencia del destinatario y el vencimiento del plazo para recoger. En su explicación, el paquete vuelve al almacén del operador logístico. La palabra «remitente» de la traducción puede llevar a pensar que el vendedor ya lo recibió. Para saber hasta dónde llegó, busca un evento fechado que confirme la recepción en destino. La salida de tu ciudad y la llegada al almacén son movimientos distintos.",
+          "Elige el registro más reciente por fecha y hora del evento, especialmente si la aplicación y el transportista muestran el historial en distinto orden. Anota el texto original si una versión dice «devolución solicitada» y otra indica «en tránsito». Pregunta cuál es el último movimiento físico y qué día tuvo lugar. Así evitas pedir a la oficina una nueva entrega cuando el paquete ya entró en el circuito de retorno.",
+          "Si hay dos números de seguimiento para el mismo trayecto, apunta qué operador emitió cada uno. Algunas actualizaciones se ven antes en el registro local. Cuando hables con atención al cliente, pregunta cuál conviene usar para seguir la vuelta y conserva el segundo como referencia."
+        ]
+      },
+      {
+        "heading": "Qué hacer si todavía puedes recogerlo",
+        "paragraphs": [
+          "Confirma con el punto de recogida qué identificación o código exige para ese paquete y si otra persona puede recogerlo en tu lugar. Algunas instrucciones vienen en el aviso del operador. Antes de acudir, verifica la dirección en su web o con el teléfono de la oficina. Si te faltó el aviso porque tu número estaba mal escrito, proporciona el número de seguimiento por el canal oficial y pregunta cómo acreditar que eres la persona destinataria.",
+          "Piensa en una entrega prevista para el viernes. El sábado ves un aviso que pone «destinatario ausente» y el lunes aparece «disponible en punto de recogida». En ese caso atiende al movimiento del lunes. Si el martes se añade «salida por devolución», vuelve a consultar la disponibilidad antes de desplazarte. Es el cambio de estado lo que determina el siguiente paso, incluso si el primer correo sigue invitándote a recoger."
+        ]
+      },
+      {
+        "heading": "Si el transportista atribuye la devolución al destinatario",
+        "paragraphs": [
+          "Una incidencia del transportista y una devolución por decisión del comprador pueden tener consecuencias diferentes. La ayuda de cancelaciones de Hacoo menciona la posibilidad de solicitar el abono cuando un paquete rechazado vuelva al remitente. En cambio, su política de reembolso advierte de que rechazar la entrega o dejar pasar el plazo de recogida puede impedir tramitar la devolución. Para ciertos retornos que atribuye al destinatario, como una dirección equivocada, prevé gastos de reenvío y excluye el reembolso.",
+          "Si la etiqueta de seguimiento atribuye el fallo a una ausencia y tienes pruebas de que el transportista intentó la entrega en otro domicilio, conserva el aviso, la dirección que figura en el pedido y la respuesta del operador. Pide a Hacoo que confirme por escrito qué motivo consta y qué solución ofrece para ese paquete. Si aún puedes recogerlo, conserva esa posibilidad mientras consultas. Rechazarlo o dejar que caduque el plazo no es una forma fiable de recuperar el dinero."
+        ]
+      },
+      {
+        "heading": "Qué enviar a Hacoo cuando ya va de vuelta",
+        "paragraphs": [
+          "Reúne el número de pedido, el seguimiento del paquete afectado, los artículos que faltan y el último movimiento con su fecha. Añade la respuesta del transportista si confirmó que ya no acepta una recogida. En la conversación privada de asistencia suele bastar con una captura recortada del historial y una explicación breve. Oculta los datos personales de terceros, las direcciones de otros envíos y cualquier código de recogida antes de compartir capturas fuera de ese canal.",
+          "Puedes escribir: «Pedido [referencia], paquete [seguimiento]. El [fecha] el transportista registró la salida por devolución y el punto de recogida confirma que ya no lo tiene. En ese paquete esperaba [artículo]. ¿Es posible reenviarlo a mi dirección correcta? Si no se puede, ¿qué trámite corresponde para este envío?». Si el pedido contenía otra caja que sí recibiste, indícalo. Ayuda a que la respuesta se refiera a la parte que te falta."
+        ]
+      },
+      {
+        "heading": "Si te ofrecen un reenvío",
+        "paragraphs": [
+          "Comprueba a qué dirección proponen enviarlo, incluido el piso, la puerta, el código postal y un teléfono de contacto válido. Si el primer intento falló por un dato incorrecto, pide confirmación de la corrección para el nuevo envío. Cambiar una dirección guardada en tu perfil no demuestra que haya cambiado una etiqueta ya emitida. Cuando la asistencia conteste, conserva la referencia de la gestión junto al seguimiento original.",
+          "Pregunta cómo podrás identificar el nuevo paquete. Si te dan otro número, guarda ambos con una anotación sencilla, por ejemplo «primera entrega» y «reenvío». Cuando el número antiguo marque llegada al almacén sabrás a qué trayecto corresponde. Si necesitas el artículo para una fecha concreta, espera a tener una estimación específica del nuevo trayecto antes de contar con él. La fecha prevista para el envío original perdió su utilidad cuando ese paquete inició la vuelta."
+        ]
+      },
+      {
+        "heading": "Si te indican que procede un reembolso",
+        "paragraphs": [
+          "Lee a qué artículos y a qué importe se refiere la respuesta, sobre todo si recibiste solo una parte del pedido. Pide que te aclaren el método previsto y dónde aparecerá la confirmación. Guarda por separado el aviso de retorno del transportista y la respuesta sobre el dinero. El primero acredita un movimiento del paquete. El segundo te permitirá consultar la resolución económica si el abono sigue sin aparecer donde esperabas.",
+          "Si han pasado los días que te indicó la asistencia, retoma la misma conversación e identifica qué paso está pendiente. Por ejemplo, puedes informar de que el retorno ya consta como recibido el jueves, pero todavía esperas la decisión sobre el reenvío. O puedes explicar que ya tienes la confirmación del reembolso y necesitas localizar el abono. Esta distinción permite pedir una comprobación concreta y evita volver a explicar desde cero todo el recorrido."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "label": "Ayuda de Hacoo sobre paquetes devueltos al remitente",
+        "url": "https://act.hacoo.app/eu/help-center/shipping/6"
+      },
+      {
+        "label": "Hacoo: ayuda sobre cancelaciones y entregas",
+        "url": "https://act.hacoo.app/eu/help-center/order/2"
+      },
+      {
+        "label": "Contacto oficial de Hacoo en español",
+        "url": "https://web.hacoo.app/es-ES/pages/contact-us"
+      },
+      {
+        "label": "Política oficial de devolución y reembolso de Hacoo",
+        "url": "https://act.hacoo.app/refund-policy"
+      }
+    ],
+    "readTime": "7 min de lectura",
+    "updated": "5 de noviembre de 2026",
+    "updatedISO": "2026-11-05T00:00:00Z",
+    "publishedISO": "2026-11-05T00:00:00Z",
+    "sourceNote": "Contrasta el último evento del transportista con tu pedido. El resultado depende del motivo de la devolución y de las instrucciones de Hacoo."
+  },
+  "cancel-hacoo-order-before-shipping": {
+    "slug": "cancel-hacoo-order-before-shipping",
+    "title": "Cómo cancelar un pedido de Hacoo antes de que lo envíen",
+    "description": "Localiza la cancelación en Mis pedidos, distingue los cambios de dirección y talla, y comprueba qué hacer si el paquete ya ha salido.",
+    "sections": [
+      {
+        "heading": "Dónde cancelar un pedido de Hacoo",
+        "paragraphs": [
+          "Si el pedido todavía no se ha enviado, abre Hacoo con la cuenta que utilizaste para comprar, entra en Mis pedidos y selecciona el pedido que quieres cancelar. El centro de ayuda europeo indica que puedes usar la opción de cancelación mientras siga sin enviar. Antes de confirmar, compara el número, los artículos y la fecha. Si ya figura como enviado, consulta la vía que describe Hacoo para esa situación en vez de repetir los pasos de un pedido en preparación.",
+          "¿Compraste dos sudaderas casi iguales y solo quieres anular una? Abre las dos confirmaciones y fíjate en el número de pedido de cada una. Una compra duplicada en dos pedidos distintos se resuelve de otra manera que dos prendas dentro del mismo pedido. Si el botón que ves menciona el pedido completo y quieres conservar parte de su contenido, espera a entender qué se anularía antes de pulsarlo."
+        ]
+      },
+      {
+        "heading": "Elige entre cancelar, corregir la dirección o cambiar una talla",
+        "paragraphs": [
+          "El motivo importa porque una cancelación puede ser innecesaria. Para una dirección equivocada, la ayuda oficial explica que los pedidos sin enviar pueden permitir la edición desde su página de detalle. Si descubres que falta el número de la calle, busca esa opción en el pedido concreto. Tras guardar el cambio, vuelve a abrir el detalle y comprueba la dirección de entrega asociada a esa compra. La dirección predeterminada del perfil puede ser otra.",
+          "Para una talla o un modelo incorrectos, Hacoo indica que la variante de un pedido completado no se modifica. Si aún no se ha enviado, la vía que describe es cancelar y hacer un nuevo pedido con la selección correcta. Comprueba antes si sigue disponible la variante que necesitas y a qué precio aparece. La talla M que ves en otra ficha puede pertenecer a una prenda con medidas diferentes, aunque la foto inicial parezca idéntica.",
+          "Un regalo enviado a otra dirección merece una comprobación adicional. Si el domicilio del destinatario ya aparece corregido en el pedido, deja constancia de la actualización. Cancelarlo después por el mismo motivo podría deshacer una compra que ya estaba bien encaminada."
+        ]
+      },
+      {
+        "heading": "Cómo confirmar que anulas la compra correcta",
+        "paragraphs": [
+          "En el detalle, revisa el importe, la cantidad y la combinación de talla y color. Imagina que el sábado compraste una chaqueta azul y el domingo otra verde del mismo modelo. El importe coincide en ambas confirmaciones y la imagen del catálogo es azul en las dos. El dato decisivo será el color seleccionado en cada línea y el número que identifica esa compra. Esta revisión resulta especialmente importante si ambas siguen en preparación.",
+          "Lee la pantalla que se abre tras elegir cancelar. Comprueba qué productos abarca y si Hacoo te pide una confirmación adicional. Después vuelve al detalle del mismo pedido y busca el estado actualizado, un aviso o una referencia que puedas conservar. Si la aplicación vuelve al inicio o se pierde la conexión a mitad del proceso, abre de nuevo ese pedido y revisa su estado antes de repetir la acción o pasar otra compra idéntica.",
+          "Cuando canceles dos compras distintas el mismo día, comprueba el resultado de cada operación por su número. Así podrás conservar una de ellas si cambias de idea antes de tocar el segundo pedido. Anular una compra desde su detalle no te indica por sí solo qué estado tiene la otra."
+        ]
+      },
+      {
+        "heading": "Qué hacer si no aparece el botón de cancelar",
+        "paragraphs": [
+          "Revisa el estado actual desde tu sesión en la aplicación. Un correo anterior puede indicar que Hacoo recibió el pedido aunque la preparación haya avanzado desde entonces. Abre la vista individual y observa si hay un número de seguimiento, un estado de envío o un mensaje que explique las opciones disponibles. Copia el texto exacto cuando la pantalla no permita decidir si ya ha salido. El mero hecho de que la compra sea reciente no garantiza la cancelación.",
+          "Si sigue figurando sin enviar y no encuentras el control, utiliza el chat de asistencia de la aplicación. Puedes decir: «Quiero cancelar el pedido [número]. A las [hora] del [fecha] aparece como [estado que muestra]. He abierto su detalle y no veo la opción de cancelarlo. ¿Podéis comprobar si todavía es posible?». Mientras recibes respuesta, conserva el estado y evita generar un segundo pedido con la misma combinación por error."
+        ]
+      },
+      {
+        "heading": "Si el paquete ya ha salido",
+        "paragraphs": [
+          "Si el paquete ya ha salido, dos documentos de Hacoo dan indicaciones distintas. La página europea de cancelaciones contempla solicitar el abono cuando un paquete rechazado regresa. Su política de reembolsos, en cambio, indica que debes esperar a recibirlo para iniciar la devolución y que rechazarlo o dejarlo sin recoger puede impedir que tramiten la solicitud. Para algunas devoluciones que atribuye al destinatario también prevé gastos de reenvío sin reembolso. No rechaces una entrega ni dejes pasar la recogida para intentar cancelar por tu cuenta.",
+          "Contacta con Hacoo desde la aplicación, facilita la referencia y pide indicaciones por escrito para ese envío. Si estás dentro del plazo de recogida, incluye su fecha de vencimiento y conserva el aviso. Si ya recibiste el paquete y quieres devolverlo por una talla equivocada, consulta las condiciones del artículo y el procedimiento de posventa antes de devolverlo por tu cuenta. Guarda el embalaje y la confirmación de compra mientras se aclara el trámite."
+        ]
+      },
+      {
+        "heading": "Cuándo hacer el pedido de sustitución",
+        "paragraphs": [
+          "Cuando la aplicación confirme la anulación y decidas repetir la compra, vuelve a seleccionar la variante desde la ficha. Comprueba la talla con sus medidas, el número de unidades, el color y la dirección. Revisa también el subtotal, los gastos y el importe final, sobre todo si utilizaste una promoción la primera vez. La compra de sustitución tiene sus propias condiciones y no conviene dar por supuesto que conservará un cupón anterior.",
+          "En un pedido de una camiseta y unos pantalones, tal vez solo necesitabas cambiar los pantalones. Si la cancelación afectó a la compra entera, incluye la camiseta al preparar el nuevo carrito si todavía la quieres. Si el detalle no deja claro qué parte se anuló, pregunta antes de volver a pagar. Apunta las dos referencias por separado para saber qué confirmación corresponde al abono y cuál al nuevo envío."
+        ]
+      },
+      {
+        "heading": "Cómo seguir una cancelación pendiente",
+        "paragraphs": [
+          "Separa tres preguntas cuando leas los avisos posteriores. ¿Qué pedido se anuló? ¿Ha confirmado Hacoo alguna gestión económica? ¿En qué método o apartado te han indicado que la consultes? Guarda el importe y las fechas que aparezcan en la respuesta y comprueba el recibo de la compra original. Una notificación que confirma que recibieron tu consulta aún puede dejar pendiente la decisión sobre el pedido, y una confirmación de cancelación puede dejar pendiente el abono.",
+          "Para continuar una consulta, utiliza el número original y menciona el paso que falta. «El pedido [número] ya aparece cancelado desde el martes, pero no veo información sobre el importe. ¿Podéis indicarme dónde consultar la resolución?». Si ya hiciste otra compra, identifica claramente el pedido que debe seguir adelante. Enviar los dos números sin explicar cuál es el de sustitución puede complicar una gestión que se resuelve mejor con una instrucción concreta."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "label": "Hacoo: cancelar un pedido",
+        "url": "https://act.hacoo.app/eu/help-center/order/2"
+      },
+      {
+        "label": "Hacoo: cambiar los datos o la variante de un pedido",
+        "url": "https://act.hacoo.app/eu/help-center/order/3"
+      },
+      {
+        "label": "Chat y contacto de Hacoo",
+        "url": "https://web.hacoo.app/es-ES/pages/contact-us"
+      },
+      {
+        "label": "Política oficial de devolución y reembolso de Hacoo",
+        "url": "https://act.hacoo.app/refund-policy"
+      }
+    ],
+    "readTime": "6 min de lectura",
+    "updated": "5 de noviembre de 2026",
+    "updatedISO": "2026-11-05T00:00:00Z",
+    "publishedISO": "2026-11-05T00:00:00Z",
+    "sourceNote": "La ayuda de Hacoo explica cómo cancelar antes del envío. Si el paquete ya está en tránsito, pide instrucciones por escrito para tu pedido."
+  },
+  "where-to-enter-hacoo-discount-code": {
+    "slug": "where-to-enter-hacoo-discount-code",
+    "title": "Dónde poner un código de descuento de Hacoo y comprobar el total",
+    "description": "Localiza el cupón antes de pagar, revisa por qué puede fallar y calcula cuánto has ahorrado en tu carrito con ejemplos en euros.",
+    "sections": [
+      {
+        "heading": "Dónde poner el código de descuento",
+        "paragraphs": [
+          "Antes de pagar, abre el carrito en la aplicación de Hacoo y revisa el resumen de la compra. Busca la opción de cupones o promociones que ofrezca esa pantalla. Si admite escribir un código, cópialo, aplícalo y espera a ver el nuevo importe. Si la campaña indica que tienes que guardar un cupón primero, sigue sus instrucciones y vuelve al mismo carrito para seleccionarlo. El dato que importa al confirmar la compra es el total que vas a autorizar.",
+          "La ayuda oficial explica que eliges los artículos en la aplicación y pasas de la cesta al pago. La guía española independiente HacooEnlaces describe el uso de su código en la sección de cupones antes de terminar la compra. El nombre del control y las condiciones dependen de la oferta que tengas delante. Una captura antigua de otra persona sirve de orientación, pero los importes y las opciones que necesitas revisar son los de tu propia cuenta."
+        ]
+      },
+      {
+        "heading": "Empieza por comprobar en qué tienda estás",
+        "paragraphs": [
+          "Es fácil descubrir un producto en un directorio, pasar a otra web para verlo mejor y acabar con dos carritos abiertos. Mira dónde aparece el artículo que estás a punto de pagar. Si seguiste un enlace a un catálogo externo y su pantalla de pago pertenece a otra tienda, vuelve a las instrucciones de la promoción. Un cupón anunciado para una compra en Hacoo se comprueba en el proceso de compra que especifica esa oferta.",
+          "Guarda el enlace original de la promoción y fíjate en qué pide hacer en primer lugar. «Copiar el código», «guardar el cupón» y «ver la oferta» pueden llevarte a pasos diferentes. Si al seguir el enlace aparece una ficha de producto, revisa que conserve el modelo, la talla y la cantidad que querías. Un precio menor después de un salto de página puede deberse al cambio de variante, aunque el anuncio mostrara un descuento."
+        ]
+      },
+      {
+        "heading": "Si no aparece ningún campo para escribir",
+        "paragraphs": [
+          "Comprueba si estás mirando la ficha del artículo, el carrito, el resumen previo al pago o un pedido ya confirmado. En la ficha todavía puedes estar eligiendo una talla. En el resumen ya deberías poder identificar el pedido que vas a autorizar y su importe. Examina también si la oferta aparece como un cupón disponible para seleccionar. Cuando la propia campaña indique un paso previo en la cuenta, complétalo y regresa al carrito antes de dar el código por aplicado.",
+          "Si no ves ni la promoción ni un lugar para introducirla, anota el texto del anuncio, el país y el importe antes de pagar. Para una oferta de primera compra, comprueba con qué cuenta has iniciado sesión. Si hiciste una compra que terminó cancelada, revisa cómo define la campaña un primer pedido o pregunta a soporte. El historial de la cuenta puede aclarar el caso mejor que probar la misma secuencia en varios dispositivos."
+        ]
+      },
+      {
+        "heading": "Si Hacoo rechaza el código",
+        "paragraphs": [
+          "Copia solo los caracteres que componen el código. Un espacio al principio, unas comillas o un punto copiado al final de una frase pueden formar parte del texto pegado. Comprueba el periodo de uso, si la promoción menciona un destino concreto y qué artículos incluye. Si el mensaje de rechazo indica un mínimo, consulta sobre qué importe se calcula. El importe total con transporte puede ser mayor que el subtotal de los artículos admitidos.",
+          "Piensa en una oferta de ejemplo que pide 30 euros en artículos seleccionados. Tienes una sudadera de 24 euros y unos gastos de envío de 7. Aunque el total llegue a 31, solo hay 24 en artículos. Si añades una prenda de 8 euros excluida por las condiciones, sigues teniendo 24 que computan. Son cantidades ilustrativas para aprender a leer un mínimo. Antes de añadir algo al carrito por ese motivo, comprueba tanto las condiciones reales como el coste final de llevarte ese artículo adicional."
+        ]
+      },
+      {
+        "heading": "Cómo verificar la rebaja con el mismo carrito",
+        "paragraphs": [
+          "Antes de aplicar el código, anota el subtotal de los artículos, los gastos de envío y el total. Después compáralos sin tocar la moneda, la cantidad, la entrega ni la dirección. Busca una línea que explique la reducción y vuelve a leer la cifra final. Si ya tenías una oferta automática, comprueba si sigue visible después de introducir el código. Lo que te interesa es la diferencia entre los dos totales que de verdad podrías pagar.",
+          "Imagina una compra de 40 euros en artículos y 5 de envío. El total inicial es 45. Tras elegir un cupón aparece una línea de menos 4 y el total pasa a 41. Con los demás datos iguales, el ahorro observado es de 4 euros. Si antes de introducirlo ya pagabas 42 gracias a otra oferta y el nuevo total es 41, ahorras un euro adicional con respecto a la opción anterior. Estos importes son un ejemplo de cálculo y no representan una promoción de Hacoo.",
+          "Si el presupuesto es ajustado, guarda también el total con un artículo menos. Comprar algo adicional para alcanzar un mínimo puede activar la oferta y, a la vez, dejarte un importe mayor que el del carrito que inicialmente querías comprar."
+        ]
+      },
+      {
+        "heading": "Cómo comprobar en qué artículo se aplicó el cupón",
+        "paragraphs": [
+          "Si el descuento parece menor de lo esperado, comprueba si el resumen lo asigna a una sola prenda. Supón que llevas una camisa de 30 euros y una gorra de 10. Si las condiciones del ejemplo ofrecen un 10 % exclusivamente en prendas de vestir y dejan fuera los complementos, los 3 euros de rebaja se calculan sobre la camisa. Con ese desglose ya puedes comprobar el cálculo, sin atribuir la diferencia al envío o a un fallo en el código.",
+          "Cuando no se indique el reparto y quieras averiguar si influye una variante concreta, anota el total y prueba a comparar el carrito con una única modificación antes de pagar. Ten en cuenta otras condiciones, como el importe mínimo o los gastos de entrega. Si cambian varias líneas a la vez, la prueba deja de aislar el efecto del cupón. Vuelve al carrito que querías comprar y pregunta por la elegibilidad de esa referencia exacta."
+        ]
+      },
+      {
+        "heading": "Diferencia entre descuento, saldo y recompensa",
+        "paragraphs": [
+          "Si aparecen varios importes en el resumen, identifica qué reduce el precio y qué sirve para pagarlo. Usar un saldo de la cuenta puede reducir la parte que vas a abonar con tarjeta, aunque el precio de los productos siga igual. Si quieres saber cuánto has ahorrado con el cupón, busca su línea concreta. Si quieres saber cuánto tendrás que poner de tu bolsillo en ese momento, revisa además cómo se reparte el pago.",
+          "Hacoo describe por separado el saldo que se puede obtener por reseñar con fotos determinados artículos tras recibirlos. Explica que las condiciones y el importe se consultan en la página de la reseña y en el monedero. Una posible recompensa futura no reduce por sí sola la compra que estás autorizando ahora. Si comparas dos ofertas, anota por un lado el dinero que pagarías hoy y por otro cualquier saldo que puedas llegar a recibir después."
+        ]
+      },
+      {
+        "heading": "Qué conservar si el total no cuadra",
+        "paragraphs": [
+          "Si el carrito acepta el código, pero el precio no cambia como esperabas, guarda el texto de la promoción, la variante, el mensaje exacto y un resumen donde se vean las cantidades. Para preguntar a soporte, recorta las imágenes de modo que no incluyan el número de tarjeta, el domicilio ni otros pedidos. Una consulta concreta sería: «El código aparece aceptado en un carrito con [artículos], pero tanto antes como después el total es [importe]. ¿A qué línea se aplicó?».",
+          "Si ya pagaste, abre la confirmación y compara el importe del pedido con el último resumen que conservas. Distingue el cargo correspondiente a ese pedido de otra compra del mismo día. Si el precio fue diferente, contacta con la asistencia de Hacoo desde la aplicación y facilita la referencia del pedido y las dos cifras. La disponibilidad de una promoción en un carrito nuevo no determina su aplicación retroactiva. Antes de la próxima compra podrás decidir con el total ya comprobado en pantalla."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "label": "Hacoo: pasos para hacer un pedido",
+        "url": "https://act.hacoo.app/act/sara/helpcenter/order1"
+      },
+      {
+        "label": "Guía independiente sobre cupones de HacooEnlaces",
+        "url": "https://hacooenlaces.com/preguntas-frecuentes"
+      },
+      {
+        "label": "Hacoo: condiciones del saldo por reseñas",
+        "url": "https://act.hacoo.app/about-order-review-cashback"
+      },
+      {
+        "label": "Contacto oficial de Hacoo",
+        "url": "https://web.hacoo.app/es-ES/pages/contact-us"
+      }
+    ],
+    "readTime": "7 min de lectura",
+    "updated": "5 de noviembre de 2026",
+    "updatedISO": "2026-11-05T00:00:00Z",
+    "publishedISO": "2026-11-05T00:00:00Z",
+    "sourceNote": "La ayuda oficial describe la compra en la aplicación. La guía independiente ilustra el uso del cupón. Comprueba las condiciones y el importe final en tu pedido."
   }
 }

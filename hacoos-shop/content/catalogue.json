@@ -1,0 +1,67 @@
+{
+  "en": {
+    "categories": "Browse by category",
+    "broken": "Help with a broken link",
+    "reviewed": "Links checked 5 Nov 2026",
+    "names": {
+      "6045": "Grey low-top trainers",
+      "5974": "Relaxed crewneck sweatshirt",
+      "5976": "Short-sleeve piqué polo",
+      "5981": "Colour-block zip jacket",
+      "5983": "Denim drawstring shorts",
+      "5971": "Embroidered knitted beanie"
+    }
+  },
+  "es": {
+    "categories": "Explorar por categoría",
+    "broken": "Ayuda con un enlace que no abre",
+    "reviewed": "Enlaces revisados el 5 nov 2026",
+    "names": {
+      "6045": "Zapatillas bajas grises",
+      "5974": "Sudadera holgada de cuello redondo",
+      "5976": "Polo de piqué de manga corta",
+      "5981": "Chaqueta de bloques de color con cremallera",
+      "5983": "Bermudas vaqueras con cordón",
+      "5971": "Gorro de punto bordado"
+    }
+  },
+  "fr": {
+    "categories": "Parcourir les catégories",
+    "broken": "Dépanner un lien produit",
+    "reviewed": "Liens vérifiés le 5 nov. 2026",
+    "names": {
+      "6045": "Baskets basses grises",
+      "5974": "Sweat ample à col rond",
+      "5976": "Polo en piqué à manches courtes",
+      "5981": "Veste zippée tricolore",
+      "5983": "Short en jean à cordon",
+      "5971": "Bonnet en maille brodé"
+    }
+  },
+  "de": {
+    "categories": "Kategorien durchsuchen",
+    "broken": "Hilfe bei defekten Links",
+    "reviewed": "Links geprüft am 5. Nov. 2026",
+    "names": {
+      "6045": "Graue Halbsneaker",
+      "5974": "Locker geschnittenes Rundhals-Sweatshirt",
+      "5976": "Kurzärmeliges Poloshirt aus Piqué",
+      "5981": "Blockstreifenjacke mit Reißverschluss",
+      "5983": "Jeansshorts mit Tunnelzug",
+      "5971": "Bestickte Strickmütze"
+    }
+  },
+  "it": {
+    "categories": "Sfoglia per categoria",
+    "broken": "Aiuto per un link che non si apre",
+    "reviewed": "Link verificati il 5 nov 2026",
+    "names": {
+      "6045": "Sneaker basse grigie",
+      "5974": "Felpa ampia girocollo",
+      "5976": "Polo in piqué a maniche corte",
+      "5981": "Giacca a blocchi di colore con zip",
+      "5983": "Shorts di jeans con coulisse",
+      "5971": "Berretto in maglia ricamato"
+    }
+  }
+}

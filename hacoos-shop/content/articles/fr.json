@@ -709,8 +709,8 @@
       "trouvailles Hacoo"
     ],
     "readTime": "7 min de lecture",
-    "updated": "10 octobre 2026",
-    "updatedISO": "2026-10-10T00:00:00Z",
+    "updated": "5 novembre 2026",
+    "updatedISO": "2026-11-05T00:00:00Z",
     "sourceNote": "Guide indépendant révisé le 10 octobre 2026. Les informations visibles, les options et la disponibilité peuvent changer ; vérifiez la fiche actuelle avant de prendre une décision.",
     "sources": [
       {
@@ -723,6 +723,13 @@
         "heading": "Définir le produit avant les mots-clés",
         "paragraphs": [
           "Une demande vague complique la recherche. Remplacez « meilleures trouvailles Hacoo » par quelques critères : catégorie, forme visible, famille de couleur, usage et une mesure ou fonction indispensable. « Chaussure basse, côtés simples, couleur sombre neutre, indication de longueur du pied » décrit des caractéristiques observables sans dépendre d'un nom évoquant une marque. Vous obtenez plusieurs pistes et une règle pour écarter les résultats. Écrivez ces critères avant d'ouvrir des images, afin qu'une belle photo hors sujet ne redéfinisse pas votre besoin. Si une exigence n'est pas vérifiable dans la fiche, marquez-la inconnue. Une bonne recherche réduit l'incertitude et reste utilisable malgré les variations de titre, de langue ou de formulation."
+        ]
+      },
+      {
+        "heading": "Retrouver le sac en bandoulière d’une capture d’écran",
+        "paragraphs": [
+          "Vous avez une photo d’un sac noir. Deux indices sont bien visibles : une poche avant à fermeture verticale et une bandoulière fixée par des mousquetons. Essayez « sac bandoulière poche zippée devant » dans le moteur de recherche que vous utilisez. Si la sélection reste trop large, ajoutez « bandoulière amovible ». Le noir pourra être choisi ensuite si plusieurs coloris existent.",
+          "Ouvrez deux fiches plausibles. Sur la première, la poche est zippée mais la bandoulière est cousue. Sur la seconde, on distingue les deux mousquetons, mais la variante noire présente une poche horizontale. Aucune des deux fiches ne permet de confirmer le modèle exact. Gardez la seconde comme solution de rechange si l’orientation de la poche vous importe peu."
         ]
       },
       {
@@ -903,8 +910,8 @@
       "service après-vente Hacoo"
     ],
     "readTime": "7 min de lecture",
-    "updated": "10 octobre 2026",
-    "updatedISO": "2026-10-10T00:00:00Z",
+    "updated": "5 novembre 2026",
+    "updatedISO": "2026-11-05T00:00:00Z",
     "sourceNote": "Informations officielles de livraison, de retour et de remboursement vérifiées le 10 octobre 2026. Les conditions et consignes applicables dépendent du produit, de la commande et du pays.",
     "sources": [
       {
@@ -921,6 +928,13 @@
         "heading": "Faire partir le délai de la réception concernée",
         "paragraphs": [
           "La politique officielle annonce une fenêtre de retour de 15 jours après réception pour la plupart des produits ; la page de livraison mentionne aussi l'assistance après-vente. Cela invite à inspecter rapidement, sans garantir l'acceptation de toute demande. Enregistrez date de livraison, référence de commande, article et option exacte. Si plusieurs colis arrivent séparément, identifiez celui contenant l'article concerné au lieu d'appliquer la date du premier à tous. Vérifiez les consignes actuelles liées à la commande, car éligibilité, exclusions et démarches peuvent varier. Un guide général explique la préparation, mais ne peut prolonger un délai ni décider d'un dossier. Commencez dès qu'un problème important est constaté, sans attendre la fin de la fenêtre annoncée."
+        ]
+      },
+      {
+        "heading": "Vérifier le remboursement d’un article acheté avec une remise",
+        "paragraphs": [
+          "Supposons que vous ayez payé 54 € pour une veste à 48 € et une casquette à 12 €, après une remise de 6 € sur le panier. Seule la couleur de la casquette est incorrecte. Joignez la ligne de commande indiquant la couleur choisie et une photo de la casquette reçue. Précisez que vous gardez la veste.",
+          "Si le remboursement proposé est de 10,80 €, il est possible que 1,20 € de la remise ait été imputé à la casquette. Consultez le détail des montants ou demandez au service client de confirmer ce calcul. La répartition sur votre commande peut être différente. Si des frais de livraison figurent également sur le récapitulatif, vérifiez-les sur une ligne distincte."
         ]
       },
       {
@@ -1300,8 +1314,8 @@
       "retard livraison Hacoo"
     ],
     "readTime": "7 min de lecture",
-    "updated": "10 octobre 2026",
-    "updatedISO": "2026-10-10T00:00:00Z",
+    "updated": "5 novembre 2026",
+    "updatedISO": "2026-11-05T00:00:00Z",
     "sourceNote": "Informations officielles de livraison et de contact vérifiées le 10 octobre 2026. Le dossier de commande et les derniers événements du transporteur concerné restent les références pour chaque colis.",
     "sources": [
       {
@@ -1319,6 +1333,13 @@
         "paragraphs": [
           "Si le suivi Hacoo ne se met plus à jour, relevez d'abord le dernier événement avant de l'interpréter. Ouvrez la commande concernée, identifiez le colis et conservez statut exact, heure affichée, lieu et transporteur. Notez aussi l'heure de votre consultation. Rouvrir le même écran sans enregistrer ces détails donne l'impression d'une attente plus longue, sans fournir d'information utile.",
           "Recherchez d'abord une action expressément demandée, une tentative de livraison échouée ou un statut livré. Ces situations nécessitent une réponse spécifique et ne sont pas de simples absences de scans. Si aucun nouveau mouvement n'apparaît, poursuivez les contrôles suivants. L'objectif est d'identifier la preuve manquante et la bonne question, pas d'attribuer une cause au silence."
+        ]
+      },
+      {
+        "heading": "Un avis de retrait arrive alors que le suivi reste bloqué",
+        "paragraphs": [
+          "Imaginez que le suivi de votre manteau affiche toujours le centre de tri, puis qu’un SMS vous signale un colis en consigne. Ouvrez le suivi du transporteur depuis votre commande. Comparez le numéro de colis avec celui de l’avis, surtout si vous attendez une autre livraison. Le même code postal peut figurer sur plusieurs envois.",
+          "Si le transporteur confirme que le manteau est en consigne, demandez où trouver les instructions et jusqu’à quand le retrait est possible. Si les références diffèrent, rattachez l’avis au colis qu’il désigne. Pour le manteau, citez le dernier passage au centre de tri dans votre demande. Vous éviterez un déplacement inutile tout en gardant un œil sur le délai de l’autre colis."
         ]
       },
       {
@@ -1499,5 +1520,260 @@
       }
     ],
     "publishedISO": "2026-10-10T00:00:00Z"
+  },
+  "hacoo-parcel-returned-to-sender": {
+    "slug": "hacoo-parcel-returned-to-sender",
+    "title": "Colis Hacoo retourné à l’expéditeur : que faire ?",
+    "description": "Votre suivi Hacoo annonce un retour à l’expéditeur ? Vérifiez si le retrait reste possible, identifiez le colis et demandez une réexpédition ou un remboursement.",
+    "sources": [
+      {
+        "label": "Centre d’aide Hacoo — Colis retourné à l’expéditeur",
+        "url": "https://act.hacoo.app/eu/help-center/shipping/6"
+      },
+      {
+        "label": "Hacoo — Contacter l’assistance en français",
+        "url": "https://www.hacoo.app/fr-FR/pages/contact-us"
+      },
+      {
+        "label": "Hacoo : politique de retour et de remboursement",
+        "url": "https://act.hacoo.app/refund-policy"
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Le premier réflexe : lire le dernier événement en entier",
+        "paragraphs": [
+          "Ouvrez le détail de la commande Hacoo, relevez le numéro de suivi et consultez le dernier événement publié par le transporteur qui devait vous livrer. Si le colis est encore annoncé comme disponible dans un point de retrait, vérifiez l’adresse et la date limite dès maintenant. Si le transporteur a déjà enregistré son départ en retour, contactez l’assistance Hacoo depuis la commande. Ce sont deux situations différentes, même si elles commencent toutes les deux par un avis de passage.",
+          "La fiche d’aide Hacoo sur le retour à l’expéditeur cite notamment l’échec de la livraison, l’absence du destinataire et l’expiration du délai de retrait. Elle indique que le colis peut repartir vers l’entrepôt du transporteur et invite alors le client à contacter Hacoo. L’équipe examine les possibilités de renvoi, lorsque celui-ci est pris en charge, ou de remboursement selon le dossier. Vous pouvez donc lui écrire dès que le retour apparaît ; inutile d’attendre une seconde présentation que le suivi n’annonce plus."
+        ]
+      },
+      {
+        "heading": "Échec de livraison ou retour déjà engagé ?",
+        "paragraphs": [
+          "Un message comme « destinataire absent » décrit ce qui s’est passé au moment où le livreur s’est présenté. Lisez la ligne qui suit et l’éventuel avis de passage. Il peut contenir une nouvelle date, le nom d’un commerçant ou une invitation à prendre contact avec l’agence locale. Cherchez une consigne accompagnée d’un lieu ou d’une échéance applicable à votre envoi. Si la suite manque, demandez au transporteur s’il détient encore le colis et quelle action reste possible.",
+          "Imaginez un avis reçu lundi et une mise à disposition annoncée mardi. Jeudi, le suivi affiche toujours une date de retrait à venir. Votre démarche porte sur le retrait pendant cette période. Si, à la place, un événement du mercredi indique un départ de l’agence pour retour, n’organisez pas un déplacement à partir de l’ancien avis. Donnez le nouvel événement au transporteur si vous souhaitez tenter de récupérer le colis et ouvrez en parallèle la demande auprès de Hacoo."
+        ]
+      },
+      {
+        "heading": "Quand le colis apparaît encore disponible en point relais",
+        "paragraphs": [
+          "Confirmez le nom exact du point, son adresse, ses horaires et les pièces indiquées dans l’avis. Deux commerces d’une même rue peuvent porter des noms proches. Si l’alerte arrive le jour de la date limite, vérifiez que le point détient encore le colis avant de vous y rendre. Posez une question précise avec la référence locale. Le commerçant pourra chercher le bon envoi sans que vous ayez à reconstituer toute l’histoire de la commande.",
+          "Il arrive aussi que le point relais ne retrouve rien alors que le suivi indique un dépôt. Notez l’heure du passage et le nom du point interrogé, puis demandez au transporteur la localisation associée au numéro qu’il connaît. Expliquez à Hacoo la différence entre les deux informations. Si l’application affiche ensuite un départ en retour, ajoutez cette nouvelle date à votre demande. Gardez votre première capture : elle permet de comprendre pourquoi vous vous êtes présenté à ce point-là."
+        ]
+      },
+      {
+        "heading": "Identifier précisément le colis qui repart",
+        "paragraphs": [
+          "Une commande contenant plusieurs articles peut avoir plusieurs suivis. Retrouvez dans le détail de la commande les articles correspondant au numéro concerné, puis relevez aussi la référence du transporteur local lorsqu’elle est affichée. Vérifiez au moins les derniers caractères de chaque numéro. Deux notifications reçues le même jour peuvent appartenir à deux envois différents, dont l’un est déjà arrivé. Une demande portant sur toute la commande rend alors le problème plus difficile à identifier.",
+          "Prenons un achat composé d’un sweat et de chaussures. Le sweat est arrivé dans une enveloppe et la fiche des chaussures indique un autre suivi avec un départ en retour. Dans le message, mentionnez les chaussures, leur référence si elle est visible et le numéro du second colis. Si l’application ne permet pas d’associer les articles à chaque numéro, indiquez simplement ce que vous avez reçu et demandez cette association au support. Vous lui laissez une question vérifiable au lieu de supposer le contenu du colis."
+        ]
+      },
+      {
+        "heading": "Lire deux suivis qui semblent se contredire",
+        "paragraphs": [
+          "L’application peut encore afficher un résumé de l’expédition alors que le site du transporteur local présente déjà un événement détaillé. Relevez la date et l’heure de chaque mise à jour ainsi que la source. Un écran que vous venez d’ouvrir peut contenir un événement plus ancien. Si les deux numéros ne sont pas identiques, vérifiez d’abord que le détail du colis établit bien le lien entre eux.",
+          "Si le service client du transporteur vous dit que l’envoi est reparti, demandez à quelle date et sous quelle référence il peut être suivi. Certains échanges n’apportent qu’une confirmation orale. Dans ce cas, transmettez à Hacoo la date de votre appel et ce que le transporteur vous a indiqué, en précisant que vous attendez encore une mise à jour écrite. L’assistance pourra rechercher le statut avec ces éléments."
+        ]
+      },
+      {
+        "heading": "Vérifier l’adresse au bon endroit",
+        "paragraphs": [
+          "Relisez l’adresse enregistrée sur le récapitulatif de cet achat, y compris le numéro d’immeuble, le complément et le code postal. La fiche d’adresse de votre compte a pu être modifiée depuis la commande. Si l’adresse de l’achat est correcte, dites-le à l’assistance et indiquez le motif qui figure dans le suivi. Si vous repérez une erreur, précisez le champ à corriger et demandez comment faire enregistrer les bonnes coordonnées si un renvoi devient possible.",
+          "Une adresse complète n’explique pas à elle seule un retour. Un délai de retrait expiré peut par exemple suffire, même si le livreur a trouvé le bon immeuble. Appuyez-vous sur les mots du transporteur pour formuler votre demande. Dans un échange privé avec l’assistance, communiquez les éléments dont elle a besoin. Si vous demandez conseil sur un forum, masquez l’adresse, le téléphone, le code de retrait et le numéro de suivi complet avant de publier une capture."
+        ]
+      },
+      {
+        "heading": "Écrire au support avec une demande à laquelle il peut répondre",
+        "paragraphs": [
+          "Dans le chat officiel de l’application, regroupez la référence de commande, le colis concerné, le dernier événement daté et la démarche déjà effectuée auprès du transporteur. Une ou deux captures lisibles suffisent souvent à montrer la chronologie. Précisez votre préférence, par exemple recevoir les chaussures si elles peuvent être renvoyées à la bonne adresse. Si vous avez déjà un numéro de dossier, reprenez-le lorsque vous ajoutez une réponse du transporteur.",
+          "Voici une formulation à adapter : « Le suivi du colis contenant les chaussures de ma commande [référence] indique un départ en retour le [date]. Le point de retrait m’a confirmé qu’il ne l’avait plus. Pouvez-vous vérifier si un renvoi est possible à mon adresse confirmée ? Si le renvoi est indisponible, quelles sont les étapes pour le remboursement de cet article ? » Le support sait ainsi ce qui a été vérifié et quelle décision vous attendez de sa part."
+        ]
+      },
+      {
+        "heading": "Suivre la réexpédition ou le remboursement",
+        "paragraphs": [
+          "Si l’assistance propose une réexpédition, relisez l’adresse qu’elle vous demande de confirmer et demandez où retrouver la nouvelle référence de suivi lorsqu’elle sera disponible. Conservez le premier suivi et celui du renvoi sous deux intitulés distincts. L’historique initial peut continuer à afficher un retour alors que vous suivez déjà un deuxième colis. Vérifiez les événements et le transporteur associés à la nouvelle référence pour savoir ce qui se passe après le renvoi.",
+          "Si un remboursement vous est proposé, demandez quels articles et quel montant sont concernés ainsi que le moyen prévu pour le versement. Pour une commande partiellement livrée, rapprochez la somme annoncée de la ligne de l’article qui est reparti. Conservez la réponse écrite et vérifiez ensuite l’arrivée effective du montant au bon endroit. Si l’équipe vous a donné une échéance, reprenez le même échange à cette date avec l’information qui manque : nouvelle référence, montant confirmé ou état du versement."
+        ]
+      }
+    ],
+    "readTime": "6 min de lecture",
+    "updated": "5 novembre 2026",
+    "updatedISO": "2026-11-05T00:00:00Z",
+    "publishedISO": "2026-11-05T00:00:00Z",
+    "sourceNote": "Comparez le dernier événement du transporteur avec votre commande. La suite dépend du motif du retour et des instructions de Hacoo pour ce colis."
+  },
+  "cancel-hacoo-order-before-shipping": {
+    "slug": "cancel-hacoo-order-before-shipping",
+    "title": "Comment annuler une commande Hacoo avant son expédition ?",
+    "description": "Retrouvez l’option d’annulation dans vos commandes Hacoo, vérifiez le statut de l’achat et choisissez la bonne démarche pour une erreur de taille ou d’adresse.",
+    "sources": [
+      {
+        "label": "Hacoo — Annuler une commande",
+        "url": "https://act.hacoo.app/eu/help-center/order/2"
+      },
+      {
+        "label": "Hacoo — Modifier l’adresse, la taille ou le modèle",
+        "url": "https://act.hacoo.app/eu/help-center/order/3"
+      },
+      {
+        "label": "Hacoo — Contacter l’assistance en français",
+        "url": "https://www.hacoo.app/fr-FR/pages/contact-us"
+      },
+      {
+        "label": "Hacoo : politique de retour et de remboursement",
+        "url": "https://act.hacoo.app/refund-policy"
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Ouvrir la commande et vérifier si elle a été expédiée",
+        "paragraphs": [
+          "Pour annuler une commande Hacoo avant son expédition, connectez-vous au compte utilisé pour l’achat, ouvrez la liste de vos commandes et choisissez la commande concernée. Le centre d’aide européen de Hacoo indique qu’une commande encore non expédiée peut être annulée depuis « My orders », avec la commande « Cancel ». Ces deux libellés figurent en anglais dans l’aide. Sur votre écran, recherchez la commande puis l’action d’annulation dans la langue de votre application.",
+          "Fiez-vous à l’état indiqué maintenant dans le détail de l’achat. Une notification de confirmation ou l’heure à laquelle vous avez payé peut vous donner un bon point de départ, mais le statut a pu évoluer depuis. Si vous venez de vous rendre compte que vous avez sélectionné deux fois le même article, faites cette vérification tout de suite. Il n’y a pas besoin de calculer le temps écoulé depuis le paiement pour savoir si l’application vous propose encore l’annulation."
+        ]
+      },
+      {
+        "heading": "Vérifier la référence avant de valider",
+        "paragraphs": [
+          "Regardez le numéro de commande, les articles, les tailles ou coloris choisis et la quantité. Cette précaution est particulièrement utile lorsque deux achats se suivent de quelques minutes. Un sweat gris en taille M et le même en taille L peuvent produire deux notifications presque identiques. Prenez la référence sur la fiche de la commande que vous voulez annuler et comparez-la, si nécessaire, au récapitulatif reçu au moment de l’achat.",
+          "Lisez la portée de l’action affichée. Si l’écran indique que vous annulez une commande entière et que vous souhaitez seulement retirer un article, revenez au détail avant de confirmer. Notez les autres articles que vous voulez conserver et contactez l’assistance si le périmètre reste ambigu. Une remise de commande peut concerner plusieurs articles. Vérifier le contenu complet avant de trancher vous évite d’annuler involontairement une deuxième pièce dont vous aviez besoin."
+        ]
+      },
+      {
+        "heading": "Conserver la confirmation d’annulation",
+        "paragraphs": [
+          "Une fois la bonne commande sélectionnée, lancez l’annulation et suivez les instructions affichées jusqu’à la dernière étape. Si un motif vous est demandé, choisissez celui qui correspond à votre situation. Revenez ensuite à la fiche de l’achat pour lire son état. Copiez le texte du message de confirmation ou gardez une capture où figurent la référence et la date. Vous disposerez ainsi d’un point de comparaison si une autre notification arrive plus tard.",
+          "Si vous quittez le parcours en cours de route ou si l’écran se ferme, rouvrez l’historique des commandes avant toute autre manipulation. Un message demandant de confirmer votre décision ne prouve pas que la commande a été annulée. À l’inverse, si une confirmation finale est bien visible, gardez-la et contrôlez son numéro. Pour un nouvel achat destiné à remplacer le premier, attendez de pouvoir distinguer clairement les deux opérations et le montant associé à chacune."
+        ]
+      },
+      {
+        "heading": "Erreur de taille ou adresse incomplète : deux démarches",
+        "paragraphs": [
+          "Vous avez commandé une veste en M alors qu’il vous faut un L ? La page Hacoo consacrée aux modifications indique que la taille ou le modèle d’une commande déjà passée ne peut pas être changé directement. Pour une commande non expédiée, elle oriente vers l’annulation, puis vers un nouvel achat avec la bonne variante. Avant de commander à nouveau, rouvrez la fiche de la veste, sélectionnez la nouvelle taille et vérifiez qu’elle figure bien sur l’écran récapitulatif.",
+          "Pour une erreur d’adresse, commencez ailleurs. Hacoo indique que l’adresse d’un achat non expédié peut être modifiée depuis le détail de la commande. Si vous avez simplement oublié un numéro de bâtiment, cherchez cette option et vérifiez ensuite la correction sur l’achat en question. Modifier votre carnet d’adresses peut vous être utile pour l’avenir, mais la vérification qui compte pour ce colis se trouve sur la fiche de la commande. Contactez le support si la correction n’y apparaît pas."
+        ]
+      },
+      {
+        "heading": "Si l’option d’annulation est absente",
+        "paragraphs": [
+          "Ouvrez de nouveau l’achat à partir de la liste de vos commandes et relevez exactement son statut. Un bouton absent et un statut « expédié » constituent deux observations différentes. De même, l’absence de premier scan chez le transporteur ne prouve pas que Hacoo classe encore la commande parmi celles qui peuvent être annulées. Si son état paraît compatible avec une annulation mais que l’action manque, conservez une capture du détail avant de contacter l’assistance.",
+          "Une demande précise peut tenir en quelques lignes : « Je souhaite annuler la commande [référence]. À [heure], son statut apparaît comme [libellé affiché]. En ouvrant le détail sur mon compte, je ne vois pas d’action d’annulation. Pouvez-vous vérifier si elle peut encore être annulée et me confirmer son état ? » Si vous avez déjà utilisé le bouton, ajoutez le message obtenu. Cela permet à l’équipe de distinguer une fonction absente d’une demande engagée qui attend encore une réponse."
+        ]
+      },
+      {
+        "heading": "Quand deux commandes ont été passées par erreur",
+        "paragraphs": [
+          "Un écran de paiement qui se referme trop vite peut vous laisser dans le doute. Avant de passer une troisième commande ou d’en annuler une au hasard, ouvrez l’historique du compte. Si deux références existent, comparez le montant, l’heure, le contenu et l’adresse. Choisissez celle que vous souhaitez garder et notez-la séparément. Sur la fiche de l’autre commande, lisez sa référence une dernière fois avant de confirmer l’annulation.",
+          "Si vous voyez deux opérations dans votre application bancaire mais une seule référence de commande chez Hacoo, décrivez précisément ce décalage au support. Demandez-lui de vérifier les achats associés à votre compte. Le montant seul ne vous dit pas quelle commande annuler, ni même s’il en existe une seconde. Pour faciliter la recherche, donnez l’heure approximative des opérations et la référence visible, en masquant les informations de paiement sensibles."
+        ]
+      },
+      {
+        "heading": "Si l’expédition a déjà commencé",
+        "paragraphs": [
+          "Pour un achat expédié, l’aide européenne de Hacoo évoque la possibilité de refuser le colis à sa présentation et de contacter le support lorsque le retour a eu lieu. Pour une erreur de taille ou de modèle après expédition, la fiche sur les modifications oriente également vers une demande de remboursement ou d’échange après réception. Consultez le support pour déterminer quelle démarche convient au mode de livraison et à la situation de votre commande.",
+          "Par exemple, une livraison à domicile annoncée pour demain et un colis déjà déposé en consigne ne vous permettent pas d’effectuer le même geste. Dans le second cas, demandez la consigne précise avant de laisser passer la date de retrait. Si un suivi de retour est créé, conservez-le et rapprochez-le du colis d’origine. Un refus ou un retour en cours et l’enregistrement d’un remboursement sont des étapes différentes : surveillez l’information que le support vous demande de lui transmettre.",
+          "La FAQ sur l’annulation évoque la possibilité de refuser un colis déjà expédié. La politique de retour avertit toutefois qu’un refus ou un retrait manqué peut empêcher le traitement du remboursement. Si le colis est encore disponible, demandez des instructions écrites pour cette commande avant de le refuser ou de laisser expirer le retrait."
+        ]
+      },
+      {
+        "heading": "Remboursement et nouvel achat : garder les deux dossiers distincts",
+        "paragraphs": [
+          "Si un montant doit être reversé, relevez sur la confirmation la somme, sa destination et l’éventuelle échéance annoncée. Une annulation visible dans l’application permet de suivre l’état de la commande. Pour vérifier le remboursement, consultez ensuite le moyen indiqué dans votre dossier. Si le délai communiqué par l’équipe est dépassé, demandez-lui la référence de l’opération en reprenant le message initial. Une capture avec les informations sensibles masquées peut illustrer le décalage.",
+          "Enfin, si vous souhaitez toujours acheter la bonne taille, relisez le montant du nouveau panier avant de confirmer. Comparez la variante, l’adresse, les frais de livraison et toute réduction effectivement visible dans ce nouveau récapitulatif. Le prix et les conditions affichés lors du premier achat ne suffisent pas à établir ceux du suivant. Conservez les deux références avec des indications simples, par exemple « veste M annulée » et « veste L à recevoir ». Vous pourrez ainsi vérifier le bon suivi comme le bon remboursement."
+        ]
+      }
+    ],
+    "readTime": "6 min de lecture",
+    "updated": "5 novembre 2026",
+    "updatedISO": "2026-11-05T00:00:00Z",
+    "publishedISO": "2026-11-05T00:00:00Z",
+    "sourceNote": "L’aide de Hacoo explique l’annulation avant expédition. Si le colis est déjà parti, demandez au support des instructions écrites pour cette commande."
+  },
+  "where-to-enter-hacoo-discount-code": {
+    "slug": "where-to-enter-hacoo-discount-code",
+    "title": "Où saisir un code promo Hacoo et vérifier la remise ?",
+    "description": "Trouvez l’emplacement du code promo dans le parcours d’achat Hacoo et contrôlez le montant à payer si le code est refusé ou que le total semble inchangé.",
+    "sources": [
+      {
+        "label": "Hacoo — Passer une commande dans l’application",
+        "url": "https://act.hacoo.app/act/sara/helpcenter/order1"
+      },
+      {
+        "label": "Hacoo — Fonctionnement du cashback après un avis",
+        "url": "https://act.hacoo.app/about-order-review-cashback"
+      },
+      {
+        "label": "Hacoo Links — Guide indépendant du parcours d’achat et du champ coupon",
+        "url": "https://hacoolinks.com/fr/blog/901-comment-acheter-sur-hacoo-etape-par-etape"
+      },
+      {
+        "label": "Hacoo — Contacter l’assistance en français",
+        "url": "https://www.hacoo.app/fr-FR/pages/contact-us"
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Chercher le code dans le récapitulatif avant paiement",
+        "paragraphs": [
+          "Pour saisir un code promo Hacoo, commencez par ajouter à votre panier les articles et les variantes que vous voulez acheter. Dans l’application, avancez jusqu’au récapitulatif qui précède la confirmation du paiement et cherchez la rubrique consacrée aux coupons ou aux réductions. Le guide d’achat indépendant Hacoo Links situe le champ coupon à cette étape. Le centre d’aide Hacoo décrit le passage du panier au paiement sans préciser le nom ou l’emplacement exact du champ dans chaque version.",
+          "Si l’écran de votre compte propose une zone de saisie, entrez le code et utilisez l’action de validation qui l’accompagne. Attendez que le détail du prix soit actualisé. Avant d’autoriser le paiement, cherchez la réduction dans le calcul et lisez le montant final. Une annonce de promotion aperçue sur la fiche d’un produit, dans une vidéo ou dans un annuaire de liens sert à retrouver l’offre ; le récapitulatif de votre propre panier permet de voir ce qu’elle change réellement pour votre achat."
+        ]
+      },
+      {
+        "heading": "Savoir dans quel panier vous vous trouvez",
+        "paragraphs": [
+          "Un lien partagé peut d’abord ouvrir un catalogue indépendant ou une page de présentation. Si vous êtes sur une fiche qui ne présente qu’un bouton vers un produit, vous n’êtes pas encore au récapitulatif de la commande Hacoo. Ouvrez vous-même l’application et retrouvez les articles de votre panier. Vérifiez la taille, le coloris et la quantité avant de chercher le coupon. Cela évite de comparer deux pièces similaires dont les prix de départ diffèrent.",
+          "Vous voyez parfois une offre dans sa langue d’origine et votre commande dans une autre devise ou pour un autre pays. Reprenez les conditions publiées pour l’offre que vous avez trouvée, en gardant visibles le pays et la devise réellement sélectionnés pour votre livraison. Si le champ manque sur votre écran, cherchez dans le détail du prix et dans les options disponibles avant paiement. Vous pouvez demander de l’aide avec une capture de cet écran sans finaliser l’achat pour faire l’essai."
+        ]
+      },
+      {
+        "heading": "Vérifier le code et les conditions écrites de l’offre",
+        "paragraphs": [
+          "Copiez uniquement la suite de caractères annoncée comme code. Un point en fin de phrase, un espace ajouté au collage ou un caractère confondu avec un chiffre peuvent suffire à modifier la chaîne saisie. Relisez-la une fois et comparez-la au texte original. S’il y a un message après validation, notez sa formulation exacte. « Code inconnu », une mention de date et un message portant sur le panier vous donnent des pistes différentes pour la suite.",
+          "Relisez ensuite les conditions effectivement affichées pour cette offre. Vérifiez la date de fin et, quand ils sont précisés, le pays, la condition de première commande, le minimum de commande et les articles concernés. Un code présenté par son auteur comme valable pour un premier achat ne permet pas de déduire que votre compte est éligible. En cas de doute, demandez quelle condition s’applique à votre situation en joignant l’offre et le message de votre panier, sans modifier vos renseignements pour contourner la restriction."
+        ]
+      },
+      {
+        "heading": "Comparer deux totaux à panier identique",
+        "paragraphs": [
+          "Notez le sous-total des articles, les éventuels frais affichés et le total à payer avant de saisir le code. Après validation, relisez les mêmes lignes sans changer les quantités, les variantes ou la livraison. Cherchez soit une ligne de remise, soit un nouveau montant accompagné d’une explication. Si le récapitulatif montre une offre déjà active, vérifiez son nom avant et après l’essai. Cela permet de voir si un code supplémentaire a changé le prix ou remplacé l’offre précédente.",
+          "Prenons un exemple fictif, indépendant de toute promotion Hacoo en cours. Un panier affiche 42 € d’articles et 4 € de livraison, soit 46 € avant remise. Si le même panier affiche ensuite 42 € d’articles, une réduction de 5 € et toujours 4 € de livraison, le total attendu est 41 €. Cet exemple montre pourquoi il faut conserver le détail des lignes. Comparer directement le nouveau total de 41 € au sous-total de 42 € ferait croire à une économie de seulement 1 €."
+        ]
+      },
+      {
+        "heading": "Comparer deux offres sans perdre la meilleure",
+        "paragraphs": [
+          "Vous hésitez parfois entre un code publié par un créateur et une réduction déjà proposée dans votre panier. Avant de remplacer la première sélection, notez le détail obtenu avec elle et vérifiez si l’application explique qu’un seul avantage est utilisable. Un pourcentage plus élevé peut concerner moins d’articles. Le résultat à comparer reste la somme à payer pour les mêmes pièces, avec la même livraison.",
+          "Supposons que vous obteniez un montant intéressant avec l’offre déjà sélectionnée. Si rien n’indique que vous pourrez la reprendre après avoir saisi un autre code, il n’est pas nécessaire de la retirer juste pour faire un essai. Lisez d’abord les conditions de l’autre offre. Une question au support sur la compatibilité des deux avantages est plus utile que plusieurs modifications simultanées, difficiles ensuite à reconstituer."
+        ]
+      },
+      {
+        "heading": "Quand le total semble identique malgré le code",
+        "paragraphs": [
+          "Revenez à l’écran que vous aviez avant l’essai. Si vous avez changé l’adresse, le mode de livraison ou la quantité d’un article entre les deux captures, les totaux ne sont plus directement comparables. Regardez aussi si une somme apparaît comme un crédit à utiliser plus tard. Hacoo documente notamment un programme de cashback lié aux avis après livraison. Un crédit futur et une réduction immédiatement déduite du prix répondent à deux questions différentes.",
+          "Supposons que vous ajoutiez un second article pour atteindre le minimum indiqué dans une offre. La réduction peut apparaître alors même que le total augmente, puisque vous achetez davantage. Pour évaluer cet achat, comparez la somme finale avec ce que vous étiez prêt à payer et vérifiez que la seconde pièce vous intéresse. Si le détail laisse apparaître une remise mais que les chiffres ne se réconcilient toujours pas, gardez la capture et demandez l’explication avant d’autoriser le paiement."
+        ]
+      },
+      {
+        "heading": "Code refusé, champ absent ou réduction déjà appliquée",
+        "paragraphs": [
+          "Si le code est refusé, commencez par vérifier sa copie et la condition citée dans le message. Si le champ est absent, concentrez-vous sur l’écran où vous êtes arrivé et sur les rubriques disponibles dans ce panier. Si une remise apparaît déjà, lisez sa description et son montant avant de tester autre chose. Répéter la saisie sans distinguer ces trois situations donne rarement une information nouvelle. Une photo de l’écran prise avant de revenir en arrière vous fera gagner du temps.",
+          "Pour contacter le support, préparez une description courte : « Je suis au récapitulatif avant paiement, sur le compte utilisé pour cet achat. L’offre indique [condition affichée]. Après avoir saisi le code, je vois [message] et un total de [montant]. Pouvez-vous me préciser si cette offre s’applique à ce panier ? » Ajoutez une capture recadrée sur le prix et le message. Le numéro complet d’une carte bancaire, son cryptogramme et un code d’authentification ne servent pas à vérifier les conditions d’un coupon."
+        ]
+      },
+      {
+        "heading": "Si vous avez déjà payé",
+        "paragraphs": [
+          "Retrouvez le reçu ou le récapitulatif de la commande confirmée et regardez ce qu’il indique pour les articles, la remise et le total. Reprenez, si vous l’aviez conservée, la dernière capture avant paiement pour comparer les deux montants. Si la différence porte sur une ligne précise, indiquez cette ligne au support avec la référence de la commande. Il pourra examiner la transaction concernée et vous dire quelles options existent pour votre dossier.",
+          "Si le code n’a jamais été saisi ou que vous ne savez plus quel prix était affiché avant de payer, dites-le simplement. Demandez si un examen est possible sans compter sur un ajustement après l’achat. Pour votre prochaine commande, gardez comme point de contrôle le dernier écran où vous pouvez encore choisir de payer : la référence des bons articles, le détail de toute remise et le montant final que vous acceptez doivent tous y être suffisamment clairs pour prendre votre décision."
+        ]
+      }
+    ],
+    "readTime": "6 min de lecture",
+    "updated": "5 novembre 2026",
+    "updatedISO": "2026-11-05T00:00:00Z",
+    "publishedISO": "2026-11-05T00:00:00Z",
+    "sourceNote": "L’aide officielle décrit la commande dans l’application. Le guide indépendant illustre la saisie du code. Vérifiez les conditions et le montant dû dans votre panier."
   }
 }
