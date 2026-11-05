@@ -1,10 +1,10 @@
 {
   "articles/find-product-links": {
-    "title": "Hacoo-Links für das Vereinigte Königreich: Produktlinks finden und prüfen",
-    "intro": "Prüfen Sie bei einem Hacoo-bezogenen Link die Zielseite, die ursprüngliche Artikel-ID, das Bild und die genaue Variante, damit ein funktionierender Link nicht zum falschen Artikel führt.",
+    "title": "Hacoo-Links in Großbritannien öffnen und den richtigen Artikel finden",
+    "intro": "Ein Hacoo-Link öffnet den App Store, die Startseite oder eine Variante ohne deine Größe? So prüfst du, wohin der Link führt.",
     "minutes": 9,
     "published": "2026-08-28",
-    "reviewed": "2026-10-10",
+    "reviewed": "2026-11-05",
     "sources": [
       {
         "label": "Offizielle Hacoo-Website – aktuelle Beschreibung der Community und der Entdeckungsfunktionen",
@@ -20,6 +20,36 @@
       }
     ],
     "sections": [
+      {
+        "heading": "Wo landest du nach dem Öffnen?",
+        "paragraphs": [
+          "Bewahre den ursprünglichen Link auf und notiere Artikel, Farbe und Größe. Öffne die offizielle App direkt. Lädt sie normal, öffne denselben Produktlink noch einmal in deinem üblichen Browser und vergleiche das Ergebnis."
+        ],
+        "table": {
+          "columns": [
+            "Ziel des Links",
+            "Nächster Schritt"
+          ],
+          "rows": [
+            [
+              "App Store oder Google Play",
+              "Prüfe, ob die offizielle App installiert und aktuell ist. Öffne danach den ursprünglichen Produktlink erneut."
+            ],
+            [
+              "Startseite der App",
+              "Teste den Link im üblichen Browser. Landest du wieder im Feed, bitte die Quelle um einen neuen Direktlink."
+            ],
+            [
+              "Angebot ohne deine Größe",
+              "Prüfe die Farbauswahl und die dazu verfügbaren Größen. Ein aufrufbares Angebot reserviert keine Variante."
+            ],
+            [
+              "Externer Katalog",
+              "Prüfe die Domain und gleiche die Artikel-ID ab. Für Verfügbarkeit, Preis und Lieferung gelten die Angaben im Zielkatalog."
+            ]
+          ]
+        }
+      },
       {
         "heading": "Warum ein Hacoo-Produkt manchmal schwerer zu finden ist als in einem gewöhnlichen Shop",
         "paragraphs": [
@@ -1105,12 +1135,38 @@
     ]
   },
   "articles/hacoo-not-showing-products-uk": {
-    "title": "Hacoo zeigt im Vereinigten Königreich keine Produkte: Suche und Region prüfen",
-    "intro": "Funktioniert die Hacoo-Suche nicht oder fehlen Produkte, unterscheiden Sie einen einzelnen unverfügbaren Artikel von einem allgemeinen App-Problem und prüfen Sie anschließend echte UK-Region, Version und Linkkontext.",
+    "title": "Hacoo zeigt in Großbritannien keine Produkte? Suche und App prüfen",
+    "intro": "So grenzt du leere Suchergebnisse, einen nicht verfügbaren Artikel und die Meldung zu den App-Einstellungen bei Hacoo in Großbritannien ein.",
     "minutes": 10,
     "published": "2026-10-10",
-    "reviewed": "2026-10-10",
+    "reviewed": "2026-11-05",
     "sections": [
+      {
+        "heading": "Was siehst du auf dem Bildschirm?",
+        "paragraphs": [
+          "Eine ergebnislose Suche, ein fehlerhafter Link und ein leerer Feed haben unterschiedliche Ursachen. Öffne die App direkt und suche nach einem einfachen Begriff wie „trainers“. Merke dir das Ergebnis, bevor du Einstellungen änderst."
+        ],
+        "table": {
+          "columns": [
+            "Anzeige",
+            "Erster Schritt"
+          ],
+          "rows": [
+            [
+              "Keine Suchergebnisse",
+              "Entferne die Filter und suche mit einem einzigen Begriff. Lädt auch der Feed nicht, prüfe App und Verbindung."
+            ],
+            [
+              "Ein geteilter Artikel ist nicht verfügbar",
+              "Öffne einen zweiten aktuellen Link. Funktioniert er, frage die Person, die den ersten geteilt hat, nach Artikel und Variante."
+            ],
+            [
+              "„Unavailable due to app settings“",
+              "Prüfe Lieferland und App-Version. Stimmen beide, schicke dem Support in der App den genauen Wortlaut und den betroffenen Link."
+            ]
+          ]
+        }
+      },
       {
         "heading": "Zuerst feststellen, was tatsächlich fehlt",
         "paragraphs": [
@@ -1294,6 +1350,267 @@
       {
         "label": "Hacoo-Hilfecenter – Verfahren für genehmigte physische Rücksendungen und Ausschlüsse",
         "href": "https://act.hacoo.app/act/sara/helpcenter/home/qa3"
+      }
+    ]
+  },
+  "articles/hacoo-shipping-cost-uk": {
+    "title": "Was kostet der Hacoo-Versand nach Großbritannien?",
+    "intro": "Lies die Versandkosten für deine britische Adresse im Warenkorb ab und vergleiche den Endpreis in Pfund mit und ohne Gratisversand.",
+    "minutes": 7,
+    "published": "2026-11-05",
+    "reviewed": "2026-11-05",
+    "sections": [
+      {
+        "heading": "Versandkosten für deine britische Lieferadresse finden",
+        "paragraphs": [
+          "Öffne den Warenkorb mit genau den Artikeln, die du kaufen möchtest. Stelle Stückzahl, Farbe und Größe ein, bevor du zur Bestellübersicht gehst. Wähle dort die britische Lieferadresse aus und prüfe insbesondere den Postcode. Suche anschließend die Zeile für die Lieferung, die in einer englischen Ansicht etwa „Shipping“ oder „Delivery“ heißen kann. Erst wenn die Adresse übernommen ist und du einen Betrag für die gewählte Versandart siehst, hast du eine brauchbare Grundlage für die Entscheidung. Zum Vergleichen brauchst du den Kauf noch nicht abzuschließen.",
+          "Ein Produktlink kann einen Preis zeigen, obwohl der Verkäufer dein Lieferziel noch gar nicht kennt. Das ist besonders leicht zu übersehen, wenn du von einer deutschsprachigen Empfehlung aus bestellst und erst im letzten Schritt eine britische Adresse einsetzt. Kontrolliere dann oben die Adresse und unten die Währung. Fehlt die Versandzeile oder steht dort sinngemäß, dass die Berechnung später erfolgt, behandle das Feld als offen. Ein leeres Feld lässt weder auf kostenlosen Versand noch auf einen bestimmten Aufschlag schließen. Frage bei Bedarf nach dem Gesamtbetrag für die angezeigte Auswahl."
+        ]
+      },
+      {
+        "heading": "Warenwert, Gutschein und Lieferung in Pfund auseinanderhalten",
+        "paragraphs": [
+          "Lies den Warenkorb von oben nach unten. Der Einzelpreis steht neben dem Artikel, die Zwischensumme umfasst die ausgewählten Mengen. In manchen Darstellungen ist ein Artikelrabatt bereits im angezeigten Preis berücksichtigt. Ziehe ihn deshalb nur dann ein zweites Mal von der Zwischensumme ab, wenn ihn die Übersicht als weiteren Abzug ausweist. Danach kommen ein tatsächlich angerechneter Gutschein, die Lieferung und gegebenenfalls weitere ausdrücklich ausgewiesene Beträge. Die letzte Zeile zeigt, was du mit dieser Bestellung zu zahlen bereit bist. Halte alle Beträge in derselben Währung fest.",
+          "Falls der Endbetrag höher ist als erwartet, hilft ein kleiner Rückwärtstest. Ziehe von der letzten Summe die Zwischensumme nach den ausgewiesenen Rabatten ab. Entspricht die Differenz der Versandzeile, ist die Abweichung erklärt. Andernfalls kontrolliere zuerst die Mengen und alle weiteren Zeilen. Eine ausgewählte Expressoption, eine andere Variante oder ein Gutschein, der nur auf einen Teil der Artikel angewandt wird, wären unterschiedliche Erklärungen. Entscheidend ist, was dein Warenkorb tatsächlich ausweist. Eine spätere Umrechnung auf der Kartenabrechnung gehört zu einer anderen Rechnung als der Versandbetrag in GBP."
+        ]
+      },
+      {
+        "heading": "Warum die öffentlichen Gewichtsangaben keine sichere Preisliste ergeben",
+        "paragraphs": [
+          "Wer nach einer britischen Versandtabelle sucht, stößt bei Hacoo auf zwei unterschiedliche Angaben. Eine Hilfeseite zur Grundgebühr trennt Pakete unter beziehungsweise über drei Kilogramm. Eine andere Versandrichtlinie setzt die Trennung bei fünf Kilogramm an und verweist für den konkreten Grundbetrag ausdrücklich auf die Kasse. Beide Seiten beschreiben einen Zuschlag für schwerere Pakete. Keine der beiden Angaben belegt allerdings, welche Regel für deinen heutigen Warenkorb mit britischem Ziel und der ausgewählten Versandart angewandt wird. Auch die Behandlung genau an der genannten Grenze bleibt mit dieser Formulierung offen.",
+          "Stell dir einen Warenkorb mit Jacke und Schuhen vor. Selbst wenn die Produktseiten Gewichte nennen, lässt sich daraus das Gewicht des fertig verpackten Pakets nicht zuverlässig rekonstruieren. Es wäre ebenso unsicher, einen auf einer Hilfeseite in Dollar genannten Zuschlag eigenständig in Pfund umzurechnen und als verbindlichen Preis zu behandeln. Möchtest du wissen, was das zweite Paar Schuhe kostet, entferne es probeweise und vergleiche die beiden tatsächlich angezeigten Bestellübersichten. So siehst du die Auswirkung auf den gesamten Kauf und kannst unterscheiden, ob sich Warenwert, Versand oder beides geändert hat."
+        ]
+      },
+      {
+        "heading": "Wann sich ein Angebot mit Gratisversand lohnt",
+        "paragraphs": [
+          "Ein Hinweis auf Gratisversand ist ein Anlass, die Bedingungen des konkreten Angebots zu lesen. Achte auf Lieferland, ausgewählte Waren, Bestellwert und Versandart. Prüfe außerdem, ob sich die Aktion mit dem bereits eingesetzten Gutschein kombinieren lässt. Wird ein Mindestwert genannt, kann die Frage entscheidend sein, welcher Betrag dafür zählt. Lies den Wortlaut und kontrolliere nach dem Anwenden des Gutscheins die neue Übersicht. Maßgeblich für deine Entscheidung sind die Versandzeile und der Endbetrag, die gleichzeitig für denselben Warenkorb angezeigt werden.",
+          "Überlege dir vor dem Hinzufügen eines weiteren Artikels, ob du ihn auch ohne das Angebot kaufen würdest. Der Preis eines zusätzlichen Kleidungsstücks kann höher sein als die gesparte Lieferung. Wer den Artikel ohnehin braucht, kann den gemeinsamen Einkauf sinnvoll finden. Wer ihn nur für eine vermeintliche Ersparnis dazulegt, sollte beide Endbeträge nebeneinanderschreiben. Wenn nach Auswahl der Adresse weiterhin Versandkosten erscheinen, überprüfe die Aktionsbedingungen und den gewählten Versand. Lässt sich der Widerspruch nicht klären, plane mit dem angezeigten Gesamtpreis oder warte mit der Zahlung."
+        ]
+      },
+      {
+        "heading": "Rechenbeispiel mit zwei hypothetischen Warenkörben",
+        "paragraphs": [
+          "Die folgenden Zahlen illustrieren den Vergleich und sind frei erfunden. Warenkorb A enthält Artikel für £32. Ein ausdrücklich angerechneter Gutschein zieht £4 ab. Hinzu kommen £5 für die Lieferung. Damit zahlst du £32 − £4 + £5 = £33. Für Warenkorb B legst du einen weiteren Artikel hinein. Der Warenwert steigt dadurch auf £38, der Gutschein bleibt bei £4, und für die Lieferung zeigt das Beispiel £0. Der neue Gesamtbetrag beträgt also £38 − £4 + £0 = £34. Diese Zahlen beschreiben weder einen Hacoo-Tarif noch einen verfügbaren Gutschein.",
+          "Was hat der zusätzliche Artikel tatsächlich gekostet? Die Ware ist um £6 teurer geworden, die Lieferung um £5 günstiger. Unter dem Strich kostet Warenkorb B deshalb £1 mehr. Wenn dir der zusätzliche Artikel mindestens dieses eine Pfund wert ist und du ihn benutzen möchtest, kannst du dich bewusst dafür entscheiden. Willst du möglichst wenig ausgeben, ist A in dieser Rechnung die günstigere Wahl. Funktioniert der Gutschein im zweiten Warenkorb plötzlich nicht mehr, stimmt der Vergleich schon nicht mehr. Rechne mit den neuen Zahlen und streiche die alten aus deinem Vergleich."
+        ],
+        "table": {
+          "columns": [
+            "Warenkorb (Beispiel)",
+            "A",
+            "B"
+          ],
+          "rows": [
+            [
+              "Warenwert",
+              "£32",
+              "£38"
+            ],
+            [
+              "Gutschein",
+              "−£4",
+              "−£4"
+            ],
+            [
+              "Versand",
+              "£5",
+              "£0"
+            ],
+            [
+              "Zu zahlen",
+              "£33",
+              "£34"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Den angezeigten Preis festhalten und später wiederfinden",
+        "paragraphs": [
+          "Speichere vor dem Bezahlen die Zusammenfassung mit Datum, ausgewählter Versandart, Währung, Warenwert, Rabatt, Versand und Endbetrag. Für den eigenen Vergleich genügt eine kurze Notiz mit diesen Angaben. Wenn du nachfragst, kannst du zusätzlich einen Ausschnitt der relevanten Preiszeilen beilegen. Der Ausschnitt muss keine vollständige Anschrift oder Zahlungsdaten zeigen. Ein Bild vom Werbebanner allein hilft wenig, falls die Rückfrage später lautet, welche Kondition auf den konkreten Warenkorb angewandt wurde. Dafür brauchst du die dazugehörige Bestellübersicht mit den ausgewählten Artikeln.",
+          "Öffnest du den Warenkorb an einem anderen Tag erneut, kontrolliere die Versandzeile noch einmal. Eine gespeicherte Ansicht dokumentiert das frühere Angebot, während der Bestellabschluss auf der aktuellen Auswahl beruht. Vergleiche anschließend die Bestellbestätigung mit der letzten Übersicht. Bei einer Abweichung kannst du konkret benennen, ob sich der Warenwert, der Gutschein oder die Lieferung geändert hat. Wende dich dafür über das Konto an die Stelle, bei der du bestellt hast, und frage nach genau dieser Differenz in Pfund. So lässt sich die Antwort anschließend anhand deiner eigenen Unterlagen prüfen."
+        ]
+      }
+    ],
+    "takeaways": [
+      "Vergleiche Preise erst mit britischer Lieferadresse, gewählter Versandart und vollständig ausgewiesenem GBP-Endbetrag.",
+      "Die zwei öffentlichen Gewichtsgrenzen liefern keine verlässliche Berechnung für deinen Warenkorb.",
+      "Bei Gratisversand entscheidet die Differenz zwischen beiden Endbeträgen, ob du wirklich weniger zahlst."
+    ],
+    "sources": [
+      {
+        "label": "Hacoo-Hilfe zur Grundgebühr und zur Drei-Kilogramm-Angabe",
+        "href": "https://act.hacoo.app/faqshippingfee"
+      },
+      {
+        "label": "Hacoo-Versandrichtlinie mit Fünf-Kilogramm-Angabe und Verweis auf die Kasse",
+        "href": "https://act.hacoo.app/freeshiping"
+      },
+      {
+        "label": "Hacoo zu Versand und Lieferung",
+        "href": "https://web.hacoo.app/en-US/pages/shipping-info"
+      }
+    ]
+  },
+  "articles/hacoo-wrong-postcode-uk": {
+    "title": "Falscher Postcode bei einer Hacoo-Bestellung: Was tun?",
+    "intro": "Prüfe den Postcode in der Bestellung. So beantragst du vor dem Versand eine Korrektur und findest nach dem Versand den richtigen Kontakt.",
+    "minutes": 7,
+    "published": "2026-11-05",
+    "reviewed": "2026-11-05",
+    "sections": [
+      {
+        "heading": "Zuerst den betroffenen Auftrag und seinen Status öffnen",
+        "paragraphs": [
+          "Rufe die Bestellung in dem Konto auf, mit dem du bezahlt hast. Vergleiche die dort hinterlegte Lieferanschrift mit der korrekten Anschrift. Schau ausdrücklich nach der Lieferadresse und nicht nur nach der Rechnungsanschrift. Notiere Bestellnummer, angezeigten Status und den Zeitpunkt, zu dem dir der Fehler aufgefallen ist. Hacoo weist auf seiner Versandseite darauf hin, dass für eine Korrektur nur wenig Zeit bleibt, und empfiehlt die sofortige Kontaktaufnahme. Warte deshalb nicht erst auf eine Versandbestätigung, wenn du den Zahlendreher schon unmittelbar nach der Zahlung entdeckt hast.",
+          "Die nächsten Schritte hängen davon ab, wie weit dieser einzelne Auftrag ist. Steht er noch in Bearbeitung, richte die Anfrage an die Bestellhilfe von Hacoo. Gibt es bereits eine Versandnummer, öffne zusätzlich den letzten Eintrag in der Sendungsverfolgung. Ein angelegtes Versandetikett und die dokumentierte Übergabe an den Paketdienst sind zwei unterschiedliche Hinweise. Teile dem Support mit, was du tatsächlich siehst. Wenn die Übersicht mehrere Pakete für denselben Kauf nennt, notiere ihre einzelnen Referenzen. Eine Korrektur könnte für ein noch nicht versandtes Paket anders zu behandeln sein als für das bereits übergebene."
+        ]
+      },
+      {
+        "heading": "Hausnummer, Wohnung und britischen Postcode richtig abgleichen",
+        "paragraphs": [
+          "Lies die Anschrift Zeile für Zeile. Bei einem Haus mit mehreren Wohnungen kann die Wohnungsnummer als „Flat“ oder „Apartment“ vor der Hausnummer stehen. Prüfe anschließend Gebäude oder Hausnummer, Straße, Ort, Postcode und Lieferland. Die Ziffer einer Wohnung kann leicht im Feld für die Hausnummer landen, wenn der Browser die Adresse automatisch ergänzt hat. Vergleiche die Bestellansicht mit einer Anschrift, an die dir bereits erfolgreich Post zugestellt wurde, oder mit der vom Empfänger bestätigten Schreibweise. Bei einem Geschenk kann ein kurzer Anruf zuverlässiger sein als eine alte Nachricht.",
+          "Nenne den tatsächlichen Unterschied möglichst genau. Ein fehlendes Leerzeichen bei sonst gleichen Zeichen ist ein anderer Sachverhalt als eine vertauschte Ziffer oder ein falscher letzter Buchstabe. Behaupte bei einer bloßen Abweichung in der Darstellung nicht, das Paket sei schon fehlgeleitet. Umgekehrt solltest du eine falsche Zeichenfolge trotz richtig aussehendem Ortsnamen umgehend melden. Kontrolliere im Zuge dessen, ob weitere Felder betroffen sind. Schreibe für die Korrektur einmal die vollständige gewünschte Lieferanschrift auf. Sonst kann ein einzeln nachgereichter Postcode neben einer ebenfalls unrichtigen Wohnungsnummer stehen bleiben."
+        ]
+      },
+      {
+        "heading": "Vor dem Versand die Anschrift des konkreten Auftrags korrigieren lassen",
+        "paragraphs": [
+          "Schau direkt in den Bestelldetails nach, ob für diesen Auftrag eine Bearbeitung der Anschrift angeboten wird. Falls ja, bestätige die korrigierten Felder, öffne die Bestellung erneut und kontrolliere die gespeicherte Fassung. Ist nur das allgemeine Adressbuch bearbeitbar, kannst du dort den richtigen Eintrag für spätere Käufe hinterlegen. Bitte zusätzlich über den offiziellen Support um die Änderung am bereits bezahlten Auftrag. Eine aktualisierte Standardadresse allein belegt nicht, dass die Versandangaben eines älteren Kaufs neu übernommen wurden. Der Unterschied ist wichtig, wenn beide Ansichten ähnlich aussehen.",
+          "Beginne die Nachricht mit der Bestellnummer und der Bitte, vor der Übergabe an den Versanddienst die Lieferanschrift zu berichtigen. Nenne den fehlerhaften Bestandteil und gib im privaten Bestellkanal die vollständige richtige Anschrift an. Hacoos öffentliche Kontaktseite verweist für Fragen zum Konto und zur App auf den Chat in der App. Bewahre die Antwort und gegebenenfalls die Vorgangsnummer auf. Frag ausdrücklich, ob die Korrektur auf dem für den Versand verwendeten Auftrag hinterlegt wurde. Eine allgemeine Antwort darüber, wie du Adressen im Profil bearbeitest, beantwortet diese Frage noch nicht."
+        ]
+      },
+      {
+        "heading": "Wann eine Stornierung in Betracht kommt",
+        "paragraphs": [
+          "Wenn eine direkte Adressänderung nicht angeboten wird, schaue nach, ob der Auftrag selbst die Option zur Stornierung zeigt. Hacoos europäische Bestellhilfe beschreibt diese Möglichkeit für noch nicht versandte Bestellungen unter „My orders“. Kontrolliere vor dem Bestätigen die Artikel und den Umfang der Aktion. Wer nur den Postcode für ein Paket ändern wollte, möchte möglicherweise nicht gleichzeitig sämtliche Produkte eines größeren Einkaufs stornieren. Bei unklarem Umfang bitte zuerst um eine auf diesen Auftrag bezogene Auskunft. Für einen bereits als versandt angezeigten Kauf ist eine Stornierung vor Versand jedenfalls kein passender nächster Schritt.",
+          "Entscheidest du dich zu stornieren, halte die Rückmeldung des Systems fest und kontrolliere den Auftragsstatus erneut. Eine bloß versandte Nachricht oder ein offenes Stornierungsfenster belegt noch keine abgeschlossene Stornierung. Gib einen Ersatzauftrag erst auf, wenn du weißt, was aus dem ersten geworden ist. Andernfalls könnten zwei Bestellungen mit ähnlichem Inhalt parallel bearbeitet werden. Beim erneuten Kauf prüfst du Größe, Variante, Verfügbarkeit, Rabatt und Versandkosten noch einmal, bevor du die richtige Adresse auswählst. Die Bedingungen der ursprünglichen Bestellung müssen beim neuen Kauf nicht mehr verfügbar sein."
+        ]
+      },
+      {
+        "heading": "Nach dem Versand den zuständigen Paketdienst ermitteln",
+        "paragraphs": [
+          "Ist das Paket bereits unterwegs, öffne den Versandverlauf direkt aus den Bestelldetails. Suche nach dem genannten Transporteur, der Sendungsnummer und gegebenenfalls nach einer zweiten Referenz für die Zustellung im Vereinigten Königreich. Wende dich über die offizielle Website oder App der dort tatsächlich genannten Firma an den zuständigen Dienst. Beschreibe den Fehler und frage, welche Optionen für genau dieses Paket möglich sind. Beispiele für Fragen sind, ob eine Zustellanweisung angenommen werden kann, eine Abholung angeboten wird oder eine Änderung vom Absender angefordert werden muss.",
+          "Parallel informierst du den Hacoo-Support, dass die Sendung inzwischen unterwegs ist. Teile die Referenz des Paketdiensts und dessen konkrete Antwort mit. Behauptet niemand, eine neue Adresse übernommen zu haben, behandle die ursprünglichen Versanddaten als ungeklärt. Bei einem Eintrag wie „Adressproblem“ zählt der genaue Wortlaut und das Datum. Bei einer Rücksendung an den Absender frag nach dem für die Bestellung vorgesehenen Vorgehen. Daraus folgt weder automatisch ein neuer Versand noch eine bestimmte Erstattung. Speichere die verknüpften Nachweise, damit du bei einer Rückfrage die betroffene Sendung wiederfindest."
+        ]
+      },
+      {
+        "heading": "Englische Nachricht für den Support und Bestätigung der Korrektur",
+        "paragraphs": [
+          "Für eine Anfrage im englischsprachigen Support kannst du diese Vorlage kopieren und die Platzhalter ersetzen: „Hello, the delivery postcode on order [order number] is incorrect. The order currently shows [status]. The postcode entered was [old postcode]. The correct delivery address is [flat, house number and street, town, postcode, United Kingdom]. Can you update the delivery address for this order before dispatch and confirm whether the shipping label will use the corrected address? If the parcel has already been handed over, please let me know which carrier and tracking reference apply.“ Sende die vollständige Anschrift ausschließlich über den privaten Kontaktkanal.",
+          "Wenn die Antwort eintrifft, prüfe, worauf sie sich bezieht: auf deinen Antrag, auf eine Änderung im Adressbuch oder auf eine bestätigte Korrektur des laufenden Auftrags. Bei einer bestätigten Änderung gleiche die Angaben in der Bestellung noch einmal ab und achte später auf die erste Versandmeldung. Falls Anzeige und Auskunft voneinander abweichen, antworte im bestehenden Vorgang und zitiere knapp die betreffende Zeile. So bleibt erkennbar, welche Angabe der Support zuletzt geprüft hat. Entferne außerdem veraltete Vorschläge aus deiner gespeicherten Lieferadresse, damit derselbe Postcode nicht beim nächsten Kauf erneut eingesetzt wird."
+        ]
+      }
+    ],
+    "takeaways": [
+      "Notiere den Status des betroffenen Auftrags und melde einen falschen Postcode sofort über den privaten Bestellkanal.",
+      "Lass dir bestätigen, welche Anschrift für die laufende Bestellung und ihr Versandetikett verwendet wird.",
+      "Bei einem bereits versandten Paket klärst du die Möglichkeiten mit dem angegebenen Paketdienst und Hacoo."
+    ],
+    "sources": [
+      {
+        "label": "Hacoo-Versandinformationen zur falschen Lieferanschrift",
+        "href": "https://web.hacoo.app/en-US/pages/shipping-info"
+      },
+      {
+        "label": "Hacoo-Bestellhilfe zur Stornierung vor Versand",
+        "href": "https://act.hacoo.app/eu/help-center/order/2"
+      },
+      {
+        "label": "Offizielle Hacoo-Kontaktwege für Konten und App",
+        "href": "https://www.hacoo.app/en-US/pages/contact-us"
+      }
+    ]
+  },
+  "articles/hacoo-missing-item-uk": {
+    "title": "Artikel fehlt im Hacoo-Paket? Teillieferung prüfen",
+    "intro": "Vergleiche Bestellpositionen und Paketnummern. Prüfe, ob eine zweite Lieferung ansteht und welche Fotos für die Meldung eines fehlenden Artikels helfen.",
+    "minutes": 7,
+    "published": "2026-11-05",
+    "reviewed": "2026-11-05",
+    "sections": [
+      {
+        "heading": "Ein Paket ist angekommen – was fehlt genau?",
+        "paragraphs": [
+          "Lege beim Auspacken die erhaltenen Artikel und die Verpackung zur Seite und öffne die Bestelldetails. Benenne so genau wie möglich, was dir fehlt. Ist ein ganzes Produkt ausgeblieben, fehlt eine von zwei bestellten Einheiten, oder fehlt Zubehör in der Verpackung eines ansonsten gelieferten Artikels? Ein Paar Schuhe ohne den zweiten Schuh verlangt beispielsweise eine andere Beschreibung als zwei separat bestellte Paar Schuhe, von denen nur eines angekommen ist. Falls eine andere Farbe oder Größe geliefert wurde, halte auch das fest. Hier ist ein Artikel vorhanden, entspricht aber der Bestellung nicht.",
+          "Ist dagegen gar kein Paket angekommen und meldet die Sendungsverfolgung bereits eine Zustellung, beginne mit dem Zustellnachweis des Paketdiensts und der betroffenen Versandnummer. Dafür empfiehlt Hacoo die Rückfrage beim zuständigen Transporteur. Bei einem tatsächlich erhaltenen Paket prüfst du zuerst seinen Inhalt und die zugeordneten Bestellpositionen. Notiere das Datum des Empfangs und ob die Verpackung offen, eingerissen oder unauffällig war. Beschreibe nur beobachtbare Tatsachen. Aus einem Riss allein lässt sich nicht ableiten, wo oder wann ein bestimmter Artikel abhandenkam oder ob er überhaupt in diesem Paket liegen sollte."
+        ]
+      },
+      {
+        "heading": "Bestellzeilen und Paketnummern einander zuordnen",
+        "paragraphs": [
+          "In der Bestellübersicht findest du die Artikel, Varianten und bestellten Mengen. Übertrage sie in eine kurze eigene Liste oder auf einen Zettel. Erstelle für jede Position eine Zeile mit Produkt, Farbe oder Größe, bestellter Stückzahl und erhaltener Stückzahl. Ergänze die Paketnummer, wenn eine Zuordnung angezeigt wird. Gleiche die Sendungsnummer auf dem äußeren Etikett mit der Versandansicht des Auftrags ab. Die Bestellnummer gehört zum gesamten Kauf und kann mehrere Pakete umfassen. Eine Sendungsnummer hilft dir dagegen, das konkret eingetroffene Paket und seine Sendungsereignisse wiederzufinden.",
+          "Kontrolliere insbesondere Artikel mit fast identischen Produktbildern. Bei zwei Sweatshirts in unterschiedlichen Größen zeigt das Produktfoto vielleicht dasselbe Motiv, während die Variante erst im Text erkennbar ist. Schau auf die Etiketten der gelieferten Ware und hake nur die passende Größe ab. Ordnet die App einzelne Artikel keinem Paket zu, lass dieses Feld offen. Das ist eine konkrete Frage für den Support. Die Reihenfolge der Produkte im Warenkorb oder die Reihenfolge der Versandmeldungen erlaubt für sich genommen keine sichere Zuordnung. Prüfe auch, ob du versehentlich die Bestätigung eines zweiten Einkaufs geöffnet hast."
+        ],
+        "table": {
+          "columns": [
+            "Beispielposition",
+            "Bestellt",
+            "Im Paket",
+            "Noch offen"
+          ],
+          "rows": [
+            [
+              "Blaues T-Shirt",
+              "2",
+              "1",
+              "1"
+            ],
+            [
+              "Schwarze Kappe",
+              "1",
+              "1",
+              "0"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Nach einer zweiten Sendung oder Vorbestellung sehen",
+        "paragraphs": [
+          "Hacoo erklärt in seinen Versandinformationen, dass verfügbare Artikel separat verschickt werden können, wenn zum selben Kauf vorbestellte oder noch nicht verfügbare Waren gehören. Öffne deshalb die Versanddetails des gesamten Auftrags und sieh nach weiteren Sendungsnummern, noch in Bearbeitung befindlichen Positionen oder einem Hinweis zur Vorbestellung. Die Tracking-Hilfe beschreibt den Einstieg über die Bestellungen im Konto und die Logistikansicht der jeweiligen Bestellung. Die Darstellung in deiner App kann anders aussehen. Entscheidend ist, ob sie für genau diesen Einkauf eine weitere Sendung oder einen offenen Artikel ausweist.",
+          "Wird der fehlende Artikel ausdrücklich einem zweiten, noch unterwegs befindlichen Paket zugeordnet, notiere diese Zuordnung und verfolge diese Nummer separat. Kommt das zweite Paket an, vergleiche dessen Inhalt erneut mit der Liste. Ist der Artikel weiterhin offen, alle angezeigten Pakete sind aber zugestellt oder die Aufteilung bleibt unklar, melde dich zeitnah bei der Bestellhilfe. Ein allgemeiner Hinweis auf mögliche Teilsendungen belegt keine konkrete Nachlieferung. Bitte bei einer entsprechenden Auskunft deshalb um die Zuordnung der fehlenden Bestellzeile und, sobald vorhanden, um die zugehörige Sendungsreferenz."
+        ]
+      },
+      {
+        "heading": "Verpackung, Menge und fehlendes Zubehör dokumentieren",
+        "paragraphs": [
+          "Fotografiere das äußere Paket, das Versandetikett und die tatsächlich erhaltenen Teile zusammen in einer übersichtlichen Anordnung. Mach ein zweites Foto, falls Größe, Farbe, Zahl der Einheiten oder ein Barcode in der Gesamtaufnahme kaum zu erkennen sind. Hacoos Hilfecenter nennt für fehlende Artikel insbesondere das Bild der Außenverpackung und den Zahlungsbeleg. Bei fehlendem Zubehör soll der erhaltene Artikel erkennbar sein, ergänzt um eine Beschreibung oder einen geeigneten Bildhinweis auf das fehlende Teil. Ein Foto eines leeren Kartons allein beantwortet die Frage nach Menge und Variante selten ausreichend.",
+          "Bei einem Set hilft der Vergleich mit der für deine Variante gespeicherten Produktbeschreibung. Wenn dort ein abnehmbarer Gurt ausdrücklich zum Lieferumfang gehört, fotografiere die Tasche mit den vorhandenen Befestigungen und sichere den betreffenden Beschreibungsausschnitt. Prüfe zuvor kleine Innenfächer und Verpackungseinsätze. Ein Dekorationsgegenstand auf dem allgemeinen Produktbild muss nicht Bestandteil des bestellten Sets sein. Zeige dem Support, an welcher Stelle der fehlende Bestandteil beschrieben war. Bewahre die Originaldateien für dich auf und gib die relevanten Belege im privaten Supportkanal weiter. Öffentlich geteilte Etiketten können eine vollständige Lieferadresse erkennen lassen."
+        ]
+      },
+      {
+        "heading": "Fehlmenge im Bestellkonto melden: ein konkretes Beispiel",
+        "paragraphs": [
+          "Öffne die Hilfe zur betroffenen Bestellung und wähle die passende Bestellposition aus, sofern das Formular dies ermöglicht. Beschreibe den tatsächlichen Inhalt, die fehlende Menge und das Ergebnis deiner Suche nach weiteren Paketen. Ein Beispiel: „Ich habe zwei dunkelblaue Oberteile in Größe M bestellt. Im Paket mit der Referenz [Sendungsnummer] lag ein dunkelblaues Oberteil in M. Die Bestellung zeigt für diese Position zwei Stück. Ich finde keine Zuordnung des zweiten Stücks zu einer anderen Sendung. Können Sie die Zuordnung prüfen und mir mitteilen, wie die fehlende Einheit behandelt wird?“",
+          "Ergänze Bestellnummer, Empfangsdatum und die angeforderten Belege. Zeigt der Auftrag ein zweites Paket, ersetze den entsprechenden Satz durch dessen Nummer und den dort sichtbaren Status. Das Hilfecenter nennt für die Bearbeitung die Auswahl des Auftrags beziehungsweise des Produkts, eine Beschreibung des Problems und das Hochladen von Bildern. Falls die App eine Kategorie für fehlende Artikel anbietet, passt sie besser als eine pauschale Beschwerde über die gesamte Lieferung. Bei einem unklaren Feld frag nach, bevor du Angaben bestätigst, die einen vollständigen Verlust oder eine Rücksendung sämtlicher Ware nahelegen."
+        ]
+      },
+      {
+        "heading": "Antwort, Nachlieferung oder Erstattung der betroffenen Position verfolgen",
+        "paragraphs": [
+          "Speichere die Vorgangsnummer, die Einreichungsbestätigung und die Antwort zu deiner konkreten Bestellposition. Meldet der Support eine zweite Sendung, bitte um die Sendungsreferenz und prüfe nach Zustellung deren tatsächlichen Inhalt. Wird eine Erstattung angeboten, frage nach betroffener Stückzahl, Betrag, Währung und Ziel der Gutschrift. Bei einer größeren Bestellung mit Rabatt kann der einer einzelnen Position zugerechnete Betrag vom ursprünglich beworbenen Einzelpreis abweichen. Wenn die Rechnung unklar bleibt, bitte um die Aufschlüsselung für die fehlende Einheit. Schließe die übrigen, ordnungsgemäß erhaltenen Artikel nur ein, wenn es dafür einen eigenen Grund gibt.",
+          "Richte dich bei weiteren Schritten nach der schriftlichen Antwort zu deinem Fall. Sende vorhandene Ware nicht allein deshalb zurück, weil ein Teil fehlt, und verwende keine aus fremden Erfahrungsberichten übernommene Rücksendeadresse. Falls weitere Fotos oder Unterlagen angefordert werden, füge sie im bestehenden Vorgang mit einer kurzen Erklärung hinzu, welche Frage sie beantworten. Halte fest, wann die Nachlieferung tatsächlich angekommen oder der zugesagte Betrag tatsächlich gutgeschrieben worden ist. Damit lässt sich der Fall abschließen, ohne eine bloße Statusmeldung mit der Behebung der Fehlmenge zu verwechseln."
+        ]
+      }
+    ],
+    "takeaways": [
+      "Gleiche erhaltene Mengen und Varianten mit Bestellzeilen und Paketnummern ab.",
+      "Frage nach der Zuordnung des fehlenden Artikels, wenn eine zweite Sendung nur vermutet wird.",
+      "Dokumentiere Verpackung, Zahlung und Inhalt und verfolge die Lösung für die konkrete Fehlmenge."
+    ],
+    "sources": [
+      {
+        "label": "Hacoo zu Teilsendungen bei Vorbestellungen und noch nicht verfügbarer Ware",
+        "href": "https://web.hacoo.app/en-US/pages/shipping-info"
+      },
+      {
+        "label": "Hacoo-Hilfecenter zu Belegen für fehlende Artikel und Zubehör",
+        "href": "https://act.hacoo.app/act/sara/helpcenter/home/qa3"
+      },
+      {
+        "label": "Hacoo-Anleitung für Bestellstatus und Sendungsdetails",
+        "href": "https://act.hacoo.app/trackingorders"
       }
     ]
   }

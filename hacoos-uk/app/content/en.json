@@ -1,10 +1,10 @@
 {
   "articles/find-product-links": {
-    "title": "Hacoo Links UK: How to Find and Verify Product Links",
-    "intro": "Check a Hacoo-related destination, source listing ID, image and exact option so a working link does not send you to the wrong item.",
+    "title": "How to Open Hacoo Links in the UK and Find the Right Item",
+    "intro": "If a Hacoo link opens the App Store, the homepage or an unavailable size, follow the checks for that screen before choosing a UK product.",
     "minutes": 9,
     "published": "2026-08-28",
-    "reviewed": "2026-10-10",
+    "reviewed": "2026-11-05",
     "sources": [
       {
         "label": "Hacoo official website — current community and discovery description",
@@ -20,6 +20,36 @@
       }
     ],
     "sections": [
+      {
+        "heading": "Where did the product link take you?",
+        "paragraphs": [
+          "Keep the original link and note the item, colour and size you expected. Open the official app directly to see whether it loads normally. Then compare what happens when you open the same link from your usual browser."
+        ],
+        "table": {
+          "columns": [
+            "Where you land",
+            "What to do next"
+          ],
+          "rows": [
+            [
+              "App Store or Google Play",
+              "Check whether the official app is installed and up to date. Reopen the original product link after that check."
+            ],
+            [
+              "The app homepage",
+              "Try the same link in your usual browser. If it still lands on the feed, ask the source for a fresh direct product link."
+            ],
+            [
+              "A listing with your size missing",
+              "Check the exact colour and size selector. A working link does not reserve a variant."
+            ],
+            [
+              "An external catalogue",
+              "Read the destination domain and match the item ID. Stock, price and delivery belong to that catalogue."
+            ]
+          ]
+        }
+      },
       {
         "heading": "Why finding a Hacoo product can feel harder than opening a normal shop",
         "paragraphs": [
@@ -1105,12 +1135,38 @@
     ]
   },
   "articles/hacoo-not-showing-products-uk": {
-    "title": "Hacoo Not Showing Products in the UK: Search and Region Checks",
-    "intro": "If Hacoo search is not working or products are missing, separate one unavailable item from an app-wide problem, then check the real UK region, version and link context.",
+    "title": "Hacoo Not Showing Products in the UK? Check Search and App Settings",
+    "intro": "See what to check when Hacoo search is empty, one item disappears or the app says a product is unavailable due to app settings in the UK.",
     "minutes": 10,
     "published": "2026-10-10",
-    "reviewed": "2026-10-10",
+    "reviewed": "2026-11-05",
     "sections": [
+      {
+        "heading": "Which screen are you seeing?",
+        "paragraphs": [
+          "A search with no matches, a failed link and a blank feed need different checks. Open the app normally, then try one simple search such as “trainers”. Use the result as a point of comparison before changing anything."
+        ],
+        "table": {
+          "columns": [
+            "What you see",
+            "First check"
+          ],
+          "rows": [
+            [
+              "Search returns no products",
+              "Remove filters and try one descriptive word. If the feed also fails to load, check the app and connection."
+            ],
+            [
+              "One shared product is unavailable",
+              "Open a different current link. If that works, check the original item and variant with the person who shared it."
+            ],
+            [
+              "“Unavailable due to app settings”",
+              "Check the delivery country and current app version. If both are correct, send the exact message and the affected link to in-app support."
+            ]
+          ]
+        }
+      },
       {
         "heading": "Start by identifying what is actually missing",
         "paragraphs": [
@@ -1294,6 +1350,267 @@
       {
         "label": "Hacoo Help Center — approved physical-return process and exclusions",
         "href": "https://act.hacoo.app/act/sara/helpcenter/home/qa3"
+      }
+    ]
+  },
+  "articles/hacoo-shipping-cost-uk": {
+    "title": "How Much Is Hacoo Shipping to the UK? Check Your Delivery Fee",
+    "intro": "Find the delivery charge for your UK address, compare two baskets in pounds and see when a free-shipping offer can still raise the amount you pay.",
+    "minutes": 7,
+    "published": "2026-11-05",
+    "reviewed": "2026-11-05",
+    "sections": [
+      {
+        "heading": "Find the delivery charge for your UK address",
+        "paragraphs": [
+          "To see how much Hacoo delivery will cost, open the basket you intend to buy and go as far as the order review, before you authorise payment. Select your actual UK delivery address. Look for the delivery or shipping line and the total payable, with the currency visible beside them. A product listing can tell you the price of a pair of trainers without telling you what it costs to receive them in Leeds. If you have only seen a price on a shared product link, you have one part of the calculation. You can leave the review without placing an order.",
+          "If the delivery line is missing, check which details the page is still asking for. It may need an address, a delivery selection or a refresh after you have changed the quantity. A dash, an empty box or an instruction to calculate later gives you no figure to budget with. If the order review still does not explain the charge, use the platform’s support route and ask where to see delivery for this basket before paying. An independent directory cannot see your checkout. Take particular care if the link took you to another retailer, since that retailer will produce its own quote."
+        ]
+      },
+      {
+        "heading": "Read the basket in pounds, one line at a time",
+        "paragraphs": [
+          "Start with the items. Check the chosen size, colour and quantity, then write down the subtotal shown for those exact selections. Next find any discount the checkout has actually applied. A voucher saved in your account and an amount already deducted from the subtotal are two different things. If a promotion has already reduced each item’s price, subtracting it again in your own calculation will make the total look too high. Finally, copy the delivery charge, any other separately identified charges, and the amount shown beside the payment button. Use the currency displayed at that step for every entry.",
+          "If the currency is GBP, you can compare these lines directly in pounds. A price copied in euros from a guide does not belong in the same sum. When a checkout shows both an approximate conversion and a charge in another currency, keep the original currency attached to each number and check which one the payment screen uses. For a basket shared between two people, first work out the single order total. Decide how to share the delivery charge afterwards. Dividing the whole charge by the number of product links can give misleading results if one link has a quantity of three and another has a quantity of one."
+        ]
+      },
+      {
+        "heading": "Why the public weight figures give different answers",
+        "paragraphs": [
+          "Two Hacoo help pages give different descriptions of when an additional weight charge starts. The shipping-fee FAQ uses a three-kilogram boundary. A separate shipping policy uses five kilograms and tells customers to check the basic amount at checkout for their destination. Both use dollars in their examples of an extra charge. Neither description provides a reliable flat UK price in pounds for an individual basket. A particularly awkward example is a parcel weighing four kilograms. It falls on different sides of the two published boundaries. Picking whichever rule produces the smaller number would give a neat answer without establishing which rule is in force.",
+          "The general delivery page also says that freight rules can change over time. If you are comparing a light T-shirt with bulky shoes, compare the two baskets at checkout while keeping the destination and delivery option the same. You do not need to guess the weight of the shoe box. If a charge changes, record the two quotes and exactly which item or quantity you changed. That observation tells you what these two orders would cost at that moment. It does not establish a rate for every shoe order or prove how Hacoo measured the parcel. Support can look into an unexplained difference if you supply both examples."
+        ]
+      },
+      {
+        "heading": "Check whether a free-delivery offer saves you money",
+        "paragraphs": [
+          "When a banner mentions free shipping, read its own conditions before changing your basket. Look for the applicable destination, dates, eligible items, minimum spend and delivery option, where the offer specifies them. Pay particular attention to the wording around discounts. Suppose a basket appears to meet the displayed spend before a voucher is applied. If the offer measures eligible spend after discounts, the same basket might fall below it. If the promotion does not explain that point, compare the final order review with and without the voucher. The result for your basket is more useful than an unrelated screenshot of someone else’s offer.",
+          "Look at both the delivery line and the total when trying the offer. A checkout may clearly show that delivery is free, while the extra item you added still makes the order dearer. Decide whether you would buy that item at the additional price you are actually paying. If your only aim is to receive the original items for the smallest outlay, compare against the original paid-delivery total. Also check whether changing the basket affects the size or quantity you intended to buy. A saving on postage has little value if the order now contains two identical items when you wanted one."
+        ]
+      },
+      {
+        "heading": "Compare two hypothetical baskets before adding an item",
+        "paragraphs": [
+          "Here is a worked example with invented amounts in pounds. In basket A, the items cost £32, the checkout applies a £4 voucher and delivery is £5. The amount to pay is £32 minus £4 plus £5, which equals £33. In basket B, you add an item worth £6. The items now cost £38, the same £4 voucher still applies and the checkout shows £0 delivery. The amount to pay is £34. The second basket has removed the delivery charge and increased your outlay by £1. None of these figures is a current quote, a promotional threshold or a voucher offered by Hacoo.",
+          "If you genuinely wanted the extra item, £1 is the relevant difference between those choices under the example conditions. If you did not want it, the first basket keeps £1 in your pocket. Another small change can reverse the result. If basket B loses the £4 voucher, the final amount becomes £38 and the difference from basket A becomes £5. This is why it helps to copy the discount line again after adding an item. To repeat the exercise with your own basket, keep both final totals visible and calculate the difference directly. You can then decide whether what you gain is worth precisely that difference."
+        ],
+        "table": {
+          "columns": [
+            "Illustrative basket",
+            "A",
+            "B"
+          ],
+          "rows": [
+            [
+              "Items",
+              "£32",
+              "£38"
+            ],
+            [
+              "Voucher",
+              "−£4",
+              "−£4"
+            ],
+            [
+              "Delivery",
+              "£5",
+              "£0"
+            ],
+            [
+              "Total to pay",
+              "£33",
+              "£34"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Keep a comparable quote and check it against the order",
+        "paragraphs": [
+          "Before you leave checkout, note the date, the destination country, the delivery option and the item quantities alongside the quoted amount. For your own records, a screenshot of the item subtotal, discount, delivery and grand total can be easier to compare than four separate screenshots. Crop out personal details before sharing it. If you return later, make the same selections again and check all four lines. A difference in the final total can come from a changed item price or an expired voucher even when the delivery charge itself is identical. This comparison helps you explain exactly why a previous budget no longer fits.",
+          "If you place the order, keep the confirmation with the final quote. If the figures disagree, match the order reference, currency and delivery method before contacting support. State the two amounts and the specific line that changed. For example, ask why delivery had one value on the last review and another on the confirmation for the same order. If you have not bought anything and delivery already puts the order above your budget, you can stop there. A vague promise of a later discount will not help you decide what you can afford to pay today. Return to the delivery-time guide separately if the arrival date matters as much as the price."
+        ]
+      }
+    ],
+    "takeaways": [
+      "Use the delivery line and total payable for your own UK address.",
+      "Compare the same items, quantities, voucher and delivery option in one currency.",
+      "An extra item can cost more than the postage it removes."
+    ],
+    "sources": [
+      {
+        "label": "Hacoo shipping-fee FAQ",
+        "href": "https://act.hacoo.app/faqshippingfee"
+      },
+      {
+        "label": "Hacoo shipping policy and checkout fee guidance",
+        "href": "https://act.hacoo.app/freeshiping"
+      },
+      {
+        "label": "Hacoo delivery information and changing freight rules",
+        "href": "https://web.hacoo.app/en-US/pages/shipping-info"
+      }
+    ]
+  },
+  "articles/hacoo-wrong-postcode-uk": {
+    "title": "Wrong Postcode on a Hacoo Order? What UK Buyers Can Do",
+    "intro": "Check your order address, request a correction before dispatch and find out who to contact after shipping. Includes a message you can adapt.",
+    "minutes": 7,
+    "published": "2026-11-05",
+    "reviewed": "2026-11-05",
+    "sections": [
+      {
+        "heading": "Open the affected order and check its status",
+        "paragraphs": [
+          "If you have entered the wrong postcode on a paid Hacoo order, open that order immediately and check the delivery address it actually shows. A mistake in an old address-book entry may have no effect on the order you just placed. Equally, a correct address in your profile can sit alongside an incorrect postcode on the confirmation. Match the order number and time to the purchase, especially if you bought similar items twice. Look for its present status and any dispatch or parcel reference. Hacoo’s shipping page describes a short opportunity to correct an address and asks customers to contact it promptly.",
+          "Take a copy of the address as it appears on that order, including the incorrect part. Do this privately, then obtain the full correct address from a reliable source such as the recipient’s own confirmed delivery details. Make a note of what you saw and when. A label such as ‘preparing’ is useful information for support, although it cannot tell you whether someone has already printed a label. If the status has changed since you first noticed the mistake, send the newer information. What matters now is whether the parcel that will actually be sent can still be addressed correctly."
+        ]
+      },
+      {
+        "heading": "Check the flat number, building and postcode together",
+        "paragraphs": [
+          "Read the corrected address from the smallest delivery detail to the largest. Start with the flat or unit, then the building name or house number, street, post town and full UK postcode. In a block of flats, a correct postcode and building name can still leave the carrier without a door number. In a street with similar house numbers, a transposed digit may identify another property. Check letters against similar-looking numbers and make sure a flat number did not accidentally replace the house number when autocomplete filled the form. Ask the recipient how the address appears on mail that reaches them.",
+          "Be specific about the change you need. If only the last character of the postcode is wrong and every other line is correct, say that and supply the complete correct postcode. If the checkout selected a similarly named street in another town, send the entire corrected block rather than asking someone to edit one character. A delivery instruction such as ‘ring the upper bell’ cannot compensate for the wrong property. For a hall of residence or workplace, verify the building and recipient details used by its actual mailroom. Give support the address needed for this delivery in the private order conversation, without adding unrelated personal information."
+        ]
+      },
+      {
+        "heading": "Request the correction before dispatch",
+        "paragraphs": [
+          "With the order open, look for a control that clearly applies to delivery details on this purchase. If you can enter a correction there, review every line before saving and open the order again to see what it now displays. If the only edit control is in your account address book, you can correct that entry for future use, then contact support about the paid purchase. Hacoo’s official contact page directs users to its in-app support chat and also publishes a support email route. Use an official route and include the order reference so the agent can locate the purchase.",
+          "Ask whether the corrected address can be applied to the shipment and whether any label already created can be changed. These are more precise questions than ‘Did you get my message?’ An acknowledgement of your request only tells you it arrived. If the app continues to show the old postcode after an agent says the change was made, ask which address will be printed and whether the order record will update. For an order with two parcels, mention both references if you have them. One might already have left while the other can still be corrected. Get a separate answer for each shipment where necessary."
+        ]
+      },
+      {
+        "heading": "Consider cancellation only if the order offers it",
+        "paragraphs": [
+          "Hacoo’s published order-help page describes a cancellation control for orders that have yet to ship. Open the affected order in your own account and check whether that option is present. If you want to keep the items and support can still change the address, an address correction may save you from rebuilding the basket. If support cannot amend it and cancellation is offered, read the details before confirming. Check exactly which items the action covers, particularly on an order with several lines. Save the result and distinguish a submitted request from an order whose status actually shows that cancellation has completed.",
+          "Hold off on a replacement purchase until you understand the first order’s status. Otherwise, the first parcel might leave while the second order is also being prepared. If you do reorder, select the corrected address during checkout and compare the new subtotal, discount, delivery charge and expected delivery details. The same product link can lead to a different available option by the time you return to it. Keep the two order references separate and ask support how to follow any payment adjustment on the first. If the cancellation control has disappeared, report the address problem through the official support channel and give them the current order status."
+        ]
+      },
+      {
+        "heading": "After dispatch, use the parcel reference and carrier instructions",
+        "paragraphs": [
+          "Once dispatch is shown, open the logistics details and identify the carrier and tracking reference for that particular parcel. Where a carrier provides a recipient service, go through its official tracking page and see what is available for this delivery. The selectable options may be limited to a delivery day, collection point or instruction rather than a change of postcode. Ask whether only the sender can request an amendment if you cannot make it yourself. Send that answer back through your Hacoo case together with the parcel reference. Keep the original correction request open until you know what will happen to the shipment.",
+          "Use the latest actual scan to choose the next question. If the carrier has only received electronic information, ask Hacoo what address went on the shipping label. If the parcel is on its way to a clearly incorrect destination, contact the identified carrier promptly and ask which steps it accepts from a recipient. If it already shows delivered, request the delivery details through the carrier’s official channel and inform Hacoo of the original postcode error. A tracking page may also show a return to sender. Ask what that event means for your order before arranging a replacement or assuming there will be a refund."
+        ]
+      },
+      {
+        "heading": "Send one clear message and keep the confirmation",
+        "paragraphs": [
+          "You can adapt this request in the private order chat. ‘Hello, I have entered the wrong postcode on order [reference]. The order currently shows [status] and the address on the confirmation ends in [incorrect postcode]. The complete correct delivery address is [flat, building or house number, street, post town, postcode, United Kingdom]. Please confirm whether you can amend the address for this order and update its shipping label. If it has already gone out, please tell me which carrier has it and who needs to request a correction.’ Add the parcel reference if one is visible. Keep a dated copy of the reply.",
+          "Record what the reply commits to. ‘We have contacted the warehouse’ means there is still a question to resolve. A message confirming the address on the shipment is a stronger result, especially if it identifies the parcel it applies to. If support asks you to choose between cancellation and continuing delivery, answer in the same thread so your choice is attached to the original request. Check the next order update against that decision. Finally, review any saved addresses before your next purchase. Remove or rename the obsolete entry and read the chosen address back from the last checkout screen before you pay again."
+        ]
+      }
+    ],
+    "takeaways": [
+      "Check the delivery address on the paid order and its current status.",
+      "Ask whether the parcel label can be corrected and request written confirmation.",
+      "Once dispatched, use that parcel’s own reference to check the carrier’s options."
+    ],
+    "sources": [
+      {
+        "label": "Hacoo delivery guidance for an incorrect address",
+        "href": "https://web.hacoo.app/en-US/pages/shipping-info"
+      },
+      {
+        "label": "Hacoo help with cancelling an unshipped order",
+        "href": "https://act.hacoo.app/eu/help-center/order/2"
+      },
+      {
+        "label": "Official Hacoo app support and contact routes",
+        "href": "https://www.hacoo.app/en-US/pages/contact-us"
+      }
+    ]
+  },
+  "articles/hacoo-missing-item-uk": {
+    "title": "Item Missing from a Hacoo Parcel? Check Your Split UK Order",
+    "intro": "Match the items you received to the parcel label, check for a second shipment and build a missing-item report with the right quantity, photos and receipt.",
+    "minutes": 7,
+    "published": "2026-11-05",
+    "reviewed": "2026-11-05",
+    "sections": [
+      {
+        "heading": "Start with the parcel you actually received",
+        "paragraphs": [
+          "If a Hacoo parcel has reached you in the UK and one item seems to be missing, keep the outer packaging, the delivery label and the bags inside. Put the contents beside the order confirmation and count what arrived. Look in folds, pockets and separate sleeves before deciding which piece is absent. Small accessories can travel inside the main item. If an item arrived in the wrong colour or size, record the option on its label and the option you ordered. That gives support a different question to investigate from a parcel that contained no item from that order line at all.",
+          "A missing parcel needs a different first step. If tracking records delivery but you have no parcel in hand, open the carrier details for that reference and ask for information about the delivery. If you have one parcel and expected two, identify the reference printed on the parcel you hold before looking up the other one. A delivered scan can establish that a package reached an address without telling you which products were inside it. A label from your first delivery is therefore useful evidence for that first parcel even if the rest of the order has its own journey ahead."
+        ]
+      },
+      {
+        "heading": "Match order lines, quantities and parcel references",
+        "paragraphs": [
+          "Open the order in the account used to pay. For each line, copy the item name, selected option and quantity. Then check the logistics details for a parcel reference or a grouping of items. Write one short row per order line with four entries: what you bought, how many you bought, which parcel it was assigned to if shown, and how many you received. If the order screen gives no parcel assignment, write ‘allocation unknown’. You can still describe what was in the package, and support can check whether another shipment was planned. Guessing an allocation can send an investigation towards the wrong parcel.",
+          "Imagine you bought two navy tops in medium and one black belt. The package contains one navy top and a black belt. Your record should show one of two tops received and one of one belt received. A complaint that simply says ‘one item missing’ leaves support to establish which product is involved. A complaint that both tops are missing would conflict with your own photograph. Check what the listing sold as one unit, too. A two-piece outfit bought with quantity one is one order line with included components. If the trousers are missing from that outfit, identify the missing component and include the advertised contents."
+        ],
+        "table": {
+          "columns": [
+            "Order line (example)",
+            "Ordered",
+            "In this parcel",
+            "Still to locate"
+          ],
+          "rows": [
+            [
+              "Navy top, M",
+              "2",
+              "1",
+              "1"
+            ],
+            [
+              "Black belt",
+              "1",
+              "1",
+              "0"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Check for a second parcel or an outstanding pre-order",
+        "paragraphs": [
+          "Hacoo explains on its shipping page that available items can be sent ahead of products awaiting stock. Return to the order details and look for separate parcel numbers, a pre-order note, a back-order message or another dispatch entry against the relevant item. Compare each reference with the label you have. If the remaining line is clearly assigned to a second parcel, open that parcel’s own tracking to see the latest event and the estimate associated with it. The date your first parcel arrived is useful context, but it cannot give you the location or delivery date of another one.",
+          "If the page gives no second reference, ask support whether the missing line was packed into the parcel you received or is due in a later shipment. Include the date you checked and note whether the order currently shows the entire purchase as delivered. When the remaining line is marked out of stock, capture that wording and ask how it affects fulfilment or payment for that line. If all the items were assigned to the received parcel and the quantity is short, open the missing-item case promptly. There is no need to wait indefinitely for an unconfirmed second parcel while the order’s support window runs."
+        ]
+      },
+      {
+        "heading": "Photograph the packaging and identify the short quantity",
+        "paragraphs": [
+          "Hacoo’s help page asks for an outer-package photograph and payment evidence when an item is missing. If the missing part is an accessory, it also asks you to show the product that did arrive and identify which accessory you expected. Take a clear overall photo before throwing anything away, then photograph the parcel label and arrange the received contents together. Keep any barcodes on individual item bags legible in a separate photograph. If a seam is torn or the parcel appears to have been resealed, photograph it as you found it and describe the visible condition. Leave conclusions about where the shortage happened open.",
+          "Save the order confirmation or receipt that shows what you paid for and the quantity ordered. A payment notification with only the final total often lacks the line detail support needs. If you bought a set, retain the listing details showing what was included at the time of purchase. Do not substitute a similar set in another listing with a different contents description. Label your photos so the agent can distinguish the received parcel, its contents and the relevant order line. Send sensitive information only through the official support route and share the details required for the case. Full card details have no role in identifying a missing belt."
+        ]
+      },
+      {
+        "heading": "Give support one question it can answer",
+        "paragraphs": [
+          "Start from the affected order or the official in-app contact route. Choose the order, product and closest available issue type. Hacoo’s published help centre describes selecting the product, explaining the problem and attaching pictures. The wording on your screen can vary, so make the shortage explicit in your own description. Ask the agent first to confirm whether the outstanding item has another parcel reference. If it was assigned to the delivered parcel, ask what resolution is available for that item. Mention the condition of the packaging and what evidence you have attached. Record the case reference and any date the agent gives for a reply.",
+          "Here is a sample you can adapt. ‘Order [reference] arrived on [date] in the parcel ending [digits]. I ordered two navy tops in medium and one black belt. The parcel contained one navy top and the belt, so one navy top in medium is outstanding. I can see [number] parcel references in the order. Could you confirm which parcel the other top was assigned to? If it was packed with this delivery, please advise how to resolve the missing unit. I have attached the order lines, receipt, outer packaging and contents.’ Replace the quantities and evidence with your own observations before sending."
+        ]
+      },
+      {
+        "heading": "Follow the outstanding item through to the outcome",
+        "paragraphs": [
+          "If support identifies another parcel, link its reference to the outstanding line in your notes. Check the next tracking event and compare what eventually arrives with that exact quantity and option. If the second parcel arrives complete, update the case so that a replacement or refund is not pursued for an item now received. If it arrives with a different item, retain that parcel’s own label and photographs. Keep the references separate when you reply. Mixing evidence from two deliveries can obscure whether the original shortage was a packing issue, a split shipment or a later error affecting the replacement.",
+          "If support offers a refund or replacement, confirm in writing which item and quantity it covers. For a refund, ask for the amount, the destination of the credit and how you can recognise it in your account or payment history. The amount allocated to a discounted item can differ from its original list price. If the proposed figure surprises you, ask for the calculation against that order line. For a replacement, ask whether it will have a new parcel reference and track that reference separately. Use the same case for follow-up, quoting when the promised update was due and what you have received since."
+        ]
+      }
+    ],
+    "takeaways": [
+      "Match each order line to the received quantity and parcel reference if shown.",
+      "Keep the packaging and receipt while you check whether another parcel is due.",
+      "Ask support to confirm the outcome for the exact missing item and quantity."
+    ],
+    "sources": [
+      {
+        "label": "Hacoo delivery guidance for pre-orders and split parcels",
+        "href": "https://web.hacoo.app/en-US/pages/shipping-info"
+      },
+      {
+        "label": "Hacoo Help Center evidence checklist for missing items",
+        "href": "https://act.hacoo.app/act/sara/helpcenter/home/qa3"
+      },
+      {
+        "label": "Hacoo order and parcel tracking instructions",
+        "href": "https://act.hacoo.app/trackingorders"
       }
     ]
   }

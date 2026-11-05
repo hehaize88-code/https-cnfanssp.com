@@ -6,7 +6,12 @@ import it from "./content/it.json";
 import type { Locale } from "./site-data";
 
 export type ArticleKey = keyof typeof en;
-export type ArticleSection = { heading: string; paragraphs: string[]; bullets?: string[] };
+export type ArticleSection = {
+  heading: string;
+  paragraphs: string[];
+  bullets?: string[];
+  table?: { columns: string[]; rows: string[][] };
+};
 export type Article = {
   title: string;
   intro: string;

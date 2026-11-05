@@ -16,8 +16,8 @@ const canonical = (html) => links(html).filter((a) => a.rel === 'canonical');
 const schemas = (html) => [...html.matchAll(/<script\b[^>]*type="application\/ld\+json"[^>]*>(.*?)<\/script>/gs)].flatMap((m) => { const obj = JSON.parse(m[1]); return obj['@graph'] || [obj]; });
 const paragraphs = (article) => article.sections.flatMap((section) => section.paragraphs);
 
-test('all 14 article topics have full translations with matching structure', () => {
-  assert.equal(keys.length, 14);
+test('all 17 article topics have full translations with matching structure', () => {
+  assert.equal(keys.length, 17);
   for (const locale of locales) {
     assert.deepEqual(Object.keys(content[locale]).sort(), [...keys].sort(), locale);
     for (const key of keys) {
@@ -40,12 +40,12 @@ test('all 14 article topics have full translations with matching structure', () 
   }
 });
 
-test('all 120 exported pages have correct language, canonical, reciprocal alternates and valid links', async () => {
+test('all 135 exported pages have correct language, canonical, reciprocal alternates and valid links', async () => {
   const sitemap = await read('dist/pages/sitemap.xml');
   const urls = [...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)].map((m) => m[1]);
   const expected = locales.flatMap((locale) => [...basePages, ...keys].map((key) => `https://hacoos.uk${route(locale, key)}`));
   assert.deepEqual([...urls].sort(), [...expected].sort());
-  assert.equal(new Set(urls).size, 120);
+  assert.equal(new Set(urls).size, expected.length);
   const expectedPaths = new Set(expected.map((url) => new URL(url).pathname));
   for (const locale of locales) {
     for (const key of [...basePages, ...keys]) {
@@ -89,9 +89,16 @@ test('all 120 exported pages have correct language, canonical, reciprocal altern
         assert.match(html, /data-track="outbound_category_click"/, path);
         assert.match(html, /data-track="search_redirect"/, path);
       }
+      if (key === 'shipping') {
+        const hub = html.match(/class="topic-links"[^>]*>(.*?)<\/nav>/s)?.[1] || '';
+        for (const slug of ['hacoo-shipping-cost-uk', 'hacoo-wrong-postcode-uk', 'hacoo-missing-item-uk', 'hacoo-tracking-uk', 'hacoo-returns-refunds-uk', 'how-long-does-hacoo-take-to-deliver-uk']) {
+          assert.ok(hub.includes('href="' + route(locale, 'articles/' + slug) + '"'), path + ': ' + slug);
+        }
+        assert.equal((hub.match(/data-track="guide_click"/g) || []).length, 6);
+      }
       if (key === 'articles') {
         const library = html.match(/class="section article-library"(.*?)<\/section>/s)?.[1] || '';
-        assert.equal((library.match(/<h3>/g) || []).length, 14, `${path}: article hub parity`);
+        assert.equal((library.match(/<h3>/g) || []).length, keys.length, `${path}: article hub parity`);
       }
     }
   }

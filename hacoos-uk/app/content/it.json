@@ -1,10 +1,10 @@
 {
   "articles/find-product-links": {
-    "title": "Link Hacoo per il Regno Unito: come trovare e verificare i prodotti",
-    "intro": "Controlla la destinazione di un link relativo a Hacoo, l’ID dell’inserzione originale, l’immagine e l’opzione esatta, perché anche un collegamento funzionante può portare all’articolo sbagliato.",
+    "title": "Come aprire i link Hacoo nel Regno Unito e trovare il prodotto giusto",
+    "intro": "Se un link Hacoo apre lo store, la pagina iniziale o una scheda senza la tua taglia, controlla la destinazione e la variante prima di ordinare.",
     "minutes": 9,
     "published": "2026-08-28",
-    "reviewed": "2026-10-10",
+    "reviewed": "2026-11-05",
     "sources": [
       {
         "label": "Sito ufficiale Hacoo — descrizione attuale della community e delle funzioni di scoperta",
@@ -20,6 +20,36 @@
       }
     ],
     "sections": [
+      {
+        "heading": "Dove ti ha portato il link?",
+        "paragraphs": [
+          "Conserva il link originale e annota articolo, colore e taglia che cercavi. Apri direttamente l’app ufficiale e verifica che si carichi. Poi apri lo stesso link nel browser che usi di solito e confronta le due schermate."
+        ],
+        "table": {
+          "columns": [
+            "Destinazione",
+            "Passo successivo"
+          ],
+          "rows": [
+            [
+              "App Store o Google Play",
+              "Verifica che l’app ufficiale sia installata e aggiornata. Riapri quindi il link al prodotto."
+            ],
+            [
+              "Pagina iniziale dell’app",
+              "Apri lo stesso link nel tuo browser abituale. Se finisci ancora nella pagina iniziale, chiedi un nuovo link diretto."
+            ],
+            [
+              "Scheda senza la tua taglia",
+              "Seleziona il colore e verifica le taglie disponibili per quella variante. Aprire la scheda non riserva l’articolo."
+            ],
+            [
+              "Catalogo esterno",
+              "Controlla il dominio e confronta il codice articolo. Disponibilità, prezzo e consegna sono quelli indicati dal catalogo di destinazione."
+            ]
+          ]
+        }
+      },
       {
         "heading": "Perché trovare un prodotto Hacoo può essere più difficile che aprire un normale negozio",
         "paragraphs": [
@@ -1105,12 +1135,38 @@
     ]
   },
   "articles/hacoo-not-showing-products-uk": {
-    "title": "Hacoo non mostra prodotti nel Regno Unito: controlli di ricerca e regione",
-    "intro": "Se la ricerca Hacoo non funziona o mancano prodotti, distingui un articolo indisponibile da un problema generale dell’app, poi controlla regione britannica reale, versione e contesto del link.",
+    "title": "Hacoo non mostra i prodotti nel Regno Unito? Controlla ricerca e app",
+    "intro": "Come distinguere una ricerca senza risultati, un articolo scomparso e un avviso sulle impostazioni di Hacoo quando la destinazione è il Regno Unito.",
     "minutes": 10,
     "published": "2026-10-10",
-    "reviewed": "2026-10-10",
+    "reviewed": "2026-11-05",
     "sections": [
+      {
+        "heading": "Cosa compare sullo schermo?",
+        "paragraphs": [
+          "Una ricerca vuota, un link che non funziona e una schermata iniziale che non si carica richiedono verifiche diverse. Apri direttamente l’app e cerca una parola semplice come «trainers». Tieni a mente il risultato prima di cambiare le impostazioni."
+        ],
+        "table": {
+          "columns": [
+            "Cosa vedi",
+            "Prima verifica"
+          ],
+          "rows": [
+            [
+              "La ricerca non trova prodotti",
+              "Togli i filtri e prova con una sola parola descrittiva. Se anche la schermata iniziale rimane vuota, verifica l’app e la connessione."
+            ],
+            [
+              "Un solo articolo condiviso non è disponibile",
+              "Prova un altro link recente. Se funziona, chiedi a chi ha condiviso il primo di confermare articolo e variante."
+            ],
+            [
+              "«Unavailable due to app settings»",
+              "Controlla il paese di consegna e la versione dell’app. Se sono corretti, invia il testo esatto e il link all’assistenza nell’app."
+            ]
+          ]
+        }
+      },
       {
         "heading": "Inizia identificando che cosa manca davvero",
         "paragraphs": [
@@ -1294,6 +1350,267 @@
       {
         "label": "Centro assistenza Hacoo — procedura dei resi fisici autorizzati ed esclusioni",
         "href": "https://act.hacoo.app/act/sara/helpcenter/home/qa3"
+      }
+    ]
+  },
+  "articles/hacoo-shipping-cost-uk": {
+    "title": "Quanto costa la spedizione Hacoo nel Regno Unito?",
+    "intro": "Controlla le spese per il tuo indirizzo nel Regno Unito e confronta due carrelli in sterline per capire se la spedizione gratuita conviene davvero.",
+    "minutes": 7,
+    "published": "2026-11-05",
+    "reviewed": "2026-11-05",
+    "sections": [
+      {
+        "heading": "Dove compare il costo per il tuo indirizzo britannico",
+        "paragraphs": [
+          "Parti dal carrello con gli articoli che compreresti davvero. Scegli colore, taglia e quantità, poi prosegui fino al riepilogo che precede il pagamento. Controlla che il paese di consegna sia il Regno Unito e che l’indirizzo selezionato sia quello del destinatario. Puoi consultare il riepilogo senza confermare l’acquisto. Cerca la voce della consegna e leggila insieme al totale del carrello. Il prezzo sulla scheda di una felpa, anche se accanto compare un riferimento alla spedizione, da solo non ti dice quanto costerà ricevere quell’ordine a casa.",
+          "Pensa a chi consulta Hacoo in italiano ma fa consegnare il pacco a Manchester. La lingua dell’interfaccia può essere quella che preferisce, mentre il preventivo utile è quello per l’indirizzo di Manchester. Se il riepilogo sta ancora usando un vecchio recapito, correggi prima la destinazione e aspetta che le cifre si aggiornino. Quando la riga delle spese non è visibile, prova ad aprire il dettaglio del totale e controlla che non manchi una scelta, per esempio la modalità di consegna. Una casella vuota non basta per concludere che il trasporto sia gratuito."
+        ]
+      },
+      {
+        "heading": "Come leggere le singole voci del carrello in GBP",
+        "paragraphs": [
+          "Leggi le cifre dall’alto verso il basso. Parti dal subtotale degli articoli, controllando se corrisponde al numero di pezzi selezionato. Individua lo sconto effettivamente applicato, l’importo della consegna e il totale da pagare. Il simbolo £ e la sigla GBP indicano le sterline britanniche. Se vedi una valuta diversa, annotala prima di confrontare le offerte. Una conversione mentale da un vecchio screenshot in euro può nascondere una differenza di prezzo. Lo stesso vale se confronti il prezzo di partenza di un articolo con quello di una variante che costa di più.",
+          "Per controllare l’aritmetica, somma solo le voci che incidono una volta sul totale. Se il prezzo della merce è già scontato, non sottrarre di nuovo la percentuale pubblicizzata. Se c’è una voce distinta per la consegna, includila anche quando il buono ha coperto interamente il costo di un articolo. Leggi le eventuali altre voci con il nome indicato nella schermata e verifica che siano incluse nel totale. Se due importi sembrano incompatibili, conserva la schermata e chiedi quale sia l’importo che verrebbe addebitato prima di autorizzare il pagamento."
+        ]
+      },
+      {
+        "heading": "Perché i due riferimenti al peso danno risposte diverse",
+        "paragraphs": [
+          "Due pagine pubbliche di Hacoo descrivono il calcolo con soglie differenti. La pagina di assistenza dedicata alle spese cita un livello base sotto i 3 kg e un supplemento sopra tale peso. La pagina sulla politica di spedizione indica invece 5 kg e rimanda alla fase di pagamento per conoscere la tariffa base del paese. Le due indicazioni cambierebbero il risultato proprio nei casi intermedi. Se il tuo ordine pesa circa quattro chili, scegliere semplicemente la soglia più conveniente non permette di prevedere l’importo che vedrai per la consegna nel Regno Unito.",
+          "Inoltre, il peso che hai a disposizione può descrivere soltanto il prodotto. Una stima per un paio di scarpe senza scatola non è direttamente confrontabile con il peso del pacco imballato. Evita quindi di trasformare i dettagli generici delle guide in un tariffario in sterline o in una promessa per un articolo specifico. Se vuoi capire l’effetto di un secondo paio, registra il preventivo del primo, aggiungi il secondo mantenendo indirizzo e modalità di consegna e ricontrolla il riepilogo. La differenza così osservata riguarda le due configurazioni che hai davvero davanti."
+        ]
+      },
+      {
+        "heading": "Quando vale la pena cercare la consegna gratuita",
+        "paragraphs": [
+          "Se compare un’offerta di consegna gratuita, aprine le condizioni disponibili e torna al carrello con le varianti che intendi acquistare. Guarda su quale importo viene calcolata un’eventuale soglia, se l’app propone metodi di consegna diversi e cosa succede al buono già selezionato. Fai una modifica alla volta. In questo modo puoi capire, per esempio, se è cambiata soltanto la voce della consegna oppure se hai perso uno sconto sulla merce. Una promozione vista in una recensione o in una pagina di link va ricontrollata sul tuo ordine.",
+          "Decidi quanto vuoi spendere in tutto prima di aggiungere prodotti per raggiungere una soglia. Se una maglietta ti serve comunque, confronta il costo complessivo delle due alternative e la data alla quale ti serve. Se la stai aggiungendo solo per azzerare la spedizione, chiediti quante sterline aggiuntive usciranno dal tuo conto. Lascia il carrello originale annotato mentre provi la variante. Potrai tornare alla prima scelta se l’offerta modifica il totale in modo sfavorevole, anche quando sullo schermo la scritta sulla consegna risulta più invitante."
+        ]
+      },
+      {
+        "heading": "Un confronto in sterline con due carrelli ipotetici",
+        "paragraphs": [
+          "Supponiamo che nel primo carrello gli articoli costino £32, il buono applicato valga £4 e la consegna costi £5. Il totale ipotetico è £33, perché £32 meno £4 più £5 dà £33. Nel secondo carrello aggiungi un articolo e il valore della merce sale a £38. Mantieni lo stesso buono da £4 e immaginiamo che la voce della consegna scenda a £0. Pagheresti £34. Questi importi servono soltanto a mostrare il calcolo. Non rappresentano una tariffa Hacoo, un buono disponibile o una soglia di spesa valida nel Regno Unito.",
+          "La seconda scelta offre merce aggiuntiva per £6, elimina £5 di consegna e aumenta la spesa finale di £1. Se vuoi quell’articolo in più, ora conosci il costo della scelta rispetto all’alternativa. Se desideri soltanto gli articoli iniziali, il primo carrello resta quello con l’esborso minore. Puoi rifare la stessa prova con i tuoi numeri scrivendo due righe su un foglio. Per ogni riga registra valore dei prodotti, sconto effettivo, consegna e totale finale. È il confronto tra gli ultimi due totali a rispondere alla domanda su quanto pagherai."
+        ],
+        "table": {
+          "columns": [
+            "Carrello di esempio",
+            "A",
+            "B"
+          ],
+          "rows": [
+            [
+              "Articoli",
+              "£32",
+              "£38"
+            ],
+            [
+              "Buono sconto",
+              "−£4",
+              "−£4"
+            ],
+            [
+              "Spedizione",
+              "£5",
+              "£0"
+            ],
+            [
+              "Totale da pagare",
+              "£33",
+              "£34"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Conservare il preventivo e confrontarlo con la conferma",
+        "paragraphs": [
+          "Appena prima di ordinare, salva per uso personale il riepilogo con data, valuta, articoli e costo di consegna. Se esistono due opzioni, annota anche il nome di quella scelta. Per un confronto tra giorni diversi, controlla che le varianti, le quantità e il destinatario siano rimasti gli stessi. Altrimenti segnala la differenza accanto al preventivo. Un totale letto ieri per una taglia diversa o con uno sconto che oggi non compare più è un riferimento storico, insufficiente per stabilire il prezzo disponibile in questo momento.",
+          "Dopo l’acquisto puoi affiancare il riepilogo salvato alla conferma dell’ordine e verificare le singole voci. Se il totale non coincide, individua prima quale riga è cambiata. Poi, attraverso l’assistenza ufficiale, indica il riferimento dell’ordine e i due importi in GBP e chiedi una spiegazione della differenza. Invia solo il dettaglio necessario, tenendo fuori numeri di carta o informazioni sugli altri ordini. Se invece stai ancora decidendo, riapri il carrello al momento dell’acquisto e usa l’ultimo totale visualizzato per scegliere se procedere."
+        ]
+      }
+    ],
+    "takeaways": [
+      "Controlla il totale in GBP con varianti e indirizzo britannico definitivi.",
+      "Le pagine Hacoo citano soglie di peso differenti. Per il tuo acquisto conta la cifra visibile nel riepilogo.",
+      "Confronta il totale dei due carrelli prima di aggiungere merce per risparmiare sulla consegna."
+    ],
+    "sources": [
+      {
+        "label": "Hacoo – come vengono descritte le spese di spedizione",
+        "href": "https://act.hacoo.app/faqshippingfee"
+      },
+      {
+        "label": "Hacoo – politica di spedizione e controllo della tariffa al pagamento",
+        "href": "https://act.hacoo.app/freeshiping"
+      },
+      {
+        "label": "Hacoo – informazioni su spedizioni e consegne",
+        "href": "https://web.hacoo.app/en-US/pages/shipping-info"
+      }
+    ]
+  },
+  "articles/hacoo-wrong-postcode-uk": {
+    "title": "Codice postale errato su un ordine Hacoo: come correggerlo",
+    "intro": "Controlla il codice postale del tuo ordine nel Regno Unito. Scopri come chiedere una correzione prima della spedizione e chi contattare dopo la partenza.",
+    "minutes": 7,
+    "published": "2026-11-05",
+    "reviewed": "2026-11-05",
+    "sections": [
+      {
+        "heading": "Apri l’ordine e verifica a che punto è",
+        "paragraphs": [
+          "Accedi all’account che hai usato per acquistare e cerca il numero dell’ordine nella conferma ricevuta. Apri quell’acquisto dalla cronologia e leggi l’indirizzo di spedizione registrato. L’errore potrebbe essere già qui, oppure soltanto nell’indirizzo salvato per gli acquisti futuri. Confronta i due prima di intervenire. Annota la dicitura esatta dello stato e controlla se esiste un numero di tracciamento. Questi dettagli servono all’assistenza per capire se la correzione può ancora interessare la preparazione del pacco oppure se coinvolge un corriere che ha già ricevuto la spedizione.",
+          "Se nello stesso pomeriggio hai fatto due ordini simili, non affidarti al solo nome del prodotto per scegliere quale correggere. Controlla variante, data e riferimento. Se l’ordine comprende più spedizioni, prendi nota dei singoli riferimenti e dello stato di ciascuna. Potresti dover chiedere se il nuovo recapito si applicherà a un collo già etichettato e a un altro ancora in preparazione. La pagina ufficiale di Hacoo sulla spedizione invita a contattare rapidamente l’assistenza quando l’indirizzo è sbagliato. Inizia dalla richiesta concreta senza aspettare di vedere se l’errore verrà corretto da solo."
+        ]
+      },
+      {
+        "heading": "Confronta appartamento, numero civico e postcode",
+        "paragraphs": [
+          "Prepara l’indirizzo corretto come lo usa il destinatario per ricevere la posta nel Regno Unito. Per un appartamento in un condominio può servire sia il numero dell’alloggio, o flat, sia il numero civico dell’edificio. Il nome di una residenza studentesca può dover essere accompagnato dall’ingresso o dal numero della stanza. Verifica la riga della strada, la città e il postcode completo confrontandoli con un recapito che il destinatario conosce come corretto. Presta attenzione ai caratteri simili e alle cifre invertite, soprattutto quando inserisci l’indirizzo dal telefono.",
+          "Stabilisci con precisione che cosa deve cambiare. Se hai scritto il numero del palazzo nel campo dell’appartamento, la sola sostituzione del codice postale lascerebbe l’indirizzo ambiguo. Se invece hai trascritto male un carattere del postcode, indica il valore precedente e quello corretto e specifica che il resto dell’indirizzo è identico. Controlla anche se l’autocompletamento ha selezionato una strada omonima in un’altra città. Per una consegna sul lavoro, chiedi al destinatario quale indirizzo utilizzi la reception per i pacchi. Una descrizione generica dell’edificio rischia di lasciare irrisolto proprio il campo sbagliato."
+        ]
+      },
+      {
+        "heading": "Prima della partenza, chiedi la correzione sul singolo ordine",
+        "paragraphs": [
+          "Dalla pagina di contatto ufficiale Hacoo puoi individuare il canale di assistenza nell’app. Raggiungilo dal tuo account e, quando l’interfaccia lo consente, collega la conversazione all’ordine interessato. Inserisci il riferimento, lo stato e i campi da correggere. Chiedi se l’indirizzo può ancora essere modificato per quell’ordine e se è già stata preparata l’etichetta. La pagina sulle spedizioni parla di un margine limitato per intervenire, senza promettere un numero preciso di ore. Se non trovi una funzione per cambiare l’indirizzo dalla scheda dell’ordine, fai subito la richiesta attraverso il canale ufficiale.",
+          "Puoi sistemare anche l’indirizzo salvato nel profilo per gli acquisti successivi, ma torna poi alla conferma o alla conversazione del singolo ordine. È lì che ti serve una risposta sulla destinazione usata per il pacco già pagato. Conserva una schermata dello stato originario e la data della tua richiesta. Una risposta automatica che comunica la ricezione del messaggio documenta l’apertura della pratica. Per capire dove finirà il pacco, chiedi un riscontro esplicito sull’indirizzo associato all’ordine o sull’etichetta, soprattutto se l’ordine si è aggiornato mentre scrivevi."
+        ]
+      },
+      {
+        "heading": "Se compare l’opzione di annullamento",
+        "paragraphs": [
+          "La guida europea di Hacoo descrive un comando di annullamento nella sezione degli ordini per gli acquisti che non sono ancora stati spediti. Controlla cosa propone il tuo ordine con destinazione britannica. Se la correzione non è disponibile e la schermata offre l’annullamento, leggi quali articoli e quantità verrebbero coinvolti prima di confermare. È una decisione diversa dalla modifica del recapito. Se desideri mantenere l’acquisto, chiedi prima se c’è ancora la possibilità di correggere l’etichetta senza annullare la merce che hai scelto.",
+          "Se decidi di annullare, registra la conferma e verifica lo stato dell’ordine. Prima di procedere con un nuovo acquisto controlla disponibilità, variante, prezzo, eventuali sconti e costi di consegna. Potrebbero non corrispondere alla prima configurazione. Tieni distinti il movimento del pagamento originale e l’importo di un possibile nuovo ordine. Se l’app non offre l’annullamento o mostra uno stato diverso da quello della pagina di aiuto, riporta all’assistenza la situazione che vedi. Evita di duplicare l’ordine mentre stai ancora cercando di capire che cosa succederà al primo."
+        ]
+      },
+      {
+        "heading": "Dopo la spedizione, identifica il corriere giusto",
+        "paragraphs": [
+          "Se il tracking segnala che il pacco è partito, apri il dettaglio della singola spedizione. Cerca il nome del vettore, il numero del collo e l’evento più recente con la relativa data. Se vedi solo che i dati della spedizione sono stati trasmessi, comunica quella dicitura senza dedurre che il pacco sia già arrivato a un deposito locale. Informane Hacoo e verifica sul sito ufficiale del corriere le modalità disponibili per quel particolare invio. Il vettore potrebbe dover ricevere la richiesta dal mittente anche quando il destinatario ha già individuato l’errore.",
+          "Nel contattare il corriere, chiedi innanzitutto quale intervento accetta per quel pacco. Aggiungere un numero di appartamento, correggere il postcode o chiedere una consegna a un indirizzo completamente diverso sono richieste distinte. Se il vettore indica che serve l’autorizzazione del mittente, salva il riferimento della segnalazione e passalo all’assistenza Hacoo nello stesso scambio. Se è previsto un tentativo di consegna, controlla gli aggiornamenti dello specifico collo. Usa esclusivamente le opzioni confermate dal corriere o dalla piattaforma per la tua spedizione e conserva per iscritto le istruzioni ricevute."
+        ]
+      },
+      {
+        "heading": "Un messaggio in inglese e la conferma da ottenere",
+        "paragraphs": [
+          "Puoi adattare questo breve messaggio ai campi che devi correggere e inviarlo nell’assistenza ufficiale. «Hello, I entered an incorrect postcode for order [order number]. The order currently shows [status]. The postcode on the order is [old postcode]. The correct delivery address is [flat, building number, street, town, postcode]. Can you update the delivery address for this order and confirm which address will appear on the parcel label? If it has already been sent, please advise how to proceed.» Per un acquisto diviso in più colli, aggiungi il riferimento della spedizione interessata.",
+          "Quando arriva la risposta, rileggi il postcode carattere per carattere e verifica che sia stato riportato anche l’appartamento, se necessario. Chiedi una precisazione se l’operatore ha soltanto confermato che il profilo è stato aggiornato. Per gli ordini già in viaggio annota se deve intervenire il mittente, se è richiesta una tua azione e quale riferimento dovrai usare per il seguito. Conserva queste informazioni nella stessa conversazione. Se in un secondo momento cambia lo stato del tracking, potrai aggiornare la richiesta con il nuovo evento senza dover ricostruire da capo l’intera correzione."
+        ]
+      }
+    ],
+    "takeaways": [
+      "Controlla subito lo stato dell’ordine e l’indirizzo che compare nella singola transazione.",
+      "Chiedi conferma della correzione per quel pacco, compresi appartamento, numero civico e postcode.",
+      "Se il collo è partito, identifica il vettore e conserva il riferimento della segnalazione."
+    ],
+    "sources": [
+      {
+        "label": "Hacoo – correzione di un indirizzo di spedizione errato",
+        "href": "https://web.hacoo.app/en-US/pages/shipping-info"
+      },
+      {
+        "label": "Centro assistenza Hacoo – annullamento di un ordine",
+        "href": "https://act.hacoo.app/eu/help-center/order/2"
+      },
+      {
+        "label": "Hacoo – canali ufficiali per contattare l’assistenza",
+        "href": "https://www.hacoo.app/en-US/pages/contact-us"
+      }
+    ]
+  },
+  "articles/hacoo-missing-item-uk": {
+    "title": "Articolo mancante nel pacco Hacoo? Verifica gli invii separati",
+    "intro": "Confronta gli articoli ricevuti con i numeri di tracciamento. Verifica se è previsto un secondo pacco e prepara quantità e foto per segnalare la mancanza.",
+    "minutes": 7,
+    "published": "2026-11-05",
+    "reviewed": "2026-11-05",
+    "sections": [
+      {
+        "heading": "Hai ricevuto un pacco incompleto o manca il pacco intero?",
+        "paragraphs": [
+          "Parti da ciò che hai fisicamente ricevuto. Se hai la scatola o la busta, conserva l’imballaggio ed estrai con attenzione il contenuto, comprese eventuali confezioni interne. Se non hai ricevuto alcun collo e il tracking riporta la consegna, il problema riguarda il recapito dell’intero pacco. In quel caso Hacoo indica di contattare il vettore riportato nei dati di tracciamento. Se invece il corriere ha consegnato una busta con il tuo nome e dentro trovi meno prodotti del previsto, serve ricostruire quali articoli erano associati a quella busta.",
+          "Fai attenzione anche a un terzo caso. Potresti avere ricevuto tutti i prodotti previsti come numero di pezzi, ma uno ha il colore o la taglia sbagliati. Una giacca nera al posto di una blu è una variante errata, mentre un ordine di due giacche con una sola giacca consegnata presenta una differenza di quantità. Aprire una pratica con la descrizione precisa consente all’assistenza di chiederti le immagini adatte. Se il pacco ha un’etichetta a te intestata ma contiene merce del tutto diversa, tieni insieme etichetta, confezioni e elenco dell’ordine."
+        ]
+      },
+      {
+        "heading": "Abbina ogni riga dell’ordine al riferimento del collo",
+        "paragraphs": [
+          "Apri l’acquisto dall’account utilizzato per pagare. Per ogni prodotto registra la descrizione, la variante selezionata, la quantità ordinata e quella effettivamente ricevuta. Annota per ciascuna riga il riferimento della spedizione, quando l’app lo mostra. Accanto al riferimento scrivi lo stato e l’ultima data riportata. Confronta il numero sull’etichetta esterna con quelli dell’ordine. Il numero dell’acquisto è utile per trovare la transazione, mentre il numero stampato sul pacco aiuta a individuare la spedizione precisa, soprattutto quando hai comprato più articoli nello stesso pagamento.",
+          "Se due prodotti hanno nomi simili, riconoscili dalla taglia, dal colore o dal codice visibile sulle singole confezioni. Una quantità di due paia è diversa da una confezione che contiene due pezzi; rileggi come era venduto l’articolo e controlla la riga confermata al pagamento. Un accessorio mostrato in una fotografia promozionale potrebbe essere stato proposto come variante separata. Verifica cosa comprende davvero la selezione acquistata e, se resta un dubbio, conserva la descrizione originaria. Se l’app mostra due numeri di collo senza specificarne il contenuto, scrivi “associazione da verificare” accanto all’articolo anziché assegnarlo a caso."
+        ],
+        "table": {
+          "columns": [
+            "Articolo di esempio",
+            "Ordinati",
+            "In questo pacco",
+            "Da individuare"
+          ],
+          "rows": [
+            [
+              "Maglietta blu",
+              "2",
+              "1",
+              "1"
+            ],
+            [
+              "Cappellino nero",
+              "1",
+              "1",
+              "0"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Verifica se c’è una seconda spedizione o un preordine",
+        "paragraphs": [
+          "La pagina ufficiale sulle consegne spiega che i prodotti disponibili possono essere spediti prima quando lo stesso ordine comprende articoli prenotati o temporaneamente in attesa di riassortimento. Torna quindi al dettaglio della voce mancante e cerca un’indicazione sulla disponibilità, un secondo tracking o una data prevista distinta. Se trovi un altro collo già in viaggio e chiaramente associato a quel prodotto, il passo successivo è seguire quella spedizione. La consegna della prima busta chiude il viaggio della prima busta, ma non dice da sola dove sia il resto dell’acquisto.",
+          "Se il prodotto compare come spedito e l’unico collo è quello aperto davanti a te, chiedi ad Hacoo di verificare l’abbinamento tra merce e spedizione. Lo stesso vale quando la pagina parla di una seconda spedizione senza spiegare quale articolo contenga, oppure mostra uno stato che non riesci a interpretare. Comunica la data in cui hai controllato e chiedi l’eventuale riferimento aggiuntivo. Non serve aspettare un numero arbitrario di giorni per domandare un chiarimento sulla composizione dell’ordine. Conserva l’eventuale data prevista che l’assistenza ti indicherà per l’articolo specifico."
+        ]
+      },
+      {
+        "heading": "Prepara fotografie e dettagli della quantità mancante",
+        "paragraphs": [
+          "Per le segnalazioni relative a un articolo mancante, la guida Hacoo chiede una fotografia della confezione esterna e la ricevuta o fattura di pagamento. Se manca un accessorio, indica inoltre di mostrare il prodotto ricevuto e descrivere o illustrare il componente assente. Puoi fotografare la scatola intera, l’etichetta leggibile e il contenuto disposto su una superficie libera. Aggiungi una foto della confezione interna se consente di identificare la variante consegnata. Se il pacco presenta un taglio o una chiusura danneggiata, documenta il punto prima di modificare ulteriormente l’imballaggio.",
+          "Dai alle immagini un ordine comprensibile. Una foto con cinque oggetti diversi diventa più utile se nel messaggio specifichi quali corrispondono alle righe acquistate. Per una differenza di quantità, annota quante confezioni hai trovato e quanti pezzi comprendeva ciascuna. Per un accessorio, indica la parte concreta, ad esempio la tracolla prevista per la borsa selezionata, e aggiungi la descrizione della variante che ne conferma l’inclusione. Usa il canale privato ufficiale per gli allegati contenenti indirizzo o riferimento dell’ordine. Nella copia della ricevuta destinata all’assistenza devono restare leggibili la transazione interessata e il valore dell’articolo."
+        ]
+      },
+      {
+        "heading": "Invia una segnalazione legata all’articolo preciso",
+        "paragraphs": [
+          "Dall’account cerca l’assistenza e apri la pratica collegandola, se possibile, all’ordine e alla riga interessata. Spiega brevemente che il pacco è arrivato e che stai segnalando una differenza tra il contenuto e quanto pagato. Indica riferimento dell’ordine, numero del collo letto sull’etichetta, data della consegna e quantità mancante. Specifica se hai già cercato un secondo tracking. Se chiedi prima una verifica sulla composizione del collo, scrivilo esplicitamente. In questo modo anche chi apre gli allegati per la prima volta può capire quali prodotti sono in discussione e quale risposta ti serve.",
+          "Ecco un esempio da adattare. «Ho ricevuto il collo [riferimento] relativo all’ordine [numero] il [data]. Nella riga [descrizione e variante] risultano due magliette blu in taglia M. Ne ho ricevuta una. L’altro articolo dell’ordine, una felpa grigia, è presente. Nel dettaglio dell’ordine vedo un solo numero di spedizione. Potete verificare se la seconda maglietta è assegnata a un altro collo e indicarmi come procedere? Allego le foto dell’imballaggio e la ricevuta.» Se il problema riguarda un componente, sostituisci il conteggio delle magliette con il nome dell’accessorio e la foto del prodotto ricevuto."
+        ]
+      },
+      {
+        "heading": "Segui l’esito per quella riga e controlla l’eventuale rimborso",
+        "paragraphs": [
+          "Conserva il riferimento della pratica e aggiorna lo stesso scambio quando ricevi informazioni nuove. Se l’assistenza identifica un secondo collo, confronta il numero comunicato con il tracking e annota quale prodotto contiene. Se propone un rimborso o un altro intervento, chiedi su quale riga e quantità viene calcolato. A fronte di due pezzi ordinati e uno arrivato, è importante sapere come sarà trattato il pezzo assente. Controlla anche l’eventuale sconto già applicato alla merce, perché il prezzo indicato oggi sul catalogo può differire dall’importo pagato nella tua transazione.",
+          "Per un rimborso annunciato, distingui la risposta che ne comunica l’esame dall’approvazione e dall’accredito che riesci effettivamente a vedere. Conserva l’importo, la valuta, la destinazione comunicata per il credito e il riferimento offerto dal servizio clienti. Se questi elementi non coincidono con l’esito prospettato, rispondi nello stesso scambio indicando la singola differenza. Se intanto arriva un secondo pacco, controllane il contenuto e informa l’assistenza prima di portare avanti una richiesta su un articolo finalmente ricevuto. Puoi archiviare la pratica quando ogni riga dell’ordine ha un esito che riesci a verificare."
+        ]
+      }
+    ],
+    "takeaways": [
+      "Abbina le quantità acquistate ai prodotti ricevuti e ai singoli riferimenti di spedizione.",
+      "Conserva imballaggio, foto e ricevuta prima di aprire la segnalazione per la riga mancante.",
+      "Verifica l’esito per ogni articolo, anche quando arriva un secondo pacco o viene proposto un accredito."
+    ],
+    "sources": [
+      {
+        "label": "Hacoo – consegne separate per preordini e riassortimenti",
+        "href": "https://web.hacoo.app/en-US/pages/shipping-info"
+      },
+      {
+        "label": "Centro assistenza Hacoo – prove richieste per gli articoli mancanti",
+        "href": "https://act.hacoo.app/act/sara/helpcenter/home/qa3"
+      },
+      {
+        "label": "Hacoo – consultare la logistica e lo stato degli ordini",
+        "href": "https://act.hacoo.app/trackingorders"
       }
     ]
   }

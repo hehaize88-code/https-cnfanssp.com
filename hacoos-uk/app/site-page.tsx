@@ -203,10 +203,10 @@ function FaqList({ locale, limit }: { locale: Locale; limit?: number }) {
 }
 
 const featuredArticleKeys: ArticleKey[] = [
+  "articles/hacoo-shipping-cost-uk",
+  "articles/hacoo-wrong-postcode-uk",
+  "articles/hacoo-missing-item-uk",
   "articles/hacoo-not-showing-products-uk",
-  "articles/hacoo-vs-dhgate-uk",
-  "articles/how-to-use-hacoo-uk",
-  "articles/how-long-does-hacoo-take-to-deliver-uk",
 ];
 
 function ArticleCards({ locale, keys = articleKeys }: { locale: Locale; keys?: ArticleKey[] }) {
@@ -228,14 +228,39 @@ function ArticleCards({ locale, keys = articleKeys }: { locale: Locale; keys?: A
 }
 
 const topicPages: ArticleKey[] = ["articles/how-to-use-hacoo-uk", "articles/how-long-does-hacoo-take-to-deliver-uk", "articles/size-before-you-buy", "articles/hacoo-not-showing-products-uk"];
-function TopicLinks({ locale }: { locale: Locale }) {
+const shippingPages: ArticleKey[] = [
+  "articles/how-long-does-hacoo-take-to-deliver-uk",
+  "articles/hacoo-shipping-cost-uk",
+  "articles/hacoo-tracking-uk",
+  "articles/hacoo-returns-refunds-uk",
+  "articles/hacoo-wrong-postcode-uk",
+  "articles/hacoo-missing-item-uk",
+];
+
+function TopicLinks({ locale, shipping = false }: { locale: Locale; shipping?: boolean }) {
   const e = editorial[locale];
+  const pages = shipping ? shippingPages : topicPages;
+  const labels = shipping ? e.shippingTopics : e.topics;
   return <nav className="topic-links" aria-label={e.choose}>
-    {topicPages.map((key, index) => <a key={key} href={routeFor(locale, key)}>{e.topics[index]}<ArrowRight aria-hidden="true" /></a>)}
+    {pages.map((key, index) => <a key={key} href={routeFor(locale, key)} data-track="guide_click" data-placement={shipping ? "shipping_hub" : "topic_navigation"}>{labels[index]}<ArrowRight aria-hidden="true" /></a>)}
   </nav>;
 }
 
+const orderReading: Partial<Record<ArticleKey, ArticleKey[]>> = {
+  "articles/how-long-does-hacoo-take-to-deliver-uk": ["articles/hacoo-shipping-cost-uk", "articles/hacoo-tracking-uk", "articles/hacoo-missing-item-uk"],
+  "articles/hacoo-shipping-cost-uk": ["articles/hacoo-order-checklist-uk", "articles/hacoo-uk-vat-customs", "articles/how-long-does-hacoo-take-to-deliver-uk"],
+  "articles/hacoo-order-checklist-uk": ["articles/hacoo-shipping-cost-uk", "articles/hacoo-wrong-postcode-uk", "articles/size-before-you-buy"],
+  "articles/hacoo-tracking-uk": ["articles/hacoo-missing-item-uk", "articles/hacoo-wrong-postcode-uk", "articles/how-long-does-hacoo-take-to-deliver-uk"],
+  "articles/hacoo-wrong-postcode-uk": ["articles/hacoo-tracking-uk", "articles/hacoo-returns-refunds-uk", "articles/hacoo-order-checklist-uk"],
+  "articles/hacoo-missing-item-uk": ["articles/hacoo-tracking-uk", "articles/hacoo-returns-refunds-uk", "articles/how-long-does-hacoo-take-to-deliver-uk"],
+  "articles/hacoo-returns-refunds-uk": ["articles/hacoo-missing-item-uk", "articles/hacoo-tracking-uk", "articles/hacoo-wrong-postcode-uk"],
+  "articles/hacoo-not-showing-products-uk": ["articles/find-product-links", "articles/hacoo-website-vs-app", "articles/how-to-use-hacoo-uk"],
+  "articles/find-product-links": ["articles/hacoo-not-showing-products-uk", "articles/hacoo-website-vs-app", "articles/size-before-you-buy"],
+};
+
 function relatedKeys(pageKey: ArticleKey): ArticleKey[] {
+  const byTopic = orderReading[pageKey];
+  if (byTopic) return byTopic;
   const candidates: ArticleKey[] = /delivery|tracking|returns|customs/.test(pageKey)
     ? ["articles/how-long-does-hacoo-take-to-deliver-uk", "articles/hacoo-tracking-uk", "articles/hacoo-returns-refunds-uk", "articles/hacoo-uk-vat-customs"]
     : /size|photos|readiness|checklist/.test(pageKey)
@@ -364,6 +389,14 @@ function ArticlePage({ locale, pageKey }: { locale: Locale; pageKey: ArticleKey 
             <div>
               <h2>{section.heading}</h2>
               {section.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+              {section.table && <table className="guide-table">
+                <caption className="sr-only">{section.heading}</caption>
+                <thead><tr>{section.table.columns.map((column) => <th key={column} scope="col">{column}</th>)}</tr></thead>
+                <tbody>{section.table.rows.map(([label, ...cells]) => <tr key={label}>
+                  <th scope="row">{label}</th>
+                  {cells.map((cell, index) => <td key={index}>{cell}</td>)}
+                </tr>)}</tbody>
+              </table>}
               {section.bullets && <ul>{section.bullets.map((item) => <li key={item}><Check />{item}</li>)}</ul>}
             </div>
           </section>
@@ -404,7 +437,7 @@ function InteriorPage({ locale, pageKey }: { locale: Locale; pageKey: PageKey })
         {pageKey === "spreadsheet" && <SearchDesk locale={locale} compact />}
       </section>
 
-      {["guide", "faq", "shipping", "qc-guide"].includes(pageKey) && <section className="topic-section"><h2>{editorial[locale].choose}</h2><TopicLinks locale={locale} /></section>}
+      {["guide", "faq", "shipping", "qc-guide"].includes(pageKey) && <section className="topic-section"><h2>{editorial[locale].choose}</h2><TopicLinks locale={locale} shipping={pageKey === "shipping"} /></section>}
       {pageKey === "methodology" && <section className="section research-basis">
         <div><h2>{u.articleSources}</h2><p>{t.updated}</p><p>{t.independent}</p></div>
         <ul>{Array.from(new Map(Object.values(articles[locale]).flatMap((article) => article.sources).map((source) => [source.href, source])).values()).map((source) => <li key={source.href}><a href={source.href} target="_blank" rel="noopener">{source.label}</a></li>)}</ul>
@@ -430,7 +463,7 @@ function InteriorPage({ locale, pageKey }: { locale: Locale; pageKey: PageKey })
           </div>
         </section>
       )}
-      {!["finds", "categories", "faq", "articles", "methodology"].includes(pageKey) && <FieldNotes locale={locale} pageKey={pageKey} />}
+      {!["finds", "categories", "faq", "articles", "methodology", "shipping"].includes(pageKey) && <FieldNotes locale={locale} pageKey={pageKey} />}
       {checklist && <section className="section inline-cta"><h2>{t.pageLabels.articles.title}</h2><a href={routeFor(locale, "articles")}>{t.readGuides}<ArrowRight /></a></section>}
     </>
   );
