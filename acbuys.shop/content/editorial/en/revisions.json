@@ -1,0 +1,37 @@
+{
+  "acbuy-spreadsheet-guide": {
+    "heading": "Trace one spreadsheet row back to the seller",
+    "paragraphs": [
+      "Take a hoodie listed in two colours. Open its row, then open the seller listing and select the colour and size you want. Record the marketplace, item ID, size label and price for one piece. An identical photo in a second row is only a lead. Compare the seller and item ID before treating the two prices as offers for the same hoodie.",
+      "Save the original listing URL beside the row and add the date you checked it. If your chosen size is greyed out or the link now opens a shop homepage, mark that row as unavailable for this purchase. A working link to a different size will not help when you compare your order with the warehouse photos."
+    ]
+  },
+  "acbuy-shipping-cost-guide": {
+    "heading": "Compare two box sizes on the same shipping line",
+    "paragraphs": [
+      "Suppose a packed pair of shoes weighs 2.0 kg in a 40 × 30 × 20 cm carton. For this example only, assume a line divides cubic centimetres by 6,000 and uses the higher of actual and volumetric weight. The carton represents 4.0 kg. A 40 × 30 × 15 cm carton holding the same 2.0 kg represents 3.0 kg. Neither figure is an ACBuy quote.",
+      "In the estimator, keep the destination, line, contents and weight the same and change only the dimensions. Record both prices and the line’s rounding rule. After packing, repeat the check with the warehouse measurements. Before removing a shoe box to save space, ask how the shoes will be protected and whether the smaller outer dimensions are achievable."
+    ]
+  },
+  "acbuy-qc-photos-guide": {
+    "heading": "Ask for one photo that settles a sizing question",
+    "paragraphs": [
+      "A size tag reading L does not tell you whether a hoodie will fit across the chest. First check which measurement the seller’s chart gives. If it lists flat chest width, request a photo of the hoodie laid flat, zipped if relevant, with a tape running straight from one underarm seam to the other. Ask for both ends of the tape and the numbers to be visible in the same frame.",
+      "Compare the result with a hoodie you own measured in the same way. A chart giving full chest circumference needs a different comparison from flat width. If the fabric is stretched, the start of the tape is hidden or the units are unclear, request clarification before approving the parcel. Check the photo price and available options in your order first."
+    ]
+  },
+  "acbuy-fees-explained": {
+    "heading": "Reconcile the parcel deposit against the final charge",
+    "paragraphs": [
+      "Here is a fictional order in yuan. The item costs ¥180 and domestic delivery costs ¥12. Later, you pay a ¥95 international shipping deposit. After packing, the parcel record shows a final international charge of ¥88. Your cash outlay so far is ¥287. If a ¥7 adjustment appears as usable account credit, the item and delivery together cost ¥280 before any other charges. Keep the credit separate from money returned to your card.",
+      "Use a row for each transaction and label it item, domestic shipping, deposit, final charge or adjustment. Match the order and parcel references before adding anything. Treating the ¥88 final figure as another payment on top of the ¥95 deposit would overstate the cost. Use the actual settlement entries in your account to establish whether a difference is still outstanding."
+    ]
+  },
+  "acbuy-coupons-shipping-discounts": {
+    "heading": "Check what your ACBuy points can redeem before planning a parcel",
+    "paragraphs": [
+      "Open your account’s points area and record three things separately: your balance, the rewards you can currently select and the conditions of the reward you want. ACBuy’s published shopping guide mentions 500 points as the point at which redemption options can be viewed. That statement describes access to a list. It gives no cash value per point or assurance that a shipping coupon for your route is available.",
+      "If you see a shipping reward, open its terms before spending points. Check expiry, eligible routes, the minimum qualifying amount and which charge is discounted. At parcel checkout, compare the total before and after selecting the coupon, with the same line and services. Count the saving only when the new total reflects it. If the reward is missing, keep the original quote in your budget."
+    ]
+  }
+}

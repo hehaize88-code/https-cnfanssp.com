@@ -1,0 +1,52 @@
+{
+  "acbuy-service-status": [
+    {
+      "label": "ACBuy · acbuy.com",
+      "url": "https://www.acbuy.com/search"
+    },
+    {
+      "label": "r/Acbuyofficial · 06/2026",
+      "url": "https://www.reddit.com/r/Acbuyofficial/comments/1ttk80s/official_statement_regarding_recent_cyberattacks/"
+    },
+    {
+      "label": "r/Acbuyofficial · 24.06.2026",
+      "url": "https://www.reddit.com/r/Acbuyofficial/comments/1ue77n4/important_notice_on_warehouse_upgrade_platform/"
+    },
+    {
+      "label": "r/Acbuyofficial · 07/2026",
+      "url": "https://www.reddit.com/r/Acbuyofficial/comments/1us1gai/is_acbuy_stillworking/"
+    },
+    {
+      "label": "r/Acbuyofficial · 14.09.2026",
+      "url": "https://www.reddit.com/r/Acbuyofficial/comments/1wdd871/online/"
+    },
+    {
+      "label": "r/Acbuyofficial · MilaGift",
+      "url": "https://www.reddit.com/r/Acbuyofficial/comments/1vbmj4o/when_will_acbuy_be_back/"
+    }
+  ],
+  "acbuy-payment-methods": [
+    {
+      "label": "acbuy.com/shopping-guide",
+      "url": "https://www.acbuy.com/shopping-guide"
+    },
+    {
+      "label": "acbuy.com/estimation",
+      "url": "https://www.acbuy.com/estimation"
+    },
+    {
+      "label": "Capital One",
+      "url": "https://www.capitalone.com/help-center/credit-cards/card-pending-transactions/"
+    }
+  ],
+  "acbuy-product-links-not-working": [
+    {
+      "label": "acbuy.com/shopping-guide",
+      "url": "https://www.acbuy.com/shopping-guide"
+    },
+    {
+      "label": "QC Finder",
+      "url": "https://qc-finder.net/guides/weidian-taobao-1688-links"
+    }
+  ]
+}

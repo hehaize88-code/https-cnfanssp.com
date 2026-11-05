@@ -1,0 +1,37 @@
+{
+  "acbuy-spreadsheet-guide": {
+    "heading": "Einen Tabelleneintrag bis zum Händler zurückverfolgen",
+    "paragraphs": [
+      "Nimm einen Hoodie, der in zwei Farben angeboten wird. Öffne den Tabelleneintrag und anschließend das Angebot des Händlers. Wähle deine Farbe und Größe. Notiere Marktplatz, Artikel-ID, Größenangabe und Stückpreis. Taucht das gleiche Foto in einer zweiten Zeile auf, vergleiche zuerst Händler und Artikel-ID. Erst dann lohnt sich ein Preisvergleich für denselben Hoodie.",
+      "Speichere neben dem Eintrag die Originaladresse des Angebots und dein Prüfdatum. Ist deine Größe ausgegraut oder führt der Link inzwischen zur Startseite eines Shops, markiere die Zeile für diesen Kauf als nicht verfügbar. Ein funktionierender Link zu einer anderen Größe hilft später kaum, wenn du die Lagerfotos mit deiner Bestellung abgleichst."
+    ]
+  },
+  "acbuy-shipping-cost-guide": {
+    "heading": "Zwei Kartongrößen auf derselben Versandlinie vergleichen",
+    "paragraphs": [
+      "Angenommen, ein verpacktes Paar Schuhe wiegt 2,0 kg und der Karton misst 40 × 30 × 20 cm. Nur für dieses Rechenbeispiel gilt ein Volumengewichtsteiler von 6.000 und es zählt der höhere Wert aus tatsächlichem Gewicht und Volumengewicht. Damit ergeben sich 4,0 kg. Bei 40 × 30 × 15 cm und unverändert 2,0 kg sind es 3,0 kg. Beide Werte dienen zur Veranschaulichung.",
+      "Lass im Versandkostenrechner Zielland, Linie, Inhalt und Gewicht gleich und ändere nur die Maße. Halte beide Preise und die Rundungsregel fest. Rechne nach dem Verpacken mit den echten Lagermaßen erneut. Bevor du den Schuhkarton entfernen lässt, kläre, wie die Schuhe geschützt werden und ob das kleinere Außenmaß tatsächlich erreichbar ist."
+    ]
+  },
+  "acbuy-qc-photos-guide": {
+    "heading": "Mit einem gezielten Foto die Passform prüfen",
+    "paragraphs": [
+      "Ein Etikett mit Größe L verrät wenig über die Brustweite eines Hoodies. Prüfe zuerst, welches Maß die Größentabelle angibt. Bei einer flach gemessenen Brustweite bitte um ein Foto vom ausgebreiteten Hoodie, gegebenenfalls mit geschlossenem Reißverschluss. Das Maßband sollte gerade von einer Achselnaht zur anderen verlaufen. Beide Enden des Messbereichs und die Zahlen müssen auf demselben Bild zu sehen sein.",
+      "Miss einen gut passenden Hoodie auf dieselbe Weise und vergleiche die Werte. Einen angegebenen Brustumfang kannst du nicht direkt mit der einfachen Breite vergleichen. Ist der Stoff gedehnt, der Nullpunkt verdeckt oder die Einheit unklar, bitte vor der Paketfreigabe um Klärung. Prüfe vorher in deiner Bestellung, welche Zusatzfotos verfügbar sind und was sie kosten."
+    ]
+  },
+  "acbuy-fees-explained": {
+    "heading": "Versandanzahlung und endgültige Abrechnung abgleichen",
+    "paragraphs": [
+      "Ein fiktives Beispiel in Yuan: Der Artikel kostet 180 ¥, der Versand innerhalb Chinas 12 ¥. Später zahlst du 95 ¥ für den internationalen Versand an. Nach dem Verpacken steht in der Paketabrechnung ein endgültiger Versandpreis von 88 ¥. Zunächst sind 287 ¥ abgeflossen. Werden 7 ¥ als nutzbares Kontoguthaben verbucht, kosten Artikel und Versand zusammen 280 ¥ vor weiteren Gebühren. Halte Guthaben und Rückzahlungen auf die Karte getrennt.",
+      "Lege für jeden Vorgang eine Zeile an: Artikel, Inlandsversand, Anzahlung, Endbetrag oder Ausgleich. Gleiche Bestell- und Paketnummer ab, bevor du summierst. Wenn du die 88 ¥ zusätzlich zur Anzahlung von 95 ¥ als zweite Versandzahlung verbuchst, fällt deine Summe zu hoch aus. Ob ein Betrag noch offen ist, erkennst du an den tatsächlich gebuchten Ausgleichsposten."
+    ]
+  },
+  "acbuy-coupons-shipping-discounts": {
+    "heading": "Vor der Paketplanung prüfen, wofür sich ACBuy-Punkte einlösen lassen",
+    "paragraphs": [
+      "Öffne den Punktebereich deines Kontos und halte drei Dinge getrennt fest: deinen Punktestand, die gerade auswählbaren Prämien und die Bedingungen deiner Wunschprämie. Laut veröffentlichtem ACBuy-Einkaufsleitfaden lassen sich ab 500 Punkten die Einlöseoptionen ansehen. Damit ist der Zugang zur Auswahl gemeint. Daraus ergibt sich weder ein Geldwert pro Punkt noch ein Anspruch auf einen Versandgutschein für deine Route.",
+      "Erscheint ein Versandgutschein, lies seine Bedingungen, bevor du Punkte einsetzt. Prüfe Ablaufdatum, zulässige Versandlinien, Mindestbetrag und den rabattierten Kostenanteil. Vergleiche beim Paketabschluss die Summe mit und ohne Gutschein bei identischer Linie und denselben Zusatzleistungen. Setze die Ersparnis erst an, wenn sie in der Summe sichtbar ist. Fehlt die Prämie, plane mit dem ursprünglichen Angebot."
+    ]
+  }
+}

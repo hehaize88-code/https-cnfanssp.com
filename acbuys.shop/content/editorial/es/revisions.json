@@ -1,0 +1,37 @@
+{
+  "acbuy-spreadsheet-guide": {
+    "heading": "Sigue una fila de la hoja hasta el anuncio del vendedor",
+    "paragraphs": [
+      "Imagina una sudadera disponible en dos colores. Abre la fila, entra en el anuncio del vendedor y selecciona el color y la talla que quieres. Anota la plataforma, el identificador del artículo, la talla indicada y el precio de una unidad. Si ves la misma foto en otra fila, comprueba el vendedor y el identificador antes de comparar los precios como si fueran de la misma sudadera.",
+      "Guarda la URL original junto a la fila y apunta la fecha de consulta. Si ya no se puede seleccionar tu talla o el enlace ahora abre la portada de la tienda, marca esa fila como no disponible para esta compra. Un enlace válido a otra talla te servirá de poco cuando compares las fotos del almacén con tu pedido."
+    ]
+  },
+  "acbuy-shipping-cost-guide": {
+    "heading": "Compara dos tamaños de caja en la misma línea de envío",
+    "paragraphs": [
+      "Supongamos que un par de zapatos embalado pesa 2,0 kg y que la caja mide 40 × 30 × 20 cm. Solo para este ejemplo, la línea divide los centímetros cúbicos entre 6.000 y cobra por el mayor de los dos pesos, real o volumétrico. El resultado es 4,0 kg. En una caja de 40 × 30 × 15 cm con los mismos 2,0 kg, pasa a 3,0 kg. Son cifras ilustrativas.",
+      "En la calculadora, mantén el destino, la línea, el contenido y el peso. Cambia solo las dimensiones y anota ambos precios y la regla de redondeo. Tras el embalaje, repite el cálculo con las medidas del almacén. Antes de pedir que retiren la caja de zapatos, pregunta cómo protegerán el par y si es posible conseguir las dimensiones exteriores previstas."
+    ]
+  },
+  "acbuy-qc-photos-guide": {
+    "heading": "Pide una foto que resuelva una duda de talla",
+    "paragraphs": [
+      "Una etiqueta con la letra L dice poco sobre el ancho de pecho de una sudadera. Comprueba primero qué mide la tabla del vendedor. Si indica el ancho de la prenda en plano, pide una foto de la sudadera extendida, con la cremallera cerrada si la tiene, y una cinta recta entre las costuras de las dos axilas. Ambos puntos de medida y las cifras deben verse en la misma foto.",
+      "Mide de igual forma una sudadera que te quede bien y compara las cifras. El contorno de pecho completo requiere una comparación distinta del ancho en plano. Si la tela está estirada, no se ve el cero o no queda clara la unidad, pide una aclaración antes de aprobar el paquete. Consulta primero en tu pedido las opciones de fotos y su coste."
+    ]
+  },
+  "acbuy-fees-explained": {
+    "heading": "Cuadra el anticipo del envío con el importe definitivo",
+    "paragraphs": [
+      "Imagina un pedido en yuanes. El artículo cuesta 180 ¥ y el transporte dentro de China, 12 ¥. Después pagas un anticipo de 95 ¥ para el envío internacional. Tras el embalaje, la ficha del paquete muestra un coste final de 88 ¥. Hasta ese momento has desembolsado 287 ¥. Si la diferencia de 7 ¥ aparece como saldo utilizable, el artículo y los envíos suman 280 ¥ antes de otros cargos. Registra ese saldo por separado de un reembolso a tu tarjeta.",
+      "Usa una fila para cada concepto: artículo, transporte nacional, anticipo, importe final o ajuste. Comprueba las referencias del pedido y del paquete antes de sumar. Si contabilizas los 88 ¥ como otro pago además del anticipo de 95 ¥, inflarás el coste. Consulta los movimientos registrados en tu cuenta para saber si la diferencia sigue pendiente."
+    ]
+  },
+  "acbuy-coupons-shipping-discounts": {
+    "heading": "Comprueba qué puedes canjear con tus puntos ACBuy antes de preparar el paquete",
+    "paragraphs": [
+      "Abre la sección de puntos de tu cuenta y anota por separado tu saldo, las recompensas que puedes elegir ahora y las condiciones de la que te interesa. La guía de compra publicada por ACBuy menciona que, al alcanzar 500 puntos, se pueden consultar las opciones de canje. Esa indicación se refiere al acceso a la lista. No fija un valor en dinero por punto ni garantiza un cupón de envío para tu ruta.",
+      "Si aparece una recompensa de envío, lee sus condiciones antes de gastar puntos. Comprueba la caducidad, las líneas admitidas, el importe mínimo y el cargo al que se aplica. Al tramitar el paquete, compara el total antes y después de elegir el cupón sin cambiar de línea ni de servicios. Cuenta el ahorro cuando se refleje en el total. Si falta la recompensa, mantén la cotización original en tu presupuesto."
+    ]
+  }
+}
