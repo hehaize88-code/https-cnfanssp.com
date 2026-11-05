@@ -9,10 +9,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return ["en", "nl", "de", "it", "es"].flatMap((locale) => allRoutes.map((route) => {
     const prefix = locale === "en" ? "" : `/${locale}`;
     const article = articles.find((item) => route === `/articles/${item.slug}`);
+    const revised = ["", "/articles", "/qc", "/finds"].includes(route);
     const changed = locale !== "en" || ["", "/articles"].includes(route);
     return {
       url: `${PLANNED_ORIGIN}${prefix}${route || (locale === "en" ? "/" : "")}`,
-      lastModified: new Date(`${article?.modified ?? (changed ? "2026-10-08" : "2026-09-15")}T00:00:00Z`),
+      lastModified: new Date(`${article?.modified ?? (revised ? "2026-11-05" : changed ? "2026-10-08" : "2026-09-15")}T00:00:00Z`),
       changeFrequency: route === "" ? "weekly" as const : "monthly" as const,
       priority: route === "" ? 1 : route.includes("/articles/") ? 0.75 : 0.8,
     };

@@ -60,8 +60,20 @@ for (const englishUrl of english) {
 }
 for (const locale of locales) {
   const prefix = locale === 'en' ? '' : `/${locale}`;
+  for (const slug of ['clothing-qc-photos', 'bag-qc-photos-opening-and-fit']) {
+    const pathname = `${prefix}/articles/${slug}`;
+    assert(urls.includes(origin + pathname), `New guide missing from sitemap: ${pathname}`);
+    const html = read(pathname);
+    assert.equal(count(html, /<section id="section-/g), 6, `Incomplete guide: ${pathname}`);
+    assert(/<figcaption>[^<]+<\/figcaption>/.test(html), `Missing measurement caption: ${pathname}`);
+    const image = html.match(/<img[^>]*src="(\/[^"]+-measurements\.svg)"/)?.[1];
+    assert(image && fs.existsSync(path.join(root, image.slice(1))), `Missing measurement diagram: ${pathname}`);
+    for (const parent of [`${prefix}/qc`, `${prefix}/articles`]) {
+      assert(read(parent).includes(`href="${pathname}"`), `Missing contextual link on ${parent}`);
+    }
+  }
   assert.equal(count(read(prefix || '/'), /<article class="article-card">/g), 6);
-  assert.equal(count(read(`${prefix}/articles`), /<article class="article-card">/g), 18);
+  assert.equal(count(read(`${prefix}/articles`), /<article class="article-card">/g), english.filter(url => new URL(url).pathname.startsWith('/articles/')).length);
 }
 // Verify that localized non-card links report article clicks, not only /articles paths.
 const localized = read('/de/articles');

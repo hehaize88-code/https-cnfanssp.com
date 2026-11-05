@@ -1,3 +1,4 @@
+import { inspectionArticles, updatedSections } from "./inspection-guides";
 import { researchedArticles } from "./research-articles";
 import { qdrArticles } from "./qdr-articles";
 import { discoveryArticles } from "./discovery-articles";
@@ -71,6 +72,8 @@ export type Article = {
   title: string;
   description: string;
   readTime: string;
+  intro?: string;
+  illustration?: { src: string; caption: string };
   updated: string;
   published?: string;
   modified?: string;
@@ -80,7 +83,7 @@ export type Article = {
   sections: { heading: string; paragraphs: string[]; bullets?: string[] }[];
 };
 
-export const articles: Article[] = [
+const archive: Article[] = [
   ...discoveryArticles,
   ...researchedArticles.map((article) => ({
     ...article,
@@ -317,12 +320,16 @@ export const articles: Article[] = [
 ].map((article) => ({
   ...article,
   related: relatedArticles[article.slug],
-  modified: "2026-10-08",
-  updated: "October 8, 2026",
-  sections: articleImprovements[article.slug]
-    ? [articleImprovements[article.slug], ...article.sections]
-    : article.sections,
+  modified: updatedSections[article.slug] ? "2026-11-05" : "2026-10-08",
+  updated: updatedSections[article.slug] ? "November 5, 2026" : "October 8, 2026",
+  sections: [
+    ...(updatedSections[article.slug] ? [updatedSections[article.slug]] : []),
+    ...(articleImprovements[article.slug] ? [articleImprovements[article.slug]] : []),
+    ...article.sections,
+  ],
 }));
+
+export const articles: Article[] = [...inspectionArticles, ...archive];
 
 export const faqs = [
   { q: "What is a QC finder?", a: "A QC finder helps locate warehouse inspection photos or related visual references using a product link, marketplace identifier, name or image. The photos are evidence for research, not a guarantee for another unit." },

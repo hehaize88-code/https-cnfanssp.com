@@ -1,3 +1,4 @@
+import Link from "next/link";
 import type { Metadata } from "next";
 import { Breadcrumbs, Footer, Header, JsonLd, PageIntro, SearchDesk } from "../components";
 import { MAIN_SITE, PLANNED_ORIGIN } from "../data";
@@ -26,6 +27,10 @@ const evidence = [
 export default function FindsPage() {
   return <><Header /><main><Breadcrumbs items={[{ label: "Finds" }]} /><PageIntro eyebrow="FindQC discovery workflow" title="Use the most exact search input you have." description="FindQC exposes link, image, trend, seller and community discovery surfaces. Their value depends on keeping product identity intact from the result to the final destination." />
     <section className="shell page-content"><SearchDesk compact />
+      <nav className="guide-actions" aria-label="QC guides">
+        <Link href="/articles/weidian-taobao-1688-qc-photos">Find photos from a product link</Link>
+        <Link href="/articles/findqc-no-results-missing-qc-photos">My link returned no QC photos</Link>
+      </nav>
       <div className="find-method-grid">{methods.map((method) => <article key={method.n}><span>{method.n}</span><small>{method.strength}</small><h2>{method.title}</h2><p>{method.copy}</p></article>)}</div>
       <div className="research-table-wrap"><div className="section-heading"><span className="section-index">FACT</span><h2>What each FindQC surface can prove</h2><p>The platform separates trends, sellers, karma, reviews and QC because they answer different questions. Keep those roles separate in your decision.</p></div><div className="research-table"><div className="research-table-head"><b>Surface</b><b>Useful for</b><b>Boundary</b></div>{evidence.map((row) => <div key={row[0]}><strong>{row[0]}</strong><span>{row[1]}</span><span>{row[2]}</span></div>)}</div></div>
       <div className="evidence-note"><b>Verified platform boundary</b><p>FindQC&apos;s public terms describe it as a QC discovery and aggregation platform, not a seller or forwarding service. Payments, shipping and returns are handled by third parties. This guide therefore treats its records as research evidence rather than a purchase guarantee. Official terms reviewed September 15, 2026.</p></div>

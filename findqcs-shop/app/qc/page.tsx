@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Breadcrumbs, Footer, Header, JsonLd, PageIntro } from "../components";
 import { PLANNED_ORIGIN } from "../data";
 
-export const metadata: Metadata = { title: "FindQC QC Photos: 12-Point Warehouse Inspection Checklist", description: "Use a practical 12-point method to assess identity, measurements, construction and evidence limits in exact-unit warehouse QC photos.", alternates: { canonical: `${PLANNED_ORIGIN}/qc` } };
+export const metadata: Metadata = { title: "How to Check QC Photos Before Shipping – 12-Point Checklist", description: "Use a practical 12-point method to assess identity, measurements, construction and evidence limits in exact-unit warehouse QC photos.", alternates: { canonical: `${PLANNED_ORIGIN}/qc` } };
 
 const checks = [
   ["Identity", "Match the listing, selected variation, color and product identifier."],
@@ -21,8 +21,13 @@ const checks = [
 ];
 
 export default function QCPage() {
-  return <><Header /><main><Breadcrumbs items={[{ label: "QC Guide" }]} /><PageIntro eyebrow="12-point inspection" title="Read the unit you received—not the promise in a listing." description="QC photos show one warehouse unit. Use them to verify visible facts, record uncertainty and decide whether more evidence is needed." />
-    <section className="shell page-content"><div className="checklist-grid">{checks.map(([title, text], i) => <article key={title}><span>{String(i + 1).padStart(2, "0")}</span><div><h2>{title}</h2><p>{text}</p></div></article>)}</div>
+  return <><Header /><main><Breadcrumbs items={[{ label: "QC Guide" }]} /><PageIntro eyebrow="12-point inspection" title="How to check QC photos before shipping" description="Start with the item number and size label. Compare both sides from the same angle. If a seam, measurement or zipper is hidden, request that view before approving shipment." />
+    <section className="shell page-content"><nav className="guide-actions" aria-label="QC guides">
+        <Link href="/articles/clothing-qc-photos">Measure a hoodie</Link>
+        <Link href="/articles/bag-qc-photos-opening-and-fit">Check what fits inside a bag</Link>
+        <Link href="/articles/missing-qc-photo-angles">Request a missing photo</Link>
+      </nav>
+      <div className="checklist-grid">{checks.map(([title, text], i) => <article key={title}><span>{String(i + 1).padStart(2, "0")}</span><div><h2>{title}</h2><p>{text}</p></div></article>)}</div>
       <div className="decision-grid"><article><span>APPROVE</span><h2>Evidence matches your limits</h2><p>The exact item and variation match, important dimensions are within your chosen range and no visible issue exceeds your tolerance.</p></article><article><span>REQUEST PHOTO</span><h2>One angle could change the answer</h2><p>Ask for a straight-on measurement or close-up that answers a specific visible question. Avoid vague requests to “check quality.”</p></article><article><span>REVIEW RETURN</span><h2>A material mismatch is visible</h2><p>The wrong variation, out-of-range measurement, clear structural defect or missing important piece deserves a current-policy check.</p></article></div>
       <div className="article-callout"><div><span>DEEPER GUIDE</span><h2>How to read QC photos before you ship</h2><p>Work through geometry, lighting, measurements, construction and decision records with examples of the reasoning process.</p></div><Link href="/articles/how-to-read-qc-photos">Read the full field guide →</Link></div>
     </section></main><Footer /><JsonLd data={{ "@context": "https://schema.org", "@type": "HowTo", name: "12-point QC photo checklist", url: `${PLANNED_ORIGIN}/qc`, step: checks.map((c, i) => ({ "@type": "HowToStep", position: i + 1, name: c[0], text: c[1] })) }} /></>;

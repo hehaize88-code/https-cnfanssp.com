@@ -23,8 +23,14 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
   return <><Header /><main><Breadcrumbs items={[{ label: "Articles", href: "/articles" }, { label: article.title }]} />
     <article className="long-article shell"><header><div className="eyebrow"><span />QC field guide</div><h1>{article.title}</h1><p>{article.description}</p><div><span>Updated <time dateTime={modifiedDate}>{article.updated}</time></span><span>{article.readTime}</span><span>Independent research</span></div></header>
       <div className="article-layout"><aside><b>IN THIS GUIDE</b>{article.sections.map((section, i) => <a key={section.heading} href={`#section-${i + 1}`}>{String(i + 1).padStart(2, "0")} {section.heading}</a>)}</aside>
-        <div className="article-body">{article.sections.map((section, i) => <section id={`section-${i + 1}`} key={section.heading}><span>{String(i + 1).padStart(2, "0")}</span><h2>{section.heading}</h2>{section.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}{section.bullets && <ul>{section.bullets.map((bullet) => <li key={bullet}>{bullet}</li>)}</ul>}</section>)}
-          {article.sources && article.sources.length > 0 && <section className="article-sources"><span>SOURCES</span><h2>Research sources reviewed</h2><p>Primary platform pages used for factual claims in this article. Features and displayed figures can change after the review date.</p><div>{article.sources.map((source) => <span key={source.href}>{source.label}</span>)}</div></section>}
+        <div className="article-body">
+          {article.intro && <p>{article.intro}</p>}
+          {article.illustration && <figure className="measurement-guide">
+            <img src={article.illustration.src} alt="" width="640" height="320" />
+            <figcaption>{article.illustration.caption}</figcaption>
+          </figure>}
+          {article.sections.map((section, i) => <section id={`section-${i + 1}`} key={section.heading}><span>{String(i + 1).padStart(2, "0")}</span><h2>{section.heading}</h2>{section.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}{section.bullets && <ul>{section.bullets.map((bullet) => <li key={bullet}>{bullet}</li>)}</ul>}</section>)}
+          {article.sources && article.sources.length > 0 && <section className="article-sources"><span>SOURCES</span><h2>Research sources reviewed</h2><p>Consult the original references for the methods or platform features discussed here.</p><div>{article.sources.map((source) => <a key={source.href} href={source.href} rel="external">{source.label}</a>)}</div></section>}
           <div className="article-disclosure"><b>Research boundary</b><p>Product availability, prices, currency conversion, seller terms and return conditions can change. Reopen the current destination and inspect the exact unit received before making a decision.</p></div>
         </div></div>
       <footer className="related-row"><div><span>KEEP READING</span><h2>Related field guides</h2></div>{related.map((item) => <Link key={item.slug} href={`/articles/${item.slug}`}><b>{item.title}</b><span>Read →</span></Link>)}</footer>

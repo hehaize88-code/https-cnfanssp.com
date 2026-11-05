@@ -5,7 +5,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL("https://findqcs.shop"),
   title: {
-    default: "FindQC Guide: Find QC Photos and Check Product Details",
+    default: "FindQC Guide – How to Find and Check QC Photos",
     template: "%s | FindQC",
   },
   description: "Learn how to find QC photos from Weidian, Taobao and 1688 links, match product images and check size, shape and stitching before shipping.",

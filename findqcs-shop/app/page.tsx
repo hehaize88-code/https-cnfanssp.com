@@ -11,9 +11,13 @@ export default function Home() {
           <div className="shell hero-grid">
             <div className="hero-copy">
               <div className="eyebrow"><span />Independent FindQC platform research</div>
-              <h1>FindQC and QC Finder.<br /><em>Check the evidence.</em></h1>
+              <h1>Find QC photos.<br /><em>Check your item.</em></h1>
               <p>Search product finds, learn how to read QC photos and use measurements, batch context and exact-unit evidence before shipment.</p>
               <SearchDesk />
+              <nav className="guide-actions" aria-label="QC guides">
+                <Link href="/articles/weidian-taobao-1688-qc-photos">Find photos from a product link</Link>
+                <Link href="/qc" data-track="qc_guide_open">Check my warehouse photos</Link>
+              </nav>
               <div className="hero-trust"><span>✓ Exact destination links</span><span>✓ USD reference prices</span><span>✓ Practical photo checklists</span></div>
             </div>
             <aside className="finder-visual" aria-label="Matched finds and QC workflow">
@@ -80,7 +84,7 @@ export default function Home() {
             <Link href="/shipping"><small>REAL HAULS</small><strong>Countries, routes and cost context</strong><span>Read public logistics aggregates without turning them into a quote →</span></Link>
           </div>
           <div className="article-grid">{articles.slice(0, 6).map((article) => <ArticleCard key={article.slug} article={article} />)}</div>
-          <Link className="button-primary article-library-link" href="/articles">Browse all 18 QC guides <span>→</span></Link>
+          <Link className="button-primary article-library-link" href="/articles">Browse all QC guides <span>→</span></Link>
         </section>
 
         <section className="faq-preview shell">

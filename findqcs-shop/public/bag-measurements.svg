@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320" role="img" aria-labelledby="t d">
+  <title id="t">Bag measurement diagram</title>
+  <desc id="d">1 is the clear zipper opening between the inner faces of its stops. 2 measures the outside base. 3 measures the vertical distance from the inside top of the raised strap to the top edge of the bag.</desc>
+  <rect width="640" height="320" rx="16" fill="#f3f6fb"/>
+  <g stroke="#37485d" stroke-linejoin="round" stroke-width="2.8">
+    <path fill="#bfcedc" d="M221 164 C221 77 257 26 315 26 C373 26 409 77 409 164 H394 C394 86 366 41 315 41 C264 41 236 86 236 164Z"/>
+    <path fill="#dce5ee" d="M198 151 Q315 142 432 151 L459 255 Q461 264 450 267 H180 Q169 264 171 255 Z"/>
+    <path fill="#b9cad9" d="M198 151 Q315 136 432 151 Q315 174 198 151Z"/>
+    <path fill="#f8fafc" d="M212 152 Q315 139 418 152 Q315 164 212 152Z" stroke-width="1.8"/>
+    <path fill="none" stroke="#8797a9" stroke-width="1.5" d="M182 251 Q314 257 448 251 M200 166 L183 249 M431 166 L447 248"/>
+    <rect x="216" y="149" width="6" height="7" rx="1" fill="#58697e" stroke="none"/>
+    <rect x="408" y="149" width="6" height="7" rx="1" fill="#58697e" stroke="none"/>
+    <path d="M402 154 L413 162 L418 157" fill="none" stroke-width="2.1"/>
+  </g>
+  <g fill="none" stroke="#174eb1" stroke-linejoin="round" stroke-linecap="round" stroke-width="2.4">
+    <path d="M222 163V188 M408 163V188" stroke="#4973a7" stroke-width="1.6" stroke-dasharray="4 5"/>
+    <path d="M222 187H408 M231 183L222 187L231 191 M399 183L408 187L399 191 M222 181V193 M408 181V193"/>
+    <path d="M180 267V290 M450 267V290" stroke="#4973a7" stroke-width="1.6" stroke-dasharray="4 5"/>
+    <path d="M180 290H450 M189 286L180 290L189 294 M441 286L450 290L441 294 M180 284V296 M450 284V296"/>
+    <path d="M315 41H480 M315 144H480" stroke="#4973a7" stroke-width="1.6" stroke-dasharray="4 5"/>
+    <path d="M480 42V143 M476 51L480 42L484 51 M476 134L480 143L484 134 M473 41H487 M473 144H487"/>
+    <path d="M290 207V192 M302 289H312 M499 91H484" stroke-width="1.7"/>
+  </g>
+  <g fill="#174eb1" stroke="#f3f6fb" stroke-width="2">
+    <circle cx="290" cy="221" r="15"/><circle cx="319" cy="290" r="15"/><circle cx="515" cy="91" r="15"/>
+  </g>
+  <g fill="white" font-family="Arial, sans-serif" font-size="18" font-weight="700" text-anchor="middle">
+    <text x="290" y="227">1</text><text x="319" y="296">2</text><text x="515" y="97">3</text>
+  </g>
+</svg>

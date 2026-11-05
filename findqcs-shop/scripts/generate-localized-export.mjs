@@ -6,6 +6,8 @@ import seo60Translations from "../app/translations.seo60.json" with { type: "jso
 import currentTranslations from "../app/translations.current.json" with { type: "json" };
 import completeTranslations from "../app/translations.complete.json" with { type: "json" };
 
+import inspectionTranslations from "../app/translations.inspection.json" with { type: "json" };
+
 const origin = "https://findqcs.shop";
 const outputRoot = path.resolve("out");
 const locales = ["nl", "de", "it", "es"];
@@ -16,7 +18,25 @@ const dictionaries = Object.fromEntries(locales.map((locale) => [locale, {
   ...seo60Translations[locale],
   ...currentTranslations[locale],
   ...completeTranslations[locale],
+  ...inspectionTranslations[locale],
 }]));
+const baseGuides = JSON.parse(await fs.readFile(new URL("../app/inspection-guides/en.json", import.meta.url), "utf8"));
+for (const locale of locales) {
+  const localizedGuides = JSON.parse(await fs.readFile(new URL(`../app/inspection-guides/${locale}.json`, import.meta.url), "utf8"));
+  const dictionary = dictionaries[locale];
+  for (const [id, original] of Object.entries(baseGuides)) {
+    const guide = localizedGuides[id];
+    for (const key of ["title", "description", "intro"]) dictionary[original[key]] = guide[key];
+    if (guide.sections.length !== original.sections.length) throw new Error(`Missing sections: ${locale}/${id}`);
+    original.sections.forEach((section, index) => {
+      const local = guide.sections[index];
+      dictionary[section.heading] = local.heading;
+      if (local.paragraphs.length !== section.paragraphs.length) throw new Error(`Missing paragraphs: ${locale}/${id}/${index}`);
+      section.paragraphs.forEach((paragraph, i) => { dictionary[normalize(paragraph)] = local.paragraphs[i]; });
+    });
+  }
+}
+
 const analyticsMarkup = `<script async src="https://www.googletagmanager.com/gtag/js?id=G-9XTZZLDSQZ"></script><script>
 window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date());gtag("config","G-9XTZZLDSQZ");
 (function(){function send(name,element){if(typeof window.gtag!=="function")return;window.gtag("event",name,{link_text:(element.textContent||"").trim().slice(0,100),link_url:element.href||element.action||"",page_path:window.location.pathname})}document.addEventListener("click",function(event){var anchor=event.target.closest&&event.target.closest("a");if(!anchor)return;var explicit=anchor.getAttribute("data-track");if(explicit)return send(explicit,anchor);try{var url=new URL(anchor.href,window.location.href);if(url.hostname==="www.cnfanssp.com"||url.hostname==="cnfanssp.com")return send("main_site_click",anchor);if(url.origin===window.location.origin&&/^\\/(?:nl\\/|de\\/|it\\/|es\\/)?articles\\//.test(url.pathname))return send("article_click",anchor)}catch(_){}});document.addEventListener("submit",function(event){var form=event.target;if(!form||!form.matches||!form.matches("form.search-desk"))return;if(typeof window.gtag!=="function")return;var data=new FormData(form);window.gtag("event","search_submit",{search_term:data.get("keywords")||"",page_path:window.location.pathname})})})();
@@ -130,7 +150,8 @@ function translateTextNodes(html, locale) {
     if (!fragment || fragment.startsWith("<") || fragment.includes("\u0000FQPROTECTED")) return fragment;
     if (!fragment.trim()) return fragment;
     const key = normalize(decodeHtml(fragment));
-    if (key.length > 1 && /[A-Za-z]/.test(key) && !Object.hasOwn(dictionaries[locale], key)) {
+    const titleKey = key.replace(/\s+\|\s+FindQC$/, "");
+    if (key.length > 1 && /[A-Za-z]/.test(key) && !Object.hasOwn(dictionaries[locale], key) && !Object.hasOwn(dictionaries[locale], titleKey)) {
       throw new Error(`Missing ${locale} reader translation: ${key.slice(0, 120)}`);
     }
     const leading = fragment.match(/^\s*/)?.[0] || "";
