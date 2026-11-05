@@ -2320,6 +2320,8 @@ main {
 .long-read-header h1 {
   max-width: none;
   font-size: clamp(55px, 7vw, 92px);
+  overflow-wrap: anywhere;
+  hyphens: auto;
 }
 
 .long-read-header > p {

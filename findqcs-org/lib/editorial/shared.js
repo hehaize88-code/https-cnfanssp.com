@@ -8,7 +8,7 @@ export const localeUi = {
 };
 export const topicConfig = {
   'spreadsheet-find-original-listing-check': ['search','/products/shoes-60.jpg',['weidian-qc-finder-item-id-original-listing','compare-qc-photos-same-item','qc-finder-no-photos-dead-link-recovery']],
-  'football-jersey-qc-photos-name-number-fit': ['review','/products/jersey.webp',['clothing-qc-photos-measurements-print-stitching','warehouse-measurement-guide','request-extra-qc-photos-templates']],
+  'football-jersey-qc-photos-name-number-fit': ['review','/products/catalog-current/jersey-6665.jpg',['clothing-qc-photos-measurements-print-stitching','warehouse-measurement-guide','request-extra-qc-photos-templates']],
   'taobao-qc-finder-item-id-link-checks': ['search','/products/shoes-60.jpg',['product-search-link-id-keyword','qc-finder-no-photos-dead-link-recovery','findqc-image-search-reference-photo-checks']],
   'weidian-qc-finder-item-id-original-listing': ['search','/products/hoodie.webp',['spreadsheet-find-original-listing-check','qc-finder-no-photos-dead-link-recovery','compare-qc-photos-same-item']],
   '1688-qc-finder-supplier-variant-batch-checks': ['search','/products/tshirt.webp',['warehouse-measurement-guide','clothing-qc-photos-measurements-print-stitching','compare-qc-photos-same-item']],
