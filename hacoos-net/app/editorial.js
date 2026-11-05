@@ -1,3 +1,4 @@
+import { applyEdition } from "./guideEditions/content";
 import { newGuideDefinitions, guideSeo, updatedGuideContent, UPDATED_GUIDE_SLUGS } from "./seoUpdates";
 import { wardrobeGapArticle } from "./wardrobeGapArticle";
 import { outfitPlanningArticle } from "./outfitPlanningArticle";
@@ -469,5 +470,5 @@ guides.unshift(...newGuideDefinitions);
 for (const slug of UPDATED_GUIDE_SLUGS) {
   const guide = guides.find((item) => item.slug === slug);
   Object.assign(guide, guideSeo(slug, "en"));
-  guideContent[slug] = updatedGuideContent(slug, "en", guideContent[slug]);
+  guideContent[slug] = applyEdition(slug, "en", updatedGuideContent(slug, "en", guideContent[slug]));
 }

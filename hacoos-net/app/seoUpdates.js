@@ -1,3 +1,4 @@
+import { editionMetadata, publishedGuides, revisedGuides, RELEASE_DATE, REFUND_GUIDE, SHOE_GUIDE } from "./guideEditions";
 import en from "./seoArticles/en.json";
 import es from "./seoArticles/es.json";
 import fr from "./seoArticles/fr.json";
@@ -14,22 +15,30 @@ const refreshKeys = {
   "shipping-planning": "shipping",
   "hacoo-reviews-explained": "reviews",
 };
-export const UPDATED_GUIDE_SLUGS = [...NEW_GUIDE_SLUGS, ...Object.keys(refreshKeys)];
-export const HOME_GUIDE_SLUGS = [...NEW_GUIDE_SLUGS, "hacoo-returns-refunds"];
+export const UPDATED_GUIDE_SLUGS = [...new Set([...publishedGuides, ...NEW_GUIDE_SLUGS, ...Object.keys(refreshKeys), ...revisedGuides])];
+export const HOME_GUIDE_SLUGS = [...publishedGuides, ...NEW_GUIDE_SLUGS, "hacoo-returns-refunds"];
 
 export function seoCopy(locale = "en") { return refresh[locale] || refresh.en; }
 
 export function guideSeo(slug, locale = "en") {
+  const edition = editionMetadata(slug, locale);
+  if (edition) return edition;
   const content = articles[locale]?.[slug] || refresh[locale]?.[refreshKeys[slug]];
   if (!content) return null;
   return { title: content.title, short: content.short, seoTitle: content.seoTitle, seoDescription: content.short, dateModified: SEO_REVIEW_DATE };
 }
 
-export const newGuideDefinitions = NEW_GUIDE_SLUGS.map((slug) => ({
+const publishedDefinitions = publishedGuides.map((slug) => ({
+  slug, ...editionMetadata(slug, "en"), translated: true, read: "7 min",
+  primaryKeyword: slug === REFUND_GUIDE ? "Hacoo refund method" : "New Balance 9060 Hacoo",
+  datePublished: RELEASE_DATE,
+}));
+
+export const newGuideDefinitions = publishedDefinitions.concat(NEW_GUIDE_SLUGS.map((slug) => ({
   slug, ...guideSeo(slug), read: "7 min", translated: true,
   primaryKeyword: en[slug].seoTitle.split(":")[0],
   datePublished: SEO_REVIEW_DATE,
-}));
+})));
 
 const headings = {
   en: ["Request help through the order", "Check a delivered-but-missing parcel", "Read dated customer experiences", "Recognize a useful customer account", "Interpret review photographs carefully", "Separate legitimacy from a guaranteed outcome"],
@@ -79,7 +88,13 @@ export function updatedGuideContent(slug, locale, original) {
 }
 
 export function relatedGuideSlugs(slug) {
-  if (["hacoo-order-tracking", "shipping-planning", "hacoo-returns-refunds"].includes(slug)) {
+  if (["size-guide", "qc-photo-checklist", "shoes", SHOE_GUIDE].includes(slug)) {
+    return [SHOE_GUIDE, "size-guide", "qc-photo-checklist", "hacoo-shoes-everyday-use"].filter((key) => key !== slug).slice(0, 3);
+  }
+  if (slug === REFUND_GUIDE || slug === "hacoo-returns-refunds") {
+    return [REFUND_GUIDE, "hacoo-returns-refunds", "shipping-planning", "hacoo-order-tracking"].filter((key) => key !== slug);
+  }
+  if (["hacoo-order-tracking", "shipping-planning"].includes(slug)) {
     return ["hacoo-order-tracking", "shipping-planning", "hacoo-returns-refunds", "hacoo-reviews-explained"].filter((item) => item !== slug);
   }
   return ["hacoo-product-links-not-working", "find-hacoo-product-old-link-screenshot", "size-guide", "qc-photo-checklist"].filter((item) => item !== slug).slice(0, 3);

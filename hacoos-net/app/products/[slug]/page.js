@@ -1,3 +1,4 @@
+import DiscoveryLinks from "@/components/DiscoveryLinks";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Arrow } from "@/components/Icons";
@@ -56,6 +57,7 @@ export default async function ProductReferencePage({ params }) {
         <span className="section-label">{product.category} / visual reference</span>
         <h1>{product.name}</h1>
         <p>{product.focus}</p>
+        {["shoes", "jackets"].includes(product.categorySlug) && <DiscoveryLinks context={product.categorySlug}/>}
         <div className="hero-actions">
           <a className="button primary" href={verifiedListing} target="_blank" rel="noopener noreferrer">Open verified listing <Arrow/></a>
           <a className="button quiet" href={liveSearch} target="_blank" rel="noopener noreferrer">Search fallback</a>

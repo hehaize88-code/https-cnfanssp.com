@@ -1,4 +1,4 @@
-import { SEO_REVIEW_DATE } from "./seoUpdates";
+import { RELEASE_DATE } from "./guideEditions";
 import { categories, guides, products, SITE_URL } from "./data";
 import { LOCALES, localizePath } from "./i18n";
 export const dynamic = "force-static";
@@ -13,7 +13,7 @@ export default function sitemap() {
   const localizedCore = ["/", "/spreadsheet", "/categories", "/guides", "/faq", "/about"].flatMap((path) =>
     LOCALES.map((locale) => ({
       url: canonicalUrl(path, locale),
-      lastModified: ["/", "/spreadsheet", "/guides"].includes(path) ? new Date(SEO_REVIEW_DATE) : now,
+      lastModified: ["/", "/spreadsheet", "/guides", "/faq", "/categories"].includes(path) ? new Date(RELEASE_DATE) : now,
       changeFrequency: path === "/" ? "weekly" : "monthly",
       priority: path === "/" ? 1 : 0.7,
     })),
@@ -21,7 +21,7 @@ export default function sitemap() {
   const localizedCategories = categories.flatMap((category) =>
     LOCALES.map((locale) => ({
       url: canonicalUrl(`/categories/${category.slug}`, locale),
-      lastModified: now,
+      lastModified: ["shoes", "jackets"].includes(category.slug) ? new Date(RELEASE_DATE) : now,
       changeFrequency: "weekly",
       priority: 0.8,
     })),
@@ -46,7 +46,7 @@ export default function sitemap() {
   const productReferences = products.flatMap((product) =>
     LOCALES.map((locale)=>({
       url: canonicalUrl(`/products/${product.slug}`,locale),
-      lastModified: now,
+      lastModified: ["shoes", "jackets"].includes(product.categorySlug) ? new Date(RELEASE_DATE) : now,
       changeFrequency: "weekly",
       priority: 0.65,
     })),

@@ -1,0 +1,273 @@
+{
+  "shipping-planning": {
+    "intro": "Hacoo lists 15–25 days for the UK, France, Germany and Italy on its shipping page, and 15–30 days for Spain. Its EU help centre gives a broader 15–28-day estimate. For a parcel you have already ordered, start with the delivery window shown on your order and the latest carrier scan.",
+    "section": [
+      "Which date should I use for my parcel?",
+      [
+        "Suppose you are ordering to Spain for an event. The Spanish destination range extends to 30 days, while the EU help article quotes up to 28. Use the destination and service shown at checkout to decide whether you have enough time. Save that estimate alongside the order date. The published total already includes preparation and transport, so adding another preparation period would count those days twice.",
+        "After dispatch, open the tracking number for the item you need. A label dated Monday and a carrier collection on Thursday tell you different things about when the parcel started moving. If the displayed delivery window has passed, give support the order number, the last scan and its date. If the order was split, include the tracking number for the outstanding parcel."
+      ]
+    ],
+    "sources": [
+      [
+        "Hacoo EU delivery guide",
+        "https://act.hacoo.app/eu/help-center/shipping/1",
+        "2026-11-05"
+      ],
+      [
+        "Hacoo delivery estimates by destination",
+        "https://web.hacoo.app/en-US/pages/shipping-info",
+        "2026-11-05"
+      ]
+    ]
+  },
+  "hacoo-returns-refunds": {
+    "intro": "Hacoo’s published policy gives most eligible items a 15-day request window from receipt. Start with the item in your order, the delivery date and the reason for returning it. A size you ordered that feels too small and a different size sent by mistake call for different evidence.",
+    "section": [
+      "What if I need a different size?",
+      [
+        "Check the size you selected on the order against the label on the garment or shoe. If the labels match and the fit is unsuitable, keep the item in its original condition with its tags and packaging. Hacoo’s change-of-mind policy assigns return postage to the customer. Check the instructions for your case before deciding whether to send it back.",
+        "If you ordered M and received S, save the order line and photograph the size label and packaging. Describe the mismatch when you contact support. Hacoo’s exchange help directs buyers to request a return and refund, then place a new order for the preferred option. Wait for instructions before posting the item and follow the approved refund through the payment channel recorded for that order."
+      ]
+    ],
+    "sources": [
+      [
+        "Hacoo return policy",
+        "https://act.hacoo.app/refund-policy",
+        "2026-11-05"
+      ],
+      [
+        "Hacoo exchange help",
+        "https://act.hacoo.app/act/sara/helpcenter/return5",
+        "2026-11-05"
+      ]
+    ]
+  },
+  "size-guide": {
+    "intro": "Start with the chart on the exact listing. For shoes, measure both feet from heel to longest toe while standing, then use the longer measurement with a chart labelled for foot length. For clothing, first check whether the numbers describe the person wearing the item or the garment laid flat.",
+    "section": [
+      "How to read a UK shoe size on a listing",
+      [
+        "For a concrete reference, New Balance’s UK men’s/unisex chart puts UK 8, EU 42 and 26.5 cm on the same row. That row belongs to that brand and chart. If a listing photograph shows a removable insole measuring 26.5 cm, the photograph measures the insert. To compare insoles, measure the removable insole from a pair that fits, using the same endpoints. To compare feet, use a chart that explicitly asks for foot length.",
+        "Apply the same rule to a hoodie. An existing hoodie measuring 55 cm across the chest laid flat is a useful reference for a listing with a flat chest width. A chart giving a 100 cm body chest circumference uses a different method. Check the labels, units and selected size before calculating any difference, and save the two figures together in case the product page later changes."
+      ]
+    ],
+    "sources": [
+      [
+        "New Balance UK size guide",
+        "https://www.newbalance.co.uk/size-guide.html",
+        "2026-11-05"
+      ]
+    ]
+  },
+  "hacoo-refund-payment-method": {
+    "kicker": "Hacoo refund method",
+    "intro": "Open the decision for the affected item and look for three details together: the amount, where Hacoo says it is sending it, and whether the payment has been issued. Hacoo’s EU help centre says it communicates the outcome, amount and route by WhatsApp or text message. The original receipt helps you identify the payment to match. The decision tells you which credit to look for.",
+    "factBox": [
+      [
+        "Start here",
+        "The amount and destination in your own refund decision"
+      ],
+      [
+        "Credit card",
+        "Hacoo’s public policy lists 8–15 working days"
+      ],
+      [
+        "PayPal",
+        "The same policy lists 5–7 working days"
+      ]
+    ],
+    "sections": [
+      [
+        "Find the decision that belongs to your purchase",
+        [
+          "If you ordered through a link, begin with the receipt from the service that took your payment. A product directory can show a Hacoo find and lead to a different seller. Check the order number and the name on your payment confirmation before searching through Hacoo messages. One person may have bought two similar pairs of shoes from different shops on the same day. Choosing the matching transaction saves you from chasing a credit on an unrelated account.",
+          "Open the order through the app or website you used independently of any incoming message. Match the item, colour or size and quantity with the case you opened. Save the decision alongside the receipt. If a message says only that the request has been received, you still need the decision. If it mentions a refund without the destination, use support for that order to ask which payment channel was selected. There is no need to disclose your full card number to identify the item or case."
+        ]
+      ],
+      [
+        "Establish which step has actually happened",
+        [
+          "A return can involve a request, an approval, a parcel journey, an inspection and a payment. Write down only the dates you can support with a message or receipt. The public policy describes cases in which the customer keeps the item and cases requiring its return. Read the instructions attached to yours before posting anything. A carrier’s delivery scan is useful evidence of where the return travelled. Only the retailer or its payment provider can confirm when the refund was released.",
+          "For example, imagine Monday’s message grants permission to send a jacket back. On Thursday, tracking records arrival at the warehouse. On the following Tuesday, support confirms that a refund has been issued. Those three dates answer different questions. If the payment window matters, ask which one the quoted estimate runs from. Keep the refund reference beside the issue date when available. That gives the bank or payment provider something more precise to search for than the date you first noticed a poor fit."
+        ]
+      ],
+      [
+        "Trace a refund paid by credit card",
+        [
+          "Find the original debit on the statement for the card used at checkout. Use its amount, currency, date and merchant description to identify the purchase. Next, look for a credit corresponding to the approved refund. A single line in a mixed order may have cost far less than the final basket total. Searching only for the full debit can make a partial credit easy to miss. If you used several cards, identify the account privately from the receipt before checking statements one by one.",
+          "Hacoo’s public policy gives a credit-card estimate of eight to fifteen working days. The EU help page says timing depends on the original payment channel. Follow any more specific estimate recorded for your order and distinguish working days from calendar days. If the card has been replaced or the account closed, explain that change to the issuer and ask how it can trace a refund to the original transaction. Ask Hacoo for the available payment reference. A replacement card on its own tells you little about the refund’s status."
+        ]
+      ],
+      [
+        "Trace a payment made through PayPal",
+        [
+          "If the receipt names PayPal, start with the PayPal account that contains the purchase. Open the matching payment and check the activity or transaction details for a refund, noting its status, amount and currency. Ask PayPal about the onward destination when the details are unclear, particularly if a card funded the original payment. A purchase made through PayPal can involve a card without making the card statement the best place to identify the refund’s first recorded step.",
+          "The same Hacoo policy gives an estimate of five to seven working days for PayPal. If PayPal shows the expected credit while your card statement still has no matching entry, give PayPal the transaction reference and ask what movement, if any, you should expect next. If the transaction shows no refund at all, first ask Hacoo whether it has issued the approved amount to that PayPal payment. These are separate enquiries, and a screenshot of the relevant activity is more useful than a view of your entire account balance."
+        ]
+      ],
+      [
+        "Reconcile a smaller amount line by line",
+        [
+          "Use the sum approved for the affected item as your starting point. For a simple example, suppose a two-item order shows €42 for shoes, €18 for a cap and €5 for delivery. The customer keeps the cap, and the decision specifies a €42 refund for the shoes. A credit of €42 matches that decision even though the original debit was €65. Whether any delivery charge is due back is a separate question for the actual case. The example assumes no discount, tax adjustment or currency conversion.",
+          "When a coupon or order-level discount is involved, keep the original breakdown. Ask how the discount was allocated to the returned item and which fees are included in the approved amount. For two returns on one receipt, keep a separate row for each decision, issue date and credit received. The EU help centre describes full, partial and refused outcomes. If you dispute the amount approved, ask for the review calculation. If the payment received differs from the amount already approved, ask the payments team to trace the difference."
+        ]
+      ],
+      [
+        "Handle an unclear route or missing return instruction",
+        [
+          "An offer of a voucher, an account balance or money back to a payment channel has different practical consequences. If the message uses an unfamiliar label, ask what it means for that specific order, where the amount can be viewed and whether any action is required. Save the written reply before accepting an option. The EU timing page refers to the original payment channel. It gives no universal promise that every case offers a choice of destination or uses an in-app balance.",
+          "When a return is required, check the actual instructions for an address, parcel reference, evidence and deadline. When the case authorises keeping the item, retain that line with the decision. If the wording is contradictory, ask for clarification through the order before paying postage. It also helps to distinguish an approved refund from an exchange request: someone seeking the correct shoe size may still have to deal separately with the money from the original pair and the price of a future order."
+        ]
+      ],
+      [
+        "Prepare a follow-up that support can act on",
+        [
+          "A short message can contain everything needed for a trace. For example: “My decision for the returned jacket approved €42. Your message dated Tuesday says the payment was issued to the credit card used for the order. I checked that account after the stated window. Could you confirm the issue date, the amount sent and any reference the issuer can use?” Add the order identifier and actual dates inside the official support conversation. Replace every example detail with the information from your own order.",
+          "A useful attachment shows the original payment line, the refund decision or the return scan relevant to the question. Crop out unrelated purchases, addresses and account details. Never include security codes or one-time passcodes. Start in the authenticated order if a message directs you elsewhere. If Hacoo confirms it sent the payment and provides a reference, take the reference to the provider. Record the response with the same case so that the next person can see which part has already been checked."
+        ]
+      ],
+      [
+        "Close the case against a posted transaction",
+        [
+          "Once a credit appears, match it to the approved amount in the stated currency. Check whether it is pending or posted, and record the date beside the order and item. If the provider displays a different currency, ask for its transaction-level explanation before assuming the retailer issued too little. A converted display on a statement and the amount approved in the order can measure different things. Keep both values in the same record.",
+          "If the final credit still falls short, identify the exact unresolved amount and which party can account for it. For a disputed review outcome, the EU help centre describes a limited opportunity to contact support again in specified circumstances. Read the notice promptly. An appeal about eligibility and a trace for money already issued have different starting points. State which one you need so that the reply addresses the remaining problem."
+        ]
+      ]
+    ],
+    "steps": [
+      "Match the item and order number to the original payment.",
+      "Save the decision, approved amount, currency and refund destination.",
+      "Confirm the issue date and check the payment record for that channel.",
+      "Take any outstanding difference to support with the relevant evidence."
+    ],
+    "sourceNote": "The first two sources are Hacoo’s EU help pages. The time ranges come from its separate public return policy. Use the decision and instructions attached to your own order when they are more specific.",
+    "sources": [
+      [
+        "Hacoo EU help centre · partial refunds and notification of the decision",
+        "https://act.hacoo.app/eu/help-center/after-sales/2",
+        "2026-11-05"
+      ],
+      [
+        "Hacoo EU help centre · timing by original payment channel",
+        "https://act.hacoo.app/eu/help-center/after-sales/3",
+        "2026-11-05"
+      ],
+      [
+        "Hacoo return policy · credit-card and PayPal processing estimates",
+        "https://act.hacoo.app/refund-policy",
+        "2026-11-05"
+      ]
+    ]
+  },
+  "hacoo-new-balance-9060-size-and-qc": {
+    "kicker": "Sneaker sizing and listing photos",
+    "intro": "You have found a grey pair labelled New Balance 9060, the size selector offers a familiar number, and the cover photograph shows two shoes on a measuring mat. Before choosing, establish which pair the link opens and what the number measures. This walkthrough uses listing 5648 to show how to compare a foot measurement with the New Balance chart, ask for an insole photo that answers a specific question, and spot when an image belongs to another option.",
+    "factBox": [
+      [
+        "Listing reference",
+        "5648 · source product 7672819921"
+      ],
+      [
+        "One official chart row",
+        "26 cm corresponds to UK 7.5, EU 41.5 and US men's 8 in the men's/unisex guide."
+      ],
+      [
+        "First photo",
+        "Grey and white pair viewed from above on a green mat. The image shows the exterior."
+      ]
+    ],
+    "sections": [
+      [
+        "Start with the listing you can actually identify",
+        [
+          "Open the grey low-top reference and follow its listing button. On 5 November 2026 the destination opened with the 9060 title and source product number 7672819921. The independent index uses the shorter number 5648 for its own listing. Save both numbers with the URL if you are comparing several tabs. They let you find the same reference even when two search results use nearly identical photographs or one title drops the colour name.",
+          "On the destination, select the colour you are considering and see whether the gallery, labels and size options change. If the site does not identify which pictures belong to the selected colour, keep that uncertainty in your notes. A working product link only establishes that a page opens. Stock, available sizes and the seller's description may change between your first visit and checkout. A screenshot saved yesterday can help identify a pair today, but the current order summary should name the option you intend to buy."
+        ]
+      ],
+      [
+        "Read one size row all the way across",
+        [
+          "Choose the men's/unisex section of the New Balance chart when that is how the pair is listed. For example, the 26 cm row groups UK 7.5, EU 41.5, US men's 8 and US women's 9.5. Those are four labels on one row. A photo showing only “8” leaves open whether it means US men's, US women's or UK. A drop-down offering only “41” and “42” also needs an explanation before you assume one corresponds to the official 41.5.",
+          "Use a photograph of the complete tongue label of a comfortable pair you own. Copy the unit beside each number as well as the number itself. Compare the rows on paper if the order of the columns differs between the two websites. The centimetre value on the brand chart and the length of a removable liner answer different questions. A seller who lists “26 cm” without specifying the method has left out the one detail you need to make that comparison."
+        ]
+      ],
+      [
+        "Measure your feet in the socks you plan to wear",
+        [
+          "Place a sheet of paper on a firm floor with one straight edge against a wall. Stand with your heel lightly against the wall and your weight on the foot. Have someone mark the end of the longest toe with the pencil upright. Measure from the back edge of the sheet to that mark. Repeat on the other side. Record both results in centimetres with the socks you expect to use. Check again if the paper shifted or your heel lifted.",
+          "Imagine you record 25.8 cm on one side and 26.0 cm on the other. Use the longer measurement as the starting point for reading the chart. Neither measurement tells you the internal length of the shoe on the listing. Also note where an existing pair feels tight, especially across the forefoot or over the instep. If length is comfortable but the side presses, look for width information before assuming a longer shoe will solve the problem."
+        ]
+      ],
+      [
+        "Request an insole photo you can compare",
+        [
+          "If an insole comes out of a shoe that fits well, lay it on a flat surface without pulling it straight. Photograph its entire top face with a rigid ruler alongside, starting the scale at the back edge and ending at the furthest toe. Record that length and which pair supplied it. Compare the seller's measurement using the same endpoints. A tape following a curved surface can produce a different reading from a straight ruler laid beside it.",
+          "A practical request is: “Could you show the removable insole from the selected colour and size, with the heel, toe, ruler zero and final reading in one photograph?” Ask for the matching size label in another image if necessary. A photo with the first centimetre cropped off cannot settle a close call. If the lining is fixed, leave it in place. Ask how the seller obtained the stated measurement and decide whether you have a comparable reference before choosing between sizes."
+        ]
+      ],
+      [
+        "Use the grey pair's cover photo for the questions it can answer",
+        [
+          "The index image puts the two grey-and-white shoes side by side on a green mat. From above, compare the outline of each toe, the direction of the tongues and the arrangement of the lace panels. Check whether the shoes point in the same direction before treating a difference in apparent length as meaningful. The camera is above the outside of the shoe. The lines beneath the sole cannot tell you how much space your toes will have inside.",
+          "For a closer check, ask for a heel view taken with both shoes resting level, then the same side view of each shoe at about sole height. Choose a question for each angle. A rear view can clarify whether one heel panel looks tilted when the soles are level. Two matching side views make it easier to compare the profile of the midsoles. If a difference vanishes when both shoes are photographed from the same position, the original viewing angle was a poor basis for judging it."
+        ]
+      ],
+      [
+        "Compare a specific 9060 colour and style",
+        [
+          "New Balance's own 9060 page for style U90609XS offers a reference for the model's sculpted midsole, heel detail and diamond-patterned outsole. Use the official pictures to learn where those features sit. Then look for the style code of the colour you intend to buy. U90609XS identifies the brand-page example used here. The grey pair in listing 5648 has its own reference, and its catalogue title alone does not establish that it represents this particular official style.",
+          "Start with features that survive a change of lighting, such as the outline of a panel and the position of a seam. Compare shade only when you can see the same area in similar light. A mint cast from a green mat can make two grey panels look different on a screen. A close-up of the label can connect a photo to a stated style or size. A matching label or silhouette alone cannot establish authenticity, exact materials or how the cushioning will feel underfoot."
+        ]
+      ],
+      [
+        "Make a choice when the photographs disagree",
+        [
+          "Suppose the page title says grey, the selected swatch looks silver and the gallery still shows the same cover image after you choose blue. Write down what changes with the selector and what stays in place. Ask for a picture identifying the colour and size together if that choice matters. For a listing with several variants, a measurement supplied for one size belongs to that size until the seller supplies an equivalent measurement for another.",
+          "Use the same approach to decide between two links. Keep a short note for each with its source number, selected option, sizing system and best available measurement. One well-labelled picture may resolve more than a gallery of attractive images taken from identical angles. When your decision depends on a missing insole length, ask that question once and wait for a usable answer. If you can try the exact model and width locally, record which pair you tried so that the comparison remains traceable."
+        ]
+      ],
+      [
+        "Check the final option and keep a useful record",
+        [
+          "Immediately before ordering, reopen the selected listing and compare the colour, size system, width if given and quantity against the summary on screen. Recheck the total, delivery estimate and return conditions for the seller and destination you chose. Terms from an official New Balance shop apply to purchases on that shop under its own conditions. A catalogue link to a separate seller needs its own checks.",
+          "Keep a copy of the selected option and any measurement photograph with the date. When the parcel arrives, compare the labels on both shoes with the order and look at the pair together on level ground. Follow the applicable return conditions if you intend to try them on. If a different size or colour was sent, a photo of the received label beside the selected order details gives support a precise discrepancy to investigate."
+        ]
+      ]
+    ],
+    "steps": [
+      "Open listing 5648 and match the selected colour with the gallery.",
+      "Measure both feet and compare the longer one with the appropriate chart.",
+      "Compare insole measurements only when the method and size match.",
+      "Save the order summary and the evidence for the option you chose."
+    ],
+    "sourceNote": "We checked the catalogue link and source number on 5 November 2026. The index photograph is a recorded exterior view; the measurements in the worked example illustrate the method.",
+    "sources": [
+      [
+        "Hacoos product reference",
+        "https://hacoos.net/products/grey-low-top-sneakers/",
+        "2026-11-05"
+      ],
+      [
+        "Catalogue listing 5648",
+        "https://cnfanssp.com/AllProducts/5648.html",
+        "2026-11-05"
+      ],
+      [
+        "New Balance shoe size and width guide",
+        "https://www.newbalance.com/size-guide.html",
+        "2026-11-05"
+      ],
+      [
+        "New Balance official 9060 example",
+        "https://www.newbalance.com/pd/9060/U90609XS-D-07.html",
+        "2026-11-05"
+      ]
+    ],
+    "image": {
+      "src": "/products/live-5648.webp",
+      "alt": "Grey-and-white low-top sneakers photographed together from above on a green mat",
+      "caption": "The reference picture for listing 5648 shows the exterior of the pair. Measuring the removable insole requires a separate view."
+    }
+  }
+}

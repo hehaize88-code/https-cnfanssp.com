@@ -1,0 +1,273 @@
+{
+  "shipping-planning": {
+    "intro": "Auf seiner Versandseite nennt Hacoo für Deutschland, Frankreich, Italien und das Vereinigte Königreich 15 bis 25 Tage, für Spanien 15 bis 30. Die europäische Hilfe gibt als allgemeinen Richtwert 15 bis 28 Tage an. Für eine laufende Bestellung sind der dort angezeigte Lieferzeitraum und der letzte Eintrag des Paketdienstes die besten Anhaltspunkte.",
+    "section": [
+      "Welcher Lieferzeitraum gilt für mein Paket?",
+      [
+        "Für eine Lieferung nach Spanien reicht die Schätzung auf der Länderseite bis zu 30 Tage, in der allgemeinen EU-Hilfe bis zu 28. Wenn Sie einen Artikel zu einem bestimmten Anlass brauchen, prüfen Sie vor dem Bezahlen das Zielland und die Versandart. Speichern Sie den angezeigten Zeitraum zusammen mit dem Bestelldatum. Die veröffentlichte Gesamtdauer umfasst die Vorbereitung und den Transport bereits.",
+        "Öffnen Sie nach dem Versand die Sendungsverfolgung für den erwarteten Artikel. Wurde das Etikett am Montag erstellt und das Paket am Donnerstag abgeholt, begann der Transport erst mit der Übergabe. Ist der angezeigte Lieferzeitraum verstrichen, geben Sie dem Kundenservice die Bestellnummer sowie Datum und Wortlaut des letzten Eintrags. Bei Teillieferungen gehört die Sendungsnummer des ausstehenden Pakets dazu."
+      ]
+    ],
+    "sources": [
+      [
+        "Hacoo-Lieferzeiten in der EU",
+        "https://act.hacoo.app/eu/help-center/shipping/1",
+        "2026-11-05"
+      ],
+      [
+        "Hacoo-Lieferzeiten nach Zielland",
+        "https://web.hacoo.app/en-US/pages/shipping-info",
+        "2026-11-05"
+      ]
+    ]
+  },
+  "hacoo-returns-refunds": {
+    "intro": "Nach den veröffentlichten Rückgabebedingungen von Hacoo können Sie für die meisten dafür zugelassenen Artikel innerhalb von 15 Tagen nach Erhalt eine Rückgabe beantragen. Prüfen Sie Lieferdatum und Rückgabegrund. Wenn die bestellte Größe zu klein ausfällt, brauchen Sie andere Angaben als bei einer falsch gelieferten Größe.",
+    "section": [
+      "Was tun, wenn ich eine andere Größe brauche?",
+      [
+        "Vergleichen Sie die bestellte Größe mit der Angabe auf dem Etikett. Stimmen beide überein und passt der Artikel trotzdem nicht, bewahren Sie ihn im Originalzustand mit Etiketten und Verpackung auf. Laut Hacoo trägt der Käufer bei einer Rückgabe wegen Nichtgefallens die Rücksendekosten. Lesen Sie die Hinweise zu Ihrem Fall, bevor Sie das Paket frankieren.",
+        "Haben Sie M bestellt und S erhalten, sichern Sie die Bestellposition und fotografieren Sie Größenetikett und Verpackung. Beschreiben Sie dem Kundenservice genau diese Abweichung. Die Hacoo-Hilfe zum Umtausch verweist auf eine Rückgabe mit Erstattung und eine neue Bestellung in der gewünschten Größe. Warten Sie die Versandanweisungen ab und prüfen Sie anschließend den Geldeingang über den für diese Bestellung angegebenen Zahlungsweg."
+      ]
+    ],
+    "sources": [
+      [
+        "Rückgabebedingungen von Hacoo",
+        "https://act.hacoo.app/refund-policy",
+        "2026-11-05"
+      ],
+      [
+        "Hacoo-Hilfe zum Umtausch",
+        "https://act.hacoo.app/act/sara/helpcenter/return5",
+        "2026-11-05"
+      ]
+    ]
+  },
+  "size-guide": {
+    "intro": "Öffnen Sie die Tabelle des konkreten Angebots. Messen Sie bei Schuhen beide Füße im Stehen von der Ferse bis zur längsten Zehe. Verwenden Sie den längeren Wert, wenn die Tabelle nach der Fußlänge fragt. Prüfen Sie bei Kleidung zuerst, ob die Angaben Körpermaße oder die Maße des flach ausgebreiteten Kleidungsstücks beschreiben.",
+    "section": [
+      "Wie lese ich eine britische Schuhgröße im Angebot?",
+      [
+        "In der britischen Herren- und Unisex-Tabelle von New Balance stehen beispielsweise UK 8, EU 42 und 26,5 cm in derselben Zeile. Diese Zuordnung gilt für die betreffende Markentabelle. Zeigt ein Foto eine herausnehmbare Einlegesohle von 26,5 cm, wurde die Sohle gemessen. Vergleichen Sie sie mit der Sohle eines passenden Schuhs und messen Sie zwischen denselben Punkten. Nutzen Sie für Ihren Fuß eine Tabelle, die ausdrücklich die Fußlänge verlangt.",
+        "Dasselbe gilt für einen Kapuzenpullover. Misst Ihr gut passender Pullover flach von Achsel zu Achsel 55 cm, können Sie das mit der flach gemessenen Brustweite im Angebot vergleichen. Ein Körperbrustumfang von 100 cm wurde anders ermittelt. Prüfen Sie Einheit, Messmethode und ausgewählte Größe, bevor Sie eine Differenz ausrechnen. Speichern Sie die Maße mit der passenden Tabellenzeile."
+      ]
+    ],
+    "sources": [
+      [
+        "Größentabelle von New Balance UK",
+        "https://www.newbalance.co.uk/size-guide.html",
+        "2026-11-05"
+      ]
+    ]
+  },
+  "hacoo-refund-payment-method": {
+    "kicker": "Hacoo-Rückzahlung",
+    "intro": "Öffne die Entscheidung zum betroffenen Artikel. Entscheidend sind der bewilligte Betrag, das Ziel der Erstattung und die Bestätigung, dass die Zahlung veranlasst wurde. Laut Hacoos EU-Hilfe teilt der Kundendienst Ergebnis, Betrag und Rückzahlungsweg per WhatsApp oder SMS mit. Mit dem ursprünglichen Beleg findest du anschließend die passende Belastung auf dem Konto.",
+    "factBox": [
+      [
+        "Zuerst prüfen",
+        "Bewilligter Betrag und Zahlungsweg im eigenen Vorgang"
+      ],
+      [
+        "Kreditkarte",
+        "Die öffentliche Richtlinie nennt 8 bis 15 Arbeitstage"
+      ],
+      [
+        "PayPal",
+        "Dieselbe Richtlinie nennt 5 bis 7 Arbeitstage"
+      ]
+    ],
+    "sections": [
+      [
+        "Die Entscheidung dem richtigen Kauf zuordnen",
+        [
+          "Wenn du über einen Produktlink bestellt hast, suche zunächst den Beleg des Händlers, der den Betrag eingezogen hat. Ein Verzeichnis kann einen Hacoo-Fund zeigen und zu einem anderen Anbieter führen. Vergleiche Bestellnummer und Händlernamen, bevor du Nachrichten oder Kontoumsätze durchsuchst. Zwei ähnliche Paar Schuhe von verschiedenen Händlern können am selben Tag fast gleich hohe Buchungen auslösen.",
+          "Öffne die beim Kauf verwendete App oder Website direkt. Gleiche Artikel, Farbe, Größe und Stückzahl mit dem Antrag ab und bewahre die Antwort beim Kaufbeleg auf. Eine Eingangsbestätigung besagt zunächst, dass der Antrag angekommen ist. Fehlt in einer Zusage das Ziel der Gutschrift, frage über den Kundendienst der Bestellung nach dem vorgesehenen Zahlungsweg. Zur Zuordnung des Artikels braucht der Support keine vollständige Kartennummer."
+        ]
+      ],
+      [
+        "Klären, welcher Schritt bereits erledigt ist",
+        [
+          "Notiere nur Daten, die du mit einer Nachricht oder einem Beleg nachweisen kannst. Dazu gehören Antrag, Genehmigung, Rücksendung, Wareneingang und Zahlungsfreigabe. Hacoos Richtlinie sieht sowohl Rücksendungen als auch Fälle vor, in denen du den Artikel behalten darfst. Lies deshalb die Anweisung für deinen Fall vor dem Versand. Ein Zustellscan belegt den Weg des Pakets. Die Freigabe der Zahlung muss Hacoo oder der Zahlungsdienst bestätigen.",
+          "Angenommen, du bekommst montags die Erlaubnis, eine Jacke zurückzusenden. Am Donnerstag trifft sie im Lager ein. Am darauffolgenden Dienstag bestätigt der Kundendienst die Erstattung. Frage bei einer Zeitangabe, welches dieser Ereignisse den Fristbeginn markiert. Lege die Zahlungsreferenz, falls verfügbar, zum Datum der Auszahlung. Mit diesen Angaben kann die Bank gezielter suchen als mit dem Datum der ersten Anprobe."
+        ]
+      ],
+      [
+        "Eine Kartengutschrift nachverfolgen",
+        [
+          "Suche auf der Abrechnung der beim Kauf eingesetzten Karte nach der ursprünglichen Belastung. Betrag, Währung, Datum und Händlerbezeichnung helfen bei der Zuordnung. Suche anschließend nach einer Gutschrift in Höhe der bewilligten Erstattung. Bei einem Warenkorb mit mehreren Artikeln kann dieser Betrag deutlich niedriger sein als der ursprüngliche Umsatz. Wenn du mehrere Karten nutzt, kläre anhand des Belegs, welches Konto du prüfen musst.",
+          "Für Kreditkarten nennt Hacoos öffentliche Richtlinie acht bis fünfzehn Arbeitstage. Die EU-Hilfe verweist auf den ursprünglich genutzten Zahlungsweg. Bevorzuge eine genauere Angabe aus deinem eigenen Vorgang und unterscheide Arbeitstage von Kalendertagen. Wurde die Karte ersetzt oder das Konto geschlossen, erkläre das dem Kartenherausgeber. Frage, wie er die Erstattung zur ursprünglichen Zahlung finden kann, und bitte Hacoo um eine verfügbare Zahlungsreferenz."
+        ]
+      ],
+      [
+        "Eine Erstattung über PayPal finden",
+        [
+          "Melde dich bei dem PayPal-Konto an, über das der Kauf lief. Öffne die passende Transaktion und prüfe Status, Betrag und Währung einer angezeigten Rückzahlung. Wenn PayPal beim Kauf eine hinterlegte Karte belastet hat, frage bei unklarer Anzeige nach, wohin das Geld weitergeleitet wird. Am Verlauf der einzelnen Zahlung erkennst du häufig mehr als am aktuellen Gesamtguthaben.",
+          "Hacoo nennt für PayPal in derselben Richtlinie fünf bis sieben Arbeitstage. Ist die erwartete Gutschrift bei PayPal sichtbar, auf der Karte aber noch kein passender Umsatz, frage PayPal mit der Transaktionsreferenz nach dem weiteren Ablauf. Fehlt bereits in PayPal jeder Hinweis auf eine Erstattung, lass dir zunächst von Hacoo bestätigen, ob der bewilligte Betrag für genau diesen Kauf angewiesen wurde. Ein Ausschnitt der betreffenden Buchung genügt meist zur Erläuterung."
+        ]
+      ],
+      [
+        "Einen niedrigeren Betrag nachrechnen",
+        [
+          "Ein Beispiel: Schuhe kosten 42 €, eine Kappe 18 €, der Versand 5 €. Du behältst die Kappe und für die Schuhe werden 42 € bewilligt. Ein Eingang von 42 € entspricht dieser Entscheidung, auch wenn die ursprüngliche Belastung 65 € betrug. Ob Versandkosten erstattet werden, ist anhand des tatsächlichen Falls gesondert zu prüfen. Das Beispiel enthält keine Rabatte und keinen Währungswechsel.",
+          "Bewahre bei einem Gutschein die ursprüngliche Preisaufschlüsselung auf und frage, welcher Rabattanteil dem zurückgegebenen Artikel zugerechnet wurde. Führe bei zwei Rückgaben derselben Bestellung getrennte Zeilen für Entscheidung, Auszahlung und Geldeingang. Die EU-Hilfe nennt vollständige, teilweise und abgelehnte Erstattungen. Hältst du den bewilligten Betrag für zu niedrig, frage nach der Berechnung. Weicht der tatsächliche Eingang vom bereits bewilligten Betrag ab, frage nach dem Verbleib der Differenz."
+        ]
+      ],
+      [
+        "Unklare Hinweise auf Guthaben oder Rücksendung klären",
+        [
+          "Erwähnt die Nachricht einen Gutschein, Kontoguthaben oder eine Zahlung, lass dir erklären, was das für diese Bestellung bedeutet. Wo erscheint der Betrag? Musst du noch etwas tun? Bewahre die Antwort auf, bevor du eine angebotene Lösung annimmst. Aus dem Hinweis der EU-Hilfe auf den ursprünglichen Zahlungsweg lässt sich kein allgemeines Wahlrecht über die Art der Rückzahlung ableiten.",
+          "Ist eine Rücksendung erforderlich, überprüfe Adresse, Paketreferenz, Nachweise und Frist in der konkreten Anweisung. Darfst du die Ware behalten, sichere auch diese Aussage. Bei widersprüchlichen Nachrichten lohnt sich eine Rückfrage vor dem Kauf einer Paketmarke. Möchtest du die Schuhe später in einer anderen Größe bestellen, führe die Erstattung für das erste Paar und den Preis einer möglichen Neubestellung getrennt auf."
+        ]
+      ],
+      [
+        "Eine gezielte Rückfrage formulieren",
+        [
+          "Du könntest schreiben: „Für die zurückgeschickte Jacke wurden 42 € bewilligt. Ihrer Nachricht zufolge haben Sie die Rückzahlung auf die ursprünglich verwendete Kreditkarte veranlasst. Die genannte Frist ist verstrichen und ich finde keine Gutschrift. Können Sie das Auszahlungsdatum, den angewiesenen Betrag und eine für meinen Kartenherausgeber verwertbare Referenz bestätigen?“ Verwende die Daten deines eigenen Vorgangs und ergänze im geschützten Supportkanal Bestellnummer und genaue Daten.",
+          "Als Anlage genügt der relevante Ausschnitt aus Zahlungsbeleg, Entscheidung oder Rücksendungsverfolgung. Schwärze andere Einkäufe, Anschriften und Kontodaten. Sende keine Sicherheitscodes oder Einmalpasswörter. Bestätigt Hacoo die Anweisung und liefert eine Referenz, wende dich damit an den Zahlungsdienst. Halte dessen Antwort beim selben Vorgang fest, damit du den bisherigen Stand bei einer weiteren Rückfrage griffbereit hast."
+        ]
+      ],
+      [
+        "Den Vorgang mit der verbuchten Gutschrift abschließen",
+        [
+          "Sobald ein Betrag erscheint, gleiche ihn in der angegebenen Währung mit der Entscheidung ab. Prüfe, ob der Umsatz vorgemerkt oder endgültig gebucht ist, und notiere das Datum beim Artikel. Bei einer abweichenden Abrechnungswährung bitte den Zahlungsdienst um die Umrechnungsdetails, bevor du von einem fehlenden Betrag ausgehst. Für einen nachvollziehbaren Vergleich brauchst du sowohl den bewilligten Betrag als auch die angezeigte Gutschrift.",
+          "Besteht weiterhin eine Differenz, beziffere sie und benenne den offenen Schritt. Bei bestimmten strittigen Entscheidungen beschreibt die EU-Hilfe eine befristete Möglichkeit zur erneuten Kontaktaufnahme. Lies die Mitteilung frühzeitig. Eine Überprüfung der ursprünglichen Entscheidung und die Suche nach einer bereits veranlassten Zahlung betreffen verschiedene Vorgänge. Mit einer präzisen Frage gelangt dein Anliegen eher an die richtige Stelle."
+        ]
+      ]
+    ],
+    "steps": [
+      "Bestellung und Artikel der ursprünglichen Zahlung zuordnen.",
+      "Entscheidung, Betrag, Währung und Zahlungsweg festhalten.",
+      "Auszahlungsdatum und Umsatz beim jeweiligen Zahlungsdienst prüfen.",
+      "Eine verbleibende Differenz mit dem passenden Beleg melden."
+    ],
+    "sourceNote": "Die ersten beiden Quellen stammen aus Hacoos EU-Hilfe. Die Zeitspannen je Zahlungsweg stehen in der gesonderten öffentlichen Rückgaberichtlinie. Berücksichtige genauere Angaben zu deiner Bestellung.",
+    "sources": [
+      [
+        "Hacoo EU-Hilfe · Teilerstattung und Mitteilung der Entscheidung",
+        "https://act.hacoo.app/eu/help-center/after-sales/2",
+        "2026-11-05"
+      ],
+      [
+        "Hacoo EU-Hilfe · Dauer je ursprünglichem Zahlungsweg",
+        "https://act.hacoo.app/eu/help-center/after-sales/3",
+        "2026-11-05"
+      ],
+      [
+        "Hacoo-Richtlinie · Bearbeitungszeiten für Kreditkarten und PayPal",
+        "https://act.hacoo.app/refund-policy",
+        "2026-11-05"
+      ]
+    ]
+  },
+  "hacoo-new-balance-9060-size-and-qc": {
+    "kicker": "Schuhgrößen und Produktfotos",
+    "intro": "Du hast einen grauen New Balance 9060 gefunden. Im Größenmenü steht deine übliche Größe und auf dem Titelbild liegen zwei Schuhe auf einer gerasterten Unterlage. Bevor du dich entscheidest, kläre, welches Paar der Link öffnet und was die Zentimeterangabe bezeichnet. Am Beispiel von Eintrag 5648 kannst du die Markentabelle lesen, eine vergleichbare Einlegesohlenmessung anfragen und offene Fragen zu den Bildern eingrenzen.",
+    "factBox": [
+      [
+        "Referenzeintrag",
+        "5648 · ursprüngliche Produktnummer 7672819921"
+      ],
+      [
+        "Beispiel aus der Markentabelle",
+        "26 cm stehen in der Herren-/Unisex-Tabelle bei UK 7,5, EU 41,5 und US-Herrengröße 8."
+      ],
+      [
+        "Erstes Foto",
+        "Grau-weißes Paar von oben auf einer grünen Unterlage. Sichtbar ist die Außenseite."
+      ]
+    ],
+    "sections": [
+      [
+        "Den richtigen Eintrag wiederfinden",
+        [
+          "Öffne die Referenz für den grauen Halbschuh und folge dem Produktlink. Am 5. November 2026 zeigte die Zielseite den Modellnamen 9060 und die ursprüngliche Produktnummer 7672819921. Unser Verzeichnis führt den Eintrag unter der kürzeren Nummer 5648. Speichere beide zusammen mit dem Link, wenn du mehrere Angebote vergleichst. So kannst du zwei Treffer auch dann unterscheiden, wenn ihre Titel fast gleich sind oder dasselbe Bild erscheint.",
+          "Wähle die gewünschte Farbe und beobachte, ob sich Galerie, Größen und Beschriftungen ändern. Bleiben die Fotos bei mehreren Farben gleich, ist die Zuordnung zur gewählten Variante offen. Ein funktionierender Link bestätigt den Zugriff auf eine Seite zum Prüfzeitpunkt. Verfügbare Größen und Bestände können sich ändern. Kontrolliere vor der Bestellung die Variante, die tatsächlich in der Zusammenfassung steht."
+        ]
+      ],
+      [
+        "Eine Größenzeile vollständig lesen",
+        [
+          "Öffne in der New-Balance-Tabelle die Rubrik Herren/Unisex, sofern das Angebot entsprechend gekennzeichnet ist. Bei 26 cm stehen UK 7,5, EU 41,5, US-Herrengröße 8 und US-Damengröße 9,5 in derselben Zeile. Ist auf einem Foto nur eine „8“ lesbar, fehlt die entscheidende Größenbezeichnung. Bietet das Menü nur 41 und 42 an, frage nach der verwendeten Tabelle, bevor du eine Option mit der offiziellen 41,5 gleichsetzt.",
+          "Fotografiere das vollständige Zungenetikett eines Paars, das dir gut passt. Schreibe zu jeder Zahl das System, denn die Spalten stehen auf verschiedenen Seiten oft in einer anderen Reihenfolge. Auch die Bedeutung von „26 cm“ muss klar sein. Die Länge in der Markentabelle und die gemessene Länge einer herausnehmbaren Einlegesohle ergeben sich aus verschiedenen Messungen. Erst mit der Messmethode lässt sich der Wert sinnvoll auf deinen Vergleichsschuh beziehen."
+        ]
+      ],
+      [
+        "Beide Füße mit den vorgesehenen Socken messen",
+        [
+          "Lege ein Blatt auf einen festen Boden, eine gerade Kante direkt an die Wand. Stell dich mit leicht anliegender Ferse auf das Blatt und belaste den Fuß. Eine zweite Person markiert die Spitze des längsten Zehs mit senkrecht gehaltenem Stift. Miss von der hinteren Blattkante bis zur Markierung. Wiederhole das am anderen Fuß und notiere beide Werte in Zentimetern. Verrutscht das Blatt oder hebt sich die Ferse, miss erneut.",
+          "Angenommen, du misst links 25,8 und rechts 26,0 cm. Nimm den längeren Wert als Ausgangspunkt für die Größentabelle. Damit ist die Innenlänge des angebotenen Schuhs noch offen. Notiere auch, wo ein vorhandenes Paar beim Gehen drückt. Haben die Zehen nach vorn Platz und sitzt der Vorfuß seitlich zu eng, lohnt sich eine Frage nach der Weite, bevor du auf einen längeren Schuh ausweichst."
+        ]
+      ],
+      [
+        "Eine brauchbare Aufnahme der Einlegesohle anfragen",
+        [
+          "Lässt sich die Einlegesohle aus einem gut passenden Schuh leicht lösen, lege sie auf eine ebene Fläche, ohne sie zu dehnen. Platziere ein starres Lineal daneben, mit dem Nullpunkt an der hinteren Fersenkante. Fotografiere die gesamte Sohle einschließlich der Ablesestelle an der Spitze. Notiere die Länge zusammen mit Modell und Größe. Ein weiches Maßband, das der Wölbung folgt, kann einen abweichenden Wert ergeben.",
+          "Eine eindeutige Bitte lautet: „Kannst du die Einlegesohle der ausgewählten Farbe und Größe so fotografieren, dass Ferse, Spitze, Nullpunkt und Endwert zusammen sichtbar sind?“ Ein zusätzliches Bild des Etiketts hilft bei der Zuordnung. Fehlt der Anfang der Skala, lässt sich ein kleiner Größenunterschied kaum zuverlässig beurteilen. Bei einer fest verklebten Sohle reicht die Frage, wie der angegebene Wert ermittelt wurde."
+        ]
+      ],
+      [
+        "Die Draufsicht des grauen Paars einordnen",
+        [
+          "Auf dem Referenzbild liegen zwei grau-weiße Schuhe nebeneinander auf einer grünen Unterlage. Vergleiche die Umrisse der Spitzen, die Ausrichtung der Zungen und die Form der Einsätze an der Schnürung. Achte darauf, ob beide Schuhe in dieselbe Richtung zeigen. Eine gedrehte Spitze kann kürzer wirken. Aus dem Raster unter den Schuhen lässt sich der Platz für deine Zehen im Inneren nicht ablesen.",
+          "Bitte anschließend um eine Rückansicht mit beiden Schuhen auf ebenem Boden und um dieselbe Seitenansicht jedes Schuhs auf Sohlenhöhe. Die Rückansicht zeigt, ob ein Ferseneinsatz schief wirkt, wenn die Sohlen waagerecht stehen. Gleiche Seitenansichten erleichtern den Vergleich der Mittelsohlen. Verschwindet ein Unterschied beim Wechsel zur gleichen Kameraposition, war die erste Perspektive keine verlässliche Beurteilungsgrundlage."
+        ]
+      ],
+      [
+        "Den Farbcode des konkreten 9060 suchen",
+        [
+          "Am offiziellen New-Balance-Beispiel U90609XS siehst du die plastische Form der Mittelsohle, das Element an der Ferse und das Rautenmuster unter dem Schuh. Nutze diese Ansichten zur Orientierung. Suche dann die Artikelnummer der Farbe, die dich interessiert. U90609XS ist der Code des hier herangezogenen Markenbeispiels. Dem Titel von Eintrag 5648 allein lässt sich dieser Farbcode für das graue Paar nicht entnehmen.",
+          "Beginne mit der Form der Einsätze und der Position sichtbarer Nähte. Für einen Farbvergleich brauchst du ähnliches Licht, denn die grüne Unterlage kann auf graue Flächen reflektieren. Ein gut lesbares Etikett kann ein Foto einer angegebenen Größe oder einem Modellcode zuordnen. Eine ähnliche Silhouette oder ein passendes Etikett reichen allein nicht aus, um Echtheit, Materialzusammensetzung oder Dämpfungsgefühl festzustellen."
+        ]
+      ],
+      [
+        "Widersprüche zwischen Auswahl und Fotos klären",
+        [
+          "Angenommen, im Titel steht Grau, das Farbfeld sieht silbern aus und auch nach der Auswahl von Blau bleibt das Titelbild gleich. Halte fest, welche Angaben auf die Auswahl reagieren. Ist die Farbe wichtig, bitte um ein Bild dieser Variante zusammen mit ihrem Größenetikett. Eine Messung von Größe 42 beschreibt zunächst dieses Paar. Für eine Entscheidung über 41,5 brauchst du die entsprechende Messung.",
+          "Vergleichst du zwei Links, notiere jeweils Produktnummer, ausgewählte Option, Größensystem und den besten belegten Messwert. Ein einziges Foto mit lesbarer Skala und eindeutiger Zuordnung kann mehr klären als zehn ähnliche Ansichten. Probierst du das Modell in einem Laden an, notiere auch, welche Größe, Weite und Ausführung es war. Dann weißt du bei der späteren Auswahl, wie gut dein Vergleich tatsächlich passt."
+        ]
+      ],
+      [
+        "Bestellung prüfen und die Auswahl dokumentieren",
+        [
+          "Prüfe unmittelbar vor dem Kauf Farbe, System, Größe, gegebenenfalls Weite und Stückzahl in der Bestellübersicht. Lies den Gesamtpreis, die Lieferprognose und die Rückgabebedingungen des gewählten Anbieters für dein Lieferziel. Die Bedingungen eines offiziellen New-Balance-Shops gelten für Einkäufe in diesem Shop. Für eine Bestellung bei einem anderen Anbieter brauchst du dessen eigene Angaben.",
+          "Speichere die ausgewählte Variante und vorhandene Maßfotos mit Datum. Vergleiche bei Erhalt die Etiketten beider Schuhe mit der Bestellung und betrachte das Paar auf ebenem Boden. Beachte die geltenden Rückgabebedingungen, wenn du die Schuhe anprobieren möchtest. Bei falscher Farbe oder Größe zeigen ein Foto des erhaltenen Etiketts und die gespeicherte Bestellung dem Support genau, welche Abweichung zu prüfen ist."
+        ]
+      ]
+    ],
+    "steps": [
+      "Öffne Eintrag 5648 und ordne die Bilder der gewählten Farbe zu.",
+      "Miss beide Füße und suche den längeren Wert in der passenden Tabelle.",
+      "Vergleiche Einlegesohlen derselben gewählten Größe mit derselben Messmethode.",
+      "Speichere die Bestellübersicht und die Belege für deine Auswahl."
+    ],
+    "sourceNote": "Produktlink und ursprüngliche Produktnummer wurden am 5. November 2026 geprüft. Das archivierte Foto zeigt das Paar von außen. Die Fußlängen im Rechenbeispiel veranschaulichen die Vorgehensweise.",
+    "sources": [
+      [
+        "Unabhängige Produktreferenz",
+        "https://hacoos.net/de/products/grey-low-top-sneakers/",
+        "2026-11-05"
+      ],
+      [
+        "Katalogeintrag 5648",
+        "https://cnfanssp.com/AllProducts/5648.html",
+        "2026-11-05"
+      ],
+      [
+        "Größen- und Weitentabelle von New Balance",
+        "https://www.newbalance.com/size-guide.html",
+        "2026-11-05"
+      ],
+      [
+        "Offizielles Modellbeispiel zum New Balance 9060",
+        "https://www.newbalance.com/pd/9060/U90609XS-D-07.html",
+        "2026-11-05"
+      ]
+    ],
+    "image": {
+      "src": "/products/live-5648.webp",
+      "alt": "Zwei grau-weiße flache Sneaker von oben auf einer grünen Unterlage",
+      "caption": "Das Referenzfoto zu Eintrag 5648 zeigt beide Schuhe von außen. Für die Länge der Einlegesohle ist eine eigene Aufnahme erforderlich."
+    }
+  }
+}

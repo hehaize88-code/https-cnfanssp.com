@@ -1,0 +1,273 @@
+{
+  "shipping-planning": {
+    "intro": "O centro de ajuda da Hacoo para a UE indica um prazo geral de 15 a 28 dias. A página de envios apresenta estimativas próprias para alguns destinos, incluindo 15 a 30 dias para Espanha e 15 a 25 para França, Alemanha, Itália e Reino Unido. Para uma entrega em Portugal, consulte a previsão indicada na sua encomenda e o último registo da transportadora.",
+    "section": [
+      "Que prazo devo usar para a minha encomenda?",
+      [
+        "Se está a comprar para uma ocasião específica, confirme o país e a modalidade de envio antes do pagamento. O limite de 30 dias publicado para Espanha, por exemplo, difere dos 28 dias da indicação geral para a UE. Guarde a previsão mostrada para a sua morada e a data da compra. O prazo total publicado já inclui a preparação e o transporte.",
+        "Depois da expedição, abra o seguimento do artigo que aguarda. Uma etiqueta criada na segunda-feira e uma recolha registada na quinta-feira correspondem a momentos diferentes. Se a data de entrega prevista já passou, indique ao apoio ao cliente o número da encomenda, a data e o texto do último registo. Se a compra foi dividida em vários envios, inclua o código de seguimento do volume que falta."
+      ]
+    ],
+    "sources": [
+      [
+        "Prazos de entrega da Hacoo na UE",
+        "https://act.hacoo.app/eu/help-center/shipping/1",
+        "2026-11-05"
+      ],
+      [
+        "Prazos da Hacoo por destino",
+        "https://web.hacoo.app/en-US/pages/shipping-info",
+        "2026-11-05"
+      ]
+    ]
+  },
+  "hacoo-returns-refunds": {
+    "intro": "A política publicada pela Hacoo prevê 15 dias após a receção para pedir a devolução da maioria dos artigos elegíveis. Confirme a data de entrega e o motivo do pedido. Quando o tamanho escolhido fica apertado, os elementos a apresentar são diferentes dos de uma encomenda que chegou com o tamanho errado.",
+    "section": [
+      "O que fazer se precisar de outro tamanho?",
+      [
+        "Compare o tamanho escolhido na encomenda com a etiqueta da peça ou do sapato. Se coincidirem e o artigo não servir, conserve-o no estado original com as etiquetas e a embalagem. Segundo a política da Hacoo, os portes de uma devolução por mudança de opinião ficam a cargo do cliente. Consulte as instruções do seu processo antes de pagar o envio.",
+        "Se encomendou um M e recebeu um S, guarde o detalhe da encomenda e fotografe a etiqueta do tamanho e a embalagem. Indique a diferença ao contactar o apoio ao cliente. Para mudar de tamanho, a ajuda da Hacoo orienta o cliente a pedir a devolução e o reembolso e a fazer depois uma nova encomenda. Aguarde as instruções antes de enviar o artigo e confirme o crédito no meio de pagamento indicado para a encomenda."
+      ]
+    ],
+    "sources": [
+      [
+        "Política de devoluções da Hacoo",
+        "https://act.hacoo.app/refund-policy",
+        "2026-11-05"
+      ],
+      [
+        "Ajuda da Hacoo sobre trocas",
+        "https://act.hacoo.app/act/sara/helpcenter/return5",
+        "2026-11-05"
+      ]
+    ]
+  },
+  "size-guide": {
+    "intro": "Comece pela tabela do artigo que pretende escolher. Para calçado, meça ambos os pés de pé, do calcanhar ao dedo mais comprido, e use a maior medida se a tabela pedir o comprimento do pé. No vestuário, verifique se os valores se referem às medidas do corpo ou às dimensões da peça estendida.",
+    "section": [
+      "Como interpretar um número britânico de calçado?",
+      [
+        "Na tabela britânica da New Balance para homem e modelos unissexo, por exemplo, o UK 8 surge na mesma linha que o EU 42 e o comprimento de 26,5 cm. Esta correspondência pertence àquela tabela. Uma fotografia de uma palmilha amovível com 26,5 cm mede a palmilha. Para a comparar, meça a palmilha de um par que lhe sirva bem entre os mesmos pontos. Para comparar o pé, procure uma tabela que peça expressamente o comprimento do pé.",
+        "A mesma distinção aplica-se a uma camisola. Se uma peça sua medir 55 cm entre as axilas quando estendida, pode comparar essa medida com a largura em plano indicada no anúncio. Um perímetro de peito de 100 cm medido na pessoa é uma medida diferente. Antes de calcular a diferença, confirme as unidades, o método e o tamanho escolhido. Guarde os valores com a linha correspondente da tabela."
+      ]
+    ],
+    "sources": [
+      [
+        "Guia de tamanhos da New Balance UK",
+        "https://www.newbalance.co.uk/size-guide.html",
+        "2026-11-05"
+      ]
+    ]
+  },
+  "hacoo-refund-payment-method": {
+    "kicker": "Meio de reembolso da Hacoo",
+    "intro": "Abra a decisão relativa ao artigo devolvido. Procure o montante aprovado, o destino do dinheiro e a confirmação de que o pagamento já foi emitido. O centro de ajuda europeu da Hacoo indica que o resultado, o montante e a via de reembolso são comunicados por WhatsApp ou SMS. O recibo original permite identificar o pagamento a que deverá corresponder o crédito.",
+    "factBox": [
+      [
+        "Primeiro passo",
+        "Montante e destino indicados na decisão do seu processo"
+      ],
+      [
+        "Cartão de crédito",
+        "A política pública da Hacoo indica 8 a 15 dias úteis"
+      ],
+      [
+        "PayPal",
+        "A mesma política indica 5 a 7 dias úteis"
+      ]
+    ],
+    "sections": [
+      [
+        "Associe a decisão à compra certa",
+        [
+          "Se encontrou o artigo através de uma ligação, recupere o recibo da loja que recebeu o pagamento. Um diretório pode mostrar uma sugestão da Hacoo e encaminhar para outro vendedor. Confirme o número da encomenda e o nome do comerciante antes de procurar nas mensagens. Dois pares de sapatilhas semelhantes, comprados no mesmo dia em lojas diferentes, podem originar débitos quase iguais no extrato.",
+          "Abra diretamente a aplicação ou o site usado na compra. Compare artigo, cor, tamanho e quantidade com o pedido de reembolso. Guarde o recibo e a resposta em conjunto. Um aviso de receção apenas confirma a entrada do pedido. Se a decisão aprovar o reembolso sem identificar o destino, peça essa informação através do apoio da encomenda. Para identificar o artigo não é necessário enviar o número completo do cartão."
+        ]
+      ],
+      [
+        "Determine em que fase está o processo",
+        [
+          "Anote as datas que consegue documentar: pedido, autorização, expedição da devolução, chegada ao armazém e emissão do pagamento. A política da Hacoo prevê situações em que o cliente fica com o artigo e outras que exigem o seu envio. Consulte as instruções antes de pagar portes. O seguimento da transportadora comprova a entrega da encomenda. A data da transferência deve ser confirmada pela Hacoo ou pelo prestador do pagamento.",
+          "Imagine que na segunda-feira recebe autorização para devolver um casaco, que o volume chega na quinta-feira e que na terça-feira seguinte o apoio confirma a emissão do reembolso. Cada uma destas datas diz respeito a uma etapa diferente. Pergunte a partir de qual delas decorre o prazo comunicado. Associe a referência da devolução do dinheiro à data de emissão, se existir. Isso permite ao banco uma pesquisa mais precisa."
+        ]
+      ],
+      [
+        "Localize um reembolso no cartão",
+        [
+          "Encontre o débito no extrato do cartão usado para a compra. Use o montante, a moeda, a data e a identificação do comerciante. Depois procure um crédito do valor aprovado. Se devolveu apenas um artigo de uma encomenda maior, procurar exclusivamente o total do débito pode esconder o movimento certo. Se costuma usar vários cartões, utilize o recibo para identificar a conta sem divulgar os respetivos dados.",
+          "A política pública da Hacoo refere oito a quinze dias úteis para um cartão de crédito. A ajuda europeia explica que o prazo depende do meio usado no pagamento inicial. Prefira uma indicação mais específica da sua encomenda, distinguindo dias úteis de dias de calendário. Se o cartão tiver sido substituído ou a conta encerrada, pergunte ao emissor como localizar um reembolso associado à operação anterior. Peça à Hacoo a referência de pagamento disponível."
+        ]
+      ],
+      [
+        "Confirme o movimento na conta PayPal",
+        [
+          "Abra a conta PayPal que utilizou na compra e consulte os detalhes da transação correspondente. Veja o estado do eventual reembolso, o montante e a moeda. Se usou um cartão associado para financiar o pagamento, peça ao PayPal que explique o destino seguinte quando esse dado não seja claro. O movimento individual é uma indicação mais precisa do que o saldo total da conta.",
+          "A política da Hacoo indica cinco a sete dias úteis para PayPal. Se a conta mostrar o crédito aprovado e o cartão ainda não apresentar nenhum movimento, dê ao PayPal a referência da operação e pergunte se deve aguardar outro lançamento. Se a transação não mostrar qualquer reembolso, peça primeiro à Hacoo que confirme o envio do montante para esse pagamento. Uma captura limitada aos detalhes relevantes é suficiente para apresentar a questão."
+        ]
+      ],
+      [
+        "Reconcilie um valor inferior ao total da encomenda",
+        [
+          "Imagine que as sapatilhas custaram 42 €, o boné 18 € e os portes 5 €. Fica com o boné e a decisão concede 42 € pelas sapatilhas. Um crédito de 42 € corresponde ao valor aprovado, embora o débito original tenha sido de 65 €. Uma eventual devolução dos portes deve ser esclarecida à parte no processo real. Este exemplo não inclui descontos nem conversão de moeda.",
+          "Com um cupão, mantenha o detalhe do carrinho e pergunte como foi distribuído o desconto pelos artigos. Em duas devoluções relativas à mesma encomenda, crie uma linha separada para cada decisão, data de emissão e crédito. A ajuda europeia distingue entre reembolso integral, parcial e pedido recusado. Se discorda do montante aprovado, peça o cálculo. Se o crédito recebido difere de um valor que já foi aprovado, peça a localização da diferença."
+        ]
+      ],
+      [
+        "Esclareça referências a saldo, vale ou envio obrigatório",
+        [
+          "Se a mensagem mencionar um vale, saldo numa conta ou devolução para um meio de pagamento, pergunte o que isso implica para a sua encomenda. Onde verá a quantia e será necessário fazer mais alguma coisa? Guarde uma cópia da resposta antes de aceitar a proposta. A página europeia sobre prazos refere o canal de pagamento original sem garantir a escolha de destino em todos os processos.",
+          "Quando for necessário devolver fisicamente o artigo, confirme a morada, a referência do volume, os comprovativos pedidos e o prazo na comunicação recebida. Se tiver autorização para ficar com ele, guarde essa indicação. Peça esclarecimentos sobre orientações contraditórias antes de gastar dinheiro com portes. Se quiser comprar outro tamanho, acompanhe em separado o reembolso do primeiro par e o preço de uma futura encomenda."
+        ]
+      ],
+      [
+        "Faça uma pergunta que o apoio consiga investigar",
+        [
+          "Pode escrever: «Foram aprovados 42 € pela devolução do casaco. A vossa mensagem informa que o pagamento foi emitido para o cartão da encomenda. Consultei a conta depois do prazo indicado e não encontro o crédito. Podem confirmar a data de emissão, o montante enviado e uma referência que o emissor do cartão possa usar?» Substitua os dados do exemplo e identifique a encomenda e as datas certas na conversa oficial.",
+          "Anexe apenas a linha do extrato, a decisão ou o comprovativo de entrega relevante. Oculte outras compras, moradas e dados bancários. Nunca envie códigos de segurança ou de utilização única. Se a Hacoo confirmar a emissão e fornecer uma referência, apresente-a ao prestador do pagamento e junte a resposta ao mesmo processo. Assim fica claro o que cada entidade já verificou."
+        ]
+      ],
+      [
+        "Confirme o crédito definitivo antes de fechar o processo",
+        [
+          "Compare a operação com o montante aprovado na moeda indicada. Verifique se figura como pendente ou já contabilizada e registe a data junto do artigo e da encomenda. Se o extrato usar outra moeda, peça o detalhe da conversão antes de concluir que o comerciante enviou menos dinheiro. Guarde o montante aprovado e o que aparece no extrato para fundamentar a comparação.",
+          "Se ainda faltar algum valor, quantifique-o e explique o que precisa de ser esclarecido. Para determinados resultados contestados, o centro de ajuda europeu prevê a possibilidade de voltar a contactar o apoio dentro de um prazo limitado. Leia a decisão assim que a receber. Pedir a revisão do resultado e procurar um pagamento já emitido são diligências distintas. Indique qual lhe interessa para que a resposta trate do ponto em aberto."
+        ]
+      ]
+    ],
+    "steps": [
+      "Associe o artigo e a encomenda ao pagamento original.",
+      "Guarde a decisão, o montante aprovado, a moeda e o destino indicado.",
+      "Confirme a data de emissão e o movimento no canal correspondente.",
+      "Comunique a diferença que falta esclarecer com o respetivo comprovativo."
+    ],
+    "sourceNote": "As duas primeiras fontes são do centro de ajuda europeu da Hacoo. Os prazos para cartão e PayPal provêm da política pública de devoluções. Consulte as instruções do seu processo quando forem mais específicas.",
+    "sources": [
+      [
+        "Centro de ajuda Hacoo UE · reembolsos parciais e comunicação do resultado",
+        "https://act.hacoo.app/eu/help-center/after-sales/2",
+        "2026-11-05"
+      ],
+      [
+        "Centro de ajuda Hacoo UE · prazo por meio de pagamento original",
+        "https://act.hacoo.app/eu/help-center/after-sales/3",
+        "2026-11-05"
+      ],
+      [
+        "Política da Hacoo · prazos indicativos para cartão de crédito e PayPal",
+        "https://act.hacoo.app/refund-policy",
+        "2026-11-05"
+      ]
+    ]
+  },
+  "hacoo-new-balance-9060-size-and-qc": {
+    "kicker": "Tamanhos e fotografias de sapatilhas",
+    "intro": "Encontrou umas New Balance 9060 cinzentas. No seletor aparece o seu número habitual e a primeira fotografia mostra duas sapatilhas sobre um tapete quadriculado. Antes de escolher, confirme que par abre o link e o que foi medido. A ficha 5648 serve de exemplo para ler a tabela da New Balance, pedir uma fotografia útil da palmilha e perceber que dúvidas a galeria consegue realmente esclarecer.",
+    "factBox": [
+      [
+        "Ficha de referência",
+        "5648 · identificador original do produto 7672819921"
+      ],
+      [
+        "Exemplo da tabela oficial",
+        "Na tabela de homem/unissexo, 26 cm correspondem a UK 7,5, UE 41,5 e US 8 de homem."
+      ],
+      [
+        "Primeira fotografia",
+        "Par cinzento e branco visto de cima sobre um tapete verde. Vê-se o exterior das sapatilhas."
+      ]
+    ],
+    "sections": [
+      [
+        "Identifique o anúncio que abriu",
+        [
+          "Abra a ficha das sapatilhas baixas cinzentas e siga o botão que conduz ao anúncio. Em 5 de novembro de 2026, a página de destino apresentava o nome do modelo 9060 e o identificador original 7672819921. O nosso índice atribui à ficha o número mais curto 5648. Guarde ambos com o link quando comparar vários separadores. Assim consegue distinguir resultados com títulos quase iguais ou imagens repetidas.",
+          "Selecione a cor que pretende e veja se a galeria, as etiquetas e os tamanhos disponíveis mudam. Quando as fotografias se mantêm iguais para todas as cores, fica por esclarecer a que variante pertencem. O facto de conseguir abrir a ligação confirma o acesso à página naquele momento. Os tamanhos disponíveis podem mudar. Releia a opção selecionada no resumo da encomenda antes do pagamento."
+        ]
+      ],
+      [
+        "Leia a linha de tamanhos de uma ponta à outra",
+        [
+          "Escolha a secção de homem/unissexo da tabela da New Balance se for assim que o par está identificado. A linha dos 26 cm inclui UK 7,5, UE 41,5, US 8 de homem e US 9,5 de mulher. São quatro designações para uma só linha. Um «8» visível na fotografia deixa o sistema por esclarecer. Se o menu mostrar apenas 41 e 42, pergunte que tabela foi usada antes de associar um deles ao 41,5 oficial.",
+          "Fotografe a etiqueta completa da língua de umas sapatilhas que lhe sirvam bem. Copie cada número com o sistema respetivo, pois a ordem das colunas pode variar de loja para loja. Procure também saber o que significa «26 cm». A medida da tabela da marca e o comprimento de uma palmilha amovível resultam de operações diferentes. Para comparar com um par seu, precisa de conhecer os pontos entre os quais a medida foi tirada."
+        ]
+      ],
+      [
+        "Meça os dois pés com as meias que vai usar",
+        [
+          "Encoste a extremidade de uma folha à parede, sobre um piso firme. De pé, apoie o calcanhar levemente contra a parede e mantenha o peso sobre o pé. Peça a alguém que marque a ponta do dedo mais comprido com um lápis na vertical. Meça desde o bordo traseiro da folha até à marca. Repita para o outro pé e registe os valores em centímetros. Volte a medir se a folha escorregar ou o calcanhar levantar.",
+          "Imagine que um pé mede 25,8 cm e o outro 26,0 cm. Comece pelo pé mais comprido para consultar a tabela. O espaço interior do par anunciado continua por verificar. Anote também onde as sapatilhas atuais apertam. Se os dedos têm folga à frente e sente pressão dos lados, procure informação sobre a largura antes de assumir que umas sapatilhas mais compridas lhe vão assentar melhor."
+        ]
+      ],
+      [
+        "Peça uma fotografia da palmilha que permita comparar",
+        [
+          "Se a palmilha de umas sapatilhas confortáveis sair facilmente, coloque-a sobre uma superfície plana sem a esticar. Alinhe uma régua rígida ao lado da palmilha, com o zero no bordo do calcanhar. Fotografe a palmilha inteira e a marca atingida na ponta. Registe o valor, o tamanho e o modelo. Uma fita que acompanhe a curvatura pode dar uma leitura diferente da régua direita.",
+          "Pode pedir: «Consegue fotografar a palmilha da cor e do tamanho escolhidos, com o calcanhar, a ponta, o zero da régua e a leitura final na mesma imagem?» Uma segunda fotografia da etiqueta ajuda a identificar o par. Se o início da escala estiver cortado, a imagem dificilmente resolve uma diferença de poucos milímetros. Quando a palmilha é fixa, deixe-a no lugar e pergunte como foi obtida a medida."
+        ]
+      ],
+      [
+        "Tire partido da vista de cima do par cinzento",
+        [
+          "A fotografia de referência mostra as duas sapatilhas cinzentas e brancas lado a lado sobre um tapete verde. De cima pode comparar o contorno das biqueiras, a direção das línguas e os painéis em volta dos atacadores. Antes de interpretar uma diferença aparente de comprimento, veja se ambas apontam na mesma direção. A quadrícula visível sob as sapatilhas não revela o espaço disponível para os dedos no interior.",
+          "Peça uma vista de trás, com as duas solas bem assentes, e depois a mesma vista lateral de cada sapatilha, à altura da sola. A imagem traseira ajuda a avaliar o alinhamento dos painéis do calcanhar. Os perfis equivalentes permitem comparar a forma das entressolas. Se a diferença desaparecer quando a posição da câmara é igual para ambas, o ângulo inicial não permitia uma conclusão segura."
+        ]
+      ],
+      [
+        "Procure a referência exata da combinação de cores",
+        [
+          "Na página oficial das 9060 com o código U90609XS pode observar o perfil esculpido da entressola, o detalhe no calcanhar e o desenho em losangos da sola. Localize estes elementos nas fotografias da marca e procure depois a referência da cor que pretende comprar. U90609XS identifica o exemplo oficial aqui consultado. O título da ficha 5648, por si só, não permite atribuir esse código ao par cinzento.",
+          "Comece pela forma dos painéis e pela posição das costuras. Compare os tons de cinzento apenas em fotografias com iluminação semelhante, pois o tapete verde pode dar um reflexo à imagem. Uma etiqueta legível ajuda a associar uma fotografia ao tamanho ou modelo declarado. A semelhança do formato ou da etiqueta não permite concluir, por si só, qual é a autenticidade do par, a composição exata ou a sensação de amortecimento."
+        ]
+      ],
+      [
+        "Esclareça divergências entre as imagens e a seleção",
+        [
+          "Suponha que o título diz cinzento, a amostra de cor parece prateada e a fotografia de capa não muda quando seleciona azul. Registe o que acompanha a seleção. Se a cor for decisiva, peça uma fotografia que identifique a variante juntamente com a etiqueta do tamanho. Uma medida tirada a um 42 descreve esse par. Para avaliar o 41,5, peça a medida da opção que pretende escolher.",
+          "Se comparar dois links, anote para cada um o identificador de origem, a variante, o sistema de tamanhos e a melhor medida disponível. Uma fotografia bem identificada pode esclarecer mais do que uma galeria inteira com o mesmo enquadramento. Se experimentar o modelo numa loja, registe a referência, o tamanho e a largura que experimentou. Assim saberá até que ponto a experiência corresponde ao anúncio que está a consultar."
+        ]
+      ],
+      [
+        "Confirme o resumo e guarde os elementos da encomenda",
+        [
+          "Antes de pagar, confira a cor, o número, o sistema de tamanhos, a largura se indicada e a quantidade no resumo. Releia o total, a previsão de entrega e as condições de devolução do vendedor para o seu destino. As condições de uma loja oficial New Balance aplicam-se às compras efetuadas nessa loja. Consulte as que acompanham o seu pedido ao vendedor escolhido.",
+          "Guarde a seleção e as fotografias das medidas com a data. Quando a encomenda chegar, compare as etiquetas de ambas as sapatilhas com o pedido e observe o par numa superfície nivelada. Consulte as condições de devolução se pretender experimentá-las. Se recebeu outra cor ou tamanho, uma fotografia da etiqueta recebida e o resumo da encomenda mostram ao apoio ao cliente a diferença concreta a esclarecer."
+        ]
+      ]
+    ],
+    "steps": [
+      "Abra a ficha 5648 e relacione a galeria com a cor selecionada.",
+      "Meça ambos os pés e consulte a tabela com a medida do mais comprido.",
+      "Compare palmilhas do tamanho escolhido com os mesmos pontos de medida.",
+      "Guarde o resumo da encomenda e as imagens da variante selecionada."
+    ],
+    "sourceNote": "O link do catálogo e o código original do produto foram verificados em 5 de novembro de 2026. A fotografia arquivada mostra o exterior do par. As medidas do exemplo ilustram o procedimento.",
+    "sources": [
+      [
+        "Ficha independente do produto",
+        "https://hacoos.net/pt/products/grey-low-top-sneakers/",
+        "2026-11-05"
+      ],
+      [
+        "Anúncio 5648 do catálogo",
+        "https://cnfanssp.com/AllProducts/5648.html",
+        "2026-11-05"
+      ],
+      [
+        "Guia de tamanhos e larguras da New Balance",
+        "https://www.newbalance.com/size-guide.html",
+        "2026-11-05"
+      ],
+      [
+        "Exemplo oficial das New Balance 9060",
+        "https://www.newbalance.com/pd/9060/U90609XS-D-07.html",
+        "2026-11-05"
+      ]
+    ],
+    "image": {
+      "src": "/products/live-5648.webp",
+      "alt": "Duas sapatilhas baixas cinzentas e brancas vistas de cima sobre um tapete verde",
+      "caption": "A fotografia da ficha 5648 mostra o exterior das sapatilhas. É necessária outra vista para medir a palmilha amovível."
+    }
+  }
+}

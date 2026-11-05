@@ -1,0 +1,273 @@
+{
+  "shipping-planning": {
+    "intro": "La page de livraison de Hacoo annonce un délai indicatif de 15 à 25 jours pour la France, l’Allemagne, l’Italie et le Royaume-Uni, et de 15 à 30 jours pour l’Espagne. L’aide européenne donne une fourchette générale de 15 à 28 jours. Pour une commande en cours, consultez la période de livraison affichée puis le dernier mouvement enregistré par le transporteur.",
+    "section": [
+      "Quelle date retenir pour votre colis ?",
+      [
+        "Un colis destiné à l’Espagne peut, par exemple, relever d’un délai indicatif de 30 jours, alors que la fiche européenne mentionne 28 jours. Avant de commander pour une occasion précise, vérifiez le pays et le mode de livraison retenus au paiement. Conservez l’estimation avec la date de commande. Le délai total comprend déjà la préparation et le transport.",
+        "Après l’expédition, ouvrez le suivi de l’article attendu. Une étiquette créée le lundi et une prise en charge par le transporteur le jeudi correspondent à deux étapes distinctes. Si la date de livraison annoncée est dépassée, communiquez au service client le numéro de commande, la date et le libellé du dernier mouvement. En cas d’envois séparés, précisez le numéro de suivi du colis manquant."
+      ]
+    ],
+    "sources": [
+      [
+        "Délais de livraison Hacoo dans l’UE",
+        "https://act.hacoo.app/eu/help-center/shipping/1",
+        "2026-11-05"
+      ],
+      [
+        "Délais Hacoo par destination",
+        "https://web.hacoo.app/en-US/pages/shipping-info",
+        "2026-11-05"
+      ]
+    ]
+  },
+  "hacoo-returns-refunds": {
+    "intro": "La politique de Hacoo prévoit un délai de 15 jours à compter de la réception pour demander le retour de la plupart des articles admissibles. Relevez la date de livraison et le motif de votre demande. Une paire commandée à la bonne pointure qui serre le pied et une paire livrée dans une autre pointure demandent des justificatifs différents.",
+    "section": [
+      "Que faire si la taille ne convient pas ?",
+      [
+        "Comparez la taille choisie dans la commande à celle de l’étiquette. Si elles correspondent mais que l’article vous va mal, conservez-le dans son état d’origine avec ses étiquettes et son emballage. Pour un retour de convenance, la politique de Hacoo met les frais d’envoi à la charge du client. Vérifiez les consignes de votre dossier avant d’affranchir le colis.",
+        "Si vous avez commandé du M et reçu du S, gardez le détail de la commande et photographiez l’étiquette de taille et l’emballage. Signalez précisément cet écart au service client. L’aide de Hacoo oriente vers une demande de retour et de remboursement, puis vers une nouvelle commande de la taille voulue. Attendez les consignes avant l’expédition et vérifiez ensuite le versement sur le moyen de paiement indiqué pour la commande."
+      ]
+    ],
+    "sources": [
+      [
+        "Politique de retour Hacoo",
+        "https://act.hacoo.app/refund-policy",
+        "2026-11-05"
+      ],
+      [
+        "Aide Hacoo sur les échanges",
+        "https://act.hacoo.app/act/sara/helpcenter/return5",
+        "2026-11-05"
+      ]
+    ]
+  },
+  "size-guide": {
+    "intro": "Consultez d’abord le tableau de l’article qui vous intéresse. Pour des chaussures, mesurez vos deux pieds debout, du talon à l’orteil le plus long. Retenez le pied le plus long si le tableau demande la longueur du pied. Pour un vêtement, vérifiez si les chiffres décrivent les mensurations du corps ou les dimensions de la pièce posée à plat.",
+    "section": [
+      "Comment lire une pointure britannique dans une annonce ?",
+      [
+        "Dans le tableau britannique homme/unisexe de New Balance, par exemple, la pointure UK 8 figure sur la même ligne que la EU 42 et la longueur de 26,5 cm. Ce rapprochement vaut pour ce tableau. Une photo de semelle intérieure amovible de 26,5 cm donne la longueur de la semelle. Comparez-la à celle d’une paire qui vous va, entre les mêmes repères. Pour votre pied, utilisez un tableau demandant explicitement sa longueur.",
+        "Le principe vaut aussi pour un sweat. Une largeur de 55 cm mesurée à plat d’une aisselle à l’autre sur votre sweat se compare à la même mesure prise sur le vêtement de l’annonce. Un tour de poitrine de 100 cm mesuré sur la personne est une autre donnée. Avant de choisir la taille, vérifiez les unités et le point de mesure, puis conservez les chiffres avec le tableau correspondant."
+      ]
+    ],
+    "sources": [
+      [
+        "Guide des tailles New Balance UK",
+        "https://www.newbalance.co.uk/size-guide.html",
+        "2026-11-05"
+      ]
+    ]
+  },
+  "hacoo-refund-payment-method": {
+    "kicker": "Mode de remboursement Hacoo",
+    "intro": "Reprenez la décision concernant l’article retourné. Cherchez le montant accepté, sa destination et la confirmation de l’émission du remboursement. Le centre d’aide européen de Hacoo indique que le résultat, le montant et le mode de remboursement sont communiqués par WhatsApp ou SMS. Le reçu permet ensuite de retrouver le paiement d’origine et de le rapprocher du crédit attendu.",
+    "factBox": [
+      [
+        "À retrouver en premier",
+        "La décision, le montant accepté et sa destination"
+      ],
+      [
+        "Carte de crédit",
+        "La politique publique de Hacoo indique 8 à 15 jours ouvrés"
+      ],
+      [
+        "PayPal",
+        "La même politique indique 5 à 7 jours ouvrés"
+      ]
+    ],
+    "sections": [
+      [
+        "Retrouver la décision qui correspond à l’achat",
+        [
+          "Si vous êtes parti d’un lien, reprenez le reçu de la boutique qui a encaissé le paiement. Un annuaire peut présenter une trouvaille Hacoo et renvoyer vers un autre vendeur. Comparez le numéro de commande et le nom du commerçant avant de fouiller votre historique bancaire. Deux paires de baskets commandées le même jour dans deux boutiques différentes se ressemblent facilement sur un relevé.",
+          "Ouvrez vous-même l’application ou le site utilisé lors de la commande. Vérifiez l’article, la couleur, la pointure et la quantité. Conservez ensemble le reçu et la réponse au dossier. Un accusé de réception indique seulement que la demande est arrivée. Si le message annonce un remboursement sans préciser sa destination, demandez-la depuis le dossier de commande. Le numéro complet de carte est superflu pour identifier l’article concerné."
+        ]
+      ],
+      [
+        "Distinguer l’accord de retour et l’émission du paiement",
+        [
+          "Notez chaque date que vous pouvez justifier par un document : demande, accord, envoi du colis, réception et émission du remboursement. Hacoo prévoit des situations où le client conserve l’article et d’autres où le retour est exigé. Vérifiez votre décision avant d’expédier quoi que ce soit. Le suivi du transporteur prouve la livraison du colis à une adresse, tandis que la date du paiement doit être confirmée par Hacoo ou son prestataire.",
+          "Imaginons que vous receviez lundi l’autorisation de renvoyer une veste. Le colis arrive jeudi, puis le service client confirme mardi suivant l’émission du paiement. Pour calculer un délai, demandez à partir de quel événement il court. Conservez la date d’émission et la référence du remboursement, si elle existe. Elles aideront davantage la banque que le jour où vous avez essayé la veste."
+        ]
+      ],
+      [
+        "Suivre un remboursement sur carte",
+        [
+          "Repérez le débit d’origine grâce au montant, à la devise, à la date et au libellé du commerçant. Cherchez ensuite un crédit du montant accepté. S’il s’agit d’un seul article dans un panier plus important, le crédit sera souvent inférieur au débit initial. Lorsque plusieurs cartes sont utilisées dans le foyer, le reçu vous aide à identifier le bon compte sans transmettre ses coordonnées.",
+          "La politique publique de Hacoo donne un délai indicatif de huit à quinze jours ouvrés pour une carte de crédit. L’aide européenne rappelle que le délai dépend du moyen de paiement initial. Retenez le délai propre à votre commande lorsqu’il est précisé. Si la carte a été remplacée ou le compte clôturé, expliquez la situation à l’émetteur de la carte et demandez comment retrouver l’opération d’origine. Une nouvelle carte ne permet pas, à elle seule, de déduire la destination du remboursement."
+        ]
+      ],
+      [
+        "Suivre un achat payé avec PayPal",
+        [
+          "Ouvrez le compte PayPal où figure le paiement, puis consultez le détail de l’opération. Relevez le statut, le montant et la devise du remboursement éventuel. Si une carte a servi à alimenter le paiement PayPal, demandez à PayPal où le crédit doit apparaître ensuite. Le solde global du compte ne suffit pas toujours à expliquer ce qu’il est advenu d’une opération précise.",
+          "La politique publiée par Hacoo indique cinq à sept jours ouvrés pour PayPal. Si le crédit est visible dans PayPal mais que votre relevé de carte n’a pas bougé, communiquez à PayPal la référence de l’opération pour savoir si vous devez attendre un autre mouvement. Si PayPal n’affiche aucun remboursement, demandez d’abord à Hacoo la confirmation de l’envoi sur ce paiement. Une capture ciblée est plus utile qu’une copie intégrale du compte."
+        ]
+      ],
+      [
+        "Expliquer un remboursement inférieur au total payé",
+        [
+          "Prenons un panier de 42 € pour des chaussures, 18 € pour une casquette et 5 € de livraison. Vous conservez la casquette. Si la décision accorde 42 € pour les chaussures, un crédit de 42 € correspond à la somme acceptée, bien que le débit initial soit de 65 €. Le traitement des frais de port doit être vérifié séparément dans le dossier réel. Cet exemple ne comporte ni remise ni conversion de devise.",
+          "Avec un coupon, conservez le calcul du panier et demandez quelle part de la réduction a été affectée à l’article retourné. Séparez les dossiers lorsque deux articles d’une même commande font l’objet de deux décisions. L’aide européenne distingue remboursement intégral, remboursement partiel et refus. Contester la somme accordée revient à demander son calcul. Signaler qu’une somme déjà accordée n’est pas arrivée revient à demander le suivi du paiement."
+        ]
+      ],
+      [
+        "Lever un doute sur un avoir ou des instructions de renvoi",
+        [
+          "Si la réponse mentionne un bon d’achat, un solde ou une carte, demandez ce que cela implique pour votre commande. Où la somme apparaîtra-t-elle ? Une démarche supplémentaire est-elle attendue ? Conservez la réponse avant d’accepter une proposition. La page européenne sur les délais renvoie au moyen de paiement d’origine sans annoncer un choix systématique entre plusieurs destinations.",
+          "En cas de retour obligatoire, vérifiez l’adresse, la référence, les justificatifs et la date limite figurant dans votre réponse. Si vous êtes autorisé à garder le produit, gardez cette confirmation. Faites préciser les consignes contradictoires avant de payer des frais d’envoi. Si vous comptez racheter la bonne pointure, tenez le remboursement de la première paire et le prix de la nouvelle commande sur deux lignes séparées."
+        ]
+      ],
+      [
+        "Relancer avec des éléments précis",
+        [
+          "Vous pouvez écrire : « Mon retour de la veste a donné lieu à un remboursement accepté de 42 €. Votre message indique que le paiement a été émis sur la carte utilisée pour cette commande. Après le délai annoncé, le crédit ne figure toujours pas sur le compte. Pouvez-vous confirmer la date d’émission, le montant envoyé et une référence pour ma banque ? » Adaptez l’exemple et ajoutez le numéro de commande et les dates exactes dans la conversation officielle.",
+          "Joignez uniquement la ligne de paiement, la décision ou le suivi utile. Masquez les achats sans rapport, l’adresse et les renseignements bancaires. N’envoyez aucun code de sécurité ou de connexion. Si Hacoo confirme l’émission, transmettez la référence au prestataire concerné. Joignez sa réponse au même dossier pour que l’on sache ce qui a déjà été vérifié."
+        ]
+      ],
+      [
+        "Vérifier le crédit définitif",
+        [
+          "Lorsque le crédit apparaît, rapprochez son montant de celui de la décision, dans la devise indiquée. Notez la date et vérifiez si le mouvement est en attente ou comptabilisé. Si le relevé présente une autre devise, demandez le détail de la conversion au prestataire avant d’attribuer la différence au commerçant. Conserver les deux montants rend la comparaison vérifiable.",
+          "S’il manque encore une partie de la somme, chiffrez l’écart et précisez si vous contestez la décision ou cherchez la trace d’un paiement déjà émis. Pour certains résultats contestés, l’aide européenne prévoit une possibilité de reprendre contact dans un délai limité. Consultez rapidement la réponse reçue. Une demande ciblée permet au service concerné de traiter le point qui reste ouvert."
+        ]
+      ]
+    ],
+    "steps": [
+      "Rapprochez l’article et le numéro de commande du paiement initial.",
+      "Conservez la décision, le montant, la devise et la destination annoncée.",
+      "Vérifiez la date d’émission et l’opération chez le prestataire concerné.",
+      "Signalez l’écart restant au service client avec le justificatif pertinent."
+    ],
+    "sourceNote": "Les deux premières références proviennent du centre d’aide européen de Hacoo. Les délais par moyen de paiement figurent dans sa politique publique distincte. Suivez les instructions plus précises de votre dossier.",
+    "sources": [
+      [
+        "Centre d’aide Hacoo UE · remboursement partiel et notification",
+        "https://act.hacoo.app/eu/help-center/after-sales/2",
+        "2026-11-05"
+      ],
+      [
+        "Centre d’aide Hacoo UE · délai selon le moyen de paiement initial",
+        "https://act.hacoo.app/eu/help-center/after-sales/3",
+        "2026-11-05"
+      ],
+      [
+        "Politique Hacoo · délais indicatifs sur carte et PayPal",
+        "https://act.hacoo.app/refund-policy",
+        "2026-11-05"
+      ]
+    ]
+  },
+  "hacoo-new-balance-9060-size-and-qc": {
+    "kicker": "Pointures et photos de baskets",
+    "intro": "Vous avez trouvé des New Balance 9060 grises. La pointure proposée vous est familière et la première photo montre deux chaussures sur un tapis quadrillé. Avant de choisir, identifiez la paire et la nature de la mesure annoncée. La fiche 5648 permet de suivre un exemple concret, de la lecture du tableau New Balance à la demande d’une photo de semelle exploitable.",
+    "factBox": [
+      [
+        "Fiche de référence",
+        "5648 · référence produit d’origine 7672819921"
+      ],
+      [
+        "Un exemple du tableau officiel",
+        "Pour 26 cm, le tableau homme/unisexe indique UK 7,5, EU 41,5 et US homme 8."
+      ],
+      [
+        "Première photo",
+        "Deux baskets grises et blanches vues du dessus sur un tapis vert. On y voit leur extérieur."
+      ]
+    ],
+    "sections": [
+      [
+        "Retrouver la bonne annonce",
+        [
+          "Ouvrez la fiche des baskets basses grises et suivez son lien produit. Le 5 novembre 2026, la page de destination affichait l’intitulé du modèle 9060 et la référence 7672819921. Notre index utilise le numéro plus court 5648. Gardez ces deux identifiants avec le lien lorsque vous comparez plusieurs onglets. Ils permettent de retrouver la bonne fiche même si deux vendeurs emploient la même photo.",
+          "Sélectionnez le coloris voulu, puis regardez si les images, l’étiquette et les tailles proposées changent. Une galerie qui reste identique pour trois coloris ne permet pas forcément d’attribuer une photo à la variante sélectionnée. La disponibilité peut également évoluer depuis votre première recherche. Avant de commander, relisez le récapitulatif pour vérifier la variante réellement ajoutée au panier."
+        ]
+      ],
+      [
+        "Lire une ligne entière du tableau de pointures",
+        [
+          "Dans le guide New Balance, choisissez la rubrique homme/unisexe si l’annonce présente ainsi la paire. La ligne de 26 cm correspond à UK 7,5, EU 41,5, US homme 8 et US femme 9,5. Il s’agit d’une seule ligne avec quatre systèmes de pointures. Un « 8 » visible sur une photo ne suffit donc pas. Si l’annonce propose seulement 41 et 42, demandez quel tableau sert de base avant de retenir l’un des deux.",
+          "Photographiez l’étiquette complète d’une paire qui vous va. Recopiez chaque chiffre avec son système. Les sites présentent parfois les colonnes dans un ordre différent, ce qui rend la comparaison à l’œil trompeuse. Regardez aussi ce que désigne la mention « 26 cm ». Elle peut renvoyer à la colonne du tableau ou à une mesure de la semelle de propreté. Pour comparer correctement, il faut connaître la méthode utilisée."
+        ]
+      ],
+      [
+        "Mesurer les deux pieds avec les chaussettes prévues",
+        [
+          "Posez une feuille sur un sol dur, le bord bien plaqué contre un mur. Debout, appuyez légèrement le talon contre le mur en gardant le poids sur le pied. Demandez à quelqu’un de marquer le bout de l’orteil le plus long avec un crayon tenu verticalement. Mesurez du bord arrière de la feuille jusqu’au trait. Répétez pour l’autre pied. Si le talon a bougé ou si la feuille a glissé, recommencez.",
+          "Supposons que vous obteniez 25,8 cm à gauche et 26 cm à droite. Partez de la valeur la plus longue pour lire le tableau. La place disponible dans la chaussure annoncée reste à vérifier. Notez aussi les zones sensibles dans vos baskets actuelles : si elles serrent sur les côtés tandis que les orteils ont assez de place, renseignez-vous sur la largeur avant de choisir une chaussure plus longue."
+        ]
+      ],
+      [
+        "Demander une photo de semelle vraiment comparable",
+        [
+          "Si la semelle de propreté d’une paire confortable se retire facilement, posez-la sur une surface plane sans la tendre. Placez une règle rigide à côté, avec le zéro au bord du talon. Photographiez la semelle entière et la graduation atteinte à la pointe. Notez le résultat avec le modèle et la pointure. Un ruban souple suivant la courbe de la semelle peut donner une valeur différente.",
+          "Vous pouvez demander : « Pourriez-vous photographier la semelle intérieure du coloris et de la pointure choisis, avec le zéro de la règle, le talon et la pointe visibles ? » Une seconde photo de l’étiquette aide à identifier la paire. Si la graduation de départ est coupée, il est difficile de trancher entre deux tailles proches. Pour une semelle collée, demandez simplement comment la mesure a été prise."
+        ]
+      ],
+      [
+        "Examiner la photo de la paire grise",
+        [
+          "La photo de référence montre les deux chaussures côte à côte sur un tapis vert. Du dessus, comparez la forme des pointes, l’orientation des languettes et les empiècements autour des lacets. Vérifiez d’abord que les chaussures sont orientées de la même manière. Une pointe légèrement en retrait peut paraître plus courte. Le quadrillage sous les chaussures ne donne pas la longueur intérieure disponible pour vos orteils.",
+          "Demandez ensuite une vue arrière avec les deux semelles posées bien à plat, puis le même profil de chaque chaussure, pris à hauteur de semelle. La première image aide à juger l’alignement d’un empiècement au talon. Les deux profils permettent de comparer la forme des semelles intermédiaires. Si l’écart disparaît lorsque les chaussures sont photographiées sous le même angle, la perspective expliquait probablement la première impression."
+        ]
+      ],
+      [
+        "Comparer le bon coloris et sa référence",
+        [
+          "La 9060 officielle portant le code U90609XS permet de repérer la forme sculptée de la semelle intermédiaire, le détail du talon et les motifs en losanges sous la chaussure. Regardez ces éléments sur les photos New Balance, puis cherchez la référence du coloris qui vous intéresse. U90609XS identifie l’exemple officiel consulté. Le titre de la fiche 5648 ne suffit pas à attribuer ce code à la paire grise.",
+          "Commencez par la forme des empiècements et la position des coutures. Pour juger la nuance de gris, comparez des images prises sous un éclairage similaire : le tapis vert peut donner un reflet coloré. Une photo nette de l’étiquette peut aider à rattacher une vue à la bonne taille. Une ressemblance visuelle ne permet pas, à elle seule, de conclure à l’authenticité, à la composition exacte ou au confort."
+        ]
+      ],
+      [
+        "Départager deux annonces ou des photos contradictoires",
+        [
+          "Imaginons un titre « gris », une pastille argentée et une image qui reste identique lorsque vous sélectionnez le bleu. Notez ce qui bouge à l’écran. Demandez une photo du coloris choisi accompagnée de l’étiquette de pointure si votre décision en dépend. Une longueur relevée sur du 42 renseigne sur cette paire précise. Pour un 41,5, demandez la mesure correspondante.",
+          "Pour comparer deux liens, conservez pour chacun l’identifiant du produit, la variante, le système de pointure et la mesure disponible. Une image avec une règle et une étiquette lisible peut être plus utile que dix photos de trois quarts. Si vous essayez le modèle en boutique, notez aussi le coloris, la taille et la largeur essayés. Vous disposerez d’un point de comparaison identifiable lorsque vous reviendrez sur l’annonce."
+        ]
+      ],
+      [
+        "Vérifier le panier et conserver les bons éléments",
+        [
+          "Avant paiement, comparez le coloris, la pointure, la largeur si elle est indiquée et la quantité avec le récapitulatif. Relisez le total, l’estimation de livraison et les conditions de retour applicables à votre commande. Les conditions d’une boutique New Balance concernent les achats effectués dans cette boutique. La fiche d’un autre vendeur doit préciser ses propres modalités.",
+          "Conservez la sélection et les photos de mesure avec la date. À réception, regardez les étiquettes des deux chaussures puis posez la paire sur un sol plat. Si vous envisagez un essayage, vérifiez les conditions de retour applicables. En cas d’erreur de taille ou de couleur, une photo de l’étiquette reçue jointe au récapitulatif de commande montre précisément l’écart au service client."
+        ]
+      ]
+    ],
+    "steps": [
+      "Retrouvez la fiche 5648 et vérifiez le coloris sélectionné.",
+      "Mesurez les deux pieds et lisez le tableau à partir du plus long.",
+      "Comparez deux semelles de même pointure avec la même méthode.",
+      "Gardez le récapitulatif et les photos de la variante retenue."
+    ],
+    "sourceNote": "Le lien et la référence produit ont été vérifiés le 5 novembre 2026. La photo d’archive montre l’extérieur de la paire. Les longueurs de pied de l’exemple servent à illustrer la méthode.",
+    "sources": [
+      [
+        "Fiche produit indépendante",
+        "https://hacoos.net/fr/products/grey-low-top-sneakers/",
+        "2026-11-05"
+      ],
+      [
+        "Annonce de catalogue 5648",
+        "https://cnfanssp.com/AllProducts/5648.html",
+        "2026-11-05"
+      ],
+      [
+        "Guide New Balance des pointures et largeurs",
+        "https://www.newbalance.com/size-guide.html",
+        "2026-11-05"
+      ],
+      [
+        "Exemple officiel de New Balance 9060",
+        "https://www.newbalance.com/pd/9060/U90609XS-D-07.html",
+        "2026-11-05"
+      ]
+    ],
+    "image": {
+      "src": "/products/live-5648.webp",
+      "alt": "Deux baskets basses grises et blanches vues du dessus sur un tapis vert",
+      "caption": "La photo conservée pour la fiche 5648 montre l’extérieur des chaussures. La longueur de la semelle intérieure nécessite une vue distincte."
+    }
+  }
+}

@@ -56,7 +56,7 @@ for (const locale of locales) {
     });
     const article = graphs.find((item) => item["@type"] === "Article");
     assert.equal(article?.inLanguage, locale, `Article language: ${route}`);
-    assert.equal(article.dateModified, "2026-10-09", `Article date: ${route}`);
+    assert.equal(article.dateModified, ["shipping-planning", "hacoo-returns-refunds"].includes(slug) ? "2026-11-05" : "2026-10-09", `Article date: ${route}`);
     if (added.includes(slug)) {
       assert.equal(article.datePublished, "2026-10-09", `Publication date: ${route}`);
       assert(article.wordCount >= 800, `Truncated translation: ${route}`);
@@ -116,6 +116,38 @@ for (const locale of locales) {
     assert(!graphs.some((item) => item["@type"] === "FAQPage"), `Unexpected FAQ: ${locale}/${slug}`);
   }
 }
+const releaseMetadata = JSON.parse(await readFile("app/guideEditions/metadata.json", "utf8"));
+const additions = ["hacoo-refund-payment-method", "hacoo-new-balance-9060-size-and-qc"];
+for (const locale of locales) {
+  const edition = JSON.parse(await readFile(`app/guideEditions/${locale}.json`, "utf8"));
+  for (const [slug, details] of Object.entries(edition)) {
+    const route = routes(locale, `/guides/${slug}/`);
+    const html = await readFile(fileFor(route), "utf8");
+    const title = releaseMetadata[locale][slug].title;
+    assert(html.includes(`<h1>${escapeHtml(title)}</h1>`), `Missing localized headline: ${route}`);
+    assert(html.includes(escapeHtml(details.intro)), `Missing opening answer: ${route}`);
+    const sections = details.sections || [details.section];
+    for (const [heading, paragraphs] of sections) {
+      assert(html.includes(escapeHtml(heading)), `Missing section: ${route}`);
+      for (const paragraph of paragraphs) assert(html.includes(escapeHtml(paragraph)), `Missing paragraph: ${route}`);
+    }
+    for (const [, url] of details.sources) assert(html.includes(`href="${escapeHtml(url)}"`), `Missing reference: ${route}`);
+    const article = [...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)]
+      .flatMap((match) => { const item = JSON.parse(match[1]); return item["@graph"] || [item]; })
+      .find((item) => item["@type"] === "Article");
+    assert.equal(article?.dateModified, "2026-11-05");
+    assert.equal(article?.inLanguage, locale);
+    if (additions.includes(slug)) {
+      assert.equal(article.datePublished, "2026-11-05");
+      assert(article.wordCount >= (locale === "en" ? 1200 : 950), `Short edition: ${route}`);
+      for (const hub of ["/", "/guides/", "/spreadsheet/"]) {
+        const index = await readFile(fileFor(routes(locale, hub)), "utf8");
+        assert(index.includes(route.slice(0, -1)), `Missing entry on ${locale} ${hub}: ${slug}`);
+      }
+    }
+  }
+}
+
 const switcher = await readFile("components/LanguageSwitcher.js", "utf8");
 assert(!switcher.includes("ENGLISH_ONLY_GUIDES"), "Language switcher still redirects translated articles to the index");
 console.log(`Verified ${urls.length} canonical pages, ${linksChecked} internal links, ${englishGuides.length} articles per language, 40 complete priority translations and six-language metadata parity.`);

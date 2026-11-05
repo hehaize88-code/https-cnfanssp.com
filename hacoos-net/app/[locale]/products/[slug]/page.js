@@ -1,3 +1,4 @@
+import { discoveryCopy } from "@/app/discoveryCopy";
 import { notFound } from "next/navigation";
 import { LocalizedProduct, localizedPageMetadata } from "@/components/LocalizedPages";
 import { products } from "@/app/data";
@@ -12,7 +13,7 @@ export async function generateMetadata({params}) {
   const {locale,slug}=await params;
   const original=products.find((item)=>item.slug===slug);
   const translated=getLocalizedResearch(locale).products[slug];
-  const product=original&&translated?{...original,...translated,name:original.name,catalogLabel:original.catalogLabel}:null;
+  const product=original&&translated?{...original,...translated,name:original.categorySlug === "jackets" ? discoveryCopy[locale].jacketName : original.name,catalogLabel:original.catalogLabel}:null;
   if(!LOCALIZED_LOCALES.includes(locale)||!product)return{};
   return localizedPageMetadata(locale,`/products/${slug}`,product.name,product.focus);
 }

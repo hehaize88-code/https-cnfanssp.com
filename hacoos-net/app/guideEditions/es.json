@@ -1,0 +1,273 @@
+{
+  "shipping-planning": {
+    "intro": "La página de envíos de Hacoo da un plazo orientativo de 15 a 30 días para España y de 15 a 25 para el Reino Unido, Francia, Alemania e Italia. La ayuda europea ofrece una referencia general de 15 a 28 días. Si ya has comprado, consulta el intervalo que aparece en tu pedido y comprueba el último movimiento que registra el transportista.",
+    "section": [
+      "¿Qué fecha conviene tomar como referencia?",
+      [
+        "Si necesitas el pedido para un evento en España, fíjate en la diferencia entre los 30 días de la tabla por países y los 28 de la ayuda general. Antes de pagar, comprueba el destino y el servicio elegidos y guarda la previsión junto con la fecha de compra. El plazo total publicado incluye la preparación y el transporte. Si le sumas de nuevo la preparación, contarás esos días dos veces.",
+        "Tras el envío, abre el seguimiento del artículo que estás esperando. Una etiqueta creada el lunes y una recogida registrada el jueves indican dos momentos distintos. Si ya ha pasado la fecha prevista, facilita a atención al cliente el número de pedido, la fecha y el texto del último movimiento. Si el pedido se dividió en varios paquetes, indica cuál sigue pendiente con su número de seguimiento."
+      ]
+    ],
+    "sources": [
+      [
+        "Plazos de entrega de Hacoo en la UE",
+        "https://act.hacoo.app/eu/help-center/shipping/1",
+        "2026-11-05"
+      ],
+      [
+        "Plazos de Hacoo por destino",
+        "https://web.hacoo.app/en-US/pages/shipping-info",
+        "2026-11-05"
+      ]
+    ]
+  },
+  "hacoo-returns-refunds": {
+    "intro": "La política publicada por Hacoo concede 15 días desde la recepción para solicitar la devolución de la mayoría de los artículos que cumplen las condiciones. Comprueba la fecha de entrega y el motivo de la solicitud. Si la talla pedida te queda pequeña, necesitarás explicar algo distinto que si te han enviado una talla equivocada.",
+    "section": [
+      "¿Qué hago si necesito otra talla?",
+      [
+        "Compara la talla seleccionada en el pedido con la etiqueta de la prenda o del zapato. Si coinciden y el artículo no te queda bien, consérvalo en su estado original con sus etiquetas y su embalaje. La política de Hacoo atribuye al comprador los gastos de envío de una devolución por cambio de opinión. Consulta las instrucciones de tu caso antes de pagar el porte.",
+        "Si pediste una M y recibiste una S, guarda la línea del pedido y fotografía la etiqueta de la talla y el embalaje. Explica esa diferencia al contactar con atención al cliente. La ayuda de Hacoo indica que puedes solicitar la devolución y el reembolso y, después, hacer un pedido nuevo con la talla deseada. Espera las instrucciones de envío y comprueba el abono en el medio de pago indicado para ese pedido."
+      ]
+    ],
+    "sources": [
+      [
+        "Política de devoluciones de Hacoo",
+        "https://act.hacoo.app/refund-policy",
+        "2026-11-05"
+      ],
+      [
+        "Ayuda de Hacoo sobre cambios",
+        "https://act.hacoo.app/act/sara/helpcenter/return5",
+        "2026-11-05"
+      ]
+    ]
+  },
+  "size-guide": {
+    "intro": "Empieza por la tabla del artículo concreto. Para el calzado, mide ambos pies de pie, desde el talón hasta el dedo más largo, y utiliza la medida mayor si la tabla pide la longitud del pie. Para la ropa, comprueba si el anuncio da las medidas del cuerpo o las de la prenda extendida.",
+    "section": [
+      "Cómo interpretar una talla británica en el anuncio",
+      [
+        "Por ejemplo, en la tabla británica de New Balance para hombre y modelos unisex, la UK 8 aparece junto a la EU 42 y a 26,5 cm. Es una referencia de esa marca. Si una foto muestra una plantilla extraíble de 26,5 cm, está midiendo la plantilla. Para compararla, mide la plantilla de un par que te quede bien entre los mismos puntos. Para comparar tu pie, busca una tabla que pida expresamente su longitud.",
+        "Haz una comprobación parecida con una sudadera. Si una que te queda bien mide 55 cm de axila a axila extendida, puedes comparar esa cifra con el ancho en plano del anuncio. Un contorno corporal de pecho de 100 cm se toma de otra manera. Revisa las unidades, el tipo de medida y la talla seleccionada, y guarda las cifras junto con la tabla utilizada."
+      ]
+    ],
+    "sources": [
+      [
+        "Guía de tallas de New Balance UK",
+        "https://www.newbalance.co.uk/size-guide.html",
+        "2026-11-05"
+      ]
+    ]
+  },
+  "hacoo-refund-payment-method": {
+    "kicker": "Método de reembolso de Hacoo",
+    "intro": "Abre la resolución del artículo afectado y busca tres datos: el importe aprobado, el destino del dinero y la confirmación de que el pago se ha emitido. Según el centro de ayuda europeo de Hacoo, el resultado, la cuantía y la vía de reembolso se comunican por WhatsApp o SMS. El recibo original te permite identificar el cargo con el que debes comparar el abono.",
+    "factBox": [
+      [
+        "Primera comprobación",
+        "Importe y destino indicados en la resolución"
+      ],
+      [
+        "Tarjeta de crédito",
+        "La política pública de Hacoo indica de 8 a 15 días laborables"
+      ],
+      [
+        "PayPal",
+        "La misma política indica de 5 a 7 días laborables"
+      ]
+    ],
+    "sections": [
+      [
+        "Localiza la resolución de la compra correcta",
+        [
+          "Si llegaste al producto desde un enlace, recupera el recibo de la tienda que cobró el pedido. Un directorio puede mostrar un hallazgo de Hacoo y dirigirte a otro vendedor. Comprueba el número de pedido y el nombre del comercio antes de buscar un mensaje concreto. Dos pares de zapatillas comprados el mismo día en tiendas distintas pueden dar lugar a cargos muy parecidos.",
+          "Entra directamente en la aplicación o web que utilizaste y compara artículo, color, talla y cantidad con los de la solicitud. Guarda la resolución junto al recibo. Un acuse de recibo solo te confirma que ha llegado la petición. Si anuncian un abono sin indicar el destino, pregunta en el canal de atención del pedido a qué medio se enviará. Puedes identificar la compra sin facilitar el número completo de la tarjeta."
+        ]
+      ],
+      [
+        "Sitúa el trámite en el momento adecuado",
+        [
+          "Anota las fechas que puedas acreditar: solicitud, autorización, envío del paquete, llegada al almacén y emisión del pago. La política de Hacoo contempla casos en los que el cliente conserva el artículo y otros en los que debe enviarlo. Lee las instrucciones antes de pagar portes. El seguimiento sirve para acreditar que la devolución llegó al almacén. La fecha de emisión del reembolso debe confirmarla Hacoo o quien gestione el pago.",
+          "Imagina que el lunes te autorizan a devolver una chaqueta, que el jueves llega al almacén y que el martes siguiente atención al cliente confirma la emisión del abono. Cada fecha describe una operación distinta. Pregunta desde cuál se cuenta el plazo que te han comunicado. Guarda la referencia del abono junto a la fecha de emisión, si está disponible. Al banco le resultará más fácil buscar con esos datos que con la fecha en que te probaste la chaqueta."
+        ]
+      ],
+      [
+        "Sigue el dinero cuando pagaste con tarjeta",
+        [
+          "Localiza el cargo original por importe, moneda, fecha y nombre del comercio. Después busca un abono por la cantidad aceptada. Si devolviste una sola prenda de un pedido grande, buscar únicamente el total de la compra puede ocultar la operación correcta. Cuando utilizas varias tarjetas, consulta el recibo para saber qué cuenta revisar, sin compartir los datos completos con terceros.",
+          "La política pública de Hacoo da una referencia de ocho a quince días laborables para tarjeta de crédito. La ayuda europea indica que el tiempo depende del medio original. Utiliza el plazo específico de tu expediente cuando lo tengas y distingue entre días naturales y laborables. Si han sustituido tu tarjeta o cerrado la cuenta, pregunta a la entidad emisora cómo rastrear una devolución vinculada al cargo antiguo. Solicita a Hacoo la referencia disponible para la operación."
+        ]
+      ],
+      [
+        "Comprueba el abono en PayPal",
+        [
+          "Abre la cuenta de PayPal que utilizaste en la compra, localiza el movimiento y revisa sus detalles. Apunta el estado del reembolso, su importe y la moneda. Si financiaste PayPal con una tarjeta, consulta con PayPal el destino posterior cuando no quede claro en la operación. El saldo total por sí solo aporta menos información que la ficha concreta de la compra.",
+          "Hacoo publica un plazo orientativo de cinco a siete días laborables para PayPal. Si la operación muestra el abono pero aún no ves un movimiento en la tarjeta, facilita a PayPal la referencia y pregunta si debes esperar otro apunte. Si PayPal todavía no muestra ningún reembolso, pide primero a Hacoo que confirme si emitió el pago hacia esa operación. Adjunta una captura recortada del movimiento que deban revisar."
+        ]
+      ],
+      [
+        "Cuadra una cantidad menor línea por línea",
+        [
+          "Supongamos que pagaste 42 € por unas zapatillas, 18 € por una gorra y 5 € de envío. Te quedas la gorra y se aprueba un abono de 42 € por las zapatillas. Un ingreso de 42 € encaja con esa resolución, aunque el cargo total fuera de 65 €. Si corresponde devolver algún porte es una cuestión aparte que debe aclararse en el expediente real. En este ejemplo no hay descuentos ni conversión de moneda.",
+          "Si utilizaste un cupón, conserva el desglose original y pregunta cómo se repartió la rebaja entre los artículos. Para dos devoluciones del mismo pedido, reserva una línea por resolución, con su fecha e importe. La ayuda europea distingue resultados totales, parciales y denegados. Si discrepas de lo aprobado, pide el cálculo de la resolución. Si el dinero recibido difiere de una cifra ya aprobada, pide que localicen la parte del pago que falta."
+        ]
+      ],
+      [
+        "Aclara una referencia a saldo, cupón o devolución física",
+        [
+          "Si te ofrecen un vale, saldo en una cuenta o dinero por un medio de pago, pide que expliquen qué implica esa opción en tu caso. Averigua dónde aparecerá la suma y si tienes que hacer algo para utilizarla. Guarda la respuesta antes de aceptar. La ayuda europea sobre plazos remite al canal de pago original, sin garantizar que todos los expedientes permitan elegir el destino.",
+          "Para un envío de vuelta, verifica en tus instrucciones la dirección, la referencia, el justificante necesario y la fecha límite. Si te autorizan a conservar la compra, guarda esa frase con el resto de la decisión. Ante instrucciones contradictorias, acláralas antes de pagar el envío. Si quieres otra talla, registra por separado el abono de la compra inicial y lo que pagarías por un pedido nuevo."
+        ]
+      ],
+      [
+        "Formula una consulta que permita rastrear el pago",
+        [
+          "Un mensaje útil sería: «Se aprobaron 42 € por mi devolución de la chaqueta. Su mensaje indica que el pago se emitió a la tarjeta utilizada en el pedido. He consultado la cuenta después del plazo comunicado y no encuentro el abono. ¿Pueden confirmar la fecha de emisión, el importe enviado y la referencia que pueda utilizar mi banco?». Sustituye los datos del ejemplo por los tuyos y añade el número de pedido y las fechas dentro del canal oficial.",
+          "Adjunta la resolución, la línea de pago o el comprobante de entrega que responda a esa pregunta. Oculta otros movimientos, direcciones y datos bancarios. No compartas códigos de seguridad ni claves de un solo uso. Si Hacoo confirma el envío del dinero y te da una referencia, pásasela al proveedor de pago y guarda su respuesta en el mismo expediente."
+        ]
+      ],
+      [
+        "Cierra la comprobación con el movimiento contabilizado",
+        [
+          "Cuando aparezca el abono, compara el importe con la resolución en la moneda indicada. Comprueba si el movimiento figura pendiente o contabilizado y apunta la fecha junto al artículo. Cuando haya una conversión de divisa, pide al proveedor que explique la cifra del extracto antes de atribuir la diferencia a Hacoo. Conserva los dos importes para poder reconstruir el cálculo.",
+          "Si queda una diferencia, cuantifícala e indica quién puede comprobarla. La ayuda europea contempla en determinadas circunstancias volver a contactar tras una resolución dentro de un plazo limitado, así que lee el aviso al recibirlo. Reclamar el importe reconocido y pedir que se revise una decisión son dos gestiones distintas. Explica cuál necesitas para que el equipo pueda responder al punto pendiente."
+        ]
+      ]
+    ],
+    "steps": [
+      "Relaciona el pedido y el artículo con el cargo original.",
+      "Guarda la resolución, el importe, la moneda y el destino indicado.",
+      "Verifica la fecha de emisión y el movimiento en el medio correspondiente.",
+      "Comunica la diferencia pendiente con el justificante adecuado."
+    ],
+    "sourceNote": "Las dos primeras fuentes son del centro de ayuda europeo de Hacoo. Los plazos por canal proceden de su política pública de devoluciones. Si tu expediente concreta algún aspecto, consulta sus instrucciones.",
+    "sources": [
+      [
+        "Centro de ayuda de Hacoo para la UE · resultado y reembolsos parciales",
+        "https://act.hacoo.app/eu/help-center/after-sales/2",
+        "2026-11-05"
+      ],
+      [
+        "Centro de ayuda de Hacoo para la UE · plazo según el medio original",
+        "https://act.hacoo.app/eu/help-center/after-sales/3",
+        "2026-11-05"
+      ],
+      [
+        "Política de Hacoo · plazos orientativos para tarjeta y PayPal",
+        "https://act.hacoo.app/refund-policy",
+        "2026-11-05"
+      ]
+    ]
+  },
+  "hacoo-new-balance-9060-size-and-qc": {
+    "kicker": "Tallas y fotos de zapatillas",
+    "intro": "Has encontrado unas New Balance 9060 grises. Reconoces el número que ofrece el selector de tallas y en la portada aparecen dos zapatillas sobre una base cuadriculada. Antes de decidirte, comprueba a qué par corresponde el enlace y qué se ha medido. La ficha 5648 sirve para practicar la lectura de la tabla de New Balance y pedir una foto de la plantilla que permita resolver una duda concreta.",
+    "factBox": [
+      [
+        "Ficha de referencia",
+        "5648 · identificador original del producto 7672819921"
+      ],
+      [
+        "Una fila de la tabla oficial",
+        "En la tabla de hombre/unisex, 26 cm equivalen a UK 7,5, EU 41,5 y US 8 de hombre."
+      ],
+      [
+        "Foto de portada",
+        "Par gris y blanco visto desde arriba sobre una base verde. Se ve el exterior de las zapatillas."
+      ]
+    ],
+    "sections": [
+      [
+        "Identifica la ficha que estás consultando",
+        [
+          "Abre la referencia de las zapatillas bajas grises y sigue el botón de la ficha. El 5 de noviembre de 2026 el destino mostraba el nombre de las 9060 y el identificador original 7672819921. Nuestro índice asigna el número 5648 a esa referencia. Guarda ambos junto al enlace si sueles comparar varias pestañas. Te ayudarán a distinguir dos resultados que reutilicen una foto o lleven prácticamente el mismo título.",
+          "Selecciona el color que te interesa y comprueba si cambian la galería, las etiquetas y las tallas disponibles. Si aparecen las mismas imágenes para todos los colores, queda por demostrar a qué variante corresponde cada una. Un enlace que funciona permite consultar la ficha en ese momento. Antes de pagar, comprueba de nuevo qué opción llega al resumen del pedido, ya que la disponibilidad puede haber cambiado."
+        ]
+      ],
+      [
+        "Lee la fila completa de tallas",
+        [
+          "Si la ficha identifica el modelo como de hombre o unisex, utiliza esa sección del cuadro de New Balance. En la fila de 26 cm figuran UK 7,5, EU 41,5, US 8 de hombre y US 9,5 de mujer. Todas esas etiquetas pertenecen a la misma fila. Una foto que solo deja ver un «8» no aclara el sistema. Si un vendedor ofrece 41 y 42, pregunta cómo traduce sus tallas antes de elegir entre ambas.",
+          "Fotografía la etiqueta completa de unas zapatillas que te sienten bien y anota cada cifra con su sistema. Las columnas pueden aparecer en distinto orden según la tienda. Mira también a qué se refiere la indicación «26 cm». La longitud que figura en la tabla y la longitud física de una plantilla extraíble proceden de mediciones distintas. Para compararlas con tu propio par necesitas saber dónde empieza y acaba cada medida."
+        ]
+      ],
+      [
+        "Mide ambos pies con los calcetines que vayas a usar",
+        [
+          "Coloca una hoja de papel en un suelo firme con un borde junto a la pared. De pie, apoya ligeramente el talón contra la pared y carga el peso sobre ese pie. Pide a otra persona que marque el extremo del dedo más largo con el lápiz vertical. Mide desde el borde trasero del papel hasta la marca. Repite con el otro pie y anota el resultado en centímetros. Repite la toma si el papel se desplaza.",
+          "Imagina que un pie mide 25,8 cm y el otro 26,0 cm. Empieza a consultar la tabla por el más largo. La medida interior del par anunciado sigue siendo otra cuestión. Piensa además dónde te aprietan tus zapatillas actuales. Si hay espacio delante de los dedos y te roza el lateral, conviene preguntar por el ancho antes de pensar que una talla más larga solucionará el problema."
+        ]
+      ],
+      [
+        "Pide una foto útil de la plantilla",
+        [
+          "Si la plantilla de tus zapatillas de referencia sale fácilmente, ponla en una superficie plana sin estirarla. Coloca una regla rígida al lado con el cero a la altura del borde del talón. Haz una foto en la que salgan toda la plantilla y la lectura de la punta. Anota longitud, talla y modelo. Una cinta flexible que siga la curvatura puede arrojar otra cifra.",
+          "Una petición concreta sería: «¿Podéis fotografiar la plantilla del color y la talla elegidos, mostrando el talón, la punta, el cero y la lectura final en una misma imagen?». Otra foto de la etiqueta permite asociarla a la talla. Si el comienzo de la regla queda fuera del encuadre, una pequeña diferencia entre dos tallas seguirá sin resolverse. Si está pegada, pide que te expliquen cómo tomaron la medida sin desmontarla."
+        ]
+      ],
+      [
+        "Aprovecha las fotos del par gris",
+        [
+          "La portada de la ficha muestra dos zapatillas grises y blancas juntas sobre una base verde. Desde arriba se aprecia el contorno de las punteras, la orientación de las lengüetas y la disposición de las piezas próximas a los cordones. Comprueba si las dos puntas miran en la misma dirección antes de interpretar una diferencia aparente. La cuadrícula bajo la suela muestra el exterior y no permite calcular el espacio interior de los dedos.",
+          "Pide una foto trasera con los talones sobre el mismo plano y después una vista equivalente del lateral de cada zapatilla, a la altura de la suela. La vista posterior permite comparar la posición de las piezas del talón. Los perfiles equivalentes ayudan a comparar las mediasuelas. Si una diferencia desaparece al igualar el ángulo de la cámara, la perspectiva inicial no permitía sacar esa conclusión."
+        ]
+      ],
+      [
+        "Compara la referencia del color que buscas",
+        [
+          "La página oficial de las 9060 con código U90609XS sirve para reconocer el perfil esculpido de la mediasuela, el detalle del talón y el dibujo de rombos bajo la suela. Localiza estos elementos en las fotos de New Balance y busca después el código del color que intentas identificar. U90609XS corresponde al ejemplo oficial consultado. El título de la ficha 5648 no confirma ese código para el par gris.",
+          "Empieza por la forma de las piezas y la posición de las costuras. Para comparar el tono de gris necesitas imágenes con una iluminación parecida: la base verde puede alterar el color percibido. Una etiqueta legible ayuda a relacionar una imagen con una talla o una referencia declarada. Una coincidencia de forma o de etiqueta no permite determinar la autenticidad, los materiales exactos ni la sensación de amortiguación."
+        ]
+      ],
+      [
+        "Decide qué hacer si las imágenes se contradicen",
+        [
+          "Supón que el título indica gris, la muestra de color parece plateada y la portada tampoco cambia al seleccionar azul. Anota qué campos responden a la selección. Si el color es decisivo, pide una foto de la variante junto a su etiqueta de talla. La medida obtenida de un 42 se refiere al par medido. Para resolver una duda sobre un 41,5 necesitas la medida de esa opción.",
+          "Para comparar dos enlaces, guarda en cada caso el identificador de origen, el color elegido, el sistema de tallas y la mejor medida disponible. Una sola imagen bien identificada puede ser más informativa que una galería entera del mismo perfil. Si te pruebas el modelo en una tienda, apunta la referencia, la talla y el ancho que has probado. Tendrás una comparación concreta al volver a la ficha."
+        ]
+      ],
+      [
+        "Revisa el pedido y conserva la información necesaria",
+        [
+          "Antes de pagar, contrasta color, talla, sistema, ancho si se indica y cantidad con el resumen. Revisa el importe total, la estimación de entrega y las condiciones de devolución del vendedor para tu destino. Las condiciones de la tienda oficial de New Balance se refieren a compras realizadas allí. Comprueba qué condiciones acompañan al enlace concreto que vas a utilizar.",
+          "Guarda una captura de la variante y de cualquier foto de medida, junto con la fecha. Cuando recibas el paquete, compara las etiquetas de ambas zapatillas con el pedido y ponlas juntas sobre una superficie nivelada. Consulta las condiciones de devolución si vas a probártelas. Ante una talla o un color equivocados, la etiqueta recibida y el resumen de compra muestran al servicio de atención qué diferencia debe revisar."
+        ]
+      ]
+    ],
+    "steps": [
+      "Abre la ficha 5648 e identifica la variante antes de comparar.",
+      "Mide ambos pies y localiza el más largo en la tabla adecuada.",
+      "Compara plantillas de la talla elegida con los mismos puntos de medida.",
+      "Guarda el resumen del pedido y las fotos de la opción seleccionada."
+    ],
+    "sourceNote": "El enlace del catálogo y el identificador original se comprobaron el 5 de noviembre de 2026. La imagen conservada muestra el exterior del par. Las medidas del ejemplo ilustran el procedimiento.",
+    "sources": [
+      [
+        "Referencia independiente del producto",
+        "https://hacoos.net/es/products/grey-low-top-sneakers/",
+        "2026-11-05"
+      ],
+      [
+        "Ficha 5648 del catálogo",
+        "https://cnfanssp.com/AllProducts/5648.html",
+        "2026-11-05"
+      ],
+      [
+        "Guía de tallas y anchos de New Balance",
+        "https://www.newbalance.com/size-guide.html",
+        "2026-11-05"
+      ],
+      [
+        "Ejemplo oficial de las New Balance 9060",
+        "https://www.newbalance.com/pd/9060/U90609XS-D-07.html",
+        "2026-11-05"
+      ]
+    ],
+    "image": {
+      "src": "/products/live-5648.webp",
+      "alt": "Dos zapatillas bajas grises y blancas vistas desde arriba sobre una base verde",
+      "caption": "La foto de referencia de la ficha 5648 muestra el exterior. Hace falta otra vista para medir la plantilla extraíble."
+    }
+  }
+}
