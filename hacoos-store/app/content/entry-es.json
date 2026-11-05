@@ -1,0 +1,60 @@
+{
+  "pages": {
+    "shipping": {
+      "title": "¿Cuánto tarda Hacoo? Plazos y gastos de envío por país",
+      "intro": "Consulta el plazo orientativo para España y otros destinos, comprueba el coste en tu cesta y localiza el seguimiento cuando salga el paquete."
+    },
+    "spreadsheet": {
+      "title": "Hoja de productos Hacoo: enlaces por categoría e ID",
+      "intro": "Explora zapatillas, sudaderas y bolsos. Busca un ID de producto en el catálogo externo y compara el color y la talla de la opción elegida."
+    },
+    "articles/find-product-links": {
+      "title": "Cómo encontrar un enlace de Hacoo y comprobar el ID del producto",
+      "intro": "Sigue una ficha de ejemplo desde el identificador hasta el catálogo. Comprueba si corresponde al artículo, al color y a la talla que guardaste."
+    },
+    "faq": {
+      "title": "Preguntas sobre Hacoo: web oficial, enlaces y pedidos",
+      "intro": "Abre la web oficial de Hacoo y consulta nuestras respuestas independientes sobre enlaces de productos, plazos, tallas y devoluciones."
+    }
+  },
+  "labels": {
+    "heading": "Plazos orientativos según el destino",
+    "destination": "Destino",
+    "estimate": "Plazo estimado de recepción",
+    "group": "Reino Unido, Francia, Alemania e Italia",
+    "spain": "España",
+    "others": "Otros destinos indicados por Hacoo",
+    "days": "días",
+    "note": "Estos son los plazos publicados como referencia. Introduce tu dirección y comprueba los gastos y el intervalo de entrega de tu cesta antes de pagar.",
+    "shippingSource": "Información de envíos de Hacoo",
+    "helpSource": "Ayuda de Hacoo para entregas en Europa",
+    "official": "Web oficial de Hacoo",
+    "browse": "Explorar por categoría",
+    "updated": "Actualizado el 5 de noviembre de 2026"
+  },
+  "examples": {
+    "articles/find-product-links": {
+      "heading": "Ejemplo: dos números distintos para las mismas zapatillas",
+      "paragraphs": [
+        "La ficha de las zapatillas MA-1 en este índice muestra el ID 7595683628. La dirección dentro del catálogo termina en /495.html. Guarda el enlace completo junto al ID largo. En otro catálogo ese número de página corto podría corresponder a otro artículo.",
+        "Abre la ficha, elige el color y la talla que buscabas y compara el perfil y la etiqueta con tu referencia. Si son las mismas zapatillas pero falta tu talla, registra esa variante como no disponible. Si encuentras un par parecido por descripción, guárdalo en una ficha aparte."
+      ]
+    },
+    "articles/read-qc-photos": {
+      "heading": "Una foto de la cinta que sí permite comparar",
+      "paragraphs": [
+        "Imagina una sudadera que mide 41 cm de axila a axila extendida sobre una mesa. Los dos extremos de la cinta deben verse en la misma foto. Compara los 41 cm con el ancho en plano de una prenda que quede bien. Si la tabla indica el contorno de la prenda, equivaldrían a unos 82 cm; el contorno corporal se mide por separado."
+      ]
+    },
+    "articles/size-before-you-buy": {
+      "heading": "Cuando la tabla es de tallas infantiles",
+      "paragraphs": [
+        "Una etiqueta 8Y puede indicar un grupo de edad y 128 puede referirse a la estatura en centímetros. Lee el encabezado de la tabla de la variante seleccionada. Para los zapatos, comprueba si la longitud corresponde al pie o a la plantilla."
+      ]
+    }
+  },
+  "sizingSources": [
+    "Nike: cómo medir los pies infantiles",
+    "Nike: medidas corporales para ropa infantil"
+  ]
+}

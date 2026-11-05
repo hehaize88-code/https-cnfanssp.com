@@ -14,7 +14,7 @@ class Page(HTMLParser):
  def handle_data(self,d):
   if self.skip==0:self.text.append(d)
 urls=[n.text for n in ET.parse(root/'sitemap.xml').findall('.//{*}loc')]
-assert len(urls)==120,len(urls)
+assert len(urls)==130,len(urls)
 paths={urlparse(u).path for u in urls};errors=[];pages={}
 for url in urls:
  path=urlparse(url).path;f=root/('index.html' if path=='/' else path[1:]+'.html');raw=f.read_text();p=Page(raw);pages[path]=p
@@ -32,7 +32,7 @@ for url in urls:
    href=d.get('href','');a=urlparse(href)
    if href.startswith('/') and not href.startswith('//') and unquote(a.path) not in paths:errors.append((path,'internal link',href))
    if href.startswith('#') and href[1:] not in ids:errors.append((path,'fragment',href))
-   if a.scheme=='https' and a.hostname not in ['cnfanshp.com','www.cnfanshp.com','hacoos.store']:errors.append((path,'external',href))
+   if a.scheme=='https' and a.hostname not in ['cnfanshp.com','www.cnfanshp.com','hacoos.store','www.hacoo.app','web.hacoo.app','act.hacoo.app','www.nike.com']:errors.append((path,'external',href))
  if 'www.cnfanssp.com' in raw:errors.append((path,'old domain'))
  visible=' '.join(p.text)
  if '¥' in visible or 'CNY' in visible:errors.append((path,'currency'))
@@ -42,15 +42,22 @@ for l in ['en','de','fr','es','it']:
  prefix='' if l=='en'else'/'+l
  for slug in ['hacoo-order-tracking','hacoo-search-no-results','hacoo-returns-refunds']:
   p=pages[prefix+'/articles/'+slug];assert len([1 for t,d in p.tags if t=='section' and d.get('id','').startswith('section-')])==8
+ for slug in ['hacoo-express-vs-standard-shipping','hacoo-kids-size-guide']:
+  path=prefix+'/articles/'+slug
+  article=pages[path]
+  sections=[d for t,d in article.tags if t=='section' and d.get('id','').startswith('section-')]
+  assert len(sections)>=7,(path,'long-form sections')
+  assert any(d.get('href')==path for t,d in pages[prefix+'/articles'].tags if t=='a'),(path,'article directory')
+ assert any(t=='table' for t,d in pages[prefix+'/shipping'].tags),(prefix,'shipping table')
  home=pages[prefix or '/'];index=pages[prefix+'/articles']
  # Card hrefs appear only once in a grid: count article links not the hub.
  homecards=[d['href'] for t,d in home.tags if t=='a' and d.get('href','').startswith(prefix+'/articles/')]
  indexcards=[d['href'] for t,d in index.tags if t=='a' and d.get('href','').startswith(prefix+'/articles/')]
  if len(homecards)!=4:errors.append((prefix,'home cards',len(homecards)))
- if len(indexcards)!=15:errors.append((prefix,'index cards',len(indexcards)))
+ if len(indexcards)!=17:errors.append((prefix,'index cards',len(indexcards)))
  forms=[d for t,d in home.tags if t=='form'];assert forms[0]['action']=='https://cnfanshp.com/search.html'
  assert any(t=='input'and d.get('name')=='channelid'and d.get('value')=='2'for t,d in home.tags)
-print(json.dumps({'pages':len(urls),'article_pages':sum('/articles/' in x for x in paths),'new_article_pages':15,'home_cards_per_locale':4,'index_articles_per_locale':15,'errors':errors},ensure_ascii=False,indent=2))
+print(json.dumps({'pages':len(urls),'article_pages':sum('/articles/' in x for x in paths),'new_article_pages':10,'home_cards_per_locale':4,'index_articles_per_locale':17,'errors':errors},ensure_ascii=False,indent=2))
 if errors:raise SystemExit(1)
 # Every alternate resolves back to this same language group.
 for path,p in pages.items():

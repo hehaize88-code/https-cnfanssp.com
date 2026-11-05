@@ -1,0 +1,60 @@
+{
+  "pages": {
+    "shipping": {
+      "title": "Quanto impiega Hacoo a consegnare? Tempi e costi per Paese",
+      "intro": "Consulta i tempi indicativi per l’Italia e altre destinazioni. Controlla le spese nel carrello e trova il tracciamento dopo la spedizione."
+    },
+    "spreadsheet": {
+      "title": "Foglio Hacoo: link ai prodotti per categoria e ID",
+      "intro": "Sfoglia scarpe, felpe e borse. Cerca per ID nel catalogo esterno e verifica modello, colore e taglia della variante che ti interessa."
+    },
+    "articles/find-product-links": {
+      "title": "Come trovare un link Hacoo e verificare l’ID del prodotto",
+      "intro": "Segui una scheda di esempio dal codice al catalogo e confronta la variante con il colore e la taglia che avevi salvato."
+    },
+    "faq": {
+      "title": "Qual è il sito ufficiale di Hacoo? FAQ su link e ordini",
+      "intro": "Trova il link al sito ufficiale Hacoo e le risposte della nostra guida indipendente su prodotti, spedizioni, taglie e resi."
+    }
+  },
+  "labels": {
+    "heading": "Tempi di consegna indicativi per destinazione",
+    "destination": "Destinazione",
+    "estimate": "Tempo stimato per ricevere l’ordine",
+    "group": "Italia, Francia, Germania e Regno Unito",
+    "spain": "Spagna",
+    "others": "Altre destinazioni indicate da Hacoo",
+    "days": "giorni",
+    "note": "Questi sono gli intervalli pubblicati a titolo orientativo. Inserisci l’indirizzo e controlla i costi e la finestra di consegna del tuo carrello prima del pagamento.",
+    "shippingSource": "Informazioni Hacoo sulle spedizioni",
+    "helpSource": "Assistenza Hacoo Europa sui tempi di consegna",
+    "official": "Sito ufficiale di Hacoo",
+    "browse": "Sfoglia per categoria",
+    "updated": "Aggiornato il 5 novembre 2026"
+  },
+  "examples": {
+    "articles/find-product-links": {
+      "heading": "Un esempio concreto: due numeri per lo stesso paio di scarpe",
+      "paragraphs": [
+        "La scheda delle sneakers MA-1 in questo indice mostra l’ID prodotto 7595683628. L’indirizzo del catalogo termina con /495.html. Salva il link completo insieme all’ID lungo. In un altro catalogo lo stesso numero breve di pagina potrebbe portare a un articolo diverso.",
+        "Apri la scheda, seleziona il colore e il numero desiderati e confronta il profilo laterale e l’etichetta con il riferimento. Se il modello coincide ma il tuo numero manca, annota che quella variante è indisponibile. Registra a parte le scarpe simili trovate cercando la descrizione."
+      ]
+    },
+    "articles/read-qc-photos": {
+      "heading": "Una foto del metro che permette il confronto",
+      "paragraphs": [
+        "Una felpa stesa su un piano misura, per esempio, 41 cm da ascella ad ascella. Nella stessa foto devono essere visibili entrambe le estremità del metro. Confronta i 41 cm con la larghezza in piano di un capo che veste bene, oppure circa 82 cm con la circonferenza dichiarata del capo. Il torace del bambino va misurato separatamente."
+      ]
+    },
+    "articles/size-before-you-buy": {
+      "heading": "Quando la tabella riguarda i bambini",
+      "paragraphs": [
+        "Una dicitura come 8Y può indicare una fascia d’età, mentre 128 può riferirsi alla statura in centimetri. Leggi l’intestazione della tabella per la variante selezionata. Per le scarpe verifica se la lunghezza in centimetri si riferisce al piede o alla soletta."
+      ]
+    }
+  },
+  "sizingSources": [
+    "Nike: come misurare i piedi dei bambini",
+    "Nike: misure del corpo per l’abbigliamento da bambini"
+  ]
+}

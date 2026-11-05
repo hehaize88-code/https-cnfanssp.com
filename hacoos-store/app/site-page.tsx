@@ -20,7 +20,8 @@ import {
   type PageKey,
 } from "./site-data";
 import { contentRevision, refresh } from "./seo-refresh";
-import { octoberKeys } from "./october-content";
+import { guideKeys, novemberKeys } from "./guide-content";
+import { entryContent, novemberRevision, shippingSources, sizingSources } from "./entry-content";
 import { articles } from "./article-content";
 import { articleExpansions } from "./article-expansions";
 import {
@@ -43,7 +44,7 @@ const navKeys: PageKey[] = [
 ];
 
 const articleKeys: PageKey[] = [
-  ...octoberKeys,
+  ...guideKeys,
   "articles/hacoo-codes-product-id-guide",
   "articles/hacoo-links-not-working",
   "articles/hacoo-spreadsheet-verify-links",
@@ -59,7 +60,8 @@ const articleKeys: PageKey[] = [
 ];
 
 const articleReleaseDates: Partial<Record<PageKey, string>> = {
-  ...Object.fromEntries(octoberKeys.map(key => [key, contentRevision])),
+  ...Object.fromEntries(guideKeys.map(key => [key, contentRevision])),
+  ...Object.fromEntries(novemberKeys.map(key => [key, novemberRevision])),
   "articles/spreadsheet-finds-categories-start": "2026-08-29",
   "articles/hacoo-codes-product-id-guide": "2026-09-17",
   "articles/hacoo-links-not-working": "2026-09-17",
@@ -310,9 +312,14 @@ function HomePage({ locale }: { locale: Locale }) {
 }
 
 const relatedRoutes: Partial<Record<PageKey, PageKey[]>> = {
-  shipping: ['articles/hacoo-order-tracking', 'articles/hacoo-returns-refunds'],
-  'qc-guide': ['articles/read-qc-photos', 'articles/size-before-you-buy', 'articles/hacoo-returns-refunds'],
+  shipping: ['articles/hacoo-express-vs-standard-shipping', 'articles/hacoo-order-tracking', 'articles/hacoo-returns-refunds'],
+  'qc-guide': ['articles/read-qc-photos', 'articles/hacoo-kids-size-guide', 'articles/size-before-you-buy', 'articles/hacoo-returns-refunds'],
   spreadsheet: ['articles/hacoo-spreadsheet-verify-links', 'articles/find-product-links', 'articles/hacoo-search-no-results'],
+  'articles/hacoo-express-vs-standard-shipping': ['shipping', 'articles/hacoo-order-tracking'],
+  'articles/hacoo-kids-size-guide': ['articles/size-before-you-buy', 'articles/read-qc-photos', 'spreadsheet'],
+  'articles/find-product-links': ['spreadsheet', 'articles/hacoo-links-not-working', 'articles/hacoo-codes-product-id-guide'],
+  'articles/size-before-you-buy': ['articles/hacoo-kids-size-guide', 'articles/read-qc-photos', 'spreadsheet'],
+  'articles/read-qc-photos': ['qc-guide', 'articles/hacoo-kids-size-guide', 'articles/size-before-you-buy'],
   'articles/hacoo-order-tracking': ['shipping', 'articles/hacoo-returns-refunds', 'articles/read-qc-photos'],
   'articles/hacoo-search-no-results': ['articles/hacoo-links-not-working', 'articles/hacoo-codes-product-id-guide', 'spreadsheet'],
   'articles/hacoo-returns-refunds': ['articles/read-qc-photos', 'articles/hacoo-order-tracking', 'shipping'],
@@ -324,10 +331,31 @@ function NextSteps({ locale, pageKey }: {locale: Locale; pageKey: PageKey}) {
     <div>{routes.filter(key => key !== pageKey).map(key => <a key={key} href={routeFor(locale, key)}>{copy[locale].pageLabels[key].title}<ArrowRight aria-hidden="true" /></a>)}</div>
   </nav>;
 }
+function DeliveryEstimates({locale}: {locale: Locale}) {
+  const t = entryContent[locale].labels;
+  const destinations = [
+    [t.group, '15–25'],
+    [t.spain, '15–30'],
+    [t.others, '25–65'],
+  ];
+  return <section className="section destination-estimates">
+    <table>
+      <caption>{t.heading}</caption>
+      <thead><tr><th scope="col">{t.destination}</th><th scope="col">{t.estimate}</th></tr></thead>
+      <tbody>{destinations.map(([place, days]) => <tr key={place}><th scope="row">{place}</th><td>{days} {t.days}</td></tr>)}</tbody>
+    </table>
+    <p>{t.note} <a href={shippingSources[0]}>{t.shippingSource}</a></p>
+  </section>;
+}
+
 function PageGuidance({locale, pageKey}: {locale: Locale; pageKey: PageKey}) {
   const sections = refresh[locale].sections[pageKey as 'shipping' | 'qc-guide' | 'spreadsheet'];
   if (!sections) return null;
   return <><article className="long-article page-guidance">{sections.map(([heading, ...paragraphs], i) => <section key={heading}><span>{String(i + 1).padStart(2, '0')}</span><div><h2>{heading}</h2>{paragraphs.map(p => <p key={p}>{p}</p>)}</div></section>)}</article><NextSteps locale={locale} pageKey={pageKey} /></>;
+}
+
+function articleModified(locale: Locale, key: PageKey) {
+  return key in entryContent[locale].examples ? novemberRevision : articleReleaseDates[key] ?? '2026-08-27';
 }
 
 function ArticlePage({ locale, pageKey }: { locale: Locale; pageKey: ArticleKey }) {
@@ -335,7 +363,13 @@ function ArticlePage({ locale, pageKey }: { locale: Locale; pageKey: ArticleKey 
   const u = ui[locale];
   const article = articles[locale][pageKey];
   const expansions = locale === "en" ? [] : articleExpansions[locale][pageKey] ?? [];
-  const reviewed = ["articles/find-product-links", "articles/read-qc-photos"].includes(pageKey) ? contentRevision : articleReleaseDates[pageKey] ?? "2026-08-27";
+  const reviewed = articleModified(locale, pageKey);
+  const labels = entryContent[locale].labels;
+  const sources = pageKey === 'articles/hacoo-express-vs-standard-shipping'
+    ? shippingSources.map((url, i) => [url, [labels.shippingSource, labels.helpSource][i]])
+    : pageKey === 'articles/hacoo-kids-size-guide'
+      ? sizingSources[locale].map((url, i) => [url, entryContent[locale].sizingSources[i]])
+      : undefined;
   const reviewedDisplay = reviewed.split("-").reverse().join(" / ");
   return (
     <>
@@ -371,8 +405,9 @@ function ArticlePage({ locale, pageKey }: { locale: Locale; pageKey: ArticleKey 
       </section>
       <NextSteps locale={locale} pageKey={pageKey} />
       <section className="section research-basis">
-        <div><h2>{u.articleSources}</h2><p>{octoberKeys.includes(pageKey as typeof octoberKeys[number]) ? refresh[locale].sourceNote : u.evidenceChecked}</p></div>
-        <ul>{(octoberKeys.includes(pageKey as typeof octoberKeys[number]) ? refresh[locale].sources : researchBasis[locale]).map(source => <li key={source}>{source}</li>)}</ul>
+        <div><h2>{u.articleSources}</h2>{!sources && <p>{guideKeys.some(key => key === pageKey) ? refresh[locale].sourceNote : u.evidenceChecked}</p>}</div>
+        {sources ? <ul>{sources.map(([url, label]) => <li key={url}><a href={url}>{label}</a></li>)}</ul>
+          : <ul>{(guideKeys.some(key => key === pageKey) ? refresh[locale].sources : researchBasis[locale]).map(source => <li key={source}>{source}</li>)}</ul>}
       </section>
       <section className="section related-reading">
         <div className="section-heading"><span>{u.relatedReading}</span><h2>{t.pageLabels.articles.title}</h2></div>
@@ -397,21 +432,23 @@ function InteriorPage({ locale, pageKey }: { locale: Locale; pageKey: PageKey })
         <span className="eyebrow"><i />{t.badge}</span>
         <h1>{page.title}</h1>
         <p>{page.intro}</p>
+        {pageKey === "faq" && <a className="text-link" href="https://www.hacoo.app/">{entryContent[locale].labels.official}<ArrowUpRight aria-hidden="true" /></a>}
         {pageKey === "spreadsheet" && <SearchDesk locale={locale} compact />}
       </section>
 
+      {pageKey === "shipping" && <DeliveryEstimates locale={locale} />}
+      {pageKey === "spreadsheet" && <section className="section catalog-start">
+        <h2>{entryContent[locale].labels.browse}</h2>
+        <CategoryGrid locale={locale} limit={4} />
+        <ProductGrid locale={locale} />
+      </section>}
       <PageGuidance locale={locale} pageKey={pageKey} />
 
       {pageKey === "finds" && <section className="section"><ProductGrid locale={locale} /></section>}
       {pageKey === "categories" && <section className="section"><CategoryGrid locale={locale} /></section>}
       {pageKey === "faq" && <section className="section faq-page"><FaqList locale={locale} /></section>}
       {pageKey === "articles" && <section className="section"><ArticleCards locale={locale} /></section>}
-      {pageKey === "spreadsheet" && (
-        <>
-          <section className="section"><ProductGrid locale={locale} limit={4} /></section>
-          <Workflow locale={locale} />
-        </>
-      )}
+      {pageKey === "spreadsheet" && <Workflow locale={locale} />}
       {checklist && (
         <section className="section detail-layout">
           <div className="detail-icon"><DetailIcon aria-hidden="true" /></div>
@@ -457,7 +494,7 @@ export function SitePage({ locale, pageKey }: { locale: Locale; pageKey: PageKey
     headline: copy[locale].pageLabels[pageKey].title,
     description: copy[locale].pageLabels[pageKey].intro,
     datePublished: articleReleaseDates[pageKey] ?? "2026-08-27",
-    dateModified: ["articles/find-product-links", "articles/read-qc-photos"].includes(pageKey) ? contentRevision : articleReleaseDates[pageKey] ?? "2026-08-27",
+    dateModified: articleModified(locale, pageKey),
     inLanguage: locale,
     author: { "@type": "Organization", name: "Hacoos Research Desk" },
     publisher: { "@type": "Organization", name: "Hacoos" },

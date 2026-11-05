@@ -1,0 +1,60 @@
+{
+  "pages": {
+    "shipping": {
+      "title": "Wie lange liefert Hacoo? Lieferzeiten und Versandkosten nach Land",
+      "intro": "Lieferzeiten für Deutschland, Frankreich, Italien, Spanien und Großbritannien vergleichen. So prüfst du Versandkosten im Warenkorb und verfolgst dein Paket."
+    },
+    "spreadsheet": {
+      "title": "Hacoo Spreadsheet: Produktlinks nach ID und Kategorie finden",
+      "intro": "Schuhe, Hoodies und Taschen nach Kategorie durchsuchen. Mit der Produkt-ID einen Eintrag öffnen und die ausgewählte Variante prüfen."
+    },
+    "articles/find-product-links": {
+      "title": "Hacoo-Produktlink finden und die Artikel-ID prüfen",
+      "intro": "An einem konkreten Eintrag siehst du, wie du die Produkt-ID sicherst, das Linkziel prüfst und die richtige Farbe und Größe wiederfindest."
+    },
+    "faq": {
+      "title": "Hacoo-FAQ: offizielle Website, Produktlinks und Bestellungen",
+      "intro": "Hier geht es zur offiziellen Hacoo-Website und zu unabhängigen Antworten auf Fragen rund um Links, Versand, Größen und Rücksendungen."
+    }
+  },
+  "labels": {
+    "heading": "Voraussichtliche Lieferzeit nach Zielland",
+    "destination": "Zielland",
+    "estimate": "Geschätzte Zeit bis zum Erhalt",
+    "group": "Deutschland, Frankreich, Italien, Großbritannien",
+    "spain": "Spanien",
+    "others": "Weitere von Hacoo aufgeführte Ziele",
+    "days": "Tage",
+    "note": "Die Tabelle zeigt öffentliche Richtwerte. Gib deine Adresse ein und prüfe vor dem Bezahlen die Versandkosten und den Lieferzeitraum für deinen Warenkorb.",
+    "shippingSource": "Versandinformationen von Hacoo",
+    "helpSource": "EU-Hilfe von Hacoo zur Lieferzeit",
+    "official": "Offizielle Website von Hacoo",
+    "browse": "Nach Kategorie stöbern",
+    "updated": "Aktualisiert am 5. November 2026"
+  },
+  "examples": {
+    "articles/find-product-links": {
+      "heading": "Praxisbeispiel: zwei Nummern für einen Sneaker",
+      "paragraphs": [
+        "Beim MA-1-Sneaker steht in diesem Verzeichnis die Produkt-ID 7595683628. Die Katalogadresse endet hingegen auf /495.html. Speichere den vollständigen Link zusammen mit der langen ID. Die kurze Seitennummer kann in einem anderen Katalog zu einem ganz anderen Artikel führen.",
+        "Öffne den Eintrag und wähle die gewünschte Farbe und Größe. Vergleiche die Seitenansicht und das Größenetikett mit deiner Vorlage. Fehlt nur deine Größe, vermerke sie als ausverkauft oder nicht verfügbar, je nach Anzeige. Ein ähnlich aussehendes Paar bekommt einen eigenen Eintrag."
+      ]
+    },
+    "articles/read-qc-photos": {
+      "heading": "Ein Maßbandfoto mit eindeutigem Bezug",
+      "paragraphs": [
+        "Eine flach ausgelegte Kinder-Sweatjacke misst beispielsweise 41 cm von Achsel zu Achsel. Beide Endpunkte des Maßbands sollten auf demselben Foto zu sehen sein. Vergleiche die 41 cm mit der flachen Breite eines passenden Kleidungsstücks. Gibt die Tabelle den Umfang des Kleidungsstücks an, entsprechen sie ungefähr 82 cm. Der Brustumfang am Körper ist ein eigenes Maß."
+      ]
+    },
+    "articles/size-before-you-buy": {
+      "heading": "Wenn die Tabelle Kindergrößen aufführt",
+      "paragraphs": [
+        "8Y kann eine Altersgruppe bezeichnen und 128 eine Körpergröße in Zentimetern. Lies die Überschrift der Tabelle für die ausgewählte Variante. Kläre bei Schuhen, ob die Zentimeterangabe für den Fuß oder für die Einlegesohle gilt."
+      ]
+    }
+  },
+  "sizingSources": [
+    "Nike: Kinderfüße messen",
+    "Nike: Körpermaße für Kinderkleidung"
+  ]
+}

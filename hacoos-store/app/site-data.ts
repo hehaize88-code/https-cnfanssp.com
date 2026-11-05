@@ -1,4 +1,5 @@
-import { octoberContent } from "./october-content";
+import { entryContent } from "./entry-content";
+import { guideContent } from "./guide-content";
 import { refresh } from "./seo-refresh";
 export const locales = ["en", "de", "fr", "es", "it"] as const;
 export type Locale = (typeof locales)[number];
@@ -32,6 +33,8 @@ export const pageKeys = [
   "articles/hacoo-hoodie-tracksuit-links",
   "articles/hacoo-bag-links",
   "articles/hacoo-wrong-product-link",
+  "articles/hacoo-express-vs-standard-shipping",
+  "articles/hacoo-kids-size-guide",
   "articles/hacoo-order-tracking",
   "articles/hacoo-search-no-results",
   "articles/hacoo-returns-refunds",
@@ -173,7 +176,7 @@ export const copy: Record<Locale, Copy> = {
     viewAll: "View all checked finds",
     fieldNotes: "Field notes",
     pageLabels: {
-      ...Object.fromEntries(Object.entries(octoberContent.en).map(([key, item]) => [key, {title: item.title, intro: item.intro}])) as Pick<Copy["pageLabels"], keyof typeof octoberContent.en>,
+      ...Object.fromEntries(Object.entries(guideContent.en).map(([key, item]) => [key, {title: item.title, intro: item.intro}])) as Pick<Copy["pageLabels"], keyof typeof guideContent.en>,
       home: { title: "Hacoo Product Links & Spreadsheet 2026", intro: "Browse current Hacoo product links, verify product IDs and compare source images before opening a matching listing." },
       spreadsheet: { title: "Hacoo Product Link Spreadsheet: IDs & Route Checks", intro: "Use a searchable product-ID index to verify the current destination, first image, option and source price." },
       finds: { title: "Current Hacoo Product Link Checks", intro: "Source-matched routes with a current first image, product ID, source price and exact destination." },
@@ -305,7 +308,7 @@ for (const locale of ["de", "fr", "es", "it"] as const) {
 // Apply complete locale-specific metadata after the existing locale labels are assembled.
 for (const locale of locales) {
   const r = refresh[locale];
-  for (const [key, item] of Object.entries(octoberContent[locale])) {
+  for (const [key, item] of Object.entries(guideContent[locale])) {
     copy[locale].pageLabels[key as PageKey] = {title: item.title, intro: item.intro};
   }
   Object.assign(copy[locale].pageLabels, {
@@ -315,6 +318,7 @@ for (const locale of locales) {
     'articles/read-qc-photos': {title: r.qcArticleTitle, intro: r.qcArticleIntro},
     'articles/hacoo-codes-product-id-guide': {title: r.codesTitle, intro: r.codesIntro},
   });
+  Object.assign(copy[locale].pageLabels, entryContent[locale].pages);
   const home = {
     en: {title: 'Hacoo Spreadsheet & Product Links: IDs, QC and Shipping', intro: 'Find product IDs, compare listing options and read practical Hacoo guides for QC photos, delivery, tracking and returns.'},
     de: {title: 'Hacoo Spreadsheet und Produktlinks: IDs, QC und Versand', intro: 'Produkt-IDs finden, Varianten vergleichen und Hacoo-Ratgeber zu QC-Fotos, Lieferung, Tracking und Rückgaben lesen.'},
@@ -326,7 +330,7 @@ for (const locale of locales) {
   copy[locale].heroTitle = home.title;
   copy[locale].heroText = home.intro;
   copy[locale].badge = r.badge;
-  copy[locale].updated = r.updated;
+  copy[locale].updated = entryContent[locale].labels.updated;
   copy[locale].sourceChecked = r.productNote;
   copy[locale].findsText = r.catalogNote;
   copy[locale].faq[4][1] = r.shippingAnswer;

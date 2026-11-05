@@ -1,0 +1,60 @@
+{
+  "pages": {
+    "shipping": {
+      "title": "How Long Does Hacoo Take to Deliver? Times and Fees by Country",
+      "intro": "Compare estimated delivery times for the UK, France, Germany, Italy and Spain. Check the shipping fee in your basket and see where to track a dispatched parcel."
+    },
+    "spreadsheet": {
+      "title": "Hacoo Spreadsheet: Browse Product Links by ID or Category",
+      "intro": "Browse shoes, hoodies, bags and more. Search by product ID or compare an example listing, its selected option and its catalog reference."
+    },
+    "articles/find-product-links": {
+      "title": "How to Find a Hacoo Product Link and Check the Item ID",
+      "intro": "Follow one saved listing from a product ID to its destination. Check the selected colour and size before saving the link or looking for a replacement."
+    },
+    "faq": {
+      "title": "Hacoo FAQ: Official Website, Product Links and Order Help",
+      "intro": "Open the official Hacoo website or get independent answers about product links, shipping, sizing and returns."
+    }
+  },
+  "labels": {
+    "heading": "Estimated delivery by destination",
+    "destination": "Destination",
+    "estimate": "Estimated time to receive an order",
+    "group": "UK, France, Germany, Italy",
+    "spain": "Spain",
+    "others": "Other destinations listed by Hacoo",
+    "days": "days",
+    "note": "These are the public estimates. Enter your address and compare the delivery date and fee shown for your own basket before paying.",
+    "shippingSource": "Hacoo shipping and delivery",
+    "helpSource": "Hacoo EU delivery help",
+    "official": "Hacoo official website",
+    "browse": "Browse by category",
+    "updated": "Updated 5 November 2026"
+  },
+  "examples": {
+    "articles/find-product-links": {
+      "heading": "A worked example: a sneaker link with two different numbers",
+      "paragraphs": [
+        "The MA-1 sneaker card in this index shows product ID 7595683628. Its catalog URL ends in /495.html. Save the full link alongside the long ID. Searching the short page number in another catalog can take you to an entirely different item.",
+        "Open the listing, select the intended colour and size, then compare the side view and size label against the saved reference. If the listing shows the right shoe but no longer offers the intended size, record the size as unavailable. A similar pair found by description deserves its own entry."
+      ]
+    },
+    "articles/read-qc-photos": {
+      "heading": "A tape photo you can actually compare",
+      "paragraphs": [
+        "Suppose a sweatshirt measures 41 cm from armpit to armpit when laid flat. Photograph both ends of the tape in the same frame. Compare that 41 cm with the flat width of a garment that fits, or roughly 82 cm with a stated garment circumference. A body chest measurement answers a different question."
+      ]
+    },
+    "articles/size-before-you-buy": {
+      "heading": "When the size chart is for children",
+      "paragraphs": [
+        "A label such as 8Y can describe an age group while a number such as 128 can refer to height in centimetres. Read the heading on the selected listing. For shoes, check whether centimetres describe the foot or the insole before comparing a measurement."
+      ]
+    }
+  },
+  "sizingSources": [
+    "Nike: how to measure children’s feet",
+    "Nike: body measurements for children’s clothing"
+  ]
+}

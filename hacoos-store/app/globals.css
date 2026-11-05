@@ -597,3 +597,12 @@ footer { padding-top: 44px; }
 .next-steps svg { flex-shrink: 0; width: 18px; }
 .page-guidance { margin-top: 0; }
 @media(max-width: 700px) { .article-toc { padding: 1rem; margin-left: 1rem; margin-right: 1rem; } .article-toc ol, .next-steps > div { grid-template-columns: 1fr; } }
+
+.destination-estimates, .catalog-start { padding-block: clamp(1rem, 4vw, 3rem); }
+.destination-estimates table { width: 100%; max-width: 50rem; border-collapse: collapse; }
+.destination-estimates caption, .catalog-start h2 { text-align: start; font-size: clamp(1.3rem, 3vw, 2rem); font-weight: 700; margin-bottom: 1rem; }
+.destination-estimates th, .destination-estimates td { text-align: start; padding: .65rem .75rem; border-bottom: 1px solid #c7d0ca; }
+.destination-estimates thead { background: #e9eee9; }
+.destination-estimates p { max-width: 50rem; line-height: 1.55; }
+.destination-estimates a, .research-basis a { text-decoration: underline; text-underline-offset: .18em; }
+.catalog-start .category-grid { margin-bottom: 1.25rem; }

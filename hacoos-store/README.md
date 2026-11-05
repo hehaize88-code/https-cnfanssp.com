@@ -118,8 +118,10 @@ The timeout defaults can be overridden for a controlled canary with `SITES_INSTA
 
 The English, German, French, Spanish and Italian editions share the same 15-article inventory. New guides cover order tracking, empty app searches and returns/refunds. Shipping, QC and Spreadsheet pages use dedicated content and topic links. Article bodies render on the server; only navigation and analytics need client hydration.
 
-After `npm run build`, run `python3 scripts/verify-seo.py` to check the 120-page export, reciprocal hreflang, canonical URLs, heading structure, internal links, article inventories and USD-only visible prices. Homepage previews are limited to four articles; the article directory retains all fifteen per language.
+After `npm run build`, run `python3 scripts/verify-seo.py` to check the current static export, reciprocal hreflang, canonical URLs, heading structure, internal links, article inventories and USD-only visible prices. Homepage previews are limited to four articles; the article directory retains the full inventory per language.
 
 The external catalog origin is `https://cnfanshp.com`; search submits `keywords` and `channelid=2`. On 10 October 2026, all eight product cards were remapped to current catalog listings: each source product ID, destination and first image was verified together, and every image returned an image response with the site as referrer. USD reference prices follow the destination storefront conversion (source amount divided by its configured 7.26 rate). Never migrate catalog URLs by replacing only the domain: product paths and upload filenames differ between catalogs. Editorial revision dates do not represent inventory checks.
+
+As of 5 November 2026, each language has 17 articles, including express shipping and children’s sizing. The static export contains 130 indexable pages.
 
 Production uses branch `main`, project root `hacoos-store`, command `npm run build:pages`, output `dist/pages`, and build watch include path `hacoos-store/*` with no exclude paths.

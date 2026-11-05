@@ -1,0 +1,60 @@
+{
+  "pages": {
+    "shipping": {
+      "title": "Livraison Hacoo en France : délais, frais et suivi du colis",
+      "intro": "Comparez le délai annoncé en France et dans les autres pays, vérifiez les frais dans le panier et retrouvez le suivi après l’expédition."
+    },
+    "spreadsheet": {
+      "title": "Tableur Hacoo : liens produits par catégorie ou identifiant",
+      "intro": "Parcourez chaussures, sweats et sacs. Recherchez une référence produit, ouvrez sa fiche et vérifiez la variante dans le catalogue externe."
+    },
+    "articles/find-product-links": {
+      "title": "Comment trouver un lien produit Hacoo et vérifier sa référence",
+      "intro": "Suivez un exemple de fiche pour distinguer identifiant et adresse du catalogue, puis retrouver la couleur et la taille que vous aviez repérées."
+    },
+    "faq": {
+      "title": "FAQ Hacoo : site officiel, liens produits et commandes",
+      "intro": "Accédez au site officiel de Hacoo et retrouvez nos réponses indépendantes sur les liens, les tailles, la livraison et les retours."
+    }
+  },
+  "labels": {
+    "heading": "Délais indicatifs selon la destination",
+    "destination": "Destination",
+    "estimate": "Délai indicatif de réception",
+    "group": "France, Allemagne, Italie, Royaume-Uni",
+    "spain": "Espagne",
+    "others": "Autres destinations indiquées par Hacoo",
+    "days": "jours",
+    "note": "Ces fourchettes sont publiées à titre indicatif. Saisissez votre adresse pour vérifier le délai et les frais de votre panier avant de payer.",
+    "shippingSource": "Livraison et expédition chez Hacoo",
+    "helpSource": "Aide Hacoo Europe sur les délais",
+    "official": "Site officiel de Hacoo",
+    "browse": "Parcourir par catégorie",
+    "updated": "Mise à jour le 5 novembre 2026"
+  },
+  "examples": {
+    "articles/find-product-links": {
+      "heading": "Un exemple concret : deux numéros pour une paire de baskets",
+      "paragraphs": [
+        "Dans notre répertoire, la fiche des baskets MA-1 porte la référence 7595683628. Son adresse dans le catalogue se termine par /495.html. Conservez le lien complet avec la référence longue. Dans un autre catalogue, le numéro de page court peut mener à un article tout différent.",
+        "Ouvrez la fiche, choisissez le coloris et la pointure recherchés, puis comparez le profil et l’étiquette à votre référence. Si le modèle correspond mais que la pointure a disparu, notez cette indisponibilité. Enregistrez séparément toute paire similaire trouvée grâce à sa description."
+      ]
+    },
+    "articles/read-qc-photos": {
+      "heading": "Une photo de mesure que vous pouvez comparer",
+      "paragraphs": [
+        "Un sweat posé à plat mesure par exemple 41 cm d’une aisselle à l’autre. Demandez une photo où les deux extrémités du mètre sont visibles. Comparez ces 41 cm à la largeur à plat d’un sweat qui convient, ou environ 82 cm au tour du vêtement indiqué dans le tableau. Le tour de poitrine de l’enfant se mesure séparément."
+      ]
+    },
+    "articles/size-before-you-buy": {
+      "heading": "Quand le tableau concerne un enfant",
+      "paragraphs": [
+        "Une étiquette 8Y peut désigner un âge et 128 une stature en centimètres. Lisez l’intitulé de la colonne pour la variante choisie. Pour des chaussures, vérifiez si la longueur indiquée correspond au pied ou à la semelle intérieure."
+      ]
+    }
+  },
+  "sizingSources": [
+    "Nike : mesurer le pied d’un enfant",
+    "Nike : prendre les mesures pour les vêtements enfant"
+  ]
+}
