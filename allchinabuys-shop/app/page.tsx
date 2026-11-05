@@ -2,21 +2,22 @@ import type { Metadata } from "next";
 import SiteFooter from "./components/SiteFooter";
 import SiteHeader from "./components/SiteHeader";
 import {categories, products} from "./catalog";
+import { fieldGuides } from "./fieldGuides";
 import octoberArticles from "../content/october-articles.json";
 
 export const metadata: Metadata = {
-  title: "AllChinaBuy Spreadsheet 2026 | Shoes, Hoodies & Jerseys",
-  description: "Browse an updated AllChinaBuy spreadsheet and 14 practical guides for ACBuy finds, QC photos, order status, shipping costs and parcel tracking.",
+  title: "AllChinaBuy Spreadsheet | Shoes, Hoodies, Jerseys & QC",
+  description: "Compare shoe, hoodie and jersey listings, check a product link, and use the QC and shipping guides to plan your next step.",
   alternates: { canonical: "https://allchinabuys.shop/" },
   robots: { index: true, follow: true },
   openGraph: {
-    title: "AllChinaBuy Spreadsheet 2026 | ACBuy Finds",
-    description: "Curated ACBuy finds plus practical QC, shipping and tracking guides.",
+    title: "AllChinaBuy Spreadsheet | Shoes, Hoodies, Jerseys & QC",
+    description: "Compare shoe, hoodie and jersey listings, check a product link, and use the QC and shipping guides to plan your next step.",
     type: "website",
     url: "https://allchinabuys.shop/",
     images: [{ url: "/og.png", width: 1200, height: 630, alt: "AllChinaBuy Spreadsheet & Finds" }],
   },
-  twitter: { card: "summary_large_image", title: "AllChinaBuy Spreadsheet 2026", description: "Curated ACBuy finds plus practical QC, shipping and tracking guides.", images: ["/og.png"] },
+  twitter: { card: "summary_large_image", title: "AllChinaBuy Spreadsheet 2026", description: "Compare shoe, hoodie and jersey listings, check a product link, and use the QC and shipping guides to plan your next step.", images: ["/og.png"] },
 };
 
 const MAIN = "https://www.cnfanssp.com";
@@ -41,9 +42,9 @@ export default function Home() {
 
       <section className="hero" id="top">
         <div className="hero-copy">
-          <p className="eyebrow"><span>Reviewed 7 Oct 2026</span> Independent product index</p>
+          <p className="eyebrow"><span>Reviewed 5 Nov 2026</span> Independent product index</p>
           <h1>AllChinaBuy Spreadsheet<br/><em>Updated for 2026.</em></h1>
-          <p className="hero-lede">Browse cleaner AllChinaBuy and ACBuy finds, then use practical guides for listing checks, QC photos, order status, shipping costs and parcel tracking.</p>
+          <p className="hero-lede">Compare shoe, hoodie and jersey listings, check a product link, and use the QC and shipping guides to plan your next step.</p>
           <form className="search" action={`${MAIN}/search.html`} method="get" target="_blank">
             <label className="sr-only" htmlFor="product-search">Search products</label><span aria-hidden="true">⌕</span>
             <input id="product-search" name="keywords" data-search-input placeholder="Search shoes, hoodies, jerseys…" />
@@ -76,11 +77,12 @@ export default function Home() {
 
       <section className="section finds-section" id="finds">
         <div className="section-heading compact"><div><p className="section-kicker">02 / Selected finds</p><h2>A useful shortlist,<br/>not a wall of links.</h2></div><a className="text-link" href={`${MAIN}/AllProducts/`} target="_blank" rel="noopener noreferrer">Explore complete index ↗</a></div>
+        <p className="price-dateline">Seller prices checked 5 November 2026. Confirm the amount for your size and colour. Shipping is separate.</p>
         <div className="product-grid">
           {products.map((p, i) => (
             <a className="product-card" key={p.name} href={`${MAIN}${p.href}`} target="_blank" rel="noopener noreferrer">
               <div className="product-visual"><img src={p.image} alt={p.name}/><span className="product-number">{String(i + 1).padStart(2, "0")}</span><span className="view-pill">View listing ↗</span></div>
-              <div className="product-info"><span>{p.type}</span><h3>{p.name}</h3><p>{p.note}</p><small>Check current price & availability</small></div>
+              <div className="product-info"><span>{p.type}</span><h3>{p.name}</h3><p>{p.note}</p><small>{p.startingPrice ? "Starting price" : "Listed price"} · {p.price}</small></div>
             </a>
           ))}
         </div>
@@ -94,13 +96,13 @@ export default function Home() {
       <section className="section editorial-section">
         <div className="editorial-image"><img src="/og.png" alt="AllChinaBuy Spreadsheet editorial collage with parcel boxes, a hoodie, a sneaker, QC photos and a product grid" /></div>
         <div className="editorial-copy"><p className="section-kicker">Research desk</p><h2>Useful answers<br/>beyond the links.</h2><p>Product discovery is only the first step. These guides explain what to verify before ordering, what warehouse photos can show and why a shipping quote must be checked for the parcel you actually create.</p>
-          <div className="article-links">{Object.entries(octoberArticles).map(([slug, a])=><a href={`/articles/${slug}/`} key={slug}><span>{a.label}</span><b>{a.title}</b><i>Read guide</i></a>)}<a href="/articles/"><span>ALL GUIDES</span><b>Browse all 14 articles</b><i>Open article index</i></a></div>
+          <div className="article-links">{Object.entries({...fieldGuides, ...octoberArticles}).map(([slug, a])=><a href={`/articles/${slug}/`} key={slug}><span>{a.label}</span><b>{a.title}</b><i>Read guide</i></a>)}<a href="/articles/"><span>ALL GUIDES</span><b>Browse all 17 articles</b><i>Open article index</i></a></div>
         </div>
       </section>
 
       <section className="split-section" id="qc">
         <article className="qc-panel"><p className="section-kicker">QC desk</p><h2>Inspect before you ship.</h2><p>Use warehouse photos to review the received item. Look at the selected variant, visible condition, measurements and any detail you asked the agent to photograph.</p><div className="check-grid"><span>✓ Correct color</span><span>✓ Size label</span><span>✓ Visible condition</span><span>✓ Requested details</span></div><a href="/qc/">Open the QC checklist →</a></article>
-        <article className="shipping-panel" id="shipping"><p className="section-kicker">Shipping planner</p><h2>Estimate before submitting.</h2><p>International options depend on destination, parcel weight, dimensions and restrictions. Compare routes in the official calculator instead of relying on a fixed promise.</p><div className="parcel-line"><span>ITEMS</span><b>3</b><span>DESTINATION</span><b>Your country</b><span>QUOTE</span><b>Live</b></div><a href="/shipping/">Plan a parcel →</a></article>
+        <article className="shipping-panel" id="shipping"><p className="section-kicker">Shipping planner</p><h2>Estimate before submitting.</h2><p>International options depend on destination, parcel weight, dimensions and restrictions. Compare the packed dimensions with the weight rule on your saved quote.</p><div className="parcel-line"><span>ITEMS</span><b>3</b><span>DESTINATION</span><b>Your country</b><span>QUOTE</span><b>Estimate</b></div><a href="/shipping/">Plan a parcel →</a> <a href="/articles/allchinabuy-tracking-order-parcel-status/">Read your last tracking update →</a></article>
       </section>
 
       <section className="section faq-section" id="faq">

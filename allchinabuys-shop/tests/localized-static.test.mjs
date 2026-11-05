@@ -11,8 +11,8 @@ const slugs=files.filter(f=>f.isDirectory()).map(f=>f.name);
 const routes=['/','/spreadsheet/','/finds/','/guide/','/qc/','/shipping/','/faq/','/articles/',...slugs.map(s=>`/articles/${s}/`)];
 const loc=(l,r)=>l==='en'?r:`/${l}${r}`;
 const get=(l,r)=>readFile(path.join(root,loc(l,r),'index.html'),'utf8');
-test('all 132 localized pages retain full content, canonical and reciprocal alternates',async()=>{
- assert.equal(slugs.length,14);assert.equal(routes.length,22);
+test('all 150 localized pages retain full content, canonical and reciprocal alternates',async()=>{
+ assert.equal(slugs.length,17);assert.equal(routes.length,25);
  for(const route of routes){
   const english=await get('en',route);
   for(const lang of langs){
@@ -25,7 +25,10 @@ test('all 132 localized pages retain full content, canonical and reciprocal alte
    }
    assert.ok(html.includes(`hreflang="x-default" href="${base}${route}"`));
    assert.equal((html.match(/<h2\b/g)||[]).length,(english.match(/<h2\b/g)||[]).length,`${lang}${route}: headings`);
-   assert.equal((html.match(/<p\b/g)||[]).length,(english.match(/<p\b/g)||[]).length,`${lang}${route}: paragraphs`);
+   if (english.includes('data-native-guide=')) {
+    assert.ok((html.match(/<p\b/g) || []).length >= 12, `${lang}${route}: full native guide`);
+    assert.ok(html.includes('<table'), `${lang}${route}: worked example`);
+   } else assert.equal((html.match(/<p\b/g)||[]).length,(english.match(/<p\b/g)||[]).length,`${lang}${route}: paragraphs`);
    assert.equal((html.match(/<img\b/g)||[]).length,(english.match(/<img\b/g)||[]).length,`${lang}${route}: images`);
    assert.doesNotMatch(html,/__VINEXT_RSC|translate_a\/element|googtrans|google_translate_element/);
    if(lang!=='en')assert.notEqual(html.match(/<title>(.*?)<\/title>/s)?.[1],english.match(/<title>(.*?)<\/title>/s)?.[1]);
@@ -37,13 +40,27 @@ test('all 132 localized pages retain full content, canonical and reciprocal alte
   }
  }
 });
-test('every language has fourteen articles and only the existing main-site commercial destination',async()=>{
+test('every language has seventeen articles and only the existing main-site commercial destination',async()=>{
  for(const l of langs){
-  const hub=await get(l,'/articles/');assert.equal((hub.match(/class="articles-index-card"/g)||[]).length,14);
+  const hub=await get(l,'/articles/');assert.equal((hub.match(/class="articles-index-card"/g)||[]).length,17);
   const home=await get(l,'/');assert.ok(home.includes('action="https://www.cnfanssp.com/search.html"'));assert.ok(home.includes('name="channelid" value="2"'));
-  for(const r of routes){const h=await get(l,r);for(const [,url] of h.matchAll(/<a[^>]+href="(https?:\/\/[^\"]+)"/g))assert.equal(new URL(url.replaceAll('&amp;','&')).hostname,'www.cnfanssp.com');}
+  const sources = new Set(['www.allchinabuy.com', 'm.allchinabuy.com', 'weidian.com', 'faq-in.uniqlo.com', 'uk.express.dhl.com', 'dct.dhl.com', 'si.ups.com']);
+  for (const route of routes) {
+   const html = await get(l, route);
+   for (const [tag, url] of html.matchAll(/<a\b[^>]*?href="(https?:\/\/[^"]+)"[^>]*>/g)) {
+    const host = new URL(url.replaceAll('&amp;', '&')).hostname;
+    if (tag.includes('data-citation="true"')) assert.ok(sources.has(host), url);
+    else assert.equal(host, 'www.cnfanssp.com');
+   }
+   if (route === '/faq/') {
+    const schema = [...html.matchAll(/<script type="application\/ld\+json">(.*?)<\/script>/gs)].map(m => JSON.parse(m[1])).find(x => x['@type'] === 'FAQPage');
+    assert.equal(schema.mainEntity.length, 20);
+    assert.equal((html.match(/<article id="part-/g) || []).length, 20);
+   }
+   if (route.startsWith('/articles/') && route !== '/articles/') assert.match(html, /data-native-guide=|data-worksheet=/);
+  }
  }
- const sm=await readFile(path.join(root,'sitemap.xml'),'utf8');assert.equal((sm.match(/<loc>/g)||[]).length,132);
+ const sm=await readFile(path.join(root,'sitemap.xml'),'utf8');assert.equal((sm.match(/<loc>/g)||[]).length,150);
  assert.doesNotMatch(sm,/404|\.seo|content\/locales/);
- const js=await readFile(path.join(root,'site.js'),'utf8');assert.match(js,/product_search/);assert.match(js,/outbound_click/);
+ const js=await readFile(path.join(root,'site.js'),'utf8');assert.match(js,/product_search/);assert.match(js,/outbound_click/);assert.match(js,/product_click/);assert.match(js,/category_click/);
 });

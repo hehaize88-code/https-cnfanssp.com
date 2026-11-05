@@ -44,7 +44,7 @@ def textval(n):return ''.join(c.text or '' for c in n.children if c.text is not 
 def meaningful(s):return bool(re.search('[A-Za-z]',s)) and s.strip() not in KEEP_NAMES and not s.strip().startswith(('https://','http://','/'))
 def fields(root):
  def walk(n,hidden=False,language=False):
-  hidden=hidden or n.tag in ('script','style','code')
+  hidden=hidden or n.tag in ('script','style','code') or 'data-native-guide' in n.attrs or 'data-worksheet' in n.attrs
   language=language or 'data-language-switcher' in n.attrs
   if n.text is not None:
    if not hidden and not language and meaningful(n.text.strip()):yield n,'text',n.text.strip()
@@ -92,7 +92,15 @@ def publish():
  if args.extract:print(f'Extracted {len(keys)} strings from {len(records)} English pages');return
  dictionaries={lang:json.loads((loc/(lang+'.json')).read_text()) for lang in LANGS if lang!='en'}
  overrides=json.loads((loc/'overrides.json').read_text())
- for lang in dictionaries:dictionaries[lang].update(overrides.get(lang,{}))
+ guides=json.loads((ROOT/'content/field-guides/index.json').read_text())
+ worksheets=json.loads((ROOT/'content/guide-worksheets.json').read_text())
+ faqs=json.loads((ROOT/'content/faq-additions.json').read_text())
+ for lang, dictionary in dictionaries.items():
+  for faq in faqs:
+   dictionary.update({value:faq[lang][key] for key,value in faq['en'].items()})
+  dictionary.update(overrides.get(lang,{}))
+  for guide in guides.values():
+   dictionary.update({value:guide[lang][key] for key,value in guide['en'].items()})
  missing={lang:[k for k in keys if not dic.get(k)] for lang,dic in dictionaries.items()}
  if any(missing.values()):raise SystemExit('Incomplete translations: '+str({l:len(v) for l,v in missing.items()}))
  known_routes={route for _,route,_ in records}
@@ -115,6 +123,16 @@ def publish():
     if k=='text':
      lead=n.text[:len(n.text)-len(n.text.lstrip())];tail=n.text[len(n.text.rstrip()):];n.text=lead+val+tail
     else:n.attrs[k]=val
+   # Long-form features and decision tables have reviewed, independently written locale copies.
+   for n in root.walk():
+    if 'data-native-guide' in n.attrs:
+     n.children=read(ROOT/'content/field-guides'/n.attrs['data-native-guide']/(lang+'.html')).children
+    if 'data-worksheet' in n.attrs:
+     sheet=worksheets[n.attrs['data-worksheet']][lang]
+     cells=[x for x in n.walk() if x.tag in ('h2','p','th','td')]
+     values=[sheet['heading'],sheet['intro'],*sheet['columns'],*(v for row in sheet['rows'] for v in row)]
+     if len(cells)!=len(values):raise ValueError(f"Mismatched worksheet in {lang}: {route}")
+     for cell,value in zip(cells,values):cell.children=[Node(text=value)]
    head=next(n for n in root.walk() if n.tag=='head')
    head.children=[n for n in head.children if not (n.tag=='link' and n.attrs.get('rel') in ('canonical','alternate'))]
    head.children.append(Node('link',[('rel','canonical'),('href',BASE+locale_url(lang,route))]))
@@ -140,7 +158,7 @@ def publish():
  sm=ET.Element('{http://www.sitemaps.org/schemas/sitemap/0.9}urlset')
  for route in sorted(known_routes):
   for lang in LANGS:
-   url=ET.SubElement(sm,'{http://www.sitemaps.org/schemas/sitemap/0.9}url');ET.SubElement(url,'{http://www.sitemaps.org/schemas/sitemap/0.9}loc').text=BASE+locale_url(lang,route);ET.SubElement(url,'{http://www.sitemaps.org/schemas/sitemap/0.9}lastmod').text='2026-10-07'
+   url=ET.SubElement(sm,'{http://www.sitemaps.org/schemas/sitemap/0.9}url');ET.SubElement(url,'{http://www.sitemaps.org/schemas/sitemap/0.9}loc').text=BASE+locale_url(lang,route);ET.SubElement(url,'{http://www.sitemaps.org/schemas/sitemap/0.9}lastmod').text='2026-11-05'
    for alt in [*LANGS,'x-default']:ET.SubElement(url,'{http://www.w3.org/1999/xhtml}link',{'rel':'alternate','hreflang':alt,'href':BASE+locale_url('en' if alt=='x-default' else alt,route)})
  ET.ElementTree(sm).write(OUT/'sitemap.xml',encoding='utf-8',xml_declaration=True)
  # English 404 stays noindex and contains no React hydration or translation widget.

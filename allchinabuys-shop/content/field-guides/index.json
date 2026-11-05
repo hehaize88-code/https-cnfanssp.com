@@ -1,0 +1,116 @@
+{
+  "allchinabuy-spreadsheet-links-not-working": {
+    "en": {
+      "title": "AllChinaBuy Spreadsheet Links Not Working? A Product URL Checklist",
+      "seoTitle": "AllChinaBuy Spreadsheet Links Not Working? Check the URL",
+      "summary": "Trace a spreadsheet link to the seller, check the item number and size, and decide whether to keep or replace the listing.",
+      "label": "Product links"
+    },
+    "de": {
+      "title": "AllChinaBuy-Spreadsheet-Link funktioniert nicht? So prüfst du die Produktadresse",
+      "seoTitle": "AllChinaBuy-Links defekt? So prüfst du die Produkt-URL",
+      "summary": "Verfolge den Link bis zum Verkäufer, prüfe Artikelnummer und Größe und entscheide, ob der Eintrag noch passt.",
+      "label": "Produktlinks"
+    },
+    "fr": {
+      "title": "Un lien du spreadsheet AllChinaBuy ne fonctionne plus ? Comment vérifier l’adresse du produit",
+      "seoTitle": "Lien AllChinaBuy en panne ? Vérifier l’URL du produit",
+      "summary": "Retrouvez la fiche du vendeur, vérifiez la référence et la taille, puis décidez si le lien mérite d’être conservé.",
+      "label": "Liens produit"
+    },
+    "es": {
+      "title": "¿No funciona un enlace del spreadsheet de AllChinaBuy? Cómo comprobar la URL del producto",
+      "seoTitle": "Enlaces de AllChinaBuy que no abren: revisa la URL",
+      "summary": "Sigue el enlace hasta la ficha del vendedor, comprueba la referencia y la talla y decide si conviene conservarlo.",
+      "label": "Enlaces de productos"
+    },
+    "pl": {
+      "title": "Link z arkusza AllChinaBuy nie działa? Jak sprawdzić adres produktu",
+      "seoTitle": "Link AllChinaBuy nie działa? Sprawdź adres produktu",
+      "summary": "Przejdź z arkusza do oferty sprzedawcy, sprawdź numer produktu i rozmiar, a następnie zdecyduj, czy zachować link.",
+      "label": "Linki do produktów"
+    },
+    "ja": {
+      "title": "AllChinaBuyのスプレッドシートのリンクが開かないときに確認すること",
+      "seoTitle": "AllChinaBuyのリンクが開かないときの商品URL確認方法",
+      "summary": "一覧のリンクから販売元の商品ページをたどり、商品番号とサイズを照合して、リンクを残すか差し替えるか判断します。",
+      "label": "商品リンク"
+    }
+  },
+  "allchinabuy-jacket-finds-sizing-qc": {
+    "en": {
+      "title": "AllChinaBuy Jacket Finds: Sizing, Weight and QC Checklist",
+      "seoTitle": "AllChinaBuy Jacket Finds: Sizing, Weight & QC Photos",
+      "summary": "Compare jacket links by seller option, flat measurements and the layers you plan to wear. Use this jacket spreadsheet checklist to read QC photos and plan for the packed parcel.",
+      "label": "Jacket finds"
+    },
+    "de": {
+      "title": "AllChinaBuy-Jacken finden: Größen, Gewicht und QC-Fotos prüfen",
+      "seoTitle": "AllChinaBuy-Jacken: Maße, Gewicht und QC-Fotos",
+      "summary": "Vergleiche Jacken anhand der konkreten Angebotsvariante, der flach gemessenen Maße und der Kleidung, die du darunter tragen möchtest. Die folgende Checkliste hilft bei der Auswahl, der Sichtprüfung und der Versandplanung.",
+      "label": "Jackenauswahl"
+    },
+    "fr": {
+      "title": "Trouver une veste sur AllChinaBuy : tailles, poids et contrôle photo",
+      "seoTitle": "Vestes AllChinaBuy : mesures, poids et photos QC",
+      "summary": "Comparez des vestes à partir de la variante du vendeur, des mesures du vêtement à plat et des couches que vous porterez dessous. Cette fiche vous aide à choisir une taille, à lire les photos de contrôle et à préparer l’estimation du colis.",
+      "label": "Sélection de vestes"
+    },
+    "es": {
+      "title": "Chaquetas en AllChinaBuy: cómo comparar tallas, peso y fotos de control",
+      "seoTitle": "Chaquetas AllChinaBuy: medidas, peso y fotos de control",
+      "summary": "Compara las chaquetas a partir de la variante del vendedor, las medidas de la prenda en plano y la ropa que llevarás debajo. Usa esta guía para interpretar las fotos de control de calidad y preparar el cálculo del envío.",
+      "label": "Selección de chaquetas"
+    },
+    "pl": {
+      "title": "Kurtki w zestawieniu AllChinaBuy: jak sprawdzić rozmiar, wagę i zdjęcia QC",
+      "seoTitle": "Kurtki AllChinaBuy: wymiary, waga i zdjęcia QC",
+      "summary": "Porównuj konkretne warianty kurtek, ich wymiary na płasko i miejsce na warstwy odzieży. Poniższe wskazówki pomogą Ci dobrać rozmiar, ocenić zdjęcia kontrolne i oszacować koszt przesyłki po zapakowaniu.",
+      "label": "Wybór kurtek"
+    },
+    "ja": {
+      "title": "AllChinaBuyでジャケットを探すには｜サイズ・重量・検品写真のチェック項目",
+      "seoTitle": "AllChinaBuyのジャケット選び｜寸法・重量・検品写真",
+      "summary": "ジャケットを比較するときは、販売ページの選択肢、平置き寸法、中に着る服の三つをそろえます。候補の絞り方から、検品写真の読み方、梱包後の送料を見積もる手順までを紹介します。",
+      "label": "ジャケット選び"
+    }
+  },
+  "allchinabuy-shipping-estimate-vs-final-cost": {
+    "en": {
+      "title": "AllChinaBuy Shipping Estimate vs Final Cost: What Changed?",
+      "seoTitle": "AllChinaBuy Shipping Estimate vs Final Cost",
+      "summary": "Compare your saved AllChinaBuy shipping estimate with the final parcel charge, line by line. Two worked examples show how a larger carton or a small change in scale weight can change the amount due.",
+      "label": "Freight comparison"
+    },
+    "de": {
+      "title": "AllChinaBuy-Versandkosten: Kostenschätzung und Endabrechnung vergleichen",
+      "seoTitle": "AllChinaBuy: Versandkostenschätzung und Endbetrag",
+      "summary": "So gleichen Sie eine gespeicherte AllChinaBuy-Versandschätzung mit der späteren Paketabrechnung ab. Zwei Rechenbeispiele zeigen, wie ein höherer Karton oder wenige Gramm zusätzliches Gewicht den Rechnungsbetrag verändern.",
+      "label": "Frachtkostenvergleich"
+    },
+    "fr": {
+      "title": "Frais de port AllChinaBuy : de l’estimation au montant facturé",
+      "seoTitle": "AllChinaBuy : estimation et coût final de livraison",
+      "summary": "Comparez votre estimation AllChinaBuy au décompte final du colis, poste par poste. Deux exemples chiffrés montrent comment la hauteur du carton ou quelques grammes de plus peuvent changer le montant à payer.",
+      "label": "Comparaison des frais de port"
+    },
+    "es": {
+      "title": "Envíos de AllChinaBuy: cómo comparar el coste estimado con el importe final",
+      "seoTitle": "AllChinaBuy: estimación y coste final del envío",
+      "summary": "Compara tu estimación de envío de AllChinaBuy con el desglose final del paquete. Dos ejemplos muestran cómo cambian los cargos al aumentar la altura de la caja o al superar por unos gramos un tramo de peso.",
+      "label": "Comparación de portes"
+    },
+    "pl": {
+      "title": "Koszt wysyłki AllChinaBuy: jak porównać wycenę z rozliczeniem paczki",
+      "seoTitle": "AllChinaBuy: szacowany i końcowy koszt wysyłki",
+      "summary": "Porównaj zapisaną wycenę wysyłki AllChinaBuy z końcowym rozliczeniem, pozycja po pozycji. Dwa przykłady pokazują, jak wyższy karton lub kilka dodatkowych gramów może zmienić należność.",
+      "label": "Porównanie kosztów wysyłki"
+    },
+    "ja": {
+      "title": "AllChinaBuyの送料見積もりと最終請求額を照合する方法",
+      "seoTitle": "AllChinaBuyの見積送料と確定送料の違い",
+      "summary": "保存しておいたAllChinaBuyの送料見積もりと、梱包後の明細を一項目ずつ照らし合わせます。箱が高くなった場合と、実重量がわずかに増えた場合の二つの計算例で、どこで金額が変わるかを確認できます。",
+      "label": "送料の比較"
+    }
+  }
+}

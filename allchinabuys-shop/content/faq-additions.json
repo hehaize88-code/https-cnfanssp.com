@@ -1,0 +1,262 @@
+[
+  {
+    "en": {
+      "question": "Can I tell whether a jacket is in stock from its spreadsheet card?",
+      "answer": "Open the seller’s listing and select the colour and size you want. Check the availability shown for that combination and record the date. A working link alone tells you only that the page can be opened."
+    },
+    "de": {
+      "question": "Woran erkenne ich, ob eine Jacke in meiner Größe verfügbar ist?",
+      "answer": "Öffne das Angebot des Verkäufers und wähle Farbe und Größe aus. Prüfe den Bestand für genau diese Kombination und notiere das Datum. Ein funktionierender Link bestätigt lediglich, dass sich die Seite öffnen lässt."
+    },
+    "fr": {
+      "question": "Comment vérifier le stock d’une veste repérée dans le tableau ?",
+      "answer": "Ouvrez l’annonce du vendeur et sélectionnez la couleur et la taille voulues. Vérifiez la disponibilité pour cette combinaison et notez la date. Un lien qui s’ouvre indique seulement que la page est accessible."
+    },
+    "es": {
+      "question": "¿Cómo compruebo si hay existencias de una chaqueta del listado?",
+      "answer": "Abre la ficha del vendedor y elige el color y la talla. Comprueba la disponibilidad de esa combinación y anota la fecha. Un enlace que funciona solo indica que puedes abrir la página."
+    },
+    "pl": {
+      "question": "Jak sprawdzić dostępność kurtki znalezionej w zestawieniu?",
+      "answer": "Otwórz ofertę sprzedawcy, wybierz kolor i rozmiar, a potem sprawdź dostępność tej kombinacji. Zapisz datę. Działający link potwierdza jedynie, że stronę można otworzyć."
+    },
+    "ja": {
+      "question": "一覧のジャケットの在庫はどう確認しますか？",
+      "answer": "販売元のページで欲しい色とサイズを選び、その組み合わせの在庫表示と確認日を記録します。リンクを開けるだけでは、希望のサイズを注文できるかは分かりません。"
+    }
+  },
+  {
+    "en": {
+      "question": "Which details identify the exact SKU I selected?",
+      "answer": "Save the seller’s item ID, the option code if displayed, the original option text, its thumbnail and the selected price. A single item ID can contain several colours, sizes or sets with different contents."
+    },
+    "de": {
+      "question": "Welche Angaben kennzeichnen die gewählte Variante genau?",
+      "answer": "Speichere die Artikelnummer, den angezeigten Variantencode, die ursprüngliche Optionsbezeichnung, das Vorschaubild und den Preis nach der Auswahl. Unter einer Artikelnummer können mehrere Farben, Größen oder Sets mit unterschiedlichem Inhalt angeboten werden."
+    },
+    "fr": {
+      "question": "Quelles informations permettent de retrouver la variante exacte ?",
+      "answer": "Conservez le numéro d’article, le code de la variante s’il apparaît, son libellé d’origine, sa vignette et le prix après sélection. Un même article peut regrouper plusieurs tailles, couleurs ou ensembles au contenu différent."
+    },
+    "es": {
+      "question": "¿Qué datos identifican la variante exacta que he elegido?",
+      "answer": "Guarda el identificador del artículo, el código de opción si aparece, su nombre original, la miniatura y el precio tras seleccionarla. Un mismo anuncio puede agrupar colores, tallas o conjuntos con contenido diferente."
+    },
+    "pl": {
+      "question": "Jak zapisać dokładny wariant produktu?",
+      "answer": "Zachowaj numer produktu, kod wariantu, jeśli jest widoczny, oryginalny opis opcji, jej miniaturę i cenę po wybraniu. Jeden numer produktu może obejmować kilka kolorów, rozmiarów lub zestawów o różnej zawartości."
+    },
+    "ja": {
+      "question": "選んだSKUを特定するには何を保存しますか？",
+      "answer": "販売元の商品ID、表示されていれば選択肢のコード、選択肢の原文、画像、選択後の価格を保存します。同じ商品IDの中に複数の色、サイズ、内容の異なるセットが含まれることがあります。"
+    }
+  },
+  {
+    "en": {
+      "question": "What should I check when an old spreadsheet link stops opening?",
+      "answer": "Find the original marketplace URL or item ID in your saved record. Check whether the seller page opens, whether it shows the same item, and whether only the agent link is unavailable. Record the message before looking for a replacement."
+    },
+    "de": {
+      "question": "Was prüfe ich, wenn ein alter Spreadsheet-Link nicht mehr funktioniert?",
+      "answer": "Suche in deinen Notizen die ursprüngliche Marktplatzadresse oder Artikelnummer. Prüfe, ob sich das Verkäuferangebot öffnet, ob es denselben Artikel zeigt und ob nur der Agentenlink ausfällt. Sichere die Fehlermeldung, bevor du nach Ersatz suchst."
+    },
+    "fr": {
+      "question": "Que vérifier lorsqu’un ancien lien du tableau ne s’ouvre plus ?",
+      "answer": "Retrouvez dans vos notes l’adresse d’origine sur la place de marché ou le numéro d’article. Vérifiez si l’annonce du vendeur s’ouvre, si elle montre toujours le même produit et si seul le lien de l’intermédiaire pose problème. Notez le message affiché."
+    },
+    "es": {
+      "question": "¿Qué reviso si un enlace antiguo del listado deja de abrirse?",
+      "answer": "Busca en tus notas el enlace original del mercado o el identificador del producto. Comprueba si se abre la ficha del vendedor, si sigue mostrando el mismo artículo y si el fallo se limita al enlace del agente. Guarda el mensaje antes de buscar otra opción."
+    },
+    "pl": {
+      "question": "Co sprawdzić, gdy stary link z arkusza przestaje działać?",
+      "answer": "Odszukaj pierwotny adres na platformie sprzedażowej lub numer produktu. Sprawdź, czy otwiera się oferta sprzedawcy, czy nadal dotyczy tego samego artykułu oraz czy problem występuje wyłącznie w linku pośrednika. Zapisz treść komunikatu."
+    },
+    "ja": {
+      "question": "リストにある古いリンクを開けないときは何を確認しますか？",
+      "answer": "メモから販売元のURLや商品IDを探します。販売ページを開けるか、同じ商品が表示されるか、代行サイトへのリンクだけで問題が起きるかを順に確認してください。代わりを探す前に画面のメッセージも控えます。"
+    }
+  },
+  {
+    "en": {
+      "question": "Why do two jacket cards show the same Weidian item number?",
+      "answer": "The cards may point to one listing with several options. Open the destination and compare the selected variant and its image. Treat the cards as one lead unless the seller page identifies distinct options."
+    },
+    "de": {
+      "question": "Warum zeigen zwei Jackenkarten dieselbe Weidian-Artikelnummer?",
+      "answer": "Beide können auf ein Angebot mit mehreren Varianten verweisen. Öffne das Ziel und gleiche die ausgewählte Option mit ihrem Bild ab. Führe die Karten zusammen, bis unterschiedliche Varianten im Verkäuferangebot erkennbar sind."
+    },
+    "fr": {
+      "question": "Pourquoi deux fiches de veste portent-elles le même numéro Weidian ?",
+      "answer": "Elles peuvent renvoyer à une annonce présentant plusieurs variantes. Ouvrez la destination et comparez l’option sélectionnée et sa photo. Regroupez les fiches tant que la page du vendeur ne permet pas de distinguer les options."
+    },
+    "es": {
+      "question": "¿Por qué dos fichas de chaqueta tienen el mismo número de Weidian?",
+      "answer": "Pueden llevar al mismo anuncio con varias opciones. Abre la página y compara la variante seleccionada y su imagen. Agrupa las fichas hasta que puedas distinguir opciones diferentes en la página del vendedor."
+    },
+    "pl": {
+      "question": "Dlaczego dwie karty kurtek mają ten sam numer Weidian?",
+      "answer": "Mogą prowadzić do jednej oferty obejmującej kilka wariantów. Otwórz stronę docelową i porównaj zaznaczoną opcję oraz jej zdjęcie. Połącz karty w jeden wpis, dopóki sprzedawca nie pokazuje wyraźnie różnych wariantów."
+    },
+    "ja": {
+      "question": "ジャケットのカードが2枚あるのにWeidianの商品番号が同じなのはなぜですか？",
+      "answer": "複数の選択肢がある一つの出品ページを参照している可能性があります。販売元で選択肢と画像を照合し、異なる仕様を特定できるまでは同じ出品として扱います。"
+    }
+  },
+  {
+    "en": {
+      "question": "How do I compare a flat jacket width with a chest measurement?",
+      "answer": "First establish whether the chart describes the garment or the wearer. If chest means the circumference of the finished jacket, half that value is its approximate flat width. Compare with a closed reference jacket measured between the same underarm points."
+    },
+    "de": {
+      "question": "Wie vergleiche ich die flache Brustweite mit einer Umfangsangabe?",
+      "answer": "Kläre zuerst, ob die Tabelle die Person oder das fertige Kleidungsstück beschreibt. Der halbe Umfang der fertigen Jacke entspricht ungefähr der einfachen Brustweite. Miss deine geschlossene Referenzjacke zwischen denselben Punkten unter den Achseln."
+    },
+    "fr": {
+      "question": "Comment comparer une largeur à plat avec un tour de poitrine ?",
+      "answer": "Vérifiez d’abord si le tableau décrit le vêtement ou la personne. La moitié du tour de la veste finie correspond approximativement à sa largeur à plat. Comparez avec une veste fermée mesurée entre les mêmes points sous les aisselles."
+    },
+    "es": {
+      "question": "¿Cómo comparo el ancho en plano de una chaqueta con un contorno de pecho?",
+      "answer": "Averigua si la tabla describe la prenda o el cuerpo. La mitad del contorno de la chaqueta acabada equivale aproximadamente a su ancho en plano. Compara con una chaqueta cerrada medida entre los mismos puntos bajo las axilas."
+    },
+    "pl": {
+      "question": "Jak porównać szerokość kurtki pod pachami z podanym obwodem?",
+      "answer": "Ustal, czy tabela opisuje ubranie, czy ciało osoby. Połowa obwodu gotowej kurtki to w przybliżeniu jej szerokość na płasko. Zapnij własną kurtkę i zmierz odległość między tymi samymi punktami pod pachami."
+    },
+    "ja": {
+      "question": "平置きの身幅とサイズ表の胸囲はどう比べますか？",
+      "answer": "まず表が服の仕上がり寸法と身体寸法のどちらを示すか確認します。服の一周寸法なら、その半分が平置き幅のおおよその目安です。手持ちのジャケットも前を閉じ、同じ脇下の位置で測って比べます。"
+    }
+  },
+  {
+    "en": {
+      "question": "Why can the final shipping quote exceed my first estimate?",
+      "answer": "Compare the packed scale weight, outer dimensions, route and included charges in both quotes. A larger box may change the billable weight. Ask which input or charge changed and keep the dated breakdown before making a payment decision."
+    },
+    "de": {
+      "question": "Warum kann der endgültige Versandpreis höher ausfallen als die erste Schätzung?",
+      "answer": "Vergleiche Paketgewicht, Außenmaße, Versandlinie und enthaltene Gebühren in beiden Angeboten. Ein größerer Karton kann das Abrechnungsgewicht erhöhen. Lass dir geänderte Angaben und Gebühren aufschlüsseln und sichere die Aufstellung mit Datum."
+    },
+    "fr": {
+      "question": "Pourquoi le devis final peut-il dépasser l’estimation initiale ?",
+      "answer": "Comparez le poids du colis emballé, ses dimensions extérieures, la ligne et les frais inclus dans les deux devis. Une boîte plus grande peut modifier le poids facturable. Demandez quelle donnée ou quel frais a changé et conservez le détail daté."
+    },
+    "es": {
+      "question": "¿Por qué puede subir el importe final del envío?",
+      "answer": "Compara el peso del paquete preparado, sus medidas exteriores, la ruta y los cargos de ambos presupuestos. Una caja más grande puede elevar el peso facturable. Pide que indiquen qué dato o cargo cambió y conserva el desglose con la fecha."
+    },
+    "pl": {
+      "question": "Dlaczego ostateczna wycena przesyłki może być wyższa?",
+      "answer": "Porównaj wagę zapakowanej paczki, wymiary zewnętrzne, wybraną trasę i opłaty w obu wycenach. Większy karton może zmienić wagę rozliczeniową. Zapytaj, jaki parametr lub opłata się zmieniły, i zachowaj zestawienie z datą."
+    },
+    "ja": {
+      "question": "最終的な送料が最初の見積もりより高くなる理由は何ですか？",
+      "answer": "梱包後の実重量、箱の外寸、配送ルート、含まれる費用を二つの見積もりで照合します。箱が大きくなると料金計算の基準重量が変わる場合があります。変更された数値や費用を確認し、日付入りの内訳を残してください。"
+    }
+  },
+  {
+    "en": {
+      "question": "How can I compare two packing proposals for the same jacket?",
+      "answer": "Keep the destination, contents and route constant. Compare the proposed outer dimensions and total weight, then check whether both options protect rigid or delicate parts. Ask for a fresh quote if any of these inputs changes."
+    },
+    "de": {
+      "question": "Wie vergleiche ich zwei Verpackungsvorschläge für dieselbe Jacke?",
+      "answer": "Vergleiche bei gleichem Inhalt, Ziel und Versandtarif die vorgeschlagenen Außenmaße und das Gesamtgewicht. Prüfe, ob beide Lösungen feste oder empfindliche Teile schützen. Ändert sich eine Angabe, bitte um eine neue Berechnung."
+    },
+    "fr": {
+      "question": "Comment comparer deux solutions d’emballage pour la même veste ?",
+      "answer": "Gardez la même destination, le même contenu et la même ligne de transport. Comparez dimensions extérieures et poids total, puis vérifiez la protection des pièces rigides ou fragiles. Demandez un nouveau devis en cas de changement."
+    },
+    "es": {
+      "question": "¿Cómo comparo dos opciones de embalaje para la misma chaqueta?",
+      "answer": "Mantén el mismo destino, contenido y ruta. Compara dimensiones exteriores y peso total, y comprueba que ambas opciones protejan las piezas rígidas o delicadas. Pide una nueva cotización si cambia algún dato."
+    },
+    "pl": {
+      "question": "Jak porównać dwa sposoby zapakowania tej samej kurtki?",
+      "answer": "Zachowaj ten sam adres docelowy, zawartość i trasę. Porównaj wymiary zewnętrzne i wagę całkowitą obu paczek. Sprawdź ochronę delikatnych lub sztywnych elementów i poproś o nową wycenę, jeśli dane się zmieniły."
+    },
+    "ja": {
+      "question": "同じジャケットの梱包案を二つ比べるには？",
+      "answer": "宛先、中身、配送ルートをそろえて、外寸と梱包込みの総重量を比べます。硬い部品や傷みやすい装飾をどちらでも保護できるかも確認します。条件が変わったら見積もりを取り直してください。"
+    }
+  },
+  {
+    "en": {
+      "question": "What should I save if the website shows a maintenance notice during my order?",
+      "answer": "Keep the order or parcel reference, the last confirmed event and timestamp, the payment receipt and any carrier tracking number. Contact support through the official notice with one specific question about the outstanding step."
+    },
+    "de": {
+      "question": "Welche Unterlagen brauche ich, wenn die Website während meiner Bestellung gewartet wird?",
+      "answer": "Sichere Bestell- oder Paketnummer, letzten bestätigten Bearbeitungsschritt mit Datum, Zahlungsbeleg und gegebenenfalls die Sendungsnummer. Nutze den Kontakt im offiziellen Wartungshinweis und frage gezielt nach dem noch offenen Schritt."
+    },
+    "fr": {
+      "question": "Quels justificatifs conserver si le site est en maintenance pendant ma commande ?",
+      "answer": "Conservez la référence de commande ou de colis, le dernier événement confirmé et son horodatage, le reçu et le numéro de suivi éventuel. Utilisez le contact indiqué dans l’avis officiel pour poser une question précise sur l’étape en attente."
+    },
+    "es": {
+      "question": "¿Qué guardo si el sitio entra en mantenimiento mientras tengo un pedido?",
+      "answer": "Conserva la referencia del pedido o del paquete, el último evento confirmado con su fecha, el justificante de pago y el número de seguimiento si lo tienes. Usa el contacto del aviso oficial para preguntar por el paso concreto que falta."
+    },
+    "pl": {
+      "question": "Co zachować, gdy w trakcie realizacji zamówienia pojawi się komunikat o konserwacji?",
+      "answer": "Zapisz numer zamówienia lub paczki, ostatni potwierdzony etap z datą i godziną, dowód płatności oraz numer śledzenia, jeśli go masz. Skontaktuj się z obsługą wskazaną w oficjalnym komunikacie i zapytaj o konkretny nierozstrzygnięty etap."
+    },
+    "ja": {
+      "question": "注文中にメンテナンス告知が出たら何を保存すればよいですか？",
+      "answer": "注文番号または荷物の管理番号、最後に確認できた処理とその日時、支払い記録、発行済みなら配送会社の追跡番号を保存します。公式告知の窓口で、保留中の手続きについて具体的に問い合わせてください。"
+    }
+  },
+  {
+    "en": {
+      "question": "Which number goes into the carrier’s tracking page?",
+      "answer": "Use the tracking number issued for that shipment by the named carrier. A marketplace order ID and a warehouse item reference identify other stages. If you have only those references, ask which carrier and tracking number belong to the parcel."
+    },
+    "de": {
+      "question": "Welche Nummer gebe ich bei der Sendungsverfolgung des Zustellers ein?",
+      "answer": "Verwende die vom genannten Transportdienst für die Sendung vergebene Nummer. Bestellnummer des Marktplatzes und Lagerreferenz gehören zu anderen Vorgängen. Falls dir nur diese vorliegen, frage nach Zusteller und Sendungsnummer für das konkrete Paket."
+    },
+    "fr": {
+      "question": "Quel numéro saisir sur la page de suivi du transporteur ?",
+      "answer": "Utilisez le numéro de suivi attribué à cet envoi par le transporteur indiqué. La référence de commande et celle de l’article en entrepôt désignent d’autres étapes. Si vous n’avez que ces références, demandez le nom du transporteur et le numéro de suivi du colis."
+    },
+    "es": {
+      "question": "¿Qué número introduzco en el seguimiento del transportista?",
+      "answer": "Usa el número de seguimiento que el transportista indicado haya asignado a ese envío. El identificador de compra y la referencia del almacén corresponden a otras etapas. Si solo tienes estos datos, solicita el transportista y el número de seguimiento del paquete."
+    },
+    "pl": {
+      "question": "Który numer wpisać na stronie śledzenia przewoźnika?",
+      "answer": "Użyj numeru śledzenia nadanego konkretnej przesyłce przez wskazanego przewoźnika. Numer zamówienia na platformie i numer magazynowy dotyczą innych etapów. Jeśli masz tylko te dane, zapytaj o przewoźnika i numer śledzenia paczki."
+    },
+    "ja": {
+      "question": "配送会社の追跡ページにはどの番号を入力しますか？",
+      "answer": "その配送会社が対象の荷物に発行した追跡番号を使います。販売元の注文番号や倉庫の商品管理番号は別の段階の記録です。それしか手元にない場合は、該当荷物の配送会社名と追跡番号を確認してください。"
+    }
+  },
+  {
+    "en": {
+      "question": "What does “label created” mean when tracking has not moved?",
+      "answer": "Read the original carrier message and its time. Creating a label records shipment information and can precede physical handover. Look for the carrier’s acceptance scan. If an expected milestone passes, ask the sender to confirm handover."
+    },
+    "de": {
+      "question": "Was bedeutet „Versandetikett erstellt“, wenn sich im Tracking nichts ändert?",
+      "answer": "Lies die Originalmeldung des Transportdienstes mit Datum und Uhrzeit. Die Etiketterstellung erfasst Versanddaten und kann vor der Übergabe erfolgen. Achte auf den Annahmescan. Bleibt ein erwarteter Schritt aus, bitte den Absender um Bestätigung der Übergabe."
+    },
+    "fr": {
+      "question": "Que signifie « étiquette créée » lorsque le suivi ne bouge plus ?",
+      "answer": "Vérifiez le message d’origine du transporteur et son horodatage. La création de l’étiquette enregistre les données d’envoi et peut précéder la remise physique. Cherchez le scan de prise en charge. Si une échéance prévue est dépassée, demandez à l’expéditeur de confirmer la remise."
+    },
+    "es": {
+      "question": "¿Qué significa «etiqueta creada» si el seguimiento no avanza?",
+      "answer": "Lee el mensaje original del transportista y su fecha. Crear la etiqueta registra los datos del envío y puede ocurrir antes de entregar físicamente el paquete. Busca el escaneo de admisión. Si pasa un hito previsto, pide al remitente que confirme la entrega al transportista."
+    },
+    "pl": {
+      "question": "Co oznacza „utworzono etykietę”, gdy śledzenie stoi w miejscu?",
+      "answer": "Sprawdź treść i godzinę komunikatu przewoźnika. Utworzenie etykiety rejestruje dane przesyłki i może poprzedzać jej fizyczne przekazanie. Szukaj skanu przyjęcia. Jeśli oczekiwany etap już minął, zapytaj nadawcę o potwierdzenie przekazania."
+    },
+    "ja": {
+      "question": "追跡が「ラベル作成」のままなのはどういう意味ですか？",
+      "answer": "配送会社の原文と日時を確認します。ラベルの作成は発送情報を登録する段階で、荷物を実際に引き渡す前に行われる場合があります。配送会社の引受記録を探し、予定の段階を過ぎたら差出人に引き渡しを確認してください。"
+    }
+  }
+]

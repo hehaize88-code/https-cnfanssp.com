@@ -14,7 +14,7 @@ export type ArticleEntry = {
 const newArticles: Record<string, ArticleEntry> = {
   "allchinabuy-tracking-order-parcel-status": {
     title: "AllChinaBuy Tracking: How to Read Order and Parcel Status",
-    seoTitle: "AllChinaBuy Tracking: Order & Parcel Status Guide",
+    seoTitle: "AllChinaBuy Tracking Not Updating? Read Your Last Parcel Scan",
     dek: "Understand seller dispatch, warehouse arrival, parcel handoff and international tracking without confusing an order number with a parcel number.",
     date: "September 9, 2026",
     dateISO: "2026-09-09",

@@ -2,7 +2,11 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import SiteFooter from "../components/SiteFooter";
 import SiteHeader from "../components/SiteHeader";
+import GuideLinks from "../components/GuideLinks";
+import { linkGuide, jacketGuide, freightGuide } from "../fieldGuides";
 import ProductCatalog from "../components/ProductCatalog";
+
+import faqAdditions from "../../content/faq-additions.json";
 
 const MAIN = "https://www.cnfanssp.com";
 type InfoPage = { eyebrow: string; title: string; intro: string; color: string; keywords: string[]; blocks: { title: string; text: string }[] };
@@ -67,6 +71,7 @@ const pages: Record<string, InfoPage> = {
     { title: "Can every item be returned or exchanged?", text: "No universal promise is safe. Eligibility can depend on seller policy, marketplace, product condition, timing and service type. AllChinaBuy's goods notice specifically states that purchases from used-item platforms such as Xianyu or unverifiable third-party platforms may involve an extra service fee and may not be eligible for return or exchange. Review the current order-specific terms before payment and act promptly after warehouse inspection." },
     { title: "How do I estimate shipping cost?", text: "Use the official freight calculator with the correct destination and realistic weight, then compare the live parcel options after warehouse measurements are available. Include possible volumetric weight, packing choices and route restrictions. There is no fixed global price per kilogram that safely describes every parcel. The final quote and available lines must come from the current submission interface." },
     { title: "Does a shipping estimate guarantee delivery time?", text: "No. Displayed transit ranges are planning estimates. Export handling, flight capacity, peak seasons, customs and last-mile delivery can cause variation. Compare routes on restrictions, tracking and current terms as well as speed. Keep parcel records and use official tracking. If a parcel records an exception or exceeds its expected range, contact support with the exact parcel number and last event." },
+    ...faqAdditions.map(({ en }) => ({ title: en.question, text: en.answer })),
   ]},
 };
 
@@ -96,7 +101,8 @@ export default async function InformationPage({ params }: { params: Promise<{ sl
     <SiteHeader />
     <section className="info-hero"><p className="section-kicker">{page.eyebrow}</p><h1>{page.title}</h1><p>{page.intro}</p></section>
     {["spreadsheet","finds"].includes(slug) && <ProductCatalog/>}
-    <section className="info-body"><aside><span>ON THIS PAGE</span>{page.blocks.map((b, i)=><a href={`#part-${i}`} key={b.title}>{String(i+1).padStart(2,"0")} {b.title}</a>)}</aside><div className="info-blocks">{page.blocks.map((b,i)=><article id={`part-${i}`} key={b.title}><span>{String(i+1).padStart(2,"0")}</span><h2>{b.title}</h2><p>{b.text}</p></article>)}<div className="research-note"><b>Research standard</b><p>Historical workflow references: AllChinaBuy public guidance reviewed in August 2026. Status rechecked 7 October 2026: the official homepage displayed maintenance. These explanations do not confirm current account access, storage extensions, payment options or route availability.</p></div></div></section>
+    <GuideLinks slugs={slug === "shipping" ? [freightGuide] : slug === "qc" ? [jacketGuide, linkGuide] : slug === "finds" ? [jacketGuide, linkGuide] : [linkGuide, freightGuide]}/>
+    <section className="info-body"><aside><span>ON THIS PAGE</span>{page.blocks.map((b, i)=><a href={`#part-${i}`} key={b.title}>{String(i+1).padStart(2,"0")} {b.title}</a>)}</aside><div className="info-blocks">{page.blocks.map((b,i)=><article id={`part-${i}`} key={b.title}><span>{String(i+1).padStart(2,"0")}</span><h2>{b.title}</h2><p>{b.text}</p></article>)}<div className="research-note"><b>Research standard</b><p>The official homepage still showed a maintenance notice on 5 November 2026. For an existing order, check its last recorded event and the contact details on the official notice.</p></div></div></section>
     <section className="info-cta"><div><p className="section-kicker">Continue browsing</p><h2>Use the guide, then check the live listing.</h2></div><a href={`${MAIN}/AllProducts/`} target="_blank" rel="noopener noreferrer">Open product index ↗</a></section>
     <SiteFooter />
   </main>;

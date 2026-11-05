@@ -1,0 +1,1878 @@
+{
+  "allchinabuy-website-maintenance-order-checks": {
+    "en": {
+      "heading": "Contact support with the right reference",
+      "intro": "On 5 November 2026 the official homepage still displayed the maintenance notice observed on 7 October. It directed order enquiries to customer service and gave no reopening date. Open the contact button on that official page and choose one specific question below.",
+      "columns": [
+        "Last record you hold",
+        "What to ask"
+      ],
+      "rows": [
+        [
+          "Payment receipt only",
+          "Give the payment reference, date and amount. Ask which order received the payment before attempting another checkout."
+        ],
+        [
+          "Warehouse intake record",
+          "Give the item reference and intake date. Ask for the recorded storage deadline and the options available for that item."
+        ],
+        [
+          "Carrier acceptance scan",
+          "Give the parcel reference, carrier number and last scan. Ask whether the next update should come from the carrier or from order support."
+        ]
+      ]
+    },
+    "de": {
+      "heading": "Mit der passenden Referenz beim Support nachfragen",
+      "intro": "Am 5. November 2026 zeigte die offizielle Startseite weiterhin den Wartungshinweis vom 7. Oktober. Sie verwies bei Bestellfragen an den Kundendienst und nannte keinen Termin für die Wiedereröffnung. Öffne die Kontaktfunktion auf der offiziellen Seite und stelle eine konkrete Frage.",
+      "columns": [
+        "Letzter vorhandener Beleg",
+        "Passende Frage"
+      ],
+      "rows": [
+        [
+          "Nur Zahlungsbeleg",
+          "Nenne Zahlungsreferenz, Datum und Betrag. Frage vor einem weiteren Kaufversuch, welcher Bestellung die Zahlung zugeordnet wurde."
+        ],
+        [
+          "Wareneingangsbeleg",
+          "Nenne Artikelreferenz und Eingangsdatum. Frage nach der hinterlegten Lagerfrist und den Möglichkeiten für diesen Artikel."
+        ],
+        [
+          "Übernahmescan des Paketdienstes",
+          "Nenne Paketreferenz, Sendungsnummer und letzten Scan. Frage, ob die nächste Auskunft vom Paketdienst oder vom Bestellservice kommen sollte."
+        ]
+      ]
+    },
+    "fr": {
+      "heading": "Contacter le service client avec la bonne référence",
+      "intro": "Le 5 novembre 2026, la page d’accueil officielle affichait toujours l’avis de maintenance relevé le 7 octobre. Elle orientait les questions sur les commandes vers le service client, sans indiquer de date de réouverture. Ouvrez le bouton de contact de cette page et formulez une demande précise.",
+      "columns": [
+        "Dernier justificatif disponible",
+        "Question à poser"
+      ],
+      "rows": [
+        [
+          "Reçu de paiement uniquement",
+          "Indiquez la référence du paiement, la date et le montant. Demandez à quelle commande ce paiement a été affecté avant toute nouvelle tentative."
+        ],
+        [
+          "Confirmation de réception en entrepôt",
+          "Indiquez la référence de l’article et sa date d’entrée. Demandez la date limite de stockage enregistrée et les options disponibles pour cet article."
+        ],
+        [
+          "Scan de prise en charge par le transporteur",
+          "Indiquez la référence du colis, le numéro de suivi et le dernier scan. Demandez qui doit fournir la prochaine information, le transporteur ou le service client."
+        ]
+      ]
+    },
+    "es": {
+      "heading": "Contactar con atención al cliente con la referencia adecuada",
+      "intro": "El 5 de noviembre de 2026, la página oficial seguía mostrando el aviso de mantenimiento observado el 7 de octubre. Remitía las consultas sobre pedidos a atención al cliente y no indicaba una fecha de reapertura. Abre el botón de contacto en esa página y plantea una pregunta concreta.",
+      "columns": [
+        "Último justificante disponible",
+        "Qué preguntar"
+      ],
+      "rows": [
+        [
+          "Solo un recibo de pago",
+          "Indica la referencia, la fecha y el importe del pago. Antes de volver a pagar, pregunta a qué pedido se asignó la operación."
+        ],
+        [
+          "Registro de entrada en almacén",
+          "Indica la referencia del artículo y la fecha de entrada. Solicita el plazo de almacenamiento registrado y las opciones que se aplican a esa unidad."
+        ],
+        [
+          "Escaneo de recogida del transportista",
+          "Indica la referencia del paquete, el número de seguimiento y el último escaneo. Pregunta si corresponde consultar al transportista o a atención al cliente."
+        ]
+      ]
+    },
+    "pl": {
+      "heading": "Jaką referencję podać obsłudze klienta",
+      "intro": "5 listopada 2026 r. oficjalna strona główna nadal wyświetlała komunikat o pracach serwisowych odnotowany 7 października. W sprawach zamówień odsyłała do obsługi klienta i nie podawała daty wznowienia działania. Użyj przycisku kontaktu na tej stronie i zadaj konkretne pytanie.",
+      "columns": [
+        "Ostatni dostępny dokument",
+        "O co zapytać"
+      ],
+      "rows": [
+        [
+          "Tylko potwierdzenie płatności",
+          "Podaj identyfikator płatności, datę i kwotę. Zanim zapłacisz ponownie, zapytaj, do którego zamówienia przypisano wpłatę."
+        ],
+        [
+          "Potwierdzenie przyjęcia do magazynu",
+          "Podaj identyfikator artykułu i datę przyjęcia. Zapytaj o zapisany termin przechowywania oraz dostępne opcje dla tej sztuki."
+        ],
+        [
+          "Skan przyjęcia przez przewoźnika",
+          "Podaj identyfikator paczki, numer śledzenia i ostatni skan. Zapytaj, czy kolejnej informacji udzieli przewoźnik, czy obsługa zamówień."
+        ]
+      ]
+    },
+    "ja": {
+      "heading": "手元の記録に合わせた問い合わせ方",
+      "intro": "2026年11月5日に公式トップページを確認したところ、10月7日に確認したメンテナンスのお知らせが引き続き掲載されていました。注文に関する問い合わせ先はカスタマーサービスで、再開日の記載はありません。公式ページの問い合わせボタンから、手元の記録に合わせて質問します。",
+      "columns": [
+        "最後に確認できた記録",
+        "問い合わせる内容"
+      ],
+      "rows": [
+        [
+          "決済の控えのみ",
+          "決済番号、日付、金額を伝えます。再度支払う前に、どの注文に入金が反映されたか確認します。"
+        ],
+        [
+          "倉庫の入庫記録",
+          "商品管理番号と入庫日を伝え、その商品に登録されている保管期限と選べる対応を尋ねます。"
+        ],
+        [
+          "配送業者の引受スキャン",
+          "荷物の管理番号、配送業者の追跡番号、最後のスキャンを伝え、次は配送業者と注文窓口のどちらに確認すべきか尋ねます。"
+        ]
+      ]
+    }
+  },
+  "allchinabuy-shoes-spreadsheet-sizing-qc": {
+    "en": {
+      "heading": "Read the length on a shoe listing",
+      "intro": "Copy the unit and the label next to a length. Compare like with like before choosing between two sizes.",
+      "columns": [
+        "Listing measurement",
+        "Useful comparison"
+      ],
+      "rows": [
+        [
+          "Foot length",
+          "Measure the longer foot from heel to longest toe. Use the seller’s foot-length range for that model."
+        ],
+        [
+          "Removable insole length",
+          "Compare with an insole from a similar pair that fits. Photograph both endpoints if the tape starts above zero."
+        ],
+        [
+          "Outsole length",
+          "Use it to compare external dimensions or packing. Ask for the seller’s size chart before deciding fit."
+        ]
+      ]
+    },
+    "de": {
+      "heading": "Längenangaben bei Schuhen richtig lesen",
+      "intro": "Notiere neben dem Maß auch Einheit und Bezeichnung. Vergleiche bei der Größenwahl jeweils dieselbe Messart.",
+      "columns": [
+        "Maß im Angebot",
+        "Passender Vergleich"
+      ],
+      "rows": [
+        [
+          "Fußlänge",
+          "Miss den längeren Fuß von der Ferse bis zur längsten Zehe. Verwende die Fußlängenspanne des Händlers für dieses Modell."
+        ],
+        [
+          "Länge der herausnehmbaren Einlegesohle",
+          "Vergleiche mit der Einlegesohle eines ähnlichen, gut passenden Schuhs. Liegt der erste Messpunkt oberhalb der Nullmarke, sollten beide Endpunkte auf dem Foto sichtbar sein."
+        ],
+        [
+          "Außensohlenlänge",
+          "Nutze sie für Außenmaße oder Verpackungsfragen. Bitte für die Größenwahl um die Größentabelle des Händlers."
+        ]
+      ]
+    },
+    "fr": {
+      "heading": "Comprendre la longueur indiquée pour une chaussure",
+      "intro": "Recopiez l’unité et le libellé à côté de la longueur. Comparez le même type de mesure avant de choisir entre deux pointures.",
+      "columns": [
+        "Mesure annoncée",
+        "Comparaison pertinente"
+      ],
+      "rows": [
+        [
+          "Longueur du pied",
+          "Mesurez le pied le plus long, du talon au bout de l’orteil le plus long. Utilisez la plage indiquée par le vendeur pour ce modèle."
+        ],
+        [
+          "Longueur de la semelle intérieure amovible",
+          "Comparez avec celle d’une paire similaire qui vous va. Si la mesure commence après le zéro du mètre, demandez une photo des deux extrémités."
+        ],
+        [
+          "Longueur de la semelle extérieure",
+          "Utilisez-la pour les dimensions extérieures ou l’emballage. Demandez le guide des pointures du vendeur pour choisir la taille."
+        ]
+      ]
+    },
+    "es": {
+      "heading": "Interpretar las medidas de un anuncio de calzado",
+      "intro": "Copia la unidad y el nombre de cada medida. Compara medidas equivalentes antes de elegir entre dos tallas.",
+      "columns": [
+        "Medida del anuncio",
+        "Comparación útil"
+      ],
+      "rows": [
+        [
+          "Longitud del pie",
+          "Mide el pie más largo desde el talón hasta el extremo del dedo más largo. Consulta el intervalo del vendedor para ese modelo."
+        ],
+        [
+          "Longitud de la plantilla extraíble",
+          "Compárala con la plantilla de un par similar que te quede bien. Si la cinta empieza después del cero, pide una foto donde se vean ambos extremos."
+        ],
+        [
+          "Longitud de la suela exterior",
+          "Úsala para comparar dimensiones externas o embalaje. Pide la tabla de tallas del vendedor para decidir el ajuste."
+        ]
+      ]
+    },
+    "pl": {
+      "heading": "Jak odczytać długość w ofercie butów",
+      "intro": "Przepisz jednostkę i nazwę miary. Przy wyborze między dwoma rozmiarami zestawiaj ten sam rodzaj pomiaru.",
+      "columns": [
+        "Miara w ofercie",
+        "Z czym porównać"
+      ],
+      "rows": [
+        [
+          "Długość stopy",
+          "Zmierz dłuższą stopę od pięty do końca najdłuższego palca. Sprawdź zakres długości stopy podany przez sprzedawcę dla danego modelu."
+        ],
+        [
+          "Długość wyjmowanej wkładki",
+          "Porównaj ją z wkładką podobnych, dobrze dopasowanych butów. Jeśli pomiar zaczyna się powyżej zera, poproś o zdjęcie obu końców miarki."
+        ],
+        [
+          "Długość podeszwy zewnętrznej",
+          "Przydaje się do oceny gabarytów i opakowania. Do wyboru rozmiaru poproś o tabelę sprzedawcy."
+        ]
+      ]
+    },
+    "ja": {
+      "heading": "靴の商品ページで長さの意味を見分ける",
+      "intro": "長さだけでなく単位と項目名も控えます。二つのサイズで迷うときは、同じ箇所の寸法を比べます。",
+      "columns": [
+        "掲載されている寸法",
+        "比較方法"
+      ],
+      "rows": [
+        [
+          "足長",
+          "左右のうち大きい足を、かかとから最も長い指の先まで測ります。そのモデルの販売店の足長表と照合します。"
+        ],
+        [
+          "取り外せる中敷きの長さ",
+          "履き心地のよい似た靴の中敷きと比べます。目盛りの途中から測っている場合は、両端が写る写真を頼みます。"
+        ],
+        [
+          "アウトソールの長さ",
+          "外寸や梱包の比較に使います。履き心地を判断するには販売店のサイズ表を確認します。"
+        ]
+      ]
+    }
+  },
+  "allchinabuy-football-jerseys-sizing-details": {
+    "en": {
+      "heading": "Proofread a customised jersey before dispatch",
+      "intro": "Keep a copy of the exact option and personalisation text. Check the order record first, then use straight-on photos of the received shirt.",
+      "columns": [
+        "Detail",
+        "What to compare"
+      ],
+      "rows": [
+        [
+          "Back print",
+          "Match spelling, accents, spaces and number to the text you entered. Save the seller’s reply about any unsupported character."
+        ],
+        [
+          "Sleeve patches",
+          "Specify the player’s left or right sleeve. Check both sleeves in a single photo so the orientation is clear."
+        ],
+        [
+          "Kit contents",
+          "List shirt, shorts and socks separately. Compare each received piece and its size label with the selected bundle."
+        ]
+      ]
+    },
+    "de": {
+      "heading": "Beflockung und Ausstattung vor dem Versand prüfen",
+      "intro": "Speichere die gewählte Variante und den genauen Wunschtext. Prüfe zuerst die Bestellung und danach frontale Aufnahmen des gelieferten Trikots.",
+      "columns": [
+        "Detail",
+        "Was zu vergleichen ist"
+      ],
+      "rows": [
+        [
+          "Rückenaufdruck",
+          "Vergleiche Schreibweise, Akzente, Leerzeichen und Nummer mit deiner Eingabe. Speichere die Antwort des Händlers zu nicht unterstützten Zeichen."
+        ],
+        [
+          "Ärmelabzeichen",
+          "Gib den linken oder rechten Ärmel aus Sicht des Spielers an. Auf einem Foto mit beiden Ärmeln lässt sich die Seite eindeutig erkennen."
+        ],
+        [
+          "Lieferumfang",
+          "Führe Trikot, Hose und Stutzen einzeln auf. Vergleiche jedes gelieferte Teil samt Größenetikett mit dem gewählten Set."
+        ]
+      ]
+    },
+    "fr": {
+      "heading": "Relire la personnalisation d’un maillot avant l’envoi",
+      "intro": "Conservez la variante exacte et le texte saisi. Vérifiez le bon de commande, puis des photos de face et de dos du maillot reçu.",
+      "columns": [
+        "Détail",
+        "Vérification"
+      ],
+      "rows": [
+        [
+          "Flocage au dos",
+          "Comparez orthographe, accents, espaces et numéro avec votre saisie. Gardez la réponse du vendeur si un caractère pose problème."
+        ],
+        [
+          "Écussons des manches",
+          "Précisez la gauche ou la droite du joueur qui porte le maillot. Demandez une photo montrant les deux manches pour lever toute ambiguïté."
+        ],
+        [
+          "Composition du kit",
+          "Détaillez maillot, short et chaussettes. Comparez chaque pièce reçue et son étiquette de taille avec le lot choisi."
+        ]
+      ]
+    },
+    "es": {
+      "heading": "Revisar una camiseta personalizada antes del envío",
+      "intro": "Guarda la variante exacta y el texto de personalización. Comprueba primero el pedido y después las fotos de frente y de espalda de la prenda recibida.",
+      "columns": [
+        "Detalle",
+        "Qué comparar"
+      ],
+      "rows": [
+        [
+          "Estampado trasero",
+          "Comprueba ortografía, tildes, espacios y dorsal frente al texto introducido. Guarda la respuesta del vendedor sobre cualquier carácter incompatible."
+        ],
+        [
+          "Parches de las mangas",
+          "Especifica izquierda o derecha desde la perspectiva de quien lleva la camiseta. Pide una foto con ambas mangas para verificar la posición."
+        ],
+        [
+          "Contenido del conjunto",
+          "Enumera camiseta, pantalón corto y medias por separado. Compara cada pieza recibida y su etiqueta de talla con el lote elegido."
+        ]
+      ]
+    },
+    "pl": {
+      "heading": "Sprawdź personalizację koszulki przed wysyłką",
+      "intro": "Zachowaj wybrany wariant i dokładny tekst nadruku. Najpierw sprawdź zamówienie, a następnie zdjęcia otrzymanej koszulki wykonane na wprost.",
+      "columns": [
+        "Element",
+        "Co porównać"
+      ],
+      "rows": [
+        [
+          "Nadruk na plecach",
+          "Porównaj pisownię, znaki diakrytyczne, odstępy i numer z wpisanym tekstem. Zachowaj odpowiedź sprzedawcy dotyczącą niedostępnych znaków."
+        ],
+        [
+          "Naszywki na rękawach",
+          "Wskaż lewy lub prawy rękaw z perspektywy zawodnika. Poproś o zdjęcie obu rękawów w jednym kadrze."
+        ],
+        [
+          "Skład zestawu",
+          "Wypisz oddzielnie koszulkę, spodenki i getry. Porównaj każdą otrzymaną część i jej metkę rozmiaru z wybranym zestawem."
+        ]
+      ]
+    },
+    "ja": {
+      "heading": "発送前にユニフォームの名入れを照合する",
+      "intro": "選んだ仕様と入力した文字列を保存します。注文記録を確認してから、届いたユニフォームを正面と背面から撮った写真と照らし合わせます。",
+      "columns": [
+        "確認する箇所",
+        "照合する内容"
+      ],
+      "rows": [
+        [
+          "背中のプリント",
+          "綴り、アクセント記号、空白、背番号を入力内容と比較します。使えない文字がある場合は販売店の回答を保存します。"
+        ],
+        [
+          "袖のワッペン",
+          "着用者から見た左右を指定します。両袖が一緒に写った写真なら位置を確認できます。"
+        ],
+        [
+          "セットの内訳",
+          "シャツ、パンツ、ソックスを個別に記録します。届いた各品とサイズタグを選択したセット内容と比べます。"
+        ]
+      ]
+    }
+  },
+  "allchinabuy-hoodies-measurements-fit-qc": {
+    "en": {
+      "heading": "Compare two hoodies with different cuts",
+      "intro": "Lay a favourite hoodie flat and close the zip if it has one. Ask for the same measurement path on the candidate garment.",
+      "columns": [
+        "Fit question",
+        "Measurement to request"
+      ],
+      "rows": [
+        [
+          "Will the chest feel roomy?",
+          "Measure straight across just below the armholes with the fabric relaxed. Compare flat widths in centimetres."
+        ],
+        [
+          "Where will the hem sit?",
+          "Measure from the high point of the shoulder to the hem, including the ribbed band. Record whether the listing uses a different starting point."
+        ],
+        [
+          "Will the sleeves reach?",
+          "For dropped shoulders or raglan sleeves, measure from centre back neck to cuff on both garments. A seam-to-cuff length alone leaves out the shoulder."
+        ]
+      ]
+    },
+    "de": {
+      "heading": "Zwei Hoodies mit verschiedenem Schnitt vergleichen",
+      "intro": "Lege einen gut passenden Hoodie flach hin und schließe einen vorhandenen Reißverschluss. Bitte beim anderen Modell um denselben Messweg.",
+      "columns": [
+        "Frage zur Passform",
+        "Benötigtes Maß"
+      ],
+      "rows": [
+        [
+          "Wie weit ist die Brust?",
+          "Miss bei locker liegendem Stoff direkt unter den Armlöchern quer von Kante zu Kante. Vergleiche die flachen Breiten in Zentimetern."
+        ],
+        [
+          "Wo endet der Saum?",
+          "Miss vom höchsten Schulterpunkt bis zur Saumkante einschließlich Bündchen. Notiere einen abweichenden Startpunkt im Angebot."
+        ],
+        [
+          "Reichen die Ärmel?",
+          "Miss bei überschnittener Schulter oder Raglan an beiden Teilen von der hinteren Halsmitte bis zur Bündchenkante. Die Länge ab Ärmelnaht lässt die Schulter aus."
+        ]
+      ]
+    },
+    "fr": {
+      "heading": "Comparer deux sweats à capuche de coupes différentes",
+      "intro": "Posez à plat un sweat qui vous va et fermez le zip s’il en possède un. Demandez les mêmes points de mesure sur le modèle envisagé.",
+      "columns": [
+        "Question de coupe",
+        "Mesure à demander"
+      ],
+      "rows": [
+        [
+          "Quelle aisance à la poitrine ?",
+          "Mesurez la largeur juste sous les emmanchures, sans tendre le tissu. Comparez les largeurs à plat en centimètres."
+        ],
+        [
+          "Où tombe le bas du sweat ?",
+          "Mesurez du point haut de l’épaule au bas du vêtement, bord-côte inclus. Relevez tout autre point de départ utilisé dans l’annonce."
+        ],
+        [
+          "Les manches sont-elles assez longues ?",
+          "Pour des épaules tombantes ou des manches raglan, mesurez du milieu de l’encolure dos au bout du poignet sur les deux pièces. Une mesure depuis la couture exclut l’épaule."
+        ]
+      ]
+    },
+    "es": {
+      "heading": "Comparar dos sudaderas de cortes diferentes",
+      "intro": "Extiende una sudadera que te siente bien y cierra la cremallera si la tiene. Pide que se usen los mismos puntos de medición en el otro modelo.",
+      "columns": [
+        "Duda sobre el ajuste",
+        "Medida que conviene pedir"
+      ],
+      "rows": [
+        [
+          "¿Quedará holgada en el pecho?",
+          "Mide de lado a lado justo debajo de las sisas sin estirar la tela. Compara anchos en plano y en centímetros."
+        ],
+        [
+          "¿A qué altura quedará el bajo?",
+          "Mide desde el punto más alto del hombro hasta el borde inferior, incluida la banda elástica. Anota si el anuncio usa otro punto de partida."
+        ],
+        [
+          "¿Llegarán bien las mangas?",
+          "En cortes de hombro caído o manga raglán, mide desde el centro del cuello por detrás hasta el extremo del puño en ambas prendas. La medida desde la costura omite el hombro."
+        ]
+      ]
+    },
+    "pl": {
+      "heading": "Jak porównać dwie bluzy o różnych krojach",
+      "intro": "Rozłóż dobrze dopasowaną bluzę na płasko i zapnij zamek, jeśli go ma. Poproś o pomiar drugiej bluzy między tymi samymi punktami.",
+      "columns": [
+        "Pytanie o krój",
+        "O jaki pomiar poprosić"
+      ],
+      "rows": [
+        [
+          "Czy w klatce będzie dość miejsca?",
+          "Zmierz szerokość tuż pod pachami bez rozciągania materiału. Porównaj szerokości na płasko w centymetrach."
+        ],
+        [
+          "Dokąd sięgnie dół bluzy?",
+          "Zmierz od najwyższego punktu ramienia do końca dolnego ściągacza. Zapisz, jeśli w ofercie użyto innego punktu początkowego."
+        ],
+        [
+          "Czy rękawy będą odpowiednio długie?",
+          "Przy obniżonych ramionach lub rękawie raglanowym zmierz obie bluzy od środka karku do końca mankietu. Pomiar od szwu rękawa pomija ramię."
+        ]
+      ]
+    },
+    "ja": {
+      "heading": "形の違うパーカーを比べる",
+      "intro": "着慣れたパーカーを平置きし、ファスナーがあれば閉めます。候補の服も同じ始点と終点で測ってもらいます。",
+      "columns": [
+        "着用感の疑問",
+        "確認する寸法"
+      ],
+      "rows": [
+        [
+          "胸まわりに余裕があるか",
+          "生地を引っ張らず、袖ぐりのすぐ下で左右を直線で測ります。平置きの幅をセンチ単位で比べます。"
+        ],
+        [
+          "裾がどこに来るか",
+          "肩の最も高い所から裾のリブの先まで測ります。商品ページの始点が異なる場合は書き留めます。"
+        ],
+        [
+          "袖が手首まで届くか",
+          "ドロップショルダーやラグランは、両方の服で後ろ襟の中心から袖口までの裄丈を測ります。袖の縫い目からの長さだけだと肩の分が含まれません。"
+        ]
+      ]
+    }
+  },
+  "how-to-use-allchinabuy-spreadsheet": {
+    "en": {
+      "heading": "Build a shortlist you can reopen next week",
+      "intro": "Save one row per seller option. A copied link is most useful when the next reader can reproduce the selection.",
+      "columns": [
+        "When recording a find",
+        "Write this in the row"
+      ],
+      "rows": [
+        [
+          "Two cards lead to the same item ID",
+          "Keep one source record and list the card names as aliases. Separate variants only when you can identify an option for each."
+        ],
+        [
+          "The card price opens on a cheaper accessory",
+          "Record the price after selecting the intended piece, plus currency and check date. Mark any domestic delivery charge separately."
+        ],
+        [
+          "You share a shortlist",
+          "Test the link outside your signed-in session. Include the seller’s option text so the recipient can reselect the same size or bundle."
+        ]
+      ]
+    },
+    "de": {
+      "heading": "Eine auch nächste Woche nutzbare Merkliste anlegen",
+      "intro": "Speichere je Händleroption eine Zeile. Die nächste Person sollte anhand des Links und deiner Notizen dieselbe Auswahl wiederfinden können.",
+      "columns": [
+        "Beim Erfassen",
+        "Eintrag in der Liste"
+      ],
+      "rows": [
+        [
+          "Zwei Karten führen zur selben Artikel-ID",
+          "Behalte einen Quelldatensatz und notiere beide Kartennamen. Trenne Varianten nur bei eindeutig zuordenbaren Optionen."
+        ],
+        [
+          "Der Kartenpreis gehört zu einem günstigeren Zubehörteil",
+          "Wähle das gewünschte Teil und notiere dessen Preis, Währung und Prüfdatum. Erfasse Inlandsversand separat."
+        ],
+        [
+          "Du teilst die Liste",
+          "Prüfe den Link außerhalb deiner angemeldeten Sitzung. Füge den Optionstext des Händlers bei, damit andere dieselbe Größe oder dasselbe Set wählen können."
+        ]
+      ]
+    },
+    "fr": {
+      "heading": "Préparer une sélection que l’on pourra retrouver",
+      "intro": "Gardez une ligne par variante du vendeur. Le destinataire doit pouvoir retrouver la même sélection à partir du lien et de vos notes.",
+      "columns": [
+        "Au moment du relevé",
+        "À inscrire dans la ligne"
+      ],
+      "rows": [
+        [
+          "Deux fiches renvoient au même identifiant",
+          "Conservez une seule référence source et ajoutez les noms des deux fiches. Séparez les variantes si chacune correspond à une option identifiable."
+        ],
+        [
+          "Le prix de la fiche correspond à un accessoire moins cher",
+          "Choisissez la pièce voulue et notez son prix, la devise et la date. Isolez les frais de livraison intérieure."
+        ],
+        [
+          "Vous partagez la sélection",
+          "Ouvrez le lien hors de votre session connectée. Copiez l’intitulé de l’option pour que le destinataire puisse choisir la même taille ou le même lot."
+        ]
+      ]
+    },
+    "es": {
+      "heading": "Crear una lista que puedas volver a consultar",
+      "intro": "Guarda una fila por variante del vendedor. Quien abra el enlace después debería poder reproducir la selección.",
+      "columns": [
+        "Al registrar un hallazgo",
+        "Qué anotar en la fila"
+      ],
+      "rows": [
+        [
+          "Dos fichas llevan al mismo ID de artículo",
+          "Conserva una sola referencia de origen y anota los nombres de ambas fichas. Separa las variantes si puedes identificar cada opción."
+        ],
+        [
+          "El precio de la ficha corresponde a un accesorio más barato",
+          "Selecciona la pieza deseada y registra su precio, moneda y fecha de consulta. Anota el envío nacional por separado."
+        ],
+        [
+          "Vas a compartir la lista",
+          "Prueba el enlace fuera de tu sesión iniciada. Copia el texto de la opción del vendedor para que la otra persona pueda elegir la misma talla o lote."
+        ]
+      ]
+    },
+    "pl": {
+      "heading": "Jak zapisać listę, do której można wrócić",
+      "intro": "Utwórz osobny wiersz dla każdego wariantu sprzedawcy. Osoba otwierająca link później powinna móc odtworzyć wybór.",
+      "columns": [
+        "Podczas zapisywania",
+        "Co wpisać w wierszu"
+      ],
+      "rows": [
+        [
+          "Dwie karty prowadzą do tego samego identyfikatora",
+          "Zostaw jeden wpis źródłowy i dopisz obie nazwy kart. Warianty rozdziel dopiero po ustaleniu odpowiadających im opcji."
+        ],
+        [
+          "Cena na karcie dotyczy tańszego dodatku",
+          "Wybierz właściwy produkt i zapisz jego cenę, walutę oraz datę sprawdzenia. Koszt dostawy krajowej zapisz osobno."
+        ],
+        [
+          "Udostępniasz listę",
+          "Sprawdź link poza zalogowaną sesją. Dodaj nazwę opcji podaną przez sprzedawcę, aby odbiorca mógł wybrać ten sam rozmiar lub zestaw."
+        ]
+      ]
+    },
+    "ja": {
+      "heading": "後から同じ商品を選べる候補表を作る",
+      "intro": "販売店の選択肢ごとに一行を使います。後で開く人が、リンクとメモから同じ仕様を選び直せるようにします。",
+      "columns": [
+        "候補を記録する場面",
+        "行に残す内容"
+      ],
+      "rows": [
+        [
+          "二つのカードが同じ商品IDを指している",
+          "元の商品は一件にまとめ、カード名を併記します。各カードの選択肢を特定できた場合にだけ仕様別に分けます。"
+        ],
+        [
+          "カードの価格が安い付属品のものだった",
+          "目的の商品を選んだ後の価格、通貨、確認日を記録します。中国国内の送料は別欄に入れます。"
+        ],
+        [
+          "候補表を共有する",
+          "ログイン中のセッションを使わずにリンクを確認します。相手が同じサイズやセットを選べるよう、販売店の選択肢名も添えます。"
+        ]
+      ]
+    }
+  },
+  "allchinabuy-listing-identity-verification": {
+    "en": {
+      "heading": "Resolve a changed listing without mixing evidence",
+      "intro": "Keep the old and current records side by side. These three discrepancies need different follow-up.",
+      "columns": [
+        "What changed",
+        "How to reconcile the records"
+      ],
+      "rows": [
+        [
+          "Same photo, different item ID",
+          "Open each source and record its seller. Give the new listing its own row even if the main image matches."
+        ],
+        [
+          "Same ID, different option list",
+          "Compare your saved option text and image against the current choices. Ask the seller to identify the equivalent option before transferring any price or size."
+        ],
+        [
+          "Short link opens the shop front",
+          "Search within the shop using the saved item ID or exact title. Keep the old link marked unresolved until the product page itself opens."
+        ]
+      ]
+    },
+    "de": {
+      "heading": "Ein geändertes Angebot eindeutig zuordnen",
+      "intro": "Lege alten und aktuellen Eintrag nebeneinander. Bei diesen drei Abweichungen sind unterschiedliche Nachfragen sinnvoll.",
+      "columns": [
+        "Was hat sich geändert?",
+        "So gleichst du die Einträge ab"
+      ],
+      "rows": [
+        [
+          "Gleiches Foto, andere Artikel-ID",
+          "Öffne beide Quellen und notiere den jeweiligen Händler. Gib dem neuen Angebot auch bei gleichem Hauptbild eine eigene Zeile."
+        ],
+        [
+          "Gleiche ID, andere Optionen",
+          "Vergleiche den gespeicherten Optionstext und das Bild mit der aktuellen Auswahl. Bitte den Händler um Zuordnung, bevor du Preis oder Größe übernimmst."
+        ],
+        [
+          "Kurzlink führt zur Shop-Startseite",
+          "Suche im Shop nach der gespeicherten Artikel-ID oder dem genauen Titel. Markiere den alten Link als ungeklärt, bis sich die Artikelseite selbst öffnet."
+        ]
+      ]
+    },
+    "fr": {
+      "heading": "Rapprocher deux versions d’une annonce",
+      "intro": "Placez l’ancien relevé et le nouveau côte à côte. Chacun de ces écarts demande une vérification différente.",
+      "columns": [
+        "Changement observé",
+        "Comment rapprocher les relevés"
+      ],
+      "rows": [
+        [
+          "Même photo, identifiant différent",
+          "Ouvrez chaque source et notez le vendeur. Créez une ligne distincte pour la nouvelle annonce même si la photo principale est identique."
+        ],
+        [
+          "Même identifiant, options différentes",
+          "Comparez le texte et la photo de l’option enregistrée aux choix actuels. Demandez au vendeur d’identifier l’équivalent avant de reprendre un prix ou une taille."
+        ],
+        [
+          "Le lien court ouvre la boutique",
+          "Cherchez dans la boutique avec l’identifiant enregistré ou le titre exact. Laissez le lien en attente tant que la fiche produit elle-même ne s’ouvre pas."
+        ]
+      ]
+    },
+    "es": {
+      "heading": "Identificar un anuncio que ha cambiado",
+      "intro": "Coloca el registro anterior junto al actual. Cada diferencia requiere una comprobación distinta.",
+      "columns": [
+        "Qué ha cambiado",
+        "Cómo cotejar los registros"
+      ],
+      "rows": [
+        [
+          "Misma foto, distinto ID",
+          "Abre ambas fuentes y anota el vendedor de cada una. Crea otra fila para el nuevo anuncio aunque coincida la imagen principal."
+        ],
+        [
+          "Mismo ID, opciones diferentes",
+          "Compara el texto y la foto guardados con las opciones actuales. Pide al vendedor la equivalencia antes de trasladar un precio o una talla."
+        ],
+        [
+          "El enlace corto abre la portada de la tienda",
+          "Busca en la tienda por el ID guardado o el título exacto. Mantén el enlace como pendiente hasta que puedas abrir la ficha del producto."
+        ]
+      ]
+    },
+    "pl": {
+      "heading": "Jak rozpoznać zmienioną ofertę",
+      "intro": "Zestaw poprzedni zapis z aktualną ofertą. Każda z tych różnic wymaga innego sprawdzenia.",
+      "columns": [
+        "Co się zmieniło",
+        "Jak porównać zapisy"
+      ],
+      "rows": [
+        [
+          "To samo zdjęcie, inny identyfikator",
+          "Otwórz oba źródła i zapisz sprzedawcę każdego z nich. Dla nowej oferty utwórz osobny wiersz, nawet jeśli zdjęcie główne jest takie samo."
+        ],
+        [
+          "Ten sam identyfikator, inne opcje",
+          "Porównaj zapisany opis i zdjęcie wariantu z obecnymi opcjami. Przed przepisaniem ceny lub rozmiaru poproś sprzedawcę o wskazanie odpowiednika."
+        ],
+        [
+          "Skrócony link otwiera stronę sklepu",
+          "Wyszukaj w sklepie zapisany identyfikator lub dokładny tytuł. Oznacz link jako niewyjaśniony do czasu otwarcia strony samego produktu."
+        ]
+      ]
+    },
+    "ja": {
+      "heading": "内容が変わった商品ページを照合する",
+      "intro": "以前の記録と現在のページを並べて確認します。どの部分が変わったかで調べ方が変わります。",
+      "columns": [
+        "変わった点",
+        "照合方法"
+      ],
+      "rows": [
+        [
+          "同じ写真で商品IDが異なる",
+          "それぞれの元ページを開き、販売店を記録します。メイン写真が同じでも新しい商品は別の行にします。"
+        ],
+        [
+          "同じIDで選択肢が異なる",
+          "保存した選択肢名と画像を現在の選択肢と比べます。価格やサイズを引き継ぐ前に、対応する仕様を販売店に確認します。"
+        ],
+        [
+          "短縮リンクが店舗トップを開く",
+          "保存した商品IDか正確な商品名で店内検索します。個別の商品ページを開けるまでリンクは未確認として扱います。"
+        ]
+      ]
+    }
+  },
+  "allchinabuy-order-status-explained": {
+    "en": {
+      "heading": "Choose a question that can move the order forward",
+      "intro": "Copy the last dated message before contacting support. Ask for the missing handoff or decision in a single sentence.",
+      "columns": [
+        "Latest record",
+        "Question to send"
+      ],
+      "rows": [
+        [
+          "Payment posted, purchase unconfirmed",
+          "“Can you confirm whether order [number] was placed with the seller, and on which date?”"
+        ],
+        [
+          "Seller requests a price change",
+          "“Which option and quantity does the revised amount cover, and what happens if I decline?”"
+        ],
+        [
+          "Seller’s carrier shows delivery, item missing in warehouse",
+          "“Can you match domestic tracking [number] and its delivery date to my order [number]?”"
+        ]
+      ]
+    },
+    "de": {
+      "heading": "Eine gezielte Frage zum Bestellstand stellen",
+      "intro": "Kopiere die letzte datierte Nachricht. Frage in einem Satz nach der fehlenden Übergabe oder Entscheidung.",
+      "columns": [
+        "Letzter Eintrag",
+        "Frage an den Support"
+      ],
+      "rows": [
+        [
+          "Zahlung gebucht, Einkauf unbestätigt",
+          "„Wurde Bestellung [Nummer] beim Händler aufgegeben, und wenn ja, an welchem Tag?“"
+        ],
+        [
+          "Händler verlangt Preisänderung",
+          "„Für welche Variante und Menge gilt der neue Betrag, und was passiert, wenn ich ablehne?“"
+        ],
+        [
+          "Inlandssendung zugestellt, kein Lagereintrag",
+          "„Können Sie die inländische Sendungsnummer [Nummer] und das Zustelldatum meiner Bestellung [Nummer] zuordnen?“"
+        ]
+      ]
+    },
+    "fr": {
+      "heading": "Poser une question précise sur la commande",
+      "intro": "Recopiez le dernier message daté. Demandez en une phrase la confirmation de l’étape ou de la décision manquante.",
+      "columns": [
+        "Dernière information",
+        "Question à envoyer"
+      ],
+      "rows": [
+        [
+          "Paiement comptabilisé, achat à confirmer",
+          "« La commande [numéro] a-t-elle été passée auprès du vendeur et, si oui, à quelle date ? »"
+        ],
+        [
+          "Le vendeur demande une modification de prix",
+          "« Quelle variante et quelle quantité couvre le nouveau montant ? Que se passe-t-il si je le refuse ? »"
+        ],
+        [
+          "Livraison intérieure effectuée, article absent du stock",
+          "« Pouvez-vous rapprocher le suivi intérieur [numéro] et sa date de livraison de ma commande [numéro] ? »"
+        ]
+      ]
+    },
+    "es": {
+      "heading": "Plantear una pregunta concreta sobre el pedido",
+      "intro": "Copia el último mensaje fechado. Pregunta en una frase por la decisión o la entrega que falta confirmar.",
+      "columns": [
+        "Último registro",
+        "Pregunta para atención al cliente"
+      ],
+      "rows": [
+        [
+          "Pago registrado, compra sin confirmar",
+          "«¿Se hizo el pedido [número] al vendedor y, en caso afirmativo, en qué fecha?»"
+        ],
+        [
+          "El vendedor solicita un cambio de precio",
+          "«¿A qué variante y cantidad corresponde el nuevo importe y qué ocurre si lo rechazo?»"
+        ],
+        [
+          "Entrega nacional registrada, artículo ausente en almacén",
+          "«¿Podéis vincular el seguimiento nacional [número] y su fecha de entrega con mi pedido [número]?»"
+        ]
+      ]
+    },
+    "pl": {
+      "heading": "Zadaj pytanie o brakujący etap zamówienia",
+      "intro": "Skopiuj ostatnią wiadomość z datą. W jednym zdaniu poproś o potwierdzenie przekazania towaru lub decyzji.",
+      "columns": [
+        "Ostatni zapis",
+        "Pytanie do obsługi"
+      ],
+      "rows": [
+        [
+          "Płatność zaksięgowana, zakup niepotwierdzony",
+          "„Czy zamówienie [numer] zostało złożone u sprzedawcy? Jeśli tak, którego dnia?”"
+        ],
+        [
+          "Sprzedawca proponuje zmianę ceny",
+          "„Którego wariantu i jakiej liczby sztuk dotyczy nowa kwota i co się stanie, jeśli jej nie zaakceptuję?”"
+        ],
+        [
+          "Doręczenie krajowe widoczne, brak pozycji w magazynie",
+          "„Czy można powiązać krajowy numer przesyłki [numer] i datę doręczenia z moim zamówieniem [numer]?”"
+        ]
+      ]
+    },
+    "ja": {
+      "heading": "注文の段階に合わせて質問を絞る",
+      "intro": "日付のある最後のメッセージを控え、まだ確認できていない引き渡しや判断について一文で尋ねます。",
+      "columns": [
+        "最後の記録",
+        "問い合わせ文の例"
+      ],
+      "rows": [
+        [
+          "入金済みで発注の記録がない",
+          "「注文［番号］は販売店に発注済みでしょうか。発注済みの場合は日付を教えてください」"
+        ],
+        [
+          "販売店から価格変更の連絡",
+          "「変更後の金額はどの仕様と数量に対するものですか。承諾しない場合の扱いも教えてください」"
+        ],
+        [
+          "国内配送は配達済みだが入庫記録がない",
+          "「国内追跡番号［番号］と配達日を、注文［番号］の入庫記録と照合していただけますか」"
+        ]
+      ]
+    }
+  },
+  "allchinabuy-warehouse-storage-guide": {
+    "en": {
+      "heading": "Plan a decision when warehouse dates differ",
+      "intro": "Put the stated deadline beside each item, even when both belong to the same order. Save the source and time zone of each date.",
+      "columns": [
+        "Situation",
+        "Action before consolidation"
+      ],
+      "rows": [
+        [
+          "One item is near its displayed deadline",
+          "Ask which options apply to that item and when action must be taken. Keep the reply with the item reference."
+        ],
+        [
+          "A second piece has no intake scan",
+          "Check its domestic tracking separately. Ask whether the first item can be handled on its own if the second arrives late."
+        ],
+        [
+          "An extension is mentioned in a message",
+          "Ask for the item reference, revised date and any charge in writing. Keep the original deadline visible until the change is confirmed."
+        ]
+      ]
+    },
+    "de": {
+      "heading": "Bei unterschiedlichen Lagerfristen entscheiden",
+      "intro": "Notiere die angezeigte Frist bei jedem Artikel, auch innerhalb einer Bestellung. Halte Quelle und Zeitzone der Datumsangabe fest.",
+      "columns": [
+        "Situation",
+        "Schritt vor dem Zusammenpacken"
+      ],
+      "rows": [
+        [
+          "Ein Artikel nähert sich der angezeigten Frist",
+          "Frage nach den Möglichkeiten für diesen Artikel und bis wann du handeln musst. Speichere die Antwort bei der Artikelreferenz."
+        ],
+        [
+          "Für das zweite Teil fehlt der Eingangsscan",
+          "Prüfe dessen Inlandssendung separat. Frage, ob das erste Teil bei später Ankunft des zweiten einzeln bearbeitet werden kann."
+        ],
+        [
+          "Eine Nachricht erwähnt eine Verlängerung",
+          "Bitte schriftlich um Artikelreferenz, neues Datum und etwaige Gebühr. Behalte die ursprüngliche Frist im Blick, bis die Änderung bestätigt ist."
+        ]
+      ]
+    },
+    "fr": {
+      "heading": "Décider en présence de dates de stockage différentes",
+      "intro": "Inscrivez l’échéance affichée pour chaque article, même si deux pièces proviennent de la même commande. Relevez la source de la date et son fuseau horaire.",
+      "columns": [
+        "Situation",
+        "Action avant regroupement"
+      ],
+      "rows": [
+        [
+          "Un article approche de son échéance",
+          "Demandez les options disponibles pour cet article et la date limite pour agir. Conservez la réponse avec sa référence."
+        ],
+        [
+          "Une seconde pièce n’a pas de scan d’entrée",
+          "Vérifiez son suivi intérieur séparément. Demandez si la première peut être traitée seule lorsque la seconde tarde."
+        ],
+        [
+          "Un message évoque une prolongation",
+          "Demandez une confirmation écrite précisant la référence, la nouvelle date et les frais éventuels. Gardez l’ancienne échéance en vue jusqu’à confirmation."
+        ]
+      ]
+    },
+    "es": {
+      "heading": "Decidir cuando los plazos de almacén son distintos",
+      "intro": "Anota el plazo mostrado junto a cada artículo aunque dos piezas sean del mismo pedido. Guarda la fuente de cada fecha y su zona horaria.",
+      "columns": [
+        "Situación",
+        "Qué hacer antes de agrupar"
+      ],
+      "rows": [
+        [
+          "Un artículo se acerca al plazo indicado",
+          "Pregunta qué opciones hay para esa unidad y hasta cuándo puedes decidir. Guarda la respuesta con la referencia."
+        ],
+        [
+          "La segunda pieza no tiene registro de entrada",
+          "Consulta por separado su seguimiento nacional. Pregunta si pueden tramitar la primera pieza por separado en caso de retraso."
+        ],
+        [
+          "Un mensaje menciona una prórroga",
+          "Pide por escrito la referencia del artículo, la nueva fecha y cualquier cargo. Conserva el plazo original hasta confirmar el cambio."
+        ]
+      ]
+    },
+    "pl": {
+      "heading": "Co zrobić, gdy terminy magazynowania są różne",
+      "intro": "Przypisz wyświetlany termin do każdego artykułu, nawet gdy obie sztuki pochodzą z jednego zamówienia. Zapisz źródło daty i strefę czasową.",
+      "columns": [
+        "Sytuacja",
+        "Działanie przed połączeniem przesyłek"
+      ],
+      "rows": [
+        [
+          "Zbliża się termin dla jednego artykułu",
+          "Zapytaj o opcje dla tej sztuki i ostatni dzień na decyzję. Zachowaj odpowiedź przy jej identyfikatorze."
+        ],
+        [
+          "Druga sztuka nie ma skanu przyjęcia",
+          "Sprawdź osobno jej śledzenie krajowe. Zapytaj, czy pierwszą sztuką można zająć się oddzielnie, gdy druga się spóźni."
+        ],
+        [
+          "Wiadomość wspomina o przedłużeniu",
+          "Poproś na piśmie o identyfikator artykułu, nową datę i ewentualną opłatę. Do potwierdzenia zmiany trzymaj się pierwotnego terminu."
+        ]
+      ]
+    },
+    "ja": {
+      "heading": "商品の保管期限が異なるときの判断",
+      "intro": "同じ注文の中でも、表示された期限を商品ごとに記録します。日付の確認元とタイムゾーンも控えます。",
+      "columns": [
+        "状況",
+        "同梱前の確認"
+      ],
+      "rows": [
+        [
+          "一方の商品の表示期限が近い",
+          "その商品で選べる対応と手続きの締め切りを尋ね、回答を商品管理番号と一緒に保存します。"
+        ],
+        [
+          "二点目の入庫スキャンがない",
+          "二点目の国内追跡を個別に確認します。到着が遅れる場合に一点目を単独で扱えるか尋ねます。"
+        ],
+        [
+          "延長についてメッセージが届いた",
+          "対象の商品管理番号、新しい期限、追加料金の有無を文面で確認します。変更が確定するまでは元の期限を残します。"
+        ]
+      ]
+    }
+  },
+  "warehouse-qc-photo-checklist": {
+    "en": {
+      "heading": "Turn a doubtful QC image into a precise request",
+      "intro": "Reference the original image and ask for the one additional view that can settle the question. Keep the received unit and its item reference visible together where practical.",
+      "columns": [
+        "Unclear detail",
+        "Specific photo request"
+      ],
+      "rows": [
+        [
+          "Tape starts outside the frame",
+          "“Lay the garment flat without stretching it. Show the zero mark at the left seam and the reading at the right seam in one image.”"
+        ],
+        [
+          "A dark patch may be a shadow",
+          "“Please photograph the same spot in even light, then from the side. Keep the seam beside it in both frames so I can identify the area.”"
+        ],
+        [
+          "Two sizes appear in the order",
+          "“Please place each unit with its own size label and item reference. Show both units together first, then each label close up.”"
+        ]
+      ]
+    },
+    "de": {
+      "heading": "Aus einem unklaren Kontrollfoto eine genaue Anfrage machen",
+      "intro": "Beziehe dich auf das ursprüngliche Foto und bitte um eine Aufnahme, die die offene Frage klärt. Artikel und zugehörige Referenz sollten möglichst zusammen sichtbar sein.",
+      "columns": [
+        "Unklares Detail",
+        "Konkrete Fotoanfrage"
+      ],
+      "rows": [
+        [
+          "Der Anfang des Maßbands fehlt im Bild",
+          "„Bitte das Kleidungsstück flach und ohne Spannung hinlegen. Die Nullmarke an der linken Naht und den Messwert an der rechten Naht in einem Bild zeigen.“"
+        ],
+        [
+          "Ein dunkler Fleck könnte ein Schatten sein",
+          "„Bitte dieselbe Stelle bei gleichmäßigem Licht und anschließend von der Seite fotografieren. Die angrenzende Naht zur Orientierung in beiden Bildern zeigen.“"
+        ],
+        [
+          "Die Bestellung enthält zwei Größen",
+          "„Bitte jedes Teil zusammen mit seinem Größenetikett und seiner Artikelreferenz zeigen. Zuerst beide Teile zusammen, danach jedes Etikett im Detail fotografieren.“"
+        ]
+      ]
+    },
+    "fr": {
+      "heading": "Formuler une demande précise après une photo de contrôle",
+      "intro": "Indiquez la photo d’origine et demandez la vue complémentaire qui permettra de trancher. Si possible, faites apparaître l’article reçu avec sa référence.",
+      "columns": [
+        "Détail incertain",
+        "Photo à demander"
+      ],
+      "rows": [
+        [
+          "Le début du mètre est hors champ",
+          "« Posez le vêtement à plat sans le tendre. Montrez sur la même photo le zéro à la couture gauche et la lecture à la couture droite. »"
+        ],
+        [
+          "Une zone sombre pourrait être une ombre",
+          "« Photographiez la même zone sous une lumière uniforme, puis de côté. Gardez la couture voisine dans les deux cadrages pour situer la zone. »"
+        ],
+        [
+          "La commande comprend deux tailles",
+          "« Placez chaque pièce avec sa propre étiquette de taille et sa référence. Montrez d’abord les deux pièces ensemble, puis chaque étiquette de près. »"
+        ]
+      ]
+    },
+    "es": {
+      "heading": "Cómo pedir otra foto de control que resuelva la duda",
+      "intro": "Indica la foto original y pide una toma adicional que responda a la pregunta. Cuando sea posible, incluye la unidad recibida y su referencia en el mismo encuadre.",
+      "columns": [
+        "Detalle poco claro",
+        "Petición concreta"
+      ],
+      "rows": [
+        [
+          "La cinta empieza fuera del encuadre",
+          "«Coloca la prenda en plano sin estirarla. Muestra en una sola foto el cero en la costura izquierda y la lectura en la derecha»."
+        ],
+        [
+          "Una mancha oscura podría ser una sombra",
+          "«Fotografía la misma zona con luz uniforme y después de lado. Incluye la costura cercana en ambas tomas para poder localizarla»."
+        ],
+        [
+          "El pedido incluye dos tallas",
+          "«Coloca cada prenda con su etiqueta de talla y su referencia. Muestra ambas juntas y después cada etiqueta de cerca»."
+        ]
+      ]
+    },
+    "pl": {
+      "heading": "Jak poprosić o zdjęcie, które rozstrzygnie wątpliwość",
+      "intro": "Wskaż pierwotne zdjęcie i opisz ujęcie potrzebne do oceny. W miarę możliwości poproś o pokazanie otrzymanej sztuki razem z jej identyfikatorem.",
+      "columns": [
+        "Niejasny szczegół",
+        "Prośba o konkretne zdjęcie"
+      ],
+      "rows": [
+        [
+          "Początek miarki jest poza kadrem",
+          "„Proszę rozłożyć ubranie na płasko bez rozciągania. Na jednym zdjęciu proszę pokazać zero przy lewym szwie i odczyt przy prawym”."
+        ],
+        [
+          "Ciemniejszy obszar może być cieniem",
+          "„Proszę sfotografować to samo miejsce w równym świetle, a potem z boku. Na obu zdjęciach proszę ująć sąsiedni szew, żeby można było odnaleźć to miejsce”."
+        ],
+        [
+          "W zamówieniu są dwa rozmiary",
+          "„Proszę położyć każdą sztukę z jej metką rozmiaru i identyfikatorem. Najpierw proszę pokazać obie razem, potem zbliżenie każdej metki”."
+        ]
+      ]
+    },
+    "ja": {
+      "heading": "検品写真で判断できないときの依頼文",
+      "intro": "元の写真を指定し、疑問を解消できる追加の撮影方法を伝えます。可能なら届いた現物と商品管理番号が一緒に写るようにします。",
+      "columns": [
+        "不明な点",
+        "撮影依頼の例"
+      ],
+      "rows": [
+        [
+          "メジャーの始点が画面の外",
+          "「服を引っ張らずに平置きし、左の縫い目に合わせたゼロの目盛りと、右の縫い目の数値を一枚に収めてください」"
+        ],
+        [
+          "暗い部分が影かもしれない",
+          "「同じ部分を均一な光の下で撮ってから、横からも撮ってください。場所を特定できるよう、どちらにも隣の縫い目を入れてください」"
+        ],
+        [
+          "注文内に二つのサイズがある",
+          "「各商品をそれぞれのサイズタグと管理番号と一緒に置いてください。まず二点を一枚に収め、次に各タグをアップで撮ってください」"
+        ]
+      ]
+    }
+  },
+  "allchinabuy-return-refund-guide": {
+    "en": {
+      "heading": "Check where a refund was recorded",
+      "intro": "Use the payment receipt and any refund confirmation, masking unrelated payment details. Trace each movement by its destination.",
+      "columns": [
+        "What the record shows",
+        "What to look for next"
+      ],
+      "rows": [
+        [
+          "Seller accepted the return",
+          "Find the return destination and any reference for the item. Ask who arranges return postage and which deadline applies."
+        ],
+        [
+          "Credit entered in the agent balance",
+          "Match the amount, currency and posting date with the item. Check whether a separate withdrawal request exists."
+        ],
+        [
+          "Refund issued to the payment method",
+          "Compare the transaction reference with the statement for that method. If the amount differs, ask for the item, postage and fee lines separately."
+        ]
+      ]
+    },
+    "de": {
+      "heading": "Den Weg einer Erstattung nachvollziehen",
+      "intro": "Nutze Zahlungsbeleg und Erstattungsbestätigung. Schwärze nicht benötigte Zahlungsdaten und verfolge jede Buchung bis zu ihrem Ziel.",
+      "columns": [
+        "Was im Beleg steht",
+        "Was als Nächstes zu prüfen ist"
+      ],
+      "rows": [
+        [
+          "Händler hat die Rückgabe akzeptiert",
+          "Suche Rücksendeadresse und Artikelreferenz. Frage, wer den Rückversand organisiert und welche Frist gilt."
+        ],
+        [
+          "Gutschrift im Vermittlerkonto",
+          "Ordne Betrag, Währung und Buchungsdatum dem Artikel zu. Prüfe, ob ein eigener Auszahlungsauftrag vorliegt."
+        ],
+        [
+          "Erstattung auf das Zahlungsmittel veranlasst",
+          "Gleiche die Transaktionsreferenz mit dem Auszug dieses Zahlungsmittels ab. Bitte bei Abweichungen um getrennte Positionen für Artikel, Porto und Gebühren."
+        ]
+      ]
+    },
+    "fr": {
+      "heading": "Suivre la destination d’un remboursement",
+      "intro": "Utilisez le reçu et la confirmation de remboursement en masquant les données de paiement inutiles. Identifiez la destination de chaque mouvement.",
+      "columns": [
+        "Ce que montre le justificatif",
+        "Vérification suivante"
+      ],
+      "rows": [
+        [
+          "Retour accepté par le vendeur",
+          "Retrouvez l’adresse de retour et la référence de l’article. Demandez qui organise l’expédition retour et dans quel délai."
+        ],
+        [
+          "Crédit sur le solde du compte de l’agent",
+          "Rapprochez le montant, la devise et la date de comptabilisation de l’article. Vérifiez l’existence d’une demande de retrait distincte."
+        ],
+        [
+          "Remboursement émis vers le moyen de paiement",
+          "Comparez la référence de transaction au relevé correspondant. En cas d’écart, demandez le détail séparé de l’article, du port et des frais."
+        ]
+      ]
+    },
+    "es": {
+      "heading": "Comprobar dónde se registró un reembolso",
+      "intro": "Utiliza el recibo y la confirmación del reembolso tras ocultar los datos de pago ajenos a la consulta. Sigue cada movimiento hasta su destino.",
+      "columns": [
+        "Qué indica el registro",
+        "Qué comprobar después"
+      ],
+      "rows": [
+        [
+          "El vendedor aceptó la devolución",
+          "Localiza la dirección de devolución y la referencia del artículo. Pregunta quién gestiona el envío de vuelta y qué plazo se aplica."
+        ],
+        [
+          "Abono en el saldo de la cuenta del agente",
+          "Coteja el importe, la moneda y la fecha del abono con el artículo. Comprueba si existe una solicitud de retirada independiente."
+        ],
+        [
+          "Reembolso emitido al medio de pago",
+          "Compara la referencia con el extracto de ese medio. Si el importe difiere, solicita el desglose de artículo, portes y comisiones."
+        ]
+      ]
+    },
+    "pl": {
+      "heading": "Sprawdź, dokąd trafił zwrot pieniędzy",
+      "intro": "Użyj potwierdzenia płatności i informacji o zwrocie, zasłaniając zbędne dane płatnicze. Ustal odbiorcę każdej operacji.",
+      "columns": [
+        "Co widać w zapisie",
+        "Co sprawdzić dalej"
+      ],
+      "rows": [
+        [
+          "Sprzedawca zaakceptował zwrot towaru",
+          "Odszukaj adres zwrotu i oznaczenie artykułu. Zapytaj, kto organizuje przesyłkę zwrotną i jaki termin obowiązuje."
+        ],
+        [
+          "Uznano saldo konta u pośrednika",
+          "Porównaj z artykułem kwotę, walutę i dzień księgowania. Sprawdź, czy złożono oddzielne zlecenie wypłaty."
+        ],
+        [
+          "Zlecono zwrot na pierwotną metodę płatności",
+          "Porównaj identyfikator transakcji z właściwym wyciągiem. Przy rozbieżności poproś o rozpisanie ceny artykułu, przesyłki i opłat."
+        ]
+      ]
+    },
+    "ja": {
+      "heading": "返金がどこに記録されたかを確認する",
+      "intro": "支払い控えや返金通知を使い、問い合わせに不要な決済情報は隠します。資金の移動は行き先ごとに確認します。",
+      "columns": [
+        "記録に書かれていること",
+        "次に確認すること"
+      ],
+      "rows": [
+        [
+          "販売店が返品を承認",
+          "返送先と商品にひも付く受付番号を確認します。返送の手配者と期限を尋ねます。"
+        ],
+        [
+          "代行サービスの残高に入金",
+          "対象商品と金額、通貨、計上日を照合します。別途出金の申請があるかを確認します。"
+        ],
+        [
+          "支払いに使った決済手段への返金を実行",
+          "取引番号をその決済手段の明細と照合します。金額が違う場合は、商品代、送料、手数料の内訳を尋ねます。"
+        ]
+      ]
+    }
+  },
+  "allchinabuy-fees-payment-methods": {
+    "en": {
+      "heading": "Reconcile a balance top-up with an order",
+      "intro": "A top-up and the later purchase are two entries in one money trail. Choose a reporting currency before comparing amounts.",
+      "columns": [
+        "Entry",
+        "How to record it"
+      ],
+      "rows": [
+        [
+          "Card charged, wallet credited",
+          "Write down the card debit and currency beside the wallet credit and currency. This pair shows what the funding actually bought."
+        ],
+        [
+          "Order paid from the wallet",
+          "Record the wallet debit against the item and domestic delivery. Count that spend once when totalling the order."
+        ],
+        [
+          "Money left in the wallet",
+          "Carry the remaining balance forward. For a multi-order top-up, allocate funding costs consistently and retain any unspent remainder."
+        ]
+      ]
+    },
+    "de": {
+      "heading": "Guthabenaufladung und Bestellzahlung abgleichen",
+      "intro": "Aufladung und späterer Kauf sind zwei Buchungen desselben Geldflusses. Wähle vor dem Vergleich eine einheitliche Berichtswährung.",
+      "columns": [
+        "Buchung",
+        "So erfasst du sie"
+      ],
+      "rows": [
+        [
+          "Karte belastet, Guthaben gutgeschrieben",
+          "Notiere Kartenbelastung und Währung neben der Gutschrift samt Währung. So siehst du, welches Guthaben durch die Zahlung entstanden ist."
+        ],
+        [
+          "Bestellung aus Guthaben bezahlt",
+          "Ordne die Abbuchung Artikel und Inlandsversand zu. Zähle diese Ausgabe bei der Bestellsumme einmal."
+        ],
+        [
+          "Restguthaben vorhanden",
+          "Übertrage den Restbetrag. Bei einer Aufladung für mehrere Bestellungen verteilst du die Aufladekosten nach demselben Verfahren und führst den ungenutzten Anteil weiter."
+        ]
+      ]
+    },
+    "fr": {
+      "heading": "Rapprocher une recharge de solde et un achat",
+      "intro": "La recharge et l’achat ultérieur sont deux écritures du même circuit. Choisissez une devise de référence avant de comparer les montants.",
+      "columns": [
+        "Écriture",
+        "Comment la consigner"
+      ],
+      "rows": [
+        [
+          "Carte débitée, solde crédité",
+          "Notez le débit de carte et sa devise en face du crédit du portefeuille et de sa devise. Cette paire indique le solde réellement obtenu."
+        ],
+        [
+          "Commande payée sur le solde",
+          "Affectez le débit du portefeuille à l’article et au port intérieur. Comptez cette dépense une seule fois dans le total de la commande."
+        ],
+        [
+          "Solde restant dans le portefeuille",
+          "Reportez le reliquat. Si la recharge finance plusieurs commandes, répartissez les frais selon la même méthode et conservez le montant encore inutilisé."
+        ]
+      ]
+    },
+    "es": {
+      "heading": "Conciliar una recarga de saldo con una compra",
+      "intro": "La recarga y la compra posterior son dos movimientos del mismo dinero. Elige una moneda de referencia antes de comparar importes.",
+      "columns": [
+        "Movimiento",
+        "Cómo anotarlo"
+      ],
+      "rows": [
+        [
+          "Cargo en la tarjeta y abono en el monedero",
+          "Anota el débito y la moneda de la tarjeta junto al abono y la moneda del monedero. Así podrás ver qué saldo obtuviste realmente."
+        ],
+        [
+          "Pedido pagado con el saldo",
+          "Asigna el débito del monedero al artículo y al transporte nacional. Cuenta el gasto una sola vez al sumar el pedido."
+        ],
+        [
+          "Saldo pendiente en el monedero",
+          "Traslada el saldo restante. Si una recarga cubre varios pedidos, distribuye los costes de recarga con un criterio uniforme y conserva el remanente sin gastar."
+        ]
+      ]
+    },
+    "pl": {
+      "heading": "Jak rozliczyć doładowanie salda i zakup",
+      "intro": "Doładowanie i późniejszy zakup to dwa zapisy dotyczące tych samych środków. Przed porównaniem kwot wybierz jedną walutę rozliczeniową.",
+      "columns": [
+        "Operacja",
+        "Jak ją zapisać"
+      ],
+      "rows": [
+        [
+          "Obciążenie karty i zasilenie portfela",
+          "Zapisz kwotę i walutę obciążenia karty obok kwoty i waluty zasilenia portfela. Te wartości pokazują, ile środków uzyskano."
+        ],
+        [
+          "Zamówienie opłacone z portfela",
+          "Przypisz obciążenie portfela do towaru i dostawy krajowej. W koszcie zamówienia uwzględnij ten wydatek raz."
+        ],
+        [
+          "Środki pozostałe w portfelu",
+          "Przenieś saldo do dalszych rozliczeń. Jeśli jedno doładowanie służy kilku zamówieniom, stosuj tę samą metodę podziału kosztów i uwzględnij niewydaną część."
+        ]
+      ]
+    },
+    "ja": {
+      "heading": "チャージと注文の支払いを照合する",
+      "intro": "チャージと、その残高を使った購入は、一つのお金の流れにある別々の記録です。金額を比較する前に集計用の通貨を決めます。",
+      "columns": [
+        "取引の種類",
+        "記録方法"
+      ],
+      "rows": [
+        [
+          "カードの引き落としと残高への入金",
+          "カードの請求額とその通貨、ウォレットの入金額とその通貨を並べます。支払額に対して実際にいくら入金されたか確認できます。"
+        ],
+        [
+          "残高から注文代を支払った",
+          "ウォレットからの引き落としを商品代と国内送料に対応づけます。注文の合計にはこの支出を一度だけ計上します。"
+        ],
+        [
+          "ウォレットに残った金額",
+          "未使用分を次へ繰り越します。一度のチャージで複数の注文を賄うときは、一貫した方法でチャージ費用を配分し、残高も記録します。"
+        ]
+      ]
+    }
+  },
+  "allchinabuy-parcel-packing-consolidation": {
+    "en": {
+      "heading": "Write a packing instruction the warehouse can check",
+      "intro": "Name the exact item reference and the packaging layer. If a packing service is available, ask for a final measurement after the instructions are carried out.",
+      "columns": [
+        "Packing priority",
+        "Instruction to adapt"
+      ],
+      "rows": [
+        [
+          "Keep a presentation box",
+          "“Keep the retail box for item [A] and protect its corners. Confirm the parcel dimensions after adding the outer carton.”"
+        ],
+        [
+          "Remove only disposable packaging",
+          "“For item [B], remove the outer seller mailer and keep the labelled inner bag and all accessories. Photograph the contents before sealing.”"
+        ],
+        [
+          "Protect a rigid item beside clothing",
+          "“Separate the hard edges of item [C] from the print on item [D]. Confirm the protective layer used and record the final packed weight.”"
+        ]
+      ]
+    },
+    "de": {
+      "heading": "Einen überprüfbaren Packauftrag formulieren",
+      "intro": "Nenne die genaue Artikelreferenz und die Verpackungsschicht. Wenn der Packservice verfügbar ist, bitte nach der Ausführung um die Endmaße.",
+      "columns": [
+        "Priorität beim Packen",
+        "Formulierungsbeispiel"
+      ],
+      "rows": [
+        [
+          "Präsentationskarton behalten",
+          "„Verkaufskarton für Artikel [A] behalten und die Ecken schützen. Bitte Außenmaße nach dem Einsetzen in den Versandkarton bestätigen.“"
+        ],
+        [
+          "Nur Einwegverpackung entfernen",
+          "„Bei Artikel [B] den äußeren Versandbeutel des Händlers entfernen. Beschrifteten Innenbeutel und Zubehör behalten. Inhalt vor dem Verschließen fotografieren.“"
+        ],
+        [
+          "Festes Teil neben Kleidung schützen",
+          "„Harte Kanten von Artikel [C] vom Aufdruck an [D] trennen. Bitte Schutzlage angeben und fertiges Paket wiegen.“"
+        ]
+      ]
+    },
+    "fr": {
+      "heading": "Rédiger une consigne d’emballage vérifiable",
+      "intro": "Précisez la référence de la pièce et la couche d’emballage concernée. Si le service est disponible, demandez les mesures finales une fois la consigne exécutée.",
+      "columns": [
+        "Priorité",
+        "Exemple de consigne"
+      ],
+      "rows": [
+        [
+          "Garder la boîte de présentation",
+          "« Conservez la boîte de vente de l’article [A] et protégez les angles. Confirmez les dimensions après mise en carton extérieur. »"
+        ],
+        [
+          "Retirer seulement l’emballage jetable",
+          "« Pour [B], retirez l’enveloppe d’expédition du vendeur. Gardez le sachet intérieur étiqueté et tous les accessoires. Photographiez le contenu avant fermeture. »"
+        ],
+        [
+          "Séparer un objet rigide d’un vêtement",
+          "« Isolez les bords rigides de [C] du motif imprimé sur [D]. Précisez la protection utilisée et relevez le poids final du colis. »"
+        ]
+      ]
+    },
+    "es": {
+      "heading": "Escribir una instrucción de embalaje verificable",
+      "intro": "Indica la referencia de cada artículo y la capa de embalaje concreta. Si se ofrece el servicio, solicita las medidas finales después de aplicar la instrucción.",
+      "columns": [
+        "Prioridad",
+        "Instrucción que puedes adaptar"
+      ],
+      "rows": [
+        [
+          "Conservar la caja de presentación",
+          "«Conservad la caja comercial de [A] y proteged las esquinas. Confirmad las dimensiones del paquete una vez introducida en la caja exterior»."
+        ],
+        [
+          "Retirar solo el envoltorio desechable",
+          "«En [B], retirad la bolsa exterior de envío del vendedor y conservad la bolsa interior etiquetada y todos los accesorios. Fotografiad el contenido antes de cerrar»."
+        ],
+        [
+          "Separar un objeto rígido de la ropa",
+          "«Separad los bordes duros de [C] del estampado de [D]. Indicad qué protección se ha utilizado y registrad el peso final del paquete»."
+        ]
+      ]
+    },
+    "pl": {
+      "heading": "Jak napisać sprawdzalną instrukcję pakowania",
+      "intro": "Podaj identyfikator artykułu i dokładną warstwę opakowania. Jeżeli usługa pakowania jest dostępna, poproś o wymiary po wykonaniu instrukcji.",
+      "columns": [
+        "Priorytet",
+        "Przykładowa instrukcja"
+      ],
+      "rows": [
+        [
+          "Zachowanie pudełka prezentowego",
+          "„Proszę zachować pudełko sklepowe artykułu [A] i zabezpieczyć jego rogi. Proszę potwierdzić wymiary po włożeniu do kartonu wysyłkowego”."
+        ],
+        [
+          "Usunięcie tylko jednorazowego opakowania",
+          "„Przy [B] proszę usunąć zewnętrzną kopertę od sprzedawcy i zachować opisany worek wewnętrzny z akcesoriami. Proszę sfotografować zawartość przed zamknięciem”."
+        ],
+        [
+          "Zabezpieczenie odzieży przy sztywnym przedmiocie",
+          "„Proszę oddzielić twarde krawędzie [C] od nadruku na [D]. Proszę podać rodzaj zabezpieczenia i końcową masę paczki”."
+        ]
+      ]
+    },
+    "ja": {
+      "heading": "倉庫で確認しやすい梱包指示を書く",
+      "intro": "商品管理番号と、どの包装を指しているかを明記します。梱包サービスを利用できる場合は、指示を反映した後の寸法を頼みます。",
+      "columns": [
+        "梱包で優先すること",
+        "依頼文の例"
+      ],
+      "rows": [
+        [
+          "化粧箱を残す",
+          "「商品［A］の化粧箱を残し、角を保護してください。外箱に収めた後の荷物の寸法を教えてください」"
+        ],
+        [
+          "使い捨ての包装だけ外す",
+          "「［B］の販売店の外袋だけ外し、ラベル付きの内袋と付属品はすべて残してください。封をする前に中身を撮影してください」"
+        ],
+        [
+          "硬い品物と衣類を分ける",
+          "「［C］の硬い角が［D］のプリントに触れないよう間に保護材を入れてください。使った保護材と梱包後の重量を教えてください」"
+        ]
+      ]
+    }
+  },
+  "plan-allchinabuy-shipping": {
+    "en": {
+      "heading": "Compare two route quotes on the same basis",
+      "intro": "Use the same destination, contents and packed dimensions for each route. Label each amount with its currency and the date it was displayed.",
+      "columns": [
+        "Difference between quotes",
+        "How it affects the comparison"
+      ],
+      "rows": [
+        [
+          "One route rounds to a larger billing step",
+          "Apply each route’s stated step to its own chargeable weight before comparing totals. Save both rounded weights."
+        ],
+        [
+          "A charge is included on only one line",
+          "Copy the itemised breakdown. Keep prepaid amounts and any amount described as payable on delivery in separate columns."
+        ],
+        [
+          "One route excludes an item in the parcel",
+          "Set that quote aside for the combined parcel. If you split it, compare the sum of both new quotes and both packing charges."
+        ]
+      ]
+    },
+    "de": {
+      "heading": "Zwei Versandangebote auf gleicher Grundlage vergleichen",
+      "intro": "Nutze für beide Routen dasselbe Ziel, denselben Inhalt und dieselben Paketmaße. Vermerke bei jedem Betrag Währung und Anzeigedatum.",
+      "columns": [
+        "Unterschied im Angebot",
+        "Bedeutung für den Vergleich"
+      ],
+      "rows": [
+        [
+          "Eine Route rechnet in größeren Gewichtsstufen ab",
+          "Wende die jeweilige Stufe auf das frachtpflichtige Gewicht der Route an, bevor du die Summen vergleichst. Notiere beide gerundeten Gewichte."
+        ],
+        [
+          "Eine Position ist nur bei einer Route enthalten",
+          "Übernimm die Einzelpositionen. Trenne vorausbezahlte Beträge von Beträgen, die laut Angebot bei Zustellung fällig werden."
+        ],
+        [
+          "Eine Route schließt einen Artikel aus",
+          "Lass dieses Angebot für das Gesamtpaket außer Betracht. Bei Aufteilung vergleichst du die Summe beider neuen Angebote einschließlich beider Verpackungskosten."
+        ]
+      ]
+    },
+    "fr": {
+      "heading": "Comparer deux devis de transport sur la même base",
+      "intro": "Utilisez la même destination, le même contenu et les mêmes dimensions emballées pour chaque service. Inscrivez la devise et la date d’affichage de chaque montant.",
+      "columns": [
+        "Différence entre les devis",
+        "Incidence sur la comparaison"
+      ],
+      "rows": [
+        [
+          "Un service utilise un palier de poids plus large",
+          "Appliquez à chaque poids taxable le palier annoncé pour ce service avant de comparer les totaux. Conservez les deux poids arrondis."
+        ],
+        [
+          "Un seul devis inclut une charge",
+          "Recopiez les postes détaillés. Séparez les montants prépayés de ceux annoncés comme payables à la livraison."
+        ],
+        [
+          "Un service exclut un article du colis",
+          "Écartez ce devis pour le colis groupé. Si vous le scindez, comparez la somme des deux nouveaux devis et des deux frais d’emballage."
+        ]
+      ]
+    },
+    "es": {
+      "heading": "Comparar dos presupuestos de envío en igualdad de condiciones",
+      "intro": "Utiliza el mismo destino, contenido y dimensiones del paquete embalado para ambas rutas. Anota la moneda y la fecha de cada importe.",
+      "columns": [
+        "Diferencia entre presupuestos",
+        "Cómo afecta a la comparación"
+      ],
+      "rows": [
+        [
+          "Una ruta redondea en tramos de peso mayores",
+          "Aplica el tramo indicado al peso facturable de cada ruta antes de comparar los totales. Guarda ambos pesos redondeados."
+        ],
+        [
+          "Solo una ruta incluye un cargo concreto",
+          "Copia el desglose. Separa los importes prepagados de cualquier importe indicado como pagadero en la entrega."
+        ],
+        [
+          "Una ruta excluye un artículo del paquete",
+          "Descarta ese presupuesto para el paquete conjunto. Si lo divides, compara la suma de los dos nuevos presupuestos y de ambos embalajes."
+        ]
+      ]
+    },
+    "pl": {
+      "heading": "Jak zestawić dwie wyceny wysyłki na tych samych zasadach",
+      "intro": "Dla każdej trasy wpisz ten sam cel, zawartość i wymiary po zapakowaniu. Przy kwotach zanotuj walutę i datę wyświetlenia.",
+      "columns": [
+        "Różnica między wycenami",
+        "Wpływ na porównanie"
+      ],
+      "rows": [
+        [
+          "Jedna trasa stosuje większy przedział zaokrąglenia",
+          "Zastosuj krok podany dla danej trasy do jej wagi rozliczeniowej, a następnie porównaj sumy. Zachowaj obie zaokrąglone wartości."
+        ],
+        [
+          "Opłata jest uwzględniona tylko dla jednej trasy",
+          "Zapisz poszczególne pozycje. Oddziel kwoty opłacane z góry od wskazanych jako płatne przy doręczeniu."
+        ],
+        [
+          "Jedna trasa wyklucza artykuł z paczki",
+          "Odrzuć tę wycenę dla przesyłki zbiorczej. Po podziale porównaj sumę dwóch nowych wycen i obu kosztów pakowania."
+        ]
+      ]
+    },
+    "ja": {
+      "heading": "二つの配送見積もりを同じ条件で比べる",
+      "intro": "宛先、内容品、梱包後の寸法をそろえて比較します。各金額には表示通貨と確認日を添えます。",
+      "columns": [
+        "見積もりの違い",
+        "比較時の扱い"
+      ],
+      "rows": [
+        [
+          "片方の重量の丸め単位が大きい",
+          "各ルートの課金重量に、そのルートが指定する単位を適用してから合計を比べます。丸めた後の重量も両方記録します。"
+        ],
+        [
+          "一方の金額にだけ含まれる料金がある",
+          "内訳を転記し、前払いの金額と、配達時の支払いと案内されている金額を分けます。"
+        ],
+        [
+          "ルートで同梱品の一つが対象外",
+          "そのルートの見積もりを一括発送の比較から外します。分割する場合は、新たな二件の送料と両方の梱包料金を合計します。"
+        ]
+      ]
+    }
+  },
+  "allchinabuy-tracking-order-parcel-status": {
+    "en": {
+      "heading": "Follow an international parcel across a carrier handoff",
+      "intro": "Start with the carrier named on the dispatch record. Save event wording exactly as shown, with the date, time zone and number used for the search.",
+      "columns": [
+        "What you see",
+        "Which record to check next"
+      ],
+      "rows": [
+        [
+          "A second tracking number appears",
+          "Look for an explicit association between the two numbers on the original carrier’s page or dispatch record. Use the linked number with the named local carrier."
+        ],
+        [
+          "One carrier says “arrived” and the next has no scan",
+          "Record the location attached to “arrived”. Check whether it names a transit hub or the destination, and whether the next carrier lists physical acceptance."
+        ],
+        [
+          "A delivery attempt is recorded",
+          "Open the local carrier’s official tracking page. Check the delivery instruction or collection point and any deadline before contacting the carrier."
+        ]
+      ]
+    },
+    "de": {
+      "heading": "Ein internationales Paket bei einem Zustellerwechsel verfolgen",
+      "intro": "Beginne beim Paketdienst auf dem Versandbeleg. Sichere den genauen Wortlaut des Ereignisses mit Datum, Zeitzone und abgefragter Nummer.",
+      "columns": [
+        "Anzeige",
+        "Nächster Abgleich"
+      ],
+      "rows": [
+        [
+          "Eine zweite Sendungsnummer erscheint",
+          "Suche beim ursprünglichen Paketdienst oder im Versandbeleg nach einer ausdrücklichen Verknüpfung der Nummern. Nutze die verknüpfte Nummer beim genannten lokalen Zusteller."
+        ],
+        [
+          "Ein Dienst meldet „angekommen“, beim nächsten fehlt ein Scan",
+          "Notiere den genannten Ort. Prüfe, ob es ein Transitknoten oder das Ziel ist und ob der nächste Dienst die physische Übernahme bestätigt."
+        ],
+        [
+          "Ein Zustellversuch ist erfasst",
+          "Öffne die offizielle Sendungsverfolgung des lokalen Zustellers. Prüfe Zustellhinweis, möglichen Abholort und Frist, bevor du ihn kontaktierst."
+        ]
+      ]
+    },
+    "fr": {
+      "heading": "Suivre un colis lors d’un changement de transporteur",
+      "intro": "Commencez par le transporteur indiqué sur le justificatif d’expédition. Enregistrez le libellé exact de l’événement, la date, le fuseau horaire et le numéro utilisé.",
+      "columns": [
+        "Ce que vous voyez",
+        "Quelle information consulter ensuite"
+      ],
+      "rows": [
+        [
+          "Un second numéro de suivi apparaît",
+          "Vérifiez le lien explicite entre les deux numéros sur la page du premier transporteur ou le justificatif d’envoi. Utilisez le numéro associé auprès du transporteur local désigné."
+        ],
+        [
+          "Un transporteur affiche « arrivé », le suivant n’a aucun scan",
+          "Relevez le lieu associé à « arrivé ». Vérifiez s’il s’agit d’un centre de transit ou de la destination et si le transporteur suivant confirme une prise en charge physique."
+        ],
+        [
+          "Une tentative de livraison est enregistrée",
+          "Ouvrez le suivi officiel du transporteur local. Vérifiez la consigne de livraison ou le point de retrait ainsi que la date limite avant de le contacter."
+        ]
+      ]
+    },
+    "es": {
+      "heading": "Seguir un envío internacional al cambiar de transportista",
+      "intro": "Empieza por el transportista que figura en el justificante de expedición. Guarda el texto exacto del evento, su fecha, zona horaria y el número consultado.",
+      "columns": [
+        "Lo que aparece",
+        "Qué registro consultar"
+      ],
+      "rows": [
+        [
+          "Aparece un segundo número de seguimiento",
+          "Busca una vinculación explícita entre los números en la página del primer transportista o en el justificante. Usa el número vinculado con el operador local indicado."
+        ],
+        [
+          "Un operador indica «llegado» y el siguiente no tiene escaneo",
+          "Anota el lugar asociado a «llegado». Comprueba si es un centro de tránsito o el destino y si el siguiente operador confirma la recepción física."
+        ],
+        [
+          "Se registra un intento de entrega",
+          "Abre la página oficial de seguimiento del operador local. Revisa las instrucciones de entrega o el punto de recogida y el plazo antes de contactar con él."
+        ]
+      ]
+    },
+    "pl": {
+      "heading": "Śledzenie paczki po przekazaniu innemu przewoźnikowi",
+      "intro": "Zacznij od przewoźnika wskazanego na potwierdzeniu nadania. Zapisz dokładną treść zdarzenia, datę, strefę czasową i użyty numer.",
+      "columns": [
+        "Co widać",
+        "Gdzie sprawdzić kolejny zapis"
+      ],
+      "rows": [
+        [
+          "Pojawił się drugi numer śledzenia",
+          "Poszukaj wyraźnego powiązania obu numerów na stronie pierwszego przewoźnika lub na potwierdzeniu nadania. Użyj powiązanego numeru u wskazanego lokalnego operatora."
+        ],
+        [
+          "Pierwszy operator podaje „dotarła”, drugi nie ma skanu",
+          "Zapisz lokalizację tego zdarzenia. Sprawdź, czy to węzeł tranzytowy, czy miejsce docelowe oraz czy drugi operator potwierdza fizyczne przyjęcie."
+        ],
+        [
+          "Odnotowano próbę doręczenia",
+          "Otwórz oficjalne śledzenie lokalnego przewoźnika. Przed kontaktem sprawdź instrukcje doręczenia lub punkt odbioru i ewentualny termin odbioru."
+        ]
+      ]
+    },
+    "ja": {
+      "heading": "国際配送で業者が替わったときの追跡方法",
+      "intro": "発送記録に記載された配送業者から調べます。追跡に使った番号と、履歴の原文、日付、タイムゾーンを保存します。",
+      "columns": [
+        "表示された内容",
+        "次に確認する記録"
+      ],
+      "rows": [
+        [
+          "別の追跡番号が表示された",
+          "元の配送業者のページか発送記録で、二つの番号が対応していることを確認します。表示された現地業者で対応する番号を使います。"
+        ],
+        [
+          "一社では「到着」だが次の業者に履歴がない",
+          "「到着」に記載された場所を控えます。経由地か目的地かを確認し、次の業者に現物の引受記録があるか調べます。"
+        ],
+        [
+          "配達を試みた記録がある",
+          "現地業者の公式追跡ページを開きます。問い合わせ前に、配達に関する案内や受取場所、受取期限を確認します。"
+        ]
+      ]
+    }
+  }
+}

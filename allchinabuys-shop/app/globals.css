@@ -66,3 +66,30 @@ html[lang="ja"]{line-break:strict}html[lang="ja"] .hero h1,html[lang="ja"] .info
 @media(max-width:1100px){.site-header,.home-page .site-header{height:auto;min-height:88px;padding:12px 16px;display:grid;grid-template-columns:auto 1fr;gap:12px}.site-header>nav{display:flex;grid-column:1/-1;grid-row:2;flex-wrap:wrap;gap:8px 16px;justify-content:flex-start;font-size:14px}.header-actions{justify-content:flex-end;min-width:0}.header-actions .language-switcher{gap:3px;max-width:none;justify-content:flex-end}.header-actions .language-switcher a{padding:5px;font-size:14px}.site-header .header-cta{display:none}.home-page .brand-logo img,.brand-logo img{width:116px}}
 @media(max-width:720px){
  .home-page .hero h1{font-size:40px;line-height:1.04}.home-page .hero-lede{font-size:16px;line-height:1.55}.home-page .eyebrow,.home-page .section-kicker{font-size:12px;line-height:1.4}.home-page .search input{font-size:14px;min-width:0}.home-page .search button{font-size:14px;padding:0 10px}.home-page .quick-links{font-size:14px;gap:10px;flex-wrap:wrap}.home-page .board-card,.home-page .board-note{height:125px}.home-page .board-product-overlay b{font-size:14px;line-height:1.25}.home-page .board-product-overlay small,.home-page .board-product-overlay i{font-size:12px}.home-page .board-note p{font-size:13px;line-height:1.45}.home-page .board-head{font-size:12px;line-height:1.3}.home-page .ticker{font-size:12px;flex-wrap:wrap;height:auto;min-height:36px;gap:6px 12px;padding:8px 14px}.home-page .ticker i{display:none}.home-page .section-heading h2,.home-page .guide-intro h2,.home-page .faq-section h2,.home-page .split-section h2{line-height:1.08}.home-page .section-heading>p,.home-page .guide-intro>p:not(.section-kicker),.home-page .editorial-copy>p:not(.section-kicker),.home-page .split-section article>p:not(.section-kicker),.home-page .faq-section>div>p:not(.section-kicker),.home-page details p{font-size:16px;line-height:1.55}.home-page .category-card{min-height:115px}.home-page .category-card h3{font-size:18px}.home-page .category-card p{font-size:14px;line-height:1.4}.home-page .product-visual{height:auto;aspect-ratio:1}.home-page .product-info h3{font-size:17px;line-height:1.2}.home-page .product-info p,.home-page .product-info small,.home-page .product-info>span{font-size:14px;line-height:1.4}.home-page .text-link,.home-page .button-dark,.home-page .view-pill,.home-page .split-section a{font-size:14px}.home-page .guide-steps{grid-template-columns:1fr}.home-page .guide-steps article{display:grid;grid-template-columns:28px 1fr;gap:10px;border-right:0}.home-page .guide-steps h3{font-size:17px;line-height:1.3}.home-page .guide-steps p{font-size:16px;line-height:1.5}.home-page .editorial-section{grid-template-columns:1fr}.home-page .editorial-image img{height:220px;aspect-ratio:1;object-fit:cover}.home-page .editorial-copy h2{line-height:1.1}.home-page .article-links b{font-size:17px;line-height:1.35}.home-page .article-links span,.home-page .article-links i{font-size:12px}.home-page .split-section{grid-template-columns:1fr}.home-page .check-grid span{font-size:14px}.home-page .parcel-line span,.home-page .parcel-line b{font-size:14px}.home-page .faq-section{grid-template-columns:1fr}.home-page summary{font-size:16px;line-height:1.4}.home-page footer>p,.home-page footer>div:not(.brand){font-size:14px;line-height:1.5}.home-page footer small{font-size:12px}.article-hero h1,.info-hero h1{font-size:clamp(36px,9vw,52px);line-height:1.1;overflow-wrap:anywhere}.article-dek,.articles-index-hero>p:last-child{font-size:16px;line-height:1.6}.article-meta{font-size:13px}.article-fact-strip{font-size:14px}.articles-index-hero h1{font-size:44px;line-height:1.08}.articles-index-card h3{font-size:25px;line-height:1.2}}
+
+.field-prose { max-width: 50rem; margin: 0 auto; padding: 1rem clamp(1rem, 4vw, 2rem) 3rem; color: #17211b; line-height: 1.7; }
+.field-prose section { padding-block: .85rem; }
+.field-prose h2, .guide-worksheet h2 { font-size: clamp(1.4rem, 3.2vw, 2rem); line-height: 1.16; margin: 1.3rem 0 .65rem; }
+.field-prose h3 { font-size: 1.2rem; line-height: 1.3; }
+.field-prose p, .guide-worksheet p { margin: .7rem 0 1rem; }
+.field-prose ul, .field-prose ol { padding-inline-start: 1.6rem; }
+.field-prose li { margin-block: .35rem; }
+.field-prose a, .guide-worksheet a { color: #17503a; text-decoration: underline; text-underline-offset: .18em; overflow-wrap: anywhere; }
+.field-prose code { font-size: .92em; overflow-wrap: anywhere; }
+.field-prose table, .guide-worksheet table { width: 100%; border-collapse: collapse; font-size: .92rem; line-height: 1.45; margin: 1rem 0; }
+.field-prose th, .field-prose td, .guide-worksheet th, .guide-worksheet td { padding: .68rem; text-align: start; vertical-align: top; border: 1px solid #bbc9bd; overflow-wrap: anywhere; }
+.field-prose thead, .guide-worksheet thead { background: #e4f1e2; color: #1b3a24; }
+.field-prose colgroup { display: none; }
+.guide-worksheet { min-width: 0; margin: 1rem 0; }
+.worksheet-scroll { max-width: 100%; overflow-x: auto; }
+.field-links { max-width: 72rem; margin: 1rem auto; padding-inline: clamp(.8rem, 3vw, 2rem); }
+.field-links a { white-space: normal; }
+@media(max-width: 640px) {
+  .field-prose { padding: .5rem 1rem 2rem; font-size: 1rem; }
+  .field-prose table { display: block; overflow-x: auto; }
+  .field-prose td, .field-prose th, .guide-worksheet td, .guide-worksheet th { padding: .46rem; }
+}
+
+.price-dateline { margin: 0 0 1rem; font-size: .92rem; line-height: 1.5; }
+.product-info small { display: block; }
+.shipping-panel > a + a { margin-inline-start: .6rem; }

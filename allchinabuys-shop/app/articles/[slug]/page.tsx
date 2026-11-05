@@ -5,6 +5,10 @@ import SiteHeader from "../../components/SiteHeader";
 import newArticles from "../newArticles";
 import octoberArticles from "../../../content/october-articles.json";
 import ProductCatalog from "../../components/ProductCatalog";
+import FieldGuide from "../../components/FieldGuide";
+import GuideWorksheet from "../../components/GuideWorksheet";
+import GuideLinks from "../../components/GuideLinks";
+import { fieldGuides, linkGuide, jacketGuide, freightGuide } from "../../fieldGuides";
 import ArticleTools from "../../components/ArticleTools";
 
 const MAIN = "https://www.cnfanssp.com";
@@ -114,7 +118,7 @@ const articles: Record<string, Article> = {
   },
   "warehouse-qc-photo-checklist": {
     title: "AllChinaBuy QC Photos: Warehouse Checklist Before Shipping",
-    seoTitle: "AllChinaBuy QC Photos: Warehouse Checklist 2026",
+    seoTitle: "AllChinaBuy QC Check: Which Warehouse Photos to Inspect",
     dek: "A category-neutral inspection process for reviewing warehouse photographs without pretending they guarantee product quality.",
     date: "August 26, 2026", read: "11 min read", label: "QC guide",
     verified: ["Official quality-inspection stage", "Photography before international delivery", "After-sales tools listed in Help Center"],
@@ -223,31 +227,43 @@ const articles: Record<string, Article> = {
 };
 
 export function generateStaticParams() {
-  return Object.keys(articles).map((slug) => ({ slug }));
+  return [...Object.keys(articles), ...Object.keys(fieldGuides)].map((slug) => ({ slug }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
-  const { slug } = await params; const a = articles[slug]; if (!a) return {};
+  const { slug } = await params;
+  if (fieldGuides[slug]) {
+    const { title, seoTitle, summary } = fieldGuides[slug];
+    const url = `https://allchinabuys.shop/articles/${slug}/`;
+    return { title: seoTitle, description: summary, alternates: { canonical: url },
+      openGraph: { title, description: summary, type: "article", url, images: ["/og.png"] },
+      twitter: { card: "summary_large_image", title, description: summary, images: ["/og.png"] } };
+  }
+  const a = articles[slug]; if (!a) return {};
   const keywords = a.keywords ?? [a.title.includes("Listing Identity") ? "AllChinaBuy listing identity verification" : a.title.includes("QC") ? "AllChinaBuy QC photos" : a.title.includes("Shipping") ? "AllChinaBuy shipping" : "AllChinaBuy spreadsheet", "AllChinaBuy product finds"];
   return { title: a.seoTitle ?? `${a.title} | AllChinaBuy Finds`, description: a.dek, keywords, alternates:{canonical:`https://allchinabuys.shop/articles/${slug}/`}, openGraph:{title:a.seoTitle ?? a.title,description:a.dek,type:"article",url:`https://allchinabuys.shop/articles/${slug}/`,images:[{url:"/og.png",width:1200,height:630,alt:a.title}]}, twitter:{card:"summary_large_image",title:a.seoTitle ?? a.title,description:a.dek,images:["/og.png"]} };
 }
 
 export default async function ArticlePage({ params }: { params: Promise<{ slug: string }> }) {
-  const { slug } = await params; const article = articles[slug]; if (!article) notFound();
+  const { slug } = await params;
+  if (fieldGuides[slug]) return <FieldGuide slug={slug}/>;
+  const article = articles[slug]; if (!article) notFound();
   const articleText = article.sections.flatMap(section => [section.heading, ...section.paragraphs]).join(" ");
   const publishDate = article.dateISO ?? (slug === "allchinabuy-listing-identity-verification" ? "2026-08-28" : "2026-08-26");
+  const nextGuide = /shipping|fees|packing|parcel-status/.test(slug) ? freightGuide
+    : /shoes|jerseys|hoodies|qc-photo/.test(slug) ? jacketGuide : linkGuide;
   const relatedSlugs = slug.includes("shipping") || slug.includes("packing") || slug.includes("fees") ? ["allchinabuy-parcel-packing-consolidation", "plan-allchinabuy-shipping", "allchinabuy-fees-payment-methods", "allchinabuy-tracking-order-parcel-status"] : slug.includes("tracking") || slug.includes("status") || slug.includes("maintenance") || slug.includes("refund") ? ["allchinabuy-website-maintenance-order-checks", "allchinabuy-order-status-explained", "allchinabuy-tracking-order-parcel-status", "allchinabuy-return-refund-guide"] : ["allchinabuy-shoes-spreadsheet-sizing-qc", "allchinabuy-football-jerseys-sizing-details", "allchinabuy-hoodies-measurements-fit-qc", "warehouse-qc-photo-checklist"];
   const relatedArticles = relatedSlugs.filter(s=>s!==slug).slice(0,3).map(s=>[s,articles[s]] as const);
-  const schema = {"@context":"https://schema.org","@graph":[{"@type":"Article","headline":article.title,"description":article.dek,"datePublished":publishDate,"dateModified":"2026-10-07","wordCount":articleText.trim().split(/\s+/).length,"inLanguage":"en","image":"https://allchinabuys.shop/og.png","author":{"@type":"Organization","name":"AllChinaBuy Finds Research Desk"},"publisher":{"@type":"Organization","name":"AllChinaBuy Finds"},"mainEntityOfPage":`https://allchinabuys.shop/articles/${slug}/`},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://allchinabuys.shop/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://allchinabuys.shop/articles/"},{"@type":"ListItem","position":3,"name":article.title,"item":`https://allchinabuys.shop/articles/${slug}/`}]}]};
+  const schema = {"@context":"https://schema.org","@graph":[{"@type":"Article","headline":article.title,"description":article.dek,"datePublished":publishDate,"dateModified":"2026-11-05","wordCount":articleText.trim().split(/\s+/).length,"inLanguage":"en","image":"https://allchinabuys.shop/og.png","author":{"@type":"Organization","name":"AllChinaBuy Finds Research Desk"},"publisher":{"@type":"Organization","name":"AllChinaBuy Finds"},"mainEntityOfPage":`https://allchinabuys.shop/articles/${slug}/`},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://allchinabuys.shop/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://allchinabuys.shop/articles/"},{"@type":"ListItem","position":3,"name":article.title,"item":`https://allchinabuys.shop/articles/${slug}/`}]}]};
   return <main className="article-page">
     <SiteHeader />
     <article>
       <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(schema)}} />
-      <header className="article-hero"><p className="section-kicker">{article.label}</p><h1>{article.title}</h1><p className="article-dek">{article.dek}</p><div className="article-meta"><span>{article.date}</span><span>Updated 7 October 2026</span><span>{article.read}</span><span>{articleText.trim().split(/\s+/).length.toLocaleString("en-US")} words</span><span>Independent guide</span></div></header>
-      <div className="article-fact-strip"><b>Reading context</b>{(slug in octoberArticles ? article.verified : ["Historical workflow guidance", "Platform maintenance observed 7 October 2026", "Confirm current account-specific conditions"]).map(item=><span key={item}>✓ {item}</span>)}</div>
+      <header className="article-hero"><p className="section-kicker">{article.label}</p><h1>{article.title}</h1><p className="article-dek">{article.dek}</p><div className="article-meta"><span>{article.date}</span><span>Updated 5 November 2026</span><span>{article.read}</span><span>{articleText.trim().split(/\s+/).length.toLocaleString("en-US")} words</span><span>Independent guide</span></div></header>
+      <div className="article-fact-strip"><b>Reading context</b>{(slug in octoberArticles ? article.verified : ["Historical workflow guidance", "Platform maintenance observed 5 November 2026", "Confirm current account-specific conditions"]).map(item=><span key={item}>✓ {item}</span>)}</div>
       {slug.includes("shoes-spreadsheet") ? <ProductCatalog category="Shoes"/> : slug.includes("football-jerseys") ? <ProductCatalog category="Jerseys"/> : slug.includes("hoodies-measurements") ? <ProductCatalog category="Hoodies"/> : null}
       <ArticleTools slug={slug}/>
-      <div className="article-layout"><aside><span>IN THIS GUIDE</span>{article.sections.map((s,i)=><a href={`#section-${i}`} key={s.heading}>{String(i+1).padStart(2,"0")} {s.heading}</a>)}</aside><div className="article-content">{article.sections.map((s,i)=><section id={`section-${i}`} key={s.heading}><span className="article-num">{String(i+1).padStart(2,"0")}</span><h2>{s.heading}</h2>{s.paragraphs.map(p=><p key={p}>{p}</p>)}</section>)}<div className="fact-note"><b>Fact-check note</b><p>The official AllChinaBuy homepage displayed maintenance on 7 October 2026. Older platform instructions are historical context, not confirmation of current availability. Product images illustrate destination listings and do not establish authenticity, warehouse inspection or personal testing.</p></div><section className="related-reading"><span className="article-num">NEXT</span><h2>Related AllChinaBuy guides</h2><div>{relatedArticles.map(([relatedSlug, related])=><a href={`/articles/${relatedSlug}/`} key={relatedSlug}><small>{related.label}</small><b>{related.title}</b><span>Read guide →</span></a>)}</div></section></div></div>
+      <div className="article-layout"><aside><span>IN THIS GUIDE</span>{article.sections.map((s,i)=><a href={`#section-${i}`} key={s.heading}>{String(i+1).padStart(2,"0")} {s.heading}</a>)}</aside><div className="article-content">{article.sections.map((s,i)=><section id={`section-${i}`} key={s.heading}><span className="article-num">{String(i+1).padStart(2,"0")}</span><h2>{s.heading}</h2>{s.paragraphs.map(p=><p key={p}>{p}</p>)}</section>)}<GuideWorksheet slug={slug}/>{slug === "allchinabuy-website-maintenance-order-checks" && <p><a href="https://www.allchinabuy.com/" data-citation="true" rel="external noreferrer">Official maintenance notice</a></p>}<GuideLinks slugs={[nextGuide]}/><div className="fact-note"><b>Fact-check note</b><p>The official homepage still showed a maintenance notice on 5 November 2026. For an existing order, check its last recorded event and the contact details on the official notice.</p></div><section className="related-reading"><span className="article-num">NEXT</span><h2>Related AllChinaBuy guides</h2><div>{relatedArticles.map(([relatedSlug, related])=><a href={`/articles/${relatedSlug}/`} key={relatedSlug}><small>{related.label}</small><b>{related.title}</b><span>Read guide →</span></a>)}</div></section></div></div>
     </article>
     <section className="info-cta"><div><p className="section-kicker">Next step</p><h2>Turn the guide into a short, verified list.</h2></div><a href={`${MAIN}/AllProducts/`} target="_blank" rel="noopener noreferrer">Browse current products ↗</a></section>
     <SiteFooter />
