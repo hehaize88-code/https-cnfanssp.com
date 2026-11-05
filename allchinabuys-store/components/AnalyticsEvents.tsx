@@ -21,6 +21,13 @@ export function AnalyticsEvents() {
       if (!(link instanceof HTMLAnchorElement)) return;
 
       const url = new URL(link.href, window.location.href);
+      if (url.origin === location.origin && link.closest("[data-article-body]") && /^(?:\/(?:de|fr|es|it|pl))?\/products\/[^/]+\/?$/.test(url.pathname)) {
+        sendEvent("article_product_click", {
+          source_path: location.pathname,
+          product_path: url.pathname,
+          language: document.documentElement.lang,
+        });
+      }
       if (url.hostname !== "www.cnfanssp.com" && url.hostname !== "cnfanssp.com") return;
 
       sendEvent("outbound_catalog_click", {

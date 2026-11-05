@@ -1,3 +1,4 @@
+import fieldGuides from "./seo-field-guides.json";
 import newArticles from "./seo-articles-new.json";
 import { operationsSeoArticles } from "./seo-articles-operations";
 
@@ -5,6 +6,7 @@ export type ArticleSection = {
   heading: string;
   paragraphs: string[];
   checklist?: string[];
+  productSlugs?: string[];
   table?: { headers: string[]; rows: string[][] };
 };
 
@@ -28,9 +30,9 @@ export type SeoArticle = {
 const spreadsheetSeoArticles: SeoArticle[] = [
   {
     "slug": "acbuy-shoes-spreadsheet-sizing-qc-photos",
-    "title": "AllChinaBuy Shoes Spreadsheet: Sizing, Finds and QC Photos",
-    "metaTitle": "AllChinaBuy Shoes Spreadsheet 2026: Sizing, Finds & QC",
-    "description": "Use an ACBuy shoes spreadsheet to compare sneaker listings, translate size charts, inspect warehouse QC photos and keep the exact product link attached to every decision.",
+    "title": "AllChinaBuy Shoes Spreadsheet: Compare Sizing and QC Photos",
+    "metaTitle": "AllChinaBuy Shoes Spreadsheet: Sizing, QC Photos & Two Examples",
+    "description": "Compare Autry and AMIRI MA-1 records in the AllChinaBuy shoes spreadsheet. Check the variant, measure an insole and match QC photos to your own pair.",
     "kicker": "Shoes · Spreadsheet field guide",
     "read": "12 min read",
     "primaryKeyword": "AllChinaBuy shoes spreadsheet",
@@ -46,6 +48,36 @@ const spreadsheetSeoArticles: SeoArticle[] = [
       "This guide turns that idea into a repeatable shoe-research workflow. It does not label a seller, batch or pair as authentic, approved or guaranteed. Instead, it explains how to use an AllChinaBuy shoe find as a starting record, how to compare the information visible on the source page, and how to read the warehouse evidence for the exact pair that arrived. The objective is fewer preventable mistakes: wrong color, wrong size system, missing accessories, mismatched pairs or a decision based only on a polished main image."
     ],
     "sections": [
+      {
+        "heading": "What to check on the Autry and AMIRI MA-1 records",
+        "paragraphs": [
+          "Start with the question that could change your choice. For the Autry listing, that might be whether the insole matches a pair you already wear. For the AMIRI MA-1, check the style first. The catalog groups nine styles under one Weidian item ID, so two buyers can open the same page and choose different shoes.",
+          "Neither catalog record gives a measured insole length for the pair you will receive. If the insole is removable, compare a photograph of it lying flat beside a ruler with an insole measured the same way at home. For QC, match the photos to your own warehouse record and selected size. Catalog images alone do not establish who photographed a particular pair."
+        ],
+        "table": {
+          "headers": [
+            "Shoe and Weidian item ID",
+            "Save from the listing",
+            "Check on your own pair"
+          ],
+          "rows": [
+            [
+              "Autry · 7645681448",
+              "Selected color and labeled size",
+              "Compare both side panels in the same lighting. Ask for a measured insole if the fit remains unclear."
+            ],
+            [
+              "AMIRI MA-1 · 7638942248",
+              "The selected style thumbnail and size",
+              "Compare the ordered style with the pair in the warehouse photos, then check the size label and sole shape."
+            ]
+          ]
+        },
+        "productSlugs": [
+          "amiri-ma-1-sneakers",
+          "autry-shoes"
+        ]
+      },
       {
         "heading": "Begin with a complete shoe record",
         "paragraphs": [
@@ -104,7 +136,7 @@ const spreadsheetSeoArticles: SeoArticle[] = [
       }
     ],
     "conclusion": "The best ACBuy shoes spreadsheet behaves like a compact case file: exact link, option, size method, dated price, warehouse evidence and a written decision. Use the local shoes index to compare current records, then open the corresponding live product only after the identity and fit questions are clear. That workflow turns a product list into a practical buying tool.",
-    "updated": "2026-10-08"
+    "updated": "2026-11-05"
   },
   {
     "slug": "acbuy-hoodie-spreadsheet-measurements-qc",
@@ -211,6 +243,10 @@ const spreadsheetSeoArticles: SeoArticle[] = [
         "paragraphs": [
           "Start with the current product URL and product ID, then save the selected graphic, color, size, quantity, seller reference, price and check date. If one page contains several designs, the general listing title is not enough. Add the option code and thumbnail. If a design is shown on several shirt colors, record both fields separately. This prevents a spreadsheet user from opening a row titled only 'graphic tee' and choosing an option that was never evaluated.",
           "Preserve the source chart and original units. Translations can make terms such as bust, half chest and chest circumference appear interchangeable when they are not. Add a note explaining the measurement interpretation you used. If the chart contains inconsistent values, mark the row for verification instead of smoothing the numbers into a range that looks reasonable."
+        ],
+        "productSlugs": [
+          "corteiz-rules-the-world-t-shirt",
+          "loewe-anagram-t-shirt"
         ]
       },
       {
@@ -271,7 +307,7 @@ const spreadsheetSeoArticles: SeoArticle[] = [
       }
     ],
     "conclusion": "An ACBuy T-shirt spreadsheet earns trust through method: stable link, exact option, consistent measurements and QC notes tied to visible evidence. It should make fit choices clearer without pretending to know what photographs cannot prove. Use the category and search pages to locate candidates, then keep the selected record complete until the warehouse decision is finished.",
-    "updated": "2026-10-08"
+    "updated": "2026-11-05"
   },
   {
     "slug": "acbuy-jacket-spreadsheet-weight-fit-qc",
@@ -623,9 +659,9 @@ const spreadsheetSeoArticles: SeoArticle[] = [
   },
   {
     "slug": "acbuy-w2c-links-taobao-weidian-product-id",
-    "title": "AllChinaBuy W2C Links: Verify Taobao and Weidian Product IDs",
-    "metaTitle": "AllChinaBuy W2C Links: Verify Taobao & Weidian Product IDs",
-    "description": "Preserve and verify ACBuy W2C links by separating destination URLs, marketplace product IDs, seller records, selected variants and dated evidence.",
+    "title": "AllChinaBuy Link Not Working? How to Find the Original Item",
+    "metaTitle": "AllChinaBuy Link Not Working? Find the Weidian or Taobao Item",
+    "description": "Recover a broken AllChinaBuy product link. See where to find the marketplace item ID and how to check the seller and variant before saving a replacement.",
     "kicker": "W2C · Link verification",
     "read": "13 min read",
     "primaryKeyword": "AllChinaBuy W2C links",
@@ -640,6 +676,41 @@ const spreadsheetSeoArticles: SeoArticle[] = [
       "This guide explains a link-first workflow for Taobao and Weidian product records used with ACBuy or AllChinaBuy searches. It does not claim that a URL proves seller reliability, authenticity or stock. It shows how to preserve identifiers, verify redirects, match options and recover from dead links without silently replacing the original with an unverified lookalike."
     ],
     "sections": [
+      {
+        "heading": "Which number belongs in the Weidian link?",
+        "paragraphs": [
+          "Take the AMIRI MA-1 listing. Its catalog address ends in /AllProducts/3842.html. Open the catalog entry and look for the link labeled “Weidian Link”. Its address contains itemID=7638942248. Save the marketplace name and that ID together. If the agent link stops opening, this gives you a second route to the original listing.",
+          "Open the seller page and match the style and size you originally selected. The catalog title lists nine styles under this one item ID. If the seller page is unavailable, keep your saved ID and mark the link for a later check. Enter a similar-looking result as a separate candidate until you can match the seller, item and option."
+        ],
+        "table": {
+          "headers": [
+            "Where you see it",
+            "Example",
+            "What to do with it"
+          ],
+          "rows": [
+            [
+              "Catalog address",
+              "/AllProducts/3842.html",
+              "Use 3842 to locate the catalog entry."
+            ],
+            [
+              "Weidian destination",
+              "itemID=7638942248",
+              "Keep this number with the original Weidian URL."
+            ],
+            [
+              "Style and size",
+              "Nine styles in the catalog title",
+              "Save the selected option label or thumbnail together with the size."
+            ]
+          ]
+        },
+        "productSlugs": [
+          "amiri-ma-1-sneakers",
+          "autry-shoes"
+        ]
+      },
       {
         "heading": "Keep the original and destination URLs",
         "paragraphs": [
@@ -705,7 +776,7 @@ const spreadsheetSeoArticles: SeoArticle[] = [
       }
     ],
     "conclusion": "Reliable ACBuy W2C links preserve the discovery URL, resolved source, marketplace product ID, seller context, selected option and check date. They do not treat a thumbnail as identity or a replacement as equivalent without evidence. With that structure, Taobao and Weidian links remain useful even when pages change, and visitors can understand the record before opening the live catalog. Recheck any saved link before a repeat order, because the same URL can present updated options or seller content later. The audit trail should show what was observed on the recorded date without implying that the current page or future item will remain identical.",
-    "updated": "2026-10-08"
+    "updated": "2026-11-05"
   },
   {
     "slug": "compare-acbuy-spreadsheet-listings-seller-variant-qc",
@@ -895,7 +966,7 @@ const spreadsheetSeoArticles: SeoArticle[] = [
   }
 ];
 
-export const seoArticles: SeoArticle[] = [...(newArticles as SeoArticle[]), ...spreadsheetSeoArticles, ...operationsSeoArticles];
+export const seoArticles: SeoArticle[] = [...(fieldGuides as SeoArticle[]), ...(newArticles as SeoArticle[]), ...spreadsheetSeoArticles, ...operationsSeoArticles];
 
 export function getSeoArticle(slug: string) {
   return seoArticles.find((article) => article.slug === slug);

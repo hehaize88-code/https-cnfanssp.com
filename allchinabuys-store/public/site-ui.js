@@ -13,6 +13,14 @@
   window.gtag('js',new Date());window.gtag('config','G-Q81YBM09Z1');
   const tag=document.createElement('script');tag.async=true;tag.src='https://www.googletagmanager.com/gtag/js?id=G-Q81YBM09Z1';document.head.appendChild(tag);
   const catalog=url=>['www.cnfanssp.com','cnfanssp.com'].includes(url.hostname);
+  document.addEventListener('click',event=>{
+    const link=event.target instanceof Element?event.target.closest('[data-article-body] a[href]'):null;
+    if(!link)return;
+    const product=new URL(link.href,location.href);
+    if(product.origin===location.origin && /^(?:\/(?:de|fr|es|it|pl))?\/products\/[^/]+\/?$/.test(product.pathname)){
+      window.gtag('event','article_product_click',{source_path:location.pathname,product_path:product.pathname,language,transport_type:'beacon'});
+    }
+  });
   document.addEventListener('click',event=>{const link=event.target instanceof Element?event.target.closest('a[href]'):null;if(!link)return;const url=new URL(link.href,location.href);if(!catalog(url))return;window.gtag('event','outbound_catalog_click',{link_url:url.href,link_text:(link.textContent||link.getAttribute('aria-label')||'').trim().slice(0,100),source_path:location.pathname,language,destination_type:/\/AllProducts\/\d+\.html/.test(url.pathname)?'product':'category',transport_type:'beacon'});});
   document.addEventListener('submit',event=>{const form=event.target;if(!(form instanceof HTMLFormElement))return;const url=new URL(form.action,location.href);if(!catalog(url)||url.pathname!=='/search.html')return;window.gtag('event','catalog_search',{search_term:String(new FormData(form).get('keywords')||'').trim().slice(0,100),source_path:location.pathname,language,transport_type:'beacon'});});
 })();

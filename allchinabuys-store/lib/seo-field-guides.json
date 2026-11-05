@@ -1,0 +1,149 @@
+[
+  {
+    "slug": "allchinabuy-order-status-during-maintenance",
+    "published": "2026-11-05",
+    "updated": "2026-11-05",
+    "title": "AllChinaBuy Order Status During Maintenance: Which Number Should You Check?",
+    "metaTitle": "AllChinaBuy Order Status During Maintenance: Check Your ID",
+    "description": "Trace an AllChinaBuy order from purchase to warehouse to parcel using the right reference. See what you can check without signing in and what to ask support.",
+    "kicker": "Orders and parcel records",
+    "read": "8 min read",
+    "primaryKeyword": "AllChinaBuy order status",
+    "supportingKeywords": [
+      "AllChinaBuy website maintenance",
+      "AllChinaBuy warehouse order",
+      "AllChinaBuy tracking number"
+    ],
+    "introduction": [
+      "On 5 November 2026, the AllChinaBuy homepage displayed a maintenance notice. It directed customers with order questions to its support team and gave no reopening date. If you have an order in progress, the notice tells you about the website. To find out what happened to your purchase, start with the most recent record you can connect to that specific item.",
+      "A product bought from a seller, an item received at a warehouse and a parcel handed to an international carrier are three different things. Each can acquire its own reference. Even if the dashboard is unavailable, an old confirmation, a saved warehouse photo or a dispatch email may point to the right next step. Here is how to read what you already have and ask one question that someone can actually answer."
+    ],
+    "sections": [
+      {
+        "heading": "Start with the last dated record",
+        "paragraphs": [
+          "Search your inbox and saved screenshots for the item name and the approximate purchase date. Open the original message so that you can see who sent it, when it arrived and which stage it describes. Write down the label beside each number exactly as it appeared. A long string of digits can be an order reference, a marketplace item ID or a domestic parcel number. Its length alone cannot identify it.",
+          "Make a short timeline with three columns: date as shown, event in the original wording, and reference attached to it. If an email and a screenshot show different times, preserve the time zone where it is visible. Leave a gap when you lack evidence. For example, “paid on Monday” followed by “warehouse photo saved Thursday” supports an arrival by the time of the photo; it does not give you an exact arrival time or a later dispatch date."
+        ]
+      },
+      {
+        "heading": "If you only have a purchase confirmation",
+        "paragraphs": [
+          "The purchase reference lets support locate the shopping transaction. Match the item name, quantity, selected size or colour and amount to the confirmation. If you bought two shirts in one checkout, note whether you received one combined order reference or separate item lines. Copy the reference for the shirt you are asking about and include the other only if it helps distinguish them. A bank transaction reference can help identify a payment, but it cannot tell you which warehouse shelf received the shirt.",
+          "Suppose your record shows a paid order for a blue medium shirt and no later update. A focused question would be: “I have order [reference] for the blue shirt in size M, placed on [date]. Could you confirm whether the seller sent this item and whether there is a domestic shipment reference?” This asks for the next missing event. If support confirms dispatch within China, keep the carrier name and domestic number together; that leg ends at the receiving warehouse."
+        ]
+      },
+      {
+        "heading": "If you have a warehouse item number or QC photos",
+        "paragraphs": [
+          "A warehouse record typically identifies an individual stored item. A photo can help connect that record to the item you chose when it shows a matching reference or comes from the same saved item page. Write down the warehouse number and the visible size, colour or option. If your saved image shows only a shoe with no label, a second screenshot that includes the warehouse record and its thumbnail can make the connection clearer.",
+          "Imagine you received QC photos for a pair of shoes, then lost dashboard access before checking the parcel screen. Keep the photo date separate from the last date you saw the item listed. Ask whether the item is still recorded under that warehouse number and whether it has been assigned to a parcel. If storage timing matters, ask for the applicable date in your case. The public maintenance notice provides no individual storage balance, extension or release decision."
+        ]
+      },
+      {
+        "heading": "If you have a parcel reference or tracking number",
+        "paragraphs": [
+          "A parcel submission can have an internal booking number before a carrier publishes tracking. Check the heading in the dispatch message. If it names a carrier and supplies a tracking number, enter that number on the carrier’s own tracking page. Keep any leading zeroes and check for spaces introduced when copying from a screenshot. Save the wording and time of the latest event, particularly if you expect another carrier to handle the final delivery.",
+          "Read the first result as narrowly as it is written. A label-created or shipment-information event records electronic details. A collection or acceptance scan is stronger evidence that the named carrier received the parcel. If there is no result, check whether you copied the booking reference or the number for delivery within China. When the carrier and number appear correct, ask the sender to confirm the handoff and the number intended for destination-country tracking. An empty tracking page by itself does not establish a loss."
+        ]
+      },
+      {
+        "heading": "When one order becomes several items or parcels",
+        "paragraphs": [
+          "A single payment can cover several items that arrive on different dates. Several warehouse items can also be packed into one international parcel. Make one line per item and keep the references alongside each other. For example, put “shirt, order A, warehouse item B, parcel C” on one line and “cap, order A, warehouse item D, parcel unconfirmed” on the next. These letters illustrate relationships; the actual format may differ.",
+          "If parcel C receives a delivery scan, apply it only to the items you can link to C. A photo of the cap at the warehouse does not establish that the cap was inside the delivered package. Look for the saved packing list or a message that connects item D to that parcel. If neither is available, ask support to confirm the item-to-parcel mapping. That is a different request from asking a carrier to investigate a missing delivery."
+        ]
+      },
+      {
+        "heading": "What to check without signing in",
+        "paragraphs": [
+          "Open the platform homepage directly to read its current announcement; write down the date you checked. For a dispatched parcel, go to the named carrier and keep a copy of the last public scan. For a purchase or warehouse question, use the contact details currently displayed on the official homepage. A spreadsheet listing or its marketplace product ID can identify a seller’s product, but neither gives access to a private order or a warehouse record.",
+          "Prepare a concise message before opening the support channel: “I’m checking [item and option]. My last confirmed event was [event] on [date]. The matching reference is [reference and type]. Could you confirm [one missing fact]?” Attach the relevant part of a receipt or screenshot only if it helps resolve that fact. Crop other orders, payment credentials and unrelated personal details. Keep the original privately in case you later need to show a clearer view of the same event."
+        ]
+      },
+      {
+        "heading": "What to do with the answer",
+        "paragraphs": [
+          "Add the reply and its date to the same timeline. If support supplies a new reference, record what it refers to before trying it elsewhere. For example, a warehouse receipt number helps identify the stored item; a separate carrier number belongs beside the parcel entry. If the reply gives only a general status, follow up in the same conversation with the outstanding question and the last reference that both sides can identify.",
+          "When the website becomes accessible to you again, compare the current records with your saved timeline. Verify the item, parcel contents and address within your account before making a fresh submission or repeating a payment. If the new information contradicts a previous answer, keep both dated records and ask which one is current. This preserves a usable history even when there are long gaps between updates."
+        ]
+      }
+    ],
+    "conclusion": "Begin with one item and the latest event you can document. Use its order number for a purchase enquiry, its warehouse number for a storage or packing question, and its carrier tracking number for a dispatched parcel. The most useful next step is the one that establishes the next missing link in your own order history."
+  },
+  {
+    "slug": "amiri-ma-1-nine-styles-variant-qc",
+    "published": "2026-11-05",
+    "updated": "2026-11-05",
+    "categorySlug": "shoes",
+    "title": "AMIRI MA-1 on AllChinaBuy: Match the Variant to Your QC Photos",
+    "metaTitle": "AMIRI MA-1 AllChinaBuy Guide: Nine Styles and QC Photos",
+    "description": "Trace catalog record 3842 to its Weidian item, save the selected style and size, and compare the warehouse pair with the option you actually chose.",
+    "kicker": "Sneaker case study",
+    "read": "8 min",
+    "primaryKeyword": "AMIRI MA-1 AllChinaBuy",
+    "supportingKeywords": [
+      "AMIRI MA-1 QC photos",
+      "AllChinaBuy shoe variants",
+      "Weidian item ID"
+    ],
+    "introduction": [
+      "The AllChinaBuy finds index has one AMIRI MA-1 record whose source title mentions nine styles. If you send the link to a friend, the page can open on a different thumbnail from the one you had in mind. The same ambiguity follows the link into a shopping list or a support conversation. The question to settle is precise: which selection did you save, and can the photographs of the pair assigned to your order be compared with it?",
+      "On 5 November 2026 we checked the catalog entry ending in /AllProducts/3842.html and its outgoing Weidian link. They establish a starting point for a comparison. The public entry supplies neither a measurement of the pair you will receive nor photographs assigned to your own order. The following example shows what to save at each stage and how to use it if two images appear to disagree."
+    ],
+    "sections": [
+      {
+        "heading": "Follow 3842 to the marketplace listing",
+        "paragraphs": [
+          "Start with the two numbers. The catalog uses 3842 in its own address. Its Weidian link contains itemID=7638942248, and the same ten digits appear beside the item title on the source record. Write the platform beside the number when recording it. A search for “3842” in your order history can lead nowhere because that number belongs to the catalog. The longer number identifies the marketplace listing, including the different choices grouped under that listing.",
+          "There is an easy control for a mixed-up browser tab. The Autry Shoes record in the same index links to Weidian item 7645681448. If that number appears in the row you labelled MA-1, you have copied a different product. Reopen the MA-1 catalog entry and follow its marketplace link again. Changing the product name in your notes leaves the underlying mismatch in place. If an old link opens a replacement listing with a different ID, start a separate record for it."
+        ],
+        "productSlugs": [
+          "amiri-ma-1-sneakers"
+        ]
+      },
+      {
+        "heading": "Save the choice before the thumbnail changes",
+        "paragraphs": [
+          "“Nine styles” is the wording of the catalog title on the date checked. It tells you why the page link alone is ambiguous. The set of currently available options may change, and the title gives you no reliable way to reconstruct an earlier selection. Select the style on the seller page if it is accessible, then save the option wording as displayed, its thumbnail, and any code printed next to it. Keep the original wording beside any translation you use for searching.",
+          "Select the size as a second step and read the resulting summary. A screenshot of the size grid with several buttons visible leaves the chosen size unclear unless the highlight or summary is legible. Capture the style and size together where possible. If the page resets the style when you change size, repeat the check in the opposite order. An unavailable combination belongs in your notes as unavailable on that date, even if the catalog still shows the style in its gallery."
+        ]
+      },
+      {
+        "heading": "Keep three different sets of pictures apart",
+        "paragraphs": [
+          "A gallery image is useful for recognizing the listing. The selected option thumbnail is more useful for recognizing the choice. The warehouse image linked to your order is the one that lets you examine the actual pair. Give these files separate names or columns. If another buyer has shared warehouse pictures for the same Weidian item, retain them as a reference with their source. They describe that buyer's pair and may show a different option from the same page.",
+          "Suppose the front gallery picture shows a dark accent and your selected thumbnail shows a light accent. That difference alone gives you little reason to open a dispute. Look for the saved option summary and the corresponding detail on the warehouse pair. If the warehouse image shows only the opposite side, the comparison is still open. Ask for the side that contains the detail, or for the option label where one is present. A second wide shot from the original angle cannot settle that question."
+        ]
+      },
+      {
+        "heading": "Compare details that a photograph can actually resolve",
+        "paragraphs": [
+          "Begin with the features visible in both pictures. Look at the position of contrasting panels, the shape of the sole edge in profile and the placement of a label when the reference shows one. Pick two features before attempting to match a shade. White balance, reflections and viewing angle can make the same material appear lighter. If both the background and the shoe change tone between shots, give more weight to the panel boundaries than to the apparent colour alone.",
+          "Check each shoe individually. A single side view can conceal the second shoe and its label. If your unresolved question concerns the pair matching, request a frame showing both shoes side by side and a legible view of both size labels. A box label can help associate the packaging with your order, but each shoe gives you a more direct check. Save the original files alongside any crop you mark up so support can see where the enlarged detail came from."
+        ]
+      },
+      {
+        "heading": "Ask for a measurement with clear endpoints",
+        "paragraphs": [
+          "If size remains uncertain, choose a well-fitting shoe you already own and decide which measurement you can reproduce. For removable insoles, place the insole flat with the measuring scale visible from heel to longest toe. Record the unit and both endpoints. Ask for the same view of the selected MA-1 pair if its insole can be removed without damage. A photograph of a ruler beside the exterior sole measures a different length and should be recorded separately.",
+          "For example, a readable request is “Please photograph the removable insole of the selected size from directly above, with the whole scale and both ends in frame.” If the insole is fixed, ask what can be measured instead and retain that limitation in your notes. Comparing like with like is more useful than converting a blurred ruler into a precise number. Width, lining and toe shape may still affect fit even when the lengths appear close."
+        ]
+      },
+      {
+        "heading": "Decide what to ask when the records disagree",
+        "paragraphs": [
+          "Take a case where the marketplace ID matches, the order confirms the selected size, and the warehouse image appears to show a different accent. State the exact discrepancy and send the selected thumbnail together with the relevant warehouse image. A useful question is “Can you confirm the option code on this pair and show the outside panel in the same orientation as the saved thumbnail?” Include the private order reference only when contacting the official service handling that order.",
+          "If both shoe labels show the size you chose and the extra view matches the selected panel, keep the response with the order. If the labels show a different size, the issue can be described without debating colour or camera angles. Ask the service to review the recorded selection and outline the available options before dispatch. If no clear label or extra view is available, record what remains uncertain before deciding whether to proceed."
+        ]
+      },
+      {
+        "heading": "Keep a record you can reopen later",
+        "paragraphs": [
+          "A useful final entry fits in one row: catalog 3842, Weidian 7638942248, selected option wording, selected size, date checked, warehouse reference and unresolved question. Attach links or filenames for the images in their respective columns. If a second person needs to investigate the choice, they should be able to open the same listing, identify the intended option and see the actual uncertainty without having to interpret a folder full of unnamed screenshots."
+        ]
+      }
+    ],
+    "conclusion": "The catalog number gets you back to the record. The marketplace ID gets you back to the listing. The saved option and the warehouse evidence let you compare the particular pair. For this MA-1 entry, preserving all three connections is more useful than treating nine styles as one product photograph."
+  }
+]

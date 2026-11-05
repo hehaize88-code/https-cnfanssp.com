@@ -6,6 +6,7 @@ import { categories, guides, products } from "@/lib/data";
 import { seoArticles } from "@/lib/seo-articles";
 
 const featured = products[0];
+const recentProducts = [...products].sort((a, b) => Date.parse(b.updated) - Date.parse(a.updated)).slice(0, 6);
 
 export default function Home() {
   return (
@@ -13,7 +14,7 @@ export default function Home() {
       <main className="index-home">
         <section className="index-intro section-shell">
           <div className="index-masthead">
-            <p><span>Independent product index</span><b>Edition 10 / 2026</b></p>
+            <p><span>Independent product index</span><b>Edition 11 / 2026</b></p>
             <div>
               <h1>AllChinaBuy Finds<br /><em>Product and QC Guides.</em></h1>
               <p className="index-deck">Compare product records, check sizing and warehouse photos, then open the matching catalog page.</p>
@@ -41,7 +42,7 @@ export default function Home() {
               <SearchBox />
               <div className="record-head"><span>ID</span><span>Listing</span><span>Group</span><span>Price</span><span>Open</span></div>
               <div className="record-list">
-                {products.slice(0, 6).map((product, index) => (
+                {recentProducts.map((product, index) => (
                   <article className="record-row" key={product.slug}>
                     <span className="record-id">{String(index + 1).padStart(2, "0")}</span>
                     <span className="record-product"><a href={product.destination} target="_blank" rel="noopener noreferrer" aria-label={`Open ${product.name} on the live catalog`}><img src={product.image} alt={product.name} loading="lazy" width="48" height="48" /></a><span><Link href={`/products/${product.slug}`}><b>{product.name}</b></Link><small>Source checked · {product.updated}</small></span></span>

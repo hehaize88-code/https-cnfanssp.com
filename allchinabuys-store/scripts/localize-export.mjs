@@ -7,6 +7,8 @@ const out=path.join(process.cwd(),'out');
 const languages=['en','de','fr','es','it','pl'];
 const names={en:'English',de:'Deutsch',fr:'Français',es:'Español',it:'Italiano',pl:'Polski'};
 const dictionaries=JSON.parse(fs.readFileSync('lib/translations.json','utf8'));
+const updates=JSON.parse(fs.readFileSync('lib/field-guide-translations.json','utf8'));
+for(const language of languages.slice(1)) Object.assign(dictionaries[language], updates[language]);
 const site='https://allchinabuys.store',collect=process.argv.includes('--collect'),files=[];
 function scan(dir){for(const ent of fs.readdirSync(dir,{withFileTypes:true})){if(ent.isDirectory()){if(!languages.slice(1).includes(ent.name)&&ent.name!=='_next')scan(path.join(dir,ent.name));}else if(ent.name.endsWith('.html'))files.push(path.join(dir,ent.name));}}
 scan(out);
@@ -53,7 +55,7 @@ for(const original of originals)for(const lang of collect?['en']:languages){
  for(const code of languages)languageNav.childNodes.push(element(`<a href="${localized(original.route,code)}" lang="${code}" hreflang="${code}"${code===lang?' aria-current="page"':''}>${names[code]}</a>`));
  body.childNodes.push(languageNav);
  setAttr(htmlNode,'data-menu-open',value('Close',lang));setAttr(htmlNode,'data-menu-closed',value('Menu',lang));
- if(!collect){head.childNodes.push(element('<meta name="release" content="allchinabuys-store-20261008-six-languages">'));head.childNodes.push(element('<script defer src="/site-ui.js"></script>'));const dest=lang==='en'?original.file:path.join(out,lang,path.relative(out,original.file));fs.mkdirSync(path.dirname(dest),{recursive:true});fs.writeFileSync(dest,serialize(doc));}
+ if(!collect){head.childNodes.push(element('<meta name="release" content="allchinabuys-store-20261105-product-and-order-guides">'));head.childNodes.push(element('<script defer src="/site-ui.js"></script>'));const dest=lang==='en'?original.file:path.join(out,lang,path.relative(out,original.file));fs.mkdirSync(path.dirname(dest),{recursive:true});fs.writeFileSync(dest,serialize(doc));}
 }
 if(collect){fs.mkdirSync('.localization',{recursive:true});fs.writeFileSync('.localization/source.json',JSON.stringify([...words].sort(),null,2));const missing={};for(const lang of languages.slice(1))missing[lang]=[...words].filter(k=>!dictionaries[lang]?.[k]);fs.writeFileSync('.localization/missing.json',JSON.stringify(missing,null,2));console.log(JSON.stringify({sourceStrings:words.size,missing:Object.fromEntries(Object.entries(missing).map(([l,v])=>[l,v.length]))}));}
 else{
@@ -61,6 +63,6 @@ else{
  const mapped=entries.flatMap(entry=>languages.map(lang=>'<url>'+entry.replace(/<loc>(.*?)<\/loc>/,(_,url)=>`<loc>${site}${localized(url.replace(site,'')||'/',lang)}</loc>`)+'</url>'));
  fs.writeFileSync(path.join(out,'sitemap.xml'),'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+mapped.join('\n')+'\n</urlset>');
  fs.appendFileSync(path.join(out,'_headers'),languages.slice(1).map(l=>`\n/${l}/*\n  Cache-Control: public, max-age=0, must-revalidate\n  Cloudflare-CDN-Cache-Control: public, max-age=86400, stale-while-revalidate=604800\n`).join('')+'\n/site-ui.js\n  Cache-Control: public, max-age=0, must-revalidate\n');
- fs.writeFileSync(path.join(out,'release.json'),JSON.stringify({release:'allchinabuys-store-20261008-six-languages',languages,articles:originals.filter(x=>x.route.startsWith('/articles/')).length,pagesPerLanguage:originals.length,sitemapUrls:mapped.length}));
+ fs.writeFileSync(path.join(out,'release.json'),JSON.stringify({release:'allchinabuys-store-20261105-product-and-order-guides',languages,articles:originals.filter(x=>x.route.startsWith('/articles/')).length,pagesPerLanguage:originals.length,sitemapUrls:mapped.length}));
  console.log(`Published ${originals.length} static pages in each of ${languages.length} languages; ${mapped.length} sitemap URLs.`);
 }

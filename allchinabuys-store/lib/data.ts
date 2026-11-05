@@ -27,11 +27,11 @@ export const products: Product[] = [
   {
     slug: "autry-shoes", name: "Autry Shoes", category: "Shoes", categorySlug: "shoes", price: "$69.40", sourceId: "7645681448",
     image: "https://www.cnfanssp.com/uploads/allimg/20251225/1-251225144612B9.gif", destination: "https://www.cnfanssp.com/AllProducts/4276.html",
-    summary: "A clean low-profile sneaker listing with multiple warehouse images available on the source record.",
+    summary: "The listing shows a low-profile sneaker. Use its photos to identify the design, then request a photo and insole measurement of the pair assigned to your order.",
     checks: ["Confirm the selected color", "Compare insole length", "Review side-panel alignment"], updated: "August 26, 2026",
   },
   {
-    slug: "amiri-ma-1-sneakers", name: "AMIRI MA-1 Sneakers — 9 styles", category: "Shoes", categorySlug: "shoes", price: "$40.00", sourceId: "Source record 3842",
+    slug: "amiri-ma-1-sneakers", name: "AMIRI MA-1 Sneakers — 9 styles", category: "Shoes", categorySlug: "shoes", price: "$40.00", sourceId: "7638942248",
     image: "https://www.cnfanssp.com/uploads/allimg/20251219/1-2512191533513J.webp", destination: "https://www.cnfanssp.com/AllProducts/3842.html",
     summary: "A multi-style sneaker listing. Open the source record before ordering to confirm the exact variant and size chart.",
     checks: ["Match the chosen variant", "Check sole shape", "Ask for size measurements"], updated: "August 26, 2026",
@@ -71,6 +71,40 @@ export const products: Product[] = [
     image: "https://www.cnfanssp.com/uploads/allimg/20260204/1-2602041415562J.webp", destination: "https://www.cnfanssp.com/AllProducts/5985.html",
     summary: "A multi-style cap listing where the option thumbnail and selected code should be cross-checked carefully.",
     checks: ["Match style number", "Inspect embroidery", "Confirm adjustable closure"], updated: "August 26, 2026",
+  },
+  {
+    "slug": "corteiz-rules-the-world-t-shirt",
+    "name": "Corteiz Rules The World T-Shirt",
+    "category": "T-Shirts",
+    "categorySlug": "t-shirts",
+    "price": "¥69",
+    "sourceId": "7666361540",
+    "image": "https://www.cnfanssp.com/uploads/allimg/20260116/1-260116145T4249.jpg",
+    "destination": "https://www.cnfanssp.com/AllProducts/5025.html",
+    "summary": "The catalog groups 21 styles under this name. The linked Weidian listing displayed ¥69 (CNY) on 5 November 2026. Save the exact print and size you select before comparing photos.",
+    "checks": [
+      "Save the selected print and color",
+      "Compare chest width measured flat",
+      "Check the size label in your own photos"
+    ],
+    "updated": "November 5, 2026"
+  },
+  {
+    "slug": "loewe-anagram-t-shirt",
+    "name": "Loewe Anagram T-Shirt",
+    "category": "T-Shirts",
+    "categorySlug": "t-shirts",
+    "price": "¥150",
+    "sourceId": "7663415067",
+    "image": "https://www.cnfanssp.com/uploads/allimg/20260116/1-26011615243Y59.webp",
+    "destination": "https://www.cnfanssp.com/AllProducts/5046.html",
+    "summary": "The catalog groups 40 styles under this name. The linked Weidian listing displayed ¥150 (CNY) on 5 November 2026. Check the motif and its placement against the image for your chosen option.",
+    "checks": [
+      "Match the motif to the chosen option",
+      "Check motif placement against the collar",
+      "Ask for the shoulder-to-hem length"
+    ],
+    "updated": "November 5, 2026"
   },
 ];
 
