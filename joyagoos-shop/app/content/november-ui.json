@@ -1,0 +1,717 @@
+{
+  "en": {
+    "homeTitle": "Joyagoo Spreadsheet, QC Photos & Shipping Cost Guides",
+    "hero": [
+      "Joyagoo finds.",
+      "Check the details.",
+      "Plan the full cost."
+    ],
+    "lede": "Browse Joyagoo product links, compare options and QC photos, then plan domestic delivery, packing and international shipping before you pay.",
+    "heading": "Before your next payment",
+    "pages": {
+      "guide": [
+        "How to buy with Joyagoo: links, DIY orders and payments",
+        "Check the source and selected option, prepare a manual order when needed, and distinguish the item payment from international shipping."
+      ],
+      "qc": [
+        "Joyagoo QC Completed: what it means and what to check",
+        "QC Completed means warehouse inspection is complete. Review your own photos, clarify missing evidence and check eligible return options before shipping."
+      ],
+      "shipping": [
+        "Joyagoo shipping cost: when you see it and what you pay",
+        "Domestic delivery, rehearsal packing and international freight are separate budget lines. Compare estimates with packed measurements before the final shipping payment."
+      ],
+      "articles": [
+        "Joyagoo guides: product links, QC and shipping costs",
+        "Practical answers about DIY orders, domestic delivery at zero, rehearsal fees, product options and warehouse photo checks."
+      ]
+    },
+    "answers": [
+      [
+        "Does rehearsal include international shipping?",
+        "No. Rehearsal is a packing service; international freight remains separate. Check the service name, live fee and later parcel payment.",
+        "joyagoo-rehearsal-fee-vs-shipping-cost"
+      ],
+      [
+        "Domestic shipping says 0. Is delivery free?",
+        "The zero concerns the seller-to-warehouse leg in China. It does not mean free international delivery; budget that separately.",
+        "joyagoo-domestic-shipping-fee-zero"
+      ],
+      [
+        "What is a DIY Joyagoo order?",
+        "A manual purchase request supplies details that a product-link import did not provide. Prepare the source, exact option, quantity and price before payment.",
+        "joyagoo-diy-order-guide"
+      ],
+      [
+        "What does QC Completed mean?",
+        "The warehouse inspection is complete and photos can be reviewed in the order. It is not your approval or international dispatch. Check the item and any eligible return deadline promptly.",
+        "joyagoo-qc-photos-listing-comparison-guide"
+      ]
+    ],
+    "faq": [
+      [
+        "When can I see the international shipping price?",
+        "Use an early estimate for planning. The normal parcel flow uses estimated freight before packing; rehearsal provides packed information before its freight payment. Review the live route and final breakdown."
+      ],
+      [
+        "Is a blank domestic-fee field the same as zero?",
+        "No. Blank or pending means the amount is unresolved. Confirm the selected option and quantity before recording it as a zero-cost domestic leg."
+      ],
+      [
+        "Does QC prove authenticity or function?",
+        "No. Warehouse visual checks are not an authenticity certificate or a complete functional test. Request the specific evidence that affects your decision."
+      ],
+      [
+        "Can a shipped item use the same warehouse return process?",
+        "Do not assume so. Once international dispatch has occurred, check the actual parcel and after-sales rules with support; the pre-dispatch warehouse process cannot simply be reused."
+      ],
+      [
+        "Does changing quantity require another price check?",
+        "Yes. Recheck the selected unit, item subtotal and domestic delivery in the final summary. A piece, pair and set can represent different quantities."
+      ],
+      [
+        "What should I save when a link will not import?",
+        "Keep the original seller URL, visible product ID, chosen option and exact error. A category page or spreadsheet entry is not necessarily the original product listing."
+      ],
+      [
+        "Is the volumetric-weight divisor always 6000?",
+        "No. Use the units, divisor, billing increments and limits of the selected route. The outer packed dimensions matter."
+      ],
+      [
+        "Does topping up my balance pay parcel freight?",
+        "A top-up makes money available in the account. Confirm the separate freight transaction before marking a parcel as paid."
+      ],
+      [
+        "Do warehouse items and unpaid parcels share one storage clock?",
+        "No. Published guidance distinguishes 90 free days per stored item from 30 free days for a submitted parcel awaiting freight payment. Check the deadline shown in your account."
+      ]
+    ],
+    "paymentHeading": "Keep the payment stages separate",
+    "paymentHeaders": [
+      "Stage",
+      "Budget line",
+      "What to verify"
+    ],
+    "paymentRows": [
+      [
+        "Product order",
+        "Goods + China domestic delivery",
+        "Exact option, quantity, currency and seller freight"
+      ],
+      [
+        "Optional packing",
+        "Rehearsal and selected extras",
+        "Service name and price shown at checkout"
+      ],
+      [
+        "International parcel",
+        "Freight for the chosen route",
+        "Destination, contents, packed weight and dimensions"
+      ],
+      [
+        "Other applicable charges",
+        "Listed payment, tax or service costs",
+        "Identify each charge; do not fill unknown amounts with zero"
+      ]
+    ],
+    "storage": [
+      "Separate storage clocks",
+      "Published guidance distinguishes 90 free days per item from the Stored status and a 30-day paid extension listed at 10 CNY. A submitted parcel awaiting freight payment has a separate 30-day free period. Check the live deadlines; a return deadline is another matter."
+    ],
+    "updated": "Practical checklist updated November 6, 2026.",
+    "updates": [
+      [
+        "Reconcile the budget with the payment record",
+        "Give each cost a label: goods, domestic delivery, optional packing, international freight and other applicable charges. Add confirmed or estimated beside the amount. A domestic zero affects only that row, while paying rehearsal leaves freight separate.",
+        "Do not count a balance top-up and its later use twice. Compare the same destination, contents and route when replacing an estimate with a packed quote. If the total changes, identify the changed field before approving another payment."
+      ],
+      [
+        "Prepare a DIY request only after identifying the source",
+        "If the original product still exists but import remains incomplete, prepare the original URL, product ID, exact option text, quantity unit, price and domestic-freight field. Keep missing information explicitly unresolved. A category page, catalog entry or screenshot does not replace the seller listing.",
+        "Compare the final request with that record before payment. If an earlier failed attempt created another order, resolve it before paying twice. Do not use manual entry to bypass a restriction or silently substitute a similar product."
+      ],
+      [
+        "QC Completed: choose a next action from your own evidence",
+        "Match the photos to your order and saved variant. Choose keep when the decision-critical fields match, request a specific photo when evidence is missing, or ask for after-sales review when a documented mismatch affects your decision. An unreadable label is uncertainty, not proof of a wrong size.",
+        "Record the completion time and inspect eligible return options promptly. Published guidance uses a five-day, 120-hour request window after QC completion, subject to seller and item conditions. This status is neither your personal approval nor proof of international dispatch; do not wait for parcel submission to check a problem."
+      ],
+      [
+        "Do not turn an unresolved delivery field into free shipping",
+        "Record a displayed zero, a blank field and a pending charge differently. Verify the final summary after changing quantity or option, including whether a unit means a piece, pair or set. Keep one seller’s domestic charge separate from another seller’s order.",
+        "Compare goods plus confirmed domestic delivery for the first-stage subtotal, then add a separately marked international estimate. A cheaper listing price or a zero domestic fee cannot establish the cheapest delivered purchase without comparable contents and packing assumptions."
+      ]
+    ]
+  },
+  "de": {
+    "homeTitle": "Joyagoo Tabelle, QC-Fotos und Versandkosten",
+    "hero": [
+      "Joyagoo Finds.",
+      "Details prüfen.",
+      "Gesamtkosten planen."
+    ],
+    "lede": "Produktlinks entdecken, Varianten und QC-Fotos vergleichen und Inlandslieferung, Verpackung sowie internationalen Versand vor der Zahlung planen.",
+    "heading": "Vor deiner nächsten Zahlung",
+    "pages": {
+      "guide": [
+        "Mit Joyagoo kaufen: Links, DIY-Bestellung und Zahlungen",
+        "Quelle und Variante prüfen, bei Bedarf eine manuelle Bestellung vorbereiten und Warenzahlung von internationaler Fracht trennen."
+      ],
+      "qc": [
+        "Joyagoo QC Completed: Bedeutung und nächste Prüfung",
+        "QC Completed bezeichnet die abgeschlossene Lagerprüfung. Prüfe deine Fotos, kläre fehlende Belege und kontrolliere Rückgabeoptionen vor dem Versand."
+      ],
+      "shipping": [
+        "Joyagoo Versandkosten: wann der Preis erscheint",
+        "Inlandslieferung, Probeverpackung und internationale Fracht sind eigene Budgetzeilen. Vergleiche Schätzungen und Paketmaße vor der Versandzahlung."
+      ],
+      "articles": [
+        "Joyagoo Ratgeber: Produktlinks, QC und Versandkosten",
+        "Praktische Antworten zu DIY-Bestellungen, Inlandskosten von null, Probeverpackung, Varianten und Lagerfotos."
+      ]
+    },
+    "answers": [
+      [
+        "Enthält Probeverpackung internationalen Versand?",
+        "Nein. Sie ist eine Verpackungsleistung; internationale Fracht bleibt getrennt. Prüfe Leistungsname, aktuellen Preis und spätere Paketzahlung.",
+        "joyagoo-rehearsal-fee-vs-shipping-cost"
+      ],
+      [
+        "Inlandsversand 0: Ist die Lieferung kostenlos?",
+        "Die Null betrifft den Weg vom Verkäufer zum Lager in China. Internationaler Versand ist damit nicht kostenlos und braucht ein eigenes Budget.",
+        "joyagoo-domestic-shipping-fee-zero"
+      ],
+      [
+        "Was ist eine DIY-Bestellung?",
+        "Eine manuelle Anfrage ergänzt Kaufangaben, die der Linkimport nicht liefert. Bereite Quelle, exakte Variante, Menge und Preis vor.",
+        "joyagoo-diy-order-guide"
+      ],
+      [
+        "Was bedeutet QC Completed?",
+        "Die Lagerprüfung ist abgeschlossen und Fotos stehen zur Prüfung bereit. Das ist weder deine Zustimmung noch internationaler Versand. Prüfe Artikel und mögliche Rückgabefrist zeitnah.",
+        "joyagoo-qc-photos-listing-comparison-guide"
+      ]
+    ],
+    "faq": [
+      [
+        "Wann sehe ich den internationalen Versandpreis?",
+        "Nutze zuerst eine Planungsschätzung. Der normale Paketablauf sieht geschätzte Fracht vor dem Packen vor; Probeverpackung liefert Paketdaten vor der Frachtzahlung. Prüfe Route und Abrechnung aktuell."
+      ],
+      [
+        "Ist ein leeres Inlandsfeld gleich null?",
+        "Nein. Leer oder ausstehend bedeutet ungeklärt. Prüfe Variante und Menge, bevor du kostenlose Inlandslieferung einträgst."
+      ],
+      [
+        "Bestätigt QC Echtheit oder Funktion?",
+        "Nein. Sichtprüfung ist weder Echtheitszertifikat noch vollständiger Funktionstest. Fordere die Belege an, die deine Entscheidung ändern."
+      ],
+      [
+        "Gilt nach internationalem Versand derselbe Lagerrückgabeprozess?",
+        "Gehe nicht davon aus. Prüfe Paketstatus und geltende Nachverkaufsregeln mit dem Support; der Prozess vor Versand lässt sich nicht einfach übertragen."
+      ],
+      [
+        "Muss ich nach Mengenänderung den Preis erneut prüfen?",
+        "Ja. Kontrolliere Einheit, Warenzwischensumme und Inlandslieferung im letzten Überblick. Stück, Paar und Set können Unterschiedliches bedeuten."
+      ],
+      [
+        "Was speichere ich bei einem Importfehler?",
+        "Original-Verkäuferlink, sichtbare Produktkennung, Variante und genaue Fehlermeldung. Kategorie- oder Tabellenlink sind nicht zwingend das Originalangebot."
+      ],
+      [
+        "Ist der Volumengewichtsdivisor immer 6000?",
+        "Nein. Verwende Einheiten, Divisor, Stufen und Grenzen der gewählten Linie sowie die Außenmaße des Pakets."
+      ],
+      [
+        "Bezahlt eine Guthabenaufladung die Paketfracht?",
+        "Sie stellt Geld bereit. Erst die separate Frachttransaktion bestätigt die Bezahlung des Pakets."
+      ],
+      [
+        "Haben Lagerartikel und unbezahlte Pakete dieselbe Lagerfrist?",
+        "Nein. Die Anleitung trennt 90 kostenlose Tage pro eingelagertem Artikel von 30 kostenlosen Tagen für ein eingereichtes Paket vor Frachtzahlung. Prüfe die Kontofrist."
+      ]
+    ],
+    "paymentHeading": "Zahlungsphasen getrennt halten",
+    "paymentHeaders": [
+      "Phase",
+      "Budgetposition",
+      "Prüfung"
+    ],
+    "paymentRows": [
+      [
+        "Warenbestellung",
+        "Waren + Inlandslieferung in China",
+        "Variante, Menge, Währung und Verkäuferfracht"
+      ],
+      [
+        "Optionale Verpackung",
+        "Probeverpackung und Extras",
+        "Leistungsname und Checkout-Preis"
+      ],
+      [
+        "Internationales Paket",
+        "Fracht der gewählten Linie",
+        "Ziel, Inhalt, Paketgewicht und Maße"
+      ],
+      [
+        "Weitere zutreffende Kosten",
+        "Zahlungs-, Steuer- oder Servicekosten",
+        "Jede Position benennen; Unbekanntes nicht als null führen"
+      ]
+    ],
+    "storage": [
+      "Getrennte Lagerfristen",
+      "Die Anleitung nennt 90 kostenlose Tage je Artikel ab Stored und eine kostenpflichtige Verlängerung um 30 Tage für 10 CNY. Ein eingereichtes Paket vor Frachtzahlung hat eine eigene kostenlose 30-Tage-Frist. Prüfe die aktuellen Fristen; Rückgabe ist ein separater Zeitraum."
+    ],
+    "updated": "Praktische Checkliste am 6. November 2026 aktualisiert.",
+    "updates": [
+      [
+        "Budget und Zahlungen abgleichen",
+        "Benenne Waren, Inlandslieferung, Verpackung, internationale Fracht und weitere Kosten getrennt. Markiere bestätigt oder geschätzt. Null Inlandskosten betrifft nur diese Zeile; eine bezahlte Probeverpackung begleicht keine Fracht.",
+        "Zähle Einzahlung und Verwendung desselben Guthabens nicht doppelt. Vergleiche Ziel, Inhalte und Linie unverändert, wenn eine Schätzung durch ein Paketangebot ersetzt wird. Identifiziere bei Abweichungen das geänderte Feld vor der Zahlung."
+      ],
+      [
+        "DIY erst nach eindeutiger Quellenprüfung vorbereiten",
+        "Existiert der Artikel noch, bleibt der Import aber unvollständig, notiere Original-URL, ID, Optionstext, Mengeneinheit, Preis und Inlandsfeld. Fehlendes bleibt offen. Kategorie, Katalog und Screenshot ersetzen die Verkäuferquelle nicht.",
+        "Vergleiche den fertigen Auftrag vor Zahlung mit dem Datensatz. Hat der frühere Versuch eine Bestellung angelegt, kläre sie vor einer Doppelzahlung. Manuelle Eingabe darf Beschränkungen nicht umgehen oder einen ähnlichen Artikel stillschweigend einsetzen."
+      ],
+      [
+        "QC Completed: die nächste Handlung aus Belegen ableiten",
+        "Ordne Fotos Auftrag und Variante zu. Behalten, wenn entscheidende Angaben passen; konkrete Ansicht nachfordern, wenn Belege fehlen; Nachverkaufsprüfung anfragen, wenn eine dokumentierte Abweichung relevant ist. Ein unlesbares Etikett ist Unklarheit, kein Nachweis falscher Größe.",
+        "Notiere die Abschlusszeit und prüfe Rückgabeoptionen sofort. Die Anleitung nennt fünf Tage beziehungsweise 120 Stunden für berechtigte Anträge ab QC-Abschluss, abhängig von Verkäufer und Artikel. Der Status ist weder deine Zustimmung noch internationaler Versand. Warte mit der Prüfung nicht bis zur Paketeinreichung."
+      ],
+      [
+        "Ungeklärte Inlandslieferung nicht als kostenlos erfassen",
+        "Unterscheide null, leer und ausstehend. Prüfe nach Mengen- oder Variantenänderung den letzten Überblick und die Einheit Stück, Paar oder Set. Halte Kosten verschiedener Verkäufer getrennt.",
+        "Vergleiche Waren plus bestätigte Inlandslieferung als erste Zwischensumme und ergänze eine getrennte internationale Schätzung. Ohne vergleichbare Inhalte und Verpackung beweisen niedriger Preis oder null Inlandskosten keinen günstigsten Gesamtkauf."
+      ]
+    ]
+  },
+  "es": {
+    "homeTitle": "Hoja Joyagoo, fotos QC y costes de envío",
+    "hero": [
+      "Hallazgos Joyagoo.",
+      "Revisa los detalles.",
+      "Planifica el coste total."
+    ],
+    "lede": "Explora enlaces, compara variantes y fotos QC, y calcula entrega nacional, embalaje y envío internacional antes de pagar.",
+    "heading": "Antes del siguiente pago",
+    "pages": {
+      "guide": [
+        "Comprar con Joyagoo: enlaces, pedidos DIY y pagos",
+        "Verifica fuente y opción, prepara un pedido manual cuando haga falta y distingue productos y flete internacional."
+      ],
+      "qc": [
+        "QC Completed en Joyagoo: significado y comprobaciones",
+        "El control del almacén ha terminado. Revisa tus fotos, aclara pruebas ausentes y consulta opciones de devolución antes del envío."
+      ],
+      "shipping": [
+        "Coste de envío Joyagoo: cuándo aparece y qué pagas",
+        "Entrega nacional, ensayo de embalaje y flete internacional son partidas distintas. Compara estimaciones y medidas antes del pago final."
+      ],
+      "articles": [
+        "Guías Joyagoo: enlaces, QC y costes de envío",
+        "Respuestas prácticas sobre DIY, entrega nacional a cero, ensayo de embalaje, variantes y fotos de almacén."
+      ]
+    },
+    "answers": [
+      [
+        "¿El ensayo incluye el envío internacional?",
+        "No. Es un servicio de embalaje; el flete internacional va aparte. Revisa nombre del servicio, precio activo y pago posterior del paquete.",
+        "joyagoo-rehearsal-fee-vs-shipping-cost"
+      ],
+      [
+        "Envío nacional 0: ¿la entrega es gratuita?",
+        "El cero corresponde al tramo vendedor-almacén en China. No incluye entrega internacional gratuita; presupuéstala aparte.",
+        "joyagoo-domestic-shipping-fee-zero"
+      ],
+      [
+        "¿Qué es un pedido DIY Joyagoo?",
+        "Una solicitud manual aporta datos que no recuperó el enlace. Prepara fuente, opción exacta, cantidad y precio antes de pagar.",
+        "joyagoo-diy-order-guide"
+      ],
+      [
+        "¿Qué significa QC Completed?",
+        "El almacén ha terminado el control y puedes revisar las fotos. No es tu aprobación ni la salida internacional. Comprueba artículo y plazo de devolución aplicable cuanto antes.",
+        "joyagoo-qc-photos-listing-comparison-guide"
+      ]
+    ],
+    "faq": [
+      [
+        "¿Cuándo veo el precio internacional?",
+        "Usa una primera estimación para planificar. El flujo normal paga flete estimado antes de embalar; el ensayo aporta datos del paquete antes del pago de transporte. Revisa línea y desglose actuales."
+      ],
+      [
+        "¿Un campo nacional vacío equivale a cero?",
+        "No. Vacío o pendiente significa sin resolver. Confirma opción y cantidad antes de anotarlo como entrega nacional gratuita."
+      ],
+      [
+        "¿QC demuestra autenticidad o funcionamiento?",
+        "No. La inspección visual no certifica autenticidad ni es una prueba funcional completa. Pide la evidencia que afecte a tu decisión."
+      ],
+      [
+        "¿Un artículo enviado usa el mismo proceso de devolución del almacén?",
+        "No lo supongas. Tras la salida internacional, consulta estado y reglas posventa con soporte; el proceso previo al envío no se aplica automáticamente."
+      ],
+      [
+        "¿Debo revisar el precio al cambiar cantidad?",
+        "Sí. Revisa unidad, subtotal y entrega nacional en el resumen final. Pieza, par y conjunto pueden representar cantidades distintas."
+      ],
+      [
+        "¿Qué guardo cuando falla la importación?",
+        "URL original del vendedor, ID visible, opción y error exacto. Una categoría o entrada de hoja no siempre es la ficha original."
+      ],
+      [
+        "¿El divisor volumétrico siempre es 6000?",
+        "No. Usa unidades, divisor, incrementos y límites de la línea elegida, con las dimensiones exteriores del paquete."
+      ],
+      [
+        "¿Recargar saldo paga el flete?",
+        "La recarga deja dinero disponible. Confirma la transacción de transporte separada antes de marcar el paquete como pagado."
+      ],
+      [
+        "¿Productos y paquetes impagados comparten plazo de almacén?",
+        "No. La guía distingue 90 días gratuitos por artículo almacenado y 30 para un paquete presentado pendiente de flete. Consulta el plazo de tu cuenta."
+      ]
+    ],
+    "paymentHeading": "Separa las etapas de pago",
+    "paymentHeaders": [
+      "Etapa",
+      "Partida",
+      "Qué comprobar"
+    ],
+    "paymentRows": [
+      [
+        "Pedido",
+        "Productos + entrega nacional en China",
+        "Opción, cantidad, moneda y flete del vendedor"
+      ],
+      [
+        "Embalaje opcional",
+        "Ensayo y extras elegidos",
+        "Nombre del servicio y precio del checkout"
+      ],
+      [
+        "Paquete internacional",
+        "Flete de la línea elegida",
+        "Destino, contenido, peso y dimensiones"
+      ],
+      [
+        "Otros cargos aplicables",
+        "Pagos, impuestos o servicios indicados",
+        "Identifica cada cargo; no conviertas lo desconocido en cero"
+      ]
+    ],
+    "storage": [
+      "Plazos de almacenamiento separados",
+      "La guía distingue 90 días gratuitos por artículo desde Stored y una extensión de 30 días por 10 CNY. Un paquete presentado pendiente del flete tiene otro periodo gratuito de 30 días. Comprueba los plazos activos; la devolución tiene su propio límite."
+    ],
+    "updated": "Lista práctica actualizada el 6 de noviembre de 2026.",
+    "updates": [
+      [
+        "Conciliar el presupuesto con los pagos",
+        "Etiqueta productos, entrega nacional, embalaje, flete internacional y demás costes. Marca confirmado o estimado. Un cero nacional afecta solo a esa fila; el ensayo pagado no liquida el transporte.",
+        "No cuentes dos veces recarga y uso del mismo saldo. Mantén destino, contenido y línea al sustituir estimación por cotización. Si cambia el total, identifica el campo modificado antes de pagar."
+      ],
+      [
+        "Preparar DIY después de identificar la fuente",
+        "Si el producto existe pero la importación queda incompleta, guarda URL original, ID, opción exacta, unidad, precio y campo de entrega nacional. Mantén lo desconocido pendiente. Categoría, catálogo y captura no sustituyen al anuncio vendedor.",
+        "Compara solicitud final y registro antes de pagar. Si el intento anterior creó otro pedido, resuélvelo para evitar duplicados. La entrada manual no debe eludir restricciones ni sustituir silenciosamente por un producto parecido."
+      ],
+      [
+        "QC Completed: decidir con tus pruebas",
+        "Relaciona fotos, pedido y variante. Conserva si coinciden datos decisivos, pide una vista concreta si faltan pruebas o consulta posventa por una diferencia documentada. Una etiqueta ilegible es incertidumbre, no prueba de talla errónea.",
+        "Registra la hora de finalización y revisa pronto las opciones de devolución. La guía usa cinco días, 120 horas, para solicitudes elegibles tras QC, sujetas a vendedor y artículo. El estado no es tu aprobación ni salida internacional; no esperes a crear el paquete."
+      ],
+      [
+        "No convertir una entrega sin resolver en gratuita",
+        "Distingue cero, vacío y pendiente. Revisa el resumen tras cambiar cantidad o variante y confirma si la unidad es pieza, par o conjunto. Separa cargos de vendedores distintos.",
+        "Compara productos más entrega nacional confirmada para la primera suma y añade una estimación internacional aparte. Precio menor o entrega a cero no prueban el menor coste final sin contenidos y embalajes comparables."
+      ]
+    ]
+  },
+  "fr": {
+    "homeTitle": "Tableur Joyagoo, photos QC et frais de livraison",
+    "hero": [
+      "Sélections Joyagoo.",
+      "Vérifiez les détails.",
+      "Prévoyez le coût total."
+    ],
+    "lede": "Explorez les liens, comparez options et photos QC, puis prévoyez livraison intérieure, emballage et fret international avant de payer.",
+    "heading": "Avant votre prochain paiement",
+    "pages": {
+      "guide": [
+        "Acheter avec Joyagoo : liens, commandes DIY et paiements",
+        "Vérifiez source et option, préparez une commande manuelle si nécessaire et distinguez achat et fret international."
+      ],
+      "qc": [
+        "Joyagoo QC Completed : sens et vérifications",
+        "Le contrôle de l’entrepôt est terminé. Examinez vos photos, clarifiez les preuves manquantes et vérifiez les retours possibles avant l’envoi."
+      ],
+      "shipping": [
+        "Frais Joyagoo : quand le prix apparaît et quoi payer",
+        "Livraison intérieure, pré-emballage et fret international sont distincts. Comparez estimation et mesures avant le paiement final."
+      ],
+      "articles": [
+        "Guides Joyagoo : liens, QC et frais de livraison",
+        "Réponses pratiques sur DIY, livraison intérieure à zéro, pré-emballage, variantes et photos d’entrepôt."
+      ]
+    },
+    "answers": [
+      [
+        "Le pré-emballage inclut-il le fret international ?",
+        "Non. C’est une prestation d’emballage ; le fret reste séparé. Vérifiez libellé, tarif actif et paiement ultérieur du colis.",
+        "joyagoo-rehearsal-fee-vs-shipping-cost"
+      ],
+      [
+        "Livraison intérieure à 0 : tout est gratuit ?",
+        "Le zéro concerne le trajet vendeur-entrepôt en Chine. Il ne rend pas l’international gratuit ; prévoyez-le séparément.",
+        "joyagoo-domestic-shipping-fee-zero"
+      ],
+      [
+        "Qu’est-ce qu’une commande DIY Joyagoo ?",
+        "Une demande manuelle fournit les données absentes de l’import. Préparez source, option exacte, quantité et prix avant paiement.",
+        "joyagoo-diy-order-guide"
+      ],
+      [
+        "Que signifie QC Completed ?",
+        "Le contrôle est terminé et les photos peuvent être examinées. Ce n’est ni votre approbation ni l’expédition internationale. Vérifiez rapidement article et délai de retour applicable.",
+        "joyagoo-qc-photos-listing-comparison-guide"
+      ]
+    ],
+    "faq": [
+      [
+        "Quand apparaît le prix international ?",
+        "Utilisez une estimation initiale pour planifier. Le parcours normal prévoit un fret estimé avant emballage ; le pré-emballage donne des données avant paiement du transport. Vérifiez ligne et détail actuels."
+      ],
+      [
+        "Un champ intérieur vide vaut-il zéro ?",
+        "Non. Vide ou en attente signifie non résolu. Confirmez option et quantité avant de noter une livraison gratuite."
+      ],
+      [
+        "QC prouve-t-il authenticité ou fonctionnement ?",
+        "Non. La vérification visuelle n’est ni certificat d’authenticité ni test fonctionnel complet. Demandez les preuves utiles à votre décision."
+      ],
+      [
+        "Un article expédié suit-il le même retour d’entrepôt ?",
+        "Ne le supposez pas. Après départ international, consultez statut et règles après-vente avec l’assistance ; le processus avant départ ne se transpose pas automatiquement."
+      ],
+      [
+        "Faut-il revérifier le prix après changement de quantité ?",
+        "Oui. Contrôlez unité, sous-total et livraison intérieure au récapitulatif. Pièce, paire et ensemble peuvent représenter des quantités différentes."
+      ],
+      [
+        "Que garder quand l’import échoue ?",
+        "URL originale vendeur, identifiant visible, option et erreur précise. Une catégorie ou ligne de tableur n’est pas forcément l’annonce originale."
+      ],
+      [
+        "Le diviseur volumétrique est-il toujours 6000 ?",
+        "Non. Employez unités, diviseur, paliers et limites de la ligne choisie, avec les dimensions extérieures du colis."
+      ],
+      [
+        "Alimenter le solde paie-t-il le fret ?",
+        "Le versement rend de l’argent disponible. Confirmez la transaction de fret séparée avant de considérer le colis payé."
+      ],
+      [
+        "Articles et colis impayés ont-ils le même délai de stockage ?",
+        "Non. Le guide distingue 90 jours gratuits par article stocké et 30 jours pour un colis soumis avant paiement du fret. Vérifiez l’échéance du compte."
+      ]
+    ],
+    "paymentHeading": "Séparer les étapes de paiement",
+    "paymentHeaders": [
+      "Étape",
+      "Poste",
+      "À vérifier"
+    ],
+    "paymentRows": [
+      [
+        "Commande produit",
+        "Marchandises + livraison intérieure",
+        "Option, quantité, devise et frais vendeur"
+      ],
+      [
+        "Emballage facultatif",
+        "Pré-emballage et options",
+        "Prestation et tarif du paiement actif"
+      ],
+      [
+        "Colis international",
+        "Fret de la ligne choisie",
+        "Destination, contenu, poids et dimensions"
+      ],
+      [
+        "Autres frais applicables",
+        "Paiement, taxes ou services indiqués",
+        "Identifier chaque poste ; ne pas remplacer l’inconnu par zéro"
+      ]
+    ],
+    "storage": [
+      "Des échéances de stockage distinctes",
+      "L’aide indique 90 jours gratuits par article à partir de Stored et une prolongation de 30 jours pour 10 CNY. Un colis soumis avant paiement du fret dispose d’une période gratuite séparée de 30 jours. Vérifiez les échéances actives ; le retour a un autre délai."
+    ],
+    "updated": "Liste pratique actualisée le 6 novembre 2026.",
+    "updates": [
+      [
+        "Rapprocher budget et paiements",
+        "Séparez produits, livraison intérieure, emballage, fret international et autres frais. Marquez confirmé ou estimé. Un zéro intérieur ne concerne que cette ligne ; le pré-emballage payé ne règle pas le fret.",
+        "Ne comptez pas deux fois versement et usage du même solde. Gardez destination, contenu et ligne identiques en remplaçant estimation par devis. Si le total change, identifiez le champ avant un autre paiement."
+      ],
+      [
+        "Préparer DIY après identification de la source",
+        "Si le produit existe mais l’import reste incomplet, gardez URL, identifiant, option exacte, unité, prix et champ intérieur. Les données manquantes restent ouvertes. Catégorie, catalogue et capture ne remplacent pas l’annonce vendeur.",
+        "Comparez demande finale et dossier avant paiement. Si l’essai précédent a créé une autre commande, clarifiez-la pour éviter un doublon. La saisie manuelle ne doit pas contourner une restriction ou remplacer discrètement le produit."
+      ],
+      [
+        "QC Completed : choisir à partir de vos preuves",
+        "Associez photos, commande et variante. Gardez si les critères décisifs correspondent, demandez une vue précise si une preuve manque ou sollicitez l’après-vente pour un écart documenté. Une étiquette illisible reste une incertitude, pas une mauvaise taille prouvée.",
+        "Notez l’heure de fin et vérifiez rapidement le retour. L’aide prévoit cinq jours, soit 120 heures, pour les demandes éligibles après QC, selon vendeur et article. Ce statut n’est ni votre accord ni le départ international ; n’attendez pas la soumission du colis."
+      ],
+      [
+        "Ne pas transformer une livraison inconnue en gratuité",
+        "Distinguez zéro, vide et attente. Relisez le récapitulatif après changement d’option ou quantité et vérifiez pièce, paire ou ensemble. Séparez les coûts de vendeurs différents.",
+        "Comparez produits et livraison intérieure confirmée pour le premier sous-total, puis ajoutez une estimation internationale distincte. Sans contenu et emballage comparables, prix bas ou zéro intérieur ne prouvent pas le coût livré minimal."
+      ]
+    ]
+  },
+  "it": {
+    "homeTitle": "Foglio Joyagoo, foto QC e costi di spedizione",
+    "hero": [
+      "Selezioni Joyagoo.",
+      "Controlla i dettagli.",
+      "Pianifica il costo totale."
+    ],
+    "lede": "Esplora link, confronta varianti e foto QC, poi pianifica consegna interna, imballaggio e trasporto internazionale prima di pagare.",
+    "heading": "Prima del prossimo pagamento",
+    "pages": {
+      "guide": [
+        "Acquistare con Joyagoo: link, ordini DIY e pagamenti",
+        "Verifica fonte e opzione, prepara un ordine manuale se necessario e distingui prodotti e trasporto internazionale."
+      ],
+      "qc": [
+        "Joyagoo QC Completed: significato e controlli",
+        "Il controllo del magazzino è concluso. Esamina le foto, chiarisci prove mancanti e verifica le opzioni di reso prima di spedire."
+      ],
+      "shipping": [
+        "Costi Joyagoo: quando compare il prezzo e cosa paghi",
+        "Consegna interna, prova d’imballaggio e trasporto internazionale sono voci separate. Confronta stime e misure prima del saldo."
+      ],
+      "articles": [
+        "Guide Joyagoo: link, QC e costi di spedizione",
+        "Risposte pratiche su DIY, consegna interna a zero, prova d’imballaggio, varianti e foto del magazzino."
+      ]
+    },
+    "answers": [
+      [
+        "La prova comprende la spedizione internazionale?",
+        "No. È un servizio d’imballaggio; il trasporto resta separato. Verifica nome, prezzo attivo e successivo pagamento del pacco.",
+        "joyagoo-rehearsal-fee-vs-shipping-cost"
+      ],
+      [
+        "Consegna interna 0: è tutto gratuito?",
+        "Lo zero riguarda il tragitto venditore-magazzino in Cina. Non rende gratuita la consegna internazionale: pianificala a parte.",
+        "joyagoo-domestic-shipping-fee-zero"
+      ],
+      [
+        "Cos’è un ordine DIY Joyagoo?",
+        "Una richiesta manuale fornisce dati mancanti nell’importazione. Prepara fonte, variante esatta, quantità e prezzo prima di pagare.",
+        "joyagoo-diy-order-guide"
+      ],
+      [
+        "Cosa significa QC Completed?",
+        "Il controllo è terminato e puoi esaminare le foto. Non è la tua approvazione né partenza internazionale. Verifica articolo e termine di reso applicabile tempestivamente.",
+        "joyagoo-qc-photos-listing-comparison-guide"
+      ]
+    ],
+    "faq": [
+      [
+        "Quando vedo il prezzo internazionale?",
+        "Usa una prima stima per pianificare. Il flusso normale paga trasporto stimato prima di imballare; la prova offre dati prima del pagamento del trasporto. Controlla linea e dettaglio attivi."
+      ],
+      [
+        "Un campo interno vuoto equivale a zero?",
+        "No. Vuoto o in attesa significa irrisolto. Conferma variante e quantità prima di registrare consegna gratuita."
+      ],
+      [
+        "QC dimostra autenticità o funzionamento?",
+        "No. Il controllo visivo non è un certificato di autenticità né un test funzionale completo. Chiedi le prove utili alla decisione."
+      ],
+      [
+        "Un articolo spedito segue lo stesso reso del magazzino?",
+        "Non presumere di sì. Dopo partenza internazionale, verifica stato e regole di assistenza; il percorso precedente alla spedizione non si riutilizza automaticamente."
+      ],
+      [
+        "Devo ricontrollare il prezzo cambiando quantità?",
+        "Sì. Verifica unità, subtotale e consegna interna nel riepilogo. Pezzo, paio e set possono indicare quantità differenti."
+      ],
+      [
+        "Cosa salvo se l’importazione fallisce?",
+        "URL originale, ID visibile, variante ed errore preciso. Categoria e riga del foglio non sono necessariamente la scheda originale."
+      ],
+      [
+        "Il divisore volumetrico è sempre 6000?",
+        "No. Usa unità, divisore, scaglioni e limiti della linea selezionata con le dimensioni esterne del pacco."
+      ],
+      [
+        "Ricaricare il saldo paga il trasporto?",
+        "La ricarica rende denaro disponibile. Conferma la transazione di trasporto separata prima di segnare il pacco come pagato."
+      ],
+      [
+        "Articoli e pacchi non pagati condividono il deposito?",
+        "No. La guida distingue 90 giorni gratuiti per articolo depositato e 30 per un pacco presentato in attesa del trasporto. Controlla la scadenza nel conto."
+      ]
+    ],
+    "paymentHeading": "Separare le fasi del pagamento",
+    "paymentHeaders": [
+      "Fase",
+      "Voce",
+      "Controllo"
+    ],
+    "paymentRows": [
+      [
+        "Ordine prodotto",
+        "Merci + consegna interna in Cina",
+        "Variante, quantità, valuta e costo del venditore"
+      ],
+      [
+        "Imballaggio opzionale",
+        "Prova ed extra scelti",
+        "Nome del servizio e prezzo del checkout"
+      ],
+      [
+        "Pacco internazionale",
+        "Trasporto della linea scelta",
+        "Destinazione, contenuto, peso e dimensioni"
+      ],
+      [
+        "Altri costi applicabili",
+        "Pagamento, tasse o servizi indicati",
+        "Identifica ogni voce; non trasformare dati ignoti in zero"
+      ]
+    ],
+    "storage": [
+      "Scadenze di deposito distinte",
+      "La guida indica 90 giorni gratuiti per articolo da Stored e una proroga di 30 giorni per 10 CNY. Un pacco presentato in attesa del trasporto ha un periodo gratuito separato di 30 giorni. Controlla le scadenze attive; il reso ha un altro termine."
+    ],
+    "updated": "Checklist pratica aggiornata il 6 novembre 2026.",
+    "updates": [
+      [
+        "Conciliare budget e pagamenti",
+        "Separa merci, consegna interna, imballaggio, trasporto internazionale e altri costi. Segna confermato o stimato. Uno zero interno riguarda solo quella riga; la prova pagata non salda il trasporto.",
+        "Non contare due volte ricarica e uso dello stesso saldo. Mantieni destinazione, contenuto e linea quando sostituisci una stima con un preventivo. Se cambia il totale, identifica la voce prima di pagare."
+      ],
+      [
+        "Preparare DIY dopo avere identificato la fonte",
+        "Se il prodotto esiste ma l’importazione resta incompleta, salva URL, ID, opzione esatta, unità, prezzo e campo interno. I dati mancanti rimangono aperti. Categoria, catalogo e schermata non sostituiscono il venditore.",
+        "Confronta richiesta e registro prima di pagare. Se il tentativo precedente ha creato un altro ordine, chiariscilo per evitare duplicati. L’inserimento manuale non deve aggirare limiti o sostituire silenziosamente il prodotto."
+      ],
+      [
+        "QC Completed: decidere usando le tue prove",
+        "Associa foto, ordine e variante. Tieni quando i dati decisivi coincidono, chiedi una vista precisa se mancano prove o contatta assistenza per una differenza documentata. Un’etichetta illeggibile è incertezza, non prova di taglia sbagliata.",
+        "Registra l’ora di completamento e controlla subito il reso. La guida prevede cinque giorni, 120 ore, per richieste idonee dopo QC, secondo venditore e articolo. Lo stato non è tua approvazione né partenza internazionale: non aspettare di presentare il pacco."
+      ],
+      [
+        "Non trasformare una consegna irrisolta in gratuita",
+        "Distingui zero, vuoto e attesa. Ricontrolla riepilogo e unità pezzo, paio o set dopo variazioni di quantità o opzione. Separa costi di venditori diversi.",
+        "Confronta merci e consegna interna confermata per il primo subtotale, poi aggiungi una stima internazionale distinta. Senza contenuto e imballaggio comparabili, prezzo basso o zero interno non provano il costo consegnato minimo."
+      ]
+    ]
+  }
+}

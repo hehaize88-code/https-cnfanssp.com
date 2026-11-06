@@ -1,3 +1,4 @@
+import {novemberArticles} from './november-content';
 import {researchArticles} from "./seo-article-opportunities";
 import {destinationListingArticle} from "./seo-article-destination";
 import {identifierGuideArticle} from "./seo-article-identifiers";
@@ -8,6 +9,7 @@ import {prioritySeoArticles} from "./seo-article-priorities";
 
 export type SeoArticle={slug:string;title:string;description:string;meta:string;sourceNote:string;quickFacts:string[];sections:{heading:string;paragraphs:string[]}[]};
 export const seoArticles:SeoArticle[]=[
+...novemberArticles.en,
 ...researchArticles.en,
 ...prioritySeoArticles,
 liveFieldsArticle,

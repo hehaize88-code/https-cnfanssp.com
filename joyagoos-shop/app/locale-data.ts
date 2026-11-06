@@ -1,3 +1,4 @@
+import novemberUi from './content/november-ui.json';
 import type { Lang } from "./site-data";
 
 export type StepKey = "spreadsheet"|"guide"|"qc"|"shipping";
@@ -74,3 +75,8 @@ const translatedFactTitles:Record<Exclude<Lang,"en">,Record<OfficialFactKey,[str
 };
 const translatedSource={de:"Offizielle Joyagoo-Hinweise",es:"Guía oficial de Joyagoo",fr:"Guide officiel Joyagoo",it:"Guida ufficiale Joyagoo"} as const;
 for(const lang of ["de","es","fr","it"] as const){for(const key of Object.keys(translatedFactTitles[lang]) as OfficialFactKey[]){const [title,body]=translatedFactTitles[lang][key];officialFacts[lang][key]={title,body,source:translatedSource[lang]};}}
+
+for(const lang of ['en','de','es','fr','it'] as const){
+  const [title,body]=novemberUi[lang].storage;
+  officialFacts[lang].storage={...officialFacts[lang].storage,title,body};
+}

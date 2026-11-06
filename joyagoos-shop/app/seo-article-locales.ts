@@ -1,3 +1,4 @@
+import {novemberArticles,novemberSlugs,reviseNovemberArticle} from './november-content';
 import {researchArticles, researchArticleSlugs, improveExistingArticle} from "./seo-article-opportunities";
 import type {Lang} from "./site-data";
 import {getSeoArticle,type SeoArticle} from "./seo-articles";
@@ -437,6 +438,7 @@ it:[
 ]};
 
 function getOriginalLocalizedSeoArticle(slug:string,lang:Lang):SeoArticle|undefined{
+  if(novemberSlugs.includes(slug))return novemberArticles[lang].find(article=>article.slug===slug);
   if(researchArticleSlugs.includes(slug))return researchArticles[lang].find(article=>article.slug===slug);
   const base=getSeoArticle(slug);if(!base||lang==="en")return base;
   if(prioritySeoArticleSlugs.includes(slug))return prioritySeoArticleTranslations[lang]?.[slug]??base;
@@ -452,7 +454,7 @@ function getOriginalLocalizedSeoArticle(slug:string,lang:Lang):SeoArticle|undefi
 }
 export function getLocalizedSeoArticle(slug:string,lang:Lang):SeoArticle|undefined{
   const article=getOriginalLocalizedSeoArticle(slug,lang);
-  return article?improveExistingArticle(article,lang):undefined;
+  return article?reviseNovemberArticle(improveExistingArticle(article,lang),lang):undefined;
 }
-const publishingOrder=[...researchArticleSlugs,...prioritySeoArticleSlugs,"joyagoo-listing-availability-price-domestic-freight-recheck","joyagoo-color-size-quantity-variant-check","joyagoo-title-thumbnail-destination-consistency-check","joyagoo-product-id-source-link-destination-url-guide","joyagoo-destination-listing-verification-guide","joyagoo-spreadsheet-independent-product-index-guide","joyagoo-buying-fees-guide","joyagoo-qc-return-window-guide","volumetric-weight-guide","joyagoo-warehouse-rehearsal-shipping-guide","joyagoo-reviews-buyer-signals"];
+const publishingOrder=[...novemberSlugs,...researchArticleSlugs,...prioritySeoArticleSlugs,"joyagoo-listing-availability-price-domestic-freight-recheck","joyagoo-color-size-quantity-variant-check","joyagoo-title-thumbnail-destination-consistency-check","joyagoo-product-id-source-link-destination-url-guide","joyagoo-destination-listing-verification-guide","joyagoo-spreadsheet-independent-product-index-guide","joyagoo-buying-fees-guide","joyagoo-qc-return-window-guide","volumetric-weight-guide","joyagoo-warehouse-rehearsal-shipping-guide","joyagoo-reviews-buyer-signals"];
 export function getLocalizedSeoArticles(lang:Lang){return publishingOrder.map(slug=>getLocalizedSeoArticle(slug,lang)).filter((article):article is SeoArticle=>Boolean(article));}

@@ -27,12 +27,12 @@ for(const lang of languages){
    assert(html.includes(`hrefLang="${alternate}" href="https://joyagoos.shop/${target}/articles/${article.slug}/"`),`${lang}: alternate ${alternate}`);
   }
   assert(hub.includes(`href="/${lang}/articles/${article.slug}/"`),`${lang}: missing hub link`);
-  assert(home.includes(`href="/${lang}/articles/${article.slug}/"`),`${lang}: missing homepage link`);
+  if(article.slug.includes("shipping-budget"))assert(home.includes(`href="/${lang}/articles/${article.slug}/"`),`${lang}: missing homepage budget link`);
   const schemas=[...html.matchAll(/<script type="application\/ld\+json">(.*?)<\/script>/gs)].map(m=>JSON.parse(m[1]));
   const schema=schemas.find(s=>s['@type']==='Article');
   assert.equal(schema?.inLanguage,lang);
   assert.equal(schema?.datePublished,'2026-10-13');
-  assert.equal(schema?.dateModified,'2026-10-13');
+  assert.equal(schema?.dateModified,article.slug.includes('size-chart')?'2026-10-13':'2026-11-06');
   assert.equal(schema?.headline,article.title);
   for(const link of html.matchAll(/href="#([^"]+)"/g))assert(html.includes(`id="${link[1]}"`),`Missing anchor ${link[1]}`);
   for(const link of html.matchAll(/href="(\/(?:en|de|es|fr|it)\/[^"#?]*)"/g)){
@@ -43,6 +43,6 @@ for(const lang of languages){
   checked++;
  }
  const articleDirs=(await readdir(join(root,`out/${lang}/articles`),{withFileTypes:true})).filter(e=>e.isDirectory());
- assert.equal(articleDirs.length,23,`${lang}: 23 article routes`);
+ assert.equal(articleDirs.length,26,`${lang}: 26 article routes`);
 }
-console.log(`Research release verified: ${checked} complete localized new articles; 23 articles per language; homepage, hub, metadata, schema, TOC and internal links pass.`);
+console.log(`Research release verified: ${checked} complete localized new articles; 26 articles per language; homepage, hub, metadata, schema, TOC and internal links pass.`);

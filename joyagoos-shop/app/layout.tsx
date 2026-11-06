@@ -8,8 +8,8 @@ const GA_MEASUREMENT_ID="G-BWGRZFMW66";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://joyagoos.shop"),
-  title: "Joyagoo Finds & Spreadsheet 2026 | Verified Product Links",
-  description: "Independent Joyagoo product-link research with verified samples, category discovery, link-check methods, QC notes and shipping preparation.",
+  title: "Joyagoo Spreadsheet, QC Photos & Shipping Cost Guides",
+  description: "Independent Joyagoo guides to product links, DIY orders, QC photos, domestic fees and international shipping budgets.",
   robots: { index: true, follow: true },
   icons: { icon: "/favicon.svg", shortcut: "/favicon.svg" },
   openGraph: {

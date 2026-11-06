@@ -15,7 +15,7 @@ Production changes are published through `main` in `hehaize88-code/https-cnfanss
 
 ## Editorial and indexing policy
 
-The `.shop` site focuses on product discovery, spreadsheets, source links and variant decisions. Five older policy/QC/shipping articles duplicated on `joyagoos.org` remain available as reference, with `noindex, follow`, canonical URLs pointing to `.org`, and exclusion from this sitemap. All `.shop`-owned pages remain indexable and self-canonical. The production export currently contains 175 indexable localized pages and 25 archive pages.
+The `.shop` site focuses on product discovery, spreadsheets, source links and variant decisions. Five older policy/QC/shipping articles duplicated on `joyagoos.org` remain available as reference, with `noindex, follow`, canonical URLs pointing to `.org`, and exclusion from this sitemap. All `.shop`-owned pages remain indexable and self-canonical. The production export currently contains 190 indexable localized pages and 25 archive pages.
 
 The October 2026 release adds four distinct product-research guides in all five languages:
 
@@ -27,6 +27,20 @@ The October 2026 release adds four distinct product-research guides in all five 
 Localized bodies live in `app/content/research-{lang}.json`. Maintain section and route parity when editing them. The shipping worksheet compares weights under a supplied divisor; it does not quote shipping rates. Its defaults and article arithmetic are illustrative.
 
 Ten existing article search titles have concise, localized wording that describes the actual content. Article discovery now uses topic groups, four homepage article cards, per-article contents and contextual links. The existing live-price and variant guides have additional practical checks in every language. Buying, spreadsheet, QC and shipping hub steps have individual descriptions.
+
+## November 6, 2026 release
+
+Three new purchase-decision guides have complete EN/DE/ES/FR/IT bodies in `app/content/november-{lang}.json`:
+
+- `joyagoo-rehearsal-fee-vs-shipping-cost`
+- `joyagoo-domestic-shipping-fee-zero`
+- `joyagoo-diy-order-guide`
+
+Each English article has 1,200–1,800 words; all translations retain nine sections and the same decision steps. The localized UI, 13 added FAQ answers and additions to four existing articles live in `november-ui.json`. FAQ pages now contain 21 questions each. New content is self-canonical and in the 190-URL sitemap; the 25 intentional archive pages keep their original policy. Original publication dates remain intact for revised articles.
+
+Homepage, buying, QC and shipping hubs answer the observed payment/status questions directly. Payment tables separate goods, domestic delivery, optional packing and international freight. Homepage discovery prioritizes the three new guides plus the existing shipping worksheet. The shipping CTA now reaches that indexable worksheet, not an archived cross-domain guide. Analytics keeps the existing measurement ID and event model, with `quick-answer` placement on the new links.
+
+`check-november-release.mjs` checks all 190 indexable pages for metadata, reciprocal language links, internal routes/anchors and the GA4 loader, plus article completeness, revision dates, FAQ parity and the localized payment/storage information.
 
 ## Analytics
 

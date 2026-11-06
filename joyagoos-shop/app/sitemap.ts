@@ -1,3 +1,4 @@
+import {novemberSlugs,novemberRevisedSlugs,novemberDate} from './november-content';
 import {researchArticleSlugs, revisedArticleSlugs, researchDate} from "./seo-article-opportunities";
 import type { MetadataRoute } from "next";
 import { categoryKeys, languages, pageKeys, type CategoryKey, type PageKey } from "./site-data";
@@ -27,6 +28,8 @@ const changedOn:Partial<Record<PageKey,string>>={
 };
 
 for(const page of [...researchArticleSlugs,...revisedArticleSlugs,"home","articles","guide","shipping","qc","spreadsheet"]) changedOn[page as PageKey]=researchDate;
+
+for(const page of [...novemberSlugs,...novemberRevisedSlugs,"home","articles","guide","shipping","qc","spreadsheet","faq"]) changedOn[page as PageKey]=novemberDate;
 
 function route(lang:string,page:PageKey){if(page==="home")return `/${lang}/`;if(seoArticleSlugs.includes(page))return `/${lang}/articles/${page}/`;if(categoryKeys.includes(page as CategoryKey))return `/${lang}/categories/${page}/`;return `/${lang}/${page}/`;}
 
