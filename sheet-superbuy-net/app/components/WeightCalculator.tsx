@@ -1,5 +1,5 @@
 export function WeightCalculator() {
-  return <section className="weight-calculator" aria-label="Parcel weight calculator">
+  return <section id="weight-calculator" className="weight-calculator" aria-label="Parcel weight calculator">
     <h2>Calculate parcel weight</h2><p>Compare scale weight with dimensional weight. Use the outside dimensions of the packed parcel and the divisor published for your selected route. This calculates weight, not a shipping quote.</p>
     <form data-weight-calculator>
       <div className="calculator-fields">

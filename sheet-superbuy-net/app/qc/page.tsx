@@ -1,3 +1,4 @@
+import Link from "next/link";
 import type { Metadata } from "next";
 import { ResourceShell } from "../components/ResourceShell";
 
@@ -5,6 +6,7 @@ export const metadata: Metadata = { title: "Superbuy QC Photos 2026: What to Che
 
 export default function QCPage() {
   return <ResourceShell eyebrow="QC photos" title="Know what the warehouse checked—and what it did not." intro="Superbuy’s current homepage says three free QC photos are taken during warehouse inspection. Those images are useful evidence, but a small photo set cannot prove every material, measurement, internal component or hidden surface." stats={[{ value: "3", label: "free QC photos stated on official homepage" }, { value: "90 days", label: "official free storage window" }, { value: "Different", label: "forwarding inspection rules" }]}>
+    <aside className="content-prose"><h2>Cannot find your QC photos?</h2><p>Check the order and warehouse stage before treating missing images as a fault. Standard photos, additional requests and public QC search results are different records.</p><Link href="/articles/superbuy-qc-photos-not-showing/">QC photos not showing: step-by-step checks →</Link></aside>
     <div className="content-grid">
       <article className="content-card"><span>Identity</span><h2>Is it the correct item?</h2><p>Match model, color, size label, quantity and included pieces. If the order is a set, check that every promised component is present.</p></article>
       <article className="content-card"><span>Construction</span><h2>Does the item look usable?</h2><p>Review seams, symmetry, hardware, closures, edges, print placement and visible damage under the available warehouse lighting.</p></article>

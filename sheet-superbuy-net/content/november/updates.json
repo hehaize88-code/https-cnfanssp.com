@@ -1,0 +1,37 @@
+{
+  "superbuy-shipping-cost-guide": {
+    "heading": "Quick estimate: weight first, price second",
+    "paragraphs": [
+      "Enter the destination and accurate item category in the official estimator. Use packed dimensions and the unit requested by the form. For example, 3 kg is 3,000 g. With a 6,000 divisor, a 40 × 30 × 20 cm parcel has 4 kg of dimensional weight. Compare this with the actual weight and then read the route rules before using either number for a budget.",
+      "If the calculated weight is much higher than the scale weight, review packaging before comparing prices. If no route appears, check restrictions and dimensions rather than repeatedly changing the destination or category. Keep the estimate date and parcel assumptions, then reconcile the final shipping record after packing."
+    ]
+  },
+  "how-to-use-superbuy-spreadsheet": {
+    "heading": "Find product links, then confirm the original listing",
+    "paragraphs": [
+      "Use the product list on the homepage or Spreadsheet page to browse shoes, clothing and accessories. Each row links to a product reference page. Before placing a Superbuy order, confirm the original marketplace listing and selected option. A catalogue link, a seller link and a Superbuy order record serve different purposes.",
+      "Use the product search for a broader selection when a category has no suitable item. Check the current seller price and availability instead of treating the reference price as a live quote. Save the original item link with the chosen size and colour so that later QC photos can be matched to the correct order."
+    ]
+  },
+  "superbuy-qc-photo-checklist": {
+    "heading": "Before the checklist: confirm whose item is pictured",
+    "paragraphs": [
+      "Match the photos to your own order number and selected option before judging quality. A seller image or historical QC result can help you decide what to inspect, but neither proves the condition of your item. If pictures are missing, check the warehouse stage and any additional-photo request first.",
+      "Inspect identity, quantity and measurements before minor cosmetic details. If an important view is absent, request that view clearly and resolve the question before international dispatch. Check the applicable after-sales deadline while waiting; a photo request is not proof that the return window has been extended."
+    ]
+  },
+  "superbuy-detailed-photos-guide": {
+    "heading": "Missing photos or missing detail?",
+    "paragraphs": [
+      "If the standard photo set is absent, check the warehouse item and processing stage before buying an additional service. If the set exists but does not show a measurement or defect clearly, describe the required area and angle in a detailed-photo request. Confirm the current service price and scope in your order.",
+      "After submission, track the request separately from the original product payment. A useful result answers the question you specified: for example, a ruler with both measurement endpoints visible. If the image does not answer it, explain the missing detail to support rather than submitting the same vague request again."
+    ]
+  },
+  "superbuy-fees-explained": {
+    "heading": "Check the live service quote before you pay",
+    "paragraphs": [
+      "Keep the product, domestic delivery, optional services and international shipping in separate budget entries. An old example is not a current quote. The public fee page and the order form can present examples differently, so confirm the selected service and price at checkout and save the resulting transaction record.",
+      "Treat a displayed shipping estimate as a planning figure. After packing, compare the package measurements, route and any adjustment with the actual shipment record. When asking support about a difference, identify the changed line item rather than adding every account movement together as shipping."
+    ]
+  }
+}

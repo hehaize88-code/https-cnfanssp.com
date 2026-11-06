@@ -1,10 +1,12 @@
+import { CategoryExplorer } from "../components/CategoryExplorer";
 import type { Metadata } from "next";
 import { ResourceShell } from "../components/ResourceShell";
 
-export const metadata: Metadata = { title: "How to Use a Superbuy Spreadsheet in 2026: Step-by-Step", description: "Use a Superbuy spreadsheet to discover products, verify Taobao, Tmall, JD and Weidian links, check options, review QC and plan a parcel.", alternates: { canonical: "/spreadsheet/" } };
+export const metadata: Metadata = { title: "Superbuy Spreadsheet Links: Product List and Buying Steps", description: "Use a Superbuy spreadsheet to discover products, verify Taobao, Tmall, JD and Weidian links, check options, review QC and plan a parcel.", alternates: { canonical: "/spreadsheet/" } };
 
 export default function SpreadsheetPage() {
-  return <ResourceShell eyebrow="Spreadsheet guide" title="Use the sheet to discover. Use current evidence to decide." intro="A Superbuy spreadsheet can shorten product discovery, but the official order flow still depends on the live marketplace listing, the option captured at checkout, the item received by the warehouse and the parcel you finally submit." stats={[{ value: "99%", label: "official capture claim for Taobao, Tmall & JD" }, { value: "90 days", label: "official free storage" }, { value: "2", label: "separate payment stages" }]}>
+  return <ResourceShell eyebrow="Spreadsheet guide" title="Superbuy Spreadsheet: Browse Links and Check Your Order" intro="A Superbuy spreadsheet can shorten product discovery, but the official order flow still depends on the live marketplace listing, the option captured at checkout, the item received by the warehouse and the parcel you finally submit." stats={[{ value: "99%", label: "official capture claim for Taobao, Tmall & JD" }, { value: "90 days", label: "official free storage" }, { value: "2", label: "separate payment stages" }]}>
+    <CategoryExplorer />
     <div className="content-grid">
       <article className="content-card"><span>01 · Discover</span><h2>Start with a current product link</h2><p>Superbuy’s official guide says users can paste a Taobao, Tmall or JD link into its search bar, or search by product name. A sheet helps you reach that starting point faster.</p></article>
       <article className="content-card"><span>02 · Capture</span><h2>Check what the order form imported</h2><p>The official guide says the system can capture information for 99% of products on those marketplaces. The remaining cases use a manual shopping-agent order, so never assume every field was imported correctly.</p></article>

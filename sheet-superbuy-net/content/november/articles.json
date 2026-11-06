@@ -1,0 +1,194 @@
+{
+  "articles": [
+    {
+      "slug": "superbuy-shipping-to-canada",
+      "title": "Superbuy Shipping to Canada: Estimate Cost for a 3 kg Parcel",
+      "description": "Estimate Superbuy shipping to Canada using packed dimensions, a 3 kg worked example, route restrictions and the official calculator. No fixed-rate promises.",
+      "eyebrow": "Canada shipping",
+      "read": "8 min read",
+      "published": "2026-11-06",
+      "updatedLabel": "Updated 6 November 2026"
+    },
+    {
+      "slug": "superbuy-qc-photos-not-showing",
+      "title": "Superbuy QC Photos Not Showing: Where to Look and What to Check",
+      "description": "Find missing Superbuy QC photos by checking the order, warehouse stage and photo request. Learn what to send support and when to pause parcel submission.",
+      "eyebrow": "QC troubleshooting",
+      "read": "8 min read",
+      "published": "2026-11-06",
+      "updatedLabel": "Updated 6 November 2026"
+    }
+  ],
+  "content": {
+    "superbuy-shipping-to-canada": {
+      "callout": [
+        "Start here",
+        "Choose Canada in the official calculator, enter the packed parcel dimensions and compare only routes that accept your items. A 3 kg scale weight alone cannot determine the shipping price."
+      ],
+      "sections": [
+        {
+          "heading": "Start with the parcel you will actually send",
+          "paragraphs": [
+            "Superbuy shipping to Canada has no single price per kilogram that applies to every order. A compact box of clothing and a large box of shoes can weigh the same but produce different estimates. The useful starting point is a description of your parcel: destination, contents, packed weight, outside dimensions and any handling requirements. Keep these inputs with the date of the quote so you can repeat the comparison later.",
+            "Before buying, use approximate dimensions to decide whether the purchase fits your budget. Once items reach the warehouse, replace guesses with the available measurements. After packaging changes, check again. These are three stages of the same estimate, not three conflicting prices. This guide provides a planning method and arithmetic examples; it does not publish live Canadian shipping rates or promise that a particular route will remain available."
+          ]
+        },
+        {
+          "heading": "Enter Canada and the correct item category",
+          "paragraphs": [
+            "Open Superbuy's official shipping calculator and select Canada as the destination. Enter the parcel weight in the unit requested by the form. If it asks for grams, 3 kg means 3,000 g, not 3 g. Add the length, width and height of the outside package in centimetres. Use the category that describes the contents accurately, including any relevant battery, liquid or branded-item restriction.",
+            "A route shown for ordinary clothing may disappear when the category changes. Do not change the category merely to make a cheaper service appear. Check the selected route's conditions and use the actual delivery address when the order requests it. If a calculator does not ask for a postal code, do not assume it has already resolved every address-specific charge or delivery limitation. Confirm those details in the live parcel quote."
+          ]
+        },
+        {
+          "heading": "Worked example: a 3 kg parcel can use 4 kg for planning",
+          "paragraphs": [
+            "Imagine a packed parcel weighing 3 kg with outside dimensions of 40 × 30 × 20 cm. If the selected route uses a dimensional divisor of 6,000, the volume calculation is 40 × 30 × 20 ÷ 6,000 = 4 kg. Where billing compares actual and volumetric weight, the larger value is the relevant planning input. In this example, that is 4 kg rather than the 3 kg shown on the scale.",
+            "Now suppose suitable packaging reduces the dimensions to 35 × 25 × 20 cm while the actual weight remains 3 kg. The same formula gives about 2.92 kg, so actual weight is larger. This example explains why packaging matters; it does not establish a shipping discount. A route can apply different divisors, rounding rules, minimums or size limits. Read those rules before turning a calculated weight into a cost assumption."
+          ]
+        },
+        {
+          "heading": "Compare quotes using the same assumptions",
+          "paragraphs": [
+            "Run each candidate route with the same parcel inputs. Record the displayed currency, quote date, estimated charge, delivery description and any separately listed service costs. Then read the route details. A lower headline figure is not a useful comparison if it excludes something included elsewhere or if the route cannot accept your goods. Keep the route name exactly as displayed so you can find the same service again.",
+            "Do not rank Canadian routes solely from an old screenshot or a social-media claim about the cheapest line. Those examples may use another destination, package size or product category. Use other buyers' experiences to identify questions, then answer those questions from your current quote. When only one eligible route remains, compare changing the parcel contents or packaging before assuming the entire purchase has become uneconomical."
+          ]
+        },
+        {
+          "heading": "Decide whether consolidation actually helps",
+          "paragraphs": [
+            "Combining warehouse items can avoid sending several separate parcels, but a larger package can also cross a weight step or size limit. Compare one combined parcel with two sensible groups using measured dimensions where possible. Do not assume that adding another item always lowers the delivered cost per item. A low-price bulky product can change the economics of everything packed beside it.",
+            "Keep incompatible goods separate when the platform's route rules require it. Ask the warehouse whether the intended combination is practical before paying for extra handling. If one item is still waiting for seller dispatch, weigh the possible saving against the warehouse deadlines for items already stored. The decision should reflect your actual orders, not a universal rule that consolidation is always cheapest."
+          ]
+        },
+        {
+          "heading": "Choose packaging around the contents",
+          "paragraphs": [
+            "For shoes, decide whether the retail box is needed for protection or your own use. Removing it can reduce volume, but the warehouse still needs an appropriate outer package. For clothing, ask whether space-saving packing suits the material. Avoid compression instructions that could damage shaped or delicate goods. For fragile accessories, useful protection may matter more than a small reduction in the first estimate.",
+            "Give one clear instruction for each change and keep the confirmation. For example, specify which retail boxes may be removed and which must stay. After a packing service, compare the revised dimensions and actual weight with the earlier estimate. If the package became larger because protective material was added, ask about the reason before approving another change. Packing decisions should remain reversible until the parcel is ready for dispatch."
+          ]
+        },
+        {
+          "heading": "Separate the shipping estimate from the delivered budget",
+          "paragraphs": [
+            "Keep the product purchase, Chinese domestic delivery, selected services and international parcel charge as separate entries. Record the payment currency rather than treating a displayed USD or CAD reference as the final amount charged. Read the current quote for what is included and what may be collected separately. This article does not calculate Canadian import charges or provide a blanket tax-free allowance.",
+            "If you need import guidance, check the current information from the Canada Border Services Agency and the selected carrier for your actual goods. Keep an accurate description and purchase record. A route name containing a tax-related phrase is not enough to infer how every Canadian shipment will be handled. Ask Superbuy to clarify the specific route terms when the quote and the description appear inconsistent."
+          ]
+        },
+        {
+          "heading": "If Canada shows no available shipping line",
+          "paragraphs": [
+            "First check the country, units, category and dimensions for a simple input error. Then compare the parcel with the restrictions displayed by the calculator. Oversized items, particular contents or the combination of goods can remove available routes. Correct an incorrect input, but do not conceal a restriction. Save the exact message and ask support which characteristic prevents the parcel from using the available services.",
+            "A useful support request includes Canada as the destination, the proposed contents, actual weight, outside dimensions and the date you tried the calculator. Ask whether a different packing arrangement or separate parcel would be eligible. Do not buy a restricted or oversized item merely because someone else's smaller parcel reached Canada. Establish the shipping path before committing to a purchase that depends on it."
+          ]
+        },
+        {
+          "heading": "After payment, reconcile the final parcel record",
+          "paragraphs": [
+            "An initial estimate is a budget tool. The parcel payment and subsequent adjustments belong to the actual shipment record. Save the chosen route, packaging instructions and amount paid, then compare them with the final package measurements and any adjustment shown in your account. If something changed, ask which input or charge changed. This gives support a precise issue to investigate instead of a general complaint that shipping was expensive.",
+            "For delivery progress, distinguish seller-to-warehouse tracking from the international parcel number. A seller's delivered scan does not mean your Canadian parcel has left China. Follow the international shipment through the official parcel record and the carrier link supplied there. Read our shipping-time guide for the stages and escalation checklist. Keep a final cost log for your own next estimate, while remembering that another parcel can have different dimensions and route conditions."
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Superbuy official shipping calculator",
+          "url": "https://www.superbuy.com/en/page/query/freight/"
+        },
+        {
+          "label": "Superbuy official Service & Fees",
+          "url": "https://www.superbuy.com/en/page/guide/feecomposition/"
+        },
+        {
+          "label": "Superbuy official Help Center",
+          "url": "https://www.superbuy.com/en/page/help/"
+        }
+      ]
+    },
+    "superbuy-qc-photos-not-showing": {
+      "callout": [
+        "Start here",
+        "Check your own order and warehouse record first. Seller delivery, warehouse intake and completed photography are different events; a public QC search is not your account photo record."
+      ],
+      "sections": [
+        {
+          "heading": "Identify which photos are missing",
+          "paragraphs": [
+            "A search for Superbuy QC photos not showing can describe several different problems. Your order may not yet have warehouse photos, a paid close-up may still be outstanding, or an external QC search may return no historical images. Start by naming the missing evidence. The correct next step depends on whether you need pictures of your own item or examples from a previous buyer.",
+            "Seller listing images show what the seller advertises. Historical QC images show a past purchase. Your warehouse photos show the item connected to your current order, subject to the scope of the inspection service. These sources are useful for different purposes. A public search with no result does not prove that the warehouse lost your item, and a successful public search does not prove that your own order has passed inspection."
+          ]
+        },
+        {
+          "heading": "Open the correct account and order",
+          "paragraphs": [
+            "Use your usual Superbuy sign-in route and open the order you actually placed. Match the product, selected size or colour, quantity and order number. If you have several similar purchases, avoid identifying them by thumbnail alone. Check the associated warehouse item record and any available photo or inspection section. Interface labels can differ between the website, app and language editions, so follow the order identity rather than an old screenshot.",
+            "If you used parcel forwarding, check the forwarding record instead of expecting the shopping-agent order view to contain everything. If a friend placed the order, their account may hold the relevant record. Do not send your password or verification code to obtain pictures. Ask the account holder for the necessary item photos or use the official support channel associated with the purchase."
+          ]
+        },
+        {
+          "heading": "Read the stage before deciding there is a fault",
+          "paragraphs": [
+            "Seller dispatch, delivery to the warehouse, intake and photo completion are separate milestones. A domestic carrier's delivered scan shows a delivery event; it does not by itself establish that the item has been matched to your order, inspected and photographed. Read the latest event in your Superbuy record and note its timestamp. That event is more useful than repeatedly refreshing a public tracking page.",
+            "If the record still shows purchasing or seller dispatch, ask about that stage rather than requesting missing warehouse photographs. If it shows receipt or processing, look for an outstanding intake or inspection step. If the record says photography or the requested service is complete but the images are absent, that discrepancy is worth reporting. There is no universal waiting period that fits every order and service type."
+          ]
+        },
+        {
+          "heading": "Separate standard QC from a detailed-photo request",
+          "paragraphs": [
+            "A standard photo set may not include an insole measurement, a small label or the angle you wanted. Missing detail is different from a missing photo set. Review every available image at full size before ordering another service. Write down the exact unanswered question: the length of an insole, a garment measurement, the contents of a set, or a visible defect that is not clear enough to assess.",
+            "For a detailed-photo request, check that it belongs to the correct item and was actually submitted. Review the service status and any message asking you to clarify the instructions. The current Service & Fees page describes detailed photography as a separate optional service. Confirm the current price and scope in the order before purchase. A payment record alone does not prove that the requested photograph has already been produced."
+          ]
+        },
+        {
+          "heading": "Rule out a display problem without changing the order",
+          "paragraphs": [
+            "When the record indicates that photos exist but thumbnails do not load, try reopening the item page and checking the same account through the official website or app. Compare whether all images fail or only one item is affected. If the problem occurs only in one browser session, an extension or temporary connection issue may be involved. Record what you tried so support does not have to repeat the same checks.",
+            "Do not delete the order, submit an unwanted parcel or repurchase a photo service merely to refresh the screen. Those actions can change the transaction without resolving a display problem. If an image opens but appears low resolution, look for its full-size view before concluding that the source file is unusable. Keep a screenshot of the missing-image state with account details cropped out if you plan to share it publicly."
+          ]
+        },
+        {
+          "heading": "Give support a request they can investigate",
+          "paragraphs": [
+            "Contact Superbuy through the official Help Center or the order's support route. Provide the order or warehouse item number privately, the current status, the last relevant timestamp and a short description of the missing images. Say whether the issue affects standard QC, an additional photo request or a specific thumbnail. Include the service reference if you purchased an extra view, and describe any website/app comparison you already made.",
+            "A practical message is: my item is shown as received, but I cannot find its inspection photos in the item record; please confirm whether intake and photography are complete and where the images are available. Adapt the wording to the status you actually see. Avoid claiming that inspection is complete when only the domestic carrier says delivered. A precise request helps support distinguish a processing question from a display or service-delivery issue."
+          ]
+        },
+        {
+          "heading": "Request a useful replacement or additional view",
+          "paragraphs": [
+            "When the available image cannot answer your question, describe the item area, camera angle and evidence required. For a garment, name the measurement points and ask for the ruler to be visible. For shoes, specify the view needed rather than asking for better QC in general. For a set, ask for all included pieces in one clear frame if that is what you need to verify.",
+            "Do not combine several unrelated tasks into an ambiguous request. A photograph cannot establish every material property, internal function or authenticity claim. Ask support which service can address a functional check rather than assuming a close-up includes testing. After receiving the new image, compare it with the original question. If the measurement endpoints are hidden, explain that specific gap instead of repeatedly purchasing the same unclear request."
+          ]
+        },
+        {
+          "heading": "If an external QC finder has no result",
+          "paragraphs": [
+            "Check that the submitted link identifies the intended marketplace item rather than a category, search result or shortened sharing page. Where the tool supports an original product link, use that link and confirm the marketplace and item ID. A converter or external index may not have historical coverage for every item. No public result is an information gap, not a verdict about the seller or the product.",
+            "Use the current seller listing for initial option research and your own warehouse evidence for the eventual shipping decision. A popular item's old QC photos can still show a different size, colour or production version. Do not substitute those images for a missing inspection record. If you have not purchased anything, there may simply be no personal warehouse item for Superbuy to photograph yet."
+          ]
+        },
+        {
+          "heading": "Resolve important questions before parcel submission",
+          "paragraphs": [
+            "If the missing evidence concerns size, quantity, damage or the selected option, resolve that question before approving international dispatch. Check the applicable seller after-sales deadline in your own order while the issue is open. Do not assume that waiting for an additional photo automatically extends a return window or pauses a storage deadline. Ask support how those deadlines apply when necessary.",
+            "Once photographs become available, save the views relevant to your decision and record the outcome: accept, request clarification, or investigate an eligible return. Keep the final image, order reference and support response together. The goal is a clear decision about the item you own. Our QC checklist, detailed-photo guide and returns guide provide the next steps without treating a photograph as a guarantee of every product characteristic."
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Superbuy official User Guidance",
+          "url": "https://www.superbuy.com/en/page/newguide/userguide/"
+        },
+        {
+          "label": "Superbuy official Service & Fees",
+          "url": "https://www.superbuy.com/en/page/guide/feecomposition/"
+        },
+        {
+          "label": "Superbuy official Help Center",
+          "url": "https://www.superbuy.com/en/page/help/"
+        }
+      ]
+    }
+  }
+}

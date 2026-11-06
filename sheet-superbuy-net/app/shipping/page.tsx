@@ -1,12 +1,14 @@
+import Link from "next/link";
 import type { Metadata } from "next";
 import { WeightCalculator } from "../components/WeightCalculator";
 import { ResourceShell } from "../components/ResourceShell";
 
-export const metadata: Metadata = { title: "Superbuy Shipping Cost 2026: Weight, Volume & Consolidation", description: "Estimate Superbuy shipping with actual and volumetric weight, packing scenarios, line restrictions, consolidation and the final carrier adjustment.", alternates: { canonical: "/shipping/" } };
+export const metadata: Metadata = { title: "Superbuy Shipping Calculator: Weight and Cost Guide", description: "Calculate parcel weight, compare actual and dimensional weight, then use the official Superbuy shipping calculator for destination-specific cost estimates.", alternates: { canonical: "/shipping/" } };
 
 export default function ShippingPage() {
-  return <ResourceShell eyebrow="Shipping cost" title="Estimate twice: before buying and after packing." intro="Superbuy’s official process separates the product payment from international delivery. The first estimate screens out impractical items; the second uses the intended parcel, current route eligibility and packaging choices." stats={[{ value: "100+", label: "shipping lines stated on official homepage" }, { value: "90 days", label: "official free storage" }, { value: "÷ 6,000", label: "air-cargo volume-weight example" }]}>
+  return <ResourceShell eyebrow="Shipping cost" title="Superbuy Shipping Calculator: Plan Weight and Cost" intro="Superbuy’s official process separates the product payment from international delivery. The first estimate screens out impractical items; the second uses the intended parcel, current route eligibility and packaging choices." stats={[{ value: "100+", label: "shipping lines stated on official homepage" }, { value: "90 days", label: "official free storage" }, { value: "÷ 6,000", label: "air-cargo volume-weight example" }]}>
     <WeightCalculator />
+    <section className="content-prose shipping-next"><h2>Get a price for your destination</h2><p>This page calculates weight. For a shipping price, open the official estimator and enter your destination, item category, packed weight and outside dimensions. Compare only routes that accept your goods.</p><a className="button button-primary" data-official-estimator href="https://www.superbuy.com/en/page/query/freight/" target="_blank" rel="noopener">Open the official shipping calculator ↗</a><p><Link href="/articles/superbuy-shipping-to-canada/">Shipping to Canada: a 3 kg worked example →</Link></p></section>
     <div className="content-grid">
       <article className="content-card"><span>Before ordering</span><h2>Use weight as a planning input</h2><p>Record an estimated item weight and consider whether the product is bulky, fragile, liquid, battery-powered or otherwise restricted on some routes.</p></article>
       <article className="content-card"><span>At the warehouse</span><h2>Consolidate with a purpose</h2><p>The official guide says stored items can be combined for overseas delivery and identifies 90 days of free storage. Group compatible items rather than waiting without a parcel plan.</p></article>

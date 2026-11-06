@@ -49,11 +49,13 @@ fs.writeFileSync(path.join(runtime,'english-pages.json'),JSON.stringify(prepared
 if(process.argv.includes('--extract')){console.log(`Extracted ${prepared.length} pages, ${textKeys.size} complete text strings.`);process.exit(0);}
 const out=path.join(root,'dist/client');fs.rmSync(out,{recursive:true,force:true});fs.mkdirSync(out,{recursive:true});fs.cpSync('public',out,{recursive:true});
 const css=fs.readFileSync('app/globals.css','utf8').replace('@import "tailwindcss";','');fs.writeFileSync(path.join(out,'site.css'),css);
+const updatedArticles = new Set([...Object.keys(JSON.parse(fs.readFileSync('content/november/updates.json','utf8'))), ...JSON.parse(fs.readFileSync('content/november/articles.json','utf8')).articles.map(a=>a.slug)]);
 const sitemap=[];let total=0;
 for(const lang of langs){
- const translations=lang==='en'?{}:JSON.parse(fs.readFileSync(`content/locales/${lang}.json`,'utf8'));
+ const translations=lang==='en'?{}:{...JSON.parse(fs.readFileSync(`content/locales/${lang}.json`,'utf8')), ...JSON.parse(fs.readFileSync(`content/november/locales/${lang}.json`,'utf8'))};
  const t=s=>{if(lang==='en'||!isText(s))return s;if(!translations[s])throw new Error(`Missing ${lang} translation: ${s.slice(0,100)}`);return translations[s];};
  for(const page of prepared){
+  const modified = (!page.slug && page.path !== '/faq/') || updatedArticles.has(page.slug) ? '2026-11-06' : '2026-10-13';
   const route=prefix(page.path,lang);const doc=parse('<!doctype html><html><head></head><body>'+page.html+'</body></html>');
   walk(doc,n=>{
    translatable(n,(s,put)=>put(t(s)));
@@ -69,11 +71,11 @@ for(const lang of langs){
     data=localize(data);data.inLanguage=lang==='zh'?'zh-CN':lang;n.childNodes[0].value=JSON.stringify(data).replaceAll('<','\\u003c');
    }
   });
-  const title=t(page.meta.title),description=t(page.meta.description);const head=`<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="index,follow,max-image-preview:large"><meta name="description" content="${escape(description)}"><title>${escape(title)}</title><link rel="canonical" href="${base+route}">${langs.map(l=>`<link rel="alternate" hreflang="${l==='zh'?'zh-CN':l}" href="${base+prefix(page.path,l)}">`).join('')}<link rel="alternate" hreflang="x-default" href="${base+page.path}"><meta property="og:type" content="${page.slug?'article':'website'}"><meta property="og:title" content="${escape(title)}"><meta property="og:description" content="${escape(description)}"><meta property="og:url" content="${base+route}"><meta property="og:image" content="${base}/og.png"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="${escape(title)}"><meta name="twitter:description" content="${escape(description)}"><link rel="icon" href="/favicon.svg"><link rel="stylesheet" href="/site.css?v=20261013"><script defer src="/site.js?v=20261013"></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-H4PY5G9L1M"></script>`;
+  const title=t(page.meta.title),description=t(page.meta.description);const head=`<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="index,follow,max-image-preview:large"><meta name="description" content="${escape(description)}"><title>${escape(title)}</title><link rel="canonical" href="${base+route}">${langs.map(l=>`<link rel="alternate" hreflang="${l==='zh'?'zh-CN':l}" href="${base+prefix(page.path,l)}">`).join('')}<link rel="alternate" hreflang="x-default" href="${base+page.path}"><meta property="og:type" content="${page.slug?'article':'website'}"><meta property="og:title" content="${escape(title)}"><meta property="og:description" content="${escape(description)}"><meta property="og:url" content="${base+route}"><meta property="og:image" content="${base}/og.png"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="${escape(title)}"><meta name="twitter:description" content="${escape(description)}"><link rel="icon" href="/favicon.svg"><link rel="stylesheet" href="/site.css?v=20261106"><script defer src="/site.js?v=20261106"></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-H4PY5G9L1M"></script>`;
   const htmlElement=doc.childNodes.find(x=>x.tagName==='html');setAttr(htmlElement,'lang',lang==='zh'?'zh-CN':lang);
   const headNode=htmlElement.childNodes.find(x=>x.tagName==='head');const sourceHead=parse('<html><head>'+head+'</head><body></body></html>').childNodes.find(x=>x.tagName==='html').childNodes.find(x=>x.tagName==='head');headNode.childNodes=sourceHead.childNodes;for(const c of headNode.childNodes)c.parentNode=headNode;
   const folder=path.join(out,route);fs.mkdirSync(folder,{recursive:true});fs.writeFileSync(path.join(folder,'index.html'),serialize(doc));
-  sitemap.push(`<url><loc>${base+route}</loc><lastmod>2026-10-13</lastmod>${langs.map(l=>`<xhtml:link rel="alternate" hreflang="${l==='zh'?'zh-CN':l}" href="${base+prefix(page.path,l)}"/>`).join('')}<xhtml:link rel="alternate" hreflang="x-default" href="${base+page.path}"/></url>`);total++;
+  sitemap.push(`<url><loc>${base+route}</loc><lastmod>${modified}</lastmod>${langs.map(l=>`<xhtml:link rel="alternate" hreflang="${l==='zh'?'zh-CN':l}" href="${base+prefix(page.path,l)}"/>`).join('')}<xhtml:link rel="alternate" hreflang="x-default" href="${base+page.path}"/></url>`);total++;
  }
 }
 fs.writeFileSync(path.join(out,'sitemap.xml'),'<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">'+sitemap.join('')+'</urlset>');
@@ -81,7 +83,7 @@ fs.copyFileSync(path.join(out,'sitemap.xml'),'public/sitemap.xml');
 fs.writeFileSync(path.join(out,'robots.txt'),`User-agent: *\nAllow: /\nSitemap: ${base}/sitemap.xml\n`);
 fs.writeFileSync(path.join(out,'_headers'),'/*\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n  Cache-Control: public, max-age=0, must-revalidate\n');
 fs.writeFileSync(path.join(out,'404.html'),'<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>Page not found</title><link rel="stylesheet" href="/site.css"></head><body><main class="article-page"><h1>Page not found</h1><p>The requested page is unavailable.</p><a href="/">Superbuy Spreadsheet home</a></main></body></html>');
-fs.writeFileSync(path.join(out,'release.json'),JSON.stringify({release:'2026-10-13-multilingual-seo',languages:langs,articlesPerLanguage:compiled.articles.length,pages:total}));
+fs.writeFileSync(path.join(out,'release.json'),JSON.stringify({release:'2026-11-06-search-and-content',languages:langs,articlesPerLanguage:compiled.articles.length,pages:total}));
 // Support existing static-host output directories without a hosting-setting change.
 fs.rmSync('out',{recursive:true,force:true});fs.cpSync(out,'out',{recursive:true});
 console.log(`Built ${total} indexable pages: ${compiled.articles.length} articles in each of ${langs.length} languages.`);

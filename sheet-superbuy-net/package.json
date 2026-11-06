@@ -13,7 +13,8 @@
     "test": "node scripts/verify-static.mjs && node tests/static-interactions.test.mjs",
     "lint": "bash scripts/sites-env.sh -- eslint . --ignore-pattern dist --ignore-pattern .next",
     "db:generate": "bash scripts/sites-env.sh -- drizzle-kit generate",
-    "content:extract": "node scripts/build-static.mjs --extract"
+    "content:extract": "node scripts/build-static.mjs --extract",
+    "typecheck": "tsc -p tsconfig.app.json --noEmit"
   },
   "dependencies": {
     "drizzle-orm": "0.45.2",

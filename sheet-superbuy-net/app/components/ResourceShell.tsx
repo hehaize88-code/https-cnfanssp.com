@@ -14,7 +14,7 @@ export function ResourceShell({ eyebrow, title, intro, children, stats }: Props)
       <section className="resource-hero">
         <div className="breadcrumbs"><Link href="/">Home</Link><span>/</span><span>{eyebrow}</span></div>
         <p className="eyebrow">{eyebrow}</p><h1>{title}</h1><p className="resource-intro">{intro}</p>
-        <div className="resource-actions"><a className="button button-primary" href={SHOP_URL} target="_blank" rel="nofollow sponsored noopener">Browse live products <span>↗</span></a><Link className="button button-outline" href="/articles">Read practical guides</Link></div>
+        <div className="resource-actions">{topic.includes("shipping") ? <a className="button button-primary" href="#weight-calculator">Calculate parcel weight</a> : <Link className="button button-primary" href="/finds/#finds">Browse product finds →</Link>}<Link className="button button-outline" href="/articles">Read practical guides</Link></div>
         {stats && <div className="mini-stats">{stats.map((stat) => <div key={stat.label}><b>{stat.value}</b><span>{stat.label}</span></div>)}</div>}
       </section>
       <section className="resource-content">{children}{eyebrow !== "Articles" && <aside className="topic-guides"><h2>Practical next steps</h2>{related.map(a=><Link key={a.slug} href={`/articles/${a.slug}/`}>{a.title} →</Link>)}</aside>}</section>

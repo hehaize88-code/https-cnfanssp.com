@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { CategoryExplorer } from "./components/CategoryExplorer";
 import { SiteFooter } from "./components/SiteFooter";
 import { SiteHeader } from "./components/SiteHeader";
-import { articles, SHOP_URL } from "./data";
+import { articles, SHOP_URL, products } from "./data";
 
 const faqs = [
   ["What is a Superbuy spreadsheet?", "It is an independent product-research index that organizes listings by category and adds reference prices, option notes and QC reminders."],
@@ -12,8 +12,8 @@ const faqs = [
 ];
 
 export const metadata: Metadata = {
-  title: "Superbuy Spreadsheet 2026: Shoes, Clothing & QC Guides",
-  description: "Browse a curated Superbuy spreadsheet with current product links, USD reference prices, QC checks and practical 2026 guides for smarter warehouse and shipping decisions.",
+  title: "Superbuy Spreadsheet: Shoes, Clothing & Product Links",
+  description: "Browse Superbuy spreadsheet links for shoes, hoodies and jackets. Compare reference prices, check QC photos and estimate parcel weight before ordering.",
   alternates: { canonical: "/" },
 };
 
@@ -28,19 +28,15 @@ export default function Home() {
     <main>
       <section className="hero clean-hero">
         <div className="hero-copy">
-          <p className="eyebrow">Independent product index · Guides updated 13 October 2026</p>
+          <p className="eyebrow">Independent product index · Guides updated 6 November 2026</p>
           <h1>Superbuy<br />Spreadsheet 2026</h1>
           <p className="hero-lead">Browse Superbuy spreadsheet finds for shoes, hoodies, jackets and accessories. Compare USD reference prices, check the current listing and use practical QC, fee and shipping guides before ordering.</p>
           <div className="hero-actions"><a className="button button-primary" href="#finds">Browse the sheet</a><Link className="button button-outline" href="/spreadsheet/">How to use it</Link></div>
         </div>
         <div className="hero-summary" aria-label="Spreadsheet summary">
-          <div><span>Categories</span><b>12</b></div><div><span>Price view</span><b>USD</b></div><div><span>Method</span><b>Link → QC → Ship</b></div>
+          <div><span>Categories</span><b>{new Set(products.map(p => p.category)).size}</b></div><div><span>Price view</span><b>USD</b></div><div><span>Method</span><b>Link → QC → Ship</b></div>
           <p>Prices are references. Open the current listing before ordering.</p>
         </div>
-      </section>
-
-      <section className="editorial-preview" aria-label="Product research overview">
-        <img src="/research-overview.svg" alt="Superbuy spreadsheet research overview" width="1440" height="520" loading="eager" />
       </section>
 
       <CategoryExplorer />
