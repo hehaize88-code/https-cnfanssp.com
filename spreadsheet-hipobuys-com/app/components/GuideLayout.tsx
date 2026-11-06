@@ -5,7 +5,7 @@ export default function GuideLayout({ kicker, title, intro, accent = "blue", chi
   return localizeNode(<main>
     <header className="site-header">
       <a className="brand logo-brand" href="/" aria-label="Hipobuy guide home"><img src="/hipobuy-logo.png" alt="Hipobuy" width="220" height="52" /></a>
-      <nav className="desktop-nav"><a href="/spreadsheet">Spreadsheet</a><a href="/qc">QC Guide</a><a href="/shipping">Shipping</a><a href="/guides">Guides</a><a href="/articles">Articles</a><a href="/faq">FAQ</a></nav>
+      <nav className="desktop-nav" aria-label="Primary navigation"><a href="/spreadsheet">Spreadsheet</a><a href="/qc">QC Guide</a><a href="/shipping">Shipping</a><a href="/guides">Guides</a><a href="/articles">Articles</a><a href="/faq">FAQ</a></nav>
       <div className="header-actions"><LanguageSwitcher lang={lang} path={path}/><a className="header-cta" href="https://cnfanssp.com/AllProducts/">Open catalog <span>↗</span></a></div>
     </header>
     <section className={`sub-hero ${accent}`}><div><p className="eyebrow">{kicker}</p><h1>{title}</h1><p>{intro}</p></div><span className="sub-hero-mark" aria-hidden="true">HI / 26</span></section>

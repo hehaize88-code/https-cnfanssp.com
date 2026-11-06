@@ -502,3 +502,11 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,su
   .weight-row .calculator-fields { grid-template-columns:1fr 1fr; }
   .weight-row .calculator-fields label:first-child { grid-column:1/-1; }
 }
+@media(max-width:1050px) {
+  .site-header { height:auto; grid-template-columns:1fr auto; padding:10px 12px; row-gap:8px; }
+  .site-header .brand { grid-column:1; grid-row:1; }
+  .site-header .header-actions { grid-column:2; grid-row:1; }
+  .desktop-nav { display:grid; grid-column:1/-1; grid-row:2; grid-template-columns:repeat(3,minmax(0,1fr)); gap:4px; font-size:12px; }
+  .desktop-nav a { display:flex; align-items:center; justify-content:center; text-align:center; min-height:32px; padding:6px; border-radius:5px; background:#293744; color:#fff; }
+  .article-prose section,.shipping-calculator,.article-topic,#categories { scroll-margin-top:145px; }
+}
