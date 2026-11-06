@@ -305,3 +305,32 @@ footer>div:last-child a[aria-current="true"] { color:#36715a; text-decoration:un
 
 .all-guides-link {display:inline-block;margin-top:20px;font-weight:800;text-decoration:underline;text-underline-offset:4px;}
 .section-guide-links {margin:24px clamp(16px,5vw,76px);}
+
+/* Practical guide navigation and parcel calculations share the existing palette. */
+.guide-shortcuts { margin:32px 7vw; padding:24px; border:1px solid var(--ink); display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px 28px; }
+.guide-shortcuts h2 { grid-column:1/-1; font-size:24px; }
+.guide-shortcuts a { line-height:1.5; text-decoration:underline; text-underline-offset:4px; }
+.weight-calculator { margin:32px 7vw; padding:28px; border:1px solid var(--ink); background:var(--paper); max-width:1100px; }
+.weight-calculator h2 { font-size:clamp(25px,3vw,38px); line-height:1.15; }
+.weight-calculator>p { max-width:80ch; line-height:1.65; margin:16px 0 24px; }
+.weight-fields { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:16px; }
+.weight-fields label { font-size:14px; line-height:1.5; font-weight:700; min-width:0; }
+.weight-fields input { display:block; width:100%; min-width:0; padding:12px; margin-top:7px; border:1px solid var(--ink); background:white; font:inherit; }
+.weight-calculator button { padding:12px 22px; margin-top:20px; border:1px solid var(--ink); background:var(--lime); color:var(--ink); font-weight:800; cursor:pointer; }
+.weight-calculator a { display:inline-block; margin-top:18px; text-decoration:underline; }
+.weight-results { margin-top:16px; display:flex; flex-wrap:wrap; gap:12px 30px; line-height:1.6; }
+.weight-results:empty { display:none; }
+.source-reference a { color:inherit; font-size:13px; line-height:1.5; overflow-wrap:anywhere; text-decoration:underline; }
+.article-end a { margin:8px 16px 8px 0; }
+a:focus-visible,button:focus-visible,input:focus-visible { outline:3px solid #347445; outline-offset:4px; }
+@media(max-width:720px) {
+ .guide-shortcuts { margin:24px 16px; padding:18px; grid-template-columns:1fr; gap:14px; }
+ .weight-calculator { margin:24px 16px; padding:18px; }
+ .weight-fields { grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; }
+ .weight-fields label { font-size:13px; }
+ .weight-fields input { font-size:16px; }
+ .article-page>header h1 { font-size:clamp(32px,8vw,50px); line-height:1.08; overflow-wrap:anywhere; }
+ .inner-hero h1 { font-size:clamp(34px,8.5vw,54px); line-height:1.08; overflow-wrap:anywhere; }
+ .home-article-card p { font-size:13px; line-height:1.55; }
+ .home-article-card>span,.home-article-card>b { font-size:11px; }
+}

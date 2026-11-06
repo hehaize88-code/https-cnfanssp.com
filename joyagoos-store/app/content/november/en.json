@@ -1,0 +1,114 @@
+{
+  "joyagoo-stock-arrived-qc-time": {
+    "title": "Joyagoo Stock Arrived: QC Waiting Time and Missing Photos",
+    "description": "What does Stock Arrived mean on Joyagoo? Find the right QC photos, distinguish warehouse arrival from inspection, and prepare a useful support request.",
+    "updated": "2026-11-06",
+    "read": "9 min read",
+    "sections": [
+      [
+        "What Stock Arrived means",
+        "Stock Arrived is the warehouse stage of a Joyagoo order: the product has reached the warehouse workflow and is waiting for inspection and storage. It does not mean the international parcel has left China. Keep three events separate when checking progress: the seller dispatches the item, the warehouse receives it, and the warehouse completes QC. A domestic tracking page marked delivered is useful evidence about the first journey, but it is not itself the account confirmation that the correct order has been matched and photographed. Open the individual order before diagnosing a delay. If you bought several products, inspect each order separately; they can arrive from different sellers on different days. One completed item does not establish the status of another. This guide explains how to locate the missing step and what information to send if the order needs attention."
+      ],
+      [
+        "How long does QC take after arrival?",
+        "Joyagoo's processing-time help page describes inspection as typically about one working day. Treat that as a planning reference, not a guaranteed deadline measured from your seller's dispatch message. The relevant starting event is warehouse processing of the received item. Weekends, holidays, a mismatched order record, incomplete deliveries or a problem requiring clarification can make your own case different. Record the time Stock Arrived first appeared, including the timezone if available, then check for a newer warehouse message. Avoid converting one working day into a promise of exactly 24 hours. A Friday arrival and a Monday arrival are not necessarily comparable. If the normal processing period has passed without an update, ask the order agent which step remains outstanding. This is more useful than asking for an arrival date for an international parcel that has not yet been created."
+      ],
+      [
+        "Find the photos for the correct order",
+        "Start from the Order area of the official account and open the relevant item. Match the seller link, selected colour, size, quantity and order identifier before opening its images. A product thumbnail can be a seller image rather than a warehouse photo. Look for the QC image set associated with that order and its latest inspection status. If the interface offers different tabs or expandable details, inspect those before assuming the photographs are missing. Interface labels can change, so follow the current account controls rather than a screenshot of an older version. When several similar items were purchased, open one order at a time and save a clearly labelled note. Do not use a friend's photos, a spreadsheet preview or another size from your own account to approve an item whose inspection evidence you have not seen."
+      ],
+      [
+        "Missing photos: separate status from display problems",
+        "If the order still says Stock Arrived, the inspection may not be complete. If it says QC Completed but the image area is empty, the question changes: you need access to an existing inspection result or clarification of that status. Refresh the order page once, verify the signed-in account and try opening the same official order in another supported browser if available. Avoid creating a second purchase or paying a new fee merely to make an image appear. Record whether all images fail, one angle is missing, or only a thumbnail fails to expand. A blank image on every order suggests a different problem from one incomplete order. Preserve a screenshot of the visible error, with private details removed from anything shared publicly. Send the full order reference only through the official support channel."
+      ],
+      [
+        "Ask for the one photo that changes your decision",
+        "An image set can exist and still leave an important question unanswered. Write down the decision first: does the size match, is the left shoe damaged, or is an accessory missing? Then request the view that can resolve it. For a hoodie, ask for a flat chest measurement with the tape endpoints visible; for shoes, identify whether you need the size label, the sole or an insole measurement. State the units and the relevant side. A request for “better QC” gives the warehouse little direction. Extra detailed photos or measurements may be a paid service, so check the current option and fee before submitting. Do not assume a photo request pauses any return deadline. If the decision is time-sensitive, mention that in the same support conversation and ask what action is available while the evidence is being clarified."
+      ],
+      [
+        "Review QC before choosing storage or shipping",
+        "Begin with order accuracy, then visible condition. Confirm the product, selected option and quantity before evaluating stitching, surface marks or alignment. Compare measurements with something you own and wear, using the same measuring points; a flat width and a body circumference are different quantities. Photos help assess visible details, but they do not establish authenticity, long-term durability or whether every function of an electronic device works. If the evidence is inconclusive, say what is unknown instead of turning uncertainty into approval. Check current return eligibility and the available action in the order as soon as you see a problem. Warehouse storage time is a separate clock and should not be treated as an extended return period. Keep the item out of a parcel selection while you are still resolving a material mismatch or waiting for an after-sales decision."
+      ],
+      [
+        "A useful support message and evidence record",
+        "Send one concise request in the order's official support thread. Include the order reference, exact current status, when it first appeared, the last message you received and the missing information. For example: “My order shows Stock Arrived since [date/time]. I cannot see a QC image set in the order details. Has inspection started, and is any action needed from me?” If QC is complete, replace that question with the precise image or measurement you cannot access. Attach an image of the relevant screen when helpful. Avoid sending passwords, payment-card details or unrelated personal documents. Keep the reply with the order so another support agent can understand the history. Repeated identical tickets can split the evidence across conversations; update the existing thread with new facts instead. Record the answer and next expected action rather than guessing from other buyers' timelines."
+      ],
+      [
+        "Move from completed QC to a prepared parcel",
+        "Once the item is accepted and available in the warehouse, plan shipping using the actual items that will be packed together. QC completion alone does not buy international postage, select a route or create a carrier scan. Review the parcel contents, destination, packaging and route restrictions separately. A bulky shoe box can affect chargeable weight even when the shoes look correct. A missing accessory can still matter even when every photo loads successfully. Before submitting a parcel, keep a short record of the accepted items, any unresolved issue, packaging instructions and the shipping estimate. If the item remains at Stock Arrived, return to its order status rather than searching an international tracking number. If it has already shipped, use the tracking troubleshooting guide instead. Keeping each question at the correct stage saves time and makes the next support request much easier to answer. For a simple personal checklist, use five fields: item, selected option, QC decision, packing requirement and unresolved question. Read the last field before submitting the parcel. If it still contains a concern that could change your decision, resolve that concern first. This small pause is easier than reconstructing the issue after the item has left the warehouse."
+      ]
+    ],
+    "sources": [
+      {
+        "title": "Joyagoo · Order status",
+        "href": "https://mgt.joyagoo.com/help-center/status-of-the-shopping-agent-orders/"
+      },
+      {
+        "title": "Joyagoo · Order processing times",
+        "href": "https://mgt.joyagoo.com/help-center/shopping-order-processing-time/"
+      },
+      {
+        "title": "Joyagoo · Shopping guidance",
+        "href": "https://mgt.joyagoo.com/help-center/shopping-assistant-guidance/"
+      },
+      {
+        "title": "Joyagoo · Quality inspection",
+        "href": "https://mgt.joyagoo.com/help-center/do-you-help-me-to-do-quality-check/"
+      }
+    ]
+  },
+  "joyagoo-payment-on-hold-order-status": {
+    "title": "Joyagoo Payment on Hold: Order Status and Next Steps",
+    "description": "Understand Joyagoo Payment on Hold, Purchased, Seller Sent and Clear Balance. Check which step needs your action without placing a duplicate order.",
+    "updated": "2026-11-06",
+    "read": "9 min read",
+    "sections": [
+      [
+        "Start with the exact order status",
+        "A Joyagoo order and an international parcel have separate workflows. Payment on Hold concerns the payment review for an order; it does not describe a parcel waiting at customs. Purchased concerns the agent's purchase from the seller; Seller Sent concerns the journey to the warehouse. Read the exact label inside the official account before deciding what to do next. Record the order reference, latest update time and any accompanying message. If several orders share a payment, inspect their individual states instead of assuming they all progress together. A bank notification, seller message and warehouse status describe different events and can appear at different times. This guide provides a practical way to locate the outstanding step. It does not give a private order's delivery date or replace a support decision made from the actual account record."
+      ],
+      [
+        "Payment on Hold: check the review, not another checkout",
+        "Joyagoo's status guide describes Payment on Hold as payment under review, with an expected review period of one to three business days. That is the published expectation, not a guarantee that a particular payment will clear within a fixed number of hours. Open the payment and order details to see whether the platform requests anything from you. Compare the amount, currency, reference and payment time with your own receipt. Keep sensitive financial details private and use official account support for clarification. Do not place the same order again simply because the review is unfinished: a second checkout can create a separate purchase rather than accelerate the first. If the expected review period has elapsed, ask whether the review is still pending and whether the current payment is correctly linked to the order. Provide the relevant reference, not your password or full card number."
+      ],
+      [
+        "Payment Pending and Order Processing need different checks",
+        "Payment Pending indicates that the order still requires payment. If you already paid, first check whether the receipt belongs to this exact order and whether the payment is recorded in the account. Avoid repeatedly paying while the discrepancy is being investigated. Order Pending and Order Processing belong to the purchasing workflow, where the order is being checked or handled by the agent. At these stages, review the selected product option and any order remarks. A missing size, unavailable variation or unclear instruction can require a reply before the order proceeds. Ask a specific question about the unresolved field. For example, confirm whether the purchaser needs a replacement size decision rather than asking only why the order is slow. Keep any agreed change in the official order conversation so the eventual warehouse item can be compared with the final instruction."
+      ],
+      [
+        "Purchased does not mean the warehouse has received it",
+        "When the order is Purchased, focus on the seller side of the journey. Check for a seller dispatch update, stock notice or request to confirm a substitute. Do not infer a warehouse delay from a product that has not reached the warehouse. A quoted seller handling time should also be distinguished from domestic transit and warehouse inspection. If you need a particular date, explain the constraint to the agent and ask about the current seller status; a generic community delivery estimate is not evidence for this order. Avoid approving a different colour or size just to make the status change unless that alternative genuinely suits you. Keep the original selection and any accepted amendment together. If the seller cannot fulfil the order, ask which cancellation or refund action is available now and what costs or restrictions apply to that specific case."
+      ],
+      [
+        "Seller Sent and Stock Arrived: identify the handover",
+        "Seller Sent means the item is on its domestic journey toward the warehouse. If a tracking reference is available, check whether it describes that domestic shipment, not your future international parcel. A courier delivery scan can precede the warehouse matching the package to an individual order. If the scan and account status disagree, send both timestamps and the order reference to the agent. Once Stock Arrived appears, use the QC waiting-time guide to check inspection and photos. Do not judge missing QC images while the item is still in transit. For a multi-item purchase, establish which products were included in each seller package; a partially delivered purchase can create confusing progress when treated as one item. Ask what has actually been received and what remains outstanding, then base your shipping plan on accepted warehouse items rather than on the original shopping basket."
+      ],
+      [
+        "Clear Balance and Confirmation Pending need your attention",
+        "These labels are worth checking before simply waiting for another update. Clear Balance indicates an additional amount is required; Confirmation Pending indicates that an order detail needs your confirmation. Read the associated message and compare it with the original order before approving anything. Ask for an itemised explanation if the amount or reason is unclear. Distinguish a product-price adjustment, domestic delivery cost and an optional service from international postage, which belongs to a later parcel stage. Review the currency and the item affected. If a substitute is proposed, confirm the exact option and whether the price or seller conditions change. A clear response can move the order forward, but an unexplained payment request should be clarified through the official account. Never transfer money to a new contact merely because a message claims it will release the order."
+      ],
+      [
+        "Warehouse orders and parcel payments are separate",
+        "Stored items still need a parcel decision before international dispatch. The account may show a parcel waiting for payment, shipping being calculated or a parcel being processed. Follow the instructions and deadlines shown for that specific parcel, and check the selected items and destination before paying. A rehearsal packing order is also a distinct service; paying for it does not automatically pay international postage. Compare the updated parcel weight, dimensions and route information with the estimate you used for budgeting. If the final amount differs, investigate the changed input before assuming there is a duplicate charge. Keep the parcel reference beside the order references it contains. Once the parcel is marked internationally shipped, the next question is carrier tracking. Reopening the original product payment will not explain every delay after the parcel has left the warehouse."
+      ],
+      [
+        "Escalate with a timeline and one clear request",
+        "Prepare a short timeline: payment submitted, order purchased, seller dispatch, warehouse arrival, QC and parcel submission, including only events that actually happened. Leave unknown stages blank. Send the current status, its last update and the exact question you need answered. A useful message is: “Order [reference] has shown [status] since [date]. The latest message says [summary]. Please confirm the outstanding step and whether I need to act.” Add a payment reference only if payment is the issue, or domestic tracking only if warehouse receipt is the issue. Keep the reply and any promised next update in the same thread. Do not publish account identifiers in a public review. After resolution, verify the new status and inspect any changed amount or product option. Progress is meaningful when the underlying order is correct, not merely when the wording on the screen changes. When comparing two updates, preserve the original wording as well as your interpretation. A translated label may hide a distinction between an item, a rehearsal order and a parcel. If the screen is unclear, ask the agent which record the message refers to before taking an action that changes the order or creates another payment."
+      ]
+    ],
+    "sources": [
+      {
+        "title": "Joyagoo · Order status",
+        "href": "https://mgt.joyagoo.com/help-center/status-of-the-shopping-agent-orders/"
+      },
+      {
+        "title": "Joyagoo · Order processing times",
+        "href": "https://mgt.joyagoo.com/help-center/shopping-order-processing-time/"
+      },
+      {
+        "title": "Joyagoo · Shopping guidance",
+        "href": "https://mgt.joyagoo.com/help-center/shopping-assistant-guidance/"
+      }
+    ]
+  }
+}

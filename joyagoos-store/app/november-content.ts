@@ -1,0 +1,17 @@
+import type { SiteLanguage } from "./i18n";
+import type { ArticleCopy } from "./october-content";
+import en from "./content/november/en.json";
+import zh from "./content/november/zh.json";
+import de from "./content/november/de.json";
+import pl from "./content/november/pl.json";
+import es from "./content/november/es.json";
+import it from "./content/november/it.json";
+import fr from "./content/november/fr.json";
+import pt from "./content/november/pt.json";
+import ro from "./content/november/ro.json";
+import sv from "./content/november/sv.json";
+import ui from "./content/november/ui.json";
+export const novemberArticles = en as unknown as Record<keyof typeof en, ArticleCopy>;
+export const novemberCopies = {en,zh,de,pl,es,it,fr,pt,ro,sv} as unknown as Record<SiteLanguage, Record<string,ArticleCopy>>;
+export const novemberUi = ui;
+export const novemberRevisedSlugs: string[] = ["joyagoo-qc-photo-checklist","joyagoo-actual-vs-volumetric-weight","joyagoo-tracking-not-updating"];

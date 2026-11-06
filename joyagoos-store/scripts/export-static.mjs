@@ -1,4 +1,4 @@
-import { copyFile, cp, mkdir, rm, writeFile } from "node:fs/promises";
+import { cp, mkdir, rm, writeFile } from "node:fs/promises";
 import { dirname, join } from "node:path";
 
 const root = process.cwd();
@@ -56,14 +56,6 @@ for (const pageUrl of pageUrls) {
 const articleHubPaths = pageUrls
   .map((pageUrl) => new URL(pageUrl).pathname)
   .filter((pathname) => pathname === "/articles" || pathname.endsWith("/articles"));
-
-for (const pathname of articleHubPaths) {
-  const sourceFile = join(outputDir, `${pathname.slice(1)}.html`);
-  const aliasPath = pathname.replace(/\/articles$/, "/articles-2026");
-  const aliasFile = join(outputDir, `${aliasPath.slice(1)}.html`);
-  await mkdir(dirname(aliasFile), { recursive: true });
-  await copyFile(sourceFile, aliasFile);
-}
 
 const robotsResponse = await fetchPath("/robots.txt");
 if (!robotsResponse.ok) throw new Error("Could not render robots.txt");

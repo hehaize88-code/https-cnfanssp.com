@@ -15,6 +15,14 @@ export function AnalyticsEvents() {
       const link = (event.target as Element)?.closest<HTMLAnchorElement>("a[href]");
       if (!link) return;
       const url = new URL(link.href, location.href);
+      if (url.origin === location.origin && /\/articles(?:\/|$)/.test(url.pathname)) {
+        track("guide_click", { destination_path:url.pathname, placement:link.closest("nav") ? "guide_navigation" : link.closest("section")?.id || "content" });
+        return;
+      }
+      if (["joyagoo.com", "www.joyagoo.com", "mgt.joyagoo.com"].includes(url.hostname)) {
+        track(url.hostname === "mgt.joyagoo.com" ? "official_source_click" : "official_tool_click", {destination_path:url.pathname,link_domain:url.hostname});
+        return;
+      }
       if (!["cnfanssp.com", "www.cnfanssp.com"].includes(url.hostname)) return;
       const product = url.pathname.match(/^\/AllProducts\/(\d+)\.html$/i);
       track(product ? "product_click" : "catalog_click", {

@@ -1,8 +1,8 @@
 {
   "joyagoo-qc-photo-checklist": {
-    "title": "Lista de revisión de fotos QC de Joyagoo: talla, defectos y vistas que faltan",
-    "description": "Revisa tus fotos QC de Joyagoo en orden: opción exacta, etiqueta de talla, medidas, defectos visibles y vistas que faltan. Utiliza una lista práctica antes de aprobar el artículo.",
-    "summary": "Empieza por el pedido exacto y después inspecciona el artículo recibido. Marca cada comprobación como coincidente, poco clara o distinta. Una medida poco clara o una vista ausente requiere pruebas antes de tomar la siguiente decisión.",
+    "title": "Fotos QC Joyagoo: tallas, defectos y lista de revisión",
+    "description": "Comprueba opción, medidas y defectos visibles. Encuentra ayuda para Stock Arrived, fotos ausentes y siguientes acciones.",
+    "summary": "Abre las fotos QC del pedido exacto. Revisa opción y talla antes del estado visible. Si faltan imágenes, consulta la guía Stock Arrived de abajo antes de interpretar la ausencia como un defecto.",
     "caption": "Hoja rápida de revisión QC",
     "columns": [
       "Comprobación",
@@ -107,7 +107,7 @@
     ]
   },
   "joyagoo-actual-vs-volumetric-weight": {
-    "summary": "Utiliza las dimensiones exteriores del paquete terminado, mantén visibles las unidades y lee la regla de facturación de la ruta elegida. El cálculo siguiente explica la aritmética; no es una cotización de transporte ni afirma que todas las rutas utilicen el mismo divisor.",
+    "summary": "Peso volumétrico = largo × ancho × alto en cm ÷ divisor de la ruta. Compara con el peso real solo si se utiliza el mayor valor. Redondeos y portes dependen de la línea seleccionada.",
     "caption": "Cálculo ilustrativo con un divisor hipotético de 6.000",
     "columns": [
       "Dato o paso",
@@ -140,10 +140,12 @@
         "max(3, 4) = 4 kg",
         "Solo para una regla que toma el mayor de los dos, antes de su redondeo"
       ]
-    ]
+    ],
+    "title": "Peso volumétrico Joyagoo: calculadora y embalaje",
+    "description": "Calcula el peso volumétrico con dimensiones y divisor de la ruta. Compara peso real, embalaje y ejemplos de peso facturable."
   },
   "joyagoo-tracking-not-updating": {
-    "summary": "Usa el registro del paquete para identificar el número correcto, conserva exactamente el último evento y lee el aviso de la ruta elegida. Una página sin novedades y una solicitud explícita de actuar requieren respuestas diferentes.",
+    "summary": "Identifica primero si consultas un pedido o un paquete internacional. Stock Arrived pertenece al almacén. Para el envío internacional usa el registro del paquete y transportista correcto; guarda evento y fecha antes de pedir ayuda.",
     "caption": "Registro de seguimiento: qué comprobar después",
     "columns": [
       "Resultado observado",
@@ -171,7 +173,9 @@
         "Instrucciones de la cuenta autenticada o del servicio del transportista",
         "Responde pronto por el canal verificado"
       ]
-    ]
+    ],
+    "title": "Seguimiento Joyagoo sin actualizar: comprobaciones",
+    "description": "Revisa número del paquete, transportista, último escaneo e incidencias. Distingue transporte al almacén y envío internacional."
   },
   "joyagoo-shipping-estimate-input-checklist": {
     "summary": "Registra el destino, las unidades, las medidas del paquete y las hipótesis antes de comparar resultados. Actualiza el registro cuando cambien el contenido o el embalaje; una estimación provisional no determina el importe final.",

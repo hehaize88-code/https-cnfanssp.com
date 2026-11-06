@@ -1,3 +1,4 @@
+import { novemberUi } from "../../november-content";
 import { notFound } from "next/navigation";
 import { locales, localizedSections, pageContent, sectionOrder, type Locale, type Section } from "../../site-data";
 import { GuideInteractive } from "../../guide-interactive";
@@ -8,6 +9,6 @@ export function generateStaticParams(){ return Object.keys(locales).flatMap((loc
 export async function generateMetadata({ params }:{params:Promise<{locale:string;section:string}>}){
   const {locale,section}=await params; if(!(locale in locales)||!(section in pageContent)) return {};
   const localContent=localizedSections[locale as Locale][section as Section];
-  return buildPageMetadata({ title:`${localContent.title} | ${locales[locale as Locale].label}`, description:localContent.intro, path:`/${section}`, language:locale as Locale });
+  return buildPageMetadata({ title:section === "shipping" ? novemberUi[locale as Locale].shippingTitle : section === "qc" ? novemberUi[locale as Locale].qcHubTitle : `${localContent.title} | ${locales[locale as Locale].label}`, description:localContent.intro, path:`/${section}`, language:locale as Locale });
 }
 export default async function Page({params,searchParams}:{params:Promise<{locale:string;section:string}>;searchParams:Promise<{lang?:string|string[]}>}){const [{locale,section},query]=await Promise.all([params,searchParams]);if(!(locale in locales)||!(section in pageContent))notFound();return <GuideInteractive initialLocale={locale as Locale} prefix={`/${locale}`} section={section as Section}/>;}

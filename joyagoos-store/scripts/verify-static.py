@@ -29,13 +29,13 @@ class Page(HTMLParser):
 def path_for(lang,path):return path if lang=='en' else '/'+lang+('' if path=='/' else path)
 def file_for(path):return root/('index.html' if path=='/' else path.lstrip('/')+'.html')
 urls=[e.text for e in ET.parse(root/'sitemap.xml').iter() if e.tag.endswith('}loc') or e.tag=='loc']
-assert len(urls)==250,(len(urls),'expected 250 canonical pages')
+assert len(urls)==270,(len(urls),'expected 270 canonical pages')
 assert len(set(urls))==len(urls)
 article_slugs=[]
 for url in urls:
  path=url.removeprefix(base)
  if path.startswith('/articles/'):article_slugs.append(path.rsplit('/',1)[1])
-assert len(article_slugs)==17
+assert len(article_slugs)==19
 for url in urls:
  path=url.removeprefix(base);p=Page(file_for(path).read_text())
  first=path.split('/')[1];lang=first if first in langs[1:] else 'en'
@@ -56,6 +56,11 @@ for url in urls:
    target=href.split('#')[0].split('?')[0] or path
    assert file_for(target).exists(),(path,'broken internal link',href)
  if '/articles/' in path:
+  if path.endswith(('joyagoo-stock-arrived-qc-time','joyagoo-payment-on-hold-order-status')):
+   assert any('mgt.joyagoo.com/help-center/' in x for x in p.links),(path,'clickable official evidence')
+   assert '2026-11-06' in file_for(path).read_text(),(path,'publication date')
+  if path.endswith('joyagoo-actual-vs-volumetric-weight'):
+   assert 'weight-calculator' in file_for(path).read_text(),(path,'calculator')
   schema=[x for x in p.schemas if x.get('@type')=='Article']
   assert len(schema)==1 and schema[0]['inLanguage']==lang
   assert schema[0]['mainEntityOfPage']['@id']==url
@@ -64,7 +69,7 @@ for url in urls:
  if plain=='/articles':
   prefix=path_for(lang,'/articles/')
   entries={x for x in p.links if x.startswith(prefix)}
-  assert len(entries)==17,(path,'hub entries',len(entries))
+  assert len(entries)==19,(path,'hub entries',len(entries))
  if plain=='/':
   prefix=path_for(lang,'/articles/')
   assert len({x for x in p.links if x.startswith(prefix)})==4,(path,'home articles')
@@ -88,5 +93,5 @@ for path in html_paths+['/index.html','/404.html','/robots.txt','/sitemap.xml']:
  policy='\n'.join(value for pattern,value in header_rules if fnmatch.fnmatchcase(path,pattern))
  assert 'Cache-Control: no-store' in policy and 'Cloudflare-CDN-Cache-Control: no-store' in policy,(path,'stale HTML risk')
 assert not any('no-store' in value for pattern,value in header_rules if fnmatch.fnmatchcase('/assets/example.js',pattern)), 'fingerprinted assets should retain caching'
-print('PASS: 250 pages; 17 articles × 10 languages; canonical/hreflang/HTML lang/schema; all internal links; 4 home articles; tables, 404, redirects and preserved product/category/search mappings.')
+print('PASS: 270 pages; 19 articles × 10 languages; canonical/hreflang/HTML lang/schema; all internal links; 4 home articles; tables, 404, redirects and preserved product/category/search mappings.')
 print('PASS: cache rules cover all HTML, language entry points, old article aliases and discovery files; fingerprinted asset caching retained.')
