@@ -1,0 +1,41 @@
+title: Article Hacoo manquant ou livraison en plusieurs colis ?
+excerpt: Comparez suivis, quantités et emballages pour distinguer une livraison Hacoo fractionnée d’un article réellement absent du colis reçu.
+keyword: article Hacoo manquant
+sourceNote: Vérifié le 6 novembre 2026 avec les informations d’expédition, la politique de remboursement et l’aide Hacoo. Le rapprochement des colis et l’exemple sont notre méthode éditoriale ; la commande indique les statuts réels.
+imageAlt: Photo de catalogue d’un sac à dos illustrant un article d’une commande multiple
+imageCaption: Illustration de catalogue, pas une photographie de livraison client ou d’incident réel d’article manquant.
+image: /products/cnfanssp-prada-backpack.webp
+published: 2026-11-06
+modified: 2026-11-06
+## Distinguer la commande du colis reçu
+Un article Hacoo manquant n’est pas le même problème qu’un colis entier non livré. Identifiez ce qui manque : une expédition complète, un produit dans un colis reçu, une partie d’un ensemble ou un accessoire de la variante choisie. Ces situations demandent des vérifications différentes. Séparez numéro de commande et numéro de suivi : une commande peut comporter plusieurs expéditions, et un suivi livré ne résout pas forcément le statut de tous les articles.
+
+Les informations Hacoo indiquent que les produits en stock et en précommande peuvent partir séparément. Une livraison fractionnée est donc possible, mais cela ne prouve pas que votre produit absent est en route. Consultez les détails par article. Si aucun lien entre produits et colis n’est affiché, demandez une clarification au support. Une mention générale « livré » ne signifie pas nécessairement que tout se trouvait dans le colis que vous venez d’ouvrir.
+## Établir un rapprochement simple des articles et colis
+Créez une ligne par produit et variante : quantité commandée, annulation ou remboursement éventuel, référence d’expédition visible, état du suivi et quantité reçue. Utilisez des noms précis, par exemple « sweat bleu, taille M, une unité ». Si un seul suivi apparaît, notez-le. N’inventez pas une deuxième référence pour expliquer l’article absent.
+
+Listez ensuite chaque colis avec date d’arrivée et contenu. Ce rapprochement révèle parfois une quantité différente, une ligne déjà annulée ou une seconde expédition encore en transit. Les captures doivent conserver assez de contexte pour identifier commande et article, tout en protégeant les données personnelles hors du support. Un relevé daté explique ce qui était visible lors du premier signalement si la page change. Ne retouchez pas les captures pour suggérer une affectation jamais affichée.
+## Reconnaître les indices d’une expédition séparée
+Des suivis distincts, des dates d’envoi différentes, un article explicitement en attente ou un message répartissant les produits entre colis sont des indices utiles. Vérifiez chaque numéro indépendamment. L’avancement global de la commande ne dit pas toujours si un article précis a quitté le vendeur, rejoint le transporteur local ou été livré.
+
+Si la ligne absente est affectée à un deuxième colis en transit, consultez ce suivi et l’estimation de la commande. Si tous les colis sont livrés mais que la quantité reste incomplète, rassemblez rapidement les preuves. En cas d’ambiguïté, posez une question ciblée : « Quel numéro de suivi contient une unité de l’article X ? ». Ne vous contentez pas d’attendre plusieurs jours supplémentaires à l’approche du délai de demande. Clarification et signalement dans les temps peuvent avancer ensemble.
+## Examiner l’emballage avant de le jeter
+Contrôlez emballage extérieur, sachets intérieurs, bordereau et facture. Un petit accessoire peut rester dans une poche ou un sachet séparé, et un ensemble être réparti entre plusieurs couches. Comparez le contenu à l’option et à la quantité réellement achetées. Une photo promotionnelle peut montrer plusieurs pièces alors que la variante choisie n’en contient qu’une.
+
+Photographiez l’extérieur, l’étiquette, les documents disponibles et tous les articles reçus ensemble. Notez couture ouverte, emballage endommagé ou traces de refermeture observées, sans affirmer où cela s’est produit. Une vidéo originale d’ouverture peut apporter du contexte si elle existe. Ne reconstituez pas l’ouverture en la présentant comme l’enregistrement initial. Gardez adresses et codes-barres privés et préservez les originaux pour l’assistance de la commande.
+## Un exemple pour éviter de compter deux fois les absences
+Imaginons une commande avec une paire de chaussures, un sweat et deux accessoires. Le colis A arrive avec les chaussures et le sweat. B reste en transit et la commande lui affecte explicitement les deux accessoires. A est complet au regard de cette affectation. Il ne faut pas déclarer automatiquement les accessoires comme perdus dans A. Sauvegardez la répartition et vérifiez B.
+
+Modifions l’exemple : B arrive avec un seul accessoire alors que deux lui sont affectés, sans annulation ni remboursement expliquant l’écart. Documentez le manque pour B et la ligne correspondante. Photographiez son emballage, les documents et l’accessoire reçu. Il s’agit d’exemples hypothétiques, pas de commandes Hacoo réelles. Ils montrent pourquoi quantités et affectations sont plus utiles qu’un simple badge de livraison ou l’idée que chaque image de produit représente un colis indépendant.
+## Envoyer une demande ciblée pour l’article absent
+Pour les articles manquants, le centre d’aide Hacoo demande des photos de l’emballage extérieur et de la facture. Pour un accessoire absent, il demande une photo du contenu reçu et une description de la pièce manquante. Si aucune facture n’était présente, indiquez-le et joignez les données de commande et autres éléments disponibles. Ne fabriquez pas un document ressemblant à une facture du vendeur. Les instructions actuelles du dossier peuvent demander davantage d’informations.
+
+Rédigez un message bref avec commande, produit et variante, quantités commandées et reçues, référence du colis et date d’arrivée. Précisez si un autre envoi reste attendu. Selon votre constat, demandez confirmation de l’affectation ou examen du manque documenté. Joignez des preuves pertinentes plutôt que des captures d’avis sans rapport. Gardez réponse et numéro de dossier pour poursuivre la même demande sans créer de versions contradictoires.
+## Séparer examen, retour et délai de remboursement
+Signaler un manque ne signifie pas que le remboursement est approuvé. La politique publique décrit généralement 15 jours après réception pour les demandes admissibles, avec conditions selon produit et situation. Contactez rapidement le support lorsque la répartition reste floue, surtout après une première livraison. Un second colis en attente ne prolonge pas automatiquement tous les délais du premier.
+
+Si vous avez aussi reçu un article erroné ou abîmé, suivez les instructions propres à cet article. Certains dossiers admissibles sont remboursés sans retour, d’autres exigent un renvoi. Ne retournez pas spontanément les produits reçus en supposant que cela réglera l’article absent. Après accord et traitement, le crédit sur le moyen de paiement constitue une étape supplémentaire. Conservez accord, montant et voie de paiement, puis consultez commande et politique actuelles pour évaluer un retard.
+## Choisir le guide correspondant au vrai problème
+Si rien n’est arrivé, commencez par le guide de suivi et le dernier événement du transporteur. Si le colis contient un autre produit, gardez article, étiquettes et emballage et consultez le guide des preuves pour retours. Si le bon article est arrivé mais que taille ou état posent problème, utilisez les guides QC et tailles. Cette distinction facilite l’examen des preuves et évite de transformer une question de livraison en réclamation de qualité sans rapport.
+
+Avant de clore votre relevé, associez chaque ligne à un article reçu, un envoi en attente, une annulation explicite ou une résolution confirmée. Marquez les points non résolus comme ouverts. Vérifiez suivis, quantités, conservation des emballages, sauvegarde des preuves et dépôt de la demande dans les temps. Cela ne garantit pas une décision particulière, mais fournit les informations concrètes nécessaires pour examiner ce qui s’est passé.

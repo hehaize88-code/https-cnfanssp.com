@@ -1,0 +1,41 @@
+title: ¿Falta un artículo Hacoo o es un envío dividido?
+excerpt: Compara seguimientos, cantidades y pruebas del embalaje para distinguir un pedido Hacoo enviado por separado de un artículo realmente ausente.
+keyword: falta artículo Hacoo
+sourceNote: Revisado el 6 de noviembre de 2026 con la información de envío, política de reembolso y ayuda de Hacoo. La conciliación de paquetes y el ejemplo son nuestro método editorial; el pedido muestra el estado real del envío y de la solicitud.
+imageAlt: Fotografía de catálogo de una mochila como ejemplo de un artículo de un pedido múltiple
+imageCaption: Ilustración de catálogo, no una fotografía de una entrega real ni de una incidencia por artículo ausente.
+image: /products/cnfanssp-prada-backpack.webp
+published: 2026-11-06
+modified: 2026-11-06
+## Separa el pedido del paquete recibido
+Un artículo Hacoo ausente no es el mismo problema que un paquete completo sin entregar. Identifica primero qué falta: todo un envío, un producto dentro de un paquete recibido, parte de un conjunto o un accesorio de la variante elegida. Cada caso requiere comprobaciones distintas. Separa número de pedido y número de seguimiento: un pedido puede incluir varios envíos y un seguimiento entregado no resuelve necesariamente todos sus artículos.
+
+La información de envío de Hacoo indica que los artículos disponibles y los de preventa pueden salir por separado. Por tanto, un envío dividido es posible, pero eso no demuestra que tu producto esté en camino. Consulta los detalles de cada artículo en tu pedido. Si no relacionan productos y paquetes, pide al soporte que aclare la distribución. Una etiqueta general de «entregado» no significa necesariamente que todo estuviera dentro del paquete abierto.
+## Crea un registro sencillo de artículos y paquetes
+Anota una línea por producto y variante: cantidad pedida, cancelación o reembolso, referencia de envío visible, estado del seguimiento y cantidad recibida. Utiliza nombres que distingan opciones, como «sudadera azul, talla M, una unidad». Si solo aparece un seguimiento, registra ese dato. No inventes una segunda referencia para justificar el artículo que no encuentras.
+
+Después lista cada paquete con fecha de llegada y contenido. Esta conciliación puede revelar una diferencia de cantidad, una línea ya cancelada o un segundo envío aún en tránsito. Las capturas deben conservar contexto suficiente para identificar pedido y artículo, manteniendo privados los datos personales fuera del soporte. Si la página cambia, tu registro fechado explica lo que aparecía al informar del problema. No edites capturas para insinuar una asignación de paquetes que nunca mostró la interfaz.
+## Reconoce pruebas de que el envío está dividido
+Son indicios útiles los seguimientos separados, fechas de salida distintas, un artículo marcado como pendiente o un mensaje que asigne productos a paquetes concretos. Revisa cada número de seguimiento por separado. El progreso general del pedido puede resultar demasiado amplio para saber si un artículo salió del vendedor, llegó al transportista local o fue entregado en tu domicilio.
+
+Si la línea ausente pertenece explícitamente a otro paquete en tránsito, consulta ese seguimiento y la previsión del pedido. Si todos los paquetes figuran entregados y la cantidad sigue incompleta, reúne pruebas pronto. Cuando la asignación sea ambigua, formula una pregunta concreta: «¿Qué número de seguimiento contiene una unidad del artículo X?». No te limites a esperar varios días adicionales si se acerca el plazo de solicitud. Puedes pedir aclaración y presentar a tiempo la incidencia correspondiente.
+## Revisa el embalaje antes de desecharlo
+Comprueba envoltorio exterior, bolsas interiores, lista de contenido y factura. Los accesorios pequeños pueden quedar dentro de un bolsillo o bolsa separada, y un conjunto puede estar distribuido entre varias capas. Compara lo recibido con la opción y cantidad realmente compradas. Una imagen promocional puede mostrar varias piezas aunque la variante seleccionada incluya solo una.
+
+Fotografía el exterior, su etiqueta, la documentación disponible y todo el contenido recibido junto. Anota cierres abiertos, daños o indicios de reprecintado que hayas observado, sin afirmar dónde ocurrieron. Un vídeo original de apertura puede aportar contexto si existe. No reconstruyas el desembalaje presentándolo como la grabación original. Evita publicar direcciones o códigos de barras; conserva los originales para el proceso privado de asistencia del pedido.
+## Un ejemplo evita contar dos veces lo que falta
+Imagina un pedido con unas zapatillas, una sudadera y dos accesorios. El paquete A llega con zapatillas y sudadera. B sigue en tránsito y el pedido asigna expresamente ambos accesorios a B. La distribución documentada de A está completa: no corresponde contar automáticamente los dos accesorios pendientes como pérdidas dentro de A. Guarda la asignación y revisa B.
+
+Cambia ahora el ejemplo: B llega con un accesorio aunque tiene dos asignados, y ninguna cancelación o devolución explica la diferencia. Registra la falta en B y en la línea de artículo correspondiente. Fotografía su embalaje, documentos y accesorio recibido. Son ejemplos hipotéticos, no casos reales de pedidos Hacoo. Muestran por qué cantidades y asignaciones aportan más que una sola marca de entrega o asumir que cada foto de producto representa un paquete distinto.
+## Envía una solicitud centrada en el artículo ausente
+El centro de ayuda Hacoo pide fotografías del embalaje exterior y de la factura para artículos ausentes. Para accesorios, solicita una foto de lo recibido y una descripción de la pieza que falta. Si no había factura, indícalo y adjunta el registro del pedido y las demás pruebas disponibles. No fabriques un documento con apariencia de factura emitida por el vendedor. Las instrucciones actuales del pedido pueden pedir información adicional.
+
+Escribe un mensaje breve con pedido, producto y variante afectados, cantidades pedidas y recibidas, referencia del paquete y fecha de llegada. Indica si queda otro envío pendiente. Según lo observado, solicita confirmación de distribución o revisión de la falta documentada. Adjunta pruebas relacionadas en lugar de capturas de reseñas ajenas. Guarda respuesta y número de caso para continuar la misma incidencia sin crear relatos contradictorios en solicitudes posteriores.
+## Distingue revisión, devolución y abono
+Informar de una falta no significa que el reembolso esté aprobado. La política pública describe generalmente 15 días desde la recepción para solicitudes admisibles, sujetos a condiciones del producto y del caso. Contacta pronto si la distribución no está clara, especialmente cuando ya llegó una parte del pedido. Un segundo paquete pendiente no amplía automáticamente todos los plazos vinculados al primero.
+
+Si también recibiste un producto incorrecto o dañado, sigue las instrucciones de ese artículo. Algunos casos admisibles permiten reembolso sin devolución; otros requieren devolverlo. No envíes los productos recibidos por iniciativa propia suponiendo que así se resolverá el artículo ausente. Tras aprobación y tramitación, el abono constituye otra fase. Guarda autorización, importe y vía de pago, y consulta el pedido y la política actual antes de evaluar un retraso.
+## Elige la siguiente guía según el problema real
+Si no ha llegado nada, empieza por la guía de seguimiento y el último evento del transportista. Si llegó otro producto, conserva artículo, etiquetas y embalaje y consulta la guía de pruebas para devoluciones. Si el producto es correcto pero preocupa talla o estado, utiliza las guías QC y de tallas. Diferenciar los casos facilita revisar las pruebas y evita convertir una pregunta de entrega en una reclamación de calidad sin relación.
+
+Antes de cerrar tu registro, vincula cada línea pedida a un artículo recibido, un envío pendiente, una cancelación expresa o una solución confirmada. Los puntos sin resolver deben seguir marcados como abiertos. Comprueba seguimientos, cantidades, embalaje conservado, pruebas guardadas y solicitud presentada a tiempo. No garantiza una decisión concreta, pero proporciona la información necesaria para investigar lo sucedido.

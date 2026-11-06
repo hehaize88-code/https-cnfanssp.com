@@ -2,8 +2,10 @@ import { existsSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 import type { Lang } from "./site-data";
 
-export const releaseDate = "2026-10-10";
-export const newArticleSlugs = ["hacoo-order-tracking", "hacoo-links-not-working", "hacoo-size-guide", "hacoo-qc-photo-checklist"] as const;
+export const releaseDate = "2026-11-06";
+export const novemberArticleSlugs = ["hacoo-sneaker-qc-insole-measurements", "hacoo-missing-item-split-shipment", "hacoo-find-product-from-screenshot"] as const;
+export const featuredArticleSlugs = [...novemberArticleSlugs, "hacoo-qc-photo-checklist"] as const;
+export const newArticleSlugs = ["hacoo-order-tracking", "hacoo-links-not-working", "hacoo-size-guide", "hacoo-qc-photo-checklist", ...novemberArticleSlugs] as const;
 export function editorialContent(lang: Lang, slug: string) {
   const file = join(process.cwd(), "content", lang, `${slug}.md`);
   if (!existsSync(file)) {
@@ -14,10 +16,10 @@ export function editorialContent(lang: Lang, slug: string) {
   const [header, ...blocks] = raw.split(/^## /m);
   const meta = Object.fromEntries(header.trim().split("\n").filter(x => x.includes(": ")).map(x => { const p = x.indexOf(": "); return [x.slice(0, p), x.slice(p + 2)]; }));
   const sections = blocks.map(block => { const p = block.indexOf("\n"); return [block.slice(0, p).trim(), block.slice(p + 1).trim()] as const; });
-  return { ...meta, sections, modified: releaseDate };
+  return { ...meta, sections, modified: meta.modified || "2026-10-10" };
 }
 export const newArticles = Object.fromEntries(newArticleSlugs.map(slug => [slug, {
   title: "", excerpt: "", keyword: "", sourceNote: "", imageAlt: "", imageCaption: "",
-  image: "/products/cnfanssp-shoes-2.jpg", sources: [], published: releaseDate,
+  image: "/products/cnfanssp-shoes-2.jpg", sources: [], published: novemberArticleSlugs.includes(slug as never) ? releaseDate : "2026-10-10",
   ...editorialContent("en", slug),
 }])) as unknown as Record<typeof newArticleSlugs[number], {title:string;excerpt:string;keyword:string;sourceNote:string;imageAlt:string;imageCaption:string;image:string;sources:readonly [];published:string;sections:readonly(readonly[string,string])[];modified:string}>;

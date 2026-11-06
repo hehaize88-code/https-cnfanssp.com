@@ -348,3 +348,15 @@ footer{grid-template-columns:1fr}
 
 /* October editorial navigation: readable anchors and mobile-safe cards. */
 .article-toc{margin:24px auto;padding:24px;max-width:1100px;border:1px solid var(--line);border-radius:16px;background:#eff5ff}.article-toc ol{columns:2;column-gap:36px;padding-left:24px}.article-toc li{padding:6px 0;break-inside:avoid;line-height:1.5}.article-toc a{text-decoration:underline;text-underline-offset:3px}.article-body section{scroll-margin-top:100px}.article-body p+p{margin-top:16px}.related-guides{display:flex;gap:16px;flex-wrap:wrap;padding:24px clamp(18px,5vw,80px);border-top:1px solid var(--line)}.related-guides a,.all-guides{color:var(--blue);font-weight:700;text-decoration:underline;text-underline-offset:4px}.all-guides{display:inline-block;margin-top:28px}.article-page a,.article-page h1,.article-page h2{overflow-wrap:anywhere}@media(max-width:680px){.article-toc{margin:18px;padding:18px}.article-toc ol{columns:1}.related-guides{flex-direction:column}}
+
+/* Country answers and return steps share the existing compact editorial layout. */
+.answer-panel{margin:28px clamp(18px,5vw,80px);padding:clamp(18px,3vw,36px);border:1px solid var(--line);border-radius:18px;background:#f5f8fd}
+.answer-panel h2{margin:0 0 20px;font:800 clamp(25px,3vw,40px)/1.15 Manrope;letter-spacing:-.035em}
+.answer-panel p{line-height:1.65;color:var(--muted);max-width:1000px}
+.table-wrap{overflow-x:auto}.answer-panel table{width:100%;border-collapse:collapse;text-align:left;background:white}
+.answer-panel th,.answer-panel td{padding:12px 16px;border-bottom:1px solid var(--line);line-height:1.5}.answer-panel thead{background:var(--sky)}
+.answer-panel tbody th{font-weight:600}.answer-panel td{white-space:nowrap}
+.answer-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.answer-grid>div{padding:20px;background:white;border:1px solid var(--line);border-radius:12px}.answer-grid h3{margin:0;font-size:21px;color:var(--blue)}.answer-grid p{margin-bottom:0}
+.official-links{display:flex;flex-wrap:wrap;gap:12px 22px;margin-top:22px;font-size:13px;line-height:1.6}.official-links span{flex-basis:100%;font-weight:700}.official-links a{color:var(--blue);text-decoration:underline;text-underline-offset:3px}
+.related-guides a{overflow-wrap:anywhere;line-height:1.5}.fact-strip>div{min-width:0}.fact-strip b{overflow-wrap:anywhere}
+@media(max-width:760px){.answer-panel{margin:18px 12px;padding:16px}.answer-panel h2{font-size:25px}.answer-panel th,.answer-panel td{padding:10px 8px;font-size:13px}.answer-panel p{font-size:14px}.answer-grid{grid-template-columns:1fr;gap:10px}.answer-grid>div{padding:14px}.answer-grid h3{font-size:18px}.official-links{gap:10px;font-size:12px}.related-guides{padding:16px 12px;gap:12px}}

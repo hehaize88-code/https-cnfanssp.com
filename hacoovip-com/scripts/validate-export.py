@@ -11,6 +11,8 @@ OUT = ROOT / "out"
 DOMAIN = "https://hacoovip.com"
 LANGS = ("en", "de", "es", "fr", "it")
 NEW = ("hacoo-order-tracking", "hacoo-links-not-working", "hacoo-size-guide", "hacoo-qc-photo-checklist")
+NOVEMBER = ("hacoo-sneaker-qc-insole-measurements", "hacoo-missing-item-split-shipment", "hacoo-find-product-from-screenshot")
+FEATURED = (*NOVEMBER, "hacoo-qc-photo-checklist")
 VOID = set("area base br col embed hr img input link meta param source track wbr".split())
 
 
@@ -73,7 +75,7 @@ def normalized(url):
 ns = {"s": "http://www.sitemaps.org/schemas/sitemap/0.9", "x": "http://www.w3.org/1999/xhtml"}
 entries = ET.parse(OUT / "sitemap.xml").getroot().findall("s:url", ns)
 urls = [entry.findtext("s:loc", namespaces=ns) for entry in entries]
-assert len(urls) == len(set(urls)) == 165, "Expected 165 unique sitemap URLs"
+assert len(urls) == len(set(urls)) == 180, "Expected 180 unique sitemap URLs"
 docs = {}
 titles, descriptions = set(), set()
 for url in urls:
@@ -120,11 +122,32 @@ for url in urls:
             if lang == "en":
                 count = len(" ".join(bodies).split())
                 assert 1200 <= count <= 1800, f"English article word count: {slug} {count}"
+        if slug in NOVEMBER:
+            assert len(sections) == 8 and len(body.all("p")) == 16, f"Incomplete new article: {path}"
+            assert article["datePublished"] == article["dateModified"] == "2026-11-06"
+            if lang == "en":
+                count = len(" ".join(bodies).split())
+                assert 1200 <= count <= 1800, f"English article word count: {slug} {count}"
+            else:
+                assert len(" ".join(bodies).split()) >= 800, f"Incomplete translated body: {path}"
+        if slug == "hacoo-shipping-and-returns-guide":
+            assert len(sections) == 8 and len(body.all("p")) == 16
+            assert article["datePublished"] == "2026-08-28" and article["dateModified"] == "2026-11-06"
         assert article["dateModified"] >= article["datePublished"]
     if base in ("/", "/articles"):
         cards = doc.all(cls="article-cards")[0].all("a")
-        assert len(cards) == (4 if base == "/" else 18), f"Article list count: {path}"
-        assert [n.attrs["href"].split("/")[-1] for n in cards[:4]] == list(NEW)
+        assert len(cards) == (4 if base == "/" else 21), f"Article list count: {path}"
+        assert [n.attrs["href"].split("/")[-1] for n in cards[:4]] == list(FEATURED)
+    if base == "/shipping":
+        table = doc.all("table")[0]
+        assert len(table.all("tbody")[0].all("tr")) == 6
+        assert "15–25" in table.text() and "15–30" in table.text() and "25–65" in table.text()
+    if base == "/returns":
+        assert len(doc.all(cls="answer-grid")[0].children) == 3
+    if base in ("/spreadsheet", "/finds", "/qc-guide", "/shipping", "/returns"):
+        assert len(doc.all(cls="related-guides")) == 1
+        for link in doc.all(cls="related-guides")[0].all("a"):
+            assert link.attrs["href"].startswith(("" if lang == "en" else "/" + lang) + "/articles/")
     for form in doc.all("form"):
         assert form.attrs.get("action") == "https://www.cnfanshp.com/search.html"
         inputs = {n.attrs.get("name"): n.attrs for n in form.all("input")}
@@ -134,7 +157,7 @@ for path, doc in docs.items():
     for a in doc.all("a"):
         target = urlsplit(a.attrs.get("href", ""))
         if target.netloc and target.netloc != "hacoovip.com":
-            assert target.scheme == "https" and target.netloc == "www.cnfanshp.com", f"Unexpected external link: {path} {target.geturl()}"
+            assert target.scheme == "https" and target.netloc in ("www.cnfanshp.com", "www.hacoo.app", "act.hacoo.app"), f"Unexpected external link: {path} {target.geturl()}"
             continue
         destination = target.path or path
         assert destination in docs, f"Broken internal route: {path} -> {destination}"
@@ -148,4 +171,4 @@ for entry in entries:
     assert alternates == html_alternates, f"Sitemap alternate mismatch: {url}"
 
 assert (OUT / "404.html").is_file()
-print("PASS: 165 routes; 5 languages; 90 articles; 20 new article translations; canonical/hreflang/sitemap; unique sections; images; internal links; catalogue destinations; search forms; latest four cards.")
+print("PASS: 180 routes; 5 languages; 105 articles; 15 November article translations; 5 rewritten evidence guides; canonical/hreflang/sitemap; unique sections; images; internal links; catalogue destinations; search forms; latest four cards.")

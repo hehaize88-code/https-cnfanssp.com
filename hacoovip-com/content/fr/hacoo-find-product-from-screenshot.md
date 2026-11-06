@@ -1,0 +1,41 @@
+title: Retrouver un produit Hacoo avec une capture d’écran
+excerpt: Transformez une capture de vêtement ou d’objet en mots-clés utiles, puis contrôlez détails, variante choisie et lien actuel avant de retenir un résultat.
+keyword: recherche Hacoo par capture
+sourceNote: Méthode indépendante de recherche et comparaison revue le 6 novembre 2026. Le formulaire de ce site effectue une recherche textuelle dans un catalogue externe ; il n’envoie pas d’images et ne garantit pas de correspondance officielle Hacoo.
+imageAlt: Photo de catalogue d’un sweat illustrant des détails à décrire dans une recherche
+imageCaption: Référence de catalogue pour expliquer les indices visuels. Une image proche ne confirme ni le même produit ni la même variante.
+image: /products/cnfanssp-travis-hoodie.webp
+published: 2026-11-06
+modified: 2026-11-06
+## Identifier d’abord ce que montre la capture
+Pour retrouver un produit Hacoo avec une capture d’écran, commencez par identifier l’objet souhaité. S’agit-il d’une fiche produit, d’un panier, d’une tenue publiée par un créateur ou d’un collage ? Une fiche peut contenir référence et couleur choisie. Une publication de tenue peut n’être qu’une idée de style, sans preuve que l’article exact soit actuellement disponible sur Hacoo.
+
+Gardez l’original et notez source et date si elles sont connues. Recadrez une copie autour de l’objet, sans perdre le contexte original. Retirez visages, données de compte, adresses et numéros de commande avant tout envoi à un service externe. La recherche du spreadsheet de ce site accepte du texte, pas des images. La méthode suivante transforme les détails visibles en requête utile, puis aide à évaluer les résultats sans confondre ressemblance et correspondance vérifiée.
+## Extraire les détails distinctifs avant les marques
+Notez catégorie, couleur dominante, coupe ou forme, aspect du matériau et deux détails inhabituels. Pour un sweat : fermeture zippée, grand dessin au dos, doublure contrastante ou organisation des poches. Pour un sac : forme de l’anse, fixation de la sangle, fermeture et compartiments. Pour des chaussures : profil de semelle, disposition des panneaux et laçage, au-delà de la couleur.
+
+L’aspect du matériau est un indice visuel, pas une composition établie. Une surface lisse ne prouve pas le cuir et une image floue ne confirme pas la laine. Un logo peut aider à identifier une référence de design, sans prouver authenticité ni identité du vendeur. Partez de ce qui est réellement visible. Si le texte est illisible, marquez-le comme incertain plutôt que de construire toute la recherche sur un mot ou un code deviné.
+## Construire des requêtes courtes et progressives
+Associez d’abord catégorie et détail le plus distinctif, par exemple « sweat gris zip dessin dos ». Si les résultats sont trop larges, ajoutez un élément visible de forme ou de couleur. S’ils disparaissent, retirez le terme le moins fiable. Changez un seul indice à la fois pour comprendre ce qui améliore la recherche. Copier une longue légende sociale ajoute souvent des termes de style sans rapport avec le produit.
+
+Utilisez la catégorie correspondante du spreadsheet lorsque vous connaissez le type d’article, puis comparez quelques candidats. Les titres peuvent employer d’autres langues ou des abréviations. Essayez des synonymes courants lorsque la construction visible s’y prête, comme « baskets » et « sneakers », ou « sac épaule » et « sac bandoulière ». Ce sont des essais de recherche, pas des affirmations de volume élevé. Évitez d’accumuler les marques pour forcer des résultats aux détails incompatibles.
+## Employer la recherche visuelle pour trouver des candidats
+Si vous choisissez un service distinct de recherche par image, examinez ses paramètres de confidentialité avant d’envoyer l’objet recadré. Il peut retrouver des pages proches ou d’anciennes utilisations d’une photographie, aider à récupérer un nom ou une référence plus nette. Il ne confirme ni stock, ni fiabilité d’une annonce, ni conformité de la future livraison à l’image.
+
+Comparez chaque candidat avec la capture originale. Les photos de fournisseurs sont réutilisées dans des annonces aux variantes, dimensions ou matières différentes. La correspondance de l’image ne constitue donc qu’un indice. Gardez l’URL et notez points communs et inconnues. Lorsqu’un résultat mène à une marketplace ou un catalogue, ouvrez l’annonce et vérifiez l’option choisie. La vignette du moteur n’est pas la réponse finale.
+## Vérifier le candidat sur la fiche actuelle
+Comparez trois détails distinctifs à la capture. Examinez avant et arrière lorsqu’ils sont disponibles, ainsi qu’un détail difficile à expliquer par la lumière : position d’une poche, tracé des coutures, construction d’une anse ou dessin de la semelle. Contrôlez ensuite couleur et taille sélectionnables. Une annonce multivariantes peut montrer le bon article dans une photo tout en sélectionnant par défaut un autre modèle.
+
+Enregistrez titre, URL, référence et option ensemble. Revérifiez prix et disponibilité sur la page de destination ; une ancienne capture ou notre carte de catalogue datée n’est pas une offre actuelle. Si le lien affiche désormais un autre produit, cessez de le considérer comme vérifié et recommencez avec les détails conservés. Distinguez aussi le catalogue externe de ce site de l’application Hacoo : un résultat ne prouve pas sa disponibilité dans votre compte ou votre pays.
+## Comparer trois candidats avec des preuves visibles
+Imaginez une capture d’un sac noir avec bord supérieur incurvé, anse courte et boucle métallique. A correspond à la couleur, mais son bord est droit. B correspond à la silhouette et à la boucle, sans montrer clairement l’anse. C correspond aux trois détails visibles, mais ses dimensions manquent. Cet exemple hypothétique montre pourquoi « cela ressemble » est insuffisant pour choisir.
+
+Pour chaque candidat, notez concordances, différences, inconnues et prochaine vérification. Vous pouvez écarter A, chercher une meilleure vue de l’anse de B et demander les dimensions de C. Ne remplacez pas discrètement des dimensions absentes par des estimations photographiques : la perspective déforme l’échelle. Limiter la sélection à trois candidats aide à comparer des différences utiles plutôt qu’à accumuler des dizaines de liens presque identiques jamais contrôlés.
+## Traiter les liens indisponibles et différences de pays
+Une capture peut survivre à son annonce. Le produit peut être supprimé, le lien changer de variante ou la disponibilité dépendre du compte et du pays. Vérifiez si la page est réellement absente ou nécessite le parcours habituel de connexion ou d’ouverture dans l’application. Si l’annonce reste introuvable, cherchez avec référence et détails visibles. Gardez l’ancienne URL comme contexte, sans la partager comme lien d’achat fonctionnel.
+
+Ne remplacez pas le pays de livraison par une adresse inutilisable simplement pour faire apparaître un produit. Confirmez la disponibilité pour votre destination réelle. Si le résultat reste inaccessible, notez la limite et passez à un autre candidat. Le guide des liens qui ne fonctionnent plus traite ce cas en détail. Une recherche réussie mène à une annonce contrôlée et utilisable pour votre situation, pas seulement à une vignette affichée.
+## Passer de la ressemblance à une décision informée
+Après avoir trouvé une correspondance plausible, vérifiez taille, quantité choisie, frais de livraison et conditions de retour. La capture ne répond pas à ces questions. Utilisez le guide des tailles pour les mesures, celui du QC baskets pour photos et semelles, ou la liste QC générale pour d’autres détails. Gardez les incertitudes explicites, surtout si la seule preuve est une photo de fournisseur partagée par plusieurs annonces.
+
+Sauvegardez un petit dossier : capture originale, URL contrôlée, variante choisie, date et questions ouvertes. Si l’article reçu diffère ensuite de la description sélectionnée, ces éléments peuvent aider à expliquer l’écart dans l’assistance de la commande. Ils ne garantissent ni remboursement ni conclusion d’authenticité. L’objectif est un parcours reproductible de l’image vers des preuves précises, avec les guides utiles pour l’étape suivante.

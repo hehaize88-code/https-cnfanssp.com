@@ -1,3 +1,4 @@
+import { novemberCopy } from "./november-content";
 import type { Lang } from "./site-data";
 import type { LocaleContent } from "./localized-content";
 
@@ -95,7 +96,14 @@ export function applySeoUpdates(content: Record<Lang, LocaleContent>) {
     c.returns.facts = [["15", c.returns.facts[0][1]], ["✓", d.facts[2]]];
     c.returns.items = [d.instructions, d.refund, ...c.returns.items.filter((_, i) => i !== 1)];
     c.shipping.source = c.returns.source = c.qc.source = d.reference;
-    c.qc.asideText = d.qc;
+    const n = novemberCopy[lang];
+    c.pageInfo.shipping.title = n.shippingTitle;
+    c.pageInfo.shipping.text = n.shippingDescription;
+    c.pageInfo.returns.text = n.returnsDescription;
+    c.shipping.facts = [[n.costLabel, n.costText], ["3–5", n.processing]];
+    c.shipping.source = c.returns.source = n.sourceLabel;
+    c.qc.source = n.qcNote;
+    c.qc.asideText = n.qcAside;
     c.faq[4] = [c.faq[4][0], d.region];
     c.spreadsheet.items[2] = [c.spreadsheet.items[2][0], d.region];
     c.spreadsheet.asideText = d.boundary;

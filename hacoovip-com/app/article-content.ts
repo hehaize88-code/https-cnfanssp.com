@@ -4,7 +4,7 @@ import { hvArticle, hvSlug } from "./hv-decision-matrix";
 import { hvUseCaseArticle, hvUseCaseSlug } from "./hv-use-case-criteria";
 import { priorityArticles } from "./hv-priority-articles";
 
-export type ArticleSource = { name: string; url: string; supports: Record<Lang, string> };
+export type ArticleSource = { name: string; url: string; checked?: string; supports: Record<Lang, string> };
 
 export const articles = {
   ...newArticles,

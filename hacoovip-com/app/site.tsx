@@ -1,4 +1,5 @@
-import { newArticleSlugs } from "./release-content";
+import { novemberCopy, officialUrls } from "./november-content";
+import { featuredArticleSlugs } from "./release-content";
 import { ArticleSlug, articleSlugs, categories, copy, CoreRouteKey, decisionCopy, Lang, languages, localizedPath, products, RouteKey, TrustRouteKey, trustRouteKeys } from "./site-data";
 import { localizedContent } from "./localized-content";
 import { localizedArticles } from "./localized-articles";
@@ -59,7 +60,7 @@ function Heading({ index, title, text }: { index: string; title: string; text: s
 }
 
 function ArticleCards({ lang, latest = false }: { lang: Lang; latest?: boolean }) {
-  return <div className="article-cards">{(latest ? [...newArticleSlugs] : [...newArticleSlugs, ...articleSlugs.filter(s => !newArticleSlugs.includes(s as never))]).map((slug, i) => { const a = localizedArticles[lang][slug]; return <a key={slug} href={localizedPath(lang, `articles/${slug}`)}><div><img src={a.image} alt={a.imageAlt} width="800" height="800" loading="lazy"/><span>{String(i + 1).padStart(2, "0")}</span></div><small>{a.keyword.toUpperCase()}</small><h3>{a.title}</h3><p>{a.excerpt}</p><b>{copy[lang].read} →</b></a>; })}</div>;
+  return <div className="article-cards">{(latest ? [...featuredArticleSlugs] : [...featuredArticleSlugs, ...articleSlugs.filter(s => !featuredArticleSlugs.includes(s as never))]).map((slug, i) => { const a = localizedArticles[lang][slug]; return <a key={slug} href={localizedPath(lang, `articles/${slug}`)}><div><img src={a.image} alt={a.imageAlt} width="800" height="800" loading="lazy"/><span>{String(i + 1).padStart(2, "0")}</span></div><small>{a.keyword.toUpperCase()}</small><h3>{a.title}</h3><p>{a.excerpt}</p><b>{copy[lang].read} →</b></a>; })}</div>;
 }
 
 function FaqList({ lang }: { lang: Lang }) {
@@ -72,6 +73,7 @@ function Home({ lang }: { lang: Lang }) {
   const l = localizedContent[lang];
   return <>
     <section className="hero editorial-hero"><div className="hero-copy"><span>{d.heroEyebrow}</span><h1>{d.heroTitle}</h1><p>{d.heroText}</p><Search lang={lang}/><div className="proof">{t.proof.map((x, i) => <b key={x}><span>0{i + 1}</span>{x}</b>)}</div></div><aside className="hero-collage"><figure className="collage-main"><img src="/products/cnfanssp-travis-hoodie.webp" alt="Travis Scott Hoodie" width="750" height="750"/><figcaption><span>{l.home.newCheck}</span><b>{l.home.imageTitleUrl}</b></figcaption></figure><figure className="collage-small"><img src="/products/cnfanssp-prada-backpack.webp" alt="PRADA Backpacks Bags" width="750" height="750"/><figcaption>{l.home.accessoryCaption}</figcaption></figure><div className="collage-note"><span>{l.home.howItWorks}</span><b>{l.home.workflow.split("\n").map((x, i) => <span key={x}>{x}{i === 0 && <br/>}</span>)}</b><p>{l.home.noClaims}</p></div></aside></section>
+    <RelatedGuides lang={lang} route="home"/>
     <section className="section"><Heading index={l.home.categoryIndex} title={t.categoriesTitle} text={t.categoriesText}/><CategoryGrid lang={lang}/></section>
     <section className="section clay"><Heading index={l.home.findsIndex} title={d.findsTitle} text={d.findsText}/><ProductGrid lang={lang}/><p className="price-note">{l.home.priceNote}</p></section>
     <section className="method"><div><span>{l.home.methodIndex}</span><h2>{d.methodTitle}</h2><p>{d.methodText}</p><a href={localizedPath(lang, "qc-guide")}>{t.nav[3]} →</a></div><div className="steps">{d.steps.map(([title, text], i) => <article key={title}><span>0{i + 1}</span><h3>{title}</h3><p>{text}</p></article>)}</div></section>
@@ -86,22 +88,38 @@ function Checklist({ items }: { items: [string, string][] }) { return <div class
 
 function RelatedGuides({ lang, route }: { lang: Lang; route: string }) {
   const topics: Record<string, ArticleSlug[]> = {
-    shipping: ["hacoo-order-tracking", "hacoo-shipping-and-returns-guide"],
-    returns: ["hacoo-shipping-and-returns-guide", "hacoo-qc-photo-checklist"],
-    "qc-guide": ["hacoo-qc-photo-checklist", "hacoo-size-guide"],
-    spreadsheet: ["how-to-use-hacoo-spreadsheet", "hacoo-links-not-working"],
-    finds: ["hacoo-size-guide", "how-to-check-hacoo-links"],
+    home: ["hacoo-find-product-from-screenshot", "hacoo-sneaker-qc-insole-measurements", "hacoo-missing-item-split-shipment"],
+    shipping: ["hacoo-order-tracking", "hacoo-missing-item-split-shipment"],
+    returns: ["hacoo-shipping-and-returns-guide", "hacoo-missing-item-split-shipment"],
+    "qc-guide": ["hacoo-sneaker-qc-insole-measurements", "hacoo-qc-photo-checklist", "hacoo-size-guide"],
+    spreadsheet: ["hacoo-find-product-from-screenshot", "how-to-use-hacoo-spreadsheet", "hacoo-links-not-working"],
+    finds: ["hacoo-find-product-from-screenshot", "hacoo-size-guide", "hacoo-sneaker-qc-insole-measurements"],
   };
   return <nav className="related-guides" aria-label={copy[lang].nav[6]}>{(topics[route] || []).map(slug => <a key={slug} href={localizedPath(lang, `articles/${slug}`)}>{localizedArticles[lang][slug].title} →</a>)}</nav>;
 }
 
+function OfficialLinks({ lang, shipping = false }: { lang: Lang; shipping?: boolean }) {
+  const n = novemberCopy[lang];
+  return <div className="official-links"><span>{n.sourceLabel}</span><a href={shipping ? officialUrls.shipping : officialUrls.refund} target="_blank" rel="noopener noreferrer">{shipping ? n.shippingSource : n.refundSource} ↗</a><a href={officialUrls.help} target="_blank" rel="noopener noreferrer">{n.helpSource} ↗</a></div>;
+}
+
+function ShippingTable({ lang }: { lang: Lang }) {
+  const n = novemberCopy[lang];
+  return <section className="answer-panel"><h2>{n.tableTitle}</h2><div className="table-wrap"><table><caption className="sr-only">{n.tableTitle}</caption><thead><tr>{n.columns.map(column => <th key={column} scope="col">{column}</th>)}</tr></thead><tbody>{n.countries.map((country, i) => <tr key={country}><th scope="row">{country}</th><td>{i < 4 ? "15–25" : i === 4 ? "15–30" : "25–65"} {n.days}</td></tr>)}</tbody></table></div><p>{n.tableNote}</p><OfficialLinks lang={lang} shipping/></section>;
+}
+
+function ReturnsQuick({ lang }: { lang: Lang }) {
+  const n = novemberCopy[lang];
+  return <section className="answer-panel"><h2>{n.quickTitle}</h2><div className="answer-grid">{n.quick.map(([title, text]) => <div key={title}><h3>{title}</h3><p>{text}</p></div>)}</div><OfficialLinks lang={lang}/></section>;
+}
+
 function BasicPage({ lang, route }: { lang: Lang; route: Exclude<CoreRouteKey, ""> }) {
   const l = localizedContent[lang];
-  if (route === "spreadsheet") { const p = l.spreadsheet; return <><PageHero lang={lang} route={route}/><section className="search-band"><div><span>{p.searchLabel}</span><h2>{p.searchTitle}</h2></div><Search lang={lang} compact/></section><section className="section"><Heading index={p.headingIndex} title={p.headingTitle} text={p.headingText}/><CategoryGrid lang={lang}/></section><section className="editorial soft-panel"><aside><span>{p.asideLabel}</span><h2>{p.asideTitle}</h2><p>{p.asideText}</p></aside><Checklist items={p.items.map(x => [x[0], x[1]])}/></section><p className="source-line">{p.source}</p><RelatedGuides lang={lang} route={route}/></>; }
-  if (route === "finds") { const p = l.finds; return <><PageHero lang={lang} route={route}/><section className="section clay"><Heading index={p.headingIndex} title={p.headingTitle} text={p.headingText}/><ProductGrid lang={lang}/><p className="price-note">{p.priceNote}</p></section><section className="editorial"><aside><span>{p.asideLabel}</span><h2>{p.asideTitle}</h2><p>{p.asideText}</p></aside><Checklist items={p.items.map(x => [x[0], x[1]])}/></section><RelatedGuides lang={lang} route={route}/></>; }
-  if (route === "qc-guide") { const p = l.qc; return <><PageHero lang={lang} route={route}/><section className="editorial"><aside><span>{p.asideLabel}</span><h2>{p.asideTitle}</h2><p>{p.asideText}</p></aside><Checklist items={p.items.map(x => [x[0], x[1]])}/></section><p className="source-line">{p.source}</p><RelatedGuides lang={lang} route={route}/></>; }
-  if (route === "shipping") { const p = l.shipping; return <><PageHero lang={lang} route={route}/><section className="fact-strip">{p.facts.map(([value, text]) => <div key={value}><b>{value}</b><span>{text}</span></div>)}</section><section className="editorial"><aside><span>{p.asideLabel}</span><h2>{p.asideTitle}</h2><p>{p.asideText}</p></aside><Checklist items={p.items.map(x => [x[0], x[1]])}/></section><p className="source-line">{p.source}</p><RelatedGuides lang={lang} route={route}/></>; }
-  if (route === "returns") { const p = l.returns; return <><PageHero lang={lang} route={route}/><section className="fact-strip coral">{p.facts.map(([value, text]) => <div key={value}><b>{value}</b><span>{text}</span></div>)}</section><section className="editorial"><aside><span>{p.asideLabel}</span><h2>{p.asideTitle}</h2><p>{p.asideText}</p></aside><Checklist items={p.items.map(x => [x[0], x[1]])}/></section><p className="source-line">{p.source}</p><RelatedGuides lang={lang} route={route}/></>; }
+  if (route === "spreadsheet") { const p = l.spreadsheet; return <><PageHero lang={lang} route={route}/><RelatedGuides lang={lang} route={route}/><section className="search-band"><div><span>{p.searchLabel}</span><h2>{p.searchTitle}</h2></div><Search lang={lang} compact/></section><section className="section"><Heading index={p.headingIndex} title={p.headingTitle} text={p.headingText}/><CategoryGrid lang={lang}/></section><section className="editorial soft-panel"><aside><span>{p.asideLabel}</span><h2>{p.asideTitle}</h2><p>{p.asideText}</p></aside><Checklist items={p.items.map(x => [x[0], x[1]])}/></section><p className="source-line">{p.source}</p></>; }
+  if (route === "finds") { const p = l.finds; return <><PageHero lang={lang} route={route}/><RelatedGuides lang={lang} route={route}/><section className="section clay"><Heading index={p.headingIndex} title={p.headingTitle} text={p.headingText}/><ProductGrid lang={lang}/><p className="price-note">{p.priceNote}</p></section><section className="editorial"><aside><span>{p.asideLabel}</span><h2>{p.asideTitle}</h2><p>{p.asideText}</p></aside><Checklist items={p.items.map(x => [x[0], x[1]])}/></section></>; }
+  if (route === "qc-guide") { const p = l.qc; return <><PageHero lang={lang} route={route}/><RelatedGuides lang={lang} route={route}/><section className="editorial"><aside><span>{p.asideLabel}</span><h2>{p.asideTitle}</h2><p>{p.asideText}</p></aside><Checklist items={p.items.map(x => [x[0], x[1]])}/></section><p className="source-line">{p.source}</p></>; }
+  if (route === "shipping") { const p = l.shipping; return <><PageHero lang={lang} route={route}/><RelatedGuides lang={lang} route={route}/><section className="fact-strip">{p.facts.map(([value, text]) => <div key={value}><b>{value}</b><span>{text}</span></div>)}</section><ShippingTable lang={lang}/><section className="editorial"><aside><span>{p.asideLabel}</span><h2>{p.asideTitle}</h2><p>{p.asideText}</p></aside><Checklist items={p.items.map(x => [x[0], x[1]])}/></section><p className="source-line">{p.source}</p></>; }
+  if (route === "returns") { const p = l.returns; return <><PageHero lang={lang} route={route}/><RelatedGuides lang={lang} route={route}/><ReturnsQuick lang={lang}/><section className="editorial"><aside><span>{p.asideLabel}</span><h2>{p.asideTitle}</h2><p>{p.asideText}</p></aside><Checklist items={p.items.map(x => [x[0], x[1]])}/></section><p className="source-line">{p.source}</p></>; }
   if (route === "articles") return <><PageHero lang={lang} route={route}/><section className="section ink"><ArticleCards lang={lang}/></section></>;
   return <><PageHero lang={lang} route="faq"/><section className="faq-page"><FaqList lang={lang}/></section></>;
 }
@@ -114,11 +132,21 @@ function TrustPage({ lang, route }: { lang: Lang; route: TrustRouteKey }) {
 function ArticlePage({ lang, slug }: { lang: Lang; slug: ArticleSlug }) {
   const a = localizedArticles[lang][slug]; const l = localizedContent[lang];
 
-  const related: ArticleSlug[] = (slug === "hacoo-order-tracking" ? ["hacoo-shipping-and-returns-guide", "hacoo-qc-photo-checklist", "hacoo-size-guide"] : slug === "hacoo-links-not-working" ? ["how-to-check-hacoo-links", "how-to-use-hacoo-spreadsheet", "hacoo-size-guide"] : slug === "hacoo-size-guide" ? ["hacoo-qc-photo-checklist", "compare-specific-hacoo-variants", "hacoo-shipping-and-returns-guide"] : slug === "hacoo-qc-photo-checklist" ? ["hacoo-size-guide", "hacoo-shipping-and-returns-guide", "how-to-check-hacoo-links"] : [...newArticleSlugs].slice(0, 3)) as ArticleSlug[];
+  const relationMap: Partial<Record<ArticleSlug, ArticleSlug[]>> = {
+    "hacoo-order-tracking": ["hacoo-missing-item-split-shipment", "hacoo-shipping-and-returns-guide", "hacoo-qc-photo-checklist"],
+    "hacoo-links-not-working": ["hacoo-find-product-from-screenshot", "how-to-check-hacoo-links", "how-to-use-hacoo-spreadsheet"],
+    "hacoo-size-guide": ["hacoo-sneaker-qc-insole-measurements", "hacoo-qc-photo-checklist", "hacoo-shipping-and-returns-guide"],
+    "hacoo-qc-photo-checklist": ["hacoo-sneaker-qc-insole-measurements", "hacoo-size-guide", "hacoo-shipping-and-returns-guide"],
+    "hacoo-sneaker-qc-insole-measurements": ["hacoo-size-guide", "hacoo-qc-photo-checklist", "hacoo-shipping-and-returns-guide"],
+    "hacoo-missing-item-split-shipment": ["hacoo-order-tracking", "hacoo-shipping-and-returns-guide", "hacoo-qc-photo-checklist"],
+    "hacoo-find-product-from-screenshot": ["hacoo-links-not-working", "hacoo-size-guide", "hacoo-sneaker-qc-insole-measurements"],
+    "hacoo-shipping-and-returns-guide": ["hacoo-missing-item-split-shipment", "hacoo-sneaker-qc-insole-measurements", "hacoo-order-tracking"],
+  };
+  const related: ArticleSlug[] = relationMap[slug] || [...featuredArticleSlugs].filter(s => s !== slug).slice(0, 3);
   const legacyUpdated = slug === "hacoo-use-case-must-have-criteria" || prioritySlugs.includes(slug as never) ? { en: "Checked 18 September 2026", de: "Geprüft am 18. September 2026", es: "Revisado el 18 de septiembre de 2026", fr: "Vérifié le 18 septembre 2026", it: "Verificato il 18 settembre 2026" }[lang] : copy[lang].updated;
   const updated = a.modified || a.published || legacyUpdated;
   const tocLabel = { en: "In this guide", de: "In diesem Ratgeber", es: "En esta guía", fr: "Dans ce guide", it: "In questa guida" }[lang];
-  return <article className="article-page"><header><a href={localizedPath(lang, "articles")}>← {copy[lang].nav[6]}</a><span>{l.pageInfo.articles.eyebrow} · {updated}</span><h1>{a.title}</h1><p>{a.excerpt}</p></header><nav className="article-toc" aria-label={tocLabel}><b>{tocLabel}</b><ol>{a.sections.map(([title], i) => <li key={title}><a href={`#section-${i + 1}`}>{title}</a></li>)}</ol></nav><section className="article-sources"><b>{l.common.sourcesMethodology}</b><p>{a.sourceNote} {l.common.researchSuffix}</p><ul>{a.sources.map(source => <li key={source.url}><b>{source.name}</b><span>{l.common.checked}: 28 August 2026 · {source.supports[lang]}</span></li>)}</ul></section><figure className="article-figure"><img src={a.image} alt={a.imageAlt} width="800" height="800"/><figcaption>{a.imageCaption}</figcaption></figure><div className="article-body">{a.sections.map(([title, text], i) => <section key={title} id={`section-${i + 1}`}><span>{String(i + 1).padStart(2, "0")}</span><div><h2>{title}</h2>{text.split(/\n\n+/).map((paragraph, j) => <p key={j}>{paragraph}</p>)}</div></section>)}</div><section className="article-related"><span>{l.pageInfo.articles.eyebrow}</span><h2>{l.pageInfo.articles.title}</h2><div>{related.map(relatedSlug => <a key={relatedSlug} href={localizedPath(lang, `articles/${relatedSlug}`)}><small>{localizedArticles[lang][relatedSlug].keyword}</small><b>{localizedArticles[lang][relatedSlug].title}</b><em>{copy[lang].read} →</em></a>)}</div></section><aside className="article-cta"><span>{l.common.nextStep}</span><h2>{l.common.testWorkflow}</h2><a href={localizedPath(lang, "spreadsheet")}>{copy[lang].nav[1]} →</a></aside></article>;
+  return <article className="article-page"><header><a href={localizedPath(lang, "articles")}>← {copy[lang].nav[6]}</a><span>{l.pageInfo.articles.eyebrow} · {updated}</span><h1>{a.title}</h1><p>{a.excerpt}</p></header><nav className="article-toc" aria-label={tocLabel}><b>{tocLabel}</b><ol>{a.sections.map(([title], i) => <li key={title}><a href={`#section-${i + 1}`}>{title}</a></li>)}</ol></nav><section className="article-sources"><b>{l.common.sourcesMethodology}</b><p>{a.sourceNote} {a.modified === "2026-11-06" ? novemberCopy[lang].researchNote : l.common.researchSuffix}</p><ul>{a.sources.map(source => <li key={source.url}>{source.checked ? <a href={source.url} target="_blank" rel="noopener noreferrer">{source.name} ↗</a> : <b>{source.name}</b>}<span>{l.common.checked}: {source.checked || "2026-08-28"} · {source.supports[lang]}</span></li>)}</ul></section><figure className="article-figure"><img src={a.image} alt={a.imageAlt} width="800" height="800"/><figcaption>{a.imageCaption}</figcaption></figure><div className="article-body">{a.sections.map(([title, text], i) => <section key={title} id={`section-${i + 1}`}><span>{String(i + 1).padStart(2, "0")}</span><div><h2>{title}</h2>{text.split(/\n\n+/).map((paragraph, j) => <p key={j}>{paragraph}</p>)}</div></section>)}</div><section className="article-related"><span>{l.pageInfo.articles.eyebrow}</span><h2>{l.pageInfo.articles.title}</h2><div>{related.map(relatedSlug => <a key={relatedSlug} href={localizedPath(lang, `articles/${relatedSlug}`)}><small>{localizedArticles[lang][relatedSlug].keyword}</small><b>{localizedArticles[lang][relatedSlug].title}</b><em>{copy[lang].read} →</em></a>)}</div></section><aside className="article-cta"><span>{l.common.nextStep}</span><h2>{l.common.testWorkflow}</h2><a href={localizedPath(lang, "spreadsheet")}>{copy[lang].nav[1]} →</a></aside></article>;
 }
 
 function Schemas({ lang, route, articleSlug }: { lang: Lang; route: RouteKey | "article"; articleSlug?: ArticleSlug }) {
@@ -130,7 +158,7 @@ function Schemas({ lang, route, articleSlug }: { lang: Lang; route: RouteKey | "
   if (route === "" || route === "spreadsheet") graph.push({ "@type": "ItemList", name: "Hacoo spreadsheet categories", numberOfItems: categories.length, itemListElement: categories.map(([name, destination], i) => ({ "@type": "ListItem", position: i + 1, name, url: destination })) });
   if (route === "faq") graph.push({ "@type": "FAQPage", mainEntity: l.faq.map(([q, a]) => ({ "@type": "Question", name: q, acceptedAnswer: { "@type": "Answer", text: a } })) });
   if (route === "article") { const articleDate = la!.published || (articleSlug === "hacoo-use-case-must-have-criteria" || prioritySlugs.includes(articleSlug as never) ? "2026-09-18" : articleSlug === "hacoo-product-decision-matrix" ? "2026-08-29" : "2026-08-28"); const modifiedDate = la!.modified || (articleSlug === "hacoo-shipping-and-returns-guide" ? "2026-09-18" : articleDate); graph.push({ "@type": "Article", headline: la!.title, description: la!.excerpt, image: `${DOMAIN}${la!.image}`, datePublished: articleDate, dateModified: modifiedDate, mainEntityOfPage: url, inLanguage: lang, author: { "@type": "Organization", name: "Hacoo VIP Research", url: `${DOMAIN}${localizedPath(lang, "about")}` }, publisher: { "@id": `${DOMAIN}/#publisher` }, keywords: [la!.keyword], about: [{ "@type": "Thing", name: la!.keyword }] }); }
-  if (route !== "") graph.push({ "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: l.common.home, item: `${DOMAIN}${localizedPath(lang)}` }, { "@type": "ListItem", position: 2, name: pageTitle, item: url }] });
+  if (route !== "") graph.push({ "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: l.common.home, item: `${DOMAIN}${localizedPath(lang)}` }, ...(route === "article" ? [{ "@type": "ListItem", position: 2, name: l.pageInfo.articles.title, item: `${DOMAIN}${localizedPath(lang, "articles")}` }] : []), { "@type": "ListItem", position: route === "article" ? 3 : 2, name: pageTitle, item: url }] });
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@graph": graph }) }}/>;
 }
 

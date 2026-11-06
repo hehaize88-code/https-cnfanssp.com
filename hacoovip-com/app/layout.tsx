@@ -16,6 +16,11 @@ document.addEventListener('click',function(event){
   var link=event.target instanceof Element?event.target.closest('a[href]'):null;
   if(!link)return;
   var target=new URL(link.href,location.origin);
+  if(target.origin===location.origin && target.pathname.split('/').includes('articles')){
+    var guidePlacement=link.closest('.related-guides')?'topic-shortcut':link.closest('.article-related')?'related-article':link.closest('.article-cards')?'article-card':'navigation';
+    gtag('event','internal_guide_click',{source_path:location.pathname,destination_path:target.pathname,placement:guidePlacement,page_language:document.documentElement.lang,transport_type:'beacon'});
+    return;
+  }
   if(!['www.cnfanshp.com','cnfanshp.com'].includes(target.hostname))return;
   var placement=link.closest('.product-grid')?'product':link.closest('.category-grid')?'category':link.closest('.header')?'header':'article';
   gtag('event','main_outbound_click',{destination_path:target.pathname,placement:placement,page_language:document.documentElement.lang,transport_type:'beacon'});
