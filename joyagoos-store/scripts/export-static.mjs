@@ -78,7 +78,7 @@ const redirects = pageUrls
 const articleAliasRedirects = articleHubPaths
   .flatMap((pathname) => [`${pathname.replace(/\/articles$/, "/articles-2026")} ${pathname} 301`, `${pathname.replace(/\/articles$/, "/articles-2026")}/ ${pathname} 301`])
   .join("\n");
-await writeFile(join(outputDir, "_redirects"), `https://www.joyagoos.store/* https://joyagoos.store/:splat 301\n${redirects}\n${articleAliasRedirects}\n`);
+await writeFile(join(outputDir, "_redirects"), `${redirects}\n${articleAliasRedirects}\n`);
 // HTML entry points must not keep an old language switcher or article registry.
 // One article wildcard per locale also covers legacy /articles-2026 URLs.
 // Keep these rules separate from fingerprinted assets and below Pages' 100-rule limit.

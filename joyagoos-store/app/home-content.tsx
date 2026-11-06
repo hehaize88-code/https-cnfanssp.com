@@ -92,7 +92,7 @@ export function HomeContent({ locale, prefix = "" }: { locale: HomeLocale; prefi
   const language = locale;
   const baseCopy = getCopy(language);
   const refreshed = novemberUi[language];
-  const copy = {...baseCopy, title:refreshed.homeTitle, accent:refreshed.homeAccent, lead:refreshed.homeDescription};
+  const copy = {...baseCopy, title:language === "zh" ? "Joyagoo 商品清单" : "Joyagoo Spreadsheet", accent:refreshed.homeAccent, lead:refreshed.homeDescription};
   const activeLocale = language === "en" ? undefined : language;
   const articleSection = language === "en" ? pageContent.articles : localizedSections[language].articles;
   const faqSection = language === "en" ? pageContent.faq : localizedSections[language].faq;

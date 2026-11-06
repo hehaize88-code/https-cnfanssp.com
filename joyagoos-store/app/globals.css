@@ -334,3 +334,11 @@ a:focus-visible,button:focus-visible,input:focus-visible { outline:3px solid #34
  .home-article-card p { font-size:13px; line-height:1.55; }
  .home-article-card>span,.home-article-card>b { font-size:11px; }
 }
+.hero h1 { font-size:clamp(52px,5.1vw,86px); line-height:.98; letter-spacing:-.05em; }
+@media(min-width:721px) { .hero {padding-top:4vw;} }
+@media(max-width:720px) {
+ .hero h1 {font-size:42px; line-height:1.02;}
+ .hero-lead {font-size:14px; line-height:1.55;}
+ .search-bar input {font-size:16px;}
+ .search-bar button {font-size:11px;}
+}
