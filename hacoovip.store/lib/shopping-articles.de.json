@@ -1,0 +1,245 @@
+[
+  {
+    "slug": "hacoo-shipping-cost",
+    "tag": "VERSANDKOSTEN",
+    "title": "Wie hoch sind die Hacoo Versandkosten? Gesamtpreis prüfen",
+    "seoTitle": "Hacoo Versandkosten und Gesamtpreis prüfen",
+    "deck": "Prüfe die Lieferkosten deines Warenkorbs, vergleiche Rabatte und kontrolliere den Endbetrag vor dem Bezahlen mit einer praktischen Kostentabelle.",
+    "seoDescription": "Hacoo Versandkosten für Warenkorb und Lieferadresse prüfen. Artikelpreise, Versand, Rabatte und Endbetrag mit einer einfachen Tabelle vergleichen.",
+    "date": "6. November 2026",
+    "dateISO": "2026-11-06",
+    "modifiedISO": "2026-11-06",
+    "readTime": "7 Minuten Lesezeit",
+    "reviewed": "Offizielle Versand- und Bestellseiten am 6. November 2026 geprüft. Verwende das Angebot für deine eigene Bestellung.",
+    "sources": [
+      {
+        "label": "Hacoo Hilfe zu Versandkosten",
+        "url": "https://act.hacoo.app/faqshippingfee",
+        "note": "Veröffentlichte Hinweise zu Zielort und Paketgewicht."
+      },
+      {
+        "label": "Hacoo Versand und Lieferung",
+        "url": "https://web.hacoo.app/en-US/pages/shipping-info",
+        "note": "Aktuelle öffentliche Versandinformationen."
+      },
+      {
+        "label": "Bei Hacoo bestellen",
+        "url": "https://act.hacoo.app/act/sara/helpcenter/order1",
+        "note": "Offizieller Bestellweg über App, Warenkorb und Kasse."
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Finde den Preis für deinen Warenkorb",
+        "paragraphs": [
+          "Um deine Hacoo Versandkosten zu ermitteln, wählst du genaue Artikel, Größen und Mengen, legst das Lieferziel fest und liest die Versandzeile in der Bestellübersicht vor dem Bezahlen. Betrachte Artikelzwischensumme und Endbetrag zusammen. Ein Preis unter einem Produktfoto beantwortet nur einen Teil der Frage. Für die Kaufentscheidung zählt der angeforderte Betrag für den vollständigen Warenkorb an deiner gewünschten Lieferadresse.",
+          "Hacoos Gebührenhilfe behandelt Zielort und Paketgewicht. Die Versandseite weist auf veränderliche Frachtregeln hin. Nutze diese Seiten als Hintergrund und die Bestellübersicht für dein Angebot. Das Produktverzeichnis dieses unabhängigen Ratgebers öffnet einen eigenen Katalog. Dessen Preisangebot gehört zum dortigen Dienst. Für eine Bestellung bei Hacoo verwendest du den Warenkorb und die Kasse innerhalb von Hacoo."
+        ]
+      },
+      {
+        "heading": "Lege das Lieferziel vor dem Preisvergleich fest",
+        "paragraphs": [
+          "Kontrolliere Land, Postleitzahl und Adresse, bevor du einen Preis aufschreibst. Eine gespeicherte Adresse kann von einer früheren Bestellung, einem Urlaub oder einer anderen Person stammen. Änderst du sie nach dem Vergleich zweier Warenkörbe, wiederhole den Vergleich. Halte auch die Währung fest. Dasselbe Währungssymbol kann bei verschiedenen Währungen vorkommen. Notiere den dreistelligen Währungscode, wenn die Oberfläche ihn angibt.",
+          "Für Lieferungen nach Deutschland, Frankreich, Spanien, Italien oder Großbritannien bleibt dein tatsächliches Ziel während der ganzen Prüfung ausgewählt. Ein Screenshot aus einem anderen Land hilft beim Verständnis der Oberfläche, sagt jedoch wenig über deine eigenen Kosten. Ist dein Ziel nicht auswählbar oder wird keine Liefermethode angeboten, kläre diesen Punkt, bevor du einen angezeigten Betrag als nutzbares Angebot behandelst."
+        ]
+      },
+      {
+        "heading": "Notiere jede Position des Gesamtpreises",
+        "paragraphs": [
+          "Erstelle eine kleine Tabelle mit der gewählten Variante und ihrem aktuellen Preis. Ergänze Menge, Lieferkosten, weitere separat ausgewiesene Gebühren, Rabatte und Endbetrag. Behalte die angezeigte Währung jeder Zeile bei. Fülle die folgende Tabelle aus derselben Sitzung an der Kasse aus, damit ein älterer Artikelpreis nicht unbemerkt in eine neue Berechnung gelangt.",
+          "Ist eine Position unklar, übernimm ihre genaue Bezeichnung und lies die Erklärung des Dienstes. Das hilft etwa dann, wenn ein Rabatt die Artikel reduziert und Lieferkosten bestehen bleiben. Bereits in der Zwischensumme enthaltene Gebühren dürfen nicht doppelt in deinen Vergleich eingehen. Gleiche die Tabelle mit dem angezeigten Endbetrag ab. Bitte den Anbieter um eine Erklärung, wenn sich eine Differenz weiterhin nicht nachvollziehen lässt."
+        ],
+        "table": {
+          "caption": "Werte aus deiner Bestellübersicht erfassen",
+          "headers": [
+            "Position",
+            "Was du festhältst"
+          ],
+          "rows": [
+            [
+              "Artikel",
+              "Gewählte Variante, Menge, Preis und Währung"
+            ],
+            [
+              "Lieferung",
+              "Kosten für ausgewählte Adresse und Lieferoption"
+            ],
+            [
+              "Weitere ausgewiesene Gebühren",
+              "Genaue Bezeichnung und mögliche Einrechnung"
+            ],
+            [
+              "Rabatt",
+              "Tatsächlich von diesem Warenkorb abgezogener Betrag"
+            ],
+            [
+              "Endbetrag",
+              "Geforderter Gesamtpreis vor Zahlung und Prüfzeitpunkt"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Vergleiche Einzelartikel und gemeinsamen Warenkorb",
+        "paragraphs": [
+          "Um die Wirkung eines weiteren Artikels zu prüfen, notiere den ersten Gesamtpreis, füge den gewünschten Artikel hinzu und erfasse die neue Übersicht. Adresse und Lieferoption bleiben für den Vergleich gleich. Die Differenz zwischen den Endbeträgen zeigt, wie viel du zusätzlich zahlen würdest. Sie umfasst sämtliche Änderungen an der Kasse, also den neuen Artikel und mögliche Veränderungen bei der Lieferung.",
+          "Du kannst außerdem eine gemeinsame Bestellung mit zwei getrennten Angeboten für dieselben Mengen und dasselbe Ziel vergleichen. Notiere jeweils den vollständigen Preis. Behalte einen zusätzlichen Artikel dann im Warenkorb, wenn du ihn tatsächlich möchtest und der Gesamtbetrag zum Budget passt. Ein niedrigerer Durchschnittspreis pro Artikel kann mit einer höheren Gesamtausgabe verbunden sein. Kontrolliere beim Zurückwechseln, ob versehentlich zusätzliche Mengen ausgewählt geblieben sind."
+        ]
+      },
+      {
+        "heading": "Prüfe die tatsächliche Wirkung eines Rabatts",
+        "paragraphs": [
+          "Liegt ein Code oder ein Angebot in deinem Konto vor, lies die Bedingungen und wende es vor dem Speichern des Endpreises an. Suche den Abzug in der Übersicht. Prüfe Mindestbestellwert, teilnehmende Produkte und mögliche Voraussetzungen des Kontos. Ein Code in sozialen Medien ist ein Hinweis für deine Prüfung. Der akzeptierte Abzug zeigt, welchen Vorteil genau dieser Warenkorb erhält.",
+          "Wird kostenloser Versand beworben, kontrolliere nach der Anwendung die Lieferposition. Fügst du zur Erreichung eines Schwellenwerts einen Artikel hinzu, vergleiche den vollständigen Gesamtpreis davor und danach. Notiere den Prüfzeitpunkt, da Angebote ablaufen können. Bei einem abgelehnten Code speicherst du die genaue Meldung und fragst bei unklaren Bedingungen über den regulären Support nach. Dieser Ratgeber nennt keinen Code als allgemein gültig."
+        ]
+      },
+      {
+        "heading": "Erfasse Preis und Lieferzeit getrennt",
+        "paragraphs": [
+          "Schreibe das angegebene Lieferfenster neben den Preis jeder tatsächlich angebotenen Versandart. Die günstigere Option kann für gewöhnliche Kleidung passen, während ein Geschenk mit festem Termin andere Anforderungen hat. Prüfe, ab welchem Ereignis die Zeit berechnet wird und ob eine Vorbereitung separat ausgewiesen ist. Bewahre die Schätzung zu deiner Bestellung auf, damit du eine spätere Verzögerung genau beschreiben kannst.",
+          "Unser Lieferzeit-Ratgeber erklärt Vorbereitung, Transport und Sendungsverfolgung ausführlicher. Nutze ihn für die zeitliche Planung. Hier vergleichst du den Preis der verfügbaren Leistungen. Eine geringe Versandgebühr allein belegt keine Ankunft vor einem Spiel, Urlaub oder Geburtstag. Liegt das angezeigte Fenster nach deinem Termin, hilft ein veränderter Warenkorb nur dann, wenn dadurch eine andere passende Lieferoption angeboten wird."
+        ]
+      },
+      {
+        "heading": "Ermittle den Grund für einen geänderten Betrag",
+        "paragraphs": [
+          "Weicht das heutige Angebot vom früheren ab, vergleiche beide Übersichten Zeile für Zeile. Beginne mit Größen, Farben, Mengen und Währung, danach folgen Zielort, Liefermethode und Rabatt. Die Produktkarte kann den Einstiegspreis einer Variante zeigen, während im Warenkorb eine andere liegt. Dieser kleine Unterschied erklärt manchen Preiswechsel schon vor der Untersuchung der Versandposition.",
+          "Für Vergleiche zwischen Diensten führst du jeweils eine eigene Tabelle. Eine Produktkennung gehört zum Zielkatalog, dessen Preis seine eigenen Lieferbedingungen benötigt. Bleibt eine Änderung unerklärt, übermittle dem Support Prüfzeitpunkt, sichtbare Bezeichnungen und Artikeldetails über dessen privaten Hilfekanal. Lege die Antwort zur Bestellung, damit die Erklärung mit dem von dir akzeptierten Betrag verbunden bleibt."
+        ]
+      },
+      {
+        "heading": "Ein nachvollziehbares Angebot aufbewahren",
+        "paragraphs": [
+          "Benenne das gespeicherte Angebot mit Datum und Lieferland. Notiere daneben die ausgewählten Produkte und Mengen. Ein Bild allein vom Gesamtbetrag lässt die Angaben aus, die spätere Änderungen erklären können. Speichere die Übersicht mit den üblichen Funktionen und prüfe, ob Versandart und Währung sichtbar sind. Persönliche Adressdaten gehören in deine private Ablage.",
+          "Wenn du nach einigen Tagen zum Warenkorb zurückkehrst, kontrolliere jede Position erneut. Verfügbarkeit, Varianten oder ein Kontoangebot können sich inzwischen geändert haben. Behalte den früheren Stand als Vergleich und gib dem neuen Angebot ein eigenes Datum. So erkennst du die konkret geänderte Position und kannst entscheiden, ob der neue Gesamtbetrag weiterhin zu deinem Budget passt."
+        ]
+      },
+      {
+        "heading": "Kläre diese Fragen vor dem Bezahlen",
+        "paragraphs": [
+          "Lässt sich der Versandpreis allein aus einer Produkttabelle ablesen? Nutze sie zur Produktsuche und hole das Angebot beim bestellabwickelnden Dienst ein. Kann die Gebühr eines anderen Käufers deine vorhersagen? Vergleiche dessen Ziel und Warenkorb als Hintergrund und prüfe anschließend deine Kasse. Deckt ein Rabatt automatisch die Lieferung? Kontrolliere, welche Position sich nach Anwendung verändert hat. Jede Antwort lässt sich an einem bestimmten Bildschirm prüfen.",
+          "Bestätige vor der Zahlung erneut Adresse, Mengen, Größen, Währung, Lieferung, Rabatt und Endbetrag. Speichere die Bestellübersicht über die üblichen Funktionen und bewahre sie privat auf. Lege anschließend die Bestätigung zum Angebot. Damit hast du einen klaren Ausgangspunkt für Sendungsverfolgung, Kostenprüfung und die Frage, ob sich ein weiterer Artikel bei einer künftigen Bestellung lohnt."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "hacoo-football-shirts-sizing",
+    "tag": "FUSSBALLTRIKOTS",
+    "title": "Hacoo Fußballtrikots und die passende Größe",
+    "seoTitle": "Hacoo Fußballtrikots und Größentabelle richtig lesen",
+    "deck": "Vergleiche ein Trikot mit einem passenden eigenen Oberteil, lies die Kleidungsmaße und prüfe das genaue Modell oder Set hinter dem Produktlink.",
+    "seoDescription": "Die Trikotgröße anhand von Brustweite, Länge und Ärmeln wählen. Erwachsenen- und Kindersets, Varianten und Produktlinks vor der Bestellung prüfen.",
+    "date": "6. November 2026",
+    "dateISO": "2026-11-06",
+    "modifiedISO": "2026-11-06",
+    "readTime": "7 Minuten Lesezeit",
+    "reviewed": "Kaufablauf am 6. November 2026 überprüft. Die Maßbeispiele dienen der Veranschaulichung und müssen mit dem gewählten Angebot verglichen werden.",
+    "sources": [
+      {
+        "label": "Bei Hacoo bestellen",
+        "url": "https://act.hacoo.app/act/sara/helpcenter/order1",
+        "note": "Offizieller Ablauf für einen Kauf innerhalb von Hacoo."
+      },
+      {
+        "label": "Hacoo Kontakt",
+        "url": "https://web.hacoo.app/en-US/pages/contact-us",
+        "note": "Aktuelle offizielle Supportkanäle der App."
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Beginne mit einem gut sitzenden Trikot",
+        "paragraphs": [
+          "Für ein Hacoo Fußballtrikot vergleichst du die Maße des gewählten Angebots mit einem ähnlichen Oberteil, das gut passt. Notiere Brustweite und Länge, bevor du dich auf S, M, L oder eine vertraute Zahl verlässt. Die Referenz soll zur geplanten Verwendung passen. Ein enges Trainingsshirt und ein locker über einer weiteren Schicht getragenes Trikot können bei derselben Person unterschiedliche Maße benötigen.",
+          "Suchen nach Hacoo Trikots oder Fußballsets führen zu unterschiedlichen Angeboten. Ein Setfoto kann Trikot, Hose und Stutzen zeigen, obwohl die gewählte Option nur ein Teil enthält. Lies Variantenbezeichnung und Lieferumfang vor der Größenprüfung. Das HacooVIP-Verzeichnis öffnet einen unabhängigen Katalog. Prüfe daher den Anbieter am Ziel und verwende dessen Angebotsdetails für diesen Kauf."
+        ]
+      },
+      {
+        "heading": "Miss flach mit derselben Methode",
+        "paragraphs": [
+          "Lege dein Referenztrikot flach hin und streiche den Stoff vorsichtig glatt, ohne ihn zu dehnen. Miss die Brustweite gerade zwischen den Punkten, die das Angebotsdiagramm verwendet. Bestimme danach die Länge mit denselben Anfangs- und Endpunkten. Notiere, ob sie an der Schulter neben dem Kragen oder anderswo beginnt. Bei Ärmeln ist die Methode ebenfalls wichtig, denn Schulternaht und hintere Mitte ergeben verschiedene Strecken.",
+          "Halte Einheiten und Referenzkleidung fest. Enthält die Tabelle Körpermaße, vergleiche sie mit entsprechend den Anweisungen genommenen Körpermaßen. Bei Kleidungsmaßen vergleichst du mit deinem flach liegenden Trikot. Steht dort lediglich Brust, nutze die Zeichnung oder frage den Verkäufer nach der Messweise. Flache Weite und Brustumfang lassen sich bei unvollständiger Beschriftung leicht verwechseln."
+        ],
+        "table": {
+          "caption": "Diese Maße mit der gewählten Größentabelle vergleichen",
+          "headers": [
+            "Maß",
+            "Einheitliche Methode"
+          ],
+          "rows": [
+            [
+              "Brustweite",
+              "Flach zwischen denselben Punkten am Trikot messen"
+            ],
+            [
+              "Länge",
+              "Denselben Startpunkt an Schulter oder Kragen verwenden"
+            ],
+            [
+              "Ärmel",
+              "Start an Schulternaht oder hinterer Mitte prüfen"
+            ],
+            [
+              "Saumweite",
+              "Untere Öffnung bei gewünschtem engem Sitz vergleichen"
+            ],
+            [
+              "Einheiten",
+              "Zoll und Zentimeter vor dem Vergleich umrechnen"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Nutze Maßunterschiede für die Größenentscheidung",
+        "paragraphs": [
+          "Dieses Beispiel veranschaulicht den Vergleich. Dein passendes Trikot sei 52 cm breit und 70 cm lang. Für Kandidat A sind 50 mal 69 cm angegeben, für B 53 mal 72 cm. A wäre schmaler und etwas kürzer als deine Referenz. B wäre breiter und länger. Daraus entsteht eine konkrete Frage zum gewünschten Sitz, bevor du einen Größenbuchstaben auswählst.",
+          "Wiederhole das Verfahren für alle wichtigen Maße. Eine passende Brustweite kann mit einer zu großen Länge einhergehen. Prüfe eine eventuell angegebene Messtoleranz und ob sie für die Kleidungsmaße gilt. Berücksichtige Unsicherheit bei der Interpretation der Tabelle. Stoff, Schnitt und die Lage des Trikots auf den Schultern beeinflussen das Tragegefühl ebenfalls."
+        ]
+      },
+      {
+        "heading": "Lies Schnittbeschreibung und Tabelle zusammen",
+        "paragraphs": [
+          "Angebote können Begriffe wie slim, regular, locker, Spieler oder Fan zur Beschreibung einer Version verwenden. Lies die Beschreibung der ausgewählten Option und deren eigene Tabelle. Dasselbe Wort kann bei verschieden geschnittenen Produkten auftauchen. Vergleiche Schulterform, Ärmelöffnungen und eine mögliche Verengung an der Taille mit deiner Referenz und der gewünschten Passform.",
+          "Ein Bewegungstest mit dem vorhandenen Trikot zeigt, welche Maße wichtig sind. Hebe die Arme, setze dich und probiere die geplante Kleidung darunter. Notiere, wo es zieht oder hochrutscht. Diese Beobachtungen helfen bei der Beurteilung der Kandidaten. Ein Rat wie eine Größe größer bestellen wird aussagekräftiger, wenn der Bericht dasselbe Produkt, dieselbe Version, die Referenzgröße und das erzielte Ergebnis beschreibt."
+        ]
+      },
+      {
+        "heading": "Prüfe Erwachsenen- und Kindersets getrennt",
+        "paragraphs": [
+          "Verwende bei einem Kinderset aktuelle Maße und bequem sitzende Kleidung als Referenz. Altersangaben helfen beim Finden eines Katalogbereichs, während Maße den Vergleich ermöglichen. Sind Oberteil und Hose enthalten, prüfe beide. Notiere die Methode der Bundmessung, den angegebenen Dehnbereich, falls vorhanden, und die Hosenlänge zusätzlich zu Weite und Länge des Trikots.",
+          "Für eine spätere Veranstaltung berücksichtigst du die Zeit bis zum Tragen, ohne einen pauschalen Wachstumszuschlag anzunehmen. Frage Eltern oder Träger nach gewünschtem Sitz und geplanter Kleidung darunter. Ein vollständiges Set braucht einen klaren Lieferumfang und passende Maße für seine Bestandteile. Zeigt eine Seite Erwachsene und Kinder mit nur einer Tabelle, kläre vor der Auswahl, für welche Varianten sie gilt."
+        ]
+      },
+      {
+        "heading": "Ordne den Link dem genauen Design zu",
+        "paragraphs": [
+          "Öffne den gespeicherten Link und vergleiche aktuelle Vorder- und Rückansicht, Farbe, Kragen, Ärmelform und Variantenname. Wird das Design einer Saison oder Kollektion zugeordnet, halte diese Angabe in deiner Auswahl fest. Prüfe, ob die ausgewählte Option zum Hauptfoto gehört. Mehrere Designs können sich eine Galerie teilen, und auch ein funktionierender Link kann mit einer anderen Auswahl öffnen.",
+          "Lies Angaben zur Personalisierung, bevor du einen Namen oder eine Nummer eingibst. Prüfe Schreibweise, Position, ausgewiesenen Aufpreis und Bestellhinweise. Ein Foto bedruckter Buchstaben allein bestätigt keinen enthaltenen Druckservice. Für Lizenzware verwendest du ausdrückliche Verkäuferangaben und nachvollziehbare Autorisierungsnachweise. Ein bekanntes Wappen oder ein Vereinsname auf einem Bild belegt die Autorisierung allein nur unzureichend."
+        ]
+      },
+      {
+        "heading": "Nutze Fotos und Bewertungen für konkrete Prüfungen",
+        "paragraphs": [
+          "Suche Nahaufnahmen von Kragen, Ärmelöffnungen, Nähten und relevanten Druck- oder Stickdetails. Prüfe bei Käuferfotos zunächst, ob Design und Version übereinstimmen. Licht und Aufnahmewinkel verändern die scheinbare Farbe und Proportion. Eine hilfreiche Bewertung beschreibt ein konkretes Ergebnis, etwa die Länge gegenüber einem bekannten Trikot, und liefert genügend Hintergrund für einen Vergleich.",
+          "Notiere offene Fragen direkt beim jeweiligen Kandidaten. Vielleicht fehlen Rückansicht, Weite einer Kindergröße oder eine Bestätigung der enthaltenen Hose. Ist die Antwort entscheidend, frage über den angebotenen Kontaktweg oder wähle ein besser dokumentiertes Produkt. So bleibt die Auswahl überschaubar und jedes Bild mit Informationen verbunden, die beim tatsächlichen Vergleich helfen."
+        ]
+      },
+      {
+        "heading": "Gezielt nach dem fehlenden Maß fragen",
+        "paragraphs": [
+          "Bei einer unvollständigen Tabelle frage nach der genauen Variante, die du erwägst. Nenne die Größenbezeichnung und das benötigte Maß, etwa die flach gemessene Brustbreite zwischen den Achselnähten. Gib die Einheit an und frage bei einer unklaren Zeichnung nach dem Anfangspunkt der Längenmessung. Eine konkrete Frage lässt sich leichter beantworten als eine allgemeine Bitte um die beste Größe.",
+          "Speichere die Antwort beim Produkt und vergleiche sie mit deinem Referenztrikot nach derselben Methode. Schickt der Verkäufer ein Foto mit Maßband, prüfe Anfangs- und Endpunkt und ob der Stoff gedehnt ist. Notiere eine angegebene Toleranz. Damit kannst du beurteilen, ob die Informationen für deine gewünschte Passform ausreichen oder ein besser dokumentiertes Angebot die Entscheidung erleichtert."
+        ]
+      },
+      {
+        "heading": "Kontrolliere Warenkorb und erhaltenes Trikot",
+        "paragraphs": [
+          "Prüfe vor dem Bezahlen Design, Erwachsenen- oder Kinderversion, Größe, Menge und enthaltene Teile im Warenkorb. Kontrolliere den Preis einschließlich Lieferung und speichere Tabelle sowie entscheidungsrelevante Angebotsdetails. Änderst du nach der Größenwahl das Design, wiederhole den Maßvergleich. Jede Änderung des Produkts oder seiner Maße erfordert eine erneute Größenprüfung.",
+          "Vergleiche bei Ankunft Etikett und Bestandteile mit der Bestellung. Lege das Trikot flach hin und wiederhole deine notierte Messmethode. Fotografiere eine erhebliche Abweichung mit sichtbarem Maßband und behalte die Verpackung, während du den geltenden Supportablauf prüfst. Ansprechpartner für die Bestellung ist der Dienst, der die Zahlung erhielt. Angebot, gewählte Tabelle und Maße erklären nachvollziehbar, was bestellt und geliefert wurde."
+        ]
+      }
+    ]
+  }
+]

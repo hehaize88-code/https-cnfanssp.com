@@ -1,0 +1,245 @@
+[
+  {
+    "slug": "hacoo-shipping-cost",
+    "tag": "FRAIS DE LIVRAISON",
+    "title": "Combien coûte la livraison Hacoo ? Vérifier le total du panier",
+    "seoTitle": "Frais de livraison Hacoo et total de la commande",
+    "deck": "Repérez les frais de livraison de votre panier, comparez les réductions et vérifiez le montant final avant de payer, avec un tableau pratique.",
+    "seoDescription": "Vérifiez les frais de port Hacoo pour votre panier et votre adresse. Comparez prix des articles, livraison, réductions et montant final.",
+    "date": "6 novembre 2026",
+    "dateISO": "2026-11-06",
+    "modifiedISO": "2026-11-06",
+    "readTime": "7 min de lecture",
+    "reviewed": "Pages officielles de livraison et de commande consultées le 6 novembre 2026. Utilisez le montant affiché pour votre commande.",
+    "sources": [
+      {
+        "label": "Aide Hacoo sur les frais de livraison",
+        "url": "https://act.hacoo.app/faqshippingfee",
+        "note": "Informations publiées sur la destination et le poids du colis."
+      },
+      {
+        "label": "Livraison Hacoo",
+        "url": "https://web.hacoo.app/en-US/pages/shipping-info",
+        "note": "Politique publique de livraison actuelle."
+      },
+      {
+        "label": "Commander sur Hacoo",
+        "url": "https://act.hacoo.app/act/sara/helpcenter/order1",
+        "note": "Parcours officiel dans l’application, du panier au paiement."
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Trouvez le montant correspondant à votre panier",
+        "paragraphs": [
+          "Pour connaître vos frais de livraison Hacoo, sélectionnez les articles, tailles et quantités exacts, choisissez votre destination et lisez la ligne de livraison du récapitulatif avant de payer. Gardez le sous-total des articles et le montant final visibles ensemble. Le prix sous une photo répond à une partie de la question. Pour décider d’un achat, utilisez le montant demandé pour le panier complet à l’adresse où vous souhaitez le recevoir.",
+          "L’aide tarifaire Hacoo évoque la destination et le poids du colis. Sa politique de livraison précise que les règles tarifaires peuvent évoluer. Consultez ces pages pour le contexte et le récapitulatif pour votre montant. Le répertoire de produits de ce guide indépendant ouvre un catalogue distinct, dont le tarif appartient à son propre service. Pour une commande Hacoo, suivez le panier et le paiement proposés dans Hacoo."
+        ]
+      },
+      {
+        "heading": "Fixez la destination avant de comparer les prix",
+        "paragraphs": [
+          "Vérifiez le pays, le code postal et l’adresse avant de noter un tarif. Une adresse enregistrée peut correspondre à une ancienne commande, à des vacances ou à une autre personne. Si vous la modifiez après avoir comparé deux paniers, recommencez la comparaison. Gardez également la devise visible. Deux montants accompagnés du même symbole peuvent utiliser des devises différentes. Notez le code monétaire à trois lettres quand l’interface le fournit.",
+          "Pour une livraison en France, en Espagne, en Allemagne, en Italie ou au Royaume-Uni, gardez votre destination réelle pendant tout le contrôle. La capture d’un acheteur d’un autre pays peut aider à comprendre la présentation de l’écran, mais renseigne peu sur vos propres frais. Si votre destination est indisponible ou si aucun mode de livraison n’apparaît pour le panier, réglez ce point avant de considérer le montant affiché comme une proposition utilisable."
+        ]
+      },
+      {
+        "heading": "Notez chaque ligne qui fait évoluer le total",
+        "paragraphs": [
+          "Préparez un petit tableau avec la variante choisie et son prix actuel. Ajoutez les quantités, la livraison, les autres frais affichés séparément, les réductions et le total. Conservez la devise indiquée pour chaque ligne. Remplissez le tableau ci-dessous à partir d’une même session de paiement afin qu’un ancien prix produit ne se retrouve pas dans un nouveau calcul.",
+          "Lorsqu’une ligne manque de clarté, recopiez son intitulé exact et consultez l’explication du service. C’est utile lorsqu’une promotion réduit le prix des produits tout en laissant la livraison à payer. Si un montant figure déjà dans le sous-total, l’ajouter une seconde fois surestime la dépense. Faites correspondre votre tableau au total affiché avant de poursuivre. Demandez au service d’expliquer toute différence qui reste incompréhensible."
+        ],
+        "table": {
+          "caption": "Relevez les montants du récapitulatif de commande",
+          "headers": [
+            "Ligne",
+            "Informations à relever"
+          ],
+          "rows": [
+            [
+              "Articles",
+              "Variante choisie, quantité, prix et devise"
+            ],
+            [
+              "Livraison",
+              "Frais pour l’adresse et le mode de livraison sélectionnés"
+            ],
+            [
+              "Autres frais affichés",
+              "Intitulé exact et inclusion éventuelle dans le sous-total"
+            ],
+            [
+              "Réduction",
+              "Somme effectivement déduite de ce panier"
+            ],
+            [
+              "Montant final",
+              "Total demandé avant paiement et heure du contrôle"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Comparez un article avec un panier groupé",
+        "paragraphs": [
+          "Pour voir si un ajout modifie la livraison, notez le total du premier panier, ajoutez le produit envisagé, puis relevez le nouveau récapitulatif. Gardez la même adresse et le même mode de livraison. La différence entre les deux totaux représente la dépense supplémentaire. Elle comprend tous les changements effectués par le paiement, qui peuvent concerner à la fois le nouvel article et la livraison.",
+          "Vous pouvez aussi comparer une commande groupée à deux devis séparés, avec les mêmes quantités et la même destination. Notez les montants complets, y compris les produits. Gardez un article supplémentaire si vous le souhaitez réellement et si le total respecte votre budget. Une baisse du coût moyen par article peut accompagner une dépense totale plus élevée. En revenant au panier choisi, vérifiez que la comparaison n’a pas laissé de quantité supplémentaire sélectionnée."
+        ]
+      },
+      {
+        "heading": "Vérifiez l’effet réel d’une réduction",
+        "paragraphs": [
+          "Si vous disposez d’un code ou d’une offre visible dans votre compte, lisez les conditions et appliquez-la avant d’enregistrer le montant final. Repérez la déduction dans le récapitulatif. Vérifiez le minimum d’achat éventuel, les produits concernés et les conditions liées au compte. Un code trouvé sur les réseaux donne une piste à vérifier. La déduction acceptée indique ce que votre panier obtient réellement.",
+          "Si une offre annonce la livraison gratuite, vérifiez la ligne correspondante après application. Si vous ajoutez un article pour atteindre un seuil annoncé, comparez le total complet avant et après cet ajout. Notez la date du contrôle, car une offre peut expirer. En cas d’échec du code, conservez le message exact et contactez l’assistance habituelle si les conditions sont ambiguës. Aucun code présenté ici n’est annoncé comme valable pour tous les achats."
+        ]
+      },
+      {
+        "heading": "Gardez le prix et le délai dans deux colonnes",
+        "paragraphs": [
+          "Notez la période de livraison estimée à côté du prix de chaque service réellement proposé. L’option la moins chère peut convenir à un achat courant, alors qu’un cadeau attendu à une date précise demande un autre choix. Vérifiez à partir de quel événement le délai commence et si la préparation apparaît séparément. Conservez l’estimation liée à la commande pour pouvoir ensuite décrire un retard avec précision.",
+          "Notre guide de livraison détaille la préparation, le transport et le suivi. Consultez-le pour estimer l’attente. Ici, comparez le prix des services disponibles. Des frais de port bas ne permettent pas à eux seuls de prévoir une arrivée avant un match, un départ ou un anniversaire. Si la période annoncée dépasse votre échéance, changer le panier sera utile seulement si le service propose une autre option adaptée."
+        ]
+      },
+      {
+        "heading": "Comprenez pourquoi le montant a changé",
+        "paragraphs": [
+          "Si le montant actuel diffère d’un précédent relevé, comparez les deux récapitulatifs ligne par ligne. Commencez par les tailles, couleurs, quantités et devise, puis vérifiez destination, livraison et réduction. La fiche peut afficher le prix d’entrée d’une variante alors que le panier en contient une autre. Ce détail explique parfois l’écart avant même d’examiner la livraison.",
+          "Lors d’une comparaison entre services, préparez un tableau distinct pour chacun. Un identifiant produit appartient à son catalogue, et son prix doit être associé aux conditions de livraison de ce service. Si un écart demeure inexpliqué, transmettez à l’assistance l’heure du relevé, les intitulés visibles et les détails de l’article dans son canal privé. Gardez sa réponse avec la commande pour relier l’explication au montant accepté."
+        ]
+      },
+      {
+        "heading": "Conserver un devis que vous pouvez reproduire",
+        "paragraphs": [
+          "Donnez au devis enregistré un nom comprenant la date et la destination. Notez les produits et quantités sélectionnés. Une capture du seul total laisse de côté les informations nécessaires pour expliquer une variation. Enregistrez le récapitulatif avec les commandes habituelles, puis vérifiez que le mode de livraison et la devise apparaissent. Gardez les coordonnées personnelles dans un dossier privé.",
+          "Si vous revenez au panier quelques jours plus tard, relisez chaque ligne avant de réutiliser votre budget. Le stock, les variantes ou une offre liée au compte peuvent avoir changé. Conservez le premier document pour la comparaison et datez le nouveau devis séparément. Vous pourrez identifier la ligne modifiée et décider si le nouveau montant complet vous convient toujours."
+        ]
+      },
+      {
+        "heading": "Réglez ces questions avant le paiement",
+        "paragraphs": [
+          "Peut-on connaître la livraison depuis un tableau de liens ? Utilisez-le pour identifier les produits, puis obtenez le montant auprès du service qui traite l’achat. Les frais d’un autre acheteur prédisent-ils les vôtres ? Comparez son panier et sa destination pour comprendre le contexte, puis vérifiez votre paiement. Une remise couvre-t-elle automatiquement le port ? Regardez quelle ligne a changé après application. Chaque réponse dépend d’un écran précis à consulter.",
+          "Avant de payer, revérifiez adresse, quantités, tailles, devise, livraison, réduction et total. Enregistrez le récapitulatif avec les commandes normalement disponibles et gardez ce document privé. Après achat, conservez la confirmation avec ce relevé. Vous disposerez ainsi d’un point de départ clair pour le suivi, la vérification d’un prélèvement et l’évaluation d’un éventuel prochain achat."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "hacoo-football-shirts-sizing",
+    "tag": "MAILLOTS DE FOOT",
+    "title": "Maillots de foot Hacoo et choix de la bonne taille",
+    "seoTitle": "Maillots de foot Hacoo et guide des tailles",
+    "deck": "Comparez un maillot avec celui que vous portez déjà, lisez ses mesures et vérifiez le modèle ou l’ensemble exact derrière le lien produit.",
+    "seoDescription": "Choisissez la taille d’un maillot de foot en comparant largeur, longueur et manches. Vérifiez ensembles adultes et enfants, variantes et liens.",
+    "date": "6 novembre 2026",
+    "dateISO": "2026-11-06",
+    "modifiedISO": "2026-11-06",
+    "readTime": "7 min de lecture",
+    "reviewed": "Méthode d’achat révisée le 6 novembre 2026. Les exemples de mesures sont illustratifs et doivent être comparés à la fiche choisie.",
+    "sources": [
+      {
+        "label": "Commander sur Hacoo",
+        "url": "https://act.hacoo.app/act/sara/helpcenter/order1",
+        "note": "Parcours officiel pour un achat effectué dans Hacoo."
+      },
+      {
+        "label": "Contacter Hacoo",
+        "url": "https://web.hacoo.app/en-US/pages/contact-us",
+        "note": "Canaux officiels actuels d’assistance de l’application."
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Prenez un maillot dont la coupe vous convient",
+        "paragraphs": [
+          "Pour choisir un maillot de foot Hacoo, comparez les mesures de la fiche sélectionnée avec celles d’un modèle similaire qui vous va bien. Notez la largeur de poitrine et la longueur avant de vous fier à S, M, L ou à un numéro habituel. Le vêtement de référence doit correspondre à l’usage prévu. Un haut d’entraînement ajusté et un maillot porté sur une couche supplémentaire peuvent demander des dimensions différentes pour une même personne.",
+          "Les recherches de maillots et d’ensembles de football Hacoo peuvent mener à des offres différentes. Une photo d’ensemble peut présenter maillot, short et chaussettes alors que l’option choisie ne comprend qu’une pièce. Lisez le nom de l’option et son contenu avant d’étudier la taille. Le répertoire HacooVIP ouvre un catalogue indépendant. Vérifiez donc le service de destination et utilisez les détails de sa fiche pour cet achat."
+        ]
+      },
+      {
+        "heading": "Mesurez à plat avec une méthode constante",
+        "paragraphs": [
+          "Posez votre maillot de référence à plat et lissez-le doucement sans étirer le tissu. Mesurez la largeur de poitrine aux points utilisés dans le schéma de la fiche, puis la longueur selon les mêmes repères de départ et d’arrivée. Notez si la longueur commence à l’épaule près du col ou ailleurs. Pour les manches, conservez aussi la méthode, car une mesure depuis la couture d’épaule diffère d’une mesure depuis le milieu du dos.",
+          "Notez les unités et le vêtement mesuré. Si le tableau indique des mensurations corporelles, comparez-les à vos mensurations prises selon ses instructions. S’il donne des dimensions du vêtement, utilisez celles de votre maillot à plat. Si la seule mention est « poitrine », consultez le schéma ou demandez au vendeur ce qui est mesuré. Largeur à plat et tour de poitrine deviennent faciles à confondre lorsque les indications sont incomplètes."
+        ],
+        "table": {
+          "caption": "Mesures à comparer au tableau de la taille choisie",
+          "headers": [
+            "Mesure",
+            "Méthode à conserver"
+          ],
+          "rows": [
+            [
+              "Largeur de poitrine",
+              "Mesurer à plat entre les mêmes points du maillot"
+            ],
+            [
+              "Longueur",
+              "Partir du même point à l’épaule ou au col"
+            ],
+            [
+              "Manche",
+              "Vérifier départ à la couture ou au milieu du dos"
+            ],
+            [
+              "Largeur du bas",
+              "Comparer l’ouverture si la coupe ajustée compte"
+            ],
+            [
+              "Unités",
+              "Convertir pouces et centimètres avant comparaison"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Comparez les écarts entre deux tailles",
+        "paragraphs": [
+          "Voici un exemple pédagogique. Supposons que votre maillot préféré mesure 52 cm de large et 70 cm de long. Le modèle A est annoncé à 50 cm sur 69 cm et le B à 53 cm sur 72 cm. A est plus étroit et légèrement plus court que votre référence. B est plus large et plus long. Ces écarts permettent de poser une question précise sur le rendu souhaité avant de choisir une lettre.",
+          "Répétez la comparaison pour les dimensions importantes pour vous. Une largeur adaptée peut s’accompagner d’une longueur excessive. Vérifiez la tolérance de mesure éventuellement annoncée et son application aux dimensions du vêtement. Gardez une marge d’incertitude dans la décision. Le tissu, la forme et la façon dont le maillot repose sur les épaules influencent également le confort une fois porté."
+        ]
+      },
+      {
+        "heading": "Lisez la coupe avec le tableau des mesures",
+        "paragraphs": [
+          "Une fiche peut utiliser des termes comme ajusté, classique, ample, joueur ou supporter pour décrire une version. Lisez la description de l’option choisie et son propre tableau. Un même terme peut désigner des coupes différentes selon les produits. Regardez la forme des épaules, les ouvertures des manches et le rétrécissement éventuel à la taille, puis comparez-les à votre référence et au résultat souhaité.",
+          "Essayez quelques mouvements avec votre maillot actuel pour identifier les dimensions prioritaires. Levez les bras, asseyez-vous et portez la couche prévue en dessous. Notez où le tissu tire ou remonte. Servez-vous de ces observations pour évaluer les mesures du candidat. Un avis conseillant de prendre une taille au-dessus devient plus exploitable lorsque son auteur précise le produit, la version, sa taille de référence et le résultat obtenu."
+        ]
+      },
+      {
+        "heading": "Vérifiez séparément adultes et ensembles enfants",
+        "paragraphs": [
+          "Pour un ensemble enfant, prenez les mensurations actuelles et un vêtement confortable. L’âge aide à trouver une rubrique, tandis que les dimensions permettent de comparer les options. Si maillot et short sont inclus, vérifiez chacun. Notez la méthode de mesure de la ceinture, l’amplitude d’étirement annoncée si elle existe et la longueur du short, en plus de la largeur et de la longueur du maillot.",
+          "Pour un événement futur, tenez compte du temps avant utilisation sans appliquer une marge de croissance universelle. Demandez au parent ou à l’enfant quelle coupe et quelles couches sont prévues. Un ensemble complet doit présenter ses pièces et un tableau adapté à chacune. Si une même fiche mélange photos adultes et enfants avec un tableau unique, clarifiez les options auxquelles il s’applique avant de choisir."
+        ]
+      },
+      {
+        "heading": "Faites correspondre le lien au modèle exact",
+        "paragraphs": [
+          "Ouvrez le lien enregistré et comparez les photos actuelles de face et de dos, la couleur, le col, les manches et le nom de l’option. Si le modèle est associé à une saison ou à une collection, gardez cette mention dans votre sélection. Vérifiez que l’option choisie correspond à la photo principale. Plusieurs designs peuvent partager une galerie, et un lien fonctionnel peut s’ouvrir sur une autre option.",
+          "Lisez les détails de toute personnalisation avant de saisir un nom ou un numéro. Vérifiez orthographe, emplacement, supplément éventuel et instructions de commande. Une photo de lettres imprimées ne suffit pas à établir que le marquage est inclus. Pour un produit sous licence, consultez les informations explicites du vendeur et les preuves d’autorisation vérifiables. Un écusson ou un nom d’équipe visible fournit à lui seul des informations limitées sur cette autorisation."
+        ]
+      },
+      {
+        "heading": "Utilisez photos et avis pour des points précis",
+        "paragraphs": [
+          "Cherchez des vues rapprochées du col, des ouvertures de manches, des coutures et des éléments imprimés ou brodés qui comptent dans votre choix. Comparez les photos d’acheteurs après avoir confirmé le même design et la même version. Éclairage et angle modifient l’apparence des couleurs et des proportions. Un avis utile décrit un résultat concret, comme la longueur par rapport à un maillot de référence, avec assez de contexte pour comparer.",
+          "Notez les questions à côté de chaque candidat. Il peut manquer le motif du dos, la largeur d’une taille enfant ou la confirmation que le short est inclus. Si un détail détermine votre choix, demandez-le par le contact proposé par le vendeur ou retenez une option mieux documentée. Vous garderez ainsi une sélection courte, où chaque photo reste associée à une vraie comparaison de produit."
+        ]
+      },
+      {
+        "heading": "Demander précisément la mesure manquante",
+        "paragraphs": [
+          "Quand le tableau est incomplet, posez une question sur la variante exacte envisagée. Indiquez la taille et la mesure recherchée, par exemple la largeur à plat entre les coutures des aisselles. Précisez les unités et demandez le point de départ de la longueur si le schéma reste ambigu. Une demande ciblée est plus facile à traiter qu’une question générale sur la meilleure taille.",
+          "Conservez la réponse avec la fiche et comparez-la à votre maillot de référence selon la même méthode. Si le vendeur transmet une photo avec un mètre, vérifiez les points de départ et d’arrivée et si le tissu est tendu. Notez la tolérance annoncée. Vous pourrez évaluer si ces éléments suffisent pour la coupe recherchée ou choisir une autre option mieux documentée."
+        ]
+      },
+      {
+        "heading": "Contrôlez le panier puis le maillot reçu",
+        "paragraphs": [
+          "Avant de payer, vérifiez design, version adulte ou enfant, taille, quantité et pièces incluses dans le panier. Contrôlez le prix avec livraison et gardez le tableau des tailles et les détails utilisés pour choisir. Si vous avez changé le design après la taille, reprenez la comparaison. Réévaluez le choix chaque fois que le produit ou ses mesures changent.",
+          "À réception, comparez l’étiquette et les pièces à la commande, puis posez le maillot à plat et répétez la méthode enregistrée. Photographiez clairement un écart important avec le mètre visible et gardez l’emballage pendant la vérification du recours applicable. Pour l’assistance commande, contactez le service qui a reçu le paiement. La fiche, le tableau sélectionné et vos mesures expliquent précisément ce qui a été commandé et reçu."
+        ]
+      }
+    ]
+  }
+]

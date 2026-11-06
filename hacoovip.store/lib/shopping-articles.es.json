@@ -1,0 +1,245 @@
+[
+  {
+    "slug": "hacoo-shipping-cost",
+    "tag": "GASTOS DE ENVÍO",
+    "title": "Cuánto cuesta el envío de Hacoo y cómo comprobar el total",
+    "seoTitle": "Gastos de envío Hacoo y total del pedido",
+    "deck": "Localiza el coste de entrega de tu carrito, compara descuentos y comprueba el importe final antes de pagar con una tabla práctica.",
+    "seoDescription": "Comprueba los gastos de envío Hacoo para tu carrito y destino. Compara artículos, entrega, descuentos e importe final con una tabla sencilla.",
+    "date": "6 de noviembre de 2026",
+    "dateISO": "2026-11-06",
+    "modifiedISO": "2026-11-06",
+    "readTime": "7 min de lectura",
+    "reviewed": "Páginas oficiales de envío y compra consultadas el 6 de noviembre de 2026. Utiliza el presupuesto que aparece en tu pedido.",
+    "sources": [
+      {
+        "label": "Ayuda Hacoo sobre gastos de envío",
+        "url": "https://act.hacoo.app/faqshippingfee",
+        "note": "Información publicada sobre destino y peso del paquete."
+      },
+      {
+        "label": "Envío y entrega Hacoo",
+        "url": "https://web.hacoo.app/en-US/pages/shipping-info",
+        "note": "Política pública de envío vigente."
+      },
+      {
+        "label": "Cómo comprar en Hacoo",
+        "url": "https://act.hacoo.app/act/sara/helpcenter/order1",
+        "note": "Ruta oficial desde la aplicación y el carrito hasta el pago."
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Busca el presupuesto de tu carrito",
+        "paragraphs": [
+          "Para conocer cuánto cuesta el envío de Hacoo, selecciona los artículos, tallas y cantidades exactos, elige el destino y lee la línea de entrega del resumen antes de pagar. Mantén visibles el subtotal de los productos y el total final. El precio bajo una fotografía responde a una parte de la pregunta. La cifra útil para decidir es la cantidad solicitada por todo el carrito en la dirección donde quieres recibirlo.",
+          "La ayuda de tarifas Hacoo menciona destino y peso. Su política de entrega indica que las reglas de transporte pueden cambiar. Usa esas páginas como contexto y el resumen para tu presupuesto. El directorio de esta guía independiente abre otro catálogo, cuya cotización corresponde a ese servicio. Para comprar dentro de Hacoo, sigue el carrito y la pantalla de pago disponibles en la propia aplicación."
+        ]
+      },
+      {
+        "heading": "Configura el destino antes de comparar precios",
+        "paragraphs": [
+          "Comprueba país, código postal y dirección antes de anotar un coste. Una dirección guardada puede pertenecer a un pedido anterior, unas vacaciones u otra persona. Si la cambias después de comparar dos carritos, repite la comparación. Mantén también visible la moneda. Dos cantidades con el mismo símbolo pueden usar monedas distintas. Guarda el código de tres letras cuando la interfaz lo facilite.",
+          "Para una entrega en España, Francia, Alemania, Italia o Reino Unido, utiliza tu destino real durante toda la revisión. La captura de alguien en otro país ayuda a entender la pantalla, pero ofrece poca evidencia sobre tu tarifa. Si no puedes seleccionar el destino o el carrito no ofrece ningún método de entrega, resuelve ese punto antes de considerar el importe mostrado como un presupuesto utilizable."
+        ]
+      },
+      {
+        "heading": "Anota todas las líneas que cambian el total",
+        "paragraphs": [
+          "Prepara una tabla con la variante elegida junto a su precio actual. Añade cantidades, transporte, otros cargos desglosados, descuentos e importe final. Conserva la moneda mostrada en cada línea. Rellena la tabla siguiente con los valores de una misma sesión de pago para evitar mezclar un precio antiguo con un cálculo nuevo.",
+          "Si alguna línea resulta confusa, copia su nombre exacto y consulta la explicación del servicio. Es útil cuando una promoción descuenta productos pero deja el envío pendiente de pago. Si un cargo ya está incluido en el subtotal, sumarlo otra vez exagera el coste. Haz que tu tabla coincida con el importe final mostrado antes de continuar. Una diferencia sin explicación justifica pedir al servicio que aclare su cálculo."
+        ],
+        "table": {
+          "caption": "Registra los valores del resumen del pedido",
+          "headers": [
+            "Línea",
+            "Qué anotar"
+          ],
+          "rows": [
+            [
+              "Artículos",
+              "Variante elegida, cantidad, precio y moneda"
+            ],
+            [
+              "Envío",
+              "Coste para la dirección y opción de entrega seleccionadas"
+            ],
+            [
+              "Otros cargos mostrados",
+              "Nombre exacto e inclusión previa en el subtotal"
+            ],
+            [
+              "Descuento",
+              "Cantidad realmente descontada de este carrito"
+            ],
+            [
+              "Importe final",
+              "Total solicitado antes del pago y momento de la consulta"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Compara un artículo con el carrito combinado",
+        "paragraphs": [
+          "Para saber si añadir un producto cambia el envío, registra el total inicial, añade el artículo previsto y anota el nuevo resumen. Mantén la misma dirección y opción de entrega. Resta el primer total final del segundo para conocer la cantidad adicional que pagarías. La diferencia incluye todos los cambios del cálculo, tanto el nuevo artículo como cualquier variación del transporte.",
+          "También puedes comparar una compra conjunta con dos presupuestos separados usando las mismas cantidades y destino. Anota los totales completos. Conserva un artículo adicional si realmente lo quieres y el importe conjunto cabe en tu presupuesto. Un coste medio inferior por producto puede coexistir con una salida de dinero mayor. Al volver al carrito preferido, comprueba que la comparación no haya dejado unidades adicionales seleccionadas."
+        ]
+      },
+      {
+        "heading": "Comprueba qué cambia un descuento",
+        "paragraphs": [
+          "Si tienes un código o una oferta visible en tu cuenta, lee las condiciones y aplícalo antes de guardar el presupuesto final. Busca la deducción en el resumen. Comprueba si exige compra mínima, determinados productos o una condición concreta de la cuenta. Un código publicado en redes ofrece una posibilidad que revisar. La deducción aceptada muestra lo que recibe realmente ese carrito.",
+          "Si una oferta anuncia envío gratis, revisa la línea de entrega después de aplicarla. Cuando añadas algo para alcanzar un umbral, compara el importe completo antes y después. Guarda la fecha de consulta porque las promociones pueden caducar. Si falla el código, conserva el mensaje exacto y usa el soporte habitual cuando sus condiciones sean ambiguas. Esta guía no presenta ningún código como válido para todas las compras."
+        ]
+      },
+      {
+        "heading": "Separa el coste del plazo de entrega",
+        "paragraphs": [
+          "Anota el intervalo estimado junto al precio de cada método que realmente se ofrezca. La opción más económica puede servir para una compra habitual de ropa, mientras que un regalo con fecha necesita otro criterio. Comprueba desde qué momento comienza el plazo y si aparece un tiempo de preparación aparte. Conserva la estimación asociada a tu pedido para describir después cualquier retraso con precisión.",
+          "Nuestra guía de entrega explica preparación, transporte y seguimiento con más detalle. Consúltala cuando necesites valorar la espera. Aquí se compara el precio de las opciones disponibles. Una tarifa baja por sí sola aporta poca información sobre una llegada antes de un partido, unas vacaciones o un cumpleaños. Si el intervalo mostrado supera tu fecha límite, otra configuración del carrito solo ayudará cuando ofrezca un servicio adecuado diferente."
+        ]
+      },
+      {
+        "heading": "Averigua por qué cambió el importe",
+        "paragraphs": [
+          "Si la cotización actual difiere de una anterior, compara los dos resúmenes línea por línea. Empieza por tallas, colores, cantidades y moneda, después dirección, entrega y descuento. Una ficha puede mostrar el precio inicial de una variante mientras el carrito contiene otra. Revisar ese detalle suele aclarar diferencias antes de investigar la línea de envío.",
+          "Al comparar servicios, utiliza una tabla independiente para cada uno. Un identificador pertenece al catálogo de destino y su precio necesita las condiciones de envío correspondientes. Si persiste un cambio inexplicable, facilita al soporte la hora del presupuesto, los nombres visibles y los detalles del producto mediante su canal privado. Guarda la respuesta con el pedido para relacionar la explicación con el importe que aprobaste."
+        ]
+      },
+      {
+        "heading": "Guarda un presupuesto que puedas reproducir",
+        "paragraphs": [
+          "Pon al presupuesto un nombre que incluya fecha y destino. Anota productos y cantidades seleccionados. Una captura del total por sí sola omite la información necesaria para explicar cambios. Guarda el resumen con los controles habituales y verifica que muestre método de entrega y moneda. Conserva los datos personales de la dirección en privado.",
+          "Si vuelves al carrito días después, revisa todas las líneas antes de reutilizar tu presupuesto. Las existencias, variantes o una oferta de la cuenta pueden haber cambiado. Mantén el registro anterior para comparar y fecha el nuevo por separado. Así podrás identificar la línea modificada y decidir si el importe completo actualizado sigue encajando en tu presupuesto."
+        ]
+      },
+      {
+        "heading": "Resuelve estas preguntas antes de pagar",
+        "paragraphs": [
+          "¿Puedes conocer el envío solo desde una hoja de productos? Utilízala para identificar artículos y pide el presupuesto al servicio que tramita la compra. ¿Sirve la tarifa de otro comprador para predecir la tuya? Compara destino y carrito como contexto y comprueba después tu pago. ¿Un descuento cubre automáticamente la entrega? Confirma qué línea cambia al aplicarlo. Cada respuesta depende de una pantalla concreta que puedes revisar.",
+          "Antes del pago, confirma otra vez dirección, cantidades, tallas, moneda, transporte, descuento y total. Guarda el resumen usando las opciones normales del servicio y conserva el documento de forma privada. Después de comprar, archiva la confirmación junto al presupuesto. Tendrás un punto de partida claro para seguir la entrega, revisar un cargo y decidir si conviene añadir algún producto en una compra futura."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "hacoo-football-shirts-sizing",
+    "tag": "CAMISETAS DE FÚTBOL",
+    "title": "Camisetas de fútbol Hacoo y cómo elegir la talla",
+    "seoTitle": "Camisetas de fútbol Hacoo y guía de tallas",
+    "deck": "Compara la camiseta con una que ya tengas, interpreta sus medidas y verifica el modelo o la equipación exacta detrás del enlace.",
+    "seoDescription": "Elige talla comparando ancho de pecho, largo y mangas. Revisa equipaciones de adultos y niños, variantes y enlaces antes de pedir.",
+    "date": "6 de noviembre de 2026",
+    "dateISO": "2026-11-06",
+    "modifiedISO": "2026-11-06",
+    "readTime": "7 min de lectura",
+    "reviewed": "Método de compra revisado el 6 de noviembre de 2026. Los ejemplos de medidas son ilustrativos y deben compararse con la ficha seleccionada.",
+    "sources": [
+      {
+        "label": "Cómo comprar en Hacoo",
+        "url": "https://act.hacoo.app/act/sara/helpcenter/order1",
+        "note": "Ruta oficial para una compra realizada dentro de Hacoo."
+      },
+      {
+        "label": "Contacto Hacoo",
+        "url": "https://web.hacoo.app/en-US/pages/contact-us",
+        "note": "Canales oficiales actuales de asistencia de la aplicación."
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Empieza por una camiseta cuyo ajuste te guste",
+        "paragraphs": [
+          "Para elegir una camiseta de fútbol Hacoo, compara las medidas de la ficha seleccionada con una prenda similar que te siente bien. Anota ancho de pecho y largo antes de confiar en S, M, L o una numeración conocida. La referencia debe corresponder al uso previsto. Una camiseta de entrenamiento ajustada y otra amplia para llevar sobre una capa pueden necesitar medidas diferentes para la misma persona.",
+          "Las búsquedas de camisetas y equipaciones Hacoo pueden conducir a productos distintos. Una foto puede mostrar camiseta, pantalón y medias, mientras la opción seleccionada incluye una sola pieza. Lee el nombre de la variante y su contenido antes de estudiar la talla. El directorio HacooVIP abre un catálogo independiente. Identifica el servicio de destino y utiliza la información de su ficha para esa compra."
+        ]
+      },
+      {
+        "heading": "Mide sobre una superficie plana de forma consistente",
+        "paragraphs": [
+          "Extiende la camiseta de referencia y alisa suavemente el tejido sin estirarlo. Mide el pecho en línea recta entre los puntos usados en el dibujo de la ficha y después el largo con los mismos puntos de inicio y final. Anota si comienza en el hombro junto al cuello o en otro lugar. Conserva también el método de la manga, porque medir desde la costura del hombro y desde el centro de la espalda produce distancias distintas.",
+          "Anota unidades y prenda utilizada. Si la tabla contiene medidas corporales, compáralas con las tuyas tomadas según sus instrucciones. Si indica dimensiones de la camiseta, usa las medidas de tu prenda extendida. Cuando solo diga «pecho», consulta el dibujo o pregunta qué magnitud describe. Un ancho en plano y un contorno pueden confundirse fácilmente cuando falta información sobre el método."
+        ],
+        "table": {
+          "caption": "Medidas que debes comparar con la tabla elegida",
+          "headers": [
+            "Medida",
+            "Mantén el mismo método"
+          ],
+          "rows": [
+            [
+              "Ancho de pecho",
+              "Mide en plano entre puntos equivalentes"
+            ],
+            [
+              "Largo",
+              "Usa el mismo punto de inicio en hombro o cuello"
+            ],
+            [
+              "Manga",
+              "Comprueba costura del hombro o centro de la espalda"
+            ],
+            [
+              "Ancho inferior",
+              "Compara la abertura si buscas un ajuste ceñido"
+            ],
+            [
+              "Unidades",
+              "Convierte pulgadas y centímetros antes de comparar"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Decide entre dos tallas usando las diferencias",
+        "paragraphs": [
+          "Este es un ejemplo orientativo. Imagina que tu camiseta preferida mide 52 cm de pecho en plano y 70 cm de largo. La opción A indica 50 por 69 cm y la B, 53 por 72 cm. A resulta más estrecha y algo más corta. B es más ancha y larga. Las diferencias te permiten valorar el ajuste concreto antes de seleccionar una letra automáticamente.",
+          "Repite la comparación para las dimensiones importantes para ti. Un pecho adecuado puede acompañarse de un largo excesivo. Consulta la tolerancia de medición declarada, si existe, y confirma si corresponde a las dimensiones de la prenda. Mantén un margen de incertidumbre al interpretar la tabla. El tejido, la forma y cómo descansa la camiseta sobre los hombros también influyen en la comodidad al usarla."
+        ]
+      },
+      {
+        "heading": "Lee la descripción del corte junto a la tabla",
+        "paragraphs": [
+          "Las fichas pueden usar términos como slim, regular, holgado, jugador o aficionado para describir una versión. Lee la explicación de la opción elegida y consulta su tabla específica. La misma palabra puede aparecer en productos con cortes diferentes. Observa hombros, aberturas de mangas y estrechamiento de cintura, y compáralos con tu referencia y con el ajuste que buscas.",
+          "Prueba movimientos con la camiseta que ya tienes para identificar las dimensiones prioritarias. Levanta los brazos, siéntate y ponte la capa que usarías debajo. Anota dónde tira o se sube. Usa esas observaciones para evaluar la candidata. Un consejo como «pide una talla más» resulta más aprovechable cuando identifica el mismo producto, la versión, la talla de referencia del comprador y el resultado que obtuvo."
+        ]
+      },
+      {
+        "heading": "Revisa adultos y equipaciones infantiles por separado",
+        "paragraphs": [
+          "Para una equipación infantil, utiliza medidas actuales y una prenda cómoda. La edad orienta hacia una sección del catálogo, mientras las dimensiones permiten comparar opciones. Si se incluyen camiseta y pantalón, revisa ambos. Registra cómo se mide la cintura, el intervalo de elasticidad si se indica y el largo del pantalón, además del ancho y largo de la camiseta.",
+          "Si compras para una fecha futura, considera el tiempo hasta usarla sin aplicar una previsión universal de crecimiento. Pregunta al niño o a la persona responsable por el ajuste y las capas previstas. La equipación debe explicar las piezas incluidas y ofrecer medidas pertinentes para ellas. Si una ficha comparte tabla entre fotos infantiles y adultas, aclara a qué opciones corresponde antes de elegir talla."
+        ]
+      },
+      {
+        "heading": "Relaciona el enlace con el diseño y la variante exactos",
+        "paragraphs": [
+          "Abre el enlace guardado y compara fotos actuales delantera y trasera, color, cuello, mangas y nombre de la variante. Si el diseño se identifica por temporada o colección, conserva ese dato en tu selección. Revisa si has elegido la camiseta de la foto principal. Una galería puede reunir varios diseños y un enlace operativo puede abrir con otra opción seleccionada.",
+          "Lee las condiciones de personalización antes de escribir un nombre o dorsal. Confirma ortografía, ubicación, suplemento si aparece e instrucciones del pedido. Una foto con letras impresas no demuestra por sí sola que el marcaje esté incluido. Si buscas mercancía licenciada, utiliza información explícita del vendedor y pruebas verificables de autorización. Un escudo conocido o el nombre de un equipo en una foto aportan evidencia limitada por sí solos."
+        ]
+      },
+      {
+        "heading": "Utiliza fotos y reseñas para comprobaciones concretas",
+        "paragraphs": [
+          "Busca primeros planos del cuello, mangas, costuras y detalles impresos o bordados que importen para tu elección. Comprueba que las fotos de compradores corresponden al mismo diseño y versión antes de compararlas. La luz y el ángulo cambian la apariencia de colores y proporciones. Una reseña útil describe un resultado concreto, como el largo respecto a una camiseta propia, y aporta contexto suficiente para compararlo.",
+          "Guarda las preguntas junto a cada candidata. Tal vez falte confirmar la espalda, el ancho infantil o si incluye pantalón. Si el dato condiciona la compra, consúltalo por la vía del vendedor o elige una opción mejor documentada. Así mantienes una selección manejable y cada fotografía sigue asociada a información que realmente ayuda a comparar productos."
+        ]
+      },
+      {
+        "heading": "Pide la medida que falta con precisión",
+        "paragraphs": [
+          "Si la tabla está incompleta, pregunta por la variante exacta que estás considerando. Indica la talla y explica la medida necesaria, por ejemplo el ancho de pecho en plano entre las costuras de las axilas. Especifica las unidades y pregunta desde dónde se mide el largo cuando el dibujo no lo aclara. Una pregunta concreta permite responder mejor que una solicitud general sobre la talla ideal.",
+          "Guarda la respuesta con la ficha y compárala con tu camiseta de referencia usando el mismo método. Si el vendedor envía una foto con cinta métrica, comprueba dónde empieza y termina y si el tejido está estirado. Anota la tolerancia indicada. Después podrás valorar si la información basta para el ajuste deseado o si otra opción mejor documentada facilita la elección."
+        ]
+      },
+      {
+        "heading": "Confirma el carrito y revisa la camiseta recibida",
+        "paragraphs": [
+          "Antes de pagar, revisa diseño, versión adulta o infantil, talla, cantidad y piezas incluidas. Comprueba el precio con entrega y guarda la tabla y los detalles usados para decidir. Si has cambiado el diseño después de elegir talla, repite la comparación. Revisa la talla cada vez que cambie el producto o sus medidas.",
+          "Al recibirla, compara etiqueta y contenido con el pedido, extiende la camiseta y repite el método anotado. Fotografía claramente una diferencia importante con la cinta métrica visible y conserva el embalaje mientras compruebas el procedimiento de asistencia aplicable. Contacta para ello con el servicio que recibió el pago. La ficha, la tabla elegida y tus medidas explican qué pediste y qué llegó."
+        ]
+      }
+    ]
+  }
+]

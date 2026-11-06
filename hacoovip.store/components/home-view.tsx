@@ -3,6 +3,7 @@ import { getArticles } from "@/lib/articles";
 import { categories, hrefFor, liveCategory, liveProduct, products, type Locale } from "@/lib/site-data";
 import { localizedCopy, translate } from "@/lib/i18n";
 import { SiteShell } from "./site-shell";
+import { ShoppingGuides } from "./shopping-guides";
 
 const homeFaqs = [
   ["What does Hacoo officially say it is?", "Hacoo's About page and Google Play listing describe an open content-sharing community for sharing life, discovering content, rating products, brands and services, and connecting with people and businesses."],
@@ -36,7 +37,7 @@ export function HomeView({ locale = "en" }: { locale?: Locale }) {
       <main className="home-main">
         <section className="hero-shell">
           <div className="hero-copy">
-            <span className="section-kicker">{tx("HACOO / RESEARCH BRIEF / 2026")}</span>
+            <span className="section-kicker">{c.eyebrow}</span>
             <h1>{c.heroTitle}</h1><p>{c.heroBody}</p>
             <form className="hero-search" action="https://www.cnfanshp.com/search.html" method="get" target="_blank">
               <label className="sr-only" htmlFor="hero-search">{c.search}</label>
@@ -70,6 +71,8 @@ export function HomeView({ locale = "en" }: { locale?: Locale }) {
             </a>
           ))}
         </section>
+
+        <ShoppingGuides locale={activeLocale} />
 
         <section className="fact-strip" aria-label={tx("Hacoo facts checked August 29 2026")}>
           <Link href={hrefFor(activeLocale, "guide")}><small>{tx("OFFICIAL POSITIONING")}</small><strong>{tx("Community + discovery")}</strong><span>{tx("Hacoo says users can share, review and connect. Read the source check →")}</span></Link>

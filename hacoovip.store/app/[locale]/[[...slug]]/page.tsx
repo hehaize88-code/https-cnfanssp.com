@@ -27,25 +27,25 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const path = slug.join("/");
   const article = slug[0] === "articles" && slug[1] ? getArticle(slug[1], locale) : undefined;
   const titles: Record<string, string> = {
-    spreadsheet: "Hacoo Product-Route Index",
+    spreadsheet: "Hacoo Product Links: Filter Shoes, Clothing & Accessories",
     finds: "Hacoo Product-Route Selection",
     guide: "Hacoo App Facts & Research Guide",
     qc: "Hacoo Photo Evidence Checklist",
-    shipping: "Reading Hacoo Delivery Estimates",
+    shipping: "Hacoo Delivery Times and Shipping Costs",
     faq: "Hacoo App Facts FAQ",
     articles: "Hacoo Source-Checked Buyer Guides",
   };
   const descriptions: Record<string, string> = {
-    spreadsheet: "Independent visual product routes with image-matched destinations and a clear explanation that this is not an official Hacoo feature.",
+    spreadsheet: "Compare product photos, categories and reference prices in the independent HacooVIP index. Check sizing and shipping guides before opening a listing.",
     finds: "A compact selection with matching lead images, transparent categories and approximate USD guide prices to recheck on the live destination.",
     guide: "Current Hacoo app identity and public facts, clearly separated from this independent product-route guide.",
     qc: "A practical checklist for reading product-photo evidence without turning images or reviews into guarantees.",
-    shipping: "How to read Hacoo's published delivery ranges, processing time and after-sales wording as dated guidance rather than a promise.",
+    shipping: "Hacoo delivery times, preparation and shipping costs explained. Check destination estimates, compare the final total and find tracking and return guidance.",
     faq: "Concise, dated answers about Hacoo app identity, public policies, independent product routes and evidence limits.",
     articles: "Source-checked guides that separate current official statements, dated public records and independent buyer guidance.",
   };
   const trustPage = slug.length === 1 && trustRouteNames.includes(slug[0] as TrustRouteName) ? getTrustPage(locale, slug[0] as TrustRouteName) : undefined;
-  const rawTitle = trustPage?.title ?? article?.seoTitle ?? (path ? titles[slug[0]] : localizedCopy(locale).heroTitle);
+  const rawTitle = trustPage?.title ?? article?.seoTitle ?? (path ? titles[slug[0]] : localizedCopy(locale).seoTitle);
   const rawDescription = trustPage?.description ?? article?.seoDescription ?? (path ? descriptions[slug[0]] : localizedCopy(locale).heroBody);
   return {
     title: translate(locale, rawTitle),

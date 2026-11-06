@@ -5,7 +5,7 @@ export const dynamic = "force-static";
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = "https://hacoovip.store";
   const paths = [
-    ...["", ...routeNames].map(path => ({ path, modified: "2026-10-12" })),
+    ...["", ...routeNames].map(path => ({ path, modified: ["", "spreadsheet", "shipping", "articles"].includes(path) ? "2026-11-06" : "2026-10-12" })),
     ...articles.map(a => ({ path: `articles/${a.slug}`, modified: a.modifiedISO ?? a.dateISO ?? "2026-08-29" })),
   ];
   return locales.flatMap(locale => paths.map(({path,modified}) => ({

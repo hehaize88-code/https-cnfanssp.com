@@ -6,6 +6,12 @@ import discoveryEs from "./discovery-articles.es.json";
 import discoveryFr from "./discovery-articles.fr.json";
 import discoveryIt from "./discovery-articles.it.json";
 import priorityArticlesData from "./priority-articles.json";
+import shoppingEn from "./shopping-articles.en.json";
+import shoppingDe from "./shopping-articles.de.json";
+import shoppingEs from "./shopping-articles.es.json";
+import shoppingFr from "./shopping-articles.fr.json";
+import shoppingIt from "./shopping-articles.it.json";
+import shoppingUpdates from "./shopping-updates.json";
 
 export type Article = {
   slug: string;
@@ -21,7 +27,7 @@ export type Article = {
   reviewed?: string;
   image?: { src: string; alt: string; caption: string };
   sources?: { label: string; url: string; note: string }[];
-  sections: { heading: string; paragraphs: string[] }[];
+  sections: { heading: string; paragraphs: string[]; table?: { caption: string; headers: string[]; rows: string[][] } }[];
 };
 
 const existingArticles: Article[] = [
@@ -196,7 +202,7 @@ const existingArticles: Article[] = [
     sources: [
       { label: "Hacoo — About Us", url: "https://www.hacoo.app/en-US/pages/about-us", note: "Confirms that Hacoo describes a community, review and discovery product—not a native spreadsheet feature." },
       { label: "Hacoo — Google Play", url: "https://play.google.com/store/apps/details?id=com.saramart.android&hl=en_US", note: "Current official app identity and description." },
-      { label: "Live destination catalogue", url: "https://cnfanssp.com/AllProducts/", note: "Catalogue used for the independent visual index." },
+      { label: "Live destination catalogue", url: "https://www.cnfanshp.com/AllProducts/", note: "Catalogue used for the independent visual index." },
     ],
     sections: [
       { heading: "Start with what the phrase really means", paragraphs: [
@@ -370,23 +376,31 @@ for (const improvement of improvements) {
   }
 }
 const discovery: Record<Locale, Article[]> = { en: discoveryEn, de: discoveryDe, es: discoveryEs, fr: discoveryFr, it: discoveryIt };
-export const articles: Article[] = [...discovery.en, ...existingArticles];
+const shopping: Record<Locale, Article[]> = { en: shoppingEn, de: shoppingDe, es: shoppingEs, fr: shoppingFr, it: shoppingIt };
 export function getArticles(locale: Locale = "en"): Article[] {
-  return [...discovery[locale], ...existingArticles];
+  return [...shopping[locale], ...discovery[locale], ...existingArticles].map(article => {
+    const update = shoppingUpdates[locale].find(item => item.slug === article.slug);
+    if (!update) return article;
+    const { section, ...fields } = update;
+    return { ...article, ...fields, sections: [...article.sections, section] };
+  });
 }
+export const articles: Article[] = getArticles("en");
 export function getArticle(slug: string, locale: Locale = "en") {
   return getArticles(locale).find((article) => article.slug === slug);
 }
 const relatedTopics: Record<string, string[]> = {
+  "hacoo-shipping-cost": ["hacoo-shipping-returns-refunds", "how-to-use-hacoo-spreadsheet", "hacoo-football-shirts-sizing"],
+  "hacoo-football-shirts-sizing": ["hacoo-clothing-finds", "hacoo-shipping-cost", "hacoo-qc-photo-checklist"],
   "hacoo-shoes-finds": ["hacoo-size-shipping-planning", "hacoo-qc-photo-checklist", "how-to-use-hacoo-spreadsheet"],
-  "hacoo-clothing-finds": ["hacoo-size-shipping-planning", "hacoo-qc-photo-checklist", "hacoo-bags-accessories"],
+  "hacoo-clothing-finds": ["hacoo-football-shirts-sizing", "hacoo-shipping-cost", "hacoo-qc-photo-checklist"],
   "hacoo-bags-accessories": ["hacoo-qc-photo-checklist", "how-to-use-hacoo-spreadsheet", "hacoo-clothing-finds"],
   "hacoo-website-vs-app": ["what-is-hacoo-app", "hacoo-item-no-longer-exists", "hacoo-search-no-results"],
   "what-is-hacoo-app": ["hacoo-website-vs-app", "how-to-use-hacoo-spreadsheet", "hacoo-reviews-2026"],
-  "how-to-use-hacoo-spreadsheet": ["hacoo-shoes-finds", "hacoo-clothing-finds", "hacoo-bags-accessories"],
+  "how-to-use-hacoo-spreadsheet": ["hacoo-shipping-cost", "hacoo-clothing-finds", "hacoo-football-shirts-sizing"],
   "hacoo-size-shipping-planning": ["hacoo-shoes-finds", "hacoo-clothing-finds", "hacoo-shipping-returns-refunds"],
   "hacoo-qc-photo-checklist": ["hacoo-shoes-finds", "hacoo-bags-accessories", "hacoo-return-evidence-checklist"],
-  "hacoo-shipping-returns-refunds": ["where-does-hacoo-ship-from", "hacoo-tracking-explained", "hacoo-return-evidence-checklist"],
+  "hacoo-shipping-returns-refunds": ["hacoo-shipping-cost", "hacoo-tracking-explained", "hacoo-return-evidence-checklist"],
   "where-does-hacoo-ship-from": ["hacoo-shipping-returns-refunds", "hacoo-tracking-explained", "hacoo-order-delayed-or-lost"],
   "hacoo-tracking-explained": ["hacoo-order-delayed-or-lost", "where-does-hacoo-ship-from", "hacoo-return-evidence-checklist"],
   "hacoo-order-delayed-or-lost": ["hacoo-tracking-explained", "hacoo-shipping-returns-refunds", "hacoo-return-evidence-checklist"],

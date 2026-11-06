@@ -1,18 +1,19 @@
 import Link from "next/link";
-import { getArticles } from "@/lib/articles";
+import { getArticle, getArticles } from "@/lib/articles";
 import { hrefFor, liveProduct, products, trustRouteNames, type Locale, type NavRouteName, type RouteName, type TrustRouteName } from "@/lib/site-data";
 import { localizedCopy, translate } from "@/lib/i18n";
 import { ProductCard } from "./home-view";
 import { SiteShell } from "./site-shell";
 import { SpreadsheetFilter } from "./spreadsheet-filter";
 import { TrustView } from "./trust-view";
+import { ShoppingGuides } from "./shopping-guides";
 
 const pageMeta: Record<NavRouteName, { kicker: string; title: string; intro: string }> = {
-  spreadsheet: { kicker: "SEARCH INTENT / SOURCE-CHECKED 28 AUG 2026", title: "Hacoo Spreadsheet: a visual index, not an official Hacoo feature", intro: "Hacoo's official website and app-store descriptions present a content-sharing community and marketplace. They do not describe a native spreadsheet. This independent index answers the separate search need for organised product routes without pretending otherwise." },
+  spreadsheet: { kicker: "PRODUCT LINKS / CATEGORY FILTERS", title: "Browse product links by category", intro: "Filter shoes, clothing and accessories, compare the photos and reference prices, then open the independent catalog for the current variant and availability. Use the guides below to check sizes and the complete delivery total." },
   finds: { kicker: "CURATED / IMAGE-MATCHED 28 AUG 2026", title: "Hacoo finds selected for a checkable product trail", intro: "A deliberately small set of products. Each card shows the same lead image as its destination route, a category and an approximate USD guide price—so the next click is clear and easy to recheck." },
   guide: { kicker: "OFFICIAL APP FACTS / PRACTICAL WORKFLOW", title: "How Hacoo works: what the official sources actually say", intro: "Hacoo describes itself as an open content-sharing community where people can share, review products, discover services and connect with others. Here is the practical version of that promise, separated from independent product-link browsing." },
   qc: { kicker: "REVIEWS / PHOTOS / REPORTING", title: "Hacoo product checks: evidence before assumptions", intro: "Official Hacoo materials say users can rate products, brands and services, and provide routes for reporting suspected intellectual-property violations. Neither statement guarantees that any individual listing is accurate, authentic or suitable." },
-  shipping: { kicker: "OFFICIAL POLICY / CHECKED 28 AUG 2026", title: "Hacoo shipping times, after-sales support and refund facts", intro: "This page uses Hacoo's published Shipping & Delivery and help-centre information. The figures are official estimates, not promises, and the final order screen remains the place to confirm price and delivery options." },
+  shipping: { kicker: "SHIPPING GUIDANCE / CHECKED 6 NOV 2026", title: "Hacoo Delivery Times and Shipping Costs", intro: "Check the published delivery ranges, preparation time and support routes. For the price, use the delivery charge and final total shown for your address, then follow the shipping cost guide below." },
   faq: { kicker: "FACT CHECK / INDEPENDENT PUBLISHER", title: "Hacoo facts worth checking before you use a product link", intro: "Concise answers based on Hacoo's website, Google Play listing, published policies and clearly labelled third-party review data. No invented guarantees and no copied customer-service script." },
   articles: { kicker: "SOURCE-CHECKED BUYER GUIDES", title: "Independent Hacoo research and shopping guides", intro: "Long-form articles built around one reader question at a time. Every guide separates official claims, dated app-store data, public-review patterns and practical interpretation." },
 };
@@ -54,7 +55,7 @@ function Spreadsheet({ locale }: { locale: Locale }) {
       categories={[...new Set(products.map((product) => tx(product.category)))]}
       labels={{ all: tx("All"), item: tx("ITEM"), category: tx("CATEGORY"), price: tx("GUIDE PRICE"), route: tx("LIVE ROUTE"), open: tx("OPEN") }}
     />
-    <p className="data-note">{tx("Guide prices are approximate USD conversions. Product price, availability and delivery eligibility must be confirmed on the live destination page.")}</p><SourceBand locale={locale} />
+    <p className="data-note">{tx("Guide prices are approximate USD conversions. Product price, availability and delivery eligibility must be confirmed on the live destination page.")}</p><ShoppingGuides locale={locale} /><SourceBand locale={locale} />
   </>;
 }
 
@@ -62,13 +63,13 @@ function ShippingFacts({ locale }: { locale: Locale }) {
   const tx = (value: string) => translate(locale, value);
   return <><div className="policy-grid">
     <article><span>{tx("USUAL RECEIVING TIME")}</span><strong>{tx("15–28 days")}</strong><p>{tx("Published by Hacoo as a usual overall receiving-time range. It is not a guaranteed delivery date.")}</p></article>
-    <article><span>UK · FR · DE · IT</span><strong>{tx("15–25 days")}</strong><p>{tx("Hacoo's destination range when the policy page was checked on 28 August 2026.")}</p></article>
+    <article><span>UK · FR · DE · IT</span><strong>{tx("15–25 days")}</strong><p>{tx("Shipping guidance checked November 6, 2026. Confirm the current estimate and charges in your order summary.")}</p></article>
     <article><span>{tx("SPAIN")}</span><strong>{tx("15–30 days")}</strong><p>{tx("The official page lists a wider upper range for Spain than for the four countries above.")}</p></article>
     <article><span>{tx("OTHER COUNTRIES")}</span><strong>{tx("25–65 days")}</strong><p>{tx("A broad published range. Live availability and the order estimate matter more than a midpoint guess.")}</p></article>
   </div><div className="shipping-grid">
     <div className="calculator-panel"><span className="section-kicker">{tx("WHAT THE POLICY ADDS")}</span><h2>{tx("Processing, split parcels and delays")}</h2><p className="policy-copy">{tx("Hacoo says order processing normally takes 3–5 business days and that its fastest express shipping time is 5–7 working days. It defines receiving time as processing time plus shipping time. The page also says pre-order or back-order items may ship separately from available items, and that delays can occur because some products ship from overseas vendors.")}</p><p className="data-note">{tx("Do not add the fastest express figure to every order. It is a best-case shipping statement, not the default estimate.")}</p></div>
     <div className="shipping-factors"><h2>{tx("After the order")}</h2>{[["01", "Wrong address", "The official page tells buyers to contact Hacoo immediately because there may be only a small correction window."], ["02", "After-sales window", "Hacoo states that support can be requested within 15 days of delivery; eligibility still depends on following its instructions."], ["03", "Lost or stolen", "The policy says a parcel marked delivered but not received should first be reported to the relevant carrier, with Hacoo support available for further questions."], ["04", "Support route", "Hacoo's Contact page directs account and app questions to in-app chat or service@hacoo.app."]].map(([n,t,b]) => <article key={n}><span>{n}</span><div><h3>{tx(t)}</h3><p>{tx(b)}</p></div></article>)}</div>
-  </div><SourceBand locale={locale} /> </>;
+  </div><aside className="source-band"><strong>{tx("PRIMARY SOURCES")}</strong><div><a href="https://web.hacoo.app/en-US/pages/shipping-info" target="_blank" rel="noreferrer">{tx("Hacoo Shipping & Delivery")} ↗</a></div><p>{tx("Shipping guidance checked November 6, 2026. Confirm the current estimate and charges in your order summary.")}</p></aside><ShoppingGuides locale={locale} /> </>;
 }
 
 function SourceBand({ locale }: { locale: Locale }) {
@@ -83,6 +84,10 @@ export function ContentView({ page, locale = "en" }: { page: RouteName; locale?:
   const tx = (value: string) => translate(activeLocale, value);
   const navPage = page as NavRouteName;
   const meta = pageMeta[navPage];
+  const suggested = navPage === "shipping"
+    ? ["hacoo-shipping-cost", "hacoo-shipping-returns-refunds", "hacoo-tracking-explained", "hacoo-return-evidence-checklist"]
+    : ["hacoo-clothing-finds", "hacoo-shoes-finds", "hacoo-football-shirts-sizing", "hacoo-shipping-cost"];
+  const related = suggested.flatMap(slug => { const article = getArticle(slug, activeLocale); return article ? [article] : []; });
   return <SiteShell locale={locale}><main className="inner-main">
     <header className="inner-hero"><span className="section-kicker">{tx(meta.kicker)}</span><h1>{tx(meta.title)}</h1><p>{tx(meta.intro)}</p></header>
     {navPage === "spreadsheet" && <Spreadsheet locale={activeLocale} />}
@@ -93,7 +98,7 @@ export function ContentView({ page, locale = "en" }: { page: RouteName; locale?:
     {navPage === "shipping" && <ShippingFacts locale={activeLocale} />}
     {navPage === "faq" && <><div className="faq-list">{faqItems.map(([q,a], index) => <details key={q} open={index === 0}><summary><span>{String(index + 1).padStart(2,"0")}</span>{tx(q)}<b>+</b></summary><p>{tx(a)}</p></details>)}</div><SourceBand locale={activeLocale} /></>}
     {navPage === "articles" && <><div className="research-note"><strong>{tx("How to use these guides")}</strong><span>{tx("Start with the question you need to answer, note the source date and separate official platform facts from independent product-route guidance.")}</span></div><div className="article-cards">{getArticles(activeLocale).map((article, index) => <Link key={article.slug} href={hrefFor(activeLocale, `articles/${article.slug}`)}><span>{tx(article.tag)}</span><small>{String(index + 1).padStart(2,"0")}</small><h2>{tx(article.title)}</h2><p>{tx(article.deck)}</p><b>{tx("READ ARTICLE")} ↗</b></Link>)}</div></>}
-    {navPage !== "articles" && <section className="related-guides"><span className="section-kicker">{tx("SHOPPING GUIDES")}</span><h2>{tx("Choose your next product check")}</h2><div>{getArticles(activeLocale).slice(0,4).map((article) => <Link key={article.slug} href={hrefFor(activeLocale, `articles/${article.slug}`)}><small>{tx(article.tag)}</small><strong>{tx(article.title)}</strong><span>{tx("READ ARTICLE")} ↗</span></Link>)}</div></section>}
+    {navPage !== "articles" && <section className="related-guides"><span className="section-kicker">{tx("SHOPPING GUIDES")}</span><h2>{tx("Choose your next product check")}</h2><div>{related.map((article) => <Link key={article.slug} href={hrefFor(activeLocale, `articles/${article.slug}`)}><small>{tx(article.tag)}</small><strong>{tx(article.title)}</strong><span>{tx("READ ARTICLE")} ↗</span></Link>)}</div></section>}
     <section className="route-cta"><div><span className="section-kicker">{tx("LIVE CATALOG")}</span><h2>{tx("Ready to continue with a current product route?")}</h2></div><a className="button primary" href="https://www.cnfanshp.com/AllProducts/" target="_blank" rel="noreferrer">{tx("Open live catalog")} ↗</a></section>
   </main></SiteShell>;
 }

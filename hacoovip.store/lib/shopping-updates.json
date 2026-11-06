@@ -1,0 +1,237 @@
+{
+  "en": [
+    {
+      "slug": "how-to-use-hacoo-spreadsheet",
+      "title": "How to Use a Hacoo Spreadsheet and Check Product Links",
+      "seoTitle": "How to Use a Hacoo Spreadsheet: Links and Filters",
+      "deck": "Browse by category, compare the exact product and keep a useful shortlist before checking measurements and the final order total.",
+      "seoDescription": "Learn how to use a Hacoo spreadsheet, check product links and compare variants, clothing measurements and the full cost of your selected basket.",
+      "modifiedISO": "2026-11-06",
+      "section": {
+        "heading": "Turn the shortlist into a purchase comparison",
+        "paragraphs": [
+          "Choose a category first, then keep a short record for each candidate: product name, destination link, selected option, measurements, price and the date checked. Open the destination before saving a favourite. Confirm that its lead image and option match the item you intended to compare. If an old link opens another product, remove it from the shortlist until you can identify the intended item again.",
+          "For clothing, compare the selected chart with a similar garment you own. Football shirts need their own comparison of chest width, body length and included pieces. Once the variant is clear, use the shipping cost guide to record the delivery line and final total. Revisit those details before payment. The category filter helps you discover a product, and the saved comparison gives you the information needed for the next decision."
+        ]
+      }
+    },
+    {
+      "slug": "hacoo-clothing-finds",
+      "title": "Hacoo Clothing Finds: Compare Categories, Sizes and Links",
+      "seoTitle": "Hacoo Clothing Finds: Sizes, Photos and Product Links",
+      "deck": "Find clothing by category, compare garment measurements and check the selected variant and delivery total before ordering.",
+      "seoDescription": "Browse Hacoo clothing finds with a practical guide to garment measurements, product photos, variants and the total cost before checkout.",
+      "modifiedISO": "2026-11-06",
+      "section": {
+        "heading": "Build a clothing shortlist with comparable measurements",
+        "paragraphs": [
+          "Use the same reference garment for items serving the same purpose. For tops, record flat chest width, body length and sleeves. For trousers, record the measurement method for waist, rise and inseam. Put each candidate beside that reference with its size label and units. This makes a shortlist useful even when two sellers use different letter sizes.",
+          "Keep football shirts in their own comparison when the options include adult and junior sizes, different cuts or complete kits. Check which pieces are included before comparing prices. After selecting a variant, record its delivered total using the shipping cost worksheet. Save the chart with the product link so you can repeat the comparison if the listing changes or if you choose a different design."
+        ]
+      }
+    },
+    {
+      "slug": "hacoo-shipping-returns-refunds",
+      "title": "How Long Does Hacoo Shipping Take? Delivery and Returns",
+      "seoTitle": "Hacoo Shipping Time, Tracking and Returns Guide",
+      "deck": "Check published delivery guidance, separate preparation from transit, and keep the cost and support details connected to your order.",
+      "seoDescription": "Check Hacoo delivery times, preparation, tracking and return guidance. Compare the estimate and delivery charge shown for your destination.",
+      "modifiedISO": "2026-11-06",
+      "section": {
+        "heading": "Check your delivery window beside the full cost",
+        "paragraphs": [
+          "Write down the delivery estimate shown for the selected address together with the shipping charge and final basket total. Keep preparation and transit separate when the order screen shows them separately. If you are ordering for a match, trip or gift, compare the displayed arrival range with that date before paying. Use the shipping cost guide for a line-by-line worksheet covering items, delivery, discounts and the amount requested.",
+          "After payment, keep the confirmation, selected variants and available tracking information together. If a parcel is delayed, describe the last visible tracking event and the estimate attached to the order through the service’s support channel. For a size or product mismatch, preserve the chart and clear photographs of the received item. These records connect a delivery or return question to the specific transaction and help you explain it accurately."
+        ]
+      }
+    }
+  ],
+  "fr": [
+    {
+      "slug": "how-to-use-hacoo-spreadsheet",
+      "title": "Comment utiliser un tableur Hacoo et vérifier les liens",
+      "seoTitle": "Utiliser un tableur Hacoo : liens et filtres",
+      "deck": "Parcourez les catégories, comparez le produit exact et préparez votre sélection avant de vérifier les mesures et le montant total.",
+      "seoDescription": "Apprenez à utiliser un tableur Hacoo, vérifier les liens et comparer variantes, mesures des vêtements et coût complet du panier.",
+      "modifiedISO": "2026-11-06",
+      "section": {
+        "heading": "Transformer la sélection en comparaison d’achat",
+        "paragraphs": [
+          "Choisissez une catégorie, puis notez pour chaque produit le nom, le lien de destination, la variante, les mesures, le prix et la date de vérification. Ouvrez la fiche avant de conserver un favori. Vérifiez que la photo principale et l’option correspondent au produit recherché. Si un ancien lien ouvre un autre article, retirez-le de la sélection jusqu’à pouvoir identifier le produit voulu.",
+          "Pour un vêtement, comparez le tableau sélectionné à un modèle similaire que vous possédez. Les maillots de football demandent une comparaison de largeur, longueur et pièces incluses. Une fois la variante définie, utilisez le guide des frais de livraison pour relever le transport et le total. Vérifiez-les avant le paiement. Le filtre aide à découvrir un produit, puis la comparaison enregistrée prépare la décision suivante."
+        ]
+      }
+    },
+    {
+      "slug": "hacoo-clothing-finds",
+      "title": "Vêtements Hacoo : comparer catégories, tailles et liens",
+      "seoTitle": "Vêtements Hacoo : tailles, photos et liens produits",
+      "deck": "Trouvez des vêtements par catégorie, comparez les mesures et vérifiez la variante et le total avec livraison avant de commander.",
+      "seoDescription": "Explorez les vêtements Hacoo avec un guide des mesures, photos, variantes et frais à vérifier avant le paiement.",
+      "modifiedISO": "2026-11-06",
+      "section": {
+        "heading": "Comparer les vêtements avec des mesures cohérentes",
+        "paragraphs": [
+          "Utilisez le même vêtement de référence pour des articles ayant le même usage. Pour les hauts, notez largeur à plat, longueur et manches. Pour les pantalons, précisez la méthode utilisée pour la taille, la hauteur de fourche et l’entrejambe. Placez chaque candidat à côté du repère avec sa taille et ses unités. La comparaison reste utile lorsque deux vendeurs emploient des lettres différentes.",
+          "Comparez séparément les maillots de football lorsque les options mélangent adultes, juniors, coupes ou ensembles. Vérifiez les pièces incluses avant de comparer les prix. Après avoir choisi la variante, relevez le total livré avec la fiche des frais de livraison. Gardez le tableau des mesures avec le lien pour refaire la comparaison si la fiche change ou si vous choisissez un autre modèle."
+        ]
+      }
+    },
+    {
+      "slug": "hacoo-shipping-returns-refunds",
+      "title": "Livraison Hacoo : délais, suivi et retours",
+      "seoTitle": "Délai de livraison Hacoo : suivi et retours",
+      "deck": "Consultez les délais publiés, distinguez préparation et transport et conservez le prix et les informations d’assistance de votre commande.",
+      "seoDescription": "Vérifiez le délai de livraison Hacoo, la préparation, le suivi et les retours. Comparez estimation et frais pour votre adresse.",
+      "modifiedISO": "2026-11-06",
+      "section": {
+        "heading": "Comparer le délai et le coût complet de livraison",
+        "paragraphs": [
+          "Notez l’estimation pour l’adresse choisie avec les frais de livraison et le total du panier. Gardez préparation et transport séparés lorsque l’écran les distingue. Pour une commande destinée à un match, un voyage ou un cadeau, comparez la fenêtre annoncée à la date nécessaire avant de payer. Le guide des frais de livraison propose une fiche pour articles, transport, réductions et montant demandé.",
+          "Après paiement, rassemblez confirmation, variantes et suivi disponible. Si le colis tarde, communiquez au service concerné le dernier événement visible et l’estimation associée à la commande. Pour un problème de taille ou de produit, conservez le tableau et des photos claires de l’article reçu. Ces éléments rattachent la question à la transaction précise et permettent de la décrire correctement."
+        ]
+      }
+    }
+  ],
+  "es": [
+    {
+      "slug": "how-to-use-hacoo-spreadsheet",
+      "title": "Cómo usar una hoja Hacoo y comprobar enlaces",
+      "seoTitle": "Cómo usar una hoja Hacoo: enlaces y filtros",
+      "deck": "Explora categorías, compara el producto exacto y prepara una selección antes de revisar medidas y total del pedido.",
+      "seoDescription": "Aprende a usar una hoja Hacoo, comprobar enlaces y comparar variantes, medidas de ropa y coste completo del carrito.",
+      "modifiedISO": "2026-11-06",
+      "section": {
+        "heading": "Convierte la selección en una comparación de compra",
+        "paragraphs": [
+          "Elige una categoría y anota para cada candidato nombre, enlace de destino, variante, medidas, precio y fecha de revisión. Abre la ficha antes de guardar un favorito. Confirma que imagen principal y opción correspondan al producto que quieres comparar. Si un enlace antiguo abre otro artículo, retíralo de la selección hasta identificar el producto previsto.",
+          "En ropa, compara la tabla elegida con una prenda similar que tengas. Las camisetas de fútbol requieren revisar ancho de pecho, largo y piezas incluidas. Cuando la variante esté clara, usa la guía de gastos de envío para registrar entrega y total. Revísalos antes de pagar. El filtro ayuda a descubrir productos y la comparación guardada aporta los datos para la siguiente decisión."
+        ]
+      }
+    },
+    {
+      "slug": "hacoo-clothing-finds",
+      "title": "Ropa Hacoo: compara categorías, tallas y enlaces",
+      "seoTitle": "Ropa Hacoo: tallas, fotos y enlaces de productos",
+      "deck": "Busca ropa por categoría, compara medidas y revisa la variante y el total con envío antes de comprar.",
+      "seoDescription": "Explora ropa Hacoo con una guía de medidas, fotos, variantes y coste completo antes de finalizar el pedido.",
+      "modifiedISO": "2026-11-06",
+      "section": {
+        "heading": "Prepara una selección con medidas comparables",
+        "paragraphs": [
+          "Usa la misma prenda de referencia para artículos destinados al mismo uso. En partes de arriba, anota ancho de pecho en plano, largo y mangas. En pantalones, registra el método para cintura, tiro y entrepierna. Coloca cada candidato junto a la referencia con su talla y unidades. Así puedes comparar aunque dos vendedores utilicen letras diferentes.",
+          "Compara las camisetas de fútbol por separado cuando las opciones incluyan adultos, niños, cortes distintos o equipaciones completas. Revisa qué piezas vienen incluidas antes de comparar precios. Tras elegir variante, registra el total entregado con la tabla de gastos de envío. Guarda las medidas con el enlace para repetir la comparación si cambia la ficha o eliges otro diseño."
+        ]
+      }
+    },
+    {
+      "slug": "hacoo-shipping-returns-refunds",
+      "title": "Cuánto tarda Hacoo: envío, seguimiento y devoluciones",
+      "seoTitle": "Cuánto tarda Hacoo: envío y seguimiento del pedido",
+      "deck": "Consulta los plazos publicados, separa preparación y transporte y guarda los detalles de coste y asistencia del pedido.",
+      "seoDescription": "Comprueba cuánto tarda Hacoo, preparación, seguimiento y devoluciones. Compara el plazo y los gastos mostrados para tu dirección.",
+      "modifiedISO": "2026-11-06",
+      "section": {
+        "heading": "Compara el plazo con el coste completo",
+        "paragraphs": [
+          "Anota la estimación para la dirección seleccionada junto con gastos de envío y total del carrito. Separa preparación y transporte cuando la pantalla los muestre por separado. Si compras para un partido, viaje o regalo, compara el intervalo anunciado con la fecha necesaria antes de pagar. La guía de gastos ofrece una tabla para productos, entrega, descuentos e importe solicitado.",
+          "Después del pago, guarda confirmación, variantes y seguimiento disponible. Si el paquete se retrasa, comunica al servicio correspondiente el último evento visible y la estimación del pedido. Para una diferencia de talla o producto, conserva la tabla y fotografías claras de lo recibido. Estos documentos relacionan la consulta con la transacción concreta y ayudan a explicarla con precisión."
+        ]
+      }
+    }
+  ],
+  "de": [
+    {
+      "slug": "how-to-use-hacoo-spreadsheet",
+      "title": "Eine Hacoo-Tabelle nutzen und Produktlinks prüfen",
+      "seoTitle": "Hacoo-Tabelle nutzen: Links und Filter",
+      "deck": "Kategorien durchsuchen, das genaue Produkt vergleichen und eine Auswahl für Maße und Gesamtpreis vorbereiten.",
+      "seoDescription": "So nutzt du eine Hacoo-Tabelle: Produktlinks prüfen, Varianten und Kleidungsmaße vergleichen und den vollständigen Warenkorbpreis erfassen.",
+      "modifiedISO": "2026-11-06",
+      "section": {
+        "heading": "Aus der Auswahl einen Kaufvergleich machen",
+        "paragraphs": [
+          "Wähle zuerst eine Kategorie und notiere für jeden Kandidaten Produktname, Ziellink, Variante, Maße, Preis und Prüfdatum. Öffne das Ziel vor dem Speichern eines Favoriten. Hauptbild und ausgewählte Option sollten zum gesuchten Produkt passen. Öffnet ein älterer Link einen anderen Artikel, entferne ihn aus der Auswahl, bis sich das gewünschte Produkt wieder eindeutig zuordnen lässt.",
+          "Vergleiche bei Kleidung die gewählte Tabelle mit einem ähnlichen eigenen Kleidungsstück. Bei Fußballtrikots prüfst du Brustbreite, Länge und enthaltene Teile separat. Sobald die Variante feststeht, erfasst du mit dem Versandkostenleitfaden Versandposition und Gesamtbetrag. Kontrolliere beides vor der Zahlung. Der Filter unterstützt die Suche, der gespeicherte Vergleich liefert die Grundlage für die nächste Entscheidung."
+        ]
+      }
+    },
+    {
+      "slug": "hacoo-clothing-finds",
+      "title": "Hacoo-Kleidung: Kategorien, Größen und Links vergleichen",
+      "seoTitle": "Hacoo-Kleidung: Größen, Fotos und Produktlinks",
+      "deck": "Finde Kleidung nach Kategorie, vergleiche Maße und prüfe Variante und Gesamtpreis mit Versand vor der Bestellung.",
+      "seoDescription": "Hacoo-Kleidung finden: Kleidungsmaße, Fotos, Varianten und vollständige Kosten vor dem Kauf nachvollziehbar vergleichen.",
+      "modifiedISO": "2026-11-06",
+      "section": {
+        "heading": "Kleidung anhand vergleichbarer Maße auswählen",
+        "paragraphs": [
+          "Nutze dasselbe Referenzkleidungsstück für Produkte mit gleichem Verwendungszweck. Bei Oberteilen erfasst du flache Brustbreite, Gesamtlänge und Ärmel. Bei Hosen notierst du die Messmethode für Bund, Leibhöhe und Innenbeinlänge. Stelle jeden Kandidaten mit Größenbezeichnung und Einheit neben die Referenz. Der Vergleich bleibt hilfreich, wenn Verkäufer unterschiedliche Buchstabengrößen verwenden.",
+          "Vergleiche Fußballtrikots separat, wenn die Optionen Erwachsenen- und Kindergrößen, verschiedene Schnitte oder komplette Sets enthalten. Prüfe die enthaltenen Teile vor dem Preisvergleich. Nach der Variantenauswahl erfasst du den Gesamtbetrag mit Lieferung in der Versandkostentabelle. Speichere die Maßtabelle beim Link, damit du den Vergleich bei einer geänderten Produktseite oder einem anderen Design wiederholen kannst."
+        ]
+      }
+    },
+    {
+      "slug": "hacoo-shipping-returns-refunds",
+      "title": "Wie lange dauert Hacoo? Versand, Tracking und Rückgabe",
+      "seoTitle": "Hacoo-Lieferzeit: Versand, Tracking und Rückgabe",
+      "deck": "Prüfe veröffentlichte Lieferangaben, trenne Bearbeitung und Transport und bewahre Kosten und Supportinformationen bei deiner Bestellung auf.",
+      "seoDescription": "Hacoo-Lieferzeit, Bearbeitung, Tracking und Rückgabe prüfen. Vergleiche die angezeigte Lieferprognose und Versandkosten für deine Adresse.",
+      "modifiedISO": "2026-11-06",
+      "section": {
+        "heading": "Lieferfenster und vollständige Kosten vergleichen",
+        "paragraphs": [
+          "Notiere die Schätzung für die gewählte Adresse zusammen mit Versandkosten und Warenkorbgesamtbetrag. Halte Bearbeitung und Transport getrennt, wenn sie separat angezeigt werden. Bei einem Kauf für ein Spiel, eine Reise oder ein Geschenk vergleichst du den Zeitraum vor der Zahlung mit deinem Termin. Der Versandkostenleitfaden enthält eine Tabelle für Artikel, Lieferung, Rabatte und den geforderten Betrag.",
+          "Bewahre nach der Zahlung Bestätigung, Varianten und verfügbare Sendungsdaten zusammen auf. Bei einer Verzögerung beschreibst du dem zuständigen Support den letzten sichtbaren Tracking-Eintrag und die Bestellprognose. Bei Größen- oder Produktabweichungen helfen die gespeicherte Tabelle und klare Fotos des erhaltenen Artikels. Diese Unterlagen ordnen die Frage einer konkreten Transaktion zu und erleichtern eine präzise Erklärung."
+        ]
+      }
+    }
+  ],
+  "it": [
+    {
+      "slug": "how-to-use-hacoo-spreadsheet",
+      "title": "Come usare un foglio Hacoo e controllare i link",
+      "seoTitle": "Come usare un foglio Hacoo: link e filtri",
+      "deck": "Esplora le categorie, confronta il prodotto esatto e prepara una selezione prima di verificare misure e totale dell’ordine.",
+      "seoDescription": "Impara a usare un foglio Hacoo, controllare link e confrontare varianti, misure dei vestiti e costo completo del carrello.",
+      "modifiedISO": "2026-11-06",
+      "section": {
+        "heading": "Trasforma la selezione in un confronto d’acquisto",
+        "paragraphs": [
+          "Scegli una categoria, poi annota per ogni candidato nome, link, variante, misure, prezzo e data del controllo. Apri la destinazione prima di salvare un preferito. Verifica che immagine principale e opzione corrispondano al prodotto da confrontare. Se un vecchio link apre un articolo diverso, rimuovilo dalla selezione finché non riesci a identificare quello desiderato.",
+          "Per i vestiti confronta la tabella selezionata con un capo simile che possiedi. Le maglie da calcio richiedono un confronto di larghezza, lunghezza e pezzi inclusi. Definita la variante, usa la guida ai costi di spedizione per registrare consegna e totale. Ricontrollali prima del pagamento. Il filtro aiuta a scoprire prodotti e il confronto salvato prepara la decisione successiva."
+        ]
+      }
+    },
+    {
+      "slug": "hacoo-clothing-finds",
+      "title": "Abbigliamento Hacoo: confronta categorie, taglie e link",
+      "seoTitle": "Abbigliamento Hacoo: taglie, foto e link prodotto",
+      "deck": "Trova vestiti per categoria, confronta misure e controlla variante e totale con consegna prima di ordinare.",
+      "seoDescription": "Esplora l’abbigliamento Hacoo con una guida a misure, foto, varianti e costo completo da verificare prima dell’acquisto.",
+      "modifiedISO": "2026-11-06",
+      "section": {
+        "heading": "Seleziona i vestiti usando misure confrontabili",
+        "paragraphs": [
+          "Usa lo stesso capo di riferimento per prodotti destinati allo stesso utilizzo. Per i top annota larghezza torace in piano, lunghezza e maniche. Per i pantaloni registra il metodo per vita, cavallo e interno gamba. Affianca ogni candidato al riferimento con taglia e unità. Il confronto rimane utile anche quando due venditori usano lettere diverse.",
+          "Confronta separatamente le maglie da calcio se le opzioni includono adulti, bambini, tagli differenti o completi. Verifica i pezzi compresi prima dei prezzi. Scelta la variante, registra il totale consegnato con la tabella dei costi di spedizione. Salva le misure insieme al link per ripetere il confronto se cambia la scheda o scegli un altro modello."
+        ]
+      }
+    },
+    {
+      "slug": "hacoo-shipping-returns-refunds",
+      "title": "Quanto impiega Hacoo? Spedizione, tracking e resi",
+      "seoTitle": "Tempi di spedizione Hacoo: tracking e resi",
+      "deck": "Controlla i tempi pubblicati, separa preparazione e trasporto e conserva costi e informazioni di assistenza con l’ordine.",
+      "seoDescription": "Verifica tempi di spedizione Hacoo, preparazione, tracking e resi. Confronta stima e spese mostrate per il tuo indirizzo.",
+      "modifiedISO": "2026-11-06",
+      "section": {
+        "heading": "Confronta la finestra di consegna con il costo totale",
+        "paragraphs": [
+          "Annota la stima per l’indirizzo scelto insieme a spese di consegna e totale del carrello. Tieni separati preparazione e trasporto quando la schermata li distingue. Per un acquisto destinato a una partita, un viaggio o un regalo, confronta l’intervallo indicato con la data necessaria prima di pagare. La guida ai costi offre una tabella per prodotti, consegna, sconti e importo richiesto.",
+          "Dopo il pagamento conserva insieme conferma, varianti e tracking disponibile. Se il pacco ritarda, comunica all’assistenza del servizio l’ultimo evento visibile e la stima dell’ordine. Per una differenza di taglia o prodotto, conserva tabella e fotografie chiare dell’articolo ricevuto. Questi documenti collegano la domanda alla transazione specifica e aiutano a descriverla con precisione."
+        ]
+      }
+    }
+  ]
+}
