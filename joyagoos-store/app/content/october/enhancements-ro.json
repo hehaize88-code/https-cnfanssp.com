@@ -1,8 +1,8 @@
 {
   "joyagoo-qc-photo-checklist": {
-    "title": "Lista QC Joyagoo: mărime, defecte și imagini lipsă",
-    "description": "Verifică fotografiile QC Joyagoo în ordine: varianta exactă, eticheta de mărime, măsurătorile, defectele vizibile și imaginile lipsă. Folosește o listă practică înainte de aprobare.",
-    "summary": "Începe cu comanda exactă, apoi inspectează articolul primit. Marchează fiecare verificare drept potrivire, neclaritate sau nepotrivire. O măsurătoare neclară sau o imagine lipsă necesită dovezi înaintea următoarei decizii.",
+    "title": "Fotografii QC Joyagoo: mărime, defecte și verificări",
+    "description": "Verifică varianta, măsurile și defectele vizibile. Găsește ajutor pentru Stock Arrived, imagini lipsă și următorii pași.",
+    "summary": "Deschide QC pentru comanda exactă. Verifică varianta și mărimea, apoi starea vizibilă. Dacă lipsesc poze, consultă ghidul Stock Arrived de mai jos înainte să presupui un defect al produsului.",
     "caption": "Fișă rapidă de verificare QC",
     "columns": [
       "Verificare",
@@ -107,7 +107,7 @@
     ]
   },
   "joyagoo-actual-vs-volumetric-weight": {
-    "summary": "Folosește dimensiunile exterioare ale coletului ambalat, păstrează unitățile vizibile și citește regula de facturare a rutei alese. Calculul de mai jos explică aritmetica; nu este o ofertă de transport și nu afirmă că toate rutele folosesc același divizor.",
+    "summary": "Greutate volumetrică = lungime × lățime × înălțime în cm ÷ divizorul rutei. Compară cu greutatea reală doar când regula folosește valoarea mai mare. Rotunjirile și tarifele depind de linie.",
     "caption": "Calcul ilustrativ cu un divizor ipotetic de 6.000",
     "columns": [
       "Dată sau pas",
@@ -140,10 +140,12 @@
         "max(3, 4) = 4 kg",
         "Doar pentru regula valorii mai mari dintre cele două, înaintea rotunjirii"
       ]
-    ]
+    ],
+    "title": "Greutate volumetrică Joyagoo: calculator și ambalaj",
+    "description": "Calculează greutatea volumetrică din dimensiuni și divizorul rutei. Compară greutatea reală, ambalajul și exemplele de taxare."
   },
   "joyagoo-tracking-not-updating": {
-    "summary": "Folosește evidența coletului pentru a identifica numărul corect, păstrează exact ultimul eveniment și citește anunțul rutei selectate. O pagină de urmărire fără actualizări și o cerere explicită de acțiune necesită răspunsuri diferite.",
+    "summary": "Identifică mai întâi comanda produsului sau coletul internațional. Stock Arrived aparține depozitului. Pentru internațional folosește dosarul coletului și curierul corect; păstrează evenimentul și ora înainte de contact.",
     "caption": "Evidența urmăririi: ce verifici în continuare",
     "columns": [
       "Rezultat observat",
@@ -171,7 +173,9 @@
         "Instrucțiunile din contul autentificat sau serviciul transportatorului",
         "Răspunde prompt prin canalul verificat"
       ]
-    ]
+    ],
+    "title": "Urmărire Joyagoo fără actualizare: ce verifici",
+    "description": "Verifică numărul coletului, curierul, ultima scanare și excepțiile. Separă livrarea la depozit de transportul internațional."
   },
   "joyagoo-shipping-estimate-input-checklist": {
     "summary": "Notează destinația, unitățile, măsurătorile ambalate și ipotezele înainte de compararea rezultatelor. Actualizează evidența ori de câte ori se schimbă conținutul sau ambalarea; o estimare provizorie nu poate stabili suma finală.",

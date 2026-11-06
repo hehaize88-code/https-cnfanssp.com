@@ -1,8 +1,8 @@
 {
   "joyagoo-qc-photo-checklist": {
-    "title": "Liste QC Joyagoo : taille, défauts et vues manquantes",
-    "description": "Vérifiez vos photos QC Joyagoo dans l’ordre : option exacte, étiquette de taille, mesures, défauts visibles et vues manquantes. Utilisez une liste pratique avant d’approuver l’article.",
-    "summary": "Commencez par la commande exacte, puis examinez l’article reçu. Classez chaque contrôle comme conforme, incertain ou non conforme. Une mesure imprécise ou une vue manquante nécessite des preuves avant la décision suivante.",
+    "title": "Photos QC Joyagoo : tailles, défauts et vérifications",
+    "description": "Vérifiez variante, mesures et défauts visibles. Retrouvez l’aide Stock Arrived, les photos manquantes et les prochaines actions.",
+    "summary": "Ouvrez les photos QC de la bonne commande. Contrôlez d’abord variante et taille, puis état visible. Sans photos, consultez le guide Stock Arrived ci-dessous avant de conclure à un défaut du produit.",
     "caption": "Une fiche de vérification QC rapide",
     "columns": [
       "Contrôle",
@@ -107,7 +107,7 @@
     ]
   },
   "joyagoo-actual-vs-volumetric-weight": {
-    "summary": "Utilisez les dimensions extérieures du colis emballé, gardez les unités visibles et lisez la règle de facturation de la ligne choisie. Le calcul ci-dessous explique l’arithmétique ; ce n’est ni un devis de fret ni l’affirmation que toutes les lignes utilisent le même diviseur.",
+    "summary": "Poids volumétrique = longueur × largeur × hauteur en cm ÷ diviseur de la ligne. Comparez au poids réel uniquement si la ligne retient le plus élevé. Arrondis et frais dépendent de la ligne choisie.",
     "caption": "Calcul illustratif avec un diviseur hypothétique de 6 000",
     "columns": [
       "Donnée ou étape",
@@ -140,10 +140,12 @@
         "max(3, 4) = 4 kg",
         "Uniquement pour une règle retenant la plus grande valeur, avant son arrondi"
       ]
-    ]
+    ],
+    "title": "Poids volumétrique Joyagoo : calculateur et emballage",
+    "description": "Calculez le poids volumétrique avec les dimensions du colis et le diviseur de la ligne. Comparez poids réel et emballage."
   },
   "joyagoo-tracking-not-updating": {
-    "summary": "Utilisez le dossier du colis pour identifier le bon numéro, conservez exactement le dernier événement et lisez l’avis de la ligne choisie. Une page de suivi silencieuse et une demande d’action explicite appellent des réponses différentes.",
+    "summary": "Identifiez d’abord une commande produit ou un colis international. Stock Arrived relève de l’entrepôt. Pour l’international, utilisez le dossier colis et le bon transporteur ; conservez événement et heure avant de contacter le support.",
     "caption": "Relevé du suivi : prochaine vérification",
     "columns": [
       "Résultat observé",
@@ -171,7 +173,9 @@
         "Instructions du compte authentifié ou du service du transporteur",
         "Répondre rapidement par le canal vérifié"
       ]
-    ]
+    ],
+    "title": "Suivi Joyagoo sans mise à jour : que vérifier ?",
+    "description": "Vérifiez numéro de colis, transporteur, dernier scan et exceptions. Distinguez livraison au dépôt et transport international."
   },
   "joyagoo-shipping-estimate-input-checklist": {
     "summary": "Notez la destination, les unités, les mesures emballées et les hypothèses avant de comparer les résultats. Actualisez le relevé chaque fois que le contenu ou l’emballage change ; une estimation provisoire ne permet pas d’établir le montant final.",

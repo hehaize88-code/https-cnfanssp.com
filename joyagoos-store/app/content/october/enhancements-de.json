@@ -1,8 +1,8 @@
 {
   "joyagoo-qc-photo-checklist": {
-    "title": "Joyagoo-QC-Fotos: Checkliste für Größe, Mängel und fehlende Ansichten",
-    "description": "Prüfe deine Joyagoo-QC-Fotos der Reihe nach: genaue Variante, Größenetikett, Maße, sichtbare Mängel und fehlende Ansichten. Nutze vor der Freigabe eine praktische Checkliste.",
-    "summary": "Beginne mit der genauen Bestellung und prüfe dann den eingegangenen Artikel. Markiere jede Prüfung als passend, unklar oder abweichend. Ein unklarer Messwert oder eine fehlende Ansicht erfordert Nachweise, bevor du die nächste Entscheidung triffst.",
+    "title": "Joyagoo-QC-Fotos: Größe, Mängel & Checkliste",
+    "description": "Prüfe Variante, Maße und sichtbare Mängel. Finde Hilfe zu Stock Arrived, fehlenden Fotos und der nächsten Bestellaktion.",
+    "summary": "Öffne die QC-Bilder der genauen Bestellung. Prüfe erst Variante und Größe, dann sichtbaren Zustand. Bei fehlenden Fotos hilft unten der Stock-Arrived-Guide; fehlende Bilder sind noch kein Produktmangel.",
     "caption": "Ein kompaktes QC-Prüfblatt",
     "columns": [
       "Prüfung",
@@ -107,7 +107,7 @@
     ]
   },
   "joyagoo-actual-vs-volumetric-weight": {
-    "summary": "Verwende die Außenmaße des verpackten Pakets, halte die Einheiten sichtbar und lies die Abrechnungsregel der gewählten Versandlinie. Die folgende Berechnung erklärt die Rechenweise; sie ist weder ein Frachtangebot noch die Behauptung, dass alle Linien denselben Divisor verwenden.",
+    "summary": "Volumengewicht = Länge × Breite × Höhe in cm ÷ Streckendivisor. Vergleiche das Waagengewicht nur bei einer Höchstwert-Regel. Der Rechner zeigt das Prinzip; Rundung und Fracht hängen von der Linie ab.",
     "caption": "Beispielrechnung mit einem hypothetischen Divisor von 6.000",
     "columns": [
       "Eingabe oder Schritt",
@@ -140,10 +140,12 @@
         "max(3, 4) = 4 kg",
         "Nur bei einer Regel, die den höheren der beiden Werte verwendet, vor deren Rundung"
       ]
-    ]
+    ],
+    "title": "Joyagoo-Volumengewicht: Rechner, Formel & Verpackung",
+    "description": "Berechne Volumengewicht mit Paketmaßen und Streckendivisor. Vergleiche tatsächliches Gewicht, Verpackung und Abrechnungsbeispiele."
   },
   "joyagoo-tracking-not-updating": {
-    "summary": "Identifiziere die richtige Nummer anhand des Paketdatensatzes, bewahre das letzte Ereignis wortgetreu auf und lies den Hinweis zur gewählten Versandlinie. Eine stille Trackingseite und eine ausdrückliche Handlungsaufforderung erfordern unterschiedliche Reaktionen.",
+    "summary": "Prüfe zuerst, ob du eine Produktorder oder ein internationales Paket verfolgst. Stock Arrived gehört zum Lager. Für internationale Sendungen nutze Paketdatensatz und passenden Transporteur; sichere Ereignis und Zeit vor einer Anfrage.",
     "caption": "Trackingaufzeichnung: Was du als Nächstes prüfst",
     "columns": [
       "Beobachtetes Ergebnis",
@@ -171,7 +173,9 @@
         "Anweisungen im authentifizierten Konto oder Dienst des Transportdienstleisters",
         "Zeitnah über den verifizierten Kanal antworten"
       ]
-    ]
+    ],
+    "title": "Joyagoo-Tracking ohne Update: Status & nächste Schritte",
+    "description": "Prüfe Paketnummer, Transporteur, letzten Scan und Zustellausnahmen. Trenne Inlandstransport zum Lager von internationalem Versand."
   },
   "joyagoo-shipping-estimate-input-checklist": {
     "summary": "Dokumentiere Ziel, Einheiten, Paketmaße und Annahmen, bevor du Ergebnisse vergleichst. Aktualisiere die Angaben bei jeder Änderung von Inhalt oder Verpackung; eine vorläufige Schätzung kann den Endbetrag nicht festlegen.",

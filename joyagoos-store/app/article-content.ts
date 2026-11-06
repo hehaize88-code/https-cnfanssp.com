@@ -1,3 +1,4 @@
+import { novemberCopies } from "./november-content";
 import { octoberCopies, octoberEnhancements } from "./october-content";
 import { articles, isArticleAvailableInLanguage, type ArticleSlug } from "./article-data";
 import { completeTranslations } from "./generated-translations";
@@ -37,7 +38,7 @@ export function buyerFacingText(text: string, language: SiteLanguage): string {
 
 export function getArticleCopy(slug: ArticleSlug, language: SiteLanguage) {
   if (!isArticleAvailableInLanguage(slug, language)) return articles[slug];
-  const source = octoberCopies[language][slug] || (slug === polandDestinationArticleSlug
+  const source = novemberCopies[language][slug] || octoberCopies[language][slug] || (slug === polandDestinationArticleSlug
     ? polandDestinationArticleByLanguage[language]
     : slug === germanyDestinationArticleSlug
       ? germanyDestinationArticleByLanguage[language]

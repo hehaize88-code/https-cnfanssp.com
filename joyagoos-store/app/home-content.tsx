@@ -1,3 +1,4 @@
+import { novemberUi } from "./november-content";
 import { guideHubCopy } from "./guide-hub-copy";
 import { articlePublishedDates, articles, isArticleAvailableInLanguage, type ArticleSlug } from "./article-data";
 import { completeTranslations } from "./generated-translations";
@@ -89,7 +90,9 @@ function getCopy(locale: HomeLocale) {
 
 export function HomeContent({ locale, prefix = "" }: { locale: HomeLocale; prefix?: string }) {
   const language = locale;
-  const copy = getCopy(language);
+  const baseCopy = getCopy(language);
+  const refreshed = novemberUi[language];
+  const copy = {...baseCopy, title:language === "zh" ? "Joyagoo 商品清单" : "Joyagoo Spreadsheet", accent:refreshed.homeAccent, lead:refreshed.homeDescription};
   const activeLocale = language === "en" ? undefined : language;
   const articleSection = language === "en" ? pageContent.articles : localizedSections[language].articles;
   const faqSection = language === "en" ? pageContent.faq : localizedSections[language].faq;
@@ -128,7 +131,7 @@ export function HomeContent({ locale, prefix = "" }: { locale: HomeLocale; prefi
       <section className="section home-editorial" id="articles">
         <div className="section-head"><div><p className="eyebrow">{articleSection.kicker}</p><h2>{guideHubCopy[language].title}</h2></div><p>{guideHubCopy[language].description}</p></div>
         <div className="home-article-grid">
-          {articleEntries.filter(([slug])=>isArticleAvailableInLanguage(slug,language)).sort(([a],[b])=>articlePublishedDates[b].localeCompare(articlePublishedDates[a])).slice(0,4).map(([slug,article],index)=>{
+          {articleEntries.filter(([slug])=>["joyagoo-actual-vs-volumetric-weight","joyagoo-stock-arrived-qc-time","joyagoo-payment-on-hold-order-status","joyagoo-tracking-not-updating"].includes(slug) && isArticleAvailableInLanguage(slug,language)).sort(([a],[b])=>articlePublishedDates[b].localeCompare(articlePublishedDates[a])).map(([slug,article],index)=>{
             const translated = getArticleCopy(slug,language);
             return <a href={withLanguage(`/articles/${slug}`,language)} key={slug} className="home-article-card"><span>ARTICLE / 0{index+1}</span><h3>{translated.title}</h3><p>{translated.description}</p><b>{homepageUi[language].readArticle} ↗</b></a>;
           })}

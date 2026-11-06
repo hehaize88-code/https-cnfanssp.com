@@ -1,4 +1,4 @@
-import { copyFile, cp, mkdir, rm, writeFile } from "node:fs/promises";
+import { cp, mkdir, rm, writeFile } from "node:fs/promises";
 import { dirname, join } from "node:path";
 
 const root = process.cwd();
@@ -57,14 +57,6 @@ const articleHubPaths = pageUrls
   .map((pageUrl) => new URL(pageUrl).pathname)
   .filter((pathname) => pathname === "/articles" || pathname.endsWith("/articles"));
 
-for (const pathname of articleHubPaths) {
-  const sourceFile = join(outputDir, `${pathname.slice(1)}.html`);
-  const aliasPath = pathname.replace(/\/articles$/, "/articles-2026");
-  const aliasFile = join(outputDir, `${aliasPath.slice(1)}.html`);
-  await mkdir(dirname(aliasFile), { recursive: true });
-  await copyFile(sourceFile, aliasFile);
-}
-
 const robotsResponse = await fetchPath("/robots.txt");
 if (!robotsResponse.ok) throw new Error("Could not render robots.txt");
 await writeFile(join(outputDir, "robots.txt"), await robotsResponse.text());
@@ -86,7 +78,7 @@ const redirects = pageUrls
 const articleAliasRedirects = articleHubPaths
   .flatMap((pathname) => [`${pathname.replace(/\/articles$/, "/articles-2026")} ${pathname} 301`, `${pathname.replace(/\/articles$/, "/articles-2026")}/ ${pathname} 301`])
   .join("\n");
-await writeFile(join(outputDir, "_redirects"), `https://www.joyagoos.store/* https://joyagoos.store/:splat 301\n${redirects}\n${articleAliasRedirects}\n`);
+await writeFile(join(outputDir, "_redirects"), `${redirects}\n${articleAliasRedirects}\n`);
 // HTML entry points must not keep an old language switcher or article registry.
 // One article wildcard per locale also covers legacy /articles-2026 URLs.
 // Keep these rules separate from fingerprinted assets and below Pages' 100-rule limit.

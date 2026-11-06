@@ -1,8 +1,8 @@
 {
   "joyagoo-qc-photo-checklist": {
-    "title": "Joyagoo QC-bilder: checklista för storlek, fel och saknade vyer",
-    "description": "Kontrollera dina Joyagoo QC-bilder i ordning: exakt variant, storleksetikett, mått, synliga fel och saknade vyer. Använd en praktisk checklista innan varan godkänns.",
-    "summary": "Börja med den exakta beställningen och granska sedan den mottagna varan. Markera varje kontroll som stämmer, oklart eller avviker. Ett oklart mått eller en saknad vy kräver underlag innan du fattar nästa beslut.",
+    "title": "Joyagoo-QC-bilder: storlek, fel och checklista",
+    "description": "Kontrollera variant, mått och synliga fel. Hitta hjälp med Stock Arrived, saknade bilder och nästa orderåtgärd.",
+    "summary": "Öppna QC för exakt rätt order. Kontrollera variant och storlek före synligt skick. Vid saknade bilder, läs Stock-Arrived-guiden nedan innan du antar ett produktfel.",
     "caption": "Ett snabbt granskningsblad för QC",
     "columns": [
       "Kontroll",
@@ -107,7 +107,7 @@
     ]
   },
   "joyagoo-actual-vs-volumetric-weight": {
-    "summary": "Använd det packade paketets yttermått, håll enheterna synliga och läs vald fraktlinjes debiteringsregel. Beräkningen nedan förklarar matematiken; den är ingen fraktoffert och inget påstående om att alla fraktlinjer använder samma divisor.",
+    "summary": "Volymvikt = längd × bredd × höjd i cm ÷ linjens divisor. Jämför med verklig vikt endast om regeln använder det högre värdet. Avrundning och fraktavgift beror på vald linje.",
     "caption": "Räkneexempel med en hypotetisk divisor på 6 000",
     "columns": [
       "Indata eller steg",
@@ -140,10 +140,12 @@
         "max(3, 4) = 4 kg",
         "Endast vid en regel som väljer det högsta av två värden, före dess avrundning"
       ]
-    ]
+    ],
+    "title": "Joyagoo-volymvikt: kalkylator och förpackning",
+    "description": "Beräkna volymvikt med paketmått och linjens divisor. Jämför verklig vikt, emballage och debiteringsexempel."
   },
   "joyagoo-tracking-not-updating": {
-    "summary": "Använd paketuppgifterna för att identifiera rätt nummer, behåll den senaste händelsen exakt och läs vald fraktlinjes meddelande. En tyst spårningssida och en uttrycklig begäran om åtgärd kräver olika svar.",
+    "summary": "Avgör först om du följer en produktorder eller ett internationellt paket. Stock Arrived hör till lagret. För internationell spårning används paketpost och rätt transportör; spara händelse och tid före kontakt.",
     "caption": "Spårningsanteckning: vad du kontrollerar härnäst",
     "columns": [
       "Observerat resultat",
@@ -171,7 +173,9 @@
         "Instruktioner i det autentiserade kontot eller transportörens tjänst",
         "Svara snarast genom den verifierade kanalen"
       ]
-    ]
+    ],
+    "title": "Joyagoo-spårning utan uppdatering: nästa steg",
+    "description": "Kontrollera paketnummer, transportör, senaste skanning och leveransavvikelser. Skilj lagertransport från internationell frakt."
   },
   "joyagoo-shipping-estimate-input-checklist": {
     "summary": "Anteckna destination, enheter, packmått och antaganden innan du jämför resultat. Uppdatera anteckningen när innehåll eller packning ändras; en preliminär uppskattning kan inte fastställa slutbeloppet.",

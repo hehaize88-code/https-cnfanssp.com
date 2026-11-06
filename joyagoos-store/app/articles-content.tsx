@@ -1,3 +1,4 @@
+import { novemberUi } from "./november-content";
 import { guideHubCopy } from "./guide-hub-copy";
 import { articlePublishedDates, articles, isArticleAvailableInLanguage, type ArticleSlug } from "./article-data";
 import { Footer, Header, locales, localizedSections, type Locale } from "./site-data";
@@ -23,7 +24,8 @@ export function ArticlesContent({ initialLocale = "en", prefix = "" }: { initial
   return <main>
     <Header prefix={prefix} locale={active} language={language} section="articles" />
     <section className="inner-hero"><p className="eyebrow">{local?.kicker || english.kicker}</p><h1>{hub.title}</h1><p>{hub.description}</p></section>
-    <section className="article-list">{articleEntries.map(([slug, article], index) => { const translated=getArticleCopy(slug as keyof typeof articles,language); return <a href={withLanguage(`/articles/${slug}`, language)} key={slug}><span>0{index + 1} / {active ? commonUi[active].guideLabel : "GUIDE"}</span><h2>{translated.title}</h2><p>{translated.description}</p><b>{active ? `${article.read.match(/\d+/)?.[0]} ${commonUi[active].minutes}` : article.read} · {active ? locales[active].read : english.read} ↗</b></a>; })}</section>
+    <nav className="guide-shortcuts" aria-label={novemberUi[language].choose}><h2>{novemberUi[language].choose}</h2>{(["joyagoo-stock-arrived-qc-time","joyagoo-payment-on-hold-order-status","joyagoo-actual-vs-volumetric-weight","joyagoo-tracking-not-updating"] as ArticleSlug[]).map(slug=><a key={slug} href={withLanguage(`/articles/${slug}`,language)}>{getArticleCopy(slug,language).title} ↗</a>)}</nav>
+    <section className="article-list">{articleEntries.map(([slug, article], index) => { const translated=getArticleCopy(slug as keyof typeof articles,language); return <a href={withLanguage(`/articles/${slug}`, language)} key={slug}><span>{String(index + 1).padStart(2,"0")} / {active ? commonUi[active].guideLabel : "GUIDE"}</span><h2>{translated.title}</h2><p>{translated.description}</p><b>{active ? `${article.read.match(/\d+/)?.[0]} ${commonUi[active].minutes}` : article.read} · {active ? locales[active].read : english.read} ↗</b></a>; })}</section>
     <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(breadcrumb).replace(/</g,"\\u003c")}} />
     <Footer prefix={prefix} language={language} section="articles" />
   </main>;

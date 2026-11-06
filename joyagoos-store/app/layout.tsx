@@ -7,8 +7,8 @@ import { buildPageMetadata, SITE_NAME, SITE_URL } from "./seo";
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   ...buildPageMetadata({
-    title: "Joyagoo Spreadsheet 2026 | Verified Finds & Product Links",
-    description: "Browse Joyagoo spreadsheet finds by category, verify live product links, compare images and options, and use practical QC and shipping guides updated for 2026.",
+    title: "Joyagoo Spreadsheet: Shoes, Hoodies & Buying Guides",
+    description: "Browse Joyagoo shoes, hoodies and accessories. Check product options, warehouse QC, order status and parcel weight before buying or shipping.",
     path: "/",
   }),
   robots: { index: true, follow: true },

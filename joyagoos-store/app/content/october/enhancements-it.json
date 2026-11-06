@@ -1,8 +1,8 @@
 {
   "joyagoo-qc-photo-checklist": {
-    "title": "Checklist foto QC Joyagoo: taglia, difetti e viste mancanti",
-    "description": "Controlla le foto QC Joyagoo in ordine: variante esatta, etichetta della taglia, misure, difetti visibili e viste mancanti. Usa una lista pratica prima di approvare.",
-    "summary": "Parti dall'ordine esatto, poi esamina l'articolo ricevuto. Segna ogni controllo come corrispondente, poco chiaro o non corrispondente. Una misura ambigua o una vista mancante richiedono prove prima della decisione successiva.",
+    "title": "Foto QC Joyagoo: taglie, difetti e controlli",
+    "description": "Verifica variante, misure e difetti visibili. Trova aiuto per Stock Arrived, foto mancanti e prossime azioni.",
+    "summary": "Apri le foto QC dell’ordine esatto. Controlla variante e taglia, poi le condizioni visibili. Se mancano immagini, consulta la guida Stock Arrived qui sotto prima di considerarlo un difetto del prodotto.",
     "caption": "Una scheda rapida per la revisione QC",
     "columns": [
       "Controllo",
@@ -107,7 +107,7 @@
     ]
   },
   "joyagoo-actual-vs-volumetric-weight": {
-    "summary": "Usa le dimensioni esterne del pacco imballato, mantieni visibili le unità e leggi la regola di fatturazione della linea scelta. Il calcolo seguente spiega l'aritmetica: non è un preventivo né afferma che tutte le linee usino lo stesso divisore.",
+    "summary": "Peso volumetrico = lunghezza × larghezza × altezza in cm ÷ divisore della linea. Confronta il peso reale solo se viene applicato il valore maggiore. Arrotondamenti e costi dipendono dalla linea scelta.",
     "caption": "Calcolo illustrativo con divisore ipotetico di 6.000",
     "columns": [
       "Dato o passaggio",
@@ -140,10 +140,12 @@
         "max(3, 4) = 4 kg",
         "Solo per una regola del maggiore tra i due, prima degli arrotondamenti"
       ]
-    ]
+    ],
+    "title": "Peso volumetrico Joyagoo: calcolatore e imballaggio",
+    "description": "Calcola il peso volumetrico con misure e divisore della linea. Confronta peso reale, imballaggio ed esempi di peso addebitabile."
   },
   "joyagoo-tracking-not-updating": {
-    "summary": "Usa il registro del pacco per identificare il numero corretto, conserva esattamente l'ultimo evento e leggi l'avviso della linea scelta. Una pagina senza aggiornamenti e una richiesta esplicita di intervento richiedono risposte diverse.",
+    "summary": "Identifica prima ordine prodotto o pacco internazionale. Stock Arrived riguarda il magazzino. Per l’estero usa il record del pacco e il corriere corretto; conserva evento e ora prima di chiedere aiuto.",
     "caption": "Registro del tracking: cosa controllare dopo",
     "columns": [
       "Risultato osservato",
@@ -171,7 +173,9 @@
         "Istruzioni nell'account autenticato o nel servizio del corriere",
         "Rispondi prontamente tramite il canale verificato"
       ]
-    ]
+    ],
+    "title": "Tracking Joyagoo fermo: controlli e prossimi passi",
+    "description": "Verifica numero del pacco, corriere, ultima scansione ed eccezioni. Distingui consegna al magazzino e spedizione internazionale."
   },
   "joyagoo-shipping-estimate-input-checklist": {
     "summary": "Registra destinazione, unità, misure imballate e ipotesi prima del confronto. Aggiorna il registro quando cambiano contenuto o imballaggio; una stima provvisoria non stabilisce l'importo finale.",

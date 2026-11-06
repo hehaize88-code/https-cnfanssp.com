@@ -1,8 +1,8 @@
 {
   "joyagoo-qc-photo-checklist": {
-    "title": "Lista kontroli zdjęć QC Joyagoo: rozmiar, wady i brakujące ujęcia",
-    "description": "Sprawdzaj zdjęcia QC Joyagoo po kolei: dokładny wariant, metkę rozmiaru, pomiary, widoczne wady i brakujące ujęcia. Użyj praktycznej listy przed zatwierdzeniem produktu.",
-    "summary": "Zacznij od dokładnego zamówienia, a potem sprawdź otrzymany produkt. Oznacz każdy punkt jako zgodny, niejasny lub niezgodny. Niejasny pomiar albo brakujące ujęcie wymagają dowodów przed kolejną decyzją.",
+    "title": "Zdjęcia QC Joyagoo: rozmiar, wady i lista kontroli",
+    "description": "Sprawdź wariant, wymiary i widoczne wady. Znajdź pomoc przy Stock Arrived, brakujących zdjęciach i kolejnych działaniach.",
+    "summary": "Otwórz QC dokładnego zamówienia. Najpierw sprawdź wariant i rozmiar, potem stan widoczny. Przy braku zdjęć użyj poradnika Stock Arrived poniżej, zanim uznasz produkt za wadliwy.",
     "caption": "Krótka karta kontroli QC",
     "columns": [
       "Kontrola",
@@ -107,7 +107,7 @@
     ]
   },
   "joyagoo-actual-vs-volumetric-weight": {
-    "summary": "Użyj zewnętrznych wymiarów gotowej paczki, pokazuj jednostki i przeczytaj regułę naliczania wybranej linii. Poniższe obliczenie wyjaśnia arytmetykę; nie jest wyceną frachtu ani twierdzeniem, że wszystkie linie stosują ten sam dzielnik.",
+    "summary": "Waga objętościowa = długość × szerokość × wysokość w cm ÷ dzielnik trasy. Porównuj z wagą rzeczywistą tylko przy zasadzie większej wartości. Zaokrąglenia i opłaty zależą od wybranej linii.",
     "caption": "Przykładowe obliczenie z hipotetycznym dzielnikiem 6000",
     "columns": [
       "Dane lub krok",
@@ -140,10 +140,12 @@
         "max(3, 4) = 4 kg",
         "Tylko przy regule większej z dwóch wartości, przed jej zaokrągleniem"
       ]
-    ]
+    ],
+    "title": "Waga objętościowa Joyagoo: kalkulator i pakowanie",
+    "description": "Oblicz wagę objętościową z wymiarów paczki i dzielnika trasy. Porównaj wagę rzeczywistą, opakowanie i przykłady rozliczenia."
   },
   "joyagoo-tracking-not-updating": {
-    "summary": "Na podstawie danych paczki ustal właściwy numer, zachowaj dokładne ostatnie zdarzenie i przeczytaj komunikat wybranej linii. Milcząca strona śledzenia i wyraźna prośba o działanie wymagają różnych odpowiedzi.",
+    "summary": "Ustal, czy sprawdzasz zamówienie produktu, czy paczkę międzynarodową. Stock Arrived to etap magazynowy. Do transportu międzynarodowego użyj rekordu paczki i właściwego przewoźnika; zachowaj zdarzenie i czas przed kontaktem.",
     "caption": "Rejestr śledzenia: co sprawdzić dalej",
     "columns": [
       "Zaobserwowany wynik",
@@ -171,7 +173,9 @@
         "Instrukcje na uwierzytelnionym koncie lub w usłudze przewoźnika",
         "Odpowiedz szybko przez zweryfikowany kanał"
       ]
-    ]
+    ],
+    "title": "Śledzenie Joyagoo bez aktualizacji: co sprawdzić",
+    "description": "Sprawdź numer paczki, przewoźnika, ostatni skan i wyjątki. Rozróżnij dostawę do magazynu i transport międzynarodowy."
   },
   "joyagoo-shipping-estimate-input-checklist": {
     "summary": "Przed porównaniem wyników zapisz miejsce docelowe, jednostki, pomiary paczki i założenia. Aktualizuj zapis przy zmianie zawartości lub pakowania; wstępny szacunek nie ustala końcowej kwoty.",
