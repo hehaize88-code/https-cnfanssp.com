@@ -20,5 +20,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return <html lang="en"><body>{children}<AnalyticsEvents/><script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(schema)}} /><Script src="https://www.googletagmanager.com/gtag/js?id=G-EQVYBRD6DV" strategy="afterInteractive" /><Script id="google-analytics" strategy="afterInteractive">{`window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag("js", new Date());
-gtag("config", "G-EQVYBRD6DV");`}</Script></body></html>;
+if (["joyagoos.store", "www.joyagoos.store"].includes(location.hostname)) {
+  gtag("config", "G-EQVYBRD6DV");
+}`}</Script></body></html>;
 }

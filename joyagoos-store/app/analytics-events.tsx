@@ -3,6 +3,7 @@
 import { useEffect } from "react";
 type AnalyticsWindow = Window & { dataLayer?: unknown[]; gtag?: (...args: unknown[]) => void };
 function track(name: string, parameters: Record<string, string | number>) {
+  if (!["joyagoos.store", "www.joyagoos.store"].includes(location.hostname)) return;
   const target = window as AnalyticsWindow;
   const data = { ...parameters, language: document.documentElement.lang, page_path: location.pathname, transport_type: "beacon" };
   if (target.gtag) target.gtag("event", name, data);
