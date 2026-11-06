@@ -24,7 +24,7 @@ The public site keeps all product, category and search actions pointed only at t
 ## Languages and editorial updates
 
 English retains the original URLs. German, Spanish, French and Italian use
-`/de`, `/es`, `/fr` and `/it`. Each of the 14 articles has complete server-rendered
+`/de`, `/es`, `/fr` and `/it`. Each of the 17 articles has complete server-rendered
 copy in all five languages; there is no browser translation dependency.
 `app/content/articles.json` stores parallel translations in EN/DE/ES/FR/IT order.
 Keep every field and section present in all five entries when editing. Dates
@@ -32,16 +32,29 @@ describe the actual editorial publication or review, not product availability.
 
 The catch-all route validates supported pages and keeps unknown URLs as 404s.
 Every page declares a self canonical and reciprocal language alternatives.
-The sitemap includes all 105 canonical pages. The homepage displays the first
-four article records, currently Germany, France, ordering and sizing guides.
+The sitemap includes all 120 canonical pages. The homepage displays the first
+four article records, currently weight estimation, shipping costs, shipping savings and rehearsal packing.
 
 The shipping worksheet accepts user-supplied quotes in USD. Blank amounts stay
 unknown; the tool never fetches live rates or computes import taxes. Existing
 GA4 events are retained, with localized article clicks and `shipping_estimate`
 added. No analytics-account configuration is changed by this release.
 
-`npm test` builds the production Pages worker and verifies all 105 page responses,
-70 complete article versions, language links, structured data, sitemap, 404s,
+`npm test` builds the production Pages worker and verifies all 120 page responses,
+85 complete article versions, language links, structured data, sitemap, 404s,
 canonical redirects, caching isolation and weight-calculation boundaries.
 Publish through the existing GitHub integration; no separate account connection
 or hosting reconfiguration is needed.
+
+## November 6, 2026 release
+
+Added the weight estimator, shipping-cost comparison and rehearsal-parcel guides
+in all five locales. Expanded the shipping-cost, Germany, France, QC and
+spreadsheet-use guides without changing their URLs. Home, spreadsheet and shipping
+entry points now connect these topics. The weight tool uses user-entered grams,
+quantities and explicit packaging; references are never sent to analytics.
+`weight_estimate` joins the existing catalog, article and shipping events.
+No GA4 account settings, catalog data source, scheduled publishing, other site
+folders or hosting configuration are changed. Product preview labels do not claim
+a fresh availability check. New English guides contain 1,200–1,800 words with
+complete parallel translations.

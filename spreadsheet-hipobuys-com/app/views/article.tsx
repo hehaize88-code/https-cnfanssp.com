@@ -1,4 +1,5 @@
 import GuideLayout from "../components/GuideLayout";
+import WeightEstimator from "../components/WeightEstimator";
 import ShippingCalculator from "../components/ShippingCalculator";
 import { getArticles, type Article } from "../article-data";
 import { baseUrl,localPath,t,type Lang } from "../i18n";
@@ -10,10 +11,11 @@ export default function ArticlePage({article,lang}:{article:Article;lang:Lang}) 
   const breadcrumbs={"@context":"https://schema.org","@type":"BreadcrumbList",itemListElement:[{name:t("Home",lang),item:baseUrl+localPath("/",lang)},{name:t("Articles",lang),item:baseUrl+localPath("/articles",lang)},{name:article.title,item:url}].map((x,i)=>({"@type":"ListItem",position:i+1,...x}))};
   return <GuideLayout lang={lang} path={path} kicker={article.kicker} title={article.title} intro={article.summary}>
     <article className="long-article">
+      {article.slug==="hipobuy-weight-estimator"?<div className="article-tool-link"><a href="#weight-estimator">{t("Open the tool ↓",lang)}</a></div>:article.slug==="hipobuy-shipping-cost-guide"?<div className="article-tool-link"><a href="#shipping-calculator">{t("Open the tool ↓",lang)}</a></div>:null}
       <nav className="breadcrumbs"><a href={localPath("/",lang)}>{t("Home",lang)}</a><span>/</span><a href={localPath("/articles",lang)}>{t("Articles",lang)}</a></nav>
       <div className="article-meta"><span>{t("Published",lang)} <time dateTime={article.published}>{article.published}</time></span><span>{t("Updated",lang)} <time dateTime={article.updated}>{article.updated}</time></span><span>{article.readTime}</span><span>{t("Independent guide",lang)}</span></div>
       <div className="article-layout"><aside className="article-toc"><p>{t("On this page",lang)}</p><ol>{article.sections.map((s,i)=><li key={i}><a href={`#section-${i+1}`}><span>{String(i+1).padStart(2,"0")}</span>{s.heading}</a></li>)}{article.slug==="hipobuy-shipping-cost-guide"?<li><a href="#shipping-calculator">{t("Shipping cost worksheet",lang)}</a></li>:null}</ol></aside>
-        <div className="article-prose">{article.sections.map((section,i)=><section id={`section-${i+1}`} key={i}><h2>{section.heading}</h2>{section.paragraphs.map((paragraph,j)=><p key={j}>{paragraph}</p>)}</section>)}
+        <div className="article-prose">{article.slug==="hipobuy-weight-estimator"?<WeightEstimator lang={lang}/>:null}{article.sections.map((section,i)=><section id={`section-${i+1}`} key={i}><h2>{section.heading}</h2>{section.paragraphs.map((paragraph,j)=><p key={j}>{paragraph}</p>)}</section>)}
           {article.slug==="hipobuy-shipping-cost-guide"?<ShippingCalculator lang={lang}/>:null}
           <section className="article-sources"><p className="section-kicker">{t("Reviewed",lang)} · <time dateTime={article.updated}>{article.updated}</time></p><h2>{t("Research notes",lang)}</h2><ul>{article.sources.map(source=><li key={source.label}><strong>{source.label}</strong><span>{source.note}{source.url?<small className="source-address">{source.url}</small>:null}</span></li>)}</ul></section>
           <section className="related-articles"><h2>{t("Next useful guides",lang)}</h2><ul>{related.map(a=><li key={a.slug}><a href={localPath(`/articles/${a.slug}`,lang)}>{a.title} →</a></li>)}</ul></section>

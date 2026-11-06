@@ -2,6 +2,7 @@ import assert from 'node:assert/strict';
 import test from 'node:test';
 import {readFile,mkdir,writeFile} from 'node:fs/promises';
 import {chargeableWeight} from '../app/shipping-math.ts';
+import {parcelWeight} from '../app/weight-math.ts';
 const copy=JSON.parse(await readFile(new URL('../app/content/articles.json',import.meta.url),'utf8'));
 const langs=['en','de','es','fr','it'];
 const base='https://spreadsheet-hipobuys.com';
@@ -14,7 +15,26 @@ test('weight calculation follows the chosen rule and billing increment',()=>{
   assert.equal(chargeableWeight(.3,1,1,1,5000,.1,false).billed,.30000000000000004);
   assert.throws(()=>chargeableWeight(3,40,30,25,0,.5,true));
 });
-test('all 105 pages have complete localized HTML and reciprocal SEO metadata',async()=>{
+test('item weight totals include quantities and one explicit packing allowance',()=>{
+  assert.deepEqual(parcelWeight([{grams:650,quantity:2},{grams:900,quantity:1},{grams:180,quantity:3}],350),{itemsGrams:2740,packedKg:3.09});
+  assert.equal(parcelWeight([{grams:650,quantity:1}],0).packedKg,.65);
+  for(const [rows,packing] of [[[],0],[[{grams:0,quantity:1}],0],[[{grams:1,quantity:1.5}],0],[[{grams:NaN,quantity:1}],0],[[{grams:1,quantity:1}],-1]])assert.throws(()=>parcelWeight(rows,packing));
+});
+test('all article fields have complete translations and related routes exist',()=>{
+  const slugs=new Set(copy.map(a=>a.slug));
+  assert.equal(slugs.size,17);
+  for(const a of copy){
+    for(const values of [a.title,a.description,a.summary,...a.sections.flatMap(s=>[s.heading,...s.paragraphs])]){
+      assert.equal(values.length,5,a.slug);assert.ok(values.every(v=>v.trim()),a.slug);
+    }
+    for(const slug of a.related)assert.ok(slugs.has(slug),slug);
+    if(['hipobuy-weight-estimator','reduce-hipobuy-shipping-costs','hipobuy-rehearsal-parcel-guide','hipobuy-shipping-cost-guide'].includes(a.slug)){
+      const words=[a.summary[0],...a.sections.flatMap(s=>[s.heading[0],...s.paragraphs.map(p=>p[0])])].join(' ').split(/\s+/).length;
+      assert.ok(words>=1200&&words<=1800,`${a.slug}: ${words} words`);
+    }
+  }
+});
+test('all 120 pages have complete localized HTML and reciprocal SEO metadata',async()=>{
   const entries=new Map();
   globalThis.caches={default:{async match(req){return entries.get(req.url)?.clone();},async put(req,res){entries.set(req.url,res.clone());}}};
   const {default:worker}=await import('../dist/client/_worker.js');
@@ -49,7 +69,7 @@ test('all 105 pages have complete localized HTML and reciprocal SEO metadata',as
         const schemas=[...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)].map(m=>JSON.parse(m[1]));
         assert.ok(schemas.some(s=>s['@type']==='Article'&&s.inLanguage===lang&&s.mainEntityOfPage===base+url),`schema ${url}`);
       }
-      if(path==='/articles')assert.equal((visible.match(/class="article-card"/g)||[]).length,14,url);
+      if(path==='/articles')assert.equal((visible.match(/class="article-card"/g)||[]).length,copy.length,url);
       if(path==='/') {
         assert.equal((visible.match(/class="clean-product-card"/g)||[]).length,12,url);
         for(const a of copy.slice(0,4))assert.ok(visible.includes(localized('/articles/'+a.slug,lang)),`latest article ${url}`);
@@ -65,7 +85,7 @@ test('all 105 pages have complete localized HTML and reciprocal SEO metadata',as
     }
   }
   const sitemap=await (await fetch('/sitemap.xml')).text();
-  assert.equal((sitemap.match(/<url>/g)||[]).length,105);
+  assert.equal((sitemap.match(/<url>/g)||[]).length,langs.length*paths.length);
   for(const lang of langs)for(const path of paths)assert.ok(sitemap.includes(`<loc>${base+localized(path,lang)}</loc>`));
   const robots=await (await fetch('/robots.txt')).text();assert.ok(robots.includes(base+'/sitemap.xml'));
   const httpRedirect=await worker.fetch(new Request('http://spreadsheet-hipobuys.com/de/shipping?ref=test'),env,ctx);
@@ -81,5 +101,5 @@ test('all 105 pages have complete localized HTML and reciprocal SEO metadata',as
   await Promise.all(pending);
   assert.equal((await fetch('/de/articles')).headers.get('x-hipo-cache'),'HIT');
   assert.equal((await fetch('/de/articles',{accept:'text/x-component',rsc:'1'})).headers.get('x-hipo-cache'),null);
-  console.log('Verified: 105 pages, 70 article versions, 5 hubs, reciprocal hreflang, sitemap, redirects and 404s.');
+  console.log('Verified: 120 pages, 85 article versions, 5 hubs, reciprocal hreflang, sitemap, redirects and 404s.');
 });

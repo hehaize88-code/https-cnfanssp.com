@@ -10,7 +10,7 @@ import type { Article } from "../article-data";
 
 const mainSite = "https://cnfanssp.com";
 
-export default function Home({lang, articles}:{lang:Lang; articles:Article[]}) {
+export default function Home({lang, articles}:{lang:Lang; articles:Pick<Article,"slug"|"title"|"kicker"|"readTime">[]}) {
   const [query, setQuery] = useState("");
   const [category, setCategory] = useState("All");
 
@@ -40,23 +40,23 @@ export default function Home({lang, articles}:{lang:Lang; articles:Article[]}) {
 
     <section className="clean-hero">
       <div className="clean-hero-copy">
-        <p className="eyebrow"><span className="status-dot" /> Guides updated October 2026</p>
+        <p className="eyebrow"><span className="status-dot" /> Guides reviewed November 2026</p>
         <h1>Hipobuy spreadsheet,<br/><em>made easier.</em></h1>
-        <p>Search current product links, open the exact source page, and check listing freshness before you decide.</p>
-      </div>
+        <p>Search product links, check QC, and estimate packed weight before comparing shipping costs.</p>
+      <div className="hero-links"><a href="/articles/hipobuy-weight-estimator#weight-estimator">Estimate weight →</a><a href="/shipping#shipping-calculator">Calculate shipping →</a><a href="/articles/how-to-buy-on-hipobuy">Read the buying guide →</a></div></div>
       <div className="clean-search-card">
         <p className="search-label">Search the spreadsheet</p>
         <form onSubmit={searchMainSite} className="clean-search"><input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Try shoes, hoodies or jerseys" aria-label="Search product finds"/><button type="submit" aria-label="Search">→</button></form>
-        <div className="search-meta"><span><b>9</b> categories</span><span><b>12</b> preview rows</span><span><b>90 days</b> storage stated by app</span></div>
+        <div className="search-meta"><span><b>9</b> categories</span><span><b>12</b> preview rows</span><span><b>2</b> Independent tools</span></div>
       </div>
     </section>
 
     <section className="clean-catalog">
-      <div className="clean-section-title"><div><p className="eyebrow">Product index</p><h2>Browse current finds</h2></div><p>These cards are source-page snapshots. Confirm the live listing, price and available options before ordering.</p></div>
+      <div className="clean-section-title"><div><p className="eyebrow">Product index</p><h2>Browse product categories</h2></div><p>These preview links are a starting point. Open the source listing to check the exact item, current price and available options.</p></div>
       <div className="clean-tabs" role="group" aria-label="Filter product category">{["All", ...categories].map((item) => <button type="button" key={item} onClick={() => setCategory(item)} className={item === category ? "active" : ""}>{item}</button>)}</div>
 
       {visible.length ? <div className="clean-product-grid">{visible.map((product) => <article className="clean-product-card" key={product.id}>
-        <a href={product.url} className="clean-product-image"><img src={product.image} alt={`${t(product.category,lang)} · ${product.id}`} width="600" height="600" loading="lazy"/><span>Checked 25 Aug</span></a>
+        <a href={product.url} className="clean-product-image"><img src={product.image} alt={`${t(product.category,lang)} · ${product.id}`} width="600" height="600" loading="lazy"/><span>Catalog preview</span></a>
         <div className="clean-product-copy"><p>{t(product.category,lang)} · #{product.id}</p><h3><a href={product.url}>{t(product.category,lang)} · {product.id}</a></h3><a href={product.url} className="clean-product-link">Open listing <span>↗</span></a></div>
       </article>)}</div> : <div className="empty-state"><h3>{t("No preview rows match",lang)} “{query}”.</h3><p>Try another term or search the complete catalog.</p><a href={`${mainSite}/search.html?channelid=2&keywords=${encodeURIComponent(query)}`}>Search full catalog ↗</a></div>}
 
@@ -78,7 +78,7 @@ export default function Home({lang, articles}:{lang:Lang; articles:Article[]}) {
     </section>
 
     <section className="clean-articles">
-      <div className="clean-section-title"><div><p className="eyebrow">Research library</p><h2>Read before you ship.</h2></div><p>Germany and France shipping, ordering and sizing: practical guides for your next decision.</p></div>
+      <div className="clean-section-title"><div><p className="eyebrow">Research library</p><h2>Read before you ship.</h2></div><p>Weight, shipping costs and rehearsal packing: choose the guide that answers your next question.</p></div>
       <div className="home-article-grid">{articles.slice(0, 4).map((article, index) => <article key={article.slug}><div><span>{String(index + 1).padStart(2, "0")}</span><small>{article.readTime}</small></div><p>{article.kicker}</p><h3><a href={`/articles/${article.slug}`}>{article.title}</a></h3><a href={`/articles/${article.slug}`}>Read full article <b>↗</b></a></article>)}</div>
       <a className="all-articles-link" href="/articles">View the article library →</a>
     </section>

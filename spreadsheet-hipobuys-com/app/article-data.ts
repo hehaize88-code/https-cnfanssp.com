@@ -7,6 +7,7 @@ export type Article = {
   sections:ArticleSection[]; sources:{label:string; note:string; url?:string}[]; related:string[];
 };
 const sources:Record<string,{label:string;note:string;url?:string}>={
+  official:{label:"Hipobuy official website",note:"The official homepage identifies warehouse consolidation and Rehearsal Parcel. Fees, available lines and processing conditions must be checked in the current account.",url:"https://hipobuy.com/"},
   method:{label:"Editorial method",note:"Original checklists and worked examples. Example amounts are not live quotes; verify your own listing and account terms."},
   app:{label:"Hipobuy app listing · Apple App Store",note:"Describes purchasing from Chinese marketplaces. Platform statements are not guarantees for individual orders.",url:"https://apps.apple.com/us/app/hipobuy/id6748938660"},
   zoll:{label:"German customs · zoll.de",note:"Destination reference for import requirements; check current guidance for your goods.",url:"https://www.zoll.de/EN/Private-individuals/Postal_consignments_internet_order/Shipments-from-a-non-EU-country/Duties-and-taxes/Assessment-of-taxes-and-duties/assessment-of-taxes-and-duties.html"},

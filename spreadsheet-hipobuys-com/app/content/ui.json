@@ -1524,5 +1524,285 @@
     "Buscar en todo el catálogo ↗",
     "Rechercher dans tout le catalogue ↗",
     "Cerca nell’intero catalogo ↗"
+  ],
+  "Plan with your own measurements": [
+    "Plan with your own measurements",
+    "Mit eigenen Messwerten planen",
+    "Planifica con tus propias medidas",
+    "Planifier avec vos propres mesures",
+    "Pianifica con le tue misure"
+  ],
+  "Hipobuy weight estimator": [
+    "Hipobuy weight estimator",
+    "Hipobuy-Gewichtsrechner",
+    "Calculadora de peso Hipobuy",
+    "Estimateur de poids Hipobuy",
+    "Calcolatore del peso Hipobuy"
+  ],
+  "Enter the weight of one item in grams and its quantity. Add packaging once. These are your estimates, not warehouse measurements or a shipping quote.": [
+    "Enter the weight of one item in grams and its quantity. Add packaging once. These are your estimates, not warehouse measurements or a shipping quote.",
+    "Gib das Gewicht eines Artikels in Gramm und die Stückzahl ein. Verpackung nur einmal addieren. Dies sind deine Schätzwerte, keine Lagermessungen oder Versandangebote.",
+    "Introduce el peso de una unidad en gramos y la cantidad. Añade el embalaje una sola vez. Son tus estimaciones, no medidas del almacén ni un presupuesto de envío.",
+    "Saisissez le poids d’un article en grammes et sa quantité. Ajoutez l’emballage une seule fois. Ce sont vos estimations, pas des mesures d’entrepôt ni un devis de transport.",
+    "Inserisci il peso di un articolo in grammi e la quantità. Aggiungi l’imballaggio una sola volta. Sono stime personali, non misure del magazzino né un preventivo di spedizione."
+  ],
+  "Item": [
+    "Item",
+    "Artikel",
+    "Artículo",
+    "Article",
+    "Articolo"
+  ],
+  "Item reference (optional)": [
+    "Item reference (optional)",
+    "Artikelreferenz (optional)",
+    "Referencia del artículo (opcional)",
+    "Référence de l’article (facultative)",
+    "Riferimento articolo (facoltativo)"
+  ],
+  "Weight per item (g)": [
+    "Weight per item (g)",
+    "Gewicht pro Stück (g)",
+    "Peso por unidad (g)",
+    "Poids unitaire (g)",
+    "Peso per articolo (g)"
+  ],
+  "Quantity": [
+    "Quantity",
+    "Stückzahl",
+    "Cantidad",
+    "Quantité",
+    "Quantità"
+  ],
+  "Remove item": [
+    "Remove item",
+    "Artikel entfernen",
+    "Eliminar artículo",
+    "Retirer l’article",
+    "Rimuovi articolo"
+  ],
+  "Add item": [
+    "Add item",
+    "Artikel hinzufügen",
+    "Añadir artículo",
+    "Ajouter un article",
+    "Aggiungi articolo"
+  ],
+  "Additional packaging (g)": [
+    "Additional packaging (g)",
+    "Zusätzliche Verpackung (g)",
+    "Embalaje adicional (g)",
+    "Emballage supplémentaire (g)",
+    "Imballaggio aggiuntivo (g)"
+  ],
+  "Include only packaging not already counted in the item weights. Enter 0 only if no additional weight is needed. Item references stay in this form and are not sent to analytics.": [
+    "Include only packaging not already counted in the item weights. Enter 0 only if no additional weight is needed. Item references stay in this form and are not sent to analytics.",
+    "Erfasse nur Verpackung, die nicht bereits im Artikelgewicht enthalten ist. Gib 0 nur ein, wenn kein zusätzliches Gewicht anfällt. Artikelreferenzen bleiben im Formular und werden nicht an die Analyse übermittelt.",
+    "Incluye solo el embalaje que no esté contado en los pesos. Introduce 0 solo si no hay peso adicional. Las referencias quedan en el formulario y no se envían a analítica.",
+    "Incluez uniquement l’emballage absent des poids des articles. Saisissez 0 seulement sans poids supplémentaire. Les références restent dans ce formulaire et ne sont pas transmises aux statistiques.",
+    "Includi solo l’imballaggio non già conteggiato nei pesi. Inserisci 0 solo senza peso aggiuntivo. I riferimenti restano nel modulo e non vengono inviati alle statistiche."
+  ],
+  "Estimate packed weight": [
+    "Estimate packed weight",
+    "Paketgewicht schätzen",
+    "Estimar peso embalado",
+    "Estimer le poids emballé",
+    "Stima il peso imballato"
+  ],
+  "Enter a positive weight, a whole quantity and a non-negative packaging allowance.": [
+    "Enter a positive weight, a whole quantity and a non-negative packaging allowance.",
+    "Gib ein positives Gewicht, eine ganze Stückzahl und ein Verpackungsgewicht ab null ein.",
+    "Introduce un peso positivo, una cantidad entera y un peso de embalaje no negativo.",
+    "Saisissez un poids positif, une quantité entière et un poids d’emballage positif ou nul.",
+    "Inserisci peso positivo, quantità intera e peso dell’imballaggio non negativo."
+  ],
+  "Items subtotal": [
+    "Items subtotal",
+    "Artikelgewicht gesamt",
+    "Peso total de artículos",
+    "Poids total des articles",
+    "Peso totale degli articoli"
+  ],
+  "Estimated packed weight": [
+    "Estimated packed weight",
+    "Geschätztes Paketgewicht",
+    "Peso embalado estimado",
+    "Poids emballé estimé",
+    "Peso imballato stimato"
+  ],
+  "This is scale weight only. Parcel dimensions, route rules and rounding may produce a higher chargeable weight.": [
+    "This is scale weight only. Parcel dimensions, route rules and rounding may produce a higher chargeable weight.",
+    "Dies ist nur das physische Gewicht. Paketmaße, Linienregeln und Rundung können zu einem höheren Abrechnungsgewicht führen.",
+    "Es solo el peso físico. Las dimensiones, reglas de la ruta y redondeo pueden aumentar el peso facturable.",
+    "Il s’agit du poids physique uniquement. Les dimensions, règles de ligne et arrondis peuvent augmenter le poids facturable.",
+    "È solo il peso fisico. Dimensioni, regole della linea e arrotondamenti possono aumentare il peso fatturabile."
+  ],
+  "Compare chargeable weight and shipping costs →": [
+    "Compare chargeable weight and shipping costs →",
+    "Abrechnungsgewicht und Versandkosten vergleichen →",
+    "Comparar peso facturable y costes de envío →",
+    "Comparer poids facturable et frais d’envoi →",
+    "Confronta peso fatturabile e costi di spedizione →"
+  ],
+  "Guides reviewed November 2026": [
+    "Guides reviewed November 2026",
+    "Ratgeber geprüft im November 2026",
+    "Guías revisadas en noviembre de 2026",
+    "Guides révisés en novembre 2026",
+    "Guide revisionate a novembre 2026"
+  ],
+  "Search product links, check QC, and estimate packed weight before comparing shipping costs.": [
+    "Search product links, check QC, and estimate packed weight before comparing shipping costs.",
+    "Suche Produktlinks, prüfe QC-Fotos und schätze das Paketgewicht vor dem Versandkostenvergleich.",
+    "Busca enlaces, revisa fotos QC y estima el peso embalado antes de comparar envíos.",
+    "Trouvez des liens, vérifiez les photos QC et estimez le poids emballé avant de comparer les frais d’envoi.",
+    "Cerca link, controlla le foto QC e stima il peso imballato prima di confrontare le spedizioni."
+  ],
+  "Estimate weight →": [
+    "Estimate weight →",
+    "Gewicht schätzen →",
+    "Estimar peso →",
+    "Estimer le poids →",
+    "Stima il peso →"
+  ],
+  "Calculate shipping →": [
+    "Calculate shipping →",
+    "Versand berechnen →",
+    "Calcular envío →",
+    "Calculer l’envoi →",
+    "Calcola la spedizione →"
+  ],
+  "Read the buying guide →": [
+    "Read the buying guide →",
+    "Bestellratgeber lesen →",
+    "Leer la guía de compra →",
+    "Lire le guide d’achat →",
+    "Leggi la guida all’acquisto →"
+  ],
+  "Catalog preview": [
+    "Catalog preview",
+    "Katalogvorschau",
+    "Vista del catálogo",
+    "Aperçu du catalogue",
+    "Anteprima catalogo"
+  ],
+  "Browse product categories": [
+    "Browse product categories",
+    "Produktkategorien durchsuchen",
+    "Explorar categorías",
+    "Parcourir les catégories",
+    "Sfoglia le categorie"
+  ],
+  "These preview links are a starting point. Open the source listing to check the exact item, current price and available options.": [
+    "These preview links are a starting point. Open the source listing to check the exact item, current price and available options.",
+    "Diese Vorschaulinks dienen als Einstieg. Öffne das Angebot und prüfe Artikel, aktuellen Preis und verfügbare Varianten.",
+    "Estos enlaces son un punto de partida. Abre el anuncio para comprobar el artículo, precio actual y opciones disponibles.",
+    "Ces liens sont un point de départ. Ouvrez l’annonce pour vérifier l’article, le prix actuel et les options disponibles.",
+    "Questi link sono un punto di partenza. Apri l’inserzione per verificare articolo, prezzo attuale e opzioni disponibili."
+  ],
+  "Weight, shipping costs and rehearsal packing: choose the guide that answers your next question.": [
+    "Weight, shipping costs and rehearsal packing: choose the guide that answers your next question.",
+    "Gewicht, Versandkosten und Probeverpackung: Wähle den Ratgeber für deine nächste Frage.",
+    "Peso, costes de envío y embalaje de prueba: elige la guía para tu próxima duda.",
+    "Poids, frais d’envoi et préemballage : choisissez le guide adapté à votre prochaine question.",
+    "Peso, costi di spedizione e preimballaggio: scegli la guida per la tua prossima domanda."
+  ],
+  "Independent tools": [
+    "Independent tools",
+    "Unabhängige Rechner",
+    "Herramientas independientes",
+    "Outils indépendants",
+    "Strumenti indipendenti"
+  ],
+  "Hipobuy Spreadsheet: Finds, Weight Estimator & Shipping": [
+    "Hipobuy Spreadsheet: Finds, Weight Estimator & Shipping",
+    "Hipobuy Spreadsheet: Funde, Gewicht und Versand",
+    "Hipobuy Spreadsheet: productos, peso y envío",
+    "Hipobuy Spreadsheet : articles, poids et livraison",
+    "Hipobuy Spreadsheet: articoli, peso e spedizione"
+  ],
+  "Browse Hipobuy spreadsheet links, estimate parcel weight and compare shipping costs. Read practical QC, packing and buying guides in five languages.": [
+    "Browse Hipobuy spreadsheet links, estimate parcel weight and compare shipping costs. Read practical QC, packing and buying guides in five languages.",
+    "Entdecke Hipobuy-Produktlinks, schätze Paketgewicht und vergleiche Versandkosten. Praktische QC-, Verpackungs- und Bestellratgeber in fünf Sprachen.",
+    "Explora enlaces Hipobuy, estima el peso y compara costes de envío. Guías de QC, embalaje y compra en cinco idiomas.",
+    "Parcourez les liens Hipobuy, estimez le poids et comparez les frais d’envoi. Guides QC, emballage et achat en cinq langues.",
+    "Esplora link Hipobuy, stima il peso e confronta i costi di spedizione. Guide QC, imballaggio e acquisto in cinque lingue."
+  ],
+  "Hipobuy Articles: Weight, Shipping, QC & Buying Guides": [
+    "Hipobuy Articles: Weight, Shipping, QC & Buying Guides",
+    "Hipobuy-Ratgeber: Gewicht, Versand, QC und Einkauf",
+    "Guías Hipobuy: peso, envío, QC y compra",
+    "Guides Hipobuy : poids, livraison, QC et achat",
+    "Guide Hipobuy: peso, spedizione, QC e acquisti"
+  ],
+  "Practical Hipobuy guides to parcel weight, shipping costs, rehearsal packing, Germany and France delivery, QC photos and product links.": [
+    "Practical Hipobuy guides to parcel weight, shipping costs, rehearsal packing, Germany and France delivery, QC photos and product links.",
+    "Praktische Hipobuy-Ratgeber zu Paketgewicht, Versandkosten, Probeverpackung, Deutschland und Frankreich, QC-Fotos und Produktlinks.",
+    "Guías Hipobuy sobre peso, costes, embalaje de prueba, envíos a Alemania y Francia, fotos QC y enlaces de productos.",
+    "Guides Hipobuy sur le poids, les coûts, le préemballage, les livraisons en Allemagne et France, les photos QC et les liens produits.",
+    "Guide Hipobuy su peso, costi, preimballaggio, spedizioni in Germania e Francia, foto QC e link ai prodotti."
+  ],
+  "Hipobuy shipping costs: weigh, pack and compare.": [
+    "Hipobuy shipping costs: weigh, pack and compare.",
+    "Hipobuy-Versandkosten: wiegen, packen und vergleichen.",
+    "Costes de envío Hipobuy: pesa, embala y compara.",
+    "Frais d’envoi Hipobuy : peser, emballer et comparer.",
+    "Costi di spedizione Hipobuy: pesa, imballa e confronta."
+  ],
+  "Check your account’s current storage allowance and deadlines before combining orders. Consolidate only when the total cost and packing requirements make sense.": [
+    "Check your account’s current storage allowance and deadlines before combining orders. Consolidate only when the total cost and packing requirements make sense.",
+    "Prüfe aktuelle Lagerbedingungen und Fristen im Konto, bevor du Bestellungen bündelst. Fasse nur zusammen, wenn Gesamtkosten und Verpackung sinnvoll sind.",
+    "Consulta plazos y condiciones de almacenamiento de tu cuenta antes de agrupar pedidos. Consolida solo si el coste total y el embalaje resultan adecuados.",
+    "Vérifiez les conditions et délais de stockage du compte avant de regrouper des commandes. Regroupez seulement si le coût total et l’emballage sont adaptés.",
+    "Verifica condizioni e scadenze di deposito nell’account prima di riunire ordini. Consolida solo se costi totali e imballaggio sono adeguati."
+  ],
+  "Hipobuy official website": [
+    "Hipobuy official website",
+    "Offizielle Hipobuy-Website",
+    "Sitio oficial de Hipobuy",
+    "Site officiel Hipobuy",
+    "Sito ufficiale Hipobuy"
+  ],
+  "The official homepage identifies warehouse consolidation and Rehearsal Parcel. Fees, available lines and processing conditions must be checked in the current account.": [
+    "The official homepage identifies warehouse consolidation and Rehearsal Parcel. Fees, available lines and processing conditions must be checked in the current account.",
+    "Die offizielle Startseite nennt Lagerkonsolidierung und Rehearsal Parcel. Gebühren, verfügbare Linien und Bedingungen im aktuellen Konto prüfen.",
+    "La portada oficial presenta consolidación y Rehearsal Parcel. Comprueba tarifas, rutas disponibles y condiciones en tu cuenta actual.",
+    "La page officielle présente le regroupement et Rehearsal Parcel. Vérifiez frais, lignes disponibles et conditions dans le compte actuel.",
+    "La home ufficiale presenta consolidamento e Rehearsal Parcel. Verifica tariffe, linee e condizioni nell’account attuale."
+  ],
+  "Open the tool ↓": [
+    "Open the tool ↓",
+    "Rechner öffnen ↓",
+    "Abrir calculadora ↓",
+    "Ouvrir l’outil ↓",
+    "Apri lo strumento ↓"
+  ],
+  "Start with a category, then budget the parcel.": [
+    "Start with a category, then budget the parcel.",
+    "Mit einer Kategorie starten, dann das Paket planen.",
+    "Empieza por una categoría y calcula el presupuesto.",
+    "Commencez par une catégorie, puis préparez le budget.",
+    "Parti da una categoria, poi prepara il budget."
+  ],
+  "View product categories ↓": [
+    "View product categories ↓",
+    "Produktkategorien ansehen ↓",
+    "Ver categorías de productos ↓",
+    "Voir les catégories de produits ↓",
+    "Vedi le categorie di prodotti ↓"
+  ],
+  "Measure before choosing a shipping line.": [
+    "Measure before choosing a shipping line.",
+    "Vor der Linienwahl messen.",
+    "Mide antes de elegir una ruta.",
+    "Mesurez avant de choisir une ligne.",
+    "Misura prima di scegliere la linea."
+  ],
+  "Use item weights for a first budget. Use the packed parcel’s dimensions and the route’s rules for the final comparison.": [
+    "Use item weights for a first budget. Use the packed parcel’s dimensions and the route’s rules for the final comparison.",
+    "Nutze Artikelgewichte für das erste Budget. Vergleiche abschließend mit Paketmaßen und Linienregeln.",
+    "Usa pesos de artículos para el primer presupuesto. Compara finalmente con dimensiones del paquete y reglas de la ruta.",
+    "Utilisez les poids des articles pour le budget initial, puis les dimensions du colis et les règles de ligne pour la comparaison finale.",
+    "Usa i pesi degli articoli per il primo budget, poi dimensioni del pacco e regole della linea per il confronto finale."
   ]
 }
