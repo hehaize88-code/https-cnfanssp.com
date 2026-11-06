@@ -34,7 +34,16 @@ for(const lang of langs){
   }
   for(const image of select(d,n=>n.tagName==='img')){const src=attr(image,'src');assert.ok(src?.startsWith('/'));assert.ok(fs.existsSync(path.join(root,src)),route+' missing image '+src);}
   for(const script of select(d,n=>n.tagName==='script'&&attr(n,'type')==='application/ld+json'))JSON.parse(text(script));
-  if(page.path==='/articles/'){assert.equal(select(d,n=>classes(n,'article-index-card')).length,21,route+' article count');}
+  if(page.path==='/articles/'){
+   const cards=select(d,n=>classes(n,'article-index-card'));
+   assert.equal(cards.length,articles.length,route+' article count');
+   const countLabel=select(d,n=>attr(n,'data-article-count')!==undefined)[0];
+   assert.equal(attr(countLabel,'data-article-count'),String(cards.length),route+' visible article count');
+   assert.ok(text(countLabel).includes(String(cards.length)),route+' translated article count');
+   const description=attr(select(d,n=>n.tagName==='meta'&&attr(n,'name')==='description')[0],'content');
+   assert.ok(description.includes(String(cards.length)),route+' metadata article count');
+   assert.ok(!description.includes('19'),route+' stale article count');
+  }
   if(page.path==='/'){
    assert.equal(select(d,n=>n.tagName==='div'&&classes(n,'clean-article-list'))[0].childNodes.filter(n=>n.tagName==='a').length,4,route+' latest articles');
    const headings=select(d,n=>n.tagName==='h3').map(text).join(' ');

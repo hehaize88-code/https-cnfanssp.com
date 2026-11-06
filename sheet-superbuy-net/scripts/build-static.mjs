@@ -81,9 +81,11 @@ for(const lang of langs){
 fs.writeFileSync(path.join(out,'sitemap.xml'),'<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">'+sitemap.join('')+'</urlset>');
 fs.copyFileSync(path.join(out,'sitemap.xml'),'public/sitemap.xml');
 fs.writeFileSync(path.join(out,'robots.txt'),`User-agent: *\nAllow: /\nSitemap: ${base}/sitemap.xml\n`);
-fs.writeFileSync(path.join(out,'_headers'),'/*\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n  Cache-Control: public, max-age=0, must-revalidate\n');
+// Article listings must not retain an earlier article set after a deployment.
+const articleIndexHeaders=langs.flatMap(lang=>[prefix('/articles/',lang),prefix('/articles',lang)]).map(route=>`${route}\n  Cache-Control: no-store\n  CDN-Cache-Control: no-store\n  Cloudflare-CDN-Cache-Control: no-store\n`).join('');
+fs.writeFileSync(path.join(out,'_headers'),'/*\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n  Cache-Control: public, max-age=0, must-revalidate\n'+articleIndexHeaders);
 fs.writeFileSync(path.join(out,'404.html'),'<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>Page not found</title><link rel="stylesheet" href="/site.css"></head><body><main class="article-page"><h1>Page not found</h1><p>The requested page is unavailable.</p><a href="/">Superbuy Spreadsheet home</a></main></body></html>');
-fs.writeFileSync(path.join(out,'release.json'),JSON.stringify({release:'2026-11-06-search-and-content',languages:langs,articlesPerLanguage:compiled.articles.length,pages:total}));
+fs.writeFileSync(path.join(out,'release.json'),JSON.stringify({release:'2026-11-06-article-index-refresh',languages:langs,articlesPerLanguage:compiled.articles.length,pages:total}));
 // Support existing static-host output directories without a hosting-setting change.
 fs.rmSync('out',{recursive:true,force:true});fs.cpSync(out,'out',{recursive:true});
 console.log(`Built ${total} indexable pages: ${compiled.articles.length} articles in each of ${langs.length} languages.`);
