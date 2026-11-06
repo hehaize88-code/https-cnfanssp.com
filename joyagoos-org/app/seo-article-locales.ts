@@ -1,4 +1,6 @@
 import { getAddedTranslation } from "./content/localized-additions";
+import { novemberSlugs } from "./content/november-meta";
+import { improveArticle } from "./content/november-refresh";
 import { newArticleSlugs, practicalSection } from "./seo-refresh";
 import type {Lang} from "./site-data";
 import {getSeoArticle,seoArticles,type SeoArticle} from "./seo-articles";
@@ -450,7 +452,7 @@ export function getLocalizedSeoArticle(slug:string,lang:Lang):SeoArticle|undefin
   const item=getAddedTranslation(slug,lang) ?? getBaseLocalizedSeoArticle(slug,lang);
   if(!item)return undefined;
   const extra=practicalSection(slug,lang);
-  return extra ? {...item,sections:[extra,...item.sections]} : item;
+  return improveArticle(extra ? {...item,sections:[extra,...item.sections]} : item,lang);
 }
-const publishingOrder=[...newArticleSlugs,...spreadsheetArticleSlugs,"joyagoo-estimated-final-freight-adjustment-rules","joyagoo-rehearsal-packing-policy-confirmations-limits","joyagoo-warehouse-storage-policy-item-clocks-expiry-evidence","joyagoo-five-day-return-clock-qc-timestamp-deadline","joyagoo-return-eligibility-matrix-seller-condition-packaging","joyagoo-fee-policy-free-agent-service-transaction-costs","joyagoo-buying-fees-guide","joyagoo-qc-return-window-guide","volumetric-weight-guide","joyagoo-warehouse-rehearsal-shipping-guide","joyagoo-reviews-buyer-signals"];
+const publishingOrder=[...novemberSlugs,...newArticleSlugs,...spreadsheetArticleSlugs,"joyagoo-estimated-final-freight-adjustment-rules","joyagoo-rehearsal-packing-policy-confirmations-limits","joyagoo-warehouse-storage-policy-item-clocks-expiry-evidence","joyagoo-five-day-return-clock-qc-timestamp-deadline","joyagoo-return-eligibility-matrix-seller-condition-packaging","joyagoo-fee-policy-free-agent-service-transaction-costs","joyagoo-buying-fees-guide","joyagoo-qc-return-window-guide","volumetric-weight-guide","joyagoo-warehouse-rehearsal-shipping-guide","joyagoo-reviews-buyer-signals"];
 export function getLocalizedSeoArticles(lang:Lang){return publishingOrder.map(slug=>getLocalizedSeoArticle(slug,lang)).filter((article):article is SeoArticle=>Boolean(article));}

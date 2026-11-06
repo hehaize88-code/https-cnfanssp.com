@@ -1,29 +1,32 @@
 import type { Lang } from "./site-data";
 import { newArticleSlugs, orderSlug, trackingSlug } from "./content/article-builder";
+import { refundSlug, deliverySlug } from "./content/november-meta";
 
 export const revisionDate = "2026-10-13";
 export { newArticleSlugs };
 export const revisedArticleSlugs = ["joyagoo-buying-fees-guide", "joyagoo-qc-return-window-guide", "joyagoo-warehouse-rehearsal-shipping-guide", "volumetric-weight-guide"];
 export const guideGroups: Record<string, string[]> = {
-  home: [orderSlug, trackingSlug, "how-to-use-joyagoo-spreadsheet-dead-links", "joyagoo-product-links-taobao-weidian-1688"],
+  home: [refundSlug, orderSlug, deliverySlug, "joyagoo-buying-fees-guide"],
   spreadsheet: ["how-to-use-joyagoo-spreadsheet-dead-links", "joyagoo-product-links-taobao-weidian-1688", "joyagoo-link-not-working-deleted-listings-changed-ids", "joyagoo-spreadsheet-update-log-product-id-price-availability"],
-  guide: [orderSlug, "joyagoo-buying-fees-guide", "joyagoo-seller-listing-checklist-price-variant-domestic-shipping", "joyagoo-size-colour-listing-measurement-qc-checks"],
-  qc: ["joyagoo-spreadsheet-qc-photos-workflow", "joyagoo-size-colour-listing-measurement-qc-checks", "joyagoo-qc-return-window-guide", orderSlug],
-  shipping: [trackingSlug, "volumetric-weight-guide", "joyagoo-warehouse-rehearsal-shipping-guide", "joyagoo-estimated-final-freight-adjustment-rules"],
+  guide: ["joyagoo-buying-fees-guide", orderSlug, refundSlug, "joyagoo-seller-listing-checklist-price-variant-domestic-shipping"],
+  qc: [orderSlug, refundSlug, "joyagoo-qc-return-window-guide", "joyagoo-spreadsheet-qc-photos-workflow"],
+  shipping: [deliverySlug, trackingSlug, "volumetric-weight-guide", "joyagoo-estimated-final-freight-adjustment-rules"],
   finds: ["joyagoo-spreadsheet-categories-shoes-hoodies-jackets-accessories", "joyagoo-seller-listing-checklist-price-variant-domestic-shipping", "joyagoo-spreadsheet-qc-photos-workflow", "joyagoo-link-not-working-deleted-listings-changed-ids"]
 };
 export function articleGroup(slug: string) {
+  if(slug===refundSlug)return "qc";
+  if(slug===deliverySlug)return "shipping";
   if (slug === trackingSlug || /shipping|freight|weight|rehearsal|storage/.test(slug)) return "shipping";
   if (/qc|return|size-colour/.test(slug) && slug !== orderSlug) return "qc";
   if (/spreadsheet|links|listing/.test(slug)) return "spreadsheet";
   return "guide";
 }
 export const refreshUi: Record<Lang, {latest:string;related:string;contents:string;read:string;all:string;updated:string;minutes:string;source:string}> = {
-  en:{latest:"Latest Joyagoo guides",related:"Continue your research",contents:"In this guide",read:"Read guide",all:"All 21 guides",updated:"Updated",minutes:"min read",source:"Editorial guide · Check current order and route details"},
-  de:{latest:"Aktuelle Joyagoo-Ratgeber",related:"Passende Ratgeber",contents:"In diesem Ratgeber",read:"Ratgeber lesen",all:"Alle 21 Ratgeber",updated:"Aktualisiert",minutes:"Min. Lesezeit",source:"Redaktioneller Ratgeber · Aktuelle Bestell- und Routendaten prüfen"},
-  es:{latest:"Últimas guías de Joyagoo",related:"Continúa tu investigación",contents:"En esta guía",read:"Leer guía",all:"Las 21 guías",updated:"Actualizado",minutes:"min de lectura",source:"Guía editorial · Comprueba el pedido y la ruta actuales"},
-  fr:{latest:"Derniers guides Joyagoo",related:"Poursuivre votre recherche",contents:"Dans ce guide",read:"Lire le guide",all:"Les 21 guides",updated:"Mis à jour",minutes:"min de lecture",source:"Guide indépendant · Vérifiez la commande et la route actuelles"},
-  it:{latest:"Ultime guide Joyagoo",related:"Continua la ricerca",contents:"In questa guida",read:"Leggi la guida",all:"Tutte le 21 guide",updated:"Aggiornato",minutes:"min di lettura",source:"Guida editoriale · Verifica ordine e rotta attuali"}
+  en:{latest:"Latest Joyagoo guides",related:"Continue your research",contents:"In this guide",read:"Read guide",all:"All 23 guides",updated:"Updated",minutes:"min read",source:"Editorial guide · Check current order and route details"},
+  de:{latest:"Aktuelle Joyagoo-Ratgeber",related:"Passende Ratgeber",contents:"In diesem Ratgeber",read:"Ratgeber lesen",all:"Alle 23 Ratgeber",updated:"Aktualisiert",minutes:"Min. Lesezeit",source:"Redaktioneller Ratgeber · Aktuelle Bestell- und Routendaten prüfen"},
+  es:{latest:"Últimas guías de Joyagoo",related:"Continúa tu investigación",contents:"En esta guía",read:"Leer guía",all:"Las 23 guías",updated:"Actualizado",minutes:"min de lectura",source:"Guía editorial · Comprueba el pedido y la ruta actuales"},
+  fr:{latest:"Derniers guides Joyagoo",related:"Poursuivre votre recherche",contents:"Dans ce guide",read:"Lire le guide",all:"Les 23 guides",updated:"Mis à jour",minutes:"min de lecture",source:"Guide indépendant · Vérifiez la commande et la route actuelles"},
+  it:{latest:"Ultime guide Joyagoo",related:"Continua la ricerca",contents:"In questa guida",read:"Leggi la guida",all:"Tutte le 23 guide",updated:"Aggiornato",minutes:"min di lettura",source:"Guida editoriale · Verifica ordine e rotta attuali"}
 };
 export const hubCopy: Record<Lang, Record<string, [string,string]>> = {
   en:{home:["Joyagoo Spreadsheet, Finds & Buyer Guides","Browse product categories, search current listings and use practical guides for product links, QC photos, order status and shipping costs."],spreadsheet:["Joyagoo Spreadsheet: Product Links & Categories","Start with a category or product search, then check the original item ID, selected option and live price. Use the guides below to resolve dead links and compare listings."],guide:["How to Use Joyagoo: Links, Orders & Next Steps","Follow a product from a verified listing through purchase, warehouse review and parcel preparation. Find the next action for your current order status."],qc:["Joyagoo QC Photos: Measurements & Return Decisions","Compare warehouse photos with the option you ordered, request useful missing views and keep the applicable after-sales deadline visible."],shipping:["Joyagoo Shipping Cost, Time & Tracking","Compare parcel weight, understand each shipping stage and check the selected route’s current quote and tracking notice before making a decision."],finds:["Joyagoo Finds: Browse Product Categories","Explore products by category, open their current details and check size, option and availability before choosing an item."]},
@@ -33,11 +36,11 @@ export const hubCopy: Record<Lang, Record<string, [string,string]>> = {
   it:{home:["Joyagoo Spreadsheet, Finds e guide all’acquisto","Esplora categorie, cerca offerte attuali e consulta guide pratiche su link, foto QC, stati degli ordini e costi di spedizione."],spreadsheet:["Joyagoo Spreadsheet: link e categorie","Inizia da categoria o ricerca. Verifica ID originale, variante e prezzo attuale; usa le guide per link non validi e confronto delle offerte."],guide:["Come usare Joyagoo: link, ordini e prossimi passi","Segui un’offerta verificata attraverso acquisto, controllo in magazzino e preparazione del pacco. Trova l’azione adatta allo stato attuale."],qc:["Foto QC Joyagoo: misure e decisioni di reso","Confronta le foto con la variante ordinata, richiedi le viste utili mancanti e mantieni visibile la scadenza postvendita applicabile."],shipping:["Joyagoo: costi, tempi di spedizione e tracking","Confronta i pesi, distingui le fasi e verifica preventivo e avviso di tracking attuali della rotta scelta."],finds:["Joyagoo Finds: esplora le categorie","Cerca per categoria e apri i dettagli aggiornati. Controlla taglia, variante e disponibilità prima di scegliere."]}
 };
 
-Object.assign(hubCopy.en, {articles:["Joyagoo Guides: Spreadsheet, QC, Orders & Shipping", "Explore 21 practical Joyagoo guides covering product links, listing checks, QC photos, order status, fees, warehouse storage and tracking."]});
-Object.assign(hubCopy.de, {articles:["Joyagoo-Ratgeber: Spreadsheet, QC, Bestellungen & Versand", "21 praktische Joyagoo-Ratgeber zu Produktlinks, Angebotsprüfung, QC-Fotos, Bestellstatus, Gebühren, Lagerung und Tracking."]});
-Object.assign(hubCopy.es, {articles:["Guías Joyagoo: Spreadsheet, QC, pedidos y envío", "Consulta 21 guías prácticas sobre enlaces, ofertas, fotos QC, estados de pedido, tarifas, almacén y seguimiento Joyagoo."]});
-Object.assign(hubCopy.fr, {articles:["Guides Joyagoo : Spreadsheet, QC, commandes et livraison", "Consultez 21 guides pratiques sur les liens, offres, photos QC, statuts, frais, stockage et suivi Joyagoo."]});
-Object.assign(hubCopy.it, {articles:["Guide Joyagoo: Spreadsheet, QC, ordini e spedizioni", "Esplora 21 guide pratiche su link, inserzioni, foto QC, stati degli ordini, costi, deposito e tracking Joyagoo."]});
+Object.assign(hubCopy.en, {articles:["Joyagoo Guides: Spreadsheet, QC, Orders & Shipping", "Explore 23 practical Joyagoo guides covering product links, listing checks, QC photos, order status, fees, warehouse storage and tracking."]});
+Object.assign(hubCopy.de, {articles:["Joyagoo-Ratgeber: Spreadsheet, QC, Bestellungen & Versand", "23 praktische Joyagoo-Ratgeber zu Produktlinks, Angebotsprüfung, QC-Fotos, Bestellstatus, Gebühren, Lagerung und Tracking."]});
+Object.assign(hubCopy.es, {articles:["Guías Joyagoo: Spreadsheet, QC, pedidos y envío", "Consulta 23 guías prácticas sobre enlaces, ofertas, fotos QC, estados de pedido, tarifas, almacén y seguimiento Joyagoo."]});
+Object.assign(hubCopy.fr, {articles:["Guides Joyagoo : Spreadsheet, QC, commandes et livraison", "Consultez 23 guides pratiques sur les liens, offres, photos QC, statuts, frais, stockage et suivi Joyagoo."]});
+Object.assign(hubCopy.it, {articles:["Guide Joyagoo: Spreadsheet, QC, ordini e spedizioni", "Esplora 23 guide pratiche su link, inserzioni, foto QC, stati degli ordini, costi, deposito e tracking Joyagoo."]});
 
 const fee = {
 en:["A practical budget before you pay","Use a separate line for goods, seller-to-warehouse delivery, selected extras and international freight. Keep each amount in its displayed currency before converting the total. A spreadsheet product price is not a delivered price. The official fee explanation describes free core purchasing assistance while retaining other payable costs; confirm their current labels in your own order.","Illustration only: goods of USD 20, domestic delivery of USD 3, chosen extras of USD 2 and an assumed international quote of USD 15 make a planning subtotal of USD 40. These are invented inputs to demonstrate addition, not Joyagoo rates. Payment conversion, taxes or other applicable charges require their own checks. Replace every input with the current amount before making a decision."],

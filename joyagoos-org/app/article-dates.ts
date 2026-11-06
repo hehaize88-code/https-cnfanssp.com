@@ -1,6 +1,7 @@
 import type { Lang } from "./site-data";
 import { spreadsheetArticleSlugs } from "./seo-articles-spreadsheet";
 import { newArticleSlugs, revisedArticleSlugs, revisionDate } from "./seo-refresh";
+import { novemberSlugs, novemberUpdatedSlugs, releaseDate } from "./content/november-meta";
 
 const originalDates: Record<string, string> = {
   "joyagoo-estimated-final-freight-adjustment-rules": "2026-09-10",
@@ -11,9 +12,10 @@ const originalDates: Record<string, string> = {
   "joyagoo-fee-policy-free-agent-service-transaction-costs": "2026-08-29"
 };
 export function articleDates(slug: string, lang: Lang) {
+  if(novemberSlugs.includes(slug))return {published:releaseDate,modified:releaseDate};
   const isNew = newArticleSlugs.includes(slug) || (lang !== "en" && spreadsheetArticleSlugs.includes(slug));
   const published = isNew ? revisionDate : spreadsheetArticleSlugs.includes(slug) ? "2026-09-21" : originalDates[slug] ?? "2026-08-28";
-  return { published, modified: revisedArticleSlugs.includes(slug) ? revisionDate : published };
+  return { published, modified: novemberUpdatedSlugs.includes(slug) ? releaseDate : revisedArticleSlugs.includes(slug) ? revisionDate : published };
 }
 export function formatArticleDate(date: string, lang: Lang) {
   return new Intl.DateTimeFormat(lang, { year: "numeric", month: "short", day: "numeric", timeZone: "UTC" }).format(new Date(`${date}T00:00:00Z`));

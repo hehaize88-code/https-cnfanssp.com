@@ -1,4 +1,5 @@
 import { newEnglishArticles } from "./content/new-en";
+import { novemberEnglish } from "./content/november-en";
 import {returnMatrixArticle} from "./seo-article-return-matrix";
 import {returnClockArticle} from "./seo-article-return-clock";
 import {storagePolicyArticle} from "./seo-article-storage-policy";
@@ -8,6 +9,7 @@ import {spreadsheetArticles} from "./seo-articles-spreadsheet";
 
 export type SeoArticle={slug:string;title:string;description:string;meta:string;sourceNote:string;quickFacts:string[];sections:{heading:string;paragraphs:string[]}[]};
 export const seoArticles:SeoArticle[]=[
+...novemberEnglish,
 ...newEnglishArticles,
 ...spreadsheetArticles,
 freightAdjustmentArticle,
