@@ -1,0 +1,158 @@
+{
+  "hacoo-shipping-fees-checkout": {
+    "title": "Hacoo Versandkosten im Checkout – Land, Gewicht und Gesamtpreis",
+    "description": "Prüfe Hacoo Versandkosten vor der Zahlung, vergleiche Länder- und Gewichtsangaben und rechne den Gesamtpreis anhand eines Beispiels nach.",
+    "readTime": "8 Min. Lesezeit",
+    "factChecked": "Offizielle Versandseiten geprüft · 6. November 2026",
+    "sections": [
+      {
+        "title": "Versandkosten vor der Zahlung ablesen",
+        "body": [
+          "Öffne den Checkout mit den ausgewählten Artikeln, gib das Lieferziel an und prüfe Versandzeile und Endbetrag gemeinsam. Notiere Währung, Artikel, Mengen und Versandoption. Ein Produktpreis aus einer Tabelle dient als erster Vergleichswert. Für die Kaufentscheidung brauchst du die aktuelle Aufstellung des vollständigen Warenkorbs. Wiederhole die Prüfung, sobald du Zieladresse, Menge oder Variante änderst.",
+          "Bei einer bereits bezahlten Bestellung öffnest du stattdessen Beleg und Bestelldetails. Sie dokumentieren den vereinbarten Betrag. Bewahre eine spätere Schätzung getrennt davon auf. Wenn du über ein unabhängiges Produktverzeichnis einkaufst, gelten Checkout und Support des tatsächlich verwendeten Dienstes. Ein gleiches Foto in zwei Katalogen belegt weder gemeinsame Versandbedingungen noch ein gemeinsames Bestellkonto."
+        ]
+      },
+      {
+        "title": "Warum Hilfeseiten 3 kg und 5 kg nennen",
+        "body": [
+          "Am 6. November 2026 nannte die öffentliche Versandkosten-FAQ einen Grundbetrag für Pakete unter 3 kg. Eine andere Versandrichtlinie nannte einen Grundbetrag unter 5 kg. Beide beschrieben zusätzliche Kosten oberhalb ihrer jeweiligen Grenze. Die Seiten liefern zu wenig Kontext, um daraus eine für jedes aktuelle Land, Konto und jede Bestellung gültige Regel abzuleiten.",
+          "Vergleiche bei Bedarf die unten verlinkten Quellen und halte fest, welche Bedingung dein Checkout tatsächlich anzeigt. Frage den Support, wenn die Erklärung unklar bleibt. Wähle eine günstigere Schätzung nicht allein deshalb, weil eine andere Hilfeseite dazu passt. Erst das konkrete Angebot für deinen Warenkorb und die ausgewählte Versandart enthält die Bedingungen, die für einen belastbaren Vergleich erforderlich sind."
+        ]
+      },
+      {
+        "title": "Lieferziel und Währung konstant halten",
+        "body": [
+          "Vergleiche dasselbe Zielland, dieselbe Adressregion, Menge, Währung und Versandart. Ändert sich ein Wert, beginne eine neue Zeile in deinen Notizen. Ein Angebot nach Frankreich bestimmt keine Versandkosten für eine deutsche Adresse. Auch Euro- und Pfundbeträge brauchen ihre Währungsangabe, bevor du die Summen vergleichst. Kontrolliere, ob die angezeigte Versandoption für deine Adresse verfügbar bleibt.",
+          "Verwende das vom Checkout abgefragte Lieferziel. Kontoeinstellungen anderer Käufer nachzuahmen schafft keinen verlässlichen Vergleich. Verschwindet eine Versandart nach der Adresseingabe, dokumentiere diese Änderung. Eine allgemeine Länderangabe erklärt nicht unbedingt die Auswahl für eine bestimmte Adresse. Nenne dem Support Land und Warenkorbdaten und teile persönliche Adressdetails nur im dafür vorgesehenen privaten Kanal."
+        ]
+      },
+      {
+        "title": "Warenwert, Versand und Rabatt aufschlüsseln",
+        "body": [
+          "Notiere Warenwert, Versand, weitere separat angezeigte Kosten, angewandten Rabatt und Endbetrag. Prüfe, auf welchen Teil der Bestellung sich eine Ermäßigung bezieht. Ein Artikelrabatt wirkt anders als ein Versandrabatt. Lies Mindestbestellwert, gültige Artikel, Region und Ablaufdatum des Angebots. Ein geteilter Code ist zunächst ein Hinweis, dessen Bedingungen du im aktuellen Checkout prüfen musst.",
+          "Rechne die sichtbaren Zeilen nach. Stimmt die Summe nicht, öffne die vollständige Übersicht und kontrolliere Mengen und Varianten. Erfinde keine Gebühr, um die Differenz zu erklären. Lass den Dienst die unbekannte Position vor der Zahlung erläutern. Speichere anschließend die endgültige Aufstellung, damit du sie später mit dem Zahlungsbeleg vergleichen kannst."
+        ]
+      },
+      {
+        "title": "Rechenbeispiel mit erfundenen Beträgen",
+        "body": [
+          "Ein Beispielwarenkorb enthält Artikel für 36 £, Versand für 6 £ und einen Artikelrabatt von 4 £. Ohne weitere ausgewiesene Kosten ergibt sich 36 £ + 6 £ − 4 £ = 38 £. Diese Zahlen erklären ausschließlich die Rechnung. Sie sind kein Hacoo-Tarif, kein getesteter Rabatt und kein verfügbares Angebot. Ersetze alle Werte durch die tatsächlich angezeigten Positionen.",
+          "Angenommen, ein zusätzlicher Artikel kostet 8 £ und der Versand steigt dadurch auf 9 £. Bleibt der Rabatt gleich, beträgt die neue Summe 44 £ + 9 £ − 4 £ = 49 £. Der zusätzliche Einkauf erhöht den Zahlbetrag damit um 11 £. Warum der Versand steigt, muss die Bestellübersicht erklären. Die Rechnung beweist allein weder eine Gewichtsgrenze noch eine bestimmte Verpackungsregel."
+        ]
+      },
+      {
+        "title": "Gewicht anhand der Bestelldaten klären",
+        "body": [
+          "Wenn Gewicht den Preis beeinflusst, prüfe dessen Definition. Artikelgewicht, verpacktes Paketgewicht und abrechenbares Gewicht können unterschiedliche Werte bezeichnen. Ein Foto, eine Konfektionsgröße oder die Artikelanzahl liefert kein zuverlässiges Paketgewicht. Notiere Einheit und Bedeutung eines angezeigten Feldes. Fehlt die Angabe, bleibt sie offen, bis der Dienst sie erklärt.",
+          "Frage mit Warenkorbinhalt, Lieferland, Versandbetrag und dem unklaren Regeltext nach. Besonders nahe einer Grenze ist wichtig, welche Schwelle und welche Rundung gelten. Leite aus einer Bestellung keinen allgemeinen Kilopreis ab. Ein Mindestbetrag oder eine zeitlich begrenzte Aktion kann die Beziehung zwischen Gewicht und Preis verändern. Bewahre die Antwort zusammen mit dem Angebot auf, auf das sie sich bezieht."
+        ]
+      },
+      {
+        "title": "Kostenlosen Versand am Endbetrag bewerten",
+        "body": [
+          "Prüfe gültige Artikel, Zielland, Versandart und Ablaufdatum, bevor du den Warenkorb für eine Aktion vergrößerst. Vergleiche den Endbetrag deiner ursprünglich gewünschten Bestellung mit dem neuen Endbetrag. Die Bedingungen und die gesamte Ausgabe entscheiden, ob das Angebot für dich sinnvoll ist. Eine Bannerangabe braucht die Bestätigung im Checkout für die konkrete Auswahl.",
+          "Halte fest, was du ergänzt hast und wie sich Warenwert, Versand sowie Rabatte ändern. Greift die Aktion nicht, kontrolliere die sichtbaren Voraussetzungen und speichere das Ergebnis. Schicke dem Support die konkrete Abweichung. Das wiederholte Testen unpassender Codes erschwert die Zuordnung zwischen Änderung und Gesamtpreis und kann dazu führen, dass deine Notizen zu einem anderen Warenkorb gehören."
+        ]
+      },
+      {
+        "title": "Preis und Lieferzeit gemeinsam vergleichen",
+        "body": [
+          "Speichere beim Preis auch das angezeigte Lieferfenster der ausgewählten Option. Vergleiche Expressversand mit demselben Warenkorb und Ziel. Hacoos öffentliche Versandseite erklärt, dass Frachtregeln wechseln können und Zeitangaben als Orientierung dienen. Verwende deshalb die datierte Beschreibung deiner Bestellung, wenn du Kosten und erwartete Leistung abwägst. Prüfe besonders den Ausgangspunkt der Zeitangabe.",
+          "Nach der Zahlung gehören Fragen zum Versand in die Bestell- und Paketübersicht. Bei Teillieferungen ordnest du jede Sendungsnummer ihrem Inhalt zu. Für fehlende Scans und Zustellprobleme hilft der Tracking-Guide. Ein neuer Checkout zeigt keinen Standort eines früher versandten Pakets. Beleg, Versandnachrichten und Ereignisse bilden gemeinsam eine nachvollziehbare Grundlage für deine Rückfrage."
+        ]
+      },
+      {
+        "title": "Unerwartete Beträge nachvollziehen",
+        "body": [
+          "Vergleiche Zahlungsbeleg und gespeicherten Checkout. Prüfe Währung, Menge, Variante, Rabatt und Versandbetrag. Weicht der Kontoauszug ab, identifiziere Händler und Transaktion. Verwende für Umrechnung oder Zahlungsgebühren die Beschreibung des Zahlungsdienstes. Bewahre Bestellsumme und Zahlungsaufstellung getrennt auf, bis die Differenz geklärt ist. So bleibt erkennbar, welche Stelle welchen Betrag ausweist.",
+          "Beschreibe dem offiziellen Support erwarteten und berechneten Betrag sowie die abweichende Position. Übermittle Bestellnummer und Belege privat. Entferne persönliche Daten aus öffentlich geteilten Bildern. Eine Anfrage ist zunächst ein offener Vorgang. Warte auf die Anweisungen zu deinem Fall. Der Guide zum Erstattungsstatus erklärt, wie Antrag, Genehmigung und tatsächlicher Geldeingang dokumentiert werden können."
+        ]
+      },
+      {
+        "title": "Eine vollständige Checkout-Notiz speichern",
+        "body": [
+          "Eine brauchbare Notiz enthält Datum, Zielland, Versandart, Währung, Artikel, Mengen, Warenwert, Versand, Rabatte und Endbetrag. Ergänze die noch offene Frage, falls eine Bedingung unklar ist. Prüfe diese Daten unmittelbar vor der Zahlung erneut. Auch ein Größenwechsel kann eine andere Auswahl erzeugen. Speichere den Beleg später unter demselben verständlichen Namen.",
+          "Für Lieferfenster lies den Versandzeit-Guide, nach dem Versand den Tracking-Guide. Die Quellen unten zeigen, warum ein einzelner Versandpreis nicht für jede Bestellung eingesetzt werden kann. Bei widersprüchlichen Angaben sichere beide datierten Ansichten und bitte den zahlungsempfangenden Dienst um eine Erklärung für deinen Warenkorb. Damit bekommst du eine Antwort, die sich auf den geplanten Einkauf beziehen lässt."
+        ]
+      }
+    ]
+  },
+  "hacoo-football-shirt-size-guide": {
+    "title": "Hacoo Fußballtrikot-Größen – Brustweite, Länge und Passform",
+    "description": "Vergleiche Brustweite, Trikotlänge, Erwachsenen- und Juniorgrößen sowie Player- und Fan-Versionen mit einem gekennzeichneten Größenbeispiel.",
+    "readTime": "8 Min. Lesezeit",
+    "factChecked": "Messmethode und offizielle Supporthinweise geprüft · 6. November 2026",
+    "sections": [
+      {
+        "title": "Mit einem gut passenden Trikot beginnen",
+        "body": [
+          "Wähle ein eigenes Trikot, das du für denselben Zweck gern trägst. Für das Fußballspielen und für ein Trikot über einem Hoodie kannst du unterschiedlich viel Platz benötigen. Lege das Referenzstück entspannt flach hin und miss Brustweite und Länge in Zentimetern. Vergleiche diese Werte mit der Tabelle der genauen Produktversion. Lass das Referenztrikot während der Entscheidung griffbereit.",
+          "Ein Größenbuchstabe hilft, eine Tabellenzeile zu finden. Maße und Messmethode beschreiben die mögliche Passform genauer. Kontrolliere Zielgruppe, Erwachsenen- oder Juniorversion, Ärmelform und ausgewählte Ausführung. Auf einem Modellfoto kann eine andere Größe abgebildet sein als diejenige im Warenkorb. Prüfe die endgültige Auswahl deshalb ausdrücklich und speichere sie zusammen mit der zugehörigen Tabelle."
+        ]
+      },
+      {
+        "title": "Brustweite gleichartig messen",
+        "body": [
+          "Glätte das Trikot auf einer ebenen Fläche und miss zwischen den Punkten, die das Produktdiagramm vorgibt. Viele Tabellen verwenden eine Breite unterhalb der Achseln. Prüfe dieses Verfahren für das konkrete Angebot. Halte das Maßband gerade und den Stoff entspannt. Notiere die Messpunkte und wiederhole die Messung einmal, um Falten oder einen schrägen Verlauf zu erkennen.",
+          "Flache Breite und Umfang sind verschiedene Angaben. Aus hypothetischen 54 cm flacher Breite ergeben sich rechnerisch 108 cm beim Verdoppeln. Daraus wird noch kein Körpermaß und keine allgemeine Passformregel. Vergleiche auf beiden Seiten dasselbe Feld. Steht nur Brust in einer Tabelle, frage nach, ob Breite, Umfang oder empfohlenes Körpermaß gemeint ist."
+        ]
+      },
+      {
+        "title": "Länge und Saumposition prüfen",
+        "body": [
+          "Kläre den Startpunkt der Längenmessung. Der höchste Schulterpunkt und die hintere Kragenmitte ergeben unterschiedliche Messwege. Übernimm Start- und Endpunkt des Diagramms für dein eigenes Trikot. Bei gebogenem oder hinten verlängertem Saum kann eine einzelne Zahl nur eine Seite beschreiben. Frage nach dem fehlenden Maß, wenn die Saumposition deine Entscheidung beeinflusst.",
+          "Für einen lockeren Sitz vergleiche mit einem Kleidungsstück, das du tatsächlich locker trägst. Leite aus der gewünschten Länge nicht sofort einen größeren Buchstaben ab. Prüfe zusätzlich Brust und Schultern. Eine größere Größe kann mehrere Abmessungen gleichzeitig verändern. Behalte die gesamte Tabellenzeile im Blick, um diese Änderungen gemeinsam zu bewerten."
+        ]
+      },
+      {
+        "title": "Player- und Fan-Bezeichnungen einordnen",
+        "body": [
+          "Angebote verwenden mitunter Namen wie Player, Fan oder Stadium. Lies die Maße und Konstruktionsangaben der jeweiligen Version. Die Bezeichnung allein legt weder Dehnbarkeit noch Stoff noch einen einheitlichen Größenunterschied fest. Vergleiche die ausgewählte Ausführung. Ändert sich die Tabelle beim Versionswechsel, speichere diejenige, die zur endgültigen Auswahl gehört.",
+          "Betrachte Ärmelform, Einsätze, Kragenöffnung und Saumproportionen auf den Fotos. Diese Details können gezielte Rückfragen begründen. Ein eng wirkendes Modellfoto kann durch Größe oder Haltung entstehen. Fehlen wichtige Schulter- oder Ärmelmaße, frage danach. Ein größerer Buchstabe löst die Unklarheit über die Produktversion nicht automatisch. Prüfe die Kombination aus Version und Maßangaben vollständig."
+        ]
+      },
+      {
+        "title": "Zwei Größen anhand eines Beispiels vergleichen",
+        "body": [
+          "Dein Referenztrikot könnte 54 cm Brustweite und 72 cm Länge haben. In einer erfundenen Tabelle misst M 52 × 70 cm und L 55 × 73 cm. M wäre gegenüber der Referenz 2 cm schmaler und 2 cm kürzer. L wäre 1 cm weiter und 1 cm länger. Diese Demonstrationswerte gehören zu keinem hier getesteten Produkt.",
+          "Wenn dir deine Referenz passt, liegt L in diesem Beispiel näher daran. Trotzdem fehlen möglicherweise Ärmel, Schultern, Materialangaben und Messtoleranz. Ein Wunsch nach engerem Sitz kann die Entscheidung ändern. Schreibe den Grund für deine Auswahl auf. Ersetze die Beispielwerte vor einer Bestellung durch die echte Tabelle und lasse fehlende Felder offen, bis du eine verlässliche Antwort erhältst."
+        ]
+      },
+      {
+        "title": "Erwachsenen-, Junior- und Ärmeloptionen trennen",
+        "body": [
+          "Bestätige zunächst die Größenkategorie. Ein Junior-Altersbereich und ein Erwachsenenbuchstabe beschreiben unterschiedliche Systeme. Vergleiche mit einem passenden vorhandenen Trikot der vorgesehenen Person. Gibt es eine Körpergrößenempfehlung, speichere sie zusätzlich zu den Kleidungsmaßen. Übertrage eine Größe nicht allein aufgrund ähnlicher Fotos oder vertrauter Zahlen zwischen den Kategorien.",
+          "Langarmtrikots, Kurzarmtrikots und Trainingsteile können innerhalb derselben Kollektion verschiedene Maße haben. Kontrolliere Ärmellänge, Bündchenposition und Schulterkonstruktion. Wenn darunter eine weitere Schicht getragen werden soll, verwende eine passende Referenz mit dieser Schicht. Miss den Stoff entspannt und beschreibe dem Verkäufer den Einsatzzweck. Eine solche Frage ist konkreter als die allgemeine Bitte um die richtige Größe."
+        ]
+      },
+      {
+        "title": "Link, Bild und Variante zusammenhalten",
+        "body": [
+          "Speichere vollständigen Produktlink, Titel, Farbe, Version, Größe und Datum. Vergleiche das geöffnete Angebot mit der ursprünglichen Referenz. Kragenform, Ärmeldetails und Einsätze helfen bei der Zuordnung. Dasselbe Foto kann in mehreren Angeboten auftauchen. Bewahre deshalb das Ziel des Links zusammen mit dem Bild auf. Für Einträge unabhängiger Verzeichnisse gilt derselbe Prüfablauf.",
+          "Öffnet ein Link nur die App-Startseite oder ein nicht verfügbares Produkt, nutze den Link-Guide. Ein ähnliches Ersatztrikot ist ein neuer Kandidat mit einer eigenen Tabelle. Produktnummern verschiedener Kataloge können völlig unterschiedliche Artikel bezeichnen. Prüfe, welcher Dienst deine Zahlung annimmt und welche Bestellübersicht später dazu gehört. Damit bleibt deine Größenrecherche mit dem richtigen Einkauf verbunden."
+        ]
+      },
+      {
+        "title": "Namen, Nummern und Aufnäher bestätigen",
+        "body": [
+          "Bei Personalisierung prüfst du Schreibweise, Nummer, Position und ausgewählte Version. Speichere diese Einstellungen gemeinsam mit den Maßen. Ein Bild mit Namen oder Aufnäher belegt nicht den Inhalt jeder angebotenen Variante. Lies ausdrücklich, was die gewählte Option enthält, insbesondere bei einem einzelnen Trikot gegenüber einem Set mit weiteren Teilen.",
+          "Lies die aktuellen Bedingungen für Support und Rückgabe der personalisierten Auswahl vor der Zahlung. Frage bei Unklarheiten beim Verkäufer nach. Dieser Guide kann die Berechtigung eines Einzelfalls nicht bestimmen. Kontrolliere im letzten Warenkorb dieselbe Größe und alle Zusätze. Falls sich die Auswahl nach einem Bildschirmwechsel verändert, prüfe sie vollständig erneut, bevor du die Zahlung bestätigst."
+        ]
+      },
+      {
+        "title": "Das gelieferte Trikot dokumentieren",
+        "body": [
+          "Bewahre Verpackung und Bestellbeleg auf, während du den Artikel mit deiner Auswahl vergleichst. Fotografiere Größenetikett, Vorderseite, Rückseite und sichtbare Abweichungen. Miss Brustweite und Länge mit derselben entspannten Methode. Notiere Datum und Ergebnis. Bei einem Problem folgst du den Anweisungen des Dienstes vor Waschen, Ändern oder normaler Nutzung, die den Zustand beeinflussen könnten.",
+          "Hacoos öffentliches Hilfematerial nennt für Größen- und Falschlieferungsprobleme identifizierende Belege wie Etikett und Verpackungsangaben. Beachte die aktuellen Vorgaben deines Falls und übermittle Bestelldaten privat. Beschreibe die gemessene Abweichung sachlich. Etikett und tatsächliche Maße beantworten verschiedene Fragen. Dokumentiere beides, wenn das erwartete Etikett vorhanden ist, die Abmessungen jedoch anders ausfallen."
+        ]
+      },
+      {
+        "title": "Eine brauchbare Passformnotiz schreiben",
+        "body": [
+          "Notiere Version, Größenlabel, gemessene Brustweite, Länge und das verwendete Vergleichstrikot. Ergänze Einsatzzweck sowie bequeme oder enge Bereiche. Eine genaue Beobachtung zum Oberarm ist hilfreicher als ein pauschales Urteil über alle Plattformgrößen. Beschreibe Produktpassform, Lieferung und Support jeweils getrennt, damit andere Leser erkennen, worauf die Aussage beruht.",
+          "Öffne beim nächsten Einkauf die aktuelle Tabelle neu. Verwende deine Messmethode und bevorzugten Abmessungen erneut. Der frühere Größenbuchstabe allein genügt nicht. Der Bekleidungsgrößen-Guide vertieft den Vergleich, der QC-Guide unterstützt die Fotodokumentation. Bewahre die datierte Produktquelle bei jeder Notiz auf, damit spätere Änderungen des Angebots den Zusammenhang deiner Entscheidung nicht verdecken."
+        ]
+      }
+    ]
+  }
+}

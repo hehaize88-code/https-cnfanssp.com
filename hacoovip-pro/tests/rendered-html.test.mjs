@@ -220,12 +220,12 @@ test("publishes eight priority guides with multilingual routes and complete SEO 
   for (const slug of slugs) assert.match(sitemapXml, new RegExp(`/en/articles/${slug}`));
 });
 
-test("all 110 routes have complete language groups, working internal links and preserved images", async () => {
+test("all 120 routes have complete language groups, working internal links and preserved images", async () => {
   const sitemap = await (await fetchWorker("https://hacoovip.pro/sitemap.xml")).text();
   const urls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1]);
-  assert.equal(urls.length, 110);
-  assert.equal(new Set(urls).size, 110);
-  assert.equal((sitemap.match(/hreflang="x-default"/g) ?? []).length, 110);
+  assert.equal(urls.length, 120);
+  assert.equal(new Set(urls).size, 120);
+  assert.equal((sitemap.match(/hreflang="x-default"/g) ?? []).length, 120);
   const known = new Set(urls.map((url) => new URL(url).pathname));
   const fresh = ["hacoo-links-not-working", "hacoo-shoe-size-guide", "hacoo-refund-status"];
   const titles = new Set();
@@ -249,7 +249,7 @@ test("all 110 routes have complete language groups, working internal links and p
     for (const match of html.matchAll(/<a\b[^>]*href="([^"]+)"/g)) {
       const link = new URL(match[1].replaceAll("&amp;", "&"), url);
       if (link.hostname !== "hacoovip.pro") {
-        assert.equal(link.hostname, "cnfanshp.com", `${path}: external destination`);
+        assert.ok(["cnfanshp.com", "act.hacoo.app", "www.hacoo.app"].includes(link.hostname), `${path}: external destination`);
       } else {
         assert.ok(known.has(link.pathname), `${path} -> ${link.pathname}`);
         if (link.hash && link.pathname === path) assert.ok(html.includes(`id="${link.hash.slice(1)}"`), `${path}: anchor`);
@@ -261,15 +261,37 @@ test("all 110 routes have complete language groups, working internal links and p
     if (path.endsWith("/spreadsheet")) assert.equal((html.match(/data-track="spreadsheet_product_click"/g) ?? []).length, 6, path);
     if (fresh.includes(slug)) {
       assert.match(html, /"datePublished":"2026-10-12"/, path);
-      assert.match(html, /"dateModified":"2026-10-12"/, path);
+      assert.ok(html.includes(`"dateModified":"${slug === "hacoo-shoe-size-guide" ? "2026-11-06" : "2026-10-12"}"`), path);
       const prose = html.match(/<article class="section-shell article-prose">([\s\S]*?)<\/article>/)?.[1] ?? "";
       assert.equal((prose.match(/<section /g) ?? []).length, 9, path);
       assert.equal((prose.match(/<p[ >]/g) ?? []).length, 19, `${path}: complete paragraphs plus disclaimer`);
       const words = prose.replace(/<[^>]+>/g, " ").split(/\s+/).filter(Boolean).length;
       assert.ok(words >= (lang === "en" ? 1200 : 900), `${path}: ${words} words`);
       assert.ok(words <= 1800, path);
-      assert.equal((html.match(/data-track="related_article_click"/g) ?? []).length, 3, path);
+      assert.ok((html.match(/data-track="related_article_click"/g) ?? []).length >= 3, path);
       if (lang !== "en") assert.doesNotMatch(prose, /Start with the exact|Read the current status|Measure both feet/, path);
+    }
+  }
+});
+
+
+test("new shipping and football guides have complete translations, examples and current dates", async () => {
+  for (const lang of ["en", "de", "es", "fr", "it"]) {
+    const index = await (await fetchWorker(`https://hacoovip.pro/${lang}/articles`)).text();
+    for (const slug of ["hacoo-shipping-fees-checkout", "hacoo-football-shirt-size-guide"]) {
+      assert.ok(index.includes(`/${lang}/articles/${slug}`));
+      const html = await (await fetchWorker(`https://hacoovip.pro/${lang}/articles/${slug}`)).text();
+      const prose = html.match(/<article class="section-shell article-prose">([\s\S]*?)<\/article>/)?.[1] ?? "";
+      assert.equal((prose.match(/<section /g) ?? []).length, 10);
+      assert.match(prose, /<table>/);
+      assert.match(prose, /<caption>/);
+      assert.equal((prose.match(/<tbody>[\s\S]*?<\/tbody>/g) ?? []).length, 1);
+      const words = prose.replace(/<[^>]+>/g, " ").split(/\s+/).filter(Boolean).length;
+      assert.ok(words >= (lang === "en" ? 1200 : 900) && words <= 1800, `${lang}/${slug}: ${words} words`);
+      assert.match(html, /"datePublished":"2026-11-06"/);
+      assert.match(html, /"dateModified":"2026-11-06"/);
+      assert.match(html, /class="article-sources"|class="section-shell article-sources"/);
+      if (lang !== "en") assert.doesNotMatch(prose, /Find the shipping charge before paying|Measure a football shirt/);
     }
   }
 });

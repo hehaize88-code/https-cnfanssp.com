@@ -1,3 +1,4 @@
+import { novemberArticles, novemberArticleSlugs, novemberRefresh } from "@/lib/november-articles";
 import localizedRepairs from "@/lib/content/october/localized-repairs.json";
 import { octoberArticleSlugs, octoberArticles } from "@/lib/october-articles";
 import { seoRefresh } from "@/lib/seo-refresh";
@@ -22,7 +23,7 @@ export const legacyArticleSlugs = [
   "hacoo-shipping-time-cost",
 ] as const;
 
-export const articleSlugs = [...octoberArticleSlugs, ...legacyArticleSlugs, ...priorityArticleSlugs] as const;
+export const articleSlugs = [...novemberArticleSlugs, ...octoberArticleSlugs, ...legacyArticleSlugs, ...priorityArticleSlugs] as const;
 export const localizedArticleSlugs = articleSlugs;
 
 export type LegacyArticleSlug = (typeof legacyArticleSlugs)[number];
@@ -33,7 +34,7 @@ export type Article = {
   readTime: string;
   factChecked?: string;
   sources?: string[];
-  sections: { title: string; body: string[] }[];
+  sections: { title: string; body: string[]; table?: { caption: string; headers: string[]; rows: string[][]; note: string } }[];
 };
 
 const en: Record<LegacyArticleSlug, Article> & Partial<Record<PriorityArticleSlug, Article>> = {
@@ -437,11 +438,11 @@ function localizePriorityArticles(
 }
 
 export const articles: Record<Lang, Record<ArticleSlug, Article>> = {
-  en: { ...en, ...priorityEnglishArticles, ...octoberArticles.en },
-  de: { ...de, ...localizePriorityArticles("de", de, priorityLocalizedSourceArticlesDe), ...octoberArticles.de },
-  es: { ...es, ...localizePriorityArticles("es", es, priorityLocalizedSourceArticlesEs), ...octoberArticles.es },
-  fr: { ...fr, ...localizePriorityArticles("fr", fr, priorityLocalizedSourceArticlesFr), ...octoberArticles.fr },
-  it: { ...it, ...localizePriorityArticles("it", it, priorityLocalizedSourceArticlesIt), ...octoberArticles.it },
+  en: { ...en, ...priorityEnglishArticles, ...octoberArticles.en, ...novemberArticles.en },
+  de: { ...de, ...localizePriorityArticles("de", de, priorityLocalizedSourceArticlesDe), ...octoberArticles.de, ...novemberArticles.de },
+  es: { ...es, ...localizePriorityArticles("es", es, priorityLocalizedSourceArticlesEs), ...octoberArticles.es, ...novemberArticles.es },
+  fr: { ...fr, ...localizePriorityArticles("fr", fr, priorityLocalizedSourceArticlesFr), ...octoberArticles.fr, ...novemberArticles.fr },
+  it: { ...it, ...localizePriorityArticles("it", it, priorityLocalizedSourceArticlesIt), ...octoberArticles.it, ...novemberArticles.it },
 };
 
 for (const lang of ["en", "de", "es", "fr", "it"] as const) {
@@ -460,4 +461,22 @@ for (const lang of ["en", "de", "es", "fr", "it"] as const) {
   articles[lang]["hacoo-returns-refunds"].sections.unshift(refresh.returnsSection);
   articles[lang]["hacoo-sizing-guide"].sections.unshift(refresh.sizingSection);
   articles[lang]["how-does-hacoo-work"].sections.unshift(refresh.workSection);
+}
+
+// Refresh the answer before the longer reference material, in every language.
+for (const lang of ["en", "de", "es", "fr", "it"] as const) {
+  const refresh = novemberRefresh[lang];
+  for (const [slug, [title, description]] of Object.entries(refresh.meta)) {
+    Object.assign(articles[lang][slug as ArticleSlug], { title, description });
+  }
+  articles[lang]["hacoo-spreadsheet-live-source"].sections[0] = refresh.sheet;
+  articles[lang]["hacoo-sizing-guide"].sections[0] = refresh.sizing;
+  const shipping = articles[lang]["hacoo-shipping-time-cost"];
+  shipping.sections[0] = refresh.shipping;
+  shipping.factChecked = `${seoRefresh[lang].updated} · 2026-11-06`;
+  articles[lang]["hacoo-order-tracking"].sections.unshift(refresh.tracking);
+  articles[lang]["hacoo-product-links-codes"].sections.unshift(refresh.links);
+  const shoes = articles[lang]["hacoo-shoe-size-guide"];
+  const [example] = shoes.sections.splice(shoes.sections.length - 2, 1);
+  shoes.sections.splice(1, 0, example);
 }

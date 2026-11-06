@@ -156,7 +156,7 @@ for (const lang of languages) {
   copy[lang].hero = refresh.hero;
   copy[lang].heroAccent = refresh.accent;
   copy[lang].intro = refresh.home.description;
-  copy[lang].updated = `${refresh.updated} · 2026-10-12`;
+  copy[lang].updated = `${refresh.updated} · 2026-11-06`;
   copy[lang].productSub = {
     en: "Independent visual references. Prices are indicative; confirm the exact item, availability and final cost on the destination page.",
     de: "Unabhängige Bildreferenzen mit Richtpreisen. Prüfe den genauen Artikel, Verfügbarkeit und Gesamtkosten auf der Zielseite.",

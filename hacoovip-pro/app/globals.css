@@ -382,6 +382,18 @@ footer { background: #fff; border-top: 1px solid var(--line); }
 .article-toc ol { columns: 2; padding-left: 22px; line-height: 1.6; }
 .article-toc li { break-inside: avoid; padding: 5px 12px 5px 0; }
 .article-toc a { text-decoration: underline; text-underline-offset: 3px; }
+.article-actions { padding-top: 24px; }
+.article-actions > div { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 12px; }
+.article-actions a { padding: 12px 16px; border-radius: 12px; background: var(--lavender); color: var(--blue); line-height: 1.5; font-size: 14px; font-weight: 700; }
+.article-prose > section > div { min-width: 0; }
+.article-example table { width: 100%; border-collapse: collapse; text-align: left; font-size: 14px; }
+.article-example caption { padding: 14px; background: var(--lavender); font-weight: 700; text-align: left; }
+.article-example th, .article-example td { padding: 12px; border-bottom: 1px solid var(--line); }
+.article-example td { white-space: nowrap; }
+.article-example .example-note { margin-top: 12px; font-size: 13px; }
+.article-sources { max-width: 930px; padding-bottom: 28px; }
+.article-sources ul { padding-left: 20px; line-height: 1.8; }
+.article-sources a { overflow-wrap: anywhere; text-decoration: underline; text-underline-offset: 3px; }
 .article-prose section { scroll-margin-top: 100px; }
 .article-detail-hero .article-updated { font-size: 13px; opacity: .8; }
 .related-guides { padding-bottom: 44px; }

@@ -1,3 +1,4 @@
+import { novemberArticleSlugs, novemberRefresh } from "@/lib/november-articles";
 import { articleDates } from "@/lib/october-articles";
 import { seoRefresh } from "@/lib/seo-refresh";
 import type { Metadata } from "next";
@@ -24,6 +25,17 @@ const articleDetails = Object.fromEntries(articleSlugs.map((slug) => [slug, {
   ...articleDates(slug), image: slug === "hacoo-spreadsheet-live-source" ? "/products/amiri-ma1.webp" : "/hacoo-logo.png",
 }])) as Record<ArticleSlug, { published: string; modified: string; image: string }>;
 const articleSourceUrls: Record<ArticleSlug, string[]> = {
+  "hacoo-shipping-fees-checkout": [
+    "https://act.hacoo.app/faqshippingfee",
+    "https://act.hacoo.app/freeshiping",
+    "https://www.hacoo.app/en-US/pages/shipping-info",
+    "https://www.hacoo.app/en-US/pages/contact-us",
+  ],
+  "hacoo-football-shirt-size-guide": [
+    "https://act.hacoo.app/act/sara/helpcenter/home/qa3",
+    "https://act.hacoo.app/act/sara/helpcenter/order1",
+    "https://www.hacoo.app/en-US/pages/contact-us",
+  ],
   "hacoo-links-not-working": ["https://www.hacoo.app/"],
   "hacoo-shoe-size-guide": [],
   "hacoo-refund-status": ["https://act.hacoo.app/act/sara/helpcenter/return11"],
@@ -42,6 +54,7 @@ const articleSourceUrls: Record<ArticleSlug, string[]> = {
   "hacoo-shipping-time-cost": [
     "https://www.hacoo.app/en-US/pages/shipping-info",
     "https://act.hacoo.app/faqshippingfee",
+    "https://act.hacoo.app/freeshiping",
     "https://act.hacoo.app/act/sara/helpcenter/return11",
     "https://www.hacoo.app/en-US/pages/terms-of-service",
   ],
@@ -70,6 +83,7 @@ const articleSourceUrls: Record<ArticleSlug, string[]> = {
   "hacoo-order-tracking": [
     "https://www.hacoo.app/en-US/pages/shipping-info",
     "https://act.hacoo.app/faqshippingfee",
+    "https://act.hacoo.app/freeshiping",
     "https://act.hacoo.app/act/sara/helpcenter/return11",
   ],
   "hacoo-sizing-guide": [
@@ -203,9 +217,9 @@ function ProductGrid({ lang }: { lang: Lang }) {
 
 const guidesByRoute: Record<string, ArticleSlug[]> = {
   spreadsheet: ["hacoo-spreadsheet-live-source", "hacoo-links-not-working", "hacoo-product-links-codes"],
-  shipping: ["hacoo-shipping-time-cost", "hacoo-order-tracking", "hacoo-refund-status"],
+  shipping: ["hacoo-shipping-fees-checkout", "hacoo-shipping-time-cost", "hacoo-order-tracking", "hacoo-refund-status"],
   guide: ["how-does-hacoo-work", "hacoo-website-vs-app", "hacoo-returns-refunds"],
-  qc: ["hacoo-qc-guide", "hacoo-sizing-guide", "hacoo-shoe-size-guide"],
+  qc: ["hacoo-sizing-guide", "hacoo-shoe-size-guide", "hacoo-football-shirt-size-guide", "hacoo-qc-guide"],
   finds: ["hacoo-spreadsheet-live-source", "hacoo-links-not-working", "hacoo-sizing-guide"],
 };
 
@@ -215,6 +229,29 @@ function relatedArticles(slug: ArticleSlug): ArticleSlug[] {
     : /link|spreadsheet|region/.test(slug) ? "spreadsheet" : "guide";
   return [...new Set<ArticleSlug>([...guidesByRoute[group], "how-does-hacoo-work", "hacoo-refund-status"])]
     .filter((item) => item !== slug).slice(0, 3);
+}
+
+const nextSteps: Partial<Record<ArticleSlug, { label: number; path: string }[]>> = {
+  "hacoo-product-links-codes": [{ label: 1, path: "/spreadsheet" }, { label: 2, path: "/articles/hacoo-links-not-working" }, { label: 3, path: "#section-1" }],
+  "hacoo-spreadsheet-live-source": [{ label: 1, path: "/spreadsheet" }, { label: 2, path: "/articles/hacoo-links-not-working" }, { label: 3, path: "/articles/hacoo-product-links-codes" }],
+  "hacoo-links-not-working": [{ label: 1, path: "/spreadsheet" }, { label: 3, path: "/articles/hacoo-product-links-codes" }],
+  "hacoo-sizing-guide": [{ label: 5, path: "/articles/hacoo-shoe-size-guide" }],
+  "hacoo-shoe-size-guide": [{ label: 4, path: "/articles/hacoo-sizing-guide" }],
+  "hacoo-football-shirt-size-guide": [{ label: 4, path: "/articles/hacoo-sizing-guide" }, { label: 6, path: "/articles/hacoo-shipping-fees-checkout" }],
+  "hacoo-order-tracking": [{ label: 6, path: "/articles/hacoo-shipping-fees-checkout" }],
+  "hacoo-shipping-time-cost": [{ label: 6, path: "/articles/hacoo-shipping-fees-checkout" }, { label: 7, path: "/articles/hacoo-order-tracking" }],
+  "hacoo-shipping-fees-checkout": [{ label: 7, path: "/articles/hacoo-order-tracking" }],
+};
+
+function ArticleActions({ lang, slug }: { lang: Lang; slug: ArticleSlug }) {
+  const links = nextSteps[slug];
+  if (!links) return null;
+  const labels = novemberRefresh[lang].actions;
+  return <nav className="section-shell article-actions" aria-label={labels[0]}>
+    <strong>{labels[0]}</strong><div>{links.map(({ label, path }) =>
+      <Link key={path} data-track="article_next_step_click" href={path.startsWith("#") ? path : `/${lang}${path}`}>{labels[label]} →</Link>
+    )}</div>
+  </nav>;
 }
 
 function RelatedGuides({ lang, slugs }: { lang: Lang; slugs: ArticleSlug[] }) {
@@ -394,6 +431,7 @@ function ArticleDetail({ lang, slug }: { lang: Lang; slug: ArticleSlug }) {
       <p className="article-updated">{seoRefresh[lang].updated} · <time dateTime={detail.modified}>{detail.modified}</time></p>
       {article.factChecked && <small className="article-source-line">{article.factChecked}</small>}
     </div></section>
+    <ArticleActions lang={lang} slug={slug} />
     <nav className="section-shell article-toc" aria-label={seoRefresh[lang].contents}>
       <strong>{seoRefresh[lang].contents}</strong><ol>{article.sections.map((section, i) => <li key={section.title}><a data-track="article_toc_click" href={`#section-${i+1}`}>{section.title}</a></li>)}</ol>
     </nav>
@@ -401,10 +439,20 @@ function ArticleDetail({ lang, slug }: { lang: Lang; slug: ArticleSlug }) {
       {article.sources && <div className="research-basis"><strong>{sourceLabels.basis}</strong><p>{article.sources.map((source, index) => <span key={source}><span>{source}</span>{index < article.sources!.length - 1 ? " · " : ""}</span>)}</p><small>{sourceLabels.note}</small></div>}
       <ArticleVisual lang={lang} slug={slug} />
       {article.sections.map((section, index) => <section key={section.title} id={`section-${index + 1}`}>
-        <span>{String(index + 1).padStart(2, "0")}</span><div><h2>{section.title}</h2>{section.body.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}</div>
+        <span>{String(index + 1).padStart(2, "0")}</span><div><h2>{section.title}</h2>{section.body.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+          {section.table && <div className="article-example">
+            <div className="table-scroll"><table><caption>{section.table.caption}</caption>
+              <thead><tr>{section.table.headers.map((heading) => <th scope="col" key={heading}>{heading}</th>)}</tr></thead>
+              <tbody>{section.table.rows.map((row) => <tr key={row[0]}>{row.map((cell, i) => i === 0 ? <th scope="row" key={i}>{cell}</th> : <td key={i}>{cell}</td>)}</tr>)}</tbody>
+            </table></div><p className="example-note">{section.table.note}</p>
+          </div>}
+        </div>
       </section>)}
       <aside><strong>{c.independent}</strong><p>{c.disclaimer}</p></aside>
     </article>
+    {novemberArticleSlugs.some((item) => item === slug) && <section className="section-shell article-sources">
+      <h2>{novemberRefresh[lang].sourceLabel}</h2><ul>{articleSourceUrls[slug].map((url) => <li key={url}><a href={url} target="_blank" rel="noopener noreferrer">{url.replace("https://", "")}</a></li>)}</ul>
+    </section>}
     <RelatedGuides lang={lang} slugs={relatedArticles(slug)} />
     <section className="section-shell next-article"><div><small>{c.nav.articles}</small><h2>{nextArticle.title}</h2></div><Link data-track="article_click" href={`/${lang}/articles/${nextSlug}`}>{c.open} →</Link></section>
   </>;

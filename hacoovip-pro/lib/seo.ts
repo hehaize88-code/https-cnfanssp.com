@@ -1,3 +1,4 @@
+import { novemberRefresh } from "@/lib/november-articles";
 import { seoRefresh } from "@/lib/seo-refresh";
 import type { ArticleSlug } from "@/lib/articles";
 import type { Lang } from "@/lib/site-data";
@@ -221,4 +222,10 @@ for (const lang of ["en", "de", "es", "fr", "it"] as const) {
   }
   articleSeo[lang]["hacoo-spreadsheet-live-source"] = { title: refresh.sheetTitle, description: refresh.sheetDescription };
   articleSeo[lang]["hacoo-shipping-time-cost"] = { title: refresh.shippingTitle, description: refresh.shippingDescription };
+}
+
+for (const lang of ["en", "de", "es", "fr", "it"] as const) {
+  for (const [slug, [title, description]] of Object.entries(novemberRefresh[lang].meta)) {
+    articleSeo[lang][slug as ArticleSlug] = { title, description };
+  }
 }

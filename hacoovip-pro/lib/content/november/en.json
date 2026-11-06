@@ -1,0 +1,158 @@
+{
+  "hacoo-shipping-fees-checkout": {
+    "title": "Hacoo Shipping Fees at Checkout – Country, Weight and Total Cost",
+    "description": "Check Hacoo shipping fees before payment, compare country and weight rules, and understand conflicting help pages with a worked checkout example.",
+    "readTime": "8 min read",
+    "factChecked": "Official shipping pages checked · 6 November 2026",
+    "sections": [
+      {
+        "title": "Find the shipping charge before paying",
+        "body": [
+          "Open the checkout for your chosen items, select the delivery destination and read the shipping line alongside the final total. Save the currency, items, quantities and delivery option with the quote. A product card or shared spreadsheet price gives you a starting point for comparison. The amount shown for the complete basket is the figure to review before you authorize payment. Repeat this check whenever the basket or destination changes.",
+          "For an existing order, open the receipt and order details instead. These show what you actually agreed to pay. Keep a later estimate separate from that record. If you are browsing an independent product directory, follow the checkout and support arrangements of the service where you place the order. The same picture appearing in two catalogues does not establish a shared shipping policy or a shared order account."
+        ]
+      },
+      {
+        "title": "Why Hacoo help pages mention both 3 kg and 5 kg",
+        "body": [
+          "On 6 November 2026, the public shipping-fee FAQ described a base charge below 3 kg. A separate shipping-policy page described a base charge below 5 kg. Both referred to an additional charge above their stated threshold. The pages do not give enough context to decide that either threshold governs every current order, country or account. Treat this as a discrepancy to resolve against your own checkout.",
+          "Open the source links below if you want to compare the wording. Record which rule the app applies to your basket and ask support when the explanation remains unclear. Avoid choosing the lower-looking estimate simply because an older page supports it. This guide supplies a checking method. Your selected delivery service and order-specific quote provide the missing conditions needed to calculate a payable amount."
+        ]
+      },
+      {
+        "title": "Compare the same destination and currency",
+        "body": [
+          "A useful comparison fixes the destination country, address area, currency, quantity and delivery method. If one of these changes, start a new row in your notes. An amount quoted to France cannot establish the shipping charge for a UK address. Likewise, a euro-denominated screenshot and a pound-denominated basket need their currencies recorded before you compare totals. Check whether the displayed delivery option is still available for the selected address.",
+          "Use the destination requested by the checkout rather than changing account settings to imitate another shopper. If a delivery method disappears after entering an address, keep that result in your record. A national delivery estimate may be too broad to describe the option available to a particular address. You can ask support about that specific difference using the destination country and basket details without publishing personal address information."
+        ]
+      },
+      {
+        "title": "Separate the item subtotal, shipping and discounts",
+        "body": [
+          "Write down the item subtotal, shipping line, any separately displayed charges, applied discount and final amount. Check where a discount is applied. A reduction in item prices and a reduction in shipping have different effects on the basket. Read any minimum spend, eligible items, region and expiry shown with the offer. A code found in a social post is a candidate to test under its terms.",
+          "Use a simple arithmetic check on the visible lines. If the total differs, expand any summary controls and look for a changed quantity, selected option or additional displayed charge. Avoid inventing a fee to fill the gap. Ask the service to identify the unmatched line before paying. Save the final breakdown once everything agrees, particularly if you expect to compare it with a receipt later."
+        ]
+      },
+      {
+        "title": "Worked example with illustrative amounts",
+        "body": [
+          "Suppose a demonstration basket contains items costing £36, shows £6 delivery and applies a £4 item discount. With no other charge displayed, the arithmetic is £36 + £6 − £4 = £38. These are illustrative figures created to explain the calculation. They are not a Hacoo tariff, a tested coupon or an offer available to your account. Replace every amount with the lines visible in your own checkout.",
+          "Now suppose adding an £8 item changes delivery to £9 while the discount stays £4. The new total is £44 + £9 − £4 = £49. The extra item increases the amount payable by £11. Comparing £49 with £38 makes that effect visible. You still need the checkout explanation to establish why delivery changed. The arithmetic alone cannot prove that a weight threshold, packaging rule or promotion caused it."
+        ]
+      },
+      {
+        "title": "Ask about weight without guessing it from photographs",
+        "body": [
+          "If weight affects your quote, identify the weight definition used for that order. Product weight, packed parcel weight and a carrier's chargeable weight can describe different things. A photo, clothing size or count of items cannot supply a reliable parcel weight. Check any weight field shown by the service and record its unit. If none is shown, keep the value unknown while you ask for clarification.",
+          "A precise support question can include the basket contents, destination, quoted shipping amount and the rule you are trying to understand. Ask which threshold and rounding method apply, especially when the basket appears close to a boundary. Avoid deriving a universal price per kilogram from one order. A single example may include a minimum charge or an offer that changes the relationship between weight and price."
+        ]
+      },
+      {
+        "title": "Evaluate free-shipping offers using the final total",
+        "body": [
+          "Read the conditions attached to an offer before adding products to reach a threshold. Check eligible items, delivery country, delivery method and expiry. Then compare the amount payable for the basket you wanted with the larger basket that qualifies. An offer is useful when its full conditions and the final amount suit your purchase. The word free on a banner leaves those questions open until checkout confirms them.",
+          "Keep the two baskets comparable. Record what you added, the new subtotal, shipping and any discount lost or gained. If the offer fails to apply, review its visible conditions once and capture the checkout result. Contact support with that specific discrepancy. Repeatedly applying unrelated codes makes it harder to tell which change affected the total and can leave your notes attached to the wrong basket."
+        ]
+      },
+      {
+        "title": "Keep delivery timing and shipping price together",
+        "body": [
+          "Alongside the price, record the estimated delivery window shown for the option selected. Compare an express option with the same basket and destination. A different price needs to be assessed with its own service description and timing. The public Hacoo shipping page says freight rules may change and treats published delivery times as guidance. Use the dated information displayed for your order when making a decision.",
+          "After payment, shipping questions move to the order and parcel records. A split delivery may have several tracking references, so match each reference with its contents. Refer to the order-tracking guide for missing scans or delivery exceptions. Opening a new checkout cannot tell you where an existing parcel is. Keep receipt, shipment notices and tracking events together so you can explain the stage that needs attention."
+        ]
+      },
+      {
+        "title": "Resolve an unexpected charge with a short record",
+        "body": [
+          "Compare the receipt with the final checkout you saved. Check currency, quantity, selected variant, applied discount and any displayed shipping charge. If your payment statement differs, identify the merchant and transaction reference before asking for an explanation. Use the payment provider's own description for any conversion or fee it reports. Keep the order total and the payment statement as separate records until the difference is explained.",
+          "Send support a concise account of the discrepancy with the order reference through the official private channel. State the expected amount, charged amount and the exact line that differs. Crop personal details out of images you share publicly. Wait for the instructions attached to your case before assuming that a refund has been approved. The refund-status guide explains how to distinguish a request, an approval and receipt of funds."
+        ]
+      },
+      {
+        "title": "Save a checkout record you can use again",
+        "body": [
+          "A practical record contains the quote date, destination country, selected service, currency, basket contents, item subtotal, shipping, discounts and total. Add one open question if a condition remains unclear. Recheck this record immediately before payment, since changing a size or quantity can produce a different basket. Save the receipt afterward under the same descriptive name so the comparison is easy to find.",
+          "For further reading, use the shipping-time guide when comparing delivery windows and the tracking guide after dispatch. The source links below explain why this article avoids publishing one universal Hacoo shipping fee. If the public pages and your checkout disagree, keep both dated records and obtain order-specific clarification from the service accepting your payment. That gives you an actionable answer for the basket you actually intend to buy."
+        ]
+      }
+    ]
+  },
+  "hacoo-football-shirt-size-guide": {
+    "title": "Hacoo Football Shirt Size Guide – Chest Width, Length and Fit",
+    "description": "Compare Hacoo football shirt measurements, player and fan fit labels, adult and junior options, with a clearly labelled sizing example.",
+    "readTime": "8 min read",
+    "factChecked": "Measurement method and official support guidance reviewed · 6 November 2026",
+    "sections": [
+      {
+        "title": "Start with a football shirt that fits you",
+        "body": [
+          "Choose a shirt you already wear comfortably for the same purpose. A shirt for playing football may need a different amount of room from one worn over a hoodie. Lay the reference shirt flat without pulling the fabric and record chest width and body length in centimetres. Compare those dimensions with the chart attached to the exact listing and selected version. Keep the reference shirt available while you decide.",
+          "A familiar size letter gives you a label to locate in the chart. The dimensions and measurement method explain how that option may fit. Check the intended wearer, whether the listing is adult or junior, the sleeve style and the version being sold. A shirt shown in a model photograph may be a different size from the option selected in the cart, so confirm the selection separately."
+        ]
+      },
+      {
+        "title": "Measure chest width consistently",
+        "body": [
+          "Smooth the shirt on a flat surface and measure across the chest between the points specified in the listing's diagram. Many charts use an underarm-to-underarm width, but confirm that convention for the item. Keep the tape straight and the fabric relaxed. Record where you placed the tape and repeat the measurement once. This helps you spot a folded panel or diagonal measurement before using the number.",
+          "A flat width and a circumference are different fields. A hypothetical 54 cm flat chest width corresponds to 108 cm around a perfectly doubled flat measurement, but that arithmetic does not make it a body measurement or a universal fit rule. Use the same field on both sides of the comparison. If a seller's chart says only chest without a diagram, ask whether the number is width, circumference or a recommended body measurement."
+        ]
+      },
+      {
+        "title": "Measure body length and the hem",
+        "body": [
+          "Check where the length measurement begins. A highest-shoulder-point measurement and a centre-back measurement can start at different places. Follow the chart diagram and use the same start and end points on your reference shirt. Note whether the shirt has a curved or dropped back hem. One length number may describe only one side. Ask for the missing dimension when that detail affects how you intend to wear it.",
+          "For a loose match-day fit, compare the hem position with a shirt you actually wear loosely. Avoid translating a preferred length directly into a larger size without checking the chest and shoulders too. Moving up a label may change several dimensions at once. Keep the complete row of the chart in view so you can weigh those changes together rather than solving one fit issue while creating another."
+        ]
+      },
+      {
+        "title": "Read player and fan labels with the chart",
+        "body": [
+          "Listings sometimes use player, fan, stadium or similar version names. Read the actual measurements and construction notes attached to each version. Those labels alone cannot establish a standard amount of stretch, a particular fabric or a fixed difference between sizes. Compare the measurements for the version you have selected. If the page changes its chart when you change version, save the chart that belongs to the final selection.",
+          "Inspect sleeve shape, panel placement, collar opening and hem proportions in the available photographs. Treat those details as clues to investigate alongside dimensions. A tight-looking model photo may reflect the model's chosen size or pose. Ask for missing measurements when the shoulders or sleeves matter to you. Buying a larger label without checking the version can leave you with the same uncertainty in a more expensive order."
+        ]
+      },
+      {
+        "title": "Compare two sizes in an illustrative example",
+        "body": [
+          "Imagine your own reference shirt measures 54 cm across the chest and 72 cm long. In a fictional listing, option M measures 52 cm by 70 cm and option L measures 55 cm by 73 cm. Option M is 2 cm narrower and 2 cm shorter than your reference. Option L is 1 cm wider and 1 cm longer. These demonstration numbers explain comparison only and describe no product tested by this site.",
+          "If you like the reference fit, L is closer in this example, but you would still check sleeve, shoulder, fabric information and the seller's measurement tolerance. A more fitted preference could change your decision. Write down why you prefer an option instead of treating the closest number as automatic approval. Replace the fictional rows with the actual chart before ordering, and leave missing dimensions blank until you obtain them."
+        ]
+      },
+      {
+        "title": "Check adult, junior and sleeve options separately",
+        "body": [
+          "Confirm the adult or junior category before interpreting a size number. A junior age range and an adult letter belong to different sizing systems. Use measurements for the intended wearer and compare with an appropriate existing shirt. If the seller provides body-height guidance, retain it alongside the garment dimensions. Avoid transferring a size from a different age category simply because the labels appear familiar or the product photographs look similar.",
+          "Long sleeves, short sleeves and training tops may have separate measurements within the same collection. Check cuff position, sleeve length and shoulder construction when these matter. For someone who wants to wear a base layer underneath, compare a reference shirt worn with that layer. Measure the garment in its normal relaxed state and describe the intended use when asking the seller about fit. That makes the question specific enough to answer."
+        ]
+      },
+      {
+        "title": "Match the link, photograph and selected version",
+        "body": [
+          "Save the full product link with its title, selected colour, version, size and date. Compare the item shown after opening the link with the reference that led you there. Look at collar shape, sleeve detail and panel arrangement before relying on a shared caption. A reused photograph may appear on several listings, so retain the destination as part of the record. An independent directory entry needs the same checks.",
+          "If a saved link opens an app home screen or an unavailable product, use the link-troubleshooting guide before choosing a replacement. A similar shirt is a new candidate whose chart needs its own review. Product numbers from separate catalogues may describe unrelated items. Check the service that will accept payment and the support route attached to that purchase. This keeps product research and later order records connected."
+        ]
+      },
+      {
+        "title": "Review names, numbers and patches before checkout",
+        "body": [
+          "If you select personalisation, check the spelling, number, placement and version displayed in the final options. Save the chosen settings with the size record. A photograph with a name or patch does not establish what every option includes. Look for the explicit contents of the version you intend to buy, including whether the listing contains a shirt alone or a set with additional pieces.",
+          "Read the current order-specific support and return conditions before paying for a personalised option. Ask the seller when the terms are unclear. This guide cannot establish eligibility for an individual purchase. Keep the final cart showing the same size, version and additions you reviewed. If the app changes the selected option after you return from another screen, review the complete selection again before confirming payment."
+        ]
+      },
+      {
+        "title": "Check the delivered shirt before normal use",
+        "body": [
+          "Keep the packaging and order record while you compare the delivered item with the saved selection. Photograph the size label, front, back and any visible mismatch. Measure the chest and length using the same relaxed method used for your reference. Record the values with the date. If there is a problem, follow the service's instructions before washing, altering or using the shirt in a way that could affect its condition.",
+          "Hacoo's public help material requests identifying evidence for size or wrong-product problems, including the label and product packaging details. Use the current instructions for your own case and send private order information through its support channel. Describe the measured discrepancy plainly. A label match and a measurement match answer different questions, so include both when the received shirt carries the expected label but has unexpected dimensions."
+        ]
+      },
+      {
+        "title": "Write a fit note that helps your next purchase",
+        "body": [
+          "Record the selected version, label, measured chest width, body length and the comparison shirt you used. Add how you wore it and what felt comfortable or restrictive. A note about tight upper sleeves is more informative than a general statement that a whole platform runs small. Keep product fit, shipping experience and support outcome in separate sentences so another reader can understand what you actually observed.",
+          "For your next shirt, reopen the current listing and compare its chart afresh. Reuse your measurement method and preferred dimensions rather than copying the old size label. The clothing-size guide covers the broader comparison process, while the QC guide helps you record visible details. Keep the dated source with each fit note so a later change to the listing does not erase the context of your decision."
+        ]
+      }
+    ]
+  }
+}

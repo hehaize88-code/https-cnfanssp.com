@@ -1,3 +1,4 @@
+import { novemberArticleSlugs, novemberUpdatedSlugs } from "@/lib/november-articles";
 import type { Article } from "@/lib/articles";
 import type { Lang } from "@/lib/site-data";
 import en from "@/lib/content/october/en.json";
@@ -24,11 +25,12 @@ export const updatedArticleSlugs = [
 ] as const;
 
 export function articleDates(slug: string, lang: Lang = "en") {
+  if (novemberArticleSlugs.some((item) => item === slug)) return { published: "2026-11-06", modified: "2026-11-06" };
   const isNew = octoberArticleSlugs.some((item) => item === slug);
   const isLegacy = ["hacoo-spreadsheet-live-source", "hacoo-reviews-2026", "hacoo-shipping-time-cost"].includes(slug);
   const published = isNew ? "2026-10-12" : isLegacy ? "2026-08-29" : "2026-09-19";
   const translationRewritten = (lang !== "en" && ["hacoo-qc-guide", "hacoo-product-links-codes"].includes(slug))
     || (lang === "it" && ["hacoo-website-vs-app", "hacoo-order-tracking", "hacoo-app-region-access"].includes(slug));
-  const modified = isNew || translationRewritten || updatedArticleSlugs.some((item) => item === slug) ? "2026-10-12" : published;
+  const modified = novemberUpdatedSlugs.some((item) => item === slug) ? "2026-11-06" : isNew || translationRewritten || updatedArticleSlugs.some((item) => item === slug) ? "2026-10-12" : published;
   return { published, modified };
 }

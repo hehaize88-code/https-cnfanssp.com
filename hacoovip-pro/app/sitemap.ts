@@ -10,7 +10,7 @@ const alternates = (path: string) => ({ languages: Object.fromEntries([
 ]) });
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const updated = new Date("2026-10-12T00:00:00.000Z");
+  const updated = new Date("2026-11-06T00:00:00.000Z");
   const pages = languages.flatMap((lang) =>
     routes.map((route) => ({
       url: `${origin}/${lang}${route ? `/${route}` : ""}`,
