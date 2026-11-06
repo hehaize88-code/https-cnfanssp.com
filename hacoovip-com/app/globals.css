@@ -358,5 +358,5 @@ footer{grid-template-columns:1fr}
 .answer-panel tbody th{font-weight:600}.answer-panel td{white-space:nowrap}
 .answer-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.answer-grid>div{padding:20px;background:white;border:1px solid var(--line);border-radius:12px}.answer-grid h3{margin:0;font-size:21px;color:var(--blue)}.answer-grid p{margin-bottom:0}
 .official-links{display:flex;flex-wrap:wrap;gap:12px 22px;margin-top:22px;font-size:13px;line-height:1.6}.official-links span{flex-basis:100%;font-weight:700}.official-links a{color:var(--blue);text-decoration:underline;text-underline-offset:3px}
-.related-guides a{overflow-wrap:anywhere;line-height:1.5}.fact-strip>div{min-width:0}.fact-strip b{overflow-wrap:anywhere}
+.related-guides a{overflow-wrap:anywhere;line-height:1.5}.fact-strip{grid-template-columns:repeat(2,minmax(0,1fr))}.fact-strip>div{min-width:0}.fact-strip b{overflow-wrap:anywhere}
 @media(max-width:760px){.answer-panel{margin:18px 12px;padding:16px}.answer-panel h2{font-size:25px}.answer-panel th,.answer-panel td{padding:10px 8px;font-size:13px}.answer-panel p{font-size:14px}.answer-grid{grid-template-columns:1fr;gap:10px}.answer-grid>div{padding:14px}.answer-grid h3{font-size:18px}.official-links{gap:10px;font-size:12px}.related-guides{padding:16px 12px;gap:12px}}
