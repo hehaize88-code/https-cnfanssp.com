@@ -1,0 +1,512 @@
+{
+  "en": [
+    {
+      "q": "Is Hacoos Shop the official Hacoo website?",
+      "a": "Hacoos Shop is an independent guide to finding and checking products. For an order, payment or account issue, open your own order in the official Hacoo app.",
+      "slug": "hacoo-website-vs-app"
+    },
+    {
+      "q": "Which price should I use for a product I find here?",
+      "a": "Open the listing and select the size, colour and quantity you want. Use the current checkout total for that selection, including any visible shipping charges and discounts.",
+      "slug": "hacoo-product-specification-checklist"
+    },
+    {
+      "q": "Can I return any Hacoo item?",
+      "a": "Hacoo’s published return policy gives a 15-day request window after receipt for many items, subject to exclusions and condition requirements. Check your order and get the return instructions before sending anything back.",
+      "slug": "hacoo-returns-refund-timeline"
+    },
+    {
+      "q": "How do I use the spreadsheet to find a specific item?",
+      "a": "Choose the closest category and compare the listing photo, description and product ID. Open the destination to check the current options and save its link alongside your chosen size or colour.",
+      "slug": "hacoo-spreadsheet-guide"
+    },
+    {
+      "q": "What can I search when a product name gives no results?",
+      "a": "Try a short description built from the item type and one distinctive detail, such as “cropped jacket double zip”. Check whether you are searching the independent catalogue or the Hacoo app, as the same reference may be recognised in only one.",
+      "slug": "find-products-on-hacoo"
+    },
+    {
+      "q": "Why does my saved Hacoo link open the home screen?",
+      "a": "Go back to the original message and reopen the complete item link after opening the app. If it still lands on the home screen, ask the sender for a fresh link to that precise item and keep the old photo for comparison.",
+      "slug": "hacoo-links-not-working"
+    },
+    {
+      "q": "How do I choose a size when two listings use the same label?",
+      "a": "Compare the actual measurements for each selected variant. For shoes, check what the chart measures against your foot length. For clothing, compare flat garment dimensions with something you already wear.",
+      "slug": "hacoo-size-guide"
+    },
+    {
+      "q": "What should I look for in QC photos?",
+      "a": "First match the photos to the product and variant, then inspect comparable angles, seams, measurements and visible defects. Ask for the missing view if the decision depends on a detail the available photos do not show.",
+      "slug": "hacoo-qc-photo-checklist"
+    },
+    {
+      "q": "Where do I actually place a Hacoo order?",
+      "a": "Open the official Hacoo app, sign in, select the item and add it to the cart. Check the variant, delivery address and final amount there before paying.",
+      "slug": "hacoo-website-vs-app"
+    },
+    {
+      "q": "Can I cancel a Hacoo order before it ships?",
+      "a": "Open the specific order under My Orders. Hacoo’s help centre says you can use Cancel while the order is unshipped. Return to the order afterwards to verify the confirmation.",
+      "slug": "cancel-hacoo-order-before-shipping"
+    },
+    {
+      "q": "I entered the wrong address. Can I correct it?",
+      "a": "For an unshipped order, check its details for the address-editing option and confirm the corrected address on that order. If it has shipped, contact support and the carrier about the options still available.",
+      "slug": "cancel-hacoo-order-before-shipping"
+    },
+    {
+      "q": "Where do I enter a Hacoo discount code?",
+      "a": "Look for the coupon or offer field in the order summary before paying, if your checkout offers one. Apply the code and compare the discount line and final total with the same cart before the change.",
+      "slug": "where-to-enter-hacoo-discount-code"
+    },
+    {
+      "q": "How can I estimate a delivery date for my country?",
+      "a": "Start with the delivery window shown on your own order. Country estimates can help you plan, but processing, transport and the final local delivery can take different amounts of time.",
+      "slug": "hacoo-shipping-time-by-country"
+    },
+    {
+      "q": "What should I do if tracking stops updating?",
+      "a": "Save the last dated scan, identify the carrier and compare its latest information with the estimate on your order. If the estimate has passed or the carrier requests action, contact support with the tracking number and the exact status.",
+      "slug": "hacoo-tracking-not-updating"
+    },
+    {
+      "q": "Why did only part of my Hacoo order arrive?",
+      "a": "Check whether the order lists another parcel or tracking number for the outstanding items. If everything was assigned to the parcel you received, keep the packaging and report the specific missing pieces.",
+      "slug": "hacoo-tracking-order-guide"
+    },
+    {
+      "q": "What if tracking says delivered but I have no parcel?",
+      "a": "Double-check the parcel number, delivery address and any delivery photograph, collection location or handover note. Contact the carrier responsible for the final scan and share its response with Hacoo support.",
+      "slug": "hacoo-delivered-but-not-received"
+    },
+    {
+      "q": "My parcel is being returned to the sender. What now?",
+      "a": "Check whether the latest scan still allows collection or confirms the return has started. If it has started, send Hacoo the tracking reference and ask which options apply to your order, including whether reshipment is available.",
+      "slug": "hacoo-parcel-returned-to-sender"
+    },
+    {
+      "q": "My refund was approved. Where should I look for the money?",
+      "a": "Check the approved amount, the refund destination and any time estimate given in your case. If the amount is missing after that estimate, ask support for the transaction reference.",
+      "slug": "hacoo-returns-refund-timeline"
+    },
+    {
+      "q": "What evidence helps if I receive the wrong item?",
+      "a": "Photograph the item, its label and the packaging, and save the original order details showing the expected variant. Report the exact difference through your order and follow the instructions you receive.",
+      "slug": "hacoo-returns-refund-timeline"
+    },
+    {
+      "q": "How do I tell two similar product listings apart?",
+      "a": "Compare the product ID together with the selected option, dimensions, included pieces and current photos. A shared first image gives you a starting point. Match the details that matter for the item you want.",
+      "slug": "hacoo-product-specification-checklist"
+    }
+  ],
+  "es": [
+    {
+      "q": "¿Hacoos Shop es la web oficial de Hacoo?",
+      "a": "Hacoos Shop es una guía independiente para encontrar y comparar productos. Para consultar un pedido, un pago o tu cuenta, abre tu pedido en la aplicación oficial de Hacoo.",
+      "slug": "hacoo-website-vs-app"
+    },
+    {
+      "q": "¿Qué precio debo tener en cuenta al abrir una ficha?",
+      "a": "Selecciona la talla, el color y la cantidad que te interesan en la ficha de destino. Comprueba el importe final antes de pagar, con los gastos de envío y los descuentos que aparezcan.",
+      "slug": "hacoo-product-specification-checklist"
+    },
+    {
+      "q": "¿Puedo devolver cualquier artículo de Hacoo?",
+      "a": "La política publicada de Hacoo contempla un plazo de 15 días desde la recepción para solicitar la devolución de muchos artículos, con condiciones de estado y algunas exclusiones. Consulta tu pedido y espera las instrucciones antes de enviar el producto.",
+      "slug": "hacoo-returns-refund-timeline"
+    },
+    {
+      "q": "¿Cómo encuentro un artículo concreto en la hoja de productos?",
+      "a": "Elige la categoría más cercana y compara la foto, la descripción y el identificador de la ficha. Abre el enlace para comprobar las variantes actuales y guárdalo con la talla o el color que has elegido.",
+      "slug": "hacoo-spreadsheet-guide"
+    },
+    {
+      "q": "¿Qué busco si el nombre del producto no da resultados?",
+      "a": "Combina el tipo de prenda con un rasgo distintivo, por ejemplo «chaqueta corta doble cremallera». Comprueba si estás buscando en el catálogo independiente o en la aplicación de Hacoo, porque una misma referencia puede funcionar solo en uno de ellos.",
+      "slug": "find-products-on-hacoo"
+    },
+    {
+      "q": "¿Por qué mi enlace guardado abre el inicio de Hacoo?",
+      "a": "Vuelve al mensaje original y abre otra vez el enlace completo del artículo con la aplicación ya abierta. Si vuelves a la pantalla de inicio, pídele a quien te lo envió un enlace nuevo a esa ficha y conserva la foto para compararla.",
+      "slug": "hacoo-links-not-working"
+    },
+    {
+      "q": "¿Cómo elijo la talla si dos fichas usan la misma letra o número?",
+      "a": "Compara las medidas de cada variante. En calzado, lee qué longitud indica la tabla y compárala con la de tu pie. En ropa, mide en plano una prenda que te quede bien.",
+      "slug": "hacoo-size-guide"
+    },
+    {
+      "q": "¿En qué debo fijarme en las fotos de control de calidad?",
+      "a": "Primero confirma que muestran el artículo y la variante correctos. Después compara ángulos, costuras, medidas y defectos visibles. Si falta una vista decisiva, solicítala antes de elegir.",
+      "slug": "hacoo-qc-photo-checklist"
+    },
+    {
+      "q": "¿Dónde se hace el pedido de Hacoo?",
+      "a": "Abre la aplicación oficial, inicia sesión, selecciona el producto y añádelo al carrito. Revisa la variante, la dirección de entrega y el total antes de pagar.",
+      "slug": "hacoo-website-vs-app"
+    },
+    {
+      "q": "¿Puedo cancelar mi pedido de Hacoo antes del envío?",
+      "a": "Abre la compra concreta en Mis pedidos. El centro de ayuda de Hacoo indica que puedes usar la opción de cancelar mientras el pedido siga sin enviar. Después, comprueba la confirmación en la ficha.",
+      "slug": "cancel-hacoo-order-before-shipping"
+    },
+    {
+      "q": "He puesto mal la dirección. ¿Cómo la corrijo?",
+      "a": "Si el pedido aún no se ha enviado, busca la opción de editar la dirección en sus detalles y verifica allí la corrección. Si ya está en camino, pregunta a la asistencia y al transportista qué opciones quedan.",
+      "slug": "cancel-hacoo-order-before-shipping"
+    },
+    {
+      "q": "¿Dónde se introduce un código descuento de Hacoo?",
+      "a": "En el resumen previo al pago, busca el apartado de cupones o promociones si aparece en tu compra. Aplica el código y compara la línea de descuento y el total del mismo carrito antes y después.",
+      "slug": "where-to-enter-hacoo-discount-code"
+    },
+    {
+      "q": "¿Cómo calculo cuándo llegará un pedido a mi país?",
+      "a": "Empieza por la previsión de entrega de tu propio pedido. Los plazos por país sirven de orientación, pero la preparación, el transporte y el reparto local pueden llevar tiempos distintos.",
+      "slug": "hacoo-shipping-time-by-country"
+    },
+    {
+      "q": "¿Qué hago si el seguimiento lleva días sin actualizarse?",
+      "a": "Anota el último movimiento con fecha y consulta la información del transportista junto con la previsión del pedido. Si ya ha vencido el plazo o el transportista te pide intervenir, envía a la asistencia el número de seguimiento y el mensaje exacto.",
+      "slug": "hacoo-tracking-not-updating"
+    },
+    {
+      "q": "¿Por qué he recibido solo una parte del pedido?",
+      "a": "Comprueba si hay otro paquete o número de seguimiento asignado a los artículos pendientes. Si todo figuraba en el paquete recibido, conserva el embalaje e indica exactamente qué piezas faltan.",
+      "slug": "hacoo-tracking-order-guide"
+    },
+    {
+      "q": "El seguimiento dice entregado, pero no tengo el paquete. ¿Qué hago?",
+      "a": "Comprueba la referencia del paquete, la dirección y cualquier foto, punto de recogida o nota de entrega. Contacta con el transportista que registró la entrega y transmite su respuesta a la asistencia de Hacoo.",
+      "slug": "hacoo-delivered-but-not-received"
+    },
+    {
+      "q": "¿Qué hago si mi paquete vuelve al remitente?",
+      "a": "Lee el último movimiento para saber si aún puedes recogerlo o si ya ha iniciado el regreso. Si consta la devolución, envía el seguimiento a Hacoo y pregunta qué solución corresponde a tu pedido, incluida la posibilidad de reenvío.",
+      "slug": "hacoo-parcel-returned-to-sender"
+    },
+    {
+      "q": "Me han aprobado un reembolso. ¿Dónde lo compruebo?",
+      "a": "Revisa el importe aprobado, el destino del abono y el plazo que te hayan comunicado para tu caso. Si transcurre ese plazo y no lo ves, pide a la asistencia la referencia de la operación.",
+      "slug": "hacoo-returns-refund-timeline"
+    },
+    {
+      "q": "¿Qué pruebas necesito si me llega un artículo equivocado?",
+      "a": "Fotografía el artículo, la etiqueta y el embalaje, y conserva el detalle del pedido donde figure la variante que elegiste. Explica la diferencia en la consulta de tu pedido y sigue las instrucciones que te den.",
+      "slug": "hacoo-returns-refund-timeline"
+    },
+    {
+      "q": "¿Cómo distingo dos fichas de producto muy parecidas?",
+      "a": "Contrasta el identificador, la variante, las medidas, las piezas incluidas y las fotos actuales. Si comparten la primera imagen, busca el detalle concreto que identifica la versión que quieres comprar.",
+      "slug": "hacoo-product-specification-checklist"
+    }
+  ],
+  "fr": [
+    {
+      "q": "Hacoos Shop est-il le site officiel de Hacoo ?",
+      "a": "Hacoos Shop est un guide indépendant qui aide à trouver et à comparer des produits. Pour une question de commande, de paiement ou de compte, ouvrez votre achat dans l’application officielle de Hacoo.",
+      "slug": "hacoo-website-vs-app"
+    },
+    {
+      "q": "Quel prix retenir lorsque je consulte une fiche produit ?",
+      "a": "Sélectionnez la taille, la couleur et la quantité voulues sur la fiche de destination. Avant de payer, vérifiez le montant final pour cette sélection, frais de livraison et réductions affichés compris.",
+      "slug": "hacoo-product-specification-checklist"
+    },
+    {
+      "q": "Puis-je retourner n’importe quel article Hacoo ?",
+      "a": "La politique publiée par Hacoo prévoit, pour de nombreux articles, une demande dans les 15 jours suivant la réception, sous réserve des exclusions et des conditions relatives à l’état du produit. Consultez votre commande et attendez les consignes avant tout envoi.",
+      "slug": "hacoo-returns-refund-timeline"
+    },
+    {
+      "q": "Comment retrouver un article précis dans le tableau de produits ?",
+      "a": "Ouvrez la catégorie la plus proche et comparez la photo, la description et la référence de la fiche. Suivez le lien pour vérifier les variantes disponibles et conservez-le avec la taille ou le coloris choisi.",
+      "slug": "hacoo-spreadsheet-guide"
+    },
+    {
+      "q": "Que rechercher si le nom du produit ne donne aucun résultat ?",
+      "a": "Essayez le type de produit accompagné d’un détail distinctif, par exemple « veste courte double fermeture ». Vérifiez si vous cherchez dans le catalogue indépendant ou dans l’application Hacoo : une référence peut être reconnue par un seul des deux.",
+      "slug": "find-products-on-hacoo"
+    },
+    {
+      "q": "Pourquoi mon lien enregistré ouvre-t-il l’accueil de Hacoo ?",
+      "a": "Ouvrez l’application, revenez au message d’origine, puis touchez de nouveau le lien complet. Si l’accueil s’affiche encore, demandez à l’expéditeur un nouveau lien vers l’article précis et gardez l’ancienne photo pour le reconnaître.",
+      "slug": "hacoo-links-not-working"
+    },
+    {
+      "q": "Comment choisir entre deux tailles portant la même étiquette ?",
+      "a": "Comparez les mesures de chaque variante. Pour des chaussures, identifiez la longueur mesurée dans le tableau et comparez-la à celle de votre pied. Pour un vêtement, mesurez à plat une pièce qui vous va bien.",
+      "slug": "hacoo-size-guide"
+    },
+    {
+      "q": "Que vérifier sur les photos de contrôle qualité ?",
+      "a": "Identifiez d’abord l’article et sa variante, puis examinez des angles comparables, les coutures, les mesures et les défauts visibles. Si un détail détermine votre choix, demandez une photo qui le montre clairement.",
+      "slug": "hacoo-qc-photo-checklist"
+    },
+    {
+      "q": "Où passer réellement une commande Hacoo ?",
+      "a": "Ouvrez l’application officielle, connectez-vous, choisissez le produit et ajoutez-le au panier. Vérifiez la variante, l’adresse de livraison et le montant final avant de payer.",
+      "slug": "hacoo-website-vs-app"
+    },
+    {
+      "q": "Puis-je annuler ma commande Hacoo avant son expédition ?",
+      "a": "Retrouvez l’achat concerné dans vos commandes. Le centre d’aide Hacoo indique que l’option d’annulation est disponible pour les commandes non expédiées. Revenez ensuite à la fiche pour vérifier la confirmation.",
+      "slug": "cancel-hacoo-order-before-shipping"
+    },
+    {
+      "q": "J’ai saisi une mauvaise adresse. Comment la corriger ?",
+      "a": "Pour une commande non expédiée, cherchez l’option de modification dans le détail de l’achat et vérifiez-y l’adresse corrigée. Si le colis est déjà parti, demandez à l’assistance et au transporteur quelles démarches restent possibles.",
+      "slug": "cancel-hacoo-order-before-shipping"
+    },
+    {
+      "q": "Où saisir un code promo Hacoo ?",
+      "a": "Cherchez la rubrique des coupons ou des offres dans le récapitulatif avant paiement, si elle apparaît. Appliquez le code et comparez la ligne de remise et le montant final avec ceux du même panier avant la saisie.",
+      "slug": "where-to-enter-hacoo-discount-code"
+    },
+    {
+      "q": "Comment estimer la date de livraison dans mon pays ?",
+      "a": "Partez de la période de livraison annoncée pour votre commande. Les délais par pays donnent un repère, mais la préparation, le transport et la distribution locale ont chacun leur propre calendrier.",
+      "slug": "hacoo-shipping-time-by-country"
+    },
+    {
+      "q": "Que faire si le suivi de mon colis ne se met plus à jour ?",
+      "a": "Relevez le dernier événement daté et comparez les informations du transporteur avec l’échéance du récapitulatif. Si elle est dépassée ou qu’une démarche est demandée, transmettez le numéro de suivi et le message exact à l’assistance.",
+      "slug": "hacoo-tracking-not-updating"
+    },
+    {
+      "q": "Pourquoi n’ai-je reçu qu’une partie de ma commande ?",
+      "a": "Vérifiez si les articles manquants figurent dans un second envoi avec son propre suivi. Si tout était annoncé dans le colis reçu, conservez l’emballage et indiquez à l’assistance les pièces précises qui manquent.",
+      "slug": "hacoo-tracking-order-guide"
+    },
+    {
+      "q": "Mon colis est marqué livré mais je n’ai rien reçu. Que faire ?",
+      "a": "Vérifiez le numéro du colis, l’adresse ainsi que la photo, le point de retrait ou la note de remise éventuels. Demandez des précisions au transporteur qui a enregistré la livraison et transmettez sa réponse à Hacoo.",
+      "slug": "hacoo-delivered-but-not-received"
+    },
+    {
+      "q": "Mon colis repart chez l’expéditeur. Quelle démarche suivre ?",
+      "a": "Lisez le dernier événement pour savoir si un retrait reste possible ou si le retour a commencé. Si le colis est reparti, transmettez sa référence à Hacoo et demandez quelles solutions s’appliquent à votre commande, y compris la possibilité d’une réexpédition.",
+      "slug": "hacoo-parcel-returned-to-sender"
+    },
+    {
+      "q": "Mon remboursement a été accepté. Où vérifier le versement ?",
+      "a": "Relevez le montant approuvé, le moyen prévu pour le versement et le délai éventuellement communiqué pour votre dossier. Si cette échéance passe sans versement visible, demandez la référence de l’opération à l’assistance.",
+      "slug": "hacoo-returns-refund-timeline"
+    },
+    {
+      "q": "Quels justificatifs fournir si je reçois le mauvais produit ?",
+      "a": "Photographiez l’article, son étiquette et l’emballage, puis conservez le détail de la commande qui montre la variante attendue. Décrivez la différence depuis votre commande et suivez les consignes reçues.",
+      "slug": "hacoo-returns-refund-timeline"
+    },
+    {
+      "q": "Comment distinguer deux fiches produit presque identiques ?",
+      "a": "Comparez la référence, la variante sélectionnée, les dimensions, les pièces incluses et les photos actuelles. Si la première photo est identique, cherchez les détails qui permettent de reconnaître la version voulue.",
+      "slug": "hacoo-product-specification-checklist"
+    }
+  ],
+  "de": [
+    {
+      "q": "Ist Hacoos Shop die offizielle Website von Hacoo?",
+      "a": "Hacoos Shop ist ein unabhängiger Ratgeber für die Produktsuche und den Vergleich von Angeboten. Fragen zu einer Bestellung, Zahlung oder zu deinem Konto klärst du über deine Bestellung in der offiziellen Hacoo-App.",
+      "slug": "hacoo-website-vs-app"
+    },
+    {
+      "q": "Welcher Preis gilt für einen hier gefundenen Artikel?",
+      "a": "Öffne das Angebot und wähle die gewünschte Größe, Farbe und Stückzahl. Prüfe vor dem Bezahlen den Endbetrag für diese Auswahl, einschließlich der angezeigten Versandkosten und Rabatte.",
+      "slug": "hacoo-product-specification-checklist"
+    },
+    {
+      "q": "Kann ich jeden Hacoo-Artikel zurückgeben?",
+      "a": "Für viele Artikel nennt Hacoo eine Frist von 15 Tagen nach Erhalt, um die Rückgabe zu beantragen. Es gelten Ausnahmen und Anforderungen an den Zustand. Prüfe deine Bestellung und warte vor dem Versand auf die Rücksendeanweisungen.",
+      "slug": "hacoo-returns-refund-timeline"
+    },
+    {
+      "q": "Wie finde ich einen bestimmten Artikel in der Produkttabelle?",
+      "a": "Wähle die passende Kategorie und vergleiche Foto, Beschreibung und Artikelnummer. Öffne das Angebot, prüfe die aktuell verfügbaren Varianten und speichere den Link zusammen mit der gewünschten Größe oder Farbe.",
+      "slug": "hacoo-spreadsheet-guide"
+    },
+    {
+      "q": "Wonach suche ich, wenn der Produktname keine Treffer liefert?",
+      "a": "Kombiniere die Produktart mit einem auffälligen Merkmal, etwa „kurze Jacke Doppelreißverschluss“. Achte darauf, ob du im unabhängigen Katalog oder in der Hacoo-App suchst, denn dieselbe Artikelnummer wird möglicherweise nur in einem der beiden Systeme erkannt.",
+      "slug": "find-products-on-hacoo"
+    },
+    {
+      "q": "Warum öffnet mein gespeicherter Link nur die Hacoo-Startseite?",
+      "a": "Öffne die App, gehe zur ursprünglichen Nachricht zurück und tippe erneut auf den vollständigen Artikellink. Landest du wieder auf der Startseite, bitte den Absender um einen neuen Link zum konkreten Artikel und behalte das alte Foto zum Vergleich.",
+      "slug": "hacoo-links-not-working"
+    },
+    {
+      "q": "Wie vergleiche ich Größen, wenn auf beiden Angeboten dieselbe Größe steht?",
+      "a": "Vergleiche die Maße der gewählten Varianten. Achte bei Schuhen darauf, welche Länge die Tabelle angibt, und vergleiche sie mit deiner Fußlänge. Bei Kleidung hilft ein flach ausgemessenes, gut passendes Stück.",
+      "slug": "hacoo-size-guide"
+    },
+    {
+      "q": "Worauf achte ich bei QC-Fotos?",
+      "a": "Prüfe zuerst, ob die Bilder zum richtigen Artikel und zur gewählten Variante gehören. Vergleiche anschließend Ansichten aus ähnlichen Winkeln, Nähte, Maße und sichtbare Fehler. Fehlt eine entscheidende Ansicht, bitte um ein passendes Foto.",
+      "slug": "hacoo-qc-photo-checklist"
+    },
+    {
+      "q": "Wo gebe ich eine Hacoo-Bestellung auf?",
+      "a": "Öffne die offizielle Hacoo-App, melde dich an und lege den gewünschten Artikel in den Warenkorb. Kontrolliere vor dem Bezahlen Variante, Lieferanschrift und Endbetrag.",
+      "slug": "hacoo-website-vs-app"
+    },
+    {
+      "q": "Kann ich eine Hacoo-Bestellung vor dem Versand stornieren?",
+      "a": "Öffne den betreffenden Einkauf unter deinen Bestellungen. Laut Hacoo-Hilfe kannst du dort stornieren, solange die Bestellung noch nicht verschickt ist. Prüfe anschließend die Bestätigung in den Bestelldetails.",
+      "slug": "cancel-hacoo-order-before-shipping"
+    },
+    {
+      "q": "Ich habe eine falsche Adresse eingegeben. Was kann ich tun?",
+      "a": "Suche bei unversendeten Bestellungen in den Bestelldetails nach der Möglichkeit zur Adressänderung und kontrolliere die geänderte Anschrift dort. Wurde das Paket schon verschickt, frage beim Support und beim Zusteller nach den verbliebenen Möglichkeiten.",
+      "slug": "cancel-hacoo-order-before-shipping"
+    },
+    {
+      "q": "Wo gebe ich einen Hacoo-Rabattcode ein?",
+      "a": "Suche in der Bestellübersicht vor dem Bezahlen nach einem Gutschein- oder Angebotsfeld, sofern es für deinen Einkauf angezeigt wird. Löse den Code ein und vergleiche Rabatt und Endbetrag mit demselben Warenkorb vor der Eingabe.",
+      "slug": "where-to-enter-hacoo-discount-code"
+    },
+    {
+      "q": "Wie schätze ich die Lieferzeit für mein Land ein?",
+      "a": "Orientiere dich zuerst am Lieferzeitraum in deiner Bestellung. Länderangaben helfen bei der Planung, doch Bearbeitung, Transport und Zustellung vor Ort können unterschiedlich lange dauern.",
+      "slug": "hacoo-shipping-time-by-country"
+    },
+    {
+      "q": "Was tun, wenn sich die Sendungsverfolgung nicht mehr ändert?",
+      "a": "Notiere den letzten datierten Scan und vergleiche die Angaben des Zustellers mit dem geschätzten Liefertermin deiner Bestellung. Ist der Zeitraum überschritten oder fordert der Zusteller dich zum Handeln auf, sende dem Support die Sendungsnummer und den genauen Status.",
+      "slug": "hacoo-tracking-not-updating"
+    },
+    {
+      "q": "Warum ist nur ein Teil meiner Hacoo-Bestellung angekommen?",
+      "a": "Prüfe, ob für die ausstehenden Artikel ein weiteres Paket mit eigener Sendungsnummer aufgeführt ist. Waren alle Artikel dem erhaltenen Paket zugeordnet, bewahre die Verpackung auf und melde genau, welche Teile fehlen.",
+      "slug": "hacoo-tracking-order-guide"
+    },
+    {
+      "q": "Meine Sendung gilt als zugestellt. Wo kann ich nachfragen?",
+      "a": "Prüfe Sendungsnummer, Anschrift sowie vorhandene Zustellfotos, Abholhinweise oder Angaben zur Übergabe. Frage beim Zusteller nach, der die letzte Meldung eingetragen hat, und leite seine Antwort an den Hacoo-Support weiter.",
+      "slug": "hacoo-delivered-but-not-received"
+    },
+    {
+      "q": "Mein Paket geht an den Absender zurück. Was mache ich jetzt?",
+      "a": "Lies die jüngste Meldung und prüfe, ob eine Abholung noch möglich ist oder der Rücktransport begonnen hat. Läuft der Rücktransport, sende Hacoo die Sendungsnummer und frage nach den Möglichkeiten für deine Bestellung, etwa einem erneuten Versand.",
+      "slug": "hacoo-parcel-returned-to-sender"
+    },
+    {
+      "q": "Meine Erstattung ist genehmigt. Wo sehe ich die Gutschrift?",
+      "a": "Prüfe den genehmigten Betrag, das angegebene Erstattungsziel und einen eventuell genannten Zeitraum. Ist die Gutschrift nach Ablauf dieser Frist nicht zu finden, bitte den Support um die Referenz der Transaktion.",
+      "slug": "hacoo-returns-refund-timeline"
+    },
+    {
+      "q": "Welche Nachweise helfen bei einem falsch gelieferten Artikel?",
+      "a": "Fotografiere den Artikel, das Etikett und die Verpackung und sichere die Bestelldetails mit der eigentlich gewählten Variante. Beschreibe die konkrete Abweichung in deiner Bestellung und folge den Anweisungen zur Reklamation.",
+      "slug": "hacoo-returns-refund-timeline"
+    },
+    {
+      "q": "Wie unterscheide ich zwei fast gleiche Angebote?",
+      "a": "Vergleiche Artikelnummer, gewählte Variante, Maße, Lieferumfang und aktuelle Fotos. Bei identischem Titelbild geben dir die Merkmale Aufschluss, die für deine gewünschte Ausführung entscheidend sind.",
+      "slug": "hacoo-product-specification-checklist"
+    }
+  ],
+  "it": [
+    {
+      "q": "Hacoos Shop è il sito ufficiale di Hacoo?",
+      "a": "Hacoos Shop è una guida indipendente per trovare e confrontare i prodotti. Per domande su un acquisto, un pagamento o il tuo account, apri l’ordine nell’app ufficiale di Hacoo.",
+      "slug": "hacoo-website-vs-app"
+    },
+    {
+      "q": "Quale prezzo devo considerare quando apro una scheda?",
+      "a": "Seleziona la taglia, il colore e la quantità che ti interessano nella scheda di destinazione. Controlla l’importo finale prima di pagare, comprese le spese di spedizione e le eventuali riduzioni visualizzate.",
+      "slug": "hacoo-product-specification-checklist"
+    },
+    {
+      "q": "Posso restituire qualsiasi articolo Hacoo?",
+      "a": "La politica pubblicata da Hacoo prevede per molti articoli una richiesta entro 15 giorni dalla ricezione, con esclusioni e requisiti sulle condizioni del prodotto. Controlla i dettagli dell’ordine e attendi le istruzioni prima di spedire il reso.",
+      "slug": "hacoo-returns-refund-timeline"
+    },
+    {
+      "q": "Come trovo un articolo preciso nella tabella dei prodotti?",
+      "a": "Scegli la categoria più adatta e confronta foto, descrizione e identificativo della scheda. Apri il collegamento per verificare le varianti disponibili e salvalo insieme alla taglia o al colore scelto.",
+      "slug": "hacoo-spreadsheet-guide"
+    },
+    {
+      "q": "Cosa posso cercare se il nome del prodotto non dà risultati?",
+      "a": "Prova il tipo di articolo insieme a un dettaglio riconoscibile, per esempio «giacca corta doppia zip». Verifica se stai cercando nel catalogo indipendente o nell’app Hacoo, perché lo stesso identificativo potrebbe essere riconosciuto solo in uno dei due.",
+      "slug": "find-products-on-hacoo"
+    },
+    {
+      "q": "Perché il mio link salvato apre la schermata iniziale di Hacoo?",
+      "a": "Apri l’app, torna al messaggio originale e tocca di nuovo il collegamento completo all’articolo. Se arrivi ancora alla schermata iniziale, chiedi a chi te l’ha inviato un nuovo link alla scheda esatta e conserva la vecchia foto per il confronto.",
+      "slug": "hacoo-links-not-working"
+    },
+    {
+      "q": "Come scelgo la taglia se due schede riportano lo stesso numero o la stessa lettera?",
+      "a": "Confronta le misure delle singole varianti. Per le scarpe verifica quale lunghezza indica la tabella e confrontala con il piede. Per gli abiti misura in piano un capo che ti sta già bene.",
+      "slug": "hacoo-size-guide"
+    },
+    {
+      "q": "Cosa devo controllare nelle foto di controllo qualità?",
+      "a": "Prima verifica che le immagini corrispondano all’articolo e alla variante scelti. Confronta poi angolazioni simili, cuciture, misure e difetti visibili. Se la scelta dipende da un dettaglio che manca, chiedi una foto mirata.",
+      "slug": "hacoo-qc-photo-checklist"
+    },
+    {
+      "q": "Dove si effettua un ordine Hacoo?",
+      "a": "Apri l’app ufficiale, accedi al tuo account, scegli l’articolo e aggiungilo al carrello. Verifica variante, indirizzo di consegna e totale prima di pagare.",
+      "slug": "hacoo-website-vs-app"
+    },
+    {
+      "q": "Posso annullare un ordine Hacoo prima della spedizione?",
+      "a": "Apri l’acquisto interessato nell’elenco dei tuoi ordini. Secondo il centro assistenza Hacoo puoi usare l’opzione per annullarlo finché non è stato spedito. Torna quindi ai dettagli per controllare la conferma.",
+      "slug": "cancel-hacoo-order-before-shipping"
+    },
+    {
+      "q": "Ho inserito un indirizzo sbagliato. Come posso correggerlo?",
+      "a": "Per un ordine non ancora spedito, cerca la modifica dell’indirizzo nei dettagli dell’acquisto e verifica lì la correzione. Se il pacco è già partito, chiedi all’assistenza e al corriere quali opzioni restano disponibili.",
+      "slug": "cancel-hacoo-order-before-shipping"
+    },
+    {
+      "q": "Dove si inserisce un codice sconto Hacoo?",
+      "a": "Nel riepilogo prima del pagamento cerca la sezione coupon o promozioni, se presente per il tuo acquisto. Applica il codice e confronta la voce dello sconto e il totale con quelli dello stesso carrello prima della modifica.",
+      "slug": "where-to-enter-hacoo-discount-code"
+    },
+    {
+      "q": "Come posso stimare la data di consegna nel mio Paese?",
+      "a": "Parti dall’intervallo di consegna indicato nel tuo ordine. Le stime per Paese aiutano a orientarsi, ma preparazione, trasporto e consegna locale possono richiedere tempi diversi.",
+      "slug": "hacoo-shipping-time-by-country"
+    },
+    {
+      "q": "Cosa faccio se il tracciamento non si aggiorna?",
+      "a": "Annota l’ultimo movimento con la sua data e confronta le informazioni del corriere con la previsione del tuo ordine. Se il termine è trascorso o il corriere chiede un intervento, invia all’assistenza il numero di tracciamento e il messaggio esatto.",
+      "slug": "hacoo-tracking-not-updating"
+    },
+    {
+      "q": "Perché è arrivata solo una parte dell’ordine?",
+      "a": "Controlla se agli articoli mancanti è associato un altro pacco con un proprio numero di tracciamento. Se risultava tutto nel pacco ricevuto, conserva l’imballaggio e segnala con precisione i pezzi mancanti.",
+      "slug": "hacoo-tracking-order-guide"
+    },
+    {
+      "q": "Il pacco risulta consegnato ma non l’ho ricevuto. A chi mi rivolgo?",
+      "a": "Verifica il numero del pacco, l’indirizzo e le eventuali foto, indicazioni sul ritiro o note di consegna. Contatta il corriere che ha registrato l’ultimo movimento e inoltra la sua risposta all’assistenza Hacoo.",
+      "slug": "hacoo-delivered-but-not-received"
+    },
+    {
+      "q": "Il pacco sta tornando al mittente. Come procedo?",
+      "a": "Leggi l’ultimo aggiornamento per capire se il ritiro è ancora possibile o se il viaggio di ritorno è già iniziato. Se il pacco è ripartito, comunica il riferimento a Hacoo e chiedi quali soluzioni si applicano all’ordine, compresa un’eventuale nuova spedizione.",
+      "slug": "hacoo-parcel-returned-to-sender"
+    },
+    {
+      "q": "Il rimborso è stato approvato. Dove verifico l’accredito?",
+      "a": "Controlla l’importo approvato, la destinazione del rimborso e la tempistica eventualmente indicata per il tuo caso. Se il termine è trascorso e l’accredito manca, chiedi all’assistenza il riferimento dell’operazione.",
+      "slug": "hacoo-returns-refund-timeline"
+    },
+    {
+      "q": "Quali prove servono se ricevo un prodotto diverso da quello ordinato?",
+      "a": "Fotografa l’articolo, l’etichetta e l’imballaggio e salva i dettagli dell’ordine che mostrano la variante prevista. Descrivi la differenza nella richiesta relativa all’ordine e segui le istruzioni ricevute.",
+      "slug": "hacoo-returns-refund-timeline"
+    },
+    {
+      "q": "Come distinguo due schede prodotto quasi identiche?",
+      "a": "Confronta l’identificativo, la variante scelta, le dimensioni, i pezzi inclusi e le foto aggiornate. Se l’immagine di copertina è la stessa, cerca i particolari che identificano la versione che ti interessa.",
+      "slug": "hacoo-product-specification-checklist"
+    }
+  ]
+}
