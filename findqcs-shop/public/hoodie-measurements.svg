@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320" role="img" aria-labelledby="t d">
+  <title id="t">Hoodie measurement diagram</title>
+  <desc id="d">1 joins the underarm seams in a straight line. 2 runs vertically from the high shoulder beside the neck to the bottom hem.</desc>
+  <rect width="640" height="320" rx="16" fill="#f3f6fb"/>
+  <g stroke="#37485d" stroke-width="2.8" stroke-linejoin="round">
+    <path fill="#dce5ee" d="M278 78 Q281 68 290 54 Q305 29 320 27 Q340 28 352 53 Q359 65 362 78 L406 93 Q418 97 427 110 L510 212 L481 238 L421 178 L419 261 L417 278 L223 278 L221 261 L219 178 L159 238 L130 212 L213 110 Q222 97 234 93 Z"/>
+    <path fill="#c5d1df" d="M278 78 Q297 79 320 100 Q344 78 362 78 Q356 59 346 51 Q334 40 320 41 Q304 41 292 54 Q284 65 278 78Z"/>
+    <path fill="none" stroke="#75889a" stroke-width="1.8" d="M282 78 Q301 89 320 100 Q339 90 358 78 M232 96 Q219 120 219 178 M408 96 Q421 120 421 178 M221 261 Q320 265 419 261 M139 201 L168 228 M500 201 L472 228"/>
+    <path fill="none" stroke="#8b9aad" stroke-width="1.6" d="M280 224 L268 245 L372 245 L360 224Z M312 98 L310 120 M328 98 L330 121"/>
+  </g>
+  <g stroke="#174eb1" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M219 178H421 M228 174L219 178L228 182 M412 174L421 178L412 182"/>
+    <path d="M219 171V185 M421 171V185"/>
+    <path d="M362 78H468 M417 278H468" stroke="#4973a7" stroke-width="1.6" stroke-dasharray="4 5"/>
+    <path d="M468 79V277 M464 88L468 79L472 88 M464 268L468 277L472 268 M461 78H475 M461 278H475"/>
+    <path d="M293 163V173 M488 181H472" stroke-width="1.7"/>
+  </g>
+  <g fill="#174eb1" stroke="#f3f6fb" stroke-width="2">
+    <circle cx="293" cy="148" r="15"/><circle cx="504" cy="181" r="15"/>
+  </g>
+  <g fill="white" font-family="Arial, sans-serif" font-size="18" font-weight="700" text-anchor="middle">
+    <text x="293" y="154">1</text><text x="504" y="187">2</text>
+  </g>
+</svg>
