@@ -4,7 +4,7 @@ import { headers } from "next/headers";
 import "./globals.css";
 import AnalyticsEvents from "./components/AnalyticsEvents";
 import { baseUrl,isLang,localPath,t } from "./i18n";
-export const metadata:Metadata={metadataBase:new URL(baseUrl),robots:{index:true,follow:true},icons:{icon:"/favicon.svg",shortcut:"/favicon.svg"}};
+export const metadata:Metadata={metadataBase:new URL(baseUrl),robots:{index:true,follow:true},icons:{icon:"/favicon.png",shortcut:"/favicon.png"}};
 export default async function RootLayout({children}:Readonly<{children:React.ReactNode}>) {
   const value=(await headers()).get("x-hipo-language")||"en";
   const lang=isLang(value)?value:"en";

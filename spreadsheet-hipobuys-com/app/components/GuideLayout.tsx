@@ -4,7 +4,7 @@ import { languages, languageNames, localPath, t, type Lang } from "../i18n";
 export default function GuideLayout({ kicker, title, intro, accent = "blue", children, lang="en", path="/" }: { kicker: string; title: string; intro: string; accent?: "blue" | "lime" | "orange"; children: React.ReactNode; lang?:Lang; path?:string }) {
   return localizeNode(<main>
     <header className="site-header">
-      <a className="brand logo-brand" href="/" aria-label="Hipobuy guide home"><img src="/hipobuy-logo.png" alt="Hipobuy" width="220" height="52" /></a>
+      <a className="brand logo-brand" href="https://hipobuy.com/register" aria-label="Register on Hipobuy"><img src="/hipobuy-logo.png" alt="Hipobuy" width="220" height="52" /></a>
       <nav className="desktop-nav" aria-label="Primary navigation"><a href="/spreadsheet">Spreadsheet</a><a href="/qc">QC Guide</a><a href="/shipping">Shipping</a><a href="/guides">Guides</a><a href="/articles">Articles</a><a href="/faq">FAQ</a></nav>
       <div className="header-actions"><LanguageSwitcher lang={lang} path={path}/><a className="header-cta" href="https://cnfanssp.com/AllProducts/">Open catalog <span>↗</span></a></div>
     </header>

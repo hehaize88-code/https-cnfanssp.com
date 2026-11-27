@@ -29,6 +29,7 @@ interface ExecutionContext {
 
 const publicAssets = new Set([
   "/favicon.svg",
+  "/favicon.png",
   "/file.svg",
   "/globe.svg",
   "/hipobuy-logo.png",
