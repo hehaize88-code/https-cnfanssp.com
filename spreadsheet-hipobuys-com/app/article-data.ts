@@ -1,5 +1,7 @@
 import copy from "./content/articles.json";
-import { languages, t, type Lang } from "./i18n";
+import { editorialText } from "./editorial-locale";
+import { legacyColumns } from "./languages";
+import { t, type Lang } from "./i18n";
 export type ArticleSection = { heading:string; paragraphs:string[]; bullets?:string[] };
 export type Article = {
   slug:string; title:string; seoTitle?:string; description:string; kicker:string; topic:string;
@@ -15,11 +17,15 @@ const sources:Record<string,{label:string;note:string;url?:string}>={
 };
 const topics:Record<string,string>={shipping:"Shipping",buying:"Buying",qc:"QC & sizing",verification:"Listing checks"};
 export function getArticles(lang:Lang="en"):Article[] {
-  const n=languages.indexOf(lang);
+  const column = legacyColumns[lang];
+  function localized(values: string[]): string {
+    if (column !== undefined) return values[column] || values[0];
+    return editorialText(values[0], lang);
+  }
   return copy.map(a=>{
-    const sections=a.sections.map(s=>({heading:s.heading[n],paragraphs:s.paragraphs.map(p=>p[n])}));
-    const words=[a.summary[n],...sections.flatMap(s=>[s.heading,...s.paragraphs])].join(" ").split(/\s+/).length;
-    return {slug:a.slug,title:a.title[n],description:a.description[n],summary:a.summary[n],published:a.published,updated:a.updated,topic:a.topic,kicker:t(topics[a.topic],lang),readTime:`${Math.max(2,Math.ceil(words/180))} ${t("min read",lang)}`,sections,sources:a.sources.map(id=>({...sources[id],label:t(sources[id].label,lang),note:t(sources[id].note,lang)})),related:a.related};
+    const sections=a.sections.map(s=>({heading:localized(s.heading),paragraphs:s.paragraphs.map(p=>localized(p))}));
+    const words=[localized(a.summary),...sections.flatMap(s=>[s.heading,...s.paragraphs])].join(" ").split(/\s+/).length;
+    return {slug:a.slug,title:localized(a.title),description:localized(a.description),summary:localized(a.summary),published:a.published,updated:a.updated,topic:a.topic,kicker:t(topics[a.topic],lang),readTime:`${Math.max(2,Math.ceil(words/180))} ${t("min read",lang)}`,sections,sources:a.sources.map(id=>({...sources[id],label:t(sources[id].label,lang),note:t(sources[id].note,lang)})),related:a.related};
   });
 }
 export const articles=getArticles();

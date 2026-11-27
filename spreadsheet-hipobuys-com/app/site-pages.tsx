@@ -10,7 +10,7 @@ import ArticlePage from "./views/article";
 import { getArticle,getArticles } from "./article-data";
 import { baseUrl,isLang,localPath,languageAlternates,t,type Lang } from "./i18n";
 export const pageInfo:Record<string,{title:string;description:string}>={
-  "/":{title:"Hipobuy Spreadsheet: Finds, Weight Estimator & Shipping",description:"Browse Hipobuy spreadsheet links, estimate parcel weight and compare shipping costs. Read practical QC, packing and buying guides in five languages."},
+  "/":{title:"Hipobuy Spreadsheet | Product Finds, QC Photos & Image Search",description:"Browse Hipobuy spreadsheet finds, search by image, compare prices and QC photos, and open the matching product on Hipobuy."},
   "/spreadsheet":{title:"Hipobuy Spreadsheet: Find and Verify Product Links",description:"Search product categories, verify current seller listings and compare variants before placing a Hipobuy order."},
   "/qc":{title:"Hipobuy QC Photos: Warehouse Inspection Checklist",description:"Check Hipobuy QC photos for order matching, visible defects and measurements before international shipping."},
   "/shipping":{title:"Hipobuy Shipping: Cost Calculator & Country Guides",description:"Estimate Hipobuy shipping costs, compare chargeable weight and read Germany and France delivery guides."},
@@ -33,7 +33,7 @@ export function pageMetadata(path:string,lang:Lang):Metadata {
   if(!info)return {};
   const title=article?article.title:t(info.title,lang);
   const description=article?article.description:t(info.description,lang);
-  return {title:{absolute:title+" | Hipo Index"},description,alternates:{canonical:baseUrl+localPath(path,lang),languages:languageAlternates(path)},openGraph:{type:article?"article":"website",title,description,url:baseUrl+localPath(path,lang),siteName:"Hipo Index",locale:{en:"en_US",de:"de_DE",es:"es_ES",fr:"fr_FR",it:"it_IT"}[lang],images:[{url:baseUrl+"/og.png",width:1200,height:630,alt:title}],...(article?{publishedTime:article.published,modifiedTime:article.updated}:{})},twitter:{card:"summary_large_image",title,description,images:[baseUrl+"/og.png"]}};
+  return {title:{absolute:title+" | Hipo Index"},description,alternates:{canonical:baseUrl+localPath(path,lang),languages:languageAlternates(path)},openGraph:{type:article?"article":"website",title,description,url:baseUrl+localPath(path,lang),siteName:"Hipo Index",locale:`${lang}_${new Intl.Locale(lang).maximize().region}`,images:[{url:baseUrl+"/og.png",width:1200,height:630,alt:title}],...(article?{publishedTime:article.published,modifiedTime:article.updated}:{})},twitter:{card:"summary_large_image",title,description,images:[baseUrl+"/og.png"]}};
 }
 export function renderPage(path:string,lang:Lang) {
   if(path==="/")return <Home lang={lang} articles={getArticles(lang).slice(0,4).map(({slug,title,kicker,readTime})=>({slug,title,kicker,readTime}))}/>;

@@ -19,7 +19,7 @@ export default function ArticlePage({article,lang}:{article:Article;lang:Lang}) 
           {article.slug==="hipobuy-shipping-cost-guide"?<ShippingCalculator lang={lang}/>:null}
           <section className="article-sources"><p className="section-kicker">{t("Reviewed",lang)} · <time dateTime={article.updated}>{article.updated}</time></p><h2>{t("Research notes",lang)}</h2><ul>{article.sources.map(source=><li key={source.label}><strong>{source.label}</strong><span>{source.note}{source.url?<small className="source-address">{source.url}</small>:null}</span></li>)}</ul></section>
           <section className="related-articles"><h2>{t("Next useful guides",lang)}</h2><ul>{related.map(a=><li key={a.slug}><a href={localPath(`/articles/${a.slug}`,lang)}>{a.title} →</a></li>)}</ul></section>
-          <div className="article-next"><div><p className="section-kicker">{t("Continue checking",lang)}</p><h2>{t("Use the guide, then verify the live listing.",lang)}</h2></div><div><a href={localPath("/articles",lang)}>{t("All articles",lang)}</a><a href="https://cnfanssp.com/AllProducts/">{t("Browse current catalog ↗",lang)}</a></div></div>
+          <div className="article-next"><div><p className="section-kicker">{t("Continue checking",lang)}</p><h2>{t("Use the guide, then verify the live listing.",lang)}</h2></div><div><a href={localPath("/articles",lang)}>{t("All articles",lang)}</a><a href={localPath("/spreadsheet",lang)}>{t("Browse current catalog ↗",lang)}</a></div></div>
         </div></div>
     </article>
     <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(schema).replace(/</g,"\\u003c")}}/><script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(breadcrumbs).replace(/</g,"\\u003c")}}/>

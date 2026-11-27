@@ -1,3 +1,4 @@
+import Catalog from "../components/Catalog";
 import RelatedGuides from "../components/RelatedGuides";
 import { t, type Lang } from "../i18n";
 import type { Metadata } from "next";
@@ -6,6 +7,7 @@ import GuideLayout from "../components/GuideLayout";
 export const originalMetadata: Metadata = { title: "Hipobuy QC Photos: Warehouse Inspection Checklist", description: "Use this Hipobuy QC photo checklist to inspect shape, measurements, stitching, labels, color and visible defects before shipping.", alternates: { canonical: "/qc" } };
 
 export default function QCPage({ lang = "en" }: { lang?: Lang }) { return <GuideLayout lang={lang} path="/qc" kicker="Warehouse decision" title="QC photos are evidence—not a quality guarantee." intro="Warehouse images help confirm what arrived. They cannot prove material composition, long-term durability or how an item will fit, so inspect what is visible and request clarification when the evidence is incomplete." accent="lime">
+  <Catalog lang={lang} mode="qc"/>
   <RelatedGuides lang={lang} slugs={["hipobuy-qc-photos-guide","hipobuy-size-guide","how-to-buy-on-hipobuy"]}/><section className="qc-board"><div className="qc-board-head"><p className="section-kicker">Eight-point check</p><h2>Read the photo set in order</h2></div><div className="qc-grid">{[
     ["01","Order match","Confirm color, size, version and quantity against the order record."],
     ["02","Overall shape","Look for distortion, uneven panels or obvious asymmetry from a straight-on view."],

@@ -19,32 +19,15 @@ For Cloudflare Pages Git deployments, use `npm run build` with `dist/client`
 as the output directory. The build prepares an advanced-mode `_worker.js`
 inside that directory so the existing server-rendered routes keep working.
 
-The public site keeps all product, category and search actions pointed only at the owner's main catalog. Research sources are shown as non-clickable notes so the guide does not send visitors to third-party websites.
+## Catalog and image search
 
-## Languages and editorial updates
+The product search, categories, price and popularity sorts and galleries use a searchable snapshot of the public cnfanssp.com product pages. The image index uses the bytes of each source photo. A browser upload is processed locally. Search sends a visual fingerprint and file digest to the site's own API. Product links use the Weidian item ID supplied by the source. The header logo links to the official HipoBuy registration page.
 
-English retains the original URLs. German, Spanish, French and Italian use
-`/de`, `/es`, `/fr` and `/it`. Each of the 17 articles has complete server-rendered
-copy in all five languages; there is no browser translation dependency.
-`app/content/articles.json` stores parallel translations in EN/DE/ES/FR/IT order.
-Keep every field and section present in all five entries when editing. Dates
-describe the actual editorial publication or review, not product availability.
+To regenerate the index, run `python scripts/sync_catalog.py --cache /tmp/hipobuy-catalog --out public/catalog-data` with Python 3 and Pillow. Use a fresh cache directory for a fresh source crawl, or reuse the directory to resume an interrupted crawl. Validate with `npm test` before publishing. Official buying links depend on the source publishing a marketplace ID. Only photos marked as QC by the source are identified as QC.
 
-The catch-all route validates supported pages and keeps unknown URLs as 404s.
-Every page declares a self canonical and reciprocal language alternatives.
-The sitemap includes all 120 canonical pages. The homepage displays the first
-four article records, currently weight estimation, shipping costs, shipping savings and rehearsal packing.
+## Languages and prices
 
-The shipping worksheet accepts user-supplied quotes in USD. Blank amounts stay
-unknown; the tool never fetches live rates or computes import taxes. Existing
-GA4 events are retained, with localized article clicks and `shipping_estimate`
-added. No analytics-account configuration is changed by this release.
-
-`npm test` builds the production Pages worker and verifies all 120 page responses,
-85 complete article versions, language links, structured data, sitemap, 404s,
-canonical redirects, caching isolation and weight-calculation boundaries.
-Publish through the existing GitHub integration; no separate account connection
-or hosting reconfiguration is needed.
+English uses unprefixed URLs. The language selector follows the 24 locales in `app/languages.ts`. Each page has its own canonical URL and reciprocal language alternatives. Product prices use source CNY amounts and the exchange table served by `/api/exchange-rates`. When the live exchange service is unavailable the page uses the dated build-time table. The separate shipping worksheet accepts user-entered quotes.
 
 ## November 6, 2026 release
 

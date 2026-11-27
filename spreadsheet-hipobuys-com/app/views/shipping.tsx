@@ -16,5 +16,5 @@ export default function ShippingPage({ lang = "en" }: { lang?: Lang }) { return 
     ["4","Plan for tax and customs","Import tax, VAT, duty and clearance procedures depend on the destination and shipment. Verify official local guidance before paying."],
     ["5","Record the parcel","Save the parcel number, line, declared information, packed weight, tracking number and insurance terms for later reference."]
   ].map(([n,t,d])=><article key={n}><span>{n}</span><div><h3>{t}</h3><p>{d}</p></div></article>)}</section>
-  <section className="action-banner dark"><div><p className="section-kicker">Start with the item</p><h2>Check the source listing first.</h2><p>Product dimensions, category and packaging affect the shipping decision.</p></div><a href="https://cnfanssp.com/AllProducts/">Browse products ↗</a></section>
+  <section className="action-banner dark"><div><p className="section-kicker">Start with the item</p><h2>Check the source listing first.</h2><p>Product dimensions, category and packaging affect the shipping decision.</p></div><a href="/spreadsheet">Browse products ↗</a></section>
   </GuideLayout>; }

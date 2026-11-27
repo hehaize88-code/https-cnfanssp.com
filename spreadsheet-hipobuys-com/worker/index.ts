@@ -1,3 +1,6 @@
+import { catalogApi } from "./catalog";
+import { loadEditorialLocale } from "../app/editorial-locale";
+import { isLang } from "../app/languages";
 /** Cloudflare Worker entry point for the vinext-starter template. */
 import { handleImageOptimization, DEFAULT_DEVICE_SIZES, DEFAULT_IMAGE_SIZES } from "vinext/server/image-optimization";
 import handler from "vinext/server/app-router-entry";
@@ -5,8 +8,7 @@ import handler from "vinext/server/app-router-entry";
 declare const __PAGES_COMMIT_SHA__: string;
 
 interface Env {
-  ASSETS: Fetcher;
-  DB: D1Database;
+  ASSETS: { fetch(input: RequestInfo | URL): Promise<Response> };
   IMAGES: {
     input(stream: ReadableStream): {
       transform(options: Record<string, unknown>): {
@@ -38,7 +40,7 @@ const publicAssets = new Set([
 ]);
 
 function isStaticAsset(pathname: string): boolean {
-  return pathname.startsWith("/assets/") || publicAssets.has(pathname);
+  return pathname.startsWith("/catalog-data/") || pathname.startsWith("/locales/") || pathname.startsWith("/assets/") || publicAssets.has(pathname);
 }
 
 function withHeaders(response: Response, headersToSet: Record<string, string>): Response {
@@ -77,6 +79,11 @@ const worker = {
       return Response.redirect(url.toString(), 301);
     }
 
+    if (url.pathname.startsWith("/api/")) {
+      const response = await catalogApi(request, env.ASSETS);
+      if (response) return response;
+    }
+
     // Pages advanced mode gives the Worker control of every request. Forward
     // compiled CSS/JS and public images to the Pages asset service so the SSR
     // HTML is hydrated and styled instead of rendering as plain text.
@@ -100,20 +107,25 @@ const worker = {
     }
 
     // Locale comes only from the public path. Never cache browser-specific translations.
-    const language = /^\/(de|es|fr|it)(?:\/|$)/.exec(url.pathname)?.[1] || "en";
+    const prefix = url.pathname.split("/")[1];
+    const language = isLang(prefix) ? prefix : "en";
     const requestHeaders = new Headers(request.headers);
     requestHeaders.set("x-hipo-language", language);
     request = new Request(request, { headers: requestHeaders });
 
-    if (!shouldCacheHtml(request, url)) return handler.fetch(request, env, ctx);
+    if (!shouldCacheHtml(request, url)) {
+      await loadEditorialLocale(language, request.url, env.ASSETS);
+      return handler.fetch(request, env, ctx);
+    }
 
-    const cache = caches.default;
+    const cache = (caches as CacheStorage & { default: Cache }).default;
     const cacheUrl = new URL(url);
     cacheUrl.searchParams.set("__hcv", __PAGES_COMMIT_SHA__);
     const cacheKey = new Request(cacheUrl.toString(), request);
     const cached = await cache.match(cacheKey);
     if (cached) return withHeaders(cached, { "x-hipo-cache": "HIT" });
 
+    await loadEditorialLocale(language, request.url, env.ASSETS);
     const response = await handler.fetch(request, env, ctx);
     const contentType = response.headers.get("content-type") || "";
     if (response.status !== 200 || !contentType.includes("text/html") || response.headers.has("set-cookie")) {

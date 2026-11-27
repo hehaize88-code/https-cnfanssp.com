@@ -1,66 +1,34 @@
 "use client";
 
 
-import { useMemo, useState } from "react";
-import { categories, products } from "../data";
+import Catalog, { HomeSearch } from "../components/Catalog";
+import { CurrencySwitcher } from "../components/Currency";
 import { LanguageSwitcher } from "../components/LanguageProvider";
 import { localizeNode } from "../localize-node";
 import { languages, languageNames, localPath, t, type Lang } from "../i18n";
 import type { Article } from "../article-data";
 
-const mainSite = "https://cnfanssp.com";
+
 
 export default function Home({lang, articles}:{lang:Lang; articles:Pick<Article,"slug"|"title"|"kicker"|"readTime">[]}) {
-  const [query, setQuery] = useState("");
-  const [category, setCategory] = useState("All");
-
-  const filtered = useMemo(() => {
-    const term = query.trim().toLowerCase();
-    return products.filter((product) => {
-      const categoryMatch = category === "All" || product.category === category;
-      const queryMatch = !term || product.name.toLowerCase().includes(term) || product.category.toLowerCase().includes(term) || t(product.category,lang).toLowerCase().includes(term) || product.tags.some((tag) => tag.includes(term));
-      return categoryMatch && queryMatch;
-    });
-  }, [category, query, lang]);
-
-  const visible = filtered;
-
-  function searchMainSite(event: React.FormEvent<HTMLFormElement>) {
-    event.preventDefault();
-    const term = query.trim();
-    window.location.href = term ? `${mainSite}/search.html?channelid=2&keywords=${encodeURIComponent(term)}` : `${mainSite}/AllProducts/`;
-  }
-
   return localizeNode(<main>
     <header className="site-header">
       <a className="brand logo-brand" href="https://hipobuy.com/register" aria-label="Register on Hipobuy"><img src="/hipobuy-logo.png" alt="Hipobuy" width="220" height="52" /></a>
       <nav className="desktop-nav" aria-label="Primary navigation"><a href="/spreadsheet">Spreadsheet</a><a href="/qc">QC</a><a href="/shipping">Shipping</a><a href="/guides">Guides</a><a href="/articles">Articles</a><a href="/faq">FAQ</a></nav>
-      <div className="header-actions"><LanguageSwitcher lang={lang} path="/"/><a className="header-cta" href={`${mainSite}/AllProducts/`}>Browse products <span>↗</span></a></div>
+      <div className="header-actions"><LanguageSwitcher lang={lang} path="/"/><CurrencySwitcher lang={lang}/><a className="header-cta" href="/spreadsheet">Browse products <span>↗</span></a></div>
     </header>
 
     <section className="clean-hero">
       <div className="clean-hero-copy">
-        <p className="eyebrow"><span className="status-dot" /> Guides reviewed November 2026</p>
-        <h1>Hipobuy spreadsheet,<br/><em>made easier.</em></h1>
-        <p>Search product links, check QC, and estimate packed weight before comparing shipping costs.</p>
-      <div className="hero-links"><a href="/articles/hipobuy-weight-estimator#weight-estimator">Estimate weight →</a><a href="/shipping#shipping-calculator">Calculate shipping →</a><a href="/articles/how-to-buy-on-hipobuy">Read the buying guide →</a></div></div>
-      <div className="clean-search-card">
-        <p className="search-label">Search the spreadsheet</p>
-        <form onSubmit={searchMainSite} className="clean-search"><input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Try shoes, hoodies or jerseys" aria-label="Search product finds"/><button type="submit" aria-label="Search">→</button></form>
-        <div className="search-meta"><span><b>9</b> categories</span><span><b>12</b> preview rows</span><span><b>2</b> Independent tools</span></div>
+        <h1>Hipobuy spreadsheet</h1>
+        <p>Find a product by name, item ID or photo. Compare prices and available QC photos, then open the matching listing on Hipobuy.</p>
+        <div className="hero-links"><a href="/qc">QC photos →</a><a href="/shipping#shipping-calculator">Calculate shipping →</a><a href="/articles/how-to-buy-on-hipobuy">Read the buying guide →</a></div>
       </div>
+      <HomeSearch lang={lang}/>
     </section>
-
     <section className="clean-catalog">
-      <div className="clean-section-title"><div><p className="eyebrow">Product index</p><h2>Browse product categories</h2></div><p>These preview links are a starting point. Open the source listing to check the exact item, current price and available options.</p></div>
-      <div className="clean-tabs" role="group" aria-label="Filter product category">{["All", ...categories].map((item) => <button type="button" key={item} onClick={() => setCategory(item)} className={item === category ? "active" : ""}>{item}</button>)}</div>
-
-      {visible.length ? <div className="clean-product-grid">{visible.map((product) => <article className="clean-product-card" key={product.id}>
-        <a href={product.url} className="clean-product-image"><img src={product.image} alt={`${t(product.category,lang)} · ${product.id}`} width="600" height="600" loading="lazy"/><span>Catalog preview</span></a>
-        <div className="clean-product-copy"><p>{t(product.category,lang)} · #{product.id}</p><h3><a href={product.url}>{t(product.category,lang)} · {product.id}</a></h3><a href={product.url} className="clean-product-link">Open listing <span>↗</span></a></div>
-      </article>)}</div> : <div className="empty-state"><h3>{t("No preview rows match",lang)} “{query}”.</h3><p>Try another term or search the complete catalog.</p><a href={`${mainSite}/search.html?channelid=2&keywords=${encodeURIComponent(query)}`}>Search full catalog ↗</a></div>}
-
-      <div className="catalog-footer"><span>Showing {visible.length} curated preview rows</span><a href={`${mainSite}/AllProducts/`}>View complete catalog <span>↗</span></a></div>
+      <div className="clean-section-title"><div><h2>Latest Hipobuy finds</h2></div></div>
+      <Catalog lang={lang} mode="home"/>
     </section>
 
     <section className="clean-guides">

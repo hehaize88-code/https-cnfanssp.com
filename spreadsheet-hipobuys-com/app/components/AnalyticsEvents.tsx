@@ -23,8 +23,9 @@ export default function AnalyticsEvents() {
           source_page: window.location.pathname,
           language: document.documentElement.lang,
         };
-        if (destination.hostname === "cnfanssp.com") sendEvent("catalog_click", parameters);
-        else if (destination.origin === window.location.origin && /^\/(?:de\/|es\/|fr\/|it\/)?articles\//.test(destination.pathname)) sendEvent("article_click", parameters);
+        if ((destination.hostname === "hipobuy.com" && destination.pathname.startsWith("/product/")) ||
+            (destination.origin === window.location.origin && destination.pathname.startsWith("/api/buy/"))) sendEvent("catalog_click", parameters);
+        else if (destination.origin === window.location.origin && /^\/(?:[a-z]{2}\/)?articles\//.test(destination.pathname)) sendEvent("article_click", parameters);
       }
 
       const categoryButton = target?.closest<HTMLButtonElement>(".clean-tabs button");

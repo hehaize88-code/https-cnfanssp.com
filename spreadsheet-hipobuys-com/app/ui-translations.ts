@@ -97,7 +97,7 @@ const it: Dictionary = {
   "Guides organized around real decisions.":"Guide organizzate per decisioni reali.","What “fact checked” means here":"Cosa significa “verificato” qui","Clear answers, with the uncertainty left visible.":"Risposte chiare senza nascondere l’incertezza."
 };
 
-export const dictionaries: Record<Lang, Dictionary> = {
+export const dictionaries: Partial<Record<Lang, Dictionary>> = {
   en:{},
   de:{...de,...extraTranslations.de},
   es:{...es,...extraTranslations.es},
