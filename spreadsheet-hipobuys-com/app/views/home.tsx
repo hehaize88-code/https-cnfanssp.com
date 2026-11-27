@@ -13,9 +13,9 @@ import type { Article } from "../article-data";
 export default function Home({lang, articles}:{lang:Lang; articles:Pick<Article,"slug"|"title"|"kicker"|"readTime">[]}) {
   return localizeNode(<main>
     <header className="site-header">
-      <a className="brand logo-brand" href="https://hipobuy.com/register" aria-label="Register on Hipobuy"><img src="/hipobuy-logo.png" alt="Hipobuy" width="220" height="52" /></a>
+      <a className="brand logo-brand" href="/" aria-label="Home"><img src="/hipobuy-logo.png" alt="Hipobuy" width="220" height="52" /></a>
       <nav className="desktop-nav" aria-label="Primary navigation"><a href="/spreadsheet">Spreadsheet</a><a href="/qc">QC</a><a href="/shipping">Shipping</a><a href="/guides">Guides</a><a href="/articles">Articles</a><a href="/faq">FAQ</a></nav>
-      <div className="header-actions"><LanguageSwitcher lang={lang} path="/"/><CurrencySwitcher lang={lang}/><a className="header-cta" href="/spreadsheet">Browse products <span>↗</span></a></div>
+      <div className="header-actions"><LanguageSwitcher lang={lang} path="/"/><CurrencySwitcher lang={lang}/><a className="header-cta" href="https://hipobuy.com/register">Register on Hipobuy <span aria-hidden="true">↗</span></a></div>
     </header>
 
     <section className="clean-hero">

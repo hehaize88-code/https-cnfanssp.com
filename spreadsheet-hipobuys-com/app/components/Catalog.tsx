@@ -53,16 +53,24 @@ export function ImageUpload({ lang, onHash }: { lang:Lang; onHash:(signature:Ima
     } catch { if (current === sequence.current) setState("Choose a readable JPG, PNG or WebP image."); }
   }
   return <span className="catalog-upload">
-    <label className="catalog-upload-button"><span aria-hidden="true">⌕ </span>{t("Search by image",lang)}
-      <input type="file" accept="image/jpeg,image/png,image/webp,image/avif,image/gif" onChange={upload}/>
+    <label className="catalog-upload-button" title={t("Search by image",lang)}>
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinejoin="round" aria-hidden="true">
+        <path d="M3 7.5h4l1.7-3h6.6l1.7 3h4a1 1 0 0 1 1 1v10a1.5 1.5 0 0 1-1.5 1.5h-17A1.5 1.5 0 0 1 2 18.5v-10a1 1 0 0 1 1-1Z"/>
+        <circle cx="12" cy="13.5" r="3.7"/>
+      </svg>
+      <input type="file" aria-label={t("Search by image",lang)} accept="image/jpeg,image/png,image/webp,image/avif,image/gif" onChange={upload}/>
     </label>{state && <span role="status">{t(state,lang)}</span>}
   </span>;
 }
 
 export function HomeSearch({ lang }: {lang:Lang}) {
   return <div className="clean-search-card"><p className="search-label">{t("Search the spreadsheet",lang)}</p>
-    <form action={localPath("/spreadsheet",lang)} className="clean-search"><input name="q" type="search" placeholder={t("Product name or item ID",lang)} aria-label={t("Search product finds",lang)}/><button aria-label={t("Search",lang)} type="submit">→</button></form>
-    <div className="catalog-hero-actions"><ImageUpload lang={lang} onHash={signature => window.location.assign(localPath("/spreadsheet",lang) + "?" + encode({...defaultQuery,...signature}))}/><a href={localPath("/spreadsheet",lang)}>{t("View complete catalog",lang)} →</a></div>
+    <form action={localPath("/spreadsheet",lang)} className="clean-search">
+      <input name="q" type="search" placeholder={t("Product name or item ID",lang)} aria-label={t("Search product finds",lang)}/>
+      <ImageUpload lang={lang} onHash={signature => window.location.assign(localPath("/spreadsheet",lang) + "?" + encode({...defaultQuery,...signature}))}/>
+      <button aria-label={t("Search",lang)} type="submit">→</button>
+    </form>
+    <div className="catalog-hero-actions"><a href={localPath("/spreadsheet",lang)}>{t("View complete catalog",lang)} →</a></div>
   </div>;
 }
 
@@ -175,8 +183,18 @@ export default function Catalog({lang,mode="full"}:{lang:Lang;mode?:"home"|"full
   function search(e:FormEvent) { e.preventDefault(); change({q:input.trim(), hash:"",sha:""}); }
   return <section className="catalog-live" aria-label={t(mode === "qc" ? "QC photos" : "Product index",lang)}>
     {!preview && <>
-      <div className="catalog-search-line"><form className="clean-search" onSubmit={search}><input type="search" value={input} placeholder={t("Product name or item ID",lang)} aria-label={t("Search product finds",lang)} onChange={e=>setInput(e.target.value)}/><button type="submit" aria-label={t("Search",lang)}>→</button></form>
-      {mode !== "qc" && <ImageUpload lang={lang} onHash={signature => {setInput("");change({...defaultQuery,...signature});}}/>}</div>
+      <div className="catalog-search-line"><form className="clean-search" onSubmit={search}>
+        <input type="search" value={input} placeholder={t("Product name or item ID",lang)} aria-label={t("Search product finds",lang)} onChange={e=>setInput(e.target.value)}/>
+        <ImageUpload lang={lang} onHash={signature => {
+          if (mode === "qc") {
+            window.location.assign(localPath("/spreadsheet",lang) + "?" + encode({...defaultQuery,...signature}));
+          } else {
+            setInput("");
+            change({...defaultQuery,...signature});
+          }
+        }}/>
+        <button type="submit" aria-label={t("Search",lang)}>→</button>
+      </form></div>
       <div className="catalog-selects">{query.hash ? <button type="button" onClick={()=>change({...defaultQuery})}>{t("Clear image search",lang)} ×</button> : <>
         <label>{t("Category",lang)} <select value={query.category} onChange={e=>change({category:e.target.value})}><option value="">{t("All",lang)}</option>{Object.entries(categories).map(([key,label])=><option key={key} value={key}>{t(label,lang)}</option>)}</select></label>
         <label>{t("Sort",lang)} <select value={query.sort} onChange={e=>change({sort:e.target.value})}>{Object.entries(sorts).map(([key,label])=><option key={key} value={key}>{t(label,lang)}</option>)}</select></label></>}

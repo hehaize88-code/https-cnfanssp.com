@@ -5,9 +5,9 @@ import { languages, languageNames, localPath, t, type Lang } from "../i18n";
 export default function GuideLayout({ kicker, title, intro, accent = "blue", children, lang="en", path="/" }: { kicker: string; title: string; intro: string; accent?: "blue" | "lime" | "orange"; children: React.ReactNode; lang?:Lang; path?:string }) {
   return localizeNode(<main>
     <header className="site-header">
-      <a className="brand logo-brand" href="https://hipobuy.com/register" aria-label="Register on Hipobuy"><img src="/hipobuy-logo.png" alt="Hipobuy" width="220" height="52" /></a>
+      <a className="brand logo-brand" href="/" aria-label="Home"><img src="/hipobuy-logo.png" alt="Hipobuy" width="220" height="52" /></a>
       <nav className="desktop-nav" aria-label="Primary navigation"><a href="/spreadsheet">Spreadsheet</a><a href="/qc">QC Guide</a><a href="/shipping">Shipping</a><a href="/guides">Guides</a><a href="/articles">Articles</a><a href="/faq">FAQ</a></nav>
-      <div className="header-actions"><LanguageSwitcher lang={lang} path={path}/><CurrencySwitcher lang={lang}/><a className="header-cta" href="/spreadsheet">Open catalog <span>↗</span></a></div>
+      <div className="header-actions"><LanguageSwitcher lang={lang} path={path}/><CurrencySwitcher lang={lang}/><a className="header-cta" href="https://hipobuy.com/register">Register on Hipobuy <span aria-hidden="true">↗</span></a></div>
     </header>
     <section className={`sub-hero ${accent}`}><div><p className="eyebrow">{kicker}</p><h1>{title}</h1><p>{intro}</p></div><span className="sub-hero-mark" aria-hidden="true">HI / 26</span></section>
     <div className="subpage-body">{children}</div>
